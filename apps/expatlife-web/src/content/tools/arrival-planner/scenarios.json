@@ -1,0 +1,201 @@
+[
+  {
+    "id": "arrived-temporary-housing",
+    "type": "generic",
+    "title": "Arrived with temporary housing",
+    "inputs": { "from": "", "addressStatus": "soon", "household": "solo", "needBankingSoon": "yes" },
+    "summary": "Focus on registration readiness and first-week admin while temporary housing is in place.",
+    "firstWeekHighlights": [
+      "Confirm move-in date and where official mail can reach you",
+      "Prepare documents for municipality registration",
+      "Book or prepare municipality registration as soon as your address is active",
+      "Complete registration and receive your BSN",
+      "Open a Dutch bank account",
+      "Set up mobile connectivity"
+    ],
+    "firstMonthHighlights": [
+      "Arrange Dutch health insurance",
+      "Apply for DigiD when eligible",
+      "Set up utilities/internet if moving into longer-term housing",
+      "Track admin follow-ups weekly"
+    ]
+  },
+  {
+    "id": "arrived-stable-address",
+    "type": "generic",
+    "title": "Arrived with a stable address",
+    "inputs": { "from": "", "addressStatus": "yes", "household": "solo", "needBankingSoon": "yes" },
+    "summary": "With an address in place, prioritise registration, BSN and daily-life setup in order.",
+    "firstWeekHighlights": [
+      "Confirm move-in date and mail access",
+      "Prepare documents for municipality registration",
+      "Book and complete municipality registration",
+      "Receive your BSN and note which steps depend on it",
+      "Open a Dutch bank account",
+      "Set up mobile connectivity"
+    ],
+    "firstMonthHighlights": [
+      "Arrange Dutch health insurance",
+      "Apply for DigiD when eligible",
+      "Set up recurring payments",
+      "Register with a GP",
+      "Track admin follow-ups weekly"
+    ]
+  },
+  {
+    "id": "family-arrival",
+    "type": "generic",
+    "title": "Family arrival",
+    "inputs": { "from": "", "addressStatus": "yes", "household": "kids", "needBankingSoon": "yes" },
+    "summary": "Plan registration and family admin (school, childcare, healthcare) in a clear sequence.",
+    "firstWeekHighlights": [
+      "Prepare registration documents for the whole household",
+      "Complete municipality registration and receive BSN",
+      "Open a Dutch bank account",
+      "Align household admin ownership",
+      "Review school or childcare follow-up"
+    ],
+    "firstMonthHighlights": [
+      "Arrange health insurance",
+      "Review childcare, school and family registration follow-up",
+      "Register with a GP",
+      "Set up recurring payments",
+      "Track admin follow-ups weekly"
+    ]
+  },
+  {
+    "id": "job-starting-soon",
+    "type": "generic",
+    "title": "Job starting soon",
+    "inputs": { "from": "", "addressStatus": "yes", "household": "solo", "needBankingSoon": "yes", "startingJobSoon": "true" },
+    "summary": "Align registration, BSN and banking with employer onboarding and first salary.",
+    "firstWeekHighlights": [
+      "Prepare registration documents before your move-in date",
+      "Complete municipality registration and receive BSN early",
+      "Confirm payroll and bank account readiness with your employer",
+      "Open a Dutch bank account",
+      "Confirm employer onboarding documents"
+    ],
+    "firstMonthHighlights": [
+      "Confirm salary payment account readiness",
+      "Ask employer about 30% ruling if relevant",
+      "Arrange health insurance",
+      "Apply for DigiD when eligible",
+      "Track admin follow-ups weekly"
+    ]
+  },
+  {
+    "id": "south-africa-job-starting-soon",
+    "type": "country",
+    "originCountry": "south-africa",
+    "title": "South Africa – job starting soon",
+    "inputs": { "from": "south-africa", "addressStatus": "soon", "household": "solo", "needBankingSoon": "yes", "startingJobSoon": "true" },
+    "summary": "Long-haul move with work start: plan registration and banking so salary and admin align.",
+    "firstWeekHighlights": [
+      "Prepare registration documents before your move-in date",
+      "Complete municipality registration and receive BSN early",
+      "Confirm payroll and bank account readiness before first salary",
+      "Bring South Africa–issued official records if registration may need them",
+      "Open a Dutch bank account",
+      "Set up mobile connectivity"
+    ],
+    "firstMonthHighlights": [
+      "Arrange health insurance",
+      "Apply for DigiD when eligible",
+      "Check South African driving licence rules if you plan to drive",
+      "Read the South Africa → Netherlands country guide",
+      "Track admin follow-ups weekly"
+    ]
+  },
+  {
+    "id": "india-family-arrival",
+    "type": "country",
+    "originCountry": "india",
+    "title": "India – family arrival",
+    "inputs": { "from": "india", "addressStatus": "yes", "household": "kids", "needBankingSoon": "yes" },
+    "summary": "Family move from India: prepare registration and family admin (school, documents) in sequence.",
+    "firstWeekHighlights": [
+      "Prepare registration documents for the household",
+      "Complete municipality registration and receive BSN",
+      "Bring India-issued official records if registration or family admin may need them",
+      "Open a Dutch bank account",
+      "Align household admin ownership",
+      "Review school or childcare follow-up"
+    ],
+    "firstMonthHighlights": [
+      "Arrange health insurance",
+      "Review childcare, school and family registration follow-up",
+      "Apply for DigiD when eligible",
+      "Check Indian driving licence rules if you plan to drive",
+      "Read the India → Netherlands country guide"
+    ]
+  },
+  {
+    "id": "united-states-temp-housing",
+    "type": "country",
+    "originCountry": "united-states",
+    "title": "United States – temporary housing",
+    "inputs": { "from": "united-states", "addressStatus": "soon", "household": "solo", "needBankingSoon": "yes" },
+    "summary": "US → NL with temporary housing: focus on registration and first-week plan.",
+    "firstWeekHighlights": [
+      "Confirm move-in date and where official mail can reach you",
+      "Prepare documents for municipality registration",
+      "Book or prepare municipality registration as soon as your address is active",
+      "Bring US-issued official records if registration may need them",
+      "Complete registration and receive BSN",
+      "Open a Dutch bank account",
+      "Set up mobile connectivity"
+    ],
+    "firstMonthHighlights": [
+      "Arrange health insurance",
+      "Apply for DigiD when eligible",
+      "Set up utilities/internet if moving into longer-term housing",
+      "Check US driving licence rules if you plan to drive",
+      "Read the United States → Netherlands country guide"
+    ]
+  },
+  {
+    "id": "germany-near-distance-arrival",
+    "type": "country",
+    "originCountry": "germany",
+    "title": "Germany – near-distance arrival",
+    "inputs": { "from": "germany", "addressStatus": "yes", "household": "solo", "needBankingSoon": "no" },
+    "summary": "EU move from Germany: focus on registration order and first-week sequencing.",
+    "firstWeekHighlights": [
+      "Confirm registration and BSN order",
+      "Complete municipality registration",
+      "Open a Dutch bank account",
+      "Set up mobile connectivity",
+      "Plan banking and insurance in the first two weeks"
+    ],
+    "firstMonthHighlights": [
+      "Arrange health insurance",
+      "Apply for DigiD when eligible",
+      "Check Germany driving licence rules if you plan to drive",
+      "Read the Germany → Netherlands country guide",
+      "Track admin follow-ups weekly"
+    ]
+  },
+  {
+    "id": "brazil-long-haul-documents",
+    "type": "country",
+    "originCountry": "brazil",
+    "title": "Brazil – long-haul, address pending",
+    "inputs": { "from": "brazil", "addressStatus": "no", "household": "partner", "needBankingSoon": "no" },
+    "summary": "Long-haul from Brazil with address still pending: track address-dependent tasks and plan registration when you have housing.",
+    "firstWeekHighlights": [
+      "Track which tasks must wait for a stable address",
+      "Confirm short-term housing plan",
+      "Bring Brazil-issued official records when you have them for registration",
+      "Align household admin ownership",
+      "Set up mobile connectivity"
+    ],
+    "firstMonthHighlights": [
+      "Complete municipality registration once you have an address",
+      "Open a Dutch bank account",
+      "Arrange health insurance",
+      "Check Brazil driving licence rules if you plan to drive",
+      "Read the Brazil → Netherlands country guide"
+    ]
+  }
+]

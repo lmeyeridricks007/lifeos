@@ -1,0 +1,26 @@
+{
+  "id": "simyo",
+  "name": "Simyo",
+  "tagline": "Simple SIM plans for the Netherlands",
+  "categoryIds": ["mobile"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["No contract"],
+  "highlights": [
+    "Prepaid and monthly plans",
+    "Quick activation",
+    "EU roaming included"
+  ],
+  "cta": {
+    "label": "View Simyo",
+    "href": "https://www.simyo.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/simyo.svg",
+    "alt": "Simyo logo"
+  }
+}

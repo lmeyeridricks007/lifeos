@@ -1,0 +1,132 @@
+[
+  {
+    "id": "confirm-address-registration-timing",
+    "title": "Confirm your address registration timing",
+    "whyItMatters": "Several admin steps depend on having a registered address; knowing your appointment or process date helps you sequence the rest.",
+    "suggestedNextStep": "Book or confirm your municipality registration appointment and note the date you expect to be registered.",
+    "relatedGuide": "/netherlands/municipality-registration-netherlands/",
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "employer-or-landlord-dutch-bank-requirement",
+    "title": "Confirm whether your employer or landlord needs a Dutch bank account within your first month",
+    "whyItMatters": "Payroll and rent often require a local account; clarifying this sets the right order for your first weeks.",
+    "suggestedNextStep": "Ask HR and your landlord or agency when they need your Dutch account details.",
+    "relatedGuide": "/netherlands/open-bank-account-netherlands/",
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "health-insurance-start-date",
+    "title": "Confirm when your Dutch health insurance must begin and whether your work situation affects the timing",
+    "whyItMatters": "Insurance timing can influence risk and month-one decision pressure; missing the deadline can lead to backdated premiums.",
+    "suggestedNextStep": "Check with your employer or insurer when coverage must start, and note the last date to take out a policy.",
+    "relatedGuide": "/netherlands/health-insurance-netherlands/",
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "which-steps-depend-on-bsn",
+    "title": "Confirm which of your next admin steps cannot move forward until your BSN is active",
+    "whyItMatters": "Bank account, DigiD, health insurance, and payroll often need a BSN; knowing the order avoids repeated delays.",
+    "suggestedNextStep": "List the services you need in the first month and check which require a BSN; plan their order accordingly.",
+    "relatedGuide": "/netherlands/municipality-registration-netherlands/",
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "employer-relocation-support",
+    "title": "Check whether your employer supports relocation admin steps",
+    "whyItMatters": "Employer support can reduce the time and complexity of early tasks such as registration, 30% ruling, and payroll.",
+    "suggestedNextStep": "Ask HR for a relocation or onboarding checklist and whether they offer any support (e.g. registration letter, tax forms).",
+    "relatedGuide": "/netherlands/first-30-days-netherlands/",
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "school-and-childcare-timing",
+    "title": "Confirm school and childcare registration and key dates in your municipality",
+    "whyItMatters": "Family timelines often include additional lead-time and paperwork; early clarity avoids last-minute stress.",
+    "suggestedNextStep": "Contact your municipality or school board and the chosen school or daycare for registration steps and deadlines.",
+    "relatedGuide": "/netherlands/moving-to-netherlands-with-kids/",
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "integration-goal-first-3-months",
+    "title": "Decide whether you want Dutch language learning, community building, or both as your first integration goal",
+    "whyItMatters": "Realistic goals make language and community efforts sustainable and easier to plan.",
+    "suggestedNextStep": "Choose one primary focus (e.g. a course or one regular activity) and block time for it in your calendar.",
+    "relatedGuide": "/netherlands/after-arriving-netherlands/",
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes"]
+    }
+  },
+  {
+    "id": "housing-duration-and-stability",
+    "title": "Confirm how long your current housing setup is stable",
+    "whyItMatters": "Housing uncertainty can change priorities in month 2 and 3; knowing your contract or notice period helps you plan.",
+    "suggestedNextStep": "Read your contract for end date and notice period; if temporary, decide when you will start looking for the next place.",
+    "relatedGuide": "/netherlands/moving-to-the-netherlands/",
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "catch-up-gap-audit",
+    "title": "Identify unresolved tasks from earlier weeks",
+    "whyItMatters": "A catch-up audit prevents old tasks from undermining current planning and helps you prioritise what to do next.",
+    "suggestedNextStep": "List every admin task you started but did not finish; pick the top 3 to complete in the next 2 weeks.",
+    "relatedGuide": "/netherlands/first-60-days-netherlands/",
+    "conditions": {
+      "arrivalStage": ["already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "key-documents-still-missing",
+    "title": "Identify which key documents are still missing",
+    "whyItMatters": "Document gaps usually create repeated delays across registration, banking, and other tasks.",
+    "suggestedNextStep": "Check our documents guide and list what you still need; order or request them as soon as possible.",
+    "relatedGuide": "/netherlands/documents-needed-to-move-netherlands/",
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  }
+]

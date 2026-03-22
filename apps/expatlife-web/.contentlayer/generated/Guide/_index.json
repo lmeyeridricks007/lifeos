@@ -1,0 +1,23 @@
+[
+  {
+    "title": "BSN registration",
+    "description": "Step-by-step BSN setup guidance for new arrivals.",
+    "country": "netherlands",
+    "cluster": "moving",
+    "readingTime": "6 min",
+    "body": {
+      "raw": "\n## Why BSN matters\n\nYou need a BSN for many core systems in the Netherlands.\n\n## What to prepare\n\nBring ID, address details, and supporting civil-status documents where relevant.\n\n## Appointment flow\n\nBook, confirm, and keep records of submissions and confirmations.\n",
+      "code": "var Component=(()=>{var h=Object.create;var o=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var l=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var g=(e,n)=>()=>(n||e((n={exports:{}}).exports,n),n.exports),x=(e,n)=>{for(var r in n)o(e,r,{get:n[r],enumerable:!0})},a=(e,n,r,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let s of l(n))!f.call(e,s)&&s!==r&&o(e,s,{get:()=>n[s],enumerable:!(i=p(n,s))||i.enumerable});return e};var j=(e,n,r)=>(r=e!=null?h(u(e)):{},a(n||!e||!e.__esModule?o(r,\"default\",{value:e,enumerable:!0}):r,e)),_=e=>a(o({},\"__esModule\",{value:!0}),e);var d=g((v,c)=>{c.exports=_jsx_runtime});var S={};x(S,{default:()=>N,frontmatter:()=>y});var t=j(d()),y={title:\"BSN registration\",description:\"Step-by-step BSN setup guidance for new arrivals.\",country:\"netherlands\",cluster:\"moving\",readingTime:\"6 min\"};function m(e){let n=Object.assign({h2:\"h2\",p:\"p\"},e.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h2,{children:\"Why BSN matters\"}),`\n`,(0,t.jsx)(n.p,{children:\"You need a BSN for many core systems in the Netherlands.\"}),`\n`,(0,t.jsx)(n.h2,{children:\"What to prepare\"}),`\n`,(0,t.jsx)(n.p,{children:\"Bring ID, address details, and supporting civil-status documents where relevant.\"}),`\n`,(0,t.jsx)(n.h2,{children:\"Appointment flow\"}),`\n`,(0,t.jsx)(n.p,{children:\"Book, confirm, and keep records of submissions and confirmations.\"})]})}function B(e={}){let{wrapper:n}=e.components||{};return n?(0,t.jsx)(n,Object.assign({},e,{children:(0,t.jsx)(m,e)})):m(e)}var N=B;return _(S);})();\n;return Component;"
+    },
+    "_id": "netherlands/moving/guides/bsn-registration.mdx",
+    "_raw": {
+      "sourceFilePath": "netherlands/moving/guides/bsn-registration.mdx",
+      "sourceFileName": "bsn-registration.mdx",
+      "sourceFileDir": "netherlands/moving/guides",
+      "contentType": "mdx",
+      "flattenedPath": "netherlands/moving/guides/bsn-registration"
+    },
+    "type": "Guide",
+    "slug": "/netherlands/moving/guides/bsn-registration"
+  }
+]

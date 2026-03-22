@@ -1,0 +1,46 @@
+{
+  "employment_job-offer": [
+    "coordinate-employer-documents-and-start-date",
+    "confirm-sponsored-route-and-required-docs",
+    "plan-salary-access-for-first-month"
+  ],
+  "employment_employed": [
+    "review-remote-or-transfer-admin-implications",
+    "confirm-employer-records-and-arrival-timeline"
+  ],
+  "employment_searching": [
+    "strengthen-funding-buffer-and-housing-flexibility",
+    "prepare-education-and-cv-supporting-records"
+  ],
+  "household_kids": [
+    "gather-child-identity-and-civil-records",
+    "prepare-school-or-childcare-background-docs",
+    "confirm-what-family-documents-may-be-needed-after-arrival"
+  ],
+  "kidsSchoolNeeds_true": [
+    "gather-child-identity-and-civil-records",
+    "prepare-school-or-childcare-background-docs"
+  ],
+  "housingReadiness_no-place-yet": [
+    "prioritize-temporary-housing-plan",
+    "confirm-how-registration-may-work-after-arrival",
+    "keep-housing-docs-flexible-and-ready"
+  ],
+  "housingReadiness_temporary-place": [
+    "confirm-temporary-housing-booking-and-duration",
+    "check-what-proof-of-address-you-will-have"
+  ],
+  "shippingNeeds_true": [
+    "decide-what-goes-in-shipment-vs-cabin-luggage",
+    "keep-essential-documents-out-of-shipment",
+    "track-relocation-or-shipping-provider"
+  ],
+  "largeMoneyTransfer_true": [
+    "compare-money-transfer-options-early",
+    "keep-emergency-cash-buffer-accessible"
+  ],
+  "hasCoreDocsReady_false": [
+    "prioritize-core-document-gathering",
+    "use-document-readiness-tool-link"
+  ]
+}

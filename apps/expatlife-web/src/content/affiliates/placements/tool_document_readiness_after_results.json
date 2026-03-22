@@ -1,0 +1,21 @@
+{
+  "id": "tool_document_readiness_after_results",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "tool",
+    "route": "/netherlands/moving/tools/document-readiness",
+    "slot": "after-results"
+  },
+  "variant": "cards",
+  "title": "Services that often ask for these documents",
+  "intro": "Many expats arrange these services early, and they may commonly request identity or address-related documents.",
+  "categoryOrder": ["banking", "insurance", "housing"],
+  "items": [
+    { "providerId": "bunq", "reason": "Banking onboarding often asks for identity and address-related context." },
+    { "providerId": "wise", "reason": "Useful for international transfers during relocation setup." },
+    { "providerId": "independer", "reason": "Insurance comparisons are often part of first-month settlement." },
+    { "providerId": "housinganywhere", "reason": "Housing-related services often connect closely with address documentation." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

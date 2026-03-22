@@ -1,0 +1,19 @@
+{
+  "title": "Move & Immigration hub",
+  "description": "Hub for moving guidance, core pages, and deterministic tools.",
+  "cluster": "moving",
+  "body": {
+    "raw": "\nThis hub links the pillar, guide pages, and tools.\n",
+    "code": "var Component=(()=>{var d=Object.create;var i=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var f=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),h=(t,n)=>{for(var e in n)i(t,e,{get:n[e],enumerable:!0})},c=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of p(n))!x.call(t,o)&&o!==e&&i(t,o,{get:()=>n[o],enumerable:!(s=l(n,o))||s.enumerable});return t};var b=(t,n,e)=>(e=t!=null?d(g(t)):{},c(n||!t||!t.__esModule?i(e,\"default\",{value:t,enumerable:!0}):e,t)),j=t=>c(i({},\"__esModule\",{value:!0}),t);var u=f((O,a)=>{a.exports=_jsx_runtime});var C={};h(C,{default:()=>v,frontmatter:()=>_});var r=b(u()),_={title:\"Move & Immigration hub\",description:\"Hub for moving guidance, core pages, and deterministic tools.\",cluster:\"moving\"};function m(t){let n=Object.assign({p:\"p\"},t.components);return(0,r.jsx)(n.p,{children:\"This hub links the pillar, guide pages, and tools.\"})}function M(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,Object.assign({},t,{children:(0,r.jsx)(m,t)})):m(t)}var v=M;return j(C);})();\n;return Component;"
+  },
+  "_id": "netherlands/moving/hub.mdx",
+  "_raw": {
+    "sourceFilePath": "netherlands/moving/hub.mdx",
+    "sourceFileName": "hub.mdx",
+    "sourceFileDir": "netherlands/moving",
+    "contentType": "mdx",
+    "flattenedPath": "netherlands/moving/hub"
+  },
+  "type": "Hub",
+  "slug": "/netherlands/moving/hub"
+}

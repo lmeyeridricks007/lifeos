@@ -1,0 +1,22 @@
+{
+  "id": "nl-moving-pillar-end-resources",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "pillar",
+    "route": "/netherlands/moving-to-the-netherlands/",
+    "slot": "end-resources"
+  },
+  "variant": "cards",
+  "title": "Useful services for expats",
+  "intro": "Services commonly used when moving to the Netherlands. We also link to more guides below.",
+  "categoryOrder": ["banking", "housing", "insurance", "mobile"],
+  "items": [
+    { "providerId": "bunq", "reason": "Expat-friendly banking with fast onboarding." },
+    { "providerId": "wise", "reason": "International transfers and multi-currency." },
+    { "providerId": "housinganywhere", "reason": "Temporary rentals for internationals." },
+    { "providerId": "independer", "reason": "Compare Dutch insurance." },
+    { "providerId": "simyo", "reason": "Simple mobile plans." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

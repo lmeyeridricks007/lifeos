@@ -1,0 +1,17 @@
+[
+  {
+    "id": "work-relocation",
+    "title": "Professional relocating from {countryName}",
+    "summary": "A professional move usually starts with route confirmation, employment documentation, temporary housing, and first-week registration priorities."
+  },
+  {
+    "id": "partner-relocation",
+    "title": "Partner relocation from {countryName}",
+    "summary": "Partner moves often focus on relationship and identity documents, synchronized travel planning, and shared first 90-day setup tasks."
+  },
+  {
+    "id": "family-relocation",
+    "title": "Family move from {countryName}",
+    "summary": "Family moves typically require earlier document preparation, more housing planning, and a clear sequence for first-month admin tasks."
+  }
+]

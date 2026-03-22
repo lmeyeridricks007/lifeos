@@ -1,0 +1,15 @@
+{
+  "weights": {
+    "arrivalStage": 20,
+    "household": 20,
+    "startingJobSoon": 20,
+    "needsIntegrationAwareness": 20,
+    "from": 10,
+    "arrivalDate": 10
+  },
+  "bands": [
+    { "min": 0, "max": 39, "label": "Early plan" },
+    { "min": 40, "max": 69, "label": "Solid starting point" },
+    { "min": 70, "max": 100, "label": "Clear 90-day plan" }
+  ]
+}

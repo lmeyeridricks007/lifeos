@@ -1,0 +1,495 @@
+{
+  "slug": "open-bank-account-netherlands",
+  "path": "/netherlands/open-bank-account-netherlands/",
+  "title": "Open a Bank Account in the Netherlands",
+  "metaTitle": "Open a Bank Account in the Netherlands | Expat Banking Guide",
+  "subtitle": "A practical guide for expats opening a Dutch bank account, including requirements, BSN rules, bank comparisons, and the best options for internationals.",
+  "description": "Learn how to open a bank account in the Netherlands as an expat. Requirements, BSN rules, costs, best banks, and practical tips for setting up your finances after arrival.",
+  "breadcrumbLabel": "Open a Bank Account",
+  "hero": {
+    "eyebrow": "BANKING SETUP",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/heroes/open-bank-account-netherlands.png",
+      "alt": "An expat man in glasses works on his banking setup with a laptop and paperwork at a wooden desk, overlooking a scenic canal and traditional buildings in the Netherlands. The desk includes documents, passports, Euro currency, and guidebooks labeled Banking, Residence Permit, and Registration, illustrating the process of opening a bank account for foreigners."
+    }
+  },
+  "heroCta": {
+    "title": "After Arriving in the Netherlands",
+    "supportingText": "Plan your first steps after arrival, including registration, BSN, and banking.",
+    "primaryCtaLabel": "After Arriving in the Netherlands",
+    "primaryCtaHref": "/netherlands/after-arriving-netherlands/",
+    "secondaryCtaLabel": "Municipality Registration Guide",
+    "secondaryCtaHref": "/netherlands/municipality-registration-netherlands/",
+    "supportingLinks": [
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+    ]
+  },
+  "tocItems": [
+    { "id": "intro", "label": "Introduction" },
+    { "id": "why-expats-need", "label": "Why expats need a Dutch bank account" },
+    { "id": "requirements", "label": "Requirements to open an account" },
+    { "id": "bsn", "label": "Do you need a BSN first?" },
+    { "id": "best-banks", "label": "Best banks for expats" },
+    { "id": "bank-comparison", "label": "Comparison of major banks" },
+    { "id": "traditional-vs-digital", "label": "Traditional vs digital banks" },
+    { "id": "business-accounts", "label": "Business bank accounts" },
+    { "id": "typical-costs", "label": "Typical costs" },
+    { "id": "example-scenarios", "label": "Example scenarios" },
+    { "id": "tools", "label": "Tools that help" },
+    { "id": "useful-services", "label": "Useful services" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" },
+    { "id": "official-sources", "label": "Official sources" }
+  ],
+  "quickAnswers": [
+    {
+      "label": "BSN Required",
+      "value": "Most banks require a BSN, though some allow opening an account first and submitting the BSN later."
+    },
+    {
+      "label": "Address Needed",
+      "value": "A Dutch residential address is usually required for verification."
+    },
+    {
+      "label": "Opening Time",
+      "value": "Online accounts can be opened within minutes to a few days."
+    },
+    {
+      "label": "Monthly Fees",
+      "value": "Typical bank accounts cost €3–€5 per month."
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "heading": "Introduction",
+      "body": [
+        "Opening a Dutch bank account is usually one of the first practical steps after moving to the Netherlands.",
+        "You will likely need a local account to receive your salary, pay rent, set up health insurance, pay for subscriptions and utilities, and use iDEAL payments online.",
+        "Most banks require a passport or valid ID, a Dutch address, a BSN (citizen service number), and a residence permit if applicable. However, some banks allow accounts to be opened before receiving a BSN as long as the number is provided later."
+      ],
+      "bullets": [
+        "Receive your salary",
+        "Pay rent",
+        "Set up health insurance",
+        "Pay for subscriptions and utilities",
+        "Use iDEAL payments online"
+      ],
+      "links": [
+        { "label": "EUR.nl – Dutch bank account (orientation)", "href": "https://www.eur.nl/en/education/practical-matters/orientation-arrival/dutch-bank-account" }
+      ]
+    },
+    {
+      "id": "why-expats-need",
+      "heading": "Why Expats Need a Dutch Bank Account",
+      "body": [
+        "Most financial activities in the Netherlands rely on local banking. You will typically need a Dutch account for salary payments, rent payments, health insurance premiums, taxes, utilities, and online payments using iDEAL.",
+        "Card payments are widely used and some businesses only accept debit cards linked to Dutch accounts."
+      ],
+      "bullets": [
+        "Salary payments",
+        "Rent payments",
+        "Health insurance premiums",
+        "Taxes",
+        "Utilities",
+        "Online payments using iDEAL"
+      ],
+      "links": [
+        { "label": "IamExpat – Banking in the Netherlands", "href": "https://www.iamexpat.nl/expat-info/money-taxation/banking-in-the-netherlands" }
+      ]
+    },
+    {
+      "id": "requirements",
+      "heading": "Requirements to Open a Bank Account",
+      "body": [
+        "Banks typically ask for a standard set of documents. You receive a BSN after registering with a municipality, so planning your registration appointment early helps with banking setup."
+      ],
+      "bullets": [
+        "Passport or EU ID",
+        "BSN (Citizen Service Number)",
+        "Dutch residential address",
+        "Residence permit if applicable",
+        "Proof of income or employment in some cases"
+      ],
+      "links": [
+        { "label": "Municipality registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Universiteit van Amsterdam – Opening a Dutch bank account", "href": "https://www.uva.nl/en/education/practical-information/opening-a-dutch-bank-account/opening-a-dutch-bank-account.html" }
+      ]
+    },
+    {
+      "id": "bsn",
+      "heading": "Do You Need a BSN First?",
+      "body": [
+        "Most banks require a BSN for regulatory and tax reporting reasons. However, some banks allow opening the account first and submitting the BSN within about 90 days.",
+        "Examples include ABN AMRO, bunq, and ING—but this depends on your passport type and the bank’s current onboarding process. Always check the latest requirements on the bank’s website."
+      ],
+      "callout": {
+        "type": "info",
+        "title": "BSN and timing",
+        "text": "If you do not yet have a BSN, look for providers that allow you to start the process and provide your BSN later. EUR.nl notes that some banks allow this; confirm directly with the bank."
+      },
+      "links": [
+        { "label": "EUR.nl – Dutch bank account", "href": "https://www.eur.nl/en/education/practical-matters/orientation-arrival/dutch-bank-account" }
+      ]
+    },
+    {
+      "id": "best-banks",
+      "heading": "Best Banks in the Netherlands for Expats",
+      "body": [
+        "The table below compares expat-friendly options. Digital banks often allow faster onboarding and may be easier if you are still waiting for documents or prefer a mobile-first setup."
+      ],
+      "table": {
+        "headers": ["Bank", "Type", "Monthly Fee", "English Support", "Best For"],
+        "rows": [
+          ["ABN AMRO", "Traditional bank", "~€4/month", "Yes", "Expats and international workers"],
+          ["ING", "Traditional bank", "~€3–€4/month", "Yes", "Large branch network"],
+          ["bunq", "Digital bank", "Free–€3.99+", "Yes", "Mobile-first expats"],
+          ["Wise", "Financial platform", "Low fee transfers", "Yes", "International transfers"]
+        ]
+      }
+    },
+    {
+      "id": "bank-comparison",
+      "heading": "Comparison of Major Banks in the Netherlands",
+      "body": [
+        "Below is a detailed comparison of major banks and financial platforms used by expats in the Netherlands. Includes overview, main features, pros and cons, typical costs, and links to each provider. Always confirm current offers and requirements on the bank’s website."
+      ],
+      "bankComparisons": [
+        {
+          "name": "ABN AMRO",
+          "overview": "One of the largest Dutch banks, with dedicated expat services, English-language information, and a strong branch network. Popular with international workers and employers for salary accounts.",
+          "type": "traditional",
+          "features": [
+            "Expat-focused onboarding and English support",
+            "Full current account with iDEAL and Maestro",
+            "Branches and in-person support",
+            "Mortgages, savings, and investments",
+            "May allow account opening before BSN in some cases"
+          ],
+          "pros": [
+            "Widely recognised; many employers use ABN AMRO",
+            "Clear expat information and dedicated pages",
+            "Full-service banking and branch access",
+            "Strong app and online banking"
+          ],
+          "cons": [
+            "Monthly fee for standard accounts",
+            "Account approval can take a few days",
+            "Some products require BSN and proof of address"
+          ],
+          "typicalCosts": "Around €4/month for a basic current account; premium and packaged accounts cost more.",
+          "websiteUrl": "https://www.abnamro.nl/en/personal/specially-for/expats",
+          "logo": { "src": "/images/affiliates/logos/abn-amro.svg", "alt": "ABN AMRO logo" }
+        },
+        {
+          "name": "ING",
+          "overview": "The largest bank in the Netherlands by customers, with a broad branch and ATM network. Offers English-language options and is commonly used for everyday banking and salary.",
+          "type": "traditional",
+          "features": [
+            "Wide branch and ATM network",
+            "English website and app options",
+            "Current accounts, savings, mortgages, insurance",
+            "iDEAL and Maestro debit cards",
+            "International transfers and multi-currency options"
+          ],
+          "pros": [
+            "Very large network; easy to find ATMs and branches",
+            "Familiar to many Dutch employers",
+            "Competitive basic account fees",
+            "Good mobile app"
+          ],
+          "cons": [
+            "BSN and Dutch address usually required",
+            "Less expat-specific onboarding than ABN AMRO",
+            "Some processes mainly in Dutch"
+          ],
+          "typicalCosts": "Around €3–€4/month for a basic account; packaged and premium options available.",
+          "websiteUrl": "https://www.ing.nl/particulier/index.html",
+          "logo": { "src": "/images/affiliates/logos/ing.svg", "alt": "ING logo" }
+        },
+        {
+          "name": "Rabobank",
+          "overview": "A major Dutch cooperative bank with a strong presence nationwide. Offers full banking services; often chosen by people who prefer a traditional bank with a cooperative structure.",
+          "type": "traditional",
+          "features": [
+            "Full-service banking and branch network",
+            "Current and savings accounts, mortgages, loans",
+            "iDEAL and Maestro",
+            "Dutch-focused but with options for internationals"
+          ],
+          "pros": [
+            "Stable, well-known institution",
+            "Many branches and ATMs",
+            "Competitive rates on some products"
+          ],
+          "cons": [
+            "Less expat-oriented than ABN AMRO or ING",
+            "English information can be limited",
+            "BSN and address typically required from the start"
+          ],
+          "typicalCosts": "Around €3–€5/month for a basic account; package deals may reduce fees.",
+          "websiteUrl": "https://www.rabobank.nl/",
+          "logo": { "src": "/images/affiliates/logos/rabobank.svg", "alt": "Rabobank logo" }
+        },
+        {
+          "name": "bunq",
+          "overview": "Dutch-licensed digital bank with a strong focus on expats and internationals. App-based onboarding, English throughout, and often faster account opening; some options allow starting before you have a BSN.",
+          "type": "digital",
+          "features": [
+            "App-only banking; no branches",
+            "Full English; expat-oriented",
+            "Dutch IBAN, iDEAL, and Maestro",
+            "Free and paid plans; multiple sub-accounts",
+            "Fast onboarding; possible to open before BSN in some cases"
+          ],
+          "pros": [
+            "Very fast, simple sign-up for many users",
+            "Designed for internationals and expats",
+            "Free tier available",
+            "Useful for early arrival when other banks are slower"
+          ],
+          "cons": [
+            "No physical branches",
+            "Paid features can add up if you use premium options",
+            "Not a full-service bank for mortgages or complex products"
+          ],
+          "typicalCosts": "Free tier available; paid plans from around €2.99–€3.99/month and up.",
+          "websiteUrl": "https://www.bunq.com/",
+          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
+        },
+        {
+          "name": "Wise",
+          "overview": "Financial platform (not a full bank in the Netherlands) offering multi-currency accounts and Dutch IBAN for receiving and sending money. Often used for international transfers and as a complement to a local bank.",
+          "type": "platform",
+          "features": [
+            "Dutch IBAN for receiving euro payments",
+            "Multi-currency accounts and conversions",
+            "International transfers at transparent fees",
+            "Debit card for spending",
+            "Useful for salary, rent, or moving money to the Netherlands"
+          ],
+          "pros": [
+            "Low, transparent fees for international transfers",
+            "Dutch IBAN without needing a traditional bank first",
+            "Good for receiving salary or rent from abroad",
+            "Simple sign-up and English interface"
+          ],
+          "cons": [
+            "Not a full bank; no iDEAL or full Dutch banking suite",
+            "Some employers or landlords may prefer a traditional bank IBAN",
+            "Best used alongside a Dutch bank for local payments"
+          ],
+          "typicalCosts": "No monthly account fee; pay per transfer and conversion; card and other fees apply depending on use.",
+          "websiteUrl": "https://wise.com/",
+          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
+        }
+      ]
+    },
+    {
+      "id": "traditional-vs-digital",
+      "heading": "Traditional Banks vs Digital Banks",
+      "body": [
+        "Traditional banks such as ABN AMRO, ING, and Rabobank offer branches, mortgages and loans, and full financial services. They suit people who want in-person support and a full range of products.",
+        "Digital banks such as bunq, Wise, and N26 offer fast onboarding, mobile-first apps, and often easier international transfers. They can be a good first step or complement to a traditional account."
+      ],
+      "bullets": [
+        "Traditional: ABN AMRO, ING, Rabobank — branches, mortgages, full services.",
+        "Digital: bunq, Wise, N26 — fast onboarding, mobile-first, easier international transfers."
+      ]
+    },
+    {
+      "id": "business-accounts",
+      "heading": "Business Bank Accounts",
+      "body": [
+        "Entrepreneurs and freelancers may need a business account in addition to a personal one. Requirements usually include a KvK registration number, business documents, and tax information. Business accounts can take longer to approve than personal accounts, so plan ahead."
+      ],
+      "links": [
+        { "label": "After arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" }
+      ]
+    },
+    {
+      "id": "typical-costs",
+      "heading": "Typical Costs",
+      "body": [
+        "Monthly fees vary by provider and plan. Extra costs may apply for international transfers, credit cards, or premium accounts."
+      ],
+      "table": {
+        "headers": ["Type", "Typical monthly cost", "Notes"],
+        "rows": [
+          ["Traditional bank accounts", "€3 – €5 / month", "Basic current account"],
+          ["Digital banks", "€0 – €10 depending on plan", "Free tiers often available"],
+          ["International transfers", "Varies", "Check provider fees"],
+          ["Credit cards / premium", "Varies", "Optional add-ons"]
+        ]
+      }
+    },
+    {
+      "id": "useful-services",
+      "heading": "Useful Services",
+      "body": [
+        "These services are commonly used by expats for banking, insurance, housing, and mobile setup during relocation. Compare options and confirm terms on the providers’ sites."
+      ],
+      "services": [
+        {
+          "name": "bunq",
+          "description": "Dutch digital bank with expat-friendly onboarding and English support; useful for opening an account quickly.",
+          "url": "https://www.bunq.com/",
+          "indicativeCost": "Free and paid plans.",
+          "reason": "Fast app-based account opening.",
+          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
+        },
+        {
+          "name": "Wise",
+          "description": "Multi-currency account and international transfers; useful for moving money into the Netherlands and managing foreign currency.",
+          "url": "https://wise.com/",
+          "indicativeCost": "Transfer fees vary.",
+          "reason": "Low-cost international transfers.",
+          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
+        },
+        {
+          "name": "Independer",
+          "description": "Insurance comparison site often used to compare Dutch health insurance and other insurance options.",
+          "url": "https://www.independer.nl/",
+          "indicativeCost": "Comparison platform; insurer premiums vary.",
+          "reason": "Useful when evaluating health insurance after arrival.",
+          "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
+        },
+        {
+          "name": "Simyo",
+          "description": "Dutch SIM-only mobile provider; useful once you want a local number for banking and admin.",
+          "url": "https://www.simyo.nl/",
+          "indicativeCost": "Budget monthly plans.",
+          "reason": "Local number for 2FA and correspondence.",
+          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
+        },
+        {
+          "name": "HousingAnywhere",
+          "description": "Temporary and medium-term rentals often used by internationals before or after arrival.",
+          "url": "https://housinganywhere.com/",
+          "indicativeCost": "Housing prices vary by city.",
+          "reason": "Relevant when you need an address for registration and banking.",
+          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
+        }
+      ]
+    },
+    {
+      "id": "official-sources",
+      "heading": "Official Sources",
+      "body": [
+        "Use these official sources to confirm current requirements and procedures. Bank rules and product details can change."
+      ],
+      "links": [
+        { "label": "Netherlands Worldwide", "href": "https://www.netherlandsworldwide.nl/" },
+        { "label": "ABN AMRO – Expat banking", "href": "https://www.abnamro.nl/en/personal/specially-for/expats" },
+        { "label": "ING – Personal banking", "href": "https://www.ing.nl/particulier/index.html" },
+        { "label": "bunq", "href": "https://www.bunq.com/" }
+      ]
+    }
+  ],
+  "toolCtas": [
+    {
+      "key": "visa-checker",
+      "label": "Visa Eligibility Checker",
+      "href": "/netherlands/visa-checker/",
+      "description": "Check which visa or permit routes you may qualify for.",
+      "ctaLabel": "Check eligibility"
+    },
+    {
+      "key": "visa-cost",
+      "label": "Visa Cost Calculator",
+      "href": "/netherlands/visa-cost-calculator/",
+      "description": "Estimate visa and move costs for your route.",
+      "ctaLabel": "Estimate costs"
+    },
+    {
+      "key": "visa-timeline",
+      "label": "Visa Timeline Estimator",
+      "href": "/netherlands/visa-timeline-estimator/",
+      "description": "Estimate how long your visa process may take.",
+      "ctaLabel": "Estimate timeline"
+    },
+    {
+      "key": "moving-cost",
+      "label": "Moving Cost Calculator",
+      "href": "/netherlands/moving/tools/relocation-cost-estimator/",
+      "description": "Estimate costs for your move and first months.",
+      "ctaLabel": "Estimate moving costs"
+    }
+  ],
+  "exampleScenarios": [
+    {
+      "title": "Highly Skilled Migrant",
+      "summary": "Needs a salary account quickly. Prioritise a bank that offers fast onboarding and accepts your documents; traditional banks like ABN AMRO or ING are often used.",
+      "href": "/netherlands/after-arriving-netherlands/",
+      "ctaLabel": "After arriving guide"
+    },
+    {
+      "title": "International Student",
+      "summary": "Needs a free or low-cost student account. Check with your institution and compare bunq, ING, or other providers that offer student-friendly options.",
+      "href": "/netherlands/first-30-days-netherlands/",
+      "ctaLabel": "First 30 days"
+    },
+    {
+      "title": "Entrepreneur",
+      "summary": "Needs both personal and business accounts. Plan for KvK registration and allow extra time for business account approval.",
+      "href": "/netherlands/after-arriving-netherlands/",
+      "ctaLabel": "After arriving guide"
+    },
+    {
+      "title": "Family Relocating",
+      "summary": "Needs joint accounts and budgeting. Consider banks that support multiple account holders and straightforward online banking.",
+      "href": "/netherlands/first-90-days-netherlands/",
+      "ctaLabel": "First 90 days guide"
+    }
+  ],
+  "scenariosSectionTitle": "Example Scenarios",
+  "scenariosSectionIntro": "Different situations lead to different banking priorities. The cards below link to guides that help you plan your first steps.",
+  "internalLinks": {
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    "related": [
+      { "label": "Compare banks", "href": "/netherlands/services/banks/" },
+      { "label": "All services hub", "href": "/netherlands/services/" },
+      { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
+      { "label": "Municipality Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "Health Insurance Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "First 90 Days Guide", "href": "/netherlands/first-90-days-netherlands/" }
+    ]
+  },
+  "sidebarStartLinks": [
+    { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
+    { "label": "Municipality Registration", "href": "/netherlands/municipality-registration-netherlands/" },
+    { "label": "First 90 Days Planner", "href": "/netherlands/moving/tools/first-90-days/" },
+    { "label": "Back to Moving Hub", "href": "/netherlands/moving/" }
+  ],
+  "faq": [
+    {
+      "q": "Can foreigners open a bank account in the Netherlands?",
+      "a": "Yes. Many banks in the Netherlands allow non-residents and expats to open an account. Requirements typically include a valid ID, Dutch address, and usually a BSN (citizen service number). Some banks let you start the process before you have a BSN and submit it later."
+    },
+    {
+      "q": "Do I need a BSN to open a bank account?",
+      "a": "Most banks require a BSN for regulatory and tax reasons. Some banks, including ABN AMRO, bunq, and ING, may allow you to open an account first and provide your BSN within a set period (often around 90 days). Check the bank’s current policy."
+    },
+    {
+      "q": "Which bank is easiest for expats?",
+      "a": "Digital banks such as bunq often offer the fastest, app-based onboarding and full English support. Traditional banks like ABN AMRO and ING also have expat-oriented products and English information. Ease depends on your documents and whether you already have a BSN and address."
+    },
+    {
+      "q": "How long does it take to open a bank account?",
+      "a": "Online accounts can often be opened within minutes to a few days, depending on the provider and whether you have all documents ready. Traditional banks may take a few days to a week. Business accounts can take longer."
+    },
+    {
+      "q": "Can students open a Dutch bank account?",
+      "a": "Yes. Students can open a Dutch bank account; many banks offer student-friendly or low-cost options. You will typically need proof of enrolment, ID, and usually a BSN and Dutch address. Check with your institution and the bank for current requirements."
+    },
+    {
+      "q": "Can entrepreneurs open business accounts?",
+      "a": "Yes. Entrepreneurs and freelancers can open business accounts. You will usually need a KvK registration number, business documents, and tax information. Approval can take longer than for personal accounts, so plan ahead."
+    }
+  ],
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

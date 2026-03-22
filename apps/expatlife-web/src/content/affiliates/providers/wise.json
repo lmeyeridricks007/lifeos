@@ -1,0 +1,26 @@
+{
+  "id": "wise",
+  "name": "Wise",
+  "tagline": "Low-cost international transfers and multi-currency",
+  "categoryIds": ["banking"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Popular with expats", "Multi-currency"],
+  "highlights": [
+    "Low fees for international transfers",
+    "Hold and convert multiple currencies",
+    "Easy onboarding from abroad"
+  ],
+  "cta": {
+    "label": "View Wise",
+    "href": "https://wise.com/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/wise.svg",
+    "alt": "Wise logo"
+  }
+}

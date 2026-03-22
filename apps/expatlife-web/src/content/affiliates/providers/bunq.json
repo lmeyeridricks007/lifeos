@@ -1,0 +1,26 @@
+{
+  "id": "bunq",
+  "name": "bunq",
+  "tagline": "Expat-friendly banking with fast onboarding",
+  "categoryIds": ["banking"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Popular with expats", "Fast setup"],
+  "highlights": [
+    "English-friendly app experience",
+    "Useful for salary + direct debits",
+    "Works well for international transfers (when paired with Wise)"
+  ],
+  "cta": {
+    "label": "View bunq",
+    "href": "https://www.bunq.com/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/bunq.svg",
+    "alt": "bunq logo"
+  }
+}

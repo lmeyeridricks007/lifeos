@@ -1,0 +1,8 @@
+{
+  "defaultPlacementIdPrefix": "country_moving_",
+  "byDistanceCategory": {
+    "far": ["banking", "housing", "insurance", "shipping"],
+    "near": ["banking", "housing", "insurance"]
+  },
+  "fallbackCategories": ["banking", "housing", "insurance"]
+}

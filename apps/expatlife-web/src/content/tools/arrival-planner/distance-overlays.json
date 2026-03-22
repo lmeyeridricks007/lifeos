@@ -1,0 +1,5 @@
+{
+  "near": [],
+  "medium": ["review-moderate-distance-arrival-buffer"],
+  "far": ["plan-long-haul-arrival-buffer"]
+}

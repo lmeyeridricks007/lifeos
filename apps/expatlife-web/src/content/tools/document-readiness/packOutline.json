@@ -1,0 +1,32 @@
+[
+  {
+    "id": "identity",
+    "label": "Identity",
+    "intro": "Core identity records you will commonly reference during relocation and first-month setup."
+  },
+  {
+    "id": "employment",
+    "label": "Employment",
+    "intro": "Work-related records that help with onboarding, payroll context, and relocation coordination."
+  },
+  {
+    "id": "housing",
+    "label": "Housing",
+    "intro": "Address and rental records often needed for practical settlement steps."
+  },
+  {
+    "id": "family",
+    "label": "Family",
+    "intro": "Relationship and child-related records for partner or family relocation scenarios."
+  },
+  {
+    "id": "education",
+    "label": "Education",
+    "intro": "Qualification and academic records that can support work or long-term planning."
+  },
+  {
+    "id": "travel",
+    "label": "Travel",
+    "intro": "Travel and relocation proof documents that support timeline and logistics continuity."
+  }
+]

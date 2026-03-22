@@ -1,0 +1,28 @@
+{
+  "startingJobSoon_yes": [
+    "confirm-payroll-setup-with-employer",
+    "confirm-30-percent-ruling-process-if-relevant"
+  ],
+  "hasBankAccountAlready_false": [],
+  "hasBSNAlready_false": [],
+  "housingSituation_still-looking": [],
+  "housingSituation_temporary": [],
+  "hasKidsAdminNeeds_true": [
+    "kids-admin-kickoff-week1-2",
+    "check-family-or-childcare-follow-up-if-relevant"
+  ],
+  "needsDrivingSoon_true": [
+    "review-driving-licence-use-or-exchange-if-needed"
+  ],
+  "needsUtilitiesSetup_true": [
+    "arrange-utilities-and-internet"
+  ],
+  "wantsLanguageSupport_true": [
+    "build-language-and-integration-routine",
+    "build-weekly-language-practice-rhythm"
+  ],
+  "needsIntegrationAwareness_yes": [
+    "build-language-and-integration-routine",
+    "create-next-quarter-integration-plan"
+  ]
+}

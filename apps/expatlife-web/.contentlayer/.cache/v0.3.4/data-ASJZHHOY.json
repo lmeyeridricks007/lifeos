@@ -1,0 +1,79 @@
+{
+  "cacheItemsMap": {
+    "netherlands/moving/hub.mdx": {
+      "document": {
+        "title": "Move & Immigration hub",
+        "description": "Hub for moving guidance, core pages, and deterministic tools.",
+        "cluster": "moving",
+        "body": {
+          "raw": "\nThis hub links the pillar, guide pages, and tools.\n",
+          "code": "var Component=(()=>{var d=Object.create;var i=Object.defineProperty;var l=Object.getOwnPropertyDescriptor;var p=Object.getOwnPropertyNames;var g=Object.getPrototypeOf,x=Object.prototype.hasOwnProperty;var f=(t,n)=>()=>(n||t((n={exports:{}}).exports,n),n.exports),h=(t,n)=>{for(var e in n)i(t,e,{get:n[e],enumerable:!0})},c=(t,n,e,s)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let o of p(n))!x.call(t,o)&&o!==e&&i(t,o,{get:()=>n[o],enumerable:!(s=l(n,o))||s.enumerable});return t};var b=(t,n,e)=>(e=t!=null?d(g(t)):{},c(n||!t||!t.__esModule?i(e,\"default\",{value:t,enumerable:!0}):e,t)),j=t=>c(i({},\"__esModule\",{value:!0}),t);var u=f((O,a)=>{a.exports=_jsx_runtime});var C={};h(C,{default:()=>v,frontmatter:()=>_});var r=b(u()),_={title:\"Move & Immigration hub\",description:\"Hub for moving guidance, core pages, and deterministic tools.\",cluster:\"moving\"};function m(t){let n=Object.assign({p:\"p\"},t.components);return(0,r.jsx)(n.p,{children:\"This hub links the pillar, guide pages, and tools.\"})}function M(t={}){let{wrapper:n}=t.components||{};return n?(0,r.jsx)(n,Object.assign({},t,{children:(0,r.jsx)(m,t)})):m(t)}var v=M;return j(C);})();\n;return Component;"
+        },
+        "_id": "netherlands/moving/hub.mdx",
+        "_raw": {
+          "sourceFilePath": "netherlands/moving/hub.mdx",
+          "sourceFileName": "hub.mdx",
+          "sourceFileDir": "netherlands/moving",
+          "contentType": "mdx",
+          "flattenedPath": "netherlands/moving/hub"
+        },
+        "type": "Hub",
+        "slug": "/netherlands/moving/hub"
+      },
+      "documentHash": "1772656848205",
+      "hasWarnings": false,
+      "documentTypeName": "Hub"
+    },
+    "netherlands/moving/pillar.mdx": {
+      "document": {
+        "title": "Moving to the Netherlands",
+        "description": "Practical pillar guide for planning a smooth move to the Netherlands.",
+        "cluster": "moving",
+        "readingTime": "10 min",
+        "body": {
+          "raw": "\n## Start with a calm plan\n\nUse the moving hub to map your timeline. Prioritize identity docs, address setup, BSN registration, and insurance checkpoints.\n\n## Before you move\n\nPrepare a document pack early. Confirm validity periods and keep certified copies where needed.\n\n## First 30 days\n\nFocus on registration milestones and practical setup. Keep a simple tracker for appointments and document follow-ups.\n\n## First 90 days\n\nTransition from setup into stable routines. Review what changed and close any open admin loops.\n",
+          "code": "var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var f=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var i in e)o(n,i,{get:e[i],enumerable:!0})},s=(n,e,i,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of m(e))!g.call(n,r)&&r!==i&&o(n,r,{get:()=>e[r],enumerable:!(a=h(e,r))||a.enumerable});return n};var y=(n,e,i)=>(i=n!=null?p(u(n)):{},s(e||!n||!n.__esModule?o(i,\"default\",{value:n,enumerable:!0}):i,n)),j=n=>s(o({},\"__esModule\",{value:!0}),n);var d=f((k,c)=>{c.exports=_jsx_runtime});var F={};x(F,{default:()=>w,frontmatter:()=>v});var t=y(d()),v={title:\"Moving to the Netherlands\",description:\"Practical pillar guide for planning a smooth move to the Netherlands.\",cluster:\"moving\",readingTime:\"10 min\"};function l(n){let e=Object.assign({h2:\"h2\",p:\"p\"},n.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.h2,{children:\"Start with a calm plan\"}),`\n`,(0,t.jsx)(e.p,{children:\"Use the moving hub to map your timeline. Prioritize identity docs, address setup, BSN registration, and insurance checkpoints.\"}),`\n`,(0,t.jsx)(e.h2,{children:\"Before you move\"}),`\n`,(0,t.jsx)(e.p,{children:\"Prepare a document pack early. Confirm validity periods and keep certified copies where needed.\"}),`\n`,(0,t.jsx)(e.h2,{children:\"First 30 days\"}),`\n`,(0,t.jsx)(e.p,{children:\"Focus on registration milestones and practical setup. Keep a simple tracker for appointments and document follow-ups.\"}),`\n`,(0,t.jsx)(e.h2,{children:\"First 90 days\"}),`\n`,(0,t.jsx)(e.p,{children:\"Transition from setup into stable routines. Review what changed and close any open admin loops.\"})]})}function _(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,Object.assign({},n,{children:(0,t.jsx)(l,n)})):l(n)}var w=_;return j(F);})();\n;return Component;"
+        },
+        "_id": "netherlands/moving/pillar.mdx",
+        "_raw": {
+          "sourceFilePath": "netherlands/moving/pillar.mdx",
+          "sourceFileName": "pillar.mdx",
+          "sourceFileDir": "netherlands/moving",
+          "contentType": "mdx",
+          "flattenedPath": "netherlands/moving/pillar"
+        },
+        "type": "Pillar",
+        "slug": "/netherlands/moving/pillar"
+      },
+      "documentHash": "1772656848178",
+      "hasWarnings": false,
+      "documentTypeName": "Pillar"
+    },
+    "netherlands/moving/guides/bsn-registration.mdx": {
+      "document": {
+        "title": "BSN registration",
+        "description": "Step-by-step BSN setup guidance for new arrivals.",
+        "country": "netherlands",
+        "cluster": "moving",
+        "readingTime": "6 min",
+        "body": {
+          "raw": "\n## Why BSN matters\n\nYou need a BSN for many core systems in the Netherlands.\n\n## What to prepare\n\nBring ID, address details, and supporting civil-status documents where relevant.\n\n## Appointment flow\n\nBook, confirm, and keep records of submissions and confirmations.\n",
+          "code": "var Component=(()=>{var h=Object.create;var o=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var l=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,f=Object.prototype.hasOwnProperty;var g=(e,n)=>()=>(n||e((n={exports:{}}).exports,n),n.exports),x=(e,n)=>{for(var r in n)o(e,r,{get:n[r],enumerable:!0})},a=(e,n,r,i)=>{if(n&&typeof n==\"object\"||typeof n==\"function\")for(let s of l(n))!f.call(e,s)&&s!==r&&o(e,s,{get:()=>n[s],enumerable:!(i=p(n,s))||i.enumerable});return e};var j=(e,n,r)=>(r=e!=null?h(u(e)):{},a(n||!e||!e.__esModule?o(r,\"default\",{value:e,enumerable:!0}):r,e)),_=e=>a(o({},\"__esModule\",{value:!0}),e);var d=g((v,c)=>{c.exports=_jsx_runtime});var S={};x(S,{default:()=>N,frontmatter:()=>y});var t=j(d()),y={title:\"BSN registration\",description:\"Step-by-step BSN setup guidance for new arrivals.\",country:\"netherlands\",cluster:\"moving\",readingTime:\"6 min\"};function m(e){let n=Object.assign({h2:\"h2\",p:\"p\"},e.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(n.h2,{children:\"Why BSN matters\"}),`\n`,(0,t.jsx)(n.p,{children:\"You need a BSN for many core systems in the Netherlands.\"}),`\n`,(0,t.jsx)(n.h2,{children:\"What to prepare\"}),`\n`,(0,t.jsx)(n.p,{children:\"Bring ID, address details, and supporting civil-status documents where relevant.\"}),`\n`,(0,t.jsx)(n.h2,{children:\"Appointment flow\"}),`\n`,(0,t.jsx)(n.p,{children:\"Book, confirm, and keep records of submissions and confirmations.\"})]})}function B(e={}){let{wrapper:n}=e.components||{};return n?(0,t.jsx)(n,Object.assign({},e,{children:(0,t.jsx)(m,e)})):m(e)}var N=B;return _(S);})();\n;return Component;"
+        },
+        "_id": "netherlands/moving/guides/bsn-registration.mdx",
+        "_raw": {
+          "sourceFilePath": "netherlands/moving/guides/bsn-registration.mdx",
+          "sourceFileName": "bsn-registration.mdx",
+          "sourceFileDir": "netherlands/moving/guides",
+          "contentType": "mdx",
+          "flattenedPath": "netherlands/moving/guides/bsn-registration"
+        },
+        "type": "Guide",
+        "slug": "/netherlands/moving/guides/bsn-registration"
+      },
+      "documentHash": "1772656848217",
+      "hasWarnings": false,
+      "documentTypeName": "Guide"
+    }
+  }
+}

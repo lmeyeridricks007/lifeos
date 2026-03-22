@@ -1,0 +1,306 @@
+{
+  "slug": "moving-to-netherlands-steps",
+  "path": "/netherlands/moving-to-netherlands-steps/",
+  "title": "Moving to the Netherlands: Step-by-Step Guide",
+  "breadcrumbLabel": "Moving Steps",
+  "subtitle": "A practical step-by-step overview of what many expats do before moving, after arrival, and during the first 90 days.",
+  "description": "Learn the main steps many expats follow when moving to the Netherlands, from document preparation and housing planning to arrival admin and first-month setup.",
+  "hero": {
+    "eyebrow": "Planning",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/moving-steps-hero.webp",
+      "alt": "Step-by-step relocation plan for moving to the Netherlands"
+    }
+  },
+  "quickAnswers": [
+    {
+      "label": "Best for",
+      "value": "People who want a clear step-by-step view of the move."
+    },
+    {
+      "label": "What this page does",
+      "value": "Breaks the move into a practical sequence rather than one big checklist."
+    },
+    {
+      "label": "Best next step",
+      "value": "Turn these steps into a personalized moving checklist."
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Why a step-by-step plan helps",
+      "body": [
+        "Many expats feel overwhelmed because moving to the Netherlands seems like one giant task. In practice, the move usually becomes much easier once it is broken into a sequence of steps.",
+        "The goal is not to solve everything at once, but to understand what comes first, what depends on other tasks, and what usually happens after arrival."
+      ],
+      "bullets": [
+        "A sequence is easier to manage than a giant mental checklist",
+        "Some tasks depend on documents, housing, or registration being ready first",
+        "Breaking the move into stages reduces stress",
+        "A good plan often matters more than trying to know every detail in advance"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "How to use this page",
+        "text": "Think of these steps as a practical path. Use them to understand the process, then use the tools to personalize the details for your own situation."
+      }
+    },
+    {
+      "id": "step-1",
+      "heading": "Step 1: Understand your move situation",
+      "body": [
+        "The move usually becomes easier once you know what kind of relocation you are planning. For example, a work-based move, partner-based move, and family move often create different priorities.",
+        "At this stage, the most useful thing is simply understanding your broad route and what kind of supporting planning it is likely to require."
+      ],
+      "bullets": [
+        "Clarify whether the move is for work, family, study, or another long-stay reason",
+        "Understand what broad requirement areas may apply",
+        "Avoid assuming every mover follows the same path"
+      ]
+    },
+    {
+      "id": "step-2",
+      "heading": "Step 2: Start your document preparation early",
+      "body": [
+        "Documents are one of the most common sources of delay in international relocation.",
+        "Many people save time by preparing identity documents, civil records, employment paperwork, and other key records earlier than they think they need to."
+      ],
+      "bullets": [
+        "Collect identity documents",
+        "Review civil records such as birth or marriage certificates",
+        "Gather employment or sponsor documents where relevant",
+        "Check whether translation, legalization, or apostille questions may apply"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "step-3",
+      "heading": "Step 3: Create a realistic moving timeline",
+      "body": [
+        "A move usually goes more smoothly once documents, travel, housing, and arrival admin are placed on a realistic timeline.",
+        "This helps you avoid trying to handle everything in the final weeks before departure."
+      ],
+      "bullets": [
+        "Map the move into before-move, arrival, and first-90-day phases",
+        "Separate urgent tasks from useful but non-urgent tasks",
+        "Identify tasks that may take longer than expected"
+      ]
+    },
+    {
+      "id": "step-4",
+      "heading": "Step 4: Plan your housing and address situation",
+      "body": [
+        "Housing is one of the most important practical steps because it often affects what you can do after arrival.",
+        "Many arrival tasks depend on whether you already have a stable address, temporary accommodation, or an uncertain housing situation."
+      ],
+      "bullets": [
+        "Decide whether you need short-term, long-term, or transitional housing",
+        "Understand how address clarity affects arrival admin",
+        "Prepare for deposits, contracts, and housing-related documents"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "step-5",
+      "heading": "Step 5: Prepare the financial side of the move",
+      "body": [
+        "Moving countries often creates practical financial requirements that are easy to underestimate.",
+        "This usually includes travel costs, housing deposits, temporary accommodation, first-month expenses, and practical setup costs."
+      ],
+      "bullets": [
+        "Budget for flights and travel",
+        "Plan for deposits and temporary housing",
+        "Prepare for first-month setup costs",
+        "Think ahead about banking and recurring payments"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "step-6",
+      "heading": "Step 6: Plan your arrival admin before you land",
+      "body": [
+        "Many people focus heavily on the move itself and only think about arrival admin after landing.",
+        "In practice, it usually helps to know early what your first week and first month are likely to involve."
+      ],
+      "bullets": [
+        "Review address registration and municipality registration steps",
+        "Understand BSN-related next steps",
+        "Know which services may need documents, appointments, or lead time",
+        "Create a rough first-week plan before you arrive"
+      ]
+    },
+    {
+      "id": "step-7",
+      "heading": "Step 7: Complete the most important first-week tasks",
+      "body": [
+        "After arrival, most expats focus first on clarity rather than completion. The goal is to understand what can be done immediately and what depends on address, appointments, or documents.",
+        "This first-week stage is often about reducing uncertainty."
+      ],
+      "bullets": [
+        "Confirm your address situation",
+        "Organize your key documents and confirmations",
+        "Start municipality and BSN-related admin where possible",
+        "Identify which tasks need appointments or follow-up"
+      ]
+    },
+    {
+      "id": "step-8",
+      "heading": "Step 8: Set up the essentials for daily life",
+      "body": [
+        "Once the first arrival steps are underway, many expats move into practical setup.",
+        "This usually means banking, health insurance, mobile setup, and the early routines that make daily life feel functional."
+      ],
+      "bullets": [
+        "Open a bank account",
+        "Understand health insurance timing and options",
+        "Set up mobile and recurring payments",
+        "Reduce practical friction in everyday life"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "step-9",
+      "heading": "Step 9: Use the first 30–90 days to stabilize the move",
+      "body": [
+        "A move is not really complete on the day you arrive. For many expats, the first month and first quarter are where the move becomes stable.",
+        "This is often when unfinished admin, housing confidence, healthcare access, transport habits, and daily-life routines begin to settle."
+      ],
+      "bullets": [
+        "Finish follow-up admin",
+        "Build recurring financial and practical routines",
+        "Reduce housing uncertainty",
+        "Create a realistic 90-day settling-in plan"
+      ]
+    },
+    {
+      "id": "common-mistakes",
+      "heading": "Common mistakes in the step-by-step process",
+      "body": [
+        "Most problems do not come from having too many steps. They come from doing the right steps in the wrong order or leaving important ones too late.",
+        "A little sequence awareness usually prevents most relocation stress."
+      ],
+      "bullets": [
+        "Delaying document prep",
+        "Ignoring housing dependencies",
+        "Not planning arrival admin before landing",
+        "Leaving banking or insurance too late",
+        "Treating the move as finished immediately after arrival"
+      ]
+    }
+  ],
+  "featuredTools": [
+    {
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/"
+    },
+    {
+      "label": "Check Document Readiness",
+      "href": "/netherlands/moving/tools/document-readiness/"
+    },
+    {
+      "label": "Build Your Arrival Plan",
+      "href": "/netherlands/moving/tools/arrival-planner/"
+    },
+    {
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/"
+    }
+  ],
+  "toolCtas": [
+    {
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/"
+    },
+    {
+      "label": "Build Your Arrival Plan",
+      "href": "/netherlands/moving/tools/arrival-planner/"
+    }
+  ],
+  "exampleScenarios": [
+    {
+      "title": "Moving for work and needing a practical order of steps",
+      "summary": "A work-based move often becomes easier when documents, housing, arrival admin, and first-month setup are handled as separate stages.",
+      "href": "/netherlands/moving/tools/moving-checklist/?employment=job-offer"
+    },
+    {
+      "title": "Moving with family and trying to avoid sequence mistakes",
+      "summary": "Family moves often depend even more on doing the right steps in the right order because housing, documents, and first-month routines affect each other.",
+      "href": "/netherlands/moving/tools/moving-checklist/?household=kids"
+    },
+    {
+      "title": "Already committed to moving and wanting a practical roadmap",
+      "summary": "Many expats use a step-by-step plan to stop feeling overwhelmed and turn the move into a manageable sequence.",
+      "href": "/netherlands/moving/tools/first-90-days/"
+    }
+  ],
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      {
+        "label": "Moving to the Netherlands Timeline",
+        "href": "/netherlands/moving-to-netherlands-timeline/"
+      },
+      {
+        "label": "Moving Requirements for the Netherlands",
+        "href": "/netherlands/moving-requirements-netherlands/"
+      },
+      {
+        "label": "Documents Needed to Move to the Netherlands",
+        "href": "/netherlands/documents-needed-to-move-netherlands/"
+      },
+      {
+        "label": "After Arriving in the Netherlands",
+        "href": "/netherlands/after-arriving-netherlands/"
+      },
+      {
+        "label": "Register Address in the Netherlands",
+        "href": "/netherlands/register-address-netherlands/"
+      },
+      {
+        "label": "BSN Registration in the Netherlands",
+        "href": "/netherlands/bsn-registration/"
+      },
+      {
+        "label": "First 30 Days in the Netherlands",
+        "href": "/netherlands/first-30-days-netherlands/"
+      },
+      {
+        "label": "First 90 Days in the Netherlands",
+        "href": "/netherlands/first-90-days-netherlands/"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "q": "What are the main steps to move to the Netherlands?",
+      "a": "Many expats break the move into a few major stages: understanding the move situation, preparing documents, planning housing, budgeting for the move, preparing arrival admin, and setting up daily life after arrival."
+    },
+    {
+      "q": "What should I do first when moving to the Netherlands?",
+      "a": "Many people start with broad route awareness, document preparation, and a realistic move timeline before going deeper into arrival and first-month setup."
+    },
+    {
+      "q": "What usually happens after I arrive in the Netherlands?",
+      "a": "For many expats, the first stage after arrival includes address clarity, municipality-related admin, BSN-related next steps, and practical setup such as banking and insurance."
+    },
+    {
+      "q": "What are the biggest mistakes in the moving process?",
+      "a": "Common mistakes include delaying documents, underestimating housing, not planning arrival admin, and handling tasks in the wrong order."
+    },
+    {
+      "q": "How can I make the moving process easier?",
+      "a": "A clear step-by-step plan, document pack, arrival checklist, and first-90-day plan usually make the move much easier to manage."
+    }
+  ],
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

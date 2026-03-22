@@ -1,0 +1,56 @@
+{
+  "slug": "germany",
+  "name": "Germany",
+  "shortName": "DE",
+  "iso2": "DE",
+  "regionGroup": "eu",
+  "distanceCategory": "near",
+  "languages": ["German", "English"],
+  "travel": {
+    "typicalFlightTime": "1-2 hours",
+    "notes": ["Regional moves can support staged moving plans."]
+  },
+  "relocationProfile": {
+    "commonReasons": ["Cross-border work", "Partner relocation", "Education and research"],
+    "popularDutchCities": ["Amsterdam", "Utrecht", "Eindhoven"],
+    "commonSectors": ["Technology", "Engineering", "Research"]
+  },
+  "visaAwareness": {
+    "commonRoutes": ["EU free movement", "Partner / Family route"],
+    "notes": ["Requirements vary by nationality and purpose of stay."]
+  },
+  "documents": {
+    "commonStarterDocuments": ["Passport or EU ID", "Address proof", "Employment records"],
+    "countrySpecificNotes": ["Cross-border movers often focus on registration sequencing first."],
+    "sources": [
+      {
+        "label": "Germany Federal Portal",
+        "name": "Germany Government Services",
+        "website": "https://www.bundesregierung.de",
+        "contactSummary": "General public service information and references."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "EUR",
+    "ranges": [
+      { "key": "oneWayFlight", "label": "One-way flight", "value": "EUR70-EUR250", "note": "Short-haul pricing varies by city and timing." },
+      { "key": "temporaryHousing", "label": "Temporary housing (monthly)", "value": "EUR1,200-EUR2,500", "note": "Depends on destination city." }
+    ]
+  },
+  "contacts": {
+    "official": [
+      { "label": "IND", "name": "Dutch Immigration and Naturalisation Service", "website": "https://ind.nl", "contactSummary": "Official immigration information." }
+    ]
+  },
+  "seo": {
+    "title": "Moving to the Netherlands from Germany: Cross-Border Planning Guide",
+    "description": "Practical guidance for people moving from Germany to the Netherlands, including route awareness, registration-focused prep, and settlement priorities."
+  },
+  "faqOverrides": [],
+  "scenarioOverrides": [],
+  "affiliateContext": {
+    "preferredCategories": ["banking", "housing", "insurance"],
+    "customNotes": []
+  }
+}

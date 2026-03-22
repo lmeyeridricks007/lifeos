@@ -1,0 +1,609 @@
+{
+  "slug": "health-insurance-netherlands",
+  "path": "/netherlands/health-insurance-netherlands/",
+  "title": "Health Insurance in the Netherlands",
+  "metaTitle": "Health Insurance in the Netherlands | Costs, Basic Cover, Providers, Expats",
+  "subtitle": "A practical guide for expats and new arrivals: who usually needs Dutch health insurance, when to arrange it, what the basic package covers, how much it typically costs, and how to compare providers.",
+  "description": "A practical guide to Dutch health insurance for expats, including who needs it, when to arrange it, what the basic package covers, typical monthly costs, provider comparisons, and useful next steps.",
+  "breadcrumbLabel": "Health Insurance",
+  "hero": {
+    "eyebrow": "HEALTHCARE SETUP",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/heroes/health-insurance-netherlands.png",
+      "alt": "A focused expat woman sits at a desk by a Dutch canal window, reviewing health insurance options on a laptop and writing on documents. On the desk are files labeled Health Insurance, Residence Permit, Registration, a passport, and Euro currency, symbolizing the practical steps for new arrivals in the Netherlands."
+    }
+  },
+  "heroCta": {
+    "title": "After Arriving in the Netherlands",
+    "supportingText": "Plan your first steps after arrival, including registration, BSN, and health insurance.",
+    "primaryCtaLabel": "After Arriving in the Netherlands",
+    "primaryCtaHref": "/netherlands/after-arriving-netherlands/",
+    "secondaryCtaLabel": "Compare Health Insurers",
+    "secondaryCtaHref": "/netherlands/health-insurance-netherlands/#compare-major",
+    "supportingLinks": [
+      { "label": "Municipality Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "Open a Bank Account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "Relocation Cost Estimator", "href": "/netherlands/moving/tools/relocation-cost-estimator/" }
+    ]
+  },
+  "tocItems": [
+    { "id": "intro", "label": "Introduction" },
+    { "id": "how-it-works", "label": "How the system works" },
+    { "id": "terminology", "label": "Common terminology and concepts" },
+    { "id": "who-needs", "label": "Who usually needs it" },
+    { "id": "when-to-arrange", "label": "When to arrange it" },
+    { "id": "basic-package", "label": "Basic package" },
+    { "id": "basic-vs-supplementary", "label": "Basic vs supplementary" },
+    { "id": "healthcare-products", "label": "Healthcare services and products" },
+    { "id": "what-affects-cost", "label": "Costs" },
+    { "id": "compare-major", "label": "Compare insurers" },
+    { "id": "provider-directory", "label": "Provider directory" },
+    { "id": "zorgtoeslag", "label": "Healthcare allowance" },
+    { "id": "common-mistakes", "label": "Common mistakes" },
+    { "id": "example-scenarios", "label": "Example scenarios" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "useful-services", "label": "Useful services" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" },
+    { "id": "official-sources", "label": "Official sources" }
+  ],
+  "quickAnswers": [
+    {
+      "label": "DEADLINE",
+      "value": "If Dutch basic insurance is required, you generally have 4 months to arrange it."
+    },
+    {
+      "label": "COVER START",
+      "value": "Coverage usually applies from arrival or permit start date, and premium may be backdated."
+    },
+    {
+      "label": "BASIC PREMIUM",
+      "value": "Average 2026 premium is around €159/month; cheapest standard options start around €142.40/month."
+    },
+    {
+      "label": "START HERE",
+      "value": "Municipality registration and BSN often come first, then insurance comparison and setup."
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "heading": "Introduction",
+      "body": [
+        "Dutch health insurance is one of the most important early-arrival setup tasks. Many people who come to live or work in the Netherlands will need Dutch basic health insurance.",
+        "The system has a mandatory basic insurance layer plus optional supplementary cover. This page helps expats understand the basics, compare providers, estimate costs, and move to the right next step."
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "heading": "How health insurance works in the Netherlands",
+      "body": [
+        "Dutch health insurance is built around a mandatory basic insurance layer for people who are required to insure themselves in the Netherlands. Insurers must offer the basic package; the government determines what it includes.",
+        "You can optionally add supplementary insurance for extras such as dental, physiotherapy, or travel-related add-ons. For most new arrivals, getting the basic package right and understanding the 4-month rule matter more than choosing supplementary cover on day one."
+      ]
+    },
+    {
+      "id": "terminology",
+      "heading": "Common terminology and concepts",
+      "body": [
+        "When comparing Dutch health insurance you will see several standard terms. Below is a short glossary to help you read policy pages and comparison sites."
+      ],
+      "table": {
+        "headers": ["Term", "Dutch", "Meaning"],
+        "rows": [
+          ["Basic package", "Basisverzekering", "The mandatory health insurance that covers a legally defined set of care (GP, hospital, prescribed medicines, etc.). Same content for all insurers; only premium and provider arrangements differ."],
+          ["Supplementary insurance", "Aanvullend pakket", "Optional extra cover (e.g. dental, physiotherapy, glasses). Not standardised; each insurer sets its own packages and limits."],
+          ["Eigen risico", "Eigen risico", "Mandatory excess: the first amount (e.g. €385 per year) of certain care you pay yourself before the insurer pays. Not all care counts toward it; rules are set by law."],
+          ["Premium", "Premie", "The monthly (or annual) amount you pay to the insurer for your policy. Usually paid by direct debit."],
+          ["Healthcare allowance", "Zorgtoeslag", "A benefit from the tax authority (Belastingdienst) for people with lower income to help with health insurance costs. You must apply; eligibility depends on income and situation."],
+          ["Policy year", "Verzekeringsjaar", "Dutch health insurance runs on a calendar year (1 January–31 December). You can switch insurer once per year, with a short window (usually November) to change for the next year."],
+          ["In-network / contracted", "Natura", "Some policies only reimburse care from contracted providers (in network). Others allow free choice (restitutie) and reimburse a set amount."],
+          ["Free choice / reimbursement", "Restitutie", "Policy that lets you choose any provider; the insurer reimburses up to an agreed amount. Often costs more than in-network (natura) policies."],
+          ["Health Insurance Act", "Zorgverzekeringswet (Zvw)", "The law that makes basic health insurance mandatory for residents and defines the basic package and rules (e.g. 4-month deadline, eigen risico)."]
+        ]
+      },
+      "bullets": [
+        "Comparison sites and insurer websites often use these terms; use this list when reading product descriptions.",
+        "For official definitions and current rules, see Government.nl and the Belastingdienst (for zorgtoeslag)."
+      ],
+      "links": [
+        { "label": "Government.nl – Health insurance", "href": "https://www.government.nl/topics/health-insurance" }
+      ]
+    },
+    {
+      "id": "who-needs",
+      "heading": "Who usually needs Dutch health insurance?",
+      "body": [
+        "People who come to live or work in the Netherlands generally need Dutch basic health insurance. There are exceptions and special situations, so confirm your position with official sources if unsure.",
+        "Students, family members, workers, and self-employed movers may not all have the exact same insurance position depending on income, work status, and route."
+      ],
+      "table": {
+        "headers": ["Situation", "Typical requirement", "Note"],
+        "rows": [
+          ["Worker in the Netherlands", "Often required", "Confirm with employer and official sources"],
+          ["Partner / family mover", "Often required", "Depends on residence and income"],
+          ["Student", "Depends on situation", "Check if student insurance or basic package applies"],
+          ["Entrepreneur / self-employed", "Often required", "Confirm once resident and working"],
+          ["Short-stay / not clearly settled", "Depends on situation", "Confirm with IND / official guidance"]
+        ]
+      },
+      "callout": {
+        "type": "info",
+        "title": "Confirm your situation",
+        "text": "If you are unsure whether you need Dutch basic insurance, use Government.nl and Netherlands Worldwide to check. We do not give legal or insurance advice."
+      }
+    },
+    {
+      "id": "when-to-arrange",
+      "heading": "When do you need to arrange Dutch health insurance?",
+      "body": [
+        "According to Government.nl, if you come to live or work in the Netherlands you generally have 4 months to take out the policy. The policy usually must provide coverage from the day you arrive or from the date your residence permit comes into force.",
+        "That can mean paying premium retroactively for the period from arrival or permit start. Netherlands Worldwide states that if you are required to have Dutch basic insurance, you must arrange it within 4 months of arriving; this still applies even if you have insurance in another country, and you may be fined if you do not do it on time."
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Do not wait until month 4",
+        "text": "Do not wait until month 4 to start comparing. Backdated coverage and fines are possible if this requirement applies to you. Start comparing once you have a BSN and address."
+      },
+      "links": [
+        { "label": "Government.nl – When do I need to take out health insurance?", "href": "https://www.government.nl/topics/health-insurance/question-and-answer/when-do-i-need-to-take-out-health-insurance-if-i-come-to-live-in-the-netherlands" },
+        { "label": "Government.nl – Health insurance and residence permit", "href": "https://www.government.nl/topics/health-insurance/health-insurance-and-residence-permit" }
+      ]
+    },
+    {
+      "id": "basic-package",
+      "heading": "What does the Dutch basic package usually cover?",
+      "body": [
+        "The government-defined basic package typically includes GP care, hospital care, maternity care, prescription medicines (within package rules), mental healthcare (subject to package rules), and emergency care.",
+        "Do not rely on this list as a full legal definition. Insurers and the government set the exact scope; check insurer and product pages for current policy specifics."
+      ],
+      "bullets": [
+        "GP care",
+        "Hospital care",
+        "Maternity care",
+        "Prescription medicines (within package rules)",
+        "Mental healthcare (subject to package rules)",
+        "Emergency care"
+      ]
+    },
+    {
+      "id": "basic-vs-supplementary",
+      "heading": "Basic insurance vs supplementary insurance",
+      "body": [
+        "The basic insurance package is the mandatory core; every insurer offers it and the content is set by the government. Supplementary insurance is optional and covers extras such as dental for adults, extra physiotherapy, and broader add-ons.",
+        "Supplementary insurance can be useful, but expats should avoid overbuying before understanding their actual needs. Get the basic package and deadline right first."
+      ],
+      "table": {
+        "headers": ["Basic insurance", "Supplementary insurance"],
+        "rows": [
+          ["Mandatory if you are required to insure in the Netherlands", "Optional"],
+          ["Same core benefits for all insurers", "Varies by insurer and product"],
+          ["Government-defined scope", "Dental, physio, extra travel, etc."],
+          ["You can switch insurer annually", "Often bundled or separate; check terms"]
+        ]
+      }
+    },
+    {
+      "id": "healthcare-products",
+      "heading": "Healthcare services and products: what is in, what is out, and typical costs",
+      "body": [
+        "Dutch health insurance is built around the basic package plus optional supplementary products. Below is a practical overview of what each type typically includes and excludes, and indicative cost ranges. Exact coverage and limits are set by the government (basic) or each insurer (supplementary); always check the policy and comparison sites for current terms."
+      ],
+      "table": {
+        "headers": ["Product / service type", "Typically included", "Typically excluded or limited", "Typical cost (indicative 2026)"],
+        "rows": [
+          ["Basic package (basisverzekering)", "GP visits, hospital care, maternity care, prescribed medicines (from the standard list), mental healthcare (under conditions), emergency care, medical aids (within rules).", "Routine adult dental; physiotherapy beyond the basic allowance; alternative medicine unless in the policy; travel health; non-prescription items; cosmetic procedures.", "~€142–168/month depending on insurer and eigen risico. Average ~€159/month."],
+          ["Eigen risico (mandatory excess)", "Part of the basic package: you pay the first €385 (annual amount) of certain care yourself before the insurer pays.", "Not all care counts toward eigen risico (e.g. GP visits often do not). Rules are set by law.", "Included in basic premium; choosing a higher voluntary excess can reduce the monthly premium."],
+          ["Supplementary – dental (tandarts)", "Routine check-ups, scaling, fillings; some policies include (partial) orthodontics or implants. Limits and waiting periods vary by insurer.", "Pre-existing conditions may be excluded or have waiting periods; high-cost treatments often capped per year.", "Often ~€10–€30/month extra depending on level (basic dental vs extended)."],
+          ["Supplementary – physiotherapy (fysiotherapie)", "Extra sessions beyond the basic package allowance (e.g. first 21–30 sessions from basic; supplementary adds more).", "Sessions above the policy limit; some insurers require referral; first treatment period may be excluded.", "Often ~€5–€20/month depending on number of sessions covered."],
+          ["Supplementary – other (e.g. glasses, alternative, travel)", "Glasses/contact lenses (with limits); alternative care (e.g. physio, chiropractic); travel health; extra hospital comfort. Varies by product.", "Each product has its own exclusions and caps; check the policy document.", "From a few euros to €20+/month per add-on depending on insurer and level."]
+        ]
+      },
+      "bullets": [
+        "Basic package content is the same for all insurers; only premium and provider network (e.g. in-network vs free choice) differ.",
+        "Supplementary products are optional and not standardised: compare per insurer for coverage and limits.",
+        "Eigen risico applies only to certain care; GP and maternity care are often fully covered without counting toward the excess.",
+        "Costs above are for planning; use Independer or Zorgverzekeringskaart for current premiums and policy details."
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Check the policy",
+        "text": "Inclusions, exclusions, and limits depend on the specific product. Use comparison sites and the official Zorgverzekeringskaart for up-to-date product information."
+      },
+      "links": [
+        { "label": "Zorgverzekeringskaart – product cards", "href": "https://zorgverzekeringskaart.nl/" },
+        { "label": "Independer – compare packages and premiums", "href": "https://www.independer.nl/zorgverzekering/intro.aspx" }
+      ]
+    },
+    {
+      "id": "what-affects-cost",
+      "heading": "What affects the monthly cost?",
+      "body": [
+        "Cost depends on the insurer, policy type (e.g. in-network or free choice of provider), deductible choices, and any supplementary add-ons. Age and household use case do not change the basic package content itself the way many expats expect, but selected extras and plan type do.",
+        "Current market pricing for 2026 suggests an average premium around €159/month, with cheaper standard options from around €142.40/month. Use comparison sites and insurer websites for up-to-date figures."
+      ],
+      "table": {
+        "headers": ["Category", "Typical range (2026)", "Note"],
+        "rows": [
+          ["Cheapest standard / eigen risico", "From ~€142.40/month", "Indicative; check Independer or insurer sites"],
+          ["Average basic premium", "Around €159/month", "Planning estimate only"],
+          ["Supplementary (e.g. dental)", "Varies by package", "Optional; plan after basic is in place"]
+        ]
+      },
+      "links": [
+        { "label": "Independer – 2026 premium overview", "href": "https://www.independer.nl/zorgverzekering/info/zorgpremie" }
+      ]
+    },
+    {
+      "id": "compare-major",
+      "heading": "Compare major Dutch health insurers",
+      "body": [
+        "The table below gives a quick overview of major insurers and insurer groups. Premium bands and “best for” are indicative; always check current offers and terms on the insurer’s or comparison site’s website."
+      ],
+      "table": {
+        "headers": ["Provider / label", "Parent group", "Typical basic premium band", "Best for", "English / expat fit", "Link"],
+        "rows": [
+          ["Zilveren Kruis", "Achmea", "Mid–upper range", "Broad network, brand recognition", "Good", "Compare on Independer"],
+          ["CZ", "CZ Groep", "Mid range", "Large customer base, standard cover", "Reasonable", "Compare on Independer"],
+          ["VGZ", "VGZ", "Mid range", "Wide choice, supplementary options", "Reasonable", "Compare on Independer"],
+          ["Menzis", "Menzis", "Mid range", "Flexible packages", "Reasonable", "Compare on Independer"],
+          ["DSW", "DSW", "Often competitive", "Budget-conscious", "Reasonable", "Compare on Independer"],
+          ["ONVZ", "ONVZ", "Mid–upper", "Quality focus, service", "Good", "Compare on Independer"],
+          ["FBTO", "Achmea", "Often competitive", "Online, no-frills", "Reasonable", "Compare on Independer"],
+          ["Univé", "Univé", "Mid range", "Regional, cooperative", "Reasonable", "Compare on Independer"]
+        ]
+      },
+      "tableLinkColumnIndex": 5,
+      "tableLinkUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
+      "services": [
+        {
+          "name": "Independer",
+          "description": "Compare basic and supplementary health insurance, see current premiums and switch online. Widely used for annual comparison.",
+          "url": "https://www.independer.nl/zorgverzekering/intro.aspx",
+          "indicativeCost": "Free to use; insurer premiums apply.",
+          "reason": "Compare and get quotes from major Dutch insurers.",
+          "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
+        },
+        {
+          "name": "Zorgverzekeringslijn",
+          "description": "Official overview of Dutch health insurers and contact details. Useful for checking insurer information and product cards.",
+          "url": "https://www.zorgverzekeringslijn.nl/hulpverleners/handige-tools/zorgverzekeraars/overzicht-contactgegevens/",
+          "indicativeCost": "Information only.",
+          "reason": "Insurer overview and official contact details."
+        },
+        {
+          "name": "Zorgverzekeringskaart",
+          "description": "Official insurer product-card portal. Compare policy details and standard package information.",
+          "url": "https://zorgverzekeringskaart.nl/",
+          "indicativeCost": "Information only.",
+          "reason": "Official product cards and policy comparison."
+        }
+      ],
+      "links": [
+        { "label": "Independer – Compare health insurance", "href": "https://www.independer.nl/zorgverzekering/intro.aspx" },
+        { "label": "Zorgverzekeringslijn – Overview of insurers", "href": "https://www.zorgverzekeringslijn.nl/hulpverleners/handige-tools/zorgverzekeraars/overzicht-contactgegevens/" }
+      ]
+    },
+    {
+      "id": "provider-directory",
+      "heading": "Health insurance providers in the Netherlands",
+      "body": [
+        "Below is a structured directory of health insurers often considered by expats. Inclusion is for information only; we do not recommend one insurer over another. Check each provider’s website and comparison tools for current products, premiums, and English-language options.",
+        "Typical costs below are indicative 2026 basic-package monthly premiums (source: comparison sites such as Independer). Supplementary packages add to the premium. Always check current offers before choosing."
+      ],
+      "insurerComparisons": [
+        {
+          "name": "Zilveren Kruis",
+          "overview": "One of the largest Dutch health insurers, part of Achmea. Offers basic and supplementary packages with a broad care network.",
+          "parentGroup": "Achmea",
+          "typicalCosts": "Basic from ~€158/month; supplementary extra. Indicative 2026.",
+          "websiteUrl": "https://www.zilverenkruis.nl/",
+          "compareUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
+          "expatNote": "Widely recognised; good for expats who want a well-known brand and clear information.",
+          "logo": { "src": "/images/affiliates/logos/zilveren-kruis.svg", "alt": "Zilveren Kruis logo" }
+        },
+        {
+          "name": "CZ",
+          "overview": "Large Dutch insurer with a big customer base. Offers standard basic and various supplementary packages.",
+          "parentGroup": "CZ Groep",
+          "typicalCosts": "Basic ~€152–159/month; supplementary extra. Indicative 2026.",
+          "websiteUrl": "https://www.cz.nl/",
+          "compareUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
+          "expatNote": "Solid option; website and app may have limited English.",
+          "logo": { "src": "/images/affiliates/logos/cz.svg", "alt": "CZ logo" }
+        },
+        {
+          "name": "VGZ",
+          "overview": "Major Dutch health insurer with a wide range of basic and supplementary products.",
+          "parentGroup": "VGZ",
+          "typicalCosts": "Basic ~€152–159/month; supplementary packages add cost. Indicative 2026.",
+          "websiteUrl": "https://www.vgz.nl/",
+          "compareUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
+          "expatNote": "Often chosen for flexibility; check English support if needed.",
+          "logo": { "src": "/images/affiliates/logos/vgz.svg", "alt": "VGZ logo" }
+        },
+        {
+          "name": "Menzis",
+          "overview": "Dutch health insurer offering flexible basic and supplementary packages.",
+          "parentGroup": "Menzis",
+          "typicalCosts": "Basic ~€150–158/month; supplementary extra. Indicative 2026.",
+          "websiteUrl": "https://www.menzis.nl/",
+          "compareUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
+          "expatNote": "Suitable for those comparing on price and package flexibility.",
+          "logo": { "src": "/images/affiliates/logos/menzis.svg", "alt": "Menzis logo" }
+        },
+        {
+          "name": "DSW",
+          "overview": "Health insurer often positioned at a competitive price point for basic cover.",
+          "parentGroup": "DSW",
+          "typicalCosts": "Basic from ~€142/month; supplementary extra. Indicative 2026.",
+          "websiteUrl": "https://www.dsw.nl/",
+          "compareUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
+          "expatNote": "May suit budget-focused expats; confirm English onboarding if important.",
+          "logo": { "src": "/images/affiliates/logos/dsw.svg", "alt": "DSW logo" }
+        },
+        {
+          "name": "ONVZ",
+          "overview": "Dutch health insurer with a focus on quality and service; often in the mid–upper premium range.",
+          "parentGroup": "ONVZ",
+          "typicalCosts": "Basic ~€158–168/month; supplementary extra. Indicative 2026.",
+          "websiteUrl": "https://www.onvz.nl/",
+          "compareUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
+          "expatNote": "Good for expats who prioritise service and are willing to pay a bit more.",
+          "logo": { "src": "/images/affiliates/logos/onvz.svg", "alt": "ONVZ logo" }
+        },
+        {
+          "name": "Univé",
+          "overview": "Cooperative insurer with a strong regional presence; offers basic and supplementary insurance.",
+          "parentGroup": "Univé",
+          "typicalCosts": "Basic ~€150–158/month; supplementary extra. Indicative 2026.",
+          "websiteUrl": "https://www.unive.nl/",
+          "compareUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
+          "expatNote": "Worth considering if you prefer a cooperative structure; check English options.",
+          "logo": { "src": "/images/affiliates/logos/unive.svg", "alt": "Univé logo" }
+        },
+        {
+          "name": "FBTO",
+          "overview": "Part of Achmea; often positioned as a no-frills, online-focused option with competitive basic premiums.",
+          "parentGroup": "Achmea",
+          "typicalCosts": "Basic from ~€142/month; supplementary extra. Indicative 2026.",
+          "websiteUrl": "https://www.fbto.nl/",
+          "compareUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
+          "expatNote": "Suitable for expats comfortable with online-only and comparing on price.",
+          "logo": { "src": "/images/affiliates/logos/fbto.svg", "alt": "FBTO logo" }
+        },
+        {
+          "name": "Nationale-Nederlanden",
+          "overview": "Large insurer offering health insurance alongside other insurance products.",
+          "parentGroup": "NN Group",
+          "typicalCosts": "Basic ~€152–165/month; supplementary extra. Indicative 2026.",
+          "websiteUrl": "https://www.nationale-nederlanden.nl/",
+          "compareUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
+          "expatNote": "May suit those who want one provider for multiple insurance types.",
+          "logo": { "src": "/images/affiliates/logos/nationale-nederlanden.svg", "alt": "Nationale-Nederlanden logo" }
+        },
+        {
+          "name": "HollandZorg",
+          "overview": "Dutch health insurer; compare current packages and premiums on comparison sites.",
+          "parentGroup": "Independent",
+          "typicalCosts": "Basic ~€148–158/month; supplementary extra. Indicative 2026.",
+          "websiteUrl": "https://www.hollandzorg.nl/",
+          "compareUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
+          "expatNote": "Include in comparison when shopping for best price and cover.",
+          "logo": { "src": "/images/affiliates/logos/hollandzorg.svg", "alt": "HollandZorg logo" }
+        }
+      ]
+    },
+    {
+      "id": "zorgtoeslag",
+      "heading": "Can you get help with the cost?",
+      "body": [
+        "Some residents with Dutch health insurance and qualifying income may be eligible for healthcare allowance (zorgtoeslag). Eligibility depends on income and personal circumstances.",
+        "We do not hardcode thresholds here; they change and depend on your situation. Use the official allowance checker or guidance from the Dutch tax authority (Belastingdienst) to see if you qualify."
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "Check eligibility",
+        "text": "Use the official Belastingdienst / government portals to check whether you are eligible for zorgtoeslag. Do not rely on third-party summaries for final decisions."
+      },
+      "links": [
+        { "label": "Belastingdienst – Healthcare allowance (zorgtoeslag)", "href": "https://www.belastingdienst.nl/wps/wcm/connect/nl/zorgtoeslag/content/hulpmiddel-zorgtoeslag" }
+      ]
+    },
+    {
+      "id": "useful-services",
+      "heading": "Useful services for comparing and setting up healthcare",
+      "body": [
+        "These services are often used when comparing health insurers, managing first-month payments, or settling in. They connect to first payments, salary and budgeting, and comparing providers."
+      ],
+      "services": [
+        {
+          "name": "Independer",
+          "description": "Comparison site for Dutch health insurance and other insurance. Use to compare basic and supplementary packages and current premiums.",
+          "url": "https://www.independer.nl/",
+          "indicativeCost": "Comparison platform; insurer premiums vary.",
+          "reason": "Compare health insurers and get an overview of 2026 premiums.",
+          "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
+        },
+        {
+          "name": "bunq",
+          "description": "Dutch digital bank with expat-friendly onboarding. Useful for paying health insurance premiums once you have a Dutch account.",
+          "url": "https://www.bunq.com/",
+          "indicativeCost": "Free and paid plans.",
+          "reason": "First payments and direct debits for insurance.",
+          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
+        },
+        {
+          "name": "Wise",
+          "description": "Multi-currency and international transfers. Useful for moving money to the Netherlands before or after arrival and funding your first insurance payments.",
+          "url": "https://wise.com/",
+          "indicativeCost": "Transfer fees vary.",
+          "reason": "International transfers and first-month budgeting.",
+          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
+        },
+        {
+          "name": "Simyo",
+          "description": "Dutch SIM-only mobile provider. Useful once you need a local number for 2FA, banking, and correspondence with insurers.",
+          "url": "https://www.simyo.nl/",
+          "indicativeCost": "Budget monthly plans.",
+          "reason": "Local number for admin and insurer contact.",
+          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
+        },
+        {
+          "name": "HousingAnywhere",
+          "description": "Temporary and medium-term rentals for internationals. Relevant when you need an address for registration and insurance.",
+          "url": "https://housinganywhere.com/",
+          "indicativeCost": "Housing prices vary by city.",
+          "reason": "Address for municipality registration and BSN, then insurance.",
+          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
+        }
+      ]
+    },
+    {
+      "id": "common-mistakes",
+      "heading": "Common mistakes expats make with Dutch health insurance",
+      "body": [
+        "Avoid these pitfalls: waiting too long to compare; assuming foreign insurance is always enough; not realising coverage may be backdated; overbuying supplementary cover too early; choosing a policy without understanding provider or network restrictions; and delaying municipality registration or BSN setup and then falling behind on insurance."
+      ],
+      "bullets": [
+        "Waiting too long to compare — start once you have a BSN and address.",
+        "Assuming foreign insurance is always enough — if you are required to have Dutch insurance, you must take it out.",
+        "Not realising coverage may be backdated — you may pay premium from arrival or permit start.",
+        "Overbuying supplementary cover before understanding what you actually need.",
+        "Choosing a policy without checking provider or network restrictions.",
+        "Delaying municipality registration and BSN, then rushing insurance at the last moment."
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Stay on top of the deadline",
+        "text": "If the 4-month rule applies to you, treat insurance as a priority. Fines and backdated premiums can apply if you miss the deadline."
+      }
+    },
+    {
+      "id": "official-sources",
+      "heading": "Official and provider sources",
+      "body": [
+        "Use these links to confirm obligations, deadlines, and product details. Official government and Netherlands Worldwide pages are the authority for rules; comparison and insurer sites are for current premiums and products."
+      ],
+      "links": [
+        { "label": "Government.nl – When to take out Dutch health insurance", "href": "https://www.government.nl/topics/health-insurance/question-and-answer/when-do-i-need-to-take-out-health-insurance-if-i-come-to-live-in-the-netherlands" },
+        { "label": "Government.nl – Health insurance and residence permit", "href": "https://www.government.nl/topics/health-insurance/health-insurance-and-residence-permit" },
+        { "label": "Government.nl – What to arrange when moving to the Netherlands", "href": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/what-do-i-need-to-arrange-if-i%27m-moving-to-the-netherlands" },
+        { "label": "Netherlands Worldwide – Relocation checklist", "href": "https://www.netherlandsworldwide.nl/checklist-relocating-netherlands-immigration" },
+        { "label": "Zorgverzekeringslijn – Insurer overview", "href": "https://www.zorgverzekeringslijn.nl/hulpverleners/handige-tools/zorgverzekeraars/overzicht-contactgegevens/" },
+        { "label": "Zorgverzekeringskaart – Product cards", "href": "https://zorgverzekeringskaart.nl/" },
+        { "label": "Independer – 2026 premium comparison overview", "href": "https://www.independer.nl/zorgverzekering/info/zorgpremie" }
+      ]
+    }
+  ],
+  "toolCtas": [
+    { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/", "description": "First steps after landing: registration, BSN, health insurance, banking." },
+    { "label": "Relocation Cost Estimator", "href": "/netherlands/moving/tools/relocation-cost-estimator/", "description": "Estimate move and first-month costs, including health insurance." },
+    { "label": "First 90 Days Planner", "href": "/netherlands/moving/tools/first-90-days/", "description": "Week-by-week plan including insurance and admin." }
+  ],
+  "exampleScenarios": [
+    {
+      "title": "Highly skilled migrant starting work",
+      "summary": "You need to arrange basic insurance within 4 months of arrival; cover typically starts from your first day. Compare a few insurers and choose a policy once you have a BSN and bank account.",
+      "href": "/netherlands/health-insurance-netherlands/#compare-major",
+      "ctaLabel": "Compare insurers"
+    },
+    {
+      "title": "Student unsure if Dutch insurance is required",
+      "summary": "Check whether your study route requires Dutch basic insurance or allows an exception. Confirm with your institution and Government.nl; then compare if you need a policy.",
+      "href": "/netherlands/health-insurance-netherlands/#who-needs",
+      "ctaLabel": "Check who needs it"
+    },
+    {
+      "title": "Family arriving together",
+      "summary": "Each adult typically needs their own basic insurance; children are usually included. Plan registration and BSN first, then compare family-friendly packages and supplementary options.",
+      "href": "/netherlands/after-arriving-netherlands/",
+      "ctaLabel": "After arriving guide"
+    },
+    {
+      "title": "Self-employed mover comparing providers",
+      "summary": "You are likely required to have basic insurance once resident and working. Use comparison sites and insurer directories to find a policy that fits your budget and any supplementary needs.",
+      "href": "/netherlands/health-insurance-netherlands/#provider-directory",
+      "ctaLabel": "Provider directory"
+    },
+    {
+      "title": "Budget-focused expat choosing the cheapest basic policy",
+      "summary": "Focus on the basic package and deductible options. Use Independer or similar to compare current premiums; confirm what is included and any network restrictions before signing.",
+      "href": "https://www.independer.nl/zorgverzekering/intro.aspx",
+      "ctaLabel": "Compare on Independer"
+    },
+    {
+      "title": "Expat needing broader supplementary cover",
+      "summary": "Once basic insurance is in place, compare supplementary packages (e.g. dental, physio) from a few insurers. Avoid overbuying in the first month; add extras when you know what you need.",
+      "href": "/netherlands/health-insurance-netherlands/#basic-vs-supplementary",
+      "ctaLabel": "Basic vs supplementary"
+    }
+  ],
+  "scenariosSectionTitle": "Example health insurance situations",
+  "scenariosSectionIntro": "Different situations lead to different priorities. Use the cards below to jump to the right section or guide.",
+  "internalLinks": {
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    "related": [
+      { "label": "Compare health insurance", "href": "/netherlands/services/health-insurance/" },
+      { "label": "All services hub", "href": "/netherlands/services/" },
+      { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
+      { "label": "Municipality Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "Open a Bank Account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Cost of Moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" }
+    ]
+  },
+  "sidebarStartLinks": [
+    { "label": "Compare Health Insurers", "href": "/netherlands/health-insurance-netherlands/#compare-major" },
+    { "label": "After Arriving Guide", "href": "/netherlands/after-arriving-netherlands/" },
+    { "label": "Estimate Your Costs", "href": "/netherlands/moving/tools/relocation-cost-estimator/" }
+  ],
+  "faq": [
+    {
+      "q": "Do expats need Dutch health insurance?",
+      "a": "In many cases, yes. People who come to live or work in the Netherlands are generally required to take out Dutch basic health insurance. There are exceptions (e.g. some students); confirm your situation on Government.nl or Netherlands Worldwide."
+    },
+    {
+      "q": "When do I need to arrange it?",
+      "a": "You generally have 4 months from arrival or from when your residence permit takes effect. The policy usually must cover you from that start date, and premium may be due retroactively. Do not wait until the last month to compare."
+    },
+    {
+      "q": "What happens if I wait too long?",
+      "a": "If you are required to have Dutch basic insurance and you do not take it out in time, you may be fined. You may also have to pay premium for the period from arrival or permit start. Netherlands Worldwide and Government.nl describe the rules."
+    },
+    {
+      "q": "Does the policy start from the day I arrive?",
+      "a": "Typically yes. The policy is usually set to start from the day you arrive or from the date your residence permit comes into force. That is why premium can be backdated; check with your chosen insurer."
+    },
+    {
+      "q": "What does the basic package cover?",
+      "a": "The government-defined basic package generally includes GP care, hospital care, maternity care, prescription medicines (within rules), mental healthcare (within rules), and emergency care. Exact scope is set by law and insurer; check product pages for details."
+    },
+    {
+      "q": "Do I need supplementary insurance?",
+      "a": "Supplementary insurance is optional. It often covers dental for adults, extra physiotherapy, and other extras. Many expats arrange basic first and add supplementary later if they need it."
+    },
+    {
+      "q": "How much does Dutch health insurance cost?",
+      "a": "Current market pricing for 2026 suggests an average of around €159/month for the basic package, with cheaper standard options from around €142.40/month. Your cost depends on insurer, deductible, and any supplementary cover. Use comparison sites for up-to-date figures."
+    },
+    {
+      "q": "Can students keep foreign insurance?",
+      "a": "It depends on your situation. Some students may be exempt or have different rules. Check with your institution and Government.nl to see if you must take out Dutch basic insurance."
+    },
+    {
+      "q": "Which insurer is best for expats?",
+      "a": "There is no single “best” insurer. Compare on price, network, English-language support, and ease of onboarding. Zilveren Kruis, ONVZ, and FBTO are often mentioned for clarity or value; always check current offers and terms."
+    },
+    {
+      "q": "Can I get healthcare allowance?",
+      "a": "Some residents with qualifying income may be eligible for zorgtoeslag (healthcare allowance). Eligibility depends on income and circumstances. Use the official Belastingdienst/government allowance checker to see if you qualify."
+    }
+  ],
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

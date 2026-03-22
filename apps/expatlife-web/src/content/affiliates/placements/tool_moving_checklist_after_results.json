@@ -1,0 +1,22 @@
+{
+  "id": "tool_moving_checklist_after_results",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "tool",
+    "route": "/netherlands/moving/tools/moving-checklist",
+    "slot": "after-results"
+  },
+  "variant": "cards",
+  "title": "Your next steps",
+  "intro": "Based on your checklist, many expats arrange these services early to make day-to-day life easier.",
+  "categoryOrder": ["banking", "housing", "insurance", "mobile"],
+  "items": [
+    { "providerId": "bunq", "reason": "Fast account setup and good English onboarding." },
+    { "providerId": "wise", "reason": "Great for international transfers while you settle." },
+    { "providerId": "housinganywhere", "reason": "Common option for temporary rentals when arriving without a long-term lease." },
+    { "providerId": "independer", "reason": "Compare Dutch insurance options in one place." },
+    { "providerId": "simyo", "reason": "Simple SIM plans to get connected quickly." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

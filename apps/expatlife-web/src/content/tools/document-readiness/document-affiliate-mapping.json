@@ -1,0 +1,19 @@
+{
+  "documentToCategories": {
+    "birth-certificate": ["document-translation", "relocation-services"],
+    "marriage-certificate": ["document-translation"],
+    "children-birth-certificates": ["document-translation"],
+    "diplomas": ["document-translation"],
+    "transcripts": ["document-translation"],
+    "rental-agreement": ["housing", "relocation-services"],
+    "address-confirmation": ["housing"],
+    "relocation-booking-confirmations": ["relocation-services"]
+  },
+  "categoryLabels": {
+    "document-translation": "Translation services",
+    "housing": "Housing & rental",
+    "relocation-services": "Relocation & moving",
+    "banking": "Banking",
+    "insurance": "Insurance"
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "slug": "moving-mistakes-netherlands",
+  "path": "/netherlands/moving-mistakes-netherlands/",
+  "title": "Common Mistakes When Moving to the Netherlands",
+  "breadcrumbLabel": "Moving Mistakes",
+  "subtitle": "Practical relocation mistakes expats often encounter — and how to avoid them.",
+  "description": "Discover common mistakes expats make when moving to the Netherlands and how to avoid them through better planning, document readiness, and arrival preparation.",
+  "hero": {
+    "eyebrow": "Moving Advice",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/moving-mistakes-hero.webp",
+      "alt": "Expat planning mistakes while preparing a move to the Netherlands"
+    }
+  },
+  "quickAnswers": [
+    {
+      "label": "Most common issue",
+      "value": "Underestimating preparation time for documents and admin steps."
+    },
+    {
+      "label": "Biggest early risk",
+      "value": "Not planning the first 30–90 days after arrival."
+    },
+    {
+      "label": "Best prevention",
+      "value": "Use a structured moving checklist and arrival plan."
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Why relocation mistakes happen",
+      "body": [
+        "Most relocation mistakes are not caused by complicated systems. They happen because expats underestimate how different administrative systems, housing markets, and timelines can be.",
+        "The good news is that most mistakes are predictable and preventable once you understand the typical sequence of events."
+      ],
+      "bullets": [
+        "People underestimate how early documents should be prepared",
+        "Housing realities are often different from expectations",
+        "Arrival admin steps are sometimes planned too late",
+        "Financial setup is not always prioritized early enough"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Good news",
+        "text": "Most relocation mistakes are easily avoided once you know the typical timeline and prepare your documents and arrival plan early."
+      }
+    },
+    {
+      "id": "mistake-housing",
+      "heading": "Mistake #1: Underestimating the housing market",
+      "body": [
+        "One of the most common surprises for expats moving to the Netherlands is the housing market.",
+        "Availability, competition, and timing can all influence how quickly people secure long-term accommodation."
+      ],
+      "bullets": [
+        "Expecting housing to be easy to find",
+        "Assuming short-term accommodation will quickly convert to long-term housing",
+        "Not preparing documentation often required by landlords",
+        "Waiting too late to begin searching"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "mistake-documents",
+      "heading": "Mistake #2: Not preparing documents early enough",
+      "body": [
+        "Documents are one of the biggest hidden sources of delay in international relocation.",
+        "Civil records, education documents, and other official paperwork sometimes require translation, legalization, or apostille processing."
+      ],
+      "bullets": [
+        "Starting document preparation too late",
+        "Not knowing which records may require additional processing",
+        "Not organizing documents into a single pack",
+        "Ignoring document readiness until the visa or relocation timeline becomes urgent"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "mistake-arrival",
+      "heading": "Mistake #3: Not planning the first weeks after arrival",
+      "body": [
+        "Many expats focus heavily on the move itself but underestimate the number of practical tasks required after arrival.",
+        "Registration, banking, insurance, and other services often need to be completed within the first few weeks."
+      ],
+      "bullets": [
+        "Not scheduling municipality registration early",
+        "Delaying banking setup",
+        "Leaving health insurance decisions too late",
+        "Not understanding the sequence of early admin tasks"
+      ]
+    },
+    {
+      "id": "mistake-finances",
+      "heading": "Mistake #4: Underestimating the financial setup",
+      "body": [
+        "Moving countries often involves unexpected financial adjustments.",
+        "Banking, housing deposits, insurance costs, and everyday expenses can feel very different from what people expect."
+      ],
+      "bullets": [
+        "Not preparing for housing deposits",
+        "Underestimating relocation costs",
+        "Not comparing service providers early",
+        "Assuming salary timing will align perfectly with expenses"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "mistake-sequence",
+      "heading": "Mistake #5: Doing the right tasks in the wrong order",
+      "body": [
+        "Some of the most frustrating relocation problems happen when tasks are completed in the wrong sequence.",
+        "For example, certain services depend on having registration or banking already in place."
+      ],
+      "bullets": [
+        "Trying to open services before registration is ready",
+        "Applying for services before documents are organized",
+        "Not understanding dependencies between tasks",
+        "Handling everything reactively instead of with a plan"
+      ]
+    },
+    {
+      "id": "prevention",
+      "heading": "How to avoid most relocation mistakes",
+      "body": [
+        "The easiest way to avoid relocation mistakes is to create structure early.",
+        "A clear checklist, document pack, and arrival plan often eliminate most uncertainty."
+      ],
+      "bullets": [
+        "Create a relocation checklist",
+        "Prepare a document readiness pack",
+        "Plan your first 30–90 days after arrival",
+        "Identify services that must be arranged early"
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "Practical approach",
+        "text": "A simple checklist and document pack prevents most relocation stress."
+      }
+    }
+  ],
+  "featuredTools": [
+    {
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/"
+    },
+    {
+      "label": "Plan Your Arrival Tasks",
+      "href": "/netherlands/moving/tools/arrival-planner/"
+    },
+    {
+      "label": "Check Document Readiness",
+      "href": "/netherlands/moving/tools/document-readiness/"
+    }
+  ],
+  "toolCtas": [
+    {
+      "label": "Generate Your Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/"
+    }
+  ],
+  "exampleScenarios": [
+    {
+      "title": "Avoiding document preparation delays",
+      "summary": "Many expats prevent relocation delays by identifying missing records and translation needs early.",
+      "href": "/netherlands/moving/tools/document-readiness/"
+    },
+    {
+      "title": "Planning arrival tasks before moving",
+      "summary": "Understanding the first month timeline often prevents administrative surprises.",
+      "href": "/netherlands/moving/tools/arrival-planner/"
+    },
+    {
+      "title": "Creating a structured relocation checklist",
+      "summary": "A relocation checklist helps avoid missing critical steps during the move.",
+      "href": "/netherlands/moving/tools/moving-checklist/"
+    }
+  ],
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      {
+        "label": "Moving Checklist Netherlands",
+        "href": "/netherlands/moving-checklist-netherlands/"
+      },
+      {
+        "label": "Documents Needed to Move to the Netherlands",
+        "href": "/netherlands/documents-needed-to-move-netherlands/"
+      },
+      {
+        "label": "First 30 Days in the Netherlands",
+        "href": "/netherlands/first-30-days-netherlands/"
+      },
+      {
+        "label": "First 90 Days in the Netherlands",
+        "href": "/netherlands/first-90-days-netherlands/"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "q": "What are the biggest mistakes expats make when moving to the Netherlands?",
+      "a": "Common mistakes include underestimating the housing market, delaying document preparation, and not planning the first weeks after arrival."
+    },
+    {
+      "q": "How can I avoid relocation mistakes?",
+      "a": "Preparing documents early, creating a moving checklist, and planning arrival tasks usually prevents most relocation problems."
+    },
+    {
+      "q": "What causes the biggest relocation delays?",
+      "a": "Document preparation, housing availability, and administrative sequencing are common sources of delay."
+    },
+    {
+      "q": "When should I start planning my move?",
+      "a": "Many expats start preparing documents and planning arrival tasks several months before relocating."
+    },
+    {
+      "q": "What is the best way to plan a move to the Netherlands?",
+      "a": "A structured checklist, document readiness plan, and arrival timeline usually provide the best foundation."
+    }
+  ],
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

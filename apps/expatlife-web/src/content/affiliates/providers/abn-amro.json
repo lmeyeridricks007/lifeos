@@ -1,0 +1,26 @@
+{
+  "id": "abn-amro",
+  "name": "ABN AMRO",
+  "tagline": "Major Dutch bank with expat services",
+  "categoryIds": ["banking"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Established bank"],
+  "highlights": [
+    "Full-service Dutch bank",
+    "English support for expats",
+    "In-branch and online"
+  ],
+  "cta": {
+    "label": "View ABN AMRO",
+    "href": "https://www.abnamro.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/abn-amro.svg",
+    "alt": "ABN AMRO logo"
+  }
+}

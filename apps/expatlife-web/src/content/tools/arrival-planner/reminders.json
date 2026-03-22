@@ -1,0 +1,38 @@
+[
+  {
+    "id": "save-reference-numbers",
+    "label": "Save reference numbers and confirmations in one place",
+    "conditions": {
+      "addressStatus": ["yes", "soon", "no"],
+      "household": ["solo", "partner", "kids"],
+      "needBankingSoon": ["yes", "no"]
+    }
+  },
+  {
+    "id": "track-confirmations",
+    "label": "Keep screenshots or PDFs of important confirmations",
+    "conditions": {
+      "addressStatus": ["yes", "soon", "no"],
+      "household": ["solo", "partner", "kids"],
+      "needBankingSoon": ["yes", "no"]
+    }
+  },
+  {
+    "id": "separate-originals-scans",
+    "label": "Keep originals and scans separate to avoid mix-ups",
+    "conditions": {
+      "addressStatus": ["yes", "soon", "no"],
+      "household": ["solo", "partner", "kids"],
+      "needBankingSoon": ["yes", "no"]
+    }
+  },
+  {
+    "id": "weekly-review",
+    "label": "Review pending tasks once a week and reprioritise",
+    "conditions": {
+      "addressStatus": ["yes", "soon", "no"],
+      "household": ["solo", "partner", "kids"],
+      "needBankingSoon": ["yes", "no"]
+    }
+  }
+]

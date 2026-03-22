@@ -1,0 +1,333 @@
+{
+  "slug": "document-translation-netherlands",
+  "path": "/netherlands/document-translation-netherlands/",
+  "title": "Document Translation in the Netherlands",
+  "metaTitle": "Document Translation in the Netherlands | Sworn Translation, Legalisation, Costs",
+  "breadcrumbLabel": "Document Translation",
+  "subtitle": "When foreign documents need translation, how sworn translation works, how legalisation fits in, and what to check before using documents for visas, municipality registration, family admin, and other Dutch processes.",
+  "description": "A practical guide to translating foreign documents for use in the Netherlands, including when translation is required, which languages are accepted, sworn translators, legalisation order, costs, and common mistakes.",
+  "hero": {
+    "eyebrow": "DOCUMENTS",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/heroes/document-translation-netherlands.png",
+      "alt": "An expat in a Dutch apartment reviews translated documents and a legalisation checklist, with a laptop showing a document translation workflow and canal view outside. The desk is organized with folders labeled Civil Documents, Translations, and Legalisation."
+    }
+  },
+  "heroCta": {
+    "title": "Get your documents in order",
+    "supportingText": "Use the Document Readiness Checker and Municipality Registration guide to see what you need and when.",
+    "primaryCtaLabel": "Check Your Documents",
+    "primaryCtaHref": "/netherlands/document-readiness-checker/",
+    "secondaryCtaLabel": "Municipality Registration Guide",
+    "secondaryCtaHref": "/netherlands/municipality-registration-netherlands/",
+    "supportingLinks": [
+      { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
+      { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
+      { "label": "Partner & Family Visa", "href": "/netherlands/visa/partner-family-visa/" },
+      { "label": "Moving to the Netherlands Guide", "href": "/netherlands/moving-to-the-netherlands/" }
+    ]
+  },
+  "tocItems": [
+    { "id": "intro", "label": "Introduction" },
+    { "id": "when-required", "label": "When translation is required" },
+    { "id": "accepted-languages", "label": "Accepted languages" },
+    { "id": "sworn-translation", "label": "Sworn translation" },
+    { "id": "translation-vs-legalisation", "label": "Translation vs legalisation" },
+    { "id": "country-examples", "label": "Country examples" },
+    { "id": "document-types", "label": "Common documents" },
+    { "id": "costs", "label": "Costs" },
+    { "id": "find-translator", "label": "Find a sworn translator" },
+    { "id": "common-mistakes", "label": "Common mistakes" },
+    { "id": "example-scenarios", "label": "Example scenarios" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "official-sources", "label": "Official sources" }
+  ],
+  "quickAnswers": [
+    {
+      "label": "When translation is required",
+      "value": "If your document is not in Dutch, English, French, or German, translation is usually required."
+    },
+    {
+      "label": "Accepted languages",
+      "value": "Dutch, English, French, and German are usually accepted without translation."
+    },
+    {
+      "label": "Sworn translator",
+      "value": "In the Netherlands, the translator must be sworn in by a Dutch court."
+    },
+    {
+      "label": "Legalisation",
+      "value": "Documents often need legalisation or apostille before they are fit for Dutch use."
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "heading": "Introduction",
+      "body": [
+        "Many expats need translated documents when moving to the Netherlands. Common examples include birth certificates, marriage certificates, education records, and civil-status documents.",
+        "Translation is often only one part of the process: some documents also need apostille or legalisation. The correct order matters, and it can differ depending on the country that issued the document."
+      ]
+    },
+    {
+      "id": "when-required",
+      "heading": "When does a document need translation for use in the Netherlands?",
+      "body": [
+        "According to the IND, documents not written in Dutch, English, French, or German must be translated into one of those languages. This often applies for immigration, family documents, education documents, and municipality registration support documents.",
+        "Institutions and municipalities may still ask for specific document formats, so confirm the target authority's requirements."
+      ],
+      "bullets": [
+        "Birth certificate in Arabic",
+        "Marriage certificate in Hindi",
+        "Diploma in Japanese",
+        "Civil-status document in Mandarin"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Check the authority",
+        "text": "Always confirm with the IND, your municipality, or the requesting institution what they accept. Accepted language does not automatically mean the document is usable; apostille or legalisation may still be required."
+      }
+    },
+    {
+      "id": "accepted-languages",
+      "heading": "Which languages usually do not need translation?",
+      "body": [
+        "Dutch, English, French, and German are usually accepted without translation for many Dutch official procedures.",
+        "Accepted language does not automatically mean the document is usable: the document may still need apostille, legalisation, or authority-specific checks."
+      ],
+      "bullets": [
+        "Dutch",
+        "English",
+        "French",
+        "German"
+      ]
+    },
+    {
+      "id": "sworn-translation",
+      "heading": "What is a sworn translation in the Netherlands?",
+      "body": [
+        "In the Netherlands, a translation for official use typically must be done by a translator sworn in by a Dutch court. You can search the official register of sworn interpreters and translators via Bureau Wbtv / Rbtv.",
+        "If a document is translated abroad, additional legalisation of the translation may sometimes be needed depending on the country workflow."
+      ],
+      "links": [
+        { "label": "Bureau Wbtv – search for a sworn translator", "href": "https://zoekeentolkvertaler.bureauwbtv.nl/" },
+        { "label": "IND – translation and legalisation of documents", "href": "https://ind.nl/en/translation-and-legalisation-of-documents" }
+      ]
+    },
+    {
+      "id": "translation-vs-legalisation",
+      "heading": "Translation, apostille, and legalisation: what is the difference?",
+      "body": [
+        "Translation is the conversion of the text into an accepted language. Apostille or legalisation is the confirmation that the signature or document authenticity is recognised for official use. They are not the same thing; some users need both.",
+        "Legalisation is usually handled in the country where the document was issued. The correct order can vary by country. You must check the country-specific legalisation page for the country that issued your document."
+      ],
+      "bullets": [
+        "Original document → legalise/apostille (in many cases) → translate → use in the Netherlands",
+        "The order is country-specific and must be checked."
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Order matters",
+        "text": "Translating first when legalisation should happen first is a common mistake. Always check the official steps for the country that issued your document."
+      },
+      "image": {
+        "src": "/images/infographics/documents-to-prepare.webp",
+        "alt": "Document workflow: Original → Legalisation/Apostille → Sworn Translation → Use in the Netherlands",
+        "caption": "Order may differ by country. Check the country-specific official page."
+      }
+    },
+    {
+      "id": "country-examples",
+      "heading": "Why the order can differ by country",
+      "body": [
+        "Workflows for legalisation and translation vary by issuing country. Below are four practical examples based on Netherlands Worldwide. These are examples only; always check the country page for the country that issued your document."
+      ]
+    },
+    {
+      "id": "document-types",
+      "heading": "Documents expats often need translated",
+      "body": [
+        "These document types commonly require translation when used for Dutch immigration, municipality registration, university enrolment, or other official procedures. Legalisation may also be relevant depending on origin."
+      ]
+    },
+    {
+      "id": "costs",
+      "heading": "Typical translation costs and turnaround times",
+      "body": [
+        "There is no single government-set market price. The ranges below are indicative for planning only. Actual pricing depends on language pair, complexity, sworn status, urgency, and provider."
+      ]
+    },
+    {
+      "id": "find-translator",
+      "heading": "How to find a sworn translator",
+      "body": [
+        "Start with the Bureau Wbtv / Rbtv register. Search by language pair and location. Confirm whether the translator is suitable for your destination authority and document type. Ask whether any additional legalisation of the translation is needed in your workflow."
+      ],
+      "bullets": [
+        "Use the official Bureau Wbtv register",
+        "Search by language pair and location",
+        "Confirm suitability for your authority and document type",
+        "Check if extra legalisation of the translation is required"
+      ],
+      "links": [
+        { "label": "Bureau Wbtv – zoek een tolk of vertaler", "href": "https://zoekeentolkvertaler.bureauwbtv.nl/" }
+      ]
+    },
+    {
+      "id": "common-mistakes",
+      "heading": "Common mistakes people make with document translation",
+      "body": [
+        "Avoid these pitfalls to save time and avoid rework."
+      ],
+      "bullets": [
+        "Translating before checking if translation is needed at all",
+        "Translating first when legalisation should happen first",
+        "Assuming English always means no further action is needed",
+        "Using a non-sworn translator for an official Dutch process",
+        "Not checking municipality, IND, or university-specific document rules",
+        "Waiting too long to order translated civil documents"
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Check before you order",
+        "text": "Confirm the exact requirements of the authority that will receive the document. Wrong order or wrong type of translation can mean starting again."
+      }
+    },
+    {
+      "id": "official-sources",
+      "heading": "Official sources and country-specific legalisation tools",
+      "body": [
+        "Always start with the country where the document was issued, because legalisation steps are usually country-specific."
+      ],
+      "links": [
+        { "label": "IND – translation and legalisation of documents", "href": "https://ind.nl/en/translation-and-legalisation-of-documents" },
+        { "label": "Bureau Wbtv / Rbtv – search sworn interpreters and translators", "href": "https://zoekeentolkvertaler.bureauwbtv.nl/" },
+        { "label": "Netherlands Worldwide – legalisation of foreign documents", "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents" },
+        { "label": "Netherlands Worldwide – what is legalisation (apostille)", "href": "https://www.netherlandsworldwide.nl/legalisation/what-is-legalisation-apostille" },
+        { "label": "Netherlands Worldwide – India", "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/india" },
+        { "label": "Netherlands Worldwide – Pakistan", "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/pakistan" },
+        { "label": "Netherlands Worldwide – China", "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/china" },
+        { "label": "Netherlands Worldwide – Japan", "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/japan" }
+      ]
+    }
+  ],
+  "toolCtas": [
+    { "key": "document-readiness", "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/", "description": "Check which documents you may need and whether translation or legalisation applies." },
+    { "key": "visa-checker", "label": "Visa Eligibility Checker", "href": "/netherlands/visa-checker/", "description": "See which visa or residence route fits your situation." },
+    { "key": "visa-plan", "label": "Visa Application Plan", "href": "/netherlands/visa-application-plan/", "description": "Plan document and submission steps for your route." },
+    { "key": "municipality", "label": "Municipality Registration", "href": "/netherlands/municipality-registration-netherlands/", "description": "What to bring and when to register." },
+    { "key": "after-arrival", "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/", "description": "First steps after landing." },
+    { "key": "moving-checklist", "label": "Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/", "description": "Generate a personalised moving checklist." }
+  ],
+  "exampleScenarios": [
+    {
+      "title": "South African couple translating marriage documents",
+      "summary": "Marriage certificate and possibly birth certificates for municipality registration or partner visa. Check if documents are in English (often accepted); if not, use a sworn translator. Legalise originals first if required for your country.",
+      "href": "/netherlands/document-readiness-checker/",
+      "ctaLabel": "Check Your Documents"
+    },
+    {
+      "title": "Indian professional translating civil records",
+      "summary": "Birth certificate, marriage certificate, or police certificate for IND or municipality. Hindi documents need translation. Typically: apostille/legalise in India first, then translate in the Netherlands.",
+      "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/india",
+      "ctaLabel": "Official steps for India"
+    },
+    {
+      "title": "Chinese diploma for university or skilled move",
+      "summary": "Chinese documents must first be translated into English by a notary in China, then legalised with apostille. Do not translate in the Netherlands before completing the China-side steps.",
+      "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/china",
+      "ctaLabel": "Official steps for China"
+    },
+    {
+      "title": "Japanese expat: legalise first, then translate",
+      "summary": "Japan has no sworn translators for Dutch procedures. Legalise the document in Japan, then have it translated in the Netherlands by a translator sworn in by a Dutch court (e.g. via Bureau Wbtv).",
+      "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/japan",
+      "ctaLabel": "Official steps for Japan"
+    },
+    {
+      "title": "Family translating children's birth certificates",
+      "summary": "Birth certificates for each child for municipality registration or family visa. Check language; if not Dutch/English/French/German, use a sworn translator. Legalisation may be required depending on country of issue.",
+      "href": "/netherlands/moving-to-netherlands-with-kids/",
+      "ctaLabel": "Moving with kids"
+    },
+    {
+      "title": "Entrepreneur translating company support documents",
+      "summary": "Business registration, contracts, or proof of income for self-employed or skilled migrant route. Confirm with IND what must be translated and whether legalisation is needed.",
+      "href": "/netherlands/visa/self-employed-visa/",
+      "ctaLabel": "Self-employed visa"
+    }
+  ],
+  "scenariosSectionTitle": "Example translation situations",
+  "scenariosSectionIntro": "How translation and legalisation fit into different expat situations. Use the official country page for the country that issued your document.",
+  "internalLinks": {
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    "related": [
+      { "label": "All services hub", "href": "/netherlands/services/" },
+      { "label": "Municipality Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
+      { "label": "Partner & Family Visa", "href": "/netherlands/visa/partner-family-visa/" },
+      { "label": "Student Visa", "href": "/netherlands/visa/student-visa/" },
+      { "label": "Self-Employed Visa", "href": "/netherlands/visa/self-employed-visa/" },
+      { "label": "Moving to the Netherlands from Your Country", "href": "/netherlands/moving-to-netherlands-from/" },
+      { "label": "Moving to the Netherlands with Partner", "href": "/netherlands/moving-to-netherlands-with-partner/" },
+      { "label": "Moving to the Netherlands with Kids", "href": "/netherlands/moving-to-netherlands-with-kids/" },
+      { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
+      { "label": "Document Legalisation & Apostille", "href": "/netherlands/document-legalization-netherlands/" },
+      { "label": "Documents Needed to Move", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+    ]
+  },
+  "sidebarStartLinks": [
+    { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
+    { "label": "Municipality Registration Guide", "href": "/netherlands/municipality-registration-netherlands/" },
+    { "label": "Visa Eligibility Checker", "href": "/netherlands/visa-checker/" }
+  ],
+  "faq": [
+    {
+      "q": "When do I need to translate a document for the Netherlands?",
+      "a": "If the document is not in Dutch, English, French, or German, it usually must be translated into one of those languages for use in Dutch official procedures (e.g. IND, municipality, university)."
+    },
+    {
+      "q": "Which languages are accepted without translation?",
+      "a": "Dutch, English, French, and German are usually accepted without translation. The document may still need apostille or legalisation."
+    },
+    {
+      "q": "What is a sworn translation in the Netherlands?",
+      "a": "A translation for official use in the Netherlands must typically be done by a translator sworn in by a Dutch court. You can find one via the Bureau Wbtv / Rbtv register."
+    },
+    {
+      "q": "Do translated documents also need legalisation?",
+      "a": "Often yes. The original document may need to be legalised or apostilled in the country of issue before or after translation, depending on that country's rules. Check the country-specific legalisation page."
+    },
+    {
+      "q": "Should I legalise first or translate first?",
+      "a": "The order is country-specific. In many cases you legalise or apostille the original first, then translate. For some countries (e.g. China), translation is done in the country of issue before legalisation. Always check the official page for the country that issued your document."
+    },
+    {
+      "q": "Can I use a translation done abroad?",
+      "a": "Sometimes. For Dutch official use, a translator sworn in by a Dutch court is usually required. If the translation was done abroad, additional legalisation of the translation may be needed depending on the workflow for that country."
+    },
+    {
+      "q": "Where can I find a sworn translator?",
+      "a": "Use the official Bureau Wbtv / Rbtv register at zoekeentolkvertaler.bureauwbtv.nl. Search by language pair and location."
+    },
+    {
+      "q": "How much does document translation usually cost?",
+      "a": "Indicative ranges: short document €25–€60, birth or marriage certificate €40–€100, diploma €60–€150. Urgent surcharges and notarisation extras vary. Actual cost depends on language pair, complexity, and provider."
+    },
+    {
+      "q": "Which documents most often need translation?",
+      "a": "Birth certificates, marriage certificates, divorce certificates, police certificates, diplomas and transcripts, and court or civil documents are common. Employment or business documents may be needed for certain visa routes."
+    },
+    {
+      "q": "What should I do after translating my documents?",
+      "a": "Confirm with the requesting authority (IND, municipality, university) that they have everything they need. Keep originals and legalised copies; submit as specified (often originals plus copies). Use the Document Readiness Checker to stay on top of your pack."
+    }
+  ],
+  "resourcesAffiliatePlacementId": "resources_end",
+  "servicesSectionTitle": "Useful services for translation and document preparation",
+  "servicesIntro": "Official resources and services commonly used for document preparation. Bureau Wbtv is the official register for sworn translators; use it to find a translator. We may earn a commission from some links at no extra cost to you.",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

@@ -1,0 +1,240 @@
+{
+  "firstWeek": [
+    {
+      "id": "confirm-move-in-date-and-mail-access",
+      "label": "Confirm your move-in date and where official mail can reach you",
+      "group": "firstWeek",
+      "priority": 1,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "Clarify where you can receive important letters (municipality, IND, bank) and what your next housing step is. Registration and your BSN depend on having a valid address where you can receive post; confirm with your landlord or host that mail in your name is accepted.",
+      "relatedGuideHref": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "id": "prepare-registration-documents",
+      "label": "Prepare documents for municipality registration",
+      "group": "firstWeek",
+      "priority": 2,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "Have the documents you need ready before your registration appointment: passport, proof of address (e.g. rental contract), and any required civil or residence documents. Check your municipality’s website for the exact list so your appointment is not postponed.",
+      "relatedGuideHref": "/netherlands/register-address-netherlands/"
+    },
+    {
+      "id": "receive-bsn-and-note-dependencies",
+      "label": "Receive your BSN and note which steps depend on it",
+      "group": "firstWeek",
+      "priority": 3,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "After registration, note your BSN and list which next steps need it: bank account, DigiD, health insurance, and employer. Sequencing these avoids delays and ensures you meet deadlines (e.g. health insurance within four months).",
+      "relatedGuideHref": "/netherlands/bsn-registration/"
+    },
+    {
+      "id": "open-dutch-bank-account",
+      "label": "Open a Dutch bank account",
+      "group": "firstWeek",
+      "priority": 4,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "Open an account once you have BSN and proof of address; employers and landlords typically expect it, and direct debits for rent and insurance are easier with a local account.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "setup-mobile-connectivity",
+      "label": "Set up mobile connectivity for daily admin",
+      "group": "firstWeek",
+      "priority": 5,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "A Dutch mobile number helps you receive OTPs and confirmations from banks, DigiD, and other services.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "temporary-planning-no-address",
+      "label": "Track which tasks must wait for a stable address",
+      "group": "firstWeek",
+      "priority": 1,
+      "conditions": {
+        "addressStatus": ["no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "Know which tasks you can do now and which must wait until you have a stable address; plan how you will get there.",
+      "relatedGuideHref": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "id": "household-admin-sync",
+      "label": "Align household admin ownership",
+      "group": "firstWeek",
+      "priority": 7,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "When moving together, agree who handles registration, banking, and insurance so nothing is missed.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-partner/"
+    },
+    {
+      "id": "school-admin-awareness",
+      "label": "Review school or childcare follow-up if needed",
+      "group": "firstWeek",
+      "priority": 2,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "List and schedule school or childcare registration and related admin.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-kids/"
+    }
+  ],
+  "firstMonth": [
+    {
+      "id": "arrange-health-insurance",
+      "label": "Arrange Dutch health insurance",
+      "group": "firstMonth",
+      "priority": 1,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "Take out basic health insurance (basisverzekering) once you are resident. It is mandatory within four months of registration; late enrolment can mean backdated premiums and penalties. You will need your BSN and usually a bank account for the premium.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "apply-for-digid-when-eligible",
+      "label": "Apply for DigiD when eligible",
+      "group": "firstMonth",
+      "priority": 2,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "Apply once you have BSN and address; you will receive an activation code by post, so apply early.",
+      "relatedGuideHref": "/netherlands/digid-awareness/"
+    },
+    {
+      "id": "register-with-gp-awareness",
+      "label": "Register with a GP (huisarts)",
+      "group": "firstMonth",
+      "priority": 3,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "Contact local practices early; availability and waiting times differ by area.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "recurring-payments-setup",
+      "label": "Set up recurring payments",
+      "group": "firstMonth",
+      "priority": 4,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "Organise direct debits for rent, insurance and utilities so nothing is missed.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "transport-routine",
+      "label": "Set up your local transport routine",
+      "group": "firstMonth",
+      "priority": 5,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "Work out how you will get to work, appointments and daily errands.",
+      "relatedGuideHref": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "id": "admin-followups",
+      "label": "Track admin follow-ups weekly",
+      "group": "firstMonth",
+      "priority": 6,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "Review pending tasks once a week so confirmations and next actions do not get lost.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "housing-stability-check",
+      "label": "Confirm your next housing decision date",
+      "group": "firstMonth",
+      "priority": 2,
+      "conditions": {
+        "addressStatus": ["soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "If your housing is temporary, set a date by which you will secure longer-term housing.",
+      "relatedGuideHref": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "id": "family-routine-check",
+      "label": "Review childcare, school and family registration follow-up",
+      "group": "firstMonth",
+      "priority": 3,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "School and childcare registration, plus any family-specific admin, often need follow-up in the first month.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-kids/"
+    },
+    {
+      "id": "banking-completion",
+      "label": "Confirm salary payment account readiness",
+      "group": "firstMonth",
+      "priority": 2,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes"]
+      },
+      "description": "Ensure your employer has the right account details and first payment is on track.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "community-support-routine",
+      "label": "Set up a support routine for practical local questions",
+      "group": "firstMonth",
+      "priority": 8,
+      "conditions": {
+        "addressStatus": ["yes", "soon", "no"],
+        "household": ["solo", "partner", "kids"],
+        "needBankingSoon": ["yes", "no"]
+      },
+      "description": "Reliable contacts and saved notes make recurring admin easier.",
+      "relatedGuideHref": "/netherlands/moving-to-the-netherlands/"
+    }
+  ]
+}

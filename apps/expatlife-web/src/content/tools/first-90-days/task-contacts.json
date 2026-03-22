@@ -1,0 +1,37 @@
+{
+  "local-municipality": {
+    "name": "Your municipality (gemeente)",
+    "website": "https://www.government.nl/topics/personal-data/question-and-answer/when-should-i-register-with-the-personal-records-database-as-a-resident",
+    "contactSummary": "Your municipality handles resident registration, BRP updates, and appointments."
+  },
+  "government-bsn": {
+    "name": "Government of the Netherlands – BSN",
+    "website": "https://www.government.nl/topics/personal-data/citizen-service-number-bsn",
+    "contactSummary": "Official explanation of the BSN and how it is assigned."
+  },
+  "employer-hr": {
+    "name": "Employer HR / onboarding contact",
+    "website": "",
+    "contactSummary": "Your employer can confirm payroll timing, document needs, and onboarding dependencies."
+  },
+  "digid": {
+    "name": "DigiD",
+    "website": "https://www.digid.nl/en/apply-and-activate/apply-digid",
+    "contactSummary": "Official DigiD application and activation."
+  },
+  "ind": {
+    "name": "IND",
+    "website": "https://ind.nl/en",
+    "contactSummary": "Immigration and residence-related guidance."
+  },
+  "belastingdienst-30": {
+    "name": "Belastingdienst – 30% facility",
+    "website": "https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility",
+    "contactSummary": "Official 30% facility guidance and conditions."
+  },
+  "rdw-driving": {
+    "name": "RDW – foreign driving licence",
+    "website": "https://www.rdw.nl/en/driving-licence/foreign-driving-licence",
+    "contactSummary": "Using or exchanging a foreign driving licence in the Netherlands."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "south-africa": [
+    "bring-sa-official-records-if-registration-or-family-admin-needs-them",
+    "check-sa-driving-licence-usage-if-driving",
+    "open-country-guide-south-africa"
+  ],
+  "india": [
+    "bring-india-issued-official-records-if-needed-for-registration-or-family-admin",
+    "check-india-driving-licence-usage-if-driving",
+    "open-country-guide-india"
+  ],
+  "united-states": [
+    "bring-us-issued-official-records-if-needed",
+    "check-us-driving-licence-usage-if-driving",
+    "open-country-guide-united-states"
+  ],
+  "united-kingdom": [
+    "bring-uk-issued-official-records-if-needed",
+    "check-uk-driving-licence-usage-if-driving",
+    "open-country-guide-united-kingdom"
+  ],
+  "canada": [
+    "bring-canada-issued-official-records-if-needed",
+    "check-canada-driving-licence-usage-if-driving",
+    "open-country-guide-canada"
+  ],
+  "australia": [
+    "bring-australia-issued-official-records-if-needed",
+    "check-australia-driving-licence-usage-if-driving",
+    "open-country-guide-australia"
+  ],
+  "germany": [
+    "check-germany-driving-licence-usage-if-driving",
+    "open-country-guide-germany"
+  ],
+  "france": [
+    "check-france-driving-licence-usage-if-driving",
+    "open-country-guide-france"
+  ],
+  "spain": [
+    "check-spain-driving-licence-usage-if-driving",
+    "open-country-guide-spain"
+  ],
+  "brazil": [
+    "bring-brazil-issued-official-records-if-needed",
+    "check-brazil-driving-licence-usage-if-driving",
+    "open-country-guide-brazil"
+  ]
+}

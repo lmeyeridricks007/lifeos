@@ -1,0 +1,21 @@
+{
+  "id": "nl-moving-hub-resources",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "hub",
+    "route": "/netherlands/moving/",
+    "slot": "end-resources"
+  },
+  "variant": "cards",
+  "title": "Resources",
+  "intro": "Services and tools that many expats use when planning or after moving.",
+  "categoryOrder": ["banking", "housing", "mobile"],
+  "items": [
+    { "providerId": "bunq", "reason": "Fast account setup and English onboarding." },
+    { "providerId": "wise", "reason": "International transfers and multi-currency." },
+    { "providerId": "housinganywhere", "reason": "Temporary rentals before you find a long-term place." },
+    { "providerId": "simyo", "reason": "Simple SIM plans to get connected." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

@@ -1,0 +1,20 @@
+{
+  "id": "nl-moving-pillar-sidebar-start-here",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "pillar",
+    "route": "/netherlands/moving-to-the-netherlands/",
+    "slot": "sidebar-start-here"
+  },
+  "variant": "compact-list",
+  "title": "Start your move",
+  "intro": "Tools and services many expats use first.",
+  "categoryOrder": ["banking", "housing"],
+  "items": [
+    { "providerId": "bunq", "reason": "Bank account" },
+    { "providerId": "wise", "reason": "Transfers" },
+    { "providerId": "housinganywhere", "reason": "Temporary housing" }
+  ],
+  "disclosure": "Some links are affiliate links. We may earn a commission at no extra cost to you."
+}

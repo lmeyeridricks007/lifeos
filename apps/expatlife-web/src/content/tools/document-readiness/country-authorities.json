@@ -1,0 +1,15 @@
+{
+  "south-africa": [
+    { "name": "South African Department of Home Affairs", "website": "https://www.dha.gov.za", "contactSummary": "Passports and civil records (birth, marriage)." },
+    { "name": "DIRCO (Department of International Relations)", "website": "https://www.dirco.gov.za", "contactSummary": "Apostille and legalization awareness for documents used abroad." }
+  ],
+  "united-states": [
+    { "name": "State vital records office", "website": "https://www.cdc.gov/nchs/w2w/index.htm", "contactSummary": "Birth, marriage, divorce certificates — state-specific." },
+    { "name": "Secretary of State (state level)", "contactSummary": "Apostille for documents used abroad; varies by state." },
+    { "name": "U.S. Department of State – Passports", "website": "https://travel.state.gov/content/travel/en/passports.html", "contactSummary": "U.S. passport applications and renewals." }
+  ],
+  "india": [
+    { "name": "Passport Seva", "website": "https://www.passportindia.gov.in", "contactSummary": "Passport applications and related services." },
+    { "name": "State or municipal birth/marriage registration", "contactSummary": "Civil records; procedures vary by state and district." }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "how-much-money-needed",
+    "question": "How much money do I need to move to the Netherlands?",
+    "answer": "It depends on your household, visa route, whether you ship goods, and where you live. As a rough guide, one-time relocation costs often range from around €3,000 to €20,000+ (flights, visa, shipping, deposit, first rent, setup). Monthly living costs vary by city and household; the calculator gives you a personalized range and first-year total."
+  },
+  {
+    "id": "biggest-one-time-costs",
+    "question": "What are the biggest one-time relocation costs?",
+    "answer": "Typically: flights (especially from outside Europe), visa and document preparation, international shipping or moving, temporary housing if needed, rent deposit and first month’s rent, and initial setup (furniture, bike, utilities, admin). The calculator breaks these down by category."
+  },
+  {
+    "id": "moving-with-family-cost",
+    "question": "Does moving with family cost much more?",
+    "answer": "Yes. More travelers mean higher flight costs; children add to monthly groceries, childcare, and often housing size. The calculator adjusts for household type and number of travelers so you can see a family-sized budget range."
+  },
+  {
+    "id": "deposits-included",
+    "question": "Are deposits included in the estimate?",
+    "answer": "Yes, if you tick ‘Include rent deposit’ in the housing step. The estimate then includes an indicative deposit (often 1–2 months’ rent) plus first month’s rent in the one-time costs."
+  },
+  {
+    "id": "monthly-living-costs",
+    "question": "Does the calculator include monthly living costs?",
+    "answer": "Yes. It estimates ongoing monthly costs (rent, groceries, transport, insurance, phone/internet, and an uplift for children) and shows a monthly range plus a first-year total (one-time + 12 months)."
+  },
+  {
+    "id": "download-budget",
+    "question": "Can I download my relocation budget?",
+    "answer": "Yes. After you calculate, use the ‘Download My Relocation Budget (PDF)’ button to get a PDF with your profile summary, cost ranges, breakdown, and planning notes."
+  },
+  {
+    "id": "numbers-exact-or-estimates",
+    "question": "Are the numbers exact or only estimates?",
+    "answer": "They are planning estimates, not quotes. Actual costs depend on your exact route, city, provider prices, and choices. Use the ranges as a guide and allow a buffer when budgeting."
+  }
+]

@@ -1,0 +1,472 @@
+{
+  "week1to2": [
+    {
+      "id": "register-address-awareness",
+      "label": "Understand and complete address registration steps",
+      "group": "week1to2",
+      "priority": 1,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "This often becomes one of the earliest admin priorities after arrival.",
+      "relatedGuideHref": "/netherlands/register-address-netherlands/"
+    },
+    {
+      "id": "bsn-next-steps",
+      "label": "Map BSN-related next steps",
+      "group": "week1to2",
+      "priority": 2,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Knowing dependencies early reduces avoidable delays later in the month.",
+      "relatedGuideHref": "/netherlands/bsn-registration/"
+    },
+    {
+      "id": "bank-account-setup",
+      "label": "Set up your banking plan for salary and daily payments",
+      "group": "week1to2",
+      "priority": 3,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Banking readiness helps with rent, payroll, and recurring services.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "mobile-connectivity-setup",
+      "label": "Get mobile connectivity stable for admin and verification flows",
+      "group": "week1to2",
+      "priority": 4,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Reliable phone access supports appointments, login codes, and provider contact.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "document-organization",
+      "label": "Organize documents in one easy-to-access system",
+      "group": "week1to2",
+      "priority": 5,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "A shared folder and checklist reduce repeated admin friction.",
+      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    },
+    {
+      "id": "health-insurance-orientation",
+      "label": "Review health insurance timing and decision points",
+      "group": "week1to2",
+      "priority": 6,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Early awareness helps you avoid last-minute decisions in month one.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "job-start-admin-readiness",
+      "label": "Align admin tasks with your upcoming job start",
+      "group": "week1to2",
+      "priority": 2,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "When work starts soon, payroll and onboarding dependencies need early clarity.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "family-week1-coordination",
+      "label": "Coordinate household responsibilities for week one to two",
+      "group": "week1to2",
+      "priority": 3,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Shared ownership prevents duplicated work and missed deadlines.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-partner/"
+    },
+    {
+      "id": "kids-admin-kickoff",
+      "label": "Kick off school and child-admin timing awareness",
+      "group": "week1to2",
+      "priority": 2,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Early clarity helps families sequence school and healthcare follow-ups.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-kids/"
+    }
+  ],
+  "week3to4": [
+    {
+      "id": "digid-awareness",
+      "label": "Build DigiD awareness for common online tasks",
+      "group": "week3to4",
+      "priority": 1,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "DigiD often becomes important as more services move online.",
+      "relatedGuideHref": "/netherlands/digid-awareness/"
+    },
+    {
+      "id": "gp-awareness",
+      "label": "Plan GP registration and local provider options",
+      "group": "week3to4",
+      "priority": 2,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Provider availability can vary, so planning this in week 3 to 4 helps.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "recurring-payments-foundation",
+      "label": "Set up recurring payment foundations",
+      "group": "week3to4",
+      "priority": 3,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Stable payment routines reduce month-end stress.",
+      "relatedGuideHref": "/netherlands/first-30-days-netherlands/"
+    },
+    {
+      "id": "neighborhood-familiarity",
+      "label": "Build neighborhood and service familiarity",
+      "group": "week3to4",
+      "priority": 4,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Knowing local routines lowers daily friction quickly.",
+      "relatedGuideHref": "/netherlands/moving/"
+    },
+    {
+      "id": "work-rhythm-adjustment",
+      "label": "Adjust admin timeline to your work rhythm",
+      "group": "week3to4",
+      "priority": 2,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Work onboarding can consume time, so protect weekly admin windows.",
+      "relatedGuideHref": "/netherlands/first-60-days-netherlands/"
+    },
+    {
+      "id": "household-admin-rhythm",
+      "label": "Set a shared household admin rhythm",
+      "group": "week3to4",
+      "priority": 3,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "A weekly check-in prevents tasks from slipping into month 2.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-partner/"
+    },
+    {
+      "id": "school-followup-week4",
+      "label": "Follow up on school and child logistics",
+      "group": "week3to4",
+      "priority": 2,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Families often need second-round follow-ups by week 3 to 4.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-kids/"
+    },
+    {
+      "id": "catch-up-cleanup",
+      "label": "Run a catch-up cleanup of unresolved admin tasks",
+      "group": "week3to4",
+      "priority": 1,
+      "conditions": {
+        "arrivalStage": ["already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "If you arrived earlier, this is the ideal window to close gaps.",
+      "relatedGuideHref": "/netherlands/first-60-days-netherlands/"
+    }
+  ],
+  "month2": [
+    {
+      "id": "payroll-confidence",
+      "label": "Build payroll and admin confidence",
+      "group": "month2",
+      "priority": 1,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Month 2 is often when your core systems should feel predictable.",
+      "relatedGuideHref": "/netherlands/first-60-days-netherlands/"
+    },
+    {
+      "id": "transport-routine-month2",
+      "label": "Stabilize your commuting and transport routine",
+      "group": "month2",
+      "priority": 2,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Consistent routines protect time for admin and personal adjustment.",
+      "relatedGuideHref": "/netherlands/first-60-days-netherlands/"
+    },
+    {
+      "id": "housing-stability-month2",
+      "label": "Check medium-term housing stability",
+      "group": "month2",
+      "priority": 3,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Use month 2 to reduce uncertainty around living arrangements.",
+      "relatedGuideHref": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "id": "utilities-subscriptions-review",
+      "label": "Review utilities and subscriptions for fit and cost",
+      "group": "month2",
+      "priority": 4,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "This is a practical optimization step once basics are in place.",
+      "relatedGuideHref": "/netherlands/first-60-days-netherlands/"
+    },
+    {
+      "id": "monthly-admin-review",
+      "label": "Run a monthly review of pending confirmations",
+      "group": "month2",
+      "priority": 5,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Close loops before they become long-tail admin tasks in month 3.",
+      "relatedGuideHref": "/netherlands/first-60-days-netherlands/"
+    },
+    {
+      "id": "family-logistics-month2",
+      "label": "Stabilize family logistics and shared planning",
+      "group": "month2",
+      "priority": 2,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Household alignment in month 2 prevents repeated rescheduling.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-partner/"
+    },
+    {
+      "id": "kids-routine-month2",
+      "label": "Settle school and child routine checkpoints",
+      "group": "month2",
+      "priority": 2,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Month 2 is where family routines often become more predictable.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-kids/"
+    },
+    {
+      "id": "integration-baseline-month2",
+      "label": "Set a baseline for local integration priorities",
+      "group": "month2",
+      "priority": 6,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes"]
+      },
+      "description": "Define realistic language and community goals you can sustain.",
+      "relatedGuideHref": "/netherlands/first-60-days-netherlands/"
+    }
+  ],
+  "month3": [
+    {
+      "id": "integration-planning-month3",
+      "label": "Create a practical integration plan for the next quarter",
+      "group": "month3",
+      "priority": 1,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes"]
+      },
+      "description": "Month 3 is a good point to move from setup to longer-term rhythm.",
+      "relatedGuideHref": "/netherlands/moving/"
+    },
+    {
+      "id": "language-awareness-month3",
+      "label": "Build language learning awareness into your weekly routine",
+      "group": "month3",
+      "priority": 2,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes"]
+      },
+      "description": "Small, consistent steps are often more effective than large bursts.",
+      "relatedGuideHref": "/netherlands/moving/"
+    },
+    {
+      "id": "community-routine-month3",
+      "label": "Establish a simple community and social routine",
+      "group": "month3",
+      "priority": 3,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Social consistency can reduce isolation and support long-term settling.",
+      "relatedGuideHref": "/netherlands/moving/"
+    },
+    {
+      "id": "long-term-admin-rhythm",
+      "label": "Set a long-term monthly admin rhythm",
+      "group": "month3",
+      "priority": 4,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Create a lightweight system for renewals, reviews, and reminders.",
+      "relatedGuideHref": "/netherlands/first-90-days-netherlands/"
+    },
+    {
+      "id": "financial-rhythm-month3",
+      "label": "Review month-to-month financial rhythm and buffers",
+      "group": "month3",
+      "priority": 5,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Month 3 is a good checkpoint for recurring costs and comfort level.",
+      "relatedGuideHref": "/netherlands/first-90-days-netherlands/"
+    },
+    {
+      "id": "household-goals-month3",
+      "label": "Align household goals for the next 3 to 6 months",
+      "group": "month3",
+      "priority": 3,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Shared direction keeps planning realistic across work and family needs.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-partner/"
+    },
+    {
+      "id": "family-support-month3",
+      "label": "Review family support systems and local contacts",
+      "group": "month3",
+      "priority": 2,
+      "conditions": {
+        "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+        "household": ["kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "Families benefit from clear support paths once routines are active.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-kids/"
+    },
+    {
+      "id": "catch-up-stabilize-month3",
+      "label": "Complete catch-up tasks and lock a stable operating routine",
+      "group": "month3",
+      "priority": 1,
+      "conditions": {
+        "arrivalStage": ["arrived-a-while-ago"],
+        "household": ["solo", "partner", "kids"],
+        "startingJobSoon": ["yes", "no"],
+        "needsIntegrationAwareness": ["yes", "no"]
+      },
+      "description": "If you arrived a while ago, month 3 should focus on cleanup and stability.",
+      "relatedGuideHref": "/netherlands/first-90-days-netherlands/"
+    }
+  ]
+}

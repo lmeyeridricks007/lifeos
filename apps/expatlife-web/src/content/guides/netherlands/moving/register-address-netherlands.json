@@ -1,0 +1,287 @@
+{
+  "slug": "register-address-netherlands",
+  "path": "/netherlands/register-address-netherlands/",
+  "title": "Registering Your Address in the Netherlands",
+  "metaTitle": "Registering Your Address in the Netherlands: Step-by-Step Guide for Expats",
+  "breadcrumbLabel": "Register Address",
+  "subtitle": "How expats register with the municipality (gemeente) after arrival.",
+  "description": "Learn how expats usually register their address with a Dutch municipality, which documents may be needed, when to book, and what typically happens next.",
+  "hero": {
+    "eyebrow": "Arrival Admin",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/expat-netherlands-address-registration-hero.png",
+      "alt": "Expat preparing municipality registration documents in the Netherlands"
+    }
+  },
+
+  "heroCta": {
+    "title": "Start your arrival setup",
+    "supportingText": "Use our tools to prepare your registration steps, check what documents you may need, and plan what usually happens after arrival.",
+    "primaryCtaLabel": "Generate a moving checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtaLabel": "Check document readiness",
+    "secondaryCtaHref": "/netherlands/document-readiness-checker/",
+    "tertiaryCtaLabel": "Plan your first 90 days",
+    "tertiaryCtaHref": "/netherlands/moving/tools/first-90-days/",
+    "helperLinkLabel": "Read the full Moving to the Netherlands guide",
+    "helperLinkHref": "/netherlands/moving-to-the-netherlands/"
+  },
+
+  "midPageCta": {
+    "title": "Need your registration documents in order?",
+    "description": "Use the Document Readiness tool to build a practical starter pack before your municipality appointment.",
+    "ctaLabel": "Check document readiness",
+    "ctaHref": "/netherlands/document-readiness-checker/"
+  },
+  "midPageCtaAfterSectionId": "why-it-matters",
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "why-it-matters", "label": "Why address registration is important" },
+    { "id": "step-by-step", "label": "Step-by-step: how municipality registration works" },
+    { "id": "documents", "label": "Documents municipalities may request" },
+    { "id": "temporary-housing", "label": "Can you register with temporary housing?" },
+    { "id": "when-register", "label": "When expats usually register" },
+    { "id": "what-next", "label": "What expats typically arrange next" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+
+  "quickAnswers": [
+    {
+      "label": "What is municipality registration?",
+      "value": "Recording your residential address with the local gemeente."
+    },
+    {
+      "label": "When do people register?",
+      "value": "Often within the first days after arrival (timing may vary)."
+    },
+    {
+      "label": "Why it matters",
+      "value": "It commonly leads to a BSN and unlocks many admin steps."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "Municipality registration (inschrijving at the gemeente) is how your address is recorded in Dutch municipal records. For most expats it is one of the first admin steps after arrival and often connects to receiving a BSN. The exact process varies by municipality.",
+        "This page explains the usual process for expats. Exact requirements vary by municipality, address type, and household situation. Always confirm with your gemeente."
+      ]
+    },
+    {
+      "id": "why-it-matters",
+      "heading": "Why registering your address is important",
+      "body": [
+        "Address registration records where you live in municipal records. It is commonly linked to receiving a BSN and affects access to other admin steps. Many people need it before banking, insurance, or payroll setups can progress.",
+        "Getting your address registered and your BSN in hand usually unblocks opening a Dutch bank account, arranging health insurance, and having your employer process salary correctly."
+      ],
+      "bullets": [
+        "It can be a prerequisite for receiving a BSN.",
+        "It links your address to municipal records.",
+        "It may be needed before certain services can be set up."
+      ],
+      "links": [
+        { "label": "BSN registration in the Netherlands", "href": "/netherlands/bsn-registration/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ]
+    },
+    {
+      "id": "step-by-step",
+      "heading": "Step-by-step: how municipality registration usually works",
+      "body": [
+        "1. Find your local municipality. You register with the gemeente where you live. Use the address of your accommodation to determine which municipality handles your registration.",
+        "2. Book an appointment if required. Many municipalities use an appointment system, especially in larger cities. Check the gemeente website for how to book and what to bring.",
+        "3. Prepare your documents. Requirements vary; commonly requested items include a valid passport or ID, residence permit if applicable, and proof of address (e.g. rental agreement or housing confirmation). See the documents section below and the Documents needed to move guide for more.",
+        "4. Attend the appointment in person. You usually need to go to the municipal office. Bring originals and any copies they ask for.",
+        "5. Registration is processed. The municipality records your address. Processing time can vary.",
+        "6. Receive confirmation and, where applicable, your BSN. You may get a confirmation letter or extract; in many cases your BSN is created during or shortly after this process.",
+        "In many cases, expats do not apply separately for a BSN. The BSN is often created during or after address registration."
+      ],
+      "links": [
+        { "label": "BSN registration in the Netherlands", "href": "/netherlands/bsn-registration/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ]
+    },
+    {
+      "id": "documents",
+      "heading": "Documents municipalities may request",
+      "body": [
+        "Requirements vary by municipality, address type, immigration status, and household setup. The list below gives typical examples; your gemeente may ask for more or fewer items.",
+        "Commonly requested: passport or identity document; residence permit if applicable; rental agreement or housing confirmation; proof you live at the address if they ask for it; birth certificate in some situations; marriage certificate or household documents when registering with a partner or children; and any supporting documents the municipality specifies."
+      ],
+      "bullets": [
+        "Passport or identity document",
+        "Residence permit (if applicable)",
+        "Rental agreement or housing confirmation",
+        "Proof you live at the address (if requested)",
+        "Birth certificate (in some situations)",
+        "Marriage certificate / household documents (when registering with partner or children)",
+        "Any supporting documents requested by the municipality"
+      ],
+      "image": {
+        "src": "/images/guides/netherlands/moving/municipality-registration-documents-netherlands-infographic.png",
+        "alt": "Documents often requested for municipality registration in the Netherlands, including passport, residence permit, rental agreement, proof of address, and birth or marriage certificates.",
+        "caption": "Typical documents municipalities may request when you register your address in the Netherlands."
+      },
+      "internalCta": {
+        "label": "Check document readiness",
+        "href": "/netherlands/document-readiness-checker/"
+      }
+    },
+    {
+      "id": "temporary-housing",
+      "heading": "Can you register with temporary housing?",
+      "body": [
+        "Some expats arrive in temporary housing. Not every temporary address can be used for registration; rules vary by municipality and housing arrangement. Some short-term rentals do not allow registration. Confirming address eligibility matters because later admin steps often depend on it.",
+        "Confirm with your landlord or accommodation provider whether the address can be used for municipal registration. Then confirm with the municipality. Temporary housing may still work in some situations, but do not assume every booking can be used for registration."
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "Common surprise",
+        "text": "Some expats assume any accommodation can be used for registration. In practice, whether you can register depends on the address and housing arrangement."
+      },
+      "links": [
+        { "label": "Cost of moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" },
+        { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" }
+      ]
+    },
+    {
+      "id": "when-register",
+      "heading": "When expats usually register",
+      "body": [
+        "Many people register shortly after arrival. Timing varies by municipality; some cities use appointment systems and availability can vary. Once an address is confirmed, some people book their appointment in advance."
+      ],
+      "bullets": [
+        "Some cities require booking online",
+        "Appointment availability may vary by season and city",
+        "Temporary housing may still allow registration in some situations (confirm locally)"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "What tends to take longer than expected",
+        "text": "Popular municipalities may have limited appointment slots. Documentation issues can delay the visit, and unclear housing registration rights can slow things down."
+      }
+    },
+    {
+      "id": "what-next",
+      "heading": "What expats typically arrange next",
+      "body": [
+        "After address registration and once a BSN is available, people usually move on to bank account setup, health insurance, mobile phone setup, DigiD or government access, and first-90-days admin. Planning these steps can reduce friction with salary, rent, and basic services."
+      ],
+      "bullets": [
+        "Open a Dutch bank account",
+        "Arrange health insurance",
+        "Set up a mobile phone plan",
+        "Apply for DigiD / government access",
+        "Tackle first-90-days admin"
+      ],
+      "links": [
+        { "label": "BSN registration in the Netherlands", "href": "/netherlands/bsn-registration/" },
+        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/#bsn" },
+        { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+        { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" }
+      ],
+      "internalCta": {
+        "label": "Plan your first 90 days",
+        "href": "/netherlands/moving/tools/first-90-days/"
+      }
+    }
+  ],
+
+  "toolsCtaBand": {
+    "title": "Want the fastest way to prepare?",
+    "body": "Generate a personalized checklist and then use the document tool before your municipality appointment.",
+    "primaryLabel": "Generate a moving checklist",
+    "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryLabel": "Check document readiness",
+    "secondaryHref": "/netherlands/document-readiness-checker/"
+  },
+
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Create a practical relocation checklist covering preparation, arrival admin, and your first months.",
+      "ctaLabel": "Open tool →"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Check Document Readiness",
+      "href": "/netherlands/document-readiness-checker/",
+      "description": "See which documents often matter for registration, visas, housing, and first appointments.",
+      "ctaLabel": "Open tool →"
+    },
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Map the typical admin and daily-life setup steps that happen after arrival.",
+      "ctaLabel": "Open tool →"
+    }
+  ],
+
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      { "label": "BSN registration in the Netherlands", "href": "/netherlands/bsn-registration/" },
+      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+      { "label": "Cost of moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" },
+      { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+      { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/#bsn" },
+      { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+      { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+    ]
+  },
+
+  "sidebarStartLinks": [
+    { "label": "Moving hub", "href": "/netherlands/moving/" },
+    { "label": "Moving to the Netherlands guide", "href": "/netherlands/moving-to-the-netherlands/" }
+  ],
+
+  "faq": [
+    {
+      "q": "Can you register without a permanent address?",
+      "a": "Some municipalities may allow registration from temporary housing depending on the situation. It's best to confirm with your local municipality."
+    },
+    {
+      "q": "Do you need a BSN before registering your address?",
+      "a": "In many cases, no. The BSN is often created during municipality registration."
+    },
+    {
+      "q": "Can someone else register your address for you?",
+      "a": "Many municipalities expect you to attend in person. Some exceptions may exist—confirm locally."
+    },
+    {
+      "q": "Do all municipalities work the same way?",
+      "a": "The overall process is often similar, but details such as booking and document requirements can vary by municipality."
+    },
+    {
+      "q": "Can you register with temporary housing?",
+      "a": "It depends on the address and the municipality. Some short-term rentals do not allow registration. Confirm with your landlord and with the gemeente before you rely on a temporary address."
+    },
+    {
+      "q": "How long does address registration take?",
+      "a": "Processing time varies by municipality. The appointment itself is often quick; confirmation or BSN may follow soon after or within a few weeks. Booking the appointment can take longer in busy cities."
+    }
+  ],
+
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

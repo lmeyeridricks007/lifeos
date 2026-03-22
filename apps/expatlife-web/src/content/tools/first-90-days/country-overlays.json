@@ -1,0 +1,45 @@
+{
+  "south-africa": [
+    "review-money-transfer-and-currency-routine-sa",
+    "check-sa-driving-licence-use-in-nl-if-driving",
+    "review-which-sa-issued-records-you-should-keep-accessible"
+  ],
+  "united-states": [
+    "review-us-banking-and-tax-follow-up-awareness",
+    "check-us-driving-licence-use-in-nl-if-driving",
+    "keep-us-financial-access-stable-during-transition"
+  ],
+  "india": [
+    "review-money-transfer-setup-and-timing-india",
+    "check-india-driving-licence-use-in-nl-if-driving",
+    "keep-india-issued-official-records-accessible-if-needed"
+  ],
+  "united-kingdom": [
+    "check-uk-driving-licence-use-in-nl-if-driving",
+    "review-uk-to-nl-banking-and-subscription-transition"
+  ],
+  "canada": [
+    "check-canada-driving-licence-use-in-nl-if-driving",
+    "review-canada-to-nl-banking-transition"
+  ],
+  "australia": [
+    "check-australia-driving-licence-use-in-nl-if-driving",
+    "review-australia-to-nl-banking-awareness"
+  ],
+  "germany": [
+    "check-eu-driving-licence-rules-and-renewal-awareness",
+    "stabilize-cross-border-bank-or-payment-routine-if-relevant"
+  ],
+  "france": [
+    "check-eu-driving-licence-rules-and-renewal-awareness",
+    "stabilize-cross-border-bank-or-payment-routine-if-relevant"
+  ],
+  "spain": [
+    "check-eu-driving-licence-rules-and-renewal-awareness",
+    "stabilize-cross-border-bank-or-payment-routine-if-relevant"
+  ],
+  "brazil": [
+    "review-money-transfer-and-banking-transition-brazil",
+    "check-brazil-driving-licence-use-in-nl-if-driving"
+  ]
+}

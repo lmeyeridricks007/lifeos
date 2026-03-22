@@ -1,0 +1,43 @@
+{
+  "rules": [
+    {
+      "condition": { "largeMoneyTransfer": true },
+      "prioritiseCategories": ["international-transfer"],
+      "note": "Prioritise Wise (money transfer)"
+    },
+    {
+      "condition": { "housingReadiness": "no-place-yet" },
+      "prioritiseCategories": ["housing"],
+      "note": "Prioritise HousingAnywhere (temporary housing)"
+    },
+    {
+      "condition": { "housingReadiness": "temporary-place" },
+      "prioritiseCategories": ["housing"],
+      "note": "HousingAnywhere relevant for temporary"
+    },
+    {
+      "condition": { "needsTemporaryHousing": true },
+      "prioritiseCategories": ["housing"],
+      "note": "Prioritise temporary housing helpers"
+    },
+    {
+      "condition": { "stage": "before-move" },
+      "prioritiseCategories": ["international-transfer", "international-moving", "housing"],
+      "note": "Before move: travel, moving, transfer helpers"
+    },
+    {
+      "condition": { "employment": "job-offer" },
+      "allowCategories": ["banking"],
+      "note": "bunq as first-month setup helper only"
+    },
+    {
+      "condition": { "region": "non-eu" },
+      "emphasise": "document and relocation support"
+    }
+  ],
+  "stageAwareTitles": {
+    "before-move": "Before you move: useful services",
+    "arriving-soon": "Your next practical prep steps",
+    "already-arrived": "Next steps after arrival"
+  }
+}

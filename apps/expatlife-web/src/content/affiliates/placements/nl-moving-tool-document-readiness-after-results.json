@@ -1,0 +1,16 @@
+{
+  "id": "nl-moving-tool-document-readiness-after-results",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "tool",
+    "route": "/netherlands/moving/tools/document-readiness",
+    "slot": "after-results"
+  },
+  "variant": "cards",
+  "title": "Your next steps",
+  "intro": "Placeholder: add affiliate items when ready.",
+  "categoryOrder": ["banking", "housing"],
+  "items": [],
+  "disclosure": "Some links are affiliate links. We may earn a commission at no extra cost to you."
+}

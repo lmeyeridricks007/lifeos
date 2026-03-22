@@ -1,0 +1,52 @@
+{
+  "scenarioPriority": {
+    "work": {
+      "high": ["passport", "passport-copies", "employment-contract", "job-offer-letter", "address-confirmation"],
+      "medium": ["employer-contact-details", "work-authorization-awareness", "rental-agreement", "diplomas"],
+      "optional": ["travel-insurance-details", "professional-certificates", "relocation-booking-confirmations"]
+    },
+    "partner": {
+      "high": ["passport", "passport-copies", "marriage-certificate", "address-confirmation", "rental-agreement"],
+      "medium": ["birth-certificate", "landlord-agency-contact", "travel-insurance-details"],
+      "optional": ["diplomas", "transcripts", "relocation-booking-confirmations"]
+    },
+    "family": {
+      "high": ["passport", "passport-copies", "children-birth-certificates", "address-confirmation", "rental-agreement"],
+      "medium": ["marriage-certificate", "birth-certificate", "school-records-awareness", "landlord-agency-contact"],
+      "optional": ["travel-insurance-details", "relocation-booking-confirmations", "transcripts"]
+    },
+    "unsure": {
+      "high": ["passport", "passport-copies", "address-confirmation"],
+      "medium": ["residence-permit-awareness", "rental-agreement", "travel-insurance-details"],
+      "optional": ["diplomas", "transcripts", "professional-certificates", "relocation-booking-confirmations"]
+    }
+  },
+  "inputInterpretation": {
+    "hasPassport": {
+      "yes": "ready",
+      "no": "missing"
+    },
+    "hasCivilCertificates": {
+      "yes": "ready",
+      "no": "missing",
+      "na": "not_applicable"
+    },
+    "hasProofOfAddress": {
+      "yes": "ready",
+      "no": "missing",
+      "soon": "pending"
+    },
+    "hasEmploymentDocs": {
+      "yes": "ready",
+      "no": "missing",
+      "na": "not_applicable"
+    }
+  },
+  "priorityOrder": ["high", "medium", "optional"],
+  "statusPriority": {
+    "missing": 3,
+    "pending": 2,
+    "ready": 1,
+    "not_applicable": 0
+  }
+}

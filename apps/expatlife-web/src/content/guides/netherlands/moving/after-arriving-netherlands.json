@@ -1,0 +1,508 @@
+{
+  "slug": "after-arriving-netherlands",
+  "path": "/netherlands/after-arriving-netherlands/",
+  "title": "After Arriving in the Netherlands: What to Do First",
+  "metaTitle": "After Arriving in the Netherlands | BSN, Registration, DigiD, Insurance, Banking",
+  "subtitle": "Your practical first-step guide after landing: municipality registration, BSN, residence permit collection, DigiD, health insurance, banking, mobile setup, and first-week admin.",
+  "description": "A practical guide to what to do after arriving in the Netherlands, including municipality registration, BSN, residence permit collection, DigiD, health insurance, banking, and first-week setup.",
+  "breadcrumbLabel": "After Arriving",
+
+  "hero": {
+    "eyebrow": "SETTLING IN",
+    "badges": ["Arrival Hub", "Updated regularly"],
+    "image": {
+      "src": "/images/heroes/after-arriving-netherlands.png",
+      "alt": "A man with glasses and a denim shirt sits at a wooden desk overlooking a Dutch canal, focused on his laptop displaying a 'First Week in the Netherlands' checklist and writing in a notebook, surrounded by a passport, a smartphone, and books like 'Relocation Tasks'."
+    }
+  },
+
+  "heroCta": {
+    "title": "Plan your first steps after arrival",
+    "supportingText": "Use the First 90 Days Planner and Moving Checklist to map registration, BSN, banking, insurance, and housing setup.",
+    "primaryCtaLabel": "Plan Your First 90 Days",
+    "primaryCtaHref": "/netherlands/moving/tools/first-90-days/",
+    "secondaryCtaLabel": "Generate a Moving Checklist",
+    "secondaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "supportingLinks": [
+      { "label": "All services hub", "href": "/netherlands/services/" },
+      { "label": "Compare banks", "href": "/netherlands/services/banks/" },
+      { "label": "Compare health insurance", "href": "/netherlands/services/health-insurance/" },
+      { "label": "Relocation services", "href": "/netherlands/services/relocation-services/" },
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "Open a Bank Account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+      { "label": "Relocation Cost Estimator", "href": "/netherlands/moving/tools/relocation-cost-estimator/" },
+      { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
+      { "label": "Document Translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" }
+    ]
+  },
+
+  "tocItems": [
+    { "id": "intro", "label": "What this page helps with" },
+    { "id": "priority-checklist", "label": "Your first priorities" },
+    { "id": "municipality", "label": "Municipality registration" },
+    { "id": "bsn", "label": "BSN" },
+    { "id": "residence-permit", "label": "Residence permit" },
+    { "id": "digid", "label": "DigiD" },
+    { "id": "health-insurance", "label": "Health insurance" },
+    { "id": "bank-account", "label": "Bank account" },
+    { "id": "mobile-setup", "label": "Mobile / setup" },
+    { "id": "address-housing", "label": "Address and housing" },
+    { "id": "route-differences", "label": "Route differences" },
+    { "id": "costs", "label": "Costs" },
+    { "id": "example-scenarios", "label": "Example scenarios" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "useful-services", "label": "Useful services" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" },
+    { "id": "official-sources", "label": "Official sources" }
+  ],
+
+  "quickAnswers": [
+    {
+      "label": "MUNICIPALITY REGISTRATION",
+      "value": "Usually within 5 days of arrival if staying more than 4 months."
+    },
+    {
+      "label": "BSN",
+      "value": "Needed for government admin, DigiD, and many practical setups."
+    },
+    {
+      "label": "HEALTH INSURANCE",
+      "value": "If Dutch basic insurance is required, it usually must be arranged within 4 months."
+    },
+    {
+      "label": "RESIDENCE DOCUMENT",
+      "value": "Collect from the IND location named in your message or letter if applicable."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "intro",
+      "heading": "What this page helps with",
+      "body": [
+        "Arriving in the Netherlands is only the start. Most expats still need to complete registration, permit collection, insurance, banking, and digital government setup. The exact order can differ depending on your route, but municipality registration, BSN-linked admin, and residence-document handling are among the biggest first priorities.",
+        "This page focuses on practical first-week and early post-arrival actions—not the full visa application process. Use it as your main post-arrival hub and confirm any obligations with official sources, since your situation may differ."
+      ]
+    },
+    {
+      "id": "priority-checklist",
+      "heading": "Your first priorities after arrival",
+      "body": [
+        "A typical sequence many expats follow is summarised below. Your route (e.g. highly skilled migrant, student, partner, EU citizen) can change timing or requirements, so treat this as a guide, not a fixed rule."
+      ],
+      "steps": [
+        "Register at the municipality",
+        "Get or confirm your BSN",
+        "Collect your residence permit if the IND has notified you",
+        "Arrange DigiD and MijnOverheid access",
+        "Set up a bank account",
+        "Arrange health insurance if required",
+        "Set up phone and internet basics",
+        "Tackle first-week and first-month admin (GP, transport, housing follow-up)"
+      ],
+      "ctaBlock": {
+        "title": "Map your first 90 days",
+        "supportingText": "Use the First 90 Days Planner to order your registration, insurance, banking, and housing setup after arrival.",
+        "primaryLabel": "Use the First 90 Days Planner",
+        "primaryHref": "/netherlands/moving/tools/first-90-days/"
+      }
+    },
+    {
+      "id": "municipality",
+      "heading": "Register with your municipality",
+      "body": [
+        "If you are staying in the Netherlands for more than 4 months, you generally must register with the municipality where you live. According to Government.nl, this should be done within 5 days of arrival. Registration leads to entry in the BRP (Personal Records Database) and to BSN handling.",
+        "In practice you usually need an appointment. Bring route-relevant identity and address documents; the exact list can vary by municipality and situation (e.g. EU vs non-EU, employed vs student)."
+      ],
+      "links": [
+        { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
+        { "label": "Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+        { "label": "Municipality registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" }
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Official source",
+        "text": "Government.nl – What to arrange when moving to the Netherlands: registration within 5 days if staying more than 4 months.",
+        "href": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/what-do-i-need-to-arrange-if-i%E2%80%99m-moving-to-the-netherlands",
+        "linkLabel": "Government.nl – What to arrange when moving to the Netherlands"
+      }
+    },
+    {
+      "id": "bsn",
+      "heading": "Your BSN: one of the most important arrival steps",
+      "body": [
+        "The BSN (Burgerservicenummer) is your citizen service number. You need it for dealings with Dutch authorities, and it is used for health insurance and DigiD-related admin. Netherlands Worldwide explains what a BSN is and where you can later find it."
+      ],
+      "bullets": [
+        "Municipality registration — your BSN is typically issued or confirmed at registration",
+        "Health insurance — insurers and care providers use it",
+        "DigiD — activation requires a BSN",
+        "Tax and work admin — employer and tax authority use it",
+        "Salary and payroll — in many cases your employer needs it"
+      ],
+      "links": [
+        { "label": "Municipality registration (BSN)", "href": "/netherlands/municipality-registration-netherlands/" }
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "Official sources",
+        "text": "Netherlands Worldwide: What is a BSN? Where can I find my BSN?",
+        "href": "https://www.netherlandsworldwide.nl/bsn/what-is-citizen-service-number",
+        "linkLabel": "Netherlands Worldwide – BSN"
+      }
+    },
+    {
+      "id": "residence-permit",
+      "heading": "Collect your residence permit if applicable",
+      "body": [
+        "If the IND has notified you that your document is ready, collection is by appointment. You must collect it at the location stated by the IND. Sometimes original documents are returned during the same collection appointment."
+      ],
+      "bullets": [
+        "Wait for the IND message or letter",
+        "Book the correct collection appointment",
+        "Bring passport, appointment code, and prior permit if relevant"
+      ],
+      "links": [
+        { "label": "IND – Appointment to collect document", "href": "https://ind.nl/en/appointment-to-collect-document" },
+        { "label": "IND – Desks and locations", "href": "https://ind.nl/en/service-and-contact/contact-with-ind/ind-desks-and-locations" },
+        { "label": "Highly skilled migrant visa", "href": "/netherlands/visa/highly-skilled-migrant/" },
+        { "label": "Partner and family visa", "href": "/netherlands/visa/partner-family-visa/" },
+        { "label": "Student visa", "href": "/netherlands/visa/student-visa/" }
+      ]
+    },
+    {
+      "id": "digid",
+      "heading": "Set up DigiD and online government access",
+      "body": [
+        "With a BSN, many people can apply for DigiD. MijnOverheid is the government portal used for personal government communication and access to records. This becomes useful early for admin, letters, and later for tax, benefits, and official communication."
+      ],
+      "links": [
+        { "label": "DigiD for expats in the Netherlands", "href": "/netherlands/digid-awareness/" },
+        { "label": "Netherlands Worldwide – MijnOverheid", "href": "https://www.netherlandsworldwide.nl/mijnoverheid-abroad/what-is-mijnoverheid" }
+      ]
+    },
+    {
+      "id": "health-insurance",
+      "heading": "Check whether you need Dutch health insurance",
+      "body": [
+        "In many cases, people living and working in the Netherlands need Dutch basic health insurance. Netherlands Worldwide states that if you are required to have it, you generally must arrange it within 4 months of arrival; there can be fines if you do not do so on time. There are exceptions, so confirm your insurance position if unsure.",
+        "Do not assume everyone needs it immediately—people with income or coverage outside the Netherlands may need to verify their situation. Compare insurers before choosing."
+      ],
+      "services": [
+        {
+          "name": "Independer",
+          "description": "Insurance comparison site often used to compare Dutch health insurance options.",
+          "url": "https://www.independer.nl/",
+          "indicativeCost": "Comparison platform; insurer premiums vary.",
+          "reason": "Useful when evaluating health insurance.",
+          "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
+        }
+      ],
+      "links": [
+        { "label": "Health insurance in the Netherlands for expats", "href": "/netherlands/health-insurance-netherlands/" }
+      ]
+    },
+    {
+      "id": "bank-account",
+      "heading": "Open a Dutch bank account",
+      "body": [
+        "Many arrivals want a Dutch account quickly for salary, rent, subscriptions, and daily spending. Banks often ask for identity, BSN, and address-related information; onboarding can differ by provider."
+      ],
+      "services": [
+        {
+          "name": "bunq",
+          "description": "Expat-friendly Dutch bank with fast app-based onboarding.",
+          "url": "https://www.bunq.com/",
+          "indicativeCost": "Free and paid plans depending on tier.",
+          "reason": "Useful when opening a Dutch account early after arrival.",
+          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
+        },
+        {
+          "name": "Wise",
+          "description": "Multi-currency account and international transfers for moving money into the Netherlands.",
+          "url": "https://wise.com/",
+          "indicativeCost": "Free account; transfer fees vary.",
+          "reason": "Common for early transfers, rent, and cross-border finances.",
+          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
+        },
+        {
+          "name": "ABN AMRO",
+          "description": "Dutch bank with expat-oriented onboarding and English information.",
+          "url": "https://www.abnamro.nl/en/personal/specially-for/expats",
+          "indicativeCost": "Monthly banking fees vary by account type.",
+          "reason": "Relevant for people who want a traditional local bank.",
+          "logo": { "src": "/images/affiliates/logos/abn-amro.svg", "alt": "ABN AMRO logo" }
+        }
+      ],
+      "links": [
+        { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+        { "label": "Relocation Cost Estimator", "href": "/netherlands/moving/tools/relocation-cost-estimator/" }
+      ]
+    },
+    {
+      "id": "mobile-setup",
+      "heading": "Get your phone, connectivity, and basic setup sorted",
+      "body": [
+        "SIM and mobile setup is one of the easier first-week tasks. It is often needed quickly for banking, housing, delivery, appointments, and everyday admin."
+      ],
+      "services": [
+        {
+          "name": "Simyo",
+          "description": "Dutch SIM-only mobile provider.",
+          "url": "https://www.simyo.nl/",
+          "indicativeCost": "Budget monthly plans.",
+          "reason": "Useful once you want a local number quickly.",
+          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
+        }
+      ]
+    },
+    {
+      "id": "address-housing",
+      "heading": "Stabilise your address and living setup",
+      "body": [
+        "Temporary housing is often part of the first days or weeks. Long-term setup may include rent deposit, furniture basics, utilities, and local admin. Housing decisions affect registration timing and practical settlement."
+      ],
+      "links": [
+        { "label": "Relocation Cost Estimator", "href": "/netherlands/moving/tools/relocation-cost-estimator/" },
+        { "label": "Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" }
+      ],
+      "services": [
+        {
+          "name": "HousingAnywhere",
+          "description": "Temporary and medium-term rentals often used by internationals.",
+          "url": "https://housinganywhere.com/",
+          "indicativeCost": "Housing prices vary widely by city.",
+          "reason": "Relevant if longer-term housing is still not finalised.",
+          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
+        }
+      ]
+    },
+    {
+      "id": "route-differences",
+      "heading": "What may differ by route or household",
+      "body": [
+        "Workers, students, partner or family movers, and self-employed people often have different first priorities and extra admin. The table below summarises typical focus areas; your situation may differ."
+      ],
+      "table": {
+        "headers": ["Route or household", "Likely first focus", "Extra admin to watch"],
+        "rows": [
+          ["Workers", "Payroll, employer-linked admin, bank account", "Employer may require BSN and bank details quickly"],
+          ["Students", "Enrolment, housing, health insurance position", "Check if student insurance or basic package applies"],
+          ["Partner / family movers", "Municipality registration for all, school or childcare", "Each family member may need registration and documents"],
+          ["Families with children", "School or childcare sign-up, GP, routines", "Registration and BSN for children; school placement timing"],
+          ["Entrepreneurs / self-employed", "Banking, KVK and admin follow-up, insurance position", "Business registration and tax registration after arrival"]
+        ]
+      },
+      "links": [
+        { "label": "First 90 Days Planner", "href": "/netherlands/moving/tools/first-90-days/" },
+        { "label": "Moving with a partner", "href": "/netherlands/moving-to-netherlands-with-partner/" },
+        { "label": "Moving with kids", "href": "/netherlands/moving-to-netherlands-with-kids/" },
+        { "label": "Moving with family", "href": "/netherlands/moving-to-netherlands-with-family/" }
+      ]
+    },
+    {
+      "id": "costs",
+      "heading": "Common first-week and first-month costs after arrival",
+      "body": [
+        "The figures below are indicative planning ranges. Costs vary by city, provider, housing, and personal situation. Amsterdam, Utrecht, Rotterdam, and The Hague often sit at the higher end for accommodation and some services."
+      ],
+      "table": {
+        "headers": ["Item", "Indicative range", "Notes"],
+        "rows": [
+          ["Municipality-related fees", "Often none or low; route-dependent", "Some documents or services may have a fee"],
+          ["Transport / local travel", "Variable", "OV-chipkaart, bike, or local passes"],
+          ["Temporary housing", "€800–€3,000+ first month", "Depends on city, type, and length"],
+          ["SIM / mobile", "€10–€30/month", "Prepaid or monthly plans"],
+          ["Groceries / household basics", "€200–€600+ first month", "One-off and recurring"],
+          ["Bank / card / transfers", "Often free to ~€9/month", "Varies by bank; international transfer fees may apply"],
+          ["Health insurance first payment", "~€130–€180/month", "Basic package; supplements extra"],
+          ["Furniture / setup basics", "Variable", "Depends on what you need"]
+        ]
+      },
+      "links": [
+        { "label": "Relocation Cost Estimator", "href": "/netherlands/moving/tools/relocation-cost-estimator/" },
+        { "label": "Cost of moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" }
+      ]
+    },
+    {
+      "id": "official-sources",
+      "heading": "Official sources and further information",
+      "body": [
+        "Use these official sources to confirm rules and procedures. Obligations can differ by visa, nationality, and personal situation."
+      ],
+      "links": [
+        { "label": "Government.nl – What to arrange when moving to the Netherlands", "href": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/what-do-i-need-to-arrange-if-i%E2%80%99m-moving-to-the-netherlands" },
+        { "label": "IND – Appointment to collect document", "href": "https://ind.nl/en/appointment-to-collect-document" },
+        { "label": "IND – IND desks and locations", "href": "https://ind.nl/en/service-and-contact/contact-with-ind/ind-desks-and-locations" },
+        { "label": "Netherlands Worldwide – BSN", "href": "https://www.netherlandsworldwide.nl/bsn/what-is-citizen-service-number" },
+        { "label": "Netherlands Worldwide – Relocating checklist (health insurance)", "href": "https://www.netherlandsworldwide.nl/checklist-relocating-netherlands-immigration" },
+        { "label": "Netherlands Worldwide – MijnOverheid", "href": "https://www.netherlandsworldwide.nl/mijnoverheid-abroad/what-is-mijnoverheid" }
+      ]
+    }
+  ],
+
+  "toolCtas": [
+    {
+      "key": "first-90-days",
+      "label": "First 90 Days Planner",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Map out your registration, insurance, banking, and housing setup after arrival.",
+      "ctaLabel": "Plan Your First 90 Days"
+    },
+    {
+      "key": "moving-checklist",
+      "label": "Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Generate a personalised checklist covering documents, housing, arrival admin, and first months.",
+      "ctaLabel": "Generate a Moving Checklist"
+    },
+    {
+      "key": "relocation-cost",
+      "label": "Relocation Cost Estimator",
+      "href": "/netherlands/moving/tools/relocation-cost-estimator/",
+      "description": "Estimate costs for your move and first months.",
+      "ctaLabel": "Estimate your costs"
+    },
+    {
+      "key": "visa-timeline",
+      "label": "Visa Timeline Estimator",
+      "href": "/netherlands/visa-timeline-estimator/",
+      "description": "Estimate how long your visa route may take from application to arrival.",
+      "ctaLabel": "Estimate timeline"
+    },
+    {
+      "key": "visa-cost",
+      "label": "Visa Cost Calculator",
+      "href": "/netherlands/visa-cost-calculator/",
+      "description": "Estimate visa and move costs for your route.",
+      "ctaLabel": "Estimate visa costs"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Document Readiness Checker",
+      "href": "/netherlands/document-readiness-checker/",
+      "description": "Check whether you have the documents often needed before and after arrival.",
+      "ctaLabel": "Check documents"
+    }
+  ],
+
+  "exampleScenarios": [
+    {
+      "title": "Highly skilled migrant arriving for work",
+      "summary": "First priorities: municipality registration, BSN, bank account for salary, health insurance. Likely bottlenecks: appointment lead time, proof of address. Use the First 90 Days Planner and Document Readiness Checker.",
+      "href": "/netherlands/moving/tools/first-90-days/?arrivalStage=just-arrived",
+      "ctaLabel": "Use this scenario"
+    },
+    {
+      "title": "Student arriving before studies begin",
+      "summary": "First priorities: registration, BSN, housing stability, health insurance (student or basic). Likely bottlenecks: housing that allows registration, insurance deadline. Use the Arrival Planner and Moving Checklist.",
+      "href": "/netherlands/moving/tools/arrival-planner/",
+      "ctaLabel": "Use this scenario"
+    },
+    {
+      "title": "Couple or family arriving together",
+      "summary": "First priorities: municipality registration for all, BSNs, bank account, health insurance, school or childcare if applicable. Likely bottlenecks: documents for each person, appointment availability. Use the First 90 Days Planner with household options.",
+      "href": "/netherlands/moving/tools/first-90-days/?household=kids",
+      "ctaLabel": "Use this scenario"
+    },
+    {
+      "title": "Self-employed mover settling in",
+      "summary": "First priorities: registration, BSN, bank account, KVK and tax follow-up, health insurance. Likely bottlenecks: business registration timing, proof of address. Use the Relocation Cost Estimator and First 90 Days Planner.",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "ctaLabel": "Use this scenario"
+    }
+  ],
+
+  "scenariosSectionTitle": "Example first-week arrival scenarios",
+  "scenariosSectionIntro": "Different situations lead to different first priorities and bottlenecks. Use the tools below to prefill a plan that fits your scenario.",
+
+  "servicesSectionTitle": "Useful services for settling in the Netherlands",
+  "servicesIntro": "These services are commonly used by expats for banking, insurance, housing, and mobile setup. Compare options and confirm terms on providers’ sites.",
+
+  "internalLinks": {
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    "related": [
+      { "label": "All services hub", "href": "/netherlands/services/" },
+      { "label": "Compare banks", "href": "/netherlands/services/banks/" },
+      { "label": "Compare health insurance", "href": "/netherlands/services/health-insurance/" },
+      { "label": "Relocation services", "href": "/netherlands/services/relocation-services/" },
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Open a Bank Account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+      { "label": "Cost of Moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" },
+      { "label": "Documents Needed to Move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Document Translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" },
+      { "label": "Moving to the Netherlands Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Municipality registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
+      { "label": "DigiD for expats", "href": "/netherlands/digid-awareness/" }
+    ]
+  },
+
+  "howToSteps": [
+    { "name": "Register at the municipality", "text": "Register with your municipality within 5 days of arrival if staying more than 4 months." },
+    { "name": "Get or confirm your BSN", "text": "Your BSN is typically issued or confirmed at municipal registration." },
+    { "name": "Collect your residence permit if applicable", "text": "Book and attend your IND collection appointment when notified." },
+    { "name": "Set up DigiD and MijnOverheid", "text": "Apply for DigiD once you have your BSN for online government access." },
+    { "name": "Open a Dutch bank account", "text": "Arrange a bank account for salary, rent, and daily spending." },
+    { "name": "Arrange health insurance if required", "text": "If Dutch basic insurance is required, arrange it within 4 months of arrival." },
+    { "name": "Set up phone and internet basics", "text": "Get a local SIM and connectivity for banking, housing, and admin." },
+    { "name": "Tackle first-week and first-month admin", "text": "GP registration, transport, housing follow-up, and any remaining admin." }
+  ],
+
+  "sidebarStartLinks": [
+    { "label": "Plan Your First 90 Days", "href": "/netherlands/moving/tools/first-90-days/" },
+    { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+    { "label": "Estimate Your Costs", "href": "/netherlands/moving/tools/relocation-cost-estimator/" },
+    { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" }
+  ],
+
+  "faq": [
+    {
+      "q": "What should I do first after arriving in the Netherlands?",
+      "a": "Most expats prioritise municipality registration (within 5 days if staying more than 4 months), then BSN, then residence permit collection if the IND has notified you. After that, DigiD, bank account, health insurance, and mobile setup are typical next steps. Your route may differ—use the First 90 Days Planner to order your tasks."
+    },
+    {
+      "q": "How soon do I need to register with the municipality?",
+      "a": "Government.nl states that if you are staying more than 4 months, you should register with the municipality where you live within 5 days of arrival. In practice you usually need an appointment, so book as soon as you know your address."
+    },
+    {
+      "q": "When do I get a BSN?",
+      "a": "You typically receive or confirm your BSN when you register with the municipality. In many cases it is issued at the registration appointment or sent shortly after. Your municipality can confirm the exact process."
+    },
+    {
+      "q": "Do I need DigiD straight away?",
+      "a": "You need a BSN before you can apply for DigiD, and often a Dutch bank account or other verification. So DigiD usually comes after registration and banking. It is useful early for government letters and admin—start the process as soon as you have your BSN."
+    },
+    {
+      "q": "When do I need Dutch health insurance?",
+      "a": "If you are required to have Dutch basic health insurance (e.g. because you work or live here), Netherlands Worldwide states it usually must be arranged within 4 months of arrival. There are exceptions; confirm your position with an insurer or official source."
+    },
+    {
+      "q": "How do I collect my residence permit?",
+      "a": "When the IND notifies you that your document is ready, you must book a collection appointment and collect it at the location they specify. Bring your passport and any documents they ask for. See IND’s page on appointment to collect document and IND desks and locations."
+    },
+    {
+      "q": "Can I open a bank account right away?",
+      "a": "Many banks require a BSN and proof of address, so in practice people often open an account in the first or second week after registration. Some providers offer expat-friendly onboarding; requirements differ. See our guide to opening a bank account in the Netherlands."
+    },
+    {
+      "q": "What should students do after arriving?",
+      "a": "Students typically need to register with the municipality, get a BSN, arrange health insurance (student or basic package depending on situation), and secure housing that allows registration. Enrolment and any visa or permit conditions also apply. Use the Arrival Planner and First 90 Days Planner to order your steps."
+    },
+    {
+      "q": "What should families do after arriving?",
+      "a": "Each family member usually needs to be registered and may receive a BSN. Families often prioritise a bank account, health insurance, and school or childcare registration. Document requirements and appointment lead times can be heavier—use the First 90 Days Planner with household options."
+    },
+    {
+      "q": "Which tools should I use next?",
+      "a": "Start with the First 90 Days Planner to map registration, BSN, banking, insurance, and housing. Use the Moving Checklist for a full pre- and post-arrival list, the Document Readiness Checker to confirm your documents, and the Relocation Cost Estimator to plan costs."
+    }
+  ],
+
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "tool_first_90_days_after_results",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "tool",
+    "route": "/netherlands/moving/tools/first-90-days",
+    "slot": "after-results"
+  },
+  "variant": "cards",
+  "title": "Services many expats arrange during the first months",
+  "intro": "These are often the practical services people organize as they settle into daily life.",
+  "categoryOrder": ["banking", "insurance", "mobile", "housing"],
+  "items": [
+    { "providerId": "bunq", "reason": "Useful for salary and recurring payment setup in early months." },
+    { "providerId": "wise", "reason": "Helpful for transfers while your financial setup stabilizes." },
+    { "providerId": "independer", "reason": "Compare insurance options as your month-one choices become clearer." },
+    { "providerId": "simyo", "reason": "Reliable mobile setup supports account and admin verification." },
+    { "providerId": "housinganywhere", "reason": "Useful if your first housing setup is temporary or evolving." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

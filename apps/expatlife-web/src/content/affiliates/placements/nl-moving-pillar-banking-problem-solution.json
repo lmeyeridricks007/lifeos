@@ -1,0 +1,37 @@
+{
+  "id": "nl-moving-pillar-banking-problem-solution",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "pillar",
+    "route": "/netherlands/moving-to-the-netherlands/",
+    "slot": "after-banking-problem"
+  },
+  "variant": "comparison",
+  "title": "Banking options often used by expats",
+  "intro": "Comparison of a few popular choices for opening a Dutch account.",
+  "categoryOrder": ["banking"],
+  "comparisonFields": [
+    { "key": "onboarding", "label": "Onboarding" },
+    { "key": "englishSupport", "label": "English support" },
+    { "key": "internationalTransfers", "label": "International transfers" }
+  ],
+  "items": [
+    {
+      "providerId": "bunq",
+      "reason": "Digital bank with fast online setup.",
+      "meta": { "onboarding": "Fast", "englishSupport": "Yes", "internationalTransfers": "Good with Wise" }
+    },
+    {
+      "providerId": "wise",
+      "reason": "Multi-currency and low-cost transfers.",
+      "meta": { "onboarding": "Fast", "englishSupport": "Yes", "internationalTransfers": "Strong" }
+    },
+    {
+      "providerId": "abn-amro",
+      "reason": "Full-service Dutch bank with expat support.",
+      "meta": { "onboarding": "In-branch or online", "englishSupport": "Yes", "internationalTransfers": "Standard" }
+    }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

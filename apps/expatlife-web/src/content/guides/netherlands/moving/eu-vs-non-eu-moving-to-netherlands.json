@@ -1,0 +1,419 @@
+{
+  "slug": "eu-vs-non-eu-moving-to-netherlands",
+  "path": "/netherlands/eu-vs-non-eu-moving-to-netherlands/",
+  "title": "EU vs Non-EU Moving to the Netherlands",
+  "metaTitle": "EU vs Non-EU Moving to the Netherlands: Visas, Documents & Timelines",
+  "subtitle": "The main practical differences for EU/EEA and non-EU nationals.",
+  "description": "Compare the main differences between EU/EEA and non-EU relocation to the Netherlands, including permits, documents, timelines, costs, and first-step planning.",
+  "breadcrumbLabel": "EU vs non-EU",
+
+  "hero": {
+    "eyebrow": "Comparison guide",
+    "badges": ["Planning"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/eu-vs-non-eu-hero.png",
+      "alt": "Two people on diverging paths by a canal in the Netherlands, symbolizing different relocation routes for EU and non-EU nationals"
+    }
+  },
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "biggest-differences", "label": "Biggest practical differences" },
+    { "id": "before-you-move", "label": "Before you move" },
+    { "id": "visa-routes", "label": "Common visa routes for non-EU nationals" },
+    { "id": "arrival-and-admin", "label": "Arrival and admin differences" },
+    { "id": "flexibility-without-job", "label": "Flexibility without a job" },
+    { "id": "timeline-comparison", "label": "Timeline comparison" },
+    { "id": "cost-comparison", "label": "Cost comparison" },
+    { "id": "practical-next-steps", "label": "Practical next steps" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+
+  "heroCta": {
+    "title": "Plan your route before you move",
+    "supportingText": "Use the Moving Checklist and Document Readiness Checker to understand what usually changes between EU and non-EU routes, and what to prepare before arrival.",
+    "primaryCtaLabel": "Generate a Moving Checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtas": [
+      { "label": "Run the Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" }
+    ],
+    "supportingLinks": [
+      { "label": "Compare Netherlands visas", "href": "/netherlands/visa/compare-visas/" },
+      { "label": "Visa checker", "href": "/netherlands/visa-checker/" },
+      { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Move without a job", "href": "/netherlands/move-to-netherlands-without-job/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+    ]
+  },
+
+  "quickAnswers": [
+    {
+      "label": "EU/EEA NATIONALS",
+      "value": "Generally easier: can usually move and work with fewer formalities."
+    },
+    {
+      "label": "NON-EU NATIONALS",
+      "value": "Usually need a valid residence purpose and often a sponsor; more documents and timing dependencies."
+    },
+    {
+      "label": "BEST NEXT STEP",
+      "value": "Confirm your route with official guidance, then use the checklist and document tools to plan your move."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "Moving to the Netherlands can look very different depending on whether you are an EU/EEA national or a non-EU national. EU citizens usually face fewer entry and work restrictions, while non-EU nationals often need a permit route tied to work, study, family, or another recognised basis.",
+        "Even when both groups complete similar practical steps after arrival — such as registration, BSN, banking, housing, and insurance — the timing, documents, and level of dependency are often different. This page compares the main practical differences so you can plan your route more realistically."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "Move to the Netherlands without a job", "href": "/netherlands/move-to-netherlands-without-job/" }
+      ]
+    },
+    {
+      "id": "biggest-differences",
+      "heading": "Biggest practical differences",
+      "body": [
+        "The main distinctions affect how you enter, work, and complete admin after arrival."
+      ],
+      "bullets": [
+        "EU/EEA nationals usually do not need a work permit to take up employment.",
+        "Non-EU nationals usually need a residence permit tied to a specific purpose.",
+        "EU routes are often lighter on permit complexity, but still require practical setup after arrival.",
+        "Non-EU routes often involve more documentation, lead time, dependency on a sponsor, institution, or family status."
+      ],
+      "table": {
+        "headers": ["Area", "EU/EEA nationals", "Non-EU nationals"],
+        "rows": [
+          ["Work and entry", "Generally freer movement", "Route-dependent entry and work rights"],
+          ["Documents and timing", "Usually fewer pre-move immigration documents", "Often more evidence, translations, apostilles, and advance processing"]
+        ]
+      }
+    },
+    {
+      "id": "before-you-move",
+      "heading": "Before you move",
+      "body": [
+        "What you need to arrange before travel often differs sharply by nationality."
+      ],
+      "bullets": [
+        "For EU/EEA nationals: usually need valid passport or ID; can often plan travel and housing without prior immigration approval; still need to think about registration and proof of address after arrival.",
+        "For non-EU nationals: often need visa or residence approval before travel; may need sponsor, admission, family route, or proof of funds; apostilles, translations, and lead times are more common."
+      ],
+      "links": [
+        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ]
+    },
+    {
+      "id": "visa-routes",
+      "heading": "Common visa routes for non-EU nationals",
+      "body": [
+        "Non-EU nationals usually move to the Netherlands through a specific residence route. The exact requirements, documents, and timing depend on the purpose of stay. Confirm current rules with the IND or a qualified adviser."
+      ],
+      "table": {
+        "headers": ["Route", "Typical requirement", "Practical note"],
+        "rows": [
+          ["Highly skilled migrant", "Job offer from recognised sponsor", "Often one of the most common work routes"],
+          ["Orientation year", "Eligible graduate route", "Can offer more flexibility than direct employer sponsorship"],
+          ["Student route", "Admission to recognised institution", "Usually tied to study conditions"],
+          ["Partner / family route", "Family relationship + eligibility", "Timing depends on sponsor / partner route"],
+          ["Startup / self-employment", "Business-specific requirements", "Usually more complex to assess"]
+        ]
+      },
+      "links": [
+        { "label": "Highly Skilled Migrant visa guide", "href": "/netherlands/visa/highly-skilled-migrant/" },
+        { "label": "EU Blue Card", "href": "/netherlands/visa/eu-blue-card/" },
+        { "label": "Dutch-American Friendship Treaty (DAFT)", "href": "/netherlands/visa/dutch-american-friendship-treaty/" },
+        { "label": "Student visa", "href": "/netherlands/visa/student-visa/" },
+        { "label": "Partner & family visa", "href": "/netherlands/visa/partner-family-visa/" },
+        { "label": "Self-employed visa", "href": "/netherlands/visa/self-employed-visa/" }
+      ],
+      "services": [
+        {
+          "name": "IND",
+          "description": "Official Dutch immigration authority for visas, residence permits, and route requirements.",
+          "url": "https://ind.nl",
+          "indicativeCost": "Government processing fees vary by permit route.",
+          "reason": "Official source for permit rules and applications.",
+          "logo": { "src": "/images/affiliates/logos/ind.svg", "alt": "IND logo" }
+        },
+        {
+          "name": "Expat Center Amsterdam",
+          "description": "Helps eligible internationals and recognised sponsors with registration and immigration-related appointments in Amsterdam.",
+          "url": "https://www.iamsterdam.com/en/live-work-study/expat-center",
+          "indicativeCost": "Route-dependent / often employer-supported",
+          "reason": "Fast-track support for eligible internationals in Amsterdam.",
+          "logo": { "src": "/images/affiliates/logos/expat-center-amsterdam.svg", "alt": "Expat Center Amsterdam logo" }
+        }
+      ]
+    },
+    {
+      "id": "arrival-and-admin",
+      "heading": "Arrival and admin differences",
+      "body": [
+        "After arrival, both EU and non-EU nationals usually need to move through practical setup steps such as registration, BSN, banking, housing, and insurance. The key difference is often timing: EU nationals usually register directly with the municipality, while non-EU nationals may first depend on permit issuance, sponsor sequencing, or route-specific steps."
+      ],
+      "bullets": [
+        "EU nationals often move faster into municipality registration.",
+        "Non-EU nationals may already have permit steps underway before registration.",
+        "BSN and local service setup often depend on when registration happens.",
+        "Work, banking, and insurance become easier once local identity and address steps are completed."
+      ],
+      "links": [
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "First 30 Days", "href": "/netherlands/first-30-days-netherlands/" },
+        { "label": "First 90 Days", "href": "/netherlands/first-90-days-netherlands/" }
+      ]
+    },
+    {
+      "id": "flexibility-without-job",
+      "heading": "Flexibility without a job",
+      "body": [
+        "One of the biggest practical differences between EU and non-EU relocation is what happens if you do not yet have a job offer. EU nationals often have more flexibility to relocate first and search later, while non-EU nationals usually need a residence basis tied to work, study, family, or another recognised route."
+      ],
+      "bullets": [
+        "EU/EEA nationals can often move first and organise work later.",
+        "Non-EU nationals usually cannot enter as open-ended job-seekers unless a specific route allows it.",
+        "Employer sponsorship is often a major dependency for work-based non-EU routes.",
+        "Family, study, or post-study routes may create alternative paths."
+      ],
+      "links": [
+        { "label": "Move to the Netherlands without a job", "href": "/netherlands/move-to-netherlands-without-job/" }
+      ]
+    },
+    {
+      "id": "timeline-comparison",
+      "heading": "Typical relocation timeline: EU vs non-EU",
+      "body": [
+        "Both EU and non-EU nationals often complete similar practical setup tasks, but the order and speed may differ."
+      ],
+      "table": {
+        "headers": ["Step", "EU/EEA nationals", "Non-EU nationals"],
+        "rows": [
+          ["Entry to the Netherlands", "Usually easier", "Often permit-dependent"],
+          ["Municipality registration", "Often early", "Often after or alongside permit route timing"],
+          ["BSN", "Usually linked to registration", "Usually linked to registration once eligible"],
+          ["Starting work", "Often easier", "Depends on permit / route"],
+          ["Banking / insurance setup", "After registration / BSN", "Often after route and registration steps"]
+        ]
+      }
+    },
+    {
+      "id": "cost-comparison",
+      "heading": "Typical cost differences",
+      "body": [
+        "EU and non-EU moves can have very different cost structures. Housing, travel, and setup matter for both, but non-EU nationals often face additional permit, document, and processing-related expenses."
+      ],
+      "table": {
+        "headers": ["Cost area", "EU/EEA nationals", "Non-EU nationals"],
+        "rows": [
+          ["Visa / permit fees", "Usually none or lower immigration burden", "Often permit / application fees apply"],
+          ["Document prep", "Usually lighter", "Often translations / apostilles / extra evidence"],
+          ["Travel planning", "Standard relocation cost", "Standard relocation cost"],
+          ["Housing deposit", "Similar market pressure", "Similar market pressure"],
+          ["Time sensitivity cost", "Often lower", "Often higher due to approval timing"]
+        ]
+      },
+      "callout": {
+        "type": "info",
+        "title": "Planning guidance only",
+        "text": "These are planning comparisons, not official price guarantees. Actual costs vary by route, city, household size, and provider."
+      }
+    },
+    {
+      "id": "practical-next-steps",
+      "heading": "Practical next steps",
+      "body": [
+        "Once you understand whether your route is closer to the EU/EEA or non-EU path, the next step is usually to turn that knowledge into an ordered plan. Most people then focus on documents, registration timing, housing, and the first 30 to 90 days after arrival."
+      ],
+      "bullets": [
+        "Confirm which route applies to you.",
+        "Organise the required documents early.",
+        "Understand the order of permit, registration, and BSN steps.",
+        "Plan housing and address registration.",
+        "Map the first 90 days after arrival."
+      ],
+      "links": [
+        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "First 90 Days", "href": "/netherlands/first-90-days-netherlands/" }
+      ],
+      "ctaBlock": {
+        "title": "Turn comparison into a practical move plan",
+        "supportingText": "Use the Moving Checklist and Document Readiness Checker to organise your route based on what applies to your nationality and move type.",
+        "primaryLabel": "Generate a Moving Checklist",
+        "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+        "secondaryLabel": "Run the Document Readiness Checker",
+        "secondaryHref": "/netherlands/document-readiness-checker/"
+      },
+      "services": [
+        {
+          "name": "Wise",
+          "description": "Useful for handling international transfers and early spending before your full Dutch setup is complete.",
+          "url": "https://wise.com",
+          "indicativeCost": "Fees vary by route and usage.",
+          "reason": "Multi-currency and transfers during early setup.",
+          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
+        },
+        {
+          "name": "bunq",
+          "description": "App-first Dutch bank often considered by internationals during early local setup.",
+          "url": "https://www.bunq.com",
+          "indicativeCost": "Plan pricing varies by package.",
+          "reason": "Dutch bank, expat-friendly, app-first.",
+          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
+        },
+        {
+          "name": "HousingAnywhere",
+          "description": "Temporary housing platform used by internationals before securing long-term accommodation.",
+          "url": "https://housinganywhere.com",
+          "indicativeCost": "Listing prices vary by city and property.",
+          "reason": "Temporary housing and registration planning.",
+          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
+        },
+        {
+          "name": "Independer",
+          "description": "Compare Dutch health insurance policies once your route and registration timing are clear.",
+          "url": "https://www.independer.nl",
+          "indicativeCost": "Comparison platform; policy pricing varies.",
+          "reason": "Insurance comparison, health insurance, setup.",
+          "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
+        },
+        {
+          "name": "Simyo",
+          "description": "SIM-only option for mobile connectivity during the first weeks after arrival.",
+          "url": "https://www.simyo.nl",
+          "indicativeCost": "Plan pricing varies.",
+          "reason": "Mobile plan, connectivity.",
+          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
+        },
+        {
+          "name": "ABN AMRO",
+          "description": "Traditional Dutch bank with English-language support for many internationals.",
+          "url": "https://www.abnamro.nl",
+          "indicativeCost": "Account pricing varies by package.",
+          "reason": "Traditional bank, local banking.",
+          "logo": { "src": "/images/affiliates/logos/abn-amro.svg", "alt": "ABN AMRO logo" }
+        }
+      ]
+    }
+  ],
+
+  "midPageCta": {
+    "badge": "Recommended tool",
+    "title": "Not sure which documents your route needs?",
+    "description": "The Document Readiness Checker helps you identify which document categories often matter before relocation.",
+    "ctaLabel": "Run the Document Readiness Checker",
+    "ctaHref": "/netherlands/document-readiness-checker/"
+  },
+  "midPageCtaAfterSectionId": "visa-routes",
+
+  "toolsCtaBand": {
+    "title": "Plan your move to the Netherlands",
+    "body": "Generate a personalized checklist to see what usually happens before and after arrival.",
+    "primaryLabel": "Generate a Moving Checklist",
+    "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryLabel": "Run the Document Readiness Checker",
+    "secondaryHref": "/netherlands/document-readiness-checker/"
+  },
+
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Build a practical relocation checklist based on your move route, documents, and first setup steps.",
+      "ctaLabel": "Open tool"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Run the Document Readiness Checker",
+      "href": "/netherlands/document-readiness-checker/",
+      "description": "See which document categories often apply before relocation, especially for permit-based routes.",
+      "ctaLabel": "Open tool"
+    },
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Map what usually happens after arrival, including registration, BSN, banking, and daily setup.",
+      "ctaLabel": "Open tool"
+    }
+  ],
+
+  "sidebarStartLinks": [
+    { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+    { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Move without a job", "href": "/netherlands/move-to-netherlands-without-job/" },
+    { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+    { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+  ],
+
+  "internalLinks": {
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    "related": [
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Move to the Netherlands Without a Job", "href": "/netherlands/move-to-netherlands-without-job/" },
+      { "label": "Registering Your Address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "BSN Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/#bsn" },
+      { "label": "Moving to the Netherlands With Family", "href": "/netherlands/moving-to-netherlands-with-family/" }
+    ]
+  },
+
+  "endCta": {
+    "title": "Plan your move to the Netherlands",
+    "supportingText": "Generate a personalized checklist to see what usually happens before and after arrival.",
+    "ctaLabel": "Generate a Moving Checklist",
+    "ctaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtaLabel": "Run the Document Readiness Checker",
+    "secondaryCtaHref": "/netherlands/document-readiness-checker/"
+  },
+
+  "faq": [
+    {
+      "q": "Do EU citizens need a visa to move to the Netherlands?",
+      "a": "EU and EEA nationals generally do not need a visa to enter and live in the Netherlands. They have the right to move and work under EU rules, but must register with the municipality. Confirm current rules with the IND or your gemeente."
+    },
+    {
+      "q": "What are the main differences for non-EU nationals?",
+      "a": "Non-EU nationals typically need a residence permit (or entry visa) based on a specific purpose—work (often with employer sponsorship), study, family reunion, or another recognised route. Document requirements and processing times are usually higher than for EU nationals. Confirm your route with the IND."
+    },
+    {
+      "q": "Can I switch from a study or work permit later?",
+      "a": "Permit changes and extensions have their own rules and conditions. Whether you can switch depends on your current status and the new route. Check the IND website or a qualified adviser for your situation."
+    },
+    {
+      "q": "Can non-EU citizens move without a job?",
+      "a": "It depends on the route. Non-EU nationals usually need a residence basis such as work (with sponsor), study, family, or another recognised purpose. Open-ended job-seeking entry is rarely available. See our guide on moving without a job for EU vs non-EU options."
+    },
+    {
+      "q": "Do EU citizens receive a BSN automatically?",
+      "a": "No. EU citizens receive a BSN when they register with the municipality (gemeente). Registration is required; the BSN is issued as part of that process. Timing depends on when you complete registration."
+    },
+    {
+      "q": "Are documents usually more complex for non-EU moves?",
+      "a": "Often yes. Non-EU routes frequently require more evidence, certified translations, apostilles, and advance processing. Document complexity is route-dependent; confirm with the IND and your sponsor or institution."
+    }
+  ],
+
+  "resourcesAffiliatePlacementId": "resources_end",
+  "servicesSectionTitle": "Useful services",
+  "servicesIntro": "Services often used for immigration planning, early setup, banking, and first-weeks admin.",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

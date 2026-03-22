@@ -1,0 +1,21 @@
+{
+  "id": "nl-moving-bank-before-bsn-sidebar",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/open-bank-account-netherlands/",
+    "slot": "sidebar"
+  },
+  "variant": "cards",
+  "title": "Banking & transfer options",
+  "intro": "Services often used for early banking or transfers before or after BSN.",
+  "categoryOrder": ["banking", "insurance"],
+  "items": [
+    { "providerId": "wise", "reason": "Multi-currency and international transfers; often used before full local banking." },
+    { "providerId": "bunq", "reason": "App-first Dutch bank with faster onboarding for internationals." },
+    { "providerId": "abn-amro", "reason": "Full local banking once your BSN and registration are in place." },
+    { "providerId": "independer", "reason": "Compare Dutch insurance once you move beyond banking setup." }
+  ],
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

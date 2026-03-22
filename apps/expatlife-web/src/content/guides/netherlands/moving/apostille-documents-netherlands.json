@@ -1,0 +1,337 @@
+{
+  "slug": "apostille-documents-netherlands",
+  "path": "/netherlands/apostille-documents-netherlands/",
+  "title": "Apostille Documents in the Netherlands",
+  "metaTitle": "Apostille Documents Netherlands | How to Get an Apostille",
+  "breadcrumbLabel": "Apostille Documents",
+  "subtitle": "Learn when an apostille is required for official documents used in the Netherlands and how to obtain one for visas, municipality registration, and other legal processes.",
+  "description": "Learn how apostille documents work in the Netherlands, when you need an apostille, how to obtain one, typical costs, timelines, and how apostilles are used for visas, municipality registration, and official administration.",
+  "hero": {
+    "eyebrow": "DOCUMENTS",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/heroes/apostille-documents-netherlands.png",
+      "alt": "An expat meticulously reviews official documents at a desk overlooking a picturesque Dutch canal, with traditional brick buildings and bicycles. A laptop screen displays 'Apostille Document' as a completed step, alongside physical books labeled 'Apostille,' 'Legalisation,' and 'Translation,' a passport, and a 'Document Translation Checklist' notebook, symbolizing the process of authenticating documents for life in the Netherlands."
+    }
+  },
+  "heroCta": {
+    "title": "Get your documents in order",
+    "supportingText": "Use the Document Readiness Checker and Document Legalization guide to see what you need and when.",
+    "primaryCtaLabel": "Check Your Documents",
+    "primaryCtaHref": "/netherlands/document-readiness-checker/",
+    "secondaryCtaLabel": "Document Legalization Guide",
+    "secondaryCtaHref": "/netherlands/document-legalization-netherlands/",
+    "supportingLinks": [
+      { "label": "Document Translation Guide", "href": "/netherlands/document-translation-netherlands/" },
+      { "label": "Municipality Registration", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "After Arriving in Netherlands", "href": "/netherlands/after-arriving-netherlands/" }
+    ]
+  },
+  "tocItems": [
+    { "id": "intro", "label": "Introduction" },
+    { "id": "what-is-apostille", "label": "What an apostille is" },
+    { "id": "apostille-vs-legalisation", "label": "Apostille vs legalisation" },
+    { "id": "when-expats-need", "label": "When expats need an apostille" },
+    { "id": "documents-require-apostille", "label": "Which documents require apostille" },
+    { "id": "how-to-obtain", "label": "How to obtain an apostille" },
+    { "id": "costs-timelines", "label": "Costs and timelines" },
+    { "id": "country-examples", "label": "Country-specific examples" },
+    { "id": "common-mistakes", "label": "Common mistakes" },
+    { "id": "example-scenarios", "label": "Example scenarios" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "useful-services", "label": "Useful services" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" },
+    { "id": "official-sources", "label": "Official sources" }
+  ],
+  "howToSteps": [
+    { "name": "Obtain the original official document", "text": "Get the certified or original document from the issuing authority in the country where it was issued." },
+    { "name": "Have the document verified", "text": "Have the document verified by the relevant authority (e.g. notary or issuing body) if required for your country." },
+    { "name": "Apply for apostille", "text": "Apply for apostille at the designated authority—in the Netherlands, a district court; abroad, the competent authority for that country (e.g. Secretary of State, MEA)." }
+  ],
+  "quickAnswers": [
+    {
+      "label": "APOSTILLE",
+      "value": "International certificate verifying authenticity of a document"
+    },
+    {
+      "label": "HAGUE CONVENTION",
+      "value": "Used between countries that signed the Apostille Convention"
+    },
+    {
+      "label": "ISSUED BY COURTS",
+      "value": "In the Netherlands, apostilles are issued by district courts"
+    },
+    {
+      "label": "USUALLY REQUIRED FOR",
+      "value": "Birth certificates, marriage certificates, diplomas"
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "heading": "Introduction",
+      "body": [
+        "Many official documents used for immigration or administration in the Netherlands must be authenticated.",
+        "This authentication is often done using an apostille certificate, which confirms the authenticity of a document so it can be recognised internationally.",
+        "An apostille simplifies the process of recognising foreign documents between countries that signed the Hague Apostille Convention."
+      ],
+      "links": [
+        { "label": "Netherlands Worldwide – Apostille explained", "href": "https://www.netherlandsworldwide.nl/legalisation/what-is-legalisation-apostille" },
+        { "label": "IND – Translation and legalisation of documents", "href": "https://ind.nl/en/translation-and-legalisation-of-documents" }
+      ]
+    },
+    {
+      "id": "what-is-apostille",
+      "heading": "What an apostille is",
+      "body": [
+        "An apostille is an official certificate attached to a document confirming the authenticity of the signature and issuing authority.",
+        "This certificate allows the document to be accepted in another country that participates in the Apostille Convention.",
+        "In the Netherlands, apostilles are typically issued by district courts."
+      ],
+      "links": [
+        { "label": "Netherlands Worldwide – what is legalisation and apostille", "href": "https://www.netherlandsworldwide.nl/legalisation/what-is-legalisation-apostille" }
+      ]
+    },
+    {
+      "id": "apostille-vs-legalisation",
+      "heading": "Apostille vs legalisation",
+      "body": [
+        "Two main ways documents are authenticated: Apostille (used between Hague Convention countries; faster and simpler) and full legalisation (used when countries are not part of the convention; may require multiple authorities).",
+        "Documents are usually validated with a stamp or sticker during this process."
+      ],
+      "table": {
+        "headers": ["Aspect", "Apostille", "Full legalisation"],
+        "rows": [
+          ["Process", "Single step: one stamp or sticker from designated authority", "Multiple steps: often ministry then embassy or consulate"],
+          ["When it applies", "Between Hague Convention countries", "When the issuing country is not in the Hague Convention"],
+          ["Typical speed", "Often a few days to a few weeks", "Several weeks, depending on country"]
+        ]
+      },
+      "links": [
+        { "label": "IND – translation and legalisation of documents", "href": "https://ind.nl/en/translation-and-legalisation-of-documents" },
+        { "label": "Document Legalization in the Netherlands", "href": "/netherlands/document-legalization-netherlands/" }
+      ]
+    },
+    {
+      "id": "when-expats-need",
+      "heading": "When expats need an apostille",
+      "body": [
+        "Many expats must provide apostilled civil documents such as birth or marriage certificates when registering or applying for permits."
+      ],
+      "bullets": [
+        "Visa applications",
+        "Residence permits",
+        "Marriage registration",
+        "Municipality registration",
+        "Education recognition"
+      ],
+      "links": [
+        { "label": "Netherlands Worldwide – legalising foreign documents", "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents" }
+      ]
+    },
+    {
+      "id": "documents-require-apostille",
+      "heading": "Common documents requiring apostille",
+      "body": [
+        "These document types are often required with apostille for use in the Netherlands. Whether apostille or full legalisation applies depends on the country that issued the document."
+      ],
+      "bullets": [
+        "Birth certificates",
+        "Marriage certificates",
+        "Divorce certificates",
+        "Diplomas",
+        "Police certificates",
+        "Notarial documents"
+      ]
+    },
+    {
+      "id": "how-to-obtain",
+      "heading": "How to obtain an apostille",
+      "body": [
+        "In the Netherlands, you can request an apostille from a district court. You may apply yourself or have someone do it on your behalf.",
+        "Legalisation or apostille is usually completed in the country where the document was issued."
+      ],
+      "steps": [
+        "Obtain the original official document",
+        "Have the document verified by the relevant authority",
+        "Apply for apostille at the designated authority (e.g. district court in the Netherlands, or the competent authority in the country of issue)"
+      ],
+      "links": [
+        { "label": "Netherlands Worldwide – what is legalisation (apostille)", "href": "https://www.netherlandsworldwide.nl/legalisation/what-is-legalisation-apostille" },
+        { "label": "Netherlands Worldwide – legalising foreign documents", "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents" }
+      ]
+    },
+    {
+      "id": "costs-timelines",
+      "heading": "Costs and timelines",
+      "body": [
+        "Government apostille fees and processing times vary by country and authority. The figures below are indicative; always confirm with the authority that will legalise your document."
+      ],
+      "table": {
+        "headers": ["Category", "Typical range (indicative)"],
+        "rows": [
+          ["Government apostille fee (Netherlands)", "About €20–€25 per document"],
+          ["Additional service costs", "May apply if using intermediaries or couriers"],
+          ["Processing time", "Same day to several days depending on authority"]
+        ]
+      },
+      "callout": {
+        "type": "tip",
+        "title": "Start early",
+        "text": "Apostille and legalisation can take from a few days to several weeks depending on the country. Start as soon as you know which documents you need."
+      }
+    },
+    {
+      "id": "country-examples",
+      "heading": "Country-specific examples",
+      "body": [
+        "Procedures differ per country. Foreign documents used in the Netherlands usually need apostille or legalisation in the country where they were issued. Below are examples; always check the official Netherlands Worldwide page for the country that issued your document."
+      ]
+    },
+    {
+      "id": "common-mistakes",
+      "heading": "Common mistakes",
+      "body": [
+        "Avoid these pitfalls to save time and avoid rework."
+      ],
+      "bullets": [
+        "Starting translation before apostille when the correct order is apostille first",
+        "Using copies instead of originals where originals are required",
+        "Assuming apostille and translation are the same (they are different steps)",
+        "Waiting too late to start the process"
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Order matters",
+        "text": "Translating first when apostille should happen first is a common mistake. Check the official steps for the country that issued your document."
+      }
+    },
+    {
+      "id": "official-sources",
+      "heading": "Official sources",
+      "body": [
+        "Always confirm requirements with the authority that will receive your document (IND, municipality, university). Use these official sources for apostille and legalisation."
+      ],
+      "links": [
+        { "label": "Netherlands Worldwide – what is legalisation and apostille", "href": "https://www.netherlandsworldwide.nl/legalisation/what-is-legalisation-apostille" },
+        { "label": "Netherlands Worldwide – legalising foreign documents", "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents" },
+        { "label": "IND – translation and legalisation of documents", "href": "https://ind.nl/en/translation-and-legalisation-of-documents" }
+      ]
+    }
+  ],
+  "documentLegalizationCountryExamples": [
+    {
+      "country": "United States",
+      "countryCode": "us",
+      "summary": "Birth certificate (and other civil records) require apostille from the Secretary of State in the state that issued the document.",
+      "workflow": [
+        "Obtain certified copy of the document from the issuing authority",
+        "Request apostille from the competent state Secretary of State (or federal office for federal documents)",
+        "Submit apostilled document (and sworn translation if required) to Dutch authorities"
+      ],
+      "officialUrl": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/united-states"
+    },
+    {
+      "country": "India",
+      "countryCode": "in",
+      "summary": "Documents require apostille from the Ministry of External Affairs (MEA) or the designated state authority.",
+      "workflow": [
+        "Get document attested by the relevant state or notary if required",
+        "Submit for apostille at Ministry of External Affairs (or state-level designated authority)",
+        "Use apostilled document for Dutch procedures; add sworn translation in the Netherlands if needed"
+      ],
+      "officialUrl": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/india"
+    },
+    {
+      "country": "Japan",
+      "countryCode": "jp",
+      "summary": "Documents require apostille in Japan before translation (e.g. by a sworn translator in the Netherlands).",
+      "workflow": [
+        "Obtain apostille on the document from the designated Japanese authority",
+        "Have the document translated by a translator sworn in by a Dutch court if required",
+        "Submit apostilled document and translation to the requesting authority"
+      ],
+      "officialUrl": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/japan",
+      "note": "Japan has no sworn translators for Dutch procedures; translation is typically done in the Netherlands."
+    }
+  ],
+  "toolCtas": [
+    { "key": "document-readiness", "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/", "description": "Check which documents you may need and whether apostille or translation applies." },
+    { "key": "visa-checker", "label": "Visa Eligibility Checker", "href": "/netherlands/visa-checker/", "description": "See which visa or residence route fits your situation." },
+    { "key": "visa-plan", "label": "Visa Application Plan", "href": "/netherlands/visa-application-plan/", "description": "Plan document and submission steps for your route." },
+    { "key": "municipality", "label": "Municipality Registration Guide", "href": "/netherlands/municipality-registration-netherlands/", "description": "What to bring and when to register." }
+  ],
+  "exampleScenarios": [
+    {
+      "title": "US expat apostilling birth certificate",
+      "summary": "Birth certificate for municipality registration or family visa. Get an apostille from the Secretary of State in your state, then use the document (and sworn translation if required) in the Netherlands.",
+      "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/united-states",
+      "ctaLabel": "Official steps for United States"
+    },
+    {
+      "title": "Indian professional preparing civil documents",
+      "summary": "Birth certificate, marriage certificate, or police certificate for IND or municipality. Get documents apostilled by the Ministry of External Affairs in India, then translate in the Netherlands if the document is not in an accepted language.",
+      "href": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/india",
+      "ctaLabel": "Official steps for India"
+    },
+    {
+      "title": "Family registering marriage in Netherlands",
+      "summary": "Marriage certificate for municipality registration or partner visa. Apostille in the country where the certificate was issued, then use the document (and sworn translation if required) when registering in the Netherlands.",
+      "href": "/netherlands/municipality-registration-netherlands/",
+      "ctaLabel": "Municipality Registration Guide"
+    },
+    {
+      "title": "Student apostilling diploma",
+      "summary": "Diploma for recognition or skilled migration. Get apostille in the country of issue, then have the document translated in the Netherlands by a sworn translator if needed.",
+      "href": "/netherlands/document-readiness-checker/",
+      "ctaLabel": "Check Your Documents"
+    }
+  ],
+  "scenariosSectionTitle": "Example scenarios",
+  "scenariosSectionIntro": "How apostille fits into different expat situations. Use the official Netherlands Worldwide page for the country that issued your document.",
+  "internalLinks": {
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    "related": [
+      { "label": "All services hub", "href": "/netherlands/services/" },
+      { "label": "Document Legalization in the Netherlands", "href": "/netherlands/document-legalization-netherlands/" },
+      { "label": "Document Translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" },
+      { "label": "Municipality Registration", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" }
+    ]
+  },
+  "sidebarStartLinks": [
+    { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
+    { "label": "Document Legalization", "href": "/netherlands/document-legalization-netherlands/" },
+    { "label": "Document Translation", "href": "/netherlands/document-translation-netherlands/" },
+    { "label": "Municipality Registration", "href": "/netherlands/municipality-registration-netherlands/" },
+    { "label": "Visa Application Plan", "href": "/netherlands/visa-application-plan/" }
+  ],
+  "faq": [
+    {
+      "q": "What is an apostille?",
+      "a": "An apostille is an official certificate attached to a document that confirms the authenticity of the signature and issuing authority. It allows the document to be accepted in another country that participates in the Hague Apostille Convention. In the Netherlands, apostilles are typically issued by district courts."
+    },
+    {
+      "q": "Where can I get an apostille in the Netherlands?",
+      "a": "In the Netherlands, apostilles are issued by district courts. For documents issued abroad, apostille or legalisation is usually done in the country where the document was issued. Check Netherlands Worldwide for the correct authority for your country."
+    },
+    {
+      "q": "Do I need translation as well?",
+      "a": "Documents not in Dutch, English, French, or German usually need sworn translation for use with Dutch authorities. Apostille and translation are separate steps; you may need both. The order (apostille first or translation first) depends on the issuing country."
+    },
+    {
+      "q": "Which documents require apostille?",
+      "a": "Common documents that often require apostille when used in the Netherlands include birth certificates, marriage certificates, divorce certificates, diplomas, police certificates, and notarial documents—especially when used for visas, residence permits, municipality registration, or other official procedures."
+    },
+    {
+      "q": "How long does apostille take?",
+      "a": "Processing time varies by country and authority, from same day to several days or a few weeks. Government fees are often around €20–€25 per document in the Netherlands; other countries have different fee structures. Start the process as soon as you know which documents you need."
+    }
+  ],
+  "resourcesAffiliatePlacementId": "resources_end",
+  "servicesSectionTitle": "Useful services",
+  "servicesIntro": "Official resources first: use Netherlands Worldwide for apostille and legalisation steps. We may earn a commission from some links below at no extra cost to you.",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "nl-moving-tool-first-90-days-after-results",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "tool",
+    "route": "/netherlands/moving/tools/first-90-days",
+    "slot": "after-results"
+  },
+  "variant": "cards",
+  "title": "Your next steps",
+  "intro": "Placeholder: add affiliate items when ready.",
+  "categoryOrder": ["banking", "insurance", "mobile"],
+  "items": [],
+  "disclosure": "Some links are affiliate links. We may earn a commission at no extra cost to you."
+}

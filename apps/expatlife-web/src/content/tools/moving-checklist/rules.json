@@ -1,0 +1,27 @@
+{
+  "stageWeighting": {
+    "before-move": { "beforeMove": 1, "afterArrival": 0.5, "first90Days": 0.3 },
+    "arriving-soon": { "beforeMove": 0.5, "afterArrival": 1, "first90Days": 0.8 },
+    "already-arrived": { "beforeMove": 0.2, "afterArrival": 1, "first90Days": 1 }
+  },
+  "highPriorityTaskIds": [
+    "register-address",
+    "bsn",
+    "open-bank",
+    "health-insurance",
+    "prepare-documents"
+  ],
+  "distanceCategories": {
+    "far": ["south-africa", "india", "united-states", "australia", "brazil", "canada", "japan"],
+    "regional": ["germany", "belgium", "france", "united-kingdom", "spain", "italy", "poland"]
+  },
+  "summaryTemplates": {
+    "beforeMove": "Moving from {origin} with a {employment} often means preparing documents early and planning your first admin steps soon after arrival.",
+    "arrivingSoon": "If you're arriving soon, focus on registration, banking, and health insurance in your first days, then work through the first 90 days list.",
+    "alreadyArrived": "If you've already arrived, the focus often shifts toward registration, banking, and making your first 90 days more predictable.",
+    "withPartner": "Moving with a partner means extra documents and possibly joint registration steps — we've included those where relevant.",
+    "withKids": "With children, school registration and family documents are important; we've highlighted those tasks.",
+    "nonEu": "As a non-EU national, allow time for residence and work permit steps and keep your document pack ready.",
+    "searching": "If you're still searching for work, we've included admin readiness and job-search–friendly tasks."
+  }
+}

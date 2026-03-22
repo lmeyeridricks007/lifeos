@@ -1,0 +1,52 @@
+{
+  "weights": {
+    "addressStatus": {
+      "yes": {
+        "registrationReady": 3,
+        "housingStability": 1,
+        "adminDependencies": 3
+      },
+      "soon": {
+        "registrationReady": 2,
+        "housingStability": 2,
+        "adminDependencies": 2
+      },
+      "no": {
+        "registrationReady": 1,
+        "housingStability": 3,
+        "adminDependencies": 3
+      }
+    },
+    "needBankingSoon": {
+      "yes": 3,
+      "no": 1
+    },
+    "household": {
+      "solo": { "familyBoost": 0 },
+      "partner": { "familyBoost": 1 },
+      "kids": { "familyBoost": 3 }
+    }
+  },
+  "highPriorityByStatus": {
+    "yes": ["prepare-registration-documents", "receive-bsn-and-note-dependencies", "open-dutch-bank-account"],
+    "soon": ["confirm-move-in-date-and-mail-access", "prepare-registration-documents", "receive-bsn-and-note-dependencies"],
+    "no": ["track-which-tasks-must-wait-for-stable-address", "confirm-move-in-date-and-mail-access", "prepare-registration-documents"]
+  },
+  "bankingPriorityIds": ["open-dutch-bank-account", "confirm-salary-payment-readiness", "prepare-bank-onboarding-documents"],
+  "householdPriorityIds": {
+    "partner": ["align-household-admin-ownership"],
+    "kids": ["review-school-or-childcare-follow-up-if-needed", "review-childcare-school-and-family-registration-follow-up"]
+  },
+  "distanceCategories": {
+    "farDistanceOrigins": ["south-africa", "india", "united-states", "australia", "canada", "brazil"],
+    "regionalOrigins": ["germany", "france", "belgium", "spain", "italy", "portugal"]
+  },
+  "summaryFragments": {
+    "noAddress": "If you are arriving soon and do not yet have a stable address, your first week focuses on tracking address-dependent tasks and preparing for registration once you have housing.",
+    "hasAddress": "If you already have an address, your early days centre on municipality registration, BSN and setting up daily essentials.",
+    "bankingSoon": "Because you need banking soon, account setup and payment readiness stay near the top of your plan.",
+    "withKids": "With kids, include school and family admin earlier so your first month is less rushed.",
+    "regionalMove": "As this looks like a regional move, your timeline may feel more compressed; sequencing still matters.",
+    "longDistanceMove": "As this looks like a longer-distance move, keep extra buffer for coordination and first-week admin."
+  }
+}

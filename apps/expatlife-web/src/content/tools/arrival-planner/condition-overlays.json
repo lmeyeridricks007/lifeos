@@ -1,0 +1,18 @@
+{
+  "startingJobSoon": [
+    "confirm-employer-onboarding-documents"
+  ],
+  "thirtyRulingRelevant_likely": [
+    "confirm-30-percent-ruling-eligibility-with-employer",
+    "track-30-percent-ruling-application-status"
+  ],
+  "needBankingSoon_yes": [],
+  "planningToDrive_true": ["arrange-car-lease-or-buy"],
+  "shippingHouseholdGoods_true": [
+    "track-shipping-arrival-and-delivery",
+    "keep-essential-documents-and-first-week-items-out-of-shipment"
+  ],
+  "hasAddress_no": [],
+  "hasAddress_soon": [],
+  "household_kids": []
+}

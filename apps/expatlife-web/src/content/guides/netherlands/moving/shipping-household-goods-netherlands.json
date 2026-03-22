@@ -1,0 +1,317 @@
+{
+  "slug": "shipping-household-goods-netherlands",
+  "path": "/netherlands/shipping-household-goods-netherlands/",
+  "title": "Shipping Household Goods to the Netherlands",
+  "metaTitle": "Shipping Household Goods to the Netherlands: Costs, Methods & Tips",
+  "subtitle": "A practical guide to shipping methods, costs, timelines, customs, and planning your relocation logistics.",
+  "description": "Learn how expats ship household goods to the Netherlands. Compare sea freight vs air freight, typical costs, timelines, customs considerations, and relocation services.",
+  "breadcrumbLabel": "Shipping Household Goods",
+
+  "hero": {
+    "eyebrow": "Relocation Logistics",
+    "badges": ["Moving Logistics Guide"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/shipping-household-goods-netherlands-hero.png",
+      "alt": "Person with shipping inventory checklist, packed moving boxes and suitcase, with Dutch canal and moving van visible through the window"
+    }
+  },
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "shipping-methods", "label": "Shipping methods" },
+    { "id": "shipping-costs", "label": "Typical shipping costs" },
+    { "id": "shipping-timelines", "label": "Typical shipping timelines" },
+    { "id": "choosing-a-moving-company", "label": "Choosing a moving company" },
+    { "id": "customs-documents", "label": "Customs and documents" },
+    { "id": "what-to-ship", "label": "What expats usually ship" },
+    { "id": "receiving-shipments", "label": "Receiving shipments" },
+    { "id": "related-services", "label": "Related services" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" }
+  ],
+
+  "heroCta": {
+    "title": "Plan your relocation logistics",
+    "supportingText": "Use the Moving Checklist Generator to map out what applies to your move, including shipping, documents, housing, arrival admin, and your first months in the Netherlands.",
+    "primaryCtaLabel": "Generate a Moving Checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtaLabel": "Plan Your First 90 Days",
+    "secondaryCtaHref": "/netherlands/moving/tools/first-90-days/",
+    "tertiaryCtaLabel": "Read the full moving guide",
+    "tertiaryCtaHref": "/netherlands/moving-to-the-netherlands/"
+  },
+
+  "quickAnswers": [
+    {
+      "label": "Who this guide is for",
+      "value": "Expats moving personal belongings internationally to the Netherlands."
+    },
+    {
+      "label": "Common shipping methods",
+      "value": "Air freight for speed; sea freight for larger shipments and lower cost per volume."
+    },
+    {
+      "label": "Best next step",
+      "value": "Estimate your logistics early and use the moving checklist tool to avoid delays."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "Many expats choose to ship some household goods when relocating to the Netherlands. What makes sense depends on distance, volume, timing, housing type, and whether items are worth replacing locally.",
+        "This page explains the usual shipping methods, costs, timelines, customs considerations, and how to plan the logistics. Costs and procedures vary by provider and origin country—use this as a planning guide and confirm details with your moving company and Dutch customs where relevant."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
+        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ]
+    },
+    {
+      "id": "shipping-methods",
+      "heading": "Shipping methods",
+      "body": [
+        "Most international relocations use one of these methods.",
+        "Air freight: faster and higher cost; better for urgent, smaller shipments.",
+        "Sea freight: slower but usually better value for larger volumes; common for full relocations and furniture.",
+        "Shared container / groupage: lower cost than a full container and more flexible for medium-sized moves; timing can be less predictable.",
+        "Courier / box shipping: suitable for suitcases, boxes, documents, and small personal items; often better than full relocation services for light moves.",
+        "Choose based on urgency, volume, housing certainty, and whether your items are worth shipping compared with buying again locally."
+      ]
+    },
+    {
+      "id": "shipping-costs",
+      "heading": "Typical shipping costs",
+      "table": {
+        "headers": ["Shipping option", "Typical use case", "Indicative cost range", "Typical timeline"],
+        "rows": [
+          ["Courier / suitcase shipping", "Documents, boxes, suitcases", "€50–€250 per parcel/suitcase", "A few days to ~2 weeks"],
+          ["Air freight", "Urgent smaller move", "€1,500–€4,000", "~1–2 weeks"],
+          ["Shared sea container", "Medium household move", "€2,000–€6,000", "~4–8 weeks"],
+          ["Full sea container", "Large household move", "€5,000–€12,000+", "~4–10 weeks"]
+        ]
+      },
+      "body": [
+        "The table below gives indicative planning ranges only. Your actual costs will depend on origin country, volume, customs handling, door-to-door vs port-to-port, packing services, insurance, and final delivery location in the Netherlands. Always compare provider estimates for your exact route and shipment size.",
+        "Costs vary depending on: origin country; shipment volume and weight; customs handling; door-to-door vs port-to-port; packing services; insurance; and final delivery location in the Netherlands. These are broad planning ranges, not quotes."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
+        { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+        { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" }
+      ]
+    },
+    {
+      "id": "shipping-timelines",
+      "heading": "Typical shipping timelines",
+      "body": [
+        "Rough timelines by method: courier or small parcel shipping often takes days to around two weeks; air freight around one to two weeks; shared sea container around four to eight weeks; full sea container around four to ten weeks.",
+        "If your housing is temporary or not yet confirmed, avoid timing delivery too early."
+      ],
+      "bullets": [
+        "Courier / small parcel: often days to ~2 weeks",
+        "Air freight: often ~1–2 weeks",
+        "Shared sea container: often ~4–8 weeks",
+        "Full sea container: often ~4–10 weeks"
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "What often takes longer than expected",
+        "text": "Customs clearance, consolidating groupage shipments, delivery scheduling after arrival, and waiting for a final address or key handover can add delay. Plan buffer time and confirm with your provider."
+      }
+    },
+    {
+      "id": "choosing-a-moving-company",
+      "heading": "Choosing a moving company",
+      "body": [
+        "When comparing providers, consider: whether packing is included, customs documentation support, storage options, delivery model (door-to-door vs port-to-port), insurance availability, and whether quotes are by volume or weight. Check that they serve your origin country."
+      ],
+      "bullets": [
+        "Before choosing a provider: request two to four quotes, confirm what is included, ask about customs handling, confirm delivery timing assumptions, and check cancellation or rescheduling rules."
+      ],
+      "internalCta": {
+        "label": "Generate a Moving Checklist",
+        "href": "/netherlands/moving/tools/moving-checklist/"
+      }
+    },
+    {
+      "id": "customs-documents",
+      "heading": "Customs and documents",
+      "body": [
+        "Customs rules vary by route and household situation. Expats often need an inventory list and shipping paperwork. Personal used household goods may be treated differently from new goods or commercial imports. Confirm current requirements with Dutch customs and your shipping provider."
+      ],
+      "bullets": [
+        "Common preparation items: passport or ID, proof of relocation or address, inventory list, transport or shipping paperwork, and customs declarations as required by the provider."
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Important",
+        "text": "Do not assume all personal belongings can be imported the same way. Customs treatment, exemptions, and required paperwork vary by provider and route. Confirm with Dutch customs and your moving company."
+      },
+      "links": [
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ]
+    },
+    {
+      "id": "what-to-ship",
+      "heading": "What expats usually ship",
+      "body": [
+        "Often worth shipping: sentimental items, high-quality furniture, personal equipment, specialist work gear, and items that are expensive to replace locally.",
+        "Often not worth shipping: low-value furniture, bulky cheap household items, easily replaceable basics, low-end appliances, and items you may not have room for in Dutch housing.",
+        "Dutch homes and apartments can be smaller than people expect, so measure before shipping large furniture."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+        { "label": "Move to the Netherlands without a job", "href": "/netherlands/move-to-netherlands-without-job/" }
+      ]
+    },
+    {
+      "id": "receiving-shipments",
+      "heading": "Receiving shipments",
+      "body": [
+        "Once goods arrive, timing often depends on customs clearance, your delivery address, delivery appointment availability, and building access (lift, parking)."
+      ],
+      "bullets": [
+        "Confirm your final delivery address with the provider",
+        "Check building access rules (stairs, lift, parking)",
+        "Prepare for inspection if required",
+        "Schedule unpacking if needed",
+        "Keep shipping and customs documents accessible"
+      ]
+    },
+    {
+      "id": "related-services",
+      "heading": "Shipping and moving services expats often compare",
+      "body": [
+        "The following providers are commonly used for international moves and box or suitcase shipping. Compare options and get quotes for your route and volume. Some links may be affiliate links."
+      ],
+      "table": {
+        "headers": ["Provider", "Description", "Typical use case", "Indicative price cue"],
+        "rows": [
+          ["Seven Seas Worldwide", "Door-to-door international shipping and relocation support", "Medium to large international moves", "Often used for larger shipments; compare quotes"],
+          ["Send My Bag", "Shipping suitcases and boxed personal items internationally", "Lighter moves, extra luggage, student or solo relocations", "Often cheaper than full relocation for small loads"],
+          ["Eurosender", "International box and parcel shipping platform", "Small boxes and light household shipping", "Best for small shipments rather than full furniture moves"],
+          ["UPakWeShip", "Self-pack international moving container solution", "Lower-cost container-style shipping", "Compare based on origin country and volume"],
+          ["MoveHub", "Quote-comparison platform for international moving services", "Comparing relocation companies and container options", "Useful as a starting point for multiple quotes"]
+        ]
+      },
+      "links": [
+        { "label": "Seven Seas Worldwide", "href": "https://www.sevenseasworldwide.com" },
+        { "label": "Send My Bag", "href": "https://www.sendmybag.com" },
+        { "label": "Eurosender", "href": "https://www.eurosender.com" },
+        { "label": "UPakWeShip", "href": "https://www.upakweship.com" },
+        { "label": "MoveHub", "href": "https://www.movehub.com" }
+      ]
+    }
+  ],
+
+  "toolsCtaBand": {
+    "title": "Plan your move before booking shipping",
+    "body": "Use the Moving Checklist Generator to see which admin steps, housing tasks, and arrival milestones should align with your shipping timeline.",
+    "primaryLabel": "Generate a Moving Checklist",
+    "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryLabel": "Plan Your First 90 Days",
+    "secondaryHref": "/netherlands/moving/tools/first-90-days/"
+  },
+
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Create a practical checklist covering shipping, documents, housing, arrival admin, and your first months in the Netherlands.",
+      "ctaLabel": "Generate checklist"
+    },
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Map out what usually happens after arrival so your shipping and admin timelines line up.",
+      "ctaLabel": "Open planner"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Document Readiness Checker",
+      "href": "/netherlands/document-readiness-checker/",
+      "description": "Check whether you already have the documents often needed before and after arrival.",
+      "ctaLabel": "Check documents"
+    }
+  ],
+
+  "endCta": {
+    "title": "Plan your move before booking shipping",
+    "supportingText": "Use the Moving Checklist Generator to see which admin steps, housing tasks, and arrival milestones should align with your shipping timeline.",
+    "ctaLabel": "Generate a Moving Checklist",
+    "ctaHref": "/netherlands/moving/tools/moving-checklist/"
+  },
+
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
+      { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+      { "label": "Move to the Netherlands without a job", "href": "/netherlands/move-to-netherlands-without-job/" },
+      { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+      { "label": "Bringing pets to the Netherlands", "href": "/netherlands/bringing-pets-to-netherlands/" }
+    ]
+  },
+
+  "sidebarStartLinks": [
+    { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+    { "label": "Read the full moving guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+    { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Plan your first 90 days", "href": "/netherlands/moving/tools/first-90-days/" }
+  ],
+
+  "faq": [
+    {
+      "q": "Is it worth shipping furniture to the Netherlands?",
+      "a": "It depends on the value, size, and sentimental attachment. High-quality or hard-to-replace furniture is often worth shipping; cheap or bulky items may cost more to ship than to replace locally. Dutch homes can be smaller than in some countries, so measure before committing."
+    },
+    {
+      "q": "How long does international shipping to the Netherlands usually take?",
+      "a": "Courier or small parcels often take a few days to about two weeks; air freight about one to two weeks; shared or full sea containers typically four to ten weeks. Customs and delivery scheduling can add delay."
+    },
+    {
+      "q": "Is air freight or sea freight better for moving?",
+      "a": "Air freight is faster and suits urgent or smaller moves; sea freight usually offers better value for larger volumes and full household moves. Choose based on urgency, volume, and budget."
+    },
+    {
+      "q": "How much does it cost to ship household goods to the Netherlands?",
+      "a": "Indicative ranges: courier/suitcase €50–€250 per item; air freight €1,500–€4,000; shared container €2,000–€6,000; full container €5,000–€12,000+. Costs vary by origin, volume, and services; get quotes for your situation."
+    },
+    {
+      "q": "Do I need customs paperwork for personal belongings?",
+      "a": "Often yes. Requirements vary by route and provider. Commonly needed: inventory list, shipping paperwork, proof of relocation or address, and any customs declarations your provider or Dutch customs require. Confirm with your moving company and Dutch customs."
+    },
+    {
+      "q": "Should I ship furniture or buy new items in the Netherlands?",
+      "a": "Compare shipping cost and hassle with local replacement cost. Sentimental or high-value items often justify shipping; cheap or bulky items may not. Consider whether your Dutch home has space before shipping large pieces."
+    },
+    {
+      "q": "Can I ship items before I have a permanent address?",
+      "a": "Some providers offer storage or delivery to a temporary address; others require a final delivery address. Timing delivery before you have keys or a fixed address can lead to delays or extra cost. Confirm options with your provider."
+    }
+  ],
+
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

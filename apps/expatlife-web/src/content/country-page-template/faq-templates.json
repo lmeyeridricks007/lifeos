@@ -1,0 +1,32 @@
+[
+  {
+    "id": "visa-route-awareness",
+    "q": "What visa or residence route is common when moving from {countryName}?",
+    "a": "Routes vary by purpose of stay, sponsor setup, and personal circumstances. Start with official route guidance and confirm your exact path before final planning."
+  },
+  {
+    "id": "document-prep",
+    "q": "Which documents should I prepare first before moving from {countryName}?",
+    "a": "Most people begin with identity records, civil documents where relevant, and route-related employment or family paperwork. Start early for documents that take longer to replace."
+  },
+  {
+    "id": "timeline-focus",
+    "q": "How early should I start planning my move from {countryName}?",
+    "a": "A practical approach is to start with route and documents first, then travel and temporary housing, and finally first-week admin planning in the Netherlands."
+  },
+  {
+    "id": "cost-awareness",
+    "q": "How much does moving from {countryName} to the Netherlands usually cost?",
+    "a": "Costs vary by travel season, household size, and logistics choices. Use awareness ranges as planning inputs and confirm current quotes before booking."
+  },
+  {
+    "id": "after-arrival",
+    "q": "What should I prioritize in the first week after arriving in the Netherlands?",
+    "a": "Focus on registration sequencing, address setup, and other practical admin tasks that unlock later steps such as banking and longer-term settling."
+  },
+  {
+    "id": "official-sources",
+    "q": "Where can I verify official information for my move?",
+    "a": "Use the official contacts listed in this guide, including Dutch immigration resources and country-specific public document sources."
+  }
+]

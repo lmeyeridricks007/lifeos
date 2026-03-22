@@ -1,0 +1,23 @@
+{
+  "id": "resources_end",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/",
+    "slot": "resources_end"
+  },
+  "variant": "cards",
+  "title": "Useful services for expats",
+  "intro": "A curated list of common services people use during the move.",
+  "categoryOrder": ["banking", "housing", "insurance", "mobile", "tax", "shipping"],
+  "items": [
+    { "providerId": "bunq", "reason": "Expat-friendly banking with fast onboarding." },
+    { "providerId": "wise", "reason": "International transfers and multi-currency." },
+    { "providerId": "housinganywhere", "reason": "Temporary rentals." },
+    { "providerId": "simyo", "reason": "Simple SIM plans to get connected." },
+    { "providerId": "independer", "reason": "Compare health and other insurance." },
+    { "providerId": "abn-amro", "reason": "Full-service Dutch bank with expat support." }
+  ],
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

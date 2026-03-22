@@ -1,0 +1,62 @@
+{
+  "local-municipality": {
+    "name": "Your municipality (gemeente)",
+    "website": "https://www.government.nl/topics/personal-data/question-and-answer/when-should-i-register-with-the-personal-records-database-as-a-resident",
+    "contactSummary": "Your municipality handles resident registration, BRP updates, and often the appointment process."
+  },
+  "netherlandsworldwide-brp": {
+    "name": "Netherlands Worldwide – BRP / registration guidance",
+    "website": "https://www.netherlandsworldwide.nl/personal-records-database-brp/when-register",
+    "contactSummary": "Official guidance on when and how to register in the BRP."
+  },
+  "government-bsn": {
+    "name": "Government of the Netherlands – BSN",
+    "website": "https://www.government.nl/topics/personal-data/citizen-service-number-bsn",
+    "contactSummary": "Official explanation of what a BSN is and how it is assigned."
+  },
+  "digid": {
+    "name": "DigiD",
+    "website": "https://www.digid.nl/en/apply-and-activate/apply-digid",
+    "contactSummary": "Official DigiD application and activation information."
+  },
+  "ind": {
+    "name": "IND",
+    "website": "https://ind.nl/en",
+    "contactSummary": "Official immigration information and residence-related guidance."
+  },
+  "ind-translation-legalisation": {
+    "name": "IND – translation and legalisation of documents",
+    "website": "https://ind.nl/en/translation-and-legalisation-of-documents",
+    "contactSummary": "Official guidance on translation and legalisation of foreign documents."
+  },
+  "netherlandsworldwide-legalisation": {
+    "name": "Netherlands Worldwide – legalisation of foreign documents",
+    "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents",
+    "contactSummary": "Country-specific legalisation routes for foreign documents used in the Netherlands."
+  },
+  "belastingdienst-30": {
+    "name": "Belastingdienst – Expat Scheme (30% facility)",
+    "website": "https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility",
+    "contactSummary": "Official 30% facility guidance and conditions."
+  },
+  "belastingdienst-30-forms": {
+    "name": "Belastingdienst – 30% facility application forms",
+    "website": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/themaoverstijgend/applications_and_forms/application-income-tax-and-national-insurance-30-facility",
+    "contactSummary": "Application forms and related process details."
+  },
+  "rdw-driving": {
+    "name": "RDW – foreign driving licence",
+    "website": "https://www.rdw.nl/en/driving-licence/foreign-driving-licence",
+    "contactSummary": "Official guidance on using or exchanging a foreign driving licence."
+  },
+  "rdw-driving-exchange": {
+    "name": "RDW – exchange a foreign driving licence",
+    "website": "https://www.rdw.nl/en/driving-licence/foreign-driving-licence/exchanging-a-foreign-driving-licence",
+    "contactSummary": "Official guidance on exchanging a foreign driving licence for a Dutch one."
+  },
+  "rdw-driving-use": {
+    "name": "RDW – driving with a foreign driving licence",
+    "website": "https://www.rdw.nl/en/driving-licence/foreign-driving-licence/driving-with-a-foreign-driving-licence",
+    "contactSummary": "Official guidance on how long you may drive with a foreign licence."
+  }
+}

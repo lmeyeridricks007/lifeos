@@ -1,0 +1,281 @@
+{
+  "slug": "visa-documents-netherlands",
+  "path": "/netherlands/visa-documents-netherlands/",
+  "title": "Visa Documents for the Netherlands",
+  "breadcrumbLabel": "Visa Documents",
+  "subtitle": "A practical overview of the document categories expats often prepare for long-stay routes to the Netherlands.",
+  "description": "Learn which document categories are commonly prepared for Netherlands visa and residence routes, why they matter, and how to organize a practical document pack before moving.",
+  "hero": {
+    "eyebrow": "Documents",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/visa-documents-hero.webp",
+      "alt": "Organized visa and relocation documents for a move to the Netherlands"
+    }
+  },
+  "quickAnswers": [
+    {
+      "label": "What this covers",
+      "value": "Common document categories often prepared for long-stay visa or residence routes."
+    },
+    {
+      "label": "Why it matters",
+      "value": "Document readiness often reduces delays, rework, and last-minute stress."
+    },
+    {
+      "label": "Best next step",
+      "value": "Run the Document Readiness Checker and build your starter pack."
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Why visa document preparation matters early",
+      "body": [
+        "Many relocation delays do not come from the move itself, but from document preparation taking longer than expected.",
+        "Even when the exact visa or residence route differs, expats often benefit from preparing a clear starter pack of core identity, civil, employment, and address-related documents."
+      ],
+      "bullets": [
+        "Documents often take longer to obtain than people expect",
+        "Some documents may need extra processing before use",
+        "A practical starter pack makes later admin steps easier",
+        "Preparation usually matters more than trying to guess every final requirement at once"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Awareness-first approach",
+        "text": "This page is not a legal checklist for one specific route. It is a practical guide to the document categories many expats prepare before a long-stay move to the Netherlands."
+      }
+    },
+    {
+      "id": "core-categories",
+      "heading": "Core document categories expats often prepare",
+      "body": [
+        "Most long-stay moves involve a few recurring document groups, even when the exact route differs.",
+        "Thinking in categories helps you organize faster and avoid overlooking important supporting records."
+      ],
+      "bullets": [
+        "Identity documents",
+        "Civil records such as birth or marriage certificates",
+        "Employment or sponsor-related documents",
+        "Address or housing-related documents",
+        "Education or qualification records where relevant"
+      ],
+      "image": {
+        "src": "/images/infographics/documents-to-prepare.webp",
+        "alt": "Document categories often prepared for Netherlands visa and residence routes"
+      }
+    },
+    {
+      "id": "identity-documents",
+      "heading": "Identity and civil documents",
+      "body": [
+        "Identity and civil records are often the backbone of a visa or residence-related document pack.",
+        "Even when not every document is required immediately, many expats prepare them early because replacements or certified copies can take time."
+      ],
+      "bullets": [
+        "Passport",
+        "Passport copies",
+        "Birth certificate",
+        "Marriage certificate or partnership proof where relevant",
+        "Children's civil records where relevant"
+      ]
+    },
+    {
+      "id": "employment-and-sponsor",
+      "heading": "Employment or sponsor-related documents",
+      "body": [
+        "People moving for work often prepare employment documentation early, while family routes may depend more on sponsor or relationship-related records.",
+        "The exact route matters, but document preparation usually starts with understanding which supporting records are easiest to gather now."
+      ],
+      "bullets": [
+        "Employment contract or job offer",
+        "Employer or sponsor details",
+        "Role or salary context where relevant",
+        "Relationship or sponsor evidence for family-based moves"
+      ]
+    },
+    {
+      "id": "translation-legalization",
+      "heading": "Translation, legalization, and apostille awareness",
+      "body": [
+        "Some documents may need extra processing before they are ready for formal use.",
+        "Expats often only discover this late, which is why awareness of translation, legalization, and apostille steps can be very valuable."
+      ],
+      "bullets": [
+        "Some documents may need certified translation",
+        "Some documents may need legalization or formal validation",
+        "Some records may need apostille depending on their use and origin",
+        "It often helps to identify these risks early rather than after travel is already booked"
+      ],
+      "affiliatePlacementId": "problem_solution_primary",
+      "callout": {
+        "type": "tip",
+        "title": "Good next step",
+        "text": "If you are unsure whether any of your records need extra processing, a practical next step is to separate documents you already have from documents that may need translation or legalization."
+      }
+    },
+    {
+      "id": "organize-pack",
+      "heading": "How to organize a practical visa document pack",
+      "body": [
+        "A document pack does not need to be complicated. For many expats, the goal is simply to know what exists, what is missing, and what may need extra processing.",
+        "A simple folder structure often reduces stress during both pre-move planning and early arrival admin."
+      ],
+      "bullets": [
+        "Create folders by category",
+        "Track originals versus copies or scans",
+        "Keep a simple list of missing records",
+        "Note which items may need translation or legalization",
+        "Store appointment confirmations and provider references in the same folder system"
+      ]
+    },
+    {
+      "id": "what-next",
+      "heading": "What expats typically do after organizing documents",
+      "body": [
+        "Once the document pack becomes clearer, many people move into timeline planning, arrival preparation, and first-month setup.",
+        "Document readiness often makes municipality registration, banking, insurance, and the first 90 days feel more manageable."
+      ],
+      "bullets": [
+        "Run a document readiness check",
+        "Build a moving checklist",
+        "Plan arrival tasks",
+        "Review first 30 to 90 day setup"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "common-mistakes",
+      "heading": "Common visa-document preparation mistakes",
+      "body": [
+        "Most problems come from timing, not from complexity alone.",
+        "People often underestimate how long it takes to replace civil documents, arrange certified copies, or confirm whether extra processing is needed."
+      ],
+      "bullets": [
+        "Starting document prep too late",
+        "Assuming every existing document is already ready for formal use",
+        "Not separating core documents from optional extras",
+        "Ignoring translation or legalization risk until late in the process",
+        "Not keeping a simple list of what is missing"
+      ]
+    }
+  ],
+  "featuredTools": [
+    {
+      "label": "Check Document Readiness",
+      "href": "/netherlands/moving/tools/document-readiness/"
+    },
+    {
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/"
+    },
+    {
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/"
+    }
+  ],
+  "toolCtas": [
+    {
+      "label": "Check Document Readiness",
+      "href": "/netherlands/moving/tools/document-readiness/"
+    },
+    {
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/"
+    }
+  ],
+  "exampleScenarios": [
+    {
+      "title": "Moving for work and gathering employment documents first",
+      "summary": "A work-based move often starts with identity documents, employment records, and a simple folder for address and arrival admin support documents.",
+      "href": "/netherlands/moving/tools/document-readiness/?scenario=work"
+    },
+    {
+      "title": "Joining a partner and checking civil records early",
+      "summary": "Family or partner-based moves often place more emphasis on civil records, relationship documents, and any supporting translations or validations.",
+      "href": "/netherlands/moving/tools/document-readiness/?scenario=partner"
+    },
+    {
+      "title": "Moving with family and trying to avoid document delays",
+      "summary": "Family moves often become easier when identity, civil, and children's supporting records are grouped into one clearly tracked pack.",
+      "href": "/netherlands/moving/tools/document-readiness/?scenario=family"
+    }
+  ],
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      {
+        "label": "Moving Documents Checklist for the Netherlands",
+        "href": "/netherlands/moving-documents-checklist/"
+      },
+      {
+        "label": "Moving to the Netherlands: Key Requirements to Plan For",
+        "href": "/netherlands/moving-requirements-netherlands/"
+      },
+      {
+        "label": "Document Translation in the Netherlands",
+        "href": "/netherlands/document-translation-netherlands/"
+      },
+      {
+        "label": "Documents Needed to Move to the Netherlands",
+        "href": "/netherlands/documents-needed-to-move-netherlands/"
+      },
+      {
+        "label": "Document Legalization in the Netherlands",
+        "href": "/netherlands/document-legalization-netherlands/"
+      },
+      {
+        "label": "Apostille Documents for the Netherlands",
+        "href": "/netherlands/apostille-documents-netherlands/"
+      },
+      {
+        "label": "Moving Checklist Netherlands",
+        "href": "/netherlands/moving-checklist-netherlands/"
+      },
+      {
+        "label": "After Arriving in the Netherlands",
+        "href": "/netherlands/after-arriving-netherlands/"
+      },
+      {
+        "label": "First 90 Days in the Netherlands",
+        "href": "/netherlands/first-90-days-netherlands/"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "q": "What documents are commonly prepared for a Netherlands visa or long-stay move?",
+      "a": "Many expats start with identity documents, civil records, employment or sponsor-related records, and housing or address-related documents."
+    },
+    {
+      "q": "Do all visa routes require the same documents?",
+      "a": "No. The exact route matters, but many people still benefit from preparing a shared core document pack early."
+    },
+    {
+      "q": "Do documents ever need translation or legalization?",
+      "a": "Some documents may need certified translation, legalization, or apostille depending on the route, the issuing country, and how the document will be used."
+    },
+    {
+      "q": "Should I prepare originals or copies?",
+      "a": "Many expats keep both where possible: originals for formal use and copies or scans for organization and practical access."
+    },
+    {
+      "q": "When should I start preparing visa-related documents?",
+      "a": "Many people start earlier than they think they need to, because replacing or processing civil documents can take time."
+    },
+    {
+      "q": "What should I do after I organize my visa documents?",
+      "a": "A common next step is to run a document readiness check, build a moving checklist, and start mapping the first arrival and first-month tasks."
+    }
+  ],
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

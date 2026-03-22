@@ -1,0 +1,112 @@
+[
+  {
+    "id": "amsterdam-job-soon",
+    "title": "Moving to Amsterdam with a job starting soon",
+    "inputs": {
+      "arrivalStage": "arriving-soon",
+      "household": "solo",
+      "startingJobSoon": "yes",
+      "needsIntegrationAwareness": "yes",
+      "from": "south-africa"
+    },
+    "summary": "Focus on essentials first, then build a sustainable routine in months two and three.",
+    "topWeek1to2Priorities": [
+      "Complete address and BSN-related setup",
+      "Prioritize banking for salary and bills",
+      "Lock mobile and document systems"
+    ],
+    "topMonth2Priorities": [
+      "Stabilize payroll/admin confidence",
+      "Build commuting routine",
+      "Review utilities and subscriptions"
+    ]
+  },
+  {
+    "id": "family-kids-coordination",
+    "title": "Family arriving with kids and lots to coordinate",
+    "inputs": {
+      "arrivalStage": "arriving-soon",
+      "household": "kids",
+      "startingJobSoon": "yes",
+      "needsIntegrationAwareness": "yes",
+      "from": "india"
+    },
+    "summary": "Family plans need stronger week-by-week coordination in the first month.",
+    "topWeek1to2Priorities": [
+      "Start registration and BSN dependency planning",
+      "Kick off school and child-admin timing",
+      "Coordinate family responsibilities early"
+    ],
+    "topMonth2Priorities": [
+      "Stabilize child and school routines",
+      "Align household planning rhythm",
+      "Track unresolved family follow-ups"
+    ]
+  },
+  {
+    "id": "solo-catching-up",
+    "title": "Solo expat already in the Netherlands, catching up on admin",
+    "inputs": {
+      "arrivalStage": "already-arrived",
+      "household": "solo",
+      "startingJobSoon": "no",
+      "needsIntegrationAwareness": "no",
+      "from": "south-africa"
+    },
+    "summary": "Use the next 90 days as a cleanup-and-stabilize phase.",
+    "topWeek1to2Priorities": [
+      "Run a catch-up audit of unresolved tasks",
+      "Confirm registration and BSN-linked items",
+      "Stabilize payments and service access"
+    ],
+    "topMonth2Priorities": [
+      "Set recurring admin review rhythm",
+      "Optimize subscriptions and utilities",
+      "Reduce long-tail pending tasks"
+    ]
+  },
+  {
+    "id": "partner-delayed-work",
+    "title": "Partner relocation with delayed work start",
+    "inputs": {
+      "arrivalStage": "arriving-soon",
+      "household": "partner",
+      "startingJobSoon": "no",
+      "needsIntegrationAwareness": "yes",
+      "from": "canada"
+    },
+    "summary": "Without immediate work pressure, focus on clean setup and medium-term stability.",
+    "topWeek1to2Priorities": [
+      "Address and document organization",
+      "Health insurance orientation",
+      "Shared household admin ownership"
+    ],
+    "topMonth2Priorities": [
+      "Stabilize budget and recurring systems",
+      "Set transport and local routines",
+      "Define integration baseline goals"
+    ]
+  },
+  {
+    "id": "regional-eu-fast-settle",
+    "title": "Regional EU mover settling in quickly",
+    "inputs": {
+      "arrivalStage": "arrived-a-while-ago",
+      "household": "partner",
+      "startingJobSoon": "yes",
+      "needsIntegrationAwareness": "no",
+      "from": "germany"
+    },
+    "summary": "Prioritize catch-up closure and lock in long-term routines by month three.",
+    "topWeek1to2Priorities": [
+      "Close outstanding registration dependencies",
+      "Align work start with admin windows",
+      "Consolidate key confirmations"
+    ],
+    "topMonth2Priorities": [
+      "Check housing and service fit",
+      "Strengthen recurring payment setup",
+      "Prepare monthly admin cadence"
+    ]
+  }
+]

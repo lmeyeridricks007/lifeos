@@ -1,0 +1,488 @@
+{
+  "slug": "bringing-pets-to-netherlands",
+  "path": "/netherlands/bringing-pets-to-netherlands/",
+  "title": "Bringing Pets to the Netherlands",
+  "metaTitle": "Bringing Pets to the Netherlands: Rules, Documents & Travel Tips",
+  "subtitle": "What expats often consider when relocating with dogs or cats.",
+  "description": "Moving to the Netherlands with a dog or cat? Learn about pet import rules, documents, vaccinations, airline travel, housing, costs, and arrival planning.",
+  "breadcrumbLabel": "Bringing Pets",
+
+  "hero": {
+    "eyebrow": "Relocation Logistics",
+    "badges": ["Pet Relocation Guide"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/bringing-pets-netherlands-hero.png",
+      "alt": "Expat with dog and luggage by a canal in the Netherlands; suitcase and pet carrier visible."
+    }
+  },
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "relocating-with-pets", "label": "Relocating to the Netherlands with pets" },
+    { "id": "pet-import-rules", "label": "Pet import rules for the Netherlands" },
+    { "id": "pet-documents", "label": "Pet documents often required" },
+    { "id": "eu-pet-passport", "label": "EU pet passport" },
+    { "id": "rabies-vaccination", "label": "Rabies vaccination rules" },
+    { "id": "airline-travel", "label": "Airline and travel considerations" },
+    { "id": "pet-relocation-costs", "label": "Pet relocation costs" },
+    { "id": "pet-friendly-housing", "label": "Finding pet-friendly housing" },
+    { "id": "arrival-pets", "label": "Arrival with pets in the Netherlands" },
+    { "id": "helping-pets-settle", "label": "Helping pets settle after relocation" },
+    { "id": "practical-checklist", "label": "Practical pet relocation checklist" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+
+  "heroCta": {
+    "title": "Planning your move with pets?",
+    "supportingText": "Moving with a dog or cat usually means extra planning for microchips, vaccinations, veterinary documents, airline rules, housing, and early arrival logistics. Use the checklist and 90-day planner to organize the move before and after arrival.",
+    "primaryCtaLabel": "Generate a Moving Checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtaLabel": "Plan Your First 90 Days",
+    "secondaryCtaHref": "/netherlands/moving/tools/first-90-days/",
+    "supportingLinks": [
+      { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Cost of moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" },
+      { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+    ]
+  },
+
+  "quickAnswers": [
+    {
+      "label": "Who this guide is for",
+      "value": "Expats relocating to the Netherlands with dogs or cats, whether moving from another EU country or from outside the EU."
+    },
+    {
+      "label": "Common pet relocation topics",
+      "value": "Documents, microchips, rabies vaccination, airline rules, pet-friendly housing, arrival steps, and settling in."
+    },
+    {
+      "label": "Best next step",
+      "value": "Generate a checklist for pet travel, documents, housing, and first-week setup in the Netherlands."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "Bringing pets to the Netherlands often adds a separate layer of planning to the move. In addition to your own relocation steps, you may need to coordinate microchip records, vaccinations, veterinary paperwork, airline rules, travel crates, housing restrictions, and local veterinary setup after arrival.",
+        "This page gives a practical overview of what expats often need to think about before travel, during transport, and in the first days or weeks after arriving in the Netherlands with a pet."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Cost of moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" },
+        { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      ]
+    },
+    {
+      "id": "relocating-with-pets",
+      "heading": "Relocating to the Netherlands with pets",
+      "body": [
+        "Many expats bring dogs or cats when relocating to the Netherlands. Pet travel often needs to be planned earlier than the rest of the move, because documentation and timing usually have to line up in a specific order.",
+        "The exact requirements depend on the country of origin, pet type, airline, and travel route. Housing suitability also matters, because not all rentals allow pets."
+      ],
+      "bullets": [
+        "Travel documentation requirements",
+        "Airline and route planning",
+        "Veterinary preparation",
+        "Pet-friendly housing",
+        "Arrival and local veterinary setup"
+      ]
+    },
+    {
+      "id": "pet-import-rules",
+      "heading": "Pet import rules for the Netherlands",
+      "body": [
+        "Pets entering the Netherlands usually need to meet EU import conditions. At a practical level, owners often need to confirm identification, vaccination status, veterinary certification, and the correct travel route before departure.",
+        "Requirements often differ depending on whether you are travelling from an EU country or from outside the EU, the country’s risk status, pet species, airline and route, and whether the animal travels in the cabin, hold, or cargo. Confirm current rules before travel."
+      ],
+      "bullets": [
+        "Microchip identification",
+        "Rabies vaccination status",
+        "Veterinary health documentation",
+        "Approved travel timing",
+        "Route-specific airline conditions"
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ]
+    },
+    {
+      "id": "pet-documents",
+      "heading": "Pet documents often required",
+      "body": [
+        "Pet relocation often requires veterinary documentation and identification records that must be prepared before travel. Exact document requirements can vary depending on where the pet is coming from and how it will travel.",
+        "Some documents are only valid for a limited period before travel, so timing matters as much as document availability."
+      ],
+      "bullets": [
+        "Microchip identification record",
+        "Rabies vaccination record",
+        "Veterinary health certificate",
+        "EU pet passport (if applicable)",
+        "Airline booking confirmation for pet travel",
+        "Owner contact details linked to identification records",
+        "Import or route-specific documents if required"
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Timing matters",
+        "text": "Some documents are only valid for a limited period before travel, so timing matters as much as document availability."
+      },
+      "ctaBlock": {
+        "title": "Prepare pet travel documents early",
+        "supportingText": "Use the moving checklist to track pet identification, vaccinations, veterinary paperwork, and travel bookings before departure.",
+        "primaryLabel": "Generate a Moving Checklist",
+        "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+        "secondaryLabel": "Plan Your First 90 Days",
+        "secondaryHref": "/netherlands/moving/tools/first-90-days/"
+      }
+    },
+    {
+      "id": "eu-pet-passport",
+      "heading": "EU pet passport",
+      "body": [
+        "Within the EU, pets often travel with an EU pet passport that records key identification and vaccination details. It is commonly used for repeat travel within the EU once the pet is already documented in that system.",
+        "An EU pet passport is not the same as every pre-entry travel certificate. Pets entering from outside the EU may initially need another type of veterinary health document before an EU pet passport becomes relevant."
+      ],
+      "bullets": [
+        "Microchip record",
+        "Vaccination history",
+        "Useful for EU movement",
+        "Not always the initial entry document for non-EU moves"
+      ]
+    },
+    {
+      "id": "rabies-vaccination",
+      "heading": "Rabies vaccination rules",
+      "body": [
+        "Rabies vaccination is one of the most important parts of pet travel planning. In many cases, the pet must first be microchipped, then vaccinated, and then wait a required period before travel.",
+        "A waiting period often applies after vaccination; exact rules depend on the route and country of origin. Confirm current requirements before booking travel. Late planning can delay departure."
+      ],
+      "bullets": [
+        "Microchip usually comes first",
+        "Vaccination timing matters",
+        "Waiting period may apply",
+        "Late planning can delay departure"
+      ],
+      "links": [
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ]
+    },
+    {
+      "id": "airline-travel",
+      "heading": "Airline and travel considerations",
+      "body": [
+        "Transporting pets internationally often involves airline rules, crate standards, seasonal limitations, and route-specific constraints. Not every airline accepts pets the same way, and not every route has the same handling options."
+      ],
+      "bullets": [
+        "Airline-approved travel crates",
+        "Cabin vs checked vs cargo handling",
+        "Seasonal or temperature restrictions",
+        "Transit and connection rules",
+        "Pet comfort during travel"
+      ],
+      "table": {
+        "headers": ["Travel topic", "Why it matters"],
+        "rows": [
+          ["Cabin vs cargo", "Depends on pet size and airline rules"],
+          ["Crate requirements", "Airlines often require approved crate dimensions"],
+          ["Seasonal restrictions", "Some routes limit pet travel in hot or cold conditions"],
+          ["Transit stops", "Can add handling and timing complexity"]
+        ]
+      },
+      "services": [
+        {
+          "name": "PetRelocation",
+          "description": "International pet relocation company helping with documentation, airline planning, and full move coordination.",
+          "url": "https://www.petrelocation.com",
+          "indicativeCost": "e.g. €2,000–€5,000+ for full door-to-door; get a quote for your route.",
+          "reason": "Pet relocation, international transport, dogs, cats",
+          "logo": { "src": "/images/affiliates/logos/petrelocation.png", "alt": "PetRelocation logo" }
+        },
+        {
+          "name": "Starwood Pet Travel",
+          "description": "Pet transport and relocation provider for complex international moves.",
+          "url": "https://www.starwoodpet.com",
+          "indicativeCost": "e.g. €1,500–€4,000+ depending on route and pet size; request a quote.",
+          "reason": "Pet transport, international move, relocation support",
+          "logo": { "src": "/images/affiliates/logos/starwood-pet-travel.svg", "alt": "Starwood Pet Travel logo" }
+        },
+        {
+          "name": "KLM",
+          "description": "Airline commonly used on international routes; pet acceptance and handling rules depend on route and animal size.",
+          "url": "https://www.klm.com",
+          "indicativeCost": "e.g. €200–€500 in cabin; €300–€800 in hold (route-dependent).",
+          "reason": "Airline, pet travel, transport",
+          "logo": { "src": "/images/affiliates/logos/klm.svg", "alt": "KLM logo" }
+        },
+        {
+          "name": "PetAir UK",
+          "description": "Pet travel specialist offering IATA-compliant travel guidance and relocation support.",
+          "url": "https://www.petairuk.com",
+          "indicativeCost": "e.g. €800–€2,500+ for assisted moves; quote for your route.",
+          "reason": "Travel crate, pet travel, relocation",
+          "logo": { "src": "/images/affiliates/logos/petair-uk.svg", "alt": "PetAir UK logo" }
+        }
+      ]
+    },
+    {
+      "id": "pet-relocation-costs",
+      "heading": "Pet relocation costs",
+      "body": [
+        "Moving with a pet can add meaningful extra costs to your relocation budget. The total depends on pet size, airline route, veterinary requirements, whether you use a relocation service, and whether special crates or transit handling are needed.",
+        "The table below gives planning ranges only. Confirm current provider pricing for your situation."
+      ],
+      "table": {
+        "headers": ["Cost area", "Typical range", "Notes"],
+        "rows": [
+          ["Veterinary documents", "€50–€200+", "Depends on vet and document requirements"],
+          ["Travel crate", "€80–€300+", "Depends on size and airline requirements"],
+          ["Airline pet transport", "€200–€1,500+", "Depends on route, airline, and pet size"],
+          ["Full relocation service", "€1,500–€5,000+", "Depends on provider and complexity"]
+        ]
+      },
+      "callout": {
+        "type": "tip",
+        "title": "Plan early to reduce cost",
+        "text": "Pet relocation is often cheapest when planned early. Last-minute travel changes or reissued documents can increase costs quickly."
+      },
+      "links": [
+        { "label": "Cost of moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" }
+      ]
+    },
+    {
+      "id": "pet-friendly-housing",
+      "heading": "Finding pet-friendly housing",
+      "body": [
+        "Housing is often one of the biggest practical issues when moving with pets. Some landlords or buildings allow pets, while others limit them or apply extra conditions.",
+        "Pet-friendly housing can take longer to find in competitive rental markets, so it helps to start early."
+      ],
+      "bullets": [
+        "Confirm pet rules before signing",
+        "Check building and landlord policies",
+        "Think about nearby walking areas or outdoor access",
+        "Consider temporary housing if you need time to find a pet-friendly long-term rental",
+        "Keep pet details ready for housing discussions"
+      ],
+      "ctaBlock": {
+        "title": "Plan pet travel and housing together",
+        "supportingText": "Use the checklist to coordinate airline planning, pet-friendly housing, and your first-week setup in the Netherlands.",
+        "primaryLabel": "Generate a Moving Checklist",
+        "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+        "secondaryLabel": "Plan Your First 90 Days",
+        "secondaryHref": "/netherlands/moving/tools/first-90-days/"
+      },
+      "links": [
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Cost of moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" }
+      ],
+      "services": [
+        {
+          "name": "HousingAnywhere",
+          "description": "Temporary housing platform that can help during the transition before securing long-term housing.",
+          "url": "https://housinganywhere.com",
+          "indicativeCost": "e.g. €1,200–€2,500/month for short-term pet-friendly rentals in major cities.",
+          "reason": "Housing, temporary housing, transition",
+          "logo": { "src": "/images/affiliates/logos/housinganywhere.png", "alt": "HousingAnywhere logo" }
+        }
+      ]
+    },
+    {
+      "id": "arrival-pets",
+      "heading": "Arrival with pets in the Netherlands",
+      "body": [
+        "After arrival, pets may need immediate practical follow-up such as confirming identification records, checking health status after travel, and arranging local veterinary care.",
+        "Arrival procedures can vary depending on route, airline, and port of entry."
+      ],
+      "bullets": [
+        "Microchip verification",
+        "Vaccination document review",
+        "Entry checks if applicable",
+        "Local veterinarian registration",
+        "Updating contact details"
+      ],
+      "services": [
+        {
+          "name": "AniCura Netherlands",
+          "description": "Veterinary clinic network in the Netherlands useful for post-arrival registration and routine care.",
+          "url": "https://www.anicura.nl",
+          "indicativeCost": "e.g. €50–€150 for check-up; consultation fees vary by clinic.",
+          "reason": "Veterinarian, post-arrival, pet care",
+          "logo": { "src": "/images/affiliates/logos/anicura.svg", "alt": "AniCura logo" }
+        },
+        {
+          "name": "Petplan Netherlands",
+          "description": "Pet insurance provider in the Netherlands for ongoing veterinary cost planning after arrival.",
+          "url": "https://www.petplan.nl",
+          "indicativeCost": "e.g. €15–€40/month depending on breed and coverage.",
+          "reason": "Pet insurance, ongoing care",
+          "logo": { "src": "/images/affiliates/logos/petplan.svg", "alt": "Petplan logo" }
+        },
+        {
+          "name": "Zooplus Netherlands",
+          "description": "Online pet supplies retailer useful for crates, food, bedding, and settling items.",
+          "url": "https://www.zooplus.nl",
+          "indicativeCost": "e.g. €80–€300 for crates and bedding; product prices online.",
+          "reason": "Pet supplies, settling in",
+          "logo": { "src": "/images/affiliates/logos/zooplus.svg", "alt": "Zooplus logo" }
+        }
+      ]
+    },
+    {
+      "id": "helping-pets-settle",
+      "heading": "Helping pets settle after relocation",
+      "body": [
+        "Relocation can be stressful for pets, especially after long travel or a major environment change. A calm routine can help dogs and cats adjust more smoothly."
+      ],
+      "bullets": [
+        "Introduce new surroundings gradually",
+        "Rebuild feeding and walking routines quickly",
+        "Find a local veterinarian early",
+        "Identify nearby parks or walking routes",
+        "Keep familiar bedding or toys available",
+        "Watch behavior and appetite after travel"
+      ]
+    },
+    {
+      "id": "practical-checklist",
+      "heading": "Practical pet relocation checklist",
+      "body": [
+        "Use this as a planning aid alongside your wider move timeline."
+      ],
+      "bullets": [
+        "Confirm whether your travel route changes document requirements",
+        "Check microchip and vaccination status early",
+        "Prepare veterinary documents within the correct timeframe",
+        "Research airline policies before booking flights",
+        "Buy the correct crate if needed",
+        "Confirm pet-friendly housing rules",
+        "Plan first-week veterinary setup after arrival",
+        "Add pet steps to your wider move timeline"
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Common mistake",
+        "text": "Treating pet travel as a last-week task. Many issues come from timing, not just missing paperwork."
+      },
+      "links": [
+        { "label": "Moving checklist for the Netherlands", "href": "/netherlands/moving-checklist-netherlands/" }
+      ]
+    }
+  ],
+
+  "toolsCtaBand": {
+    "title": "Turn this into a practical move plan",
+    "body": "Generate a checklist for your relocation, including pet documents, travel timing, housing, and arrival steps.",
+    "primaryLabel": "Generate a Moving Checklist",
+    "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryLabel": "Plan Your First 90 Days",
+    "secondaryHref": "/netherlands/moving/tools/first-90-days/"
+  },
+
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Create a practical checklist covering pet documents, travel planning, housing, and arrival admin.",
+      "ctaLabel": "Generate checklist"
+    },
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Map what usually happens after arrival so pet logistics, housing, and local routines are easier to organize.",
+      "ctaLabel": "Open planner"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Document Readiness Checker",
+      "href": "/netherlands/document-readiness-checker/",
+      "description": "Check which document categories may matter before travel and early arrival.",
+      "ctaLabel": "Check documents"
+    }
+  ],
+
+  "endCta": {
+    "title": "Turn this into a practical move plan",
+    "supportingText": "Generate a checklist for your relocation, including pet documents, travel timing, housing, and arrival steps.",
+    "ctaLabel": "Generate a Moving Checklist",
+    "ctaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtaLabel": "Plan Your First 90 Days",
+    "secondaryCtaHref": "/netherlands/moving/tools/first-90-days/"
+  },
+
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Cost of Moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" },
+      { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Moving to the Netherlands With Family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+      { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" }
+    ]
+  },
+
+  "sidebarStartLinks": [
+    { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+    { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Cost of moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" },
+    { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+    { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+  ],
+
+  "faq": [
+    {
+      "q": "Can I bring my dog to the Netherlands?",
+      "a": "Yes, in most cases. Dogs can usually enter the Netherlands if they meet EU import conditions: microchip, rabies vaccination, and the correct veterinary documentation. Exact rules depend on your country of origin and travel route—confirm current requirements before booking."
+    },
+    {
+      "q": "Can I bring my cat to the Netherlands?",
+      "a": "Yes, in most cases. Cats are typically subject to the same EU pet import framework as dogs: identification, rabies vaccination, and health documentation. Requirements can vary by origin country and airline; confirm before travel."
+    },
+    {
+      "q": "Do pets need a microchip to enter the Netherlands?",
+      "a": "In most cases, yes. Microchip identification is commonly required for international pet travel into the EU. The microchip is usually implanted before or at the same time as the rabies vaccination. Confirm current rules for your route."
+    },
+    {
+      "q": "Is rabies vaccination required for pets?",
+      "a": "In most cases, yes. Rabies vaccination is one of the main requirements for bringing pets into the Netherlands. There is often a waiting period after vaccination before travel is allowed. Exact timing depends on origin country and route—check current requirements."
+    },
+    {
+      "q": "Can pets travel in the airplane cabin?",
+      "a": "It depends on the airline and pet size. Some airlines allow small dogs and cats in the cabin in an approved carrier; others only allow pets in the hold or as cargo. Rules vary by airline, route, and animal size—confirm before booking."
+    },
+    {
+      "q": "Is quarantine required for pets entering the Netherlands?",
+      "a": "For many routes, no—pets meeting EU requirements often do not face quarantine. Rules depend on origin country and risk status. Confirm current requirements with official sources before travel."
+    },
+    {
+      "q": "Are pets allowed in rental housing in the Netherlands?",
+      "a": "It depends on the landlord and building. Some rentals allow pets; others prohibit them or set conditions. Always confirm pet policy before signing a lease. Pet-friendly housing can take longer to find in competitive markets."
+    },
+    {
+      "q": "Can expats bring pets to the Netherlands?",
+      "a": "Many expats relocate with pets. Preparation and documentation are usually required—microchip, vaccinations, veterinary paperwork, and sometimes airline or route-specific steps. Plan early and confirm current rules for your situation."
+    }
+  ],
+
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

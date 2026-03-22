@@ -1,0 +1,73 @@
+{
+  "siteName": "ExpatLife",
+  "destinationCountryName": "the Netherlands",
+  "destinationCountrySlug": "netherlands",
+  "visaHubPath": "/netherlands/visa/highly-skilled-migrant/",
+  "revalidateSeconds": 86400,
+  "hero": {
+    "subtitleTemplates": {
+      "far": "A practical planning guide for people moving from {countryName} to the Netherlands, focused on documents, timeline sequencing, and early setup steps.",
+      "near": "A practical relocation overview for people moving from {countryName} to the Netherlands, with route awareness and first-step priorities.",
+      "default": "A practical guide to plan a move from {countryName} to the Netherlands."
+    },
+    "checklistCtaLabel": "Generate your moving checklist",
+    "first90DaysCtaLabel": "Plan your first 90 days",
+    "costEstimatorCtaLabel": "Estimate your relocation cost"
+  },
+  "shipping": {
+    "far": {
+      "intro": "Long-haul moves often involve choosing between luggage-only and shipping household goods, and planning for longer lead times and customs.",
+      "notes": [
+        "Decide early between luggage-only and shipment; shared container vs full container affects cost and timing.",
+        "Build extra buffer for transit and customs; temporary housing may need to overlap with shipment arrival.",
+        "Plan document and customs requirements for household goods in advance."
+      ]
+    },
+    "near": {
+      "intro": "For nearby European moves, logistics are often simpler but still worth planning—especially if you are bringing a vehicle or larger items.",
+      "notes": [
+        "Travel with essentials first; smaller shipments or van moves may be enough.",
+        "Check customs and registration rules if bringing a vehicle or high-value items."
+      ]
+    }
+  },
+  "costSection": {
+    "disclaimer": "Costs are indicative and vary by timing, route, and supplier. Use the relocation cost estimator for a personalized range.",
+    "ctaLabel": "Estimate your full relocation cost"
+  },
+  "scenariosSection": {
+    "intro": "These scenarios show how different move types often change the order of preparation. They can help you choose the right planning path and use the tools with a better starting point."
+  },
+  "toolsSection": {
+    "intro": "Use these tools to turn the country guide into a practical step-by-step plan."
+  },
+  "timelineDefaults": {
+    "beforeMove": [
+      "Confirm your route and list required documents.",
+      "Set a relocation timeline with document lead times.",
+      "Plan travel and temporary accommodation."
+    ],
+    "arrivalWeek": [
+      "Confirm municipality registration timing.",
+      "Start address and admin setup tasks.",
+      "Track appointment confirmations and reference numbers."
+    ],
+    "first90Days": [
+      "Stabilize housing, banking, and insurance setup.",
+      "Complete remaining registrations and follow-ups.",
+      "Review long-term admin and routine milestones."
+    ],
+    "distanceAdjustments": {
+      "far": [
+        "Build extra buffer time for long-haul travel and shipping.",
+        "Prioritize temporary housing planning earlier."
+      ],
+      "near": [
+        "Use shorter travel time to stage move steps in smaller phases."
+      ]
+    }
+  },
+  "checklistPreview": {
+    "summary": "Use the tools below to turn this guide into a personalized step-by-step plan."
+  }
+}

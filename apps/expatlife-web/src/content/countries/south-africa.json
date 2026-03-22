@@ -1,0 +1,142 @@
+{
+  "slug": "south-africa",
+  "name": "South Africa",
+  "shortName": "SA",
+  "iso2": "ZA",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["English", "Afrikaans"],
+  "travel": {
+    "typicalFlightTime": "10-12 hours",
+    "notes": [
+      "Most relocation routes involve long-haul travel.",
+      "Temporary accommodation planning is often more important for long-distance movers."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Employer-sponsored relocation",
+      "Technology and engineering roles",
+      "Family relocation",
+      "Lifestyle and safety considerations"
+    ],
+    "popularDutchCities": ["Amsterdam", "Eindhoven", "Rotterdam", "Utrecht"],
+    "commonSectors": ["Technology", "Engineering", "Finance", "Logistics"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly Skilled Migrant",
+      "Partner / Family route",
+      "Study route"
+    ],
+    "notes": [
+      "Many South Africans relocate through employer sponsorship.",
+      "Visa details depend on the exact route and sponsor situation."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Passport",
+      "Birth certificate",
+      "Marriage certificate (if applicable)",
+      "Employment contract",
+      "Proof of address",
+      "Academic qualification records"
+    ],
+    "countrySpecificNotes": [
+      "Obtaining replacement civil documents may take time.",
+      "Translation or legalization may be relevant depending on document use."
+    ],
+    "sources": [
+      {
+        "label": "Department of Home Affairs",
+        "name": "South African Department of Home Affairs",
+        "website": "https://www.dha.gov.za",
+        "contactSummary": "Primary source for passports, birth certificates, marriage certificates and civil records."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "ZAR / EUR",
+    "ranges": [
+      {
+        "key": "oneWayFlight",
+        "label": "One-way flight",
+        "value": "R8,000–R15,000",
+        "note": "Varies by season and departure city."
+      },
+      {
+        "key": "shipping",
+        "label": "Shipping household goods",
+        "value": "EUR 2,000–6,000",
+        "note": "Depends on volume and method (shared vs full container)."
+      },
+      {
+        "key": "temporaryHousing",
+        "label": "Temporary housing (monthly)",
+        "value": "EUR 1,200–2,500",
+        "note": "Large city prices tend to be higher."
+      },
+      {
+        "key": "visaDocumentPrep",
+        "label": "Visa / permit / document prep",
+        "value": "EUR 500–2,000+",
+        "note": "Fees, legalization, translations where required."
+      },
+      {
+        "key": "firstMonthSetup",
+        "label": "First month setup",
+        "value": "EUR 2,000–4,000",
+        "note": "Deposit, first rent, utilities, initial expenses."
+      },
+      {
+        "key": "moneyTransferBanking",
+        "label": "International transfer / banking setup",
+        "value": "Varies",
+        "note": "Transfer fees and first-account setup."
+      }
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration information and residence permit routes."
+      },
+      {
+        "label": "Netherlands Embassy in South Africa",
+        "name": "Embassy of the Kingdom of the Netherlands in South Africa",
+        "website": "https://www.netherlandsandyou.nl/your-country-and-the-netherlands/south-africa",
+        "contactSummary": "Country-specific consular and visa information."
+      }
+    ]
+  },
+  "seo": {
+    "title": "Moving to the Netherlands from South Africa | Visa, Costs, Timeline",
+    "description": "A practical guide for people moving from South Africa to the Netherlands: visa awareness, documents, relocation costs, timing, and tools to plan your move."
+  },
+  "faqOverrides": [
+    {
+      "q": "Do South Africans need a visa to move to the Netherlands?",
+      "a": "The answer depends on the purpose of stay and route used. Many long-stay moves involve a residence permit route such as employer sponsorship or family reunification."
+    },
+    {
+      "q": "What documents do South Africans often prepare before moving?",
+      "a": "A typical starter pack includes identity documents, civil records, employment papers, and housing-related documents."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Software engineer relocating from Cape Town",
+      "summary": "A South African professional moving with a job offer often focuses first on employment documentation, temporary housing, and municipality registration after arrival."
+    }
+  ],
+  "affiliateContext": {
+    "preferredCategories": ["banking", "housing", "insurance", "shipping"],
+    "customNotes": [
+      "Long-distance movers often compare both money transfer and shipping services."
+    ]
+  }
+}

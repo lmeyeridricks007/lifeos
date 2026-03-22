@@ -1,0 +1,309 @@
+{
+  "slug": "bsn-registration",
+  "path": "/netherlands/bsn-registration/",
+  "title": "BSN Registration in the Netherlands",
+  "metaTitle": "BSN Registration in the Netherlands: How Expats Get a BSN",
+  "subtitle": "How expats receive a BSN (citizen service number) when registering with a Dutch municipality.",
+  "description": "Learn how BSN registration works in the Netherlands. Understand when expats receive a citizen service number, which documents may be requested, and what to arrange next.",
+  "breadcrumbLabel": "BSN registration",
+  "hero": {
+    "eyebrow": "Arrival Admin",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/bsn-registration-hero.png",
+      "alt": "Documents, passport, and BSN registration materials on a table with a person at a window overlooking a European street"
+    }
+  },
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "why-it-matters", "label": "Why the BSN is important" },
+    { "id": "how-you-receive-it", "label": "How you usually receive your BSN" },
+    { "id": "bsn-registration-timeline", "label": "BSN registration timeline" },
+    { "id": "documents", "label": "Documents often requested during registration" },
+    { "id": "where-you-register", "label": "Where you register for a BSN" },
+    { "id": "appointment-timing", "label": "When expats usually schedule their appointment" },
+    { "id": "what-next", "label": "What expats typically arrange next" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "useful-services", "label": "Useful services" }
+  ],
+  "heroCta": {
+    "title": "Plan your arrival admin",
+    "supportingText": "Use the Moving Checklist Generator to see what usually happens before and after BSN registration.",
+    "primaryCtaLabel": "Generate a Moving Checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtaLabel": "Check Document Readiness",
+    "secondaryCtaHref": "/netherlands/moving/tools/document-readiness/"
+  },
+  "midPageCta": {
+    "badge": "Tool",
+    "title": "Check your document readiness",
+    "description": "See what documents may apply to your situation before your appointment.",
+    "ctaLabel": "Check Document Readiness",
+    "ctaHref": "/netherlands/moving/tools/document-readiness/"
+  },
+  "midPageCtaAfterSectionId": "documents",
+  "endCta": {
+    "title": "Plan your first weeks in the Netherlands",
+    "supportingText": "Once your BSN is sorted, use the First 90 Days Planner to map what expats often do next.",
+    "ctaLabel": "Plan Your First 90 Days",
+    "ctaHref": "/netherlands/moving/tools/first-90-days/"
+  },
+  "quickAnswers": [
+    {
+      "label": "What is a BSN?",
+      "value": "A personal citizen service number used by Dutch government systems."
+    },
+    {
+      "label": "When do you receive it?",
+      "value": "Usually during municipality registration after arrival."
+    },
+    {
+      "label": "Why it matters",
+      "value": "You need it for salary payments, banking, health insurance and DigiD."
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "A BSN (burgerservicenummer) is the personal identification number used by Dutch government systems. Most expats receive their BSN when they register their address with a municipality after arriving in the Netherlands. This guide explains how BSN registration works, which documents may be requested, and what people usually arrange next.",
+        "You do not usually apply separately for a BSN; it is created when you register with your municipality. Timing and document requirements vary by municipality and situation. Receiving a BSN unlocks many next steps, from opening a bank account to arranging health insurance and applying for DigiD."
+      ],
+      "bullets": [
+        "Register your address at the municipality (gemeente)",
+        "Attend your municipality appointment",
+        "Receive your BSN",
+        "Use your BSN for banking, insurance, work, and DigiD"
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" }
+      ]
+    },
+    {
+      "id": "why-it-matters",
+      "heading": "Why the BSN is important",
+      "body": [
+        "The BSN (burgerservicenummer) is a personal identification number used across government and administrative systems in the Netherlands. Many everyday services rely on your BSN to connect your identity with tax, healthcare, and employment records."
+      ],
+      "bullets": [
+        "Employment contracts and salary processing typically require your BSN",
+        "Health insurance registration uses your BSN",
+        "Dutch bank account opening often requires your BSN",
+        "DigiD setup is linked to your BSN",
+        "The Dutch tax administration identifies you using your BSN",
+        "Government systems and records use your BSN for official correspondence"
+      ],
+      "links": [
+        { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/#bsn" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "DigiD for expats", "href": "/netherlands/digid-awareness/" }
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "how-you-receive-it",
+      "heading": "How you usually receive your BSN",
+      "body": [
+        "In most situations you do not apply separately for a BSN. The number is created as part of municipality address registration. You schedule an appointment, register your residential address, and the municipality processes the registration and confirms your BSN."
+      ],
+      "bullets": [
+        "Arrive in the Netherlands",
+        "Schedule a municipality registration appointment",
+        "Register your residential address",
+        "The municipality processes your registration",
+        "Your BSN is assigned and confirmed"
+      ],
+      "personaExample": {
+        "title": "Example: expat arriving for work",
+        "text": "An expat moving to Amsterdam for work typically schedules a municipality appointment shortly after arrival. During the appointment they register their address and receive their BSN, which then allows them to open a bank account and finalize health insurance."
+      },
+      "links": [
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/register-address-netherlands/" },
+        { "label": "Municipality registration", "href": "/netherlands/municipality-registration-netherlands/" }
+      ]
+    },
+    {
+      "id": "bsn-registration-timeline",
+      "heading": "BSN registration timeline",
+      "body": [
+        "A typical flow for most expats helps you see when and how BSN registration fits into the arrival sequence. Many expats complete these steps within their first days or weeks after arrival. Busy municipalities may have longer waits for appointments; registration timing can affect when you can arrange banking, insurance, and other admin."
+      ],
+      "bullets": [
+        "Arrive in the Netherlands",
+        "Secure temporary or permanent housing",
+        "Schedule your municipality registration appointment",
+        "Register your address at the appointment",
+        "Receive your BSN during or after registration"
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" }
+      ]
+    },
+    {
+      "id": "documents",
+      "heading": "Documents often requested during registration",
+      "body": [
+        "Municipalities may request different documents depending on your situation and immigration status. Document requirements vary by municipality and by your immigration and household situation. Preparing documents ahead of time can help avoid delays during your appointment."
+      ],
+      "bullets": [
+        "Passport or identity document",
+        "Residence permit (if applicable)",
+        "Rental agreement or housing confirmation",
+        "Birth certificate (sometimes requested)",
+        "Marriage certificate when registering with a partner (if applicable)",
+        "Supporting documents as requested by your municipality"
+      ],
+      "image": {
+        "src": "/images/infographics/bsn-registration-documents.png",
+        "alt": "Infographic: documents often requested for BSN registration in the Netherlands—passport, residence permit, rental agreement, birth certificate, marriage certificate, and supporting documents from the municipality"
+      },
+      "links": [
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Document Readiness Checker (tool)", "href": "/netherlands/moving/tools/document-readiness/" },
+        { "label": "Moving with family", "href": "/netherlands/moving-to-the-netherlands-with-family/" }
+      ]
+    },
+    {
+      "id": "where-you-register",
+      "heading": "Where you register for a BSN",
+      "body": [
+        "You register at the municipality (gemeente) where you live. Most municipalities require an appointment; the exact booking process and document requirements can vary. Larger cities such as Amsterdam, Rotterdam, Utrecht, The Hague, and Eindhoven are common among expats and may have longer wait times for slots."
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Confirm with your municipality",
+        "text": "Always confirm the latest appointment and document requirements on your municipality's official website."
+      },
+      "links": [
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/register-address-netherlands/" },
+        { "label": "Municipality registration", "href": "/netherlands/municipality-registration-netherlands/" }
+      ]
+    },
+    {
+      "id": "appointment-timing",
+      "heading": "When expats usually schedule their appointment",
+      "body": [
+        "Many expats schedule their municipality appointment shortly after arrival. Some municipalities allow booking in advance if you already know your address. Availability may vary in large cities, and your registration timing often influences when you can arrange banking and insurance."
+      ],
+      "bullets": [
+        "Some cities require or prefer online appointments",
+        "Availability may vary depending on demand",
+        "Temporary housing may not always support registration—check with your municipality",
+        "Registration timing can influence how quickly you can complete other admin"
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "What tends to take longer than expected",
+        "text": "Limited appointment availability in busy periods, temporary housing that may not support registration, and busy relocation seasons can slow scheduling. As soon as you know the address you will register at, check municipality appointment availability."
+      },
+      "links": [
+        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      ]
+    },
+    {
+      "id": "what-next",
+      "heading": "What expats typically arrange next",
+      "body": [
+        "Once you receive your BSN, many practical setup tasks become easier to complete because your identity is now registered in Dutch administrative systems. Expats often use this moment to finish setting up the essentials for daily life."
+      ],
+      "bullets": [
+        "Opening a Dutch bank account",
+        "Arranging health insurance",
+        "Activating a mobile phone plan",
+        "Setting up DigiD",
+        "Planning first-90-days admin and follow-up tasks"
+      ],
+      "links": [
+        { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/#bsn" },
+        { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "Moving Checklist Generator (tool)", "href": "/netherlands/moving/tools/moving-checklist/" },
+        { "label": "First 90 Days Planner (tool)", "href": "/netherlands/moving/tools/first-90-days/" }
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    }
+  ],
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Create a practical checklist covering documents, arrival admin, banking, insurance, and your first months in the Netherlands.",
+      "ctaLabel": "Generate a Moving Checklist"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Check Document Readiness",
+      "href": "/netherlands/moving/tools/document-readiness/",
+      "description": "See what documents may apply to your municipality appointment and move.",
+      "ctaLabel": "Check Document Readiness"
+    },
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Map what expats often do in the first weeks and months after arrival.",
+      "ctaLabel": "Plan Your First 90 Days"
+    }
+  ],
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      { "label": "Register your address in the Netherlands", "href": "/netherlands/register-address-netherlands/" },
+      { "label": "Municipality registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
+      { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+      { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+      { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/#bsn" },
+      { "label": "DigiD for expats", "href": "/netherlands/digid-awareness/" },
+      { "label": "After arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
+      { "label": "Moving with family", "href": "/netherlands/moving-to-the-netherlands-with-family/" }
+    ]
+  },
+  "faq": [
+    {
+      "q": "How long does it take to receive a BSN?",
+      "a": "Most expats receive their BSN during or shortly after the municipality registration appointment. Exact timing can vary by municipality and situation."
+    },
+    {
+      "q": "Can you open a bank account without a BSN?",
+      "a": "Some banks allow temporary setups or specific options for people who do not yet have a BSN, but most standard accounts eventually require one. See our guide on opening a bank account before BSN for details."
+    },
+    {
+      "q": "Do students receive a BSN?",
+      "a": "Students who register their address in the Netherlands usually receive a BSN as part of that registration."
+    },
+    {
+      "q": "Can you receive a BSN without registering an address?",
+      "a": "Some temporary options exist for non-residents in specific situations, but most expats receive a BSN when they register their address with a municipality."
+    },
+    {
+      "q": "Do all municipalities ask for the same documents?",
+      "a": "No. Document requirements vary by municipality and by your immigration and household situation. Always check your municipality's official website for the latest list."
+    },
+    {
+      "q": "When should I book my municipality appointment?",
+      "a": "Many expats book as soon as they know the address they will register at. In busier cities, appointment slots can be limited, so checking availability early is often helpful."
+    }
+  ],
+  "resourcesAffiliatePlacementId": "resources_end",
+  "servicesSectionTitle": "Services expats commonly use after receiving a BSN",
+  "servicesIntro": "These services are often used when setting up banking, insurance, or daily admin once you have your BSN. We may earn a commission if you use certain links, at no extra cost to you.",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

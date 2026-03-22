@@ -1,0 +1,349 @@
+{
+  "slug": "moving-to-netherlands-cost",
+  "path": "/netherlands/moving-to-netherlands-cost/",
+  "title": "Cost of Moving to the Netherlands",
+  "metaTitle": "Cost of Moving to the Netherlands: Budget, Expenses, and What to Plan For",
+  "subtitle": "What to budget for when relocating: travel, documents, housing, shipping, and your first month of setup.",
+  "description": "How much does it cost to move to the Netherlands? See typical relocation expenses, budget examples, housing and document costs, and how to plan your move.",
+  "breadcrumbLabel": "Moving Cost",
+
+  "hero": {
+    "eyebrow": "Planning",
+    "badges": ["Cost Guide", "Indicative ranges only"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/moving-checklist-hero.png",
+      "alt": "Expat planning relocation costs for moving to the Netherlands"
+    }
+  },
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "estimated-relocation-costs", "label": "Estimated relocation costs" },
+    { "id": "main-cost-categories", "label": "Main cost categories" },
+    { "id": "example-budgets", "label": "Example budgets" },
+    { "id": "what-people-underestimate", "label": "What people often underestimate" },
+    { "id": "ways-to-reduce-costs", "label": "Ways to reduce or manage costs" },
+    { "id": "cost-areas-variability", "label": "Typical cost areas and variability" },
+    { "id": "checklist", "label": "Planning checklist" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "useful-services", "label": "Useful services" }
+  ],
+
+  "heroCta": {
+    "title": "Plan your relocation budget",
+    "supportingText": "Use the Moving Checklist Generator to see which costs are likely to apply to your move, when they usually happen, and what to prepare before arrival.",
+    "primaryCtaLabel": "Generate a Moving Checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtaLabel": "Check your documents",
+    "secondaryCtaHref": "/netherlands/moving/tools/document-readiness/",
+    "tertiaryCtaLabel": "Read the full moving guide",
+    "tertiaryCtaHref": "/netherlands/moving-to-the-netherlands/"
+  },
+
+  "midPageCta": {
+    "badge": "Recommended tool",
+    "title": "Build your budget plan step by step",
+    "description": "Use the Moving Checklist Generator to see which of these cost categories are likely to apply to your move.",
+    "ctaLabel": "Generate a Moving Checklist",
+    "ctaHref": "/netherlands/moving/tools/moving-checklist/"
+  },
+  "midPageCtaAfterSectionId": "main-cost-categories",
+
+  "endCta": {
+    "title": "Plan your first months after arrival",
+    "supportingText": "Once you understand your moving costs, use the First 90 Days Planner to map what usually happens after arrival.",
+    "ctaLabel": "Plan your first 90 days",
+    "ctaHref": "/netherlands/moving/tools/first-90-days/"
+  },
+
+  "sidebarStartLinks": [
+    { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+    { "label": "Read the full moving guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+    { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Plan your first 90 days", "href": "/netherlands/moving/tools/first-90-days/" }
+  ],
+
+  "servicesIntro": "These services are commonly used by expats when planning and funding a move. Compare options and confirm requirements for your situation. Some links may be affiliate links.",
+  "servicesSectionTitle": "Services commonly used by expats",
+  "resourcesAffiliatePlacementId": "resources_end",
+
+  "quickAnswers": [
+    {
+      "label": "What this page shows",
+      "value": "Typical cost areas when moving to the Netherlands, example planning ranges, and what many expats underestimate."
+    },
+    {
+      "label": "What costs typically include",
+      "value": "Travel, visa/document preparation (apostilles, translations), temporary and first rental (deposit + rent), shipping or luggage, and first-month setup (transport, SIM, groceries, basics)."
+    },
+    {
+      "label": "What amounts depend on",
+      "value": "Distance and how you travel, whether you need visas or document prep, household size and housing, whether you ship goods or travel light, and city or area."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "The cost of moving to the Netherlands depends on your origin country, visa route, household size, housing choices, and whether you ship belongings. This guide explains the main relocation cost categories, typical budget ranges, and what many expats underestimate when planning their move.",
+        "All figures on this page are indicative planning ranges only. Actual costs vary. We do not give specific official fees unless we have a vetted source; we focus on what to plan for and where costs tend to vary."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Moving checklist for the Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ]
+    },
+    {
+      "id": "estimated-relocation-costs",
+      "heading": "Estimated relocation costs",
+      "body": [
+        "These are broad example ranges for planning only. Actual costs vary by origin country, visa route, family size, housing choices, and whether you travel light or relocate with shipping."
+      ],
+      "table": {
+        "headers": ["Category", "Typical example range"],
+        "rows": [
+          ["Flights / travel", "€150 – €1,200+"],
+          ["Documents / visas / translations", "€100 – €1,000+"],
+          ["Temporary housing / deposit / first rent", "€2,000 – €6,000+"],
+          ["Shipping / luggage", "€0 – €4,000+"],
+          ["First-month setup", "€300 – €1,200+"]
+        ]
+      },
+      "summaryBox": {
+        "title": "Typical total relocation budget",
+        "value": "€3,000 – €12,000+",
+        "note": "Solo EU moves can fall below this range; family or non-EU relocations can exceed it."
+      }
+    },
+    {
+      "id": "main-cost-categories",
+      "heading": "Main cost categories",
+      "body": [
+        "Below are the main cost areas to plan for. Each varies by situation; we have linked to guides that go into more detail where relevant."
+      ],
+      "bullets": [
+        "Flights and travel — One-way or relocation travel costs depend on origin country, timing, and baggage. See: Moving timeline.",
+        "Documents and visas — Can include certificates, translations, apostilles, and permit-related admin. See: Documents needed to move.",
+        "Housing — Usually the largest cost area: deposit, first rent, and temporary accommodation. See: Moving with family, Documents needed, timeline.",
+        "Shipping and luggage — From travelling light (€0) to international movers; high variability by volume and route.",
+        "First month setup — Transport, SIM, groceries, basic household items, and one-off setup costs.",
+        "Emergency buffer — Many expats keep €1,000 – €3,000 aside for delays, extra admin, or unexpected setup costs."
+      ],
+      "links": [
+        { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Moving with family", "href": "/netherlands/moving-to-netherlands-with-family/" }
+      ]
+    },
+    {
+      "id": "example-budgets",
+      "heading": "Example relocation budgets"
+    },
+    {
+      "id": "emergency-buffer",
+      "heading": "Emergency buffer",
+      "body": [
+        "Many expats keep an additional buffer for delays, temporary housing changes, extra admin, or setup costs."
+      ],
+      "summaryBox": {
+        "title": "Suggested range",
+        "value": "€1,000 – €3,000",
+        "note": "Some people need less; others prefer a larger buffer if they are relocating with family or arriving without housing confirmed."
+      }
+    },
+    {
+      "id": "what-people-underestimate",
+      "heading": "What people often underestimate",
+      "body": [
+        "Deposit and first rent together often add up to two or three months' rent; some landlords also ask for proof of income or a higher deposit for newcomers.",
+        "Temporary housing before securing long-term housing can stretch the budget, especially in popular cities. Document translations and apostilles can take weeks and add up, especially if you need several certificates. Registration-related delays can mean extra nights in temporary accommodation or rush fees. Extra baggage or shipping often costs more than people expect. For families, travel, documents, deposit, and first-month setup all multiply.",
+        "Below are two scenario callouts to keep in mind."
+      ],
+      "personaExample": {
+        "title": "Solo EU move",
+        "text": "Typically lower document and visa costs; focus on travel, deposit, first rent, and first-month setup. A small buffer helps if registration or banking takes longer. Housing choice is often the biggest swing factor."
+      },
+      "callout": {
+        "type": "tip",
+        "title": "Non-EU and family moves",
+        "text": "Non-EU moves usually involve more document prep (apostilles, translations, permit fees) and sometimes proof of funds. Family moves multiply travel, documents, deposit, first rent, and often shipping; school and childcare may add to initial setup. See our guides on moving with family and EU vs non-EU moves."
+      },
+      "links": [
+        { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+        { "label": "EU vs non-EU moving to the Netherlands", "href": "/netherlands/eu-vs-non-eu-moving-to-netherlands/" }
+      ]
+    },
+    {
+      "id": "ways-to-reduce-costs",
+      "heading": "Ways to reduce or manage costs",
+      "body": [
+        "Practical steps that often help keep relocation costs under control:"
+      ],
+      "bullets": [
+        "Start document preparation early to avoid rush fees — use the Document Readiness tool to see what applies.",
+        "Compare temporary housing and confirm whether it allows registration.",
+        "Travel lighter if possible and compare baggage vs shipping.",
+        "Spread setup spending over your first month where possible.",
+        "Keep a checklist so you do not miss steps that create extra costs — use the Moving Checklist Generator.",
+        "Budget deposit and first rent before optimizing smaller costs."
+      ],
+      "links": [
+        { "label": "Document Readiness tool", "href": "/netherlands/moving/tools/document-readiness/" },
+        { "label": "Moving Checklist Generator", "href": "/netherlands/moving/tools/moving-checklist/" },
+        { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ]
+    },
+    {
+      "id": "cost-areas-variability",
+      "heading": "Typical cost areas and variability",
+      "body": [
+        "How much each cost area tends to vary, and why. Use this to prioritise what you research and budget for."
+      ],
+      "table": {
+        "headers": ["Cost area", "Typical variability", "Why it varies"],
+        "rows": [
+          ["Flights / travel", "Medium–High", "Origin country, season, luggage"],
+          ["Documents / visas", "Medium–High", "Nationality, translations, apostilles, permit route"],
+          ["Housing deposit + first rent", "High", "City, property type, landlord requirements"],
+          ["Temporary housing", "Medium–High", "City, duration, season"],
+          ["Shipping / luggage", "High", "Volume, route, urgency"],
+          ["First month setup", "Medium", "Transport, SIM, groceries, household basics"]
+        ]
+      }
+    },
+    {
+      "id": "checklist",
+      "heading": "Planning checklist",
+      "body": [
+        "Use this list to make sure you have budgeted for the main areas that apply to your move."
+      ],
+      "bullets": [
+        "List all document and visa-related costs for your route.",
+        "Budget for deposit and at least first month's rent.",
+        "Plan travel and luggage or shipping.",
+        "Include a buffer for first-month setup and delays.",
+        "Use the First 90 Days planner to sequence post-arrival steps."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Moving Checklist tool", "href": "/netherlands/moving/tools/moving-checklist/" },
+        { "label": "First 90 Days planner", "href": "/netherlands/moving/tools/first-90-days/" },
+        { "label": "First 90 days in the Netherlands (guide)", "href": "/netherlands/first-90-days-netherlands/" }
+      ]
+    }
+  ],
+
+  "exampleBudgets": [
+    {
+      "title": "Solo move from within the EU",
+      "items": [
+        "Travel (train/flight)",
+        "Temporary housing / deposit",
+        "First rent",
+        "Transport / SIM / basics"
+      ],
+      "totalRange": "€2,500 – €4,500",
+      "note": "Housing choice is often the biggest swing factor."
+    },
+    {
+      "title": "Non-EU professional relocating for work",
+      "items": [
+        "Flights",
+        "Documents / translations / permit-related prep",
+        "Deposit + first rent",
+        "Luggage / shipping",
+        "First month setup"
+      ],
+      "totalRange": "€4,500 – €8,000",
+      "note": "Non-EU moves usually involve more document prep."
+    },
+    {
+      "title": "Family relocation",
+      "items": [
+        "Multiple flight tickets",
+        "Family documents / translations",
+        "Larger deposit / first rent",
+        "More luggage or shipping",
+        "First month household setup"
+      ],
+      "totalRange": "€8,000 – €15,000+",
+      "note": "Family moves multiply travel, deposit, and setup costs."
+    }
+  ],
+
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Create a practical checklist covering documents, housing, travel, arrival admin, and your first months in the Netherlands.",
+      "ctaLabel": "Open tool →"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Document Readiness",
+      "href": "/netherlands/moving/tools/document-readiness/",
+      "description": "See which documents apply to your situation and when to prepare them.",
+      "ctaLabel": "Open tool →"
+    },
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "See what most expats set up after arrival and plan your first weeks.",
+      "ctaLabel": "Open planner →"
+    }
+  ],
+
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the full Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+      { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Moving checklist for the Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+      { "label": "Moving with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+      { "label": "EU vs non-EU moving to the Netherlands", "href": "/netherlands/eu-vs-non-eu-moving-to-netherlands/" },
+      { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/#bsn" }
+    ]
+  },
+
+  "faq": [
+    {
+      "q": "How much money do I need to move to the Netherlands?",
+      "a": "There is no single number; it depends on your route, household, and city. Typical total relocation budgets range from around €3,000 to €12,000 or more. Solo EU moves can fall below that; family or non-EU relocations often exceed it. Plan for travel, documents, deposit and first rent, first-month living costs, and a buffer. Use the Moving Checklist and Document Readiness tools to list what applies to you."
+    },
+    {
+      "q": "What are the main cost categories when relocating?",
+      "a": "Common categories are: travel, visa/document preparation, temporary and first housing (deposit + rent), shipping or luggage, and first-month setup (transport, SIM, groceries, basics). We describe these in more detail on this page and link to the Moving checklist and Documents needed guides."
+    },
+    {
+      "q": "Do costs differ for EU vs non-EU moves?",
+      "a": "Often yes. Non-EU moves usually involve visa/permit fees and more document preparation (apostilles, translations). Housing and first-month costs depend on household and city rather than nationality. See our EU vs non-EU moving guide for more."
+    },
+    {
+      "q": "Is housing usually the biggest moving cost?",
+      "a": "For many people, yes. Deposit (often one to three months' rent) plus first month's rent and possibly temporary accommodation before you secure a long-term place can add up to the largest share of relocation costs. Budget for housing first, then other categories."
+    },
+    {
+      "q": "Should I budget an emergency buffer?",
+      "a": "Many expats do. A typical suggested range is €1,000 – €3,000 for delays, temporary housing changes, extra admin, or setup costs. Some need less; others prefer a larger buffer if relocating with family or arriving without housing confirmed."
+    }
+  ],
+
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

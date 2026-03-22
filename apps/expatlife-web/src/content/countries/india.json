@@ -1,0 +1,184 @@
+{
+  "slug": "india",
+  "name": "India",
+  "shortName": "IN",
+  "iso2": "IN",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "heroImageAlt": "A man planning a move from India to the Netherlands, with a world map showing the route on his laptop and a canal city view outside. The desk includes a passport, documents, and a travel case, emphasizing the journey of international relocation.",
+  "languages": ["English", "Hindi"],
+  "travel": {
+    "typicalFlightTime": "8–11 hours",
+    "notes": [
+      "Long-haul route; many Indian professionals relocate through international tech companies.",
+      "Planning documentation and housing early is important due to visa processing timelines and housing demand."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Employer-sponsored relocation",
+      "Technology and engineering roles",
+      "International business environment",
+      "English-speaking workplaces",
+      "Higher education and research",
+      "Family relocation"
+    ],
+    "popularDutchCities": ["Amsterdam", "Eindhoven", "Rotterdam", "Utrecht", "The Hague"],
+    "commonSectors": ["Technology", "Engineering", "Finance", "Consulting", "Research / academia"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly Skilled Migrant visa — employer-sponsored route used by most Indian professionals",
+      "EU Blue Card — alternative for highly qualified workers",
+      "Partner / family visa — for spouses or partners of Dutch residents",
+      "Study visa — for students relocating for Dutch universities"
+    ],
+    "notes": [
+      "Many Indian professionals relocate through global technology companies.",
+      "Route eligibility depends on sponsor and personal circumstances; confirm with official sources."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Passport",
+      "Birth certificate",
+      "Marriage certificate (if applicable)",
+      "Employment contract",
+      "Academic degree certificates",
+      "Proof of address",
+      "Visa sponsorship documentation"
+    ],
+    "countrySpecificNotes": [
+      "Educational certificates may need verification or apostille depending on visa route."
+    ],
+    "sources": [
+      {
+        "label": "Passport Seva",
+        "name": "Passport Seva",
+        "website": "https://www.passportindia.gov.in",
+        "contactSummary": "Passport and related identity document services."
+      },
+      {
+        "label": "Netherlands Embassy in India",
+        "name": "Embassy of the Kingdom of the Netherlands in India",
+        "website": "https://www.netherlandsandyou.nl/your-country-and-the-netherlands/india",
+        "contactSummary": "Country-specific consular and visa information."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "INR / EUR",
+    "ranges": [
+      {
+        "key": "oneWayFlight",
+        "label": "One-way flight",
+        "value": "€450 – €900",
+        "note": "Varies by route and season."
+      },
+      {
+        "key": "shipping",
+        "label": "Shipping household goods",
+        "value": "€2,500 – €6,000",
+        "note": "Volume and method determine cost; sea freight typically 4–8 weeks."
+      },
+      {
+        "key": "temporaryHousing",
+        "label": "Temporary housing (monthly)",
+        "value": "€1,300 – €2,800",
+        "note": "Depends on city and season."
+      },
+      {
+        "key": "visaDocumentPrep",
+        "label": "Residence permit costs",
+        "value": "€300 – €400",
+        "note": "Fees vary by route and application type."
+      },
+      {
+        "key": "firstMonthSetup",
+        "label": "Initial setup costs",
+        "value": "€1,200 – €2,500",
+        "note": "Deposit, first rent, utilities, initial expenses."
+      },
+      {
+        "key": "moneyTransferBanking",
+        "label": "International transfer / banking setup",
+        "value": "Varies",
+        "note": "Transfer fees and first-account setup."
+      }
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration information and residence permit routes."
+      },
+      {
+        "label": "Netherlands Embassy in India",
+        "name": "Embassy of the Kingdom of the Netherlands in India",
+        "website": "https://www.netherlandsandyou.nl/your-country-and-the-netherlands/india",
+        "contactSummary": "Country-specific consular and visa information."
+      }
+    ]
+  },
+  "shipping": {
+    "intro": "Shipping from India typically takes 4–8 weeks by sea freight. Many movers initially stay in temporary accommodation.",
+    "notes": [
+      "Common options: luggage-only relocation, shared container shipping, or full container shipping.",
+      "Build buffer for transit and customs; temporary housing often overlaps with shipment arrival.",
+      "Plan document and customs requirements for household goods in advance."
+    ]
+  },
+  "seo": {
+    "title": "Moving to the Netherlands from India | Visa, Costs & Relocation Guide",
+    "description": "A practical relocation guide for Indians moving to the Netherlands including visa routes, relocation costs, documents, and planning tools."
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Indian citizens need a visa to move to the Netherlands?",
+      "a": "Yes, for stays longer than 90 days. Indian citizens need a residence permit. Common routes include the Highly Skilled Migrant visa (employer sponsorship), EU Blue Card, partner visa, or study visa."
+    },
+    {
+      "q": "How long does a Dutch work visa take for Indians?",
+      "a": "Processing times vary by route. Highly Skilled Migrant applications are often processed within a few months once the employer is a recognised sponsor and documents are complete. Check IND for current processing times."
+    },
+    {
+      "q": "How much does relocation from India cost?",
+      "a": "Costs vary by household size, relocation packages, and housing. Typical ranges include flights (€450–€900), shipping (€2,500–€6,000), temporary housing (€1,300–€2,800/month), and permit and setup costs. Use the relocation cost estimator for a personalised range."
+    },
+    {
+      "q": "Can Indian professionals work in the Netherlands?",
+      "a": "Yes, with a valid residence permit that allows work, such as the Highly Skilled Migrant visa or EU Blue Card. Most Indian professionals relocate through employer sponsorship."
+    },
+    {
+      "q": "What documents are required for Indian professionals moving to the Netherlands?",
+      "a": "Typically passport, birth and marriage certificates if relevant, employment contract, academic degree certificates, proof of address, and visa sponsorship documentation. Educational certificates may need verification or apostille."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Software engineer relocating from Bangalore",
+      "summary": "Focus on Highly Skilled Migrant visa, technology companies, and Amsterdam or Eindhoven tech hubs. Plan document prep, housing search, and first-week registration."
+    },
+    {
+      "title": "IT professional relocating through multinational company",
+      "summary": "Focus on corporate relocation packages and employer sponsorship. Coordinate visa, housing, and registration with employer support."
+    },
+    {
+      "title": "Student relocating for Dutch university",
+      "summary": "Focus on study visa, student housing, and registration steps. Plan for proof of enrolment, funds, and health insurance."
+    },
+    {
+      "title": "Family relocation from India",
+      "summary": "Focus on school planning, housing search, and family documentation. Plan for longer lead time on documents and housing that fits family size."
+    }
+  ],
+  "affiliateContext": {
+    "preferredCategories": ["banking", "housing", "insurance", "shipping", "mobile"],
+    "customNotes": [
+      "Indian movers often compare international transfers, temporary housing, and shipping options for long-distance relocations."
+    ]
+  }
+}

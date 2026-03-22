@@ -1,0 +1,21 @@
+{
+  "id": "nl-moving-without-job-sidebar",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/move-to-netherlands-without-job/",
+    "slot": "sidebar"
+  },
+  "variant": "cards",
+  "title": "Useful services when moving without a job",
+  "intro": "Temporary housing, money transfers, banking, and insurance comparison often matter before local income is in place.",
+  "categoryOrder": ["housing", "banking", "insurance"],
+  "items": [
+    { "providerId": "housinganywhere", "reason": "Temporary housing for internationals before long-term setup." },
+    { "providerId": "wise", "reason": "Multi-currency and transfers before local banking is arranged." },
+    { "providerId": "bunq", "reason": "App-first Dutch banking often used by expats during early setup." },
+    { "providerId": "independer", "reason": "Compare Dutch health insurance after arrival." }
+  ],
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

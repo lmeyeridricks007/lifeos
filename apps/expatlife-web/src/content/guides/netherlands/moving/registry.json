@@ -1,0 +1,229 @@
+{
+  "hubPath": "/netherlands/moving/",
+  "pillarPath": "/netherlands/moving-to-the-netherlands/",
+  "toolPaths": {
+    "moving-checklist": "/netherlands/moving/tools/moving-checklist/",
+    "document-readiness": "/netherlands/document-readiness-checker/",
+    "first-90-days": "/netherlands/moving/tools/first-90-days/",
+    "arrival-planner": "/netherlands/moving/tools/arrival-planner/",
+    "relocation-cost-estimator": "/netherlands/moving/tools/relocation-cost-estimator/"
+  },
+  "guides": [
+    {
+      "slug": "municipality-registration-netherlands",
+      "path": "/netherlands/municipality-registration-netherlands/",
+      "title": "Municipality Registration in the Netherlands",
+      "description": "Canonical guide: register with the municipality (gemeente), BRP registration, BSN, required documents, and what to do next.",
+      "priority": 1,
+      "category": "arrival-admin"
+    },
+    {
+      "slug": "open-bank-account-netherlands",
+      "path": "/netherlands/open-bank-account-netherlands/",
+      "title": "Open a Bank Account in the Netherlands",
+      "description": "Definitive guide for expats: requirements, BSN rules, bank comparison, costs, and practical tips for opening a Dutch bank account.",
+      "priority": 2,
+      "category": "arrival-planning"
+    },
+    {
+      "slug": "health-insurance-netherlands",
+      "path": "/netherlands/health-insurance-netherlands/",
+      "title": "Health Insurance in the Netherlands",
+      "description": "A practical guide to Dutch health insurance for expats: who needs it, when to arrange it, what the basic package covers, typical costs, provider comparisons, and next steps.",
+      "priority": 2,
+      "category": "arrival-planning"
+    },
+    {
+      "slug": "after-arriving-netherlands",
+      "path": "/netherlands/after-arriving-netherlands/",
+      "title": "After Arriving in the Netherlands: What to Do First",
+      "description": "Post-arrival hub: municipality registration, BSN, residence permit, DigiD, health insurance, banking, mobile setup, and first-week admin. The main entry point for what to do after landing.",
+      "priority": 2,
+      "category": "arrival-overview"
+    },
+    {
+      "slug": "digid-awareness",
+      "path": "/netherlands/digid-awareness/",
+      "title": "DigiD for Expats in the Netherlands",
+      "description": "What DigiD is, how expats activate it after BSN, and which government services use DigiD.",
+      "priority": 3,
+      "category": "arrival-admin"
+    },
+    {
+      "slug": "moving-checklist-netherlands",
+      "path": "/netherlands/moving-checklist-netherlands/",
+      "title": "Moving to the Netherlands Checklist",
+      "description": "A practical checklist of common steps when relocating to the Netherlands.",
+      "priority": 4,
+      "category": "planning"
+    },
+    {
+      "slug": "documents-needed-to-move-netherlands",
+      "path": "/netherlands/documents-needed-to-move-netherlands/",
+      "title": "Documents Needed to Move to the Netherlands",
+      "description": "Document categories expats often prepare, plus how to organize a simple document pack.",
+      "priority": 5,
+      "category": "planning"
+    },
+    {
+      "slug": "visa-documents-netherlands",
+      "path": "/netherlands/visa-documents-netherlands/",
+      "title": "Visa Documents for the Netherlands",
+      "description": "Learn which document categories are commonly prepared for Netherlands visa and residence routes, why they matter, and how to organize a practical document pack before moving.",
+      "priority": 2,
+      "category": "documents"
+    },
+    {
+      "slug": "document-translation-netherlands",
+      "path": "/netherlands/document-translation-netherlands/",
+      "title": "Document Translation in the Netherlands",
+      "description": "A practical guide to translating foreign documents for use in the Netherlands: when translation is required, which languages are accepted, sworn translators, legalisation order, costs, and common mistakes.",
+      "priority": 2,
+      "category": "documents"
+    },
+    {
+      "slug": "document-legalization-netherlands",
+      "path": "/netherlands/document-legalization-netherlands/",
+      "title": "Document Legalization in the Netherlands",
+      "description": "Learn how to legalise foreign documents for use in the Netherlands. Understand apostille vs legalisation, costs, timelines, and requirements for visas, municipality registration, and official administration.",
+      "priority": 2,
+      "category": "documents"
+    },
+    {
+      "slug": "apostille-documents-netherlands",
+      "path": "/netherlands/apostille-documents-netherlands/",
+      "title": "Apostille Documents in the Netherlands",
+      "description": "Canonical guide: what an apostille is, when you need one, how to get an apostille, costs and timelines, and how apostilles are used for visas, municipality registration, and official administration.",
+      "priority": 2,
+      "category": "documents"
+    },
+    {
+      "slug": "moving-mistakes-netherlands",
+      "path": "/netherlands/moving-mistakes-netherlands/",
+      "title": "Common Mistakes When Moving to the Netherlands",
+      "description": "Discover common mistakes expats make when moving to the Netherlands and how to avoid them through better planning and preparation.",
+      "priority": 2,
+      "category": "moving-advice"
+    },
+    {
+      "slug": "moving-requirements-netherlands",
+      "path": "/netherlands/moving-requirements-netherlands/",
+      "title": "Moving to the Netherlands: Key Requirements to Plan For",
+      "description": "Learn the main requirements many expats need to plan for when moving to the Netherlands, including documents, housing, arrival admin, finances, and first-month setup.",
+      "priority": 2,
+      "category": "planning"
+    },
+    {
+      "slug": "moving-to-netherlands-steps",
+      "path": "/netherlands/moving-to-netherlands-steps/",
+      "title": "Moving to the Netherlands: Step-by-Step Guide",
+      "description": "Learn the main steps many expats follow when moving to the Netherlands, from document preparation and housing planning to arrival admin and first-month setup.",
+      "priority": 2,
+      "category": "planning"
+    },
+    {
+      "slug": "moving-documents-checklist",
+      "path": "/netherlands/moving-documents-checklist/",
+      "title": "Moving Documents Checklist for the Netherlands",
+      "description": "Use this practical checklist to organize the documents many expats prepare before moving to the Netherlands.",
+      "priority": 2,
+      "category": "planning"
+    },
+    {
+      "slug": "moving-to-netherlands-timeline",
+      "path": "/netherlands/moving-to-netherlands-timeline/",
+      "title": "Moving to the Netherlands Timeline",
+      "description": "Understand the preparation timeline many expats follow when relocating to the Netherlands.",
+      "priority": 6,
+      "category": "planning"
+    },
+    {
+      "slug": "moving-to-netherlands-cost",
+      "path": "/netherlands/moving-to-netherlands-cost/",
+      "title": "Cost of Moving to the Netherlands",
+      "description": "What to budget for when relocating: travel, documents, housing, shipping, and first-month setup.",
+      "priority": 6,
+      "category": "planning"
+    },
+    {
+      "slug": "first-30-days-netherlands",
+      "path": "/netherlands/first-30-days-netherlands/",
+      "title": "First 30 Days in the Netherlands",
+      "description": "Understand the first month after relocating to the Netherlands and the administrative steps many expats complete.",
+      "priority": 7,
+      "category": "arrival"
+    },
+    {
+      "slug": "first-60-days-netherlands",
+      "path": "/netherlands/first-60-days-netherlands/",
+      "title": "First 60 Days in the Netherlands",
+      "description": "A practical guide to the first 60 days after moving, including admin follow-ups and everyday routines.",
+      "priority": 8,
+      "category": "arrival"
+    },
+    {
+      "slug": "first-90-days-netherlands",
+      "path": "/netherlands/first-90-days-netherlands/",
+      "title": "First 90 Days in the Netherlands",
+      "description": "A structured guide to the first 90 days after moving, including essentials, stability steps, and a simple admin health check.",
+      "priority": 9,
+      "category": "arrival"
+    },
+    {
+      "slug": "moving-to-netherlands-with-partner",
+      "path": "/netherlands/moving-to-netherlands-with-partner/",
+      "title": "Moving to the Netherlands with a Partner",
+      "description": "Understand the common considerations when relocating to the Netherlands with a partner.",
+      "priority": 10,
+      "category": "household"
+    },
+    {
+      "slug": "moving-to-netherlands-with-kids",
+      "path": "/netherlands/moving-to-netherlands-with-kids/",
+      "title": "Moving to the Netherlands with Kids",
+      "description": "Understand schooling, housing and administrative considerations when relocating with children.",
+      "priority": 11,
+      "category": "household"
+    },
+    {
+      "slug": "bringing-pets-to-netherlands",
+      "path": "/netherlands/bringing-pets-to-netherlands/",
+      "title": "Bringing Pets to the Netherlands",
+      "description": "Understand what expats often prepare when relocating to the Netherlands with pets.",
+      "priority": 12,
+      "category": "logistics"
+    },
+    {
+      "slug": "shipping-household-goods-netherlands",
+      "path": "/netherlands/shipping-household-goods-netherlands/",
+      "title": "Shipping Household Goods to the Netherlands",
+      "description": "Understand logistics and shipping options when moving household goods internationally.",
+      "priority": 13,
+      "category": "logistics"
+    },
+    {
+      "slug": "moving-to-netherlands-with-family",
+      "path": "/netherlands/moving-to-netherlands-with-family/",
+      "title": "Moving to the Netherlands With Family",
+      "description": "Relocating with a partner or children? Plan documents, housing, school and childcare, and registration. Practical checklist and guides.",
+      "priority": 15,
+      "category": "household"
+    },
+    {
+      "slug": "eu-vs-non-eu-moving-to-netherlands",
+      "path": "/netherlands/eu-vs-non-eu-moving-to-netherlands/",
+      "title": "EU vs Non-EU Moving to the Netherlands",
+      "description": "How does moving to the Netherlands differ for EU/EEA and non-EU nationals? Compare rights, permits, documents, and timelines.",
+      "priority": 16,
+      "category": "planning"
+    },
+    {
+      "slug": "move-to-netherlands-without-job",
+      "path": "/netherlands/move-to-netherlands-without-job/",
+      "title": "Can You Move to the Netherlands Without a Job?",
+      "description": "Whether you can move without a job depends on nationality, purpose, and legal route. Compare EU/EEA vs non-EU, partner and study routes.",
+      "priority": 17,
+      "category": "planning"
+    }
+  ]
+}

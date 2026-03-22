@@ -1,0 +1,292 @@
+{
+  "slug": "digid-awareness",
+  "path": "/netherlands/digid-awareness/",
+  "title": "DigiD for Expats in the Netherlands",
+  "metaTitle": "DigiD Netherlands Guide for Expats | What It Is and How to Activate It",
+  "breadcrumbLabel": "DigiD",
+  "subtitle": "DigiD is the main digital identity system used by residents in the Netherlands to access many government-related online services. Expats usually activate DigiD after they have registered their address and received a BSN.",
+  "description": "Learn how DigiD works in the Netherlands. This guide explains what DigiD is, how expats activate it after receiving a BSN, and which government services use DigiD.",
+
+  "hero": {
+    "eyebrow": "Digital Government",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/digid-netherlands-expat-activation-setup-hero.png",
+      "alt": "An expat in the Netherlands using a laptop and smartphone to activate or manage their DigiD, with a DigiD Setup notebook on the desk. Workspace with a European street view, showing the practical process of accessing Dutch digital government services."
+    }
+  },
+
+  "tocItems": [
+    { "id": "what-is-digid", "label": "What DigiD is" },
+    { "id": "what-digid-used-for", "label": "What DigiD is used for" },
+    { "id": "why-digid-important", "label": "Why DigiD is important" },
+    { "id": "how-digid-activation-works", "label": "How DigiD activation usually works" },
+    { "id": "what-you-need-before-applying", "label": "What you usually need before applying" },
+    { "id": "services-with-digid", "label": "Services you can access with DigiD" },
+    { "id": "when-expats-activate-digid", "label": "When expats usually activate DigiD" },
+    { "id": "what-expats-arrange-next", "label": "What expats typically arrange next" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+
+  "heroCta": {
+    "title": "Plan your move and first weeks",
+    "supportingText": "Generate a personalized moving checklist and plan your first 90 days so you know what to do before and after DigiD activation.",
+    "primaryCtaLabel": "Generate a Moving Checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtaLabel": "Plan Your First 90 Days",
+    "secondaryCtaHref": "/netherlands/moving/tools/first-90-days/",
+    "tertiaryCtaLabel": "Check Document Readiness",
+    "tertiaryCtaHref": "/netherlands/document-readiness-checker/"
+  },
+
+  "quickAnswers": [
+    {
+      "label": "What is DigiD?",
+      "value": "A digital identity used to log in to Dutch government services."
+    },
+    {
+      "label": "Who uses it?",
+      "value": "Residents who need to access services such as tax, municipality, healthcare, or student finance portals."
+    },
+    {
+      "label": "Why it matters",
+      "value": "DigiD makes it easier to access official Dutch online services after arrival."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "what-is-digid",
+      "heading": "What DigiD is",
+      "body": [
+        "DigiD is the Dutch digital identity and login system used to access many official portals in the Netherlands. It is not the same as a passport or ID card, but it is linked to your identity in Dutch government systems.",
+        "Expats usually encounter DigiD after they have completed municipality registration and received their BSN (citizen service number). This page is for awareness and planning; always confirm current requirements and steps with the official DigiD website."
+      ],
+      "links": [
+        { "label": "Official DigiD website (English)", "href": "https://www.digid.nl/en/" }
+      ]
+    },
+    {
+      "id": "what-digid-used-for",
+      "heading": "What DigiD is used for",
+      "body": [
+        "DigiD is commonly used to log in to government and government-related services online. Examples include:"
+      ],
+      "bullets": [
+        "Tax administration portals (e.g. Belastingdienst)",
+        "Municipality (gemeente) services and forms",
+        "Healthcare-related portals and insurer portals that use DigiD",
+        "Student finance and education-related services",
+        "Public benefits and other official government portals"
+      ],
+      "links": [
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Register address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" }
+      ]
+    },
+    {
+      "id": "why-digid-important",
+      "heading": "Why DigiD is important",
+      "body": [
+        "DigiD gives you one login for many government-related services. Once you start handling Dutch administration online — for example after you have registered your address and received your BSN — you will often need DigiD to access tax portals, municipal services, healthcare access, and official communications.",
+        "If you have not yet registered your address or received your BSN, see our guides on BSN registration and registering your address in the Netherlands. Health insurance and tax-related steps also often rely on having DigiD set up; our health insurance and first-90-days guides can help you plan the order of tasks."
+      ],
+      "links": [
+        { "label": "BSN registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Register address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      ]
+    },
+    {
+      "id": "how-digid-activation-works",
+      "heading": "Step-by-step: how DigiD activation usually works",
+      "body": [
+        "Activation typically happens after address registration and once you have your BSN. The activation code is usually sent by post to your registered Dutch address. The exact process can change; always check the official DigiD instructions for current steps."
+      ],
+      "bullets": [
+        "Complete address registration in the Netherlands",
+        "Receive your BSN",
+        "Visit the DigiD website",
+        "Request DigiD using your details",
+        "Receive an activation code by post at your registered address",
+        "Activate your DigiD online"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Check official guidance",
+        "text": "Requirements and steps can vary. For the latest process and eligibility, see the official DigiD site: digid.nl (English version available)."
+      },
+      "links": [
+        { "label": "Official DigiD website", "href": "https://www.digid.nl/en/" },
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Register address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" }
+      ]
+    },
+    {
+      "id": "what-you-need-before-applying",
+      "heading": "What you usually need before applying",
+      "body": [
+        "People commonly need the following before or during the DigiD application process. This list is indicative; official sources may specify different or additional requirements."
+      ],
+      "bullets": [
+        "BSN (citizen service number)",
+        "A registered Dutch address",
+        "Access to your post so you can receive the activation letter",
+        "Any required identity details as specified on the DigiD site",
+        "A mobile phone if optional verification (e.g. SMS) is used"
+      ],
+      "links": [
+        { "label": "BSN registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Register address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" }
+      ]
+    },
+    {
+      "id": "services-with-digid",
+      "heading": "Services you can access with DigiD",
+      "body": [
+        "With DigiD you can typically access a range of official and government-linked services. Common categories include:"
+      ],
+      "bullets": [
+        "Taxes — declarations, messages, and tax-related portals",
+        "Municipality services — address changes, extracts, and local government forms",
+        "Healthcare — portals that use DigiD for identification",
+        "Student finance and education-related services",
+        "Benefits and other official government portals"
+      ],
+      "links": [
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" }
+      ]
+    },
+    {
+      "id": "when-expats-activate-digid",
+      "heading": "When expats usually activate DigiD",
+      "body": [
+        "Most expats activate DigiD after municipality registration and after receiving their BSN. It often happens in the first weeks after arrival, when people start using official portals for tax, municipal, or healthcare matters."
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "Common timing",
+        "text": "Many expats activate DigiD during their first weeks in the Netherlands once they begin interacting with official systems. Having your BSN and registered address in place first avoids delays."
+      },
+      "links": [
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Register address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" }
+      ]
+    },
+    {
+      "id": "what-expats-arrange-next",
+      "heading": "What expats typically arrange next",
+      "body": [
+        "After DigiD is activated, many expats continue with opening a bank account, arranging health insurance, setting up tax and government access, and handling other digital admin. Our guides on moving to the Netherlands, first 90 days, and health insurance can help you plan the sequence."
+      ],
+      "bullets": [
+        "Opening a bank account",
+        "Arranging health insurance",
+        "Setting up tax and government access",
+        "Handling other digital and official admin"
+      ],
+      "links": [
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
+        { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" }
+      ]
+    }
+  ],
+
+  "midPageCta": {
+    "badge": "Tool",
+    "title": "Need help preparing the steps before DigiD?",
+    "description": "Generate your personalized moving checklist to see what to do before and after DigiD, and plan your first 90 days.",
+    "ctaLabel": "Generate your moving checklist",
+    "ctaHref": "/netherlands/moving/tools/moving-checklist/"
+  },
+  "midPageCtaAfterSectionId": "how-digid-activation-works",
+
+  "toolsCtaBand": {
+    "title": "Not sure what to do before DigiD?",
+    "body": "Generate your personalized moving checklist to see the usual order of steps, then use the First 90 Days Planner to plan your first weeks.",
+    "primaryLabel": "Generate your moving checklist",
+    "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryLabel": "Plan your first 90 days",
+    "secondaryHref": "/netherlands/moving/tools/first-90-days/"
+  },
+
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Get a personalized checklist of steps before and after arrival, including DigiD.",
+      "ctaLabel": "Generate checklist"
+    },
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Plan your first weeks: DigiD, GP, banking, and daily-life admin.",
+      "ctaLabel": "Plan first 90 days"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Check Document Readiness",
+      "href": "/netherlands/document-readiness-checker/",
+      "description": "See which documents you may need for registration and next steps.",
+      "ctaLabel": "Check documents"
+    }
+  ],
+
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      { "label": "BSN registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "Register address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+      { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+    ]
+  },
+
+  "faq": [
+    {
+      "q": "Do expats need DigiD?",
+      "a": "Many residents use DigiD to access government services such as tax, municipality, and healthcare portals. Whether you need it depends on which services you use; often it becomes useful once you start handling Dutch administration online."
+    },
+    {
+      "q": "Can DigiD be activated without a BSN?",
+      "a": "Activation commonly requires a BSN and a registered address in the Netherlands. Check the official DigiD website for current requirements."
+    },
+    {
+      "q": "Is DigiD used for private services?",
+      "a": "DigiD is primarily used for government-related services. Some healthcare and other portals may use DigiD for login; private commercial services generally do not."
+    },
+    {
+      "q": "When do expats usually activate DigiD?",
+      "a": "Usually after municipality registration and after receiving a BSN, often in the first weeks after arrival when they start using official portals."
+    },
+    {
+      "q": "How do you receive a DigiD activation code?",
+      "a": "The activation code is typically sent by post to your registered Dutch address after you request DigiD online. You then complete activation on the DigiD website."
+    },
+    {
+      "q": "Do you need a registered address for DigiD?",
+      "a": "Yes. You usually need a registered address in the Netherlands so that the activation letter can be sent to you. Address registration is done at the municipality (gemeente)."
+    }
+  ],
+
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

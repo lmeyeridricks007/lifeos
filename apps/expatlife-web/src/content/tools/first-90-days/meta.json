@@ -1,0 +1,102 @@
+{
+  "hero": {
+    "title": "Plan Your First 90 Days in the Netherlands",
+    "subtitle": "Build a personalized week-by-week plan for settling into life in the Netherlands.",
+    "primaryCtaLabel": "Create my 90-day plan",
+    "secondaryCtaLabel": "Read the moving guide",
+    "secondaryCtaHref": "/netherlands/moving-to-the-netherlands/",
+    "introBullets": [
+      "Clear 3-month timeline",
+      "Administrative milestones",
+      "Practical reminders for daily life"
+    ],
+    "image": {
+      "src": "/images/tools/first-90-days-netherlands.webp",
+      "alt": "First 90 days planner for expats settling in the Netherlands"
+    },
+    "imageFallback": {
+      "src": "/images/guides/netherlands/moving/first-90-days-tool-hero.png",
+      "alt": "Family cycling through a Dutch street with historic buildings and yellow flowers — everyday life in the Netherlands"
+    }
+  },
+  "explanatorySections": [
+    {
+      "id": "what-first-90-days-covers",
+      "title": "What the first 90 days planner covers",
+      "body": [
+        "This planner covers the period from week 2 after arrival through to month 3. It focuses on daily life stabilization, routine building, and the administrative and practical steps that typically fill your first quarter in the Netherlands.",
+        "You get a week-by-week view of priorities: DigiD, GP registration, recurring payments, transport, housing stability, and integration choices."
+      ]
+    },
+    {
+      "id": "typical-first-90-day-priorities",
+      "title": "Typical first 90 day priorities for expats",
+      "bullets": [
+        "DigiD — access to government and many services online",
+        "GP (huisarts) — register with a local doctor",
+        "Recurring payments — utilities, rent, insurance, subscriptions",
+        "Transport routines — bike, OV-chipkaart, or car if needed",
+        "Housing stability — longer-term rental or address confirmation",
+        "Integration choices — language, social, and work routine"
+      ]
+    },
+    {
+      "id": "why-first-90-days-matter",
+      "title": "Why the first 90 days matter",
+      "body": [
+        "Moving is not finished at arrival. The first quarter is when life becomes predictable: you have your admin in place, your routines start to stick, and stress often drops. This planner helps you get there by sequencing the right tasks and reminders."
+      ]
+    },
+    {
+      "id": "what-this-planner-does-not-replace",
+      "title": "What this planner does not replace",
+      "body": [
+        "For your first days and first two weeks—including municipality registration, BSN, and bank account—use the Arrival Planner. For document planning and requirements awareness, use the Document Readiness Checker. This tool picks up from there and focuses on week 2 to month 3."
+      ]
+    }
+  ],
+  "infographic": {
+    "src": "/images/infographics/first-90-days-netherlands-expat-roadmap.png",
+    "alt": "Infographic showing the first 90 days after moving to the Netherlands including setup tasks, daily life organization and settling into routines"
+  },
+  "seo": {
+    "introParagraphs": [
+      "Use this first 90 days planner to turn your move into a practical settlement timeline. It helps you prioritize what to do first in the Netherlands, what to handle by week 3 to 4, and what to stabilize in months 2 and 3.",
+      "The plan is deterministic and based on your stage, household setup, and practical needs. It is a planning aid for expats settling in the Netherlands, not legal advice."
+    ]
+  },
+  "toolPanel": {
+    "whatYouGetTitle": "What you'll get",
+    "whatYouGetItems": [
+      "week-by-week checklist blocks",
+      "unknowns to confirm",
+      "readiness meter",
+      "related guides"
+    ]
+  },
+  "results": {
+    "title": "Your personalized 90-day plan"
+  },
+  "disclosure": "This planner provides general relocation planning guidance only. It is not legal, immigration, tax, financial, or municipality-specific advice.",
+  "originCountries": [
+    { "value": "south-africa", "label": "South Africa" },
+    { "value": "india", "label": "India" },
+    { "value": "germany", "label": "Germany" },
+    { "value": "united-states", "label": "United States" },
+    { "value": "australia", "label": "Australia" },
+    { "value": "canada", "label": "Canada" },
+    { "value": "france", "label": "France" },
+    { "value": "belgium", "label": "Belgium" },
+    { "value": "spain", "label": "Spain" },
+    { "value": "italy", "label": "Italy" },
+    { "value": "portugal", "label": "Portugal" },
+    { "value": "other", "label": "Other" }
+  ],
+  "relatedLinks": {
+    "first30": { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+    "first60": { "label": "First 60 days in the Netherlands", "href": "/netherlands/first-60-days-netherlands/" },
+    "registerAddress": { "label": "Register address in the Netherlands", "href": "/netherlands/register-address-netherlands/" },
+    "pillar": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+    "hub": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" }
+  }
+}

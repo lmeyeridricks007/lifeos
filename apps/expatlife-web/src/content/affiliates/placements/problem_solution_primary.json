@@ -1,0 +1,20 @@
+{
+  "id": "problem_solution_primary",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/",
+    "slot": "problem_solution_primary"
+  },
+  "variant": "cards",
+  "title": "Services commonly used by expats",
+  "intro": "Based on this step, people often arrange these next.",
+  "categoryOrder": ["banking", "housing", "insurance", "mobile"],
+  "items": [
+    { "providerId": "bunq", "reason": "Fast account setup and English onboarding." },
+    { "providerId": "wise", "reason": "International transfers and multi-currency." },
+    { "providerId": "housinganywhere", "reason": "Temporary rentals before you find a long-term place." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

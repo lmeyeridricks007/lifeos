@@ -1,0 +1,245 @@
+{
+  "slug": "settling-in-netherlands",
+  "path": "/netherlands/settling-in-netherlands/",
+  "title": "Settling In After Moving to the Netherlands",
+  "breadcrumbLabel": "Settling In",
+  "subtitle": "A practical guide to what expats often focus on once the move is done and daily life begins.",
+  "description": "Learn how many expats settle into life in the Netherlands during the first weeks and months after moving, including admin follow-up, routines, housing, healthcare, and everyday confidence.",
+  "hero": {
+    "eyebrow": "Moving Advice",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/settling-in-hero.webp",
+      "alt": "Expat settling into everyday life in the Netherlands"
+    }
+  },
+  "quickAnswers": [
+    {
+      "label": "What settling in means",
+      "value": "Moving from arrival admin into stable routines and everyday confidence."
+    },
+    {
+      "label": "Biggest challenge",
+      "value": "Balancing unfinished admin with building a normal daily life."
+    },
+    {
+      "label": "Best next step",
+      "value": "Create a clear 90-day plan instead of handling everything reactively."
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "What settling in usually looks like",
+      "body": [
+        "For many expats, settling in starts after the move itself is technically done. The first rush of flights, housing, and registration begins to slow down, but daily life still does not feel fully stable yet.",
+        "This stage is usually less about one big milestone and more about creating routines, reducing uncertainty, and making practical systems work."
+      ],
+      "bullets": [
+        "Daily life starts to matter as much as admin",
+        "Some practical tasks are still unfinished",
+        "People often move from survival mode into structure",
+        "Confidence usually grows when routines become predictable"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "A useful mindset",
+        "text": "Settling in is rarely one moment. It usually happens gradually as housing, banking, healthcare, transport, and social routines begin to feel normal."
+      }
+    },
+    {
+      "id": "first-months",
+      "heading": "What expats often focus on in the first months",
+      "body": [
+        "Once the first arrival tasks are underway, most people start focusing on the parts of life that make the move feel sustainable.",
+        "That often includes practical setup, financial stability, healthcare, transport, and confidence in local systems."
+      ],
+      "bullets": [
+        "Finishing address and registration-related admin",
+        "Stabilizing banking and recurring payments",
+        "Understanding health insurance and healthcare access",
+        "Making housing feel workable in the short term",
+        "Creating weekly routines for transport, groceries, and local services"
+      ]
+    },
+    {
+      "id": "admin-vs-life",
+      "heading": "The balance between admin and everyday life",
+      "body": [
+        "One of the hardest parts of settling in is that the formal admin process and everyday life happen at the same time.",
+        "People often expect that once registration is done, they will feel settled immediately — but in reality, things like transport habits, shopping routines, doctor access, and social confidence also take time."
+      ],
+      "bullets": [
+        "Admin completion does not automatically create comfort",
+        "Everyday routines reduce stress more than people expect",
+        "Small systems often matter: payment setup, appointments, transport, groceries",
+        "People often feel better once they stop treating every week like an emergency"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "common-settling-tasks",
+      "heading": "Common settling-in tasks expats often overlook",
+      "body": [
+        "Many expats plan the move itself well, but overlook a second layer of practical setup that matters just as much after arrival.",
+        "These tasks are usually not dramatic, but they are often what separates a stressful first quarter from a stable one."
+      ],
+      "bullets": [
+        "Registering with a local GP or understanding how healthcare access works",
+        "Reviewing subscriptions, direct debits, and recurring payments",
+        "Learning local transport routines",
+        "Understanding neighborhood basics such as waste, shopping, and services",
+        "Building a simple system for tracking still-open admin items"
+      ]
+    },
+    {
+      "id": "housing-confidence",
+      "heading": "Making housing feel stable",
+      "body": [
+        "Housing plays a major role in how quickly expats feel settled.",
+        "Even if the accommodation is temporary, people often feel more in control once they understand their local area, commute, and what the next housing step looks like."
+      ],
+      "bullets": [
+        "Understand whether the current address is short term or stable enough",
+        "Know what follow-up housing decisions still need to happen",
+        "Get practical with your local area rather than waiting to feel 'fully settled'",
+        "Use your first months to reduce housing uncertainty where possible"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "social-and-cultural",
+      "heading": "The social and cultural side of settling in",
+      "body": [
+        "Settling in is not only practical. Many expats also need time to adjust to communication style, work culture, planning habits, and social expectations.",
+        "This part is often quieter than admin stress, but it has a big effect on whether daily life starts to feel natural."
+      ],
+      "bullets": [
+        "Workplace communication may feel more direct than expected",
+        "Planning social life often feels more structured",
+        "Building local confidence usually takes repetition, not one big breakthrough",
+        "It is normal to feel settled in some areas and uncertain in others"
+      ]
+    },
+    {
+      "id": "how-to-make-it-easier",
+      "heading": "How to make settling in easier",
+      "body": [
+        "The easiest way to make the settling-in phase feel lighter is to reduce mental clutter.",
+        "Most people benefit more from a simple plan and a few routines than from trying to optimize everything at once."
+      ],
+      "bullets": [
+        "Use a 30–90 day plan instead of reacting week by week",
+        "Keep a short list of unfinished admin items",
+        "Create predictable routines for money, transport, and health",
+        "Focus on progress, not on feeling perfectly settled immediately"
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "Practical approach",
+        "text": "A small number of stable routines often matters more than completing every possible task in the first month."
+      }
+    }
+  ],
+  "featuredTools": [
+    {
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/"
+    },
+    {
+      "label": "Build Your Arrival Plan",
+      "href": "/netherlands/moving/tools/arrival-planner/"
+    },
+    {
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/"
+    }
+  ],
+  "toolCtas": [
+    {
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/"
+    }
+  ],
+  "exampleScenarios": [
+    {
+      "title": "The admin is mostly done, but life still feels unsettled",
+      "summary": "This is common. Many expats only start to feel stable once banking, transport, healthcare, and weekly routines begin working together.",
+      "href": "/netherlands/moving/tools/first-90-days/?arrivalStage=already-arrived&household=solo&startingJobSoon=yes&needsIntegrationAwareness=yes"
+    },
+    {
+      "title": "Settling in as a family",
+      "summary": "Families often need more structure because housing, school or childcare, healthcare, and recurring costs all interact at once.",
+      "href": "/netherlands/moving/tools/first-90-days/?arrivalStage=already-arrived&household=kids&startingJobSoon=yes&needsIntegrationAwareness=yes"
+    },
+    {
+      "title": "You arrived, but you are still catching up",
+      "summary": "A late start does not mean failure. Many expats settle in by turning scattered tasks into a realistic 90-day plan.",
+      "href": "/netherlands/moving/tools/arrival-planner/?addressStatus=yes&household=solo&needBankingSoon=no"
+    }
+  ],
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      {
+        "label": "After Arriving in the Netherlands",
+        "href": "/netherlands/after-arriving-netherlands/"
+      },
+      {
+        "label": "First 30 Days in the Netherlands",
+        "href": "/netherlands/first-30-days-netherlands/"
+      },
+      {
+        "label": "First 60 Days in the Netherlands",
+        "href": "/netherlands/first-60-days-netherlands/"
+      },
+      {
+        "label": "First 90 Days in the Netherlands",
+        "href": "/netherlands/first-90-days-netherlands/"
+      },
+      {
+        "label": "Open a Bank Account in the Netherlands",
+        "href": "/netherlands/open-bank-account-netherlands/"
+      },
+      {
+        "label": "Health Insurance in the Netherlands",
+        "href": "/netherlands/health-insurance-netherlands/"
+      },
+      {
+        "label": "Moving Checklist Netherlands",
+        "href": "/netherlands/moving-checklist-netherlands/"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "q": "How long does it take to feel settled in the Netherlands?",
+      "a": "For many expats, settling in takes longer than the move itself. It often happens gradually as admin, routines, and everyday confidence become more stable."
+    },
+    {
+      "q": "What usually matters most when settling in?",
+      "a": "Housing stability, banking, healthcare access, transport routines, and finishing early admin tasks are common priorities."
+    },
+    {
+      "q": "Why do I still feel unsettled even though the move is done?",
+      "a": "That is common. Finishing the move and feeling settled are different things. Everyday routines often take time to build."
+    },
+    {
+      "q": "What should I focus on in the first 90 days?",
+      "a": "Many expats focus on stabilizing admin, recurring payments, healthcare, transport, and local routines in the first three months."
+    },
+    {
+      "q": "What is the best way to settle in faster?",
+      "a": "A practical 30–90 day plan, fewer open admin questions, and stable weekly routines usually help more than trying to optimize everything at once."
+    }
+  ],
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

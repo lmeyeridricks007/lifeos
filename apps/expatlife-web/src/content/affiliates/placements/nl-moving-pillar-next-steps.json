@@ -1,0 +1,21 @@
+{
+  "id": "nl-moving-pillar-next-steps",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "pillar",
+    "route": "/netherlands/moving-to-the-netherlands/",
+    "slot": "after-first-90-days"
+  },
+  "variant": "cards",
+  "title": "What expats typically do next",
+  "intro": "After your first 30–90 days, many expats arrange banking, insurance, and mobile. Here are services commonly used.",
+  "categoryOrder": ["banking", "insurance", "mobile"],
+  "items": [
+    { "providerId": "bunq", "reason": "Open a Dutch account for salary and direct debits." },
+    { "providerId": "wise", "reason": "Keep international transfers low-cost." },
+    { "providerId": "independer", "reason": "Compare Dutch insurance once you have a BSN." },
+    { "providerId": "simyo", "reason": "Simple mobile plan to get connected." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

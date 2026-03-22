@@ -1,0 +1,220 @@
+{
+  "south-africa": {
+    "moving-checklist": {
+      "intro": "Moving from South Africa to the Netherlands involves long-haul logistics, document preparation, and money transfer planning. This checklist helps you cover pre-departure steps, travel prep, and a clear handoff to your first days in the Netherlands.",
+      "whatOftenMatters": [
+        "Long-haul move: book flights and shipping well in advance",
+        "Document prep timing: allow for DHA and apostille where needed",
+        "Money transfer and banking: plan for first-month costs and possible delays in opening a Dutch account",
+        "School and family documents if moving with children"
+      ],
+      "documentConsiderations": [
+        "South African civil records may need apostille; allow time for DHA and logistics",
+        "Passport validity and renewal: avoid last-minute renewal"
+      ],
+      "transferTravelNotes": [
+        "Consider currency exchange and transfer services for initial setup costs",
+        "Keep essential documents in hand luggage"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/south-africa/"
+    },
+    "arrival-planner": {
+      "intro": "If you're arriving in the Netherlands from South Africa, your first days will focus on registration, BSN, and banking. This planner helps you sequence those steps and plan for the buffer you may need after a long-haul move.",
+      "whatOftenMatters": [
+        "Allow a short buffer after long-haul arrival before heavy admin",
+        "Document accessibility: have originals and certified copies ready",
+        "Early sequencing: municipality registration → BSN → bank account → other setup"
+      ],
+      "documentConsiderations": [
+        "Have passport and any required certified or apostilled documents to hand for registration"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/south-africa/"
+    },
+    "first-90-days": {
+      "intro": "Your first 90 days from South Africa will include stabilizing banking, transport, and routines. This planner covers week 2 onward: DigiD, GP, recurring payments, and integration choices.",
+      "whatOftenMatters": [
+        "Transfer and banking continuity from your existing setup",
+        "Driving licence awareness if you plan to drive in the Netherlands",
+        "Work routine and integration stabilization"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/south-africa/"
+    },
+    "document-readiness": {
+      "intro": "South African document authorities (e.g. DHA for civil records, passport) can have variable processing times. This checker helps you see what you need and plan for apostille or translation where required.",
+      "whatOftenMatters": [
+        "Civil records (birth, marriage) from DHA; apostille may be required",
+        "Passport validity and renewal lead times",
+        "Certified copies and notarial requirements"
+      ],
+      "documentConsiderations": [
+        "Apostille and legalization for certain civil documents",
+        "Translation of documents if not in English or Dutch"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/south-africa/"
+    }
+  },
+  "united-states": {
+    "moving-checklist": {
+      "intro": "Moving from the United States to the Netherlands requires careful prep: visa/permit route, document timing, and travel logistics. This checklist covers pre-move steps, money transfer, and handoff to arrival.",
+      "whatOftenMatters": [
+        "Visa or residence permit route (e.g. highly skilled migrant, DAFT)",
+        "Document certification and apostille where needed",
+        "Money transfer and first-month costs in euros",
+        "Flights and shipping timing"
+      ],
+      "documentConsiderations": [
+        "U.S. civil documents: state-issued certified copies; apostille may be required",
+        "Passport validity for the intended stay"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/united-states/"
+    },
+    "arrival-planner": {
+      "intro": "After arriving from the U.S., your first days in the Netherlands will center on registration, BSN, and banking. This planner helps you prioritize and sequence those steps.",
+      "whatOftenMatters": [
+        "Municipality registration and BSN as first priorities",
+        "Bank account and salary/payment setup",
+        "Health insurance within the required period"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/united-states/"
+    },
+    "first-90-days": {
+      "intro": "Your first 90 days in the Netherlands will include DigiD, GP registration, and daily life setup. This planner helps you stabilize routines and admin after your move from the U.S.",
+      "whatOftenMatters": [
+        "DigiD and online government services",
+        "Healthcare and insurance follow-up",
+        "Transport and housing stability"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/united-states/"
+    },
+    "document-readiness": {
+      "intro": "U.S. documents (passport, civil records, employment papers) often need to be in order before and after your move. This checker helps you see what's required and plan for apostille or translation.",
+      "whatOftenMatters": [
+        "State-issued certified documents and apostille",
+        "Passport and copies for registration and banking",
+        "Employment and tax-related documents"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/united-states/"
+    }
+  },
+  "india": {
+    "moving-checklist": {
+      "intro": "Moving from India to the Netherlands involves visa/permit preparation, document attestation, and travel planning. This checklist covers pre-departure steps and handoff to your first days.",
+      "whatOftenMatters": [
+        "Visa and permit route and employer sponsorship docs",
+        "Document attestation and apostille (e.g. MEA)",
+        "Money transfer and first-month funds",
+        "Family documents if moving with dependants"
+      ],
+      "documentConsiderations": [
+        "Passport and civil documents; attestation and apostille as required",
+        "Educational and employment documents for permit and registration"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/india/"
+    },
+    "arrival-planner": {
+      "intro": "Your first days in the Netherlands from India will focus on registration, BSN, and banking. This planner helps you sequence admin and avoid common bottlenecks.",
+      "whatOftenMatters": [
+        "Registration and BSN as soon as you have an address",
+        "Bank account for salary and payments",
+        "Document originals and copies ready for appointments"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/india/"
+    },
+    "first-90-days": {
+      "intro": "Stabilizing your first 90 days after moving from India includes DigiD, GP, and daily routines. This planner covers week 2 to month 3.",
+      "whatOftenMatters": [
+        "DigiD and online services",
+        "Healthcare and insurance",
+        "Transport and housing stability"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/india/"
+    },
+    "document-readiness": {
+      "intro": "Indian document requirements for the Netherlands can include attestation and apostille. This checker helps you see what to prepare and where to get it.",
+      "whatOftenMatters": [
+        "Passport and civil documents; MEA attestation where applicable",
+        "Educational and employment documents",
+        "Translation if documents are not in English or Dutch"
+      ],
+      "documentConsiderations": [
+        "Apostille/legalization and translation awareness"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/india/"
+    }
+  },
+  "canada": {
+    "moving-checklist": { "intro": "Moving from Canada to the Netherlands involves visa/permit route, document prep, and travel. This checklist covers pre-move steps and handoff to arrival.", "whatOftenMatters": ["Document and permit timeline", "Money transfer and first-month costs", "Travel and housing"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/canada/" },
+    "arrival-planner": { "intro": "Your first days in the Netherlands from Canada will focus on registration, BSN, and banking. This planner helps you sequence those steps.", "whatOftenMatters": ["Municipality registration and BSN", "Bank account and health insurance"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/canada/" },
+    "first-90-days": { "intro": "Your first 90 days in the Netherlands will include DigiD, GP, and daily life setup. This planner helps you stabilize after your move from Canada.", "whatOftenMatters": ["DigiD and government services", "Healthcare and transport"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/canada/" },
+    "document-readiness": { "intro": "Canadian documents need to be in order for your move to the Netherlands. This checker helps you see what's required.", "whatOftenMatters": ["Passport and civil documents", "Apostille if required"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/canada/" }
+  },
+  "australia": {
+    "moving-checklist": { "intro": "Moving from Australia to the Netherlands involves long-haul logistics, document prep, and travel. This checklist covers pre-move steps and handoff to arrival.", "whatOftenMatters": ["Visa/permit route", "Document certification", "Money transfer and first-month costs"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/australia/" },
+    "arrival-planner": { "intro": "Your first days in the Netherlands from Australia will focus on registration, BSN, and banking. This planner helps you sequence those steps.", "whatOftenMatters": ["Registration and BSN", "Bank account and insurance"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/australia/" },
+    "first-90-days": { "intro": "Your first 90 days in the Netherlands will include DigiD, GP, and daily life setup. This planner helps you stabilize after your move from Australia.", "whatOftenMatters": ["DigiD and healthcare", "Transport and housing"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/australia/" },
+    "document-readiness": { "intro": "Australian documents need to be in order for your move to the Netherlands. This checker helps you see what's required and plan for apostille if needed.", "whatOftenMatters": ["Passport and civil documents", "Certification and apostille"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/australia/" }
+  },
+  "germany": {
+    "moving-checklist": { "intro": "Moving from Germany to the Netherlands is often straightforward for EU citizens, but document and housing prep still matter. This checklist covers pre-move steps and handoff to arrival.", "whatOftenMatters": ["Registration and address", "Documentation for municipality", "Money and banking"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/germany/" },
+    "arrival-planner": { "intro": "Your first days in the Netherlands from Germany will focus on registration, BSN, and banking. This planner helps you sequence those steps.", "whatOftenMatters": ["Municipality registration and BSN", "Bank account and insurance"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/germany/" },
+    "first-90-days": { "intro": "Your first 90 days in the Netherlands will include DigiD, GP, and daily life setup. This planner helps you stabilize after your move from Germany.", "whatOftenMatters": ["DigiD and government services", "Healthcare and transport"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/germany/" },
+    "document-readiness": { "intro": "German documents (ID, civil records) need to be in order for your move to the Netherlands. This checker helps you see what's required.", "whatOftenMatters": ["ID and civil documents", "Proof of address and employment"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/germany/" }
+  },
+  "france": {
+    "moving-checklist": { "intro": "Moving from France to the Netherlands as an EU citizen involves registration and document prep. This checklist covers pre-move steps and handoff to arrival.", "whatOftenMatters": ["Registration and address", "Documents for municipality", "Banking and insurance"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/france/" },
+    "arrival-planner": { "intro": "Your first days in the Netherlands from France will focus on registration, BSN, and banking. This planner helps you sequence those steps.", "whatOftenMatters": ["Municipality registration and BSN", "Bank account and health insurance"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/france/" },
+    "first-90-days": { "intro": "Your first 90 days in the Netherlands will include DigiD, GP, and daily life setup. This planner helps you stabilize after your move from France.", "whatOftenMatters": ["DigiD and healthcare", "Transport and housing"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/france/" },
+    "document-readiness": { "intro": "French documents need to be in order for your move to the Netherlands. This checker helps you see what's required.", "whatOftenMatters": ["ID and civil documents", "Proof of address"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/france/" }
+  },
+  "spain": {
+    "moving-checklist": { "intro": "Moving from Spain to the Netherlands as an EU citizen involves registration and document prep. This checklist covers pre-move steps and handoff to arrival.", "whatOftenMatters": ["Registration and address", "Documents for municipality", "Banking and first-month costs"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/spain/" },
+    "arrival-planner": { "intro": "Your first days in the Netherlands from Spain will focus on registration, BSN, and banking. This planner helps you sequence those steps.", "whatOftenMatters": ["Municipality registration and BSN", "Bank account and insurance"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/spain/" },
+    "first-90-days": { "intro": "Your first 90 days in the Netherlands will include DigiD, GP, and daily life setup. This planner helps you stabilize after your move from Spain.", "whatOftenMatters": ["DigiD and healthcare", "Transport and housing"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/spain/" },
+    "document-readiness": { "intro": "Spanish documents need to be in order for your move to the Netherlands. This checker helps you see what's required.", "whatOftenMatters": ["ID and civil documents", "Proof of address and employment"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/spain/" }
+  },
+  "brazil": {
+    "moving-checklist": { "intro": "Moving from Brazil to the Netherlands involves visa/permit route, document legalization, and travel. This checklist covers pre-move steps and handoff to arrival.", "whatOftenMatters": ["Visa and permit route", "Document legalization and apostille", "Money transfer and first-month costs"], "documentConsiderations": ["Civil documents and apostille/legalization", "Passport validity"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/brazil/" },
+    "arrival-planner": { "intro": "Your first days in the Netherlands from Brazil will focus on registration, BSN, and banking. This planner helps you sequence those steps.", "whatOftenMatters": ["Registration and BSN", "Bank account and document readiness"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/brazil/" },
+    "first-90-days": { "intro": "Your first 90 days in the Netherlands will include DigiD, GP, and daily life setup. This planner helps you stabilize after your move from Brazil.", "whatOftenMatters": ["DigiD and government services", "Healthcare and transport"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/brazil/" },
+    "document-readiness": { "intro": "Brazilian documents often need legalization or apostille for use in the Netherlands. This checker helps you see what to prepare and where to get it.", "whatOftenMatters": ["Civil records and apostille/legalization", "Passport and certified copies", "Translation if required"], "documentConsiderations": ["Apostille and legalization", "Translation awareness"], "countryGuideHref": "/netherlands/moving-to-netherlands-from/brazil/" }
+  },
+  "united-kingdom": {
+    "moving-checklist": {
+      "intro": "Moving from the UK to the Netherlands post-Brexit involves residence and work rules, document prep, and travel. This checklist covers pre-move steps and handoff to arrival.",
+      "whatOftenMatters": [
+        "Residence and work permit route (e.g. highly skilled migrant)",
+        "Document readiness and certified copies",
+        "Money transfer and first-month costs",
+        "Travel and housing timing"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/united-kingdom/"
+    },
+    "arrival-planner": {
+      "intro": "Your first days in the Netherlands from the UK will focus on registration, BSN, and banking. This planner helps you prioritize and sequence those steps.",
+      "whatOftenMatters": [
+        "Municipality registration and BSN",
+        "Bank account and salary setup",
+        "Health insurance within the required period"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/united-kingdom/"
+    },
+    "first-90-days": {
+      "intro": "Your first 90 days in the Netherlands will include DigiD, GP, and daily life setup. This planner helps you stabilize after your move from the UK.",
+      "whatOftenMatters": [
+        "DigiD and government services",
+        "Healthcare and insurance",
+        "Transport and housing"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/united-kingdom/"
+    },
+    "document-readiness": {
+      "intro": "UK documents (passport, civil records) need to be in order for your move to the Netherlands. This checker helps you see what's required and plan for any certification.",
+      "whatOftenMatters": [
+        "Passport and civil documents",
+        "Apostille or certification if required",
+        "Employment and housing documents"
+      ],
+      "countryGuideHref": "/netherlands/moving-to-netherlands-from/united-kingdom/"
+    }
+  }
+}

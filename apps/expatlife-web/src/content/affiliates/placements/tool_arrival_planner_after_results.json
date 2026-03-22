@@ -1,0 +1,23 @@
+{
+  "id": "tool_arrival_planner_after_results",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "tool",
+    "route": "/netherlands/moving/tools/arrival-planner",
+    "slot": "after-results"
+  },
+  "variant": "cards",
+  "title": "Services many expats arrange early",
+  "intro": "Based on your arrival situation, these are often the first practical services people organize.",
+  "categoryOrder": ["banking", "housing", "insurance", "mobile", "mobility", "cars"],
+  "items": [
+    { "providerId": "bunq", "reason": "Banking setup is often one of the first practical steps after arrival." },
+    { "providerId": "wise", "reason": "Useful for early international transfers while your setup is still in progress." },
+    { "providerId": "housinganywhere", "reason": "Helpful when temporary housing or follow-up rental steps are still active." },
+    { "providerId": "independer", "reason": "Compare Dutch insurance options once your initial admin is underway." },
+    { "providerId": "simyo", "reason": "Quick mobile connectivity helps with verification codes and appointments." },
+    { "providerId": "lebara", "reason": "Another mobile option often used during early arrival weeks." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

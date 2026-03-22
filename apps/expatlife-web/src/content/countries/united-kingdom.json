@@ -1,0 +1,183 @@
+{
+  "slug": "united-kingdom",
+  "name": "United Kingdom",
+  "shortName": "UK",
+  "iso2": "GB",
+  "regionGroup": "non-eu",
+  "distanceCategory": "near",
+  "languages": ["English"],
+  "travel": {
+    "typicalFlightTime": "1–2 hours",
+    "notes": [
+      "Short-haul travel; many UK movers use phased relocation.",
+      "Post-Brexit, UK citizens follow non-EU immigration routes."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "International work opportunities",
+      "English-friendly workplaces",
+      "Proximity to European markets",
+      "Employer-sponsored relocation",
+      "Partner or family relocation",
+      "Entrepreneur and business relocation"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "Utrecht", "The Hague", "Eindhoven"],
+    "commonSectors": ["Finance", "Technology", "Consulting", "Creative industries", "Logistics"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly Skilled Migrant visa — employer-sponsored route for skilled professionals",
+      "EU Blue Card — alternative for highly qualified professionals",
+      "Partner / family visa — for partners of Dutch or EU residents",
+      "Entrepreneur visa — for founders launching businesses in the Netherlands"
+    ],
+    "notes": [
+      "After Brexit, UK citizens must follow non-EU immigration rules.",
+      "Plan visas, employment sponsorship, and documentation earlier."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Passport",
+      "Birth certificate",
+      "Marriage certificate (if applicable)",
+      "Employment contract",
+      "Proof of address",
+      "Academic qualification records",
+      "Health insurance proof"
+    ],
+    "countrySpecificNotes": [
+      "Certain documents may require apostille certification."
+    ],
+    "sources": [
+      {
+        "label": "GOV.UK",
+        "name": "UK Government Services",
+        "website": "https://www.gov.uk",
+        "contactSummary": "Entry point for identity and civil document services."
+      },
+      {
+        "label": "Netherlands Embassy in the UK",
+        "name": "Embassy of the Kingdom of the Netherlands in the United Kingdom",
+        "website": "https://www.netherlandsandyou.nl/your-country-and-the-netherlands/united-kingdom",
+        "contactSummary": "Country-specific consular and visa information."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "GBP / EUR",
+    "ranges": [
+      {
+        "key": "oneWayFlight",
+        "label": "One-way flight",
+        "value": "€80 – €250",
+        "note": "Budget airlines and timing vary."
+      },
+      {
+        "key": "shipping",
+        "label": "Shipping household goods",
+        "value": "€1,200 – €4,000",
+        "note": "Depends on volume and method; UK–EU typically 1–3 weeks."
+      },
+      {
+        "key": "temporaryHousing",
+        "label": "Temporary housing (monthly)",
+        "value": "€1,500 – €3,000",
+        "note": "Depends on city and season."
+      },
+      {
+        "key": "visaDocumentPrep",
+        "label": "Residence permit fees",
+        "value": "€300 – €400",
+        "note": "Fees vary by route and application type."
+      },
+      {
+        "key": "firstMonthSetup",
+        "label": "Initial setup costs",
+        "value": "€1,500 – €3,000",
+        "note": "Deposit, first rent, utilities, initial expenses."
+      },
+      {
+        "key": "moneyTransferBanking",
+        "label": "International transfer / banking setup",
+        "value": "Varies",
+        "note": "Transfer fees and first-account setup."
+      }
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration information and residence permit routes."
+      },
+      {
+        "label": "Netherlands Embassy in the UK",
+        "name": "Embassy of the Kingdom of the Netherlands in the United Kingdom",
+        "website": "https://www.netherlandsandyou.nl/your-country-and-the-netherlands/united-kingdom",
+        "contactSummary": "Country-specific consular and visa information."
+      }
+    ]
+  },
+  "heroImageAlt": "A British professional at a desk by a window overlooking a Dutch canal, focused on relocation planning. On the desk are a laptop showing a world map with a route to the Netherlands, an open notebook, a UK passport, documents labeled for Flights and planning, and a suitcase. In the background, Dutch canal houses, a bridge, and bicycles in soft daylight.",
+  "shipping": {
+    "intro": "Shipping from the United Kingdom typically takes 1–3 weeks depending on method. Many UK movers initially rent temporary housing before securing long-term accommodation.",
+    "notes": [
+      "Common options: luggage-only move, partial household shipment, or full relocation container.",
+      "Short distance allows more flexible staging of move and travel."
+    ]
+  },
+  "seo": {
+    "title": "Moving to the Netherlands from the UK | Visa, Costs & Relocation Guide",
+    "description": "A practical relocation guide for UK citizens moving to the Netherlands including visa routes, relocation costs, documents, and planning tools."
+  },
+  "faqOverrides": [
+    {
+      "q": "Do UK citizens need a visa to move to the Netherlands?",
+      "a": "Yes, for stays longer than 90 days. After Brexit, UK citizens follow non-EU rules and need a residence permit. Common routes include the Highly Skilled Migrant visa, EU Blue Card, partner visa, or entrepreneur visa."
+    },
+    {
+      "q": "How long can UK citizens stay in the Netherlands?",
+      "a": "Without a visa, up to 90 days in 180 days (Schengen). For longer stays you need a residence permit via work, family, study, or entrepreneurship."
+    },
+    {
+      "q": "How much does relocation from the UK cost?",
+      "a": "Costs vary by housing and method. Typical ranges include flights (€80–€250), shipping (€1,200–€4,000), temporary housing (€1,500–€3,000/month), and permit and setup costs. Use the relocation cost estimator for a personalised range."
+    },
+    {
+      "q": "Can UK citizens work in the Netherlands after Brexit?",
+      "a": "Yes, with a valid residence permit that allows work, such as the Highly Skilled Migrant visa or EU Blue Card. Employers must be recognised sponsors for the HSM route."
+    },
+    {
+      "q": "What documents are required when moving from the UK?",
+      "a": "Typically passport, birth and marriage certificates if relevant, employment contract, proof of address, qualifications, and health insurance proof. Some documents may need apostille certification."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Finance professional relocating from London",
+      "summary": "Focus on financial sector roles, Amsterdam base, and Highly Skilled Migrant visa. Plan document prep, housing search, and first-week registration."
+    },
+    {
+      "title": "Consultant relocating for EU market access",
+      "summary": "Focus on multinational companies and business relocation. Coordinate visa, housing, and registration with employer support."
+    },
+    {
+      "title": "Entrepreneur launching EU business",
+      "summary": "Focus on startup relocation and Dutch business registration. Plan for entrepreneur visa, bank account, and company setup."
+    },
+    {
+      "title": "Family relocation from the UK",
+      "summary": "Focus on schools, housing, and family visa routes. Plan for longer lead time on documents and housing that fits family size."
+    }
+  ],
+  "affiliateContext": {
+    "preferredCategories": ["banking", "housing", "insurance", "shipping", "mobile"],
+    "customNotes": [
+      "UK movers often compare international transfers, temporary housing, and shipping options for UK–EU moves."
+    ]
+  }
+}

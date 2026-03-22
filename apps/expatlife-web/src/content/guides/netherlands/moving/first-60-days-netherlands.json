@@ -1,0 +1,400 @@
+{
+  "slug": "first-60-days-netherlands",
+  "path": "/netherlands/first-60-days-netherlands/",
+  "title": "First 60 Days in the Netherlands: What Expats Usually Set Up",
+  "subtitle": "A practical guide to the first 60 days after moving to the Netherlands. What expats commonly set up in their second month, from banking and health insurance to DigiD, housing, and daily-life routines.",
+  "description": "A practical guide to the first 60 days after moving to the Netherlands. Learn what expats usually set up after arrival, from banking and health insurance to DigiD, housing, and daily-life routines.",
+  "breadcrumbLabel": "First 60 Days",
+
+  "hero": {
+    "eyebrow": "Arrival",
+    "badges": ["Arrival Guide"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/expat-organizing-netherlands-canal-view.png",
+      "alt": "Expat organizing first 60 days setup in the Netherlands"
+    }
+  },
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "progression", "label": "From first month to second-month stability" },
+    { "id": "weeks-5-6", "label": "Weeks 5–6: Confirm the essentials" },
+    { "id": "weeks-7-8", "label": "Weeks 7–8: Build stable routines" },
+    { "id": "housing-follow-up", "label": "Housing and address follow-up" },
+    { "id": "admin-health-check", "label": "A simple admin health check" },
+    { "id": "checklist-by-day-60", "label": "Checklist by day 60" },
+    { "id": "what-expats-arrange-next", "label": "What expats typically arrange next" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+
+  "heroCta": {
+    "title": "Plan your next 30 days with less guesswork",
+    "supportingText": "Use the First 90 Days Planner to track what usually happens after the first month — and keep your banking, insurance, DigiD, housing, and admin setup on track.",
+    "primaryCtaLabel": "Open the First 90 Days Planner",
+    "primaryCtaHref": "/netherlands/moving/tools/first-90-days/",
+    "secondaryCtaLabel": "Generate a Moving Checklist",
+    "secondaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "helperLinkLabel": "Check Document Readiness",
+    "helperLinkHref": "/netherlands/document-readiness-checker/"
+  },
+
+  "quickAnswers": [
+    {
+      "label": "WHAT CHANGES AFTER THE FIRST MONTH?",
+      "value": "Core registrations are usually done; the focus shifts to making daily life stable and closing remaining admin gaps."
+    },
+    {
+      "label": "COMMON FOCUS AREAS",
+      "value": "Banking, health insurance, DigiD, housing follow-up, direct debits, local doctor registration, and routine admin."
+    },
+    {
+      "label": "BEST NEXT STEP",
+      "value": "Use the First 90 Days Planner to track what still needs attention between day 30 and day 90."
+    }
+  ],
+
+  "progressionStages": [
+    {
+      "label": "First 30 Days",
+      "description": "Register, receive BSN, start daily-life setup."
+    },
+    {
+      "label": "Day 30–60",
+      "description": "Confirm essentials, stabilize routines, review housing and admin."
+    },
+    {
+      "label": "First 90 Days",
+      "description": "Close remaining gaps, understand longer-term systems, settle in."
+    }
+  ],
+
+  "howToSteps": [
+    { "name": "Confirm municipality registration and BSN access" },
+    { "name": "Stabilize banking and direct debits" },
+    { "name": "Finalize health insurance and DigiD" },
+    { "name": "Build recurring daily-life routines" },
+    { "name": "Review housing and remaining admin tasks" }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "The first 60 days are usually about stabilizing what was started in the first month. Many expats move from \"arrival admin\" into \"settling-in admin.\" That often includes checking that registrations work properly, making recurring payments function, finalizing DigiD and insurance, and reviewing housing plans.",
+        "Requirements vary by nationality, municipality, employer, and household situation. If you have just finished your first month, the first 30 days guide and the moving timeline can help you see how the second month fits in. Already past the first month? Use the 90-day planner to see what people commonly finalize next."
+      ],
+      "links": [
+        { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" }
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Planning note",
+        "text": "This page is a practical guide to what expats commonly do in their second month. Exact timing varies by municipality, employer, and household setup."
+      }
+    },
+    {
+      "id": "weeks-5-6",
+      "heading": "Weeks 5–6: Confirm the essentials",
+      "body": [
+        "This period is often about checking that earlier setup is actually working. Problems often appear only after the first salary, first insurance letter, or first login attempt — so confirming each piece now can prevent friction later."
+      ],
+      "bullets": [
+        "Confirm municipality registration completed successfully",
+        "Check your BSN is being accepted where needed",
+        "Make sure your Dutch bank account works for salary and direct debits",
+        "Confirm health insurance is active and linked correctly",
+        "Activate or finish DigiD access",
+        "Review whether employer onboarding or payroll still needs any missing documents"
+      ],
+      "internalCta": {
+        "label": "Open the First 90 Days Planner",
+        "href": "/netherlands/moving/tools/first-90-days/"
+      },
+      "links": [
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "Track what is still incomplete",
+        "text": "Use the First 90 Days Planner to see what usually still needs follow-up after the first month."
+      },
+      "services": [
+        {
+          "name": "bunq",
+          "description": "Dutch digital bank popular with expats for quick onboarding and English-friendly setup.",
+          "url": "https://www.bunq.com/",
+          "indicativeCost": "Paid plans from about €3–€10+ per month, depending on plan.",
+          "reason": "Good for setting up a Dutch IBAN and managing recurring payments.",
+          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
+        },
+        {
+          "name": "Wise",
+          "description": "Multi-currency account for international transfers and sending money between countries.",
+          "url": "https://wise.com/",
+          "indicativeCost": "Account is free to open; transfer fees vary by currency and amount.",
+          "reason": "Useful when income, savings, or ongoing expenses still span countries.",
+          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
+        },
+        {
+          "name": "ABN AMRO",
+          "description": "Dutch bank with English-language support and expat-friendly onboarding in many cases.",
+          "url": "https://www.abnamro.nl/en/personal/specially-for/expats",
+          "indicativeCost": "Basic account generally around a few euros per month.",
+          "reason": "Useful for people who prefer a traditional bank setup.",
+          "logo": { "src": "/images/affiliates/logos/abn-amro.svg", "alt": "ABN AMRO logo" }
+        }
+      ]
+    },
+    {
+      "id": "weeks-7-8",
+      "heading": "Weeks 7–8: Build stable routines",
+      "body": [
+        "Second-month life becomes more routine for many expats, but admin still matters. This is when many people start simplifying payments, transport, communication, and healthcare usage. One missed step can cause friction later with payments, insurance, or appointments — so a little structure now helps."
+      ],
+      "bullets": [
+        "Set up recurring payments for rent, utilities, subscriptions, and insurance",
+        "Review your mobile plan and connectivity",
+        "Register with a local GP if you have not done so already",
+        "Learn local transport patterns and choose the right OV / bike / commute setup",
+        "Check which official letters or app notifications still need action",
+        "Start keeping a simple admin folder for account confirmations, policy details, and login records"
+      ],
+      "links": [
+        { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+        { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" },
+        { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      ],
+      "services": [
+        {
+          "name": "Simyo",
+          "description": "Flexible Dutch SIM-only mobile plans suitable for new arrivals.",
+          "url": "https://www.simyo.nl/",
+          "indicativeCost": "SIM-only plans often start from around €7–€20/month depending on data.",
+          "reason": "Useful in the second month once daily-life routines become more stable.",
+          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
+        },
+        {
+          "name": "Independer",
+          "description": "Dutch comparison platform often used to compare health insurance and other household cover.",
+          "url": "https://www.independer.nl/",
+          "indicativeCost": "Free comparison service.",
+          "reason": "Helpful for reviewing or comparing health insurance options once BSN and registration are done.",
+          "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
+        },
+        {
+          "name": "bunq",
+          "description": "Dutch digital bank popular with expats for quick onboarding and recurring payments.",
+          "url": "https://www.bunq.com/",
+          "indicativeCost": "Paid plans from about €3–€10+ per month.",
+          "reason": "Useful for managing direct debits and daily banking.",
+          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
+        }
+      ]
+    },
+    {
+      "id": "housing-follow-up",
+      "heading": "Housing and address follow-up",
+      "body": [
+        "If you started in temporary housing, the second month is often when longer-term housing decisions become more urgent. Changing addresses may trigger more admin, and some services still rely on the currently registered address."
+      ],
+      "bullets": [
+        "Confirm the registered address on file is correct",
+        "If moving again, plan municipality address change steps early",
+        "Keep rental agreement and proof-of-address documents organized",
+        "Check whether your bank, insurer, employer, and other services use the correct address",
+        "Review whether temporary accommodation allowed all the registration steps you expected"
+      ],
+      "links": [
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
+        { "label": "Moving to the Netherlands with kids", "href": "/netherlands/moving-to-netherlands-with-kids/" },
+        { "label": "Open a bank account in the Netherlands (BSN)", "href": "/netherlands/open-bank-account-netherlands/#bsn" }
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "If your address changes",
+        "text": "Many systems use your registered address as a reference point. If you move during your first two months, keep a simple checklist of which services may need updates."
+      },
+      "services": [
+        {
+          "name": "HousingAnywhere",
+          "description": "Platform used by internationals searching for temporary or medium-term rentals.",
+          "url": "https://housinganywhere.com/",
+          "indicativeCost": "Platform and service fees vary by booking.",
+          "reason": "Relevant if you started in temporary housing and still need medium-term stability.",
+          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
+        },
+        {
+          "name": "Pararius",
+          "description": "Major rental listing platform in the Netherlands for longer-term housing.",
+          "url": "https://www.pararius.com/",
+          "indicativeCost": "Listing platform; rent depends on area.",
+          "reason": "Useful for reviewing longer-term housing options.",
+          "logo": { "src": "/images/affiliates/logos/pararius.svg", "alt": "Pararius logo" }
+        }
+      ]
+    },
+    {
+      "id": "admin-health-check",
+      "heading": "A simple \"admin health\" check",
+      "body": [
+        "By day 60, many expats benefit from a quick review of what is completed, what is pending, and what still feels unclear. This is not about perfection — it is about reducing unknowns."
+      ],
+      "bullets": [
+        "Do you have a BSN and registered address?",
+        "Is your bank account working for salary and direct debits?",
+        "Is health insurance active?",
+        "Is DigiD set up if you need online government access?",
+        "Have you registered with a GP if appropriate?",
+        "Are your housing documents easy to find?",
+        "Do you know what still needs attention before day 90?"
+      ]
+    },
+    {
+      "id": "checklist-by-day-60",
+      "heading": "Checklist by day 60",
+      "body": [
+        "By the end of the second month, many expats aim to have the core systems of daily life working reliably. Use the checklist generator or 90-day planner if several items are still open."
+      ],
+      "bullets": [
+        "Municipality registration completed",
+        "BSN available where needed",
+        "Dutch bank account active",
+        "Salary and direct debit setup tested",
+        "Health insurance active",
+        "DigiD set up (if needed)",
+        "GP registration considered or completed",
+        "Current housing situation clear",
+        "Key documents stored in one place",
+        "Remaining first-90-days tasks identified"
+      ],
+      "internalCta": {
+        "label": "Open the First 90 Days Planner",
+        "href": "/netherlands/moving/tools/first-90-days/"
+      }
+    },
+    {
+      "id": "what-expats-arrange-next",
+      "heading": "What expats typically arrange next",
+      "body": [
+        "After the first two months, many expats start shifting from immediate setup into longer-term planning and integration."
+      ],
+      "bullets": [
+        "Review longer-term housing decisions",
+        "Understand tax and payroll administration more clearly",
+        "Learn local healthcare and insurance routines",
+        "Improve commute and transport setup",
+        "Start language and integration awareness",
+        "Build more stable weekly routines around payments, appointments, and government correspondence"
+      ],
+      "links": [
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" },
+        { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" }
+      ]
+    }
+  ],
+
+  "midPageCta": {
+    "title": "Turn this into a working plan",
+    "description": "The First 90 Days Planner can turn these checkpoints into a clearer timeline.",
+    "ctaLabel": "Open planner",
+    "ctaHref": "/netherlands/moving/tools/first-90-days/"
+  },
+  "midPageCtaAfterSectionId": "admin-health-check",
+
+  "toolCtas": [
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Track what usually still needs attention after the first month.",
+      "ctaLabel": "Open planner"
+    },
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Build a practical checklist for your relocation stage and household.",
+      "ctaLabel": "Generate checklist"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Check Document Readiness",
+      "href": "/netherlands/document-readiness-checker/",
+      "description": "See whether your essential admin documents are likely in place.",
+      "ctaLabel": "Check documents"
+    }
+  ],
+
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the full Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Moving to the Netherlands Timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+      { "label": "BSN Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "Registering Your Address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "DigiD Awareness for Expats", "href": "/netherlands/digid-awareness/" },
+      { "label": "Moving to the Netherlands Cost", "href": "/netherlands/moving-to-netherlands-cost/" },
+      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+    ]
+  },
+
+  "sidebarStartLinks": [
+    { "label": "Plan Your First 90 Days", "href": "/netherlands/moving/tools/first-90-days/" },
+    { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+    { "label": "Check Document Readiness", "href": "/netherlands/document-readiness-checker/" },
+    { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" }
+  ],
+
+  "faq": [
+    {
+      "q": "What should expats focus on after the first month in the Netherlands?",
+      "a": "Many expats focus on confirming that essentials like banking, insurance, and DigiD are stable, then on building routines: recurring payments, GP registration, transport, and keeping admin in one place. The First 90 Days Planner can help you see what usually still needs attention."
+    },
+    {
+      "q": "Is day 60 still considered \"arrival admin\"?",
+      "a": "For many people, yes. Some admin steps can take longer depending on appointment availability and personal circumstances. The second month is often a mix of closing gaps from the first month and settling into stable routines."
+    },
+    {
+      "q": "What if I am still missing an essential step after two months?",
+      "a": "It is common for some items to take longer. List what is missing, what you have confirmed, and what needs follow-up. Use the 90-day planner or checklist generator to prioritise and track. Related guides on BSN, address registration, and DigiD can help with specific steps."
+    },
+    {
+      "q": "Should my bank account and health insurance already be active by day 60?",
+      "a": "Many expats have both in place by day 60, but timing varies. If either is still pending, prioritise it — both are usually needed for salary, direct debits, and legal compliance. Check deadlines with your employer and insurer."
+    },
+    {
+      "q": "Do I need DigiD during my second month?",
+      "a": "It depends on what you need to do online. DigiD is required for many Dutch government and healthcare portals. If you have your BSN and bank details, starting activation in the second month is common so it is ready when you need it."
+    },
+    {
+      "q": "What happens if I change address during the first 60 days?",
+      "a": "You will need to report the change to the municipality and update your address with your bank, insurer, employer, and any other services that use it. Keep a simple list of who needs to be notified so nothing is missed."
+    }
+  ],
+
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

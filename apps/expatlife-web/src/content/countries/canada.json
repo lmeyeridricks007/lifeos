@@ -1,0 +1,56 @@
+{
+  "slug": "canada",
+  "name": "Canada",
+  "shortName": "CA",
+  "iso2": "CA",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["English", "French"],
+  "travel": {
+    "typicalFlightTime": "7-10 hours",
+    "notes": ["Long-haul routes usually require early travel and housing planning."]
+  },
+  "relocationProfile": {
+    "commonReasons": ["Employer relocation", "Family move", "Lifestyle change"],
+    "popularDutchCities": ["Amsterdam", "Utrecht", "Rotterdam"],
+    "commonSectors": ["Technology", "Finance", "Logistics"]
+  },
+  "visaAwareness": {
+    "commonRoutes": ["Highly Skilled Migrant", "Partner / Family route", "Study route"],
+    "notes": ["Check route requirements based on your sponsor and stay purpose."]
+  },
+  "documents": {
+    "commonStarterDocuments": ["Passport", "Birth certificate", "Employment records", "Proof of address"],
+    "countrySpecificNotes": ["Provincial document processes can have different lead times."],
+    "sources": [
+      {
+        "label": "Government of Canada",
+        "name": "Government of Canada Services",
+        "website": "https://www.canada.ca",
+        "contactSummary": "Government information for identity and civil records."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "CAD / EUR",
+    "ranges": [
+      { "key": "oneWayFlight", "label": "One-way flight", "value": "CAD500-CAD1,200", "note": "Depends on city pair and season." },
+      { "key": "shipping", "label": "Shipping household goods", "value": "EUR2,000-EUR7,000", "note": "Based on shipment size and service type." }
+    ]
+  },
+  "contacts": {
+    "official": [
+      { "label": "IND", "name": "Dutch Immigration and Naturalisation Service", "website": "https://ind.nl", "contactSummary": "Official immigration information." }
+    ]
+  },
+  "seo": {
+    "title": "Moving to the Netherlands from Canada: Practical Planning Guide",
+    "description": "Practical relocation planning for people moving from Canada to the Netherlands, including documents, route awareness, and first-step priorities."
+  },
+  "faqOverrides": [],
+  "scenarioOverrides": [],
+  "affiliateContext": {
+    "preferredCategories": ["banking", "housing", "insurance"],
+    "customNotes": []
+  }
+}

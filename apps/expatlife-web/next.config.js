@@ -1,0 +1,254 @@
+const { withContentlayer } = require("next-contentlayer");
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  swcMinify: true,
+  transpilePackages: ["@expatlife/content"],
+  experimental: {
+    serverComponentsExternalPackages: ["pdfkit"],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/netherlands/visa/student-residence-permit",
+        destination: "/netherlands/visa/student-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/student-residence-permit/",
+        destination: "/netherlands/visa/student-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/study-visa",
+        destination: "/netherlands/visa/student-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/study-visa/",
+        destination: "/netherlands/visa/student-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/european-blue-card",
+        destination: "/netherlands/visa/eu-blue-card/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/european-blue-card/",
+        destination: "/netherlands/visa/eu-blue-card/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/daft-visa",
+        destination: "/netherlands/visa/dutch-american-friendship-treaty/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/daft-visa/",
+        destination: "/netherlands/visa/dutch-american-friendship-treaty/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visas-residency/partner-family",
+        destination: "/netherlands/visa/partner-family-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visas-residency/partner-family/",
+        destination: "/netherlands/visa/partner-family-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/partner-visa",
+        destination: "/netherlands/visa/partner-family-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/partner-visa/",
+        destination: "/netherlands/visa/partner-family-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/family-reunification",
+        destination: "/netherlands/visa/partner-family-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/family-reunification/",
+        destination: "/netherlands/visa/partner-family-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/spouse-visa",
+        destination: "/netherlands/visa/partner-family-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/spouse-visa/",
+        destination: "/netherlands/visa/partner-family-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/family-permit",
+        destination: "/netherlands/visa/partner-family-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/family-permit/",
+        destination: "/netherlands/visa/partner-family-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/self-employed-residence-permit",
+        destination: "/netherlands/visa/self-employed-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/self-employed-residence-permit/",
+        destination: "/netherlands/visa/self-employed-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/entrepreneur-visa",
+        destination: "/netherlands/visa/self-employed-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/entrepreneur-visa/",
+        destination: "/netherlands/visa/self-employed-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/freelancer-visa",
+        destination: "/netherlands/visa/self-employed-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa/freelancer-visa/",
+        destination: "/netherlands/visa/self-employed-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/moving-to-netherlands-from/us",
+        destination: "/netherlands/moving/moving-to-netherlands-from/united-states/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/moving-to-netherlands-from/us/",
+        destination: "/netherlands/moving/moving-to-netherlands-from/united-states/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/moving-to-netherlands-from/uk",
+        destination: "/netherlands/moving/moving-to-netherlands-from/united-kingdom/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/moving-to-netherlands-from/uk/",
+        destination: "/netherlands/moving/moving-to-netherlands-from/united-kingdom/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/tools/visa-eligibility-checker",
+        destination: "/netherlands/visa-checker/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/tools/visa-eligibility-checker/",
+        destination: "/netherlands/visa-checker/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/tools/document-readiness",
+        destination: "/netherlands/document-readiness-checker/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/tools/document-readiness/",
+        destination: "/netherlands/document-readiness-checker/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/documents-needed-to-move-netherlands",
+        destination: "/netherlands/document-readiness-checker/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/documents-needed-to-move-netherlands/",
+        destination: "/netherlands/document-readiness-checker/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving-documents-checklist",
+        destination: "/netherlands/document-readiness-checker/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving-documents-checklist/",
+        destination: "/netherlands/document-readiness-checker/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa-documents-netherlands",
+        destination: "/netherlands/document-readiness-checker/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visa-documents-netherlands/",
+        destination: "/netherlands/document-readiness-checker/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/tools/residence-permit-timeline-estimator",
+        destination: "/netherlands/visa-timeline-estimator/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/tools/residence-permit-timeline-estimator/",
+        destination: "/netherlands/visa-timeline-estimator/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/settling-in-netherlands",
+        destination: "/netherlands/after-arriving-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/settling-in-netherlands/",
+        destination: "/netherlands/after-arriving-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/can-i-open-bank-account-before-bsn",
+        destination: "/netherlands/open-bank-account-netherlands/#bsn",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/can-i-open-bank-account-before-bsn/",
+        destination: "/netherlands/open-bank-account-netherlands/#bsn",
+        permanent: true,
+      },
+    ];
+  },
+  async headers() {
+    if (process.env.NODE_ENV === "development") {
+      return [
+        {
+          source: "/_next/static/:path*",
+          headers: [{ key: "Cache-Control", value: "no-store" }],
+        },
+      ];
+    }
+
+    return [
+      {
+        source: "/_next/static/:path*",
+        headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],
+      },
+    ];
+  },
+};
+
+module.exports = withContentlayer(nextConfig);

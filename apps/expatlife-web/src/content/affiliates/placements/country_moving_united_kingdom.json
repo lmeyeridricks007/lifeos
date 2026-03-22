@@ -1,0 +1,22 @@
+{
+  "id": "country_moving_united_kingdom",
+  "destinationCountry": "netherlands",
+  "originCountry": "united-kingdom",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/united-kingdom/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services commonly used by people moving from the United Kingdom",
+  "intro": "These services are often compared by UK citizens planning a move to the Netherlands.",
+  "categoryOrder": ["banking", "housing", "insurance", "shipping", "mobile"],
+  "items": [
+    { "providerId": "wise", "reason": "Low-cost international transfers." },
+    { "providerId": "bunq", "reason": "Popular for Dutch digital banking after arrival." },
+    { "providerId": "housinganywhere", "reason": "Frequently used for temporary accommodation searches." },
+    { "providerId": "simyo", "reason": "Used for Dutch mobile SIM setup after arrival." },
+    { "providerId": "independer", "reason": "Useful for comparing Dutch health insurance after arrival." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

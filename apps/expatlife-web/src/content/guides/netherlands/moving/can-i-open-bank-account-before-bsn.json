@@ -1,0 +1,373 @@
+{
+  "slug": "can-i-open-bank-account-before-bsn",
+  "path": "/netherlands/can-i-open-bank-account-before-bsn/",
+  "title": "Can You Open a Dutch Bank Account Before You Get a BSN?",
+  "metaTitle": "Can You Open a Dutch Bank Account Before Getting a BSN? | Expat Guide",
+  "subtitle": "What is often possible, what is usually blocked, and practical options—without a BSN.",
+  "description": "Can expats open a Dutch bank account before getting a BSN? Learn what is often possible, what is usually blocked, and the best temporary options while waiting for registration.",
+  "breadcrumbLabel": "Bank account before BSN",
+
+  "hero": {
+    "eyebrow": "Banking & arrival",
+    "badges": ["Guide"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/expat-banking-bsn-netherlands-hero.png",
+      "alt": "Expat with smartphone and municipality registration document in front of a Dutch bank, considering banking options before BSN registration"
+    }
+  },
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "why-bsn-matters", "label": "Why BSN matters for banking" },
+    { "id": "before-bsn-options", "label": "What you can often do before BSN" },
+    { "id": "what-usually-blocked", "label": "What is usually blocked without BSN" },
+    { "id": "banks-and-account-types", "label": "Banks and account types before BSN" },
+    { "id": "salary-payments", "label": "Salary payments before a Dutch account" },
+    { "id": "comparison", "label": "Rough comparison" },
+    { "id": "temporary-workarounds", "label": "Temporary workarounds" },
+    { "id": "checklist", "label": "Practical checklist" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+
+  "heroCta": {
+    "title": "Plan your arrival admin",
+    "supportingText": "Use our tools to map what usually happens before and after BSN registration, banking setup, and your first weeks in the Netherlands.",
+    "primaryCtaLabel": "Generate a Moving Checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtas": [
+      { "label": "Plan Your First 90 Days", "href": "/netherlands/moving/tools/first-90-days/" },
+      { "label": "Open Arrival Planner", "href": "/netherlands/moving/tools/arrival-planner/" }
+    ],
+    "supportingLinks": [
+      { "label": "BSN registration guide", "href": "/netherlands/bsn-registration/" },
+      { "label": "Register your address", "href": "/netherlands/register-address-netherlands/" },
+      { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" }
+    ]
+  },
+
+  "quickAnswers": [
+    {
+      "label": "SHORT ANSWER",
+      "value": "Sometimes partially — but usually not fully. A full Dutch current account often requires a BSN, while multi-currency or transfer-focused accounts are often easier to open before registration."
+    },
+    {
+      "label": "BEFORE-BSN OPTIONS",
+      "value": "International or multi-currency accounts are often more flexible before BSN and can help with transfers, spending, and early setup."
+    },
+    {
+      "label": "BEST NEXT STEP",
+      "value": "Confirm current provider rules directly, then register your address and get your BSN as soon as possible to unlock more local banking options."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "Many expats ask whether they can open a Dutch bank account before they receive a BSN (citizen service number). The short answer is: sometimes partially, but most full Dutch current accounts require a BSN.",
+        "What is possible depends on the provider, account type, whether you need a full local current account or mainly transfers, and where you are in the arrival process. Multi-currency or international transfer accounts are often easier to use while waiting for registration.",
+        "In practice: full current accounts usually require a BSN; some providers offer limited onboarding or partial application before BSN; timing matters if salary, rent, or direct debits are involved; and rules differ by bank and product. For more detail, see our guides on BSN registration, registering your address, opening a bank account in the Netherlands, and planning your first 90 days."
+      ],
+      "links": [
+        { "label": "BSN registration", "href": "/netherlands/bsn-registration/" },
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/register-address-netherlands/" },
+        { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      ]
+    },
+    {
+      "id": "why-bsn-matters",
+      "heading": "Why BSN matters for banking",
+      "body": [
+        "Banks often use your BSN for identity and compliance checks, tax reporting, and linking your account to local administrative systems. In practice, salary and direct debit setup usually work more smoothly once you have a local account tied to your BSN."
+      ],
+      "bullets": [
+        "Tax and identity: banks often use your BSN for reporting and verification.",
+        "Full current account setup: a BSN is commonly required before completion.",
+        "Salary setup: some employers prefer or require local banking details.",
+        "Direct debits and recurring payments are usually easier once a local account is active.",
+        "DigiD and other admin systems often become easier once your basic registration is complete."
+      ],
+      "internalCta": {
+        "label": "Read BSN registration guide",
+        "href": "/netherlands/bsn-registration/"
+      },
+      "services": [
+        {
+          "name": "ABN AMRO",
+          "description": "Major Dutch bank with broader local banking options once your registration and BSN are in place.",
+          "url": "https://www.abnamro.nl/",
+          "indicativeCost": "Account pricing varies by package.",
+          "reason": "Traditional bank, local banking",
+          "logo": { "src": "/images/affiliates/logos/abn-amro.svg", "alt": "ABN AMRO logo" }
+        },
+        {
+          "name": "ING",
+          "description": "Traditional Dutch bank often used for salary, direct debits, and long-term local banking after BSN.",
+          "url": "https://www.ing.nl/",
+          "indicativeCost": "Account pricing varies by package.",
+          "reason": "Traditional bank, salary account"
+        }
+      ]
+    },
+    {
+      "id": "before-bsn-options",
+      "heading": "What you can often do before BSN",
+      "body": [
+        "Multi-currency or international transfer accounts (e.g. Wise, Revolut, or some neobanks) are often openable without a BSN and can be used for receiving money and spending in euros. Some Dutch banks have introduced limited onboarding or \"waiting for BSN\" flows—check their current offers.",
+        "You can often prepare documents (passport, proof of address once you have it) so that as soon as you have a BSN you can complete a full account application."
+      ],
+      "internalCta": {
+        "label": "Register your address",
+        "href": "/netherlands/register-address-netherlands/"
+      },
+      "services": [
+        {
+          "name": "Wise",
+          "description": "Multi-currency account and international transfers often used before full local banking is set up.",
+          "url": "https://wise.com/",
+          "indicativeCost": "Fees vary by route and currency; card/account pricing varies by market.",
+          "reason": "Multi-currency, transfers, temporary setup",
+          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
+        },
+        {
+          "name": "bunq",
+          "description": "App-first Dutch bank often considered by internationals looking for faster onboarding.",
+          "url": "https://www.bunq.com/",
+          "indicativeCost": "Plan pricing varies.",
+          "reason": "Dutch bank, app-first, expat-friendly",
+          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
+        },
+        {
+          "name": "Revolut",
+          "description": "Multi-currency app used by expats for early spending, transfers, and temporary account access.",
+          "url": "https://www.revolut.com/",
+          "indicativeCost": "Free and paid plans available; fees vary by usage.",
+          "reason": "Multi-currency, app banking, international"
+        }
+      ]
+    },
+    {
+      "id": "what-usually-blocked",
+      "heading": "What is usually blocked without BSN",
+      "body": [
+        "A full Dutch current account with a traditional bank is often not fully available until you have a BSN. Employer payroll may require a local account; timing with your first salary can be tight if registration is delayed. Recurring direct debits and some local services may assume a local account."
+      ]
+    },
+    {
+      "id": "banks-and-account-types",
+      "heading": "Banks and account types before BSN",
+      "body": [
+        "The difference between account types can help you decide what to aim for before you have a BSN. Rules can vary by provider and account type; confirm current onboarding rules directly."
+      ],
+      "bullets": [
+        "Full Dutch current accounts (e.g. ABN AMRO, ING, Rabobank): often require a BSN before the account is fully activated or used as a normal local current account.",
+        "Digital / app-first banking (e.g. bunq, Revolut): may have faster onboarding, but requirements still vary by account type and current policy.",
+        "Multi-currency / transfer-focused accounts (e.g. Wise, Revolut, bunq where appropriate): often the easiest temporary option before BSN if your main need is receiving money, holding euros, or making transfers."
+      ],
+      "links": [
+        { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" }
+      ]
+    },
+    {
+      "id": "salary-payments",
+      "heading": "Salary payments before a Dutch account",
+      "body": [
+        "Some employers may accept a foreign or non-Dutch IBAN temporarily; others prefer or require a Dutch or local account. This varies by employer and payroll process. Timing matters if BSN or registration is delayed."
+      ],
+      "bullets": [
+        "Ask your employer or payroll team which account types they accept.",
+        "Confirm whether a foreign IBAN or multi-currency IBAN is acceptable temporarily.",
+        "If a Dutch account is eventually required, plan your registration and BSN timing early.",
+        "Keep proof of account details ready once available."
+      ],
+      "links": [
+        { "label": "BSN registration", "href": "/netherlands/bsn-registration/" },
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/register-address-netherlands/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      ]
+    },
+    {
+      "id": "comparison",
+      "heading": "Rough comparison",
+      "body": [
+        "This is a rough guide. Rules differ by bank, product, and provider; always confirm current requirements directly."
+      ],
+      "table": {
+        "headers": ["Option", "Before BSN possible?", "Typical use", "Notes"],
+        "rows": [
+          ["Full Dutch current account", "Sometimes limited", "Local banking", "Often completed after BSN"],
+          ["Digital / app-first current account", "Sometimes", "Early spending / app banking", "Rules vary by provider"],
+          ["Multi-currency account", "Often easier", "Transfers + spending", "Useful temporary option"],
+          ["Employer payroll setup", "Sometimes depends", "Salary", "Employer policy matters"],
+          ["Direct debits / recurring payments", "Often easier after full account", "Bills + subscriptions", "Timing matters"]
+        ]
+      }
+    },
+    {
+      "id": "temporary-workarounds",
+      "heading": "Temporary workarounds",
+      "body": [
+        "Typical workarounds: use a multi-currency account for transfers and early spending; use an international transfer account while waiting for BSN; start the application process early if the bank allows partial onboarding; prepare identity and address documents in advance; and register and get your BSN as soon as possible."
+      ],
+      "ctaBlock": {
+        "title": "Need to time this properly?",
+        "supportingText": "Use the Arrival Planner or First 90 Days Planner to sequence address registration, BSN, banking, and early admin tasks.",
+        "primaryLabel": "Open Arrival Planner",
+        "primaryHref": "/netherlands/moving/tools/arrival-planner/",
+        "secondaryLabel": "Plan Your First 90 Days",
+        "secondaryHref": "/netherlands/moving/tools/first-90-days/"
+      },
+      "services": [
+        {
+          "name": "Wise",
+          "description": "Multi-currency account and international transfers often used before full local banking is set up.",
+          "url": "https://wise.com/",
+          "indicativeCost": "Fees vary by route and currency.",
+          "reason": "Multi-currency, transfers, temporary setup",
+          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
+        },
+        {
+          "name": "Revolut",
+          "description": "Multi-currency app used by expats for early spending, transfers, and temporary account access.",
+          "url": "https://www.revolut.com/",
+          "indicativeCost": "Free and paid plans; fees vary by usage.",
+          "reason": "Multi-currency, app banking, international"
+        },
+        {
+          "name": "bunq",
+          "description": "App-first Dutch bank often considered by internationals for faster onboarding.",
+          "url": "https://www.bunq.com/",
+          "indicativeCost": "Plan pricing varies.",
+          "reason": "Dutch bank, app-first, expat-friendly",
+          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
+        }
+      ]
+    },
+    {
+      "id": "checklist",
+      "heading": "Practical checklist",
+      "body": [
+        "A few steps that often help when planning banking around BSN and arrival."
+      ],
+      "bullets": [
+        "Check the current onboarding rules of the bank or provider you want to use.",
+        "Decide whether you need a full local current account or only a temporary transfer/spending solution.",
+        "Confirm whether your employer can pay salary to a temporary or foreign IBAN.",
+        "Register your address as soon as your housing situation allows it.",
+        "Book your municipality appointment early if slots are limited.",
+        "Get your BSN as soon as possible to unlock more local banking options.",
+        "Keep passport, registration proof, and account setup notes together in one folder."
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Common mistakes",
+        "text": "Assuming every bank has the same rules. Policies differ by bank, provider, and account type. Waiting too long to register your address can delay BSN and keep local banking options limited."
+      },
+      "links": [
+        { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+        { "label": "BSN registration", "href": "/netherlands/bsn-registration/" },
+        { "label": "Arrival Planner", "href": "/netherlands/moving/tools/arrival-planner/" }
+      ]
+    }
+  ],
+
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "See what usually happens before and after BSN registration and banking setup.",
+      "ctaLabel": "Generate checklist"
+    },
+    {
+      "key": "arrival-planner",
+      "label": "Arrival Planner",
+      "href": "/netherlands/moving/tools/arrival-planner/",
+      "description": "Order your first registration, BSN, housing, and banking steps after arrival.",
+      "ctaLabel": "Open planner"
+    },
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Map how BSN, banking, insurance, and early admin usually line up in your first months.",
+      "ctaLabel": "Open planner"
+    }
+  ],
+
+  "toolsCtaBand": {
+    "title": "Turn this guide into your personal plan",
+    "body": "Use the Arrival Planner or First 90 Days Planner to build a practical sequence for registration, BSN, and banking based on your situation.",
+    "primaryLabel": "Open Arrival Planner",
+    "primaryHref": "/netherlands/moving/tools/arrival-planner/",
+    "secondaryLabel": "Plan Your First 90 Days",
+    "secondaryHref": "/netherlands/moving/tools/first-90-days/",
+    "tertiaryLabel": "Generate a Moving Checklist",
+    "tertiaryHref": "/netherlands/moving/tools/moving-checklist/"
+  },
+
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+      { "label": "BSN registration", "href": "/netherlands/bsn-registration/" },
+      { "label": "Register your address in the Netherlands", "href": "/netherlands/register-address-netherlands/" },
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+    ]
+  },
+
+  "sidebarStartLinks": [
+    { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+    { "label": "Read the full moving guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    { "label": "BSN registration", "href": "/netherlands/bsn-registration/" },
+    { "label": "Register your address", "href": "/netherlands/register-address-netherlands/" },
+    { "label": "Plan your first 90 days", "href": "/netherlands/moving/tools/first-90-days/" }
+  ],
+
+  "resourcesAffiliatePlacementId": "nl-moving-bank-before-bsn-sidebar",
+  "servicesSectionTitle": "Banking & transfer options",
+  "servicesIntro": "Services often used for early banking or transfers before or after BSN. Confirm current offers and eligibility with each provider.",
+
+  "faq": [
+    {
+      "q": "Can I open a Dutch bank account before I have a BSN?",
+      "a": "Sometimes partially. Multi-currency or international transfer accounts are often easier to open without a BSN; a full Dutch current account usually requires a BSN. Rules vary by bank and product—confirm current requirements directly with the provider."
+    },
+    {
+      "q": "What can I use for money before I have a local account?",
+      "a": "Many people use a multi-currency or international transfer account (e.g. Wise or Revolut) for receiving funds and spending in euros until they have a BSN and can open a local account. Confirm current onboarding rules with each provider."
+    },
+    {
+      "q": "When do I get my BSN?",
+      "a": "You usually receive your BSN when you register your address with the municipality (gemeente). See our BSN registration guide and register your address guide for the typical steps."
+    },
+    {
+      "q": "Can my employer pay salary before I have a Dutch bank account?",
+      "a": "It depends on your employer and payroll process. Some accept a foreign or multi-currency IBAN temporarily; others prefer or require a Dutch account. Ask your employer or payroll team and plan BSN and registration timing accordingly."
+    },
+    {
+      "q": "Are multi-currency accounts a good temporary option?",
+      "a": "Often yes—they can help with transfers, holding euros, and early spending before you have a BSN. They are not a substitute for a full local account if your employer or bills require one; use them as a bridge while you complete registration and BSN."
+    },
+    {
+      "q": "Do all Dutch banks have the same BSN rules?",
+      "a": "No. Policies differ by bank, provider, and account type. Traditional banks often require a BSN for a full current account; digital and multi-currency providers may have different rules. Always confirm current onboarding requirements directly."
+    }
+  ],
+
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

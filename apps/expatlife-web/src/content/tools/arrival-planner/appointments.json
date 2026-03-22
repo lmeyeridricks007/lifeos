@@ -1,0 +1,68 @@
+[
+  {
+    "id": "municipality-registration",
+    "label": "Municipality registration",
+    "conditions": {
+      "addressStatus": ["yes", "soon", "no"],
+      "household": ["solo", "partner", "kids"],
+      "needBankingSoon": ["yes", "no"]
+    },
+    "whyItMatters": "This often unlocks the next admin steps.",
+    "note": "Availability may vary by municipality."
+  },
+  {
+    "id": "bank-onboarding",
+    "label": "Bank onboarding and identity verification",
+    "conditions": {
+      "addressStatus": ["yes", "soon", "no"],
+      "household": ["solo", "partner", "kids"],
+      "needBankingSoon": ["yes", "no"]
+    },
+    "whyItMatters": "Some account options can require extra checks or appointment slots.",
+    "note": "Requirements differ by provider and account type."
+  },
+  {
+    "id": "gp-registration",
+    "label": "GP registration in your area",
+    "conditions": {
+      "addressStatus": ["yes", "soon", "no"],
+      "household": ["solo", "partner", "kids"],
+      "needBankingSoon": ["yes", "no"]
+    },
+    "whyItMatters": "Practices can have waiting lists, especially in busy areas.",
+    "note": "Contact providers early to understand local availability."
+  },
+  {
+    "id": "school-follow-up",
+    "label": "School-related follow-up",
+    "conditions": {
+      "addressStatus": ["yes", "soon", "no"],
+      "household": ["kids"],
+      "needBankingSoon": ["yes", "no"]
+    },
+    "whyItMatters": "Family arrivals often need additional timing coordination.",
+    "note": "Lead times differ by school and municipality."
+  },
+  {
+    "id": "housing-viewings",
+    "label": "Housing viewings or long-term rental follow-up",
+    "conditions": {
+      "addressStatus": ["soon", "no"],
+      "household": ["solo", "partner", "kids"],
+      "needBankingSoon": ["yes", "no"]
+    },
+    "whyItMatters": "If housing is temporary, viewing schedules can affect your next admin steps.",
+    "note": "Availability can change quickly in popular cities."
+  },
+  {
+    "id": "relocation-service-coordination",
+    "label": "Relocation service coordination",
+    "conditions": {
+      "addressStatus": ["yes", "soon", "no"],
+      "household": ["solo", "partner", "kids"],
+      "needBankingSoon": ["yes", "no"]
+    },
+    "whyItMatters": "Shared timelines across providers are easier to manage with set checkpoints.",
+    "note": "Ask for clear ownership of each follow-up action."
+  }
+]

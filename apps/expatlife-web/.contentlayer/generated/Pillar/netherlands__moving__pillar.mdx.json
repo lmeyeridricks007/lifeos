@@ -1,0 +1,20 @@
+{
+  "title": "Moving to the Netherlands",
+  "description": "Practical pillar guide for planning a smooth move to the Netherlands.",
+  "cluster": "moving",
+  "readingTime": "10 min",
+  "body": {
+    "raw": "\n## Start with a calm plan\n\nUse the moving hub to map your timeline. Prioritize identity docs, address setup, BSN registration, and insurance checkpoints.\n\n## Before you move\n\nPrepare a document pack early. Confirm validity periods and keep certified copies where needed.\n\n## First 30 days\n\nFocus on registration milestones and practical setup. Keep a simple tracker for appointments and document follow-ups.\n\n## First 90 days\n\nTransition from setup into stable routines. Review what changed and close any open admin loops.\n",
+    "code": "var Component=(()=>{var p=Object.create;var o=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var m=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,g=Object.prototype.hasOwnProperty;var f=(n,e)=>()=>(e||n((e={exports:{}}).exports,e),e.exports),x=(n,e)=>{for(var i in e)o(n,i,{get:e[i],enumerable:!0})},s=(n,e,i,a)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let r of m(e))!g.call(n,r)&&r!==i&&o(n,r,{get:()=>e[r],enumerable:!(a=h(e,r))||a.enumerable});return n};var y=(n,e,i)=>(i=n!=null?p(u(n)):{},s(e||!n||!n.__esModule?o(i,\"default\",{value:n,enumerable:!0}):i,n)),j=n=>s(o({},\"__esModule\",{value:!0}),n);var d=f((k,c)=>{c.exports=_jsx_runtime});var F={};x(F,{default:()=>w,frontmatter:()=>v});var t=y(d()),v={title:\"Moving to the Netherlands\",description:\"Practical pillar guide for planning a smooth move to the Netherlands.\",cluster:\"moving\",readingTime:\"10 min\"};function l(n){let e=Object.assign({h2:\"h2\",p:\"p\"},n.components);return(0,t.jsxs)(t.Fragment,{children:[(0,t.jsx)(e.h2,{children:\"Start with a calm plan\"}),`\n`,(0,t.jsx)(e.p,{children:\"Use the moving hub to map your timeline. Prioritize identity docs, address setup, BSN registration, and insurance checkpoints.\"}),`\n`,(0,t.jsx)(e.h2,{children:\"Before you move\"}),`\n`,(0,t.jsx)(e.p,{children:\"Prepare a document pack early. Confirm validity periods and keep certified copies where needed.\"}),`\n`,(0,t.jsx)(e.h2,{children:\"First 30 days\"}),`\n`,(0,t.jsx)(e.p,{children:\"Focus on registration milestones and practical setup. Keep a simple tracker for appointments and document follow-ups.\"}),`\n`,(0,t.jsx)(e.h2,{children:\"First 90 days\"}),`\n`,(0,t.jsx)(e.p,{children:\"Transition from setup into stable routines. Review what changed and close any open admin loops.\"})]})}function _(n={}){let{wrapper:e}=n.components||{};return e?(0,t.jsx)(e,Object.assign({},n,{children:(0,t.jsx)(l,n)})):l(n)}var w=_;return j(F);})();\n;return Component;"
+  },
+  "_id": "netherlands/moving/pillar.mdx",
+  "_raw": {
+    "sourceFilePath": "netherlands/moving/pillar.mdx",
+    "sourceFileName": "pillar.mdx",
+    "sourceFileDir": "netherlands/moving",
+    "contentType": "mdx",
+    "flattenedPath": "netherlands/moving/pillar"
+  },
+  "type": "Pillar",
+  "slug": "/netherlands/moving/pillar"
+}

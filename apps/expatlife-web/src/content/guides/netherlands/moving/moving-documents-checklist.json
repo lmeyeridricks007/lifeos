@@ -1,0 +1,275 @@
+{
+  "slug": "moving-documents-checklist",
+  "path": "/netherlands/moving-documents-checklist/",
+  "title": "Moving Documents Checklist for the Netherlands",
+  "breadcrumbLabel": "Documents Checklist",
+  "subtitle": "A practical checklist of documents many expats prepare before moving to the Netherlands.",
+  "description": "Use this practical checklist to organize the documents many expats prepare before moving to the Netherlands, including identity, civil records, employment paperwork, housing documents, and backups.",
+  "hero": {
+    "eyebrow": "Planning",
+    "badges": ["Checklist", "Updated regularly"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/documents-checklist-hero.webp",
+      "alt": "Organized document pack checklist for moving to the Netherlands"
+    }
+  },
+  "quickAnswers": [
+    {
+      "label": "Biggest delay risk",
+      "value": "Starting document preparation too late."
+    },
+    {
+      "label": "Best practice",
+      "value": "Create one organized document pack before moving."
+    },
+    {
+      "label": "Helpful tool",
+      "value": "Use the Document Readiness Checker to identify missing documents."
+    }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Why document preparation matters",
+      "body": [
+        "Document preparation is one of the most important parts of an international move.",
+        "Many relocation delays happen because documents are missing, incomplete, or require additional processing such as translation or legalization."
+      ],
+      "bullets": [
+        "Document preparation often takes longer than expected",
+        "Some documents may need translation or apostille",
+        "Housing, employment, and admin steps often depend on documents",
+        "An organized document pack reduces stress during the move"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Practical tip",
+        "text": "Many expats create a digital and physical document folder before relocating."
+      }
+    },
+    {
+      "id": "identity-documents",
+      "heading": "Identity documents",
+      "body": [
+        "Identity documents form the foundation of most relocation processes."
+      ],
+      "bullets": [
+        "Valid passport",
+        "Passport copies",
+        "Passport photos",
+        "National ID card (if applicable)",
+        "Previous residence permits (if relevant)"
+      ]
+    },
+    {
+      "id": "civil-documents",
+      "heading": "Civil documents",
+      "body": [
+        "Civil records are often needed for family moves, registration, and administrative verification."
+      ],
+      "bullets": [
+        "Birth certificate",
+        "Marriage certificate",
+        "Divorce certificate (if applicable)",
+        "Family relationship documents",
+        "Children's birth certificates"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "employment-documents",
+      "heading": "Employment documents",
+      "body": [
+        "Employment documentation is important for many work-related moves."
+      ],
+      "bullets": [
+        "Employment contract",
+        "Employer offer letter",
+        "Salary confirmation",
+        "Professional qualifications",
+        "Employment history records"
+      ]
+    },
+    {
+      "id": "housing-documents",
+      "heading": "Housing and address documents",
+      "body": [
+        "Housing-related documents often support registration and early admin steps."
+      ],
+      "bullets": [
+        "Rental agreement",
+        "Temporary housing confirmation",
+        "Address documentation",
+        "Landlord statements where relevant"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "financial-documents",
+      "heading": "Financial documents",
+      "body": [
+        "Financial documents may be required for housing, banking, or relocation verification."
+      ],
+      "bullets": [
+        "Bank statements",
+        "Proof of income",
+        "Tax records where relevant",
+        "Savings confirmation"
+      ]
+    },
+    {
+      "id": "education-documents",
+      "heading": "Education documents",
+      "body": [
+        "Education records may be needed for employment, professional recognition, or further study."
+      ],
+      "bullets": [
+        "Diplomas",
+        "Degree certificates",
+        "Transcripts",
+        "Professional certifications"
+      ]
+    },
+    {
+      "id": "translations",
+      "heading": "Document translation and legalization",
+      "body": [
+        "Some documents may require translation or authentication before they can be used internationally."
+      ],
+      "bullets": [
+        "Certified translations where required",
+        "Document legalization",
+        "Apostille processing",
+        "Verification copies"
+      ]
+    },
+    {
+      "id": "backup-copies",
+      "heading": "Create backup copies of everything",
+      "body": [
+        "A common relocation mistake is keeping only one copy of important documents."
+      ],
+      "bullets": [
+        "Digital scans stored securely",
+        "Cloud backups",
+        "Printed copies for travel",
+        "Emergency copies stored separately"
+      ]
+    },
+    {
+      "id": "organize-pack",
+      "heading": "How to organize your relocation document pack",
+      "body": [
+        "Many expats create a single organized document pack before relocating."
+      ],
+      "bullets": [
+        "Group documents by category",
+        "Label each folder clearly",
+        "Create a digital master folder",
+        "Prepare travel-ready copies"
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "Simple structure",
+        "text": "Use folders such as Identity, Civil Records, Employment, Housing, Financial, Education, and Backup Copies."
+      }
+    }
+  ],
+  "featuredTools": [
+    {
+      "label": "Check Document Readiness",
+      "href": "/netherlands/moving/tools/document-readiness/"
+    },
+    {
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/"
+    },
+    {
+      "label": "Plan Your Arrival Tasks",
+      "href": "/netherlands/moving/tools/arrival-planner/"
+    }
+  ],
+  "toolCtas": [
+    {
+      "label": "Check Document Readiness",
+      "href": "/netherlands/moving/tools/document-readiness/"
+    }
+  ],
+  "exampleScenarios": [
+    {
+      "title": "Moving for work",
+      "summary": "Work-based relocations often require employment documents, identity records, and housing confirmations.",
+      "href": "/netherlands/moving/tools/document-readiness/?scenario=work"
+    },
+    {
+      "title": "Moving with family",
+      "summary": "Family relocations often require additional civil records such as marriage and birth certificates.",
+      "href": "/netherlands/moving/tools/document-readiness/?scenario=family"
+    },
+    {
+      "title": "Unsure what documents are missing",
+      "summary": "Many expats use a readiness tool to identify missing documents before the move.",
+      "href": "/netherlands/moving/tools/document-readiness/"
+    }
+  ],
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      {
+        "label": "Documents Needed to Move to the Netherlands",
+        "href": "/netherlands/documents-needed-to-move-netherlands/"
+      },
+      {
+        "label": "Visa Documents Netherlands",
+        "href": "/netherlands/visa-documents-netherlands/"
+      },
+      {
+        "label": "Document Translation Netherlands",
+        "href": "/netherlands/document-translation-netherlands/"
+      },
+      {
+        "label": "Document Legalization Netherlands",
+        "href": "/netherlands/document-legalization-netherlands/"
+      },
+      {
+        "label": "Apostille Documents Netherlands",
+        "href": "/netherlands/apostille-documents-netherlands/"
+      },
+      {
+        "label": "Moving to the Netherlands Timeline",
+        "href": "/netherlands/moving-to-netherlands-timeline/"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "q": "What documents are needed to move to the Netherlands?",
+      "a": "Many expats prepare identity documents, civil records, employment documents, housing confirmations, financial records, and education certificates."
+    },
+    {
+      "q": "Should I translate my documents before moving?",
+      "a": "Some documents may require certified translation or legalization depending on their intended use."
+    },
+    {
+      "q": "What is the best way to organize relocation documents?",
+      "a": "Many people create one organized digital and physical document pack grouped by category."
+    },
+    {
+      "q": "What causes document delays when moving internationally?",
+      "a": "Common delays come from missing civil records, translation requirements, or late preparation."
+    },
+    {
+      "q": "When should I start preparing documents for relocation?",
+      "a": "Many expats start document preparation several months before relocating."
+    }
+  ],
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

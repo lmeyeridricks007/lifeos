@@ -1,0 +1,56 @@
+{
+  "slug": "australia",
+  "name": "Australia",
+  "shortName": "AU",
+  "iso2": "AU",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["English"],
+  "travel": {
+    "typicalFlightTime": "20-24 hours",
+    "notes": ["Ultra long-haul moves often require larger temporary setup buffers."]
+  },
+  "relocationProfile": {
+    "commonReasons": ["Employer relocation", "Career transition", "Family move"],
+    "popularDutchCities": ["Amsterdam", "Eindhoven", "Utrecht"],
+    "commonSectors": ["Technology", "Engineering", "Operations"]
+  },
+  "visaAwareness": {
+    "commonRoutes": ["Highly Skilled Migrant", "Partner / Family route", "Study route"],
+    "notes": ["Long-distance moves benefit from earlier route and document checks."]
+  },
+  "documents": {
+    "commonStarterDocuments": ["Passport", "Birth certificate", "Employment records", "Academic records"],
+    "countrySpecificNotes": ["Build extra lead time for obtaining replacement records before travel."],
+    "sources": [
+      {
+        "label": "Services Australia",
+        "name": "Australian Government Services",
+        "website": "https://www.servicesaustralia.gov.au",
+        "contactSummary": "Government service entry point for key documentation topics."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "AUD / EUR",
+    "ranges": [
+      { "key": "oneWayFlight", "label": "One-way flight", "value": "AUD900-AUD2,200", "note": "Route and season create wide variation." },
+      { "key": "shipping", "label": "Shipping household goods", "value": "EUR3,000-EUR8,000", "note": "Long-distance freight costs vary by service level." }
+    ]
+  },
+  "contacts": {
+    "official": [
+      { "label": "IND", "name": "Dutch Immigration and Naturalisation Service", "website": "https://ind.nl", "contactSummary": "Official immigration information." }
+    ]
+  },
+  "seo": {
+    "title": "Moving to the Netherlands from Australia: Long-Distance Move Planning",
+    "description": "Practical planning guidance for moving from Australia to the Netherlands, including route awareness, documents, and first 90-day setup priorities."
+  },
+  "faqOverrides": [],
+  "scenarioOverrides": [],
+  "affiliateContext": {
+    "preferredCategories": ["banking", "housing", "insurance", "shipping"],
+    "customNotes": ["Long-haul moves usually compare both transfer and shipping services early."]
+  }
+}

@@ -1,0 +1,178 @@
+[
+  {
+    "id": "arriving-soon-job-first-month",
+    "title": "Arriving soon and starting work in the first month",
+    "inputs": {
+      "arrivalStage": "arriving-soon",
+      "household": "solo",
+      "startingJobSoon": "yes",
+      "needsIntegrationAwareness": "yes",
+      "from": "south-africa",
+      "hasBankAccountAlready": false,
+      "hasBSNAlready": false,
+      "housingSituation": "temporary",
+      "needsDrivingSoon": false,
+      "wantsLanguageSupport": true,
+      "hasKidsAdminNeeds": false,
+      "needsUtilitiesSetup": true
+    },
+    "summary": "Focus on registration, banking, health insurance, and payroll readiness first; then build transport and payment routines.",
+    "topWeek1to2Priorities": [
+      "Complete address registration if still pending",
+      "Confirm BSN-dependent next steps",
+      "Confirm payroll setup with employer",
+      "Open Dutch bank account if needed"
+    ],
+    "topMonth2Priorities": [
+      "Review first salary and payroll",
+      "Stabilise transport routine",
+      "Build monthly admin routine"
+    ]
+  },
+  {
+    "id": "already-arrived-catching-up",
+    "title": "Already arrived and still catching up on admin",
+    "inputs": {
+      "arrivalStage": "already-arrived",
+      "household": "solo",
+      "startingJobSoon": "no",
+      "needsIntegrationAwareness": "no",
+      "from": "south-africa",
+      "hasBankAccountAlready": true,
+      "hasBSNAlready": true,
+      "housingSituation": "stable-rental",
+      "needsDrivingSoon": false,
+      "wantsLanguageSupport": false,
+      "hasKidsAdminNeeds": false,
+      "needsUtilitiesSetup": false
+    },
+    "summary": "Use the next 90 days as a cleanup-and-stabilise phase: close open loops, tighten monthly systems, and lock in routines.",
+    "topWeek1to2Priorities": [
+      "Confirm which tasks still depend on address or BSN",
+      "Run a catch-up cleanup of unresolved admin"
+    ],
+    "topMonth2Priorities": [
+      "Build monthly admin routine",
+      "Review utility and subscription costs",
+      "Close open admin loops"
+    ]
+  },
+  {
+    "id": "family-kids-school-childcare",
+    "title": "Moving with kids and planning school or childcare follow-up",
+    "inputs": {
+      "arrivalStage": "arriving-soon",
+      "household": "kids",
+      "startingJobSoon": "yes",
+      "needsIntegrationAwareness": "yes",
+      "from": "india",
+      "hasBankAccountAlready": false,
+      "hasBSNAlready": false,
+      "housingSituation": "temporary",
+      "needsDrivingSoon": false,
+      "wantsLanguageSupport": true,
+      "hasKidsAdminNeeds": true,
+      "needsUtilitiesSetup": true
+    },
+    "summary": "Family plans need strong week-by-week coordination: registration, banking, and school or childcare timing in parallel.",
+    "topWeek1to2Priorities": [
+      "Complete address registration if still pending",
+      "Kick off school and childcare timing awareness",
+      "Confirm BSN-dependent next steps",
+      "Open Dutch bank account if needed"
+    ],
+    "topMonth2Priorities": [
+      "Check family or childcare follow-up",
+      "Build monthly admin routine",
+      "Stabilise transport routine"
+    ]
+  },
+  {
+    "id": "south-africa-financial-routines",
+    "title": "Arriving from South Africa and building financial routines",
+    "inputs": {
+      "arrivalStage": "arriving-soon",
+      "household": "solo",
+      "startingJobSoon": "yes",
+      "needsIntegrationAwareness": "yes",
+      "from": "south-africa",
+      "hasBankAccountAlready": false,
+      "hasBSNAlready": false,
+      "housingSituation": "temporary",
+      "needsDrivingSoon": false,
+      "wantsLanguageSupport": true,
+      "hasKidsAdminNeeds": false,
+      "needsUtilitiesSetup": true
+    },
+    "summary": "Focus on registration, banking, and early transfer planning so first-month cash flow and salary run smoothly.",
+    "topWeek1to2Priorities": [
+      "Complete address registration",
+      "Confirm payroll setup with employer",
+      "Open Dutch bank account",
+      "Review which SA records to keep accessible"
+    ],
+    "topMonth2Priorities": [
+      "Review money transfer and currency routine (SA)",
+      "Review bank account and transfer setup",
+      "Build monthly admin routine"
+    ]
+  },
+  {
+    "id": "us-tax-banking-follow-up",
+    "title": "Arriving from the US and planning tax and banking follow-up",
+    "inputs": {
+      "arrivalStage": "already-arrived",
+      "household": "solo",
+      "startingJobSoon": "no",
+      "needsIntegrationAwareness": "no",
+      "from": "united-states",
+      "hasBankAccountAlready": true,
+      "hasBSNAlready": true,
+      "housingSituation": "stable-rental",
+      "needsDrivingSoon": true,
+      "wantsLanguageSupport": false,
+      "hasKidsAdminNeeds": false,
+      "needsUtilitiesSetup": false
+    },
+    "summary": "Stabilise Dutch setup and keep US banking and tax follow-up on your radar so nothing is missed.",
+    "topWeek1to2Priorities": [
+      "Keep US financial access stable during transition",
+      "Confirm which tasks still depend on address or BSN"
+    ],
+    "topMonth2Priorities": [
+      "Review US banking and tax follow-up awareness",
+      "Review driving licence use or exchange if needed",
+      "Build monthly admin routine"
+    ]
+  },
+  {
+    "id": "solo-temporary-housing-first",
+    "title": "Settling in solo with temporary housing first",
+    "inputs": {
+      "arrivalStage": "arriving-soon",
+      "household": "solo",
+      "startingJobSoon": "yes",
+      "needsIntegrationAwareness": "no",
+      "from": "germany",
+      "hasBankAccountAlready": false,
+      "hasBSNAlready": false,
+      "housingSituation": "temporary",
+      "needsDrivingSoon": false,
+      "wantsLanguageSupport": false,
+      "hasKidsAdminNeeds": false,
+      "needsUtilitiesSetup": true
+    },
+    "summary": "Get registration and banking done early; plan utilities and housing stability for when you have a longer-term address.",
+    "topWeek1to2Priorities": [
+      "Complete address registration if still pending",
+      "Confirm BSN-dependent next steps",
+      "Open Dutch bank account if needed",
+      "Set up mobile and account verification access"
+    ],
+    "topMonth2Priorities": [
+      "Check medium-term housing stability",
+      "Arrange utilities and internet when stable",
+      "Stabilise transport routine"
+    ]
+  }
+]

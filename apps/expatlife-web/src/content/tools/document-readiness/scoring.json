@@ -1,0 +1,14 @@
+{
+  "weights": {
+    "passport": 30,
+    "civilDocs": 20,
+    "proofOfAddress": 20,
+    "employmentDocs": 20,
+    "scenarioCoverage": 10
+  },
+  "bands": [
+    { "min": 0, "max": 39, "label": "Early prep" },
+    { "min": 40, "max": 69, "label": "Getting organized" },
+    { "min": 70, "max": 100, "label": "Strong starting pack" }
+  ]
+}

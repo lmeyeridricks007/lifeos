@@ -1,0 +1,42 @@
+[
+  {
+    "id": "docs-needed",
+    "question": "What documents do I need to move to the Netherlands?",
+    "answer": "Most people begin with identity, housing, and scenario-specific support records such as employment or family documents. This checker helps you build a practical starting pack."
+  },
+  {
+    "id": "original-documents",
+    "question": "Do I need original documents?",
+    "answer": "In many situations, original documents and clear copies are both useful. Keep originals safe and maintain organized digital and printed copies where possible."
+  },
+  {
+    "id": "missing-birth-certificate",
+    "question": "What if I do not have my birth certificate yet?",
+    "answer": "Add it to your missing list and start with your local civil records office. This tool helps you track what still needs to be requested or replaced."
+  },
+  {
+    "id": "banks-proof-address",
+    "question": "Do banks ask for proof of address?",
+    "answer": "Address-related documentation is commonly requested in onboarding contexts. Specific requirements vary by provider and route."
+  },
+  {
+    "id": "work-documents-priority",
+    "question": "What documents matter most for work relocation?",
+    "answer": "Work scenarios usually prioritize passport, employment documents, and housing/address support records. This tool marks those items higher when you choose a work scenario."
+  },
+  {
+    "id": "moving-with-family",
+    "question": "What if I am moving with family?",
+    "answer": "Family moves often elevate relationship and child-related records, such as marriage and child birth certificates, plus school-related awareness."
+  },
+  {
+    "id": "legal-advice",
+    "question": "Is this tool legal advice?",
+    "answer": "No. This is deterministic planning guidance only. Always verify legal and official requirements through relevant authorities."
+  },
+  {
+    "id": "save-checklist",
+    "question": "Can I save my checklist?",
+    "answer": "Yes. In this phase your checklist status and notes are saved locally in your browser. You can also create an account for future expanded workspace features."
+  }
+]

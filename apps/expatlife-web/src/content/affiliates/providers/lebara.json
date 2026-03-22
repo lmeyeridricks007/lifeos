@@ -1,0 +1,26 @@
+{
+  "id": "lebara",
+  "name": "Lebara",
+  "tagline": "Mobile plans for internationals",
+  "categoryIds": ["mobile"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["International calls"],
+  "highlights": [
+    "Affordable plans",
+    "Good for international calls",
+    "Easy top-up"
+  ],
+  "cta": {
+    "label": "View Lebara",
+    "href": "https://www.lebara.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/lebara.svg",
+    "alt": "Lebara logo"
+  }
+}

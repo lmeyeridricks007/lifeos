@@ -1,0 +1,396 @@
+{
+  "slug": "moving-to-netherlands-with-family",
+  "path": "/netherlands/moving-to-netherlands-with-family/",
+  "title": "Moving to the Netherlands With Family",
+  "metaTitle": "Moving to the Netherlands With Family: Housing, Schools & Documents",
+  "subtitle": "Documents, housing, school and childcare, and what to prepare when relocating with a partner or children.",
+  "description": "Planning to move to the Netherlands with your partner or children? Learn what documents, housing, schools, childcare, healthcare, and practical steps to prepare.",
+  "breadcrumbLabel": "Moving with Family",
+
+  "hero": {
+    "eyebrow": "Family relocation",
+    "badges": ["Relocation Scenario"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/moving-with-family-hero.png",
+      "alt": "Family of four by a canal in the Netherlands with luggage, planning their move together"
+    }
+  },
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "extra-planning-areas", "label": "Extra planning areas for partner and children" },
+    { "id": "housing-families", "label": "Housing for families" },
+    { "id": "schools-childcare", "label": "Schools and childcare" },
+    { "id": "registration-sequencing", "label": "Registration sequencing" },
+    { "id": "family-documents", "label": "Family documents to gather" },
+    { "id": "healthcare-families", "label": "Healthcare for families" },
+    { "id": "cost-relocating-family", "label": "Cost of relocating with family" },
+    { "id": "what-families-do-next", "label": "What families often do next" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+
+  "heroCta": {
+    "title": "Plan your family move with less guesswork",
+    "supportingText": "Use the Document Readiness Checker, Moving Checklist, and First 90 Days Planner to organize documents, housing, registration, school planning, and healthcare for your household.",
+    "primaryCtaLabel": "Generate a Moving Checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtas": [
+      { "label": "Run the Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
+      { "label": "Plan Your First 90 Days", "href": "/netherlands/moving/tools/first-90-days/" }
+    ],
+    "supportingLinks": [
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+    ]
+  },
+
+  "quickAnswers": [
+    {
+      "label": "WHO THIS GUIDE IS FOR",
+      "value": "Partners and families relocating to the Netherlands together or in stages."
+    },
+    {
+      "label": "WHAT CHANGES",
+      "value": "More documents, housing needs for the whole household, and often school or childcare planning."
+    },
+    {
+      "label": "BEST NEXT STEP",
+      "value": "Use the Document Readiness and Moving Checklist tools to plan your family relocation steps."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "Moving to the Netherlands with a partner or children usually means more planning than moving alone. In addition to your own documents and registration steps, you may need to prepare family civil records, school or childcare research, larger housing budgets, and healthcare setup for multiple people.",
+        "Some households relocate together, while others move in stages. In either case, it helps to think early about who moves first, what documents each family member needs, whether your address can be registered for the whole household, and how daily life will work in the first weeks and months after arrival."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      ]
+    },
+    {
+      "id": "extra-planning-areas",
+      "heading": "Extra planning areas for partner and children",
+      "body": [
+        "When relocating as a household, a few areas need extra attention from the start. The following is a quick checklist to keep in mind."
+      ],
+      "bullets": [
+        "Documents: Passport for each household member; birth certificates (with apostilles or translations if required); marriage or registered partnership documentation if relevant; school or childcare records if applicable.",
+        "Housing: A place where everyone can be registered; budget for larger deposit, bigger home, or temporary family housing; confirmation that children or partner can be added to the address.",
+        "Daily life setup: School or childcare research; healthcare awareness for adults and children; local transport and routine planning."
+      ],
+      "ctaBlock": {
+        "title": "Start with your family document pack",
+        "supportingText": "The more people are moving, the more important document organization becomes. Use the Document Readiness Checker to see what families often prepare early.",
+        "primaryLabel": "Run the Document Readiness Checker",
+        "primaryHref": "/netherlands/document-readiness-checker/",
+        "secondaryLabel": "Read Documents Needed to Move",
+        "secondaryHref": "/netherlands/documents-needed-to-move-netherlands/"
+      }
+    },
+    {
+      "id": "housing-families",
+      "heading": "Housing for families",
+      "body": [
+        "Housing often becomes more complex when moving with a partner or children. You may need more space, a larger budget, proof of income for the household, and confirmation that the address can be registered for everyone moving.",
+        "Temporary housing can help bridge the gap, but families should confirm whether registration is possible and whether the arrangement works for childcare, school distance, or commuting."
+      ],
+      "bullets": [
+        "Larger households often face higher rent and deposit requirements.",
+        "Registration eligibility matters for the whole household, not just one person.",
+        "Temporary housing can help during arrival, but should be checked carefully.",
+        "School and childcare location can shape which areas are practical."
+      ],
+      "table": {
+        "headers": ["Housing need", "Why it matters"],
+        "rows": [
+          ["Enough space", "Daily family life and longer stays"],
+          ["Registration allowed", "Needed for municipality setup"],
+          ["Budget buffer", "Deposits and larger rent can increase"],
+          ["School / childcare access", "Impacts neighborhood choice"]
+        ]
+      },
+      "ctaBlock": {
+        "title": "Check housing and registration together",
+        "supportingText": "Family moves often depend on having an address that works for the whole household. Use the Moving Checklist Generator to map housing, registration, and early admin in the right order.",
+        "primaryLabel": "Generate a Moving Checklist",
+        "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+        "secondaryLabel": "Read Registering Your Address guide",
+        "secondaryHref": "/netherlands/municipality-registration-netherlands/"
+      },
+      "services": [
+        {
+          "name": "HousingAnywhere",
+          "description": "Temporary rentals used by international households while arranging permanent housing and registration.",
+          "url": "https://housinganywhere.com/",
+          "indicativeCost": "Listing prices vary by city and property.",
+          "reason": "Temporary housing, families, expats",
+          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
+        }
+      ]
+    },
+    {
+      "id": "schools-childcare",
+      "heading": "Schools and childcare",
+      "body": [
+        "If you are moving with children, school and childcare planning can affect when and where you move. Public schools, international schools, daycare, and after-school care all have different processes, costs, and waiting times.",
+        "Families often start by checking neighborhood options, age eligibility, language environment, and whether there are waiting lists."
+      ],
+      "bullets": [
+        "Public schools and international schools follow different routes.",
+        "Daycare and after-school care may have waiting lists.",
+        "Your address can affect which schools are practical.",
+        "Childcare costs can materially change your monthly budget."
+      ],
+      "callout": {
+        "type": "info",
+        "title": "What families often underestimate",
+        "text": "School and childcare planning is not only about finding a place — it can influence where you live, what your monthly costs look like, and how quickly both parents can settle into work or daily routines."
+      },
+      "services": [
+        {
+          "name": "Partou",
+          "description": "Dutch childcare provider with daycare and after-school care in multiple locations.",
+          "url": "https://www.partou.nl/",
+          "indicativeCost": "Childcare pricing varies by location, hours, and subsidies.",
+          "reason": "Childcare, daycare, families",
+          "logo": { "src": "/images/affiliates/logos/partou.png", "alt": "Partou logo" }
+        },
+        {
+          "name": "International School of Amsterdam",
+          "description": "Example international school families may research when relocating with children.",
+          "url": "https://www.isa.nl/",
+          "indicativeCost": "Tuition varies by year group and programme.",
+          "reason": "International school, families, education",
+          "logo": { "src": "/images/affiliates/logos/isa-logo.png", "alt": "International School of Amsterdam logo" }
+        }
+      ]
+    },
+    {
+      "id": "registration-sequencing",
+      "heading": "Registration sequencing",
+      "body": [
+        "Family registration does not always happen in one moment. In some cases the main applicant arrives first, secures housing, and registers before dependants are added to the same address. In others, the whole household relocates together.",
+        "The right order depends on your permit route, household situation, and municipality process. It helps to confirm whether one person must already be registered before the rest of the household can complete their steps."
+      ],
+      "table": {
+        "headers": ["Family situation", "Extra planning needed"],
+        "rows": [
+          ["Partner joining later", "Address + permit timing + proof documents"],
+          ["Children moving now", "School / childcare / civil records"],
+          ["One-income move", "Budget + housing pressure"],
+          ["Long-haul family move", "Travel + shipping + documentation lead time"]
+        ]
+      },
+      "links": [
+        { "label": "Moving with partner", "href": "/netherlands/moving-to-netherlands-with-partner/" },
+        { "label": "Moving with kids", "href": "/netherlands/moving-to-netherlands-with-kids/" },
+        { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" }
+      ]
+    },
+    {
+      "id": "family-documents",
+      "heading": "Family documents to gather",
+      "body": [
+        "When moving as a household, each family member may need identity and civil documents. It helps to keep originals, copies, scans, and translations organized by person and category so you can respond quickly if a municipality, school, childcare provider, insurer, or immigration process asks for them."
+      ],
+      "bullets": [
+        "Core identity documents: Passports for all; residence or permit documents if applicable.",
+        "Civil / relationship documents: Birth certificates; marriage certificate or partnership proof if relevant; custody or adoption documents if applicable.",
+        "Children / education documents: School records or enrolment papers; vaccination or medical records if useful; childcare-related forms if applicable."
+      ],
+      "ctaBlock": {
+        "title": "See what you might need",
+        "supportingText": "Use the Document Readiness Checker to see which document categories often apply to families relocating to the Netherlands.",
+        "primaryLabel": "Run the Document Readiness Checker",
+        "primaryHref": "/netherlands/document-readiness-checker/"
+      }
+    },
+    {
+      "id": "healthcare-families",
+      "heading": "Healthcare for families",
+      "body": [
+        "Healthcare setup is often straightforward for a single person, but moving with a family means thinking about insurance, GP registration, children's coverage, and how quickly everyone can access routine care after arrival."
+      ],
+      "bullets": [
+        "Adults typically need Dutch health insurance once required under local rules.",
+        "Children are often covered differently than adults.",
+        "Families often register with a local GP after settling into housing.",
+        "It helps to keep basic medical and vaccination records organized."
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Planning guidance only",
+        "text": "Exact insurance obligations depend on your situation, income, and timing. Confirm the current rules and provider terms that apply to your household."
+      },
+      "ctaBlock": {
+        "title": "Compare family health insurance options",
+        "supportingText": "Once your household is registered and settling in, insurance becomes one of the most important setup steps.",
+        "primaryLabel": "Compare on Independer",
+        "primaryHref": "https://www.independer.nl/",
+        "secondaryLabel": "Read First 30 Days guide",
+        "secondaryHref": "/netherlands/first-30-days-netherlands/"
+      },
+      "services": [
+        {
+          "name": "Independer",
+          "description": "Insurance comparison platform often used when households begin arranging Dutch health insurance.",
+          "url": "https://www.independer.nl/",
+          "indicativeCost": "Comparison platform; policy pricing varies.",
+          "reason": "Insurance comparison, health insurance, family setup",
+          "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
+        }
+      ]
+    },
+    {
+      "id": "cost-relocating-family",
+      "heading": "Cost of relocating with family",
+      "body": [
+        "Moving with family usually increases the cost of housing, deposits, travel, shipping, childcare, and the first months of setup. Even if your relocation route is straightforward, the household budget typically needs a larger buffer than for a solo move."
+      ],
+      "table": {
+        "headers": ["Cost area", "Typical example", "Why it grows for families"],
+        "rows": [
+          ["Housing deposit", "1–2 months' rent", "Larger homes often cost more"],
+          ["First month rent", "€1,200–€3,000+", "Depends on city and size"],
+          ["Flights / travel", "Varies", "Multiplies by household size"],
+          ["Shipping / luggage", "Varies", "More belongings, longer lead times"],
+          ["Health insurance", "~€130–€160/month per adult", "Multiple adults in household"],
+          ["Childcare", "Can be significant", "Often one of the biggest monthly costs"],
+          ["Emergency buffer", "Higher than solo move", "Delays become more expensive"]
+        ]
+      },
+      "callout": {
+        "type": "info",
+        "title": "Planning examples only",
+        "text": "These are planning examples, not official thresholds. Actual costs vary heavily by city, household size, school choices, housing type, and daily life setup."
+      }
+    },
+    {
+      "id": "what-families-do-next",
+      "heading": "What families often do next",
+      "body": [
+        "Once the family move is realistic, households usually shift from research into sequencing. That often means deciding who travels first, confirming housing, organizing documents by person, and mapping out the first 30 to 90 days after arrival."
+      ],
+      "bullets": [
+        "Confirm the registration order for the household.",
+        "Organize documents by adult and child.",
+        "Finalize housing that supports family registration.",
+        "Research school or childcare timing.",
+        "Plan early banking, insurance, and local routines."
+      ],
+      "links": [
+        { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      ]
+    }
+  ],
+
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Create a practical checklist for documents, housing, registration, and family setup before and after arrival.",
+      "ctaLabel": "Open tool"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Run the Document Readiness Checker",
+      "href": "/netherlands/document-readiness-checker/",
+      "description": "See which identity, civil, school, and family documents people often prepare before relocating.",
+      "ctaLabel": "Open tool"
+    },
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Map out what usually happens in the first weeks and months for registration, healthcare, banking, and daily routines.",
+      "ctaLabel": "Open tool"
+    }
+  ],
+
+  "toolsCtaBand": {
+    "title": "Turn your family move into a practical plan",
+    "body": "Use the Moving Checklist, Document Readiness Checker, and First 90 Days Planner to organize the move by household, not just by person.",
+    "primaryLabel": "Generate a Moving Checklist",
+    "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryLabel": "Run the Document Readiness Checker",
+    "secondaryHref": "/netherlands/document-readiness-checker/",
+    "tertiaryLabel": "Plan Your First 90 Days",
+    "tertiaryHref": "/netherlands/moving/tools/first-90-days/"
+  },
+
+  "sidebarStartLinks": [
+    { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+    { "label": "Read the full moving guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+    { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+  ],
+
+  "internalLinks": {
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    "related": [
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Registering Your Address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "BSN Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/#bsn" },
+      { "label": "Shipping Household Goods to the Netherlands", "href": "/netherlands/shipping-household-goods-netherlands/" }
+    ]
+  },
+
+  "resourcesAffiliatePlacementId": "resources_end",
+  "servicesIntro": "Services often used by families during the move: temporary housing, banking, insurance comparison, and connectivity.",
+  "servicesSectionTitle": "Useful services for family relocation",
+
+  "faq": [
+    {
+      "q": "What documents do I need to move to the Netherlands with my family?",
+      "a": "Typically passports for everyone, birth certificates, and marriage or partnership certificate if applicable. You may also need school or childcare records, custody or adoption papers, and apostilles or translations depending on your situation. Use the Document Readiness Checker and confirm with the IND and your municipality."
+    },
+    {
+      "q": "Can my partner and children register at the same address?",
+      "a": "Usually yes. Often the main applicant registers first and dependants are then added to the same address. Permit and income rules depend on your route — check with the IND and your gemeente to confirm the order and requirements."
+    },
+    {
+      "q": "What if one partner arrives first?",
+      "a": "The first partner often secures the address and registers; the other follows under family reunion or dependant rules. You will typically need to show relationship, housing, and sometimes income. Confirm timing and documents with the IND and your municipality."
+    },
+    {
+      "q": "Do children need health insurance in the Netherlands?",
+      "a": "Children are often covered under a parent’s policy or through specific rules that differ from adults. Exact obligations depend on your situation. Confirm current rules and provider terms for your household."
+    },
+    {
+      "q": "How hard is it to find housing for a family?",
+      "a": "Larger homes and family-sized rentals can be in high demand, especially in bigger cities. Budget for higher deposits and rent, and confirm that the address allows registration for the whole household. Temporary housing can help while you search for a long-term place."
+    },
+    {
+      "q": "Should we arrange school or childcare before moving?",
+      "a": "It often helps to research options early — waiting lists and enrolment windows vary. Your address can affect which schools are practical. Many families start by checking neighborhood options, language environment, and costs before locking in housing."
+    },
+    {
+      "q": "What changes if we move in stages instead of together?",
+      "a": "You will need to plan who moves first, how the first person secures housing and registration, and what documents and timing the rest of the household need to join. Permit and municipality rules often dictate the order; confirm with the IND and your gemeente."
+    }
+  ],
+
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

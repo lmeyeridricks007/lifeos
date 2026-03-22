@@ -1,0 +1,24 @@
+{
+  "categoryOrderByProfile": {
+    "hasBankAccountAlready_false": ["banking", "money-transfer", "insurance", "mobile", "housing-platforms", "utilities", "language-courses", "transport"],
+    "hasBankAccountAlready_true": ["insurance", "mobile", "housing-platforms", "utilities", "language-courses", "transport", "banking", "money-transfer"],
+    "needsUtilitiesSetup_true": ["utilities", "banking", "insurance", "mobile", "housing-platforms", "language-courses", "transport"],
+    "wantsLanguageSupport_true": ["language-courses", "banking", "insurance", "mobile", "housing-platforms", "utilities", "transport"],
+    "needsIntegrationAwareness_yes": ["language-courses", "banking", "insurance", "mobile", "housing-platforms", "utilities", "transport"],
+    "housingSituation_still-looking": ["housing-platforms", "banking", "insurance", "mobile", "utilities", "language-courses", "transport"],
+    "housingSituation_temporary": ["housing-platforms", "banking", "insurance", "mobile", "utilities", "language-courses", "transport"],
+    "needsDrivingSoon_true": ["transport", "banking", "insurance", "mobile", "housing-platforms", "utilities", "language-courses"],
+    "household_kids": ["housing-platforms", "insurance", "banking", "mobile", "utilities", "language-courses", "transport"],
+    "default": ["banking", "insurance", "mobile", "housing-platforms", "utilities", "language-courses", "transport"]
+  },
+  "emphasisLabels": {
+    "hasBankAccountAlready_false": "Banking & first-month setup",
+    "needsUtilitiesSetup_true": "Utilities & daily life",
+    "wantsLanguageSupport_true": "Language & integration",
+    "housingSituation_still-looking": "Housing & essentials",
+    "housingSituation_temporary": "Housing & essentials",
+    "household_kids": "Family settling",
+    "needsDrivingSoon_true": "Transport & mobility",
+    "default": "First 90 days essentials"
+  }
+}

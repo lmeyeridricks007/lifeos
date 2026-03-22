@@ -1,0 +1,22 @@
+{
+  "requiredRelatedGuides": [
+    "/netherlands/moving-to-the-netherlands/",
+    "/netherlands/moving-to-netherlands-from/",
+    "/netherlands/documents-needed-to-move-netherlands/",
+    "/netherlands/moving-to-netherlands-cost/",
+    "/netherlands/first-90-days-netherlands/",
+    "/netherlands/eu-vs-non-eu-moving-to-netherlands/",
+    "/netherlands/open-bank-account-netherlands/",
+    "/netherlands/services/housing-platforms/",
+    "/netherlands/bringing-pets-to-netherlands/",
+    "/netherlands/bsn-registration/",
+    "/netherlands/register-address-netherlands/",
+    "/netherlands/first-30-days-netherlands/"
+  ],
+  "popularRoutes": [
+    { "slug": "south-africa", "label": "South Africa" },
+    { "slug": "india", "label": "India" },
+    { "slug": "united-states", "label": "United States" },
+    { "slug": "united-kingdom", "label": "United Kingdom" }
+  ]
+}

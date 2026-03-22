@@ -1,0 +1,242 @@
+{
+  "beforeMove": [
+    {
+      "id": "prepare-documents",
+      "label": "Prepare copies of identity documents",
+      "phase": "beforeMove",
+      "priority": 1,
+      "conditions": { "region": ["eu", "non-eu"], "stage": ["before-move", "arriving-soon"] },
+      "description": "Keep a simple digital and paper copy pack for first appointments.",
+      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    },
+    {
+      "id": "confirm-visa-route",
+      "label": "Confirm visa or residence permit route and timeline",
+      "phase": "beforeMove",
+      "priority": 1,
+      "conditions": { "region": ["non-eu"], "stage": ["before-move", "arriving-soon"] },
+      "description": "Check requirements for your nationality and employment situation.",
+      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    },
+    {
+      "id": "gather-civil-records",
+      "label": "Gather civil records (birth, marriage if relevant)",
+      "phase": "beforeMove",
+      "priority": 2,
+      "conditions": { "household": ["partner", "kids"], "stage": ["before-move", "arriving-soon"] },
+      "description": "Often needed for registration and family registration.",
+      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    },
+    {
+      "id": "plan-address",
+      "label": "Confirm where you'll register (rental, employer, or temporary address)",
+      "phase": "beforeMove",
+      "priority": 1,
+      "conditions": { "stage": ["before-move", "arriving-soon"] },
+      "description": "You need an address to register at the municipality.",
+      "relatedGuideHref": "/netherlands/register-address-netherlands/"
+    },
+    {
+      "id": "budget-transfer",
+      "label": "Plan budget and international transfer approach",
+      "phase": "beforeMove",
+      "priority": 2,
+      "conditions": { "stage": ["before-move", "arriving-soon"] },
+      "description": "Consider how you'll move funds and cover first costs.",
+      "relatedGuideHref": null
+    },
+    {
+      "id": "notify-origin",
+      "label": "Check if you need to notify authorities in your origin country",
+      "phase": "beforeMove",
+      "priority": 3,
+      "conditions": { "stage": ["before-move"] },
+      "description": "Some countries require notification or tax registration when leaving.",
+      "relatedGuideHref": null
+    },
+    {
+      "id": "school-research",
+      "label": "Research schools and registration if moving with children",
+      "phase": "beforeMove",
+      "priority": 2,
+      "conditions": { "household": ["kids"], "stage": ["before-move", "arriving-soon"] },
+      "description": "Registration and availability vary by municipality.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-kids/"
+    },
+    {
+      "id": "job-search-admin",
+      "label": "Prepare CV and key documents for job search",
+      "phase": "beforeMove",
+      "priority": 2,
+      "conditions": { "employment": ["searching"], "stage": ["before-move", "arriving-soon"] },
+      "description": "Have documents ready for applications and interviews.",
+      "relatedGuideHref": null
+    },
+    {
+      "id": "employer-letter",
+      "label": "Obtain employment offer or contract confirmation",
+      "phase": "beforeMove",
+      "priority": 1,
+      "conditions": { "employment": ["job-offer", "employed"], "stage": ["before-move", "arriving-soon"] },
+      "description": "Often required for permit and registration.",
+      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    },
+    {
+      "id": "logistics-far",
+      "label": "Plan long-distance logistics (shipping, flights, first nights)",
+      "phase": "beforeMove",
+      "priority": 2,
+      "conditions": { "stage": ["before-move"] },
+      "description": "Book and confirm key dates if moving from far away.",
+      "relatedGuideHref": "/netherlands/shipping-household-goods-netherlands/"
+    }
+  ],
+  "afterArrival": [
+    {
+      "id": "register-address",
+      "label": "Register your address at the municipality (gemeente)",
+      "phase": "afterArrival",
+      "priority": 1,
+      "conditions": { "stage": ["before-move", "arriving-soon", "already-arrived"] },
+      "description": "Usually within a few days of moving in. You'll receive your BSN at registration.",
+      "relatedGuideHref": "/netherlands/register-address-netherlands/"
+    },
+    {
+      "id": "bsn",
+      "label": "Receive and note your BSN",
+      "phase": "afterArrival",
+      "priority": 1,
+      "conditions": { "stage": ["before-move", "arriving-soon", "already-arrived"] },
+      "description": "Given at registration. Required for work, bank, and healthcare.",
+      "relatedGuideHref": "/netherlands/bsn-registration/"
+    },
+    {
+      "id": "open-bank",
+      "label": "Open a Dutch bank account",
+      "phase": "afterArrival",
+      "priority": 1,
+      "conditions": { "stage": ["before-move", "arriving-soon", "already-arrived"] },
+      "description": "Needed for salary and daily payments. Many employers require a local account.",
+      "relatedGuideHref": null
+    },
+    {
+      "id": "health-insurance",
+      "label": "Arrange mandatory health insurance",
+      "phase": "afterArrival",
+      "priority": 1,
+      "conditions": { "stage": ["before-move", "arriving-soon", "already-arrived"] },
+      "description": "Required once you work or live in the Netherlands. Compare options.",
+      "relatedGuideHref": null
+    },
+    {
+      "id": "mobile-sim",
+      "label": "Get a local SIM or mobile plan",
+      "phase": "afterArrival",
+      "priority": 2,
+      "conditions": { "stage": ["arriving-soon", "already-arrived"] },
+      "description": "Useful for 2FA and local calls.",
+      "relatedGuideHref": null
+    },
+    {
+      "id": "proof-registration",
+      "label": "Keep proof of registration and reference numbers in one place",
+      "phase": "afterArrival",
+      "priority": 2,
+      "conditions": { "stage": ["arriving-soon", "already-arrived"] },
+      "description": "You may need them for bank, employer, or insurance.",
+      "relatedGuideHref": null
+    },
+    {
+      "id": "partner-registration",
+      "label": "Complete partner registration if applicable",
+      "phase": "afterArrival",
+      "priority": 2,
+      "conditions": { "household": ["partner"], "stage": ["arriving-soon", "already-arrived"] },
+      "description": "Check municipality requirements for household registration.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-partner/"
+    },
+    {
+      "id": "children-school-register",
+      "label": "Register children at school",
+      "phase": "afterArrival",
+      "priority": 1,
+      "conditions": { "household": ["kids"], "stage": ["arriving-soon", "already-arrived"] },
+      "description": "Do this as soon as you have an address and BSN.",
+      "relatedGuideHref": "/netherlands/moving-to-netherlands-with-kids/"
+    }
+  ],
+  "first90Days": [
+    {
+      "id": "digid",
+      "label": "Apply for DigiD if you need government services online",
+      "phase": "first90Days",
+      "priority": 2,
+      "conditions": { "stage": ["before-move", "arriving-soon", "already-arrived"] },
+      "description": "Useful for tax, benefits, and other official portals.",
+      "relatedGuideHref": "/netherlands/digid-awareness/"
+    },
+    {
+      "id": "tax-registration",
+      "label": "Complete tax and payroll profile with employer",
+      "phase": "first90Days",
+      "priority": 1,
+      "conditions": { "employment": ["job-offer", "employed"], "stage": ["arriving-soon", "already-arrived"] },
+      "description": "Ensure your employer has your BSN and correct details.",
+      "relatedGuideHref": null
+    },
+    {
+      "id": "housing-longterm",
+      "label": "Stabilize long-term housing and utilities",
+      "phase": "first90Days",
+      "priority": 2,
+      "conditions": { "stage": ["arriving-soon", "already-arrived"] },
+      "description": "Move from temporary to permanent if needed; set up contracts.",
+      "relatedGuideHref": null
+    },
+    {
+      "id": "insurance-review",
+      "label": "Review and finalize insurance (health, contents, liability)",
+      "phase": "first90Days",
+      "priority": 2,
+      "conditions": { "stage": ["arriving-soon", "already-arrived"] },
+      "description": "Ensure you're covered for daily life and rental.",
+      "relatedGuideHref": null
+    },
+    {
+      "id": "close-open-loops",
+      "label": "Close any open registration or permit loops",
+      "phase": "first90Days",
+      "priority": 1,
+      "conditions": { "region": ["non-eu"], "stage": ["already-arrived"] },
+      "description": "Confirm residence and work permit validity and next steps.",
+      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    },
+    {
+      "id": "budget-recurring",
+      "label": "Review recurring expenses and adjust budget",
+      "phase": "first90Days",
+      "priority": 3,
+      "conditions": { "stage": ["arriving-soon", "already-arrived"] },
+      "description": "Track what you're spending and plan ahead.",
+      "relatedGuideHref": null
+    },
+    {
+      "id": "first-90-review",
+      "label": "Review what's done and what still has a deadline",
+      "phase": "first90Days",
+      "priority": 2,
+      "conditions": { "stage": ["arriving-soon", "already-arrived"] },
+      "description": "Use the First 90 Days guide to stay on track.",
+      "relatedGuideHref": "/netherlands/first-90-days-netherlands/"
+    },
+    {
+      "id": "pets-if-any",
+      "label": "Complete pet registration if you brought pets",
+      "phase": "first90Days",
+      "priority": 3,
+      "conditions": { "stage": ["arriving-soon", "already-arrived"] },
+      "description": "Check local rules for registration or vet requirements.",
+      "relatedGuideHref": "/netherlands/bringing-pets-to-netherlands/"
+    }
+  ]
+}

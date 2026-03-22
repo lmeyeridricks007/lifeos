@@ -1,0 +1,18 @@
+{
+  "id": "nl-moving-pillar-housing-problem-solution",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "pillar",
+    "route": "/netherlands/moving-to-the-netherlands/",
+    "slot": "after-housing-problem"
+  },
+  "variant": "cards",
+  "title": "Housing platforms used by expats",
+  "intro": "Options for temporary or mid-term accommodation when moving.",
+  "categoryOrder": ["housing"],
+  "items": [
+    { "providerId": "housinganywhere", "reason": "Common for internationals looking for mid-term furnished rentals." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

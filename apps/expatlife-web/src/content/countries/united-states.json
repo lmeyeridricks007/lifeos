@@ -1,0 +1,184 @@
+{
+  "slug": "united-states",
+  "name": "United States",
+  "shortName": "US",
+  "iso2": "US",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["English"],
+  "travel": {
+    "typicalFlightTime": "8–10 hours",
+    "notes": [
+      "Typical East Coast route; West Coast adds several hours.",
+      "Most moves are long-haul and require early travel and housing logistics."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "International work opportunities",
+      "Lifestyle change",
+      "Strong English-speaking professional environments",
+      "Employer-sponsored relocation",
+      "DAFT entrepreneurship",
+      "Partner or family relocation"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "Utrecht", "Eindhoven"],
+    "commonSectors": ["Technology", "Finance", "Consulting", "Creative industries", "Research / academia"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly Skilled Migrant visa — employer-sponsored work visa for skilled professionals",
+      "Dutch American Friendship Treaty (DAFT) — allows US entrepreneurs to start businesses in the Netherlands",
+      "Partner / family visa — for spouses or partners of EU / Dutch residents",
+      "Study visa — for students enrolled in Dutch universities"
+    ],
+    "notes": [
+      "Many Americans relocate using the DAFT visa or through multinational employer transfers.",
+      "Route suitability depends on your situation and sponsor; confirm with official sources."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Passport",
+      "Birth certificate",
+      "Marriage certificate (if applicable)",
+      "Employment contract",
+      "Academic transcripts",
+      "Proof of address",
+      "Background documentation for visa"
+    ],
+    "countrySpecificNotes": [
+      "US documents may need apostille certification depending on visa route."
+    ],
+    "sources": [
+      {
+        "label": "Vital Records",
+        "name": "US State Vital Records Offices",
+        "website": "https://www.cdc.gov/nchs/w2w/index.htm",
+        "contactSummary": "State-level access points for civil records."
+      },
+      {
+        "label": "Netherlands Embassy in the US",
+        "name": "Embassy of the Kingdom of the Netherlands in the United States",
+        "website": "https://www.netherlandsandyou.nl/your-country-and-the-netherlands/united-states",
+        "contactSummary": "Country-specific consular and visa information."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "USD / EUR",
+    "ranges": [
+      {
+        "key": "oneWayFlight",
+        "label": "One-way flight",
+        "value": "€400 – €900",
+        "note": "Typical East Coast; season and route affect pricing."
+      },
+      {
+        "key": "shipping",
+        "label": "Shipping household goods",
+        "value": "€2,000 – €6,500",
+        "note": "Depends on volume and method (shared vs full container)."
+      },
+      {
+        "key": "temporaryHousing",
+        "label": "Temporary housing (monthly)",
+        "value": "€1,500 – €3,000",
+        "note": "Large city prices tend to be higher."
+      },
+      {
+        "key": "visaDocumentPrep",
+        "label": "Visa / permit costs",
+        "value": "€300 – €400",
+        "note": "Fees vary by route and application type."
+      },
+      {
+        "key": "firstMonthSetup",
+        "label": "First month setup",
+        "value": "€1,500 – €3,000",
+        "note": "Deposit, first rent, utilities, initial expenses."
+      },
+      {
+        "key": "moneyTransferBanking",
+        "label": "International transfer / banking setup",
+        "value": "Varies",
+        "note": "Transfer fees and first-account setup."
+      }
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration information and residence permit routes."
+      },
+      {
+        "label": "Netherlands Embassy in the US",
+        "name": "Embassy of the Kingdom of the Netherlands in the United States",
+        "website": "https://www.netherlandsandyou.nl/your-country-and-the-netherlands/united-states",
+        "contactSummary": "Country-specific consular and visa information."
+      }
+    ]
+  },
+  "shipping": {
+    "intro": "Shipping household goods from the United States typically takes 4–8 weeks by sea freight. Many US movers use temporary housing during the first 1–2 months.",
+    "notes": [
+      "Choose early between luggage-only relocation, shared container, or full container shipping.",
+      "Build buffer for transit and customs; temporary housing often overlaps with shipment arrival.",
+      "Plan document and customs requirements for household goods in advance."
+    ]
+  },
+  "heroImageAlt": "A man at a desk writing in a notebook, with a laptop showing a world map and a relocation route from the United States to the Netherlands; through the window, a Dutch canal with traditional canal houses and a bridge.",
+  "seo": {
+    "title": "Moving to the Netherlands from the United States | Visa, Costs & Timeline",
+    "description": "A practical guide for Americans moving to the Netherlands including visa routes, relocation costs, documents, and planning tools."
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Americans need a visa to move to the Netherlands?",
+      "a": "Yes, for stays longer than 90 days. US citizens need a residence permit. Common routes include the Highly Skilled Migrant visa, DAFT (for entrepreneurs), partner visa, or study visa."
+    },
+    {
+      "q": "What is the DAFT visa?",
+      "a": "The Dutch American Friendship Treaty allows US citizens to apply for a residence permit to start or run a business in the Netherlands, without a Dutch employer sponsor."
+    },
+    {
+      "q": "How long can US citizens stay in the Netherlands?",
+      "a": "Without a visa, up to 90 days in 180 days (Schengen). For longer stays you need a residence permit via a route such as work, DAFT, study, or family."
+    },
+    {
+      "q": "How much does relocation from the US cost?",
+      "a": "Costs vary by household size, route, and housing. Typical ranges include flights (€400–€900), shipping (€2,000–€6,500), temporary housing (€1,500–€3,000/month), and first-month setup. Use the relocation cost estimator for a personalized range."
+    },
+    {
+      "q": "Can Americans open Dutch bank accounts?",
+      "a": "Yes. After you have a BSN and address, you can open an account with Dutch banks or digital banks that serve residents. Many Americans use international transfer services for the first months."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Software engineer relocating from San Francisco",
+      "summary": "Focus on Highly Skilled Migrant visa, tech relocation, and cities like Amsterdam or Eindhoven. Plan document prep, housing search, and first-week registration."
+    },
+    {
+      "title": "Entrepreneur using DAFT visa",
+      "summary": "Focus on business registration, Dutch bank account setup, and DAFT requirements. Plan for business plan, proof of funds, and municipality registration."
+    },
+    {
+      "title": "Corporate transfer relocation",
+      "summary": "Focus on company relocation packages, housing search, and family move logistics. Coordinate with employer on visa, shipping, and temporary housing."
+    },
+    {
+      "title": "Family relocation from the US",
+      "summary": "Focus on schools, housing, and documentation for all family members. Plan for longer lead time on documents and housing that fits family size."
+    }
+  ],
+  "affiliateContext": {
+    "preferredCategories": ["banking", "housing", "insurance", "shipping", "mobile"],
+    "customNotes": [
+      "US movers often compare international transfer services, temporary housing, and shipping options."
+    ]
+  }
+}

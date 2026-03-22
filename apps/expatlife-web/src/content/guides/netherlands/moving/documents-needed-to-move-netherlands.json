@@ -1,0 +1,354 @@
+{
+  "slug": "documents-needed-to-move-netherlands",
+  "path": "/netherlands/documents-needed-to-move-netherlands/",
+  "title": "Documents Needed to Move to the Netherlands",
+  "metaTitle": "Documents Needed to Move to the Netherlands (Expat Guide)",
+  "subtitle": "A practical guide to the document categories expats commonly prepare before and after arrival.",
+  "description": "Learn which documents expats commonly prepare when moving to the Netherlands, including identity, housing, employment, family, and education records, plus apostille and translation tips.",
+  "breadcrumbLabel": "Documents Needed",
+  "lastUpdated": "Updated regularly",
+
+  "hero": {
+    "eyebrow": "Planning",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/documents-needed-hero.png",
+      "alt": "Documents needed to move to the Netherlands shown on a relocation planning desk"
+    }
+  },
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "how-to-think-about-documents", "label": "How to think about documents" },
+    { "id": "identity-documents", "label": "Identity documents" },
+    { "id": "employment-documents", "label": "Employment documents" },
+    { "id": "housing-documents", "label": "Housing documents" },
+    { "id": "education-documents", "label": "Education documents" },
+    { "id": "household-documents", "label": "Household documents" },
+    { "id": "apostille-legalization", "label": "Apostille and legalization" },
+    { "id": "originals-copies-translations", "label": "Originals vs copies" },
+    { "id": "organize-pack", "label": "How to organize your document pack" },
+    { "id": "what-next", "label": "What expats typically do next" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "useful-services", "label": "Useful services" }
+  ],
+
+  "heroCta": {
+    "title": "Not sure which documents apply to your situation?",
+    "supportingText": "Use the Document Readiness Checker to build a practical starter pack based on your route, household, and move stage.",
+    "primaryCtaLabel": "Run the Document Readiness Checker",
+    "primaryCtaHref": "/netherlands/document-readiness-checker/",
+    "secondaryCtaLabel": "Generate a Moving Checklist",
+    "secondaryCtaHref": "/netherlands/moving/tools/moving-checklist/"
+  },
+
+  "midPageCta": {
+    "badge": "Recommended tool",
+    "title": "Document Readiness Checker",
+    "description": "Answer a few questions to see which document categories are likely relevant for your move.",
+    "ctaLabel": "Open tool",
+    "ctaHref": "/netherlands/document-readiness-checker/"
+  },
+
+  "endCta": {
+    "title": "Ready to prepare your document pack?",
+    "supportingText": "Use the free Document Readiness Checker to see what's commonly needed and what might still be missing.",
+    "ctaLabel": "Run the Document Readiness Checker",
+    "ctaHref": "/netherlands/document-readiness-checker/"
+  },
+
+  "servicesIntro": "These are common categories of services people often compare while preparing documents, housing, banking, and early setup.",
+  "servicesSectionTitle": "Useful services expats often arrange during the move",
+
+  "quickAnswers": [
+    {
+      "label": "What this covers",
+      "value": "Common document categories for relocation and arrival admin."
+    },
+    {
+      "label": "Why it matters",
+      "value": "Having documents ready can reduce delays with registration, banking, and work."
+    },
+    {
+      "label": "Best next step",
+      "value": "Run the Document Readiness Checker to create a starter pack."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "When moving to the Netherlands, having the right documents ready can reduce delays with registration, housing, banking, work, and immigration steps. This guide explains the most common document categories expats prepare before moving and during their first weeks after arrival.",
+        "Requirements vary by nationality, residence route, municipality, and household. Use this page as a relocation documents checklist and the Document Readiness Checker to see what typically applies to your situation."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+        { "label": "Document Readiness Checker (tool)", "href": "/netherlands/document-readiness-checker/" }
+      ]
+    },
+    {
+      "id": "how-to-think-about-documents",
+      "heading": "How to think about documents for a move",
+      "body": [
+        "Document requirements vary by nationality, residence route, municipality, and household. A practical approach is to prepare a small starter pack first, then expand it based on what you confirm you need.",
+        "The same documents often matter across several steps: municipality registration, opening a bank account, proving residence, enrolling children in school, and dealing with insurance or employers. Preparing a core set early gives you one less thing to worry about during a busy arrival period."
+      ],
+      "bullets": [
+        "Start with identity and core proof documents",
+        "Add household documents if moving with a partner or children",
+        "Keep digital copies in a consistent folder structure",
+        "Track which documents are originals vs scans",
+        "Some documents may need apostille or translation and can take extra time"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Non-advisory note",
+        "text": "This page is for awareness only. Requirements may differ by situation. Confirm with official channels for your municipality or provider."
+      },
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+        { "label": "Document Readiness Checker (tool)", "href": "/netherlands/document-readiness-checker/" }
+      ]
+    },
+    {
+      "id": "identity-documents",
+      "heading": "Identity documents",
+      "body": [
+        "Identity documents are usually needed first for travel, registration, identity checks, and many provider onboarding steps. Expats often keep them easily accessible during travel and initial appointments."
+      ],
+      "bullets": [
+        "Passport (and copies)",
+        "Residence permit or visa documents if applicable",
+        "Passport photos (often useful to have on hand)",
+        "Previous permit cards if relevant"
+      ],
+      "links": [
+        { "label": "BSN registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "DigiD awareness", "href": "/netherlands/digid-awareness/" },
+        { "label": "Visa documents for the Netherlands", "href": "/netherlands/visa-documents-netherlands/" }
+      ]
+    },
+    {
+      "id": "employment-documents",
+      "heading": "Employment documents",
+      "body": [
+        "If you are relocating for work, employment documents often support onboarding, payroll setup, and administrative steps. The exact documents requested can vary by employer."
+      ],
+      "bullets": [
+        "Employment contract or job offer letter",
+        "Employer HR or relocation contact details",
+        "Salary confirmation or onboarding documents if provided",
+        "Work permit or sponsorship documents if applicable"
+      ],
+      "links": [
+        { "label": "Highly skilled migrant", "href": "/netherlands/visa/highly-skilled-migrant/" }
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "housing-documents",
+      "heading": "Housing documents",
+      "body": [
+        "Housing documents often become important for municipality registration, banking, and service setup because many steps depend on having a registerable address."
+      ],
+      "bullets": [
+        "Rental agreement or housing confirmation",
+        "Landlord or agency contact details",
+        "Proof of address if available",
+        "Move-in or key handover notes if relevant"
+      ],
+      "links": [
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" }
+      ]
+    },
+    {
+      "id": "education-documents",
+      "heading": "Education documents",
+      "body": [
+        "Education documents are not always needed immediately, but they can matter for employer verification, regulated professions, studies, and future applications. If you are moving with children, school-related documents may also be relevant."
+      ],
+      "bullets": [
+        "Degree certificates and transcripts",
+        "Professional certifications if relevant",
+        "School records for children if applicable",
+        "Reference letters (optional)"
+      ],
+      "image": {
+        "src": "/images/guides/netherlands/moving/netherlands-education-documents-infographic.png",
+        "alt": "Infographic: Education documents for moving to the Netherlands — essential documents (diplomas, transcripts, professional licenses), when they are required (visa, professional recognition, studies), and preparation steps including official copies and certified translations."
+      }
+    },
+    {
+      "id": "household-documents",
+      "heading": "Household documents (partner and children)",
+      "body": [
+        "These documents often become relevant when moving with a partner or children, especially for family registration, dependent processes, school planning, and shared admin steps."
+      ],
+      "bullets": [
+        "Marriage certificate or registered partnership proof if applicable",
+        "Birth certificates for children if applicable",
+        "Travel consent letters where relevant",
+        "Vaccination or school records only if appropriate for your situation"
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+        { "label": "Moving with partner", "href": "/netherlands/moving-to-netherlands-with-partner/" },
+        { "label": "Partner & family visa Netherlands", "href": "/netherlands/visa/partner-family-visa/" },
+        { "label": "Moving with kids", "href": "/netherlands/moving-to-netherlands-with-kids/" }
+      ]
+    },
+    {
+      "id": "apostille-legalization",
+      "heading": "Apostille and legalization",
+      "body": [
+        "Some documents issued outside the Netherlands may need extra validation before they can be accepted by Dutch authorities or providers. This often applies to civil records such as birth or marriage certificates and sometimes to educational records.",
+        "Depending on the issuing country, this may involve apostille, legalization, or embassy-related processing. Start early, as this can add noticeable processing time before departure."
+      ],
+      "bullets": [
+        "Check whether your country is part of the Apostille Convention",
+        "Allow time for authorities or notaries to add apostille or legalization",
+        "Keep certified copies if originals must be sent away"
+      ],
+      "links": [
+        { "label": "Document legalization and apostille", "href": "/netherlands/document-legalization-netherlands/" },
+        { "label": "Document legalization in the Netherlands", "href": "/netherlands/document-legalization-netherlands/" },
+        { "label": "Document translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" }
+      ]
+    },
+    {
+      "id": "originals-copies-translations",
+      "heading": "Originals, copies, and translations",
+      "body": [
+        "Many Dutch administrative steps still require original documents. Digital copies are useful for sharing, backups, and booking appointments. Certified translations may be needed if documents are not in an accepted language for the process. It helps to know which items you have as originals, certified copies, scans, or translated versions."
+      ],
+      "bullets": [
+        "Bring originals where possible and keep them secure",
+        "Keep digital backups and separate scans from originals",
+        "Confirm whether certified translation is needed before appointments",
+        "Note which documents are originals vs copies so you can present the right one"
+      ],
+      "links": [
+        { "label": "Document translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" },
+        { "label": "Document Readiness Checker (tool)", "href": "/netherlands/document-readiness-checker/" }
+      ]
+    },
+    {
+      "id": "organize-pack",
+      "heading": "How expats commonly organize a document pack",
+      "body": [
+        "A document pack is simply a consistent structure for storing originals, scans, and supporting notes. Many expats use folders by category and keep one \"arrival admin\" set for the first appointments."
+      ],
+      "bullets": [
+        "Create folders by category: identity, housing, employment, education, family",
+        "Keep one \"arrival admin\" folder for the first appointments",
+        "Maintain a simple index note: what exists, where it is, what's missing",
+        "Store secure digital scans separately",
+        "Note expiry dates, reference numbers, and who you spoke to"
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "A practical habit",
+        "text": "Many people keep a single \"Arrival Admin\" folder with the few documents they expect to show during their first appointments."
+      }
+    },
+    {
+      "id": "what-next",
+      "heading": "What expats typically do next",
+      "body": [
+        "Once your document pack is in reasonable shape, most people move on to municipality registration, BSN, banking, and first-90-days planning."
+      ],
+      "bullets": [
+        "Register your address with the municipality",
+        "Receive a BSN",
+        "Activate DigiD",
+        "Set up banking and health insurance"
+      ],
+      "links": [
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "BSN registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" }
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    }
+  ],
+
+  "toolCtas": [
+    {
+      "key": "document-readiness",
+      "label": "Document Readiness Checker",
+      "href": "/netherlands/document-readiness-checker/",
+      "description": "See which document categories are likely relevant for your move and what may still be missing.",
+      "ctaLabel": "Open tool"
+    },
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Build a practical checklist covering before you move, after arrival, and your first 90 days.",
+      "ctaLabel": "Open tool"
+    }
+  ],
+
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+      { "label": "BSN registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Document legalization and apostille", "href": "/netherlands/document-legalization-netherlands/" },
+      { "label": "Document translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" },
+      { "label": "Document legalization in the Netherlands", "href": "/netherlands/document-legalization-netherlands/" },
+      { "label": "Visa documents for the Netherlands", "href": "/netherlands/visa-documents-netherlands/" },
+      { "label": "Moving documents checklist", "href": "/netherlands/moving-documents-checklist/" },
+      { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+      { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" }
+    ]
+  },
+
+  "faq": [
+    {
+      "q": "Do expats need to prepare all documents before moving?",
+      "a": "Not always. Many people start with core identity and housing documents, then expand the pack based on what they confirm they need. The Document Readiness Checker can help you see which categories are typically relevant for your situation."
+    },
+    {
+      "q": "Should documents be originals or copies?",
+      "a": "Some processes require originals; others accept copies or certified copies. It helps to keep both originals and scans available and to confirm with the requesting body what they accept."
+    },
+    {
+      "q": "Do documents need translation?",
+      "a": "Some documents may require certified translation if they are not in Dutch, English, or another language accepted for that process. Check with the organization requesting the document. See our guide on document translation in the Netherlands for more context."
+    },
+    {
+      "q": "Which documents may need apostille or legalization?",
+      "a": "Civil records such as birth and marriage certificates issued outside the Netherlands often need apostille or legalization. Educational or other official documents may also need it depending on the authority. Start early as processing can take time. See our apostille and document legalization guides for more."
+    },
+    {
+      "q": "What documents are usually needed for registration in the Netherlands?",
+      "a": "Typically you need a valid passport or ID, proof of address (e.g. rental agreement), and possibly residence permit documents. Requirements vary by municipality and situation. Our register address guide has more detail."
+    },
+    {
+      "q": "What documents matter most in the first weeks after arrival?",
+      "a": "Identity (passport, residence permit if applicable), proof of address, and any documents required for your first municipality and bank appointments. Having these ready can unblock BSN, banking, and health insurance setup."
+    }
+  ],
+
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

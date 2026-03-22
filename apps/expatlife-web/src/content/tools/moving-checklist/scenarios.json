@@ -1,0 +1,78 @@
+[
+  {
+    "id": "za-before-move-job-offer",
+    "title": "South Africa — before move, job offer, solo",
+    "summary": "Focus on documents, employer route, transfers, and first-address planning. Long-haul prep and temporary housing if no place yet.",
+    "inputs": {
+      "from": "south-africa",
+      "stage": "before-move",
+      "household": "solo",
+      "employment": "job-offer",
+      "region": "non-eu",
+      "housingReadiness": "no-place-yet",
+      "shippingNeeds": false,
+      "kidsSchoolNeeds": false,
+      "largeMoneyTransfer": true,
+      "hasCoreDocsReady": false,
+      "needsTemporaryHousing": true
+    },
+    "paramKeys": ["from", "stage", "household", "employment", "region", "housingReadiness", "largeMoneyTransfer", "hasCoreDocsReady", "needsTemporaryHousing"]
+  },
+  {
+    "id": "us-before-move-employed-temp-housing",
+    "title": "United States — before move, employed, temporary place",
+    "summary": "Employer coordination, finance transfer planning, temporary housing docs, US banking/tax awareness.",
+    "inputs": {
+      "from": "united-states",
+      "stage": "before-move",
+      "household": "solo",
+      "employment": "employed",
+      "region": "non-eu",
+      "housingReadiness": "temporary-place",
+      "shippingNeeds": false,
+      "kidsSchoolNeeds": false,
+      "largeMoneyTransfer": true,
+      "hasCoreDocsReady": true,
+      "needsTemporaryHousing": false
+    },
+    "paramKeys": ["from", "stage", "household", "employment", "region", "housingReadiness", "largeMoneyTransfer"]
+  },
+  {
+    "id": "germany-before-move-search-no-housing",
+    "title": "Germany — before move, searching, no housing yet",
+    "summary": "Funding buffer, housing focus, lighter visa complexity, travel prep.",
+    "inputs": {
+      "from": "germany",
+      "stage": "before-move",
+      "household": "solo",
+      "employment": "searching",
+      "region": "eu",
+      "housingReadiness": "no-place-yet",
+      "shippingNeeds": false,
+      "kidsSchoolNeeds": false,
+      "largeMoneyTransfer": false,
+      "hasCoreDocsReady": true,
+      "needsTemporaryHousing": true
+    },
+    "paramKeys": ["from", "stage", "household", "employment", "region", "housingReadiness", "needsTemporaryHousing"]
+  },
+  {
+    "id": "india-before-move-kids-shipping",
+    "title": "India — before move, with kids, job offer, shipping",
+    "summary": "Family docs, child records, shipping, employer route, long-haul move prep.",
+    "inputs": {
+      "from": "india",
+      "stage": "before-move",
+      "household": "kids",
+      "employment": "job-offer",
+      "region": "non-eu",
+      "housingReadiness": "no-place-yet",
+      "shippingNeeds": true,
+      "kidsSchoolNeeds": true,
+      "largeMoneyTransfer": true,
+      "hasCoreDocsReady": false,
+      "needsTemporaryHousing": true
+    },
+    "paramKeys": ["from", "stage", "household", "employment", "region", "housingReadiness", "shippingNeeds", "kidsSchoolNeeds", "largeMoneyTransfer", "hasCoreDocsReady", "needsTemporaryHousing"]
+  }
+]

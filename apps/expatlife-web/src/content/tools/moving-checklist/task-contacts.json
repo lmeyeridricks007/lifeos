@@ -1,0 +1,12 @@
+{
+  "local-municipality": {
+    "name": "Your local municipality (gemeente)",
+    "website": "https://www.netherlandsworldwide.nl/",
+    "contactSummary": "Find your municipality via government.nl or netherlandsworldwide.nl; book registration appointment there."
+  },
+  "government-bsn": {
+    "name": "BSN / Government",
+    "website": "https://www.netherlandsworldwide.nl/",
+    "contactSummary": "BSN is issued at municipal registration; see netherlandsworldwide.nl for general info."
+  }
+}

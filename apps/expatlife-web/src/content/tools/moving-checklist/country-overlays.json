@@ -1,0 +1,46 @@
+{
+  "south-africa": [
+    "plan-money-transfer-from-south-africa",
+    "keep-south-african-bank-access-active-during-transition",
+    "review-sa-issued-civil-record-access-and-certification",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
+  "united-states": [
+    "review-us-banking-and-tax-follow-up-before-moving",
+    "keep-us-financial-access-stable-during-transition",
+    "review-us-issued-records-and-apostille-if-relevant"
+  ],
+  "india": [
+    "review-india-issued-document-readiness",
+    "plan-international-transfer-and-banking-access-india",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
+  "united-kingdom": [
+    "review-uk-account-and-provider-transition",
+    "check-uk-driving-licence-awareness-for-later"
+  ],
+  "canada": [
+    "review-canada-banking-and-document-access",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
+  "australia": [
+    "review-australia-banking-and-document-access",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
+  "germany": [
+    "confirm-cross-border-document-and-financial-access",
+    "lighter-logistics-confirm-arrival-registration-address"
+  ],
+  "france": [
+    "confirm-cross-border-document-and-financial-access",
+    "lighter-logistics-confirm-arrival-registration-address"
+  ],
+  "spain": [
+    "confirm-cross-border-document-and-financial-access",
+    "lighter-logistics-confirm-arrival-registration-address"
+  ],
+  "brazil": [
+    "plan-fund-transfer-and-document-access-brazil",
+    "prepare-for-long-haul-relocation-buffer"
+  ]
+}

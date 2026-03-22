@@ -1,0 +1,22 @@
+{
+  "id": "country_moving_south_africa",
+  "destinationCountry": "netherlands",
+  "originCountry": "south-africa",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/south-africa/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services commonly used by people moving from South Africa",
+  "intro": "These are commonly compared while planning a long-distance relocation route.",
+  "categoryOrder": ["banking", "housing", "insurance", "shipping", "mobile"],
+  "items": [
+    { "providerId": "wise", "reason": "Often used for international transfers and first months budgeting." },
+    { "providerId": "bunq", "reason": "Popular for quick Dutch account setup after arrival." },
+    { "providerId": "housinganywhere", "reason": "Frequently used for temporary accommodation searches." },
+    { "providerId": "simyo", "reason": "Used for Dutch mobile setup after arrival." },
+    { "providerId": "independer", "reason": "Useful for comparing Dutch health insurance after arrival." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

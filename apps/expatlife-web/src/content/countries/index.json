@@ -1,0 +1,9 @@
+[
+  { "slug": "south-africa", "file": "south-africa.json", "enabled": true, "featured": true },
+  { "slug": "united-states", "file": "united-states.json", "enabled": true, "featured": true },
+  { "slug": "united-kingdom", "file": "united-kingdom.json", "enabled": true, "featured": true },
+  { "slug": "india", "file": "india.json", "enabled": true, "featured": true },
+  { "slug": "canada", "file": "canada.json", "enabled": true, "featured": false },
+  { "slug": "australia", "file": "australia.json", "enabled": true, "featured": false },
+  { "slug": "germany", "file": "germany.json", "enabled": true, "featured": false }
+]

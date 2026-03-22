@@ -1,0 +1,98 @@
+{
+  "topLevelToolsMenu": [
+    {
+      "categoryId": "move-immigration",
+      "featuredToolIds": ["visa-checker", "visa-timeline-estimator", "visa-cost-calculator", "visa-application-plan", "moving-checklist", "relocation-cost-estimator", "document-readiness", "arrival-planner", "first-90-days"]
+    },
+    {
+      "categoryId": "integration",
+      "featuredToolIds": ["inburgering-timeline-planner", "inburgering-exam-readiness-checker", "knm-knowledge-quiz"]
+    },
+    {
+      "categoryId": "citizenship",
+      "featuredToolIds": [
+        "permanent-residence-eligibility-calculator",
+        "dutch-citizenship-timeline-calculator",
+        "dual-citizenship-awareness-tool"
+      ]
+    },
+    {
+      "categoryId": "money-tax",
+      "featuredToolIds": ["thirty-percent-ruling-calculator", "dutch-salary-net-calculator", "expat-cost-of-living-calculator"]
+    },
+    {
+      "categoryId": "housing",
+      "featuredToolIds": ["dutch-rental-budget-calculator", "buy-vs-rent-calculator", "mortgage-eligibility-estimator"]
+    },
+    {
+      "categoryId": "transport",
+      "featuredToolIds": ["public-transport-cost-estimator", "bike-vs-public-transport-cost-tool"]
+    },
+    {
+      "categoryId": "healthcare",
+      "featuredToolIds": [
+        "dutch-health-insurance-comparison-tool",
+        "healthcare-allowance-estimator",
+        "insurance-comparison-tool"
+      ]
+    },
+    {
+      "categoryId": "work-employment",
+      "featuredToolIds": ["job-offer-comparison-tool", "payslip-decoder", "employment-contract-risk-scanner"]
+    },
+    {
+      "categoryId": "partner-family",
+      "featuredToolIds": ["partner-work-eligibility-checker", "childcare-cost-estimator"]
+    },
+    {
+      "categoryId": "leaving-nl",
+      "featuredToolIds": ["exit-readiness-checker", "repatriation-cost-calculator"]
+    },
+    {
+      "categoryId": "premium-later",
+      "featuredToolIds": ["ai-personal-benefits-finder", "insurance-coverage-gap-detector", "expat-visa-risk-tax-navigator"]
+    }
+  ],
+  "domainMenus": {
+    "move": {
+      "categoryId": "move-immigration",
+      "featuredToolIds": [
+        "visa-checker",
+        "visa-timeline-estimator",
+        "visa-cost-calculator",
+        "visa-application-plan",
+        "moving-checklist",
+        "relocation-cost-estimator",
+        "document-readiness",
+        "arrival-planner",
+        "first-90-days",
+        "visa-eligibility-checker"
+      ]
+    },
+    "money": {
+      "categoryId": "money-tax",
+      "featuredToolIds": [
+        "thirty-percent-ruling-calculator",
+        "dutch-salary-net-calculator",
+        "expat-cost-of-living-calculator",
+        "rent-affordability-calculator"
+      ]
+    },
+    "work": {
+      "categoryId": "work-employment",
+      "featuredToolIds": ["job-offer-comparison-tool", "payslip-decoder", "employment-contract-risk-scanner"]
+    },
+    "living": {
+      "categoryId": "housing",
+      "featuredToolIds": ["dutch-rental-budget-calculator", "buy-vs-rent-calculator", "utilities-services-comparison-tool"]
+    },
+    "culture": {
+      "categoryId": "partner-family",
+      "featuredToolIds": ["partner-work-eligibility-checker", "childcare-cost-estimator"]
+    },
+    "tools": {
+      "categoryId": "move-immigration",
+      "featuredToolIds": ["visa-checker", "visa-timeline-estimator", "visa-cost-calculator", "visa-application-plan", "moving-checklist", "relocation-cost-estimator", "document-readiness", "arrival-planner", "first-90-days"]
+    }
+  }
+}

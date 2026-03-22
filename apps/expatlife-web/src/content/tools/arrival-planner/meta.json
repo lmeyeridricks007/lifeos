@@ -1,0 +1,108 @@
+{
+  "hero": {
+    "title": "Plan Your First Days in the Netherlands",
+    "subtitle": "Create a simple arrival plan for your first week and first month after moving to the Netherlands.",
+    "primaryCtaLabel": "Build my arrival plan",
+    "secondaryCtaLabel": "Read the moving guide",
+    "secondaryCtaHref": "/netherlands/moving-to-the-netherlands/",
+    "introBullets": [
+      "First-week and first-month priorities",
+      "Tasks that often need appointments",
+      "Reminders that reduce admin surprises"
+    ],
+    "image": {
+      "src": "/images/tools/arrival-planner-netherlands.webp",
+      "alt": "Arrival planner for first days in the Netherlands with municipality, BSN and banking steps"
+    },
+    "imageFallback": {
+      "src": "/images/guides/netherlands/moving/arrival-planner-hero.png",
+      "alt": "Person planning arrival tasks with checklist, laptop, and icons for register address, BSN, bank account, appointments, mobile plan, and health insurance"
+    }
+  },
+  "explanatorySections": [
+    {
+      "id": "what-arrival-planner-helps",
+      "title": "What the arrival planner helps you do",
+      "body": [
+        "This planner focuses on your first days, first week, and first month after arriving in the Netherlands. It helps you see which tasks to prioritize and which depend on your address and BSN.",
+        "You get a clear view of first-week milestones, first-month milestones, and admin dependencies—so you can book appointments and gather documents in the right order."
+      ]
+    },
+    {
+      "id": "what-depends-on-address-bsn",
+      "title": "What usually depends on your address and BSN",
+      "body": [
+        "Municipality registration is typically one of your first steps; it gives you your BSN (citizen service number). Many next steps depend on that: opening a bank account, taking out health insurance, and applying for DigiD.",
+        "If you do not yet have a stable address, the planner still helps you see which tasks must wait and what you can do in the meantime."
+      ],
+      "bullets": [
+        "Municipality registration → BSN",
+        "Bank account (often needs BSN and proof of address)",
+        "Health insurance (mandatory once resident)",
+        "DigiD (often after you have BSN and address)"
+      ]
+    },
+    {
+      "id": "common-arrival-bottlenecks",
+      "title": "Common arrival bottlenecks",
+      "bullets": [
+        "Unstable address—registration and many services need a fixed address",
+        "No bank account—salary and payments depend on it",
+        "Document gaps—missing ID or certified copies can delay registration or banking",
+        "Unclear employer onboarding timing—align with HR on when documents and bank details are needed"
+      ]
+    },
+    {
+      "id": "after-first-weeks",
+      "title": "What happens after the first weeks",
+      "body": [
+        "Once you have completed your first week and first month priorities, use the First 90 Days Planner to plan from week 2 to month 3: DigiD, GP, recurring payments, transport routines, and housing stability."
+      ]
+    }
+  ],
+  "infographic": {
+    "src": "/images/infographics/arrival-first-steps-netherlands.png",
+    "alt": "First steps after arriving in the Netherlands: Arrival, Register Address, Receive BSN, Start Daily Life"
+  },
+  "seo": {
+    "introParagraphs": [
+      "After arriving in the Netherlands, many expats ask what to do first. This arrival planner helps you prioritize your first week and first month based on your housing status, household setup, and banking urgency.",
+      "Use it as a practical checklist for your first week in the Netherlands, your first month checklist, and steps that often need appointments or lead time. This is planning guidance, not legal advice."
+    ]
+  },
+  "toolPanel": {
+    "whatYouGetTitle": "What you'll get",
+    "whatYouGetItems": [
+      "first-week milestones",
+      "first-month milestones",
+      "appointment-sensitive tasks",
+      "reminder list"
+    ]
+  },
+  "results": {
+    "title": "Your personalized arrival plan"
+  },
+  "disclosure": "This planner is for general relocation planning only. It is not legal, immigration, tax, or financial advice. Confirm your exact requirements with official sources and your local municipality.",
+  "cta": {
+    "generateLabel": "Build my arrival plan"
+  },
+  "originCountries": [
+    { "value": "south-africa", "label": "South Africa" },
+    { "value": "india", "label": "India" },
+    { "value": "united-states", "label": "United States" },
+    { "value": "united-kingdom", "label": "United Kingdom" },
+    { "value": "canada", "label": "Canada" },
+    { "value": "australia", "label": "Australia" },
+    { "value": "germany", "label": "Germany" },
+    { "value": "france", "label": "France" },
+    { "value": "spain", "label": "Spain" },
+    { "value": "brazil", "label": "Brazil" }
+  ],
+  "relatedLinks": {
+    "registerAddress": { "label": "Register address", "href": "/netherlands/register-address-netherlands/" },
+    "bsn": { "label": "BSN registration", "href": "/netherlands/bsn-registration/" },
+    "first30": { "label": "First 30 days", "href": "/netherlands/first-30-days-netherlands/" },
+    "pillar": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+    "hub": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" }
+  }
+}

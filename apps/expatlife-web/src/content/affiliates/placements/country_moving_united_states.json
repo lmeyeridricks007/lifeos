@@ -1,0 +1,22 @@
+{
+  "id": "country_moving_united_states",
+  "destinationCountry": "netherlands",
+  "originCountry": "united-states",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/united-states/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services commonly used by people moving from the United States",
+  "intro": "These services are often compared by Americans planning a move to the Netherlands.",
+  "categoryOrder": ["banking", "housing", "insurance", "shipping", "mobile"],
+  "items": [
+    { "providerId": "wise", "reason": "International transfers and first months budgeting." },
+    { "providerId": "bunq", "reason": "Popular for quick Dutch digital banking after arrival." },
+    { "providerId": "housinganywhere", "reason": "Frequently used for temporary accommodation searches." },
+    { "providerId": "simyo", "reason": "Used for Dutch mobile SIM setup after arrival." },
+    { "providerId": "independer", "reason": "Useful for comparing Dutch health insurance after arrival." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

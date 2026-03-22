@@ -1,0 +1,126 @@
+{
+  "categories": [
+    {
+      "id": "move-immigration",
+      "label": "Move & Immigration",
+      "route": "/netherlands/moving/tools/",
+      "description": "Planning, eligibility, arrival and relocation tools.",
+      "menuGroup": "move",
+      "relatedGuides": [
+        "/netherlands/moving/",
+        "/netherlands/moving-to-the-netherlands/",
+        "/netherlands/documents-needed-to-move-netherlands/"
+      ]
+    },
+    {
+      "id": "integration",
+      "label": "Inburgering & Integration",
+      "route": "/netherlands/integration/tools/",
+      "description": "Tools for integration planning, exams and requirements.",
+      "menuGroup": "move",
+      "relatedGuides": [
+        "/netherlands/integration/",
+        "/netherlands/moving-to-the-netherlands/"
+      ]
+    },
+    {
+      "id": "citizenship",
+      "label": "Citizenship & Long-Term Stay",
+      "route": "/netherlands/citizenship/tools/",
+      "description": "Eligibility and timeline tools for permanent residence and citizenship.",
+      "menuGroup": "move",
+      "relatedGuides": [
+        "/netherlands/citizenship/",
+        "/netherlands/moving-to-the-netherlands/"
+      ]
+    },
+    {
+      "id": "money-tax",
+      "label": "Money & Tax",
+      "route": "/netherlands/money/tools/",
+      "description": "Salary, tax, affordability and cost calculators.",
+      "menuGroup": "money",
+      "relatedGuides": [
+        "/netherlands/money/",
+        "/netherlands/money/taxes/"
+      ]
+    },
+    {
+      "id": "housing",
+      "label": "Housing",
+      "route": "/netherlands/housing/tools/",
+      "description": "Rental, deposit, mortgage and home-cost tools.",
+      "menuGroup": "living",
+      "relatedGuides": [
+        "/netherlands/living/housing/",
+        "/netherlands/moving/"
+      ]
+    },
+    {
+      "id": "transport",
+      "label": "Transport",
+      "route": "/netherlands/transport/tools/",
+      "description": "Commute and transport cost tools.",
+      "menuGroup": "living",
+      "relatedGuides": [
+        "/netherlands/transport/",
+        "/netherlands/living/"
+      ]
+    },
+    {
+      "id": "healthcare",
+      "label": "Healthcare",
+      "route": "/netherlands/health/tools/",
+      "description": "Insurance and healthcare allowance tools.",
+      "menuGroup": "living",
+      "relatedGuides": [
+        "/netherlands/health/",
+        "/netherlands/money/insurance/"
+      ]
+    },
+    {
+      "id": "work-employment",
+      "label": "Work & Employment",
+      "route": "/netherlands/work/tools/",
+      "description": "Offer, contract, payslip and compensation tools.",
+      "menuGroup": "work",
+      "relatedGuides": [
+        "/netherlands/work/",
+        "/netherlands/work/contracts/"
+      ]
+    },
+    {
+      "id": "partner-family",
+      "label": "Partner & Family",
+      "route": "/netherlands/family/tools/",
+      "description": "Partner rights, childcare and family relocation tools.",
+      "menuGroup": "culture",
+      "relatedGuides": [
+        "/netherlands/family/",
+        "/netherlands/moving-to-netherlands-with-partner/",
+        "/netherlands/moving-to-netherlands-with-kids/"
+      ]
+    },
+    {
+      "id": "leaving-nl",
+      "label": "Leaving the Netherlands",
+      "route": "/netherlands/leaving/tools/",
+      "description": "Exit and repatriation planning tools.",
+      "menuGroup": "move",
+      "relatedGuides": [
+        "/netherlands/leaving/",
+        "/netherlands/moving-to-the-netherlands/"
+      ]
+    },
+    {
+      "id": "premium-later",
+      "label": "Advanced AI Tools",
+      "route": "/netherlands/tools/advanced/",
+      "description": "AI-heavy premium tools to add later.",
+      "menuGroup": "tools",
+      "relatedGuides": [
+        "/netherlands/tools/"
+      ]
+    }
+  ]
+}

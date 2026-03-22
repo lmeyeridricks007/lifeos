@@ -1,0 +1,339 @@
+{
+  "slug": "moving-checklist-netherlands",
+  "path": "/netherlands/moving-checklist-netherlands/",
+  "title": "Moving to the Netherlands Checklist",
+  "metaTitle": "Moving to the Netherlands Checklist (2026 Guide for Expats)",
+  "subtitle": "A practical checklist for what to do before you move, after arrival, and during your first 90 days.",
+  "description": "Use this moving to the Netherlands checklist to plan what to do before you move, after arrival, and during your first 90 days. Includes documents, registration, costs, and practical next steps.",
+  "breadcrumbLabel": "Moving Checklist",
+  "lastUpdated": "Updated regularly",
+
+  "hero": {
+    "eyebrow": "Planning",
+    "badges": ["Checklist Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/moving-checklist-hero.png",
+      "alt": "Family with luggage and moving boxes overlooking a Dutch canal at sunset, with traditional canal houses, a windmill, and tulips — moving to the Netherlands."
+    }
+  },
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "before-you-move", "label": "Before you move" },
+    { "id": "documents-checklist", "label": "Documents checklist" },
+    { "id": "cost-planning-checklist", "label": "Cost planning checklist" },
+    { "id": "relocation-timeline", "label": "Step-by-step relocation timeline" },
+    { "id": "arrival-steps", "label": "First steps after arrival" },
+    { "id": "first-90-days", "label": "Your first 90 days" },
+    { "id": "common-mistakes", "label": "Common relocation mistakes" },
+    { "id": "what-expats-do-next", "label": "What expats typically arrange next" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "useful-services", "label": "Useful services" }
+  ],
+
+  "heroCta": {
+    "title": "Not sure which steps apply to your situation?",
+    "supportingText": "Generate a personalized moving checklist in under a minute based on your stage, household, and work situation.",
+    "primaryCtaLabel": "Generate Your Moving Checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtaLabel": "Check your documents",
+    "secondaryCtaHref": "/netherlands/document-readiness-checker/"
+  },
+
+  "midPageCta": {
+    "badge": "Recommended tool",
+    "title": "Moving Checklist Generator",
+    "description": "Create a personalized relocation checklist based on your stage and situation.",
+    "ctaLabel": "Open tool",
+    "ctaHref": "/netherlands/moving/tools/moving-checklist/"
+  },
+
+  "endCta": {
+    "title": "Ready to plan your move properly?",
+    "supportingText": "Use the Moving Checklist Generator to build a practical list for before you move, after arrival, and your first 90 days.",
+    "ctaLabel": "Generate your checklist",
+    "ctaHref": "/netherlands/moving/tools/moving-checklist/"
+  },
+
+  "servicesIntro": "These are common categories people often arrange during relocation, such as banking, transfers, temporary housing, and mobile setup. Always compare current requirements and pricing for your situation.",
+  "servicesSectionTitle": "Useful services expats often arrange during the move",
+
+  "quickAnswers": [
+    {
+      "label": "What is this checklist?",
+      "value": "An overview of common preparation steps when relocating to the Netherlands."
+    },
+    {
+      "label": "Who is it for?",
+      "value": "Expats relocating for work, study, or family reasons."
+    },
+    {
+      "label": "Best next step",
+      "value": "Generate a personalized checklist using the planning tool."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "This checklist gives you a clear view of what many expats do before moving to the Netherlands, in the first days after arrival, and during the first 90 days. Requirements vary by nationality, visa route, and situation — so use the Moving Checklist Generator to get a list tailored to you.",
+        "For the full picture, start with the main Moving to the Netherlands guide, then use this page and the tools linked below to plan documents, housing, registration, and daily-life setup."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Moving to the Netherlands step by step", "href": "/netherlands/moving-to-netherlands-steps/" }
+      ]
+    },
+    {
+      "id": "before-you-move",
+      "heading": "Before you move",
+      "body": [
+        "Preparing early makes the transition to the Netherlands much smoother. Many expats start planning documents, housing, and logistics several months before the move.",
+        "Focus on gathering identity and civil documents, confirming your visa or residence route, researching housing options, and planning finances and banking. Run the Document Readiness Checker and Moving Checklist Generator to see typical tasks for your situation."
+      ],
+      "bullets": [
+        "Prepare essential documents (passport, birth certificate, marriage or divorce certificate if relevant)",
+        "Confirm visa or residence permit requirements and apply if needed",
+        "Research housing options and understand what you need for address registration",
+        "Plan finances, banking, and first-month costs",
+        "Arrange international moving or shipping if needed"
+      ],
+      "internalCta": { "label": "Open Moving Checklist Generator", "href": "/netherlands/moving/tools/moving-checklist/" },
+      "links": [
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Moving to the Netherlands: key requirements", "href": "/netherlands/moving-requirements-netherlands/" }
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    },
+    {
+      "id": "documents-checklist",
+      "heading": "Documents checklist",
+      "body": [
+        "Most expats moving to the Netherlands prepare a small core set of identity, civil, housing, and work-related documents before departure. Exact requirements depend on nationality, visa route, municipality, and family situation.",
+        "Additional documents depending on situation: diplomas or professional certificates, children's birth certificates, sponsor letters, bank statements, health insurance evidence, and previous registration documents if requested."
+      ],
+      "bullets": [
+        "Passport",
+        "Birth certificate",
+        "Marriage certificate or divorce certificate if relevant",
+        "Visa or residence permit documents if applicable",
+        "Employment contract or offer letter if applicable",
+        "Proof of address or housing documents",
+        "Copies of important originals"
+      ],
+      "links": [
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Document legalization and apostille", "href": "/netherlands/document-legalization-netherlands/" },
+        { "label": "Document translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" },
+        { "label": "Visa documents for the Netherlands", "href": "/netherlands/visa-documents-netherlands/" },
+        { "label": "Document Readiness Checker (tool)", "href": "/netherlands/document-readiness-checker/" }
+      ]
+    },
+    {
+      "id": "cost-planning-checklist",
+      "heading": "Cost planning checklist",
+      "body": [
+        "Many expats underestimate the upfront cost of moving to the Netherlands. Before moving, budget for documents, travel, temporary housing, deposits, setup costs, and your first month of daily expenses.",
+        "For a deeper breakdown, see our guide on moving to the Netherlands cost."
+      ],
+      "bullets": [
+        "Visa or residence permit fees if applicable",
+        "Flight tickets or travel costs",
+        "Temporary accommodation",
+        "Rental deposit and first month's rent",
+        "Municipality-related admin or document costs",
+        "Health insurance premiums",
+        "Mobile plan and utilities",
+        "Public transport or bike setup",
+        "Basic furniture or household setup if needed",
+        "Emergency buffer for the first month"
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" }
+      ]
+    },
+    {
+      "id": "relocation-timeline",
+      "heading": "Step-by-step relocation timeline",
+      "body": [
+        "A simple sequence many expats follow. Adjust timing to your visa route and housing situation."
+      ],
+      "bullets": [
+        "6 months before: Start document collection; confirm visa or residence route; research housing options.",
+        "3 months before: Secure work or sponsor documentation; budget for relocation costs; shortlist temporary or long-term housing.",
+        "1 month before: Confirm travel; organise document pack; prepare for address registration.",
+        "First week after arrival: Register address; receive BSN; begin banking and insurance setup.",
+        "First month: Apply for DigiD; arrange healthcare; set up mobile, transport, and utilities.",
+        "First 90 days: Stabilise housing and recurring payments; register with a GP if needed; understand tax and admin routines."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+        { "label": "After arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "Moving Checklist Generator", "href": "/netherlands/moving/tools/moving-checklist/" }
+      ]
+    },
+    {
+      "id": "arrival-steps",
+      "heading": "First steps after arrival",
+      "body": [
+        "After arriving in the Netherlands, several administrative steps are usually completed in the first weeks. Doing these early helps avoid delays with employment, banking, and healthcare."
+      ],
+      "bullets": [
+        "Register your address with the municipality (required for BSN and many services)",
+        "Receive your BSN (often at registration)",
+        "Open a bank account that supports salary and direct debits",
+        "Arrange health insurance",
+        "Activate a mobile phone plan"
+      ],
+      "internalCta": { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      "links": [
+        { "label": "BSN registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Open a bank account in the Netherlands (BSN)", "href": "/netherlands/open-bank-account-netherlands/#bsn" },
+        { "label": "Arrival Planner (tool)", "href": "/netherlands/moving/tools/arrival-planner/" }
+      ]
+    },
+    {
+      "id": "first-90-days",
+      "heading": "Your first 90 days",
+      "body": [
+        "Many expats complete administrative tasks gradually during the first months. This period often includes finalising housing, digital government access (DigiD), and financial administration."
+      ],
+      "bullets": [
+        "Activate DigiD",
+        "Set up or confirm health insurance",
+        "Register with a local doctor (GP)",
+        "Set up utilities if applicable",
+        "Understand tax and admin routines",
+        "Stabilise recurring payments and daily-life setup"
+      ],
+      "image": {
+        "src": "/images/infographics/first-90-days-checklist.png",
+        "alt": "Infographic: Your First 90 Days in the Netherlands — checklist of tasks by First Week (register address, BSN, bank, health insurance), First 30 Days (DigiD, GP, transport card, utilities), and First 90 Days (recurring payments, taxes, local services, daily routines)."
+      },
+      "links": [
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "First 90 Days Planner (tool)", "href": "/netherlands/moving/tools/first-90-days/" }
+      ]
+    },
+    {
+      "id": "common-mistakes",
+      "heading": "Common relocation mistakes",
+      "body": [
+        "Avoiding these pitfalls can save time and stress."
+      ],
+      "bullets": [
+        "Waiting too long to arrange a registerable address",
+        "Assuming temporary housing can always be used for registration",
+        "Leaving document translation or apostille steps too late",
+        "Delaying health insurance setup",
+        "Not checking whether banking depends on BSN and proof of address",
+        "Not planning enough cash buffer for the first weeks",
+        "Assuming one generic checklist fits every situation"
+      ],
+      "links": [
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Open a bank account in the Netherlands (BSN)", "href": "/netherlands/open-bank-account-netherlands/#bsn" },
+        { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
+        { "label": "Document Readiness Checker (tool)", "href": "/netherlands/document-readiness-checker/" }
+      ]
+    },
+    {
+      "id": "what-expats-do-next",
+      "heading": "What expats typically arrange next",
+      "body": [
+        "After completing the initial steps, many expats organise everyday services and longer-term planning."
+      ],
+      "bullets": [
+        "Open or optimise banking setup",
+        "Arrange insurance coverage",
+        "Explore mobile and utilities",
+        "Review housing options and stability"
+      ],
+      "affiliatePlacementId": "problem_solution_primary"
+    }
+  ],
+
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate Your Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Create a personalized checklist for before you move, after arrival, and your first 90 days.",
+      "ctaLabel": "Open checklist tool"
+    },
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Build a practical month-by-month plan for settling in after arrival.",
+      "ctaLabel": "Open 90-day planner"
+    }
+  ],
+
+  "internalLinks": {
+    "hub": {
+      "label": "Back to Moving Hub",
+      "href": "/netherlands/moving/"
+    },
+    "pillar": {
+      "label": "Read the complete Moving Guide",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    "related": [
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
+      { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "BSN registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
+      { "label": "Open a bank account in the Netherlands (BSN)", "href": "/netherlands/open-bank-account-netherlands/#bsn" },
+      { "label": "Move to the Netherlands without a job", "href": "/netherlands/move-to-netherlands-without-job/" },
+      { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+      { "label": "EU vs non-EU moving to the Netherlands", "href": "/netherlands/eu-vs-non-eu-moving-to-netherlands/" }
+    ]
+  },
+
+  "faq": [
+    {
+      "q": "When should you start preparing to move to the Netherlands?",
+      "a": "Many expats begin planning several months before relocation to organise documents, housing, and logistics. Starting early helps with visa or residence applications, document apostille or translation, and securing an address for registration."
+    },
+    {
+      "q": "What are the most important tasks after arrival?",
+      "a": "Address registration, receiving a BSN, and arranging health insurance are often among the first steps. Opening a bank account and activating a mobile plan are also commonly done in the first weeks."
+    },
+    {
+      "q": "Can a checklist simplify relocation planning?",
+      "a": "Yes. Many people find that a structured checklist helps them track administrative and practical tasks. Use the Moving Checklist Generator to get a list tailored to your stage, household, and situation."
+    },
+    {
+      "q": "What documents do you need to move to the Netherlands?",
+      "a": "Typical documents include passport, birth certificate, marriage or divorce certificate if relevant, visa or residence documents, employment contract or offer if applicable, and proof of address. Requirements vary by nationality and situation; see our documents needed guide and Document Readiness Checker for your case."
+    },
+    {
+      "q": "Do you need a BSN before opening a bank account?",
+      "a": "It depends on the bank and your situation. Some banks allow you to start the process or open certain accounts before you have a BSN; others require it. See our guide on opening a bank account before BSN for details."
+    },
+    {
+      "q": "How much should you budget before moving?",
+      "a": "Budget for visa or permit fees, travel, temporary accommodation, rental deposit and first month's rent, document costs, health insurance, mobile and utilities, transport or bike setup, and an emergency buffer. See our moving to the Netherlands cost guide for a deeper breakdown."
+    },
+    {
+      "q": "Can you move to the Netherlands without a job?",
+      "a": "It depends on your nationality and route. EU/EEA citizens have more flexibility; non-EU citizens typically need a residence purpose such as work, study, or family. See our guide on moving without a job for scenario-based options."
+    },
+    {
+      "q": "What should you prioritize in your first 90 days?",
+      "a": "Prioritise address registration and BSN, health insurance, banking, and DigiD. Then focus on GP registration, transport, utilities, and stabilising recurring payments. Use the First 90 Days Planner to get a week-by-week plan."
+    }
+  ],
+
+  "resourcesAffiliatePlacementId": "resources_end",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

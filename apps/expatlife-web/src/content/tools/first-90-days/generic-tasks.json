@@ -1,0 +1,1270 @@
+[
+  {
+    "id": "complete-address-registration-if-still-pending",
+    "title": "Complete address registration if still pending",
+    "phase": "arrival-carry-over",
+    "weekRange": "week-1-2",
+    "category": "registration",
+    "priority": "high",
+    "shortDescription": "Finish municipality registration so you have a registered address and can receive official mail.",
+    "whyItMatters": "Address registration unlocks your BSN and almost every next step: opening a bank account, applying for DigiD, taking out health insurance, and giving your employer your details. Until you are registered, you cannot receive your BSN, and many services will not allow you to complete sign-up. Doing this in week 1 (or as soon as you have a valid address) keeps the rest of your first 90 days on track.",
+    "whatThisInvolves": [
+      "Book or attend your municipality registration appointment",
+      "Bring required documents (passport, rental contract or proof of address)",
+      "Complete registration and receive confirmation",
+      "Note your BSN once issued"
+    ],
+    "whenToDoIt": "As soon as you have a valid address, ideally in week 1. Appointment availability varies by municipality; book as early as possible.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Check municipality website for appointment booking",
+      "Gather documents",
+      "Attend appointment",
+      "Keep proof of registration for other services"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/municipality-registration-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": ["local-municipality"],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "confirm-bsn-dependent-next-steps",
+    "title": "Confirm which next steps depend on your BSN",
+    "phase": "arrival-carry-over",
+    "weekRange": "week-1-2",
+    "category": "admin",
+    "priority": "high",
+    "shortDescription": "Map which tasks cannot move forward until your BSN is active.",
+    "whyItMatters": "Bank account, DigiD, health insurance, and payroll all require a BSN. If you try to do these in the wrong order or before your BSN is active, you will hit repeated delays. A short list of BSN-dependent tasks helps you sequence the rest of your first month and avoid missing deadlines (e.g. health insurance within four months).",
+    "whatThisInvolves": [
+      "List services you need in the first month",
+      "Check which require BSN (bank, insurer, employer)",
+      "Plan the sequence so nothing is blocked unnecessarily"
+    ],
+    "whenToDoIt": "In week 1, or as soon as you know your registration date.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Note your expected BSN receipt date",
+      "Contact bank and employer about their requirements",
+      "Schedule follow-up tasks after BSN is active"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/municipality-registration-netherlands/", "/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": ["government-bsn"],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "confirm-payroll-setup-with-employer",
+    "title": "Confirm payroll setup with your employer",
+    "phase": "arrival-carry-over",
+    "weekRange": "week-1-2",
+    "category": "work",
+    "priority": "high",
+    "shortDescription": "Make sure your salary payment and onboarding admin can proceed without delays.",
+    "whyItMatters": "Payroll issues are one of the fastest ways for a first month in the Netherlands to become stressful.",
+    "whatThisInvolves": [
+      "Confirm your start date",
+      "Check what HR still needs from you",
+      "Confirm whether a Dutch bank account is required before first salary",
+      "Confirm whether BSN is needed for payroll timing"
+    ],
+    "whenToDoIt": "In week 1 or before your first salary cutoff.",
+    "dependencies": ["bank-account", "bsn"],
+    "typicalSteps": [
+      "Contact HR or onboarding contact",
+      "Confirm payroll document list",
+      "Confirm salary payment timing",
+      "Track anything still pending"
+    ],
+    "countryNotes": {
+      "united-states": "If you are moving from the US, you may also want to note any cross-border tax or banking considerations you still need to review separately.",
+      "south-africa": "If you are moving from South Africa, early banking and transfer planning can reduce first-month cash flow stress."
+    },
+    "relatedGuides": ["/netherlands/open-bank-account-netherlands/", "/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": ["banking", "money-transfer"],
+    "whoToContact": ["employer-hr"],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "open-dutch-bank-account-if-needed",
+    "title": "Open a Dutch bank account if you need one",
+    "phase": "arrival-carry-over",
+    "weekRange": "week-1-2",
+    "category": "banking",
+    "priority": "high",
+    "shortDescription": "Arrange a Dutch account for salary, rent, and daily payments.",
+    "whyItMatters": "Most employers pay salary only to a Dutch (or SEPA) bank account, and many landlords and insurers expect a local account for direct debits. Without one, your first salary may be delayed and you cannot set up recurring payments for rent, insurance, or utilities. Opening an account as soon as you have your BSN keeps payroll and monthly admin on track.",
+    "whatThisInvolves": [
+      "Choose a bank and product that fits your situation",
+      "Gather ID and BSN (and sometimes proof of address)",
+      "Complete the application and verification",
+      "Set up online banking and any required apps"
+    ],
+    "whenToDoIt": "As soon as you have a BSN; many employers need it before first salary.",
+    "dependencies": ["bsn"],
+    "typicalSteps": [
+      "Compare options (traditional banks vs digital)",
+      "Book an appointment or apply online",
+      "Complete verification",
+      "Note account details for employer and rent"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/open-bank-account-netherlands/", "/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": ["banking"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "choose-and-arrange-health-insurance",
+    "title": "Choose and arrange Dutch health insurance",
+    "phase": "arrival-carry-over",
+    "weekRange": "week-1-2",
+    "category": "insurance",
+    "priority": "high",
+    "shortDescription": "Take out mandatory Dutch health insurance within the required timeframe.",
+    "whyItMatters": "Health insurance is mandatory in the Netherlands; missing the deadline can lead to penalties and backdated premiums.",
+    "whatThisInvolves": [
+      "Confirm when your insurance must start (often from registration or work start)",
+      "Compare basic and optional packages",
+      "Sign up with a provider",
+      "Keep proof for employer if required"
+    ],
+    "whenToDoIt": "Within the first weeks; timing depends on your registration and employment.",
+    "dependencies": ["bsn"],
+    "typicalSteps": [
+      "Check your start date obligation",
+      "Use a comparison site or provider directly",
+      "Complete application",
+      "Set a reminder for annual review"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/health-insurance-netherlands/", "/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": ["insurance"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "set-up-mobile-and-account-verification-access",
+    "title": "Set up mobile and account verification access",
+    "phase": "arrival-carry-over",
+    "weekRange": "week-1-2",
+    "category": "admin",
+    "priority": "high",
+    "shortDescription": "Get a Dutch mobile number and reliable access for SMS codes and account verification.",
+    "whyItMatters": "Banks, DigiD, and many services send codes by SMS; a local number avoids verification blocks.",
+    "whatThisInvolves": [
+      "Get a Dutch SIM or mobile plan",
+      "Ensure you can receive SMS and calls",
+      "Use this number for bank, DigiD, and other sign-ups"
+    ],
+    "whenToDoIt": "First days to first week.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Choose a provider or prepaid option",
+      "Activate and test reception",
+      "Update number with any existing accounts"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": ["mobile"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "collect-residence-permit-or-ind-follow-up-if-relevant",
+    "title": "Collect residence permit or IND follow-up if relevant",
+    "phase": "arrival-carry-over",
+    "weekRange": "week-1-2",
+    "category": "registration",
+    "priority": "high",
+    "shortDescription": "Pick up your residence permit or complete any IND steps that apply to you.",
+    "whyItMatters": "Your permit or status confirmation is often needed for work, travel, and some services.",
+    "whatThisInvolves": [
+      "Check IND correspondence for collection or next steps",
+      "Book or attend any required appointment",
+      "Keep permit and documents in a safe place"
+    ],
+    "whenToDoIt": "As soon as you are notified; often in the first weeks.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Check IND status or mail",
+      "Follow collection or application instructions",
+      "Store documents securely"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/municipality-registration-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": ["ind"],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "confirm-which-tasks-still-depend-on-address-or-bsn",
+    "title": "Confirm which tasks still depend on address or BSN",
+    "phase": "arrival-carry-over",
+    "weekRange": "week-1-2",
+    "category": "admin",
+    "priority": "medium",
+    "shortDescription": "List what you can do now versus what must wait for registration or BSN.",
+    "whyItMatters": "Clear sequencing prevents wasted time and repeated visits.",
+    "whatThisInvolves": [
+      "List your week 1–2 goals",
+      "Mark which need address or BSN",
+      "Schedule dependent tasks for after you have them"
+    ],
+    "whenToDoIt": "Early in week 1.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Write down next steps",
+      "Check requirements for each",
+      "Plan order and deadlines"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "apply-for-digid-when-eligible",
+    "title": "Apply for DigiD when eligible",
+    "phase": "early-setup",
+    "weekRange": "week-3-4",
+    "category": "admin",
+    "priority": "high",
+    "shortDescription": "Apply for DigiD once your BSN and registration are active so you can use government and other online services.",
+    "whyItMatters": "DigiD is the standard login for Dutch government sites (tax, benefits, MijnOverheid, municipality). Many employers, insurers, and healthcare portals also use it. Without it, you cannot file taxes, check official records, or access many online forms. Activation is by letter to your address, so applying soon after you have your BSN and address means you get access earlier and avoid last-minute blocks when you need a government service.",
+    "whatThisInvolves": [
+      "Check that your BSN and registration are active",
+      "Apply for DigiD online",
+      "Activate it with the code sent by post",
+      "Note which services you can now access online"
+    ],
+    "whenToDoIt": "Usually after address registration and BSN are active.",
+    "dependencies": ["address-registration", "bsn"],
+    "typicalSteps": [
+      "Go to digid.nl and start application",
+      "Complete identity check",
+      "Receive and enter activation code",
+      "Use DigiD for Belastingdienst, MijnOverheid, etc."
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/digid-awareness/", "/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": ["digid"],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "register-with-gp",
+    "title": "Register with a GP (huisarts)",
+    "phase": "early-setup",
+    "weekRange": "week-3-4",
+    "category": "health",
+    "priority": "high",
+    "shortDescription": "Find and register with a local general practitioner so you have a regular doctor.",
+    "whyItMatters": "In the Netherlands you need a registered GP for most non-emergency care and for referrals to specialists. Many practices have full lists or only accept patients from a certain postcode; registering in your first weeks secures a place before you need an appointment. Without a GP, you may struggle to get routine care or prescriptions when you need them.",
+    "whatThisInvolves": [
+      "Find GPs near your address that accept new patients",
+      "Register with your chosen practice",
+      "Provide ID and insurance details",
+      "Note how to book appointments"
+    ],
+    "whenToDoIt": "Week 3–4, once you have an address and insurance.",
+    "dependencies": ["address-registration", "health-insurance-choice"],
+    "typicalSteps": [
+      "Search for practices in your area",
+      "Call or check website for registration",
+      "Complete registration form",
+      "Keep practice contact details handy"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "review-dentist-registration-options",
+    "title": "Review dentist registration options",
+    "phase": "early-setup",
+    "weekRange": "week-3-4",
+    "category": "health",
+    "priority": "medium",
+    "shortDescription": "Decide whether to register with a dentist and find one if you do.",
+    "whyItMatters": "Dental care is mostly private; registering early avoids last-minute searches.",
+    "whatThisInvolves": [
+      "Check if your health insurance includes dental",
+      "Find dentists nearby if you want to register",
+      "Register or note contact for when you need a check-up"
+    ],
+    "whenToDoIt": "Week 3–4.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Check insurance policy",
+      "Search for practices",
+      "Register or save details"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "set-up-recurring-payments",
+    "title": "Set up recurring payments",
+    "phase": "early-setup",
+    "weekRange": "week-3-4",
+    "category": "admin",
+    "priority": "high",
+    "shortDescription": "Arrange standing orders or direct debits for rent, insurance, and other fixed costs.",
+    "whyItMatters": "Stable payment routines reduce month-end stress and missed deadlines.",
+    "whatThisInvolves": [
+      "List regular payments (rent, insurance, utilities)",
+      "Set up automatic payments from your Dutch account",
+      "Confirm dates and amounts",
+      "Keep a simple record of what is automated"
+    ],
+    "whenToDoIt": "Once you have a Dutch bank account and know your regular outgoings.",
+    "dependencies": ["bank-account"],
+    "typicalSteps": [
+      "List recurring bills",
+      "Use bank app or online banking for standing orders",
+      "Verify first payments",
+      "Set reminders for variable bills"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "arrange-utilities-and-internet",
+    "title": "Arrange utilities and internet",
+    "phase": "early-setup",
+    "weekRange": "week-3-4",
+    "category": "housing",
+    "priority": "high",
+    "shortDescription": "Set up gas, electricity, water, and internet in your name if required.",
+    "whyItMatters": "Many rentals require you to contract utilities; delays can affect daily life.",
+    "whatThisInvolves": [
+      "Check what is included in your rent",
+      "Arrange gas, electricity, and water if you are the contract holder",
+      "Arrange internet and TV if needed",
+      "Note meter readings and contract start dates"
+    ],
+    "whenToDoIt": "Week 3–4, or as soon as you have a permanent address.",
+    "dependencies": ["address-registration"],
+    "typicalSteps": [
+      "Confirm with landlord what you must arrange",
+      "Compare energy and internet providers",
+      "Sign contracts and book activation",
+      "Record meter readings at start"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": ["utilities"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "set-up-ov-chipkaart-and-transport-basics",
+    "title": "Set up OV-chipkaart and transport basics",
+    "phase": "early-setup",
+    "weekRange": "week-3-4",
+    "category": "transport",
+    "priority": "high",
+    "shortDescription": "Get an OV-chipkaart and understand how you will travel regularly (train, bus, bike).",
+    "whyItMatters": "Public transport and cycling are central to daily life; having this sorted reduces weekly friction.",
+    "whatThisInvolves": [
+      "Order or collect an OV-chipkaart",
+      "Link it to an account if you want auto-top-up or subscriptions",
+      "Decide on bike purchase or rental if needed",
+      "Check NS or local transport apps for your commute"
+    ],
+    "whenToDoIt": "Week 3–4.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Apply for OV-chipkaart (ov-chipkaart.nl or station)",
+      "Set up NS account if you use trains often",
+      "Consider bike if you will cycle daily"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": ["transport"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "learn-basic-neighborhood-services",
+    "title": "Learn basic neighborhood services",
+    "phase": "early-setup",
+    "weekRange": "week-3-4",
+    "category": "admin",
+    "priority": "medium",
+    "shortDescription": "Find out where the nearest municipality desk, pharmacy, and key shops are.",
+    "whyItMatters": "Knowing local routines lowers daily friction quickly.",
+    "whatThisInvolves": [
+      "Locate municipality (gemeente) office or service point",
+      "Find pharmacy (apotheek) and GP",
+      "Note waste collection days and rules",
+      "Identify a supermarket and any other essentials"
+    ],
+    "whenToDoIt": "Week 3–4.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Check municipality website for locations",
+      "Walk or cycle your area",
+      "Save addresses and opening hours"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "confirm-rent-and-housing-admin-routine",
+    "title": "Confirm rent and housing admin routine",
+    "phase": "early-setup",
+    "weekRange": "week-3-4",
+    "category": "housing",
+    "priority": "medium",
+    "shortDescription": "Clarify rent payment date, contract details, and who handles what (repairs, utilities).",
+    "whyItMatters": "Clear expectations prevent disputes and last-minute surprises.",
+    "whatThisInvolves": [
+      "Confirm rent due date and method",
+      "Note notice period and contract end if relevant",
+      "Know who to contact for repairs",
+      "Check if you need to register any sublets or changes"
+    ],
+    "whenToDoIt": "Week 3–4.",
+    "dependencies": ["address-registration"],
+    "typicalSteps": [
+      "Read contract carefully",
+      "Set up rent payment",
+      "Save landlord or agency contact"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": ["housing-platforms"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "confirm-30-percent-ruling-process-if-relevant",
+    "title": "Confirm 30% ruling process if relevant",
+    "phase": "early-setup",
+    "weekRange": "week-3-4",
+    "category": "work",
+    "priority": "medium",
+    "shortDescription": "If you may qualify for the 30% ruling, confirm with your employer and note the steps.",
+    "whyItMatters": "The 30% facility can affect tax and payroll; early clarity avoids back-and-forth.",
+    "whatThisInvolves": [
+      "Check with HR whether you are eligible",
+      "Confirm what documents are needed",
+      "Note application deadline (usually within months of first work day)",
+      "Track application status"
+    ],
+    "whenToDoIt": "Week 3–4, or as soon as employment starts.",
+    "dependencies": ["employer-onboarding"],
+    "typicalSteps": [
+      "Ask employer about 30% ruling",
+      "Gather required documents",
+      "Submit via employer or Belastingdienst",
+      "Keep confirmation for your records"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-30-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": ["belastingdienst-30"],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "set-up-municipality-or-service-reminder-system",
+    "title": "Set up a simple reminder system for renewals and admin",
+    "phase": "early-setup",
+    "weekRange": "week-3-4",
+    "category": "admin",
+    "priority": "medium",
+    "shortDescription": "Use a calendar or list for permit renewals, insurance review, and other recurring admin.",
+    "whyItMatters": "Small reminders prevent deadlines from slipping in month 2 and 3.",
+    "whatThisInvolves": [
+      "List key renewal dates (insurance, permit if applicable)",
+      "Set calendar reminders or use a simple list",
+      "Review monthly so nothing is missed"
+    ],
+    "whenToDoIt": "By end of week 4.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Note annual or periodic deadlines",
+      "Add to calendar or app",
+      "Check list each month"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-60-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "review-payroll-and-first-salary-experience",
+    "title": "Review your first salary, payroll setup, and any missing employer admin",
+    "phase": "stabilizing-routines",
+    "weekRange": "month-2",
+    "category": "work",
+    "priority": "high",
+    "shortDescription": "Check that your first salary arrived correctly and close any outstanding HR items.",
+    "whyItMatters": "Month 2 is when core systems should feel predictable; fixing payroll early avoids stress.",
+    "whatThisInvolves": [
+      "Confirm first salary amount and date",
+      "Check payslip for tax and deductions",
+      "Complete any missing HR forms",
+      "Note 30% ruling status if relevant"
+    ],
+    "whenToDoIt": "Month 2, after first salary.",
+    "dependencies": ["bank-account", "employer-onboarding"],
+    "typicalSteps": [
+      "Open payslip and check details",
+      "Contact HR if anything is unclear",
+      "File any missing documents"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-60-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": ["employer-hr"],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "stabilize-transport-routine",
+    "title": "Decide on your regular transport setup, OV account, and commuting routine",
+    "phase": "stabilizing-routines",
+    "weekRange": "month-2",
+    "category": "transport",
+    "priority": "high",
+    "shortDescription": "Lock in how you get to work and around town so it becomes routine.",
+    "whyItMatters": "Consistent routines protect time for admin and personal adjustment.",
+    "whatThisInvolves": [
+      "Confirm OV subscription or top-up routine",
+      "Stabilize bike or car use if applicable",
+      "Know your regular commute options and backup",
+      "Review costs and optimize if needed"
+    ],
+    "whenToDoIt": "Month 2.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Evaluate NS subscription vs pay-as-you-go",
+      "Set up auto-top-up or monthly product",
+      "Test backup routes"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-60-days-netherlands/"],
+    "affiliateCategories": ["transport"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "review-health-insurance-choice-after-first-weeks",
+    "title": "Review your health insurance choice after the first weeks",
+    "phase": "stabilizing-routines",
+    "weekRange": "month-2",
+    "category": "insurance",
+    "priority": "medium",
+    "shortDescription": "Check that your policy still fits (e.g. dental, physio) and you know how to claim.",
+    "whyItMatters": "Early review avoids surprises when you need care.",
+    "whatThisInvolves": [
+      "Re-read policy summary",
+      "Note excess and what is covered",
+      "Check how to submit claims",
+      "Decide if you need to switch before year-end"
+    ],
+    "whenToDoIt": "Month 2.",
+    "dependencies": ["health-insurance-choice"],
+    "typicalSteps": [
+      "Log in to insurer portal",
+      "Save policy documents",
+      "Set reminder for annual switch window if relevant"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/health-insurance-netherlands/"],
+    "affiliateCategories": ["insurance"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "review-utility-and-subscription-costs",
+    "title": "Review utility and subscription costs",
+    "phase": "stabilizing-routines",
+    "weekRange": "month-2",
+    "category": "admin",
+    "priority": "medium",
+    "shortDescription": "Check energy, internet, and other subscriptions for fit and cost.",
+    "whyItMatters": "Practical optimization once basics are in place.",
+    "whatThisInvolves": [
+      "Review first utility bills",
+      "Check if you are on a good tariff",
+      "Cancel or adjust any subscriptions you do not need",
+      "Set reminders for contract end dates"
+    ],
+    "whenToDoIt": "Month 2.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Open a few bills and note totals",
+      "Compare with other providers if relevant",
+      "Adjust direct debits if needed"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-60-days-netherlands/"],
+    "affiliateCategories": ["utilities"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "check-medium-term-housing-stability",
+    "title": "Check medium-term housing stability",
+    "phase": "stabilizing-routines",
+    "weekRange": "month-2",
+    "category": "housing",
+    "priority": "high",
+    "shortDescription": "Confirm how long your current housing is secure and what you need to do if it is temporary.",
+    "whyItMatters": "Reducing housing uncertainty helps you plan month 3 and beyond.",
+    "whatThisInvolves": [
+      "Confirm contract end or notice period",
+      "Decide if you will extend or look for something else",
+      "Note any deadlines for giving notice",
+      "Plan next steps if housing is short-term"
+    ],
+    "whenToDoIt": "Month 2.",
+    "dependencies": ["housing-stability"],
+    "typicalSteps": [
+      "Read contract again",
+      "Mark renewal or notice dates",
+      "Start search early if you will move"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/"],
+    "affiliateCategories": ["housing-platforms"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "build-monthly-admin-routine",
+    "title": "Create a lightweight monthly system for renewals, bills, and open admin tasks",
+    "phase": "stabilizing-routines",
+    "weekRange": "month-2",
+    "category": "admin",
+    "priority": "medium",
+    "shortDescription": "Run a short monthly check so renewals and pending items do not pile up.",
+    "whyItMatters": "Close loops before they become long-tail admin in month 3.",
+    "whatThisInvolves": [
+      "Pick a fixed day each month for admin",
+      "Review open tasks, bills, and renewals",
+      "Tackle one or two items each time",
+      "Keep a simple list or checklist"
+    ],
+    "whenToDoIt": "Month 2, then repeat monthly.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Choose a monthly admin slot",
+      "List recurring and one-off items",
+      "Tick off what you complete"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-60-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "review-driving-licence-use-or-exchange-if-needed",
+    "title": "Review driving licence use or exchange if needed",
+    "phase": "stabilizing-routines",
+    "weekRange": "month-2",
+    "category": "transport",
+    "priority": "medium",
+    "shortDescription": "Confirm how long you can drive on your current licence and whether you need to exchange it.",
+    "whyItMatters": "Rules differ by country of issue; knowing your deadline avoids last-minute stress.",
+    "whatThisInvolves": [
+      "Check RDW rules for your country of issue",
+      "Note the deadline to exchange if applicable",
+      "Book an exchange appointment if required",
+      "Keep licence and any translation accessible"
+    ],
+    "whenToDoIt": "Month 2, or when you plan to drive.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Check RDW website for your licence type",
+      "Note 185-day or other rule",
+      "Schedule exchange if needed"
+    ],
+    "countryNotes": {
+      "germany": "EU licence holders can often use their licence longer; check renewal and exchange rules.",
+      "france": "EU licence holders can often use their licence longer; check renewal and exchange rules.",
+      "spain": "EU licence holders can often use their licence longer; check renewal and exchange rules."
+    },
+    "relatedGuides": ["/netherlands/first-60-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": ["rdw-driving"],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "build-language-and-integration-routine",
+    "title": "Choose realistic Dutch language and integration priorities for the next 3 months",
+    "phase": "stabilizing-routines",
+    "weekRange": "month-2",
+    "category": "integration",
+    "priority": "medium",
+    "shortDescription": "Decide how you want to approach Dutch language learning and integration in the first months.",
+    "whyItMatters": "Define sustainable goals so language and community efforts do not fizzle out.",
+    "whatThisInvolves": [
+      "Decide if you want a course, app, or informal practice",
+      "Set a realistic weekly time commitment",
+      "Find one or two activities (e.g. language café, sport)",
+      "Review after a few weeks and adjust"
+    ],
+    "whenToDoIt": "Month 2.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Choose one primary method (course or self-study)",
+      "Block time in your calendar",
+      "Join one local or online group"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-60-days-netherlands/", "/netherlands/after-arriving-netherlands/"],
+    "affiliateCategories": ["language-courses"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes"]
+    }
+  },
+  {
+    "id": "review-bank-account-and-transfer-setup",
+    "title": "Review bank account and transfer setup",
+    "phase": "stabilizing-routines",
+    "weekRange": "month-2",
+    "category": "banking",
+    "priority": "medium",
+    "shortDescription": "Confirm your Dutch account and any international transfer routine work for you.",
+    "whyItMatters": "Month 2 is a good time to fix fees or switch if something is not working.",
+    "whatThisInvolves": [
+      "Check fees for daily use and international transfers",
+      "Confirm savings or other products if needed",
+      "Set up or adjust standing orders",
+      "Note support and app usage"
+    ],
+    "whenToDoIt": "Month 2.",
+    "dependencies": ["bank-account"],
+    "typicalSteps": [
+      "Review last month's transactions",
+      "Compare with alternatives if unhappy",
+      "Adjust automation"
+    ],
+    "countryNotes": {
+      "south-africa": "If you send money to or from South Africa, review transfer costs and timing.",
+      "india": "If you send money to or from India, review transfer costs and timing.",
+      "united-states": "If you keep US accounts, note any reporting or tax follow-up you need."
+    },
+    "relatedGuides": ["/netherlands/open-bank-account-netherlands/"],
+    "affiliateCategories": ["banking", "money-transfer"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "set-up-personal-recordkeeping-system",
+    "title": "Set up a simple personal record-keeping system",
+    "phase": "stabilizing-routines",
+    "weekRange": "month-2",
+    "category": "admin",
+    "priority": "medium",
+    "shortDescription": "Keep key documents (contracts, permits, insurance) in one place so you can find them quickly.",
+    "whyItMatters": "A shared folder or checklist reduces repeated admin friction.",
+    "whatThisInvolves": [
+      "Choose a folder (digital or physical)",
+      "Add contracts, BSN proof, insurance policy, permit",
+      "Note renewal dates",
+      "Update when something changes"
+    ],
+    "whenToDoIt": "Month 2.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Create a main folder",
+      "Add key documents",
+      "Add a simple renewal list"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "review-what-still-feels-fragile-in-daily-life",
+    "title": "Review what still feels fragile in daily life",
+    "phase": "longer-term-setup",
+    "weekRange": "month-3",
+    "category": "admin",
+    "priority": "high",
+    "shortDescription": "Identify any remaining weak spots (admin, transport, housing) and plan to address them.",
+    "whyItMatters": "Month 3 is the time to close gaps before they become long-term stress.",
+    "whatThisInvolves": [
+      "List what still feels uncertain or stressful",
+      "Prioritise one or two items to fix",
+      "Set a simple action for each",
+      "Revisit in a few weeks"
+    ],
+    "whenToDoIt": "Month 3.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Write down pain points",
+      "Pick top 2 to address",
+      "Schedule one action each"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-90-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "create-next-quarter-integration-plan",
+    "title": "Create a practical integration plan for the next quarter",
+    "phase": "longer-term-setup",
+    "weekRange": "month-3",
+    "category": "integration",
+    "priority": "medium",
+    "shortDescription": "Move from setup to a sustainable language and community rhythm for the next 3 months.",
+    "whyItMatters": "Month 3 is a good point to shift from survival to longer-term habits.",
+    "whatThisInvolves": [
+      "Set a realistic language goal (e.g. A1, or 2 hours per week)",
+      "Choose one or two regular social or community activities",
+      "Block time in your calendar",
+      "Review progress in 6–8 weeks"
+    ],
+    "whenToDoIt": "Month 3.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Choose course or method",
+      "Join one group or club",
+      "Put recurring slots in calendar"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/after-arriving-netherlands/", "/netherlands/moving-to-the-netherlands/"],
+    "affiliateCategories": ["language-courses"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes"]
+    }
+  },
+  {
+    "id": "build-weekly-language-practice-rhythm",
+    "title": "Build a weekly language practice rhythm",
+    "phase": "longer-term-setup",
+    "weekRange": "month-3",
+    "category": "integration",
+    "priority": "medium",
+    "shortDescription": "Small, consistent steps are often more effective than large bursts.",
+    "whyItMatters": "Regular practice supports long-term progress and confidence.",
+    "whatThisInvolves": [
+      "Fix 2–3 short sessions per week",
+      "Use an app, course, or conversation partner",
+      "Track what you do so you can adjust",
+      "Celebrate small wins"
+    ],
+    "whenToDoIt": "Month 3.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Block 30–45 min two or three times per week",
+      "Choose one primary resource",
+      "Add a social element (café, tandem)"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/after-arriving-netherlands/"],
+    "affiliateCategories": ["language-courses"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes"]
+    }
+  },
+  {
+    "id": "review-month-to-month-budget-and-financial-buffer",
+    "title": "Review month-to-month budget and financial buffer",
+    "phase": "longer-term-setup",
+    "weekRange": "month-3",
+    "category": "admin",
+    "priority": "high",
+    "shortDescription": "Check recurring costs and comfort level so you can plan ahead.",
+    "whyItMatters": "Month 3 is a good checkpoint for recurring costs and peace of mind.",
+    "whatThisInvolves": [
+      "List fixed and variable monthly costs",
+      "Compare to income and note surplus or shortfall",
+      "Decide if you need to cut costs or build savings",
+      "Set a simple buffer goal if possible"
+    ],
+    "whenToDoIt": "Month 3.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Open last 2–3 months of statements",
+      "Categorise spending",
+      "Set one improvement goal"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-90-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "review-pension-and-benefits-awareness",
+    "title": "Review pension and benefits awareness",
+    "phase": "longer-term-setup",
+    "weekRange": "month-3",
+    "category": "work",
+    "priority": "medium",
+    "shortDescription": "Understand what your employer offers (pension, bonus, leave) and what you need to do.",
+    "whyItMatters": "Early awareness avoids missing opt-ins or deadlines.",
+    "whatThisInvolves": [
+      "Read employment contract and HR materials",
+      "Note pension contribution and provider",
+      "Check leave balance and rules",
+      "Ask HR if anything is unclear"
+    ],
+    "whenToDoIt": "Month 3.",
+    "dependencies": ["employer-onboarding"],
+    "typicalSteps": [
+      "Log in to HR portal",
+      "Read pension and benefits summary",
+      "Note any forms or choices to make"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-90-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": ["employer-hr"],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "review-longer-term-transport-needs",
+    "title": "Review longer-term transport needs",
+    "phase": "longer-term-setup",
+    "weekRange": "month-3",
+    "category": "transport",
+    "priority": "medium",
+    "shortDescription": "Decide if your current setup (OV, bike, car) is right for the next 6 months.",
+    "whyItMatters": "Optimising now can save money and hassle.",
+    "whatThisInvolves": [
+      "Review how much you travel and how",
+      "Check if a different OV product would save money",
+      "Consider bike purchase or repair if needed",
+      "Note driving licence exchange deadline if relevant"
+    ],
+    "whenToDoIt": "Month 3.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Check NS or transport app usage",
+      "Compare monthly products",
+      "Plan bike or car next steps"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-90-days-netherlands/"],
+    "affiliateCategories": ["transport"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "check-family-or-childcare-follow-up-if-relevant",
+    "title": "Check family or childcare follow-up if relevant",
+    "phase": "longer-term-setup",
+    "weekRange": "month-3",
+    "category": "family",
+    "priority": "high",
+    "shortDescription": "Confirm school, daycare, or family admin is on track and note any next steps.",
+    "whyItMatters": "Families benefit from clear support paths once routines are active.",
+    "whatThisInvolves": [
+      "Confirm school or daycare placement and any paperwork",
+      "Note term dates and contact persons",
+      "Check if any benefits or allowances apply",
+      "Plan for holidays or school breaks"
+    ],
+    "whenToDoIt": "Month 3.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Contact school or daycare",
+      "Update any forms",
+      "Add key dates to calendar"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/moving-to-netherlands-with-kids/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "confirm-which-services-you-can-now-optimize-or-switch",
+    "title": "Confirm which services you can now optimise or switch",
+    "phase": "longer-term-setup",
+    "weekRange": "month-3",
+    "category": "admin",
+    "priority": "medium",
+    "shortDescription": "Review insurance, bank, utilities, and subscriptions; switch if you find a better fit.",
+    "whyItMatters": "After 3 months you have enough experience to make informed choices.",
+    "whatThisInvolves": [
+      "List current providers and costs",
+      "Compare with one or two alternatives",
+      "Switch if worthwhile (mind contract terms)",
+      "Set reminder for next annual review"
+    ],
+    "whenToDoIt": "Month 3.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Check contract end dates",
+      "Compare energy, insurance, mobile",
+      "Switch and cancel old where it pays off"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-90-days-netherlands/"],
+    "affiliateCategories": ["insurance", "utilities", "banking"],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "set-lightweight-renewal-reminder-system",
+    "title": "Set a lightweight renewal reminder system",
+    "phase": "longer-term-setup",
+    "weekRange": "month-3",
+    "category": "admin",
+    "priority": "medium",
+    "shortDescription": "Ensure you do not miss permit, insurance, or contract renewals.",
+    "whyItMatters": "A simple system prevents deadlines from slipping.",
+    "whatThisInvolves": [
+      "List all items that need renewal (permit, insurance, rent contract)",
+      "Add reminders 4–8 weeks before each",
+      "Review the list in your monthly admin slot",
+      "Update when something changes"
+    ],
+    "whenToDoIt": "Month 3.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Create a renewal list",
+      "Add to calendar or app",
+      "Check monthly"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-90-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  },
+  {
+    "id": "close-open-admin-loops",
+    "title": "Close open admin loops",
+    "phase": "longer-term-setup",
+    "weekRange": "month-3",
+    "category": "admin",
+    "priority": "high",
+    "shortDescription": "Complete any remaining one-off tasks so you can run on routine by the end of month 3.",
+    "whyItMatters": "If you arrived a while ago, month 3 should focus on cleanup and stability.",
+    "whatThisInvolves": [
+      "List every pending admin task",
+      "Tackle the most important 3–5",
+      "Delegate or defer the rest with a clear next step",
+      "Celebrate when the list is shorter"
+    ],
+    "whenToDoIt": "Month 3.",
+    "dependencies": [],
+    "typicalSteps": [
+      "Write full pending list",
+      "Prioritise by impact",
+      "Complete or schedule each item"
+    ],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/first-90-days-netherlands/"],
+    "affiliateCategories": [],
+    "whoToContact": [],
+    "conditions": {
+      "arrivalStage": ["arrived-a-while-ago"],
+      "household": ["solo", "partner", "kids"],
+      "startingJobSoon": ["yes", "no"],
+      "needsIntegrationAwareness": ["yes", "no"]
+    }
+  }
+]

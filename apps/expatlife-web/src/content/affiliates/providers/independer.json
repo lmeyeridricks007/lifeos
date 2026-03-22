@@ -1,0 +1,26 @@
+{
+  "id": "independer",
+  "name": "Independer",
+  "tagline": "Compare Dutch insurance and utilities",
+  "categoryIds": ["insurance"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Comparison site"],
+  "highlights": [
+    "Compare health and other insurance",
+    "Useful once you have a BSN",
+    "Dutch-language site with English options"
+  ],
+  "cta": {
+    "label": "View Independer",
+    "href": "https://www.independer.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you use this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/independer.svg",
+    "alt": "Independer logo"
+  }
+}

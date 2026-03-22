@@ -1,0 +1,378 @@
+{
+  "slug": "moving-to-netherlands-with-partner",
+  "path": "/netherlands/moving-to-netherlands-with-partner/",
+  "title": "Moving to the Netherlands With a Partner",
+  "metaTitle": "Moving to the Netherlands With a Partner: Documents, Work Rights & Planning",
+  "subtitle": "A practical overview of how relocation can work when moving together.",
+  "description": "Moving to the Netherlands with a partner? Learn about common relocation routes, documents, housing, work rights, registration, and first-step planning for couples.",
+  "breadcrumbLabel": "Moving with Partner",
+
+  "hero": {
+    "eyebrow": "Household Guide",
+    "badges": ["Relocation Scenario"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/moving-with-partner-hero.png",
+      "alt": "Couple with luggage and map by a Dutch canal, relocating to the Netherlands together"
+    }
+  },
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "how-couple-works", "label": "How moving as a couple usually works" },
+    { "id": "immigration-routes", "label": "Common immigration routes for couples" },
+    { "id": "relationship-documents", "label": "Relationship and proof documents" },
+    { "id": "can-both-work", "label": "Can both partners work?" },
+    { "id": "housing", "label": "Housing considerations for couples" },
+    { "id": "arrival-admin", "label": "Arrival administration as a couple" },
+    { "id": "first-90-days", "label": "First 90 days as a couple" },
+    { "id": "planning-checklist", "label": "Practical planning checklist" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+
+  "heroCta": {
+    "title": "Plan your move as a couple",
+    "supportingText": "Moving together often means extra documents, housing coordination, and partner-specific planning. Use the checklist and document tools to understand what to prepare before and after arrival.",
+    "primaryCtaLabel": "Generate a Moving Checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtaLabel": "Run the Document Readiness Checker",
+    "secondaryCtaHref": "/netherlands/document-readiness-checker/",
+    "supportingLinks": [
+      { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+      { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+    ]
+  },
+
+  "quickAnswers": [
+    {
+      "label": "WHO THIS GUIDE IS FOR",
+      "value": "Couples relocating together, or one partner joining the other in the Netherlands."
+    },
+    {
+      "label": "WHAT CHANGES",
+      "value": "Moving with a partner can affect documents, permit route, housing, registration timing, and income requirements."
+    },
+    {
+      "label": "BEST NEXT STEP",
+      "value": "Use the checklist and document tools to plan your move together and identify what applies to both partners."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "Moving to the Netherlands with a partner can be straightforward in some situations and more document-heavy in others. What changes most is not everyday life after arrival, but the route you use to relocate, the evidence you may need to show, and how housing and registration work for both people.",
+        "Some couples move under the same residence route from the start. Others move in stages, with one partner arriving first and the other joining later. This page explains the common planning areas couples should think through before the move, at arrival, and during the first months in the Netherlands."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      ]
+    },
+    {
+      "id": "how-couple-works",
+      "heading": "How moving as a couple usually works",
+      "body": [
+        "Couples do not all follow the same path. Some relocate at the same time; others move in stages, with one partner arriving first. Housing affects both registration and daily setup, and the immigration route may depend on which partner has the stronger basis to relocate. Budget, income, and proof documents can matter more for couples than for solo movers."
+      ],
+      "bullets": [
+        "Who moves first can affect sequencing — the first person may need to secure housing and register before the other joins.",
+        "One person's work or permit route may drive the move; the other may come as a partner or dependent.",
+        "Municipality registration and housing must usually work for both people.",
+        "Shared finances and address setup often become important early."
+      ]
+    },
+    {
+      "id": "immigration-routes",
+      "heading": "Common immigration routes for couples",
+      "body": [
+        "Couples do not all relocate through the same route. What applies usually depends on nationality, employment status, study plans, and whether one partner is already living in the Netherlands."
+      ],
+      "table": {
+        "headers": ["Scenario", "What often applies"],
+        "rows": [
+          ["One partner has a work-based permit", "Often relevant for highly skilled migrant or employer-sponsored routes. The other partner may join as a partner or dependent. Work rights may depend on the partner route."],
+          ["EU/EEA citizen with non-EU partner", "Usually a different route than employer sponsorship; often simpler than a standard non-EU work route. Still depends on relationship evidence and registration."],
+          ["Student with partner", "Common but often more limited. Partner rights and work rights may differ. Housing and financial planning can be tighter."],
+          ["Both partners moving without a job", "Usually easier for EU/EEA nationals. Often harder for non-EU nationals unless another valid route applies."],
+          ["One partner already lives in the Netherlands", "Joining later may change document requirements and timing; confirm with the IND and your municipality."]
+        ]
+      },
+      "links": [
+        { "label": "Move to the Netherlands without a job", "href": "/netherlands/move-to-netherlands-without-job/" },
+        { "label": "EU vs non-EU moving to the Netherlands", "href": "/netherlands/eu-vs-non-eu-moving-to-netherlands/" },
+        { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" }
+      ],
+      "ctaBlock": {
+        "title": "Not sure which documents your route needs?",
+        "supportingText": "Use the Document Readiness Checker to identify the document categories often relevant when moving to the Netherlands with a partner.",
+        "primaryLabel": "Run the Document Readiness Checker",
+        "primaryHref": "/netherlands/document-readiness-checker/",
+        "secondaryLabel": "Generate a Moving Checklist",
+        "secondaryHref": "/netherlands/moving/tools/moving-checklist/"
+      },
+      "services": [
+        {
+          "name": "IND",
+          "description": "Official Dutch immigration authority for partner, family, and residence permit routes. Check current requirements and processing times.",
+          "url": "https://ind.nl",
+          "indicativeCost": "Government processing fees vary by route",
+          "reason": "Official, immigration, partner route",
+          "logo": { "src": "/images/affiliates/logos/ind.svg", "alt": "IND logo" }
+        }
+      ]
+    },
+    {
+      "id": "relationship-documents",
+      "heading": "Relationship and proof documents couples often need",
+      "body": [
+        "Exact document needs depend on your route, nationality, and municipality or IND requirements. Couples often need more than just identity documents. Depending on the route, you may also need to show relationship evidence, civil status documents, or proof that both people can legally live at the same address."
+      ],
+      "bullets": [
+        "Passports or IDs for both partners",
+        "Marriage certificate or registered partnership proof, if applicable",
+        "Unmarried partner evidence, if relevant",
+        "Birth certificates in some routes or municipal situations",
+        "Address or housing confirmation",
+        "Employment or sponsor documents",
+        "Apostilles or certified translations where required"
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Rules vary by route and authority",
+        "text": "Prepare originals and scans, and confirm current requirements with the IND or your municipality before travel."
+      },
+      "links": [
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ]
+    },
+    {
+      "id": "can-both-work",
+      "heading": "Can both partners work in the Netherlands?",
+      "body": [
+        "Whether both partners can work depends on the route used to relocate. In some partner or dependent scenarios, work rights are broad. In others — especially study-related routes — work rights may be limited or tied to conditions."
+      ],
+      "bullets": [
+        "Work-based main permit plus partner route: often more flexible for the joining partner.",
+        "Student route plus partner: often more limited; confirm conditions attached to the permit.",
+        "EU/EEA citizen with partner: often different from standard non-EU sponsorship logic; free movement rules may apply.",
+        "Always confirm the current work-rights wording attached to the residence route with the IND or your employer."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" }
+      ]
+    },
+    {
+      "id": "housing",
+      "heading": "Housing considerations for couples",
+      "body": [
+        "Couples need housing where both people can usually be registered if required. Landlords may ask for stronger income evidence, and one-income households may face more pressure. Temporary housing can be useful while searching for a long-term rental. If one partner arrives first, the housing decision can affect when the other can register."
+      ],
+      "bullets": [
+        "Temporary housing vs long-term rental: plan for both if one of you arrives first.",
+        "Registration eligibility: confirm the address allows registration for both partners.",
+        "Deposit pressure for couples: some landlords require higher deposits or proof of joint income.",
+        "Income proof and affordability: two names on the lease often mean higher income expectations.",
+        "Planning for both names or shared address evidence: useful for permits and daily admin."
+      ],
+      "ctaBlock": {
+        "title": "Check housing and registration together",
+        "supportingText": "Use the Moving Checklist to map housing, registration, and early admin in the right order for both partners.",
+        "primaryLabel": "Generate a Moving Checklist",
+        "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+        "secondaryLabel": "Read Registering Your Address",
+        "secondaryHref": "/netherlands/municipality-registration-netherlands/"
+      },
+      "links": [
+        { "label": "Registering your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" }
+      ],
+      "services": [
+        {
+          "name": "HousingAnywhere",
+          "description": "Temporary housing platform often used by internationals before securing long-term accommodation. Useful for couples during the first weeks.",
+          "url": "https://housinganywhere.com/",
+          "indicativeCost": "Listing prices vary by city",
+          "reason": "Temporary housing, registration planning, expats",
+          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
+        }
+      ]
+    },
+    {
+      "id": "arrival-admin",
+      "heading": "Arrival administration as a couple",
+      "body": [
+        "Once both partners are in the Netherlands and have a usable address, many of the practical steps start to look similar to solo relocation — but now for two people."
+      ],
+      "bullets": [
+        "Register address with the municipality",
+        "Receive BSN numbers if applicable",
+        "Open banking arrangements",
+        "Arrange health insurance awareness or activation",
+        "Confirm mobile connectivity and daily setup"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Timing can differ",
+        "text": "Some couples complete these steps together; others do them in stages depending on arrival date, permit timing, or housing status."
+      },
+      "links": [
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" },
+        { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" }
+      ]
+    },
+    {
+      "id": "first-90-days",
+      "heading": "The first 90 days when moving as a couple",
+      "body": [
+        "A simple timeline can help both partners stay aligned on what usually happens after arrival."
+      ],
+      "bullets": [
+        "First weeks: address registration, BSN, housing confirmation, banking basics.",
+        "First month: health insurance decisions, mobile plans, recurring payments, work or onboarding sequencing.",
+        "First 90 days: stable housing decisions, shared budgeting, doctor registration or local services, document organization, long-term routines."
+      ],
+      "ctaBlock": {
+        "title": "Plan your first months together",
+        "supportingText": "Use the First 90 Days Planner to see what typically happens after arrival and keep both partners aligned on admin steps.",
+        "primaryLabel": "Plan Your First 90 Days",
+        "primaryHref": "/netherlands/moving/tools/first-90-days/"
+      },
+      "links": [
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      ]
+    },
+    {
+      "id": "planning-checklist",
+      "heading": "Practical planning checklist for couples",
+      "body": [
+        "Use the points below as a shared checklist so both partners know what to prepare and in what order."
+      ],
+      "bullets": [
+        "Confirm which relocation route applies to both partners",
+        "Gather identity and relationship documents early",
+        "Understand whether both people can work under the route",
+        "Plan housing that supports registration",
+        "Map who arrives first and when",
+        "Prepare for municipality registration and BSN timing",
+        "Organize finances and first-month setup",
+        "Keep digital copies of the core document pack"
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "Stay aligned",
+        "text": "A small shared checklist reduces confusion, especially when one partner is handling more of the move logistics."
+      },
+      "links": [
+        { "label": "Moving checklist for the Netherlands", "href": "/netherlands/moving-checklist-netherlands/" }
+      ]
+    }
+  ],
+
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "Build a practical relocation checklist covering documents, housing, registration, and early admin for both partners.",
+      "ctaLabel": "Open tool"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Run the Document Readiness Checker",
+      "href": "/netherlands/document-readiness-checker/",
+      "description": "See which document categories often matter when couples relocate together or in stages.",
+      "ctaLabel": "Open tool"
+    },
+    {
+      "key": "first-90-days",
+      "label": "Plan Your First 90 Days",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "description": "Map what usually happens after arrival so both partners can sequence registration, banking, and daily setup.",
+      "ctaLabel": "Open tool"
+    }
+  ],
+
+  "toolsCtaBand": {
+    "title": "Turn this into a real move plan",
+    "body": "Generate a practical checklist for both partners, then use the 90-day planner to organize what happens after arrival.",
+    "primaryLabel": "Generate a Moving Checklist",
+    "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryLabel": "Plan Your First 90 Days",
+    "secondaryHref": "/netherlands/moving/tools/first-90-days/"
+  },
+
+  "sidebarStartLinks": [
+    { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+    { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+    { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+    { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+  ],
+
+  "internalLinks": {
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    "related": [
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Moving to the Netherlands With Family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Registering Your Address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "BSN Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Move to the Netherlands Without a Job", "href": "/netherlands/move-to-netherlands-without-job/" },
+      { "label": "EU vs Non-EU Moving to the Netherlands", "href": "/netherlands/eu-vs-non-eu-moving-to-netherlands/" }
+    ]
+  },
+
+  "resourcesAffiliatePlacementId": "resources_end",
+  "servicesIntro": "Services often used by couples during the move: immigration information, temporary housing, banking, transfers, insurance comparison, and connectivity.",
+  "servicesSectionTitle": "Useful services for couple relocation",
+
+  "faq": [
+    {
+      "q": "Can unmarried partners move to the Netherlands together?",
+      "a": "Yes, in many cases. Unmarried partners often need to show proof of a durable relationship (e.g. cohabitation, shared finances, duration). Exact requirements depend on the residence route and IND rules. Confirm current criteria with the IND or an immigration adviser."
+    },
+    {
+      "q": "Does my partner need a separate residence permit?",
+      "a": "Often yes. Even when one partner is the main permit holder, the other usually has their own residence document or status as a partner or dependent. The type and conditions depend on your route. Check the IND website or your permit wording for your situation."
+    },
+    {
+      "q": "Can both partners work after moving?",
+      "a": "It depends on the route. Work-based partner or dependent permits often allow work without a separate work permit. Student-related or some other routes may limit work rights. Always confirm the conditions on your specific residence document."
+    },
+    {
+      "q": "Do both partners need to register at the municipality?",
+      "a": "Usually yes. Everyone living in the Netherlands for more than a short stay typically must register at the address where they live. Both partners will usually receive their own BSN. Confirm with your municipality."
+    },
+    {
+      "q": "What documents prove a relationship?",
+      "a": "Common evidence includes marriage or registered partnership certificates, proof of cohabitation (joint lease, utility bills), shared bank accounts, or other durable-relationship proof. Requirements vary by route; the IND and your municipality can specify what they accept."
+    },
+    {
+      "q": "What if one partner moves first?",
+      "a": "The first partner often secures housing and registers; the other joins later under family reunion or partner rules. You will typically need to show relationship proof, housing, and sometimes income. Confirm timing and document requirements with the IND and your municipality."
+    },
+    {
+      "q": "Can couples register at the same address in the Netherlands?",
+      "a": "Yes. Many couples register at the same address when they share housing. The exact process can depend on the municipality and whether the address allows multiple registrations."
+    },
+    {
+      "q": "Do both partners receive a BSN?",
+      "a": "Yes. Each person usually receives their own BSN after registering with the municipality."
+    }
+  ],
+
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

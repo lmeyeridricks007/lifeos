@@ -1,0 +1,341 @@
+{
+  "slug": "municipality-registration-netherlands",
+  "path": "/netherlands/municipality-registration-netherlands/",
+  "title": "Municipality Registration in the Netherlands",
+  "metaTitle": "Municipality Registration Netherlands | BRP Registration & BSN Guide",
+  "subtitle": "How to register with your local municipality, receive your BSN, and complete one of the most important steps after moving to the Netherlands.",
+  "description": "Learn how to register with a municipality in the Netherlands, including required documents, deadlines, BRP registration, and how to receive your BSN.",
+  "breadcrumbLabel": "Municipality Registration",
+
+  "hero": {
+    "eyebrow": "ARRIVAL ADMIN",
+    "badges": ["Guide", "Updated regularly"],
+    "image": {
+      "src": "/images/heroes/municipality-registration-netherlands.png",
+      "alt": "An expat woman reviewing municipality registration paperwork at a wooden desk with a laptop showing a registration checklist, stacks of documents labeled address registration, civil documents, and residence permit, and a passport. The desk overlooks a Dutch canal with traditional houses and a bridge."
+    }
+  },
+
+  "heroCta": {
+    "title": "Plan your first steps after arrival",
+    "supportingText": "Use the First 90 Days Planner and Moving Checklist to map registration, BSN, banking, and housing setup.",
+    "primaryCtaLabel": "Plan Your First 90 Days",
+    "primaryCtaHref": "/netherlands/moving/tools/first-90-days/",
+    "secondaryCtaLabel": "Generate Moving Checklist",
+    "secondaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "supportingLinks": [
+      { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
+      { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" }
+    ]
+  },
+
+  "tocItems": [
+    { "id": "intro", "label": "Introduction" },
+    { "id": "why-matters", "label": "Why municipality registration matters" },
+    { "id": "who-must-register", "label": "Who must register" },
+    { "id": "when-to-register", "label": "When to register" },
+    { "id": "how-process-works", "label": "How the registration process works" },
+    { "id": "brp-bsn", "label": "BRP and BSN explained" },
+    { "id": "documents-required", "label": "Documents required" },
+    { "id": "municipality-differences", "label": "Municipality differences" },
+    { "id": "special-cases", "label": "Special cases" },
+    { "id": "costs-timeline", "label": "Costs and timeline" },
+    { "id": "example-scenarios", "label": "Example scenarios" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "useful-services", "label": "Useful services" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" },
+    { "id": "official-sources", "label": "Official sources" }
+  ],
+
+  "quickAnswers": [
+    {
+      "label": "Who must register",
+      "value": "People living in the Netherlands longer than 4 months."
+    },
+    {
+      "label": "When to register",
+      "value": "Within 5 days of arrival."
+    },
+    {
+      "label": "Where",
+      "value": "At your local municipality (gemeente)."
+    },
+    {
+      "label": "What you receive",
+      "value": "A BSN number and BRP registration."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "intro",
+      "heading": "Introduction",
+      "body": [
+        "Registering with your municipality (gemeente) is one of the first administrative steps after moving to the Netherlands.",
+        "If you plan to stay longer than four months, you must register your address with the municipality where you live.",
+        "This registration places you in the national BRP database, creates or confirms your BSN, and enables access to many government and financial services."
+      ]
+    },
+    {
+      "id": "why-matters",
+      "heading": "Why municipality registration matters",
+      "body": [
+        "Without registering you cannot easily open a bank account, receive salary, take out Dutch health insurance, apply for DigiD, or access many government services.",
+        "Registration is the gateway to your BSN and to most practical setup steps after arrival."
+      ],
+      "bullets": [
+        "Open a bank account",
+        "Receive salary",
+        "Take out Dutch health insurance",
+        "Apply for DigiD",
+        "Access many government services"
+      ]
+    },
+    {
+      "id": "who-must-register",
+      "heading": "Who must register",
+      "body": [
+        "Registration is required if you moved to the Netherlands from abroad, you will stay longer than 4 months, and you have an address in a municipality."
+      ],
+      "bullets": [
+        "Worker relocating for a job",
+        "Student enrolling at a university",
+        "Family joining a partner",
+        "Entrepreneur moving business operations"
+      ]
+    },
+    {
+      "id": "when-to-register",
+      "heading": "When to register",
+      "body": [
+        "You must normally register within 5 days of arrival. However, municipalities may require appointments, and appointments may be booked weeks in advance.",
+        "Book the appointment before arriving if possible."
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "Practical advice",
+        "text": "As soon as you know your address, check your municipality's website for how to book an appointment. In busy cities, slots can fill up quickly."
+      }
+    },
+    {
+      "id": "how-process-works",
+      "heading": "How the registration process works",
+      "body": [
+        "The process typically follows these steps. The municipality may complete your registration the same day, or it may take a few days depending on the municipality."
+      ],
+      "steps": [
+        "Book an appointment at your municipality",
+        "Bring the required documents",
+        "Attend in person",
+        "The municipality registers you in the BRP",
+        "You receive your BSN"
+      ]
+    },
+    {
+      "id": "brp-bsn",
+      "heading": "BRP and BSN explained",
+      "body": [
+        "BRP (Basisregistratie Personen) is the Dutch Personal Records Database containing resident information.",
+        "Your BSN (Burgerservicenummer, Citizen Service Number) is linked to your BRP record. When you register, you receive a BSN if you do not already have one."
+      ],
+      "bullets": [
+        "Taxes — the tax authority identifies you with your BSN",
+        "Healthcare — insurers and care providers use it",
+        "Banking — opening an account typically requires a BSN",
+        "Employment — employers need it for payroll",
+        "DigiD — activation requires a BSN"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Short stays (less than 4 months)",
+        "text": "If you are staying less than 4 months, you may instead register in the RNI (Non-Resident Records Database) to obtain a BSN.",
+        "href": "https://business.gov.nl/regulations/citizen-service-number/",
+        "linkLabel": "business.gov.nl – Citizen service number"
+      }
+    },
+    {
+      "id": "documents-required",
+      "heading": "Documents required",
+      "body": [
+        "Requirements vary by municipality, immigration status, and household. Typical documents include a valid passport or ID, proof of address (e.g. rental contract), birth certificate, marriage certificate if applicable, and for non-EU nationals a residence permit or visa.",
+        "Some documents may require legalisation, apostille, or certified translation. Check your municipality and the IND for the latest requirements."
+      ],
+      "bullets": [
+        "Valid passport or identity document",
+        "Proof of address (rental contract or housing confirmation)",
+        "Birth certificate (in some situations)",
+        "Marriage certificate (if applicable)",
+        "Residence permit or visa (non-EU nationals)"
+      ],
+      "links": [
+        { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Document translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" },
+        { "label": "Document legalisation and apostille", "href": "/netherlands/document-legalization-netherlands/" }
+      ],
+      "internalCta": {
+        "label": "Check document readiness",
+        "href": "/netherlands/document-readiness-checker/"
+      }
+    },
+    {
+      "id": "municipality-differences",
+      "heading": "Municipality differences",
+      "body": [
+        "Rules and processes can vary slightly between municipalities. Appointment requirements, waiting times, and document checks may differ."
+      ],
+      "bullets": [
+        "Amsterdam — often high demand; book well in advance",
+        "Rotterdam — check online booking and required documents",
+        "Utrecht — similar process; confirm local requirements",
+        "Eindhoven — appointment system; document list on gemeente site"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Confirm with your municipality",
+        "text": "Always check your gemeente's official website for the latest appointment booking, document list, and opening hours."
+      }
+    },
+    {
+      "id": "special-cases",
+      "heading": "Special cases",
+      "body": [
+        "Different situations can affect how and when you register."
+      ],
+      "bullets": [
+        "Registering a partner or family — each person may need to be registered; documents for each family member",
+        "Registering children — birth certificates and possibly other documents; check municipality",
+        "Registering without permanent address (briefadres) — some municipalities allow a correspondence address in specific cases",
+        "Re-registering if you previously lived in the Netherlands — you may already have a BSN; bring previous documents",
+        "Short-stay registration (RNI) — if staying less than 4 months, register in the RNI to obtain a BSN"
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
+        { "label": "IND – Living in the Netherlands", "href": "https://ind.nl/en/living-in-the-netherlands-with-a-residence-permit/living-in-the-netherlands" }
+      ]
+    },
+    {
+      "id": "costs-timeline",
+      "heading": "Costs and timeline",
+      "body": [
+        "Municipality registration itself is generally free. Costs may arise from translations, document legalisation, transport, or delays if you need to rebook."
+      ],
+      "table": {
+        "headers": ["Typical preparation costs", "Indicative range"],
+        "rows": [
+          ["Document translation", "€40–€120"],
+          ["Apostille", "€20–€50"],
+          ["Travel (e.g. to municipality)", "€10–€50"]
+        ]
+      },
+      "bullets": [
+        "Registration at the municipality — usually no fee",
+        "Processing — same-day or within a few days depending on municipality"
+      ]
+    },
+    {
+      "id": "official-sources",
+      "heading": "Official sources",
+      "body": [
+        "For the latest rules and procedures, always refer to official government sources."
+      ],
+      "links": [
+        { "label": "Government.nl – What to arrange when moving to the Netherlands", "href": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/what-do-i-need-to-arrange-if-i%E2%80%99m-moving-to-the-netherlands" },
+        { "label": "Netherlands Worldwide – When to register", "href": "https://www.netherlandsworldwide.nl/personal-records-database-brp/when-register" },
+        { "label": "Government.nl – Personal records database (BRP)", "href": "https://www.government.nl/topics/personal-data/personal-records-database-brp" },
+        { "label": "Netherlands Worldwide – What is a BSN?", "href": "https://www.netherlandsworldwide.nl/bsn/what-is-citizen-service-number" }
+      ]
+    }
+  ],
+
+  "toolCtas": [
+    { "key": "document-readiness", "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/", "description": "Check which documents you may need for registration.", "ctaLabel": "Open tool →" },
+    { "key": "first-90-days", "label": "First 90 Days Planner", "href": "/netherlands/moving/tools/first-90-days/", "description": "Map your first weeks and months after arrival.", "ctaLabel": "Open tool →" },
+    { "key": "visa-timeline", "label": "Visa Timeline Estimator", "href": "/netherlands/visa-timeline-estimator/", "description": "Estimate visa and permit timelines.", "ctaLabel": "Open tool →" },
+    { "key": "visa-cost", "label": "Visa Cost Calculator", "href": "/netherlands/visa-cost-calculator/", "description": "Plan visa and relocation costs.", "ctaLabel": "Open tool →" },
+    { "key": "relocation-cost", "label": "Relocation Cost Estimator", "href": "/netherlands/moving/tools/relocation-cost-estimator/", "description": "Estimate total relocation costs.", "ctaLabel": "Open tool →" },
+    { "key": "moving-checklist", "label": "Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/", "description": "Generate a personalised moving checklist.", "ctaLabel": "Open tool →" }
+  ],
+
+  "exampleScenarios": [
+    {
+      "title": "Software engineer moving to Amsterdam for work",
+      "summary": "Secure housing, book a municipality appointment as soon as you have an address, bring passport, rental contract, and any residence permit. Receive BSN at or shortly after the appointment, then open a bank account and arrange health insurance.",
+      "href": "/netherlands/moving/tools/first-90-days/"
+    },
+    {
+      "title": "Student registering in Groningen",
+      "summary": "Confirm with your university and municipality: proof of enrolment and address (e.g. rental contract). Book the appointment early; student housing often allows registration. BSN is needed for part-time work, bank account, and insurance.",
+      "href": "/netherlands/moving/tools/first-90-days/"
+    },
+    {
+      "title": "Family registering in Rotterdam",
+      "summary": "Each family member typically needs to register; bring passports, birth certificates, marriage certificate if applicable, proof of address, and residence permits. Appointment availability may vary; book for the whole household.",
+      "href": "/netherlands/moving-to-netherlands-with-family/"
+    },
+    {
+      "title": "Freelancer registering while starting a business",
+      "summary": "Register your address first to get your BSN; you will need it for KVK registration, tax number, and banking. Bring proof of address and identity; if you are from outside the EU, bring your residence permit or visa documents.",
+      "href": "/netherlands/moving/tools/first-90-days/"
+    }
+  ],
+
+  "scenariosSectionTitle": "Example scenarios",
+  "scenariosSectionIntro": "How municipality registration fits into different relocation situations.",
+
+  "internalLinks": {
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    "related": [
+      { "label": "After arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
+      { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+      { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" }
+    ]
+  },
+
+  "howToSteps": [
+    { "name": "Book an appointment at your municipality", "text": "Contact or use the online system of the gemeente where you live to book a registration appointment." },
+    { "name": "Gather required documents", "text": "Prepare valid passport or ID, proof of address, and any other documents your municipality requires (e.g. birth certificate, residence permit)." },
+    { "name": "Attend the appointment in person", "text": "Go to the municipal office with originals and any requested copies. The municipality will register you in the BRP." },
+    { "name": "Receive your BSN", "text": "You will receive or be told your BSN at or shortly after registration if you do not already have one." }
+  ],
+
+  "faq": [
+    {
+      "q": "How soon must I register?",
+      "a": "You must normally register within 5 days of arrival. In practice you need an appointment, so book as soon as you know your address—ideally before you arrive."
+    },
+    {
+      "q": "What happens if I miss the deadline?",
+      "a": "You should still register as soon as possible. Late registration can in some cases lead to fines or complications. Contact your municipality if you have already missed the 5-day window."
+    },
+    {
+      "q": "Do I get my BSN immediately?",
+      "a": "In many cases yes—at the appointment or shortly after. Some municipalities issue it on the spot; others send it by post or make it available online within a few days."
+    },
+    {
+      "q": "Can I register without an address?",
+      "a": "You need an address in the municipality to register in the BRP. In specific situations (e.g. briefadres) some municipalities allow a correspondence address; check with your gemeente. For short stays under 4 months, you can use the RNI to get a BSN."
+    },
+    {
+      "q": "Can my partner register at the same appointment?",
+      "a": "Many municipalities allow household members to be registered in one or linked appointments. Check when booking whether you can register together and what documents each person needs."
+    },
+    {
+      "q": "What if I already have a BSN?",
+      "a": "If you previously lived in the Netherlands and have a BSN, you still need to register your new address when you move back. Your existing BSN will be linked to your new registration."
+    },
+    {
+      "q": "What if I stay less than 4 months?",
+      "a": "If you are staying less than 4 months, you do not register in the BRP but can register in the RNI (Non-Resident Records Database) to obtain a BSN. See business.gov.nl and Netherlands Worldwide for RNI details."
+    }
+  ],
+
+  "resourcesAffiliatePlacementId": "resources_end",
+  "servicesSectionTitle": "Useful services for new arrivals",
+  "servicesIntro": "These services are commonly used after registration for banking, insurance, housing, and daily setup. We may earn a commission if you use certain links, at no extra cost to you.",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

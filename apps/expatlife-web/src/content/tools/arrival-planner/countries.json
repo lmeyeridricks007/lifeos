@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "south-africa",
+    "label": "South Africa",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "South African Department of Home Affairs",
+    "countryDocumentSourceWebsite": "https://www.dha.gov.za",
+    "countryDocumentSourceSummary": "Common source for passports and civil records.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/south-africa/",
+    "typicalArrivalNotes": [
+      "Long-haul movers often benefit from stronger pre-arrival planning.",
+      "Civil record replacement and legalisation review should not be left to the last minute."
+    ]
+  },
+  {
+    "slug": "india",
+    "label": "India",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "Ministry of External Affairs / local authorities",
+    "countryDocumentSourceWebsite": "https://www.mea.gov.in",
+    "countryDocumentSourceSummary": "Common source for passports, attestation and document services.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/india/",
+    "typicalArrivalNotes": [
+      "Document attestation and legalisation often take longer; plan early.",
+      "Education and civil records may need extra processing for use in the Netherlands."
+    ]
+  },
+  {
+    "slug": "united-states",
+    "label": "United States",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "State and federal authorities",
+    "countryDocumentSourceWebsite": "https://travel.state.gov",
+    "countryDocumentSourceSummary": "Passports and apostille services vary by state.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/united-states/",
+    "typicalArrivalNotes": [
+      "Apostille is often used for US documents; check state-level requirements.",
+      "Long-distance moves benefit from advance planning for shipping and first-week setup."
+    ]
+  },
+  {
+    "slug": "united-kingdom",
+    "label": "United Kingdom",
+    "regionGroup": "non-eu",
+    "distanceCategory": "medium",
+    "countryDocumentSourceName": "UK Government – certificates and legalisation",
+    "countryDocumentSourceWebsite": "https://www.gov.uk",
+    "countryDocumentSourceSummary": "Official guidance on birth, marriage and legalisation services.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/united-kingdom/",
+    "typicalArrivalNotes": [
+      "Post-Brexit document validation may differ from EU routes; check current requirements.",
+      "Driving licence exchange rules for UK licence holders are set by RDW."
+    ]
+  },
+  {
+    "slug": "canada",
+    "label": "Canada",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "Provincial and federal authorities",
+    "countryDocumentSourceWebsite": "https://www.canada.ca",
+    "countryDocumentSourceSummary": "Civil records and authentication services vary by province.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/canada/",
+    "typicalArrivalNotes": [
+      "Document authentication for use abroad often involves provincial and federal steps.",
+      "Long-haul logistics and temporary housing planning are often useful."
+    ]
+  },
+  {
+    "slug": "australia",
+    "label": "Australia",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "State and federal authorities",
+    "countryDocumentSourceWebsite": "https://www.dfat.gov.au",
+    "countryDocumentSourceSummary": "Passports, birth certificates and apostille/authentication services.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/australia/",
+    "typicalArrivalNotes": [
+      "Document legalisation for the Netherlands may involve DFAT authentication.",
+      "Long-distance moves often need extra buffer for shipping and first-month admin."
+    ]
+  },
+  {
+    "slug": "germany",
+    "label": "Germany",
+    "regionGroup": "eu-eea-swiss",
+    "distanceCategory": "near",
+    "countryDocumentSourceName": "Standesamt / local and federal authorities",
+    "countryDocumentSourceWebsite": "https://www.germany.info",
+    "countryDocumentSourceSummary": "Civil records and official documents from German authorities.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/germany/",
+    "typicalArrivalNotes": [
+      "EU/EEA moves often have simpler document and driving licence pathways.",
+      "Registration and BSN sequencing still matter for a smooth start."
+    ]
+  },
+  {
+    "slug": "france",
+    "label": "France",
+    "regionGroup": "eu-eea-swiss",
+    "distanceCategory": "near",
+    "countryDocumentSourceName": "Mairie / French civil and consular services",
+    "countryDocumentSourceWebsite": "https://www.service-public.fr",
+    "countryDocumentSourceSummary": "Civil records and official documents from French authorities.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/france/",
+    "typicalArrivalNotes": [
+      "EU moves typically have lower document friction; focus on registration and first-week sequencing.",
+      "Driving licence use and exchange are covered by RDW and EU rules."
+    ]
+  },
+  {
+    "slug": "spain",
+    "label": "Spain",
+    "regionGroup": "eu-eea-swiss",
+    "distanceCategory": "near",
+    "countryDocumentSourceName": "Registro Civil / Spanish authorities",
+    "countryDocumentSourceWebsite": "https://www.interno.gob.es",
+    "countryDocumentSourceSummary": "Civil records and official documents from Spanish authorities.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/spain/",
+    "typicalArrivalNotes": [
+      "EU/EEA document and mobility pathways usually apply.",
+      "Municipality registration and BSN remain the main early priorities."
+    ]
+  },
+  {
+    "slug": "brazil",
+    "label": "Brazil",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "Cartórios and federal authorities",
+    "countryDocumentSourceWebsite": "https://www.gov.br",
+    "countryDocumentSourceSummary": "Civil records and document legalisation via cartórios and consulates.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/brazil/",
+    "typicalArrivalNotes": [
+      "Document legalisation for use in the Netherlands can take time; start early.",
+      "Long-haul moves often benefit from shipping and temporary housing planning."
+    ]
+  }
+]

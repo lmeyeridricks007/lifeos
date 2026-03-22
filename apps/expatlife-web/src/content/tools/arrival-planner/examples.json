@@ -1,0 +1,132 @@
+[
+  {
+    "id": "amsterdam-no-address",
+    "title": "Arriving in Amsterdam without an address yet",
+    "inputs": {
+      "from": "south-africa",
+      "addressStatus": "no",
+      "household": "solo",
+      "needBankingSoon": "yes"
+    },
+    "summary": "Prioritise tracking address-dependent tasks, short-term housing plan, and banking prep once you have an address.",
+    "firstWeekHighlights": [
+      "Track which tasks must wait for a stable address",
+      "Confirm short-term housing plan",
+      "Prepare registration documents for when you have an address",
+      "Set up mobile connectivity"
+    ],
+    "firstMonthHighlights": [
+      "Complete registration and receive BSN once you have an address",
+      "Open a Dutch bank account",
+      "Arrange health insurance",
+      "Track admin follow-ups weekly"
+    ],
+    "ctaLabel": "Use this scenario"
+  },
+  {
+    "id": "partner-temporary-housing",
+    "title": "Arriving with a partner and temporary housing",
+    "inputs": {
+      "from": "india",
+      "addressStatus": "soon",
+      "household": "partner",
+      "needBankingSoon": "yes"
+    },
+    "summary": "Focus on coordinated admin ownership, registration readiness, and banking once you have an address.",
+    "firstWeekHighlights": [
+      "Confirm move-in date and mail access",
+      "Align household admin ownership",
+      "Prepare documents for municipality registration",
+      "Book or prepare municipality registration as soon as your address is active",
+      "Complete registration and receive BSN",
+      "Open a Dutch bank account"
+    ],
+    "firstMonthHighlights": [
+      "Set up recurring payments",
+      "Apply for DigiD when eligible",
+      "Confirm next housing decision date if temporary",
+      "Track admin follow-ups weekly"
+    ],
+    "ctaLabel": "Use this scenario"
+  },
+  {
+    "id": "family-banking-soon",
+    "title": "Family arriving and needing banking soon",
+    "inputs": {
+      "from": "india",
+      "addressStatus": "yes",
+      "household": "kids",
+      "needBankingSoon": "yes"
+    },
+    "summary": "With housing in place, prioritise registration, BSN, banking and family-related admin.",
+    "firstWeekHighlights": [
+      "Prepare registration documents for the whole household",
+      "Complete municipality registration and receive BSN",
+      "Open a Dutch bank account",
+      "Confirm payroll readiness with employer",
+      "Review school or childcare follow-up",
+      "Align household admin ownership"
+    ],
+    "firstMonthHighlights": [
+      "Arrange health insurance",
+      "Review childcare, school and family registration follow-up",
+      "Set up recurring payments",
+      "Register with a GP",
+      "Track admin follow-ups weekly"
+    ],
+    "ctaLabel": "Use this scenario"
+  },
+  {
+    "id": "solo-catching-up",
+    "title": "Solo expat already in the Netherlands and catching up on admin",
+    "inputs": {
+      "from": "south-africa",
+      "addressStatus": "soon",
+      "household": "solo",
+      "needBankingSoon": "no"
+    },
+    "summary": "Use a practical catch-up sequence so registration and follow-ups become manageable week by week.",
+    "firstWeekHighlights": [
+      "Confirm move-in date and mail access",
+      "Prepare documents for municipality registration",
+      "Book or complete municipality registration",
+      "Receive BSN and note which steps depend on it",
+      "Set up mobile connectivity"
+    ],
+    "firstMonthHighlights": [
+      "Open a Dutch bank account",
+      "Arrange health insurance",
+      "Apply for DigiD when eligible",
+      "Set up recurring payments",
+      "Track admin follow-ups weekly"
+    ],
+    "ctaLabel": "Use this scenario"
+  },
+  {
+    "id": "regional-eu-with-housing",
+    "title": "Regional EU mover arriving with housing already arranged",
+    "inputs": {
+      "from": "germany",
+      "addressStatus": "yes",
+      "household": "partner",
+      "needBankingSoon": "no"
+    },
+    "summary": "With housing arranged, focus on registration, BSN and first-month stabilisation.",
+    "firstWeekHighlights": [
+      "Prepare documents for municipality registration",
+      "Complete municipality registration and receive BSN",
+      "Confirm registration and BSN order",
+      "Open a Dutch bank account",
+      "Set up mobile connectivity",
+      "Align household admin ownership"
+    ],
+    "firstMonthHighlights": [
+      "Arrange health insurance",
+      "Apply for DigiD when eligible",
+      "Set up recurring payments",
+      "Register with a GP",
+      "Track admin follow-ups weekly"
+    ],
+    "ctaLabel": "Use this scenario"
+  }
+]

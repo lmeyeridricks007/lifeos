@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "title": "Relocation Cost Estimator",
+    "subtitle": "Estimate how much it may cost to move to the Netherlands based on your household, visa route, housing choice, moving method, pets, and early setup costs.",
+    "primaryCtaLabel": "Start Estimating Your Move",
+    "secondaryCtaLabel": null,
+    "secondaryCtaHref": null,
+    "introBullets": [
+      "Estimate one-time relocation costs",
+      "Estimate monthly living costs",
+      "See a first-year cost outlook",
+      "Download your results as PDF"
+    ],
+    "image": {
+      "src": "/images/tools/expatlife-netherlands-budget-planning.png",
+      "alt": "A person planning the estimated costs of moving to the Netherlands, writing in a notebook with 'Relocation Budget' visible, surrounded by a laptop, calculator, and cost category notes, overlooking a scenic Dutch canal city."
+    },
+    "imageFallback": {
+      "src": "/images/tools/expatlife-netherlands-budget-planning.png",
+      "alt": "A person planning the estimated costs of moving to the Netherlands, writing in a notebook with 'Relocation Budget' visible, surrounded by a laptop, calculator, and cost category notes, overlooking a scenic Dutch canal city."
+    },
+    "badges": ["Tool", "Personalized estimate"],
+    "supportingLinks": [
+      { "label": "Cost of Moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" },
+      { "label": "Documents Needed to Move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+    ]
+  },
+  "seo": {
+    "introParagraphs": [
+      "This relocation cost calculator estimates both one-time moving costs and ongoing monthly living expenses when relocating to the Netherlands. Use it to get a planning range for your move based on household size, city choice, visa route, pets, moving method, housing, and setup costs.",
+      "Results are personalized and indicative only—actual costs depend on provider pricing, season, and your exact choices. You can download your estimate as a PDF for planning."
+    ]
+  },
+  "toolPanel": {
+    "whatYouGetTitle": "What you'll get",
+    "whatYouGetItems": [
+      "One-time relocation cost range",
+      "Monthly living cost range",
+      "First-year total estimate",
+      "Detailed breakdown by category",
+      "PDF download of your budget"
+    ]
+  },
+  "disclosure": "This calculator provides planning estimates based on maintained reference data and common relocation scenarios. Actual costs depend on route, provider pricing, household choices, city, and timing. It is not a legal or financial guarantee.",
+  "ctaBlock": {
+    "title": "Turn this estimate into a practical move plan",
+    "text": "Use the Moving Checklist and First 90 Days planner to organize your documents, housing, arrival admin, and ongoing setup.",
+    "checklistHref": "/netherlands/moving/tools/moving-checklist/",
+    "checklistLabel": "Generate a Moving Checklist",
+    "first90Href": "/netherlands/moving/tools/first-90-days/",
+    "first90Label": "Plan Your First 90 Days"
+  },
+  "pdfButtonLabel": "Download My Relocation Budget (PDF)",
+  "recommendationsIntro": "Based on your choices, consider the following when planning your budget:",
+  "explanatorySections": [
+    {
+      "id": "what-this-tool-does",
+      "title": "What this tool does",
+      "body": [
+        "Calculates estimated relocation, setup, and living costs for moving to the Netherlands. You answer questions about household, visa route, moving method, housing, and setup preferences to get a personalized range."
+      ]
+    },
+    {
+      "id": "what-affects-result",
+      "title": "What affects the result",
+      "body": [
+        "Household size, visa route, pets, housing type and city, flights and shipping, temporary housing duration, and first-month setup choices (furniture, bike, utilities, insurance, etc.) all influence the estimate."
+      ]
+    },
+    {
+      "id": "best-next-step",
+      "title": "Best next step",
+      "body": [
+        "Complete the calculator, review your budget, and download a PDF version for planning. Then use the Moving Checklist and First 90 Days tools to turn the estimate into actionable steps."
+      ]
+    }
+  ]
+}

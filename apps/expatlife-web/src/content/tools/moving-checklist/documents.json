@@ -1,0 +1,75 @@
+{
+  "categories": ["identity", "employment", "housing", "household", "children", "education", "travel"],
+  "items": [
+    {
+      "id": "passport",
+      "label": "Passport",
+      "category": "identity",
+      "conditions": {},
+      "whyItMatters": "Often needed across registrations and provider setup."
+    },
+    {
+      "id": "birth-certificate",
+      "label": "Birth certificate",
+      "category": "identity",
+      "conditions": { "household": ["partner", "kids"] },
+      "whyItMatters": "Required for some family registrations."
+    },
+    {
+      "id": "marriage-certificate",
+      "label": "Marriage or partnership certificate",
+      "category": "household",
+      "conditions": { "household": ["partner"] },
+      "whyItMatters": "May be needed for joint registration or benefits."
+    },
+    {
+      "id": "employment-contract",
+      "label": "Employment contract or offer letter",
+      "category": "employment",
+      "conditions": { "employment": ["job-offer", "employed"] },
+      "whyItMatters": "Often required for permit and bank account."
+    },
+    {
+      "id": "proof-of-address",
+      "label": "Proof of address (rental contract or employer letter)",
+      "category": "housing",
+      "conditions": {},
+      "whyItMatters": "Needed for municipal registration."
+    },
+    {
+      "id": "cv",
+      "label": "CV or resume",
+      "category": "employment",
+      "conditions": { "employment": ["searching"] },
+      "whyItMatters": "Keep it updated for job applications."
+    },
+    {
+      "id": "diplomas",
+      "label": "Diplomas or professional qualifications",
+      "category": "education",
+      "conditions": {},
+      "whyItMatters": "Sometimes requested by employers or for recognition."
+    },
+    {
+      "id": "children-documents",
+      "label": "Children's IDs and birth certificates",
+      "category": "children",
+      "conditions": { "household": ["kids"] },
+      "whyItMatters": "Needed for school and family registration."
+    },
+    {
+      "id": "previous-address-proof",
+      "label": "Proof of previous address (if required by municipality)",
+      "category": "housing",
+      "conditions": {},
+      "whyItMatters": "Some municipalities ask for address history."
+    },
+    {
+      "id": "travel-insurance",
+      "label": "Travel or relocation insurance (before arrival)",
+      "category": "travel",
+      "conditions": { "stage": ["before-move", "arriving-soon"] },
+      "whyItMatters": "Coverage during the move and first days."
+    }
+  ]
+}

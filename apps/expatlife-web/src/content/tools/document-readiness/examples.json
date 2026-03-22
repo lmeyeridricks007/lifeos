@@ -1,0 +1,92 @@
+[
+  {
+    "id": "work-job-offer",
+    "title": "Moving for work with a job offer",
+    "inputs": {
+      "scenario": "work",
+      "hasPassport": "yes",
+      "hasCivilCertificates": "no",
+      "hasProofOfAddress": "soon",
+      "hasEmploymentDocs": "yes",
+      "from": "south-africa"
+    },
+    "summary": "Work movers often prioritize identity, employment, and housing records first.",
+    "topMissingDocuments": [
+      "Address confirmation",
+      "Work authorization documentation awareness",
+      "Employer contact details"
+    ]
+  },
+  {
+    "id": "partner-route",
+    "title": "Joining a partner in the Netherlands",
+    "inputs": {
+      "scenario": "partner",
+      "hasPassport": "yes",
+      "hasCivilCertificates": "no",
+      "hasProofOfAddress": "no",
+      "hasEmploymentDocs": "na",
+      "from": "india"
+    },
+    "summary": "Partner routes usually elevate relationship and housing-support records.",
+    "topMissingDocuments": [
+      "Marriage certificate",
+      "Address confirmation",
+      "Rental agreement"
+    ]
+  },
+  {
+    "id": "family-move",
+    "title": "Moving with partner and children",
+    "inputs": {
+      "scenario": "family",
+      "hasPassport": "no",
+      "hasCivilCertificates": "no",
+      "hasProofOfAddress": "soon",
+      "hasEmploymentDocs": "no",
+      "from": "canada"
+    },
+    "summary": "Family scenarios often need both core identity and child-related records.",
+    "topMissingDocuments": [
+      "Passport",
+      "Children birth certificates",
+      "School records awareness"
+    ]
+  },
+  {
+    "id": "unsure-start",
+    "title": "Unsure what documents matter yet",
+    "inputs": {
+      "scenario": "unsure",
+      "hasPassport": "yes",
+      "hasCivilCertificates": "na",
+      "hasProofOfAddress": "no",
+      "hasEmploymentDocs": "na",
+      "from": "germany"
+    },
+    "summary": "When unsure, start with a core pack and layer optional extras gradually.",
+    "topMissingDocuments": [
+      "Address confirmation",
+      "Rental agreement",
+      "Travel insurance details"
+    ]
+  },
+  {
+    "id": "passport-ready-support-missing",
+    "title": "Already have a passport but still missing supporting docs",
+    "inputs": {
+      "scenario": "work",
+      "hasPassport": "yes",
+      "hasCivilCertificates": "no",
+      "hasProofOfAddress": "no",
+      "hasEmploymentDocs": "no",
+      "from": "australia"
+    },
+    "summary": "Support records can still be the bottleneck even when core identity is ready.",
+    "topMissingDocuments": [
+      "Address confirmation",
+      "Employment contract",
+      "Job offer letter"
+    ]
+  }
+]

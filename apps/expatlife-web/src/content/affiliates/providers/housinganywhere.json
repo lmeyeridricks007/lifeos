@@ -1,0 +1,26 @@
+{
+  "id": "housinganywhere",
+  "name": "HousingAnywhere",
+  "tagline": "Temporary rentals for internationals",
+  "categoryIds": ["housing"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Students & expats"],
+  "highlights": [
+    "Mid-term furnished rentals",
+    "Common for arrival before long-term lease",
+    "Verified listings"
+  ],
+  "cta": {
+    "label": "View HousingAnywhere",
+    "href": "https://housinganywhere.com/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/housinganywhere.svg",
+    "alt": "HousingAnywhere logo"
+  }
+}

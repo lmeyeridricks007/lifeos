@@ -1,0 +1,454 @@
+{
+  "slug": "move-to-netherlands-without-job",
+  "path": "/netherlands/move-to-netherlands-without-job/",
+  "title": "Can You Move to the Netherlands Without a Job?",
+  "subtitle": "What changes for EU and non-EU expats when you don't have a job offer.",
+  "description": "Whether you can move to the Netherlands without a job depends on nationality, purpose, and legal route. Compare EU/EEA vs non-EU, partner and study routes, and what to prepare.",
+  "breadcrumbLabel": "Move without a job",
+
+  "hero": {
+    "eyebrow": "Decision guide",
+    "badges": ["Planning"],
+    "image": {
+      "src": "/images/guides/netherlands/moving/move-without-job-hero.png",
+      "alt": "Expat planning a move to the Netherlands without a job offer, with suitcase and map on a canal bridge"
+    }
+  },
+
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "why-job-matters", "label": "Why a job matters for many moves" },
+    { "id": "situations-without-job", "label": "Situations where people may move without a job" },
+    { "id": "minimum-savings", "label": "Minimum savings and financial buffer" },
+    { "id": "proof-of-funds", "label": "Proof of funds and evidence" },
+    { "id": "renting-housing-without-job", "label": "Renting housing without a job" },
+    { "id": "what-to-prepare", "label": "What to prepare if you don't have a job yet" },
+    { "id": "risks-bottlenecks", "label": "Risks and bottlenecks" },
+    { "id": "what-people-do-next", "label": "What people often do next" },
+    { "id": "job-search-portals", "label": "Job search: portals and recruitment" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "useful-services", "label": "Useful services" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+
+  "heroCta": {
+    "title": "Plan your move even if you don't have a job yet",
+    "supportingText": "Use the Moving Checklist Generator and Document Readiness Checker to see what usually applies before and after arrival — especially for registration, housing, documents, and financial setup.",
+    "primaryCtaLabel": "Generate a Moving Checklist",
+    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryCtas": [
+      { "label": "Run the Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
+      { "label": "Open Arrival Task Planner", "href": "/netherlands/moving/tools/arrival-planner/" }
+    ],
+    "supportingLinks": [
+      { "label": "Visa checker", "href": "/netherlands/visa-checker/" },
+      { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" }
+    ]
+  },
+
+  "quickAnswers": [
+    {
+      "label": "EU/EEA nationals",
+      "value": "EU and EEA citizens can often move and register without a job, but may need to show they can support themselves financially."
+    },
+    {
+      "label": "Non-EU nationals",
+      "value": "Most non-EU moves need a clear residence route such as work sponsorship, study, family/partner, or another valid basis."
+    },
+    {
+      "label": "Best next step",
+      "value": "Confirm your route with the IND or relevant institution, then use the Moving Checklist tool to plan your next steps."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "Many people ask whether they can move to the Netherlands without a job offer. The answer depends largely on whether you are an EU citizen or a non-EU national, and on what legal route you are using to live in the country.",
+        "For EU and EEA citizens, moving without a job is often possible if you can support yourself. For non-EU nationals, moving without a job offer is usually harder unless you are using another route such as study, joining a partner or family member, research, or certain self-employment pathways.",
+        "Even when a job is not strictly required, it often affects how easy it is to rent housing, open a bank account, and meet practical setup requirements after arrival."
+      ],
+      "links": [
+        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" }
+      ]
+    },
+    {
+      "id": "why-job-matters",
+      "heading": "Why a job matters for many moves",
+      "body": [
+        "For non-EU nationals, most work-based residence permits depend on an employer or recognised sponsor to apply or support your application. That often means having a job offer before you move.",
+        "Even for EU citizens, having a job can simplify things: income proof can make it easier to rent a place, open a bank account, and meet municipality or landlord requirements. So while you may not always need a job to enter or register, it often affects how smooth your setup is.",
+        "The absence of a job does not always stop a move, but it often changes what you need to prove."
+      ],
+      "bullets": [
+        "Non-EU work routes usually depend on an employer or recognised sponsor.",
+        "Income proof can make housing and service setup easier.",
+        "Some immigration routes require evidence of means, funding, or sponsorship.",
+        "The absence of a job does not always stop a move, but it often changes what you need to prove."
+      ],
+      "links": [
+        { "label": "Highly Skilled Migrant visa", "href": "/netherlands/visa/highly-skilled-migrant/" },
+        { "label": "EU Blue Card", "href": "/netherlands/visa/eu-blue-card/" },
+        { "label": "Dutch-American Friendship Treaty (DAFT)", "href": "/netherlands/visa/dutch-american-friendship-treaty/" },
+        { "label": "Student visa", "href": "/netherlands/visa/student-visa/" },
+        { "label": "Partner & family visa", "href": "/netherlands/visa/partner-family-visa/" },
+        { "label": "Self-employed visa", "href": "/netherlands/visa/self-employed-visa/" }
+      ]
+    },
+    {
+      "id": "situations-without-job",
+      "heading": "Situations where people may move without a job",
+      "body": [
+        "EU and EEA nationals can generally move to the Netherlands and register without a job. They have the right to live and look for work, subject to certain conditions after a period.",
+        "Non-EU nationals may move without a job offer when they have another valid basis: for example study or PhD, research, joining a partner or family member who has status, or in some cases as a self-employed person or with sufficient savings under specific schemes. Each route has its own rules and evidence requirements. Confirm with the IND or the relevant institution for your situation."
+      ],
+      "table": {
+        "headers": ["Scenario", "Usually possible?", "Main dependency", "What to confirm"],
+        "rows": [
+          ["EU citizen moving without job", "Often easier", "Registration + financial self-support", "Local registration + practical setup"],
+          ["Non-EU without job offer", "Often harder", "Residence route / sponsor / purpose", "IND route requirements"],
+          ["Partner/family route", "Depends", "Partner's status / permit route", "Household + sponsor requirements"],
+          ["Study route", "Often separate", "Institution / visa documentation", "Admission + funding"],
+          ["Research/PhD route", "Often structured", "Institution / research sponsor", "Institution process"],
+          ["Self-employed route", "Depends", "Business route / evidence / funds", "Specific route requirements"]
+        ]
+      },
+      "links": [
+        { "label": "EU vs non-EU moving to the Netherlands", "href": "/netherlands/eu-vs-non-eu-moving-to-netherlands/" },
+        { "label": "Dutch-American Friendship Treaty (DAFT)", "href": "/netherlands/visa/dutch-american-friendship-treaty/" },
+        { "label": "Partner & family visa", "href": "/netherlands/visa/partner-family-visa/" },
+        { "label": "Student visa", "href": "/netherlands/visa/student-visa/" },
+        { "label": "Self-employed visa", "href": "/netherlands/visa/self-employed-visa/" }
+      ]
+    },
+    {
+      "id": "minimum-savings",
+      "heading": "Minimum savings and financial buffer",
+      "body": [
+        "If you move without a job, your financial buffer matters more. Even if there is no single universal amount for every situation, most people need enough money for housing deposits, the first months of living costs, transport, insurance, and setup delays.",
+        "These are rough planning examples, not official thresholds. Actual requirements vary by city, housing type, household size, and immigration route. Some routes may require formal proof of means or sponsorship."
+      ],
+      "table": {
+        "headers": ["Cost area", "Typical example range", "Notes"],
+        "rows": [
+          ["Rent deposit", "1–2 months' rent", "Can be higher depending on landlord"],
+          ["First month rent", "€800–€2,000+", "Depends heavily on city and housing type"],
+          ["Health insurance", "~€130–€160 / month", "Actual price varies by provider and package"],
+          ["Groceries / daily expenses", "~€300–€600 / month", "Depends on household size"],
+          ["Transport / phone / basics", "~€80–€250 / month", "Depends on usage"],
+          ["Emergency buffer", "€3,000–€10,000+", "Strongly recommended if moving without work income"]
+        ]
+      },
+      "services": [
+        {
+          "name": "Wise",
+          "description": "Multi-currency account and international transfers useful for holding funds and early spending before full local banking is arranged.",
+          "url": "https://wise.com/",
+          "indicativeCost": "Fees vary by currency route and usage.",
+          "reason": "Temporary money setup before local income",
+          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
+        },
+        {
+          "name": "bunq",
+          "description": "App-first Dutch banking option often considered by internationals during early setup.",
+          "url": "https://www.bunq.com/",
+          "indicativeCost": "Plan pricing varies by package.",
+          "reason": "Expat-friendly banking context",
+          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
+        }
+      ]
+    },
+    {
+      "id": "proof-of-funds",
+      "heading": "Proof of funds and evidence",
+      "body": [
+        "People moving without a job may still need to show they can support themselves, especially if they are using a study route, joining a partner or family member, applying under a route that requires sufficient means, or dealing with housing providers or local setup providers."
+      ],
+      "bullets": [
+        "Passport and identity documents",
+        "Bank statements or savings evidence",
+        "Admission letters (for study)",
+        "Sponsor or partner documentation",
+        "Proof of housing plan",
+        "Any required route-specific IND or institution documents"
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Requirements differ by route",
+        "text": "This page is awareness-only. Official sources should always be confirmed for your situation."
+      },
+      "links": [
+        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" }
+      ]
+    },
+    {
+      "id": "renting-housing-without-job",
+      "heading": "Renting housing without a job",
+      "body": [
+        "This is one of the biggest real-world blockers for many people. Landlords and agencies often ask for proof of income, a work contract, a higher deposit, a guarantor, advance rent, or evidence of savings.",
+        "Temporary housing is often easier than long-term rental at first. Registration eligibility matters as much as the contract itself. Without stable income, some landlords may ask for stronger proof of means or a larger deposit. Having a documented housing plan helps with later registration and banking setup."
+      ],
+      "bullets": [
+        "Temporary housing is often easier than long-term rental at first.",
+        "Registration eligibility matters as much as the contract itself.",
+        "Without stable income, some landlords may ask for stronger proof of means or a larger deposit.",
+        "Having a documented housing plan helps with later registration and banking setup."
+      ],
+      "ctaBlock": {
+        "title": "Check housing and registration together",
+        "supportingText": "Many arrival steps depend on having an address you can register at. Use the Moving Checklist Generator to map housing, registration, and early admin in the right order.",
+        "primaryLabel": "Generate a Moving Checklist",
+        "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+        "secondaryLabel": "Read Registering Your Address guide",
+        "secondaryHref": "/netherlands/municipality-registration-netherlands/"
+      },
+      "services": [
+        {
+          "name": "HousingAnywhere",
+          "description": "Temporary rentals often used by internationals and expats while arranging registration and longer-term housing.",
+          "url": "https://housinganywhere.com/",
+          "indicativeCost": "Listing prices vary by city and property.",
+          "reason": "Temporary housing before long-term rental",
+          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
+        }
+      ]
+    },
+    {
+      "id": "what-to-prepare",
+      "heading": "What to prepare if you don't have a job yet",
+      "body": [
+        "Gather identity and civil documents (passport, birth certificate, marriage certificate if relevant). If you are non-EU, you will need whatever your route requires—often proof of admission, sponsorship, or funds.",
+        "Research registration and housing: many steps after arrival (BSN, bank, insurance) depend on having an address where you can register. Look into temporary housing that allows registration if needed."
+      ],
+      "bullets": [
+        "Valid passport and any visa / permit documents for your route",
+        "Proof of purpose (admission letter, sponsor letter, partner/family documentation, or evidence of savings)",
+        "Key civil documents (birth certificate, marriage certificate if relevant)",
+        "Financial evidence or buffer documentation",
+        "A realistic plan for where you will live and register",
+        "A simple first-month budget and setup plan"
+      ],
+      "ctaBlock": {
+        "title": "Start with your document pack",
+        "supportingText": "Use the Document Readiness Checker to see which documents usually matter before moving and during arrival setup.",
+        "primaryLabel": "Run the Document Readiness Checker",
+        "primaryHref": "/netherlands/document-readiness-checker/",
+        "secondaryLabel": "Read Documents Needed to Move",
+        "secondaryHref": "/netherlands/documents-needed-to-move-netherlands/"
+      },
+      "links": [
+        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      ]
+    },
+    {
+      "id": "risks-bottlenecks",
+      "heading": "Risks and bottlenecks",
+      "body": [
+        "Without a job or stable income, landlords and banks may ask for more proof of means or a larger deposit. Registration at a municipality is still usually required and can be a bottleneck if appointment availability is limited.",
+        "Document processing (apostilles, translations, visa decisions) can take longer than expected. Start early and confirm current processing times with the IND or your institution. If you are relying on savings, delays become more expensive."
+      ],
+      "bullets": [
+        "Housing may be harder without proof of income.",
+        "Registration can stall if your address cannot be registered.",
+        "Banking setup may be slower without a BSN and stable address.",
+        "Immigration processing, apostilles, and translations can take longer than expected.",
+        "If you are relying on savings, delays become more expensive."
+      ],
+      "callout": {
+        "type": "tip",
+        "title": "What tends to surprise people",
+        "text": "Many people focus on the visa or move itself, but the biggest friction often comes from practical setup: housing, municipality registration, banking, and timing gaps before steady income begins."
+      },
+      "internalCta": {
+        "label": "Generate a Moving Checklist",
+        "href": "/netherlands/moving/tools/moving-checklist/"
+      }
+    },
+    {
+      "id": "what-people-do-next",
+      "heading": "What people often do next",
+      "body": [
+        "Once the move is realistic, people typically shift from \"Can I move?\" to sequencing the arrival setup."
+      ],
+      "bullets": [
+        "Confirm their legal route or institution requirements",
+        "Prepare identity and supporting documents",
+        "Secure housing that allows registration",
+        "Book registration or municipality appointments if possible",
+        "Plan first-month banking, insurance, and transport steps"
+      ],
+      "links": [
+        { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+        { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      ],
+      "services": [
+        {
+          "name": "Independer",
+          "description": "Insurance comparison platform often used once people begin arranging Dutch health insurance.",
+          "url": "https://www.independer.nl/",
+          "indicativeCost": "Comparison platform; insurance prices vary.",
+          "reason": "Compare health insurance after arrival",
+          "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
+        },
+        {
+          "name": "Simyo",
+          "description": "SIM-only mobile option useful once people begin setting up everyday life after arrival.",
+          "url": "https://www.simyo.nl/",
+          "indicativeCost": "Plan pricing varies.",
+          "reason": "Mobile connectivity, first month setup",
+          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
+        }
+      ]
+    },
+    {
+      "id": "job-search-portals",
+      "heading": "Job search: portals and recruitment",
+      "body": [
+        "When you are ready to look for work in the Netherlands, job boards and recruitment agencies can help. Many roles for internationals are listed on general job sites; some agencies specialise in placing expats or English-speaking candidates."
+      ],
+      "bullets": [
+        "General job portals list vacancies across sectors and often have filters for language and location.",
+        "Recruitment agencies may offer support with CV format, interview preparation, and visa-sponsored roles.",
+        "Networks and LinkedIn are widely used for professional roles and referrals."
+      ],
+      "services": [
+        {
+          "name": "Indeed Netherlands",
+          "description": "Large job board with many Dutch vacancies; you can search by location, keyword, and job type. Often used for a broad view of the market.",
+          "url": "https://www.indeed.nl/",
+          "reason": "Job portal, broad vacancy search",
+          "logo": { "src": "/images/affiliates/logos/indeed.svg", "alt": "Indeed logo" }
+        },
+        {
+          "name": "LinkedIn",
+          "description": "Professional network and job board; commonly used for white-collar and international roles, networking, and company research.",
+          "url": "https://www.linkedin.com/jobs/",
+          "reason": "Professional jobs and networking",
+          "logo": { "src": "/images/affiliates/logos/linkedin.svg", "alt": "LinkedIn logo" }
+        },
+        {
+          "name": "Undutchables",
+          "description": "Recruitment agency focused on international and multilingual candidates in the Netherlands. Often relevant for expats and non-Dutch speakers.",
+          "url": "https://www.undutchables.nl/",
+          "reason": "Recruitment for internationals",
+          "logo": { "src": "/images/affiliates/logos/undutchables.svg", "alt": "Undutchables logo" }
+        },
+        {
+          "name": "Randstad Netherlands",
+          "description": "Large recruitment and staffing agency with temporary and permanent roles across sectors. Useful for getting a foot in the door.",
+          "url": "https://www.randstad.nl/",
+          "reason": "Recruitment agency, temp and permanent",
+          "logo": { "src": "/images/affiliates/logos/randstad.svg", "alt": "Randstad logo" }
+        }
+      ]
+    }
+  ],
+
+  "toolCtas": [
+    {
+      "key": "moving-checklist",
+      "label": "Generate a Moving Checklist",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "description": "See what usually applies before and after arrival based on your route and household setup.",
+      "ctaLabel": "Open tool"
+    },
+    {
+      "key": "document-readiness",
+      "label": "Run the Document Readiness Checker",
+      "href": "/netherlands/document-readiness-checker/",
+      "description": "Check which documents people often prepare before moving and before registration.",
+      "ctaLabel": "Open tool"
+    },
+    {
+      "key": "arrival-planner",
+      "label": "Arrival Task Planner",
+      "href": "/netherlands/moving/tools/arrival-planner/",
+      "description": "Map the first admin steps after arrival, including registration, BSN, banking, and insurance timing.",
+      "ctaLabel": "Open tool"
+    }
+  ],
+
+  "toolsCtaBand": {
+    "title": "Turn this guide into a practical plan",
+    "body": "If you're moving without a job, planning order matters more. Use the checklist and arrival tools to reduce guesswork.",
+    "primaryLabel": "Generate a Moving Checklist",
+    "primaryHref": "/netherlands/moving/tools/moving-checklist/",
+    "secondaryLabel": "Run the Document Readiness Checker",
+    "secondaryHref": "/netherlands/document-readiness-checker/",
+    "tertiaryLabel": "Open Arrival Task Planner",
+    "tertiaryHref": "/netherlands/moving/tools/arrival-planner/"
+  },
+
+  "sidebarStartLinks": [
+    { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+    { "label": "Read the full moving guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
+    { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
+    { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" }
+  ],
+
+  "internalLinks": {
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    "related": [
+      { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Registering Your Address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "BSN Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/#bsn" }
+    ]
+  },
+
+  "faq": [
+    {
+      "q": "Can EU citizens move to the Netherlands without a job?",
+      "a": "EU and EEA nationals generally have the right to move to the Netherlands and register, and may look for work after arrival. You may need to show you can support yourself financially. After a certain period, conditions may apply—confirm with the IND or your municipality."
+    },
+    {
+      "q": "Can I move to the Netherlands without a job as a non-EU national?",
+      "a": "It depends on your route. Non-EU nationals usually need a basis such as a job offer (with employer sponsorship), study, research, or joining a partner or family member. There is no general \"move without a job\" visa; you need a specific permit type. Check the IND website or a qualified adviser."
+    },
+    {
+      "q": "What if I am moving for study or as a partner?",
+      "a": "Study and partner/family routes have their own requirements (admission letter, sponsorship, relationship proof, housing, income). You do not need a work contract for those routes, but you must meet the conditions for that permit. See the IND and your institution or sponsor for details."
+    },
+    {
+      "q": "How much savings do I need to move to the Netherlands without work?",
+      "a": "There is no single official amount for every situation. Most people need enough for rent deposit, first months of rent and living costs, health insurance, transport, and an emergency buffer. Rough planning examples often cite €3,000–€10,000+ as an emergency buffer on top of housing and monthly costs. Actual requirements vary by city, household size, and immigration route; some routes require formal proof of means."
+    },
+    {
+      "q": "Can I rent housing without a job?",
+      "a": "It is often harder. Many landlords and agencies ask for proof of income, a work contract, a higher deposit, or a guarantor. Temporary housing is sometimes easier to secure at first. Having savings evidence or a guarantor can help. Confirm with individual providers."
+    },
+    {
+      "q": "Can I register in the Netherlands without employment?",
+      "a": "Yes, in many cases. EU/EEA citizens can usually register with the municipality without a job if they can show they can support themselves. Non-EU nationals need a valid residence basis (e.g. study, partner, research); that basis does not have to be employment. Registration itself typically requires an address where you are allowed to register—confirm with your municipality."
+    },
+    {
+      "q": "What should I prepare before moving if I do not have a job offer?",
+      "a": "Prepare valid passport and any visa/permit documents for your route, proof of purpose (admission letter, sponsor letter, or evidence of savings), key civil documents, financial evidence, and a realistic plan for where you will live and register. Use the Document Readiness Checker and Moving Checklist tools to see what usually applies to your situation."
+    }
+  ],
+
+  "resourcesAffiliatePlacementId": "nl-moving-without-job-sidebar",
+  "servicesSectionTitle": "Services often used when moving without a job",
+  "servicesIntro": "Temporary housing, banking and transfers, insurance comparison, and connectivity are commonly relevant for people moving before they have local employment.",
+  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "za-job-offer",
+    "title": "Moving from South Africa with a job offer",
+    "summary": "Focus on documents, visa timeline, and first admin steps after arrival.",
+    "inputs": {
+      "from": "south-africa",
+      "stage": "before-move",
+      "household": "solo",
+      "employment": "job-offer",
+      "region": "non-eu"
+    },
+    "topTasks": [
+      "Confirm visa or residence permit route and timeline",
+      "Prepare copies of identity documents",
+      "Register your address at the municipality (gemeente)"
+    ],
+    "links": [
+      { "label": "Documents needed", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Moving from South Africa", "href": "/netherlands/moving/moving-to-netherlands-from/south-africa/" }
+    ]
+  },
+  {
+    "id": "india-partner-kids",
+    "title": "Moving from India with partner and kids",
+    "summary": "Family documents, school research, and joint registration steps.",
+    "inputs": {
+      "from": "india",
+      "stage": "before-move",
+      "household": "kids",
+      "employment": "job-offer",
+      "region": "non-eu"
+    },
+    "topTasks": [
+      "Gather civil records (birth, marriage if relevant)",
+      "Research schools and registration if moving with children",
+      "Register children at school"
+    ],
+    "links": [
+      { "label": "Moving with kids", "href": "/netherlands/moving-to-netherlands-with-kids/" },
+      { "label": "Moving from India", "href": "/netherlands/moving/moving-to-netherlands-from/india/" }
+    ]
+  },
+  {
+    "id": "germany-eu-employed",
+    "title": "Moving from Germany as an EU professional",
+    "summary": "Simpler admin; focus on registration, bank, and insurance.",
+    "inputs": {
+      "from": "germany",
+      "stage": "before-move",
+      "household": "solo",
+      "employment": "employed",
+      "region": "eu"
+    },
+    "topTasks": [
+      "Confirm where you'll register (rental, employer, or temporary address)",
+      "Register your address at the municipality (gemeente)",
+      "Open a Dutch bank account"
+    ],
+    "links": [
+      { "label": "Register address", "href": "/netherlands/register-address-netherlands/" },
+      { "label": "Moving from Germany", "href": "/netherlands/moving/moving-to-netherlands-from/germany/" }
+    ]
+  },
+  {
+    "id": "uk-arriving-soon",
+    "title": "Arriving soon from the UK",
+    "summary": "Prioritize registration, BSN, banking, and health insurance.",
+    "inputs": {
+      "from": "united-kingdom",
+      "stage": "arriving-soon",
+      "household": "partner",
+      "employment": "job-offer",
+      "region": "non-eu"
+    },
+    "topTasks": [
+      "Register your address at the municipality (gemeente)",
+      "Receive and note your BSN",
+      "Arrange mandatory health insurance"
+    ],
+    "links": [
+      { "label": "BSN registration", "href": "/netherlands/bsn-registration/" },
+      { "label": "First 30 days", "href": "/netherlands/first-30-days-netherlands/" }
+    ]
+  },
+  {
+    "id": "already-arrived-amsterdam",
+    "title": "Already arrived in Amsterdam and catching up on admin",
+    "summary": "Focus on registration, banking, and first 90 days checklist.",
+    "inputs": {
+      "from": "south-africa",
+      "stage": "already-arrived",
+      "household": "solo",
+      "employment": "employed",
+      "region": "non-eu",
+      "city": "amsterdam"
+    },
+    "topTasks": [
+      "Register your address at the municipality (gemeente)",
+      "Open a Dutch bank account",
+      "Arrange mandatory health insurance"
+    ],
+    "links": [
+      { "label": "Register address", "href": "/netherlands/register-address-netherlands/" },
+      { "label": "First 90 days", "href": "/netherlands/first-90-days-netherlands/" }
+    ]
+  },
+  {
+    "id": "spain-searching",
+    "title": "Moving from Spain and still searching for work",
+    "summary": "Admin readiness and document pack for job search and future registration.",
+    "inputs": {
+      "from": "spain",
+      "stage": "before-move",
+      "household": "solo",
+      "employment": "searching",
+      "region": "eu"
+    },
+    "topTasks": [
+      "Prepare copies of identity documents",
+      "Prepare CV and key documents for job search",
+      "Confirm where you'll register (rental, employer, or temporary address)"
+    ],
+    "links": [
+      { "label": "Documents needed", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+    ]
+  }
+]

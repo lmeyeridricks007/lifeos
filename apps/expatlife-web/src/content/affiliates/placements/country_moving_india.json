@@ -1,0 +1,22 @@
+{
+  "id": "country_moving_india",
+  "destinationCountry": "netherlands",
+  "originCountry": "india",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/india/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services commonly used by people moving from India",
+  "intro": "These services are often compared by Indian professionals planning a move to the Netherlands.",
+  "categoryOrder": ["banking", "housing", "insurance", "shipping", "mobile"],
+  "items": [
+    { "providerId": "wise", "reason": "International transfers." },
+    { "providerId": "bunq", "reason": "Popular for Dutch digital banking after arrival." },
+    { "providerId": "housinganywhere", "reason": "Frequently used for temporary accommodation searches." },
+    { "providerId": "simyo", "reason": "Used for Dutch mobile setup after arrival." },
+    { "providerId": "independer", "reason": "Useful for comparing Dutch health insurance after arrival." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}
