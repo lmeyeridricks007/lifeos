@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "united-states",
+    "label": "United States",
+    "summary": "Common route from the US to the Netherlands.",
+    "highlights": ["Work permits", "Apostille documents", "Healthcare setup"]
+  },
+  {
+    "slug": "united-kingdom",
+    "label": "United Kingdom",
+    "summary": "Post-Brexit considerations for UK nationals.",
+    "highlights": ["Residence documentation", "Registration", "Banking"]
+  },
+  {
+    "slug": "germany",
+    "label": "Germany",
+    "summary": "Neighboring EU route.",
+    "highlights": ["ID requirements", "Registration", "Cross-border banking"]
+  }
+]

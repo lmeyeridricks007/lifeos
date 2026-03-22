@@ -1,0 +1,29 @@
+# Dependencies (pnpm hoists to repo root — must ignore here, not only under apps/)
+node_modules/
+
+# Optional local pnpm store path
+.pnpm-store/
+
+# Logs & debug
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.local
+.env*.local
+
+# OS
+.DS_Store
+
+# TypeScript / tooling caches
+*.tsbuildinfo
+
+# Common build output (if ever at root)
+dist/
+build/
+.next/
+out/

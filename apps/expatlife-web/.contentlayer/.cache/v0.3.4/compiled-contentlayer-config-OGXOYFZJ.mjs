@@ -1,5 +1,18 @@
 // contentlayer.config.js
+import fs from "node:fs";
+import path from "node:path";
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
+function resolveMdxBundlerCwd() {
+  const cwd = process.cwd();
+  if (fs.existsSync(path.join(cwd, "node_modules", "react", "package.json"))) {
+    return cwd;
+  }
+  const appFromRepoRoot = path.join(cwd, "apps", "expatlife-web");
+  if (fs.existsSync(path.join(appFromRepoRoot, "node_modules", "react", "package.json"))) {
+    return appFromRepoRoot;
+  }
+  return cwd;
+}
 var computedFields = {
   slug: {
     type: "string",
@@ -45,7 +58,10 @@ var Hub = defineDocumentType(() => ({
 var contentlayer_config_default = makeSource({
   contentDirPath: "../../packages/content",
   contentDirInclude: ["netherlands"],
-  documentTypes: [Guide, Pillar, Hub]
+  documentTypes: [Guide, Pillar, Hub],
+  mdx: {
+    cwd: resolveMdxBundlerCwd()
+  }
 });
 export {
   Guide,
@@ -53,4 +69,4 @@ export {
   Pillar,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-ZK5SV2IZ.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-OGXOYFZJ.mjs.map

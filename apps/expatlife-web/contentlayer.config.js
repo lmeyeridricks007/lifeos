@@ -1,4 +1,19 @@
+import fs from "node:fs";
+import path from "node:path";
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
+
+/** MDX is bundled with esbuild; it must resolve `react/jsx-dev-runtime` from a real node_modules tree. */
+function resolveMdxBundlerCwd() {
+  const cwd = process.cwd();
+  if (fs.existsSync(path.join(cwd, "node_modules", "react", "package.json"))) {
+    return cwd;
+  }
+  const appFromRepoRoot = path.join(cwd, "apps", "expatlife-web");
+  if (fs.existsSync(path.join(appFromRepoRoot, "node_modules", "react", "package.json"))) {
+    return appFromRepoRoot;
+  }
+  return cwd;
+}
 
 const computedFields = {
   slug: {
@@ -50,4 +65,7 @@ export default makeSource({
   contentDirPath: "../../packages/content",
   contentDirInclude: ["netherlands"],
   documentTypes: [Guide, Pillar, Hub],
+  mdx: {
+    cwd: resolveMdxBundlerCwd(),
+  },
 });
