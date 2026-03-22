@@ -7,7 +7,7 @@ import {
 export const revalidate = 3600;
 export const metadata = {
   title: "Advanced AI Tool (Coming Soon)",
-  description: "Advanced AI tool page for future premium ExpatLife experiences.",
+  description: "Advanced AI tool page for future premium ExpatCopilot experiences.",
   robots: placeholderToolRobots,
 };
 

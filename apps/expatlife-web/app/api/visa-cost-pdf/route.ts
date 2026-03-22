@@ -173,7 +173,7 @@ export async function POST(request: NextRequest) {
       doc.switchToPage(i);
       doc.fontSize(9).font("Helvetica").fillColor("#6b7280");
       doc.text(
-        `Page ${i + 1} of ${range.count} · ExpatLife · Netherlands Visa Cost Calculator`,
+        `Page ${i + 1} of ${range.count} · ExpatCopilot · Netherlands Visa Cost Calculator`,
         MARGIN,
         PAGE_HEIGHT - BOTTOM_MARGIN + 10,
         { align: "center", width: CONTENT_WIDTH }

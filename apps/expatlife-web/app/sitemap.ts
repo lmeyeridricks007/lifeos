@@ -8,6 +8,8 @@
  *   URLs for enabled countries, excludes explicit non-sitemap paths (e.g. `/search/`), then filters with
  *   `isRouteLive` from `src/lib/routes/routeStatus.ts`.
  *
+ * Absolute URLs use `getSeoPublicOrigin()` (www.expatcopilot.com on Vercel production if env is unset).
+ *
  * When adding a new indexable page:
  * 1. Ensure its normalized path is part of `LIVE_PATHS` (see comments in `route-registry.ts`), or
  *    covered by a pattern helper used by `isRouteLive`, or extend `liveSitemapPaths` if it is a new
@@ -15,12 +17,11 @@
  * 2. If it appears in the footer or HTML sitemap lists, update `src/data/site/footer-links.ts`.
  */
 import type { MetadataRoute } from "next";
-import { getSiteOrigin } from "@/lib/site-origin";
+import { getSeoPublicOrigin } from "@/lib/site-origin";
 import { collectLiveSitemapNormalizedPaths } from "@/src/lib/sitemap/liveSitemapPaths";
 
-const baseUrl = getSiteOrigin();
-
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = getSeoPublicOrigin();
   const paths = collectLiveSitemapNormalizedPaths();
   return paths.map((path) => ({
     url: `${baseUrl}${path}`,

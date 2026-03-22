@@ -2,9 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Banknote, Globe, MapPin, ExternalLink } from "lucide-react";
 import type { ServiceCategoryProviderCard } from "@/src/lib/service-category/types";
+import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
+import { trackServiceClick } from "@/lib/analytics/track";
 
 /** Resolve logo URL: use apistemic when src is a Clearbit URL (Clearbit API was discontinued). */
 function resolveLogoUrl(src: string): string {
@@ -78,6 +81,7 @@ function ProviderLogo({
 }
 
 export function ProviderCardsGrid({ providers }: { providers: ServiceCategoryProviderCard[] }) {
+  const pathname = usePathname();
   return (
     <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
       {providers.map((p) => (
@@ -161,19 +165,30 @@ export function ProviderCardsGrid({ providers }: { providers: ServiceCategoryPro
                 <Link
                   href={p.href}
                   className="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 px-3 py-2 text-sm font-medium text-white transition hover:bg-slate-800"
+                  onClick={() =>
+                    trackServiceClick({
+                      service_name: p.name,
+                      service_slug: p.slug,
+                      source_page: pathname ?? "",
+                      section_name: "provider_comparison_grid",
+                      card_type: "provider_profile",
+                    })
+                  }
                 >
                   View details
                 </Link>
               )}
               {p.externalUrl ? (
-                <a
+                <TrackedExternalLink
                   href={p.externalUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  linkType="provider"
+                  linkText="Visit website"
                   className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
                 >
                   Visit website <ExternalLink className="h-3.5 w-3.5" />
-                </a>
+                </TrackedExternalLink>
               ) : null}
             </div>
           </div>

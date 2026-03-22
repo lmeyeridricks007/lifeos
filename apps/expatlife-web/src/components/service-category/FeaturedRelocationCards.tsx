@@ -2,8 +2,11 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { ExternalLink, MapPin, Banknote, CheckCircle2 } from "lucide-react";
 import type { RelocationProviderRecord } from "@/src/lib/service-category/types";
+import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
+import { trackServiceClick } from "@/lib/analytics/track";
 
 /** Resolve logo URL: use apistemic when src is a Clearbit URL (Clearbit API was discontinued). */
 function resolveLogoUrl(src: string): string {
@@ -57,6 +60,7 @@ export function FeaturedRelocationCards({
   providers,
   profileBasePath = "/netherlands/services/relocation-agencies",
 }: Props) {
+  const pathname = usePathname();
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {providers.map((p) => (
@@ -104,18 +108,29 @@ export function FeaturedRelocationCards({
           <p className="mt-0.5 text-xs text-slate-500">Source: {p.sourceEcosystems.join(", ")}</p>
           <div className="mt-auto flex flex-col gap-1.5 pt-3">
             {p.providerUrl ? (
-              <a
+              <TrackedExternalLink
                 href={p.providerUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                linkType="provider"
+                linkText="Visit provider"
                 className="inline-flex items-center justify-center gap-1 rounded-lg border border-slate-200 bg-white px-2 py-1.5 text-xs font-medium text-slate-700 hover:bg-slate-50"
               >
                 Visit provider <ExternalLink className="h-3 w-3" />
-              </a>
+              </TrackedExternalLink>
             ) : null}
             <Link
               href={`${profileBasePath}/${p.slug}/`}
               className="inline-flex items-center justify-center rounded-lg bg-slate-900 px-2 py-1.5 text-xs font-medium text-white hover:bg-slate-800"
+              onClick={() =>
+                trackServiceClick({
+                  service_name: p.name,
+                  service_slug: p.slug,
+                  source_page: pathname ?? "",
+                  section_name: "featured_relocation_cards",
+                  card_type: "provider_profile",
+                })
+              }
             >
               View details
             </Link>

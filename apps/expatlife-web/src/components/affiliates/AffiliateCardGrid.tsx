@@ -1,4 +1,7 @@
+"use client";
+
 import type { AffiliateProvider } from "@/src/lib/affiliates/types";
+import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
 import { ProviderLogo } from "./ProviderLogo";
 
 export type CardItem = {
@@ -43,14 +46,16 @@ function AffiliateCard({ provider, reason }: CardItem) {
             <p className="mt-1.5 text-xs text-slate-500">{reasonTrim}</p>
           ) : null}
           <div className="mt-4">
-            <a
+            <TrackedExternalLink
               href={provider.cta.href}
               target="_blank"
               rel="sponsored noopener noreferrer"
+              linkType="provider"
+              linkText={provider.cta.label}
               className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-900 hover:bg-slate-50"
             >
               {provider.cta.label}
-            </a>
+            </TrackedExternalLink>
           </div>
         </div>
       </div>

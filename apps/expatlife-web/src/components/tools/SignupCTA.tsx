@@ -14,7 +14,52 @@ export type SignupCTAProps = {
   secondaryCtaHref?: string;
   variant?: "inline" | "panel" | "sidebar";
   className?: string;
+  /**
+   * When true, primary CTA is shown but not navigable (signup not live yet).
+   * Defaults to true; set false when `/signup` ships.
+   */
+  primaryComingSoon?: boolean;
+  /**
+   * When true, secondary CTA is shown as coming soon. If omitted, inferred when `secondaryCtaHref` is `/signup`.
+   */
+  secondaryComingSoon?: boolean;
 };
+
+function isSignupHref(href?: string | null): boolean {
+  if (!href) return false;
+  const path = href.split("?")[0]?.replace(/\/$/, "") ?? "";
+  return path === "/signup";
+}
+
+function ComingSoonButton({
+  label,
+  variant,
+}: {
+  label: string;
+  variant: "primary" | "secondary";
+}) {
+  return (
+    <div className="inline-flex flex-col items-start gap-1.5">
+      <Button
+        type="button"
+        variant={variant}
+        disabled
+        title="Account signup is coming soon"
+        className={cn(
+          "cursor-not-allowed opacity-80 hover:!translate-y-0",
+          variant === "primary" &&
+            "border-slate-200 bg-none bg-slate-100 from-slate-100 to-slate-100 text-slate-600 shadow-sm hover:from-slate-100 hover:to-slate-100",
+          variant === "secondary" && "bg-slate-50 text-slate-500 shadow-none"
+        )}
+      >
+        {label}
+      </Button>
+      <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-amber-900">
+        Coming soon
+      </span>
+    </div>
+  );
+}
 
 export function SignupCTA({
   title,
@@ -26,9 +71,15 @@ export function SignupCTA({
   secondaryCtaHref,
   variant = "inline",
   className,
+  primaryComingSoon = true,
+  secondaryComingSoon,
 }: SignupCTAProps) {
   const isPanel = variant === "panel";
   const isSidebar = variant === "sidebar";
+
+  const secondarySoon =
+    secondaryComingSoon ??
+    (secondaryCtaLabel != null && secondaryCtaHref != null && isSignupHref(secondaryCtaHref));
 
   return (
     <div
@@ -51,15 +102,23 @@ export function SignupCTA({
           ))}
         </ul>
       ) : null}
-      <div className="mt-5 flex flex-wrap gap-3">
-        <Link href={primaryCtaHref}>
-          <Button variant="primary">{primaryCtaLabel}</Button>
-        </Link>
-        {secondaryCtaLabel != null && (
-          <Link href={secondaryCtaHref ?? "#"}>
-            <Button variant="secondary">{secondaryCtaLabel}</Button>
+      <div className="mt-5 flex flex-wrap items-start gap-3">
+        {primaryComingSoon ? (
+          <ComingSoonButton label={primaryCtaLabel} variant="primary" />
+        ) : (
+          <Link href={primaryCtaHref}>
+            <Button variant="primary">{primaryCtaLabel}</Button>
           </Link>
         )}
+        {secondaryCtaLabel != null ? (
+          secondarySoon ? (
+            <ComingSoonButton label={secondaryCtaLabel} variant="secondary" />
+          ) : (
+            <Link href={secondaryCtaHref ?? "#"}>
+              <Button variant="secondary">{secondaryCtaLabel}</Button>
+            </Link>
+          )
+        ) : null}
       </div>
     </div>
   );

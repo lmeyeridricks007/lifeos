@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 
 export const metadata: Metadata = {
-  title: String("Affiliate disclosure | ExpatLife"),
+  title: String("Affiliate disclosure | ExpatCopilot"),
   description: String("How we use affiliate links and what that means for you."),
   alternates: { canonical: String("/about/affiliate-disclosure") },
 };
@@ -17,7 +17,7 @@ export default function AffiliateDisclosurePage() {
         </h1>
         <div className="mt-6 space-y-4 text-sm text-slate-600">
           <p>
-            Some links on ExpatLife are affiliate links. If you sign up or buy through these links,
+            Some links on ExpatCopilot are affiliate links. If you sign up or buy through these links,
             we may earn a commission at no extra cost to you. We only recommend services we believe
             are useful for people moving or living abroad.
           </p>

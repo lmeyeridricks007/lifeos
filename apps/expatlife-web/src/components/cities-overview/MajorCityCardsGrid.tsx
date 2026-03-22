@@ -1,8 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { MajorCityCard } from "@/src/lib/cities-overview/types";
 import { cn } from "@/lib/cn";
+import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
+import { trackCityClick } from "@/lib/analytics/track";
 
 export function MajorCityCardsGrid({ cards }: { cards: MajorCityCard[] }) {
+  const pathname = usePathname();
   if (!cards?.length) return null;
 
   return (
@@ -43,9 +49,16 @@ export function MajorCityCardsGrid({ cards }: { cards: MajorCityCard[] }) {
           ) : null}
           <p className="mt-2 text-xs text-slate-600">
             <span className="font-medium">Newcomer support:</span>{" "}
-            <a href={card.newcomerSupport.href} target="_blank" rel="noopener noreferrer" className="text-brand-700 hover:underline">
+            <TrackedExternalLink
+              href={card.newcomerSupport.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              linkType="external_resource"
+              linkText={card.newcomerSupport.name}
+              className="text-brand-700 hover:underline"
+            >
               {card.newcomerSupport.name}
-            </a>
+            </TrackedExternalLink>
           </p>
           <p className="mt-1 text-xs text-slate-600">
             <span className="font-medium">Cost band:</span> {card.costBand}
@@ -55,7 +68,16 @@ export function MajorCityCardsGrid({ cards }: { cards: MajorCityCard[] }) {
             <p className="mt-1 text-xs text-slate-500">
               Jobs & businesses: {card.stats.sourceLabel}
               {card.stats.sourceHref && (
-                <a href={card.stats.sourceHref} target="_blank" rel="noopener noreferrer" className="ml-1 text-brand-600 hover:underline">↗</a>
+                <TrackedExternalLink
+                  href={card.stats.sourceHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  linkType="official_source"
+                  linkText={card.stats.sourceLabel}
+                  className="ml-1 text-brand-600 hover:underline"
+                >
+                  ↗
+                </TrackedExternalLink>
               )}
             </p>
           )}
@@ -73,6 +95,13 @@ export function MajorCityCardsGrid({ cards }: { cards: MajorCityCard[] }) {
               <Link
                 href={card.detailHref}
                 className="inline-flex items-center rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800"
+                onClick={() =>
+                  trackCityClick({
+                    city_name: card.name,
+                    city_slug: card.slug,
+                    page_context: pathname ?? "",
+                  })
+                }
               >
                 {card.ctaLabel}
                 <span className="ml-1" aria-hidden>→</span>

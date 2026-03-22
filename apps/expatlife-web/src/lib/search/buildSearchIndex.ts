@@ -107,14 +107,14 @@ export function buildAllSearchDocuments(): SearchDocument[] {
 
   out.push({
     id: "hub:home",
-    title: "ExpatLife",
+    title: "ExpatCopilot",
     href: "/",
     categoryLabel: "Home",
     pageType: "hub",
     description: "Practical relocation guidance for moving to the Netherlands — guides, tools, services, and city overviews.",
     keywords: ["expat", "netherlands", "relocation", "move", "guides", "tools"],
     searchText: joinSearchParts(
-      "ExpatLife",
+      "ExpatCopilot",
       "Netherlands relocation",
       "guides tools services cities",
       "expat move"
@@ -345,7 +345,7 @@ export function buildAllSearchDocuments(): SearchDocument[] {
   }> = [
     {
       href: "/about/",
-      title: "About ExpatLife",
+      title: "About ExpatCopilot",
       description: "Who we are, how we help expats plan moves to the Netherlands, and our editorial approach.",
       keywords: ["about", "company", "team"],
     },
@@ -358,7 +358,7 @@ export function buildAllSearchDocuments(): SearchDocument[] {
     {
       href: "/how-this-site-works/",
       title: "How this site works",
-      description: "How guides, tools, and provider information fit together on ExpatLife.",
+      description: "How guides, tools, and provider information fit together on ExpatCopilot.",
       keywords: ["how", "works", "guides", "tools"],
     },
     {

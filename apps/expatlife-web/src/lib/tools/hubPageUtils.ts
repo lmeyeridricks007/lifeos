@@ -92,7 +92,7 @@ export function getAllToolsHubJsonLd() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: "Netherlands tools",
-    description: "ExpatLife tools catalog for the Netherlands.",
+    description: "ExpatCopilot tools catalog for the Netherlands.",
     url: new URL("/netherlands/tools/", SITE_URL).toString(),
     hasPart: categories.map((category) => ({
       "@type": "CollectionPage",

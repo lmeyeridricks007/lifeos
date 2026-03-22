@@ -14,6 +14,7 @@ import {
 /** Static list (client-safe); mirrors `quickLinkData` — server `/search` page filters the same set with `isRouteLive`. */
 import { QUICK_LINK_DEFINITIONS } from "@/src/lib/search/quickLinkData";
 import { SearchPreviewHits } from "./SearchPreviewHits";
+import { trackSearchUsed } from "@/lib/analytics/track";
 
 type MobileSearchOverlayProps = {
   isOpen: boolean;
@@ -70,6 +71,7 @@ export function MobileSearchOverlay({ isOpen, onClose }: MobileSearchOverlayProp
       e.preventDefault();
       const q = query.trim();
       if (q) {
+        trackSearchUsed({ query: q, source: "mobile_overlay" });
         onClose();
         router.push(`/search?q=${encodeURIComponent(q)}`);
       }

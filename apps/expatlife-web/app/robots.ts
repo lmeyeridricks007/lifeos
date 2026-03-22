@@ -1,13 +1,13 @@
 import type { MetadataRoute } from "next";
-import { getSiteOrigin } from "@/lib/site-origin";
-
-const baseUrl = getSiteOrigin();
+import { getSeoPublicOrigin } from "@/lib/site-origin";
 
 /**
  * Crawlers: allow public pages; block implementation and server-only routes.
- * Sitemap URL uses `getSiteOrigin()` so production uses `NEXT_PUBLIC_SITE_URL` (see `lib/site-origin.ts`).
+ * Sitemap URL uses `getSeoPublicOrigin()` so production lists https://www.expatcopilot.com/sitemap.xml
+ * when `NEXT_PUBLIC_SITE_URL` is unset (see `lib/site-origin.ts`).
  */
 export default function robots(): MetadataRoute.Robots {
+  const baseUrl = getSeoPublicOrigin();
   return {
     rules: {
       userAgent: "*",

@@ -1,7 +1,21 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#F6F9FF"/>
-  <circle cx="980" cy="120" r="180" fill="#DBEAFE"/>
-  <circle cx="1060" cy="530" r="180" fill="#CFFAFE"/>
-  <text x="120" y="280" fill="#0F172A" font-size="72" font-family="Inter, Arial" font-weight="700">ExpatLife</text>
-  <text x="120" y="345" fill="#334155" font-size="34" font-family="Inter, Arial">Move to the Netherlands with practical clarity</text>
+  <defs>
+    <linearGradient id="ogGrad" x1="80" y1="60" x2="200" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="0.45" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#0369a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#F0F9FF"/>
+  <circle cx="980" cy="120" r="180" fill="#BAE6FD" opacity="0.5"/>
+  <circle cx="1060" cy="530" r="180" fill="#A5F3FC" opacity="0.45"/>
+  <rect x="120" y="168" width="88" height="88" rx="22" fill="url(#ogGrad)"/>
+  <path
+    fill="#fff"
+    fill-rule="evenodd"
+    d="M164 196a3.5 3.5 0 00-3.5 3.5c0 2.33 3.5 8.28 3.5 8.28s3.5-5.95 3.5-8.28A3.5 3.5 0 00164 196zm0 4.42a.92.92 0 110-1.84.92.92 0 010 1.84z"
+    opacity="0.98"
+  />
+  <text x="230" y="248" fill="#0F172A" font-size="72" font-family="Inter, Arial, sans-serif" font-weight="700">ExpatCopilot</text>
+  <text x="120" y="345" fill="#334155" font-size="34" font-family="Inter, Arial, sans-serif">Move to the Netherlands with practical clarity</text>
 </svg>

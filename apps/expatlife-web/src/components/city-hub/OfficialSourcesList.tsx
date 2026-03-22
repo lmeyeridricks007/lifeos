@@ -1,4 +1,5 @@
 import type { CityOfficialSource } from "@/src/lib/city-hub/types";
+import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
 
 /**
  * Lists official or trusted sources with links. Use on guides and service pages for E-E-A-T:
@@ -20,15 +21,17 @@ export function OfficialSourcesList({ sources }: { sources: CityOfficialSource[]
           <ul className="mt-3 space-y-2">
             {items.map((src) => (
               <li key={src.url}>
-                <a
+                <TrackedExternalLink
                   href={src.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  linkType="official_source"
+                  linkText={src.label}
                   className="text-sm font-medium text-brand-700 hover:text-brand-800 underline"
                 >
                   {src.label}
                   <span className="ml-1" aria-hidden>→</span>
-                </a>
+                </TrackedExternalLink>
               </li>
             ))}
           </ul>

@@ -13,6 +13,7 @@ import { SearchPreviewHits } from "./SearchPreviewHits";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/cn";
+import { trackSearchUsed } from "@/lib/analytics/track";
 
 type Variant = "header" | "page";
 
@@ -64,10 +65,11 @@ export function SearchFieldWithPreview({ variant, id, initialQuery = "", onNavig
       const q = query.trim();
       setPanelOpen(false);
       if (!q) return;
+      trackSearchUsed({ query: q, source: variant === "header" ? "header" : "page" });
       onNavigate?.();
       router.push(`/search?q=${encodeURIComponent(q)}`);
     },
-    [query, router, onNavigate]
+    [query, router, onNavigate, variant]
   );
 
   const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {

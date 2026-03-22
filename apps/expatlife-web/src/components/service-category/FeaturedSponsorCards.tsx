@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { ExternalLink, Briefcase, Building2, Copy, Check } from "lucide-react";
 import type { FeaturedSponsorExample } from "@/src/lib/service-category/types";
+import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
 
 /** Resolve logo URL: use apistemic when src is a Clearbit URL (Clearbit API was discontinued). */
 function resolveLogoUrl(src: string): string {
@@ -116,28 +117,32 @@ export function FeaturedSponsorCards({
             ) : null}
             <div className="mt-auto flex flex-wrap gap-2 border-t border-slate-100 p-4 pt-3">
               {s.websiteUrl ? (
-                <a
+                <TrackedExternalLink
                   href={s.websiteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  linkType="provider"
+                  linkText="Visit website"
                   className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50"
                 >
                   <Building2 className="h-3.5 w-3.5" />
                   Visit website
                   <ExternalLink className="h-3 w-3" />
-                </a>
+                </TrackedExternalLink>
               ) : null}
               {s.careersUrl ? (
-                <a
+                <TrackedExternalLink
                   href={s.careersUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  linkType="provider"
+                  linkText="Careers"
                   className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50"
                 >
                   <Briefcase className="h-3.5 w-3.5" />
                   Careers
                   <ExternalLink className="h-3 w-3" />
-                </a>
+                </TrackedExternalLink>
               ) : null}
             </div>
           </article>

@@ -58,7 +58,7 @@ function parseFacilitatorsFromMarkdown(text: string): { name: string; url?: stri
 async function main() {
   console.log("Fetching", RVO_FACILITATOR_URL);
   const res = await fetch(RVO_FACILITATOR_URL, {
-    headers: { "User-Agent": "ExpatLife/1.0 (startup facilitator ingestion)" },
+    headers: { "User-Agent": "ExpatCopilot/1.0 (startup facilitator ingestion)" },
   });
   if (!res.ok) {
     throw new Error(`Fetch failed: ${res.status} ${res.statusText}`);

@@ -22,7 +22,7 @@ export const GENERIC_PHASE_TASKS: Record<PlanPhaseId, PlanTask[]> = {
     {
       id: "read-full-visa-guide",
       title: "Read the full visa guide for your route",
-      explanation: "Use the ExpatLife visa guide (or IND page) for your route to understand eligibility, documents, and process.",
+      explanation: "Use the ExpatCopilot visa guide (or IND page) for your route to understand eligibility, documents, and process.",
       whyItMatters: "Reduces surprises and missing documents later.",
       phase: "confirm-route",
       group: "do-now",

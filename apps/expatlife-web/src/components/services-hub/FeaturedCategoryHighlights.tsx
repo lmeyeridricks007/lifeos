@@ -1,12 +1,17 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { FeaturedCategoryHighlight } from "@/src/lib/services-hub/types";
 import { filterLiveInternalLinks, isRouteLive } from "@/src/lib/routes/routeStatus";
+import { trackCtaClick, trackServiceClick } from "@/lib/analytics/track";
 
 export function FeaturedCategoryHighlights({
   highlights,
 }: {
   highlights: FeaturedCategoryHighlight[];
 }) {
+  const pathname = usePathname();
   const rows = highlights.filter((h) => isRouteLive(h.href));
   return (
     <div className="space-y-6">
@@ -24,6 +29,15 @@ export function FeaturedCategoryHighlights({
             <Link
               href={h.href}
               className="inline-flex items-center rounded-lg border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-800 hover:bg-slate-100"
+              onClick={() =>
+                trackServiceClick({
+                  service_name: h.title,
+                  service_slug: h.slug,
+                  source_page: pathname ?? "",
+                  section_name: "featured_category_highlights",
+                  card_type: "featured_category",
+                })
+              }
             >
               Compare options →
             </Link>
@@ -32,6 +46,13 @@ export function FeaturedCategoryHighlights({
                 key={g.href}
                 href={g.href}
                 className="text-sm font-medium text-brand-700 hover:text-brand-800 underline"
+                onClick={() =>
+                  trackCtaClick({
+                    cta_name: g.label,
+                    page_context: pathname ?? "",
+                    destination_href: g.href,
+                  })
+                }
               >
                 {g.label}
               </Link>

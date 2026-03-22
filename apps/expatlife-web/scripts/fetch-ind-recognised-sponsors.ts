@@ -117,7 +117,7 @@ async function main() {
   } else {
     console.log("Fetching", IND_REGISTER_URL, "...");
     const res = await fetch(IND_REGISTER_URL, {
-      headers: { "User-Agent": "ExpatLife/1.0 (IND register ingestion)" },
+      headers: { "User-Agent": "ExpatCopilot/1.0 (IND register ingestion)" },
     });
     if (!res.ok) throw new Error(`Fetch failed: ${res.status} ${res.statusText}`);
     text = await res.text();

@@ -11,7 +11,6 @@ export const aboutPage = {
       "Learn about ExpatCopilot, a practical relocation platform built to help expats move to the Netherlands with guides, tools, city insights, and trusted service discovery.",
     keywords: [
       "about expatcopilot",
-      "about expatlife",
       "expat relocation platform netherlands",
       "relocation guides netherlands expats",
       "trusted expat guide netherlands",

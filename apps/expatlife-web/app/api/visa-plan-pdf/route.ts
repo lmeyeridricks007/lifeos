@@ -192,7 +192,7 @@ export async function POST(request: NextRequest) {
       doc.switchToPage(i);
       doc.fontSize(9).font("Helvetica").fillColor("#9ca3af");
       doc.text(
-        `Page ${i + 1} of ${range.count}  ·  ExpatLife Visa Application Plan`,
+        `Page ${i + 1} of ${range.count}  ·  ExpatCopilot Visa Application Plan`,
         MARGIN,
         PAGE_HEIGHT - BOTTOM_MARGIN + 12,
         { align: "center", width: CONTENT_WIDTH }

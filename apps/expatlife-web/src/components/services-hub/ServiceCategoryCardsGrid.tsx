@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   ArrowRight,
   Heart,
@@ -15,6 +18,7 @@ import {
 } from "lucide-react";
 import type { ServiceCategoryCard } from "@/src/lib/services-hub/types";
 import { isRouteLive } from "@/src/lib/routes/routeStatus";
+import { trackServiceClick } from "@/lib/analytics/track";
 
 const SLUG_TO_ICON: Record<string, LucideIcon> = {
   "health-insurance": Heart,
@@ -34,6 +38,7 @@ function getIconForSlug(slug: string): LucideIcon {
 }
 
 export function ServiceCategoryCardsGrid({ categories }: { categories: ServiceCategoryCard[] }) {
+  const pathname = usePathname();
   const visible = categories.filter((c) => isRouteLive(c.href));
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -44,6 +49,15 @@ export function ServiceCategoryCardsGrid({ categories }: { categories: ServiceCa
             key={cat.slug}
             href={cat.href}
             className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow"
+            onClick={() =>
+              trackServiceClick({
+                service_name: cat.name,
+                service_slug: cat.slug,
+                source_page: pathname ?? "",
+                section_name: "services_hub_categories",
+                card_type: "service_category",
+              })
+            }
           >
             <div className="flex items-start gap-3">
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-brand-50 text-brand-600">

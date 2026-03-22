@@ -74,19 +74,19 @@ function toFlagEmoji(code: string): string {
 }
 
 export const metadata: Metadata = cloneSafeMetadata({
-  title: "Moving to the Netherlands from Your Country | ExpatLife",
+  title: "Moving to the Netherlands from Your Country | ExpatCopilot",
   description:
     "Explore country-specific relocation guides for moving to the Netherlands, with origin-based planning notes, document guidance, route context, and links to the right tools.",
   alternates: { canonical },
   openGraph: {
-    title: "Moving to the Netherlands from Your Country | ExpatLife",
+    title: "Moving to the Netherlands from Your Country | ExpatCopilot",
     description:
       "Explore country-specific relocation guides for moving to the Netherlands, with origin-based planning notes, document guidance, route context, and links to the right tools.",
     url: canonical,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Moving to the Netherlands from Your Country | ExpatLife",
+    title: "Moving to the Netherlands from Your Country | ExpatCopilot",
     description:
       "Explore country-specific relocation guides for moving to the Netherlands, with origin-based planning notes, document guidance, and links to the right tools.",
   },

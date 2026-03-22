@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { FormEvent } from "react";
+import { trackContactSubmit } from "@/lib/analytics/track";
 
 const FORMSPREE_ACTION = "https://formspree.io/f/mojkdogo";
 
@@ -36,14 +37,17 @@ export function ContactForm({ topics }: Props) {
       });
 
       if (res.ok) {
+        trackContactSubmit({ ok: true });
         setStatus("success");
         form.reset();
       } else {
         const data = await res.json().catch(() => ({}));
+        trackContactSubmit({ ok: false });
         setStatus("error");
         setErrorMessage(data.error || "Something went wrong. Please try again.");
       }
     } catch {
+      trackContactSubmit({ ok: false });
       setStatus("error");
       setErrorMessage("Network error. Please try again.");
     }

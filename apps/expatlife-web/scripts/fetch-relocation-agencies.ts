@@ -63,7 +63,7 @@ function inferEcosystem(sourcePage: string): string {
 
 async function fetchPage(url: string): Promise<string> {
   const res = await fetch(url, {
-    headers: { "User-Agent": "ExpatLife/1.0 (relocation provider ingestion)" },
+    headers: { "User-Agent": "ExpatCopilot/1.0 (relocation provider ingestion)" },
   });
   if (!res.ok) throw new Error(`Fetch failed: ${res.status} ${url}`);
   return res.text();

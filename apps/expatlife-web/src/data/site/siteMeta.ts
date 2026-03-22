@@ -13,8 +13,8 @@ export const SITE_URL = getSiteOrigin();
 /** For schema inLanguage. */
 export const SITE_LANG = "en";
 
-/** Optional: add when a real logo URL is available. Do not invent. */
-export const SITE_LOGO_URL: string | undefined = undefined;
+/** Absolute logo URL for JSON-LD; matches `app/icon.svg` (favicon / app icon). */
+export const SITE_LOGO_URL = `${getSiteOrigin()}/icon.svg`;
 
 /** Optional: add only real, public social profile URLs. Do not invent. */
 export const SITE_SAME_AS: string[] = [];
