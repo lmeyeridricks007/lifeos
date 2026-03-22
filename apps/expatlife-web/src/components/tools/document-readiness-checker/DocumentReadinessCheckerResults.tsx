@@ -233,7 +233,7 @@ export function DocumentReadinessCheckerResults({ result, answers, onStartOver }
             </div>
             <Button
               variant="secondary"
-              size="sm"
+              className="min-h-0 px-3 py-2 text-xs"
               onClick={handleDownloadPdf}
               disabled={isDownloadingPdf}
             >
@@ -329,23 +329,23 @@ export function DocumentReadinessCheckerResults({ result, answers, onStartOver }
         </ul>
         <div className="mt-4 flex flex-wrap gap-3">
           <Link href="/netherlands/moving/tools/relocation-cost-estimator/">
-            <Button variant="secondary" size="sm">
+            <Button variant="secondary" className="min-h-0 px-3 py-2 text-xs">
               Estimate relocation cost
             </Button>
           </Link>
           <Link href="/netherlands/moving/tools/moving-checklist/">
-            <Button variant="secondary" size="sm">
+            <Button variant="secondary" className="min-h-0 px-3 py-2 text-xs">
               Generate moving checklist
             </Button>
           </Link>
           <Link href="/netherlands/moving/tools/first-90-days/">
-            <Button variant="secondary" size="sm">
+            <Button variant="secondary" className="min-h-0 px-3 py-2 text-xs">
               Plan your first 90 days
             </Button>
           </Link>
           {result.recommendedGuides[0] && (
             <Link href={result.recommendedGuides[0].href}>
-              <Button variant="secondary" size="sm">
+              <Button variant="secondary" className="min-h-0 px-3 py-2 text-xs">
                 View visa guide
               </Button>
             </Link>

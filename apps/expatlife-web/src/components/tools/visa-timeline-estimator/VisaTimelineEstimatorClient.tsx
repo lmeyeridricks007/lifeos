@@ -469,7 +469,8 @@ export function VisaTimelineEstimatorClient({ initialPrefill }: Props) {
                 <div>
                   <span className="text-xs font-semibold uppercase text-slate-500">Country</span>
                   <p className="text-sm font-medium text-slate-800">
-                    {COUNTRY_SELECT_OPTIONS.find((c) => c.value === answers.countryCode)?.label ?? answers.countryCode || "—"}
+                    {COUNTRY_SELECT_OPTIONS.find((c) => c.value === answers.countryCode)?.label ??
+                      (answers.countryCode || "—")}
                   </p>
                 </div>
                 <div>

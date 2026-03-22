@@ -34,7 +34,7 @@ export default function SourcesPage() {
             ))}
           {"groups" in section && (
             <div className="mt-4 space-y-3">
-              {(section as { groups: Array<{ title: string; description: string }> }).groups.map(
+              {(section as unknown as { groups: Array<{ title: string; description: string }> }).groups.map(
                 (g, i) => (
                   <div
                     key={i}
@@ -54,7 +54,7 @@ export default function SourcesPage() {
           )}
           {"sources" in section && (
             <ul className="mt-4 space-y-3">
-              {((section as { sources: SourceItem[] }).sources).map((s, i) => (
+              {((section as unknown as { sources: SourceItem[] }).sources).map((s, i) => (
                 <li
                   key={i}
                   className="rounded-lg border border-slate-200 bg-white p-3 shadow-sm"

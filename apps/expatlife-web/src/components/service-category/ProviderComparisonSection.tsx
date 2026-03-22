@@ -240,7 +240,9 @@ export function ProviderComparisonSection({
     });
     const list: { id: string; label: string }[] = [];
     types.forEach((t) => list.push({ id: t, label: PROVIDER_TYPE_LABELS[t] ?? t }));
-    [...locations].sort((a, b) => a.localeCompare(b)).forEach((loc) => list.push({ id: loc, label: loc }));
+    Array.from(locations)
+      .sort((a, b) => a.localeCompare(b))
+      .forEach((loc) => list.push({ id: loc, label: loc }));
     if (hasEnglish) list.push({ id: "english", label: "English support" });
     if (hasFeatured) list.push({ id: "featured", label: "Featured only" });
     return list;

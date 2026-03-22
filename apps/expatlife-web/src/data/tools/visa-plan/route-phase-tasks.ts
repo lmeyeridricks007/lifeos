@@ -522,7 +522,11 @@ export function getPhaseTitle(phaseId: PlanPhaseId): string {
 
 export function getHouseholdExtraTasks(householdType: string, includesPets: boolean): PlanTask[] {
   const tasks: PlanTask[] = [];
-  if (HOUSEHOLD_EXTRA_TASKS[householdType]) tasks.push(...HOUSEHOLD_EXTRA_TASKS[householdType]);
-  if (includesPets && HOUSEHOLD_EXTRA_TASKS.pet) tasks.push(...HOUSEHOLD_EXTRA_TASKS.pet);
+  const byHousehold = HOUSEHOLD_EXTRA_TASKS[householdType];
+  if (byHousehold) tasks.push(...byHousehold);
+  if (includesPets) {
+    const petTasks = HOUSEHOLD_EXTRA_TASKS.pet;
+    if (petTasks) tasks.push(...petTasks);
+  }
   return tasks;
 }

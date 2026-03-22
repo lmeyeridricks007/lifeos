@@ -135,7 +135,7 @@ export function MovingHubClient({
                 description={ref.description}
                 icon={<Icon className="h-4 w-4" />}
                 badge={ref.type === "guide" || ref.type === "hub" ? "Guide" : undefined}
-                status={ref.status}
+                status={ref.status === "coming_soon" ? "coming_soon" : undefined}
               />
             );
           })}

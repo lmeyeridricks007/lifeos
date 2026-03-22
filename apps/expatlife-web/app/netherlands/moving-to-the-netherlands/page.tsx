@@ -35,15 +35,21 @@ function resolveScenarios(
   }>,
   linkRegistry: Parameters<typeof resolveReadingOrder>[0]
 ): ResolvedScenario[] {
-  return scenarios.map((s) => ({
-    id: s.id,
-    chips: s.chips,
-    personaTitle: s.personaTitle,
-    whatMatters: s.whatMatters,
-    readingOrderLinks: resolveReadingOrder(linkRegistry, s.readingOrder),
-    startToolLink: s.startTool?.key ? resolveLinkFromRegistry(linkRegistry, s.startTool.key) : null,
-    unknownsToConfirm: s.unknownsToConfirm,
-  }));
+  return scenarios.map((s) => {
+    const startToolLink =
+      s.startTool?.key != null && s.startTool.key !== ""
+        ? resolveLinkFromRegistry(linkRegistry, s.startTool.key) ?? null
+        : null;
+    return {
+      id: s.id,
+      chips: s.chips,
+      personaTitle: s.personaTitle,
+      whatMatters: s.whatMatters,
+      readingOrderLinks: resolveReadingOrder(linkRegistry, s.readingOrder),
+      startToolLink,
+      unknownsToConfirm: s.unknownsToConfirm,
+    };
+  });
 }
 
 // Static metadata to avoid DataCloneError (Next.js clones metadata; async generateMetadata can trigger unsupported types).
@@ -59,7 +65,9 @@ export const metadata: Metadata = buildSocialMetadata({
 type PageProps = { searchParams?: Promise<{ from?: string }> | { from?: string } };
 
 export default async function MovingToNetherlandsPillarPage(props: PageProps) {
-  const searchParams = await Promise.resolve(props.searchParams ?? {});
+  const raw = props.searchParams;
+  const searchParams: { from?: string } =
+    raw !== undefined && raw !== null ? await Promise.resolve(raw) : {};
   const originCountry = typeof searchParams.from === "string" ? searchParams.from : undefined;
 
   const content = await getNlMovingPillarContent();

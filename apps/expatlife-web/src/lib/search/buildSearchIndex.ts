@@ -171,14 +171,16 @@ export function buildAllSearchDocuments(): SearchDocument[] {
 
   for (const card of NETHERLANDS_SERVICES_CATEGORIES) {
     const full = catBySlug.get(card.slug);
-    const kw = [...(card.examples ?? []), SERVICE_GROUP_LABELS[card.group] ?? card.group];
+    const group = card.group;
+    const groupLabel = group != null ? SERVICE_GROUP_LABELS[group] ?? group : "";
+    const kw = [...(card.examples ?? []), ...(groupLabel ? [groupLabel] : [])];
     out.push({
       id: `service:${card.slug}`,
       title: card.name,
       href: card.href,
       categoryLabel: "Service",
       pageType: "service",
-      section: SERVICE_GROUP_LABELS[card.group],
+      section: group != null ? SERVICE_GROUP_LABELS[group] : undefined,
       description: card.description,
       image: full?.hero?.image?.src ?? null,
       imageAlt: full?.hero?.image?.alt ?? null,

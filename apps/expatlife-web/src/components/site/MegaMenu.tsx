@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import type { RefObject } from "react";
+import type { Ref, RefObject } from "react";
 import type { MegaMenu as MegaMenuType, NavItem } from "@/src/lib/nav/types";
 import { ComingSoonBadge } from "@/components/ui/coming-soon-badge";
 
@@ -30,7 +30,8 @@ function MegaMenuRow({
   onNavigate: () => void;
 }) {
   const active = isItemActive(pathname, entry.href);
-  const isDisabled = entry.disabled || !entry.href;
+  const href = entry.href;
+  const isDisabled = entry.disabled || !href;
 
   if (isDisabled) {
     return (
@@ -52,8 +53,8 @@ function MegaMenuRow({
 
   return (
     <Link
-      ref={attachFirstLinkRef ? firstLinkRef : undefined}
-      href={entry.href}
+      ref={attachFirstLinkRef ? (firstLinkRef as Ref<HTMLAnchorElement>) : undefined}
+      href={href}
       onClick={onNavigate}
       className={`block rounded-lg py-2 px-2 -mx-2 text-sm transition-colors hover:bg-blue-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-inset ${active ? "bg-slate-200/80 font-semibold text-slate-900" : "text-slate-700 focus:bg-blue-100"}`}
     >
@@ -80,7 +81,13 @@ export function MegaMenu({ menu, panelRef, firstLinkRef, onNavigate, pathname }:
   let assignedFirstFocus = false;
   return (
     <div className="absolute inset-x-0 top-full z-50 pt-2">
-      <div ref={panelRef} id="mega-menu-panel" role="dialog" aria-label={`${menu.label} menu`} className="mx-auto w-[90%] max-w-[90vw] px-4 sm:px-6 lg:px-8">
+      <div
+        ref={panelRef as Ref<HTMLDivElement>}
+        id="mega-menu-panel"
+        role="dialog"
+        aria-label={`${menu.label} menu`}
+        className="mx-auto w-[90%] max-w-[90vw] px-4 sm:px-6 lg:px-8"
+      >
         <div className="max-h-[calc(100vh-6rem)] overflow-y-auto rounded-2xl border border-slate-200 bg-white p-6 shadow-xl">
           <div className={`grid gap-6 ${isToolsMenu ? "xl:grid-cols-[3.4fr_1fr_1fr]" : "xl:grid-cols-[3fr_1.1fr_1.1fr]"}`}>
             <div

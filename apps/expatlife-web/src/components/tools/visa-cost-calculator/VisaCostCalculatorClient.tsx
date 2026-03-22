@@ -502,13 +502,15 @@ export function VisaCostCalculatorClient({ initialPrefill, onApplyScenario }: Pr
                 <div>
                   <span className="text-xs font-semibold uppercase text-slate-500">Country</span>
                   <p className="text-sm font-medium text-slate-800">
-                    {COUNTRY_SELECT_OPTIONS.find((c) => c.value === answers.countryCode)?.label ?? answers.countryCode || "—"}
+                    {COUNTRY_SELECT_OPTIONS.find((c) => c.value === answers.countryCode)?.label ??
+                      (answers.countryCode || "—")}
                   </p>
                 </div>
                 <div>
                   <span className="text-xs font-semibold uppercase text-slate-500">Distance</span>
                   <p className="text-sm font-medium text-slate-800">
-                    {TRAVEL_BAND_OPTIONS.find((t) => t.value === answers.travelDistanceBand)?.label ?? answers.travelDistanceBand || "—"}
+                    {TRAVEL_BAND_OPTIONS.find((t) => t.value === answers.travelDistanceBand)?.label ??
+                      (answers.travelDistanceBand || "—")}
                   </p>
                 </div>
                 <div>

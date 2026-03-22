@@ -173,8 +173,9 @@ export function MobileNavDrawer({ isOpen, onClose, onOpenSearch }: MobileNavDraw
                           <ul className="border-l-2 border-slate-200 py-2 pl-4 pr-3">
                             {menu.sections.flatMap((section) =>
                               section.items.map((item, i) => {
-                                const active = isItemActive(pathname, item.href);
-                                const locked = item.disabled || !item.href;
+                                const href = item.href;
+                                const active = isItemActive(pathname, href);
+                                const locked = item.disabled || !href;
                                 return (
                                   <li key={`${section.title}-${item.label}-${i}`}>
                                     {locked ? (
@@ -193,7 +194,7 @@ export function MobileNavDrawer({ isOpen, onClose, onOpenSearch }: MobileNavDraw
                                       </span>
                                     ) : (
                                       <Link
-                                        href={item.href}
+                                        href={href}
                                         onClick={onClose}
                                         className={cn(
                                           "block min-h-[44px] rounded-lg px-2 py-2.5 -mx-2 text-sm leading-snug",

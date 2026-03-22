@@ -1,8 +1,10 @@
-type Props = { disclosure: string[] };
+import { cn } from "@/lib/cn";
 
-export function EditorialDisclosureBlock({ disclosure }: Props) {
+type Props = { disclosure: string[]; className?: string };
+
+export function EditorialDisclosureBlock({ disclosure, className }: Props) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-amber-50/50 p-4">
+    <div className={cn("rounded-xl border border-slate-200 bg-amber-50/50 p-4", className)}>
       <p className="text-xs font-semibold uppercase tracking-wider text-slate-600">
         Editorial disclosure
       </p>

@@ -199,8 +199,12 @@ const OFFICIAL_SOURCES = [
 
 type PageProps = { searchParams?: Promise<Record<string, string | string[] | undefined>> };
 
+type SearchParamsRecord = Record<string, string | string[] | undefined>;
+
 export default async function VisaApplicationPlanPage(props: PageProps) {
-  const searchParams = await Promise.resolve(props.searchParams ?? {}).catch(() => ({}));
+  const raw = props.searchParams;
+  const searchParams: SearchParamsRecord =
+    raw !== undefined && raw !== null ? await Promise.resolve(raw) : {};
   const scenarioId = typeof searchParams.scenario === "string" ? searchParams.scenario : undefined;
   const scenario = scenarioId ? EXAMPLE_SCENARIOS.find((s) => s.id === scenarioId) : undefined;
   const initialPrefill = scenario?.prefilledAnswers;

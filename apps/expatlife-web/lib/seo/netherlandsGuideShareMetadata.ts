@@ -138,11 +138,15 @@ export type NetherlandsGuideShareSlug = keyof typeof ENTRIES;
 
 export function guideShareMetadata(slug: NetherlandsGuideShareSlug): Metadata {
   const e = ENTRIES[slug];
+  const imagePath =
+    "imagePath" in e && typeof (e as { imagePath?: unknown }).imagePath === "string"
+      ? (e as { imagePath: string }).imagePath
+      : undefined;
   return buildSocialMetadata({
     title: e.title,
     description: e.description,
     path: `/netherlands/${slug}/`,
     ogType: "article",
-    ...(e.imagePath ? { imagePath: e.imagePath } : {}),
+    ...(imagePath ? { imagePath } : {}),
   });
 }

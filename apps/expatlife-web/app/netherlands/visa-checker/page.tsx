@@ -437,7 +437,7 @@ export default async function VisaCheckerPage(props: PageProps) {
                     key={t.href}
                     href={t.href}
                     title={t.label}
-                    description={t.description}
+                    description={t.description ?? ""}
                     className="border-l-4 border-l-brand-500/70 border-sky-200/80 bg-white hover:border-brand-300 hover:bg-sky-50/50"
                   />
                 ))}

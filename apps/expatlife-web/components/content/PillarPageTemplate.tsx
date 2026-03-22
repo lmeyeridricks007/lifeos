@@ -10,6 +10,7 @@ import {
   type PillarFaqItem,
 } from "@expatlife/content";
 import type { ResolvedScenario } from "@/components/content/PillarScenarioCards";
+import type { EditorialHeroImage } from "@/src/lib/content/editorialTypes";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { Container } from "@/components/ui/container";
@@ -41,6 +42,11 @@ import { AffiliateSectionBlock } from "@/components/affiliate/AffiliateSectionBl
 import { AffiliateBlockView } from "@/src/components/affiliates/AffiliateBlockView";
 import type { AffiliatePlacement, AffiliateProvider } from "@/src/lib/affiliates/types";
 import { getToolBySlug } from "@/src/lib/tools/getToolBySlug";
+
+function pillarHeroToEditorial(raw: string | null | undefined): EditorialHeroImage | null {
+  if (raw == null || raw === "") return null;
+  return { src: raw, alt: "", priority: true };
+}
 
 export type AffiliateBlockData = {
   title: string;
@@ -192,7 +198,7 @@ export function PillarPageTemplate({
               eyebrow={pageHeader.eyebrow}
               title={pageHeader.title}
               subtitle={pageHeader.subtitle}
-              heroImage={pageHeader.heroImage ?? null}
+              heroImage={pillarHeroToEditorial(pageHeader.heroImage)}
               shareUrl={canonicalUrl}
               pageId={meta.canonicalPath}
             />

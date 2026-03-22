@@ -17,7 +17,9 @@ export const metadata: Metadata = {
 type SearchPageProps = { searchParams: Promise<{ q?: string }> | { q?: string } };
 
 export default async function SearchPage(props: SearchPageProps) {
-  const searchParams = await Promise.resolve(props.searchParams ?? {});
+  const raw = props.searchParams;
+  const searchParams: { q?: string } =
+    raw !== undefined && raw !== null ? await Promise.resolve(raw) : {};
   const q = typeof searchParams.q === "string" ? searchParams.q.trim() : "";
   const results = q ? runSearch(q) : [];
   const quickLinks = getLiveSearchQuickLinks();
