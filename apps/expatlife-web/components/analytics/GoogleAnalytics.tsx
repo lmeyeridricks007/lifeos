@@ -7,7 +7,12 @@ import {
   shouldLoadDirectGa4,
 } from "@/lib/analytics/config";
 
-/** Direct GA4 (gtag.js). Disabled when GTM is enabled — load GA4 tags through the container instead. */
+/**
+ * Direct GA4 via the Google tag (gtag.js): `googletagmanager.com/gtag/js?id=…`
+ * Set `NEXT_PUBLIC_GA_MEASUREMENT_ID` (e.g. G-XX169PYS2J). Uses `send_page_view: false` so
+ * `AnalyticsRouteTracker` avoids duplicate hits on App Router navigations.
+ * Disabled when `NEXT_PUBLIC_USE_GTM=true` — then load GA4 inside the GTM container instead.
+ */
 export function GoogleAnalyticsScripts() {
   if (!isAnalyticsRuntimeEnabled() || !shouldLoadDirectGa4()) return null;
 
