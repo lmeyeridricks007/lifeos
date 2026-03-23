@@ -18,6 +18,7 @@ export const metadata: Metadata = cloneSafeMetadata({
     description: String(nijmegenCityPage.seo.description),
     path: String(path),
     ogType: "article",
+    publishGate: { publish: nijmegenCityPage.publish, publishDate: nijmegenCityPage.publishDate },
   }),
   keywords: nijmegenCityPage.seo.keywords,
 });

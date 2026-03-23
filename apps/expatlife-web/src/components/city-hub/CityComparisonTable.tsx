@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { CityComparisonRow } from "@/src/lib/city-hub/types";
 import { cityComparisonTableRows } from "@/src/data/cities/cityStats";
 import { cn } from "@/lib/cn";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
 
 export function CityComparisonTable({
   heading,
@@ -41,12 +42,16 @@ export function CityComparisonTable({
                 )}
               >
                 <td className="px-4 py-3 font-medium text-slate-900">
-                  <Link
-                    href={row.cityHref}
-                    className="text-brand-700 hover:text-brand-800 underline"
-                  >
-                    {row.city}
-                  </Link>
+                  {isRouteLive(row.cityHref) ? (
+                    <Link
+                      href={row.cityHref}
+                      className="text-brand-700 hover:text-brand-800 underline"
+                    >
+                      {row.city}
+                    </Link>
+                  ) : (
+                    <span className="text-slate-800">{row.city}</span>
+                  )}
                 </td>
                 <td className="px-4 py-3 text-slate-700">{row.bestFor}</td>
                 <td className="px-4 py-3 text-slate-700">{row.typicalJobs}</td>

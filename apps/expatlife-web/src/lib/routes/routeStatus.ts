@@ -15,6 +15,7 @@ import {
   isNetherlandsCitiesHubPath,
   isNetherlandsCitiesHubPubliclyVisible,
 } from "@/src/lib/cities-overview/citiesHubPublishing";
+import { findNetherlandsCityHubByNormalizedPath } from "@/src/lib/city-hub/netherlandsCityHubPages";
 
 export type PublishRouteStatus = "live" | "coming-soon" | "hidden";
 
@@ -39,6 +40,11 @@ export function getRouteStatus(href: string, now: Date = new Date()): PublishRou
   if (!isRegistryScheduledPathPublic(n, now)) return "hidden";
 
   if (isNetherlandsCitiesHubPath(n) && !isNetherlandsCitiesHubPubliclyVisible(now)) {
+    return "hidden";
+  }
+
+  const cityHub = findNetherlandsCityHubByNormalizedPath(n);
+  if (cityHub && !isPubliclyVisible(cityHub.publish, cityHub.publishDate, now)) {
     return "hidden";
   }
 

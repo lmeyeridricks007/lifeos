@@ -12,21 +12,7 @@ import { getPublishedOriginCountryGuides } from "@/src/lib/countries/originCount
 import { NETHERLANDS_SERVICES_CATEGORIES, SERVICE_GROUP_LABELS } from "@/src/data/services/categories";
 import { netherlandsServicesPage } from "@/src/data/services/netherlands-services-page";
 import { netherlandsCitiesOverview } from "@/src/data/cities-overview/netherlands-cities";
-import { amsterdamCityPage } from "@/src/data/cities/amsterdam";
-import { rotterdamCityPage } from "@/src/data/cities/rotterdam";
-import { utrechtCityPage } from "@/src/data/cities/utrecht";
-import { theHagueCityPage } from "@/src/data/cities/the-hague";
-import { eindhovenCityPage } from "@/src/data/cities/eindhoven";
-import { haarlemCityPage } from "@/src/data/cities/haarlem";
-import { groningenCityPage } from "@/src/data/cities/groningen";
-import { delftCityPage } from "@/src/data/cities/delft";
-import { leidenCityPage } from "@/src/data/cities/leiden";
-import { maastrichtCityPage } from "@/src/data/cities/maastricht";
-import { bredaCityPage } from "@/src/data/cities/breda";
-import { tilburgCityPage } from "@/src/data/cities/tilburg";
-import { arnhemCityPage } from "@/src/data/cities/arnhem";
-import { nijmegenCityPage } from "@/src/data/cities/nijmegen";
-import { amstelveenCityPage } from "@/src/data/cities/amstelveen";
+import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
 import { immigrationLawyersCategoryPage } from "@/src/data/services/categories/immigration-lawyers";
@@ -44,7 +30,6 @@ import { SELF_EMPLOYED_VISA } from "@/src/content/visas/self-employed-visa";
 import { STUDENT_VISA } from "@/src/content/visas/student-visa";
 import { PARTNER_FAMILY_VISA } from "@/src/content/visas/partner-family-visa";
 import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
-import type { CityHubPageData } from "@/src/lib/city-hub/types";
 import type { VisaPageData } from "@/src/content/visas/types";
 import type { RegistryGuide } from "@/src/lib/guides/types";
 import type { SearchDocument } from "./searchDocument";
@@ -60,24 +45,6 @@ const SERVICE_CATEGORY_FULL: ServiceCategoryPageData[] = [
   rentalAgenciesCategoryPage,
   relocationAgenciesCategoryPage,
   relocationServicesCategoryPage,
-];
-
-const CITY_PAGES: CityHubPageData[] = [
-  amsterdamCityPage,
-  rotterdamCityPage,
-  utrechtCityPage,
-  theHagueCityPage,
-  eindhovenCityPage,
-  haarlemCityPage,
-  groningenCityPage,
-  delftCityPage,
-  leidenCityPage,
-  maastrichtCityPage,
-  bredaCityPage,
-  tilburgCityPage,
-  arnhemCityPage,
-  nijmegenCityPage,
-  amstelveenCityPage,
 ];
 
 const VISA_PAGES: VisaPageData[] = [
@@ -251,7 +218,7 @@ export function buildAllSearchDocuments(): SearchDocument[] {
     ),
   });
 
-  for (const city of CITY_PAGES) {
+  for (const city of NETHERLANDS_CITY_HUB_PAGES) {
     out.push({
       id: `city:${city.slug}`,
       title: city.hero.title,

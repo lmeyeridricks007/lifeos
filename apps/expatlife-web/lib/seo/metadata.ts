@@ -6,6 +6,7 @@
 import type { Metadata } from "next";
 import { cloneSafeMetadata } from "@/lib/metadata";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { isPubliclyVisible } from "@/src/lib/publishing/isPubliclyVisible";
 
 /** Default OG/Twitter image route (see `app/opengraph-image.tsx`). */
 export const DEFAULT_SHARE_IMAGE_PATH = "/opengraph-image";
@@ -26,6 +27,11 @@ export type SocialPageMetaInput = {
    * Use for the homepage or any title that already includes the full branded string.
    */
   absoluteTitle?: boolean;
+  /**
+   * When the page is not yet publicly visible (scheduled `publishDate` in production), set `robots` noindex
+   * so crawlers that reach the URL do not index it before the sitemap includes it.
+   */
+  publishGate?: { publish?: boolean; publishDate?: string };
 };
 
 function normalizePath(path: string): string {
@@ -105,11 +111,17 @@ export function buildSocialMetadata(input: SocialPageMetaInput): Metadata {
   const d = input.description.trim();
   const normalized: SocialPageMetaInput = { ...input, path, title: t, description: d };
   const titleField = input.absoluteTitle ? { absolute: t } : t;
+  const gate = input.publishGate;
+  const robots =
+    gate != null && !isPubliclyVisible(gate.publish, gate.publishDate, new Date())
+      ? ({ index: false, follow: false } as const)
+      : undefined;
   return cloneSafeMetadata({
     title: titleField,
     description: d,
     alternates: { canonical: path },
     openGraph: buildOpenGraphFields(normalized),
     twitter: buildTwitterFields(normalized),
+    ...(robots ? { robots } : {}),
   });
 }

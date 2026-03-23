@@ -13,7 +13,7 @@ import { filterLiveInternalLinks } from "@/src/lib/routes/routeStatus";
 /** Align with `/sitemap.xml` and registry-driven guides so lists refresh on ISR (e.g. after publish rules). */
 export const revalidate = CONTENT_REVALIDATE;
 
-/** City hubs — keep aligned with `route-registry` `EXTRA_LIVE_PATHS` when adding cities. */
+/** City hubs — filtered by `isRouteLive` (publish gates); list kept aligned with `netherlandsCityHubPages`. */
 const CITY_PAGES = [
   { label: "Amsterdam", href: "/netherlands/amsterdam/" },
   { label: "Rotterdam", href: "/netherlands/rotterdam/" },

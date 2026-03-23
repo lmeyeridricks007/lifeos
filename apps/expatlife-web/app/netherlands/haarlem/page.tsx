@@ -18,6 +18,7 @@ export const metadata: Metadata = cloneSafeMetadata({
     description: String(haarlemCityPage.seo.description),
     path: String(path),
     ogType: "article",
+    publishGate: { publish: haarlemCityPage.publish, publishDate: haarlemCityPage.publishDate },
   }),
   keywords: haarlemCityPage.seo.keywords,
 });

@@ -18,6 +18,7 @@ export const metadata: Metadata = cloneSafeMetadata({
     description: String(utrechtCityPage.seo.description),
     path: String(path),
     ogType: "article",
+    publishGate: { publish: utrechtCityPage.publish, publishDate: utrechtCityPage.publishDate },
   }),
   keywords: utrechtCityPage.seo.keywords,
 });

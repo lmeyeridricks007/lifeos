@@ -18,6 +18,7 @@ export const metadata: Metadata = cloneSafeMetadata({
     description: String(tilburgCityPage.seo.description),
     path: String(path),
     ogType: "article",
+    publishGate: { publish: tilburgCityPage.publish, publishDate: tilburgCityPage.publishDate },
   }),
   keywords: tilburgCityPage.seo.keywords,
 });
