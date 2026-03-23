@@ -14,8 +14,9 @@ import { buildBreadcrumbSchema } from "@/src/lib/seo/breadcrumbSchema";
 import { buildFaqSchema } from "@/src/lib/seo/faqSchema";
 import { EXAMPLE_SCENARIOS } from "@/src/data/tools/visa-cost-calculator/example-scenarios";
 import { RELATED_TOOLS } from "@/src/data/tools/visa-cost-calculator/related-links";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 3600;
+export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = "/netherlands/visa-cost-calculator/";
 const BASE = "/netherlands";

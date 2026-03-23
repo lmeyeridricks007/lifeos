@@ -4,7 +4,9 @@ import {
   renderPlaceholderPage,
 } from "@/src/lib/tools/placeholderRouteFactory";
 
-export const revalidate = 3600;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 export const metadata = {
   title: "Advanced AI Tool (Coming Soon)",
   description: "Advanced AI tool page for future premium ExpatCopilot experiences.",

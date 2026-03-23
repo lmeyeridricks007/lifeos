@@ -5,8 +5,9 @@ import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { DAFT_VISA } from "@/src/content/visas/dutch-american-friendship-treaty";
 import { daftToGuideData } from "@/src/lib/visas/visaToGuideData";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
 const data = daftToGuideData(DAFT_VISA);

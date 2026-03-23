@@ -3,7 +3,10 @@ import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { disclaimerPage } from "@/src/data/legal/disclaimer";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
 import { LastUpdated } from "@/components/ui/LastUpdated";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
+
+export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: disclaimerPage.seo.title,
   description: disclaimerPage.seo.description,

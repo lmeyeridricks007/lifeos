@@ -40,6 +40,11 @@ export function AppClientShell({ children, contentVersion }: AppClientShellProps
   return (
     <CookieConsentProvider>
       <VercelAnalytics />
+      {/* GA/GTM as early in <body> as possible after consent (noscript + head scripts). */}
+      <ConditionalScript category="analytics">
+        <Analytics />
+        <SpeedInsights />
+      </ConditionalScript>
       <Header />
       <main className="min-h-screen min-w-0 py-8 sm:py-10 lg:py-12">{children}</main>
       <Footer contentVersion={contentVersion} />
@@ -49,10 +54,6 @@ export function AppClientShell({ children, contentVersion }: AppClientShellProps
           <CookiePreferencesModal />
         </>
       ) : null}
-      <ConditionalScript category="analytics">
-        <Analytics />
-        <SpeedInsights />
-      </ConditionalScript>
     </CookieConsentProvider>
   );
 }

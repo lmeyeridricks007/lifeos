@@ -17,8 +17,12 @@
  * 2. If it appears in the footer or HTML sitemap lists, update `src/data/site/footer-links.ts`.
  */
 import type { MetadataRoute } from "next";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getSeoPublicOrigin } from "@/lib/site-origin";
 import { collectLiveSitemapNormalizedPaths } from "@/src/lib/sitemap/liveSitemapPaths";
+
+/** Regenerate sitemap on ISR so new/scheduled URLs appear without a full redeploy (aligned with guide pages). */
+export const revalidate = CONTENT_REVALIDATE;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSeoPublicOrigin();

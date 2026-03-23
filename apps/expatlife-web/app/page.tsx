@@ -1,7 +1,10 @@
 import { redirect } from "next/navigation";
 import { getHomeContent } from "@expatlife/content";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
+
+export const revalidate = CONTENT_REVALIDATE;
 /** Plain, clone-safe metadata with Open Graph + Twitter for link previews (before redirect). */
 export async function generateMetadata() {
   const content = await getHomeContent();

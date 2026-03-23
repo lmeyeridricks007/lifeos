@@ -18,6 +18,8 @@ export type Guide = {
   country: string
   cluster: string
   readingTime: string
+  publish?: boolean | undefined
+  publishDate?: string | undefined
   /** MDX file body */
   body: MDX
   slug: string

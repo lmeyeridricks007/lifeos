@@ -7,13 +7,14 @@ import { notFound } from "next/navigation";
 import { GuidePageTemplate } from "@/src/components/guides/GuidePageTemplate";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { ArticleJsonLd, FaqPageJsonLd, HowToJsonLd } from "@/lib/seo/jsonld";
-import { loadGuideBySlug } from "@/src/lib/guides/loadGuide";
+import { isGuidePublishingVisibleBySlug, loadGuideBySlug } from "@/src/lib/guides/loadGuide";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 import { getSiteOrigin } from "@/lib/site-origin";
 
 const baseUrl = getSiteOrigin();
 
 export function GuideBySlugPage({ slug }: { slug: string }) {
+  if (!isGuidePublishingVisibleBySlug(slug)) notFound();
   const data = loadGuideBySlug(slug);
   if (!data) notFound();
 

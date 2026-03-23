@@ -3,14 +3,16 @@ import { notFound } from "next/navigation";
 import { allGuides } from "contentlayer/generated";
 import { Mdx } from "@/components/mdx-components";
 import { Section } from "@/components/ui/section";
-import { loadGuideBySlug } from "@/src/lib/guides/loadGuide";
+import { isGuidePublishingVisibleBySlug, loadGuideBySlug } from "@/src/lib/guides/loadGuide";
+import { isPubliclyVisible } from "@/src/lib/publishing/isPubliclyVisible";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 import { GuidePageTemplate } from "@/src/components/guides/GuidePageTemplate";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 3600;
+export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
 
@@ -34,6 +36,7 @@ type Params = { params: Promise<{ slug: string }> | { slug: string } };
 
 export default async function MovingGuidePage({ params }: Params) {
   const slug = typeof params === "object" && "then" in params ? (await params).slug : params.slug;
+  if (!isGuidePublishingVisibleBySlug(slug)) notFound();
   // Prefer JSON guide (full template: quick answers, sidebar, affiliates, FAQ) when it exists.
   const data = loadGuideBySlug(slug);
   if (data) {
@@ -41,6 +44,9 @@ export default async function MovingGuidePage({ params }: Params) {
   }
   const contentlayerGuide = getContentlayerGuide(slug);
   if (contentlayerGuide) {
+    if (!isPubliclyVisible(contentlayerGuide.publish !== false, contentlayerGuide.publishDate, new Date())) {
+      notFound();
+    }
     return (
       <Section eyebrow="Guide" title={contentlayerGuide.title} subtitle={contentlayerGuide.description}>
         <article className="prose max-w-3xl prose-slate">

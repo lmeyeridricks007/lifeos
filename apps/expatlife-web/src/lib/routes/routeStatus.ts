@@ -6,20 +6,39 @@ import {
   isOriginCountryGuidePath,
   isMovingToolFromCountryPath,
 } from "@/src/data/site/route-registry";
+import {
+  findMovingGuideBySlug,
+  isRegistryScheduledPathPublic,
+} from "@/src/lib/publishing/registryPublishing";
+import { isPubliclyVisible } from "@/src/lib/publishing/isPubliclyVisible";
 
 export type PublishRouteStatus = "live" | "coming-soon" | "hidden";
 
-export function getRouteStatus(href: string): PublishRouteStatus {
+export function getRouteStatus(href: string, now: Date = new Date()): PublishRouteStatus {
   const n = normalizeSitePath(href);
-  if (LIVE_PATHS.has(n) || isOriginCountryGuidePath(href) || isMovingToolFromCountryPath(href)) {
-    return "live";
-  }
   if (COMING_SOON_ROUTES[n] || PLACEHOLDER_TOOL_PATHS.has(n)) return "coming-soon";
-  return "hidden";
+
+  const baseLive =
+    LIVE_PATHS.has(n) || isOriginCountryGuidePath(href) || isMovingToolFromCountryPath(href);
+
+  if (!baseLive) {
+    const m = /^\/netherlands\/moving\/guides\/([a-z0-9-]+)\/$/.exec(n);
+    if (m) {
+      const reg = findMovingGuideBySlug(m[1]);
+      if (reg) {
+        return isPubliclyVisible(reg.publish, reg.publishDate, now) ? "live" : "hidden";
+      }
+    }
+    return "hidden";
+  }
+
+  if (!isRegistryScheduledPathPublic(n, now)) return "hidden";
+
+  return "live";
 }
 
-export function isRouteLive(href: string): boolean {
-  return getRouteStatus(href) === "live";
+export function isRouteLive(href: string, now?: Date): boolean {
+  return getRouteStatus(href, now) === "live";
 }
 
 export function isRouteComingSoon(href: string): boolean {

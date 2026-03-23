@@ -6,7 +6,10 @@ import { Container } from "@/components/ui/container";
 import { NETHERLANDS_SERVICES_CATEGORIES } from "@/src/data/services/categories";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
+
+export const revalidate = CONTENT_REVALIDATE;
 const baseUrl = getSiteOrigin();
 
 type PageProps = { params: Promise<{ slug: string }> };

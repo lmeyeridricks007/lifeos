@@ -21,7 +21,7 @@ import { RelatedGuidesSection } from "@/src/components/city-hub/RelatedGuidesGri
 import { ToolCards } from "@/src/components/city-hub/ToolCards";
 import { OfficialSourcesList } from "@/src/components/city-hub/OfficialSourcesList";
 import { startupVisaAdvisorsCategoryPage } from "@/src/data/services/categories/startup-visa-advisors";
-import { startupFacilitators } from "@/src/data/services/providers/startup-visa-advisors";
+import { startupFacilitators } from "@/src/data/companies-registry";
 import type { CityRelatedGuideBlock } from "@/src/lib/city-hub/types";
 import type { ServiceCategoryProviderCard } from "@/src/lib/service-category/types";
 import type { CityToolCard } from "@/src/lib/city-hub/types";
@@ -76,7 +76,9 @@ export const metadata: Metadata = {
   },
 };
 
-export const revalidate = 86400;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 
 function ItemListJsonLd() {
   const jsonLd = {

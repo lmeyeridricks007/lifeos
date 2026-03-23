@@ -4,7 +4,7 @@
  */
 
 import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
-import { immigrationLawyersProviders } from "@/src/data/services/providers/immigration-lawyers";
+import { immigrationLawyersProviders } from "@/src/data/companies-registry";
 import { immigrationLawyersOfficialSources } from "@/src/data/services/official-sources/immigration-lawyers";
 
 /* Hero image prompt for future asset/CMS:

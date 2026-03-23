@@ -4,7 +4,7 @@
  */
 
 import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
-import { banksProviders } from "@/src/data/services/providers/banks";
+import { banksProviders } from "@/src/data/companies-registry";
 import { banksOfficialSources } from "@/src/data/services/official-sources/banks";
 
 /* Hero image prompt for future asset/CMS:

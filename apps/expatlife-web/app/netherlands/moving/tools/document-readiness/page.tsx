@@ -27,7 +27,9 @@ import { buildFaqSchema } from "@/src/lib/seo/faqSchema";
 import { DOCUMENT_READINESS_RELATED_GUIDES, DOCUMENT_READINESS_RELATED_TOOLS } from "@/src/lib/tools/shared/toolInternalLinks";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
 
-export const revalidate = 3600;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = "/netherlands/moving/tools/document-readiness/";
 

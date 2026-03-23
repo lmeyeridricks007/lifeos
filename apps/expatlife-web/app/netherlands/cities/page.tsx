@@ -25,6 +25,7 @@ import { getCitiesOverviewServices } from "@/src/data/cities-overview/services";
 import type { CityRelatedGuideBlock } from "@/src/lib/city-hub/types";
 import type { CityOfficialSource } from "@/src/lib/city-hub/types";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 const baseUrl = getSiteOrigin();
 const path = netherlandsCitiesOverview.path;
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 export default function NetherlandsCitiesPage() {
   const services = getCitiesOverviewServices();

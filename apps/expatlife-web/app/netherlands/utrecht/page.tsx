@@ -7,6 +7,7 @@ import { CityHubTemplate } from "@/src/components/city-hub/CityHubTemplate";
 import { utrechtCityPage } from "@/src/data/cities/utrecht";
 import { getUtrechtServices } from "@/src/data/services/utrecht";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 const baseUrl = getSiteOrigin();
 const path = utrechtCityPage.path;
@@ -21,7 +22,7 @@ export const metadata: Metadata = cloneSafeMetadata({
   keywords: utrechtCityPage.seo.keywords,
 });
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 export default function UtrechtCityPage() {
   const allServices = getUtrechtServices();

@@ -2,8 +2,9 @@ import { AllToolsHubTemplate } from "@/src/components/tools/AllToolsHubTemplate"
 import { getFeaturedTools } from "@/src/lib/tools/getFeaturedTools";
 import { loadToolCategories } from "@/src/lib/tools/loadToolRegistry";
 import { getAllToolsHubJsonLd, getAllToolsHubMetadata } from "@/src/lib/tools/hubPageUtils";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 3600;
+export const revalidate = CONTENT_REVALIDATE;
 export const metadata = getAllToolsHubMetadata();
 
 export default function NetherlandsToolsHubPage() {

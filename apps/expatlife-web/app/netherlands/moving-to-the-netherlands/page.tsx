@@ -19,7 +19,9 @@ import { OriginCountryGuideGrid } from "@/src/components/guides/OriginCountryGui
 import { getSiteOrigin } from "@/lib/site-origin";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
 
-export const revalidate = 86400;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
 

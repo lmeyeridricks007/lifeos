@@ -5,8 +5,9 @@ import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { HIGHLY_SKILLED_MIGRANT_VISA } from "@/src/content/visas/highly-skilled-migrant";
 import { highlySkilledMigrantToGuideData } from "@/src/lib/visas/visaToGuideData";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
 const data = highlySkilledMigrantToGuideData(HIGHLY_SKILLED_MIGRANT_VISA);

@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { affiliateDisclosurePage } from "@/src/data/trust/affiliate-disclosure";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
+
+export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: affiliateDisclosurePage.seo.title,
   description: affiliateDisclosurePage.seo.description,

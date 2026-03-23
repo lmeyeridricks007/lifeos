@@ -32,6 +32,10 @@ export type ToolRecord = {
   exampleInputs?: string[];
   exampleOutputs?: string[];
   mostUsefulFor?: string;
+  /** Explicit `false` hides the tool. Omitted/`true` = allowed if `publishDate` has passed. */
+  publish?: boolean;
+  /** `YYYY-MM-DD` (UTC start of day) or full ISO datetime. Omitted = no date gate. */
+  publishDate?: string;
 };
 
 export type ToolCategory = {

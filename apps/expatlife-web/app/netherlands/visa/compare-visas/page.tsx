@@ -29,6 +29,7 @@ import type { SituationCard } from "@/src/data/visa-comparison/situation-cards";
 import { PillarTOC } from "@/components/content/PillarTOC";
 import { RecommendedImmigrationLawyersSection } from "@/src/components/tools/shared/RecommendedImmigrationLawyersSection";
 import { CompareVisasFilterChips } from "./CompareVisasFilterChips";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 /** Icon and accent style per situation card id for the "Compare by your situation" section. */
 const SITUATION_CARD_STYLES: Record<
@@ -73,7 +74,7 @@ const SITUATION_CARD_STYLES: Record<
   },
 };
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = "/netherlands/visa/compare-visas/";
 const BASE = "/netherlands";

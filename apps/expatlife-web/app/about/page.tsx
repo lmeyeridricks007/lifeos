@@ -10,6 +10,9 @@ import {
   getBaseUrl,
 } from "@/src/lib/seo/schema";
 import { aboutPage } from "@/src/data/site/about";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 
 const path = "/about/";
 

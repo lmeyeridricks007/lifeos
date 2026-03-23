@@ -6,7 +6,7 @@
 
 import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
 import { rentalAgenciesOfficialSources } from "@/src/data/services/official-sources/rental-agencies";
-import { rentalAgencies, rentalAgenciesMetadata } from "@/src/data/services/providers/rental-agencies";
+import { rentalAgencies, rentalAgenciesMetadata } from "@/src/data/companies-registry";
 
 /* Hero image prompt for future asset:
    "Cinematic editorial image for a Dutch rental agencies page for expats, showing apartment-viewing notes, rental search materials, keys, housing paperwork, and a subtle Dutch residential setting, natural daylight, premium relocation magazine aesthetic, wide 16:9 banner."

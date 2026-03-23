@@ -12,7 +12,7 @@
  * Usage:
  *   pnpm tsx scripts/build-housing-platforms-dataset.ts
  *
- * Output: Updates src/data/services/providers/housing-platforms.ts (or a JSON
+ * Output: Updates src/data/companies-registry.ts housingPlatforms (or a JSON
  * file that the app imports). For a full pipeline, extend to:
  * 1. Read curated provider list (e.g. from a config or JSON)
  * 2. Optionally fetch provider pages to validate URLs and extract descriptions
@@ -32,7 +32,7 @@ function main() {
   console.log("Last checked date:", LAST_CHECKED);
   console.log("");
   console.log("The canonical provider list is maintained in:");
-  console.log("  src/data/services/providers/housing-platforms.ts");
+  console.log("  src/data/companies-registry.ts");
   console.log("");
   console.log("To refresh the dataset:");
   console.log("  1. Update the housingPlatforms array with new or changed providers.");

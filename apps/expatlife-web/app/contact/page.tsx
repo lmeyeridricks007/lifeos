@@ -3,7 +3,10 @@ import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { contactPage } from "@/src/data/site/contact";
 import { ContactForm } from "@/src/components/contact/ContactForm";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
+
+export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: contactPage.seo.title,
   description: contactPage.seo.description,

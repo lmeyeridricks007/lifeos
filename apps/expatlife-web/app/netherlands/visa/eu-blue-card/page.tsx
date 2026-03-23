@@ -5,8 +5,9 @@ import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { EU_BLUE_CARD_VISA } from "@/src/content/visas/eu-blue-card";
 import { euBlueCardToGuideData } from "@/src/lib/visas/visaToGuideData";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
 const data = euBlueCardToGuideData(EU_BLUE_CARD_VISA);

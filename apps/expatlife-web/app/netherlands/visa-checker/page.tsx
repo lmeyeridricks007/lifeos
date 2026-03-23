@@ -15,7 +15,9 @@ import { Section } from "@/components/ui/section";
 import { CardLink } from "@/components/ui/card-link";
 import { PillarTOC } from "@/components/content/PillarTOC";
 
-export const revalidate = 3600;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = "/netherlands/visa-checker/";
 const BASE = "/netherlands";

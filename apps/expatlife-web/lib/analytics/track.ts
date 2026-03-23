@@ -18,6 +18,8 @@ export type OutboundLinkParams = {
   link_text?: string;
   page_context?: string;
   link_type: OutboundLinkType;
+  /** Provider / partner registry slug when the click is attributable to a known entity. */
+  partner_slug?: string;
 };
 
 export type CtaClickParams = {
@@ -65,6 +67,7 @@ export function trackOutboundLink(params: OutboundLinkParams): void {
     link_text: params.link_text ?? "",
     page_context: params.page_context,
     link_type: params.link_type,
+    ...(params.partner_slug ? { partner_slug: params.partner_slug } : {}),
   };
   if (canSendGaDataLayerOrGtag()) {
     trackEvent("outbound_link_click", payload);

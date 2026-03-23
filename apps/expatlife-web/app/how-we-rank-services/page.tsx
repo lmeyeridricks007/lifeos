@@ -3,7 +3,10 @@ import Link from "next/link";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { howWeRankServicesPage } from "@/src/data/trust/how-we-rank-services";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
+
+export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: howWeRankServicesPage.seo.title,
   description: howWeRankServicesPage.seo.description,

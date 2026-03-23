@@ -18,7 +18,9 @@ import {
   VISA_TIMELINE_ESTIMATOR_RELATED_TOOLS,
 } from "@/src/lib/tools/shared/toolInternalLinks";
 
-export const revalidate = 3600;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = "/netherlands/visa-timeline-estimator/";
 const BASE = "/netherlands";

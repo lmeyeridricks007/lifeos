@@ -4,7 +4,10 @@ import { Section } from "@/components/ui/section";
 import { SearchPageClient } from "@/src/components/search/SearchPageClient";
 import { runSearch } from "@/src/lib/search/runSearch";
 import { getLiveSearchQuickLinks, getLiveSearchRecoveryLinks } from "@/src/lib/search/liveQuickLinks";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
+
+export const revalidate = CONTENT_REVALIDATE;
 /** Query variants are not indexed; canonical points to clean /search/ to avoid duplicate SERP URLs. */
 export const metadata: Metadata = {
   title: "Search",

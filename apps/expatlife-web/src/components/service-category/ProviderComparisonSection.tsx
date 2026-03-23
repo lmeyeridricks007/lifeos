@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState, useMemo, useRef, useCallback } from "react";
 import { Check, X, Banknote, User, Package, Plus, Trash2, LayoutGrid, MapPin } from "lucide-react";
+import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
 import type { ServiceCategoryProviderCard } from "@/src/lib/service-category/types";
 
 const PROVIDER_TYPE_LABELS: Record<string, string> = {
@@ -171,14 +172,17 @@ function ProviderCardContent({ p }: { p: ServiceCategoryProviderCard }) {
 
       <div className="mt-5 flex flex-wrap gap-2 border-t border-slate-200 pt-5">
         {p.externalUrl ? (
-          <a
+          <TrackedExternalLink
             href={p.externalUrl}
             target="_blank"
             rel="noopener noreferrer"
+            linkType="provider"
+            partnerSlug={p.slug}
+            linkText="Visit provider"
             className="inline-flex min-h-[44px] items-center rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50"
           >
             Visit provider →
-          </a>
+          </TrackedExternalLink>
         ) : null}
         {!p.reviewComingSoon && p.href ? (
           <Link

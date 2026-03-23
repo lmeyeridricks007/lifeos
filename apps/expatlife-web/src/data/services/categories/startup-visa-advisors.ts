@@ -7,7 +7,7 @@
 
 import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
 import { startupVisaAdvisorsOfficialSources } from "@/src/data/services/official-sources/startup-visa-advisors";
-import { startupFacilitatorsMetadata } from "@/src/data/services/providers/startup-visa-advisors";
+import { startupFacilitatorsMetadata } from "@/src/data/companies-registry";
 
 /* Hero image prompt for future asset:
    "Cinematic editorial image for a Dutch startup visa advisors page, showing organized founder planning materials, passport, startup notes, residence-permit paperwork, document checklist, and a modern innovation-focused Dutch business setting, natural daylight, premium startup magazine aesthetic, wide 16:9 banner."

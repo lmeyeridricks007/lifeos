@@ -1,7 +1,8 @@
 import { redirect } from "next/navigation";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 3600;
+export const revalidate = CONTENT_REVALIDATE;
 
 export const metadata = buildSocialMetadata({
   title: "Tools hub",

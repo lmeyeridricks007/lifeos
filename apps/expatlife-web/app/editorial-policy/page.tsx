@@ -3,7 +3,10 @@ import Link from "next/link";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { editorialPolicyPage } from "@/src/data/trust/editorial-policy";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
+
+export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: editorialPolicyPage.seo.title,
   description: editorialPolicyPage.seo.description,

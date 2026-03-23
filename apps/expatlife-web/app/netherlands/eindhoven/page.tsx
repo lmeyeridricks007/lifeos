@@ -7,6 +7,7 @@ import { CityHubTemplate } from "@/src/components/city-hub/CityHubTemplate";
 import { eindhovenCityPage } from "@/src/data/cities/eindhoven";
 import { getEindhovenServices } from "@/src/data/services/eindhoven";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 const baseUrl = getSiteOrigin();
 const path = eindhovenCityPage.path;
@@ -22,7 +23,7 @@ export const metadata: Metadata = cloneSafeMetadata({
   keywords: eindhovenCityPage.seo.keywords,
 });
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 export default function EindhovenCityPage() {
   const allServices = getEindhovenServices();

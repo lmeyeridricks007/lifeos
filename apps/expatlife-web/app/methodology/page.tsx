@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { methodologyPage } from "@/src/data/trust/methodology";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
+
+export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: methodologyPage.seo.title,
   description: methodologyPage.seo.description,

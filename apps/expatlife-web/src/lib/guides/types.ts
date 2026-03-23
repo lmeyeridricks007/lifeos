@@ -354,6 +354,10 @@ export type RegistryGuide = {
   category: string;
   priority: number;
   comingSoon?: boolean;
+  /** Explicit `false` hides the guide regardless of date. Omitted/`true` = allowed if `publishDate` has passed. */
+  publish?: boolean;
+  /** `YYYY-MM-DD` (UTC start of day) or full ISO datetime. Omitted = no date gate. */
+  publishDate?: string;
 };
 
 export type GuideRegistry = {

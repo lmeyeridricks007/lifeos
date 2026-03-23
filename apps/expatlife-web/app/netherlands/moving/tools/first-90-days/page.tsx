@@ -20,7 +20,9 @@ import { buildFaqSchema } from "@/src/lib/seo/faqSchema";
 import { FIRST_90_DAYS_RELATED_GUIDES, FIRST_90_DAYS_RELATED_TOOLS } from "@/src/lib/tools/shared/toolInternalLinks";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
 
-export const revalidate = 3600;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = "/netherlands/moving/tools/first-90-days/";
 

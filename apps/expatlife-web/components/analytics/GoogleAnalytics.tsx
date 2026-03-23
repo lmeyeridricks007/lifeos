@@ -9,7 +9,7 @@ import {
 
 /**
  * Direct GA4 via the Google tag (gtag.js): `googletagmanager.com/gtag/js?id=…`
- * Set `NEXT_PUBLIC_GA_MEASUREMENT_ID` (e.g. G-XX169PYS2J). Uses `send_page_view: false` so
+ * Set `NEXT_PUBLIC_GA_MEASUREMENT_ID` (e.g. G-F2H1CJD5ES). Uses `send_page_view: false` so
  * `AnalyticsRouteTracker` avoids duplicate hits on App Router navigations.
  * Disabled when `NEXT_PUBLIC_USE_GTM=true` — then load GA4 inside the GTM container instead.
  */

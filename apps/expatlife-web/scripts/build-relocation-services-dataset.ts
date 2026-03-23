@@ -9,11 +9,11 @@
  *
  * Current approach:
  * - relocation-services providers = relocation-agencies providers + additionalProviders
- *   (see src/data/services/providers/relocation-services.ts)
+ *   (see src/data/companies-registry.ts)
  * - To refresh: run scripts/fetch-relocation-agencies.ts first to update
  *   relocation-agencies.ts, then this list stays in sync.
  * - To add new providers: add records to additionalProviders in
- *   src/data/services/providers/relocation-services.ts, with sourceEcosystems,
+ *   src/data/companies-registry.ts (relocationServicesAdditionalProviders), with sourceEcosystems,
  *   sourcePages, and lastChecked. Optionally run this script to validate or
  *   merge from external source JSON.
  *
@@ -25,7 +25,7 @@
  * 5. Write to relocation-services.ts or normalized JSON; update metadata
  */
 
-// No-op when run: actual data lives in src/data/services/providers/relocation-services.ts
+// No-op when run: actual data lives in src/data/companies-registry.ts
 // and is composed from relocation-agencies + additionalProviders there.
-console.log("Relocation services dataset is maintained in src/data/services/providers/relocation-services.ts");
+console.log("Relocation services dataset is maintained in src/data/companies-registry.ts");
 console.log("To add providers: edit additionalProviders in that file and set lastChecked.");

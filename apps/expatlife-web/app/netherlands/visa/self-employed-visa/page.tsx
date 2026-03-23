@@ -5,8 +5,9 @@ import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { SELF_EMPLOYED_VISA } from "@/src/content/visas/self-employed-visa";
 import { selfEmployedToGuideData } from "@/src/lib/visas/visaToGuideData";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
 const data = selfEmployedToGuideData(SELF_EMPLOYED_VISA);

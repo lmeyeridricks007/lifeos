@@ -57,7 +57,9 @@ export const metadata: Metadata = {
   },
 };
 
-export const revalidate = 86400;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 
 function ItemListJsonLd() {
   const jsonLd = {

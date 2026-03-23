@@ -4,7 +4,10 @@ import { CookieSettingsLink } from "@/src/components/cookies/CookieSettingsLink"
 import { cookiesPage } from "@/src/data/legal/cookies";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
 import { LastUpdated } from "@/components/ui/LastUpdated";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
+
+export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: cookiesPage.seo.title,
   description: cookiesPage.seo.description,

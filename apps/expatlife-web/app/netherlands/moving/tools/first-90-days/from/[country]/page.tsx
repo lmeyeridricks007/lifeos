@@ -5,8 +5,9 @@ import { getCountryLandingContent, getSupportedOriginCountrySlugs, isValidToolCo
 import { getOriginCountryLabel } from "@/src/lib/tools/shared/toolCountryContext";
 import { FIRST_90_DAYS_RELATED_GUIDES } from "@/src/lib/tools/shared/toolInternalLinks";
 import { buildBreadcrumbSchema, getToolBreadcrumbItems } from "@/src/lib/seo/breadcrumbSchema";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 3600;
+export const revalidate = CONTENT_REVALIDATE;
 
 const TOOL_PATH = "/netherlands/moving/tools/first-90-days/";
 const TOOL_NAME = "First 90 Days Planner";

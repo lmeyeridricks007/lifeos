@@ -4,7 +4,7 @@
  */
 
 import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
-import { visaConsultantsProviders } from "@/src/data/services/providers/visa-consultants";
+import { visaConsultantsProviders } from "@/src/data/companies-registry";
 import { visaConsultantsOfficialSources } from "@/src/data/services/official-sources/visa-consultants";
 
 /* Hero image prompt for future asset/CMS:

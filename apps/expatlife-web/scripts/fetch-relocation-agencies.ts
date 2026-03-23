@@ -7,7 +7,8 @@
  * Usage:
  *   pnpm tsx scripts/fetch-relocation-agencies.ts
  *
- * Output: Updates or generates normalized data in src/data/services/providers/relocation-agencies.ts
+ * Output: Merge into src/data/companies-registry.ts (relocationAgenciesProviders), then run
+ *   node apps/expatlife-web/scripts/assemble-companies-registry.mjs
  * For a full pipeline, extend this script to:
  * 1. Fetch each trusted source URL
  * 2. Parse partner/directory listings (HTML structure varies by site)
@@ -128,7 +129,7 @@ async function main() {
   }));
 
   console.log("Extracted", normalized.length, "providers (script scaffold; implement HTML parsing to populate from live pages).");
-  console.log("Current provider list is maintained in src/data/services/providers/relocation-agencies.ts");
+  console.log("Current provider list is maintained in src/data/companies-registry.ts");
 }
 
 main().catch((err) => {

@@ -6,7 +6,7 @@
 
 import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
 import { housingPlatformsOfficialSources } from "@/src/data/services/official-sources/housing-platforms";
-import { housingPlatforms, housingPlatformsMetadata } from "@/src/data/services/providers/housing-platforms";
+import { housingPlatforms, housingPlatformsMetadata } from "@/src/data/companies-registry";
 
 /* Hero image prompt for future asset:
    "Cinematic editorial image for a Dutch housing platforms page for expats, showing organized apartment-search materials, housing notes, laptop with listing-style interface, city map, and a subtle Dutch urban setting, natural daylight, premium relocation magazine aesthetic, wide 16:9 banner."

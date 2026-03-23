@@ -3,8 +3,9 @@ import { Container } from "@/components/ui/container";
 import { getFeaturedOriginCountryGuides } from "@/src/lib/countries/originCountryGuides";
 import { OriginCountryGuideGrid } from "@/src/components/guides/OriginCountryGuideGrid";
 import { guideShareMetadata } from "@/lib/seo/netherlandsGuideShareMetadata";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 export const metadata = guideShareMetadata("eu-vs-non-eu-moving-to-netherlands");
 

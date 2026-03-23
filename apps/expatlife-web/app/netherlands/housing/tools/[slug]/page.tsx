@@ -4,7 +4,9 @@ import {
   renderPlaceholderPage,
 } from "@/src/lib/tools/placeholderRouteFactory";
 
-export const revalidate = 3600;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 export const metadata = {
   title: "Housing Tool (Coming Soon)",
   description: "Tool page for housing planning in the Netherlands.",

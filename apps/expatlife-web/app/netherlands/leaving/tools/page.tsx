@@ -1,7 +1,8 @@
 import { ToolHubTemplate } from "@/src/components/tools/ToolHubTemplate";
 import { getCategoryHubData, getCategoryHubJsonLd, getCategoryHubMetadata } from "@/src/lib/tools/hubPageUtils";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 3600;
+export const revalidate = CONTENT_REVALIDATE;
 export const metadata = getCategoryHubMetadata("leaving-nl");
 
 export default function LeavingToolsHubPage() {

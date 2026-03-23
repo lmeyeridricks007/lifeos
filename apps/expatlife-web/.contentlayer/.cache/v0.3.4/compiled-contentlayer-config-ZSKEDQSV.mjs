@@ -28,7 +28,9 @@ var Guide = defineDocumentType(() => ({
     description: { type: "string", required: true },
     country: { type: "string", default: "netherlands" },
     cluster: { type: "string", default: "moving" },
-    readingTime: { type: "string", default: "6 min" }
+    readingTime: { type: "string", default: "6 min" },
+    publish: { type: "boolean", required: false },
+    publishDate: { type: "string", required: false }
   },
   computedFields
 }));
@@ -69,4 +71,4 @@ export {
   Pillar,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-OGXOYFZJ.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-ZSKEDQSV.mjs.map

@@ -25,7 +25,9 @@ import { buildFaqSchema } from "@/src/lib/seo/faqSchema";
 import { MOVING_CHECKLIST_RELATED_GUIDES, MOVING_CHECKLIST_RELATED_TOOLS } from "@/src/lib/tools/shared/toolInternalLinks";
 import Link from "next/link";
 
-export const revalidate = 3600;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = "/netherlands/moving/tools/moving-checklist/";
 

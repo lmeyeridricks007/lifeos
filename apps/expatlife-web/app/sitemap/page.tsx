@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { SITEMAP_MAIN_LINKS, SITEMAP_TRUST_LEGAL_LINKS } from "@/src/data/site/footer-links";
 import { NETHERLANDS_SERVICES_CATEGORIES } from "@/src/data/services/categories";
@@ -8,6 +9,9 @@ import { loadToolRegistry } from "@/src/lib/tools/loadToolRegistry";
 import { loadAllEnabledCountries } from "@/src/lib/countries/loadCountries";
 import { ROUTING_ORIGIN_COUNTRY_SLUGS } from "@/src/data/site/route-registry";
 import { filterLiveInternalLinks } from "@/src/lib/routes/routeStatus";
+
+/** Align with `/sitemap.xml` and registry-driven guides so lists refresh on ISR (e.g. after publish rules). */
+export const revalidate = CONTENT_REVALIDATE;
 
 /** City hubs — keep aligned with `route-registry` `EXTRA_LIVE_PATHS` when adding cities. */
 const CITY_PAGES = [

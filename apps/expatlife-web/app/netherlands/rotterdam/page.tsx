@@ -7,6 +7,7 @@ import { CityHubTemplate } from "@/src/components/city-hub/CityHubTemplate";
 import { rotterdamCityPage } from "@/src/data/cities/rotterdam";
 import { getRotterdamServices } from "@/src/data/services/rotterdam";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 const baseUrl = getSiteOrigin();
 const path = rotterdamCityPage.path;
@@ -21,7 +22,7 @@ export const metadata: Metadata = cloneSafeMetadata({
   keywords: rotterdamCityPage.seo.keywords,
 });
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 export default function RotterdamCityPage() {
   const allServices = getRotterdamServices();

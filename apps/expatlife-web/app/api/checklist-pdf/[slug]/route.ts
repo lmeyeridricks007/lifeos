@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import PDFDocument from "pdfkit";
-import { loadGuideBySlug } from "@/src/lib/guides/loadGuide";
+import { isGuidePublishingVisibleBySlug, loadGuideBySlug } from "@/src/lib/guides/loadGuide";
 
 export const dynamic = "force-dynamic";
 
@@ -86,6 +86,10 @@ export async function GET(
   const slug = params.slug;
 
   if (!slug || !ALLOWED_SLUGS.includes(slug as (typeof ALLOWED_SLUGS)[number])) {
+    return NextResponse.json({ error: "Not found" }, { status: 404 });
+  }
+
+  if (!isGuidePublishingVisibleBySlug(slug)) {
     return NextResponse.json({ error: "Not found" }, { status: 404 });
   }
 

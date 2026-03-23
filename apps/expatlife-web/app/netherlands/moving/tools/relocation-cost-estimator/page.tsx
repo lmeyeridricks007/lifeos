@@ -20,7 +20,9 @@ import { OriginCountryGuideGrid } from "@/src/components/guides/OriginCountryGui
 import { ContentTable, ContentTableRow, ContentTableCell } from "@/components/ui/content-table";
 import { InfoBox } from "@/components/ui/info-box";
 
-export const revalidate = 3600;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = "/netherlands/moving/tools/relocation-cost-estimator/";
 

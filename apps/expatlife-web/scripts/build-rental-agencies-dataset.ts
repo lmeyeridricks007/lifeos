@@ -8,7 +8,7 @@
  *   pnpm tsx scripts/build-rental-agencies-dataset.ts
  *
  * The canonical provider list is maintained in:
- *   src/data/services/providers/rental-agencies.ts
+ *   src/data/companies-registry.ts (rentalAgencies)
  *
  * Every provider must have:
  * - A real provider URL or trusted partner page
@@ -26,7 +26,7 @@ function main() {
   console.log("Last checked date:", LAST_CHECKED);
   console.log("");
   console.log("The canonical provider list is maintained in:");
-  console.log("  src/data/services/providers/rental-agencies.ts");
+  console.log("  src/data/companies-registry.ts");
   console.log("");
   console.log("To refresh: update the rentalAgencies array and rentalAgenciesMetadata");
   console.log("(totalRecords, lastChecked). Ensure each record has sourceReferences and providerType.");

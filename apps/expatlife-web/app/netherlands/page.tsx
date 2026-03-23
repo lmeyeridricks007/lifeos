@@ -3,8 +3,9 @@ import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { PortalNetherlandsTemplate } from "@/src/components/content/PortalNetherlandsTemplate";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 3600;
+export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
 

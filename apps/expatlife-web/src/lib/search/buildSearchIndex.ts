@@ -6,6 +6,7 @@
 import movingRegistry from "@/src/content/guides/netherlands/moving/registry.json";
 import toolCategoriesJson from "@/src/content/tools/categories.json";
 import { loadGuideBySlug } from "@/src/lib/guides/loadGuide";
+import { isPubliclyVisible } from "@/src/lib/publishing/isPubliclyVisible";
 import { loadToolRegistry } from "@/src/lib/tools/loadToolRegistry";
 import { getPublishedOriginCountryGuides } from "@/src/lib/countries/originCountryGuides";
 import { NETHERLANDS_SERVICES_CATEGORIES, SERVICE_GROUP_LABELS } from "@/src/data/services/categories";
@@ -35,6 +36,7 @@ import { PARTNER_FAMILY_VISA } from "@/src/content/visas/partner-family-visa";
 import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
 import type { CityHubPageData } from "@/src/lib/city-hub/types";
 import type { VisaPageData } from "@/src/content/visas/types";
+import type { RegistryGuide } from "@/src/lib/guides/types";
 import type { SearchDocument } from "./searchDocument";
 
 const SERVICE_CATEGORY_FULL: ServiceCategoryPageData[] = [
@@ -250,7 +252,9 @@ export function buildAllSearchDocuments(): SearchDocument[] {
     });
   }
 
-  for (const g of movingRegistry.guides) {
+  const now = new Date();
+  for (const g of movingRegistry.guides as RegistryGuide[]) {
+    if (!isPubliclyVisible(g.publish, g.publishDate, now)) continue;
     const json = loadGuideBySlug(g.slug);
     const heroImg = json?.hero?.image;
     const desc = g.description ?? json?.description ?? "";
@@ -292,6 +296,7 @@ export function buildAllSearchDocuments(): SearchDocument[] {
 
   for (const t of loadToolRegistry()) {
     if (t.status !== "live") continue;
+    if (!isPubliclyVisible(t.publish, t.publishDate, now)) continue;
     const kw = t.seo?.keywords ?? [];
     out.push({
       id: `tool:${t.id}`,

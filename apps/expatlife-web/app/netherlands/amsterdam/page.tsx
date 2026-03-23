@@ -7,6 +7,7 @@ import { amsterdamCityPage } from "@/src/data/cities/amsterdam";
 import { getAmsterdamServices } from "@/src/data/services/amsterdam";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { cloneSafeMetadata } from "@/lib/metadata";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 const baseUrl = getSiteOrigin();
 const path = amsterdamCityPage.path;
@@ -22,7 +23,7 @@ export const metadata: Metadata = cloneSafeMetadata({
   keywords: amsterdamCityPage.seo.keywords,
 });
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 export default function AmsterdamCityPage() {
   const allServices = getAmsterdamServices();

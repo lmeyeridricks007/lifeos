@@ -3,7 +3,10 @@ import Link from "next/link";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { howThisSiteWorksPage } from "@/src/data/trust/how-this-site-works";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
+
+export const revalidate = CONTENT_REVALIDATE;
 const relatedLinks = [
   { label: "Methodology", href: "/methodology/" },
   { label: "Sources", href: "/sources/" },

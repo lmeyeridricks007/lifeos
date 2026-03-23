@@ -24,7 +24,9 @@ import {
 import { OriginCountryBrowseSection } from "@/src/components/guides/OriginCountryBrowseSection";
 import { getSiteOrigin } from "@/lib/site-origin";
 
-export const revalidate = 86400;
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+
+export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
 const canonical = `${ORIGIN_COUNTRY_INDEX_PATH}/`;

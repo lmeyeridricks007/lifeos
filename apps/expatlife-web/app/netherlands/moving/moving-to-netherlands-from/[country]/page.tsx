@@ -12,8 +12,9 @@ import { getCountryBySlug, getCountryStaticParams } from "@/src/lib/countries/ge
 import { loadTemplateData } from "@/src/lib/countries/loadCountries";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
 

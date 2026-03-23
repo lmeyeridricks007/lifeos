@@ -6,11 +6,12 @@ import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { loadGuideBySlug } from "@/src/lib/guides/loadGuide";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 const baseUrl = getSiteOrigin();
 const SLUG = "digid-awareness";
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 const metaTitle = "DigiD Netherlands Guide for Expats | What It Is and How to Activate It";
 const metaDescription =

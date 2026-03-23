@@ -7,9 +7,9 @@
 import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
 import { relocationAgenciesOfficialSources } from "@/src/data/services/official-sources/relocation-agencies";
 import {
-  relocationAgenciesProviders,
   relocationAgenciesMetadata,
-} from "@/src/data/services/providers/relocation-agencies";
+  relocationAgenciesProviders,
+} from "@/src/data/companies-registry";
 
 /* Hero image prompt for future asset:
    "Cinematic editorial image for a Dutch relocation agencies page for expats, showing organized move-planning materials, housing search notes, immigration paperwork, city maps, and a calm professional relocation advisory setting, subtle Dutch context, natural daylight, premium magazine aesthetic, wide 16:9 banner."

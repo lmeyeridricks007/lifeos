@@ -1,7 +1,7 @@
 /**
  * Analytics env configuration. Never hardcode measurement IDs in source.
  *
- * GA4: set NEXT_PUBLIC_GA_MEASUREMENT_ID (e.g. G-XXXXXXXX).
+ * GA4: set NEXT_PUBLIC_GA_MEASUREMENT_ID (e.g. G-F2H1CJD5ES).
  * GTM: set NEXT_PUBLIC_GTM_ID and NEXT_PUBLIC_USE_GTM=true (disables direct gtag GA4 snippet).
  * PostHog: set NEXT_PUBLIC_POSTHOG_KEY and NEXT_PUBLIC_ENABLE_POSTHOG=true.
  *

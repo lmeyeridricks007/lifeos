@@ -8,7 +8,7 @@
  * The RVO page lists facilitators with ## Name, description, and [Read more](url).
  * This script fetches the page, extracts names and URLs, and can write normalized JSON
  * or update the provider data file. For now the provider list is maintained in
- * src/data/services/providers/startup-visa-advisors.ts; run this script to refresh
+ * src/data/companies-registry.ts (startupFacilitators); run this script to refresh
  * from the live RVO page when needed.
  */
 
@@ -91,7 +91,7 @@ async function main() {
     console.log(`${i + 1}. ${p.name} ${p.url ?? "(no url)"}`);
   });
   console.log("Last checked:", lastChecked);
-  console.log("Update src/data/services/providers/startup-visa-advisors.ts with new data if needed.");
+  console.log("Update src/data/companies-registry.ts (startupFacilitators) with new data if needed.");
 }
 
 main().catch((err) => {

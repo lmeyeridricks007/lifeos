@@ -6,10 +6,12 @@ import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import {
   isGuideSlug,
+  isGuidePublishingVisibleBySlug,
   loadGuideBySlug,
 } from "@/src/lib/guides/loadGuide";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 type Props = {
   params: Promise<{ slug: string[] }>;
@@ -24,7 +26,7 @@ function getGuideSlugFromParams(slug: string[]): string | null {
   return isGuideSlug(candidate) ? candidate : null;
 }
 
-export const revalidate = 86400;
+export const revalidate = CONTENT_REVALIDATE;
 
 /** Static metadata only (plain strings) to avoid DataCloneError in Next.js metadata resolution. */
 export const metadata: Metadata = {
@@ -37,6 +39,7 @@ export default async function NetherlandsCatchAllPage({ params }: Props) {
   const guideSlug = getGuideSlugFromParams(slug);
 
   if (guideSlug) {
+    if (!isGuidePublishingVisibleBySlug(guideSlug)) notFound();
     const data = loadGuideBySlug(guideSlug);
     if (!data) notFound();
 

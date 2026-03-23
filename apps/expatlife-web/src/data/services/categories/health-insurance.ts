@@ -4,8 +4,10 @@
  */
 
 import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
-import { healthInsuranceProviders } from "@/src/data/services/providers/health-insurance";
-import { internationalHealthInsuranceProviders } from "@/src/data/services/providers/international-health-insurance";
+import {
+  healthInsuranceProviders,
+  internationalHealthInsuranceProviders,
+} from "@/src/data/companies-registry";
 import { healthInsuranceOfficialSources } from "@/src/data/services/official-sources/health-insurance";
 
 /* Hero image prompt for future asset/CMS:
