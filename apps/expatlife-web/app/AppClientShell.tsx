@@ -34,13 +34,13 @@ type AppClientShellProps = {
  * avoiding "Could not find the module in the React Client Manifest" errors.
  *
  * Vercel Analytics mounts outside cookie consent so page views reach the Vercel dashboard
- * (see https://vercel.com/docs/analytics). GA4/GTM/PostHog remain behind `ConditionalScript`.
+ * (see https://vercel.com/docs/analytics). GA gtag is in root layout; outbound capture + Speed
+ * Insights stay behind `ConditionalScript`.
  */
 export function AppClientShell({ children, contentVersion }: AppClientShellProps) {
   return (
     <CookieConsentProvider>
       <VercelAnalytics />
-      {/* GA/GTM as early in <body> as possible after consent (noscript + head scripts). */}
       <ConditionalScript category="analytics">
         <Analytics />
         <SpeedInsights />

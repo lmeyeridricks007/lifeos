@@ -1,4 +1,4 @@
-import { pageview as gaPageview, trackEvent } from "@/lib/analytics/ga";
+import { trackEvent } from "@/lib/analytics/ga";
 import { capturePosthog, capturePosthogPageview } from "@/lib/analytics/posthog";
 import { canSendAnalyticsEvents, canSendGaDataLayerOrGtag } from "@/lib/analytics/consent";
 import { shouldInitPosthog } from "@/lib/analytics/config";
@@ -28,12 +28,9 @@ export type CtaClickParams = {
   destination_href?: string;
 };
 
-/** Route change + initial client page (see `AnalyticsRouteTracker`). */
+/** PostHog client navigation page view (GA page views use default gtag behaviour). */
 export function trackPageView(pathWithSearch: string): void {
   if (!canSendAnalyticsEvents()) return;
-  if (canSendGaDataLayerOrGtag()) {
-    gaPageview(pathWithSearch);
-  }
   if (shouldInitPosthog()) {
     const url = typeof window !== "undefined" ? window.location.href.split("#")[0] : "";
     capturePosthogPageview({

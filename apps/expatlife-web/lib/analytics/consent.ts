@@ -1,14 +1,9 @@
 /**
- * Bridges cookie consent to analytics. Scripts are also gated by `ConditionalScript` in the shell;
- * these helpers ensure programmatic events never fire without analytics consent.
+ * Bridges cookie consent to analytics. The GA tag is always present in HTML; programmatic `gtag`
+ * calls from `trackEvent` only run when the user has opted into analytics cookies.
  */
 import { canLoadAnalytics as consentCanLoadAnalytics } from "@/src/lib/cookies/consent";
-import {
-  isAnalyticsRuntimeEnabled,
-  shouldInitPosthog,
-  shouldLoadDirectGa4,
-  shouldLoadGtmScript,
-} from "@/lib/analytics/config";
+import { isAnalyticsRuntimeEnabled, shouldInitPosthog } from "@/lib/analytics/config";
 
 /** Re-export for consumers that only need the consent record check. */
 export function canLoadAnalytics(): boolean {
@@ -20,14 +15,11 @@ export function canSendAnalyticsEvents(): boolean {
   if (typeof window === "undefined") return false;
   if (!consentCanLoadAnalytics()) return false;
   if (!isAnalyticsRuntimeEnabled()) return false;
-  const hasGaSurface = shouldLoadDirectGa4() || shouldLoadGtmScript();
-  const hasPosthog = shouldInitPosthog();
-  return hasGaSurface || hasPosthog;
+  return true;
 }
 
 export function canSendGaDataLayerOrGtag(): boolean {
-  if (!canSendAnalyticsEvents()) return false;
-  return shouldLoadDirectGa4() || shouldLoadGtmScript();
+  return canSendAnalyticsEvents();
 }
 
 export function canSendPosthog(): boolean {

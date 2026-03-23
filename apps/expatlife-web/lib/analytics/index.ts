@@ -1,7 +1,7 @@
 /**
- * Public analytics API for app code. Prefer `track*` helpers; use `pageview` / `trackEvent` for ad-hoc GA/GTM pushes.
+ * Public analytics API for app code. Prefer `track*` helpers; use `trackEvent` for ad-hoc GA events.
  */
-export { pageview, trackEvent } from "@/lib/analytics/ga";
+export { trackEvent } from "@/lib/analytics/ga";
 export {
   trackPageView,
   trackServiceClick,
