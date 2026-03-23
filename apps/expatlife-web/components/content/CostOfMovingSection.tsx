@@ -14,10 +14,11 @@ const COST_ROWS = [
   { area: "First month", what: "Transport, groceries, insurance, admin setup" },
 ] as const;
 
-export function CostOfMovingSection() {
+export function CostOfMovingSection({ contained = true }: { contained?: boolean } = {}) {
   return (
     <Section
       id="cost-of-moving"
+      contained={contained}
       title="Cost of moving to the Netherlands"
       subtitle="What to budget for when relocating."
     >

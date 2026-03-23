@@ -2,6 +2,11 @@ import { getSiteOrigin } from "@/lib/site-origin";
 
 type FaqItem = { q: string; a: string };
 
+/** Strip `**bold**` markers so FAQ schema `text` stays plain for search engines. */
+function faqAnswerPlainText(a: string): string {
+  return a.replace(/\*\*(.+?)\*\*/g, "$1");
+}
+
 export function FaqPageJsonLd({ items }: { items: FaqItem[] }) {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -11,7 +16,7 @@ export function FaqPageJsonLd({ items }: { items: FaqItem[] }) {
       name: item.q,
       acceptedAnswer: {
         "@type": "Answer",
-        text: item.a,
+        text: faqAnswerPlainText(item.a),
       },
     })),
   };
@@ -41,6 +46,34 @@ export function ArticleJsonLd({
     author: { "@type": "Organization", name: author },
     dateModified,
     mainEntityOfPage: { "@type": "WebPage", "@id": new URL(urlPath, siteUrl).toString() },
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
+}
+
+export function WebPageJsonLd({
+  name,
+  description,
+  urlPath,
+  datePublished,
+}: {
+  name: string;
+  description: string;
+  urlPath: string;
+  datePublished?: string;
+}) {
+  const pageUrl = new URL(urlPath, siteUrl).toString();
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name,
+    description,
+    url: pageUrl,
+    ...(datePublished ? { datePublished } : {}),
+    isPartOf: {
+      "@type": "WebSite",
+      name: "ExpatCopilot",
+      url: siteUrl,
+    },
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 }

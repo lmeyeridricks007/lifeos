@@ -2,6 +2,8 @@
 
 **From:** Lee · **Site:** https://www.expatcopilot.com  
 
+Each prospect includes a **`To:`** line (published email or official contact path). **Re-verify** before sending.
+
 **Prospects in this file:** §07 rows **#81–122** (The Social Hub through Zilveren Kruis).
 
 [← Part 2](./lee-ready-to-send-part-2-of-3.md) · [Index](./README.md)
@@ -10,6 +12,7 @@
 
 ### 81. The Social Hub
 **Reach:** Local hub managers / brand · [thesocialhub.co](https://www.thesocialhub.co/)
+**To:** `press@thesocialhub.co` · [The Social Hub — newsroom contact](https://news.thesocialhub.co/en/contact/) · [Main site / locations](https://www.thesocialhub.co/)
 
 **Initial — Subject:** After arriving — for residents settling in  
 
@@ -31,6 +34,7 @@ Lee
 
 ### 82. WeWork Netherlands
 **Reach:** Community / marketing · [WeWork NL](https://www.wework.com/l/netherlands)
+**To:** *[WeWork — contact](https://www.wework.com/contact)*
 
 **Initial — Subject:** DigiD explainer — freelancers & newcomers as members  
 
@@ -52,6 +56,7 @@ Lee
 
 ### 83. Pararius
 **Reach:** Blog / content team · [pararius.com](https://www.pararius.com/)
+**To:** `support@pararius.nl` · [Pararius — contact](https://www.pararius.com/contact) · [About Pararius](https://www.pararius.com/info/about-pararius)
 
 **Initial — Subject:** Rent affordability calculator — fit for rental blog  
 
@@ -77,6 +82,7 @@ Lee
 
 ### 84. Funda
 **Reach:** Press / content · [funda.nl](https://www.funda.nl/)
+**To:** `info@funda.nl` · [Funda — contact](https://www.funda.nl/contact/) · [Press / newsroom](https://pers.funda.nl/contact/)
 
 **Initial — Subject:** Address registration — angle beside listings (corporate bar may be high)  
 
@@ -100,6 +106,7 @@ Lee
 
 ### 85. Kamernet
 **Reach:** Marketing · [kamernet.nl](https://kamernet.nl/)
+**To:** `supportdesk@kamernet.nl` · [Kamernet — contact](https://kamernet.nl/en/contact)
 
 **Initial — Subject:** Rent affordability — for room-seekers and young movers  
 
@@ -121,6 +128,7 @@ Lee
 
 ### 86. Only Expats
 **Reach:** Owner / marketing · [onlyexpats.nl](https://www.onlyexpats.nl/) · [Advice articles](https://www.onlyexpats.nl/advice/top-10-tips-for-renting-in-Holland)
+**To:** *[Only Expats — contact](https://www.onlyexpats.nl/contact)*
 
 **Initial — Subject:** Rent affordability — alongside your renting-in-Holland advice  
 
@@ -142,6 +150,7 @@ Lee
 
 ### 87. HousingAnywhere
 **Reach:** Content / partnerships · [housinganywhere.com](https://housinganywhere.com/)
+**To:** `support@housinganywhere.com` · [HousingAnywhere — contact](https://housinganywhere.com/contact)
 
 **Initial — Subject:** Address registration — for mid-term renters / students  
 
@@ -163,6 +172,7 @@ Lee
 
 ### 88. Nestpick
 **Reach:** Partnerships (often paid) · [nestpick.com](https://www.nestpick.com/)
+**To:** `info@nestpick.com` · [Nestpick — contact](https://www.nestpick.com/contact)
 
 **Initial — Subject:** Rent affordability — educational link (aware you may only do paid)  
 
@@ -184,6 +194,7 @@ Lee
 
 ### 89. Avans University of Applied Sciences
 **Reach:** International Office · [Avans international](https://www.avans.nl/international)
+**To:** `info@avans.nl` · [Avans contact](https://www.avans.nl/contact)
 
 **Initial — Subject:** Student visa — Avans international applicants  
 
@@ -205,6 +216,7 @@ Lee
 
 ### 90. Inholland University of Applied Sciences
 **Reach:** International Office · [Inholland international](https://www.inholland.nl/international/)
+**To:** `csa@inholland.nl` (central student affairs) · [Inholland contact](https://www.inholland.nl/contact)
 
 **Initial — Subject:** After arriving — Inholland students across NL  
 
@@ -226,6 +238,7 @@ Lee
 
 ### 91. HAN University of Applied Sciences
 **Reach:** International Office · [HAN international](https://www.han.nl/international/)
+**To:** `ask@han.nl` · [HAN — international contact](http://www.han.nl/international/en/about-us/contact/) · [HAN — Ask HAN](https://www.han.nl/contact)
 
 **Initial — Subject:** Student visa — Arnhem / Nijmegen internationals  
 
@@ -247,6 +260,7 @@ Lee
 
 ### 92. Zuyd University of Applied Sciences
 **Reach:** International Office · [Zuyd English](https://www.zuyd.nl/en)
+**To:** `info@zuyd.nl` · *Enrolment:* `bureauinschrijving@zuyd.nl` · [Zuyd contact](https://www.zuyd.nl/en/contact)
 
 **Initial — Subject:** After arriving — Zuyd cross-border students  
 
@@ -268,6 +282,7 @@ Lee
 
 ### 93. HZ University of Applied Sciences
 **Reach:** International Office · [HZ English](https://www.hz.nl/en)
+**To:** `dienstmarketing@hz.nl` · `helpdesk@hz.nl` · [HZ contact](https://www.hz.nl/en/contact)
 
 **Initial — Subject:** Municipality registration — Zeeland internationals  
 
@@ -289,6 +304,7 @@ Lee
 
 ### 94. Breda University of Applied Sciences (BUas)
 **Reach:** International Office · [BUas English](https://www.buas.nl/en)
+**To:** `globalengagement@buas.nl` · `servicedesk@buas.nl` · [BUas contact](https://www.buas.nl/en/contact)
 
 **Initial — Subject:** Student visa — hospitality / built environment / games intake  
 
@@ -310,6 +326,7 @@ Lee
 
 ### 95. Rotterdam University of Applied Sciences
 **Reach:** International Office · [hogeschoolrotterdam.nl](https://www.hogeschoolrotterdam.nl/)
+**To:** `coia-studentsupport@hr.nl` · *Admissions:* `coia-admissions@hr.nl` · [Rotterdam UAS / CoIA](https://www.rotterdamuas.com/study-information/meet-us/coia/)
 
 **Initial — Subject:** After arriving — HR / international students  
 
@@ -331,6 +348,7 @@ Lee
 
 ### 96. Aeres University of Applied Sciences
 **Reach:** International Office · [aeresuas.com](https://www.aeresuas.com/)
+**To:** `international.uas@aeres.nl` · [Aeres UAS international](https://www.aeresuas.com/)
 
 **Initial — Subject:** Student visa — green / agri international intake  
 
@@ -352,6 +370,7 @@ Lee
 
 ### 97. Gemeente Groningen / International Groningen
 **Reach:** International affairs / editorial · [groningen.nl/en](https://groningen.nl/en/) · [gemeente EN](https://www.gemeente.groningen.nl/en)
+**To:** *[Gemeente Groningen — contact English](https://gemeente.groningen.nl/en)* · [International Groningen](https://groningen.nl/en)
 
 **Initial — Subject:** Municipality registration — Groningen internationals  
 
@@ -373,6 +392,7 @@ Lee
 
 ### 98. Gemeente Maastricht
 **Reach:** City communications · [Maastricht English](https://www.gemeentemaastricht.nl/en)
+**To:** *[Gemeente Maastricht — contact](https://www.gemeentemaastricht.nl/en)*
 
 **Initial — Subject:** After arriving — newcomers in Maastricht  
 
@@ -394,6 +414,7 @@ Lee
 
 ### 99. Gemeente Almere
 **Reach:** City communications · [Almere English](https://www.almere.nl/en)
+**To:** *[Gemeente Almere — contact](https://www.almere.nl/en)*
 
 **Initial — Subject:** Address registration — fast-growing city / internationals  
 
@@ -415,6 +436,7 @@ Lee
 
 ### 100. Gemeente Arnhem
 **Reach:** City communications · [Arnhem English](https://www.arnhem.nl/English)
+**To:** *[Gemeente Arnhem — contact](https://www.arnhem.nl/English)*
 
 **Initial — Subject:** Municipality registration — Arnhem English site  
 
@@ -436,6 +458,7 @@ Lee
 
 ### 101. Brainport Eindhoven region
 **Reach:** Regional marketing / talent · [brainporteindhoven.com/en](https://www.brainporteindhoven.com/en/)
+**To:** *[Brainport / region contact](https://www.brainporteindhoven.com/en/contact)*
 
 **Initial — Subject:** Highly skilled migrant explainer — Brainport talent narrative  
 
@@ -457,6 +480,7 @@ Lee
 
 ### 102. amsterdam inbusiness
 **Reach:** Foreign companies / talent team · [amsterdaminbusiness.com](https://www.amsterdaminbusiness.com/)
+**To:** *[amsterdam inbusiness contact](https://www.amsterdaminbusiness.com/contact)*
 
 **Initial — Subject:** Moving steps — companies hiring into Amsterdam region  
 
@@ -478,6 +502,7 @@ Lee
 
 ### 103. German Embassy The Hague
 **Reach:** Press / cultural affairs · [Germany in NL](https://www.niederlande.diplo.de/)
+**To:** *[German Missions NL — contact](https://www.niederlande.diplo.de/)*
 
 **Initial — Subject:** Germany → Netherlands — educational moving overview  
 
@@ -501,6 +526,7 @@ Lee
 
 ### 104. France in the Netherlands (French Embassy)
 **Reach:** Press / cooperation · [nl.ambafrance.org](https://nl.ambafrance.org/)
+**To:** *[French Embassy NL — contact](https://nl.ambafrance.org/-English-)*
 
 **Initial — Subject:** France → Netherlands — practical relocation primer  
 
@@ -522,6 +548,7 @@ Lee
 
 ### 105. Embassy of Canada to the Netherlands
 **Reach:** Public affairs · [Canada–Netherlands portal](https://www.international.gc.ca/country-pays/netherlands-pays_netherlands-pays.aspx?lang=eng)
+**To:** *[Canada — Netherlands relations / mission contacts](https://www.international.gc.ca/country-pays/netherlands-pays_netherlands-pays.aspx?lang=eng)*
 
 **Initial — Subject:** Canada → Netherlands — citizens doing early research  
 
@@ -543,6 +570,7 @@ Lee
 
 ### 106. High Commission of India, The Hague
 **Reach:** Press / community liaison · [hcithehague.gov.in](https://www.hcithehague.gov.in/)
+**To:** *[Indian High Commission The Hague — contact](https://www.hcithehague.gov.in/)*
 
 **Initial — Subject:** India → Netherlands — community-facing relocation overview  
 
@@ -564,6 +592,7 @@ Lee
 
 ### 107. Australian Embassy Netherlands
 **Reach:** Public diplomacy · [Netherlands.embassy.gov.au](https://netherlands.embassy.gov.au/)
+**To:** *[Australian Embassy NL — contact](https://netherlands.embassy.gov.au/)*
 
 **Initial — Subject:** Australia → Netherlands — practical move overview  
 
@@ -585,6 +614,7 @@ Lee
 
 ### 108. Embassy of Japan in the Netherlands
 **Reach:** Press / cultural · [English top](https://www.nl.emb-japan.go.jp/itprtop_en/index.html)
+**To:** *[Japan Embassy NL — contact](https://www.nl.emb-japan.go.jp/itprtop_en/index.html)*
 
 **Initial — Subject:** Moving to the Netherlands — generic steps (no Japan-specific country guide on our site)  
 
@@ -606,6 +636,7 @@ Lee
 
 ### 109. Jimble
 **Reach:** Marketing / content · [jimble.nl](https://jimble.nl/) · [Blog](https://jimble.nl/blog/)
+**To:** `info@jimble.nl` · `clients@jimble.nl` · [Jimble — contact](https://jimble.nl/contact/)
 
 **Initial — Subject:** Moving steps — complement to Jimble’s relocation blog  
 
@@ -627,6 +658,7 @@ Lee
 
 ### 110. Undutchables Recruitment
 **Reach:** Marketing / employer content · [undutchables.nl](https://undutchables.nl/)
+**To:** `hq@undutchables.nl` · [Undutchables — contact](https://undutchables.nl/en/contact)
 
 **Initial — Subject:** HSM explainer — candidates ask before they interview  
 
@@ -648,6 +680,7 @@ Lee
 
 ### 111. Adams Multilingual Recruitment
 **Reach:** Marketing · [adamsrecruitment.nl](https://www.adamsrecruitment.nl/)
+**To:** *[Adams Multilingual Recruitment contact](https://www.adamsrecruitment.nl/contact)*
 
 **Initial — Subject:** Compare visas — multilingual candidates  
 
@@ -669,6 +702,7 @@ Lee
 
 ### 112. Dam Advocaten
 **Reach:** Practice marketing · [dam.nl/en](https://www.dam.nl/en/)
+**To:** `info@dam.nl` · [Dam Advocaten](https://www.dam.nl/en/contact/)
 
 **Initial — Subject:** Visa documents — Dam immigration practice  
 
@@ -690,6 +724,7 @@ Lee
 
 ### 113. Knops Advocaten
 **Reach:** Marketing · [knops.com](https://www.knops.com/)
+**To:** `info@knops.com` · [Knops — contact](https://www.knops.com/en/contact)
 
 **Initial — Subject:** Compare visas — alongside Knops news / practice  
 
@@ -711,6 +746,7 @@ Lee
 
 ### 114. Ploum
 **Reach:** Practice marketing · [ploum.nl/en](https://www.ploum.nl/en)
+**To:** `info@ploum.nl` · [Ploum — contact](https://www.ploum.nl/en/contact)
 
 **Initial — Subject:** Highly skilled migrant — corporate immigration readers  
 
@@ -732,6 +768,7 @@ Lee
 
 ### 115. Maes Law
 **Reach:** Marketing · [maeslaw.nl/en](https://www.maeslaw.nl/en/)
+**To:** `info@maeslaw.nl` · [Maes Law](https://www.maeslaw.nl/en/contact/)
 
 **Initial — Subject:** Visa documents — Maes immigration audience  
 
@@ -753,6 +790,7 @@ Lee
 
 ### 116. Silicon Canals
 **Reach:** Editor / tips · [siliconcanals.com](https://siliconcanals.com/)
+**To:** `editors@siliconcanals.com` · [Silicon Canals — contact](https://siliconcanals.com/contact/)
 
 **Initial — Subject:** Visa comparison — NL startup readers hiring internationally  
 
@@ -778,6 +816,7 @@ Lee
 
 ### 117. Innovation Origins
 **Reach:** Editorial · [innovationorigins.com](https://innovationorigins.com/)
+**To:** `info@innovationorigins.com` · [Innovation Origins — about / team](https://innovationorigins.com/en/about-us/)
 
 **Initial — Subject:** Moving checklist — deep tech & regional talent  
 
@@ -799,6 +838,7 @@ Lee
 
 ### 118. TNW (The Next Web)
 **Reach:** Partnerships / editorial · [thenextweb.com](https://thenextweb.com/)
+**To:** `tips@thenextweb.com` · [TNW — contact](https://thenextweb.com/contact/)
 
 **Initial — Subject:** Netherlands moving checklist — global audience, NL angle  
 
@@ -824,6 +864,7 @@ Lee
 
 ### 119. KPN
 **Reach:** Consumer PR / content · [kpn.com](https://www.kpn.com/)
+**To:** `persvoorlichting@kpn.com` · [KPN — pers / PR](https://www.kpn.com/zakelijk/algemeen/pers.htm) · [Service contact](https://www.kpn.com/zakelijk/service/contact.htm)
 
 **Initial — Subject:** DigiD — for international customers setting up life in NL  
 
@@ -845,6 +886,7 @@ Lee
 
 ### 120. Odido
 **Reach:** Marketing / content · [odido.nl](https://www.odido.nl/)
+**To:** *[Odido — contact](https://www.odido.nl/zakelijk/service/contact)*
 
 **Initial — Subject:** After arriving — mobile + first-week admin  
 
@@ -866,6 +908,7 @@ Lee
 
 ### 121. Vodafone Ziggo
 **Reach:** Consumer communications · [vodafoneziggo.nl](https://www.vodafoneziggo.nl/)
+**To:** *[Vodafone Ziggo — contact](https://www.vodafoneziggo.nl/bedrijven/contact)*
 
 **Initial — Subject:** DigiD awareness — bundles and ID checks  
 
@@ -887,6 +930,7 @@ Lee
 
 ### 122. Zilveren Kruis
 **Reach:** Content / PR · [zilverenkruis.nl](https://www.zilverenkruis.nl/)
+**To:** *[Zilveren Kruis — contact](https://www.zilverenkruis.nl/consumenten/service/contact)*
 
 **Initial — Subject:** Health insurance explainer — internationals on your English pages  
 

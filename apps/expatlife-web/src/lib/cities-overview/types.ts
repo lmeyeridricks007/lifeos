@@ -44,6 +44,8 @@ export type MajorCityCard = {
   name: string;
   detailHref: string;
   comingSoon?: boolean;
+  /** Editorial card image (often same asset as the city hub hero). */
+  image?: { src: string; alt: string };
   overview: string;
   whoChooses: string;
   whyExpatsPick: string;
@@ -145,8 +147,27 @@ export type NetherlandsCitiesOverviewData = {
   slug: string;
   country: string;
   path: string;
+  /** Scheduled publishing metadata (documentation + consistent content dating). */
+  publish: boolean;
+  publishDate: string;
   seo: CitiesOverviewSEO;
   hero: CitiesOverviewHero;
+  /** H2 + body for the overview section (e.g. “How to use this guide”). */
+  guideIntro: {
+    heading: string;
+    paragraphs: string[];
+  };
+  /** Editorial framing above the comparison table. */
+  hubComparisonIntro?: {
+    paragraphs: string[];
+    dimensions: string[];
+  };
+  /** Links to service category pages (route-safe filtering happens at render when needed). */
+  hubServiceLinks?: Array<{ label: string; href: string; description?: string }>;
+  /** Single block of internal guide links for the hub. */
+  hubGuideBlock?: CitiesRelatedGuideBlock;
+  /** Bottom-of-page discovery cards. */
+  exploreNextCards?: Array<{ label: string; href: string; description: string }>;
   tocItems: Array<{ id: string; label: string }>;
   intro: {
     paragraphs: string[];

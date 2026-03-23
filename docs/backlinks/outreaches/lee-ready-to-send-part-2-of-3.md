@@ -2,6 +2,8 @@
 
 **From:** Lee · **Site:** https://www.expatcopilot.com  
 
+Each prospect includes a **`To:`** line (published email or official contact path). **Re-verify** before sending.
+
 **Prospects in this file:** §07 rows **#41–80** (E & I through AWVN).
 
 [← Part 1](./lee-ready-to-send-part-1-of-3.md) · [Part 3 →](./lee-ready-to-send-part-3-of-3.md) · [Index](./README.md)
@@ -10,6 +12,7 @@
 
 ### 41. E & I Expat & Immigration Services
 **Reach:** Management / content · [expat-relocation.nl (EN)](https://www.expat-relocation.nl/en/)
+**To:** `info@expat-relocation.nl` · [E & I contact](https://www.expat-relocation.nl/en/contact/)
 
 **Initial — Subject:** Document readiness tool — might pair with your immigration narrative  
 
@@ -33,6 +36,7 @@ Lee
 
 ### 42. Amsterdam Relocation (Netherlands Relocation)
 **Reach:** Info@ on site · [netherlands-relocation.com](https://www.netherlands-relocation.com/)
+**To:** `info@netherlands-relocation.com` · [Netherlands Relocation](https://www.netherlands-relocation.com/)
 
 **Initial — Subject:** Neutral moving steps — possible FAQ companion  
 
@@ -54,6 +58,7 @@ Lee
 
 ### 43. Eres Relocation (NL)
 **Reach:** NL office / marketing · [eresrelocation.nl](https://www.eresrelocation.nl/)
+**To:** `amsterdam@eresrelocation.com` · [Eres NL office](https://www.eresrelocation.com/our-offices/)
 
 **Initial — Subject:** Relocation cost estimator — educational angle for assignees  
 
@@ -77,6 +82,7 @@ Lee
 
 ### 44. RELOCONSULT
 **Reach:** Owner / marketing · [reloconsult.nl](https://www.reloconsult.nl/)
+**To:** `Info@reloconsult.nl` · [reloconsult.nl](https://www.reloconsult.nl/)
 
 **Initial — Subject:** Practical moving steps — boutique relocation  
 
@@ -98,6 +104,7 @@ Lee
 
 ### 45. Settly
 **Reach:** Marketing / partnerships · [settly.nl](https://settly.nl/) / [getsettly.com](https://www.getsettly.com/)
+**To:** `erika@settly.nl` (published for partnership / product feedback) · [Get Settly](https://www.getsettly.com/) · [Settly.nl](https://settly.nl/)
 
 **Initial — Subject:** First 90 days — possible employee-facing “extra reading”  
 
@@ -119,6 +126,7 @@ Lee
 
 ### 46. Santa Fe Relocation
 **Reach:** Country manager / marketing · [santaferelo.com](https://www.santaferelo.com/)
+**To:** `amsterdam@santaferelo.com` · [Santa Fe Amsterdam office](https://www.santaferelo.com/en/contact/our-offices/netherlands-amsterdam/)
 
 **Initial — Subject:** Netherlands relocation cost estimator — assignee education  
 
@@ -140,6 +148,7 @@ Lee
 
 ### 47. Crown Relocations
 **Reach:** Local content / PR · [Crown Netherlands](https://www.crownrelo.com/en-nl)
+**To:** `amsterdam@crownrelo.com` · [Crown Relocations — Amsterdam office](https://www.crownrelo.com/netherlands/en-nl/office/amsterdam)
 
 **Initial — Subject:** Relocation budgeting — Netherlands-specific  
 
@@ -161,6 +170,7 @@ Lee
 
 ### 48. Cartus
 **Reach:** Global mobility content team · [cartus.com](https://www.cartus.com/)
+**To:** *[Cartus contact](https://www.cartus.com/contact-us)*
 
 **Initial — Subject:** Step-by-step Netherlands move — thought-leadership adjacent  
 
@@ -182,6 +192,7 @@ Lee
 
 ### 49. Aires
 **Reach:** Marketing / content · [aires.com](https://www.aires.com/)
+**To:** *[Aires — contact / routing](https://www.aires.com/contact-aires)* (no single catch-all `info@` published — use form or regional office)
 
 **Initial — Subject:** Netherlands relocation cost tool  
 
@@ -203,6 +214,7 @@ Lee
 
 ### 50. SIRVA
 **Reach:** Global mobility marketing · [sirva.com](https://www.sirva.com/)
+**To:** `concierge@sirva.com` · [SIRVA support / contact](https://sirva.com/en-gb/support)
 
 **Initial — Subject:** Educational NL moving outline  
 
@@ -224,6 +236,7 @@ Lee
 
 ### 51. EURA (European Relocation Association)
 **Reach:** Membership / events team · [eura-relocation.com](https://www.eura-relocation.com/)
+**To:** `kirsty@eura-relocation.com` (listed on site) · *or events/membership via* [EURA contact](https://www.eura-relocation.com/contact)
 
 **Initial — Subject:** Neutral Netherlands relocation explainer for members  
 
@@ -245,6 +258,7 @@ Lee
 
 ### 52. Dutch Immigration Lawyer
 **Reach:** Marketing / blog author · [dutchimmigrationlawyer.nl](https://dutchimmigrationlawyer.nl/) · [Blog](https://dutchimmigrationlawyer.nl/blog/)
+**To:** `support@dutchimmigrationlawyer.nl` · [Dutch Immigration Lawyer](https://dutchimmigrationlawyer.nl/)
 
 **Initial — Subject:** Visa documents overview — “before the consult” reading  
 
@@ -270,6 +284,7 @@ Lee
 
 ### 53. The Immigration Lawyer
 **Reach:** Firm marketing · [theimmigrationlawyer.nl](https://theimmigrationlawyer.nl/)
+**To:** *[The Immigration Lawyer — contact page](https://theimmigrationlawyer.nl/contact/)*
 
 **Initial — Subject:** Plain-language visa documents — educational, not advice  
 
@@ -295,6 +310,7 @@ Lee
 
 ### 54. Everaert Advocaten
 **Reach:** BD / marketing · [everaert.nl/en](https://www.everaert.nl/en/home/) · [News](https://www.everaert.nl/en/news/)
+**To:** `info@everaert.nl` · [Everaert — contact](https://www.everaert.nl/en/contact/)
 
 **Initial — Subject:** Compare visas — possible complement to Everaert news  
 
@@ -320,6 +336,7 @@ Lee
 
 ### 55. Bierbach Advocaten
 **Reach:** Marketing · [bierbach.nl/en](https://www.bierbach.nl/en/home-english/)
+**To:** `info@bierbach.nl` · [Bierbach — contact](https://bierbach.nl/en/contact-en/)
 
 **Initial — Subject:** Visa documents — English-site audience  
 
@@ -341,6 +358,7 @@ Lee
 
 ### 56. Kernkamp Immigration Lawyers
 **Reach:** Marketing · [kernkamp.nl/en](https://www.kernkamp.nl/en/)
+**To:** `kernkamp@minerva-advocaten.nl` · `info@minerva-advocaten.nl` · [Kernkamp — contact](https://www.kernkamp.nl/en/contact/)
 
 **Initial — Subject:** Document categories — orientation for Kernkamp readers  
 
@@ -362,6 +380,7 @@ Lee
 
 ### 57. Meijers Canatan Immigration Lawyers
 **Reach:** Marketing · [meijers.com](https://www.meijers.com/)
+**To:** `info@meijers.com` · [Meijers Canatan — contact](https://www.meijers.com/contact/)
 
 **Initial — Subject:** Visa route comparison — alongside full-service positioning  
 
@@ -383,6 +402,7 @@ Lee
 
 ### 58. Fruytier Lawyers in Business
 **Reach:** Immigration / corporate team · [fruytier.com/en](https://fruytier.com/en/)
+**To:** *[Fruytier — contact](https://www.fruytier.com/en/contact/)*
 
 **Initial — Subject:** Highly skilled migrant explainer — corporate immigration audience  
 
@@ -404,6 +424,7 @@ Lee
 
 ### 59. Holla legal & tax
 **Reach:** Content / marketing · [holla.nl/en](https://www.holla.nl/en)
+**To:** `info@holla.nl` · [Holla — contact](https://www.holla.nl/en/contact/)
 
 **Initial — Subject:** Visa documents + mobility readers  
 
@@ -425,6 +446,7 @@ Lee
 
 ### 60. Louwers Advocaten
 **Reach:** Practice group marketing · [louwers.nl/en](https://www.louwers.nl/en)
+**To:** *[Louwers — contact](https://www.louwers.nl/en/contact/)*
 
 **Initial — Subject:** Immigration practice — educational visa document page  
 
@@ -446,6 +468,7 @@ Lee
 
 ### 61. OrangeTax
 **Reach:** Marketing / content · [orangetax.com](https://www.orangetax.com/) · [Tax blog](https://www.orangetax.com/tax-blog/)
+**To:** *[OrangeTax — contact / tax blog](https://www.orangetax.com/)*
 
 **Initial — Subject:** 30% ruling calculator — fit for your tax blog readers  
 
@@ -471,6 +494,7 @@ Lee
 
 ### 62. Blue Umbrella
 **Reach:** Marketing · [blueumbrella.nl](https://www.blueumbrella.nl/)
+**To:** `info@blueumbrella.nl` · [Blue Umbrella — contact](https://www.blueumbrella.nl/contact)
 
 **Initial — Subject:** Double tax awareness — companion to cross-border tax content  
 
@@ -492,6 +516,7 @@ Lee
 
 ### 63. Grant Thornton Netherlands
 **Reach:** Expat tax / global mobility line · [grantthornton.nl/en](https://www.grantthornton.nl/en/)
+**To:** *[Grant Thornton NL — contact](https://www.grantthornton.nl/en/contact/)*
 
 **Initial — Subject:** 30% ruling calculator — optional reader resource  
 
@@ -513,6 +538,7 @@ Lee
 
 ### 64. Deloitte Netherlands
 **Reach:** Global employer services · [deloitte.com/nl/en](https://www.deloitte.com/nl/en.html)
+**To:** *[Deloitte NL — contact](https://www.deloitte.com/nl/en/footerlinks/contact-us.html)*
 
 **Initial — Subject:** 30% ruling — humble educational share  
 
@@ -538,6 +564,7 @@ Lee
 
 ### 65. PwC Netherlands
 **Reach:** People & organisation / immigration pages · [pwc.nl/en](https://www.pwc.nl/en.html)
+**To:** *[PwC NL — contact](https://www.pwc.nl/en/footerlinks/contact.html)*
 
 **Initial — Subject:** Dutch health insurance explainer — first-90-days angle  
 
@@ -563,6 +590,7 @@ Lee
 
 ### 66. KPMG Netherlands
 **Reach:** Global mobility / advisory · [kpmg.com/nl/en](https://www.kpmg.com/nl/en/home.html)
+**To:** *[KPMG NL — contact](https://home.kpmg/nl/en/home/misc/contact.html)*
 
 **Initial — Subject:** 30% ruling calculator — educational only  
 
@@ -588,6 +616,7 @@ Lee
 
 ### 67. DutchNews.nl
 **Reach:** Editor / tips · [dutchnews.nl](https://www.dutchnews.nl/)
+**To:** `editor@dutchnews.nl` · [DutchNews contact](https://www.dutchnews.nl/contact/)
 
 **Initial — Subject:** Idea for readers — Netherlands moving checklist  
 
@@ -615,6 +644,7 @@ Lee
 
 ### 68. NL Times
 **Reach:** Editorial contact · [nltimes.nl](https://nltimes.nl/)
+**To:** `tips@nltimes.nl` · *Corrections:* `editors@nltimes.nl` · [NL Times contact](https://nltimes.nl/contact-us)
 
 **Initial — Subject:** Common moving mistakes — possible story hook  
 
@@ -640,6 +670,7 @@ Lee
 
 ### 69. The Local — Netherlands
 **Reach:** Editor · [thelocal.nl](https://www.thelocal.nl/)
+**To:** *[The Local — editorial contact form](https://www.thelocal.com/contact)* (select Netherlands / editorial)
 
 **Initial — Subject:** Moving checklist — for internationals in NL  
 
@@ -665,6 +696,7 @@ Lee
 
 ### 70. IamExpat
 **Reach:** Editorial (not ads) · [iamexpat.nl](https://www.iamexpat.nl/)
+**To:** `editor@iamexpat.nl` · `info@iamexpat.nl` · [IamExpat contact](https://www.iamexpat.nl/contact)
 
 **Initial — Subject:** After arriving — fits your guides ecosystem  
 
@@ -690,6 +722,7 @@ Lee
 
 ### 71. Expatica — Netherlands
 **Reach:** Content / partnerships · [expatica.com/nl](https://www.expatica.com/nl/)
+**To:** `info@expatica.com` · `sales@expatica.com` (commercial) · [Expatica NL](https://www.expatica.com/nl/) — *confirm editorial vs advertising before pitching*
 
 **Initial — Subject:** Moving to the Netherlands hub — editorial share  
 
@@ -715,6 +748,7 @@ Lee
 
 ### 72. DutchReview
 **Reach:** Editor / guest guidelines · [dutchreview.com](https://dutchreview.com/)
+**To:** *[DutchReview — contact form](https://dutchreview.com/contact/)*
 
 **Initial — Subject:** Moving checklist — lifestyle / expat readers  
 
@@ -740,6 +774,7 @@ Lee
 
 ### 73. Netherlands and you
 **Reach:** Government travel / info · [netherlandsandyou.nl](https://www.netherlandsandyou.nl/)
+**To:** *[Netherlands and you — contact](https://www.netherlandsandyou.nl/contact)*
 
 **Initial — Subject:** Independent NL overview — ultra-soft (rarely links out)  
 
@@ -763,6 +798,7 @@ Lee
 
 ### 74. ESN (sections in NL)
 **Reach:** **Each local section board** (e.g. [ESN Amsterdam](https://www.esnamsterdam.nl/)) — not only esn.org  
+**To:** *Per ESN section (e.g. Amsterdam: see [ESN Amsterdam](https://www.esnamsterdam.nl/) contact) · [ESN NL sections](https://esn.org/sections?country=Netherlands)*
 
 **Initial — Subject:** After arriving — for new members  
 
@@ -784,6 +820,7 @@ Lee
 
 ### 75. InterNations
 **Reach:** Guides / local ambassadors · [internations.org](https://www.internations.org/)
+**To:** *[InterNations — site contact](https://www.internations.org/contact)*
 
 **Initial — Subject:** Moving checklist — only if your guidelines allow external links  
 
@@ -805,6 +842,7 @@ Lee
 
 ### 76. Meetup (expat Amsterdam search)
 **Reach:** **Individual group organisers** — [example search](https://www.meetup.com/find/?keywords=expat&location=nl--Amsterdam) — not Meetup HQ  
+**To:** *Meetup HQ — not applicable; contact **individual group organisers** from search results*
 
 **Initial — Subject:** Resource for [Group name] members — Netherlands moving checklist  
 
@@ -826,6 +864,7 @@ Lee
 
 ### 77. TechNL
 **Reach:** Programme / communications · [technl.org](https://technl.org/)
+**To:** `info@technl.nl` · [TechNL — contact](https://technl.nl/contact/)
 
 **Initial — Subject:** Visa route comparison — for tech talent content  
 
@@ -847,6 +886,7 @@ Lee
 
 ### 78. Amsterdam Economic Board
 **Reach:** Comms / talent programmes · [amsterdameconomicboard.com](https://www.amsterdameconomicboard.com/)
+**To:** *[Amsterdam Economic Board contact](https://www.amsterdameconomicboard.com/contact)*
 
 **Initial — Subject:** South Africa → Netherlands — talent & relocation primer  
 
@@ -867,7 +907,8 @@ Lee
 ---
 
 ### 79. VNO-NCW
-**Reach:** International / labour market · [vnocw.nl](https://www.vnocw.nl/)
+**Reach:** International / labour market · [VNO-NCW](https://www.vno-ncw.nl/) (employers’ confederation)
+**To:** *[VNO-NCW — contact forms / routing](https://www.vno-ncw.nl/contact)* (site uses topic forms rather than one public `info@` inbox)
 
 **Initial — Subject:** Neutral relocation steps — employer audience  
 
@@ -889,6 +930,7 @@ Lee
 
 ### 80. AWVN
 **Reach:** HR / international employment · [awvn.nl](https://www.awvn.nl/)
+**To:** `werkgeverslijn@awvn.nl` · [AWVN — contact](https://www.awvn.nl/contact)
 
 **Initial — Subject:** Highly skilled migrant explainer — HR policy readers  
 

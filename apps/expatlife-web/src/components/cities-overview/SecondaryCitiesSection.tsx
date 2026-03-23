@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MapPin, ArrowRight } from "lucide-react";
 import type { SecondaryCityCard } from "@/src/lib/cities-overview/types";
 import { cn } from "@/lib/cn";
+import { ComingSoonBadge } from "@/components/ui/coming-soon-badge";
 
 const cardAccents = [
   "border-l-amber-500 bg-gradient-to-br from-amber-50/50 to-white",
@@ -21,25 +22,26 @@ export function SecondaryCitiesSection({ cities }: { cities: SecondaryCityCard[]
         <article
           key={city.name}
           className={cn(
-            "flex flex-col rounded-xl border border-slate-200 overflow-hidden shadow-sm",
-            "border-l-4 transition-all hover:shadow-md hover:border-slate-300",
-            cardAccents[i % cardAccents.length]
+            "flex flex-col rounded-2xl border border-slate-200 overflow-hidden shadow-md shadow-slate-200/40",
+            "border-l-4 transition-all",
+            cardAccents[i % cardAccents.length],
+            city.comingSoon ? "border-dashed border-slate-300 bg-slate-50/50" : "hover:shadow-md hover:border-slate-300"
           )}
         >
           <div className="flex flex-col flex-1 px-5 py-4">
             <div className="flex items-start gap-3">
               <span
                 className={cn(
-                  "flex h-9 w-9 shrink-0 items-center justify-center rounded-lg",
-                  i % 6 === 0 && "bg-amber-100 text-amber-700",
-                  i % 6 === 1 && "bg-sky-100 text-sky-700",
-                  i % 6 === 2 && "bg-emerald-100 text-emerald-700",
-                  i % 6 === 3 && "bg-violet-100 text-violet-700",
-                  i % 6 === 4 && "bg-rose-100 text-rose-700",
-                  i % 6 === 5 && "bg-slate-100 text-slate-600"
+                  "flex h-11 w-11 shrink-0 items-center justify-center rounded-xl shadow-sm ring-1 ring-black/5",
+                  i % 6 === 0 && "bg-gradient-to-br from-amber-100 to-amber-50 text-amber-800",
+                  i % 6 === 1 && "bg-gradient-to-br from-sky-100 to-sky-50 text-sky-800",
+                  i % 6 === 2 && "bg-gradient-to-br from-emerald-100 to-emerald-50 text-emerald-800",
+                  i % 6 === 3 && "bg-gradient-to-br from-violet-100 to-violet-50 text-violet-800",
+                  i % 6 === 4 && "bg-gradient-to-br from-rose-100 to-rose-50 text-rose-800",
+                  i % 6 === 5 && "bg-gradient-to-br from-slate-100 to-slate-50 text-slate-700"
                 )}
               >
-                <MapPin className="h-4 w-4" aria-hidden />
+                <MapPin className="h-5 w-5" aria-hidden strokeWidth={2} />
               </span>
               <div className="min-w-0 flex-1">
                 <h3 className="font-semibold text-slate-900">{city.name}</h3>
@@ -50,9 +52,7 @@ export function SecondaryCitiesSection({ cities }: { cities: SecondaryCityCard[]
             </div>
             <div className="mt-4 pt-3 border-t border-slate-200/80">
               {city.comingSoon ? (
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
-                  Guide coming soon
-                </span>
+                <ComingSoonBadge label="Coming soon" />
               ) : city.detailHref ? (
                 <Link
                   href={city.detailHref}

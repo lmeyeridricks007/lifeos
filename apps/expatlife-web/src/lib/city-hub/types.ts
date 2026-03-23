@@ -137,10 +137,43 @@ export type CityHubPageData = {
   country: string;
   name: string;
   path: string;
+  /** When true with `publishDate`, used for Article JSON-LD `dateModified` and editorial consistency. */
+  publish?: boolean;
+  publishDate?: string;
   seo: CityHubSEO;
   hero: CityHubHero;
   tocItems: CityTocItem[];
   quickFacts: CityQuickFact[];
+  /** Optional H2 above quick facts (e.g. “Haarlem at a Glance”). */
+  quickFactsHeading?: string;
+  /** Optional second narrative block (e.g. “What it’s like to live here”). */
+  lifeInCity?: CityOverviewSection;
+  /** Trade-offs / caveats section (render order may follow `hubLayout`). */
+  tradeOffs?: { heading: string; paragraphs: string[] };
+  /**
+   * `amsterdam-area-alternative`: intro-first layout, quick facts after intro, optional reorder of
+   * comparison vs profiles. Default matches Amsterdam/Utrecht-style pages.
+   */
+  hubLayout?: "default" | "amsterdam-area-alternative";
+  /**
+   * With `amsterdam-area-alternative`, render first 30 days, who-moves-here, and trade-offs
+   * immediately after the opening blocks (before Overview and registration/admin sections).
+   * City comparison stays after services.
+   */
+  earlyPracticalSections?: boolean;
+  /** Override “Official Sources” H2 (default in template). */
+  officialSourcesHeading?: string;
+  /** Override default intro paragraph above the official links list. */
+  officialSourcesIntro?: string;
+  /** Override city links strip title (default: “Other Popular Dutch Cities for Expats”). */
+  cityLinksSectionTitle?: string;
+  /** Override H2 above related guide blocks. */
+  relatedGuidesSectionTitle?: string;
+  /** Override example scenarios section title + intro. */
+  exampleScenariosHeading?: string;
+  exampleScenariosIntro?: string;
+  /** Override “Useful Services for Newcomers in {name}” heading. */
+  servicesExpatsHeading?: string;
   /** Optional: "Living in {City} as an Expat" narrative section. */
   cityOverview?: CityOverviewSection;
   /** Optional: "Why Expats Choose {City}" reason cards. */

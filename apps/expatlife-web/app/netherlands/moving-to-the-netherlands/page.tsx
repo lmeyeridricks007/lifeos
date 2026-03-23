@@ -6,6 +6,7 @@ import {
   resolveReadingOrder,
 } from "@expatlife/content";
 import { PillarPageTemplate } from "@/components/content/PillarPageTemplate";
+import { BoldParagraph } from "@/components/content/PillarContentBlocks";
 import type { ResolvedScenario } from "@/components/content/PillarScenarioCards";
 import {
   getAffiliatesForCategory,
@@ -98,7 +99,7 @@ export default async function MovingToNetherlandsPillarPage(props: PageProps) {
     title: item.q,
     content: (
       <div className="space-y-3">
-        <p className="text-sm text-slate-700">{item.a}</p>
+        <BoldParagraph text={item.a} className="text-sm text-slate-700 leading-relaxed" />
         {item.links?.length ? (
           <ul className="flex flex-wrap gap-2">
             {item.links.map((link) => (
@@ -143,14 +144,12 @@ export default async function MovingToNetherlandsPillarPage(props: PageProps) {
   const sidebarData = loadPlacementWithProviders("nl-moving-pillar-sidebar-start-here", destCountry, originCountry);
   const nextStepsData = loadPlacementWithProviders("nl-moving-pillar-next-steps", destCountry, originCountry);
   const endResourcesData = loadPlacementWithProviders("nl-moving-pillar-end-resources", destCountry, originCountry);
-  const scenarioData = loadPlacementWithProviders("nl-moving-pillar-scenario-work-solo-30", destCountry, originCountry);
   const affiliateBlockData = {
     ...(bankingData && { banking: bankingData }),
     ...(housingData && { housing: housingData }),
     ...(sidebarData && { sidebar: sidebarData }),
     ...(nextStepsData && { nextSteps: nextStepsData }),
     ...(endResourcesData && { endResources: endResourcesData }),
-    ...(scenarioData && { scenario: scenarioData }),
   };
 
   return (
@@ -184,8 +183,8 @@ export default async function MovingToNetherlandsPillarPage(props: PageProps) {
             contained={false}
           />
         }
+        slotBeforeFaq={<CostOfMovingSection contained={false} />}
       />
-      <CostOfMovingSection />
       <Section
         title="Arrival overview"
         subtitle="If you have already landed, use these guides for practical first-step sequencing."

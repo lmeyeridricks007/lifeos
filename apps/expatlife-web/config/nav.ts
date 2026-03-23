@@ -99,14 +99,9 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
         ],
       },
       {
-        title: "Cities",
+        title: "More",
         links: [
-          link("All Cities Overview", "/netherlands/cities/", "Compare Amsterdam, Rotterdam, Utrecht & more", false),
-          link("Amsterdam", "/netherlands/amsterdam/", "City hub: registration, BSN, banking, housing", false),
-          link("Rotterdam", "/netherlands/rotterdam/", "City hub: registration, BSN, banking, housing", false),
-          link("Utrecht", "/netherlands/utrecht/", "City hub: registration, BSN, banking, housing", false),
-          link("The Hague", "/netherlands/the-hague/", "City hub: registration, BSN, banking, housing", false),
-          link("Eindhoven", "/netherlands/eindhoven/", "City hub: registration, BSN, banking, housing", false),
+          link("Cities", "/netherlands/cities/", "Discover and compare Dutch cities for expats", false),
         ],
       },
       {

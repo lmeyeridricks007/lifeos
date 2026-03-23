@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { MajorCityCard } from "@/src/lib/cities-overview/types";
@@ -17,11 +18,24 @@ export function MajorCityCardsGrid({ cards }: { cards: MajorCityCard[] }) {
         <article
           key={card.slug}
           className={cn(
-            "flex flex-col rounded-xl border bg-white p-5 shadow-sm",
+            "flex flex-col rounded-2xl border bg-white shadow-md shadow-slate-200/50",
             "border-l-4 border-l-teal-500",
-            "bg-gradient-to-br from-teal-50/30 to-white"
+            "bg-gradient-to-br from-teal-50/30 to-white",
+            card.image?.src ? "overflow-hidden pt-0" : "p-5"
           )}
         >
+          {card.image?.src ? (
+            <div className="relative aspect-[16/10] w-full shrink-0 bg-slate-100">
+              <Image
+                src={card.image.src}
+                alt={card.image.alt}
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 40vw, (min-width: 768px) 50vw, 100vw"
+              />
+            </div>
+          ) : null}
+          <div className={cn("flex flex-1 flex-col", card.image?.src ? "p-5" : "")}>
           <div className="flex items-start justify-between gap-2">
             <h3 className="text-xl font-semibold text-slate-900">{card.name}</h3>
             {card.comingSoon && (
@@ -107,6 +121,7 @@ export function MajorCityCardsGrid({ cards }: { cards: MajorCityCard[] }) {
                 <span className="ml-1" aria-hidden>→</span>
               </Link>
             )}
+          </div>
           </div>
         </article>
       ))}

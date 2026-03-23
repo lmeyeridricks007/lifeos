@@ -43,9 +43,17 @@ import { AffiliateBlockView } from "@/src/components/affiliates/AffiliateBlockVi
 import type { AffiliatePlacement, AffiliateProvider } from "@/src/lib/affiliates/types";
 import { getToolBySlug } from "@/src/lib/tools/getToolBySlug";
 
-function pillarHeroToEditorial(raw: string | null | undefined): EditorialHeroImage | null {
+function pillarHeroToEditorial(
+  raw: string | null | undefined,
+  alt?: string | null | undefined
+): EditorialHeroImage | null {
   if (raw == null || raw === "") return null;
-  return { src: raw, alt: "", priority: true };
+  const trimmed = alt?.trim();
+  return {
+    src: raw,
+    alt: trimmed && trimmed.length > 0 ? trimmed : "Hero image for this guide",
+    priority: true,
+  };
 }
 
 export type AffiliateBlockData = {
@@ -96,12 +104,13 @@ export type PillarTemplateProps = {
     sidebar?: { placement: AffiliatePlacement; items: Array<{ provider: AffiliateProvider; reason: string; meta?: Record<string, string> }> };
     nextSteps?: { placement: AffiliatePlacement; items: Array<{ provider: AffiliateProvider; reason: string; meta?: Record<string, string> }> };
     endResources?: { placement: AffiliatePlacement; items: Array<{ provider: AffiliateProvider; reason: string; meta?: Record<string, string> }> };
-    scenario?: { placement: AffiliatePlacement; items: Array<{ provider: AffiliateProvider; reason: string; meta?: Record<string, string> }> };
   };
   /** Full canonical URL for share/copy (e.g. siteUrl + meta.canonicalPath). */
   canonicalUrl: string;
   /** Optional content to render above the moving timeline section (e.g. country guide grid). */
   slotBeforeTimeline?: React.ReactNode;
+  /** Optional block immediately before the FAQ (e.g. cost of moving). */
+  slotBeforeFaq?: React.ReactNode;
 };
 
 /**
@@ -127,6 +136,7 @@ export function PillarPageTemplate({
   affiliateBlockData,
   canonicalUrl,
   slotBeforeTimeline,
+  slotBeforeFaq,
 }: PillarTemplateProps) {
   const beforeMoveTool = getToolBySlug("moving-checklist", { categoryId: "move-immigration" });
   const afterArrivalTool = getToolBySlug("arrival-planner", { categoryId: "move-immigration" });
@@ -198,7 +208,7 @@ export function PillarPageTemplate({
               eyebrow={pageHeader.eyebrow}
               title={pageHeader.title}
               subtitle={pageHeader.subtitle}
-              heroImage={pillarHeroToEditorial(pageHeader.heroImage)}
+              heroImage={pillarHeroToEditorial(pageHeader.heroImage, pageHeader.heroImageAlt)}
               shareUrl={canonicalUrl}
               pageId={meta.canonicalPath}
             />
@@ -452,7 +462,7 @@ export function PillarPageTemplate({
                 {banking.sectionTitle}
               </h2>
               {banking.introParagraph && (
-                <p className="mt-2 text-slate-600">{banking.introParagraph}</p>
+                <BoldParagraph text={banking.introParagraph} className="mt-2 text-slate-600 leading-relaxed" />
               )}
               <p className={banking.introParagraph ? "mt-3 text-slate-600" : "mt-2 text-slate-600"}>
                 {banking.paragraphLinkKeys && banking.paragraphLinkKeys.length > 0 ? (
@@ -489,12 +499,23 @@ export function PillarPageTemplate({
               <h2 id="housing" className="text-2xl font-semibold tracking-tight text-slate-900">
                 {housing.sectionTitle}
               </h2>
+              {housing.introParagraph && (
+                <BoldParagraph text={housing.introParagraph} className="mt-2 text-slate-600 leading-relaxed" />
+              )}
               {housing.registrationWarning && (
-                <InfoBox variant="warn" title="Registrable address matters" className="mt-2">
+                <InfoBox
+                  variant="warn"
+                  title="Registrable address matters"
+                  className={housing.introParagraph ? "mt-4" : "mt-2"}
+                >
                   {housing.registrationWarning}
                 </InfoBox>
               )}
-              <p className={housing.registrationWarning ? "mt-3 text-slate-600" : "mt-2 text-slate-600"}>
+              <p
+                className={
+                  housing.registrationWarning || housing.introParagraph ? "mt-3 text-slate-600" : "mt-2 text-slate-600"
+                }
+              >
                 {housing.paragraphLinkKeys && housing.paragraphLinkKeys.length > 0 ? (
                   <ParagraphWithLinks
                     paragraph={housing.paragraph}
@@ -562,18 +583,6 @@ export function PillarPageTemplate({
                 <PillarToolsStrip tools={toolsStrip} />
               </div>
             </Section>
-
-            {affiliateBlockData?.scenario && (
-              <div className="mt-6">
-                <h3 className="text-lg font-semibold text-slate-900">Often used for this situation</h3>
-                <p className="mt-1 text-sm text-slate-600">
-                  For the work / solo scenario above, many expats use these services to get started.
-                </p>
-                <div className="mt-4">
-                  <AffiliateBlockView placement={affiliateBlockData.scenario.placement} items={affiliateBlockData.scenario.items} />
-                </div>
-              </div>
-            )}
 
             <Section contained={false}>
               <h2 id="useful-services" className="text-2xl font-semibold tracking-tight text-slate-900">
@@ -658,6 +667,7 @@ export function PillarPageTemplate({
                 variant="bottom"
                 className="mb-8"
               />
+              {slotBeforeFaq}
               <h2 id="faq" className="text-2xl font-semibold tracking-tight text-slate-900">
                 {sectionTitles.faq}
               </h2>

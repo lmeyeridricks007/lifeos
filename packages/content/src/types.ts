@@ -43,6 +43,8 @@ export type PillarSectionsJson = {
     title: string;
     subtitle: string;
     heroImage?: string | null;
+    /** Alt text for heroImage (accessibility + SEO) */
+    heroImageAlt?: string | null;
   };
   intro: { segments: PillarIntroSegment[] };
   overview: {
@@ -95,6 +97,8 @@ export type PillarSectionsJson = {
   };
   housing: {
     sectionTitle: string;
+    /** Optional overview (supports **bold** via BoldParagraph in the pillar template). */
+    introParagraph?: string;
     registrationWarning?: string;
     paragraph: string;
     paragraphLinkKeys?: string[];

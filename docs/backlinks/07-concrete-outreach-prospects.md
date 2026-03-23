@@ -146,7 +146,7 @@ Companion to the [backlinks index](./README.md). This file lists **named organis
 |---|--------------|------------------|-----------|
 | 77 | TechNL | [technl.org](https://technl.org/) | Programme / communications |
 | 78 | amsterdam inbusiness / economic board | [amsterdameconomicboard.com](https://www.amsterdameconomicboard.com/) | Comms / talent programmes |
-| 79 | VNO-NCW (employers’ confederation) | [vnocw.nl](https://www.vnocw.nl/) | International / labour market team |
+| 79 | VNO-NCW (employers’ confederation) | [vno-ncw.nl](https://www.vno-ncw.nl/) | International / labour market team |
 | 80 | AWVN (employers association) | [awvn.nl](https://www.awvn.nl/) | HR / international employment |
 | 81 | The Social Hub | [thesocialhub.co](https://www.thesocialhub.co/) | Local hub managers / brand |
 | 82 | WeWork Netherlands | [WeWork — find NL locations](https://www.wework.com/l/netherlands) | Community / marketing |

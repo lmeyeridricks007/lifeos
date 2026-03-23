@@ -1,6 +1,6 @@
 # Outreach drafts (emails & follow-ups)
 
-**Primary — copy-paste messages:** Ready-to-send sequences for **Lee** and **https://www.expatcopilot.com** (organisation-specific subjects and bodies).
+**Primary — copy-paste messages:** Ready-to-send sequences for **Lee** and **https://www.expatcopilot.com** (organisation-specific subjects and bodies). Each prospect block includes a **`To:`** line with a **published email or official contact path** — confirm on the live site before sending.
 
 | Document | Contents |
 |----------|----------|

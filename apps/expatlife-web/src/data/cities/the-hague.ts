@@ -138,10 +138,11 @@ export const theHagueCityPage: CityHubPageData = {
   },
 
   tocItems: [
-    { id: "living-in-city", label: "Living in The Hague" },
-    { id: "why-expats-choose", label: "Why Expats Choose The Hague" },
-    { id: "jobs-ecosystem", label: "Jobs & Companies" },
     { id: "overview", label: "Overview" },
+    { id: "the-hague-at-a-glance", label: "The Hague at a Glance" },
+    { id: "comparing-cities", label: "Comparing Dutch Cities" },
+    { id: "living-in-city", label: "Living in The Hague" },
+    { id: "jobs-ecosystem", label: "Jobs & Companies" },
     { id: "register-the-hague", label: "Register in The Hague" },
     { id: "bsn-digid", label: "BSN + DigiD" },
     { id: "health-insurance", label: "Health Insurance" },
@@ -150,7 +151,6 @@ export const theHagueCityPage: CityHubPageData = {
     { id: "transport", label: "Transport" },
     { id: "services-expats", label: "Services for Expats" },
     { id: "first-30-days", label: "First 30 Days" },
-    { id: "comparing-cities", label: "Comparing Dutch Cities" },
     { id: "who-moves-here", label: "Who Moves to The Hague" },
     { id: "example-scenarios", label: "Example Scenarios" },
     { id: "common-mistakes", label: "Common Mistakes" },

@@ -3,6 +3,10 @@ import { NextResponse } from "next/server";
 import { normalizeSitePath } from "@/src/data/site/route-registry";
 import { isPubliclyVisible } from "@/src/lib/publishing/isPubliclyVisible";
 import {
+  isNetherlandsCitiesHubPath,
+  isNetherlandsCitiesHubPubliclyVisible,
+} from "@/src/lib/cities-overview/citiesHubPublishing";
+import {
   findLiveToolByNormalizedRoute,
   findMovingGuideByNormalizedPath,
   findMovingGuideBySlug,
@@ -30,6 +34,10 @@ export function middleware(request: NextRequest) {
 
   const tool = findLiveToolByNormalizedRoute(n);
   if (tool && !isPubliclyVisible(tool.publish, tool.publishDate, now)) {
+    return new NextResponse(null, { status: 404 });
+  }
+
+  if (isNetherlandsCitiesHubPath(n) && !isNetherlandsCitiesHubPubliclyVisible(now)) {
     return new NextResponse(null, { status: 404 });
   }
 

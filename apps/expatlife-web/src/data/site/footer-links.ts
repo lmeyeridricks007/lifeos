@@ -2,6 +2,8 @@
  * Shared footer and HTML sitemap link data.
  * Update when adding new trust, legal, or main site pages so footer and sitemap stay in sync.
  */
+import { CONTACT_TOPIC_SERVICE_LISTING } from "@/src/data/site/contact";
+
 export type FooterLink = { label: string; href: string };
 
 export const FOOTER_GROUPS = {
@@ -10,6 +12,10 @@ export const FOOTER_GROUPS = {
     links: [
       { label: "About", href: "/about/" },
       { label: "Contact", href: "/contact/" },
+      {
+        label: "Request a listing",
+        href: `/contact/?topic=${CONTACT_TOPIC_SERVICE_LISTING}`,
+      },
       { label: "How this site works", href: "/how-this-site-works/" },
     ] as FooterLink[],
   },

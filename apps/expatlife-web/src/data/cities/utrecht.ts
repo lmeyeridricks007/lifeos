@@ -137,10 +137,11 @@ export const utrechtCityPage: CityHubPageData = {
   },
 
   tocItems: [
-    { id: "living-in-city", label: "Living in Utrecht" },
-    { id: "why-expats-choose", label: "Why Expats Choose Utrecht" },
-    { id: "jobs-ecosystem", label: "Jobs & Companies" },
     { id: "overview", label: "Overview" },
+    { id: "utrecht-at-a-glance", label: "Utrecht at a Glance" },
+    { id: "comparing-cities", label: "Comparing Dutch Cities" },
+    { id: "living-in-city", label: "Living in Utrecht" },
+    { id: "jobs-ecosystem", label: "Jobs & Companies" },
     { id: "register-utrecht", label: "Register in Utrecht" },
     { id: "bsn-digid", label: "BSN + DigiD" },
     { id: "health-insurance", label: "Health Insurance" },
@@ -149,7 +150,6 @@ export const utrechtCityPage: CityHubPageData = {
     { id: "transport", label: "Transport" },
     { id: "services-expats", label: "Services for Expats" },
     { id: "first-30-days", label: "First 30 Days" },
-    { id: "comparing-cities", label: "Comparing Dutch Cities" },
     { id: "who-moves-here", label: "Who Moves to Utrecht" },
     { id: "example-scenarios", label: "Example Scenarios" },
     { id: "common-mistakes", label: "Common Mistakes" },

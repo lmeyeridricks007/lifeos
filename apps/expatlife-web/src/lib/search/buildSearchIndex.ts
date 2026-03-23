@@ -17,6 +17,16 @@ import { rotterdamCityPage } from "@/src/data/cities/rotterdam";
 import { utrechtCityPage } from "@/src/data/cities/utrecht";
 import { theHagueCityPage } from "@/src/data/cities/the-hague";
 import { eindhovenCityPage } from "@/src/data/cities/eindhoven";
+import { haarlemCityPage } from "@/src/data/cities/haarlem";
+import { groningenCityPage } from "@/src/data/cities/groningen";
+import { delftCityPage } from "@/src/data/cities/delft";
+import { leidenCityPage } from "@/src/data/cities/leiden";
+import { maastrichtCityPage } from "@/src/data/cities/maastricht";
+import { bredaCityPage } from "@/src/data/cities/breda";
+import { tilburgCityPage } from "@/src/data/cities/tilburg";
+import { arnhemCityPage } from "@/src/data/cities/arnhem";
+import { nijmegenCityPage } from "@/src/data/cities/nijmegen";
+import { amstelveenCityPage } from "@/src/data/cities/amstelveen";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
 import { immigrationLawyersCategoryPage } from "@/src/data/services/categories/immigration-lawyers";
@@ -58,6 +68,16 @@ const CITY_PAGES: CityHubPageData[] = [
   utrechtCityPage,
   theHagueCityPage,
   eindhovenCityPage,
+  haarlemCityPage,
+  groningenCityPage,
+  delftCityPage,
+  leidenCityPage,
+  maastrichtCityPage,
+  bredaCityPage,
+  tilburgCityPage,
+  arnhemCityPage,
+  nijmegenCityPage,
+  amstelveenCityPage,
 ];
 
 const VISA_PAGES: VisaPageData[] = [

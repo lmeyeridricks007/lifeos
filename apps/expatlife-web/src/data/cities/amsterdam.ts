@@ -123,10 +123,11 @@ export const amsterdamCityPage: CityHubPageData = {
   },
 
   tocItems: [
-    { id: "living-in-city", label: "Living in Amsterdam" },
-    { id: "why-expats-choose", label: "Why Expats Choose Amsterdam" },
-    { id: "jobs-ecosystem", label: "Jobs & Companies" },
     { id: "overview", label: "Overview" },
+    { id: "amsterdam-at-a-glance", label: "Amsterdam at a Glance" },
+    { id: "comparing-cities", label: "Comparing Dutch Cities" },
+    { id: "living-in-city", label: "Living in Amsterdam" },
+    { id: "jobs-ecosystem", label: "Jobs & Companies" },
     { id: "register-amsterdam", label: "Register in Amsterdam" },
     { id: "bsn-digid", label: "BSN + DigiD" },
     { id: "health-insurance", label: "Health Insurance" },
@@ -135,7 +136,6 @@ export const amsterdamCityPage: CityHubPageData = {
     { id: "transport", label: "Transport" },
     { id: "services-expats", label: "Services for Expats" },
     { id: "first-30-days", label: "First 30 Days" },
-    { id: "comparing-cities", label: "Comparing Dutch Cities" },
     { id: "who-moves-here", label: "Who Moves to Amsterdam" },
     { id: "example-scenarios", label: "Example Scenarios" },
     { id: "common-mistakes", label: "Common Mistakes" },

@@ -20,6 +20,38 @@ const linkRegistry: LinkRegistry = {
   hub: { href: "/netherlands/moving/hub", title: "Moving hub" },
   bsn: { href: "/netherlands/bsn-registration", title: "BSN registration" },
   pillar: { href: "/netherlands/moving-to-the-netherlands", title: "Moving pillar" },
+  open_bank_account: {
+    href: "/netherlands/open-bank-account-netherlands/",
+    title: "our bank account guide",
+  },
+  services_banks: {
+    href: "/netherlands/services/banks/",
+    title: "our banking services directory",
+  },
+  municipality_registration: {
+    href: "/netherlands/municipality-registration-netherlands/",
+    title: "municipality registration & address guide",
+  },
+  services_housing_platforms: {
+    href: "/netherlands/services/housing-platforms/",
+    title: "housing platforms we compare",
+  },
+  services_rental_agencies: {
+    href: "/netherlands/services/rental-agencies/",
+    title: "rental agencies directory",
+  },
+  health_insurance: {
+    href: "/netherlands/health-insurance-netherlands/",
+    title: "Health insurance in the Netherlands",
+  },
+  digid_awareness: {
+    href: "/netherlands/digid-awareness/",
+    title: "DigiD awareness",
+  },
+  after_arriving: {
+    href: "/netherlands/after-arriving-netherlands/",
+    title: "After arriving in the Netherlands",
+  },
 };
 
 export const nlMovingPillarContent: NlMovingPillarContent = {
@@ -49,8 +81,59 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
   faq: [
     {
       q: "What is a BSN?",
-      a: "A citizen service number used for tax, work, and healthcare in the Netherlands.",
-      links: [{ label: "BSN guide", href: "/netherlands/bsn-registration" }],
+      a: "The **burgerservicenummer (BSN)** is your personal citizen service number in the Netherlands. You receive it when you **register your address** with your municipality (ingeschreven in de BRP). Employers, banks, insurers, and the tax office use it to identify you; you will see it on payslips, letters from Belastingdienst, and many online forms. It is **not** the same as a DigiD or a bank account—you get the BSN from registration first in most standard relocation paths.",
+      links: [{ label: "BSN registration guide", href: "/netherlands/bsn-registration" }],
+    },
+    {
+      q: "When should I register with the municipality?",
+      a: "Once you live at a **registrable address**, you normally must **register with your municipality (gemeente)** within a **short statutory window**—many official explanations use about **five working days** as the benchmark, but **always read your gemeente’s own page** for exact wording, exceptions, and how to book an appointment. Registration puts you in the **BRP** and is usually when you receive your **BSN**. You typically need **valid ID**, your **rental or ownership documents**, and sometimes your **birth/marriage certificates** depending on the desk. Plan this early if payroll or a lease depends on your BSN.",
+      links: [
+        { label: "Municipality registration", href: "/netherlands/municipality-registration-netherlands/" },
+        { label: "After arrival overview", href: "/netherlands/after-arriving-netherlands/" },
+      ],
+    },
+    {
+      q: "Can I open a Dutch bank account before I have a BSN?",
+      a: "It depends on the **bank and your situation**. Some providers onboard newcomers with **passport and proof of address** or a **pending registration**; others want **BSN and a stable Dutch address** before they complete KYC. Payroll and many contracts are smoother with a **Dutch IBAN**, so read bank-specific rules and timelines rather than assuming one path fits everyone.",
+      links: [
+        { label: "Open a bank account (full guide)", href: "/netherlands/open-bank-account-netherlands/" },
+        { label: "Bank account before BSN?", href: "/netherlands/can-i-open-bank-account-before-bsn/" },
+      ],
+    },
+    {
+      q: "Why might my rental not be valid for BSN registration?",
+      a: "The municipality checks that your address is a **real, registrable residence**—not every **short-stay, hotel, or informal sublet** can be used for BRP inschrijving. Landlords sometimes state whether **registration (inschrijving) is allowed**; if it is not, you may not get a BSN at that address. Always confirm **in writing** before you pay a large deposit, and cross-check with **gemeente** guidance if you are unsure.",
+      links: [
+        { label: "Municipality & address", href: "/netherlands/municipality-registration-netherlands/" },
+        { label: "Housing platforms", href: "/netherlands/services/housing-platforms/" },
+      ],
+    },
+    {
+      q: "Do I need Dutch health insurance after I move?",
+      a: "If you **live and work** in the Netherlands, you normally need **Dutch basic health insurance (basisverzekering)** on time—there are **deadlines and fines** if you are required to insure and do not. Students, cross-border workers, and some temporary situations follow **different rules**, so verify against **official sources** for your status rather than copying a friend’s timeline.",
+      links: [{ label: "Health insurance in the Netherlands", href: "/netherlands/health-insurance-netherlands/" }],
+    },
+    {
+      q: "What is different for EU/EEA movers vs non-EU?",
+      a: "**EU/EEA** nationals often focus on **housing, BSN, bank, and insurance** without a long residence permit process. **Non-EU** routes usually hinge on a **visa or residence permit** tied to work, study, or family—timing of travel, employer, and IND steps matter before you optimize for municipality registration. Use a visa-oriented guide if you are not sure which permit applies.",
+      links: [
+        { label: "EU vs non-EU moving", href: "/netherlands/eu-vs-non-eu-moving-to-netherlands/" },
+        { label: "Moving requirements overview", href: "/netherlands/moving-requirements-netherlands/" },
+      ],
+    },
+    {
+      q: "What is DigiD and when do I need it?",
+      a: "**DigiD** is the Dutch digital identity used to log in to many **government and semi-government** services online (tax, benefits, some healthcare portals, municipalities). You usually need a **BSN** and sometimes a **Dutch phone number** to apply; activation can take **mail or appointment** steps. It is worth planning in your **first weeks** after you have BSN, so you are not stuck when a form asks for DigiD.",
+      links: [{ label: "DigiD awareness", href: "/netherlands/digid-awareness" }],
+    },
+    {
+      q: "What should I do in the first week after landing?",
+      a: "A practical sequence is: **secure housing that allows registration** (if you have not already), **book municipality registration**, gather **IDs and rental documents** for that appointment, and **sketch banking and insurance** next steps so payroll and rent do not stall. Our **arrival** and **first 90 days** tools break this into smaller tasks you can tick off.",
+      links: [
+        { label: "Arrival planner", href: "/netherlands/moving/tools/arrival-planner" },
+        { label: "First 90 days planner", href: "/netherlands/moving/tools/first-90-days" },
+        { label: "First steps after arrival", href: "/netherlands/after-arriving-netherlands/" },
+      ],
     },
   ],
   linkRegistry,
@@ -148,6 +231,7 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
     { id: "tools", label: "Tools" },
     { id: "related", label: "Related" },
     { id: "shareable", label: "Shareable checklist" },
+    { id: "cost-of-moving", label: "Cost of moving" },
     { id: "faq", label: "FAQ" },
   ],
   sections: {
@@ -155,6 +239,9 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       eyebrow: "Netherlands · Moving",
       title: "Moving to the Netherlands",
       subtitle: "A calm, practical guide: prepare before you move, settle after arrival, and stabilize in your first 90 days.",
+      heroImage: "/images/heroes/moving-to-netherlands-canal-hero.png",
+      heroImageAlt:
+        "Arrival in Amsterdam at golden hour: suitcase, travel documents, map, and phone on a canal-side ledge, with a cyclist and traditional gabled houses along the water at sunset.",
     },
     intro: {
       segments: [
@@ -218,21 +305,72 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
     },
     banking: {
       sectionTitle: "Banking",
-      introParagraph: "Most people open an account after they have an address and BSN.",
-      paragraph: "Compare options and requirements on official bank pages.",
+      introParagraph:
+        "Everyday money in the Netherlands usually runs through a **Dutch current account** (betaalrekening): **iDEAL** for online payments, **direct debit** (incasso) for rent and utilities, and a debit card for shops and public transport. Banks must verify who you are (AML/KYC); after you relocate, that typically means a **registrable address** and **BSN**, though a few **digital banks** still onboard some people with limited Dutch paperwork earlier. Salaries and many government letters expect a **local IBAN**.",
+      paragraph:
+        "For a full walkthrough—documents, timing, iDEAL, and common mistakes—read {0}. To compare **banks and accounts** we list for expats (fees, English support, onboarding), use {1}. The **provider cards below** link to official sites; always confirm **eligibility and pricing there** before you apply.",
+      paragraphLinkKeys: ["open_bank_account", "services_banks"],
     },
     housing: {
       sectionTitle: "Housing",
+      introParagraph:
+        "The **Dutch rental market** is competitive in Amsterdam, Utrecht, Rotterdam, and many university cities: expect **queues at viewings**, **landlord references**, and **income or guarantor checks**. Contracts are often **indefinite (onbepaalde tijd)** or **fixed-term (bepaalde tijd)**; **registration at the municipality (BRP)** is only possible from an address the municipality accepts—not every short-stay or sublet qualifies. **Furnished**, **rooms**, and **student housing** follow different norms; **service costs** and **deposit rules** should be spelled out in writing.",
       registrationWarning: "You need a registrable address for BSN registration in most cases.",
-      paragraph: "Start search early and verify registration eligibility.",
+      paragraph:
+        "See {0} for how **your address**, **BSN**, and **appointments** fit together. To search listings and mid-term options, start with {1}; if you want **agency-assisted** search, browse {2}. The **platforms below** are practical entry points—always verify **scams, deposits, and registration eligibility** before you pay or sign.",
+      paragraphLinkKeys: [
+        "municipality_registration",
+        "services_housing_platforms",
+        "services_rental_agencies",
+      ],
     },
     gotchas: {
       sectionTitle: "Common gotchas",
       rows: [
         {
           gotcha: "Assuming you can register any short-stay address",
-          fix: "Confirm registrable housing with your municipality.",
-          fixLinkKey: "bsn",
+          fix: "Confirm registrable housing with your municipality before you pay large deposits.",
+          fixLinkKey: "municipality_registration",
+        },
+        {
+          gotcha: "Waiting too long to book municipality registration",
+          fix: "Schedule as soon as you have a valid address; BSN and many admin steps depend on it.",
+          fixLinkKey: "municipality_registration",
+        },
+        {
+          gotcha: "Treating DigiD as instant once you apply",
+          fix: "Expect postal activation and plan ahead for insurer and government logins.",
+          fixLinkKey: "digid_awareness",
+        },
+        {
+          gotcha: "Delaying Dutch health insurance when you are required to have it",
+          fix: "Check national rules for your situation and arrange basic cover in time.",
+          fixLinkKey: "health_insurance",
+        },
+        {
+          gotcha: "Opening a bank account only after payroll or rent deadlines",
+          fix: "Start once you know your ID/BSN timeline so iDEAL and direct debits are ready.",
+          fixLinkKey: "open_bank_account",
+        },
+        {
+          gotcha: "Assuming your foreign documents need no translation or legalization",
+          fix: "Use the document readiness flow and verify what your gemeente or employer asks for.",
+          fixLinkKey: "document_readiness",
+        },
+        {
+          gotcha: "Rushing into housing without viewings or contract checks",
+          fix: "Use reputable platforms or agencies and verify landlords before transferring money.",
+          fixLinkKey: "services_housing_platforms",
+        },
+        {
+          gotcha: "Treating the whole move as one big task list",
+          fix: "Sequence before / arrival / first 90 days with the moving checklist and arrival tools.",
+          fixLinkKey: "moving_checklist",
+        },
+        {
+          gotcha: "Skipping a clear “first week” plan after landing",
+          fix: "Use the after-arrival guide to line up registration, BSN, and next admin steps.",
+          fixLinkKey: "after_arriving",
         },
       ],
     },

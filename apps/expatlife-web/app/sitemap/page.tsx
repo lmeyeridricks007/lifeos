@@ -20,6 +20,16 @@ const CITY_PAGES = [
   { label: "Utrecht", href: "/netherlands/utrecht/" },
   { label: "The Hague", href: "/netherlands/the-hague/" },
   { label: "Eindhoven", href: "/netherlands/eindhoven/" },
+  { label: "Haarlem", href: "/netherlands/haarlem/" },
+  { label: "Groningen", href: "/netherlands/groningen/" },
+  { label: "Delft", href: "/netherlands/delft/" },
+  { label: "Leiden", href: "/netherlands/leiden/" },
+  { label: "Maastricht", href: "/netherlands/maastricht/" },
+  { label: "Breda", href: "/netherlands/breda/" },
+  { label: "Tilburg", href: "/netherlands/tilburg/" },
+  { label: "Arnhem", href: "/netherlands/arnhem/" },
+  { label: "Nijmegen", href: "/netherlands/nijmegen/" },
+  { label: "Amstelveen", href: "/netherlands/amstelveen/" },
 ] as const;
 
 export const metadata: Metadata = {
@@ -91,7 +101,13 @@ export default function SitemapPage() {
         <SitemapSection title="Guides (moving hub)" links={guideLinks} />
         <SitemapSection title="Origin country guides" links={originGuideLinks} />
         <SitemapSection title="Services" links={serviceLinks} />
-        <SitemapSection title="Cities" links={[...CITY_PAGES]} />
+        <SitemapSection
+          title="Cities"
+          links={[
+            { label: "Dutch cities hub — compare & guides", href: "/netherlands/cities/" },
+            ...CITY_PAGES,
+          ]}
+        />
         <SitemapSection title="Tools" links={toolLinks} />
         <SitemapSection title="Trust & legal" links={[...SITEMAP_TRUST_LEGAL_LINKS]} />
       </div>

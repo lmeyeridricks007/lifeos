@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { FormEvent } from "react";
+import { useSearchParams } from "next/navigation";
 import { trackContactSubmit } from "@/lib/analytics/track";
 
 const FORMSPREE_ACTION = "https://formspree.io/f/mojkdogo";
@@ -13,8 +14,18 @@ type Props = {
 };
 
 export function ContactForm({ topics }: Props) {
+  const searchParams = useSearchParams();
+  const defaultTopic = topics[0]?.value ?? "general";
+  const [topic, setTopic] = useState(defaultTopic);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  useEffect(() => {
+    const raw = searchParams.get("topic");
+    if (raw && topics.some((t) => t.value === raw)) {
+      setTopic(raw);
+    }
+  }, [searchParams, topics]);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -108,6 +119,8 @@ export function ContactForm({ topics }: Props) {
           id="contact-topic"
           name="topic"
           required
+          value={topic}
+          onChange={(e) => setTopic(e.target.value)}
           className="mt-1 block min-h-[44px] w-full min-w-0 rounded-lg border border-slate-300 px-3 py-2 text-base text-slate-900 shadow-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500 sm:text-sm"
           disabled={status === "loading"}
         >

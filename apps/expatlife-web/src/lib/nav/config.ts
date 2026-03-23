@@ -96,7 +96,25 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (pathname.startsWith("/netherlands/tools")) return "tools";
   if (pathname.startsWith("/netherlands/moving-to-the-netherlands") || pathname.startsWith("/netherlands/moving-to-netherlands-from") || pathname.startsWith("/netherlands/moving/") || pathname.startsWith("/netherlands/visa/")) return "move";
   if (pathname.startsWith("/netherlands/services")) return "move";
-  if (pathname.startsWith("/netherlands/amsterdam") || pathname.startsWith("/netherlands/rotterdam") || pathname.startsWith("/netherlands/utrecht") || pathname.startsWith("/netherlands/the-hague") || pathname.startsWith("/netherlands/eindhoven")) return "move";
+  if (pathname.startsWith("/netherlands/cities")) return "move";
+  if (
+    pathname.startsWith("/netherlands/amsterdam") ||
+    pathname.startsWith("/netherlands/rotterdam") ||
+    pathname.startsWith("/netherlands/utrecht") ||
+    pathname.startsWith("/netherlands/the-hague") ||
+    pathname.startsWith("/netherlands/eindhoven") ||
+    pathname.startsWith("/netherlands/haarlem") ||
+    pathname.startsWith("/netherlands/groningen") ||
+    pathname.startsWith("/netherlands/delft") ||
+    pathname.startsWith("/netherlands/leiden") ||
+    pathname.startsWith("/netherlands/maastricht") ||
+    pathname.startsWith("/netherlands/breda") ||
+    pathname.startsWith("/netherlands/tilburg") ||
+    pathname.startsWith("/netherlands/arnhem") ||
+    pathname.startsWith("/netherlands/nijmegen") ||
+    pathname.startsWith("/netherlands/amstelveen")
+  )
+    return "move";
   if (pathname.startsWith("/netherlands/move-to-netherlands-without-job") || pathname.startsWith("/netherlands/moving-to-netherlands-cost") || pathname.startsWith("/netherlands/moving-to-netherlands-with-family") || pathname.startsWith("/netherlands/eu-vs-non-eu-moving-to-netherlands") || pathname.startsWith("/netherlands/open-bank-account-netherlands") || pathname.startsWith("/netherlands/health-insurance-netherlands")) return "move";
   if (pathname.startsWith("/netherlands/work")) return "work";
   if (pathname.startsWith("/netherlands/money")) return "money";
@@ -171,6 +189,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "More",
         items: [
+          item("Cities", "/netherlands/cities/", "Compare Dutch cities and read expat city guides."),
           item("First 30 days", "/netherlands/first-30-days-netherlands"),
           item("First 60 days", "/netherlands/first-60-days-netherlands"),
           item("First 90 days", "/netherlands/first-90-days-netherlands"),

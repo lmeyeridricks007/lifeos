@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { contactPage } from "@/src/data/site/contact";
 import { ContactForm } from "@/src/components/contact/ContactForm";
@@ -34,7 +35,9 @@ export default function ContactPage() {
           We’ll get back to you as soon as we can. For urgent official matters, use the relevant authority.
         </p>
         <div className="mt-6">
-          <ContactForm topics={contactPage.topics} />
+          <Suspense fallback={<div className="min-h-[280px] rounded-lg border border-slate-200 bg-slate-50/80" aria-busy />}>
+            <ContactForm topics={contactPage.topics} />
+          </Suspense>
         </div>
       </div>
 

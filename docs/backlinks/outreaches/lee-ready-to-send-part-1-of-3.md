@@ -3,7 +3,7 @@
 **From:** Lee  
 **Site:** https://www.expatcopilot.com  
 
-Paths match the [route registry](../../../../apps/expatlife-web/src/data/site/route-registry.ts). **Verify** contacts and URLs before sending.
+Paths match the [route registry](../../../../apps/expatlife-web/src/data/site/route-registry.ts). Each prospect has a **`To:`** line with a published inbox or official next step — **re-verify** on the live site before sending.
 
 **Prospects in this file:** §07 rows **#1–40** (research universities through WE4EXPATS).
 
@@ -11,6 +11,7 @@ Paths match the [route registry](../../../../apps/expatlife-web/src/data/site/ro
 
 ### 1. University of Amsterdam (UvA)
 **Reach:** International student services / communications · [International Office](https://student.uva.nl/en/information/international-office)
+**To:** `global@uva.nl` · [UvA Office of International Student Affairs](https://www.uva.nl/en/education/exchange/contact--faq-inbound-exchange/office-of-international-student-affairs/office-of-international-student-affairs.html) (visa/immigration: [service portal](https://serviceportal-public.uva.nl/))
 
 **Initial — Subject:** Student visa primer for incoming internationals  
 
@@ -42,6 +43,7 @@ Lee
 
 ### 2. TU Delft
 **Reach:** Central ESA / faculty international desks · [Exchange & contact](https://www.tudelft.nl/onderwijs/toelating-en-aanmelding/exchange-students/contact)
+**To:** `contactcentre-esa@tudelft.nl` · [TU Delft exchange / ESA contact](https://www.tudelft.nl/onderwijs/toelating-en-aanmelding/exchange-students/contact)
 
 **Initial — Subject:** After-arrival guide — for exchange & international students  
 
@@ -71,6 +73,7 @@ Lee
 
 ### 3. Utrecht University
 **Reach:** Student Affairs / International Office · [Practical matters](https://www.uu.nl/en/organisation/practical-matters/students)
+**To:** `study@uu.nl` (student matters) · `info@uu.nl` (switchboard) · [UU contact](https://www.uu.nl/en/organisation/contact)
 
 **Initial — Subject:** Municipality registration — FAQ-style guide for internationals  
 
@@ -100,6 +103,7 @@ Lee
 
 ### 4. Leiden University
 **Reach:** International Office · [International students](https://www.universiteitleiden.nl/en/education/international-students)
+**To:** `info@leidenuniv.nl` · [Student Affairs / contact](https://student.universiteitleiden.nl/en/your-study-programme/contact-and-advice)
 
 **Initial — Subject:** Netherlands student visa — neutral explainer  
 
@@ -129,6 +133,7 @@ Lee
 
 ### 5. Erasmus University Rotterdam
 **Reach:** Education & Student Affairs · [EUR Education (English)](https://www.eur.nl/en/education)
+**To:** `internationaloffice@eur.nl` · *Arrival / orientation:* `orientation@eur.nl` · *Immigration:* `immigration@eur.nl` · [International Office contact](https://www.eur.nl/en/education/practical-matters/contact/international-office)
 
 **Initial — Subject:** After arriving in NL — resource for EUR international students  
 
@@ -158,6 +163,7 @@ Lee
 
 ### 6. University of Groningen (RUG)
 **Reach:** International Service Desk · [International students](https://www.rug.nl/education/international-students/)
+**To:** `communicatie@rug.nl` (corporate comms) · *Student admin:* [SIA contact form](https://www.rug.nl/education/application-enrolment-tuition-fees/contact/sia-contact-form?lang=en) · [RUG press](https://www.rug.nl/about-ug/latest-news/press-information/contact-persvoorlichting?lang=en)
 
 **Initial — Subject:** Student visa orientation for RUG internationals  
 
@@ -185,6 +191,7 @@ Lee
 
 ### 7. Maastricht University
 **Reach:** Internationalisation office · [Maastricht University English](https://www.maastrichtuniversity.nl/)
+**To:** `ish-ssc@maastrichtuniversity.nl` · *Visa:* `visa@maastrichtuniversity.nl` · *General:* `study@maastrichtuniversity.nl` · [UM international support](https://www.maastrichtuniversity.nl/support/your-studies-begin/international-students)
 
 **Initial — Subject:** First weeks in NL — guide for incoming internationals  
 
@@ -212,6 +219,7 @@ Lee
 
 ### 8. VU Amsterdam
 **Reach:** Student desk / International Office · [VU English](https://vu.nl/en)
+**To:** `studentdesk@vu.nl` · [VU contact](https://vu.nl/en/about-vu/more-about/contact) · [International Support Services](https://vu.nl/en/education/more-about/services-from-our-international-office)
 
 **Initial — Subject:** BSN / gemeente registration — explainer for VU internationals  
 
@@ -239,6 +247,7 @@ Lee
 
 ### 9. Tilburg University
 **Reach:** International team · [Tilburg University English](https://www.tilburguniversity.edu/)
+**To:** `studyabroad@tilburguniversity.edu` · [International Mobility contact](https://www.tilburguniversity.edu/education/exchange-programs/contact)
 
 **Initial — Subject:** Student visa overview — optional link for Tilburg internationals  
 
@@ -264,6 +273,7 @@ Lee
 
 ### 10. Eindhoven University of Technology (TU/e)
 **Reach:** Admissions / international · [TU/e Education English](https://www.tue.nl/en/education/)
+**To:** `io@tue.nl` · *Immigration (students):* `immigration.student@tue.nl` · [TU/e Education Guide — contact](https://educationguide.tue.nl/practical-info/contact)
 
 **Initial — Subject:** After arrival — practical hub for TU/e internationals  
 
@@ -289,6 +299,7 @@ Lee
 
 ### 11. Wageningen University & Research
 **Reach:** Student service / communications · [WUR international students](https://www.wur.nl/en/Education-programmes/practical-matters/wageningen-university-for-international-students.htm)
+**To:** `study@wur.nl` · `SSC@wur.nl` · *Incoming exchange:* `incoming.exchange@wur.nl` · [WUR Student Service Centre](https://www.wur.nl/en/education-programmes/student-service-centre.htm)
 
 **Initial — Subject:** Municipality registration — for WUR international practical matters  
 
@@ -314,6 +325,7 @@ Lee
 
 ### 12. Radboud University
 **Reach:** International Office · [Radboud English](https://www.ru.nl/en/)
+**To:** `admissions@ru.nl` · *Exchange:* `exchangeadmissions@ru.nl` · [Radboud international offices](https://www.ru.nl/en/contact/international-offices)
 
 **Initial — Subject:** Student visa explainer — Radboud international students  
 
@@ -339,6 +351,7 @@ Lee
 
 ### 13. University of Twente
 **Reach:** International affairs · [UT English education](https://www.utwente.nl/en/education/)
+**To:** `studentservices@utwente.nl` · [UT international affairs](https://www.utwente.nl/en/education/student-services/current-students/international-affairs)
 
 **Initial — Subject:** After arriving — resource for UT internationals  
 
@@ -364,6 +377,7 @@ Lee
 
 ### 14. Nyenrode Business University
 **Reach:** Admissions / programme offices · [Nyenrode English](https://www.nyenrode.nl/en/)
+**To:** `info@nyenrode.nl` · [Nyenrode contact](https://www.nyenrode.nl/en/contact)
 
 **Initial — Subject:** Student visa orientation — Nyenrode international intake  
 
@@ -385,6 +399,7 @@ Lee
 
 ### 15. TU Delft — TPM faculty International Office (example)
 **Reach:** Faculty coordinator · [TPM International Office](https://www.tudelft.nl/en/student/faculties/tpm-student-portal/organisation/international-office)
+**To:** `InternationalOffice-TBM@tudelft.nl` · [TPM International Office](https://www.tudelft.nl/en/student/faculties/tpm-student-portal/organisation/international-office)
 
 **Initial — Subject:** Municipality registration — for faculty international desks  
 
@@ -406,6 +421,7 @@ Lee
 
 ### 16. Open Universiteit
 **Reach:** Student support / communications · [OU English](https://www.ou.nl/en)
+**To:** `info@ou.nl` · [Open Universiteit contact](https://www.ou.nl/en/contact)
 
 **Initial — Subject:** After arriving — for OU students living in the Netherlands  
 
@@ -427,6 +443,7 @@ Lee
 
 ### 17. Theological University Kampen
 **Reach:** General contact · [English site](https://www.tukampen.nl/en/)
+**To:** `info@tuu.nl` · [TUK contact](https://www.tukampen.nl/en/contact)
 
 **Initial — Subject:** Student visa basics — small international intake  
 
@@ -448,6 +465,7 @@ Lee
 
 ### 18. Protestant Theological University (PTHU)
 **Reach:** General contact · [PTHU English](https://www.pthu.eu/en)
+**To:** `info@pthu.nl` · `studieadvies@pthu.nl` · [PTHU — contact](https://www.pthu.nl/en/about-us/contact/) · *[English mirror](https://www.pthu.eu/en/contact)*
 
 **Initial — Subject:** Netherlands student visa — neutral overview  
 
@@ -469,6 +487,7 @@ Lee
 
 ### 19. Amsterdam University of Applied Sciences (HvA)
 **Reach:** International Office · [HvA English](https://www.hva.nl/en)
+**To:** `studentinformation@amsterdamuas.com` · *Faculty international offices:* e.g. `international.fbe@hva.nl` · [HvA / AUAS contact](https://www.amsterdamuas.com/about-auas/contact) · [International offices](https://www.amsterdamuas.com/study/international-admissions/international-offices)
 
 **Initial — Subject:** Student visa explainer — HvA international applicants  
 
@@ -494,6 +513,7 @@ Lee
 
 ### 20. The Hague University of Applied Sciences (THUAS)
 **Reach:** International Office · [THUAS English](https://www.thehagueuniversity.com/)
+**To:** `exchange@hhs.nl` · [THUAS International Office](https://www.thuas.com/study-choice/international-office)
 
 **Initial — Subject:** After arriving — THUAS internationals in The Hague region  
 
@@ -519,6 +539,7 @@ Lee
 
 ### 21. Hanze University of Applied Sciences
 **Reach:** International Office · [Hanze English](https://www.hanze.nl/en)
+**To:** `immigration@org.hanze.nl` · *Exchange:* `exchange@org.hanze.nl` · [Hanze International Office](http://www.hanze.nl/io)
 
 **Initial — Subject:** Student visa overview — Hanze international programmes  
 
@@ -540,6 +561,7 @@ Lee
 
 ### 22. NHL Stenden
 **Reach:** International Office · [NHL Stenden English](https://www.nhlstenden.com/)
+**To:** `io@nhlstenden.com` · `CSA@nhlstenden.com` · [NHL Stenden contact](https://www.nhlstenden.com/en/contact)
 
 **Initial — Subject:** First weeks in NL — NHL Stenden students  
 
@@ -561,6 +583,7 @@ Lee
 
 ### 23. Fontys University of Applied Sciences
 **Reach:** International Office · [Fontys international](https://www.fontys.nl/International-students.htm)
+**To:** `info@fontys.nl` · [Fontys contact](https://www.fontys.nl/Contact.htm)
 
 **Initial — Subject:** Municipality registration — Fontys international students  
 
@@ -582,6 +605,7 @@ Lee
 
 ### 24. Windesheim
 **Reach:** International Office · [Windesheim international](https://www.windesheim.com/international)
+**To:** `info@windesheim.nl` · [Windesheim contact](https://www.windesheim.com/contact)
 
 **Initial — Subject:** Student visa explainer — Windesheim internationals  
 
@@ -603,6 +627,7 @@ Lee
 
 ### 25. Saxion University of Applied Sciences
 **Reach:** International Office · [Saxion English](https://www.saxion.nl/en)
+**To:** `internationaloffice@saxion.nl` · [Saxion International Office](http://www.saxion.edu/about-saxion/contact-and-locations/contact-international-office)
 
 **Initial — Subject:** After arriving — Saxion international students  
 
@@ -624,6 +649,7 @@ Lee
 
 ### 26. Study in Holland (Nuffic programme)
 **Reach:** Editorial / Nuffic communications · [studyinholland.nl](https://www.studyinholland.nl/)
+**To:** `persvoorlichting@nuffic.nl` · *general / student questions:* +31 70 4260 260 · [Nuffic press](https://www.nuffic.nl/en/about-us/contact-nuffic/press) · *portal:* [studyinholland.nl](https://www.studyinholland.nl/)
 
 **Initial — Subject:** Neutral “moving to the NL” hub — possible companion content  
 
@@ -651,6 +677,7 @@ Lee
 
 ### 27. Nuffic
 **Reach:** Corporate communications · [nuffic.nl](https://www.nuffic.nl/) (pitch English / Study in Holland angle)
+**To:** `persvoorlichting@nuffic.nl` · +31 70 4260 260 · [Nuffic contact details](https://www.nuffic.nl/en/over-nuffic/contact/contact-details) · *[contact form](https://nuffic.nl/over-nuffic/contact/contactformulier)*
 
 **Initial — Subject:** Educational relocation content — aligned with Study in Holland audience  
 
@@ -683,6 +710,7 @@ Lee
 
 ### 29. Netherlands worldwide (embassy network)
 **Reach:** Embassy press / web (per country) · [netherlandsworldwide.nl](https://www.netherlandsworldwide.nl/)
+**To:** *Embassy-specific — start from [Netherlands worldwide](https://www.netherlandsworldwide.nl/) contact pages*
 
 **Initial — Subject:** Practical steps for people moving to the Netherlands  
 
@@ -706,6 +734,7 @@ Lee
 
 ### 30. Government of the Netherlands (English)
 **Reach:** Press / department web teams · [government.nl](https://www.government.nl/)
+**To:** *[government.nl — English contact](https://www.government.nl/contact)* (high bar; often form)
 
 **Initial — Subject:** Independent explainer — no link expectation  
 
@@ -731,6 +760,7 @@ Lee
 
 ### 31. Business.gov.nl
 **Reach:** Ministry / programme comms · [business.gov.nl](https://business.gov.nl/)
+**To:** *[business.gov.nl contact](https://business.gov.nl/contact-with-business-gov-nl/)*
 
 **Initial — Subject:** Neutral primer for internationals starting business / work in NL  
 
@@ -752,6 +782,7 @@ Lee
 
 ### 32. I amsterdam — IN Amsterdam
 **Reach:** I amsterdam / IN Amsterdam editorial · [IN Amsterdam newcomer hub](https://www.iamsterdam.com/en/live-work-study/in-amsterdam/how-in-amsterdam-helps-international-newcomers)
+**To:** `welcome@amsterdam.nl` (IN Amsterdam desk) · [I amsterdam / partners contact](https://www.iamsterdam.com/en/amsterdam-and-partners/contact-us)
 
 **Initial — Subject:** Amsterdam + newcomer guide — humble share  
 
@@ -779,6 +810,7 @@ Lee
 
 ### 33. Gemeente Amsterdam
 **Reach:** City communications · [amsterdam.nl/en](https://www.amsterdam.nl/en/)
+**To:** `press@amsterdam.nl` · [Amsterdam press room](https://www.amsterdam.nl/en/contact-information/press-room/)
 
 **Initial — Subject:** Municipality registration — optional explainer for internationals  
 
@@ -804,6 +836,7 @@ Lee
 
 ### 34. Gemeente Rotterdam
 **Reach:** City communications · [rotterdam.nl/en](https://www.rotterdam.nl/en)
+**To:** `pers@rotterdam.nl` · [Gemeente Rotterdam — pers](https://www.rotterdam.nl/pers)
 
 **Initial — Subject:** Address registration — resource for new Rotterdam residents  
 
@@ -829,6 +862,7 @@ Lee
 
 ### 35. Gemeente Den Haag
 **Reach:** City communications · [denhaag.nl/en.htm](https://www.denhaag.nl/en.htm)
+**To:** `persvoorlichting@denhaag.nl` · [Den Haag — press / spokespeople](https://www.denhaag.nl/pers/contactgegevens-persvoorlichting/) · [General contact (EN)](https://www.denhaag.nl/en.htm)
 
 **Initial — Subject:** After arriving — for internationals in The Hague  
 
@@ -854,6 +888,7 @@ Lee
 
 ### 36. Gemeente Utrecht
 **Reach:** Utrecht International Center / comms · [Utrecht internationals](https://www.utrecht.nl/city-of-utrecht/utrecht-international-center)
+**To:** *[Utrecht International Center / city contact](https://www.utrecht.nl/city-of-utrecht/utrecht-international-center)*
 
 **Initial — Subject:** Municipality registration — complement to Utrecht International Center  
 
@@ -879,6 +914,7 @@ Lee
 
 ### 37. Gemeente Eindhoven
 **Reach:** City communications · [eindhoven.nl/en](https://www.eindhoven.nl/en)
+**To:** `perscentrum@eindhoven.nl` · [Eindhoven — press contacts](https://www.eindhoven.nl/bestuur-en-beleid/organisatie/gemeentelijke-organisatie/contactgegevens-voor-de-pers) · [Contact municipality (EN)](https://www.eindhoven.nl/en/contact-with-the-municipality)
 
 **Initial — Subject:** After arriving — for internationals in Eindhoven / Brainport  
 
@@ -900,6 +936,7 @@ Lee
 
 ### 38. US Embassy Netherlands
 **Reach:** Public affairs / ACS · [nl.usembassy.gov](https://nl.usembassy.gov/)
+**To:** *[US Embassy NL — contact](https://nl.usembassy.gov/contact/)*
 
 **Initial — Subject:** Educational resource — US citizens researching life in the Netherlands  
 
@@ -924,6 +961,7 @@ Lee
 
 ### 39. British Embassy The Hague
 **Reach:** Press / web (FCDO) · [GOV.UK — British Embassy The Hague](https://www.gov.uk/world/organisations/british-embassy-the-hague)
+**To:** *[British Embassy The Hague — GOV.UK contact](https://www.gov.uk/world/organisations/british-embassy-the-hague/office/british-embassy-the-hague)*
 
 **Initial — Subject:** UK nationals — neutral moving-to-NL primer  
 
@@ -947,6 +985,7 @@ Lee
 
 ### 40. WE4EXPATS
 **Reach:** Owner / marketing · [we4expats.nl](https://www.we4expats.nl/)
+**To:** `info@we4expats.nl` · [we4expats.nl](https://www.we4expats.nl/)
 
 **Initial — Subject:** Step-by-step moving guide — from one operator to another  
 

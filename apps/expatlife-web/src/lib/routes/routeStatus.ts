@@ -11,6 +11,10 @@ import {
   isRegistryScheduledPathPublic,
 } from "@/src/lib/publishing/registryPublishing";
 import { isPubliclyVisible } from "@/src/lib/publishing/isPubliclyVisible";
+import {
+  isNetherlandsCitiesHubPath,
+  isNetherlandsCitiesHubPubliclyVisible,
+} from "@/src/lib/cities-overview/citiesHubPublishing";
 
 export type PublishRouteStatus = "live" | "coming-soon" | "hidden";
 
@@ -33,6 +37,10 @@ export function getRouteStatus(href: string, now: Date = new Date()): PublishRou
   }
 
   if (!isRegistryScheduledPathPublic(n, now)) return "hidden";
+
+  if (isNetherlandsCitiesHubPath(n) && !isNetherlandsCitiesHubPubliclyVisible(now)) {
+    return "hidden";
+  }
 
   return "live";
 }

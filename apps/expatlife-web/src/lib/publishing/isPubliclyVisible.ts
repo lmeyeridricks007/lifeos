@@ -1,11 +1,16 @@
 /**
  * Scheduled publishing: registry-driven `publish` + `publishDate`.
  * Date-only strings use start of day UTC (content is public once that calendar day begins in UTC).
+ *
+ * `publishDate` is bypassed (but never `publish: false`) when: preview env vars, Vercel Preview,
+ * or **`next dev`** (`NODE_ENV === "development"`) so local work matches production routes without
+ * editing dates. Use `CONTENT_PREVIEW=true` for `next start` / production builds before a date.
  */
 
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
 export function shouldBypassPublishDateForPreview(): boolean {
+  if (process.env.NODE_ENV === "development") return true;
   if (process.env.CONTENT_PREVIEW === "true") return true;
   if (process.env.VERCEL_ENV === "preview") return true;
   if (process.env.NEXT_PUBLIC_CONTENT_PREVIEW === "true") return true;

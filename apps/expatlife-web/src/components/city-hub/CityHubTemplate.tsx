@@ -11,7 +11,6 @@ import { QuickFactsGrid } from "./QuickFactsGrid";
 import { OverviewIntro } from "./OverviewIntro";
 import { ProcessTimeline } from "./ProcessTimeline";
 import { CityChecklist } from "./CityChecklist";
-import { CostCards } from "./CostCards";
 import { ExampleScenarios } from "./ExampleScenarios";
 import { ServiceCards } from "./ServiceCards";
 import { ToolCards } from "./ToolCards";
@@ -20,7 +19,7 @@ import { RelatedGuidesSection } from "./RelatedGuidesGrid";
 import { OfficialSourcesList } from "./OfficialSourcesList";
 import { CityLinksSection } from "./CityLinksSection";
 import { CityOverview } from "./CityOverview";
-import { CityReasonsGrid } from "./CityReasonsGrid";
+import { CityWhyExpatsCombinedSection } from "./CityReasonsGrid";
 import { CityStatsCards } from "./CityStatsCards";
 import { CityComparisonTable } from "./CityComparisonTable";
 import { CityExpatsProfile } from "./CityExpatsProfile";
@@ -82,6 +81,66 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
     : allServices?.filter((s) => s.category === "Banking / money") ?? [];
   const servicesForExpats = allServices ?? [];
   const registrationSectionId = getRegistrationSectionId(data.tocItems);
+  const isAltLayout = data.hubLayout === "amsterdam-area-alternative";
+  const earlyPractical = Boolean(isAltLayout && data.earlyPracticalSections);
+
+  const first30DaysSection = (
+    <section id="first-30-days" className="scroll-mt-24 mt-12 space-y-6">
+      <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+        {data.first30Days.heading}
+      </h2>
+      <div className="grid gap-6 sm:grid-cols-2">
+        {data.first30Days.weeks.map((w, i) => (
+          <div
+            key={i}
+            className={cn(
+              "rounded-xl border border-slate-200/80 p-5",
+              "border-l-4 border-l-teal-500 bg-teal-50/40"
+            )}
+          >
+            <h3 className="font-semibold text-slate-900">{w.week}</h3>
+            <ul className="mt-3 space-y-1.5 text-sm text-slate-700">
+              {w.items.map((item, j) => (
+                <li key={j} className="flex gap-2">
+                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" aria-hidden />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <div className="flex flex-wrap gap-x-4 gap-y-2">
+        {data.first30Days.internalLinks.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="text-sm font-medium text-brand-700 hover:text-brand-800 underline"
+          >
+            {link.label}
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+
+  const whoMovesHereAndTradeoffs = (
+    <>
+      {data.whoMovesHere ? <CityExpatsProfile data={data.whoMovesHere} /> : null}
+      {data.tradeOffs ? (
+        <section id="trade-offs" className="scroll-mt-24 mt-12 space-y-4">
+          <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+            {data.tradeOffs.heading}
+          </h2>
+          {data.tradeOffs.paragraphs.map((p, i) => (
+            <p key={i} className="text-slate-700 leading-relaxed">
+              {p}
+            </p>
+          ))}
+        </section>
+      ) : null}
+    </>
+  );
 
   return (
     <div className="min-h-screen">
@@ -95,39 +154,82 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
 
       <Section contained={false} className="py-8 md:py-12">
         <Container className={pageContainerClass}>
-          {/* Quick facts */}
-          <div className="mb-10">
-            <QuickFactsGrid items={data.quickFacts} />
-          </div>
-
           <div className="grid gap-10 lg:grid-cols-[minmax(0,2fr),minmax(280px,1fr)]">
             <main className="min-w-0 w-full">
               {/* Mobile TOC */}
               <div className="mb-8 lg:hidden rounded-xl border border-slate-200 bg-slate-50/50 p-4">
                 <PillarTOC items={data.tocItems} />
               </div>
-              {/* Living in {City} as an Expat */}
-              {data.cityOverview ? (
-                <CityOverview data={data.cityOverview} />
-              ) : null}
-              {/* Why Expats Choose {City} */}
-              {data.whyExpatsChoose ? (
-                <CityReasonsGrid
-                  heading={data.whyExpatsChoose.heading}
-                  reasons={data.whyExpatsChoose.reasons}
-                />
-              ) : null}
-              {/* Jobs and Companies */}
-              {data.jobsEcosystem ? (
-                <CityStatsCards data={data.jobsEcosystem} />
-              ) : null}
-              {/* Overview */}
+
+              {/* Reading order: overview → at a glance → compare → why (merged) → life in city → jobs → profile blocks */}
               <section id="overview" className="scroll-mt-24 mt-12 space-y-6">
                 <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
                   Overview
                 </h2>
                 <OverviewIntro data={data} />
               </section>
+
+              {data.quickFacts?.length ? (
+                <div className="mt-10 space-y-4">
+                  <h2
+                    id={`${data.slug}-at-a-glance`}
+                    className="scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-900"
+                  >
+                    {data.quickFactsHeading ?? `${data.name} at a Glance`}
+                  </h2>
+                  <QuickFactsGrid items={data.quickFacts} />
+                </div>
+              ) : null}
+
+              {data.cityComparison ? (
+                <CityComparisonTable
+                  heading={data.cityComparison.heading}
+                  currentCityName={data.name}
+                  ctaLabel={data.cityComparison.ctaLabel}
+                  ctaHref={data.cityComparison.ctaHref}
+                />
+              ) : null}
+
+              <CityWhyExpatsCombinedSection
+                cityName={data.name}
+                cityOverview={data.cityOverview}
+                whyExpatsChoose={data.whyExpatsChoose}
+              />
+
+              {data.lifeInCity ? (
+                <CityOverview
+                  data={data.lifeInCity}
+                  sectionId="what-life-like"
+                  className="mt-12"
+                />
+              ) : null}
+
+              {data.jobsEcosystem ? <CityStatsCards data={data.jobsEcosystem} /> : null}
+
+              {isAltLayout && earlyPractical ? (
+                <>
+                  {first30DaysSection}
+                  {whoMovesHereAndTradeoffs}
+                </>
+              ) : null}
+              {isAltLayout && !earlyPractical ? whoMovesHereAndTradeoffs : null}
+              {!isAltLayout ? (
+                <>
+                  {data.whoMovesHere ? <CityExpatsProfile data={data.whoMovesHere} /> : null}
+                  {data.tradeOffs ? (
+                    <section id="trade-offs" className="scroll-mt-24 mt-12 space-y-4">
+                      <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                        {data.tradeOffs.heading}
+                      </h2>
+                      {data.tradeOffs.paragraphs.map((p, i) => (
+                        <p key={i} className="text-slate-700 leading-relaxed">
+                          {p}
+                        </p>
+                      ))}
+                    </section>
+                  ) : null}
+                </>
+              ) : null}
 
               {/* Register in city */}
               <section id={registrationSectionId} className="scroll-mt-24 mt-12 space-y-6">
@@ -262,7 +364,6 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                     {p}
                   </p>
                 ))}
-                <CostCards cards={data.housingCosts.costCards} />
                 {data.housingCosts.neighborhoodsNote ? (
                   <p className="text-sm text-slate-600">{data.housingCosts.neighborhoodsNote}</p>
                 ) : null}
@@ -321,7 +422,7 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
               {/* Services for expats */}
               <section id="services-expats" className="scroll-mt-24 mt-12 space-y-6">
                 <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  Useful Services for Newcomers in {data.name}
+                  {data.servicesExpatsHeading ?? `Useful Services for Newcomers in ${data.name}`}
                 </h2>
                 {data.servicesIntro ? (
                   <p className="text-slate-700 leading-relaxed">{data.servicesIntro}</p>
@@ -329,66 +430,17 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                 <ServiceCards services={servicesForExpats} byCategory={true} />
               </section>
 
-              {/* First 30 days */}
-              <section id="first-30-days" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  {data.first30Days.heading}
-                </h2>
-                <div className="grid gap-6 sm:grid-cols-2">
-                  {data.first30Days.weeks.map((w, i) => (
-                    <div
-                      key={i}
-                      className={cn(
-                        "rounded-xl border border-slate-200/80 p-5",
-                        "border-l-4 border-l-teal-500 bg-teal-50/40"
-                      )}
-                    >
-                      <h3 className="font-semibold text-slate-900">{w.week}</h3>
-                      <ul className="mt-3 space-y-1.5 text-sm text-slate-700">
-                        {w.items.map((item, j) => (
-                          <li key={j} className="flex gap-2">
-                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" aria-hidden />
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-                <div className="flex flex-wrap gap-x-4 gap-y-2">
-                  {data.first30Days.internalLinks.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="text-sm font-medium text-brand-700 hover:text-brand-800 underline"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
-                </div>
-              </section>
-
-              {/* Comparing Dutch Cities */}
-              {data.cityComparison ? (
-                <CityComparisonTable
-                  heading={data.cityComparison.heading}
-                  currentCityName={data.name}
-                  ctaLabel={data.cityComparison.ctaLabel}
-                  ctaHref={data.cityComparison.ctaHref}
-                />
-              ) : null}
-              {/* Who typically moves to {City} */}
-              {data.whoMovesHere ? (
-                <CityExpatsProfile data={data.whoMovesHere} />
-              ) : null}
+              {/* First 30 days (after services when not moved up with earlyPracticalSections) */}
+              {!earlyPractical ? first30DaysSection : null}
 
               {/* Example scenarios */}
               <section id="example-scenarios" className="scroll-mt-24 mt-12 space-y-6">
                 <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  Example Scenarios
+                  {data.exampleScenariosHeading ?? "Example Scenarios"}
                 </h2>
                 <p className="text-slate-700 leading-relaxed">
-                  Realistic situations and what to prioritise: documents, timing, and common pitfalls.
+                  {data.exampleScenariosIntro ??
+                    "Realistic situations and what to prioritise: documents, timing, and common pitfalls."}
                 </p>
                 <ExampleScenarios scenarios={data.exampleScenarios} />
               </section>
@@ -438,24 +490,28 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
               {/* Official sources */}
               <section id="official-sources" className="scroll-mt-24 mt-12 space-y-6">
                 <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  Official Sources
+                  {data.officialSourcesHeading ?? "Official Sources"}
                 </h2>
                 <p className="text-slate-700 leading-relaxed">
-                  Use these official links for registration, DigiD, health insurance, and transport.
+                  {data.officialSourcesIntro ??
+                    "Use these official links for registration, DigiD, health insurance, and transport."}
                 </p>
                 <OfficialSourcesList sources={data.officialSources} />
               </section>
 
               {/* Related guides */}
               <RelatedGuidesSection
-                title="Continue Setting Up Your Life in the Netherlands"
+                id="related-guides"
+                title={
+                  data.relatedGuidesSectionTitle ?? "Continue Setting Up Your Life in the Netherlands"
+                }
                 blocks={data.relatedGuides}
               />
 
-              {/* Other Popular Dutch Cities for Expats */}
+              {/* Other cities + services CTAs */}
               <section id="other-cities" className="scroll-mt-24 mt-12 space-y-4">
                 <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  Other Popular Dutch Cities for Expats
+                  {data.cityLinksSectionTitle ?? "Other Popular Dutch Cities for Expats"}
                 </h2>
                 <CityLinksSection data={data} />
               </section>

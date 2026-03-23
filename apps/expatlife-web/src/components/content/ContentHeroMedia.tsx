@@ -9,6 +9,8 @@ export type ContentHeroMediaProps = {
   className?: string;
   /** Aspect ratio container: default 16/9 on desktop, taller on mobile */
   aspectClass?: string;
+  /** Applied to the image layer (e.g. `object-[50%_40%]` to nudge focal point when using cover) */
+  imageClassName?: string;
 };
 
 const DEFAULT_ASPECT = "aspect-video md:aspect-[21/9]";
@@ -17,6 +19,7 @@ export function ContentHeroMedia({
   image,
   className,
   aspectClass = DEFAULT_ASPECT,
+  imageClassName,
 }: ContentHeroMediaProps) {
   const { src, alt, caption, priority = false, width = 1200, height = 630 } = image;
   const isLocal = src.startsWith("/");
@@ -30,7 +33,7 @@ export function ContentHeroMedia({
             src={src}
             alt={alt}
             fill
-            className="object-cover"
+            className={cn("object-cover", imageClassName)}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 92vw, min(1200px, 85vw)"
             priority={priority}
           />
@@ -40,7 +43,7 @@ export function ContentHeroMedia({
             alt={alt}
             width={width}
             height={height}
-            className="absolute inset-0 h-full w-full object-cover"
+            className={cn("absolute inset-0 h-full w-full object-cover", imageClassName)}
             loading={priority ? "eager" : "lazy"}
             decoding="async"
           />

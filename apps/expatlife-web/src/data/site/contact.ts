@@ -2,6 +2,10 @@
  * Contact page content for /contact/.
  * Form submits via Formspree; set NEXT_PUBLIC_FORMSPREE_CONTACT_ID in env.
  */
+
+/** Deep-link query value for `/contact/?topic=…` (footer “Request a listing”, etc.). */
+export const CONTACT_TOPIC_SERVICE_LISTING = "service-listing";
+
 export const contactPage = {
   seo: {
     title: "Contact ExpatCopilot",
@@ -22,7 +26,7 @@ export const contactPage = {
   topics: [
     { value: "general", label: "General question" },
     { value: "correction", label: "Correction or update" },
-    { value: "service-listing", label: "Service listing inquiry" },
+    { value: CONTACT_TOPIC_SERVICE_LISTING, label: "Service listing inquiry" },
     { value: "partnership", label: "Partnership" },
     { value: "feedback", label: "Feedback" },
     { value: "other", label: "Other" },
