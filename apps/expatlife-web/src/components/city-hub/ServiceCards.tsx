@@ -6,17 +6,19 @@ import { usePathname } from "next/navigation";
 import type { CityServiceCard } from "@/src/lib/city-hub/types";
 import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
 import { trackServiceClick } from "@/lib/analytics/track";
+import { normalizeExternalProviderLogoSrc } from "@/src/lib/provider-logo-url";
 
 function ServiceLogo({ src, alt }: { src: string; alt: string }) {
-  const isExternal = src.startsWith("http");
+  const resolved = normalizeExternalProviderLogoSrc(src);
+  const isExternal = resolved.startsWith("http");
   const boxClass = "flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-sm";
   return (
     <div className={boxClass} title={alt}>
       {isExternal ? (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={src} alt={alt} width={48} height={48} className="h-10 w-10 object-contain" />
+        <img src={resolved} alt={alt} width={48} height={48} className="h-10 w-10 object-contain" />
       ) : (
-        <Image src={src} alt={alt} width={48} height={48} className="h-10 w-10 object-contain" />
+        <Image src={resolved} alt={alt} width={48} height={48} className="h-10 w-10 object-contain" />
       )}
     </div>
   );

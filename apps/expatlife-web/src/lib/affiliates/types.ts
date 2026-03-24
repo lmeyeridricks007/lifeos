@@ -33,6 +33,13 @@ export type ComparisonField = {
   label: string;
 };
 
+/** When set, placement cards are built from `COMPANIES_REGISTRY` (priority order) instead of `items`. */
+export type PlacementRegistryProviders = {
+  categories: string[];
+  limit: number;
+  strategy?: "sequential" | "round-robin";
+};
+
 export type AffiliatePlacement = {
   id: string;
   destinationCountry: string;
@@ -45,6 +52,7 @@ export type AffiliatePlacement = {
   items: PlacementItem[];
   disclosure: string;
   comparisonFields?: ComparisonField[];
+  registryProviders?: PlacementRegistryProviders;
 };
 
 /** Optional context for tool results (future personalization). */

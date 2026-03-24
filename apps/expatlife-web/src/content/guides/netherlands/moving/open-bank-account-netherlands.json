@@ -333,44 +333,12 @@
       ],
       "services": [
         {
-          "name": "bunq",
-          "description": "Dutch digital bank with expat-friendly onboarding and English support; useful for opening an account quickly.",
-          "url": "https://www.bunq.com/",
-          "indicativeCost": "Free and paid plans.",
-          "reason": "Fast app-based account opening.",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
-        },
-        {
-          "name": "Wise",
-          "description": "Multi-currency account and international transfers; useful for moving money into the Netherlands and managing foreign currency.",
-          "url": "https://wise.com/",
-          "indicativeCost": "Transfer fees vary.",
-          "reason": "Low-cost international transfers.",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
-        },
-        {
           "name": "Independer",
           "description": "Insurance comparison site often used to compare Dutch health insurance and other insurance options.",
           "url": "https://www.independer.nl/",
           "indicativeCost": "Comparison platform; insurer premiums vary.",
           "reason": "Useful when evaluating health insurance after arrival.",
           "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
-        },
-        {
-          "name": "Simyo",
-          "description": "Dutch SIM-only mobile provider; useful once you want a local number for banking and admin.",
-          "url": "https://www.simyo.nl/",
-          "indicativeCost": "Budget monthly plans.",
-          "reason": "Local number for 2FA and correspondence.",
-          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
-        },
-        {
-          "name": "HousingAnywhere",
-          "description": "Temporary and medium-term rentals often used by internationals before or after arrival.",
-          "url": "https://housinganywhere.com/",
-          "indicativeCost": "Housing prices vary by city.",
-          "reason": "Relevant when you need an address for registration and banking.",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
         }
       ]
     },

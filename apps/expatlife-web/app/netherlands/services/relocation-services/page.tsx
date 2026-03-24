@@ -53,6 +53,7 @@ function mapRelocationServicesProvidersToComparisonCards(): ServiceCategoryProvi
     pros: p.pros,
     cons: p.cons,
     whoShouldChoose: p.whoShouldChoose,
+    priority: p.priority,
   }));
 }
 

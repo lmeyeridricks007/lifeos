@@ -14,10 +14,55 @@ const outFile = path.join(webRoot, "src/data/companies-registry.ts");
 function loadPrimarySource() {
   if (!fs.existsSync(outFile)) return null;
   const t = fs.readFileSync(outFile, "utf8");
-  if (t.includes("export const banksProviders: ServiceCategoryProviderCard[] = [") && t.includes('slug: "bunq"')) {
+  const hasBanks =
+    t.includes("const banksProvidersData") ||
+    t.includes("export const banksProviders: ServiceCategoryProviderCard[] = [");
+  if (hasBanks && t.includes('slug: "bunq"')) {
     return t;
   }
   return null;
+}
+
+function extractServiceCategoryArray(text, dataConstName, legacyExportName) {
+  if (text.includes(`const ${dataConstName}`)) {
+    return extractConstArrayLiteral(text, dataConstName);
+  }
+  return extractExportedArrayLiteral(text, legacyExportName);
+}
+
+function extractRelocationAgenciesArray(text) {
+  if (text.includes("const RELOCATION_AGENCIES_DATA")) {
+    return extractConstArrayLiteral(text, "RELOCATION_AGENCIES_DATA");
+  }
+  return extractExportedArrayLiteral(text, "relocationAgenciesProviders");
+}
+
+function extractRelocationAdditionalArray(text) {
+  if (text.includes("const RELOCATION_SERVICES_ADDITIONAL_DATA")) {
+    return extractConstArrayLiteral(text, "RELOCATION_SERVICES_ADDITIONAL_DATA");
+  }
+  return extractConstArrayLiteral(text, "relocationServicesAdditionalProviders");
+}
+
+function extractHousingArray(text) {
+  if (text.includes("const housingPlatformsData")) {
+    return extractConstArrayLiteral(text, "housingPlatformsData");
+  }
+  return extractExportedArrayLiteral(text, "housingPlatforms");
+}
+
+function extractRentalArray(text) {
+  if (text.includes("const rentalAgenciesData")) {
+    return extractConstArrayLiteral(text, "rentalAgenciesData");
+  }
+  return extractExportedArrayLiteral(text, "rentalAgencies");
+}
+
+function extractStartupArray(text) {
+  if (text.includes("const startupFacilitatorsData")) {
+    return extractConstArrayLiteral(text, "startupFacilitatorsData");
+  }
+  return extractExportedArrayLiteral(text, "startupFacilitators");
 }
 
 function extractExportedArrayLiteral(text, exportName) {
@@ -78,6 +123,7 @@ let relocationServicesAdditionalBody;
 let housingBody;
 let rentalBody;
 let startupBody;
+let mobileConnectivityBody;
 let RELOCATION_AGENCIES_LAST_CHECKED;
 let RELOCATION_AGENCIES_SOURCE_MODEL;
 let RELOCATION_SERVICES_LAST_CHECKED;
@@ -85,18 +131,32 @@ let RELOCATION_SERVICES_SOURCE_MODEL;
 let RVO_SOURCE;
 let STARTUP_DATA_LAST_CHECKED;
 let HOUSING_RENTAL_LAST_CHECKED;
+let MOBILE_CONNECTIVITY_LAST_CHECKED;
 
 if (primary) {
-  banksBody = extractExportedArrayLiteral(primary, "banksProviders");
-  healthBody = extractExportedArrayLiteral(primary, "healthInsuranceProviders");
-  immigrationBody = extractExportedArrayLiteral(primary, "immigrationLawyersProviders");
-  visaBody = extractExportedArrayLiteral(primary, "visaConsultantsProviders");
-  intlHealthBody = extractExportedArrayLiteral(primary, "internationalHealthInsuranceProviders");
-  relocationAgenciesBody = extractExportedArrayLiteral(primary, "relocationAgenciesProviders");
-  relocationServicesAdditionalBody = extractConstArrayLiteral(primary, "relocationServicesAdditionalProviders");
-  housingBody = extractExportedArrayLiteral(primary, "housingPlatforms");
-  rentalBody = extractExportedArrayLiteral(primary, "rentalAgencies");
-  startupBody = extractExportedArrayLiteral(primary, "startupFacilitators");
+  banksBody = extractServiceCategoryArray(primary, "banksProvidersData", "banksProviders");
+  healthBody = extractServiceCategoryArray(primary, "healthInsuranceProvidersData", "healthInsuranceProviders");
+  immigrationBody = extractServiceCategoryArray(
+    primary,
+    "immigrationLawyersProvidersData",
+    "immigrationLawyersProviders"
+  );
+  visaBody = extractServiceCategoryArray(primary, "visaConsultantsProvidersData", "visaConsultantsProviders");
+  intlHealthBody = extractServiceCategoryArray(
+    primary,
+    "internationalHealthInsuranceProvidersData",
+    "internationalHealthInsuranceProviders"
+  );
+  relocationAgenciesBody = extractRelocationAgenciesArray(primary);
+  relocationServicesAdditionalBody = extractRelocationAdditionalArray(primary);
+  housingBody = extractHousingArray(primary);
+  rentalBody = extractRentalArray(primary);
+  startupBody = extractStartupArray(primary);
+  mobileConnectivityBody = extractServiceCategoryArray(
+    primary,
+    "mobileConnectivityProvidersData",
+    "mobileConnectivityProviders"
+  );
   RELOCATION_AGENCIES_LAST_CHECKED = primary.match(
     /export const RELOCATION_AGENCIES_LAST_CHECKED = "([^"]+)"/
   )?.[1];
@@ -120,15 +180,19 @@ if (primary) {
   HOUSING_RENTAL_LAST_CHECKED = primary.match(
     /const HOUSING_RENTAL_LAST_CHECKED = "([^"]+)"/
   )?.[1];
+  MOBILE_CONNECTIVITY_LAST_CHECKED = primary.match(
+    /const MOBILE_CONNECTIVITY_LAST_CHECKED = "([^"]+)"/
+  )?.[1];
 } else {
   throw new Error(
-    "Missing or invalid src/data/companies-registry.ts (expected export banksProviders with slug bunq). Restore from git or edit the registry; legacy src/data/services/providers/ slices were removed."
+    "Missing or invalid src/data/companies-registry.ts (expected banksProviders or banksProvidersData with slug bunq). Restore from git or edit the registry."
   );
 }
 
 const DEFAULT_RVO_SOURCE =
   "https://english.rvo.nl/topics/residence-permit-foreign-startups/facilitator-startups";
 if (!RVO_SOURCE) RVO_SOURCE = DEFAULT_RVO_SOURCE;
+if (!MOBILE_CONNECTIVITY_LAST_CHECKED) MOBILE_CONNECTIVITY_LAST_CHECKED = "2026-03-24";
 
 const header = `/**
  * Canonical registry of companies / partners shown on Netherlands service pages.
@@ -152,6 +216,7 @@ export type CompanyRegistryCategory =
   | "international-health-insurance"
   | "immigration-lawyers"
   | "visa-consultants"
+  | "mobile-connectivity"
   | "relocation-agencies"
   | "relocation-services"
   | "housing-platforms"
@@ -196,6 +261,7 @@ const INSURANCE_BASE = "/netherlands/services/insurance";
 const IMMIGRATION_LAWYERS_BASE = "/netherlands/services/immigration-lawyers";
 const VISA_CONSULTANTS_BASE = "/netherlands/services/visa-consultants";
 const HOUSING_RENTAL_LAST_CHECKED = "${HOUSING_RENTAL_LAST_CHECKED}";
+const MOBILE_CONNECTIVITY_LAST_CHECKED = "${MOBILE_CONNECTIVITY_LAST_CHECKED}";
 const STARTUP_DATA_LAST_CHECKED = "${STARTUP_DATA_LAST_CHECKED}";
 const RVO_SOURCE = ${JSON.stringify(RVO_SOURCE)};
 
@@ -217,6 +283,10 @@ const IMMIGRATION_SURFACES = ["ProviderCardsGrid", "ProviderComparisonSection", 
 
 const VISA_PAGE = "app/netherlands/services/visa-consultants/page.tsx";
 const VISA_SURFACES = ["ProviderCardsGrid", "ProviderComparisonSection", "ServiceCategoryTemplate"] as const;
+
+const MOBILE_CONNECTIVITY_BASE = "/netherlands/services/mobile-connectivity";
+const MOBILE_CONNECTIVITY_PAGE = "app/netherlands/services/mobile-connectivity/page.tsx";
+const MOBILE_CONNECTIVITY_SURFACES = ["ProviderCardsGrid", "ProviderComparisonSection", "ServiceCategoryTemplate"] as const;
 
 const RELOCATION_AGENCIES_PAGE = "app/netherlands/services/relocation-agencies/page.tsx";
 const RELOCATION_AGENCIES_SURFACES = [
@@ -242,6 +312,14 @@ const RENTAL_SURFACES = ["RelocationProviderDirectory", "ProviderComparisonSecti
 
 const STARTUP_PAGE = "app/netherlands/services/startup-visa-advisors/page.tsx";
 const STARTUP_SURFACES = ["ServiceCategoryTemplate", "startup facilitator directory"] as const;
+
+/**
+ * Assign display priority from array order: 1 = highest (first item), then 2, 3, …
+ * (Upper bound is not capped at 10—use as relative order within the category.)
+ */
+export function attachSequentialPriority<T extends object>(items: readonly T[]): (T & { priority: number })[] {
+  return items.map((item, index) => ({ ...item, priority: index + 1 }));
+}
 
 function tagServiceCategory(
   category: CompanyRegistryCategory,
@@ -326,50 +404,80 @@ export const RELOCATION_AGENCIES_SOURCE_MODEL = ${JSON.stringify(RELOCATION_AGEN
 export const RELOCATION_SERVICES_LAST_CHECKED = ${JSON.stringify(RELOCATION_SERVICES_LAST_CHECKED)};
 export const RELOCATION_SERVICES_SOURCE_MODEL = ${JSON.stringify(RELOCATION_SERVICES_SOURCE_MODEL)};
 
-export const banksProviders: ServiceCategoryProviderCard[] = [
+const banksProvidersData = [
 ${banksBody}
-];
+] as Omit<ServiceCategoryProviderCard, "priority">[];
 
-export const healthInsuranceProviders: ServiceCategoryProviderCard[] = [
+export const banksProviders: ServiceCategoryProviderCard[] = attachSequentialPriority(banksProvidersData);
+
+const healthInsuranceProvidersData = [
 ${healthBody}
-];
+] as Omit<ServiceCategoryProviderCard, "priority">[];
 
-export const immigrationLawyersProviders: ServiceCategoryProviderCard[] = [
+export const healthInsuranceProviders: ServiceCategoryProviderCard[] =
+  attachSequentialPriority(healthInsuranceProvidersData);
+
+const immigrationLawyersProvidersData = [
 ${immigrationBody}
-];
+] as Omit<ServiceCategoryProviderCard, "priority">[];
 
-export const visaConsultantsProviders: ServiceCategoryProviderCard[] = [
+export const immigrationLawyersProviders: ServiceCategoryProviderCard[] =
+  attachSequentialPriority(immigrationLawyersProvidersData);
+
+const visaConsultantsProvidersData = [
 ${visaBody}
-];
+] as Omit<ServiceCategoryProviderCard, "priority">[];
 
-export const internationalHealthInsuranceProviders: ServiceCategoryProviderCard[] = [
+export const visaConsultantsProviders: ServiceCategoryProviderCard[] =
+  attachSequentialPriority(visaConsultantsProvidersData);
+
+const mobileConnectivityProvidersData = [
+${mobileConnectivityBody}
+] as Omit<ServiceCategoryProviderCard, "priority">[];
+
+export const mobileConnectivityProviders: ServiceCategoryProviderCard[] =
+  attachSequentialPriority(mobileConnectivityProvidersData);
+
+const internationalHealthInsuranceProvidersData = [
 ${intlHealthBody}
-];
+] as Omit<ServiceCategoryProviderCard, "priority">[];
 
-export const relocationAgenciesProviders: RelocationProviderRecord[] = [
+export const internationalHealthInsuranceProviders: ServiceCategoryProviderCard[] =
+  attachSequentialPriority(internationalHealthInsuranceProvidersData);
+
+const RELOCATION_AGENCIES_DATA = [
 ${relocationAgenciesBody}
-];
+] as Omit<RelocationProviderRecord, "priority">[];
 
-const relocationServicesAdditionalProviders: RelocationProviderRecord[] = [
+export const relocationAgenciesProviders: RelocationProviderRecord[] =
+  attachSequentialPriority(RELOCATION_AGENCIES_DATA);
+
+const RELOCATION_SERVICES_ADDITIONAL_DATA = [
 ${relocationServicesAdditionalBody}
-];
+] as Omit<RelocationProviderRecord, "priority">[];
 
-export const relocationServicesProviders: RelocationProviderRecord[] = [
-  ...relocationAgenciesProviders,
-  ...relocationServicesAdditionalProviders,
-];
+export const relocationServicesProviders: RelocationProviderRecord[] = attachSequentialPriority([
+  ...RELOCATION_AGENCIES_DATA,
+  ...RELOCATION_SERVICES_ADDITIONAL_DATA,
+]);
 
-export const housingPlatforms: HousingPlatformRecord[] = [
+const housingPlatformsData = [
 ${housingBody}
-];
+] as Omit<HousingPlatformRecord, "priority">[];
 
-export const rentalAgencies: RentalAgencyRecord[] = [
+export const housingPlatforms: HousingPlatformRecord[] = attachSequentialPriority(housingPlatformsData);
+
+const rentalAgenciesData = [
 ${rentalBody}
-];
+] as Omit<RentalAgencyRecord, "priority">[];
 
-export const startupFacilitators: StartupFacilitatorRecord[] = [
+export const rentalAgencies: RentalAgencyRecord[] = attachSequentialPriority(rentalAgenciesData);
+
+const startupFacilitatorsData = [
 ${startupBody}
-];
+] as Omit<StartupFacilitatorRecord, "priority">[];
+
+export const startupFacilitators: StartupFacilitatorRecord[] = attachSequentialPriority(startupFacilitatorsData);
 
 export const relocationAgenciesMetadata = {
   slug: "relocation-agencies",
@@ -417,6 +525,16 @@ export const startupFacilitatorsMetadata = {
   sourceLabel: "RVO facilitator list",
 };
 
+export const mobileConnectivityMetadata = {
+  slug: "mobile-connectivity",
+  parent: "services",
+  country: "netherlands",
+  sourceModel:
+    "Editorial shortlist: MVNOs (Simyo, Lebara) plus major Dutch operators (KPN, Vodafone NL, Odido)",
+  totalRecords: mobileConnectivityProviders.length,
+  lastChecked: MOBILE_CONNECTIVITY_LAST_CHECKED,
+};
+
 /** Every commercial / partner row with placement metadata (search / docs / tooling). */
 export const COMPANIES_REGISTRY: CompanyRegistryRow[] = [
   ...tagServiceCategory("banks", BANKS_PAGE, BANKS_SURFACES, banksProviders),
@@ -429,6 +547,12 @@ export const COMPANIES_REGISTRY: CompanyRegistryRow[] = [
   ),
   ...tagServiceCategory("immigration-lawyers", IMMIGRATION_PAGE, IMMIGRATION_SURFACES, immigrationLawyersProviders),
   ...tagServiceCategory("visa-consultants", VISA_PAGE, VISA_SURFACES, visaConsultantsProviders),
+  ...tagServiceCategory(
+    "mobile-connectivity",
+    MOBILE_CONNECTIVITY_PAGE,
+    MOBILE_CONNECTIVITY_SURFACES,
+    mobileConnectivityProviders
+  ),
   ...tagRelocation(
     "relocation-agencies",
     RELOCATION_AGENCIES_PAGE,

@@ -125,6 +125,17 @@ export const NETHERLANDS_SERVICES_CATEGORIES: ServiceCategoryCard[] = [
     group: "housing-relocation",
     featured: true,
   },
+  // ——— Family & Everyday Life ———
+  {
+    slug: "mobile-connectivity",
+    name: "Mobile & connectivity",
+    href: `${BASE}/mobile-connectivity/`,
+    description: "Dutch SIM, prepaid, and mobile plans for a local number—useful for banking, DigiD, and day-to-day admin.",
+    examples: ["SIM-only", "Prepaid", "eSIM", "Local number"],
+    bestForStage: "First days after arrival",
+    group: "family-everyday-life",
+    featured: false,
+  },
 ];
 
 /** Featured categories for hub "Featured services" and nav. */

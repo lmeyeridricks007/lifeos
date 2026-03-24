@@ -259,52 +259,12 @@
       },
       "services": [
         {
-          "name": "Wise",
-          "description": "Useful for handling international transfers and early spending before your full Dutch setup is complete.",
-          "url": "https://wise.com",
-          "indicativeCost": "Fees vary by route and usage.",
-          "reason": "Multi-currency and transfers during early setup.",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
-        },
-        {
-          "name": "bunq",
-          "description": "App-first Dutch bank often considered by internationals during early local setup.",
-          "url": "https://www.bunq.com",
-          "indicativeCost": "Plan pricing varies by package.",
-          "reason": "Dutch bank, expat-friendly, app-first.",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
-        },
-        {
-          "name": "HousingAnywhere",
-          "description": "Temporary housing platform used by internationals before securing long-term accommodation.",
-          "url": "https://housinganywhere.com",
-          "indicativeCost": "Listing prices vary by city and property.",
-          "reason": "Temporary housing and registration planning.",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
-        },
-        {
           "name": "Independer",
           "description": "Compare Dutch health insurance policies once your route and registration timing are clear.",
           "url": "https://www.independer.nl",
           "indicativeCost": "Comparison platform; policy pricing varies.",
           "reason": "Insurance comparison, health insurance, setup.",
           "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
-        },
-        {
-          "name": "Simyo",
-          "description": "SIM-only option for mobile connectivity during the first weeks after arrival.",
-          "url": "https://www.simyo.nl",
-          "indicativeCost": "Plan pricing varies.",
-          "reason": "Mobile plan, connectivity.",
-          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
-        },
-        {
-          "name": "ABN AMRO",
-          "description": "Traditional Dutch bank with English-language support for many internationals.",
-          "url": "https://www.abnamro.nl",
-          "indicativeCost": "Account pricing varies by package.",
-          "reason": "Traditional bank, local banking.",
-          "logo": { "src": "/images/affiliates/logos/abn-amro.svg", "alt": "ABN AMRO logo" }
         }
       ]
     }

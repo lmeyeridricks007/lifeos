@@ -94,24 +94,7 @@
       "internalCta": {
         "label": "Read BSN registration guide",
         "href": "/netherlands/bsn-registration/"
-      },
-      "services": [
-        {
-          "name": "ABN AMRO",
-          "description": "Major Dutch bank with broader local banking options once your registration and BSN are in place.",
-          "url": "https://www.abnamro.nl/",
-          "indicativeCost": "Account pricing varies by package.",
-          "reason": "Traditional bank, local banking",
-          "logo": { "src": "/images/affiliates/logos/abn-amro.svg", "alt": "ABN AMRO logo" }
-        },
-        {
-          "name": "ING",
-          "description": "Traditional Dutch bank often used for salary, direct debits, and long-term local banking after BSN.",
-          "url": "https://www.ing.nl/",
-          "indicativeCost": "Account pricing varies by package.",
-          "reason": "Traditional bank, salary account"
-        }
-      ]
+      }
     },
     {
       "id": "before-bsn-options",
@@ -123,32 +106,7 @@
       "internalCta": {
         "label": "Register your address",
         "href": "/netherlands/register-address-netherlands/"
-      },
-      "services": [
-        {
-          "name": "Wise",
-          "description": "Multi-currency account and international transfers often used before full local banking is set up.",
-          "url": "https://wise.com/",
-          "indicativeCost": "Fees vary by route and currency; card/account pricing varies by market.",
-          "reason": "Multi-currency, transfers, temporary setup",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
-        },
-        {
-          "name": "bunq",
-          "description": "App-first Dutch bank often considered by internationals looking for faster onboarding.",
-          "url": "https://www.bunq.com/",
-          "indicativeCost": "Plan pricing varies.",
-          "reason": "Dutch bank, app-first, expat-friendly",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
-        },
-        {
-          "name": "Revolut",
-          "description": "Multi-currency app used by expats for early spending, transfers, and temporary account access.",
-          "url": "https://www.revolut.com/",
-          "indicativeCost": "Free and paid plans available; fees vary by usage.",
-          "reason": "Multi-currency, app banking, international"
-        }
-      ]
+      }
     },
     {
       "id": "what-usually-blocked",
@@ -220,32 +178,7 @@
         "primaryHref": "/netherlands/moving/tools/arrival-planner/",
         "secondaryLabel": "Plan Your First 90 Days",
         "secondaryHref": "/netherlands/moving/tools/first-90-days/"
-      },
-      "services": [
-        {
-          "name": "Wise",
-          "description": "Multi-currency account and international transfers often used before full local banking is set up.",
-          "url": "https://wise.com/",
-          "indicativeCost": "Fees vary by route and currency.",
-          "reason": "Multi-currency, transfers, temporary setup",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
-        },
-        {
-          "name": "Revolut",
-          "description": "Multi-currency app used by expats for early spending, transfers, and temporary account access.",
-          "url": "https://www.revolut.com/",
-          "indicativeCost": "Free and paid plans; fees vary by usage.",
-          "reason": "Multi-currency, app banking, international"
-        },
-        {
-          "name": "bunq",
-          "description": "App-first Dutch bank often considered by internationals for faster onboarding.",
-          "url": "https://www.bunq.com/",
-          "indicativeCost": "Plan pricing varies.",
-          "reason": "Dutch bank, app-first, expat-friendly",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
-        }
-      ]
+      }
     },
     {
       "id": "checklist",

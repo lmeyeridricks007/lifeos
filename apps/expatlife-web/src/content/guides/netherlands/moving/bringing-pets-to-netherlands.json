@@ -282,16 +282,6 @@
       "links": [
         { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "Cost of moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" }
-      ],
-      "services": [
-        {
-          "name": "HousingAnywhere",
-          "description": "Temporary housing platform that can help during the transition before securing long-term housing.",
-          "url": "https://housinganywhere.com",
-          "indicativeCost": "e.g. €1,200–€2,500/month for short-term pet-friendly rentals in major cities.",
-          "reason": "Housing, temporary housing, transition",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.png", "alt": "HousingAnywhere logo" }
-        }
       ]
     },
     {

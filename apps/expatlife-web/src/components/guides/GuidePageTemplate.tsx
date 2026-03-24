@@ -4,6 +4,7 @@ import type {
   GuideData,
   GuideSection,
   GuideSectionService,
+  GuideSectionServiceResolved,
   GuideBankComparison,
   GuideInsurerComparison,
   GuideDocumentTranslationCountryExample,
@@ -33,6 +34,7 @@ import { EditorialContentHeader } from "@/src/components/content/EditorialConten
 import { ContentActionBar } from "@/src/components/content/ContentActionBar";
 import { PillarTOC } from "@/components/content/PillarTOC";
 import { cn } from "@/lib/cn";
+import { resolveGuideSectionServices } from "@/src/lib/guides/resolveGuideSectionServices";
 
 /** Slugs that support "Download PDF" (checklist-style guides). */
 const CHECKLIST_PDF_SLUGS = ["moving-checklist-netherlands", "documents-needed-to-move-netherlands"] as const;
@@ -56,6 +58,7 @@ const pageContainerClass = "w-full max-w-screen-2xl";
 /** Shared card-styled block for section services (Week 2, Week 3, etc.). Same layout and styling everywhere. */
 function GuideSectionServicesCards({ services }: { services: GuideSectionService[] }) {
   if (!services.length) return null;
+  const resolved: GuideSectionServiceResolved[] = resolveGuideSectionServices(services);
   return (
     <div
       className={cn(
@@ -69,7 +72,7 @@ function GuideSectionServicesCards({ services }: { services: GuideSectionService
           Services often used in this step
         </h3>
         <div className="mt-4 grid gap-6 sm:grid-cols-2">
-          {services.map((s, i) => {
+          {resolved.map((s, i) => {
             const parts = s.name.split(/[\s-]+/).filter(Boolean);
             const initials =
               parts.length >= 2 ? (parts[0][0] + parts[1][0]).toUpperCase() : s.name.slice(0, 2).toUpperCase();

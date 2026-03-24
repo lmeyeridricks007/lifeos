@@ -11,7 +11,6 @@ export { COMPARISON_EXAMPLE_SCENARIOS } from "./example-scenarios";
 export type { ExampleScenario } from "./example-scenarios";
 export { COMPARISON_RELATED_TOOLS } from "./related-tools";
 export type { RelatedTool } from "./related-tools";
-export { COMPARISON_SERVICES } from "./services";
 export type { ComparisonService } from "./services";
 export { COMPARISON_OFFICIAL_SOURCES } from "./official-sources";
 export type { OfficialSource } from "./official-sources";

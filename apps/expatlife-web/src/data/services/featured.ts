@@ -75,6 +75,18 @@ export const NETHERLANDS_FEATURED_HIGHLIGHTS: FeaturedCategoryHighlight[] = [
     ],
   },
   {
+    slug: "mobile-connectivity",
+    title: "Mobile & connectivity",
+    intro:
+      "A Dutch mobile number helps with SMS codes for banks, DigiD, and many services. Compare SIM-only and prepaid options expats often use.",
+    providerExamples: ["Simyo", "Lebara", "KPN", "Vodafone", "Odido"],
+    href: `${BASE}/mobile-connectivity/`,
+    guideLinks: [
+      { label: "After arriving in the Netherlands", href: "/netherlands/after-arriving-netherlands/" },
+      { label: "First 30 days", href: "/netherlands/first-30-days-netherlands/" },
+    ],
+  },
+  {
     slug: "immigration-lawyers",
     title: "Immigration Lawyers",
     intro:

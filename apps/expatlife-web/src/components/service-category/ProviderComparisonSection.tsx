@@ -5,6 +5,7 @@ import { useState, useMemo, useRef, useCallback } from "react";
 import { Check, X, Banknote, User, Package, Plus, Trash2, LayoutGrid, MapPin } from "lucide-react";
 import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
 import type { ServiceCategoryProviderCard } from "@/src/lib/service-category/types";
+import { normalizeExternalProviderLogoSrc } from "@/src/lib/provider-logo-url";
 
 const PROVIDER_TYPE_LABELS: Record<string, string> = {
   bank: "Bank",
@@ -15,15 +16,6 @@ const PROVIDER_TYPE_LABELS: Record<string, string> = {
 };
 
 const MAX_SHORTLIST = 3;
-
-/** Resolve logo URL: use apistemic when src is a Clearbit URL (Clearbit API was discontinued). */
-function resolveLogoUrl(src: string): string {
-  if (src.startsWith("https://logo.clearbit.com/")) {
-    const domain = src.replace("https://logo.clearbit.com/", "").replace(/\/$/, "");
-    return `https://logos-api.apistemic.com/domain:${domain}`;
-  }
-  return src;
-}
 
 function initials(name: string): string {
   const parts = name.trim().split(/\s+/);
@@ -38,7 +30,7 @@ function ProviderLogoSmall({
   size = "md",
 }: { src: string; alt: string; name: string; size?: "sm" | "md" }) {
   const [error, setError] = useState(false);
-  const resolvedSrc = resolveLogoUrl(src);
+  const resolvedSrc = normalizeExternalProviderLogoSrc(src);
   const dim = size === "sm" ? 32 : 40;
   const sizeClass = size === "sm" ? "h-8 w-8" : "h-10 w-10";
   const textClass = size === "sm" ? "text-[10px]" : "text-xs";

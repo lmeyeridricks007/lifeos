@@ -113,6 +113,7 @@ export const netherlandsServicesPage: ServicesHubPageData = {
       categoryHrefs: [
         { label: "Banks", href: "/netherlands/services/banks/" },
         { label: "Health Insurance", href: "/netherlands/services/health-insurance/" },
+        { label: "Mobile & connectivity", href: "/netherlands/services/mobile-connectivity/" },
         { label: "Relocation Services", href: "/netherlands/services/relocation-services/" },
       ],
     },
@@ -155,6 +156,12 @@ export const netherlandsServicesPage: ServicesHubPageData = {
       description: "Understand mandatory health insurance and compare provider types.",
       href: "/netherlands/services/health-insurance/",
       linkLabel: "Compare Health Insurance",
+    },
+    {
+      title: "Dutch mobile number and SIM for expats",
+      description: "Why a local number matters for banking and DigiD, and SIM-only or prepaid options to compare.",
+      href: "/netherlands/services/mobile-connectivity/",
+      linkLabel: "Mobile & connectivity",
     },
     {
       title: "When to use a relocation agency",

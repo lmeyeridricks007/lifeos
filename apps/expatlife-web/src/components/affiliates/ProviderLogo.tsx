@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { AffiliateProvider } from "@/src/lib/affiliates/types";
+import { normalizeExternalProviderLogoSrc } from "@/src/lib/provider-logo-url";
 
 type Props = {
   provider: AffiliateProvider;
@@ -18,11 +19,12 @@ export function ProviderLogo({ provider, size = "md", className = "" }: Props) {
   const height = size === "sm" ? 32 : 48;
   const initials = getInitials(provider.name);
 
-  if (provider.logo?.src) {
+  const logoSrc = provider.logo?.src ? normalizeExternalProviderLogoSrc(provider.logo.src) : "";
+  if (logoSrc) {
     return (
       <div className={`relative shrink-0 overflow-hidden rounded-lg bg-white ${className}`} style={{ width, height }}>
         <Image
-          src={provider.logo.src}
+          src={logoSrc}
           alt={provider.logo.alt || ""}
           width={width}
           height={height}

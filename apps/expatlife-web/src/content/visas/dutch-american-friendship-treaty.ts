@@ -119,69 +119,8 @@ export const DAFT_VISA: VisaPageData = {
     },
   ],
 
-  services: [
-    {
-      name: "Wise",
-      description: "Moving money internationally and operating across currencies before and after arrival.",
-      url: "https://wise.com/",
-      indicativeCost: "Variable by route and amount",
-      reason: "International transfers, multi-currency",
-      logo: { src: "/images/affiliates/logos/wise.svg", alt: "Wise logo" },
-    },
-    {
-      name: "bunq",
-      description: "Dutch banking after arrival; popular with internationals and entrepreneurs.",
-      url: "https://www.bunq.com/",
-      indicativeCost: "Monthly plans vary",
-      reason: "Expat-friendly, fast setup",
-      logo: { src: "/images/affiliates/logos/bunq.svg", alt: "bunq logo" },
-    },
-    {
-      name: "HousingAnywhere",
-      description: "Temporary housing during arrival while securing long-term accommodation.",
-      url: "https://housinganywhere.com/",
-      indicativeCost: "City-dependent",
-      reason: "Temporary housing, expat rentals",
-      logo: { src: "/images/affiliates/logos/housinganywhere.svg", alt: "HousingAnywhere logo" },
-    },
-    {
-      name: "Simyo",
-      description: "Simple Dutch SIM-only mobile plans for early connectivity.",
-      url: "https://www.simyo.nl/",
-      indicativeCost: "Low-cost monthly plans",
-      reason: "Mobile, no-contract options",
-      logo: { src: "/images/affiliates/logos/simyo.svg", alt: "Simyo logo" },
-    },
-    {
-      name: "Independer",
-      description: "Compare Dutch health insurance options once you are ready to choose a provider.",
-      url: "https://www.independer.nl/",
-      indicativeCost: "Comparison free; premiums vary",
-      reason: "Insurance comparison, health",
-      logo: { src: "/images/affiliates/logos/independer.svg", alt: "Independer logo" },
-    },
-    {
-      name: "KVK (Dutch Chamber of Commerce)",
-      description: "Business registration and support information for setting up in the Netherlands.",
-      url: "https://www.kvk.nl/en/",
-      indicativeCost: "Registration fees apply",
-      reason: "Business registration support",
-    },
-    {
-      name: "Blue Umbrella",
-      description: "Expat tax, payroll, and business setup support for international entrepreneurs.",
-      url: "https://www.blueumbrella.nl/",
-      indicativeCost: "Consultation-based",
-      reason: "Business setup, tax, bookkeeping",
-    },
-    {
-      name: "Everaert Immigration Lawyers",
-      description: "Complex immigration and DAFT route questions, tailored advice.",
-      url: "https://www.everaert.nl/",
-      indicativeCost: "Consultation-based",
-      reason: "Legal support for complex cases",
-    },
-  ],
+  /** Pillar “Services” block is filled from `COMPANIES_REGISTRY` in `daftToGuideData` (lawyers, consultants, startup advisors, relocation). */
+  services: [],
 
   faq: [
     {

@@ -140,48 +140,6 @@
         { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
         { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" }
-      ],
-      "services": [
-        {
-          "name": "bunq",
-          "description": "Expat-friendly Dutch bank with fast app-based onboarding.",
-          "url": "https://www.bunq.com/",
-          "indicativeCost": "Free / paid plans depending on tier.",
-          "reason": "Useful when opening a Dutch account early after arrival.",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
-        },
-        {
-          "name": "Wise",
-          "description": "Multi-currency account and international transfers for people moving money into the Netherlands.",
-          "url": "https://wise.com/",
-          "indicativeCost": "Free account; transfer fees vary.",
-          "reason": "Common for early transfers, rent, and cross-border finances.",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
-        },
-        {
-          "name": "ABN AMRO Expat Banking",
-          "description": "Dutch bank with expat-oriented onboarding and English information.",
-          "url": "https://www.abnamro.nl/en/personal/specially-for/expats",
-          "indicativeCost": "Monthly banking fees vary by account type.",
-          "reason": "Relevant for people who want a traditional local bank.",
-          "logo": { "src": "/images/affiliates/logos/abn-amro.svg", "alt": "ABN AMRO logo" }
-        },
-        {
-          "name": "Simyo",
-          "description": "Dutch SIM-only mobile provider.",
-          "url": "https://www.simyo.nl/",
-          "indicativeCost": "Budget monthly plans.",
-          "reason": "Useful once you want a local number quickly.",
-          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
-        },
-        {
-          "name": "Lebara NL",
-          "description": "Popular prepaid / SIM-only option, often used by newcomers.",
-          "url": "https://www.lebara.nl/",
-          "indicativeCost": "Budget-friendly monthly plans.",
-          "reason": "Good for early mobile setup.",
-          "logo": { "src": "/images/affiliates/logos/lebara.svg", "alt": "Lebara logo" }
-        }
       ]
     },
     {
@@ -209,30 +167,6 @@
           "indicativeCost": "Comparison platform; insurer premiums vary.",
           "reason": "Useful when evaluating health insurance.",
           "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
-        },
-        {
-          "name": "Zilveren Kruis",
-          "description": "Major Dutch health insurer.",
-          "url": "https://www.zilverenkruis.nl/",
-          "indicativeCost": "Monthly premium varies by plan.",
-          "reason": "Relevant as an example of a common insurer.",
-          "logo": { "src": "/images/affiliates/logos/zilveren-kruis.svg", "alt": "Zilveren Kruis logo" }
-        },
-        {
-          "name": "HousingAnywhere",
-          "description": "Temporary and medium-term rentals often used by internationals.",
-          "url": "https://housinganywhere.com/",
-          "indicativeCost": "Housing prices vary widely by city.",
-          "reason": "Relevant if longer-term housing is still not finalised.",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
-        },
-        {
-          "name": "Pararius",
-          "description": "Major rental platform in the Netherlands.",
-          "url": "https://www.pararius.com/",
-          "indicativeCost": "Listing platform; rent depends on area.",
-          "reason": "Useful for reviewing longer-term housing options.",
-          "logo": { "src": "/images/affiliates/logos/pararius.svg", "alt": "Pararius logo" }
         }
       ]
     },

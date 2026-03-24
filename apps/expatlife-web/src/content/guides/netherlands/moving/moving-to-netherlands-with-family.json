@@ -128,17 +128,7 @@
         "primaryHref": "/netherlands/moving/tools/moving-checklist/",
         "secondaryLabel": "Read Registering Your Address guide",
         "secondaryHref": "/netherlands/municipality-registration-netherlands/"
-      },
-      "services": [
-        {
-          "name": "HousingAnywhere",
-          "description": "Temporary rentals used by international households while arranging permanent housing and registration.",
-          "url": "https://housinganywhere.com/",
-          "indicativeCost": "Listing prices vary by city and property.",
-          "reason": "Temporary housing, families, expats",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
-        }
-      ]
+      }
     },
     {
       "id": "schools-childcare",

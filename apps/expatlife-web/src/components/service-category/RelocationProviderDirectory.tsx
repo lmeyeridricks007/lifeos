@@ -4,18 +4,10 @@ import { useMemo, useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { Search, ChevronLeft, ChevronRight, ExternalLink, MapPin, Tag, Building2, X, Banknote, CheckCircle2, Plus } from "lucide-react";
 import type { RelocationProviderRecord } from "@/src/lib/service-category/types";
+import { normalizeExternalProviderLogoSrc } from "@/src/lib/provider-logo-url";
 
 const PAGE_SIZE = 10;
 const MAX_SHORTLIST = 3;
-
-/** Resolve logo URL: use apistemic when src is a Clearbit URL (Clearbit API was discontinued). */
-function resolveLogoUrl(src: string): string {
-  if (src.startsWith("https://logo.clearbit.com/")) {
-    const domain = src.replace("https://logo.clearbit.com/", "").replace(/\/$/, "");
-    return `https://logos-api.apistemic.com/domain:${domain}`;
-  }
-  return src;
-}
 
 function initials(name: string): string {
   const parts = name.trim().split(/\s+/);
@@ -26,7 +18,7 @@ function initials(name: string): string {
 function ProviderLogo({ logoUrl, name }: { logoUrl?: string; name: string }) {
   const [error, setError] = useState(false);
   const [loaded, setLoaded] = useState(false);
-  const resolvedUrl = logoUrl ? resolveLogoUrl(logoUrl) : undefined;
+  const resolvedUrl = logoUrl ? normalizeExternalProviderLogoSrc(logoUrl) : undefined;
   const showImage = resolvedUrl && !error;
   return (
     <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm ring-1 ring-slate-100">

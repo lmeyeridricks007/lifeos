@@ -5,15 +5,7 @@ import Image from "next/image";
 import { ExternalLink, Briefcase, Building2, Copy, Check } from "lucide-react";
 import type { FeaturedSponsorExample } from "@/src/lib/service-category/types";
 import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
-
-/** Resolve logo URL: use apistemic when src is a Clearbit URL (Clearbit API was discontinued). */
-function resolveLogoUrl(src: string): string {
-  if (src.startsWith("https://logo.clearbit.com/")) {
-    const domain = src.replace("https://logo.clearbit.com/", "").replace(/\/$/, "");
-    return `https://logos-api.apistemic.com/domain:${domain}`;
-  }
-  return src;
-}
+import { normalizeExternalProviderLogoSrc } from "@/src/lib/provider-logo-url";
 
 function initials(name: string): string {
   const parts = name.trim().split(/\s+/);
@@ -26,7 +18,7 @@ function SponsorLogo({
   name,
 }: { logoUrl?: string; name: string }) {
   const [error, setError] = useState(false);
-  const resolvedUrl = logoUrl ? resolveLogoUrl(logoUrl) : undefined;
+  const resolvedUrl = logoUrl ? normalizeExternalProviderLogoSrc(logoUrl) : undefined;
   if (resolvedUrl && !error) {
     return (
       <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">

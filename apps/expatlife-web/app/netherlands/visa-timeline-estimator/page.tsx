@@ -19,6 +19,7 @@ import {
 } from "@/src/lib/tools/shared/toolInternalLinks";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { getVisaRelocationMarketingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -135,21 +136,6 @@ const RELATED_TOOLS_FOR_PAGE = [
   { href: `${BASE}/moving/tools/first-90-days/`, title: "First 90 Days Planner", description: "Plan your first weeks after arrival." },
 ];
 
-const RECOMMENDED_SERVICES: Array<{
-  name: string;
-  useFor: string;
-  url: string;
-  logo?: { src: string; alt: string };
-}> = [
-  { name: "Wise", useFor: "Moving money / transfer timing.", url: "https://wise.com", logo: { src: "/images/affiliates/logos/wise.svg", alt: "Wise logo" } },
-  { name: "bunq", useFor: "Banking after arrival.", url: "https://www.bunq.com", logo: { src: "/images/affiliates/logos/bunq.svg", alt: "bunq logo" } },
-  { name: "HousingAnywhere", useFor: "Temporary housing timing.", url: "https://www.housinganywhere.com", logo: { src: "/images/affiliates/logos/housinganywhere.svg", alt: "HousingAnywhere logo" } },
-  { name: "Simyo", useFor: "Phone setup after arrival.", url: "https://www.simyo.nl", logo: { src: "/images/affiliates/logos/simyo.svg", alt: "Simyo logo" } },
-  { name: "Independer", useFor: "Insurance comparison.", url: "https://www.independer.nl", logo: { src: "/images/affiliates/logos/independer.svg", alt: "Independer logo" } },
-  { name: "Everaert Immigration Lawyers", useFor: "Complex timing / route situations.", url: "https://www.everaert.nl/" },
-  { name: "ACCESS NL", useFor: "Expat support and information.", url: "https://www.access-nl.org/" },
-];
-
 const OFFICIAL_SOURCES = [
   { label: "IND – Decision periods", href: "https://ind.nl/en/after-your-application/decision-periods" },
   { label: "IND – Highly Skilled Migrant", href: "https://ind.nl/en/residence-permits/work/highly-skilled-migrant" },
@@ -172,6 +158,7 @@ export default async function VisaTimelineEstimatorPage(props: PageProps) {
   const scenarioId = typeof searchParams.scenario === "string" ? searchParams.scenario : undefined;
   const scenario = scenarioId ? EXAMPLE_SCENARIOS.find((s) => s.id === scenarioId) : undefined;
   const initialPrefill = scenario?.prefilledAnswers;
+  const recommendedServicesCards = getVisaRelocationMarketingRecommendedCards();
 
   const breadcrumbItems = [
     { name: "Home", url: "/" },
@@ -284,7 +271,7 @@ export default async function VisaTimelineEstimatorPage(props: PageProps) {
         These services may help with different parts of your move timeline. Timelines and provider response times can vary.
       </p>
       <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {RECOMMENDED_SERVICES.map((service) => {
+        {recommendedServicesCards.map((service) => {
           const initials = service.name
             .split(/[\s-]+/)
             .filter(Boolean)

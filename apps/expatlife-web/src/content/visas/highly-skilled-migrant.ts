@@ -121,63 +121,8 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
     },
   ],
 
-  services: [
-    {
-      name: "Wise",
-      description: "International transfers, salary transition, and moving money before and after arrival.",
-      url: "https://wise.com/",
-      indicativeCost: "Variable fee by route",
-      reason: "Multi-currency and international transfers",
-      logo: { src: "/images/affiliates/logos/wise.svg", alt: "Wise logo" },
-    },
-    {
-      name: "bunq",
-      description: "Dutch banking after arrival; popular with internationals and expats.",
-      url: "https://www.bunq.com/",
-      indicativeCost: "Tiered monthly plans",
-      reason: "Expat-friendly, fast setup",
-      logo: { src: "/images/affiliates/logos/bunq.svg", alt: "bunq logo" },
-    },
-    {
-      name: "HousingAnywhere",
-      description: "Temporary and mid-term rentals often used by internationals while settling in.",
-      url: "https://housinganywhere.com/",
-      indicativeCost: "City-dependent housing cost",
-      reason: "Temporary housing, expat rentals",
-      logo: { src: "/images/affiliates/logos/housinganywhere.svg", alt: "HousingAnywhere logo" },
-    },
-    {
-      name: "Simyo",
-      description: "Simple Dutch SIM-only mobile plans for early connectivity.",
-      url: "https://www.simyo.nl/",
-      indicativeCost: "Low-cost monthly plans",
-      reason: "Mobile, no-contract options",
-      logo: { src: "/images/affiliates/logos/simyo.svg", alt: "Simyo logo" },
-    },
-    {
-      name: "Independer",
-      description: "Compare Dutch health insurance options once you are ready to choose a provider.",
-      url: "https://www.independer.nl/",
-      indicativeCost: "Comparison free; policy prices vary",
-      reason: "Insurance comparison, health",
-      logo: { src: "/images/affiliates/logos/independer.svg", alt: "Independer logo" },
-    },
-    {
-      name: "IN Amsterdam / Official expat centre",
-      description: "One-stop-shop and municipality + immigration support where available for international newcomers.",
-      url: "https://www.iamsterdam.com/en/live-work-study/in-amsterdam/how-in-amsterdam-helps-international-newcomers/in-amsterdam-services-for-international-newcomers",
-      indicativeCost: "Official service / regional availability",
-      reason: "Official expat support, registration, immigration",
-      logo: { src: "/images/affiliates/logos/expat-center-amsterdam.svg", alt: "Expat Center Amsterdam logo" },
-    },
-    {
-      name: "Everaert Immigration Lawyers",
-      description: "Complex immigration cases, employer and family questions, and tailored advice.",
-      url: "https://www.everaert.nl/",
-      indicativeCost: "Consultation-based",
-      reason: "Legal support for complex cases",
-    },
-  ],
+  /** Pillar “Services” block is filled from `COMPANIES_REGISTRY` in `highlySkilledMigrantToGuideData` (lawyers, consultants, relocation). */
+  services: [],
 
   faq: [
     {

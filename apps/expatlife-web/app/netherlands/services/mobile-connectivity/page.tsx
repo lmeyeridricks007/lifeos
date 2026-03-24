@@ -9,68 +9,32 @@ import { Accordion } from "@/components/ui/accordion";
 import {
   ServiceCategoryHero,
   ServiceCategoryIntro,
-  CoverageExplainerCards,
+  RequirementAlertBox,
   ComparisonFactorsGrid,
+  ProviderComparisonSection,
   CostBreakdownCards,
+  WhoNeedsHelpCards,
   ScenarioCards,
   EditorialDisclosureBlock,
-  SafetyTipsBlock,
   ServiceCategoryTrustLinks,
-  ProviderComparisonSection,
+  CoverageExplainerCards,
 } from "@/src/components/service-category";
 import { RelatedGuidesSection } from "@/src/components/city-hub/RelatedGuidesGrid";
 import { ToolCards } from "@/src/components/city-hub/ToolCards";
 import { OfficialSourcesList } from "@/src/components/city-hub/OfficialSourcesList";
-import { housingPlatformsCategoryPage } from "@/src/data/services/categories/housing-platforms";
-import { housingPlatforms } from "@/src/data/companies-registry";
+import { mobileConnectivityCategoryPage } from "@/src/data/services/categories/mobile-connectivity";
 import type { CityRelatedGuideBlock } from "@/src/lib/city-hub/types";
-import type { ServiceCategoryProviderCard } from "@/src/lib/service-category/types";
 import type { CityToolCard } from "@/src/lib/city-hub/types";
 import type { CityOfficialSource } from "@/src/lib/city-hub/types";
 import { getSiteOrigin } from "@/lib/site-origin";
 
 const baseUrl = getSiteOrigin();
-const data = housingPlatformsCategoryPage;
-
-function mapHousingPlatformsToComparisonCards(): ServiceCategoryProviderCard[] {
-  const basePath = "/netherlands/services/housing-platforms";
-  return housingPlatforms.map((p) => {
-    let logo: { src: string; alt: string } | undefined;
-    if (p.logoUrl) {
-      logo = { src: p.logoUrl, alt: p.name };
-    } else if (p.providerUrl) {
-      try {
-        const hostname = new URL(p.providerUrl).hostname;
-        // Prefer site favicon when no explicit logo: domain-based logo APIs often return wrong or generic images.
-        logo = { src: `https://www.google.com/s2/favicons?domain=${encodeURIComponent(hostname)}&sz=128`, alt: p.name };
-      } catch {
-        logo = undefined;
-      }
-    }
-    return {
-      slug: p.slug,
-      name: p.name,
-      href: `${basePath}/${p.slug}/`,
-      shortDescription: p.shortDescription,
-      bestFor: p.bestFor?.slice(0, 3).join(", ") ?? p.categoryType ?? "Housing search",
-      priceNote: p.feeNote ?? "Check platform pricing.",
-      logo,
-      features: p.bestFor,
-      pros: p.pros,
-      cons: p.cons,
-      whoShouldChoose: p.whoShouldChoose,
-      externalUrl: p.providerUrl,
-      priority: p.priority,
-    };
-  });
-}
+const data = mobileConnectivityCategoryPage;
 
 /*
- * INTERNAL LINKING RECOMMENDATIONS:
- * - Housing guides (housing-netherlands, renting-in-netherlands) should link here prominently
- * - City pages should link here in housing sections
- * - Services hub should feature this page in Housing / relocation submenu
- * - Future provider profile pages (/netherlands/services/housing-platforms/<slug>/) should link back here
+ * INTERNAL LINKING:
+ * - Guides that mention SIM/mobile (after-arriving, first 30/60/90 days) should link here.
+ * - /netherlands/services/ hub lists this under Family & Everyday Life.
  */
 
 export const metadata: Metadata = {
@@ -99,14 +63,14 @@ function ItemListJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Housing platforms and housing-search services for expats in the Netherlands",
-    description: "Rental, room, furnished, temporary, and home-search platforms commonly used by expats.",
-    numberOfItems: housingPlatforms.length,
-    itemListElement: housingPlatforms.map((p, i) => ({
+    name: "Mobile and connectivity providers for expats in the Netherlands",
+    description: "SIM-only and prepaid mobile options expats often compare for a Dutch phone number.",
+    numberOfItems: data.providers.length,
+    itemListElement: data.providers.map((p, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: p.name,
-      url: p.providerUrl ?? new URL(`/netherlands/services/housing-platforms/${p.slug}/`, baseUrl).toString(),
+      url: new URL(p.href, baseUrl).toString(),
     })),
   };
   return (
@@ -117,7 +81,7 @@ function ItemListJsonLd() {
   );
 }
 
-export default function HousingPlatformsCategoryPage() {
+export default function MobileConnectivityCategoryPage() {
   const faqAccordionItems = data.faqs.map((item, i) => ({
     id: `faq-${i}`,
     title: item.q,
@@ -127,7 +91,7 @@ export default function HousingPlatformsCategoryPage() {
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
     { name: "Services", item: new URL("/netherlands/services/", baseUrl).toString() },
-    { name: "Housing Platforms", item: new URL(data.path, baseUrl).toString() },
+    { name: "Mobile & connectivity", item: new URL(data.path, baseUrl).toString() },
   ];
   const dateModified = new Date().toISOString().slice(0, 10);
   const relatedBlocks: CityRelatedGuideBlock[] = data.relatedGuides;
@@ -162,7 +126,7 @@ export default function HousingPlatformsCategoryPage() {
                 <li aria-hidden className="text-slate-400">/</li>
                 <li><Link href="/netherlands/services/" className="hover:text-slate-900">Services</Link></li>
                 <li aria-hidden className="text-slate-400">/</li>
-                <li className="font-medium text-slate-900" aria-current="page">Housing Platforms</li>
+                <li className="font-medium text-slate-900" aria-current="page">Mobile & connectivity</li>
               </ol>
             </nav>
             <ServiceCategoryHero
@@ -186,77 +150,87 @@ export default function HousingPlatformsCategoryPage() {
 
                 <ServiceCategoryIntro intro={data.intro} />
 
-                <section id="what-platforms-are" className="scroll-mt-24 mt-8 space-y-5">
+                <section id="why-local-number" className="scroll-mt-24 mt-12 space-y-6">
                   <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    What Housing Platforms Are
+                    Why a Dutch Mobile Number Matters Early On
                   </h2>
                   <p className="text-slate-700 leading-relaxed">
-                    Housing platforms include listing marketplaces (where you browse properties from agents or landlords), room platforms (for shared housing and single rooms), furnished and mid-term rental platforms (often used by expats and students), temporary accommodation and serviced-apartment providers, and buying/selling marketplaces. Some platforms connect you directly to landlords; others list properties from estate agents. They are not the same as a real estate agent (makelaar), relocation agency, or broker—each plays a different role. Use the types below to match the right channel to your need.
+                    SMS one-time passwords are standard for banks, insurers, and many portals. DigiD activation also expects a reachable number. Sorting mobile early avoids repeated blocks when you are already juggling registration, housing, and work onboarding.
                   </p>
+                  <RequirementAlertBox cards={data.requirementCards} />
                 </section>
 
-                <section id="types-of-services" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    Types of Housing Platforms Expats Commonly Use
-                  </h2>
-                  <CoverageExplainerCards cards={data.coverageCards} />
-                </section>
+                {data.coverageCards?.length ? (
+                  <section id="coverage-types" className="scroll-mt-24 mt-12 space-y-6">
+                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                      Mobile, eSIM, and Home Internet
+                    </h2>
+                    <p className="text-slate-700 leading-relaxed">
+                      Use the cards below to separate what mobile plans cover from what you will later arrange for fixed broadband at home.
+                    </p>
+                    <CoverageExplainerCards cards={data.coverageCards} layout="2x2" />
+                  </section>
+                ) : null}
 
-                <ProviderComparisonSection
-                  providers={mapHousingPlatformsToComparisonCards()}
-                  sectionTitle={data.comparisonSection?.title ?? "Compare providers"}
-                  sectionIntro={data.comparisonSection?.intro}
-                />
-
-                <section id="what-to-compare" className="scroll-mt-24 mt-8 space-y-5">
+                <section id="comparison-factors" className="scroll-mt-24 mt-12 space-y-6">
                   <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    How to Compare Housing Platforms in the Netherlands
+                    What to Compare Between Plans
                   </h2>
                   <p className="text-slate-700 leading-relaxed">
-                    The right platform depends on your needs: long-term vs mid-term, furnished vs unfurnished, room vs apartment, and whether you are a student, family, or working professional. There is no single best platform for every move.
+                    There is no single best plan for everyone. Match data allowance, contract flexibility, English support, and roaming rules to how you actually use your phone.
                   </p>
                   <ComparisonFactorsGrid factors={data.comparisonFactors} />
                 </section>
 
-                <section id="typical-costs" className="scroll-mt-24 mt-8 space-y-5">
+                <ProviderComparisonSection
+                  providers={data.providers}
+                  sectionTitle={data.comparisonSection?.title ?? "Compare providers"}
+                  sectionIntro={data.comparisonSection?.intro}
+                />
+
+                <section id="typical-costs" className="scroll-mt-24 mt-12 space-y-6">
                   <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    Typical Platform Costs, Fees and Payment Considerations
+                    Typical Mobile Costs in the Netherlands
                   </h2>
                   <p className="text-slate-700 leading-relaxed">
-                    Some platforms are free to browse; some charge subscription or booking fees. Agent or landlord fees may apply when you rent through a listing. Always check pricing and refund conditions directly with the platform and the landlord or agent.
+                    Prepaid starter packs and first top-ups are usually modest; monthly SIM-only depends on data. Promotions change frequently—treat the ranges below as orientation only.
                   </p>
                   <CostBreakdownCards cards={data.costCards} />
                 </section>
 
-                {data.antiScamTips ? (
-                  <section id="anti-scam" className="scroll-mt-24 mt-8 space-y-5">
+                <section id="home-internet" className="scroll-mt-24 mt-12 space-y-6">
+                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                    Home Internet vs Mobile Data
+                  </h2>
+                  <p className="text-slate-700 leading-relaxed">
+                    Mobile plans are ideal for a Dutch number, maps, messaging, and moderate browsing. Once you have a stable address, compare fixed-line broadband (fiber, cable, or DSL) for work video calls, large downloads, and multiple devices. ACM publishes consumer information on telecom markets in the Netherlands.
+                  </p>
+                </section>
+
+                {data.whoNeedsExtraHelp?.length ? (
+                  <section id="who-needs-help" className="scroll-mt-24 mt-12 space-y-6">
                     <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                      {data.antiScamTips.heading}
+                      When to Look Twice at Your Plan
                     </h2>
-                    <SafetyTipsBlock
-                      heading="Practical steps"
-                      paragraphs={data.antiScamTips.paragraphs}
-                      points={data.antiScamTips.points}
-                    />
+                    <WhoNeedsHelpCards cards={data.whoNeedsExtraHelp} />
                   </section>
                 ) : null}
 
-                <section id="scenarios" className="scroll-mt-24 mt-8 space-y-5">
+                <section id="scenarios" className="scroll-mt-24 mt-12 space-y-6">
                   <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    Common Expat Housing Search Scenarios
+                    Common Expat Mobile Scenarios
                   </h2>
                   <ScenarioCards scenarios={data.scenarios} />
                 </section>
 
                 <RelatedGuidesSection
                   id="related-guides"
-                  title="Related Guides Before Choosing a Housing Platform"
+                  title="Related guides and tools"
                   blocks={relatedBlocks}
-                  className="mt-8 space-y-5"
                 />
 
                 {data.relatedCategories?.length ? (
-                  <section className="scroll-mt-24 mt-8 space-y-4">
+                  <section className="scroll-mt-24 mt-12 space-y-4">
                     <h3 className="text-lg font-semibold text-slate-900">Related service categories</h3>
                     <ul className="flex flex-wrap gap-2">
                       {data.relatedCategories.map((c) => (
@@ -270,28 +244,31 @@ export default function HousingPlatformsCategoryPage() {
                   </section>
                 ) : null}
 
-                <section id="tools" className="scroll-mt-24 mt-8 space-y-5">
+                <section id="tools" className="scroll-mt-24 mt-12 space-y-6">
                   <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    Useful Tools Before Choosing a Housing Platform
+                    Useful Tools
                   </h2>
+                  <p className="text-slate-700 leading-relaxed">
+                    Plan arrival tasks—including mobile connectivity—alongside banking, insurance, and registration.
+                  </p>
                   <ToolCards tools={toolCards} />
                 </section>
 
-                <section id="faq" className="scroll-mt-24 mt-8 space-y-5">
+                <section id="faq" className="scroll-mt-24 mt-12 space-y-6">
                   <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    Frequently Asked Questions About Housing Platforms in the Netherlands
+                    Frequently Asked Questions
                   </h2>
                   <Accordion items={faqAccordionItems} allowMultiple={false} className="max-w-3xl" />
                 </section>
 
-                <section id="official-sources" className="scroll-mt-24 mt-8 space-y-5">
+                <section id="official-sources" className="scroll-mt-24 mt-12 space-y-6">
                   <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    Official Sources and Trusted References
+                    Official Sources and Useful References
                   </h2>
                   <OfficialSourcesList sources={officialSources} />
                 </section>
 
-                <section className="scroll-mt-24 mt-8 space-y-5">
+                <section className="scroll-mt-24 mt-12 space-y-6">
                   <h2 className="text-xl font-semibold text-slate-900">Editorial disclosure</h2>
                   <EditorialDisclosureBlock disclosure={data.disclosure} />
                   <ServiceCategoryTrustLinks />

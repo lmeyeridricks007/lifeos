@@ -121,38 +121,6 @@
       },
       "services": [
         {
-          "name": "bunq",
-          "description": "Digital bank popular with internationals and expats in the Netherlands.",
-          "url": "https://www.bunq.com/",
-          "indicativeCost": "From around €3.99/month, varies by plan",
-          "reason": "Expat-friendly, fast setup",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
-        },
-        {
-          "name": "Wise",
-          "description": "Multi-currency account and international transfers for early setup and salary movement.",
-          "url": "https://wise.com/",
-          "indicativeCost": "Transfer fees vary by route",
-          "reason": "International transfers, multi-currency",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
-        },
-        {
-          "name": "HousingAnywhere",
-          "description": "Temporary and mid-term rentals often used by internationals while settling in.",
-          "url": "https://housinganywhere.com/",
-          "indicativeCost": "Rent varies by city and listing",
-          "reason": "Temporary housing, expat rentals",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
-        },
-        {
-          "name": "Simyo",
-          "description": "Simple Dutch SIM-only mobile plans for early connectivity.",
-          "url": "https://www.simyo.nl/",
-          "indicativeCost": "SIM-only plans from roughly €5–€15/month depending on bundle",
-          "reason": "Mobile, no-contract options",
-          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
-        },
-        {
           "name": "Independer",
           "description": "Compare Dutch health insurance options once you are ready to evaluate providers.",
           "url": "https://www.independer.nl/",
@@ -182,36 +150,12 @@
       ],
       "services": [
         {
-          "name": "ABN AMRO",
-          "description": "Major Dutch bank with expat-oriented information and broader traditional banking services.",
-          "url": "https://www.abnamro.nl/",
-          "indicativeCost": "Account pricing varies by package",
-          "reason": "Established bank, expat support",
-          "logo": { "src": "/images/affiliates/logos/abn-amro.svg", "alt": "ABN AMRO logo" }
-        },
-        {
           "name": "Independer",
           "description": "Useful when comparing health insurance once your registration and timing are clearer.",
           "url": "https://www.independer.nl/",
           "indicativeCost": "Insurance prices vary",
           "reason": "Insurance comparison",
           "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
-        },
-        {
-          "name": "HousingAnywhere",
-          "description": "Still useful if moving from temporary accommodation to a more stable rental.",
-          "url": "https://housinganywhere.com/",
-          "indicativeCost": "Varies by city and listing",
-          "reason": "Housing transition",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
-        },
-        {
-          "name": "Wise",
-          "description": "Helpful if you still manage cross-border payments while settling into Dutch banking.",
-          "url": "https://wise.com/",
-          "indicativeCost": "Fees vary",
-          "reason": "Salary transfers, multi-currency",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
         }
       ]
     },
@@ -234,44 +178,12 @@
       ],
       "services": [
         {
-          "name": "bunq",
-          "description": "Digital bank popular with internationals; useful for stable daily banking.",
-          "url": "https://www.bunq.com/",
-          "indicativeCost": "From around €3.99/month, varies by plan",
-          "reason": "Expat-friendly banking",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
-        },
-        {
-          "name": "ABN AMRO",
-          "description": "Major Dutch bank for longer-term banking and salary.",
-          "url": "https://www.abnamro.nl/",
-          "indicativeCost": "Account pricing varies by package",
-          "reason": "Established bank",
-          "logo": { "src": "/images/affiliates/logos/abn-amro.svg", "alt": "ABN AMRO logo" }
-        },
-        {
-          "name": "Wise",
-          "description": "Multi-currency and international transfers when needed.",
-          "url": "https://wise.com/",
-          "indicativeCost": "Fees vary",
-          "reason": "Multi-currency",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
-        },
-        {
           "name": "Independer",
           "description": "Compare and review health insurance as you settle.",
           "url": "https://www.independer.nl/",
           "indicativeCost": "Insurance prices vary",
           "reason": "Insurance comparison",
           "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
-        },
-        {
-          "name": "HousingAnywhere",
-          "description": "If you are still in temporary housing and looking for a next step.",
-          "url": "https://housinganywhere.com/",
-          "indicativeCost": "Varies by city and listing",
-          "reason": "Temporary housing",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
         }
       ]
     },

@@ -207,15 +207,6 @@ export function runPlanEngine(answers: VisaApplicationPlanAnswers): VisaPlanResu
     RECOMMENDED_GUIDES_BY_ROUTE[answers.primaryRoute] ?? RECOMMENDED_GUIDES_BY_ROUTE["not-sure"];
   const recommendedTools = RECOMMENDED_TOOLS.map((t) => ({ label: t.label, href: t.href }));
   const routeGuideHref = ROUTE_GUIDE_HREFS[answers.primaryRoute] ?? ROUTE_GUIDE_HREFS["not-sure"];
-  const recommendedServices = [
-    { label: "Wise", useFor: "Moving money / international transfers", href: "https://wise.com" },
-    { label: "bunq", useFor: "Dutch banking after arrival", href: "https://www.bunq.com" },
-    { label: "HousingAnywhere", useFor: "Temporary housing", href: "https://www.housinganywhere.com" },
-    { label: "Simyo", useFor: "Mobile setup", href: "https://www.simyo.nl" },
-    { label: "Independer", useFor: "Insurance comparison", href: "https://www.independer.nl" },
-    { label: "Everaert Immigration Lawyers", useFor: "Complex route or timing questions", href: "https://www.everaert.nl/" },
-    { label: "ACCESS NL", useFor: "Expat support and information", href: "https://www.access-nl.org/" },
-  ];
 
   const nextBestActions = [
     ...NEXT_BEST_ACTION_TOOLS.map((t) => ({ label: t.label, href: t.href })),
@@ -234,7 +225,6 @@ export function runPlanEngine(answers: VisaApplicationPlanAnswers): VisaPlanResu
     riskFlags: getRiskFlagsById(selectRiskFlagIds(answers)),
     recommendedGuides,
     recommendedTools,
-    recommendedServices,
     nextBestActions,
   };
 }

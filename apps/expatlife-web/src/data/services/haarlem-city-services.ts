@@ -15,7 +15,10 @@ export const haarlemAmsterdamAreaPartnerCards: CityServiceCard[] = [
       "Appears on the I amsterdam partner list under relocation services. If you are comparing providers, check what they cover for your municipality, timelines, and fees on their site.",
     bestFor: "Relocation orientation (verify scope)",
     url: "https://www.iamsterdam.com/en/live-work-study/in-amsterdam/partner-list/all/partners/expat2holland",
-    logo: { src: "https://logo.clearbit.com/expat2holland.com", alt: "Expat2Holland" },
+    logo: {
+      src: "https://www.google.com/s2/favicons?domain=www.expat2holland.com&sz=128",
+      alt: "Expat2Holland",
+    },
   },
   {
     id: "jimble-partner",

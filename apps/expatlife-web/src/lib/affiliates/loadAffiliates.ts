@@ -5,9 +5,55 @@
 
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import path from "node:path";
+import type { GuideSectionServiceResolved } from "@/src/lib/guides/types";
+import { getRecommendedGuideServicesFromRegistry } from "@/src/lib/guides/registryRecommendedServices";
 import type { AffiliateProvider, AffiliateCategory, AffiliatePlacement } from "./types";
 
 const CONTENT_ROOT = path.join(process.cwd(), "src", "content", "affiliates");
+
+function stableRegistryProviderId(url: string, index: number): string {
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, "").replace(/\./g, "-");
+    return `registry-${host}-${index}`;
+  } catch {
+    return `registry-slot-${index}`;
+  }
+}
+
+/** Map registry slice row to affiliate card shape (pillar placements, tools). */
+function registryGuideServiceToAffiliateProvider(
+  resolved: GuideSectionServiceResolved,
+  id: string,
+  categoryIds: string[]
+): AffiliateProvider {
+  const hasLogo = Boolean(resolved.logo?.src?.trim());
+  return {
+    id,
+    name: resolved.name,
+    tagline: resolved.description,
+    categoryIds,
+    countries: { destination: ["netherlands"], origin: ["*"] },
+    badges: [],
+    highlights: [],
+    cta: {
+      label: `View ${resolved.name}`,
+      href: resolved.url,
+      isAffiliate: true,
+    },
+    disclosure: "Third-party service; confirm pricing and terms on the provider site.",
+    logo: hasLogo
+      ? { src: resolved.logo!.src, alt: resolved.logo!.alt || `${resolved.name} logo` }
+      : { src: "", alt: resolved.name },
+  };
+}
+
+function categoryIdsForRegistryCategories(categories: readonly string[]): string[] {
+  if (categories.includes("housing-platforms")) return ["housing"];
+  if (categories.includes("banks")) return ["banking"];
+  if (categories.includes("mobile-connectivity")) return ["mobile"];
+  if (categories.includes("health-insurance")) return ["insurance"];
+  return ["services"];
+}
 
 function loadJson<T>(filePath: string): T {
   const raw = readFileSync(filePath, "utf8");
@@ -85,15 +131,31 @@ export function loadPlacementWithProviders(
   if (!placement) return null;
 
   const items: Array<{ provider: AffiliateProvider; reason: string; meta?: Record<string, string> }> = [];
-  for (const item of placement.items) {
-    const provider = loadProvider(item.providerId);
-    if (!provider) continue;
-    if (!providerMatchesCountry(provider, destinationCountry, originCountry)) continue;
-    items.push({
-      provider,
-      reason: item.reason,
-      meta: item.meta,
+
+  if (placement.registryProviders?.categories?.length) {
+    const rp = placement.registryProviders;
+    const resolved = getRecommendedGuideServicesFromRegistry(
+      rp.categories,
+      rp.limit ?? 3,
+      rp.strategy
+    );
+    const catIds = categoryIdsForRegistryCategories(rp.categories);
+    resolved.forEach((s, i) => {
+      const provider = registryGuideServiceToAffiliateProvider(s, stableRegistryProviderId(s.url, i), catIds);
+      if (!providerMatchesCountry(provider, destinationCountry, originCountry)) return;
+      items.push({ provider, reason: "", meta: undefined });
     });
+  } else {
+    for (const item of placement.items) {
+      const provider = loadProvider(item.providerId);
+      if (!provider) continue;
+      if (!providerMatchesCountry(provider, destinationCountry, originCountry)) continue;
+      items.push({
+        provider,
+        reason: item.reason,
+        meta: item.meta,
+      });
+    }
   }
 
   return { placement, items };

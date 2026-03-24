@@ -253,6 +253,16 @@ const nextConfig = {
       },
     ];
   },
+  images: {
+    // `domains` is read reliably on Next 13.5; `remotePatterns` pathname must match the URL path
+    // (e.g. `/s2/favicons` alone does not match pattern `/s2/favicons/**`).
+    domains: ["logo.clearbit.com", "logos-api.apistemic.com", "www.google.com"],
+    remotePatterns: [
+      { protocol: "https", hostname: "logo.clearbit.com", pathname: "/**" },
+      { protocol: "https", hostname: "logos-api.apistemic.com", pathname: "/**" },
+      { protocol: "https", hostname: "www.google.com", pathname: "/**" },
+    ],
+  },
   async headers() {
     if (process.env.NODE_ENV === "development") {
       return [

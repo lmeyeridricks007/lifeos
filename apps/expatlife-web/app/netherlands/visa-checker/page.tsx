@@ -16,6 +16,7 @@ import { CardLink } from "@/components/ui/card-link";
 import { PillarTOC } from "@/components/content/PillarTOC";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { getVisaRelocationMarketingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -137,21 +138,6 @@ const EXAMPLE_SCENARIOS = [
   },
 ];
 
-const RECOMMENDED_SERVICES: Array<{
-  name: string;
-  useFor: string;
-  url: string;
-  logo?: { src: string; alt: string };
-}> = [
-  { name: "Wise", useFor: "International transfers when moving money to the Netherlands.", url: "https://wise.com", logo: { src: "/images/affiliates/logos/wise.svg", alt: "Wise logo" } },
-  { name: "bunq", useFor: "Dutch banking after arrival; app-based onboarding.", url: "https://www.bunq.com", logo: { src: "/images/affiliates/logos/bunq.svg", alt: "bunq logo" } },
-  { name: "HousingAnywhere", useFor: "Temporary housing before securing a long-term rental.", url: "https://www.housinganywhere.com", logo: { src: "/images/affiliates/logos/housinganywhere.svg", alt: "HousingAnywhere logo" } },
-  { name: "Simyo", useFor: "Mobile setup and SIM after arrival.", url: "https://www.simyo.nl", logo: { src: "/images/affiliates/logos/simyo.svg", alt: "Simyo logo" } },
-  { name: "Independer", useFor: "Compare Dutch health and other insurance.", url: "https://www.independer.nl", logo: { src: "/images/affiliates/logos/independer.svg", alt: "Independer logo" } },
-  { name: "Everaert Immigration Lawyers", useFor: "Complex immigration and route comparison advice; tailored advice for work, DAFT, self-employed, and family routes.", url: "https://www.everaert.nl/" },
-  { name: "ACCESS NL", useFor: "Information and support for international residents in the Netherlands; expat support and referrals.", url: "https://www.access-nl.org/" },
-];
-
 const OFFICIAL_SOURCES = [
   { label: "IND – Residence permits overview", href: "https://ind.nl/en/residence-permits" },
   { label: "IND – Work permits", href: "https://ind.nl/en/residence-permits/work" },
@@ -181,6 +167,7 @@ export default async function VisaCheckerPage(props: PageProps) {
     offers: { price: "0", priceCurrency: "EUR" },
   });
   const faqJsonLd = buildFaqSchema(FAQ_ITEMS.map((q) => ({ question: q.question, answer: q.answer })));
+  const recommendedServicesCards = getVisaRelocationMarketingRecommendedCards();
 
   const intro = (
     <>
@@ -294,7 +281,7 @@ export default async function VisaCheckerPage(props: PageProps) {
         These services may help with different parts of the relocation process. Pricing and suitability vary by route and provider.
       </p>
       <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {RECOMMENDED_SERVICES.map((service) => {
+        {recommendedServicesCards.map((service) => {
           const initials = service.name
             .split(/[\s-]+/)
             .filter(Boolean)

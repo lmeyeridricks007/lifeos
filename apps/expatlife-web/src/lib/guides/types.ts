@@ -46,16 +46,36 @@ export type GuideSectionSummaryBox = {
   note?: string;
 };
 
-/** Section-specific service recommendation (e.g. banking, insurance by section). */
-export type GuideSectionService = {
+/** Pull top providers from `COMPANIES_REGISTRY` for this section (merged with optional manual `services`). */
+export type GuideRecommendedRegistryServices = {
+  categories: string[];
+  limit?: number;
+  strategy?: "sequential" | "round-robin";
+};
+
+/** Resolved shape for rendering (after optional registry lookup). */
+export type GuideSectionServiceResolved = {
   name: string;
   description: string;
   url: string;
   indicativeCost?: string;
   reason?: string;
-  /** Optional logo (e.g. from /images/affiliates/logos/). When set, shown instead of initials. */
   logo?: { src: string; alt: string };
 };
+
+/**
+ * Section-specific service recommendation.
+ * Use `registryRef` (e.g. `mobile-connectivity/simyo`) to pull name, URL, logo, and default copy from `companies-registry.ts`.
+ */
+export type GuideSectionService =
+  | {
+      registryRef: string;
+      /** Override registry `shortDescription` when the guide needs section-specific wording */
+      description?: string;
+      indicativeCost?: string;
+      reason?: string;
+    }
+  | GuideSectionServiceResolved;
 
 /** Bank comparison entry for a detailed comparison section (features, pros, cons, costs, link). */
 export type GuideBankComparison = {
@@ -153,6 +173,8 @@ export type GuideSection = {
   summaryBox?: GuideSectionSummaryBox;
   /** Optional section-specific service recommendations (curated list with links). */
   services?: GuideSectionService[];
+  /** Server-side: merged into `services` at load time from `COMPANIES_REGISTRY` (not kept on output). */
+  recommendedRegistryServices?: GuideRecommendedRegistryServices;
   /** When set, section is rendered as a 3-phase timeline (Before move / Arrival week / First 90 days). */
   timelineStages?: {
     beforeMove: string[];

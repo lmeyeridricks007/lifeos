@@ -223,16 +223,6 @@
       "links": [
         { "label": "Registering your address", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" }
-      ],
-      "services": [
-        {
-          "name": "HousingAnywhere",
-          "description": "Temporary housing platform often used by internationals before securing longer-term family accommodation.",
-          "url": "https://housinganywhere.com",
-          "indicativeCost": "Listing prices vary by city",
-          "reason": "Housing, temporary housing, families, expats",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
-        }
       ]
     },
     {
@@ -260,32 +250,6 @@
         { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" }
-      ],
-      "services": [
-        {
-          "name": "bunq",
-          "description": "Dutch app-first banking option often considered during the first weeks of local setup.",
-          "url": "https://www.bunq.com",
-          "indicativeCost": "Plan pricing varies",
-          "reason": "Dutch bank, expat-friendly, app-first",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
-        },
-        {
-          "name": "Wise",
-          "description": "Useful for international transfers, shared household setup costs, and multi-currency spending during relocation.",
-          "url": "https://wise.com",
-          "indicativeCost": "Fees vary by transfer and usage",
-          "reason": "Transfers, multi-currency, relocation costs",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
-        },
-        {
-          "name": "Simyo",
-          "description": "SIM-only mobile plans for connectivity during the first weeks after arrival.",
-          "url": "https://www.simyo.nl",
-          "indicativeCost": "Plan pricing varies",
-          "reason": "Mobile plan, connectivity",
-          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
-        }
       ]
     },
     {

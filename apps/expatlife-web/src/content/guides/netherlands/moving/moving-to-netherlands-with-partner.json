@@ -193,16 +193,6 @@
       "links": [
         { "label": "Registering your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" }
-      ],
-      "services": [
-        {
-          "name": "HousingAnywhere",
-          "description": "Temporary housing platform often used by internationals before securing long-term accommodation. Useful for couples during the first weeks.",
-          "url": "https://housinganywhere.com/",
-          "indicativeCost": "Listing prices vary by city",
-          "reason": "Temporary housing, registration planning, expats",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
-        }
       ]
     },
     {

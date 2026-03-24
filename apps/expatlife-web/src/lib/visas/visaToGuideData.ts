@@ -12,6 +12,7 @@ import type {
 } from "@/src/lib/guides/types";
 import type { GuideSectionService, GuideExampleScenario } from "@/src/lib/guides/types";
 import type { VisaPageData } from "@/src/content/visas/types";
+import { expandGuideDataWithRegistryRecommendations } from "@/src/lib/guides/registryRecommendedServices";
 
 const BASE = "/netherlands";
 const TOOLS = `${BASE}/moving/tools`;
@@ -337,14 +338,14 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
   const servicesSection: GuideSection = {
     id: "services",
     heading: "Recommended services for highly skilled migrants",
-    services: v.services.map((s) => ({
-      name: s.name,
-      description: s.description,
-      url: s.url,
-      indicativeCost: s.indicativeCost,
-      reason: s.reason,
-      logo: s.logo,
-    })),
+    body: [
+      "Your employer usually files the HSM application, but immigration lawyers and visa consultants can still help with complex cases, family permits, objections, and second opinions. Relocation agencies and relocation services can support housing, municipal registration, and practical settling-in.",
+    ],
+    recommendedRegistryServices: {
+      categories: ["immigration-lawyers", "visa-consultants", "relocation-agencies", "relocation-services"],
+      limit: 6,
+      strategy: "round-robin",
+    },
   };
 
   const toolCtas: GuideToolCta[] = (v.toolCtas ?? []).map((t) => ({
@@ -374,7 +375,7 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     servicesSection,
   ];
 
-  return {
+  return expandGuideDataWithRegistryRecommendations({
     slug: v.slug,
     path: v.path,
     title: v.title,
@@ -431,7 +432,7 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     faq: v.faq,
     disclosure:
       "This page is for planning and awareness only. It is not legal advice. Requirements, fees, and salary thresholds change. Always confirm with the IND, your employer, or a qualified adviser.",
-  };
+  });
 }
 
 /** Converts EU Blue Card VisaPageData to GuideData for the EU Blue Card pillar page. */
@@ -925,14 +926,20 @@ export function daftToGuideData(v: VisaPageData): GuideData {
   const servicesSection: GuideSection = {
     id: "services",
     heading: "Recommended services for DAFT movers",
-    services: v.services.map((s) => ({
-      name: s.name,
-      description: s.description,
-      url: s.url,
-      indicativeCost: s.indicativeCost,
-      reason: s.reason,
-      logo: s.logo,
-    })),
+    body: [
+      "DAFT sits in the Dutch self-employed residence framework: immigration lawyers and visa consultants often help with applications, business evidence, and family permits. Startup and entrepreneur advisors can complement KVK and accountant support. Relocation agencies and services can help with housing and arrival admin alongside your business setup.",
+    ],
+    recommendedRegistryServices: {
+      categories: [
+        "immigration-lawyers",
+        "visa-consultants",
+        "startup-visa-advisors",
+        "relocation-agencies",
+        "relocation-services",
+      ],
+      limit: 6,
+      strategy: "round-robin",
+    },
   };
 
   const toolCtas: GuideToolCta[] = (v.toolCtas ?? []).map((t) => ({
@@ -961,7 +968,7 @@ export function daftToGuideData(v: VisaPageData): GuideData {
     servicesSection,
   ];
 
-  return {
+  return expandGuideDataWithRegistryRecommendations({
     slug: v.slug,
     path: v.path,
     title: v.title,
@@ -1019,7 +1026,7 @@ export function daftToGuideData(v: VisaPageData): GuideData {
     faq: v.faq,
     disclosure:
       "This page is for planning and awareness only. It is not legal advice. Requirements and fees change. The DAFT route depends on US nationality and actual self-employed business setup. Always confirm with the IND, KVK, or a qualified adviser.",
-  };
+  });
 }
 
 const ORIENTATION_YEAR_IND_URL = "https://ind.nl/en/residence-permits/work/residence-permit-for-orientation-year";
@@ -1805,14 +1812,20 @@ export function selfEmployedToGuideData(v: VisaPageData): GuideData {
   const servicesSection: GuideSection = {
     id: "services",
     heading: "Recommended services for self-employed movers",
-    services: v.services.map((s) => ({
-      name: s.name,
-      description: s.description,
-      url: s.url,
-      indicativeCost: s.indicativeCost,
-      reason: s.reason,
-      logo: s.logo,
-    })),
+    body: [
+      "The self-employed residence permit depends on business viability and correct filings. Immigration lawyers and visa consultants often help with applications, evidence, and family permits. Startup and entrepreneur advisors can sit alongside KVK and accountant support. Relocation agencies and services can help with housing and arrival admin while you set up your business.",
+    ],
+    recommendedRegistryServices: {
+      categories: [
+        "immigration-lawyers",
+        "visa-consultants",
+        "startup-visa-advisors",
+        "relocation-agencies",
+        "relocation-services",
+      ],
+      limit: 6,
+      strategy: "round-robin",
+    },
   };
 
   const relatedGuidesSection: GuideSection = {
@@ -1864,7 +1877,7 @@ export function selfEmployedToGuideData(v: VisaPageData): GuideData {
     officialSourcesSection,
   ];
 
-  return {
+  return expandGuideDataWithRegistryRecommendations({
     slug: v.slug,
     path: v.path,
     title: v.title,
@@ -1922,5 +1935,5 @@ export function selfEmployedToGuideData(v: VisaPageData): GuideData {
     faq: v.faq,
     disclosure:
       "This page is for planning and awareness only. It is not legal advice. Requirements and fees change. Full approval depends on the complete IND rules and business viability assessment. Always confirm with the IND, KVK, or a qualified adviser.",
-  };
+  });
 }

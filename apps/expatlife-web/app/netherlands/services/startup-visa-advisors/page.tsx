@@ -47,6 +47,7 @@ function mapStartupFacilitatorsToComparisonCards(): ServiceCategoryProviderCard[
     pros: f.pros,
     cons: f.cons,
     whoShouldChoose: f.whoShouldChoose,
+    priority: f.priority,
   }));
 }
 

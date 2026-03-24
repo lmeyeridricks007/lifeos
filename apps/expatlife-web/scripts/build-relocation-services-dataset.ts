@@ -12,8 +12,8 @@
  *   (see src/data/companies-registry.ts)
  * - To refresh: run scripts/fetch-relocation-agencies.ts first to update
  *   relocation-agencies.ts, then this list stays in sync.
- * - To add new providers: add records to additionalProviders in
- *   src/data/companies-registry.ts (relocationServicesAdditionalProviders), with sourceEcosystems,
+ * - To add new providers: add records to RELOCATION_SERVICES_ADDITIONAL_DATA in
+ *   src/data/companies-registry.ts, with sourceEcosystems,
  *   sourcePages, and lastChecked. Optionally run this script to validate or
  *   merge from external source JSON.
  *

@@ -143,76 +143,8 @@ export const SELF_EMPLOYED_VISA: VisaPageData = {
     { label: "KVK registration guidance", href: KVK_REG },
   ],
 
-  services: [
-    {
-      name: "Wise",
-      description: "International transfers and moving money.",
-      url: "https://wise.com/",
-      indicativeCost: "Variable",
-      reason: "International transfers",
-      logo: { src: "/images/affiliates/logos/wise.svg", alt: "Wise logo" },
-    },
-    {
-      name: "bunq",
-      description: "Dutch banking after arrival.",
-      url: "https://www.bunq.com/",
-      indicativeCost: "Monthly plans vary",
-      reason: "Banking",
-      logo: { src: "/images/affiliates/logos/bunq.svg", alt: "bunq logo" },
-    },
-    {
-      name: "HousingAnywhere",
-      description: "Temporary housing during arrival.",
-      url: "https://housinganywhere.com/",
-      indicativeCost: "City-dependent",
-      reason: "Temporary housing",
-      logo: { src: "/images/affiliates/logos/housinganywhere.svg", alt: "HousingAnywhere logo" },
-    },
-    {
-      name: "Simyo",
-      description: "Mobile setup.",
-      url: "https://www.simyo.nl/",
-      indicativeCost: "Low-cost monthly plans",
-      reason: "Mobile",
-      logo: { src: "/images/affiliates/logos/simyo.svg", alt: "Simyo logo" },
-    },
-    {
-      name: "Independer",
-      description: "Compare Dutch health insurance.",
-      url: "https://www.independer.nl/",
-      indicativeCost: "Comparison free; premiums vary",
-      reason: "Insurance comparison",
-      logo: { src: "/images/affiliates/logos/independer.svg", alt: "Independer logo" },
-    },
-    {
-      name: "KVK (Dutch Chamber of Commerce)",
-      description: "Business registration and support information.",
-      url: "https://www.kvk.nl/en/",
-      indicativeCost: "Registration fees apply",
-      reason: "Business registration support",
-    },
-    {
-      name: "Business.gov.nl",
-      description: "Official entrepreneur and business setup guidance.",
-      url: "https://business.gov.nl/",
-      indicativeCost: "Information free",
-      reason: "Official entrepreneur guidance",
-    },
-    {
-      name: "Blue Umbrella",
-      description: "Expat tax, payroll, and business setup for international entrepreneurs.",
-      url: "https://www.blueumbrella.nl/",
-      indicativeCost: "Consultation-based",
-      reason: "Tax, bookkeeping, admin",
-    },
-    {
-      name: "Everaert Immigration Lawyers",
-      description: "Complex immigration and self-employed route questions.",
-      url: "https://www.everaert.nl/",
-      indicativeCost: "Consultation-based",
-      reason: "Legal support for complex cases",
-    },
-  ],
+  /** Pillar “Services” block is filled from `COMPANIES_REGISTRY` in `selfEmployedToGuideData` (lawyers, consultants, startup advisors, relocation). */
+  services: [],
 
   faq: [
     {

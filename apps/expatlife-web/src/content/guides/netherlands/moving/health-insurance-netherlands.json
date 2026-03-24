@@ -426,38 +426,6 @@
           "indicativeCost": "Comparison platform; insurer premiums vary.",
           "reason": "Compare health insurers and get an overview of 2026 premiums.",
           "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
-        },
-        {
-          "name": "bunq",
-          "description": "Dutch digital bank with expat-friendly onboarding. Useful for paying health insurance premiums once you have a Dutch account.",
-          "url": "https://www.bunq.com/",
-          "indicativeCost": "Free and paid plans.",
-          "reason": "First payments and direct debits for insurance.",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
-        },
-        {
-          "name": "Wise",
-          "description": "Multi-currency and international transfers. Useful for moving money to the Netherlands before or after arrival and funding your first insurance payments.",
-          "url": "https://wise.com/",
-          "indicativeCost": "Transfer fees vary.",
-          "reason": "International transfers and first-month budgeting.",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
-        },
-        {
-          "name": "Simyo",
-          "description": "Dutch SIM-only mobile provider. Useful once you need a local number for 2FA, banking, and correspondence with insurers.",
-          "url": "https://www.simyo.nl/",
-          "indicativeCost": "Budget monthly plans.",
-          "reason": "Local number for admin and insurer contact.",
-          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
-        },
-        {
-          "name": "HousingAnywhere",
-          "description": "Temporary and medium-term rentals for internationals. Relevant when you need an address for registration and insurance.",
-          "url": "https://housinganywhere.com/",
-          "indicativeCost": "Housing prices vary by city.",
-          "reason": "Address for municipality registration and BSN, then insurance.",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
         }
       ]
     },

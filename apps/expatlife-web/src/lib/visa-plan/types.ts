@@ -122,6 +122,5 @@ export interface VisaPlanResult {
   riskFlags: RiskFlag[];
   recommendedGuides: Array<{ label: string; href: string }>;
   recommendedTools: Array<{ label: string; href: string }>;
-  recommendedServices: Array<{ label: string; useFor: string; href: string }>;
   nextBestActions: Array<{ label: string; href?: string }>;
 }

@@ -69,6 +69,11 @@ export type ServiceCategoryProviderCard = {
   whoShouldChoose?: string;
   /** Optional: features or products offered (shown in compare section) */
   features?: string[];
+  /**
+   * Display / sort priority: lower = more important (1 = first in category list).
+   * Assigned from array order in companies-registry; categories with more than 10 providers use 11, 12, …
+   */
+  priority: number;
 }
 
 export type CostCard = {
@@ -252,6 +257,8 @@ export type RelocationProviderRecord = {
   isOfficial: boolean;
   sourcePages: string[];
   lastChecked: string;
+  /** Lower = more important (1 = first in this category list). Set from array order in companies-registry. */
+  priority: number;
 };
 
 /** Metadata for the relocation provider directory. */
@@ -284,6 +291,8 @@ export type StartupFacilitatorRecord = {
   cons?: string[];
   /** Optional: who should choose this facilitator. */
   whoShouldChoose?: string;
+  /** Lower = more important (1 = first in this category list). Set from array order in companies-registry. */
+  priority: number;
 };
 
 /** Metadata for the startup facilitator directory. */
@@ -315,6 +324,8 @@ export type HousingPlatformRecord = {
   whoShouldChoose?: string;
   /** Optional: explicit logo URL (local path or favicon). Use when domain-based logo APIs return wrong images. */
   logoUrl?: string;
+  /** Lower = more important (1 = first in this category list). Set from array order in companies-registry. */
+  priority: number;
 };
 
 /** Metadata for the housing platform directory. */
@@ -345,6 +356,8 @@ export type RentalAgencyRecord = {
   cons?: string[];
   /** Optional: one-line summary of who should choose this agency */
   whoShouldChoose?: string;
+  /** Lower = more important (1 = first in this category list). Set from array order in companies-registry. */
+  priority: number;
 };
 
 /** Metadata for the rental agency directory. */

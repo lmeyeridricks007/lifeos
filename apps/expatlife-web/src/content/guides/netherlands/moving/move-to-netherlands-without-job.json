@@ -148,25 +148,7 @@
           ["Transport / phone / basics", "~€80–€250 / month", "Depends on usage"],
           ["Emergency buffer", "€3,000–€10,000+", "Strongly recommended if moving without work income"]
         ]
-      },
-      "services": [
-        {
-          "name": "Wise",
-          "description": "Multi-currency account and international transfers useful for holding funds and early spending before full local banking is arranged.",
-          "url": "https://wise.com/",
-          "indicativeCost": "Fees vary by currency route and usage.",
-          "reason": "Temporary money setup before local income",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
-        },
-        {
-          "name": "bunq",
-          "description": "App-first Dutch banking option often considered by internationals during early setup.",
-          "url": "https://www.bunq.com/",
-          "indicativeCost": "Plan pricing varies by package.",
-          "reason": "Expat-friendly banking context",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
-        }
-      ]
+      }
     },
     {
       "id": "proof-of-funds",
@@ -303,14 +285,6 @@
           "indicativeCost": "Comparison platform; insurance prices vary.",
           "reason": "Compare health insurance after arrival",
           "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
-        },
-        {
-          "name": "Simyo",
-          "description": "SIM-only mobile option useful once people begin setting up everyday life after arrival.",
-          "url": "https://www.simyo.nl/",
-          "indicativeCost": "Plan pricing varies.",
-          "reason": "Mobile connectivity, first month setup",
-          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
         }
       ]
     },

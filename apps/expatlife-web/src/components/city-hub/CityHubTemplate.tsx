@@ -24,6 +24,7 @@ import { CityStatsCards } from "./CityStatsCards";
 import { CityComparisonTable } from "./CityComparisonTable";
 import { CityExpatsProfile } from "./CityExpatsProfile";
 import { cn } from "@/lib/cn";
+import { withCityHubRegistryCards } from "@/src/lib/city-hub/registryCityServiceCards";
 
 const pageContainerClass = "w-full max-w-screen-2xl";
 
@@ -76,9 +77,12 @@ function getRegistrationSectionId(tocItems: { id: string }[]): string {
 }
 
 export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
-  const bankingServices = data.banking.services?.length
-    ? data.banking.services
+  const hub = withCityHubRegistryCards(data);
+  const bankingServices = hub.banking.services?.length
+    ? hub.banking.services
     : allServices?.filter((s) => s.category === "Banking / money") ?? [];
+  const healthInsuranceServices = hub.healthInsurance.services ?? [];
+  const housingPlatformServices = hub.housingCosts.services ?? [];
   const servicesForExpats = allServices ?? [];
   const registrationSectionId = getRegistrationSectionId(data.tocItems);
   const isAltLayout = data.hubLayout === "amsterdam-area-alternative";
@@ -309,6 +313,11 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                     ))}
                   </ul>
                 ) : null}
+                {healthInsuranceServices.length ? (
+                  <div className="mt-6">
+                    <ServiceCards services={healthInsuranceServices} byCategory={false} />
+                  </div>
+                ) : null}
                 <p>
                   <Link
                     href={data.healthInsurance.internalLink.href}
@@ -371,6 +380,11 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                   <InfoBox variant="warn" title="Watch out">
                     <p>{data.housingCosts.warning}</p>
                   </InfoBox>
+                ) : null}
+                {housingPlatformServices.length ? (
+                  <div className="mt-6">
+                    <ServiceCards services={housingPlatformServices} byCategory={false} />
+                  </div>
                 ) : null}
                 {data.housingCosts.internalLinks?.length ? (
                   <div className="flex flex-wrap gap-x-4 gap-y-2">

@@ -21,10 +21,10 @@ import {
   ROUTE_COMPARISON_ENTRIES,
   COMPARISON_EXAMPLE_SCENARIOS,
   COMPARISON_RELATED_TOOLS,
-  COMPARISON_SERVICES,
   COMPARISON_OFFICIAL_SOURCES,
   COMPARISON_SITUATION_CARDS,
 } from "@/src/data/visa-comparison";
+import { getVisaRelocationMarketingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 import type { SituationCard } from "@/src/data/visa-comparison/situation-cards";
 import { PillarTOC } from "@/components/content/PillarTOC";
 import { RecommendedImmigrationLawyersSection } from "@/src/components/tools/shared/RecommendedImmigrationLawyersSection";
@@ -175,6 +175,7 @@ const RELATED_GUIDES = [
 ];
 
 export default function CompareVisasPage() {
+  const comparisonRecommendedServices = getVisaRelocationMarketingRecommendedCards();
   const breadcrumbItems = [
     { name: "Home", url: "/" },
     { name: "Netherlands", url: `${BASE}/` },
@@ -482,7 +483,7 @@ export default function CompareVisasPage() {
         These services may help at different stages of your move depending on the visa route you choose.
       </p>
       <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {COMPARISON_SERVICES.map((service) => {
+        {comparisonRecommendedServices.map((service) => {
           const initials = service.name
             .split(/[\s-]+/)
             .filter(Boolean)

@@ -29,6 +29,7 @@ import { headers } from "next/headers";
 import { DEV_SIMULATE_LIVE_HEADER } from "@/src/lib/publishing/devSimulateLive";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { getRelocationCostMarketingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 
 export const revalidate = CONTENT_REVALIDATE;
 /** Country list uses publish dates; avoid freezing the browse grid at build time. */
@@ -64,15 +65,6 @@ const TOOL_CTAS = [
   { label: "Use Relocation Cost Estimator", href: "/netherlands/moving/tools/relocation-cost-estimator/" },
   { label: "Generate a Moving Checklist", href: "/netherlands/moving/tools/moving-checklist/" },
   { label: "Plan Your First 90 Days", href: "/netherlands/moving/tools/first-90-days/" },
-];
-
-const RECOMMENDED_SERVICES = [
-  { name: "Wise", useFor: "Send money internationally when moving funds to the Netherlands.", priceRange: "Typical percentage-based transfer fee; varies by route and currency.", url: "https://wise.com", logo: "/images/affiliates/logos/wise.svg" },
-  { name: "bunq", useFor: "Expat-friendly Dutch banking with app-based onboarding.", priceRange: "Plans vary by tier.", url: "https://www.bunq.com", logo: "/images/affiliates/logos/bunq.svg" },
-  { name: "HousingAnywhere", useFor: "Temporary housing platform often used before securing long-term rentals.", priceRange: "Listing prices vary by city and stay length.", url: "https://www.housinganywhere.com", logo: "/images/affiliates/logos/housinganywhere.svg" },
-  { name: "Simyo", useFor: "Dutch SIM and mobile plan setup after arrival.", priceRange: "Monthly plans vary.", url: "https://www.simyo.nl", logo: "/images/affiliates/logos/simyo.svg" },
-  { name: "Independer", useFor: "Compare Dutch health and other insurance categories after arrival.", priceRange: "Comparison free; premiums vary.", url: "https://www.independer.nl", logo: "/images/affiliates/logos/independer.svg" },
-  { name: "Crown Relocations", useFor: "International moving and shipping support for larger relocations.", priceRange: "Quote-based depending on shipment scope and route.", url: "https://www.crownrelo.com", logo: "/logos/crownrelo.svg" },
 ];
 
 function toFlagEmoji(code: string): string {
@@ -112,6 +104,7 @@ export default async function MovingToNetherlandsFromIndexPage() {
   };
 
   const popularRoutePicks = getFeaturedOriginCountryHubCards(POPULAR_ROUTE_CARD_LIMIT, hubVisibility);
+  const recommendedServiceCards = getRelocationCostMarketingRecommendedCards();
   const browseEntries = getAllOriginCountryGuideEntries(hubVisibility);
   const allPublishedForSchema = simulateProductionHub
     ? getPublishedOriginCountryGuides()
@@ -343,7 +336,7 @@ export default async function MovingToNetherlandsFromIndexPage() {
                 className="!pt-10 !pb-6"
               >
                 <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                  {RECOMMENDED_SERVICES.map((service) => (
+                  {recommendedServiceCards.map((service) => (
                     <a
                       key={service.name}
                       href={service.url}
@@ -353,13 +346,19 @@ export default async function MovingToNetherlandsFromIndexPage() {
                     >
                       <div className="flex items-start gap-4">
                         <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-slate-50 p-2 group-hover:bg-brand-50">
-                          <Image
-                            src={service.logo}
-                            alt=""
-                            width={48}
-                            height={48}
-                            className="h-8 w-auto object-contain"
-                          />
+                          {service.logo ? (
+                            <Image
+                              src={service.logo.src}
+                              alt={service.logo.alt}
+                              width={48}
+                              height={48}
+                              className="h-8 w-auto object-contain"
+                            />
+                          ) : (
+                            <span className="text-xs font-semibold text-slate-600" aria-hidden>
+                              {service.name.slice(0, 2).toUpperCase()}
+                            </span>
+                          )}
                         </div>
                         <div className="min-w-0 flex-1">
                           <p className="font-semibold text-slate-900 group-hover:text-brand-700">{service.name}</p>
@@ -367,7 +366,7 @@ export default async function MovingToNetherlandsFromIndexPage() {
                         </div>
                       </div>
                       <p className="mt-3 border-t border-slate-100 pt-3 text-sm font-medium text-slate-800">
-                        {service.priceRange}
+                        {service.priceRange ?? "Check provider for current pricing."}
                       </p>
                     </a>
                   ))}

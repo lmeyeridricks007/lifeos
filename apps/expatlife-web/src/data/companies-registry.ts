@@ -20,6 +20,7 @@ export type CompanyRegistryCategory =
   | "international-health-insurance"
   | "immigration-lawyers"
   | "visa-consultants"
+  | "mobile-connectivity"
   | "relocation-agencies"
   | "relocation-services"
   | "housing-platforms"
@@ -64,6 +65,7 @@ const INSURANCE_BASE = "/netherlands/services/insurance";
 const IMMIGRATION_LAWYERS_BASE = "/netherlands/services/immigration-lawyers";
 const VISA_CONSULTANTS_BASE = "/netherlands/services/visa-consultants";
 const HOUSING_RENTAL_LAST_CHECKED = "2026-03-11";
+const MOBILE_CONNECTIVITY_LAST_CHECKED = "2026-03-24";
 const STARTUP_DATA_LAST_CHECKED = "2026-03-06";
 const RVO_SOURCE = "https://english.rvo.nl/topics/residence-permit-foreign-startups/facilitator-startups";
 
@@ -85,6 +87,10 @@ const IMMIGRATION_SURFACES = ["ProviderCardsGrid", "ProviderComparisonSection", 
 
 const VISA_PAGE = "app/netherlands/services/visa-consultants/page.tsx";
 const VISA_SURFACES = ["ProviderCardsGrid", "ProviderComparisonSection", "ServiceCategoryTemplate"] as const;
+
+const MOBILE_CONNECTIVITY_BASE = "/netherlands/services/mobile-connectivity";
+const MOBILE_CONNECTIVITY_PAGE = "app/netherlands/services/mobile-connectivity/page.tsx";
+const MOBILE_CONNECTIVITY_SURFACES = ["ProviderCardsGrid", "ProviderComparisonSection", "ServiceCategoryTemplate"] as const;
 
 const RELOCATION_AGENCIES_PAGE = "app/netherlands/services/relocation-agencies/page.tsx";
 const RELOCATION_AGENCIES_SURFACES = [
@@ -110,6 +116,14 @@ const RENTAL_SURFACES = ["RelocationProviderDirectory", "ProviderComparisonSecti
 
 const STARTUP_PAGE = "app/netherlands/services/startup-visa-advisors/page.tsx";
 const STARTUP_SURFACES = ["ServiceCategoryTemplate", "startup facilitator directory"] as const;
+
+/**
+ * Assign display priority from array order: 1 = highest (first item), then 2, 3, …
+ * (Upper bound is not capped at 10—use as relative order within the category.)
+ */
+export function attachSequentialPriority<T extends object>(items: readonly T[]): (T & { priority: number })[] {
+  return items.map((item, index) => ({ ...item, priority: index + 1 }));
+}
 
 function tagServiceCategory(
   category: CompanyRegistryCategory,
@@ -194,7 +208,11 @@ export const RELOCATION_AGENCIES_SOURCE_MODEL = "Trusted expat-centre / public-s
 export const RELOCATION_SERVICES_LAST_CHECKED = "2026-03-11";
 export const RELOCATION_SERVICES_SOURCE_MODEL = "Trusted expat-centre / public-support ecosystems";
 
-export const banksProviders: ServiceCategoryProviderCard[] = [
+const banksProvidersData = [
+
+
+
+
 
 
 
@@ -401,9 +419,19 @@ export const banksProviders: ServiceCategoryProviderCard[] = [
 
 
 
-];
 
-export const healthInsuranceProviders: ServiceCategoryProviderCard[] = [
+
+
+
+] as Omit<ServiceCategoryProviderCard, "priority">[];
+
+export const banksProviders: ServiceCategoryProviderCard[] = attachSequentialPriority(banksProvidersData);
+
+const healthInsuranceProvidersData = [
+
+
+
+
 
 
 
@@ -619,9 +647,20 @@ export const healthInsuranceProviders: ServiceCategoryProviderCard[] = [
 
 
 
-];
 
-export const immigrationLawyersProviders: ServiceCategoryProviderCard[] = [
+
+
+
+] as Omit<ServiceCategoryProviderCard, "priority">[];
+
+export const healthInsuranceProviders: ServiceCategoryProviderCard[] =
+  attachSequentialPriority(healthInsuranceProvidersData);
+
+const immigrationLawyersProvidersData = [
+
+
+
+
 
 
 
@@ -833,9 +872,20 @@ export const immigrationLawyersProviders: ServiceCategoryProviderCard[] = [
 
 
 
-];
 
-export const visaConsultantsProviders: ServiceCategoryProviderCard[] = [
+
+
+
+] as Omit<ServiceCategoryProviderCard, "priority">[];
+
+export const immigrationLawyersProviders: ServiceCategoryProviderCard[] =
+  attachSequentialPriority(immigrationLawyersProvidersData);
+
+const visaConsultantsProvidersData = [
+
+
+
+
 
 
 
@@ -1002,9 +1052,136 @@ export const visaConsultantsProviders: ServiceCategoryProviderCard[] = [
 
 
 
-];
 
-export const internationalHealthInsuranceProviders: ServiceCategoryProviderCard[] = [
+
+
+
+] as Omit<ServiceCategoryProviderCard, "priority">[];
+
+export const visaConsultantsProviders: ServiceCategoryProviderCard[] =
+  attachSequentialPriority(visaConsultantsProvidersData);
+
+const mobileConnectivityProvidersData = [
+
+
+
+
+  {
+    slug: "simyo",
+    name: "Simyo",
+    href: `${MOBILE_CONNECTIVITY_BASE}/`,
+    shortDescription:
+      "Dutch SIM-only mobile brand (KPN network). Often used for straightforward prepaid or monthly plans and quick local number setup.",
+    bestFor: "Simple SIM-only plans, local number for banking and 2FA, flexible data bundles",
+    priceNote: "Prepaid and monthly SIM-only; check current plans",
+    typicalCost: "~€7–25/mo depending on data bundle",
+    pros: ["SIM-only focus; often easy online signup", "English website available", "Useful for OTPs, DigiD, and day-to-day Dutch number"],
+    cons: ["Not a bank or utility—separate contracts for home internet", "Coverage and speeds depend on location like any MNO"],
+    whoShouldChoose: "New arrivals who want a Dutch mobile number quickly with minimal friction.",
+    englishSupportNote: "English website and help available",
+    isFeatured: true,
+    logo: { src: `${LOGOS}/simyo.svg`, alt: "Simyo" },
+    externalUrl: "https://www.simyo.nl/",
+    reviewComingSoon: true,
+    features: ["SIM-only and prepaid", "Data bundles", "EU roaming (per plan rules)", "eSIM where offered", "Manage account online"],
+  },
+  {
+    slug: "lebara",
+    name: "Lebara",
+    href: `${MOBILE_CONNECTIVITY_BASE}/`,
+    shortDescription:
+      "Mobile brand focused on internationals in the Netherlands. Prepaid and monthly options; useful when you want flexible plans and international calling bundles.",
+    bestFor: "Internationals, prepaid flexibility, international minutes or bundles",
+    priceNote: "Prepaid top-up or monthly plans; check current pricing",
+    typicalCost: "~€5–20/mo typical entry plans; varies by bundle",
+    pros: ["Positioned for internationals", "Prepaid and subscription options", "Often simple online ordering"],
+    cons: ["Home broadband is a different product category—compare fixed ISPs separately", "Plan details change; confirm roaming and fair-use rules"],
+    whoShouldChoose: "Expats comparing flexible mobile plans with international calling or data needs.",
+    englishSupportNote: "English website and support available",
+    isFeatured: true,
+    logo: { src: `${LOGOS}/lebara.svg`, alt: "Lebara" },
+    externalUrl: "https://www.lebara.nl/",
+    reviewComingSoon: true,
+    features: ["Prepaid and subscriptions", "Data and international bundles", "SIM delivery or pick-up options (check site)", "EU roaming per plan terms"],
+  },
+  {
+    slug: "kpn",
+    name: "KPN",
+    href: `${MOBILE_CONNECTIVITY_BASE}/`,
+    shortDescription:
+      "Major Dutch network operator. Consumer mobile, prepaid, and SIM-only under the KPN brand; wide coverage and retail stores across the country.",
+    bestFor: "Full-network coverage, in-store support, combined mobile and fibre from one provider",
+    priceNote: "SIM-only and bundles; check current plans and promotions",
+    typicalCost: "~€15–45/mo typical SIM-only range; varies by data",
+    pros: ["Large native network and retail presence", "English information on consumer site", "eSIM and physical SIM options"],
+    cons: ["Often priced above budget MVNOs", "Promotional pricing can be time-limited—read contract terms"],
+    whoShouldChoose: "Expats who want a household-name operator with strong nationwide coverage and shop support.",
+    englishSupportNote: "English pages available for consumer mobile",
+    isFeatured: false,
+    logo: {
+      src: "https://www.google.com/s2/favicons?domain=www.kpn.com&sz=128",
+      alt: "KPN",
+    },
+    externalUrl: "https://www.kpn.com/",
+    reviewComingSoon: true,
+    features: ["4G/5G mobile", "SIM-only and postpaid", "Prepaid options", "eSIM (check device)", "Bundles with fibre/TV"],
+  },
+  {
+    slug: "vodafone-netherlands",
+    name: "Vodafone Netherlands",
+    href: `${MOBILE_CONNECTIVITY_BASE}/`,
+    shortDescription:
+      "Large mobile network in the Netherlands. Red-by-Vodafone and Vodafone-branded plans; common choice for data-heavy use and EU roaming.",
+    bestFor: "Data-heavy users, EU travel, Red / Vodafone plan families",
+    priceNote: "Contract and SIM-only; compare Red vs standard Vodafone",
+    typicalCost: "~€12–40/mo entry to mid plans; unlimited options higher",
+    pros: ["Strong brand and app experience", "English website and support options", "Broad retail and partner sales"],
+    cons: ["Pricing mid-to-premium vs discounters", "Contract length and discounts—confirm cancellation rules"],
+    whoShouldChoose: "Expats who want a major international brand with English-first flows and strong data options.",
+    englishSupportNote: "English website and customer options",
+    isFeatured: false,
+    logo: {
+      src: "https://www.google.com/s2/favicons?domain=www.vodafone.nl&sz=128",
+      alt: "Vodafone Netherlands",
+    },
+    externalUrl: "https://www.vodafone.nl/",
+    reviewComingSoon: true,
+    features: ["4G/5G", "SIM-only and subscriptions", "Red by Vodafone (youth/budget sub-brand)", "EU roaming per plan", "eSIM on supported devices"],
+  },
+  {
+    slug: "odido",
+    name: "Odido",
+    href: `${MOBILE_CONNECTIVITY_BASE}/`,
+    shortDescription:
+      "Netherlands mobile network (successor to T-Mobile NL consumer brand). Nationwide coverage, competitive SIM-only and unlimited-style plans.",
+    bestFor: "SIM-only, unlimited data seekers, former T-Mobile customers migrating to Odido",
+    priceNote: "Check Odido.nl for current SIM-only and bundle pricing",
+    typicalCost: "~€10–35/mo typical SIM-only; unlimited plans higher",
+    pros: ["Strong network footprint in NL", "Modern positioning vs legacy incumbents", "English consumer website"],
+    cons: ["Brand change can confuse people searching “T-Mobile NL”", "Shop branding still transitioning in places"],
+    whoShouldChoose: "Expats who want a major Dutch network with simple online signup and strong data offers.",
+    englishSupportNote: "English website available",
+    isFeatured: false,
+    logo: {
+      src: "https://www.google.com/s2/favicons?domain=www.odido.nl&sz=128",
+      alt: "Odido",
+    },
+    externalUrl: "https://www.odido.nl/",
+    reviewComingSoon: true,
+    features: ["4G/5G", "SIM-only and plans", "Prepaid and postpaid", "EU roaming", "eSIM where supported"],
+  },
+
+
+] as Omit<ServiceCategoryProviderCard, "priority">[];
+
+export const mobileConnectivityProviders: ServiceCategoryProviderCard[] =
+  attachSequentialPriority(mobileConnectivityProvidersData);
+
+const internationalHealthInsuranceProvidersData = [
+
+
+
+
 
 
 
@@ -1101,9 +1278,20 @@ export const internationalHealthInsuranceProviders: ServiceCategoryProviderCard[
 
 
 
-];
 
-export const relocationAgenciesProviders: RelocationProviderRecord[] = [
+
+
+
+] as Omit<ServiceCategoryProviderCard, "priority">[];
+
+export const internationalHealthInsuranceProviders: ServiceCategoryProviderCard[] =
+  attachSequentialPriority(internationalHealthInsuranceProvidersData);
+
+const RELOCATION_AGENCIES_DATA = [
+
+
+
+
 
 
 
@@ -1111,7 +1299,8 @@ export const relocationAgenciesProviders: RelocationProviderRecord[] = [
     slug: "expat2holland",
     name: "Expat2Holland",
     providerUrl: "https://www.expat2holland.com",
-    logoUrl: "https://logo.clearbit.com/expat2holland.com",
+    logoUrl:
+      "https://www.google.com/s2/favicons?domain=www.expat2holland.com&sz=128",
     sourceEcosystems: ["IN Amsterdam"],
     cityRelevance: ["Amsterdam", "Amstelveen", "Region Amsterdam"],
     shortDescription:
@@ -1356,9 +1545,20 @@ export const relocationAgenciesProviders: RelocationProviderRecord[] = [
 
 
 
-];
 
-const relocationServicesAdditionalProviders: RelocationProviderRecord[] = [
+
+
+
+] as Omit<RelocationProviderRecord, "priority">[];
+
+export const relocationAgenciesProviders: RelocationProviderRecord[] =
+  attachSequentialPriority(RELOCATION_AGENCIES_DATA);
+
+const RELOCATION_SERVICES_ADDITIONAL_DATA = [
+
+
+
+
 
 
 
@@ -1478,14 +1678,22 @@ const relocationServicesAdditionalProviders: RelocationProviderRecord[] = [
 
 
 
-];
 
-export const relocationServicesProviders: RelocationProviderRecord[] = [
-  ...relocationAgenciesProviders,
-  ...relocationServicesAdditionalProviders,
-];
 
-export const housingPlatforms: HousingPlatformRecord[] = [
+
+
+] as Omit<RelocationProviderRecord, "priority">[];
+
+export const relocationServicesProviders: RelocationProviderRecord[] = attachSequentialPriority([
+  ...RELOCATION_AGENCIES_DATA,
+  ...RELOCATION_SERVICES_ADDITIONAL_DATA,
+]);
+
+const housingPlatformsData = [
+
+
+
+
 
 
 
@@ -1652,9 +1860,19 @@ export const housingPlatforms: HousingPlatformRecord[] = [
 
 
 
-];
 
-export const rentalAgencies: RentalAgencyRecord[] = [
+
+
+
+] as Omit<HousingPlatformRecord, "priority">[];
+
+export const housingPlatforms: HousingPlatformRecord[] = attachSequentialPriority(housingPlatformsData);
+
+const rentalAgenciesData = [
+
+
+
+
 
 
 
@@ -1852,9 +2070,19 @@ export const rentalAgencies: RentalAgencyRecord[] = [
 
 
 
-];
 
-export const startupFacilitators: StartupFacilitatorRecord[] = [
+
+
+
+] as Omit<RentalAgencyRecord, "priority">[];
+
+export const rentalAgencies: RentalAgencyRecord[] = attachSequentialPriority(rentalAgenciesData);
+
+const startupFacilitatorsData = [
+
+
+
+
 
 
 
@@ -1893,7 +2121,13 @@ export const startupFacilitators: StartupFacilitatorRecord[] = [
 
 
 
-];
+
+
+
+
+] as Omit<StartupFacilitatorRecord, "priority">[];
+
+export const startupFacilitators: StartupFacilitatorRecord[] = attachSequentialPriority(startupFacilitatorsData);
 
 export const relocationAgenciesMetadata = {
   slug: "relocation-agencies",
@@ -1941,6 +2175,16 @@ export const startupFacilitatorsMetadata = {
   sourceLabel: "RVO facilitator list",
 };
 
+export const mobileConnectivityMetadata = {
+  slug: "mobile-connectivity",
+  parent: "services",
+  country: "netherlands",
+  sourceModel:
+    "Editorial shortlist: MVNOs (Simyo, Lebara) plus major Dutch operators (KPN, Vodafone NL, Odido)",
+  totalRecords: mobileConnectivityProviders.length,
+  lastChecked: MOBILE_CONNECTIVITY_LAST_CHECKED,
+};
+
 /** Every commercial / partner row with placement metadata (search / docs / tooling). */
 export const COMPANIES_REGISTRY: CompanyRegistryRow[] = [
   ...tagServiceCategory("banks", BANKS_PAGE, BANKS_SURFACES, banksProviders),
@@ -1953,6 +2197,12 @@ export const COMPANIES_REGISTRY: CompanyRegistryRow[] = [
   ),
   ...tagServiceCategory("immigration-lawyers", IMMIGRATION_PAGE, IMMIGRATION_SURFACES, immigrationLawyersProviders),
   ...tagServiceCategory("visa-consultants", VISA_PAGE, VISA_SURFACES, visaConsultantsProviders),
+  ...tagServiceCategory(
+    "mobile-connectivity",
+    MOBILE_CONNECTIVITY_PAGE,
+    MOBILE_CONNECTIVITY_SURFACES,
+    mobileConnectivityProviders
+  ),
   ...tagRelocation(
     "relocation-agencies",
     RELOCATION_AGENCIES_PAGE,

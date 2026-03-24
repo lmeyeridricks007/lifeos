@@ -21,6 +21,7 @@ import { ContentTable, ContentTableRow, ContentTableCell } from "@/components/ui
 import { InfoBox } from "@/components/ui/info-box";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { getRelocationCostMarketingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -45,52 +46,8 @@ export const metadata: Metadata = {
   },
 };
 
-const RECOMMENDED_SERVICES = [
-  {
-    name: "Wise",
-    useFor: "Low-fee international transfers when moving funds to the Netherlands.",
-    priceRange: "Typical percentage-based transfer fee; varies by currency and route.",
-    url: "https://wise.com",
-    logo: "/images/affiliates/logos/wise.svg",
-  },
-  {
-    name: "bunq",
-    useFor: "Expat-friendly Dutch banking with app-based onboarding and paid plan options.",
-    priceRange: "Plans vary by tier.",
-    url: "https://www.bunq.com",
-    logo: "/images/affiliates/logos/bunq.svg",
-  },
-  {
-    name: "HousingAnywhere",
-    useFor: "Temporary housing platform often used during relocation before securing a long-term rental.",
-    priceRange: "Listing prices vary by city and stay length.",
-    url: "https://www.housinganywhere.com",
-    logo: "/images/affiliates/logos/housinganywhere.svg",
-  },
-  {
-    name: "Simyo",
-    useFor: "Dutch SIM and mobile plan option for early setup after arrival.",
-    priceRange: "Monthly plans vary.",
-    url: "https://www.simyo.nl",
-    logo: "/images/affiliates/logos/simyo.svg",
-  },
-  {
-    name: "Independer",
-    useFor: "Compare Dutch health and other insurance categories after arrival.",
-    priceRange: "Comparison free; premiums vary by profile and insurer.",
-    url: "https://www.independer.nl",
-    logo: "/images/affiliates/logos/independer.svg",
-  },
-  {
-    name: "Crown Relocations",
-    useFor: "International relocation and shipping support for moves involving household goods.",
-    priceRange: "Quote-based pricing depending on shipment scope and route.",
-    url: "https://www.crownrelo.com",
-    logo: "/logos/crownrelo.svg",
-  },
-];
-
 export default async function RelocationCostEstimatorPage() {
+  const recommendedServiceCards = getRelocationCostMarketingRecommendedCards();
   const meta = loadRelocationCostEstimatorMeta();
   const faq = loadRelocationCostEstimatorFaq();
 
@@ -444,7 +401,7 @@ export default async function RelocationCostEstimatorPage() {
               These services may help with relocation costs. Pricing notes are indicative for planning only—check providers directly for current rates.
             </p>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {RECOMMENDED_SERVICES.map((service) => (
+              {recommendedServiceCards.map((service) => (
                 <a
                   key={service.name}
                   href={service.url}
@@ -454,13 +411,19 @@ export default async function RelocationCostEstimatorPage() {
                 >
                   <div className="flex items-start gap-4">
                     <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-slate-50 p-2 group-hover:bg-brand-50">
-                      <Image
-                        src={service.logo}
-                        alt=""
-                        width={48}
-                        height={48}
-                        className="h-8 w-auto object-contain"
-                      />
+                      {service.logo ? (
+                        <Image
+                          src={service.logo.src}
+                          alt={service.logo.alt}
+                          width={48}
+                          height={48}
+                          className="h-8 w-auto object-contain"
+                        />
+                      ) : (
+                        <span className="text-xs font-semibold text-slate-600" aria-hidden>
+                          {service.name.slice(0, 2).toUpperCase()}
+                        </span>
+                      )}
                     </div>
                     <div className="min-w-0 flex-1">
                       <p className="font-semibold text-slate-900 group-hover:text-brand-700">{service.name}</p>
@@ -468,7 +431,7 @@ export default async function RelocationCostEstimatorPage() {
                     </div>
                   </div>
                   <p className="mt-3 border-t border-slate-100 pt-3 text-sm font-medium text-slate-800">
-                    {service.priceRange}
+                    {service.priceRange ?? "Check provider for current pricing."}
                   </p>
                 </a>
               ))}

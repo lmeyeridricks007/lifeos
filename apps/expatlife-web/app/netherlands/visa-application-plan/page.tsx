@@ -18,6 +18,7 @@ import {
 } from "@/src/lib/tools/shared/toolInternalLinks";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { getVisaRelocationMarketingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -133,63 +134,6 @@ const RELATED_TOOLS_FOR_PAGE = [
   { href: `${BASE}/moving/tools/arrival-planner/`, title: "Arrival Planner", description: "Plan your arrival." },
 ];
 
-const RECOMMENDED_SERVICES: Array<{
-  name: string;
-  useFor: string;
-  href: string;
-  logo?: { src: string; alt: string };
-  costEstimate: string;
-}> = [
-  {
-    name: "Wise",
-    useFor: "Moving money / international transfers",
-    href: "https://wise.com",
-    logo: { src: "/images/affiliates/logos/wise.svg", alt: "Wise logo" },
-    costEstimate: "Low fees; check wise.com for current rates.",
-  },
-  {
-    name: "bunq",
-    useFor: "Dutch banking after arrival",
-    href: "https://www.bunq.com",
-    logo: { src: "/images/affiliates/logos/bunq.svg", alt: "bunq logo" },
-    costEstimate: "Free and paid plans; check bunq.com for current tiers.",
-  },
-  {
-    name: "HousingAnywhere",
-    useFor: "Temporary housing",
-    href: "https://www.housinganywhere.com",
-    logo: { src: "/images/affiliates/logos/housinganywhere.svg", alt: "HousingAnywhere logo" },
-    costEstimate: "Rent and service fee vary by listing.",
-  },
-  {
-    name: "Simyo",
-    useFor: "Mobile setup",
-    href: "https://www.simyo.nl",
-    logo: { src: "/images/affiliates/logos/simyo.svg", alt: "Simyo logo" },
-    costEstimate: "SIM and monthly plans from a few euros; check simyo.nl.",
-  },
-  {
-    name: "Independer",
-    useFor: "Insurance comparison",
-    href: "https://www.independer.nl",
-    logo: { src: "/images/affiliates/logos/independer.svg", alt: "Independer logo" },
-    costEstimate: "Comparison free; premiums depend on insurer.",
-  },
-  {
-    name: "Everaert Immigration Lawyers",
-    useFor: "Complex route or timing questions",
-    href: "https://www.everaert.nl/",
-    logo: { src: "/images/affiliates/logos/everaert.svg", alt: "Everaert Advocaten logo" },
-    costEstimate: "Consultation and support by quote; confirm with the firm.",
-  },
-  {
-    name: "ACCESS NL",
-    useFor: "Expat support and information",
-    href: "https://www.access-nl.org/",
-    costEstimate: "Membership and services may have a fee; check access-nl.org.",
-  },
-];
-
 const OFFICIAL_SOURCES = [
   { label: "IND – Residence permits overview", href: "https://ind.nl/en/residence-permits" },
   { label: "IND – Work permits", href: "https://ind.nl/en/residence-permits/work" },
@@ -210,6 +154,7 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
   const scenarioId = typeof searchParams.scenario === "string" ? searchParams.scenario : undefined;
   const scenario = scenarioId ? EXAMPLE_SCENARIOS.find((s) => s.id === scenarioId) : undefined;
   const initialPrefill = scenario?.prefilledAnswers;
+  const recommendedServiceCards = getVisaRelocationMarketingRecommendedCards();
 
   const breadcrumbItems = [
     { name: "Home", url: "/" },
@@ -385,7 +330,7 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
               These services may help with different parts of your visa and relocation plan. Suitability and pricing vary by provider and route.
             </p>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {RECOMMENDED_SERVICES.map((service) => {
+              {recommendedServiceCards.map((service) => {
                 const initials = service.name
                   .split(/[\s-]+/)
                   .filter(Boolean)
@@ -396,7 +341,7 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
                 return (
                   <a
                     key={service.name}
-                    href={service.href}
+                    href={service.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex flex-col rounded-xl border-2 border-slate-200 bg-white p-5 shadow-sm transition hover:border-brand-300 hover:shadow-md"
@@ -426,7 +371,7 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
                       </div>
                     </div>
                     <p className="mt-3 border-t border-slate-100 pt-3 text-xs font-medium text-slate-700">
-                      {service.costEstimate}
+                      {service.priceRange ?? "Check provider for current pricing."}
                     </p>
                     <span className="mt-2 inline-block text-xs font-medium text-brand-600 group-hover:text-brand-700">Visit site →</span>
                   </a>

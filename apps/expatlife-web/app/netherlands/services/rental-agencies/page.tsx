@@ -29,6 +29,7 @@ import type { CityToolCard } from "@/src/lib/city-hub/types";
 import type { CityOfficialSource } from "@/src/lib/city-hub/types";
 import type { ServiceCategoryProviderCard } from "@/src/lib/service-category/types";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { googleFaviconUrl } from "@/src/lib/provider-logo-url";
 
 const baseUrl = getSiteOrigin();
 const data = rentalAgenciesCategoryPage;
@@ -42,7 +43,7 @@ function mapRentalAgenciesToComparisonCards(): ServiceCategoryProviderCard[] {
       try {
         const hostname = new URL(urlForLogo).hostname;
         if (p.websiteUrl) {
-          logo = { src: `https://logo.clearbit.com/${hostname}`, alt: p.name };
+          logo = { src: googleFaviconUrl(hostname), alt: p.name };
         }
       } catch {
         logo = undefined;
@@ -62,6 +63,7 @@ function mapRentalAgenciesToComparisonCards(): ServiceCategoryProviderCard[] {
       pros: p.pros,
       cons: p.cons,
       whoShouldChoose: p.whoShouldChoose,
+      priority: p.priority,
     };
   });
 }

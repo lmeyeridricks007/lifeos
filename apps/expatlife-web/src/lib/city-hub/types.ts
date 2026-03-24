@@ -211,6 +211,11 @@ export type CityHubPageData = {
     body: string[];
     advice: string[];
     internalLink: { label: string; href: string };
+    /**
+     * Optional provider cards. Omit on city data to use the default top 3 from `COMPANIES_REGISTRY`
+     * (`health-insurance`); `CityHubTemplate` merges via `withCityHubRegistryCards`. Pass `[]` to hide.
+     */
+    services?: CityServiceCard[];
   };
   /** Banking section */
   banking: {
@@ -228,6 +233,11 @@ export type CityHubPageData = {
     neighborhoodsNote?: string;
     warning?: string;
     internalLinks: Array<{ label: string; href: string }>;
+    /**
+     * Optional housing platform cards. Omit to use the default top 3 from `COMPANIES_REGISTRY`
+     * (`housing-platforms`). Pass `[]` to hide.
+     */
+    services?: CityServiceCard[];
   };
   /** Transport section */
   transport: {

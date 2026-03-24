@@ -127,33 +127,7 @@
         "type": "tip",
         "title": "Track what is still incomplete",
         "text": "Use the First 90 Days Planner to see what usually still needs follow-up after the first month."
-      },
-      "services": [
-        {
-          "name": "bunq",
-          "description": "Dutch digital bank popular with expats for quick onboarding and English-friendly setup.",
-          "url": "https://www.bunq.com/",
-          "indicativeCost": "Paid plans from about €3–€10+ per month, depending on plan.",
-          "reason": "Good for setting up a Dutch IBAN and managing recurring payments.",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
-        },
-        {
-          "name": "Wise",
-          "description": "Multi-currency account for international transfers and sending money between countries.",
-          "url": "https://wise.com/",
-          "indicativeCost": "Account is free to open; transfer fees vary by currency and amount.",
-          "reason": "Useful when income, savings, or ongoing expenses still span countries.",
-          "logo": { "src": "/images/affiliates/logos/wise.svg", "alt": "Wise logo" }
-        },
-        {
-          "name": "ABN AMRO",
-          "description": "Dutch bank with English-language support and expat-friendly onboarding in many cases.",
-          "url": "https://www.abnamro.nl/en/personal/specially-for/expats",
-          "indicativeCost": "Basic account generally around a few euros per month.",
-          "reason": "Useful for people who prefer a traditional bank setup.",
-          "logo": { "src": "/images/affiliates/logos/abn-amro.svg", "alt": "ABN AMRO logo" }
-        }
-      ]
+      }
     },
     {
       "id": "weeks-7-8",
@@ -177,28 +151,12 @@
       ],
       "services": [
         {
-          "name": "Simyo",
-          "description": "Flexible Dutch SIM-only mobile plans suitable for new arrivals.",
-          "url": "https://www.simyo.nl/",
-          "indicativeCost": "SIM-only plans often start from around €7–€20/month depending on data.",
-          "reason": "Useful in the second month once daily-life routines become more stable.",
-          "logo": { "src": "/images/affiliates/logos/simyo.svg", "alt": "Simyo logo" }
-        },
-        {
           "name": "Independer",
           "description": "Dutch comparison platform often used to compare health insurance and other household cover.",
           "url": "https://www.independer.nl/",
           "indicativeCost": "Free comparison service.",
           "reason": "Helpful for reviewing or comparing health insurance options once BSN and registration are done.",
           "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
-        },
-        {
-          "name": "bunq",
-          "description": "Dutch digital bank popular with expats for quick onboarding and recurring payments.",
-          "url": "https://www.bunq.com/",
-          "indicativeCost": "Paid plans from about €3–€10+ per month.",
-          "reason": "Useful for managing direct debits and daily banking.",
-          "logo": { "src": "/images/affiliates/logos/bunq.svg", "alt": "bunq logo" }
         }
       ]
     },
@@ -225,25 +183,7 @@
         "type": "tip",
         "title": "If your address changes",
         "text": "Many systems use your registered address as a reference point. If you move during your first two months, keep a simple checklist of which services may need updates."
-      },
-      "services": [
-        {
-          "name": "HousingAnywhere",
-          "description": "Platform used by internationals searching for temporary or medium-term rentals.",
-          "url": "https://housinganywhere.com/",
-          "indicativeCost": "Platform and service fees vary by booking.",
-          "reason": "Relevant if you started in temporary housing and still need medium-term stability.",
-          "logo": { "src": "/images/affiliates/logos/housinganywhere.svg", "alt": "HousingAnywhere logo" }
-        },
-        {
-          "name": "Pararius",
-          "description": "Major rental listing platform in the Netherlands for longer-term housing.",
-          "url": "https://www.pararius.com/",
-          "indicativeCost": "Listing platform; rent depends on area.",
-          "reason": "Useful for reviewing longer-term housing options.",
-          "logo": { "src": "/images/affiliates/logos/pararius.svg", "alt": "Pararius logo" }
-        }
-      ]
+      }
     },
     {
       "id": "admin-health-check",
