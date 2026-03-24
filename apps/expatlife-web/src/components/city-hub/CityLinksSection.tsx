@@ -1,10 +1,22 @@
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import type { CityHubPageData } from "@/src/lib/city-hub/types";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
 import { cn } from "@/lib/cn";
 
+function isAbsoluteExternalHref(href: string): boolean {
+  return /^https?:\/\//i.test(href.trim());
+}
+
 export function CityLinksSection({ data }: { data: CityHubPageData }) {
-  const links = data.cityLinks || [];
+  const links = (data.cityLinks || []).map((link) =>
+    isAbsoluteExternalHref(link.href)
+      ? link
+      : {
+          ...link,
+          comingSoon: Boolean(link.comingSoon) || !isRouteLive(link.href),
+        }
+  );
   if (!links.length) return null;
 
   return (

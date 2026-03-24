@@ -153,8 +153,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — final note. Link stays here if useful: https://www.expatcopilot.com/netherlands/visa/student-visa/
+Hi — I’ll stop here. Link stays here if it’s ever useful: https://www.expatcopilot.com/netherlands/visa/student-visa/
 
+Thanks either way,
 Lee
 
 ---
@@ -167,10 +168,15 @@ Lee
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands and spent my first month juggling insurance, BSN, and DigiD without a single “do this first” map. **Expat Copilot** is my attempt to write that map for others: https://www.expatcopilot.com
 
-EUR’s English education hub is a natural place people land. If this **after arriving** overview ever fits your international student resources: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
+EUR’s English education hub is a natural place people land. If this **after arriving** overview ever fits your international student resources, I’d really appreciate your considering it.
 
-Thanks for considering it.
+Here’s the page: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
+It’s an **after arriving** hub for the first weeks (BSN, insurance, gemeente, DigiD)—orientation only, with official links where it matters.
+
+I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
+
+Thanks for considering it,
 Lee
 
 **Follow-up #1 — Subject:** Follow-up — post-arrival checklist  
@@ -187,8 +193,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last note  
 
-Hi — last message from me. If useful: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
+Hi — I’ll stop here—last message from me. Same link if it’s ever useful: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -226,8 +233,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — I’ll stop here. Link: https://www.expatcopilot.com/netherlands/visa/student-visa/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/visa/student-visa/
 
+Thanks either way,
 Lee
 
 ---
@@ -240,7 +248,7 @@ Lee
 
 Hi — I’m Lee. I’m from South Africa and now live in the Netherlands; Maastricht draws so many internationals that I imagine your office hears the same arrival questions on repeat. I write practical guides on **Expat Copilot** (https://www.expatcopilot.com).
 
-If an **after arriving** hub would complement your own orientation.
+If an **after arriving** hub would complement your own orientation material, I’d appreciate your taking a quick look.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
@@ -265,8 +273,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last ping  
 
-Hi — last note. https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
+Hi — I’ll stop here—last note only. Same link if timing is better later: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -279,7 +288,7 @@ Lee
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands and found BSN and gemeente steps surprisingly hard to sequence. **Expat Copilot** is where I publish neutral walkthroughs: https://www.expatcopilot.com
 
-VU’s English site is a main entry for international routes. If this **municipality registration** page helps your desk reduce repeat explanations.
+VU’s English site is a main entry for international routes. If this **municipality registration** page would help your desk cut repeat explanations, I’d appreciate a quick look.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/municipality-registration-netherlands/
 
@@ -357,7 +366,7 @@ Lee
 
 Hi — I’m Lee. I’m originally from South Africa and rebuilt my admin life in the Netherlands from scratch. I write **Expat Copilot** for people in that exact phase: https://www.expatcopilot.com
 
-TU/e’s international intake is heavy on tech talent who need fast clarity on BSN, insurance, and gemeente. Optional reading.
+TU/e’s international intake is heavy on tech talent who need fast clarity on BSN, insurance, and gemeente—this **after arriving** hub might work as optional reading next to your own material.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
@@ -382,8 +391,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last message  
 
-Hi — https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -396,7 +406,7 @@ Lee
 
 Hi — I’m Lee. I moved from South Africa to the Netherlands and leaned hard on “practical matters” pages like yours—then still had gaps on gemeente timing. **Expat Copilot**: https://www.expatcopilot.com
 
-If a dedicated **municipality registration** explainer helps WUR students.
+If a dedicated **municipality registration** explainer would help WUR students sequence gemeente steps, I’d appreciate your taking a quick look.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/municipality-registration-netherlands/
 
@@ -421,8 +431,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — last note. https://www.expatcopilot.com/netherlands/municipality-registration-netherlands/
+Hi — I’ll stop here—last note only. Same link if timing is better later: https://www.expatcopilot.com/netherlands/municipality-registration-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -435,7 +446,7 @@ Lee
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands and remember visa vocabulary being the first hurdle. I publish neutral guides on **Expat Copilot**: https://www.expatcopilot.com
 
-Radboud’s English entry points many internationals. If useful.
+Radboud’s English site is a natural first stop for internationals. If a **student visa** primer would sit alongside your own guidance, I’d appreciate your taking a look.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/visa/student-visa/
 
@@ -460,8 +471,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last ping  
 
-Hi — https://www.expatcopilot.com/netherlands/visa/student-visa/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/visa/student-visa/
 
+Thanks either way,
 Lee
 
 ---
@@ -474,7 +486,7 @@ Lee
 
 Hi — I’m Lee. I’m from South Africa and live in the Netherlands; Twente’s international community must hit the same “what do I do week one?” wall. **Expat Copilot** is my editorial side project: https://www.expatcopilot.com
 
-If this **after arriving** hub fits your internationalisation content.
+If this **after arriving** hub ever fits your internationalisation content or student newsletters, I’d appreciate your considering it.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
@@ -499,8 +511,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — final note. https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
+Hi — I’ll stop here—final note only. Same link if timing is better later: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -614,7 +627,7 @@ Lee
 
 Hi — I’m Lee. I moved from South Africa to the Netherlands and know small programmes still get big visa questions. I publish plain guides on **Expat Copilot**: https://www.expatcopilot.com
 
-If useful for incoming students.
+If a **student visa** primer would help incoming students alongside your own guidance, I’d appreciate your considering it.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/visa/student-visa/
 
@@ -649,7 +662,7 @@ Lee
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands and write **Expat Copilot** for people facing Dutch immigration and arrival admin for the first time: https://www.expatcopilot.com
 
-If PTHU’s international students could use an external **student visa** primer.
+If PTHU’s international students could use an external **student visa** primer next to official channels, I’d appreciate your taking a look.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/visa/student-visa/
 
@@ -684,7 +697,7 @@ Lee
 
 Hi — I’m Lee. I’m from South Africa and live in the Netherlands; Amsterdam pulls a huge share of HBO internationals. I run **Expat Copilot** with practical visa and arrival guides: https://www.expatcopilot.com
 
-If the International Office ever wants a third-party **student visa** page.
+If the International Office ever wants a third-party **student visa** page for orientation (not replacing IND), I’d appreciate your considering this one.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/visa/student-visa/
 
@@ -709,8 +722,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — last note. https://www.expatcopilot.com/netherlands/visa/student-visa/
+Hi — I’ll stop here—last note only. Same link if timing is better later: https://www.expatcopilot.com/netherlands/visa/student-visa/
 
+Thanks either way,
 Lee
 
 ---
@@ -723,7 +737,7 @@ Lee
 
 Hi — I’m Lee. I moved from South Africa to the Netherlands and know The Hague’s internationals juggle housing, gemeente, and insurance in parallel. **Expat Copilot**: https://www.expatcopilot.com
 
-If an **after arriving** hub helps your office.
+If an **after arriving** hub would help your office answer repeat “first weeks” questions, I’d appreciate your taking a look.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
@@ -748,8 +762,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last ping  
 
-Hi — https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -865,7 +880,7 @@ Lee
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands and run **Expat Copilot** (https://www.expatcopilot.com) for visa and arrival orientation.
 
-If useful next to Windesheim’s international content.
+If a **student visa** primer would sit next to Windesheim’s international content as optional reading, I’d appreciate your considering it.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/visa/student-visa/
 
@@ -958,8 +973,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — last note from me. https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if timing is better later: https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -972,7 +988,7 @@ Lee
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands and publish **Expat Copilot** for practical, neutral relocation and study-adjacent topics: https://www.expatcopilot.com
 
-I’m writing via the Study in Holland audience in mind—if corporate comms or English channels ever curate third-party explainers.
+I’m writing with the Study in Holland audience in mind—if corporate comms or English channels ever curate third-party explainers, I’d appreciate your taking a look.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/
 
@@ -997,8 +1013,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last follow-up  
 
-Hi — https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -1137,8 +1154,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — last note. https://www.expatcopilot.com/netherlands/amsterdam/
+Hi — I’ll stop here—last note only. Same link if timing is better later: https://www.expatcopilot.com/netherlands/amsterdam/
 
+Thanks either way,
 Lee
 
 ---
@@ -1151,7 +1169,7 @@ Lee
 
 Hi — I’m Lee. I moved from South Africa to the Netherlands and leaned on gemeente English pages for registration reality. **Expat Copilot**: https://www.expatcopilot.com
 
-If you ever curate external explainers next to your own **registration / internationals** content.
+If you ever curate external explainers next to your own **registration / internationals** content, I’d appreciate your considering this one.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/municipality-registration-netherlands/
 
@@ -1176,8 +1194,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last ping  
 
-Hi — https://www.expatcopilot.com/netherlands/municipality-registration-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/municipality-registration-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -1213,8 +1232,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — https://www.expatcopilot.com/netherlands/register-address-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/register-address-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -1250,8 +1270,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last note  
 
-Hi — https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -1400,7 +1421,7 @@ Lee
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands and muddled through the same admin your clients pay you to simplify. I run **Expat Copilot** as editorial-only (https://www.expatcopilot.com)—not competing on services.
 
-If a neutral **moving steps** article ever helps your blog or FAQs as “background reading”.
+If a neutral **moving steps** article ever helps your blog or FAQs as “background reading,” I’d appreciate your taking a look.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
 

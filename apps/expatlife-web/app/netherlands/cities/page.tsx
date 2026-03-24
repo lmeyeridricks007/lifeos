@@ -14,6 +14,11 @@ import { RelatedGuidesSection } from "@/src/components/city-hub/RelatedGuidesGri
 import { OfficialSourcesList } from "@/src/components/city-hub/OfficialSourcesList";
 import { netherlandsCitiesOverview } from "@/src/data/cities-overview/netherlands-cities";
 import type { CityOfficialSource } from "@/src/lib/city-hub/types";
+import {
+  applyLiveGatesToCityComparisonRows,
+  applyLiveGatesToMajorCityCards,
+  applyLiveGatesToSecondaryCityCards,
+} from "@/src/lib/cities-overview/applyLiveGatesToCityOverview";
 import { filterLiveInternalLinks, isRouteLive } from "@/src/lib/routes/routeStatus";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -97,8 +102,15 @@ export default function NetherlandsCitiesPage() {
       }
     : null;
 
+  const introLinks = filterLiveInternalLinks(data.intro.links);
+  const majorCityCards = applyLiveGatesToMajorCityCards(data.majorCityCards);
+  const comparisonRows = applyLiveGatesToCityComparisonRows(data.comparisonRows);
+  const secondaryCities = data.secondaryCities?.length
+    ? applyLiveGatesToSecondaryCityCards(data.secondaryCities)
+    : [];
+
   const tocItems =
-    data.secondaryCities?.length > 0
+    secondaryCities.length > 0
       ? data.tocItems
       : data.tocItems.filter((t) => t.id !== "coming-soon-cities");
 
@@ -174,7 +186,7 @@ export default function NetherlandsCitiesPage() {
                     </p>
                   ))}
                   <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-600">
-                    {data.intro.links.map((link, i) => (
+                    {introLinks.map((link, i) => (
                       <span key={link.href} className="flex items-center gap-x-3">
                         {i > 0 ? (
                           <span className="text-slate-300" aria-hidden>
@@ -203,10 +215,10 @@ export default function NetherlandsCitiesPage() {
                     Each card links to a full city guide with local context for registration, housing, transport, and
                     practical next steps.
                   </p>
-                  <MajorCityCardsGrid cards={data.majorCityCards} />
+                  <MajorCityCardsGrid cards={majorCityCards} />
                 </section>
 
-                {data.secondaryCities?.length ? (
+                {secondaryCities.length ? (
                   <section id="coming-soon-cities" className="scroll-mt-24 mt-12 space-y-6">
                     <div className="flex flex-wrap items-center gap-3">
                       <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-slate-500 to-slate-700 text-white shadow-md">
@@ -219,7 +231,7 @@ export default function NetherlandsCitiesPage() {
                       university, lifestyle, and budget—bookmark this hub for updates, and use the covered cities above to
                       start planning today.
                     </p>
-                    <SecondaryCitiesSection cities={data.secondaryCities} />
+                    <SecondaryCitiesSection cities={secondaryCities} />
                   </section>
                 ) : null}
 
@@ -274,7 +286,7 @@ export default function NetherlandsCitiesPage() {
                       </div>
                     </div>
                   ) : null}
-                  <CityComparisonTable rows={data.comparisonRows} />
+                  <CityComparisonTable rows={comparisonRows} />
                 </section>
 
                 <section id="popular-services" className="scroll-mt-24 mt-12 space-y-6">

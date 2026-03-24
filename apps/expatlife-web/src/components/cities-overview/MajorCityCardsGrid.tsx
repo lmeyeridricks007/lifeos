@@ -103,7 +103,7 @@ export function MajorCityCardsGrid({ cards }: { cards: MajorCityCard[] }) {
           <div className="mt-4 pt-3">
             {card.comingSoon ? (
               <span className="inline-flex rounded-lg border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-500">
-                {card.ctaLabel}
+                Coming soon
               </span>
             ) : (
               <Link

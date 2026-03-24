@@ -5,12 +5,44 @@
  * `publishDate` is bypassed (but never `publish: false`) when: preview env vars, Vercel Preview,
  * or **`next dev`** (`NODE_ENV === "development"`) so local work matches production routes without
  * editing dates. Use `CONTENT_PREVIEW=true` for `next start` / production builds before a date.
+ *
+ * **Local “what production will show”:** append `?preview=true` to any URL in `next dev`. Middleware
+ * sets a short-lived cookie + request header so server and client visibility match live (dates enforced).
+ * Use `?preview=false` to clear the cookie and return to default dev bypass.
  */
+
+import { DEV_SIMULATE_LIVE_COOKIE, DEV_SIMULATE_LIVE_HEADER } from "@/src/lib/publishing/devSimulateLive";
 
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
+function isDevSimulateLiveFromBrowserCookie(): boolean {
+  if (typeof window === "undefined") return false;
+  return window.document.cookie
+    .split(";")
+    .some((c) => c.trim().startsWith(`${DEV_SIMULATE_LIVE_COOKIE}=1`));
+}
+
+/**
+ * Server / SSR (no `window`): read middleware-forwarded header or cookie. Not used in Edge middleware
+ * (use `isPubliclyVisible`’s `enforcePublishDates` there instead).
+ */
+function isDevSimulateLiveFromNodeRequest(): boolean {
+  try {
+    const { headers, cookies } = require("next/headers") as typeof import("next/headers");
+    if (headers().get(DEV_SIMULATE_LIVE_HEADER) === "1") return true;
+    if (cookies().get(DEV_SIMULATE_LIVE_COOKIE)?.value === "1") return true;
+  } catch {
+    /* not in Next request context (e.g. scripts) */
+  }
+  return false;
+}
+
 export function shouldBypassPublishDateForPreview(): boolean {
-  if (process.env.NODE_ENV === "development") return true;
+  if (process.env.NODE_ENV === "development") {
+    if (isDevSimulateLiveFromBrowserCookie()) return false;
+    if (isDevSimulateLiveFromNodeRequest()) return false;
+    return true;
+  }
   if (process.env.CONTENT_PREVIEW === "true") return true;
   if (process.env.VERCEL_ENV === "preview") return true;
   if (process.env.NEXT_PUBLIC_CONTENT_PREVIEW === "true") return true;
@@ -47,10 +79,11 @@ export function parsePublishInstant(publishDate: string | undefined): number | n
 export function isPubliclyVisible(
   publish: boolean | undefined,
   publishDate: string | undefined,
-  now: Date
+  now: Date,
+  options?: { enforcePublishDates?: boolean }
 ): boolean {
   if (publish === false) return false;
-  if (shouldBypassPublishDateForPreview()) return true;
+  if (!options?.enforcePublishDates && shouldBypassPublishDateForPreview()) return true;
 
   const instant = parsePublishInstant(publishDate);
   if (instant == null) return true;

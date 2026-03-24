@@ -10,10 +10,14 @@ export function isNetherlandsCitiesHubPath(normalizedPath: string): boolean {
 }
 
 /** Same rules as moving guides and tools: `isPubliclyVisible` (incl. dev / preview date bypass). */
-export function isNetherlandsCitiesHubPubliclyVisible(now: Date): boolean {
+export function isNetherlandsCitiesHubPubliclyVisible(
+  now: Date,
+  options?: { enforcePublishDates?: boolean }
+): boolean {
   return isPubliclyVisible(
     netherlandsCitiesOverview.publish,
     netherlandsCitiesOverview.publishDate,
-    now
+    now,
+    options
   );
 }

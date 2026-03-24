@@ -111,8 +111,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last idea — affordability calculator  
 
-Hi — https://www.expatcopilot.com/netherlands/housing/tools/rent-affordability-calculator/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/housing/tools/rent-affordability-calculator/
 
+Thanks either way,
 Lee
 
 ---
@@ -254,7 +255,7 @@ Lee
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands; I know aggregators often work on partnerships. **Expat Copilot** is editorial-only: https://www.expatcopilot.com
 
-If a free **rent affordability** tool ever fits help content.
+If a free **rent affordability** tool ever fits help content or renter education, I’d appreciate your considering it.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/housing/tools/rent-affordability-calculator/
 
@@ -1205,8 +1206,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last idea  
 
-Hi — https://www.expatcopilot.com/netherlands/visa/compare-visas/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/visa/compare-visas/
 
+Thanks either way,
 Lee
 
 ---
@@ -1275,8 +1277,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — https://www.expatcopilot.com/netherlands/moving-checklist-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/moving-checklist-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -1388,7 +1391,7 @@ Lee
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands; basic insurance was the most emotional admin week of my move. **Expat Copilot**: https://www.expatcopilot.com
 
-If your international / English content ever links educational context.
+If your international or English content ever links educational context alongside product pages, I’d appreciate your considering this primer.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/health-insurance-netherlands/
 

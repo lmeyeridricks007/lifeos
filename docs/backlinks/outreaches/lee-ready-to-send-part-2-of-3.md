@@ -391,7 +391,7 @@ Lee
 
 Hi — I’m Lee. I moved from South Africa to the Netherlands; I’m not a lawyer, but I wished I’d had a simple **document categories** map before my first meeting with counsel. **Expat Copilot**: https://www.expatcopilot.com
 
-Your blog already educates—if a neutral companion piece ever fits.
+Your blog already educates—if a neutral companion piece ever fits next to your posts, I’d appreciate your taking a look.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
 
@@ -453,8 +453,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — final note. https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Hi — I’ll stop here—final note only. Same link if timing is better later: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -467,7 +468,7 @@ Lee
 
 Hi — I’m Lee. I’m from South Africa and live in the Netherlands; I spent weeks comparing routes before I understood which bucket I was in. **Expat Copilot** is editorial: https://www.expatcopilot.com
 
-Your news section covers route changes—if a neutral **compare visas** page helps readers orient.
+Your news section covers route changes—if a neutral **compare visas** page would help readers orient before they call counsel, I’d value a glance.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/visa/compare-visas/
 
@@ -492,8 +493,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last ping  
 
-Hi — https://www.expatcopilot.com/netherlands/visa/compare-visas/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/visa/compare-visas/
 
+Thanks either way,
 Lee
 
 ---
@@ -704,7 +706,7 @@ Lee
 
 Hi — I’m Lee. I moved from South Africa to the Netherlands and read every 30% ruling article I could find before I understood the *shape* of the rule. **Expat Copilot** is editorial: https://www.expatcopilot.com
 
-Your tax blog already serves expats—if a simple **30% ruling** calculator helps as non-advice orientation.
+Your tax blog already serves expats—if a simple **30% ruling** calculator would help as non-advice orientation, I’d appreciate your considering it.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/money/tools/30-ruling-calculator/
 
@@ -834,8 +836,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — last note. https://www.expatcopilot.com/netherlands/money/tools/30-ruling-calculator/
+Hi — I’ll stop here—last note only. Same link if timing is better later: https://www.expatcopilot.com/netherlands/money/tools/30-ruling-calculator/
 
+Thanks either way,
 Lee
 
 ---
@@ -873,8 +876,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last ping  
 
-Hi — https://www.expatcopilot.com/netherlands/health-insurance-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/health-insurance-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -910,8 +914,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — https://www.expatcopilot.com/netherlands/money/tools/30-ruling-calculator/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/money/tools/30-ruling-calculator/
 
+Thanks either way,
 Lee
 
 ---
@@ -949,8 +954,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last idea  
 
-Hi — https://www.expatcopilot.com/netherlands/moving-checklist-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/moving-checklist-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -988,8 +994,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — https://www.expatcopilot.com/netherlands/moving-mistakes-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/moving-mistakes-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -1025,8 +1032,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last note  
 
-Hi — https://www.expatcopilot.com/netherlands/moving-checklist-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/moving-checklist-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -1062,8 +1070,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -1076,7 +1085,7 @@ Lee
 
 Hi — I’m Lee. I’m from South Africa and based in the Netherlands; Expatica’s NL hub is a benchmark. **Expat Copilot** is smaller and narrower: https://www.expatcopilot.com
 
-If a **moving to the Netherlands** overview fits your resource lists.
+If a **moving to the Netherlands** overview ever fits your resource lists or “further reading,” I’d appreciate your taking a look.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/
 
@@ -1101,8 +1110,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last follow-up  
 
-Hi — https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -1138,8 +1148,9 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last idea  
 
-Hi — https://www.expatcopilot.com/netherlands/moving-checklist-netherlands/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/moving-checklist-netherlands/
 
+Thanks either way,
 Lee
 
 ---
@@ -1187,7 +1198,7 @@ Lee
 
 Hi — I’m Lee. I’m from South Africa and live in the Netherlands; ESN was the kind of peer network that made admin feel less lonely. I publish **Expat Copilot**: https://www.expatcopilot.com
 
-If your section shares links for new students.
+If your section ever shares links or tips for new students, this **after arriving** hub might be a useful optional add-on.
 
 Here’s the page: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
 
