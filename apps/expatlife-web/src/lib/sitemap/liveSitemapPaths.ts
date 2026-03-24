@@ -22,7 +22,8 @@ const routingSlugSet = new Set<string>(ROUTING_ORIGIN_COUNTRY_SLUGS);
  * - Every path from `LIVE_PATHS` is a candidate except `XML_SITEMAP_EXCLUDE`.
  * - Origin-country guides and moving-tool `/from/{country}/` URLs are not fully enumerated in `LIVE_PATHS`;
  *   they are added here for enabled countries whose slug appears in `ROUTING_ORIGIN_COUNTRY_SLUGS`,
- *   then filtered again with `isRouteLive` (same rules as origin / from-country pattern helpers).
+ *   then filtered again with `isRouteLive` (origin slugs use `enforceOriginCountryPublishDatesForPublicIndexing`
+ *   so scheduled guides stay in the XML on dev/preview builds only).
  */
 export function collectLiveSitemapNormalizedPaths(): string[] {
   const set = new Set<string>();

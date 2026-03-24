@@ -90,6 +90,38 @@ export type GuideInsurerComparison = {
   logo?: { src: string; alt: string };
 };
 
+/** Marker on the salary scale (e.g. IND threshold). */
+export type GuideSalaryComparisonBarMarker = {
+  amountEur: number;
+  label: string;
+  /** Drives marker colour in the template (violet = HSM under-30 style, sky = standard tier). */
+  variant: "violet" | "sky" | "amber";
+};
+
+/** Visual worked example comparing salary to EU Blue Card vs HSM floors (visa guide sections). */
+export type GuideSalaryComparisonExample = {
+  title: string;
+  profile: string;
+  visualization:
+    | {
+        type: "bar";
+        salaryEur: number;
+        /** Right edge of the scale in EUR (chart only). */
+        barMaxEur: number;
+        markers: GuideSalaryComparisonBarMarker[];
+      }
+    | {
+        type: "reduced";
+        columns: Array<{ title: string; amount: string; note: string }>;
+      };
+  badges: Array<{
+    route: string;
+    tone: "positive" | "negative" | "neutral";
+    caption?: string;
+  }>;
+  body: string;
+};
+
 export type GuideSection = {
   id: string;
   heading: string;
@@ -138,6 +170,8 @@ export type GuideSection = {
   bankComparisons?: GuideBankComparison[];
   /** When set, section is rendered as health insurer directory cards (overview, costs, link, expat note). */
   insurerComparisons?: GuideInsurerComparison[];
+  /** When set, rendered as visual cards with salary scale and eligibility badges (e.g. EU Blue Card vs HSM). */
+  salaryComparisonExamples?: GuideSalaryComparisonExample[];
 };
 
 export type GuideToolCta = {

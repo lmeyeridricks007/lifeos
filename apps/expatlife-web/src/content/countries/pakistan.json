@@ -1,0 +1,159 @@
+{
+  "slug": "pakistan",
+  "name": "Pakistan",
+  "shortName": "Pakistan",
+  "iso2": "PK",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["Urdu", "English"],
+  "travel": {
+    "typicalFlightTime": "About 10–14+ hours with connections (common hubs in the Middle East or Europe); schedules vary by carrier and season",
+    "notes": [
+      "Many movers depart from Islamabad, Lahore, or Karachi; align ticketing with MVV validity and your IND decision letter before non-refundable purchases.",
+      "Ministry of Foreign Affairs legalisation and visa appointment scheduling can run in parallel with employer or university timelines."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored employment with Dutch or international employers (including highly skilled migrant routes)",
+      "Master’s or PhD study at a Dutch university",
+      "Partner or family reunification under eligible routes",
+      "Entrepreneurship or startup where Dutch route conditions are met",
+      "Corporate transfer or international assignment",
+      "Orientation year or other graduate-linked routes where eligibility matches official IND criteria"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven"],
+    "commonSectors": ["Technology", "Agri-food and logistics", "Higher education", "Finance", "Healthcare", "Maritime and trade", "Creative industries"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other employer-sponsored employment",
+      "EU Blue Card where salary and qualification rules are met",
+      "Study with a Dutch institution as sponsor",
+      "Partner or family routes with relationship and evidence requirements",
+      "Startup or self-employment where conditions are met",
+      "Orientation year for eligible graduates—see IND pages for current criteria",
+      "Intra-corporate transfer where the official route matches your case"
+    ],
+    "notes": [
+      "Pakistani nationals are not EU/EEA/Switzerland citizens: stays longer than short visits normally require a Dutch residence permit for a recognised purpose.",
+      "Many long-stay procedures include an MVV (long-stay entry visa) so you can travel to the Netherlands and complete residence-permit steps—but whether you need an MVV depends on your route; confirm on IND.nl and Netherlands Worldwide.",
+      "Short-stay Schengen applications for the Netherlands from Pakistan are submitted through VFS Global as described on Netherlands Worldwide—that process is separate from long-stay relocation.",
+      "The IND explains that when you need an MVV, you usually apply for the MVV and residence permit together from abroad."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid passport (confirm validity and blank-page rules on Netherlands Worldwide for your MVV or visa step)",
+      "Civil documents when your route requires them (e.g. birth, marriage, family composition)",
+      "Educational diplomas and professional credentials for work or study",
+      "Employment contract, admission letter, or sponsor materials as required",
+      "Police certificates or medical checks only when your permit checklist asks for them"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide explains that to use a document from Pakistan in the Netherlands it must first be legalised by the Pakistani Ministry of Foreign Affairs.",
+      "Whether you also need certified translation depends on the document language, document type, and the authority that receives it; confirm on the Netherlands Worldwide Pakistan legalisation page and with your sponsor or IND checklist.",
+      "Build in time for civil registry steps, MFA legalisation, possible translations, and VFS or embassy scheduling."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation: documents from Pakistan",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/pakistan",
+        "contactSummary": "MFA legalisation and using Pakistani documents in the Netherlands."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "MVV, Schengen, and appointments from Pakistan",
+        "website": "https://www.netherlandsworldwide.nl/visa-the-netherlands/mvv-long-stay/apply-pakistan",
+        "contactSummary": "Long-stay MVV and short-stay Schengen via VFS; follow live pages for appointments and documents."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "PKR / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Pakistan–Netherlands moves often combine air freight for essentials with sea freight for larger households. Many people book temporary furnished housing in the Netherlands while legalisation work, permit decisions, and shipments align.",
+    "notes": [
+      "Align travel dates with MVV validity and your IND decision letter.",
+      "Keep copies of inventories and customs-related paperwork accessible."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV rules, route-specific requirements, and exemptions."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and visa applications in Pakistan",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Pakistan-specific Schengen (VFS), MVV, legalisation, civic integration exam abroad, waiting times, and consular fees."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial long-haul relocation from Pakistan to the Netherlands: passport and documents with a subtle sense of journey from South Asia toward Europe, warm premium light, trustworthy planning mood.",
+  "seo": {
+    "title": "Moving to the Netherlands from Pakistan | Visa, MVV, Documents & Practical Setup",
+    "description": "Planning a move from Pakistan to the Netherlands? Explore visa routes, MVV guidance, document legalisation requirements, housing, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from pakistan",
+      "move from pakistan to netherlands",
+      "pakistan to netherlands visa",
+      "relocating from pakistan to netherlands",
+      "netherlands residence permit pakistan",
+      "mvv netherlands pakistan",
+      "pakistani documents legalisation netherlands",
+      "schengen visa pakistan netherlands",
+      "dutch relocation from pakistan",
+      "netherlands long stay visa pakistan"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Pakistan-to-Netherlands moves are immigration-heavy: MVV steps per Netherlands Worldwide Pakistan pages, VFS Global for Schengen short stay, MFA legalisation, and long-haul logistics."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Pakistanis need a visa for short visits to the Netherlands?",
+      "a": "For tourism or short business visits, Schengen short-stay rules apply when a visa is required. From Pakistan, applications for a Netherlands Schengen visa are submitted through VFS Global as described on Netherlands Worldwide. Netherlands Worldwide also states that you can usually apply up to six months before travel and must apply at least 45 days before travel—confirm the current wording on the official Pakistan Schengen page. A short-stay visa is not a substitute for a residence permit if you intend to live in the Netherlands."
+    },
+    {
+      "q": "What is an MVV when moving from Pakistan to the Netherlands?",
+      "a": "The MVV (provisional residence permit) is a long-stay entry visa (Type D) described by the IND for many stays longer than 90 days. After a positive IND decision, the MVV sticker is placed in your passport so you can travel to the Netherlands and complete steps such as collecting your residence permit. Whether you need an MVV depends on your route—check the IND and MVV exemption page. The IND states that when an MVV is required, you usually apply for the MVV and residence permit together from abroad."
+    },
+    {
+      "q": "How do I follow the MVV process in Pakistan?",
+      "a": "Netherlands Worldwide publishes Pakistan-specific pages for the MVV long-stay visa and for making appointments. Use those official pages for appointment confirmation, required documents, and how passport collection is organised—procedures and wording can change, so rely on the live site rather than informal summaries."
+    },
+    {
+      "q": "How are Pakistani documents prepared for use in the Netherlands?",
+      "a": "Netherlands Worldwide states that documents from Pakistan must first be legalised by the Pakistani Ministry of Foreign Affairs for use in the Netherlands. Translation or additional steps may be required depending on the document and authority—see the Pakistan legalisation page on Netherlands Worldwide and our document guides for general context."
+    },
+    {
+      "q": "What is the civic integration exam abroad in Pakistan?",
+      "a": "Some family-based routes may require the civic integration exam abroad. Netherlands Worldwide has a dedicated page for this process in Pakistan. It only applies when your official checklist and route require it—not to every mover."
+    },
+    {
+      "q": "What should I plan for right after arriving in the Netherlands?",
+      "a": "Most people prioritise municipal registration and BSN, collecting a residence permit if applicable, opening a bank account, and arranging Dutch basic health insurance when they become resident. Use the after-arrival guides on this site alongside official checklists."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Karachi- or Lahore-based professional with a Dutch employer sponsor",
+      "summary": "Coordinate IND timing with your sponsor, MVV steps using Netherlands Worldwide’s Pakistan pages, MFA legalisation on civil documents, housing near work, and BSN-first banking and insurance."
+    },
+    {
+      "title": "Student admitted to a Dutch university",
+      "summary": "Align admission, study-permit conditions, proof of funds, and housing; complete MFA legalisation on Pakistani civil records and confirm translations if the institution or IND checklist requires them."
+    }
+  ]
+}

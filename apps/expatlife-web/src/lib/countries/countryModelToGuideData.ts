@@ -26,6 +26,11 @@ import { augmentSwedenGuideData } from "./swedenMovingGuideData";
 import { augmentDenmarkGuideData } from "./denmarkMovingGuideData";
 import { augmentNorwayGuideData } from "./norwayMovingGuideData";
 import { augmentIrelandGuideData } from "./irelandMovingGuideData";
+import { augmentNigeriaGuideData } from "./nigeriaMovingGuideData";
+import { augmentPhilippinesGuideData } from "./philippinesMovingGuideData";
+import { augmentIndonesiaGuideData } from "./indonesiaMovingGuideData";
+import { augmentPakistanGuideData } from "./pakistanMovingGuideData";
+import { augmentKenyaGuideData } from "./kenyaMovingGuideData";
 
 const HUB_PATH = "/netherlands/moving/";
 const PILLAR_PATH = "/netherlands/moving-to-the-netherlands/";
@@ -322,5 +327,10 @@ export function countryModelToGuideData(
   if (model.slug === "denmark") return augmentDenmarkGuideData(model, base);
   if (model.slug === "norway") return augmentNorwayGuideData(model, base);
   if (model.slug === "ireland") return augmentIrelandGuideData(model, base);
+  if (model.slug === "nigeria") return augmentNigeriaGuideData(model, base);
+  if (model.slug === "philippines") return augmentPhilippinesGuideData(model, base);
+  if (model.slug === "indonesia") return augmentIndonesiaGuideData(model, base);
+  if (model.slug === "pakistan") return augmentPakistanGuideData(model, base);
+  if (model.slug === "kenya") return augmentKenyaGuideData(model, base);
   return base;
 }

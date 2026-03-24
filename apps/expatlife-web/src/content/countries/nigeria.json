@@ -1,0 +1,159 @@
+{
+  "slug": "nigeria",
+  "name": "Nigeria",
+  "shortName": "Nigeria",
+  "iso2": "NG",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["English"],
+  "travel": {
+    "typicalFlightTime": "About 6–7 hours direct (e.g. Lagos–Amsterdam); connections common from other Nigerian cities",
+    "notes": [
+      "Flight options and pricing vary by season and hub; many movers route via Lagos or other hubs with international service.",
+      "Long-stay immigration steps (MVV, residence permit) run on different timelines from booking travel—confirm validity windows on your IND decision letter before you purchase non-refundable tickets."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored employment with Dutch or international employers (including highly skilled migrant routes)",
+      "Master’s or PhD study at a Dutch university",
+      "Partner or family reunification under eligible routes",
+      "Entrepreneurship or startup where Dutch route conditions are met",
+      "Corporate transfer or international assignment",
+      "Orientation year or other graduate-linked routes where eligibility matches official criteria"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven"],
+    "commonSectors": ["Technology", "Energy", "Finance", "Logistics", "Higher education", "Healthcare", "Creative industries"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other employer-sponsored employment",
+      "EU Blue Card where salary and qualification rules are met",
+      "Study with a Dutch institution as sponsor",
+      "Partner or family routes with relationship and evidence requirements",
+      "Startup or self-employment where conditions are met",
+      "Orientation year for eligible graduates—see IND pages for current criteria",
+      "Intra-corporate transfer where the official route matches your case"
+    ],
+    "notes": [
+      "Nigerian nationals are not EU/EEA/Switzerland citizens: stays longer than short visits normally require a Dutch residence permit for a recognised purpose.",
+      "Many long-stay procedures include an MVV (long-stay entry visa) so you can travel to the Netherlands and complete residence-permit steps—but not every nationality and route combination is identical; confirm your checklist on IND.nl and Netherlands Worldwide.",
+      "Short-stay Schengen visits and long-stay relocation are different processes with different application channels in Nigeria.",
+      "Netherlands Worldwide explains that if you live in Nigeria, short-stay Schengen applications for the Netherlands are handled through the Belgian or French TLScontact application centre in Lagos, depending on where you live in Nigeria."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid Nigerian passport with adequate validity beyond your planned move",
+      "Birth, marriage, or civil-status documents when your route requires them",
+      "Educational diplomas and professional credentials for work or study",
+      "Employment contract, admission letter, or sponsor materials as required",
+      "Police certificates or medical checks only when your permit checklist asks for them"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide states that to use a document from Nigeria in the Netherlands it must first be legalised by the Nigerian Ministry of Foreign Affairs. Plan lead time for obtaining originals and completing legalisation.",
+      "Depending on the document language and the receiving authority, sworn or certified translation may be required—confirm per document and procedure.",
+      "Employers, the IND, and municipalities may request different bundles; cross-check each stage against the official checklist for your route."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation of documents from Nigeria",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/nigeria",
+        "contactSummary": "Steps for legalising Nigerian documents for use in the Netherlands."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Visa and MVV applications from Nigeria",
+        "website": "https://www.netherlandsworldwide.nl/visa-the-netherlands/where-to-apply",
+        "contactSummary": "Where and how to apply for Dutch visas and MVV from Nigeria, including TLScontact and consular steps."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "NGN / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Nigeria–Netherlands moves often combine air freight for essentials with sea freight for larger households. Many families book temporary furnished housing in the Netherlands while legalisation, permit decisions, and shipments align.",
+    "notes": [
+      "Align travel dates with MVV validity and the instructions in your IND decision letter.",
+      "Keep copies of inventories and customs-related paperwork accessible."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV rules, route-specific requirements, and exemptions."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and visa applications in Nigeria",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Nigeria-specific Schengen, MVV, appointments, waiting times, and document legalisation."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial long-haul relocation from Nigeria to the Netherlands: premium travel and document planning mood, subtle Nigerian context with European arrival light, cinematic and trustworthy—not a generic office stock scene.",
+  "seo": {
+    "title": "Moving to the Netherlands from Nigeria | Visa, MVV, Documents & Practical Setup",
+    "description": "Planning a move from Nigeria to the Netherlands? Explore visa routes, MVV guidance, document legalisation requirements, housing, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from nigeria",
+      "move from nigeria to netherlands",
+      "nigeria to netherlands visa",
+      "relocating from nigeria to netherlands",
+      "netherlands residence permit nigeria",
+      "mvv netherlands nigeria",
+      "nigerian documents legalisation netherlands",
+      "schengen visa nigeria netherlands",
+      "dutch relocation from nigeria",
+      "netherlands long stay visa nigeria"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Nigeria-to-Netherlands moves are typically immigration-heavy: MVV and residence-permit sequencing, Nigerian Ministry of Foreign Affairs legalisation, TLScontact short-stay routing in Lagos, and long-haul logistics are common planning themes."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Nigerians need a visa for short visits to the Netherlands?",
+      "a": "Nigerian nationals are not visa-exempt for Schengen short stays. For tourism or short business visits, you normally apply for a Schengen visa under the rules explained on Netherlands Worldwide’s Nigeria-specific Schengen page. Short-stay rules are not the same as long-stay relocation—do not use a short-stay visa as a substitute for a residence permit if you intend to live in the Netherlands."
+    },
+    {
+      "q": "What is an MVV when moving from Nigeria to the Netherlands?",
+      "a": "The MVV (provisional residence permit) is a long-stay entry visa described by the IND for stays longer than 90 days in many procedures. It is issued as a Type D visa sticker in your passport after a positive decision, so you can travel to the Netherlands and complete steps such as collecting your residence permit. The IND explains that when you need an MVV, you usually apply for the MVV and residence permit together from abroad. Whether you need an MVV depends on your route and situation—check your decision letter and Netherlands Worldwide’s Nigeria MVV page."
+    },
+    {
+      "q": "Where do I apply for a Dutch MVV sticker in Nigeria?",
+      "a": "Netherlands Worldwide publishes a Nigeria-specific page for applying for the MVV long-stay visa sticker. You can collect the MVV sticker at the Dutch consulate-general in Lagos only when that is stated in your IND positive decision letter. Appointments are arranged by emailing lag-ca@minbuza.nl—use the official Nigeria pages for current instructions."
+    },
+    {
+      "q": "Where do I apply for a Schengen short-stay visa from Nigeria?",
+      "a": "Netherlands Worldwide explains that if you live in Nigeria, short-stay Schengen visa applications for the Netherlands are handled via the Belgian or French application centre of TLScontact in Lagos, depending on where you live in Nigeria. That process is separate from long-stay MVV and residence-permit procedures."
+    },
+    {
+      "q": "How are Nigerian documents prepared for use in the Netherlands?",
+      "a": "Netherlands Worldwide states that documents from Nigeria must be legalised by the Nigerian Ministry of Foreign Affairs before they can be used in the Netherlands. You may also need sworn translation depending on language and the authority receiving the document. See our document translation and legalization guides and the official legalisation pages linked in this guide."
+    },
+    {
+      "q": "What should I plan for right after arriving in the Netherlands?",
+      "a": "Most people prioritise municipal registration and BSN, collecting a residence permit if applicable, opening a bank account, and arranging Dutch basic health insurance when they become resident. Use the after-arrival guides on this site alongside official checklists."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Lagos-based professional with a Dutch employer sponsor",
+      "summary": "Coordinate IND timing, MVV collection in Lagos after approval, legalised civil documents, housing, and BSN-first banking and insurance."
+    },
+    {
+      "title": "Student admitted to a Dutch university",
+      "summary": "Align admission, study-permit conditions, proof of funds, and student housing; legalise Nigerian records and plan translations when required."
+    }
+  ]
+}

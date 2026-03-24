@@ -92,6 +92,46 @@
     "publishDate": "2026-04-17"
   },
   {
+    "slug": "nigeria",
+    "file": "nigeria.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-05-03"
+  },
+  {
+    "slug": "kenya",
+    "file": "kenya.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-05-03"
+  },
+  {
+    "slug": "pakistan",
+    "file": "pakistan.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-05-03"
+  },
+  {
+    "slug": "philippines",
+    "file": "philippines.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-05-03"
+  },
+  {
+    "slug": "indonesia",
+    "file": "indonesia.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-05-03"
+  },
+  {
     "slug": "singapore",
     "file": "singapore.json",
     "enabled": true,

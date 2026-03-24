@@ -78,10 +78,10 @@ const ORIGIN_COUNTRY_CONFIG: Array<{
   { slug: "nigeria", region: "Africa", order: 25, featured: true },
   // Future expansion (add more as needed)
   { slug: "turkey", region: "Middle East", order: 26, featured: true },
-  { slug: "pakistan", region: "Asia", order: 27, featured: false },
-  { slug: "philippines", region: "Asia", order: 28, featured: false },
-  { slug: "indonesia", region: "Asia", order: 29, featured: false },
-  { slug: "kenya", region: "Africa", order: 30, featured: false },
+  { slug: "pakistan", region: "Asia", order: 27, featured: true },
+  { slug: "philippines", region: "Asia", order: 28, featured: true },
+  { slug: "indonesia", region: "Asia", order: 29, featured: true },
+  { slug: "kenya", region: "Africa", order: 30, featured: true },
 ];
 
 function formatCountryLabel(slug: string): string {
@@ -91,12 +91,41 @@ function formatCountryLabel(slug: string): string {
     .join(" ");
 }
 
+/**
+ * Hub / browse cards: when `enforceHubPublishDates` is true, future `publishDate` rows show as Coming soon
+ * (production, or any environment with middleware `?preview=true` / simulate-live). In `next dev` without
+ * that mode, rows match normal page visibility (scheduled guides are clickable).
+ */
+export type OriginCountryHubVisibilityOptions = {
+  enforceHubPublishDates: boolean;
+};
+
+/**
+ * Production-style visibility (respect `publishDate` even in dev). Used for SEO lists, search, and “real” published checks.
+ */
+function isOriginCountryStrictlyPublished(slug: string, now: Date = new Date()): boolean {
+  return isOriginCountryGuidePubliclyVisible(slug, now, { enforcePublishDates: true });
+}
+
+function computeHubCardPublished(
+  slug: string,
+  record: CountryRecord | null,
+  enforceHubPublishDates: boolean
+): boolean {
+  if (!record) return false;
+  if (enforceHubPublishDates) {
+    return isOriginCountryStrictlyPublished(slug, new Date());
+  }
+  return isOriginCountryGuidePubliclyVisible(slug, new Date());
+}
+
 function buildEntry(
   slug: string,
   region: OriginCountryRegion,
   order: number,
   featured: boolean,
-  record: CountryRecord | null
+  record: CountryRecord | null,
+  hubOptions?: OriginCountryHubVisibilityOptions
 ): OriginCountryGuideEntry {
   const name = record?.name ?? formatCountryLabel(slug);
   const shortName = record?.shortName ?? name;
@@ -123,13 +152,17 @@ function buildEntry(
     region,
     priority: featured ? 1 : 2,
     featured,
-    isPublished: Boolean(record) && isOriginCountryGuidePubliclyVisible(slug, new Date()),
+    isPublished: computeHubCardPublished(
+      slug,
+      record,
+      hubOptions?.enforceHubPublishDates ?? true
+    ),
     order,
   };
 }
 
 /** All configured origin countries with resolved publish state from content. */
-function loadAllOriginCountryEntries(): OriginCountryGuideEntry[] {
+function loadAllOriginCountryEntries(hubOptions?: OriginCountryHubVisibilityOptions): OriginCountryGuideEntry[] {
   const index = loadCountryIndex();
   const indexBySlug = new Map(index.map((item) => [item.slug, item]));
 
@@ -142,7 +175,8 @@ function loadAllOriginCountryEntries(): OriginCountryGuideEntry[] {
       config.region,
       config.order,
       config.featured,
-      record
+      record,
+      hubOptions
     );
   }).sort((a, b) => a.order - b.order);
 }
@@ -153,25 +187,33 @@ function loadAllOriginCountryEntries(): OriginCountryGuideEntry[] {
  * until the dev server restarted (first `loadAllOriginCountryEntries` snapshot was frozen).
  */
 function getEntries(): OriginCountryGuideEntry[] {
-  return loadAllOriginCountryEntries();
+  return loadAllOriginCountryEntries(undefined);
 }
 
 /** Published guides only (visible on index and discovery modules). */
 export function getPublishedOriginCountryGuides(): OriginCountryGuideEntry[] {
-  return getEntries().filter((e) => e.isPublished);
+  return getEntries().filter((e) => isOriginCountryStrictlyPublished(e.slug, new Date()));
 }
 
 /**
  * All configured origin-country hub rows (published or not). Use for browse UI with “Coming soon”
  * on rows where `isPublished` is false.
+ *
+ * Pass `enforceHubPublishDates` from the hub page (false in `next dev` unless `?preview=true` sets the
+ * simulate-live header; true in production).
  */
-export function getAllOriginCountryGuideEntries(): OriginCountryGuideEntry[] {
-  return getEntries();
+export function getAllOriginCountryGuideEntries(
+  hubOptions?: OriginCountryHubVisibilityOptions
+): OriginCountryGuideEntry[] {
+  return hubOptions ? loadAllOriginCountryEntries(hubOptions) : getEntries();
 }
 
 /** Featured rows in hub order, including not-yet-published (for “Popular routes” + coming soon). */
-export function getFeaturedOriginCountryHubCards(limit?: number): OriginCountryGuideEntry[] {
-  const list = getEntries().filter((e) => e.featured);
+export function getFeaturedOriginCountryHubCards(
+  limit?: number,
+  hubOptions?: OriginCountryHubVisibilityOptions
+): OriginCountryGuideEntry[] {
+  const list = loadAllOriginCountryEntries(hubOptions).filter((e) => e.featured);
   return limit != null ? list.slice(0, limit) : list;
 }
 
@@ -179,16 +221,18 @@ export function getFeaturedOriginCountryHubCards(limit?: number): OriginCountryG
 export function getFeaturedOriginCountryGuides(
   limit?: number
 ): OriginCountryGuideEntry[] {
-  const list = getEntries().filter((e) => e.featured && e.isPublished);
+  const list = getEntries().filter(
+    (e) => e.featured && isOriginCountryStrictlyPublished(e.slug, new Date())
+  );
   return limit ? list.slice(0, limit) : list;
 }
 
-/** Single entry by slug, or null if not configured or not published. */
+/** Single entry by slug, or null if not configured or not strictly published (ignores dev hub preview). */
 export function getOriginCountryGuideBySlug(
   slug: string
 ): OriginCountryGuideEntry | null {
   const entry = getEntries().find((e) => e.slug === slug);
-  return entry?.isPublished ? entry : null;
+  return entry && isOriginCountryStrictlyPublished(slug, new Date()) ? entry : null;
 }
 
 /** All published guides grouped by region for the index page. */

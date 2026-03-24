@@ -20,8 +20,10 @@ export type CountryLandingContext = {
 
 export const SUPPORTED_ORIGIN_COUNTRIES = [
   "south-africa",
+  "kenya",
   "united-states",
   "india",
+  "indonesia",
   "united-kingdom",
   "canada",
   "australia",
@@ -34,6 +36,7 @@ export const SUPPORTED_ORIGIN_COUNTRIES = [
   "sweden",
   "denmark",
   "norway",
+  "pakistan",
   "ireland",
   "uae",
   "brazil",
@@ -54,8 +57,10 @@ export function isSupportedOriginCountry(slug: string): slug is OriginCountrySlu
 
 const COUNTRY_LABELS: Record<string, string> = {
   "south-africa": "South Africa",
+  kenya: "Kenya",
   "united-states": "United States",
   india: "India",
+  indonesia: "Indonesia",
   "united-kingdom": "United Kingdom",
   canada: "Canada",
   australia: "Australia",
@@ -68,6 +73,7 @@ const COUNTRY_LABELS: Record<string, string> = {
   sweden: "Sweden",
   denmark: "Denmark",
   norway: "Norway",
+  pakistan: "Pakistan",
   ireland: "Ireland",
   uae: "United Arab Emirates",
   brazil: "Brazil",

@@ -10,6 +10,9 @@
  *
  * For unique editorial photo heroes, add sources then run:
  *   `node scripts/ingest-country-hero-sources.mjs` (see that file for `INPUT_MAP` / env).
+ *
+ * For AI-generated editorial sources saved under Cursor assets, run:
+ *   `node scripts/ingest-ai-country-heroes.mjs` (see `INPUT_MAP` / `COUNTRY_AI_HERO_DIR`).
  */
 import sharp from "sharp";
 import { mkdir } from "node:fs/promises";

@@ -21,9 +21,12 @@ import {
   getPublishedOriginCountryGuides,
   getAllOriginCountryGuideEntries,
   ORIGIN_COUNTRY_INDEX_PATH,
+  type OriginCountryHubVisibilityOptions,
 } from "@/src/lib/countries/originCountryGuides";
 import { OriginCountryBrowseSection } from "@/src/components/guides/OriginCountryBrowseSection";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { headers } from "next/headers";
+import { DEV_SIMULATE_LIVE_HEADER } from "@/src/lib/publishing/devSimulateLive";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
@@ -99,9 +102,20 @@ export const metadata: Metadata = cloneSafeMetadata({
 const POPULAR_ROUTE_CARD_LIMIT = 5;
 
 export default async function MovingToNetherlandsFromIndexPage() {
-  const popularRoutePicks = getFeaturedOriginCountryHubCards(POPULAR_ROUTE_CARD_LIMIT);
-  const browseEntries = getAllOriginCountryGuideEntries();
-  const allPublished = getPublishedOriginCountryGuides();
+  const requestHeaders = await headers();
+  const simulateProductionHub =
+    process.env.NODE_ENV === "production" ||
+    requestHeaders.get(DEV_SIMULATE_LIVE_HEADER) === "1";
+
+  const hubVisibility: OriginCountryHubVisibilityOptions = {
+    enforceHubPublishDates: simulateProductionHub,
+  };
+
+  const popularRoutePicks = getFeaturedOriginCountryHubCards(POPULAR_ROUTE_CARD_LIMIT, hubVisibility);
+  const browseEntries = getAllOriginCountryGuideEntries(hubVisibility);
+  const allPublishedForSchema = simulateProductionHub
+    ? getPublishedOriginCountryGuides()
+    : browseEntries.filter((e) => e.isPublished);
 
   const breadcrumbCrumbs = [
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
@@ -114,8 +128,8 @@ export default async function MovingToNetherlandsFromIndexPage() {
     "@type": "ItemList",
     name: "Country-specific relocation guides for moving to the Netherlands",
     description: "Guides for moving to the Netherlands from specific origin countries, with planning notes and document guidance.",
-    numberOfItems: allPublished.length,
-    itemListElement: allPublished.map((entry, i) => ({
+    numberOfItems: allPublishedForSchema.length,
+    itemListElement: allPublishedForSchema.map((entry, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: entry.title,
@@ -172,12 +186,22 @@ export default async function MovingToNetherlandsFromIndexPage() {
                 </div>
               </section>
 
+              {simulateProductionHub && process.env.NODE_ENV === "development" ? (
+                <div className="mt-6 rounded-xl border border-amber-200 bg-amber-50/90 px-4 py-3 text-sm text-amber-950">
+                  <strong className="font-semibold">Production-style hub:</strong> guides with a future{" "}
+                  <code className="rounded bg-amber-100/80 px-1 py-0.5 text-xs">publishDate</code> are listed as{" "}
+                  <span className="font-medium">Coming soon</span> because this request uses{" "}
+                  <code className="rounded bg-amber-100/80 px-1 py-0.5 text-xs">?preview=true</code> (same as production).
+                  Open the hub without that query for clickable scheduled guides in local dev.
+                </div>
+              ) : null}
+
               {/* Browse country guides */}
               <OriginCountryBrowseSection
                 id="browse-country-guides"
                 items={browseEntries}
                 title="Browse country-specific relocation guides"
-                subheading="Find your origin country for tailored planning notes, document cues, and next steps."
+                subheading="Find your origin country for tailored planning notes, document cues, and next steps. On the live site, guides with a future publish date stay Coming soon until that date; in local dev they stay clickable unless you add ?preview=true to match production."
               />
 
               {/* How relocation planning differs */}
@@ -238,7 +262,7 @@ export default async function MovingToNetherlandsFromIndexPage() {
               <Section
                 id="popular-routes"
                 title="Popular relocation routes"
-                subtitle="Five common starting points; the browse section lists every planned origin-country guide (coming soon until the publish date)."
+                subtitle="Five common starting points; the browse section lists every origin-country guide. On production, future-dated guides show as Coming soon until publish; in next dev they are live links unless you open this page with ?preview=true."
                 contained={false}
                 className="!pt-10 !pb-6"
               >

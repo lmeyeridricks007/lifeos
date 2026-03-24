@@ -10,6 +10,8 @@ import type {
   GuideDocumentTranslationDocumentType,
   GuideDocumentTranslationCostItem,
   GuideDocumentTranslationTranslatorResource,
+  GuideSalaryComparisonExample,
+  GuideSalaryComparisonBarMarker,
 } from "@/src/lib/guides/types";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
@@ -1018,6 +1020,157 @@ function QuickAnswersRow({ items }: { items: GuideData["quickAnswers"] }) {
   );
 }
 
+const salaryEurFormatter = new Intl.NumberFormat("en-IE", {
+  style: "currency",
+  currency: "EUR",
+  maximumFractionDigits: 0,
+});
+
+function formatSalaryEur(value: number): string {
+  return salaryEurFormatter.format(value);
+}
+
+const markerBarByVariant: Record<GuideSalaryComparisonBarMarker["variant"], string> = {
+  violet: "bg-violet-600",
+  sky: "bg-sky-600",
+  amber: "bg-amber-600",
+};
+
+const badgeToneStyles = {
+  positive: "border-emerald-200 bg-emerald-50/90 text-emerald-900",
+  negative: "border-rose-200 bg-rose-50/90 text-rose-900",
+  neutral: "border-slate-200 bg-slate-50 text-slate-800",
+} as const;
+
+const markerLabelClasses: Record<GuideSalaryComparisonBarMarker["variant"], string> = {
+  violet: "text-violet-900",
+  sky: "text-sky-950",
+  amber: "text-amber-950",
+};
+
+function SalaryComparisonBar({
+  salaryEur,
+  barMaxEur,
+  markers,
+}: {
+  salaryEur: number;
+  barMaxEur: number;
+  markers: GuideSalaryComparisonBarMarker[];
+}) {
+  const max = Math.max(barMaxEur, salaryEur, ...markers.map((m) => m.amountEur));
+  const pct = (v: number) => `${Math.min(100, Math.max(0, (v / max) * 100))}%`;
+
+  return (
+    <div className="mt-4 space-y-3">
+      <p className="text-xs font-medium uppercase tracking-wide text-slate-500">Salary vs typical IND floors (illustrative)</p>
+      <div
+        className="rounded-xl border border-slate-200 bg-gradient-to-b from-slate-50 to-slate-100/90 p-4 shadow-inner"
+        role="img"
+        aria-label={`Gross salary ${formatSalaryEur(salaryEur)} compared to threshold markers up to ${formatSalaryEur(max)}`}
+      >
+        <div className="relative mx-auto mt-2 h-9 w-full max-w-2xl">
+          <div className="absolute bottom-2 left-0 right-0 h-2.5 rounded-full bg-slate-200/90 shadow-sm">
+            {markers.map((m, i) => (
+              <span
+                key={i}
+                className={`absolute top-1/2 h-5 w-0.5 -translate-y-1/2 rounded-full shadow-sm ring-2 ring-white ${markerBarByVariant[m.variant]}`}
+                style={{ left: pct(m.amountEur), marginLeft: "-1px" }}
+                title={`${m.label}: ${formatSalaryEur(m.amountEur)}`}
+              />
+            ))}
+            <span
+              className="absolute top-1/2 z-10 flex h-6 min-w-[2.5rem] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-md border-2 border-slate-900 bg-white px-1.5 text-[10px] font-bold leading-none text-slate-900 shadow-md sm:text-xs"
+              style={{ left: pct(salaryEur) }}
+            >
+              You
+            </span>
+          </div>
+        </div>
+        <div className="mx-auto mt-1 flex max-w-2xl justify-between text-[10px] font-medium tabular-nums text-slate-500 sm:text-xs">
+          <span>€0</span>
+          <span>Scale max {formatSalaryEur(max)}</span>
+        </div>
+      </div>
+      <ul className="flex flex-wrap gap-x-4 gap-y-2 text-xs text-slate-600">
+        <li className="font-medium text-slate-800">
+          Your offer: <span className="tabular-nums text-slate-900">{formatSalaryEur(salaryEur)}</span> / month
+        </li>
+        {markers.map((m, i) => (
+          <li key={i} className="flex items-center gap-1.5">
+            <span
+              className={`inline-block h-2 w-2 shrink-0 rounded-full ring-2 ring-white ${markerBarByVariant[m.variant]}`}
+              aria-hidden
+            />
+            <span className={markerLabelClasses[m.variant]}>
+              {m.label}: <span className="tabular-nums font-medium text-slate-900">{formatSalaryEur(m.amountEur)}</span>
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function GuideSalaryComparisonExamples({ examples }: { examples: GuideSalaryComparisonExample[] }) {
+  return (
+    <div className="mt-8 grid gap-6">
+      {examples.map((ex, index) => (
+        <div
+          key={index}
+          className="overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-sm ring-1 ring-slate-100"
+        >
+          <div className="flex flex-col gap-1 border-b border-slate-100 bg-slate-50/80 px-5 py-4 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">Example {index + 1}</p>
+              <h3 className="mt-1 text-lg font-semibold text-slate-900">{ex.title}</h3>
+              <p className="mt-1 text-sm text-slate-600">{ex.profile}</p>
+            </div>
+          </div>
+          <div className="px-5 py-5">
+            {ex.visualization.type === "bar" ? (
+              <SalaryComparisonBar
+                salaryEur={ex.visualization.salaryEur}
+                barMaxEur={ex.visualization.barMaxEur}
+                markers={ex.visualization.markers}
+              />
+            ) : (
+              <div className="mt-1 space-y-3">
+                <p className="text-xs font-medium uppercase tracking-wide text-slate-500">
+                  Reduced gross floors (context-specific only)
+                </p>
+                <div className="grid gap-3 sm:grid-cols-2">
+                {ex.visualization.columns.map((col, ci) => (
+                  <div
+                    key={ci}
+                    className="rounded-xl border border-amber-100 bg-gradient-to-br from-amber-50/90 to-white p-4"
+                  >
+                    <p className="text-xs font-semibold uppercase tracking-wide text-amber-800/90">{col.title}</p>
+                    <p className="mt-2 text-2xl font-semibold tabular-nums text-slate-900">{col.amount}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600">{col.note}</p>
+                  </div>
+                ))}
+                </div>
+              </div>
+            )}
+            <div className="mt-5 flex flex-wrap gap-2">
+              {ex.badges.map((b, bi) => (
+                <div
+                  key={bi}
+                  className={`inline-flex max-w-full flex-col rounded-lg border px-3 py-2 text-sm shadow-sm ${badgeToneStyles[b.tone]}`}
+                >
+                  <span className="font-semibold">{b.route}</span>
+                  {b.caption ? <span className="mt-0.5 text-xs opacity-90">{b.caption}</span> : null}
+                </div>
+              ))}
+            </div>
+            <p className="mt-5 text-sm leading-relaxed text-slate-700">{ex.body}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function SectionContent({
   section,
   affiliateBlock,
@@ -1048,6 +1201,9 @@ function SectionContent({
           {para}
         </p>
       ))}
+      {section.salaryComparisonExamples?.length ? (
+        <GuideSalaryComparisonExamples examples={section.salaryComparisonExamples} />
+      ) : null}
       {section.bullets?.length ? (
         <ul className="list-inside list-disc space-y-1 text-slate-700">
           {section.bullets.map((bullet, i) => (

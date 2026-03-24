@@ -2,7 +2,14 @@
  * Converts VisaPageData to GuideData so visa pillar pages can use GuidePageTemplate.
  */
 
-import type { GuideData, GuideSection, GuideToolCta, GuideHeroCta, GuideTocItem } from "@/src/lib/guides/types";
+import type {
+  GuideData,
+  GuideSection,
+  GuideToolCta,
+  GuideHeroCta,
+  GuideTocItem,
+  GuideSalaryComparisonExample,
+} from "@/src/lib/guides/types";
 import type { GuideSectionService, GuideExampleScenario } from "@/src/lib/guides/types";
 import type { VisaPageData } from "@/src/content/visas/types";
 
@@ -11,10 +18,113 @@ const TOOLS = `${BASE}/moving/tools`;
 const DOCUMENT_READINESS_CHECKER = `${BASE}/document-readiness-checker/`;
 const COMPARE_VISAS_HREF = `${BASE}/visa/compare-visas/`;
 
+/** Shared worked examples; badge order is EU Blue Card first, then HSM (EU Blue Card guide). */
+const EU_BLUE_CARD_VS_HSM_SALARY_EXAMPLES: GuideSalaryComparisonExample[] = [
+  {
+    title: "Younger hire · salary below standard Blue Card",
+    profile: "Age 28 · €4,800 / month gross (excl. holiday allowance)",
+    visualization: {
+      type: "bar",
+      salaryEur: 4800,
+      barMaxEur: 7000,
+      markers: [
+        { amountEur: 4357, label: "HSM under 30", variant: "violet" },
+        { amountEur: 5942, label: "Standard EU Blue Card & HSM 30+", variant: "sky" },
+      ],
+    },
+    badges: [
+      {
+        route: "EU Blue Card (standard)",
+        tone: "negative",
+        caption: "Below €5,942 — standard tier may not fit",
+      },
+      {
+        route: "Highly Skilled Migrant (under 30)",
+        tone: "positive",
+        caption: "Above €4,357 with a recognised sponsor",
+      },
+    ],
+    body: "That is under the standard EU Blue Card threshold (€5,942 in our current figures), so the standard Blue Card tier may not fit. The same offer can still meet the Highly Skilled Migrant under-30 threshold (€4,357) with a recognized sponsor. In practice the employer may proceed on HSM rather than standard Blue Card unless a reduced Blue Card criterion or other exception applies to you.",
+  },
+  {
+    title: "Higher offer · clears both standard tiers",
+    profile: "Same profile · €6,200 / month gross (excl. holiday allowance)",
+    visualization: {
+      type: "bar",
+      salaryEur: 6200,
+      barMaxEur: 7000,
+      markers: [
+        { amountEur: 4357, label: "HSM under 30", variant: "violet" },
+        { amountEur: 5942, label: "Standard EU Blue Card & HSM 30+", variant: "sky" },
+      ],
+    },
+    badges: [
+      { route: "EU Blue Card (standard)", tone: "positive", caption: "Meets €5,942 floor" },
+      { route: "Highly Skilled Migrant", tone: "positive", caption: "Meets standard tier for this profile" },
+    ],
+    body: "That meets the standard EU Blue Card threshold and the HSM thresholds for that profile. The employer might still choose Highly Skilled Migrant because sponsor workflows are very common in the Netherlands, or EU Blue Card if your situation benefits from the Blue Card framework (including longer-term EU mobility under EU rules). The right filing is a legal/operational choice, not something you infer from salary alone.",
+  },
+  {
+    title: "Experienced hire · above standard floors",
+    profile: "Age 35 with a degree · €6,800 / month gross (excl. holiday allowance)",
+    visualization: {
+      type: "bar",
+      salaryEur: 6800,
+      barMaxEur: 7500,
+      markers: [{ amountEur: 5942, label: "Standard EU Blue Card & HSM 30+", variant: "sky" }],
+    },
+    badges: [
+      { route: "EU Blue Card (standard)", tone: "positive", caption: "Above €5,942" },
+      { route: "Highly Skilled Migrant (30+)", tone: "positive", caption: "Above €5,942" },
+    ],
+    body: "You are likely above both the standard EU Blue Card threshold (€5,942) and the HSM 30+ threshold (same €5,942 in current figures). Timing can also differ: applications through a recognized sponsor may follow a 30-day decision period for EU Blue Card in some cases, versus other paths that can run longer—confirm against the IND decision-periods page.",
+  },
+  {
+    title: "Reduced salary criteria (rules-based)",
+    profile: "Lower floors only when IND conditions for each reduction are met",
+    visualization: {
+      type: "reduced",
+      columns: [
+        {
+          title: "EU Blue Card — reduced gross",
+          amount: "€4,754",
+          note: "Applies only when the IND rules for that reduction apply to your case—not from the salary number alone.",
+        },
+        {
+          title: "Highly Skilled Migrant — reduced",
+          amount: "€3,122",
+          note: "Applies only in specific situations defined by the IND. Do not assume eligibility without checking the official criteria.",
+        },
+      ],
+    },
+    badges: [
+      {
+        route: "EU Blue Card (reduced)",
+        tone: "neutral",
+        caption: "Context-specific — verify on IND",
+      },
+      {
+        route: "Highly Skilled Migrant (reduced)",
+        tone: "neutral",
+        caption: "Context-specific — verify on IND",
+      },
+    ],
+    body: "The EU Blue Card has a reduced gross threshold (€4,754 in our current figures) only when the IND rules for that reduction apply. Highly Skilled Migrant has a separate reduced criterion (€3,122) only in specific situations. Meeting a number on paper does not automatically mean you qualify for either reduction.",
+  },
+];
+
+const HSM_VS_EU_BLUE_CARD_SALARY_EXAMPLES: GuideSalaryComparisonExample[] = EU_BLUE_CARD_VS_HSM_SALARY_EXAMPLES.map(
+  (ex) => ({
+    ...ex,
+    badges: [...ex.badges].reverse(),
+  })
+);
+
 export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
   const tocItems: GuideTocItem[] = [
     { id: "overview", label: "Overview" },
     { id: "who-this-visa-is-for", label: "Who this visa is for" },
+    { id: "hsm-vs-eu-blue-card", label: "HSM vs EU Blue Card" },
     { id: "alternatives", label: "Alternatives" },
     { id: "salary-thresholds", label: "Salary thresholds and costs" },
     { id: "employer-requirements", label: "Employer requirements" },
@@ -77,6 +187,57 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     },
   };
 
+  const hsmVsEuBlueCardSection: GuideSection = {
+    id: "hsm-vs-eu-blue-card",
+    heading: "Highly Skilled Migrant vs EU Blue Card: what is the difference?",
+    body: [
+      "Both are legal work-based residence routes for non-EU employees in the Netherlands, but they are not the same permit. Your employer (and often immigration counsel) chooses which route to apply for, based on salary, job level, qualifications, and processing options.",
+    ],
+    salaryComparisonExamples: HSM_VS_EU_BLUE_CARD_SALARY_EXAMPLES,
+    table: {
+      headers: ["Topic", "Highly Skilled Migrant (kennismigrant)", "EU Blue Card (Netherlands)"],
+      rows: [
+        [
+          "What it is",
+          "Netherlands-specific permit for skilled employees of a recognized sponsor.",
+          "EU-wide category implemented in the Netherlands; distinct eligibility and salary rules.",
+        ],
+        [
+          "Sponsor / employer",
+          "Must be an IND recognised sponsor; employer applies for you.",
+          "Work-based route with employer involvement; recognized-sponsor applications can use shorter decision periods in some cases.",
+        ],
+        [
+          "Typical salary floors (gross/month, excl. holiday pay — verify on IND)",
+          "30 and over: €5,942. Under 30: €4,357. Reduced criterion: €3,122 in qualifying cases only.",
+          "Standard: €5,942. Reduced criterion: €4,754 in qualifying cases only.",
+        ],
+        [
+          "Age and tiers",
+          "Clear under-30 tier; reduced criterion for specific situations.",
+          "No “under-30 discount” like HSM; eligibility is tied to highly qualified employment and correct salary tier.",
+        ],
+        [
+          "Mobility angle",
+          "Focused on living and working in the Netherlands.",
+          "Designed with longer-term EU labour mobility in mind for holders who meet EU rules.",
+        ],
+      ],
+    },
+    callout: {
+      type: "info",
+      title: "Official criteria decide",
+      text: "This page is a planning aid, not legal advice. Your employer must file the correct permit type. For EU Blue Card specifics and comparisons, read the EU Blue Card guide and the IND pages for both permits.",
+      href: "https://ind.nl/en/residence-permits/work/european-blue-card-residence-permit",
+      linkLabel: "IND — EU Blue Card",
+    },
+    links: [
+      { label: "EU Blue Card in the Netherlands (full guide)", href: `${BASE}/visa/eu-blue-card/` },
+      { label: "Compare visa routes (overview)", href: COMPARE_VISAS_HREF },
+      { label: "IND — Highly skilled migrant", href: "https://ind.nl/en/residence-permits/work/highly-skilled-migrant" },
+    ],
+  };
+
   const alternativesSection: GuideSection = {
     id: "alternatives",
     heading: "When another visa may fit better",
@@ -103,7 +264,7 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     callout: {
       type: "info",
       title: "Figures can change",
-      text: "Salary criteria and fees can change. Values are maintained in a central data file; always check the IND required-amounts and fees pages for current figures. Employer and role conditions still apply besides salary.",
+      text: "Salary criteria and fees can change. Always check the IND required-amounts and fees pages for current figures. Employer and role conditions still apply besides salary.",
     },
     ctaBlock: {
       title: "Estimate your relocation cost",
@@ -203,6 +364,7 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
   const sections: GuideSection[] = [
     overviewSection,
     whoForSection,
+    hsmVsEuBlueCardSection,
     alternativesSection,
     salarySection,
     employerSection,
@@ -277,6 +439,7 @@ export function euBlueCardToGuideData(v: VisaPageData): GuideData {
   const tocItems: GuideTocItem[] = [
     { id: "overview", label: "Overview" },
     { id: "who-this-visa-is-for", label: "Who this route is for" },
+    { id: "eu-blue-card-vs-hsm", label: "EU Blue Card vs HSM" },
     { id: "alternatives", label: "Alternatives" },
     { id: "salary-thresholds", label: "Salary thresholds and costs" },
     { id: "employer-requirements", label: "Employer and application route" },
@@ -342,6 +505,57 @@ export function euBlueCardToGuideData(v: VisaPageData): GuideData {
     },
   };
 
+  const euBlueCardVsHsmSection: GuideSection = {
+    id: "eu-blue-card-vs-hsm",
+    heading: "EU Blue Card vs Highly Skilled Migrant: what is the difference?",
+    body: [
+      "From the Netherlands side, you may be offered either the EU Blue Card or the Dutch Highly Skilled Migrant (kennismigrant) permit. Both are legal work-based routes for non-EU employees, but the rules are not identical. Your employer (and immigration counsel) files one permit type; you do not pick arbitrarily.",
+    ],
+    salaryComparisonExamples: EU_BLUE_CARD_VS_HSM_SALARY_EXAMPLES,
+    table: {
+      headers: ["Topic", "EU Blue Card (Netherlands)", "Highly Skilled Migrant (kennismigrant)"],
+      rows: [
+        [
+          "What it is",
+          "EU-wide highly qualified employee category implemented in the Netherlands.",
+          "Netherlands-specific permit for skilled employees of a recognized IND sponsor.",
+        ],
+        [
+          "Employer / sponsor",
+          "Work-based route; recognized-sponsor submissions can use shorter decision periods in some cases.",
+          "Requires an IND recognized sponsor; employer applies for you under Dutch kennismigrant rules.",
+        ],
+        [
+          "Typical salary floors (gross/month, excl. holiday pay — verify on IND)",
+          "Standard: €5,942. Reduced criterion: €4,754 in qualifying cases only.",
+          "30 and over: €5,942. Under 30: €4,357. Reduced criterion: €3,122 in qualifying cases only.",
+        ],
+        [
+          "Age and tiers",
+          "No Dutch-style under-30 discount; eligibility follows Blue Card salary tiers and job qualification rules.",
+          "Explicit under-30 tier; different reduced rules than Blue Card.",
+        ],
+        [
+          "Mobility angle",
+          "Framed for longer-term EU labour mobility when EU conditions are met.",
+          "Focused on living and working in the Netherlands.",
+        ],
+      ],
+    },
+    callout: {
+      type: "info",
+      title: "Official criteria decide",
+      text: "This page is a planning aid, not legal advice. For the Dutch work route your employer files, rely on the IND and qualified counsel. The Highly Skilled Migrant guide on this site explains the same comparison from the HSM side.",
+      href: "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+      linkLabel: "IND — Highly skilled migrant",
+    },
+    links: [
+      { label: "Highly Skilled Migrant visa (full guide)", href: `${BASE}/visa/highly-skilled-migrant/` },
+      { label: "Compare visa routes (overview)", href: COMPARE_VISAS_HREF },
+      { label: "IND — European Blue Card", href: "https://ind.nl/en/residence-permits/work/european-blue-card-residence-permit" },
+    ],
+  };
+
   const alternativesSection: GuideSection = {
     id: "alternatives",
     heading: "When another visa may fit better",
@@ -368,7 +582,7 @@ export function euBlueCardToGuideData(v: VisaPageData): GuideData {
     callout: {
       type: "info",
       title: "Figures can change",
-      text: "Thresholds and fees are maintained in a central data file; always check the IND required-amounts and fees pages for current figures. Salary alone does not guarantee approval; other route requirements still matter.",
+      text: "Thresholds and fees can change. Always check the IND required-amounts and fees pages for current figures. Salary alone does not guarantee approval; other route requirements still matter.",
     },
     ctaBlock: {
       title: "Estimate your relocation cost",
@@ -468,6 +682,7 @@ export function euBlueCardToGuideData(v: VisaPageData): GuideData {
   const sections: GuideSection[] = [
     overviewSection,
     whoForSection,
+    euBlueCardVsHsmSection,
     alternativesSection,
     salarySection,
     employerSection,

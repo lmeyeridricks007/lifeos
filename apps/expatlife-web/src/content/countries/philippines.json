@@ -1,0 +1,157 @@
+{
+  "slug": "philippines",
+  "name": "the Philippines",
+  "shortName": "Philippines",
+  "iso2": "PH",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["Filipino", "English"],
+  "travel": {
+    "typicalFlightTime": "About 14–16+ hours with connections (e.g. via Middle East or Asia); direct options vary by season and carrier",
+    "notes": [
+      "Long-haul routing and pricing vary by hub; many movers depart from Manila or Cebu.",
+      "Align flight booking with MVV validity and instructions in your IND decision letter before you buy non-refundable tickets."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored employment with Dutch or international employers (including highly skilled migrant routes)",
+      "Master’s or PhD study at a Dutch university",
+      "Partner or family reunification under eligible routes",
+      "Entrepreneurship or startup where Dutch route conditions are met",
+      "Corporate transfer or international assignment",
+      "Orientation year or other graduate-linked routes where eligibility matches official criteria"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven"],
+    "commonSectors": ["Technology", "Healthcare", "Maritime and logistics", "Hospitality", "Higher education", "Finance", "Creative industries"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other employer-sponsored employment",
+      "EU Blue Card where salary and qualification rules are met",
+      "Study with a Dutch institution as sponsor",
+      "Partner or family routes with relationship and evidence requirements",
+      "Startup or self-employment where conditions are met",
+      "Orientation year for eligible graduates—see IND pages for current criteria",
+      "Intra-corporate transfer where the official route matches your case"
+    ],
+    "notes": [
+      "Filipino nationals are not EU/EEA/Switzerland citizens: stays longer than short visits normally require a Dutch residence permit for a recognised purpose.",
+      "Many long-stay procedures include an MVV (long-stay entry visa) so you can travel to the Netherlands and complete residence-permit steps—but requirements depend on your route; confirm on IND.nl and Netherlands Worldwide.",
+      "Short-stay Schengen applications for the Netherlands from the Philippines are submitted through VFS Global in Cebu or Makati—that process is not the same as long-stay relocation.",
+      "The IND explains that when you need an MVV, you usually apply for the MVV and residence permit together from abroad."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid Philippine passport (Netherlands Worldwide states at least six months’ validity and blank pages are required for MVV collection—confirm current rules on the official page)",
+      "PSA-issued civil documents when your route requires them (birth, marriage, CENOMAR, etc.)",
+      "Educational diplomas and professional credentials for work or study",
+      "Employment contract, admission letter, or sponsor materials as required",
+      "Police certificates or medical checks only when your permit checklist asks for them"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide explains that documents from the Philippines must be legalised with an apostille from the Philippine Department of Foreign Affairs (DFA) for use in the Netherlands.",
+      "Filipino documents must be translated into Dutch, English, French, or German when translation is required; English documents usually do not need translation—confirm per document on the Philippines legalisation page.",
+      "Documents should be original and complete as described on Netherlands Worldwide.",
+      "Build in time for PSA issuance, DFA apostille, translations when needed, and appointment scheduling."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation: documents from the Philippines",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/philippines",
+        "contactSummary": "DFA apostille, translation rules, and using Philippine documents in the Netherlands."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "MVV and Schengen applications from the Philippines",
+        "website": "https://www.netherlandsworldwide.nl/visa-the-netherlands/mvv-long-stay/apply-philippines",
+        "contactSummary": "Long-stay MVV in Manila, VFS Global for Schengen in Cebu/Makati."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "PHP / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Philippines–Netherlands moves often combine air freight for essentials with sea freight for larger households. Many people book temporary furnished housing in the Netherlands while apostille work, permit decisions, and shipments align.",
+    "notes": [
+      "Align travel dates with MVV validity and your IND decision letter.",
+      "Keep copies of inventories and customs-related paperwork accessible."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV rules, route-specific requirements, and exemptions."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and visa applications in the Philippines",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Philippines-specific Schengen (VFS), MVV in Manila, legalisation, and waiting times."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial long-haul relocation from the Philippines to the Netherlands: thoughtful document and travel planning, warm island-to-Europe mood, premium and trustworthy.",
+  "seo": {
+    "title": "Moving to the Netherlands from the Philippines | MVV, Visa, Documents & Setup",
+    "description": "Planning a move from the Philippines to the Netherlands? Learn about MVV, residence permits, document legalisation, housing, and relocation steps.",
+    "keywords": [
+      "moving to the netherlands from philippines",
+      "philippines to netherlands visa",
+      "mvv netherlands philippines",
+      "relocating from philippines to netherlands",
+      "philippines apostille netherlands",
+      "dutch residence permit philippines",
+      "netherlands visa philippines requirements"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Philippines-to-Netherlands moves are typically immigration-heavy: MVV collection in Manila, VFS Global for Schengen short stay in Cebu/Makati, DFA apostille on documents, and long-haul logistics."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Filipinos need a visa for short visits to the Netherlands?",
+      "a": "For tourism or short business visits, Schengen short-stay rules apply. From the Philippines, applications are submitted via VFS Global in Cebu or Makati as described on Netherlands Worldwide’s Philippines Schengen page. Short-stay visas are not a substitute for a residence permit if you intend to live in the Netherlands."
+    },
+    {
+      "q": "What is an MVV when moving from the Philippines to the Netherlands?",
+      "a": "The MVV (provisional residence permit) is a long-stay entry visa (Type D) described by the IND for many stays longer than 90 days. It is placed in your passport after a positive IND decision so you can travel to the Netherlands and complete steps such as collecting your residence permit. Whether you need an MVV depends on your route—check the IND and MVV exemption page. The IND states that when an MVV is required, you usually apply for the MVV and residence permit together from abroad."
+    },
+    {
+      "q": "Where do I collect the MVV sticker in the Philippines?",
+      "a": "Netherlands Worldwide publishes a Philippines-specific page for the MVV long-stay visa. The MVV sticker is collected at the Dutch embassy in Manila after IND approval. Appointments are scheduled by email following the instructions on that official page. Your passport must meet validity and blank-page requirements stated on Netherlands Worldwide."
+    },
+    {
+      "q": "Where do I apply for a Schengen short-stay visa from the Philippines?",
+      "a": "Netherlands Worldwide explains that Schengen visa applications for the Netherlands are submitted through VFS Global in Cebu or Makati. That is separate from long-stay MVV and residence-permit procedures handled through the embassy and IND process for relocation."
+    },
+    {
+      "q": "How are Philippine documents prepared for use in the Netherlands?",
+      "a": "Netherlands Worldwide states that documents from the Philippines must be legalised with an apostille from the Philippine Department of Foreign Affairs (DFA). Translation into Dutch, English, French, or German may be required when applicable; English documents often do not need translation. Documents must be original and complete—see the Philippines legalisation page for details."
+    },
+    {
+      "q": "What should I plan for right after arriving in the Netherlands?",
+      "a": "Most people prioritise municipal registration and BSN, collecting a residence permit if applicable, opening a bank account, and arranging Dutch basic health insurance when they become resident. Use the after-arrival guides on this site alongside official checklists."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Manila-based professional with a Dutch employer sponsor",
+      "summary": "Coordinate IND timing, MVV collection at the embassy in Manila, DFA apostille on civil documents, housing near work, and BSN-first banking and insurance."
+    },
+    {
+      "title": "Student admitted to a Dutch university",
+      "summary": "Align admission, study-permit conditions, proof of funds, and housing; legalise PSA records with DFA apostille and plan translations when required."
+    }
+  ]
+}

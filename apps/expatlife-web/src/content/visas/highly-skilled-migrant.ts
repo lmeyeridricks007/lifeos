@@ -206,7 +206,7 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
     },
     {
       q: "What is the difference between Highly Skilled Migrant and EU Blue Card?",
-      a: "Both are work-based routes. The Highly Skilled Migrant permit is Netherlands-specific and requires a recognized Dutch sponsor and meeting Dutch salary thresholds. The EU Blue Card is an EU-wide scheme with its own salary and eligibility rules and can offer mobility in the EU. Check the IND for the exact criteria that apply to you.",
+      a: "Both are work-based routes for non-EU employees in the Netherlands, but they use different rules (salary tiers, sponsor framing, and EU mobility). On this page, use the table of contents link “HSM vs EU Blue Card” for a side-by-side comparison and concrete salary examples. Your employer chooses the permit type and the IND decides; always confirm current thresholds on the IND required-amounts page.",
     },
     {
       q: "What happens after approval?",

@@ -1,0 +1,159 @@
+{
+  "slug": "indonesia",
+  "name": "Indonesia",
+  "shortName": "Indonesia",
+  "iso2": "ID",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["Indonesian", "English"],
+  "travel": {
+    "typicalFlightTime": "About 16–20+ hours with connections (common hubs in the Middle East or Asia); schedules vary by carrier and season",
+    "notes": [
+      "Long-haul from Jakarta, Surabaya, Bali, or other hubs; align ticketing with MVV validity and your IND decision letter before non-refundable purchases.",
+      "Document apostille through the Indonesian Ministry of Law and appointment scheduling can run in parallel with employer or university timelines."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored employment with Dutch or international employers (including highly skilled migrant routes)",
+      "Master’s or PhD study at a Dutch university",
+      "Partner or family reunification under eligible routes",
+      "Entrepreneurship or startup where Dutch route conditions are met",
+      "Corporate transfer or international assignment",
+      "Orientation year or other graduate-linked routes where eligibility matches official IND criteria"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven"],
+    "commonSectors": ["Technology", "Agri-food and trade", "Maritime and logistics", "Higher education", "Finance", "Creative industries", "Healthcare"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other employer-sponsored employment",
+      "EU Blue Card where salary and qualification rules are met",
+      "Study with a Dutch institution as sponsor",
+      "Partner or family routes with relationship and evidence requirements",
+      "Startup or self-employment where conditions are met",
+      "Orientation year for eligible graduates—see IND pages for current criteria",
+      "Intra-corporate transfer where the official route matches your case"
+    ],
+    "notes": [
+      "Indonesian nationals are not EU/EEA/Switzerland citizens: stays longer than short visits normally require a Dutch residence permit for a recognised purpose.",
+      "Many long-stay procedures include an MVV (long-stay entry visa) so you can travel to the Netherlands and complete residence-permit steps—but whether you need an MVV depends on your route; confirm on IND.nl and Netherlands Worldwide.",
+      "Short-stay Schengen applications for the Netherlands from Indonesia are submitted through VFS Global in Bali, Jakarta, or Surabaya when you live in Indonesia or Timor-Leste—that is not the same process as long-stay relocation.",
+      "The IND explains that when you need an MVV, you usually apply for the MVV and residence permit together from abroad."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid passport (confirm validity and blank-page rules on Netherlands Worldwide for your MVV or visa step)",
+      "Civil documents when your route requires them (e.g. birth, marriage, family composition)",
+      "Educational diplomas and professional credentials for work or study",
+      "Employment contract, admission letter, or sponsor materials as required",
+      "Police certificates or medical checks only when your permit checklist asks for them"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide explains that to use a document from Indonesia in the Netherlands it must be legalised with an apostille from the Indonesian Ministry of Law—a simplified legalisation route for use in the Netherlands.",
+      "Whether you also need certified translation depends on the document and the authority that receives it; confirm on the Netherlands Worldwide Indonesia legalisation page and with your sponsor or the IND checklist.",
+      "Build in time for civil registry steps, Ministry of Law apostille, possible translations, and embassy or VFS scheduling."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation: documents from Indonesia",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/indonesia",
+        "contactSummary": "Apostille via Indonesian Ministry of Law and using Indonesian documents in the Netherlands."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "MVV, Schengen, and appointments from Indonesia",
+        "website": "https://www.netherlandsworldwide.nl/visa-the-netherlands/mvv-long-stay/apply-indonesia",
+        "contactSummary": "Long-stay MVV in Jakarta when your IND letter applies; VFS Global for Schengen in Bali, Jakarta, or Surabaya."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "IDR / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Indonesia–Netherlands moves often combine air freight for essentials with sea freight for larger households. Many people book temporary furnished housing in the Netherlands while apostille work, permit decisions, and shipments align.",
+    "notes": [
+      "Align travel dates with MVV validity and your IND decision letter.",
+      "Keep copies of inventories and customs-related paperwork accessible."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV rules, route-specific requirements, and exemptions."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and visa applications in Indonesia",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Indonesia-specific Schengen (VFS), MVV in Jakarta, legalisation, civic integration exam abroad, and waiting times."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial long-haul relocation from Indonesia to the Netherlands: passport and documents with a subtle map from Jakarta toward Europe, warm premium light, trustworthy planning mood.",
+  "seo": {
+    "title": "Moving to the Netherlands from Indonesia | Visa, MVV, Documents & Practical Setup",
+    "description": "Planning a move from Indonesia to the Netherlands? Explore visa routes, MVV guidance, document apostille requirements, housing, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from indonesia",
+      "move from indonesia to netherlands",
+      "indonesia to netherlands visa",
+      "relocating from indonesia to netherlands",
+      "netherlands residence permit indonesia",
+      "mvv netherlands indonesia",
+      "indonesia documents apostille netherlands",
+      "schengen visa indonesia netherlands",
+      "dutch relocation from indonesia",
+      "netherlands long stay visa indonesia"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Indonesia-to-Netherlands moves are immigration-heavy: MVV collection in Jakarta when applicable, VFS Global for Schengen short stay (Bali, Jakarta, Surabaya), Ministry of Law apostille, and long-haul logistics."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Indonesians need a visa for short visits to the Netherlands?",
+      "a": "For tourism or short business visits, Schengen short-stay rules apply when a visa is required. From Indonesia (or if you live in Timor-Leste), applications for a Netherlands Schengen visa are submitted through VFS Global in Bali, Jakarta, or Surabaya as described on Netherlands Worldwide. A short-stay visa is not a substitute for a residence permit if you intend to live in the Netherlands."
+    },
+    {
+      "q": "What is an MVV when moving from Indonesia to the Netherlands?",
+      "a": "The MVV (provisional residence permit) is a long-stay entry visa (Type D) described by the IND for many stays longer than 90 days. After a positive IND decision, the MVV sticker is placed in your passport so you can travel to the Netherlands and complete steps such as collecting your residence permit. Whether you need an MVV depends on your route—check the IND and MVV exemption page. The IND states that when an MVV is required, you usually apply for the MVV and residence permit together from abroad."
+    },
+    {
+      "q": "Where is the MVV collected in Indonesia?",
+      "a": "Netherlands Worldwide publishes an Indonesia-specific page for the MVV long-stay visa. You can only apply for the MVV visa sticker at the Dutch embassy in Jakarta when that is stated in your IND positive decision letter. Follow the current instructions on Netherlands Worldwide’s Indonesia MVV and making-appointment pages for scheduling and requirements."
+    },
+    {
+      "q": "How are Indonesian documents prepared for use in the Netherlands?",
+      "a": "Netherlands Worldwide states that documents from Indonesia must be legalised with an apostille from the Indonesian Ministry of Law for use in the Netherlands. Translation or additional steps may be required depending on the document and the authority—see the Indonesia legalisation page on Netherlands Worldwide and our document guides for general context."
+    },
+    {
+      "q": "What is the civic integration exam abroad in Indonesia?",
+      "a": "Some family-based routes may require the civic integration exam abroad. Netherlands Worldwide has a dedicated page for taking this exam in Indonesia. It only applies when your official checklist and route require it—not to every mover."
+    },
+    {
+      "q": "What should I plan for right after arriving in the Netherlands?",
+      "a": "Most people prioritise municipal registration and BSN, collecting a residence permit if applicable, opening a bank account, and arranging Dutch basic health insurance when they become resident. Use the after-arrival guides on this site alongside official checklists."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Jakarta-based professional with a Dutch employer sponsor",
+      "summary": "Coordinate IND timing with your sponsor, MVV steps at the embassy in Jakarta when your letter requires it, Ministry of Law apostille on civil documents, housing near work, and BSN-first banking and insurance."
+    },
+    {
+      "title": "Student admitted to a Dutch university",
+      "summary": "Align admission, study-permit conditions, proof of funds, and housing; complete Ministry of Law apostille on Indonesian civil records and confirm translations if the institution or IND checklist requires them."
+    }
+  ]
+}

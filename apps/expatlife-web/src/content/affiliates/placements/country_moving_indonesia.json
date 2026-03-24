@@ -1,0 +1,22 @@
+{
+  "id": "country_moving_indonesia",
+  "destinationCountry": "netherlands",
+  "originCountry": "indonesia",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/indonesia/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services Indonesians often compare when moving to the Netherlands",
+  "intro": "Banking, housing, insurance, immigration support, and mobile are common categories to line up before and after arrival.",
+  "categoryOrder": ["documents", "planning", "banking", "housing", "insurance", "mobile"],
+  "items": [
+    { "providerId": "wise", "reason": "International transfers while you coordinate IDR and EUR cash flow." },
+    { "providerId": "bunq", "reason": "Digital Dutch banking often used soon after BSN and address." },
+    { "providerId": "housinganywhere", "reason": "Short and mid-term listings while you search for a long-term rental." },
+    { "providerId": "simyo", "reason": "Dutch SIM options after you land." },
+    { "providerId": "independer", "reason": "Compare Dutch basic health insurance once you are resident." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

@@ -1,0 +1,159 @@
+{
+  "slug": "kenya",
+  "name": "Kenya",
+  "shortName": "Kenya",
+  "iso2": "KE",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["Swahili", "English"],
+  "travel": {
+    "typicalFlightTime": "About 10–12+ hours with connections (common hubs in the Middle East or Europe); schedules vary by carrier and season",
+    "notes": [
+      "Many movers depart from Nairobi; align flight booking with MVV validity and your IND decision letter before non-refundable purchases.",
+      "Ministry of Foreign Affairs legalisation and VFS or embassy appointment scheduling can run alongside employer or university timelines."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored employment with Dutch or international employers (including highly skilled migrant routes)",
+      "Master’s or PhD study at a Dutch university",
+      "Partner or family reunification under eligible routes",
+      "Entrepreneurship or startup where Dutch route conditions are met",
+      "Corporate transfer or international assignment",
+      "Orientation year or other graduate-linked routes where eligibility matches official IND criteria"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven"],
+    "commonSectors": ["Technology", "Agri-food and logistics", "Higher education", "Finance", "Healthcare", "Creative industries", "International organisations"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other employer-sponsored employment",
+      "EU Blue Card where salary and qualification rules are met",
+      "Study with a Dutch institution as sponsor",
+      "Partner or family routes with relationship and evidence requirements",
+      "Startup or self-employment where conditions are met",
+      "Orientation year for eligible graduates—see IND pages for current criteria",
+      "Intra-corporate transfer where the official route matches your case"
+    ],
+    "notes": [
+      "Kenyan nationals are not EU/EEA/Switzerland citizens: stays longer than short visits normally require a Dutch residence permit for a recognised purpose.",
+      "Many long-stay procedures include an MVV (long-stay entry visa) so you can travel to the Netherlands and complete residence-permit steps—but whether you need an MVV depends on your route; confirm on IND.nl and Netherlands Worldwide.",
+      "Short-stay Schengen applications for the Netherlands from Kenya are submitted in person through VFS Global in Nairobi as described on Netherlands Worldwide—that is not the same process as long-stay relocation.",
+      "The IND explains that when you need an MVV, you usually apply for the MVV and residence permit together from abroad."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid passport (Netherlands Worldwide’s Kenya MVV page describes passport validity and blank-page expectations—confirm the current text)",
+      "Civil documents when your route requires them (e.g. birth, marriage, family composition)",
+      "Educational diplomas and professional credentials for work or study",
+      "Employment contract, admission letter, or sponsor materials as required",
+      "Police certificates or medical checks only when your permit checklist asks for them"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide explains that Kenyan documents for use in the Netherlands must be legalised by the Kenyan Ministry of Foreign Affairs.",
+      "Documents should be original and complete as described on the Kenya legalisation page. Swahili documents generally need translation into Dutch, English, French, or German when translation is required; English documents often do not—verify per document on Netherlands Worldwide and with the receiving authority.",
+      "Build in time for civil registry steps, MFA legalisation, possible translations, and in-person VFS or embassy appointments."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation: documents from Kenya",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/kenya",
+        "contactSummary": "MFA legalisation, translations, and using Kenyan documents in the Netherlands."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "MVV and Schengen from Kenya",
+        "website": "https://www.netherlandsworldwide.nl/visa-the-netherlands/mvv-long-stay/apply-kenya",
+        "contactSummary": "Long-stay MVV at the embassy in Nairobi; short-stay Schengen via VFS Nairobi."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "KES / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Kenya–Netherlands moves often combine air freight for essentials with sea freight for larger households. Many people book temporary furnished housing in the Netherlands while legalisation work, permit decisions, and shipments align.",
+    "notes": [
+      "Align travel dates with MVV validity and your IND decision letter.",
+      "Keep copies of inventories and customs-related paperwork accessible."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV rules, route-specific requirements, and exemptions."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Visa and consular services in Kenya",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Kenya-specific Schengen (VFS Nairobi), MVV at the embassy in Nairobi, legalisation, and appointments."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial long-haul relocation from Kenya to the Netherlands: travel and documents with a subtle Nairobi-to-Europe journey mood, premium trustworthy light.",
+  "seo": {
+    "title": "Moving to the Netherlands from Kenya | Visa, MVV, Documents & Setup",
+    "description": "Planning a move from Kenya to the Netherlands? Learn about MVV, residence permits, document legalisation, housing, and relocation steps.",
+    "keywords": [
+      "moving to netherlands from kenya",
+      "kenya to netherlands visa",
+      "mvv netherlands kenya",
+      "relocate kenya to netherlands",
+      "move from kenya to netherlands",
+      "netherlands residence permit kenya",
+      "schengen visa kenya netherlands",
+      "dutch relocation from kenya",
+      "netherlands long stay visa kenya",
+      "kenya ministry foreign affairs legalisation netherlands"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Kenya-to-Netherlands moves: in-person VFS Nairobi for Schengen; MVV collection in Nairobi per Netherlands Worldwide; MFA legalisation for Kenyan documents."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "What is the difference between a tourist Schengen visa and relocating to the Netherlands from Kenya?",
+      "a": "A Schengen visa covers short stays (up to 90 days in a 180-day period) when a visa is required. From Kenya, applications are submitted in person through VFS Global in Nairobi as described on Netherlands Worldwide. Long-term living in the Netherlands is normally built around a residence permit (and often an MVV)—a different process with different evidence and timing."
+    },
+    {
+      "q": "What is an MVV for Kenyan nationals?",
+      "a": "The MVV (provisional residence permit) is a long-stay entry visa (Type D) described by the IND for many stays longer than 90 days. After a positive IND decision, you apply for the MVV sticker so you can travel to the Netherlands and complete steps such as collecting your residence permit. Whether you need an MVV depends on your route. The IND states that when an MVV is required, you usually apply for the MVV and residence permit together from abroad."
+    },
+    {
+      "q": "Where is the MVV collected in Kenya?",
+      "a": "Netherlands Worldwide publishes a Kenya-specific page for the MVV long-stay visa. The MVV sticker is collected at the Dutch embassy in Nairobi following the process described there—including timelines such as applying within three months of IND approval and passport requirements the page sets out. Always follow the current official text."
+    },
+    {
+      "q": "How should Kenyan documents be prepared for Dutch authorities?",
+      "a": "Netherlands Worldwide states that Kenyan documents must be legalised by the Kenyan Ministry of Foreign Affairs for use in the Netherlands. Documents must be original and complete as described on the Kenya legalisation page. Swahili documents generally need translation into Dutch, English, French, or German when required; English documents often do not—confirm per document on the official page."
+    },
+    {
+      "q": "Who applies for the residence permit—the sponsor or me?",
+      "a": "In many routes the sponsor (employer, educational institution, or family sponsor) submits the application to the IND; self-employment and some other routes differ. Your IND correspondence and checklist define who does what."
+    },
+    {
+      "q": "What should I plan for after arriving in the Netherlands?",
+      "a": "Most people prioritise municipal registration and BSN, collecting a residence permit if applicable, opening a bank account, and arranging Dutch basic health insurance when they become resident. Use the after-arrival guides on this site alongside official checklists."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Nairobi-based professional with a Dutch employer sponsor",
+      "summary": "Coordinate IND timing with your sponsor, MVV steps at the embassy in Nairobi per Netherlands Worldwide, MFA legalisation on civil documents, housing near work, and BSN-first banking and insurance."
+    },
+    {
+      "title": "Student admitted to a Dutch university",
+      "summary": "Align admission, study-permit conditions, proof of funds, and housing; complete MFA legalisation on Kenyan civil records and confirm Swahili-to-English translation needs if the checklist requires them."
+    }
+  ]
+}

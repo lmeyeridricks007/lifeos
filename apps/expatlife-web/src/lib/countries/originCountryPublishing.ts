@@ -19,3 +19,17 @@ export function isOriginCountryGuidePubliclyVisible(
   if (!row || row.enabled === false) return false;
   return isPubliclyVisible(row.publish, row.publishDate, now, options);
 }
+
+/**
+ * Use for sitemap + `isRouteLive` origin-country gates: enforce `publishDate` only on real production
+ * indexing. Local `next dev`, Vercel Preview, and CONTENT_PREVIEW builds stay relaxed so scheduled
+ * guides stay discoverable like the live HTML (see `isPubliclyVisible` / middleware).
+ */
+export function enforceOriginCountryPublishDatesForPublicIndexing(): boolean {
+  return (
+    process.env.NODE_ENV === "production" &&
+    process.env.VERCEL_ENV !== "preview" &&
+    process.env.CONTENT_PREVIEW !== "true" &&
+    process.env.NEXT_PUBLIC_CONTENT_PREVIEW !== "true"
+  );
+}

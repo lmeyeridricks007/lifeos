@@ -53,6 +53,44 @@
       "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/south-africa/"
     }
   },
+  "kenya": {
+    "moving-checklist": {
+      "intro": "Moving from Kenya to the Netherlands is immigration-first for long stays: Kenyan nationals usually need a residence permit for stays longer than short visits, and many routes also use an MVV collected at the Dutch embassy in Nairobi per Netherlands Worldwide. Short-stay Schengen applications are submitted in person through VFS Global in Nairobi—separate from relocation. This checklist covers pre-move steps and handoff to arrival.",
+      "whatOftenMatters": [
+        "MVV and residence permit with your sponsor when applicable (IND: often applied together from abroad)",
+        "Ministry of Foreign Affairs legalisation on Kenyan documents when required",
+        "In-person VFS and embassy appointments in Nairobi"
+      ],
+      "documentConsiderations": [
+        "Netherlands Worldwide Kenya pages for Schengen vs MVV vs legalisation",
+        "Swahili translation when required; English documents often accepted without translation—verify per document"
+      ],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/kenya/"
+    },
+    "arrival-planner": {
+      "intro": "After MVV steps per your IND letter and Netherlands Worldwide, your first weeks in the Netherlands often focus on residence permit follow-up, municipality registration, BSN, and banking. This planner helps you sequence those steps.",
+      "whatOftenMatters": ["Registration and BSN", "Bank account and Dutch basic health insurance"],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/kenya/"
+    },
+    "first-90-days": {
+      "intro": "Your first 90 days will include DigiD, GP registration, and daily routines. This planner helps you stabilize after your move from Kenya.",
+      "whatOftenMatters": ["DigiD and healthcare", "Transport and housing"],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/kenya/"
+    },
+    "document-readiness": {
+      "intro": "Kenyan documents must be legalised by the Kenyan Ministry of Foreign Affairs for use in the Netherlands when legalisation applies. Swahili documents generally need translation when required; English often does not. This checker helps you plan before MVV or gemeente steps.",
+      "whatOftenMatters": [
+        "Civil records and MFA legalisation when required",
+        "Passport and certified copies",
+        "Translations when the receiving authority requires them"
+      ],
+      "documentConsiderations": [
+        "Netherlands Worldwide legalisation page for Kenya",
+        "Verify each document with the requesting body"
+      ],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/kenya/"
+    }
+  },
   "united-states": {
     "moving-checklist": {
       "intro": "Moving from the United States to the Netherlands requires careful prep: visa/permit route, document timing, and travel logistics. This checklist covers pre-move steps, money transfer, and handoff to arrival.",
@@ -140,6 +178,82 @@
         "Apostille/legalization and translation awareness"
       ],
       "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/india/"
+    }
+  },
+  "indonesia": {
+    "moving-checklist": {
+      "intro": "Moving from Indonesia to the Netherlands is immigration-first for long stays: Indonesian nationals usually need a residence permit for stays longer than short visits, and many routes also use an MVV collected at the Dutch embassy in Jakarta when your IND letter says so. Short-stay Schengen applications go through VFS Global in Bali, Jakarta, or Surabaya (for residents of Indonesia or Timor-Leste)—separate from relocation. This checklist covers pre-move steps and handoff to arrival.",
+      "whatOftenMatters": [
+        "MVV and residence permit with your sponsor when applicable (IND: often applied together from abroad)",
+        "Ministry of Law apostille on Indonesian documents when legalisation is required",
+        "Appointment timing at VFS or the embassy and long-haul logistics"
+      ],
+      "documentConsiderations": [
+        "Netherlands Worldwide Indonesia pages for Schengen vs MVV vs legalisation",
+        "Civic integration exam abroad only when your official route requires it"
+      ],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/indonesia/"
+    },
+    "arrival-planner": {
+      "intro": "After MVV steps handled per your IND letter and Netherlands Worldwide instructions, your first weeks in the Netherlands often focus on residence permit follow-up, municipality registration, BSN, and banking. This planner helps you sequence those steps.",
+      "whatOftenMatters": ["Registration and BSN", "Bank account and Dutch basic health insurance"],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/indonesia/"
+    },
+    "first-90-days": {
+      "intro": "Your first 90 days will include DigiD, GP registration, and daily routines. This planner helps you stabilize after a long-haul move from Indonesia.",
+      "whatOftenMatters": ["DigiD and healthcare", "Transport and housing"],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/indonesia/"
+    },
+    "document-readiness": {
+      "intro": "Documents from Indonesia need a Hague apostille from the Indonesian Ministry of Law for use in the Netherlands when legalisation applies; translations may be required depending on the document and authority. This checker helps you plan before MVV or gemeente steps.",
+      "whatOftenMatters": [
+        "Civil records and Ministry of Law apostille when required",
+        "Passport and certified copies",
+        "Translations when the receiving authority requires them"
+      ],
+      "documentConsiderations": [
+        "Netherlands Worldwide legalisation page for Indonesia",
+        "Verify each document with the requesting body"
+      ],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/indonesia/"
+    }
+  },
+  "pakistan": {
+    "moving-checklist": {
+      "intro": "Moving from Pakistan to the Netherlands is immigration-first for long stays: Pakistani nationals usually need a residence permit for stays longer than short visits, and many routes also use an MVV. Short-stay Schengen applications go through VFS Global as on Netherlands Worldwide—separate from relocation. Netherlands Worldwide states you can usually apply up to six months before travel and must apply at least 45 days before travel for short stay; confirm live pages. This checklist covers pre-move steps and handoff to arrival.",
+      "whatOftenMatters": [
+        "MVV and residence permit with your sponsor when applicable (IND: often applied together from abroad)",
+        "Ministry of Foreign Affairs legalisation on Pakistani documents when required",
+        "Appointment and VFS timing per Netherlands Worldwide Pakistan pages"
+      ],
+      "documentConsiderations": [
+        "Netherlands Worldwide Pakistan pages for Schengen vs MVV vs legalisation",
+        "Civic integration exam abroad only when your official route requires it"
+      ],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/pakistan/"
+    },
+    "arrival-planner": {
+      "intro": "After MVV steps handled per your IND letter and Netherlands Worldwide instructions, your first weeks in the Netherlands often focus on residence permit follow-up, municipality registration, BSN, and banking. This planner helps you sequence those steps.",
+      "whatOftenMatters": ["Registration and BSN", "Bank account and Dutch basic health insurance"],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/pakistan/"
+    },
+    "first-90-days": {
+      "intro": "Your first 90 days will include DigiD, GP registration, and daily routines. This planner helps you stabilize after your move from Pakistan.",
+      "whatOftenMatters": ["DigiD and healthcare", "Transport and housing"],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/pakistan/"
+    },
+    "document-readiness": {
+      "intro": "Documents from Pakistan must be legalised by the Pakistani Ministry of Foreign Affairs for use in the Netherlands when legalisation applies; translations may be required depending on document language and type. This checker helps you plan before MVV or gemeente steps.",
+      "whatOftenMatters": [
+        "Civil records and MFA legalisation when required",
+        "Passport and certified copies",
+        "Translations when the receiving authority requires them"
+      ],
+      "documentConsiderations": [
+        "Netherlands Worldwide legalisation page for Pakistan",
+        "Verify each document with the requesting body"
+      ],
+      "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/pakistan/"
     }
   },
   "canada": {

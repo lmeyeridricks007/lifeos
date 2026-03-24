@@ -38,6 +38,11 @@
     { "slug": "south-korea", "label": "South Korea" },
     { "slug": "turkey", "label": "Türkiye" },
     { "slug": "argentina", "label": "Argentina" },
-    { "slug": "chile", "label": "Chile" }
+    { "slug": "chile", "label": "Chile" },
+    { "slug": "nigeria", "label": "Nigeria" },
+    { "slug": "kenya", "label": "Kenya" },
+    { "slug": "pakistan", "label": "Pakistan" },
+    { "slug": "philippines", "label": "Philippines" },
+    { "slug": "indonesia", "label": "Indonesia" }
   ]
 }

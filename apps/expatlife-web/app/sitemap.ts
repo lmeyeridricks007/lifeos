@@ -19,6 +19,8 @@
  *    it is omitted from this XML list until publicly visible; `lastModified` uses the hub publish date.
  * 4. Each `/netherlands/{city}/` hub uses that city dataset’s `publish` + `publishDate`; URLs stay out of the XML list
  *    until `isRouteLive` (see `routeStatus` + `netherlandsCityHubPages`).
+ * 5. Origin-country guides under `/netherlands/moving/moving-to-netherlands-from/{slug}/` follow `isRouteLive`, which
+ *    enforces `publishDate` only on real production indexing (not `next dev`, Vercel Preview, or CONTENT_PREVIEW).
  */
 import type { MetadataRoute } from "next";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";

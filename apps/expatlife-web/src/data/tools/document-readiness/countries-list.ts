@@ -39,6 +39,7 @@ export const COUNTRY_SELECT_OPTIONS: CountryOption[] = [
   { value: "south-korea", label: "South Korea" },
   { value: "turkey", label: "Türkiye" },
   { value: "nigeria", label: "Nigeria" },
+  { value: "kenya", label: "Kenya" },
   { value: "egypt", label: "Egypt" },
   { value: "russia", label: "Russia" },
   { value: "ukraine", label: "Ukraine" },
@@ -73,6 +74,7 @@ export function countrySlugToCode(slug: string): string {
     australia: "AU",
     brazil: "BR",
     turkey: "TR",
+    kenya: "KE",
     argentina: "AR",
     chile: "CL",
   };

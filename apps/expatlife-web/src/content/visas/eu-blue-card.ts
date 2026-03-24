@@ -196,7 +196,7 @@ export const EU_BLUE_CARD_VISA: VisaPageData = {
     },
     {
       q: "Is the EU Blue Card the same as Highly Skilled Migrant?",
-      a: "No. Both are work-based routes for skilled employees, but the EU Blue Card is an EU-wide scheme with its own salary thresholds and eligibility rules. The Highly Skilled Migrant permit is Netherlands-specific with different salary tiers (e.g. for under-30s) and sponsor rules. Compare both before deciding.",
+      a: "No. Both are work-based routes for skilled employees, but the EU Blue Card follows the EU framework and salary tiers, while Highly Skilled Migrant is the Dutch kennismigrant route with its own tiers (including under-30 thresholds). On this page, use the table of contents link “EU Blue Card vs HSM” for a comparison table and salary examples. Your employer files the permit; confirm every figure on the IND required-amounts page.",
     },
     {
       q: "Can I move to the Netherlands on this route without a job offer?",
