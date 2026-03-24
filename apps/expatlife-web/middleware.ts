@@ -36,10 +36,15 @@ function attachSimulateProductionCookie(request: NextRequest, response: NextResp
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   const previewParam = request.nextUrl.searchParams.get("preview");
-  /** Match production: enforce `publishDate` (and hide unlisted routes) even on Vercel Preview / local dev. */
+  const isDevelopment = process.env.NODE_ENV === "development";
+  /**
+   * Enforce `publishDate` like production. On deployed hosts, a prior `?preview=true` visit can persist via cookie.
+   * In `next dev`, only an explicit `?preview=true` on the current request applies (ignore cookie) so normal browsing shows all scheduled pages.
+   */
   const simulateProductionView =
     previewParam !== "false" &&
-    (previewParam === "true" || request.cookies.get(DEV_SIMULATE_LIVE_COOKIE)?.value === "1");
+    (previewParam === "true" ||
+      (!isDevelopment && request.cookies.get(DEV_SIMULATE_LIVE_COOKIE)?.value === "1"));
 
   const requestHeaders = new Headers(request.headers);
   if (simulateProductionView) {

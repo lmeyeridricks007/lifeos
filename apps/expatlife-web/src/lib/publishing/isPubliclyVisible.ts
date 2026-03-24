@@ -7,8 +7,8 @@
  * editing dates. Use `CONTENT_PREVIEW=true` for `next start` / production builds before a date.
  *
  * **“What production will show”:** append `?preview=true` to any URL (local, Vercel Preview, or prod).
- * Middleware sets a cookie + request header so server and client treat schedules like production.
- * In `next dev` without that cookie/header, `publishDate` is still bypassed for faster editing.
+ * Middleware sets a request header; on non-dev deployments a cookie can keep that mode across navigations.
+ * In `next dev`, only `?preview=true` on the **current** URL enforces dates (cookie is ignored) so normal local browsing shows all pages.
  * Use `?preview=false` to clear the cookie.
  */
 
@@ -39,13 +39,20 @@ function isDevSimulateLiveFromNodeRequest(): boolean {
 }
 
 export function shouldBypassPublishDateForPreview(): boolean {
-  // `?preview=true` (middleware) sets header + cookie on any environment — match production visibility.
+  if (process.env.NODE_ENV === "development") {
+    // Ignore simulate-live cookie in dev so a past ?preview=true visit does not keep pages “coming soon”.
+    try {
+      const { headers } = require("next/headers") as typeof import("next/headers");
+      if (headers().get(DEV_SIMULATE_LIVE_HEADER) === "1") return false;
+    } catch {
+      /* no Next request context */
+    }
+    return true;
+  }
+
   if (isDevSimulateLiveFromNodeRequest()) return false;
   if (typeof window !== "undefined" && isDevSimulateLiveFromBrowserCookie()) return false;
 
-  if (process.env.NODE_ENV === "development") {
-    return true;
-  }
   if (process.env.CONTENT_PREVIEW === "true") return true;
   if (process.env.VERCEL_ENV === "preview") return true;
   if (process.env.NEXT_PUBLIC_CONTENT_PREVIEW === "true") return true;
