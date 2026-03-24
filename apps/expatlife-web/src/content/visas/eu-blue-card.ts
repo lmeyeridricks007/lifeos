@@ -224,7 +224,7 @@ export const EU_BLUE_CARD_VISA: VisaPageData = {
     { label: "Documents needed to move", href: `${BASE}/documents-needed-to-move-netherlands/` },
     { label: "Cost of moving to the Netherlands", href: `${BASE}/moving-to-netherlands-cost/` },
     { label: "Open a bank account in the Netherlands", href: `${BASE}/open-bank-account-netherlands/` },
-    { label: "Moving to the Netherlands from your country", href: `${BASE}/moving/moving-to-netherlands-from/` },
+    { label: "Moving to the Netherlands from your country", href: `${BASE}/moving-to-netherlands-from/` },
   ],
 
   relatedCountryPages: [

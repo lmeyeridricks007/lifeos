@@ -33,6 +33,26 @@
     "check-germany-driving-licence-usage-if-driving",
     "open-country-guide-germany"
   ],
+  "switzerland": [
+    "check-switzerland-driving-licence-usage-if-driving",
+    "open-country-guide-switzerland"
+  ],
+  "sweden": [
+    "check-sweden-driving-licence-usage-if-driving",
+    "open-country-guide-sweden"
+  ],
+  "denmark": [
+    "check-denmark-driving-licence-usage-if-driving",
+    "open-country-guide-denmark"
+  ],
+  "norway": [
+    "check-norway-driving-licence-usage-if-driving",
+    "open-country-guide-norway"
+  ],
+  "ireland": [
+    "check-ireland-driving-licence-usage-if-driving",
+    "open-country-guide-ireland"
+  ],
   "france": [
     "check-france-driving-licence-usage-if-driving",
     "open-country-guide-france"
@@ -41,9 +61,53 @@
     "check-spain-driving-licence-usage-if-driving",
     "open-country-guide-spain"
   ],
+  "italy": [
+    "check-italy-driving-licence-usage-if-driving",
+    "open-country-guide-italy"
+  ],
+  "uae": [
+    "bring-uae-issued-official-records-if-needed",
+    "check-uae-driving-licence-usage-if-driving",
+    "open-country-guide-uae"
+  ],
   "brazil": [
     "bring-brazil-issued-official-records-if-needed",
     "check-brazil-driving-licence-usage-if-driving",
     "open-country-guide-brazil"
+  ],
+  "mexico": [
+    "bring-mexico-issued-official-records-if-needed",
+    "check-mexico-driving-licence-usage-if-driving",
+    "open-country-guide-mexico"
+  ],
+  "singapore": [
+    "bring-singapore-issued-official-records-if-needed",
+    "check-singapore-driving-licence-usage-if-driving",
+    "open-country-guide-singapore"
+  ],
+  "japan": [
+    "bring-japan-issued-official-records-if-needed",
+    "check-japan-driving-licence-usage-if-driving",
+    "open-country-guide-japan"
+  ],
+  "south-korea": [
+    "bring-south-korea-issued-official-records-if-needed",
+    "check-south-korea-driving-licence-usage-if-driving",
+    "open-country-guide-south-korea"
+  ],
+  "turkey": [
+    "bring-turkey-issued-official-records-if-needed",
+    "check-turkey-driving-licence-usage-if-driving",
+    "open-country-guide-turkey"
+  ],
+  "argentina": [
+    "bring-argentina-issued-official-records-if-needed",
+    "check-argentina-driving-licence-usage-if-driving",
+    "open-country-guide-argentina"
+  ],
+  "chile": [
+    "bring-chile-issued-official-records-if-needed",
+    "check-chile-driving-licence-usage-if-driving",
+    "open-country-guide-chile"
   ]
 }

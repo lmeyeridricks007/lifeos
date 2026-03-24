@@ -448,24 +448,24 @@ Lee
 |-------|--------|
 | **Start here** | [Blog](https://rentslam.nl/blog/) |
 | **Reach via** | Content / growth |
-| **Best path** | `/netherlands/housing/tools/rent-affordability-calculator/` |
-| **Why relevant** | The **blog** covers renting and market reality; a **rent affordability** tool matches budgeting posts without overlapping the product. |
+| **Best path** | `/netherlands/moving/tools/relocation-cost-estimator/` |
+| **Why relevant** | The **blog** covers renting and market reality; a **relocation cost** estimator matches budgeting posts without overlapping the product (live tool per route registry). |
 | **Tier-1 FU2** | skip |
 
-**Initial — Subject:** Rent affordability calculator — possible complement to your blog  
+**Initial — Subject:** Relocation cost estimator — possible complement to your blog  
 
 Hi — I’m Lee. I moved from South Africa to the Netherlands and found rental maths (income checks, deposits, cash buffer) surprisingly stressful.
 
-We built a simple **rent affordability** calculator for the Dutch context: https://www.expatcopilot.com/netherlands/housing/tools/rent-affordability-calculator/
+We built a **relocation cost** estimator for the Dutch context (includes housing and setup bands): https://www.expatcopilot.com/netherlands/moving/tools/relocation-cost-estimator/
 
 If it ever fits a “how to budget for renting” post as optional further reading, I’d appreciate you taking a look. No ask beyond usefulness to readers.
 
 Thanks,  
 Lee
 
-**Follow-up #1 — Subject:** Follow-up — rent budgeting tool for renters in NL  
+**Follow-up #1 — Subject:** Follow-up — budgeting tool for renters in NL  
 
-Hi again — following up on the **rent affordability** tool (https://www.expatcopilot.com/netherlands/housing/tools/rent-affordability-calculator/) as something that might sit alongside RentSlam’s own advice articles.
+Hi again — following up on the **relocation cost** tool (https://www.expatcopilot.com/netherlands/moving/tools/relocation-cost-estimator/) as something that might sit alongside RentSlam’s own advice articles.
 
 If you prefer not to link to third-party tools, I understand completely.
 

@@ -10,7 +10,7 @@
     "badges": ["Guide", "Updated regularly"],
     "image": {
       "src": "/images/guides/netherlands/moving/moving-mistakes-hero.webp",
-      "alt": "Expat planning mistakes while preparing a move to the Netherlands"
+      "alt": "International professional reviewing relocation papers and a checklist at a desk, with soft-focus Dutch canal houses through a window"
     }
   },
   "quickAnswers": [
@@ -60,7 +60,7 @@
         "Not preparing documentation often required by landlords",
         "Waiting too late to begin searching"
       ],
-      "affiliatePlacementId": "problem_solution_primary"
+      "affiliatePlacementId": "guide-moving-mistakes-housing"
     },
     {
       "id": "mistake-documents",
@@ -75,7 +75,7 @@
         "Not organizing documents into a single pack",
         "Ignoring document readiness until the visa or relocation timeline becomes urgent"
       ],
-      "affiliatePlacementId": "problem_solution_primary"
+      "affiliatePlacementId": "guide-moving-mistakes-documents"
     },
     {
       "id": "mistake-arrival",
@@ -89,7 +89,8 @@
         "Delaying banking setup",
         "Leaving health insurance decisions too late",
         "Not understanding the sequence of early admin tasks"
-      ]
+      ],
+      "affiliatePlacementId": "guide-moving-mistakes-arrival-admin"
     },
     {
       "id": "mistake-finances",
@@ -104,7 +105,7 @@
         "Not comparing service providers early",
         "Assuming salary timing will align perfectly with expenses"
       ],
-      "affiliatePlacementId": "problem_solution_primary"
+      "affiliatePlacementId": "guide-moving-mistakes-financial-setup"
     },
     {
       "id": "mistake-sequence",
@@ -118,7 +119,8 @@
         "Applying for services before documents are organized",
         "Not understanding dependencies between tasks",
         "Handling everything reactively instead of with a plan"
-      ]
+      ],
+      "affiliatePlacementId": "guide-moving-mistakes-planning-tools"
     },
     {
       "id": "prevention",

@@ -1,0 +1,22 @@
+{
+  "id": "country_moving_denmark",
+  "destinationCountry": "netherlands",
+  "originCountry": "denmark",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/denmark/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services Danish movers often use for the Netherlands",
+  "intro": "Housing, relocation help, banking, and insurance come first for typical EU moves—immigration services are optional for special cases.",
+  "categoryOrder": ["housing", "banking", "insurance", "mobile"],
+  "items": [
+    { "providerId": "housinganywhere", "reason": "Short and mid-term listings while you secure a long-term rental." },
+    { "providerId": "bunq", "reason": "Digital Dutch banking after address and BSN." },
+    { "providerId": "wise", "reason": "DKK and EUR movement and first-month cash flow." },
+    { "providerId": "independer", "reason": "Compare Dutch basic health insurance once you are resident." },
+    { "providerId": "simyo", "reason": "Dutch mobile plans after arrival." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

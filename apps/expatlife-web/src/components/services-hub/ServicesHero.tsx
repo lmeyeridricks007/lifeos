@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import type { ServicesHubHero as ServicesHeroType } from "@/src/lib/services-hub/types";
 import { ContentHeroMedia } from "@/src/components/content/ContentHeroMedia";

@@ -1,0 +1,22 @@
+{
+  "id": "country_moving_australia",
+  "destinationCountry": "netherlands",
+  "originCountry": "australia",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/australia/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services Australians often compare when moving to the Netherlands",
+  "intro": "Banking, housing, insurance, shipping, and mobile are common categories to line up across a long-haul move.",
+  "categoryOrder": ["banking", "housing", "insurance", "shipping", "mobile"],
+  "items": [
+    { "providerId": "wise", "reason": "International transfers between AUD and EUR during the transition." },
+    { "providerId": "bunq", "reason": "Digital Dutch banking often used after BSN and address." },
+    { "providerId": "housinganywhere", "reason": "Short and mid-term listings while you search for a long-term rental." },
+    { "providerId": "simyo", "reason": "Dutch SIM options after arrival." },
+    { "providerId": "independer", "reason": "Compare Dutch basic health insurance once you are resident." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

@@ -140,7 +140,36 @@ export function resolveArrivalPlannerTasks(
 
     const group: ArrivalTaskGroup =
       raw.group ??
-      (raw.tags.some((t) => ["country", "south-africa", "india", "brazil", "guide", "united-states", "united-kingdom", "canada", "australia", "germany", "france", "spain"].includes(t)) || raw.category === "guides"
+      (raw.tags.some((t) =>
+          [
+            "country",
+            "south-africa",
+            "india",
+            "brazil",
+            "mexico",
+            "singapore",
+            "japan",
+            "south-korea",
+            "turkey",
+            "argentina",
+            "chile",
+            "uae",
+            "guide",
+            "united-states",
+            "united-kingdom",
+            "canada",
+            "australia",
+            "germany",
+            "france",
+            "spain",
+            "italy",
+            "switzerland",
+            "sweden",
+            "denmark",
+            "norway",
+            "ireland",
+          ].includes(t)
+        ) || raw.category === "guides"
         ? "country-follow-up"
         : raw.stage === "first-month"
           ? "first-month"

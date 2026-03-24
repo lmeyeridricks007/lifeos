@@ -1,0 +1,29 @@
+{
+  "id": "guide-moving-mistakes-arrival-admin",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/moving-mistakes-netherlands/",
+    "slot": "after-mistake-arrival"
+  },
+  "variant": "cards",
+  "title": "Banking and insurance for your first weeks",
+  "intro": "After you arrive, many people open an account and compare health insurance once registration and BSN are underway—don’t leave both until the last minute.",
+  "categoryOrder": ["banking", "insurance"],
+  "items": [
+    {
+      "providerId": "bunq",
+      "reason": "Mobile-first Dutch account many expats use while settling paperwork."
+    },
+    {
+      "providerId": "wise",
+      "reason": "Low-cost transfers and balances in EUR while you set up local banking."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Compare Dutch basic health insurance once you’re in the BSN window."
+    }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

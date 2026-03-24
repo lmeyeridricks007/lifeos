@@ -1,0 +1,136 @@
+{
+  "slug": "norway",
+  "name": "Norway",
+  "shortName": "NO",
+  "iso2": "NO",
+  "regionGroup": "eea",
+  "distanceCategory": "near",
+  "languages": ["Norwegian", "English"],
+  "travel": {
+    "typicalFlightTime": "About 1.5–2 hours by air (Oslo area to Amsterdam/Schiphol); ferry or road via Denmark/Germany also possible",
+    "notes": [
+      "Many movers fly Oslo–Amsterdam or use regional airports; some combine train/ferry segments depending on household goods.",
+      "If Norway remains your main residence while you spend substantial time in the Netherlands, registration, RNI, and insurance rules may differ from a full relocation—verify with official Dutch sources."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Tech, energy, and international employment",
+      "Study and research",
+      "Partner or family relocation",
+      "EEA remote work and lifestyle moves"
+    ],
+    "popularDutchCities": ["Amsterdam", "Utrecht", "The Hague", "Rotterdam", "Eindhoven"],
+    "commonSectors": ["Technology", "Energy", "Life sciences", "Logistics", "Higher education", "International organisations"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "EEA free movement rights (aligned with EU citizens under IND guidance)",
+      "Work, study, or self-sufficiency within the conditions that apply to your situation"
+    ],
+    "notes": [
+      "Norwegian nationals are EEA citizens, not EU citizens, but IND explains that EEA nationals have the same rights as EU citizens for many stay and work questions.",
+      "Ordinary moves do not centre on MVV entry visas or standard non-EU residence permits; passport or national ID is usually sufficient proof you may stay and work.",
+      "Municipal registration, BSN, housing, Dutch basic health insurance when resident, and banking are the main practical focus.",
+      "Some Norwegian documents can be used in the Netherlands immediately; others need apostille from Norwegian authorities—always verify per document and recipient."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid Norwegian passport or national ID card",
+      "Dutch address proof for registration where required",
+      "Employment or study documents where relevant",
+      "Civil-status or education documents when the requesting authority lists them"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide’s Norway-specific legalisation page explains which Norwegian documents can be used directly in the Netherlands and which must be legalised with an apostille issued by the Norwegian authorities. Requirements depend on document type and who requests the paper—not every Norwegian document follows the same rule.",
+      "Do not assume apostille is needed for every certificate; confirm with the municipality, employer, university, or other receiving body."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation: documents from Norway",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/norway",
+        "contactSummary": "Norway-specific document and apostille guidance."
+      },
+      {
+        "label": "IND",
+        "name": "Staying in the Netherlands as an EU, EEA or Swiss citizen",
+        "website": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+        "contactSummary": "Official IND overview for EU/EEA/Swiss stay rules."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Short flights or road/ferry combinations are common; some households use professional movers for larger volumes. Plan building access and parking at your Dutch address.",
+    "notes": [
+      "Compare air freight, partial loads, and full removals for your volume.",
+      "Temporary parking permits may be needed at destination."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "EU, EEA and Swiss citizens — staying in the Netherlands",
+        "website": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+        "contactSummary": "Residence rights framing for Norwegian (EEA) movers."
+      },
+      {
+        "label": "Government.nl",
+        "name": "Moving to the Netherlands — what to arrange",
+        "website": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/what-do-i-need-to-arrange-if-im-moving-to-the-netherlands",
+        "contactSummary": "Official relocation checklist overview."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial hero: Norwegian fjord ferry mood—deep water between steep cliffs, rolling suitcase on deck, distant snow-touched peaks in cool Nordic light, evoking relocation from Norway toward the Netherlands.",
+  "seo": {
+    "title": "Moving to the Netherlands from Norway | Registration, BSN, Documents & Practical Setup",
+    "description": "Planning a move from Norway to the Netherlands? Explore EEA move rules, registration, BSN, document requirements, housing, banking, and practical settlement steps.",
+    "keywords": [
+      "moving to the netherlands from norway",
+      "move from norway to netherlands",
+      "relocating from norway to netherlands",
+      "norwegian moving to netherlands",
+      "living in the netherlands as a norwegian citizen",
+      "norway to netherlands registration",
+      "norwegian citizen netherlands BSN",
+      "norwegian documents apostille netherlands",
+      "netherlands for norwegian citizens",
+      "EEA citizen move netherlands"
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Norwegian citizens need a visa to move to the Netherlands?",
+      "a": "Norwegian nationals are EEA citizens. The IND explains that EU, EEA, and Swiss citizens can stay in the Netherlands for up to three months with a valid travel document and no additional requirements, and that EEA nationals have the same rights as EU citizens. For ordinary longer stays you normally follow practical steps such as municipal registration rather than a standard non-EU visa route. Confirm your situation on IND.nl and Government.nl."
+    },
+    {
+      "q": "Do Norwegians need a residence permit for the Netherlands?",
+      "a": "IND states that EEA nationals do not need a residence document to live in the Netherlands in the standard route described for EU/EEA/Swiss citizens—your passport or ID card is usually enough proof that you are permitted to stay and work. This is different from MVV and ordinary residence-permit pathways in our non-EU guides. Special family or legal situations may still need tailored checks."
+    },
+    {
+      "q": "When must I register with the municipality?",
+      "a": "If you will live in the Netherlands for more than four months, you normally register with your municipality. Government.nl states you must register within five days of arriving in the Netherlands. The municipality issues your BSN. If you stay less than four months, non-resident (RNI) registration may be more relevant depending on your case—see the official BRP and short-stay registration materials."
+    },
+    {
+      "q": "Do Norwegian documents need an apostille for the Netherlands?",
+      "a": "Netherlands Worldwide’s Norway page explains that some Norwegian documents can be used in the Netherlands immediately, while others must be legalised with an apostille by the Norwegian authorities. It depends on the document type and what the receiving Dutch authority or organisation asks for—verify each document separately."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Norwegian professional starting work in Amsterdam or Utrecht",
+      "summary": "Prioritise housing, gemeente registration within five days of arrival (per Government.nl), BSN, Dutch basic health insurance from residence, and payroll banking—without MVV framing for the standard EEA route."
+    },
+    {
+      "title": "Student with Norwegian qualifications for a Dutch university",
+      "summary": "Plan apostille or other legalisation only when Netherlands Worldwide or the institution requires it for your specific papers; allow time for translations if Norwegian originals are not accepted as-is."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "country_moving_new_zealand",
+  "destinationCountry": "netherlands",
+  "originCountry": "new-zealand",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/new-zealand/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services New Zealanders often compare when moving to the Netherlands",
+  "intro": "Banking, housing, insurance, shipping, and mobile are common categories to coordinate across a long-haul move.",
+  "categoryOrder": ["banking", "housing", "insurance", "shipping", "mobile"],
+  "items": [
+    { "providerId": "wise", "reason": "International transfers between NZD and EUR during the transition." },
+    { "providerId": "bunq", "reason": "Digital Dutch banking often used after BSN and address." },
+    { "providerId": "housinganywhere", "reason": "Short and mid-term listings while you search for a long-term rental." },
+    { "providerId": "simyo", "reason": "Dutch SIM options after arrival." },
+    { "providerId": "independer", "reason": "Compare Dutch basic health insurance once you are resident." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "country_moving_france",
+  "destinationCountry": "netherlands",
+  "originCountry": "france",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/france/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services people moving from France often use in the Netherlands",
+  "intro": "Housing, banking, and insurance are usually the first categories to line up after registration planning.",
+  "categoryOrder": ["housing", "banking", "insurance", "mobile"],
+  "items": [
+    { "providerId": "housinganywhere", "reason": "Short and mid-term listings while you secure a long-term rental." },
+    { "providerId": "bunq", "reason": "Digital Dutch banking after you have address and BSN." },
+    { "providerId": "wise", "reason": "Euro transfers and first-month cash flow across the border." },
+    { "providerId": "independer", "reason": "Compare Dutch basic health insurance once you are resident." },
+    { "providerId": "simyo", "reason": "Dutch mobile plans after arrival." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

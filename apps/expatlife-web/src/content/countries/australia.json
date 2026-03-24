@@ -7,50 +7,136 @@
   "distanceCategory": "far",
   "languages": ["English"],
   "travel": {
-    "typicalFlightTime": "20-24 hours",
-    "notes": ["Ultra long-haul moves often require larger temporary setup buffers."]
+    "typicalFlightTime": "20–24 hours",
+    "notes": [
+      "Ultra long-haul routes usually mean multi-leg flights and early temporary-housing planning.",
+      "Allow extra buffer for jet lag and first-week admin after arrival."
+    ]
   },
   "relocationProfile": {
-    "commonReasons": ["Employer relocation", "Career transition", "Family move"],
-    "popularDutchCities": ["Amsterdam", "Eindhoven", "Utrecht"],
-    "commonSectors": ["Technology", "Engineering", "Operations"]
+    "commonReasons": [
+      "International career moves",
+      "Study at Dutch universities",
+      "Partner or family reunification",
+      "Entrepreneurship and startup routes",
+      "Working holiday and cultural exchange"
+    ],
+    "popularDutchCities": ["Amsterdam", "Utrecht", "The Hague", "Eindhoven", "Rotterdam"],
+    "commonSectors": ["Technology", "Engineering", "Logistics", "Research", "Public and international organisations"]
   },
   "visaAwareness": {
-    "commonRoutes": ["Highly Skilled Migrant", "Partner / Family route", "Study route"],
-    "notes": ["Long-distance moves benefit from earlier route and document checks."]
+    "commonRoutes": [
+      "Sponsored employment and highly skilled migrant routes",
+      "Study permits with Dutch institution admission",
+      "Partner and family routes with relationship evidence",
+      "Entrepreneurship, startup, or self-employment where criteria are met",
+      "Working Holiday Scheme for eligible Australians"
+    ],
+    "notes": [
+      "Non-EU nationals generally need a recognised purpose to live in the Netherlands longer than short visits.",
+      "MVV entry visas apply in many (not all) long-stay procedures—confirm on IND and Netherlands Worldwide."
+    ]
   },
   "documents": {
-    "commonStarterDocuments": ["Passport", "Birth certificate", "Employment records", "Academic records"],
-    "countrySpecificNotes": ["Build extra lead time for obtaining replacement records before travel."],
+    "commonStarterDocuments": [
+      "Valid passport",
+      "Birth or marriage certificates when relevant",
+      "Employment contract or university admission",
+      "Proof of address history where required",
+      "Permit-specific forms from sponsor or institution"
+    ],
+    "countrySpecificNotes": [
+      "Australian documents may require apostille or authentication before foreign authorities accept them (see Smartraveller).",
+      "State and Commonwealth issuing bodies can have different lead times."
+    ],
     "sources": [
       {
-        "label": "Services Australia",
-        "name": "Australian Government Services",
-        "website": "https://www.servicesaustralia.gov.au",
-        "contactSummary": "Government service entry point for key documentation topics."
+        "label": "Smartraveller",
+        "name": "Australian Government — notarial and document services",
+        "website": "https://www.smartraveller.gov.au/consular-services/notarial-services/documents",
+        "contactSummary": "Official guidance for Australians on documents used overseas."
+      },
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV, and route-specific requirements."
       }
     ]
   },
   "costs": {
     "currency": "AUD / EUR",
-    "ranges": [
-      { "key": "oneWayFlight", "label": "One-way flight", "value": "AUD900-AUD2,200", "note": "Route and season create wide variation." },
-      { "key": "shipping", "label": "Shipping household goods", "value": "EUR3,000-EUR8,000", "note": "Long-distance freight costs vary by service level." }
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Sea freight from Australia to the Netherlands typically runs on multi-week timelines. Furnished short-stay housing is common while shipments and registration catch up.",
+    "notes": [
+      "Compare shared container, full container, and air freight for essentials only.",
+      "Align delivery with lease start and temporary accommodation."
     ]
   },
   "contacts": {
     "official": [
-      { "label": "IND", "name": "Dutch Immigration and Naturalisation Service", "website": "https://ind.nl", "contactSummary": "Official immigration information." }
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration and residence permit information."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and country-specific visa application information",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Checklists, MVV applications in Australia, and WHP details."
+      }
     ]
   },
+  "heroImageAlt": "A peaceful Dutch canal lined with traditional gabled houses and a bridge—an arrival-in-the-Netherlands mood for Australians planning a long-haul move.",
   "seo": {
-    "title": "Moving to the Netherlands from Australia: Long-Distance Move Planning",
-    "description": "Practical planning guidance for moving from Australia to the Netherlands, including route awareness, documents, and first 90-day setup priorities."
+    "title": "Moving to the Netherlands from Australia | Visas, Documents, Costs & Practical Setup",
+    "description": "Planning a move from Australia to the Netherlands? Explore visa routes, MVV guidance, document prep, working holiday options, costs, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from australia",
+      "move from australia to netherlands",
+      "australia to netherlands visa",
+      "relocating from australia to netherlands",
+      "moving from australia to holland",
+      "dutch working holiday australia",
+      "mvv netherlands australia",
+      "netherlands residence permit australia",
+      "apostille australian documents netherlands",
+      "australians living in the netherlands"
+    ]
   },
-  "faqOverrides": [],
+  "faqOverrides": [
+    {
+      "q": "Do Australians need a visa to live in the Netherlands?",
+      "a": "For stays longer than short visits, most Australians need a Dutch residence permit for a recognised purpose such as work, study, family, or certain exchange routes. Whether you also need an MVV (entry visa) depends on your nationality and permit type—confirm on IND and Netherlands Worldwide."
+    },
+    {
+      "q": "What is an MVV for the Netherlands?",
+      "a": "The MVV is a provisional residence permit used as an entry visa in many long-stay procedures. It can let you travel to the Netherlands to complete steps such as collecting your residence permit when your route requires it. Check IND pages and the Australia-specific Netherlands Worldwide instructions."
+    },
+    {
+      "q": "Where do Australians apply for the MVV sticker?",
+      "a": "Netherlands Worldwide describes how to apply for the MVV long-stay visa from Australia. Follow the current country-specific page for submission details."
+    },
+    {
+      "q": "Can Australians use a Dutch working holiday?",
+      "a": "Yes—Australians can be eligible for the Netherlands Working Holiday Programme / working holiday residence permit under the conditions published by Netherlands Worldwide and the IND. The IND also explains how to apply, including online application where it applies. It is not the same as standard long-term skilled employment."
+    },
+    {
+      "q": "How should I prepare Australian documents for Dutch authorities?",
+      "a": "Smartraveller and other Australian government guidance explain that documents may need apostille or authentication before foreign authorities accept them. Dutch procedures may also require sworn translation. Check the document list for your specific permit or municipality process."
+    },
+    {
+      "q": "Where do Australians get consular help in the Netherlands?",
+      "a": "The Australian Embassy in the Netherlands publishes official country and consular information for Australians living in or travelling to the Netherlands."
+    }
+  ],
   "scenarioOverrides": [],
   "affiliateContext": {
-    "preferredCategories": ["banking", "housing", "insurance", "shipping"],
-    "customNotes": ["Long-haul moves usually compare both transfer and shipping services early."]
+    "preferredCategories": ["banking", "housing", "insurance", "shipping", "mobile"],
+    "customNotes": ["Long-haul moves often pair temporary housing, sea freight, and cross-border banking early in the plan."]
   }
 }

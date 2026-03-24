@@ -1,0 +1,22 @@
+{
+  "id": "tool-plan-moving-checklist",
+  "name": "Moving checklist",
+  "tagline": "Generate a personalised task list for before and after you arrive.",
+  "categoryIds": ["planning"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Free tool", "Step-by-step"],
+  "highlights": ["Tasks by timeline", "Adapt to your situation", "Print or save"],
+  "cta": {
+    "label": "Open tool",
+    "href": "/netherlands/moving/tools/moving-checklist/",
+    "isAffiliate": false
+  },
+  "disclosure": "Free tool on ExpatCopilot.",
+  "logo": {
+    "src": "",
+    "alt": ""
+  }
+}

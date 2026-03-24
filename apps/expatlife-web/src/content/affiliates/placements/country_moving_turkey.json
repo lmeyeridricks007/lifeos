@@ -1,0 +1,46 @@
+{
+  "id": "country_moving_turkey",
+  "destinationCountry": "netherlands",
+  "originCountry": "turkey",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/turkey/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services people in Türkiye often compare for a Netherlands move",
+  "intro": "Document legalisation, translations, planning tools, transfers, housing, and insurance—useful alongside MVV, VFS Global short-stay steps, and residence permit timing.",
+  "categoryOrder": ["documents", "planning", "banking", "housing", "insurance", "mobile"],
+  "items": [
+    {
+      "providerId": "guide-document-legalization-nl",
+      "reason": "Map apostille and legalisation when Turkish documents must be accepted in the Netherlands."
+    },
+    {
+      "providerId": "guide-doc-translation-nl",
+      "reason": "Plan sworn translations when Dutch authorities need Dutch, English, French, or German text."
+    },
+    {
+      "providerId": "tool-plan-document-readiness",
+      "reason": "Organise document categories before MVV, entry, or municipality submissions."
+    },
+    {
+      "providerId": "tool-plan-moving-checklist",
+      "reason": "Turn your route into a phased checklist with ?from=turkey context."
+    },
+    {
+      "providerId": "tool-plan-arrival-planner",
+      "reason": "Sequence BSN, banking, and insurance in your first weeks after landing."
+    },
+    { "providerId": "wise", "reason": "Move TRY and EUR with transparent pricing while you coordinate deposits and rent." },
+    { "providerId": "bunq", "reason": "Digital Dutch banking often used soon after BSN and address." },
+    { "providerId": "abn-amro", "reason": "Traditional Dutch banking option some employers and landlords recognise easily." },
+    {
+      "providerId": "housinganywhere",
+      "reason": "Short and mid-term listings while you search for a long-term rental in Amsterdam, Rotterdam, or beyond."
+    },
+    { "providerId": "independer", "reason": "Compare Dutch basic health insurance once you are resident." },
+    { "providerId": "simyo", "reason": "Dutch SIM options after you land." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

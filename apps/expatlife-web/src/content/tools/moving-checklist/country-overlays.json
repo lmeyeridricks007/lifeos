@@ -39,8 +39,72 @@
     "confirm-cross-border-document-and-financial-access",
     "lighter-logistics-confirm-arrival-registration-address"
   ],
+  "italy": [
+    "confirm-cross-border-document-and-financial-access",
+    "lighter-logistics-confirm-arrival-registration-address"
+  ],
+  "switzerland": [
+    "confirm-cross-border-document-and-financial-access",
+    "lighter-logistics-confirm-arrival-registration-address"
+  ],
+  "sweden": [
+    "confirm-cross-border-document-and-financial-access",
+    "lighter-logistics-confirm-arrival-registration-address"
+  ],
+  "denmark": [
+    "confirm-cross-border-document-and-financial-access",
+    "lighter-logistics-confirm-arrival-registration-address"
+  ],
+  "norway": [
+    "confirm-cross-border-document-and-financial-access",
+    "lighter-logistics-confirm-arrival-registration-address"
+  ],
+  "ireland": [
+    "confirm-cross-border-document-and-financial-access",
+    "lighter-logistics-confirm-arrival-registration-address"
+  ],
+  "uae": [
+    "review-uae-issued-document-readiness",
+    "plan-international-transfer-and-banking-access-uae",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
   "brazil": [
     "plan-fund-transfer-and-document-access-brazil",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
+  "mexico": [
+    "review-mexico-issued-document-readiness",
+    "plan-international-transfer-and-banking-access-mexico",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
+  "singapore": [
+    "review-singapore-issued-document-readiness",
+    "plan-international-transfer-and-banking-access-singapore",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
+  "japan": [
+    "review-japan-issued-document-readiness",
+    "plan-international-transfer-and-banking-access-japan",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
+  "south-korea": [
+    "review-south-korea-issued-document-readiness",
+    "plan-international-transfer-and-banking-access-south-korea",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
+  "turkey": [
+    "review-turkey-issued-document-readiness",
+    "plan-international-transfer-and-banking-access-turkey",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
+  "argentina": [
+    "review-argentina-issued-document-readiness",
+    "plan-international-transfer-and-banking-access-argentina",
+    "prepare-for-long-haul-relocation-buffer"
+  ],
+  "chile": [
+    "review-chile-issued-document-readiness",
+    "plan-international-transfer-and-banking-access-chile",
     "prepare-for-long-haul-relocation-buffer"
   ]
 }

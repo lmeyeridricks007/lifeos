@@ -1,0 +1,131 @@
+{
+  "slug": "sweden",
+  "name": "Sweden",
+  "shortName": "SE",
+  "iso2": "SE",
+  "regionGroup": "eu",
+  "distanceCategory": "near",
+  "languages": ["Swedish", "English"],
+  "travel": {
+    "typicalFlightTime": "About 1.5–2 hours by air, or ferry / road via Denmark and Germany",
+    "notes": [
+      "Direct flights to Amsterdam and other Dutch airports are common; some movers use ferries to the northern Netherlands or combine train and ferry.",
+      "Cross-border commuters who keep their main residence in Sweden may not follow the same registration pattern as full Dutch residents."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Tech and scale-up employment",
+      "Study and research",
+      "Partner or family relocation",
+      "EU remote work and lifestyle moves"
+    ],
+    "popularDutchCities": ["Amsterdam", "Utrecht", "The Hague", "Eindhoven", "Rotterdam"],
+    "commonSectors": ["Technology", "Creative industries", "Logistics", "Life sciences", "Higher education"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "EU free movement (ordinary residence)",
+      "Work, study, or self-sufficiency within EU rules"
+    ],
+    "notes": [
+      "Swedish citizens are EU citizens: ordinary moves do not use visa, MVV, or standard non-EU residence-permit framing.",
+      "Municipal registration, BSN, housing, insurance, and banking are the main practical focus."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid Swedish passport or national ID card",
+      "Dutch address proof for registration",
+      "Employment or study documents where relevant",
+      "Swedish civil-status documents when needed (often straightforward between EU countries—confirm each case)"
+    ],
+    "countrySpecificNotes": [
+      "EU documents are generally easier to use across Member States, but unusual document types or uses may still require legalisation or apostille per Netherlands Worldwide—verify with the authority that requests each document.",
+      "Always confirm language and format requirements with your municipality, employer, or school."
+    ],
+    "sources": [
+      {
+        "label": "European Union",
+        "name": "Your Europe — residence rights",
+        "website": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+        "contactSummary": "EU free movement and residence rights overview."
+      },
+      {
+        "label": "Government.nl",
+        "name": "Moving to the Netherlands",
+        "website": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/what-do-i-need-to-arrange-if-im-moving-to-the-netherlands",
+        "contactSummary": "Official Dutch government guidance."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Road moves through Denmark and Germany, ferry options to the north, or air freight for smaller shipments are all common. Plan parking and building access in dense Dutch cities.",
+    "notes": [
+      "Compare van hire, man-with-a-van, and full removals for your volume.",
+      "Temporary parking permits may be needed at your Dutch address."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "European Union",
+        "name": "Your Europe — residence rights",
+        "website": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+        "contactSummary": "EU citizen free movement information."
+      },
+      {
+        "label": "Government.nl",
+        "name": "Immigration and moving to the Netherlands",
+        "website": "https://www.government.nl/topics/immigration-to-the-netherlands",
+        "contactSummary": "Official Dutch government overview."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial hero: Swedish archipelago—granite rocks, dark pines, red cottage blurred across calm channels, carry-on on stone in cool Baltic summer light, evoking Sweden-to-Netherlands relocation.",
+  "seo": {
+    "title": "Moving to the Netherlands from Sweden | Registration, BSN, Costs & Setup",
+    "description": "Moving from Sweden to the Netherlands? Learn how EU free movement works, how to register, get your BSN, find housing, and settle in.",
+    "keywords": [
+      "moving to the netherlands from sweden",
+      "move from sweden to netherlands",
+      "sweden to netherlands relocation",
+      "swedish moving to netherlands",
+      "eu citizen netherlands registration",
+      "bsn netherlands eu citizens",
+      "living in netherlands as swedish citizen"
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Swedish citizens need a visa to move to the Netherlands?",
+      "a": "Swedish citizens are EU citizens. For ordinary residence based on EU free movement, you do not need a visa to move to the Netherlands. You must meet the conditions that apply to your situation (for example work, study, or sufficient resources). See Your Europe and Dutch government sources for overviews."
+    },
+    {
+      "q": "Do Swedes need a residence permit for the Netherlands?",
+      "a": "Standard EU free movement for Swedish citizens does not follow the same residence-permit pathway as many non-EU nationals. Longer stays are normally handled through practical steps such as municipal registration and meeting the conditions for your stay. Confirm details on official EU and Dutch pages."
+    },
+    {
+      "q": "When should I register with the municipality?",
+      "a": "If you will live in the Netherlands for more than four months, you normally register with your municipality. You must register within five working days of arrival once you have a residential address. The municipality issues your BSN. See our municipality registration guide and Government.nl."
+    },
+    {
+      "q": "Do Swedish documents need an apostille for the Netherlands?",
+      "a": "Many EU civil documents are straightforward to use across Member States, but requirements depend on the document type and the authority that receives it. Netherlands Worldwide explains legalisation and apostille rules in general—confirm each document with the requesting body."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Swedish developer relocating for a Dutch employer",
+      "summary": "Prioritise housing, gemeente registration and BSN, Dutch basic health insurance, and banking for salary—without visa or MVV steps for the standard EU route."
+    },
+    {
+      "title": "Student moving from Sweden to a Dutch university",
+      "summary": "Align admission, housing, student insurance rules, and any document formats the institution requests."
+    }
+  ]
+}

@@ -17,6 +17,27 @@
     { "slug": "south-africa", "label": "South Africa" },
     { "slug": "india", "label": "India" },
     { "slug": "united-states", "label": "United States" },
-    { "slug": "united-kingdom", "label": "United Kingdom" }
+    { "slug": "united-kingdom", "label": "United Kingdom" },
+    { "slug": "canada", "label": "Canada" },
+    { "slug": "australia", "label": "Australia" },
+    { "slug": "new-zealand", "label": "New Zealand" },
+    { "slug": "germany", "label": "Germany" },
+    { "slug": "france", "label": "France" },
+    { "slug": "spain", "label": "Spain" },
+    { "slug": "italy", "label": "Italy" },
+    { "slug": "switzerland", "label": "Switzerland" },
+    { "slug": "sweden", "label": "Sweden" },
+    { "slug": "denmark", "label": "Denmark" },
+    { "slug": "norway", "label": "Norway" },
+    { "slug": "ireland", "label": "Ireland" },
+    { "slug": "uae", "label": "United Arab Emirates" },
+    { "slug": "brazil", "label": "Brazil" },
+    { "slug": "mexico", "label": "Mexico" },
+    { "slug": "singapore", "label": "Singapore" },
+    { "slug": "japan", "label": "Japan" },
+    { "slug": "south-korea", "label": "South Korea" },
+    { "slug": "turkey", "label": "Türkiye" },
+    { "slug": "argentina", "label": "Argentina" },
+    { "slug": "chile", "label": "Chile" }
   ]
 }

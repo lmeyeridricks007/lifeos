@@ -1,0 +1,162 @@
+{
+  "slug": "uae",
+  "name": "United Arab Emirates",
+  "shortName": "UAE",
+  "iso2": "AE",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["Arabic", "English"],
+  "travel": {
+    "typicalFlightTime": "7–8 hours (e.g. Dubai–Amsterdam)",
+    "notes": [
+      "Direct flights are common from Dubai and Abu Dhabi; summer heat and peak seasons can affect pricing.",
+      "Many people applying from the UAE use the Dutch representation in Dubai for long-stay entry steps—confirm current appointment and submission rules on Netherlands Worldwide."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Tech and finance roles with Dutch or EU employers",
+      "Master’s or PhD programs in the Netherlands",
+      "Joining a partner or family member",
+      "Startup or entrepreneurship routes where criteria are met",
+      "Intra-company moves within international groups"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "Utrecht", "Eindhoven", "The Hague"],
+    "commonSectors": ["Technology", "Finance", "Logistics", "Energy", "Consulting", "Higher education"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other sponsored employment",
+      "Study with a Dutch institution as sponsor",
+      "Partner or family routes with relationship evidence",
+      "Startup or self-employment where conditions are met",
+      "Intra-corporate transfer within qualifying corporate structures"
+    ],
+    "notes": [
+      "Living in the UAE does not replace nationality for visa rules: your passport usually determines short-stay Schengen needs and long-stay procedures.",
+      "For many non-EU/EEA nationals, long stays combine a residence permit purpose with an MVV (entry visa) applied via the embassy route—confirm on IND and Netherlands Worldwide.",
+      "Short tourist or business visits are handled under Schengen visa rules from the UAE when a visa is required; that process is separate from MVV/long stay."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid passport (nationality determines visa steps)",
+      "UAE residence visa / Emirates ID when you live in the UAE as an expat",
+      "Birth, marriage, or civil documents when relevant to your route",
+      "Employment contract, university admission, or sponsor letters as required",
+      "Police certificates or medical checks only if your permit type asks for them"
+    ],
+    "countrySpecificNotes": [
+      "Documents issued outside the UAE may need legalisation or apostille in their country of origin; UAE-issued documents often go through UAE attestation (e.g. Ministry of Foreign Affairs) rather than a simple apostille chain.",
+      "Keep both passport nationality and UAE residency context clear in your application pack—consular staff assess the procedure for your nationality.",
+      "Sworn or certified translations may be required when Dutch authorities request Dutch or English versions."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "MVV and Schengen applications from the UAE",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Country-specific steps for applying in the United Arab Emirates, including Dubai."
+      },
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV, and route-specific requirements."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "AED / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Moves from the UAE often combine air freight for essentials with sea freight for household goods. Many people book temporary furnished housing in the Netherlands while shipments and registration dates align.",
+    "notes": [
+      "Compare air vs sea early; customs and insurance choices affect total time and cost.",
+      "If you are leaving UAE employment, align shipping dates with visa validity and notice periods."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration and residence permit information."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and visa applications in the UAE",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "MVV long stay and Schengen visa application details for residents applying from the UAE."
+      }
+    ]
+  },
+  "heroImageAlt": "A thoughtful relocation scene suggesting a journey from the UAE to the Netherlands: travel essentials and documents on a desk with warm light, and a canal-city view suggesting arrival in the Netherlands.",
+  "seo": {
+    "title": "Moving to the Netherlands from UAE | Visa, MVV & Relocation Guide",
+    "description": "Planning a move from the UAE to the Netherlands? Learn visa routes, MVV process, residence permits, and relocation steps.",
+    "keywords": [
+      "moving to the netherlands from uae",
+      "relocate from dubai to netherlands",
+      "uae to netherlands visa",
+      "netherlands mvv uae",
+      "move from dubai to netherlands expat",
+      "dubai to netherlands highly skilled migrant",
+      "dutch consulate dubai mvv",
+      "schengen visa uae netherlands",
+      "uae resident netherlands work permit"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Moves from the UAE are often nationality-specific for immigration; document attestation and MVV timing are common focus areas."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do I need a visa to move from the UAE to the Netherlands?",
+      "a": "For stays longer than short visits, most people need a Dutch residence permit for a recognised purpose (work, study, family, etc.). Whether you also need an MVV entry visa depends on your nationality and permit route. Short Schengen visits follow separate Schengen visa rules from the UAE when a visa is required. Confirm your personal situation on IND and Netherlands Worldwide."
+    },
+    {
+      "q": "Is the process the same for Emirati nationals and expats living in the UAE?",
+      "a": "Applications are often submitted from the UAE (for example via the Dutch representation in Dubai for many long-stay procedures), but the immigration rules that apply are generally tied to your nationality and permit type—not only your UAE residence. Expats should follow the procedure for their passport while still preparing UAE-issued documents (such as residence proof) when relevant."
+    },
+    {
+      "q": "What is an MVV when moving to the Netherlands?",
+      "a": "The MVV (provisional residence permit) is an entry visa used in many long-stay procedures for stays longer than 90 days. It lets you travel to the Netherlands to complete steps such as collecting your residence permit when your route requires it. The MVV and residence permit are often applied for together from abroad; check IND and the UAE-specific Netherlands Worldwide pages."
+    },
+    {
+      "q": "Where do I apply for an MVV from the UAE?",
+      "a": "Long-stay MVV applications for people applying from the United Arab Emirates are handled through the Dutch mission network as described on Netherlands Worldwide (including Dubai-specific instructions). Always use the current checklist there for appointments, supporting documents, and timing—including the requirement to collect the MVV within the validity window after approval."
+    },
+    {
+      "q": "Do UAE-issued documents need apostille or attestation?",
+      "a": "UAE document practices often involve attestation through UAE authorities (for example Ministry of Foreign Affairs) and possibly embassy steps, which is not the same workflow as a Hague apostille in every case. Requirements depend on the document, where it was issued, and what the IND or municipality asks for. Start early and cross-check with official legalisation guidance."
+    },
+    {
+      "q": "What should I plan for immediately after arriving in the Netherlands?",
+      "a": "Most people prioritise collecting their residence permit if applicable, registering with the municipality, receiving a BSN, opening a bank account, and arranging Dutch basic health insurance when they become resident. Use the after-arrival guides on this site alongside official checklists."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Dubai-based expat with a Dutch tech employer (highly skilled route)",
+      "summary": "Coordinate with your sponsor on IND timing, MVV collection in Dubai, housing near the role, and BSN-first banking and insurance sequencing. Compare relocation support if HR does not run the full process."
+    },
+    {
+      "title": "UAE resident admitted to a Dutch university",
+      "summary": "Align admission, study-permit conditions, proof-of-funds, and housing near campus. Plan document legalisation and translations early; student insurance rules differ from employee routes."
+    },
+    {
+      "title": "Partner joining someone already resident in the Netherlands",
+      "summary": "Relationship evidence and civil documents are central; timelines depend on the partner’s status. Expect possible legalisation and translation work on documents from your country of nationality and from the UAE."
+    },
+    {
+      "title": "Corporate transfer from a UAE office to a Dutch entity",
+      "summary": "Clarify whether an intra-corporate transfer or standard employment route applies, who acts as sponsor, and how MVV/residence steps are sequenced. Tax and payroll transitions often run in parallel with immigration."
+    }
+  ]
+}

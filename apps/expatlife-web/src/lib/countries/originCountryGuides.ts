@@ -5,8 +5,10 @@
  */
 
 import { loadCountryIndex, loadCountryBySlug, type CountryRecord } from "./loadCountries";
+import { isOriginCountryGuidePubliclyVisible } from "./originCountryPublishing";
+import { ORIGIN_COUNTRY_GUIDE_BASE_PATH } from "./originCountryPaths";
 
-const COUNTRY_GUIDE_BASE_PATH = "/netherlands/moving/moving-to-netherlands-from";
+const COUNTRY_GUIDE_BASE_PATH = ORIGIN_COUNTRY_GUIDE_BASE_PATH;
 
 /** Display region (continent) for grouping and filters. */
 export type OriginCountryRegion =
@@ -55,20 +57,31 @@ const ORIGIN_COUNTRY_CONFIG: Array<{
   { slug: "united-kingdom", region: "Europe", order: 4, featured: true },
   { slug: "canada", region: "North America", order: 5, featured: true },
   { slug: "australia", region: "Oceania", order: 6, featured: true },
-  { slug: "germany", region: "Europe", order: 7, featured: true },
-  { slug: "france", region: "Europe", order: 8, featured: true },
-  { slug: "brazil", region: "South America", order: 9, featured: true },
-  { slug: "nigeria", region: "Africa", order: 10, featured: true },
+  { slug: "new-zealand", region: "Oceania", order: 7, featured: true },
+  { slug: "germany", region: "Europe", order: 8, featured: true },
+  { slug: "france", region: "Europe", order: 9, featured: true },
+  { slug: "spain", region: "Europe", order: 10, featured: true },
+  { slug: "italy", region: "Europe", order: 11, featured: true },
+  { slug: "sweden", region: "Europe", order: 12, featured: true },
+  { slug: "denmark", region: "Europe", order: 13, featured: true },
+  { slug: "norway", region: "Europe", order: 14, featured: true },
+  { slug: "ireland", region: "Europe", order: 15, featured: true },
+  { slug: "switzerland", region: "Europe", order: 16, featured: true },
+  { slug: "uae", region: "Middle East", order: 17, featured: true },
+  { slug: "brazil", region: "South America", order: 18, featured: true },
+  { slug: "argentina", region: "South America", order: 19, featured: true },
+  { slug: "chile", region: "South America", order: 20, featured: true },
+  { slug: "mexico", region: "North America", order: 21, featured: true },
+  { slug: "singapore", region: "Asia", order: 22, featured: true },
+  { slug: "japan", region: "Asia", order: 23, featured: true },
+  { slug: "south-korea", region: "Asia", order: 24, featured: true },
+  { slug: "nigeria", region: "Africa", order: 25, featured: true },
   // Future expansion (add more as needed)
-  { slug: "spain", region: "Europe", order: 11, featured: false },
-  { slug: "italy", region: "Europe", order: 12, featured: false },
-  { slug: "turkey", region: "Middle East", order: 13, featured: false },
-  { slug: "pakistan", region: "Asia", order: 14, featured: false },
-  { slug: "philippines", region: "Asia", order: 15, featured: false },
-  { slug: "indonesia", region: "Asia", order: 16, featured: false },
-  { slug: "uae", region: "Middle East", order: 17, featured: false },
-  { slug: "singapore", region: "Asia", order: 18, featured: false },
-  { slug: "kenya", region: "Africa", order: 19, featured: false },
+  { slug: "turkey", region: "Middle East", order: 26, featured: true },
+  { slug: "pakistan", region: "Asia", order: 27, featured: false },
+  { slug: "philippines", region: "Asia", order: 28, featured: false },
+  { slug: "indonesia", region: "Asia", order: 29, featured: false },
+  { slug: "kenya", region: "Africa", order: 30, featured: false },
 ];
 
 function formatCountryLabel(slug: string): string {
@@ -110,7 +123,7 @@ function buildEntry(
     region,
     priority: featured ? 1 : 2,
     featured,
-    isPublished: Boolean(record),
+    isPublished: Boolean(record) && isOriginCountryGuidePubliclyVisible(slug, new Date()),
     order,
   };
 }
@@ -134,11 +147,13 @@ function loadAllOriginCountryEntries(): OriginCountryGuideEntry[] {
   }).sort((a, b) => a.order - b.order);
 }
 
-let cachedEntries: OriginCountryGuideEntry[] | null = null;
-
+/**
+ * Always rebuild from disk + current publish rules.
+ * A module-level cache here caused new `countries/*.json` + index rows to stay missing in the hub
+ * until the dev server restarted (first `loadAllOriginCountryEntries` snapshot was frozen).
+ */
 function getEntries(): OriginCountryGuideEntry[] {
-  if (!cachedEntries) cachedEntries = loadAllOriginCountryEntries();
-  return cachedEntries;
+  return loadAllOriginCountryEntries();
 }
 
 /** Published guides only (visible on index and discovery modules). */
@@ -146,7 +161,21 @@ export function getPublishedOriginCountryGuides(): OriginCountryGuideEntry[] {
   return getEntries().filter((e) => e.isPublished);
 }
 
-/** Featured and published (for move hub and compact modules). */
+/**
+ * All configured origin-country hub rows (published or not). Use for browse UI with “Coming soon”
+ * on rows where `isPublished` is false.
+ */
+export function getAllOriginCountryGuideEntries(): OriginCountryGuideEntry[] {
+  return getEntries();
+}
+
+/** Featured rows in hub order, including not-yet-published (for “Popular routes” + coming soon). */
+export function getFeaturedOriginCountryHubCards(limit?: number): OriginCountryGuideEntry[] {
+  const list = getEntries().filter((e) => e.featured);
+  return limit != null ? list.slice(0, limit) : list;
+}
+
+/** Featured and published only (legacy helpers / modules that must not link to scheduled URLs). */
 export function getFeaturedOriginCountryGuides(
   limit?: number
 ): OriginCountryGuideEntry[] {
@@ -183,5 +212,4 @@ export function getPublishedGuidesByRegion(): Record<
   return groups;
 }
 
-/** Path for the country index page (hub). */
-export const ORIGIN_COUNTRY_INDEX_PATH = "/netherlands/moving-to-netherlands-from";
+export { ORIGIN_COUNTRY_INDEX_PATH, ORIGIN_COUNTRY_GUIDE_BASE_PATH } from "./originCountryPaths";

@@ -1,0 +1,21 @@
+{
+  "id": "guide-moving-mistakes-housing",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/moving-mistakes-netherlands/",
+    "slot": "after-mistake-housing"
+  },
+  "variant": "cards",
+  "title": "Housing options expats use in the Netherlands",
+  "intro": "When the rental market is competitive, many people combine platforms and mid-term stays while they search for a long-term home.",
+  "categoryOrder": ["housing"],
+  "items": [
+    {
+      "providerId": "housinganywhere",
+      "reason": "Furnished mid-term rentals are a common bridge while you compete for a long-term lease."
+    }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

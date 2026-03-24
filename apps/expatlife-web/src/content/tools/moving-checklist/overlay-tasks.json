@@ -135,6 +135,44 @@
     "affiliateCategories": ["international-transfer"]
   },
   {
+    "id": "review-uae-issued-document-readiness",
+    "title": "Review UAE and home-country document readiness",
+    "phase": "preparation",
+    "category": "documents",
+    "priority": "high",
+    "shortDescription": "UAE-issued documents often need MOFA attestation; documents from your passport country may follow a different legalisation path.",
+    "whyItMatters": "MVV and municipality steps are sensitive to correct legalisation and translations; mixed passport + UAE residence cases need a clear document map.",
+    "whatThisInvolves": [
+      "List documents by issuing country (UAE vs passport country)",
+      "Plan MOFA attestation or apostille steps as applicable",
+      "Book sworn translation if Dutch authorities require Dutch or English"
+    ],
+    "whenToDoIt": "2–4 months before move.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/document-legalization-netherlands/", "/netherlands/moving/moving-to-netherlands-from/uae/"],
+    "affiliateCategories": []
+  },
+  {
+    "id": "plan-international-transfer-and-banking-access-uae",
+    "title": "Plan international transfer and banking access (UAE)",
+    "phase": "preparation",
+    "category": "finance",
+    "priority": "high",
+    "shortDescription": "Plan how you will move funds from the UAE and maintain account access during the transition.",
+    "whyItMatters": "UAE bank rules, salary final payments, and exchange timing can affect your first months in the Netherlands.",
+    "whatThisInvolves": [
+      "Confirm employer final settlement and transfer timing",
+      "Compare transfer providers and corridor pricing",
+      "Plan first-month liquidity in EUR for deposit and living costs"
+    ],
+    "whenToDoIt": "Several weeks before departure.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/open-bank-account-netherlands/"],
+    "affiliateCategories": ["international-transfer"]
+  },
+  {
     "id": "review-uk-account-and-provider-transition",
     "title": "Review UK account and provider transition",
     "phase": "finalPreparation",
@@ -233,6 +271,272 @@
     "shortDescription": "Plan how you will move funds from Brazil and keep document access during the transition.",
     "whyItMatters": "Transfer and document certification from Brazil can take time; planning early helps.",
     "whatThisInvolves": ["Check central bank and bank rules for international transfers", "Compare transfer providers", "Allow time for any document certification or apostille"],
+    "whenToDoIt": "Several weeks before departure.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/open-bank-account-netherlands/"],
+    "affiliateCategories": ["international-transfer"]
+  },
+  {
+    "id": "review-mexico-issued-document-readiness",
+    "title": "Review Mexico-issued document readiness",
+    "phase": "preparation",
+    "category": "documents",
+    "priority": "high",
+    "shortDescription": "Mexican actas and official records often need Hague apostille; start early for MVV and municipality steps.",
+    "whyItMatters": "IND and gemeente timelines slip when apostille or translation steps are queued behind consular appointments.",
+    "whatThisInvolves": [
+      "List documents by issuing authority (state vs federal)",
+      "Book apostille steps for each record type",
+      "Plan sworn translation if Dutch or English is required"
+    ],
+    "whenToDoIt": "2–4 months before move.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/document-legalization-netherlands/", "/netherlands/moving/moving-to-netherlands-from/mexico/"],
+    "affiliateCategories": []
+  },
+  {
+    "id": "plan-international-transfer-and-banking-access-mexico",
+    "title": "Plan international transfer and banking access (Mexico)",
+    "phase": "preparation",
+    "category": "finance",
+    "priority": "high",
+    "shortDescription": "Plan how you will move funds from Mexico and keep account access during the transition.",
+    "whyItMatters": "Exchange controls, transfer limits, and employer final payments can affect your first months in the Netherlands.",
+    "whatThisInvolves": [
+      "Compare transfer providers and corridor pricing",
+      "Confirm employer payroll timing if applicable",
+      "Keep first-month EUR liquidity for deposit and rent"
+    ],
+    "whenToDoIt": "Several weeks before departure.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/open-bank-account-netherlands/"],
+    "affiliateCategories": ["international-transfer"]
+  },
+  {
+    "id": "review-singapore-issued-document-readiness",
+    "title": "Review Singapore-issued document readiness",
+    "phase": "preparation",
+    "category": "documents",
+    "priority": "high",
+    "shortDescription": "Singapore public documents often need a Hague apostille through SAL for Dutch use; start early for MVV and municipality steps.",
+    "whyItMatters": "IND and gemeente timelines slip when apostille or translation queues run behind permit decisions.",
+    "whatThisInvolves": [
+      "List documents by issuing authority",
+      "Book SAL apostille steps where legalisation is required",
+      "Plan sworn translation if Dutch or English is required"
+    ],
+    "whenToDoIt": "2–4 months before move.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/document-legalization-netherlands/", "/netherlands/moving/moving-to-netherlands-from/singapore/"],
+    "affiliateCategories": []
+  },
+  {
+    "id": "plan-international-transfer-and-banking-access-singapore",
+    "title": "Plan international transfer and banking access (Singapore)",
+    "phase": "preparation",
+    "category": "finance",
+    "priority": "high",
+    "shortDescription": "Plan how you will move funds from Singapore and keep account access during the transition.",
+    "whyItMatters": "Employer payouts, CPF considerations where relevant, and first-month EUR needs can overlap during the move window.",
+    "whatThisInvolves": [
+      "Compare transfer providers and corridor pricing",
+      "Confirm employer payroll timing if applicable",
+      "Keep first-month EUR liquidity for deposit and rent"
+    ],
+    "whenToDoIt": "Several weeks before departure.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/open-bank-account-netherlands/"],
+    "affiliateCategories": ["international-transfer"]
+  },
+  {
+    "id": "review-japan-issued-document-readiness",
+    "title": "Review Japan-issued document readiness",
+    "phase": "preparation",
+    "category": "documents",
+    "priority": "high",
+    "shortDescription": "Japanese public documents often need a Hague apostille through MOFA for Dutch use; start early for MVV and municipality steps.",
+    "whyItMatters": "IND and gemeente timelines slip when apostille or translation queues run behind permit decisions.",
+    "whatThisInvolves": [
+      "List documents by issuing authority",
+      "Book MOFA apostille steps where legalisation is required",
+      "Plan sworn translation if Dutch or English is required"
+    ],
+    "whenToDoIt": "2–4 months before move.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/document-legalization-netherlands/", "/netherlands/moving/moving-to-netherlands-from/japan/"],
+    "affiliateCategories": []
+  },
+  {
+    "id": "plan-international-transfer-and-banking-access-japan",
+    "title": "Plan international transfer and banking access (Japan)",
+    "phase": "preparation",
+    "category": "finance",
+    "priority": "high",
+    "shortDescription": "Plan how you will move funds from Japan and keep account access during the transition.",
+    "whyItMatters": "Employer payouts, Japanese bank procedures, and first-month EUR needs can overlap during the move window.",
+    "whatThisInvolves": [
+      "Compare transfer providers and corridor pricing",
+      "Confirm employer payroll timing if applicable",
+      "Keep first-month EUR liquidity for deposit and rent"
+    ],
+    "whenToDoIt": "Several weeks before departure.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/open-bank-account-netherlands/"],
+    "affiliateCategories": ["international-transfer"]
+  },
+  {
+    "id": "review-south-korea-issued-document-readiness",
+    "title": "Review South Korea–issued document readiness",
+    "phase": "preparation",
+    "category": "documents",
+    "priority": "high",
+    "shortDescription": "South Korean public documents often need a Hague apostille and Korean originals usually need translation for Dutch use; start early for MVV and municipality steps.",
+    "whyItMatters": "IND and gemeente timelines slip when apostille, translation, or embassy queues run behind permit decisions.",
+    "whatThisInvolves": [
+      "List documents by issuing authority",
+      "Book apostille steps where legalisation is required",
+      "Plan sworn translation into Dutch, English, French, or German when required"
+    ],
+    "whenToDoIt": "2–4 months before move.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/document-legalization-netherlands/", "/netherlands/moving/moving-to-netherlands-from/south-korea/"],
+    "affiliateCategories": []
+  },
+  {
+    "id": "plan-international-transfer-and-banking-access-south-korea",
+    "title": "Plan international transfer and banking access (South Korea)",
+    "phase": "preparation",
+    "category": "finance",
+    "priority": "high",
+    "shortDescription": "Plan how you will move funds from South Korea and keep account access during the transition.",
+    "whyItMatters": "Employer payouts, Korean bank procedures, and first-month EUR needs can overlap during the move window.",
+    "whatThisInvolves": [
+      "Compare transfer providers and corridor pricing",
+      "Confirm employer payroll timing if applicable",
+      "Keep first-month EUR liquidity for deposit and rent"
+    ],
+    "whenToDoIt": "Several weeks before departure.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/open-bank-account-netherlands/"],
+    "affiliateCategories": ["international-transfer"]
+  },
+  {
+    "id": "review-turkey-issued-document-readiness",
+    "title": "Review Türkiye-issued document readiness",
+    "phase": "preparation",
+    "category": "documents",
+    "priority": "high",
+    "shortDescription": "Netherlands Worldwide explains that some Turkish documents can be used in the Netherlands immediately, while others need apostille; Turkish originals generally need translation into Dutch, English, French, or German when required—start early for MVV and municipality steps.",
+    "whyItMatters": "IND and gemeente timelines slip when apostille, translation, or appointment queues run behind permit decisions.",
+    "whatThisInvolves": [
+      "List documents by issuing authority",
+      "Book apostille steps where legalisation is required",
+      "Plan sworn translation when Dutch authorities require an accepted language"
+    ],
+    "whenToDoIt": "2–4 months before move.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/document-legalization-netherlands/", "/netherlands/moving/moving-to-netherlands-from/turkey/"],
+    "affiliateCategories": []
+  },
+  {
+    "id": "plan-international-transfer-and-banking-access-turkey",
+    "title": "Plan international transfer and banking access (Türkiye)",
+    "phase": "preparation",
+    "category": "finance",
+    "priority": "high",
+    "shortDescription": "Plan how you will move funds from Türkiye and keep account access during the transition.",
+    "whyItMatters": "Employer payouts, Turkish bank procedures, and first-month EUR needs can overlap during the move window.",
+    "whatThisInvolves": [
+      "Compare transfer providers and corridor pricing",
+      "Confirm employer payroll timing if applicable",
+      "Keep first-month EUR liquidity for deposit and rent"
+    ],
+    "whenToDoIt": "Several weeks before departure.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/open-bank-account-netherlands/"],
+    "affiliateCategories": ["international-transfer"]
+  },
+  {
+    "id": "review-argentina-issued-document-readiness",
+    "title": "Review Argentina-issued document readiness",
+    "phase": "preparation",
+    "category": "documents",
+    "priority": "high",
+    "shortDescription": "Netherlands Worldwide explains that documents from Argentina need a digital e-apostille from the Argentine Ministry of Foreign Affairs for use in the Netherlands; translations may be required—start early for MVV and gemeente steps.",
+    "whyItMatters": "Embassy and IND timelines slip when e-apostille or translation steps run behind permit decisions.",
+    "whatThisInvolves": [
+      "List documents by issuing authority",
+      "Complete MFA digital e-apostille where legalisation is required",
+      "Plan sworn translation when Dutch authorities require an accepted language"
+    ],
+    "whenToDoIt": "2–4 months before move.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/document-legalization-netherlands/", "/netherlands/moving/moving-to-netherlands-from/argentina/"],
+    "affiliateCategories": []
+  },
+  {
+    "id": "plan-international-transfer-and-banking-access-argentina",
+    "title": "Plan international transfer and banking access (Argentina)",
+    "phase": "preparation",
+    "category": "finance",
+    "priority": "high",
+    "shortDescription": "Plan how you will move funds from Argentina and keep account access during the transition.",
+    "whyItMatters": "Employer payouts, Argentine bank procedures, and first-month EUR needs can overlap during the move window.",
+    "whatThisInvolves": [
+      "Compare transfer providers and corridor pricing",
+      "Confirm employer payroll timing if applicable",
+      "Keep first-month EUR liquidity for deposit and rent"
+    ],
+    "whenToDoIt": "Several weeks before departure.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/open-bank-account-netherlands/"],
+    "affiliateCategories": ["international-transfer"]
+  },
+  {
+    "id": "review-chile-issued-document-readiness",
+    "title": "Review Chile-issued document readiness",
+    "phase": "preparation",
+    "category": "documents",
+    "priority": "high",
+    "shortDescription": "Netherlands Worldwide explains that documents from Chile must be legalised by the Chilean authorities with a Hague apostille before use in the Netherlands; translations may be required—start early for MVV and gemeente steps.",
+    "whyItMatters": "Embassy and IND timelines slip when apostille or translation queues run behind permit decisions.",
+    "whatThisInvolves": [
+      "List documents by issuing authority",
+      "Complete apostille steps where legalisation is required",
+      "Plan sworn translation when Dutch authorities require an accepted language"
+    ],
+    "whenToDoIt": "2–4 months before move.",
+    "dependencies": [],
+    "countryNotes": {},
+    "relatedGuides": ["/netherlands/document-legalization-netherlands/", "/netherlands/moving/moving-to-netherlands-from/chile/"],
+    "affiliateCategories": []
+  },
+  {
+    "id": "plan-international-transfer-and-banking-access-chile",
+    "title": "Plan international transfer and banking access (Chile)",
+    "phase": "preparation",
+    "category": "finance",
+    "priority": "high",
+    "shortDescription": "Plan how you will move funds from Chile and keep account access during the transition.",
+    "whyItMatters": "Employer payouts, Chilean bank procedures, and first-month EUR needs can overlap during the move window.",
+    "whatThisInvolves": [
+      "Compare transfer providers and corridor pricing",
+      "Confirm employer payroll timing if applicable",
+      "Keep first-month EUR liquidity for deposit and rent"
+    ],
     "whenToDoIt": "Several weeks before departure.",
     "dependencies": [],
     "countryNotes": {},

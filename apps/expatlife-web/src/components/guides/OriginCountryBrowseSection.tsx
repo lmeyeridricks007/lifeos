@@ -126,6 +126,7 @@ export function OriginCountryBrowseSection({ items, title, subheading, id: secti
                   description={entry.shortDescription}
                   meta={entry.region}
                   icon={icon}
+                  status={entry.isPublished ? undefined : "coming_soon"}
                 />
               </li>
             );
@@ -145,6 +146,7 @@ export function OriginCountryBrowseSection({ items, title, subheading, id: secti
                     description={entry.shortDescription}
                     meta={entry.region}
                     icon={icon}
+                    status={entry.isPublished ? undefined : "coming_soon"}
                   />
                 </li>
               );

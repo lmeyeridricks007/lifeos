@@ -1,0 +1,144 @@
+{
+  "slug": "ireland",
+  "name": "Ireland",
+  "shortName": "IE",
+  "iso2": "IE",
+  "regionGroup": "eu",
+  "distanceCategory": "near",
+  "languages": ["English", "Irish"],
+  "travel": {
+    "typicalFlightTime": "About 1.5–2 hours by air (Dublin/Cork to Amsterdam or regional Dutch airports); ferry to mainland Europe also possible",
+    "notes": [
+      "Dublin–Amsterdam is a common route; some movers use Cork or regional airports, or combine ferry with road/rail.",
+      "If Ireland remains your main residence while you spend substantial time in the Netherlands, registration, RNI, and insurance rules may differ from a full relocation—verify with official Dutch sources."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Tech and international employment",
+      "Study and research",
+      "Partner or family relocation",
+      "EU remote work and lifestyle moves"
+    ],
+    "popularDutchCities": ["Amsterdam", "Utrecht", "The Hague", "Rotterdam", "Eindhoven"],
+    "commonSectors": ["Technology", "Life sciences", "Logistics", "Financial services", "Higher education", "International organisations"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "EU free movement (ordinary residence)",
+      "Work, study, or self-sufficiency within EU rules"
+    ],
+    "notes": [
+      "Irish citizens are EU citizens: ordinary moves do not use visa, MVV, or standard non-EU residence-permit framing.",
+      "Government.nl explains that your passport or identity document shows you are in the Netherlands legally for the standard EU route; you do not need to report to the IND for that ordinary path.",
+      "Municipal registration, BSN, housing, Dutch basic health insurance when resident, and banking are the main practical focus.",
+      "Some Irish documents can be used directly in the Netherlands; others need an apostille from the Irish authorities—always verify per document and recipient."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid Irish passport or national ID card",
+      "Dutch address proof for registration where required",
+      "Employment or study documents where relevant",
+      "Civil-status or education documents when the requesting authority lists them"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide’s Ireland-specific legalisation page explains which Irish documents can be used directly in the Netherlands and which must be legalised with an apostille issued by the Irish Department of Foreign Affairs. Foreign qualifications for work may follow separate checks—see Netherlands Worldwide’s foreign qualifications overview when relevant.",
+      "Do not assume apostille is needed for every paper: confirm with the municipality, employer, university, or other receiving body."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation: documents from Ireland",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/ireland",
+        "contactSummary": "Ireland-specific document and apostille guidance."
+      },
+      {
+        "label": "Government.nl",
+        "name": "Moving to the Netherlands — what to arrange",
+        "website": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/what-do-i-need-to-arrange-if-im-moving-to-the-netherlands",
+        "contactSummary": "Official relocation overview for EU movers."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Short flights or ferry plus road are common; some households use professional movers. Plan building access and parking at your Dutch address.",
+    "notes": [
+      "Compare air freight, partial loads, and full removals for your volume.",
+      "Temporary parking permits may be needed at destination."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "Government.nl",
+        "name": "EU citizens — staying longer than three months",
+        "website": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/as-an-eu-citizen-how-can-i-stay-in-the-netherlands-for-longer-than-three-months",
+        "contactSummary": "Registration and practical steps for EU citizens."
+      },
+      {
+        "label": "Government.nl",
+        "name": "Health insurance when coming to live in the Netherlands",
+        "website": "https://www.government.nl/topics/health-insurance/question-and-answer/when-do-i-need-to-take-out-health-insurance-if-i-come-to-live-in-the-netherlands",
+        "contactSummary": "When Dutch basic insurance applies."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial hero: Irish Atlantic coast—emerald fields, dry stone wall, travel bag on a weathered bench, grey sea and distant ferry horizon in soft rain-light, evoking Ireland-to-Netherlands relocation.",
+  "seo": {
+    "title": "Moving to the Netherlands from Ireland | Registration, BSN, Documents & Practical Setup",
+    "description": "Planning a move from Ireland to the Netherlands? Explore EU move rules, registration, BSN, document requirements, housing, banking, health insurance, and practical settlement steps.",
+    "keywords": [
+      "moving to the netherlands from ireland",
+      "move from ireland to netherlands",
+      "relocating from ireland to netherlands",
+      "irish moving to netherlands",
+      "living in the netherlands as an irish citizen",
+      "ireland to netherlands registration",
+      "irish citizen netherlands BSN",
+      "irish documents apostille netherlands",
+      "dutch health insurance irish citizen",
+      "netherlands for irish citizens"
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Irish citizens need a visa to move to the Netherlands?",
+      "a": "Irish citizens are EU citizens. For ordinary residence based on EU free movement, you do not need a visa to move to the Netherlands. You can stay up to three months with a valid passport or identity document; for longer stays the practical focus is municipal registration and meeting the conditions that apply to your situation. See Government.nl and EU free-movement overviews."
+    },
+    {
+      "q": "Do Irish nationals need a residence permit for the Netherlands?",
+      "a": "Standard EU free movement for Irish citizens does not follow the same residence-permit pathway as many non-EU nationals. Longer stays are normally handled through practical steps such as municipal registration, BSN, and Dutch basic health insurance when you are resident. MVV-style routes in our non-EU guides are a different context."
+    },
+    {
+      "q": "Do I need to report to the IND when I move from Ireland?",
+      "a": "For the standard EU-citizen route described on Government.nl, your passport or identity document is proof that you are in the Netherlands legally, and you are not required to report to the IND for that ordinary move. Special cases—such as certain family situations—may differ; confirm on official sites or with qualified advisers if unsure."
+    },
+    {
+      "q": "When must I register with the municipality?",
+      "a": "If you will live in the Netherlands for more than four months, you normally register with your municipality. Government.nl states you must register within five days of arriving in the Netherlands. The municipality arranges your BSN. You must register even if you have not yet taken out Dutch health insurance. If you stay less than four months, you are not required to register as a resident, but you may still need a BSN via non-resident (RNI) registration depending on your situation."
+    },
+    {
+      "q": "When do I need Dutch health insurance?",
+      "a": "Government.nl explains that if you come to live or work in the Netherlands, you are required to take out Dutch health insurance with coverage from the day you arrive. You have four months to arrange the policy, but the insurance applies from your arrival date where applicable. Read the official health insurance Q&A for details and exceptions."
+    },
+    {
+      "q": "Do Irish documents need an apostille for the Netherlands?",
+      "a": "Netherlands Worldwide’s Ireland page explains that some Irish documents can be used in the Netherlands immediately, while others must be legalised with an apostille from the Irish Department of Foreign Affairs. It depends on the document type and what the receiving Dutch authority or organisation asks for—verify each document separately."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Irish professional starting work in Amsterdam or Utrecht",
+      "summary": "Line up housing, gemeente registration within five days of arrival (per Government.nl), BSN, Dutch basic health insurance from arrival (four-month enrolment window per official guidance), and payroll banking—without visa or MVV steps for the standard EU route."
+    },
+    {
+      "title": "Student with Irish qualifications for a Dutch university",
+      "summary": "Plan apostille or other legalisation only when Netherlands Worldwide or the institution requires it; check foreign qualifications guidance if work recognition is part of your plan."
+    }
+  ]
+}

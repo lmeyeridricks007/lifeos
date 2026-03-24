@@ -6,9 +6,10 @@
  * or **`next dev`** (`NODE_ENV === "development"`) so local work matches production routes without
  * editing dates. Use `CONTENT_PREVIEW=true` for `next start` / production builds before a date.
  *
- * **Local “what production will show”:** append `?preview=true` to any URL in `next dev`. Middleware
- * sets a short-lived cookie + request header so server and client visibility match live (dates enforced).
- * Use `?preview=false` to clear the cookie and return to default dev bypass.
+ * **“What production will show”:** append `?preview=true` to any URL (local, Vercel Preview, or prod).
+ * Middleware sets a cookie + request header so server and client treat schedules like production.
+ * In `next dev` without that cookie/header, `publishDate` is still bypassed for faster editing.
+ * Use `?preview=false` to clear the cookie.
  */
 
 import { DEV_SIMULATE_LIVE_COOKIE, DEV_SIMULATE_LIVE_HEADER } from "@/src/lib/publishing/devSimulateLive";
@@ -38,9 +39,11 @@ function isDevSimulateLiveFromNodeRequest(): boolean {
 }
 
 export function shouldBypassPublishDateForPreview(): boolean {
+  // `?preview=true` (middleware) sets header + cookie on any environment — match production visibility.
+  if (isDevSimulateLiveFromNodeRequest()) return false;
+  if (typeof window !== "undefined" && isDevSimulateLiveFromBrowserCookie()) return false;
+
   if (process.env.NODE_ENV === "development") {
-    if (isDevSimulateLiveFromBrowserCookie()) return false;
-    if (isDevSimulateLiveFromNodeRequest()) return false;
     return true;
   }
   if (process.env.CONTENT_PREVIEW === "true") return true;

@@ -3,7 +3,172 @@
   { "slug": "united-states", "file": "united-states.json", "enabled": true, "featured": true },
   { "slug": "united-kingdom", "file": "united-kingdom.json", "enabled": true, "featured": true },
   { "slug": "india", "file": "india.json", "enabled": true, "featured": true },
-  { "slug": "canada", "file": "canada.json", "enabled": true, "featured": false },
-  { "slug": "australia", "file": "australia.json", "enabled": true, "featured": false },
-  { "slug": "germany", "file": "germany.json", "enabled": true, "featured": false }
+  {
+    "slug": "canada",
+    "file": "canada.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-07"
+  },
+  {
+    "slug": "australia",
+    "file": "australia.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-07"
+  },
+  {
+    "slug": "new-zealand",
+    "file": "new-zealand.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-07"
+  },
+  {
+    "slug": "germany",
+    "file": "germany.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-10"
+  },
+  {
+    "slug": "france",
+    "file": "france.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-10"
+  },
+  {
+    "slug": "spain",
+    "file": "spain.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-10"
+  },
+  {
+    "slug": "italy",
+    "file": "italy.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-14"
+  },
+  {
+    "slug": "switzerland",
+    "file": "switzerland.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-27"
+  },
+  {
+    "slug": "uae",
+    "file": "uae.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-20"
+  },
+  {
+    "slug": "brazil",
+    "file": "brazil.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-14"
+  },
+  {
+    "slug": "mexico",
+    "file": "mexico.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-17"
+  },
+  {
+    "slug": "singapore",
+    "file": "singapore.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-20"
+  },
+  {
+    "slug": "japan",
+    "file": "japan.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-20"
+  },
+  {
+    "slug": "south-korea",
+    "file": "south-korea.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-24"
+  },
+  {
+    "slug": "turkey",
+    "file": "turkey.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-27"
+  },
+  {
+    "slug": "argentina",
+    "file": "argentina.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-27"
+  },
+  {
+    "slug": "chile",
+    "file": "chile.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-27"
+  },
+  {
+    "slug": "sweden",
+    "file": "sweden.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-27"
+  },
+  {
+    "slug": "denmark",
+    "file": "denmark.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-30"
+  },
+  {
+    "slug": "norway",
+    "file": "norway.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-30"
+  },
+  {
+    "slug": "ireland",
+    "file": "ireland.json",
+    "enabled": true,
+    "featured": true,
+    "publish": true,
+    "publishDate": "2026-04-30"
+  }
 ]

@@ -1,0 +1,135 @@
+{
+  "slug": "denmark",
+  "name": "Denmark",
+  "shortName": "DK",
+  "iso2": "DK",
+  "regionGroup": "eu",
+  "distanceCategory": "near",
+  "languages": ["Danish", "English"],
+  "travel": {
+    "typicalFlightTime": "About 1–1.5 hours by air, or road/rail via Germany",
+    "notes": [
+      "Many movers fly to Schiphol or Eindhoven; others drive or take train connections through Germany.",
+      "Cross-border commuters who keep their main residence in Denmark may follow different registration and insurance rules than full Dutch residents."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Tech and international employment",
+      "Study and research",
+      "Partner or family relocation",
+      "EU remote work and lifestyle moves"
+    ],
+    "popularDutchCities": ["Amsterdam", "Utrecht", "The Hague", "Rotterdam", "Eindhoven"],
+    "commonSectors": ["Technology", "Life sciences", "Logistics", "Creative industries", "Higher education"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "EU free movement (ordinary residence)",
+      "Work, study, or self-sufficiency within EU rules"
+    ],
+    "notes": [
+      "Danish citizens are EU citizens: ordinary moves do not use visa, MVV, or standard non-EU residence-permit framing.",
+      "Municipal registration, BSN, housing, insurance, and banking are the main practical focus.",
+      "Some Danish documents need e-apostille or translation for Dutch use; others may be accepted more directly—always verify per document."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid Danish passport or national ID card",
+      "Dutch address proof for registration",
+      "Employment or study documents where relevant",
+      "Civil-status or education documents when the requesting authority lists them"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide’s Denmark-specific page describes when documents can be used immediately, when diplomas and certificates generally need a digital e-apostille, and when Danish-language documents need sworn translation into Dutch, English, French, or German unless a multilingual standard form is attached.",
+      "Do not assume every document follows the same rule—confirm with the IND, municipality, employer, or university."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation: documents from Denmark",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/denmark",
+        "contactSummary": "Denmark-specific document and e-apostille guidance."
+      },
+      {
+        "label": "European Union",
+        "name": "Your Europe — residence rights",
+        "website": "https://europa.eu/youreurope/citizens/residence/residence-rights/index_en.htm",
+        "contactSummary": "EU free movement overview."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Road moves via Germany or short flights are typical; some households use professional movers. Plan parking and building access in Dutch cities.",
+    "notes": [
+      "Compare van hire, partial loads, and full removals for your volume.",
+      "Temporary parking permits may be needed at destination."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "Government.nl",
+        "name": "Moving to the Netherlands — what to arrange",
+        "website": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/what-do-i-need-to-arrange-if-im-moving-to-the-netherlands",
+        "contactSummary": "Official relocation guidance."
+      },
+      {
+        "label": "European Union",
+        "name": "Your Europe — registering residence",
+        "website": "https://europa.eu/youreurope/citizens/residence/documents-formalities/registering-residence/index_en.htm",
+        "contactSummary": "EU registration formalities overview."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial hero: flat Danish countryside at golden hour—open sky, distant wind turbines, bicycle wheel and minimalist luggage on a path, soft Copenhagen-area calm, evoking Denmark-to-Netherlands relocation.",
+  "seo": {
+    "title": "Moving to the Netherlands from Denmark | Registration, BSN, Documents & Practical Setup",
+    "description": "Planning a move from Denmark to the Netherlands? Explore EU move rules, registration, BSN, document requirements, housing, banking, and practical settlement steps.",
+    "keywords": [
+      "moving to the netherlands from denmark",
+      "move from denmark to netherlands",
+      "relocating from denmark to netherlands",
+      "danish moving to netherlands",
+      "living in the netherlands as a danish citizen",
+      "denmark to netherlands registration",
+      "danish citizen netherlands BSN",
+      "danish documents apostille netherlands",
+      "danish documents translation netherlands",
+      "netherlands for danish citizens"
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Danish citizens need a visa to move to the Netherlands?",
+      "a": "Danish citizens are EU citizens. For ordinary residence based on EU free movement, you do not need a visa to move to the Netherlands. You must meet the conditions that apply to your situation. See Your Europe and Dutch government sources for overviews."
+    },
+    {
+      "q": "Do Danes need a residence permit for the Netherlands?",
+      "a": "Standard EU free movement for Danish citizens does not follow the same residence-permit pathway as many non-EU nationals. Longer stays are normally handled through practical steps such as municipal registration and meeting the conditions for your stay. MVV-style routes in our non-EU guides are a different context."
+    },
+    {
+      "q": "When must I register with the municipality?",
+      "a": "If you will live in the Netherlands for more than four months, you normally register with your municipality. Government.nl states you must register within five days of arriving in the Netherlands. The municipality issues your BSN. Confirm details on the official personal records (BRP) pages and with your gemeente."
+    },
+    {
+      "q": "Do Danish diplomas need an e-apostille for the Netherlands?",
+      "a": "Netherlands Worldwide explains that many diplomas and certificates from Denmark generally need to be legalised with a digital e-apostille for use in the Netherlands, while other document types may be treated differently. Danish-language documents often need sworn translation into Dutch, English, French, or German unless a multilingual standard form is accepted. Always verify with the body that requests each document."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Danish professional starting work in Amsterdam",
+      "summary": "Line up housing, gemeente registration and BSN within official timelines, Dutch basic health insurance, and payroll banking—without visa or MVV steps for the standard EU route."
+    },
+    {
+      "title": "Student with Danish qualifications for a Dutch university",
+      "summary": "Plan e-apostille for diplomas or certificates when Netherlands Worldwide or the institution requires it; arrange sworn translation when Danish originals are not paired with an accepted multilingual form."
+    }
+  ]
+}

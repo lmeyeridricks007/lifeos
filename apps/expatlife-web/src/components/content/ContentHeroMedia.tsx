@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import type { EditorialHeroImage } from "@/src/lib/content/editorialTypes";
 import { cn } from "@/lib/cn";

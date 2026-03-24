@@ -38,8 +38,72 @@
     "check-eu-driving-licence-rules-and-renewal-awareness",
     "stabilize-cross-border-bank-or-payment-routine-if-relevant"
   ],
+  "italy": [
+    "check-eu-driving-licence-rules-and-renewal-awareness",
+    "stabilize-cross-border-bank-or-payment-routine-if-relevant"
+  ],
+  "switzerland": [
+    "check-eu-driving-licence-rules-and-renewal-awareness",
+    "stabilize-cross-border-bank-or-payment-routine-if-relevant"
+  ],
+  "sweden": [
+    "check-eu-driving-licence-rules-and-renewal-awareness",
+    "stabilize-cross-border-bank-or-payment-routine-if-relevant"
+  ],
+  "denmark": [
+    "check-eu-driving-licence-rules-and-renewal-awareness",
+    "stabilize-cross-border-bank-or-payment-routine-if-relevant"
+  ],
+  "norway": [
+    "check-eu-driving-licence-rules-and-renewal-awareness",
+    "stabilize-cross-border-bank-or-payment-routine-if-relevant"
+  ],
+  "ireland": [
+    "check-eu-driving-licence-rules-and-renewal-awareness",
+    "stabilize-cross-border-bank-or-payment-routine-if-relevant"
+  ],
+  "uae": [
+    "review-uae-to-nl-banking-transition",
+    "check-uae-driving-licence-use-in-nl-if-driving",
+    "keep-uae-issued-official-records-accessible-if-needed"
+  ],
   "brazil": [
     "review-money-transfer-and-banking-transition-brazil",
     "check-brazil-driving-licence-use-in-nl-if-driving"
+  ],
+  "mexico": [
+    "review-money-transfer-and-banking-transition-mexico",
+    "check-mexico-driving-licence-use-in-nl-if-driving",
+    "keep-mexico-issued-official-records-accessible-if-needed"
+  ],
+  "singapore": [
+    "review-money-transfer-and-banking-transition-singapore",
+    "check-singapore-driving-licence-use-in-nl-if-driving",
+    "keep-singapore-issued-official-records-accessible-if-needed"
+  ],
+  "japan": [
+    "review-money-transfer-and-banking-transition-japan",
+    "check-japan-driving-licence-use-in-nl-if-driving",
+    "keep-japan-issued-official-records-accessible-if-needed"
+  ],
+  "south-korea": [
+    "review-money-transfer-and-banking-transition-south-korea",
+    "check-south-korea-driving-licence-use-in-nl-if-driving",
+    "keep-south-korea-issued-official-records-accessible-if-needed"
+  ],
+  "turkey": [
+    "review-money-transfer-and-banking-transition-turkey",
+    "check-turkey-driving-licence-use-in-nl-if-driving",
+    "keep-turkey-issued-official-records-accessible-if-needed"
+  ],
+  "argentina": [
+    "review-money-transfer-and-banking-transition-argentina",
+    "check-argentina-driving-licence-use-in-nl-if-driving",
+    "keep-argentina-issued-official-records-accessible-if-needed"
+  ],
+  "chile": [
+    "review-money-transfer-and-banking-transition-chile",
+    "check-chile-driving-licence-use-in-nl-if-driving",
+    "keep-chile-issued-official-records-accessible-if-needed"
   ]
 }

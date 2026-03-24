@@ -1,0 +1,161 @@
+{
+  "slug": "mexico",
+  "name": "Mexico",
+  "shortName": "MX",
+  "iso2": "MX",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["Spanish", "English"],
+  "travel": {
+    "typicalFlightTime": "10–12 hours (e.g. Mexico City–Amsterdam)",
+    "notes": [
+      "Direct and one-stop options from Mexico City and other hubs; peak seasons affect pricing.",
+      "Long-stay MVV steps for many Mexican nationals are coordinated via the Dutch mission network in Mexico—confirm appointments and document lists on Netherlands Worldwide."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored tech, engineering, and corporate roles",
+      "Graduate or undergraduate study in the Netherlands",
+      "Partner or family reunification",
+      "Startup or entrepreneurship where criteria are met",
+      "International assignments within global employers"
+    ],
+    "popularDutchCities": ["Amsterdam", "Eindhoven", "Rotterdam", "Utrecht", "The Hague"],
+    "commonSectors": ["Technology", "Manufacturing and high tech", "Logistics", "Creative industries", "Higher education"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other sponsored employment",
+      "Study with a Dutch institution as sponsor",
+      "Partner and family routes with relationship evidence",
+      "Startup route with facilitator or advisor where applicable",
+      "Self-employment when conditions and business plans meet IND criteria"
+    ],
+    "notes": [
+      "Mexican nationals are not EU citizens: stays longer than short Schengen visits require a Dutch residence permit for a recognised purpose, and an MVV long-stay entry visa is typically required as well—confirm the current MVV exemption list on the IND.",
+      "Many Mexican passport holders do not need a Schengen visa for short stays up to 90 days; that visa-free entry does not authorise work or long-term residence.",
+      "MVV and residence permit applications are usually submitted together from abroad, often with a sponsor (employer, university, partner, etc.)."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid Mexican passport",
+      "Birth certificate and civil status documents when relevant",
+      "Educational diplomas and transcripts for study or skilled work routes",
+      "Police certificates or medical exams only if your permit type requires them",
+      "Sponsor letters, contract, or admission documents as applicable"
+    ],
+    "countrySpecificNotes": [
+      "Mexico is party to the Hague Apostille Convention: many Mexican public documents need an apostille (Apostilla de La Haya) from the competent authority for that document before use abroad—requirements vary by issuing state or agency.",
+      "Dutch authorities may require sworn translations into Dutch or English.",
+      "Start civil registry (actas) and notarial steps early; peak demand can add weeks."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "MVV and Schengen applications from Mexico",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Mexico-specific steps including representation in Mexico City where applicable."
+      },
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV, and route-specific requirements."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "MXN / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Mexico-to-Europe moves often combine sea freight for household goods with air cargo or baggage for essentials. Many people book temporary furnished housing in the Netherlands while shipments and registration dates align.",
+    "notes": [
+      "Align shipment timing with MVV validity and rental start dates.",
+      "Keep inventories and insurance documents for customs."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration and residence permit information."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and visa applications in Mexico",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Schengen and MVV long-stay application details for applicants in Mexico."
+      }
+    ]
+  },
+  "heroImageAlt": "A thoughtful long-haul relocation scene suggesting a move from Mexico to the Netherlands: travel essentials and documents with warm light, evoking preparation and a Dutch canal-city arrival.",
+  "seo": {
+    "title": "Moving to the Netherlands from Mexico | Visa, MVV & Residence Permit Guide",
+    "description": "Planning a move from Mexico to the Netherlands? Learn visa requirements, MVV process, residence permits, housing, and relocation steps.",
+    "keywords": [
+      "moving to the netherlands from mexico",
+      "mexico to netherlands visa",
+      "relocating from mexico to netherlands",
+      "netherlands residence permit mexico",
+      "netherlands mvv mexico",
+      "visa holanda mexico",
+      "mudanza mexico paises bajos",
+      "apostilla mexico documentos holanda"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Mexican nationals usually need MVV + residence permit planning; apostille and translation timelines often dominate the critical path."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Mexicans need a visa to visit the Netherlands?",
+      "a": "For short stays in the Schengen area, many Mexican passport holders do not need a visa for visits up to 90 days—see Netherlands Worldwide for the Schengen situation in Mexico. That is separate from moving for work, study, or family, which requires an appropriate residence permit route."
+    },
+    {
+      "q": "Do I need an MVV to move to the Netherlands from Mexico?",
+      "a": "For long stays, you normally need a residence permit. Mexican nationals are typically not exempt from the MVV requirement, so you usually also need an MVV (long-stay entry visa) before travelling to collect your permit in the Netherlands. Confirm the current rules on the IND and Netherlands Worldwide."
+    },
+    {
+      "q": "Where do I apply for the MVV from Mexico?",
+      "a": "Netherlands Worldwide publishes Mexico-specific instructions, including how applications are handled and how to collect the MVV sticker after approval—often linked to the Dutch representation in Mexico City. Always follow the current checklist and appointment system."
+    },
+    {
+      "q": "Can I work in the Netherlands with visa-free entry?",
+      "a": "No. Short visa-free visits do not replace a work permit or residence permit for employment. Non-EU workers generally need the correct permit or sponsored route—see Government.nl on permits for foreign workers and the IND for your specific case."
+    },
+    {
+      "q": "How should I prepare Mexican documents?",
+      "a": "Expect apostille legalisation for many official documents and sworn translations when requested. Requirements depend on the document and whether the IND, municipality, or employer asks for it. Build time for state or federal issuing steps in Mexico."
+    },
+    {
+      "q": "What are the first steps after arriving in the Netherlands?",
+      "a": "Most people prioritise collecting the residence permit if required, registering with the municipality for a BSN, opening a bank account, and arranging Dutch basic health insurance when resident. Use municipal and Government.nl guidance for your city."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Mexican software engineer with a Dutch employer (highly skilled migrant)",
+      "summary": "Coordinate sponsor timelines, joint MVV and residence permit steps from Mexico, housing near the role, and BSN-first banking and insurance."
+    },
+    {
+      "title": "Mexican student admitted to a Dutch university",
+      "summary": "Align admission, study permit, proof of funds, and student housing. Plan apostilles for actas and diplomas with translation buffer."
+    },
+    {
+      "title": "Partner moving from Mexico to join someone in the Netherlands",
+      "summary": "Relationship and civil documents are central; processing depends on the partner’s status. Expect legalisation and translation work on Mexican records."
+    },
+    {
+      "title": "Entrepreneur considering startup or self-employment",
+      "summary": "Map IND criteria for startup or self-employment, facilitator involvement if applicable, and municipality registration—these routes are more bespoke than standard employment."
+    }
+  ]
+}

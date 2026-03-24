@@ -1,0 +1,22 @@
+{
+  "id": "guide-doc-translation-nl",
+  "name": "Document translation guide",
+  "tagline": "When and how to get official translations for Dutch visas, gemeente, and employers.",
+  "categoryIds": ["documents"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["On-site guide", "Planning"],
+  "highlights": ["Certified vs informal translation", "Typical timelines", "What to translate first"],
+  "cta": {
+    "label": "Open guide",
+    "href": "/netherlands/document-translation-netherlands/",
+    "isAffiliate": false
+  },
+  "disclosure": "Editorial guide on ExpatCopilot.",
+  "logo": {
+    "src": "",
+    "alt": ""
+  }
+}

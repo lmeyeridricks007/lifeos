@@ -12,8 +12,8 @@
     "prepare-documents"
   ],
   "distanceCategories": {
-    "far": ["south-africa", "india", "united-states", "australia", "brazil", "canada", "japan"],
-    "regional": ["germany", "belgium", "france", "united-kingdom", "spain", "italy", "poland"]
+    "far": ["south-africa", "india", "united-states", "australia", "brazil", "argentina", "chile", "mexico", "canada", "japan", "singapore", "south-korea"],
+    "regional": ["germany", "belgium", "france", "united-kingdom", "spain", "italy", "switzerland", "sweden", "denmark", "norway", "ireland", "poland"]
   },
   "summaryTemplates": {
     "beforeMove": "Moving from {origin} with a {employment} often means preparing documents early and planning your first admin steps soon after arrival.",

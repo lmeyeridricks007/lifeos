@@ -1,0 +1,157 @@
+{
+  "slug": "turkey",
+  "name": "Türkiye",
+  "shortName": "Türkiye",
+  "iso2": "TR",
+  "regionGroup": "non-eu",
+  "distanceCategory": "near",
+  "languages": ["Turkish"],
+  "travel": {
+    "typicalFlightTime": "About 3–4 hours non-stop (e.g. Istanbul–Amsterdam)",
+    "notes": [
+      "Direct flights are common from Istanbul and other major cities; peak seasons and school holidays can affect pricing.",
+      "Long-stay immigration steps for Turkish nationals are usually handled through Netherlands Worldwide guidance for applicants in Türkiye, including MVV collection after a positive IND decision."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored employment with a Dutch or international employer",
+      "Highly skilled migrant routes where salary and sponsor criteria are met",
+      "Master’s or PhD study at a Dutch university",
+      "Joining a partner or family member under an eligible route",
+      "Entrepreneurship or startup routes where conditions are met",
+      "Corporate transfer or international assignment within a qualifying structure"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "Utrecht", "The Hague", "Eindhoven"],
+    "commonSectors": ["Technology", "Logistics", "Manufacturing", "Finance", "Higher education", "Creative industries"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other sponsored employment",
+      "Study with a Dutch educational institution as sponsor",
+      "Partner or family reunification with relationship and status evidence",
+      "Startup or self-employment where business criteria are met",
+      "Intra-corporate transfer where the official route matches your case"
+    ],
+    "notes": [
+      "Turkish nationals are not EU/EEA/Switzerland citizens: stays longer than short visits normally require a Dutch residence permit for a recognised purpose.",
+      "Many long-stay procedures also use an MVV (provisional residence permit / long-stay entry visa) so you can travel to the Netherlands and complete residence steps—but not every individual case is identical, so confirm your route on IND and Netherlands Worldwide.",
+      "Short-stay Schengen visits and long-stay relocation follow different procedures; confusing tourism or business trips with moving can derail timing.",
+      "The IND publishes a dedicated page for Turkish citizens in the Netherlands, including context for certain work-related situations—use it alongside your route-specific checklist."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid passport with enough validity for visa stickers and travel",
+      "Birth, marriage, or civil-status documents when your route requires them",
+      "Educational diplomas, transcripts, or professional credentials when relevant",
+      "Employment contract, employer statements, or university admission when sponsored",
+      "Proof-of-funds or sponsor assurances when the checklist asks for them"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide explains that some documents issued in Türkiye can be used in the Netherlands as-is, while others must be legalised with an apostille by the Turkish authorities before Dutch use.",
+      "If a document is drawn up in Turkish, it generally needs translation into Dutch, English, French, or German for use with Dutch authorities—confirm what your municipality, employer, or IND procedure requires.",
+      "Start early: apostille queues, sworn translation, and courier time often drive the critical path more than flights."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation of documents from Türkiye",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/turkiye",
+        "contactSummary": "Which Turkish documents may need apostille and how legalisation fits Dutch procedures."
+      },
+      {
+        "label": "IND",
+        "name": "Turkish citizens and living in the Netherlands",
+        "website": "https://ind.nl/en/turkish-citizens-and-living-in-the-netherlands",
+        "contactSummary": "Official IND context for Turkish nationals, including references to MVV-related situations for certain work categories."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "TRY / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Many people combine air baggage for essentials with sea or road options for household goods, depending on budget and timing. Align shipment dates with MVV validity, rental start dates, and registration appointments.",
+    "notes": [
+      "Compare insured movers vs self-packed freight; customs paperwork differs for household effects.",
+      "If you are exiting employment in Türkiye, align notice periods with your intended travel and entry window."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV, and route-specific requirements."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Visa and consular services for applicants in Türkiye",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Schengen short-stay applications via VFS Global, MVV long-stay steps, appointments in Istanbul, and document legalisation guidance for Türkiye."
+      }
+    ]
+  },
+  "heroImageAlt": "Cinematic relocation scene suggesting a journey from Türkiye to the Netherlands: travel bag and documents in warm light with soft hints of departure and Dutch canal-city arrival, editorial premium travel mood.",
+  "seo": {
+    "title": "Moving to the Netherlands from Türkiye | Visa, MVV, Documents & Practical Setup",
+    "description": "Planning a move from Türkiye to the Netherlands? Explore visa routes, MVV guidance, document apostille requirements, housing, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from turkey",
+      "moving to the netherlands from türkiye",
+      "move from turkey to netherlands",
+      "türkiye to netherlands visa",
+      "netherlands residence permit turkey",
+      "mvv netherlands turkiye",
+      "turkish documents apostille netherlands",
+      "schengen visa turkiye netherlands",
+      "dutch relocation from turkey",
+      "netherlands long stay visa turkey"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Türkiye-to-Netherlands moves are often immigration-heavy: MVV timing, apostille on Turkish documents, and sworn translations are common planning themes."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do people moving from Türkiye need a visa, MVV, or residence permit?",
+      "a": "For short visits, Schengen short-stay rules apply; when a visa is required, applications in Türkiye are handled through VFS Global under Netherlands Worldwide guidance. For stays longer than 90 days, you normally need a Dutch residence permit for a recognised purpose. Many long-stay routes also use an MVV entry visa so you can travel to the Netherlands and complete steps such as collecting your residence permit—but requirements depend on your exact route and situation. Verify your personal checklist on IND.nl and Netherlands Worldwide rather than assuming one answer fits every case."
+    },
+    {
+      "q": "What is an MVV when relocating from Türkiye to the Netherlands?",
+      "a": "The MVV (provisional residence permit) is a long-stay entry visa described by the IND for people who will stay in the Netherlands for more than 90 days in many procedures. It is issued as a visa sticker in your passport after a positive decision, so you can enter and finalise residence steps. MVV and residence permit applications are often linked from abroad. Follow the Türkiye-specific Netherlands Worldwide pages for how to apply and how appointments work where you live."
+    },
+    {
+      "q": "Where do Schengen and MVV applications happen in Türkiye?",
+      "a": "Netherlands Worldwide states that Schengen visa applications in Türkiye go through VFS Global, and publishes Türkiye-specific pages for MVV long stay, entry visa, appointments (including Istanbul), waiting times, and application status. For MVV appointments in Istanbul, the correct contact route can depend on your purpose of stay—check the current appointment page rather than relying on informal advice."
+    },
+    {
+      "q": "How far in advance can I apply for a Schengen visa from Türkiye?",
+      "a": "Netherlands Worldwide’s Schengen guidance for Türkiye explains that you can generally apply up to six months before travel and must apply no later than 45 days before you intend to travel (unless a specific exception applies). Always confirm the current rule on the official page, because procedures can change."
+    },
+    {
+      "q": "Do Turkish documents always need an apostille for the Netherlands?",
+      "a": "No. Netherlands Worldwide explains that some documents from Türkiye can be used in the Netherlands immediately, while others must be legalised with an apostille by the Turkish authorities first. Whether you need apostille, translation, or both depends on the document and what the Dutch procedure requires. Use the country-specific legalisation page and your route checklist."
+    },
+    {
+      "q": "What should I plan for right after arriving in the Netherlands?",
+      "a": "Most movers prioritise collecting a residence permit if the procedure requires it, registering with the municipality for a BSN, opening a bank account, and arranging Dutch basic health insurance when they become resident. DigiD, GP registration, and transport passes follow. Use the after-arrival guides on this site alongside official checklists."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Istanbul-based professional with a Dutch employer sponsor",
+      "summary": "Align IND processing, MVV collection after approval, housing near the role, and BSN-first banking and insurance. Compare visa consultants or lawyers if deadlines are tight."
+    },
+    {
+      "title": "Student admitted to a Dutch university",
+      "summary": "Sequence admission, study-permit conditions, housing near campus, and insurance rules for students. Plan apostille and translations for Turkish civil and education documents early."
+    }
+  ]
+}

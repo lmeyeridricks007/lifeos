@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { ContentHeroMedia } from "@/src/components/content/ContentHeroMedia";
 import type { CityHubHero } from "@/src/lib/city-hub/types";

@@ -330,6 +330,19 @@ export type GuideData = {
   resourcesAffiliatePlacementId?: string;
   disclosure?: string;
   lastUpdated?: string;
+  /** Optional ISO date for structured data (origin-country guides with a scheduled publish date). */
+  publishDate?: string;
+  /** Optional H2 placed above the quick-answer / snapshot cards. */
+  quickAnswersTitle?: string;
+  /** Optional override for the “Related guides” section heading. */
+  relatedGuidesSectionTitle?: string;
+  /** End-of-page CTA cards (e.g. “Plan your move further”). */
+  exploreNextCards?: Array<{
+    title: string;
+    description: string;
+    ctaLabel: string;
+    ctaHref: string;
+  }>;
 };
 
 export type GuideInternalLinks = {

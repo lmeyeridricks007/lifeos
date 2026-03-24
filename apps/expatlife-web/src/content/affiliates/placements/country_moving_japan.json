@@ -1,0 +1,46 @@
+{
+  "id": "country_moving_japan",
+  "destinationCountry": "netherlands",
+  "originCountry": "japan",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/japan/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services people in Japan often compare for a Netherlands move",
+  "intro": "MOFA apostille planning, embassy appointments, MVV timing, transfers, housing, insurance, and mobile—aligned with long-stay permit routes.",
+  "categoryOrder": ["documents", "planning", "banking", "housing", "insurance", "mobile"],
+  "items": [
+    {
+      "providerId": "guide-document-legalization-nl",
+      "reason": "Map apostille steps when Japan-issued documents feed into IND or gemeente procedures."
+    },
+    {
+      "providerId": "guide-doc-translation-nl",
+      "reason": "Plan sworn translations when Dutch or English versions are required."
+    },
+    {
+      "providerId": "tool-plan-document-readiness",
+      "reason": "Organise civil and sponsor documents before MVV submission."
+    },
+    {
+      "providerId": "tool-plan-moving-checklist",
+      "reason": "Build a phased checklist with ?from=japan context."
+    },
+    {
+      "providerId": "tool-plan-arrival-planner",
+      "reason": "Sequence BSN, banking, and insurance after arrival."
+    },
+    { "providerId": "wise", "reason": "Move JPY and EUR with transparent pricing for deposits and living costs." },
+    { "providerId": "bunq", "reason": "Digital Dutch banking often used soon after BSN and address." },
+    { "providerId": "abn-amro", "reason": "Traditional Dutch banking option some employers and landlords recognise easily." },
+    {
+      "providerId": "housinganywhere",
+      "reason": "Short and mid-term listings while you search for a long-term rental."
+    },
+    { "providerId": "independer", "reason": "Compare Dutch basic health insurance once you are resident." },
+    { "providerId": "simyo", "reason": "Dutch SIM options after you land." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

@@ -1,0 +1,29 @@
+{
+  "id": "guide-moving-mistakes-documents",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/moving-mistakes-netherlands/",
+    "slot": "after-mistake-documents"
+  },
+  "variant": "cards",
+  "title": "Document guides on ExpatCopilot",
+  "intro": "These guides help you translate, legalise, and prepare paperwork before deadlines pile up.",
+  "categoryOrder": ["documents"],
+  "items": [
+    {
+      "providerId": "guide-doc-translation-nl",
+      "reason": "Plan certified translations early so visas, housing, and gemeente steps are not blocked."
+    },
+    {
+      "providerId": "guide-apostille-nl",
+      "reason": "Understand when an apostille is required and how to obtain one in time."
+    },
+    {
+      "providerId": "guide-document-legalization-nl",
+      "reason": "See how foreign documents are legalised for Dutch authorities when an apostille alone is not enough."
+    }
+  ],
+  "disclosure": "These are editorial guides on this site, not paid placements."
+}

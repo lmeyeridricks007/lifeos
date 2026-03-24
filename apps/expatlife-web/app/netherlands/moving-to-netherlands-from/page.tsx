@@ -17,8 +17,9 @@ import {
 } from "@/components/ui/content-table";
 import { EDITORIAL_HERO_PLACEHOLDER } from "@/src/lib/content/editorialTypes";
 import {
-  getFeaturedOriginCountryGuides,
+  getFeaturedOriginCountryHubCards,
   getPublishedOriginCountryGuides,
+  getAllOriginCountryGuideEntries,
   ORIGIN_COUNTRY_INDEX_PATH,
 } from "@/src/lib/countries/originCountryGuides";
 import { OriginCountryBrowseSection } from "@/src/components/guides/OriginCountryBrowseSection";
@@ -27,12 +28,13 @@ import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
+/** Country list uses publish dates; avoid freezing the browse grid at build time. */
+export const dynamic = "force-dynamic";
 
 const baseUrl = getSiteOrigin();
 const canonical = `${ORIGIN_COUNTRY_INDEX_PATH}/`;
 
 const TOC_ITEMS = [
-  { id: "featured-relocation-guides", label: "Featured relocation guides" },
   { id: "browse-country-guides", label: "Browse country-specific relocation guides" },
   { id: "how-planning-differs", label: "How relocation planning differs by origin country" },
   { id: "what-changes-by-origin", label: "What often changes based on your origin country" },
@@ -94,8 +96,11 @@ export const metadata: Metadata = cloneSafeMetadata({
   },
 });
 
+const POPULAR_ROUTE_CARD_LIMIT = 5;
+
 export default async function MovingToNetherlandsFromIndexPage() {
-  const featured = getFeaturedOriginCountryGuides();
+  const popularRoutePicks = getFeaturedOriginCountryHubCards(POPULAR_ROUTE_CARD_LIMIT);
+  const browseEntries = getAllOriginCountryGuideEntries();
   const allPublished = getPublishedOriginCountryGuides();
 
   const breadcrumbCrumbs = [
@@ -167,37 +172,10 @@ export default async function MovingToNetherlandsFromIndexPage() {
                 </div>
               </section>
 
-              {/* Featured relocation guides */}
-              <Section
-                id="featured-relocation-guides"
-                title="Featured relocation guides"
-                subtitle="Start with the most common origin-country routes."
-                contained={false}
-                className="!pt-10 !pb-6"
-              >
-                <ul className="grid list-none gap-5 p-0 sm:grid-cols-2 lg:grid-cols-3">
-                  {featured.map((entry) => {
-                    const flagEmoji = entry.countryCode ? toFlagEmoji(entry.countryCode) : "";
-                    const icon = flagEmoji ? <span className="text-xl leading-none" aria-hidden>{flagEmoji}</span> : undefined;
-                    return (
-                      <li key={entry.slug}>
-                        <CardLink
-                          href={entry.href}
-                          title={`${entry.countryName} → Netherlands`}
-                          description={entry.shortDescription}
-                          meta={entry.supportingNote}
-                          icon={icon}
-                        />
-                      </li>
-                    );
-                  })}
-                </ul>
-              </Section>
-
               {/* Browse country guides */}
               <OriginCountryBrowseSection
                 id="browse-country-guides"
-                items={allPublished}
+                items={browseEntries}
                 title="Browse country-specific relocation guides"
                 subheading="Find your origin country for tailored planning notes, document cues, and next steps."
               />
@@ -260,12 +238,12 @@ export default async function MovingToNetherlandsFromIndexPage() {
               <Section
                 id="popular-routes"
                 title="Popular relocation routes"
-                subtitle="Many users start with one of the most common country-specific relocation guides below."
+                subtitle="Five common starting points; the browse section lists every planned origin-country guide (coming soon until the publish date)."
                 contained={false}
                 className="!pt-10 !pb-6"
               >
                 <ul className="grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
-                  {featured.slice(0, 6).map((entry) => {
+                  {popularRoutePicks.map((entry) => {
                     const flagEmoji = entry.countryCode ? toFlagEmoji(entry.countryCode) : "";
                     const icon = flagEmoji ? <span className="text-xl leading-none" aria-hidden>{flagEmoji}</span> : undefined;
                     return (
@@ -275,6 +253,7 @@ export default async function MovingToNetherlandsFromIndexPage() {
                           title={`${entry.countryName} → Netherlands`}
                           description={entry.shortDescription}
                           icon={icon}
+                          status={entry.isPublished ? undefined : "coming_soon"}
                         />
                       </li>
                     );

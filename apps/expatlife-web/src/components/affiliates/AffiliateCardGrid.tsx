@@ -1,8 +1,16 @@
 "use client";
 
+import Link from "next/link";
 import type { AffiliateProvider } from "@/src/lib/affiliates/types";
 import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
 import { ProviderLogo } from "./ProviderLogo";
+
+const ctaButtonClass =
+  "inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-900 hover:bg-slate-50";
+
+function isInternalEditorialCta(href: string, isAffiliate: boolean): boolean {
+  return href.startsWith("/") && !isAffiliate;
+}
 
 export type CardItem = {
   provider: AffiliateProvider;
@@ -46,16 +54,22 @@ function AffiliateCard({ provider, reason }: CardItem) {
             <p className="mt-1.5 text-xs text-slate-500">{reasonTrim}</p>
           ) : null}
           <div className="mt-4">
-            <TrackedExternalLink
-              href={provider.cta.href}
-              target="_blank"
-              rel="sponsored noopener noreferrer"
-              linkType="provider"
-              linkText={provider.cta.label}
-              className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-900 hover:bg-slate-50"
-            >
-              {provider.cta.label}
-            </TrackedExternalLink>
+            {isInternalEditorialCta(provider.cta.href, provider.cta.isAffiliate) ? (
+              <Link href={provider.cta.href} className={ctaButtonClass}>
+                {provider.cta.label}
+              </Link>
+            ) : (
+              <TrackedExternalLink
+                href={provider.cta.href}
+                target="_blank"
+                rel={provider.cta.isAffiliate ? "sponsored noopener noreferrer" : "noopener noreferrer"}
+                linkType="provider"
+                linkText={provider.cta.label}
+                className={ctaButtonClass}
+              >
+                {provider.cta.label}
+              </TrackedExternalLink>
+            )}
           </div>
         </div>
       </div>

@@ -1,0 +1,22 @@
+{
+  "id": "tool-plan-document-readiness",
+  "name": "Document readiness",
+  "tagline": "See which documents to prepare and common gaps before you move.",
+  "categoryIds": ["planning"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Free tool", "Before you move"],
+  "highlights": ["Country-aware prompts", "Pack-style output", "Pairs with guides"],
+  "cta": {
+    "label": "Open tool",
+    "href": "/netherlands/moving/tools/document-readiness/",
+    "isAffiliate": false
+  },
+  "disclosure": "Free tool on ExpatCopilot.",
+  "logo": {
+    "src": "",
+    "alt": ""
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "guide-moving-mistakes-financial-setup",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/moving-mistakes-netherlands/",
+    "slot": "after-mistake-finances"
+  },
+  "variant": "cards",
+  "title": "Banking and insurance for your budget",
+  "intro": "Understanding accounts, transfers, and mandatory health insurance early helps you plan deposits, rent, and day-to-day costs.",
+  "categoryOrder": ["banking", "insurance"],
+  "items": [
+    {
+      "providerId": "bunq",
+      "reason": "Fast onboarding in English when you need a local IBAN for rent and salary."
+    },
+    {
+      "providerId": "wise",
+      "reason": "Move money into euros and hold multiple currencies during the transition."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Compare insurers and premiums so insurance isn’t a surprise line item."
+    }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

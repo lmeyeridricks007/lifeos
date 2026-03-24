@@ -94,11 +94,28 @@ const DEFAULT_ANSWERS: VisaCostCalculatorAnswers = {
 };
 
 function deriveTravelBand(countryCode: string): string {
-  const longHaul = ["india", "united-states", "south-africa", "australia", "brazil", "china", "japan", "mexico"];
+  const longHaul = [
+    "india",
+    "united-states",
+    "south-africa",
+    "australia",
+    "brazil",
+    "china",
+    "japan",
+    "mexico",
+    "singapore",
+    "south-korea",
+    "argentina",
+    "chile",
+  ];
   const mediumHaul = ["united-kingdom", "russia", "ukraine", "turkey", "egypt"];
   if (longHaul.includes(countryCode)) return "long-haul";
   if (mediumHaul.includes(countryCode)) return "medium-haul";
-  if (countryCode && ["germany", "france", "belgium", "spain", "italy", "poland"].includes(countryCode)) return "nearby-europe";
+  if (
+    countryCode &&
+    ["germany", "france", "belgium", "spain", "italy", "switzerland", "sweden", "denmark", "norway", "ireland", "poland"].includes(countryCode)
+  )
+    return "nearby-europe";
   return "";
 }
 

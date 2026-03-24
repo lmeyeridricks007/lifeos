@@ -1,0 +1,137 @@
+{
+  "slug": "france",
+  "name": "France",
+  "shortName": "FR",
+  "iso2": "FR",
+  "regionGroup": "eu",
+  "distanceCategory": "near",
+  "languages": ["French", "English"],
+  "travel": {
+    "typicalFlightTime": "1–2 hours (or rail / car)",
+    "notes": [
+      "High-speed rail and driving are common; short flights from Paris and regional airports too.",
+      "Cross-border workers who keep main residence in France may follow different registration rules."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Cross-border employment",
+      "Study and research",
+      "Partner or family relocation",
+      "EU remote work and lifestyle moves"
+    ],
+    "popularDutchCities": ["Amsterdam", "The Hague", "Utrecht", "Eindhoven", "Maastricht"],
+    "commonSectors": ["Technology", "Institutions", "Logistics", "Creative industries", "Research"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "EU free movement (ordinary residence)",
+      "Work, study, or self-sufficiency within EU rules"
+    ],
+    "notes": [
+      "French nationals do not follow the same MVV pathway as non-EU nationals for standard EU residence.",
+      "BRP registration, BSN, and practical setup are usually the main early focus."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Passport or national ID",
+      "Dutch address proof for registration",
+      "Employment or study documents where relevant",
+      "French civil-status documents when needed (some need apostille per Netherlands Worldwide)"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide describes which French documents can be used immediately and which need apostille; official documents in French often need no translation for Dutch use.",
+      "Confirm each document with the requesting authority."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "French documents for use in the Netherlands",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/france",
+        "contactSummary": "Country-specific document and legalisation guidance."
+      },
+      {
+        "label": "IND",
+        "name": "EU, EEA and Swiss citizens in the Netherlands",
+        "website": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+        "contactSummary": "Official EU citizen stay information."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Regional moves often use road, rail, or a small removal van; larger households may use professional movers. Plan parking and building access in Dutch cities.",
+    "notes": [
+      "Compare van hire, man-with-a-van, and full-service options for your volume.",
+      "Temporary parking permits may be needed at your Dutch address."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "EU, EEA and Swiss citizens — staying in the Netherlands",
+        "website": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+        "contactSummary": "EU free movement and residence information."
+      },
+      {
+        "label": "Government.nl",
+        "name": "Personal Records Database (BRP)",
+        "website": "https://www.government.nl/topics/personal-data/personal-records-database-brp",
+        "contactSummary": "Official BRP registration context."
+      }
+    ]
+  },
+  "heroImageAlt": "Abstract twilight gradient suggesting travel from France toward the Netherlands—canal-side calm and cross-border journey mood.",
+  "seo": {
+    "title": "Moving to the Netherlands from France | Registration, Documents, Costs & Practical Setup",
+    "description": "Planning a move from France to the Netherlands? Explore EU move rules, registration, BSN, document requirements, housing, banking, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from france",
+      "move from france to netherlands",
+      "relocating from france to netherlands",
+      "moving from france to holland",
+      "french moving to netherlands",
+      "eu citizen move to netherlands from france",
+      "france to netherlands registration",
+      "french documents netherlands apostille",
+      "french documents netherlands no translation",
+      "living in the netherlands as a french citizen"
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do French citizens need a visa to live in the Netherlands?",
+      "a": "French nationals are EU citizens. For ordinary long-term residence based on EU free movement, you generally do not need a visa or standard residence permit in the same way as non-EU nationals. You must still meet the conditions that apply to your situation. Confirm on the IND page for EU, EEA, and Swiss citizens and on Government.nl."
+    },
+    {
+      "q": "Do I need an MVV to move from France to the Netherlands?",
+      "a": "An MVV is used in many non-EU long-stay procedures. It is not the standard framework for French nationals exercising EU free movement for ordinary residence. Unusual cases may still need tailored checks—use official sources or professional advice if unsure."
+    },
+    {
+      "q": "How do I register after moving from France?",
+      "a": "If you will stay in the Netherlands for more than four months, you normally register in the BRP through your municipality. Government.nl states you must register within five days of arrival. The municipality issues your BSN. See our municipality registration guide and the Government.nl BRP pages."
+    },
+    {
+      "q": "Do French documents need translation for the Netherlands?",
+      "a": "Netherlands Worldwide indicates that foreign official documents in French do not need to be translated for use in the Netherlands. Some documents can be used immediately; others may need an apostille from the French authorities. Always confirm for your specific document and the organisation that requests it."
+    },
+    {
+      "q": "What should I prioritise in the first weeks?",
+      "a": "Most people focus on BRP registration and BSN, Dutch basic health insurance where required, a bank account, and DigiD. Housing search intensity is often the hardest part, not immigration paperwork."
+    },
+    {
+      "q": "When might immigration lawyers or visa consultants still help?",
+      "a": "Complex family situations, verification against EU law, or specialised legal questions may warrant support. For typical EU moves, many people start with gemeente guidance and official web pages."
+    }
+  ],
+  "scenarioOverrides": [],
+  "affiliateContext": {
+    "preferredCategories": ["housing", "banking", "insurance", "mobile"],
+    "customNotes": ["EU movers from France often prioritise housing platforms and banking after registration planning."]
+  }
+}

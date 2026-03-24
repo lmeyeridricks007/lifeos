@@ -1,0 +1,22 @@
+{
+  "id": "guide-document-legalization-nl",
+  "name": "Document legalization guide",
+  "tagline": "Legalising foreign documents for use in the Netherlands: apostille, embassies, and gemeente.",
+  "categoryIds": ["documents"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["On-site guide", "Official paperwork"],
+  "highlights": ["Apostille vs full legalisation", "Country-specific paths", "Registration and permits"],
+  "cta": {
+    "label": "Open guide",
+    "href": "/netherlands/document-legalization-netherlands/",
+    "isAffiliate": false
+  },
+  "disclosure": "Editorial guide on ExpatCopilot.",
+  "logo": {
+    "src": "",
+    "alt": ""
+  }
+}

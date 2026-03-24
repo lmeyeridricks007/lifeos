@@ -7,50 +7,136 @@
   "distanceCategory": "far",
   "languages": ["English", "French"],
   "travel": {
-    "typicalFlightTime": "7-10 hours",
-    "notes": ["Long-haul routes usually require early travel and housing planning."]
+    "typicalFlightTime": "7–10 hours",
+    "notes": [
+      "Long-haul from major Canadian hubs; seasonal pricing and connections affect total travel time.",
+      "Book flexible arrival accommodation while you complete first-week admin."
+    ]
   },
   "relocationProfile": {
-    "commonReasons": ["Employer relocation", "Family move", "Lifestyle change"],
-    "popularDutchCities": ["Amsterdam", "Utrecht", "Rotterdam"],
-    "commonSectors": ["Technology", "Finance", "Logistics"]
+    "commonReasons": [
+      "International career moves",
+      "Study at Dutch universities",
+      "Partner or family reunification",
+      "Entrepreneurship and startup routes",
+      "Working holiday and cultural exchange"
+    ],
+    "popularDutchCities": ["Amsterdam", "Utrecht", "The Hague", "Eindhoven", "Rotterdam"],
+    "commonSectors": ["Technology", "Finance", "Logistics", "Research", "Public and international organisations"]
   },
   "visaAwareness": {
-    "commonRoutes": ["Highly Skilled Migrant", "Partner / Family route", "Study route"],
-    "notes": ["Check route requirements based on your sponsor and stay purpose."]
+    "commonRoutes": [
+      "Sponsored employment and highly skilled migrant routes",
+      "Study permits with enrollment at a Dutch institution",
+      "Partner and family routes with relationship evidence",
+      "Entrepreneurship, startup, or self-employment where criteria are met",
+      "Working Holiday Scheme for eligible Canadians"
+    ],
+    "notes": [
+      "Non-EU nationals generally need a recognised purpose to live in the Netherlands longer than short visits.",
+      "MVV entry visas apply in many (not all) long-stay procedures—confirm on IND and Netherlands Worldwide."
+    ]
   },
   "documents": {
-    "commonStarterDocuments": ["Passport", "Birth certificate", "Employment records", "Proof of address"],
-    "countrySpecificNotes": ["Provincial document processes can have different lead times."],
+    "commonStarterDocuments": [
+      "Valid passport",
+      "Birth or marriage certificates when relevant",
+      "Employment contract or university admission",
+      "Proof of address history where required",
+      "Permit-specific forms from sponsor or institution"
+    ],
+    "countrySpecificNotes": [
+      "Canadian documents may require apostille authentication for use abroad (see Global Affairs Canada).",
+      "Provincial issuing bodies can have different processing times for civil records."
+    ],
     "sources": [
       {
-        "label": "Government of Canada",
-        "name": "Government of Canada Services",
-        "website": "https://www.canada.ca",
-        "contactSummary": "Government information for identity and civil records."
+        "label": "Global Affairs Canada",
+        "name": "Authentication of Canadian documents",
+        "website": "https://www.international.gc.ca/gac-amc/about-a_propos/services/authentication-authentification/index.aspx?lang=eng",
+        "contactSummary": "Official guidance on apostille and authentication for documents used outside Canada."
+      },
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV, and route-specific requirements."
       }
     ]
   },
   "costs": {
     "currency": "CAD / EUR",
-    "ranges": [
-      { "key": "oneWayFlight", "label": "One-way flight", "value": "CAD500-CAD1,200", "note": "Depends on city pair and season." },
-      { "key": "shipping", "label": "Shipping household goods", "value": "EUR2,000-EUR7,000", "note": "Based on shipment size and service type." }
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Most Canadians moving household goods to the Netherlands use sea freight with several weeks of transit. Temporary furnished housing is common while shipments clear and leases begin.",
+    "notes": [
+      "Decide between shared container, full container, or air freight for essentials only.",
+      "Align your shipment arrival with municipality registration and move-in dates where possible."
     ]
   },
   "contacts": {
     "official": [
-      { "label": "IND", "name": "Dutch Immigration and Naturalisation Service", "website": "https://ind.nl", "contactSummary": "Official immigration information." }
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration and residence permit information."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and country-specific visa application information",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Checklists, MVV applications in Canada, and WHP details."
+      }
     ]
   },
+  "heroImageAlt": "A peaceful Dutch canal lined with traditional gabled houses and a bridge—an arrival-in-the-Netherlands mood for Canadians planning a transatlantic move.",
   "seo": {
-    "title": "Moving to the Netherlands from Canada: Practical Planning Guide",
-    "description": "Practical relocation planning for people moving from Canada to the Netherlands, including documents, route awareness, and first-step priorities."
+    "title": "Moving to the Netherlands from Canada | Visas, Documents, Costs & Practical Setup",
+    "description": "Planning a move from Canada to the Netherlands? Explore visa routes, MVV guidance, document prep, working holiday options, costs, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from canada",
+      "move from canada to netherlands",
+      "canada to netherlands visa",
+      "relocating from canada to netherlands",
+      "moving from canada to holland",
+      "dutch working holiday canada",
+      "mvv netherlands canada",
+      "netherlands residence permit canada",
+      "apostille canadian documents netherlands",
+      "canadians living in the netherlands"
+    ]
   },
-  "faqOverrides": [],
+  "faqOverrides": [
+    {
+      "q": "Do Canadians need a visa to live in the Netherlands?",
+      "a": "For stays longer than short visits, most Canadians need a Dutch residence permit for a recognised purpose such as work, study, family, or certain exchange routes. Whether you also need an MVV (entry visa) depends on your nationality and permit type—confirm on IND and Netherlands Worldwide."
+    },
+    {
+      "q": "What is an MVV for the Netherlands?",
+      "a": "The MVV is a provisional residence permit used as an entry visa in many long-stay procedures. It lets you travel to the Netherlands to complete steps such as collecting your residence permit when your route requires it. Check IND pages and the Canada-specific Netherlands Worldwide instructions."
+    },
+    {
+      "q": "Where do Canadians apply for the MVV sticker?",
+      "a": "Netherlands Worldwide describes how to apply for the MVV long-stay visa from Canada, including handling for areas such as Ottawa, Toronto, and Vancouver. Always follow the current page for your situation."
+    },
+    {
+      "q": "Can Canadians use a Dutch working holiday?",
+      "a": "Yes—Canadians can be eligible for the Netherlands Working Holiday Programme / working holiday residence permit under the conditions published by Netherlands Worldwide and the IND. It is not the same route as standard long-term skilled employment."
+    },
+    {
+      "q": "How should I prepare Canadian documents for Dutch authorities?",
+      "a": "Global Affairs Canada explains authentication for use abroad; Canadian documents are authenticated with an apostille under current rules. Some procedures also require sworn translation. Start early and cross-check the exact document list for your permit or municipality process."
+    },
+    {
+      "q": "Who helps Canadians with consular services in the Netherlands?",
+      "a": "The Embassy of Canada in The Hague provides consular services and publishes country-specific guidance for Canadians in the Netherlands, including certain document services where applicable."
+    }
+  ],
   "scenarioOverrides": [],
   "affiliateContext": {
-    "preferredCategories": ["banking", "housing", "insurance"],
-    "customNotes": []
+    "preferredCategories": ["banking", "housing", "insurance", "shipping", "mobile"],
+    "customNotes": ["Transatlantic moves often combine temporary housing, shipping, and cross-border banking."]
   }
 }

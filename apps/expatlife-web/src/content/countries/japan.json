@@ -1,0 +1,170 @@
+{
+  "slug": "japan",
+  "name": "Japan",
+  "shortName": "JP",
+  "iso2": "JP",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["Japanese", "English"],
+  "travel": {
+    "typicalFlightTime": "12–15 hours (Tokyo–Amsterdam; route-dependent)",
+    "notes": [
+      "Direct and one-stop options; align travel with MVV validity and first-week appointments in the Netherlands.",
+      "Long-stay MVV collection and appointments are described on Netherlands Worldwide for Japan—confirm the Dutch embassy in Tokyo and current booking flow."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored roles with Dutch or European employers",
+      "Study at Dutch universities",
+      "Partner or family reunification",
+      "Startup or entrepreneurship where criteria are met",
+      "Regional corporate transfers into Dutch entities"
+    ],
+    "popularDutchCities": ["Amsterdam", "Eindhoven", "Utrecht", "The Hague", "Rotterdam"],
+    "commonSectors": ["Technology", "Manufacturing and high tech", "Automotive and engineering", "Creative industries", "Higher education", "International institutions"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other sponsored employment",
+      "Study with a Dutch institution as sponsor",
+      "Partner and family routes",
+      "Startup or self-employment where IND criteria are met",
+      "Intra-company or assignment structures where applicable"
+    ],
+    "notes": [
+      "Japan is outside the EU/EEA/Switzerland: long stays are permit-driven, and an MVV (long-stay entry visa, often described as a Type D national visa sticker) is required in many—but not all—procedures; verify the MVV exemption list and your specific route on the IND.",
+      "Short-stay Schengen rules are a different process from relocating for work, study, or family.",
+      "MVV and residence permit applications are often linked from abroad; the IND decision letter indicates where to collect the MVV sticker, commonly via the Dutch mission network in Japan (e.g. Tokyo) when that applies to you."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid passport",
+      "Birth, marriage, or civil documents when relevant to your route",
+      "Educational and employment evidence for study or work permits",
+      "Sponsor or admission documentation as required"
+    ],
+    "countrySpecificNotes": [
+      "For many Japan-issued documents used in the Netherlands, legalisation with a Hague apostille through the Japanese Ministry of Foreign Affairs (MOFA) is the standard path described on Netherlands Worldwide.",
+      "Sworn translations may be required when Dutch authorities request Dutch or English versions.",
+      "Netherlands Worldwide publishes Japan-specific legalisation guidance—cross-check each document type."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation of documents from Japan",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "How Japanese documents are prepared for use in Dutch procedures."
+      },
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV, and route-specific requirements."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "JPY / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Japan-to-Europe moves often combine sea freight for household goods with air baggage or courier for essentials. Temporary furnished housing in the Netherlands is common while shipments and MVV-driven travel dates align.",
+    "notes": [
+      "Align shipment dates with MVV validity and lease start.",
+      "Inventory lists help with insurance and customs."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration and residence permit information."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Visa and consular services for Japan",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Schengen, MVV, appointments, and civic integration exam in Japan."
+      }
+    ]
+  },
+  "heroImageAlt": "Calm daylight on a minimal Japanese-style interior: soft light through a translucent screen, a closed passport, suitcase handle, tea cup, and a single cherry blossom stem—editorial mood for planning a move from Japan to the Netherlands.",
+  "seo": {
+    "title": "Moving to the Netherlands from Japan | Visa, MVV, Documents & Practical Setup",
+    "description": "Planning a move from Japan to the Netherlands? Explore visa routes, MVV guidance, document apostille requirements, housing, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from japan",
+      "move from japan to netherlands",
+      "japan to netherlands visa",
+      "relocating from japan to netherlands",
+      "netherlands residence permit japan",
+      "mvv netherlands japan",
+      "japan documents apostille netherlands",
+      "schengen visa japan netherlands",
+      "dutch relocation from japan",
+      "netherlands long stay visa japan"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Japan-origin moves often hinge on MOFA apostille timing, embassy appointment slots, and MVV validity windows."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Japanese nationals need a visa to visit the Netherlands?",
+      "a": "Short stays in the Schengen area follow Schengen short-stay rules. Netherlands Worldwide has Japan-specific pages for Schengen visas and entry visas when one is required. Many Japanese passport holders can visit short-term without a Schengen visa under current rules, but purpose of stay and edge cases still matter—and short visits are not the same as relocating for work or study."
+    },
+    {
+      "q": "Do I need an MVV to move from Japan to the Netherlands?",
+      "a": "For stays longer than short visits, you normally need a residence permit for a recognised purpose. Many routes also require an MVV long-stay entry visa (a Type D visa sticker) before travel, but exemptions exist for some situations—check the IND’s MVV information and your specific permit type rather than assuming one answer for everyone."
+    },
+    {
+      "q": "Where is the MVV collected when applying from Japan?",
+      "a": "After a positive decision, the IND letter states where to collect the MVV sticker. Netherlands Worldwide describes MVV applications and appointments for Japan; collection and appointments are often handled through the Dutch embassy in Tokyo when that applies to your procedure—always follow the current official instructions."
+    },
+    {
+      "q": "How do I legalise Japanese documents for Dutch authorities?",
+      "a": "Many Japanese public documents need a Hague apostille through the Japanese Ministry of Foreign Affairs (MOFA) for use in the Netherlands, as explained on Netherlands Worldwide. You may still need sworn translation depending on the receiving body."
+    },
+    {
+      "q": "What about the civic integration exam abroad?",
+      "a": "Depending on your route, civic integration requirements may apply. Netherlands Worldwide lists Japan-specific information for the civic integration exam abroad when relevant to your situation."
+    },
+    {
+      "q": "What should I plan for immediately after arriving?",
+      "a": "Most people prioritise municipal registration and BSN, residence permit steps if applicable, a bank account, and Dutch basic health insurance when resident. DigiD and GP registration follow once identifiers exist."
+    },
+    {
+      "q": "Is this page legal advice?",
+      "a": "No. This guide summarises common planning themes and links to official sources. Always confirm your situation with the IND, Netherlands Worldwide, your sponsor, or qualified advisors."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Japanese professional relocating for a Dutch job",
+      "summary": "Coordinate sponsor timelines, MVV collection per your IND letter, housing within commute range, and BSN-first banking and insurance."
+    },
+    {
+      "title": "Student moving from Japan to a Dutch university",
+      "summary": "Match admission to study permit conditions; plan MOFA apostilles on academic and civil documents; budget for student housing."
+    },
+    {
+      "title": "Partner or family relocation from Japan",
+      "summary": "Relationship evidence and civil documents are central; timelines depend on the partner’s status in the Netherlands."
+    },
+    {
+      "title": "Entrepreneur exploring startup or self-employment",
+      "summary": "Map IND criteria, possible facilitator involvement, and municipality registration—expect more bespoke evidence than a standard employee route."
+    },
+    {
+      "title": "Corporate transfer from a Japan office",
+      "summary": "Clarify sponsor, permit type, MVV sequencing, and payroll transition with your mobility team."
+    }
+  ]
+}

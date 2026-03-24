@@ -1,6 +1,7 @@
 import {
   COMING_SOON_ROUTES,
   LIVE_PATHS,
+  MOVING_TOOL_FROM_SLUGS,
   PLACEHOLDER_TOOL_PATHS,
   normalizeSitePath,
   isOriginCountryGuidePath,
@@ -16,12 +17,33 @@ import {
   isNetherlandsCitiesHubPubliclyVisible,
 } from "@/src/lib/cities-overview/citiesHubPublishing";
 import { findNetherlandsCityHubByNormalizedPath } from "@/src/lib/city-hub/netherlandsCityHubPages";
+import { isOriginCountryGuidePubliclyVisible } from "@/src/lib/countries/originCountryPublishing";
 
 export type PublishRouteStatus = "live" | "coming-soon" | "hidden";
+
+function originCountrySlugFromNormalizedPath(n: string): string | null {
+  const m = /^\/netherlands\/moving\/moving-to-netherlands-from\/([a-z0-9-]+)\/$/.exec(n);
+  return m?.[1] ?? null;
+}
+
+function movingToolOriginSlugFromNormalizedPath(n: string): string | null {
+  const re = new RegExp(
+    `^/netherlands/moving/tools/(${MOVING_TOOL_FROM_SLUGS.join("|")})/from/([a-z0-9-]+)/$`
+  );
+  const m = re.exec(n);
+  return m?.[2] ?? null;
+}
 
 export function getRouteStatus(href: string, now: Date = new Date()): PublishRouteStatus {
   const n = normalizeSitePath(href);
   if (COMING_SOON_ROUTES[n] || PLACEHOLDER_TOOL_PATHS.has(n)) return "coming-soon";
+
+  const originSlug = originCountrySlugFromNormalizedPath(n);
+  const toolFromSlug = movingToolOriginSlugFromNormalizedPath(n);
+  const gatedOriginSlug = originSlug ?? toolFromSlug;
+  if (gatedOriginSlug && !isOriginCountryGuidePubliclyVisible(gatedOriginSlug, now)) {
+    return "hidden";
+  }
 
   const baseLive =
     LIVE_PATHS.has(n) || isOriginCountryGuidePath(href) || isMovingToolFromCountryPath(href);

@@ -5,7 +5,10 @@ import { notFound } from "next/navigation";
 import { cloneSafeMetadata } from "@/lib/metadata";
 import { GuidePageTemplate } from "@/src/components/guides/GuidePageTemplate";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
-import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
+import { ArticleJsonLd, FaqPageJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
+import { headers } from "next/headers";
+import { DEV_SIMULATE_LIVE_HEADER } from "@/src/lib/publishing/devSimulateLive";
+import { isOriginCountryGuidePubliclyVisible } from "@/src/lib/countries/originCountryPublishing";
 import { buildCountryPageModel } from "@/src/lib/countries/buildCountryPageModel";
 import { countryModelToGuideData } from "@/src/lib/countries/countryModelToGuideData";
 import { getCountryBySlug, getCountryStaticParams } from "@/src/lib/countries/getCountryBySlug";
@@ -32,7 +35,6 @@ export function generateStaticParams() {
   return getCountryStaticParams();
 }
 
-const INDEX_PATH = "/netherlands/moving/moving-to-netherlands-from/";
 const FALLBACK_META = {
   title: "Moving to the Netherlands from your country",
   description: "Practical planning guidance for moving to the Netherlands.",
@@ -46,9 +48,13 @@ function buildStaticMetadataMap(): Record<string, Metadata> {
     if (!model) continue;
     const canonicalPath =
       model.seo.canonicalPath.startsWith("/") ? model.seo.canonicalPath : `/${model.seo.canonicalPath}`;
+    const kw = model.seo.keywords?.length
+      ? model.seo.keywords.map(String).join(", ")
+      : undefined;
     const raw = {
       title: String(model.seo.title),
       description: String(model.seo.description),
+      ...(kw ? { keywords: kw } : {}),
       alternates: { canonical: canonicalPath },
       openGraph: {
         title: String(model.seo.title),
@@ -89,6 +95,12 @@ export default async function CountryRoutePage({
 }) {
   const countrySlug =
     typeof params === "object" && "then" in params ? (await params).country : params.country;
+
+  const enforcePublishDates = headers().get(DEV_SIMULATE_LIVE_HEADER) === "1";
+  if (!isOriginCountryGuidePubliclyVisible(countrySlug, new Date(), { enforcePublishDates })) {
+    notFound();
+  }
+
   const model = getModel(countrySlug);
   if (!model) notFound();
 
@@ -131,14 +143,22 @@ export default async function CountryRoutePage({
   const canonicalUrl = new URL(data.path.startsWith("/") ? data.path : `/${data.path}`, baseUrl).toString();
   const serializableData = JSON.parse(JSON.stringify(data));
   const serializableBlocks = JSON.parse(JSON.stringify(affiliateBlocks));
+  const datePublished =
+    typeof serializableData.publishDate === "string" ? serializableData.publishDate : undefined;
 
   return (
     <>
       <BreadcrumbJsonLd crumbs={breadcrumbCrumbs} />
+      <WebPageJsonLd
+        name={data.metaTitle ?? data.title}
+        description={data.description}
+        urlPath={data.path}
+        datePublished={datePublished}
+      />
       <ArticleJsonLd
         headline={data.title}
         description={data.description}
-        dateModified={new Date().toISOString().slice(0, 10)}
+        dateModified={datePublished ?? new Date().toISOString().slice(0, 10)}
         urlPath={data.path}
       />
       {data.faq?.length ? <FaqPageJsonLd items={data.faq} /> : null}

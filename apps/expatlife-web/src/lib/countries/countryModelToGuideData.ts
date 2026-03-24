@@ -5,6 +5,27 @@
 
 import type { GuideData, GuideSection, GuideToolCta } from "@/src/lib/guides/types";
 import type { CountryPageModel } from "./buildCountryPageModel";
+import { augmentAustraliaGuideData } from "./australiaMovingGuideData";
+import { augmentCanadaGuideData } from "./canadaMovingGuideData";
+import { augmentFranceGuideData } from "./franceMovingGuideData";
+import { augmentGermanyGuideData } from "./germanyMovingGuideData";
+import { augmentSpainGuideData } from "./spainMovingGuideData";
+import { augmentItalyGuideData } from "./italyMovingGuideData";
+import { augmentNewZealandGuideData } from "./newZealandMovingGuideData";
+import { augmentUaeGuideData } from "./uaeMovingGuideData";
+import { augmentBrazilGuideData } from "./brazilMovingGuideData";
+import { augmentMexicoGuideData } from "./mexicoMovingGuideData";
+import { augmentSingaporeGuideData } from "./singaporeMovingGuideData";
+import { augmentJapanGuideData } from "./japanMovingGuideData";
+import { augmentSouthKoreaGuideData } from "./southKoreaMovingGuideData";
+import { augmentTurkeyGuideData } from "./turkeyMovingGuideData";
+import { augmentArgentinaGuideData } from "./argentinaMovingGuideData";
+import { augmentChileGuideData } from "./chileMovingGuideData";
+import { augmentSwitzerlandGuideData } from "./switzerlandMovingGuideData";
+import { augmentSwedenGuideData } from "./swedenMovingGuideData";
+import { augmentDenmarkGuideData } from "./denmarkMovingGuideData";
+import { augmentNorwayGuideData } from "./norwayMovingGuideData";
+import { augmentIrelandGuideData } from "./irelandMovingGuideData";
 
 const HUB_PATH = "/netherlands/moving/";
 const PILLAR_PATH = "/netherlands/moving-to-the-netherlands/";
@@ -15,7 +36,7 @@ const DOCUMENTS_GUIDE_PATH = "/netherlands/documents-needed-to-move-netherlands/
 const COST_GUIDE_PATH = "/netherlands/moving-to-netherlands-cost/";
 const FIRST_90_DAYS_PATH = "/netherlands/first-90-days-netherlands/";
 
-export function countryModelToGuideData(
+function buildDefaultCountryGuideData(
   model: CountryPageModel,
   options: { heroImageSrc?: string; baseUrl?: string }
 ): GuideData {
@@ -273,4 +294,33 @@ export function countryModelToGuideData(
     })),
     disclosure: "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you.",
   };
+}
+
+export function countryModelToGuideData(
+  model: CountryPageModel,
+  options: { heroImageSrc?: string; baseUrl?: string }
+): GuideData {
+  const base = buildDefaultCountryGuideData(model, options);
+  if (model.slug === "canada") return augmentCanadaGuideData(model, base);
+  if (model.slug === "australia") return augmentAustraliaGuideData(model, base);
+  if (model.slug === "new-zealand") return augmentNewZealandGuideData(model, base);
+  if (model.slug === "germany") return augmentGermanyGuideData(model, base);
+  if (model.slug === "france") return augmentFranceGuideData(model, base);
+  if (model.slug === "spain") return augmentSpainGuideData(model, base);
+  if (model.slug === "italy") return augmentItalyGuideData(model, base);
+  if (model.slug === "uae") return augmentUaeGuideData(model, base);
+  if (model.slug === "brazil") return augmentBrazilGuideData(model, base);
+  if (model.slug === "mexico") return augmentMexicoGuideData(model, base);
+  if (model.slug === "singapore") return augmentSingaporeGuideData(model, base);
+  if (model.slug === "japan") return augmentJapanGuideData(model, base);
+  if (model.slug === "south-korea") return augmentSouthKoreaGuideData(model, base);
+  if (model.slug === "turkey") return augmentTurkeyGuideData(model, base);
+  if (model.slug === "argentina") return augmentArgentinaGuideData(model, base);
+  if (model.slug === "chile") return augmentChileGuideData(model, base);
+  if (model.slug === "switzerland") return augmentSwitzerlandGuideData(model, base);
+  if (model.slug === "sweden") return augmentSwedenGuideData(model, base);
+  if (model.slug === "denmark") return augmentDenmarkGuideData(model, base);
+  if (model.slug === "norway") return augmentNorwayGuideData(model, base);
+  if (model.slug === "ireland") return augmentIrelandGuideData(model, base);
+  return base;
 }

@@ -15,9 +15,10 @@ import {
   findMovingGuideByNormalizedPath,
   findMovingGuideBySlug,
 } from "@/src/lib/publishing/registryPublishing";
+import countryIndex from "@/src/content/countries/index.json";
+import { MOVING_TOOL_FROM_SLUGS } from "@/src/data/site/route-registry";
 
-function attachDevSimulateLiveCookie(request: NextRequest, response: NextResponse): NextResponse {
-  if (process.env.NODE_ENV !== "development") return response;
+function attachSimulateProductionCookie(request: NextRequest, response: NextResponse): NextResponse {
   const p = request.nextUrl.searchParams.get("preview");
   if (p === "true") {
     // Not httpOnly so client components that call `isRouteLive` can read the same flag via `document.cookie`.
@@ -35,22 +36,22 @@ function attachDevSimulateLiveCookie(request: NextRequest, response: NextRespons
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   const previewParam = request.nextUrl.searchParams.get("preview");
-  const devSimulateLive =
-    process.env.NODE_ENV === "development" &&
+  /** Match production: enforce `publishDate` (and hide unlisted routes) even on Vercel Preview / local dev. */
+  const simulateProductionView =
     previewParam !== "false" &&
     (previewParam === "true" || request.cookies.get(DEV_SIMULATE_LIVE_COOKIE)?.value === "1");
 
   const requestHeaders = new Headers(request.headers);
-  if (devSimulateLive) {
+  if (simulateProductionView) {
     requestHeaders.set(DEV_SIMULATE_LIVE_HEADER, "1");
   }
 
-  const visibilityOpts = devSimulateLive ? ({ enforcePublishDates: true } as const) : undefined;
+  const visibilityOpts = simulateProductionView ? ({ enforcePublishDates: true } as const) : undefined;
 
   const runNetherlandsGates = pathname.startsWith("/netherlands");
   if (!runNetherlandsGates) {
     const res = NextResponse.next({ request: { headers: requestHeaders } });
-    return attachDevSimulateLiveCookie(request, res);
+    return attachSimulateProductionCookie(request, res);
   }
 
   const n = normalizeSitePath(pathname);
@@ -62,22 +63,42 @@ export function middleware(request: NextRequest) {
     const reg = findMovingGuideBySlug(slugSeg);
     if (reg && !isPubliclyVisible(reg.publish, reg.publishDate, now, visibilityOpts)) {
       const res = new NextResponse(null, { status: 404 });
-      return attachDevSimulateLiveCookie(request, res);
+      return attachSimulateProductionCookie(request, res);
     }
     const res = NextResponse.next({ request: { headers: requestHeaders } });
-    return attachDevSimulateLiveCookie(request, res);
+    return attachSimulateProductionCookie(request, res);
   }
 
   const guideByPath = findMovingGuideByNormalizedPath(n);
   if (guideByPath && !isPubliclyVisible(guideByPath.publish, guideByPath.publishDate, now, visibilityOpts)) {
     const res = new NextResponse(null, { status: 404 });
-    return attachDevSimulateLiveCookie(request, res);
+    return attachSimulateProductionCookie(request, res);
   }
 
   const tool = findLiveToolByNormalizedRoute(n);
   if (tool && !isPubliclyVisible(tool.publish, tool.publishDate, now, visibilityOpts)) {
     const res = new NextResponse(null, { status: 404 });
-    return attachDevSimulateLiveCookie(request, res);
+    return attachSimulateProductionCookie(request, res);
+  }
+
+  const originGuideMatch = /^\/netherlands\/moving\/moving-to-netherlands-from\/([a-z0-9-]+)\/?$/i.exec(
+    pathname
+  );
+  const toolFromMatch = new RegExp(
+    `^/netherlands/moving/tools/(${MOVING_TOOL_FROM_SLUGS.join("|")})/from/([a-z0-9-]+)/?$`,
+    "i"
+  ).exec(pathname);
+  const gatedOriginSlug = (originGuideMatch?.[1] ?? toolFromMatch?.[2])?.toLowerCase();
+  if (gatedOriginSlug) {
+    const row = countryIndex.find((c) => c.slug === gatedOriginSlug);
+    if (row?.enabled === false) {
+      const res = new NextResponse(null, { status: 404 });
+      return attachSimulateProductionCookie(request, res);
+    }
+    if (row && !isPubliclyVisible(row.publish, row.publishDate, now, visibilityOpts)) {
+      const res = new NextResponse(null, { status: 404 });
+      return attachSimulateProductionCookie(request, res);
+    }
   }
 
   if (
@@ -85,11 +106,11 @@ export function middleware(request: NextRequest) {
     !isNetherlandsCitiesHubPubliclyVisible(now, visibilityOpts)
   ) {
     const res = new NextResponse(null, { status: 404 });
-    return attachDevSimulateLiveCookie(request, res);
+    return attachSimulateProductionCookie(request, res);
   }
 
   const res = NextResponse.next({ request: { headers: requestHeaders } });
-  return attachDevSimulateLiveCookie(request, res);
+  return attachSimulateProductionCookie(request, res);
 }
 
 export const config = {

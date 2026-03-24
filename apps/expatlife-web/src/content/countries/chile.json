@@ -1,0 +1,153 @@
+{
+  "slug": "chile",
+  "name": "Chile",
+  "shortName": "Chile",
+  "iso2": "CL",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["Spanish"],
+  "travel": {
+    "typicalFlightTime": "About 14–16 hours (e.g. Santiago–Amsterdam, often with connections)",
+    "notes": [
+      "Long-haul from Santiago and other hubs; connections and seasonality affect pricing.",
+      "Many long-stay steps combine IND timing with the Dutch embassy in Santiago—confirm submission and appointment rules on Netherlands Worldwide."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored employment with Dutch or international employers",
+      "Highly skilled migrant routes where criteria are met",
+      "Master’s or PhD study at a Dutch university",
+      "Partner or family reunification under eligible routes",
+      "Entrepreneurship or startup where conditions are met",
+      "Corporate transfer or international assignment"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "Utrecht", "The Hague", "Eindhoven"],
+    "commonSectors": ["Technology", "Agri-food", "Logistics", "Energy", "Higher education", "Creative industries"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other sponsored employment",
+      "Study with a Dutch institution as sponsor",
+      "Partner or family routes with relationship evidence",
+      "Startup or self-employment where conditions are met",
+      "Intra-corporate transfer where the official route matches your case"
+    ],
+    "notes": [
+      "Chilean nationals are not EU/EEA/Switzerland citizens: stays longer than short visits normally require a Dutch residence permit for a recognised purpose.",
+      "For many long-stay procedures an MVV (long-stay entry visa) is part of the journey; the IND explains that when an MVV is required, you usually apply for the MVV and residence permit together from abroad—confirm your route on IND.nl and Netherlands Worldwide.",
+      "Short-stay Schengen applications from Chile are handled through the Dutch embassy in Santiago; that track is separate from relocation planning.",
+      "Some family-related routes may involve the civic integration exam abroad; Netherlands Worldwide publishes Chile-specific exam information."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid Chilean passport",
+      "Birth, marriage, or civil-status documents when your route requires them",
+      "Educational diplomas and professional credentials for work or study",
+      "Employment contract, admission letter, or sponsor materials as required",
+      "Police certificates or medical checks only when your permit checklist asks for them"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide explains that to use a document from Chile in the Netherlands it must first be legalised by the Chilean authorities with a Hague apostille.",
+      "Depending on document language and the receiving authority, sworn or certified translation into Dutch, English, French, or German may be required—confirm per document.",
+      "Start civil-registry extracts and apostille steps early; queues can affect MVV and gemeente timing."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation of documents from Chile",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/chile",
+        "contactSummary": "Apostille on Chile-issued documents for use in the Netherlands."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "MVV and Schengen applications from Chile",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Chile-specific MVV, Schengen, Santiago appointments, and waiting times."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "CLP / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Chile–Netherlands moves often use sea freight for household goods with long transit times, plus air baggage for essentials. Temporary furnished housing in the Netherlands is common while shipments arrive.",
+    "notes": [
+      "Align shipment dates with MVV validity and lease start.",
+      "Keep inventory lists and insurance documentation for customs."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV, and route-specific requirements."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and visa applications in Chile",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Embassy in Santiago: Schengen, MVV, appointments, civic integration exam abroad, document legalisation."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial relocation scene suggesting a journey from Chile to the Netherlands: travel essentials and documents with warm South American light shifting toward cool European arrival mood.",
+  "seo": {
+    "title": "Moving to the Netherlands from Chile | Visa, MVV, Documents & Practical Setup",
+    "description": "Planning a move from Chile to the Netherlands? Explore visa routes, MVV guidance, document apostille requirements, housing, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from chile",
+      "move from chile to netherlands",
+      "chile to netherlands visa",
+      "relocating from chile to netherlands",
+      "netherlands residence permit chile",
+      "mvv netherlands chile",
+      "chile documents apostille netherlands",
+      "schengen visa chile netherlands",
+      "dutch relocation from chile",
+      "netherlands long stay visa chile"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Chile-to-Netherlands moves are often immigration-heavy: MVV timing after IND approval, apostille on Chilean documents, and Santiago embassy appointments are common planning themes."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do people moving from Chile need a visa, MVV, or residence permit?",
+      "a": "For short visits, Schengen short-stay rules apply; applications from Chile are made through the Dutch embassy in Santiago as described on Netherlands Worldwide’s Chile-specific Schengen page. For stays longer than 90 days, you normally need a Dutch residence permit for a recognised purpose. When an MVV is required, the IND explains that you apply for the MVV and residence permit together from abroad. Requirements depend on your route—verify on IND.nl and Netherlands Worldwide."
+    },
+    {
+      "q": "What is an MVV when moving from Chile to the Netherlands?",
+      "a": "The MVV (provisional residence permit) is a long-stay entry visa described by the IND for stays longer than 90 days in many procedures. It is placed as a sticker in your passport after a positive decision. Netherlands Worldwide’s Chile pages describe how to apply for the MVV visa sticker and how appointments work in Santiago—including that after a positive IND decision you have a limited time window (official sources describe a three-month period to apply for the MVV sticker; confirm the current rule on the live page)."
+    },
+    {
+      "q": "How are Chilean documents legalised for the Netherlands?",
+      "a": "Netherlands Worldwide explains that documents from Chile must be legalised by the Chilean authorities with a Hague apostille before they can be used in the Netherlands. You may also need translation into Dutch, English, French, or German depending on the document and the authority that requests it."
+    },
+    {
+      "q": "What is the civic integration exam abroad for Chile?",
+      "a": "For some family-based routes, a civic integration exam abroad may be required. Netherlands Worldwide publishes Chile-specific information about taking the exam from Chile. Confirm whether your procedure lists this step."
+    },
+    {
+      "q": "What should I plan for right after arriving in the Netherlands?",
+      "a": "Most people prioritise collecting a residence permit if applicable, registering with the municipality for a BSN, opening a bank account, and arranging Dutch basic health insurance when they become resident. Use the after-arrival guides on this site alongside official checklists."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Santiago-based professional with a Dutch employer sponsor",
+      "summary": "Coordinate IND timing, apply for the MVV sticker within the official window after approval, housing, and BSN-first banking and insurance. Apostille Chilean civil documents early."
+    },
+    {
+      "title": "Student admitted to a Dutch university",
+      "summary": "Align admission, study-permit conditions, proof of funds, and student housing. Legalise academic records with apostille and plan translations when required."
+    }
+  ]
+}

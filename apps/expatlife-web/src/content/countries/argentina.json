@@ -1,0 +1,160 @@
+{
+  "slug": "argentina",
+  "name": "Argentina",
+  "shortName": "Argentina",
+  "iso2": "AR",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["Spanish"],
+  "travel": {
+    "typicalFlightTime": "About 13 hours non-stop (e.g. Buenos Aires–Amsterdam)",
+    "notes": [
+      "Long-haul from Buenos Aires and other hubs; connections and seasonality affect pricing.",
+      "Many long-stay steps combine IND timing with the Dutch embassy network in Argentina—confirm current submission and appointment rules on Netherlands Worldwide."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored employment with Dutch or international employers",
+      "Highly skilled migrant routes where criteria are met",
+      "Master’s or PhD study at a Dutch university",
+      "Partner or family reunification under eligible routes",
+      "Entrepreneurship or startup where conditions are met",
+      "Working Holiday / Working Holiday Scheme for eligible younger movers",
+      "Corporate transfer or international assignment"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "Utrecht", "The Hague", "Eindhoven"],
+    "commonSectors": ["Technology", "Agri-food", "Logistics", "Creative industries", "Higher education", "Finance"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other sponsored employment",
+      "Study with a Dutch institution as sponsor",
+      "Partner or family routes with relationship evidence",
+      "Startup or self-employment where conditions are met",
+      "Working Holiday Scheme for Argentina—distinct quotas, age, and conditions on official pages",
+      "Intra-corporate transfer where the official route matches your case"
+    ],
+    "notes": [
+      "Argentine nationals are not EU/EEA/Switzerland citizens: stays longer than short visits normally require a Dutch residence permit for a recognised purpose.",
+      "For many long-stay procedures, an MVV (long-stay entry visa) is part of the journey—but requirements depend on your route; confirm on the IND and Netherlands Worldwide rather than assuming one answer fits every case.",
+      "Short-stay Schengen visits and long-stay relocation follow different procedures; Netherlands Worldwide publishes Argentina-specific pages for each.",
+      "Some family-related routes may involve the civic integration exam abroad; Netherlands Worldwide lists Argentina-specific exam information."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid Argentine passport",
+      "Birth, marriage, or civil-status documents when your route requires them",
+      "Educational diplomas and professional credentials for work or study",
+      "Employment contract, admission letter, or sponsor materials as required",
+      "Police certificates or medical checks only when your permit checklist asks for them"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide explains that to use a document from Argentina in the Netherlands it must be legalised with a digital e-apostille issued by the Argentine Ministry of Foreign Affairs—plan lead time for issuing records and obtaining the e-apostille.",
+      "Depending on the document language and the receiving authority, sworn or certified translation into Dutch, English, French, or German may still be required—confirm per document.",
+      "Employers and universities may ask for legalised diplomas or certificates; cross-check with the foreign qualifications guidance on Netherlands Worldwide when relevant."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation of documents from Argentina",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/argentina",
+        "contactSummary": "E-apostille via the Argentine Ministry of Foreign Affairs for use of Argentine documents in the Netherlands."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "MVV and Schengen applications from Argentina",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Argentina-specific MVV, Schengen, appointments in Buenos Aires, and Working Holiday information."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "ARS / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Argentina–Netherlands moves often combine air freight for essentials with sea freight for household goods. Temporary furnished housing in the Netherlands is common while shipments arrive and registration dates align.",
+    "notes": [
+      "Align shipment dates with MVV validity and lease start.",
+      "Keep inventory lists and insurance documentation accessible for customs."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV, Working Holiday, and route-specific requirements."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and visa applications in Argentina",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Schengen and MVV steps, Buenos Aires appointments, civic integration exam abroad, and document legalisation for Argentina."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial relocation scene suggesting a journey from Argentina to the Netherlands: travel bag and documents in warm light with a subtle shift toward cool European arrival mood, premium long-haul planning feel.",
+  "seo": {
+    "title": "Moving to the Netherlands from Argentina | Visa, MVV, Documents & Practical Setup",
+    "description": "Planning a move from Argentina to the Netherlands? Explore visa routes, MVV guidance, document apostille requirements, housing, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from argentina",
+      "move from argentina to netherlands",
+      "argentina to netherlands visa",
+      "relocating from argentina to netherlands",
+      "netherlands residence permit argentina",
+      "mvv netherlands argentina",
+      "argentina documents apostille netherlands",
+      "schengen visa argentina netherlands",
+      "dutch relocation from argentina",
+      "netherlands long stay visa argentina",
+      "working holiday netherlands argentina"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Argentina-to-Netherlands moves are often immigration-heavy: MVV timing, MFA e-apostille on documents, and long-haul logistics are common planning themes."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do people moving from Argentina need a visa, MVV, or residence permit?",
+      "a": "For short visits, Schengen short-stay rules apply; Netherlands Worldwide’s Argentina-specific Schengen page explains how to apply, including that you can generally apply up to six months before travel and must apply no later than 45 days before you intend to travel (confirm the current rule on the official page). For stays longer than 90 days, you normally need a Dutch residence permit for a recognised purpose. When an MVV is required, the IND explains that you usually apply for the MVV and residence permit together from abroad. Not every route is identical—verify your checklist on IND.nl and Netherlands Worldwide."
+    },
+    {
+      "q": "What is an MVV when moving from Argentina to the Netherlands?",
+      "a": "The MVV (provisional residence permit) is a long-stay entry visa described by the IND for stays longer than 90 days in many procedures. It is issued as a sticker in your passport after a positive decision so you can travel to the Netherlands and complete steps such as collecting your residence permit. Follow the Argentina-specific Netherlands Worldwide pages for MVV application and embassy appointments in Buenos Aires."
+    },
+    {
+      "q": "How are Argentine documents legalised for use in the Netherlands?",
+      "a": "Netherlands Worldwide explains that documents from Argentina must be legalised with a digital e-apostille by the Argentine Ministry of Foreign Affairs for use in the Netherlands. Depending on the document and the authority that receives it, you may also need translation into Dutch, English, French, or German. Always confirm the latest steps on the country-specific legalisation page."
+    },
+    {
+      "q": "Can Argentinians use the Dutch Working Holiday programme?",
+      "a": "Argentina is included in the Dutch Working Holiday / Working Holiday Scheme country list on Netherlands Worldwide, and the IND describes the residence permit for working holiday. It is a distinct route with its own conditions and is not the same as standard skilled employment or long-term sponsored work. Read the official pages for eligibility, duration, and application steps before you plan around it."
+    },
+    {
+      "q": "What is the civic integration exam abroad for Argentina?",
+      "a": "For some family-based routes, a civic integration exam abroad may be required. Netherlands Worldwide publishes Argentina-specific information about taking the exam from Argentina. Confirm whether your procedure lists this step and follow the current instructions there."
+    },
+    {
+      "q": "What should I plan for right after arriving in the Netherlands?",
+      "a": "Most people prioritise collecting a residence permit if applicable, registering with the municipality for a BSN, opening a bank account, and arranging Dutch basic health insurance when they become resident. Use the after-arrival guides on this site alongside official checklists."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Buenos Aires–based professional with a Dutch employer sponsor",
+      "summary": "Coordinate IND timing, MVV collection after approval, housing, and BSN-first banking and insurance. E-apostille civil documents early for gemeente and sponsor bundles."
+    },
+    {
+      "title": "Student admitted to a Dutch university",
+      "summary": "Align admission, study-permit conditions, proof of funds, and student housing. Legalise Argentine academic records with e-apostille and plan translations when required."
+    }
+  ]
+}

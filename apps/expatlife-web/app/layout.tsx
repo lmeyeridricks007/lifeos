@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { AppClientShell } from "@/app/AppClientShell";
@@ -60,25 +61,22 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <meta name="mobile-web-app-capable" content="yes" />
-        {/* Google tag (gtag.js) — match Google’s install snippet verbatim (not next/script). */}
-        {/* eslint-disable-next-line @next/next/next-script-for-ga */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2H1CJD5ES" />
-        <script
-          // eslint-disable-next-line @next/next/next-script-for-ga, react/no-danger -- Google gtag bootstrap
-          dangerouslySetInnerHTML={{
-            __html: `
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-F2H1CJD5ES');
-`,
-          }}
-        />
         <SiteWideStructuredData />
       </head>
       <body className={`min-h-screen antialiased ${inter.className}`}>
         <AppClientShell contentVersion={contentVersion}>{children}</AppClientShell>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-F2H1CJD5ES"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics-gtag" strategy="afterInteractive">
+          {`
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-F2H1CJD5ES');
+`}
+        </Script>
       </body>
     </html>
   );

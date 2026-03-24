@@ -96,7 +96,21 @@
     { "value": "germany", "label": "Germany" },
     { "value": "france", "label": "France" },
     { "value": "spain", "label": "Spain" },
-    { "value": "brazil", "label": "Brazil" }
+    { "value": "italy", "label": "Italy" },
+    { "value": "switzerland", "label": "Switzerland" },
+    { "value": "sweden", "label": "Sweden" },
+    { "value": "denmark", "label": "Denmark" },
+    { "value": "norway", "label": "Norway" },
+    { "value": "ireland", "label": "Ireland" },
+    { "value": "uae", "label": "United Arab Emirates" },
+    { "value": "brazil", "label": "Brazil" },
+    { "value": "mexico", "label": "Mexico" },
+    { "value": "singapore", "label": "Singapore" },
+    { "value": "japan", "label": "Japan" },
+    { "value": "south-korea", "label": "South Korea" },
+    { "value": "turkey", "label": "Türkiye" },
+    { "value": "argentina", "label": "Argentina" },
+    { "value": "chile", "label": "Chile" }
   ],
   "relatedLinks": {
     "registerAddress": { "label": "Register address", "href": "/netherlands/register-address-netherlands/" },

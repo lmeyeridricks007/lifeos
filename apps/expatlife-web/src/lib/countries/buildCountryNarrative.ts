@@ -11,6 +11,12 @@ function regionLine(regionGroup: string): string {
   if (regionGroup === "eu") {
     return "As a nearby European route, planning can often be staged in shorter cycles.";
   }
+  if (regionGroup === "eea-swiss") {
+    return "Swiss citizens are covered alongside EU and EEA nationals in key IND guidance on staying in the Netherlands—confirm details on IND.nl for your situation.";
+  }
+  if (regionGroup === "eea") {
+    return "Norwegian nationals are EEA citizens: IND guidance treats them together with EU citizens for many stay and work questions—confirm your situation on IND.nl and Government.nl.";
+  }
   if (regionGroup === "non-eu") {
     return "As a non-EU route, it helps to confirm permit and sponsor details early.";
   }

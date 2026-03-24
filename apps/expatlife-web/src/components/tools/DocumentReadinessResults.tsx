@@ -32,10 +32,36 @@ const COUNTRY_AWARE_COPY: Record<string, string> = {
     "Because you selected the United Kingdom, post-Brexit document requirements may vary; check with the IND or your municipality for current rules.",
   germany: "Because you selected Germany, EU documents are often accepted more easily; some civil records may still need to be recent or certified.",
   france: "Because you selected France, EU-issued documents are often accepted; certification or translation may be required in specific cases.",
-  spain: "Because you selected Spain, EU documents may be accepted; check specific requirements for your route.",
+  spain: "Because you selected Spain, many Spanish documents can be used directly in the Netherlands; some need apostille per Netherlands Worldwide, and Spanish often needs no translation—confirm with the authority that requests each document.",
+  italy: "Because you selected Italy, many Italian documents can be used directly in the Netherlands; some need apostille per Netherlands Worldwide, and Italian often needs no translation—confirm with the authority that requests each document.",
+  switzerland:
+    "Because you selected Switzerland, Netherlands Worldwide explains that some Swiss documents can be used in the Netherlands immediately while others require a Hague apostille from the Swiss authorities—it depends on document type and who requests it; confirm each document with the IND, your sponsor, or the gemeente.",
+  sweden:
+    "Because you selected Sweden, you are moving from an EU country: many official documents are straightforward for Dutch authorities, but unusual types or uses may still need legalisation or apostille per Netherlands Worldwide—confirm each document with the IND, your sponsor, or the gemeente.",
+  denmark:
+    "Because you selected Denmark, Netherlands Worldwide explains that some Danish documents can be used in the Netherlands immediately, while diplomas and certificates generally need a digital e-apostille; Danish-language documents often need sworn translation unless an accepted multilingual standard form is attached—confirm each document with the IND, your sponsor, or the gemeente.",
+  norway:
+    "Because you selected Norway, Netherlands Worldwide explains that some Norwegian documents can be used in the Netherlands immediately, while others must be legalised with an apostille issued by the Norwegian authorities. Requirements depend on document type and the receiving body—not every Norwegian document needs the same treatment—confirm each document with the IND, your sponsor, or the gemeente.",
+  ireland:
+    "Because you selected Ireland, Netherlands Worldwide explains that some Irish documents can be used in the Netherlands immediately, while others must be legalised with an apostille issued by the Irish Department of Foreign Affairs. Foreign qualifications for work may involve separate checks—confirm each document with the IND, your sponsor, or the gemeente.",
   canada: "Because you selected Canada, documents may need apostille or authentication depending on the province and intended use.",
   australia: "Because you selected Australia, documents may need apostille or authentication before use in the Netherlands.",
   brazil: "Because you selected Brazil, documents may need legalization or apostille and sometimes translation for use in Dutch procedures.",
+  uae: "Because you selected the United Arab Emirates, UAE-issued documents often require MOFA attestation (not the same as every apostille workflow), while documents from your passport country may follow a different legalisation path—confirm what the IND or municipality requests for your nationality and route.",
+  mexico:
+    "Because you selected Mexico, many official documents need a Hague apostille (Apostilla de La Haya) from the competent Mexican authority for that document type, and sworn translation may be required—confirm each request with the IND, your sponsor, or the gemeente.",
+  singapore:
+    "Because you selected Singapore, many public documents need a Hague apostille through the Singapore Academy of Law (SAL) when Dutch authorities require legalisation; sworn translation may also be required—confirm each document with the IND, your sponsor, or the gemeente.",
+  japan:
+    "Because you selected Japan, many public documents need a Hague apostille through the Japanese Ministry of Foreign Affairs (MOFA) when Dutch authorities require legalisation; sworn translation may also be required—confirm each document with the IND, your sponsor, or the gemeente.",
+  "south-korea":
+    "Because you selected South Korea, many public documents need a Hague apostille through the competent South Korean authorities when Dutch authorities require legalisation; documents in Korean generally need translation into Dutch, English, French, or German—confirm each document with the IND, your sponsor, or the gemeente.",
+  turkey:
+    "Because you selected Türkiye, Netherlands Worldwide explains that some Turkish documents can be used in the Netherlands immediately while others need apostille; documents in Turkish generally need translation into Dutch, English, French, or German when required—confirm each document with the IND, your sponsor, or the gemeente.",
+  argentina:
+    "Because you selected Argentina, Netherlands Worldwide explains that documents from Argentina need a digital e-apostille from the Argentine Ministry of Foreign Affairs for use in the Netherlands; translation may be required depending on language—confirm each document with the IND, your sponsor, or the gemeente.",
+  chile:
+    "Because you selected Chile, Netherlands Worldwide explains that documents from Chile must be legalised by the Chilean authorities with a Hague apostille before use in the Netherlands; translation may be required depending on language—confirm each document with the IND, your sponsor, or the gemeente.",
 };
 
 export function DocumentReadinessResults({

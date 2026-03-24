@@ -38,8 +38,8 @@
     "kids": ["review-school-or-childcare-follow-up-if-needed", "review-childcare-school-and-family-registration-follow-up"]
   },
   "distanceCategories": {
-    "farDistanceOrigins": ["south-africa", "india", "united-states", "australia", "canada", "brazil"],
-    "regionalOrigins": ["germany", "france", "belgium", "spain", "italy", "portugal"]
+    "farDistanceOrigins": ["south-africa", "india", "united-states", "australia", "canada", "brazil", "argentina", "chile", "mexico", "singapore", "japan", "south-korea"],
+    "regionalOrigins": ["germany", "france", "belgium", "spain", "italy", "switzerland", "sweden", "denmark", "norway", "ireland", "portugal"]
   },
   "summaryFragments": {
     "noAddress": "If you are arriving soon and do not yet have a stable address, your first week focuses on tracking address-dependent tasks and preparing for registration once you have housing.",

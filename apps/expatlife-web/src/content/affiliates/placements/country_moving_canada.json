@@ -1,0 +1,22 @@
+{
+  "id": "country_moving_canada",
+  "destinationCountry": "netherlands",
+  "originCountry": "canada",
+  "context": {
+    "pageType": "country-guide",
+    "route": "/netherlands/moving/moving-to-netherlands-from/canada/",
+    "slot": "services-section"
+  },
+  "variant": "cards",
+  "title": "Services Canadians often compare when moving to the Netherlands",
+  "intro": "Banking, housing, insurance, shipping, and mobile are common categories to line up before and after arrival.",
+  "categoryOrder": ["banking", "housing", "insurance", "shipping", "mobile"],
+  "items": [
+    { "providerId": "wise", "reason": "International transfers while you coordinate CAD and EUR cash flow." },
+    { "providerId": "bunq", "reason": "Digital Dutch banking often used soon after BSN and address." },
+    { "providerId": "housinganywhere", "reason": "Short and mid-term listings while you search for a long-term rental." },
+    { "providerId": "simyo", "reason": "Dutch SIM options after you land." },
+    { "providerId": "independer", "reason": "Compare Dutch basic health insurance once you are resident." }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you."
+}

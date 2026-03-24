@@ -1446,6 +1446,11 @@ export function GuidePageTemplate({ data, affiliateBlocks = {}, canonicalUrl }: 
 
       <Section contained={false} className="py-8 md:py-12">
         <Container className={pageContainerClass}>
+          {data.quickAnswersTitle ? (
+            <h2 className="mb-4 scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-900">
+              {data.quickAnswersTitle}
+            </h2>
+          ) : null}
           {data.quickAnswers?.length ? (
             <div className="mb-10">
               <QuickAnswersRow items={data.quickAnswers} />
@@ -1789,7 +1794,12 @@ export function GuidePageTemplate({ data, affiliateBlocks = {}, canonicalUrl }: 
               ) : null}
 
               {data.internalLinks?.related?.length ? (
-                <Section id="related-guides" title="Related guides" contained={false} className="mt-12 w-full scroll-mt-24">
+                <Section
+                  id="related-guides"
+                  title={data.relatedGuidesSectionTitle ?? "Related guides"}
+                  contained={false}
+                  className="mt-12 w-full scroll-mt-24"
+                >
                   <ul className="grid w-full gap-3 sm:grid-cols-2">
                     {data.internalLinks.related.map((link) => (
                       <li key={link.href}>
@@ -1829,6 +1839,27 @@ export function GuidePageTemplate({ data, affiliateBlocks = {}, canonicalUrl }: 
                     ) : null}
                   </div>
                 </div>
+              ) : null}
+
+              {data.exploreNextCards?.length ? (
+                <Section
+                  id="explore-next"
+                  title="Plan your move further"
+                  contained={false}
+                  className="mt-12 w-full scroll-mt-24"
+                >
+                  <div className="mt-2 grid w-full gap-5 sm:grid-cols-2">
+                    {data.exploreNextCards.map((card) => (
+                      <CardLink
+                        key={card.ctaHref}
+                        href={card.ctaHref}
+                        title={card.title}
+                        description={card.description}
+                        badge="Next step"
+                      />
+                    ))}
+                  </div>
+                </Section>
               ) : null}
 
               {data.disclosure ? (

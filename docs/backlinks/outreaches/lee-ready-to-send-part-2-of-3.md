@@ -4,6 +4,8 @@
 
 Each prospect includes a **`To:`** line (published email or official contact path). **Re-verify** before sending.
 
+**URL variety:** Primary links are varied by audience (tools, timelines, hubs, visa topics) so relocators and lawyers are not all sent the same step list or cost estimator.
+
 **Prospects in this file:** §07 rows **#41–80** (E & I through AWVN).
 
 [← Part 1](./lee-ready-to-send-part-1-of-3.md) · [Part 3 →](./lee-ready-to-send-part-3-of-3.md) · [Index](./README.md)
@@ -49,24 +51,24 @@ Lee
 **Reach:** Info@ on site · [netherlands-relocation.com](https://www.netherlands-relocation.com/)
 **To:** `info@netherlands-relocation.com` · [Netherlands Relocation](https://www.netherlands-relocation.com/)
 
-**Initial — Subject:** Neutral moving steps — possible FAQ companion  
+**Initial — Subject:** Visa application plan tool — possible FAQ companion  
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands and wish I’d had a plain sequence of steps before I spoke to anyone. **Expat Copilot** is my editorial project: https://www.expatcopilot.com.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Here’s the page: https://www.expatcopilot.com/netherlands/visa-application-plan/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It’s a **personalised visa / move plan** builder—orientation only, not legal advice or a substitute for counsel.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Re: step-by-step NL move  
+**Follow-up #1 — Subject:** Re: visa plan tool for NL moves  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa-application-plan/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It’s a **personalised visa / move plan** builder—orientation only, not legal advice or a substitute for counsel.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -117,24 +119,24 @@ Lee
 **Reach:** Owner / marketing · [reloconsult.nl](https://www.reloconsult.nl/)
 **To:** `Info@reloconsult.nl` · [reloconsult.nl](https://www.reloconsult.nl/)
 
-**Initial — Subject:** Practical moving steps — boutique relocation  
+**Initial — Subject:** Moving topic hub — boutique relocation  
 
 Hi — I’m Lee. I moved from South Africa to the Netherlands and write **Expat Copilot** for people drowning in tabs. Your site answers the same questions in a service context.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Here’s the page: https://www.expatcopilot.com/netherlands/moving/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It’s our **moving** hub linking guides and tools—useful as background reading next to your own material.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Re: neutral NL outline  
+**Follow-up #1 — Subject:** Re: moving hub outline  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It’s our **moving** hub linking guides and tools—useful as background reading next to your own material.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -185,24 +187,24 @@ Lee
 **Reach:** Country manager / marketing · [santaferelo.com](https://www.santaferelo.com/)
 **To:** `amsterdam@santaferelo.com` · [Santa Fe Amsterdam office](https://www.santaferelo.com/en/contact/our-offices/netherlands-amsterdam/)
 
-**Initial — Subject:** Netherlands relocation cost estimator — assignee education  
+**Initial — Subject:** Moving checklist generator — assignee education  
 
-Hi — I’m Lee. I’m from South Africa and based in the Netherlands. Santa Fe’s clients deserve honest budgeting context; I publish **Expat Copilot** without selling relocation: https://www.expatcopilot.com.
+Hi — I’m Lee. I’m from South Africa and based in the Netherlands. Santa Fe’s clients deserve honest planning context; I publish **Expat Copilot** without selling relocation: https://www.expatcopilot.com.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/moving/tools/relocation-cost-estimator/
+Here’s the page: https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/
 
-It’s an educational **relocation cost** angle for assignees—orientation, not a quote replacement.
+It’s a **moving checklist** generator for assignees—orientation, not a substitute for your programme.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Re: educational tool for NL moves  
+**Follow-up #1 — Subject:** Re: checklist tool for NL moves  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving/tools/relocation-cost-estimator/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/
 
-It’s an educational **relocation cost** angle for assignees—orientation, not a quote replacement.
+It’s a **moving checklist** generator for assignees—orientation, not a substitute for your programme.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -218,24 +220,24 @@ Lee
 **Reach:** Local content / PR · [Crown Netherlands](https://www.crownrelo.com/en-nl)
 **To:** `amsterdam@crownrelo.com` · [Crown Relocations — Amsterdam office](https://www.crownrelo.com/netherlands/en-nl/office/amsterdam)
 
-**Initial — Subject:** Relocation budgeting — Netherlands-specific  
+**Initial — Subject:** Shipping household goods — Netherlands-specific context  
 
-Hi — I’m Lee. I moved from South Africa to the Netherlands and care about assignees understanding cost drivers early. **Expat Copilot**: https://www.expatcopilot.com.
+Hi — I’m Lee. I moved from South Africa to the Netherlands and care about assignees understanding **shipping** decisions early. **Expat Copilot**: https://www.expatcopilot.com.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/moving/tools/relocation-cost-estimator/
+Here’s the page: https://www.expatcopilot.com/netherlands/shipping-household-goods-netherlands/
 
-It’s an educational **relocation cost** angle for assignees—orientation, not a quote replacement.
+It’s an editorial **shipping** primer for people planning a move—orientation, not vendor advice.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Follow-up — cost estimator link  
+**Follow-up #1 — Subject:** Follow-up — shipping guide link  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving/tools/relocation-cost-estimator/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/shipping-household-goods-netherlands/
 
-It’s an educational **relocation cost** angle for assignees—orientation, not a quote replacement.
+It’s an editorial **shipping** primer for people planning a move—orientation, not vendor advice.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -251,26 +253,26 @@ Lee
 **Reach:** Global mobility content team · [cartus.com](https://www.cartus.com/)
 **To:** *[Cartus contact](https://www.cartus.com/contact-us)*
 
-**Initial — Subject:** Step-by-step Netherlands move — thought-leadership adjacent  
+**Initial — Subject:** Visa timeline estimator — thought-leadership adjacent  
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands and write **Expat Copilot** for plain-language orientation (https://www.expatcopilot.com). Cartus publishes mobility education at scale, and assignee comms often need neutral, jurisdiction-specific context.
 
-If a **moving steps** primer would ever sit next to your own playbooks as optional reading, I’d appreciate a quick look.
+If a **visa timeline** estimator would ever sit next to your own playbooks as optional reading, I’d appreciate a quick look.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Here’s the page: https://www.expatcopilot.com/netherlands/visa-timeline-estimator/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It helps people think about **timing and phases**—orientation only, not legal advice.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Re: NL relocation primer  
+**Follow-up #1 — Subject:** Re: NL visa timeline tool  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa-timeline-estimator/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It helps people think about **timing and phases**—orientation only, not legal advice.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -286,24 +288,24 @@ Lee
 **Reach:** Marketing / content · [aires.com](https://www.aires.com/)
 **To:** *[Aires — contact / routing](https://www.aires.com/contact-aires)* (no single catch-all `info@` published — use form or regional office)
 
-**Initial — Subject:** Netherlands relocation cost tool  
+**Initial — Subject:** Arrival planner — Netherlands week-one sequencing  
 
 Hi — I’m Lee. I’m from South Africa and live in the Netherlands; I built **Expat Copilot** as editorial-only context for people moving here: https://www.expatcopilot.com.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/moving/tools/relocation-cost-estimator/
+Here’s the page: https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/
 
-It’s an educational **relocation cost** angle for assignees—orientation, not a quote replacement.
+It’s a free **arrival planner** for week-one priorities—orientation, not a substitute for your programme.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Follow-up — budgeting resource  
+**Follow-up #1 — Subject:** Follow-up — arrival planner link  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving/tools/relocation-cost-estimator/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/
 
-It’s an educational **relocation cost** angle for assignees—orientation, not a quote replacement.
+It’s a free **arrival planner** for week-one priorities—orientation, not a substitute for your programme.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -319,24 +321,24 @@ Lee
 **Reach:** Global mobility marketing · [sirva.com](https://www.sirva.com/)
 **To:** `concierge@sirva.com` · [SIRVA support / contact](https://sirva.com/en-gb/support)
 
-**Initial — Subject:** Educational NL moving outline  
+**Initial — Subject:** Settling in — educational NL outline  
 
 Hi — I’m Lee. I moved from South Africa to the Netherlands and publish **Expat Copilot** for newcomers who need a map before the policy PDFs: https://www.expatcopilot.com.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Here’s the page: https://www.expatcopilot.com/netherlands/settling-in-netherlands/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It’s a **settling in** primer for practical life setup—useful as background reading next to your own material.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Re: neutral steps for Netherlands-bound employees  
+**Follow-up #1 — Subject:** Re: settling-in resource for Netherlands-bound employees  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/settling-in-netherlands/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It’s a **settling in** primer for practical life setup—useful as background reading next to your own material.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -352,15 +354,15 @@ Lee
 **Reach:** Membership / events team · [eura-relocation.com](https://www.eura-relocation.com/)
 **To:** `kirsty@eura-relocation.com` (listed on site) · *or events/membership via* [EURA contact](https://www.eura-relocation.com/contact)
 
-**Initial — Subject:** Neutral Netherlands relocation explainer for members  
+**Initial — Subject:** Moving to the Netherlands pillar — explainer for members  
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands and write **Expat Copilot** as public education, not consulting (https://www.expatcopilot.com). EURA members train clients on exactly these topics.
 
-If a **moving steps** page ever fits a member newsletter or internal resource wiki, I’d appreciate your considering it.
+If a **moving to the Netherlands** pillar page ever fits a member newsletter or internal resource wiki, I’d appreciate your considering it.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Here’s the page: https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It’s a broad **relocation** primer linking major topics—useful as background reading next to your own material.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
@@ -369,9 +371,9 @@ Lee
 
 **Follow-up #1 — Subject:** Follow-up — member resource  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It’s a broad **relocation** primer linking major topics—useful as background reading next to your own material.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -426,24 +428,24 @@ Lee
 **Reach:** Firm marketing · [theimmigrationlawyer.nl](https://theimmigrationlawyer.nl/)
 **To:** *[The Immigration Lawyer — contact page](https://theimmigrationlawyer.nl/contact/)*
 
-**Initial — Subject:** Plain-language visa documents — educational, not advice  
+**Initial — Subject:** Compare visa routes — educational, not advice  
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands and write **Expat Copilot** to reduce upstream confusion (https://www.expatcopilot.com). Your firm handles the actual legal work.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Here’s the page: https://www.expatcopilot.com/netherlands/visa/compare-visas/
 
-It’s a reader-facing **visa documents** primer—educational only, not legal advice.
+It’s a reader-facing **visa comparison** primer—educational only, not legal advice.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Re: document checklist for readers  
+**Follow-up #1 — Subject:** Re: visa comparison for readers  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa/compare-visas/
 
-It’s a reader-facing **visa documents** primer—educational only, not legal advice.
+It’s a reader-facing **visa comparison** primer—educational only, not legal advice.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -453,7 +455,7 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Closing the loop  
 
-Hi — I’ll stop here—final note only. Same link if timing is better later: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Hi — I’ll stop here—final note only. Same link if timing is better later: https://www.expatcopilot.com/netherlands/visa/compare-visas/
 
 Thanks either way,
 Lee
@@ -464,26 +466,26 @@ Lee
 **Reach:** BD / marketing · [everaert.nl/en](https://www.everaert.nl/en/home/) · [News](https://www.everaert.nl/en/news/)
 **To:** `info@everaert.nl` · [Everaert — contact](https://www.everaert.nl/en/contact/)
 
-**Initial — Subject:** Compare visas — possible complement to Everaert news  
+**Initial — Subject:** EU Blue Card — possible complement to Everaert news  
 
 Hi — I’m Lee. I’m from South Africa and live in the Netherlands; I spent weeks comparing routes before I understood which bucket I was in. **Expat Copilot** is editorial: https://www.expatcopilot.com
 
-Your news section covers route changes—if a neutral **compare visas** page would help readers orient before they call counsel, I’d value a glance.
+Your news section covers route changes—if a neutral **EU Blue Card** explainer would help readers orient before they call counsel, I’d value a glance.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/visa/compare-visas/
+Here’s the page: https://www.expatcopilot.com/netherlands/visa/eu-blue-card/
 
-It’s a neutral **compare visas** page so people know which *kind* of question they have before they call a lawyer.
+It’s a plain-language **EU Blue Card** overview—we point to official sources, not replace counsel.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Follow-up — visa route comparison  
+**Follow-up #1 — Subject:** Follow-up — EU Blue Card primer  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa/compare-visas/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa/eu-blue-card/
 
-It’s a neutral **compare visas** page so people know which *kind* of question they have before they call a lawyer.
+It’s a plain-language **EU Blue Card** overview—we point to official sources, not replace counsel.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -493,7 +495,7 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last ping  
 
-Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/visa/compare-visas/
+Hi — I’ll stop here so I don’t clutter your inbox. Same link if it’s useful later: https://www.expatcopilot.com/netherlands/visa/eu-blue-card/
 
 Thanks either way,
 Lee
@@ -504,13 +506,13 @@ Lee
 **Reach:** Marketing · [bierbach.nl/en](https://www.bierbach.nl/en/home-english/)
 **To:** `info@bierbach.nl` · [Bierbach — contact](https://bierbach.nl/en/contact-en/)
 
-**Initial — Subject:** Visa documents — English-site audience  
+**Initial — Subject:** Partner & family visa — English-site audience  
 
 Hi — I’m Lee. I moved from South Africa to the Netherlands and write **Expat Copilot** for people who find law firm sites after midnight searches: https://www.expatcopilot.com.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Here’s the page: https://www.expatcopilot.com/netherlands/visa/partner-family-visa/
 
-It’s a reader-facing **visa documents** primer—educational only, not legal advice.
+It’s a reader-facing **partner and family** route overview—educational only, not legal advice.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
@@ -519,9 +521,9 @@ Lee
 
 **Follow-up #1 — Subject:** Re: educational primer  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa/partner-family-visa/
 
-It’s a reader-facing **visa documents** primer—educational only, not legal advice.
+It’s a reader-facing **partner and family** route overview—educational only, not legal advice.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -537,24 +539,24 @@ Lee
 **Reach:** Marketing · [kernkamp.nl/en](https://www.kernkamp.nl/en/)
 **To:** `kernkamp@minerva-advocaten.nl` · `info@minerva-advocaten.nl` · [Kernkamp — contact](https://www.kernkamp.nl/en/contact/)
 
-**Initial — Subject:** Document categories — orientation for Kernkamp readers  
+**Initial — Subject:** Legalising foreign documents — orientation for Kernkamp readers  
 
-Hi — I’m Lee. I relocated from South Africa to the Netherlands; **Expat Copilot** is my attempt to spell out visa **document prep** without pretending to be legal advice: https://www.expatcopilot.com.
+Hi — I’m Lee. I relocated from South Africa to the Netherlands; **Expat Copilot** is my attempt to spell out **legalisation** without pretending to be legal advice: https://www.expatcopilot.com.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Here’s the page: https://www.expatcopilot.com/netherlands/document-legalization-netherlands/
 
-It’s a reader-facing **visa documents** primer—educational only, not legal advice.
+It’s a reader-facing **document legalisation** primer—educational only, not legal advice.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Follow-up — visa documents page  
+**Follow-up #1 — Subject:** Follow-up — legalisation guide  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/document-legalization-netherlands/
 
-It’s a reader-facing **visa documents** primer—educational only, not legal advice.
+It’s a reader-facing **document legalisation** primer—educational only, not legal advice.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -636,24 +638,24 @@ Lee
 **Reach:** Content / marketing · [holla.nl/en](https://www.holla.nl/en)
 **To:** `info@holla.nl` · [Holla — contact](https://www.holla.nl/en/contact/)
 
-**Initial — Subject:** Visa documents + mobility readers  
+**Initial — Subject:** Document translation — mobility readers  
 
 Hi — I’m Lee. I relocated from South Africa to the Netherlands; Holla’s mix of legal and tax touches the same people who ask “which papers do I even gather?” **Expat Copilot**: https://www.expatcopilot.com.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Here’s the page: https://www.expatcopilot.com/netherlands/document-translation-netherlands/
 
-It’s a reader-facing **visa documents** primer—educational only, not legal advice.
+It’s a reader-facing **document translation** primer—educational only, not legal advice.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Re: neutral document overview  
+**Follow-up #1 — Subject:** Re: translation overview for readers  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/document-translation-netherlands/
 
-It’s a reader-facing **visa documents** primer—educational only, not legal advice.
+It’s a reader-facing **document translation** primer—educational only, not legal advice.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -669,24 +671,24 @@ Lee
 **Reach:** Practice group marketing · [louwers.nl/en](https://www.louwers.nl/en)
 **To:** *[Louwers — contact](https://www.louwers.nl/en/contact/)*
 
-**Initial — Subject:** Immigration practice — educational visa document page  
+**Initial — Subject:** Immigration practice — visa cost orientation  
 
 Hi — I’m Lee. I’m from South Africa and live in the Netherlands; I write **Expat Copilot** as upstream education: https://www.expatcopilot.com.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Here’s the page: https://www.expatcopilot.com/netherlands/visa-cost-calculator/
 
-It’s a reader-facing **visa documents** primer—educational only, not legal advice.
+It’s a **visa cost** estimator for orientation—not legal advice, not a fee quote.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
 Thanks for your time,
 Lee
 
-**Follow-up #1 — Subject:** Follow-up — primer for clients  
+**Follow-up #1 — Subject:** Follow-up — cost tool for clients  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa-documents-netherlands/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/visa-cost-calculator/
 
-It’s a reader-facing **visa documents** primer—educational only, not legal advice.
+It’s a **visa cost** estimator for orientation—not legal advice, not a fee quote.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 
@@ -1363,13 +1365,13 @@ Lee
 **Reach:** International / labour market · [VNO-NCW](https://www.vno-ncw.nl/) (employers’ confederation)
 **To:** *[VNO-NCW — contact forms / routing](https://www.vno-ncw.nl/contact)* (site uses topic forms rather than one public `info@` inbox)
 
-**Initial — Subject:** Neutral relocation steps — employer audience  
+**Initial — Subject:** Key relocation requirements — employer audience  
 
 Hi — I’m Lee. I moved from South Africa to the Netherlands; employers’ federations shape how realistic “just hire abroad” sounds. **Expat Copilot** is public education: https://www.expatcopilot.com.
 
-Here’s the page: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Here’s the page: https://www.expatcopilot.com/netherlands/moving-requirements-netherlands/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It outlines **requirements many employers and hires plan for**—useful as background reading next to your own material.
 
 I’m not asking for payment, a link exchange, or a commercial partnership—only sharing if it saves your team or audience a round of confusion. If it’s not a fit or I’m in the wrong inbox, feel free to ignore.
 
@@ -1378,9 +1380,9 @@ Lee
 
 **Follow-up #1 — Subject:** Re: resource for internationals & work  
 
-Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/
+Hi again — I’m following up once on this link: https://www.expatcopilot.com/netherlands/moving-requirements-netherlands/
 
-It’s a neutral **step-by-step** outline of the move—useful as background reading next to your own material.
+It outlines **requirements many employers and hires plan for**—useful as background reading next to your own material.
 
 If there’s someone else who owns web content or newsletters for this topic, a short forward would mean a lot. If it’s not a fit, no worries.
 

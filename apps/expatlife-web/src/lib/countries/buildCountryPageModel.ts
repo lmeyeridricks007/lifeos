@@ -59,6 +59,7 @@ export type CountryPageModel = {
     title: string;
     description: string;
     canonicalPath: string;
+    keywords?: string[];
   };
   hero: {
     title: string;
@@ -210,6 +211,7 @@ export function buildCountryPageModel(country: CountryRecord, templates: Country
       title: seoTitle,
       description: seoDescription,
       canonicalPath,
+      keywords: country.seo?.keywords,
     },
     hero: {
       title: `Moving to the Netherlands from ${countryLabel}`,
@@ -235,7 +237,14 @@ export function buildCountryPageModel(country: CountryRecord, templates: Country
       },
       {
         label: "Common route type",
-        value: country.regionGroup === "eu" ? "EU / regional route" : "Non-EU route",
+        value:
+          country.regionGroup === "eu"
+            ? "EU / regional route"
+            : country.regionGroup === "eea-swiss"
+              ? "Swiss citizen (EU/EEA-aligned stay rules)"
+              : country.regionGroup === "eea"
+                ? "EEA national (EU-aligned stay rules)"
+                : "Non-EU route",
       },
       {
         label: "Popular Dutch cities",

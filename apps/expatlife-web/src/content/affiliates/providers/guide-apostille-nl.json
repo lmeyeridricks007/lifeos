@@ -1,0 +1,22 @@
+{
+  "id": "guide-apostille-nl",
+  "name": "Apostille documents guide",
+  "tagline": "How apostilles work in the Netherlands, when you need one, and typical steps.",
+  "categoryIds": ["documents"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["On-site guide", "Official paperwork"],
+  "highlights": ["Apostille vs other steps", "Costs and timelines", "Use for visas and registration"],
+  "cta": {
+    "label": "Open guide",
+    "href": "/netherlands/apostille-documents-netherlands/",
+    "isAffiliate": false
+  },
+  "disclosure": "Editorial guide on ExpatCopilot.",
+  "logo": {
+    "src": "",
+    "alt": ""
+  }
+}

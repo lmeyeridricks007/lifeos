@@ -327,7 +327,7 @@ export function euBlueCardToGuideData(v: VisaPageData): GuideData {
       { label: "Highly Skilled Migrant visa", href: `${BASE}/visa/highly-skilled-migrant/` },
       { label: "Move to the Netherlands without a job", href: `${BASE}/move-to-netherlands-without-job/` },
       { label: "EU vs non-EU moving to the Netherlands", href: `${BASE}/eu-vs-non-eu-moving-to-netherlands/` },
-      { label: "Moving to the Netherlands from your country", href: `${BASE}/moving/moving-to-netherlands-from/` },
+      { label: "Moving to the Netherlands from your country", href: `${BASE}/moving-to-netherlands-from/` },
     ],
   };
 

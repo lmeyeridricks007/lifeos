@@ -56,6 +56,8 @@ export type CountryRecord = {
   seo?: {
     title?: string;
     description?: string;
+    /** Optional meta keywords for country guides that opt into extended SEO. */
+    keywords?: string[];
   };
   /** Optional custom alt text for the country hero image. */
   heroImageAlt?: string;
@@ -72,6 +74,10 @@ export type CountryIndexItem = {
   file: string;
   enabled?: boolean;
   featured?: boolean;
+  /** Explicit `false` hides regardless of date. Omitted/`true` allows if `publishDate` has passed. */
+  publish?: boolean;
+  /** `YYYY-MM-DD` (UTC start) or full ISO datetime. */
+  publishDate?: string;
 };
 
 type CountryTemplateDefaults = {

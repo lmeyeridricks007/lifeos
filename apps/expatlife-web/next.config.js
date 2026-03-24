@@ -150,6 +150,27 @@ const nextConfig = {
         destination: "/netherlands/moving/moving-to-netherlands-from/united-kingdom/",
         permanent: true,
       },
+      // Country guides live under /moving/.../{slug}/; the browse hub is only at /moving-to-netherlands-from/.
+      {
+        source: "/netherlands/moving/moving-to-netherlands-from",
+        destination: "/netherlands/moving-to-netherlands-from/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/moving-to-netherlands-from/",
+        destination: "/netherlands/moving-to-netherlands-from/",
+        permanent: true,
+      },
+      {
+        source: "/moving-to-netherlands-from",
+        destination: "/netherlands/moving-to-netherlands-from/",
+        permanent: true,
+      },
+      {
+        source: "/moving-to-netherlands-from/",
+        destination: "/netherlands/moving-to-netherlands-from/",
+        permanent: true,
+      },
       {
         source: "/netherlands/moving/tools/visa-eligibility-checker",
         destination: "/netherlands/visa-checker/",

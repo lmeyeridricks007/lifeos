@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { CardLink } from "@/components/ui/card-link";
 import { Container } from "@/components/ui/container";
+import { ORIGIN_COUNTRY_INDEX_PATH } from "@/src/lib/countries/originCountryPaths";
 import type { OriginCountryGuideEntry } from "@/src/lib/countries/originCountryGuides";
 
 export type OriginCountryGuideGridProps = {
@@ -22,8 +23,6 @@ export type OriginCountryGuideGridProps = {
   /** When true (default), wrap content in Container to match page template width. */
   contained?: boolean;
 };
-
-const COUNTRY_INDEX_HREF = "/netherlands/moving-to-netherlands-from";
 
 /** Convert ISO 3166-1 alpha-2 code to flag emoji (e.g. "gb" → 🇬🇧). */
 function toFlagEmoji(code: string): string {
@@ -86,7 +85,7 @@ export function OriginCountryGuideGrid({
       {showViewAll && displayItems.length > 0 && (
         <p className="mt-6">
           <Link
-            href={COUNTRY_INDEX_HREF}
+            href={`${ORIGIN_COUNTRY_INDEX_PATH}/`}
             className="font-medium text-brand-600 hover:text-brand-700 hover:underline"
           >
             View all country guides →

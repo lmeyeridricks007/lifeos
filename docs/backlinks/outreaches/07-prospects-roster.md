@@ -142,7 +142,7 @@ This page maps [§07 concrete prospects](../07-concrete-outreach-prospects.md) r
 | 78 | Amsterdam Economic Board | CLUSTER-HR | `/netherlands/moving/moving-to-netherlands-from/south-africa/` | no | Comms / talent programmes | Regional talent & innovation ecosystem |
 | 79 | VNO-NCW | CLUSTER-HR | `/netherlands/moving-to-netherlands-steps/` | no | International / labour market | Employers’ confederation — work & mobility |
 | 80 | AWVN | CLUSTER-HR | `/netherlands/visa/highly-skilled-migrant/` | no | HR / international employment | Employer association — HR policy |
-| 81 | The Social Hub | COWORK | `/netherlands/after-arriving-netherlands/` | no | Local hub managers / brand | Resident community — settling in |
+| 81 | The Social Hub | COWORK | `/netherlands/first-30-days-netherlands/` | no | Local hub managers / brand | Resident community — settling in |
 | 82 | WeWork Netherlands | COWORK | `/netherlands/digid-awareness/` | no | Community / marketing | NL locations — freelancers & startups |
 
 ---
@@ -151,12 +151,12 @@ This page maps [§07 concrete prospects](../07-concrete-outreach-prospects.md) r
 
 | # | Organisation | Template | Path | T1 | Reach via | Their page topic |
 |---|--------------|----------|------|----|-----------|------------------|
-| 83 | Pararius | HOUSING-CONTENT | `/netherlands/housing/tools/rent-affordability-calculator/` | yes | Blog / content team | Blog — renting / market explainers |
-| 84 | Funda | HOUSING-CONTENT | `/netherlands/register-address-netherlands/` | no | Press / content | Corporate — harder; address registration angle |
-| 85 | Kamernet | HOUSING-CONTENT | `/netherlands/housing/tools/rent-affordability-calculator/` | no | Marketing | Room rentals — student / young movers |
-| 86 | Only Expats | HOUSING-CONTENT | `/netherlands/housing/tools/rent-affordability-calculator/` | no | Owner / marketing | Advice articles — renting in Holland |
-| 87 | HousingAnywhere | HOUSING-CONTENT | `/netherlands/register-address-netherlands/` | no | Content / partnerships | Mid-term rentals — international students |
-| 88 | Nestpick | HOUSING-CONTENT | `/netherlands/housing/tools/rent-affordability-calculator/` | no | Partnerships (often paid) | Aggregator — budget / search friction |
+| 83 | Pararius | HOUSING-CONTENT | `/netherlands/moving-to-netherlands-cost/` | yes | Blog / content team | Blog — renting / market explainers |
+| 84 | Funda | HOUSING-CONTENT | `/netherlands/municipality-registration-netherlands/` | no | Press / content | Corporate — harder; gemeente registration angle |
+| 85 | Kamernet | HOUSING-CONTENT | `/netherlands/register-address-netherlands/` | no | Marketing | Room rentals — student / young movers |
+| 86 | Only Expats | HOUSING-CONTENT | `/netherlands/documents-needed-to-move-netherlands/` | no | Owner / marketing | Advice articles — renting in Holland |
+| 87 | HousingAnywhere | HOUSING-CONTENT | `/netherlands/first-60-days-netherlands/` | no | Content / partnerships | Mid-term rentals — international students |
+| 88 | Nestpick | HOUSING-CONTENT | `/netherlands/moving-to-netherlands-steps/` | no | Partnerships (often paid) | Aggregator — budget / search friction |
 
 ---
 
@@ -164,14 +164,14 @@ This page maps [§07 concrete prospects](../07-concrete-outreach-prospects.md) r
 
 | # | Organisation | Template | Path | T1 | Reach via | Their page topic |
 |---|--------------|----------|------|----|-----------|------------------|
-| 89 | Avans University of Applied Sciences | EDU-INTL-A | `/netherlands/visa/student-visa/` | no | International Office | Avans international — incoming students |
-| 90 | Inholland University of Applied Sciences | EDU-INTL-B | `/netherlands/after-arriving-netherlands/` | no | International Office | Inholland international pages |
-| 91 | HAN University of Applied Sciences | EDU-INTL-A | `/netherlands/visa/student-visa/` | no | International Office | HAN international — Arnhem / Nijmegen |
-| 92 | Zuyd University of Applied Sciences | EDU-INTL-B | `/netherlands/after-arriving-netherlands/` | no | International Office | Zuyd English — cross-border students |
-| 93 | HZ University of Applied Sciences | EDU-INTL-C | `/netherlands/municipality-registration-netherlands/` | no | International Office | HZ English — Zeeland region |
-| 94 | Breda University of Applied Sciences (BUas) | EDU-INTL-A | `/netherlands/visa/student-visa/` | no | International Office | BUas English — hospitality / games / built env |
-| 95 | Rotterdam University of Applied Sciences | EDU-INTL-B | `/netherlands/after-arriving-netherlands/` | no | International Office | HR English / international |
-| 96 | Aeres University of Applied Sciences | EDU-INTL-A | `/netherlands/visa/student-visa/` | no | International Office | Green / agri programmes — international intake |
+| 89 | Avans University of Applied Sciences | EDU-INTL-A | `/netherlands/health-insurance-netherlands/` | no | International Office | Avans international — incoming students |
+| 90 | Inholland University of Applied Sciences | EDU-INTL-B | `/netherlands/municipality-registration-netherlands/` | no | International Office | Inholland international pages |
+| 91 | HAN University of Applied Sciences | EDU-INTL-A | `/netherlands/arnhem/` | no | International Office | HAN international — Arnhem / Nijmegen |
+| 92 | Zuyd University of Applied Sciences | EDU-INTL-B | `/netherlands/maastricht/` | no | International Office | Zuyd English — cross-border students |
+| 93 | HZ University of Applied Sciences | EDU-INTL-C | `/netherlands/bsn-registration/` | no | International Office | HZ English — Zeeland region |
+| 94 | Breda University of Applied Sciences (BUas) | EDU-INTL-A | `/netherlands/visa-documents-netherlands/` | no | International Office | BUas English — hospitality / games / built env |
+| 95 | Rotterdam University of Applied Sciences | EDU-INTL-B | `/netherlands/rotterdam/` | no | International Office | HR English / international |
+| 96 | Aeres University of Applied Sciences | EDU-INTL-A | `/netherlands/visa-timeline-estimator/` | no | International Office | Green / agri programmes — international intake |
 
 ---
 
@@ -179,7 +179,7 @@ This page maps [§07 concrete prospects](../07-concrete-outreach-prospects.md) r
 
 | # | Organisation | Template | Path | T1 | Reach via | Their page topic |
 |---|--------------|----------|------|----|-----------|------------------|
-| 97 | Gemeente Groningen / International Groningen | CITY-GEM | `/netherlands/municipality-registration-netherlands/` | no | International affairs / editorial | English gemeente + International Groningen |
+| 97 | Gemeente Groningen / International Groningen | CITY-GEM | `/netherlands/groningen/` | no | International affairs / editorial | English gemeente + International Groningen |
 | 98 | Gemeente Maastricht | CITY-GEM | `/netherlands/after-arriving-netherlands/` | no | City communications | Maastricht English — newcomers |
 | 99 | Gemeente Almere | CITY-GEM | `/netherlands/register-address-netherlands/` | no | City communications | Growing city — internationals |
 | 100 | Gemeente Arnhem | CITY-GEM | `/netherlands/municipality-registration-netherlands/` | no | City communications | Arnhem English — registration |

@@ -1,0 +1,166 @@
+{
+  "slug": "singapore",
+  "name": "Singapore",
+  "shortName": "SG",
+  "iso2": "SG",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["English", "Mandarin", "Malay", "Tamil"],
+  "travel": {
+    "typicalFlightTime": "12–14 hours (Singapore–Amsterdam)",
+    "notes": [
+      "Direct and one-stop options; book around MVV validity and first-week appointments in the Netherlands.",
+      "Long-stay MVV collection and appointments are handled per Netherlands Worldwide for Singapore—confirm the current mission and booking flow."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored roles with Dutch or European employers",
+      "Study at Dutch universities",
+      "Partner or family reunification",
+      "Startup or entrepreneurship where criteria are met",
+      "Regional corporate transfers into Dutch entities"
+    ],
+    "popularDutchCities": ["Amsterdam", "The Hague", "Utrecht", "Eindhoven", "Rotterdam"],
+    "commonSectors": ["Technology", "Finance", "Logistics", "Semiconductors and high tech", "Higher education", "International institutions"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other sponsored employment",
+      "Study with a Dutch institution as sponsor",
+      "Partner and family routes",
+      "Startup or self-employment where IND criteria are met",
+      "Intra-company or assignment structures where applicable"
+    ],
+    "notes": [
+      "Singapore is outside the EU/EEA/Switzerland: long stays are permit-driven, and an MVV long-stay entry visa is required in many (not all) procedures—verify the MVV exemption list and your specific route on the IND.",
+      "Short-stay Schengen rules for Singapore are a different process from relocating for work, study, or family.",
+      "MVV and residence permit applications are often linked and submitted from abroad; the IND decision letter states where to collect the MVV sticker."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid passport",
+      "Birth, marriage, or civil documents when relevant to your route",
+      "Educational and employment evidence for study or work permits",
+      "Sponsor or admission documentation as required"
+    ],
+    "countrySpecificNotes": [
+      "For many Singapore-issued documents used in the Netherlands, legalisation with a Hague apostille through the Singapore Academy of Law (SAL) is the standard path; Singapore MFA describes SAL as the competent authority for apostilles.",
+      "Sworn translations may be required when Dutch authorities request Dutch or English versions.",
+      "Netherlands Worldwide publishes Singapore-specific legalisation guidance—cross-check each document type."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation of documents from Singapore",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "How Singapore documents are used for Dutch procedures."
+      },
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV, and route-specific requirements."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "SGD / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Singapore-to-Europe moves often use sea freight for household goods with air options for essentials. Temporary furnished housing in the Netherlands is common while shipments and registration align.",
+    "notes": [
+      "Align shipment dates with MVV validity and lease start.",
+      "Inventory lists help with insurance and customs."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration and residence permit information."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Visa and consular services for Singapore",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Schengen, MVV, appointments, and civic integration exam in Singapore."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial relocation mood: modern Singapore city energy blending into a Dutch canal-city arrival—documents and travel essentials suggesting a premium long-haul move to the Netherlands.",
+  "seo": {
+    "title": "Moving to the Netherlands from Singapore | Visa, MVV, Documents & Practical Setup",
+    "description": "Planning a move from Singapore to the Netherlands? Explore visa routes, MVV guidance, document apostille requirements, housing, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from singapore",
+      "move from singapore to netherlands",
+      "singapore to netherlands visa",
+      "relocating from singapore to netherlands",
+      "netherlands residence permit singapore",
+      "mvv netherlands singapore",
+      "singapore documents apostille netherlands",
+      "schengen visa singapore netherlands",
+      "dutch relocation from singapore",
+      "netherlands long stay visa singapore"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Singapore-origin moves often hinge on SAL apostille timing and MVV appointment slots."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Singaporeans need a visa to visit the Netherlands?",
+      "a": "Short stays in the Schengen area are handled under Schengen short-stay rules. Netherlands Worldwide has Singapore-specific pages for Schengen visas and entry visas when required. Short visits are not the same as relocating for work or study, which follow residence permit routes."
+    },
+    {
+      "q": "Do I need an MVV to move from Singapore to the Netherlands?",
+      "a": "For stays longer than short visits, you normally need a residence permit for a recognised purpose. Many nationalities and routes also require an MVV (long-stay entry visa) before travel, but exemptions exist for some situations—check the IND’s MVV information and your specific permit type rather than assuming a single answer."
+    },
+    {
+      "q": "Where is the MVV sticker collected when applying from Singapore?",
+      "a": "After a positive decision, the IND letter indicates where to collect the MVV visa sticker. Netherlands Worldwide describes appointments and MVV handling for Singapore, including links to booking and forms such as the MVV issue form."
+    },
+    {
+      "q": "How do I legalise Singapore documents for Dutch authorities?",
+      "a": "Many Singapore-issued documents need a Hague apostille through the Singapore Academy of Law (SAL). Singapore MFA confirms SAL as the competent authority. Netherlands Worldwide also explains legalisation of Singapore documents for use in the Netherlands. You may still need sworn translation depending on the receiving body."
+    },
+    {
+      "q": "What should I plan for immediately after arriving?",
+      "a": "Most people prioritise municipal registration and BSN, residence permit steps if applicable, a bank account, and Dutch basic health insurance when resident. DigiD and GP registration follow once identifiers exist."
+    },
+    {
+      "q": "Is this page legal advice?",
+      "a": "No. This guide summarises common planning themes and links to official sources. Always confirm your situation with the IND, Netherlands Worldwide, your sponsor, or qualified advisors."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Singaporean professional relocating for a Dutch job",
+      "summary": "Align sponsor timelines, MVV collection per your IND letter, housing within commute range, and BSN-first banking and insurance."
+    },
+    {
+      "title": "Student moving from Singapore to a Dutch university",
+      "summary": "Match admission to study permit conditions, plan SAL apostilles on academic and civil documents, and budget for student housing."
+    },
+    {
+      "title": "Partner or family relocation from Singapore",
+      "summary": "Relationship evidence and civil documents are central; timelines depend on the partner’s status in the Netherlands."
+    },
+    {
+      "title": "Entrepreneur exploring startup or self-employment",
+      "summary": "Map IND criteria, possible facilitator involvement, and municipality registration—expect more bespoke evidence than a standard employee route."
+    },
+    {
+      "title": "Corporate transfer from a Singapore office",
+      "summary": "Clarify sponsor, permit type, MVV sequencing, and payroll transition with your mobility team."
+    }
+  ]
+}

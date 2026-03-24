@@ -1,0 +1,29 @@
+{
+  "id": "guide-moving-mistakes-planning-tools",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/moving-mistakes-netherlands/",
+    "slot": "after-mistake-planning"
+  },
+  "variant": "cards",
+  "title": "Plan tasks in the right order",
+  "intro": "These free tools help you line up documents, moving tasks, and first-week admin so dependencies don’t block you.",
+  "categoryOrder": ["planning"],
+  "items": [
+    {
+      "providerId": "tool-plan-document-readiness",
+      "reason": "Clarify paperwork before you need it for visas, housing, or the gemeente."
+    },
+    {
+      "providerId": "tool-plan-moving-checklist",
+      "reason": "Break the move into phases so nothing critical is left to the final weeks."
+    },
+    {
+      "providerId": "tool-plan-arrival-planner",
+      "reason": "Sequence registration, banking, and insurance after you land."
+    }
+  ],
+  "disclosure": "These are free tools on this site, not paid placements."
+}

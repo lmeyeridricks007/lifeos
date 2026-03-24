@@ -1,0 +1,137 @@
+{
+  "slug": "spain",
+  "name": "Spain",
+  "shortName": "ES",
+  "iso2": "ES",
+  "regionGroup": "eu",
+  "distanceCategory": "near",
+  "languages": ["Spanish", "English"],
+  "travel": {
+    "typicalFlightTime": "2–3 hours by air (or multi-leg train via France)",
+    "notes": [
+      "Direct flights from Madrid, Barcelona, and other cities are common; some movers combine train segments through France.",
+      "Cross-border workers who keep main residence in Spain may follow different registration and social-security rules."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "International employment",
+      "Study and research",
+      "Partner or family relocation",
+      "EU remote work and lifestyle moves"
+    ],
+    "popularDutchCities": ["Amsterdam", "Rotterdam", "Utrecht", "Eindhoven", "The Hague"],
+    "commonSectors": ["Technology", "Logistics", "Creative industries", "Hospitality", "Research"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "EU free movement (ordinary residence)",
+      "Work, study, or self-sufficiency within EU rules"
+    ],
+    "notes": [
+      "Spanish nationals do not follow the same MVV pathway as non-EU nationals for standard EU residence.",
+      "BRP registration, BSN, and practical setup are usually the main early focus."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Passport or national ID (DNI)",
+      "Dutch address proof for registration",
+      "Employment or study documents where relevant",
+      "Spanish civil-status documents when needed (some may need apostille per Netherlands Worldwide)"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide describes which Spanish documents can be used immediately in the Netherlands and which need an apostille from the Spanish authorities; official documents in Spanish often need no translation for Dutch use.",
+      "Confirm each document with the organisation that requests it."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Spanish documents for use in the Netherlands",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/spain",
+        "contactSummary": "Country-specific document and legalisation guidance."
+      },
+      {
+        "label": "IND",
+        "name": "EU, EEA and Swiss citizens in the Netherlands",
+        "website": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+        "contactSummary": "Official EU citizen stay information."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Many Spain–Netherlands moves use air freight for essentials plus road transport or a removal company for household goods. Plan access, parking, and building rules at your Dutch address.",
+    "notes": [
+      "Compare air vs road options for volume and timing.",
+      "Temporary parking permits may be needed for unloading in Dutch cities."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "EU, EEA and Swiss citizens — staying in the Netherlands",
+        "website": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+        "contactSummary": "EU free movement and residence information."
+      },
+      {
+        "label": "Government.nl",
+        "name": "Personal Records Database (BRP)",
+        "website": "https://www.government.nl/topics/personal-data/personal-records-database-brp",
+        "contactSummary": "Official BRP registration context."
+      }
+    ]
+  },
+  "heroImageAlt": "Relocation planning desk: laptop map with route from Spain to the Netherlands, notebook labeled relocation plan, passport, and a Dutch canal view with bicycles through the window.",
+  "seo": {
+    "title": "Moving to the Netherlands from Spain | Registration, Documents, Costs & Practical Setup",
+    "description": "Planning a move from Spain to the Netherlands? Explore EU move rules, registration, BSN, document requirements, housing, banking, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from spain",
+      "move from spain to netherlands",
+      "relocating from spain to netherlands",
+      "moving from spain to holland",
+      "spanish moving to netherlands",
+      "eu citizen move to netherlands from spain",
+      "spain to netherlands registration",
+      "spanish documents netherlands apostille",
+      "spanish documents netherlands no translation",
+      "living in the netherlands as a spanish citizen"
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Spanish citizens need a visa to live in the Netherlands?",
+      "a": "Spanish nationals are EU citizens. For ordinary long-term residence based on EU free movement, you generally do not need a visa or standard residence permit in the same way as non-EU nationals. EU, EEA, and Swiss citizens can stay in the Netherlands for up to three months with a valid travel document; longer stays follow the EU rules described on the IND and Government.nl. You must still meet the conditions that apply to your situation—confirm on official pages."
+    },
+    {
+      "q": "Do I need an MVV to move from Spain to the Netherlands?",
+      "a": "An MVV is used in many non-EU long-stay procedures. It is not the standard framework for Spanish nationals exercising EU free movement for ordinary residence. Unusual cases may still need tailored checks—use official sources or professional advice if unsure."
+    },
+    {
+      "q": "How do I register after moving from Spain?",
+      "a": "If you will stay in the Netherlands for more than four months, you normally register in the BRP through your municipality. Government.nl states you must register within five days of arrival. The municipality issues your BSN. See our municipality registration guide and the Government.nl BRP pages."
+    },
+    {
+      "q": "Do Spanish documents need translation for the Netherlands?",
+      "a": "Netherlands Worldwide indicates that foreign official documents in Spanish do not need to be translated for use in the Netherlands. Some documents can be used immediately; others may need an apostille from the Spanish authorities. Always confirm for your specific document and the organisation that requests it."
+    },
+    {
+      "q": "What should I prioritise in the first weeks?",
+      "a": "Most people focus on BRP registration and BSN, Dutch basic health insurance where required, a bank account, and DigiD. Housing search intensity is often the hardest part, not immigration paperwork."
+    },
+    {
+      "q": "When might immigration lawyers or visa consultants still help?",
+      "a": "Complex family situations, verification against EU law, or specialised legal questions may warrant support. For typical EU moves, many people start with gemeente guidance and official web pages."
+    }
+  ],
+  "scenarioOverrides": [],
+  "affiliateContext": {
+    "preferredCategories": ["housing", "banking", "insurance", "mobile"],
+    "customNotes": ["EU movers from Spain often prioritise housing platforms and banking after registration planning."]
+  }
+}

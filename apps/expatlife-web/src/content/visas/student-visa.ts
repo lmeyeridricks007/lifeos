@@ -213,7 +213,7 @@ export const STUDENT_VISA: VisaPageData = {
     { label: "Open a bank account in the Netherlands", href: `${BASE}/open-bank-account-netherlands/` },
     { label: "Highly Skilled Migrant Visa in the Netherlands", href: `${BASE}/visa/highly-skilled-migrant/` },
     { label: "EU Blue Card in the Netherlands", href: `${BASE}/visa/eu-blue-card/` },
-    { label: "Moving to the Netherlands from your country", href: `${BASE}/moving/moving-to-netherlands-from/` },
+    { label: "Moving to the Netherlands from your country", href: `${BASE}/moving-to-netherlands-from/` },
   ],
 
   relatedCountryPages: [

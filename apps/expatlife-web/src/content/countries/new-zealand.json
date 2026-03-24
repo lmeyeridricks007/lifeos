@@ -1,0 +1,148 @@
+{
+  "slug": "new-zealand",
+  "name": "New Zealand",
+  "shortName": "NZ",
+  "iso2": "NZ",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["English", "Māori"],
+  "travel": {
+    "typicalFlightTime": "22–28 hours",
+    "notes": [
+      "Ultra long-haul routes usually involve multiple legs; book flexible arrival accommodation.",
+      "Allow recovery and buffer time before heavy admin in your first week."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "International career moves",
+      "Study at Dutch universities",
+      "Partner or family reunification",
+      "Entrepreneurship and startup routes",
+      "Working holiday and cultural exchange"
+    ],
+    "popularDutchCities": ["Amsterdam", "Utrecht", "The Hague", "Eindhoven", "Rotterdam"],
+    "commonSectors": ["Technology", "Engineering", "Agri-food and logistics", "Research", "Public and international organisations"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Sponsored employment and highly skilled migrant routes",
+      "Study permits with Dutch institution admission",
+      "Partner and family routes with relationship evidence",
+      "Entrepreneurship, startup, or self-employment where criteria are met",
+      "Working Holiday Scheme for eligible New Zealanders"
+    ],
+    "notes": [
+      "Non-EU nationals generally need a recognised purpose to live in the Netherlands longer than short visits.",
+      "MVV entry visas apply in many (not all) long-stay procedures—confirm on IND and Netherlands Worldwide."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid passport",
+      "Birth or marriage certificates when relevant",
+      "Employment contract or university admission",
+      "Proof of address history where required",
+      "Permit-specific forms from sponsor or institution"
+    ],
+    "countrySpecificNotes": [
+      "NZ documents for overseas use may need apostille or authentication (Govt.nz, MFAT).",
+      "Some Dutch authorities require sworn translation—verify per procedure."
+    ],
+    "sources": [
+      {
+        "label": "Govt.nz",
+        "name": "Using your New Zealand documents overseas",
+        "website": "https://www.govt.nz/browse/passports-citizenship-and-identity/proving-and-protecting-your-identity/use-your-nz-documents-overseas/",
+        "contactSummary": "Official guidance on NZ documents used outside New Zealand."
+      },
+      {
+        "label": "MFAT",
+        "name": "Authentication of documents",
+        "website": "https://www.mfat.govt.nz/en/about-us/who-we-are/authentication-of-documents",
+        "contactSummary": "New Zealand government authentication information."
+      },
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV, and route-specific requirements."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "NZD / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Sea freight from New Zealand to the Netherlands typically runs on multi-week timelines. Short-stay furnished housing is common while shipments and registration progress.",
+    "notes": [
+      "Compare shared container, full container, and air freight for essentials.",
+      "Align delivery with lease start and temporary accommodation."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration and residence permit information."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and country-specific visa application information",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Checklists, MVV in New Zealand, appointments, and WHP details."
+      }
+    ]
+  },
+  "heroImageAlt": "A peaceful Dutch canal lined with traditional gabled houses and a bridge—an arrival-in-the-Netherlands mood for New Zealanders planning a long-haul move.",
+  "seo": {
+    "title": "Moving to the Netherlands from New Zealand | Visas, Documents, Costs & Practical Setup",
+    "description": "Planning a move from New Zealand to the Netherlands? Explore visa routes, MVV guidance, document prep, working holiday options, costs, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from new zealand",
+      "move from new zealand to netherlands",
+      "new zealand to netherlands visa",
+      "relocating from new zealand to netherlands",
+      "moving from new zealand to holland",
+      "dutch working holiday new zealand",
+      "mvv netherlands new zealand",
+      "netherlands residence permit new zealand",
+      "apostille new zealand documents netherlands",
+      "new zealanders living in the netherlands"
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do New Zealanders need a visa to live in the Netherlands?",
+      "a": "For stays longer than short visits, most New Zealanders need a Dutch residence permit for a recognised purpose such as work, study, family, or certain exchange routes. Whether you also need an MVV (entry visa) depends on your nationality and permit type—confirm on IND and Netherlands Worldwide."
+    },
+    {
+      "q": "What is an MVV for the Netherlands?",
+      "a": "The MVV is a provisional residence permit used as an entry visa in many long-stay procedures. It can let you travel to the Netherlands to complete steps such as collecting your residence permit when your route requires it. Check IND pages and the New Zealand–specific Netherlands Worldwide guidance."
+    },
+    {
+      "q": "Where do New Zealanders apply for the MVV sticker?",
+      "a": "Netherlands Worldwide describes how to apply for the MVV long-stay visa from New Zealand, including appointments. Follow the current country-specific pages."
+    },
+    {
+      "q": "Can New Zealanders use a Dutch working holiday?",
+      "a": "Yes—New Zealanders can be eligible for the Netherlands Working Holiday Programme / working holiday residence permit under the conditions on Netherlands Worldwide and the IND. The IND explains how to apply when that route applies. It is not the same as standard long-term skilled employment."
+    },
+    {
+      "q": "How should I prepare New Zealand documents for Dutch authorities?",
+      "a": "Govt.nz, MFAT, and DIA explain authentication, apostille, and official translation for documents used overseas. Dutch procedures may require legalisation and/or sworn translation—use the document list for your specific permit or municipality process."
+    },
+    {
+      "q": "Where do New Zealanders find official support while in the Netherlands?",
+      "a": "MFAT publishes country information for the Netherlands, including travel advice and links to official New Zealand representation and consular topics."
+    }
+  ],
+  "scenarioOverrides": [],
+  "affiliateContext": {
+    "preferredCategories": ["banking", "housing", "insurance", "shipping", "mobile"],
+    "customNotes": ["Long-haul moves from New Zealand often pair temporary housing, sea freight, and cross-border banking early."]
+  }
+}

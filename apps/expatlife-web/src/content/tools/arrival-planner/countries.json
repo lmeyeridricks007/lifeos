@@ -98,6 +98,76 @@
     ]
   },
   {
+    "slug": "switzerland",
+    "label": "Switzerland",
+    "regionGroup": "eu-eea-swiss",
+    "distanceCategory": "near",
+    "countryDocumentSourceName": "Swiss civil authorities (per Netherlands Worldwide)",
+    "countryDocumentSourceWebsite": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/switzerland",
+    "countryDocumentSourceSummary": "Some Swiss documents can be used directly in the Netherlands; others need a Hague apostille—depends on document type and use.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/switzerland/",
+    "typicalArrivalNotes": [
+      "Swiss citizens follow IND guidance alongside EU/EEA nationals for many stay questions; focus on registration and BSN.",
+      "Driving and document rules are often closer to EU neighbours than to long-haul non-EU moves."
+    ]
+  },
+  {
+    "slug": "sweden",
+    "label": "Sweden",
+    "regionGroup": "eu-eea-swiss",
+    "distanceCategory": "near",
+    "countryDocumentSourceName": "Swedish authorities (EU civil documents)",
+    "countryDocumentSourceWebsite": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents",
+    "countryDocumentSourceSummary": "EU movers: many documents are straightforward; confirm unusual cases per Netherlands Worldwide legalisation overview.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/sweden/",
+    "typicalArrivalNotes": [
+      "Swedish EU citizens focus on gemeente registration, BSN, insurance, and banking—not visa or MVV steps for ordinary moves.",
+      "Ferry, road, or short flights are common; plan first-week sequencing like other EU origins."
+    ]
+  },
+  {
+    "slug": "denmark",
+    "label": "Denmark",
+    "regionGroup": "eu-eea-swiss",
+    "distanceCategory": "near",
+    "countryDocumentSourceName": "Danish authorities (per Netherlands Worldwide)",
+    "countryDocumentSourceWebsite": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/denmark",
+    "countryDocumentSourceSummary": "Some Danish documents immediate; diplomas/certificates often e-apostille; Danish may need sworn translation unless a multilingual form applies.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/denmark/",
+    "typicalArrivalNotes": [
+      "Danish EU citizens prioritise registration within official timelines, BSN, insurance, and banking.",
+      "Road via Germany or short flights; document prep may include e-apostille for education credentials."
+    ]
+  },
+  {
+    "slug": "norway",
+    "label": "Norway",
+    "regionGroup": "eu-eea-swiss",
+    "distanceCategory": "near",
+    "countryDocumentSourceName": "Norwegian authorities (per Netherlands Worldwide)",
+    "countryDocumentSourceWebsite": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/norway",
+    "countryDocumentSourceSummary": "Some Norwegian documents immediate; others need apostille from Norway—depends on document type and recipient.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/norway/",
+    "typicalArrivalNotes": [
+      "Norwegian EEA nationals follow IND EU/EEA/Swiss guidance for many stay questions; focus on registration, BSN, insurance, and banking—not MVV steps for ordinary moves.",
+      "Flights to Amsterdam are common; verify Norwegian document legalisation only when Netherlands Worldwide or the recipient requires it."
+    ]
+  },
+  {
+    "slug": "ireland",
+    "label": "Ireland",
+    "regionGroup": "eu-eea-swiss",
+    "distanceCategory": "near",
+    "countryDocumentSourceName": "Irish authorities (per Netherlands Worldwide)",
+    "countryDocumentSourceWebsite": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/ireland",
+    "countryDocumentSourceSummary": "Some Irish documents immediate; others need apostille from Ireland—depends on document type and recipient.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/ireland/",
+    "typicalArrivalNotes": [
+      "Irish EU citizens focus on gemeente registration, BSN, Dutch basic health insurance timing (per Government.nl), and banking—not visa or MVV steps for ordinary moves.",
+      "Short flights to Amsterdam or Eindhoven are common; confirm Irish document legalisation only when Netherlands Worldwide or the recipient requires it."
+    ]
+  },
+  {
     "slug": "france",
     "label": "France",
     "regionGroup": "eu-eea-swiss",
@@ -126,6 +196,34 @@
     ]
   },
   {
+    "slug": "italy",
+    "label": "Italy",
+    "regionGroup": "eu-eea-swiss",
+    "distanceCategory": "near",
+    "countryDocumentSourceName": "Comune / Italian civil registry",
+    "countryDocumentSourceWebsite": "https://www.interno.gov.it",
+    "countryDocumentSourceSummary": "Civil records and official documents from Italian authorities (comune, anagrafe, or consular channels where relevant).",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/italy/",
+    "typicalArrivalNotes": [
+      "EU/EEA document and mobility pathways usually apply.",
+      "Municipality registration and BSN remain the main early priorities."
+    ]
+  },
+  {
+    "slug": "uae",
+    "label": "United Arab Emirates",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "UAE Ministry of Foreign Affairs / issuing authorities",
+    "countryDocumentSourceWebsite": "https://www.mofa.gov.ae",
+    "countryDocumentSourceSummary": "Attestation for UAE-issued documents; passport-country documents may follow other legalisation routes.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/uae/",
+    "typicalArrivalNotes": [
+      "MVV and residence permit sequencing is often top of mind after a Gulf-based application.",
+      "Keep attested documents and translations accessible for municipality or IND follow-up."
+    ]
+  },
+  {
     "slug": "brazil",
     "label": "Brazil",
     "regionGroup": "non-eu",
@@ -137,6 +235,104 @@
     "typicalArrivalNotes": [
       "Document legalisation for use in the Netherlands can take time; start early.",
       "Long-haul moves often benefit from shipping and temporary housing planning."
+    ]
+  },
+  {
+    "slug": "mexico",
+    "label": "Mexico",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "Registro Civil / Mexican competent authorities for apostille",
+    "countryDocumentSourceWebsite": "https://www.gob.mx",
+    "countryDocumentSourceSummary": "Mexican civil records and Hague apostille (Apostilla de La Haya) through the authority competent for each document.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/mexico/",
+    "typicalArrivalNotes": [
+      "MVV collection in Mexico and residence permit follow-up in the Netherlands often frame the first month.",
+      "Keep apostilled actas and translations accessible for gemeente or IND appointments."
+    ]
+  },
+  {
+    "slug": "singapore",
+    "label": "Singapore",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "Singapore Academy of Law (SAL) — apostille",
+    "countryDocumentSourceWebsite": "https://legalisation.sal.sg",
+    "countryDocumentSourceSummary": "Hague apostille for many Singapore-issued public documents; MFA describes SAL as competent authority.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/singapore/",
+    "typicalArrivalNotes": [
+      "MVV collection per your IND letter and residence permit follow-up often frame the first month.",
+      "Keep SAL-apostilled documents and translations accessible for gemeente or IND appointments."
+    ]
+  },
+  {
+    "slug": "japan",
+    "label": "Japan",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "Japanese Ministry of Foreign Affairs (MOFA) — apostille",
+    "countryDocumentSourceWebsite": "https://www.mofa.go.jp",
+    "countryDocumentSourceSummary": "Hague apostille for many Japan-issued public documents per Netherlands Worldwide guidance.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/japan/",
+    "typicalArrivalNotes": [
+      "MVV steps per your IND letter and residence permit follow-up often frame the first month.",
+      "Keep MOFA-apostilled documents and translations accessible for gemeente or IND appointments."
+    ]
+  },
+  {
+    "slug": "south-korea",
+    "label": "South Korea",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "South Korean authorities — apostille (per Netherlands Worldwide)",
+    "countryDocumentSourceWebsite": "https://www.mofa.go.kr",
+    "countryDocumentSourceSummary": "Hague apostille for many South Korea–issued public documents; Korean documents often need translation for Dutch use.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/south-korea/",
+    "typicalArrivalNotes": [
+      "MVV steps per your IND letter and residence permit follow-up often frame the first month.",
+      "Keep apostilled documents and accepted translations accessible for gemeente or IND appointments."
+    ]
+  },
+  {
+    "slug": "turkey",
+    "label": "Türkiye",
+    "regionGroup": "non-eu",
+    "distanceCategory": "near",
+    "countryDocumentSourceName": "Turkish authorities — apostille (per Netherlands Worldwide)",
+    "countryDocumentSourceWebsite": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/turkiye",
+    "countryDocumentSourceSummary": "Some Turkish documents can be used as-is in the Netherlands; others require apostille. Turkish-language documents often need translation into Dutch, English, French, or German for Dutch use.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/turkey/",
+    "typicalArrivalNotes": [
+      "MVV and residence permit steps from Türkiye often frame the first month; follow your IND letter and Netherlands Worldwide appointment guidance.",
+      "Keep apostilled documents and accepted translations accessible for gemeente or IND follow-up."
+    ]
+  },
+  {
+    "slug": "argentina",
+    "label": "Argentina",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "Argentine Ministry of Foreign Affairs — digital e-apostille (per Netherlands Worldwide)",
+    "countryDocumentSourceWebsite": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/argentina",
+    "countryDocumentSourceSummary": "Documents from Argentina need MFA digital e-apostille for Dutch use; translations may be required depending on document language.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/argentina/",
+    "typicalArrivalNotes": [
+      "Long-haul arrival after MVV steps; Buenos Aires embassy context often frames pre-departure timing.",
+      "Keep e-apostilled documents and accepted translations accessible for gemeente or IND follow-up."
+    ]
+  },
+  {
+    "slug": "chile",
+    "label": "Chile",
+    "regionGroup": "non-eu",
+    "distanceCategory": "far",
+    "countryDocumentSourceName": "Chilean authorities — Hague apostille (per Netherlands Worldwide)",
+    "countryDocumentSourceWebsite": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/chile",
+    "countryDocumentSourceSummary": "Documents from Chile need a Hague apostille from the Chilean authorities for Dutch use; translations may be required depending on document language.",
+    "countryGuideHref": "/netherlands/moving/moving-to-netherlands-from/chile/",
+    "typicalArrivalNotes": [
+      "Long-haul arrival after MVV steps; Santiago embassy context often frames pre-departure timing.",
+      "Keep apostilled documents and accepted translations accessible for gemeente or IND follow-up."
     ]
   }
 ]

@@ -7,50 +7,131 @@
   "distanceCategory": "near",
   "languages": ["German", "English"],
   "travel": {
-    "typicalFlightTime": "1-2 hours",
-    "notes": ["Regional moves can support staged moving plans."]
+    "typicalFlightTime": "1–2 hours (or road/rail)",
+    "notes": [
+      "Many moves use car, train, or short flights; same-day or weekend relocation is common.",
+      "Cross-border commuters may not follow the same registration pattern as full residents."
+    ]
   },
   "relocationProfile": {
-    "commonReasons": ["Cross-border work", "Partner relocation", "Education and research"],
-    "popularDutchCities": ["Amsterdam", "Utrecht", "Eindhoven"],
-    "commonSectors": ["Technology", "Engineering", "Research"]
+    "commonReasons": [
+      "Cross-border employment",
+      "Study and research",
+      "Partner or family relocation",
+      "EU remote work and lifestyle moves"
+    ],
+    "popularDutchCities": ["Amsterdam", "Utrecht", "Eindhoven", "Arnhem", "Maastricht"],
+    "commonSectors": ["Technology", "Engineering", "Logistics", "Research", "Creative industries"]
   },
   "visaAwareness": {
-    "commonRoutes": ["EU free movement", "Partner / Family route"],
-    "notes": ["Requirements vary by nationality and purpose of stay."]
+    "commonRoutes": [
+      "EU free movement (ordinary residence)",
+      "Work, study, or self-sufficiency within EU rules"
+    ],
+    "notes": [
+      "Germans do not follow the same visa/MVV pathway as non-EU nationals for standard EU residence.",
+      "Municipal registration and practical setup are usually the main early focus."
+    ]
   },
   "documents": {
-    "commonStarterDocuments": ["Passport or EU ID", "Address proof", "Employment records"],
-    "countrySpecificNotes": ["Cross-border movers often focus on registration sequencing first."],
+    "commonStarterDocuments": [
+      "Passport or national ID",
+      "Dutch address proof for registration",
+      "Employment or study documents where relevant",
+      "German civil-status documents when needed (many need no legalisation for Dutch use)"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide describes when German civil-status documents need no legalisation and when German does not require translation.",
+      "Always confirm requirements for the specific document and authority."
+    ],
     "sources": [
       {
-        "label": "Germany Federal Portal",
-        "name": "Germany Government Services",
-        "website": "https://www.bundesregierung.de",
-        "contactSummary": "General public service information and references."
+        "label": "Netherlands Worldwide",
+        "name": "German documents for use in the Netherlands",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/germany",
+        "contactSummary": "Country-specific document and legalisation guidance."
+      },
+      {
+        "label": "IND",
+        "name": "EU, EEA and Swiss citizens in the Netherlands",
+        "website": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+        "contactSummary": "Official EU citizen stay information."
       }
     ]
   },
   "costs": {
     "currency": "EUR",
-    "ranges": [
-      { "key": "oneWayFlight", "label": "One-way flight", "value": "EUR70-EUR250", "note": "Short-haul pricing varies by city and timing." },
-      { "key": "temporaryHousing", "label": "Temporary housing (monthly)", "value": "EUR1,200-EUR2,500", "note": "Depends on destination city." }
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Road and rail moves from Germany are common; professional movers handle larger households. Parking and access in Dutch cities need advance planning.",
+    "notes": [
+      "Compare van hire, man-with-a-van, and full-service removals for your volume.",
+      "Temporary parking permits may be needed at destination."
     ]
   },
   "contacts": {
     "official": [
-      { "label": "IND", "name": "Dutch Immigration and Naturalisation Service", "website": "https://ind.nl", "contactSummary": "Official immigration information." }
+      {
+        "label": "IND",
+        "name": "EU, EEA and Swiss citizens — staying in the Netherlands",
+        "website": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+        "contactSummary": "EU free movement and residence information."
+      },
+      {
+        "label": "Government.nl",
+        "name": "Immigration and moving to the Netherlands",
+        "website": "https://www.government.nl/topics/immigration-to-the-netherlands",
+        "contactSummary": "Official Dutch government overview."
+      }
     ]
   },
+  "heroImageAlt": "A Dutch cityscape with bicycles and canal-side buildings—arrival mood for Germans planning a cross-border move to the Netherlands.",
   "seo": {
-    "title": "Moving to the Netherlands from Germany: Cross-Border Planning Guide",
-    "description": "Practical guidance for people moving from Germany to the Netherlands, including route awareness, registration-focused prep, and settlement priorities."
+    "title": "Moving to the Netherlands from Germany | Registration, Documents, Costs & Practical Setup",
+    "description": "Planning a move from Germany to the Netherlands? Explore EU move rules, registration, BSN, document requirements, housing, banking, and the practical steps to settle in.",
+    "keywords": [
+      "moving to the netherlands from germany",
+      "move from germany to netherlands",
+      "relocating from germany to netherlands",
+      "moving from germany to holland",
+      "german moving to netherlands",
+      "eu citizen move to netherlands",
+      "germany to netherlands registration",
+      "german documents netherlands no legalisation",
+      "living in the netherlands as a german",
+      "germany netherlands cross-border move"
+    ]
   },
-  "faqOverrides": [],
+  "faqOverrides": [
+    {
+      "q": "Do Germans need a visa to live in the Netherlands?",
+      "a": "German citizens are EU citizens. For ordinary residence based on EU free movement, you generally do not need a visa or residence permit in the same way as non-EU nationals. You must still meet the conditions that apply to your situation. Confirm details on the IND page for EU, EEA, and Swiss citizens and on Government.nl."
+    },
+    {
+      "q": "Do Germans need an MVV to move to the Netherlands?",
+      "a": "An MVV (provisional residence permit as an entry visa) is part of many non-EU long-stay procedures. It is not the standard framework for Germans exercising EU free movement for ordinary residence. If your situation is unusual, check official sources or seek tailored advice."
+    },
+    {
+      "q": "How do I register after moving from Germany?",
+      "a": "If you will live in the Netherlands for more than four months, you normally register with your municipality. You must register within five working days of arrival once you have a residential address. The municipality issues your BSN. See our municipality registration guide and official Government.nl information."
+    },
+    {
+      "q": "Do German birth or marriage certificates need legalisation for the Netherlands?",
+      "a": "Netherlands Worldwide states that many German civil-status documents—including birth, marriage, divorce, and death certificates—do not have to be legalised for use in the Netherlands, and documents in German often do not need translation. Other document types or uses may differ; always verify for your specific document and authority."
+    },
+    {
+      "q": "What should I prioritise in the first weeks?",
+      "a": "Most people focus on municipal registration and BSN, Dutch basic health insurance where required, a bank account, and DigiD. Housing search intensity is often the hardest part, not immigration paperwork."
+    },
+    {
+      "q": "When might immigration lawyers or visa consultants still help?",
+      "a": "Complex family situations, mixed-nationality households, or specialised legal questions may warrant professional advice. For typical EU moves, many people rely on gemeente guidance and official web sources first."
+    }
+  ],
   "scenarioOverrides": [],
   "affiliateContext": {
-    "preferredCategories": ["banking", "housing", "insurance"],
-    "customNotes": []
+    "preferredCategories": ["housing", "banking", "insurance", "mobile"],
+    "customNotes": ["EU cross-border movers often prioritise housing platforms and banking after registration planning."]
   }
 }

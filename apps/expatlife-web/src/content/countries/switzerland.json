@@ -1,0 +1,136 @@
+{
+  "slug": "switzerland",
+  "name": "Switzerland",
+  "shortName": "CH",
+  "iso2": "CH",
+  "regionGroup": "eea-swiss",
+  "distanceCategory": "near",
+  "languages": ["German", "French", "Italian", "English"],
+  "travel": {
+    "typicalFlightTime": "About 1–2 hours by air, or 6–8+ hours by train (e.g. Zurich–Amsterdam)",
+    "notes": [
+      "Many movers use short flights or comfortable rail via Germany; weekend and cross-border trips are common.",
+      "Cross-border commuters who keep their main residence in Switzerland may follow different registration and insurance rules than full Dutch residents."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Employment with Dutch or international employers",
+      "Study and research",
+      "Partner or family relocation",
+      "Cross-border and internationally mobile careers",
+      "Lifestyle and remote-work moves within easy reach of Switzerland"
+    ],
+    "popularDutchCities": ["Amsterdam", "Utrecht", "The Hague", "Rotterdam", "Eindhoven"],
+    "commonSectors": ["Technology", "Finance", "Life sciences", "International institutions", "Higher education", "Logistics"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Stay and work under IND guidance for EU, EEA and Swiss citizens",
+      "Registration-based residence for longer stays (no ordinary residence permit for standard Swiss route)"
+    ],
+    "notes": [
+      "Swiss nationals are not EU citizens but are included with EU and EEA nationals in key IND guidance on staying in the Netherlands.",
+      "For an ordinary Swiss-citizen move, MVV and standard residence-permit applications are not the framing—municipal registration, BSN, and practical setup are.",
+      "Special cases (e.g. non-Swiss family members, unusual nationality mixes) may need tailored checks or professional advice."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid Swiss passport or Swiss identity card",
+      "Dutch address proof for municipality registration where required",
+      "Civil-status documents when your gemeente or employer asks for them",
+      "Employment or university paperwork for your situation"
+    ],
+    "countrySpecificNotes": [
+      "Netherlands Worldwide explains that some Swiss documents can be used in the Netherlands immediately, while others must be legalised with a Hague apostille by the Swiss authorities—the document type and who requests it determine the rule.",
+      "Do not assume every Swiss document needs an apostille; always confirm with the requesting authority."
+    ],
+    "sources": [
+      {
+        "label": "IND",
+        "name": "Staying in the Netherlands as an EU, EEA or Swiss citizen",
+        "website": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens/staying-in-the-netherlands-as-an-eu-eea-or-swiss-citizen",
+        "contactSummary": "Official guidance on Swiss citizens alongside EU/EEA."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Legalisation: documents from Switzerland",
+        "website": "https://www.netherlandsworldwide.nl/legalisation/foreign-documents/switzerland",
+        "contactSummary": "When Swiss documents need apostille for Dutch use."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Road and rail moves from Switzerland are typical; some households use professional movers for larger loads. Parking and building access in Dutch cities need planning.",
+    "notes": [
+      "Compare van hire, partial loads, and full-service removals depending on volume.",
+      "If you use the train for personal travel, coordinate separately from household goods."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "EU, EEA and Swiss citizens in the Netherlands",
+        "website": "https://ind.nl/en/residence-permits/eu-eea-or-swiss-citizens",
+        "contactSummary": "Overview for Swiss citizens under IND guidance."
+      },
+      {
+        "label": "Government.nl",
+        "name": "What to arrange when moving to the Netherlands",
+        "website": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/what-do-i-need-to-arrange-if-im-moving-to-the-netherlands",
+        "contactSummary": "Official relocation checklist context."
+      }
+    ]
+  },
+  "heroImageAlt": "Editorial hero: Swiss Alps—snow-capped ridge and glacier glow, alpine terrace with precision-packed luggage, crisp mountain air clarity, evoking Switzerland-to-Netherlands relocation.",
+  "seo": {
+    "title": "Moving to the Netherlands from Switzerland | Registration, Documents, Costs & Practical Setup",
+    "description": "Planning a move from Switzerland to the Netherlands? Explore Swiss citizen move rules, registration, BSN, document requirements, housing, banking, and practical settlement steps.",
+    "keywords": [
+      "moving to the netherlands from switzerland",
+      "move from switzerland to netherlands",
+      "relocating from switzerland to netherlands",
+      "swiss moving to netherlands",
+      "living in the netherlands as a swiss citizen",
+      "swiss citizen netherlands registration",
+      "switzerland to netherlands BSN",
+      "swiss documents apostille netherlands",
+      "swiss move to netherlands housing",
+      "netherlands for swiss citizens"
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Swiss citizens need a visa or residence permit to live in the Netherlands?",
+      "a": "The IND includes Swiss citizens together with EU and EEA nationals in its guidance on staying in the Netherlands. For the ordinary Swiss-citizen route described there, you do not need a residence permit in the same sense as many non-EU nationals, and this page is not framed around MVV-style procedures. You still need a valid Swiss travel document and must meet the conditions that apply to your situation. Confirm details on IND.nl and Government.nl."
+    },
+    {
+      "q": "How long can Swiss citizens stay before registering?",
+      "a": "IND guidance states that EU, EEA and Swiss citizens can stay in the Netherlands for up to three months without additional requirements beyond a valid travel document. For longer stays and everyday life (BSN, banking, insurance), municipal registration is usually the practical focus—see your municipality’s rules."
+    },
+    {
+      "q": "Do Swiss documents always need an apostille for the Netherlands?",
+      "a": "No. Netherlands Worldwide explains that some Swiss documents can be used immediately in the Netherlands, while others must be legalised with an apostille by the Swiss authorities. It depends on the document type and the authority that requests it—always verify case by case."
+    },
+    {
+      "q": "What should I prioritise after arriving from Switzerland?",
+      "a": "Most people focus on municipality registration and receiving a BSN, opening a Dutch bank account, arranging Dutch basic health insurance when they become resident, and DigiD where applicable. Use our after-arrival guides alongside official checklists."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Swiss professional starting work in Amsterdam or Rotterdam",
+      "summary": "Line up housing, gemeente registration and BSN, insurance aligned with residence, and payroll banking—without MVV framing for the standard Swiss route."
+    },
+    {
+      "title": "Student moving from Switzerland to a Dutch university",
+      "summary": "Confirm enrolment, housing near campus, and which civil documents the institution or gemeente needs; check Netherlands Worldwide for any apostille requirements on specific extracts."
+    }
+  ]
+}

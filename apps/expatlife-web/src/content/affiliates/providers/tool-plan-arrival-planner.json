@@ -1,0 +1,22 @@
+{
+  "id": "tool-plan-arrival-planner",
+  "name": "Arrival planner",
+  "tagline": "Map first-week and first-month admin in a sensible order.",
+  "categoryIds": ["planning"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Free tool", "After arrival"],
+  "highlights": ["Registration and BSN context", "Insurance and banking timing", "Editable plan"],
+  "cta": {
+    "label": "Open tool",
+    "href": "/netherlands/moving/tools/arrival-planner/",
+    "isAffiliate": false
+  },
+  "disclosure": "Free tool on ExpatCopilot.",
+  "logo": {
+    "src": "",
+    "alt": ""
+  }
+}

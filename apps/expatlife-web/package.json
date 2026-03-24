@@ -12,6 +12,7 @@
     "lint": "next lint",
     "validate:affiliates": "tsx scripts/validate-affiliates.ts",
     "placeholders": "tsx scripts/generate-placeholder-images.ts",
+    "generate:country-origin-heroes": "node scripts/generate-country-origin-heroes.mjs",
     "fetch:ind-sponsors": "tsx scripts/fetch-ind-recognised-sponsors.ts",
     "fetch:relocation-agencies": "tsx scripts/fetch-relocation-agencies.ts",
     "fetch:startup-facilitators": "tsx scripts/fetch-startup-facilitators.ts",

@@ -1,0 +1,166 @@
+{
+  "slug": "brazil",
+  "name": "Brazil",
+  "shortName": "BR",
+  "iso2": "BR",
+  "regionGroup": "non-eu",
+  "distanceCategory": "far",
+  "languages": ["Portuguese"],
+  "travel": {
+    "typicalFlightTime": "11–13 hours (e.g. São Paulo–Amsterdam)",
+    "notes": [
+      "Long-haul from major Brazilian hubs; connections and seasonality affect pricing.",
+      "Many long-stay procedures route document submission and MVV collection through the Dutch mission network in Brazil—confirm current steps on Netherlands Worldwide."
+    ]
+  },
+  "relocationProfile": {
+    "commonReasons": [
+      "Sponsored tech and engineering roles",
+      "Master’s or PhD study in the Netherlands",
+      "Partner or family reunification",
+      "Startup or entrepreneurship routes where criteria are met",
+      "Graduate job search after Dutch or qualifying international degrees"
+    ],
+    "popularDutchCities": ["Amsterdam", "Eindhoven", "Rotterdam", "Utrecht", "The Hague"],
+    "commonSectors": ["Technology", "Agri-food and logistics", "Finance", "Creative industries", "Research and higher education"]
+  },
+  "visaAwareness": {
+    "commonRoutes": [
+      "Highly skilled migrant and other sponsored employment",
+      "Study with a Dutch institution as sponsor",
+      "Partner and family routes with relationship evidence",
+      "Startup or self-employment where conditions are met",
+      "Orientation year (search year) for eligible recent graduates—distinct criteria and timelines"
+    ],
+    "notes": [
+      "Brazilian nationals are not EU citizens: long stays require a Dutch residence permit for a recognised purpose, and an MVV entry visa is typically required in addition (Brazilians are generally not on the MVV-exempt list—confirm on the IND).",
+      "Short tourism or business visits of up to 90 days in the Schengen area often do not require a visa for Brazilian passport holders; that is separate from moving for work or study.",
+      "MVV and residence permit applications are usually submitted together from abroad; a sponsor (employer, university, partner, etc.) is central to most routes."
+    ]
+  },
+  "documents": {
+    "commonStarterDocuments": [
+      "Valid Brazilian passport",
+      "Birth certificate and civil status documents when relevant",
+      "Police certificates or medical checks only if your permit route requires them",
+      "Educational diplomas and professional references for work or study routes",
+      "Sponsor letters, employment contract, or admission as required"
+    ],
+    "countrySpecificNotes": [
+      "Brazil uses the Hague Apostille Convention: many Brazilian public documents are legalised with an apostille issued through the competent Brazilian authorities (often via cartório and CNJ where applicable)—not the same workflow as EU mutual recognition.",
+      "Dutch authorities may require sworn translations into Dutch or English for civil and educational records.",
+      "Start civil record requests early; notarial copies and apostilles can add weeks."
+    ],
+    "sources": [
+      {
+        "label": "Netherlands Worldwide",
+        "name": "MVV and Schengen applications from Brazil",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Brazil-specific instructions for Schengen and MVV long-stay applications."
+      },
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Residence permits, MVV, exemptions, and route-specific requirements."
+      }
+    ]
+  },
+  "costs": {
+    "currency": "BRL / EUR",
+    "ranges": []
+  },
+  "shipping": {
+    "intro": "Brazil-to-Netherlands moves often use sea freight for household goods with several weeks of transit, sometimes combined with air freight for essentials. Temporary furnished housing in the Netherlands is common while shipments clear.",
+    "notes": [
+      "Align shipment dates with MVV validity and lease start.",
+      "Inventory lists and insurance help with customs and claims."
+    ]
+  },
+  "contacts": {
+    "official": [
+      {
+        "label": "IND",
+        "name": "Dutch Immigration and Naturalisation Service",
+        "website": "https://ind.nl",
+        "contactSummary": "Official immigration and residence permit information."
+      },
+      {
+        "label": "Netherlands Worldwide",
+        "name": "Consular services and visa applications in Brazil",
+        "website": "https://www.netherlandsworldwide.nl",
+        "contactSummary": "Schengen and MVV application details for applicants in Brazil."
+      }
+    ]
+  },
+  "heroImageAlt": "A calm relocation planning scene suggesting a journey from Brazil to the Netherlands: a passport and documents on a desk with soft light, evoking long-haul preparation and arrival in a Dutch city.",
+  "seo": {
+    "title": "Moving to the Netherlands from Brazil | Visa, MVV, Residence Permit & Relocation Guide",
+    "description": "Planning a move from Brazil to the Netherlands? Learn about visa requirements, MVV process, residence permits, housing, and practical steps to settle.",
+    "keywords": [
+      "moving to the netherlands from brazil",
+      "move from brazil to netherlands",
+      "relocating from brazil to netherlands",
+      "brazil to netherlands visa",
+      "brazil netherlands residence permit",
+      "mvv brazil netherlands",
+      "visto holanda brasil",
+      "morar na holanda brasil",
+      "apostille brazil documents netherlands"
+    ]
+  },
+  "affiliateContext": {
+    "preferredCategories": ["documents", "planning", "banking", "housing", "insurance"],
+    "customNotes": [
+      "Brazilian moves are often MVV-heavy; document apostille and translation lead times are common bottlenecks."
+    ]
+  },
+  "faqOverrides": [
+    {
+      "q": "Do Brazilians need a visa to visit the Netherlands?",
+      "a": "For short stays in the Schengen area (including the Netherlands), Brazilian passport holders often do not need a visa for visits up to 90 days—check the current Schengen visa exemption rules on Netherlands Worldwide for Brazil. This is not the same as moving for work or study, which requires a residence permit route."
+    },
+    {
+      "q": "Do Brazilians need an MVV to move to the Netherlands long term?",
+      "a": "For stays longer than short visits, you normally need a residence permit. For many nationalities, including Brazilian nationals, an MVV (provisional residence permit / long-stay entry visa) is also required because Brazil is generally not on the MVV-exempt list. Confirm your exact procedure on the IND and Netherlands Worldwide."
+    },
+    {
+      "q": "Where do Brazilians apply for the MVV?",
+      "a": "Applications are typically handled through the Dutch mission network as described on Netherlands Worldwide for Brazil—including practical guidance on appointments, documents, and collecting the MVV sticker after approval (often linked to São Paulo or the competent consular post for your area)."
+    },
+    {
+      "q": "Can I move without a job offer?",
+      "a": "Most long-stay routes require a sponsor such as an employer, educational institution, or qualifying family member. Some routes (for example certain entrepreneurship options or graduate orientation-year permits for eligible qualifications) have specific criteria. Verify what you qualify for on official IND pages rather than assuming an unsponsored move is possible."
+    },
+    {
+      "q": "How do I prepare Brazilian documents for Dutch authorities?",
+      "a": "Expect apostille legalisation for many Brazilian public documents and possibly sworn translations. Requirements depend on the document and the authority requesting it (IND, municipality, employer). Build time for cartório steps and courier delivery."
+    },
+    {
+      "q": "What should I plan for right after arriving?",
+      "a": "Most people focus on collecting the residence permit if applicable, municipal registration and BSN, opening a bank account, and taking out Dutch basic health insurance when they become resident. Follow Government.nl and municipal guidance for your city."
+    }
+  ],
+  "scenarioOverrides": [
+    {
+      "title": "Brazilian tech professional with a Dutch employer (highly skilled migrant)",
+      "summary": "Align sponsor timelines, joint MVV and residence permit steps from Brazil, housing near the role, and BSN-first banking and insurance. Engage regulated support if HR does not run the full immigration workflow."
+    },
+    {
+      "title": "Brazilian student admitted to a Dutch university",
+      "summary": "Sequence admission, study permit conditions, proof of funds, and student housing. Plan apostilles and translations for diplomas and civil documents early."
+    },
+    {
+      "title": "Partner moving from Brazil to join someone in the Netherlands",
+      "summary": "Relationship evidence and civil documents are central; timelines depend on the partner’s status in the Netherlands. Expect legalisation and translation work on Brazilian records."
+    },
+    {
+      "title": "Founder exploring startup or self-employment in the Netherlands",
+      "summary": "Map criteria for startup or self-employment routes, facilitator or advisor involvement, and municipality registration. These paths are usually more bespoke than a standard employee sponsorship."
+    },
+    {
+      "title": "Recent graduate considering an orientation year after qualifying studies",
+      "summary": "If you may qualify for an orientation year for highly educated people, confirm degree recognition, application timing, and how it interacts with job search—then plan MVV/residence steps if applicable."
+    }
+  ]
+}
