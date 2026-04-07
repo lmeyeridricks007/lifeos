@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
+import { PillarMainStack } from "@/components/page/pillar-template";
+import { SiteFramedHero } from "@/components/site/SiteFramedHero";
+import { siteHubHeroSectionClass } from "@/lib/ui/site-shell-identity";
 import { StructuredData } from "@/components/seo/StructuredData";
 import {
   buildAboutPageSchema,
@@ -58,55 +61,57 @@ export default function AboutPage() {
       <StructuredData data={breadcrumbSchema} />
       <StructuredData data={aboutPageSchema} />
 
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen">
         {/* Hero */}
-        <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-brand-50/30 to-white py-10 sm:py-14 md:py-16">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_70%_-20%,rgba(59,130,246,0.08),transparent)] pointer-events-none" aria-hidden />
+        <section className={siteHubHeroSectionClass}>
           <Container className="relative">
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-600">
-              <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                <li>
-                  <Link href="/" className="hover:text-slate-900">
-                    Home
-                  </Link>
-                </li>
-                <li aria-hidden className="text-slate-400">
-                  /
-                </li>
-                <li className="font-medium text-slate-900" aria-current="page">
-                  About
-                </li>
-              </ol>
-            </nav>
-            {aboutPage.hero.eyebrow ? (
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-500">
-                {aboutPage.hero.eyebrow}
+            <SiteFramedHero>
+              <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-600">
+                <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                  <li>
+                    <Link href="/" className="hover:text-slate-900">
+                      Home
+                    </Link>
+                  </li>
+                  <li aria-hidden className="text-slate-400">
+                    /
+                  </li>
+                  <li className="font-medium text-slate-900" aria-current="page">
+                    About
+                  </li>
+                </ol>
+              </nav>
+              {aboutPage.hero.eyebrow ? (
+                <p className="text-xs font-semibold uppercase tracking-[0.14em] text-copilot-primary">
+                  {aboutPage.hero.eyebrow}
+                </p>
+              ) : null}
+              <h1 className="mt-2 max-w-4xl text-3xl font-semibold tracking-tight text-copilot-text-primary sm:text-4xl md:text-5xl">
+                {aboutPage.hero.title}
+              </h1>
+              <p className="mt-4 max-w-3xl text-lg text-copilot-text-secondary">
+                {aboutPage.hero.subtitle}
               </p>
-            ) : null}
-            <h1 className="mt-2 max-w-4xl text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
-              {aboutPage.hero.title}
-            </h1>
-            <p className="mt-4 max-w-3xl text-lg text-slate-600">
-              {aboutPage.hero.subtitle}
-            </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <Link
-                href={aboutPage.hero.primaryCta.href}
-                className="inline-flex items-center rounded-lg bg-brand-600 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-brand-700"
-              >
-                {aboutPage.hero.primaryCta.label}
-                <span className="ml-1" aria-hidden>→</span>
-              </Link>
-              <Link
-                href={aboutPage.hero.secondaryCta.href}
-                className="inline-flex items-center rounded-lg border-2 border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 hover:border-brand-200 hover:bg-brand-50/50"
-              >
-                {aboutPage.hero.secondaryCta.label}
-              </Link>
-            </div>
+              <div className="mt-8 flex flex-wrap items-center gap-3">
+                <Link
+                  href={aboutPage.hero.primaryCta.href}
+                  className="inline-flex items-center rounded-xl bg-copilot-primary px-6 py-3 text-base font-semibold text-white shadow-expatos-md transition hover:bg-copilot-primary-strong hover:shadow-expatos-hover"
+                >
+                  {aboutPage.hero.primaryCta.label}
+                  <span className="ml-1" aria-hidden>→</span>
+                </Link>
+                <Link
+                  href={aboutPage.hero.secondaryCta.href}
+                  className="inline-flex items-center rounded-xl border-2 border-slate-200 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 hover:border-copilot-primary/30 hover:bg-copilot-bg-soft/50"
+                >
+                  {aboutPage.hero.secondaryCta.label}
+                </Link>
+              </div>
+            </SiteFramedHero>
           </Container>
         </section>
 
+        <PillarMainStack>
         <Section contained={false} className="py-10 md:py-14">
           <Container>
             <div className="max-w-6xl">
@@ -274,6 +279,7 @@ export default function AboutPage() {
             </div>
           </Container>
         </Section>
+        </PillarMainStack>
       </div>
     </>
   );

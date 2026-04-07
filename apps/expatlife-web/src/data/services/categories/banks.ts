@@ -365,7 +365,7 @@ export const banksCategoryPage: ServiceCategoryPageData = {
   relatedCategories: [
     { label: "Banking & Finance overview", href: "/netherlands/services/banking-finance/" },
     { label: "Insurance", href: "/netherlands/services/insurance/" },
-    { label: "Tax & Accounting", href: "/netherlands/services/tax-accounting/" },
+    { label: "Tax guides & advisors (Money)", href: "/netherlands/taxes/" },
   ],
 
   tools: [

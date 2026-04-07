@@ -12,6 +12,8 @@
  *
  * When adding a new indexable page:
  * 1. Ensure its normalized path is part of `LIVE_PATHS` (see comments in `route-registry.ts`), or
+ *    for a new tool: set `status: "live"` and a correct `route` in `src/content/tools/registry.json`
+ *    (picked up by `buildLivePathSet()` automatically), or
  *    covered by a pattern helper used by `isRouteLive`, or extend `liveSitemapPaths` if it is a new
  *    programmatic family of URLs.
  * 2. If it appears in the footer or HTML sitemap lists, update `src/data/site/footer-links.ts`.

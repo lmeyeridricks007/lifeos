@@ -4,6 +4,7 @@
  */
 
 import movingRegistry from "@/src/content/guides/netherlands/moving/registry.json";
+import livingCultureCluster from "@/src/content/guides/netherlands/living-culture-cluster.json";
 import toolCategoriesJson from "@/src/content/tools/categories.json";
 import { loadGuideBySlug } from "@/src/lib/guides/loadGuide";
 import { isPubliclyVisible } from "@/src/lib/publishing/isPubliclyVisible";
@@ -33,6 +34,7 @@ import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
 import type { VisaPageData } from "@/src/content/visas/types";
 import type { RegistryGuide } from "@/src/lib/guides/types";
 import type { SearchDocument } from "./searchDocument";
+import { isContentHidden, parseContentPublishStatus } from "@/src/lib/content/contentPublishStatus";
 
 const SERVICE_CATEGORY_FULL: ServiceCategoryPageData[] = [
   banksCategoryPage,
@@ -395,6 +397,37 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       description: tp.description,
       keywords: tp.keywords,
       searchText: joinSearchParts(tp.title, tp.description, tp.keywords),
+    });
+  }
+
+  type ClusterRow = {
+    cluster: string;
+    path: string;
+    title: string;
+    metaDescription: string;
+    intro: string;
+    pageType: string;
+    breadcrumbLabel: string;
+    navGroup: string | null;
+    contentStatus?: string;
+  };
+  for (const row of livingCultureCluster.entries as ClusterRow[]) {
+    const categoryLabel = row.cluster === "living" ? "Living in the Netherlands" : "Culture in the Netherlands";
+    const pageType = row.pageType === "hub" ? ("hub" as const) : ("guide" as const);
+    const keywords = [row.cluster, row.navGroup, row.pageType, row.breadcrumbLabel].filter(Boolean) as string[];
+    const contentPublishStatus = parseContentPublishStatus(row.contentStatus);
+    if (isContentHidden(contentPublishStatus)) continue;
+    out.push({
+      id: `living-culture:${row.path}`,
+      title: row.title,
+      href: row.path,
+      categoryLabel,
+      pageType,
+      section: row.cluster,
+      description: row.metaDescription,
+      keywords,
+      searchText: joinSearchParts(row.title, row.metaDescription, row.intro, row.cluster, row.navGroup),
+      contentPublishStatus,
     });
   }
 

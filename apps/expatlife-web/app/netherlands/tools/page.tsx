@@ -14,8 +14,11 @@ export default function NetherlandsToolsHubPage() {
     "arrival-planner",
     "first-90-days",
     "document-readiness",
-    "job-offer-comparison-tool",
+    "expat-cost-of-living-calculator",
+    "dutch-salary-net-calculator",
     "thirty-percent-ruling-calculator",
+    "payslip-decoder",
+    "job-offer-comparison-tool",
   ]).filter((t) => t?.id && t?.route);
   const { collectionPage, breadcrumb } = getAllToolsHubJsonLd();
 

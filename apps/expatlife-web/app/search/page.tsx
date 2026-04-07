@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
+import { PillarMainStack } from "@/components/page/pillar-template";
 import { SearchPageClient } from "@/src/components/search/SearchPageClient";
 import { runSearch } from "@/src/lib/search/runSearch";
 import { getLiveSearchQuickLinks, getLiveSearchRecoveryLinks } from "@/src/lib/search/liveQuickLinks";
@@ -40,14 +41,16 @@ export default async function SearchPage(props: SearchPageProps) {
           : "Search live guides, tools, visa pages, services, cities, and hubs. Use the header search or the form below."
       }
     >
-      <Container className="px-0">
-        <SearchPageClient
-          initialQuery={q}
-          results={results}
-          quickLinks={quickLinks}
-          recoveryLinks={recoveryLinks}
-        />
-      </Container>
+      <PillarMainStack className="mt-0 space-y-0 pt-6 sm:space-y-0 sm:pt-7 md:space-y-0 md:pt-8">
+        <Container className="px-0">
+          <SearchPageClient
+            initialQuery={q}
+            results={results}
+            quickLinks={quickLinks}
+            recoveryLinks={recoveryLinks}
+          />
+        </Container>
+      </PillarMainStack>
     </Section>
   );
 }

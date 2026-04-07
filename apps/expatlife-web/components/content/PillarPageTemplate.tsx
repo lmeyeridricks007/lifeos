@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 import {
   resolveLinkFromRegistry,
@@ -24,8 +25,8 @@ import { PillarTOC } from "@/components/content/PillarTOC";
 import { PillarToolsStrip } from "@/components/content/PillarToolsStrip";
 import { PillarChecklistTabs } from "@/components/content/PillarChecklistTabs";
 import { PillarScenarioSection } from "@/components/content/PillarScenarioSection";
-import { RelocationTimelineSection } from "@/components/content/RelocationTimelineSection";
 import { MovingTimelineSection } from "@/components/content/MovingTimelineSection";
+import { ToolInfographicBlock } from "@/src/components/tools/shared/ToolInfographicBlock";
 import { ChecklistAtAGlanceSection } from "@/components/content/ChecklistAtAGlanceSection";
 import {
   ContentTable,
@@ -42,6 +43,13 @@ import { AffiliateSectionBlock } from "@/components/affiliate/AffiliateSectionBl
 import { AffiliateBlockView } from "@/src/components/affiliates/AffiliateBlockView";
 import type { AffiliatePlacement, AffiliateProvider } from "@/src/lib/affiliates/types";
 import { getToolBySlug } from "@/src/lib/tools/getToolBySlug";
+import { cn } from "@/lib/cn";
+import {
+  shellSupportActionLinkClass,
+  shellSupportChipLinkClass,
+  shellSupportModuleClass,
+  shellSupportModuleTitleClass,
+} from "@/lib/ui/shell";
 
 function pillarHeroToEditorial(
   raw: string | null | undefined,
@@ -74,7 +82,7 @@ export type PillarTemplateProps = {
   /** Raw FAQ items for FAQPage JSON-LD */
   faq: PillarFaqItem[];
   /** Pre-built accordion items for the FAQ section (id, title, content) */
-  faqAccordionItems: Array<{ id: string; title: string; content: React.ReactNode }>;
+  faqAccordionItems: Array<{ id: string; title: string; content: ReactNode }>;
   /** Section copy and structure from content (sections.*) */
   sections: PillarSectionsJson;
   /** Timeline stages for the timeline section */
@@ -107,15 +115,21 @@ export type PillarTemplateProps = {
   };
   /** Full canonical URL for share/copy (e.g. siteUrl + meta.canonicalPath). */
   canonicalUrl: string;
+  /** Optional strip after the editorial hero (e.g. trust bar). */
+  slotAfterHero?: ReactNode;
+  /** Optional block after intro segments, before the “Start here” actions. */
+  slotAfterIntro?: ReactNode;
   /** Optional content to render above the moving timeline section (e.g. country guide grid). */
-  slotBeforeTimeline?: React.ReactNode;
+  slotBeforeTimeline?: ReactNode;
   /** Optional block immediately before the FAQ (e.g. cost of moving). */
-  slotBeforeFaq?: React.ReactNode;
+  slotBeforeFaq?: ReactNode;
 };
 
 /**
  * Reusable pillar page template. Use the same structure for any pillar (e.g. moving, visas, housing).
  * Pass content from your pillar loader; ensure sections/timeline/tools/toc/faq/scenarios match this shape.
+ *
+ * Monetization: align affiliate slots with `getMonetizationPolicy("pillar")` (`MonetizationPageType` in `@/src/lib/monetization/pageTypePolicy`).
  */
 export function PillarPageTemplate({
   breadcrumbCrumbs,
@@ -135,6 +149,8 @@ export function PillarPageTemplate({
   originCountry,
   affiliateBlockData,
   canonicalUrl,
+  slotAfterHero,
+  slotAfterIntro,
   slotBeforeTimeline,
   slotBeforeFaq,
 }: PillarTemplateProps) {
@@ -150,11 +166,11 @@ export function PillarPageTemplate({
     if (!tool) return null;
     const description = descriptionOverride ?? tool.summary;
     return (
-      <div className="mt-5 rounded-r-2xl border border-slate-200 border-l-4 border-l-brand-600 bg-brand-50/50 p-4 shadow-sm">
-        <p className="text-xs font-semibold uppercase tracking-wider text-slate-600">Recommended tool</p>
-        <h3 className="mt-1 text-base font-semibold text-slate-900">{tool.title}</h3>
-        <p className="mt-1 text-sm text-slate-600">{description}</p>
-        <Link href={tool.route} className="mt-3 inline-block text-sm font-semibold text-slate-800 hover:underline">
+      <div className="mt-5 rounded-card border border-border border-l-4 border-l-brand bg-brand-muted/50 p-4 shadow-card">
+        <p className="text-xs font-semibold uppercase tracking-wider text-foreground-muted">Recommended tool</p>
+        <h3 className="mt-1 text-base font-semibold text-foreground">{tool.title}</h3>
+        <p className="mt-1 text-sm text-foreground-muted">{description}</p>
+        <Link href={tool.route} className="mt-3 inline-block text-sm font-semibold text-foreground hover:underline">
           Open tool →
         </Link>
       </div>
@@ -163,12 +179,12 @@ export function PillarPageTemplate({
 
   /** Soft accent colors for section wrappers */
   const sectionAccent = {
-    before: "border-l-sky-500 bg-sky-50/40",
-    after: "border-l-teal-500 bg-teal-50/40",
-    first90: "border-l-amber-500 bg-amber-50/40",
-    documents: "border-l-emerald-500 bg-emerald-50/40",
-    banking: "border-l-violet-500 bg-violet-50/40",
-    housing: "border-l-rose-500 bg-rose-50/40",
+    before: "border-l-brand bg-brand-muted/40",
+    after: "border-l-accent bg-accent-muted/45",
+    first90: "border-l-warning bg-warning-muted/40",
+    documents: "border-l-success bg-success-muted/40",
+    banking: "border-l-info bg-info-muted/40",
+    housing: "border-l-danger bg-danger-muted/40",
   } as const;
 
   const {
@@ -199,7 +215,7 @@ export function PillarPageTemplate({
         dateModified={meta.lastUpdated}
         urlPath={meta.canonicalPath}
       />
-      <FaqPageJsonLd items={faq.map((i) => ({ q: i.q, a: i.a }))} />
+      {faq.length > 0 ? <FaqPageJsonLd items={faq.map((i) => ({ q: i.q, a: i.a }))} /> : null}
 
       <Container className="py-8">
         <div className="lg:grid lg:grid-cols-[1fr_340px] lg:gap-10">
@@ -213,27 +229,34 @@ export function PillarPageTemplate({
               pageId={meta.canonicalPath}
             />
 
-            <div className="mt-8">
+            {slotAfterHero != null ? <div className="mt-5 min-w-0 sm:mt-6">{slotAfterHero}</div> : null}
+
+            <div className="mt-8 sm:mt-10">
               <IntroSegments segments={intro.segments} linkRegistry={linkRegistry} />
             </div>
 
-            {/* Start here — compact action block */}
+            {slotAfterIntro != null ? <div className="mt-9 min-w-0 sm:mt-10">{slotAfterIntro}</div> : null}
+
+            {/* Start here — compact action block (mobile/tablet only; desktop uses sticky sidebar to avoid duplicating the same links) */}
             {(() => {
               const actions = sidebar.startHereActions ?? sidebar.links.map((linkKey) => ({ label: resolveLinkFromRegistry(linkRegistry, linkKey)?.title ?? linkKey, linkKey }));
               return actions.length > 0 ? (
-                <Section contained={false} className="pt-6">
-                  <div className="rounded-xl border-l-4 border-l-brand-600 bg-sky-50/60 px-4 py-4 sm:px-5">
-                    <p className="text-xs font-semibold uppercase tracking-wider text-brand-700">
-                      {sidebar.startHereLabel}
-                    </p>
-                    <div className="mt-3 flex flex-wrap gap-3">
+                <Section contained={false} className="pt-7 sm:pt-8 lg:hidden">
+                  <div
+                    className={cn(
+                      shellSupportModuleClass,
+                      "border-brand/20 bg-gradient-to-br from-brand-muted/50 via-surface-raised to-surface-muted/20"
+                    )}
+                  >
+                    <p className={shellSupportModuleTitleClass}>{sidebar.startHereLabel}</p>
+                    <div className="mt-4 flex flex-wrap gap-2.5">
                       {actions.map((action, i) => {
                         const link = resolveLinkFromRegistry(linkRegistry, action.linkKey);
                         return link ? (
                           <Link
                             key={i}
                             href={link.href}
-                            className="inline-flex items-center gap-1.5 rounded-lg border border-sky-200/80 bg-white px-4 py-2.5 text-sm font-medium text-slate-800 shadow-sm transition hover:border-brand-300 hover:bg-white hover:shadow"
+                            className={shellSupportChipLinkClass}
                           >
                             {action.label}
                             {!String(action.label).trim().endsWith("→") ? (
@@ -244,7 +267,7 @@ export function PillarPageTemplate({
                       })}
                       <a
                         href={sidebar.scenariosJumpAnchor}
-                        className="inline-flex items-center gap-1.5 rounded-lg border border-sky-200/80 bg-white px-4 py-2.5 text-sm font-medium text-slate-800 shadow-sm transition hover:border-brand-300 hover:bg-white hover:shadow"
+                        className={shellSupportChipLinkClass}
                       >
                         {sidebar.scenariosJumpLabel}
                         {!String(sidebar.scenariosJumpLabel).trim().endsWith("→") ? (
@@ -258,16 +281,16 @@ export function PillarPageTemplate({
             })()}
 
             <Section contained={false} className="pt-8">
-              <div className="rounded-r-2xl border-l-4 border-l-amber-500 bg-amber-50/50 pl-5 pr-5 py-5">
-                <h2 id="overview" className="text-2xl font-semibold tracking-tight text-slate-900">
+              <div className="rounded-card border-l-4 border-l-warning bg-warning-muted/50 pl-5 pr-5 py-5">
+                <h2 id="overview" className="text-2xl font-semibold tracking-tight text-foreground">
                   {overview.sectionTitle}
                 </h2>
                 {"overviewParagraph" in overview && overview.overviewParagraph ? (
-                  <p className="mt-3 text-slate-700">{overview.overviewParagraph}</p>
+                  <p className="mt-3 text-foreground">{overview.overviewParagraph}</p>
                 ) : null}
-                <div className="mt-4 rounded-xl border border-amber-200/80 bg-white px-4 py-4 shadow-sm">
-                  <p className="font-semibold text-amber-900">{overview.collapsibleTitle}</p>
-                  <ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-slate-700">
+                <div className="mt-4 rounded-card border border-warning-border/50 bg-surface-raised px-4 py-4 shadow-card">
+                  <p className="font-semibold text-warning">{overview.collapsibleTitle}</p>
+                  <ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-foreground">
                     {overview.disclaimerItems.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}
@@ -276,12 +299,10 @@ export function PillarPageTemplate({
               </div>
             </Section>
 
-            <RelocationTimelineSection id="your-move-in-3-stages" />
-
             <ChecklistAtAGlanceSection />
 
             <Section contained={false}>
-              <h2 id="who-this-is-for" className="text-2xl font-semibold tracking-tight text-slate-900">
+              <h2 id="who-this-is-for" className="text-2xl font-semibold tracking-tight text-foreground">
                 {whoThisGuideFor.sectionTitle}
               </h2>
               {whoThisGuideFor.audiences && whoThisGuideFor.audiences.length > 0 ? (
@@ -290,16 +311,16 @@ export function PillarPageTemplate({
                     {whoThisGuideFor.audiences.map((audience) => (
                       <span
                         key={audience}
-                        className="inline-block rounded-full border border-slate-200 bg-white px-3 py-1.5 text-sm text-slate-700 shadow-sm"
+                        className="inline-block rounded-full border border-border bg-surface-raised px-3 py-1.5 text-sm text-foreground shadow-sm"
                       >
                         {audience}
                       </span>
                     ))}
                   </div>
-                  <p className="mt-4 text-slate-600">{whoThisGuideFor.paragraph}</p>
+                  <p className="mt-4 text-foreground-muted">{whoThisGuideFor.paragraph}</p>
                 </>
               ) : (
-                <p className="mt-2 text-slate-600">{whoThisGuideFor.paragraph}</p>
+                <p className="mt-2 text-foreground-muted">{whoThisGuideFor.paragraph}</p>
               )}
             </Section>
 
@@ -312,11 +333,11 @@ export function PillarPageTemplate({
 
             {sections.stepByStepSummary ? (
               <Section contained={false}>
-                <h2 id="step-by-step-summary" className="text-2xl font-semibold tracking-tight text-slate-900">
+                <h2 id="step-by-step-summary" className="text-2xl font-semibold tracking-tight text-foreground">
                   {sections.stepByStepSummary.sectionTitle}
                 </h2>
-                <p className="mt-2 text-slate-600">{sections.stepByStepSummary.introParagraph}</p>
-                <ol className="mt-4 list-decimal space-y-2 pl-5 text-slate-700">
+                <p className="mt-2 text-foreground-muted">{sections.stepByStepSummary.introParagraph}</p>
+                <ol className="mt-4 list-decimal space-y-2 pl-5 text-foreground">
                   {sections.stepByStepSummary.steps.map((step, i) => (
                     <li key={i}>{step}</li>
                   ))}
@@ -335,19 +356,34 @@ export function PillarPageTemplate({
               contained={false}
             />
 
+            <Section contained={false} className="pt-8">
+              <p className="text-sm font-semibold text-foreground">Your move at a glance</p>
+              <p className="mt-1 text-sm text-foreground-muted">
+                One visual for the same three phases covered in the timeline above—helpful for sharing or printing.
+              </p>
+              <div className="mt-5">
+                <ToolInfographicBlock
+                  src="/images/infographics/moving-timeline-netherlands.png"
+                  alt="Timeline showing the three stages of moving to the Netherlands: before you move (documents, visa, housing), after arrival (registration, BSN), and first 90 days (banking, insurance, DigiD, transport)."
+                  width={800}
+                  height={450}
+                />
+              </div>
+            </Section>
+
             <Section contained={false}>
-              <div className={`rounded-r-2xl border-l-4 pl-5 pr-5 py-5 ${sectionAccent.before}`}>
-              <h2 id="before-you-move" className="text-2xl font-semibold tracking-tight text-slate-900">
+              <div className={`rounded-card border-l-4 pl-5 pr-5 py-5 ${sectionAccent.before}`}>
+              <h2 id="before-you-move" className="text-2xl font-semibold tracking-tight text-foreground">
                 {beforeYouMove.sectionTitle}
               </h2>
-              <h3 className="mt-4 text-lg font-medium text-slate-900">{beforeYouMove.prepareHeading}</h3>
-              <ul className="mt-2 list-disc space-y-1 pl-4 text-slate-600">
+              <h3 className="mt-4 text-lg font-medium text-foreground">{beforeYouMove.prepareHeading}</h3>
+              <ul className="mt-2 list-disc space-y-1 pl-4 text-foreground-muted">
                 {beforeYouMove.prepareList.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
               </ul>
-              <h3 className="mt-6 text-lg font-medium text-slate-900">{beforeYouMove.takesLongerHeading}</h3>
-              <ul className="mt-2 list-disc space-y-1 pl-4 text-slate-600">
+              <h3 className="mt-6 text-lg font-medium text-foreground">{beforeYouMove.takesLongerHeading}</h3>
+              <ul className="mt-2 list-disc space-y-1 pl-4 text-foreground-muted">
                 {beforeYouMove.takesLongerList.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
@@ -359,12 +395,12 @@ export function PillarPageTemplate({
                   </InfoBox>
                 ))}
               </div>
-              <p className="mt-4 text-slate-600">
+              <p className="mt-4 text-foreground-muted">
                 <ParagraphWithLinks
                   paragraph={beforeYouMove.closingText}
                   linkKeys={beforeYouMove.closingLinkKeys}
                   linkRegistry={linkRegistry}
-                  linkClassName="font-medium text-slate-800 hover:underline"
+                  linkClassName="font-medium text-foreground hover:underline"
                 />
               </p>
               {renderToolCta(beforeMoveTool, beforeYouMove.toolCtaDescription)}
@@ -383,11 +419,11 @@ export function PillarPageTemplate({
             </Section>
 
             <Section contained={false}>
-              <div className={`rounded-r-2xl border-l-4 pl-5 pr-5 py-5 ${sectionAccent.after}`}>
-              <h2 id="after-arrival" className="text-2xl font-semibold tracking-tight text-slate-900">
+              <div className={`rounded-card border-l-4 pl-5 pr-5 py-5 ${sectionAccent.after}`}>
+              <h2 id="after-arrival" className="text-2xl font-semibold tracking-tight text-foreground">
                 {afterArrival.sectionTitle}
               </h2>
-              <ul className="mt-4 list-disc space-y-1 pl-4 text-slate-600">
+              <ul className="mt-4 list-disc space-y-1 pl-4 text-foreground-muted">
                 {afterArrival.itemBlocks.map((block, i) => (
                   <li key={i}>
                     <ParagraphWithLinks
@@ -403,11 +439,11 @@ export function PillarPageTemplate({
             </Section>
 
             <Section contained={false}>
-              <div className={`rounded-r-2xl border-l-4 pl-5 pr-5 py-5 ${sectionAccent.first90}`}>
-              <h2 id="first-90-days" className="text-2xl font-semibold tracking-tight text-slate-900">
+              <div className={`rounded-card border-l-4 pl-5 pr-5 py-5 ${sectionAccent.first90}`}>
+              <h2 id="first-90-days" className="text-2xl font-semibold tracking-tight text-foreground">
                 {first90Days.sectionTitle}
               </h2>
-              <p className="mt-3 text-slate-600">
+              <p className="mt-3 text-foreground-muted">
                 <strong>Before you move:</strong> documents, visa/residence prep, address planning, and travel.{" "}
                 <strong>After arrival:</strong> registration, BSN, banking, and insurance.{" "}
                 <strong>First 90 days:</strong> DigiD, GP, transport, recurring payments, and settling into routines.
@@ -415,7 +451,7 @@ export function PillarPageTemplate({
               <div className="mt-4">
                 <PillarChecklistTabs tabs={checklistTabs} />
               </div>
-              <p className="mt-4 text-slate-600">
+              <p className="mt-4 text-foreground-muted">
                 <ParagraphWithLinks
                   paragraph={first90Days.ctaParagraph}
                   linkKeys={[first90Days.ctaLinkKey]}
@@ -432,16 +468,16 @@ export function PillarPageTemplate({
             </Section>
 
             <Section contained={false}>
-              <div className={`rounded-r-2xl border-l-4 pl-5 pr-5 py-5 ${sectionAccent.documents}`}>
-              <h2 id="documents" className="text-2xl font-semibold tracking-tight text-slate-900">
+              <div className={`rounded-card border-l-4 pl-5 pr-5 py-5 ${sectionAccent.documents}`}>
+              <h2 id="documents" className="text-2xl font-semibold tracking-tight text-foreground">
                 {documents.sectionTitle}
               </h2>
               <BoldParagraph text={documents.introParagraph} className="mt-2" />
-              <p className="mt-4 text-slate-600">
+              <p className="mt-4 text-foreground-muted">
                 Use the{" "}
                 <Link
                   href={resolveLinkFromRegistry(linkRegistry, documents.toolLinkKey)?.href ?? "#"}
-                  className="font-medium text-slate-800 hover:underline"
+                  className="font-medium text-foreground hover:underline"
                 >
                   {documents.toolLinkLabel}
                 </Link>{" "}
@@ -457,14 +493,14 @@ export function PillarPageTemplate({
             </Section>
 
             <Section contained={false}>
-              <div className={`rounded-r-2xl border-l-4 pl-5 pr-5 py-5 ${sectionAccent.banking}`}>
-              <h2 id="banking" className="text-2xl font-semibold tracking-tight text-slate-900">
+              <div className={`rounded-card border-l-4 pl-5 pr-5 py-5 ${sectionAccent.banking}`}>
+              <h2 id="banking" className="text-2xl font-semibold tracking-tight text-foreground">
                 {banking.sectionTitle}
               </h2>
               {banking.introParagraph && (
-                <BoldParagraph text={banking.introParagraph} className="mt-2 text-slate-600 leading-relaxed" />
+                <BoldParagraph text={banking.introParagraph} className="mt-2 text-foreground-muted leading-relaxed" />
               )}
-              <p className={banking.introParagraph ? "mt-3 text-slate-600" : "mt-2 text-slate-600"}>
+              <p className={banking.introParagraph ? "mt-3 text-foreground-muted" : "mt-2 text-foreground-muted"}>
                 {banking.paragraphLinkKeys && banking.paragraphLinkKeys.length > 0 ? (
                   <ParagraphWithLinks
                     paragraph={banking.paragraph}
@@ -495,12 +531,12 @@ export function PillarPageTemplate({
             </Section>
 
             <Section contained={false}>
-              <div className={`rounded-r-2xl border-l-4 pl-5 pr-5 py-5 ${sectionAccent.housing}`}>
-              <h2 id="housing" className="text-2xl font-semibold tracking-tight text-slate-900">
+              <div className={`rounded-card border-l-4 pl-5 pr-5 py-5 ${sectionAccent.housing}`}>
+              <h2 id="housing" className="text-2xl font-semibold tracking-tight text-foreground">
                 {housing.sectionTitle}
               </h2>
               {housing.introParagraph && (
-                <BoldParagraph text={housing.introParagraph} className="mt-2 text-slate-600 leading-relaxed" />
+                <BoldParagraph text={housing.introParagraph} className="mt-2 text-foreground-muted leading-relaxed" />
               )}
               {housing.registrationWarning && (
                 <InfoBox
@@ -513,7 +549,7 @@ export function PillarPageTemplate({
               )}
               <p
                 className={
-                  housing.registrationWarning || housing.introParagraph ? "mt-3 text-slate-600" : "mt-2 text-slate-600"
+                  housing.registrationWarning || housing.introParagraph ? "mt-3 text-foreground-muted" : "mt-2 text-foreground-muted"
                 }
               >
                 {housing.paragraphLinkKeys && housing.paragraphLinkKeys.length > 0 ? (
@@ -546,8 +582,8 @@ export function PillarPageTemplate({
             </Section>
 
             <Section contained={false}>
-              <div className="rounded-2xl border border-amber-200/60 bg-amber-50/30 p-5">
-                <h2 id="gotchas" className="text-2xl font-semibold tracking-tight text-slate-900">
+              <div className="rounded-card border border-warning-border/60/60 bg-warning-muted/60/30 p-5">
+                <h2 id="gotchas" className="text-2xl font-semibold tracking-tight text-foreground">
                   {gotchas.sectionTitle}
                 </h2>
                 <ContentTable
@@ -561,7 +597,7 @@ export function PillarPageTemplate({
                         <ContentTableCell emphasis>{row.gotcha}</ContentTableCell>
                         <ContentTableCell>
                           {fixLink ? (
-                            <Link href={fixLink.href} className="font-medium text-brand-700 hover:underline">
+                            <Link href={fixLink.href} className="font-medium text-link hover:text-link-hover hover:underline">
                               {row.fix}
                             </Link>
                           ) : (
@@ -575,17 +611,17 @@ export function PillarPageTemplate({
               </div>
             </Section>
 
-            <Section contained={false}>
-              <h2 id="tools" className="text-2xl font-semibold tracking-tight text-slate-900">
+            <Section contained={false} compact>
+              <h2 id="tools" className="text-2xl font-semibold tracking-tight text-foreground">
                 {sectionTitles.tools}
               </h2>
-              <div className="mt-4">
+              <div className="mt-3">
                 <PillarToolsStrip tools={toolsStrip} />
               </div>
             </Section>
 
-            <Section contained={false}>
-              <h2 id="useful-services" className="text-2xl font-semibold tracking-tight text-slate-900">
+            <Section contained={false} compact>
+              <h2 id="useful-services" className="text-2xl font-semibold tracking-tight text-foreground">
                 Useful services
               </h2>
               {affiliateBlockData?.endResources && (
@@ -593,13 +629,13 @@ export function PillarPageTemplate({
                   <AffiliateBlockView placement={affiliateBlockData.endResources.placement} items={affiliateBlockData.endResources.items} />
                 </div>
               )}
-              <p className="mt-4 text-sm text-slate-600">
+              <p className="mt-4 text-sm text-foreground-muted">
                 Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you.
               </p>
             </Section>
 
-            <Section contained={false}>
-              <h2 id="related" className="text-2xl font-semibold tracking-tight text-slate-900">
+            <Section contained={false} compact>
+              <h2 id="related" className="text-2xl font-semibold tracking-tight text-foreground">
                 {related.sectionTitle}
               </h2>
               <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -608,26 +644,32 @@ export function PillarPageTemplate({
                   .map((card, i) => {
                     const link = resolveLinkFromRegistry(linkRegistry, card.linkKey);
                     if (!link) return null;
-                    const guideAccent = ["border-l-sky-400 bg-sky-50/30", "border-l-teal-400 bg-teal-50/30", "border-l-amber-400 bg-amber-50/30", "border-l-emerald-400 bg-emerald-50/30", "border-l-violet-400 bg-violet-50/30"][i % 5];
+                    const guideAccent = [
+                      "border-l-brand bg-brand-muted/35",
+                      "border-l-accent bg-accent-muted/35",
+                      "border-l-warning bg-warning-muted/35",
+                      "border-l-success bg-success-muted/35",
+                      "border-l-info bg-info-muted/35",
+                    ][i % 5];
                     return (
                       <CardLink
                         key={i}
                         href={link.href}
                         title={link.title}
                         description={card.description}
-                        className={`rounded-r-2xl border-l-4 ${guideAccent}`}
+                        className={`rounded-card border-l-4 ${guideAccent}`}
                       />
                     );
                   })}
               </div>
             </Section>
 
-            <Section contained={false}>
-              <h2 id="shareable" className="text-2xl font-semibold tracking-tight text-slate-900">
+            <Section contained={false} compact>
+              <h2 id="shareable" className="text-2xl font-semibold tracking-tight text-foreground">
                 {shareable.sectionTitle}
               </h2>
-              <p className="mt-2 text-slate-600">{shareable.introParagraph}</p>
-              <ul className="mt-4 list-disc space-y-1 pl-4 text-slate-600">
+              <p className="mt-2 text-foreground-muted">{shareable.introParagraph}</p>
+              <ul className="mt-4 list-disc space-y-1 pl-4 text-foreground-muted">
                 {shareable.items.map((item, i) => {
                   const link = resolveLinkFromRegistry(linkRegistry, item.linkKey);
                   const suffixLink = item.suffixLinkKey
@@ -639,14 +681,14 @@ export function PillarPageTemplate({
                   const afterLink = dashIndex >= 0 ? item.label.slice(dashIndex) : "";
                   return (
                     <li key={i}>
-                      <Link href={link.href} className="font-medium text-brand-700 hover:underline">
+                      <Link href={link.href} className="font-medium text-link hover:text-link-hover hover:underline">
                         {linkLabel}
                       </Link>
                       {afterLink}
                       {item.suffixLinkKey && item.suffixLabel && suffixLink && (
                         <>
                           {" and "}
-                          <Link href={suffixLink.href} className="font-medium text-brand-700 hover:underline">
+                          <Link href={suffixLink.href} className="font-medium text-link hover:text-link-hover hover:underline">
                             {suffixLink.title}
                           </Link>
                           {item.suffixLabel.includes(" — ") ? ` — ${item.suffixLabel.split(" — ").slice(1).join(" — ")}` : item.suffixLabel}
@@ -656,41 +698,43 @@ export function PillarPageTemplate({
                   );
                 })}
               </ul>
-              <p className="mt-4 text-sm text-slate-500">{shareable.footerParagraph}</p>
+              <p className="mt-4 text-sm text-foreground-muted">{shareable.footerParagraph}</p>
             </Section>
 
-            <Section contained={false}>
+            <Section contained={false} compact>
               <ContentActionBar
                 url={canonicalUrl}
                 title={pageHeader.title}
                 pageId={meta.canonicalPath}
                 variant="bottom"
-                className="mb-8"
+                className="mb-4"
               />
               {slotBeforeFaq}
-              <h2 id="faq" className="text-2xl font-semibold tracking-tight text-slate-900">
-                {sectionTitles.faq}
-              </h2>
-              <div className="mt-4">
-                <Accordion items={faqAccordionItems} />
-              </div>
+              {faqAccordionItems.length > 0 ? (
+                <>
+                  <h2 id="faq" className="text-2xl font-semibold tracking-tight text-foreground">
+                    {sectionTitles.faq}
+                  </h2>
+                  <div className="mt-4">
+                    <Accordion items={faqAccordionItems} />
+                  </div>
+                </>
+              ) : null}
             </Section>
           </main>
 
           <aside className="hidden lg:block">
-            <div className="sticky top-24 space-y-8">
+            <div className="sticky top-24 space-y-6">
               <PillarTOC items={tocItems} />
-              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-                  {sidebar.startHereLabel}
-                </p>
+              <div className={shellSupportModuleClass}>
+                <p className={shellSupportModuleTitleClass}>{sidebar.startHereLabel}</p>
                 {(sidebar.startHereActions ?? sidebar.links.map((key) => ({ label: resolveLinkFromRegistry(linkRegistry, key)?.title ?? key, linkKey: key }))).length > 0 ? (
-                  <ul className="mt-3 space-y-2">
+                  <ul className="mt-4 space-y-2">
                     {(sidebar.startHereActions ?? sidebar.links.map((key) => ({ label: resolveLinkFromRegistry(linkRegistry, key)?.title ?? key, linkKey: key }))).map((action, i) => {
                       const link = resolveLinkFromRegistry(linkRegistry, action.linkKey);
                       return link ? (
                         <li key={i}>
-                          <Link href={link.href} className="block rounded-lg border border-slate-100 bg-slate-50/50 px-3 py-2 text-sm font-medium text-slate-800 hover:bg-slate-100 hover:text-brand-700">
+                          <Link href={link.href} className={shellSupportActionLinkClass}>
                             {action.label}
                             {!String(action.label).trim().endsWith("→") ? (
                               <span aria-hidden className="ml-1">→</span>
@@ -702,7 +746,7 @@ export function PillarPageTemplate({
                     <li>
                       <a
                         href={sidebar.scenariosJumpAnchor}
-                        className="block rounded-lg border border-slate-100 bg-slate-50/50 px-3 py-2 text-sm font-medium text-slate-800 hover:bg-slate-100 hover:text-brand-700"
+                        className={shellSupportActionLinkClass}
                       >
                         {sidebar.scenariosJumpLabel}
                         {!String(sidebar.scenariosJumpLabel).trim().endsWith("→") ? (
@@ -718,7 +762,7 @@ export function PillarPageTemplate({
                       return ctaLink ? (
                         <Link
                           href={ctaLink.href}
-                          className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50"
+                          className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg border border-border bg-surface-muted/60 px-4 py-3 text-sm font-semibold text-foreground shadow-card transition-colors duration-150 hover:border-brand/25 hover:bg-brand-muted/35 hover:text-brand-strong"
                         >
                           {sidebar.ctaLabel}
                           {!String(sidebar.ctaLabel).trim().endsWith("→") ? (
@@ -727,27 +771,33 @@ export function PillarPageTemplate({
                         </Link>
                       ) : null;
                     })()}
-                    <ul className="mt-4 space-y-2 border-t border-slate-100 pt-4">
+                    <ul className="mt-4 space-y-1.5 border-t border-border/80 pt-4">
                       {sidebar.links.map((key, i) => {
                         const link = resolveLinkFromRegistry(linkRegistry, key);
                         return link ? (
                           <li key={i}>
-                            <Link href={link.href} className="text-sm font-medium text-brand-700 hover:underline">
+                            <Link
+                              href={link.href}
+                              className="text-sm font-medium text-link transition-colors duration-150 hover:text-link-hover hover:underline"
+                            >
                               {link.title}
                             </Link>
                           </li>
                         ) : null;
                       })}
                     </ul>
-                    <p className="mt-4 text-xs text-slate-500">{sidebar.scenariosPrompt}</p>
-                    <a href={sidebar.scenariosJumpAnchor} className="mt-1 block text-sm font-medium text-brand-700 hover:underline">
+                    <p className="mt-4 text-xs text-foreground-muted">{sidebar.scenariosPrompt}</p>
+                    <a
+                      href={sidebar.scenariosJumpAnchor}
+                      className="mt-1 block text-sm font-medium text-link transition-colors duration-150 hover:text-link-hover hover:underline"
+                    >
                       {sidebar.scenariosJumpLabel}
                     </a>
                   </>
                 )}
               </div>
               {affiliateBlockData?.sidebar && (
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+                <div className={shellSupportModuleClass}>
                   <AffiliateBlockView placement={affiliateBlockData.sidebar.placement} items={affiliateBlockData.sidebar.items} />
                 </div>
               )}

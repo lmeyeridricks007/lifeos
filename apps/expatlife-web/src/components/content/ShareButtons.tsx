@@ -5,6 +5,7 @@ import { Instagram, Check } from "lucide-react";
 import { FacebookIcon, LinkedinIcon, WhatsappIcon, XIcon } from "react-share";
 import { openShare, shareToInstagram, type ShareTarget } from "@/src/lib/share";
 import { cn } from "@/lib/cn";
+import { transitionInteractive } from "@/lib/ui/interaction";
 
 export type ShareButtonsProps = {
   url: string;
@@ -12,6 +13,8 @@ export type ShareButtonsProps = {
   targets?: ShareTarget[];
   /** Compact icon-only buttons */
   variant?: "default" | "compact";
+  /** `surface` = semantic tokens (guide reference hero); `inverse` = dark hero glass; `legacy` = slate/chrome */
+  tone?: "legacy" | "surface" | "inverse";
   className?: string;
 };
 
@@ -36,6 +39,7 @@ export function ShareButtons({
   title,
   targets = ["x", "facebook", "linkedin", "instagram"],
   variant = "default",
+  tone = "legacy",
   className,
 }: ShareButtonsProps) {
   const [instagramFeedback, setInstagramFeedback] = useState(false);
@@ -49,7 +53,13 @@ export function ShareButtons({
   }, [url]);
 
   const btnClass = cn(
-    "inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 transition hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-1",
+    transitionInteractive,
+    "inline-flex items-center justify-center rounded-lg ease-out active:brightness-[0.96] motion-reduce:active:brightness-100",
+    tone === "surface"
+      ? "border border-border/80 bg-surface-raised text-foreground-muted hover:border-border hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/25 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas"
+      : tone === "inverse"
+        ? "border border-white/25 bg-white/10 text-slate-100 hover:border-white/40 hover:bg-white/18 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/40 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+        : "border border-slate-200 bg-white text-slate-600 hover:border-slate-300 hover:bg-slate-50 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-1",
     variant === "compact" ? "h-9 w-9" : "h-9 w-9 px-0"
   );
 
@@ -67,7 +77,13 @@ export function ShareButtons({
               aria-label={showFeedback ? "Link copied—paste in Instagram" : SHARE_LABELS.instagram}
             >
               {showFeedback ? (
-                <Check className="h-4 w-4 text-emerald-600" aria-hidden />
+                <Check
+                  className={cn(
+                    "h-4 w-4",
+                    tone === "surface" || tone === "inverse" ? "text-emerald-400" : "text-emerald-600"
+                  )}
+                  aria-hidden
+                />
               ) : (
                 <Instagram className="h-4 w-4" aria-hidden />
               )}

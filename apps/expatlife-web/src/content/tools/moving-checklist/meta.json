@@ -11,12 +11,12 @@
       "Handoff list for your first days (use Arrival Planner next)"
     ],
     "image": {
-      "src": "/images/tools/moving-checklist-netherlands.webp",
-      "alt": "Moving checklist for the Netherlands showing relocation planning phases"
+      "src": "/images/guides/netherlands/moving/checklist-tool-hero.png",
+      "alt": "Moving checklist for the Netherlands: packing, passport, and planning on a desk with a Dutch canal view"
     },
     "imageFallback": {
       "src": "/images/guides/netherlands/moving/checklist-tool-hero.png",
-      "alt": "Open suitcase packed with clothes, passports, and a notebook — essentials for your move to the Netherlands"
+      "alt": "Moving checklist for the Netherlands: packing, passport, and planning on a desk with a Dutch canal view"
     }
   },
   "explanatorySections": [

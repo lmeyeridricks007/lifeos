@@ -1,30 +1,72 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
   getNlMovingPillarContent,
   resolveLinkFromRegistry,
   resolveReadingOrder,
 } from "@expatlife/content";
-import { PillarPageTemplate } from "@/components/content/PillarPageTemplate";
-import { BoldParagraph } from "@/components/content/PillarContentBlocks";
+import type { EditorialHeroImage } from "@/src/lib/content/editorialTypes";
+import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
+import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
+import { Container } from "@/components/ui/container";
+import { cn } from "@/lib/cn";
 import type { ResolvedScenario } from "@/components/content/PillarScenarioCards";
+import { GuidePageTemplate } from "@/components/page/page-templates";
 import {
-  getAffiliatesForCategory,
-  getAffiliateCategoryTitle,
-} from "@/lib/affiliates";
-import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
-import { Section } from "@/components/ui/section";
-import { CostOfMovingSection } from "@/components/content/CostOfMovingSection";
-import { getFeaturedOriginCountryGuides } from "@/src/lib/countries/originCountryGuides";
-import { OriginCountryGuideGrid } from "@/src/components/guides/OriginCountryGuideGrid";
+  AtGlanceCard,
+  ChooseYourPath,
+  FAQBlock,
+  NextSteps,
+  PageHero,
+  PillarDarkStagesBand,
+  PillarEssentialsSurface,
+  PillarGuideAtGlanceRegion,
+  PillarGuideFaqRegion,
+  PillarGuideHeroRegion,
+  PillarGuideNextStepsRegion,
+  PillarGuideScenarioRegion,
+  PillarGuideToolsSection,
+  PillarJourneyStack,
+  PracticalEssentials,
+  SectionBlock,
+  StageCards,
+  ToolCard,
+} from "@/components/page/pillar-template";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
-
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { movingNlSectionH2StagesSignatureClass } from "@/lib/ui/moving-nl-pillar-identity";
+import {
+  siteGuideColumnPadYClass,
+  sitePillarFramedHeroGutterXClass,
+  sitePillarFramedHeroTopBandClass,
+} from "@/lib/ui/site-shell-identity";
+import { PresetSoftCTA } from "@/src/components/soft-cta/PresetSoftCTA";
+import { PillarMovingHubMonetization } from "@/src/components/monetization/PillarMovingHubMonetization";
 
 export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
+
+function pillarHeroToEditorial(
+  raw: string | null | undefined,
+  alt?: string | null | undefined
+): EditorialHeroImage | null {
+  if (raw == null || raw === "") return null;
+  const trimmed = alt?.trim();
+  return {
+    src: raw,
+    alt: trimmed && trimmed.length > 0 ? trimmed : "Hero image for this guide",
+    priority: true,
+  };
+}
+
+function formatDisplayMonthYear(isoDate: string): string {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(isoDate.trim());
+  if (!m) return isoDate.trim() || "—";
+  const d = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
+  if (Number.isNaN(d.getTime())) return isoDate.trim() || "—";
+  return d.toLocaleDateString("en-US", { month: "long", year: "numeric" });
+}
 
 function resolveScenarios(
   scenarios: Array<{
@@ -55,8 +97,6 @@ function resolveScenarios(
   });
 }
 
-// Static metadata to avoid DataCloneError (Next.js clones metadata; async generateMetadata can trigger unsupported types).
-// Keep in sync with packages/content/core/nl/moving/pillar.meta.v1.json seo/canonicalPath.
 export const metadata: Metadata = buildSocialMetadata({
   title: "Moving to the Netherlands: checklist, timeline, and what to prepare",
   description:
@@ -67,24 +107,15 @@ export const metadata: Metadata = buildSocialMetadata({
 
 type PageProps = { searchParams?: Promise<{ from?: string }> | { from?: string } };
 
-export default async function MovingToNetherlandsPillarPage(props: PageProps) {
-  const raw = props.searchParams;
-  const searchParams: { from?: string } =
-    raw !== undefined && raw !== null ? await Promise.resolve(raw) : {};
-  const originCountry = typeof searchParams.from === "string" ? searchParams.from : undefined;
-
+export default async function MovingToNetherlandsPillarPage(_props: PageProps) {
   const content = await getNlMovingPillarContent();
   const {
     meta,
     scenarios,
     faq,
     linkRegistry,
-    checklistTabs,
     timelineStages,
-    timelineIntro,
-    timelineSectionCta,
     toolsStrip,
-    tocItems,
     sections,
   } = content;
   const resolvedScenarios = resolveScenarios(scenarios, linkRegistry);
@@ -94,136 +125,164 @@ export default async function MovingToNetherlandsPillarPage(props: PageProps) {
     item: new URL(b.href, baseUrl).toString(),
   }));
 
-  const faqAccordionItems = faq.map((item, i) => ({
-    id: `faq-${i}`,
-    title: item.q,
-    content: (
-      <div className="space-y-3">
-        <BoldParagraph text={item.a} className="text-sm text-slate-700 leading-relaxed" />
-        {item.links?.length ? (
-          <ul className="flex flex-wrap gap-2">
-            {item.links.map((link) => (
-              <Link key={link.href} href={link.href} className="text-sm font-medium text-brand-700 hover:underline">
-                {link.label}
-              </Link>
-            ))}
-          </ul>
-        ) : null}
-      </div>
-    ),
-  }));
+  const canonicalUrl = new URL(meta.canonicalPath, baseUrl).toString();
+  const { pageHeader, overview, whoThisGuideFor } = sections;
+  const stepSummary = sections.stepByStepSummary;
+  const practicalEssentials = sections.practicalEssentials;
+  const scenarioPathsIntro = sections.scenarioPaths?.intro ?? "";
 
-  const affiliatePagePath = "/netherlands/moving-to-the-netherlands/";
-  const sectionTitle = "Services commonly used by expats";
-  const slotConfig = [
-    { afterSectionId: "before-you-move", categories: ["international-moving", "international-shipping"] },
-    { afterSectionId: "housing", categories: ["housing-platforms"] },
-  ] as const;
+  const hub = resolveLinkFromRegistry(linkRegistry, "hub");
+  const bsn = resolveLinkFromRegistry(linkRegistry, "bsn");
+  const compareVisas = resolveLinkFromRegistry(linkRegistry, "compare_visas");
 
-  const affiliateSlots = await Promise.all(
-    slotConfig.map(async ({ afterSectionId, categories }) => {
-      const blocks = await Promise.all(
-        categories.map(async (category) => {
-          const [providers, categoryTitle] = await Promise.all([
-            getAffiliatesForCategory(affiliatePagePath, category),
-            getAffiliateCategoryTitle(category),
-          ]);
-          return {
-            title: `${sectionTitle}: ${categoryTitle}`,
-            providers,
-          };
-        })
-      );
-      return { afterSectionId, blocks };
-    })
-  );
-
-  const destCountry = "netherlands";
-  const bankingData = loadPlacementWithProviders("nl-moving-pillar-banking-problem-solution", destCountry, originCountry);
-  const housingData = loadPlacementWithProviders("nl-moving-pillar-housing-problem-solution", destCountry, originCountry);
-  const sidebarData = loadPlacementWithProviders("nl-moving-pillar-sidebar-start-here", destCountry, originCountry);
-  const nextStepsData = loadPlacementWithProviders("nl-moving-pillar-next-steps", destCountry, originCountry);
-  const endResourcesData = loadPlacementWithProviders("nl-moving-pillar-end-resources", destCountry, originCountry);
-  const affiliateBlockData = {
-    ...(bankingData && { banking: bankingData }),
-    ...(housingData && { housing: housingData }),
-    ...(sidebarData && { sidebar: sidebarData }),
-    ...(nextStepsData && { nextSteps: nextStepsData }),
-    ...(endResourcesData && { endResources: endResourcesData }),
-  };
+  /** Contextual tools (moving + first payslip literacy); capped to avoid crowding the band. */
+  const helpfulTools = toolsStrip.slice(0, 4);
 
   return (
     <>
-      <PillarPageTemplate
-        breadcrumbCrumbs={breadcrumbCrumbs}
-        meta={meta}
-        faq={faq}
-        faqAccordionItems={faqAccordionItems}
-        sections={sections}
-        timelineStages={timelineStages}
-        timelineIntro={timelineIntro}
-        timelineSectionCta={timelineSectionCta}
-        toolsStrip={toolsStrip}
-        tocItems={tocItems}
-        checklistTabs={checklistTabs}
-        resolvedScenarios={resolvedScenarios}
-        linkRegistry={linkRegistry}
-        affiliateSlots={affiliateSlots}
-        originCountry={originCountry}
-        affiliateBlockData={affiliateBlockData}
-        canonicalUrl={new URL(meta.canonicalPath, baseUrl).toString()}
-        slotBeforeTimeline={
-          <OriginCountryGuideGrid
-            id="moving-from-your-country"
-            title="Moving to the Netherlands from your country"
-            intro="Country-specific relocation guides with origin-specific planning notes, document cues, and tailored routes into the right tools."
-            items={getFeaturedOriginCountryGuides(6)}
-            limit={6}
-            showViewAll={true}
-            contained={false}
-          />
-        }
-        slotBeforeFaq={<CostOfMovingSection contained={false} />}
+      <BreadcrumbJsonLd crumbs={breadcrumbCrumbs} />
+      <ArticleJsonLd
+        headline={meta.seo.title}
+        description={meta.seo.description}
+        dateModified={meta.lastUpdated}
+        urlPath={meta.canonicalPath}
       />
-      <Section
-        title="Arrival overview"
-        subtitle="If you have already landed, use these guides for practical first-step sequencing."
-      >
-        <ul className="space-y-2">
-          <li>
-            <Link
-              href="/netherlands/after-arriving-netherlands/"
-              className="font-medium text-brand-700 underline hover:text-brand-800"
-            >
-              What to do when moving to the Netherlands: first steps after arrival
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/netherlands/municipality-registration-netherlands/"
-              className="font-medium text-brand-700 underline hover:text-brand-800"
-            >
-              Municipality registration in the Netherlands
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/netherlands/open-bank-account-netherlands/"
-              className="font-medium text-brand-700 underline hover:text-brand-800"
-            >
-              Open a bank account in the Netherlands
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/netherlands/health-insurance-netherlands/"
-              className="font-medium text-brand-700 underline hover:text-brand-800"
-            >
-              Health insurance in the Netherlands
-            </Link>
-          </li>
-        </ul>
-      </Section>
+      <FaqPageJsonLd items={faq.slice(0, 5).map((i) => ({ q: i.q, a: i.a }))} />
+
+      <GuidePageTemplate
+        scenarioBeforeKeySections
+        mainStackClassName="mt-2 space-y-4 sm:mt-3 sm:space-y-5 md:space-y-6"
+        wrapContent={(inner) => (
+          <Container className={cn("w-full max-w-screen-2xl", siteGuideColumnPadYClass)}>{inner}</Container>
+        )}
+        hero={
+          <PillarGuideHeroRegion>
+            <PageHero
+              movingPillarIdentity
+              heroTitleDensity="tight"
+              eyebrowBandClassName={sitePillarFramedHeroTopBandClass}
+              contentGutterClassName={sitePillarFramedHeroGutterXClass}
+              eyebrow={pageHeader.eyebrow}
+              title={pageHeader.title}
+              subtitle={pageHeader.subtitle}
+              heroImage={pillarHeroToEditorial(pageHeader.heroImage, pageHeader.heroImageAlt)}
+              shareUrl={canonicalUrl}
+              pageId={meta.canonicalPath}
+            />
+          </PillarGuideHeroRegion>
+        }
+        atAGlance={
+          <PillarGuideAtGlanceRegion>
+            <AtGlanceCard
+              id="at-a-glance"
+              who={whoThisGuideFor.audiences ?? []}
+              timeline="Varies by visa route, housing market, and employer timing."
+              steps={stepSummary?.steps?.slice(0, 3) ?? []}
+              footer={
+                <span>
+                  Last updated {formatDisplayMonthYear(meta.lastUpdated)}. {overview.disclaimerItems[0] ?? ""}
+                </span>
+              }
+            />
+          </PillarGuideAtGlanceRegion>
+        }
+        scenario={
+          <PillarGuideScenarioRegion>
+            <ChooseYourPath intro={scenarioPathsIntro} scenarios={resolvedScenarios} />
+          </PillarGuideScenarioRegion>
+        }
+        tools={
+          <PillarGuideToolsSection
+            compact
+            id="helpful-tools"
+            title="Helpful tools"
+            subtitle="Checklist, documents, first payslip literacy, and first weeks after landing."
+          >
+            {helpfulTools.map((t) => (
+              <ToolCard
+                key={t.href}
+                title={t.title}
+                description={t.description}
+                href={t.href}
+                ctaLabel="Open"
+                compact
+              />
+            ))}
+          </PillarGuideToolsSection>
+        }
+        keySections={
+          <PillarJourneyStack variant="guide">
+            <PillarDarkStagesBand>
+              <SectionBlock
+                className="relative z-10"
+                contentClassName="mt-8 sm:mt-9"
+                id="move-stages"
+                titleClassName={movingNlSectionH2StagesSignatureClass}
+                tone="onDark"
+                title="Your move in 3 stages"
+                subtitle={overview.overviewParagraph}
+              >
+                <StageCards variant="copilotDark" stages={timelineStages} maxBulletsPerStage={3} />
+              </SectionBlock>
+            </PillarDarkStagesBand>
+
+            {practicalEssentials ? (
+              <PillarEssentialsSurface>
+                <SectionBlock className="pt-0" id="essentials" title="Practical essentials" subtitle={practicalEssentials.intro}>
+                  <PracticalEssentials
+                    documents={practicalEssentials.documents}
+                    banking={practicalEssentials.banking}
+                    housing={practicalEssentials.housing}
+                    linkRegistry={linkRegistry}
+                  />
+                </SectionBlock>
+              </PillarEssentialsSurface>
+            ) : null}
+          </PillarJourneyStack>
+        }
+        nextSteps={
+          <PillarGuideNextStepsRegion>
+            <NextSteps
+              id="next-steps"
+              compact
+              variant="progression"
+              movingHubPremium
+              items={[
+                ...(hub
+                  ? [{ label: hub.title, href: hub.href, description: "Central links for visas, housing, and admin." }]
+                  : []),
+                ...(bsn
+                  ? [{ label: bsn.title, href: bsn.href, description: "Address registration and your citizen number." }]
+                  : []),
+                ...(compareVisas
+                  ? [
+                      {
+                        label: compareVisas.title,
+                        href: compareVisas.href,
+                        description: "Match a permit type to your situation.",
+                      },
+                    ]
+                  : [
+                      {
+                        label: "Compare visa routes",
+                        href: "/netherlands/visa/compare-visas",
+                        description: "Match a permit type to your situation.",
+                      },
+                    ]),
+              ]}
+            />
+          </PillarGuideNextStepsRegion>
+        }
+        faq={
+          <PillarGuideFaqRegion>
+            <div className="space-y-6 sm:space-y-8">
+              <PresetSoftCTA preset="movingChecklistAndFirst90" />
+              <FAQBlock id="faq" items={faq} maxItems={5} />
+            </div>
+          </PillarGuideFaqRegion>
+        }
+        afterFaq={<PillarMovingHubMonetization />}
+      />
     </>
   );
 }

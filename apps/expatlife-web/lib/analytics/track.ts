@@ -122,3 +122,50 @@ export function trackContactSubmit(params: { ok: boolean }): void {
     capturePosthog("contact_submit", params);
   }
 }
+
+/** Consent-gated GA + PostHog; event names are stable product analytics contracts. */
+export type PayslipDecoderAnalyticsEvent =
+  | "payslip_decoder_opened"
+  | "payslip_decoder_paste_submitted"
+  | "payslip_decoder_pdf_uploaded"
+  | "payslip_decoder_extraction_good"
+  | "payslip_decoder_extraction_partial"
+  | "payslip_decoder_extraction_poor"
+  | "payslip_decoder_result_viewed";
+
+export function trackPayslipDecoder(event: PayslipDecoderAnalyticsEvent, params?: Record<string, unknown>): void {
+  if (!canSendAnalyticsEvents()) return;
+  const payload = params ?? {};
+  if (canSendGaDataLayerOrGtag()) {
+    trackEvent(event, payload);
+  }
+  if (shouldInitPosthog()) {
+    capturePosthog(event, payload);
+  }
+}
+
+/** Consent-gated GA + PostHog; stable names for product analytics. */
+export type CostOfLivingCalculatorAnalyticsEvent =
+  | "calculator_started"
+  | "calculator_completed"
+  | "city_changed"
+  | "housing_mode_changed"
+  | "childcare_toggled"
+  | "comparison_enabled"
+  | "summary_downloaded"
+  | "recommended_service_clicked"
+  | "related_tool_clicked";
+
+export function trackCostOfLivingCalculator(
+  event: CostOfLivingCalculatorAnalyticsEvent,
+  params?: Record<string, unknown>
+): void {
+  if (!canSendAnalyticsEvents()) return;
+  const payload = { tool: "cost_of_living_calculator", ...(params ?? {}) };
+  if (canSendGaDataLayerOrGtag()) {
+    trackEvent(event, payload);
+  }
+  if (shouldInitPosthog()) {
+    capturePosthog(event, payload);
+  }
+}

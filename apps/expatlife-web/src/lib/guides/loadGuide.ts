@@ -6,6 +6,7 @@ import { readFileSync, existsSync } from "node:fs";
 import path from "node:path";
 import type { GuideData, GuideRegistry, RegistryGuide } from "./types";
 import { expandGuideDataWithRegistryRecommendations } from "./registryRecommendedServices";
+import { normalizeMovingGuideContract } from "./normalizeMovingGuideContract";
 import { findMovingGuideBySlug } from "@/src/lib/publishing/registryPublishing";
 import { isPubliclyVisible } from "@/src/lib/publishing/isPubliclyVisible";
 
@@ -38,7 +39,7 @@ export function loadGuideBySlug(slug: string): GuideData | null {
   const filePath = path.join(GUIDES_ROOT, `${slug}.json`);
   if (!existsSync(filePath)) return null;
   const raw = loadJson<GuideData>(filePath);
-  return expandGuideDataWithRegistryRecommendations(raw);
+  return normalizeMovingGuideContract(expandGuideDataWithRegistryRecommendations(raw));
 }
 
 /** Registry row for a guide slug (static import; same data as `registry.json`). */

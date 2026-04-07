@@ -29,10 +29,10 @@ export function ServiceCategoryHero({
           {hero.eyebrow}
         </p>
       ) : null}
-      <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl md:text-5xl">
+      <h1 className="text-3xl font-semibold tracking-tight text-copilot-text-primary sm:text-4xl md:text-5xl">
         {hero.title}
       </h1>
-      <p className="text-base text-slate-600 md:text-lg">
+      <p className="text-base text-copilot-text-secondary md:text-lg">
         {hero.subtitle}
       </p>
       {actionBar ? (
@@ -50,7 +50,7 @@ export function ServiceCategoryHero({
             <a
               key={cta.href}
               href={cta.href}
-              className="inline-flex items-center rounded-lg bg-slate-900 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-slate-800"
+              className="inline-flex items-center rounded-xl bg-copilot-primary px-6 py-3 text-base font-semibold text-white shadow-expatos-md transition hover:bg-copilot-primary-strong hover:shadow-expatos-hover"
             >
               {cta.label}
               <span className="ml-1" aria-hidden>→</span>
@@ -59,7 +59,7 @@ export function ServiceCategoryHero({
             <Link
               key={cta.href}
               href={cta.href}
-              className="inline-flex items-center rounded-lg bg-slate-900 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-slate-800"
+              className="inline-flex items-center rounded-xl bg-copilot-primary px-6 py-3 text-base font-semibold text-white shadow-expatos-md transition hover:bg-copilot-primary-strong hover:shadow-expatos-hover"
             >
               {cta.label}
               <span className="ml-1" aria-hidden>→</span>
@@ -70,7 +70,7 @@ export function ServiceCategoryHero({
           <a
             key={cta.href}
             href={cta.href}
-            className="inline-flex items-center rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"
+            className="inline-flex items-center rounded-xl border border-slate-900/12 bg-copilot-surface px-5 py-2.5 text-sm font-semibold text-copilot-text-primary shadow-expatos-sm ring-1 ring-copilot-primary/10 hover:bg-copilot-bg-soft"
           >
             {cta.label}
           </a>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState, useMemo, useRef, useCallback } from "react";
 import { Check, X, Banknote, User, Package, Plus, Trash2, LayoutGrid, MapPin } from "lucide-react";
@@ -44,11 +45,13 @@ function ProviderLogoSmall({
       </div>
     );
   }
+  const unoptimized =
+    resolvedSrc.startsWith("http") || /\.svg(\?|$)/i.test(resolvedSrc);
   return (
-    <div className={`relative shrink-0 overflow-hidden rounded-lg border border-slate-200 bg-white ${sizeClass}`}>
-      {/* Use img for all logos so local SVGs (e.g. health insurance, banks) display; next/image can block SVG. */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+    <div
+      className={`relative shrink-0 overflow-hidden rounded-lg border border-border bg-surface-raised ${sizeClass}`}
+    >
+      <Image
         src={resolvedSrc}
         alt={alt}
         width={dim}
@@ -57,6 +60,7 @@ function ProviderLogoSmall({
         onError={() => setError(true)}
         referrerPolicy="no-referrer"
         loading="lazy"
+        unoptimized={unoptimized}
       />
     </div>
   );

@@ -4,10 +4,7 @@ import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { PillarTOC } from "@/components/content/PillarTOC";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { Container } from "@/components/ui/container";
-import { Section } from "@/components/ui/section";
-import { Accordion } from "@/components/ui/accordion";
 import {
-  ServicesHero,
   ServicesIntro,
   ServiceCategoryCardsGrid,
   ServicesByRelocationStage,
@@ -16,11 +13,22 @@ import {
   EditorialDisclosureBlock,
 } from "@/src/components/services-hub";
 import { RelatedGuidesSection } from "@/src/components/city-hub/RelatedGuidesGrid";
-import { ToolCards } from "@/src/components/city-hub/ToolCards";
+import { GuidePageTemplate } from "@/components/page/page-templates";
+import {
+  FAQBlock,
+  PageHero,
+  PillarGuideFaqRegion,
+  PillarGuideHeroRegion,
+  PillarGuideToolsSection,
+  ToolCard,
+} from "@/components/page/pillar-template";
 import { netherlandsServicesPage } from "@/src/data/services/netherlands-services-page";
+import type { ServicesHubHero } from "@/src/lib/services-hub/types";
 import type { CityRelatedGuideBlock } from "@/src/lib/city-hub/types";
 import type { CityToolCard } from "@/src/lib/city-hub/types";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { cn } from "@/lib/cn";
+import { siteGuideColumnPadYClass } from "@/lib/ui/site-shell-identity";
 
 const baseUrl = getSiteOrigin();
 const path = netherlandsServicesPage.path;
@@ -87,18 +95,50 @@ function ItemListJsonLd() {
   );
 }
 
+function ServicesHubHeroCtas({ hero }: { hero: ServicesHubHero }) {
+  const primaryCtas = hero.ctas.filter((c) => c.primary);
+  const secondaryCtas = hero.ctas.filter((c) => !c.primary);
+  return (
+    <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center">
+      {primaryCtas.map((cta) =>
+        cta.href.startsWith("#") ? (
+          <a
+            key={cta.href}
+            href={cta.href}
+            className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl bg-copilot-primary px-5 py-2.5 text-base font-semibold text-white shadow-expatos-md transition hover:bg-copilot-primary-strong hover:shadow-expatos-hover sm:w-auto sm:px-6 sm:py-3"
+          >
+            {cta.label}
+            <span className="ml-1" aria-hidden>
+              →
+            </span>
+          </a>
+        ) : (
+          <Link
+            key={cta.href}
+            href={cta.href}
+            className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl bg-copilot-primary px-5 py-2.5 text-base font-semibold text-white shadow-expatos-md transition hover:bg-copilot-primary-strong hover:shadow-expatos-hover sm:w-auto sm:px-6 sm:py-3"
+          >
+            {cta.label}
+            <span className="ml-1" aria-hidden>
+              →
+            </span>
+          </Link>
+        )
+      )}
+      {secondaryCtas.map((cta) => (
+        <Link
+          key={cta.href}
+          href={cta.href}
+          className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl border border-slate-900/12 bg-copilot-surface px-5 py-2.5 text-sm font-semibold text-copilot-text-primary shadow-expatos-sm ring-1 ring-copilot-primary/10 hover:bg-copilot-bg-soft sm:w-auto"
+        >
+          {cta.label}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
 export default function NetherlandsServicesPage() {
-  const faqAccordionItems = data.faqs.map((item, i) => ({
-    id: `faq-${i}`,
-    title: item.q,
-    content: item.a,
-  }));
-  const breadcrumbCrumbs = [
-    { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Services", item: new URL(path, baseUrl).toString() },
-  ];
-  const dateModified = new Date().toISOString().slice(0, 10);
   const relatedBlocks: CityRelatedGuideBlock[] = data.relatedGuides;
   const toolCards: CityToolCard[] = data.tools.map((t) => ({
     label: t.label,
@@ -106,6 +146,21 @@ export default function NetherlandsServicesPage() {
     description: t.description,
     status: t.status,
   }));
+  const toolStrip = toolCards.slice(0, 3);
+
+  const breadcrumbCrumbs = [
+    { name: "Home", item: new URL("/", baseUrl).toString() },
+    { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
+    { name: "Services", item: new URL(path, baseUrl).toString() },
+  ];
+  const dateModified = new Date().toISOString().slice(0, 10);
+  const canonicalUrl = new URL(path, baseUrl).toString();
+
+  const categoriesByFeaturedFirst = [...data.categories].sort((a, b) => {
+    if (a.featured && !b.featured) return -1;
+    if (!a.featured && b.featured) return 1;
+    return 0;
+  });
 
   return (
     <>
@@ -119,105 +174,122 @@ export default function NetherlandsServicesPage() {
       <ItemListJsonLd />
       {data.faqs?.length ? <FaqPageJsonLd items={data.faqs} /> : null}
 
-      <div className="min-h-screen">
-        <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white py-8 sm:py-10 md:py-14">
-          <Container className="w-full max-w-screen-2xl">
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-600">
+      <GuidePageTemplate
+        rootClassName="min-h-screen"
+        wrapContent={(inner) => (
+          <Container className={cn("w-full max-w-screen-2xl", siteGuideColumnPadYClass)}>{inner}</Container>
+        )}
+        hero={
+          <PillarGuideHeroRegion>
+            <nav aria-label="Breadcrumb" className="mb-4 text-sm text-copilot-text-secondary sm:mb-5">
               <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
                 <li>
-                  <Link href="/" className="hover:text-slate-900">
+                  <Link href="/" className="hover:text-copilot-text-primary">
                     Home
                   </Link>
                 </li>
-                <li aria-hidden className="text-slate-400">
+                <li aria-hidden className="text-copilot-text-muted">
                   /
                 </li>
                 <li>
-                  <Link href="/netherlands/" className="hover:text-slate-900">
+                  <Link href="/netherlands/" className="hover:text-copilot-text-primary">
                     Netherlands
                   </Link>
                 </li>
-                <li aria-hidden className="text-slate-400">
+                <li aria-hidden className="text-copilot-text-muted">
                   /
                 </li>
-                <li className="font-medium text-slate-900" aria-current="page">
+                <li className="font-medium text-copilot-text-primary" aria-current="page">
                   Services
                 </li>
               </ol>
             </nav>
-            <ServicesHero hero={data.hero} />
-          </Container>
-        </section>
-
-        <Section contained={false} className="py-8 md:py-12">
-          <Container className="w-full max-w-screen-2xl">
+            <PageHero
+              movingPillarIdentity
+              eyebrow={data.hero.eyebrow}
+              title={data.hero.title}
+              subtitle={data.hero.subtitle}
+              shareUrl={canonicalUrl}
+              pageId={path}
+              afterSubtitle={<ServicesHubHeroCtas hero={data.hero} />}
+              heroImage={
+                data.hero.image?.src
+                  ? {
+                      src: data.hero.image.src,
+                      alt: data.hero.image.alt,
+                      caption: data.hero.image.caption,
+                      priority: true,
+                    }
+                  : null
+              }
+            />
+          </PillarGuideHeroRegion>
+        }
+        tools={
+          toolStrip.length ? (
+            <PillarGuideToolsSection
+              compact
+              id="tools"
+              title="Useful tools for choosing the right services"
+              subtitle="Plan documents, visas, and your first weeks alongside provider research."
+            >
+              {toolStrip.map((t) => (
+                <ToolCard
+                  key={t.href}
+                  title={t.label}
+                  description={t.description ?? ""}
+                  href={t.href}
+                  ctaLabel={t.status === "coming_soon" ? "Coming soon" : "Open"}
+                  compact
+                />
+              ))}
+            </PillarGuideToolsSection>
+          ) : null
+        }
+        keySections={
+          <div className="py-8 md:py-12">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,2fr),minmax(280px,1fr)]">
               <main className="min-w-0 w-full">
-                <div className="mb-8 rounded-xl border border-slate-200 bg-slate-50/50 p-4 lg:hidden">
-                  <PillarTOC items={data.tocItems} />
+                <div className="mb-8 rounded-xl border border-copilot-primary/[0.08] bg-copilot-bg-soft/50 p-4 lg:hidden">
+                  <PillarTOC items={data.tocItems} tone="support" />
                 </div>
 
                 <ServicesIntro intro={data.intro} />
 
                 {data.publisherNote ? (
-                  <p className="mt-4 text-sm text-slate-600 italic" role="note">
+                  <p className="mt-4 text-sm text-copilot-text-secondary italic" role="note">
                     {data.publisherNote}
                   </p>
                 ) : null}
 
-                <section
-                  id="featured-services"
-                  className="scroll-mt-24 mt-8 space-y-5"
-                >
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    Featured Services
-                  </h2>
-                  <p className="text-slate-700 leading-relaxed">
-                    High-priority categories for early in your move: banking, insurance, housing, relocation, and immigration support.
+                <section id="service-categories" className="scroll-mt-24 mt-8 space-y-5">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">Service categories</h2>
+                  <p className="text-copilot-text-secondary leading-relaxed">
+                    Common first steps (banking, insurance, housing, relocation, immigration) appear first; browse the
+                    full list below.
                   </p>
-                  <ServiceCategoryCardsGrid
-                    categories={data.categories.filter((c) => c.featured)}
-                  />
-                </section>
-
-                <section
-                  id="service-categories"
-                  className="scroll-mt-24 mt-8 space-y-5"
-                >
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    All Service Categories
-                  </h2>
-                  <p className="text-slate-700 leading-relaxed">
-                    Browse by category to find providers for banking, insurance, housing, immigration, documents, tax, healthcare, and more.
-                  </p>
-                  <ServiceCategoryCardsGrid categories={data.categories} />
+                  <ServiceCategoryCardsGrid categories={categoriesByFeaturedFirst} />
                 </section>
 
                 <section id="by-stage" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Which Services Do You Need at Each Stage?
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Use your relocation stage to see which categories matter most.
                   </p>
                   <ServicesByRelocationStage stages={data.stages} />
                 </section>
 
-                <section
-                  id="popular-needs"
-                  className="scroll-mt-24 mt-8 space-y-5"
-                >
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                <section id="popular-needs" className="scroll-mt-24 mt-8 space-y-5">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Most Common Service Needs for Expats
                   </h2>
                   <PopularNeedsCards needs={data.popularNeeds} />
                 </section>
 
-                <section
-                  id="popular-providers"
-                  className="scroll-mt-24 mt-8 space-y-5"
-                >
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                <section id="popular-providers" className="scroll-mt-24 mt-8 space-y-5">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Popular Provider Categories
                   </h2>
                   <FeaturedCategoryHighlights highlights={data.highlights} />
@@ -226,13 +298,8 @@ export default function NetherlandsServicesPage() {
                 <EditorialDisclosureBlock howItWorks={data.howItWorks} />
 
                 {data.trustLinks?.length ? (
-                  <section
-                    id="trust-methodology"
-                    className="scroll-mt-24 mt-8 space-y-3"
-                  >
-                    <h2 className="text-xl font-semibold text-slate-900">
-                      Trust & methodology
-                    </h2>
+                  <section id="trust-methodology" className="scroll-mt-24 mt-8 space-y-3">
+                    <h2 className="text-xl font-bold text-copilot-text-primary">Trust & methodology</h2>
                     <p className="text-sm text-slate-600">
                       How we create content and handle provider listings:{" "}
                       {data.trustLinks.map((link, i) => (
@@ -257,48 +324,33 @@ export default function NetherlandsServicesPage() {
                   className="mt-8 space-y-5"
                 />
 
-                <section id="tools" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    Useful Tools for Choosing the Right Services
-                  </h2>
-                  <ToolCards tools={toolCards} />
-                </section>
-
-                <section id="faq" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    Frequently Asked Questions About Expat Services in the Netherlands
-                  </h2>
-                  <Accordion
-                    items={faqAccordionItems}
-                    allowMultiple={false}
-                    className="max-w-3xl"
-                  />
-                </section>
-
-                <section
-                  id="browse-all"
-                  className="scroll-mt-24 mt-8 space-y-5"
-                >
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                    Browse All Expat Service Categories
-                  </h2>
-                  <ServiceCategoryCardsGrid categories={data.categories} />
-                </section>
-
                 {/* Future-ready: featured provider reviews, best-of category pages, comparison tables,
                     affiliate/referral support, expert rating components, user review components.
                     Do not implement fake reviews. */}
               </main>
 
               <aside className="hidden lg:block lg:sticky lg:top-24 lg:self-start">
-                <div className="rounded-xl border border-slate-200 bg-slate-50/50 p-4">
-                  <PillarTOC items={data.tocItems} />
+                <div className="rounded-xl border border-copilot-primary/[0.08] bg-copilot-bg-soft/50 p-4">
+                  <PillarTOC items={data.tocItems} tone="support" />
                 </div>
               </aside>
             </div>
-          </Container>
-        </Section>
-      </div>
+          </div>
+        }
+        faq={
+          data.faqs?.length ? (
+            <PillarGuideFaqRegion>
+              <FAQBlock
+                id="faq"
+                eyebrow="Support"
+                title="Frequently Asked Questions About Expat Services in the Netherlands"
+                items={data.faqs.map((f) => ({ q: f.q, a: f.a }))}
+                maxItems={Math.max(5, data.faqs.length)}
+              />
+            </PillarGuideFaqRegion>
+          ) : null
+        }
+      />
     </>
   );
 }

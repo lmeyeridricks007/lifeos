@@ -45,6 +45,8 @@ export type ToolCategory = {
   description: string;
   menuGroup: string;
   relatedGuides?: string[];
+  /** Live tools from other categories to list on this hub (deduped by route). */
+  additionalToolIds?: string[];
 };
 
 export type TopLevelToolsMenuFeature = {

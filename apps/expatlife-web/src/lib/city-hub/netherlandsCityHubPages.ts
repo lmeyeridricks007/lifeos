@@ -1,6 +1,9 @@
 /**
  * All Netherlands city hub datasets under `/netherlands/{slug}/`.
  * Single list for sitemap, route visibility, and search indexing.
+ *
+ * Each slug should have `app/netherlands/{slug}/page.tsx` rendering `CityHubTemplate` with the matching
+ * dataset — no per-city layout forks; UI changes live in `src/components/city-hub/*`.
  */
 
 import type { CityHubPageData } from "@/src/lib/city-hub/types";

@@ -258,6 +258,8 @@ export type GuideHowToStep = { name: string; text?: string };
 export type GuideFeaturedTool = {
   label: string;
   href: string;
+  /** Shown on pillar-style tool tiles; falls back to empty when omitted. */
+  description?: string;
 };
 
 export type GuideExampleScenario = {
@@ -390,6 +392,8 @@ export type GuideData = {
   publishDate?: string;
   /** Optional H2 placed above the quick-answer / snapshot cards. */
   quickAnswersTitle?: string;
+  /** Optional intro under the Tools section heading (default copy otherwise). */
+  toolsSectionIntro?: string;
   /** Optional override for the “Related guides” section heading. */
   relatedGuidesSectionTitle?: string;
   /** End-of-page CTA cards (e.g. “Plan your move further”). */

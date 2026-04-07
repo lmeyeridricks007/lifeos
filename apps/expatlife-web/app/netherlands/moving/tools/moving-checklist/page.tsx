@@ -16,16 +16,22 @@ import {
 import type { MovingChecklistInputExtended } from "@/src/lib/tools/moving-checklist/types";
 import type { MovingChecklistInput } from "@/src/lib/tools/movingChecklistTypes";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
-import { ToolHero } from "@/src/components/tools/ToolHero";
+import { MoveHero } from "@/components/page/move-shell";
 import { MovingChecklistClient } from "@/src/components/tools/MovingChecklistClient";
 import { ExamplesSection } from "@/src/components/tools/ExamplesSection";
 import { buildSoftwareApplicationSchema } from "@/src/lib/seo/toolSchema";
 import { buildBreadcrumbSchema, getToolBreadcrumbItems } from "@/src/lib/seo/breadcrumbSchema";
 import { buildFaqSchema } from "@/src/lib/seo/faqSchema";
-import { MOVING_CHECKLIST_RELATED_GUIDES, MOVING_CHECKLIST_RELATED_TOOLS } from "@/src/lib/tools/shared/toolInternalLinks";
+import {
+  MOVING_HUB,
+  PILLAR,
+  MOVING_CHECKLIST_RELATED_GUIDES,
+  MOVING_CHECKLIST_RELATED_TOOLS,
+} from "@/src/lib/tools/shared/toolInternalLinks";
 import Link from "next/link";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -154,9 +160,11 @@ export default async function MovingChecklistToolPage(props: PageProps) {
       ) : null}
 
       <ToolPageTemplate
+        movingClusterHero
         hero={
-          <ToolHero
-            eyebrow="Tool"
+          <MoveHero
+            variant="tool"
+            eyebrow="TOOL"
             title={meta.hero.title}
             subtitle={meta.hero.subtitle}
             introBullets={meta.hero.introBullets}
@@ -188,12 +196,13 @@ export default async function MovingChecklistToolPage(props: PageProps) {
         faqItems={faq}
         relatedGuides={MOVING_CHECKLIST_RELATED_GUIDES}
         internalLinkStrip={
-          <nav className="flex flex-wrap gap-4 text-sm" aria-label="Related guides and tools">
-            {MOVING_CHECKLIST_RELATED_GUIDES.slice(0, 6).map((g) => (
-              <Link key={g.href} href={g.href} className="font-medium text-brand-600 hover:text-brand-700">
-                {g.title}
-              </Link>
-            ))}
+          <nav className="flex flex-wrap gap-4 text-sm" aria-label="Moving hub, main guide, and related tools">
+            <Link href={MOVING_HUB} className="font-medium text-brand-600 hover:text-brand-700">
+              Moving hub
+            </Link>
+            <Link href={PILLAR} className="font-medium text-brand-600 hover:text-brand-700">
+              Moving to the Netherlands guide
+            </Link>
             {MOVING_CHECKLIST_RELATED_TOOLS.map((t) => (
               <Link key={t.href} href={t.href} className="font-medium text-brand-600 hover:text-brand-700">
                 {t.label}
@@ -201,6 +210,7 @@ export default async function MovingChecklistToolPage(props: PageProps) {
             ))}
           </nav>
         }
+        postToolValue={<MoveClusterToolPostValueBlock preset="first90AndDocumentReadiness" />}
       >
         <MovingChecklistClient
           defaultResultJson={JSON.stringify(defaultResolved)}

@@ -153,7 +153,7 @@ export function VisaApplicationPlanResults({ result, answers, onStartOver }: Pro
       </div>
 
       {/* Timeline / roadmap */}
-      <Section title="Your personalized visa application timeline" contained={true}>
+      <Section compact title="Your personalized visa application timeline" contained={true}>
         <div className="space-y-6">
           {hasDoNow && (
             <div className="rounded-xl border-l-4 border-l-amber-500 bg-amber-50/50 p-4">
@@ -204,7 +204,7 @@ export function VisaApplicationPlanResults({ result, answers, onStartOver }: Pro
       </Section>
 
       {/* Cost and document milestones */}
-      <Section title="Cost and document milestones" contained={true}>
+      <Section compact title="Cost and document milestones" contained={true}>
         <p className="mb-5 text-sm text-slate-600">
           These are planning checkpoints, not exact quotes. Confirm amounts and timing with IND or your sponsor.
         </p>
@@ -240,7 +240,7 @@ export function VisaApplicationPlanResults({ result, answers, onStartOver }: Pro
 
       {/* Risk flags */}
       {result.riskFlags.length > 0 && (
-        <Section title="Potential bottlenecks in your plan" contained={true}>
+        <Section compact title="Potential bottlenecks in your plan" contained={true}>
           <div className="space-y-3">
             {result.riskFlags.map((f) => (
               <InfoBox key={f.id} title={f.label} variant="warn" className="shadow-sm">
@@ -252,7 +252,7 @@ export function VisaApplicationPlanResults({ result, answers, onStartOver }: Pro
       )}
 
       {/* Next best actions */}
-      <Section title="Your next best actions" contained={true}>
+      <Section compact title="Your next best actions" contained={true}>
         <div className="flex flex-wrap gap-3">
           {result.nextBestActions.map((a) => (
             <Link
@@ -267,7 +267,7 @@ export function VisaApplicationPlanResults({ result, answers, onStartOver }: Pro
       </Section>
 
       {/* Recommended guides */}
-      <Section title="Recommended guides" contained={true}>
+      <Section compact title="Recommended guides" contained={true}>
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {result.recommendedGuides.map((g) => (
             <Link

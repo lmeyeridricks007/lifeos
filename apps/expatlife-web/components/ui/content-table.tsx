@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { cn } from "@/lib/cn";
+import { transitionColors } from "@/lib/ui/interaction";
 
 export type ContentTableProps = {
   headers: string[];
@@ -9,9 +10,13 @@ export type ContentTableProps = {
   className?: string;
 };
 
-const HEADER_CLASS = "px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider text-slate-600";
-const CELL_CLASS = "px-4 py-3 text-sm text-slate-700";
-const ROW_BASE = "border-b border-slate-100 transition-colors last:border-0 hover:bg-slate-50/50";
+const HEADER_CLASS =
+  "px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider text-foreground-muted";
+const CELL_CLASS = "px-4 py-3 text-sm text-foreground";
+const ROW_BASE = cn(
+  transitionColors,
+  "border-b border-border/80 last:border-0 hover:bg-surface-muted/50 motion-reduce:hover:bg-transparent"
+);
 
 /**
  * Reusable styled table for editorial content.
@@ -26,15 +31,15 @@ export function ContentTable({
   return (
     <div
       className={cn(
-        "overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm",
+        "-mx-px max-w-full overflow-x-auto overscroll-x-contain rounded-card border border-border bg-surface-raised shadow-card ring-1 ring-border/10 touch-pan-x",
         className
       )}
     >
-      <table className="w-full border-collapse" style={{ minWidth }}>
+      <table className="w-full min-w-0 border-collapse" style={{ minWidth }}>
         <thead>
-          <tr className="border-b border-slate-200 bg-slate-100/80">
+          <tr className="border-b border-border bg-surface-muted/80">
             {headers.map((h, i) => (
-              <th key={i} className={HEADER_CLASS}>
+              <th key={i} className={HEADER_CLASS} scope="col">
                 {h}
               </th>
             ))}
@@ -53,7 +58,7 @@ export type ContentTableRowProps = {
 
 export function ContentTableRow({ children, className }: ContentTableRowProps) {
   return (
-    <tr className={cn(ROW_BASE, "even:bg-slate-50/40", className)}>
+    <tr className={cn(ROW_BASE, "even:bg-surface-muted/25", className)}>
       {children}
     </tr>
   );
@@ -66,31 +71,19 @@ export type ContentTableCellProps = {
   emphasis?: boolean;
 };
 
-export function ContentTableCell({
-  children,
-  className,
-  emphasis,
-}: ContentTableCellProps) {
+export function ContentTableCell({ children, className, emphasis }: ContentTableCellProps) {
   return (
-    <td
-      className={cn(
-        CELL_CLASS,
-        emphasis && "font-medium text-slate-800",
-        className
-      )}
-    >
-      {children}
-    </td>
+    <td className={cn(CELL_CLASS, emphasis && "font-medium text-foreground", className)}>{children}</td>
   );
 }
 
-/** Badge variant for status-like cells (Yes, Usually, Often, etc.) */
+/** Badge variant for status-like cells (Yes, Usually, Often, etc.) — semantic tokens */
 const BADGE_VARIANTS: Record<string, string> = {
-  Yes: "bg-emerald-100 text-emerald-800",
-  Usually: "bg-sky-100 text-sky-800",
-  Often: "bg-blue-100 text-blue-800",
-  Recommended: "bg-amber-100 text-amber-800",
-  Important: "bg-violet-100 text-violet-800",
+  Yes: "border border-success-border/60 bg-success-muted text-success",
+  Usually: "border border-info-border/50 bg-info-muted text-info",
+  Often: "border border-brand/20 bg-brand-muted text-brand-strong",
+  Recommended: "border border-warning-border/60 bg-warning-muted text-warning",
+  Important: "border border-border bg-accent-muted text-accent",
 };
 
 export type TableBadgeProps = {
@@ -99,11 +92,12 @@ export type TableBadgeProps = {
 };
 
 export function TableBadge({ value, className }: TableBadgeProps) {
-  const variant = BADGE_VARIANTS[value] ?? "bg-slate-100 text-slate-700";
+  const variant =
+    BADGE_VARIANTS[value] ?? "border border-border bg-surface-muted text-foreground-muted";
   return (
     <span
       className={cn(
-        "inline-flex rounded-full px-2.5 py-0.5 text-xs font-medium",
+        "inline-flex rounded-pill px-2.5 py-0.5 text-xs font-medium leading-none",
         variant,
         className
       )}

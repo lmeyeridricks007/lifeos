@@ -25,6 +25,9 @@ import { CardLink } from "@/components/ui/card-link";
 import { Container } from "@/components/ui/container";
 import { InfoBox } from "@/components/ui/info-box";
 import { Section } from "@/components/ui/section";
+import { PillarMainStack } from "@/components/page/pillar-template";
+import { SiteFramedHero } from "@/components/site/SiteFramedHero";
+import { siteHubHeroSectionClass } from "@/lib/ui/site-shell-identity";
 import { Select } from "@/components/ui/input";
 
 function toFlagEmoji(code: string) {
@@ -90,17 +93,18 @@ export function PortalNetherlandsTemplate({ content }: { content: NlPortalConten
 
   return (
     <>
-      <section className="bg-gradient-to-b from-brand-50 to-white pb-12 pt-10 md:pb-14 md:pt-12">
+      <section className={siteHubHeroSectionClass}>
         <Container>
+          <SiteFramedHero>
           <div className="grid items-start gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:gap-12">
             <div className="space-y-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[hsl(var(--brand))]">
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-copilot-primary">
                 {content.hero.eyebrow}
               </p>
-              <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl">
+              <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-copilot-text-primary md:text-5xl">
                 {content.hero.title}
               </h1>
-              <p className="max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
+              <p className="max-w-2xl text-base leading-relaxed text-copilot-text-secondary md:text-lg">
                 {content.hero.subtitle}
               </p>
               <div className="flex flex-wrap gap-3">
@@ -153,9 +157,11 @@ export function PortalNetherlandsTemplate({ content }: { content: NlPortalConten
               </ul>
             </div>
           </div>
+          </SiteFramedHero>
         </Container>
       </section>
 
+      <PillarMainStack className="mt-6 space-y-0 sm:mt-7 sm:space-y-0 md:space-y-0">
       <Section
         eyebrow={content.personalizedEntry.eyebrow}
         title={content.personalizedEntry.title}
@@ -358,6 +364,7 @@ export function PortalNetherlandsTemplate({ content }: { content: NlPortalConten
           </div>
         </div>
       </Section>
+      </PillarMainStack>
     </>
   );
 }

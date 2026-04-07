@@ -4,10 +4,11 @@ import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { PillarTOC } from "@/components/content/PillarTOC";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { Container } from "@/components/ui/container";
-import { Section } from "@/components/ui/section";
+import { PillarMainStack } from "@/components/page/pillar-template";
 import { Accordion } from "@/components/ui/accordion";
 import {
   ServiceCategoryHero,
+  ServiceCategoryHeroSection,
   ServiceCategoryIntro,
   RequirementAlertBox,
   LegalMattersGrid,
@@ -119,17 +120,16 @@ export default function VisaConsultantsCategoryPage() {
       {data.faqs?.length ? <FaqPageJsonLd items={data.faqs} /> : null}
 
       <div className="min-h-screen">
-        <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white py-8 sm:py-10 md:py-14">
-          <Container className="w-full max-w-screen-2xl">
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-600">
+        <ServiceCategoryHeroSection>
+            <nav aria-label="Breadcrumb" className="mb-6 text-sm text-copilot-text-secondary">
               <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                <li><Link href="/" className="hover:text-slate-900">Home</Link></li>
-                <li aria-hidden className="text-slate-400">/</li>
-                <li><Link href="/netherlands/" className="hover:text-slate-900">Netherlands</Link></li>
-                <li aria-hidden className="text-slate-400">/</li>
-                <li><Link href="/netherlands/services/" className="hover:text-slate-900">Services</Link></li>
-                <li aria-hidden className="text-slate-400">/</li>
-                <li className="font-medium text-slate-900" aria-current="page">Visa Consultants</li>
+                <li><Link href="/" className="hover:text-copilot-text-primary">Home</Link></li>
+                <li aria-hidden className="text-copilot-text-muted">/</li>
+                <li><Link href="/netherlands/" className="hover:text-copilot-text-primary">Netherlands</Link></li>
+                <li aria-hidden className="text-copilot-text-muted">/</li>
+                <li><Link href="/netherlands/services/" className="hover:text-copilot-text-primary">Services</Link></li>
+                <li aria-hidden className="text-copilot-text-muted">/</li>
+                <li className="font-medium text-copilot-text-primary" aria-current="page">Visa Consultants</li>
               </ol>
             </nav>
             <ServiceCategoryHero
@@ -140,24 +140,24 @@ export default function VisaConsultantsCategoryPage() {
                 pageId: data.path,
               }}
             />
-          </Container>
-        </section>
+        </ServiceCategoryHeroSection>
 
-        <Section contained={false} className="py-8 md:py-12">
+        <PillarMainStack>
+        <div className="py-8 md:py-12">
           <Container className="w-full max-w-screen-2xl">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,2fr),minmax(280px,1fr)]">
               <main className="min-w-0 w-full">
-                <div className="mb-8 rounded-xl border border-slate-200 bg-slate-50/50 p-4 lg:hidden">
+                <div className="mb-8 rounded-xl border border-copilot-primary/[0.08] bg-copilot-bg-soft/50 p-4 lg:hidden">
                   <PillarTOC items={data.tocItems} />
                 </div>
 
                 <ServiceCategoryIntro intro={data.intro} />
 
                 <section id="when-need-consultant" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     When Expats May Need a Visa Consultant
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     A consultant may be useful when your entry or residence purpose is unclear, you need help understanding the MVV and residence-permit sequence, you are a startup founder exploring permit paths, you are planning family migration, you are self-managing your move without employer support, or you want structured guidance before submitting official forms. Not every expat needs one—straightforward employer- or institution-supported cases often do not.
                   </p>
                   <RequirementAlertBox cards={data.requirementCards} />
@@ -165,7 +165,7 @@ export default function VisaConsultantsCategoryPage() {
 
                 {data.legalMatters?.length ? (
                   <section id="common-situations" className="scroll-mt-24 mt-12 space-y-6">
-                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                       Common Visa and Permit Situations Expats Ask Consultants About
                     </h2>
                     <LegalMattersGrid matters={data.legalMatters} />
@@ -173,10 +173,10 @@ export default function VisaConsultantsCategoryPage() {
                 ) : null}
 
                 <section id="what-to-compare" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     How to Compare Visa Consultants in the Netherlands
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     The right provider depends on your route, complexity, language needs, document situation, and whether you need structured process support or full legal advice. Clearly distinguish between a visa consultant (process and preparation), a relocation agency (logistics), and an immigration lawyer (legal representation and appeals).
                   </p>
                   <ComparisonFactorsGrid factors={data.comparisonFactors} />
@@ -189,10 +189,10 @@ export default function VisaConsultantsCategoryPage() {
                 />
 
                 <section id="typical-costs" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Typical Visa Consultant Costs in the Netherlands
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Fees vary widely by route complexity and provider model. Some offer fixed-fee process packages; others charge by consultation or service bundle. Startup, family, and multi-document cases often cost more than basic orientation. Request written clarity on scope, exclusions, and whether official fees are included.
                   </p>
                   <CostBreakdownCards cards={data.costCards} />
@@ -200,7 +200,7 @@ export default function VisaConsultantsCategoryPage() {
 
                 {data.whoNeedsExtraHelp?.length ? (
                   <section id="who-needs-help" className="scroll-mt-24 mt-12 space-y-6">
-                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                       Who Usually Needs Extra Help
                     </h2>
                     <WhoNeedsHelpCards cards={data.whoNeedsExtraHelp} />
@@ -209,7 +209,7 @@ export default function VisaConsultantsCategoryPage() {
 
                 {data.whenNotNeed ? (
                   <section id="when-not-need" className="scroll-mt-24 mt-12 space-y-3">
-                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                       {data.whenNotNeed.heading}
                     </h2>
                     <DecisionSupportBlock whenNotNeed={data.whenNotNeed} />
@@ -217,7 +217,7 @@ export default function VisaConsultantsCategoryPage() {
                 ) : null}
 
                 <section id="scenarios" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Common Expat Visa Scenarios
                   </h2>
                   <ScenarioCards scenarios={data.scenarios} />
@@ -231,7 +231,7 @@ export default function VisaConsultantsCategoryPage() {
 
                 {data.relatedCategories?.length ? (
                   <section className="scroll-mt-24 mt-12 space-y-4">
-                    <h3 className="text-lg font-semibold text-slate-900">Related visa and immigration categories</h3>
+                    <h3 className="text-lg font-bold text-copilot-text-primary">Related visa and immigration categories</h3>
                     <ul className="flex flex-wrap gap-2">
                       {data.relatedCategories.map((c) => (
                         <li key={c.href}>
@@ -244,45 +244,46 @@ export default function VisaConsultantsCategoryPage() {
                   </section>
                 ) : null}
 
-                <section id="tools" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                <section id="tools" className="scroll-mt-24 mt-8 space-y-3">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Useful Tools Before You Hire a Visa Consultant
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Use these tools to check document readiness, estimate visa timelines and costs, and compare visa routes—so you are better prepared when speaking to a consultant or the IND.
                   </p>
                   <ToolCards tools={toolCards} />
                 </section>
 
                 <section id="faq" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Frequently Asked Questions About Visa Consultants in the Netherlands
                   </h2>
                   <Accordion items={faqAccordionItems} allowMultiple={false} className="max-w-3xl" />
                 </section>
 
                 <section id="official-sources" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Official Sources and Useful References
                   </h2>
                   <OfficialSourcesList sources={officialSources} />
                 </section>
 
                 <section className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-xl font-semibold text-slate-900">Editorial disclosure</h2>
+                  <h2 className="text-xl font-bold text-copilot-text-primary">Editorial disclosure</h2>
                   <EditorialDisclosureBlock disclosure={data.disclosure} />
                   <ServiceCategoryTrustLinks />
                 </section>
               </main>
 
               <aside className="hidden lg:block lg:sticky lg:top-24 lg:self-start">
-                <div className="rounded-xl border border-slate-200 bg-slate-50/50 p-4">
+                <div className="rounded-xl border border-copilot-primary/[0.08] bg-copilot-bg-soft/50 p-4">
                   <PillarTOC items={data.tocItems} />
                 </div>
               </aside>
             </div>
           </Container>
-        </Section>
+        </div>
+        </PillarMainStack>
       </div>
     </>
   );

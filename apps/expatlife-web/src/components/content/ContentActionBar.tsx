@@ -6,6 +6,7 @@ import { copyLinkToClipboard, resolveShareUrlForSocial, type ShareTarget } from 
 import { isPageSaved, toggleSavedPage } from "@/src/lib/bookmark";
 import { ShareButtons } from "@/src/components/content/ShareButtons";
 import { cn } from "@/lib/cn";
+import { toolbarControlClass, toolbarControlInverseClass, toolbarControlQuietClass } from "@/lib/ui/chrome";
 
 export type ContentActionBarProps = {
   /** Page canonical URL for share/copy */
@@ -23,6 +24,10 @@ export type ContentActionBarProps = {
   /** Optional PDF download link (e.g. checklist pages) */
   pdfDownload?: { href: string; filename: string };
   className?: string;
+  /** Quieter controls + share chrome for guide reference hero */
+  referenceChrome?: boolean;
+  /** Dark hero (moving pillar): light controls on glass */
+  inverseChrome?: boolean;
 };
 
 /**
@@ -39,6 +44,8 @@ export function ContentActionBar({
   variant = "top",
   pdfDownload,
   className,
+  referenceChrome = false,
+  inverseChrome = false,
 }: ContentActionBarProps) {
   const [saved, setSaved] = useState(false);
   const [copyFeedback, setCopyFeedback] = useState(false);
@@ -61,12 +68,19 @@ export function ContentActionBar({
   }, [url]);
 
   const isBottom = variant === "bottom";
+  const ctrl = inverseChrome
+    ? toolbarControlInverseClass
+    : referenceChrome
+      ? toolbarControlQuietClass
+      : toolbarControlClass;
 
   return (
     <div
       className={cn(
-        "flex flex-wrap items-center gap-3",
-        isBottom && "rounded-xl border border-slate-200 bg-slate-50/60 px-4 py-3",
+        "flex flex-wrap items-center gap-x-3 gap-y-2",
+        referenceChrome && !inverseChrome && !isBottom && "text-foreground-muted",
+        inverseChrome && !isBottom && "text-slate-200",
+        isBottom && "rounded-card border border-border bg-surface-muted/90 px-4 py-3 shadow-none",
         className
       )}
       role="group"
@@ -76,12 +90,15 @@ export function ContentActionBar({
         <button
           type="button"
           onClick={handleBookmark}
-          className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-1"
+          className={ctrl}
           aria-pressed={saved}
           aria-label={saved ? "Saved for later" : "Save for later"}
         >
           {saved ? (
-            <BookmarkCheck className="h-4 w-4 text-brand-600" aria-hidden />
+            <BookmarkCheck
+              className={cn("h-4 w-4", inverseChrome ? "text-copilot-accent" : "text-brand")}
+              aria-hidden
+            />
           ) : (
             <Bookmark className="h-4 w-4" aria-hidden />
           )}
@@ -92,7 +109,7 @@ export function ContentActionBar({
         <button
           type="button"
           onClick={handleCopyLink}
-          className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-1"
+          className={ctrl}
           aria-label="Copy link"
         >
           <Link2 className="h-4 w-4" aria-hidden />
@@ -103,20 +120,37 @@ export function ContentActionBar({
         <a
           href={pdfDownload.href}
           download={pdfDownload.filename}
-          className="inline-flex items-center gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-offset-1"
+          className={ctrl}
           aria-label="Download checklist as PDF"
         >
           <FileDown className="h-4 w-4" aria-hidden />
           <span>Download PDF</span>
         </a>
       )}
-      <span className="text-slate-400" aria-hidden>
-        |
-      </span>
-      <span className="text-xs font-medium uppercase tracking-wider text-slate-500">
+      <span
+        className={cn(
+          "hidden h-4 w-px shrink-0 bg-border sm:block",
+          inverseChrome && "bg-white/25",
+          referenceChrome && !inverseChrome && "bg-border/70"
+        )}
+        aria-hidden
+      />
+      <span
+        className={cn(
+          "text-[10px] font-semibold uppercase tracking-[0.14em] text-foreground-muted",
+          inverseChrome && "text-slate-300",
+          referenceChrome && !inverseChrome && "text-foreground-faint"
+        )}
+      >
         Share
       </span>
-      <ShareButtons url={url} title={title} targets={shareTargets} variant="default" />
+      <ShareButtons
+        url={url}
+        title={title}
+        targets={shareTargets}
+        variant="default"
+        tone={inverseChrome ? "inverse" : referenceChrome ? "surface" : "legacy"}
+      />
     </div>
   );
 }

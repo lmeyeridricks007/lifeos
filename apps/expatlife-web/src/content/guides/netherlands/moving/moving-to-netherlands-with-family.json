@@ -25,7 +25,6 @@
     { "id": "family-documents", "label": "Family documents to gather" },
     { "id": "healthcare-families", "label": "Healthcare for families" },
     { "id": "cost-relocating-family", "label": "Cost of relocating with family" },
-    { "id": "what-families-do-next", "label": "What families often do next" },
     { "id": "tools", "label": "Tools" },
     { "id": "faq", "label": "FAQ" },
     { "id": "related-guides", "label": "Related guides" }
@@ -247,7 +246,8 @@
       "id": "cost-relocating-family",
       "heading": "Cost of relocating with family",
       "body": [
-        "Moving with family usually increases the cost of housing, deposits, travel, shipping, childcare, and the first months of setup. Even if your relocation route is straightforward, the household budget typically needs a larger buffer than for a solo move."
+        "Moving with family usually increases the cost of housing, deposits, travel, shipping, childcare, and the first months of setup. Even if your relocation route is straightforward, the household budget typically needs a larger buffer than for a solo move.",
+        "Once the family move is realistic, households usually shift from research into sequencing: who travels first, housing confirmation, documents by person, and mapping the first 30 to 90 days after arrival."
       ],
       "table": {
         "headers": ["Cost area", "Typical example", "Why it grows for families"],
@@ -265,14 +265,7 @@
         "type": "info",
         "title": "Planning examples only",
         "text": "These are planning examples, not official thresholds. Actual costs vary heavily by city, household size, school choices, housing type, and daily life setup."
-      }
-    },
-    {
-      "id": "what-families-do-next",
-      "heading": "What families often do next",
-      "body": [
-        "Once the family move is realistic, households usually shift from research into sequencing. That often means deciding who travels first, confirming housing, organizing documents by person, and mapping out the first 30 to 90 days after arrival."
-      ],
+      },
       "bullets": [
         "Confirm the registration order for the household.",
         "Organize documents by adult and child.",

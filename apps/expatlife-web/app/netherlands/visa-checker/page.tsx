@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
-import { ToolHero } from "@/src/components/tools/ToolHero";
+import { MoveHero, MoveToolSidebar } from "@/components/page/move-shell";
 import { VisaCheckerClient } from "@/src/components/tools/visa-checker/VisaCheckerClient";
 import { RecommendedImmigrationLawyersSection } from "@/src/components/tools/shared/RecommendedImmigrationLawyersSection";
 import { buildSoftwareApplicationSchema } from "@/src/lib/seo/toolSchema";
@@ -11,10 +12,8 @@ import {
   VISA_CHECKER_RELATED_GUIDES,
   VISA_CHECKER_RELATED_TOOLS,
 } from "@/src/lib/tools/shared/toolInternalLinks";
-import { Section } from "@/components/ui/section";
+import { SectionBlock } from "@/components/page/pillar-template";
 import { CardLink } from "@/components/ui/card-link";
-import { PillarTOC } from "@/components/content/PillarTOC";
-
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getVisaRelocationMarketingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 
@@ -172,24 +171,10 @@ export default async function VisaCheckerPage(props: PageProps) {
   const intro = (
     <>
       <p className="mb-3">
-        Moving to the Netherlands requires the right visa or residence route if you are not covered by free movement rules.
-        The best route depends on your citizenship, job offer, salary, study plans, partner or family status, or business plans.
+        If you are not covered by EU/EEA free movement, you need a residence route that matches why you are moving—work, study, business, or family.
       </p>
       <p className="mb-3">
-        This tool gives a practical first recommendation and points you to the right visa pages and planning tools.
-        Major routes include the{" "}
-        <Link href={`${BASE}/visa/highly-skilled-migrant/`} className="font-medium text-brand-600 hover:text-brand-700">Highly Skilled Migrant</Link>
-        {" "}permit,{" "}
-        <Link href={`${BASE}/visa/eu-blue-card/`} className="font-medium text-brand-600 hover:text-brand-700">EU Blue Card</Link>
-        ,{" "}
-        <Link href={`${BASE}/visa/dutch-american-friendship-treaty/`} className="font-medium text-brand-600 hover:text-brand-700">DAFT</Link>
-        {" "}for US entrepreneurs, the{" "}
-        <Link href={`${BASE}/visa/self-employed-visa/`} className="font-medium text-brand-600 hover:text-brand-700">self-employed</Link>
-        {" "}route,{" "}
-        <Link href={`${BASE}/visa/student-visa/`} className="font-medium text-brand-600 hover:text-brand-700">student</Link>
-        {" "}visa, and the{" "}
-        <Link href={`${BASE}/visa/partner-family-visa/`} className="font-medium text-brand-600 hover:text-brand-700">partner & family</Link>
-        {" "}visa.
+        Answer a few questions to see which Dutch visa options may fit, with links to the right guides and planning tools. This is guidance only, not a legal decision.
       </p>
     </>
   );
@@ -202,17 +187,17 @@ export default async function VisaCheckerPage(props: PageProps) {
 
   const examplesSection = (
     <div className="space-y-4">
-      <p className="text-sm text-slate-600">
+      <p className="text-sm text-foreground-muted">
         Click &quot;Use this example&quot; to scroll to the tool. You can then adjust answers to see how recommendations change.
       </p>
       <div className="grid gap-3 sm:grid-cols-2">
         {EXAMPLE_SCENARIOS.map((scenario) => (
           <div
             key={scenario.id}
-            className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm hover:border-brand-200 hover:bg-brand-50/30"
+            className="rounded-xl border border-border bg-surface-raised p-4 shadow-sm hover:border-brand-200 hover:bg-brand-50/30"
           >
-            <h4 className="font-medium text-slate-900">{scenario.title}</h4>
-            <p className="mt-1 text-sm text-slate-600">{scenario.summary}</p>
+            <h4 className="font-medium text-foreground">{scenario.title}</h4>
+            <p className="mt-1 text-sm text-foreground-muted">{scenario.summary}</p>
             <Link
               href={`${canonical}?scenario=${scenario.id}#tool-inputs`}
               className="mt-3 inline-block text-sm font-medium text-brand-600 hover:text-brand-700"
@@ -226,29 +211,20 @@ export default async function VisaCheckerPage(props: PageProps) {
   );
 
   const seoContent = (
-    <div className="prose prose-slate max-w-none text-slate-600">
+    <div className="prose prose-slate max-w-none text-foreground-muted">
       <p>
-        The right visa depends on why you are moving. Work routes (Highly Skilled Migrant, EU Blue Card) suit people with a job offer from a qualifying or recognized employer. Study routes suit students admitted to Dutch education. Partner and family routes suit those joining someone already living in the Netherlands. Entrepreneur routes (DAFT for US citizens, self-employed permit for others) suit people who will work for themselves.
+        Work routes usually need a sponsor or qualifying offer; study routes go through your school; partner and family routes need a sponsor in the Netherlands; entrepreneur routes use DAFT (US citizens) or the self-employed permit. EU/EEA/Swiss nationals typically use free movement instead of these permits.
       </p>
       <p>
-        Your country of origin matters: EU/EEA/Swiss citizens generally do not need a visa. US citizens have access to the DAFT route for self-employment; others use the general self-employed permit. Non-EU nationals need a residence permit for work, study, or family reunification.
-      </p>
-      <p>
-        Having a job offer changes everything for work-based moves. With a recognized sponsor and a salary that meets the threshold, the Highly Skilled Migrant route is one of the most common. The EU Blue Card is an alternative with slightly different salary and EU-wide mobility rules; compare both if you have an offer.
-      </p>
-      <p>
-        US entrepreneurs should compare DAFT with the general self-employed permit. DAFT has a lower capital requirement (e.g. €4,500 for common business forms) and is designed for Americans; the self-employed permit has viability and profit criteria that apply to all nationalities.
-      </p>
-      <p>
-        Students and family movers need different planning. Students rely on their institution to submit the application and must show proof of funds. Partner and family applicants need a sponsor in the Netherlands who meets income and housing requirements. Use the visa checker to see which route may fit, then read the full guide and use the relocation cost estimator and moving checklist to plan.
+        After you see a likely fit below, open the matching visa guide for thresholds and documents, then budget and plan with the cost and checklist tools—always confirm eligibility with official sources.
       </p>
     </div>
   );
 
   const officialSourcesSection = (
-    <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-5 md:p-6">
-      <h3 className="text-lg font-semibold text-slate-900">Official sources and further reading</h3>
-      <p className="mt-1 text-sm text-slate-600">
+    <div className="rounded-card border border-border bg-surface-muted/60 p-5 md:p-6">
+      <h3 className="text-lg font-semibold text-foreground">Official sources and further reading</h3>
+      <p className="mt-1 text-sm text-foreground-muted">
         For current rules, forms, and fees, refer to the IND and Dutch government.
       </p>
       <ul className="mt-4 space-y-2">
@@ -275,9 +251,9 @@ export default async function VisaCheckerPage(props: PageProps) {
   }));
 
   const recommendedServicesSection = (
-    <section className="rounded-2xl border-2 border-slate-200 bg-slate-50/80 p-5 md:p-6">
-      <h3 className="text-lg font-semibold text-slate-900">Recommended services</h3>
-      <p className="mt-1 text-sm text-slate-600">
+    <section className="rounded-card border-2 border-border bg-surface-muted/80 p-5 md:p-6">
+      <h3 className="text-lg font-semibold text-foreground">Recommended services</h3>
+      <p className="mt-1 text-sm text-foreground-muted">
         These services may help with different parts of the relocation process. Pricing and suitability vary by route and provider.
       </p>
       <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -295,28 +271,29 @@ export default async function VisaCheckerPage(props: PageProps) {
               href={service.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-brand-200 hover:shadow-md"
+              className="flex flex-col rounded-card border border-border bg-surface-raised p-4 shadow-card transition hover:border-brand/30 hover:shadow-card-hover motion-reduce:hover:shadow-card"
             >
-              <div className="flex h-16 shrink-0 items-center justify-center rounded-lg bg-slate-50/80 px-3">
+              <div className="flex h-16 shrink-0 items-center justify-center rounded-lg bg-surface-muted/80 px-3">
                 {service.logo ? (
-                  <img
+                  <Image
                     src={service.logo.src}
                     alt={service.logo.alt}
                     width={120}
                     height={48}
                     className="max-h-12 w-full object-contain object-center"
+                    unoptimized={!service.logo.src.startsWith("/")}
                   />
                 ) : (
                   <span
-                    className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-200 text-sm font-semibold text-slate-600"
+                    className="flex h-12 w-12 items-center justify-center rounded-full bg-surface-muted text-sm font-semibold text-foreground-muted"
                     aria-hidden
                   >
                     {initials}
                   </span>
                 )}
               </div>
-              <p className="mt-3 font-semibold text-slate-900">{service.name}</p>
-              <p className="mt-1 text-sm text-slate-600">{service.useFor}</p>
+              <p className="mt-3 font-semibold text-foreground">{service.name}</p>
+              <p className="mt-1 text-sm text-foreground-muted">{service.useFor}</p>
               <span className="mt-2 inline-block text-xs font-medium text-brand-600">Visit site →</span>
             </a>
           );
@@ -338,39 +315,15 @@ export default async function VisaCheckerPage(props: PageProps) {
     { id: "official-sources", label: "Official sources" },
   ];
 
+  const visaCheckerQuickLinks = [
+    { label: "Start visa check", href: "#tool-inputs" },
+    { label: "Compare visa types", href: `${BASE}/visa/compare-visas/` },
+    { label: "Estimate relocation cost", href: `${BASE}/moving/tools/relocation-cost-estimator/` },
+    { label: "Generate moving checklist", href: `${BASE}/moving/tools/moving-checklist/` },
+  ];
+
   const sidebar = (
-    <>
-      <PillarTOC items={sidebarOnThisPage} />
-      <div className="rounded-xl border border-slate-200 bg-slate-50/50 p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Tools</p>
-        <ul className="mt-3 space-y-2">
-          <li>
-            <Link href="#tool-inputs" className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Start visa check</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-          <li>
-            <Link href={`${BASE}/visa/highly-skilled-migrant/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Compare visa types</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-          <li>
-            <Link href={`${BASE}/moving/tools/relocation-cost-estimator/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Estimate relocation cost</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-          <li>
-            <Link href={`${BASE}/moving/tools/moving-checklist/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Generate moving checklist</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </>
+    <MoveToolSidebar tocItems={sidebarOnThisPage} quickLinks={visaCheckerQuickLinks} />
   );
 
   return (
@@ -380,9 +333,11 @@ export default async function VisaCheckerPage(props: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       <ToolPageTemplate
+        movingClusterHero
         hero={
-          <ToolHero
-            eyebrow="VISA TOOL"
+          <MoveHero
+            variant="tool"
+            eyebrow="TOOL"
             title="Find the Best Visa for Moving to the Netherlands"
             subtitle="Answer a few questions to see which Dutch visa or residence routes may fit your situation, compare likely options, and get a practical plan for your move."
             primaryCtaLabel="Start visa check"
@@ -419,7 +374,7 @@ export default async function VisaCheckerPage(props: PageProps) {
         }
         extraSection={
           <>
-            <Section title="Related tools" contained={true} className="pt-6">
+            <SectionBlock id="related-tools" title="Related tools" compact className="pt-3 md:pt-4">
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {VISA_CHECKER_RELATED_TOOLS.map((t) => (
                   <CardLink
@@ -427,14 +382,14 @@ export default async function VisaCheckerPage(props: PageProps) {
                     href={t.href}
                     title={t.label}
                     description={t.description ?? ""}
-                    className="border-l-4 border-l-brand-500/70 border-sky-200/80 bg-white hover:border-brand-300 hover:bg-sky-50/50"
+                    className="border-l-4 border-l-brand-500/70 border-brand/25 bg-surface-raised hover:border-brand-300 hover:bg-brand-muted/45"
                   />
                 ))}
               </div>
-            </Section>
-            <Section id="official-sources" title="Official sources" contained={true} className="pt-6">
+            </SectionBlock>
+            <SectionBlock id="official-sources" title="Official sources" className="pt-6">
               {officialSourcesSection}
-            </Section>
+            </SectionBlock>
           </>
         }
       >

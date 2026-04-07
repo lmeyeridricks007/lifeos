@@ -8,24 +8,24 @@ export function ProcessTimeline({ data }: { data: CityHubPageData }) {
   if (!steps.length) return null;
 
   const accents = [
-    "border-l-blue-500 bg-blue-50/80",
-    "border-l-teal-500 bg-teal-50/80",
-    "border-l-amber-500 bg-amber-50/80",
-    "border-l-blue-500 bg-blue-50/80",
-    "border-l-teal-500 bg-teal-50/80",
+    "border-l-brand bg-brand-muted/80",
+    "border-l-accent bg-accent-muted/80",
+    "border-l-warning bg-warning-muted/80",
+    "border-l-brand bg-brand-muted/80",
+    "border-l-accent bg-accent-muted/80",
   ] as const;
   const nodeAccents = [
-    "border-blue-400 bg-blue-50 text-blue-700",
-    "border-teal-400 bg-teal-50 text-teal-700",
-    "border-amber-400 bg-amber-50 text-amber-700",
-    "border-blue-400 bg-blue-50 text-blue-700",
-    "border-teal-400 bg-teal-50 text-teal-700",
+    "border-brand/40 bg-brand-muted/50 text-brand-strong",
+    "border-accent/40 bg-accent-muted/50 text-accent",
+    "border-warning-border/70 bg-warning-muted/60 text-warning",
+    "border-brand/40 bg-brand-muted/50 text-brand-strong",
+    "border-accent/40 bg-accent-muted/50 text-accent",
   ] as const;
 
   return (
     <div className="relative">
       <div
-        className="absolute left-[22px] top-6 bottom-12 w-0.5 rounded-full bg-slate-200/80"
+        className="absolute left-[22px] top-6 bottom-12 w-0.5 rounded-full bg-surface-muted/80"
         aria-hidden
       />
       <ol className="list-none space-y-0">
@@ -48,11 +48,11 @@ export function ProcessTimeline({ data }: { data: CityHubPageData }) {
               </span>
               <div
                 className={cn(
-                  "min-w-0 flex-1 rounded-xl border border-slate-200/80 border-l-4 py-3.5 px-4 shadow-sm transition hover:shadow",
+                  "min-w-0 flex-1 rounded-xl border border-border/80 border-l-4 py-3.5 px-4 shadow-sm transition hover:shadow",
                   acc
                 )}
               >
-                <p className="text-sm font-medium leading-relaxed text-slate-700">
+                <p className="text-sm font-medium leading-relaxed text-foreground">
                   {step}
                 </p>
               </div>
@@ -68,7 +68,7 @@ export function ProcessTimeline({ data }: { data: CityHubPageData }) {
               href={src.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-800 hover:bg-slate-50"
+              className="inline-flex items-center rounded-lg border border-border bg-surface-raised px-4 py-2.5 text-sm font-medium text-foreground hover:bg-surface-muted"
             >
               {src.label}
               <span className="ml-1" aria-hidden>→</span>
@@ -77,7 +77,7 @@ export function ProcessTimeline({ data }: { data: CityHubPageData }) {
         </div>
       ) : null}
       {registration.internalLinks?.length ? (
-        <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 border-t border-slate-100 pt-4">
+        <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 border-t border-border/80 pt-4">
           {registration.internalLinks.map((link) => (
             <Link
               key={link.href}

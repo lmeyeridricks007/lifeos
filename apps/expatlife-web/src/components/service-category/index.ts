@@ -1,4 +1,5 @@
 export { ServiceCategoryHero } from "./ServiceCategoryHero";
+export { ServiceCategoryHeroSection } from "./ServiceCategoryHeroSection";
 export { ServiceCategoryIntro } from "./ServiceCategoryIntro";
 export { RequirementAlertBox } from "./RequirementAlertBox";
 export { CoverageExplainerCards } from "./CoverageExplainerCards";

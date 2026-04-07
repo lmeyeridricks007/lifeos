@@ -20,7 +20,7 @@
     "primaryCtaLabel": "After Arriving in the Netherlands",
     "primaryCtaHref": "/netherlands/after-arriving-netherlands/",
     "secondaryCtaLabel": "Compare Health Insurers",
-    "secondaryCtaHref": "/netherlands/health-insurance-netherlands/#compare-major",
+    "secondaryCtaHref": "/netherlands/health-insurance-netherlands/#provider-directory",
     "supportingLinks": [
       { "label": "Municipality Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "Open a Bank Account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
@@ -38,8 +38,7 @@
     { "id": "basic-vs-supplementary", "label": "Basic vs supplementary" },
     { "id": "healthcare-products", "label": "Healthcare services and products" },
     { "id": "what-affects-cost", "label": "Costs" },
-    { "id": "compare-major", "label": "Compare insurers" },
-    { "id": "provider-directory", "label": "Provider directory" },
+    { "id": "provider-directory", "label": "Compare insurers & provider directory" },
     { "id": "zorgtoeslag", "label": "Healthcare allowance" },
     { "id": "common-mistakes", "label": "Common mistakes" },
     { "id": "example-scenarios", "label": "Example scenarios" },
@@ -63,7 +62,7 @@
       "value": "Average 2026 premium is around €159/month; cheapest standard options start around €142.40/month."
     },
     {
-      "label": "START HERE",
+      "label": "TYPICAL ORDER",
       "value": "Municipality registration and BSN often come first, then insurance comparison and setup."
     }
   ],
@@ -237,60 +236,10 @@
       ]
     },
     {
-      "id": "compare-major",
-      "heading": "Compare major Dutch health insurers",
-      "body": [
-        "The table below gives a quick overview of major insurers and insurer groups. Premium bands and “best for” are indicative; always check current offers and terms on the insurer’s or comparison site’s website."
-      ],
-      "table": {
-        "headers": ["Provider / label", "Parent group", "Typical basic premium band", "Best for", "English / expat fit", "Link"],
-        "rows": [
-          ["Zilveren Kruis", "Achmea", "Mid–upper range", "Broad network, brand recognition", "Good", "Compare on Independer"],
-          ["CZ", "CZ Groep", "Mid range", "Large customer base, standard cover", "Reasonable", "Compare on Independer"],
-          ["VGZ", "VGZ", "Mid range", "Wide choice, supplementary options", "Reasonable", "Compare on Independer"],
-          ["Menzis", "Menzis", "Mid range", "Flexible packages", "Reasonable", "Compare on Independer"],
-          ["DSW", "DSW", "Often competitive", "Budget-conscious", "Reasonable", "Compare on Independer"],
-          ["ONVZ", "ONVZ", "Mid–upper", "Quality focus, service", "Good", "Compare on Independer"],
-          ["FBTO", "Achmea", "Often competitive", "Online, no-frills", "Reasonable", "Compare on Independer"],
-          ["Univé", "Univé", "Mid range", "Regional, cooperative", "Reasonable", "Compare on Independer"]
-        ]
-      },
-      "tableLinkColumnIndex": 5,
-      "tableLinkUrl": "https://www.independer.nl/zorgverzekering/intro.aspx",
-      "services": [
-        {
-          "name": "Independer",
-          "description": "Compare basic and supplementary health insurance, see current premiums and switch online. Widely used for annual comparison.",
-          "url": "https://www.independer.nl/zorgverzekering/intro.aspx",
-          "indicativeCost": "Free to use; insurer premiums apply.",
-          "reason": "Compare and get quotes from major Dutch insurers.",
-          "logo": { "src": "/images/affiliates/logos/independer.svg", "alt": "Independer logo" }
-        },
-        {
-          "name": "Zorgverzekeringslijn",
-          "description": "Official overview of Dutch health insurers and contact details. Useful for checking insurer information and product cards.",
-          "url": "https://www.zorgverzekeringslijn.nl/hulpverleners/handige-tools/zorgverzekeraars/overzicht-contactgegevens/",
-          "indicativeCost": "Information only.",
-          "reason": "Insurer overview and official contact details."
-        },
-        {
-          "name": "Zorgverzekeringskaart",
-          "description": "Official insurer product-card portal. Compare policy details and standard package information.",
-          "url": "https://zorgverzekeringskaart.nl/",
-          "indicativeCost": "Information only.",
-          "reason": "Official product cards and policy comparison."
-        }
-      ],
-      "links": [
-        { "label": "Independer – Compare health insurance", "href": "https://www.independer.nl/zorgverzekering/intro.aspx" },
-        { "label": "Zorgverzekeringslijn – Overview of insurers", "href": "https://www.zorgverzekeringslijn.nl/hulpverleners/handige-tools/zorgverzekeraars/overzicht-contactgegevens/" }
-      ]
-    },
-    {
       "id": "provider-directory",
       "heading": "Health insurance providers in the Netherlands",
       "body": [
-        "Below is a structured directory of health insurers often considered by expats. Inclusion is for information only; we do not recommend one insurer over another. Check each provider’s website and comparison tools for current products, premiums, and English-language options.",
+        "Use Independer or Zorgverzekeringskaart for a quick comparison of premiums and basic packages; the cards below give a structured overview of major insurers often considered by expats. Inclusion is for information only; we do not recommend one insurer over another. Check each provider’s website and comparison tools for current products, premiums, and English-language options.",
         "Typical costs below are indicative 2026 basic-package monthly premiums (source: comparison sites such as Independer). Supplementary packages add to the premium. Always check current offers before choosing."
       ],
       "insurerComparisons": [
@@ -475,7 +424,7 @@
     {
       "title": "Highly skilled migrant starting work",
       "summary": "You need to arrange basic insurance within 4 months of arrival; cover typically starts from your first day. Compare a few insurers and choose a policy once you have a BSN and bank account.",
-      "href": "/netherlands/health-insurance-netherlands/#compare-major",
+      "href": "/netherlands/health-insurance-netherlands/#provider-directory",
       "ctaLabel": "Compare insurers"
     },
     {
@@ -526,7 +475,7 @@
     ]
   },
   "sidebarStartLinks": [
-    { "label": "Compare Health Insurers", "href": "/netherlands/health-insurance-netherlands/#compare-major" },
+    { "label": "Compare Health Insurers", "href": "/netherlands/health-insurance-netherlands/#provider-directory" },
     { "label": "After Arriving Guide", "href": "/netherlands/after-arriving-netherlands/" },
     { "label": "Estimate Your Costs", "href": "/netherlands/moving/tools/relocation-cost-estimator/" }
   ],
@@ -564,14 +513,12 @@
       "a": "It depends on your situation. Some students may be exempt or have different rules. Check with your institution and Government.nl to see if you must take out Dutch basic insurance."
     },
     {
-      "q": "Which insurer is best for expats?",
-      "a": "There is no single “best” insurer. Compare on price, network, English-language support, and ease of onboarding. Zilveren Kruis, ONVZ, and FBTO are often mentioned for clarity or value; always check current offers and terms."
+      "q": "How do I pick an insurer as an expat?",
+      "a": "There is no single option that fits everyone. Compare on price, network, English-language support, and ease of onboarding. Zilveren Kruis, ONVZ, and FBTO are often mentioned for clarity or value; always check current offers and terms."
     },
     {
       "q": "Can I get healthcare allowance?",
       "a": "Some residents with qualifying income may be eligible for zorgtoeslag (healthcare allowance). Eligibility depends on income and circumstances. Use the official Belastingdienst/government allowance checker to see if you qualify."
     }
-  ],
-  "resourcesAffiliatePlacementId": "resources_end",
-  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+  ]
 }

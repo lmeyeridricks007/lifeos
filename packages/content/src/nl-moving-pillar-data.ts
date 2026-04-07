@@ -52,6 +52,14 @@ const linkRegistry: LinkRegistry = {
     href: "/netherlands/after-arriving-netherlands/",
     title: "After arriving in the Netherlands",
   },
+  compare_visas: {
+    href: "/netherlands/visa/compare-visas",
+    title: "Compare visa routes",
+  },
+  moving_requirements: {
+    href: "/netherlands/moving-requirements-netherlands/",
+    title: "Moving requirements overview",
+  },
 };
 
 export const nlMovingPillarContent: NlMovingPillarContent = {
@@ -69,13 +77,40 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
   },
   scenarios: [
     {
-      id: "work-solo-30",
+      id: "path-work",
       chips: ["work"],
-      personaTitle: "Moving for work (solo)",
-      whatMatters: ["Employment contract", "BSN", "Housing"],
-      readingOrder: ["pillar", "bsn", "moving_checklist"],
+      personaTitle: "Moving for work",
+      whatMatters: ["Contract or offer timing", "Registrable housing for BSN", "Bank account and payroll"],
+      readingOrder: ["hub", "document_readiness", "bsn"],
       startTool: { key: "moving_checklist" },
-      unknownsToConfirm: ["Visa route", "Start date"],
+      unknownsToConfirm: ["Visa or work permit route", "Employer start date"],
+    },
+    {
+      id: "path-family",
+      chips: ["partner_family"],
+      personaTitle: "Moving with partner or family",
+      whatMatters: ["Schools or childcare", "Partner permits and work rights", "Larger housing search"],
+      readingOrder: ["hub", "municipality_registration", "document_readiness"],
+      startTool: { key: "moving_checklist" },
+      unknownsToConfirm: ["Family reunification rules", "City catchment for schools"],
+    },
+    {
+      id: "path-study",
+      chips: ["study"],
+      personaTitle: "Moving for study",
+      whatMatters: ["Study residence permit", "Student housing early", "Insurance and BSN"],
+      readingOrder: ["moving_requirements", "document_readiness", "hub"],
+      startTool: { key: "document_readiness" },
+      unknownsToConfirm: ["Institution admissions", "Insurance obligation"],
+    },
+    {
+      id: "path-unsure",
+      chips: ["unsure"],
+      personaTitle: "Not sure yet",
+      whatMatters: ["Clarify visa or permit route", "Lock a rough timeline", "Narrow tasks with tools"],
+      readingOrder: ["compare_visas", "hub", "document_readiness"],
+      startTool: { key: "moving_checklist" },
+      unknownsToConfirm: ["EU vs non-EU path", "Job offer vs search"],
     },
   ],
   faq: [
@@ -195,20 +230,26 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
     {
       title: "Moving checklist",
       href: "/netherlands/moving/tools/moving-checklist",
-      description: "Personalized tasks for your move.",
-      timeToComplete: "15 minutes",
+      description: "Tasks matched to your situation.",
+      timeToComplete: "15 min",
     },
     {
       title: "Document readiness",
       href: "/netherlands/moving/tools/document-readiness",
-      description: "See common document needs.",
-      timeToComplete: "10 minutes",
+      description: "What to gather before you go.",
+      timeToComplete: "10 min",
+    },
+    {
+      title: "Dutch payslip decoder",
+      href: "/netherlands/work/tools/payslip-decoder",
+      description: "Understand your loonstrook after payroll starts.",
+      timeToComplete: "5 min",
     },
     {
       title: "Arrival planner",
       href: "/netherlands/moving/tools/arrival-planner",
       description: "First weeks after landing.",
-      timeToComplete: "10 minutes",
+      timeToComplete: "10 min",
     },
     {
       title: "First 90 days",
@@ -254,8 +295,7 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
     },
     overview: {
       sectionTitle: "Overview",
-      overviewParagraph:
-        "This page is structured around three phases: before you move, after arrival, and your first 90 days.",
+      overviewParagraph: "Three phases: prepare, register, then settle in.",
       collapsibleTitle: "Not legal advice",
       disclaimerItems: [
         "Rules change; always verify with official sources for your situation.",
@@ -315,7 +355,8 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       sectionTitle: "Housing",
       introParagraph:
         "The **Dutch rental market** is competitive in Amsterdam, Utrecht, Rotterdam, and many university cities: expect **queues at viewings**, **landlord references**, and **income or guarantor checks**. Contracts are often **indefinite (onbepaalde tijd)** or **fixed-term (bepaalde tijd)**; **registration at the municipality (BRP)** is only possible from an address the municipality accepts—not every short-stay or sublet qualifies. **Furnished**, **rooms**, and **student housing** follow different norms; **service costs** and **deposit rules** should be spelled out in writing.",
-      registrationWarning: "You need a registrable address for BSN registration in most cases.",
+      registrationWarning:
+        "BSN registration usually needs a registrable address—confirm inschrijving before you pay large deposits.",
       paragraph:
         "See {0} for how **your address**, **BSN**, and **appointments** fit together. To search listings and mid-term options, start with {1}; if you want **agency-assisted** search, browse {2}. The **platforms below** are practical entry points—always verify **scams, deposits, and registration eligibility** before you pay or sign.",
       paragraphLinkKeys: [
@@ -323,6 +364,35 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
         "services_housing_platforms",
         "services_rental_agencies",
       ],
+    },
+    practicalEssentials: {
+      intro: "Three things to line up early—each link opens a full guide when you need depth.",
+      documents: {
+        bullets: [
+          "Know which IDs and civil documents you may need before you travel.",
+          "Use the checker for a list tailored to your origin and situation.",
+        ],
+        primaryLinkKey: "document_readiness",
+      },
+      banking: {
+        bullets: [
+          "A Dutch current account (betaalrekening) is usually needed for salary, rent, and iDEAL.",
+          "BSN and a registrable address often complete onboarding—compare providers in our directory.",
+        ],
+        primaryLinkKey: "open_bank_account",
+      },
+      housing: {
+        bullets: [
+          "Start early in competitive cities; viewings and references take time.",
+          "Short-stay or informal lets may not count for municipality registration.",
+        ],
+        registrationNote:
+          "You normally need an address the gemeente accepts for BSN registration—confirm before signing.",
+        primaryLinkKey: "municipality_registration",
+      },
+    },
+    scenarioPaths: {
+      intro: "Pick the path that fits you—then follow the suggested reading order and open a tool when you are ready.",
     },
     gotchas: {
       sectionTitle: "Common gotchas",

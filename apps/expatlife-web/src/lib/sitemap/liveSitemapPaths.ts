@@ -20,6 +20,8 @@ const routingSlugSet = new Set<string>(ROUTING_ORIGIN_COUNTRY_SLUGS);
  *
  * Source of truth for “is this indexable?” remains `route-registry` + `isRouteLive` in `routeStatus`.
  * - Every path from `LIVE_PATHS` is a candidate except `XML_SITEMAP_EXCLUDE`.
+ *   `LIVE_PATHS` includes each `src/content/tools/registry.json` tool with `status: "live"` (canonical `route`)
+ *   plus tool category hub routes from `categories.json` — no separate sitemap manifest for new calculators.
  * - Origin-country guides and moving-tool `/from/{country}/` URLs are not fully enumerated in `LIVE_PATHS`;
  *   they are added here for enabled countries whose slug appears in `ROUTING_ORIGIN_COUNTRY_SLUGS`,
  *   then filtered again with `isRouteLive` (origin slugs use `enforceOriginCountryPublishDatesForPublicIndexing`

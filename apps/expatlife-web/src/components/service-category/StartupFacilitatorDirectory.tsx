@@ -147,7 +147,7 @@ export function StartupFacilitatorDirectory({
         {letterFilter ? ` starting with "${letterFilter}"` : ""}.
       </p>
 
-      <div className="overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+      <div className="max-w-full overflow-x-auto overscroll-x-contain touch-pan-x rounded-xl border border-slate-200 bg-white shadow-sm">
         <table className="min-w-full divide-y divide-slate-200 text-left text-sm">
           <thead>
             <tr className="bg-slate-50">

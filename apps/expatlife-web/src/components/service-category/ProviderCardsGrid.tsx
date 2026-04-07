@@ -45,29 +45,18 @@ function ProviderLogo({
   }
 
   return (
-    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-slate-200/80 bg-white shadow-sm">
-      {isExternal ? (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={resolvedSrc}
-          alt={alt}
-          width={48}
-          height={48}
-          className="h-12 w-12 object-contain p-1"
-          onError={() => setError(true)}
-          referrerPolicy="no-referrer"
-          loading="lazy"
-        />
-      ) : (
-        <Image
-          src={resolvedSrc}
-          alt={alt}
-          width={48}
-          height={48}
-          className="h-12 w-12 object-contain p-1"
-          onError={() => setError(true)}
-        />
-      )}
+    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-card border border-border/80 bg-surface-raised shadow-card">
+      <Image
+        src={resolvedSrc}
+        alt={alt}
+        width={48}
+        height={48}
+        className="h-12 w-12 object-contain p-1"
+        onError={() => setError(true)}
+        referrerPolicy="no-referrer"
+        loading="lazy"
+        unoptimized={isExternal || /\.svg(\?|$)/i.test(resolvedSrc)}
+      />
     </div>
   );
 }

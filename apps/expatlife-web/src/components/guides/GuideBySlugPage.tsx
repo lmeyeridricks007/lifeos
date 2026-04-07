@@ -10,10 +10,25 @@ import { ArticleJsonLd, FaqPageJsonLd, HowToJsonLd } from "@/lib/seo/jsonld";
 import { isGuidePublishingVisibleBySlug, loadGuideBySlug } from "@/src/lib/guides/loadGuide";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 import { getSiteOrigin } from "@/lib/site-origin";
+import {
+  GuideHighIntentPostFaqMonetization,
+  buildNetherlandsGuideAffiliateSlots,
+  guideHasMonetizationAfterContent,
+} from "@/src/components/monetization";
+import type { PageMonetizationMetadata } from "@/src/lib/monetization/pageMonetizationMetadata";
+import { MoveClusterSelectiveSetupMonetization } from "@/src/components/monetization/MoveClusterSelectiveSetupMonetization";
+import { shouldRenderSelectiveSetupMonetization } from "@/src/lib/monetization/moveClusterPostFaqPolicy";
 
 const baseUrl = getSiteOrigin();
 
-export function GuideBySlugPage({ slug }: { slug: string }) {
+export function GuideBySlugPage({
+  slug,
+  monetization,
+}: {
+  slug: string;
+  /** Merged over `NETHERLANDS_GUIDE_PAGE_MONETIZATION[slug]` (override / disable / force). */
+  monetization?: PageMonetizationMetadata;
+}) {
   if (!isGuidePublishingVisibleBySlug(slug)) notFound();
   const data = loadGuideBySlug(slug);
   if (!data) notFound();
@@ -51,6 +66,8 @@ export function GuideBySlugPage({ slug }: { slug: string }) {
   const dateModified = new Date().toISOString().slice(0, 10);
   const serializableData = JSON.parse(JSON.stringify(data));
   const serializableBlocks = JSON.parse(JSON.stringify(affiliateBlocks));
+  const { contextualAffiliateAfterFirstSection, contextualAffiliateBeforeNextSteps } =
+    buildNetherlandsGuideAffiliateSlots(slug, data.path, monetization);
 
   return (
     <>
@@ -74,6 +91,15 @@ export function GuideBySlugPage({ slug }: { slug: string }) {
         data={serializableData}
         affiliateBlocks={serializableBlocks}
         canonicalUrl={new URL(data.path.startsWith("/") ? data.path : `/${data.path}`, baseUrl).toString()}
+        postContentMonetization={
+          guideHasMonetizationAfterContent(slug) ? (
+            <GuideHighIntentPostFaqMonetization slug={slug} pageSlugPath={data.path} />
+          ) : shouldRenderSelectiveSetupMonetization(slug) ? (
+            <MoveClusterSelectiveSetupMonetization slug={slug} />
+          ) : undefined
+        }
+        contextualAffiliateAfterFirstSection={contextualAffiliateAfterFirstSection}
+        contextualAffiliateBeforeNextSteps={contextualAffiliateBeforeNextSteps}
       />
     </>
   );

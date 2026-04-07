@@ -1,24 +1,27 @@
 import type { CityExpatsProfile as CityExpatsProfileType } from "@/src/lib/city-hub/types";
+import { SectionBlock } from "@/components/page/pillar-template";
+import { cn } from "@/lib/cn";
 
 export function CityExpatsProfile({ data }: { data: CityExpatsProfileType }) {
   if (!data.profiles?.length) return null;
 
   return (
-    <section id="who-moves-here" className="scroll-mt-24 mt-12 space-y-4">
-      <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-        {data.heading}
-      </h2>
+    <SectionBlock id="who-moves-here" title={data.heading} compact className="scroll-mt-24">
       <ul className="grid gap-2 sm:grid-cols-2">
         {data.profiles.map((profile, i) => (
           <li
             key={i}
-            className="flex gap-2 rounded-lg border border-slate-200/80 bg-slate-50/50 px-4 py-3 text-sm text-slate-700"
+            className={cn(
+              "flex gap-2 rounded-xl border border-copilot-primary/10 bg-copilot-bg-soft/60 px-4 py-3 text-sm text-copilot-text-secondary ring-1 ring-copilot-primary/[0.04]"
+            )}
           >
-            <span className="text-emerald-500 shrink-0" aria-hidden>✓</span>
+            <span className="shrink-0 text-copilot-accent" aria-hidden>
+              ✓
+            </span>
             {profile}
           </li>
         ))}
       </ul>
-    </section>
+    </SectionBlock>
   );
 }

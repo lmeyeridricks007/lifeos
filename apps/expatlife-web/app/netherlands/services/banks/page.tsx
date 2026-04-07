@@ -4,10 +4,11 @@ import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { PillarTOC } from "@/components/content/PillarTOC";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { Container } from "@/components/ui/container";
-import { Section } from "@/components/ui/section";
+import { PillarMainStack } from "@/components/page/pillar-template";
 import { Accordion } from "@/components/ui/accordion";
 import {
   ServiceCategoryHero,
+  ServiceCategoryHeroSection,
   ServiceCategoryIntro,
   RequirementAlertBox,
   ComparisonFactorsGrid,
@@ -27,6 +28,7 @@ import type { CityRelatedGuideBlock } from "@/src/lib/city-hub/types";
 import type { CityToolCard } from "@/src/lib/city-hub/types";
 import type { CityOfficialSource } from "@/src/lib/city-hub/types";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { PresetSoftCTA } from "@/src/components/soft-cta/PresetSoftCTA";
 
 const baseUrl = getSiteOrigin();
 const data = banksCategoryPage;
@@ -118,17 +120,16 @@ export default function BanksCategoryPage() {
       {data.faqs?.length ? <FaqPageJsonLd items={data.faqs} /> : null}
 
       <div className="min-h-screen">
-        <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white py-8 sm:py-10 md:py-14">
-          <Container className="w-full max-w-screen-2xl">
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-600">
+        <ServiceCategoryHeroSection>
+            <nav aria-label="Breadcrumb" className="mb-6 text-sm text-copilot-text-secondary">
               <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                <li><Link href="/" className="hover:text-slate-900">Home</Link></li>
-                <li aria-hidden className="text-slate-400">/</li>
-                <li><Link href="/netherlands/" className="hover:text-slate-900">Netherlands</Link></li>
-                <li aria-hidden className="text-slate-400">/</li>
-                <li><Link href="/netherlands/services/" className="hover:text-slate-900">Services</Link></li>
-                <li aria-hidden className="text-slate-400">/</li>
-                <li className="font-medium text-slate-900" aria-current="page">Banks</li>
+                <li><Link href="/" className="hover:text-copilot-text-primary">Home</Link></li>
+                <li aria-hidden className="text-copilot-text-muted">/</li>
+                <li><Link href="/netherlands/" className="hover:text-copilot-text-primary">Netherlands</Link></li>
+                <li aria-hidden className="text-copilot-text-muted">/</li>
+                <li><Link href="/netherlands/services/" className="hover:text-copilot-text-primary">Services</Link></li>
+                <li aria-hidden className="text-copilot-text-muted">/</li>
+                <li className="font-medium text-copilot-text-primary" aria-current="page">Banks</li>
               </ol>
             </nav>
             <ServiceCategoryHero
@@ -139,34 +140,34 @@ export default function BanksCategoryPage() {
                 pageId: data.path,
               }}
             />
-          </Container>
-        </section>
+        </ServiceCategoryHeroSection>
 
-        <Section contained={false} className="py-8 md:py-12">
+        <PillarMainStack>
+        <div className="py-8 md:py-12">
           <Container className="w-full max-w-screen-2xl">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,2fr),minmax(280px,1fr)]">
               <main className="min-w-0 w-full">
-                <div className="mb-8 rounded-xl border border-slate-200 bg-slate-50/50 p-4 lg:hidden">
+                <div className="mb-8 rounded-xl border border-copilot-primary/[0.08] bg-copilot-bg-soft/50 p-4 lg:hidden">
                   <PillarTOC items={data.tocItems} />
                 </div>
 
                 <ServiceCategoryIntro intro={data.intro} />
 
                 <section id="when-need-account" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     When Expats Usually Need a Dutch Bank Account
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     A Dutch account is often needed to arrange practical life in the Netherlands—salary, rent, subscriptions, utilities, taxes, and day-to-day payments. Netherlands Worldwide notes that you need a Dutch bank account to arrange certain things and that you generally need a BSN to open one. Bank rules may differ; some banks may allow staged onboarding depending on their policies.
                   </p>
                   <RequirementAlertBox cards={data.requirementCards} />
                 </section>
 
                 <section id="what-to-compare" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     How to Compare Dutch Banks as an Expat
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     The best bank for one expat may not be the best fit for another. Some people value low monthly fees and app-first onboarding, while others prioritise branch access, English-language service, or international transfer convenience.
                   </p>
                   <ComparisonFactorsGrid factors={data.comparisonFactors} />
@@ -174,12 +175,12 @@ export default function BanksCategoryPage() {
 
                 {data.digitalBanksBlock ? (
                   <section id="digital-banks" className="scroll-mt-24 mt-12 space-y-6">
-                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                       {data.digitalBanksBlock.heading}
                     </h2>
                     <div className="space-y-4">
                       {data.digitalBanksBlock.paragraphs.map((p, i) => (
-                        <p key={i} className="text-slate-700 leading-relaxed">
+                        <p key={i} className="text-copilot-text-secondary leading-relaxed">
                           {p}
                         </p>
                       ))}
@@ -205,10 +206,10 @@ export default function BanksCategoryPage() {
                 />
 
                 <section id="costs-cards" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Typical Costs and Banking Features to Compare
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Basic current accounts are often free at traditional banks; digital banks typically charge around €2.50–4/mo. Debit card and iDEAL are usually included. International transfer costs vary (e.g. 0–2% + fee, or free tiers with dedicated services). Below are typical ranges to compare.
                   </p>
                   <CostBreakdownCards cards={data.costCards} />
@@ -216,7 +217,7 @@ export default function BanksCategoryPage() {
 
                 {data.trustBlock ? (
                   <section id="deposit-guarantee" className="scroll-mt-24 mt-12 space-y-6">
-                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                       {data.trustBlock.heading}
                     </h2>
                     <TrustInfoBlock trustBlock={data.trustBlock} />
@@ -224,14 +225,14 @@ export default function BanksCategoryPage() {
                 ) : null}
 
                 <section id="who-needs-help" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Who Often Needs Extra Banking Guidance
                   </h2>
                   <WhoNeedsHelpCards cards={data.whoNeedsExtraHelp} />
                 </section>
 
                 <section id="scenarios" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Common Expat Banking Scenarios
                   </h2>
                   <ScenarioCards scenarios={data.scenarios} />
@@ -245,7 +246,7 @@ export default function BanksCategoryPage() {
 
                 {data.relatedCategories?.length ? (
                   <section className="scroll-mt-24 mt-12 space-y-4">
-                    <h3 className="text-lg font-semibold text-slate-900">Related finance categories</h3>
+                    <h3 className="text-lg font-bold text-copilot-text-primary">Related finance categories</h3>
                     <ul className="flex flex-wrap gap-2">
                       {data.relatedCategories.map((c) => (
                         <li key={c.href}>
@@ -258,45 +259,48 @@ export default function BanksCategoryPage() {
                   </section>
                 ) : null}
 
-                <section id="tools" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                <section id="tools" className="scroll-mt-24 mt-8 space-y-3">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Useful Tools Before Opening a Dutch Bank Account
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Use these tools to plan your move and document readiness so you’re ready when it’s time to open an account.
                   </p>
                   <ToolCards tools={toolCards} />
                 </section>
 
+                <PresetSoftCTA preset="servicesBanksHubSoftCta" contained={false} />
+
                 <section id="faq" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Frequently Asked Questions About Dutch Banks for Expats
                   </h2>
                   <Accordion items={faqAccordionItems} allowMultiple={false} className="max-w-3xl" />
                 </section>
 
                 <section id="official-sources" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Official Sources and Useful References
                   </h2>
                   <OfficialSourcesList sources={officialSources} />
                 </section>
 
                 <section className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-xl font-semibold text-slate-900">Editorial disclosure</h2>
+                  <h2 className="text-xl font-bold text-copilot-text-primary">Editorial disclosure</h2>
                   <EditorialDisclosureBlock disclosure={data.disclosure} />
                   <ServiceCategoryTrustLinks />
                 </section>
               </main>
 
               <aside className="hidden lg:block lg:sticky lg:top-24 lg:self-start">
-                <div className="rounded-xl border border-slate-200 bg-slate-50/50 p-4">
+                <div className="rounded-xl border border-copilot-primary/[0.08] bg-copilot-bg-soft/50 p-4">
                   <PillarTOC items={data.tocItems} />
                 </div>
               </aside>
             </div>
           </Container>
-        </Section>
+        </div>
+        </PillarMainStack>
       </div>
     </>
   );

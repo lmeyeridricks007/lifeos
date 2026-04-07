@@ -4,10 +4,11 @@ import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { PillarTOC } from "@/components/content/PillarTOC";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { Container } from "@/components/ui/container";
-import { Section } from "@/components/ui/section";
+import { PillarMainStack } from "@/components/page/pillar-template";
 import { Accordion } from "@/components/ui/accordion";
 import {
   ServiceCategoryHero,
+  ServiceCategoryHeroSection,
   ServiceCategoryIntro,
   RequirementAlertBox,
   CoverageExplainerCards,
@@ -145,17 +146,16 @@ export default function RelocationServicesCategoryPage() {
       {data.faqs?.length ? <FaqPageJsonLd items={data.faqs} /> : null}
 
       <div className="min-h-screen">
-        <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white py-8 sm:py-10 md:py-14">
-          <Container className="w-full max-w-screen-2xl">
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-600">
+        <ServiceCategoryHeroSection>
+            <nav aria-label="Breadcrumb" className="mb-6 text-sm text-copilot-text-secondary">
               <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
-                <li><Link href="/" className="hover:text-slate-900">Home</Link></li>
-                <li aria-hidden className="text-slate-400">/</li>
-                <li><Link href="/netherlands/" className="hover:text-slate-900">Netherlands</Link></li>
-                <li aria-hidden className="text-slate-400">/</li>
-                <li><Link href="/netherlands/services/" className="hover:text-slate-900">Services</Link></li>
-                <li aria-hidden className="text-slate-400">/</li>
-                <li className="font-medium text-slate-900" aria-current="page">Relocation Services</li>
+                <li><Link href="/" className="hover:text-copilot-text-primary">Home</Link></li>
+                <li aria-hidden className="text-copilot-text-muted">/</li>
+                <li><Link href="/netherlands/" className="hover:text-copilot-text-primary">Netherlands</Link></li>
+                <li aria-hidden className="text-copilot-text-muted">/</li>
+                <li><Link href="/netherlands/services/" className="hover:text-copilot-text-primary">Services</Link></li>
+                <li aria-hidden className="text-copilot-text-muted">/</li>
+                <li className="font-medium text-copilot-text-primary" aria-current="page">Relocation Services</li>
               </ol>
             </nav>
             <ServiceCategoryHero
@@ -166,14 +166,14 @@ export default function RelocationServicesCategoryPage() {
                 pageId: data.path,
               }}
             />
-          </Container>
-        </section>
+        </ServiceCategoryHeroSection>
 
-        <Section contained={false} className="py-8 md:py-12">
+        <PillarMainStack>
+        <div className="py-8 md:py-12">
           <Container className="w-full max-w-screen-2xl">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,2fr),minmax(280px,1fr)]">
               <main className="min-w-0 w-full">
-                <div className="mb-8 rounded-xl border border-slate-200 bg-slate-50/50 p-4 lg:hidden">
+                <div className="mb-8 rounded-xl border border-copilot-primary/[0.08] bg-copilot-bg-soft/50 p-4 lg:hidden">
                   <PillarTOC items={data.tocItems} />
                 </div>
 
@@ -204,20 +204,20 @@ export default function RelocationServicesCategoryPage() {
                 ) : null}
 
                 <section id="what-services-include" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     What Relocation Services Usually Include
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Relocation services typically cover housing search, immigration coordination, municipal registration, bank and utility setup, healthcare and schooling guidance, family support, and settling-in. They are broader than visa consultants or immigration lawyers, who focus on legal and permit matters. Partner pages from expat centres often describe these services together.
                   </p>
                   <CoverageExplainerCards cards={data.coverageCards} />
                 </section>
 
                 <section id="types-of-support" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Types of Relocation Support & When It&apos;s Worth It
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Full-service relocation, corporate mobility, housing-focused help, immigration + relocation bundles, family relocation, and settling-in services. The situations below often make relocation support worth paying for: employer-funded move, family move, no local network, short timeline, high-pressure city market, or wanting one point of coordination.
                   </p>
                   <RequirementAlertBox cards={data.requirementCards} />
@@ -230,20 +230,20 @@ export default function RelocationServicesCategoryPage() {
                 />
 
                 <section id="what-to-compare" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     How to Compare Relocation Services in the Netherlands
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     The right provider depends on your city, complexity, family situation, employer support, and whether you want full-service or only a few tasks. There is no single best provider for every move.
                   </p>
                   <ComparisonFactorsGrid factors={data.comparisonFactors} />
                 </section>
 
                 <section id="typical-costs" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Typical Relocation Service Costs in the Netherlands
                   </h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Pricing varies widely by scope. Some moves are employer-funded; some providers price per service, others by bundled package. Family relocations and complex multi-step moves usually cost more than lighter support. Request written clarity on what is included.
                   </p>
                   <CostBreakdownCards cards={data.costCards} />
@@ -251,7 +251,7 @@ export default function RelocationServicesCategoryPage() {
 
                 {data.whenNotNeed ? (
                   <section id="when-not-need" className="scroll-mt-24 mt-8 space-y-3">
-                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                       {data.whenNotNeed.heading}
                     </h2>
                     <DecisionSupportBlock whenNotNeed={data.whenNotNeed} />
@@ -259,7 +259,7 @@ export default function RelocationServicesCategoryPage() {
                 ) : null}
 
                 <section id="scenarios" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Common Expat Relocation Scenarios
                   </h2>
                   <ScenarioCards scenarios={data.scenarios} />
@@ -274,7 +274,7 @@ export default function RelocationServicesCategoryPage() {
 
                 {data.relatedCategories?.length ? (
                   <section className="scroll-mt-24 mt-8 space-y-4">
-                    <h3 className="text-lg font-semibold text-slate-900">Related service categories</h3>
+                    <h3 className="text-lg font-bold text-copilot-text-primary">Related service categories</h3>
                     <ul className="flex flex-wrap gap-2">
                       {data.relatedCategories.map((c) => (
                         <li key={c.href}>
@@ -290,22 +290,22 @@ export default function RelocationServicesCategoryPage() {
                   </section>
                 ) : null}
 
-                <section id="tools" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                <section id="tools" className="scroll-mt-24 mt-8 space-y-3">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Useful Tools Before Choosing a Relocation Service
                   </h2>
                   <ToolCards tools={toolCards} />
                 </section>
 
                 <section id="faq" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Frequently Asked Questions About Relocation Services in the Netherlands
                   </h2>
                   <Accordion items={faqAccordionItems} />
                 </section>
 
                 <section id="official-sources" className="scroll-mt-24 mt-8 space-y-5">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     Official Sources and Trusted Provider Ecosystems
                   </h2>
                   <OfficialSourcesList sources={officialSources} />
@@ -317,7 +317,7 @@ export default function RelocationServicesCategoryPage() {
 
               <aside className="relative hidden lg:block">
                 <div className="sticky top-24 space-y-6">
-                  <div className="rounded-xl border border-slate-200 bg-slate-50/50 p-4">
+                  <div className="rounded-xl border border-copilot-primary/[0.08] bg-copilot-bg-soft/50 p-4">
                     <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">On this page</p>
                     <PillarTOC items={data.tocItems} className="mt-3" />
                   </div>
@@ -325,7 +325,8 @@ export default function RelocationServicesCategoryPage() {
               </aside>
             </div>
           </Container>
-        </Section>
+        </div>
+        </PillarMainStack>
       </div>
     </>
   );

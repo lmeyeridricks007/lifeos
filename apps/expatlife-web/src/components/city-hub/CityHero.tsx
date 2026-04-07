@@ -14,10 +14,10 @@ export function CityHero({ hero }: { hero: CityHubHero }) {
           {hero.eyebrow}
         </p>
       ) : null}
-      <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl md:text-5xl max-w-5xl">
+      <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-5xl max-w-5xl">
         {hero.title}
       </h1>
-      <p className="max-w-5xl text-base text-slate-600 md:text-lg">
+      <p className="max-w-5xl text-base text-foreground-muted md:text-lg">
         {hero.subtitle}
       </p>
       <div className="flex flex-wrap items-center gap-3">
@@ -25,7 +25,7 @@ export function CityHero({ hero }: { hero: CityHubHero }) {
           <Link
             key={cta.href}
             href={cta.href}
-            className="inline-flex items-center rounded-lg bg-slate-900 px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-slate-800"
+            className="inline-flex items-center rounded-lg bg-foreground px-6 py-3 text-base font-semibold text-canvas shadow-card hover:bg-foreground/90"
           >
             {cta.label}
             <span className="ml-1" aria-hidden>→</span>
@@ -35,7 +35,7 @@ export function CityHero({ hero }: { hero: CityHubHero }) {
           <Link
             key={cta.href}
             href={cta.href}
-            className="inline-flex items-center rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50"
+            className="inline-flex items-center rounded-lg border border-border-strong bg-surface-raised px-5 py-2.5 text-sm font-medium text-foreground hover:bg-surface-muted"
           >
             {cta.label}
           </Link>

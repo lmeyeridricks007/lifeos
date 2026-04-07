@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Briefcase,
@@ -11,8 +12,8 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
-import { ToolHero } from "@/src/components/tools/ToolHero";
-import { Section } from "@/components/ui/section";
+import { MoveHero, MoveToolSidebar } from "@/components/page/move-shell";
+import { SectionBlock } from "@/components/page/pillar-template";
 import { CardLink } from "@/components/ui/card-link";
 import { ContentTable, ContentTableRow, ContentTableCell } from "@/components/ui/content-table";
 import { buildBreadcrumbSchema } from "@/src/lib/seo/breadcrumbSchema";
@@ -26,10 +27,11 @@ import {
 } from "@/src/data/visa-comparison";
 import { getVisaRelocationMarketingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 import type { SituationCard } from "@/src/data/visa-comparison/situation-cards";
-import { PillarTOC } from "@/components/content/PillarTOC";
 import { RecommendedImmigrationLawyersSection } from "@/src/components/tools/shared/RecommendedImmigrationLawyersSection";
 import { CompareVisasFilterChips } from "./CompareVisasFilterChips";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { PresetSoftCTA } from "@/src/components/soft-cta/PresetSoftCTA";
+import { CollapsiblePanel } from "@/components/ui/collapsible-panel";
 
 /** Icon and accent style per situation card id for the "Compare by your situation" section. */
 const SITUATION_CARD_STYLES: Record<
@@ -38,25 +40,25 @@ const SITUATION_CARD_STYLES: Record<
 > = {
   "job-offer": {
     Icon: Briefcase,
-    borderClass: "border-l-4 border-l-blue-500",
-    iconBgClass: "bg-blue-100",
-    iconColorClass: "text-blue-600",
+    borderClass: "border-l-4 border-l-brand",
+    iconBgClass: "bg-brand-muted",
+    iconColorClass: "text-brand",
   },
   "freelance-business": {
     Icon: Rocket,
-    borderClass: "border-l-4 border-l-emerald-500",
+    borderClass: "border-l-4 border-l-success",
     iconBgClass: "bg-emerald-100",
     iconColorClass: "text-emerald-600",
   },
   "us-entrepreneur": {
     Icon: Flag,
-    borderClass: "border-l-4 border-l-amber-500",
+    borderClass: "border-l-4 border-l-warning",
     iconBgClass: "bg-amber-100",
     iconColorClass: "text-amber-600",
   },
   study: {
     Icon: GraduationCap,
-    borderClass: "border-l-4 border-l-violet-500",
+    borderClass: "border-l-4 border-l-info",
     iconBgClass: "bg-violet-100",
     iconColorClass: "text-violet-600",
   },
@@ -69,8 +71,8 @@ const SITUATION_CARD_STYLES: Record<
   "not-sure": {
     Icon: HelpCircle,
     borderClass: "border-l-4 border-l-slate-400",
-    iconBgClass: "bg-slate-100",
-    iconColorClass: "text-slate-600",
+    iconBgClass: "bg-surface-muted",
+    iconColorClass: "text-foreground-muted",
   },
 };
 
@@ -82,12 +84,12 @@ const BASE = "/netherlands";
 export const metadata: Metadata = {
   title: "Compare Netherlands Visas | Costs, Timelines, Requirements, Best Uses",
   description:
-    "Compare the main visa and residence routes for moving to the Netherlands, including work, student, partner, entrepreneur, and family options, with practical guidance on costs, timing, and best fit.",
+    "Compare the main visa and residence routes for moving to the Netherlands, including work, student, partner, entrepreneur, and family options, with practical guidance on costs, timing, and typical trade-offs.",
   alternates: { canonical },
   openGraph: {
     title: "Compare Netherlands Visas | Costs, Timelines, Requirements, Best Uses",
     description:
-      "Compare the main visa and residence routes for moving to the Netherlands, including work, student, partner, entrepreneur, and family options, with practical guidance on costs, timing, and best fit.",
+      "Compare the main visa and residence routes for moving to the Netherlands, including work, student, partner, entrepreneur, and family options, with practical guidance on costs, timing, and typical trade-offs.",
     url: canonical,
     type: "article",
   },
@@ -95,7 +97,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Compare Netherlands Visas | Costs, Timelines, Requirements, Best Uses",
     description:
-      "Compare the main visa and residence routes for moving to the Netherlands, including work, student, partner, entrepreneur, and family options, with practical guidance on costs, timing, and best fit.",
+      "Compare the main visa and residence routes for moving to the Netherlands, including work, student, partner, entrepreneur, and family options, with practical guidance on costs, timing, and typical trade-offs.",
   },
 };
 
@@ -108,7 +110,7 @@ const FAQ_ITEMS = [
   },
   {
     id: "best-with-job",
-    question: "What is the best visa if I have a job offer?",
+    question: "Which visa route usually fits a job offer?",
     answer:
       "If you have a job offer from a Dutch employer that is (or can become) a recognized IND sponsor, the Highly Skilled Migrant permit is one of the most common routes. The EU Blue Card is an alternative with different salary and framework rules. Compare both guides and use the visa checker to see which fits your offer and goals.",
   },
@@ -187,14 +189,8 @@ export default function CompareVisasPage() {
 
   const intro = (
     <div className="space-y-4">
-      <p className="text-slate-600">
-        The Netherlands does not have one single “move visa.” The right route depends on why you are moving: work, study, business, or partner/family. Some routes require employer sponsorship; others are tied to nationality or relationship status. Some are typically easier to apply for than others depending on your profile. This page helps you compare the main route types—including{" "}
-        <Link href={`${BASE}/visa/highly-skilled-migrant/`} className="font-medium text-brand-600 hover:text-brand-700">Highly Skilled Migrant</Link>,{" "}
-        <Link href={`${BASE}/visa/eu-blue-card/`} className="font-medium text-brand-600 hover:text-brand-700">EU Blue Card</Link>,{" "}
-        <Link href={`${BASE}/visa/dutch-american-friendship-treaty/`} className="font-medium text-brand-600 hover:text-brand-700">DAFT</Link>,{" "}
-        <Link href={`${BASE}/visa/self-employed-visa/`} className="font-medium text-brand-600 hover:text-brand-700">self-employed</Link>,{" "}
-        <Link href={`${BASE}/visa/student-visa/`} className="font-medium text-brand-600 hover:text-brand-700">student</Link>, and{" "}
-        <Link href={`${BASE}/visa/partner-family-visa/`} className="font-medium text-brand-600 hover:text-brand-700">partner/family</Link>—before diving into full visa pages or tools.
+      <p className="text-foreground-muted">
+        The right route depends on why you are moving—work, study, business, or family—and whether you have a sponsor, admission, or relationship basis. Use the comparison table and situation cards below, then open individual visa guides for detail.
       </p>
     </div>
   );
@@ -211,46 +207,46 @@ export default function CompareVisasPage() {
         <CompareVisasFilterChips />
       </div>
       <div id="master-comparison-table" className="scroll-mt-24">
-        <h3 className="mb-4 text-lg font-semibold text-slate-900">Master comparison table</h3>
+        <h3 className="mb-4 text-lg font-semibold text-foreground">Master comparison table</h3>
 
         {/* Mobile: card per route (stacked, touch-friendly) */}
         <div className="space-y-4 md:hidden">
           {ROUTE_COMPARISON_ENTRIES.map((route) => (
             <article
               key={route.routeId}
-              className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm"
+              className="rounded-xl border border-border bg-surface-raised p-4 shadow-sm"
             >
-              <h4 className="font-semibold text-slate-900">{route.title}</h4>
+              <h4 className="font-semibold text-foreground">{route.title}</h4>
               <dl className="mt-3 space-y-2 text-sm">
                 <div>
-                  <dt className="text-xs font-medium uppercase tracking-wide text-slate-400">Best for</dt>
-                  <dd className="mt-0.5 text-slate-700">{route.bestFor}</dd>
+                  <dt className="text-xs font-medium uppercase tracking-wide text-foreground-faint">Best for</dt>
+                  <dd className="mt-0.5 text-foreground">{route.bestFor}</dd>
                 </div>
                 <div className="grid grid-cols-2 gap-x-4 gap-y-2">
                   <div>
-                    <dt className="text-xs font-medium uppercase tracking-wide text-slate-400">Sponsor</dt>
-                    <dd className="mt-0.5 text-slate-700">{route.sponsorNeededLabel}</dd>
+                    <dt className="text-xs font-medium uppercase tracking-wide text-foreground-faint">Sponsor</dt>
+                    <dd className="mt-0.5 text-foreground">{route.sponsorNeededLabel}</dd>
                   </div>
                   <div>
-                    <dt className="text-xs font-medium uppercase tracking-wide text-slate-400">Complexity</dt>
-                    <dd className="mt-0.5 text-slate-700">{route.typicalComplexity}</dd>
+                    <dt className="text-xs font-medium uppercase tracking-wide text-foreground-faint">Complexity</dt>
+                    <dd className="mt-0.5 text-foreground">{route.typicalComplexity}</dd>
                   </div>
                   <div>
-                    <dt className="text-xs font-medium uppercase tracking-wide text-slate-400">Timeline</dt>
-                    <dd className="mt-0.5 text-slate-700">{route.timelineLabel}</dd>
+                    <dt className="text-xs font-medium uppercase tracking-wide text-foreground-faint">Timeline</dt>
+                    <dd className="mt-0.5 text-foreground">{route.timelineLabel}</dd>
                   </div>
                   <div>
-                    <dt className="text-xs font-medium uppercase tracking-wide text-slate-400">Fee</dt>
-                    <dd className="mt-0.5 text-slate-700">{route.officialFeeLabel}</dd>
+                    <dt className="text-xs font-medium uppercase tracking-wide text-foreground-faint">Fee</dt>
+                    <dd className="mt-0.5 text-foreground">{route.officialFeeLabel}</dd>
                   </div>
                 </div>
                 <div>
-                  <dt className="text-xs font-medium uppercase tracking-wide text-slate-400">Work rights</dt>
-                  <dd className="mt-0.5 text-slate-700">{route.workRightsLabel}</dd>
+                  <dt className="text-xs font-medium uppercase tracking-wide text-foreground-faint">Work rights</dt>
+                  <dd className="mt-0.5 text-foreground">{route.workRightsLabel}</dd>
                 </div>
                 <div>
-                  <dt className="text-xs font-medium uppercase tracking-wide text-slate-400">Best next step</dt>
-                  <dd className="mt-0.5 text-slate-600">{route.bestNextStep}</dd>
+                  <dt className="text-xs font-medium uppercase tracking-wide text-foreground-faint">Best next step</dt>
+                  <dd className="mt-0.5 text-foreground-muted">{route.bestNextStep}</dd>
                 </div>
               </dl>
               <Link
@@ -271,7 +267,7 @@ export default function CompareVisasPage() {
           >
             {ROUTE_COMPARISON_ENTRIES.map((route) => (
               <ContentTableRow key={route.routeId}>
-                <ContentTableCell emphasis className="font-medium text-slate-800">
+                <ContentTableCell emphasis className="font-medium text-foreground">
                   {route.title}
                 </ContentTableCell>
                 <ContentTableCell>{route.bestFor}</ContentTableCell>
@@ -280,7 +276,7 @@ export default function CompareVisasPage() {
                 <ContentTableCell>{route.timelineLabel}</ContentTableCell>
                 <ContentTableCell>{route.officialFeeLabel}</ContentTableCell>
                 <ContentTableCell>{route.workRightsLabel}</ContentTableCell>
-                <ContentTableCell className="text-sm text-slate-600">{route.bestNextStep}</ContentTableCell>
+                <ContentTableCell className="text-sm text-foreground-muted">{route.bestNextStep}</ContentTableCell>
                 <ContentTableCell>
                   <Link href={route.guideHref} className="font-medium text-brand-600 hover:text-brand-700">
                     View guide
@@ -297,8 +293,8 @@ export default function CompareVisasPage() {
   const situationSection = (
     <div id="compare-by-situation" className="scroll-mt-24 space-y-8">
       <div>
-        <h2 className="text-xl font-semibold text-slate-900">Compare by your situation</h2>
-        <p className="mt-1 text-sm text-slate-600">Pick the scenario closest to you and see which routes to compare.</p>
+        <h2 className="text-xl font-semibold text-foreground">Compare by your situation</h2>
+        <p className="mt-1 text-sm text-foreground-muted">Pick the scenario closest to you and see which routes to compare.</p>
       </div>
       <div className="grid gap-5 sm:grid-cols-2">
         {COMPARISON_SITUATION_CARDS.map((card: SituationCard) => {
@@ -307,18 +303,18 @@ export default function CompareVisasPage() {
           return (
             <div
               key={card.id}
-              className={`rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:border-slate-300 hover:shadow-md ${style.borderClass}`}
+              className={`rounded-card border border-border bg-surface-raised p-5 shadow-sm transition-all hover:border-border-strong hover:shadow-md ${style.borderClass}`}
             >
               <div className="flex items-start gap-4">
                 <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${style.iconBgClass} ${style.iconColorClass}`} aria-hidden>
                   <IconComponent className="h-5 w-5" />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <h3 className="font-semibold text-slate-900">{card.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{card.reasoning}</p>
+                  <h3 className="font-semibold text-foreground">{card.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{card.reasoning}</p>
                   {card.routes.length > 0 ? (
                     <div className="mt-3">
-                      <p className="text-xs font-medium uppercase tracking-wide text-slate-400">Recommended routes</p>
+                      <p className="text-xs font-medium uppercase tracking-wide text-foreground-faint">Recommended routes</p>
                       <ul className="mt-1.5 flex flex-wrap gap-x-3 gap-y-1">
                         {card.routes.map((r) => (
                           <li key={r.href}>
@@ -332,7 +328,7 @@ export default function CompareVisasPage() {
                   ) : null}
                   <Link
                     href={card.visaCheckerHref}
-                    className="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-slate-100 px-3.5 py-2 text-sm font-medium text-slate-800 transition hover:bg-brand-100 hover:text-brand-700"
+                    className="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-surface-muted px-3.5 py-2 text-sm font-medium text-foreground transition hover:bg-brand-100 hover:text-brand-700"
                   >
                     Use the Visa Checker
                     <ArrowRight className="h-4 w-4" aria-hidden />
@@ -349,17 +345,17 @@ export default function CompareVisasPage() {
   const bestVisaItems: Array<{ id: string; title: string; body: ReactNode }> = [
     {
       id: "job-offer",
-      title: "Best visa if you have a Dutch job offer",
+      title: "If you have a Dutch job offer",
       body: (
         <>
-          The Highly Skilled Migrant permit is often the best fit when you have an offer from a recognized IND sponsor and the salary meets the threshold. The EU Blue Card is a common alternative with different salary and EU-wide mobility rules.{" "}
+          The Highly Skilled Migrant permit is often the right route when you have an offer from a recognized IND sponsor and the salary meets the threshold. The EU Blue Card is a common alternative with different salary and EU-wide mobility rules.{" "}
           <Link href={`${BASE}/visa-checker/`} className="font-medium text-brand-600 hover:text-brand-700">Use the Visa Checker</Link> and read the <Link href={`${BASE}/visa/highly-skilled-migrant/`} className="font-medium text-brand-600 hover:text-brand-700">HSM</Link> and <Link href={`${BASE}/visa/eu-blue-card/`} className="font-medium text-brand-600 hover:text-brand-700">EU Blue Card</Link> guides to compare.
         </>
       ),
     },
     {
       id: "freelance-business",
-      title: "Best visa for entrepreneurs and freelancers",
+      title: "Entrepreneurs and freelancers",
       body: (
         <>
           US citizens can consider DAFT; others use the general self-employed residence permit. Both require a business plan and meeting IND criteria.{" "}
@@ -369,7 +365,7 @@ export default function CompareVisasPage() {
     },
     {
       id: "us-entrepreneur",
-      title: "Best visa for US citizens starting a business",
+      title: "US citizens starting a business",
       body: (
         <>
           DAFT is typically suited to US citizens who want to run a business or work as self-employed in the Netherlands. Compare with the self-employed route for requirements and timeline.{" "}
@@ -379,7 +375,7 @@ export default function CompareVisasPage() {
     },
     {
       id: "study",
-      title: "Best visa for students",
+      title: "Students",
       body: (
         <>
           Non-EU students admitted to qualifying Dutch education apply for a study residence permit; the institution usually submits the application.{" "}
@@ -389,7 +385,7 @@ export default function CompareVisasPage() {
     },
     {
       id: "join-partner",
-      title: "Best visa for joining a partner or family",
+      title: "Joining a partner or family",
       body: (
         <>
           The partner or family residence permit allows you to join a spouse or partner who lives legally in the Netherlands. The sponsor must meet income and housing requirements.{" "}
@@ -411,8 +407,8 @@ export default function CompareVisasPage() {
   const bestVisaSections = (
     <div id="best-visa-for" className="mt-10 scroll-mt-24">
       <div className="mb-6">
-        <h2 className="text-xl font-semibold text-slate-900">Best visa for your situation</h2>
-        <p className="mt-1 text-sm text-slate-600">Short guidance per scenario with links to the right guides and tools.</p>
+        <h2 className="text-xl font-semibold text-foreground">Visa routes by situation</h2>
+        <p className="mt-1 text-sm text-foreground-muted">Short guidance per scenario with links to the right guides and tools.</p>
       </div>
       <div className="grid gap-5 sm:grid-cols-2">
         {bestVisaItems.map((item) => {
@@ -421,15 +417,15 @@ export default function CompareVisasPage() {
           return (
             <div
               key={item.id}
-              className={`rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:border-slate-300 hover:shadow-md ${style.borderClass}`}
+              className={`rounded-card border border-border bg-surface-raised p-5 shadow-sm transition-all hover:border-border-strong hover:shadow-md ${style.borderClass}`}
             >
               <div className="flex items-start gap-4">
                 <div className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${style.iconBgClass} ${style.iconColorClass}`} aria-hidden>
                   <IconComponent className="h-5 w-5" />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <h3 className="font-semibold text-slate-900">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-600">{item.body}</p>
+                  <h3 className="font-semibold text-foreground">{item.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{item.body}</p>
                 </div>
               </div>
             </div>
@@ -441,18 +437,18 @@ export default function CompareVisasPage() {
 
   const examplesSection = (
     <div className="space-y-4">
-      <p className="text-sm text-slate-600">
+      <p className="text-sm text-foreground-muted">
         Click below to open the Visa Checker with a scenario; you can then adjust answers to see how recommendations change.
       </p>
       <div className="grid gap-3 sm:grid-cols-2">
         {COMPARISON_EXAMPLE_SCENARIOS.map((scenario) => (
           <div
             key={scenario.id}
-            className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm hover:border-brand-200 hover:bg-brand-50/30"
+            className="rounded-xl border border-border bg-surface-raised p-4 shadow-sm hover:border-brand-200 hover:bg-brand-50/30"
           >
-            <h4 className="font-medium text-slate-900">{scenario.title}</h4>
-            <p className="mt-1 text-sm text-slate-600">{scenario.explanation}</p>
-            <p className="mt-2 text-xs font-medium text-slate-500">Recommended: {scenario.recommendedRoutes.join(", ")}</p>
+            <h4 className="font-medium text-foreground">{scenario.title}</h4>
+            <p className="mt-1 text-sm text-foreground-muted">{scenario.explanation}</p>
+            <p className="mt-2 text-xs font-medium text-foreground-muted">Recommended: {scenario.recommendedRoutes.join(", ")}</p>
             <Link href={scenario.ctaHref} className="mt-3 inline-block text-sm font-medium text-brand-600 hover:text-brand-700">
               {scenario.ctaLabel} →
             </Link>
@@ -470,64 +466,72 @@ export default function CompareVisasPage() {
           href={tool.href}
           title={tool.label}
           description={tool.description}
-          className="border-l-4 border-l-brand-500/70 border-sky-200/80 bg-white hover:border-brand-300 hover:bg-sky-50/50"
+          className="border-l-4 border-l-brand-500/70 border-brand/25 bg-surface-raised hover:border-brand-300 hover:bg-brand-muted/45"
         />
       ))}
     </div>
   );
 
   const recommendedServicesSection = (
-    <section className="rounded-2xl border-2 border-slate-200 bg-slate-50/80 p-5 md:p-6">
-      <h3 className="text-lg font-semibold text-slate-900">Recommended services</h3>
-      <p className="mt-1 text-sm text-slate-600">
-        These services may help at different stages of your move depending on the visa route you choose.
+    <>
+      <p className="text-sm text-foreground-muted">
+        Optional providers some readers brief alongside official sources—expand if you want to browse cards.
       </p>
-      <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {comparisonRecommendedServices.map((service) => {
-          const initials = service.name
-            .split(/[\s-]+/)
-            .filter(Boolean)
-            .slice(0, 2)
-            .map((p) => p[0])
-            .join("")
-            .toUpperCase() || service.name.slice(0, 2).toUpperCase();
-          return (
-            <a
-              key={service.name}
-              href={service.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex flex-col rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-brand-200 hover:shadow-md"
-            >
-              <div className="flex h-16 shrink-0 items-center justify-center rounded-lg bg-slate-50/80 px-3">
-                {service.logo ? (
-                  <img
-                    src={service.logo.src}
-                    alt={service.logo.alt}
-                    width={120}
-                    height={48}
-                    className="max-h-12 w-full object-contain object-center"
-                  />
-                ) : (
-                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-slate-200 text-sm font-semibold text-slate-600" aria-hidden>
-                    {initials}
-                  </span>
-                )}
-              </div>
-              <p className="mt-3 font-semibold text-slate-900">{service.name}</p>
-              <p className="mt-1 text-sm text-slate-600">{service.useFor}</p>
-              <span className="mt-2 inline-block text-xs font-medium text-brand-600">Visit site →</span>
-            </a>
-          );
-        })}
-      </div>
-    </section>
+      <CollapsiblePanel
+        title="Show service provider cards"
+        defaultOpen={false}
+        titleClassName="text-base font-semibold text-foreground"
+        triggerClassName="mt-3 cursor-pointer rounded-xl border border-border bg-surface-muted/60 px-3 py-2.5 text-left text-foreground hover:bg-surface-muted"
+        className="mt-1"
+      >
+        <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {comparisonRecommendedServices.map((service) => {
+            const initials = service.name
+              .split(/[\s-]+/)
+              .filter(Boolean)
+              .slice(0, 2)
+              .map((p) => p[0])
+              .join("")
+              .toUpperCase() || service.name.slice(0, 2).toUpperCase();
+            return (
+              <a
+                key={service.name}
+                href={service.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col rounded-card border border-border bg-surface-raised p-4 shadow-card transition hover:border-brand/30 hover:shadow-card-hover motion-reduce:hover:shadow-card"
+              >
+                <div className="flex h-16 shrink-0 items-center justify-center rounded-lg bg-surface-muted/80 px-3">
+                  {service.logo ? (
+                    <Image
+                      src={service.logo.src}
+                      alt={service.logo.alt}
+                      width={120}
+                      height={48}
+                      className="max-h-12 w-full object-contain object-center"
+                      unoptimized={!service.logo.src.startsWith("/")}
+                    />
+                  ) : (
+                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-surface-muted text-sm font-semibold text-foreground-muted" aria-hidden>
+                      {initials}
+                    </span>
+                  )}
+                </div>
+                <p className="mt-3 font-semibold text-foreground">{service.name}</p>
+                <p className="mt-1 text-sm text-foreground-muted">{service.useFor}</p>
+                <span className="mt-2 inline-block text-xs font-medium text-brand-600">Visit site →</span>
+              </a>
+            );
+          })}
+        </div>
+      </CollapsiblePanel>
+    </>
   );
 
   const officialSourcesSection = (
-    <div className="rounded-2xl border border-slate-200 bg-slate-50/60 p-5 md:p-6">
-      <h3 className="text-lg font-semibold text-slate-900">Official sources and further reading</h3>
-      <p className="mt-1 text-sm text-slate-600">For current rules, forms, and fees, refer to the IND and Dutch government.</p>
+    <div className="rounded-card border border-border bg-surface-muted/60 p-5 md:p-6">
+      <h3 className="text-lg font-semibold text-foreground">Official sources and further reading</h3>
+      <p className="mt-1 text-sm text-foreground-muted">For current rules, forms, and fees, refer to the IND and Dutch government.</p>
       <ul className="mt-4 space-y-2">
         {COMPARISON_OFFICIAL_SOURCES.map((source) => (
           <li key={source.href}>
@@ -541,18 +545,12 @@ export default function CompareVisasPage() {
   );
 
   const seoContent = (
-    <div className="prose prose-slate max-w-none text-slate-600">
+    <div className="prose prose-slate max-w-none text-foreground-muted">
       <p>
-        Choosing the right visa for moving to the Netherlands depends on your purpose of move. Work routes are different from study and family routes; sponsorship matters for many work and family options; entrepreneur routes are different from employer-sponsored routes. Nationality can matter too—for example, the Dutch-American Friendship Treaty (DAFT) is only for US citizens. There is no universal “best” visa; the best route depends on your situation. Comparing costs, timing, and document requirements before deciding helps you plan realistically.
+        Compare sponsor rules, typical complexity, timelines, and fees in the table, then narrow with the Visa Checker. Work routes usually need an employer; partner routes need a qualifying sponsor; DAFT is US-only; students go through their school.
       </p>
       <p>
-        If you have a job offer from a recognized sponsor and your salary meets the threshold, the Highly Skilled Migrant permit is one of the most common work routes. The EU Blue Card offers an alternative with different salary and EU-wide mobility rules. If you are self-employed, US citizens often consider DAFT; others use the general self-employed residence permit. Students need admission and proof of funds; partner and family applicants need a sponsor in the Netherlands who meets income and housing requirements.
-      </p>
-      <p>
-        Sponsorship is a key differentiator: work routes like HSM and EU Blue Card typically require an employer to apply or be recognized; the partner visa requires a sponsor in the Netherlands. Self-employed and DAFT routes do not require an employer sponsor but have their own viability and investment criteria. Comparing these dimensions—sponsor needed, typical complexity, timeline, and official fees—helps you see which routes are often best for your profile.
-      </p>
-      <p>
-        Use this comparison page to see the main Dutch visa and residence routes side by side. When you are unsure which route fits, the Visa Checker is the best next step: answer a few questions to get a personalized recommendation, then read the full visa guides and use the document readiness checker, cost calculator, and relocation cost estimator to build a practical move plan.
+        When one route fits, read that visa guide and continue with document and budget tools—requirements change; confirm on the IND site.
       </p>
     </div>
   );
@@ -560,7 +558,7 @@ export default function CompareVisasPage() {
   const sidebarOnThisPage = [
     { id: "tool-inputs", label: "Compare routes" },
     { id: "compare-by-situation", label: "Compare by situation" },
-    { id: "best-visa-for", label: "Best visa for..." },
+    { id: "best-visa-for", label: "Routes by goal" },
     { id: "example-scenarios", label: "Example scenarios" },
     { id: "recommended-immigration-lawyers", label: "Immigration lawyers" },
     { id: "recommended-services", label: "Services" },
@@ -568,34 +566,13 @@ export default function CompareVisasPage() {
     { id: "official-sources", label: "Official sources" },
   ];
 
-  const sidebar = (
-    <>
-      <PillarTOC items={sidebarOnThisPage} />
-      <div className="rounded-xl border border-slate-200 bg-slate-50/50 p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Tools</p>
-        <ul className="mt-3 space-y-2">
-          <li>
-            <Link href={`${BASE}/visa-checker/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Use the Visa Checker</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-          <li>
-            <Link href={`${BASE}/document-readiness-checker/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Check my documents</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-          <li>
-            <Link href={`${BASE}/visa-cost-calculator/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Estimate visa costs</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </>
-  );
+  const compareVisasQuickLinks = [
+    { label: "Use the Visa Checker", href: `${BASE}/visa-checker/` },
+    { label: "Check my documents", href: `${BASE}/document-readiness-checker/` },
+    { label: "Estimate visa costs", href: `${BASE}/visa-cost-calculator/` },
+  ];
+
+  const sidebar = <MoveToolSidebar tocItems={sidebarOnThisPage} quickLinks={compareVisasQuickLinks} />;
 
   return (
     <>
@@ -603,11 +580,13 @@ export default function CompareVisasPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       <ToolPageTemplate
+        movingClusterHero
         hero={
-          <ToolHero
-            eyebrow="VISA HUB"
+          <MoveHero
+            variant="tool"
+            eyebrow="TOOL"
             title="Compare Netherlands Visas: Which Route Fits Your Situation?"
-            subtitle="Compare the main Dutch visa and residence routes side by side — including work, entrepreneur, student, and partner options — and find the best next step for your move."
+            subtitle="Compare the main Dutch visa and residence routes side by side — work, entrepreneur, student, partner, and more — then narrow with the Visa Checker or a single-route guide."
             primaryCtaLabel="Use the Visa Checker"
             primaryCtaHref={`${BASE}/visa-checker/`}
             secondaryCtaLabel="Browse all visa guides"
@@ -624,10 +603,14 @@ export default function CompareVisasPage() {
         examplesSection={examplesSection}
         faqItems={FAQ_ITEMS}
         relatedGuides={RELATED_GUIDES}
-        recommendedLawyersSection={<RecommendedImmigrationLawyersSection intro="For complex route comparison or tailored advice on work, DAFT, self-employed, or family routes, these immigration law firms specialise in Dutch residence permits and visa options." />}
+        recommendedLawyersSection={
+          <RecommendedImmigrationLawyersSection intro="For tailored advice on work, DAFT, self-employed, or family routes, these firms focus on Dutch residence permits. Fees vary—contact them for scope and quotes." />
+        }
         recommendedServices={recommendedServicesSection}
         seoContent={seoContent}
         seoContentSectionTitle="How to choose the right visa for moving to the Netherlands"
+        beforeFaq={<PresetSoftCTA preset="afterVisaToolComparePlanning" />}
+        monetizationPageType="comparison"
         sidebar={sidebar}
         internalLinkStrip={
           <nav className="flex flex-wrap gap-4 text-sm" aria-label="Related">
@@ -643,12 +626,12 @@ export default function CompareVisasPage() {
         }
         extraSection={
           <>
-            <Section id="related-tools" title="Related tools" contained={true} className="pt-6">
+            <SectionBlock id="related-tools" title="Related tools" compact className="pt-3 md:pt-4">
               {relatedToolsSection}
-            </Section>
-            <Section id="official-sources" title="Official sources" contained={true} className="pt-6">
+            </SectionBlock>
+            <SectionBlock id="official-sources" title="Official sources" compact className="pt-3 md:pt-4">
               {officialSourcesSection}
-            </Section>
+            </SectionBlock>
           </>
         }
       >

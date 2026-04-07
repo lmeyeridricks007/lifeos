@@ -1,21 +1,30 @@
 import Link from "next/link";
 import { Lightbulb } from "lucide-react";
 import { Container } from "@/components/ui/container";
-import { Section } from "@/components/ui/section";
 import { PillarTOC } from "@/components/content/PillarTOC";
 import { InfoBox } from "@/components/ui/info-box";
 import type { CityHubPageData } from "@/src/lib/city-hub/types";
 import type { CityServiceCard } from "@/src/lib/city-hub/types";
-import { CityHero } from "./CityHero";
+import { GuidePageTemplate } from "@/components/page/page-templates";
+import {
+  FAQBlock,
+  PageHero,
+  PillarGuideAtGlanceRegion,
+  PillarGuideFaqRegion,
+  PillarGuideHeroRegion,
+  PillarGuideNextStepsRegion,
+  PillarGuideToolsSection,
+  PillarJourneyStack,
+  SectionBlock,
+  ToolCard,
+} from "@/components/page/pillar-template";
 import { QuickFactsGrid } from "./QuickFactsGrid";
 import { OverviewIntro } from "./OverviewIntro";
 import { ProcessTimeline } from "./ProcessTimeline";
 import { CityChecklist } from "./CityChecklist";
 import { ExampleScenarios } from "./ExampleScenarios";
 import { ServiceCards } from "./ServiceCards";
-import { ToolCards } from "./ToolCards";
-import { FAQAccordion } from "./FAQAccordion";
-import { RelatedGuidesSection } from "./RelatedGuidesGrid";
+import { RelatedGuidesGrid } from "./RelatedGuidesGrid";
 import { OfficialSourcesList } from "./OfficialSourcesList";
 import { CityLinksSection } from "./CityLinksSection";
 import { CityOverview } from "./CityOverview";
@@ -23,10 +32,33 @@ import { CityWhyExpatsCombinedSection } from "./CityReasonsGrid";
 import { CityStatsCards } from "./CityStatsCards";
 import { CityComparisonTable } from "./CityComparisonTable";
 import { CityExpatsProfile } from "./CityExpatsProfile";
+import { CityHubHeroCtas } from "./CityHubHeroCtas";
+import { CitySignatureDarkSection } from "./CitySignatureDarkSection";
 import { cn } from "@/lib/cn";
 import { withCityHubRegistryCards } from "@/src/lib/city-hub/registryCityServiceCards";
+import { getSiteOrigin } from "@/lib/site-origin";
+import { cityGuideKeySectionsPadClass, guideKeyColumnStackGapClass } from "@/lib/ui/page-rhythm";
+import {
+  siteGuideColumnPadYClass,
+  sitePillarFramedHeroGutterXClass,
+  sitePillarFramedHeroTopBandClass,
+} from "@/lib/ui/site-shell-identity";
+import { movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
+import { PresetSoftCTA } from "@/src/components/soft-cta/PresetSoftCTA";
+import { CityHubMonetizationAfterContent } from "@/src/components/monetization/CityHubMonetizationAfterContent";
 
-const pageContainerClass = "w-full max-w-screen-2xl";
+/**
+ * City guide variant of the moving-pillar `GuidePageTemplate`: same ExpatOS shells, spacing rhythm,
+ * and card language; ordered hero → at-a-glance → key sections (+ quiet TOC) → tools → next steps → FAQ.
+ *
+ * **All** Netherlands city hubs (`NETHERLANDS_CITY_HUB_PAGES` in `src/lib/city-hub/netherlandsCityHubPages.ts`)
+ * should render through this template only (`app/netherlands/{slug}/page.tsx` → `<CityHubTemplate />`).
+ * Shared children (`RelatedGuidesGrid`, `CityComparisonTable`, `CityHubHeroCtas`, etc.) propagate UI changes
+ * to every city automatically — do not duplicate layout per city.
+ */
+const linkCtaClass =
+  "text-sm font-semibold text-copilot-primary transition hover:text-copilot-primary-strong hover:underline";
 
 export type CityHubTemplateProps = {
   data: CityHubPageData;
@@ -34,36 +66,36 @@ export type CityHubTemplateProps = {
   allServices?: CityServiceCard[];
 };
 
-/** Breadcrumb: Home > Netherlands > Cities > [City name]. Pass basePath e.g. /netherlands/amsterdam/ */
-function CityBreadcrumb({
-  cityName,
-  basePath,
-}: {
-  cityName: string;
-  basePath: string;
-}) {
+/** Breadcrumb: Home > Netherlands > Cities > [City name]. */
+function CityBreadcrumb({ cityName }: { cityName: string }) {
   return (
-    <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-600">
+    <nav aria-label="Breadcrumb" className="text-sm leading-tight text-copilot-text-secondary">
       <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
         <li>
-          <Link href="/" className="hover:text-slate-900">
+          <Link href="/" className="hover:text-copilot-text-primary">
             Home
           </Link>
         </li>
-        <li aria-hidden className="text-slate-400">/</li>
+        <li aria-hidden className="text-copilot-text-muted">
+          /
+        </li>
         <li>
-          <Link href="/netherlands/" className="hover:text-slate-900">
+          <Link href="/netherlands/" className="hover:text-copilot-text-primary">
             Netherlands
           </Link>
         </li>
-        <li aria-hidden className="text-slate-400">/</li>
+        <li aria-hidden className="text-copilot-text-muted">
+          /
+        </li>
         <li>
-          <Link href="/netherlands/cities/" className="hover:text-slate-900">
+          <Link href="/netherlands/cities/" className="hover:text-copilot-text-primary">
             Cities
           </Link>
         </li>
-        <li aria-hidden className="text-slate-400">/</li>
-        <li className="font-medium text-slate-900" aria-current="page">
+        <li aria-hidden className="text-copilot-text-muted">
+          /
+        </li>
+        <li className="font-medium text-copilot-text-primary" aria-current="page">
           {cityName}
         </li>
       </ol>
@@ -88,110 +120,110 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
   const isAltLayout = data.hubLayout === "amsterdam-area-alternative";
   const earlyPractical = Boolean(isAltLayout && data.earlyPracticalSections);
 
-  const first30DaysSection = (
-    <section id="first-30-days" className="scroll-mt-24 mt-12 space-y-6">
-      <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-        {data.first30Days.heading}
-      </h2>
-      <div className="grid gap-6 sm:grid-cols-2">
-        {data.first30Days.weeks.map((w, i) => (
-          <div
-            key={i}
-            className={cn(
-              "rounded-xl border border-slate-200/80 p-5",
-              "border-l-4 border-l-teal-500 bg-teal-50/40"
-            )}
-          >
-            <h3 className="font-semibold text-slate-900">{w.week}</h3>
-            <ul className="mt-3 space-y-1.5 text-sm text-slate-700">
-              {w.items.map((item, j) => (
-                <li key={j} className="flex gap-2">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" aria-hidden />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-      <div className="flex flex-wrap gap-x-4 gap-y-2">
-        {data.first30Days.internalLinks.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className="text-sm font-medium text-brand-700 hover:text-brand-800 underline"
-          >
-            {link.label}
-          </Link>
-        ))}
-      </div>
-    </section>
-  );
+  const baseUrl = getSiteOrigin();
+  const canonicalUrl = new URL(data.path, baseUrl).toString();
 
   const whoMovesHereAndTradeoffs = (
     <>
       {data.whoMovesHere ? <CityExpatsProfile data={data.whoMovesHere} /> : null}
       {data.tradeOffs ? (
-        <section id="trade-offs" className="scroll-mt-24 mt-12 space-y-4">
-          <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-            {data.tradeOffs.heading}
-          </h2>
-          {data.tradeOffs.paragraphs.map((p, i) => (
-            <p key={i} className="text-slate-700 leading-relaxed">
-              {p}
-            </p>
-          ))}
-        </section>
+        <SectionBlock id="trade-offs" title={data.tradeOffs.heading} compact className="scroll-mt-24">
+          <div className="space-y-4">
+            {data.tradeOffs.paragraphs.map((p, i) => (
+              <p key={i} className="text-copilot-text-secondary leading-relaxed">
+                {p}
+              </p>
+            ))}
+          </div>
+        </SectionBlock>
       ) : null}
     </>
   );
 
-  return (
-    <div className="min-h-screen">
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 to-white py-8 sm:py-10 md:py-14">
-        <Container className={pageContainerClass}>
-          <CityBreadcrumb cityName={data.name} basePath={data.path} />
-          <CityHero hero={data.hero} />
-        </Container>
-      </section>
+  const hasRelatedGuides = Boolean(
+    data.relatedGuides?.some((b) => (b.links ?? []).length > 0)
+  );
+  const hasCityLinks = Boolean(data.cityLinks?.length);
 
-      <Section contained={false} className="py-8 md:py-12">
-        <Container className={pageContainerClass}>
-          <div className="grid gap-10 lg:grid-cols-[minmax(0,2fr),minmax(280px,1fr)]">
-            <main className="min-w-0 w-full">
-              {/* Mobile TOC */}
-              <div className="mb-8 lg:hidden rounded-xl border border-slate-200 bg-slate-50/50 p-4">
-                <PillarTOC items={data.tocItems} />
+  return (
+    <GuidePageTemplate
+      rootClassName="min-h-screen"
+      mainStackClassName="mt-2 space-y-4 sm:mt-3 sm:space-y-5 md:space-y-6"
+      wrapContent={(inner) => (
+        <Container className={cn("w-full max-w-screen-2xl", siteGuideColumnPadYClass)}>{inner}</Container>
+      )}
+      hero={
+        <PillarGuideHeroRegion>
+          <div className={sitePillarFramedHeroTopBandClass}>
+            <CityBreadcrumb cityName={data.name} />
+          </div>
+          <PageHero
+            movingPillarIdentity
+            heroTitleDensity="tight"
+            contentGutterClassName={sitePillarFramedHeroGutterXClass}
+            eyebrow={data.hero.eyebrow}
+            title={data.hero.title}
+            subtitle={data.hero.subtitle}
+            heroImage={
+              data.hero.image?.src
+                ? {
+                    src: data.hero.image.src,
+                    alt: data.hero.image.alt,
+                    caption: data.hero.image.caption,
+                    priority: data.hero.image.priority ?? true,
+                  }
+                : null
+            }
+            shareUrl={canonicalUrl}
+            pageId={data.path}
+            afterSubtitle={<CityHubHeroCtas hero={data.hero} />}
+          />
+        </PillarGuideHeroRegion>
+      }
+      atAGlance={
+        data.quickFacts?.length ? (
+          <PillarGuideAtGlanceRegion>
+            <SectionBlock
+              id={`${data.slug}-at-a-glance`}
+              title={data.quickFactsHeading ?? `${data.name} at a Glance`}
+              compact
+              className="scroll-mt-24 pt-0 sm:pt-0"
+            >
+              <QuickFactsGrid items={data.quickFacts} />
+            </SectionBlock>
+          </PillarGuideAtGlanceRegion>
+        ) : null
+      }
+      keySections={
+        <div className={cityGuideKeySectionsPadClass}>
+          <div className="grid gap-6 lg:grid-cols-[minmax(0,3fr)_minmax(0,1fr)] lg:items-start lg:gap-8 xl:gap-10">
+            <PillarJourneyStack variant="guide" className={cn("min-w-0", guideKeyColumnStackGapClass)}>
+              <div className="mb-5 lg:hidden">
+                <PillarTOC items={data.tocItems} tone="support" />
               </div>
 
-              {/* Reading order: overview → at a glance → compare → why (merged) → life in city → jobs → profile blocks */}
-              <section id="overview" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  Overview
-                </h2>
+              <SectionBlock
+                id="overview"
+                title="Overview"
+                compact
+                className="scroll-mt-24 !pt-2 sm:!pt-3"
+              >
                 <OverviewIntro data={data} />
-              </section>
-
-              {data.quickFacts?.length ? (
-                <div className="mt-10 space-y-4">
-                  <h2
-                    id={`${data.slug}-at-a-glance`}
-                    className="scroll-mt-24 text-2xl font-semibold tracking-tight text-slate-900"
-                  >
-                    {data.quickFactsHeading ?? `${data.name} at a Glance`}
-                  </h2>
-                  <QuickFactsGrid items={data.quickFacts} />
-                </div>
-              ) : null}
+              </SectionBlock>
 
               {data.cityComparison ? (
-                <CityComparisonTable
-                  heading={data.cityComparison.heading}
-                  currentCityName={data.name}
-                  ctaLabel={data.cityComparison.ctaLabel}
-                  ctaHref={data.cityComparison.ctaHref}
-                />
+                <SectionBlock
+                  id="comparing-cities"
+                  title={data.cityComparison.heading}
+                  compact
+                  className="scroll-mt-24"
+                >
+                  <CityComparisonTable
+                    currentCityName={data.name}
+                    ctaLabel={data.cityComparison.ctaLabel}
+                    ctaHref={data.cityComparison.ctaHref}
+                  />
+                </SectionBlock>
               ) : null}
 
               <CityWhyExpatsCombinedSection
@@ -200,72 +232,54 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                 whyExpatsChoose={data.whyExpatsChoose}
               />
 
-              {data.lifeInCity ? (
-                <CityOverview
-                  data={data.lifeInCity}
-                  sectionId="what-life-like"
-                  className="mt-12"
-                />
-              ) : null}
+              {data.lifeInCity ? <CityOverview data={data.lifeInCity} sectionId="what-life-like" /> : null}
 
               {data.jobsEcosystem ? <CityStatsCards data={data.jobsEcosystem} /> : null}
 
-              {isAltLayout && earlyPractical ? (
-                <>
-                  {first30DaysSection}
-                  {whoMovesHereAndTradeoffs}
-                </>
-              ) : null}
+              {isAltLayout && earlyPractical ? whoMovesHereAndTradeoffs : null}
               {isAltLayout && !earlyPractical ? whoMovesHereAndTradeoffs : null}
-              {!isAltLayout ? (
-                <>
-                  {data.whoMovesHere ? <CityExpatsProfile data={data.whoMovesHere} /> : null}
-                  {data.tradeOffs ? (
-                    <section id="trade-offs" className="scroll-mt-24 mt-12 space-y-4">
-                      <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                        {data.tradeOffs.heading}
-                      </h2>
-                      {data.tradeOffs.paragraphs.map((p, i) => (
-                        <p key={i} className="text-slate-700 leading-relaxed">
-                          {p}
-                        </p>
-                      ))}
-                    </section>
-                  ) : null}
-                </>
-              ) : null}
+              {!isAltLayout ? whoMovesHereAndTradeoffs : null}
 
-              {/* Register in city */}
-              <section id={registrationSectionId} className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  {data.registration.heading}
-                </h2>
-                {data.registration.body.map((p, i) => (
-                  <p key={i} className="text-slate-700 leading-relaxed">
-                    {p}
-                  </p>
-                ))}
-                <ProcessTimeline data={data} />
-                <CityChecklist data={data} />
-              </section>
+              <CitySignatureDarkSection cityName={data.name} first30Days={data.first30Days} />
 
-              {/* BSN + DigiD */}
-              <section id="bsn-digid" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  {data.bsnDigid.heading}
-                </h2>
-                {data.bsnDigid.body.map((p, i) => (
-                  <p key={i} className="text-slate-700 leading-relaxed">
-                    {p}
-                  </p>
-                ))}
+              <SectionBlock
+                id={registrationSectionId}
+                title={data.registration.heading}
+                compact
+                className="scroll-mt-24"
+              >
+                <div className="space-y-4">
+                  {data.registration.body.map((p, i) => (
+                    <p key={i} className="text-copilot-text-secondary leading-relaxed">
+                      {p}
+                    </p>
+                  ))}
+                </div>
+                <div className="mt-6">
+                  <ProcessTimeline data={data} />
+                </div>
+                <div className="mt-6">
+                  <CityChecklist data={data} />
+                </div>
+              </SectionBlock>
+
+              <SectionBlock id="bsn-digid" title={data.bsnDigid.heading} compact className="scroll-mt-24">
+                <div className="space-y-4">
+                  {data.bsnDigid.body.map((p, i) => (
+                    <p key={i} className="text-copilot-text-secondary leading-relaxed">
+                      {p}
+                    </p>
+                  ))}
+                </div>
                 {data.bsnDigid.digidRequirements?.length ? (
-                  <div className="rounded-xl border border-slate-200 bg-slate-50/60 p-4">
-                    <p className="text-sm font-semibold text-slate-900">DigiD requirements</p>
-                    <ul className="mt-2 space-y-1 text-sm text-slate-700">
+                  <div className="mt-6 rounded-2xl border-0 bg-copilot-bg-soft/70 p-4 ring-1 ring-copilot-primary/[0.08] sm:p-5">
+                    <p className="text-sm font-bold text-copilot-text-primary">DigiD requirements</p>
+                    <ul className="mt-2 space-y-1 text-sm text-copilot-text-secondary">
                       {data.bsnDigid.digidRequirements.map((r, i) => (
                         <li key={i} className="flex gap-2">
-                          <span className="text-emerald-500" aria-hidden>✓</span>
+                          <span className="text-copilot-accent" aria-hidden>
+                            ✓
+                          </span>
                           {r}
                         </li>
                       ))}
@@ -273,41 +287,37 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                   </div>
                 ) : null}
                 {data.bsnDigid.examples?.length ? (
-                  <p className="text-sm text-slate-600">
-                    <span className="font-medium">Used for:</span>{" "}
+                  <p className="mt-4 text-sm text-copilot-text-muted">
+                    <span className="font-semibold text-copilot-text-primary">Used for:</span>{" "}
                     {data.bsnDigid.examples.join(", ")}.
                   </p>
                 ) : null}
                 {data.bsnDigid.plannedPageLinks?.length ? (
-                  <div className="flex flex-wrap gap-x-4 gap-y-2 border-t border-slate-100 pt-4">
+                  <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2 border-t border-copilot-primary/10 pt-4">
                     {data.bsnDigid.plannedPageLinks.map((link) => (
-                      <Link
-                        key={link.href}
-                        href={link.href}
-                        className="text-sm font-medium text-brand-700 hover:text-brand-800 underline"
-                      >
+                      <Link key={link.href} href={link.href} className={linkCtaClass}>
                         {link.label}
                       </Link>
                     ))}
                   </div>
                 ) : null}
-              </section>
+              </SectionBlock>
 
-              {/* Health insurance */}
-              <section id="health-insurance" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  {data.healthInsurance.heading}
-                </h2>
-                {data.healthInsurance.body.map((p, i) => (
-                  <p key={i} className="text-slate-700 leading-relaxed">
-                    {p}
-                  </p>
-                ))}
+              <SectionBlock id="health-insurance" title={data.healthInsurance.heading} compact className="scroll-mt-24">
+                <div className="space-y-4">
+                  {data.healthInsurance.body.map((p, i) => (
+                    <p key={i} className="text-copilot-text-secondary leading-relaxed">
+                      {p}
+                    </p>
+                  ))}
+                </div>
                 {data.healthInsurance.advice?.length ? (
-                  <ul className="space-y-1 text-sm text-slate-700">
+                  <ul className="mt-4 space-y-1 text-sm text-copilot-text-secondary">
                     {data.healthInsurance.advice.map((a, i) => (
                       <li key={i} className="flex gap-2">
-                        <span className="text-emerald-500" aria-hidden>✓</span>
+                        <span className="text-copilot-accent" aria-hidden>
+                          ✓
+                        </span>
                         {a}
                       </li>
                     ))}
@@ -318,31 +328,28 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                     <ServiceCards services={healthInsuranceServices} byCategory={false} />
                   </div>
                 ) : null}
-                <p>
-                  <Link
-                    href={data.healthInsurance.internalLink.href}
-                    className="font-medium text-brand-700 hover:text-brand-800 underline"
-                  >
+                <p className="mt-5">
+                  <Link href={data.healthInsurance.internalLink.href} className={linkCtaClass}>
                     {data.healthInsurance.internalLink.label}
                   </Link>
                 </p>
-              </section>
+              </SectionBlock>
 
-              {/* Banking */}
-              <section id="banking" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  {data.banking.heading}
-                </h2>
-                {data.banking.body.map((p, i) => (
-                  <p key={i} className="text-slate-700 leading-relaxed">
-                    {p}
-                  </p>
-                ))}
+              <SectionBlock id="banking" title={data.banking.heading} compact className="scroll-mt-24">
+                <div className="space-y-4">
+                  {data.banking.body.map((p, i) => (
+                    <p key={i} className="text-copilot-text-secondary leading-relaxed">
+                      {p}
+                    </p>
+                  ))}
+                </div>
                 {data.banking.typicalNeeds?.length ? (
-                  <ul className="space-y-1 text-sm text-slate-700">
+                  <ul className="mt-4 space-y-1 text-sm text-copilot-text-secondary">
                     {data.banking.typicalNeeds.map((n, i) => (
                       <li key={i} className="flex gap-2">
-                        <span className="text-slate-400" aria-hidden>•</span>
+                        <span className="text-copilot-text-muted" aria-hidden>
+                          •
+                        </span>
                         {n}
                       </li>
                     ))}
@@ -353,33 +360,30 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                     <ServiceCards services={bankingServices} byCategory={false} />
                   </div>
                 ) : null}
-                <p>
-                  <Link
-                    href={data.banking.internalLink.href}
-                    className="font-medium text-brand-700 hover:text-brand-800 underline"
-                  >
+                <p className="mt-5">
+                  <Link href={data.banking.internalLink.href} className={linkCtaClass}>
                     {data.banking.internalLink.label}
                   </Link>
                 </p>
-              </section>
+              </SectionBlock>
 
-              {/* Housing & cost of living */}
-              <section id="housing-costs" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  {data.housingCosts.heading}
-                </h2>
-                {data.housingCosts.body.map((p, i) => (
-                  <p key={i} className="text-slate-700 leading-relaxed">
-                    {p}
-                  </p>
-                ))}
+              <SectionBlock id="housing-costs" title={data.housingCosts.heading} compact className="scroll-mt-24">
+                <div className="space-y-4">
+                  {data.housingCosts.body.map((p, i) => (
+                    <p key={i} className="text-copilot-text-secondary leading-relaxed">
+                      {p}
+                    </p>
+                  ))}
+                </div>
                 {data.housingCosts.neighborhoodsNote ? (
-                  <p className="text-sm text-slate-600">{data.housingCosts.neighborhoodsNote}</p>
+                  <p className="mt-2 text-sm text-copilot-text-muted">{data.housingCosts.neighborhoodsNote}</p>
                 ) : null}
                 {data.housingCosts.warning ? (
-                  <InfoBox variant="warn" title="Watch out">
-                    <p>{data.housingCosts.warning}</p>
-                  </InfoBox>
+                  <div className="mt-5">
+                    <InfoBox variant="warn" title="Watch out">
+                      <p className="text-copilot-text-secondary">{data.housingCosts.warning}</p>
+                    </InfoBox>
+                  </div>
                 ) : null}
                 {housingPlatformServices.length ? (
                   <div className="mt-6">
@@ -387,43 +391,41 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                   </div>
                 ) : null}
                 {data.housingCosts.internalLinks?.length ? (
-                  <div className="flex flex-wrap gap-x-4 gap-y-2">
+                  <div className="mt-5 flex flex-wrap gap-x-4 gap-y-2">
                     {data.housingCosts.internalLinks.map((link) => (
-                      <Link
-                        key={link.href}
-                        href={link.href}
-                        className="text-sm font-medium text-brand-700 hover:text-brand-800 underline"
-                      >
+                      <Link key={link.href} href={link.href} className={linkCtaClass}>
                         {link.label}
                       </Link>
                     ))}
                   </div>
                 ) : null}
-              </section>
+              </SectionBlock>
 
-              {/* Transport */}
-              <section id="transport" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  {data.transport.heading}
-                </h2>
-                {data.transport.body.map((p, i) => (
-                  <p key={i} className="text-slate-700 leading-relaxed">
-                    {p}
-                  </p>
-                ))}
+              <SectionBlock id="transport" title={data.transport.heading} compact className="scroll-mt-24">
+                <div className="space-y-4">
+                  {data.transport.body.map((p, i) => (
+                    <p key={i} className="text-copilot-text-secondary leading-relaxed">
+                      {p}
+                    </p>
+                  ))}
+                </div>
                 {data.transport.goodToKnow?.length ? (
-                  <div className="overflow-hidden rounded-xl border border-amber-200/80 bg-gradient-to-br from-amber-50/90 to-white shadow-sm ring-1 ring-amber-100/50">
-                    <div className="border-l-4 border-amber-500 bg-amber-50/50 px-5 py-4">
+                  <div className="relative mt-6 overflow-hidden rounded-2xl border-0 bg-copilot-bg-soft/80 shadow-expatos-sm ring-1 ring-copilot-primary/[0.08]">
+                    <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
+                    <div className="border-l-4 border-copilot-accent px-5 py-4">
                       <div className="flex items-center gap-2.5">
-                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-amber-500/15 text-amber-700">
+                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-copilot-accent/15 text-copilot-accent">
                           <Lightbulb className="h-4 w-4" aria-hidden />
                         </span>
-                        <p className="text-sm font-semibold text-slate-900">Good to know</p>
+                        <p className="text-sm font-bold text-copilot-text-primary">Good to know</p>
                       </div>
                       <ul className="mt-3 space-y-2.5 pl-0.5">
                         {data.transport.goodToKnow.map((item, i) => (
-                          <li key={i} className="flex gap-3 text-sm text-slate-700">
-                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-400" aria-hidden />
+                          <li key={i} className="flex gap-3 text-sm text-copilot-text-secondary">
+                            <span
+                              className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-copilot-accent/60"
+                              aria-hidden
+                            />
                             <span className="leading-relaxed">{item}</span>
                           </li>
                         ))}
@@ -431,115 +433,147 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                     </div>
                   </div>
                 ) : null}
-              </section>
+              </SectionBlock>
 
-              {/* Services for expats */}
-              <section id="services-expats" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  {data.servicesExpatsHeading ?? `Useful Services for Newcomers in ${data.name}`}
-                </h2>
+              <SectionBlock
+                id="services-expats"
+                title={data.servicesExpatsHeading ?? `Useful Services for Newcomers in ${data.name}`}
+                compact
+                className="scroll-mt-24"
+              >
                 {data.servicesIntro ? (
-                  <p className="text-slate-700 leading-relaxed">{data.servicesIntro}</p>
+                  <p className="text-copilot-text-secondary leading-relaxed">{data.servicesIntro}</p>
                 ) : null}
-                <ServiceCards services={servicesForExpats} byCategory={true} />
-              </section>
+                <div className={data.servicesIntro ? "mt-6" : undefined}>
+                  <ServiceCards services={servicesForExpats} byCategory={true} />
+                </div>
+              </SectionBlock>
 
-              {/* First 30 days (after services when not moved up with earlyPracticalSections) */}
-              {!earlyPractical ? first30DaysSection : null}
-
-              {/* Example scenarios */}
-              <section id="example-scenarios" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  {data.exampleScenariosHeading ?? "Example Scenarios"}
-                </h2>
-                <p className="text-slate-700 leading-relaxed">
+              <SectionBlock
+                id="example-scenarios"
+                title={data.exampleScenariosHeading ?? "Example Scenarios"}
+                compact
+                className="scroll-mt-24"
+              >
+                <p className="text-copilot-text-secondary leading-relaxed">
                   {data.exampleScenariosIntro ??
                     "Realistic situations and what to prioritise: documents, timing, and common pitfalls."}
                 </p>
-                <ExampleScenarios scenarios={data.exampleScenarios} />
-              </section>
+                <div className="mt-5">
+                  <ExampleScenarios scenarios={data.exampleScenarios} />
+                </div>
+              </SectionBlock>
 
-              {/* Common mistakes */}
-              <section id="common-mistakes" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  Common Mistakes
-                </h2>
+              <SectionBlock id="common-mistakes" title="Common Mistakes" compact className="scroll-mt-24">
                 <ul className="space-y-3">
                   {data.commonMistakes.map((m, i) => (
-                    <li key={i} className="flex flex-wrap items-baseline gap-2 text-sm text-slate-700">
-                      <span className="text-amber-500" aria-hidden>•</span>
+                    <li key={i} className="flex flex-wrap items-baseline gap-2 text-sm text-copilot-text-secondary">
+                      <span className="text-copilot-accent" aria-hidden>
+                        •
+                      </span>
                       <span>{m.mistake}</span>
                       {m.internalLink ? (
-                        <Link
-                          href={m.internalLink.href}
-                          className="font-medium text-brand-700 hover:text-brand-800 underline"
-                        >
+                        <Link href={m.internalLink.href} className={linkCtaClass}>
                           {m.internalLink.label}
                         </Link>
                       ) : null}
                     </li>
                   ))}
                 </ul>
-              </section>
+              </SectionBlock>
+            </PillarJourneyStack>
 
-              {/* Tools */}
-              <section id="tools" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  Useful Tools
-                </h2>
-                <p className="text-slate-700 leading-relaxed">
-                  Plan your move and check your document readiness with these tools.
-                </p>
-                <ToolCards tools={data.tools} />
-              </section>
-
-              {/* FAQ */}
-              <section id="faq" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  FAQs
-                </h2>
-                <FAQAccordion data={data} />
-              </section>
-
-              {/* Official sources */}
-              <section id="official-sources" className="scroll-mt-24 mt-12 space-y-6">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  {data.officialSourcesHeading ?? "Official Sources"}
-                </h2>
-                <p className="text-slate-700 leading-relaxed">
-                  {data.officialSourcesIntro ??
-                    "Use these official links for registration, DigiD, health insurance, and transport."}
-                </p>
-                <OfficialSourcesList sources={data.officialSources} />
-              </section>
-
-              {/* Related guides */}
-              <RelatedGuidesSection
-                id="related-guides"
-                title={
-                  data.relatedGuidesSectionTitle ?? "Continue Setting Up Your Life in the Netherlands"
-                }
-                blocks={data.relatedGuides}
-              />
-
-              {/* Other cities + services CTAs */}
-              <section id="other-cities" className="scroll-mt-24 mt-12 space-y-4">
-                <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                  {data.cityLinksSectionTitle ?? "Other Popular Dutch Cities for Expats"}
-                </h2>
-                <CityLinksSection data={data} />
-              </section>
-            </main>
-
-            {/* Sticky TOC - desktop */}
-            <aside className="hidden lg:block lg:sticky lg:top-24 lg:self-start">
-              <div className="rounded-xl border border-slate-200 bg-slate-50/50 p-4">
-                <PillarTOC items={data.tocItems} />
-              </div>
+            <aside className="hidden min-w-0 lg:block lg:sticky lg:top-24 lg:self-start">
+              <PillarTOC items={data.tocItems} tone="support" />
             </aside>
           </div>
-        </Container>
-      </Section>
-    </div>
+        </div>
+      }
+      tools={
+        data.tools?.length ? (
+          <PillarGuideToolsSection
+            compact
+            id="tools"
+            title="Useful tools"
+            subtitle="Plan your move and check document readiness with these ExpatOS tools."
+          >
+            {data.tools.map((t) => {
+              const live = t.status !== "coming_soon" && isRouteLive(t.href);
+              return (
+                <ToolCard
+                  key={t.href}
+                  title={t.label}
+                  description={t.description ?? ""}
+                  href={t.href}
+                  ctaLabel={live ? "Open" : "Coming soon"}
+                  compact
+                />
+              );
+            })}
+          </PillarGuideToolsSection>
+        ) : null
+      }
+      nextSteps={
+        hasRelatedGuides || hasCityLinks ? (
+          <PillarGuideNextStepsRegion>
+            <div className="space-y-6 sm:space-y-8">
+              {hasRelatedGuides ? (
+                <SectionBlock
+                  id="related-guides"
+                  title={
+                    data.relatedGuidesSectionTitle ?? "Continue setting up your life in the Netherlands"
+                  }
+                  compact
+                  className="scroll-mt-24"
+                >
+                  <RelatedGuidesGrid blocks={data.relatedGuides ?? []} />
+                </SectionBlock>
+              ) : null}
+              {hasCityLinks ? (
+                <SectionBlock
+                  id="other-cities"
+                  title={data.cityLinksSectionTitle ?? "Other popular Dutch cities for expats"}
+                  compact
+                  className="scroll-mt-24"
+                >
+                  <CityLinksSection data={data} />
+                </SectionBlock>
+              ) : null}
+            </div>
+          </PillarGuideNextStepsRegion>
+        ) : null
+      }
+      faq={
+        data.officialSources?.length || data.faqs?.length ? (
+          <PillarGuideFaqRegion>
+            <div className="space-y-6 sm:space-y-8">
+              <PresetSoftCTA preset="citySetupPlanning" cityName={data.name} />
+              {data.faqs?.length ? (
+                <FAQBlock id="faq" eyebrow="City guide" title="FAQs" items={data.faqs} maxItems={50} />
+              ) : null}
+              {data.officialSources?.length ? (
+                <SectionBlock
+                  id="official-sources"
+                  title={data.officialSourcesHeading ?? "Official Sources"}
+                  compact
+                  className="scroll-mt-24"
+                >
+                  <p className="text-copilot-text-secondary leading-relaxed">
+                    {data.officialSourcesIntro ??
+                      "Use these official links for registration, DigiD, health insurance, and transport."}
+                  </p>
+                  <div className="mt-5">
+                    <OfficialSourcesList sources={data.officialSources} />
+                  </div>
+                </SectionBlock>
+              ) : null}
+            </div>
+          </PillarGuideFaqRegion>
+        ) : null
+      }
+      afterFaq={
+        <CityHubMonetizationAfterContent cityName={data.name} citySlug={data.slug} path={data.path} />
+      }
+    />
   );
 }

@@ -1,0 +1,9 @@
+Loonstrook januari 2026
+Loonperiode: 01-01-2026 t/m 31-01-2026
+Werkgever: Demo Payroll BV
+
+Bruto loon                    € 4.250,75
+Loonheffing                   - 1.125,50
+Belastbaar loon               4.100,00
+SV-loon                       4.100,00
+Netto loon                    3.010,25

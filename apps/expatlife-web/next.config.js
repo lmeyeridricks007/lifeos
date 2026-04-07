@@ -6,10 +6,50 @@ const nextConfig = {
   swcMinify: true,
   transpilePackages: ["@expatlife/content"],
   experimental: {
-    serverComponentsExternalPackages: ["pdfkit"],
+    serverComponentsExternalPackages: ["pdfkit", "pdf-parse"],
   },
   async redirects() {
     return [
+      {
+        source: "/netherlands/money/tools/30-ruling-calculator",
+        destination: "/netherlands/taxes/tools/30-ruling-calculator/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/money/tools/30-ruling-calculator/",
+        destination: "/netherlands/taxes/tools/30-ruling-calculator/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/money/tools/dutch-salary-net-calculator",
+        destination: "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/money/tools/dutch-salary-net-calculator/",
+        destination: "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/money/tools/expat-cost-of-living-calculator",
+        destination: "/netherlands/money/tools/cost-of-living-calculator/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/money/tools/expat-cost-of-living-calculator/",
+        destination: "/netherlands/money/tools/cost-of-living-calculator/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/cost-of-living-calculator",
+        destination: "/netherlands/money/tools/cost-of-living-calculator/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/cost-of-living-calculator/",
+        destination: "/netherlands/money/tools/cost-of-living-calculator/",
+        permanent: true,
+      },
       {
         source: "/netherlands/visa/student-residence-permit",
         destination: "/netherlands/visa/student-visa/",
@@ -254,13 +294,20 @@ const nextConfig = {
     ];
   },
   images: {
+    formats: ["image/avif", "image/webp"],
     // `domains` is read reliably on Next 13.5; `remotePatterns` pathname must match the URL path
     // (e.g. `/s2/favicons` alone does not match pattern `/s2/favicons/**`).
-    domains: ["logo.clearbit.com", "logos-api.apistemic.com", "www.google.com"],
+    domains: [
+      "logo.clearbit.com",
+      "logos-api.apistemic.com",
+      "www.google.com",
+      "res.cloudinary.com",
+    ],
     remotePatterns: [
       { protocol: "https", hostname: "logo.clearbit.com", pathname: "/**" },
       { protocol: "https", hostname: "logos-api.apistemic.com", pathname: "/**" },
       { protocol: "https", hostname: "www.google.com", pathname: "/**" },
+      { protocol: "https", hostname: "res.cloudinary.com", pathname: "/**" },
     ],
   },
   async headers() {

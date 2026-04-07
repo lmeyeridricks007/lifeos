@@ -5,16 +5,16 @@
     "title": "Moving Checklist for the Netherlands (Free Tool)",
     "description": "Generate a personalized moving checklist for the Netherlands. See what to prepare before the move, after arrival, and during your first 90 days.",
     "applicationCategory": "PlanningApplication",
-    "heroImage": "/images/tools/moving-checklist-netherlands.webp",
+    "heroImage": "/images/guides/netherlands/moving/checklist-tool-hero.png",
     "infographic": "/images/infographics/moving-checklist-phases.webp"
   },
   "arrival-planner": {
     "slug": "arrival-planner",
     "path": "/netherlands/moving/tools/arrival-planner/",
     "title": "Arrival Planner for the Netherlands (Free Tool)",
-    "description": "Build a personalized arrival plan for the Netherlands. See what to prioritize in your first week, first month, and which steps often need appointments.",
+    "description": "Build a prioritized first-week and first-month plan for the Netherlands—tasks, appointments, and reminders based on your situation.",
     "applicationCategory": "PlanningApplication",
-    "heroImage": "/images/tools/arrival-planner-netherlands.webp",
+    "heroImage": "/images/guides/netherlands/moving/arrival-planner-hero.png",
     "infographic": "/images/infographics/arrival-first-steps-netherlands.webp"
   },
   "first-90-days": {
@@ -23,7 +23,7 @@
     "title": "First 90 Days in the Netherlands Planner (Free Tool)",
     "description": "Create a personalized week-by-week plan for your first 90 days in the Netherlands, including admin, daily life setup, and integration awareness.",
     "applicationCategory": "PlanningApplication",
-    "heroImage": "/images/tools/first-90-days-netherlands.webp",
+    "heroImage": "/images/guides/netherlands/moving/first-90-days-tool-hero.png",
     "infographic": "/images/infographics/first-90-days-roadmap-netherlands.webp"
   },
   "document-readiness": {
@@ -32,7 +32,7 @@
     "title": "Document Readiness Checker for Moving to the Netherlands (Free Tool)",
     "description": "Check which documents expats often prepare when moving to the Netherlands. Build a personalized checklist and see what may still be missing.",
     "applicationCategory": "PlanningApplication",
-    "heroImage": "/images/tools/document-readiness-netherlands.webp",
+    "heroImage": "/images/guides/netherlands/moving/document-readiness-hero.png",
     "infographic": "/images/infographics/document-pack-categories-netherlands.webp"
   }
 }

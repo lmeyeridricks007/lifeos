@@ -1,0 +1,11 @@
+Employee: Jane Example
+Current period / YTD
+Gross salary 5200.00 26000.00
+Tax withholding 1850.00 9250.00
+Pension contribution 95.00 475.00
+Holiday pay 416.00 2080.00
+Taxable wage 5100.00 25500.00
+Health insurance wage 4800.00 24000.00
+Net salary 3850.00 19250.00
+30% ruling correction taxable -150.00 -750.00
+Tax-free allowance 200.00 1000.00

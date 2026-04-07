@@ -11,12 +11,12 @@
       "See where to obtain missing documents"
     ],
     "image": {
-      "src": "/images/tools/document-readiness-netherlands.webp",
-      "alt": "Document readiness checker for moving to the Netherlands showing document categories"
+      "src": "/images/guides/netherlands/moving/document-readiness-hero.png",
+      "alt": "Document readiness for moving to the Netherlands: folders, moving box, and checklist on a laptop"
     },
     "imageFallback": {
       "src": "/images/guides/netherlands/moving/document-readiness-hero.png",
-      "alt": "Document readiness checker for moving to the Netherlands"
+      "alt": "Document readiness for moving to the Netherlands: folders, moving box, and checklist on a laptop"
     }
   },
   "explanatorySections": [

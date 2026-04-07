@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
-import { ToolHero } from "@/src/components/tools/ToolHero";
-import { Section } from "@/components/ui/section";
+import { MoveHero, MoveToolSidebar } from "@/components/page/move-shell";
+import { SectionBlock } from "@/components/page/pillar-template";
 import { CardLink } from "@/components/ui/card-link";
 import { CollapsiblePanel } from "@/components/ui/collapsible-panel";
-import { PillarTOC } from "@/components/content/PillarTOC";
 import { VisaTimelineEstimatorClient } from "@/src/components/tools/visa-timeline-estimator/VisaTimelineEstimatorClient";
 import { RecommendedImmigrationLawyersSection } from "@/src/components/tools/shared/RecommendedImmigrationLawyersSection";
 import { buildSoftwareApplicationSchema } from "@/src/lib/seo/toolSchema";
@@ -108,24 +107,6 @@ const FAQ_ITEMS = [
   },
 ];
 
-const VALUE_CARDS = [
-  {
-    id: "what-tool-does",
-    title: "What this tool does",
-    description: "Estimates how long your visa route and pre-move preparation may take.",
-  },
-  {
-    id: "what-it-includes",
-    title: "What it includes",
-    description: "Document prep, application stage, official decision periods, travel planning, and first-step arrival timing.",
-  },
-  {
-    id: "what-you-get",
-    title: "What you get",
-    description: "A personalized timing estimate, phase-by-phase timeline, risk flags, and suggested next steps.",
-  },
-];
-
 const RELATED_TOOLS_FOR_PAGE = [
   { href: `${BASE}/visa-checker/`, title: "Visa Checker", description: "Find the right route." },
   { href: `${BASE}/document-readiness-checker/`, title: "Document Readiness Checker", description: "Check document readiness." },
@@ -179,45 +160,12 @@ export default async function VisaTimelineEstimatorPage(props: PageProps) {
   const intro = (
     <>
       <p className="mb-3">
-        People often underestimate how many phases sit around a visa application. The official IND decision period is only one part of the total move timeline.
+        The IND decision period is only part of your move timeline. Prep, sponsor or school timing, documents, housing, and travel all add weeks or months.
       </p>
       <p className="mb-3">
-        Real timing also depends on document readiness, sponsor or institution timing, appointment availability, housing, travel, and first-week setup. This tool gives a planning estimate, not a legal guarantee.
-      </p>
-      <p className="mb-3">
-        Major routes include{" "}
-        <Link href={`${BASE}/visa/highly-skilled-migrant/`} className="font-medium text-brand-600 hover:text-brand-700">Highly Skilled Migrant</Link>
-        ,{" "}
-        <Link href={`${BASE}/visa/eu-blue-card/`} className="font-medium text-brand-600 hover:text-brand-700">EU Blue Card</Link>
-        ,{" "}
-        <Link href={`${BASE}/visa/dutch-american-friendship-treaty/`} className="font-medium text-brand-600 hover:text-brand-700">DAFT</Link>
-        ,{" "}
-        <Link href={`${BASE}/visa/self-employed-visa/`} className="font-medium text-brand-600 hover:text-brand-700">Self-Employed</Link>
-        ,{" "}
-        <Link href={`${BASE}/visa/student-visa/`} className="font-medium text-brand-600 hover:text-brand-700">Student</Link>
-        , and{" "}
-        <Link href={`${BASE}/visa/partner-family-visa/`} className="font-medium text-brand-600 hover:text-brand-700">Partner & Family</Link>
-        . Choose your route and current stage to see an estimated timeline.
+        Choose your route and stage below for a planning estimate—not a guarantee. Confirm current processing times with the IND or your sponsor.
       </p>
     </>
-  );
-
-  const valueCardsSection = (
-    <div className="grid gap-4 sm:grid-cols-3 mb-6">
-      {VALUE_CARDS.map((card, i) => {
-        const variants = [
-          "rounded-2xl border border-brand-200/90 bg-gradient-to-br from-brand-50/90 to-white p-5 shadow-sm border-l-4 border-l-brand-500",
-          "rounded-2xl border border-sky-200/90 bg-gradient-to-br from-sky-50/80 to-white p-5 shadow-sm border-l-4 border-l-sky-500",
-          "rounded-2xl border border-cyan-200/80 bg-gradient-to-br from-cyan-50/70 to-white p-5 shadow-sm border-l-4 border-l-cyan-500",
-        ];
-        return (
-          <div key={card.id} className={variants[i % 3]}>
-            <h3 className="font-semibold text-slate-900">{card.title}</h3>
-            <p className="mt-2 text-sm text-slate-600">{card.description}</p>
-          </div>
-        );
-      })}
-    </div>
   );
 
   const exampleScenariosBlock = (
@@ -258,9 +206,8 @@ export default async function VisaTimelineEstimatorPage(props: PageProps) {
 
   const primarySectionContent = (
     <div className="space-y-6">
-      {valueCardsSection}
-      {exampleScenariosBlock}
       <VisaTimelineEstimatorClient key={scenarioId ?? "default"} initialPrefill={initialPrefill} />
+      {exampleScenariosBlock}
     </div>
   );
 
@@ -340,18 +287,11 @@ export default async function VisaTimelineEstimatorPage(props: PageProps) {
 
   const seoContent = (
     <div className="prose prose-slate max-w-none text-slate-600">
-      <h3 className="text-lg font-semibold text-slate-900">How long does it take to move to the Netherlands on a visa route?</h3>
       <p>
-        Official IND decision periods are not the whole story. Work, study, partner, and entrepreneur routes each have different typical timelines and bottlenecks. Document preparation is often the real delay: ordering civil documents, getting apostille or legalization, and certified translations can add weeks or months before you can even submit.
+        Total time usually includes document prep, sponsor or school steps, then the IND decision period, then travel and arrival admin. Bottlenecks are often civil documents, translations, and housing—not only processing days on the permit.
       </p>
       <p>
-        Sponsor or institution timing matters. For Highly Skilled Migrant and EU Blue Card routes, the employer submits the application; their internal process affects when the IND clock starts. For students, the institution usually coordinates the application. For partner and family routes, the sponsor must meet income and housing requirements and provide evidence—all of which can add lead time.
-      </p>
-      <p>
-        Families and long-haul movers should start earlier. More people mean more documents and more dependency on housing and school placement. Moving from farther away adds logistics for travel, shipping, and arrival admin. Housing should often be planned before approval is final—at least for temporary accommodation—because registration at the municipality typically requires an address.
-      </p>
-      <p>
-        Use this tool together with the Visa Checker to confirm your route, the Document Readiness Checker to see what you still need, and the Visa Application Plan to build a step-by-step roadmap. The estimates here are planning ranges; official decision periods and real timelines can vary. Always confirm current processing times with the IND or your sponsor.
+        Pair this estimate with the Visa Checker and Document Readiness Checker; confirm dates with the IND or your sponsor before you book travel.
       </p>
     </div>
   );
@@ -365,40 +305,14 @@ export default async function VisaTimelineEstimatorPage(props: PageProps) {
     { id: "official-sources", label: "Official sources" },
   ];
 
-  const sidebar = (
-    <>
-      <PillarTOC items={sidebarOnThisPage} />
-      <div className="rounded-xl border border-slate-200 bg-slate-50/50 p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Tools</p>
-        <ul className="mt-3 space-y-2">
-          <li>
-            <Link href="#tool-inputs" className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Estimate my timeline</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-          <li>
-            <Link href={`${BASE}/visa-checker/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Find my visa</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-          <li>
-            <Link href={`${BASE}/document-readiness-checker/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Check my documents</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-          <li>
-            <Link href={`${BASE}/visa-application-plan/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Build my visa plan</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </>
-  );
+  const visaTimelineQuickLinks = [
+    { label: "Estimate my timeline", href: "#tool-inputs" },
+    { label: "Find my visa", href: `${BASE}/visa-checker/` },
+    { label: "Check my documents", href: `${BASE}/document-readiness-checker/` },
+    { label: "Build my visa plan", href: `${BASE}/visa-application-plan/` },
+  ];
+
+  const sidebar = <MoveToolSidebar tocItems={sidebarOnThisPage} quickLinks={visaTimelineQuickLinks} />;
 
   const relatedGuides = VISA_TIMELINE_ESTIMATOR_RELATED_GUIDES.map((g) => ({
     href: g.href,
@@ -413,8 +327,10 @@ export default async function VisaTimelineEstimatorPage(props: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
       <ToolPageTemplate
+        movingClusterHero
         hero={
-          <ToolHero
+          <MoveHero
+            variant="tool"
             eyebrow="TOOL"
             title="Netherlands Visa Timeline Estimator"
             subtitle="Estimate how long your Dutch visa or residence route may take, including document prep, official decision periods, application stages, and practical move timing."
@@ -460,7 +376,7 @@ export default async function VisaTimelineEstimatorPage(props: PageProps) {
         }
         extraSection={
           <>
-            <Section title="Related tools" contained={true} className="pt-6">
+            <SectionBlock id="related-tools" title="Related tools" compact className="pt-3 md:pt-4">
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {RELATED_TOOLS_FOR_PAGE.map((t) => (
                   <CardLink
@@ -472,10 +388,10 @@ export default async function VisaTimelineEstimatorPage(props: PageProps) {
                   />
                 ))}
               </div>
-            </Section>
-            <Section id="official-sources" title="Official sources" contained={true} className="pt-6">
+            </SectionBlock>
+            <SectionBlock id="official-sources" title="Official sources" className="pt-6">
               {officialSourcesSection}
-            </Section>
+            </SectionBlock>
           </>
         }
       >

@@ -1,0 +1,21 @@
+Pay period mei 2023
+YTD cumulative column
+Salaris 12731,50 12731,50 50926,00
+Corr. 30% TB 3742,46- 3742,46- 14969,84-
+Vakantiegeld 4074,08 4074,08 4074,08
+Corr. 30% BT 1222,23- 1222,23- 1222,23-
+Vrijgestelde verg 4964,69 16192,07
+Pensioenpremie BPF 194,81 194,81- 964,68
+Pensioenpr. BPF TBB 61,81 61,81- 61,81
+Loonhef TB 3534,42 14031,66
+Loonhef TBB 49,50% 1381,06 1381,06
+Inh WGA gedif 17,30 69,20
+Sociaal Fonds 2,79 11,16
+Gewerkte dagen 23,00 86,00
+Loon ZVW 5579,66 22318,64
+Heffingsloon 11584,27 37781,52
+Loonheffing 4915,48 15412,72
+Arbeidskorting 53,08 224,59
+Betalingen 16805,58 16805,58 67422,32
+Inhoudingen 5192,19 5192,19 20768,76
+Netto 11613,39

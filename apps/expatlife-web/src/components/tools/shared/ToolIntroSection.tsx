@@ -1,4 +1,5 @@
 import type { ToolExplanatorySection } from "@/src/lib/tools/shared/toolPageContent";
+import { cn } from "@/lib/cn";
 
 export type ToolIntroSectionProps = {
   section: ToolExplanatorySection;
@@ -10,10 +11,15 @@ export type ToolIntroSectionProps = {
  */
 export function ToolIntroSection({ section, className = "" }: ToolIntroSectionProps) {
   return (
-    <div className={`prose prose-slate max-w-none text-slate-600 prose-p:leading-relaxed ${className}`}>
-      <h2 className="text-lg font-semibold text-slate-900">{section.title}</h2>
+    <div
+      className={cn(
+        "prose prose-slate max-w-none text-foreground-muted prose-p:leading-relaxed prose-li:marker:text-brand/60",
+        className
+      )}
+    >
+      <h2 className="!mt-0 text-lg font-semibold text-foreground">{section.title}</h2>
       {section.subtitle ? (
-        <p className="text-sm text-slate-500">{section.subtitle}</p>
+        <p className="text-sm text-foreground-faint">{section.subtitle}</p>
       ) : null}
       <div className="mt-2 space-y-3">
         {section.body.map((paragraph, i) => (

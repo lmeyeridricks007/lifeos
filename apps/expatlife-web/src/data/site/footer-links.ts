@@ -64,5 +64,7 @@ export const SITEMAP_MAIN_LINKS: FooterLink[] = [
   { label: "Services hub", href: "/netherlands/services/" },
   { label: "Cities overview", href: "/netherlands/cities/" },
   { label: "Tools hub", href: "/netherlands/tools/" },
+  { label: "Money & tax tools", href: "/netherlands/money/tools/" },
+  { label: "Tax tools hub", href: "/netherlands/taxes/tools/" },
   { label: "Sitemap", href: "/sitemap/" },
 ];

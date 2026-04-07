@@ -13,6 +13,7 @@ import type {
 import type { GuideSectionService, GuideExampleScenario } from "@/src/lib/guides/types";
 import type { VisaPageData } from "@/src/content/visas/types";
 import { expandGuideDataWithRegistryRecommendations } from "@/src/lib/guides/registryRecommendedServices";
+import { normalizeGuideContract } from "@/src/lib/guides/normalizeMovingGuideContract";
 
 const BASE = "/netherlands";
 const TOOLS = `${BASE}/moving/tools`;
@@ -375,7 +376,7 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     servicesSection,
   ];
 
-  return expandGuideDataWithRegistryRecommendations({
+  return normalizeGuideContract(expandGuideDataWithRegistryRecommendations({
     slug: v.slug,
     path: v.path,
     title: v.title,
@@ -432,7 +433,7 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     faq: v.faq,
     disclosure:
       "This page is for planning and awareness only. It is not legal advice. Requirements, fees, and salary thresholds change. Always confirm with the IND, your employer, or a qualified adviser.",
-  });
+  }));
 }
 
 /** Converts EU Blue Card VisaPageData to GuideData for the EU Blue Card pillar page. */
@@ -693,7 +694,7 @@ export function euBlueCardToGuideData(v: VisaPageData): GuideData {
     servicesSection,
   ];
 
-  return {
+  return normalizeGuideContract({
     slug: v.slug,
     path: v.path,
     title: v.title,
@@ -751,7 +752,7 @@ export function euBlueCardToGuideData(v: VisaPageData): GuideData {
     faq: v.faq,
     disclosure:
       "This page is for planning and awareness only. It is not legal advice. Requirements, fees, and salary thresholds change. Final eligibility depends on the full IND rules and your circumstances. Always confirm with the IND, your employer, or a qualified adviser.",
-  };
+  });
 }
 
 /** Converts DAFT VisaPageData to GuideData for the Dutch-American Friendship Treaty pillar page. */
@@ -968,7 +969,7 @@ export function daftToGuideData(v: VisaPageData): GuideData {
     servicesSection,
   ];
 
-  return expandGuideDataWithRegistryRecommendations({
+  return normalizeGuideContract(expandGuideDataWithRegistryRecommendations({
     slug: v.slug,
     path: v.path,
     title: v.title,
@@ -1026,7 +1027,7 @@ export function daftToGuideData(v: VisaPageData): GuideData {
     faq: v.faq,
     disclosure:
       "This page is for planning and awareness only. It is not legal advice. Requirements and fees change. The DAFT route depends on US nationality and actual self-employed business setup. Always confirm with the IND, KVK, or a qualified adviser.",
-  });
+  }));
 }
 
 const ORIENTATION_YEAR_IND_URL = "https://ind.nl/en/residence-permits/work/residence-permit-for-orientation-year";
@@ -1251,7 +1252,7 @@ export function studentToGuideData(v: VisaPageData): GuideData {
     servicesSection,
   ];
 
-  return {
+  return normalizeGuideContract({
     slug: v.slug,
     path: v.path,
     title: v.title,
@@ -1309,7 +1310,7 @@ export function studentToGuideData(v: VisaPageData): GuideData {
     faq: v.faq,
     disclosure:
       "This page is for planning and awareness only. It is not legal advice. Fees and study amounts can change. Exact route depends on study type, institution, and nationality. Always confirm with the IND and your educational institution.",
-  };
+  });
 }
 
 /** Converts Partner & Family Visa VisaPageData to GuideData for the partner-family visa pillar page. */
@@ -1582,7 +1583,7 @@ export function partnerFamilyToGuideData(v: VisaPageData): GuideData {
     officialSourcesSection,
   ];
 
-  return {
+  return normalizeGuideContract({
     slug: v.slug,
     path: v.path,
     title: v.title,
@@ -1639,7 +1640,7 @@ export function partnerFamilyToGuideData(v: VisaPageData): GuideData {
     faq: v.faq,
     disclosure:
       "This page is for planning and awareness only. It is not legal advice. Requirements and fees change. Always confirm with the IND, government.nl, or a qualified adviser.",
-  };
+  });
 }
 
 /** Converts Self-Employed Visa VisaPageData to GuideData for the self-employed visa pillar page. */
@@ -1877,7 +1878,7 @@ export function selfEmployedToGuideData(v: VisaPageData): GuideData {
     officialSourcesSection,
   ];
 
-  return expandGuideDataWithRegistryRecommendations({
+  return normalizeGuideContract(expandGuideDataWithRegistryRecommendations({
     slug: v.slug,
     path: v.path,
     title: v.title,
@@ -1935,5 +1936,5 @@ export function selfEmployedToGuideData(v: VisaPageData): GuideData {
     faq: v.faq,
     disclosure:
       "This page is for planning and awareness only. It is not legal advice. Requirements and fees change. Full approval depends on the complete IND rules and business viability assessment. Always confirm with the IND, KVK, or a qualified adviser.",
-  });
+  }));
 }

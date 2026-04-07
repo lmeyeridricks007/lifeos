@@ -18,7 +18,21 @@
     },
     {
       "categoryId": "money-tax",
-      "featuredToolIds": ["thirty-percent-ruling-calculator", "dutch-salary-net-calculator", "expat-cost-of-living-calculator"]
+      "featuredToolIds": [
+        "thirty-percent-ruling-calculator",
+        "dutch-salary-net-calculator",
+        "expat-cost-of-living-calculator",
+        "payslip-decoder"
+      ]
+    },
+    {
+      "categoryId": "taxes-tools",
+      "featuredToolIds": [
+        "thirty-percent-ruling-calculator",
+        "dutch-salary-net-calculator",
+        "expat-cost-of-living-calculator",
+        "payslip-decoder"
+      ]
     },
     {
       "categoryId": "housing",
@@ -54,19 +68,20 @@
     }
   ],
   "domainMenus": {
-    "move": {
+    "moving": {
       "categoryId": "move-immigration",
       "featuredToolIds": [
-        "visa-checker",
-        "visa-timeline-estimator",
-        "visa-cost-calculator",
-        "visa-application-plan",
-        "moving-checklist",
-        "relocation-cost-estimator",
-        "document-readiness",
         "arrival-planner",
+        "document-readiness",
         "first-90-days",
-        "visa-eligibility-checker"
+        "moving-checklist",
+        "visa-application-plan",
+        "relocation-cost-estimator",
+        "expat-cost-of-living-calculator",
+        "visa-checker",
+        "visa-cost-calculator",
+        "visa-timeline-estimator",
+        "payslip-decoder"
       ]
     },
     "money": {
@@ -75,24 +90,46 @@
         "thirty-percent-ruling-calculator",
         "dutch-salary-net-calculator",
         "expat-cost-of-living-calculator",
-        "rent-affordability-calculator"
+        "rent-affordability-calculator",
+        "job-offer-comparison-tool",
+        "employment-contract-risk-scanner",
+        "payslip-decoder"
       ]
     },
-    "work": {
-      "categoryId": "work-employment",
-      "featuredToolIds": ["job-offer-comparison-tool", "payslip-decoder", "employment-contract-risk-scanner"]
+    "culture": {
+      "categoryId": "integration",
+      "featuredToolIds": [
+        "partner-work-eligibility-checker",
+        "childcare-cost-estimator",
+        "inburgering-timeline-planner",
+        "inburgering-exam-readiness-checker",
+        "knm-knowledge-quiz"
+      ]
     },
     "living": {
       "categoryId": "housing",
-      "featuredToolIds": ["dutch-rental-budget-calculator", "buy-vs-rent-calculator", "utilities-services-comparison-tool"]
-    },
-    "culture": {
-      "categoryId": "partner-family",
-      "featuredToolIds": ["partner-work-eligibility-checker", "childcare-cost-estimator"]
+      "featuredToolIds": [
+        "dutch-rental-budget-calculator",
+        "utilities-services-comparison-tool"
+      ]
     },
     "tools": {
       "categoryId": "move-immigration",
-      "featuredToolIds": ["visa-checker", "visa-timeline-estimator", "visa-cost-calculator", "visa-application-plan", "moving-checklist", "relocation-cost-estimator", "document-readiness", "arrival-planner", "first-90-days"]
+      "featuredToolIds": [
+        "visa-checker",
+        "document-readiness",
+        "moving-checklist",
+        "expat-cost-of-living-calculator",
+        "dutch-salary-net-calculator",
+        "payslip-decoder",
+        "dutch-rental-budget-calculator",
+        "first-90-days",
+        "arrival-planner"
+      ]
+    },
+    "services": {
+      "categoryId": "healthcare",
+      "featuredToolIds": []
     }
   }
 }

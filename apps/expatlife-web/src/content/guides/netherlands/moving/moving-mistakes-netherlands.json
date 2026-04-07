@@ -156,27 +156,21 @@
       "href": "/netherlands/moving/tools/document-readiness/"
     }
   ],
-  "toolCtas": [
-    {
-      "label": "Generate Your Moving Checklist",
-      "href": "/netherlands/moving/tools/moving-checklist/"
-    }
-  ],
   "exampleScenarios": [
     {
-      "title": "Avoiding document preparation delays",
-      "summary": "Many expats prevent relocation delays by identifying missing records and translation needs early.",
-      "href": "/netherlands/moving/tools/document-readiness/"
+      "title": "First 30 days: admin sequence",
+      "summary": "Line up registration, banking, and insurance in the right order—without repeating the tool links above.",
+      "href": "/netherlands/first-30-days-netherlands/"
     },
     {
-      "title": "Planning arrival tasks before moving",
-      "summary": "Understanding the first month timeline often prevents administrative surprises.",
-      "href": "/netherlands/moving/tools/arrival-planner/"
+      "title": "Documents before you pack",
+      "summary": "Match civil records, translations, and legalization to your route using the full documents guide.",
+      "href": "/netherlands/documents-needed-to-move-netherlands/"
     },
     {
-      "title": "Creating a structured relocation checklist",
-      "summary": "A relocation checklist helps avoid missing critical steps during the move.",
-      "href": "/netherlands/moving/tools/moving-checklist/"
+      "title": "Printable checklist companion",
+      "summary": "Long-form checklist with timelines and PDF options for planners who want a paper trail alongside the generator.",
+      "href": "/netherlands/moving-checklist-netherlands/"
     }
   ],
   "internalLinks": {
@@ -213,20 +207,16 @@
       "a": "Common mistakes include underestimating the housing market, delaying document preparation, and not planning the first weeks after arrival."
     },
     {
-      "q": "How can I avoid relocation mistakes?",
-      "a": "Preparing documents early, creating a moving checklist, and planning arrival tasks usually prevents most relocation problems."
-    },
-    {
       "q": "What causes the biggest relocation delays?",
       "a": "Document preparation, housing availability, and administrative sequencing are common sources of delay."
     },
     {
-      "q": "When should I start planning my move?",
-      "a": "Many expats start preparing documents and planning arrival tasks several months before relocating."
+      "q": "How can I avoid relocation mistakes and plan the move effectively?",
+      "a": "Start months ahead when possible: gather and organize documents early, use a structured checklist and document-readiness pass, and map your first weeks after arrival so banking, insurance, and registration happen in a sensible order."
     },
     {
-      "q": "What is the best way to plan a move to the Netherlands?",
-      "a": "A structured checklist, document readiness plan, and arrival timeline usually provide the best foundation."
+      "q": "When should I start planning my move to the Netherlands?",
+      "a": "Many expats begin preparing documents and rough arrival sequencing several months before relocating; complex routes or housing markets often need more lead time."
     }
   ],
   "resourcesAffiliatePlacementId": "resources_end",

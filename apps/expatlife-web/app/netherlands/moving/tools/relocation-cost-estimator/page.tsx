@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
-import { ToolHero } from "@/src/components/tools/ToolHero";
+import { MoveHero } from "@/components/page/move-shell";
 import { RelocationCostEstimatorClient } from "@/src/components/tools/relocation-cost-estimator/RelocationCostEstimatorClient";
 import {
   loadRelocationCostEstimatorMeta,
@@ -12,6 +12,8 @@ import { buildSoftwareApplicationSchema } from "@/src/lib/seo/toolSchema";
 import { buildBreadcrumbSchema, getToolBreadcrumbItems } from "@/src/lib/seo/breadcrumbSchema";
 import { buildFaqSchema } from "@/src/lib/seo/faqSchema";
 import {
+  MOVING_HUB,
+  PILLAR,
   RELOCATION_COST_ESTIMATOR_RELATED_GUIDES,
   RELOCATION_COST_ESTIMATOR_RELATED_TOOLS,
 } from "@/src/lib/tools/shared/toolInternalLinks";
@@ -21,6 +23,7 @@ import { ContentTable, ContentTableRow, ContentTableCell } from "@/components/ui
 import { InfoBox } from "@/components/ui/info-box";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
 import { getRelocationCostMarketingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 
 export const revalidate = CONTENT_REVALIDATE;
@@ -376,9 +379,11 @@ export default async function RelocationCostEstimatorPage() {
       ) : null}
 
       <ToolPageTemplate
+        movingClusterHero
         hero={
-          <ToolHero
-            eyebrow="Tool"
+          <MoveHero
+            variant="tool"
+            eyebrow="TOOL"
             title={meta.hero.title}
             subtitle={meta.hero.subtitle}
             introBullets={meta.hero.introBullets}
@@ -440,16 +445,13 @@ export default async function RelocationCostEstimatorPage() {
         }
         seoContent={seoContent}
         internalLinkStrip={
-          <nav className="flex flex-wrap gap-4 text-sm" aria-label="Related guides and tools">
-            {RELOCATION_COST_ESTIMATOR_RELATED_GUIDES.slice(0, 6).map((g) => (
-              <Link
-                key={g.href}
-                href={g.href}
-                className="font-medium text-brand-600 hover:text-brand-700"
-              >
-                {g.title}
-              </Link>
-            ))}
+          <nav className="flex flex-wrap gap-4 text-sm" aria-label="Moving hub, main guide, and related tools">
+            <Link href={MOVING_HUB} className="font-medium text-brand-600 hover:text-brand-700">
+              Moving hub
+            </Link>
+            <Link href={PILLAR} className="font-medium text-brand-600 hover:text-brand-700">
+              Moving to the Netherlands guide
+            </Link>
             {RELOCATION_COST_ESTIMATOR_RELATED_TOOLS.map((t) => (
               <Link
                 key={t.href}
@@ -472,9 +474,23 @@ export default async function RelocationCostEstimatorPage() {
             contained={false}
           />
         }
+        postToolValue={<MoveClusterToolPostValueBlock preset="compareVisaRoutes" />}
       >
         <>
-          <div className="mb-6 rounded-2xl border-2 border-brand-200/80 bg-gradient-to-br from-brand-50/80 to-sky-50/50 p-5 shadow-sm md:p-6">
+          <RelocationCostEstimatorClient
+          whatYouGetTitle={meta.toolPanel.whatYouGetTitle}
+          whatYouGetItems={meta.toolPanel.whatYouGetItems}
+          ctaBlockTitle={meta.ctaBlock.title}
+          ctaBlockText={meta.ctaBlock.text}
+          ctaChecklistHref={meta.ctaBlock.checklistHref}
+          ctaChecklistLabel={meta.ctaBlock.checklistLabel}
+          ctaFirst90Href={meta.ctaBlock.first90Href}
+          ctaFirst90Label={meta.ctaBlock.first90Label}
+          disclaimerNote="These are planning ranges, not provider quotes. Final costs vary by city, route, season, and the choices you make."
+          pdfButtonLabel={meta.pdfButtonLabel}
+          recommendationsIntro={meta.recommendationsIntro}
+          />
+          <div className="mt-6 rounded-2xl border-2 border-brand-200/80 bg-gradient-to-br from-brand-50/80 to-sky-50/50 p-5 shadow-sm md:p-6">
             <h3 className="text-lg font-semibold text-slate-900">Estimate your move in under a minute</h3>
             <p className="mt-2 text-sm text-slate-600">
               Get a personalized range for one-time relocation costs, monthly living costs, and first-year budget.
@@ -494,19 +510,6 @@ export default async function RelocationCostEstimatorPage() {
               </Link>
             </div>
           </div>
-          <RelocationCostEstimatorClient
-          whatYouGetTitle={meta.toolPanel.whatYouGetTitle}
-          whatYouGetItems={meta.toolPanel.whatYouGetItems}
-          ctaBlockTitle={meta.ctaBlock.title}
-          ctaBlockText={meta.ctaBlock.text}
-          ctaChecklistHref={meta.ctaBlock.checklistHref}
-          ctaChecklistLabel={meta.ctaBlock.checklistLabel}
-          ctaFirst90Href={meta.ctaBlock.first90Href}
-          ctaFirst90Label={meta.ctaBlock.first90Label}
-          disclaimerNote="These are planning ranges, not provider quotes. Final costs vary by city, route, season, and the choices you make."
-          pdfButtonLabel={meta.pdfButtonLabel}
-          recommendationsIntro={meta.recommendationsIntro}
-          />
         </>
       </ToolPageTemplate>
     </>

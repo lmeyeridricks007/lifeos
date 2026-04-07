@@ -1,11 +1,18 @@
 import { GuideBySlugPage } from "@/src/components/guides/GuideBySlugPage";
+import { NETHERLANDS_GUIDE_PAGE_MONETIZATION } from "@/src/lib/monetization/netherlandsGuideMonetizationRegistry";
+import type { PageMonetizationMetadata } from "@/src/lib/monetization/pageMonetizationMetadata";
 import { guideShareMetadata } from "@/lib/seo/netherlandsGuideShareMetadata";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
+const SLUG = "moving-documents-checklist" as const;
+
+const monetization: PageMonetizationMetadata | undefined =
+  NETHERLANDS_GUIDE_PAGE_MONETIZATION[SLUG];
+
 
 export const metadata = guideShareMetadata("moving-documents-checklist");
 
 export default function MovingDocumentsChecklistPage() {
-  return <GuideBySlugPage slug="moving-documents-checklist" />;
+  return <GuideBySlugPage slug={SLUG} monetization={monetization} />;
 }

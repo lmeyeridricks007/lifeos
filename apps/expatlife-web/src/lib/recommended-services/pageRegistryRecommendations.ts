@@ -84,3 +84,71 @@ export function getRelocationCostMarketingRecommendedCards(): PageRecommendedPro
     append: [INDEPENDER],
   });
 }
+
+/** Cost of living calculator — banks, housing search, health, relocation help. */
+export function getCostOfLivingRecommendedCards(): PageRecommendedProviderCard[] {
+  return buildPageRecommendedProviderCards({
+    categories: ["banks", "housing-platforms", "health-insurance", "relocation-agencies", "mobile-connectivity"],
+    limit: 6,
+    strategy: "round-robin",
+    append: [INDEPENDER],
+  });
+}
+
+/** Curated expat tax advisors for 30% ruling planning — direct provider sites (no affiliate IDs in registry). */
+/** Payroll / relocation style providers for salary planning tool — from registry (editorial order). */
+export function getDutchSalaryNetPayrollRelocationCards(): PageRecommendedProviderCard[] {
+  return buildPageRecommendedProviderCards({
+    categories: ["relocation-services", "relocation-agencies"],
+    limit: 6,
+    strategy: "round-robin",
+  });
+}
+
+export function getDutchSalaryNetPayrollServiceCards(): PageRecommendedProviderCard[] {
+  return buildPageRecommendedProviderCards({
+    categories: ["relocation-services"],
+    limit: 4,
+    strategy: "sequential",
+  });
+}
+
+export function getDutchSalaryNetRelocationConsultantCards(): PageRecommendedProviderCard[] {
+  return buildPageRecommendedProviderCards({
+    categories: ["relocation-agencies"],
+    limit: 4,
+    strategy: "sequential",
+  });
+}
+
+/** Banks for salary-net tool shortlist (registry order). */
+export function getDutchSalaryNetBankCards(): PageRecommendedProviderCard[] {
+  return buildPageRecommendedProviderCards({
+    categories: ["banks"],
+    limit: 6,
+    strategy: "sequential",
+  });
+}
+
+export function getThirtyPercentRulingTaxAdvisorCards(): PageRecommendedProviderCard[] {
+  return [
+    {
+      name: "Blue Umbrella",
+      url: "https://www.blueumbrella.nl/",
+      useFor: "Dutch tax filing and expat-focused support — useful for ruling-related questions, payroll context, and annual returns.",
+      priceRange: "Paid services; confirm pricing for your case.",
+    },
+    {
+      name: "TaxSavers",
+      url: "https://www.taxsavers.nl/",
+      useFor: "Tax returns and advice aimed at internationals; helpful when you want hands-on filing or a second opinion on ruling paperwork.",
+      priceRange: "Paid services; check current rates.",
+    },
+    {
+      name: "Expatax",
+      url: "https://www.expatax.nl/",
+      useFor: "Expat income tax guidance and ruling-related planning for employees in the Netherlands.",
+      priceRange: "Paid services; confirm scope before engaging.",
+    },
+  ];
+}

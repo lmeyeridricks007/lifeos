@@ -4,6 +4,7 @@
  */
 
 import type { GuideData, GuideSection, GuideToolCta } from "@/src/lib/guides/types";
+import { normalizeGuideContract } from "@/src/lib/guides/normalizeMovingGuideContract";
 import type { CountryPageModel } from "./buildCountryPageModel";
 import { augmentAustraliaGuideData } from "./australiaMovingGuideData";
 import { augmentCanadaGuideData } from "./canadaMovingGuideData";
@@ -238,7 +239,7 @@ function buildDefaultCountryGuideData(
     description: model.seo.description,
     breadcrumbLabel: `From ${model.name}`,
     hero: {
-      eyebrow: "Country guide",
+      eyebrow: `Netherlands · From ${model.name}`,
       badges: ["Moving to the Netherlands"],
       image: heroImageSrc
         ? {
@@ -306,31 +307,33 @@ export function countryModelToGuideData(
   options: { heroImageSrc?: string; baseUrl?: string }
 ): GuideData {
   const base = buildDefaultCountryGuideData(model, options);
-  if (model.slug === "canada") return augmentCanadaGuideData(model, base);
-  if (model.slug === "australia") return augmentAustraliaGuideData(model, base);
-  if (model.slug === "new-zealand") return augmentNewZealandGuideData(model, base);
-  if (model.slug === "germany") return augmentGermanyGuideData(model, base);
-  if (model.slug === "france") return augmentFranceGuideData(model, base);
-  if (model.slug === "spain") return augmentSpainGuideData(model, base);
-  if (model.slug === "italy") return augmentItalyGuideData(model, base);
-  if (model.slug === "uae") return augmentUaeGuideData(model, base);
-  if (model.slug === "brazil") return augmentBrazilGuideData(model, base);
-  if (model.slug === "mexico") return augmentMexicoGuideData(model, base);
-  if (model.slug === "singapore") return augmentSingaporeGuideData(model, base);
-  if (model.slug === "japan") return augmentJapanGuideData(model, base);
-  if (model.slug === "south-korea") return augmentSouthKoreaGuideData(model, base);
-  if (model.slug === "turkey") return augmentTurkeyGuideData(model, base);
-  if (model.slug === "argentina") return augmentArgentinaGuideData(model, base);
-  if (model.slug === "chile") return augmentChileGuideData(model, base);
-  if (model.slug === "switzerland") return augmentSwitzerlandGuideData(model, base);
-  if (model.slug === "sweden") return augmentSwedenGuideData(model, base);
-  if (model.slug === "denmark") return augmentDenmarkGuideData(model, base);
-  if (model.slug === "norway") return augmentNorwayGuideData(model, base);
-  if (model.slug === "ireland") return augmentIrelandGuideData(model, base);
-  if (model.slug === "nigeria") return augmentNigeriaGuideData(model, base);
-  if (model.slug === "philippines") return augmentPhilippinesGuideData(model, base);
-  if (model.slug === "indonesia") return augmentIndonesiaGuideData(model, base);
-  if (model.slug === "pakistan") return augmentPakistanGuideData(model, base);
-  if (model.slug === "kenya") return augmentKenyaGuideData(model, base);
-  return base;
+  let data: GuideData;
+  if (model.slug === "canada") data = augmentCanadaGuideData(model, base);
+  else if (model.slug === "australia") data = augmentAustraliaGuideData(model, base);
+  else if (model.slug === "new-zealand") data = augmentNewZealandGuideData(model, base);
+  else if (model.slug === "germany") data = augmentGermanyGuideData(model, base);
+  else if (model.slug === "france") data = augmentFranceGuideData(model, base);
+  else if (model.slug === "spain") data = augmentSpainGuideData(model, base);
+  else if (model.slug === "italy") data = augmentItalyGuideData(model, base);
+  else if (model.slug === "uae") data = augmentUaeGuideData(model, base);
+  else if (model.slug === "brazil") data = augmentBrazilGuideData(model, base);
+  else if (model.slug === "mexico") data = augmentMexicoGuideData(model, base);
+  else if (model.slug === "singapore") data = augmentSingaporeGuideData(model, base);
+  else if (model.slug === "japan") data = augmentJapanGuideData(model, base);
+  else if (model.slug === "south-korea") data = augmentSouthKoreaGuideData(model, base);
+  else if (model.slug === "turkey") data = augmentTurkeyGuideData(model, base);
+  else if (model.slug === "argentina") data = augmentArgentinaGuideData(model, base);
+  else if (model.slug === "chile") data = augmentChileGuideData(model, base);
+  else if (model.slug === "switzerland") data = augmentSwitzerlandGuideData(model, base);
+  else if (model.slug === "sweden") data = augmentSwedenGuideData(model, base);
+  else if (model.slug === "denmark") data = augmentDenmarkGuideData(model, base);
+  else if (model.slug === "norway") data = augmentNorwayGuideData(model, base);
+  else if (model.slug === "ireland") data = augmentIrelandGuideData(model, base);
+  else if (model.slug === "nigeria") data = augmentNigeriaGuideData(model, base);
+  else if (model.slug === "philippines") data = augmentPhilippinesGuideData(model, base);
+  else if (model.slug === "indonesia") data = augmentIndonesiaGuideData(model, base);
+  else if (model.slug === "pakistan") data = augmentPakistanGuideData(model, base);
+  else if (model.slug === "kenya") data = augmentKenyaGuideData(model, base);
+  else data = base;
+  return normalizeGuideContract(data);
 }

@@ -1,19 +1,19 @@
+import type { Metadata } from "next";
 import {
+  generatePlaceholderToolPageMetadata,
   getPlaceholderStaticParams,
-  placeholderToolRobots,
   renderPlaceholderPage,
 } from "@/src/lib/tools/placeholderRouteFactory";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
-export const metadata = {
-  title: "Family Tool (Coming Soon)",
-  description: "Tool page for partner and family planning in the Netherlands.",
-  robots: placeholderToolRobots,
-};
 
 type Props = { params: Promise<{ slug: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  return generatePlaceholderToolPageMetadata("partner-family", params);
+}
 
 export function generateStaticParams() {
   return getPlaceholderStaticParams("partner-family");

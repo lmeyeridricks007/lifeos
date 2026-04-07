@@ -6,6 +6,7 @@ import {
   mapRelatedGuideLinks,
   type RenderableInternalLink,
 } from "@/src/lib/routes/routeStatus";
+import { movingNlCardMicroLiftClass, movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
 
 function linkRowKey(link: RenderableInternalLink, index: number): string {
   return link.kind === "live" ? link.href : `${link.label}-${index}`;
@@ -25,28 +26,29 @@ export function RelatedGuidesGrid({ blocks }: { blocks: CityRelatedGuideBlock[] 
   if (!visible.length) return null;
 
   return (
-    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
       {visible.map(({ block, items, key }) => (
-        <div
+        <article
           key={key}
           className={cn(
-            "rounded-2xl border border-slate-200 bg-white p-6 shadow-sm",
-            "flex flex-col"
+            "relative flex min-h-0 flex-col overflow-hidden rounded-2xl border-0 bg-copilot-surface p-5 shadow-expatos-md ring-1 ring-copilot-primary/[0.07]",
+            movingNlCardMicroLiftClass
           )}
         >
-          <h3 className="text-lg font-semibold text-slate-900">{block.title}</h3>
-          <ul className="mt-4 flex flex-1 flex-col gap-2">
+          <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
+          <h3 className="relative z-[1] text-base font-bold text-copilot-text-primary">{block.title}</h3>
+          <ul className="relative z-[1] mt-4 flex flex-1 flex-col gap-2">
             {items.map((link, j) => (
               <li key={linkRowKey(link, j)}>
                 {link.kind === "live" ? (
                   <Link
                     href={link.href}
-                    className="text-sm font-medium text-brand-700 hover:text-brand-800 underline"
+                    className="text-sm font-semibold text-copilot-primary hover:text-copilot-primary-strong hover:underline"
                   >
                     {link.label}
                   </Link>
                 ) : (
-                  <span className="inline-flex flex-wrap items-center gap-2 text-sm text-slate-500">
+                  <span className="inline-flex flex-wrap items-center gap-2 text-sm text-copilot-text-muted">
                     <span>{link.label}</span>
                     <ComingSoonBadge />
                   </span>
@@ -54,7 +56,7 @@ export function RelatedGuidesGrid({ blocks }: { blocks: CityRelatedGuideBlock[] 
               </li>
             ))}
           </ul>
-        </div>
+        </article>
       ))}
     </div>
   );
@@ -75,7 +77,7 @@ export function RelatedGuidesSection({
   if (!blocks?.some((b) => (b.links ?? []).length > 0)) return null;
   return (
     <section id={id} className={cn("scroll-mt-24 mt-12 space-y-6", className)}>
-      <h2 className="text-2xl font-semibold tracking-tight text-slate-900">{title}</h2>
+      <h2 className="text-2xl font-semibold tracking-tight text-foreground">{title}</h2>
       <RelatedGuidesGrid blocks={blocks} />
     </section>
   );

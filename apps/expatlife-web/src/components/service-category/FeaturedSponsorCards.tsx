@@ -21,27 +21,19 @@ function SponsorLogo({
   const resolvedUrl = logoUrl ? normalizeExternalProviderLogoSrc(logoUrl) : undefined;
   if (resolvedUrl && !error) {
     return (
-      <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
-        {resolvedUrl.startsWith("http") ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={resolvedUrl}
-            alt=""
-            className="h-full w-full object-contain p-1.5"
-            onError={() => setError(true)}
-            referrerPolicy="no-referrer"
-            loading="lazy"
-          />
-        ) : (
-          <Image
-            src={resolvedUrl}
-            alt=""
-            fill
-            className="object-contain p-1.5"
-            onError={() => setError(true)}
-            sizes="56px"
-          />
-        )}
+      <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-card border border-border bg-surface-raised shadow-card">
+        <Image
+          src={resolvedUrl}
+          alt=""
+          fill
+          className="object-contain p-1.5"
+          onError={() => setError(true)}
+          sizes="56px"
+          referrerPolicy="no-referrer"
+          unoptimized={
+            resolvedUrl.startsWith("http") || /\.svg(\?|$)/i.test(resolvedUrl)
+          }
+        />
       </div>
     );
   }

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
-import { ToolHero } from "@/src/components/tools/ToolHero";
+import { MoveHero } from "@/components/page/move-shell";
 import { ExamplesSection } from "@/src/components/tools/ExamplesSection";
 import { ArrivalPlannerClient } from "@/src/components/tools/ArrivalPlannerClient";
 import {
@@ -29,10 +28,11 @@ import { getArrivalPlannerInitialFromSearchParams } from "@/src/lib/tools/arriva
 import { buildSoftwareApplicationSchema } from "@/src/lib/seo/toolSchema";
 import { buildBreadcrumbSchema, getToolBreadcrumbItems } from "@/src/lib/seo/breadcrumbSchema";
 import { buildFaqSchema } from "@/src/lib/seo/faqSchema";
-import { ARRIVAL_PLANNER_RELATED_GUIDES, ARRIVAL_PLANNER_RELATED_TOOLS } from "@/src/lib/tools/shared/toolInternalLinks";
+import type { ToolRelatedGuide } from "@/src/lib/tools/shared/toolPageContent";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -41,7 +41,7 @@ const canonical = "/netherlands/moving/tools/arrival-planner/";
 export const metadata: Metadata = buildSocialMetadata({
   title: "Arrival planner for the Netherlands (free tool)",
   description:
-    "Build a personalized arrival plan for the Netherlands. See what to prioritize in your first week, first month, and which steps often need appointments.",
+    "Build a prioritized first-week and first-month plan for the Netherlands—tasks, appointments, and reminders based on your situation. About 2 minutes.",
   path: canonical,
   ogType: "website",
 });
@@ -185,19 +185,9 @@ export default async function ArrivalPlannerPage(props: PageProps) {
     initialMode = "personalized";
   }
 
-  const intro = (
-    <>
-      {meta.seo.introParagraphs?.map((paragraph, index) => (
-        <p key={index} className="mb-3">
-          {paragraph}
-        </p>
-      ))}
-    </>
-  );
-
   const pageTitle = "Arrival Planner for the Netherlands (Free Tool)";
   const pageDescription =
-    "Build a personalized arrival plan for the Netherlands. See what to prioritize in your first week, first month, and which steps often need appointments.";
+    "Build a prioritized first-week and first-month plan for the Netherlands—tasks, appointments, and reminders based on your situation.";
   const breadcrumbItems = getToolBreadcrumbItems("Arrival Planner", canonical);
   const breadcrumbJsonLd = buildBreadcrumbSchema(breadcrumbItems);
   const softwareAppJsonLd = buildSoftwareApplicationSchema({
@@ -208,6 +198,29 @@ export default async function ArrivalPlannerPage(props: PageProps) {
   });
   const faqJsonLd = buildFaqSchema(faq.map((q) => ({ question: q.question, answer: q.answer })));
 
+  const nextSteps: ToolRelatedGuide[] = [
+    {
+      href: "/netherlands/document-readiness-checker/",
+      title: "Document Readiness Checker",
+      description: "See which documents to prepare before and after arrival.",
+    },
+    {
+      href: "/netherlands/moving/tools/moving-checklist/",
+      title: "Moving checklist",
+      description: "Pre-move tasks and deadlines in one place.",
+    },
+    {
+      href: "/netherlands/municipality-registration-netherlands/",
+      title: "Municipality registration & BSN",
+      description: "How registration works and what to bring.",
+    },
+    {
+      href: "/netherlands/moving/tools/first-90-days/",
+      title: "First 90 Days Planner",
+      description: "Plan week 2 through month 3 after landing.",
+    },
+  ];
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppJsonLd) }} />
@@ -217,9 +230,13 @@ export default async function ArrivalPlannerPage(props: PageProps) {
       ) : null}
 
       <ToolPageTemplate
+        movingClusterHero
+        contentOrder="tool-first"
+        mainSectionTitle="Arrival planner"
         hero={
-          <ToolHero
-            eyebrow="Tool"
+          <MoveHero
+            variant="tool"
+            eyebrow="TOOL"
             title={meta.hero.title}
             subtitle={meta.hero.subtitle}
             introBullets={meta.hero.introBullets}
@@ -231,15 +248,13 @@ export default async function ArrivalPlannerPage(props: PageProps) {
             imageFallback={meta.hero.imageFallback}
           />
         }
-        intro={intro}
         disclosure={meta.disclosure}
         explanatorySections={meta.explanatorySections}
-        infographic={meta.infographic}
         examplesSection={
           examples.length > 0 ? (
             <ExamplesSection
               title="Example scenarios"
-              subtitle="Explore realistic arrival situations and prefill the planner in one click."
+              subtitle="Prefill the planner from a realistic situation—one click."
               showHeading={false}
               examples={examples.map((example) => ({
                 id: example.id,
@@ -255,21 +270,8 @@ export default async function ArrivalPlannerPage(props: PageProps) {
           ) : null
         }
         faqItems={faq}
-        relatedGuides={ARRIVAL_PLANNER_RELATED_GUIDES}
-        internalLinkStrip={
-          <nav className="flex flex-wrap gap-4 text-sm" aria-label="Related guides and tools">
-            {ARRIVAL_PLANNER_RELATED_GUIDES.slice(0, 6).map((g) => (
-              <Link key={g.href} href={g.href} className="font-medium text-brand-600 hover:text-brand-700">
-                {g.title}
-              </Link>
-            ))}
-            {ARRIVAL_PLANNER_RELATED_TOOLS.map((t) => (
-              <Link key={t.href} href={t.href} className="font-medium text-brand-600 hover:text-brand-700">
-                {t.label}
-              </Link>
-            ))}
-          </nav>
-        }
+        relatedGuides={nextSteps}
+        postToolValue={<MoveClusterToolPostValueBlock preset="movingChecklistAndFirst90" />}
       >
         <ArrivalPlannerClient
           defaultResultJson={defaultResultJson}

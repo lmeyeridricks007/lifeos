@@ -80,7 +80,8 @@ export default function SitemapPage() {
   }));
   const toolLinks = loadToolRegistry()
     .filter((t) => t.status === "live")
-    .map((t) => ({ label: t.title, href: t.route }));
+    .map((t) => ({ label: t.title, href: t.route }))
+    .sort((a, b) => a.label.localeCompare(b.label, "en"));
 
   const routingSlugSet = new Set<string>(ROUTING_ORIGIN_COUNTRY_SLUGS);
   const originGuideLinks = loadAllEnabledCountries()

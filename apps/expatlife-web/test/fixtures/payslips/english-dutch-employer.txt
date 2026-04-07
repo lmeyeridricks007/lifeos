@@ -1,0 +1,6 @@
+Payroll — March 2026
+Gross salary                 6.000,00
+Employee pension              -300,00
+Wage tax                   -1.950,00
+Net pay                      3.750,00
+Holiday allowance accrual      480,00

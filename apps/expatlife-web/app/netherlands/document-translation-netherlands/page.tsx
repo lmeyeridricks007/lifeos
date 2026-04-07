@@ -14,10 +14,13 @@ import {
 } from "@/src/data/guides/document-translation-costs";
 import { DOCUMENT_TRANSLATION_TRANSLATOR_RESOURCES } from "@/src/data/guides/document-translation-translator-resources";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { buildNetherlandsGuideAffiliateSlots } from "@/src/components/monetization";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
+
+const DOCUMENT_TRANSLATION_SLUG = "document-translation-netherlands" as const;
 
 const baseUrl = getSiteOrigin();
 
@@ -46,7 +49,7 @@ export const metadata: Metadata = {
 };
 
 export default function DocumentTranslationPage() {
-  const data = loadGuideBySlug("document-translation-netherlands");
+  const data = loadGuideBySlug(DOCUMENT_TRANSLATION_SLUG);
   if (!data) notFound();
 
   const mergedData = {
@@ -92,6 +95,8 @@ export default function DocumentTranslationPage() {
   const dateModified = new Date().toISOString().slice(0, 10);
   const serializableData = JSON.parse(JSON.stringify(mergedData));
   const serializableBlocks = JSON.parse(JSON.stringify(affiliateBlocks));
+  const { contextualAffiliateAfterFirstSection, contextualAffiliateBeforeNextSteps } =
+    buildNetherlandsGuideAffiliateSlots(DOCUMENT_TRANSLATION_SLUG, mergedData.path);
 
   return (
     <>
@@ -107,6 +112,8 @@ export default function DocumentTranslationPage() {
         data={serializableData}
         affiliateBlocks={serializableBlocks}
         canonicalUrl={new URL(mergedData.path.startsWith("/") ? mergedData.path : `/${mergedData.path}`, baseUrl).toString()}
+        contextualAffiliateAfterFirstSection={contextualAffiliateAfterFirstSection}
+        contextualAffiliateBeforeNextSteps={contextualAffiliateBeforeNextSteps}
       />
     </>
   );

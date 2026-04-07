@@ -1,4 +1,4 @@
-import { CardLink } from "@/components/ui/card-link";
+import { ToolCard } from "@/components/page/pillar-template";
 import type { GuideData } from "@/src/lib/guides/types";
 
 type FeaturedToolsBlockProps = {
@@ -9,16 +9,17 @@ export function FeaturedToolsBlock({ items }: FeaturedToolsBlockProps) {
   if (!items?.length) return null;
 
   return (
-    <div className="grid w-full gap-5 sm:grid-cols-2">
+    <>
       {items.map((tool) => (
-        <CardLink
+        <ToolCard
           key={tool.href}
-          href={tool.href}
           title={tool.label}
-          description=""
-          badge="Tool"
+          description={tool.description?.trim() || "Practical planning tool for your Netherlands move."}
+          href={tool.href}
+          ctaLabel="Open tool"
+          compact
         />
       ))}
-    </div>
+    </>
   );
 }

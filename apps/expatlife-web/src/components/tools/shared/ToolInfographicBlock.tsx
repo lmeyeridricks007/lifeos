@@ -33,17 +33,17 @@ export function ToolInfographicBlock({
     return (
       <figure className={`my-6 max-w-2xl mx-auto ${className}`}>
         <div
-          className="relative flex flex-col items-center justify-center overflow-hidden rounded-xl border-2 border-dashed border-slate-200 bg-slate-50/80 py-16 text-slate-400"
+          className="relative flex flex-col items-center justify-center overflow-hidden rounded-card border-2 border-dashed border-border bg-surface-muted/80 py-16 text-foreground-muted"
           style={{ aspectRatio: `${width} / ${height}` }}
         >
           <ImageOff className="h-12 w-12 shrink-0" aria-hidden />
-          <p className="mt-3 text-sm font-medium text-slate-500">
+          <p className="mt-3 text-sm font-medium text-foreground-muted">
             {alt || "Infographic"}
           </p>
-          <p className="mt-1 text-xs text-slate-400">Placeholder — add image when ready</p>
+          <p className="mt-1 text-xs text-foreground-muted/80">Placeholder — add image when ready</p>
         </div>
         {caption ? (
-          <figcaption className="mt-2 text-center text-sm text-slate-500">{caption}</figcaption>
+          <figcaption className="mt-2 text-center text-sm text-foreground-muted">{caption}</figcaption>
         ) : null}
       </figure>
     );
@@ -53,33 +53,21 @@ export function ToolInfographicBlock({
 
   return (
     <figure className={`my-6 max-w-2xl mx-auto ${className}`}>
-      <div className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-50">
-        {isLocal ? (
-          <Image
-            src={src}
-            alt={alt}
-            width={width}
-            height={height}
-            className="w-full object-contain"
-            sizes="(max-width: 768px) 100vw, 672px"
-            loading="lazy"
-            onError={() => setError(true)}
-          />
-        ) : (
-          /* eslint-disable-next-line @next/next/no-img-element */
-          <img
-            src={src}
-            alt={alt}
-            width={width}
-            height={height}
-            className="w-full object-contain"
-            loading="lazy"
-            onError={() => setError(true)}
-          />
-        )}
+      <div className="relative overflow-hidden rounded-card border border-border bg-surface-muted">
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          className="w-full object-contain"
+          sizes="(max-width: 768px) 100vw, 672px"
+          loading="lazy"
+          unoptimized={!isLocal}
+          onError={() => setError(true)}
+        />
       </div>
       {caption ? (
-        <figcaption className="mt-2 text-center text-sm text-slate-500">{caption}</figcaption>
+        <figcaption className="mt-2 text-center text-sm text-foreground-muted">{caption}</figcaption>
       ) : null}
     </figure>
   );

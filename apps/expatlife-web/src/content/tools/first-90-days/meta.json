@@ -11,12 +11,12 @@
       "Practical reminders for daily life"
     ],
     "image": {
-      "src": "/images/tools/first-90-days-netherlands.webp",
-      "alt": "First 90 days planner for expats settling in the Netherlands"
+      "src": "/images/guides/netherlands/moving/first-90-days-tool-hero.png",
+      "alt": "First 90 days in the Netherlands: timeline planner, tablet, and settling-in essentials on a desk"
     },
     "imageFallback": {
       "src": "/images/guides/netherlands/moving/first-90-days-tool-hero.png",
-      "alt": "Family cycling through a Dutch street with historic buildings and yellow flowers — everyday life in the Netherlands"
+      "alt": "First 90 days in the Netherlands: timeline planner, tablet, and settling-in essentials on a desk"
     }
   },
   "explanatorySections": [

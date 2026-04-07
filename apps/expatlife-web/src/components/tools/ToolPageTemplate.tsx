@@ -1,11 +1,28 @@
-import { Section } from "@/components/ui/section";
 import { Accordion } from "@/components/ui/accordion";
 import { CardLink } from "@/components/ui/card-link";
+import { Container } from "@/components/ui/container";
 import { InfoBox } from "@/components/ui/info-box";
 import { CollapsiblePanel } from "@/components/ui/collapsible-panel";
 import { ToolIntroSection } from "@/src/components/tools/shared/ToolIntroSection";
 import { ToolInfographicBlock } from "@/src/components/tools/shared/ToolInfographicBlock";
+import {
+  ToolFaqOrTrust,
+  ToolHelpsWith,
+  ToolHowToUse,
+  ToolPageRoot,
+  ToolSurface,
+  ToolWhatHappensNext,
+} from "@/components/page-families";
+import { MoveIntroSurface, MovePageTemplate, moveToolPageWrapClass } from "@/components/page/move-shell";
+import { PillarMainStack, SectionBlock } from "@/components/page/pillar-template";
+import {
+  guideFaqSurfaceClass,
+  toolIntroSurfaceClass,
+  toolMainSurfaceClass,
+} from "@/lib/ui/page-family";
 import type { ReactNode } from "react";
+import type { MonetizationPageType } from "@/src/lib/monetization/pageTypePolicy";
+import { toolTemplateAllowsPreFaqMonetization } from "@/src/lib/monetization/pageTypePolicy";
 
 export type ToolExplanatorySection = {
   id: string;
@@ -15,7 +32,7 @@ export type ToolExplanatorySection = {
 };
 
 export type ToolPageTemplateProps = {
-  /** Hero section (H1, subtitle, CTAs) - typically ToolHero */
+  /** Hero section (H1, subtitle, CTAs) — use `MoveHero` variant="tool" with `movingClusterHero` for NL Move cluster. */
   hero: ReactNode;
   /** SEO intro copy - visible before interaction */
   intro?: ReactNode;
@@ -31,8 +48,8 @@ export type ToolPageTemplateProps = {
   examplesSection?: ReactNode;
   /** FAQ accordion items: { id, question, answer } */
   faqItems?: Array<{ id: string; question: string; answer: string }>;
-  /** Related guide cards */
-  relatedGuides?: Array<{ href: string; title: string; description: string }>;
+  /** Related guide cards — use `status: "coming_soon"` for placeholder routes (renders non-clickable card). */
+  relatedGuides?: Array<{ href: string; title: string; description: string; status?: "coming_soon" }>;
   /** Internal link strip (e.g. hub, pillar, tools) */
   internalLinkStrip?: ReactNode;
   /** Optional recommended immigration lawyers block (rendered above recommendedServices when both present) */
@@ -47,13 +64,51 @@ export type ToolPageTemplateProps = {
   extraSection?: ReactNode;
   /** Optional sticky sidebar (e.g. On this page nav + CTAs) */
   sidebar?: ReactNode;
+  /** Rendered immediately before the FAQ accordion (e.g. soft planning CTA). */
+  beforeFaq?: ReactNode;
+  /** After the main tool UI (and example scenarios), before “What happens next” / FAQ — for post-value soft CTAs. */
+  postToolValue?: ReactNode;
+  /** Default `tool`: suppresses `beforeFaq` unless `allowPreFaqMonetization` or a non-tool type (e.g. `comparison`). */
+  monetizationPageType?: MonetizationPageType;
+  /** Force-enable `beforeFaq` on tool pages (normally deferred until after the main tool). */
+  allowPreFaqMonetization?: boolean;
   /** When set, render this section above the main content section (same width/alignment) */
   primarySectionTitle?: string;
   /** Content for the primary section (e.g. Check your document readiness block) */
   primarySectionContent?: ReactNode;
   /** When set, overrides the default "Build your checklist" title for the main content section. */
   mainSectionTitle?: string;
+  /**
+   * `default`: intro/disclosure, then optional primary block, then tool (examples + children).
+   * `tool-first`: primary block, then tool, then intro/disclosure — for action-first tool pages.
+   */
+  contentOrder?: "default" | "tool-first";
+  /** Overrides the "Related guides" section heading (default: "What happens next"). */
+  relatedGuidesSectionTitle?: string;
+  /** Optional section id for in-page navigation (e.g. sidebar TOC). */
+  relatedGuidesSectionId?: string;
+  /** Overrides the H2 above the explanatory section cards (default: "How to use it"). */
+  explanatorySectionsOuterTitle?: string;
+  /** Passed to `PillarMainStack` below the hero (vertical rhythm between tool contract regions). */
+  mainStackClassName?: string;
+  /** Wraps the tool hero in `PillarGuideHeroRegion` + max-width container (Moving NL cluster tools). */
+  movingClusterHero?: boolean;
+  /** Optional anchor on the intro / disclaimer surface (`MoveIntroSurface`) for TOC links. */
+  introSurfaceId?: string;
 };
+
+const explanatoryCardVariants = [
+  "rounded-card border border-brand/20 bg-gradient-to-br from-brand-muted/40 to-surface-raised p-5 shadow-card ring-1 ring-border/15 md:p-6 border-l-[3px] border-l-brand",
+  "rounded-card border border-border bg-surface-muted/70 p-5 shadow-card ring-1 ring-border/15 md:p-6 border-l-[3px] border-l-accent",
+  "rounded-card border border-border bg-surface-raised p-5 shadow-card ring-1 ring-border/15 md:p-6 border-l-[3px] border-l-border-strong",
+] as const;
+
+/** Move NL tools (`movingClusterHero`): match JSON guide / pillar copilot cards */
+const movingClusterExplanatoryCardVariants = [
+  "rounded-2xl border-0 bg-copilot-surface p-5 shadow-expatos-md ring-1 ring-copilot-primary/[0.08] md:p-6 border-l-4 border-l-copilot-primary/50",
+  "rounded-2xl border-0 bg-copilot-bg-soft/90 p-5 shadow-expatos-sm ring-1 ring-copilot-primary/[0.07] md:p-6 border-l-4 border-l-copilot-accent/50",
+  "rounded-2xl border-0 bg-copilot-surface p-5 shadow-expatos-md ring-1 ring-copilot-primary/[0.06] md:p-6 border-l-4 border-l-blue-500/40",
+] as const;
 
 export function ToolPageTemplate({
   hero,
@@ -75,175 +130,318 @@ export function ToolPageTemplate({
   primarySectionTitle,
   primarySectionContent,
   mainSectionTitle,
+  contentOrder = "default",
+  relatedGuidesSectionTitle = "What happens next",
+  relatedGuidesSectionId,
+  explanatorySectionsOuterTitle = "How to use it",
+  mainStackClassName,
+  movingClusterHero = false,
+  introSurfaceId,
+  beforeFaq,
+  monetizationPageType = "tool",
+  allowPreFaqMonetization,
+  postToolValue,
 }: ToolPageTemplateProps) {
-  const sectionSurfaceClass = "rounded-2xl border border-slate-200 bg-slate-50/60 p-5 md:p-6";
   const hasSidebar = Boolean(sidebar);
+  const faqAnswerClass = movingClusterHero
+    ? "text-sm leading-relaxed text-copilot-text-secondary"
+    : "text-sm text-foreground-muted";
   const faqAccordionItems =
     faqItems?.map((item) => ({
       id: item.id,
       title: item.question,
-      content: <p className="text-sm text-slate-600">{item.answer}</p>,
+      content: <p className={faqAnswerClass}>{item.answer}</p>,
     })) ?? [];
 
-  const mainContent = (
-    <>
-      {(intro || disclosure) ? (
-        <Section className="pb-4 md:pb-6">
-          <div className="rounded-2xl border border-slate-200/80 bg-gradient-to-br from-slate-50 to-sky-50/30 p-5 shadow-sm md:p-6">
+  const introSection =
+    intro || disclosure ? (
+      <div className="pb-4 pt-4 sm:pt-5 md:pb-6">
+        {movingClusterHero ? (
+          <MoveIntroSurface id={introSurfaceId} disclaimer={disclosure} disclaimerTitle="Before you start">
+            {intro}
+          </MoveIntroSurface>
+        ) : (
+          <div className={toolIntroSurfaceClass}>
             <div className="space-y-6">
               {intro ? (
-                <div className="relative pl-4 prose prose-slate max-w-none text-slate-600 prose-p:leading-relaxed md:pl-5">
-                  <span className="absolute left-0 top-1 bottom-1 w-1 rounded-full bg-brand-600/40" aria-hidden />
+                <div className="relative pl-4 prose prose-slate max-w-none text-foreground-muted prose-p:leading-relaxed md:pl-5 prose-headings:text-foreground">
+                  <span className="absolute left-0 top-1 bottom-1 w-1 rounded-full bg-brand/50" aria-hidden />
                   {intro}
                 </div>
               ) : null}
               {disclosure ? (
-                <InfoBox title="Disclaimer" variant="warn" className="shadow-sm">
+                <InfoBox title="Disclaimer" variant="warn" className="shadow-card">
                   {disclosure}
                 </InfoBox>
               ) : null}
             </div>
           </div>
-        </Section>
-      ) : null}
+        )}
+      </div>
+    ) : null;
 
-      {primarySectionTitle && primarySectionContent ? (
-        <Section id="tool-inputs" title={primarySectionTitle} className="pt-4 md:pt-6 scroll-mt-24" contained={true}>
+  const primarySection =
+    primarySectionTitle && primarySectionContent ? (
+      <Container>
+        <SectionBlock
+          id="tool-inputs"
+          title={primarySectionTitle}
+          compact
+          className="scroll-mt-24 pt-4 md:pt-6"
+        >
           {primarySectionContent}
-        </Section>
-      ) : null}
+        </SectionBlock>
+      </Container>
+    ) : null;
 
-      {(examplesSection || children) ? (
-        <Section title={mainSectionTitle ?? "Build your checklist"} className="pt-4 md:pt-6">
+  const toolSection =
+    examplesSection || children ? (
+      <Container>
+        <SectionBlock compact title={mainSectionTitle ?? "Build your checklist"} className="pt-4 md:pt-6">
+          {children}
           {examplesSection ? (
-            <div id={hasSidebar ? "example-scenarios" : undefined} className="mb-6">
+            <div id={hasSidebar ? "example-scenarios" : undefined} className="mt-5">
               <CollapsiblePanel
                 title="Example scenarios"
                 defaultOpen={false}
-                titleClassName="text-base font-semibold text-slate-800"
-                triggerClassName="cursor-pointer rounded-t-xl bg-sky-50/80 text-sky-800 hover:bg-sky-100/90 hover:text-sky-900"
-                className="border-sky-200/80 bg-sky-50/40"
+                titleClassName="text-base font-semibold text-foreground"
+                triggerClassName="cursor-pointer rounded-t-xl bg-surface-muted/90 text-foreground-muted hover:bg-surface-muted hover:text-foreground"
+                className="border-border bg-surface-muted/40"
               >
-                <div className={sectionSurfaceClass}>{examplesSection}</div>
+                <div className={toolMainSurfaceClass}>{examplesSection}</div>
               </CollapsiblePanel>
             </div>
           ) : null}
-          {children}
-        </Section>
-      ) : null}
+          {postToolValue ? (
+            <div className="mt-8 border-t border-border pt-8">{postToolValue}</div>
+          ) : null}
+        </SectionBlock>
+      </Container>
+    ) : null;
 
-      {infographic ? (
-        <Section title="Visual overview" className="pt-4 md:pt-6">
-          <ToolInfographicBlock
-            src={infographic.src}
-            alt={infographic.alt}
-            caption={infographic.caption}
-          />
-        </Section>
-      ) : null}
-
-      {recommendedLawyersSection ? (
-        <div id={hasSidebar ? "recommended-immigration-lawyers" : undefined} className="pt-4 md:pt-6 scroll-mt-24">
-          {recommendedLawyersSection}
-        </div>
-      ) : null}
-
-      {recommendedServices ? (
-        <Section id={hasSidebar ? "recommended-services" : undefined} title="Recommended services" contained={true} className="pt-4 md:pt-6">
-          {recommendedServices}
-        </Section>
-      ) : null}
-
-      {explanatorySections?.length ? (
-        <Section id={hasSidebar ? "how-the-tool-works" : undefined} title="More about this tool" contained={true} className="pt-4 md:pt-6">
-          <div className="grid gap-5 sm:grid-cols-1 lg:grid-cols-2">
-            {explanatorySections.map((section, index) => {
-              const variants = [
-                "rounded-2xl border border-brand-200/90 bg-gradient-to-br from-brand-50/90 to-white p-5 shadow-sm md:p-6 border-l-4 border-l-brand-500",
-                "rounded-2xl border border-sky-200/90 bg-gradient-to-br from-sky-50/80 to-white p-5 shadow-sm md:p-6 border-l-4 border-l-sky-500",
-                "rounded-2xl border border-amber-200/80 bg-gradient-to-br from-amber-50/70 to-white p-5 shadow-sm md:p-6 border-l-4 border-l-amber-500",
-                "rounded-2xl border border-emerald-200/80 bg-gradient-to-br from-emerald-50/70 to-white p-5 shadow-sm md:p-6 border-l-4 border-l-emerald-500",
-              ];
-              const cardClass = variants[index % variants.length];
-              return (
-                <div key={section.id} className={cardClass}>
-                  <ToolIntroSection
-                    section={{
-                      id: section.id,
-                      title: section.title,
-                      body: section.body ?? [],
-                      bullets: section.bullets,
-                    }}
-                    className="prose-headings:text-slate-900"
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </Section>
-      ) : null}
-
-      {seoContent ? (
-        <Section id={hasSidebar ? "seo-content" : undefined} title={seoContentSectionTitle} contained={true} className="pt-4 md:pt-6">
-          {seoContent}
-        </Section>
-      ) : null}
-
-      {faqAccordionItems.length > 0 ? (
-        <Section id={hasSidebar ? "faq" : undefined} title="Frequently asked questions" contained={true}>
-          <div className={sectionSurfaceClass}>
-            <Accordion items={faqAccordionItems} />
-          </div>
-        </Section>
-      ) : null}
-
-      {relatedGuides && relatedGuides.length > 0 ? (
-        <Section title="Related guides" contained={true}>
-          <div className="rounded-2xl border border-sky-200/70 bg-gradient-to-br from-sky-50/60 to-slate-50/80 p-5 shadow-sm md:p-6">
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {relatedGuides.map((guide) => (
-                <CardLink
-                  key={guide.href}
-                  href={guide.href}
-                  title={guide.title}
-                  description={guide.description}
-                  className="border-l-4 border-l-brand-500/70 border-sky-200/80 bg-white hover:border-brand-300 hover:bg-sky-50/50 hover:border-l-brand-600"
-                />
-              ))}
-            </div>
-          </div>
-        </Section>
-      ) : null}
-
-      {extraSection ? (
-        <Section contained={true}>
-          {extraSection}
-        </Section>
-      ) : null}
-
-      {internalLinkStrip ? (
-        <Section contained={true}>
-          <div className={sectionSurfaceClass}>{internalLinkStrip}</div>
-        </Section>
-      ) : null}
+  const surfaceBlocks = (
+    <>
+      {primarySection}
+      {toolSection}
     </>
   );
 
+  const toolStackClass = "flex flex-col gap-4 md:gap-5";
+
+  const leadBlocks =
+    contentOrder === "tool-first" ? (
+      <>
+        <ToolSurface className={toolStackClass}>{surfaceBlocks}</ToolSurface>
+        <ToolHelpsWith>{introSection}</ToolHelpsWith>
+      </>
+    ) : (
+      <>
+        <ToolHelpsWith>{introSection}</ToolHelpsWith>
+        <ToolSurface className={toolStackClass}>{surfaceBlocks}</ToolSurface>
+      </>
+    );
+
+  const hasHowToBlock =
+    Boolean(infographic) ||
+    Boolean(recommendedLawyersSection) ||
+    Boolean(recommendedServices) ||
+    Boolean(explanatorySections?.length) ||
+    Boolean(seoContent);
+
+  const hasWhatNextBlock =
+    Boolean(relatedGuides?.length) || Boolean(extraSection) || Boolean(internalLinkStrip);
+
+  const mainStackRhythm = "mt-2 space-y-4 sm:mt-3 sm:space-y-5 md:space-y-6";
+
+  const resolvedBeforeFaq =
+    beforeFaq && toolTemplateAllowsPreFaqMonetization(monetizationPageType, allowPreFaqMonetization)
+      ? beforeFaq
+      : null;
+
+  const mainContent = (
+    <PillarMainStack className={mainStackClassName ?? mainStackRhythm}>
+      {leadBlocks}
+
+      {hasHowToBlock ? (
+        <ToolHowToUse className="flex flex-col gap-4 md:gap-5">
+          {infographic ? (
+            <Container>
+              <SectionBlock compact title="Visual overview" className="pt-4 md:pt-6">
+                <ToolInfographicBlock
+                  src={infographic.src}
+                  alt={infographic.alt}
+                  caption={infographic.caption}
+                />
+              </SectionBlock>
+            </Container>
+          ) : null}
+
+          {recommendedLawyersSection ? (
+            <div id={hasSidebar ? "recommended-immigration-lawyers" : undefined} className="pt-3 md:pt-4 scroll-mt-24">
+              {recommendedLawyersSection}
+            </div>
+          ) : null}
+
+          {recommendedServices ? (
+            <Container>
+              <SectionBlock
+                id={hasSidebar ? "recommended-services" : undefined}
+                title="Recommended services"
+                compact
+                className="pt-3 md:pt-4"
+              >
+                {recommendedServices}
+              </SectionBlock>
+            </Container>
+          ) : null}
+
+          {explanatorySections?.length ? (
+            <Container>
+              <SectionBlock
+                id={hasSidebar ? "how-the-tool-works" : undefined}
+                title={explanatorySectionsOuterTitle}
+                compact
+                className="pt-3 md:pt-4"
+              >
+                <div
+                  className={
+                    explanatorySections.length === 1
+                      ? "grid gap-4"
+                      : "grid gap-4 sm:grid-cols-1 lg:grid-cols-2"
+                  }
+                >
+                  {explanatorySections.map((section, index) => {
+                    const cardClass = movingClusterHero
+                      ? movingClusterExplanatoryCardVariants[
+                          index % movingClusterExplanatoryCardVariants.length
+                        ]
+                      : explanatoryCardVariants[index % explanatoryCardVariants.length];
+                    return (
+                      <div key={section.id} className={cardClass}>
+                        <ToolIntroSection
+                          section={{
+                            id: section.id,
+                            title: section.title,
+                            body: section.body ?? [],
+                            bullets: section.bullets,
+                          }}
+                          className={
+                            movingClusterHero
+                              ? "prose-headings:text-copilot-text-primary [&_p]:text-copilot-text-secondary [&_li]:text-copilot-text-secondary"
+                              : "prose-headings:text-foreground"
+                          }
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
+              </SectionBlock>
+            </Container>
+          ) : null}
+
+          {seoContent ? (
+            <Container>
+              <SectionBlock
+                id={hasSidebar ? "seo-content" : undefined}
+                title={seoContentSectionTitle ?? "Details"}
+                compact
+                className="pt-3 md:pt-4"
+              >
+                {seoContent}
+              </SectionBlock>
+            </Container>
+          ) : null}
+        </ToolHowToUse>
+      ) : null}
+
+      {hasWhatNextBlock ? (
+        <ToolWhatHappensNext className="flex flex-col gap-4 md:gap-5">
+          {relatedGuides && relatedGuides.length > 0 ? (
+            <Container>
+              <SectionBlock
+                id={relatedGuidesSectionId}
+                compact
+                title={relatedGuidesSectionTitle}
+                className="scroll-mt-28 py-4 sm:py-5 md:scroll-mt-32"
+              >
+                <div
+                  className={
+                    movingClusterHero
+                      ? "rounded-2xl border-0 bg-copilot-bg-soft/85 p-5 shadow-expatos-md ring-1 ring-copilot-primary/[0.08] md:p-6"
+                      : "rounded-card border border-border bg-gradient-to-br from-brand-muted/30 to-surface-muted/40 p-5 shadow-card ring-1 ring-border/15 md:p-6"
+                  }
+                >
+                  <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {relatedGuides.map((guide) => (
+                      <CardLink
+                        key={`${guide.title}-${guide.href}`}
+                        href={guide.href}
+                        title={guide.title}
+                        description={guide.description}
+                        status={guide.status}
+                        className={
+                          movingClusterHero
+                            ? "border-l-4 border-l-copilot-primary/45 bg-copilot-surface shadow-expatos-md ring-1 ring-copilot-primary/[0.08]"
+                            : "border-l-[3px] border-l-brand/80 bg-surface-raised"
+                        }
+                      />
+                    ))}
+                  </div>
+                </div>
+              </SectionBlock>
+            </Container>
+          ) : null}
+
+          {extraSection ? (
+            <Container>
+              <div className="space-y-6 py-4 sm:py-5">{extraSection}</div>
+            </Container>
+          ) : null}
+
+          {internalLinkStrip ? (
+            <Container>
+              <div className="py-4 sm:py-5">
+                <div className={toolMainSurfaceClass}>{internalLinkStrip}</div>
+              </div>
+            </Container>
+          ) : null}
+        </ToolWhatHappensNext>
+      ) : null}
+
+      {resolvedBeforeFaq || faqAccordionItems.length > 0 ? (
+        <ToolFaqOrTrust>
+          <Container>
+            {resolvedBeforeFaq ? <div className="py-4 sm:pb-2 sm:pt-5">{resolvedBeforeFaq}</div> : null}
+            {faqAccordionItems.length > 0 ? (
+              <SectionBlock
+                id={hasSidebar ? "faq" : undefined}
+                title="Frequently asked questions"
+                compact
+                className={resolvedBeforeFaq ? "py-2 sm:py-5" : "py-4 sm:py-5"}
+              >
+                {movingClusterHero ? (
+                  <div className="mt-1 rounded-2xl bg-copilot-surface p-4 shadow-expatos-md ring-1 ring-slate-900/[0.05] sm:p-5">
+                    <Accordion density="comfortable" tone="copilot" items={faqAccordionItems} />
+                  </div>
+                ) : (
+                  <div className={guideFaqSurfaceClass}>
+                    <Accordion items={faqAccordionItems} />
+                  </div>
+                )}
+              </SectionBlock>
+            ) : null}
+          </Container>
+        </ToolFaqOrTrust>
+      ) : null}
+    </PillarMainStack>
+  );
+
   return (
-    <main>
-      {hero}
-      {hasSidebar ? (
-        <div className="mx-auto w-full max-w-screen-2xl px-4 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
-            <div className="min-w-0">{mainContent}</div>
-            <aside className="hidden lg:block" aria-label="On this page and tools">
-              <div className="sticky top-24 space-y-6 py-6">{sidebar}</div>
-            </aside>
-          </div>
-        </div>
-      ) : (
-        mainContent
-      )}
-    </main>
+    <ToolPageRoot>
+      <div className={moveToolPageWrapClass}>{hero}</div>
+      <MovePageTemplate variant="tool" showSidebar={hasSidebar} sidebar={sidebar}>
+        {mainContent}
+      </MovePageTemplate>
+    </ToolPageRoot>
   );
 }

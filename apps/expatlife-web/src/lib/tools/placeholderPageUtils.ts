@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { cloneSafeMetadata } from "@/lib/metadata";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { buildSocialMetadata } from "@/lib/seo/metadata";
 import { getToolBySlug } from "@/src/lib/tools/getToolBySlug";
 import { getToolsByCategory } from "@/src/lib/tools/getToolsByCategory";
 import { getToolCategoryById, type ToolRecord } from "@/src/lib/tools/loadToolRegistry";
@@ -21,25 +23,33 @@ export function getPlaceholderToolData(slug: string, categoryId: string): {
   return { tool, relatedTools };
 }
 
-export function getPlaceholderMetadata(slug: string, categoryId: string): Metadata {
+/**
+ * Full title, description, canonical, Open Graph, and Twitter for placeholder tool URLs (still noindex).
+ */
+export function buildPlaceholderToolShareMetadata(slug: string, categoryId: string): Metadata {
   const tool = getToolBySlug(slug, { categoryId, includeAliases: true });
   if (!tool) {
-    return {
-      title: "Tool not found",
+    return cloneSafeMetadata({
+      ...buildSocialMetadata({
+        title: "Netherlands tools",
+        description: "Browse calculators, planners, and checklists for moving to the Netherlands on ExpatCopilot.",
+        path: "/netherlands/tools/",
+        ogType: "website",
+      }),
       robots: { index: false, follow: false },
-    };
+    });
   }
-  return {
+  const base = buildSocialMetadata({
     title: tool.seo.title,
     description: tool.seo.description,
-    keywords: tool.seo.keywords,
-    alternates: { canonical: tool.route },
-    openGraph: {
-      title: tool.seo.title,
-      description: tool.seo.description,
-      url: tool.route,
-    },
-  };
+    path: tool.route,
+    ogType: "website",
+  });
+  const withRobots = { ...base, robots: { index: false, follow: false } as const };
+  if (tool.seo.keywords?.length) {
+    return cloneSafeMetadata({ ...withRobots, keywords: tool.seo.keywords });
+  }
+  return cloneSafeMetadata(withRobots);
 }
 
 export function getPlaceholderJsonLd(tool: ToolRecord) {

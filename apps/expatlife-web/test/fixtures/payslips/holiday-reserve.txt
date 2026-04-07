@@ -1,0 +1,6 @@
+Periode 02-2026
+Bruto loon                    4.000,00
+Reservering vakantiegeld       320,00
+Vakantiegeld (8%)              320,00
+Loonheffing                   -980,00
+Netto uitbetaling             2.660,00

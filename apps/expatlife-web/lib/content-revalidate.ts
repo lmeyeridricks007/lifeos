@@ -1,5 +1,5 @@
-/** Production and Preview builds: ISR interval in seconds (8 hours). */
-export const CONTENT_REVALIDATE_SECONDS = 8 * 60 * 60;
+/** Production and Preview builds: ISR interval in seconds (1 hour) — balances freshness vs static cache. */
+export const CONTENT_REVALIDATE_SECONDS = 3600;
 
 /**
  * Use for `export const revalidate = ...` on App Router pages and `sitemap.ts`.

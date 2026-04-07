@@ -10,6 +10,7 @@
     "preview": "next build && next start",
     "start": "next start",
     "lint": "next lint",
+    "validate:salary-net": "tsx scripts/validate-dutch-salary-net.ts",
     "validate:affiliates": "tsx scripts/validate-affiliates.ts",
     "placeholders": "tsx scripts/generate-placeholder-images.ts",
     "generate:country-origin-heroes": "node scripts/generate-country-origin-heroes.mjs",
@@ -17,7 +18,9 @@
     "fetch:relocation-agencies": "tsx scripts/fetch-relocation-agencies.ts",
     "fetch:startup-facilitators": "tsx scripts/fetch-startup-facilitators.ts",
     "build:housing-platforms": "tsx scripts/build-housing-platforms-dataset.ts",
-    "build:rental-agencies": "tsx scripts/build-rental-agencies-dataset.ts"
+    "build:rental-agencies": "tsx scripts/build-rental-agencies-dataset.ts",
+    "test:payslip": "tsx --test \"src/lib/tools/payslip/**/*.test.ts\"",
+    "test:cost-of-living": "tsx --test src/lib/calculators/cost-of-living/calculator.test.ts"
   },
   "dependencies": {
     "@expatlife/content": "workspace:*",
@@ -36,6 +39,7 @@
     "next": "13.5.7",
     "next-contentlayer": "^0.3.2",
     "next-themes": "^0.2.1",
+    "pdf-parse": "^1.1.1",
     "pdfkit": "^0.17.2",
     "postcss": "8.4.23",
     "posthog-js": "^1.363.1",
@@ -44,9 +48,11 @@
     "react-share": "^5.3.0",
     "tailwind-merge": "^3.5.0",
     "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "typescript": "5.0.4",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@types/pdf-parse": "^1.1.5",
     "@types/pdfkit": "^0.17.5",
     "sharp": "^0.33.5",
     "tsx": "^4.20.6"

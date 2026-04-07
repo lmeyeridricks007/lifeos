@@ -26,8 +26,7 @@
     { "id": "cost-areas-variability", "label": "Typical cost areas and variability" },
     { "id": "checklist", "label": "Planning checklist" },
     { "id": "tools", "label": "Tools" },
-    { "id": "faq", "label": "FAQ" },
-    { "id": "useful-services", "label": "Useful services" }
+    { "id": "faq", "label": "FAQ" }
   ],
 
   "heroCta": {
@@ -64,10 +63,6 @@
     { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
     { "label": "Plan your first 90 days", "href": "/netherlands/moving/tools/first-90-days/" }
   ],
-
-  "servicesIntro": "These services are commonly used by expats when planning and funding a move. Compare options and confirm requirements for your situation. Some links may be affiliate links.",
-  "servicesSectionTitle": "Services commonly used by expats",
-  "resourcesAffiliatePlacementId": "resources_end",
 
   "quickAnswers": [
     {
@@ -343,7 +338,5 @@
       "q": "Should I budget an emergency buffer?",
       "a": "Many expats do. A typical suggested range is €1,000 – €3,000 for delays, temporary housing changes, extra admin, or setup costs. Some need less; others prefer a larger buffer if relocating with family or arriving without housing confirmed."
     }
-  ],
-
-  "disclosure": "Some links may be affiliate links. If you use them, we may earn a commission at no extra cost to you."
+  ]
 }

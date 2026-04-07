@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ExternalLink, MapPin, Banknote, CheckCircle2 } from "lucide-react";
@@ -20,15 +21,18 @@ function ProviderLogo({ logoUrl, name }: { logoUrl?: string; name: string }) {
   const resolvedUrl = logoUrl ? normalizeExternalProviderLogoSrc(logoUrl) : undefined;
   if (resolvedUrl && !error) {
     return (
-      <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
+      <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-lg border border-border bg-surface-raised shadow-card">
+        <Image
           src={resolvedUrl}
           alt=""
-          className="h-full w-full object-contain p-1"
+          fill
+          className="object-contain p-1"
           onError={() => setError(true)}
+          sizes="40px"
           referrerPolicy="no-referrer"
-          loading="lazy"
+          unoptimized={
+            resolvedUrl.startsWith("http") || /\.svg(\?|$)/i.test(resolvedUrl)
+          }
         />
       </div>
     );

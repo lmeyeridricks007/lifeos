@@ -1,38 +1,139 @@
+/**
+ * Primary navigation config (top-level pillars + mega menus).
+ * Rollback reference: `config.pre-phase1.ts` + `types.pre-phase1.ts`.
+ */
 import type { CountryOption, MegaMenu, NavItem, NavSection, TopNavEntry, TopNavKey } from "./types";
+import { orderMegaMenuSectionItems, sortNavItemsForDisplay } from "./navItemModel";
 import { getDomainFeaturedTools, getTopLevelToolsMenuGroups } from "@/src/lib/tools/getFeaturedTools";
 import type { ToolRecord } from "@/src/lib/tools/loadToolRegistry";
+import { getToolCategoryById, loadToolRegistry } from "@/src/lib/tools/loadToolRegistry";
 import { getRouteStatus } from "@/src/lib/routes/routeStatus";
-
+import { isComingSoonContent } from "@/src/lib/content/contentPublishStatus";
+import { getClusterPageByPath } from "@/src/lib/guides/livingCultureCluster";
+/** Static menu rows: authored as live; `filterNavItem` reconciles with route registry. */
 const item = (label: string, href: string, description?: string, badge?: string): NavItem => ({
   label,
   href,
+  navStatus: "live",
   description,
   badge,
 });
 
+/** Planned / unpublished row — never rendered as a dead link. */
+function soon(label: string): NavItem {
+  return { label, navStatus: "comingSoon" };
+}
+
 function toToolNavItem(tool: ToolRecord): NavItem {
   if (tool.status === "placeholder") {
-    return { label: tool.title, description: tool.summary, badge: "Soon", disabled: true };
+    return {
+      label: tool.title,
+      description: tool.summary,
+      navStatus: "comingSoon",
+    };
   }
   return item(tool.title, tool.route, tool.summary);
 }
 
+function toolById(id: string): ToolRecord | undefined {
+  return loadToolRegistry().find((t) => t.id === id);
+}
+
+function toolItemsByIds(ids: string[]): NavItem[] {
+  const out: NavItem[] = [];
+  for (const id of ids) {
+    const t = toolById(id);
+    if (t) out.push(toToolNavItem(t));
+  }
+  return out;
+}
+
+function dedupeNavItems(items: NavItem[]): NavItem[] {
+  const seen = new Set<string>();
+  return items.filter((x) => {
+    const k = `${x.label}\0${x.href ?? x.navStatus}`;
+    if (seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
+}
+
+const VIEW_ALL_LABELS: Partial<Record<TopNavKey, string>> = {
+  moving: "View all Move tools",
+  money: "View all Money tools",
+  culture: "View all tools",
+  living: "View all Living tools",
+  tools: "View all tools",
+};
+
+/** Which pillars append a global tools hub link after the domain “view all” row. */
+const APPEND_OPEN_TOOLS_HUB = new Set<TopNavKey>([
+  "moving",
+  "cities",
+  "money",
+  "services",
+  "living",
+  "culture",
+  "tools",
+]);
+
+/**
+ * Tools column from `menu-features.json` domainMenus + optional global hub link.
+ * Cities/Services use hand-authored `soon()` rows in RAW when no registry match is desired.
+ */
+function buildToolRailForKey(menuKey: TopNavKey): NavItem[] {
+  const domain = getDomainFeaturedTools(menuKey);
+  const category = domain ? getToolCategoryById(domain.categoryId) : undefined;
+  const viewAllHref = category?.route ?? "/netherlands/tools/";
+  const viewAllLabel = VIEW_ALL_LABELS[menuKey] ?? "View all tools";
+  const toolItems = domain ? domain.tools.map(toToolNavItem) : [];
+  const deduped = dedupeNavItems(toolItems);
+  const out: NavItem[] = [...deduped];
+  if (domain && deduped.length > 0) {
+    out.push(item(viewAllLabel, viewAllHref));
+  }
+  if (APPEND_OPEN_TOOLS_HUB.has(menuKey)) {
+    const hasHub = out.some((x) => x.href === "/netherlands/tools/" && x.label === "Open tools hub");
+    if (!hasHub) {
+      out.push(item("Open tools hub", "/netherlands/tools/"));
+    }
+  }
+  return out;
+}
+
 function filterNavItem(entry: NavItem): NavItem | null {
-  if (entry.disabled && !entry.href) {
+  if (entry.navStatus === "hidden") return null;
+  if (entry.navStatus === "comingSoon") {
     return entry;
   }
   if (!entry.href) return null;
   const st = getRouteStatus(entry.href);
   if (st === "live") {
-    return { ...entry, disabled: false };
+    const clusterEntry = getClusterPageByPath(entry.href);
+    if (clusterEntry && isComingSoonContent(clusterEntry.contentStatus)) {
+      return {
+        ...entry,
+        href: undefined,
+        navStatus: "comingSoon",
+        badge: entry.badge,
+      };
+    }
+    return { ...entry, navStatus: "live", href: entry.href };
   }
-  // coming-soon (registry / placeholder tools) and hidden (not in live set yet): still show in mega menu, not clickable
-  return { ...entry, href: undefined, disabled: true, badge: entry.badge ?? "Soon" };
+  if (st === "hidden") {
+    return null;
+  }
+  return {
+    ...entry,
+    href: undefined,
+    navStatus: "comingSoon",
+    badge: entry.badge,
+  };
 }
 
 function mvpFallbackSection(menuLabel: string): NavSection {
   return {
-    title: menuLabel === "Tools" ? "Browse tools" : "Popular right now",
+    title: "Quick links",
     items: [
       item("Netherlands hub", "/netherlands/", "Guides, cities, and services overview."),
       item("Moving to the Netherlands", "/netherlands/moving-to-the-netherlands/", "Main relocation guide."),
@@ -43,11 +144,38 @@ function mvpFallbackSection(menuLabel: string): NavSection {
   };
 }
 
+/** When a featured item resolves to non-live after routing, use a pillar-specific default (never generic Moving for unrelated pillars). */
+const DEFAULT_FEATURED_FALLBACK: Partial<Record<TopNavKey, NavItem>> = {
+  moving: item(
+    "Moving to the Netherlands",
+    "/netherlands/moving-to-the-netherlands/",
+    "Main relocation guide and hub."
+  ),
+  cities: item("Cities hub", "/netherlands/cities/", "Compare Dutch cities and read expat city guides."),
+  money: item(
+    "Netherlands taxes",
+    "/netherlands/taxes/",
+    "Tax guides, banking, insurance, and cost-of-living essentials for expats."
+  ),
+  services: item("Services directory", "/netherlands/services/", "Banks, insurance, housing, immigration support."),
+  tools: item("Open all tools", "/netherlands/tools/", "Checklists, planners, and calculators."),
+  living: item(
+    "Living in the Netherlands",
+    "/netherlands/living/",
+    "Housing, utilities, daily life, and light digital admin after you arrive."
+  ),
+  culture: item(
+    "Moving to the Netherlands",
+    "/netherlands/moving-to-the-netherlands/",
+    "Start with the move, then explore Dutch culture, language, and integration."
+  ),
+};
+
 function filterMegaMenu(menu: MegaMenu): MegaMenu {
   let sections = menu.sections
     .map((section) => ({
       ...section,
-      items: section.items.map(filterNavItem).filter((x): x is NavItem => x != null),
+      items: orderMegaMenuSectionItems(section.items.map(filterNavItem).filter((x): x is NavItem => x != null)),
     }))
     .filter((section) => section.items.length > 0);
 
@@ -55,184 +183,449 @@ function filterMegaMenu(menu: MegaMenu): MegaMenu {
     sections = [mvpFallbackSection(menu.label)];
   }
 
-  let featured = menu.featured ? filterNavItem(menu.featured) : null;
-  if (!featured?.href || featured.disabled) {
-    featured = item(
-      "Moving to the Netherlands",
-      "/netherlands/moving-to-the-netherlands/",
-      "Main relocation guide and hub."
-    );
+  let featured: NavItem | null | undefined = menu.featured ? filterNavItem(menu.featured) : null;
+  if (menu.showFeatured === false) {
+    featured = undefined;
+  } else {
+    if (!featured || featured.navStatus !== "live" || !featured.href) {
+      const fb = DEFAULT_FEATURED_FALLBACK[menu.key];
+      featured = fb ? filterNavItem(fb) : null;
+    }
+    if ((!featured || featured.navStatus !== "live" || !featured.href) && menu.key === "moving") {
+      featured = filterNavItem(
+        item(
+          "Moving to the Netherlands",
+          "/netherlands/moving-to-the-netherlands/",
+          "Main relocation guide and hub."
+        )
+      );
+    }
+    /** Living: prefer living hub, then housing hub, then renting pillar. */
+    if (
+      menu.key === "living" &&
+      (!featured || featured.navStatus !== "live" || !featured.href)
+    ) {
+      const chain = [
+        item(
+          "Living in the Netherlands",
+          "/netherlands/living/",
+          "Housing, utilities, daily rhythms, and everyday admin."
+        ),
+        item("Housing in the Netherlands", "/netherlands/housing/", "Housing hub and guides."),
+        item("Renting in the Netherlands", "/netherlands/renting-in-the-netherlands/", "Renting overview."),
+        item("Netherlands hub", "/netherlands/", "Guides, cities, and services overview."),
+      ];
+      for (const cand of chain) {
+        const f = filterNavItem(cand);
+        if (f && f.navStatus === "live" && f.href) {
+          featured = f;
+          break;
+        }
+      }
+      if (!featured || featured.navStatus !== "live" || !featured.href) {
+        for (const cand of chain) {
+          const f = filterNavItem(cand);
+          if (f && f.navStatus === "comingSoon") {
+            featured = f;
+            break;
+          }
+        }
+      }
+    }
+    /** Money: prefer Taxes cluster hub, then expat pillar, then Banking. */
+    if (
+      menu.key === "money" &&
+      (!featured || featured.navStatus !== "live" || !featured.href)
+    ) {
+      const chain = [
+        item("Netherlands taxes", "/netherlands/taxes/", "Tax guides for expats."),
+        item("Expat taxes Netherlands", "/netherlands/taxes/expat-taxes-netherlands/", "Expat tax overview."),
+        item("Banking", "/netherlands/money/banking", "Accounts, switching, and everyday banking."),
+      ];
+      for (const cand of chain) {
+        const f = filterNavItem(cand);
+        if (f && f.navStatus === "live" && f.href) {
+          featured = f;
+          break;
+        }
+      }
+      if (!featured || featured.navStatus !== "live" || !featured.href) {
+        for (const cand of chain) {
+          const f = filterNavItem(cand);
+          if (f && f.navStatus === "comingSoon") {
+            featured = f;
+            break;
+          }
+        }
+      }
+    }
+    /** Culture: featured CTA points at the main moving guide (onboarding), not culture silo. */
+    if (
+      menu.key === "culture" &&
+      (!featured || featured.navStatus !== "live" || !featured.href)
+    ) {
+      const chain = [
+        item(
+          "Moving to the Netherlands",
+          "/netherlands/moving-to-the-netherlands/",
+          "Plan the move first, then layer in workplace norms, social cues, and language basics."
+        ),
+        item("Netherlands hub", "/netherlands/", "Guides, cities, and services overview."),
+      ];
+      for (const cand of chain) {
+        const f = filterNavItem(cand);
+        if (f && f.navStatus === "live" && f.href) {
+          featured = f;
+          break;
+        }
+      }
+    }
   }
 
-  const tools = (menu.tools ?? []).map(filterNavItem).filter((x): x is NavItem => x != null);
+  let toolsList = sortNavItemsForDisplay((menu.tools ?? []).map(filterNavItem).filter((x): x is NavItem => x != null));
+  if (menu.showToolsRail === false) {
+    toolsList = [];
+  }
 
-  return { ...menu, sections, featured: featured ?? undefined, tools };
+  return {
+    ...menu,
+    sections,
+    featured: featured === null ? undefined : featured,
+    tools: toolsList,
+  };
 }
 
-function getDomainToolItems(menuKey: string): NavItem[] {
-  const domain = getDomainFeaturedTools(menuKey);
-  if (!domain) return [];
-  const viewAllLabel =
-    menuKey === "move"
-      ? "View all Move tools"
-      : menuKey === "money"
-        ? "View all Money tools"
-        : menuKey === "work"
-          ? "View all Work tools"
-          : "View all tools";
-  return [...domain.tools.map(toToolNavItem), item(viewAllLabel, domain.tools[0]?.pillarCategoryRoute ?? "/netherlands/tools/")];
+/** Money mega tools column: tax/money calculators from registry (Soon when placeholder) + tools hub. */
+function buildMoneyToolRail(): NavItem[] {
+  const ids = [
+    "thirty-percent-ruling-calculator",
+    "dutch-salary-net-calculator",
+    "expat-cost-of-living-calculator",
+    "healthcare-allowance-estimator",
+    "double-tax-awareness-tool",
+    "rent-affordability-calculator",
+    "job-offer-comparison-tool",
+    "employment-contract-risk-scanner",
+    "payslip-decoder",
+    "employment-type-scenario-tool",
+  ];
+  return sortNavItemsForDisplay([...dedupeNavItems(toolItemsByIds(ids)), item("Open tools hub", "/netherlands/tools/")]);
+}
+
+/** Living mega tools column: curated housing tools from `menu-features.json` + view-all + hub. */
+function buildLivingToolRail(): NavItem[] {
+  return buildToolRailForKey("living");
+}
+
+/** Culture mega tools: partner, childcare, inburgering-style tools from domain config + view-all + hub. */
+function buildCultureToolRail(): NavItem[] {
+  return buildToolRailForKey("culture");
+}
+
+/** Services mega tools rail: minimal Move tools that support provider decisions + global hub. */
+function buildServicesToolRail(): NavItem[] {
+  return sortNavItemsForDisplay([
+    ...dedupeNavItems(toolItemsByIds(["document-readiness", "arrival-planner"])),
+    item("Open tools hub", "/netherlands/tools/"),
+  ]);
 }
 
 function buildToolsMegaSections(): NavSection[] {
-  return getTopLevelToolsMenuGroups().map(({ category, tools }) => ({
-    title: category.label,
-    items: [...tools.slice(0, 3).map(toToolNavItem), item(`View all ${category.label} tools`, category.route)],
-  }));
+  return getTopLevelToolsMenuGroups().map(({ category, tools }) => {
+    const viewAll = item(`View all ${category.label} tools`, category.route);
+    if (category.id === "housing") {
+      const housingToolIds = [
+        "rent-affordability-calculator",
+        "deposit-return-risk-checker",
+        "mortgage-eligibility-estimator",
+        "utilities-services-comparison-tool",
+        "buy-vs-rent-calculator",
+        "dutch-rental-budget-calculator",
+      ];
+      const housingItems = dedupeNavItems([
+        ...toolItemsByIds(housingToolIds),
+        viewAll,
+      ]);
+      return { title: category.label, items: housingItems };
+    }
+    return {
+      title: category.label,
+      items: dedupeNavItems([...tools.map(toToolNavItem), viewAll]),
+    };
+  });
 }
 
-/** Returns which top nav key is active for the current path (for highlighting). */
+function pathMatches(pathname: string, base: string): boolean {
+  if (pathname === base || pathname === `${base}/`) return true;
+  if (base !== "/" && pathname.startsWith(`${base}/`)) return true;
+  return false;
+}
+
+/** Onboarding / planning hub pages (pillar: Move). */
+function isStartHerePath(pathname: string): boolean {
+  const prefixes = [
+    "/netherlands/moving-to-the-netherlands",
+    "/netherlands/moving-to-netherlands-from",
+    "/netherlands/moving-checklist-netherlands",
+    "/netherlands/documents-needed-to-move-netherlands",
+    "/netherlands/moving-to-netherlands-timeline",
+    "/netherlands/moving-to-netherlands-cost",
+    "/netherlands/move-to-netherlands-without-job",
+    "/netherlands/moving-to-netherlands-with-family",
+    "/netherlands/eu-vs-non-eu-moving-to-netherlands",
+    "/netherlands/moving-to-netherlands-with-partner",
+    "/netherlands/moving-to-netherlands-with-kids",
+    "/netherlands/bringing-pets-to-netherlands",
+  ];
+  return prefixes.some((pre) => pathname === pre || pathname.startsWith(`${pre}/`));
+}
+
+/** Culture pillar: language, family, soft health topics, and culture URLs (not `/netherlands/work/*` job law). */
+function isCulturePillarPath(pathname: string): boolean {
+  if (pathname.startsWith("/netherlands/culture")) return true;
+  if (pathname.startsWith("/netherlands/language")) return true;
+  if (pathname.startsWith("/netherlands/family")) return true;
+  if (pathname === "/netherlands/health" || pathname === "/netherlands/health/" || pathname.startsWith("/netherlands/health/")) {
+    return true;
+  }
+  return false;
+}
+
+const WORK_PATH_HIGHLIGHT_MOVING: readonly string[] = [
+  "/netherlands/work/work-permit-netherlands",
+  "/netherlands/work/twv-work-permit",
+  "/netherlands/work/changing-jobs-netherlands",
+  "/netherlands/work/resigning-job-netherlands",
+  "/netherlands/work/layoffs-netherlands",
+];
+
+const WORK_PATH_HIGHLIGHT_CULTURE: readonly string[] = [
+  "/netherlands/work/work-culture-netherlands",
+  "/netherlands/work/work-hours-netherlands",
+];
+
+function getWorkClusterNavKey(pathname: string): TopNavKey {
+  const base = pathname.split("?")[0].replace(/\/+$/, "") || "/";
+  for (const pre of WORK_PATH_HIGHLIGHT_MOVING) {
+    if (base === pre || base.startsWith(`${pre}/`)) return "moving";
+  }
+  for (const pre of WORK_PATH_HIGHLIGHT_CULTURE) {
+    if (base === pre || base.startsWith(`${pre}/`)) return "culture";
+  }
+  return "money";
+}
+
+/**
+ * Relocation / visa / integration pillar paths not covered by Start-here-style planning pages.
+ * Keep in sync with hub pages under `/netherlands/`.
+ */
+function isMovingPillarPath(pathname: string): boolean {
+  if (isStartHerePath(pathname)) return false;
+  const movingPrefixes = [
+    "/netherlands/moving/",
+    "/netherlands/visa/",
+    "/netherlands/visas-residency",
+    "/netherlands/integration",
+    "/netherlands/citizenship",
+    "/netherlands/leaving",
+    "/netherlands/visa-checker",
+    "/netherlands/visa-timeline-estimator",
+    "/netherlands/visa-cost-calculator",
+    "/netherlands/visa-application-plan",
+    "/netherlands/document-readiness-checker",
+    "/netherlands/municipality-registration-netherlands",
+    "/netherlands/health-insurance-netherlands",
+    "/netherlands/digid-awareness",
+    "/netherlands/shipping-household-goods-netherlands",
+    "/netherlands/open-bank-account-netherlands",
+    "/netherlands/first-30-days-netherlands",
+    "/netherlands/first-60-days-netherlands",
+    "/netherlands/first-90-days-netherlands",
+    "/netherlands/bsn-registration",
+    "/netherlands/register-address-netherlands",
+    "/netherlands/settling-in-netherlands",
+    "/netherlands/moving-mistakes-netherlands",
+    "/netherlands/moving-requirements-netherlands",
+    "/netherlands/moving-documents-checklist",
+    "/netherlands/visa-documents-netherlands",
+    "/netherlands/document-translation-netherlands",
+    "/netherlands/can-i-open-bank-account-before-bsn",
+    "/netherlands/moving-to-netherlands-steps",
+  ];
+  return movingPrefixes.some((pre) => pathname === pre || pathname.startsWith(`${pre}/`) || pathname.startsWith(pre));
+}
+
+/** First path segment after `/netherlands/` for planned housing-cluster guides (active nav: Living). */
+const HOUSING_GUIDE_FIRST_SEGMENTS = new Set([
+  "housing",
+  "renting-in-the-netherlands",
+  "how-to-rent-in-netherlands",
+  "rental-contract-netherlands",
+  "rental-deposit-netherlands",
+  "rent-increase-rules-netherlands",
+  "finding-apartment-netherlands",
+  "best-housing-websites-netherlands",
+  "temporary-housing-netherlands",
+  "expat-housing-agencies-netherlands",
+  "average-rent-netherlands",
+  "rent-prices-amsterdam",
+  "rent-prices-rotterdam",
+  "rent-prices-utrecht",
+  "renter-rights-netherlands",
+  "rent-control-netherlands",
+  "reporting-bad-landlord-netherlands",
+  "social-housing-netherlands",
+  "private-rental-netherlands",
+  "furnished-vs-unfurnished-netherlands",
+  "utilities-in-netherlands",
+  "electricity-providers-netherlands",
+  "internet-providers-netherlands",
+  "registering-address-rental",
+  "rental-insurance-netherlands",
+  "inventory-check-rental-netherlands",
+  "buying-house-netherlands",
+  "mortgage-netherlands-expats",
+  "property-tax-netherlands",
+  "buy-vs-rent-netherlands",
+  "housing-netherlands",
+  "renting-in-netherlands",
+]);
+
+/** Major Dutch city hub paths. */
+const CITY_HUB_PREFIXES = [
+  "/netherlands/amsterdam",
+  "/netherlands/rotterdam",
+  "/netherlands/utrecht",
+  "/netherlands/the-hague",
+  "/netherlands/eindhoven",
+  "/netherlands/haarlem",
+  "/netherlands/groningen",
+  "/netherlands/delft",
+  "/netherlands/leiden",
+  "/netherlands/maastricht",
+  "/netherlands/breda",
+  "/netherlands/tilburg",
+  "/netherlands/arnhem",
+  "/netherlands/nijmegen",
+  "/netherlands/amstelveen",
+] as const;
+
+/** Returns which top nav key is active for the current path (for trigger highlighting). */
 export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (!pathname || pathname === "/") return null;
-  if (pathname.startsWith("/netherlands/tools")) return "tools";
-  if (pathname.startsWith("/netherlands/moving-to-the-netherlands") || pathname.startsWith("/netherlands/moving-to-netherlands-from") || pathname.startsWith("/netherlands/moving/") || pathname.startsWith("/netherlands/visa/")) return "move";
-  if (pathname.startsWith("/netherlands/services")) return "move";
-  if (pathname.startsWith("/netherlands/cities")) return "move";
+
   if (
-    pathname.startsWith("/netherlands/amsterdam") ||
-    pathname.startsWith("/netherlands/rotterdam") ||
-    pathname.startsWith("/netherlands/utrecht") ||
-    pathname.startsWith("/netherlands/the-hague") ||
-    pathname.startsWith("/netherlands/eindhoven") ||
-    pathname.startsWith("/netherlands/haarlem") ||
-    pathname.startsWith("/netherlands/groningen") ||
-    pathname.startsWith("/netherlands/delft") ||
-    pathname.startsWith("/netherlands/leiden") ||
-    pathname.startsWith("/netherlands/maastricht") ||
-    pathname.startsWith("/netherlands/breda") ||
-    pathname.startsWith("/netherlands/tilburg") ||
-    pathname.startsWith("/netherlands/arnhem") ||
-    pathname.startsWith("/netherlands/nijmegen") ||
-    pathname.startsWith("/netherlands/amstelveen")
-  )
-    return "move";
-  if (pathname.startsWith("/netherlands/move-to-netherlands-without-job") || pathname.startsWith("/netherlands/moving-to-netherlands-cost") || pathname.startsWith("/netherlands/moving-to-netherlands-with-family") || pathname.startsWith("/netherlands/eu-vs-non-eu-moving-to-netherlands") || pathname.startsWith("/netherlands/open-bank-account-netherlands") || pathname.startsWith("/netherlands/health-insurance-netherlands")) return "move";
-  if (pathname.startsWith("/netherlands/work")) return "work";
-  if (pathname.startsWith("/netherlands/money")) return "money";
+    pathname.startsWith("/netherlands/tools") ||
+    pathname.startsWith("/tools") ||
+    pathname.startsWith("/netherlands/housing/tools")
+  ) {
+    return "tools";
+  }
+
+  if (pathname.startsWith("/netherlands/services")) return "services";
+
+  if (pathname.startsWith("/netherlands/cities")) return "cities";
+
+  if (CITY_HUB_PREFIXES.some((pre) => pathname === pre || pathname.startsWith(`${pre}/`))) return "cities";
+
+  if (pathname.startsWith("/netherlands/money") || pathname.startsWith("/netherlands/taxes")) return "money";
+
+  if (pathname.startsWith("/netherlands/work")) return getWorkClusterNavKey(pathname);
+
   if (pathname.startsWith("/netherlands/living")) return "living";
-  if (pathname.startsWith("/netherlands/culture")) return "culture";
-  if (pathname.startsWith("/tools")) return "tools";
+
+  const seg1 = pathname.split("/").filter(Boolean)[1];
+  if (seg1 && HOUSING_GUIDE_FIRST_SEGMENTS.has(seg1)) return "living";
+
+  if (isCulturePillarPath(pathname)) return "culture";
+
+  if (isStartHerePath(pathname)) return "moving";
+
+  if (isMovingPillarPath(pathname)) return "moving";
+
   return null;
 }
 
 export const TOP_NAV: TopNavEntry[] = [
-  { key: "move", label: "Move", href: "/netherlands/moving-to-the-netherlands" },
-  { key: "work", label: "Work" },
+  { key: "moving", label: "Move" },
+  { key: "cities", label: "Cities", href: "/netherlands/cities/" },
   { key: "money", label: "Money" },
+  { key: "services", label: "Services", href: "/netherlands/services/" },
   { key: "living", label: "Living" },
   { key: "culture", label: "Culture" },
-  { key: "tools", label: "Tools", href: "/netherlands/tools" },
+  { key: "tools", label: "Tools", href: "/netherlands/tools/" },
 ];
 
 const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
-  home: {
-    key: "home",
-    label: "Home",
-    sections: [],
-  },
-  move: {
-    key: "move",
+  moving: {
+    key: "moving",
     label: "Move",
+    showFeatured: false,
     sections: [
       {
-        title: "Start here",
+        title: "Planning",
         items: [
           item("Moving to the Netherlands", "/netherlands/moving-to-the-netherlands"),
-          item("Moving From Your Country", "/netherlands/moving-to-netherlands-from"),
           item("Moving checklist Netherlands", "/netherlands/moving-checklist-netherlands"),
+          item("Moving from your country", "/netherlands/moving-to-netherlands-from"),
           item("Documents needed", "/netherlands/documents-needed-to-move-netherlands"),
           item("Moving timeline", "/netherlands/moving-to-netherlands-timeline"),
           item("Moving costs", "/netherlands/moving-to-netherlands-cost"),
-        ],
-      },
-      {
-        title: "Key admin",
-        items: [
-          item("Municipality registration", "/netherlands/municipality-registration-netherlands"),
-          item("Health insurance", "/netherlands/health-insurance-netherlands"),
-          item("DigiD awareness", "/netherlands/digid-awareness"),
-          item("Shipping household goods", "/netherlands/shipping-household-goods-netherlands"),
-          item("Open a bank account", "/netherlands/open-bank-account-netherlands"),
-        ],
-      },
-      {
-        title: "Scenarios",
-        items: [
-          item("Move without a job", "/netherlands/move-to-netherlands-without-job"),
           item("Moving with family", "/netherlands/moving-to-netherlands-with-family"),
+          item("Move without a job", "/netherlands/move-to-netherlands-without-job"),
           item("EU vs non-EU", "/netherlands/eu-vs-non-eu-moving-to-netherlands"),
-          item("Moving with partner", "/netherlands/moving-to-netherlands-with-partner"),
-          item("Moving with kids", "/netherlands/moving-to-netherlands-with-kids"),
           item("Bringing pets", "/netherlands/bringing-pets-to-netherlands"),
         ],
       },
       {
-        title: "Services",
+        title: "Early setup",
         items: [
-          item("Health insurance", "/netherlands/services/health-insurance/"),
-          item("Banks", "/netherlands/services/banks/"),
-          item("Housing platforms", "/netherlands/services/housing-platforms/"),
-          item("Visa consultants", "/netherlands/services/visa-consultants/"),
-          item("Relocation services", "/netherlands/services/relocation-services/"),
-          item("View all services", "/netherlands/services/"),
+          item("Health insurance", "/netherlands/health-insurance-netherlands"),
+          item("Municipality registration", "/netherlands/municipality-registration-netherlands"),
+          item("BSN registration", "/netherlands/bsn-registration/"),
+          item("Register your address", "/netherlands/register-address-netherlands/"),
+          item("DigiD guide", "/netherlands/digid-awareness/"),
+          item("Open a bank account", "/netherlands/open-bank-account-netherlands"),
+          item("Shipping household goods", "/netherlands/shipping-household-goods-netherlands"),
         ],
       },
       {
-        title: "More",
+        title: "Visas & residency",
         items: [
-          item("Cities", "/netherlands/cities/", "Compare Dutch cities and read expat city guides."),
-          item("First 30 days", "/netherlands/first-30-days-netherlands"),
-          item("First 60 days", "/netherlands/first-60-days-netherlands"),
-          item("First 90 days", "/netherlands/first-90-days-netherlands"),
-          item("See all Move guides →", "/netherlands/moving-to-the-netherlands/"),
-        ],
-      },
-      {
-        title: "Visas & Residency",
-        items: [
-          item("Visas & residency", "/netherlands/visa/highly-skilled-migrant"),
           item("Compare visas", "/netherlands/visa/compare-visas"),
-          item("Highly skilled migrant", "/netherlands/visa/highly-skilled-migrant"),
-          item("EU Blue Card", "/netherlands/visa/eu-blue-card"),
           item("DAFT (US entrepreneurs)", "/netherlands/visa/dutch-american-friendship-treaty"),
+          item("EU Blue Card", "/netherlands/visa/eu-blue-card"),
+          item("Highly skilled migrant", "/netherlands/visa/highly-skilled-migrant"),
+          item("Partner & family", "/netherlands/visa/partner-family-visa"),
           item("Self-employed visa", "/netherlands/visa/self-employed-visa"),
           item("Student visa", "/netherlands/visa/student-visa"),
-          item("Partner & family", "/netherlands/visa/partner-family-visa"),
+          item("Visas & residency", "/netherlands/visas-residency/"),
           item("Residence permits", "/netherlands/visas-residency/residence-permits"),
           item("Extensions & changes", "/netherlands/visas-residency/extensions-changes"),
           item("Status changes", "/netherlands/visas-residency/status-changes"),
         ],
       },
       {
-        title: "Integration",
+        title: "First weeks & months",
         items: [
-          item("Integration", "/netherlands/integration"),
-          item("Inburgering planner", "/netherlands/integration/inburgering-planner"),
-          item("Exams overview", "/netherlands/integration/exams-overview"),
-          item("Language + KNM", "/netherlands/integration/language-knm"),
-          item("Progress tracking", "/netherlands/integration/progress-tracking"),
+          item("First 30 days", "/netherlands/first-30-days-netherlands"),
+          item("First 60 days", "/netherlands/first-60-days-netherlands"),
+          item("First 90 days", "/netherlands/first-90-days-netherlands"),
+          item(
+            "Dutch payslip decoder",
+            "/netherlands/work/tools/payslip-decoder/",
+            "Read your first loonstrook — bruto/netto and common lines."
+          ),
         ],
       },
       {
-        title: "Citizenship + Leaving",
+        title: "Work permits & job changes",
         items: [
-          item("Citizenship", "/netherlands/citizenship"),
-          item("Permanent residence", "/netherlands/citizenship/permanent-residence"),
-          item("Naturalisation", "/netherlands/citizenship/naturalisation"),
-          item("Timeline signals", "/netherlands/citizenship/timeline-signals"),
-          item("Leaving", "/netherlands/leaving"),
-          item("Deregistration checklist", "/netherlands/leaving/deregistration-checklist"),
-          item("Exit evidence pack", "/netherlands/leaving/exit-evidence-pack"),
-          item("Repatriation readiness", "/netherlands/leaving/repatriation-readiness"),
+          item("Work permit Netherlands", "/netherlands/work/work-permit-netherlands/"),
+          item("TWV work permit", "/netherlands/work/twv-work-permit/"),
+          item("Changing jobs Netherlands", "/netherlands/work/changing-jobs-netherlands/"),
+          item("Resigning job Netherlands", "/netherlands/work/resigning-job-netherlands/"),
+          item("Layoffs Netherlands", "/netherlands/work/layoffs-netherlands/"),
         ],
       },
     ],
@@ -241,227 +634,350 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       "/netherlands/moving-to-the-netherlands/",
       "Start with the main moving guide, then explore documents, registration, timelines, and scenario-specific pages."
     ),
-    tools: getDomainToolItems("move"),
+    tools: buildToolRailForKey("moving"),
   },
-  work: {
-    key: "work",
-    label: "Work",
+  cities: {
+    key: "cities",
+    label: "Cities",
+    showFeatured: false,
     sections: [
       {
-        title: "Employment",
+        title: "Popular cities",
         items: [
-          item("Contracts", "/netherlands/work/contracts"),
-          item("Contract checklist", "/netherlands/work/contracts/checklist"),
-          item("Clause explorer", "/netherlands/work/contracts/clause-explorer"),
-          item("Offer comparison", "/netherlands/work/contracts/offer-comparison"),
-          item("Risk signals", "/netherlands/work/contracts/risk-signals"),
-          item("Document pack", "/netherlands/work/contracts/document-pack"),
+          item("Amsterdam", "/netherlands/amsterdam"),
+          item("Rotterdam", "/netherlands/rotterdam"),
+          item("Utrecht", "/netherlands/utrecht"),
+          item("The Hague", "/netherlands/the-hague"),
+          item("Eindhoven", "/netherlands/eindhoven"),
+          item("Haarlem", "/netherlands/haarlem"),
         ],
       },
       {
-        title: "Rights",
+        title: "More cities / browse all",
         items: [
-          item("Rights", "/netherlands/work/rights"),
-          item("Sick leave tracker", "/netherlands/work/rights/sick-leave-tracker"),
-          item("Holiday leave", "/netherlands/work/rights/holiday-leave"),
-          item("Parental leave", "/netherlands/work/rights/parental-leave"),
-          item("Escalation path mapper", "/netherlands/work/rights/escalation-path-mapper"),
-          item("Readiness score", "/netherlands/work/rights/readiness-score"),
+          item("Cities hub", "/netherlands/cities/", "Compare Dutch cities and read expat city guides."),
+          item("Amstelveen", "/netherlands/amstelveen"),
+          item("Arnhem", "/netherlands/arnhem"),
+          item("Breda", "/netherlands/breda"),
+          item("Delft", "/netherlands/delft"),
+          item("Groningen", "/netherlands/groningen"),
+          item("Leiden", "/netherlands/leiden"),
+          item("Maastricht", "/netherlands/maastricht"),
+          item("Nijmegen", "/netherlands/nijmegen"),
         ],
       },
       {
-        title: "Unions & Works Council",
+        title: "Compare / discover",
         items: [
-          item("Unions & works council", "/netherlands/work/unions-works-council"),
-          item("OR awareness", "/netherlands/work/unions-works-council/or-awareness"),
-          item("Support map", "/netherlands/work/unions-works-council/support-map"),
-          item("Event log", "/netherlands/work/unions-works-council/event-log"),
-          item("Ask generator", "/netherlands/work/unions-works-council/ask-generator"),
-          item("Readiness", "/netherlands/work/unions-works-council/readiness"),
-        ],
-      },
-      {
-        title: "Payroll + Benefits + Career",
-        items: [
-          item("Payroll", "/netherlands/work/payroll"),
-          item("Payslip decoder", "/netherlands/work/payroll/payslip-decoder"),
-          item("What changed", "/netherlands/work/payroll/what-changed"),
-          item("Annual overview", "/netherlands/work/payroll/annual-overview"),
-          item("Evidence pack", "/netherlands/work/payroll/evidence-pack"),
-          item("Confidence meter", "/netherlands/work/payroll/confidence-meter"),
-          item("Benefits", "/netherlands/work/benefits"),
-          item("Total rewards", "/netherlands/work/benefits/total-rewards"),
-          item("Job change impact", "/netherlands/work/career/job-change-impact"),
-          item("Sponsor dependency", "/netherlands/work/career/sponsor-dependency"),
-          item("Transition planner", "/netherlands/work/career/transition-planner"),
-          item("Decision canvas", "/netherlands/work/career/decision-canvas"),
+          soon("Best cities for expats"),
+          soon("Best cities for families"),
+          soon("Affordable cities"),
+          soon("Amsterdam vs Rotterdam"),
+          soon("Randstad overview"),
         ],
       },
     ],
-    featured: item("Contract checklist", "/netherlands/work/contracts/checklist"),
-    tools: getDomainToolItems("work"),
+    featured: item("Cities hub", "/netherlands/cities/", "Compare Dutch cities and read expat city guides."),
+    tools: [
+      soon("City comparison tool"),
+      soon("Rent affordability calculator"),
+      soon("Cost of living calculator"),
+      item("Open tools hub", "/netherlands/tools/"),
+    ],
   },
   money: {
     key: "money",
     label: "Money",
+    showFeatured: false,
+    megaDensity: "full",
     sections: [
       {
         title: "Banking",
+        roadmapNote: "Entries without a published page yet appear as muted roadmap rows (not links).",
         items: [
           item("Banking", "/netherlands/money/banking"),
           item("Bank comparison", "/netherlands/money/banking/bank-comparison"),
           item("Family banking", "/netherlands/money/banking/family-banking"),
           item("Change bank", "/netherlands/money/banking/change-bank"),
-          item("Mandate audit", "/netherlands/money/banking/mandate-audit"),
           item("FX abroad", "/netherlands/money/banking/fx-abroad"),
+          soon("Best bank for expats"),
         ],
       },
       {
         title: "Taxes",
         items: [
-          item("Taxes", "/netherlands/money/taxes"),
-          item("Employment overview", "/netherlands/money/taxes/employment-overview"),
-          item("Cross-border income", "/netherlands/money/taxes/cross-border-income"),
-          item("Double tax", "/netherlands/money/taxes/double-tax"),
-          item("Record keeping", "/netherlands/money/taxes/record-keeping"),
-          item("Readiness score", "/netherlands/money/taxes/readiness-score"),
+          item("Netherlands tax guide for expats", "/netherlands/taxes/"),
+          item("30% ruling eligibility calculator", "/netherlands/taxes/tools/30-ruling-calculator/"),
+          item("Dutch salary net calculator", "/netherlands/taxes/tools/dutch-salary-net-calculator/"),
+          item(
+            "Dutch payslip decoder",
+            "/netherlands/work/tools/payslip-decoder/",
+            "Explain bruto/netto and common lines from pasted text or a text PDF — not payroll advice."
+          ),
+          item("Tax tools hub", "/netherlands/taxes/tools/"),
+          item("Expat taxes Netherlands", "/netherlands/taxes/expat-taxes-netherlands/"),
+          item("How taxes work in the Netherlands", "/netherlands/taxes/how-taxes-work-netherlands/"),
+          item("Tax residency Netherlands", "/netherlands/taxes/tax-residency-netherlands/"),
+          item("Tax return Netherlands", "/netherlands/taxes/tax-return-netherlands/"),
+          item("30% ruling", "/netherlands/taxes/30-percent-ruling/"),
+          item("Tax advisors (guide)", "/netherlands/taxes/tax-advisors-netherlands/"),
         ],
       },
       {
-        title: "Insurance",
+        title: "Salary & allowances",
+        items: [
+          item("Work tools hub", "/netherlands/work/tools/", "Payslip decoder, contract tools, and job-offer helpers."),
+          item("Employment overview", "/netherlands/money/taxes/employment-overview"),
+          item("Net salary Netherlands", "/netherlands/taxes/net-salary-netherlands/"),
+          item(
+            "Dutch payslip decoder",
+            "/netherlands/work/tools/payslip-decoder/",
+            "Read a loonstrook alongside gross-to-net planning."
+          ),
+          item("Gross vs net salary Netherlands", "/netherlands/taxes/gross-vs-netherlands-salary/"),
+          item("Payroll tax Netherlands", "/netherlands/taxes/payroll-tax-netherlands/"),
+          item("Average salary Netherlands", "/netherlands/work/average-salary-netherlands/"),
+          item("Salary negotiation Netherlands", "/netherlands/work/salary-negotiation-netherlands/"),
+          item("Minimum wage Netherlands", "/netherlands/work/minimum-wage-netherlands/"),
+          item("Expat salary Netherlands", "/netherlands/work/expat-salary-netherlands/"),
+          item("Employee benefits Netherlands", "/netherlands/work/employee-benefits-netherlands/"),
+          item("Pension Netherlands", "/netherlands/work/pension-netherlands/"),
+          item("Holiday allowance Netherlands", "/netherlands/work/holiday-allowance-netherlands/"),
+          item("Bonus tax Netherlands", "/netherlands/work/bonus-tax-netherlands/"),
+          item("Healthcare allowance", "/netherlands/taxes/healthcare-allowance/"),
+          item("Rent allowance", "/netherlands/taxes/rent-allowance/"),
+          item("Childcare allowance", "/netherlands/taxes/childcare-allowance/"),
+        ],
+      },
+      {
+        title: "Employment contracts & rights",
+        items: [
+          item("Working in the Netherlands", "/netherlands/work/working-in-netherlands/"),
+          item("Employment contract Netherlands", "/netherlands/work/employment-contract-netherlands/"),
+          item("Probation period Netherlands", "/netherlands/work/probation-period-netherlands/"),
+          item("Notice period Netherlands", "/netherlands/work/notice-period-netherlands/"),
+          item("Employee rights Netherlands", "/netherlands/work/employee-rights-netherlands/"),
+        ],
+      },
+      {
+        title: "Freelancing & work format",
+        items: [
+          item("Freelancing Netherlands", "/netherlands/work/freelancing-netherlands/"),
+          item("ZZP Netherlands", "/netherlands/work/zzp-netherlands/"),
+          item("Contractor vs employee Netherlands", "/netherlands/work/contractor-vs-employee-netherlands/"),
+        ],
+      },
+      {
+        title: "Job search",
+        items: [
+          item("Finding jobs Netherlands", "/netherlands/work/finding-jobs-netherlands/"),
+          item("Job websites Netherlands", "/netherlands/work/job-websites-netherlands/"),
+          item("LinkedIn jobs Netherlands", "/netherlands/work/linkedin-jobs-netherlands/"),
+          item("Jobs in Amsterdam", "/netherlands/work/jobs-in-amsterdam/"),
+          item("Jobs in Rotterdam", "/netherlands/work/jobs-in-rotterdam/"),
+          item("Jobs in Utrecht", "/netherlands/work/jobs-in-utrecht/"),
+          item("Jobs in The Hague", "/netherlands/work/jobs-in-the-hague/"),
+          item("Jobs in Eindhoven", "/netherlands/work/jobs-in-eindhoven/"),
+        ],
+      },
+      {
+        title: "Buying & housing economics",
+        items: [
+          item("Buying a house", "/netherlands/buying-house-netherlands/"),
+          item("Mortgage (expats)", "/netherlands/mortgage-netherlands-expats/"),
+          item("Property tax", "/netherlands/property-tax-netherlands/"),
+          item("Buy vs rent", "/netherlands/buy-vs-rent-netherlands/"),
+        ],
+      },
+      {
+        title: "Insurance & expat tax topics",
         items: [
           item("Insurance", "/netherlands/money/insurance"),
           item("Health", "/netherlands/money/insurance/health"),
           item("Liability + household", "/netherlands/money/insurance/liability-household"),
-          item("Employer coverage", "/netherlands/money/insurance/employer-coverage"),
-          item("Gaps awareness", "/netherlands/money/insurance/gaps-awareness"),
-        ],
-      },
-      {
-        title: "Wealth + Retirement",
-        items: [
-          item("Investments", "/netherlands/money/investments"),
-          item("Landscape", "/netherlands/money/investments/landscape"),
-          item("Employer pension", "/netherlands/money/investments/employer-pension"),
-          item("Wealth structures", "/netherlands/money/investments/wealth-structures"),
-          item("Cross-border signals", "/netherlands/money/investments/cross-border-signals"),
-          item("Documents", "/netherlands/money/investments/documents"),
-          item("Readiness", "/netherlands/money/investments/readiness"),
-          item("Retirement", "/netherlands/money/retirement"),
-          item("3 pillars", "/netherlands/money/retirement/3-pillars"),
-          item("International continuity", "/netherlands/money/retirement/international-continuity"),
-          item("What changes", "/netherlands/money/retirement/what-changes"),
-          item("Evidence records", "/netherlands/money/retirement/evidence-records"),
-          item("Readiness", "/netherlands/money/retirement/readiness"),
+          item("Double taxation", "/netherlands/taxes/double-taxation-netherlands/"),
+          item("Foreign income", "/netherlands/taxes/foreign-income-netherlands/"),
+          item("Taxes after moving", "/netherlands/taxes/taxes-after-moving-netherlands/"),
+          item("Leaving Netherlands tax", "/netherlands/taxes/leaving-netherlands-tax/"),
         ],
       },
     ],
-    featured: item("Bank comparison", "/netherlands/money/banking/bank-comparison"),
-    tools: getDomainToolItems("money"),
+    featured: item(
+      "Netherlands taxes",
+      "/netherlands/taxes/",
+      "Taxes, banking, insurance, and cost-of-living essentials for expats."
+    ),
+    tools: buildMoneyToolRail(),
+  },
+  services: {
+    key: "services",
+    label: "Services",
+    showFeatured: false,
+    megaDensity: "full",
+    sections: [
+      {
+        title: "Banking & financial services",
+        roadmapNote: "Entries without a published page yet appear as muted roadmap rows (not links).",
+        items: [
+          item("Banks", "/netherlands/services/banks/"),
+          item("Bank comparison", "/netherlands/services/bank-comparison/"),
+          item("Mortgage advisors", "/netherlands/services/mortgage-advisors/"),
+          item("Financial advisors", "/netherlands/services/financial-advisors/"),
+          item("View all services", "/netherlands/services/"),
+        ],
+      },
+      {
+        title: "Health & insurance",
+        items: [
+          item("Health insurance", "/netherlands/services/health-insurance/"),
+          item("Compare health insurance", "/netherlands/services/compare-health-insurance/"),
+          item("Insurance providers", "/netherlands/services/insurance-providers/"),
+        ],
+      },
+      {
+        title: "Housing & relocation",
+        items: [
+          item("Housing platforms", "/netherlands/services/housing-platforms/"),
+          item("Expat housing agencies", "/netherlands/services/expat-housing-agencies/"),
+          item("Relocation services", "/netherlands/services/relocation-services/"),
+          item("Moving companies", "/netherlands/services/moving-companies/"),
+          item("International shipping", "/netherlands/services/international-shipping/"),
+        ],
+      },
+      {
+        title: "Immigration & work permits",
+        items: [
+          item("Visa consultants", "/netherlands/services/visa-consultants/"),
+          item("Immigration lawyers", "/netherlands/services/immigration-lawyers/"),
+          item("Work permit services", "/netherlands/services/work-permit-services/"),
+        ],
+      },
+      {
+        title: "Connectivity",
+        items: [
+          item("Mobile & connectivity", "/netherlands/services/mobile-connectivity/"),
+        ],
+      },
+    ],
+    featured: item("Services directory", "/netherlands/services/", "Banks, insurance, housing, immigration support."),
+    tools: buildServicesToolRail(),
+  },
+  tools: {
+    key: "tools",
+    label: "Tools",
+    showFeatured: false,
+    /** Category cards already list every tool; omit duplicate “Tools” sidebar rail. */
+    showToolsRail: false,
+    megaDensity: "full",
+    sections: buildToolsMegaSections(),
+    featured: item("Open all tools", "/netherlands/tools/", "Browse calculators, planners, and checklists by category."),
   },
   living: {
     key: "living",
     label: "Living",
+    showFeatured: false,
+    megaDensity: "full",
     sections: [
       {
         title: "Housing",
         items: [
-          item("Housing", "/netherlands/living/housing"),
-          item("Rental market", "/netherlands/living/housing/rental-market"),
-          item("Registration address", "/netherlands/living/housing/registration-address"),
-          item("Deposits + contracts", "/netherlands/living/housing/deposits-contracts"),
-          item("Moving checklist", "/netherlands/living/housing/moving-checklist"),
+          item("Housing in the Netherlands", "/netherlands/living/housing/", "Living cluster: rental and home setup."),
+          item("Rental market", "/netherlands/living/rental-market/", "Demand, viewings, and timelines."),
+          item("Registering your address", "/netherlands/living/registering-your-address/", "Rental address context (BRP under Move)."),
+          item("Rental contracts and deposits", "/netherlands/living/rental-contracts-and-deposits/", "Before you sign."),
+          item("Housing costs", "/netherlands/living/housing-costs/", "Typical costs (calculators under Money)."),
         ],
       },
       {
         title: "Utilities",
         items: [
-          item("Utilities", "/netherlands/living/utilities"),
-          item("Energy + water", "/netherlands/living/utilities/energy-water"),
-          item("Internet + mobile", "/netherlands/living/utilities/internet-mobile"),
-          item("Municipality services", "/netherlands/living/utilities/municipality-services"),
+          item("Utilities in the Netherlands", "/netherlands/living/utilities/", "Energy, water, and setup flow."),
+          item("Energy and water", "/netherlands/living/energy-and-water/", "Suppliers and metering basics."),
+          item("Internet and mobile", "/netherlands/living/internet-and-mobile/", "Home connectivity setup."),
+          item("Municipality services", "/netherlands/living/municipality-services/", "Local digital services (not BRP)."),
         ],
       },
       {
-        title: "Local living",
+        title: "Daily life",
         items: [
-          item("Local living", "/netherlands/living/local"),
-          item("Municipality setup", "/netherlands/living/local/municipality-setup"),
-          item("Waste + recycling", "/netherlands/living/local/waste-recycling"),
-          item("Parking permits", "/netherlands/living/local/parking-permits"),
-          item("Community basics", "/netherlands/living/local/community-basics"),
+          item("Daily life in the Netherlands", "/netherlands/living/daily-life/", "Rhythms, expectations, and local life."),
+          item("Transport basics", "/netherlands/living/transport-basics/", "OV, bikes, and getting around."),
+          item("Waste and recycling", "/netherlands/living/waste-and-recycling/", "Sorting, pickup, and containers."),
+          item("Parking and local permits", "/netherlands/living/parking-and-local-permits/", "Street parking and permits."),
+          item("Community basics", "/netherlands/living/community-basics/", "Neighbors, noise, and building life."),
         ],
       },
       {
-        title: "Everyday life (initial)",
+        title: "Digital life / admin-light",
         items: [
-          item("Digital government", "/netherlands/living/digital-government"),
-          item("DigiD", "/netherlands/living/digital-government/digid"),
-          item("Privacy + security", "/netherlands/living/digital-government/privacy-security"),
-          item("Subscriptions", "/netherlands/living/subscriptions"),
-          item("Tracker", "/netherlands/living/subscriptions/tracker"),
-          item("Cancellations", "/netherlands/living/subscriptions/cancellations"),
+          item("DigiD awareness", "/netherlands/living/digid-awareness/", "Cluster entry + link to full guide."),
+          item("Government portals overview", "/netherlands/living/government-portals-overview/", "Where tasks usually live online."),
+          item("Subscriptions and cancellations", "/netherlands/living/subscriptions-and-cancellations/", "Contracts and notice windows."),
+          item("Privacy and safety basics", "/netherlands/living/privacy-and-safety-basics/", "Practical digital hygiene."),
         ],
       },
     ],
-    featured: item("Housing", "/netherlands/living/housing"),
-    tools: getDomainToolItems("living"),
+    featured: item(
+      "Living in the Netherlands",
+      "/netherlands/living/",
+      "Housing, utilities, daily rhythms, and light digital admin once you are on the ground."
+    ),
+    tools: buildLivingToolRail(),
   },
   culture: {
     key: "culture",
     label: "Culture",
+    showFeatured: false,
+    megaDensity: "full",
     sections: [
       {
         title: "Workplace culture",
         items: [
-          item("Workplace", "/netherlands/culture/workplace"),
-          item("Directness", "/netherlands/culture/workplace/directness"),
-          item("Meetings + consensus", "/netherlands/culture/workplace/meetings-consensus"),
-          item("Hierarchy + flatness", "/netherlands/culture/workplace/hierarchy-flatness"),
-          item("Written followups", "/netherlands/culture/workplace/written-followups"),
+          item("Dutch workplace culture", "/netherlands/culture/dutch-workplace-culture/", "Norms, pace, and expectations."),
+          item("Dutch directness at work", "/netherlands/culture/dutch-directness-at-work/", "Feedback and bluntness in context."),
+          item("Meetings and consensus", "/netherlands/culture/meetings-and-consensus/", "How decisions tend to form."),
+          item("Hierarchy and flatness", "/netherlands/culture/hierarchy-and-flatness/", "Titles, autonomy, and structure."),
+          item("Written follow-ups", "/netherlands/culture/written-follow-ups/", "Email, Slack, and documentation."),
         ],
       },
       {
         title: "Social norms",
         items: [
-          item("Social", "/netherlands/culture/social"),
-          item("Communication", "/netherlands/culture/social/communication"),
-          item("Invitations + planning", "/netherlands/culture/social/invitations-planning"),
-          item("Time + boundaries", "/netherlands/culture/social/time-boundaries"),
-          item("What's normal", "/netherlands/culture/social/whats-normal"),
+          item("Dutch social norms", "/netherlands/culture/dutch-social-norms/", "Everyday social expectations."),
+          item("Communication style", "/netherlands/culture/communication-style/", "Tone, humor, and clarity."),
+          item("Invitations and planning", "/netherlands/culture/invitations-and-planning/", "How social plans usually work."),
+          item("Time and boundaries", "/netherlands/culture/time-and-boundaries/", "Punctuality and personal space."),
+          item("What feels normal in Dutch daily life", "/netherlands/culture/what-feels-normal-in-dutch-daily-life/", "Small moments that add up."),
         ],
       },
       {
         title: "Traditions",
         items: [
-          item("Traditions", "/netherlands/culture/traditions"),
-          item("King's Day", "/netherlands/culture/traditions/kings-day"),
-          item("Sinterklaas", "/netherlands/culture/traditions/sinterklaas"),
-          item("National holidays", "/netherlands/culture/traditions/national-holidays"),
-          item("Calendar", "/netherlands/culture/traditions/calendar"),
+          item("Dutch traditions", "/netherlands/culture/dutch-traditions/", "Calendar touchpoints and customs."),
+          item("King's Day", "/netherlands/culture/kings-day/", "Orange, markets, and city rhythms."),
+          item("Sinterklaas", "/netherlands/culture/sinterklaas/", "Seasonal tradition context."),
+          item("National holidays", "/netherlands/culture/national-holidays/", "Public holidays and closures."),
+          item("Dutch social calendar", "/netherlands/culture/dutch-social-calendar/", "Seasonal events and themes."),
         ],
       },
       {
-        title: "Language + Family + Health",
+        title: "Language + integration",
         items: [
-          item("Language", "/netherlands/language"),
-          item("Dutch learning", "/netherlands/language/dutch-learning"),
-          item("Inburgering exams", "/netherlands/language/inburgering-exams"),
-          item("Practice simulation", "/netherlands/language/practice-simulation"),
-          item("Family", "/netherlands/family"),
-          item("Health", "/netherlands/health"),
+          item("Dutch language basics", "/netherlands/culture/dutch-language-basics/", "Starter phrases and patterns."),
+          item("Learning Dutch", "/netherlands/culture/learning-dutch/", "Courses, practice, and pace."),
+          item("Inburgering exams", "/netherlands/culture/inburgering-exams/", "Exams and preparation framing."),
+          item("Practice scenarios", "/netherlands/culture/practice-scenarios/", "Real-life speaking prompts."),
+          item("Family and school culture", "/netherlands/culture/family-and-school-culture/", "School rhythms for families."),
+          item("Health system culture basics", "/netherlands/culture/health-system-culture-basics/", "How care interactions often feel."),
         ],
       },
     ],
-    featured: item("Workplace culture", "/netherlands/culture/workplace"),
-    tools: getDomainToolItems("culture"),
-  },
-  tools: {
-    key: "tools",
-    label: "Tools",
-    sections: buildToolsMegaSections(),
-    featured: item("Open all tools", "/netherlands/tools/"),
-    tools: getDomainToolItems("tools"),
+    featured: item(
+      "Moving to the Netherlands",
+      "/netherlands/moving-to-the-netherlands/",
+      "Anchor the practical move first, then unpack Dutch workplace cues, social norms, and language basics."
+    ),
+    tools: buildCultureToolRail(),
   },
 };
 
@@ -470,3 +986,11 @@ export const MEGA_MENUS: Record<TopNavKey, MegaMenu> = Object.fromEntries(
 ) as Record<TopNavKey, MegaMenu>;
 
 export const COUNTRIES: CountryOption[] = [{ slug: "netherlands", label: "Netherlands" }];
+
+/** Old `move` / `culture` keys → see `navKeyCompat.ts` for mapping tables. */
+export {
+  normalizeTopNavKey,
+  normalizeDomainMenuKey,
+  LEGACY_TOP_NAV_KEY_TO_CURRENT,
+  LEGACY_DOMAIN_MENU_KEY_TO_CURRENT,
+} from "./navKeyCompat";

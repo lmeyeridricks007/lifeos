@@ -5,6 +5,18 @@ import { buildSocialMetadata } from "@/lib/seo/metadata";
 import { getToolsByCategory } from "@/src/lib/tools/getToolsByCategory";
 import { loadToolCategories, loadToolRegistry, type ToolCategory, type ToolRecord } from "@/src/lib/tools/loadToolRegistry";
 
+function mergeLiveToolsForHub(category: ToolCategory): ToolRecord[] {
+  const registry = loadToolRegistry();
+  const primary = getToolsByCategory(category.id, { status: "live" });
+  const byRoute = new Map<string, ToolRecord>();
+  for (const t of primary) byRoute.set(t.route, t);
+  for (const id of category.additionalToolIds ?? []) {
+    const t = registry.find((x) => x.id === id);
+    if (t?.status === "live" && !byRoute.has(t.route)) byRoute.set(t.route, t);
+  }
+  return Array.from(byRoute.values()).sort((a, b) => a.title.localeCompare(b.title));
+}
+
 const SITE_URL = getSiteOrigin();
 
 export function getCategoryByIdOr404(categoryId: string): ToolCategory {
@@ -20,7 +32,7 @@ export function getCategoryHubData(categoryId: string): {
   relatedGuides: string[];
 } {
   const category = getCategoryByIdOr404(categoryId);
-  const liveTools = getToolsByCategory(categoryId, { status: "live" });
+  const liveTools = mergeLiveToolsForHub(category);
   const comingSoonTools = getToolsByCategory(categoryId, { status: "placeholder" });
   const relatedGuides = Array.from(
     new Set([

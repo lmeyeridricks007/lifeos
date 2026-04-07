@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
-import { ToolHero } from "@/src/components/tools/ToolHero";
+import { MoveHero } from "@/components/page/move-shell";
 import { ExamplesSection } from "@/src/components/tools/ExamplesSection";
 import { First90DaysClient } from "@/src/components/tools/First90DaysClient";
 import {
@@ -17,10 +17,16 @@ import {
 import { buildSoftwareApplicationSchema } from "@/src/lib/seo/toolSchema";
 import { buildBreadcrumbSchema, getToolBreadcrumbItems } from "@/src/lib/seo/breadcrumbSchema";
 import { buildFaqSchema } from "@/src/lib/seo/faqSchema";
-import { FIRST_90_DAYS_RELATED_GUIDES, FIRST_90_DAYS_RELATED_TOOLS } from "@/src/lib/tools/shared/toolInternalLinks";
+import {
+  MOVING_HUB,
+  PILLAR,
+  FIRST_90_DAYS_RELATED_GUIDES,
+  FIRST_90_DAYS_RELATED_TOOLS,
+} from "@/src/lib/tools/shared/toolInternalLinks";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -90,9 +96,11 @@ export default async function First90DaysToolPage(props: PageProps) {
       ) : null}
 
       <ToolPageTemplate
+        movingClusterHero
         hero={
-          <ToolHero
-            eyebrow="Tool"
+          <MoveHero
+            variant="tool"
+            eyebrow="TOOL"
             title={meta.hero.title}
             subtitle={meta.hero.subtitle}
             introBullets={meta.hero.introBullets}
@@ -152,12 +160,13 @@ export default async function First90DaysToolPage(props: PageProps) {
         faqItems={faq}
         relatedGuides={FIRST_90_DAYS_RELATED_GUIDES}
         internalLinkStrip={
-          <nav className="flex flex-wrap gap-4 text-sm" aria-label="Related guides and tools">
-            {FIRST_90_DAYS_RELATED_GUIDES.slice(0, 6).map((g) => (
-              <Link key={g.href} href={g.href} className="font-medium text-brand-600 hover:text-brand-700">
-                {g.title}
-              </Link>
-            ))}
+          <nav className="flex flex-wrap gap-4 text-sm" aria-label="Moving hub, main guide, and related tools">
+            <Link href={MOVING_HUB} className="font-medium text-brand-600 hover:text-brand-700">
+              Moving hub
+            </Link>
+            <Link href={PILLAR} className="font-medium text-brand-600 hover:text-brand-700">
+              Moving to the Netherlands guide
+            </Link>
             {FIRST_90_DAYS_RELATED_TOOLS.map((t) => (
               <Link key={t.href} href={t.href} className="font-medium text-brand-600 hover:text-brand-700">
                 {t.label}
@@ -165,6 +174,7 @@ export default async function First90DaysToolPage(props: PageProps) {
             ))}
           </nav>
         }
+        postToolValue={<MoveClusterToolPostValueBlock preset="movingChecklistAndRelocationCost" />}
       >
         <First90DaysClient
           initialValuesJson={initialValuesJson}

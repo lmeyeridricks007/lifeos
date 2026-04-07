@@ -1,6 +1,6 @@
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 import type { ToolResultContext } from "@/src/lib/affiliates/types";
-import { AffiliateCardGrid } from "./AffiliateCardGrid";
+import { AffiliateCardGridLazy } from "./AffiliateCardGridLazy";
 import { AffiliateComparison } from "./AffiliateComparison";
 import { AffiliateCompactList } from "./AffiliateCompactList";
 import { AffiliateDisclosure } from "./AffiliateDisclosure";
@@ -53,7 +53,7 @@ export async function AffiliateBlock({
         ) : null}
         <div className="mt-4">
           {variant === "cards" && (
-            <AffiliateCardGrid
+            <AffiliateCardGridLazy
               items={items.map((i) => ({ provider: i.provider, reason: i.reason }))}
             />
           )}

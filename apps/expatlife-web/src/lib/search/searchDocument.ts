@@ -3,6 +3,8 @@
  * passes `isRouteLive` are included in the public index (see getSearchIndex.ts).
  */
 
+import type { ContentPublishStatus } from "@/src/lib/content/contentPublishStatus";
+
 export type SearchPageType =
   | "guide"
   | "service"
@@ -27,6 +29,8 @@ export type SearchDocument = {
   keywords: string[];
   /** Normalized concatenation of fields for scoring (lowercased elsewhere). */
   searchText: string;
+  /** Editorial depth (e.g. Living/Culture topic guides still expanding). */
+  contentPublishStatus?: ContentPublishStatus;
 };
 
 /** Serializable result returned to the client (no internal scoring fields). */
@@ -40,6 +44,7 @@ export type SearchResult = {
   section?: string;
   image?: string | null;
   imageAlt?: string | null;
+  contentPublishStatus?: ContentPublishStatus;
 };
 
 export function toSearchResult(doc: SearchDocument): SearchResult {
@@ -53,5 +58,6 @@ export function toSearchResult(doc: SearchDocument): SearchResult {
     section: doc.section,
     image: doc.image,
     imageAlt: doc.imageAlt,
+    contentPublishStatus: doc.contentPublishStatus,
   };
 }

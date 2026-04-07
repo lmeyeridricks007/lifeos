@@ -1,10 +1,11 @@
 import type { AffiliatePlacement } from "@/src/lib/affiliates/types";
 import type { AffiliateProvider } from "@/src/lib/affiliates/types";
-import { AffiliateCardGrid } from "./AffiliateCardGrid";
+import { AffiliateCardGridLazy } from "./AffiliateCardGridLazy";
 import { AffiliateComparison } from "./AffiliateComparison";
 import { AffiliateCompactList } from "./AffiliateCompactList";
 import { AffiliateDisclosure } from "./AffiliateDisclosure";
 import { cn } from "@/lib/cn";
+import { movingNlGuideSectionShellClass, movingNlGuideSectionTopAccentClass } from "@/lib/ui/moving-nl-pillar-identity";
 
 export type AffiliateBlockViewProps = {
   placement: AffiliatePlacement;
@@ -12,11 +13,7 @@ export type AffiliateBlockViewProps = {
   showStageChip?: boolean;
 };
 
-const blockWrapperClass = cn(
-  "rounded-2xl border border-slate-200/60 bg-slate-50/60 p-6 md:p-8",
-  "relative overflow-hidden",
-  "before:absolute before:left-0 before:top-0 before:h-full before:w-1 before:bg-gradient-to-b before:from-blue-500 before:to-cyan-500 before:opacity-80"
-);
+const blockWrapperClass = cn("relative overflow-hidden", movingNlGuideSectionShellClass);
 
 export function AffiliateBlockView({ placement, items, showStageChip }: AffiliateBlockViewProps) {
   if (!items.length) return null;
@@ -24,21 +21,22 @@ export function AffiliateBlockView({ placement, items, showStageChip }: Affiliat
 
   return (
     <div className={blockWrapperClass}>
-      <div className="relative pl-2">
+      <div className={movingNlGuideSectionTopAccentClass} aria-hidden />
+      <div className="relative">
         {showStageChip && (
-          <span className="mb-2 inline-block rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-800">
+          <span className="mb-2 inline-block rounded-full bg-copilot-bg-soft px-2.5 py-0.5 text-xs font-medium text-copilot-primary ring-1 ring-copilot-primary/15">
             Recommended for your stage
           </span>
         )}
         {placement.title ? (
-          <h2 className="text-xl font-semibold tracking-tight text-slate-900">{placement.title}</h2>
+          <h2 className="text-xl font-bold tracking-tight text-copilot-text-primary sm:text-2xl">{placement.title}</h2>
         ) : null}
         {placement.intro ? (
-          <p className="mt-2 text-sm text-slate-600">{placement.intro}</p>
+          <p className="mt-2 text-sm text-copilot-text-secondary md:text-base">{placement.intro}</p>
         ) : null}
         <div className="mt-4">
           {variant === "cards" && (
-            <AffiliateCardGrid
+            <AffiliateCardGridLazy
               items={items.map((i) => ({ provider: i.provider, reason: i.reason }))}
             />
           )}
@@ -50,11 +48,12 @@ export function AffiliateBlockView({ placement, items, showStageChip }: Affiliat
           )}
           {variant === "compact-list" && (
             <AffiliateCompactList
+              variant="copilot"
               items={items.map((i) => ({ provider: i.provider, reason: i.reason }))}
             />
           )}
         </div>
-        <AffiliateDisclosure text={placement.disclosure} />
+        <AffiliateDisclosure text={placement.disclosure} variant="copilot" />
       </div>
     </div>
   );

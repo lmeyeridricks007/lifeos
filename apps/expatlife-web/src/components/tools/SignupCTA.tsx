@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { cn } from "@/lib/cn";
 import { Button } from "@/components/ui/button";
+import { ComingSoonBadge } from "@/components/ui/coming-soon-badge";
+import { transitionSurface } from "@/lib/ui/interaction";
 
 export type SignupCTAProps = {
   title: string;
@@ -48,15 +50,13 @@ function ComingSoonButton({
         className={cn(
           "cursor-not-allowed opacity-80 hover:!translate-y-0",
           variant === "primary" &&
-            "border-slate-200 bg-none bg-slate-100 from-slate-100 to-slate-100 text-slate-600 shadow-sm hover:from-slate-100 hover:to-slate-100",
-          variant === "secondary" && "bg-slate-50 text-slate-500 shadow-none"
+            "border-border bg-surface-muted text-foreground-muted shadow-card hover:bg-surface-muted",
+          variant === "secondary" && "bg-surface-muted text-foreground-faint shadow-none"
         )}
       >
         {label}
       </Button>
-      <span className="rounded-full bg-amber-100 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide text-amber-900">
-        Coming soon
-      </span>
+      <ComingSoonBadge emphasis className="uppercase tracking-wide" label="Coming soon" />
     </div>
   );
 }
@@ -84,19 +84,22 @@ export function SignupCTA({
   return (
     <div
       className={cn(
-        "rounded-2xl border border-slate-200 bg-white p-6 shadow-sm",
-        isPanel && "border-l-4 border-l-brand-500 bg-brand-50/30",
+        transitionSurface,
+        "rounded-card border border-border bg-surface-raised p-6 shadow-card ring-1 ring-border/10",
+        isPanel && "border-l-4 border-l-brand bg-brand-muted/35",
         isSidebar && "md:max-w-sm",
         className
       )}
     >
-      <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
-      <p className="mt-2 text-sm text-slate-600">{subtitle}</p>
+      <h3 className="text-lg font-semibold text-foreground">{title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{subtitle}</p>
       {bullets.length > 0 ? (
         <ul className="mt-4 space-y-2">
           {bullets.map((b, i) => (
-            <li key={i} className="flex gap-2 text-sm text-slate-700">
-              <span className="text-brand-500">•</span>
+            <li key={i} className="flex gap-2 text-sm text-foreground">
+              <span className="text-brand" aria-hidden>
+                •
+              </span>
               {b}
             </li>
           ))}

@@ -10,7 +10,10 @@ export {
   trackCityClick,
   trackSearchUsed,
   trackContactSubmit,
+  trackPayslipDecoder,
+  trackCostOfLivingCalculator,
 } from "@/lib/analytics/track";
+export type { PayslipDecoderAnalyticsEvent, CostOfLivingCalculatorAnalyticsEvent } from "@/lib/analytics/track";
 export type { OutboundLinkType, ServiceClickParams, OutboundLinkParams, CtaClickParams } from "@/lib/analytics/track";
 export { utmContentFromPath, withPartnerReferralUtms } from "@/lib/analytics/referral-utm";
 export type { PartnerReferralUtmContext } from "@/lib/analytics/referral-utm";

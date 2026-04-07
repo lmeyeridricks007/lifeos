@@ -20,6 +20,8 @@ export const QUICK_LINK_DEFINITIONS: InternalLink[] = [
   { label: "All tools", href: "/netherlands/tools/" },
   { label: "Services hub", href: "/netherlands/services/" },
   { label: "Cities hub", href: "/netherlands/cities/" },
+  { label: "Living in the Netherlands", href: "/netherlands/living/" },
+  { label: "Culture in the Netherlands", href: "/netherlands/culture/" },
 ];
 
 export const RECOVERY_LINK_DEFINITIONS: InternalLink[] = [

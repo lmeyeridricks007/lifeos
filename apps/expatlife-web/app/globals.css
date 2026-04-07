@@ -2,18 +2,131 @@
 @tailwind components;
 @tailwind utilities;
 
+/**
+ * ExpatOS design tokens (Phase 5)
+ * HSL triplets for use with Tailwind: hsl(var(--token) / <alpha>)
+ *
+ * Site-wide page canvas + framed hero chrome: `lib/ui/site-shell-identity.ts`,
+ * `SiteFramedHero`, and `<main>` in `app/AppClientShell.tsx` (`sitePageCanvasClass`).
+ */
 :root {
+  /**
+   * ExpatOS — Bold Tech + Guidance (canonical hex tokens)
+   */
+  --color-primary: #2563eb;
+  --color-primary-strong: #1d4ed8;
+  --color-bg-dark: #0f172a;
+  --color-surface-dark: #1e293b;
+  --color-bg-light: #f8fafc;
+  --color-bg-soft: #eef4ff;
+  --color-surface: #ffffff;
+  --color-accent: #06b6d4;
+  --color-accent-warm: #f97316;
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+  --color-text-inverse: #ffffff;
+  --color-success: #10b981;
+
+  /* Premium elevation (layered, no harsh black) */
+  --shadow-expatos-sm: 0 2px 8px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-expatos-md: 0 8px 24px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.05);
+  --shadow-expatos-lg: 0 16px 40px rgba(15, 23, 42, 0.12), 0 4px 12px rgba(15, 23, 42, 0.06);
+  --shadow-expatos-xl: 0 24px 56px rgba(15, 23, 42, 0.14), 0 8px 16px rgba(15, 23, 42, 0.07);
+  --shadow-expatos-glow-cyan: 0 12px 40px rgba(6, 182, 212, 0.18);
+
+  /* Primary brand */
   --brand: 221 83% 53%;
   --brand-foreground: 0 0% 100%;
-  --info: 199 89% 48%;
-  --success: 160 84% 39%;
-  --warning: 38 92% 50%;
+  --brand-muted: 221 64% 96%;
+  --brand-subtle: 221 55% 92%;
+  --brand-strong: 224 76% 42%;
+
+  /* Secondary accent — use sparingly (highlights, soft gradients) */
+  --accent: 192 55% 38%;
+  --accent-muted: 192 35% 94%;
+
+  /* Canvas & surfaces — align with Bold Tech bg-light */
+  --canvas: 210 40% 98%;
+  --surface-raised: 0 0% 100%;
+  --surface-muted: 214 32% 97%;
+  --surface-subtle: 214 28% 94%;
+
+  /* Text */
+  --foreground: 222 47% 11%;
+  --foreground-muted: 215 16% 45%;
+  --foreground-subtle: 215 14% 38%;
+  --foreground-faint: 215 14% 52%;
+
+  /* Borders */
+  --border: 214 32% 90%;
+  --border-strong: 215 25% 82%;
+
+  /* Focus & links */
+  --ring: 221 83% 53%;
+  --link: 221 72% 46%;
+  --link-hover: 224 76% 38%;
+
+  /* Status */
+  --info: 199 82% 46%;
+  --info-muted: 199 62% 95%;
+  --info-border: 199 55% 82%;
+  --success: 160 72% 32%;
+  --success-muted: 152 50% 94%;
+  --success-border: 158 42% 78%;
+  --warning: 38 88% 48%;
+  --warning-muted: 48 96% 93%;
+  --warning-border: 38 76% 76%;
+  --danger: 0 68% 48%;
+  --danger-muted: 0 80% 97%;
+
+  /* Shape */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-card: 1rem;
+  --radius-pill: 9999px;
+
+  /* Vertical rhythm (sections) */
+  --section-y: 2.5rem;
+  --section-y-lg: 3.5rem;
+  --section-y-compact: 0.75rem;
+
+  /* Card / stack gaps */
+  --card-pad: 1.25rem;
+  --card-pad-md: 1.5rem;
+  --gap-stack: 1rem;
+  --gap-grid: 1.25rem;
+
+  /**
+   * Semantic page system (ExpatOS) — aliases for documentation + future Tailwind hooks.
+   * Prefer existing `canvas` / `surface-*` / `copilot-*` in components; these mirror the same values.
+   */
+  --page-bg: var(--canvas);
+  --surface-plain: var(--surface-raised);
+  --surface-soft: 214 32% 97%;
+  --surface-elevated: 0 0% 100%;
+  --surface-dark: 222 47% 11%;
+  --text-strong: var(--foreground);
+  --text-default: var(--foreground-muted);
+  --text-muted: var(--foreground-faint);
+  --text-on-dark: 210 40% 98%;
+  --border-soft: var(--border);
+  --border-accent-blue: 221 83% 53%;
+  --border-accent-cyan: 187 85% 43%;
+  --border-accent-amber: 38 88% 48%;
+  --shadow-soft: var(--shadow-expatos-sm);
+  --shadow-card: var(--shadow-expatos-md);
+  --radius-card-token: var(--radius-card);
+  --radius-panel-token: var(--radius-xl);
+  --section-gap: var(--section-y);
+  --content-max-width: 90rem;
 }
 
 @layer base {
   /**
    * Sticky header (~56–72px) + breathing room: keeps in-page #anchors from hiding under the bar.
-   * Tune --scroll-padding-top if header height changes materially.
    */
   html {
     scroll-behavior: smooth;
@@ -26,18 +139,36 @@
     }
   }
 
-  html,
-  body {
-    @apply bg-slate-50 text-slate-900;
+  /* UI transitions respect reduced motion via Tailwind `motion-reduce:*` on components. */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 
-  /* Hard guard: no accidental full-page horizontal scroll on narrow viewports */
+  html,
+  body {
+    @apply bg-canvas text-foreground antialiased;
+  }
+
+  /**
+   * Prevent accidental horizontal scroll from wide grids/tables (esp. mobile).
+   * `clip` avoids layout scrollbar jank vs `hidden`.
+   */
+  html {
+    overflow-x: clip;
+  }
+
   body {
     overflow-x: clip;
   }
 
   * {
-    @apply border-slate-200;
+    @apply border-border;
+  }
+
+  a:not([class]) {
+    @apply text-link underline-offset-4 transition-colors hover:text-link-hover;
   }
 
   .pb-safe {

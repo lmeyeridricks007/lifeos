@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { cn } from "@/lib/cn";
 import { CardLink } from "@/components/ui/card-link";
 import type { OriginCountryGuideEntry, OriginCountryRegion } from "@/src/lib/countries/originCountryGuides";
 
@@ -27,6 +28,8 @@ type Props = {
   subheading?: string;
   /** Section id for anchor / On this page. */
   id?: string;
+  /** Optional outer section classes (e.g. trim padding when nested in a pillar surface). */
+  className?: string;
 };
 
 function matchesSearch(entry: OriginCountryGuideEntry, query: string): boolean {
@@ -40,7 +43,7 @@ function matchesSearch(entry: OriginCountryGuideEntry, query: string): boolean {
   );
 }
 
-export function OriginCountryBrowseSection({ items, title, subheading, id: sectionId }: Props) {
+export function OriginCountryBrowseSection({ items, title, subheading, id: sectionId, className }: Props) {
   const [search, setSearch] = useState("");
   const [region, setRegion] = useState<OriginCountryRegion | "all">("all");
 
@@ -67,13 +70,13 @@ export function OriginCountryBrowseSection({ items, title, subheading, id: secti
   );
 
   return (
-    <section id={sectionId} className="py-6 sm:py-8 md:py-12">
+    <section id={sectionId} className={cn("py-6 sm:py-8 md:py-12", className)}>
       <div className="mb-6 flex flex-col gap-2">
-        <h2 className="text-xl font-semibold tracking-tight text-slate-900 sm:text-2xl md:text-3xl">
+        <h2 className="text-xl font-bold tracking-tight text-copilot-text-primary sm:text-2xl md:text-3xl">
           {title}
         </h2>
         {subheading && (
-          <p className="max-w-3xl text-sm text-slate-600 md:text-base">
+          <p className="max-w-3xl text-sm leading-relaxed text-copilot-text-secondary md:text-base">
             {subheading}
           </p>
         )}
@@ -90,7 +93,7 @@ export function OriginCountryBrowseSection({ items, title, subheading, id: secti
             placeholder="Search by country"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm text-slate-900 placeholder:text-slate-500 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+            className="w-full rounded-xl border border-slate-900/10 bg-copilot-surface px-4 py-2.5 text-sm text-copilot-text-primary shadow-expatos-sm placeholder:text-copilot-text-muted focus:border-copilot-primary focus:outline-none focus:ring-2 focus:ring-copilot-primary/20"
           />
         </div>
         <div className="flex flex-wrap gap-2">
@@ -99,11 +102,12 @@ export function OriginCountryBrowseSection({ items, title, subheading, id: secti
               key={r.value}
               type="button"
               onClick={() => setRegion(r.value as OriginCountryRegion | "all")}
-              className={`rounded-full px-3 py-1.5 text-sm font-medium transition ${
+              className={cn(
+                "rounded-full px-3 py-1.5 text-sm font-semibold transition motion-reduce:transition-none",
                 region === r.value
-                  ? "bg-brand-600 text-white"
-                  : "bg-slate-100 text-slate-700 hover:bg-slate-200"
-              }`}
+                  ? "bg-copilot-primary text-white shadow-expatos-sm ring-1 ring-copilot-primary/20"
+                  : "bg-copilot-bg-soft text-copilot-text-secondary ring-1 ring-copilot-primary/10 hover:bg-copilot-bg-light"
+              )}
             >
               {r.label}
             </button>
@@ -112,7 +116,7 @@ export function OriginCountryBrowseSection({ items, title, subheading, id: secti
       </div>
 
       {filtered.length === 0 ? (
-        <p className="text-sm text-slate-600">No country guides match your search.</p>
+        <p className="text-sm text-copilot-text-secondary">No country guides match your search.</p>
       ) : region === "all" ? (
         <ul className="grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((entry) => {

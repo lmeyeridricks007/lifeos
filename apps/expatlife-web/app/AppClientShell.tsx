@@ -10,6 +10,8 @@ import { CookieBanner } from "@/src/components/cookies/CookieBanner";
 import { ConditionalScript } from "@/src/components/cookies/ConditionalScript";
 import { Footer } from "@/components/site/footer";
 import { Header } from "@/src/components/site/Header";
+import { sitePageCanvasClass } from "@/lib/ui/site-shell-identity";
+import { cn } from "@/lib/cn";
 
 const CookiePreferencesModal = dynamic(
   () =>
@@ -46,7 +48,14 @@ export function AppClientShell({ children, contentVersion }: AppClientShellProps
         <SpeedInsights />
       </ConditionalScript>
       <Header />
-      <main className="min-h-screen min-w-0 py-8 sm:py-10 lg:py-12">{children}</main>
+      <main
+        className={cn(
+          sitePageCanvasClass,
+          "min-h-screen min-w-0 w-full overflow-x-clip py-6 sm:py-8 lg:py-10"
+        )}
+      >
+        {children}
+      </main>
       <Footer contentVersion={contentVersion} />
       {!EXTERNAL_COOKIE_CMP ? (
         <>

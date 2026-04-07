@@ -1,0 +1,121 @@
+/**
+ * Mobile + home internet / connectivity seed data. Affiliate not active (`isAffiliate` false).
+ */
+import type { MonetizationProvider } from "@/src/lib/monetization/types";
+import {
+  DEFAULT_MONETIZATION_DISCLOSURE,
+  monetizationAffiliatePlaceholder,
+} from "@/src/lib/monetization/types";
+
+const LOGOS = "/images/affiliates/logos";
+
+export const utilitiesMonetizationProviders: MonetizationProvider[] = [
+  {
+    id: "monetization-util-simyo",
+    name: "Simyo",
+    category: "utilities",
+    logo: { src: `${LOGOS}/simyo.svg`, alt: "Simyo" },
+    shortDescription:
+      "KPN’s SIM-only brand: simple prepaid or monthly plans on the national network. Handy for a Dutch number early on (SMS, banking codes, light data).",
+    tags: ["Mobile", "SIM-only", "KPN network"],
+    bestFor: "Quick local mobile setup without a long postpaid contract.",
+    priceHint: "~€7–25/mo depending on bundle",
+    affiliateUrl: monetizationAffiliatePlaceholder("util-simyo"),
+    directUrl: "https://www.simyo.nl/",
+    isAffiliate: false,
+    disclosureText: DEFAULT_MONETIZATION_DISCLOSURE,
+    recommendedForContexts: ["netherlands/mobile-connectivity", "netherlands/moving", "netherlands/utilities"],
+    recommendedForStages: ["arrival", "settling"],
+    status: "active",
+  },
+  {
+    id: "monetization-util-lebara",
+    name: "Lebara",
+    category: "utilities",
+    logo: { src: `${LOGOS}/lebara.svg`, alt: "Lebara" },
+    shortDescription:
+      "Prepaid and subscription mobile aimed at internationals, with flexible data and international-minute bundles.",
+    tags: ["Mobile", "Prepaid", "Internationals"],
+    bestFor: "Short-term flexibility or international calling alongside a Dutch number.",
+    priceHint: "~€5–20/mo typical entry plans",
+    affiliateUrl: monetizationAffiliatePlaceholder("util-lebara"),
+    directUrl: "https://www.lebara.nl/",
+    isAffiliate: false,
+    disclosureText: DEFAULT_MONETIZATION_DISCLOSURE,
+    recommendedForContexts: ["netherlands/mobile-connectivity", "netherlands/utilities"],
+    recommendedForStages: ["arrival", "settling", "ongoing"],
+    status: "active",
+  },
+  {
+    id: "monetization-util-kpn",
+    name: "KPN",
+    category: "utilities",
+    logo: { src: "https://www.google.com/s2/favicons?domain=www.kpn.com&sz=128", alt: "KPN" },
+    shortDescription:
+      "Incumbent Dutch telco: mobile, fibre, and DSL options. Often compared when you want one bill for home internet and phone.",
+    tags: ["Mobile", "Fibre", "DSL"],
+    bestFor: "Households prioritising nationwide coverage and retail support.",
+    priceHint: "Mobile ~€15–45/mo SIM-only; fibre varies by address",
+    affiliateUrl: monetizationAffiliatePlaceholder("util-kpn"),
+    directUrl: "https://www.kpn.com/",
+    isAffiliate: false,
+    disclosureText: DEFAULT_MONETIZATION_DISCLOSURE,
+    recommendedForContexts: ["netherlands/mobile-connectivity", "netherlands/utilities"],
+    recommendedForStages: ["settling", "ongoing"],
+    status: "active",
+  },
+  {
+    id: "monetization-util-odido",
+    name: "Odido",
+    category: "utilities",
+    logo: { src: "https://www.google.com/s2/favicons?domain=www.odido.nl&sz=128", alt: "Odido" },
+    shortDescription:
+      "Major Dutch mobile network (consumer successor to T-Mobile NL branding) with competitive SIM-only and data plans.",
+    tags: ["Mobile", "5G", "SIM-only"],
+    bestFor: "Data-heavy users comparing large-network deals online.",
+    priceHint: "~€10–35/mo typical SIM-only range",
+    affiliateUrl: monetizationAffiliatePlaceholder("util-odido"),
+    directUrl: "https://www.odido.nl/",
+    isAffiliate: false,
+    disclosureText: DEFAULT_MONETIZATION_DISCLOSURE,
+    recommendedForContexts: ["netherlands/mobile-connectivity", "netherlands/utilities"],
+    recommendedForStages: ["arrival", "settling"],
+    status: "active",
+  },
+  {
+    id: "monetization-util-ziggo",
+    name: "Ziggo",
+    category: "utilities",
+    logo: { src: "https://www.google.com/s2/favicons?domain=www.ziggo.nl&sz=128", alt: "Ziggo" },
+    shortDescription:
+      "Cable and fibre internet plus TV bundles in much of the Netherlands (VodafoneZiggo). Availability depends on your address—check coverage before you commit.",
+    tags: ["Internet", "TV bundle", "Cable / fibre"],
+    bestFor: "Home broadband and entertainment bundles where Ziggo’s network reaches your building.",
+    priceHint: "Intro offers change; confirm contract length and upload speeds",
+    affiliateUrl: monetizationAffiliatePlaceholder("util-ziggo"),
+    directUrl: "https://www.ziggo.nl/",
+    isAffiliate: false,
+    disclosureText: DEFAULT_MONETIZATION_DISCLOSURE,
+    recommendedForContexts: ["netherlands/utilities", "netherlands/moving"],
+    recommendedForStages: ["arrival", "settling", "ongoing"],
+    status: "active",
+  },
+  {
+    id: "monetization-util-youfone",
+    name: "Youfone",
+    category: "utilities",
+    logo: { src: "https://www.google.com/s2/favicons?domain=www.youfone.nl&sz=128", alt: "Youfone" },
+    shortDescription:
+      "Budget-oriented Dutch provider for mobile and often fibre/DSL via wholesale networks—useful to benchmark price against incumbents.",
+    tags: ["Budget", "Mobile", "Internet"],
+    bestFor: "Price-sensitive households comparing discounted fibre or SIM-only deals.",
+    priceHint: "Low headline prices; check contract terms and speed caps",
+    affiliateUrl: monetizationAffiliatePlaceholder("util-youfone"),
+    directUrl: "https://www.youfone.nl/",
+    isAffiliate: false,
+    disclosureText: DEFAULT_MONETIZATION_DISCLOSURE,
+    recommendedForContexts: ["netherlands/utilities", "netherlands/mobile-connectivity"],
+    recommendedForStages: ["settling", "ongoing"],
+    status: "active",
+  },
+];

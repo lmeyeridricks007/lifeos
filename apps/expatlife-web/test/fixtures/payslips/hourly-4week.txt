@@ -1,0 +1,6 @@
+4-week payroll
+Hourly rate 15,50 15,50
+Hours worked 152,00 608,00
+Gross pay 2366,00 9464,00
+Loonheffing 412,00 1648,00
+Netto 1954,00 7816,00

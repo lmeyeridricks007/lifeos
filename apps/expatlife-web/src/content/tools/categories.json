@@ -40,9 +40,22 @@
       "route": "/netherlands/money/tools/",
       "description": "Salary, tax, affordability and cost calculators.",
       "menuGroup": "money",
+      "additionalToolIds": ["payslip-decoder"],
       "relatedGuides": [
         "/netherlands/money/",
         "/netherlands/money/taxes/"
+      ]
+    },
+    {
+      "id": "taxes-tools",
+      "label": "Taxes",
+      "route": "/netherlands/taxes/tools/",
+      "description": "Tax planning calculators and checks for expats in the Netherlands.",
+      "menuGroup": "money",
+      "additionalToolIds": ["payslip-decoder"],
+      "relatedGuides": [
+        "/netherlands/taxes/",
+        "/netherlands/taxes/expat-taxes-netherlands/"
       ]
     },
     {
@@ -83,10 +96,12 @@
       "label": "Work & Employment",
       "route": "/netherlands/work/tools/",
       "description": "Offer, contract, payslip and compensation tools.",
-      "menuGroup": "work",
+      "menuGroup": "money",
       "relatedGuides": [
         "/netherlands/work/",
-        "/netherlands/work/contracts/"
+        "/netherlands/work/contracts/",
+        "/netherlands/taxes/tools/",
+        "/netherlands/taxes/net-salary-netherlands/"
       ]
     },
     {

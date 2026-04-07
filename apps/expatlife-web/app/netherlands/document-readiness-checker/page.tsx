@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
-import { ToolHero } from "@/src/components/tools/ToolHero";
-import { Section } from "@/components/ui/section";
+import { MoveHero, MoveToolSidebar } from "@/components/page/move-shell";
+import { SectionBlock } from "@/components/page/pillar-template";
 import { CardLink } from "@/components/ui/card-link";
 import { CollapsiblePanel } from "@/components/ui/collapsible-panel";
 import { DocumentReadinessCheckerClient } from "@/src/components/tools/document-readiness-checker/DocumentReadinessCheckerClient";
@@ -18,6 +18,7 @@ import {
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getVisaRelocationMarketingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
+import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -106,24 +107,6 @@ const FAQ_ITEMS = [
   },
 ];
 
-const VALUE_CARDS = [
-  {
-    id: "what-tool-does",
-    title: "What this tool does",
-    description: "Shows which document categories may matter for your move and how ready you are.",
-  },
-  {
-    id: "what-it-checks",
-    title: "What it checks",
-    description: "Visa route, citizenship, work, study, family, and business-related document categories.",
-  },
-  {
-    id: "what-you-get",
-    title: "What you get",
-    description: "A readiness score, missing-document list, risk flags, and practical next steps.",
-  },
-];
-
 const RELATED_TOOLS_FOR_PAGE = [
   { href: `${BASE}/visa-checker/`, title: "Visa Checker", description: "Find your best visa route." },
   { href: `${BASE}/visa-application-plan/`, title: "Visa Application Plan", description: "Get a step-by-step application roadmap." },
@@ -131,6 +114,21 @@ const RELATED_TOOLS_FOR_PAGE = [
   { href: `${BASE}/moving/tools/moving-checklist/`, title: "Moving Checklist", description: "Build a step-by-step relocation checklist." },
   { href: `${BASE}/moving/tools/first-90-days/`, title: "First 90 Days Planner", description: "Plan your first weeks after arrival." },
   { href: `${BASE}/moving/tools/arrival-planner/`, title: "Arrival Planner", description: "Plan your first days after landing." },
+];
+
+const DOC_READINESS_TOC = [
+  { id: "tool-inputs", label: "Check your readiness" },
+  { id: "example-scenarios", label: "Example situations" },
+  { id: "recommended-services", label: "Services" },
+  { id: "faq", label: "FAQ" },
+  { id: "official-sources", label: "Official sources" },
+];
+
+const DOC_READINESS_QUICK = [
+  { label: "Check my documents", href: "#tool-inputs" },
+  { label: "Find my visa", href: `${BASE}/visa-checker/` },
+  { label: "Estimate relocation cost", href: `${BASE}/moving/tools/relocation-cost-estimator/` },
+  { label: "Generate moving checklist", href: `${BASE}/moving/tools/moving-checklist/` },
 ];
 
 const OFFICIAL_SOURCES = [
@@ -173,31 +171,12 @@ export default async function DocumentReadinessCheckerPage(props: PageProps) {
   const intro = (
     <>
       <p className="mb-3">
-        Different Dutch visa and residence routes require different document sets. Your country of origin, family status, work route, study route, or business route all affect what you should prepare.
+        Different Dutch visa and residence routes require different document sets. This tool maps likely categories to your route and flags gaps, translation, apostille, or legalization—without replacing official sources or legal advice.
       </p>
       <p className="mb-3">
-        This tool helps you identify likely document categories, missing items, and extra complexity such as translation, apostille, or legalization. It does not replace official source checks or legal advice.
-      </p>
-      <p className="mb-3">
-        Common categories include: <strong>passport</strong>, <strong>employment contract</strong>, <strong>university admission</strong>, <strong>birth certificate</strong>, <strong>marriage or partnership proof</strong>, <strong>business documents</strong>, <strong>income proof</strong>, and <strong>housing / address documents</strong>. Answer a few questions to see which apply to you and how ready you are.
+        Answer a few questions to see a readiness summary and what to prepare next.
       </p>
     </>
-  );
-
-  const valueCardVariants = [
-    "rounded-2xl border border-brand-200/90 bg-gradient-to-br from-brand-50/90 to-white p-5 shadow-sm border-l-4 border-l-brand-500",
-    "rounded-2xl border border-sky-200/90 bg-gradient-to-br from-sky-50/80 to-white p-5 shadow-sm border-l-4 border-l-sky-500",
-    "rounded-2xl border border-cyan-200/80 bg-gradient-to-br from-cyan-50/70 to-white p-5 shadow-sm border-l-4 border-l-cyan-500",
-  ];
-  const valueCardsSection = (
-    <div className="grid gap-4 sm:grid-cols-3">
-      {VALUE_CARDS.map((card, i) => (
-        <div key={card.id} className={valueCardVariants[i % valueCardVariants.length]}>
-          <h3 className="font-semibold text-slate-900">{card.title}</h3>
-          <p className="mt-2 text-sm text-slate-600">{card.description}</p>
-        </div>
-      ))}
-    </div>
   );
 
   const exampleScenariosBlock = (
@@ -233,13 +212,15 @@ export default async function DocumentReadinessCheckerPage(props: PageProps) {
 
   const primarySectionContent = (
     <div className="space-y-6">
-      {exampleScenariosBlock}
-      <div className="mb-6">{valueCardsSection}</div>
       <div>
         <DocumentReadinessCheckerClient
           key={scenarioId ?? "default"}
           initialPrefill={initialPrefill}
         />
+      </div>
+      {exampleScenariosBlock}
+      <div className="border-t border-border pt-8">
+        <MoveClusterToolPostValueBlock preset="movingChecklistAndRelocationCost" />
       </div>
     </div>
   );
@@ -253,8 +234,10 @@ export default async function DocumentReadinessCheckerPage(props: PageProps) {
       ) : null}
 
       <ToolPageTemplate
+        movingClusterHero
         hero={
-          <ToolHero
+          <MoveHero
+            variant="tool"
             eyebrow="TOOL"
             title="Netherlands Visa Document Readiness Checker"
             subtitle="Answer a few questions to see which document categories may matter for your move, how ready you are, what is missing, and what to prepare next."
@@ -279,24 +262,7 @@ export default async function DocumentReadinessCheckerPage(props: PageProps) {
           { id: "what-it-checks", title: "What it checks", body: ["Visa route, citizenship, work, study, family, and business-related document categories."] },
           { id: "what-you-get", title: "What you get", body: ["A readiness score, missing-document list, risk flags, and practical next steps."] },
         ]}
-        sidebar={
-          <nav className="space-y-4" aria-label="On this page">
-            <div className="text-sm font-semibold text-slate-800">On this page</div>
-            <ul className="space-y-2 text-sm text-slate-600">
-              <li><a href="#tool-inputs" className="hover:text-brand-600">Check your readiness</a></li>
-              <li><a href="#example-scenarios" className="hover:text-brand-600">Example situations</a></li>
-              <li><a href="#recommended-services" className="hover:text-brand-600">Services</a></li>
-              <li><a href="#faq" className="hover:text-brand-600">FAQ</a></li>
-              <li><a href="#official-sources" className="hover:text-brand-600">Official sources</a></li>
-            </ul>
-            <div className="pt-4 space-y-2">
-              <Link href="#tool-inputs" className="block text-sm font-medium text-brand-600 hover:underline">Check my documents</Link>
-              <Link href={`${BASE}/visa-checker/`} className="block text-sm font-medium text-brand-600 hover:underline">Find my visa</Link>
-              <Link href={`${BASE}/moving/tools/relocation-cost-estimator/`} className="block text-sm font-medium text-brand-600 hover:underline">Estimate relocation cost</Link>
-              <Link href={`${BASE}/moving/tools/moving-checklist/`} className="block text-sm font-medium text-brand-600 hover:underline">Generate moving checklist</Link>
-            </div>
-          </nav>
-        }
+        sidebar={<MoveToolSidebar tocItems={DOC_READINESS_TOC} quickLinks={DOC_READINESS_QUICK} />}
         relatedGuides={DOCUMENT_READINESS_CHECKER_RELATED_GUIDES}
         recommendedServices={
           <div id="recommended-services" className="scroll-mt-24 rounded-2xl border-2 border-brand-200/80 bg-gradient-to-br from-brand-50/80 via-white to-sky-50/50 p-6 shadow-md md:p-8">
@@ -358,16 +324,10 @@ export default async function DocumentReadinessCheckerPage(props: PageProps) {
         seoContent={
           <div className="prose prose-slate max-w-none text-slate-600">
             <p>
-              Document planning depends on your visa route. Identity documents (passport, copies) are needed for almost every route. Work routes such as Highly Skilled Migrant and EU Blue Card typically require an employment contract or job offer and salary proof. Study routes require admission proof and proof of funds. Partner and family routes centre on relationship and civil-status documents (marriage certificate, birth certificates). Self-employed and DAFT routes focus on business documents and proof of funds.
+              Document planning depends on your visa route: work routes need contract and salary proof; study routes need admission and funds; partner and family routes need relationship and civil documents; entrepreneur routes need business evidence. Almost everyone needs a valid passport and often civil records—sometimes with apostille, legalization, or certified translation depending on origin.
             </p>
             <p>
-              Your country of origin matters. Some countries’ civil documents need apostille or legalization before they are accepted in the Netherlands. Translation may be required for documents not in Dutch or English. Replacement or certified copies can take longer in some countries — plan early.
-            </p>
-            <p>
-              Families often need more documents and earlier planning: birth certificates for children, marriage or partnership proof, and sometimes custody or parental authority evidence. Connecting this tool with the visa checker and moving checklist helps you see the full picture: which route fits, which documents you need, and what to do next.
-            </p>
-            <p>
-              Document readiness affects your timeline and first-week admin. Missing or uncertified documents can delay registration, banking, or permit processing. Use this checker to see what is likely required, what you already have, and what still needs work — then confirm with official IND and municipality sources before you apply.
+              Families and long-haul origins often need more lead time. Use this checker for a planning view, then confirm exact lists with the IND, your sponsor or school, and municipality sources before you apply.
             </p>
           </div>
         }
@@ -390,7 +350,7 @@ export default async function DocumentReadinessCheckerPage(props: PageProps) {
         }
         extraSection={
           <>
-            <Section title="Related tools" contained={true}>
+            <SectionBlock id="related-tools" title="Related tools" compact className="pt-3 md:pt-4">
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {RELATED_TOOLS_FOR_PAGE.map((t) => (
                   <CardLink
@@ -402,9 +362,9 @@ export default async function DocumentReadinessCheckerPage(props: PageProps) {
                   />
                 ))}
               </div>
-            </Section>
+            </SectionBlock>
 
-            <Section id="official-sources" title="Official sources" className="scroll-mt-24" contained={true}>
+            <SectionBlock id="official-sources" title="Official sources" className="scroll-mt-24">
               <p className="mb-4 text-sm text-slate-600">
                 Confirm exact document and application requirements with these official resources.
               </p>
@@ -422,7 +382,7 @@ export default async function DocumentReadinessCheckerPage(props: PageProps) {
                   </li>
                 ))}
               </ul>
-            </Section>
+            </SectionBlock>
           </>
         }
       >

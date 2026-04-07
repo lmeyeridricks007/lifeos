@@ -1,0 +1,7 @@
+Salarisperiode maart 2026
+Bruto salaris                 5 500,50
+Werknemerspremie pensioen      -275,03
+Pensioenpremie werkgever        275,03
+Loonbelasting                -1.800,00
+Belastbaar loon               5.225,47
+Netto loon                    3.425,47

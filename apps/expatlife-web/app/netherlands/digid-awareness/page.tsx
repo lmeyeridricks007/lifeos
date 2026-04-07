@@ -7,6 +7,7 @@ import { loadGuideBySlug } from "@/src/lib/guides/loadGuide";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { buildNetherlandsGuideAffiliateSlots } from "@/src/components/monetization";
 
 const baseUrl = getSiteOrigin();
 const SLUG = "digid-awareness";
@@ -72,6 +73,8 @@ export default async function DigidAwarenessPage() {
 
   const serializableData = JSON.parse(JSON.stringify(data));
   const serializableBlocks = JSON.parse(JSON.stringify(affiliateBlocks));
+  const { contextualAffiliateAfterFirstSection, contextualAffiliateBeforeNextSteps } =
+    buildNetherlandsGuideAffiliateSlots(SLUG, data.path);
 
   return (
     <>
@@ -87,6 +90,8 @@ export default async function DigidAwarenessPage() {
         data={serializableData}
         affiliateBlocks={serializableBlocks}
         canonicalUrl={new URL(data.path.startsWith("/") ? data.path : `/${data.path}`, baseUrl).toString()}
+        contextualAffiliateAfterFirstSection={contextualAffiliateAfterFirstSection}
+        contextualAffiliateBeforeNextSteps={contextualAffiliateBeforeNextSteps}
       />
     </>
   );

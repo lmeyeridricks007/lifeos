@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
-import { ToolHero } from "@/src/components/tools/ToolHero";
-import { Section } from "@/components/ui/section";
+import { MoveHero, MoveToolSidebar } from "@/components/page/move-shell";
+import { SectionBlock } from "@/components/page/pillar-template";
 import { CardLink } from "@/components/ui/card-link";
 import { CollapsiblePanel } from "@/components/ui/collapsible-panel";
 import { VisaApplicationPlanClient } from "@/src/components/tools/visa-application-plan/VisaApplicationPlanClient";
@@ -24,6 +24,23 @@ export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = "/netherlands/visa-application-plan/";
 const BASE = "/netherlands";
+
+const VISA_APPLICATION_PLAN_SIDEBAR_TOC = [
+  { id: "tool-inputs", label: "Build your plan" },
+  { id: "example-scenarios", label: "Example scenarios" },
+  { id: "how-the-tool-works", label: "How to use it" },
+  { id: "recommended-immigration-lawyers", label: "Immigration lawyers" },
+  { id: "recommended-services", label: "Services" },
+  { id: "faq", label: "FAQ" },
+  { id: "official-sources", label: "Official sources" },
+];
+
+const VISA_APPLICATION_PLAN_QUICK_LINKS = [
+  { label: "Build my visa plan", href: "#tool-inputs" },
+  { label: "Find my visa", href: `${BASE}/visa-checker/` },
+  { label: "Check my documents", href: `${BASE}/document-readiness-checker/` },
+  { label: "Estimate relocation cost", href: `${BASE}/moving/tools/relocation-cost-estimator/` },
+];
 
 export const metadata: Metadata = {
   title: "Netherlands Visa Application Plan: Get Your Personalized Step-by-Step Roadmap",
@@ -107,24 +124,6 @@ const FAQ_ITEMS = [
   },
 ];
 
-const VALUE_CARDS = [
-  {
-    id: "what-tool-does",
-    title: "What this tool does",
-    description: "Builds a personalized step-by-step visa and relocation action plan.",
-  },
-  {
-    id: "what-it-uses",
-    title: "What it uses",
-    description: "Visa route, timing, country, household, document readiness, and move planning inputs.",
-  },
-  {
-    id: "what-you-get",
-    title: "What you get",
-    description: "A timeline, task list, cost checkpoints, bottleneck warnings, and links to the right guides and tools.",
-  },
-];
-
 const RELATED_TOOLS_FOR_PAGE = [
   { href: `${BASE}/visa-checker/`, title: "Visa Checker", description: "Find your best visa route." },
   { href: `${BASE}/document-readiness-checker/`, title: "Document Readiness Checker", description: "See whether your documents are ready." },
@@ -175,28 +174,12 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
   const intro = (
     <>
       <p className="mb-3">
-        A visa route is only part of the move; most people also need a clear sequence of actions. The order of tasks matters: visa route confirmation, document prep, application, travel planning, housing, registration, banking, and insurance.
+        You need a sensible order of tasks—route, documents, application, travel, housing, and arrival admin—not only the permit type.
       </p>
       <p className="mb-3">
-        This tool creates a personalized plan based on your route, country, timing, household, and current readiness. It does not replace official legal instructions but helps you organize your move realistically. Major route types include <strong>Highly Skilled Migrant</strong>, <strong>EU Blue Card</strong>, <strong>DAFT</strong>, <strong>Self-Employed</strong>, <strong>Student</strong>, and <strong>Partner / Family</strong>.
+        Generate a step-by-step plan from your route, timing, and readiness. Confirm every step with official sources or an adviser.
       </p>
     </>
-  );
-
-  const valueCardVariants = [
-    "rounded-2xl border border-brand-200/90 bg-gradient-to-br from-brand-50/90 to-white p-5 shadow-sm border-l-4 border-l-brand-500",
-    "rounded-2xl border border-sky-200/90 bg-gradient-to-br from-sky-50/80 to-white p-5 shadow-sm border-l-4 border-l-sky-500",
-    "rounded-2xl border border-cyan-200/80 bg-gradient-to-br from-cyan-50/70 to-white p-5 shadow-sm border-l-4 border-l-cyan-500",
-  ];
-  const valueCardsSection = (
-    <div className="grid gap-4 sm:grid-cols-3">
-      {VALUE_CARDS.map((card, i) => (
-        <div key={card.id} className={valueCardVariants[i % valueCardVariants.length]}>
-          <h3 className="font-semibold text-slate-900">{card.title}</h3>
-          <p className="mt-2 text-sm text-slate-600">{card.description}</p>
-        </div>
-      ))}
-    </div>
   );
 
   const exampleScenariosBlock = (
@@ -236,11 +219,10 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
 
   const primarySectionContent = (
     <div className="space-y-6">
-      {exampleScenariosBlock}
-      <div className="mb-6">{valueCardsSection}</div>
       <div>
         <VisaApplicationPlanClient key={scenarioId ?? "default"} initialPrefill={initialPrefill} />
       </div>
+      {exampleScenariosBlock}
     </div>
   );
 
@@ -248,27 +230,11 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
 
   const seoContent = (
     <div className="prose prose-slate max-w-none text-slate-600">
-      <h2 className="text-xl font-semibold text-slate-900">How to plan a Netherlands visa application step by step</h2>
       <p>
-        <strong>Why timing matters.</strong> Document preparation, especially certified copies, translations, apostille, or legalization, often takes weeks or months. Employer and institution timelines affect when you can submit. Planning early reduces last-minute stress and avoids booking travel before key milestones.
+        Start documents early—civil records, translations, and apostille often take longer than the IND clock. Employer-, school-, and sponsor-driven routes follow their submission timeline; align your travel and housing plans with them.
       </p>
       <p>
-        <strong>Why route-specific sequencing matters.</strong> Work routes (e.g. Highly Skilled Migrant, EU Blue Card) are usually employer-sponsored; the employer submits the application. Student routes are coordinated by the institution. Partner and family routes require relationship and sponsor evidence. DAFT and self-employed routes involve business and viability documentation. Each route has a common sequence; this tool adapts the plan to your chosen route.
-      </p>
-      <p>
-        <strong>Why documents should be started early.</strong> Identity and civil documents (passport, birth certificate, marriage certificate) are needed for many routes. Getting certified copies, translations, or apostille can take longer in some countries. Starting early ensures you are not delayed at the application or registration stage.
-      </p>
-      <p>
-        <strong>Why housing and arrival setup often overlap with visa planning.</strong> Registration at the municipality usually requires an address. Temporary housing is often needed for the first weeks. Banking and health insurance are typically set up after you have a BSN and address. Connecting your visa plan with housing, registration, and first-90-days planning makes the move smoother.
-      </p>
-      <p>
-        <strong>Why employer, school, or sponsor routes require different workflows.</strong> If your permit depends on an employer, university, or sponsor, their submission timeline drives yours. Align your document gathering and travel plans with their process. Use this tool to see a likely sequence, then confirm dates with them and the IND.
-      </p>
-      <p>
-        <strong>Why families need a more layered plan.</strong> Partner and family moves often involve more documents (relationship proof, sponsor income, civil documents for children), school planning, and housing for more people. Start earlier and use the Document Readiness Checker and Moving Checklist alongside this plan.
-      </p>
-      <p>
-        <strong>Connecting this tool with the Visa Checker, Document Readiness Checker, and Cost Estimator.</strong> Use the Visa Checker to find your likely route, then build your step-by-step plan here. Use the Document Readiness Checker to see what you still need to gather. Use the Relocation Cost Estimator to budget for fees, housing, and first-year costs. Together, these tools help you turn your visa route into a practical, realistic move plan.
+        Families usually need more layers (extra documents, schools, housing). Use the Visa Checker and Document Readiness Checker alongside this plan; budget with the cost tools before you book flights.
       </p>
     </div>
   );
@@ -282,8 +248,10 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
       ) : null}
 
       <ToolPageTemplate
+        movingClusterHero
         hero={
-          <ToolHero
+          <MoveHero
+            variant="tool"
             eyebrow="TOOL"
             title="Personalized Netherlands Visa Application Plan"
             subtitle="Answer a few questions to generate a practical step-by-step visa application plan for your route, including timeline, documents, costs, and next actions before you move to the Netherlands."
@@ -295,32 +263,29 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
               src: "/images/heroes/netherlands-visa-application-plan.png",
               alt: "A man with glasses meticulously plans his Netherlands visa application at a clean wooden desk by a window overlooking a picturesque Dutch canal. He is writing in a notebook while a laptop screen displays a multi-step visa planning interface. On the desk are a passport, documents, a smartphone with a checklist, and a stack of books titled VISA DOCUMENTS, APPLICATION TIMELINE, and RELOCATION TASKS, symbolizing comprehensive expatriate planning.",
             }}
-            imageFallback={{
-              src: "/images/heroes/netherlands-visa-application-plan.png",
-              alt: "A man plans his Netherlands visa application at a desk by a window overlooking a Dutch canal, with a laptop, passport, notebook, and books titled VISA DOCUMENTS, APPLICATION TIMELINE, and RELOCATION TASKS.",
-            }}
           />
         }
         intro={intro}
         disclosure="Planning guidance only — always confirm exact requirements with official sources."
+        explanatorySections={[
+          {
+            id: "what-tool-does",
+            title: "What this tool does",
+            body: ["Builds a personalized step-by-step visa and relocation action plan."],
+          },
+          {
+            id: "what-it-uses",
+            title: "What it uses",
+            body: ["Visa route, timing, country, household, document readiness, and move planning inputs."],
+          },
+          {
+            id: "what-you-get",
+            title: "What you get",
+            body: ["A timeline, task list, cost checkpoints, bottleneck warnings, and links to the right guides and tools."],
+          },
+        ]}
         sidebar={
-          <nav className="space-y-4" aria-label="On this page">
-            <div className="text-sm font-semibold text-slate-800">On this page</div>
-            <ul className="space-y-2 text-sm text-slate-600">
-              <li><a href="#tool-inputs" className="hover:text-brand-600">Build your plan</a></li>
-              <li><a href="#example-scenarios" className="hover:text-brand-600">Example scenarios</a></li>
-              <li><a href="#recommended-immigration-lawyers" className="hover:text-brand-600">Immigration lawyers</a></li>
-              <li><a href="#recommended-services" className="hover:text-brand-600">Services</a></li>
-              <li><a href="#faq" className="hover:text-brand-600">FAQ</a></li>
-              <li><a href="#official-sources" className="hover:text-brand-600">Official sources</a></li>
-            </ul>
-            <div className="pt-4 space-y-2">
-              <Link href="#tool-inputs" className="block text-sm font-medium text-brand-600 hover:underline">Build my visa plan</Link>
-              <Link href={`${BASE}/visa-checker/`} className="block text-sm font-medium text-brand-600 hover:underline">Find my visa</Link>
-              <Link href={`${BASE}/document-readiness-checker/`} className="block text-sm font-medium text-brand-600 hover:underline">Check my documents</Link>
-              <Link href={`${BASE}/moving/tools/relocation-cost-estimator/`} className="block text-sm font-medium text-brand-600 hover:underline">Estimate relocation cost</Link>
-            </div>
-          </nav>
+          <MoveToolSidebar tocItems={VISA_APPLICATION_PLAN_SIDEBAR_TOC} quickLinks={VISA_APPLICATION_PLAN_QUICK_LINKS} />
         }
         relatedGuides={VISA_APPLICATION_PLAN_RELATED_GUIDES}
         recommendedLawyersSection={recommendedLawyersSection}
@@ -401,7 +366,7 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
         }
         extraSection={
           <>
-            <Section title="Related tools" contained={true}>
+            <SectionBlock id="related-tools" title="Related tools" compact className="pt-3 md:pt-4">
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {RELATED_TOOLS_FOR_PAGE.map((t) => (
                   <CardLink
@@ -413,9 +378,9 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
                   />
                 ))}
               </div>
-            </Section>
+            </SectionBlock>
 
-            <Section id="official-sources" title="Official sources" className="scroll-mt-24" contained={true}>
+            <SectionBlock id="official-sources" title="Official sources" className="scroll-mt-24">
               <p className="mb-4 text-sm text-slate-600">
                 Confirm exact requirements and procedures with these official resources.
               </p>
@@ -433,7 +398,7 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
                   </li>
                 ))}
               </ul>
-            </Section>
+            </SectionBlock>
           </>
         }
       >

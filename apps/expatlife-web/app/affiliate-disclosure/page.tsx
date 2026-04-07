@@ -22,13 +22,13 @@ export default function AffiliateDisclosurePage() {
       {affiliateDisclosurePage.sections.map((section) => (
         <section
           key={section.id}
-          className="mb-10 rounded-2xl border border-slate-100 bg-slate-50/50 p-6 sm:p-8"
+          className="mb-10 rounded-card border border-border/80 bg-surface-muted/50 p-6 sm:p-8"
         >
-          <h2 className="text-xl font-semibold text-slate-900">
+          <h2 className="text-xl font-semibold text-foreground">
             {section.heading}
           </h2>
           {section.paragraphs.map((p, i) => (
-            <p key={i} className="mt-3 text-slate-700 leading-relaxed">
+            <p key={i} className="mt-3 text-foreground leading-relaxed">
               {p}
             </p>
           ))}

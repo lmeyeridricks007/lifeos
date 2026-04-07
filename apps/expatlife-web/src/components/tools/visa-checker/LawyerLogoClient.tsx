@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 type LawyerLogoClientProps = {
@@ -14,7 +15,7 @@ export function LawyerLogoClient({ src, alt, fallbackInitials }: LawyerLogoClien
   if (failed) {
     return (
       <span
-        className="flex h-full w-full items-center justify-center bg-slate-100 text-base font-semibold text-slate-500"
+        className="flex h-full w-full items-center justify-center bg-surface-muted text-base font-semibold text-foreground-muted"
         aria-hidden
       >
         {fallbackInitials}
@@ -23,12 +24,13 @@ export function LawyerLogoClient({ src, alt, fallbackInitials }: LawyerLogoClien
   }
 
   return (
-    <img
+    <Image
       src={src}
       alt={alt}
       width={64}
       height={64}
       className="h-full w-full object-contain p-2"
+      unoptimized={!src.startsWith("/")}
       onError={() => setFailed(true)}
     />
   );

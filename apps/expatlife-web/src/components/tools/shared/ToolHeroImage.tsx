@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { isCloudinaryDeliverUrl, optimizeRemoteImageSrc } from "@/src/lib/images/cloudinary";
 
 export type ToolHeroImageProps = {
   src: string;
@@ -9,34 +10,30 @@ export type ToolHeroImageProps = {
   /** If main src fails to load, try this (e.g. PNG fallback when WebP missing). */
   fallbackSrc?: string;
   fallbackAlt?: string;
-  /** Optional width for next/image (default 448). */
-  width?: number;
-  /** Optional height for next/image (default 336). */
-  height?: number;
   className?: string;
-  /** When true, use img for external or non-optimized paths. */
+  /** When true, skip the image optimizer (local or remote). */
   unoptimized?: boolean;
+  /** LCP: eager fetch + high priority (tool page heroes). */
+  priority?: boolean;
 };
 
 /**
- * Hero image for tool pages. Uses next/image when src is local; falls back to img for placeholders or external URLs.
- * Optimized for WebP; tries fallbackSrc if main src fails; fails gracefully if both missing.
+ * Hero image for tool pages: stable aspect box (reduces CLS), next/image, optional Cloudinary transforms.
  */
 export function ToolHeroImage({
   src,
   alt,
   fallbackSrc,
   fallbackAlt,
-  width = 448,
-  height = 336,
   className = "",
   unoptimized = false,
+  priority = false,
 }: ToolHeroImageProps) {
   const [error, setError] = useState(false);
   const [fallbackUsed, setFallbackUsed] = useState(false);
-  const effectiveSrc = fallbackUsed && fallbackSrc ? fallbackSrc : src;
+  const rawEffective = fallbackUsed && fallbackSrc ? fallbackSrc : src;
   const effectiveAlt = fallbackUsed && fallbackAlt ? fallbackAlt : alt;
-  const showPlaceholder = !effectiveSrc || error;
+  const showPlaceholder = !rawEffective || error;
 
   const handleError = () => {
     if (fallbackSrc && !fallbackUsed) setFallbackUsed(true);
@@ -46,51 +43,35 @@ export function ToolHeroImage({
   if (showPlaceholder) {
     return (
       <div
-        className={`flex items-center justify-center rounded-2xl border border-slate-200 bg-slate-100 ${className}`}
-        style={{ minHeight: 280 }}
+        className={`relative aspect-[4/3] w-full overflow-hidden rounded-card border border-border bg-surface-muted ${className}`}
         aria-hidden
       >
-        <span className="text-sm text-slate-400">Image unavailable</span>
+        <div className="flex h-full min-h-[14rem] items-center justify-center">
+          <span className="text-sm text-foreground-muted">Image unavailable</span>
+        </div>
       </div>
     );
   }
 
-  const isLocal = effectiveSrc.startsWith("/");
-  // Dev: skip /_next/image for local files — avoids optimizer IPC + AbortError spam (HMR/Strict Mode)
-  // and noisy logs when hero PNGs are not yet in public/images/heroes/.
-  const unoptimizedLocalDev =
-    process.env.NODE_ENV === "development" && isLocal;
-
-  if (isLocal && !unoptimized) {
-    return (
-      <div
-        className={`relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 ${className}`}
-      >
-        <Image
-          src={effectiveSrc}
-          alt={effectiveAlt}
-          width={width}
-          height={height}
-          className="h-56 w-full object-cover object-center sm:h-64 lg:h-80"
-          sizes="(max-width: 1024px) 100vw, 28rem"
-          unoptimized={unoptimizedLocalDev}
-          onError={handleError}
-        />
-      </div>
-    );
-  }
+  const isLocal = rawEffective.startsWith("/");
+  const effectiveSrc = isLocal ? rawEffective : optimizeRemoteImageSrc(rawEffective, { maxWidth: 1200 });
+  const unoptimizedLocalDev = process.env.NODE_ENV === "development" && isLocal;
+  const allowNextOptimizerRemote = isCloudinaryDeliverUrl(effectiveSrc);
+  const shouldUnoptimize =
+    unoptimized || unoptimizedLocalDev || (!isLocal && !allowNextOptimizerRemote);
 
   return (
     <div
-      className={`relative w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-100 ${className}`}
+      className={`relative aspect-[4/3] w-full overflow-hidden rounded-card border border-border bg-surface-muted ${className}`}
     >
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
+      <Image
         src={effectiveSrc}
         alt={effectiveAlt}
-        width={width}
-        height={height}
-        className="h-56 w-full object-cover object-center sm:h-64 lg:h-80"
+        fill
+        className="object-cover object-center"
+        sizes="(max-width: 1024px) 100vw, 28rem"
+        priority={priority}
+        unoptimized={shouldUnoptimize}
         onError={handleError}
       />
     </div>

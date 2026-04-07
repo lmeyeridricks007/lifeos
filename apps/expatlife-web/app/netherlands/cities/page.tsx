@@ -4,9 +4,15 @@ import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { PillarTOC } from "@/components/content/PillarTOC";
 import { ArticleJsonLd, FaqPageJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { Container } from "@/components/ui/container";
-import { Section } from "@/components/ui/section";
-import { Accordion } from "@/components/ui/accordion";
-import { CitiesOverviewHero } from "@/src/components/cities-overview/CitiesOverviewHero";
+import { GuidePageTemplate } from "@/components/page/page-templates";
+import {
+  FAQBlock,
+  PageHero,
+  PillarGuideFaqRegion,
+  PillarGuideHeroRegion,
+  PillarGuideToolsSection,
+  ToolCard,
+} from "@/components/page/pillar-template";
 import { MajorCityCardsGrid } from "@/src/components/cities-overview/MajorCityCardsGrid";
 import { CityComparisonTable } from "@/src/components/cities-overview/CityComparisonTable";
 import { SecondaryCitiesSection } from "@/src/components/cities-overview/SecondaryCitiesSection";
@@ -14,6 +20,7 @@ import { RelatedGuidesSection } from "@/src/components/city-hub/RelatedGuidesGri
 import { OfficialSourcesList } from "@/src/components/city-hub/OfficialSourcesList";
 import { netherlandsCitiesOverview } from "@/src/data/cities-overview/netherlands-cities";
 import type { CityOfficialSource } from "@/src/lib/city-hub/types";
+import type { CitiesOverviewHero } from "@/src/lib/cities-overview/types";
 import {
   applyLiveGatesToCityComparisonRows,
   applyLiveGatesToMajorCityCards,
@@ -23,6 +30,7 @@ import { filterLiveInternalLinks, isRouteLive } from "@/src/lib/routes/routeStat
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { cn } from "@/lib/cn";
+import { siteGuideColumnPadYClass } from "@/lib/ui/site-shell-identity";
 import {
   BookOpen,
   Building2,
@@ -56,6 +64,49 @@ function exploreCardIcon(href: string): LucideIcon {
   return Compass;
 }
 
+function CitiesHubHeroCtas({ hero }: { hero: CitiesOverviewHero }) {
+  const primaryCtas = hero.ctas.filter((c) => c.primary);
+  const secondaryCtas = hero.ctas.filter((c) => !c.primary);
+  return (
+    <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center">
+      {primaryCtas.map((cta) =>
+        cta.href.startsWith("#") ? (
+          <a
+            key={cta.href}
+            href={cta.href}
+            className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl bg-copilot-primary px-5 py-2.5 text-base font-semibold text-white shadow-expatos-md transition hover:bg-copilot-primary-strong hover:shadow-expatos-hover sm:w-auto sm:px-6 sm:py-3"
+          >
+            {cta.label}
+            <span className="ml-1" aria-hidden>
+              →
+            </span>
+          </a>
+        ) : (
+          <Link
+            key={cta.href}
+            href={cta.href}
+            className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl bg-copilot-primary px-5 py-2.5 text-base font-semibold text-white shadow-expatos-md transition hover:bg-copilot-primary-strong hover:shadow-expatos-hover sm:w-auto sm:px-6 sm:py-3"
+          >
+            {cta.label}
+            <span className="ml-1" aria-hidden>
+              →
+            </span>
+          </Link>
+        )
+      )}
+      {secondaryCtas.map((cta) => (
+        <Link
+          key={cta.href}
+          href={cta.href}
+          className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl border border-slate-900/12 bg-copilot-surface px-5 py-2.5 text-sm font-semibold text-copilot-text-primary shadow-expatos-sm ring-1 ring-copilot-primary/10 hover:bg-copilot-bg-soft sm:w-auto"
+        >
+          {cta.label}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
 const baseUrl = getSiteOrigin();
 const path = netherlandsCitiesOverview.path;
 const data = netherlandsCitiesOverview;
@@ -82,11 +133,6 @@ export const revalidate = CONTENT_REVALIDATE;
 
 export default function NetherlandsCitiesPage() {
   const officialSources: CityOfficialSource[] = data.officialSources;
-  const faqAccordionItems = data.faqs.map((item, i) => ({
-    id: `faq-${i}`,
-    title: item.q,
-    content: item.a,
-  }));
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
@@ -114,6 +160,9 @@ export default function NetherlandsCitiesPage() {
       ? data.tocItems
       : data.tocItems.filter((t) => t.id !== "coming-soon-cities");
 
+  const canonicalUrl = new URL(path, baseUrl).toString();
+  const toolStrip = data.tools.slice(0, 3);
+
   return (
     <>
       <BreadcrumbJsonLd crumbs={breadcrumbCrumbs} />
@@ -131,46 +180,84 @@ export default function NetherlandsCitiesPage() {
       />
       {data.faqs?.length ? <FaqPageJsonLd items={data.faqs} /> : null}
 
-      <div className="min-h-screen">
-        <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-white py-8 sm:py-10 md:py-14">
-          <div
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(14,165,233,0.12),transparent)]"
-            aria-hidden
-          />
-          <Container className="relative w-full max-w-screen-2xl">
-            <nav aria-label="Breadcrumb" className="mb-6 text-sm text-slate-600">
+      <GuidePageTemplate
+        rootClassName="min-h-screen"
+        wrapContent={(inner) => (
+          <Container className={cn("w-full max-w-screen-2xl", siteGuideColumnPadYClass)}>{inner}</Container>
+        )}
+        hero={
+          <PillarGuideHeroRegion>
+            <nav aria-label="Breadcrumb" className="mb-4 text-sm text-copilot-text-secondary sm:mb-5">
               <ol className="flex flex-wrap items-center gap-x-2 gap-y-1">
                 <li>
-                  <Link href="/" className="hover:text-slate-900">
+                  <Link href="/" className="hover:text-copilot-text-primary">
                     Home
                   </Link>
                 </li>
-                <li aria-hidden className="text-slate-400">
+                <li aria-hidden className="text-copilot-text-muted">
                   /
                 </li>
                 <li>
-                  <Link href="/netherlands/" className="hover:text-slate-900">
+                  <Link href="/netherlands/" className="hover:text-copilot-text-primary">
                     Netherlands
                   </Link>
                 </li>
-                <li aria-hidden className="text-slate-400">
+                <li aria-hidden className="text-copilot-text-muted">
                   /
                 </li>
-                <li className="font-medium text-slate-900" aria-current="page">
+                <li className="font-medium text-copilot-text-primary" aria-current="page">
                   Cities
                 </li>
               </ol>
             </nav>
-            <CitiesOverviewHero hero={data.hero} />
-          </Container>
-        </section>
-
-        <Section contained={false} className="py-8 md:py-12">
-          <Container className="w-full max-w-screen-2xl">
+            <PageHero
+              movingPillarIdentity
+              eyebrow={data.hero.eyebrow}
+              title={data.hero.title}
+              subtitle={data.hero.subtitle}
+              shareUrl={canonicalUrl}
+              pageId={path}
+              afterSubtitle={<CitiesHubHeroCtas hero={data.hero} />}
+              heroImage={
+                data.hero.image?.src
+                  ? {
+                      src: data.hero.image.src,
+                      alt: data.hero.image.alt,
+                      caption: data.hero.image.caption,
+                      priority: true,
+                    }
+                  : null
+              }
+            />
+          </PillarGuideHeroRegion>
+        }
+        tools={
+          toolStrip.length ? (
+            <PillarGuideToolsSection
+              compact
+              id="tools"
+              title="Useful tools when comparing cities"
+              subtitle="Checklists, documents, and visa planning alongside city research."
+            >
+              {toolStrip.map((t) => (
+                <ToolCard
+                  key={t.href}
+                  title={t.label}
+                  description={t.description ?? ""}
+                  href={t.href}
+                  ctaLabel={t.status === "coming_soon" ? "Coming soon" : "Open"}
+                  compact
+                />
+              ))}
+            </PillarGuideToolsSection>
+          ) : null
+        }
+        keySections={
+          <div className="py-8 md:py-12">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,2fr),minmax(280px,1fr)]">
               <main className="min-w-0 w-full">
-                <div className="mb-8 rounded-xl border border-slate-200 bg-slate-50/50 p-4 lg:hidden">
-                  <PillarTOC items={tocItems} />
+                <div className="mb-8 rounded-xl border border-copilot-primary/[0.08] bg-copilot-bg-soft/50 p-4 lg:hidden">
+                  <PillarTOC items={tocItems} tone="support" />
                 </div>
 
                 <section id="overview" className="scroll-mt-24 space-y-6">
@@ -178,10 +265,10 @@ export default function NetherlandsCitiesPage() {
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-brand-500 to-sky-600 text-white shadow-md shadow-brand-500/25">
                       <Compass className="h-5 w-5" aria-hidden strokeWidth={2} />
                     </span>
-                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">{data.guideIntro.heading}</h2>
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">{data.guideIntro.heading}</h2>
                   </div>
                   {data.guideIntro.paragraphs.map((p, i) => (
-                    <p key={i} className="text-slate-700 leading-relaxed">
+                    <p key={i} className="text-copilot-text-secondary leading-relaxed">
                       {p}
                     </p>
                   ))}
@@ -209,9 +296,9 @@ export default function NetherlandsCitiesPage() {
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-teal-500 to-emerald-600 text-white shadow-md shadow-teal-500/20">
                       <LayoutGrid className="h-5 w-5" aria-hidden strokeWidth={2} />
                     </span>
-                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Cities Already Covered</h2>
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">Cities Already Covered</h2>
                   </div>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Each card links to a full city guide with local context for registration, housing, transport, and
                     practical next steps.
                   </p>
@@ -224,9 +311,9 @@ export default function NetherlandsCitiesPage() {
                       <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-slate-500 to-slate-700 text-white shadow-md">
                         <Building2 className="h-5 w-5" aria-hidden strokeWidth={2} />
                       </span>
-                      <h2 className="text-2xl font-semibold tracking-tight text-slate-900">More Dutch Cities Coming Soon</h2>
+                      <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">More Dutch Cities Coming Soon</h2>
                     </div>
-                    <p className="text-slate-700 leading-relaxed">
+                    <p className="text-copilot-text-secondary leading-relaxed">
                       We are expanding city-by-city guides. These destinations are common choices depending on work,
                       university, lifestyle, and budget—bookmark this hub for updates, and use the covered cities above to
                       start planning today.
@@ -243,12 +330,12 @@ export default function NetherlandsCitiesPage() {
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500 to-purple-600 text-white shadow-md shadow-violet-500/20">
                       <Scale className="h-5 w-5" aria-hidden strokeWidth={2} />
                     </span>
-                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                       How Dutch Cities Differ for Expats
                     </h2>
                   </div>
                   {data.hubComparisonIntro?.paragraphs.map((p, i) => (
-                    <p key={i} className="text-slate-700 leading-relaxed">
+                    <p key={i} className="text-copilot-text-secondary leading-relaxed">
                       {p}
                     </p>
                   ))}
@@ -294,11 +381,11 @@ export default function NetherlandsCitiesPage() {
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 text-white shadow-md shadow-amber-500/20">
                       <HeartHandshake className="h-5 w-5" aria-hidden strokeWidth={2} />
                     </span>
-                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                       Useful Services When Choosing a City
                     </h2>
                   </div>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Housing pressure, banking setup, insurance, and permit support all interact with where you settle.
                     These Netherlands service hubs help whichever city you pick.
                   </p>
@@ -345,9 +432,9 @@ export default function NetherlandsCitiesPage() {
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-sky-500 to-blue-600 text-white shadow-md shadow-sky-500/20">
                       <Compass className="h-5 w-5" aria-hidden strokeWidth={2} />
                     </span>
-                    <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Not Sure Where to Start?</h2>
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">Not Sure Where to Start?</h2>
                   </div>
-                  <p className="text-slate-700 leading-relaxed">
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Use these entry points to move from city comparison into country-wide planning and trust resources.
                   </p>
                   {exploreCards.length ? (
@@ -363,7 +450,7 @@ export default function NetherlandsCitiesPage() {
                             <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/90 text-brand-700 shadow-sm ring-1 ring-brand-100">
                               <Icon className="h-5 w-5" aria-hidden strokeWidth={2} />
                             </span>
-                            <span className="mt-4 text-lg font-semibold text-slate-900">{c.label}</span>
+                            <span className="mt-4 text-lg font-bold text-copilot-text-primary">{c.label}</span>
                             <span className="mt-2 text-sm text-slate-600">{c.description}</span>
                             <span className="mt-4 text-sm font-semibold text-brand-800">Open →</span>
                           </Link>
@@ -373,14 +460,9 @@ export default function NetherlandsCitiesPage() {
                   ) : null}
                 </section>
 
-                <section id="faq" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">FAQs</h2>
-                  <Accordion items={faqAccordionItems} allowMultiple={false} className="max-w-3xl" />
-                </section>
-
                 <section id="official-sources" className="scroll-mt-24 mt-12 space-y-6">
-                  <h2 className="text-2xl font-semibold tracking-tight text-slate-900">Official Sources</h2>
-                  <p className="text-slate-700 leading-relaxed">
+                  <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">Official Sources</h2>
+                  <p className="text-copilot-text-secondary leading-relaxed">
                     Official newcomer centres and national business context for deeper research.
                   </p>
                   <OfficialSourcesList sources={officialSources} />
@@ -390,14 +472,27 @@ export default function NetherlandsCitiesPage() {
               </main>
 
               <aside className="hidden lg:block lg:sticky lg:top-24 lg:self-start">
-                <div className="rounded-xl border border-slate-200 bg-slate-50/50 p-4">
-                  <PillarTOC items={tocItems} />
+                <div className="rounded-xl border border-copilot-primary/[0.08] bg-copilot-bg-soft/50 p-4">
+                  <PillarTOC items={tocItems} tone="support" />
                 </div>
               </aside>
             </div>
-          </Container>
-        </Section>
-      </div>
+          </div>
+        }
+        faq={
+          data.faqs?.length ? (
+            <PillarGuideFaqRegion>
+              <FAQBlock
+                id="faq"
+                eyebrow="Support"
+                title="FAQs"
+                items={data.faqs.map((f) => ({ q: f.q, a: f.a }))}
+                maxItems={Math.max(5, data.faqs.length)}
+              />
+            </PillarGuideFaqRegion>
+          ) : null
+        }
+      />
     </>
   );
 }

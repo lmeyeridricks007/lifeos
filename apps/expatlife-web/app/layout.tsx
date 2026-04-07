@@ -38,7 +38,7 @@ const rootMeta: Metadata = {
   icons: { icon: "/icon.svg" },
   manifest: "/manifest.webmanifest",
   appleWebApp: { capable: true, title: "ExpatCopilot", statusBarStyle: "default" },
-  other: { "theme-color": "#0ea5e9" },
+  other: { "theme-color": "#2563eb" },
 };
 
 const cloned = cloneSafeMetadata(rootMeta);

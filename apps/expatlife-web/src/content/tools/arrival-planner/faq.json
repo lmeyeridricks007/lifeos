@@ -20,21 +20,6 @@
     "answer": "Municipality registration, some bank onboarding paths, GP registration in some areas, school-related follow-up for families, and housing follow-up can involve appointment timing or lead time."
   },
   {
-    "id": "bsn-dependencies",
-    "question": "What depends on having a BSN?",
-    "answer": "Several admin steps become easier after BSN-related progress. This planner flags BSN dependency awareness so you can sequence your first week and first month in a practical order."
-  },
-  {
-    "id": "already-arrived-behind",
-    "question": "What if I have already arrived and feel behind?",
-    "answer": "You can still use the planner as a catch-up sequence. Pick your current address and household status, then focus on first-week priorities, appointment-sensitive items, and weekly follow-up reminders."
-  },
-  {
-    "id": "moving-with-kids-month-one",
-    "question": "Does moving with kids change the first month?",
-    "answer": "Yes. Family scenarios often add school-related awareness and extra coordination points in the first month. The planner includes these when you select a household with kids."
-  },
-  {
     "id": "legal-advice",
     "question": "Is this planner legal advice?",
     "answer": "No. It is deterministic planning guidance based on the inputs you choose. It does not replace legal, immigration, tax, or municipality-specific advice."

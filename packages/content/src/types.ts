@@ -103,6 +103,27 @@ export type PillarSectionsJson = {
     paragraph: string;
     paragraphLinkKeys?: string[];
   };
+  /** Compact gateway copy for the moving pillar “Practical essentials” block (skimmable bullets + one link each). */
+  practicalEssentials?: {
+    intro: string;
+    documents: {
+      bullets: string[];
+      primaryLinkKey: string;
+    };
+    banking: {
+      bullets: string[];
+      primaryLinkKey: string;
+    };
+    housing: {
+      bullets: string[];
+      registrationNote: string;
+      primaryLinkKey: string;
+    };
+  };
+  /** Short intro for outcome-driven scenario cards (“Choose your path”). */
+  scenarioPaths?: {
+    intro: string;
+  };
   gotchas: {
     sectionTitle: string;
     rows: Array<{ gotcha: string; fix: string; fixLinkKey?: string }>;
@@ -177,6 +198,23 @@ export type NlMovingPillarContent = {
   toolsStrip: PillarToolItem[];
   tocItems: PillarTocItem[];
   sections: PillarSectionsJson;
+};
+
+/** Slimmer pillar payload for topic flagships (housing / work / taxes) using the same thin page template as moving. */
+export type NlFlagshipPillarContent = {
+  meta: PillarMeta;
+  scenarios: PillarScenarioRaw[];
+  faq: PillarFaqItem[];
+  linkRegistry: LinkRegistry;
+  timelineStages: PillarTimelineStage[];
+  toolsStrip: PillarToolItem[];
+  sections: Pick<PillarSectionsJson, "pageHeader" | "overview" | "whoThisGuideFor" | "stepByStepSummary" | "scenarioPaths"> & {
+    practicalEssentials?: PillarSectionsJson["practicalEssentials"];
+  };
+  /** Shown in PillarGuideNextStepsRegion (first three items used). */
+  nextSteps: Array<{ label: string; href: string; description: string }>;
+  /** H2 in the dark stages band (default applied in UI if omitted). */
+  stagesTitle?: string;
 };
 
 export type HomeContent = {

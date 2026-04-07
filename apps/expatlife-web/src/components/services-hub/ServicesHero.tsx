@@ -9,14 +9,14 @@ export function ServicesHero({ hero }: { hero: ServicesHeroType }) {
   return (
     <header className="space-y-6">
       {hero.eyebrow ? (
-        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[hsl(var(--brand))]">
+        <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-copilot-text-muted">
           {hero.eyebrow}
         </p>
       ) : null}
-      <h1 className="max-w-5xl text-2xl font-semibold tracking-tight text-slate-900 sm:text-3xl md:text-4xl lg:text-5xl">
+      <h1 className="max-w-5xl text-2xl font-bold tracking-tight text-copilot-text-primary sm:text-3xl md:text-4xl lg:text-5xl">
         {hero.title}
       </h1>
-      <p className="max-w-2xl text-[0.9375rem] leading-relaxed text-slate-600 sm:max-w-3xl sm:text-base md:text-lg">
+      <p className="max-w-2xl text-[0.9375rem] leading-relaxed text-copilot-text-secondary sm:max-w-3xl sm:text-base md:text-lg">
         {hero.subtitle}
       </p>
       <div className="flex w-full min-w-0 flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap sm:items-center">
@@ -25,7 +25,7 @@ export function ServicesHero({ hero }: { hero: ServicesHeroType }) {
             <a
               key={cta.href}
               href={cta.href}
-              className="inline-flex min-h-[44px] w-full items-center justify-center rounded-lg bg-slate-900 px-5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-slate-800 sm:w-auto sm:px-6 sm:py-3"
+              className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl bg-copilot-primary px-5 py-2.5 text-base font-semibold text-white shadow-expatos-md transition hover:bg-copilot-primary-strong hover:shadow-expatos-hover sm:w-auto sm:px-6 sm:py-3"
             >
               {cta.label}
               <span className="ml-1" aria-hidden>→</span>
@@ -34,7 +34,7 @@ export function ServicesHero({ hero }: { hero: ServicesHeroType }) {
             <Link
               key={cta.href}
               href={cta.href}
-              className="inline-flex min-h-[44px] w-full items-center justify-center rounded-lg bg-slate-900 px-5 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-slate-800 sm:w-auto sm:px-6 sm:py-3"
+              className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl bg-copilot-primary px-5 py-2.5 text-base font-semibold text-white shadow-expatos-md transition hover:bg-copilot-primary-strong hover:shadow-expatos-hover sm:w-auto sm:px-6 sm:py-3"
             >
               {cta.label}
               <span className="ml-1" aria-hidden>→</span>
@@ -45,7 +45,7 @@ export function ServicesHero({ hero }: { hero: ServicesHeroType }) {
           <Link
             key={cta.href}
             href={cta.href}
-            className="inline-flex min-h-[44px] w-full items-center justify-center rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-sm font-medium text-slate-700 hover:bg-slate-50 sm:w-auto"
+            className="inline-flex min-h-[44px] w-full items-center justify-center rounded-xl border border-slate-900/12 bg-copilot-surface px-5 py-2.5 text-sm font-semibold text-copilot-text-primary shadow-expatos-sm ring-1 ring-copilot-primary/10 hover:bg-copilot-bg-soft sm:w-auto"
           >
             {cta.label}
           </Link>

@@ -1,3 +1,4 @@
+import { normalizeDomainMenuKey } from "@/src/lib/nav/navKeyCompat";
 import { getToolCategoryById, loadToolMenuFeatures, loadToolRegistry, type ToolRecord } from "@/src/lib/tools/loadToolRegistry";
 
 export function getFeaturedTools(toolIds: string[]): ToolRecord[] {
@@ -27,7 +28,8 @@ export function getTopLevelToolsMenuGroups() {
 }
 
 export function getDomainFeaturedTools(menuKey: string): { categoryId: string; tools: ToolRecord[] } | null {
-  const config = loadToolMenuFeatures().domainMenus[menuKey];
+  const resolved = normalizeDomainMenuKey(menuKey);
+  const config = loadToolMenuFeatures().domainMenus[resolved];
   if (!config) return null;
   return {
     categoryId: config.categoryId,

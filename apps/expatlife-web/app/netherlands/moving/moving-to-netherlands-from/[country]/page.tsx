@@ -16,6 +16,7 @@ import { loadTemplateData } from "@/src/lib/countries/loadCountries";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { MoveClusterOriginCountryPostFaq } from "@/src/components/monetization/MoveClusterOriginCountryPostFaq";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -166,6 +167,7 @@ export default async function CountryRoutePage({
         data={serializableData}
         affiliateBlocks={serializableBlocks}
         canonicalUrl={canonicalUrl}
+        postContentMonetization={<MoveClusterOriginCountryPostFaq />}
       />
     </>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState, useEffect, useCallback } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Search, ChevronLeft, ChevronRight, ExternalLink, MapPin, Tag, Building2, X, Banknote, CheckCircle2, Plus } from "lucide-react";
 import type { RelocationProviderRecord } from "@/src/lib/service-category/types";
@@ -21,21 +22,24 @@ function ProviderLogo({ logoUrl, name }: { logoUrl?: string; name: string }) {
   const resolvedUrl = logoUrl ? normalizeExternalProviderLogoSrc(logoUrl) : undefined;
   const showImage = resolvedUrl && !error;
   return (
-    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm ring-1 ring-slate-100">
+    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-card border border-border bg-surface-raised shadow-card ring-1 ring-border/40">
       {showImage ? (
         <>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
+          <Image
             src={resolvedUrl}
             alt=""
-            className="h-full w-full object-contain p-1.5"
+            fill
+            className="object-contain p-1.5"
             onError={() => setError(true)}
             onLoad={() => setLoaded(true)}
             referrerPolicy="no-referrer"
-            loading="lazy"
+            sizes="48px"
+            unoptimized={
+              resolvedUrl.startsWith("http") || /\.svg(\?|$)/i.test(resolvedUrl)
+            }
           />
           {!loaded && (
-            <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-slate-50 text-xs font-semibold text-slate-400">
+            <div className="absolute inset-0 flex items-center justify-center rounded-card bg-surface-muted text-xs font-semibold text-foreground-muted">
               {initials(name)}
             </div>
           )}

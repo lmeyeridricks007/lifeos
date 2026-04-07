@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
-import { ToolHero } from "@/src/components/tools/ToolHero";
-import { Section } from "@/components/ui/section";
+import { MoveHero, MoveToolSidebar } from "@/components/page/move-shell";
+import { SectionBlock } from "@/components/page/pillar-template";
 import { CardLink } from "@/components/ui/card-link";
 import { CollapsiblePanel } from "@/components/ui/collapsible-panel";
-import { PillarTOC } from "@/components/content/PillarTOC";
 import { VisaCostCalculatorClient } from "@/src/components/tools/visa-cost-calculator/VisaCostCalculatorClient";
 import { RecommendedImmigrationLawyersSection } from "@/src/components/tools/shared/RecommendedImmigrationLawyersSection";
 import { buildSoftwareApplicationSchema } from "@/src/lib/seo/toolSchema";
@@ -156,37 +155,10 @@ export default async function VisaCostCalculatorPage(props: PageProps) {
   const intro = (
     <>
       <p className="mb-3">
-        Dutch visa and residence routes involve more than one cost. Many people think only about the application fee,
-        but realistic planning also includes document preparation, translations, legalization, travel, temporary housing,
-        and first-week setup.
+        Besides IND fees, most movers budget for documents, travel, temporary housing, and first-week setup. This calculator gives route-aware planning ranges—not quotes.
       </p>
       <p className="mb-3">
-        This tool helps you estimate route-aware cost ranges before moving. It does not replace official fee lists or
-        provider quotes. Major route types include{" "}
-        <Link href={`${BASE}/visa/highly-skilled-migrant/`} className="font-medium text-brand-600 hover:underline">
-          Highly Skilled Migrant
-        </Link>
-        ,{" "}
-        <Link href={`${BASE}/visa/eu-blue-card/`} className="font-medium text-brand-600 hover:underline">
-          EU Blue Card
-        </Link>
-        ,{" "}
-        <Link href={`${BASE}/visa/dutch-american-friendship-treaty/`} className="font-medium text-brand-600 hover:underline">
-          DAFT
-        </Link>
-        ,{" "}
-        <Link href={`${BASE}/visa/self-employed-visa/`} className="font-medium text-brand-600 hover:underline">
-          Self-Employed
-        </Link>
-        ,{" "}
-        <Link href={`${BASE}/visa/student-visa/`} className="font-medium text-brand-600 hover:underline">
-          Student
-        </Link>
-        , and{" "}
-        <Link href={`${BASE}/visa/partner-family-visa/`} className="font-medium text-brand-600 hover:underline">
-          Partner / Family
-        </Link>
-        . Answer a few questions to get a personalized estimate.
+        Pick your route and situation below, then confirm official fees and provider prices before you commit.
       </p>
     </>
   );
@@ -229,10 +201,10 @@ export default async function VisaCostCalculatorPage(props: PageProps) {
 
   const primarySectionContent = (
     <div className="space-y-6">
-      {exampleScenariosBlock}
       <div>
         <VisaCostCalculatorClient key={scenarioId ?? "default"} initialPrefill={initialPrefill} />
       </div>
+      {exampleScenariosBlock}
     </div>
   );
 
@@ -253,98 +225,22 @@ export default async function VisaCostCalculatorPage(props: PageProps) {
     { id: "official-sources", label: "Official sources" },
   ];
 
-  const sidebar = (
-    <>
-      <PillarTOC items={sidebarOnThisPage} />
-      <div className="rounded-xl border border-slate-200 bg-slate-50/50 p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Tools</p>
-        <ul className="mt-3 space-y-2">
-          <li>
-            <Link href="#tool-inputs" className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Calculate my visa costs</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-          <li>
-            <Link href={`${BASE}/visa-checker/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Find my visa</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-          <li>
-            <Link href={`${BASE}/document-readiness-checker/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Check my documents</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-          <li>
-            <Link href={`${BASE}/moving/tools/relocation-cost-estimator/`} className="flex items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-800 transition hover:bg-white hover:shadow-sm">
-              <span>Estimate full relocation budget</span>
-              <span className="shrink-0 text-slate-400" aria-hidden>→</span>
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </>
-  );
+  const visaCostQuickLinks = [
+    { label: "Calculate my visa costs", href: "#tool-inputs" },
+    { label: "Find my visa", href: `${BASE}/visa-checker/` },
+    { label: "Check my documents", href: `${BASE}/document-readiness-checker/` },
+    { label: "Estimate full relocation budget", href: `${BASE}/moving/tools/relocation-cost-estimator/` },
+  ];
+
+  const sidebar = <MoveToolSidebar tocItems={sidebarOnThisPage} quickLinks={visaCostQuickLinks} />;
 
   const seoContent = (
     <div className="prose prose-slate max-w-none text-slate-600">
-      <h2 className="text-xl font-semibold text-slate-900">
-        How much does it cost to apply for a visa and move to the Netherlands?
-      </h2>
       <p>
-        Official application fees are only one part of the cost. The IND sets fees per route (e.g. €423 for work and
-        self-employed permits, €254 for study, €210 for partner/adult family). On top of that, you often need to budget
-        for document preparation—certified copies, translation, apostille or legalization—which can add hundreds of
-        euros. Travel, temporary housing, and first-week setup (bank, phone, insurance) add more. This tool combines
-        these into a single planning range.
+        IND fees are only part of the picture: documents, flights, temporary housing, and first-week setup often dominate the range. Route matters—work, study, partner, and entrepreneur paths have different fees, proof-of-funds rules, and typical extras.
       </p>
-      <h3 className="text-lg font-semibold text-slate-900">Why route type changes the budget</h3>
       <p>
-        Work routes like Highly Skilled Migrant and EU Blue Card share a similar application fee (€423) but may differ
-        in document and sponsor requirements. The self-employed and DAFT routes also use the €423 fee plus business
-        setup and, for DAFT, a minimum investment. Student and partner routes have different fee structures and
-        proof-of-funds or income requirements. Your total estimate depends on which route you choose.
-      </p>
-      <h3 className="text-lg font-semibold text-slate-900">Why family, partner, student and entrepreneur routes differ</h3>
-      <p>
-        Family and partner moves scale with the number of applicants (e.g. child fees, extra documents, more flights).
-        Student movers must plan for the study amount and first-month costs. Entrepreneur routes add business
-        registration and often legal or accountancy support. Each route has its own typical band of total planning cost.
-      </p>
-      <h3 className="text-lg font-semibold text-slate-900">Why long-haul movers often spend more</h3>
-      <p>
-        Flights from outside Europe cost more and can dominate the travel part of your estimate. Document
-        legalization and translation are more common for long-haul origins and add both cost and time. Temporary
-        housing may be needed for longer if you cannot secure a rental before arrival. Use the distance band in the
-        calculator to see how this affects your range.
-      </p>
-      <h3 className="text-lg font-semibold text-slate-900">Why temporary housing can heavily affect total cost</h3>
-      <p>
-        In large Dutch cities, short-term rentals can run from hundreds to over a thousand euros per week. If you
-        need a month or more before moving into a long-term place, this can add a significant amount to your
-        one-off costs. The calculator lets you include temporary housing so you can see a more realistic total.
-      </p>
-      <h3 className="text-lg font-semibold text-slate-900">Combine this tool with the document checker and relocation estimator</h3>
-      <p>
-        For a full picture: use the{" "}
-        <Link href={`${BASE}/document-readiness-checker/`} className="font-medium text-brand-600 hover:underline">
-          Document Readiness Checker
-        </Link>{" "}
-        to see what you still need to gather, and the{" "}
-        <Link href={`${BASE}/moving/tools/relocation-cost-estimator/`} className="font-medium text-brand-600 hover:underline">
-          Relocation Cost Estimator
-        </Link>{" "}
-        for first-year and monthly budgeting. Together they help you plan from visa choice through to arrival and
-        first months.
-      </p>
-      <h3 className="text-lg font-semibold text-slate-900">Why budget planning matters before booking or signing</h3>
-      <p>
-        Confirming your cost range before you book flights or sign a housing contract helps you avoid surprises.
-        Official fees can change; provider prices vary. Use this calculator for planning ranges, then confirm
-        current fees on the IND website and get quotes from translators, movers, and housing providers before
-        committing.
+        Long-haul moves and larger households usually cost more (flights, more documents, longer short-stay). Use the Document Readiness Checker and Relocation Cost Estimator next; confirm current IND fees and provider quotes before you book or sign.
       </p>
     </div>
   );
@@ -358,8 +254,10 @@ export default async function VisaCostCalculatorPage(props: PageProps) {
       ) : null}
 
       <ToolPageTemplate
+        movingClusterHero
         hero={
-          <ToolHero
+          <MoveHero
+            variant="tool"
             eyebrow="TOOL"
             title="Netherlands Visa Cost Calculator"
             subtitle="Estimate the likely cost of your Dutch visa or residence route, including official application fees, document preparation, route-specific extras, and practical move-related costs."
@@ -368,10 +266,6 @@ export default async function VisaCostCalculatorPage(props: PageProps) {
             secondaryCtaLabel="Find my visa first"
             secondaryCtaHref={`${BASE}/visa-checker/`}
             image={{
-              src: "/images/heroes/netherlands-visa-cost-calculator.png",
-              alt: "An expat budgets visa and relocation costs at a wooden desk by a Dutch canal-side window. A laptop displays a cost calculator, while a passport, Euro currency, and books titled 'VISA FEES' and 'RELOCATION BUDGET' are arranged on the desk.",
-            }}
-            imageFallback={{
               src: "/images/heroes/netherlands-visa-cost-calculator.png",
               alt: "An expat budgets visa and relocation costs at a wooden desk by a Dutch canal-side window. A laptop displays a cost calculator, while a passport, Euro currency, and books titled 'VISA FEES' and 'RELOCATION BUDGET' are arranged on the desk.",
             }}
@@ -466,7 +360,7 @@ export default async function VisaCostCalculatorPage(props: PageProps) {
         }
         extraSection={
           <>
-            <Section title="Related tools" contained={true}>
+            <SectionBlock id="related-tools" title="Related tools" compact className="pt-3 md:pt-4">
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {RELATED_TOOLS.map((t) => (
                   <CardLink
@@ -478,9 +372,9 @@ export default async function VisaCostCalculatorPage(props: PageProps) {
                   />
                 ))}
               </div>
-            </Section>
+            </SectionBlock>
 
-            <Section id="official-sources" title="Official sources" className="scroll-mt-24" contained={true}>
+            <SectionBlock id="official-sources" title="Official sources" className="scroll-mt-24">
               <p className="mb-4 text-sm text-slate-600">
                 Confirm exact fees and requirements with these official resources.
               </p>
@@ -498,7 +392,7 @@ export default async function VisaCostCalculatorPage(props: PageProps) {
                   </li>
                 ))}
               </ul>
-            </Section>
+            </SectionBlock>
           </>
         }
       >

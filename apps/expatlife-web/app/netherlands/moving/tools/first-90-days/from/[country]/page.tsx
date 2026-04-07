@@ -5,6 +5,7 @@ import { getCountryLandingContent, getSupportedOriginCountrySlugs, isValidToolCo
 import { getOriginCountryLabel } from "@/src/lib/tools/shared/toolCountryContext";
 import { FIRST_90_DAYS_RELATED_GUIDES } from "@/src/lib/tools/shared/toolInternalLinks";
 import { buildBreadcrumbSchema, getToolBreadcrumbItems } from "@/src/lib/seo/breadcrumbSchema";
+import { buildToolCountryLandingPageMetadata } from "@/lib/seo/toolCountryLandingMetadata";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
@@ -21,20 +22,17 @@ export async function generateStaticParams() {
   return getSupportedOriginCountrySlugs().map((country) => ({ country }));
 }
 
-/** Return plain JSON-serializable metadata only to avoid DataCloneError in Next.js metadata resolution. */
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const country = typeof params === "object" && "then" in params ? (await params).country : params.country;
   const label = getOriginCountryLabel(country);
   const title = `${TOOL_NAME} for the Netherlands — from ${label} (Free Tool)`;
   const description = `Settling in the Netherlands from ${label}? Plan your first 90 days: DigiD, healthcare, transport, and daily routines.`;
   const canonical = `${TOOL_PATH}from/${country}/`;
-  const raw = {
-    title: String(title),
-    description: String(description),
-    alternates: { canonical: String(canonical) },
-    openGraph: { title: String(title), description: String(description), url: String(canonical) },
-  };
-  return JSON.parse(JSON.stringify(raw)) as Metadata;
+  return buildToolCountryLandingPageMetadata({
+    canonicalPath: canonical,
+    title,
+    description,
+  });
 }
 
 export default async function First90DaysFromCountryPage(props: PageProps) {

@@ -17,7 +17,7 @@ export function OfficialSourcesList({ sources }: { sources: CityOfficialSource[]
     <div className="space-y-6">
       {Object.entries(byCategory).map(([category, items]) => (
         <div key={category}>
-          <h3 className="text-base font-semibold text-slate-900">{category}</h3>
+          <h3 className="text-base font-bold text-copilot-text-primary">{category}</h3>
           <ul className="mt-3 space-y-2">
             {items.map((src) => (
               <li key={src.url}>
@@ -27,10 +27,12 @@ export function OfficialSourcesList({ sources }: { sources: CityOfficialSource[]
                   rel="noopener noreferrer"
                   linkType="official_source"
                   linkText={src.label}
-                  className="text-sm font-medium text-brand-700 hover:text-brand-800 underline"
+                  className="text-sm font-semibold text-copilot-primary hover:text-copilot-primary-strong hover:underline"
                 >
                   {src.label}
-                  <span className="ml-1" aria-hidden>→</span>
+                  <span className="ml-1" aria-hidden>
+                    →
+                  </span>
                 </TrackedExternalLink>
               </li>
             ))}

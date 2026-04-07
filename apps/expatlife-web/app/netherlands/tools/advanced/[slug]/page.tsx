@@ -1,19 +1,19 @@
+import type { Metadata } from "next";
 import {
+  generatePlaceholderToolPageMetadata,
   getPlaceholderStaticParams,
-  placeholderToolRobots,
   renderPlaceholderPage,
 } from "@/src/lib/tools/placeholderRouteFactory";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
-export const metadata = {
-  title: "Advanced AI Tool (Coming Soon)",
-  description: "Advanced AI tool page for future premium ExpatCopilot experiences.",
-  robots: placeholderToolRobots,
-};
 
 type Props = { params: Promise<{ slug: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  return generatePlaceholderToolPageMetadata("premium-later", params);
+}
 
 export function generateStaticParams() {
   return getPlaceholderStaticParams("premium-later");

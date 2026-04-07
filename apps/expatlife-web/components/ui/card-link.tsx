@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/cn";
+import { Badge } from "@/components/ui/badge";
+import { transitionInteractive, transitionTransform } from "@/lib/ui/interaction";
 
 type CardLinkProps = {
   href: string;
@@ -12,6 +16,8 @@ type CardLinkProps = {
   badge?: ReactNode;
   status?: "coming_soon";
   className?: string;
+  /** Fires before navigation (e.g. analytics). */
+  onClick?: () => void;
 };
 
 function CardContent({
@@ -30,34 +36,51 @@ function CardContent({
   meta?: string;
 }) {
   return (
-    <div className="flex items-start justify-between gap-3">
-      <div className="space-y-2">
-        <div className="flex items-center gap-2">
+    <div className="flex min-w-0 items-start justify-between gap-3">
+      <div className="min-w-0 flex-1 space-y-2 break-words">
+        <div className="flex flex-wrap items-center gap-2">
           {icon ? (
-            <div className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-50 text-brand-700">{icon}</div>
+            <div className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-brand-muted text-brand-strong">
+              {icon}
+            </div>
           ) : null}
           {badge ? (
-            <span className="rounded-full bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-600">{badge}</span>
+            typeof badge === "string" ? (
+              <Badge variant="outline" className="font-medium">
+                {badge}
+              </Badge>
+            ) : (
+              badge
+            )
           ) : null}
           {status === "coming_soon" ? (
-            <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800">Coming soon</span>
+            <Badge variant="emphasis" className="font-semibold">
+              Coming soon
+            </Badge>
           ) : null}
         </div>
-        <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
-        <p className="text-sm text-slate-600">{description}</p>
-        {meta ? <p className="text-xs font-medium text-slate-500">{meta}</p> : null}
+        <h3 className="text-lg font-semibold text-foreground">{title}</h3>
+        <p className="text-sm text-foreground-muted">{description}</p>
+        {meta ? <p className="text-xs font-medium text-foreground-faint">{meta}</p> : null}
       </div>
       {status !== "coming_soon" ? (
-        <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-slate-400 transition group-hover:translate-x-1 group-hover:text-brand-700" />
+        <ArrowRight
+          className={cn(
+            "mt-1 h-4 w-4 shrink-0 text-foreground-faint ease-out group-hover:text-brand-strong",
+            transitionTransform,
+            "motion-reduce:group-hover:translate-x-0 group-hover:translate-x-0.5"
+          )}
+        />
       ) : null}
     </div>
   );
 }
 
-export function CardLink({ href, title, description, icon, meta, badge, status, className }: CardLinkProps) {
+export function CardLink({ href, title, description, icon, meta, badge, status, className, onClick }: CardLinkProps) {
   const isComingSoon = status === "coming_soon";
   const baseClass = cn(
-    "group block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow",
+    transitionInteractive,
+    "group block rounded-card border border-border bg-surface-raised p-card-pad shadow-card ease-out hover:border-border-strong hover:shadow-card-hover motion-reduce:hover:shadow-card active:brightness-[0.995] motion-reduce:active:brightness-100",
     isComingSoon && "cursor-default opacity-90",
     className
   );
@@ -68,7 +91,7 @@ export function CardLink({ href, title, description, icon, meta, badge, status, 
     return <div className={baseClass}>{content}</div>;
   }
   return (
-    <Link href={href} className={baseClass}>
+    <Link href={href} className={baseClass} onClick={onClick}>
       {content}
     </Link>
   );

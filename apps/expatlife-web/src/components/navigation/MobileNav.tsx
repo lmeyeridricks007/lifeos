@@ -28,7 +28,7 @@ export function MobileNav({
         type="button"
         onClick={onOpenSearch}
         aria-label="Open search"
-        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"
+        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-border bg-surface-raised text-foreground-muted shadow-card transition-colors duration-150 hover:border-border-strong hover:bg-surface-muted hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/25 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas"
       >
         <Search className="h-5 w-5" />
       </button>
@@ -38,13 +38,25 @@ export function MobileNav({
         aria-expanded={drawerOpen}
         aria-controls="mobile-nav-drawer"
         aria-label="Open menu"
-        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2"
+        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-border bg-surface-raised text-foreground-muted shadow-card transition-colors duration-150 hover:border-border-strong hover:bg-surface-muted hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/25 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas"
       >
         <Menu className="h-5 w-5" />
       </button>
-      <Link href="/netherlands/moving/tools/moving-checklist" className="min-w-0 shrink">
-        <Button className="max-w-[9.5rem] truncate px-3 text-xs sm:max-w-none sm:px-4 sm:text-sm">Get a checklist</Button>
-      </Link>
+      <div className="flex min-w-0 max-w-[14rem] shrink gap-1.5 sm:max-w-none sm:gap-2">
+        <Link href="/netherlands/moving-to-the-netherlands/" className="min-w-0 flex-1">
+          <Button
+            variant="secondary"
+            className="h-11 w-full justify-center truncate px-2 text-[11px] font-semibold shadow-card sm:px-3 sm:text-xs"
+          >
+            Guide
+          </Button>
+        </Link>
+        <Link href="/netherlands/moving/tools/moving-checklist" className="min-w-0 flex-1">
+          <Button className="h-11 w-full justify-center truncate px-2 text-[11px] font-semibold shadow-card sm:px-3 sm:text-xs">
+            Checklist
+          </Button>
+        </Link>
+      </div>
       <MobileNavDrawer
         isOpen={drawerOpen}
         onClose={onDrawerClose}

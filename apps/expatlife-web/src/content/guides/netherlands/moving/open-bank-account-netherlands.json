@@ -3,8 +3,8 @@
   "path": "/netherlands/open-bank-account-netherlands/",
   "title": "Open a Bank Account in the Netherlands",
   "metaTitle": "Open a Bank Account in the Netherlands | Expat Banking Guide",
-  "subtitle": "A practical guide for expats opening a Dutch bank account, including requirements, BSN rules, bank comparisons, and the best options for internationals.",
-  "description": "Learn how to open a bank account in the Netherlands as an expat. Requirements, BSN rules, costs, best banks, and practical tips for setting up your finances after arrival.",
+  "subtitle": "A practical guide for expats opening a Dutch bank account, including requirements, BSN rules, bank comparisons, and common choices internationals weigh up.",
+  "description": "Learn how to open a bank account in the Netherlands as an expat. Requirements, BSN rules, costs, banks expats often compare, and practical tips for setting up your finances after arrival.",
   "breadcrumbLabel": "Open a Bank Account",
   "hero": {
     "eyebrow": "BANKING SETUP",
@@ -31,7 +31,7 @@
     { "id": "why-expats-need", "label": "Why expats need a Dutch bank account" },
     { "id": "requirements", "label": "Requirements to open an account" },
     { "id": "bsn", "label": "Do you need a BSN first?" },
-    { "id": "best-banks", "label": "Best banks for expats" },
+    { "id": "best-banks", "label": "Banks expats often compare" },
     { "id": "bank-comparison", "label": "Comparison of major banks" },
     { "id": "traditional-vs-digital", "label": "Traditional vs digital banks" },
     { "id": "business-accounts", "label": "Business bank accounts" },
@@ -136,12 +136,12 @@
     },
     {
       "id": "best-banks",
-      "heading": "Best Banks in the Netherlands for Expats",
+      "heading": "Banks in the Netherlands expats often use",
       "body": [
         "The table below compares expat-friendly options. Digital banks often allow faster onboarding and may be easier if you are still waiting for documents or prefer a mobile-first setup."
       ],
       "table": {
-        "headers": ["Bank", "Type", "Monthly Fee", "English Support", "Best For"],
+        "headers": ["Bank", "Type", "Monthly Fee", "English Support", "Good fit for"],
         "rows": [
           ["ABN AMRO", "Traditional bank", "~€4/month", "Yes", "Expats and international workers"],
           ["ING", "Traditional bank", "~€3–€4/month", "Yes", "Large branch network"],
@@ -279,7 +279,7 @@
           "cons": [
             "Not a full bank; no iDEAL or full Dutch banking suite",
             "Some employers or landlords may prefer a traditional bank IBAN",
-            "Best used alongside a Dutch bank for local payments"
+            "Often paired with a Dutch bank for iDEAL and local debits"
           ],
           "typicalCosts": "No monthly account fee; pay per transfer and conversion; card and other fees apply depending on use.",
           "websiteUrl": "https://wise.com/",

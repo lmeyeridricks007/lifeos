@@ -6,11 +6,12 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { ChevronDown, X } from "lucide-react";
 import { cn } from "@/lib/cn";
-import { COUNTRIES, MEGA_MENUS, TOP_NAV } from "@/src/lib/nav/config";
+import { COUNTRIES, getActiveNavKey, MEGA_MENUS, TOP_NAV } from "@/src/lib/nav/config";
 import { getCountryFromPath, replaceCountryInPath } from "@/src/lib/nav/country";
 import type { CountrySlug, TopNavKey } from "@/src/lib/nav/types";
+import { isNavHrefActive } from "@/src/lib/nav/navItemModel";
 import { Button } from "@/components/ui/button";
-import { ComingSoonBadge } from "@/components/ui/coming-soon-badge";
+import { NavMenuItemRow } from "@/src/components/navigation/NavMenuItemRow";
 
 type MobileNavDrawerProps = {
   isOpen: boolean;
@@ -18,14 +19,8 @@ type MobileNavDrawerProps = {
   onOpenSearch: () => void;
 };
 
-function isItemActive(pathname: string, href: string | undefined): boolean {
-  if (!href) return false;
-  if (pathname === href) return true;
-  if (href !== "/" && pathname.startsWith(href + "/")) return true;
-  const pathSlug = pathname.split("/").filter(Boolean).pop() ?? "";
-  const hrefSlug = href.split("/").filter(Boolean).pop() ?? "";
-  if (pathSlug && pathSlug === hrefSlug && pathname.includes("/netherlands/")) return true;
-  return false;
+function topLevelActive(pathname: string, href: string | undefined): boolean {
+  return isNavHrefActive(pathname, href);
 }
 
 export function MobileNavDrawer({ isOpen, onClose, onOpenSearch }: MobileNavDrawerProps) {
@@ -88,31 +83,34 @@ export function MobileNavDrawer({ isOpen, onClose, onOpenSearch }: MobileNavDraw
 
   if (!isOpen) return null;
 
+  const activeNavKey = getActiveNavKey(pathname);
+
   const drawerContent = (
     <>
       <div
-        className="fixed inset-0 z-[99] bg-slate-900/40 backdrop-blur-sm"
+        className="fixed inset-0 z-[99] bg-foreground/20 backdrop-blur-sm"
         aria-hidden
         onClick={onClose}
       />
       <div
         ref={panelRef}
+        id="mobile-nav-drawer"
         role="dialog"
         aria-modal="true"
         aria-label="Mobile menu"
         className={cn(
-          "fixed inset-0 right-0 top-0 z-[100] flex h-full min-h-[100dvh] w-full max-w-sm flex-col border-l border-slate-200 bg-white pt-safe shadow-xl",
+          "fixed inset-0 right-0 top-0 z-[100] flex h-full min-h-[100dvh] w-full max-w-sm flex-col border-l border-border bg-surface-raised pt-safe shadow-popover",
           "pl-[env(safe-area-inset-left,0px)] pr-[env(safe-area-inset-right,0px)]"
         )}
         style={{ left: "auto" }}
       >
-        <div className="flex min-h-[3.25rem] shrink-0 items-center justify-between border-b border-slate-200 px-4">
-          <span className="text-sm font-semibold text-slate-900">Menu</span>
+        <div className="flex min-h-[3.25rem] shrink-0 items-center justify-between border-b border-border bg-surface-muted/30 px-4">
+          <span className="text-sm font-semibold text-foreground">Menu</span>
           <button
             type="button"
             onClick={onClose}
             aria-label="Close menu"
-            className="-mr-1 flex h-11 w-11 items-center justify-center rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500"
+            className="-mr-1 flex h-11 w-11 items-center justify-center rounded-lg text-foreground-muted transition-colors duration-150 hover:bg-surface-muted hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/25 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas"
           >
             <X className="h-5 w-5" />
           </button>
@@ -125,17 +123,22 @@ export function MobileNavDrawer({ isOpen, onClose, onOpenSearch }: MobileNavDraw
                 const menu = MEGA_MENUS[entry.key];
                 const hasSubmenu = menu.sections.length > 0;
                 const isExpanded = expandedKey === entry.key;
+                const isSectionActive = activeNavKey === entry.key;
+                const fallbackHref = entry.href ?? "/netherlands";
+                const fallbackActive = topLevelActive(pathname, fallbackHref);
 
                 if (entry.href && !hasSubmenu) {
-                  const active = isItemActive(pathname, entry.href);
+                  const active = topLevelActive(pathname, entry.href);
                   return (
-                    <li key={entry.key}>
+                    <li key={entry.key} data-top-nav-key={entry.key}>
                       <Link
                         href={entry.href}
+                        data-top-nav-key={entry.key}
                         onClick={onClose}
+                        aria-current={active ? "page" : undefined}
                         className={cn(
                           "block min-h-[44px] rounded-xl px-3 py-3 text-sm font-semibold leading-snug",
-                          active ? "bg-brand-50 text-brand-700" : "text-slate-800 hover:bg-slate-100"
+                          active ? "bg-brand-muted text-brand-strong shadow-sm ring-1 ring-brand/15" : "text-foreground hover:bg-surface-muted"
                         )}
                       >
                         {entry.label}
@@ -145,22 +148,30 @@ export function MobileNavDrawer({ isOpen, onClose, onOpenSearch }: MobileNavDraw
                 }
 
                 return (
-                  <li key={entry.key}>
+                  <li key={entry.key} data-top-nav-key={entry.key}>
                     {hasSubmenu ? (
                       <>
                         <button
                           type="button"
+                          data-top-nav-key={entry.key}
                           onClick={() => setExpandedKey(isExpanded ? null : entry.key)}
                           aria-expanded={isExpanded}
                           aria-controls={`mobile-nav-${entry.key}`}
+                          aria-current={isSectionActive ? "true" : undefined}
                           id={`mobile-nav-trigger-${entry.key}`}
                           className={cn(
-                            "flex min-h-[44px] w-full items-center justify-between gap-2 rounded-xl px-3 py-3 text-left text-sm font-semibold text-slate-800 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-inset"
+                            "flex min-h-[44px] w-full items-center justify-between gap-2 rounded-xl px-3 py-3 text-left text-sm font-semibold transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/25 focus-visible:ring-inset",
+                            isSectionActive
+                              ? "bg-brand-muted text-brand-strong shadow-sm ring-1 ring-brand/15"
+                              : "text-foreground hover:bg-surface-muted"
                           )}
                         >
                           {entry.label}
                           <ChevronDown
-                            className={cn("h-4 w-4 shrink-0 text-slate-500 transition", isExpanded && "rotate-180")}
+                            className={cn(
+                              "h-4 w-4 shrink-0 text-foreground-faint transition-transform duration-150",
+                              isExpanded && "rotate-180"
+                            )}
                           />
                         </button>
                         <div
@@ -170,59 +181,34 @@ export function MobileNavDrawer({ isOpen, onClose, onOpenSearch }: MobileNavDraw
                           hidden={!isExpanded}
                           className="overflow-hidden"
                         >
-                          <ul className="border-l-2 border-slate-200 py-2 pl-4 pr-3">
+                          <ul className="border-l-2 border-brand/20 py-2 pl-4 pr-3">
                             {menu.sections.flatMap((section) =>
-                              section.items.map((item, i) => {
-                                const href = item.href;
-                                const active = isItemActive(pathname, href);
-                                const locked = item.disabled || !href;
-                                return (
-                                  <li key={`${section.title}-${item.label}-${i}`}>
-                                    {locked ? (
-                                      <span
-                                        className="block min-h-[44px] cursor-not-allowed rounded-lg px-2 py-2.5 -mx-2 text-sm leading-snug text-slate-400"
-                                        aria-disabled="true"
-                                      >
-                                        {item.label}
-                                        {item.badge ? (
-                                          <span className="ml-2 inline-flex rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] font-semibold text-amber-800">
-                                            {item.badge}
-                                          </span>
-                                        ) : (
-                                          <ComingSoonBadge className="ml-2 align-middle" />
-                                        )}
-                                      </span>
-                                    ) : (
-                                      <Link
-                                        href={href}
-                                        onClick={onClose}
-                                        className={cn(
-                                          "block min-h-[44px] rounded-lg px-2 py-2.5 -mx-2 text-sm leading-snug",
-                                          active
-                                            ? "font-semibold text-brand-700 bg-brand-50"
-                                            : "text-slate-700 hover:bg-slate-100"
-                                        )}
-                                      >
-                                        {item.label}
-                                        {item.badge ? (
-                                          <span className="ml-2 inline-flex rounded-full bg-amber-100 px-1.5 py-0.5 text-[10px] font-semibold text-amber-800">
-                                            {item.badge}
-                                          </span>
-                                        ) : null}
-                                      </Link>
-                                    )}
-                                  </li>
-                                );
-                              })
+                              section.items.map((navItem, i) => (
+                                <li key={`${section.title}-${navItem.label}-${i}`}>
+                                  <NavMenuItemRow
+                                    item={navItem}
+                                    pathname={pathname}
+                                    variant="mobile"
+                                    onNavigate={onClose}
+                                  />
+                                </li>
+                              ))
                             )}
                           </ul>
                         </div>
                       </>
                     ) : (
                       <Link
-                        href={entry.href ?? "/netherlands"}
+                        href={fallbackHref}
+                        data-top-nav-key={entry.key}
                         onClick={onClose}
-                        className="block min-h-[44px] rounded-xl px-3 py-3 text-sm font-semibold leading-snug text-slate-800 hover:bg-slate-100"
+                        aria-current={fallbackActive ? "page" : undefined}
+                        className={cn(
+                          "block min-h-[44px] rounded-xl px-3 py-3 text-sm font-semibold leading-snug",
+                          fallbackActive
+                            ? "bg-brand-muted text-brand-strong shadow-sm ring-1 ring-brand/15"
+                            : "text-foreground hover:bg-surface-muted"
+                        )}
                       >
                         {entry.label}
                       </Link>
@@ -233,14 +219,14 @@ export function MobileNavDrawer({ isOpen, onClose, onOpenSearch }: MobileNavDraw
             </ul>
           </nav>
 
-          <div className="mt-6 border-t border-slate-200 px-4 pt-4">
-            <label className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
+          <div className="mt-6 border-t border-border px-4 pt-5">
+            <label className="block text-[11px] font-bold uppercase tracking-[0.12em] text-foreground-muted">
               Country
             </label>
             <select
               value={country}
               onChange={handleCountryChange}
-              className="mt-2 min-h-[44px] w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-base text-slate-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20 sm:text-sm"
+              className="mt-2 min-h-[44px] w-full rounded-xl border border-border bg-surface-raised px-3 py-2 text-base text-foreground shadow-card transition-colors duration-150 focus:border-brand-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/25 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas sm:text-sm"
               aria-label="Select country"
             >
               {COUNTRIES.map((opt) => (
@@ -251,18 +237,23 @@ export function MobileNavDrawer({ isOpen, onClose, onOpenSearch }: MobileNavDraw
             </select>
           </div>
 
-          <div className="mt-4 flex flex-col gap-2 px-4">
+          <div className="mt-4 flex flex-col gap-2.5 px-4 pb-safe">
             <button
               type="button"
               onClick={() => {
                 onClose();
                 onOpenSearch();
               }}
-              className="flex min-h-[44px] items-center gap-2 rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-left text-sm font-medium text-slate-700 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-brand-500"
+              className="flex min-h-[44px] items-center gap-2 rounded-xl border border-border bg-surface-muted px-3 py-3 text-left text-sm font-medium text-foreground-muted transition-colors duration-150 hover:border-border-strong hover:bg-surface-subtle hover:text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/25 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas"
               aria-label="Open search"
             >
               Search guides and tools
             </button>
+            <Link href="/netherlands/moving-to-the-netherlands/" onClick={onClose}>
+              <Button variant="secondary" className="w-full">
+                Guide
+              </Button>
+            </Link>
             <Link href="/netherlands/moving/tools/moving-checklist" onClick={onClose}>
               <Button className="w-full">Get a checklist</Button>
             </Link>

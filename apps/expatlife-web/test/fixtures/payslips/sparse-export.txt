@@ -1,0 +1,4 @@
+Payment
+Gross salary 4.100,00
+Wage tax 900,00
+Net pay 3.200,00

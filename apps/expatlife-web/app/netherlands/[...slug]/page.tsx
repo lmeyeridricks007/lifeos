@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ComingSoonPage } from "@/src/components/content/ComingSoonPage";
 import { GuidePageTemplate } from "@/src/components/guides/GuidePageTemplate";
+import {
+  GuideHighIntentPostFaqMonetization,
+  buildNetherlandsGuideAffiliateSlots,
+  guideHasMonetizationAfterContent,
+} from "@/src/components/monetization";
+import { MoveClusterSelectiveSetupMonetization } from "@/src/components/monetization/MoveClusterSelectiveSetupMonetization";
+import { shouldRenderSelectiveSetupMonetization } from "@/src/lib/monetization/moveClusterPostFaqPolicy";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import {
@@ -78,6 +85,8 @@ export default async function NetherlandsCatchAllPage({ params }: Props) {
     // Ensure props are plain serializable (avoid DataCloneError when Next serializes RSC payload).
     const serializableData = JSON.parse(JSON.stringify(data));
     const serializableBlocks = JSON.parse(JSON.stringify(affiliateBlocks));
+    const { contextualAffiliateAfterFirstSection, contextualAffiliateBeforeNextSteps } =
+      buildNetherlandsGuideAffiliateSlots(guideSlug, data.path);
 
     return (
       <>
@@ -95,6 +104,15 @@ export default async function NetherlandsCatchAllPage({ params }: Props) {
           data={serializableData}
           affiliateBlocks={serializableBlocks}
           canonicalUrl={new URL(data.path.startsWith("/") ? data.path : `/${data.path}`, baseUrl).toString()}
+          postContentMonetization={
+            guideHasMonetizationAfterContent(guideSlug) ? (
+              <GuideHighIntentPostFaqMonetization slug={guideSlug} pageSlugPath={data.path} />
+            ) : shouldRenderSelectiveSetupMonetization(guideSlug) ? (
+              <MoveClusterSelectiveSetupMonetization slug={guideSlug} />
+            ) : undefined
+          }
+          contextualAffiliateAfterFirstSection={contextualAffiliateAfterFirstSection}
+          contextualAffiliateBeforeNextSteps={contextualAffiliateBeforeNextSteps}
         />
       </>
     );

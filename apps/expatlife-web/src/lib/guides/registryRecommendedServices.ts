@@ -201,11 +201,6 @@ export const GUIDE_SECTION_REGISTRY_DEFAULTS: Record<string, GuideSectionRegistr
     limit: 3,
     strategy: "sequential",
   },
-  "bringing-pets-to-netherlands:pet-friendly-housing": {
-    categories: ["housing-platforms"],
-    limit: 3,
-    strategy: "sequential",
-  },
   "can-i-open-bank-account-before-bsn:why-bsn-matters": {
     categories: ["banks"],
     limit: 3,
@@ -266,7 +261,7 @@ export const GUIDE_SECTION_REGISTRY_DEFAULTS: Record<string, GuideSectionRegistr
     limit: 6,
     strategy: "round-robin",
   },
-  "health-insurance-netherlands:compare-major": {
+  "health-insurance-netherlands:provider-directory": {
     categories: ["health-insurance"],
     limit: 3,
     strategy: "sequential",

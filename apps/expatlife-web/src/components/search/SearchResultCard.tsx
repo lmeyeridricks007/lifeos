@@ -5,6 +5,8 @@ import Link from "next/link";
 import { FileText } from "lucide-react";
 import { cn } from "@/lib/cn";
 import type { SearchResult } from "@/src/lib/search/searchDocument";
+import { isComingSoonContent } from "@/src/lib/content/contentPublishStatus";
+import { ComingSoonBadge } from "@/components/ui/coming-soon-badge";
 import { SearchBadge } from "./SearchBadge";
 
 export function SearchResultCard({ result, className }: { result: SearchResult; className?: string }) {
@@ -39,8 +41,11 @@ export function SearchResultCard({ result, className }: { result: SearchResult; 
             <span className="truncate text-xs font-medium text-slate-500">{result.section}</span>
           ) : null}
         </div>
-        <h3 className="mt-2 break-words text-base font-semibold leading-snug text-slate-900 group-hover:text-brand-800 sm:text-lg">
-          {result.title}
+        <h3 className="mt-2 flex flex-wrap items-center gap-2 break-words text-base font-semibold leading-snug text-slate-900 group-hover:text-brand-800 sm:text-lg">
+          <span>{result.title}</span>
+          {result.contentPublishStatus && isComingSoonContent(result.contentPublishStatus) ? (
+            <ComingSoonBadge label="Expanding" className="normal-case" />
+          ) : null}
         </h3>
         {result.description ? (
           <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-slate-600">{result.description}</p>

@@ -56,7 +56,6 @@ export const netherlandsServicesPage: ServicesHubPageData = {
 
   tocItems: [
     { id: "intro", label: "How to Use This Directory" },
-    { id: "featured-services", label: "Featured Services" },
     { id: "service-categories", label: "Service Categories" },
     { id: "by-stage", label: "Services by Relocation Stage" },
     { id: "popular-needs", label: "Most Common Service Needs" },
@@ -66,7 +65,6 @@ export const netherlandsServicesPage: ServicesHubPageData = {
     { id: "related-guides", label: "Useful Netherlands Guides" },
     { id: "tools", label: "Useful Tools" },
     { id: "faq", label: "FAQs" },
-    { id: "browse-all", label: "Browse All Categories" },
   ],
 
   intro: {

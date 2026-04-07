@@ -101,7 +101,7 @@ export function SearchFieldWithPreview({ variant, id, initialQuery = "", onNavig
     return (
       <div ref={rootRef} className={cn("relative", className)}>
         <form onSubmit={handleSubmit} role="search" className="relative">
-          <Search className="pointer-events-none absolute left-3 top-1/2 z-10 h-4 w-4 -translate-y-1/2 text-slate-400" />
+          <Search className="pointer-events-none absolute left-3 top-1/2 z-10 h-4 w-4 -translate-y-1/2 text-foreground-faint" />
           <input
             id={id}
             type="search"
@@ -113,7 +113,7 @@ export function SearchFieldWithPreview({ variant, id, initialQuery = "", onNavig
             placeholder="Search guides and tools"
             aria-label="Search guides and tools"
             aria-autocomplete="list"
-            className="min-h-[44px] w-56 rounded-xl border border-slate-200 bg-white py-2 pl-9 pr-3 text-base placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500 sm:text-sm"
+            className="h-11 min-h-[44px] w-[15.5rem] rounded-xl border border-border bg-surface-raised py-2 pl-9 pr-3 text-sm text-foreground placeholder:text-foreground-faint shadow-card transition-[border-color,box-shadow] duration-150 focus:border-brand-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/25 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas sm:w-56"
           />
           {hits ? (
             <div className="absolute left-0 right-0 top-[calc(100%+0.35rem)] z-[100] min-w-[min(100vw-2rem,22rem)] max-w-[calc(100vw-2rem)] sm:min-w-[20rem]">
