@@ -3,7 +3,7 @@ import { DEFAULT_COL_INPUT, type ColInput } from "@/src/lib/calculators/cost-of-
 const STORAGE_KEY_V2 = "expatcopilot-nl-col-v2";
 const STORAGE_KEY_V1 = "expatcopilot-nl-col-v1";
 
-const CITIES = new Set<ColInput["city"]>([
+const COL_CITIES = [
   "amsterdam",
   "rotterdam",
   "the-hague",
@@ -14,7 +14,9 @@ const CITIES = new Set<ColInput["city"]>([
   "groningen",
   "leiden",
   "other",
-]);
+] as const satisfies ReadonlyArray<ColInput["city"]>;
+
+const COL_CITY_SET = new Set<ColInput["city"]>(COL_CITIES);
 
 function clampInt(n: number, min: number, max: number): number {
   if (!Number.isFinite(n)) return min;
@@ -76,7 +78,7 @@ export function sanitizeCostOfLivingInput(partial: Partial<ColInput> | null | un
         : null;
 
   return {
-    city: pickEnum(p.city, [...CITIES] as ColInput["city"][], base.city),
+    city: pickEnum(p.city, COL_CITIES as readonly ColInput["city"][], base.city),
     neighborhood: pickEnum(p.neighborhood, ["center", "outside", "commuter"] as const, base.neighborhood),
     householdPreset: pickEnum(p.householdPreset, ["single", "couple", "family1", "family2", "custom"] as const, base.householdPreset),
     adultsCount: clampInt(Number(p.adultsCount ?? base.adultsCount), 1, 5),
@@ -136,7 +138,7 @@ export function parseCostOfLivingSearchParams(searchParams: URLSearchParams): Pa
 function migrateLegacySearchParams(sp: URLSearchParams): Partial<ColInput> {
   const partial: Partial<ColInput> = {};
   const city = sp.get("city");
-  if (city && CITIES.has(city as ColInput["city"])) partial.city = city as ColInput["city"];
+  if (city && COL_CITY_SET.has(city as ColInput["city"])) partial.city = city as ColInput["city"];
   const household = sp.get("household");
   if (household === "single") partial.householdPreset = "single";
   if (household === "couple") partial.householdPreset = "couple";
@@ -200,7 +202,7 @@ export function loadCostOfLivingFromStorage(): Partial<ColInput> | null {
 
 function migrateV1Object(o: Record<string, unknown>): Partial<ColInput> {
   const p: Partial<ColInput> = {};
-  if (typeof o.city === "string" && CITIES.has(o.city as ColInput["city"])) p.city = o.city as ColInput["city"];
+  if (typeof o.city === "string" && COL_CITY_SET.has(o.city as ColInput["city"])) p.city = o.city as ColInput["city"];
   if (o.householdType === "single") p.householdPreset = "single";
   if (o.householdType === "couple") p.householdPreset = "couple";
   if (o.householdType === "family") {
