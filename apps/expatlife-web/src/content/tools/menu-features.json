@@ -36,7 +36,7 @@
     },
     {
       "categoryId": "housing",
-      "featuredToolIds": ["dutch-rental-budget-calculator", "buy-vs-rent-calculator", "mortgage-eligibility-estimator"]
+      "featuredToolIds": ["rent-affordability-calculator", "dutch-rental-budget-calculator", "buy-vs-rent-calculator", "mortgage-eligibility-estimator"]
     },
     {
       "categoryId": "transport",
@@ -77,6 +77,7 @@
         "moving-checklist",
         "visa-application-plan",
         "relocation-cost-estimator",
+        "rent-affordability-calculator",
         "expat-cost-of-living-calculator",
         "visa-checker",
         "visa-cost-calculator",
@@ -90,7 +91,6 @@
         "thirty-percent-ruling-calculator",
         "dutch-salary-net-calculator",
         "expat-cost-of-living-calculator",
-        "rent-affordability-calculator",
         "job-offer-comparison-tool",
         "employment-contract-risk-scanner",
         "payslip-decoder"
@@ -109,6 +109,7 @@
     "living": {
       "categoryId": "housing",
       "featuredToolIds": [
+        "rent-affordability-calculator",
         "dutch-rental-budget-calculator",
         "utilities-services-comparison-tool"
       ]
@@ -119,6 +120,7 @@
         "visa-checker",
         "document-readiness",
         "moving-checklist",
+        "rent-affordability-calculator",
         "expat-cost-of-living-calculator",
         "dutch-salary-net-calculator",
         "payslip-decoder",

@@ -20,7 +20,8 @@
     "build:housing-platforms": "tsx scripts/build-housing-platforms-dataset.ts",
     "build:rental-agencies": "tsx scripts/build-rental-agencies-dataset.ts",
     "test:payslip": "tsx --test \"src/lib/tools/payslip/**/*.test.ts\"",
-    "test:cost-of-living": "tsx --test src/lib/calculators/cost-of-living/calculator.test.ts"
+    "test:cost-of-living": "tsx --test src/lib/calculators/cost-of-living/calculator.test.ts",
+    "test:rent-affordability": "tsx --test \"src/lib/tools/rent-affordability/*.test.ts\""
   },
   "dependencies": {
     "@expatlife/content": "workspace:*",

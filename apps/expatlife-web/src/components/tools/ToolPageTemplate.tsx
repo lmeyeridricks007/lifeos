@@ -95,6 +95,8 @@ export type ToolPageTemplateProps = {
   movingClusterHero?: boolean;
   /** Optional anchor on the intro / disclaimer surface (`MoveIntroSurface`) for TOC links. */
   introSurfaceId?: string;
+  /** When true, the example scenarios collapsible panel starts expanded (sidebar TOC still works). */
+  examplesCollapsibleDefaultOpen?: boolean;
 };
 
 const explanatoryCardVariants = [
@@ -137,6 +139,7 @@ export function ToolPageTemplate({
   mainStackClassName,
   movingClusterHero = false,
   introSurfaceId,
+  examplesCollapsibleDefaultOpen = false,
   beforeFaq,
   monetizationPageType = "tool",
   allowPreFaqMonetization,
@@ -203,7 +206,7 @@ export function ToolPageTemplate({
             <div id={hasSidebar ? "example-scenarios" : undefined} className="mt-5">
               <CollapsiblePanel
                 title="Example scenarios"
-                defaultOpen={false}
+                defaultOpen={examplesCollapsibleDefaultOpen}
                 titleClassName="text-base font-semibold text-foreground"
                 triggerClassName="cursor-pointer rounded-t-xl bg-surface-muted/90 text-foreground-muted hover:bg-surface-muted hover:text-foreground"
                 className="border-border bg-surface-muted/40"

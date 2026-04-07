@@ -95,6 +95,40 @@ export function getCostOfLivingRecommendedCards(): PageRecommendedProviderCard[]
   });
 }
 
+/** Rent affordability — split bundles for contextual sections (housing vs banks vs health vs relocation). */
+export type RentAffordabilityServiceBundles = {
+  housing: PageRecommendedProviderCard[];
+  banks: PageRecommendedProviderCard[];
+  health: PageRecommendedProviderCard[];
+  relocation: PageRecommendedProviderCard[];
+};
+
+export function getRentAffordabilityServiceBundles(): RentAffordabilityServiceBundles {
+  return {
+    housing: buildPageRecommendedProviderCards({
+      categories: ["housing-platforms"],
+      limit: 4,
+      strategy: "sequential",
+    }),
+    banks: buildPageRecommendedProviderCards({
+      categories: ["banks"],
+      limit: 4,
+      strategy: "sequential",
+    }),
+    health: buildPageRecommendedProviderCards({
+      categories: ["health-insurance"],
+      limit: 4,
+      strategy: "sequential",
+      append: [INDEPENDER],
+    }),
+    relocation: buildPageRecommendedProviderCards({
+      categories: ["relocation-agencies", "relocation-services"],
+      limit: 5,
+      strategy: "round-robin",
+    }),
+  };
+}
+
 /** Curated expat tax advisors for 30% ruling planning — direct provider sites (no affiliate IDs in registry). */
 /** Payroll / relocation style providers for salary planning tool — from registry (editorial order). */
 export function getDutchSalaryNetPayrollRelocationCards(): PageRecommendedProviderCard[] {

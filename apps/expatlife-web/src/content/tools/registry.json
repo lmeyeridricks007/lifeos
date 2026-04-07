@@ -673,7 +673,7 @@
       "relatedTools": [
         "/netherlands/taxes/tools/dutch-salary-net-calculator/",
         "/netherlands/moving/tools/relocation-cost-estimator/",
-        "/netherlands/money/tools/rent-affordability-calculator/"
+        "/netherlands/housing/tools/rent-affordability-calculator/"
       ],
       "affiliatePlacementIds": [],
       "affiliateCategories": ["banking", "housing-platforms"],
@@ -687,27 +687,43 @@
       "id": "rent-affordability-calculator",
       "title": "Rent Affordability Calculator",
       "slug": "rent-affordability-calculator",
-      "route": "/netherlands/money/tools/rent-affordability-calculator/",
-      "status": "placeholder",
+      "route": "/netherlands/housing/tools/rent-affordability-calculator/",
+      "status": "live",
       "templateType": "calculator",
-      "categoryId": "money-tax",
-      "menuGroup": "money",
+      "categoryId": "housing",
+      "menuGroup": "living",
       "seo": {
-        "title": "Rent Affordability Calculator Netherlands (Coming Soon)",
-        "description": "Estimate safe rent ranges based on your expected net income.",
-        "keywords": ["rent affordability Netherlands", "how much rent can I afford NL"]
+        "title": "Rent Affordability Calculator Netherlands | How Much Rent Can You Afford?",
+        "description": "Estimate how much rent you can afford in the Netherlands based on your salary, city, household, fixed costs, and landlord income rules. Built for expat relocation planning.",
+        "keywords": [
+          "rent affordability calculator netherlands",
+          "how much rent can i afford netherlands",
+          "amsterdam rent affordability",
+          "landlord income requirement netherlands",
+          "expat rent calculator netherlands"
+        ]
       },
-      "summary": "Estimate safer rent bands from net-income and monthly obligations.",
+      "summary": "Plan max rent from income or reverse salary for a target rent: landlord gross checks, city baselines, setup cash, scenarios, export.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/living/rental-market/"],
-      "relatedTools": ["/netherlands/housing/tools/dutch-rental-budget-calculator/"],
+      "relatedGuides": [
+        "/netherlands/living/rental-market/",
+        "/netherlands/moving-to-the-netherlands/",
+        "/netherlands/money/tools/cost-of-living-calculator/"
+      ],
+      "relatedTools": [
+        "/netherlands/money/tools/cost-of-living-calculator/",
+        "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+        "/netherlands/taxes/tools/30-ruling-calculator/",
+        "/netherlands/work/tools/payslip-decoder/",
+        "/netherlands/housing/tools/dutch-rental-budget-calculator/"
+      ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["housing-platforms"],
+      "affiliateCategories": ["housing-platforms", "banks", "health-insurance"],
       "signupVariant": "default",
-      "pillarCategoryRoute": "/netherlands/money/tools/",
-      "exampleInputs": ["Net salary", "Existing commitments", "Savings goals"],
-      "exampleOutputs": ["Suggested rent bands", "Stress-test scenarios", "Monthly leftover view"],
-      "mostUsefulFor": "Renters balancing housing cost and overall budget."
+      "pillarCategoryRoute": "/netherlands/housing/tools/",
+      "exampleInputs": ["Gross or net income", "City & neighborhood band", "Household & fixed costs", "Target rent", "Landlord rule ×3–×4"],
+      "exampleOutputs": ["Recommended max rent", "Landlord pass/fail grid", "Salary targets", "Setup breakdown", "HTML export"],
+      "mostUsefulFor": "Expats and residents sizing rent before search and checking gross-income screening stories."
     },
     {
       "id": "employment-tax-overview-tool",
@@ -777,7 +793,7 @@
       "summary": "Estimate realistic rental budget targets by city and household profile.",
       "primaryConversion": "both",
       "relatedGuides": ["/netherlands/living/rental-market/"],
-      "relatedTools": ["/netherlands/money/tools/rent-affordability-calculator/"],
+      "relatedTools": ["/netherlands/housing/tools/rent-affordability-calculator/"],
       "affiliatePlacementIds": [],
       "affiliateCategories": ["housing-platforms"],
       "signupVariant": "default",

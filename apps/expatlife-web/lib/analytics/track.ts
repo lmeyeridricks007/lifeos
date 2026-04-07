@@ -169,3 +169,25 @@ export function trackCostOfLivingCalculator(
     capturePosthog(event, payload);
   }
 }
+
+export type RentAffordabilityCalculatorAnalyticsEvent =
+  | "calculator_started"
+  | "calculator_completed"
+  | "mode_changed"
+  | "summary_downloaded"
+  | "recommended_service_clicked"
+  | "related_tool_clicked";
+
+export function trackRentAffordabilityCalculator(
+  event: RentAffordabilityCalculatorAnalyticsEvent,
+  params?: Record<string, unknown>
+): void {
+  if (!canSendAnalyticsEvents()) return;
+  const payload = { tool: "rent_affordability_calculator", ...(params ?? {}) };
+  if (canSendGaDataLayerOrGtag()) {
+    trackEvent(event, payload);
+  }
+  if (shouldInitPosthog()) {
+    capturePosthog(event, payload);
+  }
+}

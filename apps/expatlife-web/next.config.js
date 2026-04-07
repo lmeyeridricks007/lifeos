@@ -51,6 +51,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/money/tools/rent-affordability-calculator",
+        destination: "/netherlands/housing/tools/rent-affordability-calculator/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/money/tools/rent-affordability-calculator/",
+        destination: "/netherlands/housing/tools/rent-affordability-calculator/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/visa/student-residence-permit",
         destination: "/netherlands/visa/student-visa/",
         permanent: true,

@@ -301,9 +301,9 @@ function buildMoneyToolRail(): NavItem[] {
     "thirty-percent-ruling-calculator",
     "dutch-salary-net-calculator",
     "expat-cost-of-living-calculator",
+    "rent-affordability-calculator",
     "healthcare-allowance-estimator",
     "double-tax-awareness-tool",
-    "rent-affordability-calculator",
     "job-offer-comparison-tool",
     "employment-contract-risk-scanner",
     "payslip-decoder",
@@ -680,8 +680,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
     featured: item("Cities hub", "/netherlands/cities/", "Compare Dutch cities and read expat city guides."),
     tools: [
       soon("City comparison tool"),
-      soon("Rent affordability calculator"),
-      soon("Cost of living calculator"),
+      item(
+        "Rent affordability calculator",
+        "/netherlands/housing/tools/rent-affordability-calculator/",
+        "Max rent from income, landlord gross checks, and move-in cash — before you search."
+      ),
+      item(
+        "Cost of living calculator",
+        "/netherlands/money/tools/cost-of-living-calculator/",
+        "Full monthly bands by city and household next to rent planning."
+      ),
       item("Open tools hub", "/netherlands/tools/"),
     ],
   },
