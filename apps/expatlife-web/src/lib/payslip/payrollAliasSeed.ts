@@ -620,7 +620,7 @@ export function payrollFieldAliases(key: PayslipFieldKey): string[] {
 }
 
 export function payrollFieldRegexes(key: PayslipFieldKey): RegExp[] {
-  const g = PAYROLL_ALIAS_SEED[key as PayrollSeededFieldKey];
+  const g = PAYROLL_ALIAS_SEED[key as PayrollSeededFieldKey] as PayrollAliasSeedGroup | undefined;
   if (!g?.regexPatterns?.length) return [];
   return g.regexPatterns.map((r) => new RegExp(r.source, r.flags));
 }
