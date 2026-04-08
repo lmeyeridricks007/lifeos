@@ -126,26 +126,6 @@ const MONTHLY_COST_ROW_DEFS: MonthlyCostRowDef[] = [
   },
 ];
 
-function CostCompositionSummary({ cost }: { cost: CityCostBreakdown }) {
-  const total = cost.totalMonthlyOutflowEur || 1;
-  const rows = MONTHLY_COST_ROW_DEFS.filter((def) => def.get(cost) > 0).map((def) => {
-    const v = def.get(cost);
-    return { key: def.key, label: def.label, v, pct: Math.round((v / total) * 100) };
-  });
-  return (
-    <ul className="mt-1 space-y-1.5 text-sm tabular-nums text-copilot-text-primary">
-      {rows.map(({ key, label, v, pct }) => (
-        <li key={key} className="flex justify-between gap-4">
-          <span className="min-w-0 font-medium text-copilot-text-secondary">{label}</span>
-          <span className="shrink-0">
-            {pct}% · €{v}
-          </span>
-        </li>
-      ))}
-    </ul>
-  );
-}
-
 function MonthlyCostBreakdownCard({
   row,
   maxByKey,
@@ -195,11 +175,6 @@ function MonthlyCostBreakdownCard({
             Same ballpark as your whole list
           </span>
         )}
-      </div>
-
-      <div className="mt-4">
-        <p className="text-[0.65rem] font-semibold uppercase tracking-wide text-copilot-text-secondary">By category</p>
-        <CostCompositionSummary cost={row.cost} />
       </div>
 
       <div className="mt-5 space-y-1 border-t border-copilot-primary/10 pt-4">
