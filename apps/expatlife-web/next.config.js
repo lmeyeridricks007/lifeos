@@ -71,6 +71,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/health/tools/healthcare-allowance-estimator",
+        destination: "/netherlands/taxes/tools/healthcare-allowance-estimator/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/health/tools/healthcare-allowance-estimator/",
+        destination: "/netherlands/taxes/tools/healthcare-allowance-estimator/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/visa/student-residence-permit",
         destination: "/netherlands/visa/student-visa/",
         permanent: true,

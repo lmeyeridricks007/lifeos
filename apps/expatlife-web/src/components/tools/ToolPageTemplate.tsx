@@ -100,6 +100,8 @@ export type ToolPageTemplateProps = {
   introDisclaimerId?: string;
   /** When true, the example scenarios collapsible panel starts expanded (sidebar TOC still works). */
   examplesCollapsibleDefaultOpen?: boolean;
+  /** Overrides the collapsible panel title above `examplesSection` (default: "Example scenarios"). */
+  examplesCollapsibleTitle?: string;
 };
 
 const explanatoryCardVariants = [
@@ -144,6 +146,7 @@ export function ToolPageTemplate({
   introSurfaceId,
   introDisclaimerId,
   examplesCollapsibleDefaultOpen = false,
+  examplesCollapsibleTitle = "Example scenarios",
   beforeFaq,
   monetizationPageType = "tool",
   allowPreFaqMonetization,
@@ -218,7 +221,7 @@ export function ToolPageTemplate({
           {examplesSection ? (
             <div id={hasSidebar ? "example-scenarios" : undefined} className="mt-5">
               <CollapsiblePanel
-                title="Example scenarios"
+                title={examplesCollapsibleTitle}
                 defaultOpen={examplesCollapsibleDefaultOpen}
                 titleClassName="text-base font-semibold text-foreground"
                 triggerClassName="cursor-pointer rounded-t-xl bg-surface-muted/90 text-foreground-muted hover:bg-surface-muted hover:text-foreground"

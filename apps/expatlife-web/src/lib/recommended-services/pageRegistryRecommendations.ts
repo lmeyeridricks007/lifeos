@@ -307,6 +307,36 @@ export function getRentAffordabilityServiceBundles(): RentAffordabilityServiceBu
   };
 }
 
+/** Healthcare allowance — insurers, tax help, relocation, banks, COL/rent tools context. */
+export type HealthcareAllowanceServiceBundles = {
+  health: PageRecommendedProviderCard[];
+  tax: PageRecommendedProviderCard[];
+  relocation: PageRecommendedProviderCard[];
+  banks: PageRecommendedProviderCard[];
+};
+
+export function getHealthcareAllowanceServiceBundles(): HealthcareAllowanceServiceBundles {
+  return {
+    health: buildPageRecommendedProviderCards({
+      categories: ["health-insurance"],
+      limit: 4,
+      strategy: "sequential",
+      append: [INDEPENDER],
+    }),
+    tax: getThirtyPercentRulingTaxAdvisorCards(),
+    relocation: buildPageRecommendedProviderCards({
+      categories: ["relocation-agencies", "relocation-services"],
+      limit: 4,
+      strategy: "round-robin",
+    }),
+    banks: buildPageRecommendedProviderCards({
+      categories: ["banks"],
+      limit: 4,
+      strategy: "sequential",
+    }),
+  };
+}
+
 /** Curated expat tax advisors for 30% ruling planning — direct provider sites (no affiliate IDs in registry). */
 /** Payroll / relocation style providers for salary planning tool — from registry (editorial order). */
 export function getDutchSalaryNetPayrollRelocationCards(): PageRecommendedProviderCard[] {

@@ -1052,7 +1052,7 @@
       "summary": "Compare basic Dutch health insurance setups by fit and cost.",
       "primaryConversion": "both",
       "relatedGuides": ["/netherlands/health/", "/netherlands/money/insurance/health/"],
-      "relatedTools": ["/netherlands/health/tools/healthcare-allowance-estimator/"],
+      "relatedTools": ["/netherlands/taxes/tools/healthcare-allowance-estimator/"],
       "affiliatePlacementIds": [],
       "affiliateCategories": ["insurance"],
       "signupVariant": "default",
@@ -1063,29 +1063,50 @@
     },
     {
       "id": "healthcare-allowance-estimator",
-      "title": "Healthcare Allowance Estimator",
+      "title": "Healthcare Allowance Estimator Netherlands",
       "slug": "healthcare-allowance-estimator",
-      "route": "/netherlands/health/tools/healthcare-allowance-estimator/",
-      "status": "placeholder",
+      "route": "/netherlands/taxes/tools/healthcare-allowance-estimator/",
+      "status": "live",
       "templateType": "calculator",
-      "categoryId": "healthcare",
-      "menuGroup": "living",
+      "categoryId": "taxes-tools",
+      "menuGroup": "money",
       "seo": {
-        "title": "Healthcare Allowance Estimator Netherlands (Coming Soon)",
-        "description": "Estimate possible healthcare allowance ranges based on your income profile.",
-        "keywords": ["zorgtoeslag estimator", "healthcare allowance Netherlands"]
+        "title": "Zorgtoeslag Calculator & Healthcare Allowance Netherlands 2026 | Income & Asset Limits",
+        "description": "Healthcare allowance Netherlands planner for expats: zorgtoeslag-style estimates with income and asset limit screening, net premium after allowance, worked examples, and links to salary, rent, and cost-of-living tools. Planning only — not Dienst Toeslagen.",
+        "keywords": [
+          "zorgtoeslag calculator",
+          "healthcare allowance Netherlands",
+          "healthcare allowance expat Netherlands",
+          "zorgtoeslag income limit",
+          "zorgtoeslag asset limit",
+          "income limit zorgtoeslag",
+          "asset limit zorgtoeslag"
+        ]
       },
-      "summary": "Estimate potential healthcare allowance range from income scenarios.",
+      "summary": "Destination page: zorgtoeslag planning, income and asset context, worked examples, recommended services, and net premium after allowance — not an official determination.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/health/"],
-      "relatedTools": ["/netherlands/health/tools/dutch-health-insurance-comparison-tool/"],
+      "relatedGuides": [
+        "/netherlands/taxes/healthcare-allowance/",
+        "/netherlands/health-insurance-netherlands/",
+        "/netherlands/taxes/",
+        "/netherlands/moving-to-the-netherlands/",
+        "/netherlands/family/tools/",
+        "/netherlands/health/"
+      ],
+      "relatedTools": [
+        "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+        "/netherlands/money/tools/cost-of-living-calculator/",
+        "/netherlands/housing/tools/rent-affordability-calculator/",
+        "/netherlands/taxes/tools/30-ruling-calculator/",
+        "/netherlands/health/tools/dutch-health-insurance-comparison-tool/"
+      ],
       "affiliatePlacementIds": [],
       "affiliateCategories": ["insurance", "tax"],
       "signupVariant": "default",
-      "pillarCategoryRoute": "/netherlands/health/tools/",
-      "exampleInputs": ["Income estimate", "Household composition"],
-      "exampleOutputs": ["Allowance range", "Eligibility notes", "Application checklist"],
-      "mostUsefulFor": "Residents budgeting health insurance net cost."
+      "pillarCategoryRoute": "/netherlands/taxes/tools/",
+      "exampleInputs": ["Tax year", "Income and assets", "Insurance months", "Premium choice"],
+      "exampleOutputs": ["Likely eligibility", "Monthly allowance estimate", "Net premium after allowance"],
+      "mostUsefulFor": "Expats and residents planning Dutch health insurance net cost before applying for toeslagen."
     },
     {
       "id": "insurance-comparison-tool",
@@ -1539,7 +1560,7 @@
       "summary": "AI-assisted discovery of potentially relevant benefits and allowances.",
       "primaryConversion": "signup",
       "relatedGuides": ["/netherlands/money/"],
-      "relatedTools": ["/netherlands/health/tools/healthcare-allowance-estimator/"],
+      "relatedTools": ["/netherlands/taxes/tools/healthcare-allowance-estimator/"],
       "affiliatePlacementIds": [],
       "signupVariant": "advanced",
       "pillarCategoryRoute": "/netherlands/tools/advanced/",

@@ -750,6 +750,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Planning view for cross-border filing risk, likely relief path, and advisor escalation signals."
           ),
           item(
+            "Healthcare allowance estimator",
+            "/netherlands/taxes/tools/healthcare-allowance-estimator/",
+            "Zorgtoeslag planning: income and asset screening, estimated allowance, net premium — not Dienst Toeslagen."
+          ),
+          item(
             "Dutch payslip decoder",
             "/netherlands/work/tools/payslip-decoder/",
             "Explain bruto/netto and common lines from pasted text or a text PDF — not payroll advice."
@@ -800,6 +805,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Holiday allowance Netherlands", "/netherlands/work/holiday-allowance-netherlands/"),
           item("Bonus tax Netherlands", "/netherlands/work/bonus-tax-netherlands/"),
           item("Healthcare allowance", "/netherlands/taxes/healthcare-allowance/"),
+          item(
+            "Healthcare allowance estimator",
+            "/netherlands/taxes/tools/healthcare-allowance-estimator/",
+            "Calculator-style zorgtoeslag planning with 2026 thresholds — planning only."
+          ),
           item("Rent allowance", "/netherlands/taxes/rent-allowance/"),
           item("Childcare allowance", "/netherlands/taxes/childcare-allowance/"),
           item(
@@ -907,6 +917,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Health insurance", "/netherlands/services/health-insurance/"),
           item("Compare health insurance", "/netherlands/services/compare-health-insurance/"),
           item("Insurance providers", "/netherlands/services/insurance-providers/"),
+          item(
+            "Healthcare allowance estimator",
+            "/netherlands/taxes/tools/healthcare-allowance-estimator/",
+            "Estimate zorgtoeslag before you compare gross premiums."
+          ),
         ],
       },
       {
