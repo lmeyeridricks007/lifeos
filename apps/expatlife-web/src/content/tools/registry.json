@@ -1235,19 +1235,38 @@
       "title": "Employment Type Scenario Tool",
       "slug": "employment-type-scenario-tool",
       "route": "/netherlands/work/tools/employment-type-scenario-tool/",
-      "status": "placeholder",
+      "status": "live",
       "templateType": "comparison",
       "categoryId": "work-employment",
       "menuGroup": "work",
       "seo": {
-        "title": "Employment Type Scenario Tool (Coming Soon)",
-        "description": "Compare likely outcomes across employee, contractor and hybrid setups.",
-        "keywords": ["employment type comparison Netherlands", "employee vs contractor expat"]
+        "title": "Employment Type Scenario Tool Netherlands | Employee vs Contractor vs ZZP",
+        "description": "Compare permanent employee, fixed-term, contractor, and ZZP scenarios in the Netherlands. Indicative money, scored trade-offs, risk highlights, and export — planning only.",
+        "keywords": [
+          "employee vs zzp Netherlands",
+          "contractor vs employee Netherlands",
+          "fixed-term vs permanent Netherlands",
+          "best employment type expats Netherlands",
+          "umbrella contractor Netherlands",
+          "Dutch work model comparison"
+        ]
       },
-      "summary": "Compare employment structure options and downstream implications.",
-      "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/work/contracts/"],
-      "relatedTools": ["/netherlands/work/tools/employment-type-admin-load-tool/"],
+      "summary": "Compare employment structure options with indicative money and scored trade-offs (planning only).",
+      "primaryConversion": "both",
+      "relatedGuides": [
+        "/netherlands/work/contractor-vs-employee-netherlands/",
+        "/netherlands/work/zzp-netherlands/",
+        "/netherlands/work/working-in-netherlands/"
+      ],
+      "relatedTools": [
+        "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+        "/netherlands/taxes/tools/30-ruling-calculator/",
+        "/netherlands/taxes/tools/double-tax-awareness-tool/",
+        "/netherlands/work/tools/employment-contract-risk-scanner/",
+        "/netherlands/money/tools/cost-of-living-calculator/",
+        "/netherlands/housing/tools/rent-affordability-calculator/",
+        "/netherlands/work/tools/employment-type-admin-load-tool/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",

@@ -42,6 +42,33 @@ export function buildSoftwareApplicationSchema(options: SoftwareApplicationSchem
   };
 }
 
+/** HowTo schema for tool pages (steps visible in body copy). */
+export function buildHowToSchema(options: {
+  name: string;
+  description: string;
+  canonicalPath: string;
+  steps: readonly { name: string; text: string }[];
+}): object {
+  const fullUrl = options.canonicalPath.startsWith("http")
+    ? options.canonicalPath
+    : `${BASE_URL}${options.canonicalPath}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: options.name,
+    description: options.description,
+    totalTime: "PT15M",
+    step: options.steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.name,
+      text: step.text,
+    })),
+    url: fullUrl,
+  };
+}
+
 export function buildToolPageSchema(options: {
   title: string;
   description: string;

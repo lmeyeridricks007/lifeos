@@ -325,6 +325,12 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
         links: [
           link("Contract checklist", "/netherlands/work/tools/contract-checklist", "Employment review"),
           link("Payslip decoder", "/netherlands/work/tools/payslip-decoder", "Payroll checks"),
+          link(
+            "Employment type scenario tool",
+            "/netherlands/work/tools/employment-type-scenario-tool",
+            "Employee vs contractor vs ZZP comparison",
+            false
+          ),
           link("Bank comparison", "/netherlands/money/banking/bank-comparison", "Account choice"),
           link("Tax readiness", "/netherlands/money/taxes/readiness-score", "Readiness check"),
         ],

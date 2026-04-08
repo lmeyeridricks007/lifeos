@@ -38,7 +38,7 @@ export type ToolPageTemplateProps = {
   /** SEO intro copy - visible before interaction */
   intro?: ReactNode;
   /** Disclosure or legal note */
-  disclosure?: string;
+  disclosure?: string | ReactNode;
   /** Optional indexable explanatory sections (e.g. What this tool covers, Who it's for) */
   explanatorySections?: ToolExplanatorySection[];
   /** Optional infographic image (one per tool max) */
@@ -183,7 +183,11 @@ export function ToolPageTemplate({
               ) : null}
               {disclosure ? (
                 <InfoBox title="Disclaimer" variant="warn" className="shadow-card">
-                  {disclosure}
+                  {typeof disclosure === "string" ? (
+                    <p className="text-sm text-foreground-muted">{disclosure}</p>
+                  ) : (
+                    disclosure
+                  )}
                 </InfoBox>
               ) : null}
             </div>

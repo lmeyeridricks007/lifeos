@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useId, useState, type ReactNode } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { transitionColors } from "@/lib/ui/interaction";
@@ -25,13 +25,14 @@ export function CollapsiblePanel({
   triggerClassName,
 }: CollapsiblePanelProps) {
   const [open, setOpen] = useState(defaultOpen);
+  const contentId = useId();
   return (
     <div className={cn("rounded-card border border-border bg-surface-muted/80 shadow-none", className)}>
       <button
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        aria-controls="collapsible-content"
+        aria-controls={contentId}
         className={cn(
           transitionColors,
           "flex w-full items-center justify-between gap-2 px-4 py-3 text-left text-foreground ease-out hover:bg-surface-muted active:bg-surface-muted/80 motion-reduce:active:bg-transparent",
@@ -42,7 +43,7 @@ export function CollapsiblePanel({
         {title}
         {open ? <ChevronDown className="h-4 w-4 shrink-0 text-foreground-faint" /> : <ChevronRight className="h-4 w-4 shrink-0 text-foreground-faint" />}
       </button>
-      <div id="collapsible-content" hidden={!open} className="border-t border-border px-4 pb-4 pt-3">
+      <div id={contentId} hidden={!open} className="border-t border-border px-4 pb-4 pt-3">
         {children}
       </div>
     </div>

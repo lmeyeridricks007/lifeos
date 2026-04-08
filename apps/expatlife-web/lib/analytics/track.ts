@@ -213,3 +213,27 @@ export function trackContractScanner(event: ContractScannerAnalyticsEvent, param
     capturePosthog(event, payload);
   }
 }
+
+/** Consent-gated GA + PostHog; stable names for product analytics. */
+export type EmploymentTypeScenarioAnalyticsEvent =
+  | "employment_type_tool_opened"
+  | "employment_type_tool_calculated"
+  | "employment_type_tool_mode_changed"
+  | "employment_type_tool_priority_changed"
+  | "employment_type_tool_export_downloaded"
+  | "employment_type_tool_related_tool_clicked"
+  | "employment_type_tool_service_clicked";
+
+export function trackEmploymentTypeScenarioTool(
+  event: EmploymentTypeScenarioAnalyticsEvent,
+  params?: Record<string, unknown>
+): void {
+  if (!canSendAnalyticsEvents()) return;
+  const payload = { tool: "employment_type_scenario", ...(params ?? {}) };
+  if (canSendGaDataLayerOrGtag()) {
+    trackEvent(event, payload);
+  }
+  if (shouldInitPosthog()) {
+    capturePosthog(event, payload);
+  }
+}

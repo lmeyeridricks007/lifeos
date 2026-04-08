@@ -621,6 +621,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/work/tools/employment-contract-risk-scanner/",
             "Flag common Dutch contract clauses and questions to ask HR before you sign."
           ),
+          item(
+            "Employment type scenario tool",
+            "/netherlands/work/tools/employment-type-scenario-tool/",
+            "Compare employee, fixed-term, contractor, and ZZP-style setups — indicative money and trade-offs (planning only)."
+          ),
         ],
       },
       {
@@ -746,6 +751,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/work/tools/employment-contract-risk-scanner/",
             "Planning scan for offer letters and contracts — not legal advice."
           ),
+          item(
+            "Employment type scenario tool",
+            "/netherlands/work/tools/employment-type-scenario-tool/",
+            "Rank work structures on income, stability, admin, and expat fit — planning only."
+          ),
           item("Tax tools hub", "/netherlands/taxes/tools/"),
           item("Expat taxes Netherlands", "/netherlands/taxes/expat-taxes-netherlands/"),
           item("How taxes work in the Netherlands", "/netherlands/taxes/how-taxes-work-netherlands/"),
@@ -759,6 +769,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Salary & allowances",
         items: [
           item("Work tools hub", "/netherlands/work/tools/", "Payslip decoder, contract tools, and job-offer helpers."),
+          item(
+            "Employment type scenario tool",
+            "/netherlands/work/tools/employment-type-scenario-tool/",
+            "Compare payroll vs contractor vs ZZP before you choose or sign."
+          ),
           item("Employment overview", "/netherlands/money/taxes/employment-overview"),
           item("Net salary Netherlands", "/netherlands/taxes/net-salary-netherlands/"),
           item(
@@ -789,6 +804,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/work/tools/employment-contract-risk-scanner/",
             "Paste text or a text-based PDF for clause flags and HR-ready questions."
           ),
+          item(
+            "Employment type scenario tool",
+            "/netherlands/work/tools/employment-type-scenario-tool/",
+            "Side-by-side scenarios for structure, net, sponsorship fit, and admin — not legal advice."
+          ),
           item("Working in the Netherlands", "/netherlands/work/working-in-netherlands/"),
           item("Employment contract Netherlands", "/netherlands/work/employment-contract-netherlands/"),
           item("Probation period Netherlands", "/netherlands/work/probation-period-netherlands/"),
@@ -802,6 +822,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Freelancing Netherlands", "/netherlands/work/freelancing-netherlands/"),
           item("ZZP Netherlands", "/netherlands/work/zzp-netherlands/"),
           item("Contractor vs employee Netherlands", "/netherlands/work/contractor-vs-employee-netherlands/"),
+          item(
+            "Employment type scenario tool",
+            "/netherlands/work/tools/employment-type-scenario-tool/",
+            "Model employee vs contractor vs ZZP trade-offs with your priorities."
+          ),
         ],
       },
       {

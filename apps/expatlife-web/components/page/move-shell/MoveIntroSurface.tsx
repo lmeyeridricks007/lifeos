@@ -5,8 +5,8 @@ import { movingNlPathwaysBackdropClass, movingNlShellPathwaysClass } from "@/lib
 
 export type MoveIntroSurfaceProps = {
   children: ReactNode;
-  /** Short disclaimer / planning notice below intro copy */
-  disclaimer?: string;
+  /** Short disclaimer / planning notice below intro copy (string or richer layout). */
+  disclaimer?: string | ReactNode;
   disclaimerTitle?: string;
   className?: string;
   /** Optional anchor for in-page navigation (e.g. sticky TOC “Before you start”). */
@@ -51,7 +51,11 @@ export function MoveIntroSurface({
               disclaimerAnchorId ? "scroll-mt-28 md:scroll-mt-32" : null
             )}
           >
-            <p className="text-sm text-copilot-text-secondary">{disclaimer}</p>
+            {typeof disclaimer === "string" ? (
+              <p className="text-sm text-copilot-text-secondary">{disclaimer}</p>
+            ) : (
+              disclaimer
+            )}
           </InfoBox>
         ) : null}
       </div>

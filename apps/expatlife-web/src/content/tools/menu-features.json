@@ -24,6 +24,7 @@
         "double-tax-awareness-tool",
         "expat-cost-of-living-calculator",
         "netherlands-city-comparison-tool",
+        "employment-type-scenario-tool",
         "payslip-decoder"
       ]
     },
@@ -35,6 +36,7 @@
         "double-tax-awareness-tool",
         "expat-cost-of-living-calculator",
         "netherlands-city-comparison-tool",
+        "employment-type-scenario-tool",
         "payslip-decoder"
       ]
     },
@@ -56,7 +58,7 @@
     },
     {
       "categoryId": "work-employment",
-      "featuredToolIds": ["job-offer-comparison-tool", "payslip-decoder", "employment-contract-risk-scanner"]
+      "featuredToolIds": ["job-offer-comparison-tool", "payslip-decoder", "employment-contract-risk-scanner", "employment-type-scenario-tool"]
     },
     {
       "categoryId": "partner-family",
@@ -88,7 +90,8 @@
         "visa-cost-calculator",
         "visa-timeline-estimator",
         "payslip-decoder",
-        "employment-contract-risk-scanner"
+        "employment-contract-risk-scanner",
+        "employment-type-scenario-tool"
       ]
     },
     "money": {
@@ -100,6 +103,7 @@
         "expat-cost-of-living-calculator",
         "netherlands-city-comparison-tool",
         "job-offer-comparison-tool",
+        "employment-type-scenario-tool",
         "employment-contract-risk-scanner",
         "payslip-decoder"
       ]
@@ -130,6 +134,7 @@
         "document-readiness",
         "moving-checklist",
         "employment-contract-risk-scanner",
+        "employment-type-scenario-tool",
         "rent-affordability-calculator",
         "expat-cost-of-living-calculator",
         "netherlands-city-comparison-tool",
