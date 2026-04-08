@@ -48,7 +48,7 @@
     },
     {
       "categoryId": "housing",
-      "featuredToolIds": ["rent-affordability-calculator", "netherlands-city-comparison-tool", "dutch-rental-budget-calculator", "buy-vs-rent-calculator", "mortgage-eligibility-estimator"]
+      "featuredToolIds": ["rent-affordability-calculator", "utilities-services-comparison-tool", "netherlands-city-comparison-tool", "dutch-rental-budget-calculator", "buy-vs-rent-calculator", "mortgage-eligibility-estimator"]
     },
     {
       "categoryId": "transport",
@@ -99,7 +99,8 @@
         "payslip-decoder",
         "job-offer-comparison-tool",
         "employment-contract-risk-scanner",
-        "employment-type-scenario-tool"
+        "employment-type-scenario-tool",
+        "utilities-services-comparison-tool"
       ]
     },
     "money": {
@@ -131,9 +132,9 @@
       "categoryId": "housing",
       "featuredToolIds": [
         "rent-affordability-calculator",
+        "utilities-services-comparison-tool",
         "netherlands-city-comparison-tool",
-        "dutch-rental-budget-calculator",
-        "utilities-services-comparison-tool"
+        "dutch-rental-budget-calculator"
       ]
     },
     "tools": {
@@ -152,6 +153,7 @@
         "dutch-salary-net-calculator",
         "payslip-decoder",
         "dutch-rental-budget-calculator",
+        "utilities-services-comparison-tool",
         "first-90-days",
         "arrival-planner"
       ]

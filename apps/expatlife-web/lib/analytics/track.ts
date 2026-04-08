@@ -215,6 +215,28 @@ export function trackChildcareEstimator(
   }
 }
 
+export type UtilitiesServicesComparisonAnalyticsEvent =
+  | "calculator_started"
+  | "calculator_completed"
+  | "summary_downloaded"
+  | "planner_mode_changed"
+  | "related_tool_clicked"
+  | "recommended_service_clicked";
+
+export function trackUtilitiesServicesComparison(
+  event: UtilitiesServicesComparisonAnalyticsEvent,
+  params?: Record<string, unknown>
+): void {
+  if (!canSendAnalyticsEvents()) return;
+  const payload = { tool: "utilities_services_comparison_nl", ...(params ?? {}) };
+  if (canSendGaDataLayerOrGtag()) {
+    trackEvent(event, payload);
+  }
+  if (shouldInitPosthog()) {
+    capturePosthog(event, payload);
+  }
+}
+
 /** Consent-gated GA + PostHog; stable names for product analytics. */
 export type ContractScannerAnalyticsEvent =
   | "contract_scanner_opened"

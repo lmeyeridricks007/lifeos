@@ -14,6 +14,7 @@ export {
   trackCostOfLivingCalculator,
   trackRentAffordabilityCalculator,
   trackChildcareEstimator,
+  trackUtilitiesServicesComparison,
   trackContractScanner,
 } from "@/lib/analytics/track";
 export type {
@@ -21,6 +22,7 @@ export type {
   CostOfLivingCalculatorAnalyticsEvent,
   RentAffordabilityCalculatorAnalyticsEvent,
   ChildcareEstimatorAnalyticsEvent,
+  UtilitiesServicesComparisonAnalyticsEvent,
   ContractScannerAnalyticsEvent,
 } from "@/lib/analytics/track";
 export type { OutboundLinkType, ServiceClickParams, OutboundLinkParams, CtaClickParams } from "@/lib/analytics/track";

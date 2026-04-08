@@ -135,8 +135,8 @@ export default async function MovingToNetherlandsPillarPage(_props: PageProps) {
   const bsn = resolveLinkFromRegistry(linkRegistry, "bsn");
   const compareVisas = resolveLinkFromRegistry(linkRegistry, "compare_visas");
 
-  /** Contextual tools (moving + first payslip literacy); capped to avoid crowding the band. */
-  const helpfulTools = toolsStrip.slice(0, 4);
+  /** Contextual tools (moving + utilities + first payslip literacy); capped to avoid crowding the band. */
+  const helpfulTools = toolsStrip.slice(0, 5);
 
   return (
     <>
@@ -196,7 +196,7 @@ export default async function MovingToNetherlandsPillarPage(_props: PageProps) {
             compact
             id="helpful-tools"
             title="Helpful tools"
-            subtitle="Checklist, documents, first payslip literacy, and first weeks after landing."
+            subtitle="Checklist, documents, household utilities planning, first payslip literacy, and first weeks after landing."
           >
             {helpfulTools.map((t) => (
               <ToolCard

@@ -6,7 +6,8 @@
     "document-readiness": "/netherlands/document-readiness-checker/",
     "first-90-days": "/netherlands/moving/tools/first-90-days/",
     "arrival-planner": "/netherlands/moving/tools/arrival-planner/",
-    "relocation-cost-estimator": "/netherlands/moving/tools/relocation-cost-estimator/"
+    "relocation-cost-estimator": "/netherlands/moving/tools/relocation-cost-estimator/",
+    "utilities-services-comparison": "/netherlands/living/tools/utilities-services-comparison/"
   },
   "guides": [
     {

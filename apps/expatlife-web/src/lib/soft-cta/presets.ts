@@ -15,7 +15,8 @@ export type SoftCtaPresetId =
   | "servicesBanksHubSoftCta"
   | "servicesHealthHubSoftCta"
   | "afterVisaToolComparePlanning"
-  | "citySetupPlanning";
+  | "citySetupPlanning"
+  | "utilitiesAfterPlanning";
 
 export const SOFT_CTA_PRESET_IDS: SoftCtaPresetId[] = [
   "compareVisaRoutes",
@@ -28,6 +29,7 @@ export const SOFT_CTA_PRESET_IDS: SoftCtaPresetId[] = [
   "servicesHealthHubSoftCta",
   "afterVisaToolComparePlanning",
   "citySetupPlanning",
+  "utilitiesAfterPlanning",
 ];
 
 type PresetBase = Omit<SoftCTAProps, "variant"> & { defaultVariant: SoftCTAVariant };
@@ -122,6 +124,15 @@ const PRESETS: Record<SoftCtaPresetId, PresetBase> = {
       "Use a moving checklist and a first-90-days planner alongside this city guide—timelines still depend on gemeente load and your housing path.",
     primaryCta: { label: "Build a moving checklist", href: SOFT_CTA_PATHS.movingChecklist },
     secondaryCta: { label: "Plan first 90 days", href: SOFT_CTA_PATHS.first90Days },
+  },
+  utilitiesAfterPlanning: {
+    defaultVariant: "inline",
+    eyebrow: "Next step",
+    title: "Line up connectivity and supplier contracts",
+    description:
+      "Shortlist Dutch mobile or SIM-only plans from the services hub, then read how energy retail, water, and gemeente charges show up on bills—before you commit to install dates.",
+    primaryCta: { label: "Mobile & internet hub", href: SOFT_CTA_PATHS.mobileConnectivityHub },
+    secondaryCta: { label: "Utilities guides", href: SOFT_CTA_PATHS.livingUtilitiesGuide },
   },
 };
 

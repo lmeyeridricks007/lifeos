@@ -79,8 +79,8 @@ export function RentAffordabilityRecommendedSections({ bundles }: { bundles: Ren
             rental market guide
           </Link>{" "}
           and{" "}
-          <Link href="/netherlands/housing/tools/utilities-services-comparison-tool/" className="font-semibold text-copilot-primary hover:underline">
-            utilities comparison tool (hub)
+          <Link href="/netherlands/living/tools/utilities-services-comparison/" className="font-semibold text-copilot-primary hover:underline">
+            utilities &amp; services comparison tool
           </Link>
           .
         </p>

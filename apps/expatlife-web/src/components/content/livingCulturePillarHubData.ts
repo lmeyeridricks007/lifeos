@@ -193,7 +193,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         ],
         startToolLink: {
           title: "Utilities & Services Comparison Tool",
-          href: "/netherlands/housing/tools/utilities-services-comparison-tool/",
+          href: "/netherlands/living/tools/utilities-services-comparison/",
         },
         unknownsToConfirm: [],
       },
@@ -240,7 +240,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
       {
         title: "Utilities & Services Comparison Tool",
         description: "Line up energy, broadband, and recurring household services.",
-        href: "/netherlands/housing/tools/utilities-services-comparison-tool/",
+        href: "/netherlands/living/tools/utilities-services-comparison/",
       },
       {
         title: "Housing platforms directory",

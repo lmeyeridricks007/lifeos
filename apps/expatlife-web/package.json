@@ -24,7 +24,8 @@
     "test:rent-affordability": "tsx --test \"src/lib/tools/rent-affordability/*.test.ts\"",
     "test:childcare": "tsx --test src/lib/tools/childcare/childcareEngine.test.ts",
     "test:contract-scanner": "tsx --test \"src/lib/tools/contract-scanner/*.test.ts\"",
-    "test:job-offer-comparison": "tsx --test \"src/lib/tools/job-offer-comparison/*.test.ts\""
+    "test:job-offer-comparison": "tsx --test \"src/lib/tools/job-offer-comparison/*.test.ts\"",
+    "test:utilities-services": "tsx --test src/lib/tools/utilities-services/estimate.test.ts"
   },
   "dependencies": {
     "@expatlife/content": "workspace:*",

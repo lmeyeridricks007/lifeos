@@ -10,4 +10,6 @@ export const SOFT_CTA_PATHS = {
   bestRelocation: "/netherlands/best/relocation-for-expats/",
   servicesBanks: "/netherlands/services/banks/",
   servicesHealthInsurance: "/netherlands/services/health-insurance/",
+  mobileConnectivityHub: "/netherlands/services/mobile-connectivity/",
+  livingUtilitiesGuide: "/netherlands/living/utilities/",
 } as const;

@@ -85,6 +85,11 @@ const RELATED_NEXT_STEPS = [
     description: "City hubs for Amsterdam, Rotterdam, The Hague, Utrecht, and more.",
   },
   {
+    href: `${BASE}/living/tools/utilities-services-comparison/`,
+    title: "Utilities & household services planner",
+    description: "Energy, internet, mobile, and gemeente-style lines next to this budget.",
+  },
+  {
     href: `${BASE}/amsterdam/`,
     title: "Amsterdam expat hub",
     description: "Local orientation when Amsterdam is your target.",

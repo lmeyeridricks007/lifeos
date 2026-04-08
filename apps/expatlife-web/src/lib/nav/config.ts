@@ -1001,6 +1001,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Utilities",
         items: [
+          item(
+            "Utilities & services planner",
+            "/netherlands/living/tools/utilities-services-comparison/",
+            "Compare monthly bands, first-month setup, and what you arrange vs fixed charges — planning only."
+          ),
           item("Utilities in the Netherlands", "/netherlands/living/utilities/", "Energy, water, and setup flow."),
           item("Energy and water", "/netherlands/living/energy-and-water/", "Suppliers and metering basics."),
           item("Internet and mobile", "/netherlands/living/internet-and-mobile/", "Home connectivity setup."),

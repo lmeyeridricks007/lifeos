@@ -257,6 +257,12 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       description: "Settling-in priorities.",
       timeToComplete: "12 minutes",
     },
+    {
+      title: "Utilities & household services",
+      href: "/netherlands/living/tools/utilities-services-comparison",
+      description: "Monthly bands, setup cash, and what to compare vs local charges after move-in.",
+      timeToComplete: "12 min",
+    },
   ],
   tocItems: [
     { id: "overview", label: "Overview" },

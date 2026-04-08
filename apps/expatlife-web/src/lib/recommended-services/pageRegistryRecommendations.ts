@@ -8,6 +8,17 @@ import {
   getRecommendedGuideServicesFromRegistry,
   type GuideRegistryRecommendationStrategy,
 } from "@/src/lib/guides/registryRecommendedServices";
+import type { UtilitiesServicesInput } from "@/src/lib/tools/utilities-services/types";
+import {
+  UTILITIES_BROADBAND_TV_CARDS,
+  UTILITIES_ENERGY_COMPARATOR_CARDS,
+  UTILITIES_ENERGY_SUPPLIER_CARDS,
+  UTILITIES_HOME_INSURANCE_CARDS,
+  UTILITIES_INSULATION_EFFICIENCY_CARDS,
+  UTILITIES_PLANNER_GROUP_TITLES,
+  UTILITIES_WATER_CARDS,
+  type UtilitiesPlannerCompanyCard,
+} from "@/src/lib/tools/utilities-services/utilitiesPlannerCompanyShortlists";
 
 export type PageRecommendedProviderCard = {
   name: string;
@@ -370,6 +381,157 @@ export function getDutchSalaryNetBankCards(): PageRecommendedProviderCard[] {
     limit: 6,
     strategy: "sequential",
   });
+}
+
+export type UtilitiesServicesServiceGroup = {
+  title: string;
+  description?: string;
+  cards: PageRecommendedProviderCard[];
+};
+
+const NL_UTILITIES_GUIDE_CARD: PageRecommendedProviderCard = {
+  name: "Utilities in the Netherlands (guide)",
+  url: "/netherlands/living/utilities/",
+  useFor: "Editorial context on energy, water, internet, and gemeente-linked charges before you compare retail offers.",
+  priceRange: "Free guide on ExpatCopilot",
+};
+
+function utilitiesPlannerCards(cards: UtilitiesPlannerCompanyCard[]): PageRecommendedProviderCard[] {
+  return cards as PageRecommendedProviderCard[];
+}
+
+const ACM_ENERGY_CONSUMER_CARD: PageRecommendedProviderCard = {
+  name: "ACM — energy for consumers",
+  url: "https://www.acm.nl/en/market-regulation/sectors/energy/energy-for-consumers",
+  useFor: "Dutch competition authority guidance on switching, contracts, and consumer rights in energy retail.",
+  priceRange: "Official information — no sales.",
+};
+
+const NL_MOBILE_HUB_CARD: PageRecommendedProviderCard = {
+  name: "Mobile & internet in the Netherlands",
+  url: "/netherlands/services/mobile-connectivity/",
+  useFor: "Connectivity category hub — SIM-only, bundles, and broadband context for expat households.",
+  priceRange: "Free guides and shortlists",
+};
+
+function utilitiesServiceGroupsCore(): UtilitiesServicesServiceGroup[] {
+  const t = UTILITIES_PLANNER_GROUP_TITLES;
+  return [
+    {
+      title: t.understanding,
+      description:
+        "Start with how Dutch bills are structured—then use the company shortlists below for tariffs, contracts, and postcode checks.",
+      cards: [NL_UTILITIES_GUIDE_CARD, ACM_ENERGY_CONSUMER_CARD],
+    },
+    {
+      title: t.compareEnergy,
+      description:
+        "Comparison sites aggregate retail offers; you still sign with one supplier. Skip aggressive switching if your lease bundles energy with rent.",
+      cards: utilitiesPlannerCards(UTILITIES_ENERGY_COMPARATOR_CARDS),
+    },
+    {
+      title: t.energyRetailers,
+      description:
+        "Nationwide electricity and gas retailers you may contract with directly—always run an address check and read contract length and green-power claims.",
+      cards: utilitiesPlannerCards(UTILITIES_ENERGY_SUPPLIER_CARDS),
+    },
+    {
+      title: t.water,
+      description:
+        "Tap water is a regional monopoly: one company bills your address. Use Rijksoverheid, VEWIN, or your letterbox invoice to confirm which applies—do not “shop” multiple water retailers.",
+      cards: utilitiesPlannerCards(UTILITIES_WATER_CARDS),
+    },
+    {
+      title: t.broadbandTv,
+      description:
+        "Fixed internet and TV bundles (Ziggo cable, KPN/Odido/DELTA fibre, etc.). Line speeds and install dates depend on what is already built to your flat or house.",
+      cards: utilitiesPlannerCards(UTILITIES_BROADBAND_TV_CARDS),
+    },
+    {
+      title: t.insulation,
+      description:
+        "Official subsidies and independent advice for insulation and efficiency—especially relevant for owners and long lets; installers quote separately.",
+      cards: utilitiesPlannerCards(UTILITIES_INSULATION_EFFICIENCY_CARDS),
+    },
+    {
+      title: t.homeInsurance,
+      description:
+        "Contents (inboedel) and liability (aansprakelijkheid) cover for your household—not the same as mandatory Dutch basic health insurance.",
+      cards: utilitiesPlannerCards(UTILITIES_HOME_INSURANCE_CARDS),
+    },
+    {
+      title: t.mobile,
+      description:
+        "SIM-only and mobile plans from our reviewed shortlist; pair with a separate home internet contract unless you rely on tethering.",
+      cards: buildPageRecommendedProviderCards({
+        categories: ["mobile-connectivity"],
+        limit: 5,
+        strategy: "sequential",
+      }),
+    },
+  ];
+}
+
+/** Utilities planner — mobile/broadband from registry; editorial + official energy context; contextual tariff comparators. */
+export function getUtilitiesServicesGroupedRecommendations(): UtilitiesServicesServiceGroup[] {
+  return utilitiesServiceGroupsCore();
+}
+
+/**
+ * Reorders and augments recommendation groups using calculator inputs from the shareable URL (`?s=`).
+ * When `input` is null (no URL state), returns `base` unchanged.
+ */
+export function contextualizeUtilitiesServiceGroups(
+  base: UtilitiesServicesServiceGroup[],
+  input: UtilitiesServicesInput | null
+): UtilitiesServicesServiceGroup[] {
+  if (!input) return base;
+
+  const t = UTILITIES_PLANNER_GROUP_TITLES;
+  const placed = new Set<string>();
+  const out: UtilitiesServicesServiceGroup[] = [];
+
+  /** When rent likely includes energy, push retail comparators and suppliers below connectivity and insurance. */
+  const energyLikelyBundled =
+    input.utilitiesIncludedInRent === "yes" &&
+    (input.landlordBuildingIncludesServices === "yes" || input.landlordBuildingIncludesServices === "unsure");
+
+  let ordered = [...base];
+  if (energyLikelyBundled) {
+    const demote = new Set<string>([t.compareEnergy, t.energyRetailers]);
+    const head = ordered.filter((g) => !demote.has(g.title));
+    const tail = ordered.filter((g) => demote.has(g.title));
+    ordered = [...head, ...tail];
+  }
+
+  const telecomHeavy = input.includeInternet || input.includeMobile || input.includeTvMedia;
+  if (telecomHeavy) {
+    const bb = ordered.find((g) => g.title === t.broadbandTv);
+    if (bb) {
+      out.push(bb);
+      placed.add(bb.title);
+    }
+    const mobileGroup = ordered.find((g) => g.title === t.mobile);
+    if (mobileGroup) {
+      out.push({ ...mobileGroup, cards: [NL_MOBILE_HUB_CARD, ...mobileGroup.cards] });
+      placed.add(mobileGroup.title);
+    }
+  }
+
+  const insHeavy = input.includeContentsInsurance || input.includeLiabilityInsurance;
+  if (insHeavy) {
+    const ins = ordered.find((g) => g.title === t.homeInsurance);
+    if (ins && !placed.has(ins.title)) {
+      out.push(ins);
+      placed.add(ins.title);
+    }
+  }
+
+  for (const g of ordered) {
+    if (!placed.has(g.title)) out.push(g);
+  }
+
+  return out;
 }
 
 export function getThirtyPercentRulingTaxAdvisorCards(): PageRecommendedProviderCard[] {

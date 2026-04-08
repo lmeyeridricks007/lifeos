@@ -11,6 +11,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/netherlands/housing/tools/utilities-services-comparison-tool",
+        destination: "/netherlands/living/tools/utilities-services-comparison/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/housing/tools/utilities-services-comparison-tool/",
+        destination: "/netherlands/living/tools/utilities-services-comparison/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/tools/job-offer-comparison-tool",
         destination: "/netherlands/work/tools/job-offer-comparison/",
         permanent: true,

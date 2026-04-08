@@ -15,6 +15,7 @@ export default function NetherlandsToolsHubPage() {
     "first-90-days",
     "document-readiness",
     "expat-cost-of-living-calculator",
+    "utilities-services-comparison-tool",
     "dutch-salary-net-calculator",
     "thirty-percent-ruling-calculator",
     "double-tax-awareness-tool",
