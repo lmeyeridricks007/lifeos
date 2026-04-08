@@ -673,7 +673,8 @@
       "relatedTools": [
         "/netherlands/taxes/tools/dutch-salary-net-calculator/",
         "/netherlands/moving/tools/relocation-cost-estimator/",
-        "/netherlands/housing/tools/rent-affordability-calculator/"
+        "/netherlands/housing/tools/rent-affordability-calculator/",
+        "/netherlands/tools/city-comparison/"
       ],
       "affiliatePlacementIds": [],
       "affiliateCategories": ["banking", "housing-platforms"],
@@ -715,7 +716,8 @@
         "/netherlands/taxes/tools/dutch-salary-net-calculator/",
         "/netherlands/taxes/tools/30-ruling-calculator/",
         "/netherlands/work/tools/payslip-decoder/",
-        "/netherlands/housing/tools/dutch-rental-budget-calculator/"
+        "/netherlands/housing/tools/dutch-rental-budget-calculator/",
+        "/netherlands/tools/city-comparison/"
       ],
       "affiliatePlacementIds": [],
       "affiliateCategories": ["housing-platforms", "banks", "health-insurance"],
@@ -742,7 +744,7 @@
       "summary": "Translate salary and employment details into a simple tax overview.",
       "primaryConversion": "signup",
       "relatedGuides": ["/netherlands/money/taxes/employment-overview/"],
-      "relatedTools": ["/netherlands/money/tools/double-tax-awareness-tool/"],
+      "relatedTools": ["/netherlands/taxes/tools/double-tax-awareness-tool/"],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/money/tools/",
@@ -754,27 +756,79 @@
       "id": "double-tax-awareness-tool",
       "title": "Double Tax Awareness Tool",
       "slug": "double-tax-awareness-tool",
-      "route": "/netherlands/money/tools/double-tax-awareness-tool/",
-      "status": "placeholder",
+      "route": "/netherlands/taxes/tools/double-tax-awareness-tool/",
+      "status": "live",
       "templateType": "checker",
-      "categoryId": "money-tax",
+      "categoryId": "taxes-tools",
       "menuGroup": "money",
       "seo": {
-        "title": "Double Tax Awareness Tool (Coming Soon)",
-        "description": "Spot common cross-border income situations where double tax checks are needed.",
+        "title": "Double Tax Awareness Tool Netherlands | Cross-Border Tax Planning View",
+        "description": "Check likely dual-residency and cross-border double-tax risk when moving to or working in the Netherlands. Understand filing signals, likely relief methods, and next actions.",
         "keywords": ["double tax Netherlands expat", "cross-border tax awareness"]
       },
-      "summary": "Highlight double-tax risk situations and what evidence to gather.",
-      "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/money/taxes/double-tax/"],
+      "summary": "Deterministic planning tool for residency signals, income-tax mapping, relief awareness, and practical filing next steps.",
+      "primaryConversion": "both",
+      "relatedGuides": ["/netherlands/taxes/double-taxation-netherlands/", "/netherlands/taxes/expat-taxes-netherlands/", "/netherlands/taxes/tax-residency-netherlands/"],
       "relatedTools": ["/netherlands/money/tools/employment-tax-overview-tool/"],
       "affiliatePlacementIds": [],
       "affiliateCategories": ["tax"],
       "signupVariant": "default",
-      "pillarCategoryRoute": "/netherlands/money/tools/",
+      "pillarCategoryRoute": "/netherlands/taxes/tools/",
       "exampleInputs": ["Income countries", "Tax residency assumptions", "Contract setup"],
       "exampleOutputs": ["Risk areas", "Treaty topics to verify", "Documentation checklist"],
       "mostUsefulFor": "People with multi-country income exposure."
+    },
+    {
+      "id": "netherlands-city-comparison-tool",
+      "title": "Netherlands City Comparison Tool",
+      "slug": "city-comparison",
+      "route": "/netherlands/tools/city-comparison/",
+      "status": "live",
+      "templateType": "comparison",
+      "categoryId": "housing",
+      "menuGroup": "living",
+      "seo": {
+        "title": "Netherlands City Comparison: Best Dutch Cities for Expats, Families & Remote Work",
+        "description": "Compare Amsterdam vs Utrecht, Rotterdam vs The Hague, Eindhoven vs Utrecht, and more: affordability, commute planning, family fit, and lifestyle for expats. Shared cost-of-living anchors — not live listings, tax advice, or an objective best city.",
+        "keywords": [
+          "best city Netherlands expats",
+          "best Dutch city international workers",
+          "Amsterdam vs Utrecht expat",
+          "Rotterdam vs The Hague expat",
+          "cheapest city Netherlands expats",
+          "which Dutch city best for families",
+          "best Dutch city remote workers",
+          "Eindhoven vs Utrecht tech",
+          "where to live Netherlands expat",
+          "Netherlands city comparison"
+        ]
+      },
+      "summary": "Weighted city comparison using shared cost-of-living anchors, commute heuristics, and editorial city profiles for expat planning.",
+      "primaryConversion": "both",
+      "relatedGuides": [
+        "/netherlands/moving-to-the-netherlands/",
+        "/netherlands/cities/",
+        "/netherlands/amsterdam/",
+        "/netherlands/rotterdam/",
+        "/netherlands/utrecht/",
+        "/netherlands/the-hague/",
+        "/netherlands/eindhoven/",
+        "/netherlands/groningen/"
+      ],
+      "relatedTools": [
+        "/netherlands/money/tools/cost-of-living-calculator/",
+        "/netherlands/housing/tools/rent-affordability-calculator/",
+        "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+        "/netherlands/taxes/tools/30-ruling-calculator/",
+        "/netherlands/work/tools/payslip-decoder/"
+      ],
+      "affiliatePlacementIds": [],
+      "affiliateCategories": ["housing-platforms", "rental-agencies", "banks", "health-insurance", "relocation-agencies"],
+      "signupVariant": "default",
+      "pillarCategoryRoute": "/netherlands/tools/",
+      "exampleInputs": ["2–4 cities", "Household", "Net salary", "Work mode", "Office city", "Priority sliders"],
+      "exampleOutputs": ["Ranked fit", "Cost table", "Commute notes", "Scenario lenses", "HTML export"],
+      "mostUsefulFor": "Expats choosing where to live before deep housing search."
     },
     {
       "id": "dutch-rental-budget-calculator",
@@ -1086,22 +1140,39 @@
     },
     {
       "id": "employment-contract-risk-scanner",
-      "title": "Employment Contract Risk Scanner",
+      "title": "Dutch Employment Contract Risk Scanner",
       "slug": "employment-contract-risk-scanner",
       "route": "/netherlands/work/tools/employment-contract-risk-scanner/",
-      "status": "placeholder",
+      "status": "live",
       "templateType": "scanner",
       "categoryId": "work-employment",
       "menuGroup": "work",
       "seo": {
-        "title": "Employment Contract Risk Scanner (Coming Soon)",
-        "description": "Scan contract clauses for common expat risk patterns and ambiguity points.",
-        "keywords": ["contract risk scanner", "employment contract Netherlands expat"]
+        "title": "Dutch Employment Contract Risk Scanner | ExpatCopilot",
+        "description": "Paste contract text or upload a text-based PDF to detect common risk areas in Dutch employment contracts, including notice, probation, non-compete, relocation repayment, and 30% ruling wording.",
+        "keywords": [
+          "Dutch employment contract checker",
+          "employment contract Netherlands expat",
+          "Dutch contract non-compete probation notice",
+          "30% ruling clause contract",
+          "relocation repayment clause Netherlands",
+          "what to check before signing Dutch contract"
+        ]
       },
-      "summary": "Flag contract clauses that may need clarification before signing.",
-      "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/work/contracts/checklist/"],
-      "relatedTools": ["/netherlands/work/tools/job-offer-comparison-tool/"],
+      "summary": "Paste text or a text-based PDF to spot common clause risks, missing topics, and questions to ask before signing.",
+      "primaryConversion": "both",
+      "relatedGuides": [
+        "/netherlands/work/employment-contract-netherlands/",
+        "/netherlands/work/contracts/checklist/",
+        "/netherlands/work/"
+      ],
+      "relatedTools": [
+        "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+        "/netherlands/taxes/tools/30-ruling-calculator/",
+        "/netherlands/work/tools/payslip-decoder/",
+        "/netherlands/taxes/tools/double-tax-awareness-tool/",
+        "/netherlands/housing/tools/rent-affordability-calculator/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",
@@ -1570,7 +1641,7 @@
       "relatedGuides": ["/netherlands/visas-residency/", "/netherlands/money/taxes/"],
       "relatedTools": [
         "/netherlands/work/tools/job-change-impact-simulator/",
-        "/netherlands/money/tools/double-tax-awareness-tool/"
+        "/netherlands/taxes/tools/double-tax-awareness-tool/"
       ],
       "affiliatePlacementIds": [],
       "signupVariant": "advanced",

@@ -17,6 +17,8 @@ export default function NetherlandsToolsHubPage() {
     "expat-cost-of-living-calculator",
     "dutch-salary-net-calculator",
     "thirty-percent-ruling-calculator",
+    "double-tax-awareness-tool",
+    "netherlands-city-comparison-tool",
     "payslip-decoder",
     "job-offer-comparison-tool",
   ]).filter((t) => t?.id && t?.route);

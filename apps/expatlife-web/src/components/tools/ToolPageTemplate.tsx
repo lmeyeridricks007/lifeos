@@ -1,3 +1,4 @@
+import { cn } from "@/lib/cn";
 import { Accordion } from "@/components/ui/accordion";
 import { CardLink } from "@/components/ui/card-link";
 import { Container } from "@/components/ui/container";
@@ -95,6 +96,8 @@ export type ToolPageTemplateProps = {
   movingClusterHero?: boolean;
   /** Optional anchor on the intro / disclaimer surface (`MoveIntroSurface`) for TOC links. */
   introSurfaceId?: string;
+  /** Optional anchor on the disclaimer `InfoBox` only (e.g. TOC “Before you start” when intro cards sit above it). */
+  introDisclaimerId?: string;
   /** When true, the example scenarios collapsible panel starts expanded (sidebar TOC still works). */
   examplesCollapsibleDefaultOpen?: boolean;
 };
@@ -139,6 +142,7 @@ export function ToolPageTemplate({
   mainStackClassName,
   movingClusterHero = false,
   introSurfaceId,
+  introDisclaimerId,
   examplesCollapsibleDefaultOpen = false,
   beforeFaq,
   monetizationPageType = "tool",
@@ -160,7 +164,12 @@ export function ToolPageTemplate({
     intro || disclosure ? (
       <div className="pb-4 pt-4 sm:pt-5 md:pb-6">
         {movingClusterHero ? (
-          <MoveIntroSurface id={introSurfaceId} disclaimer={disclosure} disclaimerTitle="Before you start">
+          <MoveIntroSurface
+            id={introSurfaceId}
+            disclaimerAnchorId={introDisclaimerId}
+            disclaimer={disclosure}
+            disclaimerTitle="Before you start"
+          >
             {intro}
           </MoveIntroSurface>
         ) : (
@@ -320,7 +329,7 @@ export function ToolPageTemplate({
                         ]
                       : explanatoryCardVariants[index % explanatoryCardVariants.length];
                     return (
-                      <div key={section.id} className={cardClass}>
+                      <div key={section.id} id={section.id} className={cn(cardClass, "scroll-mt-28 md:scroll-mt-32")}>
                         <ToolIntroSection
                           section={{
                             id: section.id,

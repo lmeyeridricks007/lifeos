@@ -57,6 +57,7 @@ export function CostOfLivingRightRail() {
         <ul className="relative z-[2] mt-4 space-y-2 text-sm text-copilot-text-secondary">
           {(
             [
+              { href: `${BASE}/tools/city-comparison/`, label: "Netherlands city comparison tool →" },
               { href: `${BASE}/taxes/tools/dutch-salary-net-calculator/`, label: "Dutch salary net calculator →" },
               { href: `${BASE}/taxes/tools/30-ruling-calculator/`, label: "30% ruling calculator →" },
               { href: `${BASE}/work/tools/payslip-decoder/`, label: "Payslip decoder →" },

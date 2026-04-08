@@ -6,6 +6,7 @@
       "route": "/netherlands/moving/tools/",
       "description": "Planning, eligibility, arrival and relocation tools.",
       "menuGroup": "move",
+      "additionalToolIds": ["netherlands-city-comparison-tool"],
       "relatedGuides": [
         "/netherlands/moving/",
         "/netherlands/moving-to-the-netherlands/",
@@ -40,7 +41,7 @@
       "route": "/netherlands/money/tools/",
       "description": "Salary, tax, affordability and cost calculators.",
       "menuGroup": "money",
-      "additionalToolIds": ["payslip-decoder"],
+      "additionalToolIds": ["payslip-decoder", "netherlands-city-comparison-tool"],
       "relatedGuides": [
         "/netherlands/money/",
         "/netherlands/money/taxes/"
@@ -52,7 +53,7 @@
       "route": "/netherlands/taxes/tools/",
       "description": "Tax planning calculators and checks for expats in the Netherlands.",
       "menuGroup": "money",
-      "additionalToolIds": ["payslip-decoder"],
+      "additionalToolIds": ["payslip-decoder", "netherlands-city-comparison-tool"],
       "relatedGuides": [
         "/netherlands/taxes/",
         "/netherlands/taxes/expat-taxes-netherlands/"
@@ -64,6 +65,7 @@
       "route": "/netherlands/housing/tools/",
       "description": "Rental, deposit, mortgage and home-cost tools.",
       "menuGroup": "living",
+      "additionalToolIds": ["netherlands-city-comparison-tool"],
       "relatedGuides": [
         "/netherlands/living/housing/",
         "/netherlands/moving/"

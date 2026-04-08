@@ -13,11 +13,13 @@ export {
   trackPayslipDecoder,
   trackCostOfLivingCalculator,
   trackRentAffordabilityCalculator,
+  trackContractScanner,
 } from "@/lib/analytics/track";
 export type {
   PayslipDecoderAnalyticsEvent,
   CostOfLivingCalculatorAnalyticsEvent,
   RentAffordabilityCalculatorAnalyticsEvent,
+  ContractScannerAnalyticsEvent,
 } from "@/lib/analytics/track";
 export type { OutboundLinkType, ServiceClickParams, OutboundLinkParams, CtaClickParams } from "@/lib/analytics/track";
 export { utmContentFromPath, withPartnerReferralUtms } from "@/lib/analytics/referral-utm";

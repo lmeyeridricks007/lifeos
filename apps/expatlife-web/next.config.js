@@ -31,6 +31,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/money/tools/double-tax-awareness-tool",
+        destination: "/netherlands/taxes/tools/double-tax-awareness-tool/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/money/tools/double-tax-awareness-tool/",
+        destination: "/netherlands/taxes/tools/double-tax-awareness-tool/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/money/tools/expat-cost-of-living-calculator",
         destination: "/netherlands/money/tools/cost-of-living-calculator/",
         permanent: true,

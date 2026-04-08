@@ -123,8 +123,19 @@ function sortedRowsForCategory(category: CompanyRegistryCategory): CompanyRegist
     .sort((a, b) => rowPriority(a) - rowPriority(b));
 }
 
+function dedupeGuideServiceKey(s: GuideSectionServiceResolved): string {
+  try {
+    const u = new URL(s.url);
+    return u.hostname.replace(/^www\./, "").toLowerCase();
+  } catch {
+    return s.name.trim().toLowerCase();
+  }
+}
+
 /**
  * Take up to `limit` providers (min 3) from one or more registry categories.
+ * When the same provider appears in multiple categories (e.g. different listing URLs), only the first
+ * occurrence is kept so round-robin / multi-category lists do not show duplicate cards.
  */
 export function getRecommendedGuideServicesFromRegistry(
   categories: readonly string[],
@@ -138,6 +149,8 @@ export function getRecommendedGuideServicesFromRegistry(
   );
   if (!cleaned.length) return [];
 
+  const seen = new Set<string>();
+
   if (cleaned.length === 1 || strategy === "sequential") {
     const out: GuideSectionServiceResolved[] = [];
     for (const cat of cleaned) {
@@ -145,7 +158,11 @@ export function getRecommendedGuideServicesFromRegistry(
       const rows = sortedRowsForCategory(cat);
       for (const row of rows) {
         if (out.length >= cap) break;
-        out.push(registryRowToGuideService(row));
+        const s = registryRowToGuideService(row);
+        const k = dedupeGuideServiceKey(s);
+        if (seen.has(k)) continue;
+        seen.add(k);
+        out.push(s);
       }
     }
     return out;
@@ -153,18 +170,26 @@ export function getRecommendedGuideServicesFromRegistry(
 
   const lists = cleaned.map((cat) => sortedRowsForCategory(cat).map(registryRowToGuideService));
   const out: GuideSectionServiceResolved[] = [];
-  let round = 0;
+  const indices = lists.map(() => 0);
+
   while (out.length < cap) {
-    let added = false;
-    for (const list of lists) {
+    let progress = false;
+    for (let k = 0; k < lists.length; k++) {
       if (out.length >= cap) break;
-      if (round < list.length) {
-        out.push(list[round]);
-        added = true;
+      const list = lists[k];
+      let idx = indices[k];
+      while (idx < list.length && seen.has(dedupeGuideServiceKey(list[idx]))) {
+        idx++;
+      }
+      if (idx < list.length) {
+        const s = list[idx];
+        seen.add(dedupeGuideServiceKey(s));
+        out.push(s);
+        indices[k] = idx + 1;
+        progress = true;
       }
     }
-    if (!added) break;
-    round++;
+    if (!progress) break;
   }
   return out;
 }
@@ -325,15 +350,6 @@ export const GUIDE_SECTION_REGISTRY_DEFAULTS: Record<string, GuideSectionRegistr
 
 function sectionKey(slug: string, sectionId: string): string {
   return `${slug}:${sectionId}`;
-}
-
-function dedupeGuideServiceKey(s: GuideSectionServiceResolved): string {
-  try {
-    const u = new URL(s.url);
-    return u.hostname.replace(/^www\./, "").toLowerCase();
-  } catch {
-    return s.name.trim().toLowerCase();
-  }
 }
 
 /**

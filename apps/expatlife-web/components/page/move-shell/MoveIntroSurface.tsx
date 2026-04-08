@@ -11,6 +11,8 @@ export type MoveIntroSurfaceProps = {
   className?: string;
   /** Optional anchor for in-page navigation (e.g. sticky TOC “Before you start”). */
   id?: string;
+  /** Optional anchor on the disclaimer `InfoBox` (when TOC should jump to the warning, not the whole intro). */
+  disclaimerAnchorId?: string;
 };
 
 /**
@@ -22,6 +24,7 @@ export function MoveIntroSurface({
   disclaimerTitle = "Before you start",
   className,
   id,
+  disclaimerAnchorId,
 }: MoveIntroSurfaceProps) {
   return (
     <div
@@ -39,7 +42,15 @@ export function MoveIntroSurface({
           {children}
         </div>
         {disclaimer ? (
-          <InfoBox variant="warn" title={disclaimerTitle} className="border-copilot-primary/15 bg-copilot-bg-soft/80 shadow-expatos-sm">
+          <InfoBox
+            id={disclaimerAnchorId}
+            variant="warn"
+            title={disclaimerTitle}
+            className={cn(
+              "border-copilot-primary/15 bg-copilot-bg-soft/80 shadow-expatos-sm",
+              disclaimerAnchorId ? "scroll-mt-28 md:scroll-mt-32" : null
+            )}
+          >
             <p className="text-sm text-copilot-text-secondary">{disclaimer}</p>
           </InfoBox>
         ) : null}

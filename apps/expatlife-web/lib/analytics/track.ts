@@ -191,3 +191,25 @@ export function trackRentAffordabilityCalculator(
     capturePosthog(event, payload);
   }
 }
+
+/** Consent-gated GA + PostHog; stable names for product analytics. */
+export type ContractScannerAnalyticsEvent =
+  | "contract_scanner_opened"
+  | "contract_scanner_paste_submitted"
+  | "contract_scanner_pdf_uploaded"
+  | "contract_scanner_manual_checklist_used"
+  | "contract_scanner_result_viewed"
+  | "contract_scanner_export_downloaded"
+  | "contract_scanner_related_tool_clicked"
+  | "contract_scanner_service_clicked";
+
+export function trackContractScanner(event: ContractScannerAnalyticsEvent, params?: Record<string, unknown>): void {
+  if (!canSendAnalyticsEvents()) return;
+  const payload = { tool: "employment_contract_risk_scanner", ...(params ?? {}) };
+  if (canSendGaDataLayerOrGtag()) {
+    trackEvent(event, payload);
+  }
+  if (shouldInitPosthog()) {
+    capturePosthog(event, payload);
+  }
+}

@@ -616,6 +616,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/work/tools/payslip-decoder/",
             "Read your first loonstrook — bruto/netto and common lines."
           ),
+          item(
+            "Employment contract risk scanner",
+            "/netherlands/work/tools/employment-contract-risk-scanner/",
+            "Flag common Dutch contract clauses and questions to ask HR before you sign."
+          ),
         ],
       },
       {
@@ -669,6 +674,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Compare / discover",
         items: [
+          item(
+            "Netherlands city comparison tool",
+            "/netherlands/tools/city-comparison/",
+            "Compare cities on modelled costs, commute, family fit, and lifestyle — planning only."
+          ),
           soon("Best cities for expats"),
           soon("Best cities for families"),
           soon("Affordable cities"),
@@ -679,7 +689,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
     ],
     featured: item("Cities hub", "/netherlands/cities/", "Compare Dutch cities and read expat city guides."),
     tools: [
-      soon("City comparison tool"),
+      item(
+        "Netherlands city comparison tool",
+        "/netherlands/tools/city-comparison/",
+        "Rank 2–4 cities from your budget, office location, and priority sliders."
+      ),
       item(
         "Rent affordability calculator",
         "/netherlands/housing/tools/rent-affordability-calculator/",
@@ -718,9 +732,19 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("30% ruling eligibility calculator", "/netherlands/taxes/tools/30-ruling-calculator/"),
           item("Dutch salary net calculator", "/netherlands/taxes/tools/dutch-salary-net-calculator/"),
           item(
+            "Double Tax Awareness Tool",
+            "/netherlands/taxes/tools/double-tax-awareness-tool/",
+            "Planning view for cross-border filing risk, likely relief path, and advisor escalation signals."
+          ),
+          item(
             "Dutch payslip decoder",
             "/netherlands/work/tools/payslip-decoder/",
             "Explain bruto/netto and common lines from pasted text or a text PDF — not payroll advice."
+          ),
+          item(
+            "Employment contract risk scanner",
+            "/netherlands/work/tools/employment-contract-risk-scanner/",
+            "Planning scan for offer letters and contracts — not legal advice."
           ),
           item("Tax tools hub", "/netherlands/taxes/tools/"),
           item("Expat taxes Netherlands", "/netherlands/taxes/expat-taxes-netherlands/"),
@@ -760,6 +784,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Employment contracts & rights",
         items: [
+          item(
+            "Employment contract risk scanner",
+            "/netherlands/work/tools/employment-contract-risk-scanner/",
+            "Paste text or a text-based PDF for clause flags and HR-ready questions."
+          ),
           item("Working in the Netherlands", "/netherlands/work/working-in-netherlands/"),
           item("Employment contract Netherlands", "/netherlands/work/employment-contract-netherlands/"),
           item("Probation period Netherlands", "/netherlands/work/probation-period-netherlands/"),

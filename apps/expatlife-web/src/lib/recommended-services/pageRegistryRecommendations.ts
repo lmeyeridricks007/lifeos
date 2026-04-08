@@ -95,6 +95,81 @@ export function getCostOfLivingRecommendedCards(): PageRecommendedProviderCard[]
   });
 }
 
+/** City comparison — housing search, agents, banks, health, relocation (planning order). */
+export function getCityComparisonRecommendedCards(): PageRecommendedProviderCard[] {
+  return buildPageRecommendedProviderCards({
+    categories: [
+      "housing-platforms",
+      "rental-agencies",
+      "banks",
+      "health-insurance",
+      "relocation-agencies",
+      "relocation-services",
+    ],
+    limit: 8,
+    strategy: "round-robin",
+    append: [INDEPENDER],
+  });
+}
+
+export type CityComparisonServiceGroup = {
+  title: string;
+  description?: string;
+  cards: PageRecommendedProviderCard[];
+};
+
+/** Grouped by likely next step after picking a city shortlist (editorial order). */
+export function getCityComparisonGroupedRecommendations(): CityComparisonServiceGroup[] {
+  return [
+    {
+      title: "Housing platforms",
+      description: "Browse listings once you have a rough city and monthly budget band from the comparison.",
+      cards: buildPageRecommendedProviderCards({
+        categories: ["housing-platforms"],
+        limit: 4,
+        strategy: "sequential",
+      }),
+    },
+    {
+      title: "Rental agencies",
+      description: "Agencies and viewing support — confirm city coverage, fees, and contract terms directly.",
+      cards: buildPageRecommendedProviderCards({
+        categories: ["rental-agencies"],
+        limit: 4,
+        strategy: "sequential",
+      }),
+    },
+    {
+      title: "Bank accounts",
+      description: "Everyday banking after you know where you will register and work.",
+      cards: buildPageRecommendedProviderCards({
+        categories: ["banks"],
+        limit: 3,
+        strategy: "sequential",
+      }),
+    },
+    {
+      title: "Health insurance",
+      description: "Basic Dutch health insurance is mandatory for most residents — compare policies, not just premium teasers.",
+      cards: buildPageRecommendedProviderCards({
+        categories: ["health-insurance"],
+        limit: 4,
+        strategy: "sequential",
+        append: [INDEPENDER],
+      }),
+    },
+    {
+      title: "Relocation support",
+      description: "When you want coordinated help with housing, schools, or employer-sponsored moves.",
+      cards: buildPageRecommendedProviderCards({
+        categories: ["relocation-agencies", "relocation-services"],
+        limit: 5,
+        strategy: "round-robin",
+      }),
+    },
+  ];
+}
+
 /** Rent affordability — split bundles for contextual sections (housing vs banks vs health vs relocation). */
 export type RentAffordabilityServiceBundles = {
   housing: PageRecommendedProviderCard[];

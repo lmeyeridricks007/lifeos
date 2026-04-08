@@ -21,7 +21,9 @@
       "featuredToolIds": [
         "thirty-percent-ruling-calculator",
         "dutch-salary-net-calculator",
+        "double-tax-awareness-tool",
         "expat-cost-of-living-calculator",
+        "netherlands-city-comparison-tool",
         "payslip-decoder"
       ]
     },
@@ -30,13 +32,15 @@
       "featuredToolIds": [
         "thirty-percent-ruling-calculator",
         "dutch-salary-net-calculator",
+        "double-tax-awareness-tool",
         "expat-cost-of-living-calculator",
+        "netherlands-city-comparison-tool",
         "payslip-decoder"
       ]
     },
     {
       "categoryId": "housing",
-      "featuredToolIds": ["rent-affordability-calculator", "dutch-rental-budget-calculator", "buy-vs-rent-calculator", "mortgage-eligibility-estimator"]
+      "featuredToolIds": ["rent-affordability-calculator", "netherlands-city-comparison-tool", "dutch-rental-budget-calculator", "buy-vs-rent-calculator", "mortgage-eligibility-estimator"]
     },
     {
       "categoryId": "transport",
@@ -79,10 +83,12 @@
         "relocation-cost-estimator",
         "rent-affordability-calculator",
         "expat-cost-of-living-calculator",
+        "netherlands-city-comparison-tool",
         "visa-checker",
         "visa-cost-calculator",
         "visa-timeline-estimator",
-        "payslip-decoder"
+        "payslip-decoder",
+        "employment-contract-risk-scanner"
       ]
     },
     "money": {
@@ -90,7 +96,9 @@
       "featuredToolIds": [
         "thirty-percent-ruling-calculator",
         "dutch-salary-net-calculator",
+        "double-tax-awareness-tool",
         "expat-cost-of-living-calculator",
+        "netherlands-city-comparison-tool",
         "job-offer-comparison-tool",
         "employment-contract-risk-scanner",
         "payslip-decoder"
@@ -110,6 +118,7 @@
       "categoryId": "housing",
       "featuredToolIds": [
         "rent-affordability-calculator",
+        "netherlands-city-comparison-tool",
         "dutch-rental-budget-calculator",
         "utilities-services-comparison-tool"
       ]
@@ -120,8 +129,10 @@
         "visa-checker",
         "document-readiness",
         "moving-checklist",
+        "employment-contract-risk-scanner",
         "rent-affordability-calculator",
         "expat-cost-of-living-calculator",
+        "netherlands-city-comparison-tool",
         "dutch-salary-net-calculator",
         "payslip-decoder",
         "dutch-rental-budget-calculator",

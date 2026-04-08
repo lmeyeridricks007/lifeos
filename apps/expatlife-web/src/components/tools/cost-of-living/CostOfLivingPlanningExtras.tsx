@@ -36,6 +36,11 @@ const SALARY_AND_TAX_TOOLS = [
 
 const CITY_COMPARE = [
   {
+    href: `${BASE}/tools/city-comparison/`,
+    title: "Netherlands city comparison tool",
+    description: "Weighted compare of rent pressure, monthly anchors, commute, and lifestyle fit across shortlist cities.",
+  },
+  {
     href: `${BASE}/cities/`,
     title: "Compare Dutch cities",
     description: "Unsure how much rent is realistic by city? Start with city hubs before you lock numbers in the calculator.",

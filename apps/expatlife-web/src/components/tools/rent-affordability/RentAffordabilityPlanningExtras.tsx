@@ -81,6 +81,18 @@ export function RentAffordabilityPlanningExtras() {
             >
               Open cost of living calculator →
             </Link>
+            <Link
+              href={`${BASE}/tools/city-comparison/`}
+              className="inline-flex rounded-full border border-copilot-primary/15 bg-copilot-bg-soft px-4 py-2 text-sm font-semibold text-copilot-primary hover:border-copilot-primary/30"
+              onClick={() =>
+                trackRentAffordabilityCalculator("related_tool_clicked", {
+                  href: `${BASE}/tools/city-comparison/`,
+                  section: "compare_cities_tool",
+                })
+              }
+            >
+              City comparison tool →
+            </Link>
             {CITY_PILLS.map((c) => (
               <Link
                 key={c.href}
