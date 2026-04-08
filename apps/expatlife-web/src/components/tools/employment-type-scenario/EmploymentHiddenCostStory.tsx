@@ -6,8 +6,8 @@ import type { EmploymentScenarioId, ScenarioCostBuckets } from "@/src/lib/tools/
 
 type Props = {
   scenarioOrder: EmploymentScenarioId[];
-  labels: Record<EmploymentScenarioId, string>;
-  buckets: Record<EmploymentScenarioId, ScenarioCostBuckets>;
+  labels: Partial<Record<EmploymentScenarioId, string>>;
+  buckets: Partial<Record<EmploymentScenarioId, ScenarioCostBuckets>>;
   className?: string;
 };
 
@@ -97,7 +97,7 @@ export function EmploymentHiddenCostStory({ scenarioOrder, labels, buckets, clas
               key={id}
               className="rounded-xl border border-copilot-primary/12 bg-copilot-surface p-4 text-sm shadow-expatos-sm"
             >
-              <p className="font-semibold text-copilot-text-primary">{labels[id]}</p>
+              <p className="font-semibold text-copilot-text-primary">{labels[id] ?? id}</p>
               <dl className="mt-2 grid grid-cols-2 gap-x-2 gap-y-1 text-xs text-copilot-text-secondary">
                 <dt>Gross / revenue</dt>
                 <dd className="text-right font-medium tabular-nums text-copilot-text-primary">{formatEur(b.grossOrRevenueAnnual)}</dd>

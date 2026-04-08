@@ -1,0 +1,41 @@
+{
+  "id": "tool_childcare_cost_estimator_recommended",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "tool",
+    "route": "/netherlands/family/tools/childcare-cost-estimator",
+    "slot": "recommended-services"
+  },
+  "variant": "cards",
+  "title": "Banking, housing & insurance for families",
+  "intro": "After you have a childcare cost picture, these are common next steps for paying deposits, renting nearby, and meeting mandatory health cover. Some links are affiliate links — we may earn a commission at no extra cost to you.",
+  "categoryOrder": ["banking", "housing", "insurance", "mobile"],
+  "items": [
+    {
+      "providerId": "bunq",
+      "reason": "Fast English-friendly onboarding — useful for salary, deposits, and childcare direct debits once you have an address."
+    },
+    {
+      "providerId": "abn-amro",
+      "reason": "Full-service Dutch bank with expat-oriented support when you want a traditional branch + payroll setup."
+    },
+    {
+      "providerId": "wise",
+      "reason": "Move money across borders while you settle registration fees, deposits, or first invoices."
+    },
+    {
+      "providerId": "housinganywhere",
+      "reason": "Short-term and mid-term rentals while you lock in childcare, commute, and a longer lease."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Compare mandatory Dutch basic health insurance — a separate line item from childcare but part of the same household budget."
+    },
+    {
+      "providerId": "simyo",
+      "reason": "Simple mobile plans so you can take provider calls and municipality messages without roaming surprises."
+    }
+  ],
+  "disclosure": "Some links are affiliate links. If you use them, we may earn a commission at no extra cost to you. Confirm pricing, coverage, and contract terms on each provider site."
+}

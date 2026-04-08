@@ -1,0 +1,25 @@
+{
+  "id": "tool_childcare_cost_estimator_childcare_search",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "tool",
+    "route": "/netherlands/family/tools/childcare-cost-estimator",
+    "slot": "recommended-services-childcare"
+  },
+  "variant": "cards",
+  "title": "Childcare search & occasional care",
+  "intro": "These resources help you find registered daycare (kinderdagverblijf), compare options, or cover short gaps. They are not substitutes for municipal lists, waiting-list reality, or your contract — always confirm hours, fees, and quality with the provider.",
+  "categoryOrder": ["childcare"],
+  "items": [
+    {
+      "providerId": "kinderdagverblijf-nl",
+      "reason": "National directory to locate centres near home or work while you model commute + monthly fees in this calculator."
+    },
+    {
+      "providerId": "sitters-nl",
+      "reason": "Flexible babysitting when you are between permanent childcare arrangements or need ad-hoc cover."
+    }
+  ],
+  "disclosure": "Links above are independent resources unless marked otherwise on the card. Separate banking and insurance picks appear below."
+}

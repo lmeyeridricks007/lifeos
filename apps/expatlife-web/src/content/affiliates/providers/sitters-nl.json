@@ -1,0 +1,22 @@
+{
+  "id": "sitters-nl",
+  "name": "Sitters.nl",
+  "tagline": "Book vetted babysitters and occasional childminders in the Netherlands — helpful for gaps before a fixed daycare slot or for evenings.",
+  "categoryIds": ["childcare"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Babysitting", "NL-wide"],
+  "highlights": ["Background-checked sitters", "Flexible hours", "Often used while waiting lists clear"],
+  "cta": {
+    "label": "View Sitters.nl",
+    "href": "https://www.sitters.nl/",
+    "isAffiliate": false
+  },
+  "disclosure": "Third-party platform; we do not earn a commission from this link. Confirm pricing and vetting on their site.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=sitters.nl&sz=128",
+    "alt": "Sitters.nl"
+  }
+}

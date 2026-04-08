@@ -13,12 +13,14 @@ export {
   trackPayslipDecoder,
   trackCostOfLivingCalculator,
   trackRentAffordabilityCalculator,
+  trackChildcareEstimator,
   trackContractScanner,
 } from "@/lib/analytics/track";
 export type {
   PayslipDecoderAnalyticsEvent,
   CostOfLivingCalculatorAnalyticsEvent,
   RentAffordabilityCalculatorAnalyticsEvent,
+  ChildcareEstimatorAnalyticsEvent,
   ContractScannerAnalyticsEvent,
 } from "@/lib/analytics/track";
 export type { OutboundLinkType, ServiceClickParams, OutboundLinkParams, CtaClickParams } from "@/lib/analytics/track";

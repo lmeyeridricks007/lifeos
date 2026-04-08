@@ -1,0 +1,21 @@
+{
+  "id": "tool_childcare_cost_estimator_relocation_childcare_help",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "tool",
+    "route": "/netherlands/family/tools/childcare-cost-estimator",
+    "slot": "recommended-services-relocation"
+  },
+  "variant": "cards",
+  "title": "Relocation partners who support childcare & schools",
+  "intro": "These firms routinely help internationals with housing and registration and often provide school or childcare referrals as part of settling-in — useful when you need human guidance, not just a directory.",
+  "categoryOrder": ["relocation"],
+  "items": [],
+  "registryProviders": {
+    "categories": ["relocation-agencies", "relocation-services"],
+    "limit": 6,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Providers are sourced from our editorial registry; some outbound links may be tracked or affiliate where we have a commercial relationship. Request quotes and confirm childcare scope before you engage."
+}

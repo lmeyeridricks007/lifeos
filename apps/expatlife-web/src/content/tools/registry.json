@@ -1445,14 +1445,20 @@
       "title": "Childcare Cost Estimator",
       "slug": "childcare-cost-estimator",
       "route": "/netherlands/family/tools/childcare-cost-estimator/",
-      "status": "placeholder",
+      "status": "live",
       "templateType": "calculator",
       "categoryId": "partner-family",
-      "menuGroup": "culture",
+      "menuGroup": "money",
       "seo": {
-        "title": "Childcare Cost Estimator Netherlands (Coming Soon)",
-        "description": "Estimate childcare costs and scenario differences for expat families.",
-        "keywords": ["childcare cost Netherlands", "expat family childcare estimator"]
+        "title": "Netherlands Childcare Cost Estimator 2026 | Daycare, BSO & Gastouder",
+        "description": "Plan gross childcare bills, estimated benefit, net cost, and first-month cash for Dutch daycare, BSO, and gastouder. Not an official toeslag calculator.",
+        "keywords": [
+          "childcare cost Netherlands expat",
+          "daycare cost Amsterdam",
+          "BSO cost Netherlands",
+          "gastouder cost Netherlands",
+          "childcare benefit estimate Netherlands"
+        ]
       },
       "summary": "Estimate childcare costs and subsidy-aware scenarios.",
       "primaryConversion": "both",

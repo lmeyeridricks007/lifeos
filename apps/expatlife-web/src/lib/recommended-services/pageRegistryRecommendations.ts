@@ -95,6 +95,109 @@ export function getCostOfLivingRecommendedCards(): PageRecommendedProviderCard[]
   });
 }
 
+/** Childcare cost estimator — relocation, housing search, health, tax help, banks. */
+export function getChildcareRecommendedCards(): PageRecommendedProviderCard[] {
+  return buildPageRecommendedProviderCards({
+    categories: [
+      "relocation-agencies",
+      "relocation-services",
+      "housing-platforms",
+      "banks",
+      "health-insurance",
+      "visa-consultants",
+    ],
+    limit: 6,
+    strategy: "round-robin",
+    append: [INDEPENDER],
+  });
+}
+
+/** Editorial groupings for the childcare estimator (external services + official portals as cards). */
+export type ChildcareRecommendedServiceGroup = {
+  title: string;
+  description?: string;
+  cards: PageRecommendedProviderCard[];
+};
+
+const CHILDCARE_OFFICIAL_CONTEXT_CARDS: PageRecommendedProviderCard[] = [
+  {
+    name: "Rijksoverheid — Kinderopvang",
+    url: "https://www.rijksoverheid.nl/onderwerpen/kinderopvang",
+    useFor:
+      "Neutral overview of childcare types in the Netherlands and how registration fits — use before you shortlist individual providers.",
+    priceRange: "Public information.",
+  },
+  {
+    name: "Belastingdienst — Kinderopvangtoeslag",
+    url: "https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/prive/toeslagen/kinderopvangtoeslag/kinderopvangtoeslag",
+    useFor: "Official childcare benefit hub: rules, updates, and links to applications — not a substitute for reading your award letter.",
+    priceRange: "Government site.",
+  },
+];
+
+/** Grouped recommendations: childcare context, relocation, housing, banking, health, tax, visa. */
+export function getChildcareGroupedRecommendations(): ChildcareRecommendedServiceGroup[] {
+  return [
+    {
+      title: "Childcare search & official context",
+      description:
+        "Government pages define care types and benefit rules; providers and agencies set prices and contracts. Use both, not one or the other.",
+      cards: CHILDCARE_OFFICIAL_CONTEXT_CARDS,
+    },
+    {
+      title: "Relocation services",
+      description: "Help with housing, schools, or employer-sponsored moves — confirm city coverage and fees before you engage.",
+      cards: buildPageRecommendedProviderCards({
+        categories: ["relocation-agencies", "relocation-services"],
+        limit: 4,
+        strategy: "round-robin",
+      }),
+    },
+    {
+      title: "Housing search",
+      description: "Listings and agents interact directly with commute distance to childcare and school — budget them together.",
+      cards: buildPageRecommendedProviderCards({
+        categories: ["housing-platforms"],
+        limit: 4,
+        strategy: "sequential",
+      }),
+    },
+    {
+      title: "Banking for families",
+      description: "Everyday accounts for rent, deposits, and childcare direct debits — features matter as much as brand.",
+      cards: buildPageRecommendedProviderCards({
+        categories: ["banks"],
+        limit: 4,
+        strategy: "sequential",
+      }),
+    },
+    {
+      title: "Health insurance",
+      description: "Basic Dutch health insurance is mandatory for most residents — compare cover, not teaser premiums alone.",
+      cards: buildPageRecommendedProviderCards({
+        categories: ["health-insurance"],
+        limit: 3,
+        strategy: "sequential",
+        append: [INDEPENDER],
+      }),
+    },
+    {
+      title: "Expat tax advisors",
+      description: "When income, allowances, and payroll interact beyond what a planner can safely assume.",
+      cards: getThirtyPercentRulingTaxAdvisorCards(),
+    },
+    {
+      title: "Visa & immigration consultants",
+      description: "If permits or start dates drive when childcare can begin, confirm timelines with qualified immigration support.",
+      cards: buildPageRecommendedProviderCards({
+        categories: ["visa-consultants"],
+        limit: 3,
+        strategy: "sequential",
+      }),
+    },
+  ];
+}
+
 /** City comparison — housing search, agents, banks, health, relocation (planning order). */
 export function getCityComparisonRecommendedCards(): PageRecommendedProviderCard[] {
   return buildPageRecommendedProviderCards({

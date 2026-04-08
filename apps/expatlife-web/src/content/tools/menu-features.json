@@ -23,6 +23,7 @@
         "dutch-salary-net-calculator",
         "double-tax-awareness-tool",
         "expat-cost-of-living-calculator",
+        "childcare-cost-estimator",
         "netherlands-city-comparison-tool",
         "employment-type-scenario-tool",
         "payslip-decoder"
@@ -35,6 +36,7 @@
         "dutch-salary-net-calculator",
         "double-tax-awareness-tool",
         "expat-cost-of-living-calculator",
+        "childcare-cost-estimator",
         "netherlands-city-comparison-tool",
         "employment-type-scenario-tool",
         "payslip-decoder"
@@ -62,7 +64,7 @@
     },
     {
       "categoryId": "partner-family",
-      "featuredToolIds": ["partner-work-eligibility-checker", "childcare-cost-estimator"]
+      "featuredToolIds": ["partner-work-eligibility-checker"]
     },
     {
       "categoryId": "leaving-nl",
@@ -101,6 +103,7 @@
         "dutch-salary-net-calculator",
         "double-tax-awareness-tool",
         "expat-cost-of-living-calculator",
+        "childcare-cost-estimator",
         "netherlands-city-comparison-tool",
         "job-offer-comparison-tool",
         "employment-type-scenario-tool",
@@ -112,7 +115,6 @@
       "categoryId": "integration",
       "featuredToolIds": [
         "partner-work-eligibility-checker",
-        "childcare-cost-estimator",
         "inburgering-timeline-planner",
         "inburgering-exam-readiness-checker",
         "knm-knowledge-quiz"

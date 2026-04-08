@@ -8,6 +8,7 @@ import type {
   EmploymentToolInsights,
   EmploymentTypeScenarioInput,
   EmploymentTypeScenarioResult,
+  PriorityWeightsNormalized,
   ScenarioClosenessInsight,
   ScenarioCostBuckets,
   ScenarioRow,
@@ -122,7 +123,7 @@ export function computeDecisionLenses(scenarios: ScenarioRow[], rankedIds: Emplo
   return lenses;
 }
 
-const PRIORITY_PHRASES: { key: keyof PrioritySliders; phrase: string }[] = [
+const PRIORITY_PHRASES: { key: keyof PriorityWeightsNormalized; phrase: string }[] = [
   { key: "higherNetIncome", phrase: "take-home after model-specific costs" },
   { key: "stabilitySecurity", phrase: "stability and predictable income" },
   { key: "lowerAdminBurden", phrase: "low admin and paperwork load" },

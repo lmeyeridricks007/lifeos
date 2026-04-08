@@ -553,6 +553,28 @@ export function EmploymentTypeScenarioClient({
     );
   }
 
+  let earlyPreviewCard: ReactNode = null;
+  if (showEarlyPreview && previewNarrative && previewResult) {
+    const narrative = previewNarrative;
+    const earlyPreviewResult = previewResult;
+    earlyPreviewCard = (
+      <EmploymentEarlyPreviewCard
+        formId={formId}
+        topLabel={
+          narrative.confidence === "low" && narrative.reasons.length === 0
+            ? null
+            : earlyPreviewResult.scenarios.find((s) => s.scenarioId === earlyPreviewResult.bestFitId)?.shortLabel ?? null
+        }
+        topScenarioId={
+          narrative.confidence === "low" && narrative.reasons.length === 0 ? null : earlyPreviewResult.bestFitId
+        }
+        confidence={narrative.confidence}
+        reasons={narrative.reasons}
+        improvementHint={narrative.improvementHint}
+      />
+    );
+  }
+
   return (
     <div className="space-y-8">
       <div
@@ -593,22 +615,7 @@ export function EmploymentTypeScenarioClient({
       </div>
 
       <div id="tool-inputs" className="scroll-mt-28 space-y-5 md:scroll-mt-32">
-        {showEarlyPreview ? (
-          <EmploymentEarlyPreviewCard
-            formId={formId}
-            topLabel={
-              previewNarrative.confidence === "low" && previewNarrative.reasons.length === 0
-                ? null
-                : previewResult.scenarios.find((s) => s.scenarioId === previewResult.bestFitId)?.shortLabel ?? null
-            }
-            topScenarioId={
-              previewNarrative.confidence === "low" && previewNarrative.reasons.length === 0 ? null : previewResult.bestFitId
-            }
-            confidence={previewNarrative.confidence}
-            reasons={previewNarrative.reasons}
-            improvementHint={previewNarrative.improvementHint}
-          />
-        ) : null}
+        {earlyPreviewCard}
 
         <SectionCard
           title="Tool mode"

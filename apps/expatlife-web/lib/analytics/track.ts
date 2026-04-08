@@ -192,6 +192,29 @@ export function trackRentAffordabilityCalculator(
   }
 }
 
+export type ChildcareEstimatorAnalyticsEvent =
+  | "calculator_started"
+  | "calculator_completed"
+  | "summary_downloaded"
+  | "recommended_service_clicked"
+  | "recommended_internal_clicked"
+  | "related_tool_clicked"
+  | "example_preset_applied";
+
+export function trackChildcareEstimator(
+  event: ChildcareEstimatorAnalyticsEvent,
+  params?: Record<string, unknown>
+): void {
+  if (!canSendAnalyticsEvents()) return;
+  const payload = { tool: "childcare_cost_estimator", ...(params ?? {}) };
+  if (canSendGaDataLayerOrGtag()) {
+    trackEvent(event, payload);
+  }
+  if (shouldInitPosthog()) {
+    capturePosthog(event, payload);
+  }
+}
+
 /** Consent-gated GA + PostHog; stable names for product analytics. */
 export type ContractScannerAnalyticsEvent =
   | "contract_scanner_opened"

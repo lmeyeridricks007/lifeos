@@ -301,6 +301,7 @@ function buildMoneyToolRail(): NavItem[] {
     "thirty-percent-ruling-calculator",
     "dutch-salary-net-calculator",
     "expat-cost-of-living-calculator",
+    "childcare-cost-estimator",
     "rent-affordability-calculator",
     "healthcare-allowance-estimator",
     "double-tax-awareness-tool",
@@ -529,6 +530,13 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (CITY_HUB_PREFIXES.some((pre) => pathname === pre || pathname.startsWith(`${pre}/`))) return "cities";
 
   if (pathname.startsWith("/netherlands/money") || pathname.startsWith("/netherlands/taxes")) return "money";
+
+  if (
+    pathname === "/netherlands/family/tools/childcare-cost-estimator" ||
+    pathname.startsWith("/netherlands/family/tools/childcare-cost-estimator/")
+  ) {
+    return "money";
+  }
 
   if (pathname.startsWith("/netherlands/work")) return getWorkClusterNavKey(pathname);
 
@@ -794,6 +802,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Healthcare allowance", "/netherlands/taxes/healthcare-allowance/"),
           item("Rent allowance", "/netherlands/taxes/rent-allowance/"),
           item("Childcare allowance", "/netherlands/taxes/childcare-allowance/"),
+          item(
+            "Childcare cost estimator",
+            "/netherlands/family/tools/childcare-cost-estimator/",
+            "Gross bills, estimated toeslag, net out-of-pocket, and first-month cash — planning only."
+          ),
         ],
       },
       {

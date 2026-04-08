@@ -1,0 +1,22 @@
+{
+  "id": "kinderdagverblijf-nl",
+  "name": "Kinderdagverblijf.nl",
+  "tagline": "Search Dutch daycare centres (kinderdagverblijven) by location — useful when you want to compare options before you sign.",
+  "categoryIds": ["childcare"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Directory", "NL childcare"],
+  "highlights": ["Location-based search", "Many providers listed", "Plan visits alongside your commute"],
+  "cta": {
+    "label": "Search childcare locations",
+    "href": "https://www.kinderdagverblijf.nl/",
+    "isAffiliate": false
+  },
+  "disclosure": "Independent directory; we do not earn a commission from this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=kinderdagverblijf.nl&sz=128",
+    "alt": "Kinderdagverblijf.nl"
+  }
+}
