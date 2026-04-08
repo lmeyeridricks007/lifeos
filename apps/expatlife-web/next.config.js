@@ -11,6 +11,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/netherlands/work/tools/job-offer-comparison-tool",
+        destination: "/netherlands/work/tools/job-offer-comparison/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/tools/job-offer-comparison-tool/",
+        destination: "/netherlands/work/tools/job-offer-comparison/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/money/tools/30-ruling-calculator",
         destination: "/netherlands/taxes/tools/30-ruling-calculator/",
         permanent: true,

@@ -300,12 +300,12 @@ function buildMoneyToolRail(): NavItem[] {
   const ids = [
     "thirty-percent-ruling-calculator",
     "dutch-salary-net-calculator",
+    "job-offer-comparison-tool",
     "expat-cost-of-living-calculator",
     "childcare-cost-estimator",
     "rent-affordability-calculator",
     "healthcare-allowance-estimator",
     "double-tax-awareness-tool",
-    "job-offer-comparison-tool",
     "employment-contract-risk-scanner",
     "payslip-decoder",
     "employment-type-scenario-tool",
@@ -620,6 +620,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("First 60 days", "/netherlands/first-60-days-netherlands"),
           item("First 90 days", "/netherlands/first-90-days-netherlands"),
           item(
+            "Job offer comparison tool",
+            "/netherlands/work/tools/job-offer-comparison/",
+            "Compare two or three Dutch offers on net, benefits, ruling support, rent, commute, and contract signals — planning only."
+          ),
+          item(
             "Dutch payslip decoder",
             "/netherlands/work/tools/payslip-decoder/",
             "Read your first loonstrook — bruto/netto and common lines."
@@ -760,6 +765,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Explain bruto/netto and common lines from pasted text or a text PDF — not payroll advice."
           ),
           item(
+            "Job offer comparison tool",
+            "/netherlands/work/tools/job-offer-comparison/",
+            "Side-by-side offers: indicative net, 30% ruling support, relocation, rent, commute, and negotiation prompts — not tax or legal advice."
+          ),
+          item(
             "Employment contract risk scanner",
             "/netherlands/work/tools/employment-contract-risk-scanner/",
             "Planning scan for offer letters and contracts — not legal advice."
@@ -782,6 +792,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Salary & allowances",
         items: [
           item("Work tools hub", "/netherlands/work/tools/", "Payslip decoder, contract tools, and job-offer helpers."),
+          item(
+            "Job offer comparison tool",
+            "/netherlands/work/tools/job-offer-comparison/",
+            "Weigh multiple offers beyond headline gross — net, city costs, benefits, and expat support signals."
+          ),
           item(
             "Employment type scenario tool",
             "/netherlands/work/tools/employment-type-scenario-tool/",
@@ -822,6 +837,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Employment contracts & rights",
         items: [
+          item(
+            "Job offer comparison tool",
+            "/netherlands/work/tools/job-offer-comparison/",
+            "Structure a decision across offers before you dive into clause-level review."
+          ),
           item(
             "Employment contract risk scanner",
             "/netherlands/work/tools/employment-contract-risk-scanner/",

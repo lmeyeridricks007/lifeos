@@ -21,6 +21,7 @@
       "featuredToolIds": [
         "thirty-percent-ruling-calculator",
         "dutch-salary-net-calculator",
+        "job-offer-comparison-tool",
         "healthcare-allowance-estimator",
         "double-tax-awareness-tool",
         "expat-cost-of-living-calculator",
@@ -35,6 +36,7 @@
       "featuredToolIds": [
         "thirty-percent-ruling-calculator",
         "dutch-salary-net-calculator",
+        "job-offer-comparison-tool",
         "healthcare-allowance-estimator",
         "double-tax-awareness-tool",
         "expat-cost-of-living-calculator",
@@ -95,6 +97,7 @@
         "visa-cost-calculator",
         "visa-timeline-estimator",
         "payslip-decoder",
+        "job-offer-comparison-tool",
         "employment-contract-risk-scanner",
         "employment-type-scenario-tool"
       ]
@@ -141,6 +144,7 @@
         "moving-checklist",
         "employment-contract-risk-scanner",
         "employment-type-scenario-tool",
+        "job-offer-comparison-tool",
         "rent-affordability-calculator",
         "expat-cost-of-living-calculator",
         "healthcare-allowance-estimator",

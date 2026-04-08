@@ -48,7 +48,7 @@ export type ToolPageTemplateProps = {
   /** Example scenarios section */
   examplesSection?: ReactNode;
   /** FAQ accordion items: { id, question, answer } */
-  faqItems?: Array<{ id: string; question: string; answer: string }>;
+  faqItems?: ReadonlyArray<{ id: string; question: string; answer: string }>;
   /** Related guide cards — use `status: "coming_soon"` for placeholder routes (renders non-clickable card). */
   relatedGuides?: Array<{ href: string; title: string; description: string; status?: "coming_soon" }>;
   /** Internal link strip (e.g. hub, pillar, tools) */
