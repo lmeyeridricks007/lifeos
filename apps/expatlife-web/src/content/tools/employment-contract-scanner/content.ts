@@ -60,6 +60,16 @@ export const CONTRACT_SCANNER_AT_A_GLANCE = [
 
 export const CONTRACT_SCANNER_RELATED_GUIDES = [
   {
+    href: `${NL_BASE}/moving/working-in-the-netherlands/`,
+    title: "Working in the Netherlands",
+    description: "Move-focused bridge from offers and contract clauses to salary, permits, payroll, and relocation setup.",
+  },
+  {
+    href: `${NL_BASE}/moving/twv-work-permit/`,
+    title: "TWV work permit",
+    description: "Helpful when contract timing, employer action, and work authorization route need clarifying together.",
+  },
+  {
     href: `${NL_BASE}/work/employment-contract-netherlands/`,
     title: "Employment contract in the Netherlands",
     description: "Context on typical contract structure and what expats often negotiate.",

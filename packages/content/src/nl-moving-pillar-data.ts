@@ -68,6 +68,14 @@ const linkRegistry: LinkRegistry = {
     href: "/netherlands/moving/residence-permits/",
     title: "Residence permits in the Netherlands",
   },
+  working_in_netherlands_move_guide: {
+    href: "/netherlands/moving/working-in-the-netherlands/",
+    title: "Working in the Netherlands",
+  },
+  twv_work_permit_move_guide: {
+    href: "/netherlands/moving/twv-work-permit/",
+    title: "TWV work permit",
+  },
   extensions_changes_guide: {
     href: "/netherlands/moving/extensions-changes/",
     title: "Extensions & changes in the Netherlands",
@@ -104,6 +112,8 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       readingOrder: [
         "visas_residency_orientation",
         "residence_permits_guide",
+        "working_in_netherlands_move_guide",
+        "twv_work_permit_move_guide",
         "extensions_changes_guide",
         "hub",
         "document_readiness",
@@ -149,6 +159,8 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       readingOrder: [
         "visas_residency_orientation",
         "residence_permits_guide",
+        "working_in_netherlands_move_guide",
+        "twv_work_permit_move_guide",
         "extensions_changes_guide",
         "compare_visas",
         "hub",
@@ -286,6 +298,18 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       href: "/netherlands/moving/residence-permits/",
       description: "How residence permits connect to your purpose, renewal, and local setup.",
       timeToComplete: "10 min",
+    },
+    {
+      title: "Working in the Netherlands",
+      href: "/netherlands/moving/working-in-the-netherlands/",
+      description: "Work-led move guide linking offers, salary, permits, payroll, and first-month setup.",
+      timeToComplete: "12 min",
+    },
+    {
+      title: "TWV work permit",
+      href: "/netherlands/moving/twv-work-permit/",
+      description: "Practical route guide for TWV, employer action, route comparison, and timing questions.",
+      timeToComplete: "9 min",
     },
     {
       title: "Extensions & changes in the Netherlands",
@@ -587,6 +611,8 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
     related: {
       sectionTitle: "Related pages",
       cards: [
+        { linkKey: "working_in_netherlands_move_guide", description: "Move-pillar guide for job offers, salary, permits, payroll, and relocation trade-offs." },
+        { linkKey: "twv_work_permit_move_guide", description: "TWV route guide for employer-driven work authorization questions and route comparison." },
         { linkKey: "extensions_changes_guide", description: "After arrival: permit timing, renewals, and life changes—next to visas and residence permits." },
         { linkKey: "living_survival_guide", description: "Living pillar: daily routines, transport, apps, and payments." },
         { linkKey: "hub", description: "Central links for the moving cluster." },
@@ -596,7 +622,7 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
     },
     sidebar: {
       startHereLabel: "Start here",
-      links: ["moving_checklist", "document_readiness", "extensions_changes_guide", "living_survival_guide", "hub"],
+      links: ["moving_checklist", "document_readiness", "working_in_netherlands_move_guide", "twv_work_permit_move_guide", "extensions_changes_guide", "hub"],
       scenariosPrompt: "Not sure where to start? Pick a scenario:",
       scenariosJumpAnchor: "#scenarios",
       scenariosJumpLabel: "Jump to scenarios",

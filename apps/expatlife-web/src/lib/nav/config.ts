@@ -393,8 +393,9 @@ function isCulturePillarPath(pathname: string): boolean {
 }
 
 const WORK_PATH_HIGHLIGHT_MOVING: readonly string[] = [
+  "/netherlands/moving/working-in-the-netherlands",
+  "/netherlands/moving/twv-work-permit",
   "/netherlands/work/working-in-netherlands",
-  "/netherlands/work/twv-work-permit",
   "/netherlands/work/changing-jobs-netherlands",
   "/netherlands/work/resigning-job-netherlands",
   "/netherlands/work/layoffs-netherlands",
@@ -610,6 +611,8 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Self-employed visa", "/netherlands/visa/self-employed-visa"),
           item("Student visa", "/netherlands/visa/student-visa"),
           item("Visas & residency", "/netherlands/moving/visas-residency/"),
+          item("Working in the Netherlands", "/netherlands/moving/working-in-the-netherlands/"),
+          item("TWV work permit", "/netherlands/moving/twv-work-permit/"),
           item("Residence permits", "/netherlands/moving/residence-permits/"),
           item("Extensions & changes", "/netherlands/moving/extensions-changes/"),
           item("Status changes", "/netherlands/moving/status-changes/"),
@@ -626,8 +629,8 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Work permits & job changes",
         items: [
-          item("Working in the Netherlands", "/netherlands/work/working-in-netherlands/"),
-          item("TWV work permit", "/netherlands/work/twv-work-permit/"),
+          item("Working in the Netherlands", "/netherlands/moving/working-in-the-netherlands/"),
+          item("TWV work permit", "/netherlands/moving/twv-work-permit/"),
           item("Changing jobs Netherlands", "/netherlands/work/changing-jobs-netherlands/"),
           item("Resigning job Netherlands", "/netherlands/work/resigning-job-netherlands/"),
           item("Layoffs Netherlands", "/netherlands/work/layoffs-netherlands/"),
@@ -760,6 +763,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Employment contracts & rights",
         items: [
+          item("Moving for work", "/netherlands/moving/working-in-the-netherlands/"),
           item("Working in the Netherlands", "/netherlands/work/working-in-netherlands/"),
           item("Employment contract Netherlands", "/netherlands/work/employment-contract-netherlands/"),
           item("Probation period Netherlands", "/netherlands/work/probation-period-netherlands/"),

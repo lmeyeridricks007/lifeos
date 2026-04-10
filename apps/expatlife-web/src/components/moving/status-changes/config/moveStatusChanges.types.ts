@@ -6,7 +6,6 @@ import type {
   MoveVisaResidencyProgressionStep,
   MoveVisaResidencyReferences,
   MoveVisaResidencyRelatedTools,
-  MoveVisaResidencyTip,
 } from "../../visas-residency/config/moveVisaResidency.types";
 import type { MoveResidencePermitInternalLink } from "../../residence-permits/config/moveResidencePermits.types";
 
@@ -101,7 +100,10 @@ export type MoveStatusChangesLifecycleRegion = {
   cards: readonly MoveStatusChangesLifecycleCard[];
 };
 
-export type MoveStatusChangesTipCallout = MoveVisaResidencyTip & {
+export type MoveStatusChangesTipCallout = {
+  id: string;
+  title: string;
+  body: string;
   visualKey?: MoveStatusChangesVisualKey;
 };
 

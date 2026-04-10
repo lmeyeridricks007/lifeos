@@ -86,7 +86,7 @@ const workSection = {
       ],
       whatMattersNext: "Get clear on the work setup while dates can still move, not after notice periods and start dates are already locked.",
       relatedLinks: [
-        { label: "Working in the Netherlands", href: "/netherlands/work/working-in-netherlands/" },
+        { label: "Working in the Netherlands", href: "/netherlands/moving/working-in-the-netherlands/" },
         { label: "30% ruling calculator", href: "/netherlands/taxes/tools/30-ruling-calculator/" },
       ],
     },
@@ -115,7 +115,7 @@ const workSection = {
     },
     {
       label: "Working in the Netherlands",
-      href: "/netherlands/work/working-in-netherlands/",
+      href: "/netherlands/moving/working-in-the-netherlands/",
       description: "Context on contracts, payroll, and work realities around status-sensitive changes.",
     },
   ],

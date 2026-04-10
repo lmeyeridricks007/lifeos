@@ -18,7 +18,7 @@ export const moveExtensionsChangesFaq: readonly PillarFaqItem[] = [
     a: "Assume **immigration may care** — not only HR. Ask **early** what your permit type needs. Then use **offer** and **contract** tools; confirm decisions with **IND** or an adviser.",
     links: [
       { label: "Job offer comparison", href: "/netherlands/work/tools/job-offer-comparison/" },
-      { label: "Working in the Netherlands", href: "/netherlands/work/working-in-netherlands/" },
+      { label: "Working in the Netherlands", href: "/netherlands/moving/working-in-the-netherlands/" },
     ],
   },
   {

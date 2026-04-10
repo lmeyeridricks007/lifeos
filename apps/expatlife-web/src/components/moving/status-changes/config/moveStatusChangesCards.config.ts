@@ -89,7 +89,7 @@ export const moveStatusChangesCards = {
         href: "/netherlands/work/tools/job-offer-comparison/",
         description: "Compare work options before making a status-sensitive move.",
       },
-      relatedLinks: [{ label: "Working in the Netherlands", href: "/netherlands/work/working-in-netherlands/" }],
+      relatedLinks: [{ label: "Working in the Netherlands", href: "/netherlands/moving/working-in-the-netherlands/" }],
     },
     {
       id: "family-change",

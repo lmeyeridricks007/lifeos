@@ -641,7 +641,7 @@ export function ShoppingGroceriesView() {
             >
               <PracticalChipRow chips={["Main shop", "Top-ups", "Household basics"]} />
               <p className="mb-4 max-w-3xl text-sm leading-relaxed text-foreground-muted sm:mb-5">
-                If you can quickly answer "where would I buy this?" for food, top-ups, and household basics, you already understand most of the system.
+                If you can quickly answer &quot;where would I buy this?&quot; for food, top-ups, and household basics, you already understand most of the system.
               </p>
               <div className="grid grid-cols-1 gap-3 sm:gap-4 lg:grid-cols-2">
                 {shoppingGroceriesStoreCategories.map((card) => (

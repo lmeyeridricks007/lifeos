@@ -212,6 +212,8 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Self-employed visa", "/netherlands/visa/self-employed-visa"),
           item("Student visa", "/netherlands/visa/student-visa"),
           item("Partner & family", "/netherlands/visa/partner-family-visa"),
+          item("Working in the Netherlands", "/netherlands/moving/working-in-the-netherlands/"),
+          item("TWV work permit", "/netherlands/moving/twv-work-permit/"),
           item("Residence permits", "/netherlands/moving/residence-permits/"),
           item("Extensions & changes", "/netherlands/moving/extensions-changes/"),
           item("Status changes", "/netherlands/moving/status-changes/"),

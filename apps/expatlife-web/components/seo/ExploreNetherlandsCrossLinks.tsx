@@ -25,6 +25,16 @@ export function ExploreNetherlandsCrossLinks() {
               </Link>
             </li>
             <li>
+              <Link href="/netherlands/moving/working-in-the-netherlands/" className="text-link hover:underline">
+                Working in the Netherlands
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/moving/twv-work-permit/" className="text-link hover:underline">
+                TWV work permit
+              </Link>
+            </li>
+            <li>
               <Link href="/netherlands/moving/residence-permits/" className="text-link hover:underline">
                 Residence permits
               </Link>

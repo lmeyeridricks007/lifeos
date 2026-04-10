@@ -75,6 +75,12 @@ const pillarJourneyBridge: MoveResidencePermitsPageMeta["pillarJourneyBridge"] =
       meta: "Move",
     },
     {
+      href: "/netherlands/moving/working-in-the-netherlands/",
+      label: "Working in the Netherlands",
+      description: "Work-led move guide linking offers, salary, permits, payroll, and first-month setup.",
+      meta: "Move",
+    },
+    {
       href: "/netherlands/moving/extensions-changes/",
       label: "Extensions & changes",
       description: "Renewals, job changes, study/family shifts—practical orientation after you land.",
@@ -232,6 +238,16 @@ export const moveResidencePermitsPageMeta: MoveResidencePermitsPageMeta = {
       description: "Overview and short cards before you go deep on one permit.",
     },
     {
+      href: "/netherlands/moving/working-in-the-netherlands/",
+      label: "Working in the Netherlands",
+      description: "Use when a permit decision is tightly tied to a job offer, payroll, or relocation package.",
+    },
+    {
+      href: "/netherlands/moving/twv-work-permit/",
+      label: "TWV work permit",
+      description: "Useful when employer-driven work authorization may matter more than a general permit summary.",
+    },
+    {
       href: "/netherlands/moving/extensions-changes/",
       label: "Extensions & changes in the Netherlands",
       description: "After arrival: renewals, job and life shifts—when to notice and what to open next.",
@@ -306,6 +322,20 @@ export const moveResidencePermitsPageMeta: MoveResidencePermitsPageMeta = {
       title: "Visas & residency orientation",
       description: "Wider overview next to this permit-focused page.",
       href: RESIDENCE_PERMITS_VISAS,
+      ctaLabel: "Open guide",
+    },
+    {
+      id: "working",
+      title: "Working in the Netherlands",
+      description: "Move-focused guide for comparing offers, payroll, permits, and first-month setup together.",
+      href: "/netherlands/moving/working-in-the-netherlands/",
+      ctaLabel: "Open guide",
+    },
+    {
+      id: "twv",
+      title: "TWV work permit",
+      description: "Route guide for TWV, GVVA comparisons, employer action, and timing questions.",
+      href: "/netherlands/moving/twv-work-permit/",
       ctaLabel: "Open guide",
     },
     {

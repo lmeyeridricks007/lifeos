@@ -124,6 +124,8 @@ export function build90DayRelatedLinks(
   const links = [
     { label: "First 30 days in the Netherlands", href: withFrom("/netherlands/first-30-days-netherlands/") },
     { label: "First 60 days in the Netherlands", href: withFrom("/netherlands/first-60-days-netherlands/") },
+    { label: "Working in the Netherlands", href: withFrom("/netherlands/moving/working-in-the-netherlands/") },
+    { label: "TWV work permit", href: withFrom("/netherlands/moving/twv-work-permit/") },
     { label: "Register address in the Netherlands", href: withFrom("/netherlands/register-address-netherlands/") },
     { label: "Moving to the Netherlands guide", href: withFrom("/netherlands/moving-to-the-netherlands/") },
     { label: "Status changes in the Netherlands", href: withFrom("/netherlands/moving/status-changes/") },

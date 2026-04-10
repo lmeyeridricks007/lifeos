@@ -35,45 +35,52 @@ import {
 } from "@/lib/ui/moving-nl-pillar-identity";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { MovePillarExploreGrid } from "@/src/components/moving/MovePillarExploreGrid";
+import { MoveGuideAffiliateSupportBlock } from "@/src/components/moving/MoveGuideAffiliateSupportBlock";
 import { MovePillarJourneyBridge } from "@/src/components/moving/MovePillarJourneyBridge";
 import { MoveMisunderstandingCardGrid, MovePillarLifecycleCard } from "@/src/components/moving/movePillarCardPrimitives";
 import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc";
 import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
-import { MovingImmigrationAffiliatesBlock } from "@/src/components/moving/MovingImmigrationAffiliatesBlock";
 import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
-import { statusChangesPageMeta } from "./config/statusChanges.config";
-import type {
-  MoveStatusChangesRouteCategorySection,
-  MoveStatusChangesWorkSection,
-  StatusChangesPageMeta,
-} from "./config/moveStatusChanges.types";
-import { StatusChangesHeroGraphic } from "./StatusChangesHeroGraphic";
-import { StatusChangesSituationGrid } from "./StatusChangesSituationGrid";
-import { StatusChangesStartHereGrid } from "./StatusChangesStartHereGrid";
+import {
+  type MoveWorkingNlAfterArrivalSection,
+  type MoveWorkingNlGridSection,
+  type MoveWorkingNlJourneySection,
+  workingInTheNetherlandsPageMeta,
+} from "./config/workingInTheNetherlands.config";
+import { WorkingInTheNetherlandsHeroGraphic } from "./WorkingInTheNetherlandsHeroGraphic";
+import { WorkingInTheNetherlandsStartHereGrid } from "./WorkingInTheNetherlandsStartHereGrid";
 
 const DATE_MODIFIED = "2026-04-10";
 const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
 const TIGHT_SECTION_SPACING = `${SECTION_SCROLL_MARGIN} !pt-3 sm:!pt-4`;
 const CHIP_BADGE =
   "inline-flex rounded-full border-0 bg-copilot-bg-soft px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-copilot-primary ring-1 ring-copilot-primary/20";
-const SECTION_CARD_KICKER =
-  "text-[10px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted";
-const SECTION_SCAN_BOX =
-  "rounded-lg border-l-[3px] border-l-brand/25 bg-copilot-bg-soft/60 px-3 py-2 ring-1 ring-copilot-primary/[0.04]";
+const SECTION_CARD_KICKER = "text-[10px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted";
+const SECTION_SCAN_BOX = "rounded-lg border-l-[3px] border-l-brand/25 bg-copilot-bg-soft/60 px-3 py-2 ring-1 ring-copilot-primary/[0.04]";
+const INFO_CHIP =
+  "inline-flex rounded-full border border-copilot-primary/15 bg-copilot-bg-soft/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-copilot-primary";
 
-const meta = statusChangesPageMeta;
+const meta = workingInTheNetherlandsPageMeta;
 const CANONICAL = meta.canonicalPath;
 const PAGE_HERO_SUBTITLE = meta.hero.subtitle;
 const HUB = meta.movePillarHubPath;
+const WORKING_SUPPORT_LINKS = [
+  { href: "/netherlands/services/relocation-services/", label: "Relocation services" },
+  { href: "/netherlands/services/relocation-agencies/", label: "Relocation agencies" },
+  { href: "/netherlands/services/banks/", label: "Banks" },
+  { href: "/netherlands/services/health-insurance/", label: "Health insurance" },
+  { href: "/netherlands/services/housing-platforms/", label: "Housing platforms" },
+  { href: "/netherlands/services/", label: "All services" },
+] as const;
 
-export function StatusChangesView() {
+export function WorkingInTheNetherlandsView() {
   const baseUrl = getSiteOrigin();
   const shareUrl = new URL(CANONICAL, baseUrl).toString();
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Moving", item: new URL(HUB, baseUrl).toString() },
-    { name: "Status Changes", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Working in the Netherlands", item: new URL(CANONICAL, baseUrl).toString() },
   ];
 
   const primaryCtaClass = cn(
@@ -134,7 +141,7 @@ export function StatusChangesView() {
                     /
                   </span>
                   <span className="text-foreground" aria-current="page">
-                    Status Changes
+                    Working in the Netherlands
                   </span>
                 </nav>
               }
@@ -149,11 +156,21 @@ export function StatusChangesView() {
                   )}
                 >
                   <div className="min-w-0">
+                    <div className="mb-3 flex flex-wrap gap-2 sm:mb-4">
+                      {meta.hero.contextChips.map((chip) => (
+                        <span key={chip} className={INFO_CHIP}>
+                          {chip}
+                        </span>
+                      ))}
+                    </div>
                     <ul className="max-w-2xl space-y-2 text-sm leading-relaxed text-foreground-muted sm:space-y-2.5 sm:text-[0.9375rem]" role="list">
                       {meta.hero.bullets.map((bullet) => (
                         <li key={bullet} className="flex gap-2">
                           <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" aria-hidden />
-                          <span>{bullet}</span>
+                          <BoldParagraph
+                            text={bullet}
+                            className="min-w-0 [&_strong]:font-semibold [&_strong]:text-foreground"
+                          />
                         </li>
                       ))}
                     </ul>
@@ -170,32 +187,35 @@ export function StatusChangesView() {
                       </Link>
                     </div>
                     <p className="mt-4 text-sm text-foreground-muted">
-                      Need the broader route map first? Open{" "}
+                      Need the route overview first? Open{" "}
                       <Link href={meta.hero.compareLinks.visasPage.href} className="font-semibold text-link hover:text-link-hover hover:underline">
                         {meta.hero.compareLinks.visasPage.label}
                       </Link>{" "}
-                      or{" "}
-                      <Link href="/netherlands/visa/compare-visas/" className="font-semibold text-link hover:text-link-hover hover:underline">
-                        Compare visa routes
-                      </Link>
-                      .
+                      to see how the work route fits next to study, family, and self-employment moves.
                     </p>
                     <p className="mt-3 text-sm text-foreground-muted">
-                      For permit logic and what residence means over time, read{" "}
+                      Want the residence angle next? Read{" "}
                       <Link href={meta.hero.compareLinks.permitsPage.href} className="font-semibold text-link hover:text-link-hover hover:underline">
                         {meta.hero.compareLinks.permitsPage.label}
-                      </Link>
-                      .
+                      </Link>{" "}
+                      for permit purpose, continuity, and what changes later.
                     </p>
                     <p className="mt-3 text-sm text-foreground-muted">
-                      For renewals, expiry pressure, and after-arrival timing, pair this with{" "}
-                      <Link href={meta.hero.compareLinks.extensionsPage.href} className="font-semibold text-link hover:text-link-hover hover:underline">
-                        {meta.hero.compareLinks.extensionsPage.label}
-                      </Link>
-                      .
+                      Want the full Move sequence around this decision? Start from{" "}
+                      <Link href={HUB} className="font-semibold text-link hover:text-link-hover hover:underline">
+                        Moving to the Netherlands
+                      </Link>{" "}
+                      for the broader scenario map, timelines, and setup tools.
+                    </p>
+                    <p className="mt-3 text-sm text-foreground-muted">
+                      If your main question is already less about relocating and more about daily employment context, open the{" "}
+                      <Link href={meta.hero.compareLinks.workGuide.href} className="font-semibold text-link hover:text-link-hover hover:underline">
+                        {meta.hero.compareLinks.workGuide.label}
+                      </Link>{" "}
+                      in the Work cluster.
                     </p>
                   </div>
-                  <StatusChangesHeroGraphic className="w-full min-w-0 shrink-0 md:justify-self-end" />
+                  <WorkingInTheNetherlandsHeroGraphic className="w-full min-w-0 shrink-0 md:justify-self-end" />
                 </div>
               }
               shareUrl={shareUrl}
@@ -246,9 +266,9 @@ export function StatusChangesView() {
             <section
               className={cn(
                 SECTION_SCROLL_MARGIN,
-                "rounded-2xl border border-brand/15 bg-gradient-to-br from-brand-muted/35 via-surface-raised to-copilot-bg-soft/40 p-5 shadow-card ring-1 ring-border/10 sm:p-6"
+                "rounded-2xl border border-brand/15 bg-gradient-to-br from-brand-muted/35 via-surface-raised to-copilot-bg-soft/40 p-4 shadow-card ring-1 ring-border/10 sm:p-6"
               )}
-              aria-labelledby="sc-reassurance-heading"
+              aria-labelledby="witn-reassurance-heading"
             >
               <div className="flex gap-3 sm:gap-4">
                 <span
@@ -258,7 +278,7 @@ export function StatusChangesView() {
                   <Sparkles className="h-5 w-5" />
                 </span>
                 <div className="min-w-0">
-                  <p id="sc-reassurance-heading" className="text-sm font-semibold text-foreground">
+                  <p id="witn-reassurance-heading" className="text-sm font-semibold text-foreground">
                     {reassurance.title}
                   </p>
                   <BoldParagraph
@@ -266,7 +286,7 @@ export function StatusChangesView() {
                     className="mt-2 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
                   />
                   <p className="mt-3 text-xs font-medium text-foreground-muted/90">
-                    One clear situation, one next check, one useful page is enough for today.
+                    One clear question, one realistic tool, and one next page is enough for today.
                   </p>
                 </div>
               </div>
@@ -280,7 +300,7 @@ export function StatusChangesView() {
               links={meta.pillarJourneyBridge.links}
             />
 
-            <StatusChangesStartHereGrid
+            <WorkingInTheNetherlandsStartHereGrid
               id={meta.startHereRegion.id}
               eyebrow={meta.startHereRegion.eyebrow}
               title={meta.startHereRegion.title}
@@ -290,29 +310,36 @@ export function StatusChangesView() {
 
             <SectionDivider />
 
-            <StatusChangesSituationGrid region={meta.commonSituationsRegion} cards={meta.commonSituations} />
+            <JourneySection section={meta.journeySection} />
 
             <SectionDivider />
 
-            <WorkStatusSection section={meta.workSection} />
+            <CardGridSection section={meta.offersSection} />
 
             <SectionDivider />
 
-            <OtherContextsSection region={meta.otherContextsRegion} />
-
-            <MovingImmigrationAffiliatesBlock />
+            <CardGridSection section={meta.salarySection} />
 
             <SectionDivider />
 
-            <TimingSection region={meta.timingRegion} />
+            <CardGridSection section={meta.permitsSection} />
 
             <SectionDivider />
 
-            <LifeImpactSection region={meta.lifeImpactRegion} />
+            <MoveGuideAffiliateSupportBlock
+              placementId="nl-moving-working-support-providers"
+              categoryLinks={[...WORKING_SUPPORT_LINKS]}
+              browseLabel="Browse more work-move support categories: "
+            />
+
+            <SectionDivider />
+
+            <AfterArrivalSection region={meta.afterArrivalRegion} />
 
             <SectionDivider />
 
             <SectionBlockMisunderstandings />
+
             <SectionBlockWhatNext />
           </PillarJourneyStack>
         }
@@ -347,7 +374,7 @@ export function StatusChangesView() {
                   ))}
                 </div>
               </SectionBlock>
-              <MovePillarExploreGrid />
+              <MovePillarExploreGrid cards={meta.explorePillarCards} title="Explore the Move pillar" excludeHref={CANONICAL} />
               {meta.relatedTools.sections.map((section) => (
                 <div key={section.eyebrow}>
                   <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-foreground-muted">{section.eyebrow}</p>
@@ -419,45 +446,106 @@ function SectionDivider() {
   );
 }
 
-function WorkStatusSection({ section }: { section: MoveStatusChangesWorkSection }) {
+function JourneySection({ section }: { section: MoveWorkingNlJourneySection & { stages: MoveWorkingNlJourneySection["blocks"] } }) {
   return (
-    <SectionBlock
-      id={section.id}
-      className={TIGHT_SECTION_SPACING}
-      eyebrow={section.eyebrow}
-      title={section.title}
-      subtitle={section.subtitle}
-      subtitleMarkdown
-    >
+    <SectionBlock id={section.id} className={TIGHT_SECTION_SPACING} eyebrow={section.eyebrow} title={section.title} subtitle={section.subtitle} subtitleMarkdown>
       <MovePillarLifecycleCard className="max-w-none">
         <BoldParagraph
           text={section.intro}
           className="text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
         />
       </MovePillarLifecycleCard>
+      <div className="mt-4 rounded-2xl border border-brand/12 bg-gradient-to-br from-brand-muted/20 via-surface-raised to-copilot-bg-soft/35 p-4 shadow-card ring-1 ring-border/10 sm:p-5">
+        <div className="flex flex-wrap gap-2">
+          {section.firstFocus.chips.map((chip) => (
+            <span key={chip} className={INFO_CHIP}>
+              {chip}
+            </span>
+          ))}
+        </div>
+        <p className="mt-3 text-sm font-semibold text-foreground">{section.firstFocus.title}</p>
+        <BoldParagraph
+          text={section.firstFocus.body}
+          className="mt-2 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+        />
+      </div>
+      <div className="mt-4 grid gap-3 md:grid-cols-3">
+        {section.stages.map((stage) => (
+          <MovePillarLifecycleCard key={stage.id} className="h-full border-l-[3px] border-l-brand/25 bg-surface-raised/60">
+            <p className={SECTION_CARD_KICKER}>{stage.label}</p>
+            <p className="text-sm font-semibold text-foreground">{stage.title}</p>
+            <BoldParagraph
+              text={stage.intro}
+              className="mt-2 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+            />
+            <ul className="mt-3 space-y-1.5 text-[13px] leading-snug text-foreground-muted" role="list">
+              {stage.keyPoints.map((point) => (
+                <li key={point} className="flex gap-2">
+                  <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-brand/60" aria-hidden />
+                  <BoldParagraph text={point} className="min-w-0 [&_strong]:font-semibold [&_strong]:text-foreground" />
+                </li>
+              ))}
+            </ul>
+          </MovePillarLifecycleCard>
+        ))}
+      </div>
+    </SectionBlock>
+  );
+}
+
+function CardGridSection({
+  section,
+}: {
+  section: MoveWorkingNlGridSection & { cards: MoveWorkingNlGridSection["blocks"] };
+}) {
+  return (
+    <SectionBlock id={section.id} className={TIGHT_SECTION_SPACING} eyebrow={section.eyebrow} title={section.title} subtitle={section.subtitle} subtitleMarkdown>
+      <MovePillarLifecycleCard className="max-w-none">
+        <BoldParagraph
+          text={section.intro}
+          className="text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+        />
+      </MovePillarLifecycleCard>
+      <div className="mt-4 rounded-2xl border border-brand/12 bg-gradient-to-br from-brand-muted/20 via-surface-raised to-copilot-bg-soft/35 p-4 shadow-card ring-1 ring-border/10 sm:p-5">
+        <div className="flex flex-wrap gap-2">
+          {section.firstFocus.chips.map((chip) => (
+            <span key={chip} className={INFO_CHIP}>
+              {chip}
+            </span>
+          ))}
+        </div>
+        <p className="mt-3 text-sm font-semibold text-foreground">{section.firstFocus.title}</p>
+        <BoldParagraph
+          text={section.firstFocus.body}
+          className="mt-2 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+        />
+      </div>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
-        {section.scenarioCards.map((card) => (
+        {section.cards.map((card) => (
           <article
             key={card.id}
             className="relative overflow-hidden rounded-2xl border border-copilot-primary/[0.07] bg-copilot-surface p-4 shadow-expatos-md ring-1 ring-copilot-primary/[0.05] sm:p-5"
           >
             <div className={cn("absolute inset-x-0 top-0 h-0.5 opacity-90", movingNlSignatureGradientClass)} aria-hidden />
             <div className="flex flex-wrap items-center gap-2">
-              <span className={SECTION_CARD_KICKER}>Focus</span>
-              <span className={CHIP_BADGE}>{card.chip}</span>
+              {"chip" in card ? <span className={CHIP_BADGE}>{card.chip}</span> : <span className={SECTION_CARD_KICKER}>Focus area</span>}
+              <h3 className="text-base font-semibold text-foreground">{card.title}</h3>
             </div>
-            <h3 className="mt-2 text-base font-semibold text-foreground">{card.title}</h3>
             <BoldParagraph
               text={card.intro}
               className="mt-2 text-[13px] leading-snug text-foreground-muted sm:text-sm sm:leading-relaxed [&_strong]:font-semibold [&_strong]:text-foreground"
             />
             <div className={cn(SECTION_SCAN_BOX, "mt-3")}>
-              <p className="text-[9px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted">Who this usually affects</p>
-              <BoldParagraph
-                text={card.whoItAffects}
-                className="mt-1 text-[13px] leading-snug text-copilot-text-primary [&_strong]:font-semibold [&_strong]:text-copilot-text-primary sm:text-sm"
-              />
+              <p className="text-[9px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted">
+                {"chip" in card ? "Why it matters" : "Reality check"}
+              </p>
+              <p className="mt-1 text-[13px] leading-snug text-copilot-text-primary sm:text-sm">
+                {card.whatMattersNext ??
+                  ("chip" in card
+                    ? "Compare it in the context of the move, not as an isolated employment detail."
+                    : "Translate this into your city, household, and first-month setup before assuming the number works.")}
+              </p>
             </div>
             <ul className="mt-3 space-y-1.5 text-[13px] leading-snug text-foreground-muted sm:text-sm" role="list">
               {card.keyPoints.map((point) => (
@@ -467,26 +555,6 @@ function WorkStatusSection({ section }: { section: MoveStatusChangesWorkSection 
                 </li>
               ))}
             </ul>
-            <div className={cn(SECTION_SCAN_BOX, "mt-3 border-l-sky-500/30 bg-white/80 ring-border/60")}>
-              <p className="text-[9px] font-bold uppercase tracking-[0.14em] text-foreground-muted">What matters next</p>
-              <BoldParagraph
-                text={card.whatMattersNext}
-                className="mt-1 text-[13px] leading-snug text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground sm:text-sm"
-              />
-            </div>
-            {card.relatedLinks?.length ? (
-              <div className="mt-4 flex flex-wrap gap-2 border-t border-border/70 pt-3">
-                {card.relatedLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className="inline-flex min-h-[36px] items-center rounded-full border border-border bg-white px-3 py-1.5 text-xs font-semibold text-link shadow-sm hover:border-border-strong hover:bg-surface-muted hover:text-link-hover"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
-              </div>
-            ) : null}
           </article>
         ))}
       </div>
@@ -503,162 +571,61 @@ function WorkStatusSection({ section }: { section: MoveStatusChangesWorkSection 
   );
 }
 
-function OtherContextsSection({ region }: { region: MoveStatusChangesRouteCategorySection }) {
+function AfterArrivalSection({
+  region,
+}: {
+  region: MoveWorkingNlAfterArrivalSection & {
+    cards: Array<Omit<MoveWorkingNlAfterArrivalSection["blocks"][number], "internalLinks"> & { links: { label: string; href: string }[] }>;
+  };
+}) {
   return (
-    <SectionBlock
-      id={region.id}
-      className={TIGHT_SECTION_SPACING}
-      eyebrow={region.eyebrow}
-      title={region.title}
-      subtitle={region.subtitle}
-      subtitleMarkdown
-    >
-      <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
-        {region.blocks.map((block) => (
-          <article
-            key={block.id}
-            className="relative overflow-hidden rounded-2xl border border-copilot-primary/[0.07] bg-copilot-surface p-4 shadow-expatos-md ring-1 ring-copilot-primary/[0.05] sm:p-5"
-          >
-            <div className={cn("absolute inset-x-0 top-0 h-0.5 opacity-90", movingNlSignatureGradientClass)} aria-hidden />
-            <div className="flex flex-wrap items-center gap-2">
-              <span className={SECTION_CARD_KICKER}>Change context</span>
-              <span className={CHIP_BADGE}>{block.letter}</span>
-            </div>
-            <h3 className="mt-2 text-base font-semibold text-foreground">{block.title}</h3>
-            {block.intro ? <p className="mt-2 text-[13px] leading-snug text-foreground-muted sm:text-sm">{block.intro}</p> : null}
-            <div className="mt-3 space-y-2.5">
-              <div className="rounded-lg border-l-[3px] border-l-brand/30 bg-copilot-bg-soft/60 px-3 py-2 ring-1 ring-copilot-primary/[0.04]">
-                <p className="text-[9px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted">Who this is for</p>
-                <BoldParagraph
-                  text={block.whoItAffects}
-                  className="mt-1 text-[13px] leading-snug text-copilot-text-primary [&_strong]:font-semibold [&_strong]:text-copilot-text-primary sm:text-sm"
-                />
-              </div>
-              <ul className="space-y-1.5 text-[13px] leading-snug text-foreground-muted sm:text-sm" role="list">
-                {block.keyPoints.map((point) => (
-                  <li key={point} className="flex gap-2">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-brand/60" aria-hidden />
-                    <BoldParagraph text={point} className="min-w-0 [&_strong]:font-semibold [&_strong]:text-foreground" />
-                  </li>
-                ))}
-              </ul>
-              <div className="rounded-lg border-l-[3px] border-l-brand/25 bg-white/80 px-3 py-2 ring-1 ring-border/60">
-                <p className="text-[9px] font-bold uppercase tracking-[0.14em] text-foreground-muted">What usually matters next</p>
-                <BoldParagraph
-                  text={block.whatMattersNext}
-                  className="mt-1 text-[13px] leading-snug text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground sm:text-sm"
-                />
-              </div>
-            </div>
-            <div className="mt-4 flex flex-wrap gap-2 border-t border-border/70 pt-3">
-              {block.relatedLinks?.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="inline-flex min-h-[36px] items-center rounded-full border border-border bg-white px-3 py-1.5 text-xs font-semibold text-link shadow-sm hover:border-border-strong hover:bg-surface-muted hover:text-link-hover"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-          </article>
-        ))}
-      </div>
-    </SectionBlock>
-  );
-}
-
-function TimingSection({ region }: { region: StatusChangesPageMeta["timingRegion"] }) {
-  return (
-    <SectionBlock
-      id={region.id}
-      className={TIGHT_SECTION_SPACING}
-      eyebrow={region.eyebrow}
-      title={region.title}
-      subtitle={region.subtitle}
-      subtitleMarkdown
-    >
-      <ul
-        className="mb-4 flex list-none flex-wrap gap-2 p-0"
-        aria-label="Typical planning checkpoints from first awareness to practical planning"
-      >
-        {["Notice", "Dates", "Dependencies", "Plan"].map((label) => (
-          <li key={label} className="list-none">
-            <span className="inline-flex rounded-full border border-emerald-700/15 bg-emerald-50/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide text-emerald-900/90 ring-1 ring-emerald-800/10">
-              {label}
+    <SectionBlock id={region.id} className={TIGHT_SECTION_SPACING} eyebrow={region.eyebrow} title={region.title} subtitle={region.subtitle} subtitleMarkdown>
+      <MovePillarLifecycleCard className="max-w-none">
+        <BoldParagraph
+          text={region.intro}
+          className="text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+        />
+      </MovePillarLifecycleCard>
+      <div className="mt-4 rounded-2xl border border-sky-500/12 bg-gradient-to-br from-sky-50/70 via-surface-raised to-copilot-bg-soft/35 p-4 shadow-card ring-1 ring-border/10 sm:p-5">
+        <div className="flex flex-wrap gap-2">
+          {region.firstFocus.chips.map((chip) => (
+            <span key={chip} className={INFO_CHIP}>
+              {chip}
             </span>
-          </li>
-        ))}
-      </ul>
-      <div className="grid gap-3 sm:grid-cols-2">
-        {region.cards.map((card) => (
-          <MovePillarLifecycleCard key={card.id} className="border-l-[3px] border-l-emerald-600/25 bg-surface-raised/60">
-            <p className={SECTION_CARD_KICKER}>Continuity</p>
-            <p className="text-sm font-semibold text-foreground">{card.title}</p>
-            <BoldParagraph
-              text={card.intro}
-              className="mt-2 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
-            />
-            {card.keyPoints?.length ? (
-              <ul className="mt-3 space-y-1.5 text-[13px] leading-snug text-foreground-muted" role="list">
-                {card.keyPoints.map((point) => (
-                  <li key={point} className="flex gap-2">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-emerald-600/50" aria-hidden />
-                    <BoldParagraph text={point} className="min-w-0 [&_strong]:font-semibold [&_strong]:text-foreground" />
-                  </li>
-                ))}
-              </ul>
-            ) : null}
-          </MovePillarLifecycleCard>
-        ))}
+          ))}
+        </div>
+        <p className="mt-3 text-sm font-semibold text-foreground">{region.firstFocus.title}</p>
+        <BoldParagraph
+          text={region.firstFocus.body}
+          className="mt-2 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+        />
       </div>
-    </SectionBlock>
-  );
-}
-
-function LifeImpactSection({ region }: { region: StatusChangesPageMeta["lifeImpactRegion"] }) {
-  return (
-    <SectionBlock
-      id={region.id}
-      className={TIGHT_SECTION_SPACING}
-      eyebrow={region.eyebrow}
-      title={region.title}
-      subtitle={region.subtitle}
-      subtitleMarkdown
-    >
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
+      <div className="mt-4 grid gap-3 md:grid-cols-3">
         {region.cards.map((card) => (
           <MovePillarLifecycleCard key={card.id} className="h-full border-l-[3px] border-l-sky-600/25 bg-surface-raised/50">
-            <p className={SECTION_CARD_KICKER}>{card.id === "affected-quickly" ? "Moves fast" : card.id === "stressful" ? "Easy to ignore" : "Open next"}</p>
+            <div className="flex flex-wrap items-center gap-2">
+              <p className={SECTION_CARD_KICKER}>{card.label}</p>
+              <span className={INFO_CHIP}>{card.priority}</span>
+            </div>
             <p className="text-sm font-semibold text-foreground">{card.title}</p>
-            <BoldParagraph
-              text={card.intro}
-              className="mt-2 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
-            />
-            {card.keyPoints?.length ? (
-              <ul className="mt-3 space-y-1.5 text-[13px] leading-snug text-foreground-muted" role="list">
-                {card.keyPoints.map((point) => (
-                  <li key={point} className="flex gap-2">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-sky-600/50" aria-hidden />
-                    <BoldParagraph text={point} className="min-w-0 [&_strong]:font-semibold [&_strong]:text-foreground" />
-                  </li>
-                ))}
-              </ul>
-            ) : null}
-            {card.links?.length ? (
-              <>
-                <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.12em] text-foreground-muted">Open next</p>
-                <ul className="mt-2 space-y-1.5 text-sm" role="list">
-                  {card.links.map((link) => (
-                    <li key={link.href}>
-                      <Link href={link.href} className="font-semibold text-link hover:underline">
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            ) : null}
+            <ul className="mt-3 space-y-1.5 text-[13px] leading-snug text-foreground-muted" role="list">
+              {card.keyPoints.map((point) => (
+                <li key={point} className="flex gap-2">
+                  <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-sky-600/50" aria-hidden />
+                  <BoldParagraph text={point} className="min-w-0 [&_strong]:font-semibold [&_strong]:text-foreground" />
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.12em] text-foreground-muted">Open next</p>
+            <ul className="mt-2 space-y-1.5 text-sm" role="list">
+              {card.links.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="font-semibold text-link hover:underline">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </MovePillarLifecycleCard>
         ))}
       </div>
@@ -703,7 +670,7 @@ function SectionBlockWhatNext() {
         compact
         movingHubPremium
         suppressChrome
-        maxItems={5}
+        maxItems={6}
         items={meta.progressionSteps.map((step) => ({
           label: step.label,
           href: step.href,

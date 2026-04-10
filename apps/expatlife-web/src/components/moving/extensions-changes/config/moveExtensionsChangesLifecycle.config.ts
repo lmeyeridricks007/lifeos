@@ -69,7 +69,7 @@ export const moveExtensionsChangesLifecycle = {
         relatedLinks: [
           { label: "Cost of living calculator", href: "/netherlands/money/tools/cost-of-living-calculator/" },
           { label: "Move & immigration tools", href: "/netherlands/moving/tools/" },
-          { label: "Working in the Netherlands", href: "/netherlands/work/working-in-netherlands/" },
+          { label: "Working in the Netherlands", href: "/netherlands/moving/working-in-the-netherlands/" },
         ],
       },
     ],

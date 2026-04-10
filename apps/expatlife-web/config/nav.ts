@@ -83,6 +83,8 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
           link("Student visa", "/netherlands/visa/student-visa", "Study route"),
           link("Partner & family", "/netherlands/visa/partner-family-visa", "Family route"),
           link("Residence permits", "/netherlands/moving/residence-permits", "Permit categories", false),
+          link("Working in the Netherlands", "/netherlands/moving/working-in-the-netherlands", "Work-led relocation guide", false),
+          link("TWV work permit", "/netherlands/moving/twv-work-permit", "TWV route orientation", false),
           link("Extensions & changes", "/netherlands/moving/extensions-changes/", "After arrival: renewals & life changes", false),
           link("Status changes", "/netherlands/moving/status-changes/", "Path transitions", false),
         ],
@@ -136,6 +138,8 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
       {
         title: "Employment",
         links: [
+          link("Moving for work", "/netherlands/moving/working-in-the-netherlands", "Relocation-focused work guide", false),
+          link("TWV work permit", "/netherlands/moving/twv-work-permit", "When TWV may matter in a work move", false),
           link("Contracts", "/netherlands/work/contracts", "Contract fundamentals"),
           link("Contract checklist", "/netherlands/work/contracts/checklist", "Offer review"),
           link("Rights", "/netherlands/work/rights", "Employee rights"),

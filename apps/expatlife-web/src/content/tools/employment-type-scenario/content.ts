@@ -86,9 +86,14 @@ export const EMPLOYMENT_TYPE_RELATED_TOOLS = [
 
 export const EMPLOYMENT_TYPE_RELATED_GUIDES = [
   {
-    href: `${NL_BASE}/work/working-in-netherlands/`,
+    href: `${NL_BASE}/moving/working-in-the-netherlands/`,
     title: "Working in the Netherlands",
-    description: "Contracts, payroll culture, notice periods, and what “Dutch employment” usually implies.",
+    description: "Move-focused guide connecting work model choices to relocation, permits, salary, and first-month admin.",
+  },
+  {
+    href: `${NL_BASE}/moving/twv-work-permit/`,
+    title: "TWV work permit",
+    description: "Useful when employer-driven work authorization may change how you interpret the work setup.",
   },
   {
     href: `${NL_BASE}/work/contractor-vs-employee-netherlands/`,

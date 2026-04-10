@@ -170,6 +170,11 @@ export const PAYSLIP_SOFTWARE_APP_DESCRIPTION =
 
 export const PAYSLIP_RELATED_NEXT_STEPS = [
   {
+    href: `${NETHERLANDS_BASE}/moving/working-in-the-netherlands/`,
+    title: "Working in the Netherlands",
+    description: "Move-focused guide linking payroll reality back to offers, salary, housing, and first-month setup.",
+  },
+  {
     href: `${NETHERLANDS_BASE}/moving-to-the-netherlands/`,
     title: "Moving to the Netherlands",
     description: "Relocation hub alongside understanding your first Dutch payslips.",

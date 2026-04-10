@@ -33,7 +33,7 @@ export const moveExtensionsChangesRelatedTools = {
       items: [
         { title: "Job offer comparison", description: "Compare offers — not only gross salary.", href: "/netherlands/work/tools/job-offer-comparison/" },
         { title: "Employment contract risk scanner", description: "Clause checks before you sign.", href: "/netherlands/work/tools/employment-contract-risk-scanner/" },
-        { title: "Working in the Netherlands", description: "Employment and contracts when your job situation is changing.", href: "/netherlands/work/working-in-netherlands/" },
+        { title: "Working in the Netherlands", description: "Employment and contracts when your job situation is changing.", href: "/netherlands/moving/working-in-the-netherlands/" },
         { title: "Dutch salary (net) calculator", description: "Rough take-home when pay changes.", href: "/netherlands/taxes/tools/dutch-salary-net-calculator/" },
         { title: "30% ruling calculator", description: "Planning check for the expat tax benefit.", href: "/netherlands/taxes/tools/30-ruling-calculator/" },
       ],

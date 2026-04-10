@@ -113,14 +113,19 @@ export const JOB_OFFER_COMPARISON_TOOL_LINKS = [
 
 export const JOB_OFFER_RELATED_GUIDES = [
   {
+    href: `${NL_BASE}/moving/working-in-the-netherlands/`,
+    title: "Working in the Netherlands",
+    description: "Move-focused guide linking offers, salary, permits, payroll, and first-month setup.",
+  },
+  {
+    href: `${NL_BASE}/moving/twv-work-permit/`,
+    title: "TWV work permit",
+    description: "Useful when work authorization route and employer action affect whether an offer is really workable.",
+  },
+  {
     href: `${NL_BASE}/work/contracts/offer-comparison/`,
     title: "Dutch job offer comparison",
     description: "How to read offers, total reward, vakantiegeld, and what to verify before you accept.",
-  },
-  {
-    href: `${NL_BASE}/work/working-in-netherlands/`,
-    title: "Working in the Netherlands",
-    description: "Contracts, payroll norms, probation, notice, and everyday employment context for expats.",
   },
   {
     href: `${NL_BASE}/work/employment-contract-netherlands/`,

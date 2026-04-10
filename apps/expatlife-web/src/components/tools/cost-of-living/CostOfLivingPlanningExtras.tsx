@@ -74,6 +74,11 @@ const FIRST_MONTHS = [
     description: "Practical sequencing after arrival — overlaps with cash timing in this calculator.",
   },
   {
+    href: `${BASE}/moving/working-in-the-netherlands/`,
+    title: "Working in the Netherlands",
+    description: "Bridge salary, payroll, permit, and housing questions when a job is driving the move.",
+  },
+  {
     href: `${BASE}/moving-checklist-netherlands/`,
     title: "Moving checklist (Netherlands)",
     description: "Broader move tasks alongside the monthly budget you are modelling here.",

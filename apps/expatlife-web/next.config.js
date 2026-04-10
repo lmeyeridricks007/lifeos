@@ -41,6 +41,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/twv-work-permit",
+        destination: "/netherlands/moving/twv-work-permit/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/twv-work-permit/",
+        destination: "/netherlands/moving/twv-work-permit/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/money/tools/30-ruling-calculator",
         destination: "/netherlands/taxes/tools/30-ruling-calculator/",
         permanent: true,

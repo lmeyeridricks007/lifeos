@@ -108,8 +108,13 @@ export const moveVisaResidencySections: MoveVisaResidencySection[] = [
       },
       {
         label: "Working in the Netherlands",
-        href: "/netherlands/work/working-in-netherlands/",
+        href: "/netherlands/moving/working-in-the-netherlands/",
         description: "— bigger picture on working in the Netherlands once you know your permit type.",
+      },
+      {
+        label: "TWV work permit",
+        href: "/netherlands/moving/twv-work-permit/",
+        description: "— useful when employer-driven work authorization may be part of the route.",
       },
     ],
   },
@@ -247,7 +252,7 @@ export const moveVisaResidencyFaq: PillarFaqItem[] = [
   {
     q: "What if I am moving for work?",
     a: "Agree **who applies for the permit**, your **start date**, and whether you have **an address you can register**—ideally before you book flights. When you know the broad permit type, you can use our **work tools** for offers, contracts, and net pay.",
-    links: [{ label: "Working in the Netherlands", href: "/netherlands/work/working-in-netherlands/" }],
+    links: [{ label: "Working in the Netherlands", href: "/netherlands/moving/working-in-the-netherlands/" }],
   },
   {
     q: "What if I am joining my partner or family?",
@@ -480,6 +485,16 @@ export const moveVisaResidencyPageMeta: MoveVisaResidencyPageMeta = {
       description: "How permits connect to purpose, renewal, work, study, family, and life after approval.",
     },
     {
+      href: "/netherlands/moving/working-in-the-netherlands/",
+      label: "Working in the Netherlands",
+      description: "Work-led move guide for offers, salary, permits, payroll, and first-month setup.",
+    },
+    {
+      href: "/netherlands/moving/twv-work-permit/",
+      label: "TWV work permit",
+      description: "Practical route guide for TWV, GVVA comparisons, and employer timing questions.",
+    },
+    {
       href: "/netherlands/moving/extensions-changes/",
       label: "Extensions & changes in the Netherlands",
       description: "Renewals, job changes, study and family shifts—when to notice and what to open next.",
@@ -548,6 +563,20 @@ export const moveVisaResidencyPageMeta: MoveVisaResidencyPageMeta = {
         description: "Scenarios, stages, tools, and FAQs for the whole move.",
         href: HUB,
         ctaLabel: "Open pillar",
+      },
+      {
+        id: "working",
+        title: "Working in the Netherlands",
+        description: "Move-focused bridge from visa route questions into offers, salary, permits, payroll, and arrival admin.",
+        href: "/netherlands/moving/working-in-the-netherlands/",
+        ctaLabel: "Open guide",
+      },
+      {
+        id: "twv",
+        title: "TWV work permit",
+        description: "Useful when the work route may depend on employer-driven authorization rather than a simpler setup.",
+        href: "/netherlands/moving/twv-work-permit/",
+        ctaLabel: "Open guide",
       },
       {
         id: "first-90",

@@ -21,6 +21,18 @@ const DEFAULT_CARDS: MovePillarExploreCard[] = [
     meta: "Move",
   },
   {
+    href: "/netherlands/moving/working-in-the-netherlands/",
+    title: "Working in the Netherlands",
+    description: "Work-led move guide linking offers, salary, permits, payroll, housing, and first-month setup.",
+    meta: "Move",
+  },
+  {
+    href: "/netherlands/moving/twv-work-permit/",
+    title: "TWV work permit",
+    description: "Practical guide to when TWV may matter, how it differs from other routes, and what to clarify early.",
+    meta: "Move",
+  },
+  {
     href: "/netherlands/moving/residence-permits/",
     title: "Residence permits in the Netherlands",
     description: "Permit purpose, renewal, and what comes after approval—next to the route overview.",
@@ -74,17 +86,25 @@ type Props = {
   /** Override or extend the default pillar strip (e.g. mark current page in copy). */
   cards?: MovePillarExploreCard[];
   className?: string;
+  title?: string;
+  excludeHref?: string;
 };
 
 /**
  * “Explore this pillar” strip aligned with Living’s continue-pillar pattern — CardLink grid for Move / adjacent pillars.
  */
-export function MovePillarExploreGrid({ cards = DEFAULT_CARDS, className }: Props) {
+export function MovePillarExploreGrid({ cards = DEFAULT_CARDS, className, title = "Explore the journey", excludeHref }: Props) {
+  const normalizedExclude = excludeHref?.replace(/\/+$/, "") ?? null;
+  const visibleCards =
+    normalizedExclude == null
+      ? cards
+      : cards.filter((c) => c.href.replace(/\/+$/, "") !== normalizedExclude);
+
   return (
     <div className={className}>
-      <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-foreground-muted">Explore the journey</p>
+      <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-foreground-muted">{title}</p>
       <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {cards.map((c) => (
+        {visibleCards.map((c) => (
           <CardLink key={c.href} href={c.href} title={c.title} description={c.description} meta={c.meta} />
         ))}
       </div>

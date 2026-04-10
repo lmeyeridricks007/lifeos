@@ -42,8 +42,13 @@ export const moveResidencePermitSections: MoveResidencePermitSections = {
       },
       {
         label: "Working in the Netherlands",
-        href: "/netherlands/work/working-in-netherlands/",
+        href: "/netherlands/moving/working-in-the-netherlands/",
         description: "— wider work context once your route is clearer.",
+      },
+      {
+        label: "TWV work permit",
+        href: "/netherlands/moving/twv-work-permit/",
+        description: "— useful when employer-driven work authorization may be part of the route.",
       },
     ],
   },

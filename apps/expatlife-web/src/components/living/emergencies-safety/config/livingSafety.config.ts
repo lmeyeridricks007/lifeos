@@ -619,14 +619,12 @@ export const livingSafetyRelatedTools: LivingSafetyRelatedTools = {
     {
       href: FIRST_90_DAYS_GUIDE_PATH,
       title: "First 90 Days in the Netherlands",
-      description: "Place healthcare, safety, contacts, and practical readiness inside the wider arrival timeline.",
       description: "Place healthcare, safety, contacts, and practical readiness inside your wider arrival timeline.",
       meta: "Read the 90-day guide",
     },
     {
       href: MOVING_WITH_FAMILY_GUIDE_PATH,
       title: "Moving to the Netherlands with family",
-      description: "Broader household guide for housing, documents, healthcare, and the shared admin that shapes family arrival.",
       description: "Broader household guide for housing, documents, healthcare, and the shared admin around family arrival.",
       meta: "Read the family guide",
     },
@@ -639,7 +637,6 @@ export const livingSafetyRelatedTools: LivingSafetyRelatedTools = {
     {
       href: HEALTH_INSURANCE_GUIDE_PATH,
       title: "Health Insurance in the Netherlands",
-      description: "Go deeper on the insurance side once you understand how emergency readiness and healthcare fit together.",
       description: "Go deeper on insurance once you understand how safety planning and healthcare fit together.",
       meta: "Read the insurance guide",
     },

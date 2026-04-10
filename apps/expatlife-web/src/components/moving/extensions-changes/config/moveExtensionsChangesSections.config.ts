@@ -38,7 +38,7 @@ export const moveExtensionsChangesSections = {
       },
       {
         label: "Working in the Netherlands",
-        href: "/netherlands/work/working-in-netherlands/",
+        href: "/netherlands/moving/working-in-the-netherlands/",
         description: "— employment, contracts, and broader work context when your situation shifts.",
       },
       {

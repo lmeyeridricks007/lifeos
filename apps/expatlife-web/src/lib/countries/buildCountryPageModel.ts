@@ -14,6 +14,8 @@ const GUIDE_LABELS: Record<string, string> = {
   "/netherlands/documents-needed-to-move-netherlands/": "Documents needed to move",
   "/netherlands/moving-to-netherlands-cost/": "Cost of moving to the Netherlands",
   "/netherlands/first-90-days-netherlands/": "First 90 days in the Netherlands",
+  "/netherlands/moving/working-in-the-netherlands/": "Working in the Netherlands",
+  "/netherlands/moving/twv-work-permit/": "TWV work permit",
   "/netherlands/eu-vs-non-eu-moving-to-netherlands/": "EU vs non-EU moving to the Netherlands",
   "/netherlands/open-bank-account-netherlands/": "Open a bank account in the Netherlands",
   "/netherlands/services/housing-platforms/": "Housing platforms for expats",
