@@ -8,8 +8,11 @@
       "menuGroup": "move",
       "additionalToolIds": ["netherlands-city-comparison-tool"],
       "relatedGuides": [
-        "/netherlands/moving/",
         "/netherlands/moving-to-the-netherlands/",
+        "/netherlands/moving/visas-residency/",
+        "/netherlands/moving/residence-permits/",
+        "/netherlands/moving/extensions-changes/",
+        "/netherlands/moving/tools/",
         "/netherlands/documents-needed-to-move-netherlands/"
       ]
     },
@@ -79,7 +82,7 @@
       "menuGroup": "living",
       "relatedGuides": [
         "/netherlands/transport/",
-        "/netherlands/living/"
+        "/netherlands/living/survival-guide/"
       ]
     },
     {

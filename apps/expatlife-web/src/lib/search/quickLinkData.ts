@@ -20,7 +20,16 @@ export const QUICK_LINK_DEFINITIONS: InternalLink[] = [
   { label: "All tools", href: "/netherlands/tools/" },
   { label: "Services hub", href: "/netherlands/services/" },
   { label: "Cities hub", href: "/netherlands/cities/" },
-  { label: "Living in the Netherlands", href: "/netherlands/living/" },
+  { label: "Netherlands Survival Guide", href: "/netherlands/living/survival-guide/" },
+  { label: "Getting around in the Netherlands", href: "/netherlands/living/getting-around/" },
+  { label: "Essential apps for the Netherlands", href: "/netherlands/living/apps/" },
+  { label: "Daily life basics (Netherlands)", href: "/netherlands/living/daily-life/" },
+  { label: "Shopping & groceries in the Netherlands", href: "/netherlands/living/shopping-groceries/" },
+  { label: "Healthcare Basics in the Netherlands", href: "/netherlands/living/healthcare-basics/" },
+  { label: "Emergencies & Safety in the Netherlands", href: "/netherlands/living/emergencies-safety/" },
+  { label: "Language & phrases for life in the Netherlands", href: "/netherlands/living/language/" },
+  { label: "Weather & seasons in the Netherlands", href: "/netherlands/living/weather/" },
+  { label: "Dutch Culture & Etiquette", href: "/netherlands/living/culture-etiquette/" },
   { label: "Culture in the Netherlands", href: "/netherlands/culture/" },
 ];
 

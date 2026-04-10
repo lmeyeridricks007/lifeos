@@ -126,6 +126,7 @@ export function build90DayRelatedLinks(
     { label: "First 60 days in the Netherlands", href: withFrom("/netherlands/first-60-days-netherlands/") },
     { label: "Register address in the Netherlands", href: withFrom("/netherlands/register-address-netherlands/") },
     { label: "Moving to the Netherlands guide", href: withFrom("/netherlands/moving-to-the-netherlands/") },
+    { label: "Status changes in the Netherlands", href: withFrom("/netherlands/moving/status-changes/") },
     { label: "Moving to the Netherlands", href: withFrom("/netherlands/moving-to-the-netherlands/") },
   ];
   const originSlug = input.from?.trim().toLowerCase().replace(/\s+/g, "-");

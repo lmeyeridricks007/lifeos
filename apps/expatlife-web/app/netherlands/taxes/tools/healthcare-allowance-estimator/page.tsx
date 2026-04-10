@@ -77,6 +77,16 @@ export const metadata: Metadata = {
 
 const RELATED_NEXT_STEPS = [
   {
+    href: `${BASE}/living/survival-guide/`,
+    title: "Netherlands Survival Guide",
+    description: "How day-to-day costs and Dutch payment habits interact with household cash flow.",
+  },
+  {
+    href: `${BASE}/living/healthcare-basics/`,
+    title: "Healthcare Basics in the Netherlands",
+    description: "Understand insurance, GP registration, pharmacies, urgent care, and the wider healthcare flow beside this estimator.",
+  },
+  {
     href: `${BASE}/taxes/tools/dutch-salary-net-calculator/`,
     title: "Dutch salary net calculator",
     description: "Gross-to-net planning to align income assumptions with this allowance estimate.",

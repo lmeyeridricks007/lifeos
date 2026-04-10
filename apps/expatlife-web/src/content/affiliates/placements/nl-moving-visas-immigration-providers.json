@@ -1,0 +1,21 @@
+{
+  "id": "nl-moving-visas-immigration-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/moving/visas-residency/",
+    "slot": "after-faq-immigration"
+  },
+  "variant": "cards",
+  "title": "Immigration & visa support in the Netherlands",
+  "intro": "Consultants, lawyers, and relocation firms that often help with permits, MVV, family reunification, and employer-sponsored moves. Scope and pricing differ—confirm what each provider covers before you pay. For more shortlists, open our services directories below.",
+  "categoryOrder": ["services", "planning"],
+  "items": [],
+  "registryProviders": {
+    "categories": ["visa-consultants", "immigration-lawyers", "relocation-services", "relocation-agencies"],
+    "limit": 6,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. This is not legal advice; verify credentials and fit for your case with official sources or a qualified adviser."
+}

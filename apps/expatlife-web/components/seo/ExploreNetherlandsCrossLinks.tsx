@@ -20,13 +20,58 @@ export function ExploreNetherlandsCrossLinks() {
               </Link>
             </li>
             <li>
+              <Link href="/netherlands/moving/visas-residency/" className="text-link hover:underline">
+                Visas &amp; residency (orientation)
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/moving/residence-permits/" className="text-link hover:underline">
+                Residence permits
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/moving/extensions-changes/" className="text-link hover:underline">
+                Extensions &amp; changes
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/moving/status-changes/" className="text-link hover:underline">
+                Status changes
+              </Link>
+            </li>
+            <li>
               <Link href="/netherlands/cities/" className="text-link hover:underline">
                 Dutch cities
               </Link>
             </li>
             <li>
-              <Link href="/netherlands/living/" className="text-link hover:underline">
-                Living in the Netherlands
+              <Link href="/netherlands/living/survival-guide/" className="text-link hover:underline">
+                Netherlands Survival Guide
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/living/getting-around/" className="text-link hover:underline">
+                Getting around in the Netherlands
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/living/apps/" className="text-link hover:underline">
+                Essential apps for the Netherlands
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/living/daily-life/" className="text-link hover:underline">
+                Daily life basics
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/living/language/" className="text-link hover:underline">
+                Language & phrases
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/living/weather/" className="text-link hover:underline">
+                Weather & seasons
               </Link>
             </li>
             <li>

@@ -199,7 +199,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/work/pension-netherlands/": { title: "Pension Netherlands", section: "guides" },
   "/netherlands/work/holiday-allowance-netherlands/": { title: "Holiday allowance Netherlands", section: "guides" },
   "/netherlands/work/bonus-tax-netherlands/": { title: "Bonus tax Netherlands", section: "guides" },
-  "/netherlands/work/work-permit-netherlands/": { title: "Work permit Netherlands", section: "guides" },
   "/netherlands/work/twv-work-permit/": { title: "TWV work permit", section: "guides" },
   "/netherlands/work/changing-jobs-netherlands/": { title: "Changing jobs Netherlands", section: "guides" },
   "/netherlands/work/resigning-job-netherlands/": { title: "Resigning job Netherlands", section: "guides" },
@@ -217,10 +216,11 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/work/jobs-in-utrecht/": { title: "Jobs in Utrecht", section: "guides" },
   "/netherlands/work/jobs-in-the-hague/": { title: "Jobs in The Hague", section: "guides" },
   "/netherlands/work/jobs-in-eindhoven/": { title: "Jobs in Eindhoven", section: "guides" },
-  /** Visas & residency hub cluster (planned — linked from Move mega; surfaces as roadmap until pages ship). */
+  /** Legacy visa URLs (non-Move) — planned; live Move cluster pages use `/netherlands/moving/…` in `EXTRA_LIVE_PATHS`. */
   "/netherlands/visas-residency/": { title: "Visas & residency hub", section: "visa" },
   "/netherlands/visas-residency/residence-permits/": { title: "Residence permits", section: "visa" },
   "/netherlands/visas-residency/extensions-changes/": { title: "Visa extensions & changes", section: "visa" },
+  /** Canonical Move page is live (`EXTRA_LIVE_PATHS`); legacy URL above redirects in `next.config`. */
   "/netherlands/visas-residency/status-changes/": { title: "Immigration status changes", section: "visa" },
 };
 
@@ -280,6 +280,10 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/nijmegen/",
   "/netherlands/amstelveen/",
   "/netherlands/tools/",
+  "/netherlands/moving/visas-residency/",
+  "/netherlands/moving/residence-permits/",
+  "/netherlands/moving/extensions-changes/",
+  "/netherlands/moving/status-changes/",
   "/netherlands/moving/tools/",
   "/netherlands/visa-checker/",
   "/netherlands/visa-timeline-estimator/",
@@ -289,6 +293,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/settling-in-netherlands/",
   "/netherlands/bsn-registration/",
   "/netherlands/register-address-netherlands/",
+  /** Living pillar root redirects to Survival Guide; keep live so menus and redirects stay valid. */
+  "/netherlands/living/",
 ] as const;
 
 function buildLivePathSet(): Set<string> {

@@ -13,6 +13,11 @@ export type MovePageTemplateProps = {
   /** When true, render a sticky sidebar column (lg+) matching tool/guide rails. */
   showSidebar?: boolean;
   sidebar?: ReactNode;
+  /**
+   * Accessible name for the aside landmark. Default `On this page`. Set `false` when the sidebar
+   * subtree defines its own `nav` / label (avoids duplicate announcements).
+   */
+  sidebarAriaLabel?: string | false;
   children: ReactNode;
   className?: string;
   /** Main column wrapper (e.g. extra min-width). */
@@ -32,6 +37,7 @@ export function MovePageTemplate({
   variant,
   showSidebar,
   sidebar,
+  sidebarAriaLabel,
   children,
   className,
   mainClassName,
@@ -55,7 +61,9 @@ export function MovePageTemplate({
       {sidebar != null ? (
         <aside
           className="hidden min-h-0 lg:block lg:self-stretch"
-          aria-label="On this page"
+          {...(sidebarAriaLabel === false
+            ? {}
+            : { "aria-label": sidebarAriaLabel ?? "On this page" })}
         >
           <div className="sticky top-24 space-y-6 py-1 lg:space-y-8">{sidebar}</div>
         </aside>

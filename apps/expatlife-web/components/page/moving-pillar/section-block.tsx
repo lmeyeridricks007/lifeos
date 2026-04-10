@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { BoldInline } from "@/components/content/PillarContentBlocks";
 import { cn } from "@/lib/cn";
 import {
   movingNlSectionH2Class,
@@ -11,8 +12,12 @@ export type SectionBlockProps = {
   id?: string;
   /** Small uppercase label above the H2 (e.g. signature dark bands). */
   eyebrow?: string;
+  /** Override eyebrow color (e.g. `text-copilot-primary` for “Reality check”). */
+  eyebrowClassName?: string;
   title: string;
   subtitle?: string;
+  /** When true, `subtitle` may use `**bold**` segments (rendered as `<strong>`). */
+  subtitleMarkdown?: boolean;
   children: ReactNode;
   className?: string;
   /** Tighter top padding and heading-to-content gap (e.g. tools strip on pillar hub). */
@@ -31,8 +36,10 @@ export type SectionBlockProps = {
 export function SectionBlock({
   id,
   eyebrow,
+  eyebrowClassName,
   title,
   subtitle,
+  subtitleMarkdown,
   children,
   className,
   compact,
@@ -58,7 +65,8 @@ export function SectionBlock({
         <p
           className={cn(
             "mb-2 text-[11px] font-bold uppercase tracking-[0.12em]",
-            onDark ? "text-slate-400" : "text-foreground-muted"
+            onDark ? "text-slate-400" : eyebrowClassName ? undefined : "text-foreground-muted",
+            eyebrowClassName
           )}
         >
           {eyebrow}
@@ -67,7 +75,11 @@ export function SectionBlock({
       <h2 id={headingId} className={h2Class}>
         {title}
       </h2>
-      {subtitle ? <p className={subClass}>{subtitle}</p> : null}
+      {subtitle ? (
+        <p className={subClass}>
+          {subtitleMarkdown ? <BoldInline text={subtitle} /> : subtitle}
+        </p>
+      ) : null}
       <div className={contentGap}>{children}</div>
     </section>
   );

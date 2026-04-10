@@ -1006,7 +1006,7 @@
       "affiliatePlacementIds": [],
       "affiliateCategories": ["mobile-connectivity", "housing-platforms"],
       "signupVariant": "default",
-      "pillarCategoryRoute": "/netherlands/living/",
+      "pillarCategoryRoute": "/netherlands/living/survival-guide/",
       "exampleInputs": ["City", "Housing type", "Heating and efficiency", "Inclusions from landlord", "Internet tier and mobile lines"],
       "exampleOutputs": ["Monthly services band", "First-month setup estimate", "Compare vs fixed map", "Scenario deltas", "Checklist by phase"],
       "mostUsefulFor": "Expats and locals planning post-move-in household contracts without treating blogs as quotes."
@@ -1376,7 +1376,7 @@
       },
       "summary": "Surface visa-dependency implications when changing employment structure.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/visas-residency/status-changes/"],
+      "relatedGuides": ["/netherlands/moving/visas-residency/", "/netherlands/visa/compare-visas/"],
       "relatedTools": ["/netherlands/work/tools/job-change-impact-simulator/"],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
@@ -1724,7 +1724,7 @@
       },
       "summary": "Connect visa, tax and employment changes into one risk map.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/visas-residency/", "/netherlands/money/taxes/"],
+      "relatedGuides": ["/netherlands/moving/visas-residency/", "/netherlands/money/taxes/"],
       "relatedTools": [
         "/netherlands/work/tools/job-change-impact-simulator/",
         "/netherlands/taxes/tools/double-tax-awareness-tool/"

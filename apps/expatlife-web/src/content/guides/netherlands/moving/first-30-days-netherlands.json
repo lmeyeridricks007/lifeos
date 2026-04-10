@@ -83,7 +83,8 @@
         { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" },
         { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
         { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Getting around in the Netherlands", "href": "/netherlands/living/getting-around/" }
       ]
     },
     {
@@ -139,7 +140,9 @@
         { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" },
         { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
-        { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" }
+        { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
+        { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
+        { "label": "Emergencies & Safety in the Netherlands", "href": "/netherlands/living/emergencies-safety/" }
       ]
     },
     {
@@ -157,7 +160,14 @@
       ],
       "links": [
         { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
-        { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" }
+        { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
+        { "label": "Emergencies & Safety in the Netherlands", "href": "/netherlands/living/emergencies-safety/" },
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Getting around in the Netherlands", "href": "/netherlands/living/getting-around/" },
+        { "label": "Daily life basics in the Netherlands", "href": "/netherlands/living/daily-life/" },
+        { "label": "Shopping & groceries in the Netherlands", "href": "/netherlands/living/shopping-groceries/" },
+        { "label": "Language & phrases for life in the Netherlands", "href": "/netherlands/living/language/" },
+        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/" }
       ],
       "services": [
         {
@@ -319,6 +329,9 @@
       "href": "/netherlands/moving-to-the-netherlands/"
     },
     "related": [
+      { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/" },
+      { "label": "Language & phrases for life in the Netherlands", "href": "/netherlands/living/language/" },
+      { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/" },
       { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
       { "label": "Registering your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },

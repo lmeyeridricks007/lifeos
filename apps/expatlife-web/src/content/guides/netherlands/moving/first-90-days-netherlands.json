@@ -40,6 +40,12 @@
       { "label": "Run the document readiness checker", "href": "/netherlands/document-readiness-checker/" }
     ],
     "supportingLinks": [
+      { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/" },
+      { "label": "Shopping & groceries in the Netherlands", "href": "/netherlands/living/shopping-groceries/" },
+      { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
+      { "label": "Emergencies & Safety in the Netherlands", "href": "/netherlands/living/emergencies-safety/" },
+      { "label": "Language & phrases for life in the Netherlands", "href": "/netherlands/living/language/" },
+      { "label": "Weather & seasons in the Netherlands", "href": "/netherlands/living/weather/" },
       { "label": "Read the full moving guide", "href": "/netherlands/moving-to-the-netherlands/" },
       { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
       { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" }
@@ -74,6 +80,8 @@
         { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
+        { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
+        { "label": "Emergencies & Safety in the Netherlands", "href": "/netherlands/living/emergencies-safety/" },
         { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" },
         { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
         { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" }
@@ -146,6 +154,8 @@
       "links": [
         { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" },
         { "label": "First 60 days in the Netherlands", "href": "/netherlands/first-60-days-netherlands/" },
+        { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
+        { "label": "Emergencies & Safety in the Netherlands", "href": "/netherlands/living/emergencies-safety/" },
         { "label": "Moving checklist (guide)", "href": "/netherlands/moving-checklist-netherlands/" }
       ],
       "services": [
@@ -174,7 +184,11 @@
       ],
       "links": [
         { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-        { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" }
+        { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
+        { "label": "Shopping & groceries in the Netherlands", "href": "/netherlands/living/shopping-groceries/" },
+        { "label": "Language & phrases for life in the Netherlands", "href": "/netherlands/living/language/" },
+        { "label": "Weather & seasons in the Netherlands", "href": "/netherlands/living/weather/" },
+        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/" }
       ],
       "services": [
         {
@@ -295,6 +309,10 @@
       "href": "/netherlands/moving-to-the-netherlands/"
     },
     "related": [
+      { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/" },
+      { "label": "Daily life basics in the Netherlands", "href": "/netherlands/living/daily-life/" },
+      { "label": "Language & phrases for life in the Netherlands", "href": "/netherlands/living/language/" },
+      { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/" },
       { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
       { "label": "Moving to the Netherlands Timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
       { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },

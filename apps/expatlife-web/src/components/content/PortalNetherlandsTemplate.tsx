@@ -262,6 +262,32 @@ export function PortalNetherlandsTemplate({ content }: { content: NlPortalConten
       </Section>
 
       <Section
+        eyebrow={content.livingCluster.eyebrow}
+        title={content.livingCluster.title}
+        subtitle={content.livingCluster.subtitle}
+        className="rounded-3xl bg-gradient-to-r from-teal-50/70 to-sky-50/50"
+      >
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+          <p className="max-w-3xl text-slate-600">{content.livingCluster.body}</p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Link href="/netherlands/living/survival-guide/">
+              <Button>{content.livingCluster.openSurvivalGuideLabel}</Button>
+            </Link>
+            <Link href="/netherlands/living/tools/utilities-services-comparison/">
+              <Button variant="secondary">{content.livingCluster.openUtilitiesLabel}</Button>
+            </Link>
+          </div>
+          <InfoBox title={content.livingCluster.infoBoxTitle} className="mt-5">
+            <ul className="list-disc space-y-1 pl-4">
+              {content.livingCluster.infoBoxItems.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </InfoBox>
+        </div>
+      </Section>
+
+      <Section
         eyebrow={content.executionTools.eyebrow}
         title={content.executionTools.title}
         subtitle={content.executionTools.subtitle}

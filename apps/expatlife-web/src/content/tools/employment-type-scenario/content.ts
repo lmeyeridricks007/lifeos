@@ -106,7 +106,7 @@ export const EMPLOYMENT_TYPE_RELATED_GUIDES = [
     description: "Permits, clients, and administration when you are not on a standard payslip.",
   },
   {
-    href: `${NL_BASE}/work/work-permit-netherlands/`,
+    href: `${NL_BASE}/work/working-in-netherlands/`,
     title: "Work permit Netherlands",
     description: "How work authorisation ties to employer, income, and contract type at a high level.",
   },

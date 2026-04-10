@@ -3,20 +3,42 @@
     {
       "cluster": "living",
       "slug": "",
-      "path": "/netherlands/living/",
-      "title": "Living in the Netherlands",
-      "metaDescription": "Practical guides for housing, utilities, daily life, and light digital admin for expats living in the Netherlands.",
+      "path": "/netherlands/living/survival-guide/",
+      "title": "Netherlands Survival Guide for Expats",
+      "metaDescription": "Practical Netherlands survival guide for expats: OV and bike defaults, apps, PIN-first payments, groceries, weather, and first-week sequencing you can bookmark.",
       "breadcrumbLabel": "Living",
       "section": "guides",
       "clusterLabel": "Living in the Netherlands",
       "pageType": "hub",
-      "contentStatus": "scaffold",
+      "contentStatus": "full",
       "menuVisible": true,
       "navGroup": null,
-      "intro": "Set up your home, utilities, and everyday rhythms in the Netherlands. These pages focus on practical systems after arrival—not visas, BSN, or taxes (those sit under Move and Money).",
+      "intro": "Bookmarkable hub for day-one through month-one life in the Netherlands: transport, apps, payments, weather, groceries, quick-start sequencing, tools, and FAQs—plus links into the wider Living cluster (housing, utilities).",
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": []
+    },
+    {
+      "cluster": "living",
+      "slug": "getting-around",
+      "path": "/netherlands/living/getting-around/",
+      "title": "Getting Around in the Netherlands",
+      "metaDescription": "Practical Dutch transport for newcomers: NS, 9292, OVpay, tap-in discipline, modes, commuting reality, and bikes—standalone Living guide.",
+      "breadcrumbLabel": "Getting around",
+      "section": "guides",
+      "clusterLabel": "Living in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "full",
+      "menuVisible": true,
+      "navGroup": "daily-life",
+      "intro": "Practical onboarding for Dutch public transport: NS, 9292, OVpay, tap-in discipline, multimodal commuting, cycling context, and planning-tool links.",
+      "canonicalGuidePath": null,
+      "canonicalLabel": null,
+      "related": [
+        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub for day-one systems." },
+        { "label": "Essential apps (Living)", "href": "/netherlands/living/apps/", "description": "Travel stack beside banking and maps." },
+        { "label": "Transport tools hub", "href": "/netherlands/transport/tools/", "description": "Calculators and related transport tools." }
+      ]
     },
     {
       "cluster": "living",
@@ -212,20 +234,114 @@
       "slug": "daily-life",
       "path": "/netherlands/living/daily-life/",
       "title": "Daily life in the Netherlands",
-      "metaDescription": "Everyday rhythms for expats in the Netherlands: shopping, quiet hours, neighbors, and what “normal” feels like locally.",
+      "metaDescription": "Daily life in the Netherlands for newcomers: groceries, self-checkout, opening hours, paying and splitting bills, parcels, recycling, and everyday habits.",
       "breadcrumbLabel": "Daily life",
       "section": "guides",
       "clusterLabel": "Living in the Netherlands",
       "pageType": "guide",
-      "contentStatus": "scaffold",
+      "contentStatus": "full",
       "menuVisible": true,
       "navGroup": "daily-life",
-      "intro": "Small habits—groceries, bikes, building rules—shape satisfaction as much as visas. This hub section links practical daily topics.",
+      "intro": "Daily Life Basics: shops, checkouts, apps, parcels, and waste—plus links to more everyday-life topics.",
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
+        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Social norms, directness, and everyday etiquette." },
         { "label": "Culture hub", "href": "/netherlands/culture/", "description": "Norms, traditions, and social cues." },
         { "label": "Settling in", "href": "/netherlands/settling-in-netherlands/", "description": "Broader post-arrival checklist." }
+      ]
+    },
+    {
+      "cluster": "living",
+      "slug": "shopping-groceries",
+      "path": "/netherlands/living/shopping-groceries/",
+      "title": "Shopping & Groceries in the Netherlands",
+      "metaDescription": "A practical guide to how grocery shopping, supermarket habits, self-checkout, household buying, deliveries, and everyday errands actually work in the Netherlands.",
+      "breadcrumbLabel": "Shopping & groceries",
+      "section": "guides",
+      "clusterLabel": "Living in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "full",
+      "menuVisible": true,
+      "navGroup": "daily-life",
+      "intro": "Practical grocery and household-shopping guide for newcomers: supermarkets, self-checkout, store types, store apps, delivery, and what becomes normal fastest.",
+      "canonicalGuidePath": null,
+      "canonicalLabel": null,
+      "related": [
+        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub for first-week priorities and everyday systems." },
+        { "label": "Daily life basics", "href": "/netherlands/living/daily-life/", "description": "The broader routine around shops, parcels, and payments." },
+        { "label": "Essential apps", "href": "/netherlands/living/apps/", "description": "Supermarket apps, delivery, maps, and payment tools." },
+        { "label": "Cost of living calculator", "href": "/netherlands/money/tools/cost-of-living-calculator/", "description": "Put grocery and household habits inside a monthly budget." }
+      ]
+    },
+    {
+      "cluster": "living",
+      "slug": "healthcare-basics",
+      "path": "/netherlands/living/healthcare-basics/",
+      "title": "Healthcare Basics in the Netherlands",
+      "metaDescription": "A practical guide to how Dutch healthcare works in real life, from insurance and finding a GP to pharmacies, urgent care, emergencies, and the everyday things newcomers often misunderstand.",
+      "breadcrumbLabel": "Healthcare basics",
+      "section": "guides",
+      "clusterLabel": "Living in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "full",
+      "menuVisible": true,
+      "navGroup": "daily-life",
+      "intro": "Practical healthcare orientation for newcomers: insurance basics, the GP role, pharmacies, urgent care, emergencies, and the small setup steps that make the system easier to use.",
+      "canonicalGuidePath": null,
+      "canonicalLabel": null,
+      "related": [
+        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub for first-week priorities and everyday systems." },
+        { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/", "description": "Go deeper on the insurance side of the system." },
+        { "label": "Healthcare allowance estimator", "href": "/netherlands/taxes/tools/healthcare-allowance-estimator/", "description": "Plan whether allowance support may help with premiums." },
+        { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/", "description": "Place healthcare setup inside the broader arrival timeline." }
+      ]
+    },
+    {
+      "cluster": "living",
+      "slug": "culture-etiquette",
+      "path": "/netherlands/living/culture-etiquette/",
+      "title": "Dutch Culture & Etiquette",
+      "metaDescription": "A practical guide to everyday Dutch social norms — from direct communication and invitations to work culture, neighbors, birthdays, and the small habits that often surprise newcomers.",
+      "breadcrumbLabel": "Dutch Culture & Etiquette",
+      "section": "guides",
+      "clusterLabel": "Living in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "full",
+      "menuVisible": true,
+      "navGroup": "daily-life",
+      "intro": "Practical cultural orientation for newcomers: directness, invitations, punctuality, neighbors, work basics, and the social cues behind everyday Dutch life.",
+      "canonicalGuidePath": null,
+      "canonicalLabel": null,
+      "related": [
+        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub for first-week priorities." },
+        { "label": "Daily life basics", "href": "/netherlands/living/daily-life/", "description": "Routines, errands, and household systems." },
+        { "label": "Getting around", "href": "/netherlands/living/getting-around/", "description": "Public-space rhythm and transport context." },
+        { "label": "Dutch workplace culture", "href": "/netherlands/culture/dutch-workplace-culture/", "description": "Work-focused companion." }
+      ]
+    },
+    {
+      "cluster": "living",
+      "slug": "language",
+      "path": "/netherlands/living/language/",
+      "title": "Language & Phrases for Life in the Netherlands",
+      "metaDescription": "A practical guide to the Dutch phrases, language habits, and confidence-building shortcuts that help newcomers navigate shops, transport, work, neighbors, and everyday life more easily.",
+      "breadcrumbLabel": "Language & phrases",
+      "section": "guides",
+      "clusterLabel": "Living in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "full",
+      "menuVisible": true,
+      "navGroup": "daily-life",
+      "intro": "Practical language survival guide for expats: what Dutch you actually need first, where English usually works, and the phrases that make daily life smoother without turning language into a separate course.",
+      "canonicalGuidePath": null,
+      "canonicalLabel": null,
+      "related": [
+        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub for first-week priorities." },
+        { "label": "Daily life basics", "href": "/netherlands/living/daily-life/", "description": "The everyday routines where these phrases show up." },
+        { "label": "Getting around", "href": "/netherlands/living/getting-around/", "description": "Transport contexts where short Dutch helps quickly." },
+        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "The social context behind greetings, directness, and short exchanges." },
+        { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/", "description": "Place language confidence inside your wider settling-in timeline." }
       ]
     },
     {
@@ -242,9 +358,10 @@
       "menuVisible": true,
       "navGroup": "daily-life",
       "intro": "Most expats combine cycling with public transport. We will expand mode-by-mode guidance; for now, use related links for tools and cities.",
-      "canonicalGuidePath": null,
-      "canonicalLabel": null,
+      "canonicalGuidePath": "/netherlands/living/getting-around/",
+      "canonicalLabel": "Getting around in the Netherlands (full guide)",
       "related": [
+        { "label": "Getting around in the Netherlands", "href": "/netherlands/living/getting-around/", "description": "Full practical transport guide for new arrivals." },
         { "label": "Cities hub", "href": "/netherlands/cities/", "description": "City-specific commute context." },
         { "label": "Transport tools", "href": "/netherlands/transport/tools/", "description": "Calculators and planners." }
       ]
@@ -397,6 +514,97 @@
       ]
     },
     {
+      "cluster": "living",
+      "slug": "apps",
+      "path": "/netherlands/living/apps/",
+      "title": "Essential Apps for Life in the Netherlands",
+      "metaDescription": "Curated apps for expats in the Netherlands: transport (NS, 9292, OVpay), Tikkie and banking, groceries, food delivery, and everyday essentials for your first days and weeks.",
+      "breadcrumbLabel": "Essential apps",
+      "section": "guides",
+      "clusterLabel": "Living in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "full",
+      "menuVisible": true,
+      "navGroup": "daily-life",
+      "intro": "Install-order guide for the Dutch daily-life stack: transport planners and tap hygiene, payment culture, supermarket and delivery apps, chat and weather—without an app-store wall.",
+      "canonicalGuidePath": null,
+      "canonicalLabel": null,
+      "related": [
+        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub: first-week rhythm, topics, tools, FAQs." },
+        { "label": "Getting around", "href": "/netherlands/living/getting-around/", "description": "NS, 9292, OVpay, modes, and commuting depth." },
+        { "label": "Payments basics", "href": "/netherlands/living/payments/", "description": "PIN, contactless, and iDEAL-shaped habits." },
+        { "label": "Daily life basics", "href": "/netherlands/living/daily-life/", "description": "Shops, buildings, and weekly rhythms." },
+        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Directness, invitations, and social norms for everyday life." }
+      ]
+    },
+    {
+      "cluster": "living",
+      "slug": "weather",
+      "path": "/netherlands/living/weather/",
+      "title": "Weather & Seasons in the Netherlands",
+      "metaDescription": "A practical guide to what Dutch weather actually feels like through the year - and how wind, rain, darkness, and changing seasons affect clothing, commuting, cycling, and everyday life.",
+      "breadcrumbLabel": "Weather & seasons",
+      "section": "guides",
+      "clusterLabel": "Living in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "full",
+      "menuVisible": true,
+      "navGroup": "daily-life",
+      "intro": "A practical guide to wind, rain, dark days, and what Dutch weather changes in daily life for newcomers.",
+      "canonicalGuidePath": null,
+      "canonicalLabel": null,
+      "related": [
+        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Hub for daily-life basics." },
+        { "label": "Getting around", "href": "/netherlands/living/getting-around/", "description": "Transport and commute planning." },
+        { "label": "Essential apps", "href": "/netherlands/living/apps/", "description": "Weather, route, and daily-life apps." },
+        { "label": "Daily life", "href": "/netherlands/living/daily-life/", "description": "Rhythms and local expectations." }
+      ]
+    },
+    {
+      "cluster": "living",
+      "slug": "payments",
+      "path": "/netherlands/living/payments/",
+      "title": "Payments and spending basics in the Netherlands",
+      "metaDescription": "How people pay in shops and online, debit vs credit norms, and what expats usually set up first for everyday spending.",
+      "breadcrumbLabel": "Payments basics",
+      "section": "guides",
+      "clusterLabel": "Living in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "full",
+      "menuVisible": true,
+      "navGroup": "daily-life",
+      "intro": "Contactless debit is the default for many day-to-day purchases. This guide orients you without duplicating full banking or tax content.",
+      "canonicalGuidePath": "/netherlands/open-bank-account-netherlands/",
+      "canonicalLabel": "Open a bank account (Netherlands)",
+      "related": [
+        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Practical living hub." },
+        { "label": "Money tools", "href": "/netherlands/money/tools/", "description": "Calculators and budgeting helpers." }
+      ]
+    },
+    {
+      "cluster": "living",
+      "slug": "emergencies-safety",
+      "path": "/netherlands/living/emergencies-safety/",
+      "title": "Emergencies & Safety in the Netherlands",
+      "metaDescription": "A practical guide to what to do in emergencies, urgent situations, and everyday safety moments in the Netherlands — from emergency numbers and urgent care to transport incidents, lost items, and basic preparedness.",
+      "breadcrumbLabel": "Emergencies & safety",
+      "section": "guides",
+      "clusterLabel": "Living in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "full",
+      "menuVisible": true,
+      "navGroup": "daily-life",
+      "intro": "Practical emergency readiness for newcomers: 112, urgent vs non-urgent situations, everyday safety, lost items, and the simple first steps that reduce stress.",
+      "canonicalGuidePath": null,
+      "canonicalLabel": null,
+      "related": [
+        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Living pillar hub for first-week priorities and everyday systems." },
+        { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/", "description": "Wider Dutch care flow and urgent-health context." },
+        { "label": "Getting Around in the Netherlands", "href": "/netherlands/living/getting-around/", "description": "Transport and cycling context for daily safety." },
+        { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/", "description": "Keep readiness inside the wider arrival timeline." }
+      ]
+    },
+    {
       "cluster": "culture",
       "slug": "",
       "path": "/netherlands/culture/",
@@ -431,6 +639,7 @@
       "canonicalGuidePath": "/netherlands/work/work-culture-netherlands/",
       "canonicalLabel": "Work culture (employment cluster)",
       "related": [
+        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Living-guide bridge from office culture to everyday social norms." },
         { "label": "Working in the Netherlands", "href": "/netherlands/work/working-in-netherlands/", "description": "Contracts and basics (Money path)." },
         { "label": "Culture hub", "href": "/netherlands/culture/", "description": "All culture topics." }
       ]
@@ -452,6 +661,7 @@
       "canonicalGuidePath": "/netherlands/work/work-culture-netherlands/",
       "canonicalLabel": "Related: work culture guide",
       "related": [
+        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Everyday directness outside formal work settings." },
         { "label": "Communication style", "href": "/netherlands/culture/communication-style/", "description": "Outside-office parallels." },
         { "label": "Meetings and consensus", "href": "/netherlands/culture/meetings-and-consensus/", "description": "How decisions emerge." }
       ]
@@ -536,6 +746,7 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
+        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Practical Living guide to social norms and daily interpretation." },
         { "label": "Daily life (Living)", "href": "/netherlands/living/daily-life/", "description": "Practical routines." },
         { "label": "Traditions", "href": "/netherlands/culture/dutch-traditions/", "description": "Calendar and customs." }
       ]
@@ -558,6 +769,7 @@
       "canonicalLabel": null,
       "related": [
         { "label": "Dutch social norms", "href": "/netherlands/culture/dutch-social-norms/", "description": "Overview." },
+        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Living-guide companion with work, neighbor, and social examples." },
         { "label": "Dutch directness at work", "href": "/netherlands/culture/dutch-directness-at-work/", "description": "Workplace parallel." }
       ]
     },

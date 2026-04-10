@@ -11,6 +11,7 @@ import {
   hubToolStatusSoonClass,
 } from "@/lib/ui/page-family";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { NETHERLANDS_PILLAR_HUB_LINKS } from "@/src/components/living/livingPillarContent";
 import { toolsHubHeroImage } from "@/src/lib/tools/toolsHubHeroImage";
 
 const hubContainerClass = "w-full max-w-screen-2xl";
@@ -36,7 +37,7 @@ export function AllToolsHubTemplate({ categories, featuredTools }: AllToolsHubTe
             contentGutterClassName={sitePillarFramedHeroGutterXClass}
             eyebrow="Netherlands · Tools"
             title="All Netherlands expat tools"
-            subtitle="A data-driven catalog of calculators, planners, checkers and comparisons across moving, money, work and daily life."
+            subtitle="A data-driven catalog of calculators, planners, checkers and comparisons across moving, money, work, housing, taxes, and daily life—with pillar guides (including the Living Survival) for context."
             heroImage={toolsHubHeroImage}
             shareUrl={shareUrl}
             pageId={ALL_TOOLS_PATH}
@@ -57,7 +58,25 @@ export function AllToolsHubTemplate({ categories, featuredTools }: AllToolsHubTe
         <Container className={hubContainerClass}>
           <SectionBlock
             compact
-            title="Browse by category"
+            title="Browse by pillar & guides"
+            subtitle="Tools sit next to long-form pillars—jump to the guide hub when you need narrative context before running numbers."
+          >
+            <div className="grid grid-cols-1 gap-4 sm:gap-gap-grid sm:grid-cols-2 lg:grid-cols-3">
+              {NETHERLANDS_PILLAR_HUB_LINKS.map((p) => (
+                <Link key={p.href} href={p.href} className={hubPathwayCardClass}>
+                  <h3 className="text-base font-semibold text-foreground">{p.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{p.description}</p>
+                  <p className="mt-4 text-sm font-semibold text-link transition-colors duration-150 group-hover:text-link-hover">
+                    Open guide hub →
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </SectionBlock>
+          <SectionBlock
+            compact
+            className="mt-6 sm:mt-8"
+            title="Browse by tool category"
             subtitle="Each category hub lists live and upcoming tools in one place."
           >
             <div className="grid grid-cols-1 gap-4 sm:gap-gap-grid sm:grid-cols-2 lg:grid-cols-3">

@@ -105,6 +105,17 @@ function renderTextWithBold(text: string): React.ReactNode {
   return nodes.length === 1 ? nodes[0] : <>{nodes}</>;
 }
 
+/** Inline **bold** markdown for list items and headings where a `<p>` wrapper would be invalid. */
+export function BoldInline({
+  text,
+  className,
+}: {
+  text: string;
+  className?: string;
+}) {
+  return <span className={className}>{renderTextWithBold(text)}</span>;
+}
+
 /** Renders a paragraph with **bold** markdown only (no link placeholders). */
 export function BoldParagraph({
   text,

@@ -12,6 +12,8 @@ export type AffiliateSectionProps = {
   title: string;
   description: string;
   items: ProviderCardProps[];
+  /** Cap tiles shown (default 4). Mobility-style guides may pass a higher cap. */
+  maxCards?: number;
   disclosureText: string;
   editorialRationale?: string;
   lastReviewed?: string;
@@ -30,6 +32,7 @@ export function AffiliateSection({
   title,
   description,
   items,
+  maxCards = 4,
   disclosureText,
   editorialRationale,
   lastReviewed,
@@ -38,7 +41,7 @@ export function AffiliateSection({
   className,
   cardVariant = "muted",
 }: AffiliateSectionProps) {
-  const slice = items.slice(0, 4);
+  const slice = items.slice(0, Math.max(1, maxCards));
   if (slice.length === 0) return null;
 
   const copilot = cardVariant === "expatCopilot";

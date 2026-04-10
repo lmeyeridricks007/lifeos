@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   getNlMovingPillarContent,
   resolveLinkFromRegistry,
@@ -108,6 +109,7 @@ export const metadata: Metadata = buildSocialMetadata({
 type PageProps = { searchParams?: Promise<{ from?: string }> | { from?: string } };
 
 export default async function MovingToNetherlandsPillarPage(_props: PageProps) {
+  /** Hero uses `nl-informal-en` by default (see `getNlMovingPillarContent` in `@expatlife/content`). */
   const content = await getNlMovingPillarContent();
   const {
     meta,
@@ -127,6 +129,7 @@ export default async function MovingToNetherlandsPillarPage(_props: PageProps) {
 
   const canonicalUrl = new URL(meta.canonicalPath, baseUrl).toString();
   const { pageHeader, overview, whoThisGuideFor } = sections;
+  const heroSubtitleMarkdown = pageHeader.subtitle.includes("**");
   const stepSummary = sections.stepByStepSummary;
   const practicalEssentials = sections.practicalEssentials;
   const scenarioPathsIntro = sections.scenarioPaths?.intro ?? "";
@@ -134,6 +137,9 @@ export default async function MovingToNetherlandsPillarPage(_props: PageProps) {
   const hub = resolveLinkFromRegistry(linkRegistry, "hub");
   const bsn = resolveLinkFromRegistry(linkRegistry, "bsn");
   const compareVisas = resolveLinkFromRegistry(linkRegistry, "compare_visas");
+  const visasOrientation = resolveLinkFromRegistry(linkRegistry, "visas_residency_orientation");
+  const residencePermitsGuide = resolveLinkFromRegistry(linkRegistry, "residence_permits_guide");
+  const extensionsChangesGuide = resolveLinkFromRegistry(linkRegistry, "extensions_changes_guide");
 
   /** Contextual tools (moving + utilities + first payslip literacy); capped to avoid crowding the band. */
   const helpfulTools = toolsStrip.slice(0, 5);
@@ -165,7 +171,72 @@ export default async function MovingToNetherlandsPillarPage(_props: PageProps) {
               eyebrow={pageHeader.eyebrow}
               title={pageHeader.title}
               subtitle={pageHeader.subtitle}
+              subtitleMarkdown={heroSubtitleMarkdown}
               heroImage={pillarHeroToEditorial(pageHeader.heroImage, pageHeader.heroImageAlt)}
+              afterSubtitle={
+                <>
+                  {visasOrientation ? (
+                    <p className="max-w-3xl text-sm leading-relaxed text-copilot-text-secondary">
+                      Not sure which <strong className="font-semibold text-copilot-text-primary">permit or residence route</strong> fits? Start with{" "}
+                      <Link
+                        href={visasOrientation.href}
+                        className="font-semibold text-copilot-primary underline-offset-2 hover:text-copilot-primary-strong hover:underline"
+                      >
+                        {visasOrientation.title}
+                      </Link>
+                      {compareVisas ? (
+                        <>
+                          {" "}
+                          — then open{" "}
+                          <Link
+                            href={compareVisas.href}
+                            className="font-semibold text-copilot-primary underline-offset-2 hover:text-copilot-primary-strong hover:underline"
+                          >
+                            {compareVisas.title}
+                          </Link>{" "}
+                          when you want a side-by-side comparison.
+                        </>
+                      ) : null}
+                    </p>
+                  ) : null}
+                  {residencePermitsGuide ? (
+                    <p className="mt-3 max-w-3xl text-sm leading-relaxed text-copilot-text-secondary">
+                      For <strong className="font-semibold text-copilot-text-primary">permit purpose, renewal, and life after approval</strong>, read{" "}
+                      <Link
+                        href={residencePermitsGuide.href}
+                        className="font-semibold text-copilot-primary underline-offset-2 hover:text-copilot-primary-strong hover:underline"
+                      >
+                        {residencePermitsGuide.title}
+                      </Link>
+                      —same Move pillar, focused on how residence permits work in practice.
+                    </p>
+                  ) : null}
+                  {extensionsChangesGuide ? (
+                    <p className="mt-3 max-w-3xl text-sm leading-relaxed text-copilot-text-secondary">
+                      Already in the Netherlands or planning{" "}
+                      <strong className="font-semibold text-copilot-text-primary">renewals, job changes, or other life shifts</strong>? Use{" "}
+                      <Link
+                        href={extensionsChangesGuide.href}
+                        className="font-semibold text-copilot-primary underline-offset-2 hover:text-copilot-primary-strong hover:underline"
+                      >
+                        {extensionsChangesGuide.title}
+                      </Link>{" "}
+                      to connect permit timing with practical next steps across the Move, Work, Money, and Living guides.
+                    </p>
+                  ) : null}
+                  <p className="mt-3 max-w-3xl text-sm leading-relaxed text-copilot-text-secondary">
+                    If your main question is whether the{" "}
+                    <strong className="font-semibold text-copilot-text-primary">basis of your stay may be changing</strong>, open{" "}
+                    <Link
+                      href="/netherlands/moving/status-changes/"
+                      className="font-semibold text-copilot-primary underline-offset-2 hover:text-copilot-primary-strong hover:underline"
+                    >
+                      Status changes in the Netherlands
+                    </Link>{" "}
+                    for the practical guide to work, study, family, and self-employment route shifts.
+                  </p>
+                </>
+              }
               shareUrl={canonicalUrl}
               pageId={meta.canonicalPath}
             />
@@ -247,9 +318,42 @@ export default async function MovingToNetherlandsPillarPage(_props: PageProps) {
               compact
               variant="progression"
               movingHubPremium
+              maxItems={6}
               items={[
+                ...(visasOrientation
+                  ? [
+                      {
+                        label: visasOrientation.title,
+                        href: visasOrientation.href,
+                        description: "Map work, study, family, and ZZP routes before you dive into forms.",
+                      },
+                    ]
+                  : []),
+                ...(residencePermitsGuide
+                  ? [
+                      {
+                        label: residencePermitsGuide.title,
+                        href: residencePermitsGuide.href,
+                        description: "Permit purpose, renewal, and practical life after approval—next to the route overview.",
+                      },
+                    ]
+                  : []),
+                ...(extensionsChangesGuide
+                  ? [
+                      {
+                        label: extensionsChangesGuide.title,
+                        href: extensionsChangesGuide.href,
+                        description: "After arrival: expiries, job and family changes, and how they meet Work, Money, and Living tools.",
+                      },
+                    ]
+                  : []),
+                {
+                  label: "Status changes in the Netherlands",
+                  href: "/netherlands/moving/status-changes/",
+                  description: "Orientation for work, study, family, and self-employment shifts that may change the basis of stay.",
+                },
                 ...(hub
-                  ? [{ label: hub.title, href: hub.href, description: "Central links for visas, housing, and admin." }]
+                  ? [{ label: hub.title, href: hub.href, description: "Full Move pillar: scenarios, stages, tools, and FAQs." }]
                   : []),
                 ...(bsn
                   ? [{ label: bsn.title, href: bsn.href, description: "Address registration and your citizen number." }]

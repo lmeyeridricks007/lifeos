@@ -6,6 +6,9 @@ import {
   DEFAULT_MONETIZATION_DISCLOSURE,
   monetizationProviderToCardProps,
 } from "@/src/lib/monetization";
+
+/** Mobility mixes bikes, car share, and rides—needs more than the default guide cap of 4. */
+const MOBILITY_CONTEXTUAL_MAX_CARDS = 8;
 import type { MonetizationProvider } from "@/src/lib/monetization/types";
 import type {
   ContextualAffiliateCategory,
@@ -25,6 +28,8 @@ function topicForCategory(cat: ContextualAffiliateCategory): string {
       return "housing";
     case "utilities":
       return "utilities";
+    case "mobility":
+      return "mobility";
     case "recommended":
       return "relocation";
   }
@@ -78,6 +83,8 @@ function labelForCategory(cat: ContextualAffiliateCategory): string {
       return "housing";
     case "utilities":
       return "utilities and connectivity";
+    case "mobility":
+      return "bikes, car share, servicing, and rides";
     case "recommended":
       return "relocation support";
   }
@@ -106,6 +113,12 @@ const COPY: Record<
     eyebrow: "Utilities",
     title: "Internet, mobile, and energy",
     description: "Get connected—compare common providers for home setup after you arrive.",
+  },
+  mobility: {
+    eyebrow: "Getting around",
+    title: "Bikes, car share, workshops, and rides",
+    description:
+      "When OV is not enough: bike subscription and repairs, station- and app-based car sharing for IKEA runs and weekends, plus ride-hailing for the odd door-to-door leg.",
   },
   recommended: {
     eyebrow: "Recommended",
@@ -141,7 +154,10 @@ export type ContextualAffiliateSectionProps = {
 export function ContextualAffiliateSection({ config, pageSlugPath, className }: ContextualAffiliateSectionProps) {
   const pageSlug = normalizePageSlug(pageSlugPath);
   const raw = providersForConfig(config, pageSlug);
-  const providers = clampProvidersForPageType("guide", raw);
+  const providers =
+    config.type === "mobility"
+      ? raw.slice(0, MOBILITY_CONTEXTUAL_MAX_CARDS)
+      : clampProvidersForPageType("guide", raw);
   const items = providers.map(monetizationProviderToCardProps);
   const { eyebrow, title, description } = copyForConfig(config);
 
@@ -152,6 +168,7 @@ export function ContextualAffiliateSection({ config, pageSlugPath, className }: 
       title={title}
       description={description}
       items={items}
+      maxCards={config.type === "mobility" ? MOBILITY_CONTEXTUAL_MAX_CARDS : undefined}
       disclosureText={DEFAULT_MONETIZATION_DISCLOSURE}
       cardVariant="expatCopilot"
       contained

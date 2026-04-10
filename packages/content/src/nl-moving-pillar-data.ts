@@ -1,4 +1,8 @@
 import type { LinkRegistry, NlMovingPillarContent } from "./types";
+import {
+  applyMovingPillarHeroVoice,
+  type MovingPillarHeroVoiceId,
+} from "./moving-pillar-hero-voices";
 
 const linkRegistry: LinkRegistry = {
   moving_checklist: {
@@ -17,7 +21,7 @@ const linkRegistry: LinkRegistry = {
     href: "/netherlands/moving/tools/first-90-days",
     title: "First 90 days planner",
   },
-  hub: { href: "/netherlands/moving/hub", title: "Moving hub" },
+  hub: { href: "/netherlands/moving-to-the-netherlands/", title: "Moving hub" },
   bsn: { href: "/netherlands/bsn-registration", title: "BSN registration" },
   pillar: { href: "/netherlands/moving-to-the-netherlands", title: "Moving pillar" },
   open_bank_account: {
@@ -56,9 +60,25 @@ const linkRegistry: LinkRegistry = {
     href: "/netherlands/visa/compare-visas",
     title: "Compare visa routes",
   },
+  visas_residency_orientation: {
+    href: "/netherlands/moving/visas-residency/",
+    title: "Visas & residency orientation",
+  },
+  residence_permits_guide: {
+    href: "/netherlands/moving/residence-permits/",
+    title: "Residence permits in the Netherlands",
+  },
+  extensions_changes_guide: {
+    href: "/netherlands/moving/extensions-changes/",
+    title: "Extensions & changes in the Netherlands",
+  },
   moving_requirements: {
     href: "/netherlands/moving-requirements-netherlands/",
     title: "Moving requirements overview",
+  },
+  living_survival_guide: {
+    href: "/netherlands/living/survival-guide/",
+    title: "Netherlands Survival Guide",
   },
 };
 
@@ -81,7 +101,13 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       chips: ["work"],
       personaTitle: "Moving for work",
       whatMatters: ["Contract or offer timing", "Registrable housing for BSN", "Bank account and payroll"],
-      readingOrder: ["hub", "document_readiness", "bsn"],
+      readingOrder: [
+        "visas_residency_orientation",
+        "residence_permits_guide",
+        "extensions_changes_guide",
+        "hub",
+        "document_readiness",
+      ],
       startTool: { key: "moving_checklist" },
       unknownsToConfirm: ["Visa or work permit route", "Employer start date"],
     },
@@ -90,7 +116,13 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       chips: ["partner_family"],
       personaTitle: "Moving with partner or family",
       whatMatters: ["Schools or childcare", "Partner permits and work rights", "Larger housing search"],
-      readingOrder: ["hub", "municipality_registration", "document_readiness"],
+      readingOrder: [
+        "visas_residency_orientation",
+        "residence_permits_guide",
+        "extensions_changes_guide",
+        "hub",
+        "municipality_registration",
+      ],
       startTool: { key: "moving_checklist" },
       unknownsToConfirm: ["Family reunification rules", "City catchment for schools"],
     },
@@ -99,7 +131,13 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       chips: ["study"],
       personaTitle: "Moving for study",
       whatMatters: ["Study residence permit", "Student housing early", "Insurance and BSN"],
-      readingOrder: ["moving_requirements", "document_readiness", "hub"],
+      readingOrder: [
+        "visas_residency_orientation",
+        "residence_permits_guide",
+        "extensions_changes_guide",
+        "moving_requirements",
+        "document_readiness",
+      ],
       startTool: { key: "document_readiness" },
       unknownsToConfirm: ["Institution admissions", "Insurance obligation"],
     },
@@ -108,7 +146,14 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       chips: ["unsure"],
       personaTitle: "Not sure yet",
       whatMatters: ["Clarify visa or permit route", "Lock a rough timeline", "Narrow tasks with tools"],
-      readingOrder: ["compare_visas", "hub", "document_readiness"],
+      readingOrder: [
+        "visas_residency_orientation",
+        "residence_permits_guide",
+        "extensions_changes_guide",
+        "compare_visas",
+        "hub",
+        "document_readiness",
+      ],
       startTool: { key: "moving_checklist" },
       unknownsToConfirm: ["EU vs non-EU path", "Job offer vs search"],
     },
@@ -152,6 +197,9 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       q: "What is different for EU/EEA movers vs non-EU?",
       a: "**EU/EEA** nationals often focus on **housing, BSN, bank, and insurance** without a long residence permit process. **Non-EU** routes usually hinge on a **visa or residence permit** tied to work, study, or family—timing of travel, employer, and IND steps matter before you optimize for municipality registration. Use a visa-oriented guide if you are not sure which permit applies.",
       links: [
+        { label: "Visas & residency orientation", href: "/netherlands/moving/visas-residency/" },
+        { label: "Residence permits in the Netherlands", href: "/netherlands/moving/residence-permits/" },
+        { label: "Extensions & changes in the Netherlands", href: "/netherlands/moving/extensions-changes/" },
         { label: "EU vs non-EU moving", href: "/netherlands/eu-vs-non-eu-moving-to-netherlands/" },
         { label: "Moving requirements overview", href: "/netherlands/moving-requirements-netherlands/" },
       ],
@@ -225,8 +273,26 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
     },
   ],
   timelineIntro: "A practical sequence most expats follow.",
-  timelineSectionCta: { label: "Open the moving hub", href: "/netherlands/moving/hub" },
+  timelineSectionCta: { label: "Open the moving hub", href: "/netherlands/moving-to-the-netherlands/" },
   toolsStrip: [
+    {
+      title: "Visas & residency orientation",
+      href: "/netherlands/moving/visas-residency/",
+      description: "Map work, study, family, and ZZP routes before you drown in paperwork.",
+      timeToComplete: "12 min",
+    },
+    {
+      title: "Residence permits in the Netherlands",
+      href: "/netherlands/moving/residence-permits/",
+      description: "How residence permits connect to your purpose, renewal, and local setup.",
+      timeToComplete: "10 min",
+    },
+    {
+      title: "Extensions & changes in the Netherlands",
+      href: "/netherlands/moving/extensions-changes/",
+      description: "Already here? Renewals, job changes, study or family shifts—when to notice and what to open next.",
+      timeToComplete: "12 min",
+    },
     {
       title: "Moving checklist",
       href: "/netherlands/moving/tools/moving-checklist",
@@ -262,6 +328,12 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       href: "/netherlands/living/tools/utilities-services-comparison",
       description: "Monthly bands, setup cash, and what to compare vs local charges after move-in.",
       timeToComplete: "12 min",
+    },
+    {
+      title: "Netherlands Survival Guide",
+      href: "/netherlands/living/survival-guide/",
+      description: "Day-to-day transport, apps, payments, and routines once admin is moving.",
+      timeToComplete: "8 min",
     },
   ],
   tocItems: [
@@ -448,6 +520,11 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
           fix: "Use the after-arrival guide to line up registration, BSN, and next admin steps.",
           fixLinkKey: "after_arriving",
         },
+        {
+          gotcha: "Assuming renewals and life changes can wait until the last minute",
+          fix: "Put permit end dates and big life shifts on your radar early—extensions and job changes often need runway.",
+          fixLinkKey: "extensions_changes_guide",
+        },
       ],
     },
     chooseYourSituation: {
@@ -510,6 +587,8 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
     related: {
       sectionTitle: "Related pages",
       cards: [
+        { linkKey: "extensions_changes_guide", description: "After arrival: permit timing, renewals, and life changes—next to visas and residence permits." },
+        { linkKey: "living_survival_guide", description: "Living pillar: daily routines, transport, apps, and payments." },
         { linkKey: "hub", description: "Central links for the moving cluster." },
         { linkKey: "bsn", description: "BSN registration walkthrough." },
         { linkKey: "moving_checklist", description: "Personalized checklist." },
@@ -517,7 +596,7 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
     },
     sidebar: {
       startHereLabel: "Start here",
-      links: ["moving_checklist", "document_readiness", "hub"],
+      links: ["moving_checklist", "document_readiness", "extensions_changes_guide", "living_survival_guide", "hub"],
       scenariosPrompt: "Not sure where to start? Pick a scenario:",
       scenariosJumpAnchor: "#scenarios",
       scenariosJumpLabel: "Jump to scenarios",
@@ -536,6 +615,23 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
   },
 };
 
-export async function getNlMovingPillarContent(): Promise<NlMovingPillarContent> {
-  return nlMovingPillarContent;
+export type GetNlMovingPillarContentOptions = {
+  /**
+   * Hero copy flavor (English with destination-specific tone).
+   * @default "nl-informal-en" — direct, informal-“you” voice echoing Dutch **jij** register.
+   */
+  heroVoiceId?: MovingPillarHeroVoiceId;
+};
+
+export async function getNlMovingPillarContent(
+  options?: GetNlMovingPillarContentOptions
+): Promise<NlMovingPillarContent> {
+  const heroVoiceId = options?.heroVoiceId ?? "nl-informal-en";
+  return {
+    ...nlMovingPillarContent,
+    sections: {
+      ...nlMovingPillarContent.sections,
+      pageHeader: applyMovingPillarHeroVoice(nlMovingPillarContent.sections.pageHeader, heroVoiceId),
+    },
+  };
 }

@@ -54,6 +54,8 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
         title: "Moving to NL",
         links: [
           link("Moving to the Netherlands", "/netherlands/moving-to-the-netherlands", "Relocation guide", false),
+          link("Visas & residency orientation", "/netherlands/moving/visas-residency", "Permit routes overview", false),
+          link("Extensions & changes", "/netherlands/moving/extensions-changes/", "Renewals & life shifts after arrival", false),
           link("Municipality registration", "/netherlands/municipality-registration-netherlands", "BRP & BSN", false),
           link("DigiD awareness", "/netherlands/digid-awareness", "Government login", false),
           link("Moving checklist", "/netherlands/moving-checklist-netherlands", "Checklist route", false),
@@ -71,7 +73,7 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
       {
         title: "Visas & Residency",
         links: [
-          link("Visas & residency", "/netherlands/visas-residency", "Permit routes"),
+          link("Visas & residency", "/netherlands/moving/visas-residency", "Permit routes & orientation"),
           link("Compare visas", "/netherlands/visa/compare-visas", "Compare work, student, partner & entrepreneur routes"),
           link("Visa checker", "/netherlands/visa-checker", "Find the best visa for your situation"),
           link("Highly skilled migrant", "/netherlands/visa/highly-skilled-migrant", "Sponsor-based permits"),
@@ -80,9 +82,9 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
           link("Self-employed visa", "/netherlands/visa/self-employed-visa", "Entrepreneur / freelancer route"),
           link("Student visa", "/netherlands/visa/student-visa", "Study route"),
           link("Partner & family", "/netherlands/visa/partner-family-visa", "Family route"),
-          link("Residence permits", "/netherlands/visas-residency/residence-permits", "Permit categories"),
-          link("Extensions & changes", "/netherlands/visas-residency/extensions-changes", "Status updates"),
-          link("Status changes", "/netherlands/visas-residency/status-changes", "Path transitions"),
+          link("Residence permits", "/netherlands/moving/residence-permits", "Permit categories", false),
+          link("Extensions & changes", "/netherlands/moving/extensions-changes/", "After arrival: renewals & life changes", false),
+          link("Status changes", "/netherlands/moving/status-changes/", "Path transitions", false),
         ],
       },
       {

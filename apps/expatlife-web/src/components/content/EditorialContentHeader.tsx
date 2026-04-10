@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { BoldInline } from "@/components/content/PillarContentBlocks";
 import type { EditorialHeroImage } from "@/src/lib/content/editorialTypes";
 import { EDITORIAL_HERO_PLACEHOLDER } from "@/src/lib/content/editorialTypes";
 import { ContentHeroMedia } from "@/src/components/content/ContentHeroMedia";
@@ -10,6 +11,8 @@ export type EditorialContentHeaderProps = {
   eyebrow?: string;
   title: string;
   subtitle?: string;
+  /** When true, `subtitle` may use `**bold**` segments (rendered as `<strong>`). */
+  subtitleMarkdown?: boolean;
   /** Hero image; optional. Uses placeholder when omitted. */
   heroImage?: EditorialHeroImage | null;
   /** Canonical URL for share/copy (e.g. from meta or window.location.origin + path) */
@@ -44,6 +47,10 @@ export type EditorialContentHeaderProps = {
    * (same rhythm as city hub breadcrumb row). Use `sitePillarFramedHeroTopBandClass` from `@/lib/ui/site-shell-identity`.
    */
   eyebrowBandClassName?: string;
+  /** Renders above the eyebrow inside the top band (e.g. breadcrumbs). */
+  heroTopBandSlot?: ReactNode;
+  /** Replaces default hero image / placeholder (e.g. custom illustration grid). */
+  heroMediaSlot?: ReactNode;
 };
 
 const titleClass = "max-w-5xl text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-5xl";
@@ -62,6 +69,7 @@ export function EditorialContentHeader({
   eyebrow,
   title,
   subtitle,
+  subtitleMarkdown,
   heroImage,
   shareUrl,
   pageId,
@@ -73,14 +81,20 @@ export function EditorialContentHeader({
   heroTitleDensity = "default",
   contentGutterClassName,
   eyebrowBandClassName,
+  heroTopBandSlot,
+  heroMediaSlot,
 }: EditorialContentHeaderProps) {
   const reference = heroLayout === "reference";
   const titleTight = heroTitleDensity === "tight" && movingPillarIdentity;
   const titleCompact =
     (heroTitleDensity === "compact" || heroTitleDensity === "tight") && movingPillarIdentity;
-  const eyebrowInBand =
-    Boolean(reference && movingPillarIdentity && eyebrowBandClassName && eyebrow && eyebrow.trim() !== "");
-  const chromeTight = titleTight || eyebrowInBand;
+  const showHeroTopBand = Boolean(
+    reference &&
+      movingPillarIdentity &&
+      eyebrowBandClassName &&
+      (heroTopBandSlot != null || (eyebrow && eyebrow.trim() !== ""))
+  );
+  const chromeTight = titleTight || showHeroTopBand;
   const image = heroImage?.src ? heroImage : EDITORIAL_HERO_PLACEHOLDER;
 
   const media = (
@@ -93,13 +107,17 @@ export function EditorialContentHeader({
           (chromeTight ? "mt-4 sm:mt-5 md:mt-6" : titleCompact ? "mt-3 sm:mt-4" : "mt-4 sm:mt-5")
       )}
     >
-      <ContentHeroMedia
-        image={image}
-        presentation={reference ? "editorial" : "default"}
-        cinematic={reference && !movingPillarIdentity}
-        movingPillarFrame={false}
-        squareCorners={movingPillarIdentity}
-      />
+      {heroMediaSlot != null ? (
+        heroMediaSlot
+      ) : (
+        <ContentHeroMedia
+          image={image}
+          presentation={reference ? "editorial" : "default"}
+          cinematic={reference && !movingPillarIdentity}
+          movingPillarFrame={false}
+          squareCorners={movingPillarIdentity}
+        />
+      )}
     </div>
   );
 
@@ -128,9 +146,14 @@ export function EditorialContentHeader({
 
     return (
       <header className={cn("relative z-10", className)}>
-        {eyebrowInBand ? (
+        {showHeroTopBand ? (
           <div className={eyebrowBandClassName}>
-            <Eyebrow className="text-copilot-primary">{eyebrow}</Eyebrow>
+            {heroTopBandSlot}
+            {eyebrow && eyebrow.trim() !== "" ? (
+              <Eyebrow className={cn("text-copilot-primary", heroTopBandSlot ? "mt-3 sm:mt-3.5" : undefined)}>
+                {eyebrow}
+              </Eyebrow>
+            ) : null}
           </div>
         ) : null}
         <div
@@ -138,7 +161,7 @@ export function EditorialContentHeader({
             movingPillarIdentity && contentGutterClassName,
             /** No extra horizontal padding — avoids stair-step vs hero media when parent is already `Container` */
             movingPillarIdentity &&
-              (eyebrowInBand
+              (showHeroTopBand
                 ? "pt-3 sm:pt-3.5 md:pt-4"
                 : titleTight
                   ? "pt-3 sm:pt-3.5 md:pt-4"
@@ -149,7 +172,7 @@ export function EditorialContentHeader({
         >
           {movingPillarIdentity ? (
             <>
-              {!eyebrowInBand && eyebrow ? (
+              {!showHeroTopBand && eyebrow ? (
                 <Eyebrow
                   className={cn(
                     "text-copilot-primary",
@@ -162,7 +185,11 @@ export function EditorialContentHeader({
               <h1 className="text-balance text-4xl font-bold tracking-tight text-copilot-text-primary sm:text-5xl md:text-[3.25rem] md:leading-[1.06] lg:text-[3.5rem]">
                 {title}
               </h1>
-              {subtitle ? <p className={subClass}>{subtitle}</p> : null}
+              {subtitle ? (
+                <p className={subClass}>
+                  {subtitleMarkdown ? <BoldInline text={subtitle} /> : subtitle}
+                </p>
+              ) : null}
               {afterSubtitle ? (
                 <div
                   className={
@@ -177,7 +204,11 @@ export function EditorialContentHeader({
             <>
               {eyebrow ? <Eyebrow className="mb-3 sm:mb-4">{eyebrow}</Eyebrow> : null}
               <h1 className={titleClass}>{title}</h1>
-              {subtitle ? <p className={subClass}>{subtitle}</p> : null}
+              {subtitle ? (
+                <p className={subClass}>
+                  {subtitleMarkdown ? <BoldInline text={subtitle} /> : subtitle}
+                </p>
+              ) : null}
               {afterSubtitle ? <div className="mt-4">{afterSubtitle}</div> : null}
             </>
           )}
@@ -206,7 +237,11 @@ export function EditorialContentHeader({
     <header className={cn("space-y-6", className)}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
       <h1 className={titleClass}>{title}</h1>
-      {subtitle ? <p className={subtitleClass}>{subtitle}</p> : null}
+      {subtitle ? (
+        <p className={subtitleClass}>
+          {subtitleMarkdown ? <BoldInline text={subtitle} /> : subtitle}
+        </p>
+      ) : null}
       {afterSubtitle ? <div className="mt-2">{afterSubtitle}</div> : null}
       {actionBar}
       {media}

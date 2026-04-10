@@ -32,6 +32,12 @@ const portal: NlPortalContent = {
     subtitle: "Jump into the pages expats open first.",
     items: [
       {
+        title: "Netherlands Survival Guide",
+        description: "Daily life: transport, apps, payments, and practical rhythms.",
+        href: "/netherlands/living/survival-guide",
+        icon: "home",
+      },
+      {
         title: "Moving to the Netherlands",
         description: "Pillar guide with timeline and scenarios.",
         href: "/netherlands/moving-to-the-netherlands",
@@ -82,6 +88,19 @@ const portal: NlPortalContent = {
     openHubLabel: "Open moving hub",
     infoBoxTitle: "Remember",
     infoBoxItems: ["Verify requirements for your nationality and visa route.", "Keep copies of key documents."],
+  },
+  livingCluster: {
+    eyebrow: "Living pillar",
+    title: "Day-to-day life after you land",
+    subtitle: "Transport, apps, payments, weather, and household rhythm—parallel to Move and Money.",
+    body: "The Survival Guide is the Living pillar entry point. Use it when you are past visa sequencing and need practical routines: OV, groceries, PIN culture, and what the first weeks feel like.",
+    openSurvivalGuideLabel: "Open Survival Guide",
+    openUtilitiesLabel: "Utilities & services planner",
+    infoBoxTitle: "Tip",
+    infoBoxItems: [
+      "Pair the Survival Guide with the First 90 Days planner for admin timing.",
+      "Housing contracts and utilities have dedicated Living cluster pages.",
+    ],
   },
   executionTools: {
     eyebrow: "Tools",

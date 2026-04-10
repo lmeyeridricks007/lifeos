@@ -181,20 +181,27 @@ export function MobileNavDrawer({ isOpen, onClose, onOpenSearch }: MobileNavDraw
                           hidden={!isExpanded}
                           className="overflow-hidden"
                         >
-                          <ul className="border-l-2 border-brand/20 py-2 pl-4 pr-3">
-                            {menu.sections.flatMap((section) =>
-                              section.items.map((navItem, i) => (
-                                <li key={`${section.title}-${navItem.label}-${i}`}>
-                                  <NavMenuItemRow
-                                    item={navItem}
-                                    pathname={pathname}
-                                    variant="mobile"
-                                    onNavigate={onClose}
-                                  />
-                                </li>
-                              ))
-                            )}
-                          </ul>
+                          <div className="border-l-2 border-brand/20 py-2 pl-3 pr-2">
+                            {menu.sections.map((section) => (
+                              <div key={section.title} className="mt-4 first:mt-0">
+                                <p className="mb-1.5 px-2 text-[10px] font-bold uppercase tracking-[0.12em] text-foreground-muted">
+                                  {section.title}
+                                </p>
+                                <ul className="space-y-0.5" role="list">
+                                  {section.items.map((navItem, i) => (
+                                    <li key={`${section.title}-${navItem.label}-${i}`}>
+                                      <NavMenuItemRow
+                                        item={navItem}
+                                        pathname={pathname}
+                                        variant="mobile"
+                                        onNavigate={onClose}
+                                      />
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                            ))}
+                          </div>
                         </div>
                       </>
                     ) : (

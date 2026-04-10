@@ -122,8 +122,8 @@ export default async function NetherlandsServiceCategoryPage({ params }: PagePro
                       Dutch cities
                     </Link>
                     , read{" "}
-                    <Link href="/netherlands/living/" className="font-medium text-link hover:underline">
-                      living in the Netherlands
+                    <Link href="/netherlands/living/survival-guide/" className="font-medium text-link hover:underline">
+                      the Netherlands Survival Guide
                     </Link>
                     , and browse{" "}
                     <Link href="/netherlands/tools/" className="font-medium text-link hover:underline">

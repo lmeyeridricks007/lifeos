@@ -29,6 +29,11 @@ export type NextStepsProps = {
   variant?: "default" | "progression";
   /** Moving NL hub: bold SaaS CTA strip */
   movingHubPremium?: boolean;
+  /**
+   * When the parent already provides eyebrow/title/subtitle (e.g. `SectionBlock`), omit the inner
+   * “Keep momentum” band + duplicate heading so only the numbered pathway grid renders.
+   */
+  suppressChrome?: boolean;
   className?: string;
 };
 
@@ -44,6 +49,7 @@ export function NextSteps({
   compact,
   variant = "default",
   movingHubPremium = false,
+  suppressChrome = false,
   className,
 }: NextStepsProps) {
   const headingId = id ? `${id}-heading` : undefined;
@@ -54,16 +60,18 @@ export function NextSteps({
     : "mt-2 max-w-2xl text-sm leading-relaxed text-foreground-muted";
 
   return (
-    <section id={id} aria-labelledby={headingId} className={cn("min-w-0", className)}>
-      {movingHubPremium ? (
+    <section id={id} aria-labelledby={suppressChrome ? undefined : headingId} className={cn("min-w-0", className)}>
+      {!suppressChrome && movingHubPremium ? (
         <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-copilot-text-muted">Keep momentum</p>
       ) : null}
-      <h2 id={headingId} className={cn(h2Class, movingHubPremium && "mt-2")}>
-        {title}
-      </h2>
-      {subtitle != null && subtitle !== "" ? (
+      {!suppressChrome ? (
+        <h2 id={headingId} className={cn(h2Class, movingHubPremium && "mt-2")}>
+          {title}
+        </h2>
+      ) : null}
+      {!suppressChrome && subtitle != null && subtitle !== "" ? (
         <p className={introClass}>{subtitle}</p>
-      ) : progression ? (
+      ) : !suppressChrome && progression ? (
         <p className={introClass}>
           A deliberate order: start broad, then lock in admin, then choose your visa path.
         </p>
@@ -71,7 +79,7 @@ export function NextSteps({
       <ul
         className={cn(
           "grid sm:grid-cols-2 lg:grid-cols-3",
-          movingHubPremium ? "mt-4" : "mt-5",
+          suppressChrome ? "mt-0" : movingHubPremium ? "mt-4" : "mt-5",
           compact ? "gap-4" : "gap-4 sm:gap-5"
         )}
       >

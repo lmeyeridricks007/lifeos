@@ -70,6 +70,11 @@ export const metadata: Metadata = {
 
 const RELATED_NEXT_STEPS = [
   {
+    href: `${BASE}/living/survival-guide/`,
+    title: "Netherlands Survival Guide",
+    description: "Ground monthly numbers in real daily-life context: transport, apps, and payments.",
+  },
+  {
     href: `${BASE}/moving-to-the-netherlands/`,
     title: "Moving to the Netherlands",
     description: "Full relocation pillar: timeline, documents, and first months.",

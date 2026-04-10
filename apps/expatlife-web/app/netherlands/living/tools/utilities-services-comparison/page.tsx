@@ -72,6 +72,16 @@ export const metadata: Metadata = {
 
 const RELATED_NEXT_STEPS = [
   {
+    href: `${BASE}/living/survival-guide/`,
+    title: "Netherlands Survival Guide",
+    description: "Day-to-day transport, apps, payments, and household rhythm next to utilities.",
+  },
+  {
+    href: `${BASE}/living/daily-life/`,
+    title: "Daily life basics",
+    description: "Groceries, errands, deliveries, and household habits alongside recurring utility setup.",
+  },
+  {
     href: `${BASE}/living/utilities/`,
     title: "Utilities in the Netherlands",
     description: "Energy, water, internet, and municipality context.",
@@ -127,9 +137,9 @@ const RELATED_NEXT_STEPS = [
     description: "Rent and mortgage-related calculators.",
   },
   {
-    href: `${BASE}/living/`,
-    title: "Living in the Netherlands hub",
-    description: "Housing, utilities, and daily-life guides.",
+    href: `${BASE}/living/survival-guide/`,
+    title: "Living Survival Guide hub",
+    description: "Housing, utilities, transport, and daily-life entry point.",
   },
   {
     href: `${BASE}/cities/`,
@@ -172,7 +182,7 @@ export default function UtilitiesServicesComparisonPage() {
   const breadcrumbJsonLd = buildBreadcrumbSchema([
     { name: "Home", url: "/" },
     { name: "Netherlands", url: "/netherlands/" },
-    { name: "Living hub", url: "/netherlands/living/" },
+    { name: "Living Survival Guide", url: "/netherlands/living/survival-guide/" },
     { name: "Utilities & services comparison", url: canonical },
   ]);
   const softwareAppJsonLd = buildSoftwareApplicationSchema({

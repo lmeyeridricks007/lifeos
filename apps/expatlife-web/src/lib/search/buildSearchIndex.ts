@@ -129,6 +129,63 @@ export function buildAllSearchDocuments(): SearchDocument[] {
   });
 
   out.push({
+    id: "hub:living-survival-guide",
+    title: "Netherlands Survival Guide for Expats",
+    href: "/netherlands/living/survival-guide/",
+    categoryLabel: "Living in the Netherlands",
+    pageType: "hub",
+    description:
+      "Day-to-day orientation for expats: transport, essential apps, payments, weather, groceries, and household rhythms in the Netherlands.",
+    keywords: [
+      "survival guide Netherlands",
+      "living in Netherlands daily life",
+      "expat Netherlands apps transport",
+      "Dutch everyday essentials",
+    ],
+    searchText: joinSearchParts(
+      "Netherlands survival guide expat living daily life transport apps payments weather groceries"
+    ),
+  });
+
+  out.push({
+    id: "hub:living-daily-life",
+    title: "Daily Life Basics in the Netherlands",
+    href: "/netherlands/living/daily-life/",
+    categoryLabel: "Living in the Netherlands",
+    pageType: "hub",
+    description:
+      "Practical guide to groceries, shops, payments, deliveries, waste awareness, and everyday routines for newcomers in the Netherlands.",
+    keywords: [
+      "daily life Netherlands expat",
+      "Dutch supermarkets errands",
+      "Netherlands shopping payments parcels",
+      "expat everyday guide Netherlands",
+    ],
+    searchText: joinSearchParts(
+      "daily life Netherlands expat groceries shopping payments deliveries waste routines everyday guide"
+    ),
+  });
+
+  out.push({
+    id: "hub:living-language",
+    title: "Language & Phrases for Life in the Netherlands",
+    href: "/netherlands/living/language/",
+    categoryLabel: "Living in the Netherlands",
+    pageType: "hub",
+    description:
+      "Practical Dutch phrases and language habits for shops, transport, work, neighbors, and everyday life in the Netherlands.",
+    keywords: [
+      "dutch phrases for expats",
+      "do i need dutch in the netherlands",
+      "english vs dutch netherlands",
+      "useful dutch daily life",
+    ],
+    searchText: joinSearchParts(
+      "language phrases life Netherlands expat Dutch phrases daily life English vs Dutch shops transport work neighbors"
+    ),
+  });
+
+  out.push({
     id: "hub:moving-pillar",
     title: "Moving to the Netherlands — full guide",
     href: "/netherlands/moving-to-the-netherlands/",

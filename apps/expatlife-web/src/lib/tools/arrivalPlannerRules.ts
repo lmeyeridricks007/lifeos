@@ -182,6 +182,7 @@ export function buildArrivalRelatedLinks(
     { label: "BSN registration", href: withFrom("/netherlands/bsn-registration/") },
     { label: "First 30 days in the Netherlands", href: withFrom("/netherlands/first-30-days-netherlands/") },
     { label: "Moving to the Netherlands guide", href: withFrom("/netherlands/moving-to-the-netherlands/") },
+    { label: "Status changes in the Netherlands", href: withFrom("/netherlands/moving/status-changes/") },
     { label: "Moving to the Netherlands", href: withFrom("/netherlands/moving-to-the-netherlands/") },
   ];
   const originSlug = input.from?.trim().toLowerCase().replace(/\s+/g, "-");

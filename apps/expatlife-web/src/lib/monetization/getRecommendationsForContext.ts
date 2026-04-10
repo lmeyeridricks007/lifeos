@@ -2,6 +2,7 @@ import {
   banksMonetizationProviders,
   housingMonetizationProviders,
   insuranceMonetizationProviders,
+  mobilityMonetizationProviders,
   relocationMonetizationProviders,
   utilitiesMonetizationProviders,
 } from "@/src/data/monetization/providers";
@@ -32,9 +33,30 @@ function pickPool(slug: string, topic: string): MonetizationProvider[] {
   if (t === "relocation" || t === "moving" || t === "shipping") return [...relocationMonetizationProviders];
   if (t === "utilities" || t === "mobile" || t === "mobile-connectivity") return [...utilitiesMonetizationProviders];
   if (t === "housing" || t === "housing-platforms" || t === "rental") return [...housingMonetizationProviders];
+  if (
+    t === "mobility" ||
+    t === "transport" ||
+    t === "bikes" ||
+    t === "bike" ||
+    t === "taxi" ||
+    t === "taxis" ||
+    t === "car-sharing" ||
+    t === "carsharing" ||
+    t === "car-share" ||
+    t === "rental"
+  ) {
+    return [...mobilityMonetizationProviders];
+  }
 
   const s = slug;
-  if (s.includes("health-insurance") || s.includes("/insurance/") || s.includes("health-insurance")) {
+  if (
+    s.includes("health-insurance") ||
+    s.includes("/insurance/") ||
+    s.includes("healthcare-basics") ||
+    s.includes("living/healthcare") ||
+    s.includes("emergencies-safety") ||
+    s.includes("living/emergencies")
+  ) {
     return [...insuranceMonetizationProviders];
   }
   if (
@@ -66,6 +88,9 @@ function pickPool(slug: string, topic: string): MonetizationProvider[] {
     s.includes("funda")
   ) {
     return [...housingMonetizationProviders];
+  }
+  if (s.includes("getting-around") || s.includes("living/getting-around") || s.includes("/transport/")) {
+    return [...mobilityMonetizationProviders];
   }
 
   return [];

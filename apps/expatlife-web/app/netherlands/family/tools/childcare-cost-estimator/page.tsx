@@ -87,6 +87,11 @@ export const metadata: Metadata = {
 
 const RELATED_NEXT_STEPS = [
   {
+    href: `${BASE}/living/survival-guide/`,
+    title: "Netherlands Survival Guide",
+    description: "School runs, apps, and everyday family rhythms alongside childcare costs.",
+  },
+  {
     href: `${BASE}/moving-to-netherlands-with-kids/`,
     title: "Moving to the Netherlands with kids",
     description: "Schools, childcare timing, and family admin.",
@@ -150,6 +155,11 @@ const RELATED_NEXT_STEPS = [
     href: `${BASE}/health-insurance-netherlands/`,
     title: "Health insurance in the Netherlands",
     description: "Mandatory basic insurance for most residents.",
+  },
+  {
+    href: `${BASE}/living/healthcare-basics/`,
+    title: "Healthcare Basics in the Netherlands",
+    description: "Practical guide to insurance, the GP, pharmacies, urgent care, and the healthcare flow families often need early.",
   },
   {
     href: `${BASE}/open-bank-account-netherlands/`,

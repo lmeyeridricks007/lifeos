@@ -1,0 +1,9 @@
+export { moveResidencePermitRouteCards } from "./moveResidencePermitRouteCards.config";
+export { moveResidencePermitBasicsCards } from "./moveResidencePermitBasics.config";
+export { moveResidencePermitSections } from "./moveResidencePermitSections.config";
+export { moveResidencePermitLifecycle } from "./moveResidencePermitLifecycle.config";
+export { moveResidencePermitTips } from "./moveResidencePermitTips.config";
+export { moveResidencePermitMisunderstandings } from "./moveResidencePermitMisunderstandings.config";
+export { moveResidencePermitFaq } from "./moveResidencePermitFaq.config";
+export { moveResidencePermitReferences } from "./moveResidencePermitReferences.config";
+export { moveResidencePermitRelatedTools } from "./moveResidencePermitRelatedTools.config";

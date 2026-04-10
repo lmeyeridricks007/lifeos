@@ -155,6 +155,11 @@ export const nlWorkFlagshipContent: NlFlagshipPillarContent = {
       href: "/netherlands/visa/compare-visas/",
       description: "Side-by-side framing for common permits.",
     },
+    {
+      title: "Job offer comparison tool",
+      href: "/netherlands/work/tools/job-offer-comparison/",
+      description: "Compare salary, commute, hybrid setup, and role shape when two offers look similar on paper.",
+    },
   ],
   sections: {
     pageHeader: {
@@ -223,6 +228,11 @@ export const nlWorkFlagshipContent: NlFlagshipPillarContent = {
       label: "Compare visa routes",
       href: "/netherlands/visa/compare-visas/",
       description: "Match permits to nationality and offer type.",
+    },
+    {
+      label: "Dutch Culture & Etiquette",
+      href: "/netherlands/living/culture-etiquette/",
+      description: "Workplace expectations make more sense when you have the wider social context on directness, planning, and everyday Dutch norms.",
     },
   ],
 };

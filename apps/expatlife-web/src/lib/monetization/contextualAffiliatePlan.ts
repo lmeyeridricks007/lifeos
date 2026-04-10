@@ -4,6 +4,7 @@ export type ContextualAffiliateCategory =
   | "insurance"
   | "housing"
   | "utilities"
+  | "mobility"
   | "recommended";
 
 export type ContextualAffiliateConfig =

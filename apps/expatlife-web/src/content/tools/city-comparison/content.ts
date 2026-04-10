@@ -48,6 +48,11 @@ export const CITY_COMPARISON_RELATED_TOOLS = [
 
 export const CITY_COMPARISON_RELATED_GUIDES = [
   {
+    href: `${NL_BASE}/living/survival-guide/`,
+    title: "Netherlands Survival Guide",
+    description: "Daily-life basics after you pick a city: transport, apps, payments, and weather.",
+  },
+  {
     href: `${NL_BASE}/moving-to-the-netherlands/`,
     title: "Moving to the Netherlands",
     description: "Visas, first steps, and settling in — start here if the Netherlands is new.",

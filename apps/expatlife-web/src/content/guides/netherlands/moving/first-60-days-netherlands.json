@@ -147,7 +147,11 @@
         { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
         { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" },
         { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
-        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
+        { "label": "Daily life basics in the Netherlands", "href": "/netherlands/living/daily-life/" },
+        { "label": "Shopping & groceries in the Netherlands", "href": "/netherlands/living/shopping-groceries/" },
+        { "label": "Language & phrases for life in the Netherlands", "href": "/netherlands/living/language/" }
       ],
       "services": [
         {
@@ -289,6 +293,8 @@
       "href": "/netherlands/moving-to-the-netherlands/"
     },
     "related": [
+      { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/" },
+      { "label": "Language & phrases for life in the Netherlands", "href": "/netherlands/living/language/" },
       { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
       { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
       { "label": "Moving to the Netherlands Timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },

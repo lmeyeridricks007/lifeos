@@ -10,7 +10,11 @@ export { PillarHeroRegion, type PillarHeroRegionProps } from "./pillar-hero-regi
 export { PillarAtGlanceRegion, type PillarAtGlanceRegionProps } from "./pillar-at-glance-region";
 export { PillarDecisionRegion, type PillarDecisionRegionProps } from "./pillar-decision-region";
 export { PillarToolsSection, type PillarToolsSectionProps } from "./pillar-tools-section";
-export { PillarJourneyStack, type PillarJourneyStackProps } from "./pillar-journey-stack";
+export {
+  PillarJourneyStack,
+  type PillarJourneyStackDensity,
+  type PillarJourneyStackProps,
+} from "./pillar-journey-stack";
 export { PillarDarkStagesBand, type PillarDarkStagesBandProps } from "./pillar-dark-stages-band";
 export { PillarEssentialsSurface, type PillarEssentialsSurfaceProps } from "./pillar-essentials-surface";
 export { PillarNextStepsRegion, type PillarNextStepsRegionProps } from "./pillar-next-steps-region";

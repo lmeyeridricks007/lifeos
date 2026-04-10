@@ -390,7 +390,7 @@ export default function EmploymentTypeScenarioToolPage() {
                   <p className="mt-2 text-sm leading-relaxed text-copilot-text-secondary">
                     Many skilled routes expect a Dutch recognised sponsor, an employment contract, and stable salary evidence. Independent
                     or foreign-employer setups can work in specific cases but are usually more documentation-heavy. Read{" "}
-                    <Link href={`${NL_BASE}/work/work-permit-netherlands/`} className="font-medium text-brand-600 hover:underline">
+                    <Link href={`${NL_BASE}/work/working-in-netherlands/`} className="font-medium text-brand-600 hover:underline">
                       work permits in the Netherlands
                     </Link>{" "}
                     and confirm with immigration counsel — the tool only scores practicality, not IND outcomes.
@@ -455,7 +455,7 @@ export default function EmploymentTypeScenarioToolPage() {
             <Link href={`${NL_BASE}/work/working-in-netherlands/`} className="font-medium text-brand-600 hover:text-brand-700">
               Working in the Netherlands
             </Link>
-            <Link href={`${NL_BASE}/work/work-permit-netherlands/`} className="font-medium text-brand-600 hover:text-brand-700">
+            <Link href={`${NL_BASE}/work/working-in-netherlands/`} className="font-medium text-brand-600 hover:text-brand-700">
               Work permit Netherlands
             </Link>
             <Link href={`${NL_BASE}/taxes/`} className="font-medium text-brand-600 hover:text-brand-700">

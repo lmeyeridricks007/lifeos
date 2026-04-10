@@ -160,9 +160,9 @@ const DEFAULT_FEATURED_FALLBACK: Partial<Record<TopNavKey, NavItem>> = {
   services: item("Services directory", "/netherlands/services/", "Banks, insurance, housing, immigration support."),
   tools: item("Open all tools", "/netherlands/tools/", "Checklists, planners, and calculators."),
   living: item(
-    "Living in the Netherlands",
-    "/netherlands/living/",
-    "Housing, utilities, daily life, and light digital admin after you arrive."
+    "Netherlands Survival Guide",
+    "/netherlands/living/survival-guide/",
+    "Day-to-day life, transport, apps, payments, and practical rhythms after you arrive."
   ),
   culture: item(
     "Moving to the Netherlands",
@@ -207,9 +207,9 @@ function filterMegaMenu(menu: MegaMenu): MegaMenu {
     ) {
       const chain = [
         item(
-          "Living in the Netherlands",
-          "/netherlands/living/",
-          "Housing, utilities, daily rhythms, and everyday admin."
+          "Netherlands Survival Guide",
+          "/netherlands/living/survival-guide/",
+          "Day-to-day transport, apps, payments, weather, and practical rhythms."
         ),
         item("Housing in the Netherlands", "/netherlands/housing/", "Housing hub and guides."),
         item("Renting in the Netherlands", "/netherlands/renting-in-the-netherlands/", "Renting overview."),
@@ -393,7 +393,7 @@ function isCulturePillarPath(pathname: string): boolean {
 }
 
 const WORK_PATH_HIGHLIGHT_MOVING: readonly string[] = [
-  "/netherlands/work/work-permit-netherlands",
+  "/netherlands/work/working-in-netherlands",
   "/netherlands/work/twv-work-permit",
   "/netherlands/work/changing-jobs-netherlands",
   "/netherlands/work/resigning-job-netherlands",
@@ -574,6 +574,8 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Planning",
         items: [
           item("Moving to the Netherlands", "/netherlands/moving-to-the-netherlands"),
+          item("Visas & residency orientation", "/netherlands/moving/visas-residency/"),
+          item("Extensions & changes", "/netherlands/moving/extensions-changes/"),
           item("Moving checklist Netherlands", "/netherlands/moving-checklist-netherlands"),
           item("Moving from your country", "/netherlands/moving-to-netherlands-from"),
           item("Documents needed", "/netherlands/documents-needed-to-move-netherlands"),
@@ -607,10 +609,10 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Partner & family", "/netherlands/visa/partner-family-visa"),
           item("Self-employed visa", "/netherlands/visa/self-employed-visa"),
           item("Student visa", "/netherlands/visa/student-visa"),
-          item("Visas & residency", "/netherlands/visas-residency/"),
-          item("Residence permits", "/netherlands/visas-residency/residence-permits"),
-          item("Extensions & changes", "/netherlands/visas-residency/extensions-changes"),
-          item("Status changes", "/netherlands/visas-residency/status-changes"),
+          item("Visas & residency", "/netherlands/moving/visas-residency/"),
+          item("Residence permits", "/netherlands/moving/residence-permits/"),
+          item("Extensions & changes", "/netherlands/moving/extensions-changes/"),
+          item("Status changes", "/netherlands/moving/status-changes/"),
         ],
       },
       {
@@ -619,32 +621,12 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("First 30 days", "/netherlands/first-30-days-netherlands"),
           item("First 60 days", "/netherlands/first-60-days-netherlands"),
           item("First 90 days", "/netherlands/first-90-days-netherlands"),
-          item(
-            "Job offer comparison tool",
-            "/netherlands/work/tools/job-offer-comparison/",
-            "Compare two or three Dutch offers on net, benefits, ruling support, rent, commute, and contract signals — planning only."
-          ),
-          item(
-            "Dutch payslip decoder",
-            "/netherlands/work/tools/payslip-decoder/",
-            "Read your first loonstrook — bruto/netto and common lines."
-          ),
-          item(
-            "Employment contract risk scanner",
-            "/netherlands/work/tools/employment-contract-risk-scanner/",
-            "Flag common Dutch contract clauses and questions to ask HR before you sign."
-          ),
-          item(
-            "Employment type scenario tool",
-            "/netherlands/work/tools/employment-type-scenario-tool/",
-            "Compare employee, fixed-term, contractor, and ZZP-style setups — indicative money and trade-offs (planning only)."
-          ),
         ],
       },
       {
         title: "Work permits & job changes",
         items: [
-          item("Work permit Netherlands", "/netherlands/work/work-permit-netherlands/"),
+          item("Working in the Netherlands", "/netherlands/work/working-in-netherlands/"),
           item("TWV work permit", "/netherlands/work/twv-work-permit/"),
           item("Changing jobs Netherlands", "/netherlands/work/changing-jobs-netherlands/"),
           item("Resigning job Netherlands", "/netherlands/work/resigning-job-netherlands/"),
@@ -747,39 +729,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Taxes",
         items: [
           item("Netherlands tax guide for expats", "/netherlands/taxes/"),
-          item("30% ruling eligibility calculator", "/netherlands/taxes/tools/30-ruling-calculator/"),
-          item("Dutch salary net calculator", "/netherlands/taxes/tools/dutch-salary-net-calculator/"),
-          item(
-            "Double Tax Awareness Tool",
-            "/netherlands/taxes/tools/double-tax-awareness-tool/",
-            "Planning view for cross-border filing risk, likely relief path, and advisor escalation signals."
-          ),
-          item(
-            "Healthcare allowance estimator",
-            "/netherlands/taxes/tools/healthcare-allowance-estimator/",
-            "Zorgtoeslag planning: income and asset screening, estimated allowance, net premium — not Dienst Toeslagen."
-          ),
-          item(
-            "Dutch payslip decoder",
-            "/netherlands/work/tools/payslip-decoder/",
-            "Explain bruto/netto and common lines from pasted text or a text PDF — not payroll advice."
-          ),
-          item(
-            "Job offer comparison tool",
-            "/netherlands/work/tools/job-offer-comparison/",
-            "Side-by-side offers: indicative net, 30% ruling support, relocation, rent, commute, and negotiation prompts — not tax or legal advice."
-          ),
-          item(
-            "Employment contract risk scanner",
-            "/netherlands/work/tools/employment-contract-risk-scanner/",
-            "Planning scan for offer letters and contracts — not legal advice."
-          ),
-          item(
-            "Employment type scenario tool",
-            "/netherlands/work/tools/employment-type-scenario-tool/",
-            "Rank work structures on income, stability, admin, and expat fit — planning only."
-          ),
-          item("Tax tools hub", "/netherlands/taxes/tools/"),
           item("Expat taxes Netherlands", "/netherlands/taxes/expat-taxes-netherlands/"),
           item("How taxes work in the Netherlands", "/netherlands/taxes/how-taxes-work-netherlands/"),
           item("Tax residency Netherlands", "/netherlands/taxes/tax-residency-netherlands/"),
@@ -791,24 +740,8 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Salary & allowances",
         items: [
-          item("Work tools hub", "/netherlands/work/tools/", "Payslip decoder, contract tools, and job-offer helpers."),
-          item(
-            "Job offer comparison tool",
-            "/netherlands/work/tools/job-offer-comparison/",
-            "Weigh multiple offers beyond headline gross — net, city costs, benefits, and expat support signals."
-          ),
-          item(
-            "Employment type scenario tool",
-            "/netherlands/work/tools/employment-type-scenario-tool/",
-            "Compare payroll vs contractor vs ZZP before you choose or sign."
-          ),
           item("Employment overview", "/netherlands/money/taxes/employment-overview"),
           item("Net salary Netherlands", "/netherlands/taxes/net-salary-netherlands/"),
-          item(
-            "Dutch payslip decoder",
-            "/netherlands/work/tools/payslip-decoder/",
-            "Read a loonstrook alongside gross-to-net planning."
-          ),
           item("Gross vs net salary Netherlands", "/netherlands/taxes/gross-vs-netherlands-salary/"),
           item("Payroll tax Netherlands", "/netherlands/taxes/payroll-tax-netherlands/"),
           item("Average salary Netherlands", "/netherlands/work/average-salary-netherlands/"),
@@ -820,38 +753,13 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Holiday allowance Netherlands", "/netherlands/work/holiday-allowance-netherlands/"),
           item("Bonus tax Netherlands", "/netherlands/work/bonus-tax-netherlands/"),
           item("Healthcare allowance", "/netherlands/taxes/healthcare-allowance/"),
-          item(
-            "Healthcare allowance estimator",
-            "/netherlands/taxes/tools/healthcare-allowance-estimator/",
-            "Calculator-style zorgtoeslag planning with 2026 thresholds — planning only."
-          ),
           item("Rent allowance", "/netherlands/taxes/rent-allowance/"),
           item("Childcare allowance", "/netherlands/taxes/childcare-allowance/"),
-          item(
-            "Childcare cost estimator",
-            "/netherlands/family/tools/childcare-cost-estimator/",
-            "Gross bills, estimated toeslag, net out-of-pocket, and first-month cash — planning only."
-          ),
         ],
       },
       {
         title: "Employment contracts & rights",
         items: [
-          item(
-            "Job offer comparison tool",
-            "/netherlands/work/tools/job-offer-comparison/",
-            "Structure a decision across offers before you dive into clause-level review."
-          ),
-          item(
-            "Employment contract risk scanner",
-            "/netherlands/work/tools/employment-contract-risk-scanner/",
-            "Paste text or a text-based PDF for clause flags and HR-ready questions."
-          ),
-          item(
-            "Employment type scenario tool",
-            "/netherlands/work/tools/employment-type-scenario-tool/",
-            "Side-by-side scenarios for structure, net, sponsorship fit, and admin — not legal advice."
-          ),
           item("Working in the Netherlands", "/netherlands/work/working-in-netherlands/"),
           item("Employment contract Netherlands", "/netherlands/work/employment-contract-netherlands/"),
           item("Probation period Netherlands", "/netherlands/work/probation-period-netherlands/"),
@@ -865,11 +773,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Freelancing Netherlands", "/netherlands/work/freelancing-netherlands/"),
           item("ZZP Netherlands", "/netherlands/work/zzp-netherlands/"),
           item("Contractor vs employee Netherlands", "/netherlands/work/contractor-vs-employee-netherlands/"),
-          item(
-            "Employment type scenario tool",
-            "/netherlands/work/tools/employment-type-scenario-tool/",
-            "Model employee vs contractor vs ZZP trade-offs with your priorities."
-          ),
         ],
       },
       {
@@ -937,11 +840,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Health insurance", "/netherlands/services/health-insurance/"),
           item("Compare health insurance", "/netherlands/services/compare-health-insurance/"),
           item("Insurance providers", "/netherlands/services/insurance-providers/"),
-          item(
-            "Healthcare allowance estimator",
-            "/netherlands/taxes/tools/healthcare-allowance-estimator/",
-            "Estimate zorgtoeslag before you compare gross premiums."
-          ),
         ],
       },
       {
@@ -985,9 +883,55 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
   living: {
     key: "living",
     label: "Living",
-    showFeatured: false,
+    /** Survival Guide featured card improves discoverability alongside dense section columns + tools rail. */
+    showFeatured: true,
     megaDensity: "full",
     sections: [
+      {
+        title: "Start here",
+        items: [
+          item(
+            "Survival Guide",
+            "/netherlands/living/survival-guide/",
+            "OV, apps, PIN-first payments, weather, and first-week sequencing—bookmarkable hub."
+          ),
+          item(
+            "Essential apps",
+            "/netherlands/living/apps/",
+            "What to install first: transport, Tikkie, groceries, delivery, and chat—curated for newcomers."
+          ),
+          item(
+            "Daily life basics",
+            "/netherlands/living/daily-life/",
+            "Groceries, errands, payments, deliveries, and household rhythms—practical onboarding beside apps and transport."
+          ),
+          item(
+            "Payments basics",
+            "/netherlands/living/payments/",
+            "PIN, contactless, Tikkie, and what usually works at Dutch tills—without duplicating full banking guides."
+          ),
+          item(
+            "Shopping & groceries",
+            "/netherlands/living/shopping-groceries/",
+            "How supermarkets, self-checkout, store apps, household basics, and delivery habits actually work in the Netherlands."
+          ),
+          item(
+            "Healthcare basics",
+            "/netherlands/living/healthcare-basics/",
+            "Insurance, GP registration, pharmacies, urgent care, and the healthcare flow newcomers usually need first."
+          ),
+          item(
+            "Emergencies & safety",
+            "/netherlands/living/emergencies-safety/",
+            "112, urgent vs non-urgent situations, lost items, and the practical safety basics newcomers should know early."
+          ),
+          item(
+            "Dutch Culture & Etiquette",
+            "/netherlands/living/culture-etiquette/",
+            "Directness, invitations, neighbors, work culture, and the social cues newcomers usually learn by trial and error."
+          ),
+        ],
+      },
       {
         title: "Housing",
         items: [
@@ -1001,11 +945,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Utilities",
         items: [
-          item(
-            "Utilities & services planner",
-            "/netherlands/living/tools/utilities-services-comparison/",
-            "Compare monthly bands, first-month setup, and what you arrange vs fixed charges — planning only."
-          ),
           item("Utilities in the Netherlands", "/netherlands/living/utilities/", "Energy, water, and setup flow."),
           item("Energy and water", "/netherlands/living/energy-and-water/", "Suppliers and metering basics."),
           item("Internet and mobile", "/netherlands/living/internet-and-mobile/", "Home connectivity setup."),
@@ -1016,7 +955,43 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Daily life",
         items: [
           item("Daily life in the Netherlands", "/netherlands/living/daily-life/", "Rhythms, expectations, and local life."),
-          item("Transport basics", "/netherlands/living/transport-basics/", "OV, bikes, and getting around."),
+          item(
+            "Payments basics",
+            "/netherlands/living/payments/",
+            "How paying in shops and online usually works: debit norms, apps, and first-week setup."
+          ),
+          item(
+            "Dutch Culture & Etiquette",
+            "/netherlands/living/culture-etiquette/",
+            "Directness, invitations, public etiquette, and work or neighbor norms."
+          ),
+          item("Getting around", "/netherlands/living/getting-around/", "OV, bikes, and local mobility."),
+          item(
+            "Essential apps",
+            "/netherlands/living/apps/",
+            "Curated install order: transport, Tikkie, groceries, delivery, and chat for newcomers."
+          ),
+          item(
+            "Shopping & groceries",
+            "/netherlands/living/shopping-groceries/",
+            "Supermarkets, self-checkout, household basics, deliveries, and the store habits that shape everyday errands."
+          ),
+          item(
+            "Healthcare basics",
+            "/netherlands/living/healthcare-basics/",
+            "Insurance, huisarts setup, pharmacies, urgent care, and everyday healthcare expectations for newcomers."
+          ),
+          item(
+            "Emergencies & safety",
+            "/netherlands/living/emergencies-safety/",
+            "Emergency numbers, urgent situations, lost items, and calm readiness for day-to-day Dutch life."
+          ),
+          item("Language & phrases", "/netherlands/living/language/", "Practical Dutch for daily life (Living hub)."),
+          item(
+            "Weather & seasons",
+            "/netherlands/living/weather/",
+            "Wind, rain, dark days, and what actually changes in everyday Dutch life."
+          ),
           item("Waste and recycling", "/netherlands/living/waste-and-recycling/", "Sorting, pickup, and containers."),
           item("Parking and local permits", "/netherlands/living/parking-and-local-permits/", "Street parking and permits."),
           item("Community basics", "/netherlands/living/community-basics/", "Neighbors, noise, and building life."),
@@ -1033,9 +1008,9 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       },
     ],
     featured: item(
-      "Living in the Netherlands",
-      "/netherlands/living/",
-      "Housing, utilities, daily rhythms, and light digital admin once you are on the ground."
+      "Netherlands Survival Guide",
+      "/netherlands/living/survival-guide/",
+      "Your Living pillar entry: day-one through month-one rhythm, topic cards, tools, and FAQs."
     ),
     tools: buildLivingToolRail(),
   },

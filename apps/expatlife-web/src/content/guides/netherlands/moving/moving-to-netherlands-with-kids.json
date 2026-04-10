@@ -47,7 +47,9 @@
       { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
       { "label": "Moving to the Netherlands with a partner", "href": "/netherlands/moving-to-netherlands-with-partner/" },
       { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
-      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
+      { "label": "Emergencies & Safety in the Netherlands", "href": "/netherlands/living/emergencies-safety/" }
     ]
   },
 
@@ -79,7 +81,9 @@
         { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
         { "label": "Moving to the Netherlands with a partner", "href": "/netherlands/moving-to-netherlands-with-partner/" },
         { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
-        { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+        { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+        { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
+        { "label": "Emergencies & Safety in the Netherlands", "href": "/netherlands/living/emergencies-safety/" }
       ]
     },
     {
@@ -249,7 +253,9 @@
       "links": [
         { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
-        { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" }
+        { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
+        { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
+        { "label": "Emergencies & Safety in the Netherlands", "href": "/netherlands/living/emergencies-safety/" }
       ]
     },
     {
@@ -267,6 +273,8 @@
       ],
       "links": [
         { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
+        { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
+        { "label": "Emergencies & Safety in the Netherlands", "href": "/netherlands/living/emergencies-safety/" },
         { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
       ],
       "services": [

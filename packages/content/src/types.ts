@@ -266,6 +266,17 @@ export type NlPortalContent = {
     infoBoxTitle: string;
     infoBoxItems: string[];
   };
+  /** Daily life pillar — complements Move/Money with on-the-ground rhythm. */
+  livingCluster: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    body: string;
+    openSurvivalGuideLabel: string;
+    openUtilitiesLabel: string;
+    infoBoxTitle: string;
+    infoBoxItems: string[];
+  };
   executionTools: {
     eyebrow: string;
     title: string;

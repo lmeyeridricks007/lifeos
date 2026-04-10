@@ -1,6 +1,7 @@
 import { banksMonetizationProviders } from "./banks";
 import { housingMonetizationProviders } from "./housing";
 import { insuranceMonetizationProviders } from "./insurance";
+import { mobilityMonetizationProviders } from "./mobility";
 import { relocationMonetizationProviders } from "./relocation";
 import { utilitiesMonetizationProviders } from "./utilities";
 import type { MonetizationProvider } from "@/src/lib/monetization/types";
@@ -9,6 +10,7 @@ export {
   banksMonetizationProviders,
   housingMonetizationProviders,
   insuranceMonetizationProviders,
+  mobilityMonetizationProviders,
   relocationMonetizationProviders,
   utilitiesMonetizationProviders,
 };
@@ -20,6 +22,7 @@ export const allMonetizationProviders: MonetizationProvider[] = [
   ...relocationMonetizationProviders,
   ...utilitiesMonetizationProviders,
   ...housingMonetizationProviders,
+  ...mobilityMonetizationProviders,
 ];
 
 export function getMonetizationProviderById(id: string): MonetizationProvider | undefined {

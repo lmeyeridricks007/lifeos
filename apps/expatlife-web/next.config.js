@@ -11,6 +11,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/netherlands/living/transport-basics",
+        destination: "/netherlands/living/getting-around/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/transport-basics/",
+        destination: "/netherlands/living/getting-around/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/housing/tools/utilities-services-comparison-tool",
         destination: "/netherlands/living/tools/utilities-services-comparison/",
         permanent: true,
@@ -141,6 +151,46 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/visas-residency",
+        destination: "/netherlands/moving/visas-residency/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visas-residency/",
+        destination: "/netherlands/moving/visas-residency/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visas-residency/residence-permits",
+        destination: "/netherlands/moving/residence-permits/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visas-residency/residence-permits/",
+        destination: "/netherlands/moving/residence-permits/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visas-residency/extensions-changes",
+        destination: "/netherlands/moving/extensions-changes/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visas-residency/extensions-changes/",
+        destination: "/netherlands/moving/extensions-changes/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visas-residency/status-changes",
+        destination: "/netherlands/moving/status-changes/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/visas-residency/status-changes/",
+        destination: "/netherlands/moving/status-changes/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/visas-residency/partner-family",
         destination: "/netherlands/visa/partner-family-visa/",
         permanent: true,
@@ -218,6 +268,16 @@ const nextConfig = {
       {
         source: "/netherlands/visa/freelancer-visa/",
         destination: "/netherlands/visa/self-employed-visa/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/work-permit-netherlands",
+        destination: "/netherlands/work/working-in-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/work-permit-netherlands/",
+        destination: "/netherlands/work/working-in-netherlands/",
         permanent: true,
       },
       {

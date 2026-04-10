@@ -158,6 +158,11 @@ const OFFICIAL_SOURCES = [
 
 const RELATED_NEXT_STEPS = [
   {
+    href: `${BASE}/living/survival-guide/`,
+    title: "Netherlands Survival Guide",
+    description: "What take-home pay feels like in practice: transport, apps, and daily spend norms.",
+  },
+  {
     href: `${BASE}/taxes/net-salary-netherlands/`,
     title: "Net salary in the Netherlands",
     description: "Gross-to-net context and payslip concepts once payroll facts are fixed.",

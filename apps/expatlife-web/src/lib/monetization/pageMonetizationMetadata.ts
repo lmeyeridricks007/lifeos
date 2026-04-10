@@ -42,9 +42,16 @@ export function inferMonetizationCategoriesFromPath(path: string): ContextualAff
   if (
     /\/services\/health-insurance(\/|$)/.test(p) ||
     p.includes("health-insurance") ||
+    p.includes("healthcare-basics") ||
+    p.includes("living/healthcare") ||
+    p.includes("emergencies-safety") ||
+    p.includes("living/emergencies") ||
     /\/insurance(\/|$)/.test(p)
   ) {
     add("insurance");
+  }
+  if (p.includes("emergencies-safety") || p.includes("living/emergencies")) {
+    add("banking");
   }
   if (/\/housing(\/|$)/.test(p) || /housing-platform|rental-agenc/.test(p)) {
     add("housing");
@@ -55,6 +62,9 @@ export function inferMonetizationCategoriesFromPath(path: string): ContextualAff
     p.includes("mobile-connectivity")
   ) {
     add("utilities");
+  }
+  if (p.includes("getting-around") || p.includes("/transport/")) {
+    add("mobility");
   }
 
   return out;

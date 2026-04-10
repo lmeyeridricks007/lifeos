@@ -9,7 +9,8 @@ export type ToolCardProps = {
   /** Defaults to wrench icon — pass a sized Lucide or custom glyph. */
   icon?: ReactNode;
   title: string;
-  description: string;
+  /** Omit for title-only tiles (rare). */
+  description?: string;
   href: string;
   ctaLabel: string;
   /** Tighter row for gateway pages. */
@@ -44,14 +45,16 @@ export function ToolCard({ icon, title, description, href, ctaLabel, compact, cl
               <span className="sr-only">Tool: </span>
               {title}
             </h3>
-            <p
-              className={cn(
-                "text-copilot-text-secondary",
-                compact ? "mt-1.5 text-xs leading-relaxed sm:text-sm" : "mt-2 text-sm leading-relaxed"
-              )}
-            >
-              {description}
-            </p>
+            {description ? (
+              <p
+                className={cn(
+                  "text-copilot-text-secondary",
+                  compact ? "mt-1.5 text-xs leading-relaxed sm:text-sm" : "mt-2 text-sm leading-relaxed"
+                )}
+              >
+                {description}
+              </p>
+            ) : null}
           </div>
         </div>
         <Link

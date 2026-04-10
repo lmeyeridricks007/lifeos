@@ -60,7 +60,7 @@ export type ClusterPillarHubConfig = {
   faq: PillarFaqItem[];
 };
 
-const LIVING_HUB_PATH = "/netherlands/living/";
+const LIVING_HUB_PATH = "/netherlands/living/survival-guide/";
 const CULTURE_HUB_PATH = "/netherlands/culture/";
 
 export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
@@ -136,7 +136,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         actions: ["Sort waste per gemeente rules", "Plan bike + OV habits", "Understand quiet hours and building etiquette"],
         links: [
           { href: "/netherlands/living/daily-life/", label: "Daily life hub" },
-          { href: "/netherlands/living/transport-basics/", label: "Transport basics" },
+          { href: "/netherlands/living/getting-around/", label: "Getting around" },
         ],
       },
       {
@@ -204,7 +204,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         readingOrderLinks: [
           { title: "Daily life hub", href: "/netherlands/living/daily-life/" },
           { title: "Waste & recycling", href: "/netherlands/living/waste-and-recycling/" },
-          { title: "Transport basics", href: "/netherlands/living/transport-basics/" },
+          { title: "Getting around", href: "/netherlands/living/getting-around/" },
         ],
         startToolLink: null,
         unknownsToConfirm: [],
@@ -449,6 +449,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         personaTitle: "Learning Dutch & integrating faster",
         whatMatters: ["Speaking confidence for daily errands", "Exam prep if required for your route", "Family/school touchpoints"],
         readingOrderLinks: [
+          { title: "Language & phrases (Living)", href: "/netherlands/living/language/" },
           { title: "Language basics", href: "/netherlands/culture/dutch-language-basics/" },
           { title: "Learning Dutch", href: "/netherlands/culture/learning-dutch/" },
           { title: "Inburgering orientation", href: "/netherlands/culture/inburgering-exams/" },
@@ -500,9 +501,9 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         description: "Legal sequencing, documents, and arrival planning.",
       },
       {
-        label: "Living hub",
-        href: "/netherlands/living/",
-        description: "Housing, utilities, and everyday admin systems.",
+        label: "Living Survival Guide",
+        href: "/netherlands/living/survival-guide/",
+        description: "Day-to-day life, transport, apps, and household systems.",
       },
       {
         label: "Money & taxes hub",

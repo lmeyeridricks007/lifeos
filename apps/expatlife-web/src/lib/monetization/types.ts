@@ -16,7 +16,8 @@ export type MonetizationProviderCategory =
   | "health-insurance"
   | "relocation"
   | "utilities"
-  | "housing";
+  | "housing"
+  | "mobility";
 
 export type MonetizationProvider = {
   id: string;

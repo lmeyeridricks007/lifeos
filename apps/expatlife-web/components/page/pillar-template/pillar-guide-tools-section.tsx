@@ -4,7 +4,10 @@ import { SectionBlock, type SectionBlockProps } from "@/components/page/moving-p
 import { cn } from "@/lib/cn";
 import { movingNlShellToolsClass } from "@/lib/ui/moving-nl-pillar-identity";
 
-export type PillarGuideToolsSectionProps = Pick<SectionBlockProps, "id" | "title" | "subtitle" | "compact"> & {
+export type PillarGuideToolsSectionProps = Pick<
+  SectionBlockProps,
+  "id" | "title" | "subtitle" | "subtitleMarkdown" | "compact"
+> & {
   shellClassName?: string;
   className?: string;
   gridClassName?: string;
@@ -20,12 +23,13 @@ export function PillarGuideToolsSection({
   id,
   title,
   subtitle,
+  subtitleMarkdown,
   compact,
   children,
 }: PillarGuideToolsSectionProps) {
   return (
     <GuideToolsRegion className={cn(shellClassName ?? movingNlShellToolsClass, className)}>
-      <SectionBlock compact={compact} id={id} title={title} subtitle={subtitle}>
+      <SectionBlock compact={compact} id={id} title={title} subtitle={subtitle} subtitleMarkdown={subtitleMarkdown}>
         <div className={cn(defaultToolGridClass, gridClassName)}>{children}</div>
       </SectionBlock>
     </GuideToolsRegion>

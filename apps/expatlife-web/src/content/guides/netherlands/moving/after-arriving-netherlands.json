@@ -32,7 +32,8 @@
       { "label": "Open a Bank Account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
       { "label": "Relocation Cost Estimator", "href": "/netherlands/moving/tools/relocation-cost-estimator/" },
       { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
-      { "label": "Document Translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" }
+      { "label": "Document Translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" },
+      { "label": "Getting around in the Netherlands", "href": "/netherlands/living/getting-around/" }
     ]
   },
 
@@ -378,6 +379,8 @@
     "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
     "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
     "related": [
+      { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/" },
+      { "label": "Language & phrases for life in the Netherlands", "href": "/netherlands/living/language/" },
       { "label": "All services hub", "href": "/netherlands/services/" },
       { "label": "Compare banks", "href": "/netherlands/services/banks/" },
       { "label": "Compare health insurance", "href": "/netherlands/services/health-insurance/" },
