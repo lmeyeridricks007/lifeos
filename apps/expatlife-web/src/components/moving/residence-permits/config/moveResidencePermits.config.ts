@@ -81,6 +81,24 @@ const pillarJourneyBridge: MoveResidencePermitsPageMeta["pillarJourneyBridge"] =
       meta: "Move",
     },
     {
+      href: "/netherlands/moving/changing-jobs-netherlands/",
+      label: "Changing jobs in the Netherlands",
+      description: "Job-switch checklist: contracts, permits, salary timing, housing, and household admin.",
+      meta: "Move",
+    },
+    {
+      href: "/netherlands/moving/resigning-job-netherlands/",
+      label: "Resigning a job in the Netherlands",
+      description: "Exit planning: notice, contract review, stay and salary continuity before you resign.",
+      meta: "Move",
+    },
+    {
+      href: "/netherlands/moving/layoffs-netherlands/",
+      label: "Layoffs in the Netherlands",
+      description: "Redundancy risk: employment ending next to permit continuity, money, and housing.",
+      meta: "Move",
+    },
+    {
       href: "/netherlands/moving/extensions-changes/",
       label: "Extensions & changes",
       description: "Renewals, job changes, study/family shifts—practical orientation after you land.",
@@ -243,6 +261,21 @@ export const moveResidencePermitsPageMeta: MoveResidencePermitsPageMeta = {
       description: "Use when a permit decision is tightly tied to a job offer, payroll, or relocation package.",
     },
     {
+      href: "/netherlands/moving/changing-jobs-netherlands/",
+      label: "Changing jobs in the Netherlands",
+      description: "When you already have a stay and a new employer may touch permit, payroll, or timing questions.",
+    },
+    {
+      href: "/netherlands/moving/resigning-job-netherlands/",
+      label: "Resigning a job in the Netherlands",
+      description: "When ending employment may touch stay, sponsor steps, or timing before your last day.",
+    },
+    {
+      href: "/netherlands/moving/layoffs-netherlands/",
+      label: "Layoffs in the Netherlands",
+      description: "When a role may end through redundancy — map stay and household impact early.",
+    },
+    {
       href: "/netherlands/moving/twv-work-permit/",
       label: "TWV work permit",
       description: "Useful when employer-driven work authorization may matter more than a general permit summary.",
@@ -329,6 +362,27 @@ export const moveResidencePermitsPageMeta: MoveResidencePermitsPageMeta = {
       title: "Working in the Netherlands",
       description: "Move-focused guide for comparing offers, payroll, permits, and first-month setup together.",
       href: "/netherlands/moving/working-in-the-netherlands/",
+      ctaLabel: "Open guide",
+    },
+    {
+      id: "changing-jobs",
+      title: "Changing jobs in the Netherlands",
+      description: "Checklist for job switches when work, residence continuity, and household admin move together.",
+      href: "/netherlands/moving/changing-jobs-netherlands/",
+      ctaLabel: "Open guide",
+    },
+    {
+      id: "resigning",
+      title: "Resigning a job in the Netherlands",
+      description: "Exit planning when permit or sponsor questions belong next to notice and last-day timing.",
+      href: "/netherlands/moving/resigning-job-netherlands/",
+      ctaLabel: "Open guide",
+    },
+    {
+      id: "layoffs",
+      title: "Layoffs in the Netherlands",
+      description: "When redundancy is live — stay, income gaps, and practical life on one orientation page.",
+      href: "/netherlands/moving/layoffs-netherlands/",
       ctaLabel: "Open guide",
     },
     {

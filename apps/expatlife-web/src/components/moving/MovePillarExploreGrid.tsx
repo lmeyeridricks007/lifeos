@@ -1,4 +1,5 @@
 import { CardLink } from "@/components/ui/card-link";
+import { cn } from "@/lib/cn";
 
 export type MovePillarExploreCard = {
   href: string;
@@ -24,6 +25,24 @@ const DEFAULT_CARDS: MovePillarExploreCard[] = [
     href: "/netherlands/moving/working-in-the-netherlands/",
     title: "Working in the Netherlands",
     description: "Work-led move guide linking offers, salary, permits, payroll, housing, and first-month setup.",
+    meta: "Move",
+  },
+  {
+    href: "/netherlands/moving/changing-jobs-netherlands/",
+    title: "Changing jobs in the Netherlands",
+    description: "Practical checklist for job switches: contracts, permits, salary, housing, and admin timing.",
+    meta: "Move",
+  },
+  {
+    href: "/netherlands/moving/resigning-job-netherlands/",
+    title: "Resigning a job in the Netherlands",
+    description: "Exit planning: notice, contract clauses, permits, salary continuity, and life admin before you resign.",
+    meta: "Move",
+  },
+  {
+    href: "/netherlands/moving/layoffs-netherlands/",
+    title: "Layoffs in the Netherlands",
+    description: "Redundancy and role-ending risk: employment, permits, salary continuity, housing, and calm next steps.",
     meta: "Move",
   },
   {
@@ -86,14 +105,23 @@ type Props = {
   /** Override or extend the default pillar strip (e.g. mark current page in copy). */
   cards?: MovePillarExploreCard[];
   className?: string;
+  /** Omit or pass empty string to hide the kicker row (parent section supplies the heading). */
   title?: string;
   excludeHref?: string;
+  /** When true, card `description` strings may use `**bold**` segments. */
+  descriptionMarkdown?: boolean;
 };
 
 /**
  * “Explore this pillar” strip aligned with Living’s continue-pillar pattern — CardLink grid for Move / adjacent pillars.
  */
-export function MovePillarExploreGrid({ cards = DEFAULT_CARDS, className, title = "Explore the journey", excludeHref }: Props) {
+export function MovePillarExploreGrid({
+  cards = DEFAULT_CARDS,
+  className,
+  title = "Explore the journey",
+  excludeHref,
+  descriptionMarkdown,
+}: Props) {
   const normalizedExclude = excludeHref?.replace(/\/+$/, "") ?? null;
   const visibleCards =
     normalizedExclude == null
@@ -102,10 +130,19 @@ export function MovePillarExploreGrid({ cards = DEFAULT_CARDS, className, title 
 
   return (
     <div className={className}>
-      <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-foreground-muted">{title}</p>
-      <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {title ? (
+        <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-foreground-muted">{title}</p>
+      ) : null}
+      <div className={cn(title ? "mt-3" : "", "grid gap-3 sm:grid-cols-2 lg:grid-cols-3")}>
         {visibleCards.map((c) => (
-          <CardLink key={c.href} href={c.href} title={c.title} description={c.description} meta={c.meta} />
+          <CardLink
+            key={c.href}
+            href={c.href}
+            title={c.title}
+            description={c.description}
+            descriptionMarkdown={descriptionMarkdown}
+            meta={c.meta}
+          />
         ))}
       </div>
     </div>

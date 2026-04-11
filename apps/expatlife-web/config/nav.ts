@@ -82,9 +82,13 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
           link("Self-employed visa", "/netherlands/visa/self-employed-visa", "Entrepreneur / freelancer route"),
           link("Student visa", "/netherlands/visa/student-visa", "Study route"),
           link("Partner & family", "/netherlands/visa/partner-family-visa", "Family route"),
-          link("Residence permits", "/netherlands/moving/residence-permits", "Permit categories", false),
-          link("Working in the Netherlands", "/netherlands/moving/working-in-the-netherlands", "Work-led relocation guide", false),
-          link("TWV work permit", "/netherlands/moving/twv-work-permit", "TWV route orientation", false),
+          link("Residence permits", "/netherlands/moving/residence-permits/", "Permit categories", false),
+          link("Working in the Netherlands", "/netherlands/moving/working-in-the-netherlands/", "Work-led relocation guide", false),
+          link("Changing jobs in the Netherlands", "/netherlands/moving/changing-jobs-netherlands/", "Job switch checklist: contracts, permits, salary, life admin", false),
+          link("Resigning a job in the Netherlands", "/netherlands/moving/resigning-job-netherlands/", "Exit planning: notice, contract, permits, money, life admin", false),
+          // `link()` defaults to comingSoon — must stay false (legacy `components/site/mega-menu.tsx` reads this flag).
+          link("Layoffs in the Netherlands", "/netherlands/moving/layoffs-netherlands/", "Redundancy risk: employment, permits, salary continuity, housing, next steps", false),
+          link("TWV work permit", "/netherlands/moving/twv-work-permit/", "TWV route orientation", false),
           link("Extensions & changes", "/netherlands/moving/extensions-changes/", "After arrival: renewals & life changes", false),
           link("Status changes", "/netherlands/moving/status-changes/", "Path transitions", false),
         ],
@@ -138,8 +142,12 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
       {
         title: "Employment",
         links: [
-          link("Moving for work", "/netherlands/moving/working-in-the-netherlands", "Relocation-focused work guide", false),
-          link("TWV work permit", "/netherlands/moving/twv-work-permit", "When TWV may matter in a work move", false),
+          link("Moving for work", "/netherlands/moving/working-in-the-netherlands/", "Relocation-focused work guide", false),
+          link("Changing jobs in the Netherlands", "/netherlands/moving/changing-jobs-netherlands/", "Contracts, permits, and practical admin when switching employers", false),
+          link("Resigning a job in the Netherlands", "/netherlands/moving/resigning-job-netherlands/", "Before you resign: contracts, stay, salary continuity, practical life", false),
+          // Live Move guide — same `comingSoon: false` requirement as in the Move mega menu.
+          link("Layoffs in the Netherlands", "/netherlands/moving/layoffs-netherlands/", "If a role may end: permits, money, housing, and calm planning", false),
+          link("TWV work permit", "/netherlands/moving/twv-work-permit/", "When TWV may matter in a work move", false),
           link("Contracts", "/netherlands/work/contracts", "Contract fundamentals"),
           link("Contract checklist", "/netherlands/work/contracts/checklist", "Offer review"),
           link("Rights", "/netherlands/work/rights", "Employee rights"),

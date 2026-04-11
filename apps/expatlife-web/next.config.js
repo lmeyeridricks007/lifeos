@@ -51,6 +51,36 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/changing-jobs-netherlands",
+        destination: "/netherlands/moving/changing-jobs-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/changing-jobs-netherlands/",
+        destination: "/netherlands/moving/changing-jobs-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/resigning-job-netherlands",
+        destination: "/netherlands/moving/resigning-job-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/resigning-job-netherlands/",
+        destination: "/netherlands/moving/resigning-job-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/layoffs-netherlands",
+        destination: "/netherlands/moving/layoffs-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/layoffs-netherlands/",
+        destination: "/netherlands/moving/layoffs-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/money/tools/30-ruling-calculator",
         destination: "/netherlands/taxes/tools/30-ruling-calculator/",
         permanent: true,

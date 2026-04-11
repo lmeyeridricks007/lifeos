@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/cn";
 import { transitionSurface, transitionTransform } from "@/lib/ui/interaction";
 
-type AccordionItem = { id: string; title: string; content: ReactNode | string };
+type AccordionItem = { id: string; title: ReactNode; content: ReactNode | string };
 
 type AccordionProps = {
   items: AccordionItem[];

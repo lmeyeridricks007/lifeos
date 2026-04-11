@@ -195,6 +195,21 @@ const moveTwvDeepLinks = [
     description: "Work-led move guide for offers, salary, payroll, permits, and admin setup.",
   },
   {
+    href: ROUTES.changingJobs,
+    label: "Changing jobs in the Netherlands",
+    description: "When you are switching employers and work authorization timing may move too.",
+  },
+  {
+    href: ROUTES.resigningJob,
+    label: "Resigning a job in the Netherlands",
+    description: "When leaving an employer may touch work permission, notice timing, and what happens next.",
+  },
+  {
+    href: ROUTES.layoffs,
+    label: "Layoffs in the Netherlands",
+    description: "When employment may end involuntarily — work auth, stay, and household planning together.",
+  },
+  {
     href: ROUTES.visas,
     label: "Visas & residency orientation",
     description: "Route overview before you go deep on one work-authorization structure.",

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { ArrowRight } from "lucide-react";
+import { BoldInline } from "@/components/content/PillarContentBlocks";
 import { cn } from "@/lib/cn";
 import { Badge } from "@/components/ui/badge";
 import { transitionInteractive, transitionTransform } from "@/lib/ui/interaction";
@@ -11,6 +12,8 @@ type CardLinkProps = {
   href: string;
   title: string;
   description: string;
+  /** When true, `description` may use `**bold**` segments (rendered as `<strong>`). */
+  descriptionMarkdown?: boolean;
   icon?: ReactNode;
   meta?: string;
   badge?: ReactNode;
@@ -26,6 +29,7 @@ function CardContent({
   status,
   title,
   description,
+  descriptionMarkdown,
   meta,
 }: {
   icon?: ReactNode;
@@ -33,6 +37,7 @@ function CardContent({
   status?: "coming_soon";
   title: string;
   description: string;
+  descriptionMarkdown?: boolean;
   meta?: string;
 }) {
   return (
@@ -60,7 +65,9 @@ function CardContent({
           ) : null}
         </div>
         <h3 className="text-lg font-semibold text-foreground">{title}</h3>
-        <p className="text-sm text-foreground-muted">{description}</p>
+        <p className="text-sm text-foreground-muted">
+          {descriptionMarkdown ? <BoldInline text={description} /> : description}
+        </p>
         {meta ? <p className="text-xs font-medium text-foreground-faint">{meta}</p> : null}
       </div>
       {status !== "coming_soon" ? (
@@ -76,7 +83,18 @@ function CardContent({
   );
 }
 
-export function CardLink({ href, title, description, icon, meta, badge, status, className, onClick }: CardLinkProps) {
+export function CardLink({
+  href,
+  title,
+  description,
+  descriptionMarkdown,
+  icon,
+  meta,
+  badge,
+  status,
+  className,
+  onClick,
+}: CardLinkProps) {
   const isComingSoon = status === "coming_soon";
   const baseClass = cn(
     transitionInteractive,
@@ -85,7 +103,15 @@ export function CardLink({ href, title, description, icon, meta, badge, status, 
     className
   );
   const content = (
-    <CardContent icon={icon} badge={badge} status={status} title={title} description={description} meta={meta} />
+    <CardContent
+      icon={icon}
+      badge={badge}
+      status={status}
+      title={title}
+      description={description}
+      descriptionMarkdown={descriptionMarkdown}
+      meta={meta}
+    />
   );
   if (isComingSoon) {
     return <div className={baseClass}>{content}</div>;

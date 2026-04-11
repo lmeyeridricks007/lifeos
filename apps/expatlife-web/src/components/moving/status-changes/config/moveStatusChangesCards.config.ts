@@ -89,7 +89,12 @@ export const moveStatusChangesCards = {
         href: "/netherlands/work/tools/job-offer-comparison/",
         description: "Compare work options before making a status-sensitive move.",
       },
-      relatedLinks: [{ label: "Working in the Netherlands", href: "/netherlands/moving/working-in-the-netherlands/" }],
+      relatedLinks: [
+        { label: "Changing jobs in the Netherlands", href: "/netherlands/moving/changing-jobs-netherlands/" },
+        { label: "Resigning a job in the Netherlands", href: "/netherlands/moving/resigning-job-netherlands/" },
+        { label: "Layoffs in the Netherlands", href: "/netherlands/moving/layoffs-netherlands/" },
+        { label: "Working in the Netherlands", href: "/netherlands/moving/working-in-the-netherlands/" },
+      ],
     },
     {
       id: "family-change",

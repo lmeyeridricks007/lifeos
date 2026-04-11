@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BoldParagraph } from "@/components/content/PillarContentBlocks";
 import { cn } from "@/lib/cn";
 import { movingNlShellFaqClass } from "@/lib/ui/moving-nl-pillar-identity";
 import type { MoveVisaResidencyReferences } from "./config/moveVisaResidency.types";
@@ -21,7 +22,10 @@ export function VisasResidencyOfficialSources({
       <h2 id="vr-official-heading" className="text-xl font-bold tracking-tight text-foreground">
         {references.sectionTitle}
       </h2>
-      <p className="mt-3 text-sm leading-relaxed text-foreground-muted">{references.disclaimer}</p>
+      <BoldParagraph
+        text={references.disclaimer}
+        className="mt-3 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+      />
       <div className="mt-6 grid gap-6 sm:grid-cols-2">
         {references.groups.map((g) => (
           <div key={g.id}>

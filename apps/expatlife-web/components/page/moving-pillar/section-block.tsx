@@ -30,6 +30,11 @@ export type SectionBlockProps = {
   subtitleClassName?: string;
   /** Spacing wrapper around `children` (e.g. stages grid rhythm). */
   contentClassName?: string;
+  /**
+   * When true, wraps eyebrow, title, subtitle, and children in a light slate panel
+   * (e.g. “Reality check” / common misunderstandings bands).
+   */
+  wrapInPanel?: boolean;
 };
 
 /** Consistent vertical spacing for major page sections. */
@@ -47,6 +52,7 @@ export function SectionBlock({
   titleClassName,
   subtitleClassName,
   contentClassName,
+  wrapInPanel,
 }: SectionBlockProps) {
   const headingId = id ? `${id}-heading` : undefined;
   const onDark = tone === "onDark";
@@ -55,12 +61,9 @@ export function SectionBlock({
   const subDefault = onDark ? movingNlSectionSubtitleOnDarkClass : movingNlSectionSubtitleClass;
   const subClass = subtitleClassName ?? subDefault;
   const contentGap = contentClassName ?? (compact ? "mt-5 sm:mt-6" : onDark ? "mt-7 sm:mt-8" : "mt-6 sm:mt-7");
-  return (
-    <section
-      id={id}
-      aria-labelledby={headingId}
-      className={cn("min-w-0", onDark ? "pt-0" : compact ? "pt-4 sm:pt-5" : "pt-8 sm:pt-9", className)}
-    >
+  const sectionTopPad = onDark ? "pt-0" : wrapInPanel ? "pt-1 sm:pt-2" : compact ? "pt-4 sm:pt-5" : "pt-8 sm:pt-9";
+  const body = (
+    <>
       {eyebrow ? (
         <p
           className={cn(
@@ -81,6 +84,17 @@ export function SectionBlock({
         </p>
       ) : null}
       <div className={contentGap}>{children}</div>
+    </>
+  );
+  return (
+    <section id={id} aria-labelledby={headingId} className={cn("min-w-0", sectionTopPad, className)}>
+      {wrapInPanel && !onDark ? (
+        <div className="rounded-2xl border border-slate-200/90 bg-slate-50 px-4 py-6 shadow-sm ring-1 ring-slate-900/[0.03] sm:px-6 sm:py-8">
+          {body}
+        </div>
+      ) : (
+        body
+      )}
     </section>
   );
 }

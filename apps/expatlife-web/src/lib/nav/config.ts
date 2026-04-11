@@ -394,6 +394,9 @@ function isCulturePillarPath(pathname: string): boolean {
 
 const WORK_PATH_HIGHLIGHT_MOVING: readonly string[] = [
   "/netherlands/moving/working-in-the-netherlands",
+  "/netherlands/moving/changing-jobs-netherlands",
+  "/netherlands/moving/resigning-job-netherlands",
+  "/netherlands/moving/layoffs-netherlands",
   "/netherlands/moving/twv-work-permit",
   "/netherlands/work/working-in-netherlands",
   "/netherlands/work/changing-jobs-netherlands",
@@ -575,8 +578,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Planning",
         items: [
           item("Moving to the Netherlands", "/netherlands/moving-to-the-netherlands"),
-          item("Visas & residency orientation", "/netherlands/moving/visas-residency/"),
-          item("Extensions & changes", "/netherlands/moving/extensions-changes/"),
           item("Moving checklist Netherlands", "/netherlands/moving-checklist-netherlands"),
           item("Moving from your country", "/netherlands/moving-to-netherlands-from"),
           item("Documents needed", "/netherlands/documents-needed-to-move-netherlands"),
@@ -611,8 +612,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Self-employed visa", "/netherlands/visa/self-employed-visa"),
           item("Student visa", "/netherlands/visa/student-visa"),
           item("Visas & residency", "/netherlands/moving/visas-residency/"),
-          item("Working in the Netherlands", "/netherlands/moving/working-in-the-netherlands/"),
-          item("TWV work permit", "/netherlands/moving/twv-work-permit/"),
           item("Residence permits", "/netherlands/moving/residence-permits/"),
           item("Extensions & changes", "/netherlands/moving/extensions-changes/"),
           item("Status changes", "/netherlands/moving/status-changes/"),
@@ -630,10 +629,10 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Work permits & job changes",
         items: [
           item("Working in the Netherlands", "/netherlands/moving/working-in-the-netherlands/"),
+          item("Changing jobs in the Netherlands", "/netherlands/moving/changing-jobs-netherlands/"),
           item("TWV work permit", "/netherlands/moving/twv-work-permit/"),
-          item("Changing jobs Netherlands", "/netherlands/work/changing-jobs-netherlands/"),
-          item("Resigning job Netherlands", "/netherlands/work/resigning-job-netherlands/"),
-          item("Layoffs Netherlands", "/netherlands/work/layoffs-netherlands/"),
+          item("Resigning a job in the Netherlands", "/netherlands/moving/resigning-job-netherlands/"),
+          item("Layoffs in the Netherlands", "/netherlands/moving/layoffs-netherlands/"),
         ],
       },
     ],
@@ -682,7 +681,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/tools/city-comparison/",
             "Compare cities on modelled costs, commute, family fit, and lifestyle — planning only."
           ),
-          soon("Best cities for expats"),
+          item(
+            "Best cities for expats",
+            "/netherlands/cities/best-cities-for-expats/",
+            "Practical decision guide: trade-offs, scenarios, and links to city guides and tools."
+          ),
           soon("Best cities for families"),
           soon("Affordable cities"),
           soon("Amsterdam vs Rotterdam"),
@@ -696,6 +699,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         "Netherlands city comparison tool",
         "/netherlands/tools/city-comparison/",
         "Rank 2–4 cities from your budget, office location, and priority sliders."
+      ),
+      item(
+        "Best cities for expats (guide)",
+        "/netherlands/cities/best-cities-for-expats/",
+        "Decision guide: scenarios, trade-offs, and links into city guides and calculators."
       ),
       item(
         "Rent affordability calculator",
@@ -763,8 +771,26 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Employment contracts & rights",
         items: [
-          item("Moving for work", "/netherlands/moving/working-in-the-netherlands/"),
-          item("Working in the Netherlands", "/netherlands/work/working-in-netherlands/"),
+          item(
+            "Working in the Netherlands",
+            "/netherlands/moving/working-in-the-netherlands/",
+            "Work-led move guide: offers, permits, payroll, and first-month setup."
+          ),
+          item(
+            "Changing jobs in the Netherlands",
+            "/netherlands/moving/changing-jobs-netherlands/",
+            "Contracts, permits, salary timing, and admin when switching employers."
+          ),
+          item(
+            "Resigning a job in the Netherlands",
+            "/netherlands/moving/resigning-job-netherlands/",
+            "Notice, stay, salary continuity, and life admin before you resign."
+          ),
+          item(
+            "Layoffs in the Netherlands",
+            "/netherlands/moving/layoffs-netherlands/",
+            "Redundancy risk: employment ending, permits, money, housing, and next steps."
+          ),
           item("Employment contract Netherlands", "/netherlands/work/employment-contract-netherlands/"),
           item("Probation period Netherlands", "/netherlands/work/probation-period-netherlands/"),
           item("Notice period Netherlands", "/netherlands/work/notice-period-netherlands/"),

@@ -29,6 +29,9 @@ const workSection = {
       whatMattersNext:
         "Clarify sponsor and timing before contracts are final, then pressure-test the practical side of the switch with work and pay tools.",
       relatedLinks: [
+        { label: "Changing jobs in the Netherlands", href: "/netherlands/moving/changing-jobs-netherlands/" },
+        { label: "Resigning a job in the Netherlands", href: "/netherlands/moving/resigning-job-netherlands/" },
+        { label: "Layoffs in the Netherlands", href: "/netherlands/moving/layoffs-netherlands/" },
         { label: "Job offer comparison", href: "/netherlands/work/tools/job-offer-comparison/" },
         { label: "Employment contract risk scanner", href: "/netherlands/work/tools/employment-contract-risk-scanner/" },
       ],
@@ -68,6 +71,8 @@ const workSection = {
       whatMattersNext:
         "Treat the change as both a residency and household-planning issue so income, insurance, and housing do not get separated from the legal timeline.",
       relatedLinks: [
+        { label: "Resigning a job in the Netherlands", href: "/netherlands/moving/resigning-job-netherlands/" },
+        { label: "Layoffs in the Netherlands", href: "/netherlands/moving/layoffs-netherlands/" },
         { label: "Extensions & changes", href: EXTENSIONS },
         { label: "Cost of living calculator", href: "/netherlands/money/tools/cost-of-living-calculator/" },
       ],
@@ -117,6 +122,21 @@ const workSection = {
       label: "Working in the Netherlands",
       href: "/netherlands/moving/working-in-the-netherlands/",
       description: "Context on contracts, payroll, and work realities around status-sensitive changes.",
+    },
+    {
+      label: "Changing jobs in the Netherlands",
+      href: "/netherlands/moving/changing-jobs-netherlands/",
+      description: "Whole-life checklist when a new employer touches permits, salary timing, and household admin.",
+    },
+    {
+      label: "Resigning a job in the Netherlands",
+      href: "/netherlands/moving/resigning-job-netherlands/",
+      description: "Exit planning when work may end before the next basis of stay is clear.",
+    },
+    {
+      label: "Layoffs in the Netherlands",
+      href: "/netherlands/moving/layoffs-netherlands/",
+      description: "Redundancy risk: employment ending alongside stay, money, and household planning.",
     },
   ],
 } satisfies MoveStatusChangesWorkSection;

@@ -1,0 +1,137 @@
+import type { CitiesBestForExpatsProfileCardConfig } from "./citiesBestForExpats.types";
+import { citiesBestForExpatsRoutes as R } from "./citiesBestForExpats.routes";
+
+/** Short city profile / decision cards (deeper than comparison grid). */
+export const citiesBestForExpatsProfileCards: CitiesBestForExpatsProfileCardConfig[] = [
+  {
+    id: "p-amsterdam",
+    name: "Amsterdam",
+    guide: { href: "/netherlands/amsterdam/", label: "Amsterdam city guide" },
+    tags: ["Scale", "Competition"],
+    intro: "Maximum scale and choice — and the sharpest housing competition.",
+    bestFor: "Global careers, networking, English-default day-to-day.",
+    tradeoffs: ["Rent stress + viewing queues; lock **commute + budget** before you fall for listings."],
+    nextLinks: [
+      { href: "/netherlands/amsterdam/", label: "Amsterdam city guide" },
+      { href: R.rentAffordability, label: "Rent calculator" },
+      { href: R.costOfLiving, label: "Cost of living" },
+    ],
+  },
+  {
+    id: "p-utrecht",
+    name: "Utrecht",
+    guide: { href: "/netherlands/utrecht/", label: "Utrecht city guide" },
+    tags: ["Central", "Competitive"],
+    intro: "Central, attractive “balance” hub — housing still moves fast.",
+    bestFor: "National travel, consulting, urban life without Amsterdam sprawl.",
+    tradeoffs: ["Mid-size ≠ easy listings — **speed + paperwork** still decide."],
+    nextLinks: [
+      { href: "/netherlands/utrecht/", label: "Utrecht city guide" },
+      { href: R.cityComparison, label: "City comparison tool" },
+    ],
+  },
+  {
+    id: "p-rotterdam",
+    name: "Rotterdam",
+    guide: { href: "/netherlands/rotterdam/", label: "Rotterdam city guide" },
+    tags: ["Port", "Design"],
+    intro: "Modern port + creative energy; often more **room per euro** than Amsterdam.",
+    bestFor: "Logistics, trade, design, contemporary urban fabric.",
+    tradeoffs: ["Some careers still pull **Amsterdam / The Hague** — validate commute before signing."],
+    nextLinks: [
+      { href: "/netherlands/rotterdam/", label: "Rotterdam city guide" },
+      { href: R.costOfLiving, label: "Cost of living" },
+    ],
+  },
+  {
+    id: "p-hague",
+    name: "The Hague",
+    guide: { href: "/netherlands/the-hague/", label: "The Hague city guide" },
+    tags: ["Institutions", "Coast"],
+    intro: "Institutions, coast nearby, distinct expat cluster.",
+    bestFor: "Law, policy, diplomacy, NGOs; sea + city mix.",
+    tradeoffs: ["**Daily** cross-Randstad commute is punishing — be honest about office location."],
+    nextLinks: [
+      { href: "/netherlands/the-hague/", label: "The Hague city guide" },
+      { href: R.childcare, label: "Childcare estimator" },
+    ],
+  },
+  {
+    id: "p-eindhoven",
+    name: "Eindhoven",
+    guide: { href: "/netherlands/eindhoven/", label: "Eindhoven city guide" },
+    tags: ["Tech", "Engineering"],
+    intro: "Engineering employer magnet in a compact footprint.",
+    bestFor: "Hardware, semiconductors, deep product engineering.",
+    tradeoffs: ["Partner job markets narrower; quieter nights than Randstad cores."],
+    nextLinks: [
+      { href: "/netherlands/eindhoven/", label: "Eindhoven city guide" },
+      { href: R.cityComparison, label: "City comparison tool" },
+    ],
+  },
+  {
+    id: "p-haarlem",
+    name: "Haarlem",
+    guide: { href: "/netherlands/haarlem/", label: "Haarlem city guide" },
+    tags: ["Amsterdam orbit", "Atmosphere"],
+    intro: "Historic core; short hop to Amsterdam / Schiphol when needed.",
+    bestFor: "Amsterdam-area workers; atmosphere-first households.",
+    tradeoffs: ["Peak trains + premium rent — **not** a hidden cheap option."],
+    nextLinks: [
+      { href: "/netherlands/haarlem/", label: "Haarlem city guide" },
+      { href: R.rentAffordability, label: "Rent calculator" },
+    ],
+  },
+  {
+    id: "p-leiden",
+    name: "Leiden",
+    guide: { href: "/netherlands/leiden/", label: "Leiden city guide" },
+    tags: ["Research", "Students"],
+    intro: "Canals + university energy; splits toward Hague or Schiphol.",
+    bestFor: "Research, life sciences, academic households.",
+    tradeoffs: ["Student cycles spike demand — time your search."],
+    nextLinks: [
+      { href: "/netherlands/leiden/", label: "Leiden city guide" },
+      { href: R.healthcareAllowance, label: "Healthcare allowance estimator" },
+    ],
+  },
+  {
+    id: "p-delft",
+    name: "Delft",
+    guide: { href: "/netherlands/delft/", label: "Delft city guide" },
+    tags: ["TU", "Quiet"],
+    intro: "Quiet daily life between Rotterdam and The Hague.",
+    bestFor: "TU-linked tech; bikeable routines.",
+    tradeoffs: ["Low-key evenings — big nights = **train** to Rotterdam or The Hague."],
+    nextLinks: [
+      { href: "/netherlands/delft/", label: "Delft city guide" },
+      { href: R.utilities, label: "Utilities comparison" },
+    ],
+  },
+  {
+    id: "p-groningen",
+    name: "Groningen",
+    guide: { href: "/netherlands/groningen/", label: "Groningen city guide" },
+    tags: ["North", "Student"],
+    intro: "Northern hub; student pulse; self-contained job market.",
+    bestFor: "Northern careers, academics, anti-Randstad churn.",
+    tradeoffs: ["Distance to **western HQs & Schiphol** — fine if work is local."],
+    nextLinks: [
+      { href: "/netherlands/groningen/", label: "Groningen city guide" },
+      { href: R.costOfLiving, label: "Cost of living" },
+    ],
+  },
+  {
+    id: "p-breda",
+    name: "Breda",
+    guide: { href: "/netherlands/breda/", label: "Breda city guide" },
+    tags: ["Brabant", "Space"],
+    intro: "Brabant mid-size; approachable pace, southern links.",
+    bestFor: "Cross-border commuters; space-first households.",
+    tradeoffs: ["Some sectors stay **Randstad-heavy** — verify local hiring."],
+    nextLinks: [
+      { href: "/netherlands/breda/", label: "Breda city guide" },
+      { href: R.cityComparison, label: "City comparison tool" },
+    ],
+  },
+];

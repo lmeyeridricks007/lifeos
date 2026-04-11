@@ -29,6 +29,24 @@ export const moveTwvRelatedTools: MoveTwvWorkPermitRelatedTools = {
           cta: "Open guide",
         },
         {
+          title: "Changing jobs in the Netherlands",
+          description: "When you are switching employers and work authorization timing may move too.",
+          href: ROUTES.changingJobs,
+          cta: "Open guide",
+        },
+        {
+          title: "Resigning a job in the Netherlands",
+          description: "Exit planning when TWV or employer-linked work auth may interact with your last day.",
+          href: ROUTES.resigningJob,
+          cta: "Open guide",
+        },
+        {
+          title: "Layoffs in the Netherlands",
+          description: "When redundancy is in play — employer work permission, stay, and monthly life.",
+          href: ROUTES.layoffs,
+          cta: "Open guide",
+        },
+        {
           title: "Visas & residency",
           description: "Compare work, study, family, and self-employment routes before going deeper.",
           href: ROUTES.visas,

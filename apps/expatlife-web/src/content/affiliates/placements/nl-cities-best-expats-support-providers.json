@@ -1,0 +1,30 @@
+{
+  "id": "nl-cities-best-expats-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/cities/best-cities-for-expats/",
+    "slot": "mid-page-after-tradeoffs-city-shortlist"
+  },
+  "variant": "cards",
+  "title": "Services people often compare after shortlisting a Dutch city",
+  "intro": "Once a few cities look realistic, many expats line up **housing search**, **relocation** help, **banking**, **mandatory health insurance**, and **mobile** in parallel — especially if a move date or employer support is in play. Scope, credentials, and pricing differ; confirm what is included and whether your employer contributes before you commit.",
+  "categoryOrder": ["services", "housing", "banking", "insurance", "mobile"],
+  "items": [],
+  "registryProviders": {
+    "categories": [
+      "housing-platforms",
+      "rental-agencies",
+      "relocation-services",
+      "relocation-agencies",
+      "visa-consultants",
+      "banks",
+      "health-insurance",
+      "mobile-connectivity"
+    ],
+    "limit": 8,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to city choice and Dutch setup, not pay-to-rank. This is not legal, tax, or immigration advice — verify outcomes with employers, municipalities, or qualified advisers."
+}

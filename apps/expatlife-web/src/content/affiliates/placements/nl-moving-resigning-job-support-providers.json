@@ -1,0 +1,30 @@
+{
+  "id": "nl-moving-resigning-job-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/moving/resigning-job-netherlands/",
+    "slot": "mid-page-resignation-support"
+  },
+  "variant": "cards",
+  "title": "Companies people often compare when leaving a job touches stay, money, or housing",
+  "intro": "Resigning can surface questions about **sponsor-linked stay**, **what happens next for payroll and banking**, **health insurance** if employer schemes or income timing shift, and **housing** if your address or landlord paperwork assumed employment. Many people work with employers and official channels only; others compare **visa consultants**, **immigration lawyers**, or **relocation** help when timelines feel tight. Scope and pricing differ—confirm fit, credentials, and what is covered before you commit.",
+  "categoryOrder": ["services", "banking", "insurance", "housing"],
+  "items": [],
+  "registryProviders": {
+    "categories": [
+      "visa-consultants",
+      "immigration-lawyers",
+      "relocation-services",
+      "relocation-agencies",
+      "banks",
+      "health-insurance",
+      "housing-platforms",
+      "rental-agencies"
+    ],
+    "limit": 8,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to resignation planning and Dutch setup, not pay-to-rank. This is not legal or immigration advice—verify outcomes with employers, the IND, UWV where relevant, or qualified advisers."
+}

@@ -46,6 +46,21 @@ export const moveResidencePermitSections: MoveResidencePermitSections = {
         description: "— wider work context once your route is clearer.",
       },
       {
+        label: "Changing jobs in the Netherlands",
+        href: "/netherlands/moving/changing-jobs-netherlands/",
+        description: "— when you are switching employers and permit or payroll timing may move too.",
+      },
+      {
+        label: "Resigning a job in the Netherlands",
+        href: "/netherlands/moving/resigning-job-netherlands/",
+        description: "— exit planning when employment may end and permit or household timing still matters.",
+      },
+      {
+        label: "Layoffs in the Netherlands",
+        href: "/netherlands/moving/layoffs-netherlands/",
+        description: "— redundancy or role-ending risk next to stay, payroll, rent, and family admin.",
+      },
+      {
         label: "TWV work permit",
         href: "/netherlands/moving/twv-work-permit/",
         description: "— useful when employer-driven work authorization may be part of the route.",

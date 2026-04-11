@@ -34,7 +34,11 @@ import {
 } from "@/lib/ui/moving-nl-pillar-identity";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { MovePillarExploreGrid } from "@/src/components/moving/MovePillarExploreGrid";
-import { MoveMisunderstandingCardGrid } from "@/src/components/moving/movePillarCardPrimitives";
+import {
+  MoveMisunderstandingCardGrid,
+  moveMisunderstandingSectionSubtitleClass,
+  moveMisunderstandingSectionTitleClass,
+} from "@/src/components/moving/movePillarCardPrimitives";
 import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc";
 import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
 import { VisasResidencyHeroGraphic } from "./VisasResidencyHeroGraphic";
@@ -378,21 +382,19 @@ function SectionBlockMisunderstandings() {
     <SectionBlock
       id="misunderstandings"
       className={SECTION_SCROLL_MARGIN}
+      wrapInPanel
       eyebrow={r.eyebrow}
-      eyebrowClassName="text-copilot-primary"
+      eyebrowClassName="text-sky-600"
       title={r.title}
+      titleClassName={moveMisunderstandingSectionTitleClass}
       subtitle={r.subtitle}
+      subtitleClassName={moveMisunderstandingSectionSubtitleClass}
     >
       <MoveMisunderstandingCardGrid
         rows={moveVisaResidencyMisunderstandings.map((row) => ({
           id: row.id,
           title: row.title,
-          body: (
-            <BoldParagraph
-              text={row.body}
-              className="text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
-            />
-          ),
+          body: <BoldParagraph text={row.body} className="text-sm leading-relaxed sm:text-[0.9375rem] sm:leading-relaxed" />,
         }))}
       />
     </SectionBlock>

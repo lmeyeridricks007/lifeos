@@ -30,6 +30,21 @@ export function ExploreNetherlandsCrossLinks() {
               </Link>
             </li>
             <li>
+              <Link href="/netherlands/moving/changing-jobs-netherlands/" className="text-link hover:underline">
+                Changing jobs in the Netherlands
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/moving/resigning-job-netherlands/" className="text-link hover:underline">
+                Resigning a job in the Netherlands
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/moving/layoffs-netherlands/" className="text-link hover:underline">
+                Layoffs in the Netherlands
+              </Link>
+            </li>
+            <li>
               <Link href="/netherlands/moving/twv-work-permit/" className="text-link hover:underline">
                 TWV work permit
               </Link>
@@ -52,6 +67,16 @@ export function ExploreNetherlandsCrossLinks() {
             <li>
               <Link href="/netherlands/cities/" className="text-link hover:underline">
                 Dutch cities
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/cities/best-cities-for-expats/" className="text-link hover:underline">
+                Best cities for expats
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/tools/city-comparison/" className="text-link hover:underline">
+                City comparison tool
               </Link>
             </li>
             <li>

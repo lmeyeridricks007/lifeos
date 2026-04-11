@@ -175,7 +175,7 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
   publishDate: "2026-03-24",
 
   seo: {
-    title: "Best Cities in the Netherlands for Expats | Compare Dutch Cities",
+    title: "Dutch Cities for Expats | Compare City Guides & Hubs | ExpatCopilot",
     description:
       "Explore the best cities in the Netherlands for expats, including Amsterdam, Amstelveen, Haarlem, Rotterdam, Utrecht, The Hague, Delft, Leiden, Maastricht, Breda, Tilburg, Arnhem, Nijmegen, Eindhoven, and Groningen, with practical guidance and city comparisons.",
     keywords: [
@@ -237,7 +237,7 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
 
   hero: {
     eyebrow: "CITIES",
-    title: "Best Cities in the Netherlands for Expats",
+    title: "Dutch cities hub — compare guides and explore",
     subtitle:
       "Explore the Dutch cities most commonly chosen by expats, compare what each city is known for, and decide where to build your new life in the Netherlands.",
     image: {
@@ -245,13 +245,19 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
       alt: "A man planning a relocation to the Netherlands, looking at a Rotterdam-style cityscape from a balcony with a map and notebook in the foreground.",
     },
     ctas: [
-      { label: "Explore Covered Cities", href: "#covered-cities", primary: true },
-      { label: "Browse Services", href: "/netherlands/services/", primary: false },
+      {
+        label: "Best cities decision guide",
+        href: "/netherlands/cities/best-cities-for-expats/",
+        primary: true,
+      },
+      { label: "Explore covered cities", href: "#covered-cities", primary: false },
+      { label: "Browse services", href: "/netherlands/services/", primary: false },
     ],
   },
 
   tocItems: [
     { id: "overview", label: "Overview" },
+    { id: "best-cities-decision-guide", label: "Best cities guide" },
     { id: "covered-cities", label: "Covered Cities" },
     { id: "coming-soon-cities", label: "Coming Soon Cities" },
     { id: "compare-dutch-cities", label: "Compare Dutch Cities" },
@@ -264,6 +270,7 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
     heading: "How to Use This Cities Guide",
     paragraphs: [
       "This hub helps you compare major Dutch cities that expats choose most often. Each city has a different profile for jobs, housing competition, lifestyle, pace, and family suitability—so your shortlist should match how you work and live, not only name recognition.",
+      "If you are still deciding between several cities, start with the practical decision guide: Best cities in the Netherlands for expats — it walks through trade-offs, scenarios, and which tools to open next before you commit.",
       "Use the covered city cards to see what each place is known for and why internationals pick it, then open the detailed city guide for practical setup steps. National basics (registration, BSN, insurance, banking) are similar across the country; the city guides focus on local context and next actions.",
       "We add more city guides over time. If your city is not covered yet, the comparison table and Netherlands-wide guides linked below still help you plan.",
     ],
@@ -272,6 +279,8 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
   intro: {
     paragraphs: [],
     links: [
+      { label: "Best cities for expats (guide)", href: "/netherlands/cities/best-cities-for-expats/" },
+      { label: "City comparison tool", href: "/netherlands/tools/city-comparison/" },
       { label: "Netherlands hub", href: "/netherlands/" },
       { label: "Services hub", href: "/netherlands/services/" },
       { label: "After arriving in the Netherlands", href: "/netherlands/after-arriving-netherlands/" },
@@ -308,6 +317,8 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
   hubGuideBlock: {
     title: "Key Netherlands guides",
     links: [
+      { label: "Best cities in the Netherlands for expats", href: "/netherlands/cities/best-cities-for-expats/" },
+      { label: "City comparison tool", href: "/netherlands/tools/city-comparison/" },
       { label: "After arriving in the Netherlands", href: "/netherlands/after-arriving-netherlands/" },
       { label: "Municipality registration", href: "/netherlands/municipality-registration-netherlands/" },
       { label: "Open a bank account", href: "/netherlands/open-bank-account-netherlands/" },
@@ -318,6 +329,11 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
   },
 
   exploreNextCards: [
+    {
+      label: "Best cities decision guide",
+      href: "/netherlands/cities/best-cities-for-expats/",
+      description: "Trade-offs, scenarios, and tools to shortlist Dutch cities before you fall in love with one postcode.",
+    },
     { label: "Netherlands hub", href: "/netherlands/", description: "Country overview, topics, and entry points for your move." },
     { label: "Services directory", href: "/netherlands/services/", description: "Banks, insurance, housing, visas, and relocation providers." },
     { label: "About ExpatCopilot", href: "/about/", description: "Who we are and how we help expats plan a move." },
@@ -1931,6 +1947,13 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
 
   relatedGuides: [
     {
+      title: "Decide before you open every city card",
+      links: [
+        { label: "Best cities in the Netherlands for expats", href: "/netherlands/cities/best-cities-for-expats/" },
+        { label: "Netherlands city comparison tool", href: "/netherlands/tools/city-comparison/" },
+      ],
+    },
+    {
       title: "Explore detailed city guides",
       links: [
         { label: "Moving to Amsterdam", href: "/netherlands/amsterdam/" },
@@ -1970,6 +1993,9 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
     {
       title: "Useful tools",
       links: [
+        { label: "City comparison tool", href: "/netherlands/tools/city-comparison/" },
+        { label: "Cost of living calculator", href: "/netherlands/money/tools/cost-of-living-calculator/" },
+        { label: "Rent affordability calculator", href: "/netherlands/housing/tools/rent-affordability-calculator/" },
         { label: "Relocation Checklist", href: "/netherlands/moving-checklist-netherlands/" },
         { label: "Document Readiness Checker", href: "/netherlands/document-readiness-checker/" },
         { label: "Visa Timeline Estimator", href: "/netherlands/visa-timeline-estimator/" },
@@ -1980,6 +2006,18 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
   ],
 
   tools: [
+    {
+      label: "City comparison tool",
+      href: "/netherlands/tools/city-comparison/",
+      description: "Model 2–4 cities with your priorities — planning only, not live listings.",
+      status: "live",
+    },
+    {
+      label: "Best cities for expats (guide)",
+      href: "/netherlands/cities/best-cities-for-expats/",
+      description: "Scenarios, trade-offs, and how to shortlist before you commit.",
+      status: "live",
+    },
     { label: "Relocation Checklist", href: "/netherlands/moving-checklist-netherlands/", description: "Before, arrival, and first 90 days tasks", status: "live" },
     { label: "Document Readiness Checker", href: "/netherlands/document-readiness-checker/", description: "Check which documents you need", status: "live" },
     { label: "Visa Timeline Estimator", href: "/netherlands/visa-timeline-estimator/", description: "Estimate visa processing and move timing", status: "live" },

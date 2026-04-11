@@ -38,6 +38,21 @@ export const moveResidencePermitRelatedTools: MoveVisaResidencyRelatedTools = {
       description: "When your job is the main reason you’re here.",
       items: [
         {
+          title: "Changing jobs in the Netherlands",
+          description: "Whole-life checklist when switching employers: contracts, permits, salary, housing, admin.",
+          href: "/netherlands/moving/changing-jobs-netherlands/",
+        },
+        {
+          title: "Resigning a job in the Netherlands",
+          description: "Exit planning: notice, contract review, permits, and monthly life before you resign.",
+          href: "/netherlands/moving/resigning-job-netherlands/",
+        },
+        {
+          title: "Layoffs in the Netherlands",
+          description: "When employment may end involuntarily — stay, payroll, rent, and family admin together.",
+          href: "/netherlands/moving/layoffs-netherlands/",
+        },
+        {
           title: "Job offer comparison",
           description: "Compare two offers on pay, pension, and leave.",
           href: "/netherlands/work/tools/job-offer-comparison/",

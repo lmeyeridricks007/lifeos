@@ -1,0 +1,31 @@
+{
+  "id": "nl-moving-layoffs-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/moving/layoffs-netherlands/",
+    "slot": "mid-page-layoff-support"
+  },
+  "variant": "cards",
+  "title": "Companies people often compare when a layoff touches stay, money, or next steps",
+  "intro": "A layoff can surface questions about **permits**, **next employment**, **payroll gaps**, **health insurance** (Dutch basic or temporary international cover), **housing** or **rental search**, or **relocation** if you leave the Netherlands. Some people rely on employers and official channels alone; others compare **visa consultants**, **immigration lawyers**, **relocation**, **banks**, **insurers**, and **housing** providers to reduce friction. Scope and pricing differ — confirm fit, credentials, and what is (and is not) covered before you commit.",
+  "categoryOrder": ["services", "banking", "insurance", "housing"],
+  "items": [],
+  "registryProviders": {
+    "categories": [
+      "visa-consultants",
+      "immigration-lawyers",
+      "relocation-services",
+      "relocation-agencies",
+      "banks",
+      "health-insurance",
+      "international-health-insurance",
+      "housing-platforms",
+      "rental-agencies"
+    ],
+    "limit": 8,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to employment transitions and Dutch setup, not pay-to-rank. This is not legal or immigration advice — verify outcomes with employers, the IND, or qualified advisers."
+}

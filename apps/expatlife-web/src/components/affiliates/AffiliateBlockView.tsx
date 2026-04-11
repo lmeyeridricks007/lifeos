@@ -1,3 +1,4 @@
+import { BoldInline } from "@/components/content/PillarContentBlocks";
 import type { AffiliatePlacement } from "@/src/lib/affiliates/types";
 import type { AffiliateProvider } from "@/src/lib/affiliates/types";
 import { AffiliateCardGridLazy } from "./AffiliateCardGridLazy";
@@ -32,7 +33,9 @@ export function AffiliateBlockView({ placement, items, showStageChip }: Affiliat
           <h2 className="text-xl font-bold tracking-tight text-copilot-text-primary sm:text-2xl">{placement.title}</h2>
         ) : null}
         {placement.intro ? (
-          <p className="mt-2 text-sm text-copilot-text-secondary md:text-base">{placement.intro}</p>
+          <p className="mt-2 text-sm text-copilot-text-secondary md:text-base">
+            <BoldInline text={placement.intro} className="[&_strong]:font-semibold [&_strong]:text-copilot-text-primary" />
+          </p>
         ) : null}
         <div className="mt-4">
           {variant === "cards" && (

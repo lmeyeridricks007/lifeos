@@ -9,12 +9,21 @@
   },
   "variant": "cards",
   "title": "Companies expats often compare when moving for work",
-  "intro": "Useful when the move is no longer just about the role itself and you need help with practical setup around relocation, banking, insurance, or temporary housing. Some people do this alone, others compare professional help to save time or reduce friction. Scope, pricing, and onboarding differ, so confirm fit directly with each provider.",
+  "intro": "Useful when the move is no longer just about the role itself: **permits and stay** questions, **relocation** support, **banking**, **insurance**, **housing search**, or **rental agencies**. Some people do this alone, others compare professional help to save time or reduce friction. Scope, pricing, and onboarding differ, so confirm fit directly with each provider.",
   "categoryOrder": ["services", "banking", "insurance", "housing"],
   "items": [],
   "registryProviders": {
-    "categories": ["relocation-services", "relocation-agencies", "banks", "health-insurance", "housing-platforms"],
-    "limit": 6,
+    "categories": [
+      "visa-consultants",
+      "immigration-lawyers",
+      "relocation-services",
+      "relocation-agencies",
+      "banks",
+      "health-insurance",
+      "housing-platforms",
+      "rental-agencies"
+    ],
+    "limit": 8,
     "strategy": "round-robin"
   },
   "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering here reflects page relevance, not pay-to-rank placement. Always confirm scope, pricing, and terms with the provider directly."

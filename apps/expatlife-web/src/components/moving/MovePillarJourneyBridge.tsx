@@ -19,12 +19,22 @@ type Props = {
   intro: string;
   links: readonly MovePillarJourneyBridgeLink[];
   className?: string;
+  /** When true, link `description` strings may use `**bold**` segments. */
+  linksDescriptionMarkdown?: boolean;
 };
 
 /**
  * “How this fits the Move pillar” band — SectionBlock + CardLink grid, reused on Move orientation pages.
  */
-export function MovePillarJourneyBridge({ id, eyebrow, title, intro, links, className }: Props) {
+export function MovePillarJourneyBridge({
+  id,
+  eyebrow,
+  title,
+  intro,
+  links,
+  className,
+  linksDescriptionMarkdown,
+}: Props) {
   return (
     <SectionBlock id={id} className={cn(SECTION_SCROLL_MARGIN, className)} compact eyebrow={eyebrow} title={title}>
       <BoldParagraph
@@ -33,7 +43,14 @@ export function MovePillarJourneyBridge({ id, eyebrow, title, intro, links, clas
       />
       <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {links.map((l) => (
-          <CardLink key={l.href} href={l.href} title={l.label} description={l.description} meta={l.meta} />
+          <CardLink
+            key={l.href}
+            href={l.href}
+            title={l.label}
+            description={l.description}
+            descriptionMarkdown={linksDescriptionMarkdown}
+            meta={l.meta}
+          />
         ))}
       </div>
     </SectionBlock>

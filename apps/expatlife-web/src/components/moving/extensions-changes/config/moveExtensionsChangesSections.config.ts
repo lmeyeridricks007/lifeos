@@ -42,6 +42,21 @@ export const moveExtensionsChangesSections = {
         description: "— employment, contracts, and broader work context when your situation shifts.",
       },
       {
+        label: "Changing jobs in the Netherlands",
+        href: "/netherlands/moving/changing-jobs-netherlands/",
+        description: "— practical checklist across contracts, permits, salary, housing, and admin timing.",
+      },
+      {
+        label: "Resigning a job in the Netherlands",
+        href: "/netherlands/moving/resigning-job-netherlands/",
+        description: "— exit planning when employment may end and permit or household timing still matters.",
+      },
+      {
+        label: "Layoffs in the Netherlands",
+        href: "/netherlands/moving/layoffs-netherlands/",
+        description: "— involuntary employment ending: permits, salary continuity, housing, and admin.",
+      },
+      {
         label: "Dutch salary (net) calculator",
         href: "/netherlands/taxes/tools/dutch-salary-net-calculator/",
         description: "— rough take-home when income or employer changes.",

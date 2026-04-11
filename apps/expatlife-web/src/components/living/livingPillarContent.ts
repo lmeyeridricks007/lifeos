@@ -766,6 +766,16 @@ export const NETHERLANDS_PILLAR_HUB_LINKS = [
     description: "After arrival: renewals, job and life shifts, and when to act.",
   },
   {
+    href: "/netherlands/moving/resigning-job-netherlands/",
+    title: "Resigning a job in the Netherlands",
+    description: "Notice, stay and permit questions, payroll timing, and admin before you resign.",
+  },
+  {
+    href: "/netherlands/moving/layoffs-netherlands/",
+    title: "Layoffs in the Netherlands",
+    description: "Redundancy risk: employment ending next to permits, money, housing, and family admin.",
+  },
+  {
     href: LIVING_SURVIVAL_GUIDE_PATH,
     title: "Living · Survival Guide",
     description: "Day-to-day transport, apps, payments, weather, and routines.",

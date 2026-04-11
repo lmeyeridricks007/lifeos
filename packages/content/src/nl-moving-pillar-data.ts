@@ -72,6 +72,18 @@ const linkRegistry: LinkRegistry = {
     href: "/netherlands/moving/working-in-the-netherlands/",
     title: "Working in the Netherlands",
   },
+  changing_jobs_netherlands_move_guide: {
+    href: "/netherlands/moving/changing-jobs-netherlands/",
+    title: "Changing jobs in the Netherlands",
+  },
+  resigning_job_netherlands_move_guide: {
+    href: "/netherlands/moving/resigning-job-netherlands/",
+    title: "Resigning a job in the Netherlands",
+  },
+  layoffs_netherlands_move_guide: {
+    href: "/netherlands/moving/layoffs-netherlands/",
+    title: "Layoffs in the Netherlands",
+  },
   twv_work_permit_move_guide: {
     href: "/netherlands/moving/twv-work-permit/",
     title: "TWV work permit",
@@ -115,6 +127,8 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
         "working_in_netherlands_move_guide",
         "twv_work_permit_move_guide",
         "extensions_changes_guide",
+        "resigning_job_netherlands_move_guide",
+        "layoffs_netherlands_move_guide",
         "hub",
         "document_readiness",
       ],
@@ -162,6 +176,8 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
         "working_in_netherlands_move_guide",
         "twv_work_permit_move_guide",
         "extensions_changes_guide",
+        "resigning_job_netherlands_move_guide",
+        "layoffs_netherlands_move_guide",
         "compare_visas",
         "hub",
         "document_readiness",
@@ -303,6 +319,24 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       title: "Working in the Netherlands",
       href: "/netherlands/moving/working-in-the-netherlands/",
       description: "Work-led move guide linking offers, salary, permits, payroll, and first-month setup.",
+      timeToComplete: "12 min",
+    },
+    {
+      title: "Changing jobs in the Netherlands",
+      href: "/netherlands/moving/changing-jobs-netherlands/",
+      description: "Contracts, permits, salary timing, housing, and family admin when switching employers.",
+      timeToComplete: "11 min",
+    },
+    {
+      title: "Resigning a job in the Netherlands",
+      href: "/netherlands/moving/resigning-job-netherlands/",
+      description: "Notice, contract review, stay and salary continuity, and life admin before you resign.",
+      timeToComplete: "11 min",
+    },
+    {
+      title: "Layoffs in the Netherlands",
+      href: "/netherlands/moving/layoffs-netherlands/",
+      description: "Redundancy risk: employment ending next to permits, payroll, rent, family admin, and practical planning.",
       timeToComplete: "12 min",
     },
     {
@@ -612,6 +646,18 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       sectionTitle: "Related pages",
       cards: [
         { linkKey: "working_in_netherlands_move_guide", description: "Move-pillar guide for job offers, salary, permits, payroll, and relocation trade-offs." },
+        {
+          linkKey: "changing_jobs_netherlands_move_guide",
+          description: "Already in NL or switching roles: contracts, permits, salary timing, housing, and admin in one checklist.",
+        },
+        {
+          linkKey: "resigning_job_netherlands_move_guide",
+          description: "Leaving an employer: notice, contract checks, stay and permit continuity, payroll gaps, and what to line up first.",
+        },
+        {
+          linkKey: "layoffs_netherlands_move_guide",
+          description: "Redundancy or role-ending risk: employment, permits, salary continuity, housing, and calm next steps in one Move guide.",
+        },
         { linkKey: "twv_work_permit_move_guide", description: "TWV route guide for employer-driven work authorization questions and route comparison." },
         { linkKey: "extensions_changes_guide", description: "After arrival: permit timing, renewals, and life changes—next to visas and residence permits." },
         { linkKey: "living_survival_guide", description: "Living pillar: daily routines, transport, apps, and payments." },
@@ -622,7 +668,17 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
     },
     sidebar: {
       startHereLabel: "Start here",
-      links: ["moving_checklist", "document_readiness", "working_in_netherlands_move_guide", "twv_work_permit_move_guide", "extensions_changes_guide", "hub"],
+      links: [
+        "moving_checklist",
+        "document_readiness",
+        "working_in_netherlands_move_guide",
+        "changing_jobs_netherlands_move_guide",
+        "resigning_job_netherlands_move_guide",
+        "layoffs_netherlands_move_guide",
+        "twv_work_permit_move_guide",
+        "extensions_changes_guide",
+        "hub",
+      ],
       scenariosPrompt: "Not sure where to start? Pick a scenario:",
       scenariosJumpAnchor: "#scenarios",
       scenariosJumpLabel: "Jump to scenarios",

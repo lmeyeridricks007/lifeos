@@ -88,6 +88,21 @@ export const moveExtensionsChangesShell = {
       description: "Purpose, renewal, after approval — next to this change-focused guide.",
     },
     {
+      href: "/netherlands/moving/changing-jobs-netherlands/",
+      label: "Changing jobs in the Netherlands",
+      description: "Contracts, permits, salary timing, and household admin when switching employers.",
+    },
+    {
+      href: "/netherlands/moving/resigning-job-netherlands/",
+      label: "Resigning a job in the Netherlands",
+      description: "Notice, contract review, and stay or money questions before you resign.",
+    },
+    {
+      href: "/netherlands/moving/layoffs-netherlands/",
+      label: "Layoffs in the Netherlands",
+      description: "When a role may end involuntarily — map permits, payroll, rent, and family admin calmly.",
+    },
+    {
       href: "/netherlands/moving/status-changes/",
       label: "Status changes in the Netherlands",
       description: "When the basis of stay may be changing, not only the renewal or expiry timeline.",
@@ -167,6 +182,27 @@ export const moveExtensionsChangesShell = {
         ctaLabel: "Open guide",
       },
       {
+        id: "changing-jobs",
+        title: "Changing jobs in the Netherlands",
+        description: "Orientation when a new job may touch permits, payroll, rent, and family timing — not only HR.",
+        href: "/netherlands/moving/changing-jobs-netherlands/",
+        ctaLabel: "Open guide",
+      },
+      {
+        id: "resigning",
+        title: "Resigning a job in the Netherlands",
+        description: "When leaving a job may touch permits, gaps, and household admin — not only notice length.",
+        href: "/netherlands/moving/resigning-job-netherlands/",
+        ctaLabel: "Open guide",
+      },
+      {
+        id: "layoffs",
+        title: "Layoffs in the Netherlands",
+        description: "Redundancy and employment ending next to stay, money, and practical life planning.",
+        href: "/netherlands/moving/layoffs-netherlands/",
+        ctaLabel: "Open guide",
+      },
+      {
         id: "status",
         title: "Status changes in the Netherlands",
         description: "For work, study, family, and self-employment shifts that may change the basis of stay.",
@@ -210,6 +246,24 @@ export const moveExtensionsChangesShell = {
         href: PERMITS,
         label: "Residence permits",
         description: "Renewal band and permit logic — pairs directly with extension and change questions.",
+        meta: "Move",
+      },
+      {
+        href: "/netherlands/moving/changing-jobs-netherlands/",
+        label: "Changing jobs in the Netherlands",
+        description: "Job-switch checklist next to employer and renewal timing questions.",
+        meta: "Move",
+      },
+      {
+        href: "/netherlands/moving/resigning-job-netherlands/",
+        label: "Resigning a job in the Netherlands",
+        description: "Exit planning when employment may end and renewals or gaps need the same calendar.",
+        meta: "Move",
+      },
+      {
+        href: "/netherlands/moving/layoffs-netherlands/",
+        label: "Layoffs in the Netherlands",
+        description: "When redundancy is in play — stay, payroll, rent, and family admin on one map.",
         meta: "Move",
       },
       {

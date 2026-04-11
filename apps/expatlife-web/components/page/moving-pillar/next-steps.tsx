@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BoldInline } from "@/components/content/PillarContentBlocks";
 import { cn } from "@/lib/cn";
 import { guideSectionH2Class, hubPathwayCardClass } from "@/lib/ui/page-family";
 import {
@@ -127,7 +128,14 @@ export function NextSteps({
                         compact ? "mt-1.5 text-xs leading-relaxed" : "mt-2 text-sm leading-relaxed"
                       )}
                     >
-                      {item.description}
+                      <BoldInline
+                        text={item.description}
+                        className={
+                          movingHubPremium
+                            ? "[&_strong]:font-semibold [&_strong]:text-copilot-text-primary"
+                            : "[&_strong]:font-semibold [&_strong]:text-foreground"
+                        }
+                      />
                     </p>
                   ) : null}
                   <span

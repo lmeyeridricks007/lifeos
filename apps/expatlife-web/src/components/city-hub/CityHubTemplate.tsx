@@ -3,8 +3,7 @@ import { Lightbulb } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { PillarTOC } from "@/components/content/PillarTOC";
 import { InfoBox } from "@/components/ui/info-box";
-import type { CityHubPageData } from "@/src/lib/city-hub/types";
-import type { CityServiceCard } from "@/src/lib/city-hub/types";
+import type { CityHubPageData, CityRelatedGuideBlock, CityServiceCard } from "@/src/lib/city-hub/types";
 import { GuidePageTemplate } from "@/components/page/page-templates";
 import {
   FAQBlock,
@@ -59,6 +58,11 @@ import { CityHubMonetizationAfterContent } from "@/src/components/monetization/C
  */
 const linkCtaClass =
   "text-sm font-semibold text-copilot-primary transition hover:text-copilot-primary-strong hover:underline";
+
+const BEST_CITIES_DECISION_GUIDE_BLOCK: CityRelatedGuideBlock = {
+  title: "Choosing between cities",
+  links: [{ label: "Best cities in the Netherlands for expats", href: "/netherlands/cities/best-cities-for-expats/" }],
+};
 
 export type CityHubTemplateProps = {
   data: CityHubPageData;
@@ -140,9 +144,8 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
     </>
   );
 
-  const hasRelatedGuides = Boolean(
-    data.relatedGuides?.some((b) => (b.links ?? []).length > 0)
-  );
+  const relatedGuidesBlocks = [BEST_CITIES_DECISION_GUIDE_BLOCK, ...(data.relatedGuides ?? [])];
+  const hasRelatedGuides = relatedGuidesBlocks.some((b) => (b.links ?? []).length > 0);
   const hasCityLinks = Boolean(data.cityLinks?.length);
 
   return (
@@ -526,7 +529,7 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                   compact
                   className="scroll-mt-24"
                 >
-                  <RelatedGuidesGrid blocks={data.relatedGuides ?? []} />
+                  <RelatedGuidesGrid blocks={relatedGuidesBlocks} />
                 </SectionBlock>
               ) : null}
               {hasCityLinks ? (

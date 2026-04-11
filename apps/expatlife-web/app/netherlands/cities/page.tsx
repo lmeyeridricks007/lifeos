@@ -39,6 +39,7 @@ import {
   Home,
   Landmark,
   LayoutGrid,
+  MapPin,
   Scale,
   Shield,
   TrainFront,
@@ -57,6 +58,7 @@ function serviceCardIcon(href: string): LucideIcon {
 }
 
 function exploreCardIcon(href: string): LucideIcon {
+  if (href.includes("/cities/best-cities-for-expats")) return MapPin;
   if (href === "/netherlands/" || href.startsWith("/netherlands/?")) return Compass;
   if (href.includes("/services")) return LayoutGrid;
   if (href.includes("/about")) return HeartHandshake;
@@ -161,7 +163,9 @@ export default function NetherlandsCitiesPage() {
       : data.tocItems.filter((t) => t.id !== "coming-soon-cities");
 
   const canonicalUrl = new URL(path, baseUrl).toString();
-  const toolStrip = data.tools.slice(0, 3);
+  const toolStrip = (data.tools ?? [])
+    .filter((t) => t.status !== "coming_soon" && isRouteLive(t.href))
+    .slice(0, 5);
 
   return (
     <>
@@ -289,6 +293,42 @@ export default function NetherlandsCitiesPage() {
                       </span>
                     ))}
                   </p>
+                </section>
+
+                <section
+                  id="best-cities-decision-guide"
+                  className="scroll-mt-24 mt-10 space-y-4 rounded-2xl border border-violet-200/90 bg-gradient-to-br from-violet-50/90 via-white to-sky-50/40 p-6 shadow-md shadow-violet-500/5 md:p-8"
+                >
+                  <div className="flex flex-wrap items-center gap-3">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-violet-500 to-indigo-600 text-white shadow-md shadow-violet-500/20">
+                      <MapPin className="h-5 w-5" aria-hidden strokeWidth={2} />
+                    </span>
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
+                      Best cities for expats — decision guide
+                    </h2>
+                  </div>
+                  <p className="text-copilot-text-secondary leading-relaxed">
+                    Not sure where to start? The decision guide walks through work vs budget vs family vs lifestyle, shows
+                    realistic trade-offs between major Dutch cities, and points you to the right calculators and city
+                    guides — without a shallow “top 10” list.
+                  </p>
+                  <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+                    <Link
+                      href="/netherlands/cities/best-cities-for-expats/"
+                      className="inline-flex min-h-[44px] items-center justify-center rounded-xl bg-copilot-primary px-5 py-2.5 text-sm font-semibold text-white shadow-expatos-md transition hover:bg-copilot-primary-strong sm:px-6"
+                    >
+                      Open the decision guide
+                      <span className="ml-1" aria-hidden>
+                        →
+                      </span>
+                    </Link>
+                    <Link
+                      href="/netherlands/tools/city-comparison/"
+                      className="inline-flex min-h-[44px] items-center justify-center rounded-xl border border-slate-900/12 bg-white px-5 py-2.5 text-sm font-semibold text-copilot-text-primary shadow-expatos-sm ring-1 ring-copilot-primary/10 hover:bg-copilot-bg-soft"
+                    >
+                      City comparison tool
+                    </Link>
+                  </div>
                 </section>
 
                 <section id="covered-cities" className="scroll-mt-24 mt-12 space-y-6">

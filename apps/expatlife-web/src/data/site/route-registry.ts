@@ -97,8 +97,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
     title: "Renting in the Netherlands (guide)",
     section: "guides",
   },
-  /** Housing SEO cluster (planned guides — nav surfaces as Soon until promoted to live). */
-  "/netherlands/housing/": { title: "Housing hub", section: "guides" },
   "/netherlands/renting-in-the-netherlands/": { title: "Renting in the Netherlands (pillar)", section: "guides" },
   "/netherlands/how-to-rent-in-netherlands/": { title: "How to rent in the Netherlands", section: "guides" },
   "/netherlands/rental-contract-netherlands/": { title: "Rental contract Netherlands", section: "guides" },
@@ -199,9 +197,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/work/pension-netherlands/": { title: "Pension Netherlands", section: "guides" },
   "/netherlands/work/holiday-allowance-netherlands/": { title: "Holiday allowance Netherlands", section: "guides" },
   "/netherlands/work/bonus-tax-netherlands/": { title: "Bonus tax Netherlands", section: "guides" },
-  "/netherlands/work/changing-jobs-netherlands/": { title: "Changing jobs Netherlands", section: "guides" },
-  "/netherlands/work/resigning-job-netherlands/": { title: "Resigning job Netherlands", section: "guides" },
-  "/netherlands/work/layoffs-netherlands/": { title: "Layoffs Netherlands", section: "guides" },
   "/netherlands/work/freelancing-netherlands/": { title: "Freelancing Netherlands", section: "guides" },
   "/netherlands/work/zzp-netherlands/": { title: "ZZP Netherlands", section: "guides" },
   "/netherlands/work/contractor-vs-employee-netherlands/": { title: "Contractor vs employee Netherlands", section: "guides" },
@@ -263,6 +258,9 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/moving-to-netherlands-from/",
   "/netherlands/services/",
   "/netherlands/cities/",
+  "/netherlands/cities/best-cities-for-expats/",
+  /** Flagship housing hub (App Router) — keep live so nav and related guides never show “Soon”. */
+  "/netherlands/housing/",
   "/netherlands/amsterdam/",
   "/netherlands/rotterdam/",
   "/netherlands/utrecht/",
@@ -281,6 +279,16 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/tools/",
   "/netherlands/moving/visas-residency/",
   "/netherlands/moving/working-in-the-netherlands/",
+  "/netherlands/moving/changing-jobs-netherlands/",
+  "/netherlands/moving/resigning-job-netherlands/",
+  /** Layoffs guide (App Router). Keep live so mega menu / `filterNavItem` never surface it as “Soon”. */
+  "/netherlands/moving/layoffs-netherlands/",
+  /** Legacy Work-cluster URL; 301 → Move guide — must not surface as “coming soon” in nav or link helpers. */
+  "/netherlands/work/changing-jobs-netherlands/",
+  /** Legacy Work-cluster URL; 301 → Move guide. */
+  "/netherlands/work/resigning-job-netherlands/",
+  /** Legacy Work-cluster URL; 301 → Move guide. */
+  "/netherlands/work/layoffs-netherlands/",
   "/netherlands/moving/twv-work-permit/",
   "/netherlands/moving/residence-permits/",
   "/netherlands/moving/extensions-changes/",

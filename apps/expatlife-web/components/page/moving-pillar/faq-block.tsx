@@ -12,9 +12,18 @@ export type FAQBlockProps = {
   items: PillarFaqItem[];
   /** Hard cap for scan-friendly FAQ. */
   maxItems?: number;
+  /** `default` = slightly tighter spacing between items (better for long FAQs). */
+  accordionDensity?: "default" | "comfortable";
 };
 
-export function FAQBlock({ id, eyebrow = "Support", title = "FAQ", items, maxItems = 5 }: FAQBlockProps) {
+export function FAQBlock({
+  id,
+  eyebrow = "Support",
+  title = "FAQ",
+  items,
+  maxItems = 5,
+  accordionDensity = "comfortable",
+}: FAQBlockProps) {
   const slice = items.slice(0, maxItems);
   const headingId = id ? `${id}-heading` : undefined;
   return (
@@ -25,7 +34,7 @@ export function FAQBlock({ id, eyebrow = "Support", title = "FAQ", items, maxIte
       </h2>
       <div className={cn("mt-5 sm:mt-6", movingNlFaqCardInnerClass)}>
         <Accordion
-          density="comfortable"
+          density={accordionDensity}
           tone="copilot"
           items={slice.map((item, i) => ({
             id: `faq-${i}`,

@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { Wrench } from "lucide-react";
+import { BoldInline } from "@/components/content/PillarContentBlocks";
 import { cn } from "@/lib/cn";
 import { movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
 import { movingNlCardMicroLiftClass, movingNlToolInlineCtaClass } from "@/lib/ui/moving-nl-pillar-identity";
@@ -11,6 +12,8 @@ export type ToolCardProps = {
   title: string;
   /** Omit for title-only tiles (rare). */
   description?: string;
+  /** When true, `description` may use `**bold**` segments (rendered as `<strong>`). */
+  descriptionMarkdown?: boolean;
   href: string;
   ctaLabel: string;
   /** Tighter row for gateway pages. */
@@ -19,7 +22,16 @@ export type ToolCardProps = {
 };
 
 /** Helpful tools — product entry tiles with gradient cap and strong CTA. */
-export function ToolCard({ icon, title, description, href, ctaLabel, compact, className }: ToolCardProps) {
+export function ToolCard({
+  icon,
+  title,
+  description,
+  descriptionMarkdown,
+  href,
+  ctaLabel,
+  compact,
+  className,
+}: ToolCardProps) {
   return (
     <div
       className={cn(
@@ -52,7 +64,7 @@ export function ToolCard({ icon, title, description, href, ctaLabel, compact, cl
                   compact ? "mt-1.5 text-xs leading-relaxed sm:text-sm" : "mt-2 text-sm leading-relaxed"
                 )}
               >
-                {description}
+                {descriptionMarkdown ? <BoldInline text={description} /> : description}
               </p>
             ) : null}
           </div>

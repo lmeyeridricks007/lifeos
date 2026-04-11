@@ -490,6 +490,21 @@ export const moveVisaResidencyPageMeta: MoveVisaResidencyPageMeta = {
       description: "Work-led move guide for offers, salary, permits, payroll, and first-month setup.",
     },
     {
+      href: "/netherlands/moving/changing-jobs-netherlands/",
+      label: "Changing jobs in the Netherlands",
+      description: "Already here and switching roles? Contracts, permits, salary timing, housing, and admin in one frame.",
+    },
+    {
+      href: "/netherlands/moving/resigning-job-netherlands/",
+      label: "Resigning a job in the Netherlands",
+      description: "Planning exit: notice, contracts, stay and salary continuity, and life admin before you resign.",
+    },
+    {
+      href: "/netherlands/moving/layoffs-netherlands/",
+      label: "Layoffs in the Netherlands",
+      description: "When employment may end involuntarily — stay, payroll, rent, and family planning in one frame.",
+    },
+    {
       href: "/netherlands/moving/twv-work-permit/",
       label: "TWV work permit",
       description: "Practical route guide for TWV, GVVA comparisons, and employer timing questions.",
@@ -569,6 +584,27 @@ export const moveVisaResidencyPageMeta: MoveVisaResidencyPageMeta = {
         title: "Working in the Netherlands",
         description: "Move-focused bridge from visa route questions into offers, salary, permits, payroll, and arrival admin.",
         href: "/netherlands/moving/working-in-the-netherlands/",
+        ctaLabel: "Open guide",
+      },
+      {
+        id: "changing-jobs",
+        title: "Changing jobs in the Netherlands",
+        description: "Practical checklist when a new employer may touch permits, payroll, housing, and household timing.",
+        href: "/netherlands/moving/changing-jobs-netherlands/",
+        ctaLabel: "Open guide",
+      },
+      {
+        id: "resigning",
+        title: "Resigning a job in the Netherlands",
+        description: "When leaving a job may touch how you stay, prove income, or plan the month after.",
+        href: "/netherlands/moving/resigning-job-netherlands/",
+        ctaLabel: "Open guide",
+      },
+      {
+        id: "layoffs",
+        title: "Layoffs in the Netherlands",
+        description: "Redundancy context next to work authorization and household admin.",
+        href: "/netherlands/moving/layoffs-netherlands/",
         ctaLabel: "Open guide",
       },
       {

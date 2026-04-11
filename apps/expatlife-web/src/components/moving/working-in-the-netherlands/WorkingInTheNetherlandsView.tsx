@@ -37,7 +37,12 @@ import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interacti
 import { MovePillarExploreGrid } from "@/src/components/moving/MovePillarExploreGrid";
 import { MoveGuideAffiliateSupportBlock } from "@/src/components/moving/MoveGuideAffiliateSupportBlock";
 import { MovePillarJourneyBridge } from "@/src/components/moving/MovePillarJourneyBridge";
-import { MoveMisunderstandingCardGrid, MovePillarLifecycleCard } from "@/src/components/moving/movePillarCardPrimitives";
+import {
+  MoveMisunderstandingCardGrid,
+  MovePillarLifecycleCard,
+  moveMisunderstandingSectionSubtitleClass,
+  moveMisunderstandingSectionTitleClass,
+} from "@/src/components/moving/movePillarCardPrimitives";
 import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc";
 import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
 import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
@@ -45,6 +50,7 @@ import {
   type MoveWorkingNlAfterArrivalSection,
   type MoveWorkingNlGridSection,
   type MoveWorkingNlJourneySection,
+  moveWorkingNlRoutes,
   workingInTheNetherlandsPageMeta,
 } from "./config/workingInTheNetherlands.config";
 import { WorkingInTheNetherlandsHeroGraphic } from "./WorkingInTheNetherlandsHeroGraphic";
@@ -65,11 +71,15 @@ const CANONICAL = meta.canonicalPath;
 const PAGE_HERO_SUBTITLE = meta.hero.subtitle;
 const HUB = meta.movePillarHubPath;
 const WORKING_SUPPORT_LINKS = [
+  { href: "/netherlands/services/visa-consultants/", label: "Visa consultants" },
+  { href: "/netherlands/services/immigration-lawyers/", label: "Immigration lawyers" },
   { href: "/netherlands/services/relocation-services/", label: "Relocation services" },
   { href: "/netherlands/services/relocation-agencies/", label: "Relocation agencies" },
   { href: "/netherlands/services/banks/", label: "Banks" },
   { href: "/netherlands/services/health-insurance/", label: "Health insurance" },
+  { href: "/netherlands/services/health-insurance/#international-health", label: "International health insurance" },
   { href: "/netherlands/services/housing-platforms/", label: "Housing platforms" },
+  { href: "/netherlands/services/rental-agencies/", label: "Rental agencies" },
   { href: "/netherlands/services/", label: "All services" },
 ] as const;
 
@@ -213,6 +223,36 @@ export function WorkingInTheNetherlandsView() {
                         {meta.hero.compareLinks.workGuide.label}
                       </Link>{" "}
                       in the Work cluster.
+                    </p>
+                    <p className="mt-3 text-sm text-foreground-muted">
+                      Already in the Netherlands and weighing a job switch? Read{" "}
+                      <Link
+                        href={moveWorkingNlRoutes.changingJobs}
+                        className="font-semibold text-link hover:text-link-hover hover:underline"
+                      >
+                        Changing jobs in the Netherlands
+                      </Link>{" "}
+                      for contracts, permits, salary timing, housing, and practical admin in one place.
+                    </p>
+                    <p className="mt-3 text-sm text-foreground-muted">
+                      Planning to leave before the next role is clear? See{" "}
+                      <Link
+                        href={moveWorkingNlRoutes.resigningJob}
+                        className="font-semibold text-link hover:text-link-hover hover:underline"
+                      >
+                        Resigning a job in the Netherlands
+                      </Link>{" "}
+                      for notice, contract review, stay questions, and monthly-life impact.
+                    </p>
+                    <p className="mt-3 text-sm text-foreground-muted">
+                      Worried about redundancy or a role ending? Read{" "}
+                      <Link
+                        href={moveWorkingNlRoutes.layoffs}
+                        className="font-semibold text-link hover:text-link-hover hover:underline"
+                      >
+                        Layoffs in the Netherlands
+                      </Link>{" "}
+                      for what can move beyond employment — permits, salary continuity, housing, and practical planning.
                     </p>
                   </div>
                   <WorkingInTheNetherlandsHeroGraphic className="w-full min-w-0 shrink-0 md:justify-self-end" />
@@ -639,22 +679,19 @@ function SectionBlockMisunderstandings() {
     <SectionBlock
       id="misunderstandings"
       className={TIGHT_SECTION_SPACING}
+      wrapInPanel
       eyebrow={region.eyebrow}
-      eyebrowClassName="text-copilot-primary"
+      eyebrowClassName="text-sky-600"
       title={region.title}
+      titleClassName={moveMisunderstandingSectionTitleClass}
       subtitle={region.subtitle}
+      subtitleClassName={moveMisunderstandingSectionSubtitleClass}
     >
       <MoveMisunderstandingCardGrid
-        className="gap-3 sm:grid-cols-2 sm:gap-3.5"
         rows={meta.misunderstandings.map((row) => ({
           id: row.id,
           title: row.title,
-          body: (
-            <BoldParagraph
-              text={row.body}
-              className="text-[13px] leading-snug text-foreground-muted sm:text-sm sm:leading-relaxed [&_strong]:font-semibold [&_strong]:text-foreground"
-            />
-          ),
+          body: <BoldParagraph text={row.body} className="text-sm leading-relaxed sm:text-[0.9375rem] sm:leading-relaxed" />,
         }))}
       />
     </SectionBlock>

@@ -19,6 +19,9 @@ export const moveExtensionsChangesFaq: readonly PillarFaqItem[] = [
     links: [
       { label: "Job offer comparison", href: "/netherlands/work/tools/job-offer-comparison/" },
       { label: "Working in the Netherlands", href: "/netherlands/moving/working-in-the-netherlands/" },
+      { label: "Changing jobs in the Netherlands", href: "/netherlands/moving/changing-jobs-netherlands/" },
+      { label: "Resigning a job in the Netherlands", href: "/netherlands/moving/resigning-job-netherlands/" },
+      { label: "Layoffs in the Netherlands", href: "/netherlands/moving/layoffs-netherlands/" },
     ],
   },
   {

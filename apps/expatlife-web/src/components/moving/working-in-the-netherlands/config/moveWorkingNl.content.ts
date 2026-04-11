@@ -11,6 +11,9 @@ import type {
 
 export const moveWorkingNlRoutes = {
   canonical: "/netherlands/moving/working-in-the-netherlands/",
+  changingJobs: "/netherlands/moving/changing-jobs-netherlands/",
+  resigningJob: "/netherlands/moving/resigning-job-netherlands/",
+  layoffs: "/netherlands/moving/layoffs-netherlands/",
   hub: "/netherlands/moving-to-the-netherlands/",
   visas: "/netherlands/moving/visas-residency/",
   residencePermits: "/netherlands/moving/residence-permits/",
@@ -35,6 +38,7 @@ export const moveWorkingNlRoutes = {
   childcare: "/netherlands/family/tools/childcare-cost-estimator/",
   first90Days: "/netherlands/moving/tools/first-90-days/",
   arrivalPlanner: "/netherlands/moving/tools/arrival-planner/",
+  movingChecklist: "/netherlands/moving/tools/moving-checklist/",
   documentReadiness: "/netherlands/moving/tools/document-readiness/",
   afterArriving: "/netherlands/after-arriving-netherlands/",
   municipalityRegistration: "/netherlands/municipality-registration-netherlands/",
@@ -110,18 +114,30 @@ const moveWorkingNlPillarJourneyBridge = {
   intro:
     "**Visas & residency** helps you compare routes. **Residence permits** explains what residence means over time. **This page** sits on the work-led move path: what a job offer changes, what employers often support, and what becomes real after arrival. **Extensions & changes** and **Status changes** take over later when your situation shifts.",
   links: [
-    {
-      href: ROUTES.hub,
-      label: "Moving to the Netherlands",
-      description: "Main Move pillar: stages, scenarios, tools, and the wider relocation picture.",
-      meta: "Move",
-    },
-    {
-      href: ROUTES.visas,
-      label: "Visas & residency orientation",
-      description: "Route-doorway page before you lock onto one permit story.",
-      meta: "Move",
-    },
+  {
+    href: ROUTES.hub,
+    label: "Moving to the Netherlands",
+    description: "Main Move pillar: stages, scenarios, tools, and the wider relocation picture.",
+    meta: "Move",
+  },
+  {
+    href: ROUTES.changingJobs,
+    label: "Changing jobs in the Netherlands",
+    description: "When you already live here and a new role may touch contracts, permits, salary, and daily admin.",
+    meta: "Move",
+  },
+  {
+    href: ROUTES.layoffs,
+    label: "Layoffs in the Netherlands",
+    description: "When a role may end through redundancy — map employment, stay, money, and life admin calmly.",
+    meta: "Move",
+  },
+  {
+    href: ROUTES.visas,
+    label: "Visas & residency orientation",
+    description: "Route-doorway page before you lock onto one permit story.",
+    meta: "Move",
+  },
     {
       href: ROUTES.residencePermits,
       label: "Residence permits",
@@ -771,6 +787,18 @@ const moveWorkingNlExplorePillarCards = [
     meta: "Move",
   },
   {
+    href: ROUTES.changingJobs,
+    title: "Changing jobs in the Netherlands",
+    description: "Practical framing for job switches when permits, payroll, housing, and family admin may move too.",
+    meta: "Move",
+  },
+  {
+    href: ROUTES.layoffs,
+    title: "Layoffs in the Netherlands",
+    description: "Employment ending, stay questions, salary continuity, and practical life when redundancy risk is real.",
+    meta: "Move",
+  },
+  {
     href: ROUTES.twvWorkPermit,
     title: "TWV work permit",
     description: "Route guide for TWV, employer action, GVVA comparisons, and timing questions.",
@@ -850,6 +878,18 @@ export const moveWorkingNlRelatedTools: MoveWorkingNlRelatedTools = {
           title: "TWV work permit",
           description: "Useful when employer-driven work authorization may be part of the route.",
           href: ROUTES.twvWorkPermit,
+          cta: "Open guide",
+        },
+        {
+          title: "Changing jobs in the Netherlands",
+          description: "Use when a new employer or contract may affect permits, salary timing, housing, or household admin.",
+          href: ROUTES.changingJobs,
+          cta: "Open guide",
+        },
+        {
+          title: "Layoffs in the Netherlands",
+          description: "Use when a role may end without you choosing it — permits, payroll gaps, rent, and family admin.",
+          href: ROUTES.layoffs,
           cta: "Open guide",
         },
         {
@@ -1029,6 +1069,20 @@ const moveWorkingNlContinueMove = {
       ctaLabel: "Open guide",
     },
     {
+      id: "resigning",
+      title: "Resigning a job in the Netherlands",
+      description: "Notice, contract review, and how exit timing can touch permits and payroll.",
+      href: ROUTES.resigningJob,
+      ctaLabel: "Open guide",
+    },
+    {
+      id: "layoffs",
+      title: "Layoffs in the Netherlands",
+      description: "Redundancy risk, employment ending, and what can move beyond the HR conversation.",
+      href: ROUTES.layoffs,
+      ctaLabel: "Open guide",
+    },
+    {
       id: "arrival",
       title: "First 90 days planner",
       description: "Turn the move into a practical first-month sequence once dates are fixed.",
@@ -1065,6 +1119,21 @@ const moveWorkingNlDeepLinks = [
     href: ROUTES.hub,
     label: "Moving to the Netherlands (hub)",
     description: "The full relocation picture: stages, scenarios, tools, and FAQs.",
+  },
+  {
+    href: ROUTES.changingJobs,
+    label: "Changing jobs in the Netherlands",
+    description: "For people already in NL: what a switch can mean beyond the new job title.",
+  },
+  {
+    href: ROUTES.resigningJob,
+    label: "Resigning a job in the Netherlands",
+    description: "When you are leaving an employer: notice, stay questions, and what to confirm before you resign.",
+  },
+  {
+    href: ROUTES.layoffs,
+    label: "Layoffs in the Netherlands",
+    description: "When employment may end through redundancy: stay, money, housing, and admin in one orientation map.",
   },
   {
     href: ROUTES.twvWorkPermit,
@@ -1120,7 +1189,7 @@ export const moveWorkingNlFaq: PillarFaqItem[] = [
   },
   {
     q: "What if my job changes later?",
-    a: "Later job changes can affect not only work life but also your wider admin or residence picture. Use **Extensions & changes** for renewals and after-arrival shifts, and **Status changes** if the basis of your stay itself may be changing.",
+    a: "Later job changes can affect not only work life but also your wider admin or residence picture. Start with **Changing jobs in the Netherlands** for a practical checklist across contracts, permits, and life setup, use **Resigning a job in the Netherlands** when you are planning to leave without a next role lined up yet, then use **Extensions & changes** for renewals and after-arrival shifts, and **Status changes** if the basis of your stay itself may be changing.",
   },
   {
     q: "Is this page legal or tax advice?",
