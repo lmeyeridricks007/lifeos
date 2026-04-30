@@ -43,6 +43,9 @@ import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc
 import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
 import { VisasResidencyHeroGraphic } from "./VisasResidencyHeroGraphic";
 import { MovingImmigrationAffiliatesBlock } from "@/src/components/moving/MovingImmigrationAffiliatesBlock";
+import { TaxResidencyVsPermitOrientationCard } from "@/src/components/money/tax-residency-nl/TaxResidencyVsPermitOrientationCard";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
+import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
 import { VisasResidencyOfficialSources } from "./VisasResidencyOfficialSources";
 import { VisasResidencyRouteDoorwayGrid, VisasResidencySectionBlocks } from "./VisasResidencySectionBlocks";
 import {
@@ -64,6 +67,8 @@ const meta = moveVisaResidencyPageMeta;
 const VISAS_RESIDENCY_CANONICAL = meta.canonicalPath;
 const PAGE_HERO_SUBTITLE = meta.hero.subtitle;
 const MOVE_PILLAR_HUB = meta.movePillarHubPath;
+
+const VISAS_RESIDENCY_INSTRUCTIONAL = getVisasResidencyInstructionalFigure("visas-residency");
 
 export function VisasResidencyView() {
   const baseUrl = getSiteOrigin();
@@ -267,6 +272,14 @@ export function VisasResidencyView() {
           <PillarJourneyStack variant="guide">
             <MovePillarMobileToc items={meta.sectionNav} />
 
+            {VISAS_RESIDENCY_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={VISAS_RESIDENCY_INSTRUCTIONAL.raster}
+                caption={VISAS_RESIDENCY_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
+
             <section
               className={cn(
                 SECTION_SCROLL_MARGIN,
@@ -282,6 +295,8 @@ export function VisasResidencyView() {
                 className="mt-2 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
               />
             </section>
+
+            <TaxResidencyVsPermitOrientationCard samePageDetailAnchor={false} className={SECTION_SCROLL_MARGIN} />
 
             <VisasResidencyRouteDoorwayGrid startHereRegion={meta.startHereRegion} routeCards={moveVisaResidencyRouteCards} />
 

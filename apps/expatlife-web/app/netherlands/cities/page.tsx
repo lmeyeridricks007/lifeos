@@ -18,6 +18,8 @@ import { CityComparisonTable } from "@/src/components/cities-overview/CityCompar
 import { SecondaryCitiesSection } from "@/src/components/cities-overview/SecondaryCitiesSection";
 import { RelatedGuidesSection } from "@/src/components/city-hub/RelatedGuidesGrid";
 import { OfficialSourcesList } from "@/src/components/city-hub/OfficialSourcesList";
+import { citiesInstructionalRasterAssets } from "@/src/components/cities/cities-cluster/citiesInstructionalRasterAssets";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 import { netherlandsCitiesOverview } from "@/src/data/cities-overview/netherlands-cities";
 import type { CityOfficialSource } from "@/src/lib/city-hub/types";
 import type { CitiesOverviewHero } from "@/src/lib/cities-overview/types";
@@ -33,6 +35,7 @@ import { cn } from "@/lib/cn";
 import { siteGuideColumnPadYClass } from "@/lib/ui/site-shell-identity";
 import {
   BookOpen,
+  Briefcase,
   Building2,
   Compass,
   HeartHandshake,
@@ -59,6 +62,9 @@ function serviceCardIcon(href: string): LucideIcon {
 
 function exploreCardIcon(href: string): LucideIcon {
   if (href.includes("/cities/best-cities-for-expats")) return MapPin;
+  if (href.includes("/cities/best-cities-for-international-professionals")) return Briefcase;
+  if (href.includes("/cities/best-cities-for-families")) return HeartHandshake;
+  if (href.includes("/cities/cheapest-cities-for-expats")) return MapPin;
   if (href === "/netherlands/" || href.startsWith("/netherlands/?")) return Compass;
   if (href.includes("/services")) return LayoutGrid;
   if (href.includes("/about")) return HeartHandshake;
@@ -276,6 +282,11 @@ export default function NetherlandsCitiesPage() {
                       {p}
                     </p>
                   ))}
+                  <InstructionalRasterFigure
+                    raster={citiesInstructionalRasterAssets.hubThreeColumns}
+                    caption="Popular hubs, deeper city pages, and comparison guides — same structure as the site nav, editorial only."
+                    className="mt-6"
+                  />
                   <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-slate-600">
                     {introLinks.map((link, i) => (
                       <span key={link.href} className="flex items-center gap-x-3">
@@ -304,13 +315,16 @@ export default function NetherlandsCitiesPage() {
                       <MapPin className="h-5 w-5" aria-hidden strokeWidth={2} />
                     </span>
                     <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
-                      Best cities for expats — decision guide
+                      City decision guides — best fit and affordability
                     </h2>
                   </div>
                   <p className="text-copilot-text-secondary leading-relaxed">
-                    Not sure where to start? The decision guide walks through work vs budget vs family vs lifestyle, shows
-                    realistic trade-offs between major Dutch cities, and points you to the right calculators and city
-                    guides — without a shallow “top 10” list.
+                    Not sure where to start? The <strong className="font-semibold text-copilot-text-primary">best cities</strong>{" "}
+                    guide walks through work vs budget vs family vs lifestyle, shows realistic trade-offs between major Dutch
+                    cities, and points you to calculators and city guides — without a shallow “top 10” list. If{" "}
+                    <strong className="font-semibold text-copilot-text-primary">rent pressure</strong> is your main lens, open
+                    the affordability guide for what “cheap” means in the Netherlands and the commute and job trade-offs
+                    people skip.
                   </p>
                   <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                     <Link
@@ -321,6 +335,24 @@ export default function NetherlandsCitiesPage() {
                       <span className="ml-1" aria-hidden>
                         →
                       </span>
+                    </Link>
+                    <Link
+                      href="/netherlands/cities/cheapest-cities-for-expats/"
+                      className="inline-flex min-h-[44px] items-center justify-center rounded-xl border border-slate-900/12 bg-white px-5 py-2.5 text-sm font-semibold text-copilot-text-primary shadow-expatos-sm ring-1 ring-copilot-primary/10 hover:bg-copilot-bg-soft"
+                    >
+                      Cheapest cities guide
+                    </Link>
+                    <Link
+                      href="/netherlands/cities/best-cities-for-families/"
+                      className="inline-flex min-h-[44px] items-center justify-center rounded-xl border border-slate-900/12 bg-white px-5 py-2.5 text-sm font-semibold text-copilot-text-primary shadow-expatos-sm ring-1 ring-copilot-primary/10 hover:bg-copilot-bg-soft"
+                    >
+                      Best cities for families
+                    </Link>
+                    <Link
+                      href="/netherlands/cities/best-cities-for-international-professionals/"
+                      className="inline-flex min-h-[44px] items-center justify-center rounded-xl border border-slate-900/12 bg-white px-5 py-2.5 text-sm font-semibold text-copilot-text-primary shadow-expatos-sm ring-1 ring-copilot-primary/10 hover:bg-copilot-bg-soft"
+                    >
+                      International professionals
                     </Link>
                     <Link
                       href="/netherlands/tools/city-comparison/"

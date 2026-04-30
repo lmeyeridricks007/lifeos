@@ -75,6 +75,8 @@ export const banksCategoryPage: ServiceCategoryPageData = {
       "Banks and money-service providers differ in onboarding, pricing, English support, digital experience, and international usefulness. Our guide and provider pages help you compare options; always confirm eligibility, fees, and documents directly with the provider.",
     ],
     links: [
+      { label: "Types of bank accounts (Money guide)", href: "/netherlands/money/banking/types-of-accounts/" },
+      { label: "How payments work (Money · Banking)", href: "/netherlands/money/banking/how-payments-work/" },
       { label: "Open a bank account in the Netherlands", href: "/netherlands/open-bank-account-netherlands/" },
       { label: "After arriving in the Netherlands", href: "/netherlands/after-arriving-netherlands/" },
       { label: "All services hub", href: "/netherlands/services/" },

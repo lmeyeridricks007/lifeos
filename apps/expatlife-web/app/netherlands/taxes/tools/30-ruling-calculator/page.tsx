@@ -9,6 +9,7 @@ import { ComingSoonBadge } from "@/components/ui/coming-soon-badge";
 import { LastUpdated } from "@/components/ui/LastUpdated";
 import { PayrollPlanningToolTrio } from "@/src/components/tools/PayrollPlanningToolTrio";
 import { ThirtyPercentRulingCalculatorClient } from "@/src/components/tools/thirty-percent-ruling/ThirtyPercentRulingCalculatorClient";
+import { UnderstandFirstThenCalculateCta } from "@/src/components/money/thirty-percent-ruling-nl/UnderstandFirstThenCalculateCta";
 import { AffiliateDisclosure } from "@/src/components/affiliates/AffiliateDisclosure";
 import { buildSoftwareApplicationSchema } from "@/src/lib/seo/toolSchema";
 import { buildBreadcrumbSchema } from "@/src/lib/seo/breadcrumbSchema";
@@ -86,7 +87,7 @@ const FAQ_ITEMS = [
     id: "calculator-confirm",
     question: "Does the calculator confirm my eligibility?",
     answer:
-      "No. It compares your inputs to planning norms and cap figures, applies your self-reported eligibility answers, and estimates an allowance. Only the Belastingdienst and an approved employer application determine eligibility and payroll treatment.",
+      "No. An eligibility estimate is not official approval. The tool compares your inputs to tax-year configuration (norms, caps, percentages for the year you select), applies your self-reported answers, and estimates an allowance. Only Belastingdienst and an employer filing determine binding eligibility and payroll treatment. The maximum statutory allowance is not the same as what your employer may choose to apply on payslip.",
   },
   {
     id: "2027-final",
@@ -135,9 +136,39 @@ const OFFICIAL_SOURCES = [
 
 const RELATED_NEXT_STEPS = [
   {
-    href: `${BASE}/taxes/30-percent-ruling/`,
-    title: "30% ruling guide",
-    description: "Overview of the facility, who it is for, and how it fits your move.",
+    href: `${BASE}/money/taxes/30-percent-ruling/`,
+    title: "30% ruling in the Netherlands (Money guide)",
+    description: "Educational walkthrough: employer setup, trust framing, and when to use this calculator — read before you treat outputs as final.",
+  },
+  {
+    href: `${BASE}/money/tax-guide-for-expats/`,
+    title: "Netherlands Tax Guide for Expats",
+    description: "How ruling, payroll, and allowances fit together — broader context than this eligibility tool.",
+  },
+  {
+    href: `${BASE}/money/expat-taxes-netherlands/`,
+    title: "Expat Taxes in the Netherlands",
+    description: "Scenario-first Money guide when ruling sits beside partial years, foreign assets, or household allowances.",
+  },
+  {
+    href: `${BASE}/taxes/tools/dutch-salary-net-calculator/`,
+    title: "Dutch Salary Net Calculator",
+    description: "Gross-to-net once you want take-home estimates; pairs with ruling scenarios on this page.",
+  },
+  {
+    href: `${BASE}/work/tools/job-offer-comparison/`,
+    title: "Job Offer Comparison Tool",
+    description: "Compare offers when ruling, pension, and extras differ — this calculator stays eligibility-first.",
+  },
+  {
+    href: `${BASE}/money/how-taxes-work-in-the-netherlands/`,
+    title: "How Taxes Work in the Netherlands",
+    description: "Foundation map for payroll vs return and tax boxes before you zoom into ruling mechanics.",
+  },
+  {
+    href: `${BASE}/money/tax-residency-netherlands/`,
+    title: "Tax residency in the Netherlands",
+    description: "When permits, ties, and filing scope need separating from ruling mechanics alone.",
   },
   {
     href: `${BASE}/taxes/30-ruling-eligibility/`,
@@ -155,11 +186,6 @@ const RELATED_NEXT_STEPS = [
     description: "Dedicated gross-to-net context once payroll facts are fixed.",
   },
   {
-    href: `${BASE}/taxes/tools/dutch-salary-net-calculator/`,
-    title: "Dutch salary net calculator",
-    description: "Use when you want gross-to-net planning outside this ruling-focused tool.",
-  },
-  {
     href: `${BASE}/work/tools/payslip-decoder/`,
     title: "Dutch payslip decoder",
     description: "Plain-language readout for bruto/netto and payroll lines — companion to ruling and net estimates.",
@@ -168,11 +194,6 @@ const RELATED_NEXT_STEPS = [
     href: `${BASE}/visa-checker/`,
     title: "Visa checker",
     description: "Clarify residence route before you lock compensation assumptions.",
-  },
-  {
-    href: `${BASE}/taxes/expat-taxes-netherlands/`,
-    title: "Expat taxes Netherlands",
-    description: "Broader filing and residency context for internationals.",
   },
   {
     href: `${BASE}/moving-to-the-netherlands/`,
@@ -192,6 +213,7 @@ const RELATED_NEXT_STEPS = [
 ];
 
 const TOC = [
+  { id: "understand-first-then-calculate", label: "Guide & tools" },
   { id: "tool-inputs", label: "Calculator" },
   { id: "tool-results", label: "Results" },
   { id: "how-the-tool-works", label: "How eligibility works" },
@@ -203,6 +225,8 @@ const TOC = [
 ];
 
 const QUICK = [
+  { label: "30% ruling guide (Money)", href: `${BASE}/money/taxes/30-percent-ruling/` },
+  { label: "Understand first →", href: "#understand-first-then-calculate" },
   { label: "Check eligibility", href: "#tool-inputs" },
   { label: "See results", href: "#tool-results" },
   { label: "Decode a Dutch payslip", href: `${BASE}/work/tools/payslip-decoder/` },
@@ -252,7 +276,7 @@ export default function ThirtyPercentRulingCalculatorPage() {
           },
           {
             t: "What it checks",
-            d: "Salary norm, under-30 master’s path, category route, employer intent, recruitment & 150 km self-checks, cap, months in scope, tax-free allowance.",
+            d: "For the tax year you select: salary norm, under-30 master’s path, category route, employer intent, recruitment & 150 km self-checks, cap, months in scope, tax-free allowance — from maintained config, not ad-hoc thresholds.",
           },
           {
             t: "What it does not confirm",
@@ -268,6 +292,7 @@ export default function ThirtyPercentRulingCalculatorPage() {
           </div>
         ))}
       </div>
+      <UnderstandFirstThenCalculateCta variant="calculator" className="pt-2" />
       <PayrollPlanningToolTrio highlight="30ruling" className="pt-1" />
     </div>
   );
@@ -287,7 +312,7 @@ export default function ThirtyPercentRulingCalculatorPage() {
             variant="tool"
             eyebrow="TOOL"
             title="30% Ruling Eligibility Calculator Netherlands"
-            subtitle="Check likely eligibility for the Dutch 30% ruling, understand the key conditions, estimate the tax-free allowance, and optionally compare indicative net impact."
+            subtitle="Check likely eligibility for the Dutch 30% ruling, estimate the tax-free allowance, and optionally compare indicative net impact. Pair with the Money guide for context — this page stays calculation-focused."
             introBullets={[
               "2026 rules + 2027 preview",
               "Eligibility-first result with why / why not",
@@ -297,7 +322,7 @@ export default function ThirtyPercentRulingCalculatorPage() {
             primaryCtaLabel="Check eligibility"
             primaryCtaScrollToId="tool-inputs"
             secondaryCtaLabel="Read the 30% ruling guide"
-            secondaryCtaHref={`${BASE}/taxes/30-percent-ruling/`}
+            secondaryCtaHref={`${BASE}/money/taxes/30-percent-ruling/`}
             image={{
               src: "/images/tools/expatlife-netherlands-budget-planning.png",
               alt: "Laptop and documents on a desk for Netherlands tax and salary planning.",
@@ -311,7 +336,7 @@ export default function ThirtyPercentRulingCalculatorPage() {
           />
         }
         intro={intro}
-        disclosure="This tool is for planning only. It does not replace the Belastingdienst, your employer, or a qualified tax adviser."
+        disclosure="Planning only: outputs use tax-year configuration from this tool—not legal advice. They do not replace Belastingdienst, your employer’s payroll setup, or a qualified tax adviser. Eligibility estimates are not official approval; maximum allowance ≠ guaranteed employer benefit."
         explanatorySectionsOuterTitle="How eligibility usually works"
         contentOrder="tool-first"
         explanatorySections={[
@@ -319,6 +344,7 @@ export default function ThirtyPercentRulingCalculatorPage() {
             id: "norm-salary",
             title: "Salary norm",
             body: [
+              "Long-form education (employer involvement, what is not guaranteed, partial years) lives in the Money guide — here we only apply the numbers for the tax year you select.",
               "The facility is tied to minimum taxable salary levels that change over time. This tool uses 2026 planning figures unless you focus on the 2027 percentage preview.",
             ],
           },
@@ -422,6 +448,12 @@ export default function ThirtyPercentRulingCalculatorPage() {
         faqItems={FAQ_ITEMS}
         internalLinkStrip={
           <nav className="flex flex-wrap gap-x-4 gap-y-2 text-sm" aria-label="Hubs and related tools">
+            <Link href={`${BASE}/money/taxes/30-percent-ruling/`} className="font-medium text-brand-600 hover:text-brand-700">
+              30% ruling guide (Money)
+            </Link>
+            <Link href={`${BASE}/money/tax-guide-for-expats/`} className="font-medium text-brand-600 hover:text-brand-700">
+              Tax guide for expats
+            </Link>
             <Link href={`${BASE}/taxes/`} className="font-medium text-brand-600 hover:text-brand-700">
               Dutch taxes hub
             </Link>
@@ -430,6 +462,9 @@ export default function ThirtyPercentRulingCalculatorPage() {
             </Link>
             <Link href={`${BASE}/taxes/tools/dutch-salary-net-calculator/`} className="font-medium text-brand-600 hover:text-brand-700">
               Dutch net salary calculator
+            </Link>
+            <Link href={`${BASE}/work/tools/job-offer-comparison/`} className="font-medium text-brand-600 hover:text-brand-700">
+              Job offer comparison
             </Link>
             <Link href={`${BASE}/work/tools/payslip-decoder/`} className="font-medium text-brand-600 hover:text-brand-700">
               Payslip decoder

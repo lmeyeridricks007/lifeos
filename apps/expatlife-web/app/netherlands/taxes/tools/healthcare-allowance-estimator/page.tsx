@@ -23,6 +23,7 @@ import {
   movingNlSidebarModuleClass,
   movingNlSidebarModuleTitleClass,
 } from "@/lib/ui/moving-nl-pillar-identity";
+import { TaxClusterToolsSection } from "@/src/components/money/tax-cluster/TaxClusterToolsSection";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -76,6 +77,21 @@ export const metadata: Metadata = {
 };
 
 const RELATED_NEXT_STEPS = [
+  {
+    href: `${BASE}/money/how-taxes-work-in-the-netherlands/`,
+    title: "How Taxes Work in the Netherlands",
+    description: "How allowances differ from income-tax credits and deductions — useful before you interpret this estimate.",
+  },
+  {
+    href: `${BASE}/money/tax-guide-for-expats/`,
+    title: "Netherlands Tax Guide for Expats",
+    description: "How zorgtoeslag sits next to salary and payroll tax — this page owns allowance methodology.",
+  },
+  {
+    href: `${BASE}/money/expat-taxes-netherlands/`,
+    title: "Expat Taxes in the Netherlands",
+    description: "Scenario-led Money guide when household, partial-year, or cross-border angles sit beside allowances.",
+  },
   {
     href: `${BASE}/living/survival-guide/`,
     title: "Netherlands Survival Guide",
@@ -425,6 +441,7 @@ export default function HealthcareAllowanceEstimatorPage() {
         relatedGuidesSectionId="related-guides"
         relatedGuides={relatedGuidesResolved}
         faqItems={healthcareFaqItems}
+        postToolValue={<TaxClusterToolsSection current="healthcare" showGuideLink />}
         internalLinkStrip={
           <nav className="flex flex-wrap gap-x-4 gap-y-2 text-sm" aria-label="Hubs and related tools">
             <Link href={`${BASE}/taxes/`} className="font-medium text-brand-600 hover:text-brand-700">

@@ -45,6 +45,7 @@ import {
 import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc";
 import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
 import { MovingImmigrationAffiliatesBlock } from "@/src/components/moving/MovingImmigrationAffiliatesBlock";
+import { TaxResidencyVsPermitOrientationCard } from "@/src/components/money/tax-residency-nl/TaxResidencyVsPermitOrientationCard";
 import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
 import { statusChangesPageMeta } from "./config/statusChanges.config";
 import type {
@@ -52,6 +53,8 @@ import type {
   MoveStatusChangesWorkSection,
   StatusChangesPageMeta,
 } from "./config/moveStatusChanges.types";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
+import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
 import { StatusChangesHeroGraphic } from "./StatusChangesHeroGraphic";
 import { StatusChangesSituationGrid } from "./StatusChangesSituationGrid";
 import { StatusChangesStartHereGrid } from "./StatusChangesStartHereGrid";
@@ -70,6 +73,8 @@ const meta = statusChangesPageMeta;
 const CANONICAL = meta.canonicalPath;
 const PAGE_HERO_SUBTITLE = meta.hero.subtitle;
 const HUB = meta.movePillarHubPath;
+
+const STATUS_CHANGES_INSTRUCTIONAL = getVisasResidencyInstructionalFigure("status-changes");
 
 export function StatusChangesView() {
   const baseUrl = getSiteOrigin();
@@ -248,6 +253,14 @@ export function StatusChangesView() {
           <PillarJourneyStack variant="guide" density="compact" className="gap-1 sm:gap-2 md:gap-3">
             <MovePillarMobileToc items={meta.sectionNav} />
 
+            {STATUS_CHANGES_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={STATUS_CHANGES_INSTRUCTIONAL.raster}
+                caption={STATUS_CHANGES_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
+
             <section
               className={cn(
                 SECTION_SCROLL_MARGIN,
@@ -276,6 +289,8 @@ export function StatusChangesView() {
                 </div>
               </div>
             </section>
+
+            <TaxResidencyVsPermitOrientationCard samePageDetailAnchor={false} className={SECTION_SCROLL_MARGIN} />
 
             <MovePillarJourneyBridge
               id={meta.pillarJourneyBridge.id}

@@ -56,8 +56,12 @@ import {
 } from "@/lib/ui/moving-nl-pillar-identity";
 import { cityGuideKeySectionsPadClass, guideKeyColumnStackGapClass } from "@/lib/ui/page-rhythm";
 import { MoveClusterOriginCountryPostFaq } from "@/src/components/monetization/MoveClusterOriginCountryPostFaq";
+import { getMovingPlanningInstructionalFigure } from "@/src/components/moving/moving-planning-cluster/movingPlanningInstructionalRasterAssets";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 
 export const revalidate = CONTENT_REVALIDATE;
+
+const MOVING_FROM_ORIGIN_HUB_INSTRUCTIONAL = getMovingPlanningInstructionalFigure("moving-to-netherlands-from");
 /** Country list uses publish dates; avoid freezing the browse grid at build time. */
 export const dynamic = "force-dynamic";
 
@@ -281,6 +285,13 @@ export default async function MovingToNetherlandsFromIndexPage() {
                 ) : null}
 
                 <PillarEssentialsSurface>
+              {MOVING_FROM_ORIGIN_HUB_INSTRUCTIONAL ? (
+                <InstructionalRasterFigure
+                  raster={MOVING_FROM_ORIGIN_HUB_INSTRUCTIONAL.raster}
+                  caption={MOVING_FROM_ORIGIN_HUB_INSTRUCTIONAL.caption}
+                  className="mb-6 w-full sm:mb-8"
+                />
+              ) : null}
               <OriginCountryBrowseSection
                 id="browse-country-guides"
                 className="py-0 sm:py-0 md:py-0"

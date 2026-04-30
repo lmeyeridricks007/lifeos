@@ -1,0 +1,20 @@
+{
+  "id": "nl-money-banking-payments-work-traditional",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/how-payments-work/",
+    "slot": "recommended-providers-traditional-payments"
+  },
+  "variant": "cards",
+  "title": "Traditional banks — check iDEAL and SEPA support",
+  "intro": "Neutral listings for ING, ABN AMRO, and Rabobank. Compare iDEAL, direct debit, and fee pages on each bank’s official site — not a ranking.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    { "providerId": "ing", "reason": "Retail bank — confirm iDEAL access, betaalverzoek, and incasso setup on ING’s current product pages." },
+    { "providerId": "abn-amro", "reason": "Full-service bank — useful when employers or landlords expect familiar Dutch IBAN patterns; verify app features on ABN AMRO’s site." },
+    { "providerId": "rabobank", "reason": "Cooperative retail bank — compare English help and payment tools for your region on Rabobank’s disclosures." }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm scope, pricing, and terms with the provider directly."
+}

@@ -6,6 +6,7 @@ import { EU_BLUE_CARD_VISA } from "@/src/content/visas/eu-blue-card";
 import { euBlueCardToGuideData } from "@/src/lib/visas/visaToGuideData";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -55,6 +56,7 @@ export default function EuBlueCardVisaPage() {
         data={serializableData}
         affiliateBlocks={{}}
         canonicalUrl={canonicalUrl}
+        planningInstructionalFigure={getVisasResidencyInstructionalFigure(EU_BLUE_CARD_VISA.slug)}
       />
     </>
   );

@@ -21,9 +21,9 @@ const moveTwvHero = {
     "A practical guide to when a Dutch TWV work permit may matter, how it differs from GVVA or free-work setups, and what employees and employers should clarify before work or relocation plans start moving too fast.",
   contextChips: ["TWV", "GVVA", "Free work", "Student", "Employer action", "Timing"],
   bullets: [
-    "Understand what a TWV is in **practical terms**",
-    "See how it differs from **other work/residence setups**",
-    "Learn when **employer action** usually matters most",
+    "Understand what a TWV is in practical terms",
+    "See how it differs from other work/residence setups",
+    "Learn when employer action usually matters most",
     "Get practical next steps without drowning in legal detail",
   ],
   primaryCta: { label: "Start with the basics", href: "#start-here" },
@@ -41,23 +41,23 @@ const moveTwvAtAGlance = {
   cells: [
     {
       title: "What this page is for",
-      body: "**Practical orientation** on TWV work-permit context, so you can understand the route questions before you start treating every work case as the same permit story.",
+      body: "Practical orientation on TWV work-permit context, so you can understand the route questions before you start treating every work case as the same permit story.",
     },
     {
       title: "Best for",
-      body: "**Non-EU workers, employers, HR teams, and expats** trying to understand whether TWV is relevant, how employer action fits in, and what to clarify early.",
+      body: "Non-EU workers, employers, HR teams, and expats trying to understand whether TWV is relevant, how employer action fits in, and what to clarify early.",
     },
     {
       title: "What it covers",
-      body: "**What a TWV is, when it tends to matter, how it differs from GVVA or free-work situations, employer and employee roles, timing, and common misunderstandings.**",
+      body: "What a TWV is, when it tends to matter, how it differs from GVVA or free-work situations, employer and employee roles, timing, and common misunderstandings.",
     },
     {
       title: "What it skips",
-      body: "**Final legal rulings, exact case-by-case outcomes, and full application procedure detail.** This page helps you orient and ask better questions next.",
+      body: "Final legal rulings, exact case-by-case outcomes, and full application procedure detail. This page helps you orient and ask better questions next.",
     },
   ],
   note:
-    "**Not every non-Dutch worker needs a TWV, and not every work situation uses the same permit path.** Use this page to understand the route logic first, then confirm specifics with official UWV, IND, employer, or legal guidance.",
+    "Not every non-Dutch worker needs a TWV, and not every work situation uses the same permit path. Use this page to understand the route logic first, then confirm specifics with official UWV, IND, employer, or legal guidance.",
 } as const;
 
 const moveTwvPillarJourneyBridge = {
@@ -65,7 +65,7 @@ const moveTwvPillarJourneyBridge = {
   eyebrow: "Inside the Move pillar",
   title: "How this page connects to the rest of ExpatCopilot",
   intro:
-    "**Visas & residency** helps you compare routes. **Residence permits** explains permit context over time. **Working in the Netherlands** connects contracts, salary, payroll, and relocation setup. **This page** sits in the middle when the question is specifically about **work authorization structure**, employer action, and whether TWV is the route you should even be investigating.",
+    "Visas & residency helps you compare routes. Residence permits explains permit context over time. Working in the Netherlands connects contracts, salary, payroll, and relocation setup. This page sits in the middle when the question is specifically about work authorization structure, employer action, and whether TWV is the route you should even be investigating.",
   links: [
     {
       href: ROUTES.hub,
@@ -111,14 +111,14 @@ const moveTwvStartHereRegion = {
   eyebrow: "Start here",
   title: "What a TWV usually means",
   subtitle:
-    "Treat TWV as a **specific work-authorization setup**, not as shorthand for every Dutch work permit. The useful first step is usually route clarity, not paperwork detail.",
+    "Treat TWV as a specific work-authorization setup, not as shorthand for every Dutch work permit. The useful first step is usually route clarity, not paperwork detail.",
 } as const;
 
 const moveTwvWhatNextRegion = {
   eyebrow: "How to use this page",
   title: "How to use this page and what to do next",
   subtitle:
-    "The goal is simple: work out whether **TWV is even the right route to investigate**, then open the right pages and tools for route clarity, employer timing, and move planning.",
+    "The goal is simple: work out whether TWV is even the right route to investigate, then open the right pages and tools for route clarity, employer timing, and move planning.",
 } as const;
 
 const moveTwvProgressionSteps = [
@@ -158,7 +158,7 @@ const moveTwvToolsRegion = {
   id: "helpful-tools",
   title: "Helpful tools & related guides",
   subtitle:
-    "Use **Move pages** for route clarity and timing, **Work tools** for offers and contracts, and **Money / Living** pages for the practical impact once work authorization becomes real.",
+    "Use Move pages for route clarity and timing, Work tools for offers and contracts, and Money / Living pages for the practical impact once work authorization becomes real.",
 } as const;
 
 const moveTwvContinueMove = {

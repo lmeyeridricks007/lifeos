@@ -14,6 +14,15 @@ import {
 } from "@/lib/ui/page-family";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { toolsHubHeroImage } from "@/src/lib/tools/toolsHubHeroImage";
+import {
+  EXPAT_TAXES_NL_HREF,
+  HOW_TAXES_WORK_IN_NL_HREF,
+  TAX_GUIDE_FOR_EXPATS_HREF,
+  TAX_RESIDENCY_NL_HREF,
+  TAX_RETURN_NL_HREF,
+} from "@/src/components/money/tax-cluster/taxClusterToolsConfig";
+import { MoneyTaxLearningPath } from "@/src/components/money/tax-cluster/MoneyTaxLearningPath";
+import { TaxClusterToolsSection } from "@/src/components/money/tax-cluster/TaxClusterToolsSection";
 
 const hubContainerClass = "w-full max-w-screen-2xl";
 
@@ -117,6 +126,57 @@ export function ToolHubTemplate({ category, liveTools, comingSoonTools, relatedG
       nextSteps={
         <Container className={hubContainerClass}>
           <div className="flex flex-col gap-6 md:gap-8">
+            {category.id === "money-tax" || category.id === "taxes-tools" ? (
+              <SectionBlock
+                compact
+                title="Money → Tax cluster"
+                subtitle="Foundation explainer, expat guides, residency orientation, annual tax return prep, then calculators — same sequence on every hub and tool page in this cluster."
+              >
+                <p className="text-sm leading-relaxed text-foreground-muted">
+                  Start with the simplest system map, then add depth only when you need it. Each step links to the next; tools are planning-only
+                  and document their own methodology.
+                </p>
+                <div className="mt-4 not-prose">
+                  <MoneyTaxLearningPath variant="compact" />
+                </div>
+                <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-6">
+                  <Link
+                    href={HOW_TAXES_WORK_IN_NL_HREF}
+                    className="inline-flex text-sm font-semibold text-link transition-colors duration-150 hover:text-link-hover hover:underline"
+                  >
+                    How Taxes Work in the Netherlands →
+                  </Link>
+                  <Link
+                    href={TAX_GUIDE_FOR_EXPATS_HREF}
+                    className="inline-flex text-sm font-semibold text-link transition-colors duration-150 hover:text-link-hover hover:underline"
+                  >
+                    Netherlands Tax Guide for Expats →
+                  </Link>
+                  <Link
+                    href={EXPAT_TAXES_NL_HREF}
+                    className="inline-flex text-sm font-semibold text-link transition-colors duration-150 hover:text-link-hover hover:underline"
+                  >
+                    Expat Taxes in the Netherlands →
+                  </Link>
+                  <Link
+                    href={TAX_RESIDENCY_NL_HREF}
+                    className="inline-flex text-sm font-semibold text-link transition-colors duration-150 hover:text-link-hover hover:underline"
+                  >
+                    Tax residency in the Netherlands →
+                  </Link>
+                  <Link
+                    href={TAX_RETURN_NL_HREF}
+                    className="inline-flex text-sm font-semibold text-link transition-colors duration-150 hover:text-link-hover hover:underline"
+                  >
+                    Tax return in the Netherlands →
+                  </Link>
+                </div>
+                <div className="mt-6 not-prose">
+                  <TaxClusterToolsSection showGuideLink={false} />
+                </div>
+              </SectionBlock>
+            ) : null}
+
             <SectionBlock compact title="Related guides" subtitle="Deeper context to use alongside these tools.">
               <ul className="grid gap-2 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-2">
                 {relatedGuides.map((href) => (

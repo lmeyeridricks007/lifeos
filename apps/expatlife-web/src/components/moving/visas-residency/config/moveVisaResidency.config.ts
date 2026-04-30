@@ -80,9 +80,9 @@ export const moveVisaResidencySections: MoveVisaResidencySection[] = [
     subtitle: "Your job, your contract, and your home address usually need to line up—not only the permit.",
     visualKey: "work",
     keyPoints: [
-      "**Who applies for what** (you or your employer) and your **start date** affect travel and housing—not just the permit title.",
-      "Problems often come from **address, BSN (citizen number), and pay** if dates or sponsor details are unclear—sort this early with HR.",
-      "Ask HR once: **which permit type they expect**, **whether you can work remotely**, and **what they need from you before you book travel**.",
+      "Who applies for what (you or your employer) and your start date affect travel and housing—not just the permit title.",
+      "Problems often come from address, BSN (citizen number), and pay if dates or sponsor details are unclear—sort this early with HR.",
+      "Ask HR once: which permit type they expect, whether you can work remotely, and what they need from you before you book travel.",
     ],
     pairedToolsEyebrow: "Helpful tools if work is your main reason to move",
     pairedTools: [
@@ -131,7 +131,7 @@ export const moveVisaResidencySections: MoveVisaResidencySection[] = [
         chip: "Study",
         title: "Study: acceptance and enrolment",
         intro:
-          "Plan **school letters**, **health insurance**, and **signing up at the gemeente** together—don’t only fix housing in a vacuum.",
+          "Plan school letters, health insurance, and signing up at the gemeente together—don’t only fix housing in a vacuum.",
         nextStep: { ctaLabel: "Student visa", href: "/netherlands/visa/student-visa/" },
       },
       {
@@ -139,7 +139,7 @@ export const moveVisaResidencySections: MoveVisaResidencySection[] = [
         visualKey: "partner",
         chip: "Family",
         title: "Partner & dependants",
-        intro: "Start from your **sponsor’s permit** and **proof of your relationship**. A work-permit checklist usually won’t fit.",
+        intro: "Start from your sponsor’s permit and proof of your relationship. A work-permit checklist usually won’t fit.",
         nextStep: { ctaLabel: "Partner & family visa", href: "/netherlands/visa/partner-family-visa/" },
       },
       {
@@ -148,7 +148,7 @@ export const moveVisaResidencySections: MoveVisaResidencySection[] = [
         chip: "ZZP",
         title: "Self-employed or business",
         intro:
-          "You may need a **business plan** and extra proof. Some people use **special treaties** (DAFT for US citizens). Read the overview pages before focusing on one form.",
+          "You may need a business plan and extra proof. Some people use special treaties (DAFT for US citizens). Read the overview pages before focusing on one form.",
         nextStep: { ctaLabel: "Self-employed · DAFT", href: "/netherlands/visa/self-employed-visa/" },
       },
       {
@@ -157,7 +157,7 @@ export const moveVisaResidencySections: MoveVisaResidencySection[] = [
         chip: "Change",
         title: "Extend or change your permit",
         intro:
-          "**Renewing**, **changing employer**, or **changing your reason to stay** are separate processes. Don’t assume the same rules as your first permit.",
+          "Renewing, changing employer, or changing your reason to stay are separate processes. Don’t assume the same rules as your first permit.",
         nextStep: { ctaLabel: "Extensions & changes guide", href: "/netherlands/moving/extensions-changes/" },
       },
     ],
@@ -169,7 +169,7 @@ export const moveVisaResidencySections: MoveVisaResidencySection[] = [
     title: "After you arrive: register, insure, settle in",
     subtitle: "Sorting your permit is one part. Registering, insuring yourself, and daily life are the rest.",
     intro:
-      "Getting a permit is **only part** of moving. After you land, most people still need to **register with the gemeente** (and get a **BSN**), **take out health insurance**, **open a bank account**, and find **a home you’re allowed to register at**—often in an order your town and employer need to support.",
+      "Getting a permit is only part of moving. After you land, most people still need to register with the gemeente (and get a BSN), take out health insurance, open a bank account, and find a home you’re allowed to register at—often in an order your town and employer need to support.",
     openNextLabel: "Open next: ",
     openNextLinks: [
       { label: "Municipality registration", href: "/netherlands/municipality-registration-netherlands/" },
@@ -180,7 +180,7 @@ export const moveVisaResidencySections: MoveVisaResidencySection[] = [
       { label: "First days", text: "Have an address you can register, book the gemeente if needed, IDs ready, and rental papers in order." },
       { label: "First weeks", text: "BSN on paper, insurance active, bank account for paying bills, and a simple commute routine." },
     ],
-    moreNote: "Use our **documents** and **after you arrive** guides together with this page—see the links below.",
+    moreNote: "Use our documents and after you arrive guides together with this page—see the links below.",
     docLinks: [
       { label: "Documents overview", href: "/netherlands/documents-needed-to-move-netherlands/" },
       { label: "Document readiness", href: "/netherlands/moving/tools/document-readiness/" },
@@ -203,7 +203,7 @@ export const moveVisaResidencyTips: MoveVisaResidencyTip[] = [
     id: "reassurance",
     visualKey: "default",
     title: "You don’t need every rule memorised today",
-    body: "First, get **clear on your situation** (work, study, family, or self-employed). Pick **one official source** you trust for your case. Then take the **next practical step**—papers, a question to your employer, or a gemeente appointment. Save the fine print for when you’re actually doing that step.",
+    body: "First, get clear on your situation (work, study, family, or self-employed). Pick one official source you trust for your case. Then take the next practical step—papers, a question to your employer, or a gemeente appointment. Save the fine print for when you’re actually doing that step.",
   },
 ];
 
@@ -211,62 +211,62 @@ export const moveVisaResidencyMisunderstandings: MoveVisaResidencyMisunderstandi
   {
     id: "visa-word",
     title: "“Visa” is used for everything",
-    body: "People say “visa” for many things. You might need **permission to enter**, a **residence permit**, or (if you’re from the EU) **free movement rules**—different offices and timelines.",
+    body: "People say “visa” for many things. You might need permission to enter, a residence permit, or (if you’re from the EU) free movement rules—different offices and timelines.",
   },
   {
     id: "purpose",
     title: "Your reason to stay shapes the paperwork",
-    body: "Work, study, and family are **different checklists**, even when you all want the same thing: to live in the Netherlands.",
+    body: "Work, study, and family are different checklists, even when you all want the same thing: to live in the Netherlands.",
   },
   {
     id: "not-whole",
     title: "The permit isn’t the whole relocation",
-    body: "**Housing, insurance, your bank, and schools** still need planning—do them **alongside** your permit, not only after.",
+    body: "Housing, insurance, your bank, and schools still need planning—do them alongside your permit, not only after.",
   },
   {
     id: "sponsor",
     title: "Who sponsors you changes the steps",
-    body: "**Your employer’s or family member’s permit type** can matter as much as your own forms.",
+    body: "Your employer’s or family member’s permit type can matter as much as your own forms.",
   },
   {
     id: "threads",
     title: "Everyone’s situation is different",
-    body: "Your **nationality, income, and family** change what applies to you—be careful with one-size-fits-all advice online.",
+    body: "Your nationality, income, and family change what applies to you—be careful with one-size-fits-all advice online.",
   },
   {
     id: "approval",
     title: "A ‘yes’ on your permit isn’t the end",
-    body: "You still need **town hall registration, your BSN, and your job’s paperwork** on sensible dates—don’t leave that for ‘when I have time’.",
+    body: "You still need town hall registration, your BSN, and your job’s paperwork on sensible dates—don’t leave that for ‘when I have time’.",
   },
 ];
 
 export const moveVisaResidencyFaq: PillarFaqItem[] = [
   {
     q: "What is the difference between a visa and a residence permit in practice?",
-    a: "In everyday speech people say **visa** for almost everything. What actually matters is: **what you need before you travel**, **what you apply for after you arrive**, and **how long each step takes**. That might be a short visit, a long-stay entry visa, or a **residence permit**—it depends on your plans and your nationality.",
+    a: "In everyday speech people say visa for almost everything. What actually matters is: what you need before you travel, what you apply for after you arrive, and how long each step takes. That might be a short visit, a long-stay entry visa, or a residence permit—it depends on your plans and your nationality.",
   },
   {
     q: "Which residence route is most common for expats?",
-    a: "It depends where you live and who you are. Many people come for **work**, especially in big cities. **EU citizens** often follow simpler rules. **Students** and **families** have their own common paths. Focus on **your** case—not what happened to “most people.”",
+    a: "It depends where you live and who you are. Many people come for work, especially in big cities. EU citizens often follow simpler rules. Students and families have their own common paths. Focus on your case—not what happened to “most people.”",
   },
   {
     q: "What if I am moving for work?",
-    a: "Agree **who applies for the permit**, your **start date**, and whether you have **an address you can register**—ideally before you book flights. When you know the broad permit type, you can use our **work tools** for offers, contracts, and net pay.",
+    a: "Agree who applies for the permit, your start date, and whether you have an address you can register—ideally before you book flights. When you know the broad permit type, you can use our work tools for offers, contracts, and net pay.",
     links: [{ label: "Working in the Netherlands", href: "/netherlands/moving/working-in-the-netherlands/" }],
   },
   {
     q: "What if I am joining my partner or family?",
-    a: "Start with **your sponsor’s right to live here** and **proof of your relationship**. A standard work-permit packing list usually won’t match.",
+    a: "Start with your sponsor’s right to live here and proof of your relationship. A standard work-permit packing list usually won’t match.",
     links: [{ label: "Partner & family visa", href: "/netherlands/visa/partner-family-visa/" }],
   },
   {
     q: "What if I want to study?",
-    a: "Treat **acceptance at school**, your **study residence permit**, **health insurance**, and **registering with the gemeente** as one timeline—if one part slips, the rest often stall too.",
+    a: "Treat acceptance at school, your study residence permit, health insurance, and registering with the gemeente as one timeline—if one part slips, the rest often stall too.",
     links: [{ label: "Student visa", href: "/netherlands/visa/student-visa/" }],
   },
   {
     q: "Can I change status after arriving?",
-    a: "Sometimes, yes—but **rules and timing** apply. Treat each change as a **new process**. Don’t assume your second permit works like your first.",
+    a: "Sometimes, yes—but rules and timing apply. Treat each change as a new process. Don’t assume your second permit works like your first.",
     links: [
       { label: "Extensions & changes guide", href: "/netherlands/moving/extensions-changes/" },
       { label: "Compare visa routes", href: "/netherlands/visa/compare-visas/" },
@@ -274,7 +274,7 @@ export const moveVisaResidencyFaq: PillarFaqItem[] = [
   },
   {
     q: "What should I sort out after I arrive?",
-    a: "Usually: **register and get your BSN**, **health insurance**, **a bank account**, and **a home you’re allowed to register at**. Then settle daily life—see our **First 90 days planner** and **Survival Guide**.",
+    a: "Usually: register and get your BSN, health insurance, a bank account, and a home you’re allowed to register at. Then settle daily life—see our First 90 days planner and Survival Guide.",
     links: [
       { label: "First 90 days planner", href: "/netherlands/moving/tools/first-90-days/" },
       { label: "BSN registration", href: "/netherlands/bsn-registration/" },
@@ -282,7 +282,7 @@ export const moveVisaResidencyFaq: PillarFaqItem[] = [
   },
   {
     q: "Is this page legal advice?",
-    a: "**No.** This page helps you **get oriented**. For binding rules, use **IND** and other official sites, and talk to a **qualified adviser** if your case is complicated or high-stakes.",
+    a: "No. This page helps you get oriented. For binding rules, use IND and other official sites, and talk to a qualified adviser if your case is complicated or high-stakes.",
   },
 ];
 
@@ -329,7 +329,7 @@ export const moveVisaResidencyReferences: MoveVisaResidencyReferences = {
 
 export const moveVisaResidencyRelatedTools: MoveVisaResidencyRelatedTools = {
   journeyIntro:
-    "**First your permit, then money and work, then settling in.** Use the sections below in that order so your paperwork and daily life stay in step.",
+    "First your permit, then money and work, then settling in. Use the sections below in that order so your paperwork and daily life stay in step.",
   sections: [
     {
       eyebrow: "Move & immigration",
@@ -392,6 +392,11 @@ export const moveVisaResidencyRelatedTools: MoveVisaResidencyRelatedTools = {
           description: "Rough check if the 30% ruling might apply (planning only).",
           href: "/netherlands/taxes/tools/30-ruling-calculator/",
         },
+        {
+          title: "Tax residency in the Netherlands",
+          description: "How tax residency differs from permits — useful before you mix labels.",
+          href: "/netherlands/money/tax-residency-netherlands/",
+        },
       ],
     },
     {
@@ -444,22 +449,22 @@ export const moveVisaResidencyPageMeta: MoveVisaResidencyPageMeta = {
     cells: [
       {
         title: "What this page is for",
-        body: "A **simple overview** of how Dutch stay routes differ—before you dive into long forms or forums.",
+        body: "A simple overview of how Dutch stay routes differ—before you dive into long forms or forums.",
       },
       {
         title: "Best for",
-        body: "Anyone who wants the **big picture first** and the details when they need them.",
+        body: "Anyone who wants the big picture first and the details when they need them.",
       },
       {
         title: "What it covers",
-        body: "The main route types, what happens after you arrive, and **links** to our guides and tools.",
+        body: "The main route types, what happens after you arrive, and links to our guides and tools.",
       },
       {
         title: "What it skips",
-        body: "Court cases, personal eligibility decisions, and **filling in every box** for you—use **IND** and professionals for that.",
+        body: "Court cases, personal eligibility decisions, and filling in every box for you—use IND and professionals for that.",
       },
     ],
-    note: "Rules depend on **nationality, income, family, and timing**. Use this page to get your bearings; for anything decisive, check **official sources** or ask a **qualified adviser**.",
+    note: "Rules depend on nationality, income, family, and timing. Use this page to get your bearings; for anything decisive, check official sources or ask a qualified adviser.",
   },
   sectionNav: [
     { href: "#at-a-glance", label: "At a glance" },

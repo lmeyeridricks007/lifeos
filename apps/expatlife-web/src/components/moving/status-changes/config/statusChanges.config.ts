@@ -27,11 +27,11 @@ export const statusChangesPageMeta: StatusChangesPageMeta = {
     eyebrow: "Netherlands · Moving",
     pageTitle: "Status Changes in the Netherlands",
     subtitle:
-      "A calm guide to what often matters when the **basis of your stay changes** — across **work, study, family, self-employment, and other life shifts** that can affect residency, timing, and everyday admin.",
+      "A calm guide to what often matters when the basis of your stay changes — across work, study, family, self-employment, and other life shifts that can affect residency, timing, and everyday admin.",
     bullets: [
-      "Understand what a **status change** usually means in practice",
-      "See the common life situations that can affect your **residency picture**",
-      "Learn why **timing, continuity, and admin planning** matter",
+      "Understand what a status change usually means in practice",
+      "See the common life situations that can affect your residency picture",
+      "Learn why timing, continuity, and admin planning matter",
       "Get practical next steps without drowning in legal detail",
     ],
     primaryCta: { label: "Start with the common situations", href: "#common-situations" },
@@ -48,37 +48,37 @@ export const statusChangesPageMeta: StatusChangesPageMeta = {
     cells: [
       {
         title: "What this page is for",
-        body: "**Practical orientation** when the **basis of your stay** may be changing, and you need to understand the shape of the issue before you dive into official detail.",
+        body: "Practical orientation when the basis of your stay may be changing, and you need to understand the shape of the issue before you dive into official detail.",
       },
       {
         title: "Best for",
-        body: "**Expats already in the Netherlands**, workers, students, partners, families, freelancers, and founders whose **life circumstances** are moving.",
+        body: "Expats already in the Netherlands, workers, students, partners, families, freelancers, and founders whose life circumstances are moving.",
       },
       {
         title: "What it covers",
-        body: "**Common status-change situations**, timing awareness, continuity questions, life admin impact, and the **next ExpatCopilot pages and tools** to open.",
+        body: "Common status-change situations, timing awareness, continuity questions, life admin impact, and the next ExpatCopilot pages and tools to open.",
       },
       {
         title: "What it skips",
-        body: "**Case-specific legal rulings**, definitive outcomes, and full official process detail. This page helps you **spot when change matters**, not self-decide the result.",
+        body: "Case-specific legal rulings, definitive outcomes, and full official process detail. This page helps you spot when change matters, not self-decide the result.",
       },
     ],
     note:
-      "**Status change** is often about your **underlying reason for staying** changing, not only a date printed on a card. Use this page to **notice the shift**, map what else it may touch, and then confirm the details through official guidance or legal help.",
+      "Status change is often about your underlying reason for staying changing, not only a date printed on a card. Use this page to notice the shift, map what else it may touch, and then confirm the details through official guidance or legal help.",
   },
   startHereRegion: {
     id: "start-here",
     eyebrow: "Start here",
     title: "What “status change” usually means",
     subtitle:
-      "Before you get lost in details, anchor on **why you are here now**, **what changed**, and **which practical systems depend on that change**.",
+      "Before you get lost in details, anchor on why you are here now, what changed, and which practical systems depend on that change.",
   },
   commonSituationsRegion: {
     id: "common-situations",
     eyebrow: "Route orientation",
     title: "The most common status-change situations",
     subtitle:
-      "Start with the pattern that feels closest. Each card is built to answer three fast questions: **is this me**, **why does it matter**, and **what should I open next**?",
+      "Start with the pattern that feels closest. Each card is built to answer three fast questions: is this me, why does it matter, and what should I open next?",
   },
   workSection: moveStatusChangesSections.workSection,
   otherContextsRegion: moveStatusChangesSections.routeCategories,
@@ -143,6 +143,11 @@ export const statusChangesPageMeta: StatusChangesPageMeta = {
       href: "/netherlands/visa/compare-visas/",
       label: "Compare visa routes",
       description: "Helpful when one legal basis may be turning into another.",
+    },
+    {
+      href: "/netherlands/money/tax-residency-netherlands/",
+      label: "Tax residency in the Netherlands",
+      description: "Money-pillar orientation when immigration dates and tax years may not align the same way — not a determination.",
     },
   ],
   progressionSteps: [
@@ -237,13 +242,13 @@ export const statusChangesPageMeta: StatusChangesPageMeta = {
     id: "helpful-tools",
     title: "Helpful tools & related guides",
     subtitle:
-      "Use the same Move-pillar rhythm: **orientation pages first**, then **tools and adjacent guides** for numbers, timing, and practical life decisions.",
+      "Use the same Move-pillar rhythm: orientation pages first, then tools and adjacent guides for numbers, timing, and practical life decisions.",
   },
   toolsJourneySnapshot: {
     eyebrow: "Product map",
     title: "Where this page sits in the Move pillar",
     subtitle:
-      "**Visas & residency** helps you compare routes. **Residence permits** explains permit logic. **Extensions & changes** handles renewals and after-arrival shifts. **This page** helps when the **basis itself may be changing**.",
+      "Visas & residency helps you compare routes. Residence permits explains permit logic. Extensions & changes handles renewals and after-arrival shifts. This page helps when the basis itself may be changing.",
     steps: [
       {
         href: HUB,
@@ -280,14 +285,14 @@ export const statusChangesPageMeta: StatusChangesPageMeta = {
     eyebrow: "How to use this page",
     title: "How to use this page and what to do next",
     subtitle:
-      "You do not need to solve everything at once. The goal is to understand the **shape** of the situation, then open the **right next pages** in the right order.",
+      "You do not need to solve everything at once. The goal is to understand the shape of the situation, then open the right next pages in the right order.",
   },
   pillarJourneyBridge: {
     id: "move-pillar-context",
     eyebrow: "Inside the Move pillar",
     title: "How this page connects to the rest of ExpatCopilot",
     intro:
-      "**Visas & residency** answers “what routes exist?” **Residence permits** answers “what does the permit mean over time?” **Extensions & changes** answers “what happens after arrival when dates shift?” **This page** sits in the middle when a **life change may be changing the basis itself**.",
+      "Visas & residency answers “what routes exist?” Residence permits answers “what does the permit mean over time?” Extensions & changes answers “what happens after arrival when dates shift?” This page sits in the middle when a life change may be changing the basis itself.",
     links: [
       { href: HUB, label: "Moving to the Netherlands", description: "The full relocation guide and hub.", meta: "Move" },
       { href: VISAS, label: "Visas & residency orientation", description: "Compare routes before you go deep on one.", meta: "Move" },

@@ -45,8 +45,11 @@ import {
 import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc";
 import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
 import { MovingImmigrationAffiliatesBlock } from "@/src/components/moving/MovingImmigrationAffiliatesBlock";
+import { TaxResidencyVsPermitOrientationCard } from "@/src/components/money/tax-residency-nl/TaxResidencyVsPermitOrientationCard";
 import { ExtensionsChangesSituationGrid } from "./ExtensionsChangesSituationGrid";
 import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
+import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
 import { ExtensionsChangesHeroGraphic } from "./ExtensionsChangesHeroGraphic";
 import { ExtensionsChangesStartHereGrid } from "./ExtensionsChangesStartHereGrid";
 import { moveExtensionsChangesPageMeta } from "./config";
@@ -62,6 +65,8 @@ const meta = moveExtensionsChangesPageMeta;
 const CANONICAL = meta.canonicalPath;
 const PAGE_HERO_SUBTITLE = meta.hero.subtitle;
 const HUB = meta.movePillarHubPath;
+
+const EXTENSIONS_CHANGES_INSTRUCTIONAL = getVisasResidencyInstructionalFigure("extensions-changes");
 
 export function ExtensionsChangesView() {
   const baseUrl = getSiteOrigin();
@@ -242,6 +247,14 @@ export function ExtensionsChangesView() {
           <PillarJourneyStack variant="guide" density="compact" className="gap-1 sm:gap-2 md:gap-3">
             <MovePillarMobileToc items={meta.sectionNav} />
 
+            {EXTENSIONS_CHANGES_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={EXTENSIONS_CHANGES_INSTRUCTIONAL.raster}
+                caption={EXTENSIONS_CHANGES_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
+
             <section
               className={cn(
                 SECTION_SCROLL_MARGIN,
@@ -270,6 +283,8 @@ export function ExtensionsChangesView() {
                 </div>
               </div>
             </section>
+
+            <TaxResidencyVsPermitOrientationCard samePageDetailAnchor={false} className={SECTION_SCROLL_MARGIN} />
 
             <MovePillarJourneyBridge
               id={meta.pillarJourneyBridge.id}

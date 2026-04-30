@@ -32,10 +32,16 @@ export const moveWorkingNlRoutes = {
   payslip: "/netherlands/work/tools/payslip-decoder/",
   salaryNet: "/netherlands/taxes/tools/dutch-salary-net-calculator/",
   ruling: "/netherlands/taxes/tools/30-ruling-calculator/",
+  thirtyPercentRulingGuide: "/netherlands/money/taxes/30-percent-ruling/",
   costOfLiving: "/netherlands/money/tools/cost-of-living-calculator/",
   rentAffordability: "/netherlands/housing/tools/rent-affordability-calculator/",
   healthcareAllowance: "/netherlands/taxes/tools/healthcare-allowance-estimator/",
   childcare: "/netherlands/family/tools/childcare-cost-estimator/",
+  howTaxesWorkInNl: "/netherlands/money/how-taxes-work-in-the-netherlands/",
+  taxGuideExpats: "/netherlands/money/tax-guide-for-expats/",
+  expatTaxesNl: "/netherlands/money/expat-taxes-netherlands/",
+  taxResidencyNl: "/netherlands/money/tax-residency-netherlands/",
+  taxReturnNl: "/netherlands/money/tax-return-netherlands/",
   first90Days: "/netherlands/moving/tools/first-90-days/",
   arrivalPlanner: "/netherlands/moving/tools/arrival-planner/",
   movingChecklist: "/netherlands/moving/tools/moving-checklist/",
@@ -54,12 +60,12 @@ const moveWorkingNlHero = {
   eyebrow: "Netherlands · Moving",
   pageTitle: "Working in the Netherlands",
   subtitle:
-    "A practical Move guide for people relocating to the Netherlands for work — so you can understand **the offer, the contract, the salary, the permit picture, and the first-month setup** before the move starts feeling expensive or unclear.",
+    "A practical Move guide for people relocating to the Netherlands for work — so you can understand the offer, the contract, the salary, the permit picture, and the first-month setup before the move starts feeling expensive or unclear.",
   contextChips: ["Offer", "Contract", "Salary", "Permit", "Payroll", "Housing"],
   bullets: [
-    "See what matters **before you accept**, **before you move**, and **after you arrive**",
-    "Understand how **salary, permits, payroll, housing, and admin** connect in real life",
-    "Know which details are worth clarifying with **HR, payroll, or official sources early**",
+    "See what matters before you accept, before you move, and after you arrive",
+    "Understand how salary, permits, payroll, housing, and admin connect in real life",
+    "Know which details are worth clarifying with HR, payroll, or official sources early",
     "Open the right next tools without turning this into a legal or tax deep dive",
   ],
   primaryCta: { label: "Start with the essentials", href: "#start-here" },
@@ -77,23 +83,23 @@ const moveWorkingNlAtAGlance = {
   cells: [
     {
       title: "What this page is for",
-      body: "**Practical orientation** for people moving to the Netherlands because of work, so you can spot the big decisions before you get lost in fine print.",
+      body: "Practical orientation for people moving to the Netherlands because of work, so you can spot the big decisions before you get lost in fine print.",
     },
     {
       title: "Best for",
-      body: "**Expats, professionals, employer-sponsored movers, and couples or families** comparing a Dutch role with the real-life move that comes with it.",
+      body: "Expats, professionals, employer-sponsored movers, and couples or families comparing a Dutch role with the real-life move that comes with it.",
     },
     {
       title: "What it covers",
-      body: "**Offers, contracts, salary, permits, payroll, tax setup, housing pressure, and post-arrival admin** — plus the next ExpatCopilot tools and guides to open.",
+      body: "Offers, contracts, salary, permits, payroll, tax setup, housing pressure, and post-arrival admin — plus the next ExpatCopilot tools and guides to open.",
     },
     {
       title: "What it skips",
-      body: "**Case-specific legal advice, full labour-law detail, and job-search listings.** This page helps you orient, not self-decide an official outcome.",
+      body: "Case-specific legal advice, full labour-law detail, and job-search listings. This page helps you orient, not self-decide an official outcome.",
     },
   ],
   note:
-    "**Moving for work is not only about the role.** Salary, sponsorship, payroll, admin, and living costs all interact. Use this page to get oriented fast, then confirm critical details with your employer, payroll, official sources, or a qualified adviser.",
+    "Moving for work is not only about the role. Salary, sponsorship, payroll, admin, and living costs all interact. Use this page to get oriented fast, then confirm critical details with your employer, payroll, official sources, or a qualified adviser.",
 } as const;
 
 export const moveWorkingNlTips: MoveWorkingNlTip[] = [
@@ -101,7 +107,7 @@ export const moveWorkingNlTips: MoveWorkingNlTip[] = [
     id: "reassurance",
     title: "Treat the job decision and the move decision as one package",
     intro:
-      "A role can look strong on paper while the **relocation picture still feels shaky**. The useful next step is usually not “read everything” — it is **clarify one missing piece**: the contract, the sponsor setup, the rent reality, or the first-weeks admin plan.",
+      "A role can look strong on paper while the relocation picture still feels shaky. The useful next step is usually not “read everything” — it is clarify one missing piece: the contract, the sponsor setup, the rent reality, or the first-weeks admin plan.",
     whatMattersNext: "Pick one pressure point and open the next page or tool for that specific question.",
     visualKey: "default",
   },
@@ -112,7 +118,7 @@ const moveWorkingNlPillarJourneyBridge = {
   eyebrow: "Inside the Move pillar",
   title: "How this page connects to the rest of ExpatCopilot",
   intro:
-    "**Visas & residency** helps you compare routes. **Residence permits** explains what residence means over time. **This page** sits on the work-led move path: what a job offer changes, what employers often support, and what becomes real after arrival. **Extensions & changes** and **Status changes** take over later when your situation shifts.",
+    "Visas & residency helps you compare routes. Residence permits explains what residence means over time. This page sits on the work-led move path: what a job offer changes, what employers often support, and what becomes real after arrival. Extensions & changes and Status changes take over later when your situation shifts.",
   links: [
   {
     href: ROUTES.hub,
@@ -157,6 +163,36 @@ const moveWorkingNlPillarJourneyBridge = {
       meta: "Money",
     },
     {
+      href: ROUTES.howTaxesWorkInNl,
+      label: "How taxes work in the Netherlands",
+      description: "Plain-English Dutch tax system map — payroll vs return, boxes, credits, and allowances — before expat-only guides.",
+      meta: "Money",
+    },
+    {
+      href: ROUTES.taxResidencyNl,
+      label: "Tax residency in the Netherlands",
+      description: "Tax vs permit labels, ties, and cross-border orientation — not a determination tool.",
+      meta: "Money",
+    },
+    {
+      href: ROUTES.taxReturnNl,
+      label: "Tax return in the Netherlands",
+      description: "What the annual return does, what to prepare, and how payroll withholding connects — not a filing portal.",
+      meta: "Money",
+    },
+    {
+      href: ROUTES.taxGuideExpats,
+      label: "Netherlands tax guide for expats",
+      description: "High-level map of payroll, returns, ruling, Box 3, and cross-border questions before you dive into tools.",
+      meta: "Money",
+    },
+    {
+      href: ROUTES.expatTaxesNl,
+      label: "Expat Taxes in the Netherlands",
+      description: "Scenario-led Money page for partial years, foreign assets, ruling, allowances, and double-tax prompts.",
+      meta: "Money",
+    },
+    {
       href: ROUTES.first90Days,
       label: "First 90 days planner",
       description: "Keep the first months practical once the job start date is real.",
@@ -170,7 +206,7 @@ const moveWorkingNlStartHereRegion = {
   eyebrow: "Start here",
   title: "If you are moving for work",
   subtitle:
-    "Use this page in **three moments**: before you accept, before you relocate, and after you arrive. That sequence is usually more useful than trying to solve everything at once.",
+    "Use this page in three moments: before you accept, before you relocate, and after you arrive. That sequence is usually more useful than trying to solve everything at once.",
 } as const;
 
 export const moveWorkingNlStartCards: MoveWorkingNlStartCard[] = [
@@ -179,14 +215,14 @@ export const moveWorkingNlStartCards: MoveWorkingNlStartCard[] = [
     iconKey: "offer",
     visualKey: "offer",
     title: "Before you accept the offer",
-    intro: "Treat the offer like a **move package** rather than a salary headline.",
+    intro: "Treat the offer like a move package rather than a salary headline.",
     bestFor: "Best for people comparing a real role, negotiation point, or shortlist.",
     keyPoints: [
-      "Check the **contract type**, probation, notice, and whether the role is fixed-term or open-ended",
-      "Clarify **sponsorship, relocation help, and what the employer actually handles**",
-      "Compare salary against **rent, city choice, commute, and setup cash**",
-      "Ask whether **30% ruling support** is likely, expected, or not in scope",
-      "Do not compare **gross salary alone** without benefits, pension, and move support",
+      "Check the contract type, probation, notice, and whether the role is fixed-term or open-ended",
+      "Clarify sponsorship, relocation help, and what the employer actually handles",
+      "Compare salary against rent, city choice, commute, and setup cash",
+      "Ask whether 30% ruling support is likely, expected, or not in scope",
+      "Do not compare gross salary alone without benefits, pension, and move support",
     ],
     whatMattersNext: "Open the offer, salary, and rent tools once the package starts feeling concrete.",
     internalLinks: [
@@ -199,14 +235,14 @@ export const moveWorkingNlStartCards: MoveWorkingNlStartCard[] = [
     iconKey: "relocate",
     visualKey: "relocate",
     title: "Before you relocate",
-    intro: "The move gets easier once **permit logic, housing, and admin timing** are connected early.",
+    intro: "The move gets easier once permit logic, housing, and admin timing are connected early.",
     bestFor: "Best for people with a start date, permit path, or relocation timeline already forming.",
     keyPoints: [
-      "Understand the **permit, residence, and employer admin path** before booking around assumptions",
-      "Plan **housing, deposits, furnishing, and buffer cash** for the first weeks",
-      "Know the basics of **payroll, health insurance, BSN, and bank setup** before day one",
-      "Gather the **documents, dates, and employer requests** that can block the move",
-      "Plan beyond the first workday: **registration and settling-in tasks** still matter",
+      "Understand the permit, residence, and employer admin path before booking around assumptions",
+      "Plan housing, deposits, furnishing, and buffer cash for the first weeks",
+      "Know the basics of payroll, health insurance, BSN, and bank setup before day one",
+      "Gather the documents, dates, and employer requests that can block the move",
+      "Plan beyond the first workday: registration and settling-in tasks still matter",
     ],
     whatMattersNext: "Use Move, permit, and arrival tools to turn the job start into an actual relocation plan.",
     internalLinks: [
@@ -219,14 +255,14 @@ export const moveWorkingNlStartCards: MoveWorkingNlStartCard[] = [
     iconKey: "arrival",
     visualKey: "arrival",
     title: "After you arrive",
-    intro: "The first weeks often feel like **admin plus adaptation**, not just starting a new role.",
+    intro: "The first weeks often feel like admin plus adaptation, not just starting a new role.",
     bestFor: "Best for people who have landed or are about to start work and need the first weeks sequenced.",
     keyPoints: [
-      "Sort **municipality registration, BSN, payroll, and bank details** quickly",
-      "Arrange **healthcare and insurance** on the right timeline for your situation",
-      "Understand your **payslip, deductions, and onboarding steps** once payroll starts",
-      "Settle **commute, utilities, and daily routine** so the role is sustainable",
-      "If relevant, coordinate **partner, childcare, or family admin** alongside your own setup",
+      "Sort municipality registration, BSN, payroll, and bank details quickly",
+      "Arrange healthcare and insurance on the right timeline for your situation",
+      "Understand your payslip, deductions, and onboarding steps once payroll starts",
+      "Settle commute, utilities, and daily routine so the role is sustainable",
+      "If relevant, coordinate partner, childcare, or family admin alongside your own setup",
     ],
     whatMattersNext: "Use the first-weeks tools to unblock payroll and make the role feel sustainable in real life.",
     internalLinks: [
@@ -242,12 +278,12 @@ export const moveWorkingNlSections: MoveWorkingNlSections = {
     eyebrow: "Main framing",
     title: "How working in the Netherlands fits into the move journey",
     subtitle:
-      "For many expats, **work is the trigger for the move**. But the real decision is usually bigger than the role itself: it also includes **permits, housing, payroll, health insurance, and the shape of daily life once you land**.",
+      "For many expats, work is the trigger for the move. But the real decision is usually bigger than the role itself: it also includes permits, housing, payroll, health insurance, and the shape of daily life once you land.",
     intro:
-      "A Dutch offer can reshape your route, your city shortlist, your budget, your family timing, and the order of your first-month admin. The useful frame is simple: **compare the move before you sign, prepare the setup before you fly, and stabilise life after you land**.",
+      "A Dutch offer can reshape your route, your city shortlist, your budget, your family timing, and the order of your first-month admin. The useful frame is simple: compare the move before you sign, prepare the setup before you fly, and stabilise life after you land.",
     firstFocus: {
       title: "What matters first",
-      body: "Do not start with legal detail. Start by asking: **Is this a good move package? What needs clarifying before I commit? What still has to be set up after arrival?**",
+      body: "Do not start with legal detail. Start by asking: Is this a good move package? What needs clarifying before I commit? What still has to be set up after arrival?",
       chips: ["Compare the role", "Pressure-test the budget", "Plan the first month"],
     },
     blocks: [
@@ -257,12 +293,12 @@ export const moveWorkingNlSections: MoveWorkingNlSections = {
         visualKey: "journey",
         title: "Check move fit, not only role fit",
         intro:
-          "Ask the practical version of the question: **does this still look good once rent, permits, payroll, and the first month are included**?",
+          "Ask the practical version of the question: does this still look good once rent, permits, payroll, and the first month are included?",
         bestFor: "Best when the offer looks attractive but the wider move still feels fuzzy.",
         keyPoints: [
           "Salary, city, rent, commute, and benefits can change the picture quickly",
           "Employer sponsorship or relocation help may matter more than it first appears",
-          "A strong local offer is not always a strong **first-move** offer",
+          "A strong local offer is not always a strong first-move offer",
         ],
         whatMattersNext: "Pressure-test the package before you let the role headline make the decision for you.",
       },
@@ -301,12 +337,12 @@ export const moveWorkingNlSections: MoveWorkingNlSections = {
     eyebrow: "Offers & contracts",
     title: "Job offers, contracts, and employer support",
     subtitle:
-      "A Dutch offer can differ in **much more than salary**. Contract structure, support level, hybrid expectations, and relocation help often decide whether the move feels smooth or fragile.",
+      "A Dutch offer can differ in much more than salary. Contract structure, support level, hybrid expectations, and relocation help often decide whether the move feels smooth or fragile.",
     intro:
-      "Newcomers often underestimate how much depends on what is or is not **spelled out clearly**. This section is not a contract-law guide; it is a short list of what is worth comparing before you commit.",
+      "Newcomers often underestimate how much depends on what is or is not spelled out clearly. This section is not a contract-law guide; it is a short list of what is worth comparing before you commit.",
     firstFocus: {
       title: "Compare these first",
-      body: "**Contract structure, employer support, and realistic after-tax affordability** usually matter before edge-case clause detail.",
+      body: "Contract structure, employer support, and realistic after-tax affordability usually matter before edge-case clause detail.",
       chips: ["Contract frame", "Employer support", "Real monthly budget"],
     },
     pairedToolsEyebrow: "Use these next when you are comparing an offer seriously",
@@ -391,12 +427,12 @@ export const moveWorkingNlSections: MoveWorkingNlSections = {
     eyebrow: "Salary, tax & cost of living",
     title: "Salary, tax, and cost-of-living reality",
     subtitle:
-      "**Gross salary** is only one part of the move picture. Net pay, rent, transport, pension, utilities, childcare, and city choice shape what the move actually feels like month to month.",
+      "Gross salary is only one part of the move picture. Net pay, rent, transport, pension, utilities, childcare, and city choice shape what the move actually feels like month to month.",
     intro:
       "A salary that feels solid in one city or household setup can feel tight in another. This is usually the point where one headline number stops being useful and a few simple calculators become much more useful.",
     firstFocus: {
       title: "Pressure-test these numbers first",
-      body: "Start with **net pay**, then test **rent**, **city choice**, and **household costs**. That usually gives a better answer than debating whether the gross looks “good.”",
+      body: "Start with net pay, then test rent, city choice, and household costs. That usually gives a better answer than debating whether the gross looks “good.”",
       chips: ["Net pay", "Rent pressure", "City choice"],
     },
     pairedToolsEyebrow: "Which tools to use next",
@@ -405,6 +441,11 @@ export const moveWorkingNlSections: MoveWorkingNlSections = {
         label: "Dutch salary net calculator",
         href: ROUTES.salaryNet,
         description: "Estimate take-home pay before you compare budgets.",
+      },
+      {
+        label: "30% ruling in the Netherlands (guide)",
+        href: ROUTES.thirtyPercentRulingGuide,
+        description: "What the facility means, employer involvement, and how to use calculators responsibly.",
       },
       {
         label: "30% ruling calculator",
@@ -474,12 +515,12 @@ export const moveWorkingNlSections: MoveWorkingNlSections = {
     eyebrow: "Permits & sponsorship",
     title: "Work permits, sponsorship, and residency context",
     subtitle:
-      "For many expats, **work, sponsorship, residence, and later admin are tightly linked**. It usually helps to keep them in one picture rather than treating the job and the immigration side as separate projects.",
+      "For many expats, work, sponsorship, residence, and later admin are tightly linked. It usually helps to keep them in one picture rather than treating the job and the immigration side as separate projects.",
     intro:
       "This section stays high-level on purpose. The goal is to understand where the dependencies sit, not to replace official eligibility guidance.",
     firstFocus: {
       title: "What matters first here",
-      body: "You usually do not need every rule. You do need to know **which route the employer expects, how much depends on the employer, and which later changes could affect your setup**.",
+      body: "You usually do not need every rule. You do need to know which route the employer expects, how much depends on the employer, and which later changes could affect your setup.",
       chips: ["Expected route", "Employer dependency", "Later changes"],
     },
     pairedToolsEyebrow: "Pages to open next",
@@ -557,12 +598,12 @@ export const moveWorkingNlSections: MoveWorkingNlSections = {
     eyebrow: "After arrival",
     title: "What changes after arrival: payroll, registration, healthcare, and daily setup",
     subtitle:
-      "Starting work in the Netherlands often triggers a **practical setup journey**: municipality registration, BSN, payroll, banking, insurance, housing, commuting, and routine admin.",
+      "Starting work in the Netherlands often triggers a practical setup journey: municipality registration, BSN, payroll, banking, insurance, housing, commuting, and routine admin.",
     intro:
-      "This is often the part newcomers underestimate. The role may be the reason you moved, but the first weeks are usually about **setting up the systems that make the role workable**.",
+      "This is often the part newcomers underestimate. The role may be the reason you moved, but the first weeks are usually about setting up the systems that make the role workable.",
     firstFocus: {
       title: "What changes first",
-      body: "Think in **first days**, **first weeks**, and **first months**. That usually makes the admin feel manageable instead of endless.",
+      body: "Think in first days, first weeks, and first months. That usually makes the admin feel manageable instead of endless.",
       chips: ["Unblock payroll", "Get insured", "Stabilise routine"],
     },
     blocks: [
@@ -691,7 +732,7 @@ const moveWorkingNlWhatNextRegion = {
   eyebrow: "How to use this page",
   title: "How to use this page and what to do next",
   subtitle:
-    "The goal is simple: understand whether **work is really your move route**, compare the offer beyond salary, then open the right pages and tools in the right order.",
+    "The goal is simple: understand whether work is really your move route, compare the offer beyond salary, then open the right pages and tools in the right order.",
 } as const;
 
 const moveWorkingNlProgressionSteps = [
@@ -737,14 +778,14 @@ const moveWorkingNlToolsRegion = {
   id: "helpful-tools",
   title: "Helpful tools & related guides",
   subtitle:
-    "Open the next layer that matches your stage: **Move** for route and arrival planning, **Work** for offers and contracts, **Money** for salary and tax, and **Living / Housing / Family** for the real-life setup around the role.",
+    "Open the next layer that matches your stage: Move for route and arrival planning, Work for offers and contracts, Money for salary and tax, and Living / Housing / Family for the real-life setup around the role.",
 } as const;
 
 const moveWorkingNlToolsJourneySnapshot = {
   eyebrow: "Product map",
   title: "Where this page sits in the work-led move journey",
   subtitle:
-    "**Move pages** help you orient the route and timing. **Work tools** help you compare the offer. **Money and housing tools** show whether life feels affordable. **Arrival and living guides** take over once you land.",
+    "Move pages help you orient the route and timing. Work tools help you compare the offer. Money and housing tools show whether life feels affordable. Arrival and living guides take over once you land.",
   steps: [
     {
       href: ROUTES.hub,
@@ -850,7 +891,7 @@ const moveWorkingNlExplorePillarCards = [
 
 export const moveWorkingNlRelatedTools: MoveWorkingNlRelatedTools = {
   journeyIntro:
-    "**This page is the orientation layer**, not the calculator layer. Once you know where the pressure points are — offer quality, sponsorship, salary realism, housing, or first-month admin — open the block that matches that question.",
+    "This page is the orientation layer, not the calculator layer. Once you know where the pressure points are — offer quality, sponsorship, salary realism, housing, or first-month admin — open the block that matches that question.",
   sections: [
     {
       eyebrow: "Move & residence",
@@ -965,10 +1006,28 @@ export const moveWorkingNlRelatedTools: MoveWorkingNlRelatedTools = {
           cta: "Open tool",
         },
         {
+          title: "30% ruling in the Netherlands",
+          description: "Editorial Money guide before you run calculator scenarios.",
+          href: ROUTES.thirtyPercentRulingGuide,
+          cta: "Open guide",
+        },
+        {
           title: "30% ruling calculator",
           description: "Check planning assumptions around the facility and employer support.",
           href: ROUTES.ruling,
           cta: "Open tool",
+        },
+        {
+          title: "How Taxes Work in the Netherlands",
+          description: "Foundation explainer for payroll, annual return, boxes, credits, and allowances — not expat-only.",
+          href: ROUTES.howTaxesWorkInNl,
+          cta: "Open guide",
+        },
+        {
+          title: "Tax residency in the Netherlands",
+          description: "Separate tax residency from permits and BSN when payroll and cross-border facts overlap.",
+          href: ROUTES.taxResidencyNl,
+          cta: "Open guide",
         },
         {
           title: "Cost of living calculator",
@@ -1165,35 +1224,35 @@ const moveWorkingNlDeepLinks = [
 export const moveWorkingNlFaq: PillarFaqItem[] = [
   {
     q: "What should I understand before moving to the Netherlands for work?",
-    a: "Start with the **whole move picture**, not only the role: the **contract**, **salary after tax**, **housing reality**, **permit or sponsorship context**, and the **first-month admin** that follows arrival. This page helps you get those threads straight before you open detailed tools.",
+    a: "Start with the whole move picture, not only the role: the contract, salary after tax, housing reality, permit or sponsorship context, and the first-month admin that follows arrival. This page helps you get those threads straight before you open detailed tools.",
   },
   {
     q: "Is a Dutch job offer only about salary?",
-    a: "No. Salary matters, but so do **contract type, probation, notice, pension, relocation help, sponsorship context, hybrid expectations, and city or commute impact**. For many expats, the move fit matters almost as much as the role fit.",
+    a: "No. Salary matters, but so do contract type, probation, notice, pension, relocation help, sponsorship context, hybrid expectations, and city or commute impact. For many expats, the move fit matters almost as much as the role fit.",
   },
   {
     q: "How important are permits and sponsorship?",
-    a: "For many international hires, they matter a lot. The job and residence side are often linked, especially before arrival. This page stays high-level, but it should help you spot when you need the **Visas & residency** or **Residence permits** guides next.",
+    a: "For many international hires, they matter a lot. The job and residence side are often linked, especially before arrival. This page stays high-level, but it should help you spot when you need the Visas & residency or Residence permits guides next.",
   },
   {
     q: "How do I compare a Dutch offer properly?",
-    a: "Look beyond headline gross. Compare **net pay, benefits, contract stability, relocation support, rent pressure, commute, and household context**. The **Job offer comparison tool** is the strongest next step when you have two real options on the table.",
+    a: "Look beyond headline gross. Compare net pay, benefits, contract stability, relocation support, rent pressure, commute, and household context. The Job offer comparison tool is the strongest next step when you have two real options on the table.",
   },
   {
     q: "What should I sort out after I arrive?",
-    a: "Usually **municipality registration, BSN, payroll setup, bank details, health insurance, and commute or housing basics**. If work starts quickly, those systems can become urgent fast, so planning the first weeks matters.",
+    a: "Usually municipality registration, BSN, payroll setup, bank details, health insurance, and commute or housing basics. If work starts quickly, those systems can become urgent fast, so planning the first weeks matters.",
   },
   {
     q: "How do salary, rent, and tax fit together?",
-    a: "The same gross salary can feel very different depending on **payroll deductions, pension, 30% ruling context, rent, city, commute, and household size**. That is why salary, cost-of-living, and rent tools work best together rather than one number on its own.",
+    a: "The same gross salary can feel very different depending on payroll deductions, pension, 30% ruling context, rent, city, commute, and household size. That is why salary, cost-of-living, and rent tools work best together rather than one number on its own.",
   },
   {
     q: "What if my job changes later?",
-    a: "Later job changes can affect not only work life but also your wider admin or residence picture. Start with **Changing jobs in the Netherlands** for a practical checklist across contracts, permits, and life setup, use **Resigning a job in the Netherlands** when you are planning to leave without a next role lined up yet, then use **Extensions & changes** for renewals and after-arrival shifts, and **Status changes** if the basis of your stay itself may be changing.",
+    a: "Later job changes can affect not only work life but also your wider admin or residence picture. Start with Changing jobs in the Netherlands for a practical checklist across contracts, permits, and life setup, use Resigning a job in the Netherlands when you are planning to leave without a next role lined up yet, then use Extensions & changes for renewals and after-arrival shifts, and Status changes if the basis of your stay itself may be changing.",
   },
   {
     q: "Is this page legal or tax advice?",
-    a: "No. It is a **practical orientation page** inside the Move pillar. Use it to understand the shape of the decision, then confirm anything binding with official guidance, your employer, payroll, or a qualified adviser.",
+    a: "No. It is a practical orientation page inside the Move pillar. Use it to understand the shape of the decision, then confirm anything binding with official guidance, your employer, payroll, or a qualified adviser.",
   },
 ];
 

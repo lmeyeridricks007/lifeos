@@ -364,7 +364,7 @@ export const livingDailyLifeSections: LivingDailyLifeSection[] = [
         { type: "text", text: ". For the social meaning behind quick pay-backs and clear payment expectations, read " },
         { type: "link", linkKey: "cultureEtiquette", label: "Dutch Culture & Etiquette" },
         { type: "text", text: ". For paying online through your bank (iDEAL) and local habits, see " },
-        { type: "link", linkKey: "paymentsBasics", label: "Payments basics" },
+        { type: "link", linkKey: "paymentsBasics", label: "How payments work (Money · Banking)" },
         { type: "text", text: "." },
       ],
       [

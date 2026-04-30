@@ -1,0 +1,29 @@
+{
+  "id": "nl-money-tax-guide-expats-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/tax-guide-for-expats/",
+    "slot": "mid-page-tax-orientation-support"
+  },
+  "variant": "cards",
+  "title": "Tax companies people compare after tax orientation",
+  "intro": "Tax-focused providers only — useful when you want scoped help with a Dutch return, M-form, 30% ruling question, self-employment, or cross-border income after reading the guide.",
+  "categoryOrder": ["tax"],
+  "items": [
+    {
+      "providerId": "blue-umbrella",
+      "reason": "Online Dutch tax filing and administration support for internationals."
+    },
+    {
+      "providerId": "broadstreet",
+      "reason": "Tax, accountancy, payroll, and cross-border support for expats and entrepreneurs."
+    },
+    {
+      "providerId": "taxsavers",
+      "reason": "Dutch tax return, M-form, 30% ruling, and VAT support for internationals."
+    }
+  ],
+  "disclosure": "These are tax-focused discovery listings, not endorsements or outcome guarantees. Links are currently non-affiliate unless marked otherwise. Always confirm scope, pricing, credentials, and terms with the provider directly."
+}

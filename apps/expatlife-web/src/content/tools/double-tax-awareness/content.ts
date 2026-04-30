@@ -84,6 +84,11 @@ export const DOUBLE_TAX_QUICK_LINKS = [
 ] as const;
 
 export const DOUBLE_TAX_RELATED_TOOLS = [
+  { href: `${NL_BASE}/money/how-taxes-work-in-the-netherlands/`, label: "How Taxes Work in the Netherlands (tax system foundation) →" },
+  { href: `${NL_BASE}/money/tax-residency-netherlands/`, label: "Tax residency in the Netherlands (orientation) →" },
+  { href: `${NL_BASE}/money/tax-guide-for-expats/`, label: "Netherlands Tax Guide for Expats (Money → Tax hub) →" },
+  { href: `${NL_BASE}/money/expat-taxes-netherlands/`, label: "Expat Taxes in the Netherlands (scenario guide) →" },
+  { href: `${NL_BASE}/money/taxes/tax-advisors/`, label: "Tax advisors for expats (when paid help fits) →" },
   { href: `${NL_BASE}/taxes/tools/30-ruling-calculator/`, label: "30% ruling calculator (eligibility planning) →" },
   { href: `${NL_BASE}/taxes/tools/dutch-salary-net-calculator/`, label: "Dutch salary net calculator (gross-to-net context) →" },
   { href: `${NL_BASE}/work/tools/payslip-decoder/`, label: "Payslip decoder (understand payroll lines) →" },
@@ -94,6 +99,31 @@ export const DOUBLE_TAX_RELATED_TOOLS = [
 ] as const;
 
 export const DOUBLE_TAX_RELATED_GUIDES = [
+  {
+    href: `${NL_BASE}/money/how-taxes-work-in-the-netherlands/`,
+    title: "How Taxes Work in the Netherlands",
+    description: "Plain-English map of payroll, returns, and boxes before you interpret cross-border flags.",
+  },
+  {
+    href: `${NL_BASE}/money/tax-residency-netherlands/`,
+    title: "Tax Residency in the Netherlands",
+    description: "Tax vs permit labels, ties, and when multi-country questions deserve extra care.",
+  },
+  {
+    href: `${NL_BASE}/money/tax-guide-for-expats/`,
+    title: "Netherlands Tax Guide for Expats",
+    description: "Orientation hub for payroll, returns, ruling, allowances, and cross-border tax — then use calculators for detail.",
+  },
+  {
+    href: `${NL_BASE}/money/expat-taxes-netherlands/`,
+    title: "Expat Taxes in the Netherlands",
+    description: "Scenario-led prompts for partial years, foreign assets, ruling, and when to escalate beyond tools.",
+  },
+  {
+    href: `${NL_BASE}/money/taxes/tax-advisors/`,
+    title: "Tax Advisors in the Netherlands for Expats",
+    description: "Editorial guide to when paid tax help is worth comparing — after tools and official reading, not instead of them.",
+  },
   { href: `${NL_BASE}/taxes/`, title: "Dutch taxes hub", description: "Residency, filing obligations, and expat tax fundamentals in one place." },
   {
     href: `${NL_BASE}/taxes/tools/30-ruling-calculator/`,

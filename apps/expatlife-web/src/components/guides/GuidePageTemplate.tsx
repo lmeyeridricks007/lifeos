@@ -75,6 +75,7 @@ import { resolvePreFaqPresetForGuide } from "@/src/lib/soft-cta/mapping";
 import { PresetSoftCTA } from "@/src/components/soft-cta/PresetSoftCTA";
 import type { MonetizationPageType } from "@/src/lib/monetization/pageTypePolicy";
 import { getMonetizationPolicy } from "@/src/lib/monetization/pageTypePolicy";
+import { InstructionalRasterFigure, type InstructionalRaster } from "@/src/components/money/InstructionalRasterFigure";
 
 /** Slugs that support "Download PDF" (checklist-style guides). */
 const CHECKLIST_PDF_SLUGS = ["moving-checklist-netherlands", "documents-needed-to-move-netherlands"] as const;
@@ -152,6 +153,8 @@ export type GuidePageTemplateProps = {
   contextualAffiliateAfterFirstSection?: ReactNode;
   /** Contextual `AffiliateSection` before related guides / end CTA (when policy allows). */
   contextualAffiliateBeforeNextSteps?: ReactNode;
+  /** Optional Move “Planning” cluster diagram above main JSON guide sections. */
+  planningInstructionalFigure?: { raster: InstructionalRaster; caption: string } | null;
 };
 
 /** Shared card-styled block for section services (Week 2, Week 3, etc.). Same layout and styling everywhere. */
@@ -1562,6 +1565,7 @@ export function GuidePageTemplate({
   monetizationPageType = "guide",
   contextualAffiliateAfterFirstSection,
   contextualAffiliateBeforeNextSteps,
+  planningInstructionalFigure,
 }: GuidePageTemplateProps) {
   const toolCtasDeduped = toolCtasDedupedAgainstFeatured(data.toolCtas, data.featuredTools);
   const contextualTools = buildContextualToolCards(data, toolCtasDeduped);
@@ -1723,6 +1727,14 @@ export function GuidePageTemplate({
                 <div className="mb-8 w-full lg:mb-10">
                   <MoveGuideSignatureDark model={moveSignature} />
                 </div>
+              ) : null}
+
+              {planningInstructionalFigure ? (
+                <InstructionalRasterFigure
+                  raster={planningInstructionalFigure.raster}
+                  caption={planningInstructionalFigure.caption}
+                  className="mb-8 w-full lg:mb-10"
+                />
               ) : null}
 
               <article className="w-full max-w-full">

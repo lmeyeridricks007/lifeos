@@ -32,12 +32,12 @@ const hero = {
   eyebrow: "Netherlands · Moving",
   pageTitle: "Resigning a Job in the Netherlands",
   subtitle:
-    "**One decision, several clocks**: notice and contract on one side; **stay, payroll, rent, and coverage** on the other. This guide helps you **sequence** what to read and who to ask — **before** you fix a last day.",
+    "One decision, several clocks: notice and contract on one side; stay, payroll, rent, and coverage on the other. This guide helps you sequence what to read and who to ask — before you fix a last day.",
   contextChips: ["Notice", "Contract", "Stay", "Payroll", "Rent", "Coverage", "Timing"],
   bullets: [
-    "See **four layers** (work, stay, money, life) so nothing important stays invisible",
-    "Know **what to verify before notice** vs **before your last day** vs **before access ends**",
-    "Use **real routes** (Move guides + calculators) — not legal advice, but a sane order of operations",
+    "See four layers (work, stay, money, life) so nothing important stays invisible",
+    "Know what to verify before notice vs before your last day vs before access ends",
+    "Use real routes (Move guides + calculators) — not legal advice, but a sane order of operations",
   ],
   primaryCta: { label: "Three checkpoints", href: "#start-here" },
   secondaryCta: { label: "What resignation can affect", href: "#what-resignation-affects" },
@@ -46,27 +46,27 @@ const hero = {
 const atAGlance = {
   sectionTitle: "At a glance",
   subtitle:
-    "Orientation for anyone weighing resignation in NL — especially when **stay, landlord proofs, or household costs** still lean on this job.",
+    "Orientation for anyone weighing resignation in NL — especially when stay, landlord proofs, or household costs still lean on this job.",
   cells: [
     {
       title: "What this page is for",
-      body: "A **checklist-shaped** walkthrough: **read contract → flag stay if needed → stress-test money → line up life admin** — in an order that avoids nasty surprises.",
+      body: "A checklist-shaped walkthrough: read contract → flag stay if needed → stress-test money → line up life admin — in an order that avoids nasty surprises.",
     },
     {
       title: "Best for",
-      body: "People where **permits, sponsor letters, rent math, insurance, or family files** might move when employment does — including **no next job yet**.",
+      body: "People where permits, sponsor letters, rent math, insurance, or family files might move when employment does — including no next job yet.",
     },
     {
       title: "What it covers",
-      body: "**Notice & clauses**, **status questions** (high level), **pay and benefits through the exit**, and **housing / health / family** handoffs — with links to tools and Move guides.",
+      body: "Notice & clauses, status questions (high level), pay and benefits through the exit, and housing / health / family handoffs — with links to tools and Move guides.",
     },
     {
       title: "What it skips",
-      body: "**Binding legal, tax, or immigration outcomes**. Confirm with **employer, IND, Belastingdienst**, or a qualified adviser when stakes are high.",
+      body: "Binding legal, tax, or immigration outcomes. Confirm with employer, IND, Belastingdienst, or a qualified adviser when stakes are high.",
     },
   ],
   note:
-    "You do **not** need every answer tonight. You **do** need to know **which clock** you are racing — contract, stay, cash, or coverage — so you can open **one** right page or tool next.",
+    "You do not need every answer tonight. You do need to know which clock you are racing — contract, stay, cash, or coverage — so you can open one right page or tool next.",
 } as const;
 
 const pillarJourneyBridge = {
@@ -74,7 +74,7 @@ const pillarJourneyBridge = {
   eyebrow: "Inside the Move pillar",
   title: "How this page connects to the rest of ExpatCopilot",
   intro:
-    "**Working in NL** = the work-led move story. **Changing jobs** = exit **and** a signed next step. **This page** = you are leaving (or planning to) **before** the next chapter is clear. When stay or monthly life might shift, pair these Move guides with **Work**, **Money**, and **Housing** tools — **one cluster at a time**.",
+    "Working in NL = the work-led move story. Changing jobs = exit and a signed next step. This page = you are leaving (or planning to) before the next chapter is clear. When stay or monthly life might shift, pair these Move guides with Work, Money, and Housing tools — one cluster at a time.",
   links: [
     {
       href: ROUTES.hub,
@@ -149,7 +149,7 @@ const whatNextRegion = {
   eyebrow: "How to use this page",
   title: "What to do next",
   subtitle:
-    "**Scan** what could move → **read your contract** → if stay might be job-tied, **ask early** → **model one lean month** → pick **one** tool or guide for this week. The list below is a **menu**, not a single-day sprint.",
+    "Scan what could move → read your contract → if stay might be job-tied, ask early → model one lean month → pick one tool or guide for this week. The list below is a menu, not a single-day sprint.",
 } as const;
 
 const progressionSteps = [

@@ -60,7 +60,7 @@ const pillarJourneyBridge: MoveResidencePermitsPageMeta["pillarJourneyBridge"] =
   eyebrow: "Inside the Move pillar",
   title: "How this page connects to the rest of ExpatCopilot",
   intro:
-    "**Visas & residency** helps you **choose a path**. **This page** explains **how permits work, what comes next in time, and what to do after approval**. The **Moving hub** is the full guide. Below are the tools and pages people use most once dates and pay feel real.",
+    "Visas & residency helps you choose a path. This page explains how permits work, what comes next in time, and what to do after approval. The Moving hub is the full guide. Below are the tools and pages people use most once dates and pay feel real.",
   links: [
     {
       href: RESIDENCE_PERMITS_HUB,
@@ -187,11 +187,11 @@ export const moveResidencePermitsPageMeta: MoveResidencePermitsPageMeta = {
     eyebrow: "Netherlands · Moving",
     pageTitle: "Residence Permits in the Netherlands",
     subtitle:
-      "How Dutch residence permits tie to **why you’re here**, **what can change later**, and **what to sort after approval**—in plain language, not legal jargon.",
+      "How Dutch residence permits tie to why you’re here, what can change later, and what to sort after approval—in plain language, not legal jargon.",
     bullets: [
-      "See how **your situation** (work, study, family, freelance) shapes what applies",
-      "Notice **renewal and big life changes** before they’re urgent",
-      "Know **which page or tool** to open at each step",
+      "See how your situation (work, study, family, freelance) shapes what applies",
+      "Notice renewal and big life changes before they’re urgent",
+      "Know which page or tool to open at each step",
     ],
     primaryCta: { label: "Start with the basics", href: "#permit-basics" },
     secondaryCta: { label: "See the common permit situations", href: "#common-situations" },
@@ -206,22 +206,22 @@ export const moveResidencePermitsPageMeta: MoveResidencePermitsPageMeta = {
     cells: [
       {
         title: "What this page is for",
-        body: "**A clear overview**: how permits, timing, and daily setup fit together—we’re not the immigration service (IND).",
+        body: "A clear overview: how permits, timing, and daily setup fit together—we’re not the immigration service (IND).",
       },
       {
         title: "Best for",
-        body: "**Anyone** who wants the permit picture clear enough to plan—workers, students, families, freelancers, or people already in NL.",
+        body: "Anyone who wants the permit picture clear enough to plan—workers, students, families, freelancers, or people already in NL.",
       },
       {
         title: "What it covers",
-        body: "Typical situations, **work vs other paths**, **renewals**, **after approval**, and **links** to our tools.",
+        body: "Typical situations, work vs other paths, renewals, after approval, and links to our tools.",
       },
       {
         title: "What it skips",
-        body: "**Final yes/no decisions** and **step-by-step forms**—that’s **IND** or an adviser.",
+        body: "Final yes/no decisions and step-by-step forms—that’s IND or an adviser.",
       },
     ],
-    note: "**Your details decide what applies.** Use this page to get oriented; use **official sources** to confirm anything that affects your stay.",
+    note: "Your details decide what applies. Use this page to get oriented; use official sources to confirm anything that affects your stay.",
   },
   commonSituationsRegion: {
     id: "common-situations",
@@ -426,7 +426,7 @@ export const moveResidencePermitsPageMeta: MoveResidencePermitsPageMeta = {
     id: "helpful-tools",
     title: "Helpful tools & related guides",
     subtitle:
-      "Same order as Visas & residency: **Move** first, then **work & money**, **housing**, **living**—open the block that fits your week.",
+      "Same order as Visas & residency: Move first, then work & money, housing, living—open the block that fits your week.",
   },
   misunderstandingsRegion: {
     eyebrow: "Reality check",

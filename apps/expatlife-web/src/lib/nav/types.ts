@@ -37,6 +37,11 @@ export type NavSection = {
    * repeating “Soon” on every roadmap row.
    */
   roadmapNote?: string;
+  /**
+   * When true, `comingSoon` rows render before live links in this section (default is live first).
+   * Use for editorial order e.g. a roadmap row above city links.
+   */
+  comingSoonFirst?: boolean;
 };
 
 export type MegaMenu = {

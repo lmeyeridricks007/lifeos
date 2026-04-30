@@ -121,7 +121,17 @@ export const EMPLOYMENT_TYPE_RELATED_GUIDES = [
     description: "Pillar overview: income tax, payroll, allowances, and where specialist guides sit.",
   },
   {
-    href: `${NL_BASE}/taxes/expat-taxes-netherlands/`,
+    href: `${NL_BASE}/money/how-taxes-work-in-the-netherlands/`,
+    title: "How Taxes Work in the Netherlands",
+    description: "Foundation explainer for payroll, annual return, and tax boxes — useful before employment-type edge cases.",
+  },
+  {
+    href: `${NL_BASE}/money/tax-residency-netherlands/`,
+    title: "Tax residency in the Netherlands",
+    description: "Tax vs permit labels and cross-border ties when employment type and location diverge.",
+  },
+  {
+    href: `${NL_BASE}/money/expat-taxes-netherlands/`,
     title: "Expat taxes in the Netherlands",
     description: "Residency, worldwide income, and when cross-border filing gets non-trivial.",
   },
@@ -141,7 +151,7 @@ export const EMPLOYMENT_TYPE_RELATED_GUIDES = [
     description: "Directional context for ZZP tax proxies — not a substitute for an advisor.",
   },
   {
-    href: `${NL_BASE}/taxes/30-percent-ruling/`,
+    href: `${NL_BASE}/money/taxes/30-percent-ruling/`,
     title: "30% ruling guide",
     description: "Eligibility themes to align with the dedicated 30% ruling calculator.",
   },

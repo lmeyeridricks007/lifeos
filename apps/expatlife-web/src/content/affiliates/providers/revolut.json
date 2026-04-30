@@ -1,0 +1,25 @@
+{
+  "id": "revolut",
+  "name": "Revolut",
+  "tagline": "App-first spending and multi-currency controls",
+  "categoryIds": ["banking"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["International"],
+  "highlights": [
+    "Often used for travel, FX, and budgeting alongside a Dutch account",
+    "Confirm salary, rent, and direct-debit fit for your contracts"
+  ],
+  "cta": {
+    "label": "Explore on Revolut",
+    "href": "https://www.revolut.com/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/revolut.svg",
+    "alt": "Revolut logo"
+  }
+}

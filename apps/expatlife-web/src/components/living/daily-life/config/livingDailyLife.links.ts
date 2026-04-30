@@ -13,7 +13,7 @@ export const LIVING_DAILY_LIFE_INTERNAL_LINKS: Record<LivingDailyLifeLinkKey, st
   essentialApps: LIVING_ESSENTIAL_APPS_PATH,
   shoppingGroceries: LIVING_SHOPPING_GROCERIES_PATH,
   gettingAround: LIVING_GETTING_AROUND_PATH,
-  paymentsBasics: "/netherlands/living/payments/",
+  paymentsBasics: "/netherlands/money/banking/how-payments-work/",
   wasteRecycling: "/netherlands/living/waste-and-recycling/",
   costOfLiving: "/netherlands/money/tools/cost-of-living-calculator/",
   utilities: "/netherlands/living/tools/utilities-services-comparison/",

@@ -48,6 +48,8 @@ import {
 } from "@/src/components/moving/movePillarCardPrimitives";
 import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc";
 import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
+import { getWorkPermitsJobChangesInstructionalFigure } from "@/src/components/moving/work-permits-job-changes-cluster/workPermitsJobChangesInstructionalRasterAssets";
 import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
 import type {
   MoveWorkingNlGridSection,
@@ -74,6 +76,7 @@ const INFO_CHIP =
   "inline-flex rounded-full border border-copilot-primary/15 bg-copilot-bg-soft/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-copilot-primary";
 
 const meta = resigningJobNlPageMeta;
+const WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL = getWorkPermitsJobChangesInstructionalFigure("resigning-job-netherlands");
 const CANONICAL = meta.canonicalPath;
 const PAGE_HERO_SUBTITLE = meta.hero.subtitle;
 const HUB = meta.movePillarHubPath;
@@ -320,6 +323,14 @@ export function ResigningJobNetherlandsView() {
           <PillarJourneyStack variant="guide" density="compact" className="gap-2 sm:gap-3 md:gap-4">
             <MovePillarMobileToc items={meta.sectionNav} />
 
+            {WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL.raster}
+                caption={WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
+
             <section
               className={cn(
                 SECTION_SCROLL_MARGIN,
@@ -344,7 +355,7 @@ export function ResigningJobNetherlandsView() {
                   />
                   {reassurance.bestFor ? (
                     <BoldParagraph
-                      text={`**Best for:** ${reassurance.bestFor}`}
+                      text={`Best for: ${reassurance.bestFor}`}
                       className="mt-2 text-xs leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
                     />
                   ) : null}
@@ -383,7 +394,7 @@ export function ResigningJobNetherlandsView() {
                           />
                           {tip.bestFor ? (
                             <BoldParagraph
-                              text={`**Best for:** ${tip.bestFor}`}
+                              text={`Best for: ${tip.bestFor}`}
                               className="mt-2 text-[12px] leading-snug text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
                             />
                           ) : null}
@@ -657,7 +668,7 @@ function JourneySectionFour({ section }: { section: MoveWorkingNlJourneySection 
             />
             {stage.bestFor ? (
               <BoldParagraph
-                text={`**Best for:** ${stage.bestFor}`}
+                text={`Best for: ${stage.bestFor}`}
                 className="mt-2 text-[11px] leading-snug text-foreground-muted sm:text-xs [&_strong]:font-semibold [&_strong]:text-foreground"
               />
             ) : null}
@@ -730,7 +741,7 @@ function CardGridSection({
             />
             {card.bestFor ? (
               <BoldParagraph
-                text={`**Best for:** ${card.bestFor}`}
+                text={`Best for: ${card.bestFor}`}
                 className="mt-2 text-[11px] leading-snug text-foreground-muted sm:text-xs [&_strong]:font-semibold [&_strong]:text-foreground"
               />
             ) : null}
@@ -831,7 +842,7 @@ function PracticalLifeSection({ region }: { region: ChangingJobsNlPracticalLifeS
             ) : null}
             {card.bestFor ? (
               <BoldParagraph
-                text={`**Best for:** ${card.bestFor}`}
+                text={`Best for: ${card.bestFor}`}
                 className="mt-2 text-[11px] leading-snug text-foreground-muted sm:text-xs [&_strong]:font-semibold [&_strong]:text-foreground"
               />
             ) : null}
@@ -894,7 +905,7 @@ function SectionBlockMisunderstandings() {
               <BoldParagraph text={row.body} className="text-sm leading-relaxed sm:text-[0.9375rem] sm:leading-relaxed" />
               {row.bestFor ? (
                 <BoldParagraph
-                  text={`**Best for:** ${row.bestFor}`}
+                  text={`Best for: ${row.bestFor}`}
                   className="text-[12px] leading-snug text-slate-600 [&_strong]:font-semibold [&_strong]:text-slate-800"
                 />
               ) : null}

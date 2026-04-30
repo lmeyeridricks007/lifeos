@@ -9,6 +9,7 @@ import { ChildcareOfficialSources } from "@/src/components/tools/childcare/Child
 import { ChildcareRecommendedServices } from "@/src/components/tools/childcare/ChildcareRecommendedServices";
 import { ChildcareRightRail } from "@/src/components/tools/childcare/ChildcareRightRail";
 import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
+import { TaxClusterToolsSection } from "@/src/components/money/tax-cluster/TaxClusterToolsSection";
 import { CHILDCARE_FAQ_ITEMS } from "@/src/content/tools/childcare/childcareFaq";
 import { AffiliateBlockView } from "@/src/components/affiliates/AffiliateBlockView";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
@@ -86,6 +87,21 @@ export const metadata: Metadata = {
 };
 
 const RELATED_NEXT_STEPS = [
+  {
+    href: `${BASE}/money/how-taxes-work-in-the-netherlands/`,
+    title: "How Taxes Work in the Netherlands",
+    description: "Plain-English map of allowances vs tax return mechanics alongside salary and payroll.",
+  },
+  {
+    href: `${BASE}/money/tax-guide-for-expats/`,
+    title: "Netherlands Tax Guide for Expats",
+    description: "Tax and household cash-flow context — this tool focuses on childcare cost methodology.",
+  },
+  {
+    href: `${BASE}/money/expat-taxes-netherlands/`,
+    title: "Expat Taxes in the Netherlands",
+    description: "Family, allowances, and partial-year prompts alongside broader tax orientation.",
+  },
   {
     href: `${BASE}/living/survival-guide/`,
     title: "Netherlands Survival Guide",
@@ -272,7 +288,12 @@ export default function ChildcareCostEstimatorPage() {
         relatedGuidesSectionId="related-guides"
         relatedGuides={relatedGuidesResolved}
         faqItems={FAQ_ITEMS}
-        postToolValue={<MoveClusterToolPostValueBlock preset="movingChecklistAndRelocationCost" />}
+        postToolValue={
+          <>
+            <TaxClusterToolsSection current="childcare" showGuideLink className="mb-8" />
+            <MoveClusterToolPostValueBlock preset="movingChecklistAndRelocationCost" />
+          </>
+        }
         internalLinkStrip={
           <nav className="flex flex-wrap gap-x-4 gap-y-2 text-sm" aria-label="Hubs and related tools">
             <Link href={`${BASE}/family/tools/`} className="font-medium text-brand-600 hover:text-brand-700">

@@ -1,0 +1,20 @@
+{
+  "id": "nl-money-banking-types-business",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/types-of-accounts/",
+    "slot": "recommended-providers-business-types"
+  },
+  "variant": "cards",
+  "title": "Business / ZZP entry points",
+  "intro": "Neutral links toward business banking lanes — compare transaction bundles, bookkeeping exports, and fees on each bank’s business tariff, not the personal homepage.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    { "providerId": "ing", "reason": "ING business pages describe self-employed and company products separately from retail — start from the business price list." },
+    { "providerId": "abn-amro", "reason": "ABN AMRO publishes SME / ZZP account options — confirm KvK requirements and included transactions." },
+    { "providerId": "bunq", "reason": "bunq markets business tiers alongside personal plans — check whether your activity fits their business terms." }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm scope, pricing, and terms with the provider directly."
+}

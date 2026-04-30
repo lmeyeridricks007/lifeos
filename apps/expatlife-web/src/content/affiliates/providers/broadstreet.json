@@ -1,0 +1,26 @@
+{
+  "id": "broadstreet",
+  "name": "BROADSTREET",
+  "tagline": "Tax, accountancy, payroll, and cross-border support for internationals and entrepreneurs.",
+  "categoryIds": ["tax"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Tax support", "Cross-border"],
+  "highlights": [
+    "Expat income tax return support",
+    "30% ruling and payroll-related tax topics",
+    "Cross-border and entrepreneur tax support"
+  ],
+  "cta": {
+    "label": "View BROADSTREET",
+    "href": "https://broadstreet.nl/taxes-netherlands/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Confirm scope, pricing, and terms directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "BROADSTREET"
+  }
+}

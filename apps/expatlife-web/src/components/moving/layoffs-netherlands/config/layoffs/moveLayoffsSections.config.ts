@@ -362,9 +362,9 @@ export const moveLayoffsSections = {
     eyebrow: "Dutch employment context",
     title: "Employee rights & what to verify (overview)",
     subtitle:
-      "High-level orientation for internationals — not legal advice. Rules depend on contract, CAO, company size, and timing; confirm facts with HR, your union, **UWV**, or a qualified employment lawyer.",
+      "High-level orientation for internationals — not legal advice. Rules depend on contract, CAO, company size, and timing; confirm facts with HR, your union, UWV, or a qualified employment lawyer.",
     intro:
-      "The Netherlands has strong worker protections on paper, but your file is unique. Use this block to know what topics exist — then chase **written** answers from the right party.",
+      "The Netherlands has strong worker protections on paper, but your file is unique. Use this block to know what topics exist — then chase written answers from the right party.",
     firstFocus: {
       title: "What “rights” usually means here",
       body: "Notice periods, consultation in larger restructures, transition pay where it applies, and clear paperwork — not vibes in a Teams call. If something sounds off, note it and verify in writing.",
@@ -376,9 +376,9 @@ export const moveLayoffsSections = {
         chip: "Contract & notice",
         title: "Notice, contract type, and how the role can end",
         intro:
-          "Fixed term vs indefinite, probation, and collective agreements (**CAO**) can change what “fair” looks like. Your contract + any CAO beat a generic blog post.",
+          "Fixed term vs indefinite, probation, and collective agreements (CAO) can change what “fair” looks like. Your contract + any CAO beat a generic blog post.",
         whatMattersNext:
-          "Ask HR which CAO or handbook rules apply and for the **termination letter or agreement in writing** once terms exist.",
+          "Ask HR which CAO or handbook rules apply and for the termination letter or agreement in writing once terms exist.",
         keyPoints: [
           "Individual dismissal vs collective redundancy — different consultation paths",
           "Garden leave / pay in lieu — only counts if agreed or stated clearly",
@@ -389,15 +389,15 @@ export const moveLayoffsSections = {
       {
         id: "nl-consultation-uwv",
         chip: "Process",
-        title: "Works council, OR, and when **UWV** appears",
+        title: "Works council, OR, and when UWV appears",
         intro:
-          "Larger layoffs can trigger works council (**OR**) steps or timelines you do not see in a one-to-one exit. Smaller exits may be simpler — do not assume your case matches someone else’s headline.",
+          "Larger layoffs can trigger works council (OR) steps or timelines you do not see in a one-to-one exit. Smaller exits may be simpler — do not assume your case matches someone else’s headline.",
         whatMattersNext:
           "If many roles are at risk, ask whether a collective process is running and where official letters will land.",
         keyPoints: [
-          "Works council (**OR**) — can delay or shape restructures; not every company has the same rhythm",
-          "Dismissal permit (**ontslagvergunning**) — employer-side step in some routes; you still want your own copy of outcomes",
-          "**UWV** — benefits and re-employment support; separate from IND stay questions",
+          "Works council (OR) — can delay or shape restructures; not every company has the same rhythm",
+          "Dismissal permit (ontslagvergunning) — employer-side step in some routes; you still want your own copy of outcomes",
+          "UWV — benefits and re-employment support; separate from IND stay questions",
           "Keep a dated log of what you were told vs what arrived in writing",
         ],
       },
@@ -411,8 +411,8 @@ export const moveLayoffsSections = {
           "If you sign anything with money attached, pause until you understand every line — including Dutch-only PDFs.",
         keyPoints: [
           "Company confidential helpline or second HR opinion — sometimes available in bigger firms",
-          "Legal aid (**rechtsbijstand**) or employment lawyers — shop for someone who handles internationals",
-          "Union (**vakbond**) — if you are a member, they often know CAO + sector patterns",
+          "Legal aid (rechtsbijstand) or employment lawyers — shop for someone who handles internationals",
+          "Union (vakbond) — if you are a member, they often know CAO + sector patterns",
           "IND / tax — separate lane; do not mix stay questions into severance negotiation without a plan",
         ],
         internalLinks: [
@@ -436,7 +436,7 @@ export const moveLayoffsSections = {
     subtitle:
       "Employer schemes feel “free” until the last day. Map what was pretax, what was insured through work, and what needs a personal replacement.",
     intro:
-      "Pension, travel, meal, and gym perks usually have a last accrual or eligibility date. Ask payroll for a **single summary** when they can — screenshots from apps are a backup, not the source of truth.",
+      "Pension, travel, meal, and gym perks usually have a last accrual or eligibility date. Ask payroll for a single summary when they can — screenshots from apps are a backup, not the source of truth.",
     firstFocus: {
       title: "Stack what was employer-led",
       body: "Health collective, pension, bike plan, WFH allowance — mark “ends with last payslip” vs “ends with contract date” vs “you must port yourself.”",
@@ -462,7 +462,7 @@ export const moveLayoffsSections = {
         chip: "Insurance & perks",
         title: "Collective health, disability, and “soft” benefits",
         intro:
-          "Collective **zorg** via employer may end on a fixed date; you must pick basic Dutch insurance yourself to avoid a gap. Disability (**WIA**) top-ups through work also need a handover.",
+          "Collective zorg via employer may end on a fixed date; you must pick basic Dutch insurance yourself to avoid a gap. Disability (WIA) top-ups through work also need a handover.",
         whatMattersNext:
           "Book a basic insurance start date that touches your employer scheme end date — even if you feel healthy.",
         keyPoints: [
@@ -482,7 +482,7 @@ export const moveLayoffsSections = {
         intro:
           "The facility is payroll-administered. A job end can change eligibility or proof needs for your next role — forums are not your tax file.",
         whatMattersNext:
-          "Ask payroll in writing whether the ruling is still active, until when, and what they send to **Belastingdienst**.",
+          "Ask payroll in writing whether the ruling is still active, until when, and what they send to Belastingdienst.",
         keyPoints: [
           "Ruling end date vs last payslip — not always the same story",
           "Minimum salary thresholds for new roles — revisit when comparing offers",
@@ -497,7 +497,7 @@ export const moveLayoffsSections = {
     pairedToolsEyebrow: "Money & benefits tools",
     pairedTools: [
       { label: "Payslip decoder", href: ROUTES.payslip, description: "Decode components before access ends." },
-      { label: "Healthcare allowance estimator", href: ROUTES.healthcareAllowance, description: "Rough **toeslag** context if income drops." },
+      { label: "Healthcare allowance estimator", href: ROUTES.healthcareAllowance, description: "Rough toeslag context if income drops." },
       { label: "Money tools hub", href: ROUTES.moneyTools, description: "Salary + household money stack." },
     ],
   },
@@ -527,7 +527,7 @@ export const moveLayoffsSections = {
         keyPoints: [
           "Income checks — age of payslips; some want Dutch employment only",
           "Joint contracts — partner income may help or complicate",
-          "Registration (**BRP**) — mismatches slow other services",
+          "Registration (BRP) — mismatches slow other services",
         ],
         internalLinks: [
           { label: "Rent affordability calculator", href: ROUTES.rentAffordability, description: "Stress-test housing vs income." },
@@ -559,7 +559,7 @@ export const moveLayoffsSections = {
         intro:
           "Second homes, partner abroad, or RSUs in another country do not vanish because your Dutch job ends. You still want a boring, defensible story.",
         whatMattersNext:
-          "Use **Belastingdienst** / your payroll contact for filing obligations — not this page.",
+          "Use Belastingdienst / your payroll contact for filing obligations — not this page.",
         keyPoints: [
           "30% ruling interactions with foreign assets — specialist territory",
           "Social security coordination — A1 / certificates — only when relevant",
@@ -637,7 +637,7 @@ export const moveLayoffsSections = {
         keyPoints: [
           "Employer mobility / HRBP — owner for work letters",
           "IND logged correspondence — for stay questions",
-          "**Belastingdienst** / payroll — for income and ruling questions",
+          "Belastingdienst / payroll — for income and ruling questions",
           "Immigration lawyer — when routes conflict or timelines are tight",
         ],
         internalLinks: [

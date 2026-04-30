@@ -1,0 +1,62 @@
+import type { MoneyTaxBasicsJourneyConfig } from "./moneyTaxBasics.types";
+
+export const moneyTaxBasicsJourneySteps = {
+  id: "tax-journey",
+  eyebrow: "Flow",
+  title: "The tax journey: from salary to final assessment",
+  intro: "A linear story most employees recognise — each step can surface new questions.",
+  keyPoints: [] as const,
+  cautionNote: "Steps simplify reality — your employer, letters, and year can change the order of questions you actually face.",
+  relatedToolKeys: [] as const,
+  officialSourceKeys: ["bd_income_tax_individuals", "bd_filing_return"] as const,
+  steps: [
+    {
+      number: 1,
+      title: "Job offer / income source",
+      intro: "You agree gross terms — that headline is not the same as take-home after withholding and premiums.",
+      keyPoints: [] as const,
+      relatedToolKeys: ["jobOffer", "salaryNet"] as const,
+      officialSourceKeys: [] as const,
+    },
+    {
+      number: 2,
+      title: "Payroll setup",
+      intro: "Employer and payroll configure withholding tables, premiums, and sometimes 30% ruling treatment — details vary by employer.",
+      keyPoints: [] as const,
+      relatedToolKeys: ["ruling", "employmentType"] as const,
+      officialSourceKeys: ["bd_payroll_taxes", "bd_30_percent_facility"] as const,
+    },
+    {
+      number: 3,
+      title: "Monthly payslip",
+      intro: "Each month you see loonheffing, social premiums, pension, and net pay — the practical teacher of Dutch tax for employees.",
+      keyPoints: [] as const,
+      relatedToolKeys: ["payslip"] as const,
+      officialSourceKeys: ["bd_payroll_taxes"] as const,
+    },
+    {
+      number: 4,
+      title: "Tax year",
+      intro: "Income tax is usually framed as a calendar-year story — what happened from January through December.",
+      keyPoints: [] as const,
+      relatedToolKeys: ["taxesHub"] as const,
+      officialSourceKeys: ["bd_income_tax_individuals"] as const,
+    },
+    {
+      number: 5,
+      title: "Annual tax return",
+      intro: "You may file to reconcile withholding with credits, deductions, partner facts, and assets — filing rules depend on your year and situation.",
+      keyPoints: [] as const,
+      relatedToolKeys: ["taxGuideForExpats", "expatTaxesGuide"] as const,
+      officialSourceKeys: ["bd_filing_return", "bd_international_en"] as const,
+    },
+    {
+      number: 6,
+      title: "Final assessment / refund / payment",
+      intro: "Belastingdienst issues a decision — that outcome is what matters for cash and records, not a mid-year payslip snapshot alone.",
+      keyPoints: [] as const,
+      relatedToolKeys: ["taxesHub"] as const,
+      officialSourceKeys: ["bd_filing_return"] as const,
+    },
+  ],
+} as const satisfies MoneyTaxBasicsJourneyConfig;

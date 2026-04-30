@@ -14,7 +14,7 @@ export const moveLayoffsTips = {
     "You can describe in one short sentence what could change for you if the role ends — not only the job title.",
     "You know what your employer has confirmed in writing and what is still open.",
     "You have one simple next step for this week (a question to HR, one PDF saved, or one calculator opened).",
-    "You use this site for orientation — not instead of your employer, **IND** (immigration service), or **Belastingdienst** (tax office).",
+    "You use this site for orientation — not instead of your employer, IND (immigration service), or Belastingdienst (tax office).",
     "You accept that only urgent items need answers in the first days; the rest can wait until facts are clear.",
   ],
   practicalCallouts: [

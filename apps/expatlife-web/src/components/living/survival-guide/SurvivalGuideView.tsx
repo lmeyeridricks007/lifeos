@@ -42,6 +42,8 @@ import {
 } from "@/lib/ui/site-shell-identity";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { cn } from "@/lib/cn";
+import { getLivingStartHereInstructionalFigure } from "@/src/components/living/living-start-here-cluster/livingStartHereInstructionalRasterAssets";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 import { LivingComingNextSection } from "./LivingComingNextSection";
 import { LivingContinuePillarGrid } from "./LivingContinuePillarGrid";
 import { LivingQuickStartCards } from "./LivingQuickStartCards";
@@ -57,6 +59,8 @@ const DATE_MODIFIED = "2026-04-08";
 
 /** Hash targets clear the sticky header (primary nav + safe-area). */
 const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
+
+const LIVING_START_HERE_INSTRUCTIONAL = getLivingStartHereInstructionalFigure("survival-guide");
 
 const FAQ_SCHEMA = SURVIVAL_GUIDE_FAQ_ITEMS.map((item) => ({
   q: item.question,
@@ -79,9 +83,9 @@ function EssentialsOverview() {
     },
     {
       title: "Payments",
-      body: "Contactless tills, Maestro-shaped habits, and where iDEAL sneaks in early.",
-      href: "/netherlands/living/payments/",
-      cta: "See payment norms",
+      body: "IBAN, iDEAL, SEPA, direct debits, and contactless habits — Money · Banking guide; Living hub still lists wider money links.",
+      href: "/netherlands/money/banking/how-payments-work/",
+      cta: "How payments work",
     },
     {
       title: "Shopping & groceries",
@@ -531,6 +535,15 @@ export function SurvivalGuideView() {
         keySections={
           <PillarJourneyStack variant="guide">
             <LivingSurvivalMobileToc items={LIVING_SURVIVAL_SECTION_NAV} />
+
+            {LIVING_START_HERE_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={LIVING_START_HERE_INSTRUCTIONAL.raster}
+                caption={LIVING_START_HERE_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
+
             <SectionBlock
               id="quick-start"
               className={cn(SECTION_SCROLL_MARGIN, "!pt-4 sm:!pt-5 md:!pt-6")}

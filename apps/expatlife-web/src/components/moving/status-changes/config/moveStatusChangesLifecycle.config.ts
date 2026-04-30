@@ -5,16 +5,16 @@ const timingRegion = {
   eyebrow: "Timing & continuity",
   title: "Timing, continuity, and what can be affected",
   subtitle:
-    "This is the practical core of the page: status changes usually become stressful when people notice them **late**, not only when the rules are difficult.",
+    "This is the practical core of the page: status changes usually become stressful when people notice them late, not only when the rules are difficult.",
   cards: [
     {
       id: "continuity",
       title: "Why continuity matters",
       intro:
-        "A status question is often really a **continuity question**: can your legal basis, work setup, and everyday systems keep moving without a messy gap?",
+        "A status question is often really a continuity question: can your legal basis, work setup, and everyday systems keep moving without a messy gap?",
       visualKey: "continuity",
       keyPoints: [
-        "Think in terms of **hand-off**, not just one deadline.",
+        "Think in terms of hand-off, not just one deadline.",
         "Look for dependencies between residence, income, insurance, and address setup.",
         "The smoother transition is usually the one planned before it feels urgent.",
       ],
@@ -62,7 +62,7 @@ const lifeImpactRegion = {
   eyebrow: "Practical life impact",
   title: "Work, housing, healthcare, registration, and admin",
   subtitle:
-    "Status changes are not only immigration questions. They can quickly become **work, rent, insurance, BSN, tax, and family-admin** questions as well.",
+    "Status changes are not only immigration questions. They can quickly become work, rent, insurance, BSN, tax, and family-admin questions as well.",
   cards: [
     {
       id: "affected-quickly",
@@ -71,8 +71,8 @@ const lifeImpactRegion = {
         "Work and payroll, landlord confidence, health insurance continuity, gemeente tasks, banking, childcare, and routine admin can all react faster than people expect.",
       visualKey: "lifeImpact",
       keyPoints: [
-        "A job shift can change **income planning** and **rent timing**.",
-        "A family shift can change **registration**, **childcare**, and **school** decisions.",
+        "A job shift can change income planning and rent timing.",
+        "A family shift can change registration, childcare, and school decisions.",
         "A change in legal basis can send you back to check several systems, not just one permit page.",
       ],
       links: [

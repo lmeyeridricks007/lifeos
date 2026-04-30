@@ -1,0 +1,26 @@
+{
+  "id": "taxsavers",
+  "name": "TaxSavers",
+  "tagline": "Dutch tax return, M-form, 30% ruling, and VAT support for internationals.",
+  "categoryIds": ["tax"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Tax support", "M-form"],
+  "highlights": [
+    "Income tax return and M-form filing",
+    "30% ruling support",
+    "VAT and self-employed tax support"
+  ],
+  "cta": {
+    "label": "View TaxSavers",
+    "href": "https://taxsavers.nl/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Confirm scope, pricing, and terms directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "TaxSavers"
+  }
+}

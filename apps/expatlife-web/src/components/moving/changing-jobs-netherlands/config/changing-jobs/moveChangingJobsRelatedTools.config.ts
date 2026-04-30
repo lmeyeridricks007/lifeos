@@ -4,7 +4,7 @@ import { moveChangingJobsNlRoutes as ROUTES, workingInNl } from "./moveChangingJ
 /** Primary related-tools grid (grouped sections + journey intro). */
 export const moveChangingJobsRelatedTools: MoveWorkingNlRelatedTools = {
   journeyIntro:
-    "**Move** = route, permits, planners. **Work** = offers and contracts. **Money / Housing / Living** = monthly reality. This page is **Move**-hosted but **hands off** like **Working in NL** and **Extensions** — choose **one** block for this week’s bottleneck.",
+    "Move = route, permits, planners. Work = offers and contracts. Money / Housing / Living = monthly reality. This page is Move-hosted but hands off like Working in NL and Extensions — choose one block for this week’s bottleneck.",
   sections: [
     {
       eyebrow: "Move & residence",
@@ -74,14 +74,14 @@ export const moveChangingJobsToolsRegion = {
   id: "helpful-tools",
   title: "Helpful tools & related guides",
   subtitle:
-    "**Move** context when stay or dates tangle; **Work** for offers and contracts; **Money & Housing** for net pay and rent; **Living** for health and routine. **One cluster per visit** — then return with employer answers or new figures.",
+    "Move context when stay or dates tangle; Work for offers and contracts; Money & Housing for net pay and rent; Living for health and routine. One cluster per visit — then return with employer answers or new figures.",
 } as const;
 
 export const moveChangingJobsToolsJourneySnapshot = {
   eyebrow: "Product map",
   title: "A sensible sequence after this page",
   subtitle:
-    "**Package → net pay → rent/household → planners** when dates slip. Reopen **permits / extensions / status** whenever the switch might touch **how** you stay — not only who pays you.",
+    "Package → net pay → rent/household → planners when dates slip. Reopen permits / extensions / status whenever the switch might touch how you stay — not only who pays you.",
   steps: [
     { href: ROUTES.jobOffer, label: "Job offer comparison", description: "When two packages or trade-offs are real.", meta: "Work" },
     { href: ROUTES.contractScanner, label: "Contract risk scanner", description: "When clause language needs a structured read.", meta: "Work" },

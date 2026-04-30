@@ -9,7 +9,7 @@ export const moveLayoffsPageFrame = {
     eyebrow: "Netherlands · Moving",
     pageTitle: "Layoffs in the Netherlands",
     subtitle:
-      "If your job in the Netherlands might end, this guide walks through what often changes: your contract, your right to stay when it depends on work, money and benefits, and everyday admin (home, health, family). Ask for **important facts in writing**, and take one step at a time.",
+      "If your job in the Netherlands might end, this guide walks through what often changes: your contract, your right to stay when it depends on work, money and benefits, and everyday admin (home, health, family). Ask for important facts in writing, and take one step at a time.",
     contextChips: ["Job at risk", "Contract", "Stay", "Pay", "Rent", "Family"],
     bullets: [
       "Four topics — the job ending, whether stay depends on work, money in and out, and life admin (home, health, schools)",
@@ -39,7 +39,7 @@ export const moveLayoffsPageFrame = {
       },
       {
         title: "What it skips",
-        body: "Legal advice and case law. Use this to know what to check, then confirm with your employer, **IND**, **Belastingdienst**, or a qualified adviser.",
+        body: "Legal advice and case law. Use this to know what to check, then confirm with your employer, IND, Belastingdienst, or a qualified adviser.",
       },
     ],
     note:

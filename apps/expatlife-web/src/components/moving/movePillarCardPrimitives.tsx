@@ -35,7 +35,7 @@ export function MovePillarLifecycleCard({
 }) {
   return (
     <div className={cn(MOVE_PILLAR_LIFECYCLE_CARD_CLASS, "relative overflow-hidden", className)}>
-      <div className={cn("absolute inset-x-0 top-0 h-0.5 opacity-90", movingNlSignatureGradientClass)} aria-hidden />
+      <div className={cn("absolute inset-x-0 top-0 h-1 rounded-t-xl opacity-90", movingNlSignatureGradientClass)} aria-hidden />
       <div className="relative min-w-0">{children}</div>
     </div>
   );

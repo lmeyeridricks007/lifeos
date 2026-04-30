@@ -1,0 +1,25 @@
+{
+  "id": "n26",
+  "name": "N26",
+  "tagline": "Mobile euro account familiar to EU movers",
+  "categoryIds": ["banking"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Digital"],
+  "highlights": [
+    "Simple app UX for everyday euro use where the product fits",
+    "Verify current NL product scope, protections, and fees on N26’s site"
+  ],
+  "cta": {
+    "label": "Explore on N26",
+    "href": "https://n26.com/en-eu",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "",
+    "alt": "N26"
+  }
+}

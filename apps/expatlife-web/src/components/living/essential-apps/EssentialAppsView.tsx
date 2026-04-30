@@ -39,6 +39,8 @@ import {
 } from "@/lib/ui/site-shell-identity";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { cn } from "@/lib/cn";
+import { getLivingStartHereInstructionalFigure } from "@/src/components/living/living-start-here-cluster/livingStartHereInstructionalRasterAssets";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 import { LivingSectionNav } from "@/src/components/living/survival-guide/LivingSectionNav";
 import { LivingSurvivalMobileToc } from "@/src/components/living/survival-guide/LivingSurvivalMobileToc";
 import { LivingQuickStartCards } from "@/src/components/living/survival-guide/LivingQuickStartCards";
@@ -78,6 +80,8 @@ const CATEGORY_A11Y_LABEL: Record<LivingAppCardResolved["category"], string> = {
 };
 
 const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
+
+const LIVING_START_HERE_INSTRUCTIONAL = getLivingStartHereInstructionalFigure("essential-apps");
 
 const FAQ_SCHEMA = livingAppsFaq.map((item) => ({
   q: item.question,
@@ -717,6 +721,14 @@ export function EssentialAppsView() {
         keySections={
           <PillarJourneyStack variant="guide" density="compact">
             <LivingSurvivalMobileToc items={livingAppsSectionNav} />
+
+            {LIVING_START_HERE_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={LIVING_START_HERE_INSTRUCTIONAL.raster}
+                caption={LIVING_START_HERE_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
 
             <SectionBlock
               id="at-a-glance"

@@ -5,7 +5,7 @@ export const moveResigningJobReferences = {
   sectionId: "official-sources",
   sectionTitle: "Official sources / useful references",
   disclaimer:
-    "Requirements and interpretations change. Use these to **verify** what applies to you — especially for **employment, stay, tax, and benefits** after this orientation page.",
+    "Requirements and interpretations change. Use these to verify what applies to you — especially for employment, stay, tax, and benefits after this orientation page.",
   groups: [
     {
       id: "work-residence",

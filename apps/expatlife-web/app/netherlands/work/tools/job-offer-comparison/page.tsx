@@ -5,6 +5,7 @@ import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { JobOfferComparisonClient } from "@/src/components/tools/job-offer-comparison/JobOfferComparisonClient";
 import { JobOfferComparisonOfficialSources } from "@/src/components/tools/job-offer-comparison/JobOfferComparisonOfficialSources";
 import { JobOfferComparisonRightRail } from "@/src/components/tools/job-offer-comparison/JobOfferComparisonRightRail";
+import { TaxClusterToolsSection } from "@/src/components/money/tax-cluster/TaxClusterToolsSection";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getSiteOrigin } from "@/lib/site-origin";
 import {
@@ -197,6 +198,7 @@ export default function JobOfferComparisonToolPage() {
         sidebar={<JobOfferComparisonRightRail />}
         primarySectionTitle="Job offer comparison tool"
         primarySectionContent={<JobOfferComparisonClient calculatorCanonicalUrl={shareUrl} pageContext={pageContext} />}
+        postToolValue={<TaxClusterToolsSection showGuideLink />}
         mainSectionTitle="Compare Dutch job offers"
         examplesCollapsibleDefaultOpen
         examplesSection={
@@ -321,11 +323,19 @@ export default function JobOfferComparisonToolPage() {
               <Link href={`${NL_BASE}/moving-to-the-netherlands/`} className="font-semibold text-brand-600 hover:underline">
                 moving to the Netherlands
               </Link>
-              , and{" "}
-              <Link href={`${NL_BASE}/taxes/expat-taxes-netherlands/`} className="font-semibold text-brand-600 hover:underline">
-                expat taxes in the Netherlands
-              </Link>{" "}
-              — so the page works as a destination, not only an embed.
+              , the{" "}
+              <Link href={`${NL_BASE}/money/how-taxes-work-in-the-netherlands/`} className="font-semibold text-brand-600 hover:underline">
+                How Taxes Work in the Netherlands
+              </Link>
+              {" "}(general Dutch tax foundation),{" "}
+              <Link href={`${NL_BASE}/money/tax-guide-for-expats/`} className="font-semibold text-brand-600 hover:underline">
+                Netherlands Tax Guide for Expats
+              </Link>
+              {" "}(broad expat tax map), and{" "}
+              <Link href={`${NL_BASE}/money/expat-taxes-netherlands/`} className="font-semibold text-brand-600 hover:underline">
+                Expat Taxes in the Netherlands
+              </Link>
+              {" "}(scenario-led expat follow-up) — so the page works as a destination, not only an embed.
             </p>
 
             <section className="space-y-3">

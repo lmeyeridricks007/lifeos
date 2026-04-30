@@ -19,6 +19,22 @@
       "category": "arrival-admin"
     },
     {
+      "slug": "bsn-registration",
+      "path": "/netherlands/bsn-registration/",
+      "title": "BSN Registration in the Netherlands",
+      "description": "How expats receive a BSN (citizen service number) when registering with a Dutch municipality, typical documents, and what to arrange next.",
+      "priority": 1,
+      "category": "arrival-admin"
+    },
+    {
+      "slug": "register-address-netherlands",
+      "path": "/netherlands/register-address-netherlands/",
+      "title": "Registering Your Address in the Netherlands",
+      "description": "How expats register their address with a Dutch municipality (gemeente), typical documents, temporary housing notes, and what usually happens next.",
+      "priority": 1,
+      "category": "arrival-admin"
+    },
+    {
       "slug": "open-bank-account-netherlands",
       "path": "/netherlands/open-bank-account-netherlands/",
       "title": "Open a Bank Account in the Netherlands",

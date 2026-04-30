@@ -46,6 +46,13 @@
       "menuGroup": "money",
       "additionalToolIds": ["job-offer-comparison-tool", "payslip-decoder", "netherlands-city-comparison-tool"],
       "relatedGuides": [
+        "/netherlands/money/how-taxes-work-in-the-netherlands/",
+        "/netherlands/money/tax-return-netherlands/",
+        "/netherlands/money/tax-residency-netherlands/",
+        "/netherlands/money/tax-guide-for-expats/",
+        "/netherlands/money/expat-taxes-netherlands/",
+        "/netherlands/money/taxes/30-percent-ruling/",
+        "/netherlands/money/taxes/tax-advisors/",
         "/netherlands/money/",
         "/netherlands/money/taxes/"
       ]
@@ -58,8 +65,14 @@
       "menuGroup": "money",
       "additionalToolIds": ["job-offer-comparison-tool", "payslip-decoder", "netherlands-city-comparison-tool"],
       "relatedGuides": [
+        "/netherlands/money/how-taxes-work-in-the-netherlands/",
+        "/netherlands/money/tax-return-netherlands/",
+        "/netherlands/money/tax-residency-netherlands/",
+        "/netherlands/money/tax-guide-for-expats/",
+        "/netherlands/money/taxes/30-percent-ruling/",
+        "/netherlands/money/taxes/tax-advisors/",
         "/netherlands/taxes/",
-        "/netherlands/taxes/expat-taxes-netherlands/"
+        "/netherlands/money/expat-taxes-netherlands/"
       ]
     },
     {

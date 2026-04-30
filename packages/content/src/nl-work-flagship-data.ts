@@ -135,7 +135,7 @@ export const nlWorkFlagshipContent: NlFlagshipPillarContent = {
       ],
       links: [
         { href: "/netherlands/services/banks/", label: "Banks directory" },
-        { href: "/netherlands/taxes/30-percent-ruling/", label: "30% ruling" },
+        { href: "/netherlands/money/taxes/30-percent-ruling/", label: "30% ruling" },
       ],
     },
   ],

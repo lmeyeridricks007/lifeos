@@ -46,6 +46,8 @@ import { movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identi
 import { isRouteLive } from "@/src/lib/routes/routeStatus";
 import { PresetSoftCTA } from "@/src/components/soft-cta/PresetSoftCTA";
 import { CityHubMonetizationAfterContent } from "@/src/components/monetization/CityHubMonetizationAfterContent";
+import { getCityHubInstructionalRaster } from "./cityHubInstructionalRasterAssets";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 
 /**
  * City guide variant of the moving-pillar `GuidePageTemplate`: same ExpatOS shells, spacing rhythm,
@@ -61,7 +63,12 @@ const linkCtaClass =
 
 const BEST_CITIES_DECISION_GUIDE_BLOCK: CityRelatedGuideBlock = {
   title: "Choosing between cities",
-  links: [{ label: "Best cities in the Netherlands for expats", href: "/netherlands/cities/best-cities-for-expats/" }],
+  links: [
+    { label: "Best cities in the Netherlands for expats", href: "/netherlands/cities/best-cities-for-expats/" },
+    { label: "Best Dutch cities for international professionals", href: "/netherlands/cities/best-cities-for-international-professionals/" },
+    { label: "Best Dutch cities for families", href: "/netherlands/cities/best-cities-for-families/" },
+    { label: "Cheapest cities for expats (affordability guide)", href: "/netherlands/cities/cheapest-cities-for-expats/" },
+  ],
 };
 
 export type CityHubTemplateProps = {
@@ -113,6 +120,7 @@ function getRegistrationSectionId(tocItems: { id: string }[]): string {
 }
 
 export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
+  const cityInstructionalRaster = getCityHubInstructionalRaster(data.slug);
   const hub = withCityHubRegistryCards(data);
   const bankingServices = hub.banking.services?.length
     ? hub.banking.services
@@ -212,6 +220,13 @@ export function CityHubTemplate({ data, allServices }: CityHubTemplateProps) {
                 className="scroll-mt-24 !pt-2 sm:!pt-3"
               >
                 <OverviewIntro data={data} />
+                {cityInstructionalRaster ? (
+                  <InstructionalRasterFigure
+                    raster={cityInstructionalRaster}
+                    caption={`Editorial snapshot for ${data.name} — use quick facts and official links on this page for decisions.`}
+                    className="mt-5 sm:mt-6"
+                  />
+                ) : null}
               </SectionBlock>
 
               {data.cityComparison ? (

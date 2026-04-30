@@ -6,6 +6,7 @@ import { SELF_EMPLOYED_VISA } from "@/src/content/visas/self-employed-visa";
 import { selfEmployedToGuideData } from "@/src/lib/visas/visaToGuideData";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -55,6 +56,7 @@ export default function SelfEmployedVisaPage() {
         data={serializableData}
         affiliateBlocks={{}}
         canonicalUrl={canonicalUrl}
+        planningInstructionalFigure={getVisasResidencyInstructionalFigure(SELF_EMPLOYED_VISA.slug)}
       />
     </>
   );

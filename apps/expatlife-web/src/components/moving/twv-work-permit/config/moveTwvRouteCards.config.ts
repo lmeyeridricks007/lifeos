@@ -9,12 +9,12 @@ export const moveTwvRouteCards: MoveTwvRouteCard[] = [
     iconKey: "authorization",
     visualKey: "twv",
     title: "TWV is about work authorization in a specific setup",
-    intro: "TWV usually matters on the **employment authorization side** of a Dutch work situation, not as a generic label for every residence route.",
+    intro: "TWV usually matters on the employment authorization side of a Dutch work situation, not as a generic label for every residence route.",
     whoItAppliesTo: "People hearing “work permit” and trying to work out which Dutch structure that actually means.",
     keyPoints: [
-      "TWV shows up in **specific non-EU employment situations**, not automatically in every non-EU case",
+      "TWV shows up in specific non-EU employment situations, not automatically in every non-EU case",
       "The phrase “work permit” can hide very different Dutch route structures",
-      "Ask whether the setup is really **TWV, GVVA, permit wording, or free work**",
+      "Ask whether the setup is really TWV, GVVA, permit wording, or free work",
       "The route matters because timing, employer action, and later changes can all differ",
     ],
     whatMattersNext: "Name the route first, then worry about paperwork.",
@@ -27,9 +27,9 @@ export const moveTwvRouteCards: MoveTwvRouteCard[] = [
     intro: "In TWV-relevant situations, the employer side is often what makes the route practical, delayed, or uncertain.",
     whoItAppliesTo: "People already speaking with an employer, HR team, or recruiter.",
     keyPoints: [
-      "Employer readiness can affect **timing, certainty, and relocation planning**",
+      "Employer readiness can affect timing, certainty, and relocation planning",
       "“HR will handle it” is usually not enough detail on its own",
-      "It is worth clarifying **who owns which step**, and what cannot happen until authorization is clear",
+      "It is worth clarifying who owns which step, and what cannot happen until authorization is clear",
       "A vague employer answer can still leave the move timeline fragile",
     ],
     whatMattersNext: "Ask early what depends on the employer and what is still unconfirmed.",
@@ -39,11 +39,11 @@ export const moveTwvRouteCards: MoveTwvRouteCard[] = [
     iconKey: "route",
     visualKey: "route",
     title: "TWV is only one part of the wider work/residence picture",
-    intro: "Even when TWV is relevant, it still sits inside a bigger decision about **work, residence, contract timing, salary, and the move itself**.",
+    intro: "Even when TWV is relevant, it still sits inside a bigger decision about work, residence, contract timing, salary, and the move itself.",
     whoItAppliesTo: "People who want to keep permit context connected to the actual relocation decision.",
     keyPoints: [
-      "TWV questions often sit next to **contract timing, start date, housing, and relocation certainty**",
-      "Some work routes are handled differently through **GVVA, permit wording, or free labor market rights**",
+      "TWV questions often sit next to contract timing, start date, housing, and relocation certainty",
+      "Some work routes are handled differently through GVVA, permit wording, or free labor market rights",
       "A useful next step is usually a sibling Move page or tool, not more permit jargon",
       "The goal is route clarity first, not bureaucracy overload",
     ],
@@ -57,12 +57,12 @@ export const moveTwvComparisonSections: MoveTwvComparisonSections = {
     eyebrow: "Route comparison",
     title: "TWV vs GVVA vs residence-permit-only situations",
     subtitle:
-      "Dutch work authorization is **not one single route**. Some situations use a TWV, some use a combined route like GVVA, and some depend on permit wording that already allows work or says TWV is not required.",
+      "Dutch work authorization is not one single route. Some situations use a TWV, some use a combined route like GVVA, and some depend on permit wording that already allows work or says TWV is not required.",
     intro:
-      "Stay high-level here on purpose. The useful question is not “which acronym have I heard before?” but **which structure roughly matches my situation, and what do I need to verify next**.",
+      "Stay high-level here on purpose. The useful question is not “which acronym have I heard before?” but which structure roughly matches my situation, and what do I need to verify next.",
     firstFocus: {
       title: "Compare structure before procedure",
-      body: "Start by asking **what kind of work/residence setup this is**, who usually acts first, and what wording or route category actually decides the answer.",
+      body: "Start by asking what kind of work/residence setup this is, who usually acts first, and what wording or route category actually decides the answer.",
       chips: ["TWV", "GVVA", "Permit wording", "Free work"],
     },
     pairedToolsEyebrow: "Open these next when the route is still unclear",
@@ -89,10 +89,10 @@ export const moveTwvComparisonSections: MoveTwvComparisonSections = {
         chip: "TWV",
         visualKey: "twv",
         title: "TWV route",
-        intro: "A TWV is a **work-authorization route detail** that can matter in specific employer-driven employment situations.",
+        intro: "A TWV is a work-authorization route detail that can matter in specific employer-driven employment situations.",
         whoItAppliesTo: "Look deeper if employed work may still need separate work authorization.",
         keyPoints: [
-          "Think of TWV as a **work authorization route detail**, not a universal residence answer",
+          "Think of TWV as a work authorization route detail, not a universal residence answer",
           "Employer action often matters heavily",
           "It can appear where salaried work rights are not simply “free” by default",
         ],
@@ -107,7 +107,7 @@ export const moveTwvComparisonSections: MoveTwvComparisonSections = {
         chip: "GVVA",
         visualKey: "gvva",
         title: "GVVA / combined route",
-        intro: "Some situations are handled through a **combined work-and-residence route** instead of treating work authorization separately.",
+        intro: "Some situations are handled through a combined work-and-residence route instead of treating work authorization separately.",
         whoItAppliesTo: "Look deeper if your case seems to combine residence and work approval in one route.",
         keyPoints: [
           "This is not the same setup as a stand-alone TWV conversation",
@@ -163,12 +163,12 @@ export const moveTwvComparisonSections: MoveTwvComparisonSections = {
     eyebrow: "When TWV matters",
     title: "When a TWV commonly matters",
     subtitle:
-      "TWV usually becomes relevant in **specific employer-driven non-EU employment situations**. The category matters more than a simple “I’m non-EU” assumption.",
+      "TWV usually becomes relevant in specific employer-driven non-EU employment situations. The category matters more than a simple “I’m non-EU” assumption.",
     intro:
       "Stay practical here: the goal is not to classify your case conclusively, but to help you recognise when TWV questions are realistic enough that you should clarify them early.",
     firstFocus: {
       title: "Look for category, not only nationality",
-      body: "A better question than “am I non-EU?” is **what type of work situation this is, what residence basis exists, and whether employed work still depends on employer-led authorization**.",
+      body: "A better question than “am I non-EU?” is what type of work situation this is, what residence basis exists, and whether employed work still depends on employer-led authorization.",
       chips: ["Employer-driven", "Student work", "Specific categories", "Temporary setups"],
     },
     pairedToolsEyebrow: "Useful next pages when TWV might matter",
@@ -269,12 +269,12 @@ export const moveTwvComparisonSections: MoveTwvComparisonSections = {
     eyebrow: "When TWV often does not apply",
     title: "When a TWV often does not apply or the setup is different",
     subtitle:
-      "TWV is easy to over-assume. Many people are actually dealing with **free movement, permit wording that already allows work, GVVA, or a self-employed structure that should not be treated like standard salaried employment**.",
+      "TWV is easy to over-assume. Many people are actually dealing with free movement, permit wording that already allows work, GVVA, or a self-employed structure that should not be treated like standard salaried employment.",
     intro:
-      "A good outcome of this section is simple: **I probably should not default to TWV language here.** That alone can save a lot of confusion in employer and adviser conversations.",
+      "A good outcome of this section is simple: I probably should not default to TWV language here. That alone can save a lot of confusion in employer and adviser conversations.",
     firstFocus: {
       title: "Check rights, not assumptions",
-      body: "The fastest reality check is usually **free movement, permit wording, or route structure**. Those tell you more than the phrase “work permit” on its own.",
+      body: "The fastest reality check is usually free movement, permit wording, or route structure. Those tell you more than the phrase “work permit” on its own.",
       chips: ["Free movement", "Permit says work is free", "GVVA", "Self-employed"],
     },
     pairedToolsEyebrow: "Open these next when TWV may not be the right frame",
@@ -372,12 +372,12 @@ export const moveTwvComparisonSections: MoveTwvComparisonSections = {
     eyebrow: "Employer & employee roles",
     title: "Employer role, employee role, and what to clarify early",
     subtitle:
-      "In TWV situations, **employer understanding, timing, and ownership** often matter as much as the worker’s documents. Employees still need to understand the impact on certainty, contract timing, and relocation planning.",
+      "In TWV situations, employer understanding, timing, and ownership often matter as much as the worker’s documents. Employees still need to understand the impact on certainty, contract timing, and relocation planning.",
     intro:
       "This is often where confusion becomes expensive. A vague answer like “it should be fine” can still leave the move timeline fragile if nobody is clear on route, timing, or ownership.",
     firstFocus: {
       title: "Clarify ownership early",
-      body: "The most useful early questions are usually **who owns what, what is already confirmed, what depends on timing, and which parts of the relocation should wait until certainty improves**.",
+      body: "The most useful early questions are usually who owns what, what is already confirmed, what depends on timing, and which parts of the relocation should wait until certainty improves.",
       chips: ["Employer owns", "Employee should ask", "Contract timing", "Relocation timing"],
     },
     pairedToolsEyebrow: "Use these next when employer action is central",
@@ -483,12 +483,12 @@ export const moveTwvComparisonSections: MoveTwvComparisonSections = {
     eyebrow: "Timing & changes",
     title: "Timing, renewal, and changes in work situation",
     subtitle:
-      "Work authorization timing matters **before it feels urgent**. Changes in job, employer, or work conditions can matter later too, especially once you are already in the Netherlands.",
+      "Work authorization timing matters before it feels urgent. Changes in job, employer, or work conditions can matter later too, especially once you are already in the Netherlands.",
     intro:
-      "A calmer way to think about this is simple: what matters **before work starts**, what matters **if the work situation changes later**, and what matters **if continuity starts feeling tight**.",
+      "A calmer way to think about this is simple: what matters before work starts, what matters if the work situation changes later, and what matters if continuity starts feeling tight.",
     firstFocus: {
       title: "Watch continuity, not only approval",
-      body: "A useful question is not only “can this start?” but also **what happens if dates slip, the role changes, or the work basis shifts later**.",
+      body: "A useful question is not only “can this start?” but also what happens if dates slip, the role changes, or the work basis shifts later.",
       chips: ["Before starting", "If work changes", "If timing gets tight"],
     },
     blocks: [

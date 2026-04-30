@@ -70,6 +70,21 @@ export const metadata: Metadata = {
 
 const RELATED_NEXT_STEPS = [
   {
+    href: `${BASE}/money/how-taxes-work-in-the-netherlands/`,
+    title: "How Taxes Work in the Netherlands",
+    description: "How salary, payroll withholding, and tax return concepts fit together alongside monthly spend.",
+  },
+  {
+    href: `${BASE}/money/tax-guide-for-expats/`,
+    title: "Netherlands Tax Guide for Expats",
+    description: "Money → Tax map when COL connects to payroll, allowances, and return-time topics.",
+  },
+  {
+    href: `${BASE}/money/expat-taxes-netherlands/`,
+    title: "Expat Taxes in the Netherlands",
+    description: "Scenario-led tax prompts alongside household and city budgeting.",
+  },
+  {
     href: `${BASE}/living/survival-guide/`,
     title: "Netherlands Survival Guide",
     description: "Ground monthly numbers in real daily-life context: transport, apps, and payments.",
@@ -88,6 +103,11 @@ const RELATED_NEXT_STEPS = [
     href: `${BASE}/cities/`,
     title: "Compare Dutch cities",
     description: "City hubs for Amsterdam, Rotterdam, The Hague, Utrecht, and more.",
+  },
+  {
+    href: `${BASE}/cities/cheapest-cities-for-expats/`,
+    title: "Cheapest cities for expats",
+    description: "Affordability context and trade-offs before you plug numbers into this calculator.",
   },
   {
     href: `${BASE}/living/tools/utilities-services-comparison/`,

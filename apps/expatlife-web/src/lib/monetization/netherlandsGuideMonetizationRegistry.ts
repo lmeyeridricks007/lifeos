@@ -10,6 +10,8 @@ export const NETHERLANDS_GUIDE_PAGE_MONETIZATION: Partial<Record<string, PageMon
   "moving-to-netherlands-cost": { disabled: true },
   "shipping-household-goods-netherlands": { disabled: true },
   "municipality-registration-netherlands": { disabled: true },
+  "bsn-registration": { disabled: true },
+  "register-address-netherlands": { disabled: true },
   "visa-documents-netherlands": { disabled: true },
   "digid-awareness": { disabled: true },
 

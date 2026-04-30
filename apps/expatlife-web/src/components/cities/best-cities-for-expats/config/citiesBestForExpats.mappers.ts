@@ -1,6 +1,7 @@
 import type {
   BestCitiesComparisonCity,
   BestCitiesProfileCard,
+  BestCitiesProfileCardAccent,
   BestCitiesScenario,
   BestCitiesStartHereCard,
   CitiesBestForExpatsCityCardConfig,
@@ -10,6 +11,22 @@ import type {
   CitiesBestForExpatsScenarioConfig,
   CitiesBestForExpatsStartCardConfig,
 } from "./citiesBestForExpats.types";
+
+const PROFILE_CARD_ACCENTS: readonly BestCitiesProfileCardAccent[] = [
+  "sky",
+  "violet",
+  "emerald",
+  "amber",
+  "rose",
+  "cyan",
+  "indigo",
+  "teal",
+  "fuchsia",
+] as const;
+
+function normalizeProfileAccent(a?: BestCitiesProfileCardAccent): BestCitiesProfileCardAccent {
+  return a && PROFILE_CARD_ACCENTS.includes(a) ? a : "sky";
+}
 
 function joinTradeoffs(lines: string[]): string {
   return lines.map((t) => t.trim()).filter(Boolean).join(" ");
@@ -22,6 +39,8 @@ export function mapStartCardToViewModel(c: CitiesBestForExpatsStartCardConfig): 
     title: c.title,
     intro: c.intro,
     keyPoints: c.keyPoints,
+    quickLinks: c.quickLinks?.length ? [...c.quickLinks] : undefined,
+    quickLinksLabel: c.quickLinksLabel,
     cta: { label: c.cta.label ?? "Open", href: c.cta.href },
   };
 }
@@ -45,8 +64,13 @@ export function mapScenarioToViewModel(c: CitiesBestForExpatsScenarioConfig): Be
     title: c.title,
     chips: c.tags,
     intro: c.intro,
-    picks: c.picks,
-    tradeOffs: joinTradeoffs(c.tradeoffs),
+    picks: c.picks.map((p) => ({
+      name: p.name,
+      href: p.href,
+      why: p.why,
+      ...(p.highlights?.length ? { highlights: [...p.highlights] } : {}),
+    })),
+    tradeOffLines: c.tradeoffs.map((t) => t.trim()).filter(Boolean),
     toolHint: c.toolHint?.label ? { label: c.toolHint.label, href: c.toolHint.href } : undefined,
   };
 }
@@ -59,7 +83,10 @@ export function mapProfileCardToViewModel(c: CitiesBestForExpatsProfileCardConfi
     personality: c.intro,
     bestFor: c.bestFor,
     watchOuts: joinTradeoffs(c.tradeoffs),
+    tags: c.tags?.length ? [...c.tags] : undefined,
     nextLinks: c.nextLinks.map((l) => ({ label: l.label ?? l.href, href: l.href })),
+    image: c.heroImage,
+    accent: normalizeProfileAccent(c.accent),
   };
 }
 

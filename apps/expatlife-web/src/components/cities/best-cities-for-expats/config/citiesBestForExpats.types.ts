@@ -9,6 +9,12 @@ export type BestCitiesLevel = "high" | "medium" | "mixed" | "lower";
 /** Lucide-backed keys for Start-here cards. */
 export type CitiesBestForExpatsStartIconKey = "work" | "affordability" | "family" | "lifestyle";
 
+/** In-card shortcuts to city guides or sibling lens pages. */
+export type CitiesBestForExpatsStartQuickLink = {
+  label: string;
+  href: string;
+};
+
 /** Visual treatment for city option cards (maps to featured / badge). */
 export type CitiesBestForExpatsVisualKey = "core-hub" | "strong-option";
 
@@ -24,7 +30,11 @@ export type CitiesBestForExpatsStartCardConfig = {
   iconKey: CitiesBestForExpatsStartIconKey;
   title: string;
   intro: string;
+  /** Short bullets — city names live in `quickLinks` so the card stays scannable. */
   keyPoints: string[];
+  /** Shown above bullets: tappable city guides + related pages for this lens. */
+  quickLinks?: CitiesBestForExpatsStartQuickLink[];
+  quickLinksLabel?: string;
   tags?: string[];
   tradeoffs?: string[];
   cta: CitiesBestForExpatsInternalLink;
@@ -50,7 +60,10 @@ export type CitiesBestForExpatsCityCardConfig = {
 export type CitiesBestForExpatsScenarioPick = {
   name: string;
   href: string;
+  /** Short lead (1–2 sentences). Use with `highlights` instead of a long wall of text. */
   why: string;
+  /** Optional scannable bullets under `why` — shown as a list when present. */
+  highlights?: string[];
 };
 
 export type CitiesBestForExpatsScenarioConfig = {
@@ -78,6 +91,18 @@ export type CitiesBestForExpatsMisunderstandingConfig = {
   tags?: string[];
 };
 
+/** Tint family for profile decision cards (hero fallback + lens tiles). */
+export type BestCitiesProfileCardAccent =
+  | "sky"
+  | "violet"
+  | "emerald"
+  | "amber"
+  | "rose"
+  | "cyan"
+  | "indigo"
+  | "teal"
+  | "fuchsia";
+
 export type CitiesBestForExpatsProfileCardConfig = {
   id: string;
   name: string;
@@ -87,6 +112,9 @@ export type CitiesBestForExpatsProfileCardConfig = {
   tradeoffs: string[];
   tags?: string[];
   nextLinks: CitiesBestForExpatsInternalLink[];
+  /** Optional hero photo (`/public` path) for richer profile cards. */
+  heroImage?: { src: string; alt: string };
+  accent?: BestCitiesProfileCardAccent;
 };
 
 export type CitiesBestForExpatsHelpfulToolItemConfig = {
@@ -142,6 +170,8 @@ export type BestCitiesStartHereCard = {
   title: string;
   intro: string;
   keyPoints: string[];
+  quickLinks?: CitiesBestForExpatsStartQuickLink[];
+  quickLinksLabel?: string;
   cta: { label: string; href: string };
 };
 
@@ -166,8 +196,8 @@ export type BestCitiesScenario = {
   title: string;
   chips?: string[];
   intro: string;
-  picks: Array<{ name: string; href: string; why: string }>;
-  tradeOffs: string;
+  picks: Array<{ name: string; href: string; why: string; highlights?: string[] }>;
+  tradeOffLines: string[];
   toolHint?: { label: string; href: string };
 };
 
@@ -178,5 +208,8 @@ export type BestCitiesProfileCard = {
   personality: string;
   bestFor: string;
   watchOuts: string;
+  tags?: string[];
   nextLinks: Array<{ label: string; href: string }>;
+  image?: { src: string; alt: string };
+  accent?: BestCitiesProfileCardAccent;
 };

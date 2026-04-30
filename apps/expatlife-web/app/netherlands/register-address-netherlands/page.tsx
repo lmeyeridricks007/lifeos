@@ -1,9 +1,18 @@
-import { redirect } from "next/navigation";
+import { GuideBySlugPage } from "@/src/components/guides/GuideBySlugPage";
+import { NETHERLANDS_GUIDE_PAGE_MONETIZATION } from "@/src/lib/monetization/netherlandsGuideMonetizationRegistry";
+import type { PageMonetizationMetadata } from "@/src/lib/monetization/pageMonetizationMetadata";
+import { guideShareMetadata } from "@/lib/seo/netherlandsGuideShareMetadata";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
-
 export const revalidate = CONTENT_REVALIDATE;
-/** Redirect to canonical municipality registration guide. */
-export default function RegisterAddressPage() {
-  redirect("/netherlands/municipality-registration-netherlands/");
+
+const SLUG = "register-address-netherlands" as const;
+
+const monetization: PageMonetizationMetadata | undefined =
+  NETHERLANDS_GUIDE_PAGE_MONETIZATION[SLUG];
+
+export const metadata = guideShareMetadata("register-address-netherlands");
+
+export default function RegisterAddressNetherlandsPage() {
+  return <GuideBySlugPage slug={SLUG} monetization={monetization} />;
 }

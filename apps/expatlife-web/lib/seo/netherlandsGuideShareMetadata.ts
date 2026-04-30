@@ -42,6 +42,16 @@ const ENTRIES = {
     description:
       "Learn how to register with a municipality in the Netherlands, including required documents, deadlines, BRP registration, and how to receive your BSN.",
   },
+  "bsn-registration": {
+    title: "BSN Registration in the Netherlands: How Expats Get a BSN",
+    description:
+      "Learn how BSN registration works in the Netherlands. Understand when expats receive a citizen service number, which documents may be requested, and what to arrange next.",
+  },
+  "register-address-netherlands": {
+    title: "Registering Your Address in the Netherlands: Step-by-Step Guide for Expats",
+    description:
+      "Learn how expats usually register their address with a Dutch municipality, which documents may be needed, when to book, and what typically happens next.",
+  },
   "after-arriving-netherlands": {
     title: "After Arriving in the Netherlands | BSN, Registration, DigiD, Insurance, Banking",
     description:

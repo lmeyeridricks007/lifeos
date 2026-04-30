@@ -10,7 +10,7 @@ const ROUTES = moveTwvWorkPermitRoutes;
 
 export const moveTwvRelatedTools: MoveTwvWorkPermitRelatedTools = {
   journeyIntro:
-    "**This page is the orientation layer.** Once you know whether TWV is relevant, use the sections below to move into route confirmation, offer evaluation, and real relocation planning.",
+    "This page is the orientation layer. Once you know whether TWV is relevant, use the sections below to move into route confirmation, offer evaluation, and real relocation planning.",
   sections: [
     {
       eyebrow: "Move & route clarity",
@@ -163,7 +163,7 @@ export const moveTwvToolsJourneySnapshot: MoveTwvWorkPermitToolsJourneySnapshot 
   eyebrow: "Product map",
   title: "Where this page sits in the TWV-related move journey",
   subtitle:
-    "**Visas & residence pages** help you identify the route. **This page** explains when TWV is likely relevant. **Work tools** help you evaluate the offer and timing. **Move and living pages** help once the relocation becomes operational.",
+    "Visas & residence pages help you identify the route. This page explains when TWV is likely relevant. Work tools help you evaluate the offer and timing. Move and living pages help once the relocation becomes operational.",
   steps: [
     {
       href: ROUTES.visas,

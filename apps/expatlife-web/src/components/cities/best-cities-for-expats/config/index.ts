@@ -24,8 +24,6 @@ export { citiesBestForExpatsFaq } from "./citiesBestForExpatsFaq.config";
 export { citiesBestForExpatsReferences } from "./citiesBestForExpatsReferences.config";
 export {
   citiesBestForExpatsContinueCards,
-  citiesBestForExpatsExploreCards,
-  citiesBestForExpatsHelpfulTools,
   citiesBestForExpatsRelatedGuideBlocks,
 } from "./citiesBestForExpatsRelatedTools.config";
 export { citiesBestForExpatsRecommendedServices } from "./citiesBestForExpatsRecommendedServices.config";

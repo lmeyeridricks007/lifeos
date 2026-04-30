@@ -75,6 +75,16 @@ export function ExploreNetherlandsCrossLinks() {
               </Link>
             </li>
             <li>
+              <Link href="/netherlands/cities/best-cities-for-families/" className="text-link hover:underline">
+                Best Dutch cities for families
+              </Link>
+            </li>
+            <li>
+              <Link href="/netherlands/cities/cheapest-cities-for-expats/" className="text-link hover:underline">
+                Cheapest cities for expats
+              </Link>
+            </li>
+            <li>
               <Link href="/netherlands/tools/city-comparison/" className="text-link hover:underline">
                 City comparison tool
               </Link>

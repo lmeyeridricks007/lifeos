@@ -107,9 +107,33 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
         ],
       },
       {
-        title: "More",
+        title: "Cities & where to live",
         links: [
-          link("Cities", "/netherlands/cities/", "Discover and compare Dutch cities for expats", false),
+          link("Cities hub", "/netherlands/cities/", "Compare Dutch cities and open municipality guides", false),
+          link(
+            "Best cities for expats",
+            "/netherlands/cities/best-cities-for-expats/",
+            "Overall-fit shortlists, scenarios, and trade-offs",
+            false
+          ),
+          link(
+            "Best Dutch cities for international professionals",
+            "/netherlands/cities/best-cities-for-international-professionals/",
+            "Career-first city choice: jobs, net pay vs rent, commute, lifestyle",
+            false
+          ),
+          link(
+            "Best Dutch cities for families",
+            "/netherlands/cities/best-cities-for-families/",
+            "Schools, childcare, commute, and family shortlists",
+            false
+          ),
+          link(
+            "Cheapest cities for expats",
+            "/netherlands/cities/cheapest-cities-for-expats/",
+            "Affordability lens: rent, commute trade-offs, and calculators",
+            false
+          ),
         ],
       },
       {
@@ -157,6 +181,12 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
       {
         title: "Career + Benefits",
         links: [
+          link(
+            "Best Dutch cities for international professionals",
+            "/netherlands/cities/best-cities-for-international-professionals/",
+            "Where to live for job-market fit, salary vs cost, and commute realism",
+            false
+          ),
           link("Benefits", "/netherlands/work/benefits", "Total rewards"),
           link("Career transitions", "/netherlands/work/career/transition-planner", "Job-change planning"),
           link("Sponsor dependency", "/netherlands/work/career/sponsor-dependency", "Visa-linked employment"),
@@ -167,13 +197,67 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
   money: {
     key: "money",
     label: "Money",
-    href: "/netherlands/money/banking",
+    href: "/netherlands/money/banking/",
     groups: [
       {
         title: "Banking + Taxes",
         links: [
-          link("Banking", "/netherlands/money/banking", "Accounts and setup"),
+          link("Banking", "/netherlands/money/banking/", "Accounts and setup", false),
+          link(
+            "Types of bank accounts",
+            "/netherlands/money/banking/types-of-accounts/",
+            "Plain English: everyday account, savings, joint, student, business, and app banks — what each is for",
+            false
+          ),
+          link(
+            "How payments work",
+            "/netherlands/money/banking/how-payments-work/",
+            "Account number, paying online and in shops, rent, salary, bills, and sending money abroad — plain English",
+            false
+          ),
+          link(
+            "Banking fees & costs",
+            "/netherlands/money/banking/fees/",
+            "Simple guide to common bank charges — check each bank’s own prices before you sign up",
+            false
+          ),
+          link(
+            "Traditional vs digital banks",
+            "/netherlands/money/banking/traditional-vs-digital/",
+            "Easy read: branch banks vs app banks, using both, and what employers or landlords often expect",
+            false
+          ),
+          link(
+            "Best banks for expats",
+            "/netherlands/money/banking/best-banks-expats/",
+            "Compare ING, ABN AMRO, digital banks, fees, and onboarding",
+            false
+          ),
           link("Bank comparison", "/netherlands/money/banking/bank-comparison", "Compare options"),
+          link(
+            "Netherlands tax guide for expats",
+            "/netherlands/money/tax-guide-for-expats/",
+            "Payroll tax, returns, 30% ruling, Box 3, and cross-border orientation — planning only",
+            false
+          ),
+          link(
+            "Expat Taxes in the Netherlands",
+            "/netherlands/money/expat-taxes-netherlands/",
+            "Scenario-led Money guide: partial years, foreign assets, ruling, allowances, double tax",
+            false
+          ),
+          link(
+            "How taxes work in the Netherlands",
+            "/netherlands/money/how-taxes-work-in-the-netherlands/",
+            "Plain-English Dutch tax system — payroll, returns, boxes, credits, allowances",
+            false
+          ),
+          link(
+            "Tax residency in the Netherlands",
+            "/netherlands/money/tax-residency-netherlands/",
+            "Tax vs permit labels, ties, arrival/departure years, cross-border orientation — not advice",
+            false
+          ),
           link("Taxes", "/netherlands/money/taxes", "Tax basics"),
           link("Tax readiness", "/netherlands/money/taxes/readiness-score", "Readiness scoring"),
         ],
@@ -343,6 +427,36 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
             "Employment type scenario tool",
             "/netherlands/work/tools/employment-type-scenario-tool",
             "Employee vs contractor vs ZZP comparison",
+            false
+          ),
+          link(
+            "Traditional vs digital banks",
+            "/netherlands/money/banking/traditional-vs-digital/",
+            "Simple guide: big Dutch banks vs phone apps, and when people use both",
+            false
+          ),
+          link(
+            "Types of bank accounts",
+            "/netherlands/money/banking/types-of-accounts/",
+            "What Dutch banks call each account type and when you might need it",
+            false
+          ),
+          link(
+            "How payments work",
+            "/netherlands/money/banking/how-payments-work/",
+            "Simple guide: rent, salary, shops, online checkout, and household bills in the Netherlands",
+            false
+          ),
+          link(
+            "Banking fees & costs",
+            "/netherlands/money/banking/fees/",
+            "Fee categories, transfers, ATM, ZZP costs, and how to compare totals",
+            false
+          ),
+          link(
+            "Best banks for expats",
+            "/netherlands/money/banking/best-banks-expats/",
+            "ING, ABN AMRO, bunq, Revolut, N26 — structured comparison",
             false
           ),
           link("Bank comparison", "/netherlands/money/banking/bank-comparison", "Account choice"),

@@ -2,9 +2,10 @@ import type { LinkRegistry, NlFlagshipPillarContent } from "./types";
 
 const linkRegistry: LinkRegistry = {
   taxes_hub: { href: "/netherlands/taxes/", title: "Netherlands taxes hub" },
-  taxes_how: { href: "/netherlands/taxes/how-taxes-work-netherlands/", title: "How taxes work in the Netherlands" },
-  taxes_expat: { href: "/netherlands/taxes/expat-taxes-netherlands/", title: "Expat taxes Netherlands" },
-  taxes_30: { href: "/netherlands/taxes/30-percent-ruling/", title: "30% ruling guide" },
+  taxes_how: { href: "/netherlands/money/how-taxes-work-in-the-netherlands/", title: "How taxes work in the Netherlands" },
+  taxes_expat: { href: "/netherlands/money/expat-taxes-netherlands/", title: "Expat Taxes in the Netherlands" },
+  taxes_30: { href: "/netherlands/money/taxes/30-percent-ruling/", title: "30% ruling guide" },
+  taxes_advisors: { href: "/netherlands/money/taxes/tax-advisors/", title: "Tax advisors for expats" },
   taxes_30_calc: { href: "/netherlands/taxes/tools/30-ruling-calculator/", title: "30% ruling eligibility calculator" },
   taxes_return: { href: "/netherlands/taxes/tax-return-netherlands/", title: "Tax return Netherlands" },
   digid: { href: "/netherlands/digid-awareness/", title: "DigiD guide" },
@@ -52,7 +53,7 @@ export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
       chips: ["cross_border"],
       personaTitle: "Cross-border or recent arrival",
       whatMatters: ["Tax residency timing", "Double taxation angles", "Records to keep"],
-      readingOrder: ["taxes_expat", "taxes_how", "bsn"],
+      readingOrder: ["taxes_expat", "taxes_how", "bsn", "taxes_advisors"],
       startTool: { key: "taxes_expat" },
       unknownsToConfirm: ["Split year", "Foreign assets", "Treaty position"],
     },
@@ -75,7 +76,7 @@ export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
     {
       q: "What is box 1 / box 2 / box 3?",
       a: "Dutch income tax uses **boxes** for different income and wealth categories at a high level. The exact treatment depends on residency and sources—read a structured overview rather than guessing from a payslip alone.",
-      links: [{ label: "How taxes work", href: "/netherlands/taxes/how-taxes-work-netherlands/" }],
+      links: [{ label: "How taxes work", href: "/netherlands/money/how-taxes-work-in-the-netherlands/" }],
     },
     {
       q: "Why do people mention DigiD for taxes?",
@@ -84,11 +85,12 @@ export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
     {
       q: "Is the 30% ruling automatic?",
       a: "No. The **30% ruling** requires **eligibility**, **employer application**, and adherence to **salary thresholds** and procedure. It is not guaranteed by job title alone.",
-      links: [{ label: "30% ruling", href: "/netherlands/taxes/30-percent-ruling/" }],
+      links: [{ label: "30% ruling", href: "/netherlands/money/taxes/30-percent-ruling/" }],
     },
     {
       q: "Is this site tax advice?",
-      a: "**No.** ExpatCopilot provides orientation and links. For positions involving large income, equity, or cross-border complexity, use a **qualified tax adviser** and **Belastingdienst** primary sources.",
+      a: "**No.** ExpatCopilot provides orientation and links. For positions involving large income, equity, or cross-border complexity, compare **qualified tax advisers** with clear scope — and use **Belastingdienst** primary sources.",
+      links: [{ label: "Tax advisors guide", href: "/netherlands/money/taxes/tax-advisors/" }],
     },
   ],
   linkRegistry,
@@ -104,7 +106,7 @@ export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
       ],
       links: [
         { href: "/netherlands/taxes/tax-residency-netherlands/", label: "Tax residency" },
-        { href: "/netherlands/taxes/expat-taxes-netherlands/", label: "Expat taxes overview" },
+        { href: "/netherlands/money/expat-taxes-netherlands/", label: "Expat taxes overview" },
       ],
     },
     {
@@ -131,7 +133,7 @@ export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
         "Keep PDFs of submissions and assessments.",
       ],
       links: [
-        { href: "/netherlands/taxes/how-taxes-work-netherlands/", label: "How taxes work" },
+        { href: "/netherlands/money/how-taxes-work-in-the-netherlands/", label: "How taxes work" },
         { href: "/netherlands/money/tools/", label: "Money tools hub" },
       ],
     },
@@ -149,7 +151,7 @@ export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
     },
     {
       title: "30% ruling guide",
-      href: "/netherlands/taxes/30-percent-ruling/",
+      href: "/netherlands/money/taxes/30-percent-ruling/",
       description: "Eligibility framing before you rely on net-pay estimates.",
     },
   ],
@@ -208,12 +210,12 @@ export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
   nextSteps: [
     {
       label: "How taxes work in the Netherlands",
-      href: "/netherlands/taxes/how-taxes-work-netherlands/",
+      href: "/netherlands/money/how-taxes-work-in-the-netherlands/",
       description: "Boxes, payroll tax, and filing concepts in one pass.",
     },
     {
       label: "Expat taxes Netherlands",
-      href: "/netherlands/taxes/expat-taxes-netherlands/",
+      href: "/netherlands/money/expat-taxes-netherlands/",
       description: "Common expat angles and pitfalls.",
     },
     {

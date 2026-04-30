@@ -10,11 +10,16 @@ import { siteGuideColumnPadYClass } from "@/lib/ui/site-shell-identity";
 import { cn } from "@/lib/cn";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { LIVING_SURVIVAL_GUIDE_PATH } from "@/src/components/living/livingPillarContent";
+import { getLivingStartHereInstructionalFigure } from "@/src/components/living/living-start-here-cluster/livingStartHereInstructionalRasterAssets";
 import type { LivingTopicPlaceholderSpec } from "@/src/components/living/livingTopicPlaceholders";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 
 type Props = { content: LivingTopicPlaceholderSpec };
 
 export function LivingTopicPlaceholderView({ content }: Props) {
+  const startHereFigure = content.instructionalStartHereKey
+    ? getLivingStartHereInstructionalFigure(content.instructionalStartHereKey)
+    : undefined;
   const baseUrl = getSiteOrigin();
   const hubUrl = new URL(LIVING_SURVIVAL_GUIDE_PATH, baseUrl).toString();
   const pageUrl = new URL(content.path, baseUrl).toString();
@@ -60,6 +65,14 @@ export function LivingTopicPlaceholderView({ content }: Props) {
               </h1>
               <p className="mt-4 text-base leading-relaxed text-foreground-muted">{content.intro}</p>
             </header>
+
+            {startHereFigure ? (
+              <InstructionalRasterFigure
+                raster={startHereFigure.raster}
+                caption={startHereFigure.caption}
+                className="w-full max-w-3xl"
+              />
+            ) : null}
 
             <div
               className="max-w-3xl rounded-2xl border border-brand/20 bg-gradient-to-br from-brand-muted/80 via-surface-raised to-accent-muted/40 p-5 shadow-card ring-1 ring-border/20 sm:p-6"

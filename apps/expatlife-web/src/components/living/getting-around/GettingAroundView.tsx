@@ -68,6 +68,8 @@ import {
 } from "@/lib/ui/site-shell-identity";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { cn } from "@/lib/cn";
+import { getLivingStartHereInstructionalFigure } from "@/src/components/living/living-start-here-cluster/livingStartHereInstructionalRasterAssets";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 import { LivingSectionNav } from "@/src/components/living/survival-guide/LivingSectionNav";
 import { LivingSurvivalMobileToc } from "@/src/components/living/survival-guide/LivingSurvivalMobileToc";
 import { LivingQuickStartCards } from "@/src/components/living/survival-guide/LivingQuickStartCards";
@@ -111,6 +113,8 @@ const BOARDING_STOP_TIP_ICONS: Record<GettingAroundBoardingStopTip["id"], typeof
 const DATE_MODIFIED = "2026-04-08";
 
 const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
+
+const LIVING_START_HERE_INSTRUCTIONAL = getLivingStartHereInstructionalFigure("getting-around");
 
 const appOfficialLinkClass =
   "font-semibold text-link underline-offset-2 hover:text-link-hover hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas rounded-sm";
@@ -1177,6 +1181,14 @@ export function GettingAroundView() {
         keySections={
           <PillarJourneyStack variant="guide" density="compact">
             <LivingSurvivalMobileToc items={GETTING_AROUND_SECTION_NAV} />
+
+            {LIVING_START_HERE_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={LIVING_START_HERE_INSTRUCTIONAL.raster}
+                caption={LIVING_START_HERE_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
 
             <SectionBlock
               id="at-a-glance"

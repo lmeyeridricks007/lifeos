@@ -32,6 +32,8 @@ import { CompareVisasFilterChips } from "./CompareVisasFilterChips";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { PresetSoftCTA } from "@/src/components/soft-cta/PresetSoftCTA";
 import { CollapsiblePanel } from "@/components/ui/collapsible-panel";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
+import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
 
 /** Icon and accent style per situation card id for the "Compare by your situation" section. */
 const SITUATION_CARD_STYLES: Record<
@@ -80,6 +82,8 @@ export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = "/netherlands/visa/compare-visas/";
 const BASE = "/netherlands";
+
+const COMPARE_VISAS_INSTRUCTIONAL = getVisasResidencyInstructionalFigure("compare-visas");
 
 export const metadata: Metadata = {
   title: "Compare Netherlands Visas | Costs, Timelines, Requirements, Best Uses",
@@ -189,6 +193,13 @@ export default function CompareVisasPage() {
 
   const intro = (
     <div className="space-y-4">
+      {COMPARE_VISAS_INSTRUCTIONAL ? (
+        <InstructionalRasterFigure
+          raster={COMPARE_VISAS_INSTRUCTIONAL.raster}
+          caption={COMPARE_VISAS_INSTRUCTIONAL.caption}
+          className="mt-0"
+        />
+      ) : null}
       <p className="text-foreground-muted">
         The right route depends on why you are moving—work, study, business, or family—and whether you have a sponsor, admission, or relationship basis. Use the comparison table and situation cards below, then open individual visa guides for detail.
       </p>

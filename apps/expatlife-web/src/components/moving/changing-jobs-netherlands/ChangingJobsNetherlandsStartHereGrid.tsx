@@ -66,7 +66,7 @@ export function ChangingJobsNetherlandsStartHereGrid({
                   />
                   {card.bestFor ? (
                     <BoldParagraph
-                      text={`**Best for:** ${card.bestFor}`}
+                      text={`Best for: ${card.bestFor}`}
                       className="mt-2 text-[12px] leading-snug text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
                     />
                   ) : null}

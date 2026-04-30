@@ -7,7 +7,7 @@ const PERMITS = R.residencePermits;
 
 export const moveExtensionsChangesRelatedTools = {
   journeyIntro:
-    "**Move** (hub, visas, permits, planners) holds the **status** thread; **Work & pay** + **Money** turn changes into **numbers**; **Housing & living** covers **rent, zorg, rhythm**. Pick **one** block per visit.",
+    "Move (hub, visas, permits, planners) holds the status thread; Work & pay + Money turn changes into numbers; Housing & living covers rent, zorg, rhythm. Pick one block per visit.",
   sections: [
     {
       eyebrow: "Move & immigration",
@@ -57,6 +57,11 @@ export const moveExtensionsChangesRelatedTools = {
       eyebrow: "Money & household",
       description: "Budgeting and family costs alongside permit uncertainty.",
       items: [
+        {
+          title: "Tax residency in the Netherlands",
+          description: "When extensions or changes overlap tax years — tax vs permit framing on the Money pillar; not a final verdict.",
+          href: "/netherlands/money/tax-residency-netherlands/",
+        },
         { title: "Cost of living calculator", description: "Rough monthly costs by city.", href: "/netherlands/money/tools/cost-of-living-calculator/" },
         { title: "Healthcare allowance estimator", description: "Rough toeslag estimate from income and rent.", href: "/netherlands/taxes/tools/healthcare-allowance-estimator/" },
         { title: "Childcare cost estimator", description: "Family logistics when situations change.", href: "/netherlands/family/tools/childcare-cost-estimator/" },

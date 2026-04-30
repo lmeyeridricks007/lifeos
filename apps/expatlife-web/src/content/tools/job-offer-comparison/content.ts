@@ -90,6 +90,7 @@ export const JOB_OFFER_QUICK_LINKS = [
 
 export const JOB_OFFER_RELATED_TOOLS = [
   { href: `${NL_BASE}/taxes/tools/dutch-salary-net-calculator/`, label: "Dutch salary net calculator →" },
+  { href: `${NL_BASE}/money/taxes/30-percent-ruling/`, label: "30% ruling guide (Money) →" },
   { href: `${NL_BASE}/taxes/tools/30-ruling-calculator/`, label: "30% ruling calculator →" },
   { href: `${NL_BASE}/work/tools/employment-contract-risk-scanner/`, label: "Employment contract risk scanner →" },
   { href: `${NL_BASE}/work/tools/employment-type-scenario-tool/`, label: "Employment type scenario tool →" },
@@ -102,6 +103,7 @@ export const JOB_OFFER_RELATED_TOOLS = [
 /** Plain labels for contextual “refine your comparison” strips (no arrow suffix). */
 export const JOB_OFFER_COMPARISON_TOOL_LINKS = [
   { href: `${NL_BASE}/taxes/tools/dutch-salary-net-calculator/`, label: "Dutch salary net calculator" },
+  { href: `${NL_BASE}/money/taxes/30-percent-ruling/`, label: "30% ruling guide (Money)" },
   { href: `${NL_BASE}/taxes/tools/30-ruling-calculator/`, label: "30% ruling calculator" },
   { href: `${NL_BASE}/work/tools/employment-contract-risk-scanner/`, label: "Employment contract risk scanner" },
   { href: `${NL_BASE}/work/tools/employment-type-scenario-tool/`, label: "Employment type scenario tool" },
@@ -112,6 +114,26 @@ export const JOB_OFFER_COMPARISON_TOOL_LINKS = [
 ] as const;
 
 export const JOB_OFFER_RELATED_GUIDES = [
+  {
+    href: `${NL_BASE}/money/how-taxes-work-in-the-netherlands/`,
+    title: "How Taxes Work in the Netherlands",
+    description: "Plain-English Dutch tax system map — payroll vs return and boxes — before expat-only tax guides.",
+  },
+  {
+    href: `${NL_BASE}/money/tax-residency-netherlands/`,
+    title: "Tax residency in the Netherlands",
+    description: "When ties, permits, and filing scope matter alongside headline compensation.",
+  },
+  {
+    href: `${NL_BASE}/money/tax-guide-for-expats/`,
+    title: "Netherlands Tax Guide for Expats",
+    description: "How Dutch tax, payroll, and allowances frame what you are comparing — this tool owns offer-by-offer modelling.",
+  },
+  {
+    href: `${NL_BASE}/money/taxes/30-percent-ruling/`,
+    title: "30% ruling in the Netherlands",
+    description: "Facility context and employer involvement before you lock ruling assumptions into a comparison.",
+  },
   {
     href: `${NL_BASE}/moving/working-in-the-netherlands/`,
     title: "Working in the Netherlands",
@@ -138,9 +160,9 @@ export const JOB_OFFER_RELATED_GUIDES = [
     description: "Relocation timing, housing search, BSN, and admin alongside a new job.",
   },
   {
-    href: `${NL_BASE}/taxes/expat-taxes-netherlands/`,
-    title: "Expat taxes in the Netherlands",
-    description: "Tax residency, payroll withholding, 30% ruling context, and when to involve a tax advisor.",
+    href: `${NL_BASE}/money/expat-taxes-netherlands/`,
+    title: "Expat Taxes in the Netherlands",
+    description: "Scenario-led prompts (partial years, foreign income, allowances, double tax) after you have offer numbers in hand.",
   },
   {
     href: `${NL_BASE}/moving/tools/moving-checklist/`,

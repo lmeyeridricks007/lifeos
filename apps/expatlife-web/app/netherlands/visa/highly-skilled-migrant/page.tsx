@@ -6,6 +6,7 @@ import { HIGHLY_SKILLED_MIGRANT_VISA } from "@/src/content/visas/highly-skilled-
 import { highlySkilledMigrantToGuideData } from "@/src/lib/visas/visaToGuideData";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -55,6 +56,7 @@ export default function HighlySkilledMigrantVisaPage() {
         data={serializableData}
         affiliateBlocks={{}}
         canonicalUrl={canonicalUrl}
+        planningInstructionalFigure={getVisasResidencyInstructionalFigure(HIGHLY_SKILLED_MIGRANT_VISA.slug)}
       />
     </>
   );

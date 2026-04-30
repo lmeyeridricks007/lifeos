@@ -11,6 +11,66 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/netherlands/taxes/expat-taxes-netherlands",
+        destination: "/netherlands/money/expat-taxes-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/expat-taxes-netherlands/",
+        destination: "/netherlands/money/expat-taxes-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/how-taxes-work-netherlands",
+        destination: "/netherlands/money/how-taxes-work-in-the-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/how-taxes-work-netherlands/",
+        destination: "/netherlands/money/how-taxes-work-in-the-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/tax-residency-netherlands",
+        destination: "/netherlands/money/tax-residency-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/tax-residency-netherlands/",
+        destination: "/netherlands/money/tax-residency-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/tax-return-netherlands",
+        destination: "/netherlands/money/tax-return-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/tax-return-netherlands/",
+        destination: "/netherlands/money/tax-return-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/30-percent-ruling",
+        destination: "/netherlands/money/taxes/30-percent-ruling/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/30-percent-ruling/",
+        destination: "/netherlands/money/taxes/30-percent-ruling/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/best/banks-for-expats",
+        destination: "/netherlands/money/banking/best-banks-expats/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/best/banks-for-expats/",
+        destination: "/netherlands/money/banking/best-banks-expats/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/living/transport-basics",
         destination: "/netherlands/living/getting-around/",
         permanent: true,

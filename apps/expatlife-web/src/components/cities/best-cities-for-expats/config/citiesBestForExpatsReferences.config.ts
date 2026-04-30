@@ -5,7 +5,7 @@ export const citiesBestForExpatsReferences: CitiesBestForExpatsReferencesConfig 
   sectionId: "official-sources",
   sectionTitle: "Official sources & useful references",
   disclaimer:
-    "City choice touches **housing markets** and **daily life**, not just immigration law. Use these **orientation links** — municipality pages stay authoritative for **registration rules** in your chosen city.",
+    "City choice touches housing markets and daily life, not just immigration law. Use these orientation links — municipality pages stay authoritative for registration rules in your chosen city.",
   groups: [
     {
       id: "newcomer-centres",

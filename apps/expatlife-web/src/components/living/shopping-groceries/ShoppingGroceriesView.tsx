@@ -26,6 +26,8 @@ import {
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { cn } from "@/lib/cn";
 import { LivingClusterLinkGrid } from "@/src/components/living/LivingClusterLinkGrid";
+import { getLivingStartHereInstructionalFigure } from "@/src/components/living/living-start-here-cluster/livingStartHereInstructionalRasterAssets";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 import { LivingPillarExplorer } from "@/src/components/living/LivingPillarExplorer";
 import {
   LIVING_CLUSTER_SIBLING_LINKS_SHOPPING_GROCERIES,
@@ -73,6 +75,8 @@ import {
 } from "./shoppingGroceriesContent";
 
 const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
+
+const LIVING_START_HERE_INSTRUCTIONAL = getLivingStartHereInstructionalFigure("shopping-groceries");
 
 const crossLinkClass =
   "font-semibold text-link underline-offset-2 hover:text-link-hover hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas rounded-sm";
@@ -559,6 +563,14 @@ export function ShoppingGroceriesView() {
         keySections={
           <PillarJourneyStack variant="guide" density="compact">
             <LivingSurvivalMobileToc items={shoppingGroceriesSectionNav} />
+
+            {LIVING_START_HERE_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={LIVING_START_HERE_INSTRUCTIONAL.raster}
+                caption={LIVING_START_HERE_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
 
             <LivingPillarExplorer
               id="explore-living-pillar"

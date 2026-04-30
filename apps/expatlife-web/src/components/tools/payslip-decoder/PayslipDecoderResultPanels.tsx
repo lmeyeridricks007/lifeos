@@ -146,7 +146,7 @@ function NextStepsSection({ result }: { result: PayslipDecodeResponse }) {
       body: (
         <>
           Confirm scheme details with your employer. See{" "}
-          <Link href={`${NL}/taxes/how-taxes-work-netherlands/`} className="font-semibold text-copilot-primary underline-offset-2 hover:underline">
+          <Link href={`${NL}/money/how-taxes-work-in-the-netherlands/`} className="font-semibold text-copilot-primary underline-offset-2 hover:underline">
             how Dutch payroll taxes work
           </Link>
           .

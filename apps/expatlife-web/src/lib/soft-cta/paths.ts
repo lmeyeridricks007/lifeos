@@ -5,7 +5,7 @@ export const SOFT_CTA_PATHS = {
   relocationCostEstimator: "/netherlands/moving/tools/relocation-cost-estimator/",
   compareVisas: "/netherlands/visa/compare-visas/",
   documentReadiness: "/netherlands/moving/tools/document-readiness/",
-  bestBanks: "/netherlands/best/banks-for-expats/",
+  bestBanks: "/netherlands/money/banking/best-banks-expats/",
   bestHealthInsurance: "/netherlands/best/health-insurance-for-expats/",
   bestRelocation: "/netherlands/best/relocation-for-expats/",
   servicesBanks: "/netherlands/services/banks/",

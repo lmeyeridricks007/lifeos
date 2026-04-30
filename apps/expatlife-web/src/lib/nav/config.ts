@@ -175,7 +175,10 @@ function filterMegaMenu(menu: MegaMenu): MegaMenu {
   let sections = menu.sections
     .map((section) => ({
       ...section,
-      items: orderMegaMenuSectionItems(section.items.map(filterNavItem).filter((x): x is NavItem => x != null)),
+      items: orderMegaMenuSectionItems(
+        section.items.map(filterNavItem).filter((x): x is NavItem => x != null),
+        section.comingSoonFirst ? { comingSoonFirst: true } : undefined
+      ),
     }))
     .filter((section) => section.items.length > 0);
 
@@ -239,8 +242,8 @@ function filterMegaMenu(menu: MegaMenu): MegaMenu {
     ) {
       const chain = [
         item("Netherlands taxes", "/netherlands/taxes/", "Tax guides for expats."),
-        item("Expat taxes Netherlands", "/netherlands/taxes/expat-taxes-netherlands/", "Expat tax overview."),
-        item("Banking", "/netherlands/money/banking", "Accounts, switching, and everyday banking."),
+        item("Expat Taxes in the Netherlands", "/netherlands/money/expat-taxes-netherlands/", "Scenario-led expat tax topics and tools."),
+        item("Banking", "/netherlands/money/banking/", "Accounts, switching, and everyday banking."),
       ];
       for (const cand of chain) {
         const f = filterNavItem(cand);
@@ -310,7 +313,35 @@ function buildMoneyToolRail(): NavItem[] {
     "payslip-decoder",
     "employment-type-scenario-tool",
   ];
-  return sortNavItemsForDisplay([...dedupeNavItems(toolItemsByIds(ids)), item("Open tools hub", "/netherlands/tools/")]);
+  const bankingReads = [
+    item(
+      "Types of bank accounts",
+      "/netherlands/money/banking/types-of-accounts/",
+      "Current, savings, joint, student, business, digital, and cards — which setup fits your situation."
+    ),
+    item(
+      "How payments work",
+      "/netherlands/money/banking/how-payments-work/",
+      "Account number, paying online, cards in shops, rent, salary, and utilities — explained simply."
+    ),
+    item(
+      "Traditional vs digital banks",
+      "/netherlands/money/banking/traditional-vs-digital/",
+      "Short guide before you pick a bank: branch vs app banks and common expat setups."
+    ),
+    item(
+      "Banking fees & costs",
+      "/netherlands/money/banking/fees/",
+      "Fee types, traps, and how to compare total cost — confirm live prices on bank sites."
+    ),
+    item(
+      "Best banks for expats",
+      "/netherlands/money/banking/best-banks-expats/",
+      "Editorial comparison table and next steps — confirm details on bank sites."
+    ),
+  ];
+  const toolRail = sortNavItemsForDisplay([...dedupeNavItems(toolItemsByIds(ids)), item("Open tools hub", "/netherlands/tools/")]);
+  return [...bankingReads, ...toolRail];
 }
 
 /** Living mega tools column: curated housing tools from `menu-features.json` + view-all + hub. */
@@ -560,7 +591,8 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
 
 export const TOP_NAV: TopNavEntry[] = [
   { key: "moving", label: "Move" },
-  { key: "cities", label: "Cities", href: "/netherlands/cities/" },
+  /** No `href` — click opens the mega menu so guides (hub, best, cheapest, tools) stay discoverable. */
+  { key: "cities", label: "Cities" },
   { key: "money", label: "Money" },
   { key: "services", label: "Services", href: "/netherlands/services/" },
   { key: "living", label: "Living" },
@@ -650,7 +682,9 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
     sections: [
       {
         title: "Popular cities",
+        comingSoonFirst: true,
         items: [
+          soon("Randstad overview"),
           item("Amsterdam", "/netherlands/amsterdam"),
           item("Rotterdam", "/netherlands/rotterdam"),
           item("Utrecht", "/netherlands/utrecht"),
@@ -660,7 +694,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         ],
       },
       {
-        title: "More cities / browse all",
+        title: "More Cities",
         items: [
           item("Cities hub", "/netherlands/cities/", "Compare Dutch cities and read expat city guides."),
           item("Amstelveen", "/netherlands/amstelveen"),
@@ -677,19 +711,26 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Compare / discover",
         items: [
           item(
-            "Netherlands city comparison tool",
-            "/netherlands/tools/city-comparison/",
-            "Compare cities on modelled costs, commute, family fit, and lifestyle — planning only."
-          ),
-          item(
             "Best cities for expats",
             "/netherlands/cities/best-cities-for-expats/",
-            "Practical decision guide: trade-offs, scenarios, and links to city guides and tools."
+            "Shortlists, scenarios, and trade-offs — then open city guides and calculators."
           ),
-          soon("Best cities for families"),
-          soon("Affordable cities"),
+          item(
+            "Cheapest cities for expats",
+            "/netherlands/cities/cheapest-cities-for-expats/",
+            "Affordability lens: rent pressure, commute trade-offs, and calculators — not a ranking."
+          ),
+          item(
+            "Best Dutch cities for families",
+            "/netherlands/cities/best-cities-for-families/",
+            "Housing, childcare, schools, commute, and honest day-in-the-life trade-offs — practical shortlists."
+          ),
+          item(
+            "Best Dutch cities for international professionals",
+            "/netherlands/cities/best-cities-for-international-professionals/",
+            "Job-market fit, net pay vs rent, hybrid commute honesty, and career scenario shortlists."
+          ),
           soon("Amsterdam vs Rotterdam"),
-          soon("Randstad overview"),
         ],
       },
     ],
@@ -699,11 +740,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         "Netherlands city comparison tool",
         "/netherlands/tools/city-comparison/",
         "Rank 2–4 cities from your budget, office location, and priority sliders."
-      ),
-      item(
-        "Best cities for expats (guide)",
-        "/netherlands/cities/best-cities-for-expats/",
-        "Decision guide: scenarios, trade-offs, and links into city guides and calculators."
       ),
       item(
         "Rent affordability calculator",
@@ -728,24 +764,73 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Banking",
         roadmapNote: "Entries without a published page yet appear as muted roadmap rows (not links).",
         items: [
-          item("Banking", "/netherlands/money/banking"),
+          item("Banking", "/netherlands/money/banking/"),
+          item(
+            "Types of bank accounts",
+            "/netherlands/money/banking/types-of-accounts/",
+            "Simple guide: everyday account, savings, joint, student, business, and app-style banks — read this before you compare fees."
+          ),
+          item(
+            "How payments work",
+            "/netherlands/money/banking/how-payments-work/",
+            "Your account number, paying on Dutch websites, bank transfers, cards in shops, rent, salary, and bills — without jargon."
+          ),
+          item(
+            "Banking fees & costs",
+            "/netherlands/money/banking/fees/",
+            "Simple guide: common bank charges in the Netherlands, what to check on each bank’s website, and how to compare costs."
+          ),
+          item(
+            "Traditional vs digital banks",
+            "/netherlands/money/banking/traditional-vs-digital/",
+            "Easy read: big Dutch banks vs app-only banks, when people use both, and what to check with your employer or landlord."
+          ),
+          item(
+            "Best banks for expats",
+            "/netherlands/money/banking/best-banks-expats/",
+            "Compare banks side by side: fees, English help, and signing up — always double-check on each bank’s website."
+          ),
           item("Bank comparison", "/netherlands/money/banking/bank-comparison"),
           item("Family banking", "/netherlands/money/banking/family-banking"),
           item("Change bank", "/netherlands/money/banking/change-bank"),
           item("FX abroad", "/netherlands/money/banking/fx-abroad"),
-          soon("Best bank for expats"),
         ],
       },
       {
         title: "Taxes",
         items: [
-          item("Netherlands tax guide for expats", "/netherlands/taxes/"),
-          item("Expat taxes Netherlands", "/netherlands/taxes/expat-taxes-netherlands/"),
-          item("How taxes work in the Netherlands", "/netherlands/taxes/how-taxes-work-netherlands/"),
-          item("Tax residency Netherlands", "/netherlands/taxes/tax-residency-netherlands/"),
-          item("Tax return Netherlands", "/netherlands/taxes/tax-return-netherlands/"),
-          item("30% ruling", "/netherlands/taxes/30-percent-ruling/"),
-          item("Tax advisors (guide)", "/netherlands/taxes/tax-advisors-netherlands/"),
+          item("Taxes hub (Netherlands)", "/netherlands/taxes/", "Tax pillar landing — guides and calculators."),
+          item(
+            "Netherlands tax guide for expats",
+            "/netherlands/money/tax-guide-for-expats/",
+            "Money-pillar orientation: payroll, returns, 30% ruling, Box 3, payslips, cross-border — planning only."
+          ),
+          item("Expat Taxes in the Netherlands", "/netherlands/money/expat-taxes-netherlands/", "Scenario-led expat tax topics."),
+          item(
+            "How taxes work in the Netherlands",
+            "/netherlands/money/how-taxes-work-in-the-netherlands/",
+            "Money-pillar foundation: payroll vs return, boxes, credits, allowances — general Dutch tax map."
+          ),
+          item(
+            "Tax residency in the Netherlands",
+            "/netherlands/money/tax-residency-netherlands/",
+            "Money-pillar orientation: tax vs immigration residency, ties, cross-border awareness — not a determination tool."
+          ),
+          item(
+            "Tax return in the Netherlands",
+            "/netherlands/money/tax-return-netherlands/",
+            "Money-pillar orientation: what the annual return does, prep checklists, payroll vs filing — not a filing portal."
+          ),
+          item(
+            "30% ruling in the Netherlands",
+            "/netherlands/money/taxes/30-percent-ruling/",
+            "Money guide: what the 30% facility is, employer involvement, and links to the ruling calculator — not tax advice."
+          ),
+          item(
+            "Tax advisors for expats",
+            "/netherlands/money/taxes/tax-advisors/",
+            "Money guide: when paid tax help may be worth comparing, what to prepare, and how to read provider scope — not tax advice."
+          ),
         ],
       },
       {
@@ -858,6 +943,26 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         roadmapNote: "Entries without a published page yet appear as muted roadmap rows (not links).",
         items: [
           item("Banks", "/netherlands/services/banks/"),
+          item(
+            "Traditional vs digital banks (guide)",
+            "/netherlands/money/banking/traditional-vs-digital/",
+            "Plain-language Money guide: branch banks vs app banks and using both."
+          ),
+          item(
+            "Banking fees & costs (guide)",
+            "/netherlands/money/banking/fees/",
+            "Simple guide to common bank charges — always confirm prices on each bank’s website."
+          ),
+          item(
+            "Types of bank accounts (guide)",
+            "/netherlands/money/banking/types-of-accounts/",
+            "Easy read for expats: which Dutch account types exist and what people use them for."
+          ),
+          item(
+            "How payments work (guide)",
+            "/netherlands/money/banking/how-payments-work/",
+            "Everyday money in the Netherlands: paying rent and shops, online checkout, and bills — in plain language."
+          ),
           item("Bank comparison", "/netherlands/services/bank-comparison/"),
           item("Mortgage advisors", "/netherlands/services/mortgage-advisors/"),
           item("Financial advisors", "/netherlands/services/financial-advisors/"),
@@ -938,7 +1043,12 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item(
             "Payments basics",
             "/netherlands/living/payments/",
-            "PIN, contactless, Tikkie, and what usually works at Dutch tills—without duplicating full banking guides."
+            "Short Living overview of tills, apps, and habits — with links to deeper guides."
+          ),
+          item(
+            "Using your Dutch bank day to day (full guide)",
+            "/netherlands/money/banking/how-payments-work/",
+            "Rent, salary, paying in shops and online, and bills that go out automatically — plain English, step by step."
           ),
           item(
             "Shopping & groceries",

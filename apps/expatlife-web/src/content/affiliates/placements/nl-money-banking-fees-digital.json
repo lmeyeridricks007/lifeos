@@ -1,0 +1,20 @@
+{
+  "id": "nl-money-banking-fees-digital",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/fees/",
+    "slot": "recommended-providers-digital-fees"
+  },
+  "variant": "cards",
+  "title": "Digital banks & apps — compare subscription tiers",
+  "intro": "Plan-based pricing is common — read limits, ATM, and FX rules on each provider’s official NL disclosures.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    { "providerId": "bunq", "reason": "Dutch-licensed digital bank — compare subscription tiers and included cards on bunq’s pricing page." },
+    { "providerId": "revolut", "reason": "Multi-currency app — validate weekend and plan surcharges before relying on it for large sends." },
+    { "providerId": "n26", "reason": "Mobile euro account — confirm current NL product scope and fee schedule on N26’s site." }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm scope, pricing, and terms with the provider directly."
+}

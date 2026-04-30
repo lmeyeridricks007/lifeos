@@ -1,0 +1,29 @@
+{
+  "id": "nl-money-how-taxes-work-nl-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/how-taxes-work-in-the-netherlands/",
+    "slot": "mid-page-tax-foundation-support"
+  },
+  "variant": "cards",
+  "title": "Tax companies people compare after learning the tax map",
+  "intro": "Tax-focused providers only — useful when the system map points to a first Dutch return, 30% ruling question, self-employment, or cross-border facts that you want reviewed.",
+  "categoryOrder": ["tax"],
+  "items": [
+    {
+      "providerId": "blue-umbrella",
+      "reason": "Online Dutch tax filing and administration support for internationals."
+    },
+    {
+      "providerId": "broadstreet",
+      "reason": "Tax, accountancy, payroll, and cross-border support for expats and entrepreneurs."
+    },
+    {
+      "providerId": "taxsavers",
+      "reason": "Dutch tax return, M-form, 30% ruling, and VAT support for internationals."
+    }
+  ],
+  "disclosure": "These are tax-focused discovery listings, not endorsements or outcome guarantees. Links are currently non-affiliate unless marked otherwise. Always confirm scope, pricing, credentials, and terms with the provider directly."
+}

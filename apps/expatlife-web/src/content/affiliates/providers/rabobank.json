@@ -1,0 +1,25 @@
+{
+  "id": "rabobank",
+  "name": "Rabobank",
+  "tagline": "Cooperative Dutch bank with regional depth",
+  "categoryIds": ["banking"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Established"],
+  "highlights": [
+    "Strong domestic footprint and relationship-style banking in many areas",
+    "Typical path when you want a full-service Dutch retail stack"
+  ],
+  "cta": {
+    "label": "Explore on Rabobank",
+    "href": "https://www.rabobank.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/rabobank.svg",
+    "alt": "Rabobank logo"
+  }
+}

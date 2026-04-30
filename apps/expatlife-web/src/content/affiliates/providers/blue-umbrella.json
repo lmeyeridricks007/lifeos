@@ -1,0 +1,26 @@
+{
+  "id": "blue-umbrella",
+  "name": "Blue Umbrella",
+  "tagline": "Dutch tax filing and administration support for internationals in the Netherlands.",
+  "categoryIds": ["tax"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Tax support", "English support"],
+  "highlights": [
+    "Income tax return and allowance support",
+    "Dutch tax office communication support",
+    "Personal and business tax administration services"
+  ],
+  "cta": {
+    "label": "View Blue Umbrella",
+    "href": "https://www.blueumbrella.nl/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Confirm scope, pricing, and terms directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "Blue Umbrella"
+  }
+}

@@ -295,11 +295,11 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
   faq: [
     {
       q: "Is Living the same as registering with the municipality?",
-      a: "No. BRP registration, BSN, and visa steps live under **Move**. Living focuses on housing systems, utilities, daily rhythms, and light digital admin once you are settling in.",
+      a: "No. BRP registration, BSN, and visa steps live under Move. Living focuses on housing systems, utilities, daily rhythms, and light digital admin once you are settling in.",
     },
     {
       q: "Where do rent allowance or mortgage topics go?",
-      a: "Allowances, tax treatment, and buy-vs-rent economics sit under **Money**. Living links across when you need the full picture.",
+      a: "Allowances, tax treatment, and buy-vs-rent economics sit under Money. Living links across when you need the full picture.",
     },
     {
       q: "Why are some topic pages marked “coming soon”?",
@@ -307,7 +307,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
     },
     {
       q: "Can I skip Dutch language content here?",
-      a: "Day-to-day Living guides work in English, but language and integration context sits in the **Culture** cluster when you are ready.",
+      a: "Day-to-day Living guides work in English, but language and integration context sits in the Culture cluster when you are ready.",
     },
   ],
 };
@@ -538,11 +538,11 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
     },
     {
       q: "Are integration tools a substitute for DUO/IND answers?",
-      a: "Tools help you plan; always confirm obligations with **DUO**, **IND**, and your gemeente. Requirements vary by nationality and residence route.",
+      a: "Tools help you plan; always confirm obligations with DUO, IND, and your gemeente. Requirements vary by nationality and residence route.",
     },
     {
       q: "Where should I read about healthcare insurance?",
-      a: "Policy comparison belongs under **Money** and **Services**. We link to health *culture* basics here only for bedside-manner context.",
+      a: "Policy comparison belongs under Money and Services. We link to health *culture* basics here only for bedside-manner context.",
     },
   ],
 };

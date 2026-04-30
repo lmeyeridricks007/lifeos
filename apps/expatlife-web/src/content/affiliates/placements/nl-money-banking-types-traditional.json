@@ -1,0 +1,20 @@
+{
+  "id": "nl-money-banking-types-traditional",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/types-of-accounts/",
+    "slot": "recommended-providers-traditional-types"
+  },
+  "variant": "cards",
+  "title": "Traditional banks — explore account types",
+  "intro": "Neutral listings for ING, ABN AMRO, and Rabobank. Compare current, savings, joint, and business pages on each bank’s official site.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    { "providerId": "ing", "reason": "Retail packages for current, savings, and business — confirm which account type matches payroll and iDEAL needs on ING’s site." },
+    { "providerId": "abn-amro", "reason": "Branch-depth and English materials for many products — review personal vs business tabs before applying." },
+    { "providerId": "rabobank", "reason": "Cooperative retail bank — check regional pages for joint and student options where offered." }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm scope, pricing, and terms with the provider directly."
+}

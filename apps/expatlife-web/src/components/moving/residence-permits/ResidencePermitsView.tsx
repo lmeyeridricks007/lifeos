@@ -34,6 +34,7 @@ import {
 } from "@/lib/ui/moving-nl-pillar-identity";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { MovingImmigrationAffiliatesBlock } from "@/src/components/moving/MovingImmigrationAffiliatesBlock";
+import { TaxResidencyVsPermitOrientationCard } from "@/src/components/money/tax-residency-nl/TaxResidencyVsPermitOrientationCard";
 import { MovePillarExploreGrid } from "@/src/components/moving/MovePillarExploreGrid";
 import { MovePillarJourneyBridge } from "@/src/components/moving/MovePillarJourneyBridge";
 import {
@@ -45,6 +46,8 @@ import {
 import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc";
 import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
 import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
+import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
 import { ResidencePermitsHeroGraphic } from "./ResidencePermitsHeroGraphic";
 import { ResidencePermitsPermitBasicsGrid } from "./ResidencePermitsPermitBasicsGrid";
 import { ResidencePermitsSituationGrid } from "./ResidencePermitsSituationGrid";
@@ -75,6 +78,9 @@ const meta = moveResidencePermitsPageMeta;
 const CANONICAL = meta.canonicalPath;
 const PAGE_HERO_SUBTITLE = meta.hero.subtitle;
 const HUB = meta.movePillarHubPath;
+
+const RESIDENCE_PERMITS_INSTRUCTIONAL = getVisasResidencyInstructionalFigure("residence-permits");
+
 export function ResidencePermitsView() {
   const baseUrl = getSiteOrigin();
   const shareUrl = new URL(CANONICAL, baseUrl).toString();
@@ -254,6 +260,14 @@ export function ResidencePermitsView() {
           <PillarJourneyStack variant="guide">
             <MovePillarMobileToc items={meta.sectionNav} />
 
+            {RESIDENCE_PERMITS_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={RESIDENCE_PERMITS_INSTRUCTIONAL.raster}
+                caption={RESIDENCE_PERMITS_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
+
             <section
               className={cn(
                 SECTION_SCROLL_MARGIN,
@@ -269,6 +283,8 @@ export function ResidencePermitsView() {
                 className="mt-2 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
               />
             </section>
+
+            <TaxResidencyVsPermitOrientationCard samePageDetailAnchor={false} className={SECTION_SCROLL_MARGIN} />
 
             <MovePillarJourneyBridge
               id={meta.pillarJourneyBridge.id}

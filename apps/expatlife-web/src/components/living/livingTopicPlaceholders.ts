@@ -1,4 +1,5 @@
 import { LIVING_SURVIVAL_GUIDE_PATH } from "@/src/components/living/livingPillarContent";
+import type { LivingStartHereInstructionalKey } from "@/src/components/living/living-start-here-cluster/livingStartHereInstructionalRasterAssets";
 
 export type LivingTopicPlaceholderSpec = {
   /** Canonical path with trailing slash */
@@ -11,6 +12,8 @@ export type LivingTopicPlaceholderSpec = {
   bullets: string[];
   /** Shown as cards; include Survival Guide + tools/guides — all internal paths must be valid. */
   relatedLinks: Array<{ href: string; label: string; description: string }>;
+  /** Optional Living mega-menu style instructional figure (after intro). */
+  instructionalStartHereKey?: LivingStartHereInstructionalKey;
 };
 
 const SG = LIVING_SURVIVAL_GUIDE_PATH;
@@ -97,22 +100,33 @@ export const LIVING_PLACEHOLDER_WEATHER: LivingTopicPlaceholderSpec = {
 
 export const LIVING_PLACEHOLDER_PAYMENTS: LivingTopicPlaceholderSpec = {
   path: "/netherlands/living/payments/",
+  instructionalStartHereKey: "payments-basics",
   metaTitle: "Payments & everyday money in the Netherlands | Living",
   metaDescription:
-    "PIN, contactless, iDEAL, and how spending works day to day—Living guide expanding soon; Money tools and Survival Guide.",
+    "How paying in shops and apps usually feels in the Netherlands — short Living overview with links to a full Money guide and tools.",
   h1: "Payments & everyday money in the Netherlands",
   breadcrumbLabel: "Payments & money basics",
   intro:
-    "Before tax deep dives, there’s how tills and apps actually behave—debit-first, contactless everywhere, and iDEAL-shaped habits. We’re building the full page; here’s the roadmap.",
+    "This page will grow into a fuller Living guide. For now, think of the Netherlands as debit-first: contactless in most shops, and many online purchases finished inside your bank app instead of typing card details on the shop’s website. Below you will find calm, practical links — including a step-by-step Money guide.",
   bullets: [
-    "What shops expect at the terminal (and why “credit card culture” feels different)",
-    "iDEAL, subscriptions, and rent—how payments connect once you have a Dutch account",
-    "Cash, tipping, and split bills—low drama, clear defaults",
-    "Safety and scams at a practical level (not fear-mongering)",
-    "When to jump to Money guides for banking, insurance, and tax",
+    "What most shop card readers expect (and why paying can feel different from home)",
+    "How rent, subscriptions, and household bills usually connect once you have a Dutch bank account",
+    "Cash, tipping, and splitting a bill — simple defaults",
+    "Staying alert to scams without scare stories",
+    "When to use Money guides for choosing a bank, insurance, and tax orientation",
   ],
   relatedLinks: [
     { href: SG, label: "Netherlands Survival Guide", description: "Living pillar entry point." },
+    {
+      href: "/netherlands/money/banking/how-payments-work/",
+      label: "How paying in the Netherlands works (full guide)",
+      description: "Plain-language walkthrough: account number, online checkout, rent, salary, and bills.",
+    },
+    {
+      href: "/netherlands/money/banking/types-of-accounts/",
+      label: "Types of bank accounts",
+      description: "Dutch current, savings, joint, student, business, and digital accounts — education from Money.",
+    },
     { href: "/netherlands/money/tools/", label: "Money tools hub", description: "Calculators and budgeting helpers." },
     { href: "/netherlands/money/tools/cost-of-living-calculator/", label: "Cost of living calculator", description: "Stress-test monthly cash flow." },
     { href: "/netherlands/services/banks/", label: "Banks directory", description: "When you’re choosing an account." },

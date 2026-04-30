@@ -10,21 +10,21 @@ const workSection = {
   eyebrow: "Work-linked changes",
   title: "Work-related status changes",
   subtitle:
-    "If your stay is tied to work, the real question is rarely just **“Can I take this job?”** It is usually **employer + contract setup + continuity + timing** together.",
+    "If your stay is tied to work, the real question is rarely just “Can I take this job?” It is usually employer + contract setup + continuity + timing together.",
   intro:
-    "Changing employer, changing contract structure, losing a job, or moving into a different work model can all raise **status questions**. The useful move is to clarify the **permit or sponsor angle early**, while dates, contracts, payroll, rent, and insurance are still flexible enough to plan around.",
+    "Changing employer, changing contract structure, losing a job, or moving into a different work model can all raise status questions. The useful move is to clarify the permit or sponsor angle early, while dates, contracts, payroll, rent, and insurance are still flexible enough to plan around.",
   scenarioCards: [
     {
       id: "employer-change",
       chip: "Employer change",
       iconKey: "jobChange",
       title: "Changing employers",
-      intro: "A new job can bring a **new sponsor setup**, new paperwork, and a different timing window from the one you had before.",
+      intro: "A new job can bring a new sponsor setup, new paperwork, and a different timing window from the one you had before.",
       whoItAffects: "Workers whose stay is linked to a job, sponsor, or employer change.",
       keyPoints: [
-        "Ask whether your current stay is tied to a **specific recognised sponsor** or employment setup.",
-        "Check who needs to notify whom and **when**.",
-        "Use job and contract tools so the move is not judged on **salary alone**.",
+        "Ask whether your current stay is tied to a specific recognised sponsor or employment setup.",
+        "Check who needs to notify whom and when.",
+        "Use job and contract tools so the move is not judged on salary alone.",
       ],
       whatMattersNext:
         "Clarify sponsor and timing before contracts are final, then pressure-test the practical side of the switch with work and pay tools.",
@@ -45,9 +45,9 @@ const workSection = {
         "Permanent vs temporary, payroll vs contractor, hours, secondment, and role design can all matter for how your stay works in practice.",
       whoItAffects: "People whose work arrangement is changing even if the employer name stays the same.",
       keyPoints: [
-        "Look at the **whole arrangement**, not just job title.",
-        "Clarify whether the new structure changes **continuity** or documentation.",
-        "Stress-test the switch with the **employment type** and **salary** tools.",
+        "Look at the whole arrangement, not just job title.",
+        "Clarify whether the new structure changes continuity or documentation.",
+        "Stress-test the switch with the employment type and salary tools.",
       ],
       whatMattersNext:
         "Check whether the structure change alters the legal or sponsor story, then use scenario tools before assuming the admin path stays identical.",
@@ -65,7 +65,7 @@ const workSection = {
       whoItAffects: "Workers whose contract is ending, whose role has ended, or who may need a new basis of stay quickly.",
       keyPoints: [
         "Do not wait until the final week to ask what your next route could be.",
-        "Plan for **income**, **rent**, and **insurance** at the same time.",
+        "Plan for income, rent, and insurance at the same time.",
         "Use ExpatCopilot to map the options, then confirm the official rules for your case.",
       ],
       whatMattersNext:
@@ -85,7 +85,7 @@ const workSection = {
       intro: "A short conversation while contracts are still flexible often saves a lot of later admin stress.",
       whoItAffects: "Anyone discussing an offer, contract revision, transfer, or employer-backed move.",
       keyPoints: [
-        "Which **permit type** or sponsor category is relevant?",
+        "Which permit type or sponsor category is relevant?",
         "What documents or updates do they need from you before the change is final?",
         "How does the timeline interact with notice periods, start dates, and payroll?",
       ],
@@ -155,14 +155,14 @@ const routeCategories = {
       title: "Study-to-work or study ending",
       intro:
         "For people finishing a degree, ending an exchange, or changing study arrangements and trying to understand what their next basis of stay could be.",
-      whoItAffects: "**Students** who can see the current study-based setup starting to end or shift.",
+      whoItAffects: "Students who can see the current study-based setup starting to end or shift.",
       keyPoints: [
         "Track when the study-based setup ends and when the next route needs to begin.",
         "Do not separate work planning from insurance and housing timing.",
         "Use route-comparison pages before you lock in contracts or travel assumptions.",
       ],
       whatMattersNext:
-        "Map the hand-off between **study ending** and **what comes next**, especially if work, insurance, and housing plans are already moving.",
+        "Map the hand-off between study ending and what comes next, especially if work, insurance, and housing plans are already moving.",
       relatedLinks: [
         { label: "Student visa guide", href: "/netherlands/visa/student-visa/" },
         { label: "Compare visa routes", href: "/netherlands/visa/compare-visas/" },
@@ -176,14 +176,14 @@ const routeCategories = {
       title: "Partner / family changes",
       intro:
         "For people whose residence picture depends on relationship, household, or family facts that are no longer the same as before.",
-      whoItAffects: "**Partners, families, and caregivers** whose home situation is changing and who need to understand what that could trigger next.",
+      whoItAffects: "Partners, families, and caregivers whose home situation is changing and who need to understand what that could trigger next.",
       keyPoints: [
         "Residence and household admin often move together here.",
         "Address registration, childcare, and school planning can become part of the same decision.",
         "Budgeting and insurance continuity are usually easier to manage when checked early.",
       ],
       whatMattersNext:
-        "Check both the **residence angle** and the **household setup**: address registration, childcare, school decisions, insurance, and budgeting often move together.",
+        "Check both the residence angle and the household setup: address registration, childcare, school decisions, insurance, and budgeting often move together.",
       relatedLinks: [
         { label: "Partner & family visa", href: "/netherlands/visa/partner-family-visa/" },
         { label: "Moving with family", href: "/netherlands/moving-to-netherlands-with-family/" },
@@ -196,7 +196,7 @@ const routeCategories = {
       iconKey: "selfEmployed",
       title: "Self-employed / entrepreneur changes",
       intro: "For freelancers, founders, and small-business owners moving into or reshaping a business-based stay.",
-      whoItAffects: "**ZZP workers, founders, and future entrepreneurs** whose basis of stay may need to align with business activity instead of employment or study.",
+      whoItAffects: "ZZP workers, founders, and future entrepreneurs whose basis of stay may need to align with business activity instead of employment or study.",
       keyPoints: [
         "Business-based stay usually needs earlier planning than people expect.",
         "Continuity, paperwork, and how the activity is described all matter.",
@@ -217,7 +217,7 @@ const routeCategories = {
       title: "Other / mixed changes",
       intro:
         "For people already in the Netherlands who are no longer sure whether their current real-life setup still matches the old status story.",
-      whoItAffects: "**Anyone saying “I’m already here, but…”** and trying to understand whether a life change is small admin or something more structural.",
+      whoItAffects: "Anyone saying “I’m already here, but…” and trying to understand whether a life change is small admin or something more structural.",
       keyPoints: [
         "List what changed, when it changed, and what your current basis is supposed to be.",
         "You do not need the full answer before you open the right sibling guide.",

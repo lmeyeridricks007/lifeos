@@ -106,10 +106,11 @@ export const movingNlSectionH2StagesSignatureClass =
   "scroll-mt-24 text-2xl font-bold tracking-tight text-white drop-shadow-sm sm:text-3xl md:text-[2rem] md:leading-[1.15]";
 
 export const movingNlSectionSubtitleClass =
-  "mt-2.5 max-w-3xl text-base leading-relaxed text-copilot-text-secondary sm:mt-3 sm:text-[1.0625rem]";
+  "mt-2.5 w-full min-w-0 max-w-none text-pretty text-base leading-relaxed text-copilot-text-secondary sm:mt-3 sm:text-[1.0625rem]";
 
+/** Full width of the dark band — avoids `max-w-3xl` orphans on wide layouts (e.g. trade-off intros). */
 export const movingNlSectionSubtitleOnDarkClass =
-  "mt-3 max-w-3xl text-base font-normal leading-relaxed text-slate-100 sm:mt-4 sm:text-[1.0625rem] sm:leading-relaxed";
+  "mt-3 w-full min-w-0 max-w-none text-base font-normal leading-relaxed text-slate-100 sm:mt-4 sm:text-[1.0625rem] sm:leading-relaxed";
 
 /** Cards — shadow-first */
 export const movingNlCardShadowClass = "border-0 shadow-expatos-md";

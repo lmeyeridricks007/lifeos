@@ -75,7 +75,7 @@ function dedupeToolCtas(ctas: GuideToolCta[] | undefined): GuideToolCta[] | unde
 function mergeTwoPlainSections(a: GuideSection, b: GuideSection): GuideSection {
   const bodyA = a.body ?? [];
   const bodyB = b.body ?? [];
-  const mergedBody = [...bodyA, `**${b.heading}**`, ...bodyB];
+  const mergedBody = [...bodyA, `${b.heading}`, ...bodyB];
   return {
     id: `${a.id}_with_${b.id}`,
     heading: a.heading,

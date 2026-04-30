@@ -17,7 +17,7 @@ export const moveResigningJobToolsRegion = {
   id: "helpful-tools",
   title: "Helpful tools & related guides",
   subtitle:
-    "A **short sequence** of high-signal links, then **Explore the Move pillar** for hubs and adjacent guides — **one** follow-up per visit is enough.",
+    "A short sequence of high-signal links, then Explore the Move pillar for hubs and adjacent guides — one follow-up per visit is enough.",
 } satisfies MoveResigningJobToolsRegionConfig;
 
 /** Tight “next clicks” strip; wider discovery is the Explore grid below. */
@@ -25,7 +25,7 @@ export const moveResigningJobToolsJourneySnapshot = {
   eyebrow: "Product map",
   title: "A sensible sequence after this page",
   subtitle:
-    "**Contract** pass first → **permits** if stay might move with the job → rough **net pay and rent** so the exit date is honest → **Changing jobs** only when a next offer is real.",
+    "Contract pass first → permits if stay might move with the job → rough net pay and rent so the exit date is honest → Changing jobs only when a next offer is real.",
   steps: [
     { href: ROUTES.contractScanner, label: "Contract risk scanner", description: "Surface exit and clause questions before you commit to dates.", meta: "Work" },
     { href: ROUTES.residencePermits, label: "Residence permits", description: "When purpose or continuity of stay is unclear.", meta: "Move" },

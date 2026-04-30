@@ -4,7 +4,7 @@ const LOGOS = "/images/affiliates/logos";
 
 export const banksForExpatsPage: BestProvidersPageContent = {
   slug: "banks-for-expats",
-  path: "/netherlands/best/banks-for-expats/",
+  path: "/netherlands/money/banking/best-banks-expats/",
   seo: {
     title: "Banks for expats in the Netherlands | Curated comparison",
     description:
@@ -22,8 +22,8 @@ export const banksForExpatsPage: BestProvidersPageContent = {
     subtitle:
       "A short, decision-oriented overview—not a directory. We focus on how people actually use accounts after moving: salary, rent, iDEAL, and English-friendly setup.",
     image: {
-      src: "/images/heroes/open-bank-account-netherlands.png",
-      alt: "Expat planning banking setup in the Netherlands with laptop and documents",
+      src: "/images/heroes/netherlands-tools-hub-hero.png",
+      alt: "Netherlands expat planning desk with laptop — editorial hero for money and banking tools on ExpatCopilot",
       priority: true,
     },
   },
@@ -46,7 +46,7 @@ export const banksForExpatsPage: BestProvidersPageContent = {
   },
   shortlist: {
     title: "Quick shortlist",
-    subtitle: "Ranked for scanning; details and trade-offs are in the table and cards below.",
+    subtitle: "Ordered for quick scanning — not a paid ranking. Details and trade-offs are in the table and cards on the full guide.",
   },
   comparison: {
     title: "Comparison at a glance",
@@ -75,6 +75,7 @@ export const banksForExpatsPage: BestProvidersPageContent = {
     "Some links may be partner links. We only include options we believe are relevant to this topic. This page is informational—not financial, tax, or legal advice.",
   affiliateNote: "Affiliate relationships are not active for all providers listed; outbound links may be direct until partner programmes are connected.",
   relatedLinks: [
+    { label: "Best banks for expats (full decision guide)", href: "/netherlands/money/banking/best-banks-expats/" },
     { label: "Open a bank account guide", href: "/netherlands/open-bank-account-netherlands/" },
     { label: "Compare all banks (services hub)", href: "/netherlands/services/banks/" },
     { label: "Moving checklist", href: "/netherlands/moving/tools/moving-checklist/" },

@@ -670,6 +670,13 @@ export const livingShoppingRelatedTools: LivingShoppingRelatedTools = {
     "Start with this guide, Survival Guide, Daily Life Basics, and Essential Apps when you need the routine. Then use the tools below when groceries, convenience, childcare, utilities, or city choice need a clearer monthly picture.",
   cards: [
     {
+      title: "How payments work",
+      description: "IBAN, iDEAL, and checkout habits next to supermarket spending — Money · Banking education before you rely on one card for everything.",
+      href: "/netherlands/money/banking/how-payments-work/",
+      ctaLabel: "Read payments guide",
+      iconKey: "smartphone",
+    },
+    {
       title: "Cost of Living Calculator",
       description: "Turn groceries, transport, rent, and household spending into a monthly planning band instead of guessing from single receipts.",
       href: "/netherlands/money/tools/cost-of-living-calculator/",

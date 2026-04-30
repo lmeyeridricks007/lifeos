@@ -8,6 +8,7 @@ import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates"
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { buildNetherlandsGuideAffiliateSlots } from "@/src/components/monetization";
+import { getEarlySetupInstructionalFigure } from "@/src/components/moving/early-setup-cluster/earlySetupInstructionalRasterAssets";
 
 const baseUrl = getSiteOrigin();
 const SLUG = "digid-awareness";
@@ -76,6 +77,8 @@ export default async function DigidAwarenessPage() {
   const { contextualAffiliateAfterFirstSection, contextualAffiliateBeforeNextSteps } =
     buildNetherlandsGuideAffiliateSlots(SLUG, data.path);
 
+  const planningInstructionalFigure = getEarlySetupInstructionalFigure(SLUG);
+
   return (
     <>
       <BreadcrumbJsonLd crumbs={breadcrumbCrumbs} />
@@ -92,6 +95,7 @@ export default async function DigidAwarenessPage() {
         canonicalUrl={new URL(data.path.startsWith("/") ? data.path : `/${data.path}`, baseUrl).toString()}
         contextualAffiliateAfterFirstSection={contextualAffiliateAfterFirstSection}
         contextualAffiliateBeforeNextSteps={contextualAffiliateBeforeNextSteps}
+        planningInstructionalFigure={planningInstructionalFigure}
       />
     </>
   );

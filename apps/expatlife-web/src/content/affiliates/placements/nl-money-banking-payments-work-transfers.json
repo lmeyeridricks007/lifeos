@@ -1,0 +1,19 @@
+{
+  "id": "nl-money-banking-payments-work-transfers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/how-payments-work/",
+    "slot": "recommended-providers-transfer-payments"
+  },
+  "variant": "cards",
+  "title": "Transfers & multi-currency — compare total cost",
+  "intro": "For non-euro or cross-border sends, compare amount received and FX on each provider’s calculator — not headline fee alone.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    { "providerId": "wise", "reason": "International transfers — run the same corridor through Wise and your bank to compare all-in cost." },
+    { "providerId": "revolut", "reason": "Also used for FX-heavy sends — read plan limits and fee windows on Revolut’s official pricing page." }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm scope, pricing, and terms with the provider directly."
+}

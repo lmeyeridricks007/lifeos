@@ -13,12 +13,12 @@ export const moveExtensionsChangesShell = {
     eyebrow: "Netherlands · Moving",
     pageTitle: "Extensions & Changes in the Netherlands",
     subtitle:
-      "After you land, life keeps moving. This page maps **renewals**, **work and study shifts**, **family changes**, and **route switches** — what to notice, what often needs a follow-up, and **where to read next**.",
+      "After you land, life keeps moving. This page maps renewals, work and study shifts, family changes, and route switches — what to notice, what often needs a follow-up, and where to read next.",
     bullets: [
-      "See when a **change in work, study, family, or business** might touch your permit or sponsor story",
-      "Build **time on the calendar** for renewals and transitions — before everything piles up",
-      "Scan **seven common situations** and open the guide or tool that fits",
-      "Use ExpatCopilot for **orientation**; confirm outcomes with **IND**, Government.nl, or an adviser",
+      "See when a change in work, study, family, or business might touch your permit or sponsor story",
+      "Build time on the calendar for renewals and transitions — before everything piles up",
+      "Scan seven common situations and open the guide or tool that fits",
+      "Use ExpatCopilot for orientation; confirm outcomes with IND, Government.nl, or an adviser",
     ],
     primaryCta: { label: "Start with the common situations", href: "#common-situations" },
     secondaryCta: { label: "See what often changes after arrival", href: "#start-here" },
@@ -33,29 +33,29 @@ export const moveExtensionsChangesShell = {
     cells: [
       {
         title: "What this page is for",
-        body: "**Orientation** when your **permit, sponsor, or life picture** may need an update — not a decision on your case.",
+        body: "Orientation when your permit, sponsor, or life picture may need an update — not a decision on your case.",
       },
       {
         title: "Best for",
-        body: "**Already in the Netherlands** — employed, studying, with a partner or family, self-employed, or watching an **end date** approach.",
+        body: "Already in the Netherlands — employed, studying, with a partner or family, self-employed, or watching an end date approach.",
       },
       {
         title: "What it covers",
-        body: "**Typical extension and change paths**, **what to track on a timeline**, **life admin** that moves in parallel, and **links** into deeper guides and tools.",
+        body: "Typical extension and change paths, what to track on a timeline, life admin that moves in parallel, and links into deeper guides and tools.",
       },
       {
         title: "What it skips",
-        body: "**Binding legal answers** and **step-by-step IND procedure** for every nationality — use **official sources** or **qualified help** for the final word.",
+        body: "Binding legal answers and step-by-step IND procedure for every nationality — use official sources or qualified help for the final word.",
       },
     ],
-    note: "**Small shifts** (job, address, study end) can matter more than the headline “I’m already here.” Use this page to **spot the thread**; use **official channels** when stakes are high.",
+    note: "Small shifts (job, address, study end) can matter more than the headline “I’m already here.” Use this page to spot the thread; use official channels when stakes are high.",
   },
   commonSituationsRegion: {
     id: "common-situations",
     eyebrow: "Route orientation",
     title: "The most common extension / change situations",
     subtitle:
-      "Seven patterns after arrival. Each card: **who it fits**, **what to do next**, and a **single link** — no need to read everything.",
+      "Seven patterns after arrival. Each card: who it fits, what to do next, and a single link — no need to read everything.",
   },
   sectionNav: [
     { href: "#at-a-glance", label: "At a glance" },
@@ -122,6 +122,11 @@ export const moveExtensionsChangesShell = {
       label: "Compare visa routes",
       description: "High-level comparison when you might switch basis.",
     },
+    {
+      href: "/netherlands/money/tax-residency-netherlands/",
+      label: "Tax residency in the Netherlands",
+      description: "Tax vs permit framing when renewals or changes sit next to payroll or cross-border years — orientation only.",
+    },
   ],
   progressionSteps: [
     {
@@ -134,25 +139,25 @@ export const moveExtensionsChangesShell = {
       id: "check",
       label: "Check if it may affect residence / admin",
       href: "#start-here",
-      description: "Quick pass on **purpose** and **dates** — no need to catastrophise.",
+      description: "Quick pass on purpose and dates — no need to catastrophise.",
     },
     {
       id: "official",
       label: "Confirm with official guidance or help",
       href: "#official-sources",
-      description: "**IND**, Government.nl, gemeente, or an adviser when the answer must be **binding**.",
+      description: "IND, Government.nl, gemeente, or an adviser when the answer must be binding.",
     },
     {
       id: "life",
       label: "Review practical life areas",
       href: "#life-impact",
-      description: "Work, housing, insurance, BSN, family — what might move **alongside** the permit.",
+      description: "Work, housing, insurance, BSN, family — what might move alongside the permit.",
     },
     {
       id: "tools",
       label: "Open the right ExpatCopilot tools",
       href: "#helpful-tools",
-      description: "Salary, rent, allowance, childcare — **one** tool block per sitting.",
+      description: "Salary, rent, allowance, childcare — one tool block per sitting.",
     },
   ],
   continueMove: {
@@ -222,13 +227,13 @@ export const moveExtensionsChangesShell = {
     id: "helpful-tools",
     title: "Helpful tools & related guides",
     subtitle:
-      "Same rhythm as the **Move hub**: **permits and planners** first, then **work & pay**, **money**, **housing & living** — **one** strip per visit.",
+      "Same rhythm as the Move hub: permits and planners first, then work & pay, money, housing & living — one strip per visit.",
   },
   toolsJourneySnapshot: {
     eyebrow: "Product map",
     title: "Where this page sits in the Move pillar",
     subtitle:
-      "**After-arrival** layer: you may have seen **Visas** or **Permits** already. When life shifts, loop **hub → orientation → tools** — same stack as the rest of Move.",
+      "After-arrival layer: you may have seen Visas or Permits already. When life shifts, loop hub → orientation → tools — same stack as the rest of Move.",
     steps: [
       {
         href: HUB,
@@ -283,20 +288,20 @@ export const moveExtensionsChangesShell = {
   misunderstandingsRegion: {
     eyebrow: "Reality check",
     title: "What people often misunderstand",
-    subtitle: "Short reminders when **blog posts** and **your permit type** don’t line up.",
+    subtitle: "Short reminders when blog posts and your permit type don’t line up.",
   },
   whatNextRegion: {
     eyebrow: "How to use this page",
     title: "How to use this page and what to do next",
     subtitle:
-      "Five steps — know the **shape** of your situation, **which cluster** you’re in, and **what to open next**. Finish another step **another day**.",
+      "Five steps — know the shape of your situation, which cluster you’re in, and what to open next. Finish another step another day.",
   },
   pillarJourneyBridge: {
     id: "move-pillar-context",
     eyebrow: "Inside the Move pillar",
     title: "How this page connects to the rest of ExpatCopilot",
     intro:
-      "**Visas & residency** = route choice. **Residence permits** = how a permit **lives over time**. **This page** = **after arrival** when dates or life shift. Links below span **Move, Work, Money, Housing, Living**; scroll to **Helpful tools** for the full numbered lists.",
+      "Visas & residency = route choice. Residence permits = how a permit lives over time. This page = after arrival when dates or life shift. Links below span Move, Work, Money, Housing, Living; scroll to Helpful tools for the full numbered lists.",
     links: [
       { href: HUB, label: "Moving to the Netherlands (hub)", description: "Same pillar home as Visas & residency and Residence permits.", meta: "Move" },
       { href: VISAS, label: "Visas & residency orientation", description: "Doorway cards for work, study, family, and ZZP.", meta: "Move" },

@@ -3,6 +3,9 @@
  * Import from here in config slices so hrefs stay consistent.
  */
 export const citiesBestForExpatsRoutes = {
+  cheapestCitiesForExpats: "/netherlands/cities/cheapest-cities-for-expats/",
+  bestCitiesForFamilies: "/netherlands/cities/best-cities-for-families/",
+  bestCitiesForInternationalProfessionals: "/netherlands/cities/best-cities-for-international-professionals/",
   cityComparison: "/netherlands/tools/city-comparison/",
   costOfLiving: "/netherlands/money/tools/cost-of-living-calculator/",
   rentAffordability: "/netherlands/housing/tools/rent-affordability-calculator/",
@@ -26,6 +29,9 @@ export const citiesBestForExpatsRoutes = {
   documentReadiness: "/netherlands/document-readiness-checker/",
   healthInsuranceGuide: "/netherlands/health-insurance-netherlands/",
   openBankGuide: "/netherlands/open-bank-account-netherlands/",
+  /** Career / tax tools referenced from international-professionals city guide. */
+  dutchSalaryNetCalculator: "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+  thirtyPercentRulingCalculator: "/netherlands/taxes/tools/30-ruling-calculator/",
 } as const;
 
 export type CitiesBestForExpatsRouteKey = keyof typeof citiesBestForExpatsRoutes;

@@ -38,14 +38,20 @@ export function sortNavItemsForDisplay(items: NavItem[]): NavItem[] {
 }
 
 /**
- * Mega menu section columns: keep live → coming soon → roadmap, but preserve the order items are
- * authored in `config.ts` within each group (alphabetical sort would override editorial order).
+ * Mega menu section columns: by default live → coming soon → hidden, preserving authored order
+ * within each status bucket. Pass `comingSoonFirst` to show roadmap rows before live links.
  */
-export function orderMegaMenuSectionItems(items: NavItem[]): NavItem[] {
+export function orderMegaMenuSectionItems(
+  items: NavItem[],
+  options?: { comingSoonFirst?: boolean }
+): NavItem[] {
   const rank = (s: NavItemNavStatus) => (s === "live" ? 0 : s === "comingSoon" ? 1 : 2);
   const buckets: NavItem[][] = [[], [], []];
   for (const it of items) {
     buckets[rank(it.navStatus)]!.push(it);
+  }
+  if (options?.comingSoonFirst) {
+    return [...buckets[1]!, ...buckets[0]!, ...buckets[2]!];
   }
   return buckets.flat();
 }

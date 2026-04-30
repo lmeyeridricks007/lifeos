@@ -47,6 +47,8 @@ import {
 } from "@/src/components/moving/movePillarCardPrimitives";
 import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc";
 import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
+import { getWorkPermitsJobChangesInstructionalFigure } from "@/src/components/moving/work-permits-job-changes-cluster/workPermitsJobChangesInstructionalRasterAssets";
 import { ChangingJobsNetherlandsStartHereGrid } from "@/src/components/moving/changing-jobs-netherlands/ChangingJobsNetherlandsStartHereGrid";
 import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
 import type {
@@ -79,6 +81,7 @@ const PHASE_HINT_CHIP_SECOND =
   "inline-flex rounded-full border border-slate-200/90 bg-white/90 px-2 py-0.5 text-[9px] font-bold uppercase tracking-[0.12em] text-slate-700";
 
 const meta = layoffsNlPageMeta;
+const WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL = getWorkPermitsJobChangesInstructionalFigure("layoffs-netherlands");
 const CANONICAL = meta.canonicalPath;
 const PAGE_HERO_SUBTITLE = meta.hero.subtitle;
 const HUB = meta.movePillarHubPath;
@@ -355,6 +358,14 @@ export function LayoffsNetherlandsView() {
           <PillarJourneyStack variant="guide" density="compact" className="gap-1 sm:gap-2 md:gap-3">
             <MovePillarMobileToc items={meta.sectionNav} />
 
+            {WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL.raster}
+                caption={WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
+
             <section
               className={cn(
                 SECTION_SCROLL_MARGIN,
@@ -421,7 +432,7 @@ export function LayoffsNetherlandsView() {
                       />
                       {tip.bestFor ? (
                         <BoldParagraph
-                          text={`**Best for:** ${tip.bestFor}`}
+                          text={`Best for: ${tip.bestFor}`}
                           className="mt-2 text-[12px] leading-snug text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
                         />
                       ) : null}
@@ -672,7 +683,7 @@ function JourneySectionFour({
             />
             {stage.bestFor ? (
               <BoldParagraph
-                text={`**Best for:** ${stage.bestFor}`}
+                text={`Best for: ${stage.bestFor}`}
                 className="mt-2 text-[11px] leading-snug text-foreground-muted sm:text-xs [&_strong]:font-semibold [&_strong]:text-foreground"
               />
             ) : null}
@@ -737,7 +748,7 @@ function CardGridSection({
             />
             {card.bestFor ? (
               <BoldParagraph
-                text={`**Best for:** ${card.bestFor}`}
+                text={`Best for: ${card.bestFor}`}
                 className="mt-2 text-[11px] leading-snug text-foreground-muted sm:text-xs [&_strong]:font-semibold [&_strong]:text-foreground"
               />
             ) : null}
@@ -819,7 +830,7 @@ function PracticalLifeSection({ region }: { region: ChangingJobsNlPracticalLifeS
             ) : null}
             {card.bestFor ? (
               <BoldParagraph
-                text={`**Best for:** ${card.bestFor}`}
+                text={`Best for: ${card.bestFor}`}
                 className="mt-2 text-[11px] leading-snug text-foreground-muted sm:text-xs [&_strong]:font-semibold [&_strong]:text-foreground"
               />
             ) : null}

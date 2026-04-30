@@ -8,6 +8,13 @@ import {
   movingNlSectionSubtitleOnDarkClass,
 } from "@/lib/ui/moving-nl-pillar-identity";
 
+/** City funnel guides — each major section reads as its own panel (not flat page chrome). */
+const funnelFramedSurfaceClass =
+  "rounded-2xl border border-border/55 bg-gradient-to-b from-surface-muted/45 via-surface-raised to-surface-muted/30 shadow-sm ring-1 ring-border/20";
+
+const funnelFramedPadComfortable = "px-5 pb-8 pt-7 sm:px-7 sm:pb-10 sm:pt-8";
+const funnelFramedPadCompact = "px-5 pb-7 pt-5 sm:px-6 sm:pb-8 sm:pt-6";
+
 export type SectionBlockProps = {
   id?: string;
   /** Small uppercase label above the H2 (e.g. signature dark bands). */
@@ -35,6 +42,11 @@ export type SectionBlockProps = {
    * (e.g. “Reality check” / common misunderstandings bands).
    */
   wrapInPanel?: boolean;
+  /**
+   * Netherlands city funnel pillar guides — bordered surface so this section is visually
+   * distinct from neighbours (ignored when `tone="onDark"`).
+   */
+  funnelFramed?: boolean;
 };
 
 /** Consistent vertical spacing for major page sections. */
@@ -53,15 +65,20 @@ export function SectionBlock({
   subtitleClassName,
   contentClassName,
   wrapInPanel,
+  funnelFramed,
 }: SectionBlockProps) {
   const headingId = id ? `${id}-heading` : undefined;
   const onDark = tone === "onDark";
+  const framed = Boolean(funnelFramed && !onDark);
   const h2Default = onDark ? movingNlSectionH2OnDarkClass : movingNlSectionH2Class;
   const h2Class = titleClassName ?? h2Default;
   const subDefault = onDark ? movingNlSectionSubtitleOnDarkClass : movingNlSectionSubtitleClass;
   const subClass = subtitleClassName ?? subDefault;
   const contentGap = contentClassName ?? (compact ? "mt-5 sm:mt-6" : onDark ? "mt-7 sm:mt-8" : "mt-6 sm:mt-7");
   const sectionTopPad = onDark ? "pt-0" : wrapInPanel ? "pt-1 sm:pt-2" : compact ? "pt-4 sm:pt-5" : "pt-8 sm:pt-9";
+  const sectionSurfacePad = framed
+    ? cn(funnelFramedSurfaceClass, compact ? funnelFramedPadCompact : funnelFramedPadComfortable)
+    : sectionTopPad;
   const body = (
     <>
       {eyebrow ? (
@@ -87,7 +104,7 @@ export function SectionBlock({
     </>
   );
   return (
-    <section id={id} aria-labelledby={headingId} className={cn("min-w-0", sectionTopPad, className)}>
+    <section id={id} aria-labelledby={headingId} className={cn("min-w-0", sectionSurfacePad, className)}>
       {wrapInPanel && !onDark ? (
         <div className="rounded-2xl border border-slate-200/90 bg-slate-50 px-4 py-6 shadow-sm ring-1 ring-slate-900/[0.03] sm:px-6 sm:py-8">
           {body}

@@ -37,7 +37,7 @@ export const PAYSLIP_HERO = {
   primaryCtaLabel: "Start decoding",
   primaryCtaScrollToId: "tool-inputs",
   secondaryCtaLabel: "Learn how Dutch payslips work",
-  secondaryCtaHref: `${NETHERLANDS_BASE}/taxes/how-taxes-work-netherlands/`,
+  secondaryCtaHref: `${NETHERLANDS_BASE}/money/how-taxes-work-in-the-netherlands/`,
   image: {
     src: "/images/heroes/netherlands-payslip-decoder-hero.png",
     alt: "Stylized payslip and payroll illustration for the Dutch Payslip Decoder — no real salary data.",
@@ -170,6 +170,21 @@ export const PAYSLIP_SOFTWARE_APP_DESCRIPTION =
 
 export const PAYSLIP_RELATED_NEXT_STEPS = [
   {
+    href: `${NETHERLANDS_BASE}/money/tax-guide-for-expats/`,
+    title: "Netherlands Tax Guide for Expats",
+    description: "Money → Tax orientation before you lean on any single calculator or payslip readout.",
+  },
+  {
+    href: `${NETHERLANDS_BASE}/money/expat-taxes-netherlands/`,
+    title: "Expat Taxes in the Netherlands",
+    description: "Scenario-led Money page when payroll is only one part of your expat tax story.",
+  },
+  {
+    href: `${NETHERLANDS_BASE}/money/taxes/tax-advisors/`,
+    title: "Tax advisors for expats",
+    description: "When paid help may be worth comparing — after you understand payslip lines and your wider tax picture.",
+  },
+  {
     href: `${NETHERLANDS_BASE}/moving/working-in-the-netherlands/`,
     title: "Working in the Netherlands",
     description: "Move-focused guide linking payroll reality back to offers, salary, housing, and first-month setup.",
@@ -190,6 +205,11 @@ export const PAYSLIP_RELATED_NEXT_STEPS = [
     description: "Indicative gross-to-net planning — companion to reading a payslip, not payroll.",
   },
   {
+    href: `${NETHERLANDS_BASE}/money/taxes/30-percent-ruling/`,
+    title: "30% ruling in the Netherlands",
+    description: "Editorial guide to facility lines and employer payroll — before or alongside the calculator.",
+  },
+  {
     href: `${NETHERLANDS_BASE}/taxes/tools/30-ruling-calculator/`,
     title: "30% ruling calculator",
     description: "Separate tool for facility norms — not a payslip reader.",
@@ -205,9 +225,14 @@ export const PAYSLIP_RELATED_NEXT_STEPS = [
     description: "Broader filing and withholding orientation.",
   },
   {
-    href: `${NETHERLANDS_BASE}/taxes/how-taxes-work-netherlands/`,
+    href: `${NETHERLANDS_BASE}/money/how-taxes-work-in-the-netherlands/`,
     title: "How Dutch taxes work",
     description: "Payroll withholding vs annual filing — useful once you can read your payslip lines.",
+  },
+  {
+    href: `${NETHERLANDS_BASE}/money/tax-residency-netherlands/`,
+    title: "Tax residency in the Netherlands",
+    description: "Tax vs immigration residency and BSN context — orientation only, not a filing verdict.",
   },
   {
     href: `${NETHERLANDS_BASE}/open-bank-account-netherlands/`,

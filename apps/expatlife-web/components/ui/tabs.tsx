@@ -44,7 +44,7 @@ export function Tabs({ tabs, defaultTab, className }: TabsProps) {
           );
         })}
       </div>
-      <div className="p-4" role="tabpanel">
+      <div className="p-3 sm:p-5" role="tabpanel">
         {current?.content}
       </div>
     </div>

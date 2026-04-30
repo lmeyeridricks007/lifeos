@@ -9,28 +9,38 @@ const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
 export function VisasResidencyOfficialSources({
   references,
   className,
+  density = "default",
+  omitSectionId = false,
 }: {
   references: MoveVisaResidencyReferences;
   className?: string;
+  /** Compact layout: single column, tighter spacing — for long guide pages. */
+  density?: "default" | "compact";
+  /** When the parent supplies the scroll anchor (e.g. wraps in `<details id={sectionId}>`). */
+  omitSectionId?: boolean;
 }) {
+  const compact = density === "compact";
   return (
     <section
-      id={references.sectionId}
+      id={omitSectionId ? undefined : references.sectionId}
       aria-labelledby="vr-official-heading"
-      className={cn(SECTION_SCROLL_MARGIN, "mt-8", movingNlShellFaqClass, className)}
+      className={cn(SECTION_SCROLL_MARGIN, compact ? "mt-6" : "mt-8", movingNlShellFaqClass, className)}
     >
-      <h2 id="vr-official-heading" className="text-xl font-bold tracking-tight text-foreground">
+      <h2 id="vr-official-heading" className={cn("font-bold tracking-tight text-foreground", compact ? "text-lg sm:text-xl" : "text-xl")}>
         {references.sectionTitle}
       </h2>
       <BoldParagraph
         text={references.disclaimer}
-        className="mt-3 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+        className={cn(
+          "text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground",
+          compact ? "mt-2 text-xs leading-relaxed sm:text-sm" : "mt-3 text-sm leading-relaxed"
+        )}
       />
-      <div className="mt-6 grid gap-6 sm:grid-cols-2">
+      <div className={cn(compact ? "mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5" : "mt-6 grid gap-6 sm:grid-cols-2")}>
         {references.groups.map((g) => (
           <div key={g.id}>
             <h3 className="text-xs font-bold uppercase tracking-[0.12em] text-foreground-muted">{g.title}</h3>
-            <ul className="mt-2 space-y-2 text-sm">
+            <ul className={cn("space-y-2 text-sm", compact ? "mt-1.5" : "mt-2")}>
               {g.links.map((link) => (
                 <li key={link.label}>
                   {link.type === "external" ? (

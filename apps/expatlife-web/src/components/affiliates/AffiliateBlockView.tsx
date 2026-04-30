@@ -12,11 +12,13 @@ export type AffiliateBlockViewProps = {
   placement: AffiliatePlacement;
   items: Array<{ provider: AffiliateProvider; reason: string; meta?: Record<string, string> }>;
   showStageChip?: boolean;
+  /** When the parent section already provides the main H2 (e.g. SectionBlock title). */
+  hidePlacementTitle?: boolean;
 };
 
 const blockWrapperClass = cn("relative overflow-hidden", movingNlGuideSectionShellClass);
 
-export function AffiliateBlockView({ placement, items, showStageChip }: AffiliateBlockViewProps) {
+export function AffiliateBlockView({ placement, items, showStageChip, hidePlacementTitle }: AffiliateBlockViewProps) {
   if (!items.length) return null;
   const variant = placement.variant;
 
@@ -29,11 +31,11 @@ export function AffiliateBlockView({ placement, items, showStageChip }: Affiliat
             Recommended for your stage
           </span>
         )}
-        {placement.title ? (
+        {placement.title && !hidePlacementTitle ? (
           <h2 className="text-xl font-bold tracking-tight text-copilot-text-primary sm:text-2xl">{placement.title}</h2>
         ) : null}
         {placement.intro ? (
-          <p className="mt-2 text-sm text-copilot-text-secondary md:text-base">
+          <p className={cn("text-sm text-copilot-text-secondary md:text-base", placement.title && !hidePlacementTitle ? "mt-2" : "mt-0")}>
             <BoldInline text={placement.intro} className="[&_strong]:font-semibold [&_strong]:text-copilot-text-primary" />
           </p>
         ) : null}

@@ -43,8 +43,12 @@ import {
 } from "@/lib/ui/site-shell-identity";
 import { PresetSoftCTA } from "@/src/components/soft-cta/PresetSoftCTA";
 import { PillarMovingHubMonetization } from "@/src/components/monetization/PillarMovingHubMonetization";
+import { getMovingPlanningInstructionalFigure } from "@/src/components/moving/moving-planning-cluster/movingPlanningInstructionalRasterAssets";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 
 export const revalidate = CONTENT_REVALIDATE;
+
+const MOVING_NL_HUB_INSTRUCTIONAL = getMovingPlanningInstructionalFigure("moving-to-the-netherlands");
 
 const baseUrl = getSiteOrigin();
 
@@ -283,6 +287,13 @@ export default async function MovingToNetherlandsPillarPage(_props: PageProps) {
         }
         keySections={
           <PillarJourneyStack variant="guide">
+            {MOVING_NL_HUB_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={MOVING_NL_HUB_INSTRUCTIONAL.raster}
+                caption={MOVING_NL_HUB_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
             <PillarDarkStagesBand>
               <SectionBlock
                 className="relative z-10"

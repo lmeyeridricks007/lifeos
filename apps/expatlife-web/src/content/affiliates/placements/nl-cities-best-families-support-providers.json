@@ -1,0 +1,30 @@
+{
+  "id": "nl-cities-best-families-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/cities/best-cities-for-families/",
+    "slot": "mid-page-after-family-value-sections"
+  },
+  "variant": "cards",
+  "title": "Family move: compare housing, relocation, insurance & banking",
+  "intro": "Once 2–4 city finalists exist, most families line up housing platforms, relocation support, mandatory health insurance, utilities, and banking in parallel — especially with school start dates or employer packages in play. Scope, waitlists, and fees differ; confirm what your employer covers and what you must arrange yourself before retainers or deposits.",
+  "categoryOrder": ["services", "housing", "banking", "insurance", "mobile"],
+  "items": [],
+  "registryProviders": {
+    "categories": [
+      "housing-platforms",
+      "rental-agencies",
+      "relocation-services",
+      "relocation-agencies",
+      "visa-consultants",
+      "banks",
+      "health-insurance",
+      "mobile-connectivity"
+    ],
+    "limit": 8,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to family relocation and Dutch setup after you shortlist cities — not pay-to-rank. This is not legal, tax, immigration, or school-placement advice — verify with municipalities, schools, childcare providers, and qualified advisers."
+}

@@ -3,7 +3,7 @@ import { RESIDENCE_PERMITS_HUB, RESIDENCE_PERMITS_VISAS } from "../moveResidence
 
 export const moveResidencePermitRelatedTools: MoveVisaResidencyRelatedTools = {
   journeyIntro:
-    "**Move** (hub, planners, arrival) → **Work & money** (job offer, contract, net pay, 30% rule, cost of living, allowance) → **Housing** (rent check) → **Living** (survival guide, healthcare basics). Same order as Visas & residency—open the block that fits your week.",
+    "Move (hub, planners, arrival) → Work & money (job offer, contract, net pay, 30% rule, cost of living, allowance) → Housing (rent check) → Living (survival guide, healthcare basics). Same order as Visas & residency—open the block that fits your week.",
   sections: [
     {
       eyebrow: "Move & immigration",
@@ -78,6 +78,11 @@ export const moveResidencePermitRelatedTools: MoveVisaResidencyRelatedTools = {
       eyebrow: "Money & household",
       description: "Budgets, allowances, and family costs once you know income and rent better.",
       items: [
+        {
+          title: "Tax residency in the Netherlands",
+          description: "Orientation when permits, ties, and tax filing scope need separating.",
+          href: "/netherlands/money/tax-residency-netherlands/",
+        },
         {
           title: "Cost of living calculator",
           description: "Rough monthly bands by city and household.",

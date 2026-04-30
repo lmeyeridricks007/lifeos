@@ -199,6 +199,11 @@ const RELATED_NEXT_STEPS = [
     description: "All published city pages in one place.",
   },
   {
+    href: `${BASE}/cities/cheapest-cities-for-expats/`,
+    title: "Cheapest cities for expats",
+    description: "Rent pressure vs commute trade-offs — read before you treat one city as “cheap”.",
+  },
+  {
     href: `${BASE}/services/banks/`,
     title: "Banks for expats in the Netherlands",
     description: "Accounts and rent payment readiness.",

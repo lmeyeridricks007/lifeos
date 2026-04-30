@@ -532,7 +532,7 @@
       "related": [
         { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub: first-week rhythm, topics, tools, FAQs." },
         { "label": "Getting around", "href": "/netherlands/living/getting-around/", "description": "NS, 9292, OVpay, modes, and commuting depth." },
-        { "label": "Payments basics", "href": "/netherlands/living/payments/", "description": "PIN, contactless, and iDEAL-shaped habits." },
+        { "label": "How payments work (Money · Banking)", "href": "/netherlands/money/banking/how-payments-work/", "description": "IBAN, iDEAL, SEPA, direct debits, rent, and salary patterns." },
         { "label": "Daily life basics", "href": "/netherlands/living/daily-life/", "description": "Shops, buildings, and weekly rhythms." },
         { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Directness, invitations, and social norms for everyday life." }
       ]

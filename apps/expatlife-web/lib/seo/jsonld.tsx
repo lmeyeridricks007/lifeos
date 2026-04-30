@@ -3,14 +3,15 @@ import { getSiteOrigin } from "@/lib/site-origin";
 type FaqItem = { q: string; a: string };
 
 /** Strip `**bold**` markers so FAQ schema `text` stays plain for search engines. */
-function faqAnswerPlainText(a: string): string {
+export function faqAnswerPlainText(a: string): string {
   return a.replace(/\*\*(.+?)\*\*/g, "$1");
 }
 
-export function FaqPageJsonLd({ items }: { items: FaqItem[] }) {
+export function FaqPageJsonLd({ items, url }: { items: FaqItem[]; url?: string }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    ...(url ? { url } : {}),
     mainEntity: items.map((item) => ({
       "@type": "Question",
       name: item.q,

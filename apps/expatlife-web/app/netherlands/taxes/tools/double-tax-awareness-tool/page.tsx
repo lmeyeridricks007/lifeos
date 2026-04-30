@@ -18,6 +18,7 @@ import {
 import { DoubleTaxAwarenessAtAGlance } from "@/src/components/tools/double-tax-awareness/DoubleTaxAwarenessAtAGlance";
 import { DoubleTaxAwarenessCalculatorClient } from "@/src/components/tools/double-tax-awareness/DoubleTaxAwarenessCalculatorClient";
 import { DoubleTaxAwarenessRightRail } from "@/src/components/tools/double-tax-awareness/DoubleTaxAwarenessRightRail";
+import { TaxClusterToolsSection } from "@/src/components/money/tax-cluster/TaxClusterToolsSection";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -116,8 +117,8 @@ export default function DoubleTaxAwarenessToolPage() {
             ]}
             primaryCtaLabel="Start tool"
             primaryCtaScrollToId="tool-inputs"
-            secondaryCtaLabel="Read Dutch taxes guide"
-            secondaryCtaHref={`${NL_BASE}/taxes/`}
+            secondaryCtaLabel="How Dutch taxes work"
+            secondaryCtaHref={`${NL_BASE}/money/how-taxes-work-in-the-netherlands/`}
             image={{
               src: "/images/tools/expatlife-netherlands-budget-planning.png",
               alt: "Tax documents, salary papers, and planning notes for an international move to the Netherlands.",
@@ -284,15 +285,15 @@ export default function DoubleTaxAwarenessToolPage() {
               <p>
                 Continue with related tools for payroll context and salary planning:{" "}
                 <Link href={`${NL_BASE}/taxes/tools/30-ruling-calculator/`} className="font-semibold text-copilot-primary hover:underline">
-                  30% ruling calculator
+                  Check 30% ruling
                 </Link>
                 ,{" "}
                 <Link href={`${NL_BASE}/taxes/tools/dutch-salary-net-calculator/`} className="font-semibold text-copilot-primary hover:underline">
-                  Dutch salary net calculator
+                  Estimate net salary
                 </Link>
                 , and{" "}
                 <Link href={`${NL_BASE}/work/tools/payslip-decoder/`} className="font-semibold text-copilot-primary hover:underline">
-                  payslip decoder
+                  Decode payslip
                 </Link>
                 .
               </p>
@@ -313,8 +314,18 @@ export default function DoubleTaxAwarenessToolPage() {
           </section>
         }
         faqItems={DOUBLE_TAX_FAQ_ITEMS}
+        postToolValue={<TaxClusterToolsSection current="doubleTax" showGuideLink />}
         internalLinkStrip={
           <nav className="flex flex-wrap gap-x-4 gap-y-2 text-sm" aria-label="Related tax links">
+            <Link href={`${NL_BASE}/money/how-taxes-work-in-the-netherlands/`} className="font-medium text-brand-600 hover:text-brand-700">
+              How taxes work (NL)
+            </Link>
+            <Link href={`${NL_BASE}/money/tax-guide-for-expats/`} className="font-medium text-brand-600 hover:text-brand-700">
+              Tax guide for expats
+            </Link>
+            <Link href={`${NL_BASE}/money/expat-taxes-netherlands/`} className="font-medium text-brand-600 hover:text-brand-700">
+              Expat Taxes in the Netherlands
+            </Link>
             <Link href={`${NL_BASE}/taxes/`} className="font-medium text-brand-600 hover:text-brand-700">
               Dutch taxes hub
             </Link>
@@ -322,13 +333,13 @@ export default function DoubleTaxAwarenessToolPage() {
               Tax tools hub
             </Link>
             <Link href={`${NL_BASE}/taxes/tools/30-ruling-calculator/`} className="font-medium text-brand-600 hover:text-brand-700">
-              30% ruling calculator
+              Check 30% ruling
             </Link>
             <Link href={`${NL_BASE}/taxes/tools/dutch-salary-net-calculator/`} className="font-medium text-brand-600 hover:text-brand-700">
-              Salary net calculator
+              Estimate net salary
             </Link>
             <Link href={`${NL_BASE}/work/tools/payslip-decoder/`} className="font-medium text-brand-600 hover:text-brand-700">
-              Payslip decoder
+              Decode payslip
             </Link>
             <Link href={`${NL_BASE}/moving-to-the-netherlands/`} className="font-medium text-brand-600 hover:text-brand-700">
               Moving to the Netherlands guide

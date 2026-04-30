@@ -45,6 +45,8 @@ import {
 } from "@/src/components/moving/movePillarCardPrimitives";
 import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc";
 import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
+import { getWorkPermitsJobChangesInstructionalFigure } from "@/src/components/moving/work-permits-job-changes-cluster/workPermitsJobChangesInstructionalRasterAssets";
 import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
 import {
   type MoveWorkingNlAfterArrivalSection,
@@ -67,6 +69,7 @@ const INFO_CHIP =
   "inline-flex rounded-full border border-copilot-primary/15 bg-copilot-bg-soft/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-copilot-primary";
 
 const meta = workingInTheNetherlandsPageMeta;
+const WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL = getWorkPermitsJobChangesInstructionalFigure("working-in-the-netherlands");
 const CANONICAL = meta.canonicalPath;
 const PAGE_HERO_SUBTITLE = meta.hero.subtitle;
 const HUB = meta.movePillarHubPath;
@@ -302,6 +305,14 @@ export function WorkingInTheNetherlandsView() {
         keySections={
           <PillarJourneyStack variant="guide" density="compact" className="gap-1 sm:gap-2 md:gap-3">
             <MovePillarMobileToc items={meta.sectionNav} />
+
+            {WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL ? (
+              <InstructionalRasterFigure
+                raster={WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL.raster}
+                caption={WORK_PERMITS_JOB_CHANGES_INSTRUCTIONAL.caption}
+                className="w-full"
+              />
+            ) : null}
 
             <section
               className={cn(

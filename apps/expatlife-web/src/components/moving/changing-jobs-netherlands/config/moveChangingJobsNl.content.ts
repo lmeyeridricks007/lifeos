@@ -28,13 +28,13 @@ const hero = {
   eyebrow: "Netherlands · Moving",
   pageTitle: "Changing Jobs in the Netherlands",
   subtitle:
-    "Plan a Dutch job switch as **one decision stack**: **notice and contract**, **stay and work authorization** (when it applies), **net pay and benefits**, and **housing, commute, and household admin** — so nothing important waits until after you resign.",
+    "Plan a Dutch job switch as one decision stack: notice and contract, stay and work authorization (when it applies), net pay and benefits, and housing, commute, and household admin — so nothing important waits until after you resign.",
   contextChips: ["Notice", "Offer", "Permit", "Payroll", "Rent", "Family", "Timing"],
   bullets: [
-    "See what can move **besides the job title** — in four quick layers",
-    "Separate **before you resign** vs **before you sign** vs **before day one**",
-    "Know **which questions to ask early** (HR, payroll, mobility) without guessing outcomes",
-    "Open **one** next tool or guide when you are ready — the page still works standalone",
+    "See what can move besides the job title — in four quick layers",
+    "Separate before you resign vs before you sign vs before day one",
+    "Know which questions to ask early (HR, payroll, mobility) without guessing outcomes",
+    "Open one next tool or guide when you are ready — the page still works standalone",
   ],
   primaryCta: { label: "Start with the essentials", href: "#start-here" },
   secondaryCta: { label: "What a switch can affect", href: "#what-job-change-affects" },
@@ -47,23 +47,23 @@ const atAGlance = {
   cells: [
     {
       title: "What this page is for",
-      body: "A **structured scan**: what to check **before you resign**, **before you sign**, and **before the new role starts** — without pretending one size fits all.",
+      body: "A structured scan: what to check before you resign, before you sign, and before the new role starts — without pretending one size fits all.",
     },
     {
       title: "Best for",
-      body: "People for whom a new employer is **not only payroll**: **permits, 30% context, rent, commute, childcare, or partner circumstances** may move with the job.",
+      body: "People for whom a new employer is not only payroll: permits, 30% context, rent, commute, childcare, or partner circumstances may move with the job.",
     },
     {
       title: "What it covers",
-      body: "**Contracts and notice**, **status and sponsorship questions** (high level), **salary and monthly reality**, **life admin** — plus links to Move guides and calculators.",
+      body: "Contracts and notice, status and sponsorship questions (high level), salary and monthly reality, life admin — plus links to Move guides and calculators.",
     },
     {
       title: "What it skips",
-      body: "**Binding legal or immigration answers.** Use this to **frame questions and sequence next steps**; confirm outcomes with **employers, IND, Belastingdienst, or advisers**.",
+      body: "Binding legal or immigration answers. Use this to frame questions and sequence next steps; confirm outcomes with employers, IND, Belastingdienst, or advisers.",
     },
   ],
   note:
-    "You do **not** need every deep Work-cluster page built yet: this guide still gives you a **usable sequence** and **where to click next**. When specialist pages exist, they slot into the same flow.",
+    "You do not need every deep Work-cluster page built yet: this guide still gives you a usable sequence and where to click next. When specialist pages exist, they slot into the same flow.",
 } as const;
 
 const pillarJourneyBridge = {
@@ -71,7 +71,7 @@ const pillarJourneyBridge = {
   eyebrow: "Inside the Move pillar",
   title: "How this page connects to the rest of ExpatCopilot",
   intro:
-    "**Working in the Netherlands** is the work-led move story. **This page** is the **switch** story: same pillar, different moment. When stay or employer processes matter, pair **Residence permits**, **Extensions & changes**, **Status changes**, and **TWV** with **Work**, **Money**, and **Housing** tools for concrete numbers.",
+    "Working in the Netherlands is the work-led move story. This page is the switch story: same pillar, different moment. When stay or employer processes matter, pair Residence permits, Extensions & changes, Status changes, and TWV with Work, Money, and Housing tools for concrete numbers.",
   links: [
     {
       href: ROUTES.hub,
@@ -140,7 +140,7 @@ const whatNextRegion = {
   eyebrow: "How to use this page",
   title: "How to use this page and what to do next",
   subtitle:
-    "Leave with a **sequence**: scan → compare contracts → clarify status if needed → model money → pick **one** next action. Repeat next week with new facts.",
+    "Leave with a sequence: scan → compare contracts → clarify status if needed → model money → pick one next action. Repeat next week with new facts.",
 } as const;
 
 const progressionSteps = [

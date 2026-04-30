@@ -6,6 +6,7 @@ import { PARTNER_FAMILY_VISA } from "@/src/content/visas/partner-family-visa";
 import { partnerFamilyToGuideData } from "@/src/lib/visas/visaToGuideData";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -55,6 +56,7 @@ export default function PartnerFamilyVisaPage() {
         data={serializableData}
         affiliateBlocks={{}}
         canonicalUrl={canonicalUrl}
+        planningInstructionalFigure={getVisasResidencyInstructionalFigure(PARTNER_FAMILY_VISA.slug)}
       />
     </>
   );

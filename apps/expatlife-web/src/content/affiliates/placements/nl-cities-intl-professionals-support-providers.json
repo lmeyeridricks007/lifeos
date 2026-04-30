@@ -1,0 +1,30 @@
+{
+  "id": "nl-cities-intl-professionals-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/cities/best-cities-for-international-professionals/",
+    "slot": "mid-page-after-career-value-sections"
+  },
+  "variant": "cards",
+  "title": "Career move: compare relocation, housing, insurance & banking",
+  "intro": "Once 2–4 city finalists exist, most professionals line up housing platforms, relocation support, mandatory health insurance, utilities, and banking in parallel — especially with start dates, visa timing, or employer packages in play. Scope and fees differ; confirm what your employer covers and what you must arrange yourself before retainers or deposits.",
+  "categoryOrder": ["services", "housing", "banking", "insurance", "mobile"],
+  "items": [],
+  "registryProviders": {
+    "categories": [
+      "housing-platforms",
+      "rental-agencies",
+      "relocation-services",
+      "relocation-agencies",
+      "visa-consultants",
+      "banks",
+      "health-insurance",
+      "mobile-connectivity"
+    ],
+    "limit": 8,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to international professionals relocating and setting up in the Netherlands after you shortlist cities — not pay-to-rank. This is not legal, tax, immigration, or career advice — verify with employers, recruiters, and qualified advisers."
+}

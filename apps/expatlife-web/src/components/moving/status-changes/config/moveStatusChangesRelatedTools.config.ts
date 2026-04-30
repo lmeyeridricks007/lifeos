@@ -8,7 +8,7 @@ const EXTENSIONS = R.extensionsChanges;
 
 export const moveStatusChangesRelatedTools = {
   journeyIntro:
-    "**Move** gives you the route picture. **Work, Money, Housing, Family, and Living** help you plan the practical impact. Use one category at a time, not everything at once.",
+    "Move gives you the route picture. Work, Money, Housing, Family, and Living help you plan the practical impact. Use one category at a time, not everything at once.",
   sections: [
     {
       eyebrow: "Move & immigration",
@@ -38,6 +38,11 @@ export const moveStatusChangesRelatedTools = {
       eyebrow: "Money, housing, and family",
       description: "Translate uncertainty into real household planning.",
       items: [
+        {
+          title: "Tax residency in the Netherlands",
+          description: "Money-pillar orientation when permit or registration timing does not line up cleanly with tax years — not a determination tool.",
+          href: "/netherlands/money/tax-residency-netherlands/",
+        },
         { title: "Cost of living calculator", description: "Estimate ongoing monthly pressure by city.", href: "/netherlands/money/tools/cost-of-living-calculator/" },
         { title: "Healthcare allowance estimator", description: "Check rough allowance expectations from income and rent.", href: "/netherlands/taxes/tools/healthcare-allowance-estimator/" },
         { title: "Rent affordability calculator", description: "Stress-test housing decisions during a transition.", href: "/netherlands/housing/tools/rent-affordability-calculator/" },

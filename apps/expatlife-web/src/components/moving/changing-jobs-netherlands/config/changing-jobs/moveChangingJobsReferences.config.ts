@@ -5,7 +5,7 @@ export const moveChangingJobsReferences: MoveWorkingNlReferences = {
   sectionId: "official-sources",
   sectionTitle: "Official sources / useful references",
   disclaimer:
-    "Requirements, interpretations, and timelines can change. Use these sources to **verify** what applies to you after this orientation page — especially for **permits, tax, and employment** questions.",
+    "Requirements, interpretations, and timelines can change. Use these sources to verify what applies to you after this orientation page — especially for permits, tax, and employment questions.",
   groups: [
     {
       id: "work-residence",

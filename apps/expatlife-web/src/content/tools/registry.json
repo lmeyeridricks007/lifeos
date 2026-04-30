@@ -583,12 +583,15 @@
       "summary": "Eligibility-first planning: norms, context questions, allowance estimate, optional net comparison and scenarios.",
       "primaryConversion": "both",
       "relatedGuides": [
+        "/netherlands/money/tax-guide-for-expats/",
+        "/netherlands/money/tax-return-netherlands/",
+        "/netherlands/money/tax-residency-netherlands/",
         "/netherlands/taxes/",
-        "/netherlands/taxes/30-percent-ruling/",
+        "/netherlands/money/taxes/30-percent-ruling/",
         "/netherlands/taxes/30-ruling-eligibility/",
         "/netherlands/taxes/30-ruling-application/",
         "/netherlands/taxes/net-salary-netherlands/",
-        "/netherlands/taxes/expat-taxes-netherlands/",
+        "/netherlands/money/expat-taxes-netherlands/",
         "/netherlands/moving-to-the-netherlands/",
         "/netherlands/work/working-in-netherlands/"
       ],
@@ -621,11 +624,15 @@
       "summary": "Estimate take-home pay: indicative tax bands, optional 30% ruling structure, compare offers, export summary.",
       "primaryConversion": "both",
       "relatedGuides": [
+        "/netherlands/money/tax-guide-for-expats/",
+        "/netherlands/money/tax-return-netherlands/",
+        "/netherlands/money/tax-residency-netherlands/",
         "/netherlands/taxes/net-salary-netherlands/",
         "/netherlands/taxes/gross-vs-netherlands-salary/",
-        "/netherlands/taxes/30-percent-ruling/",
+        "/netherlands/money/taxes/30-percent-ruling/",
+        "/netherlands/money/taxes/tax-advisors/",
         "/netherlands/money/taxes/employment-overview/",
-        "/netherlands/taxes/expat-taxes-netherlands/"
+        "/netherlands/money/expat-taxes-netherlands/"
       ],
       "relatedTools": [
         "/netherlands/taxes/tools/30-ruling-calculator/",
@@ -667,6 +674,7 @@
         "/netherlands/moving-to-the-netherlands/",
         "/netherlands/moving-to-netherlands-cost/",
         "/netherlands/money/",
+        "/netherlands/money/tax-residency-netherlands/",
         "/netherlands/taxes/tools/dutch-salary-net-calculator/",
         "/netherlands/health-insurance-netherlands/"
       ],
@@ -768,7 +776,14 @@
       },
       "summary": "Deterministic planning tool for residency signals, income-tax mapping, relief awareness, and practical filing next steps.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/taxes/double-taxation-netherlands/", "/netherlands/taxes/expat-taxes-netherlands/", "/netherlands/taxes/tax-residency-netherlands/"],
+      "relatedGuides": [
+        "/netherlands/money/tax-guide-for-expats/",
+        "/netherlands/money/tax-return-netherlands/",
+        "/netherlands/money/taxes/tax-advisors/",
+        "/netherlands/taxes/double-taxation-netherlands/",
+        "/netherlands/money/expat-taxes-netherlands/",
+        "/netherlands/money/tax-residency-netherlands/"
+      ],
       "relatedTools": ["/netherlands/money/tools/employment-tax-overview-tool/"],
       "affiliatePlacementIds": [],
       "affiliateCategories": ["tax"],
@@ -1112,6 +1127,8 @@
       "summary": "Destination page: zorgtoeslag planning, income and asset context, worked examples, recommended services, and net premium after allowance — not an official determination.",
       "primaryConversion": "signup",
       "relatedGuides": [
+        "/netherlands/money/tax-guide-for-expats/",
+        "/netherlands/money/tax-return-netherlands/",
         "/netherlands/taxes/healthcare-allowance/",
         "/netherlands/health-insurance-netherlands/",
         "/netherlands/taxes/",
@@ -1184,7 +1201,13 @@
       },
       "summary": "Compare offers beyond salary using practical expat decision factors.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/work/contracts/offer-comparison/"],
+      "relatedGuides": [
+        "/netherlands/money/tax-guide-for-expats/",
+        "/netherlands/money/tax-return-netherlands/",
+        "/netherlands/money/tax-residency-netherlands/",
+        "/netherlands/money/taxes/tax-advisors/",
+        "/netherlands/work/contracts/offer-comparison/"
+      ],
       "relatedTools": [
         "/netherlands/taxes/tools/dutch-salary-net-calculator/",
         "/netherlands/taxes/tools/30-ruling-calculator/",
@@ -1315,6 +1338,7 @@
       "summary": "Compare employment structure options with indicative money and scored trade-offs (planning only).",
       "primaryConversion": "both",
       "relatedGuides": [
+        "/netherlands/money/tax-residency-netherlands/",
         "/netherlands/work/contractor-vs-employee-netherlands/",
         "/netherlands/work/zzp-netherlands/",
         "/netherlands/work/working-in-netherlands/"
@@ -1433,8 +1457,12 @@
       "summary": "Decode common Dutch payslip lines from pasted text or text-based PDFs — planning support only, privacy-first.",
       "primaryConversion": "both",
       "relatedGuides": [
+        "/netherlands/money/tax-guide-for-expats/",
+        "/netherlands/money/tax-return-netherlands/",
+        "/netherlands/money/tax-residency-netherlands/",
+        "/netherlands/money/taxes/tax-advisors/",
         "/netherlands/taxes/net-salary-netherlands/",
-        "/netherlands/taxes/how-taxes-work-netherlands/",
+        "/netherlands/money/how-taxes-work-in-the-netherlands/",
         "/netherlands/taxes/tools/dutch-salary-net-calculator/",
         "/netherlands/open-bank-account-netherlands/",
         "/netherlands/moving-to-the-netherlands/"
@@ -1523,7 +1551,11 @@
       },
       "summary": "Estimate childcare costs and subsidy-aware scenarios.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/moving-to-netherlands-with-kids/"],
+      "relatedGuides": [
+        "/netherlands/money/tax-guide-for-expats/",
+        "/netherlands/money/tax-return-netherlands/",
+        "/netherlands/moving-to-netherlands-with-kids/"
+      ],
       "relatedTools": ["/netherlands/money/tools/cost-of-living-calculator/"],
       "affiliatePlacementIds": [],
       "signupVariant": "default",

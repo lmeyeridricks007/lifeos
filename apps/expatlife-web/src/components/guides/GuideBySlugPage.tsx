@@ -18,6 +18,10 @@ import {
 import type { PageMonetizationMetadata } from "@/src/lib/monetization/pageMonetizationMetadata";
 import { MoveClusterSelectiveSetupMonetization } from "@/src/components/monetization/MoveClusterSelectiveSetupMonetization";
 import { shouldRenderSelectiveSetupMonetization } from "@/src/lib/monetization/moveClusterPostFaqPolicy";
+import { getEarlySetupInstructionalFigure } from "@/src/components/moving/early-setup-cluster/earlySetupInstructionalRasterAssets";
+import { getMovingPlanningInstructionalFigure } from "@/src/components/moving/moving-planning-cluster/movingPlanningInstructionalRasterAssets";
+import { getFirstWeeksInstructionalFigure } from "@/src/components/moving/first-weeks-cluster/firstWeeksInstructionalRasterAssets";
+import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
 
 const baseUrl = getSiteOrigin();
 
@@ -69,6 +73,12 @@ export function GuideBySlugPage({
   const { contextualAffiliateAfterFirstSection, contextualAffiliateBeforeNextSteps } =
     buildNetherlandsGuideAffiliateSlots(slug, data.path, monetization);
 
+  const planningInstructionalFigure =
+    getMovingPlanningInstructionalFigure(slug) ??
+    getEarlySetupInstructionalFigure(slug) ??
+    getVisasResidencyInstructionalFigure(slug) ??
+    getFirstWeeksInstructionalFigure(slug);
+
   return (
     <>
       <BreadcrumbJsonLd crumbs={breadcrumbCrumbs} />
@@ -100,6 +110,7 @@ export function GuideBySlugPage({
         }
         contextualAffiliateAfterFirstSection={contextualAffiliateAfterFirstSection}
         contextualAffiliateBeforeNextSteps={contextualAffiliateBeforeNextSteps}
+        planningInstructionalFigure={planningInstructionalFigure}
       />
     </>
   );

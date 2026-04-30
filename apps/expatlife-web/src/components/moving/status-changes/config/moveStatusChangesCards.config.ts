@@ -12,10 +12,10 @@ export const moveStatusChangesCards = {
       iconKey: "basis",
       visualKey: "basis",
       title: "Your reason for stay matters",
-      intro: "A status change often means the **reason your stay rests on** may no longer be the same as before.",
+      intro: "A status change often means the reason your stay rests on may no longer be the same as before.",
       keyPoints: [
         "Study, work, family, and self-employment each create a different residence picture.",
-        "This is usually about **why you are allowed to stay**, not just the card in your wallet.",
+        "This is usually about why you are allowed to stay, not just the card in your wallet.",
         "If that underlying reason changes, the next legal or admin step may change too.",
         "You do not need every rule today, but you do need to notice the shift early.",
       ],

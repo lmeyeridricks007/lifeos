@@ -34,6 +34,7 @@
     { "id": "best-banks", "label": "Banks expats often compare" },
     { "id": "bank-comparison", "label": "Comparison of major banks" },
     { "id": "traditional-vs-digital", "label": "Traditional vs digital banks" },
+    { "id": "banking-fees-costs", "label": "Banking fees & costs" },
     { "id": "business-accounts", "label": "Business bank accounts" },
     { "id": "typical-costs", "label": "Typical costs" },
     { "id": "example-scenarios", "label": "Example scenarios" },
@@ -297,6 +298,27 @@
       "bullets": [
         "Traditional: ABN AMRO, ING, Rabobank — branches, mortgages, full services.",
         "Digital: bunq, Wise, N26 — fast onboarding, mobile-first, easier international transfers."
+      ],
+      "links": [
+        {
+          "label": "Traditional vs digital banks (full decision guide)",
+          "href": "/netherlands/money/banking/traditional-vs-digital/"
+        },
+        {
+          "label": "Banking fees & costs (framework, no live prices)",
+          "href": "/netherlands/money/banking/fees/"
+        }
+      ]
+    },
+    {
+      "id": "banking-fees-costs",
+      "heading": "Banking fees & costs in the Netherlands",
+      "body": [
+        "Beyond picking a bank “brand”, expats usually care about the full fee picture: monthly account charges, cards, ATM use abroad, international transfers, currency conversion, and optional premium plans.",
+        "ExpatCopilot publishes a dedicated fee framework guide that explains these categories without quoting live tariffs — always confirm current numbers on each bank’s official price list."
+      ],
+      "links": [
+        { "label": "Read Banking fees & costs", "href": "/netherlands/money/banking/fees/" }
       ]
     },
     {
@@ -418,6 +440,8 @@
     "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
     "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
     "related": [
+      { "label": "Types of bank accounts (Money guide)", "href": "/netherlands/money/banking/types-of-accounts/" },
+      { "label": "How payments work (Money · Banking)", "href": "/netherlands/money/banking/how-payments-work/" },
       { "label": "Compare banks", "href": "/netherlands/services/banks/" },
       { "label": "All services hub", "href": "/netherlands/services/" },
       { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },

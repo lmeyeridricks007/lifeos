@@ -158,6 +158,21 @@ const OFFICIAL_SOURCES = [
 
 const RELATED_NEXT_STEPS = [
   {
+    href: `${BASE}/money/how-taxes-work-in-the-netherlands/`,
+    title: "How Taxes Work in the Netherlands",
+    description: "Plain-English map of payroll vs return, boxes, credits, and allowances before you tune calculator inputs.",
+  },
+  {
+    href: `${BASE}/money/tax-residency-netherlands/`,
+    title: "Tax residency in the Netherlands",
+    description: "When your filing scope and ties matter alongside take-home estimates.",
+  },
+  {
+    href: `${BASE}/money/tax-guide-for-expats/`,
+    title: "Netherlands Tax Guide for Expats",
+    description: "Orientation for payroll, ruling, and cross-border tax — this calculator owns gross-to-net methodology.",
+  },
+  {
     href: `${BASE}/living/survival-guide/`,
     title: "Netherlands Survival Guide",
     description: "What take-home pay feels like in practice: transport, apps, and daily spend norms.",
@@ -178,7 +193,7 @@ const RELATED_NEXT_STEPS = [
     description: "Separate tool for norms, distance checks, and allowance — not gross-to-net.",
   },
   {
-    href: `${BASE}/taxes/30-percent-ruling/`,
+    href: `${BASE}/money/taxes/30-percent-ruling/`,
     title: "30% ruling guide",
     description: "What the facility is, who it is for, and employer dependence.",
   },
@@ -194,9 +209,9 @@ const RELATED_NEXT_STEPS = [
       "Plain-language explanations for common Dutch payslip lines and deductions (companion to gross-to-net planning, not payroll).",
   },
   {
-    href: `${BASE}/taxes/expat-taxes-netherlands/`,
-    title: "Expat taxes Netherlands",
-    description: "Broader filing and residency context for internationals.",
+    href: `${BASE}/money/expat-taxes-netherlands/`,
+    title: "Expat Taxes in the Netherlands",
+    description: "Scenario-led Money guide when your tax story is not a tidy single-country employee year.",
   },
   {
     href: `${BASE}/moving-to-the-netherlands/`,
@@ -230,8 +245,8 @@ const QUICK = [
   { label: "See results", href: "#tool-results" },
   { label: "Compare scenarios", href: "#comparison" },
   { label: "Download summary", href: "#download-summary" },
-  { label: "Decode a Dutch payslip", href: `${BASE}/work/tools/payslip-decoder/` },
-  { label: "Check 30% ruling eligibility", href: `${BASE}/taxes/tools/30-ruling-calculator/` },
+  { label: "Decode payslip", href: `${BASE}/work/tools/payslip-decoder/` },
+  { label: "Check 30% ruling", href: `${BASE}/taxes/tools/30-ruling-calculator/` },
   { label: "Compare Dutch banks", href: `${BASE}/services/banks/` },
   { label: "Tax tools hub", href: `${BASE}/taxes/tools/` },
 ];
@@ -447,7 +462,7 @@ export default function DutchSalaryNetCalculatorPage() {
             primaryCtaLabel="Start calculator"
             primaryCtaScrollToId="tool-inputs"
             secondaryCtaLabel="Learn about Dutch taxes"
-            secondaryCtaHref={`${BASE}/taxes/how-taxes-work-netherlands/`}
+            secondaryCtaHref={`${BASE}/money/how-taxes-work-in-the-netherlands/`}
             image={{
               src: HERO_IMAGE,
               alt: "Illustration of a workspace with laptop, calculator, and salary planning theme for the Netherlands.",

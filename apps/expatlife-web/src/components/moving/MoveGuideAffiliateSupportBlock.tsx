@@ -17,6 +17,8 @@ type MoveGuideAffiliateSupportBlockProps = {
   browseLabel?: string;
   destinationCountry?: string;
   originCountry?: string;
+  /** Avoid a second H2 when wrapped in a SectionBlock that already titles the block. */
+  hidePlacementTitle?: boolean;
 };
 
 export function MoveGuideAffiliateSupportBlock({
@@ -25,6 +27,7 @@ export function MoveGuideAffiliateSupportBlock({
   browseLabel,
   destinationCountry = "netherlands",
   originCountry,
+  hidePlacementTitle,
 }: MoveGuideAffiliateSupportBlockProps) {
   const data = loadPlacementWithProviders(placementId, destinationCountry, originCountry);
   const hasCards = Boolean(data?.items.length);
@@ -36,16 +39,23 @@ export function MoveGuideAffiliateSupportBlock({
 
   return (
     <div className="space-y-4">
-      {hasCards && data ? <AffiliateBlockView placement={data.placement} items={data.items} /> : null}
+      {hasCards && data ? (
+        <AffiliateBlockView placement={data.placement} items={data.items} hidePlacementTitle={hidePlacementTitle} />
+      ) : null}
       {showPlacementFallback && placement ? (
         <div className={cn("relative overflow-hidden", movingNlGuideSectionShellClass)}>
           <div className={movingNlGuideSectionTopAccentClass} aria-hidden />
           <div className="relative">
-            {placement.title ? (
+            {placement.title && !hidePlacementTitle ? (
               <h2 className="text-xl font-bold tracking-tight text-copilot-text-primary sm:text-2xl">{placement.title}</h2>
             ) : null}
             {placement.intro ? (
-              <p className="mt-2 text-sm text-copilot-text-secondary md:text-base">
+              <p
+                className={cn(
+                  "text-sm text-copilot-text-secondary md:text-base",
+                  placement.title && !hidePlacementTitle ? "mt-2" : "mt-0"
+                )}
+              >
                 <BoldInline text={placement.intro} className="[&_strong]:font-semibold [&_strong]:text-copilot-text-primary" />
               </p>
             ) : null}

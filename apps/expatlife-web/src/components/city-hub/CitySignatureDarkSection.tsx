@@ -40,7 +40,7 @@ export function CitySignatureDarkSection({ cityName, first30Days }: CitySignatur
           <h2 id="first-30-days-heading" className={`${movingNlSectionH2OnDarkClass} mt-2`}>
             {heading}
           </h2>
-          <p className={`${movingNlSectionSubtitleOnDarkClass} mt-2 max-w-3xl`}>{subtitle}</p>
+          <p className={cn(movingNlSectionSubtitleOnDarkClass, "mt-2")}>{subtitle}</p>
 
           <div className="mt-7 grid gap-4 sm:grid-cols-2 sm:gap-5 md:mt-8">
             {weeks.map((w, i) => (

@@ -1,0 +1,25 @@
+{
+  "id": "ing",
+  "name": "ING",
+  "tagline": "Major Dutch retail bank",
+  "categoryIds": ["banking"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Widely used"],
+  "highlights": [
+    "Common choice for salary and everyday Dutch payments",
+    "Strong self-service and English information for many retail flows"
+  ],
+  "cta": {
+    "label": "Explore on ING",
+    "href": "https://www.ing.nl/en/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/ing.svg",
+    "alt": "ING logo"
+  }
+}

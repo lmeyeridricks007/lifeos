@@ -158,8 +158,8 @@ export const livingEssentialAppsPageConfig: LivingEssentialAppsConfig = {
         "Bank extras — card freeze, secure chat when the account is stable",
         "City operator app — only if 9292 is not enough for your line",
       ],
-      footHref: "/netherlands/living/payments/",
-      footLabel: "How paying works (Living)",
+      footHref: "/netherlands/money/banking/how-payments-work/",
+      footLabel: "How payments work (Money · Banking)",
     },
     {
       title: "First month",
@@ -373,6 +373,13 @@ export const livingEssentialAppsPageConfig: LivingEssentialAppsConfig = {
           },
         ],
         [
+          { kind: "link", text: "How payments work (Money · Banking)", href: "/netherlands/money/banking/how-payments-work/" },
+          {
+            kind: "text",
+            text: " explains IBAN, iDEAL, SEPA, and direct debits before you lean on one app for everything.",
+          },
+        ],
+        [
           { kind: "link", text: "Tikkie", href: "https://www.tikkie.me/en" },
           {
             kind: "text",
@@ -501,7 +508,7 @@ export const livingEssentialAppsPageConfig: LivingEssentialAppsConfig = {
       footerParagraphs: [
         [
           { kind: "text", text: "Wider payment culture (PIN, iDEAL, tills) sits in " },
-          { kind: "link", text: "Payments basics", href: "/netherlands/living/payments/" },
+          { kind: "link", text: "How payments work (Money · Banking)", href: "/netherlands/money/banking/how-payments-work/" },
           { kind: "text", text: " when you want editorial depth beyond the home-screen stack." },
         ],
       ],

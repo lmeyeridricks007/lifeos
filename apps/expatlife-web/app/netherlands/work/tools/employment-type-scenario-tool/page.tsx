@@ -407,7 +407,7 @@ export default function EmploymentTypeScenarioToolPage() {
                       salary calculator
                     </Link>{" "}
                     and{" "}
-                    <Link href={`${NL_BASE}/taxes/expat-taxes-netherlands/`} className="font-medium text-brand-600 hover:underline">
+                    <Link href={`${NL_BASE}/money/expat-taxes-netherlands/`} className="font-medium text-brand-600 hover:underline">
                       expat taxes guide
                     </Link>
                     .
@@ -461,7 +461,7 @@ export default function EmploymentTypeScenarioToolPage() {
             <Link href={`${NL_BASE}/taxes/`} className="font-medium text-brand-600 hover:text-brand-700">
               Taxes hub
             </Link>
-            <Link href={`${NL_BASE}/taxes/expat-taxes-netherlands/`} className="font-medium text-brand-600 hover:text-brand-700">
+            <Link href={`${NL_BASE}/money/expat-taxes-netherlands/`} className="font-medium text-brand-600 hover:text-brand-700">
               Expat taxes guide
             </Link>
             <Link href={`${NL_BASE}/moving-to-the-netherlands/`} className="font-medium text-brand-600 hover:text-brand-700">

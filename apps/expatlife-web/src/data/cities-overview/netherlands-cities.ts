@@ -250,6 +250,21 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
         href: "/netherlands/cities/best-cities-for-expats/",
         primary: true,
       },
+      {
+        label: "Cheapest cities guide",
+        href: "/netherlands/cities/cheapest-cities-for-expats/",
+        primary: false,
+      },
+      {
+        label: "Best cities for families",
+        href: "/netherlands/cities/best-cities-for-families/",
+        primary: false,
+      },
+      {
+        label: "Best cities for international professionals",
+        href: "/netherlands/cities/best-cities-for-international-professionals/",
+        primary: false,
+      },
       { label: "Explore covered cities", href: "#covered-cities", primary: false },
       { label: "Browse services", href: "/netherlands/services/", primary: false },
     ],
@@ -257,7 +272,7 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
 
   tocItems: [
     { id: "overview", label: "Overview" },
-    { id: "best-cities-decision-guide", label: "Best cities guide" },
+    { id: "best-cities-decision-guide", label: "City decision guides" },
     { id: "covered-cities", label: "Covered Cities" },
     { id: "coming-soon-cities", label: "Coming Soon Cities" },
     { id: "compare-dutch-cities", label: "Compare Dutch Cities" },
@@ -280,6 +295,12 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
     paragraphs: [],
     links: [
       { label: "Best cities for expats (guide)", href: "/netherlands/cities/best-cities-for-expats/" },
+      { label: "Best Dutch cities for families", href: "/netherlands/cities/best-cities-for-families/" },
+      {
+        label: "Best Dutch cities for international professionals",
+        href: "/netherlands/cities/best-cities-for-international-professionals/",
+      },
+      { label: "Cheapest cities for expats", href: "/netherlands/cities/cheapest-cities-for-expats/" },
       { label: "City comparison tool", href: "/netherlands/tools/city-comparison/" },
       { label: "Netherlands hub", href: "/netherlands/" },
       { label: "Services hub", href: "/netherlands/services/" },
@@ -318,6 +339,12 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
     title: "Key Netherlands guides",
     links: [
       { label: "Best cities in the Netherlands for expats", href: "/netherlands/cities/best-cities-for-expats/" },
+      { label: "Best Dutch cities for families", href: "/netherlands/cities/best-cities-for-families/" },
+      {
+        label: "Best Dutch cities for international professionals",
+        href: "/netherlands/cities/best-cities-for-international-professionals/",
+      },
+      { label: "Cheapest cities for expats", href: "/netherlands/cities/cheapest-cities-for-expats/" },
       { label: "City comparison tool", href: "/netherlands/tools/city-comparison/" },
       { label: "After arriving in the Netherlands", href: "/netherlands/after-arriving-netherlands/" },
       { label: "Municipality registration", href: "/netherlands/municipality-registration-netherlands/" },
@@ -333,6 +360,21 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
       label: "Best cities decision guide",
       href: "/netherlands/cities/best-cities-for-expats/",
       description: "Trade-offs, scenarios, and tools to shortlist Dutch cities before you fall in love with one postcode.",
+    },
+    {
+      label: "Cheapest cities for expats",
+      href: "/netherlands/cities/cheapest-cities-for-expats/",
+      description: "What affordable means in NL, honest trade-offs, and links to rent and cost calculators.",
+    },
+    {
+      label: "Best Dutch cities for families",
+      href: "/netherlands/cities/best-cities-for-families/",
+      description: "Childcare, schools, commute, and day-in-the-life realism for expat families shortlisting cities.",
+    },
+    {
+      label: "Best Dutch cities for international professionals",
+      href: "/netherlands/cities/best-cities-for-international-professionals/",
+      description: "Career-first shortlists: job markets, salary vs rent, commute reality, and tools to validate finalists.",
     },
     { label: "Netherlands hub", href: "/netherlands/", description: "Country overview, topics, and entry points for your move." },
     { label: "Services directory", href: "/netherlands/services/", description: "Banks, insurance, housing, visas, and relocation providers." },
@@ -1950,6 +1992,12 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
       title: "Decide before you open every city card",
       links: [
         { label: "Best cities in the Netherlands for expats", href: "/netherlands/cities/best-cities-for-expats/" },
+        { label: "Best Dutch cities for families", href: "/netherlands/cities/best-cities-for-families/" },
+        {
+          label: "Best Dutch cities for international professionals",
+          href: "/netherlands/cities/best-cities-for-international-professionals/",
+        },
+        { label: "Cheapest cities for expats", href: "/netherlands/cities/cheapest-cities-for-expats/" },
         { label: "Netherlands city comparison tool", href: "/netherlands/tools/city-comparison/" },
       ],
     },
@@ -2016,6 +2064,24 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
       label: "Best cities for expats (guide)",
       href: "/netherlands/cities/best-cities-for-expats/",
       description: "Scenarios, trade-offs, and how to shortlist before you commit.",
+      status: "live",
+    },
+    {
+      label: "Cheapest cities for expats (guide)",
+      href: "/netherlands/cities/cheapest-cities-for-expats/",
+      description: "Relative affordability, commute trade-offs, and links to rent and cost tools.",
+      status: "live",
+    },
+    {
+      label: "Best Dutch cities for families (guide)",
+      href: "/netherlands/cities/best-cities-for-families/",
+      description: "Family shortlists, day-in-the-life trade-offs, childcare and school logistics.",
+      status: "live",
+    },
+    {
+      label: "Best Dutch cities for international professionals (guide)",
+      href: "/netherlands/cities/best-cities-for-international-professionals/",
+      description: "Career-led city choice: sectors, net pay vs rent, commute, and honest trade-offs.",
       status: "live",
     },
     { label: "Relocation Checklist", href: "/netherlands/moving-checklist-netherlands/", description: "Before, arrival, and first 90 days tasks", status: "live" },
