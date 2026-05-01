@@ -316,7 +316,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Banking",
         items: [
           item("Banking", "/netherlands/money/banking"),
-          item("Bank comparison", "/netherlands/money/banking/bank-comparison"),
           item("Family banking", "/netherlands/money/banking/family-banking"),
           item("Change bank", "/netherlands/money/banking/change-bank"),
           item("Mandate audit", "/netherlands/money/banking/mandate-audit"),
@@ -363,7 +362,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         ],
       },
     ],
-    featured: item("Bank comparison", "/netherlands/money/banking/bank-comparison"),
+    featured: item("Banking", "/netherlands/money/banking", "Accounts, fees, and everyday money setup."),
     tools: getDomainToolItems("money"),
   },
   living: {

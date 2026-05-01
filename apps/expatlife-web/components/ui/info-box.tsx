@@ -4,6 +4,8 @@ import { cn } from "@/lib/cn";
 
 type InfoBoxProps = ComponentPropsWithoutRef<"div"> & {
   title: string;
+  /** Overrides default title weight (default is semibold). */
+  titleClassName?: string;
   icon?: ReactNode;
   variant?: "info" | "success" | "warn";
 };
@@ -26,7 +28,7 @@ const defaultIcon = {
   warn: <TriangleAlert className="h-4 w-4" />,
 } as const;
 
-export function InfoBox({ title, icon, variant = "info", className, children, ...props }: InfoBoxProps) {
+export function InfoBox({ title, titleClassName, icon, variant = "info", className, children, ...props }: InfoBoxProps) {
   return (
     <div className={cn("rounded-card border p-4", styles[variant], className)} {...props}>
       <div className="flex items-start gap-3">
@@ -39,7 +41,7 @@ export function InfoBox({ title, icon, variant = "info", className, children, ..
           {icon ?? defaultIcon[variant]}
         </span>
         <div>
-          <p className="text-sm font-semibold text-foreground">{title}</p>
+          <p className={cn("text-sm font-semibold text-foreground", titleClassName)}>{title}</p>
           <div className="mt-1 text-sm leading-6 text-foreground-muted">{children}</div>
         </div>
       </div>

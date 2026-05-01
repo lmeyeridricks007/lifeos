@@ -44,7 +44,7 @@
       "route": "/netherlands/money/tools/",
       "description": "Salary, tax, affordability and cost calculators.",
       "menuGroup": "money",
-      "additionalToolIds": ["job-offer-comparison-tool", "payslip-decoder", "netherlands-city-comparison-tool"],
+      "additionalToolIds": ["job-offer-comparison-tool", "payslip-decoder", "netherlands-city-comparison-tool", "netherlands-bank-comparison-tool", "netherlands-banking-cost-estimator", "netherlands-transfer-cost-calculator"],
       "relatedGuides": [
         "/netherlands/money/how-taxes-work-in-the-netherlands/",
         "/netherlands/money/tax-return-netherlands/",
@@ -63,7 +63,7 @@
       "route": "/netherlands/taxes/tools/",
       "description": "Tax planning calculators and checks for expats in the Netherlands.",
       "menuGroup": "money",
-      "additionalToolIds": ["job-offer-comparison-tool", "payslip-decoder", "netherlands-city-comparison-tool"],
+      "additionalToolIds": ["job-offer-comparison-tool", "payslip-decoder", "netherlands-city-comparison-tool", "netherlands-bank-comparison-tool", "netherlands-banking-cost-estimator", "netherlands-transfer-cost-calculator"],
       "relatedGuides": [
         "/netherlands/money/how-taxes-work-in-the-netherlands/",
         "/netherlands/money/tax-return-netherlands/",

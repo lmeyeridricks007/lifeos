@@ -2,6 +2,24 @@ import type { MoneyTaxGuideRelatedToolGroupConfig } from "./taxGuideContent.type
 
 export const moneyTaxGuideRelatedTools: readonly MoneyTaxGuideRelatedToolGroupConfig[] = [
   {
+    eyebrow: "Banking (Netherlands)",
+    description: "Pair everyday Dutch banking with how you send money and what fees can look like in practice.",
+    items: [
+      {
+        title: "Bank comparison tool",
+        description: "Editorial fit scores for traditional banks, app-first banks, and transfer specialists — not live prices.",
+        cta: "Compare banks",
+        tool: "bankComparison",
+      },
+      {
+        title: "Banking cost estimator",
+        description: "Monthly and yearly euro planning bands — same fee categories as our Banking fees guide; confirm on each site.",
+        cta: "Estimate banking costs",
+        tool: "bankingCostEstimator",
+      },
+    ],
+  },
+  {
     eyebrow: "Salary & offers",
     description: "Turn offers into monthly realism.",
     items: [

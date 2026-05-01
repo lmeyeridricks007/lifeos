@@ -17,9 +17,12 @@ import {
   type BankBsnRequired,
 } from "@/src/data/banking/banks";
 
-const TABLE_WRAP = cn(
+/** Shared surface for bank comparison tables (reuse on banking subpages with custom columns). */
+export const bankComparisonTableSurfaceClass = cn(
   "-mx-px max-w-full overflow-x-auto overscroll-x-contain rounded-card border border-border bg-surface-raised shadow-card ring-1 ring-border/10 touch-pan-x"
 );
+
+const TABLE_WRAP = bankComparisonTableSurfaceClass;
 
 const HEADER_TH = "px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider text-foreground-muted";
 const HEADER_BUTTON = cn(

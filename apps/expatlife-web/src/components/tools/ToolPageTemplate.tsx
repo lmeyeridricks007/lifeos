@@ -21,6 +21,7 @@ import {
   toolIntroSurfaceClass,
   toolMainSurfaceClass,
 } from "@/lib/ui/page-family";
+import { movingNlSectionH2Class } from "@/lib/ui/moving-nl-pillar-identity";
 import type { ReactNode } from "react";
 import type { MonetizationPageType } from "@/src/lib/monetization/pageTypePolicy";
 import { toolTemplateAllowsPreFaqMonetization } from "@/src/lib/monetization/pageTypePolicy";
@@ -90,6 +91,11 @@ export type ToolPageTemplateProps = {
   relatedGuidesSectionId?: string;
   /** Overrides the H2 above the explanatory section cards (default: "How to use it"). */
   explanatorySectionsOuterTitle?: string;
+  /**
+   * When set, merged with the default Move-cluster H2 classes for primary tool section,
+   * main section, explanatory wrapper, and SEO content `SectionBlock` titles (e.g. `font-normal`).
+   */
+  sectionTitleExtraClassName?: string;
   /** Passed to `PillarMainStack` below the hero (vertical rhythm between tool contract regions). */
   mainStackClassName?: string;
   /** Wraps the tool hero in `PillarGuideHeroRegion` + max-width container (Moving NL cluster tools). */
@@ -141,6 +147,7 @@ export function ToolPageTemplate({
   relatedGuidesSectionTitle = "What happens next",
   relatedGuidesSectionId,
   explanatorySectionsOuterTitle = "How to use it",
+  sectionTitleExtraClassName,
   mainStackClassName,
   movingClusterHero = false,
   introSurfaceId,
@@ -152,6 +159,9 @@ export function ToolPageTemplate({
   allowPreFaqMonetization,
   postToolValue,
 }: ToolPageTemplateProps) {
+  const sectionH2Class = sectionTitleExtraClassName
+    ? cn(movingNlSectionH2Class, sectionTitleExtraClassName)
+    : undefined;
   const hasSidebar = Boolean(sidebar);
   const faqAnswerClass = movingClusterHero
     ? "text-sm leading-relaxed text-copilot-text-secondary"
@@ -205,6 +215,7 @@ export function ToolPageTemplate({
         <SectionBlock
           id="tool-inputs"
           title={primarySectionTitle}
+          titleClassName={sectionH2Class}
           compact
           className="scroll-mt-24 pt-4 md:pt-6"
         >
@@ -216,7 +227,12 @@ export function ToolPageTemplate({
   const toolSection =
     examplesSection || children ? (
       <Container>
-        <SectionBlock compact title={mainSectionTitle ?? "Build your checklist"} className="pt-4 md:pt-6">
+        <SectionBlock
+          compact
+          title={mainSectionTitle ?? "Build your checklist"}
+          titleClassName={sectionH2Class}
+          className="pt-4 md:pt-6"
+        >
           {children}
           {examplesSection ? (
             <div id={hasSidebar ? "example-scenarios" : undefined} className="mt-5">
@@ -319,6 +335,7 @@ export function ToolPageTemplate({
               <SectionBlock
                 id={hasSidebar ? "how-the-tool-works" : undefined}
                 title={explanatorySectionsOuterTitle}
+                titleClassName={sectionH2Class}
                 compact
                 className="pt-3 md:pt-4"
               >
@@ -344,6 +361,7 @@ export function ToolPageTemplate({
                             body: section.body ?? [],
                             bullets: section.bullets,
                           }}
+                          titleClassName={sectionTitleExtraClassName}
                           className={
                             movingClusterHero
                               ? "prose-headings:text-copilot-text-primary [&_p]:text-copilot-text-secondary [&_li]:text-copilot-text-secondary"
@@ -363,6 +381,7 @@ export function ToolPageTemplate({
               <SectionBlock
                 id={hasSidebar ? "seo-content" : undefined}
                 title={seoContentSectionTitle ?? "Details"}
+                titleClassName={sectionH2Class}
                 compact
                 className="pt-3 md:pt-4"
               >

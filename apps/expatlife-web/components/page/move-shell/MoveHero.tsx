@@ -19,6 +19,8 @@ export type MoveHeroDefaultProps = {
 export type MoveHeroToolProps = {
   variant: "tool";
   title: string;
+  /** Merged onto the H1 (e.g. `font-normal` to drop default bold). */
+  titleClassName?: string;
   subtitle: string;
   eyebrow?: string;
   introBullets?: string[];
@@ -136,6 +138,7 @@ export function MoveHero(props: MoveHeroProps) {
 
   const {
     title,
+    titleClassName,
     subtitle,
     eyebrow = "TOOL",
     introBullets,
@@ -171,7 +174,12 @@ export function MoveHero(props: MoveHeroProps) {
             <Eyebrow className="text-copilot-primary">{eyebrow}</Eyebrow>
           </div>
           <div className={cn(sitePillarFramedHeroGutterXClass, "pt-3 sm:pt-3.5 md:pt-4")}>
-            <h1 className="text-balance text-4xl font-bold tracking-tight text-copilot-text-primary sm:text-5xl md:text-[3.25rem] md:leading-[1.06] lg:text-[3.5rem]">
+            <h1
+              className={cn(
+                "text-balance text-4xl font-bold tracking-tight text-copilot-text-primary sm:text-5xl md:text-[3.25rem] md:leading-[1.06] lg:text-[3.5rem]",
+                titleClassName,
+              )}
+            >
               {title}
             </h1>
             <p className={toolSubtitleClass}>{subtitle}</p>

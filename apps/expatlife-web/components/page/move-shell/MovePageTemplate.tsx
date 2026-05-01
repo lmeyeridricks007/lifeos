@@ -53,7 +53,7 @@ export function MovePageTemplate({
       className={cn(
         // Default grid `align-items: stretch` so the sidebar column is as tall as the main column;
         // otherwise `items-start` shrinks the aside to content height and `position: sticky` never tracks scroll.
-        "lg:grid lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-10 lg:items-stretch",
+        "w-full min-w-0 lg:grid lg:grid-cols-[minmax(0,1fr)_280px] lg:gap-10 lg:items-stretch",
         variant === "tool" && "lg:gap-10"
       )}
     >
@@ -82,7 +82,7 @@ export function MovePageTemplate({
   }
 
   return (
-    <div className={cn("w-full max-w-screen-2xl", pad, className)}>
+    <div className={cn("w-full min-w-0 max-w-screen-2xl", pad, className)}>
       {body}
     </div>
   );

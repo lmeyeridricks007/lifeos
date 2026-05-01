@@ -20,6 +20,9 @@ export default function NetherlandsToolsHubPage() {
     "thirty-percent-ruling-calculator",
     "double-tax-awareness-tool",
     "netherlands-city-comparison-tool",
+    "netherlands-bank-comparison-tool",
+    "netherlands-banking-cost-estimator",
+    "netherlands-transfer-cost-calculator",
     "payslip-decoder",
     "job-offer-comparison-tool",
   ]).filter((t) => t?.id && t?.route);

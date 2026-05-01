@@ -10,6 +10,7 @@ import {
   bankingFeesHiddenTraps,
   bankingFeesScenarioProfiles,
 } from "@/src/data/banking/bankingFeesContent";
+import { BANK_COMPARISON_TOOL_PATH, BANKING_COST_ESTIMATOR_PATH } from "@/src/components/tools/banking-cost/bankingCostPageModel";
 
 export const BANKING_FEES_PATH = BANKING_FEES_PAGE_PATH;
 
@@ -371,16 +372,17 @@ export const bankingFeesPageModel = {
         ctaLabel: "Compare utilities",
       },
       {
-        title: "Banking cost estimator (planned)",
-        description: "A dedicated calculator is on the roadmap — use this guide and Best banks until it ships.",
-        href: BANKING_FEES_BEST_BANKS_PATH,
-        ctaLabel: "Use comparison guide for now",
+        title: "Banking cost estimator",
+        description:
+          "Monthly and yearly euro planning bands for the same fee categories as this guide — editorial assumptions, not live provider quotes.",
+        href: BANKING_COST_ESTIMATOR_PATH,
+        ctaLabel: "Estimate banking costs",
       },
       {
-        title: "Bank comparison tool (planned)",
-        description: "Side-by-side tool is planned — structured comparison lives on Best banks for expats today.",
-        href: BANKING_FEES_BEST_BANKS_PATH,
-        ctaLabel: "Open Best banks",
+        title: "Bank comparison tool",
+        description: "Questionnaire plus editorial fit scores for traditional, digital, and transfer providers — partner links do not change the math.",
+        href: BANK_COMPARISON_TOOL_PATH,
+        ctaLabel: "Compare banks",
       },
     ],
   },

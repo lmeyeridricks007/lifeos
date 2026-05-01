@@ -8,6 +8,8 @@ type Option = { value: string; label: string };
 
 type SegmentedControlProps = {
   name: string;
+  /** Accessible name for the radio group (preferred over raw `name` for screen readers). */
+  groupLabel?: string;
   options: Option[];
   value: string;
   onChange: (value: string) => void;
@@ -18,6 +20,7 @@ type SegmentedControlProps = {
 
 export function SegmentedControl({
   name,
+  groupLabel,
   options,
   value,
   onChange,
@@ -39,13 +42,13 @@ export function SegmentedControl({
       : "has-[:focus-visible]:ring-ring/30 has-[:focus-visible]:ring-offset-canvas";
 
   return (
-    <div className={cn("flex flex-wrap gap-2", className)} role="group" aria-label={name}>
+    <div className={cn("flex min-w-0 flex-wrap gap-2", className)} role="group" aria-label={groupLabel ?? name}>
       {options.map((opt) => (
         <label
           key={opt.value}
           className={cn(
             transitionInteractive,
-            "cursor-pointer rounded-full border px-3 py-2 text-sm font-medium ease-out has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-offset-2 active:brightness-[0.98] motion-reduce:active:brightness-100 sm:px-4",
+            "max-w-full cursor-pointer break-words rounded-full border px-3 py-2 text-left text-sm font-medium ease-out has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-offset-2 active:brightness-[0.98] motion-reduce:active:brightness-100 sm:px-4",
             focusRing,
             value === opt.value ? selectedClass : idleClass
           )}
@@ -59,7 +62,7 @@ export function SegmentedControl({
             className="sr-only"
             {...props}
           />
-          {opt.label}
+          <span className="min-w-0">{opt.label}</span>
         </label>
       ))}
     </div>

@@ -27,6 +27,8 @@ const DEFAULT_LABELS: Record<MoneyTaxGuideToolKey, string> = {
   moneyTools: "Money & tax tools hub",
   citiesHub: "Cities hub",
   taxAdvisorsGuide: "Netherlands taxes hub",
+  bankComparison: "Bank comparison tool",
+  bankingCostEstimator: "Banking cost estimator",
 };
 
 export function resolveTaxGuideTool(key: MoneyTaxGuideToolKey, labelOverride?: string): ResolvedTaxGuideTool {

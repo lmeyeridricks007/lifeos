@@ -69,6 +69,16 @@ export function BankingHubView() {
       clusterTitle="Also helpful"
       deepLinks={[
         {
+          href: "/netherlands/tools/bank-comparison/",
+          label: "Bank comparison tool →",
+          description: "Interactive fit map — same banking cluster assumptions as these guides.",
+        },
+        {
+          href: "/netherlands/tools/banking-cost-estimator/",
+          label: "Banking cost estimator →",
+          description: "Monthly and yearly euro planning bands before you open or switch accounts.",
+        },
+        {
           href: "/netherlands/money/banking/best-banks-expats/",
           label: "Best banks for expats →",
           description: "Editorial shortlist — confirm products on each bank’s site.",

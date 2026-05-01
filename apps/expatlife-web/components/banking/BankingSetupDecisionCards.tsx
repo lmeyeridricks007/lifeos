@@ -38,11 +38,11 @@ const SETUP_BADGE: Record<
 };
 
 /**
- * Editorial “if this sounds like you” cards — **not** personalised advice or live pricing.
+ * Editorial “if this sounds like you” cards — not personalised advice or live pricing.
  */
 export function BankingSetupDecisionCards({ cards, className }: { cards: readonly BankingSetupDecisionCardVm[]; className?: string }) {
   return (
-    <div className={cn("mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4", className)}>
+    <div className={cn("mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4", className)}>
       {cards.map((card) => {
         const badge = SETUP_BADGE[card.setup];
         return (

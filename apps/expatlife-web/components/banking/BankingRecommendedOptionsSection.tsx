@@ -19,15 +19,17 @@ export type BankingRecommendedOptionsSectionProps = {
   boundaryNote: string;
   categoryLinks: readonly CategoryLink[];
   browseLabel?: string;
-  /** Overrides the small uppercase line above the boundary note (default: separate-from-editorial copy). */
+  /** Overrides the small uppercase line above the boundary note (default: marks this block as separate from the main guide). */
   regionIntroLabel?: string;
   /** Canonical path of the page embedding this block — used for referral UTM `utm_content` (defaults to Best Banks). */
   utmReferrerPath?: string;
   destinationCountry?: string;
   originCountry?: string;
+  /** Softer chrome for long-form guides where the main comparison should stay primary (e.g. ZZP banking). */
+  surfaceTone?: "default" | "muted";
 };
 
-function isInternalEditorialCta(href: string, isAffiliate: boolean): boolean {
+function isInternalSiteCta(href: string, isAffiliate: boolean): boolean {
   return href.startsWith("/") && !href.startsWith("//") && !isAffiliate;
 }
 
@@ -37,8 +39,13 @@ function normalizeForCompare(s: string) {
 
 /**
  * Monetization-only region: provider cards, disclosures, and tracking-friendly anchors.
- * Editorial comparison lives outside this component — callers should label the section boundary in copy.
+ * The main comparison or guide lives outside this component — callers should label the section boundary in copy.
  */
+const SURFACE_DEFAULT_CLASS =
+  "rounded-2xl border-2 border-dashed border-slate-300/90 bg-slate-50/90 p-5 shadow-sm ring-1 ring-slate-900/[0.04] sm:p-6 md:p-7";
+const SURFACE_MUTED_CLASS =
+  "rounded-2xl border border-dashed border-border/45 bg-surface-muted/25 p-4 shadow-none ring-1 ring-border/[0.08] sm:p-5 md:p-6";
+
 export function BankingRecommendedOptionsSection({
   placementId,
   analyticsPageContext,
@@ -49,6 +56,7 @@ export function BankingRecommendedOptionsSection({
   utmReferrerPath,
   destinationCountry = "netherlands",
   originCountry,
+  surfaceTone = "default",
 }: BankingRecommendedOptionsSectionProps) {
   const data = loadPlacementWithProviders(placementId, destinationCountry, originCountry);
   const placement = data?.placement;
@@ -68,11 +76,11 @@ export function BankingRecommendedOptionsSection({
       data-monetization-placement={placementId}
     >
       <div
-        className="rounded-2xl border-2 border-dashed border-slate-300/90 bg-slate-50/90 p-5 shadow-sm ring-1 ring-slate-900/[0.04] sm:p-6 md:p-7"
+        className={surfaceTone === "muted" ? SURFACE_MUTED_CLASS : SURFACE_DEFAULT_CLASS}
         data-monetization-surface="provider-listings"
       >
         <p id={regionHeadingId} className="text-[10px] font-bold uppercase tracking-[0.16em] text-foreground-muted">
-          {regionIntroLabel ?? "Separate from editorial comparison"}
+          {regionIntroLabel ?? "Outside the main guide"}
         </p>
         <BoldParagraph
           text={boundaryNote}
@@ -95,7 +103,7 @@ export function BankingRecommendedOptionsSection({
                 partnerSlug: provider.id,
                 utmContent,
               });
-              const internal = isInternalEditorialCta(provider.cta.href, provider.cta.isAffiliate);
+              const internal = isInternalSiteCta(provider.cta.href, provider.cta.isAffiliate);
 
               return (
                 <article
@@ -165,9 +173,8 @@ export function BankingRecommendedOptionsSection({
         ) : null}
 
         {categoryLinks.length > 0 ? (
-          <p className="mt-4 text-sm leading-relaxed text-foreground-muted" data-monetization-editorial-links="true">
-            <span className="font-medium text-foreground">Editorial: </span>
-            {browseLabel ?? ""}
+          <p className="mt-4 text-sm leading-relaxed text-foreground-muted" data-monetization-context-links="true">
+            {browseLabel ? <span className="font-medium text-foreground">{browseLabel}</span> : null}
             {categoryLinks.map((link, index) => (
               <span key={link.href}>
                 {index > 0 ? <span aria-hidden> · </span> : null}

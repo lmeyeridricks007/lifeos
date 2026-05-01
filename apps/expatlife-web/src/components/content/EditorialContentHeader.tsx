@@ -182,7 +182,7 @@ export function EditorialContentHeader({
                   {eyebrow}
                 </Eyebrow>
               ) : null}
-              <h1 className="text-balance text-4xl font-bold tracking-tight text-copilot-text-primary sm:text-5xl md:text-[3.25rem] md:leading-[1.06] lg:text-[3.5rem]">
+              <h1 className="max-w-full text-balance break-words text-4xl font-bold tracking-tight text-copilot-text-primary sm:text-5xl md:text-[3.25rem] md:leading-[1.06] lg:text-[3.5rem]">
                 {title}
               </h1>
               {subtitle ? (

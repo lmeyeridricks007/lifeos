@@ -94,12 +94,24 @@ export const movingNlGuideSectionShellClass =
 export const movingNlGuideSectionTopAccentClass =
   "pointer-events-none absolute inset-x-0 top-0 z-[1] h-1 bg-gradient-to-r from-copilot-primary via-blue-500 to-copilot-accent";
 
+/**
+ * Shortlist / comparison accordions on Move-rhythm money guides (Visas-style chips, not banking pill chrome).
+ */
+export const movingNlGuideShortlistChipClass =
+  "rounded-full border-0 bg-copilot-bg-soft px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-copilot-text-muted shadow-expatos-sm ring-1 ring-copilot-primary/[0.08]";
+
+export const movingNlGuideShortlistIndexChipClass =
+  "rounded-full bg-copilot-primary/12 px-2 py-1 text-[10px] font-bold tabular-nums text-copilot-primary ring-1 ring-copilot-primary/20";
+
+export const movingNlGuideShortlistDetailPanelClass =
+  "rounded-xl border-0 bg-white/85 p-3 shadow-expatos-sm ring-1 ring-copilot-primary/[0.07]";
+
 /** Typography */
 export const movingNlSectionH2Class =
-  "scroll-mt-24 text-2xl font-bold tracking-tight text-copilot-text-primary sm:text-3xl";
+  "scroll-mt-24 min-w-0 max-w-full text-pretty break-words text-2xl font-bold tracking-tight text-copilot-text-primary sm:text-3xl";
 
 export const movingNlSectionH2OnDarkClass =
-  "scroll-mt-24 text-2xl font-bold tracking-tight text-white sm:text-3xl";
+  "scroll-mt-24 min-w-0 max-w-full text-pretty break-words text-2xl font-bold tracking-tight text-white sm:text-3xl";
 
 /** Slightly larger system heading for the 3-stages signature band */
 export const movingNlSectionH2StagesSignatureClass =

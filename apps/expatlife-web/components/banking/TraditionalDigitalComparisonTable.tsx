@@ -1,6 +1,6 @@
 "use client";
 
-import { BankFeePatternComparison } from "@/components/banking/BankFeePatternComparison";
+import { BankFeePatternComparison, type BankFeePatternComparisonProps } from "@/components/banking/BankFeePatternComparison";
 import type { TraditionalDigitalComparisonRow } from "@/src/data/banking/traditionalDigitalComparison";
 
 export type { TraditionalDigitalComparisonRow };
@@ -11,9 +11,13 @@ export type { TraditionalDigitalComparisonRow };
 export function TraditionalDigitalComparisonTable({
   rows,
   className,
+  tableCaption,
+  columnLabels,
 }: {
   rows: readonly TraditionalDigitalComparisonRow[];
   className?: string;
+  tableCaption?: BankFeePatternComparisonProps["tableCaption"];
+  columnLabels?: BankFeePatternComparisonProps["columnLabels"];
 }) {
-  return <BankFeePatternComparison rows={rows} className={className} />;
+  return <BankFeePatternComparison rows={rows} className={className} tableCaption={tableCaption} columnLabels={columnLabels} />;
 }

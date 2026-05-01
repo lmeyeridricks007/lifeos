@@ -240,6 +240,12 @@ export const bestBanksExpatsPageModel = {
     subtitle: "Hold the same assumptions when you compare accounts.",
     items: [
       {
+        title: "Bank comparison tool",
+        description: "Step through your situation and see weighted editorial fit scores — not live pricing or pay-to-rank.",
+        href: "/netherlands/tools/bank-comparison/",
+        ctaLabel: "Open comparison tool",
+      },
+      {
         title: "Types of bank accounts",
         description: "Map Dutch account types (current, savings, joint, student, business, digital) to your situation before you sort banks.",
         href: "/netherlands/money/banking/types-of-accounts/",
@@ -289,9 +295,9 @@ export const bestBanksExpatsPageModel = {
       },
       {
         title: "Banking cost estimator",
-        description: "A dedicated banking-fee estimator is on the ExpatCopilot roadmap — for now, use each bank’s published tariff PDF plus your expected transfers.",
-        href: "/netherlands/services/banks/",
-        ctaLabel: "Browse banks hub",
+        description: "Five-step questionnaire plus transparent monthly and yearly euro planning bands — then confirm every line on each bank’s tariff PDF.",
+        href: "/netherlands/tools/banking-cost-estimator/",
+        ctaLabel: "Open cost estimator",
       },
     ],
   },

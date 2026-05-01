@@ -139,6 +139,7 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   /** Taxes SEO cluster (planned — nav surfaces as Soon until promoted to live). */
   "/netherlands/taxes/": { title: "Netherlands taxes hub", section: "guides" },
   "/netherlands/taxes/expat-taxes-netherlands/": { title: "Expat taxes Netherlands (legacy)", section: "guides" },
+  "/netherlands/money/": { title: "Money in the Netherlands", section: "guides" },
   "/netherlands/money/expat-taxes-netherlands/": { title: "Expat Taxes in the Netherlands", section: "guides" },
   "/netherlands/taxes/how-taxes-work-netherlands/": { title: "How taxes work Netherlands", section: "guides" },
   "/netherlands/taxes/tax-residency-netherlands/": { title: "Tax residency Netherlands", section: "guides" },
@@ -283,6 +284,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/nijmegen/",
   "/netherlands/amstelveen/",
   "/netherlands/tools/",
+  /** Money pillar hub — orientation links to banking, taxes, and tools. */
+  "/netherlands/money/",
   /** Money pillar tax orientation guide (App Router). */
   "/netherlands/money/tax-guide-for-expats/",
   "/netherlands/money/how-taxes-work-in-the-netherlands/",
@@ -294,8 +297,11 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/money/banking/best-banks-expats/",
   "/netherlands/money/banking/traditional-vs-digital/",
   "/netherlands/money/banking/fees/",
+  "/netherlands/money/banking/cheapest-accounts/",
   "/netherlands/money/banking/types-of-accounts/",
   "/netherlands/money/banking/how-payments-work/",
+  "/netherlands/money/banking/international-transfers/",
+  "/netherlands/money/banking/best-bank-zzp/",
   "/netherlands/moving/visas-residency/",
   "/netherlands/moving/working-in-the-netherlands/",
   "/netherlands/moving/changing-jobs-netherlands/",

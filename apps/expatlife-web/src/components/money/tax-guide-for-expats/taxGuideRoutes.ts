@@ -43,6 +43,8 @@ export const taxGuideRoutes = {
   citiesHub: "/netherlands/cities/",
   /** Taxes flagship hub — use until a dedicated advisors guide route ships. */
   taxAdvisorsGuide: "/netherlands/taxes/",
+  bankComparison: "/netherlands/tools/bank-comparison/",
+  bankingCostEstimator: "/netherlands/tools/banking-cost-estimator/",
 } as const;
 
 export type TaxGuideRouteKey = keyof typeof taxGuideRoutes;

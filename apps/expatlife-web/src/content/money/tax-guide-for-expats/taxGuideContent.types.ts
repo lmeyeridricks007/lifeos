@@ -29,7 +29,9 @@ export type MoneyTaxGuideToolKey =
   | "taxesTools"
   | "moneyTools"
   | "citiesHub"
-  | "taxAdvisorsGuide";
+  | "taxAdvisorsGuide"
+  | "bankComparison"
+  | "bankingCostEstimator";
 
 /** Stable keys for Belastingdienst / government URLs — URLs live in officialSourceRegistry only. */
 export type MoneyTaxGuideOfficialSourceKey =

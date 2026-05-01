@@ -10,6 +10,8 @@ type AccordionItem = { id: string; title: ReactNode; content: ReactNode | string
 type AccordionProps = {
   items: AccordionItem[];
   allowMultiple?: boolean;
+  /** If set, that panel starts open (single id). */
+  initialOpenId?: string;
   className?: string;
   /** Larger tap targets + spacing for guide FAQ surfaces */
   density?: "default" | "comfortable";
@@ -22,11 +24,12 @@ type AccordionProps = {
 export function Accordion({
   items,
   allowMultiple = false,
+  initialOpenId,
   className,
   density = "default",
   tone = "default",
 }: AccordionProps) {
-  const [openIds, setOpenIds] = useState<Set<string>>(new Set());
+  const [openIds, setOpenIds] = useState<Set<string>>(() => (initialOpenId ? new Set([initialOpenId]) : new Set()));
   const toggle = (id: string) => {
     setOpenIds((prev) => {
       const next = new Set(prev);
@@ -77,7 +80,7 @@ export function Accordion({
               id={`accordion-heading-${item.id}`}
               className={cn(
                 transitionSurface,
-                "flex w-full items-center justify-between gap-3 text-left text-sm font-semibold ease-out",
+                "flex min-w-0 w-full items-center justify-between gap-3 text-left text-sm font-semibold ease-out",
                 bold &&
                   "text-slate-900 hover:bg-slate-50 active:bg-slate-100/80 motion-reduce:active:bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copilot-primary/40 focus-visible:ring-offset-2 focus-visible:ring-offset-copilot-bg-light",
                 copilot &&
@@ -90,7 +93,14 @@ export function Accordion({
                 comfortable ? "min-h-[48px] px-4 py-3.5" : "min-h-[44px] gap-2 px-4 py-3"
               )}
             >
-              <span className={cn(comfortable && "pr-2 leading-snug")}>{item.title}</span>
+              <span
+                className={cn(
+                  "min-w-0 max-w-full flex-1 text-left text-pretty break-words [overflow-wrap:anywhere]",
+                  comfortable && "pr-2 leading-snug"
+                )}
+              >
+                {item.title}
+              </span>
               <ChevronDown
                 className={cn(
                   "h-4 w-4 shrink-0",

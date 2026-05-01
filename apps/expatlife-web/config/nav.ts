@@ -216,9 +216,21 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
             false
           ),
           link(
+            "International transfers",
+            "/netherlands/money/banking/international-transfers/",
+            "Send money abroad from the Netherlands — banks, apps, specialists, FX markups, and hidden costs",
+            false
+          ),
+          link(
             "Banking fees & costs",
             "/netherlands/money/banking/fees/",
             "Simple guide to common bank charges — check each bank’s own prices before you sign up",
+            false
+          ),
+          link(
+            "Cheapest bank accounts",
+            "/netherlands/money/banking/cheapest-accounts/",
+            "Low-cost Dutch accounts for expats — total cost, hidden fees, digital vs traditional — verify on bank sites",
             false
           ),
           link(
@@ -233,7 +245,6 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
             "Compare ING, ABN AMRO, digital banks, fees, and onboarding",
             false
           ),
-          link("Bank comparison", "/netherlands/money/banking/bank-comparison", "Compare options"),
           link(
             "Netherlands tax guide for expats",
             "/netherlands/money/tax-guide-for-expats/",
@@ -260,6 +271,29 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
           ),
           link("Taxes", "/netherlands/money/taxes", "Tax basics"),
           link("Tax readiness", "/netherlands/money/taxes/readiness-score", "Readiness scoring"),
+        ],
+      },
+      {
+        title: "Tools",
+        links: [
+          link(
+            "Bank comparison tool",
+            "/netherlands/tools/bank-comparison/",
+            "Compare banks from your answers — planning help, not live prices",
+            false
+          ),
+          link(
+            "Banking cost estimator",
+            "/netherlands/tools/banking-cost-estimator/",
+            "Monthly and yearly euro planning bands for fees, cards, transfers, and ZZP extras",
+            false
+          ),
+          link(
+            "International transfer cost calculator",
+            "/netherlands/tools/transfer-cost-calculator/",
+            "Fee + FX planning bands for sends abroad from the Netherlands — not live rates",
+            false
+          ),
         ],
       },
       {
@@ -448,9 +482,21 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
             false
           ),
           link(
+            "International transfers",
+            "/netherlands/money/banking/international-transfers/",
+            "Compare banks, digital providers, and transfer services — fees, FX, speed, and amount received",
+            false
+          ),
+          link(
             "Banking fees & costs",
             "/netherlands/money/banking/fees/",
             "Fee categories, transfers, ATM, ZZP costs, and how to compare totals",
+            false
+          ),
+          link(
+            "Cheapest bank accounts",
+            "/netherlands/money/banking/cheapest-accounts/",
+            "Low-cost accounts, hidden fees, and total yearly cost for expats",
             false
           ),
           link(
@@ -459,7 +505,6 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
             "ING, ABN AMRO, bunq, Revolut, N26 — structured comparison",
             false
           ),
-          link("Bank comparison", "/netherlands/money/banking/bank-comparison", "Account choice"),
           link("Tax readiness", "/netherlands/money/taxes/readiness-score", "Readiness check"),
         ],
       },

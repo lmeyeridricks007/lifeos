@@ -62,10 +62,22 @@ export const bankingHubPageModel = {
         "Account numbers, paying online through your bank, transfers, automatic bills, cards in shops, payment requests, and how salary, rent, and utilities usually work — in plain English.",
     },
     {
+      href: "/netherlands/money/banking/international-transfers/",
+      title: "International transfers from the Netherlands",
+      description:
+        "Compare banks, digital providers, and transfer specialists — fees, FX markups, speed, and hidden costs — then confirm every detail on official calculators.",
+    },
+    {
       href: "/netherlands/money/banking/fees/",
       title: "Banking fees & costs",
       description:
         "What Dutch banks often charge for — pair with account types, then read each bank’s official price list.",
+    },
+    {
+      href: "/netherlands/money/banking/cheapest-accounts/",
+      title: "Cheapest bank accounts",
+      description:
+        "Low-cost options for expats — monthly fees, digital vs traditional, hidden costs, and total yearly cost without fake “cheapest” claims.",
     },
     {
       href: "/netherlands/money/banking/traditional-vs-digital/",
@@ -78,6 +90,23 @@ export const bankingHubPageModel = {
       title: "Best banks for expats",
       description:
         "Compare onboarding, fees, English support, and typical trade-offs — editorial best banks for expats shortlist, then confirm on each bank’s site.",
+    },
+    {
+      href: "/netherlands/money/banking/best-bank-zzp/",
+      title: "Best bank for freelancers (ZZP)",
+      description:
+        "Business vs personal accounts, invoicing angles, shortlist and comparison table for self-employed expats — planning only; confirm on each bank’s site.",
+    },
+    {
+      href: "/netherlands/tools/banking-cost-estimator/",
+      title: "Banking cost estimator",
+      description:
+        "Monthly and yearly euro planning bands for account fees, cards, ATM use, transfers, FX, and ZZP extras — not live provider quotes.",
+    },
+    {
+      href: "/netherlands/tools/bank-comparison/",
+      title: "Bank comparison tool",
+      description: "Questionnaire plus editorial fit scores for traditional, digital, and transfer providers — partner links do not change the math.",
     },
     {
       href: "/netherlands/open-bank-account-netherlands/",

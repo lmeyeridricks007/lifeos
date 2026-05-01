@@ -1,0 +1,19 @@
+{
+  "id": "nl-money-cheapest-accounts-transfers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/cheapest-accounts/",
+    "slot": "recommended-providers-cheapest-transfers"
+  },
+  "variant": "cards",
+  "title": "International transfer & multi-currency — compare received amounts",
+  "intro": "Specialist tools are common companions to a Dutch IBAN — compare calculators on official sites for your actual corridors.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    { "providerId": "wise", "reason": "Multi-currency transfers — compare fees and received amount for your corridor on Wise’s official calculator." },
+    { "providerId": "revolut", "reason": "App-based FX and sends — read plan limits and weekend pricing before large transfers." }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm scope, pricing, and terms with the provider directly."
+}

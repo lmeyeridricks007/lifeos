@@ -682,7 +682,8 @@
         "/netherlands/taxes/tools/dutch-salary-net-calculator/",
         "/netherlands/moving/tools/relocation-cost-estimator/",
         "/netherlands/housing/tools/rent-affordability-calculator/",
-        "/netherlands/tools/city-comparison/"
+        "/netherlands/tools/city-comparison/",
+        "/netherlands/tools/bank-comparison/"
       ],
       "affiliatePlacementIds": [],
       "affiliateCategories": ["banking", "housing-platforms"],
@@ -844,6 +845,163 @@
       "exampleInputs": ["2–4 cities", "Household", "Net salary", "Work mode", "Office city", "Priority sliders"],
       "exampleOutputs": ["Ranked fit", "Cost table", "Commute notes", "Scenario lenses", "HTML export"],
       "mostUsefulFor": "Expats choosing where to live before deep housing search."
+    },
+    {
+      "id": "netherlands-bank-comparison-tool",
+      "title": "Bank Comparison Tool for Expats in the Netherlands",
+      "slug": "bank-comparison",
+      "route": "/netherlands/tools/bank-comparison/",
+      "status": "live",
+      "templateType": "comparison",
+      "categoryId": "money-tax",
+      "menuGroup": "money",
+      "seo": {
+        "title": "Bank Comparison Tool for Expats in the Netherlands | ExpatCopilot",
+        "description": "Compare Dutch banks, digital banks, and international-friendly accounts based on your expat situation, banking needs, fees, transfers, iDEAL, business banking, and daily payments.",
+        "keywords": [
+          "bank comparison netherlands expats",
+          "compare banks netherlands",
+          "best bank account netherlands expats",
+          "digital vs traditional bank netherlands",
+          "expat banking tool netherlands"
+        ]
+      },
+      "summary": "Short questionnaire plus simple scores for classic Dutch banks, app banks, and transfer services — not live prices, and partner links do not change the order.",
+      "primaryConversion": "both",
+      "relatedGuides": [
+        "/netherlands/money/banking/best-banks-expats/",
+        "/netherlands/money/banking/traditional-vs-digital/",
+        "/netherlands/money/banking/fees/",
+        "/netherlands/money/banking/cheapest-accounts/",
+        "/netherlands/money/banking/types-of-accounts/",
+        "/netherlands/money/banking/how-payments-work/",
+        "/netherlands/money/banking/best-bank-zzp/",
+        "/netherlands/money/banking/international-transfers/",
+        "/netherlands/money/banking/",
+        "/netherlands/money/",
+        "/netherlands/tools/"
+      ],
+      "relatedTools": [
+        "/netherlands/tools/banking-cost-estimator/",
+        "/netherlands/tools/transfer-cost-calculator/",
+        "/netherlands/money/tools/cost-of-living-calculator/",
+        "/netherlands/tools/city-comparison/",
+        "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+        "/netherlands/work/tools/payslip-decoder/"
+      ],
+      "affiliatePlacementIds": [],
+      "affiliateCategories": ["banks"],
+      "signupVariant": "default",
+      "pillarCategoryRoute": "/netherlands/tools/",
+      "exampleInputs": ["Situation", "Banking needs", "International use", "Support preference", "Include/exclude bank types"],
+      "exampleOutputs": ["Fit score", "Weight breakdown", "Hybrid recommendation", "Hidden cost checklist"],
+      "mostUsefulFor": "Expats shortlisting Dutch everyday banking before reading each bank’s official PDF."
+    },
+    {
+      "id": "netherlands-banking-cost-estimator",
+      "title": "Banking Cost Estimator for Expats in the Netherlands",
+      "slug": "banking-cost-estimator",
+      "route": "/netherlands/tools/banking-cost-estimator/",
+      "status": "live",
+      "templateType": "calculator",
+      "categoryId": "money-tax",
+      "menuGroup": "money",
+      "seo": {
+        "title": "Banking Cost Estimator for Expats in the Netherlands | ExpatCopilot",
+        "description": "Estimate your likely banking costs in the Netherlands, including account fees, card costs, ATM usage, international transfers, FX costs, premium plans, joint accounts, and ZZP/business banking extras.",
+        "keywords": [
+          "banking cost estimator netherlands",
+          "bank account fees calculator netherlands",
+          "expat banking costs netherlands",
+          "international transfer cost estimate netherlands",
+          "cheapest bank account cost netherlands"
+        ]
+      },
+      "summary": "Five-step questionnaire plus transparent monthly and yearly euro planning bands for account fees, cards, ATM use, transfers, FX, premium plans, joint and ZZP extras — not live provider quotes.",
+      "primaryConversion": "both",
+      "relatedGuides": [
+        "/netherlands/money/banking/fees/",
+        "/netherlands/money/banking/cheapest-accounts/",
+        "/netherlands/money/banking/best-banks-expats/",
+        "/netherlands/money/banking/traditional-vs-digital/",
+        "/netherlands/money/banking/international-transfers/",
+        "/netherlands/money/banking/best-bank-zzp/",
+        "/netherlands/money/banking/",
+        "/netherlands/money/",
+        "/netherlands/tools/"
+      ],
+      "relatedTools": [
+        "/netherlands/tools/bank-comparison/",
+        "/netherlands/tools/transfer-cost-calculator/",
+        "/netherlands/money/tools/cost-of-living-calculator/",
+        "/netherlands/tools/city-comparison/",
+        "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+      ],
+      "affiliatePlacementIds": [],
+      "affiliateCategories": ["banks"],
+      "signupVariant": "default",
+      "pillarCategoryRoute": "/netherlands/tools/",
+      "exampleInputs": [
+        "Situation",
+        "Account fee guess",
+        "Cards & premium",
+        "ATM & travel",
+        "Transfers & FX",
+        "Business & household"
+      ],
+      "exampleOutputs": [
+        "Monthly and yearly euro bands",
+        "Category breakdown",
+        "Hidden cost checklist",
+        "Setup recommendation",
+        "Next steps"
+      ],
+      "mostUsefulFor": "Expats modelling total banking spend before opening accounts or switching banks."
+    },
+    {
+      "id": "netherlands-transfer-cost-calculator",
+      "title": "International Transfer Cost Calculator",
+      "slug": "transfer-cost-calculator",
+      "route": "/netherlands/tools/transfer-cost-calculator/",
+      "status": "live",
+      "templateType": "calculator",
+      "categoryId": "money-tax",
+      "menuGroup": "money",
+      "seo": {
+        "title": "International Transfer Cost Calculator | ExpatCopilot",
+        "description": "Rough guide to sending money from the Netherlands: send fees, exchange-rate cost (FX), and how much may reach the other person. Uses simple ranges for planning — not live bank prices.",
+        "keywords": [
+          "international transfer cost calculator Netherlands",
+          "send money abroad fees Netherlands",
+          "FX markup transfer estimate",
+          "expat transfer calculator EUR"
+        ]
+      },
+      "summary": "Four short steps plus simple fee and exchange-rate cost ranges for banks, app banks, and transfer companies — rough euro value for the recipient, not live FX.",
+      "primaryConversion": "both",
+      "relatedGuides": [
+        "/netherlands/money/banking/international-transfers/",
+        "/netherlands/money/banking/fees/",
+        "/netherlands/money/banking/traditional-vs-digital/",
+        "/netherlands/money/banking/best-banks-expats/",
+        "/netherlands/money/banking/",
+        "/netherlands/money/",
+        "/netherlands/tools/"
+      ],
+      "relatedTools": [
+        "/netherlands/tools/bank-comparison/",
+        "/netherlands/tools/banking-cost-estimator/",
+        "/netherlands/money/tools/cost-of-living-calculator/",
+        "/netherlands/tools/city-comparison/",
+        "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+      ],
+      "affiliatePlacementIds": [],
+      "affiliateCategories": ["banks"],
+      "signupVariant": "default",
+      "pillarCategoryRoute": "/netherlands/tools/",
+      "exampleInputs": ["Send amount (EUR)", "Recipient currency", "Frequency", "Path + priorities"],
+      "exampleOutputs": ["Total cost band", "Recipient-value band", "Three path cards", "Hidden-cost warnings", "Methodology"],
+      "mostUsefulFor": "Expats sanity-checking international send costs before using each provider’s live calculator."
     },
     {
       "id": "dutch-rental-budget-calculator",

@@ -37,6 +37,7 @@ import {
   BANKING_VISUAL_CARD_PANEL_CLASS,
   BANKING_VISUAL_CARD_SHELL_CLASS,
 } from "@/components/banking/bankingPageUi";
+import { BankingCompareFitEstimateCostCta } from "@/components/banking/BankingCompareFitEstimateCostCta";
 import { BankingRecommendedOptionsSection } from "@/components/banking/BankingRecommendedOptionsSection";
 import { MoveMisunderstandingCardGrid } from "@/src/components/moving/movePillarCardPrimitives";
 import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc";
@@ -185,6 +186,16 @@ export function BestBanksExpatsView() {
       clusterTitle="Also helpful"
       deepLinks={[
         {
+          href: "/netherlands/tools/bank-comparison/",
+          label: "Bank comparison tool →",
+          description: "Match traditional, digital, and transfer specialists to your situation — transparent editorial fit scores.",
+        },
+        {
+          href: "/netherlands/tools/banking-cost-estimator/",
+          label: "Banking cost estimator →",
+          description: "Model likely monthly and yearly banking spend before you shortlist names.",
+        },
+        {
           href: "/netherlands/money/banking/types-of-accounts/",
           label: "Types of bank accounts →",
           description: "Betaalrekening, savings, joint, student, business, digital — education before the shortlist.",
@@ -313,6 +324,7 @@ export function BestBanksExpatsView() {
                       Back to Banking hub →
                     </Link>
                   </p>
+                  <BankingCompareFitEstimateCostCta className="mt-4 max-w-full" />
                 </div>
               }
               heroMediaSlot={

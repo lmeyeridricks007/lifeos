@@ -36,6 +36,7 @@ import {
   BANKING_GUIDE_STACK_CLASS,
   BANKING_SECTION_PANEL_CLASS,
 } from "@/components/banking/bankingPageUi";
+import { BankingGuideHeroNextSteps } from "@/components/banking/BankingGuideHeroNextSteps";
 import { GuideTopicDeepDive, stripPairedBold } from "@/components/banking/GuideTopicParagraphCards";
 import { PaymentConceptGrid } from "@/components/banking/PaymentConceptGrid";
 import {
@@ -113,6 +114,16 @@ export function HowPaymentsWorkView() {
       items={meta.sectionNav}
       clusterTitle="Also helpful"
       deepLinks={[
+        {
+          href: "/netherlands/tools/bank-comparison/",
+          label: "Bank comparison tool →",
+          description: "Prioritise iDEAL and local rails in your stack — editorial fit only.",
+        },
+        {
+          href: "/netherlands/tools/banking-cost-estimator/",
+          label: "Banking cost estimator →",
+          description: "Rough monthly and yearly banking spend before you pick a fee tier.",
+        },
         { href: meta.hero.secondaryCta.href, label: "Compare banks →", description: "Shortlist — confirm iDEAL, cards, and fees on each bank site." },
         { href: "/netherlands/open-bank-account-netherlands/", label: "Open bank account →", description: "Move guide — documents and BSN timing." },
         { href: "/netherlands/money/banking/fees/", label: "Banking fees →", description: "Fee checklist before you rely on transfers." },
@@ -200,23 +211,10 @@ export function HowPaymentsWorkView() {
                       {meta.hero.secondaryCta.label}
                     </Link>
                   </div>
-                  <nav className="border-t border-border/50 pt-3" aria-label="Quick banking actions">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-foreground-muted">Next steps</p>
-                    <ul className="mt-2 grid grid-cols-1 gap-x-4 gap-y-2 sm:grid-cols-2 sm:gap-y-2.5">
-                      {meta.hero.heroQuickLinks.map((l) => (
-                        <li key={l.href} className="min-w-0">
-                          <Link href={l.href} className={cn(tertiaryLinkClass, "inline-flex min-h-[44px] items-center text-sm")}>
-                            {l.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </nav>
-                  <p className="text-xs text-foreground-muted">
-                    <Link href="/netherlands/money/banking/" className={cn(tertiaryLinkClass, "inline-flex min-h-[40px] items-center")}>
-                      Back to Banking hub →
-                    </Link>
-                  </p>
+                  <BankingGuideHeroNextSteps
+                    links={meta.hero.heroQuickLinks}
+                    hubLink={{ href: "/netherlands/money/banking/", label: "Back to Banking hub" }}
+                  />
                 </div>
               }
               heroMediaSlot={

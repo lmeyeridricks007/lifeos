@@ -39,6 +39,7 @@ import {
   BANKING_VISUAL_CARD_PANEL_CLASS,
   BANKING_VISUAL_CARD_SHELL_CLASS,
 } from "@/components/banking/bankingPageUi";
+import { BankingCompareFitEstimateCostCta } from "@/components/banking/BankingCompareFitEstimateCostCta";
 import { BankTypeComparison } from "@/components/banking/BankTypeComparison";
 import { BankScenarioCards } from "@/components/banking/BankScenarioCards";
 import { HybridBankingSetup } from "@/components/banking/HybridBankingSetup";
@@ -96,6 +97,16 @@ export function TraditionalVsDigitalBanksView() {
       items={meta.sectionNav}
       clusterTitle="Also helpful"
       deepLinks={[
+        {
+          href: "/netherlands/tools/bank-comparison/",
+          label: "Bank comparison tool →",
+          description: "See how your answers weight traditional vs digital vs transfer add-ons.",
+        },
+        {
+          href: "/netherlands/tools/banking-cost-estimator/",
+          label: "Banking cost estimator →",
+          description: "Turn your setup and usage into monthly and yearly euro planning bands.",
+        },
         { href: meta.hero.primaryCta.href, label: "Compare banks →", description: "Editorial shortlist — not live pricing." },
         { href: "/netherlands/money/banking/types-of-accounts/", label: "Types of bank accounts →", description: "Current, savings, joint, student, business, digital, cards." },
         { href: `#${meta.hybridSetup.id}`, label: "Hybrid setup →", description: "Traditional + digital in practice." },
@@ -210,6 +221,7 @@ export function TraditionalVsDigitalBanksView() {
                       ))}
                     </ul>
                   </nav>
+                  <BankingCompareFitEstimateCostCta className="mt-4 max-w-full" />
                   <p className="text-xs text-foreground-muted">
                     <Link href="/netherlands/money/banking/" className={cn(tertiaryLinkClass, "inline-flex min-h-[40px] items-center")}>
                       Back to Banking hub →

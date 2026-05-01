@@ -298,7 +298,7 @@ function filterMegaMenu(menu: MegaMenu): MegaMenu {
   };
 }
 
-/** Money mega tools column: tax/money calculators from registry (Soon when placeholder) + tools hub. */
+/** Money mega menu tools column: calculators + bank comparison from registry + tools hub (banking guides stay in section columns). */
 function buildMoneyToolRail(): NavItem[] {
   const ids = [
     "thirty-percent-ruling-calculator",
@@ -312,36 +312,18 @@ function buildMoneyToolRail(): NavItem[] {
     "employment-contract-risk-scanner",
     "payslip-decoder",
     "employment-type-scenario-tool",
+    /** Banking & transfer tools in the Money mega menu tools rail. */
+    "netherlands-bank-comparison-tool",
+    "netherlands-banking-cost-estimator",
+    "netherlands-transfer-cost-calculator",
   ];
-  const bankingReads = [
-    item(
-      "Types of bank accounts",
-      "/netherlands/money/banking/types-of-accounts/",
-      "Current, savings, joint, student, business, digital, and cards — which setup fits your situation."
-    ),
-    item(
-      "How payments work",
-      "/netherlands/money/banking/how-payments-work/",
-      "Account number, paying online, cards in shops, rent, salary, and utilities — explained simply."
-    ),
-    item(
-      "Traditional vs digital banks",
-      "/netherlands/money/banking/traditional-vs-digital/",
-      "Short guide before you pick a bank: branch vs app banks and common expat setups."
-    ),
-    item(
-      "Banking fees & costs",
-      "/netherlands/money/banking/fees/",
-      "Fee types, traps, and how to compare total cost — confirm live prices on bank sites."
-    ),
-    item(
-      "Best banks for expats",
-      "/netherlands/money/banking/best-banks-expats/",
-      "Editorial comparison table and next steps — confirm details on bank sites."
-    ),
+  const toolRows = sortNavItemsForDisplay(dedupeNavItems(toolItemsByIds(ids)));
+  /** Hub links after registry tools so order stays predictable (not sorted with tool titles). */
+  return [
+    ...toolRows,
+    item("Money & Tax tools hub", "/netherlands/money/tools/", "Calculators and planners grouped under Money & Tax on ExpatCopilot."),
+    item("Open tools hub", "/netherlands/tools/", "Browse all tools across categories."),
   ];
-  const toolRail = sortNavItemsForDisplay([...dedupeNavItems(toolItemsByIds(ids)), item("Open tools hub", "/netherlands/tools/")]);
-  return [...bankingReads, ...toolRail];
 }
 
 /** Living mega tools column: curated housing tools from `menu-features.json` + view-all + hub. */
@@ -781,6 +763,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Simple guide: common bank charges in the Netherlands, what to check on each bank’s website, and how to compare costs."
           ),
           item(
+            "Cheapest bank accounts",
+            "/netherlands/money/banking/cheapest-accounts/",
+            "Low-cost Dutch accounts for expats — monthly vs total cost, hidden fees, and digital vs traditional — verify on official sites."
+          ),
+          item(
             "Traditional vs digital banks",
             "/netherlands/money/banking/traditional-vs-digital/",
             "Easy read: big Dutch banks vs app-only banks, when people use both, and what to check with your employer or landlord."
@@ -790,7 +777,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/money/banking/best-banks-expats/",
             "Compare banks side by side: fees, English help, and signing up — always double-check on each bank’s website."
           ),
-          item("Bank comparison", "/netherlands/money/banking/bank-comparison"),
+          item(
+            "International transfers",
+            "/netherlands/money/banking/international-transfers/",
+            "Sending money abroad from a Dutch account: fees, exchange rates, timing, and what to check before you send."
+          ),
+          item(
+            "Best bank for freelancers (ZZP)",
+            "/netherlands/money/banking/best-bank-zzp/",
+            "Business accounts, typical freelancer setups, and fair comparison — always confirm products and prices on each bank’s website."
+          ),
           item("Family banking", "/netherlands/money/banking/family-banking"),
           item("Change bank", "/netherlands/money/banking/change-bank"),
           item("FX abroad", "/netherlands/money/banking/fx-abroad"),
@@ -887,6 +883,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         items: [
           item("Freelancing Netherlands", "/netherlands/work/freelancing-netherlands/"),
           item("ZZP Netherlands", "/netherlands/work/zzp-netherlands/"),
+          item(
+            "Best bank for freelancers (ZZP)",
+            "/netherlands/money/banking/best-bank-zzp/",
+            "Money guide: bank setups freelancers compare first — confirm with your bank and accountant."
+          ),
           item("Contractor vs employee Netherlands", "/netherlands/work/contractor-vs-employee-netherlands/"),
         ],
       },
@@ -954,6 +955,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Simple guide to common bank charges — always confirm prices on each bank’s website."
           ),
           item(
+            "Cheapest bank accounts (guide)",
+            "/netherlands/money/banking/cheapest-accounts/",
+            "Low-cost Dutch accounts for expats — total yearly cost and hidden fees; verify on provider sites."
+          ),
+          item(
             "Types of bank accounts (guide)",
             "/netherlands/money/banking/types-of-accounts/",
             "Easy read for expats: which Dutch account types exist and what people use them for."
@@ -963,7 +969,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/money/banking/how-payments-work/",
             "Everyday money in the Netherlands: paying rent and shops, online checkout, and bills — in plain language."
           ),
-          item("Bank comparison", "/netherlands/services/bank-comparison/"),
+          item(
+            "International transfers (guide)",
+            "/netherlands/money/banking/international-transfers/",
+            "Money guide: compare total cost, FX, and speed when you send from the Netherlands — confirm on each provider’s site."
+          ),
+          item(
+            "Best bank for freelancers / ZZP (guide)",
+            "/netherlands/money/banking/best-bank-zzp/",
+            "Money guide: freelancer banking setups and what to check on each bank’s business pages."
+          ),
           item("Mortgage advisors", "/netherlands/services/mortgage-advisors/"),
           item("Financial advisors", "/netherlands/services/financial-advisors/"),
           item("View all services", "/netherlands/services/"),

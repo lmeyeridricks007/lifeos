@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Building2, CreditCard, Globe2, Landmark, Layers3, Send, Smartphone } from "lucide-react";
+import { ArrowRight, CreditCard, Globe2, Landmark, Send } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { BoldInline, BoldParagraph } from "@/components/content/PillarContentBlocks";
 import { GuidePageTemplate } from "@/components/page/page-templates";
@@ -28,18 +28,25 @@ import {
   movingNlCardMicroLiftClass,
   movingNlSignatureGradientClass,
 } from "@/lib/ui/moving-nl-pillar-identity";
-import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
+import { BankingCompareFitEstimateCostCta } from "@/components/banking/BankingCompareFitEstimateCostCta";
 import { BankingAvoidableCostGrid } from "@/components/banking/BankingAvoidableCostGrid";
+import { BankingGuideHeroNextSteps } from "@/components/banking/BankingGuideHeroNextSteps";
 import { BankFeePatternCards } from "@/components/banking/BankFeePatternCards";
 import { BankFeePatternComparison } from "@/components/banking/BankFeePatternComparison";
+import { BankingTraditionalDigitalPatternGrid } from "@/components/banking/BankingTraditionalDigitalPatternGrid";
 import {
+  BANKING_GUIDE_MAJOR_SECTION_CLASS,
   BANKING_GUIDE_STACK_CLASS,
-  BANKING_SECTION_PANEL_CLASS,
   BANKING_VISUAL_CARD_BODY_CLASS,
   BANKING_VISUAL_CARD_CHIP_CLASS,
   BANKING_VISUAL_CARD_NUMBER_CHIP_CLASS,
   BANKING_VISUAL_CARD_PANEL_CLASS,
   BANKING_VISUAL_CARD_SHELL_CLASS,
+  bankingGuideInfoChipClass,
+  bankingGuidePrimaryCtaClass,
+  bankingGuideSecondaryCtaClass,
+  bankingGuideSectionScrollMarginClass,
+  bankingGuideTertiaryLinkClass,
 } from "@/components/banking/bankingPageUi";
 import { BankingFeeCategoryGrid } from "@/components/banking/BankingFeeCategoryGrid";
 import { BankingProfileCostCards } from "@/components/banking/BankingProfileCostCards";
@@ -55,10 +62,8 @@ import { InstructionalRasterFigure } from "@/src/components/money/InstructionalR
 import { bankingFeesPageModel as meta } from "./bankingFeesPageModel";
 
 const CANONICAL = meta.path;
-const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
-const SECTION_MAJOR = cn(SECTION_SCROLL_MARGIN, BANKING_SECTION_PANEL_CLASS);
-const INFO_CHIP =
-  "inline-flex rounded-full border border-copilot-primary/15 bg-copilot-bg-soft/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-copilot-primary";
+const SECTION_SCROLL_MARGIN = bankingGuideSectionScrollMarginClass;
+const SECTION_MAJOR = BANKING_GUIDE_MAJOR_SECTION_CLASS;
 
 export function BankingFeesView() {
   const baseUrl = getSiteOrigin();
@@ -69,21 +74,6 @@ export function BankingFeesView() {
     { name: "Banking", item: new URL("/netherlands/money/banking/", baseUrl).toString() },
     { name: "Fees & costs", item: new URL(CANONICAL, baseUrl).toString() },
   ];
-
-  const primaryCtaClass = cn(
-    "inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl border border-brand-strong/25 bg-brand px-5 py-2.5 text-sm font-semibold text-white shadow-card hover:bg-brand-strong focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas",
-    transitionInteractive,
-    activeBrightnessPress
-  );
-
-  const secondaryCtaClass = cn(
-    "inline-flex min-h-[44px] items-center justify-center rounded-xl border border-border bg-surface-raised px-5 py-2.5 text-sm font-semibold text-foreground shadow-card hover:border-border-strong hover:bg-surface-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas",
-    transitionInteractive,
-    activeBrightnessPress
-  );
-
-  const tertiaryLinkClass =
-    "text-sm font-medium text-link underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 rounded-sm";
 
   const trapRows = meta.hiddenTraps.cards.map((c) => ({
     id: c.id,
@@ -122,6 +112,16 @@ export function BankingFeesView() {
       items={meta.sectionNav}
       clusterTitle="Also helpful"
       deepLinks={[
+        {
+          href: "/netherlands/tools/bank-comparison/",
+          label: "Bank comparison tool →",
+          description: "Match fee posture to your use case — editorial fit scores, confirm on each PDF.",
+        },
+        {
+          href: "/netherlands/tools/banking-cost-estimator/",
+          label: "Banking cost estimator →",
+          description: "Monthly and yearly euro planning bands for fees, cards, transfers, FX, and ZZP extras.",
+        },
         { href: "/netherlands/money/banking/types-of-accounts/", label: "Types of bank accounts →", description: "Current, savings, joint, student, business, digital, cards." },
         { href: meta.hero.secondaryCta.href, label: "Compare banks →", description: "Editorial shortlist — verify live fees on each site." },
         { href: "/netherlands/money/banking/#banking-glossary-hub", label: "Banking glossary →", description: "Short definitions on the Banking hub." },
@@ -190,7 +190,7 @@ export function BankingFeesView() {
                   </div>
                   <div className="flex flex-wrap gap-2">
                     {meta.hero.contextChips.map((chip) => (
-                      <span key={chip} className={INFO_CHIP}>
+                      <span key={chip} className={bankingGuideInfoChipClass}>
                         {chip}
                       </span>
                     ))}
@@ -206,31 +206,18 @@ export function BankingFeesView() {
                     ))}
                   </ul>
                   <div className="flex flex-wrap gap-3">
-                    <Link href={meta.hero.primaryCta.href} className={primaryCtaClass}>
+                    <Link href={meta.hero.primaryCta.href} className={bankingGuidePrimaryCtaClass}>
                       {meta.hero.primaryCta.label}
                       <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
                     </Link>
-                    <Link href={meta.hero.secondaryCta.href} className={secondaryCtaClass}>
+                    <Link href={meta.hero.secondaryCta.href} className={bankingGuideSecondaryCtaClass}>
                       {meta.hero.secondaryCta.label}
                     </Link>
                   </div>
-                  <nav className="border-t border-border/50 pt-3" aria-label="Quick banking actions">
-                    <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-foreground-muted">Next steps</p>
-                    <ul className="mt-2 grid grid-cols-1 gap-x-4 gap-y-2 sm:grid-cols-2 sm:gap-y-2.5">
-                      {meta.hero.heroQuickLinks.map((l) => (
-                        <li key={l.href} className="min-w-0">
-                          <Link href={l.href} className={cn(tertiaryLinkClass, "inline-flex min-h-[44px] items-center text-sm")}>
-                            {l.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </nav>
-                  <p className="text-xs text-foreground-muted">
-                    <Link href="/netherlands/money/banking/" className={cn(tertiaryLinkClass, "inline-flex min-h-[40px] items-center")}>
-                      Back to Banking hub →
-                    </Link>
-                  </p>
+                  <BankingGuideHeroNextSteps
+                    links={meta.hero.heroQuickLinks}
+                    hubLink={{ href: "/netherlands/money/banking/", label: "Back to Banking hub" }}
+                  />
                 </div>
               }
               heroMediaSlot={
@@ -342,62 +329,23 @@ export function BankingFeesView() {
               eyebrow={meta.traditionalDigitalExplainer.eyebrow}
               title={meta.traditionalDigitalExplainer.title}
             >
-              <div className="mt-4 grid gap-4 lg:grid-cols-3">
-                <article className={cn("relative overflow-hidden rounded-2xl border border-emerald-200/80 bg-emerald-50/45 p-5 shadow-sm ring-1 ring-emerald-100/50", movingNlCardMicroLiftClass)}>
-                  <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
-                  <div className="flex items-start gap-3">
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-emerald-500/12 text-emerald-900 ring-1 ring-emerald-400/35" aria-hidden>
-                      <Building2 className="h-5 w-5" />
-                    </span>
-                    <div className="min-w-0">
-                      <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-emerald-900/80">Branch bank pattern</p>
-                      <h3 className="mt-1 text-base font-bold tracking-tight text-foreground">{meta.traditionalDigitalExplainer.traditionalTitle}</h3>
-                    </div>
-                  </div>
-                  <ul className="mt-4 list-disc space-y-1.5 pl-4 text-sm text-foreground-muted">
-                    {meta.traditionalDigitalExplainer.traditionalBullets.map((p) => (
-                      <li key={p}>
-                        <BoldInline text={p} className="[&_strong]:font-semibold [&_strong]:text-foreground" />
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-                <article className={cn("relative overflow-hidden rounded-2xl border border-sky-200/80 bg-sky-50/45 p-5 shadow-sm ring-1 ring-sky-100/50", movingNlCardMicroLiftClass)}>
-                  <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
-                  <div className="flex items-start gap-3">
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-sky-500/12 text-sky-900 ring-1 ring-sky-400/35" aria-hidden>
-                      <Smartphone className="h-5 w-5" />
-                    </span>
-                    <div className="min-w-0">
-                      <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-sky-900/80">App bank pattern</p>
-                      <h3 className="mt-1 text-base font-bold tracking-tight text-foreground">{meta.traditionalDigitalExplainer.digitalTitle}</h3>
-                    </div>
-                  </div>
-                  <ul className="mt-4 list-disc space-y-1.5 pl-4 text-sm text-foreground-muted">
-                    {meta.traditionalDigitalExplainer.digitalBullets.map((p) => (
-                      <li key={p}>
-                        <BoldInline text={p} className="[&_strong]:font-semibold [&_strong]:text-foreground" />
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-                <article className={cn("relative overflow-hidden rounded-2xl border border-violet-200/80 bg-violet-50/45 p-5 shadow-sm ring-1 ring-violet-100/50 lg:col-span-1", movingNlCardMicroLiftClass)}>
-                  <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
-                  <div className="flex items-start gap-3">
-                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-violet-500/12 text-violet-900 ring-1 ring-violet-400/35" aria-hidden>
-                      <Layers3 className="h-5 w-5" />
-                    </span>
-                    <div className="min-w-0">
-                      <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-violet-900/80">Hybrid pattern</p>
-                      <h3 className="mt-1 text-base font-bold tracking-tight text-foreground">Two setups can mean two fee lists</h3>
-                    </div>
-                  </div>
-                  <BoldParagraph
-                    text={meta.traditionalDigitalExplainer.hybridNote}
-                    className="mt-4 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
-                  />
-                </article>
-              </div>
+              <BankingTraditionalDigitalPatternGrid
+                traditional={{
+                  columnEyebrow: "Branch bank pattern",
+                  title: meta.traditionalDigitalExplainer.traditionalTitle,
+                  bullets: meta.traditionalDigitalExplainer.traditionalBullets,
+                }}
+                digital={{
+                  columnEyebrow: "App bank pattern",
+                  title: meta.traditionalDigitalExplainer.digitalTitle,
+                  bullets: meta.traditionalDigitalExplainer.digitalBullets,
+                }}
+                hybrid={{
+                  columnEyebrow: "Hybrid pattern",
+                  title: "Two setups can mean two fee lists",
+                  bodyMarkdown: meta.traditionalDigitalExplainer.hybridNote,
+                }}
+              />
               <BoldParagraph
                 text={meta.traditionalDigitalExplainer.tableIntro}
                 className="mt-5 max-w-3xl text-xs text-foreground-muted sm:text-sm [&_strong]:font-semibold [&_strong]:text-foreground"
@@ -444,7 +392,7 @@ export function BankingFeesView() {
                 </div>
               </article>
               <div className="mt-6">
-                <Link href={meta.beforeChoosingBank.cta.href} className={primaryCtaClass}>
+                <Link href={meta.beforeChoosingBank.cta.href} className={bankingGuidePrimaryCtaClass}>
                   {meta.beforeChoosingBank.cta.label}
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
@@ -515,12 +463,12 @@ export function BankingFeesView() {
                 </div>
               </div>
               <div className="mt-6 flex flex-wrap items-center gap-3 rounded-xl border border-border/60 bg-white/65 p-3 ring-1 ring-border/15 sm:p-4">
-                <Link href={meta.internationalTransfers.cta.href} className={primaryCtaClass}>
+                <Link href={meta.internationalTransfers.cta.href} className={bankingGuidePrimaryCtaClass}>
                   {meta.internationalTransfers.cta.label}
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
                 {meta.internationalTransfers.crossLinks.map((l) => (
-                  <Link key={l.href} href={l.href} className={tertiaryLinkClass}>
+                  <Link key={l.href} href={l.href} className={bankingGuideTertiaryLinkClass}>
                     {l.label}
                   </Link>
                 ))}
@@ -609,7 +557,7 @@ export function BankingFeesView() {
               <ul className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-5">
                 {meta.zzpSection.links.map((l) => (
                   <li key={l.href}>
-                    <Link href={l.href} className={tertiaryLinkClass}>
+                    <Link href={l.href} className={bankingGuideTertiaryLinkClass}>
                       {l.label}
                     </Link>
                   </li>
@@ -627,11 +575,11 @@ export function BankingFeesView() {
             >
               <BankingAvoidableCostGrid cards={meta.avoidableCosts.cards} className="mt-5" />
               <div className="mt-8 flex flex-wrap items-center gap-3">
-                <Link href={meta.avoidableCosts.cta.href} className={primaryCtaClass}>
+                <Link href={meta.avoidableCosts.cta.href} className={bankingGuidePrimaryCtaClass}>
                   {meta.avoidableCosts.cta.label}
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
-                <Link href={`#${meta.compareProperly.id}`} className={tertiaryLinkClass}>
+                <Link href={`#${meta.compareProperly.id}`} className={bankingGuideTertiaryLinkClass}>
                   How to compare costs step by step
                 </Link>
               </div>
@@ -665,7 +613,7 @@ export function BankingFeesView() {
                 ))}
               </ol>
               <div className="mt-6">
-                <Link href={meta.compareProperly.cta.href} className={primaryCtaClass}>
+                <Link href={meta.compareProperly.cta.href} className={bankingGuidePrimaryCtaClass}>
                   {meta.compareProperly.cta.label}
                   <ArrowRight className="h-4 w-4" aria-hidden />
                 </Link>
@@ -675,6 +623,8 @@ export function BankingFeesView() {
             <SectionBlock id="example-profiles" className={SECTION_MAJOR} eyebrow="Scenarios" title="Example banking profiles">
               <BankingProfileCostCards profiles={profileCostCards} className="mt-4" />
             </SectionBlock>
+
+            <BankingCompareFitEstimateCostCta className={SECTION_MAJOR} showFeesCrossline={false} />
 
             <section id={meta.related.id} className={SECTION_MAJOR} aria-labelledby="related-heading">
               <h2 id="related-heading" className="text-xl font-bold tracking-tight text-foreground">
@@ -726,7 +676,7 @@ export function BankingFeesView() {
               <p className="mt-4 max-w-3xl text-sm leading-relaxed text-foreground-muted">{bankingSubpageGlossarySection.intro}</p>
               <Link
                 href="/netherlands/money/banking/#banking-glossary-hub"
-                className={cn(tertiaryLinkClass, "mt-4 inline-flex min-h-[44px] items-center font-semibold")}
+                className={cn(bankingGuideTertiaryLinkClass, "mt-4 inline-flex min-h-[44px] items-center font-semibold")}
               >
                 Open glossary on Banking hub →
               </Link>

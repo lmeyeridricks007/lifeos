@@ -27,6 +27,9 @@
         "expat-cost-of-living-calculator",
         "childcare-cost-estimator",
         "netherlands-city-comparison-tool",
+        "netherlands-bank-comparison-tool",
+        "netherlands-banking-cost-estimator",
+        "netherlands-transfer-cost-calculator",
         "employment-type-scenario-tool",
         "payslip-decoder"
       ]
@@ -42,6 +45,9 @@
         "expat-cost-of-living-calculator",
         "childcare-cost-estimator",
         "netherlands-city-comparison-tool",
+        "netherlands-bank-comparison-tool",
+        "netherlands-banking-cost-estimator",
+        "netherlands-transfer-cost-calculator",
         "employment-type-scenario-tool",
         "payslip-decoder"
       ]
@@ -113,6 +119,9 @@
         "expat-cost-of-living-calculator",
         "childcare-cost-estimator",
         "netherlands-city-comparison-tool",
+        "netherlands-bank-comparison-tool",
+        "netherlands-banking-cost-estimator",
+        "netherlands-transfer-cost-calculator",
         "job-offer-comparison-tool",
         "employment-type-scenario-tool",
         "employment-contract-risk-scanner",
@@ -150,6 +159,9 @@
         "expat-cost-of-living-calculator",
         "healthcare-allowance-estimator",
         "netherlands-city-comparison-tool",
+        "netherlands-bank-comparison-tool",
+        "netherlands-banking-cost-estimator",
+        "netherlands-transfer-cost-calculator",
         "dutch-salary-net-calculator",
         "payslip-decoder",
         "dutch-rental-budget-calculator",

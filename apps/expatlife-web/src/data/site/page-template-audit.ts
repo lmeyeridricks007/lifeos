@@ -185,6 +185,7 @@ export const ROUTE_TEMPLATE_HINTS: Partial<Record<string, TemplateArchetype>> = 
   "/netherlands/moving/guides": "guideJson",
   "/netherlands/visa": "guideJson",
   "/netherlands/moving/tools": "clusterHub",
+  "/netherlands/money": "guideShell",
   "/netherlands/money/tools": "clusterHub",
   "/netherlands/taxes/tools": "clusterHub",
   "/netherlands/taxes/tools/30-ruling-calculator": "toolLanding",

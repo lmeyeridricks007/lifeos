@@ -4,12 +4,14 @@ import { cn } from "@/lib/cn";
 export type ToolIntroSectionProps = {
   section: ToolExplanatorySection;
   className?: string;
+  /** Merged onto the in-card section title (default is semibold). */
+  titleClassName?: string;
 };
 
 /**
  * Single explanatory section with title and body (prose). Used for "What this tool covers", "Who it's for", etc.
  */
-export function ToolIntroSection({ section, className = "" }: ToolIntroSectionProps) {
+export function ToolIntroSection({ section, className = "", titleClassName }: ToolIntroSectionProps) {
   return (
     <div
       className={cn(
@@ -17,7 +19,7 @@ export function ToolIntroSection({ section, className = "" }: ToolIntroSectionPr
         className
       )}
     >
-      <h2 className="!mt-0 text-lg font-semibold text-foreground">{section.title}</h2>
+      <h2 className={cn("!mt-0 text-lg font-semibold text-foreground", titleClassName)}>{section.title}</h2>
       {section.subtitle ? (
         <p className="text-sm text-foreground-faint">{section.subtitle}</p>
       ) : null}
