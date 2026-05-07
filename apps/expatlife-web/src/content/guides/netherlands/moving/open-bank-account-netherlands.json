@@ -107,6 +107,13 @@
       "body": [
         "Banks typically ask for a standard set of documents. You receive a BSN after registering with a municipality, so planning your registration appointment early helps with banking setup."
       ],
+      "callout": {
+        "type": "info",
+        "title": "If onboarding stalls",
+        "text": "Application rejected, delayed, or stuck? Read the Account Rejection Guide on Money · Banking for triage, document checks, and calm next steps.",
+        "href": "/netherlands/money/banking/account-rejection/",
+        "linkLabel": "Open Account Rejection Guide"
+      },
       "bullets": [
         "Passport or EU ID",
         "BSN (Citizen Service Number)",
@@ -442,6 +449,7 @@
     "related": [
       { "label": "Types of bank accounts (Money guide)", "href": "/netherlands/money/banking/types-of-accounts/" },
       { "label": "How payments work (Money · Banking)", "href": "/netherlands/money/banking/how-payments-work/" },
+      { "label": "Banking safety & fraud (Money · Banking)", "href": "/netherlands/money/banking/security/" },
       { "label": "Compare banks", "href": "/netherlands/services/banks/" },
       { "label": "All services hub", "href": "/netherlands/services/" },
       { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },

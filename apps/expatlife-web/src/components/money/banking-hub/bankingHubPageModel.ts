@@ -68,6 +68,18 @@ export const bankingHubPageModel = {
         "Compare banks, digital providers, and transfer specialists — fees, FX markups, speed, and hidden costs — then confirm every detail on official calculators.",
     },
     {
+      href: "/netherlands/money/banking/security/",
+      title: "Banking safety & fraud",
+      description:
+        "Calm, practical habits for Dutch payment culture: phishing, spoofed calls, payment-request and marketplace scams, card and transfer checks, and what to do if something looks wrong.",
+    },
+    {
+      href: "/netherlands/money/banking/account-rejection/",
+      title: "Bank account rejected or delayed",
+      description:
+        "If onboarding stalls: common reasons, document and BSN checks, compliance questions, short-term workarounds, and calm next steps — no approval guarantees.",
+    },
+    {
       href: "/netherlands/money/banking/fees/",
       title: "Banking fees & costs",
       description:

@@ -1,5 +1,6 @@
 import type { MoveVisaResidencyReferences } from "@/src/components/moving/visas-residency/config/moveVisaResidency.types";
 import type { TaxGuideStartingPointScenario } from "@/src/components/money/tax-guide-for-expats/TaxGuideStartingPointSelector";
+import type { MoneyTaxGuideToolKey } from "../tax-guide-for-expats/taxGuideContent.types";
 import { buildOfficialSourcesReferences, resolveRelatedTools } from "../tax-guide-for-expats/taxGuideContentResolve";
 import { resolveTaxGuideTool } from "../tax-guide-for-expats/taxGuideToolRegistry";
 import type {
@@ -26,21 +27,30 @@ export function buildExpatTaxesOfficialReferences(): MoveVisaResidencyReferences
   });
 }
 
-function scenarioStepsFromConfig(c: MoneyExpatTaxesScenarioCardConfig): readonly { label: string; href: string }[] {
-  const extra = c.relatedTools?.length ? resolveRelatedTools(c.relatedTools) : [];
-  if (extra.length > 0) return extra;
+function pushStepUnique(out: { label: string; href: string }[], step: { label: string; href: string }) {
+  const sig = `${step.href}::${step.label}`;
+  if (!out.some((x) => `${x.href}::${x.label}` === sig)) out.push(step);
+}
 
+function scenarioStepsFromConfig(c: MoneyExpatTaxesScenarioCardConfig): readonly { label: string; href: string }[] {
   const out: { label: string; href: string }[] = [];
+  for (const row of resolveRelatedTools(c.relatedTools ?? [])) {
+    pushStepUnique(out, row);
+  }
   for (const key of c.relatedToolKeys) {
     const r = resolveTaxGuideTool(key);
-    out.push({ label: r.label, href: r.href });
+    pushStepUnique(out, { label: r.label, href: r.href });
+  }
+  for (const key of c.relatedGuideKeys ?? []) {
+    const r = resolveTaxGuideTool(key as MoneyTaxGuideToolKey);
+    pushStepUnique(out, { label: r.label, href: r.href });
   }
   for (const a of c.relatedAnchors ?? []) {
-    out.push({ label: a.label, href: `#${a.id}` });
+    pushStepUnique(out, { label: a.label, href: `#${a.id}` });
   }
   for (const sk of c.relatedServiceKeys ?? []) {
     const row = moneyExpatTaxesServiceRegistry[sk];
-    out.push({ label: row.label, href: row.href });
+    pushStepUnique(out, { label: row.label, href: row.href });
   }
   return out;
 }
@@ -54,36 +64,48 @@ export function resolveExpatTaxesScenarioCards(
     title: c.title,
     whyItMatters: c.whyItMatters,
     recommendedNextAction: c.recommendedAction,
+    whatToCheck: c.whatToCheck.length > 0 ? [...c.whatToCheck] : undefined,
+    cautionLevel: c.cautionLevel,
     steps: scenarioStepsFromConfig(c),
   }));
 }
 
-function riskPrimaryLink(c: MoneyExpatTaxesRiskSignalCardConfig): { href: string; label: string } {
-  const extra = c.relatedTools && c.relatedTools.length > 0 ? resolveRelatedTools(c.relatedTools) : [];
-  if (extra[0]) return extra[0];
-  if (c.relatedToolKeys[0]) {
-    const r = resolveTaxGuideTool(c.relatedToolKeys[0]);
-    return { href: r.href, label: r.label };
+/** All tools, guides, in-page anchors, and hub links for a signal card (deduped). */
+function riskAllLinks(c: MoneyExpatTaxesRiskSignalCardConfig): readonly { label: string; href: string }[] {
+  const out: { label: string; href: string }[] = [];
+  for (const row of resolveRelatedTools(c.relatedTools ?? [])) {
+    pushStepUnique(out, row);
   }
-  const a = c.relatedAnchors?.[0];
-  if (a) return { href: `#${a.id}`, label: a.label };
-  const sk = c.relatedServiceKeys?.[0];
-  if (sk) return moneyExpatTaxesServiceRegistry[sk];
-  return { href: "#situation-selector", label: "Situation selector" };
+  for (const key of c.relatedToolKeys ?? []) {
+    const r = resolveTaxGuideTool(key);
+    pushStepUnique(out, { label: r.label, href: r.href });
+  }
+  for (const key of c.relatedGuideKeys ?? []) {
+    const r = resolveTaxGuideTool(key as MoneyTaxGuideToolKey);
+    pushStepUnique(out, { label: r.label, href: r.href });
+  }
+  for (const a of c.relatedAnchors ?? []) {
+    pushStepUnique(out, { label: a.label, href: `#${a.id}` });
+  }
+  for (const sk of c.relatedServiceKeys ?? []) {
+    const row = moneyExpatTaxesServiceRegistry[sk];
+    pushStepUnique(out, { label: row.label, href: row.href });
+  }
+  if (out.length === 0) {
+    pushStepUnique(out, { href: "#situation-selector", label: "Find your tax situation" });
+  }
+  return out;
 }
 
 export function resolveExpatTaxesRiskSignalCards(cards: readonly MoneyExpatTaxesRiskSignalCardConfig[]) {
-  return cards.map((c) => {
-    const primary = riskPrimaryLink(c);
-    return {
-      id: c.id,
-      title: c.title,
-      whyItMatters: c.whyItMatters,
-      recommendedNextStep: c.recommendedAction,
-      related: primary,
-      cautionLevel: c.cautionLevel,
-    };
-  });
+  return cards.map((c) => ({
+    id: c.id,
+    title: c.title,
+    whyItMatters: c.whyItMatters,
+    recommendedNextStep: c.recommendedAction,
+    relatedLinks: riskAllLinks(c),
+    cautionLevel: c.cautionLevel,
+  }));
 }
 
 export function resolveExpatTaxesSectionForView(section: MoneyExpatTaxesSectionConfig) {

@@ -112,7 +112,7 @@ export function BestProvidersPageTemplate({ content, shareUrl }: BestProvidersPa
             className="scroll-mt-24 !pt-4 md:!pt-6"
           >
             <ProvidersComparisonTable rows={content.rows} />
-            <AffiliateDisclosureNote className="mt-4 max-w-3xl">{content.disclosure}</AffiliateDisclosureNote>
+            <AffiliateDisclosureNote className="mt-4">{content.disclosure}</AffiliateDisclosureNote>
           </Section>
 
           <Section

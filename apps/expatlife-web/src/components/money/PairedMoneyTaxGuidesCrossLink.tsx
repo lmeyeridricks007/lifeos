@@ -37,8 +37,8 @@ export function PairedMoneyTaxGuidesCrossLink({ variant, className }: PairedMone
           </Link>
           <span className="text-foreground-muted">
             {" "}
-            — scenario-led depth from step 2 of the Tax learning path (after the broad Tax Guide): partial years, foreign assets, ruling,
-            allowances, and double-tax prompts without re-reading the whole map.
+            — Tax learning path step 2 (scenario-first): partial years, foreign assets, ruling, allowances, and double-tax prompts. Use the
+            Tax Guide on the same step when you need the full expat curriculum, not only a lane.
           </span>
         </p>
       </aside>
@@ -56,15 +56,15 @@ export function PairedMoneyTaxGuidesCrossLink({ variant, className }: PairedMone
     >
       <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
       <p className="text-sm leading-relaxed text-foreground sm:text-[0.9375rem]">
-        Want the broader expat map (step 2)?{" "}
+        Tax learning path step 2 also includes the broader map:{" "}
         <Link href={TAX_GUIDE_FOR_EXPATS_HREF} className="font-semibold text-link hover:underline">
-          Open Netherlands Tax Guide for Expats
+          Netherlands Tax Guide for Expats
         </Link>
         <span className="text-foreground-muted"> — </span>
         <Link href={HOW_TAXES_WORK_IN_NL_HREF} className="font-semibold text-link hover:underline">
           How Taxes Work
         </Link>
-        <span className="text-foreground-muted"> stays the simplest foundation (step 1) if you need to re-ground the system.</span>
+        <span className="text-foreground-muted"> is step 1 (foundation) if you need to re-ground payroll, returns, and boxes.</span>
       </p>
     </aside>
   );

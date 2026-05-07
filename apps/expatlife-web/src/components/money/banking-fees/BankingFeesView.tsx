@@ -127,6 +127,16 @@ export function BankingFeesView() {
         { href: "/netherlands/money/banking/#banking-glossary-hub", label: "Banking glossary →", description: "Short definitions on the Banking hub." },
         { href: "/netherlands/open-bank-account-netherlands/", label: "Open bank account →", description: "Documents and BSN timing." },
         { href: "/netherlands/money/banking/how-payments-work/", label: "How payments work →", description: "IBAN, iDEAL, SEPA, and direct debits." },
+        {
+          href: "/netherlands/money/banking/security/",
+          label: "Banking safety & fraud →",
+          description: "Phishing and payment-request scams — calm habits next to fee planning.",
+        },
+        {
+          href: "/netherlands/money/banking/account-rejection/",
+          label: "Account rejected or delayed →",
+          description: "When onboarding stalls — checks before you compare fee tiers.",
+        },
         { href: "/netherlands/living/payments/", label: "Living: payments hub →", description: "Placeholder + wider money links." },
       ]}
     />
@@ -351,7 +361,7 @@ export function BankingFeesView() {
                 className="mt-5 max-w-3xl text-xs text-foreground-muted sm:text-sm [&_strong]:font-semibold [&_strong]:text-foreground"
               />
               <BankFeePatternComparison rows={meta.feeComparisonRows} className="mt-4" />
-              <AffiliateDisclosureNote className="mt-4 max-w-3xl text-xs">
+              <AffiliateDisclosureNote className="mt-4 text-xs">
                 {DEFAULT_MONETIZATION_DISCLOSURE} This comparison is editorial orientation only — not live pricing.
               </AffiliateDisclosureNote>
             </SectionBlock>

@@ -77,8 +77,8 @@ export const taxResidencyNlDeepLinks = [
   },
   {
     href: R.expatTaxesGuide,
-    label: "Expat taxes guide",
-    description: "Scenario-led partial years, assets, allowances, and cross-border context.",
+    label: "Expat Taxes in the Netherlands",
+    description: "Scenario-led map for partial years, assets, allowances, and double tax — use before you assume filing is salary-only.",
   },
   {
     href: R.residencePermits,
@@ -287,12 +287,12 @@ export function buildTaxResidencyNlPageModel() {
       eyebrow: "Inside ExpatCopilot",
       title: "How this page fits with Money, Taxes, and Move",
       intro:
-        "Here: tax residency orientation. How Taxes Work is the system map. Tax Guide and Expat Taxes go deeper on topics. Move pages cover permits and work setup — related in life, not identical in tax law.",
+        "Learning path **step 3** — tax residency orientation (ties and labels, not a determination). Steps **1–2** are How Taxes Work and Expat Taxes / Tax Guide; **step 4** is the tax return guide. Move pages cover permits and work setup — related in life, not identical in tax law.",
       links: [
         { href: R.howTaxesWorkInNl, label: "How taxes work in the Netherlands", description: "Payroll vs return and boxes — foundation first.", meta: "Money" },
         { href: R.taxReturnNl, label: "Tax return in the Netherlands", description: "Annual filing orientation: prep, payroll vs return, and when complexity rises.", meta: "Money" },
         { href: R.taxGuideForExpats, label: "Netherlands tax guide for expats", description: "Broad expat tax map and cross-links.", meta: "Money" },
-        { href: R.expatTaxesGuide, label: "Expat taxes in the Netherlands", description: "Scenarios: partial years, assets, allowances, double tax.", meta: "Money" },
+        { href: R.expatTaxesGuide, label: "Expat Taxes in the Netherlands", description: "Scenarios: partial years, assets, allowances, double tax.", meta: "Money" },
         { href: R.doubleTax, label: "Double tax awareness tool", description: "Structured prompts — awareness, not a final answer.", meta: "Taxes" },
         {
           href: R.taxAdvisorsExpats,

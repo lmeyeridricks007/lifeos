@@ -569,6 +569,12 @@ export const cheapestBankAccountsPageModel = {
         ctaLabel: "Open setup guide",
       },
       {
+        title: "Bank account rejected or delayed",
+        description: "If the cheapest option declined you — document checks, timing, and another bank to compare calmly.",
+        href: "/netherlands/money/banking/account-rejection/",
+        ctaLabel: "Open guide",
+      },
+      {
         title: "International transfers (payments hub)",
         description: "Broader context for money moving across borders while you settle — not a live price tool.",
         href: "/netherlands/living/payments/",

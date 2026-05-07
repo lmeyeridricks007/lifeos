@@ -7,6 +7,7 @@ import {
   getHowPaymentsWorkConceptGridConcepts,
   howPaymentsWorkGuideSections,
 } from "@/src/data/banking/paymentConcepts";
+import { BANKING_SECURITY_PATH } from "@/src/data/banking/bankingSafety";
 
 export const HOW_PAYMENTS_WORK_PATH = "/netherlands/money/banking/how-payments-work/" as const;
 export const HPW_BEST_BANKS_PATH = "/netherlands/money/banking/best-banks-expats/" as const;
@@ -14,6 +15,7 @@ export const HPW_FEES_PATH = "/netherlands/money/banking/fees/" as const;
 export const HPW_TRAD_DIG_PATH = "/netherlands/money/banking/traditional-vs-digital/" as const;
 export const HPW_TYPES_PATH = "/netherlands/money/banking/types-of-accounts/" as const;
 export const HPW_OPEN_BANK_PATH = "/netherlands/open-bank-account-netherlands/" as const;
+export const HPW_BANKING_SECURITY_PATH = BANKING_SECURITY_PATH;
 export const HPW_LIVING_PAYMENTS_PATH = "/netherlands/living/payments/" as const;
 export const HPW_LIVING_APPS_PATH = "/netherlands/living/apps/" as const;
 export const HPW_LIVING_DAILY_PATH = "/netherlands/living/daily-life/" as const;
@@ -545,6 +547,18 @@ export const howPaymentsWorkPageModel = {
       { title: "Banking fees & costs", description: "Fee checklist before you rely on transfers or travel features.", href: HPW_FEES_PATH, ctaLabel: "Open fee guide" },
       { title: "Types of bank accounts", description: "Everyday, savings, joint, student, business — labels first.", href: HPW_TYPES_PATH, ctaLabel: "Account types" },
       { title: "Open a bank account in the Netherlands", description: "Move guide — documents, BSN timing, order of operations.", href: HPW_OPEN_BANK_PATH, ctaLabel: "Move guide" },
+      {
+        title: "Banking safety & fraud",
+        description: "Phishing, payment-request checks, marketplace scams, and calm first-response habits next to everyday Dutch rails.",
+        href: HPW_BANKING_SECURITY_PATH,
+        ctaLabel: "Read safety guide",
+      },
+      {
+        title: "Bank account rejected or delayed",
+        description: "If a bank application is stuck or declined — document checks, BSN timing, and next steps.",
+        href: "/netherlands/money/banking/account-rejection/",
+        ctaLabel: "Open guide",
+      },
       { title: "Banking hub", description: "All banking guides and the shared glossary in one place.", href: "/netherlands/money/banking/", ctaLabel: "Open hub" },
     ] as const,
   },
@@ -590,6 +604,14 @@ export const howPaymentsWorkPageModel = {
         id: "ecb",
         title: "SEPA regulation context",
         links: [{ type: "external" as const, label: "ECB — SEPA overview", href: "https://www.ecb.europa.eu/paym/intro/mip-online/sepa/html/index.en.html" }],
+      },
+      {
+        id: "expatcopilot",
+        title: "More on ExpatCopilot",
+        links: [
+          { type: "internal" as const, label: "Banking safety & fraud", href: BANKING_SECURITY_PATH },
+          { type: "internal" as const, label: "Banking hub", href: "/netherlands/money/banking/" },
+        ],
       },
     ],
   } satisfies MoveVisaResidencyReferences,

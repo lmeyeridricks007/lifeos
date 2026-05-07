@@ -2,49 +2,49 @@ import type { MoneyExpatTaxesStartCardConfig } from "./moneyExpatTaxesContent.ty
 
 export const moneyExpatTaxesStartCards: readonly MoneyExpatTaxesStartCardConfig[] = [
   {
-    id: "split-story",
-    title: "Your year may be a split story",
+    id: "transition-year",
+    title: "You may have a transition year",
     intro:
-      "Arrival and departure years rarely look like a textbook twelve-month employee template. Income, deductions, and documentation can span more than one country in memory even when payroll feels Dutch.",
+      "The year you arrive or leave rarely looks like a neat twelve-month story. Income, where you are registered, and paperwork can touch more than one country even when your pay already feels Dutch.",
     keyPoints: [
-      "Partial-year filing can need extra sections and evidence — not because you did something wrong.",
-      "Registration dates and employer start dates are not decorative details.",
+      "A part-year tax form can need **extra pages** — that is common, not a sign you did something wrong.",
+      "Move dates, job start dates, and **when you got your citizen service number (BSN)** are facts you will need, not small talk.",
     ],
     relatedTools: [],
     officialSourceKeys: [],
   },
   {
-    id: "payroll-first",
-    title: "You meet tax through payroll first",
+    id: "cross-border-assets",
+    title: "You may have money or work across borders",
     intro:
-      "Most expats feel Dutch tax on the payslip long before they think about an annual return. That is useful — and it can also hide topics that mainly show up at return time.",
+      "Foreign bank accounts, employers abroad, or a lot of travel can raise questions that do not show up on your first payslip. Treat those prompts as a **to-do list**, not something to feel bad about.",
     keyPoints: [
-      "Withholding is a running estimate — not always identical to the final annual picture.",
-      "A payslip decoder helps when labels do not match what you read online.",
+      "Savings and investments on the yearly form exist because **reporting** can still matter after you move.",
+      "Use the **double tax awareness** tool to list questions early, then check official sources if the amounts matter.",
     ],
     relatedTools: [],
     officialSourceKeys: [],
   },
   {
-    id: "cross-border",
-    title: "Cross-border is a vocabulary problem first",
+    id: "employment-setup",
+    title: "How you are hired matters",
     intro:
-      "Foreign accounts, foreign employers, or travel-heavy work can trigger questions you did not budget time for — especially when forum posts mix countries casually.",
+      "Employee, contractor, mixed work, or more than one employer changes which questions come first and which tools help. Most people **feel** Dutch tax on the payslip long before they think about the yearly form.",
     keyPoints: [
-      "Treat cross-border prompts as checklists, not shame — complexity is common.",
-      "Use the double-tax awareness tool to surface questions early, then confirm with official guidance.",
+      "The wage tax line on a payslip is money taken out each month — **not always** the same as the final year-end result.",
+      "If your contract is not a plain full-time job story, try the **employment type** tool for the right words before you plan alone.",
     ],
     relatedTools: [],
     officialSourceKeys: [],
   },
   {
-    id: "household",
-    title: "Household economics are part of the tax story",
+    id: "household-allowances",
+    title: "Your household can change both tax and benefits",
     intro:
-      "Partner income, children, premiums, and allowances change cash flow and sometimes filing choices — similar words can mean different portals (toeslagen vs return-time items).",
+      "Partner income, children, insurance costs, and government benefits change your monthly cash and sometimes what you file. Keep **benefits (“toeslagen”)** in a separate mental bucket from the main yearly tax form so expectations stay clear.",
     keyPoints: [
-      "Model healthcare allowance and childcare when they affect monthly realism.",
-      "Keep allowances mentally separate from return deductions so expectations stay sane.",
+      "Try the **healthcare allowance** and **childcare** tools next to rent and cost-of-living when they affect your budget.",
+      "When income changes, check benefits again — what you get can move with your situation.",
     ],
     relatedTools: [],
     officialSourceKeys: [],

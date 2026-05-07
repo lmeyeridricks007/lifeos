@@ -204,7 +204,7 @@ export function BestProvidersMiniList({
       >
         <MonetizationTrustDisclosure />
         <AffiliateDisclosureNote
-          className={movingGuide ? "text-copilot-text-secondary" : "text-foreground-muted"}
+          className={cn("w-full min-w-0", movingGuide ? "text-copilot-text-secondary" : "text-foreground-muted")}
         >
           {disclosureText}
         </AffiliateDisclosureNote>

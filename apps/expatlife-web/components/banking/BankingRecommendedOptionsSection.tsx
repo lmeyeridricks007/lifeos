@@ -9,14 +9,15 @@ import { cn } from "@/lib/cn";
 const DEFAULT_UTM_REFERRER_PATH = "/netherlands/money/banking/best-banks-expats/" as const;
 
 const CTA_SOFT =
-  "inline-flex min-h-10 w-full max-w-full items-center justify-center rounded-xl border border-border bg-surface-raised px-4 py-2.5 text-sm font-semibold text-foreground shadow-sm transition hover:border-border-strong hover:bg-surface-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas sm:w-auto";
+  "inline-flex min-h-9 w-full max-w-full items-center justify-center rounded-lg border border-border bg-surface-raised px-3 py-2 text-sm font-medium text-foreground shadow-sm transition hover:border-border-strong hover:bg-surface-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas sm:w-auto";
 
 type CategoryLink = { href: string; label: string };
 
 export type BankingRecommendedOptionsSectionProps = {
   placementId: string;
   analyticsPageContext: string;
-  boundaryNote: string;
+  /** Optional intro under the region label; omit or leave empty when cards carry the detail. */
+  boundaryNote?: string;
   categoryLinks: readonly CategoryLink[];
   browseLabel?: string;
   /** Overrides the small uppercase line above the boundary note (default: marks this block as separate from the main guide). */
@@ -37,6 +38,53 @@ function normalizeForCompare(s: string) {
   return s.replace(/\s+/g, " ").replace(/[.]$/g, "").trim().toLowerCase();
 }
 
+/** Placement copy pattern: `Onboarding: … Best for: … Watch-outs: …` (NL banking placements). */
+type ParsedBankingProviderReason = {
+  onboarding: string;
+  bestFor: string;
+  watchOuts: string;
+};
+
+function parseBankingProviderReasonTriplet(reason: string): ParsedBankingProviderReason | null {
+  const t = reason.trim();
+  const m = t.match(/^onboarding:\s*(.+?)\s*best for:\s*(.+?)\s*watch-outs:\s*(.+)$/is);
+  if (!m) return null;
+  const onboarding = m[1]?.trim();
+  const bestFor = m[2]?.trim();
+  const watchOuts = m[3]?.trim();
+  if (!onboarding || !bestFor || !watchOuts) return null;
+  return { onboarding, bestFor, watchOuts };
+}
+
+function BankingProviderReasonDetails({ reason, className }: { reason: string; className?: string }) {
+  const parsed = parseBankingProviderReasonTriplet(reason);
+  if (!parsed) {
+    return <p className={cn("text-sm leading-relaxed text-foreground-muted", className)}>{reason.trim()}</p>;
+  }
+
+  const rowClass =
+    "rounded-lg border border-copilot-primary/[0.08] bg-gradient-to-b from-copilot-bg-soft/50 to-white/90 px-2.5 py-2 ring-1 ring-copilot-primary/[0.05] sm:px-3 sm:py-2";
+  const dtClass = "text-[10px] font-semibold uppercase tracking-[0.12em] text-copilot-primary";
+  const ddClass = "mt-1 text-sm leading-snug text-slate-700 sm:leading-relaxed";
+
+  return (
+    <dl className={cn("w-full min-w-0 space-y-2 sm:space-y-2", className)}>
+      <div className={rowClass}>
+        <dt className={dtClass}>Onboarding</dt>
+        <dd className={ddClass}>{parsed.onboarding}</dd>
+      </div>
+      <div className={rowClass}>
+        <dt className={dtClass}>Best for</dt>
+        <dd className={ddClass}>{parsed.bestFor}</dd>
+      </div>
+      <div className="rounded-lg border border-slate-200/90 bg-slate-50/90 px-2.5 py-2 ring-1 ring-slate-900/[0.04] sm:px-3 sm:py-2">
+        <dt className="text-[10px] font-semibold uppercase tracking-[0.12em] text-slate-600">Watch-outs</dt>
+        <dd className="mt-1 text-sm leading-snug text-slate-700 sm:leading-relaxed">{parsed.watchOuts}</dd>
+      </div>
+    </dl>
+  );
+}
+
 /**
  * Monetization-only region: provider cards, disclosures, and tracking-friendly anchors.
  * The main comparison or guide lives outside this component — callers should label the section boundary in copy.
@@ -44,7 +92,7 @@ function normalizeForCompare(s: string) {
 const SURFACE_DEFAULT_CLASS =
   "rounded-2xl border-2 border-dashed border-slate-300/90 bg-slate-50/90 p-5 shadow-sm ring-1 ring-slate-900/[0.04] sm:p-6 md:p-7";
 const SURFACE_MUTED_CLASS =
-  "rounded-2xl border border-dashed border-border/45 bg-surface-muted/25 p-4 shadow-none ring-1 ring-border/[0.08] sm:p-5 md:p-6";
+  "rounded-2xl border border-dashed border-border/45 bg-surface-muted/25 p-3 shadow-none ring-1 ring-border/[0.08] sm:p-4 md:p-5";
 
 export function BankingRecommendedOptionsSection({
   placementId,
@@ -63,6 +111,7 @@ export function BankingRecommendedOptionsSection({
   const items = data?.items ?? [];
   const utmContent = utmContentFromPath(utmReferrerPath ?? DEFAULT_UTM_REFERRER_PATH);
   const regionHeadingId = `banking-recommended-options-${placementId}`;
+  const boundary = (boundaryNote ?? "").trim();
 
   if (!placement && categoryLinks.length === 0) return null;
 
@@ -79,17 +128,24 @@ export function BankingRecommendedOptionsSection({
         className={surfaceTone === "muted" ? SURFACE_MUTED_CLASS : SURFACE_DEFAULT_CLASS}
         data-monetization-surface="provider-listings"
       >
-        <p id={regionHeadingId} className="text-[10px] font-bold uppercase tracking-[0.16em] text-foreground-muted">
+        <p id={regionHeadingId} className="text-[10px] font-semibold uppercase tracking-[0.16em] text-foreground-muted">
           {regionIntroLabel ?? "Outside the main guide"}
         </p>
-        <BoldParagraph
-          text={boundaryNote}
-          className="mt-2 max-w-3xl text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
-        />
+        {boundary ? (
+          <BoldParagraph
+            text={boundary}
+            className="mt-2 w-full max-w-none text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+          />
+        ) : null}
 
         {items.length > 0 ? (
           <div
-            className="mt-6 grid gap-4 sm:grid-cols-2"
+            className={cn(
+              "grid w-full min-w-0 grid-cols-1 items-start gap-3 sm:gap-4",
+              boundary ? "mt-5" : "mt-3",
+              items.length >= 3 && "md:grid-cols-3",
+              items.length === 2 && "sm:grid-cols-2",
+            )}
             data-monetization-cards="true"
             data-monetization-card-count={items.length}
           >
@@ -105,26 +161,33 @@ export function BankingRecommendedOptionsSection({
               });
               const internal = isInternalSiteCta(provider.cta.href, provider.cta.isAffiliate);
 
+              const structured = parseBankingProviderReasonTriplet(reasonTrim);
+              const fallbackReasonOnly = !structured && (reasonTrim || taglineTrim);
+
               return (
                 <article
                   key={provider.id}
-                  className="flex flex-col rounded-2xl border border-border bg-white/95 p-4 shadow-card ring-1 ring-border/10 sm:p-5"
+                  className="flex min-h-0 w-full min-w-0 flex-col rounded-2xl border border-border bg-white/95 p-3 shadow-card ring-1 ring-border/10 sm:p-4"
                   data-monetization-item-index={index}
                   data-provider-id={provider.id}
                   data-monetization-link-mode={provider.cta.isAffiliate ? "affiliate" : "direct"}
                 >
-                  <div className="flex gap-3">
+                  <div className="flex items-center gap-2.5 sm:gap-3">
                     <ProviderLogo provider={provider} size="md" />
-                    <div className="min-w-0 flex-1">
-                      <h3 className="text-base font-semibold tracking-tight text-foreground">{provider.name}</h3>
-                      <p className="mt-1.5 text-sm leading-relaxed text-foreground-muted">{reasonTrim || taglineTrim}</p>
-                      {showTaglineSecondary ? (
-                        <p className="mt-1 text-xs leading-snug text-foreground-faint">{taglineTrim}</p>
-                      ) : null}
-                    </div>
+                    <h3 className="min-w-0 flex-1 text-[0.9375rem] font-semibold leading-tight tracking-tight text-copilot-text-primary sm:text-base">
+                      {provider.name}
+                    </h3>
                   </div>
+                  {structured ? (
+                    <BankingProviderReasonDetails reason={reasonTrim} className="mt-2" />
+                  ) : fallbackReasonOnly ? (
+                    <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{reasonTrim || taglineTrim}</p>
+                  ) : null}
+                  {showTaglineSecondary ? (
+                    <p className="mt-1.5 text-xs leading-snug text-foreground-faint">{taglineTrim}</p>
+                  ) : null}
 
-                  <div className="mt-4 flex flex-col gap-2 border-t border-dashed border-border/60 pt-4">
+                  <div className="mt-3 flex flex-col gap-1.5 border-t border-dashed border-border/50 pt-3 sm:mt-3.5 sm:pt-3.5">
                     {internal ? (
                       <Link href={provider.cta.href} className={CTA_SOFT}>
                         {provider.cta.label}
@@ -167,7 +230,7 @@ export function BankingRecommendedOptionsSection({
         ) : null}
 
         {placement ? (
-          <div className="mt-6 border-t border-border/60 pt-5" data-monetization-disclosure="true">
+          <div className="mt-4 border-t border-border/60 pt-4" data-monetization-disclosure="true">
             <AffiliateDisclosure text={placement.disclosure} variant="copilot" />
           </div>
         ) : null}

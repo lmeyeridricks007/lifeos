@@ -13,7 +13,7 @@ export function AffiliateDisclosureNote({ className, spaced, children, ...props 
   return (
     <p
       className={cn(
-        "max-w-full text-pretty text-xs leading-relaxed text-foreground-muted [overflow-wrap:anywhere]",
+        "w-full min-w-0 max-w-none text-xs leading-relaxed text-foreground-muted",
         spaced ? "mt-3" : "mt-0",
         className
       )}

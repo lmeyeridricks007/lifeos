@@ -9,53 +9,77 @@ export const moneyExpatTaxesMisunderstandings: {
 } = {
   id: "misunderstandings",
   eyebrow: "Reality check",
-  title: "What expats often misunderstand",
-  subtitle: "Six quick patterns — useful when forum confidence meets real filing mechanics.",
+  title: "What expats often get wrong",
+  subtitle: "Eight worries we hear a lot — and simpler ways to think about them.",
   rows: [
     {
-      id: "withholding-final",
-      title: "Withheld tax is not always the final story",
-      intro: "Payroll can be close — or not — depending on your full-year facts and return-time adjustments.",
+      id: "myth-withholding-final",
+      title: "“What comes out of my pay each month settles everything”",
+      intro:
+        "Monthly pay can be **close to the final picture** — or not — when you changed jobs, had a partner’s income, cross-border lines, or credits on the yearly form. Treat payslips as a **monthly check-in**, not the whole year locked shut.",
       keyPoints: [],
       relatedTools: [],
       officialSourceKeys: [],
     },
     {
-      id: "ruling-guarantee",
-      title: "The 30% ruling is not a guaranteed label on your life",
-      intro: "Eligibility, documentation, and payroll implementation still matter — treat calculators as sensitivity tools.",
+      id: "myth-foreign-assets",
+      title: "“Money abroad does not matter anymore”",
+      intro:
+        "Moving country does not automatically wipe reporting questions. The **savings-and-investments part of the form** exists so your facts still match what you hold.",
       keyPoints: [],
       relatedTools: [],
       officialSourceKeys: [],
     },
     {
-      id: "foreign-outside",
-      title: "Foreign does not automatically mean outside the return",
-      intro: "Residency and reporting rules can bring overseas accounts and investments into the conversation.",
+      id: "myth-ruling-auto",
+      title: "“The 30% ruling just turns on by itself”",
+      intro:
+        "It **does not switch on alone**: who qualifies, forms, and **what payroll does** follow rules that change and need your employer. Calculators show **“what if”** numbers — not approval.",
       keyPoints: [],
       relatedTools: [],
       officialSourceKeys: [],
     },
     {
-      id: "allowance-deduction",
-      title: "Allowances are not the same as deductions",
-      intro: "Different portals, different rules — mixing them up causes missed support or wrong expectations.",
+      id: "myth-gross-lifestyle",
+      title: "“Gross salary tells me how I will live”",
+      intro:
+        "**Cash after pay deductions** (and after rent, insurance, childcare) is what you live on. Gross is easy to compare in offers — just do not skip the **payslip and living-cost** step.",
       keyPoints: [],
       relatedTools: [],
       officialSourceKeys: [],
     },
     {
-      id: "partial-template",
-      title: "Partial years rarely match a single template",
-      intro: "Arrival and departure stories need timelines — not a one-size blog flowchart.",
+      id: "myth-midyear-simple",
+      title: "“Moving mid-year is always simple”",
+      intro:
+        "Mid-year moves are **common and manageable** — they are rarely **one-size simple**. Dates, letters, and income in more than one country deserve a **quiet list**, not a panic scroll.",
       keyPoints: [],
       relatedTools: [],
       officialSourceKeys: [],
     },
     {
-      id: "tool-verdict",
-      title: "Tools suggest — they do not decide",
-      intro: "Use them to compare scenarios and build better questions for HR, payroll, or an adviser.",
+      id: "myth-allowances-free",
+      title: "“Benefits are free extra money”",
+      intro:
+        "Benefits are **help based on income and rules**, with their own site and steps. Our tools help you **plan** — they do not replace the official benefits process or a government letter.",
+      keyPoints: [],
+      relatedTools: [],
+      officialSourceKeys: [],
+    },
+    {
+      id: "myth-remote-simple",
+      title: "“Remote work is always straightforward”",
+      intro:
+        "**Where the company is, where you work, and tax agreements between countries** can all matter. When two countries might care about the same income, it is **worth mapping early**.",
+      keyPoints: [],
+      relatedTools: [],
+      officialSourceKeys: [],
+    },
+    {
+      id: "myth-calculators-replace",
+      title: "“Online calculators replace the tax office”",
+      intro:
+        "Tools help you **estimate and ask better questions**. The **Dutch tax office** (or a qualified tax adviser) still owns the final definitions, dates, and binding answers for your year.",
       keyPoints: [],
       relatedTools: [],
       officialSourceKeys: [],

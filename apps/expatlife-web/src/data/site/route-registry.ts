@@ -301,6 +301,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/money/banking/types-of-accounts/",
   "/netherlands/money/banking/how-payments-work/",
   "/netherlands/money/banking/international-transfers/",
+  "/netherlands/money/banking/security/",
+  "/netherlands/money/banking/account-rejection/",
   "/netherlands/money/banking/best-bank-zzp/",
   "/netherlands/moving/visas-residency/",
   "/netherlands/moving/working-in-the-netherlands/",

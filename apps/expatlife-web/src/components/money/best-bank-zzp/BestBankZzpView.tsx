@@ -359,7 +359,7 @@ export function BestBankZzpView() {
                 utmReferrerPath={CANONICAL}
                 bestBanksHref={BEST_BANKS_EXPATS_PATH}
               />
-              <AffiliateDisclosureNote className="mt-5 max-w-3xl text-xs">{DEFAULT_MONETIZATION_DISCLOSURE}</AffiliateDisclosureNote>
+              <AffiliateDisclosureNote className="mt-5 text-xs">{DEFAULT_MONETIZATION_DISCLOSURE}</AffiliateDisclosureNote>
             </SectionBlock>
 
             <SectionBlock

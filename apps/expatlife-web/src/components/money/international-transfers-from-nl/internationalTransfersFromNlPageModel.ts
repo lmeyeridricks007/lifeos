@@ -3,6 +3,7 @@ import type { MoveVisaResidencyReferences } from "@/src/components/moving/visas-
 import { BEST_BANKS_EXPATS_PATH } from "@/src/components/money/best-banks-expats/bestBanksExpatsPageModel";
 import { CHEAPEST_BANK_ACCOUNTS_PATH } from "@/src/components/money/cheapest-bank-accounts/cheapestBankAccountsPageModel";
 import { BANKING_FEES_PAGE_PATH } from "@/src/data/banking/bankingFeesContent";
+import { BANKING_SECURITY_PATH } from "@/src/data/banking/bankingSafety";
 import {
   transferCostEducationalEquation,
   transferCostEducationalItems,
@@ -365,6 +366,7 @@ export const internationalTransfersFromNlPageModel = {
         title: "More on ExpatCopilot",
         links: [
           { type: "internal" as const, label: "Netherlands banking hub", href: "/netherlands/money/banking/" },
+          { type: "internal" as const, label: "Banking safety & fraud", href: BANKING_SECURITY_PATH },
           { type: "internal" as const, label: "Banking fees & costs", href: BANKING_FEES_PAGE_PATH },
           { type: "internal" as const, label: "How payments work", href: HPW_PATH },
         ],

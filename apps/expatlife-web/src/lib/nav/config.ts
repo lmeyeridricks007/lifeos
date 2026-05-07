@@ -612,6 +612,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Register your address", "/netherlands/register-address-netherlands/"),
           item("DigiD guide", "/netherlands/digid-awareness/"),
           item("Open a bank account", "/netherlands/open-bank-account-netherlands"),
+          item(
+            "Bank account rejected or delayed",
+            "/netherlands/money/banking/account-rejection/",
+            "When onboarding stalls — documents, BSN, next banks to compare, and short-term payment options."
+          ),
           item("Shipping household goods", "/netherlands/shipping-household-goods-netherlands"),
         ],
       },
@@ -781,6 +786,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "International transfers",
             "/netherlands/money/banking/international-transfers/",
             "Sending money abroad from a Dutch account: fees, exchange rates, timing, and what to check before you send."
+          ),
+          item(
+            "Banking safety & fraud",
+            "/netherlands/money/banking/security/",
+            "Practical guide for expats: phishing, fake bank messages, payment-request and marketplace scams, card habits, transfers, and what to do if something looks wrong."
+          ),
+          item(
+            "Bank account rejected or delayed",
+            "/netherlands/money/banking/account-rejection/",
+            "Rejected, blocked, or slow Dutch bank applications — common causes, document checks, BSN timing, and next steps without panic."
           ),
           item(
             "Best bank for freelancers (ZZP)",

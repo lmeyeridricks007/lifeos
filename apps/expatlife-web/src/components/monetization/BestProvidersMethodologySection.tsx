@@ -43,7 +43,7 @@ export function BestProvidersMethodologySection({ methodology, affiliateNote }: 
       </div>
       <MonetizationTrustDisclosure className="mt-8 max-w-3xl" />
       <MonetizationTrustResourceLinks className="mt-3 max-w-3xl" />
-      {affiliateNote ? <AffiliateDisclosureNote className="mt-6 max-w-3xl">{affiliateNote}</AffiliateDisclosureNote> : null}
+      {affiliateNote ? <AffiliateDisclosureNote className="mt-6">{affiliateNote}</AffiliateDisclosureNote> : null}
     </Section>
   );
 }

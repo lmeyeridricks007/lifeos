@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { MoveHero } from "@/components/page/move-shell";
 import { CardLink } from "@/components/ui/card-link";
+import { BankingSafetyContextCallout } from "@/components/banking/BankingSafetyContextCallout";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { BankComparisonToolClient } from "@/src/components/tools/bank-comparison/BankComparisonToolClient";
 import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
@@ -116,6 +117,12 @@ const BANKING_GUIDES_NEXT_RAW = [
   { href: `${BASE}/money/banking/types-of-accounts/`, title: "Types of bank accounts", description: "Current, savings, joint, student, and business accounts explained simply." },
   { href: `${BASE}/money/banking/how-payments-work/`, title: "How payments work", description: "iDEAL, direct debits, and paying in shops — what expats actually use." },
   { href: `${BASE}/money/banking/international-transfers/`, title: "International transfers from the Netherlands", description: "Exchange rates, fees, and when to use a transfer app next to a Dutch account." },
+  { href: `${BASE}/money/banking/security/`, title: "Banking safety & fraud", description: "Phishing, payment-request scams, and habits that sit next to choosing a bank or tool." },
+  {
+    href: `${BASE}/money/banking/account-rejection/`,
+    title: "Bank account rejected or delayed",
+    description: "When onboarding stalls — document checks, BSN timing, and next steps before you try another bank.",
+  },
   { href: `${BASE}/money/banking/best-bank-zzp/`, title: "Best bank for freelancers (ZZP)", description: "Keeping business and personal money apart and what to check on business fees." },
 ] as const;
 
@@ -221,11 +228,12 @@ export default function BankComparisonToolPage() {
           />
         }
         intro={
-          <div className="space-y-3 text-sm leading-relaxed text-copilot-text-secondary md:text-[0.9375rem]">
+          <div className="space-y-4 text-sm leading-relaxed text-copilot-text-secondary md:text-[0.9375rem]">
             <p>
               Answer five short steps. We mix what matters to you with our simple 1–5 ratings for each bank on everyday topics. You can see how much each topic counted. Partner deals do not change the math, and we do not pull live prices from bank websites.
             </p>
             <p className="text-copilot-text-primary">Read the score as a planning hint — not as the single “best” bank.</p>
+            <BankingSafetyContextCallout variant="securityFeaturesCompare" tone="copilot" className="max-w-none" />
           </div>
         }
         disclosure="This page is for planning only — not legal, tax, immigration, or personal financial advice. Scores are rough guides; prices and product names change. Always read each bank’s own documents before you open an account or send money. Partner relationships do not change how we score banks here."

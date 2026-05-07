@@ -238,12 +238,12 @@ export function buildThirtyPercentRulingNlPageModel() {
       eyebrow: "Inside ExpatCopilot",
       title: "How this page fits with Money and Taxes",
       intro:
-        "This page = concepts and reading order. Calculators = numbers with documented tax-year settings. Tax guides = payroll and return context.",
+        "This **30% ruling guide** covers concepts and reading order; the **ruling calculator** applies numbers with documented tax-year settings. Use the shared **Tax learning path** on Money pages — How Taxes Work (step 1), Expat Taxes / Tax Guide (step 2) — when your story is wider than the facility alone.",
       links: [
         { href: R.ruling, label: "30% ruling calculator", description: "Eligibility and allowance estimates using maintained tax-year configuration.", meta: "Taxes" },
         { href: R.howTaxesWorkInNl, label: "How taxes work in the Netherlands", description: "Vocabulary for payroll vs return before you read payslip lines.", meta: "Money" },
         { href: R.taxGuideForExpats, label: "Netherlands tax guide for expats", description: "Broader expat tax map including ruling, allowances, and Box 3.", meta: "Money" },
-        { href: R.expatTaxesGuide, label: "Expat taxes in the Netherlands", description: "Scenario-led depth when your year is non-standard.", meta: "Money" },
+        { href: R.expatTaxesGuide, label: "Expat Taxes in the Netherlands", description: "Scenario-led depth when your year is non-standard.", meta: "Money" },
         { href: TAX_RETURN_NL_PATH, label: "Tax return in the Netherlands", description: "Annual filing orientation after payroll runs.", meta: "Money" },
         { href: R.taxesTools, label: "Taxes tools hub", description: "All tax calculators in one place.", meta: "Taxes" },
         { href: R.workingNl, label: "Working in the Netherlands", description: "Move-led work and first-month payroll context.", meta: "Move" },

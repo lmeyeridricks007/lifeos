@@ -81,7 +81,7 @@ export function MonetizationProviderTrustFooter({
         />
         <AffiliateDisclosureNote
           spaced
-          className={cn("mt-3", movingGuide ? "text-copilot-text-secondary" : "text-foreground-muted")}
+          className={cn("mt-3 w-full min-w-0", movingGuide ? "text-copilot-text-secondary" : "text-foreground-muted")}
         >
           {disclosureText}
         </AffiliateDisclosureNote>
@@ -118,7 +118,7 @@ export function MonetizationProviderTrustFooter({
       {showHowWeChoose ? <HowWeChooseMicrocopy /> : null}
       {children}
       <MonetizationTrustDisclosure lines={trustLines} />
-      <AffiliateDisclosureNote spaced className="text-foreground-muted">
+      <AffiliateDisclosureNote spaced className="w-full min-w-0 text-foreground-muted">
         {disclosureText}
       </AffiliateDisclosureNote>
       {lastReviewed ? (

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },
+  robots: { index: true, follow: true },
   openGraph: {
     title: seo.title,
     description: seo.description,

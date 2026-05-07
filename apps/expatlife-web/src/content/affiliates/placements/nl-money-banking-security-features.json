@@ -1,0 +1,29 @@
+{
+  "id": "nl-money-banking-security-features",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/security/",
+    "slot": "recommended-providers-security-features"
+  },
+  "variant": "cards",
+  "title": "Features to compare on bank websites",
+  "intro": "Check each bank’s official security and product pages for card freeze, alerts, limits, and support — plans change.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    {
+      "providerId": "ing",
+      "reason": "Large retail bank — on ING’s site, compare app login options, card controls, and how to reach fraud support for your account type."
+    },
+    {
+      "providerId": "abn-amro",
+      "reason": "Traditional Dutch bank — review ABN AMRO’s security centre for transaction alerts, device management, and how to report suspicious messages."
+    },
+    {
+      "providerId": "bunq",
+      "reason": "App-first bank — confirm how bunq handles card freezing, shared accounts, and notifications for the plan you are considering."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm scope, pricing, and terms with the provider directly."
+}

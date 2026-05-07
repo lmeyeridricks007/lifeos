@@ -375,6 +375,12 @@ export const typesOfBankAccountsPageModel = {
       { title: "Banking fees and costs", description: "A simple checklist of fees before you pick a package.", href: FEES_PATH, ctaLabel: "Open fee guide" },
       { title: "Open a bank account in the Netherlands", description: "Move guide: papers, citizen service number timing, and sensible order of steps.", href: "/netherlands/open-bank-account-netherlands/", ctaLabel: "Move guide" },
       { title: "How payments work", description: "Account numbers, Dutch online checkout, and paying rent and salary in plain language.", href: "/netherlands/money/banking/how-payments-work/", ctaLabel: "Open guide" },
+      {
+        title: "Bank account rejected or delayed",
+        description: "If signup stalls — common reasons, paperwork checks, and calm next steps before you reapply.",
+        href: "/netherlands/money/banking/account-rejection/",
+        ctaLabel: "Open guide",
+      },
       { title: "Employment type scenario tool", description: "Employee versus freelancer before you choose business-style banking.", href: "/netherlands/work/tools/employment-type-scenario-tool/", ctaLabel: "Open tool" },
     ] as const,
   },

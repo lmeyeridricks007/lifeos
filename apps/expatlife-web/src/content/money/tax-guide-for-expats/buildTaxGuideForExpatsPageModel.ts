@@ -46,6 +46,11 @@ export const taxGuideForExpatsSectionNav = [
 
 export const taxGuideForExpatsDeepLinks = [
   {
+    href: R.expatTaxesGuide,
+    label: "Expat Taxes in the Netherlands",
+    description: "Scenario-first companion when your year is partial, cross-border, or asset-heavy — then return here for breadth.",
+  },
+  {
     href: TAX_RETURN_NL_PATH,
     label: "Tax return in the Netherlands",
     description: "Annual return orientation: prep, payroll vs filing, and when expat situations add complexity.",
@@ -293,7 +298,7 @@ export function buildTaxGuideForExpatsPageModel() {
       eyebrow: "Inside ExpatCopilot",
       title: "How this page fits with Money, Taxes, and Work tools",
       intro:
-        "This guide is step 2 in the Money → Tax cluster: the broader expat-facing map after How Taxes Work (simplest system explainer). Expat Taxes in the Netherlands is step 3 for messy scenarios. Tax tools (step 4) estimate numbers; work tools compare offers; move guides connect timing and admin.",
+        "In the shared **Tax learning path**, this guide is the **broader** expat map for step 2 — use it alongside **Expat Taxes in the Netherlands** when you want the full curriculum, not only a scenario lane. Step 1 is How Taxes Work; steps 3–5 cover residency/cross-border, tax return prep, then tools and optional adviser guidance.",
       links: [
         {
           href: HOW_TAXES_WORK_IN_NL_PATH,

@@ -1,0 +1,29 @@
+{
+  "id": "nl-money-banking-account-rejection-digital",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/account-rejection/",
+    "slot": "account-rejection-digital"
+  },
+  "variant": "cards",
+  "title": "Digital banks — check requirements",
+  "intro": "App-led onboarding can be fast for simple cases — you still pass identity and compliance checks. Nothing here guarantees approval.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    {
+      "providerId": "bunq",
+      "reason": "Onboarding: Dutch-licensed app bank with English flows and paid plans. Best for: people who want a full local-style account with strong app controls when eligibility fits. Watch-outs: compare monthly plan cost vs free tiers elsewhere; confirm salary and direct-debit needs on bunq’s site."
+    },
+    {
+      "providerId": "revolut",
+      "reason": "Onboarding: international app with multi-currency features — NL product scope can differ from a classic Dutch betaalrekening. Best for: spending, travel, and bridging money while you also evaluate a local account if needed. Watch-outs: validate iDEAL and local Dutch debit expectations for your case."
+    },
+    {
+      "providerId": "n26",
+      "reason": "Onboarding: mobile euro account — availability and features vary by market; read N26’s Netherlands pages carefully. Best for: simple euro day-to-day use where the product matches your needs. Watch-outs: confirm deposit protection scope, fees, and whether your employer accepts the IBAN format they issue."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm scope, pricing, and terms with the provider directly."
+}

@@ -35,6 +35,7 @@ import {
   LIVING_SURVIVAL_TOPIC_CARDS,
   LIVING_WEATHER_PATH,
 } from "@/src/components/living/livingPillarContent";
+import { bankingSecurityCrossLink } from "@/src/data/banking/bankingSafety";
 import {
   siteGuideColumnPadYClass,
   sitePillarFramedHeroGutterXClass,
@@ -86,6 +87,18 @@ function EssentialsOverview() {
       body: "IBAN, iDEAL, SEPA, direct debits, and contactless habits — Money · Banking guide; Living hub still lists wider money links.",
       href: "/netherlands/money/banking/how-payments-work/",
       cta: "How payments work",
+    },
+    {
+      title: "Bank account stuck or declined",
+      body: "If Dutch bank onboarding is slow or rejected — calm checks for documents, BSN timing, and next steps on Money · Banking.",
+      href: "/netherlands/money/banking/account-rejection/",
+      cta: "Read the guide",
+    },
+    {
+      title: bankingSecurityCrossLink.title,
+      body: bankingSecurityCrossLink.description,
+      href: bankingSecurityCrossLink.href,
+      cta: bankingSecurityCrossLink.ctaLabel,
     },
     {
       title: "Shopping & groceries",

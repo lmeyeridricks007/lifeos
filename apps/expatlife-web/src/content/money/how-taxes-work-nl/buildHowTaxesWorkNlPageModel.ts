@@ -48,8 +48,8 @@ export const howTaxesWorkNlDeepLinks = [
   },
   {
     href: R.expatTaxesGuide,
-    label: "Learn expat taxes",
-    description: "Scenario-led guide: partial years, assets, allowances, cross-border context.",
+    label: "Expat Taxes in the Netherlands",
+    description: "Scenario-led step-2 companion: partial years, assets, allowances, cross-border context.",
   },
   {
     href: R.ruling,
@@ -229,7 +229,7 @@ export function buildHowTaxesWorkNlPageModel() {
       eyebrow: "Inside ExpatCopilot",
       title: "How this page fits with Money, Taxes, and Work",
       intro:
-        "Here: the shortest system map. Tax Guide for Expats adds breadth; Expat Taxes NL is scenario-first. Work pages cover offers and contracts; calculators (later on this page) each document their own limits.",
+        "Step **1** in the shared **Tax learning path**: the shortest Dutch tax system map. Step 2 pairs **Expat Taxes in the Netherlands** (scenario-first) with the **Tax Guide for Expats** (broader map). Work pages cover offers and contracts; calculators each document their own limits.",
       links: [
         { href: R.moneyTools, label: "Money & tax tools hub", description: "Browse calculators for salary, COL, rent, and more.", meta: "Money" },
         { href: R.taxesTools, label: "Taxes tools hub", description: "Salary net, ruling, healthcare allowance, double-tax awareness.", meta: "Taxes" },

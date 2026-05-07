@@ -157,9 +157,12 @@ export function TaxAdvisorsNlScorecardSection({ section, className }: TaxAdvisor
         </table>
       </div>
 
-      <p className="mt-4 rounded-xl border border-border/70 bg-surface-muted/40 px-4 py-3 text-xs leading-relaxed text-foreground-muted ring-1 ring-border/40 sm:text-sm">
-        <BoldParagraph text={section.footnote} className="[&_strong]:font-semibold [&_strong]:text-foreground" />
-      </p>
+      <div className="mt-4 rounded-xl border border-border/70 bg-surface-muted/40 px-4 py-3 ring-1 ring-border/40">
+        <BoldParagraph
+          text={section.footnote}
+          className="text-xs leading-relaxed text-foreground-muted sm:text-sm [&_strong]:font-semibold [&_strong]:text-foreground"
+        />
+      </div>
     </SectionBlock>
   );
 }

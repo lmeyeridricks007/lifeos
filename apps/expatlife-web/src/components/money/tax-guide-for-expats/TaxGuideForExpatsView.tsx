@@ -43,6 +43,7 @@ import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionN
 import { MoveGuideAffiliateSupportBlock } from "@/src/components/moving/MoveGuideAffiliateSupportBlock";
 import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
 import { MoneyTaxLearningPath } from "@/src/components/money/tax-cluster/MoneyTaxLearningPath";
+import { PairedMoneyTaxGuidesCrossLink } from "@/src/components/money/PairedMoneyTaxGuidesCrossLink";
 import { TaxConceptInfographic } from "@/src/components/money/tax-cluster/TaxConceptInfographic";
 import { TaxClusterToolsSection } from "@/src/components/money/tax-cluster/TaxClusterToolsSection";
 import {
@@ -243,6 +244,8 @@ export function TaxGuideForExpatsView() {
             <TaxConceptInfographic variant="tax-guide" className={SECTION_SCROLL_MARGIN} />
 
             <MoneyTaxLearningPath id="tax-learning-path" activeHref={TAX_GUIDE_FOR_EXPATS_PATH} variant="full" className={SECTION_SCROLL_MARGIN} />
+
+            <PairedMoneyTaxGuidesCrossLink variant="tax-guide-to-expat" className={SECTION_SCROLL_MARGIN} />
 
             <SectionBlock
               id={meta.startHere.id}

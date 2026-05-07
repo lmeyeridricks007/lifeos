@@ -81,3 +81,6 @@ export const taxClusterTools = [
     ctaLabel: "Estimate childcare costs",
   },
 ] as const;
+
+/** Double-tax awareness tool — Money → Tax learning path (step 3 secondary). */
+export const DOUBLE_TAX_AWARENESS_HREF = taxClusterTools.find((t) => t.id === "doubleTax")!.href;

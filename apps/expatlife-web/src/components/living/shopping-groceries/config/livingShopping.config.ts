@@ -3,6 +3,7 @@ import {
   LIVING_ESSENTIAL_APPS_PATH,
   LIVING_SURVIVAL_GUIDE_PATH,
 } from "@/src/components/living/livingPillarContent";
+import { bankingSecurityShoppingRelatedCard } from "@/src/data/banking/bankingSafety";
 import type {
   LivingShoppingFaqItem,
   LivingShoppingMisunderstandingCard,
@@ -676,6 +677,7 @@ export const livingShoppingRelatedTools: LivingShoppingRelatedTools = {
       ctaLabel: "Read payments guide",
       iconKey: "smartphone",
     },
+    { ...bankingSecurityShoppingRelatedCard },
     {
       title: "Cost of Living Calculator",
       description: "Turn groceries, transport, rent, and household spending into a monthly planning band instead of guessing from single receipts.",

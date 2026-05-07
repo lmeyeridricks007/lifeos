@@ -2,6 +2,7 @@ import Link from "next/link";
 import { cn } from "@/lib/cn";
 import { movingNlCardMicroLiftClass, movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
 import {
+  DOUBLE_TAX_AWARENESS_HREF,
   EXPAT_TAXES_NL_HREF,
   HOW_TAXES_WORK_IN_NL_HREF,
   TAX_ADVISORS_EXPATS_HREF,
@@ -24,35 +25,35 @@ type LearningPathStepDef = {
 const STEPS: readonly LearningPathStepDef[] = [
   {
     step: 1,
-    title: "Learn how taxes work",
+    title: "Learn how Dutch taxes work",
     href: HOW_TAXES_WORK_IN_NL_HREF,
-    blurb: "Shortest Dutch tax system map — payroll, annual return, boxes, credits vs allowances.",
+    blurb: "Shortest system map — payroll, annual return, boxes, and how credits differ from allowances. Not expat-specific yet.",
   },
   {
     step: 2,
-    title: "Understand your expat tax situation",
-    href: TAX_GUIDE_FOR_EXPATS_HREF,
-    blurb: "Broad expat-oriented map first; open the scenario-led guide when your year is partial, cross-border, or non-standard.",
-    secondary: { href: EXPAT_TAXES_NL_HREF, label: "Expat Taxes in the Netherlands →" },
+    title: "Understand expat-specific tax situations",
+    href: EXPAT_TAXES_NL_HREF,
+    blurb: "Scenario-first page for partial years, foreign assets, ruling, allowances, and double tax — then widen context when you need the full map.",
+    secondary: { href: TAX_GUIDE_FOR_EXPATS_HREF, label: "Netherlands Tax Guide for Expats (broader map) →" },
   },
   {
     step: 3,
-    title: "Check tax residency & cross-border issues",
+    title: "Check tax residency / cross-border risks",
     href: TAX_RESIDENCY_NL_HREF,
-    blurb: "Separate tax wording from permits; list ties and overlaps before you treat filing as salary-only.",
+    blurb: "Facts-over-time and ties — vocabulary before you treat filing as salary-only or skip foreign lines.",
+    secondary: { href: DOUBLE_TAX_AWARENESS_HREF, label: "Double tax awareness tool (checklist) →" },
   },
   {
     step: 4,
-    title: "Prepare for the annual tax return",
+    title: "Prepare for tax return",
     href: TAX_RETURN_NL_HREF,
-    blurb: "What the return settles, what to gather, and how payroll withholding connects — orientation, not a filing portal.",
+    blurb: "Dedicated return orientation — prep, payroll vs filing, and when expat facts add sections. Not a filing portal.",
   },
   {
     step: 5,
-    title: "Use tax tools & advisors where needed",
+    title: "Use tools or tax support where needed",
     href: TAXES_TOOLS_HREF,
-    blurb:
-      "Calculators and awareness tools when you need numbers first. If you may compare paid help later, use the optional editorial guide — many people never need it.",
+    blurb: "Calculators and estimators when numbers help. Editorial tax-advisors guide only if you may compare paid help — optional, not a default.",
     secondary: { href: TAX_ADVISORS_EXPATS_HREF, label: "When to consider tax help (guide) →" },
   },
 ];
@@ -107,7 +108,9 @@ export function MoneyTaxLearningPath({ activeHref, currentStep, variant = "full"
         <div className="flex flex-wrap items-end justify-between gap-2">
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted">Tax learning path</p>
-            <p className="mt-1 text-sm font-semibold text-foreground">Follow the tax topics in order, then use tools when you need numbers.</p>
+            <p className="mt-1 text-sm font-semibold text-foreground">
+              Follow the five steps in order — foundation, expat scenarios, residency, return prep, then tools or support.
+            </p>
           </div>
         </div>
         <ol className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-5" role="list">
@@ -180,7 +183,7 @@ export function MoneyTaxLearningPath({ activeHref, currentStep, variant = "full"
         Tax learning path
       </h2>
       <p className="mt-1 text-sm text-foreground-muted">
-        Recommended order in the Money → Tax cluster — stay on each step as long as you need before moving on.
+        Shared Money → Tax cluster order: each page keeps its own depth — this path only shows where to start and what to open next without duplicating full guides.
       </p>
       <ol className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-5" role="list">
         {STEPS.map((s) => {

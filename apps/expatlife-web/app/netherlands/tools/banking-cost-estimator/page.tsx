@@ -160,6 +160,16 @@ const BANKING_GUIDES_NEXT_RAW = [
     description: "Fees, FX, and when a transfer specialist sits next to a Dutch account.",
   },
   {
+    href: `${BASE}/money/banking/security/`,
+    title: "Banking safety & fraud",
+    description: "Practical scam awareness before you move money or pick a fee tier under pressure.",
+  },
+  {
+    href: `${BASE}/money/banking/account-rejection/`,
+    title: "Bank account rejected or delayed",
+    description: "If signup is stuck — paperwork, timing, and comparing another provider calmly.",
+  },
+  {
     href: BEST_BANK_ZZP_PATH,
     title: "Best bank for freelancers (ZZP)",
     description: "Business vs personal separation, packages, and what to verify on tariffs.",

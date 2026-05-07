@@ -203,11 +203,11 @@ export function buildTaxReturnNlPageModel() {
       eyebrow: "Inside ExpatCopilot",
       title: "How this page fits with Money and Taxes",
       intro:
-        "This page: return preparation and how it connects to payroll. How Taxes Work = vocabulary; Tax Guide / Expat Taxes = breadth and scenarios; Tax residency = border and label questions.",
+        "Learning path **step 4** — return preparation and how it connects to payroll. Steps **1–3** are How Taxes Work (foundation), Expat Taxes / Tax Guide (scenarios and breadth), and Tax residency (ties and labels); **step 5** is the Taxes tools hub and optional adviser guide.",
       links: [
         { href: R.howTaxesWorkInNl, label: "How taxes work in the Netherlands", description: "Payroll vs return and boxes — start here if vocabulary is new.", meta: "Money" },
         { href: R.taxGuideForExpats, label: "Netherlands tax guide for expats", description: "Broader expat tax map.", meta: "Money" },
-        { href: R.expatTaxesGuide, label: "Expat taxes in the Netherlands", description: "Partial years, assets, allowances, double tax.", meta: "Money" },
+        { href: R.expatTaxesGuide, label: "Expat Taxes in the Netherlands", description: "Partial years, assets, allowances, double tax.", meta: "Money" },
         { href: R.taxResidencyNl, label: "Tax residency in the Netherlands", description: "Tax vs immigration wording — orientation only.", meta: "Money" },
         { href: R.taxesTools, label: "Taxes tools hub", description: "Calculators and awareness tools — each states its limits.", meta: "Taxes" },
         {

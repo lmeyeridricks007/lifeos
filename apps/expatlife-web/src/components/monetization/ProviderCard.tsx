@@ -189,7 +189,7 @@ export function ProviderCard({
       </dl>
       <div className={cn("mt-4 border-t pt-4", copilot ? "border-copilot-primary/10" : "border-border")}>{cta}</div>
       {isAffiliate && disclosureText ? (
-        <AffiliateDisclosureNote spaced className={copilot ? "text-copilot-text-secondary" : undefined}>
+        <AffiliateDisclosureNote spaced className={cn("w-full min-w-0", copilot ? "text-copilot-text-secondary" : undefined)}>
           {disclosureText}
         </AffiliateDisclosureNote>
       ) : null}

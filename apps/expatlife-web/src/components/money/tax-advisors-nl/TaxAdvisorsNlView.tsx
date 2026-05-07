@@ -286,12 +286,13 @@ export function TaxAdvisorsNlView() {
               <h2 id="diy-vs-advisor-heading" className="mt-1.5 text-lg font-bold tracking-tight text-foreground sm:text-xl">
                 {meta.diyVsAdvisor.title}
               </h2>
-              <p className={cn(movingNlSectionSubtitleClass, "mt-2 max-w-3xl text-foreground-muted")}>
-                <BoldParagraph
-                  text={meta.diyVsAdvisor.subtitle}
-                  className="inline [&_strong]:font-semibold [&_strong]:text-foreground"
-                />
-              </p>
+              <BoldParagraph
+                text={meta.diyVsAdvisor.subtitle}
+                className={cn(
+                  movingNlSectionSubtitleClass,
+                  "mt-2 max-w-3xl text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+                )}
+              />
               <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4">
                 {meta.diyVsAdvisor.paths.map((p) => (
                   <div

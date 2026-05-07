@@ -239,7 +239,7 @@ export function BankingHubView() {
               subtitle={meta.glossary.subtitle}
             >
               <BankingGlossaryPanel className="mt-6" />
-              <AffiliateDisclosureNote className="mt-8 max-w-3xl text-xs text-foreground-muted">
+              <AffiliateDisclosureNote className="mt-8 text-xs text-foreground-muted">
                 {DEFAULT_MONETIZATION_DISCLOSURE}
               </AffiliateDisclosureNote>
             </SectionBlock>

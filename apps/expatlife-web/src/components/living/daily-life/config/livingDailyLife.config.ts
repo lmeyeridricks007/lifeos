@@ -732,6 +732,13 @@ export const livingDailyLifeRelatedTools: LivingDailyLifeRelatedTools = {
       iconKey: "baby",
     },
     {
+      title: "Bank onboarding stuck?",
+      description: "If a Dutch account is rejected, delayed, or stuck in the app, use the Money · Banking guide for checks and next steps.",
+      href: "/netherlands/money/banking/account-rejection/",
+      ctaLabel: "Account Rejection Guide",
+      iconKey: "wallet",
+    },
+    {
       title: "Healthcare allowance estimator",
       description:
         "See whether you might get healthcare allowance (toeslag) alongside your premium—helpful when monthly costs still feel unclear.",

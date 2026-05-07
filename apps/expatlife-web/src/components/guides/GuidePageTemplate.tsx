@@ -77,6 +77,22 @@ import type { MonetizationPageType } from "@/src/lib/monetization/pageTypePolicy
 import { getMonetizationPolicy } from "@/src/lib/monetization/pageTypePolicy";
 import { InstructionalRasterFigure, type InstructionalRaster } from "@/src/components/money/InstructionalRasterFigure";
 
+function GuideCalloutCtaLink({ href, className, children }: { href: string; className?: string; children: ReactNode }) {
+  const isExternal = href.startsWith("http");
+  if (isExternal) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} className={className}>
+      {children}
+    </Link>
+  );
+}
+
 /** Slugs that support "Download PDF" (checklist-style guides). */
 const CHECKLIST_PDF_SLUGS = ["moving-checklist-netherlands", "documents-needed-to-move-netherlands"] as const;
 
@@ -731,14 +747,12 @@ function GuideSectionVisaRoutes({
           <p>{callout.text}</p>
           {callout.href ? (
             <p className="mt-2">
-              <a
+              <GuideCalloutCtaLink
                 href={callout.href}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="font-medium text-brand-strong underline hover:text-link-hover"
               >
                 {callout.linkLabel ?? "View source"}
-              </a>
+              </GuideCalloutCtaLink>
             </p>
           ) : null}
         </InfoBox>
@@ -1360,14 +1374,9 @@ function SectionContent({
           <p>{section.callout.text}</p>
           {section.callout.href ? (
             <p className="mt-2">
-              <a
-                href={section.callout.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-brand-strong underline hover:text-link-hover"
-              >
+              <GuideCalloutCtaLink href={section.callout.href} className="font-medium text-brand-strong underline hover:text-link-hover">
                 {section.callout.linkLabel ?? "View source"}
-              </a>
+              </GuideCalloutCtaLink>
             </p>
           ) : null}
         </InfoBox>

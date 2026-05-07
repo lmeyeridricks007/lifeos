@@ -37,6 +37,8 @@ import {
   BANKING_VISUAL_CARD_PANEL_CLASS,
   BANKING_VISUAL_CARD_SHELL_CLASS,
 } from "@/components/banking/bankingPageUi";
+import { BankingContextAside } from "@/components/banking/BankingContextAside";
+import { BankingSafetyContextCallout } from "@/components/banking/BankingSafetyContextCallout";
 import { BankingCompareFitEstimateCostCta } from "@/components/banking/BankingCompareFitEstimateCostCta";
 import { BankingRecommendedOptionsSection } from "@/components/banking/BankingRecommendedOptionsSection";
 import { MoveMisunderstandingCardGrid } from "@/src/components/moving/movePillarCardPrimitives";
@@ -49,6 +51,7 @@ import { AffiliateDisclosureNote } from "@/src/components/monetization/Affiliate
 import { DEFAULT_MONETIZATION_DISCLOSURE } from "@/src/lib/monetization/types";
 import { loadProvider } from "@/src/lib/affiliates/loadAffiliates";
 import { bankingSubpageGlossarySection } from "@/src/data/banking/bankingGlossaryTerms";
+import { BANKING_ACCOUNT_REJECTION_PATH } from "@/src/data/banking/accountRejection";
 import { bestBanksExpatsPageModel as meta } from "./bestBanksExpatsPageModel";
 import { BestBanksExpatsHeroGraphic } from "./BestBanksExpatsHeroGraphic";
 import { BankComparisonTable, type BankAffiliateLink } from "@/components/banking/BankComparisonTable";
@@ -214,6 +217,11 @@ export function BestBanksExpatsView() {
           href: "/netherlands/money/banking/fees/",
           label: "Banking fees & costs →",
           description: "Fee categories, transfers, ATM, and hidden traps — framework before you compare.",
+        },
+        {
+          href: "/netherlands/money/banking/security/",
+          label: "Banking safety & fraud →",
+          description: "Phishing, payment-request scams, and habits that pair with choosing a bank.",
         },
         { href: "/netherlands/open-bank-account-netherlands/", label: "Open bank account guide →", description: "Documents, BSN timing, and typical asks." },
         { href: "/netherlands/services/banks/", label: "Banks directory →", description: "Broader provider list beyond this shortlist." },
@@ -402,6 +410,16 @@ export function BestBanksExpatsView() {
           <PillarJourneyStack variant="guide" density="compact" className={BANKING_GUIDE_STACK_CLASS}>
             <MovePillarMobileToc items={meta.sectionNav} />
 
+            <BankingContextAside
+              className="max-w-none"
+              title="Onboarding friction"
+              body="Onboarding requirements can vary by bank and profile. If you are rejected or delayed, use the Account Rejection Guide for a calm checklist before you try another provider."
+              href={BANKING_ACCOUNT_REJECTION_PATH}
+              ctaLabel="Account Rejection Guide"
+            />
+
+            <BankingSafetyContextCallout variant="securityFeaturesCompare" className="max-w-none" />
+
             <SectionBlock
               id="comparison"
               className={SECTION_MAJOR}
@@ -417,7 +435,7 @@ export function BestBanksExpatsView() {
                 On small screens the table becomes <strong className="font-semibold text-foreground">cards</strong> — same columns, easier scrolling.
               </p>
               <BankComparisonTable banks={banks} sortable bankLinks={bankLinks} className="mt-3 md:mt-4" />
-              <AffiliateDisclosureNote className="mt-4 max-w-3xl text-xs">
+              <AffiliateDisclosureNote className="mt-4 text-xs">
                 {DEFAULT_MONETIZATION_DISCLOSURE} Table cells describe typical patterns — not live tariffs.
               </AffiliateDisclosureNote>
             </SectionBlock>

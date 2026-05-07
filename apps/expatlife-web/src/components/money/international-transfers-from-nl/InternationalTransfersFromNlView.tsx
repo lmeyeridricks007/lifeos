@@ -31,6 +31,7 @@ import {
   movingNlSignatureGradientClass,
 } from "@/lib/ui/moving-nl-pillar-identity";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
+import { BankingSafetyContextCallout } from "@/components/banking/BankingSafetyContextCallout";
 import { BankingCompareFitEstimateCostCta } from "@/components/banking/BankingCompareFitEstimateCostCta";
 import { TransferComparisonTable } from "@/components/banking/TransferComparisonTable";
 import { TransferOverpayComparisonVisual } from "@/components/banking/TransferOverpayComparisonVisual";
@@ -98,6 +99,16 @@ export function InternationalTransfersFromNlView() {
           description: "See how often you send abroad changes the monthly planning band.",
         },
         { href: BANKING_FEES_PAGE_PATH, label: "Banking fees →", description: "Transfer and exchange-rate lines on Dutch price lists." },
+        {
+          href: "/netherlands/money/banking/security/",
+          label: "Banking safety & fraud →",
+          description: "Verify recipients and spot transfer-related scams before you confirm large sends.",
+        },
+        {
+          href: "/netherlands/money/banking/account-rejection/",
+          label: "Account rejected or delayed →",
+          description: "If you still need a Dutch account for smoother transfers and direct debits.",
+        },
         { href: BEST_BANKS_EXPATS_PATH, label: "Best banks for expats →", description: "Shortlist and comparison table." },
         { href: "/netherlands/money/banking/how-payments-work/", label: "How payments work →", description: "Paying bills, cards, and bank transfers in the Netherlands." },
         { href: CHEAPEST_BANK_ACCOUNTS_PATH, label: "Cheapest bank accounts →", description: "Lower-fee everyday Dutch accounts." },
@@ -320,6 +331,8 @@ export function InternationalTransfersFromNlView() {
           <PillarJourneyStack variant="guide">
             <MovePillarMobileToc items={[...meta.sectionNav]} />
 
+            <BankingSafetyContextCallout variant="internationalTransfers" tone="copilot" className="max-w-none" />
+
             <SectionBlock
               id={meta.whyOverpay.id}
               className={SECTION_SCROLL_MARGIN}
@@ -379,7 +392,7 @@ export function InternationalTransfersFromNlView() {
                   </div>
                 </div>
               </div>
-              <AffiliateDisclosureNote className="mt-5 w-full max-w-none text-xs text-copilot-text-secondary">
+              <AffiliateDisclosureNote className="mt-5 text-xs text-copilot-text-secondary">
                 {DEFAULT_MONETIZATION_DISCLOSURE}
               </AffiliateDisclosureNote>
             </SectionBlock>

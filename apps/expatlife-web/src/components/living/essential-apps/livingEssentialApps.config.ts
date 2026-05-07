@@ -3,6 +3,7 @@ import {
   LIVING_GETTING_AROUND_PATH,
   LIVING_SURVIVAL_GUIDE_PATH,
 } from "@/src/components/living/livingPillarContent";
+import { bankingSecurityEssentialAppsRelatedCard } from "@/src/data/banking/bankingSafety";
 import { LIVING_TRANSPORT_APP_DOWNLOADS } from "@/src/components/living/livingTransportAppStoreLinks";
 import type { LivingEssentialAppsConfig } from "./livingEssentialApps.types";
 
@@ -1409,5 +1410,6 @@ export const livingEssentialAppsPageConfig: LivingEssentialAppsConfig = {
       compact: true,
       iconKey: "route",
     },
+    { ...bankingSecurityEssentialAppsRelatedCard },
   ],
 };

@@ -101,6 +101,11 @@ export function TypesOfBankAccountsView() {
         { href: meta.hero.secondaryCta.href, label: "Compare banks →", description: "Editorial shortlist — confirm products on each site." },
         { href: "/netherlands/money/banking/#banking-glossary-hub", label: "Banking glossary →", description: "Short definitions on the Banking hub." },
         { href: "/netherlands/open-bank-account-netherlands/", label: "Open bank account guide →", description: "Move — documents and BSN timing." },
+        {
+          href: "/netherlands/money/banking/account-rejection/",
+          label: "Account rejected or delayed →",
+          description: "When signup stalls — checks and next steps.",
+        },
         { href: "/netherlands/money/banking/how-payments-work/", label: "How payments work →", description: "Paying rent, salary, and shopping in plain language." },
         { href: "/netherlands/money/banking/fees/", label: "Understand fees →", description: "Checklist before you pick a package." },
         { href: "/netherlands/money/banking/traditional-vs-digital/", label: "Traditional vs digital →", description: "How people combine banks and apps." },

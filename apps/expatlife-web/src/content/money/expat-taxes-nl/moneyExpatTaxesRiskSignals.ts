@@ -1,118 +1,112 @@
-import { expatTaxesNlRoutes as R } from "@/src/components/money/expat-taxes-nl/expatTaxesNlRoutes";
+import { taxGuideRoutes } from "@/src/components/money/tax-guide-for-expats/taxGuideRoutes";
 import type { MoneyExpatTaxesRiskSignalsShellConfig } from "./moneyExpatTaxesContent.types";
 
 export const moneyExpatTaxesRiskSignals: MoneyExpatTaxesRiskSignalsShellConfig = {
   id: "early-tax-signals",
-  eyebrow: "Check-in prompts",
-  title: "Expat tax signals worth checking early",
+  eyebrow: "What to open first",
+  title: "Tax topics worth noticing early",
   subtitle:
-    "A gentle triage — not a verdict. If a line sounds familiar, open the linked section or tool before filing season compresses your patience.",
+    "If a line sounds like your year, read the card, take the next step, then open a tool or section when you are ready — no score, no drama.",
   intro:
-    "Check-in levels mean more paperwork or moving parts — not a judgment. Use this block to route yourself, then confirm binding details with official guidance or an adviser if you need to.",
+    "These are **practical prompts**, not predictions. The “caution” label only means how much paperwork or coordination often shows up — **not** that you did anything wrong. Use them to pick a lane, then check anything serious with the Dutch tax office or a tax adviser.",
   cards: [
     {
       id: "signal-mid-year-move",
       title: "You moved during the tax year",
       whyItMatters:
-        "Partial years often mean more sections in a return, more dates to align, and sometimes income or premiums that do not fit a clean twelve-month story.",
+        "A mid-year move usually means more dates to line up — job start or stop, where you registered, and sometimes pay or premiums that do not fit one neat twelve-month story. That is paperwork rhythm, not a mistake.",
       recommendedAction:
-        "Sketch a timeline (move date, job start, registration) and read the arrival/departure section on this page — then follow Belastingdienst guidance for your year.",
-      cautionLevel: "medium",
-      relatedToolKeys: [],
-      relatedAnchors: [{ id: "arrival-departure-year", label: "Arrival & departure year (this page)" }],
-      relatedServiceKeys: [],
+        "Write a short timeline (move date, job dates, registration). Open the arriving or leaving section on this page, then use the tax return guide when you want filing-season words.",
+      cautionLevel: "worth_checking",
+      relatedToolKeys: ["taxReturnNl"],
+      relatedAnchors: [{ id: "arrival-departure-year", label: "Arriving or leaving (this page)" }],
       officialSourceKeys: ["bd_filing_return"],
     },
     {
       id: "signal-foreign-wealth",
-      title: "You still have foreign savings or investments",
+      title: "You still have savings or investments abroad",
       whyItMatters:
-        "Wealth-style reporting can surface before it feels intuitive if you are still mentally “banked” in another country.",
+        "The savings-and-investments part of the yearly form can matter even when pay felt “finished” each month. If your money still spans countries, learning a few words early keeps surprises smaller later.",
       recommendedAction:
-        "Read foreign assets & Box 3 below, then decide whether you only need vocabulary or scoped professional confirmation.",
-      cautionLevel: "medium",
-      relatedToolKeys: [],
-      relatedAnchors: [{ id: "foreign-box3", label: "Foreign assets & Box 3 (this page)" }],
-      relatedServiceKeys: [],
+        "Read the savings abroad section below. If the amounts are meaningful, pair it with the tax residency guide — then decide if you only need clarity or a short paid review.",
+      cautionLevel: "worth_checking",
+      relatedGuideKeys: ["taxResidencyNl"],
+      relatedAnchors: [{ id: "foreign-box3", label: "Savings abroad & Box 3 (this page)" }],
       officialSourceKeys: ["bd_income_tax_individuals"],
     },
     {
       id: "signal-foreign-income",
       title: "You receive income from outside the Netherlands",
       whyItMatters:
-        "Cross-border income can change which questions appear first — and assumptions from social threads are often country-wrong.",
+        "Income from another country changes which questions come first. Each country pair is different — start with your facts in a short list before you copy a random thread.",
       recommendedAction:
-        "Run the double-tax awareness tool for structured prompts, then confirm facts with official international guidance or an adviser if stakes are high.",
-      cautionLevel: "high",
+        "Use the double tax awareness tool for a simple checklist, then use official guidance or a tax adviser if the amounts or countries make this high-stakes.",
+      cautionLevel: "consider_support",
       relatedToolKeys: ["doubleTax"],
-      relatedAnchors: [],
-      relatedServiceKeys: [],
+      relatedAnchors: [{ id: "double-tax", label: "Two countries (this page)" }],
       officialSourceKeys: ["bd_international_en"],
     },
     {
       id: "signal-remote-cross-border",
       title: "You work remotely across borders",
       whyItMatters:
-        "Where work is taxed and how treaties interact are not always guessable from a job title — especially with hybrid patterns.",
+        "Hybrid and remote work can make “where work is taxed” less obvious than one office address. Treating that as a planning question early usually saves stress later.",
       recommendedAction:
-        "Pair double-tax awareness with employment type scenarios so you ask HR and advisers better questions, earlier.",
-      cautionLevel: "high",
-      relatedToolKeys: ["employmentType"],
-      relatedAnchors: [],
-      relatedServiceKeys: [],
+        "Use double tax awareness together with the employment-type tool so talks with HR or a tax adviser start from clearer questions.",
+      cautionLevel: "consider_support",
+      relatedToolKeys: ["doubleTax", "employmentType"],
+      relatedAnchors: [{ id: "double-tax", label: "Two countries (this page)" }],
       officialSourceKeys: ["bd_international_en"],
     },
     {
       id: "signal-thirty-percent",
       title: "You may qualify for the 30% ruling",
       whyItMatters:
-        "Offers often mention the facility early — but eligibility and payroll setup still need a real process, not vibes.",
+        "Offers often mention it before the paperwork exists. Who qualifies and what payroll does still follow a process you can map calmly with HR.",
       recommendedAction:
-        "Model indicative scenarios in the ruling calculator, then align with payroll using the 30% ruling section below.",
-      cautionLevel: "low",
+        "Try a few numbers in the ruling calculator, then read the 30% ruling section on this page so your expectations match what payroll can actually do.",
+      cautionLevel: "simple",
       relatedToolKeys: ["ruling"],
-      relatedAnchors: [],
-      relatedServiceKeys: [],
+      relatedGuideKeys: ["thirtyPercentRulingGuide"],
+      relatedAnchors: [{ id: "thirty-percent-ruling", label: "30% ruling (this page)" }],
       officialSourceKeys: ["bd_30_percent_facility"],
     },
     {
       id: "signal-family-allowances",
-      title: "You have partner, children, or allowance questions",
+      title: "You have partner or children benefit questions",
       whyItMatters:
-        "Premiums, toeslagen, and return-time items use different mechanics — mixing them up causes missed support or wrong expectations.",
+        "Insurance premiums, government benefits, and yearly-form items use different rules and sites. Keeping them separate helps you claim what you should without mixing them up.",
       recommendedAction:
-        "Estimate healthcare allowance and childcare, then read family & allowances for how those lines sit beside salary tax.",
-      cautionLevel: "low",
-      relatedToolKeys: [],
-      relatedAnchors: [{ id: "family-allowances", label: "Family & allowances (this page)" }],
-      relatedServiceKeys: [],
+        "Try healthcare allowance and childcare tools where they matter, then read the family & benefits section to see how they sit next to pay tax.",
+      cautionLevel: "simple",
+      relatedToolKeys: ["healthcare", "childcare"],
+      relatedAnchors: [{ id: "family-allowances", label: "Family & benefits (this page)" }],
       officialSourceKeys: ["toeslagen_portal"],
     },
     {
       id: "signal-mixed-income",
       title: "You are self-employed or have mixed income",
       whyItMatters:
-        "Hybrid or freelance patterns change which reporting lines matter first — and DIY confidence from salaried friends may not transfer.",
+        "Invoices, business registration timing, or a job plus freelance work can change which parts of the form matter first. Habits from a simple job do not always carry over when clients or borders are involved.",
       recommendedAction:
-        "Use employment type scenarios for vocabulary, then consider scoped adviser help if invoices, VAT, or cross-border clients are in play.",
-      cautionLevel: "high",
+        "Use the employment-type tool for vocabulary, then open the tax return guide. If invoices or borders are in play, consider paid help in line with the amounts.",
+      cautionLevel: "consider_support",
       relatedToolKeys: ["employmentType"],
-      relatedAnchors: [],
-      relatedServiceKeys: [],
+      relatedGuideKeys: ["taxReturnNl", "taxAdvisorsExpats"],
+      relatedAnchors: [{ id: "employment-payslips", label: "Your job & payslip (this page)" }],
       officialSourceKeys: ["bd_income_tax_individuals"],
     },
     {
       id: "signal-leaving-soon",
       title: "You are leaving the Netherlands soon",
       whyItMatters:
-        "Departure years can reverse the “new arrival” problem — timing, final payroll, and last obligations deserve the same calm checklist mindset.",
+        "A departure year is often the mirror of an arrival year: last pay, last tasks, and timing deserve the same calm checklist mindset.",
       recommendedAction:
-        "Read arrival/departure context here, then use the broad tax guide for return-cycle orientation and official sources for deadlines.",
-      cautionLevel: "medium",
-      relatedToolKeys: [] as const,
-      relatedAnchors: [],
-      relatedServiceKeys: [],
-      relatedTools: [{ kind: "link", href: `${R.taxGuideBroad}#tax-return-basics`, label: "Tax guide — return basics" }],
+        "Read the arriving or leaving section here, skim yearly-form basics in the big tax guide, and bookmark official filing help for your tax year.",
+      cautionLevel: "worth_checking",
+      relatedGuideKeys: ["taxReturnNl"],
+      relatedTools: [{ kind: "link", href: `${taxGuideRoutes.taxGuideForExpats}#tax-return-basics`, label: "Tax guide — yearly form basics" }],
+      relatedAnchors: [{ id: "arrival-departure-year", label: "Arriving or leaving (this page)" }],
       officialSourceKeys: ["bd_filing_return"],
     },
   ],

@@ -87,6 +87,11 @@ const salaryNet = resolveTaxGuideTool("salaryNet");
 const ruling = resolveTaxGuideTool("ruling");
 
 export const taxAdvisorsNlDeepLinks = [
+  {
+    href: R.expatTaxesGuide,
+    label: "Expat Taxes in the Netherlands",
+    description: "Scenario triage and tools-first routing — many situations never need paid help.",
+  },
   { href: `${R.canonical}#diy-vs-advisor`, label: "DIY vs advisor", description: "Two normal paths — tools first vs when scoped firm help can help." },
   { href: `${R.canonical}#start-here-need`, label: "Do you need an advisor?", description: "Three calm buckets — DIY, worth checking, or consider advice." },
   {

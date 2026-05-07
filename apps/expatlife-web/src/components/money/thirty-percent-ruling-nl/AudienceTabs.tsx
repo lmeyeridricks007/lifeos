@@ -108,9 +108,12 @@ export function AudienceTabs({
         ]}
       />
       {footNote ? (
-        <p className="rounded-xl border border-border/80 bg-surface-muted/50 px-4 py-3 text-sm leading-relaxed text-foreground-muted ring-1 ring-border/40">
-          <BoldParagraph text={footNote} className="[&_strong]:font-semibold [&_strong]:text-foreground" />
-        </p>
+        <div className="rounded-xl border border-border/80 bg-surface-muted/50 px-4 py-3 ring-1 ring-border/40">
+          <BoldParagraph
+            text={footNote}
+            className="text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+          />
+        </div>
       ) : null}
     </div>
   );

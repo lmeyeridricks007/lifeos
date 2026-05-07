@@ -222,6 +222,18 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
             false
           ),
           link(
+            "Banking safety & fraud",
+            "/netherlands/money/banking/security/",
+            "Phishing, payment-request scams, marketplace fraud, card safety, transfers, and first steps if something looks wrong",
+            false
+          ),
+          link(
+            "Bank account rejected or delayed",
+            "/netherlands/money/banking/account-rejection/",
+            "When Dutch bank onboarding is rejected, stuck, or slow — what to check and what to do next",
+            false
+          ),
+          link(
             "Banking fees & costs",
             "/netherlands/money/banking/fees/",
             "Simple guide to common bank charges — check each bank’s own prices before you sign up",

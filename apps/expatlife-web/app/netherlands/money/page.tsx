@@ -14,6 +14,7 @@ import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { WebPageJsonLd } from "@/lib/seo/jsonld";
 import { siteGuideColumnPadYClass } from "@/lib/ui/site-shell-identity";
+import { MoneyTaxLearningPath } from "@/src/components/money/tax-cluster/MoneyTaxLearningPath";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -34,6 +35,16 @@ const HUB_LINKS = [
     href: BANKING_HUB_PATH,
     title: "Banking in the Netherlands",
     description: "Accounts, payments, fees, transfers, and tools — confirm products on each bank’s site.",
+  },
+  {
+    href: "/netherlands/money/banking/security/",
+    title: "Banking safety & fraud",
+    description: "Practical habits for phishing, payment requests, marketplace scams, and what to do if something looks wrong.",
+  },
+  {
+    href: "/netherlands/money/banking/account-rejection/",
+    title: "Bank account rejected or delayed",
+    description: "When Dutch bank onboarding is stuck or declined — what to check and what to do next.",
   },
   {
     href: "/netherlands/money/tools/",
@@ -118,6 +129,7 @@ export default function NetherlandsMoneyHubPage() {
                     />
                   ))}
                 </div>
+                <MoneyTaxLearningPath id="tax-learning-path" variant="compact" className="mt-8 scroll-mt-28 md:scroll-mt-32" />
                 <p className="mt-6 text-sm text-copilot-text-secondary">
                   <Link href="/netherlands/" className="font-semibold text-brand-600 hover:underline">
                     ← Netherlands hub

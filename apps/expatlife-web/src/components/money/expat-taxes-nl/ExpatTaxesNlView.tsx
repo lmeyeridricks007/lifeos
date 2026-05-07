@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
-import { BoldParagraph } from "@/components/content/PillarContentBlocks";
+import { BoldInline, BoldParagraph } from "@/components/content/PillarContentBlocks";
 import { GuidePageTemplate } from "@/components/page/page-templates";
 import { MovePageTemplate } from "@/components/page/move-shell";
 import {
@@ -47,19 +48,22 @@ import { MoneyTaxLearningPath } from "@/src/components/money/tax-cluster/MoneyTa
 import { MoneyTaxSystemFoundationPromo } from "@/src/components/money/MoneyTaxSystemFoundationPromo";
 import { PairedMoneyTaxGuidesCrossLink } from "@/src/components/money/PairedMoneyTaxGuidesCrossLink";
 import { TaxClusterToolsSection } from "@/src/components/money/tax-cluster/TaxClusterToolsSection";
+import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 import {
   TaxExpatScenarioLanesFigure,
   TaxMoneyFlowPipelineFigure,
 } from "@/src/components/money/tax-cluster/TaxInstructionalFigures";
+import { taxInstructionalRasterAssets } from "@/src/components/money/tax-cluster/taxInstructionalRasterAssets";
 import {
   EXPAT_TAXES_NL_PATH,
   expatTaxesNlExploreCards,
   expatTaxesNlPageModel as meta,
-  expatTaxesNlRoutes,
+  expatTaxesNlRoutes as taxNlRoutes,
 } from "./expatTaxesNlPageModel";
-import { TaxGuideForExpatsHeroGraphic } from "@/src/components/money/tax-guide-for-expats/TaxGuideForExpatsHeroGraphic";
+import { ExpatTaxesNlHeroFigure } from "@/src/components/money/expat-taxes-nl/ExpatTaxesNlHeroFigure";
 import { ExpatTaxJourneyFlow } from "./ExpatTaxJourneyFlow";
 import { TaxGuideStartingPointSelector } from "@/src/components/money/tax-guide-for-expats/TaxGuideStartingPointSelector";
+import { moneyExpatTaxesCautionChip } from "@/src/content/money/expat-taxes-nl/moneyExpatTaxesCautionUi";
 
 const CANONICAL = meta.path;
 const DATE_MODIFIED = meta.publishDate;
@@ -81,23 +85,18 @@ function SectionBodyParagraphs({ paragraphs }: { paragraphs: readonly string[] }
   );
 }
 
-const EARLY_SIGNAL_CAUTION: Record<
-  "low" | "medium" | "high",
-  { label: string; chipClass: string }
-> = {
-  low: {
-    label: "Usually routine",
-    chipClass: "border-emerald-200/80 bg-emerald-50/90 text-emerald-950",
-  },
-  medium: {
-    label: "Often worth mapping",
-    chipClass: "border-amber-200/80 bg-amber-50/90 text-amber-950",
-  },
-  high: {
-    label: "Plan paperwork early",
-    chipClass: "border-slate-200 bg-slate-50 text-slate-800",
-  },
-};
+function SectionCautionNote({ text }: { text?: string }) {
+  if (!text?.trim()) return null;
+  return (
+    <div className="mt-4 rounded-xl border border-amber-200/70 bg-amber-50/50 px-4 py-3 text-sm ring-1 ring-amber-100/90 sm:px-5">
+      <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-amber-950/85">Heads-up</p>
+      <BoldParagraph
+        text={text}
+        className="mt-1.5 leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+      />
+    </div>
+  );
+}
 
 export function ExpatTaxesNlView() {
   const baseUrl = getSiteOrigin();
@@ -105,7 +104,7 @@ export function ExpatTaxesNlView() {
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Money", item: new URL(expatTaxesNlRoutes.moneyTools, baseUrl).toString() },
+    { name: "Money", item: new URL(taxNlRoutes.moneyTools, baseUrl).toString() },
     { name: "Expat Taxes in the Netherlands", item: new URL(CANONICAL, baseUrl).toString() },
   ];
 
@@ -137,6 +136,19 @@ export function ExpatTaxesNlView() {
 
       <GuidePageTemplate
         mainStackClassName="mt-2 space-y-2 sm:mt-3 sm:space-y-3 md:space-y-4"
+        scenarioBeforeKeySections
+        scenario={
+          <SectionBlock
+            id={meta.startingPoint.id}
+            className={TIGHT}
+            eyebrow={meta.startingPoint.eyebrow}
+            title={meta.startingPoint.title}
+            subtitle={meta.startingPoint.subtitle}
+            subtitleMarkdown
+          >
+            <TaxGuideStartingPointSelector scenarios={meta.startingPoint.scenarios} />
+          </SectionBlock>
+        }
         wrapContent={(inner) => (
           <Container className={cn("w-full max-w-screen-2xl", siteGuideColumnPadYClass)}>
             <MovePageTemplate variant="hub" showSidebar sidebarAriaLabel={false} sidebar={sidebar}>
@@ -166,7 +178,7 @@ export function ExpatTaxesNlView() {
                   <span className="text-foreground-faint" aria-hidden>
                     /
                   </span>
-                  <Link href={expatTaxesNlRoutes.moneyTools} className="transition-colors hover:text-foreground">
+                  <Link href={taxNlRoutes.moneyTools} className="transition-colors hover:text-foreground">
                     Money
                   </Link>
                   <span className="text-foreground-faint" aria-hidden>
@@ -181,66 +193,77 @@ export function ExpatTaxesNlView() {
               title={meta.hero.pageTitle}
               subtitle={meta.hero.subtitle}
               heroMediaSlot={
-                <div
-                  className={cn(
-                    "grid gap-5 sm:gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,min(100%,380px))] md:items-center md:gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)]",
-                    sitePillarFramedHeroGutterXClass
-                  )}
-                >
-                  <div className="order-2 min-w-0 md:order-1">
-                    <div className="mb-3 flex flex-wrap gap-2 sm:mb-4">
-                      {meta.hero.contextChips.map((chip) => (
-                        <span key={chip} className={INFO_CHIP}>
-                          {chip}
-                        </span>
-                      ))}
-                    </div>
-                    <ul className="max-w-2xl space-y-2 text-sm leading-relaxed text-foreground-muted sm:space-y-2.5 sm:text-[0.9375rem]" role="list">
-                      {meta.hero.bullets.map((bullet) => (
-                        <li key={bullet} className="flex gap-2">
-                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" aria-hidden />
-                          <BoldParagraph text={bullet} className="min-w-0 [&_strong]:font-semibold [&_strong]:text-foreground" />
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="mt-5 flex flex-wrap gap-3 sm:mt-6">
-                      <Link href={meta.hero.primaryCta.href} className={primaryCtaClass}>
-                        {meta.hero.primaryCta.label}
-                        <ArrowRight className="h-4 w-4" aria-hidden />
-                      </Link>
-                      <Link
-                        href={meta.hero.secondaryCta.href}
-                        className="inline-flex min-h-[44px] items-center justify-center rounded-xl border border-border bg-surface-raised px-5 py-2.5 text-sm font-semibold text-foreground shadow-card hover:border-border-strong hover:bg-surface-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas"
-                      >
-                        {meta.hero.secondaryCta.label}
-                      </Link>
-                    </div>
-                    <nav
-                      aria-label="Key tax tools"
-                      className="mt-4 flex max-w-2xl flex-col gap-2 border-t border-border/60 pt-4 sm:flex-row sm:flex-wrap sm:gap-x-4 sm:gap-y-1.5"
-                    >
-                      {meta.hero.quickToolLinks.map((l, idx) => (
-                        <Link
-                          key={`${l.href}-${l.label}-${idx}`}
-                          href={l.href}
-                          className="text-sm font-semibold text-link underline-offset-2 hover:underline"
-                        >
-                          {l.label}
+                <div className={cn("space-y-6 sm:space-y-8", sitePillarFramedHeroGutterXClass)}>
+                  <div
+                    className={cn(
+                      "grid gap-6 sm:gap-8 md:grid-cols-[minmax(0,1fr)_minmax(0,min(100%,420px))] md:items-start md:gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)]"
+                    )}
+                  >
+                    <div className="order-2 min-w-0 md:order-1">
+                      <div className="mb-3 flex flex-wrap gap-2 sm:mb-4">
+                        {meta.hero.contextChips.map((chip) => (
+                          <span key={chip} className={INFO_CHIP}>
+                            {chip}
+                          </span>
+                        ))}
+                      </div>
+                      <ul className="max-w-2xl space-y-2 text-sm leading-relaxed text-foreground-muted sm:space-y-2.5 sm:text-[0.9375rem]" role="list">
+                        {meta.hero.bullets.map((bullet) => (
+                          <li key={bullet} className="flex gap-2">
+                            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" aria-hidden />
+                            <BoldParagraph text={bullet} className="min-w-0 [&_strong]:font-semibold [&_strong]:text-foreground" />
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="mt-5 flex flex-wrap gap-3 sm:mt-6">
+                        <Link href={meta.hero.primaryCta.href} className={primaryCtaClass}>
+                          {meta.hero.primaryCta.label}
+                          <ArrowRight className="h-4 w-4" aria-hidden />
                         </Link>
-                      ))}
-                    </nav>
-                    <p className="mt-4 text-sm text-foreground-muted">
-                      Start from the system map if that fits your brain better — the callout below links to the{" "}
-                      <Link href={expatTaxesNlRoutes.taxGuideBroad} className="font-semibold text-link hover:underline">
-                        Netherlands Tax Guide for Expats
-                      </Link>
-                      , then come back here for scenario lanes.
-                    </p>
+                        <Link
+                          href={meta.hero.secondaryCta.href}
+                          className="inline-flex min-h-[44px] items-center justify-center rounded-xl border border-border bg-surface-raised px-5 py-2.5 text-sm font-semibold text-foreground shadow-card hover:border-border-strong hover:bg-surface-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas"
+                        >
+                          {meta.hero.secondaryCta.label}
+                        </Link>
+                      </div>
+                      <nav
+                        aria-label="Key tax tools"
+                        className="mt-4 flex max-w-2xl flex-col gap-2 border-t border-border/60 pt-4 sm:flex-row sm:flex-wrap sm:gap-x-4 sm:gap-y-1.5"
+                      >
+                        {meta.hero.quickToolLinks.map((l, idx) => (
+                          <Link
+                            key={`${l.href}-${l.label}-${idx}`}
+                            href={l.href}
+                            className="text-sm font-semibold text-link underline-offset-2 hover:underline"
+                          >
+                            {l.label}
+                          </Link>
+                        ))}
+                      </nav>
+                      <p className="mt-4 text-sm text-foreground-muted">
+                        Want the big picture first? Open the{" "}
+                        <Link href={taxNlRoutes.taxGuideBroad} className="font-semibold text-link hover:underline">
+                          Netherlands Tax Guide for Expats
+                        </Link>
+                        . Then use the situation picker below to match your story.
+                      </p>
+                    </div>
+                    <figure className="order-1 w-full min-w-0 md:order-2 md:justify-self-stretch">
+                      <div className="relative aspect-[3/2] w-full max-w-full overflow-hidden rounded-2xl bg-surface-muted ring-1 ring-border/40 shadow-card">
+                        <Image
+                          src={meta.heroImage.src}
+                          alt={meta.heroImage.alt}
+                          width={meta.heroImage.width}
+                          height={meta.heroImage.height}
+                          className="h-full w-full object-cover object-center"
+                          priority
+                          sizes="(max-width: 768px) 100vw, (max-width: 1280px) 45vw, 440px"
+                        />
+                      </div>
+                    </figure>
                   </div>
-                  <TaxGuideForExpatsHeroGraphic
-                    image={meta.heroImage}
-                    className="order-1 w-full min-w-0 shrink-0 md:order-2 md:justify-self-end"
-                  />
+                  <ExpatTaxesNlHeroFigure className="w-full" />
                 </div>
               }
               shareUrl={shareUrl}
@@ -266,7 +289,7 @@ export function ExpatTaxesNlView() {
                   "mt-2 text-copilot-text-secondary [&_strong]:font-semibold [&_strong]:text-copilot-text-primary"
                 )}
               />
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <div className="mt-5 grid grid-cols-1 gap-3 sm:mt-6 sm:grid-cols-2 sm:gap-4">
                 {meta.atAGlance.cells.map((cell) => (
                   <div
                     key={cell.title}
@@ -398,29 +421,22 @@ export function ExpatTaxesNlView() {
                   </article>
                 ))}
               </div>
-            </SectionBlock>
 
-            <SectionBlock
-              id={meta.journeyFlow.id}
-              className={TIGHT}
-              eyebrow={meta.journeyFlow.eyebrow}
-              title={meta.journeyFlow.title}
-              subtitle={meta.journeyFlow.subtitle}
-              subtitleMarkdown
-            >
-              <TaxExpatScenarioLanesFigure />
-              <ExpatTaxJourneyFlow />
-            </SectionBlock>
-
-            <SectionBlock
-              id={meta.startingPoint.id}
-              className={TIGHT}
-              eyebrow={meta.startingPoint.eyebrow}
-              title={meta.startingPoint.title}
-              subtitle={meta.startingPoint.subtitle}
-              subtitleMarkdown
-            >
-              <TaxGuideStartingPointSelector scenarios={meta.startingPoint.scenarios} />
+              <div
+                id={meta.journeyFlow.id}
+                className={cn(SECTION_SCROLL_MARGIN, "mt-8 border-t border-border/70 pt-8 sm:mt-10 sm:pt-10")}
+              >
+                <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-foreground-muted">{meta.journeyFlow.eyebrow}</p>
+                <h3 className="mt-2 text-base font-semibold tracking-tight text-foreground sm:text-lg">{meta.journeyFlow.title}</h3>
+                <p className={cn(movingNlSectionSubtitleClass, "mt-2 max-w-3xl")}>
+                  <BoldInline text={meta.journeyFlow.subtitle} />
+                </p>
+                <ExpatTaxJourneyFlow className="mt-5 sm:mt-6" />
+                <p className="mt-8 text-[11px] font-bold uppercase tracking-[0.12em] text-foreground-muted sm:mt-10">Picture overview</p>
+                <div className="mt-3">
+                  <TaxExpatScenarioLanesFigure />
+                </div>
+              </div>
             </SectionBlock>
 
             <SectionBlock
@@ -437,7 +453,7 @@ export function ExpatTaxesNlView() {
               />
               <div className="mt-5 grid gap-3 sm:grid-cols-2 sm:gap-4">
                 {meta.earlyTaxSignals.cards.map((card) => {
-                  const caution = EARLY_SIGNAL_CAUTION[card.cautionLevel];
+                  const caution = moneyExpatTaxesCautionChip[card.cautionLevel];
                   return (
                     <article
                       key={card.id}
@@ -458,21 +474,28 @@ export function ExpatTaxesNlView() {
                           {caution.label}
                         </span>
                       </div>
-                      <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted">Why it matters</p>
+                      <p className="mt-3 text-[10px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted">In short</p>
                       <BoldParagraph
                         text={card.whyItMatters}
                         className="mt-1 text-[13px] leading-snug text-foreground-muted sm:text-sm sm:leading-relaxed [&_strong]:font-semibold [&_strong]:text-foreground"
                       />
-                      <p className="mt-4 text-[10px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted">Recommended next step</p>
+                      <p className="mt-4 text-[10px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted">Try this next</p>
                       <BoldParagraph
                         text={card.recommendedNextStep}
                         className="mt-1 text-[13px] leading-snug text-foreground-muted sm:text-sm sm:leading-relaxed [&_strong]:font-semibold [&_strong]:text-foreground"
                       />
-                      <p className="mt-4 border-t border-border/70 pt-3">
-                        <Link href={card.related.href} className="text-sm font-semibold text-link hover:underline">
-                          {card.related.label} →
-                        </Link>
-                      </p>
+                      <div className="mt-4 border-t border-border/70 pt-3">
+                        <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted">Helpful links</p>
+                        <ul className="mt-2 flex flex-col gap-2" role="list">
+                          {card.relatedLinks.map((link) => (
+                            <li key={`${link.href}-${link.label}`}>
+                              <Link href={link.href} className="text-sm font-semibold text-link hover:underline">
+                                {link.label} →
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </article>
                   );
                 })}
@@ -488,6 +511,12 @@ export function ExpatTaxesNlView() {
               subtitleMarkdown
             >
               <SectionBodyParagraphs paragraphs={meta.employment.bodyParagraphs} />
+              <InstructionalRasterFigure
+                className="mt-5"
+                label="Picture"
+                raster={taxInstructionalRasterAssets.expatPayslipTopics}
+                caption="Your payslip is the month-by-month view — use it to learn the words on the page before you trust random forum posts."
+              />
               <ul className="mt-3 space-y-2 border-l-2 border-brand/25 pl-3 text-sm text-foreground-muted" role="list">
                 {meta.employment.scannablePoints.map((p) => (
                   <li key={p} className="flex gap-2">
@@ -496,6 +525,7 @@ export function ExpatTaxesNlView() {
                   </li>
                 ))}
               </ul>
+              <SectionCautionNote text={meta.employment.cautionNote} />
               {sectionLinks(meta.employment.links)}
             </SectionBlock>
 
@@ -508,6 +538,12 @@ export function ExpatTaxesNlView() {
               subtitleMarkdown
             >
               <SectionBodyParagraphs paragraphs={meta.thirtyPercent.bodyParagraphs} />
+              <InstructionalRasterFigure
+                className="mt-5"
+                label="Picture"
+                raster={taxInstructionalRasterAssets.expatThirtyPercentTopics}
+                caption="Your employer runs this on payroll — calculators only help you try “what if” numbers, not prove you qualify."
+              />
               <ul className="mt-3 space-y-2 border-l-2 border-brand/25 pl-3 text-sm text-foreground-muted" role="list">
                 {meta.thirtyPercent.scannablePoints.map((p) => (
                   <li key={p} className="flex gap-2">
@@ -516,6 +552,19 @@ export function ExpatTaxesNlView() {
                   </li>
                 ))}
               </ul>
+              <SectionCautionNote text={meta.thirtyPercent.cautionNote} />
+              <p className="mt-4 flex flex-col gap-2 text-sm sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-5">
+                <Link
+                  href={taxNlRoutes.ruling}
+                  className="inline-flex items-center gap-1.5 font-semibold text-link underline-offset-2 hover:underline"
+                >
+                  Run the 30% ruling calculator
+                  <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+                </Link>
+                <Link href={taxNlRoutes.thirtyPercentRulingGuide} className="font-semibold text-link underline-offset-2 hover:underline">
+                  Read the full 30% ruling guide
+                </Link>
+              </p>
               {sectionLinks(meta.thirtyPercent.links)}
             </SectionBlock>
 
@@ -528,17 +577,20 @@ export function ExpatTaxesNlView() {
               subtitleMarkdown
             >
               {meta.foreignBox3.memoryHook ? (
-                <div className="rounded-xl border border-brand/15 bg-brand-muted/25 px-4 py-3 ring-1 ring-brand/10 sm:px-5 sm:py-4">
-                  <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-brand-strong">Plain-language hook</p>
-                  <BoldParagraph
-                    text={meta.foreignBox3.memoryHook}
-                    className="mt-2 text-sm leading-relaxed text-foreground [&_strong]:font-semibold"
-                  />
-                </div>
+                <BoldParagraph
+                  text={meta.foreignBox3.memoryHook}
+                  className={cn(SECTION_BODY_MUTED, "rounded-lg bg-surface-muted/50 px-3 py-2.5 ring-1 ring-border/50")}
+                />
               ) : null}
-              <div className="mt-4">
+              <div className={meta.foreignBox3.memoryHook ? "mt-4" : undefined}>
                 <SectionBodyParagraphs paragraphs={meta.foreignBox3.bodyParagraphs} />
               </div>
+              <InstructionalRasterFigure
+                className="mt-5"
+                label="Picture"
+                raster={taxInstructionalRasterAssets.expatBox3VsPayroll}
+                caption="Savings and investments on the yearly form follow a different rhythm than tax taken from your pay — both can matter in the same year."
+              />
               <ul className="mt-3 space-y-2 border-l-2 border-brand/25 pl-3 text-sm text-foreground-muted" role="list">
                 {meta.foreignBox3.scannablePoints.map((p) => (
                   <li key={p} className="flex gap-2">
@@ -547,6 +599,7 @@ export function ExpatTaxesNlView() {
                   </li>
                 ))}
               </ul>
+              <SectionCautionNote text={meta.foreignBox3.cautionNote} />
               {sectionLinks(meta.foreignBox3.links)}
             </SectionBlock>
 
@@ -567,6 +620,7 @@ export function ExpatTaxesNlView() {
                   </li>
                 ))}
               </ul>
+              <SectionCautionNote text={meta.partialYear.cautionNote} />
               {sectionLinks(meta.partialYear.links)}
             </SectionBlock>
 
@@ -587,6 +641,7 @@ export function ExpatTaxesNlView() {
                   </li>
                 ))}
               </ul>
+              <SectionCautionNote text={meta.familyAllowances.cautionNote} />
               {sectionLinks(meta.familyAllowances.links)}
             </SectionBlock>
 
@@ -599,6 +654,12 @@ export function ExpatTaxesNlView() {
               subtitleMarkdown
             >
               <SectionBodyParagraphs paragraphs={meta.doubleTax.bodyParagraphs} />
+              <InstructionalRasterFigure
+                className="mt-5"
+                label="Picture"
+                raster={taxInstructionalRasterAssets.expatCrossBorderChecklist}
+                caption="Two-country tools are question lists and plain words — check official guidance or a tax adviser when a lot of money is on the line."
+              />
               <ul className="mt-3 space-y-2 border-l-2 border-brand/25 pl-3 text-sm text-foreground-muted" role="list">
                 {meta.doubleTax.scannablePoints.map((p) => (
                   <li key={p} className="flex gap-2">
@@ -607,7 +668,28 @@ export function ExpatTaxesNlView() {
                   </li>
                 ))}
               </ul>
+              <SectionCautionNote text={meta.doubleTax.cautionNote} />
               {sectionLinks(meta.doubleTax.links)}
+            </SectionBlock>
+
+            <SectionBlock
+              id={meta.servicesRegion.id}
+              className={cn(TIGHT, "!pt-4 sm:!pt-5")}
+              eyebrow={meta.servicesRegion.eyebrow}
+              title={meta.servicesRegion.title}
+              subtitle={meta.servicesRegion.subtitle}
+              subtitleMarkdown
+            >
+              <BoldParagraph text={meta.servicesRegion.intro} className={SECTION_BODY_MUTED} />
+              <hr className="not-prose mt-5 max-w-3xl border-0 border-t-2 border-dashed border-border/70 sm:mt-6" />
+              <p className="mt-3 text-xs font-semibold uppercase tracking-[0.08em] text-foreground-muted sm:mt-4">Editorial · partner strip</p>
+              <div className="mt-4 sm:mt-5">
+                <MoveGuideAffiliateSupportBlock
+                  placementId={meta.affiliatePlacementId}
+                  categoryLinks={[...meta.affiliateCategoryLinks]}
+                  hidePlacementTitle
+                />
+              </div>
             </SectionBlock>
 
             <section id={meta.misunderstandings.id} className={cn(SECTION_SCROLL_MARGIN, "space-y-3 sm:space-y-3")}>
@@ -682,7 +764,7 @@ export function ExpatTaxesNlView() {
                   <div key={section.eyebrow} className="mt-6 first:mt-0">
                     <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-foreground-muted">{section.eyebrow}</p>
                     {section.description ? <p className="mt-1 max-w-3xl text-sm text-foreground-muted">{section.description}</p> : null}
-                    <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <div className="mt-4 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4 lg:grid-cols-3">
                       {section.items.map((tool) => (
                         <ToolCard
                           key={tool.href}
@@ -707,7 +789,7 @@ export function ExpatTaxesNlView() {
                 subtitle={meta.continueCards.subtitle}
                 subtitleMarkdown
               >
-                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4 lg:grid-cols-3">
                   {meta.continueCards.cards.map((card) => (
                     <Link
                       key={card.id}
@@ -724,33 +806,37 @@ export function ExpatTaxesNlView() {
                 </div>
               </SectionBlock>
 
-              <SectionBlock
-                id={meta.servicesRegion.id}
-                className={cn(SECTION_SCROLL_MARGIN, "!pt-4 sm:!pt-5")}
-                compact
-                eyebrow={meta.servicesRegion.eyebrow}
-                title={meta.servicesRegion.title}
-                subtitle={meta.servicesRegion.subtitle}
-                subtitleMarkdown
-              >
-                <BoldParagraph text={meta.servicesRegion.intro} className={SECTION_BODY_MUTED} />
-                <div className="mt-5">
-                  <MoveGuideAffiliateSupportBlock
-                    placementId={meta.affiliatePlacementId}
-                    categoryLinks={[]}
-                    hidePlacementTitle
-                  />
-                </div>
-              </SectionBlock>
             </div>
           </PillarGuideToolsSection>
         }
         faq={
           <PillarGuideFaqRegion>
             <div className={cn(movingNlFaqCardInnerClass, SECTION_SCROLL_MARGIN)}>
-              <FAQBlock id="faq" eyebrow="Support" title="Frequently asked questions" items={[...meta.faq]} maxItems={14} />
+              <FAQBlock id="faq" eyebrow="Common questions" title="Short answers" items={[...meta.faq]} maxItems={12} />
             </div>
-            <VisasResidencyOfficialSources references={meta.references} density="compact" className="!mt-4 sm:!mt-5" />
+            <details
+              id="official-sources"
+              className={cn(
+                SECTION_SCROLL_MARGIN,
+                "group mt-4 overflow-hidden rounded-2xl border border-border/70 bg-surface-raised/90 ring-1 ring-border/12 sm:mt-5"
+              )}
+            >
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3.5 text-left sm:px-5 sm:py-4 [&::-webkit-details-marker]:hidden">
+                <span className="text-sm font-semibold text-foreground">
+                  Official sources <span className="font-normal text-foreground-muted">(Dutch tax office & government)</span>
+                </span>
+                <ChevronDown className="size-4 shrink-0 text-foreground-muted transition-transform group-open:rotate-180" aria-hidden />
+              </summary>
+              <div className="border-t border-border/60 px-4 pb-4 pt-3 sm:px-5 sm:pb-5 sm:pt-4">
+                <VisasResidencyOfficialSources
+                  references={meta.references}
+                  density="compact"
+                  omitSectionId
+                  hideSurfaceHeading
+                  className="!mt-0 [&>div]:mt-4"
+                />
+              </div>
+            </details>
           </PillarGuideFaqRegion>
         }
       />

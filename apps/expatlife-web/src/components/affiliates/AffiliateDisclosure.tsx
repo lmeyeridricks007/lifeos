@@ -16,7 +16,12 @@ export function AffiliateDisclosure({
 }: Props) {
   const copilot = variant === "copilot";
   return (
-    <p className={cn("mt-4 text-xs", copilot ? "text-copilot-text-muted" : "text-slate-500")}>
+    <p
+      className={cn(
+        "mt-4 w-full min-w-0 max-w-none text-xs",
+        copilot ? "text-copilot-text-muted" : "text-slate-500"
+      )}
+    >
       {text}
       {disclosurePageHref ? (
         <>

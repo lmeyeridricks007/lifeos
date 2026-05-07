@@ -11,6 +11,7 @@ export function VisasResidencyOfficialSources({
   className,
   density = "default",
   omitSectionId = false,
+  hideSurfaceHeading = false,
 }: {
   references: MoveVisaResidencyReferences;
   className?: string;
@@ -18,15 +19,22 @@ export function VisasResidencyOfficialSources({
   density?: "default" | "compact";
   /** When the parent supplies the scroll anchor (e.g. wraps in `<details id={sectionId}>`). */
   omitSectionId?: boolean;
+  /** When true, keep a screen-reader heading but hide the visible title (parent provides summary UI). */
+  hideSurfaceHeading?: boolean;
 }) {
   const compact = density === "compact";
+  const headingClass = cn(
+    "font-bold tracking-tight text-foreground",
+    compact ? "text-lg sm:text-xl" : "text-xl",
+    hideSurfaceHeading && "sr-only"
+  );
   return (
     <section
       id={omitSectionId ? undefined : references.sectionId}
       aria-labelledby="vr-official-heading"
       className={cn(SECTION_SCROLL_MARGIN, compact ? "mt-6" : "mt-8", movingNlShellFaqClass, className)}
     >
-      <h2 id="vr-official-heading" className={cn("font-bold tracking-tight text-foreground", compact ? "text-lg sm:text-xl" : "text-xl")}>
+      <h2 id="vr-official-heading" className={headingClass}>
         {references.sectionTitle}
       </h2>
       <BoldParagraph

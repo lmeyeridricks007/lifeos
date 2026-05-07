@@ -3,6 +3,7 @@
  * Editorial tax-year label only — numeric thresholds live in tools / official registry.
  */
 
+import type { MoneyExpatTaxesCautionTier } from "./moneyExpatTaxesCautionUi";
 import type {
   MoneyTaxGuideContentBlock,
   MoneyTaxGuideMisunderstandingConfig,
@@ -11,6 +12,8 @@ import type {
   MoneyTaxGuideSectionConfig,
   MoneyTaxGuideToolKey,
 } from "../tax-guide-for-expats/taxGuideContent.types";
+
+export type { MoneyExpatTaxesCautionTier } from "./moneyExpatTaxesCautionUi";
 
 export const MONEY_EXPAT_TAXES_CONTENT_TAX_YEAR = "2026" as const;
 
@@ -24,34 +27,43 @@ export type MoneyExpatTaxesServiceKey =
   | "visaConsultants"
   | "immigrationLawyers";
 
-export type MoneyExpatTaxesCautionLevel = "low" | "medium" | "high";
+/** Guide-style registry keys (resolve via `resolveTaxGuideTool`). */
+export type MoneyExpatTaxesGuideKey =
+  | "howTaxesWorkInNl"
+  | "taxReturnNl"
+  | "thirtyPercentRulingGuide"
+  | "taxGuideForExpats"
+  | "taxResidencyNl"
+  | "taxAdvisorsExpats"
+  | "expatTaxesGuide";
 
 /** Start-here cards (“why expat taxes differ”). */
 export type MoneyExpatTaxesStartCardConfig = MoneyTaxGuideContentBlock;
 
-/** Main narrative sections (employment, ruling, Box 3, …). */
+/** Main narrative sections — extends shared tax-guide block with optional memory hook. */
 export type MoneyExpatTaxesSectionConfig = MoneyTaxGuideSectionConfig & {
-  /** Optional callout above body (e.g. Box 3 plain-language hook). */
-  memoryHook?: string;
+  readonly memoryHook?: string;
 };
 
 export type MoneyExpatTaxesScenarioAnchor = { readonly id: string; readonly label: string };
 
 /**
  * Scenario picker row: maps to TaxGuideStartingPointSelector after resolution.
- * `situation` → picker tab label; steps are built from tool keys, anchors, then services.
+ * `situation` → picker tab label; steps merge `relatedTools`, tool keys, guide keys, anchors, services.
  */
 export type MoneyExpatTaxesScenarioCardConfig = {
   readonly id: string;
   readonly situation: string;
   readonly title: string;
   readonly whyItMatters: string;
+  readonly whatToCheck: readonly string[];
   readonly recommendedAction: string;
-  readonly cautionLevel?: MoneyExpatTaxesCautionLevel;
+  readonly cautionLevel: MoneyExpatTaxesCautionTier;
   readonly relatedToolKeys: readonly MoneyTaxGuideToolKey[];
+  /** Guide routes (resolved via tool registry). Omit when empty. */
+  readonly relatedGuideKeys?: readonly MoneyExpatTaxesGuideKey[];
   readonly relatedAnchors?: readonly MoneyExpatTaxesScenarioAnchor[];
   readonly relatedServiceKeys?: readonly MoneyExpatTaxesServiceKey[];
-  readonly cautionNote?: string;
   readonly relatedTools?: readonly MoneyTaxGuideRelatedToolDef[];
   readonly officialSourceKeys?: readonly MoneyTaxGuideOfficialSourceKey[];
 };
@@ -59,15 +71,15 @@ export type MoneyExpatTaxesScenarioCardConfig = {
 export type MoneyExpatTaxesRiskSignalCardConfig = {
   readonly id: string;
   readonly title: string;
-  /** Optional one-line context (not rendered separately today — folded into copy if needed). */
   readonly situation?: string;
   readonly whyItMatters: string;
   readonly recommendedAction: string;
-  readonly cautionLevel: MoneyExpatTaxesCautionLevel;
-  readonly relatedToolKeys: readonly MoneyTaxGuideToolKey[];
+  readonly cautionLevel: MoneyExpatTaxesCautionTier;
+  /** Calculators / tools from the tax registry — omit when the card is anchor- or guide-only. */
+  readonly relatedToolKeys?: readonly MoneyTaxGuideToolKey[];
+  readonly relatedGuideKeys?: readonly MoneyExpatTaxesGuideKey[];
   readonly relatedAnchors?: readonly MoneyExpatTaxesScenarioAnchor[];
   readonly relatedServiceKeys?: readonly MoneyExpatTaxesServiceKey[];
-  readonly cautionNote?: string;
   readonly relatedTools?: readonly MoneyTaxGuideRelatedToolDef[];
   readonly officialSourceKeys?: readonly MoneyTaxGuideOfficialSourceKey[];
 };

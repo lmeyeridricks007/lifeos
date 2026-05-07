@@ -120,6 +120,16 @@ const GUIDES_NEXT_RAW = [
     description: "What Dutch banks often charge — helpful next to transfer tools.",
   },
   {
+    href: `${BASE}/money/banking/security/`,
+    title: "Banking safety & fraud",
+    description: "Verify recipients and spot urgency scams before you approve an international send.",
+  },
+  {
+    href: `${BASE}/money/banking/account-rejection/`,
+    title: "Bank account rejected or delayed",
+    description: "If you still need a stable Dutch account for everyday rails next to transfers.",
+  },
+  {
     href: `${BASE}/money/banking/traditional-vs-digital/`,
     title: "Traditional vs digital banks",
     description: "When a branch bank, app-only bank, or both may fit your daily money.",

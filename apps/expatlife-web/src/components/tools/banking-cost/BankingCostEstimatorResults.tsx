@@ -138,7 +138,7 @@ export function BankingCostEstimatorResults({
         <p className="text-sm text-copilot-text-secondary">
           Editorial starting points — not “cheapest” rankings. Confirm pricing and product fit on each official site.
         </p>
-        <AffiliateDisclosureNote className="max-w-3xl text-copilot-text-secondary">
+        <AffiliateDisclosureNote className="text-copilot-text-secondary">
           Destination guides may include partner links. {AFFILIATE_LINKS_SCORING_DISCLAIMER}
         </AffiliateDisclosureNote>
         <div className="grid min-w-0 gap-3 sm:grid-cols-2">

@@ -50,6 +50,7 @@ import {
   PaymentRailsOverviewInfographic,
   ShopContactlessTapInfographic,
 } from "@/components/banking/HowPaymentsWorkIllustrations";
+import { BankingSafetyContextCallout } from "@/components/banking/BankingSafetyContextCallout";
 import { PaymentFlowVisual } from "@/components/banking/PaymentFlowVisual";
 import { accountSetupScenarioToPaymentScenario, PaymentScenarioCards } from "@/components/banking/PaymentScenarioCards";
 import { MoveGuideSignatureDark } from "@/src/components/guides/MoveGuideSignatureDark";
@@ -126,10 +127,20 @@ export function HowPaymentsWorkView() {
         },
         { href: meta.hero.secondaryCta.href, label: "Compare banks →", description: "Shortlist — confirm iDEAL, cards, and fees on each bank site." },
         { href: "/netherlands/open-bank-account-netherlands/", label: "Open bank account →", description: "Move guide — documents and BSN timing." },
+        {
+          href: "/netherlands/money/banking/account-rejection/",
+          label: "Account rejected or delayed →",
+          description: "When onboarding stalls — checks and next steps.",
+        },
         { href: "/netherlands/money/banking/fees/", label: "Banking fees →", description: "Fee checklist before you rely on transfers." },
         { href: "/netherlands/money/banking/#banking-glossary-hub", label: "Banking glossary →", description: "Short definitions on the Banking hub." },
         { href: "/netherlands/living/payments/", label: "Living: payments hub →", description: "Corridors and wider money orientation." },
         { href: "/netherlands/living/apps/", label: "Essential apps →", description: "Bank apps and everyday payment tools." },
+        {
+          href: "/netherlands/money/banking/security/",
+          label: "Banking safety & fraud →",
+          description: "Phishing, payment-request scams, and calm habits alongside how Dutch payments work.",
+        },
       ]}
     />
   );
@@ -538,6 +549,7 @@ export function HowPaymentsWorkView() {
                   </li>
                 ))}
               </ul>
+              <BankingSafetyContextCallout variant="paymentRequests" className="mt-6" />
             </SectionBlock>
 
             <SectionBlock

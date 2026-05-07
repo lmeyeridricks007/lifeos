@@ -294,6 +294,13 @@ export const bankingRelatedGuides: readonly BankingRelatedGuide[] = [
     ctaLabel: "Read Move guide",
   },
   {
+    id: "account-rejection",
+    title: "Bank account rejected or delayed",
+    description: "When onboarding stalls — common causes, document checks, and calm next steps.",
+    href: "/netherlands/money/banking/account-rejection/",
+    ctaLabel: "Open guide",
+  },
+  {
     id: "banks-directory",
     title: "Banks directory",
     description: "More providers and fee context — not live quotes.",

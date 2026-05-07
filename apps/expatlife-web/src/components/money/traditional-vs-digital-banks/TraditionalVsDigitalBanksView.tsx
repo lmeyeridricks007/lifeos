@@ -112,6 +112,11 @@ export function TraditionalVsDigitalBanksView() {
         { href: `#${meta.hybridSetup.id}`, label: "Hybrid setup →", description: "Traditional + digital in practice." },
         { href: `#${meta.decisionHelper.id}`, label: "Which setup fits you? →", description: "Quick decision cards." },
         { href: "/netherlands/open-bank-account-netherlands/", label: "Open bank account guide →", description: "Documents and BSN timing." },
+        {
+          href: "/netherlands/money/banking/account-rejection/",
+          label: "Account rejected or delayed →",
+          description: "When one path does not work — checks before you switch style.",
+        },
         { href: "/netherlands/money/banking/fees/", label: "Banking fees & costs →", description: "Fee types, transfers, ATM, and traps." },
         { href: "/netherlands/money/banking/how-payments-work/", label: "How payments work →", description: "IBAN, iDEAL, SEPA, and direct debits (Money · Banking)." },
       ]}
@@ -476,7 +481,7 @@ export function TraditionalVsDigitalBanksView() {
                 Below <strong className="font-semibold text-foreground">tablet width</strong> this becomes stacked cards — no sideways scrolling.
               </p>
               <BankTypeComparison className="mt-3 lg:mt-4" />
-              <AffiliateDisclosureNote className="mt-4 max-w-3xl text-xs">
+              <AffiliateDisclosureNote className="mt-4 text-xs">
                 {DEFAULT_MONETIZATION_DISCLOSURE} This table is editorial orientation only — not live pricing.
               </AffiliateDisclosureNote>
             </SectionBlock>

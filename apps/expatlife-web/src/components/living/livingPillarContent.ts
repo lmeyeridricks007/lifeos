@@ -2,6 +2,7 @@
  * Single source of truth for Living pillar URLs, Survival Guide sections, and reusable card data.
  * Import from subpages later to keep IA aligned.
  */
+import { bankingSecurityCrossLink } from "@/src/data/banking/bankingSafety";
 import type { LucideIcon } from "lucide-react";
 import {
   AlertTriangle,
@@ -9,6 +10,7 @@ import {
   HeartPulse,
   Languages,
   Recycle,
+  Shield,
   ShoppingBag,
   Smartphone,
   TrainFront,
@@ -181,6 +183,13 @@ export const LIVING_SURVIVAL_TOPIC_CARDS: LivingTopicCard[] = [
     cta: "Understand PIN & iDEAL",
   },
   {
+    href: bankingSecurityCrossLink.href,
+    title: bankingSecurityCrossLink.title,
+    description: bankingSecurityCrossLink.description,
+    icon: Shield,
+    cta: bankingSecurityCrossLink.ctaLabel,
+  },
+  {
     href: LIVING_EMERGENCIES_SAFETY_PATH,
     title: "Emergencies & safety",
     description: "112, urgent vs non-urgent, lost items, and the calm first steps worth knowing once.",
@@ -351,6 +360,12 @@ export const LIVING_CLUSTER_SIBLING_LINKS_DAILY_LIFE: LivingClusterLinkItem[] = 
     cta: "Read safety basics",
   },
   {
+    href: bankingSecurityCrossLink.href,
+    title: bankingSecurityCrossLink.title,
+    description: bankingSecurityCrossLink.description,
+    cta: bankingSecurityCrossLink.ctaLabel,
+  },
+  {
     href: LIVING_GETTING_AROUND_PATH,
     title: "Getting around",
     description: "Trains, buses, bikes, and paying for travel when you need more than a quick errand on foot.",
@@ -425,6 +440,12 @@ export const LIVING_CLUSTER_SIBLING_LINKS_ESSENTIAL_APPS: LivingClusterLinkItem[
     title: "Payments basics",
     description: "How PIN, contactless, and iDEAL-shaped flows fit next to Tikkie and your bank app.",
     cta: "See payment norms",
+  },
+  {
+    href: bankingSecurityCrossLink.href,
+    title: bankingSecurityCrossLink.title,
+    description: bankingSecurityCrossLink.description,
+    cta: bankingSecurityCrossLink.ctaLabel,
   },
   {
     href: LIVING_DAILY_LIFE_PATH,

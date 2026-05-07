@@ -4,6 +4,7 @@ import {
   LIVING_HEALTHCARE_BASICS_PATH,
   LIVING_SURVIVAL_GUIDE_PATH,
 } from "@/src/components/living/livingPillarContent";
+import { bankingSecurityEmergenciesRelatedCard } from "@/src/data/banking/bankingSafety";
 import type {
   LivingSafetyContactRole,
   LivingSafetyFaqItem,
@@ -595,6 +596,13 @@ export const livingSafetyRelatedTools: LivingSafetyRelatedTools = {
       href: LIVING_DAILY_LIFE_PATH,
       ctaLabel: "Read Daily Life Basics",
       iconKey: "home",
+    },
+    {
+      title: bankingSecurityEmergenciesRelatedCard.title,
+      description: bankingSecurityEmergenciesRelatedCard.description,
+      href: bankingSecurityEmergenciesRelatedCard.href,
+      ctaLabel: bankingSecurityEmergenciesRelatedCard.ctaLabel,
+      iconKey: bankingSecurityEmergenciesRelatedCard.iconKey,
     },
     {
       title: "Healthcare Allowance Estimator",

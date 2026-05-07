@@ -342,6 +342,18 @@ export const bankingFeesPageModel = {
         ctaLabel: "Open payments guide",
       },
       {
+        title: "Banking safety & fraud",
+        description: "Spot phishing and payment-request scams before fee shopping turns into rushed transfers.",
+        href: "/netherlands/money/banking/security/",
+        ctaLabel: "Read safety guide",
+      },
+      {
+        title: "Bank account rejected or delayed",
+        description: "When onboarding fails — paperwork, BSN gaps, and comparing another bank without panic.",
+        href: "/netherlands/money/banking/account-rejection/",
+        ctaLabel: "Open guide",
+      },
+      {
         title: "Living: payments & rails (orientation)",
         description: "Placeholder hub for wider Living context on everyday money and international sends.",
         href: "/netherlands/living/payments/",

@@ -1,102 +1,159 @@
-import { expatTaxesNlRoutes as R } from "@/src/components/money/expat-taxes-nl/expatTaxesNlRoutes";
+import { taxGuideRoutes } from "@/src/components/money/tax-guide-for-expats/taxGuideRoutes";
 import type { MoneyExpatTaxesScenarioCardConfig } from "./moneyExpatTaxesContent.types";
 
+/** Eight common stories — plain language; year rules live in tools and the Dutch tax office site. */
 export const moneyExpatTaxesScenarioCards: readonly MoneyExpatTaxesScenarioCardConfig[] = [
   {
-    id: "first-dutch-job",
-    situation: "First Dutch payslip",
-    title: "I am new to Dutch payroll and payslips",
+    id: "dutch-employment",
+    situation: "Dutch job",
+    title: "I have a Dutch job contract",
     whyItMatters:
-      "Your first months are where gross vs net, holiday allowance timing, and withholding labels become real — before you have intuition for what “normal” looks like in NL.",
+      "Most expats first see Dutch tax on the payslip: gross vs net, holiday pay, pension lines, and wage tax taken out. That monthly picture helps — and it is **not always** the same as the final picture after your yearly form.",
+    whatToCheck: [
+      "What kind of contract you have and when it starts.",
+      "Which country payroll treats as “home” on the paperwork.",
+      "Whether the payslip lines match what HR told you in words.",
+    ],
     recommendedAction:
-      "Estimate take-home, decode a real payslip when you have one, and skim employment type if your contract language is not a plain indefinite employee story.",
-    cautionLevel: "medium",
-    relatedToolKeys: ["salaryNet", "payslip", "employmentType"],
-    relatedAnchors: [],
-    relatedServiceKeys: [],
-    relatedTools: [],
+      "Estimate take-home pay for planning, then use a payslip explainer once you have a real slip. When you are ready, read how monthly pay connects to the yearly form.",
+    cautionLevel: "simple",
+    relatedToolKeys: ["salaryNet", "payslip"],
+    relatedGuideKeys: ["howTaxesWorkInNl", "taxReturnNl"],
+    relatedAnchors: [{ id: "employment-payslips", label: "Your job & payslip (this page)" }],
     officialSourceKeys: ["bd_payroll_taxes"],
   },
   {
-    id: "ruling-thread",
+    id: "thirty-percent",
     situation: "30% ruling",
-    title: "I am negotiating or living with the 30% ruling",
+    title: "I may get the 30% ruling",
     whyItMatters:
-      "The ruling can change how taxable wages are discussed in offers — but eligibility, employer process, and policy-year details are easy to misread in headlines.",
+      "It is not automatic: who qualifies, forms, and what payroll does sit outside any quick “tax-free” headline. Calculator numbers are for trying ideas — **not** approval from the tax office or your employer.",
+    whatToCheck: [
+      "Whether your role and pay band match what your employer said in broad terms.",
+      "Whether your payslip shows what you expected if the ruling applies.",
+    ],
     recommendedAction:
-      "Run indicative scenarios in the ruling calculator, align expectations with payroll, and read the 30% ruling section below for what to verify beyond a blog post.",
-    cautionLevel: "medium",
-    relatedToolKeys: ["ruling", "jobOffer"],
-    relatedAnchors: [{ id: "thirty-percent-ruling", label: "30% ruling section (this page)" }],
-    relatedServiceKeys: [],
-    relatedTools: [],
+      "Read the 30% ruling guide, try a few numbers in the calculator, then align with HR and payroll before you rely on a number in a contract.",
+    cautionLevel: "worth_checking",
+    relatedToolKeys: ["ruling", "salaryNet", "jobOffer"],
+    relatedGuideKeys: ["thirtyPercentRulingGuide"],
+    relatedAnchors: [{ id: "thirty-percent-ruling", label: "30% ruling (this page)" }],
     officialSourceKeys: ["bd_30_percent_facility"],
   },
   {
-    id: "foreign-thread",
-    situation: "Foreign income / assets",
-    title: "I still have income, accounts, or investments outside the Netherlands",
+    id: "partial-year",
+    situation: "Arrived / left",
+    title: "I arrived or left during the year",
     whyItMatters:
-      "Expats often discover Box 3 and cross-border reporting questions later than payroll questions — not because they ignored tax, but because wealth reporting feels different from payslip tax.",
-    recommendedAction:
-      "Read the foreign assets & Box 3 section, run double-tax awareness, and escalate to official international guidance or an adviser if amounts are meaningful.",
-    cautionLevel: "high",
-    relatedToolKeys: ["doubleTax", "taxAdvisorsExpats"],
-    relatedAnchors: [{ id: "foreign-box3", label: "Foreign assets & Box 3 (this page)" }],
-    relatedServiceKeys: [],
-    relatedTools: [],
-    officialSourceKeys: ["bd_international_en", "bd_income_tax_individuals"],
-  },
-  {
-    id: "family-thread",
-    situation: "Family & allowances",
-    title: "Partner, kids, premiums, or childcare are in the picture",
-    whyItMatters:
-      "Household composition changes which allowances and budget lines matter — and can change how aggressively you should sanity-check payroll vs return-time items.",
-    recommendedAction:
-      "Model healthcare allowance and childcare, then place results beside rent and COL so tax questions do not float separate from monthly life.",
-    cautionLevel: "low",
-    relatedToolKeys: ["healthcare", "childcare", "col"],
-    relatedAnchors: [],
-    relatedServiceKeys: [],
-    relatedTools: [],
-    officialSourceKeys: ["toeslagen_portal", "gov_income_tax_allowances"],
-  },
-  {
-    id: "partial-year-thread",
-    situation: "Arrived / left mid-year",
-    title: "I arrived or left the Netherlands mid-year",
-    whyItMatters:
-      "Partial years are where “the simple template” breaks — residency timing, employer changes, and income spanning countries can all show up in the same story.",
-    recommendedAction:
-      "Read arrival/departure year below, keep Belastingdienst letters organised, and consider scoped advice if your facts do not fit a clean narrative.",
-    cautionLevel: "medium",
-    relatedToolKeys: [],
-    relatedAnchors: [],
-    relatedServiceKeys: [],
-    relatedTools: [
-      { kind: "link", href: "#arrival-departure-year", label: "Arrival/departure section (this page)" },
-      { kind: "link", href: `${R.taxGuideBroad}#tax-return-basics`, label: "Tax guide — return basics" },
-      { kind: "tool", key: "taxesHub" },
+      "First and last Dutch tax years often overlap another country’s income, when you registered, and family moves. That overlap is normal — **dates and letters** matter more than one blog template.",
+    whatToCheck: [
+      "Move dates and when pay started or stopped.",
+      "Any income still taxed in another country.",
+      "Big money moves in the same window.",
     ],
+    recommendedAction:
+      "Read the arriving or leaving section here, then follow the Dutch tax office for your tax year — consider paid help if your story is split across countries.",
+    cautionLevel: "worth_checking",
+    relatedToolKeys: ["taxReturnNl"],
+    relatedTools: [
+      { kind: "link", href: `${taxGuideRoutes.taxGuideForExpats}#tax-return-basics`, label: "Tax guide — yearly form basics" },
+    ],
+    relatedAnchors: [{ id: "arrival-departure-year", label: "Arriving or leaving (this page)" }],
     officialSourceKeys: ["bd_filing_return", "bd_income_tax_individuals"],
   },
   {
-    id: "double-tax-thread",
-    situation: "Double tax worry",
-    title: "I am worried about double taxation or treaty relief",
+    id: "foreign-assets",
+    situation: "Assets abroad",
+    title: "I have savings or investments abroad",
     whyItMatters:
-      "Worry is common; precision is what saves money and time. Treaties and timing matter — and forums are a bad place to “confirm” your country pair.",
-    recommendedAction:
-      "Use the double-tax awareness planner for structured questions, then confirm with official guidance or an adviser before you treat a guess as a plan.",
-    cautionLevel: "high",
-    relatedToolKeys: ["doubleTax"],
-    relatedAnchors: [
-      { id: "double-tax", label: "Double tax section (this page)" },
-      { id: "official-sources", label: "Official sources (below)" },
+      "The savings-and-investments part of the yearly form can matter even when monthly pay felt “done”. “Foreign” does not always mean “ignore on the Dutch form” — your situation and the rules still matter.",
+    whatToCheck: [
+      "What you still hold outside the Netherlands and whose name is on the account.",
+      "Whether the amounts are big enough that official guidance or a short paid review makes sense.",
     ],
-    relatedServiceKeys: [],
-    relatedTools: [],
+    recommendedAction:
+      "Read the savings abroad section, then open the tax residency guide if you are unsure how this fits your year.",
+    cautionLevel: "consider_support",
+    relatedToolKeys: ["doubleTax"],
+    relatedGuideKeys: ["taxResidencyNl", "taxAdvisorsExpats"],
+    relatedAnchors: [{ id: "foreign-box3", label: "Savings abroad & Box 3 (this page)" }],
+    officialSourceKeys: ["bd_income_tax_individuals", "bd_international_en"],
+  },
+  {
+    id: "remote-foreign-income",
+    situation: "Remote / foreign income",
+    title: "I have foreign income or messy remote work",
+    whyItMatters:
+      "Where the employer is, where you live, and tax agreements can all land in the same inbox. Online threads rarely match your exact country pair — a simple list of facts first beats late panic.",
+    whatToCheck: [
+      "Who employs you on paper and where you actually work.",
+      "Whether any income is still reported in another country.",
+    ],
+    recommendedAction:
+      "Use the double tax awareness tool for a question list, then check official guidance or a tax adviser if the stakes are high.",
+    cautionLevel: "consider_support",
+    relatedToolKeys: ["doubleTax", "employmentType"],
+    relatedGuideKeys: ["taxResidencyNl"],
+    relatedAnchors: [
+      { id: "foreign-box3", label: "Foreign income & Box 3 (this page)" },
+      { id: "double-tax", label: "Two countries (this page)" },
+    ],
     officialSourceKeys: ["bd_international_en"],
+  },
+  {
+    id: "partner-family",
+    situation: "Partner / kids",
+    title: "I have a partner or children",
+    whyItMatters:
+      "Who lives with you changes benefits and sometimes what you put on the yearly form. Benefit tools give estimates — they do not replace the official benefits site or a government letter.",
+    whatToCheck: [
+      "Household income together and insurance premium levels.",
+      "Childcare use and how benefits differ from lines on the yearly tax form.",
+    ],
+    recommendedAction:
+      "Try healthcare allowance and childcare tools next to rent and living costs so tax questions sit next to real monthly money.",
+    cautionLevel: "simple",
+    relatedToolKeys: ["healthcare", "childcare", "col"],
+    relatedAnchors: [{ id: "family-allowances", label: "Partner & benefits (this page)" }],
+    officialSourceKeys: ["toeslagen_portal", "gov_income_tax_allowances"],
+  },
+  {
+    id: "self-employed-mixed",
+    situation: "ZZP / mixed",
+    title: "I am self-employed or have more than one kind of income",
+    whyItMatters:
+      "Invoices, business registration timing, and years that mix a job with freelance work can change which parts of the form matter — often a good time to think about paid help if the numbers are large.",
+    whatToCheck: [
+      "Whether you are mainly self-employed, side income only, or a mix.",
+      "Which country each income stream belongs to for the year.",
+    ],
+    recommendedAction:
+      "Use the employment-type tool for vocabulary, read the tax return guide, and open the tax-advisers guide if you might hire help for a focused question.",
+    cautionLevel: "consider_support",
+    relatedToolKeys: ["employmentType"],
+    relatedGuideKeys: ["taxReturnNl", "taxAdvisorsExpats"],
+    relatedAnchors: [{ id: "employment-payslips", label: "Your job & payslip (this page)" }],
+    officialSourceKeys: ["bd_income_tax_individuals"],
+  },
+  {
+    id: "tax-residency-unsure",
+    situation: "Residency unsure",
+    title: "I am not sure which country I am a tax resident of",
+    whyItMatters:
+      "Tax residency is about **your life facts over the year** — not the same label as your residence permit. When two countries might both care, treat online tools as **orientation only**.",
+    whatToCheck: [
+      "Where home, family, and money ties sit across the year.",
+      "Any long cross-border commute or second-home pattern.",
+    ],
+    recommendedAction:
+      "Read the tax residency guide for plain words, run double tax awareness if borders are involved, then use official guidance or a tax adviser for a binding answer.",
+    cautionLevel: "consider_support",
+    relatedToolKeys: ["doubleTax"],
+    relatedGuideKeys: ["taxResidencyNl"],
+    relatedAnchors: [
+      { id: "official-sources", label: "Official sources (below)" },
+      { id: "double-tax", label: "Two countries (this page)" },
+    ],
+    officialSourceKeys: ["bd_international_en", "bd_income_tax_individuals"],
   },
 ] as const;

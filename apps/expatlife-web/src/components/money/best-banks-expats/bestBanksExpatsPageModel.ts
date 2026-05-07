@@ -270,6 +270,18 @@ export const bestBanksExpatsPageModel = {
         ctaLabel: "Read fee framework",
       },
       {
+        title: "Banking safety & fraud",
+        description: "Practical habits for phishing, payment requests, and marketplace scams — use while you compare banks.",
+        href: "/netherlands/money/banking/security/",
+        ctaLabel: "Read safety guide",
+      },
+      {
+        title: "Bank account rejected or delayed",
+        description: "If an application is stuck, rejected, or slow — document checks, BSN timing, and next steps without panic.",
+        href: "/netherlands/money/banking/account-rejection/",
+        ctaLabel: "Open guide",
+      },
+      {
         title: "Cost of Living Calculator",
         description: "Sketch monthly pressure before you lock in housing and account cashflow.",
         href: "/netherlands/money/tools/cost-of-living-calculator/",

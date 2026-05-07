@@ -6,6 +6,7 @@ import { BoldParagraph } from "@/components/content/PillarContentBlocks";
 import { cn } from "@/lib/cn";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
+import { moneyExpatTaxesCautionChip, type MoneyExpatTaxesCautionTier } from "@/src/content/money/expat-taxes-nl/moneyExpatTaxesCautionUi";
 
 export type TaxGuideStartingPointScenario = {
   id: string;
@@ -14,6 +15,10 @@ export type TaxGuideStartingPointScenario = {
   whyItMatters: string;
   recommendedNextAction: string;
   steps: readonly { label: string; href: string }[];
+  /** Optional checklist lines (expat taxes scenario picker). */
+  whatToCheck?: readonly string[];
+  /** Caution tier for expat scenario cards — ignored when absent (e.g. broad tax guide). */
+  cautionLevel?: MoneyExpatTaxesCautionTier;
 };
 
 type TaxGuideStartingPointSelectorProps = {
@@ -37,7 +42,7 @@ export function TaxGuideStartingPointSelector({ scenarios }: TaxGuideStartingPoi
       <div
         id={tabListId}
         role="tablist"
-        aria-label="Tax starting scenarios"
+        aria-label="Pick the situation closest to you"
         className="flex max-w-full gap-1 overflow-x-auto rounded-2xl border border-border/70 bg-surface-muted/55 p-1 shadow-sm ring-1 ring-border/15 [-ms-overflow-style:none] [scrollbar-width:none] sm:overflow-visible [&::-webkit-scrollbar]:hidden"
       >
         {scenarios.map((s) => {
@@ -97,25 +102,49 @@ export function TaxGuideStartingPointSelector({ scenarios }: TaxGuideStartingPoi
         className="relative overflow-hidden rounded-2xl border border-border/90 bg-surface-raised p-5 shadow-card ring-1 ring-border/15 sm:p-6"
       >
         <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
-        <h3 className="pt-1 text-base font-semibold tracking-tight text-foreground sm:text-lg">{active.title}</h3>
+        <div className="flex flex-wrap items-start justify-between gap-2 pt-1">
+          <h3 className="min-w-0 flex-1 text-base font-semibold tracking-tight text-foreground sm:text-lg">{active.title}</h3>
+          {active.cautionLevel ? (
+            <span
+              className={cn(
+                "shrink-0 rounded-full border px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.1em]",
+                moneyExpatTaxesCautionChip[active.cautionLevel].chipClass
+              )}
+            >
+              {moneyExpatTaxesCautionChip[active.cautionLevel].label}
+            </span>
+          ) : null}
+        </div>
 
         <div className="mt-4 space-y-4 text-sm">
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-foreground-muted">Why it matters</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-foreground-muted">In plain words</p>
             <BoldParagraph
               text={active.whyItMatters}
               className={cn("mt-1.5 leading-relaxed text-foreground-muted", proseMuted)}
             />
           </div>
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-foreground-muted">Recommended next step</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-foreground-muted">Suggested next step</p>
             <BoldParagraph
               text={active.recommendedNextAction}
               className={cn("mt-1.5 leading-relaxed text-foreground-muted", proseMuted)}
             />
           </div>
+          {active.whatToCheck && active.whatToCheck.length > 0 ? (
+            <div>
+              <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-foreground-muted">Quick checks</p>
+              <ul className="mt-2 list-disc space-y-1.5 pl-4 text-foreground-muted" role="list">
+                {active.whatToCheck.map((line) => (
+                  <li key={line} className="leading-relaxed marker:text-foreground-muted">
+                    <BoldParagraph text={line} className={cn("text-[13px] sm:text-sm", proseMuted)} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
           <div>
-            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-foreground-muted">Open next</p>
+            <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-foreground-muted">Links to open</p>
             <ul className="mt-2 flex flex-col gap-2 sm:flex-row sm:flex-wrap" role="list">
               {active.steps.map((step) => (
                 <li key={step.href + step.label}>
