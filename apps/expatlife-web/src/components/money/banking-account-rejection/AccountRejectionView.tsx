@@ -508,9 +508,6 @@ export function AccountRejectionView() {
                     <BankingRecommendedOptionsSection
                       placementId={group.placementId}
                       analyticsPageContext={group.analyticsPageContext}
-                      {...("boundaryNote" in group && group.boundaryNote
-                        ? { boundaryNote: group.boundaryNote }
-                        : {})}
                       categoryLinks={[...group.categoryLinks]}
                       browseLabel="More on ExpatCopilot: "
                       regionIntroLabel={meta.recommendedProviders.comparisonStripIntroLabel}
