@@ -1,5 +1,3 @@
-import { existsSync } from "node:fs";
-import path from "node:path";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { cloneSafeMetadata } from "@/lib/metadata";
@@ -17,14 +15,11 @@ import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates"
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { MoveClusterOriginCountryPostFaq } from "@/src/components/monetization/MoveClusterOriginCountryPostFaq";
+import { resolveOriginCountryHeroSrc } from "@/src/lib/public-assets/scanPublicImageDirs";
 
 export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
-
-function hasPublicAsset(relativePath: string): boolean {
-  return existsSync(path.join(process.cwd(), "public", relativePath.replace(/^\//, "")));
-}
 
 function getModel(countrySlug: string) {
   const country = getCountryBySlug(countrySlug);
@@ -105,16 +100,7 @@ export default async function CountryRoutePage({
   const model = getModel(countrySlug);
   if (!model) notFound();
 
-  const countryHeroWebp = `/images/countries/${model.slug}-to-netherlands-hero.webp`;
-  const countryHeroPng = `/images/countries/${model.slug}-to-netherlands-hero.png`;
-  const defaultHeroPath = "/images/countries/netherlands-relocation-planning-hero.png";
-  const heroImageSrc = hasPublicAsset(countryHeroWebp)
-    ? countryHeroWebp
-    : hasPublicAsset(countryHeroPng)
-      ? countryHeroPng
-      : hasPublicAsset(defaultHeroPath)
-        ? defaultHeroPath
-        : undefined;
+  const heroImageSrc = resolveOriginCountryHeroSrc(model.slug);
 
   const data = countryModelToGuideData(model, { heroImageSrc, baseUrl });
 

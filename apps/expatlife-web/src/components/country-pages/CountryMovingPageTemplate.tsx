@@ -1,5 +1,3 @@
-import { existsSync } from "node:fs";
-import path from "node:path";
 import Link from "next/link";
 import { AffiliateBlockView } from "@/src/components/affiliates/AffiliateBlockView";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
@@ -14,21 +12,15 @@ import { CountryScenarioCards } from "./CountryScenarioCards";
 import { CountryTimelineSection } from "./CountryTimelineSection";
 import { CountryVisaAwareness } from "./CountryVisaAwareness";
 import { PillarMainStack } from "@/components/page/pillar-template";
-
-function hasPublicAsset(relativePath: string) {
-  return existsSync(path.join(process.cwd(), "public", relativePath.replace(/^\//, "")));
-}
+import {
+  resolveInfographicSrc,
+  resolveOriginCountryHeroSrcExclusive,
+} from "@/src/lib/public-assets/scanPublicImageDirs";
 
 export function CountryMovingPageTemplate({ model }: { model: CountryPageModel }) {
-  const heroImageSrc = hasPublicAsset(`/images/countries/${model.slug}-to-netherlands-hero.webp`)
-    ? `/images/countries/${model.slug}-to-netherlands-hero.webp`
-    : undefined;
-  const timelineImageSrc = hasPublicAsset("/images/infographics/moving-timeline.webp")
-    ? "/images/infographics/moving-timeline.webp"
-    : undefined;
-  const documentsImageSrc = hasPublicAsset("/images/infographics/documents-to-prepare.webp")
-    ? "/images/infographics/documents-to-prepare.webp"
-    : undefined;
+  const heroImageSrc = resolveOriginCountryHeroSrcExclusive(model.slug);
+  const timelineImageSrc = resolveInfographicSrc("moving-timeline.webp");
+  const documentsImageSrc = resolveInfographicSrc("documents-to-prepare.webp");
 
   const affiliateData = loadPlacementWithProviders(model.affiliate.placementId, "netherlands", model.slug);
 

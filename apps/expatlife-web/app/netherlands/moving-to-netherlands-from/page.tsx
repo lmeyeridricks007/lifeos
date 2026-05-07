@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import { existsSync } from "node:fs";
-import path from "node:path";
 import Image from "next/image";
 import Link from "next/link";
 import { Calculator, CalendarDays, ListChecks } from "lucide-react";
@@ -23,7 +21,6 @@ import {
   SectionBlock,
   ToolCard,
 } from "@/components/page/pillar-template";
-import { EDITORIAL_HERO_PLACEHOLDER } from "@/src/lib/content/editorialTypes";
 import type { EditorialHeroImage } from "@/src/lib/content/editorialTypes";
 import {
   ContentTable,
@@ -194,15 +191,12 @@ export default async function MovingToNetherlandsFromIndexPage() {
   };
 
   const heroImagePath = "/images/relocation-planning-netherlands-hero.png";
-  const hasDedicatedHero = existsSync(path.join(process.cwd(), "public", heroImagePath.replace(/^\//, "")));
-  const heroImage: EditorialHeroImage | typeof EDITORIAL_HERO_PLACEHOLDER = hasDedicatedHero
-    ? heroToEditorial(
-        heroImagePath,
-        "A person at a desk planning an international move to the Netherlands, with a laptop showing a world map pinned on the Netherlands, documents, and a canal view outside the window.",
-        1200,
-        630
-      )
-    : EDITORIAL_HERO_PLACEHOLDER;
+  const heroImage: EditorialHeroImage = heroToEditorial(
+    heroImagePath,
+    "A person at a desk planning an international move to the Netherlands, with a laptop showing a world map pinned on the Netherlands, documents, and a canal view outside the window.",
+    1200,
+    630
+  );
 
   const canonicalUrl = new URL(canonical, baseUrl).toString();
   const articleModified = "2026-04-02";
