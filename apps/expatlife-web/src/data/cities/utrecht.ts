@@ -572,6 +572,7 @@ export const utrechtCityPage: CityHubPageData = {
   ],
 
   cityLinks: [
+    { label: "Compare the Randstad", href: "/netherlands/randstad/" },
     { label: "Moving to Amsterdam", href: "/netherlands/amsterdam/" },
     { label: "Moving to Rotterdam", href: "/netherlands/rotterdam/" },
     { label: "Moving to The Hague", href: "/netherlands/the-hague/" },

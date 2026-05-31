@@ -352,7 +352,7 @@ export default function EmploymentTypeScenarioToolPage() {
                     simpler mortgage and sponsor narratives. ZZP means KvK-style entrepreneurship, VAT and income tax responsibilities,
                     and income that swings with clients and bench time. The same gross story rarely carries over — compare net after
                     costs and after{" "}
-                    <Link href={`${NL_BASE}/taxes/gross-vs-netherlands-salary/`} className="font-medium text-brand-600 hover:underline">
+                    <Link href={`${NL_BASE}/taxes/gross-vs-net-salary/`} className="font-medium text-brand-600 hover:underline">
                       gross vs net
                     </Link>{" "}
                     effects.

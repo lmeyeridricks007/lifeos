@@ -2,12 +2,15 @@
   "name": "@expatlife/web",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=18.16.0 <21"
+  },
   "scripts": {
     "dev": "next dev",
     "dev:3001": "next dev -p 3001",
     "dev:3002": "next dev -p 3002",
-    "build": "next build",
-    "preview": "next build && next start",
+    "build": "EXPATOS_SKIP_CONTENTLAYER=true next build",
+    "preview": "EXPATOS_SKIP_CONTENTLAYER=true next build && next start",
     "start": "next start",
     "lint": "next lint",
     "validate:salary-net": "tsx scripts/validate-dutch-salary-net.ts",

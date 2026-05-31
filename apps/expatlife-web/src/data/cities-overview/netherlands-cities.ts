@@ -265,6 +265,7 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
         href: "/netherlands/cities/best-cities-for-international-professionals/",
         primary: false,
       },
+      { label: "Randstad overview", href: "/netherlands/randstad/", primary: false },
       { label: "Explore covered cities", href: "#covered-cities", primary: false },
       { label: "Browse services", href: "/netherlands/services/", primary: false },
     ],
@@ -285,6 +286,7 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
     heading: "How to Use This Cities Guide",
     paragraphs: [
       "This hub helps you compare major Dutch cities that expats choose most often. Each city has a different profile for jobs, housing competition, lifestyle, pace, and family suitability—so your shortlist should match how you work and live, not only name recognition.",
+      "If your shortlist is in the western Netherlands, the Randstad overview explains how Amsterdam, Rotterdam, The Hague, Utrecht and nearby cities function as a connected region for work, study, housing and commuting.",
       "If you are still deciding between several cities, start with the practical decision guide: Best cities in the Netherlands for expats — it walks through trade-offs, scenarios, and which tools to open next before you commit.",
       "Use the covered city cards to see what each place is known for and why internationals pick it, then open the detailed city guide for practical setup steps. National basics (registration, BSN, insurance, banking) are similar across the country; the city guides focus on local context and next actions.",
       "We add more city guides over time. If your city is not covered yet, the comparison table and Netherlands-wide guides linked below still help you plan.",
@@ -294,6 +296,7 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
   intro: {
     paragraphs: [],
     links: [
+      { label: "Randstad overview", href: "/netherlands/randstad/" },
       { label: "Best cities for expats (guide)", href: "/netherlands/cities/best-cities-for-expats/" },
       { label: "Best Dutch cities for families", href: "/netherlands/cities/best-cities-for-families/" },
       {
@@ -338,6 +341,7 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
   hubGuideBlock: {
     title: "Key Netherlands guides",
     links: [
+      { label: "Randstad overview", href: "/netherlands/randstad/" },
       { label: "Best cities in the Netherlands for expats", href: "/netherlands/cities/best-cities-for-expats/" },
       { label: "Best Dutch cities for families", href: "/netherlands/cities/best-cities-for-families/" },
       {
@@ -356,6 +360,11 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
   },
 
   exploreNextCards: [
+    {
+      label: "Randstad Netherlands guide",
+      href: "/netherlands/randstad/",
+      description: "Compare Amsterdam, Rotterdam, The Hague, Utrecht and nearby cities as a connected urban region.",
+    },
     {
       label: "Best cities decision guide",
       href: "/netherlands/cities/best-cities-for-expats/",

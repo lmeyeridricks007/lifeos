@@ -183,7 +183,7 @@ const RELATED_NEXT_STEPS = [
     description: "Gross-to-net context and payslip concepts once payroll facts are fixed.",
   },
   {
-    href: `${BASE}/taxes/gross-vs-netherlands-salary/`,
+    href: `${BASE}/taxes/gross-vs-net-salary/`,
     title: "Gross vs net in the Netherlands",
     description: "How employers quote packages and what lands in your bank account.",
   },
@@ -193,7 +193,7 @@ const RELATED_NEXT_STEPS = [
     description: "Separate tool for norms, distance checks, and allowance — not gross-to-net.",
   },
   {
-    href: `${BASE}/money/taxes/30-percent-ruling/`,
+    href: `${BASE}/taxes/30-percent-ruling/`,
     title: "30% ruling guide",
     description: "What the facility is, who it is for, and employer dependence.",
   },

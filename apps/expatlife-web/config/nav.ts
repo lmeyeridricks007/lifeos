@@ -265,8 +265,8 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
           ),
           link(
             "Expat Taxes in the Netherlands",
-            "/netherlands/money/expat-taxes-netherlands/",
-            "Scenario-led Money guide: partial years, foreign assets, ruling, allowances, double tax",
+            "/netherlands/taxes/expat-taxes-netherlands/",
+            "Scenario-led Taxes guide: partial years, foreign assets, ruling, allowances, double tax",
             false
           ),
           link(

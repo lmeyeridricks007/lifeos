@@ -559,6 +559,7 @@ export const rotterdamCityPage: CityHubPageData = {
   ],
 
   cityLinks: [
+    { label: "Compare the Randstad", href: "/netherlands/randstad/" },
     { label: "Moving to Amsterdam", href: "/netherlands/amsterdam/" },
     { label: "Moving to Utrecht", href: "/netherlands/utrecht/", comingSoon: true },
     { label: "Moving to The Hague", href: "/netherlands/the-hague/" },

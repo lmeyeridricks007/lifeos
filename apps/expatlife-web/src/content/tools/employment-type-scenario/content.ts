@@ -136,7 +136,7 @@ export const EMPLOYMENT_TYPE_RELATED_GUIDES = [
     description: "Residency, worldwide income, and when cross-border filing gets non-trivial.",
   },
   {
-    href: `${NL_BASE}/taxes/gross-vs-netherlands-salary/`,
+    href: `${NL_BASE}/taxes/gross-vs-net-salary/`,
     title: "Gross vs net salary Netherlands",
     description: "Why headline gross is a weak sole metric when comparing offers or day rates.",
   },

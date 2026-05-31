@@ -1,25 +1,42 @@
 import type { Metadata } from "next";
-import { getNlTaxFlagshipContent } from "@expatlife/content";
-import { NetherlandsFlagshipPillarPage } from "@/components/page/NetherlandsFlagshipPillarPage";
-import { getSiteOrigin } from "@/lib/site-origin";
-import { buildSocialMetadata } from "@/lib/seo/metadata";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { ArticleJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
+import { getSiteOrigin } from "@/lib/site-origin";
+import { TaxesHubView } from "@/src/components/taxes/TaxesHubView";
+import { taxesHubPage } from "@/src/components/taxes/taxesHubPageModel";
 
 export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
+const { path, seo, publishDate, hero } = taxesHubPage;
 
-export async function generateMetadata(): Promise<Metadata> {
-  const content = await getNlTaxFlagshipContent();
-  return buildSocialMetadata({
-    title: content.meta.seo.title,
-    description: content.meta.seo.description,
-    path: content.meta.canonicalPath,
-    ogType: "article",
-  });
-}
+export const metadata: Metadata = {
+  title: seo.title,
+  description: seo.description,
+  keywords: [...seo.keywords],
+  alternates: { canonical: path },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
+  openGraph: {
+    title: seo.title,
+    description: seo.description,
+    type: "article",
+    url: new URL(path, baseUrl).toString(),
+    images: [{ url: hero.image.src, alt: hero.image.alt }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: seo.title,
+    description: seo.description,
+    images: [hero.image.src],
+  },
+};
 
-export default async function NetherlandsTaxesFlagshipPage() {
-  const content = await getNlTaxFlagshipContent();
-  return <NetherlandsFlagshipPillarPage content={content} baseUrl={baseUrl} />;
+export default function NetherlandsTaxesHubPage() {
+  return (
+    <>
+      <WebPageJsonLd name={hero.pageTitle} description={seo.description} urlPath={path} datePublished={publishDate} />
+      <ArticleJsonLd headline={hero.pageTitle} description={seo.description} dateModified={publishDate} urlPath={path} />
+      <TaxesHubView />
+    </>
+  );
 }

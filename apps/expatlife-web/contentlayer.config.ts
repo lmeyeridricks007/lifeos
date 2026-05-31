@@ -17,8 +17,8 @@ function resolveMdxBundlerCwd() {
 
 const computedFields = {
   slug: {
-    type: "string",
-    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+    type: "string" as const,
+    resolve: (doc: { _raw: { flattenedPath: string } }) => `/${doc._raw.flattenedPath}`,
   },
 };
 

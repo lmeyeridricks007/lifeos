@@ -539,4 +539,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withContentlayer(nextConfig);
+module.exports = process.env.EXPATOS_SKIP_CONTENTLAYER === "true" ? nextConfig : withContentlayer(nextConfig);

@@ -136,24 +136,19 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/housing/renting-in-delft/": { title: "Renting in Delft", section: "guides" },
   "/netherlands/housing/renting-in-haarlem/": { title: "Renting in Haarlem", section: "guides" },
   "/netherlands/housing/renting-in-amstelveen/": { title: "Renting in Amstelveen", section: "guides" },
-  /** Taxes SEO cluster (planned — nav surfaces as Soon until promoted to live). */
-  "/netherlands/taxes/": { title: "Netherlands taxes hub", section: "guides" },
-  "/netherlands/taxes/expat-taxes-netherlands/": { title: "Expat taxes Netherlands (legacy)", section: "guides" },
+  /** Taxes SEO cluster (planned child guides — nav surfaces as Soon until promoted to live). */
   "/netherlands/money/": { title: "Money in the Netherlands", section: "guides" },
   "/netherlands/money/expat-taxes-netherlands/": { title: "Expat Taxes in the Netherlands", section: "guides" },
   "/netherlands/taxes/how-taxes-work-netherlands/": { title: "How taxes work Netherlands", section: "guides" },
   "/netherlands/taxes/tax-residency-netherlands/": { title: "Tax residency Netherlands", section: "guides" },
   "/netherlands/taxes/tax-brackets-netherlands/": { title: "Tax brackets Netherlands", section: "guides" },
   "/netherlands/taxes/tax-return-netherlands/": { title: "Tax return Netherlands", section: "guides" },
-  "/netherlands/taxes/30-percent-ruling/": { title: "30% ruling (legacy)", section: "guides" },
   "/netherlands/money/taxes/30-percent-ruling/": { title: "30% ruling in the Netherlands", section: "guides" },
   "/netherlands/money/taxes/tax-advisors/": { title: "Netherlands tax advisors for expats (guide)", section: "guides" },
   "/netherlands/taxes/30-ruling-eligibility/": { title: "30% ruling eligibility", section: "guides" },
   "/netherlands/taxes/30-ruling-salary-requirements/": { title: "30% ruling salary requirements", section: "guides" },
   "/netherlands/taxes/30-ruling-application/": { title: "30% ruling application", section: "guides" },
   "/netherlands/taxes/30-ruling-expiry/": { title: "30% ruling expiry", section: "guides" },
-  "/netherlands/taxes/net-salary-netherlands/": { title: "Net salary Netherlands", section: "guides" },
-  "/netherlands/taxes/gross-vs-netherlands-salary/": { title: "Gross vs net salary Netherlands", section: "guides" },
   "/netherlands/taxes/payroll-tax-netherlands/": { title: "Payroll tax Netherlands", section: "guides" },
   "/netherlands/taxes/healthcare-allowance/": { title: "Healthcare allowance", section: "guides" },
   "/netherlands/taxes/rent-allowance/": { title: "Rent allowance", section: "guides" },
@@ -266,6 +261,7 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/cities/cheapest-cities-for-expats/",
   "/netherlands/cities/best-cities-for-families/",
   "/netherlands/cities/best-cities-for-international-professionals/",
+  "/netherlands/randstad/",
   /** Flagship housing hub (App Router) — keep live so nav and related guides never show “Soon”. */
   "/netherlands/housing/",
   "/netherlands/amsterdam/",
@@ -286,6 +282,12 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/tools/",
   /** Money pillar hub — orientation links to banking, taxes, and tools. */
   "/netherlands/money/",
+  /** Taxes SEO pillar hub (App Router). */
+  "/netherlands/taxes/",
+  "/netherlands/taxes/expat-taxes-netherlands/",
+  "/netherlands/taxes/30-percent-ruling/",
+  "/netherlands/taxes/net-salary-netherlands/",
+  "/netherlands/taxes/gross-vs-net-salary/",
   /** Money pillar tax orientation guide (App Router). */
   "/netherlands/money/tax-guide-for-expats/",
   "/netherlands/money/how-taxes-work-in-the-netherlands/",

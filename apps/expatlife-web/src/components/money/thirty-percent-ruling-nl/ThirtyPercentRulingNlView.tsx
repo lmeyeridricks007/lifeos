@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BadgePercent, BriefcaseBusiness, Calculator, Clock3, FileCheck2, ReceiptText } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { BoldParagraph } from "@/components/content/PillarContentBlocks";
 import { GuidePageTemplate } from "@/components/page/page-templates";
@@ -34,7 +34,6 @@ import {
 } from "@/lib/ui/moving-nl-pillar-identity";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { MoveGuideAffiliateSupportBlock } from "@/src/components/moving/MoveGuideAffiliateSupportBlock";
-import { MovePillarJourneyBridge } from "@/src/components/moving/MovePillarJourneyBridge";
 import {
   MoveMisunderstandingCardGrid,
   moveMisunderstandingSectionSubtitleClass,
@@ -61,6 +60,7 @@ const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
 const TIGHT = `${SECTION_SCROLL_MARGIN} !pt-3 sm:!pt-4`;
 const INFO_CHIP =
   "inline-flex rounded-full border border-copilot-primary/15 bg-copilot-bg-soft/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-copilot-primary";
+const HOW_IT_WORKS_ICONS = [BriefcaseBusiness, FileCheck2, BadgePercent, ReceiptText, Calculator, Clock3] as const;
 
 export function ThirtyPercentRulingNlView() {
   const baseUrl = getSiteOrigin();
@@ -312,15 +312,6 @@ export function ThirtyPercentRulingNlView() {
 
             <UnderstandFirstThenCalculateCta variant="guide" className={SECTION_SCROLL_MARGIN} />
 
-            <MovePillarJourneyBridge
-              id={meta.pillarBridge.id}
-              eyebrow={meta.pillarBridge.eyebrow}
-              title={meta.pillarBridge.title}
-              intro={meta.pillarBridge.intro}
-              linksDescriptionMarkdown
-              links={meta.pillarBridge.links.map((l) => ({ ...l }))}
-            />
-
             <SectionBlock
               id={meta.startingPoint.id}
               className={TIGHT}
@@ -405,59 +396,121 @@ export function ThirtyPercentRulingNlView() {
               </div>
             </SectionBlock>
 
-            <SectionBlock
+            <section
               id={meta.howItWorks.id}
-              className={TIGHT}
-              eyebrow={meta.howItWorks.eyebrow}
-              title={meta.howItWorks.title}
-              subtitle={meta.howItWorks.subtitle}
-              subtitleMarkdown
+              className={cn(
+                SECTION_SCROLL_MARGIN,
+                "relative overflow-hidden rounded-3xl border-0 bg-gradient-to-br from-white via-copilot-surface to-copilot-bg-soft/70 p-6 shadow-expatos-xl ring-1 ring-copilot-primary/[0.08] sm:p-7"
+              )}
             >
-              <BoldParagraph
-                text={meta.howItWorks.intro}
-                className="max-w-3xl text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
-              />
-              <ul className="mt-3 max-w-3xl list-disc space-y-2 pl-5 text-sm text-foreground-muted" role="list">
-                {meta.howItWorks.bullets.map((b) => (
-                  <li key={b}>
-                    <BoldParagraph text={b} className="inline [&_strong]:font-semibold [&_strong]:text-foreground" />
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-5 text-[10px] font-bold uppercase tracking-[0.12em] text-foreground-muted">Typical flow</p>
-              <ol className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3" role="list">
-                {meta.howItWorks.flowSteps.map((step, idx) => (
-                  <li
-                    key={step.id}
+              <div className={cn("absolute inset-x-0 top-0 h-1.5 rounded-t-2xl", movingNlSignatureGradientClass)} aria-hidden />
+              <div className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-cyan-300/20 blur-3xl" aria-hidden />
+              <div className="pointer-events-none absolute -bottom-24 left-1/3 h-64 w-64 rounded-full bg-orange-300/15 blur-3xl" aria-hidden />
+              <div className="relative">
+              <div className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(300px,0.65fr)] lg:items-start">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-strong">{meta.howItWorks.eyebrow}</p>
+                  <h2 className="mt-2 text-3xl font-black tracking-tight text-foreground sm:text-4xl">{meta.howItWorks.title}</h2>
+                  <BoldParagraph
+                    text={meta.howItWorks.subtitle}
                     className={cn(
-                      "relative flex flex-col rounded-xl border border-border/80 bg-surface-muted/40 p-3.5 ring-1 ring-border/40",
-                      movingNlCardMicroLiftClass
+                      movingNlSectionSubtitleClass,
+                      "mt-2 text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
                     )}
-                  >
-                    <span className="text-[10px] font-bold uppercase tracking-[0.14em] text-brand-strong">
-                      {idx + 1}. {step.title}
-                    </span>
-                    <BoldParagraph
-                      text={step.body}
-                      className="mt-2 text-xs leading-relaxed text-foreground-muted sm:text-sm [&_strong]:font-semibold [&_strong]:text-foreground"
-                    />
-                  </li>
-                ))}
-              </ol>
-              <p className="mt-5 text-[10px] font-bold uppercase tracking-[0.12em] text-foreground-muted">Related tools</p>
-              <div className="mt-2 flex flex-wrap gap-2">
+                  />
+                  <BoldParagraph
+                    text={meta.howItWorks.intro}
+                    className="mt-5 max-w-3xl text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+                  />
+                  <div className="mt-4 grid gap-3 sm:grid-cols-3">
+                    {meta.howItWorks.bullets.map((b, index) => {
+                      const Icon = HOW_IT_WORKS_ICONS[index % HOW_IT_WORKS_ICONS.length];
+                      return (
+                        <div key={b} className="rounded-2xl border border-copilot-primary/10 bg-copilot-bg-soft/60 p-4 ring-1 ring-copilot-primary/[0.05]">
+                          <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-brand-strong ring-1 ring-copilot-primary/10">
+                            <Icon className="h-5 w-5" aria-hidden />
+                          </span>
+                          <BoldParagraph text={b} className="mt-3 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground" />
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+                <aside className="relative overflow-hidden rounded-3xl bg-slate-950 p-5 text-white shadow-expatos-xl ring-1 ring-black/20 sm:p-6">
+                  <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-cyan-400/20 blur-3xl" aria-hidden />
+                  <div className="absolute -bottom-20 left-1/3 h-44 w-44 rounded-full bg-orange-400/15 blur-3xl" aria-hidden />
+                  <div className="relative">
+                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-cyan-200">Practical lens</p>
+                    <h3 className="mt-2 text-xl font-bold tracking-tight">Concept first, payroll reality second</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-300">
+                      The ruling is not a simple visual subtraction from gross pay. Employer setup, approval timing, payroll policy and annual-return context all affect what users actually see.
+                    </p>
+                    <div className="mt-5 grid gap-3">
+                      {["Employer participates", "Belastingdienst approval", "Payroll applies the treatment"].map((label, index) => {
+                        const Icon = HOW_IT_WORKS_ICONS[index + 1];
+                        return (
+                          <div key={label} className="flex gap-3 rounded-2xl border border-white/10 bg-white/10 p-4 ring-1 ring-white/10">
+                            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 text-cyan-100 ring-1 ring-white/15">
+                              <Icon className="h-5 w-5" aria-hidden />
+                            </span>
+                            <span className="text-sm font-semibold text-white">{label}</span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </aside>
+              </div>
+
+              <figure className="mt-7 overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-expatos-lg ring-1 ring-slate-900/[0.04]">
+                <Image
+                  src="/images/infographics/netherlands-30-ruling-how-it-works-infographic.png"
+                  alt="Infographic explaining the Dutch 30% ruling flow from recruitment abroad to employer and employee application, Belastingdienst decision and payroll treatment if approved."
+                  width={1600}
+                  height={1000}
+                  sizes="(min-width: 1024px) 980px, 100vw"
+                  className="h-auto w-full object-cover"
+                />
+                <figcaption className="border-t border-slate-100 bg-slate-50/90 px-5 py-4 text-sm leading-relaxed text-foreground-muted">
+                  This visual is the practical sequence users should remember: recruited from abroad, employer participation, tax authority decision, then payroll treatment if approved.
+                </figcaption>
+              </figure>
+
+              <div className="mt-6 rounded-2xl border border-slate-200/90 bg-white/95 p-4 shadow-sm ring-1 ring-slate-900/[0.04] sm:p-5">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-strong">Typical flow</p>
+                  <span className="rounded-full bg-slate-50 px-3 py-1 text-xs font-semibold text-foreground-muted ring-1 ring-slate-200">Orientation, not proof</span>
+                </div>
+                <ol className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" role="list">
+                  {meta.howItWorks.flowSteps.map((step, idx) => {
+                    const Icon = HOW_IT_WORKS_ICONS[idx % HOW_IT_WORKS_ICONS.length];
+                    return (
+                      <li key={step.id} className={cn("relative flex gap-3 rounded-2xl border border-slate-200/90 bg-gradient-to-r from-white to-slate-50 p-4", movingNlCardMicroLiftClass)}>
+                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-copilot-bg-soft text-brand-strong ring-1 ring-copilot-primary/10">
+                          <Icon className="h-5 w-5" aria-hidden />
+                        </span>
+                        <span>
+                          <span className="block text-[10px] font-bold uppercase tracking-[0.14em] text-brand-strong">
+                            {idx + 1}. {step.title}
+                          </span>
+                          <BoldParagraph text={step.body} className="mt-2 block text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground" />
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+
+              <div className="mt-5 flex flex-wrap gap-2">
                 {meta.howItWorks.ctas.map((c) => (
-                  <Link
-                    key={c.href}
-                    href={c.href}
-                    className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl border border-brand/20 bg-brand/5 px-3 py-2 text-sm font-semibold text-brand-strong hover:bg-brand/10"
-                  >
+                  <Link key={c.href} href={c.href} className={cn(primaryCtaClass, "min-h-[42px] px-4 py-2")}>
                     {c.label}
                     <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
                   </Link>
                 ))}
               </div>
-            </SectionBlock>
+              </div>
+            </section>
 
             <SectionBlock
               id={meta.salaryFlow.id}
@@ -569,55 +622,113 @@ export function ThirtyPercentRulingNlView() {
               />
             </SectionBlock>
 
-            <SectionBlock
+            <section
               id={meta.salaryNetCaps.id}
-              className={TIGHT}
-              eyebrow={meta.salaryNetCaps.eyebrow}
-              title={meta.salaryNetCaps.title}
-              subtitle={meta.salaryNetCaps.subtitle}
-              subtitleMarkdown
+              className={cn(
+                SECTION_SCROLL_MARGIN,
+                "relative overflow-hidden rounded-2xl border-0 bg-copilot-surface p-6 shadow-expatos-lg ring-1 ring-copilot-primary/[0.07] sm:p-7"
+              )}
             >
-              <BoldParagraph
-                text={meta.salaryNetCaps.lead}
-                className="max-w-3xl text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
-              />
-              <ul className="mt-3 max-w-3xl list-disc space-y-2 pl-5 text-sm text-foreground-muted" role="list">
-                {meta.salaryNetCaps.bullets.map((b) => (
-                  <li key={b}>
-                    <BoldParagraph text={b} className="inline [&_strong]:font-semibold [&_strong]:text-foreground" />
-                  </li>
-                ))}
-              </ul>
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className={cn("absolute inset-x-0 top-0 h-1.5 rounded-t-2xl", movingNlSignatureGradientClass)} aria-hidden />
+              <div className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(300px,0.65fr)] lg:items-start">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-strong">{meta.salaryNetCaps.eyebrow}</p>
+                  <h2 className="mt-2 text-2xl font-black tracking-tight text-foreground sm:text-3xl">{meta.salaryNetCaps.title}</h2>
+                  <BoldParagraph
+                    text={meta.salaryNetCaps.subtitle}
+                    className={cn(
+                      movingNlSectionSubtitleClass,
+                      "mt-2 text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+                    )}
+                  />
+                  <BoldParagraph
+                    text={meta.salaryNetCaps.lead}
+                    className="mt-5 max-w-3xl text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+                  />
+                </div>
+                <aside className="relative overflow-hidden rounded-3xl bg-slate-950 p-5 text-white shadow-expatos-xl ring-1 ring-black/20 sm:p-6">
+                  <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-cyan-400/20 blur-3xl" aria-hidden />
+                  <div className="relative">
+                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-cyan-200">Numbers lens</p>
+                    <h3 className="mt-2 text-xl font-bold tracking-tight">One output is rarely the whole story</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-300">
+                      Use calculators to compare scenarios, then validate against offer terms, payroll setup, caps, partial-year timing, and real payslip lines.
+                    </p>
+                  </div>
+                </aside>
+              </div>
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                {meta.salaryNetCaps.bullets.map((b, index) => {
+                  const Icon = HOW_IT_WORKS_ICONS[(index + 3) % HOW_IT_WORKS_ICONS.length];
+                  return (
+                    <article key={b} className={cn("relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white/95 p-4 shadow-sm ring-1 ring-slate-900/[0.04]", movingNlCardMicroLiftClass)}>
+                      <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
+                      <div className="flex gap-3">
+                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-copilot-bg-soft text-brand-strong ring-1 ring-copilot-primary/10">
+                          <Icon className="h-5 w-5" aria-hidden />
+                        </span>
+                        <BoldParagraph text={b} className="text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground" />
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
+              <div className="mt-5 flex flex-wrap gap-2">
                 {meta.salaryNetCaps.ctas.map((c) => (
-                  <Link
-                    key={c.href}
-                    href={c.href}
-                    className="inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl border border-brand/20 bg-brand/5 px-3 py-2 text-sm font-semibold text-brand-strong hover:bg-brand/10"
-                  >
+                  <Link key={c.href} href={c.href} className={cn(primaryCtaClass, "min-h-[42px] px-4 py-2")}>
                     {c.label}
                     <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
                   </Link>
                 ))}
               </div>
-            </SectionBlock>
+            </section>
 
-            <SectionBlock
+            <section
               id={meta.taxYearAwareness.id}
-              className={TIGHT}
-              eyebrow={meta.taxYearAwareness.eyebrow}
-              title={meta.taxYearAwareness.title}
-              subtitle={meta.taxYearAwareness.subtitle}
-              subtitleMarkdown
+              className={cn(
+                SECTION_SCROLL_MARGIN,
+                "relative overflow-hidden rounded-2xl border-0 bg-copilot-surface p-6 shadow-expatos-lg ring-1 ring-copilot-primary/[0.07] sm:p-7"
+              )}
             >
-              <ul className="max-w-3xl list-disc space-y-2.5 pl-5 text-sm leading-relaxed text-foreground-muted" role="list">
-                {meta.taxYearAwareness.paragraphs.map((p) => (
-                  <li key={p}>
-                    <BoldParagraph text={p} className="inline [&_strong]:font-semibold [&_strong]:text-foreground" />
-                  </li>
-                ))}
-              </ul>
-            </SectionBlock>
+              <div className={cn("absolute inset-x-0 top-0 h-1.5 rounded-t-2xl", movingNlSignatureGradientClass)} aria-hidden />
+              <div className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(300px,0.65fr)] lg:items-start">
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-strong">{meta.taxYearAwareness.eyebrow}</p>
+                  <h2 className="mt-2 text-2xl font-black tracking-tight text-foreground sm:text-3xl">{meta.taxYearAwareness.title}</h2>
+                  <BoldParagraph
+                    text={meta.taxYearAwareness.subtitle}
+                    className={cn(
+                      movingNlSectionSubtitleClass,
+                      "mt-2 text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
+                    )}
+                  />
+                </div>
+                <aside className="relative overflow-hidden rounded-3xl bg-slate-950 p-5 text-white shadow-expatos-xl ring-1 ring-black/20 sm:p-6">
+                  <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-orange-400/20 blur-3xl" aria-hidden />
+                  <div className="relative">
+                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-cyan-200">Calendar reality</p>
+                    <h3 className="mt-2 text-xl font-bold tracking-tight">Tax year comes before shortcuts</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-slate-300">
+                      Before comparing advice from colleagues or forums, make sure the tax year, contract shape, and calculator assumptions are the same.
+                    </p>
+                  </div>
+                </aside>
+              </div>
+              <div className="mt-6 grid gap-3 lg:grid-cols-3">
+                {meta.taxYearAwareness.paragraphs.map((p, index) => {
+                  const Icon = HOW_IT_WORKS_ICONS[(index + 2) % HOW_IT_WORKS_ICONS.length];
+                  return (
+                    <article key={p} className={cn("relative overflow-hidden rounded-2xl border border-slate-200/90 bg-white/95 p-4 shadow-sm ring-1 ring-slate-900/[0.04]", movingNlCardMicroLiftClass)}>
+                      <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
+                      <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-copilot-bg-soft text-brand-strong ring-1 ring-copilot-primary/10">
+                        <Icon className="h-5 w-5" aria-hidden />
+                      </span>
+                      <BoldParagraph text={p} className="mt-3 text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground" />
+                    </article>
+                  );
+                })}
+              </div>
+            </section>
 
             <section id={meta.misunderstandings.id} className={cn(SECTION_SCROLL_MARGIN, "space-y-2 sm:space-y-2.5")}>
               <div>

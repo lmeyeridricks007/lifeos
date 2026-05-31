@@ -12,6 +12,7 @@ const BASE = "/netherlands/services";
 export const SERVICE_GROUP_LABELS: Record<string, string> = {
   "immigration-legal": "Immigration & Legal",
   "banking-insurance": "Banking & Insurance",
+  "money-tax": "Money & Tax",
   "housing-relocation": "Housing & Relocation",
   "family-everyday-life": "Family & Everyday Life",
   "documents-legal": "Documents & Legal",
@@ -39,6 +40,16 @@ export const NETHERLANDS_SERVICES_CATEGORIES: ServiceCategoryCard[] = [
     examples: ["Traditional banks", "Digital banks", "Multi-currency"],
     bestForStage: "First weeks after arrival",
     group: "banking-insurance",
+    featured: true,
+  },
+  {
+    slug: "tax-advisors",
+    name: "Tax Advisors",
+    href: `${BASE}/tax-advisors/`,
+    description: "Compare Dutch tax advisors, expat accountants, and international tax specialists for tax returns, the 30% ruling, freelancing, and cross-border income.",
+    examples: ["Tax returns", "30% ruling", "Foreign income", "ZZP"],
+    bestForStage: "Before you move, first filing, and complex tax years",
+    group: "money-tax",
     featured: true,
   },
   // ——— Immigration & Legal ———

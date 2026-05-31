@@ -550,6 +550,7 @@ export const amsterdamCityPage: CityHubPageData = {
   ],
 
   cityLinks: [
+    { label: "Compare the Randstad", href: "/netherlands/randstad/" },
     { label: "Moving to Rotterdam", href: "/netherlands/rotterdam/" },
     { label: "Moving to Utrecht", href: "/netherlands/utrecht/" },
     { label: "Moving to The Hague", href: "/netherlands/the-hague/" },

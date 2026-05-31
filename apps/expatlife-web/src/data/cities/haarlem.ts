@@ -586,6 +586,7 @@ export const haarlemCityPage: CityHubPageData = {
   cityLinksSectionTitle: "Explore More Cities and Services",
 
   cityLinks: [
+    { label: "Compare the Randstad", href: "/netherlands/randstad/" },
     { label: "Compare all Dutch cities", href: "/netherlands/cities/" },
     { label: "Services hub (banks, housing, visas)", href: "/netherlands/services/" },
     { label: "Moving to Amsterdam", href: "/netherlands/amsterdam/" },

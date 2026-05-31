@@ -170,6 +170,7 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
   relatedGuides: [
     { label: "EU vs Non-EU Moving to the Netherlands", href: `${BASE}/eu-vs-non-eu-moving-to-netherlands/` },
     { label: "Move to the Netherlands without a job", href: `${BASE}/move-to-netherlands-without-job/` },
+    { label: "30% Ruling in the Netherlands", href: `${BASE}/taxes/30-percent-ruling/` },
     { label: "Open a bank account in the Netherlands", href: `${BASE}/open-bank-account-netherlands/` },
     { label: "First 90 Days in the Netherlands", href: `${BASE}/first-90-days-netherlands/` },
     { label: "Documents needed to move", href: `${BASE}/documents-needed-to-move-netherlands/` },

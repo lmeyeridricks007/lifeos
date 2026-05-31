@@ -15,6 +15,7 @@ export const revalidate = CONTENT_REVALIDATE;
 
 /** City hubs — filtered by `isRouteLive` (publish gates); list kept aligned with `netherlandsCityHubPages`. */
 const CITY_PAGES = [
+  { label: "Randstad Netherlands guide", href: "/netherlands/randstad/" },
   { label: "Amsterdam", href: "/netherlands/amsterdam/" },
   { label: "Rotterdam", href: "/netherlands/rotterdam/" },
   { label: "Utrecht", href: "/netherlands/utrecht/" },

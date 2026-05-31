@@ -242,7 +242,7 @@ function filterMegaMenu(menu: MegaMenu): MegaMenu {
     ) {
       const chain = [
         item("Netherlands taxes", "/netherlands/taxes/", "Tax guides for expats."),
-        item("Expat Taxes in the Netherlands", "/netherlands/money/expat-taxes-netherlands/", "Scenario-led expat tax topics and tools."),
+        item("Expat Taxes in the Netherlands", "/netherlands/taxes/expat-taxes-netherlands/", "Scenario-led expat tax topics and tools."),
         item("Banking", "/netherlands/money/banking/", "Accounts, switching, and everyday banking."),
       ];
       for (const cand of chain) {
@@ -511,6 +511,7 @@ const HOUSING_GUIDE_FIRST_SEGMENTS = new Set([
 
 /** Major Dutch city hub paths. */
 const CITY_HUB_PREFIXES = [
+  "/netherlands/randstad",
   "/netherlands/amsterdam",
   "/netherlands/rotterdam",
   "/netherlands/utrecht",
@@ -645,6 +646,21 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         ],
       },
       {
+        title: "More",
+        items: [
+          item(
+            "Randstad Guide",
+            "/netherlands/randstad/",
+            "Compare the main urban region before choosing where to live, work, study, or commute."
+          ),
+          item(
+            "Taxes",
+            "/netherlands/taxes/",
+            "Understand income tax, the 30% ruling, payroll, annual returns, freelancers, and expat tax topics."
+          ),
+        ],
+      },
+      {
         title: "Work permits & job changes",
         items: [
           item("Working in the Netherlands", "/netherlands/moving/working-in-the-netherlands/"),
@@ -671,7 +687,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Popular cities",
         comingSoonFirst: true,
         items: [
-          soon("Randstad overview"),
+          item(
+            "Randstad Guide",
+            "/netherlands/randstad/",
+            "Compare Amsterdam, Rotterdam, The Hague, Utrecht and nearby cities as one connected region."
+          ),
           item("Amsterdam", "/netherlands/amsterdam"),
           item("Rotterdam", "/netherlands/rotterdam"),
           item("Utrecht", "/netherlands/utrecht"),
@@ -816,7 +836,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/money/tax-guide-for-expats/",
             "Money-pillar orientation: payroll, returns, 30% ruling, Box 3, payslips, cross-border — planning only."
           ),
-          item("Expat Taxes in the Netherlands", "/netherlands/money/expat-taxes-netherlands/", "Scenario-led expat tax topics."),
+          item("Expat Taxes in the Netherlands", "/netherlands/taxes/expat-taxes-netherlands/", "Scenario-led expat tax topics."),
           item(
             "How taxes work in the Netherlands",
             "/netherlands/money/how-taxes-work-in-the-netherlands/",
@@ -834,13 +854,13 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           ),
           item(
             "30% ruling in the Netherlands",
-            "/netherlands/money/taxes/30-percent-ruling/",
-            "Money guide: what the 30% facility is, employer involvement, and links to the ruling calculator — not tax advice."
+            "/netherlands/taxes/30-percent-ruling/",
+            "Taxes guide: what the 30% facility is, employer involvement, eligibility, changes, and official sources."
           ),
           item(
             "Tax advisors for expats",
-            "/netherlands/money/taxes/tax-advisors/",
-            "Money guide: when paid tax help may be worth comparing, what to prepare, and how to read provider scope — not tax advice."
+            "/netherlands/services/tax-advisors/",
+            "Services directory: compare Dutch tax advisors, expat accountants, and international tax specialists."
           ),
         ],
       },
@@ -849,7 +869,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         items: [
           item("Employment overview", "/netherlands/money/taxes/employment-overview"),
           item("Net salary Netherlands", "/netherlands/taxes/net-salary-netherlands/"),
-          item("Gross vs net salary Netherlands", "/netherlands/taxes/gross-vs-netherlands-salary/"),
+          item("Gross vs net salary Netherlands", "/netherlands/taxes/gross-vs-net-salary/"),
           item("Payroll tax Netherlands", "/netherlands/taxes/payroll-tax-netherlands/"),
           item("Average salary Netherlands", "/netherlands/work/average-salary-netherlands/"),
           item("Salary negotiation Netherlands", "/netherlands/work/salary-negotiation-netherlands/"),
@@ -959,6 +979,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         roadmapNote: "Entries without a published page yet appear as muted roadmap rows (not links).",
         items: [
           item("Banks", "/netherlands/services/banks/"),
+          item("Tax Advisors", "/netherlands/services/tax-advisors/", "Tax returns, 30% ruling, ZZP and cross-border tax support for expats."),
           item(
             "Traditional vs digital banks (guide)",
             "/netherlands/money/banking/traditional-vs-digital/",

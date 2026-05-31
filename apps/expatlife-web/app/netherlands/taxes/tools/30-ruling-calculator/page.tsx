@@ -136,8 +136,8 @@ const OFFICIAL_SOURCES = [
 
 const RELATED_NEXT_STEPS = [
   {
-    href: `${BASE}/money/taxes/30-percent-ruling/`,
-    title: "30% ruling in the Netherlands (Money guide)",
+    href: `${BASE}/taxes/30-percent-ruling/`,
+    title: "30% ruling in the Netherlands",
     description: "Educational walkthrough: employer setup, trust framing, and when to use this calculator — read before you treat outputs as final.",
   },
   {
@@ -225,7 +225,7 @@ const TOC = [
 ];
 
 const QUICK = [
-  { label: "30% ruling guide (Money)", href: `${BASE}/money/taxes/30-percent-ruling/` },
+  { label: "30% ruling guide", href: `${BASE}/taxes/30-percent-ruling/` },
   { label: "Understand first →", href: "#understand-first-then-calculate" },
   { label: "Check eligibility", href: "#tool-inputs" },
   { label: "See results", href: "#tool-results" },
@@ -322,7 +322,7 @@ export default function ThirtyPercentRulingCalculatorPage() {
             primaryCtaLabel="Check eligibility"
             primaryCtaScrollToId="tool-inputs"
             secondaryCtaLabel="Read the 30% ruling guide"
-            secondaryCtaHref={`${BASE}/money/taxes/30-percent-ruling/`}
+            secondaryCtaHref={`${BASE}/taxes/30-percent-ruling/`}
             image={{
               src: "/images/tools/expatlife-netherlands-budget-planning.png",
               alt: "Laptop and documents on a desk for Netherlands tax and salary planning.",
@@ -448,8 +448,8 @@ export default function ThirtyPercentRulingCalculatorPage() {
         faqItems={FAQ_ITEMS}
         internalLinkStrip={
           <nav className="flex flex-wrap gap-x-4 gap-y-2 text-sm" aria-label="Hubs and related tools">
-            <Link href={`${BASE}/money/taxes/30-percent-ruling/`} className="font-medium text-brand-600 hover:text-brand-700">
-              30% ruling guide (Money)
+            <Link href={`${BASE}/taxes/30-percent-ruling/`} className="font-medium text-brand-600 hover:text-brand-700">
+              30% ruling guide
             </Link>
             <Link href={`${BASE}/money/tax-guide-for-expats/`} className="font-medium text-brand-600 hover:text-brand-700">
               Tax guide for expats

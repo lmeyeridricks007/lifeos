@@ -13,6 +13,12 @@ import { getPublishedOriginCountryGuides } from "@/src/lib/countries/originCount
 import { NETHERLANDS_SERVICES_CATEGORIES, SERVICE_GROUP_LABELS } from "@/src/data/services/categories";
 import { netherlandsServicesPage } from "@/src/data/services/netherlands-services-page";
 import { netherlandsCitiesOverview } from "@/src/data/cities-overview/netherlands-cities";
+import { randstadPage } from "@/src/components/cities/randstad/randstadPageModel";
+import { taxesHubPage } from "@/src/components/taxes/taxesHubPageModel";
+import { expatTaxesNetherlandsPage } from "@/src/components/taxes/expatTaxesNetherlandsPageModel";
+import { thirtyPercentRulingPage } from "@/src/components/taxes/thirtyPercentRulingPageModel";
+import { netSalaryNetherlandsPage } from "@/src/components/taxes/netSalaryNetherlandsPageModel";
+import { grossVsNetSalaryPage } from "@/src/components/taxes/grossVsNetSalaryPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -274,6 +280,130 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       citiesHub.hero.subtitle,
       citiesHub.seo.description,
       citiesHub.seo.keywords
+    ),
+  });
+
+  out.push({
+    id: "region:randstad",
+    title: randstadPage.hero.pageTitle,
+    href: randstadPage.path,
+    categoryLabel: "Region",
+    pageType: "guide",
+    section: "Cities",
+    description: randstadPage.seo.description,
+    image: randstadPage.hero.image.src,
+    imageAlt: randstadPage.hero.image.alt,
+    keywords: [...randstadPage.seo.keywords],
+    searchText: joinSearchParts(
+      randstadPage.hero.pageTitle,
+      randstadPage.hero.subtitle,
+      randstadPage.seo.description,
+      [...randstadPage.seo.keywords],
+      randstadPage.mainCities.map((city) => city.name)
+    ),
+  });
+
+  out.push({
+    id: "hub:taxes",
+    title: taxesHubPage.hero.pageTitle,
+    href: taxesHubPage.path,
+    categoryLabel: "Hub",
+    pageType: "hub",
+    section: "Taxes",
+    description: taxesHubPage.seo.description,
+    image: taxesHubPage.hero.image.src,
+    imageAlt: taxesHubPage.hero.image.alt,
+    keywords: [...taxesHubPage.seo.keywords],
+    searchText: joinSearchParts(
+      taxesHubPage.hero.pageTitle,
+      taxesHubPage.hero.subtitle,
+      taxesHubPage.seo.description,
+      [...taxesHubPage.seo.keywords],
+      taxesHubPage.taxTopics.map((topic) => topic.label)
+    ),
+  });
+
+  out.push({
+    id: "guide:expat-taxes-netherlands",
+    title: expatTaxesNetherlandsPage.hero.pageTitle,
+    href: expatTaxesNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: expatTaxesNetherlandsPage.seo.description,
+    image: expatTaxesNetherlandsPage.hero.image.src,
+    imageAlt: expatTaxesNetherlandsPage.hero.image.alt,
+    keywords: [...expatTaxesNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      expatTaxesNetherlandsPage.hero.pageTitle,
+      expatTaxesNetherlandsPage.hero.subtitle,
+      expatTaxesNetherlandsPage.seo.description,
+      [...expatTaxesNetherlandsPage.seo.keywords],
+      expatTaxesNetherlandsPage.topicLinks.map((topic) => topic.label),
+      [...expatTaxesNetherlandsPage.scenarios]
+    ),
+  });
+
+  out.push({
+    id: "guide:30-percent-ruling",
+    title: thirtyPercentRulingPage.hero.pageTitle,
+    href: thirtyPercentRulingPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: thirtyPercentRulingPage.seo.description,
+    image: thirtyPercentRulingPage.hero.image.src,
+    imageAlt: thirtyPercentRulingPage.hero.image.alt,
+    keywords: [...thirtyPercentRulingPage.seo.keywords],
+    searchText: joinSearchParts(
+      thirtyPercentRulingPage.hero.pageTitle,
+      thirtyPercentRulingPage.hero.subtitle,
+      thirtyPercentRulingPage.seo.description,
+      [...thirtyPercentRulingPage.seo.keywords],
+      thirtyPercentRulingPage.snapshotCards.map((card) => `${card.title} ${card.body}`),
+      thirtyPercentRulingPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:net-salary-netherlands",
+    title: netSalaryNetherlandsPage.hero.pageTitle,
+    href: netSalaryNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: netSalaryNetherlandsPage.seo.description,
+    image: netSalaryNetherlandsPage.hero.image.src,
+    imageAlt: netSalaryNetherlandsPage.hero.image.alt,
+    keywords: [...netSalaryNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      netSalaryNetherlandsPage.hero.pageTitle,
+      netSalaryNetherlandsPage.hero.subtitle,
+      netSalaryNetherlandsPage.seo.description,
+      [...netSalaryNetherlandsPage.seo.keywords],
+      netSalaryNetherlandsPage.salaryExamples.map((example) => `${example.grossSalary} ${example.takeHomeConcept}`),
+      netSalaryNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:gross-vs-net-salary",
+    title: grossVsNetSalaryPage.hero.pageTitle,
+    href: grossVsNetSalaryPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: grossVsNetSalaryPage.seo.description,
+    image: grossVsNetSalaryPage.hero.image.src,
+    imageAlt: grossVsNetSalaryPage.hero.image.alt,
+    keywords: [...grossVsNetSalaryPage.seo.keywords],
+    searchText: joinSearchParts(
+      grossVsNetSalaryPage.hero.pageTitle,
+      grossVsNetSalaryPage.hero.subtitle,
+      grossVsNetSalaryPage.seo.description,
+      [...grossVsNetSalaryPage.seo.keywords],
+      grossVsNetSalaryPage.salaryExamples.map((example) => `${example.grossSalary} ${example.estimatedNetRange}`),
+      grossVsNetSalaryPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

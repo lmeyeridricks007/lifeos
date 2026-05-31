@@ -52,6 +52,11 @@ const HUB_LINKS = [
     description: "Calculators and planners: salary, cost of living, bank comparison, banking cost estimator, and more.",
   },
   {
+    href: "/netherlands/taxes/",
+    title: "Netherlands Taxes Guide",
+    description: "Tax pillar hub for income tax, 30% ruling, payroll, tax returns, freelancers, and expat tax topics.",
+  },
+  {
     href: TAX_GUIDE_FOR_EXPATS_PATH,
     title: "Netherlands Tax Guide for Expats",
     description: "How payroll, withholding, and the annual return connect — orientation, not filing advice.",

@@ -638,6 +638,7 @@ export const amstelveenCityPage: CityHubPageData = {
   cityLinksSectionTitle: "Explore More Cities and Services",
 
   cityLinks: [
+    { label: "Compare the Randstad", href: "/netherlands/randstad/" },
     { label: "Compare all Dutch cities", href: "/netherlands/cities/" },
     { label: "Services hub", href: "/netherlands/services/" },
     { label: "Moving to Amsterdam", href: "/netherlands/amsterdam/" },

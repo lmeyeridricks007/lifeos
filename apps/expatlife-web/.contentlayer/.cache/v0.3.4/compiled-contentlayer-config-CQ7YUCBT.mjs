@@ -1,4 +1,4 @@
-// contentlayer.config.js
+// contentlayer.config.ts
 import fs from "node:fs";
 import path from "node:path";
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
@@ -71,4 +71,4 @@ export {
   Pillar,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-ZSKEDQSV.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-CQ7YUCBT.mjs.map
