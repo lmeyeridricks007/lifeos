@@ -172,12 +172,12 @@ const nextConfig = {
       },
       {
         source: "/netherlands/work/expat-salary-netherlands",
-        destination: "/netherlands/taxes/average-salary-netherlands/",
+        destination: "/netherlands/jobs/expat-salary-netherlands/",
         permanent: true,
       },
       {
         source: "/netherlands/work/expat-salary-netherlands/",
-        destination: "/netherlands/taxes/average-salary-netherlands/",
+        destination: "/netherlands/jobs/expat-salary-netherlands/",
         permanent: true,
       },
       {

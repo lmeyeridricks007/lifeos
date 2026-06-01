@@ -23,6 +23,7 @@ import { payrollTaxNetherlandsPage } from "@/src/components/taxes/payrollTaxNeth
 import { averageSalaryNetherlandsPage } from "@/src/components/taxes/averageSalaryNetherlandsPageModel";
 import { salaryNegotiationNetherlandsPage } from "@/src/components/jobs/salaryNegotiationNetherlandsPageModel";
 import { minimumWageNetherlandsPage } from "@/src/components/jobs/minimumWageNetherlandsPageModel";
+import { expatSalaryNetherlandsPage } from "@/src/components/jobs/expatSalaryNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -500,6 +501,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       minimumWageNetherlandsPage.industryCards.map((card) => `${card.title} ${card.body}`),
       minimumWageNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       minimumWageNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:expat-salary-netherlands",
+    title: expatSalaryNetherlandsPage.hero.pageTitle,
+    href: expatSalaryNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: expatSalaryNetherlandsPage.seo.description,
+    image: expatSalaryNetherlandsPage.hero.image.src,
+    imageAlt: expatSalaryNetherlandsPage.hero.image.alt,
+    keywords: [...expatSalaryNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      expatSalaryNetherlandsPage.hero.pageTitle,
+      expatSalaryNetherlandsPage.hero.subtitle,
+      expatSalaryNetherlandsPage.seo.description,
+      [...expatSalaryNetherlandsPage.seo.keywords],
+      expatSalaryNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      expatSalaryNetherlandsPage.industryCards.map((card) => `${card.title} ${card.body}`),
+      expatSalaryNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      expatSalaryNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

@@ -112,6 +112,12 @@ export const taxesHubPage = {
       description: "How Dutch minimum wage works: age bands, gross vs net, take-home pay and living costs for expats.",
     },
     {
+      label: "Expat Salary in the Netherlands",
+      href: "/netherlands/jobs/expat-salary-netherlands/",
+      status: "live",
+      description: "Salary expectations for international professionals by city, industry, taxes and the 30% ruling.",
+    },
+    {
       label: "Net Salary in the Netherlands",
       href: "/netherlands/taxes/net-salary-netherlands/",
       status: "live",

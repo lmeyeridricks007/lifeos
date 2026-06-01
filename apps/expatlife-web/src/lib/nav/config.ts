@@ -668,6 +668,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/minimum-wage-netherlands/",
             "Dutch minimum wage for expats: age bands, taxes, take-home pay and living costs."
           ),
+          item(
+            "Expat salary",
+            "/netherlands/jobs/expat-salary-netherlands/",
+            "Salary expectations for international professionals by city, industry, taxes and the 30% ruling."
+          ),
         ],
       },
       {
@@ -894,8 +899,8 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           ),
           item(
             "Expat salary Netherlands",
-            "/netherlands/taxes/average-salary-netherlands/",
-            "Salary benchmarks for expats by city, industry and experience — with gross-to-net context."
+            "/netherlands/jobs/expat-salary-netherlands/",
+            "Salary expectations for expats by city, industry and experience — with gross-to-net and 30% ruling context."
           ),
           item("Employee benefits Netherlands", "/netherlands/work/employee-benefits-netherlands/"),
           item("Pension Netherlands", "/netherlands/work/pension-netherlands/"),

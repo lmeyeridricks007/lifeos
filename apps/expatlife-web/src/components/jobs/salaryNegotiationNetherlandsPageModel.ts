@@ -403,6 +403,7 @@ export const salaryNegotiationNetherlandsPage = {
   relatedGuides: [
     { label: "Netherlands Taxes Guide", href: "/netherlands/taxes/", status: "live", description: "Salary and tax hub for expats." },
     { label: "Minimum Wage in the Netherlands", href: "/netherlands/jobs/minimum-wage-netherlands/", status: "live", description: "Legal pay floor, age bands and living-cost context." },
+    { label: "Expat Salary in the Netherlands", href: "/netherlands/jobs/expat-salary-netherlands/", status: "live", description: "Salary expectations for international professionals before you negotiate." },
     { label: "Average Salary Netherlands", href: "/netherlands/taxes/average-salary-netherlands/", status: "live", description: "Salary benchmarking before you negotiate." },
     { label: "Net Salary Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Estimate take-home pay from offers." },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Understand Dutch salary wording." },
