@@ -1,0 +1,39 @@
+{
+  "id": "nl-jobs-employee-benefits-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/jobs/employee-benefits-netherlands/",
+    "slot": "mid-page-employee-benefits-support"
+  },
+  "variant": "cards",
+  "title": "Providers expats compare for benefits, tax and employment planning",
+  "intro": "Understanding a Dutch benefits package often touches tax context, relocation timing and payroll questions. These listings are for discovery when you need scoped help — not HR policy advice or legal guarantees. Confirm scope, pricing and credentials before you commit.",
+  "categoryOrder": ["tax", "services"],
+  "items": [
+    {
+      "providerId": "blue-umbrella",
+      "reason": "Online Dutch tax filing and administration support for internationals."
+    },
+    {
+      "providerId": "broadstreet",
+      "reason": "Tax, accountancy, payroll, and cross-border support for expats and entrepreneurs."
+    },
+    {
+      "providerId": "taxsavers",
+      "reason": "Dutch tax return, M-form, 30% ruling, and VAT support for internationals."
+    }
+  ],
+  "registryProviders": {
+    "categories": [
+      "relocation-services",
+      "relocation-agencies",
+      "visa-consultants",
+      "immigration-lawyers"
+    ],
+    "limit": 6,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to employment benefits planning, not pay-to-rank. This is not tax, payroll, immigration or legal advice — verify outcomes with employers, the Belastingdienst, UWV, or qualified advisers."
+}

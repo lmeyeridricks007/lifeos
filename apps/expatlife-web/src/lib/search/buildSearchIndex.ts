@@ -24,6 +24,7 @@ import { averageSalaryNetherlandsPage } from "@/src/components/taxes/averageSala
 import { salaryNegotiationNetherlandsPage } from "@/src/components/jobs/salaryNegotiationNetherlandsPageModel";
 import { minimumWageNetherlandsPage } from "@/src/components/jobs/minimumWageNetherlandsPageModel";
 import { expatSalaryNetherlandsPage } from "@/src/components/jobs/expatSalaryNetherlandsPageModel";
+import { employeeBenefitsNetherlandsPage } from "@/src/components/jobs/employeeBenefitsNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -524,6 +525,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       expatSalaryNetherlandsPage.industryCards.map((card) => `${card.title} ${card.body}`),
       expatSalaryNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       expatSalaryNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:employee-benefits-netherlands",
+    title: employeeBenefitsNetherlandsPage.hero.pageTitle,
+    href: employeeBenefitsNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: employeeBenefitsNetherlandsPage.seo.description,
+    image: employeeBenefitsNetherlandsPage.hero.image.src,
+    imageAlt: employeeBenefitsNetherlandsPage.hero.image.alt,
+    keywords: [...employeeBenefitsNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      employeeBenefitsNetherlandsPage.hero.pageTitle,
+      employeeBenefitsNetherlandsPage.hero.subtitle,
+      employeeBenefitsNetherlandsPage.seo.description,
+      [...employeeBenefitsNetherlandsPage.seo.keywords],
+      employeeBenefitsNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      employeeBenefitsNetherlandsPage.industryCards.map((card) => `${card.title} ${card.body}`),
+      employeeBenefitsNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      employeeBenefitsNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

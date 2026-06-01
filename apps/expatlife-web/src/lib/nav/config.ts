@@ -547,7 +547,9 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
 
   if (CITY_HUB_PREFIXES.some((pre) => pathname === pre || pathname.startsWith(`${pre}/`))) return "cities";
 
-  if (pathname.startsWith("/netherlands/money") || pathname.startsWith("/netherlands/taxes")) return "money";
+  if (pathname.startsWith("/netherlands/money") || pathname.startsWith("/netherlands/taxes") || pathname.startsWith("/netherlands/jobs")) {
+    return "money";
+  }
 
   if (
     pathname === "/netherlands/family/tools/childcare-cost-estimator" ||
@@ -672,6 +674,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Expat salary",
             "/netherlands/jobs/expat-salary-netherlands/",
             "Salary expectations for international professionals by city, industry, taxes and the 30% ruling."
+          ),
+          item(
+            "Employee benefits",
+            "/netherlands/jobs/employee-benefits-netherlands/",
+            "Pension, holiday allowance, leave, remote work and expat compensation packages explained."
           ),
         ],
       },
@@ -902,7 +909,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/expat-salary-netherlands/",
             "Salary expectations for expats by city, industry and experience — with gross-to-net and 30% ruling context."
           ),
-          item("Employee benefits Netherlands", "/netherlands/work/employee-benefits-netherlands/"),
+          item(
+            "Employee benefits Netherlands",
+            "/netherlands/jobs/employee-benefits-netherlands/",
+            "Pension, holiday allowance, vacation days, sick leave, remote work and expat packages."
+          ),
           item("Pension Netherlands", "/netherlands/work/pension-netherlands/"),
           item("Holiday allowance Netherlands", "/netherlands/work/holiday-allowance-netherlands/"),
           item("Bonus tax Netherlands", "/netherlands/work/bonus-tax-netherlands/"),

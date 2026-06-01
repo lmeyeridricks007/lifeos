@@ -181,6 +181,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/employee-benefits-netherlands",
+        destination: "/netherlands/jobs/employee-benefits-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/employee-benefits-netherlands/",
+        destination: "/netherlands/jobs/employee-benefits-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/average-salary-netherlands",
         destination: "/netherlands/taxes/average-salary-netherlands/",
         permanent: true,

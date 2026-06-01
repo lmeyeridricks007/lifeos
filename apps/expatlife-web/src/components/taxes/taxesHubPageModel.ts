@@ -118,6 +118,12 @@ export const taxesHubPage = {
       description: "Salary expectations for international professionals by city, industry, taxes and the 30% ruling.",
     },
     {
+      label: "Employee Benefits in the Netherlands",
+      href: "/netherlands/jobs/employee-benefits-netherlands/",
+      status: "live",
+      description: "Pension, holiday allowance, leave, remote work and expat compensation packages explained.",
+    },
+    {
       label: "Net Salary in the Netherlands",
       href: "/netherlands/taxes/net-salary-netherlands/",
       status: "live",

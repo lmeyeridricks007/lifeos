@@ -294,6 +294,8 @@ const EXTRA_LIVE_PATHS = [
   /** Live App Router guide — keep in EXTRA_LIVE_PATHS so Money mega menu Jobs & salaries links stay clickable (not “Soon”). */
   "/netherlands/jobs/minimum-wage-netherlands/",
   "/netherlands/jobs/expat-salary-netherlands/",
+  /** Live App Router guide — keep in EXTRA_LIVE_PATHS so Money mega menu Jobs & salaries links stay clickable (not “Soon”). */
+  "/netherlands/jobs/employee-benefits-netherlands/",
   /** Money pillar tax orientation guide (App Router). */
   "/netherlands/money/tax-guide-for-expats/",
   "/netherlands/money/how-taxes-work-in-the-netherlands/",

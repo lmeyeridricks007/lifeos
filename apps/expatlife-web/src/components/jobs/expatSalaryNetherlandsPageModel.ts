@@ -351,6 +351,7 @@ export const expatSalaryNetherlandsPage = {
     { label: "Payroll Tax", href: PAYROLL_TAX_NETHERLANDS_PATH, status: "live", description: "How payroll deductions affect net pay." },
     { label: "30% Ruling", href: THIRTY_PERCENT_RULING_PATH, status: "live", description: "Expat scheme context for offer evaluation." },
     { label: "Salary Negotiation", href: SALARY_NEGOTIATION_NETHERLANDS_PATH, status: "live", description: "Negotiating total compensation in the Netherlands." },
+    { label: "Employee Benefits Guide", href: "/netherlands/jobs/employee-benefits-netherlands/", status: "live", description: "Pension, allowance, leave and expat packages." },
   ] satisfies ExpatSalaryNetherlandsLink[],
   relatedGuides: [
     { label: "Moving to the Netherlands", href: MOVING_HUB_PATH, status: "live", description: "Relocation planning with employment context." },
@@ -359,6 +360,7 @@ export const expatSalaryNetherlandsPage = {
     { label: "Minimum Wage Guide", href: MINIMUM_WAGE_NETHERLANDS_PATH, status: "live", description: "Statutory floor vs professional expat salaries." },
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, status: "live", description: "Compare living costs by city." },
     { label: "Salary Negotiation", href: SALARY_NEGOTIATION_NETHERLANDS_PATH, status: "live", description: "Negotiating above entry offers." },
+    { label: "Employee Benefits Guide", href: "/netherlands/jobs/employee-benefits-netherlands/", status: "live", description: "Understand Dutch compensation packages beyond base salary." },
   ] satisfies ExpatSalaryNetherlandsLink[],
   exploreNextCards: [
     { label: "Average Salary Guide", href: AVERAGE_SALARY_NETHERLANDS_PATH, status: "live", description: "Benchmark beyond expat headlines." },
