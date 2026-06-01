@@ -161,6 +161,36 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/minimum-wage-netherlands",
+        destination: "/netherlands/jobs/minimum-wage-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/minimum-wage-netherlands/",
+        destination: "/netherlands/jobs/minimum-wage-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/expat-salary-netherlands",
+        destination: "/netherlands/taxes/average-salary-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/expat-salary-netherlands/",
+        destination: "/netherlands/taxes/average-salary-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/average-salary-netherlands",
+        destination: "/netherlands/taxes/average-salary-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/average-salary-netherlands/",
+        destination: "/netherlands/taxes/average-salary-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/money/tools/30-ruling-calculator",
         destination: "/netherlands/taxes/tools/30-ruling-calculator/",
         permanent: true,

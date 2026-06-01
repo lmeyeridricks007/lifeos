@@ -412,6 +412,7 @@ export const averageSalaryNetherlandsPage = {
   ],
   relatedGuides: [
     { label: "Netherlands Taxes Guide", href: "/netherlands/taxes/", status: "live", description: "Central Dutch tax hub for expats." },
+    { label: "Minimum Wage in the Netherlands", href: "/netherlands/jobs/minimum-wage-netherlands/", status: "live", description: "Statutory minimum wage, age bands and take-home pay context." },
     { label: "Salary Negotiation in the Netherlands", href: "/netherlands/jobs/salary-negotiation-netherlands/", status: "live", description: "Negotiate Dutch offers with culture and total-compensation context." },
     { label: "Net Salary in the Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Estimate take-home pay from gross offers." },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Understand Dutch gross and net salary basics." },

@@ -106,6 +106,12 @@ export const taxesHubPage = {
       description: "How expats negotiate Dutch job offers: culture, benefits, gross vs net and total compensation.",
     },
     {
+      label: "Minimum Wage in the Netherlands",
+      href: "/netherlands/jobs/minimum-wage-netherlands/",
+      status: "live",
+      description: "How Dutch minimum wage works: age bands, gross vs net, take-home pay and living costs for expats.",
+    },
+    {
       label: "Net Salary in the Netherlands",
       href: "/netherlands/taxes/net-salary-netherlands/",
       status: "live",

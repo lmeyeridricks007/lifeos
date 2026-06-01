@@ -663,6 +663,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/salary-negotiation-netherlands/",
             "How expats negotiate Dutch job offers: culture, gross vs net, benefits and total compensation."
           ),
+          item(
+            "Minimum wage",
+            "/netherlands/jobs/minimum-wage-netherlands/",
+            "Dutch minimum wage for expats: age bands, taxes, take-home pay and living costs."
+          ),
         ],
       },
       {
@@ -882,8 +887,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/salary-negotiation-netherlands/",
             "Practical expat guide to Dutch offer negotiation, benefits and total compensation."
           ),
-          item("Minimum wage Netherlands", "/netherlands/work/minimum-wage-netherlands/"),
-          item("Expat salary Netherlands", "/netherlands/work/expat-salary-netherlands/"),
+          item(
+            "Minimum wage Netherlands",
+            "/netherlands/jobs/minimum-wage-netherlands/",
+            "How Dutch minimum wage works for expats — age bands, taxes, take-home pay and living costs."
+          ),
+          item(
+            "Expat salary Netherlands",
+            "/netherlands/taxes/average-salary-netherlands/",
+            "Salary benchmarks for expats by city, industry and experience — with gross-to-net context."
+          ),
           item("Employee benefits Netherlands", "/netherlands/work/employee-benefits-netherlands/"),
           item("Pension Netherlands", "/netherlands/work/pension-netherlands/"),
           item("Holiday allowance Netherlands", "/netherlands/work/holiday-allowance-netherlands/"),

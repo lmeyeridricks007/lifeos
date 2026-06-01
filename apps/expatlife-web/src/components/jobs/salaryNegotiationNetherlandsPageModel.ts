@@ -331,6 +331,7 @@ export const salaryNegotiationNetherlandsPage = {
   },
   relatedSalaryGuides: [
     { label: "Average Salary Netherlands", href: "/netherlands/taxes/average-salary-netherlands/", status: "live", description: "Benchmark salaries by city, industry and experience." },
+    { label: "Minimum Wage in the Netherlands", href: "/netherlands/jobs/minimum-wage-netherlands/", status: "live", description: "Statutory pay floor, age bands and take-home pay context." },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Understand why Dutch offers are quoted gross." },
     { label: "Net Salary Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Estimate take-home pay from your offer." },
     { label: "Payroll Tax", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "live", description: "Learn how payroll deductions affect net pay." },
@@ -401,6 +402,7 @@ export const salaryNegotiationNetherlandsPage = {
   ],
   relatedGuides: [
     { label: "Netherlands Taxes Guide", href: "/netherlands/taxes/", status: "live", description: "Salary and tax hub for expats." },
+    { label: "Minimum Wage in the Netherlands", href: "/netherlands/jobs/minimum-wage-netherlands/", status: "live", description: "Legal pay floor, age bands and living-cost context." },
     { label: "Average Salary Netherlands", href: "/netherlands/taxes/average-salary-netherlands/", status: "live", description: "Salary benchmarking before you negotiate." },
     { label: "Net Salary Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Estimate take-home pay from offers." },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Understand Dutch salary wording." },

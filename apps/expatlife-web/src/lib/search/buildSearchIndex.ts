@@ -22,6 +22,7 @@ import { grossVsNetSalaryPage } from "@/src/components/taxes/grossVsNetSalaryPag
 import { payrollTaxNetherlandsPage } from "@/src/components/taxes/payrollTaxNetherlandsPageModel";
 import { averageSalaryNetherlandsPage } from "@/src/components/taxes/averageSalaryNetherlandsPageModel";
 import { salaryNegotiationNetherlandsPage } from "@/src/components/jobs/salaryNegotiationNetherlandsPageModel";
+import { minimumWageNetherlandsPage } from "@/src/components/jobs/minimumWageNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -476,6 +477,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       salaryNegotiationNetherlandsPage.negotiationTopics.map((card) => `${card.title} ${card.body}`),
       salaryNegotiationNetherlandsPage.mistakeCards.map((card) => `${card.title} ${card.body}`),
       salaryNegotiationNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:minimum-wage-netherlands",
+    title: minimumWageNetherlandsPage.hero.pageTitle,
+    href: minimumWageNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: minimumWageNetherlandsPage.seo.description,
+    image: minimumWageNetherlandsPage.hero.image.src,
+    imageAlt: minimumWageNetherlandsPage.hero.image.alt,
+    keywords: [...minimumWageNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      minimumWageNetherlandsPage.hero.pageTitle,
+      minimumWageNetherlandsPage.hero.subtitle,
+      minimumWageNetherlandsPage.seo.description,
+      [...minimumWageNetherlandsPage.seo.keywords],
+      minimumWageNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      minimumWageNetherlandsPage.industryCards.map((card) => `${card.title} ${card.body}`),
+      minimumWageNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      minimumWageNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 
