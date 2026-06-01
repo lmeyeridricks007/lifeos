@@ -19,6 +19,9 @@ import { expatTaxesNetherlandsPage } from "@/src/components/taxes/expatTaxesNeth
 import { thirtyPercentRulingPage } from "@/src/components/taxes/thirtyPercentRulingPageModel";
 import { netSalaryNetherlandsPage } from "@/src/components/taxes/netSalaryNetherlandsPageModel";
 import { grossVsNetSalaryPage } from "@/src/components/taxes/grossVsNetSalaryPageModel";
+import { payrollTaxNetherlandsPage } from "@/src/components/taxes/payrollTaxNetherlandsPageModel";
+import { averageSalaryNetherlandsPage } from "@/src/components/taxes/averageSalaryNetherlandsPageModel";
+import { salaryNegotiationNetherlandsPage } from "@/src/components/jobs/salaryNegotiationNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -404,6 +407,75 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       [...grossVsNetSalaryPage.seo.keywords],
       grossVsNetSalaryPage.salaryExamples.map((example) => `${example.grossSalary} ${example.estimatedNetRange}`),
       grossVsNetSalaryPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:payroll-tax-netherlands",
+    title: payrollTaxNetherlandsPage.hero.pageTitle,
+    href: payrollTaxNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: payrollTaxNetherlandsPage.seo.description,
+    image: payrollTaxNetherlandsPage.hero.image.src,
+    imageAlt: payrollTaxNetherlandsPage.hero.image.alt,
+    keywords: [...payrollTaxNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      payrollTaxNetherlandsPage.hero.pageTitle,
+      payrollTaxNetherlandsPage.hero.subtitle,
+      payrollTaxNetherlandsPage.seo.description,
+      [...payrollTaxNetherlandsPage.seo.keywords],
+      payrollTaxNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      payrollTaxNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      payrollTaxNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:average-salary-netherlands",
+    title: averageSalaryNetherlandsPage.hero.pageTitle,
+    href: averageSalaryNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: averageSalaryNetherlandsPage.seo.description,
+    image: averageSalaryNetherlandsPage.hero.image.src,
+    imageAlt: averageSalaryNetherlandsPage.hero.image.alt,
+    keywords: [...averageSalaryNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      averageSalaryNetherlandsPage.hero.pageTitle,
+      averageSalaryNetherlandsPage.hero.subtitle,
+      averageSalaryNetherlandsPage.seo.description,
+      [...averageSalaryNetherlandsPage.seo.keywords],
+      averageSalaryNetherlandsPage.snapshotContextCards.map((card) => `${card.label} ${card.value} ${card.note}`),
+      averageSalaryNetherlandsPage.industryCards.map((card) => `${card.title} ${card.body}`),
+      averageSalaryNetherlandsPage.cityCards.map((card) => `${card.label} ${card.note}`),
+      averageSalaryNetherlandsPage.scenarioQuestions.map((item) => `${item.q} ${item.a}`),
+      averageSalaryNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:salary-negotiation-netherlands",
+    title: salaryNegotiationNetherlandsPage.hero.pageTitle,
+    href: salaryNegotiationNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: salaryNegotiationNetherlandsPage.seo.description,
+    image: salaryNegotiationNetherlandsPage.hero.image.src,
+    imageAlt: salaryNegotiationNetherlandsPage.hero.image.alt,
+    keywords: [...salaryNegotiationNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      salaryNegotiationNetherlandsPage.hero.pageTitle,
+      salaryNegotiationNetherlandsPage.hero.subtitle,
+      salaryNegotiationNetherlandsPage.seo.description,
+      [...salaryNegotiationNetherlandsPage.seo.keywords],
+      salaryNegotiationNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      salaryNegotiationNetherlandsPage.negotiationTopics.map((card) => `${card.title} ${card.body}`),
+      salaryNegotiationNetherlandsPage.mistakeCards.map((card) => `${card.title} ${card.body}`),
+      salaryNegotiationNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

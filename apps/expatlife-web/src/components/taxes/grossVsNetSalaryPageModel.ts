@@ -173,10 +173,12 @@ export const grossVsNetSalaryPage = {
     "Why do online salary calculators differ?",
   ],
   relatedTaxTopics: [
+    { label: "Average Salary in the Netherlands", href: "/netherlands/taxes/average-salary-netherlands/", status: "live", description: "Salary benchmarking by city, industry and experience with expat context." },
+    { label: "Salary Negotiation in the Netherlands", href: "/netherlands/jobs/salary-negotiation-netherlands/", status: "live", description: "How expats negotiate Dutch job offers beyond headline gross pay." },
     { label: "Net Salary Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Calculator-led guide for estimating take-home pay." },
     { label: "Expat Taxes", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live", description: "Wider expat tax context for residency, returns and foreign income." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "Understand the expat tax facility and salary impact." },
-    { label: "Payroll Tax", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "comingSoon", description: "Future guide to wage tax and payroll withholding." },
+    { label: "Payroll Tax", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "live", description: "Guide to loonheffing, salary deductions and Dutch payroll withholding." },
     { label: "Income Tax", href: "/netherlands/taxes/income-tax-netherlands/", status: "comingSoon", description: "Future guide to Dutch income tax basics." },
   ] satisfies GrossVsNetSalaryLink[],
   services: [

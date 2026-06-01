@@ -141,6 +141,26 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/average-salary-netherlands",
+        destination: "/netherlands/taxes/average-salary-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/average-salary-netherlands/",
+        destination: "/netherlands/taxes/average-salary-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/salary-negotiation-netherlands",
+        destination: "/netherlands/jobs/salary-negotiation-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/salary-negotiation-netherlands/",
+        destination: "/netherlands/jobs/salary-negotiation-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/money/tools/30-ruling-calculator",
         destination: "/netherlands/taxes/tools/30-ruling-calculator/",
         permanent: true,

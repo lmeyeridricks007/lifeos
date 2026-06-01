@@ -658,6 +658,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/taxes/",
             "Understand income tax, the 30% ruling, payroll, annual returns, freelancers, and expat tax topics."
           ),
+          item(
+            "Salary negotiation",
+            "/netherlands/jobs/salary-negotiation-netherlands/",
+            "How expats negotiate Dutch job offers: culture, gross vs net, benefits and total compensation."
+          ),
         ],
       },
       {
@@ -865,14 +870,18 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         ],
       },
       {
-        title: "Salary & allowances",
+        title: "Jobs & salaries",
         items: [
           item("Employment overview", "/netherlands/money/taxes/employment-overview"),
           item("Net salary Netherlands", "/netherlands/taxes/net-salary-netherlands/"),
           item("Gross vs net salary Netherlands", "/netherlands/taxes/gross-vs-net-salary/"),
           item("Payroll tax Netherlands", "/netherlands/taxes/payroll-tax-netherlands/"),
-          item("Average salary Netherlands", "/netherlands/work/average-salary-netherlands/"),
-          item("Salary negotiation Netherlands", "/netherlands/work/salary-negotiation-netherlands/"),
+          item("Average salary Netherlands", "/netherlands/taxes/average-salary-netherlands/"),
+          item(
+            "Salary negotiation Netherlands",
+            "/netherlands/jobs/salary-negotiation-netherlands/",
+            "Practical expat guide to Dutch offer negotiation, benefits and total compensation."
+          ),
           item("Minimum wage Netherlands", "/netherlands/work/minimum-wage-netherlands/"),
           item("Expat salary Netherlands", "/netherlands/work/expat-salary-netherlands/"),
           item("Employee benefits Netherlands", "/netherlands/work/employee-benefits-netherlands/"),

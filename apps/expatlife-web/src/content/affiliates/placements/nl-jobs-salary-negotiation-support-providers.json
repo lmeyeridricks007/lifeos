@@ -1,0 +1,39 @@
+{
+  "id": "nl-jobs-salary-negotiation-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/jobs/salary-negotiation-netherlands/",
+    "slot": "mid-page-salary-negotiation-support"
+  },
+  "variant": "cards",
+  "title": "Companies expats compare when an offer touches tax, permits, or relocation",
+  "intro": "Negotiation is usually between you and the employer, but some questions need specialists: 30% ruling and payroll tax context, permit or sponsorship timing, or relocation support tied to the package. These listings are for discovery — confirm scope, pricing, and credentials before you commit.",
+  "categoryOrder": ["tax", "services"],
+  "items": [
+    {
+      "providerId": "blue-umbrella",
+      "reason": "Online Dutch tax filing and administration support for internationals."
+    },
+    {
+      "providerId": "broadstreet",
+      "reason": "Tax, accountancy, payroll, and cross-border support for expats and entrepreneurs."
+    },
+    {
+      "providerId": "taxsavers",
+      "reason": "Dutch tax return, M-form, 30% ruling, and VAT support for internationals."
+    }
+  ],
+  "registryProviders": {
+    "categories": [
+      "immigration-lawyers",
+      "visa-consultants",
+      "relocation-services",
+      "relocation-agencies"
+    ],
+    "limit": 6,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to offer evaluation and Dutch setup, not pay-to-rank. This is not tax, payroll, or immigration advice — verify outcomes with employers, the Belastingdienst, the IND, or qualified advisers."
+}

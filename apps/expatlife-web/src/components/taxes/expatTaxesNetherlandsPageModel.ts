@@ -90,7 +90,7 @@ export const expatTaxesNetherlandsPage = {
     { label: "Income tax", href: "/netherlands/taxes/income-tax-netherlands/", status: "comingSoon", description: "Future page for Dutch income tax basics." },
     { label: "Box tax system", href: "/netherlands/taxes/box-tax-system-netherlands/", status: "comingSoon", description: "Future page for Box 1, Box 2 and Box 3." },
     { label: "30% ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "Detailed guide to the expat scheme, eligibility, employer application and recent changes." },
-    { label: "Payroll tax", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "comingSoon", description: "Future page for wage tax and salary deductions." },
+    { label: "Payroll tax", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "live", description: "Guide to loonheffing, salary deductions and Dutch payroll withholding." },
     { label: "Tax return", href: "/netherlands/taxes/tax-return-netherlands/", status: "comingSoon", description: "Planned taxes-cluster URL for annual filing." },
     { label: "International tax", href: "/netherlands/taxes/international-tax-expats/", status: "comingSoon", description: "Future page for cross-border tax topics." },
     { label: "Freelancer / ZZP taxes", href: "/netherlands/taxes/freelancer-zzp-taxes/", status: "comingSoon", description: "Future page for freelancer tax responsibilities." },
@@ -121,6 +121,8 @@ export const expatTaxesNetherlandsPage = {
   ],
   relatedGuides: [
     { label: "Netherlands Taxes Hub", href: "/netherlands/taxes/", status: "live" },
+    { label: "Average Salary in the Netherlands", href: "/netherlands/taxes/average-salary-netherlands/", status: "live" },
+    { label: "Salary Negotiation in the Netherlands", href: "/netherlands/jobs/salary-negotiation-netherlands/", status: "live" },
     { label: "Net Salary in the Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live" },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live" },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live" },

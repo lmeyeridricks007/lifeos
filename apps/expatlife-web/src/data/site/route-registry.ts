@@ -149,7 +149,7 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/taxes/30-ruling-salary-requirements/": { title: "30% ruling salary requirements", section: "guides" },
   "/netherlands/taxes/30-ruling-application/": { title: "30% ruling application", section: "guides" },
   "/netherlands/taxes/30-ruling-expiry/": { title: "30% ruling expiry", section: "guides" },
-  "/netherlands/taxes/payroll-tax-netherlands/": { title: "Payroll tax Netherlands", section: "guides" },
+  /** Live App Router guides — listed in EXTRA_LIVE_PATHS; do not duplicate here or nav shows “Soon”. */
   "/netherlands/taxes/healthcare-allowance/": { title: "Healthcare allowance", section: "guides" },
   "/netherlands/taxes/rent-allowance/": { title: "Rent allowance", section: "guides" },
   "/netherlands/taxes/childcare-allowance/": { title: "Childcare allowance", section: "guides" },
@@ -288,6 +288,9 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/taxes/30-percent-ruling/",
   "/netherlands/taxes/net-salary-netherlands/",
   "/netherlands/taxes/gross-vs-net-salary/",
+  "/netherlands/taxes/payroll-tax-netherlands/",
+  "/netherlands/taxes/average-salary-netherlands/",
+  "/netherlands/jobs/salary-negotiation-netherlands/",
   /** Money pillar tax orientation guide (App Router). */
   "/netherlands/money/tax-guide-for-expats/",
   "/netherlands/money/how-taxes-work-in-the-netherlands/",

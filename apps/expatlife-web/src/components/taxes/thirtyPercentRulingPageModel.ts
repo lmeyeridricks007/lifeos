@@ -144,13 +144,15 @@ export const thirtyPercentRulingPage = {
     },
   ] satisfies ThirtyPercentRulingScenario[],
   relatedTaxTopics: [
+    { label: "Average Salary in the Netherlands", href: "/netherlands/taxes/average-salary-netherlands/", status: "live", description: "Salary benchmarking by city, industry and experience with expat context." },
+    { label: "Salary Negotiation in the Netherlands", href: "/netherlands/jobs/salary-negotiation-netherlands/", status: "live", description: "Negotiate offers with 30% ruling and total-compensation context." },
     { label: "Expat Taxes", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live", description: "Scenario-led expat tax guide for partial years, foreign assets, payroll and tax returns." },
     { label: "Net Salary", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Gross-to-net salary guide with calculator access and payroll deduction context." },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Beginner guide to Dutch gross salary, net salary, payslips and deductions." },
     { label: "Income Tax", href: "/netherlands/taxes/income-tax-netherlands/", status: "comingSoon", description: "Future guide for Dutch income tax basics." },
     { label: "Tax Residency", href: "/netherlands/taxes/tax-residency-netherlands/", status: "comingSoon", description: "Future taxes-cluster guide for residency concepts." },
     { label: "Box Tax System", href: "/netherlands/taxes/box-tax-system-netherlands/", status: "comingSoon", description: "Future guide for Box 1, Box 2 and Box 3." },
-    { label: "Payroll Tax", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "comingSoon", description: "Future guide for wage tax and salary deductions." },
+    { label: "Payroll Tax", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "live", description: "Guide to loonheffing, salary deductions and Dutch payroll withholding." },
     { label: "Tax Returns", href: "/netherlands/taxes/tax-return-netherlands/", status: "comingSoon", description: "Future taxes-cluster guide for annual filing." },
   ] satisfies ThirtyPercentRulingLink[],
   serviceLinks: [

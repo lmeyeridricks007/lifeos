@@ -94,6 +94,18 @@ export const taxesHubPage = {
       description: "A practical pillar guide for tax residency, income tax, payroll, returns and cross-border topics.",
     },
     {
+      label: "Average Salary in the Netherlands",
+      href: "/netherlands/taxes/average-salary-netherlands/",
+      status: "live",
+      description: "Salary benchmarking guide by city, industry and experience with expat context and tax links.",
+    },
+    {
+      label: "Salary Negotiation in the Netherlands",
+      href: "/netherlands/jobs/salary-negotiation-netherlands/",
+      status: "live",
+      description: "How expats negotiate Dutch job offers: culture, benefits, gross vs net and total compensation.",
+    },
+    {
       label: "Net Salary in the Netherlands",
       href: "/netherlands/taxes/net-salary-netherlands/",
       status: "live",
@@ -132,8 +144,8 @@ export const taxesHubPage = {
     {
       label: "Payroll Tax",
       href: "/netherlands/taxes/payroll-tax-netherlands/",
-      status: "comingSoon",
-      description: "What employers withhold and why payroll is not always the full tax story.",
+      status: "live",
+      description: "What employers withhold, why loonheffing reduces net salary and how payroll fits the Dutch tax system.",
     },
     {
       label: "Freelancers & ZZP Taxes",
@@ -174,7 +186,7 @@ export const taxesHubPage = {
     { label: "Am I a Dutch tax resident?", href: "/netherlands/money/tax-residency-netherlands/", status: "live" },
     { label: "What happens if I work remotely?", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live" },
     { label: "Can I keep investments abroad?", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live" },
-    { label: "What taxes are deducted from salary?", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "comingSoon" },
+    { label: "What taxes are deducted from salary?", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "live" },
   ] satisfies TaxesHubLink[],
   serviceLinks: [
     {

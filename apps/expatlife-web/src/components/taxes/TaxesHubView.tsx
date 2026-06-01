@@ -467,7 +467,7 @@ export function TaxesHubView() {
                 <InfographicFigure image={meta.infographics.employeeFreelancerFlow} />
               </div>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                <LiveOrSoonCard item={{ label: "Payroll tax", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "comingSoon", description: "Future guide for payroll withholding and salary deductions." }} iconIndex={4} />
+                <LiveOrSoonCard item={{ label: "Payroll tax", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "live", description: "Guide to loonheffing, salary deductions and Dutch payroll withholding." }} iconIndex={4} />
                 <LiveOrSoonCard item={{ label: "Tax returns", href: "/netherlands/money/tax-return-netherlands/", status: "live", description: "Annual filing orientation for expats." }} iconIndex={7} />
               </div>
             </section>

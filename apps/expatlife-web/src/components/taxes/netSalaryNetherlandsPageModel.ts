@@ -173,6 +173,18 @@ export const netSalaryNetherlandsPage = {
   ] satisfies NetSalaryGuideLink[],
   relatedTaxTopics: [
     {
+      label: "Average Salary in the Netherlands",
+      href: "/netherlands/taxes/average-salary-netherlands/",
+      status: "live",
+      description: "Salary benchmarking by city, industry and experience with expat context.",
+    },
+    {
+      label: "Salary Negotiation in the Netherlands",
+      href: "/netherlands/jobs/salary-negotiation-netherlands/",
+      status: "live",
+      description: "Negotiate offers with Dutch culture, benefits and total-compensation context.",
+    },
+    {
       label: "Gross vs Net Salary",
       href: "/netherlands/taxes/gross-vs-net-salary/",
       status: "live",
@@ -199,8 +211,8 @@ export const netSalaryNetherlandsPage = {
     {
       label: "Payroll Tax",
       href: "/netherlands/taxes/payroll-tax-netherlands/",
-      status: "comingSoon",
-      description: "Future guide for wage tax, withholding and payroll deductions.",
+      status: "live",
+      description: "Guide to loonheffing, salary deductions and Dutch payroll withholding.",
     },
     {
       label: "Tax Returns",
