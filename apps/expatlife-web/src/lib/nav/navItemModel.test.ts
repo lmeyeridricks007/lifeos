@@ -3,6 +3,7 @@ import { getActiveNavKey } from "./config";
 import { isNavItemActive } from "./navItemModel";
 
 const HOLIDAY_PATH = "/netherlands/jobs/holiday-allowance-netherlands/";
+const BONUS_TAX_PATH = "/netherlands/taxes/bonus-tax-netherlands/";
 
 describe("holiday allowance nav active state", () => {
   it("highlights Move (not Money) for the jobs guide path", () => {
@@ -25,5 +26,29 @@ describe("holiday allowance nav active state", () => {
       navStatus: "live" as const,
     };
     expect(isNavItemActive(HOLIDAY_PATH, item)).toBe(true);
+  });
+});
+
+describe("bonus tax nav active state", () => {
+  it("highlights Move (not Money) for the taxes guide path in Move → More", () => {
+    expect(getActiveNavKey(BONUS_TAX_PATH)).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical taxes href", () => {
+    const item = {
+      label: "Bonus tax Netherlands",
+      href: BONUS_TAX_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(BONUS_TAX_PATH, item)).toBe(true);
+  });
+
+  it("marks legacy work href active via alias when on the taxes guide", () => {
+    const item = {
+      label: "Bonus tax Netherlands",
+      href: "/netherlands/work/bonus-tax-netherlands/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(BONUS_TAX_PATH, item)).toBe(true);
   });
 });

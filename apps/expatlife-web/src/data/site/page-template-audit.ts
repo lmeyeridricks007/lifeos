@@ -193,6 +193,7 @@ export const ROUTE_TEMPLATE_HINTS: Partial<Record<string, TemplateArchetype>> = 
   "/netherlands/taxes/net-salary-netherlands": "guideShell",
   "/netherlands/taxes/gross-vs-net-salary": "guideShell",
   "/netherlands/taxes/payroll-tax-netherlands": "guideShell",
+  "/netherlands/taxes/bonus-tax-netherlands": "guideShell",
   "/netherlands/taxes/average-salary-netherlands": "guideShell",
   "/netherlands/jobs/salary-negotiation-netherlands": "guideShell",
   "/netherlands/jobs/minimum-wage-netherlands": "guideShell",

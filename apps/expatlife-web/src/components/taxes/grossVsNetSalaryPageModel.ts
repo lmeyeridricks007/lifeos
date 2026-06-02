@@ -241,6 +241,7 @@ export const grossVsNetSalaryPage = {
   relatedGuides: [
     { label: "Netherlands Taxes Guide", href: "/netherlands/taxes/", status: "live", description: "Central Dutch tax hub for expats." },
     { label: "Net Salary in the Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Estimate take-home pay and compare scenarios." },
+    { label: "Bonus Tax in the Netherlands", href: "/netherlands/taxes/bonus-tax-netherlands/", status: "live", description: "Why bonuses seem heavily taxed — withholding vs final tax." },
     { label: "Expat Taxes in the Netherlands", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live", description: "Tax system guide for international residents." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "Eligibility and payroll impact of the expat scheme." },
     { label: "Open a Dutch Bank Account", href: "/netherlands/open-bank-account-netherlands/", status: "live", description: "Banking setup for salary payments and direct debits." },

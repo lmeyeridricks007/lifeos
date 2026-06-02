@@ -20,6 +20,7 @@ import { thirtyPercentRulingPage } from "@/src/components/taxes/thirtyPercentRul
 import { netSalaryNetherlandsPage } from "@/src/components/taxes/netSalaryNetherlandsPageModel";
 import { grossVsNetSalaryPage } from "@/src/components/taxes/grossVsNetSalaryPageModel";
 import { payrollTaxNetherlandsPage } from "@/src/components/taxes/payrollTaxNetherlandsPageModel";
+import { bonusTaxNetherlandsPage } from "@/src/components/taxes/bonusTaxNetherlandsPageModel";
 import { averageSalaryNetherlandsPage } from "@/src/components/taxes/averageSalaryNetherlandsPageModel";
 import { salaryNegotiationNetherlandsPage } from "@/src/components/jobs/salaryNegotiationNetherlandsPageModel";
 import { minimumWageNetherlandsPage } from "@/src/components/jobs/minimumWageNetherlandsPageModel";
@@ -434,6 +435,28 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       payrollTaxNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
       payrollTaxNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       payrollTaxNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:bonus-tax-netherlands",
+    title: bonusTaxNetherlandsPage.hero.pageTitle,
+    href: bonusTaxNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: bonusTaxNetherlandsPage.seo.description,
+    image: bonusTaxNetherlandsPage.hero.image.src,
+    imageAlt: bonusTaxNetherlandsPage.hero.image.alt,
+    keywords: [...bonusTaxNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      bonusTaxNetherlandsPage.hero.pageTitle,
+      bonusTaxNetherlandsPage.hero.subtitle,
+      bonusTaxNetherlandsPage.seo.description,
+      [...bonusTaxNetherlandsPage.seo.keywords],
+      bonusTaxNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      bonusTaxNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      bonusTaxNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

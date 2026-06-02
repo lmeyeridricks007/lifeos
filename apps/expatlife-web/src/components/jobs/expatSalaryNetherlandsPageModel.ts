@@ -363,6 +363,7 @@ export const expatSalaryNetherlandsPage = {
     { label: "Employee Benefits Guide", href: "/netherlands/jobs/employee-benefits-netherlands/", status: "live", description: "Understand Dutch compensation packages beyond base salary." },
     { label: "Pension Guide", href: "/netherlands/jobs/pension-netherlands-expats/", status: "live", description: "Dutch pension system for expats — AOW, employer schemes and portability." },
     { label: "Holiday Allowance Guide", href: "/netherlands/jobs/holiday-allowance-netherlands/", status: "live", description: "How vakantiegeld works for expats comparing offers." },
+    { label: "Bonus Tax Guide", href: "/netherlands/taxes/bonus-tax-netherlands/", status: "live", description: "Why bonuses seem heavily taxed — payroll withholding for expats." },
   ] satisfies ExpatSalaryNetherlandsLink[],
   exploreNextCards: [
     { label: "Average Salary Guide", href: AVERAGE_SALARY_NETHERLANDS_PATH, status: "live", description: "Benchmark beyond expat headlines." },

@@ -427,9 +427,19 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/holiday-allowance-netherlands",
 ];
 
+/** Taxes guides surfaced under Move → More — highlight Move at top level (canonical URL may live under `/taxes/`). */
+const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
+  "/netherlands/taxes/bonus-tax-netherlands",
+];
+
 function isJobsSalaryGuidePath(pathname: string): boolean {
   const base = pathname.split("?")[0].replace(/\/+$/, "") || "/";
   return JOBS_SALARY_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
+}
+
+function isMoveTaxCompensationGuidePath(pathname: string): boolean {
+  const base = pathname.split("?")[0].replace(/\/+$/, "") || "/";
+  return MOVE_TAX_COMPENSATION_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
 }
 
 const WORK_PATH_HIGHLIGHT_CULTURE: readonly string[] = [
@@ -563,6 +573,8 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (CITY_HUB_PREFIXES.some((pre) => pathname === pre || pathname.startsWith(`${pre}/`))) return "cities";
 
   if (isJobsSalaryGuidePath(pathname)) return "moving";
+
+  if (isMoveTaxCompensationGuidePath(pathname)) return "moving";
 
   if (pathname.startsWith("/netherlands/money") || pathname.startsWith("/netherlands/taxes") || pathname.startsWith("/netherlands/jobs")) {
     return "money";
@@ -711,6 +723,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Taxes",
             "/netherlands/taxes/",
             "Understand income tax, the 30% ruling, payroll, annual returns, freelancers, and expat tax topics."
+          ),
+          item(
+            "Bonus tax Netherlands",
+            "/netherlands/taxes/bonus-tax-netherlands/",
+            "Why Dutch bonuses seem heavily taxed — payroll withholding and expat payslip context."
           ),
         ],
       },
@@ -912,6 +929,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Taxes guide: what the 30% facility is, employer involvement, eligibility, changes, and official sources."
           ),
           item(
+            "Bonus tax in the Netherlands",
+            "/netherlands/taxes/bonus-tax-netherlands/",
+            "Why bonuses seem heavily taxed — payroll withholding, bijzondere beloning and expat payslip context."
+          ),
+          item(
             "Tax advisors for expats",
             "/netherlands/services/tax-advisors/",
             "Services directory: compare Dutch tax advisors, expat accountants, and international tax specialists."
@@ -925,6 +947,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Net salary Netherlands", "/netherlands/taxes/net-salary-netherlands/"),
           item("Gross vs net salary Netherlands", "/netherlands/taxes/gross-vs-net-salary/"),
           item("Payroll tax Netherlands", "/netherlands/taxes/payroll-tax-netherlands/"),
+          item(
+            "Bonus tax Netherlands",
+            "/netherlands/taxes/bonus-tax-netherlands/",
+            "Why Dutch bonuses seem heavily taxed — payroll withholding, bijzondere beloning and expat context."
+          ),
           item("Average salary Netherlands", "/netherlands/taxes/average-salary-netherlands/"),
           item(
             "Salary negotiation Netherlands",
@@ -956,7 +983,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/holiday-allowance-netherlands/",
             "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
           ),
-          item("Bonus tax Netherlands", "/netherlands/work/bonus-tax-netherlands/"),
           item("Healthcare allowance", "/netherlands/taxes/healthcare-allowance/"),
           item("Rent allowance", "/netherlands/taxes/rent-allowance/"),
           item("Childcare allowance", "/netherlands/taxes/childcare-allowance/"),

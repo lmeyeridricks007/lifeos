@@ -211,6 +211,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/bonus-tax-netherlands",
+        destination: "/netherlands/taxes/bonus-tax-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/bonus-tax-netherlands/",
+        destination: "/netherlands/taxes/bonus-tax-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/average-salary-netherlands",
         destination: "/netherlands/taxes/average-salary-netherlands/",
         permanent: true,

@@ -464,6 +464,7 @@ export const holidayAllowanceNetherlandsPage = {
     { label: "Netherlands Taxes Guide", href: TAXES_HUB_PATH, status: "live", description: "Tax hub connecting salary and vakantiegeld." },
     { label: "Net Salary Guide", href: NET_SALARY_NETHERLANDS_PATH, status: "live", description: "Estimate take-home pay from your package." },
     { label: "Gross vs Net Salary", href: GROSS_VS_NET_SALARY_PATH, status: "live", description: "Why holiday allowance affects net pay context." },
+    { label: "Bonus Tax Guide", href: "/netherlands/taxes/bonus-tax-netherlands/", status: "live", description: "Why bonuses seem heavily taxed — withholding vs final tax." },
     { label: "Moving to the Netherlands", href: MOVING_HUB_PATH, status: "live", description: "Relocation planning with employment offers." },
   ] satisfies HolidayAllowanceNetherlandsLink[],
   exploreNextCards: [
@@ -472,5 +473,6 @@ export const holidayAllowanceNetherlandsPage = {
     { label: "Net Salary Calculator", href: DUTCH_SALARY_NET_CALCULATOR_PATH, status: "live", description: "Estimate take-home pay after deductions." },
     { label: "30% Ruling", href: THIRTY_PERCENT_RULING_PATH, status: "live", description: "Expat tax scheme and package context." },
     { label: "Payroll Tax Guide", href: PAYROLL_TAX_NETHERLANDS_PATH, status: "live", description: "How payroll tax applies to employment income." },
+    { label: "Bonus Tax Guide", href: "/netherlands/taxes/bonus-tax-netherlands/", status: "live", description: "Why bonuses seem heavily taxed on Dutch payslips." },
   ] satisfies HolidayAllowanceNetherlandsLink[],
 } as const;

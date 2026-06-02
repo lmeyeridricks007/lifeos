@@ -195,7 +195,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/work/employee-benefits-netherlands/": { title: "Employee benefits Netherlands", section: "guides" },
   "/netherlands/work/pension-netherlands/": { title: "Pension Netherlands", section: "guides" },
   "/netherlands/work/holiday-allowance-netherlands/": { title: "Holiday allowance Netherlands", section: "guides" },
-  "/netherlands/work/bonus-tax-netherlands/": { title: "Bonus tax Netherlands", section: "guides" },
   "/netherlands/work/freelancing-netherlands/": { title: "Freelancing Netherlands", section: "guides" },
   "/netherlands/work/zzp-netherlands/": { title: "ZZP Netherlands", section: "guides" },
   "/netherlands/work/contractor-vs-employee-netherlands/": { title: "Contractor vs employee Netherlands", section: "guides" },
@@ -289,6 +288,7 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/taxes/net-salary-netherlands/",
   "/netherlands/taxes/gross-vs-net-salary/",
   "/netherlands/taxes/payroll-tax-netherlands/",
+  "/netherlands/taxes/bonus-tax-netherlands/",
   "/netherlands/taxes/average-salary-netherlands/",
   "/netherlands/jobs/salary-negotiation-netherlands/",
   /** Live App Router guide — keep in EXTRA_LIVE_PATHS so Money mega menu Jobs & salaries links stay clickable (not “Soon”). */
@@ -330,6 +330,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/work/resigning-job-netherlands/",
   /** Legacy Work-cluster URL; 301 → Move guide. */
   "/netherlands/work/layoffs-netherlands/",
+  /** Legacy Work-cluster URL; 301 → `/netherlands/taxes/bonus-tax-netherlands/`. */
+  "/netherlands/work/bonus-tax-netherlands/",
   "/netherlands/moving/twv-work-permit/",
   "/netherlands/moving/residence-permits/",
   "/netherlands/moving/extensions-changes/",

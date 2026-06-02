@@ -403,6 +403,7 @@ export const employeeBenefitsNetherlandsPage = {
     { label: "Salary Negotiation", href: SALARY_NEGOTIATION_NETHERLANDS_PATH, status: "live", description: "Negotiate benefits alongside base salary." },
     { label: "Pension Guide", href: "/netherlands/jobs/pension-netherlands-expats/", status: "live", description: "Dutch pension system for expats — AOW, employer schemes and portability." },
     { label: "Holiday Allowance Guide", href: "/netherlands/jobs/holiday-allowance-netherlands/", status: "live", description: "How vakantiegeld works — payment timing, salary inclusion and tax context." },
+    { label: "Bonus Tax Guide", href: "/netherlands/taxes/bonus-tax-netherlands/", status: "live", description: "Why bonuses seem heavily taxed — payroll withholding for expats." },
     { label: "Expat Salary Guide", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Salary context for international professionals." },
     { label: "Netherlands Taxes Guide", href: TAXES_HUB_PATH, status: "live", description: "Tax hub connecting salary and benefits." },
     { label: "Net Salary Guide", href: NET_SALARY_NETHERLANDS_PATH, status: "live", description: "Estimate take-home pay from your package." },

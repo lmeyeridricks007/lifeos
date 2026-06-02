@@ -269,6 +269,7 @@ export const payrollTaxNetherlandsPage = {
     { label: "Salary Negotiation in the Netherlands", href: "/netherlands/jobs/salary-negotiation-netherlands/", status: "live", description: "How expats negotiate Dutch job offers beyond headline gross pay." },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Beginner-friendly guide to gross salary, net salary and payroll deductions." },
     { label: "Net Salary Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Estimate take-home pay and compare salary scenarios." },
+    { label: "Bonus Tax in the Netherlands", href: "/netherlands/taxes/bonus-tax-netherlands/", status: "live", description: "Why bonuses seem heavily taxed — withholding vs final tax for expats." },
     { label: "Expat Taxes", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live", description: "Broader expat tax context for residency, returns and cross-border topics." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "How the expat scheme can affect payroll and take-home pay." },
     { label: "Income Tax", href: "/netherlands/taxes/income-tax-netherlands/", status: "comingSoon", description: "Future guide to Dutch income tax and annual assessment." },

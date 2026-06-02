@@ -178,6 +178,12 @@ export const taxesHubPage = {
       description: "What employers withhold, why loonheffing reduces net salary and how payroll fits the Dutch tax system.",
     },
     {
+      label: "Bonus Tax in the Netherlands",
+      href: "/netherlands/taxes/bonus-tax-netherlands/",
+      status: "live",
+      description: "Why bonuses seem heavily taxed — payroll withholding, bijzondere beloning and expat payslip context.",
+    },
+    {
       label: "Freelancers & ZZP Taxes",
       href: "/netherlands/taxes/freelancer-zzp-taxes/",
       status: "comingSoon",
@@ -217,6 +223,7 @@ export const taxesHubPage = {
     { label: "What happens if I work remotely?", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live" },
     { label: "Can I keep investments abroad?", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live" },
     { label: "What taxes are deducted from salary?", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "live" },
+    { label: "Why is my bonus taxed so much?", href: "/netherlands/taxes/bonus-tax-netherlands/", status: "live" },
   ] satisfies TaxesHubLink[],
   serviceLinks: [
     {

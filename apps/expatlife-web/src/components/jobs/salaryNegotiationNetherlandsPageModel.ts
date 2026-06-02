@@ -411,6 +411,7 @@ export const salaryNegotiationNetherlandsPage = {
     { label: "Average Salary Netherlands", href: "/netherlands/taxes/average-salary-netherlands/", status: "live", description: "Salary benchmarking before you negotiate." },
     { label: "Net Salary Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Estimate take-home pay from offers." },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Understand Dutch salary wording." },
+    { label: "Bonus Tax Guide", href: "/netherlands/taxes/bonus-tax-netherlands/", status: "live", description: "Why bonuses seem heavily taxed on Dutch payslips." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "Expat scheme and offer context." },
     { label: "Moving to the Netherlands", href: "/netherlands/moving-to-the-netherlands/", status: "live", description: "Relocation planning with job offers." },
     { label: "Dutch Cities Guide", href: "/netherlands/cities/", status: "live", description: "Compare cities for cost of living." },
