@@ -1116,7 +1116,7 @@ export function HealthcareAllowanceCalculatorClient({ calculatorCanonicalUrl, si
 
       <p className="text-center text-xs text-copilot-text-secondary">
         Guide:{" "}
-        <Link href="/netherlands/taxes/healthcare-allowance/" className="font-semibold text-copilot-primary hover:underline">
+        <Link href="/netherlands/taxes/healthcare-allowance-netherlands/" className="font-semibold text-copilot-primary hover:underline">
           Healthcare allowance in the Netherlands
         </Link>
       </p>

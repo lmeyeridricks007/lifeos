@@ -59,7 +59,7 @@ export const healthcareOfficialSourcesConfig = {
     },
   ],
   internalSeeAlso: [
-    { label: "Healthcare allowance guide", path: "/netherlands/taxes/healthcare-allowance/" },
+    { label: "Healthcare allowance guide", path: "/netherlands/taxes/healthcare-allowance-netherlands/" },
     { label: "Tax tools hub", path: "/netherlands/taxes/tools/" },
     { label: "Health insurance in the Netherlands", path: "/netherlands/health-insurance-netherlands/" },
     { label: "Health insurance services hub", path: "/netherlands/services/health-insurance/" },

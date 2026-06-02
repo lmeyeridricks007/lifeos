@@ -340,6 +340,7 @@ export const bonusTaxNetherlandsPage = {
     { label: "Net Salary Netherlands", href: NET_SALARY_NETHERLANDS_PATH, status: "live", description: "Estimate take-home pay and compare salary scenarios." },
     { label: "Payroll Tax Netherlands", href: PAYROLL_TAX_NETHERLANDS_PATH, status: "live", description: "How loonheffing and payroll deductions work on payslips." },
     { label: "Holiday Allowance", href: HOLIDAY_ALLOWANCE_NETHERLANDS_PATH, status: "live", description: "How vakantiegeld fits into Dutch compensation packages." },
+    { label: "Healthcare Allowance", href: "/netherlands/taxes/healthcare-allowance-netherlands/", status: "live", description: "Zorgtoeslag guide — eligibility and applying for Dutch health insurance support." },
     { label: "Expat Salary Guide", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Salary expectations and package context for expats." },
     { label: "30% Ruling", href: THIRTY_PERCENT_RULING_PATH, status: "live", description: "Expat tax scheme and payroll impact orientation." },
   ] satisfies BonusTaxNetherlandsLink[],

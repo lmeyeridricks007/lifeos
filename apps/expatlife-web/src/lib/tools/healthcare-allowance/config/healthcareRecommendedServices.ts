@@ -72,7 +72,7 @@ export const healthcareRecommendedServiceGroups: readonly HealthcareRecommendedG
         id: "allowance-guide",
         kind: "guide",
         label: "Healthcare allowance guide",
-        href: "/netherlands/taxes/healthcare-allowance/",
+        href: "/netherlands/taxes/healthcare-allowance-netherlands/",
         description: "Editorial walkthrough of how zorgtoeslag fits typical expat budgets.",
       },
       {

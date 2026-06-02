@@ -21,6 +21,7 @@ import { netSalaryNetherlandsPage } from "@/src/components/taxes/netSalaryNether
 import { grossVsNetSalaryPage } from "@/src/components/taxes/grossVsNetSalaryPageModel";
 import { payrollTaxNetherlandsPage } from "@/src/components/taxes/payrollTaxNetherlandsPageModel";
 import { bonusTaxNetherlandsPage } from "@/src/components/taxes/bonusTaxNetherlandsPageModel";
+import { healthcareAllowanceNetherlandsPage } from "@/src/components/taxes/healthcareAllowanceNetherlandsPageModel";
 import { averageSalaryNetherlandsPage } from "@/src/components/taxes/averageSalaryNetherlandsPageModel";
 import { salaryNegotiationNetherlandsPage } from "@/src/components/jobs/salaryNegotiationNetherlandsPageModel";
 import { minimumWageNetherlandsPage } from "@/src/components/jobs/minimumWageNetherlandsPageModel";
@@ -457,6 +458,28 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       bonusTaxNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
       bonusTaxNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       bonusTaxNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:healthcare-allowance-netherlands",
+    title: healthcareAllowanceNetherlandsPage.hero.pageTitle,
+    href: healthcareAllowanceNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: healthcareAllowanceNetherlandsPage.seo.description,
+    image: healthcareAllowanceNetherlandsPage.hero.image.src,
+    imageAlt: healthcareAllowanceNetherlandsPage.hero.image.alt,
+    keywords: [...healthcareAllowanceNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      healthcareAllowanceNetherlandsPage.hero.pageTitle,
+      healthcareAllowanceNetherlandsPage.hero.subtitle,
+      healthcareAllowanceNetherlandsPage.seo.description,
+      [...healthcareAllowanceNetherlandsPage.seo.keywords],
+      healthcareAllowanceNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      healthcareAllowanceNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      healthcareAllowanceNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

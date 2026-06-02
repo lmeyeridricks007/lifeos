@@ -29,7 +29,7 @@ export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = "/netherlands/taxes/tools/healthcare-allowance-estimator/";
 const BASE = "/netherlands";
-const GUIDE_HREF = `${BASE}/taxes/healthcare-allowance/`;
+const GUIDE_HREF = `${BASE}/taxes/healthcare-allowance-netherlands/`;
 
 const META_TITLE =
   "Zorgtoeslag Calculator & Healthcare Allowance Netherlands 2026 | Income & Asset Limits | ExpatCopilot";

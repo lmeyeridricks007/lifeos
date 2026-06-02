@@ -21,17 +21,18 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/work/pension-netherlands": "/netherlands/jobs/pension-netherlands-expats",
   "/netherlands/work/holiday-allowance-netherlands": "/netherlands/jobs/holiday-allowance-netherlands",
   "/netherlands/work/bonus-tax-netherlands": "/netherlands/taxes/bonus-tax-netherlands",
+  "/netherlands/taxes/healthcare-allowance": "/netherlands/taxes/healthcare-allowance-netherlands",
 };
 
-function resolveNavActiveHref(href: string): string {
-  return NAV_ACTIVE_HREF_ALIASES[pathKey(href)] ?? href;
+function resolveNavActivePath(path: string): string {
+  return NAV_ACTIVE_HREF_ALIASES[pathKey(path)] ?? path;
 }
 
 /** Path matches an internal href (same rules as mega menu “current” highlighting). */
 export function isNavHrefActive(pathname: string, href: string | undefined): boolean {
   if (!href) return false;
-  const pn = pathKey(pathname);
-  const h = pathKey(resolveNavActiveHref(href));
+  const pn = pathKey(resolveNavActivePath(pathname));
+  const h = pathKey(resolveNavActivePath(href));
   if (pn === h) return true;
   if (h !== "/" && pn.startsWith(h + "/")) return true;
   const pathSlug = pathname.split("/").filter(Boolean).pop() ?? "";

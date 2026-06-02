@@ -60,7 +60,7 @@ export function HealthcareAllowancePageGuide() {
         </ul>
         <p>
           For a narrative walkthrough (not the calculator), see the{" "}
-          <Link href={`${NL}/taxes/healthcare-allowance/`}>healthcare allowance guide</Link> and the{" "}
+          <Link href={`${NL}/taxes/healthcare-allowance-netherlands/`}>healthcare allowance guide</Link> and the{" "}
           <Link href={`${NL}/health-insurance-netherlands/`}>health insurance in the Netherlands</Link> overview — then return here to plug in numbers.
         </p>
       </GuideCard>

@@ -150,7 +150,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/taxes/30-ruling-application/": { title: "30% ruling application", section: "guides" },
   "/netherlands/taxes/30-ruling-expiry/": { title: "30% ruling expiry", section: "guides" },
   /** Live App Router guides — listed in EXTRA_LIVE_PATHS; do not duplicate here or nav shows “Soon”. */
-  "/netherlands/taxes/healthcare-allowance/": { title: "Healthcare allowance", section: "guides" },
   "/netherlands/taxes/rent-allowance/": { title: "Rent allowance", section: "guides" },
   "/netherlands/taxes/childcare-allowance/": { title: "Childcare allowance", section: "guides" },
   "/netherlands/taxes/double-taxation-netherlands/": { title: "Double taxation Netherlands", section: "guides" },
@@ -289,6 +288,9 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/taxes/gross-vs-net-salary/",
   "/netherlands/taxes/payroll-tax-netherlands/",
   "/netherlands/taxes/bonus-tax-netherlands/",
+  "/netherlands/taxes/healthcare-allowance-netherlands/",
+  /** Legacy taxes URL; 301 → healthcare allowance guide — keep live so nav never surfaces as “Soon”. */
+  "/netherlands/taxes/healthcare-allowance/",
   "/netherlands/taxes/average-salary-netherlands/",
   "/netherlands/jobs/salary-negotiation-netherlands/",
   /** Live App Router guide — keep in EXTRA_LIVE_PATHS so Money mega menu Jobs & salaries links stay clickable (not “Soon”). */

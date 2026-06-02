@@ -221,6 +221,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/taxes/healthcare-allowance",
+        destination: "/netherlands/taxes/healthcare-allowance-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/healthcare-allowance/",
+        destination: "/netherlands/taxes/healthcare-allowance-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/average-salary-netherlands",
         destination: "/netherlands/taxes/average-salary-netherlands/",
         permanent: true,

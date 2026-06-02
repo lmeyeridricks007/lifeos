@@ -430,6 +430,9 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
 /** Taxes guides surfaced under Move → More — highlight Move at top level (canonical URL may live under `/taxes/`). */
 const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/taxes/bonus-tax-netherlands",
+  "/netherlands/taxes/healthcare-allowance-netherlands",
+  /** Legacy URL (301 → canonical guide) — keep Move tab active before redirect. */
+  "/netherlands/taxes/healthcare-allowance",
 ];
 
 function isJobsSalaryGuidePath(pathname: string): boolean {
@@ -729,6 +732,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/taxes/bonus-tax-netherlands/",
             "Why Dutch bonuses seem heavily taxed — payroll withholding and expat payslip context."
           ),
+          item(
+            "Healthcare allowance Netherlands",
+            "/netherlands/taxes/healthcare-allowance-netherlands/",
+            "How zorgtoeslag works — eligibility, income tests and applying through Dienst Toeslagen."
+          ),
         ],
       },
       {
@@ -934,6 +942,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Why bonuses seem heavily taxed — payroll withholding, bijzondere beloning and expat payslip context."
           ),
           item(
+            "Healthcare allowance in the Netherlands",
+            "/netherlands/taxes/healthcare-allowance-netherlands/",
+            "Zorgtoeslag guide: who may qualify, how to apply and what expats should know about Dutch health insurance support."
+          ),
+          item(
             "Tax advisors for expats",
             "/netherlands/services/tax-advisors/",
             "Services directory: compare Dutch tax advisors, expat accountants, and international tax specialists."
@@ -983,7 +996,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/holiday-allowance-netherlands/",
             "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
           ),
-          item("Healthcare allowance", "/netherlands/taxes/healthcare-allowance/"),
+          item(
+            "Healthcare allowance Netherlands",
+            "/netherlands/taxes/healthcare-allowance-netherlands/",
+            "Zorgtoeslag guide — eligibility, income tests and applying for Dutch health insurance support."
+          ),
           item("Rent allowance", "/netherlands/taxes/rent-allowance/"),
           item("Childcare allowance", "/netherlands/taxes/childcare-allowance/"),
         ],

@@ -52,3 +52,42 @@ describe("bonus tax nav active state", () => {
     expect(isNavItemActive(BONUS_TAX_PATH, item)).toBe(true);
   });
 });
+
+describe("healthcare allowance nav active state", () => {
+  const HEALTHCARE_PATH = "/netherlands/taxes/healthcare-allowance-netherlands/";
+
+  it("highlights Move for the taxes guide path in Move → More", () => {
+    expect(getActiveNavKey(HEALTHCARE_PATH)).toBe("moving");
+  });
+
+  it("marks menu rows active for the canonical taxes href", () => {
+    const item = {
+      label: "Healthcare allowance Netherlands",
+      href: HEALTHCARE_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(HEALTHCARE_PATH, item)).toBe(true);
+  });
+
+  it("marks legacy healthcare-allowance href active via alias", () => {
+    const item = {
+      label: "Healthcare allowance",
+      href: "/netherlands/taxes/healthcare-allowance/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(HEALTHCARE_PATH, item)).toBe(true);
+  });
+
+  it("marks canonical href active when pathname is the legacy URL", () => {
+    const item = {
+      label: "Healthcare allowance Netherlands",
+      href: HEALTHCARE_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/taxes/healthcare-allowance/", item)).toBe(true);
+  });
+
+  it("highlights Move for legacy pathname before redirect", () => {
+    expect(getActiveNavKey("/netherlands/taxes/healthcare-allowance/")).toBe("moving");
+  });
+});
