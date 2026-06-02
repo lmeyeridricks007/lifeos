@@ -191,6 +191,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/pension-netherlands",
+        destination: "/netherlands/jobs/pension-netherlands-expats/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/pension-netherlands/",
+        destination: "/netherlands/jobs/pension-netherlands-expats/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/average-salary-netherlands",
         destination: "/netherlands/taxes/average-salary-netherlands/",
         permanent: true,

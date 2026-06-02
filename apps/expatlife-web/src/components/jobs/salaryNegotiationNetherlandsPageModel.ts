@@ -405,6 +405,7 @@ export const salaryNegotiationNetherlandsPage = {
     { label: "Minimum Wage in the Netherlands", href: "/netherlands/jobs/minimum-wage-netherlands/", status: "live", description: "Legal pay floor, age bands and living-cost context." },
     { label: "Salary Negotiation Guide", href: "/netherlands/jobs/salary-negotiation-netherlands/", status: "live", description: "Negotiate benefits alongside base salary." },
     { label: "Employee Benefits Guide", href: "/netherlands/jobs/employee-benefits-netherlands/", status: "live", description: "Pension, allowance, leave and expat packages." },
+    { label: "Pension Guide", href: "/netherlands/jobs/pension-netherlands-expats/", status: "live", description: "Dutch pension system for expats — AOW, employer schemes and portability." },
     { label: "Expat Salary in the Netherlands", href: "/netherlands/jobs/expat-salary-netherlands/", status: "live", description: "Salary expectations for international professionals before you negotiate." },
     { label: "Average Salary Netherlands", href: "/netherlands/taxes/average-salary-netherlands/", status: "live", description: "Salary benchmarking before you negotiate." },
     { label: "Net Salary Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Estimate take-home pay from offers." },
@@ -417,7 +418,7 @@ export const salaryNegotiationNetherlandsPage = {
     { label: "Average Salary Guide", href: "/netherlands/taxes/average-salary-netherlands/", status: "live", description: "Benchmark before you negotiate." },
     { label: "Net Salary Calculator", href: DUTCH_SALARY_NET_CALCULATOR_PATH, status: "live", description: "Estimate take-home from your offer." },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Clarify gross and net before counter-offers." },
-    { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "Check expat scheme context." },
+    { label: "Pension Guide", href: "/netherlands/jobs/pension-netherlands-expats/", status: "live", description: "Understand Dutch pensions before negotiating." },
     { label: "Dutch Cities Guide", href: "/netherlands/cities/", status: "live", description: "Compare living costs by city." },
   ] satisfies SalaryNegotiationNetherlandsLink[],
 } as const;

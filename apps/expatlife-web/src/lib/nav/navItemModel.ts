@@ -12,11 +12,24 @@ function pathKey(path: string): string {
   return base.endsWith("/") ? base.slice(0, -1) : base;
 }
 
+/** Legacy Work-cluster URLs that 301 to live Jobs guides — keep nav “current” highlighting in sync. */
+const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
+  "/netherlands/work/salary-negotiation-netherlands": "/netherlands/jobs/salary-negotiation-netherlands",
+  "/netherlands/work/minimum-wage-netherlands": "/netherlands/jobs/minimum-wage-netherlands",
+  "/netherlands/work/expat-salary-netherlands": "/netherlands/jobs/expat-salary-netherlands",
+  "/netherlands/work/employee-benefits-netherlands": "/netherlands/jobs/employee-benefits-netherlands",
+  "/netherlands/work/pension-netherlands": "/netherlands/jobs/pension-netherlands-expats",
+};
+
+function resolveNavActiveHref(href: string): string {
+  return NAV_ACTIVE_HREF_ALIASES[pathKey(href)] ?? href;
+}
+
 /** Path matches an internal href (same rules as mega menu “current” highlighting). */
 export function isNavHrefActive(pathname: string, href: string | undefined): boolean {
   if (!href) return false;
   const pn = pathKey(pathname);
-  const h = pathKey(href);
+  const h = pathKey(resolveNavActiveHref(href));
   if (pn === h) return true;
   if (h !== "/" && pn.startsWith(h + "/")) return true;
   const pathSlug = pathname.split("/").filter(Boolean).pop() ?? "";

@@ -630,7 +630,10 @@ export function EmployeeBenefitsNetherlandsView() {
               intro={
                 <>
                   <p>Many employers contribute toward employee pension schemes. Pension contributions can reduce monthly take-home salary while building long-term retirement savings.</p>
-                  <p>For expats, portability, international retirement planning and expected stay duration may all matter when evaluating a Dutch pension offer.</p>
+                  <p>For expats, portability, international retirement planning and expected stay duration may all matter when evaluating a Dutch pension offer. See the dedicated{" "}
+                    <Link href="/netherlands/jobs/pension-netherlands-expats/" className="font-semibold text-link hover:text-link-hover">Pension in the Netherlands guide</Link>
+                    {" "}for a full overview of AOW, employer schemes and portability.
+                  </p>
                 </>
               }
               tips={page.pensionTips}

@@ -417,6 +417,20 @@ const WORK_PATH_HIGHLIGHT_MOVING: readonly string[] = [
   "/netherlands/work/layoffs-netherlands",
 ];
 
+/** Jobs & salaries App Router guides — primary Move menu cluster; highlight Move (not Money) at top level. */
+const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
+  "/netherlands/jobs/salary-negotiation-netherlands",
+  "/netherlands/jobs/minimum-wage-netherlands",
+  "/netherlands/jobs/expat-salary-netherlands",
+  "/netherlands/jobs/employee-benefits-netherlands",
+  "/netherlands/jobs/pension-netherlands-expats",
+];
+
+function isJobsSalaryGuidePath(pathname: string): boolean {
+  const base = pathname.split("?")[0].replace(/\/+$/, "") || "/";
+  return JOBS_SALARY_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
+}
+
 const WORK_PATH_HIGHLIGHT_CULTURE: readonly string[] = [
   "/netherlands/work/work-culture-netherlands",
   "/netherlands/work/work-hours-netherlands",
@@ -547,6 +561,8 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
 
   if (CITY_HUB_PREFIXES.some((pre) => pathname === pre || pathname.startsWith(`${pre}/`))) return "cities";
 
+  if (isJobsSalaryGuidePath(pathname)) return "moving";
+
   if (pathname.startsWith("/netherlands/money") || pathname.startsWith("/netherlands/taxes") || pathname.startsWith("/netherlands/jobs")) {
     return "money";
   }
@@ -648,18 +664,8 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         ],
       },
       {
-        title: "More",
+        title: "Jobs & salaries",
         items: [
-          item(
-            "Randstad Guide",
-            "/netherlands/randstad/",
-            "Compare the main urban region before choosing where to live, work, study, or commute."
-          ),
-          item(
-            "Taxes",
-            "/netherlands/taxes/",
-            "Understand income tax, the 30% ruling, payroll, annual returns, freelancers, and expat tax topics."
-          ),
           item(
             "Salary negotiation",
             "/netherlands/jobs/salary-negotiation-netherlands/",
@@ -679,6 +685,26 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Employee benefits",
             "/netherlands/jobs/employee-benefits-netherlands/",
             "Pension, holiday allowance, leave, remote work and expat compensation packages explained."
+          ),
+          item(
+            "Pension in the Netherlands",
+            "/netherlands/jobs/pension-netherlands-expats/",
+            "Dutch pension system for expats: AOW, employer pensions, deductions and portability."
+          ),
+        ],
+      },
+      {
+        title: "More",
+        items: [
+          item(
+            "Randstad Guide",
+            "/netherlands/randstad/",
+            "Compare the main urban region before choosing where to live, work, study, or commute."
+          ),
+          item(
+            "Taxes",
+            "/netherlands/taxes/",
+            "Understand income tax, the 30% ruling, payroll, annual returns, freelancers, and expat tax topics."
           ),
         ],
       },
@@ -914,7 +940,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/employee-benefits-netherlands/",
             "Pension, holiday allowance, vacation days, sick leave, remote work and expat packages."
           ),
-          item("Pension Netherlands", "/netherlands/work/pension-netherlands/"),
+          item(
+            "Pension in the Netherlands",
+            "/netherlands/jobs/pension-netherlands-expats/",
+            "Dutch pension system for expats: AOW, employer pensions, salary deductions and portability."
+          ),
           item("Holiday allowance Netherlands", "/netherlands/work/holiday-allowance-netherlands/"),
           item("Bonus tax Netherlands", "/netherlands/work/bonus-tax-netherlands/"),
           item("Healthcare allowance", "/netherlands/taxes/healthcare-allowance/"),

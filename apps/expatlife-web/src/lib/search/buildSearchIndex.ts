@@ -25,6 +25,7 @@ import { salaryNegotiationNetherlandsPage } from "@/src/components/jobs/salaryNe
 import { minimumWageNetherlandsPage } from "@/src/components/jobs/minimumWageNetherlandsPageModel";
 import { expatSalaryNetherlandsPage } from "@/src/components/jobs/expatSalaryNetherlandsPageModel";
 import { employeeBenefitsNetherlandsPage } from "@/src/components/jobs/employeeBenefitsNetherlandsPageModel";
+import { pensionNetherlandsExpatsPage } from "@/src/components/jobs/pensionNetherlandsExpatsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -548,6 +549,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       employeeBenefitsNetherlandsPage.industryCards.map((card) => `${card.title} ${card.body}`),
       employeeBenefitsNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       employeeBenefitsNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:pension-netherlands-expats",
+    title: pensionNetherlandsExpatsPage.hero.pageTitle,
+    href: pensionNetherlandsExpatsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: pensionNetherlandsExpatsPage.seo.description,
+    image: pensionNetherlandsExpatsPage.hero.image.src,
+    imageAlt: pensionNetherlandsExpatsPage.hero.image.alt,
+    keywords: [...pensionNetherlandsExpatsPage.seo.keywords],
+    searchText: joinSearchParts(
+      pensionNetherlandsExpatsPage.hero.pageTitle,
+      pensionNetherlandsExpatsPage.hero.subtitle,
+      pensionNetherlandsExpatsPage.seo.description,
+      [...pensionNetherlandsExpatsPage.seo.keywords],
+      pensionNetherlandsExpatsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      pensionNetherlandsExpatsPage.industryCards.map((card) => `${card.title} ${card.body}`),
+      pensionNetherlandsExpatsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      pensionNetherlandsExpatsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

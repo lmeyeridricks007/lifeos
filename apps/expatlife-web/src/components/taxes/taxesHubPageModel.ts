@@ -124,6 +124,12 @@ export const taxesHubPage = {
       description: "Pension, holiday allowance, leave, remote work and expat compensation packages explained.",
     },
     {
+      label: "Pension in the Netherlands for Expats",
+      href: "/netherlands/jobs/pension-netherlands-expats/",
+      status: "live",
+      description: "Dutch pension system for expats: AOW, employer pensions, salary deductions and portability.",
+    },
+    {
       label: "Net Salary in the Netherlands",
       href: "/netherlands/taxes/net-salary-netherlands/",
       status: "live",
