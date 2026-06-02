@@ -201,6 +201,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/holiday-allowance-netherlands",
+        destination: "/netherlands/jobs/holiday-allowance-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/holiday-allowance-netherlands/",
+        destination: "/netherlands/jobs/holiday-allowance-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/average-salary-netherlands",
         destination: "/netherlands/taxes/average-salary-netherlands/",
         permanent: true,

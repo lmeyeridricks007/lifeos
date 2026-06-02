@@ -40,8 +40,13 @@ export function MobileNavDrawer({ isOpen, onClose, onOpenSearch }: MobileNavDraw
   );
 
   useEffect(() => {
-    if (!isOpen) setExpandedKey(null);
-  }, [isOpen]);
+    if (!isOpen) {
+      setExpandedKey(null);
+      return;
+    }
+    const activeKey = getActiveNavKey(pathname);
+    if (activeKey) setExpandedKey(activeKey);
+  }, [isOpen, pathname]);
 
   useEffect(() => {
     if (!isOpen) return;

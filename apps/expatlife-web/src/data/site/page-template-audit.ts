@@ -199,6 +199,7 @@ export const ROUTE_TEMPLATE_HINTS: Partial<Record<string, TemplateArchetype>> = 
   "/netherlands/jobs/expat-salary-netherlands": "guideShell",
   "/netherlands/jobs/employee-benefits-netherlands": "guideShell",
   "/netherlands/jobs/pension-netherlands-expats": "guideShell",
+  "/netherlands/jobs/holiday-allowance-netherlands": "guideShell",
   "/netherlands/taxes/tools": "clusterHub",
   "/netherlands/taxes/tools/30-ruling-calculator": "toolLanding",
   "/netherlands/taxes/tools/dutch-salary-net-calculator": "toolLanding",

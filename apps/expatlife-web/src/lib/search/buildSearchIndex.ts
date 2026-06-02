@@ -26,6 +26,7 @@ import { minimumWageNetherlandsPage } from "@/src/components/jobs/minimumWageNet
 import { expatSalaryNetherlandsPage } from "@/src/components/jobs/expatSalaryNetherlandsPageModel";
 import { employeeBenefitsNetherlandsPage } from "@/src/components/jobs/employeeBenefitsNetherlandsPageModel";
 import { pensionNetherlandsExpatsPage } from "@/src/components/jobs/pensionNetherlandsExpatsPageModel";
+import { holidayAllowanceNetherlandsPage } from "@/src/components/jobs/holidayAllowanceNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -572,6 +573,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       pensionNetherlandsExpatsPage.industryCards.map((card) => `${card.title} ${card.body}`),
       pensionNetherlandsExpatsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       pensionNetherlandsExpatsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:holiday-allowance-netherlands",
+    title: holidayAllowanceNetherlandsPage.hero.pageTitle,
+    href: holidayAllowanceNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: holidayAllowanceNetherlandsPage.seo.description,
+    image: holidayAllowanceNetherlandsPage.hero.image.src,
+    imageAlt: holidayAllowanceNetherlandsPage.hero.image.alt,
+    keywords: [...holidayAllowanceNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      holidayAllowanceNetherlandsPage.hero.pageTitle,
+      holidayAllowanceNetherlandsPage.hero.subtitle,
+      holidayAllowanceNetherlandsPage.seo.description,
+      [...holidayAllowanceNetherlandsPage.seo.keywords],
+      holidayAllowanceNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      holidayAllowanceNetherlandsPage.industryCards.map((card) => `${card.title} ${card.body}`),
+      holidayAllowanceNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      holidayAllowanceNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

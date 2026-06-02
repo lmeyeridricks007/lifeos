@@ -424,6 +424,7 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/expat-salary-netherlands",
   "/netherlands/jobs/employee-benefits-netherlands",
   "/netherlands/jobs/pension-netherlands-expats",
+  "/netherlands/jobs/holiday-allowance-netherlands",
 ];
 
 function isJobsSalaryGuidePath(pathname: string): boolean {
@@ -691,6 +692,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/pension-netherlands-expats/",
             "Dutch pension system for expats: AOW, employer pensions, deductions and portability."
           ),
+          item(
+            "Holiday allowance",
+            "/netherlands/jobs/holiday-allowance-netherlands/",
+            "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
+          ),
         ],
       },
       {
@@ -945,7 +951,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/pension-netherlands-expats/",
             "Dutch pension system for expats: AOW, employer pensions, salary deductions and portability."
           ),
-          item("Holiday allowance Netherlands", "/netherlands/work/holiday-allowance-netherlands/"),
+          item(
+            "Holiday allowance Netherlands",
+            "/netherlands/jobs/holiday-allowance-netherlands/",
+            "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
+          ),
           item("Bonus tax Netherlands", "/netherlands/work/bonus-tax-netherlands/"),
           item("Healthcare allowance", "/netherlands/taxes/healthcare-allowance/"),
           item("Rent allowance", "/netherlands/taxes/rent-allowance/"),

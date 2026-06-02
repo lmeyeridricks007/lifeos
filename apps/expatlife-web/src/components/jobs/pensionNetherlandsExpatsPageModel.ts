@@ -413,6 +413,7 @@ export const pensionNetherlandsExpatsPage = {
   relatedGuides: [
     { label: "Jobs & Career Hub", href: JOBS_HUB_PATH, status: "live", description: "Working in the Netherlands — employment context." },
     { label: "Employee Benefits", href: EMPLOYEE_BENEFITS_NETHERLANDS_PATH, status: "live", description: "Full guide to Dutch work benefits." },
+    { label: "Holiday Allowance Guide", href: "/netherlands/jobs/holiday-allowance-netherlands/", status: "live", description: "How vakantiegeld works for expats." },
     { label: "Expat Salary Guide", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Salary context for international professionals." },
     { label: "Netherlands Taxes Guide", href: TAXES_HUB_PATH, status: "live", description: "Tax hub connecting salary and pension." },
     { label: "Net Salary Guide", href: NET_SALARY_NETHERLANDS_PATH, status: "live", description: "Estimate take-home pay from your package." },

@@ -19,6 +19,7 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/work/expat-salary-netherlands": "/netherlands/jobs/expat-salary-netherlands",
   "/netherlands/work/employee-benefits-netherlands": "/netherlands/jobs/employee-benefits-netherlands",
   "/netherlands/work/pension-netherlands": "/netherlands/jobs/pension-netherlands-expats",
+  "/netherlands/work/holiday-allowance-netherlands": "/netherlands/jobs/holiday-allowance-netherlands",
 };
 
 function resolveNavActiveHref(href: string): string {

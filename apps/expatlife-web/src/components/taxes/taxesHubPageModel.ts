@@ -130,6 +130,12 @@ export const taxesHubPage = {
       description: "Dutch pension system for expats: AOW, employer pensions, salary deductions and portability.",
     },
     {
+      label: "Holiday Allowance in the Netherlands",
+      href: "/netherlands/jobs/holiday-allowance-netherlands/",
+      status: "live",
+      description: "How vakantiegeld works for expats: payment timing, salary inclusion and tax context.",
+    },
+    {
       label: "Net Salary in the Netherlands",
       href: "/netherlands/taxes/net-salary-netherlands/",
       status: "live",

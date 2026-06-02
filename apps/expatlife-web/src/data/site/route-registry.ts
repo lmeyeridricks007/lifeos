@@ -298,6 +298,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/employee-benefits-netherlands/",
   /** Live App Router guide — pension pillar for expats (Jobs & salaries cluster). */
   "/netherlands/jobs/pension-netherlands-expats/",
+  /** Live App Router guide — holiday allowance (vakantiegeld) for expats (Jobs & salaries cluster). */
+  "/netherlands/jobs/holiday-allowance-netherlands/",
   /** Money pillar tax orientation guide (App Router). */
   "/netherlands/money/tax-guide-for-expats/",
   "/netherlands/money/how-taxes-work-in-the-netherlands/",

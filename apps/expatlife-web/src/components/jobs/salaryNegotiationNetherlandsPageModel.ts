@@ -406,6 +406,7 @@ export const salaryNegotiationNetherlandsPage = {
     { label: "Salary Negotiation Guide", href: "/netherlands/jobs/salary-negotiation-netherlands/", status: "live", description: "Negotiate benefits alongside base salary." },
     { label: "Employee Benefits Guide", href: "/netherlands/jobs/employee-benefits-netherlands/", status: "live", description: "Pension, allowance, leave and expat packages." },
     { label: "Pension Guide", href: "/netherlands/jobs/pension-netherlands-expats/", status: "live", description: "Dutch pension system for expats — AOW, employer schemes and portability." },
+    { label: "Holiday Allowance Guide", href: "/netherlands/jobs/holiday-allowance-netherlands/", status: "live", description: "How vakantiegeld works — payment timing, salary inclusion and tax context." },
     { label: "Expat Salary in the Netherlands", href: "/netherlands/jobs/expat-salary-netherlands/", status: "live", description: "Salary expectations for international professionals before you negotiate." },
     { label: "Average Salary Netherlands", href: "/netherlands/taxes/average-salary-netherlands/", status: "live", description: "Salary benchmarking before you negotiate." },
     { label: "Net Salary Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Estimate take-home pay from offers." },
