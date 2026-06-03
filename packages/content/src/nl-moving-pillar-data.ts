@@ -120,6 +120,14 @@ const linkRegistry: LinkRegistry = {
     href: "/netherlands/taxes/30-percent-ruling/",
     title: "30% Ruling in the Netherlands",
   },
+  healthcare_allowance_netherlands: {
+    href: "/netherlands/taxes/healthcare-allowance-netherlands/",
+    title: "Healthcare allowance in the Netherlands",
+  },
+  rent_allowance_netherlands: {
+    href: "/netherlands/taxes/rent-allowance-netherlands/",
+    title: "Rent allowance in the Netherlands",
+  },
 };
 
 export const nlMovingPillarContent: NlMovingPillarContent = {
@@ -412,6 +420,12 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       href: "/netherlands/living/survival-guide/",
       description: "Day-to-day transport, apps, payments, and routines once admin is moving.",
       timeToComplete: "8 min",
+    },
+    {
+      title: "Rent allowance (huurtoeslag)",
+      href: "/netherlands/taxes/rent-allowance-netherlands/",
+      description: "Housing support for eligible renters — property rules, income and how to apply via Toeslagen.",
+      timeToComplete: "12 min",
     },
   ],
   tocItems: [

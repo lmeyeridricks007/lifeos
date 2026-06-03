@@ -7,6 +7,10 @@ const nextConfig = {
   transpilePackages: ["@expatlife/content"],
   experimental: {
     serverComponentsExternalPackages: ["pdfkit", "pdf-parse"],
+    /** Static files under public/ are CDN-served; do not bundle image trees into serverless functions. */
+    outputFileTracingExcludes: {
+      "*": ["./public/images/**"],
+    },
   },
   async redirects() {
     return [
@@ -228,6 +232,16 @@ const nextConfig = {
       {
         source: "/netherlands/taxes/healthcare-allowance/",
         destination: "/netherlands/taxes/healthcare-allowance-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/rent-allowance",
+        destination: "/netherlands/taxes/rent-allowance-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/rent-allowance/",
+        destination: "/netherlands/taxes/rent-allowance-netherlands/",
         permanent: true,
       },
       {

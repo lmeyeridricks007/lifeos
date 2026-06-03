@@ -22,6 +22,7 @@ import { grossVsNetSalaryPage } from "@/src/components/taxes/grossVsNetSalaryPag
 import { payrollTaxNetherlandsPage } from "@/src/components/taxes/payrollTaxNetherlandsPageModel";
 import { bonusTaxNetherlandsPage } from "@/src/components/taxes/bonusTaxNetherlandsPageModel";
 import { healthcareAllowanceNetherlandsPage } from "@/src/components/taxes/healthcareAllowanceNetherlandsPageModel";
+import { rentAllowanceNetherlandsPage } from "@/src/components/taxes/rentAllowanceNetherlandsPageModel";
 import { averageSalaryNetherlandsPage } from "@/src/components/taxes/averageSalaryNetherlandsPageModel";
 import { salaryNegotiationNetherlandsPage } from "@/src/components/jobs/salaryNegotiationNetherlandsPageModel";
 import { minimumWageNetherlandsPage } from "@/src/components/jobs/minimumWageNetherlandsPageModel";
@@ -480,6 +481,31 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       healthcareAllowanceNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
       healthcareAllowanceNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       healthcareAllowanceNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:rent-allowance-netherlands",
+    title: rentAllowanceNetherlandsPage.hero.pageTitle,
+    href: rentAllowanceNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: rentAllowanceNetherlandsPage.seo.description,
+    image: rentAllowanceNetherlandsPage.hero.image.src,
+    imageAlt: rentAllowanceNetherlandsPage.hero.image.alt,
+    keywords: [...rentAllowanceNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      rentAllowanceNetherlandsPage.hero.pageTitle,
+      rentAllowanceNetherlandsPage.hero.subtitle,
+      rentAllowanceNetherlandsPage.seo.description,
+      [...rentAllowanceNetherlandsPage.seo.keywords],
+      rentAllowanceNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      rentAllowanceNetherlandsPage.reference2026.highlights.map((item) => `${item.label} ${item.value} ${item.note}`),
+      rentAllowanceNetherlandsPage.reference2026.thresholds.map((row) => `${row.parameter} ${row.value2026} ${row.notes}`),
+      rentAllowanceNetherlandsPage.reference2026.workedExamples.map((ex) => `${ex.title} ${ex.inputs} ${ex.indicativeMonthly}`),
+      rentAllowanceNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      rentAllowanceNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

@@ -12,6 +12,14 @@ const linkRegistry: LinkRegistry = {
   bsn: { href: "/netherlands/bsn-registration/", title: "BSN registration" },
   money_tools: { href: "/netherlands/money/tools/", title: "Money & tax tools hub" },
   moving_pillar: { href: "/netherlands/moving-to-the-netherlands/", title: "Moving to the Netherlands" },
+  healthcare_allowance: {
+    href: "/netherlands/taxes/healthcare-allowance-netherlands/",
+    title: "Healthcare allowance (zorgtoeslag) guide",
+  },
+  rent_allowance: {
+    href: "/netherlands/taxes/rent-allowance-netherlands/",
+    title: "Rent allowance (huurtoeslag) guide",
+  },
 };
 
 export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
@@ -222,6 +230,16 @@ export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
       label: "Tax return Netherlands",
       href: "/netherlands/taxes/tax-return-netherlands/",
       description: "When and how filing usually works.",
+    },
+    {
+      label: "Healthcare allowance (zorgtoeslag)",
+      href: "/netherlands/taxes/healthcare-allowance-netherlands/",
+      description: "Health insurance support for eligible residents — separate from huurtoeslag.",
+    },
+    {
+      label: "Rent allowance (huurtoeslag)",
+      href: "/netherlands/taxes/rent-allowance-netherlands/",
+      description: "Housing support for qualifying rental situations — verify property and income rules.",
     },
   ],
 };

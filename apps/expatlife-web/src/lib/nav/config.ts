@@ -435,6 +435,13 @@ const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/taxes/healthcare-allowance",
 ];
 
+/** Housing-related guides under Living → Housing (URL may live under `/taxes/`). */
+const LIVING_HOUSING_GUIDE_PREFIXES: readonly string[] = [
+  "/netherlands/taxes/rent-allowance-netherlands",
+  /** Legacy URL (301 → canonical guide) — keep Living tab active before redirect. */
+  "/netherlands/taxes/rent-allowance",
+];
+
 function isJobsSalaryGuidePath(pathname: string): boolean {
   const base = pathname.split("?")[0].replace(/\/+$/, "") || "/";
   return JOBS_SALARY_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
@@ -443,6 +450,11 @@ function isJobsSalaryGuidePath(pathname: string): boolean {
 function isMoveTaxCompensationGuidePath(pathname: string): boolean {
   const base = pathname.split("?")[0].replace(/\/+$/, "") || "/";
   return MOVE_TAX_COMPENSATION_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
+}
+
+function isLivingHousingGuidePath(pathname: string): boolean {
+  const base = pathname.split("?")[0].replace(/\/+$/, "") || "/";
+  return LIVING_HOUSING_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
 }
 
 const WORK_PATH_HIGHLIGHT_CULTURE: readonly string[] = [
@@ -576,6 +588,8 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (CITY_HUB_PREFIXES.some((pre) => pathname === pre || pathname.startsWith(`${pre}/`))) return "cities";
 
   if (isJobsSalaryGuidePath(pathname)) return "moving";
+
+  if (isLivingHousingGuidePath(pathname)) return "living";
 
   if (isMoveTaxCompensationGuidePath(pathname)) return "moving";
 
@@ -726,16 +740,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Taxes",
             "/netherlands/taxes/",
             "Understand income tax, the 30% ruling, payroll, annual returns, freelancers, and expat tax topics."
-          ),
-          item(
-            "Bonus tax Netherlands",
-            "/netherlands/taxes/bonus-tax-netherlands/",
-            "Why Dutch bonuses seem heavily taxed — payroll withholding and expat payslip context."
-          ),
-          item(
-            "Healthcare allowance Netherlands",
-            "/netherlands/taxes/healthcare-allowance-netherlands/",
-            "How zorgtoeslag works — eligibility, income tests and applying through Dienst Toeslagen."
           ),
         ],
       },
@@ -960,11 +964,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Net salary Netherlands", "/netherlands/taxes/net-salary-netherlands/"),
           item("Gross vs net salary Netherlands", "/netherlands/taxes/gross-vs-net-salary/"),
           item("Payroll tax Netherlands", "/netherlands/taxes/payroll-tax-netherlands/"),
-          item(
-            "Bonus tax Netherlands",
-            "/netherlands/taxes/bonus-tax-netherlands/",
-            "Why Dutch bonuses seem heavily taxed — payroll withholding, bijzondere beloning and expat context."
-          ),
           item("Average salary Netherlands", "/netherlands/taxes/average-salary-netherlands/"),
           item(
             "Salary negotiation Netherlands",
@@ -996,12 +995,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/holiday-allowance-netherlands/",
             "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
           ),
-          item(
-            "Healthcare allowance Netherlands",
-            "/netherlands/taxes/healthcare-allowance-netherlands/",
-            "Zorgtoeslag guide — eligibility, income tests and applying for Dutch health insurance support."
-          ),
-          item("Rent allowance", "/netherlands/taxes/rent-allowance/"),
           item("Childcare allowance", "/netherlands/taxes/childcare-allowance/"),
         ],
       },
@@ -1252,6 +1245,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Registering your address", "/netherlands/living/registering-your-address/", "Rental address context (BRP under Move)."),
           item("Rental contracts and deposits", "/netherlands/living/rental-contracts-and-deposits/", "Before you sign."),
           item("Housing costs", "/netherlands/living/housing-costs/", "Typical costs (calculators under Money)."),
+          item(
+            "Rent allowance in the Netherlands",
+            "/netherlands/taxes/rent-allowance-netherlands/",
+            "Huurtoeslag guide: who may qualify, property rules, income tests and how to apply through Dienst Toeslagen."
+          ),
         ],
       },
       {

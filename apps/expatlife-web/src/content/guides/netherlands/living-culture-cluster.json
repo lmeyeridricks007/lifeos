@@ -141,7 +141,7 @@
       "canonicalGuidePath": "/netherlands/average-rent-netherlands/",
       "canonicalLabel": "Average rent (Netherlands)",
       "related": [
-        { "label": "Rent allowance", "href": "/netherlands/taxes/rent-allowance/", "description": "Huurtoeslag basics (Money)." },
+        { "label": "Rent allowance", "href": "/netherlands/taxes/rent-allowance-netherlands/", "description": "Huurtoeslag basics (Money)." },
         { "label": "Buy vs rent", "href": "/netherlands/buy-vs-rent-netherlands/", "description": "Longer-term housing economics (Money)." }
       ]
     },

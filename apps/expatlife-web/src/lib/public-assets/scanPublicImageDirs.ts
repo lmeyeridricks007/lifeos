@@ -1,38 +1,48 @@
-import { readdirSync } from "node:fs";
-import path from "node:path";
-
 /**
- * Resolve paths to files under `public/` **without** `existsSync(join(cwd, "public", <dynamic>))`,
- * which makes Next.js output file tracing attach the entire `public` tree (~200MB+) to serverless
- * functions (Vercel 250MB unzipped limit).
+ * Resolve paths to files under `public/` without reading the filesystem at runtime.
  *
- * Only `readdirSync` on fixed subdirectories is used so traces stay scoped to those folders.
+ * `existsSync` / `readdirSync` on `public/**` makes Next.js output file tracing attach
+ * entire image trees (~350MB+) to serverless functions (Vercel 250MB unzipped limit).
+ * Static assets are served from CDN; server code only needs URL strings.
+ *
+ * When adding a new origin-country hero, add its slug to `ORIGIN_COUNTRY_HERO_SLUGS`.
  */
 
-const cwd = process.cwd();
-const COUNTRIES_DIR = path.join(cwd, "public", "images", "countries");
-const INFOGRAPHICS_DIR = path.join(cwd, "public", "images", "infographics");
+/** Slugs with `/images/countries/{slug}-to-netherlands-hero.webp` (and usually .png). */
+const ORIGIN_COUNTRY_HERO_SLUGS = new Set([
+  "argentina",
+  "australia",
+  "brazil",
+  "canada",
+  "chile",
+  "denmark",
+  "france",
+  "germany",
+  "india",
+  "indonesia",
+  "ireland",
+  "italy",
+  "japan",
+  "kenya",
+  "mexico",
+  "new-zealand",
+  "nigeria",
+  "norway",
+  "pakistan",
+  "philippines",
+  "singapore",
+  "south-africa",
+  "south-korea",
+  "spain",
+  "sweden",
+  "switzerland",
+  "turkey",
+  "uae",
+  "united-kingdom",
+  "united-states",
+]);
 
-function readNames(dir: string): Set<string> {
-  try {
-    return new Set(readdirSync(dir));
-  } catch {
-    return new Set();
-  }
-}
-
-let countryFiles: Set<string> | null = null;
-let infographicFiles: Set<string> | null = null;
-
-function countryFilenameSet(): Set<string> {
-  if (!countryFiles) countryFiles = readNames(COUNTRIES_DIR);
-  return countryFiles;
-}
-
-function infographicFilenameSet(): Set<string> {
-  if (!infographicFiles) infographicFiles = readNames(INFOGRAPHICS_DIR);
-  return infographicFiles;
-}
+const INFOGRAPHIC_FILENAME = /^[a-zA-Z0-9._-]+$/;
 
 /** Hero for origin-country moving guides: per-slug asset or global relocation hero. */
 export function resolveOriginCountryHeroSrc(slug: string): string {
@@ -43,16 +53,12 @@ export function resolveOriginCountryHeroSrc(slug: string): string {
 
 /** Only `/images/countries/*` heroes — no global fallback (for templates that supply their own placeholder). */
 export function resolveOriginCountryHeroSrcExclusive(slug: string): string | undefined {
-  const files = countryFilenameSet();
-  const webp = `${slug}-to-netherlands-hero.webp`;
-  const png = `${slug}-to-netherlands-hero.png`;
-  if (files.has(webp)) return `/images/countries/${webp}`;
-  if (files.has(png)) return `/images/countries/${png}`;
-  return undefined;
+  if (!ORIGIN_COUNTRY_HERO_SLUGS.has(slug)) return undefined;
+  return `/images/countries/${slug}-to-netherlands-hero.webp`;
 }
 
-/** Optional infographic under `/images/infographics/` when the file is present on disk. */
+/** Optional infographic under `/images/infographics/` when the filename is a safe basename. */
 export function resolveInfographicSrc(filename: string): string | undefined {
-  if (!infographicFilenameSet().has(filename)) return undefined;
+  if (!INFOGRAPHIC_FILENAME.test(filename)) return undefined;
   return `/images/infographics/${filename}`;
 }

@@ -9,6 +9,10 @@ const linkRegistry: LinkRegistry = {
     title: "Municipality registration guide",
   },
   moving_pillar: { href: "/netherlands/moving-to-the-netherlands/", title: "Moving to the Netherlands guide" },
+  rent_allowance: {
+    href: "/netherlands/taxes/rent-allowance-netherlands/",
+    title: "Rent allowance (huurtoeslag) guide",
+  },
   arrival_planner: { href: "/netherlands/moving/tools/arrival-planner/", title: "Arrival planner" },
   cost_estimator: { href: "/netherlands/moving/tools/relocation-cost-estimator/", title: "Relocation cost estimator" },
   document_readiness: { href: "/netherlands/document-readiness-checker/", title: "Document readiness checker" },
@@ -89,6 +93,11 @@ export const nlHousingFlagshipContent: NlFlagshipPillarContent = {
       q: "How does housing connect to health insurance?",
       a: "Once you **live in the Netherlands**, you normally need **Dutch basic health insurance** on time. Your **address and BSN** are part of that setup—plan housing registration so you are not caught without coverage.",
       links: [{ label: "Health insurance guide", href: "/netherlands/health-insurance-netherlands/" }],
+    },
+    {
+      q: "Can rent allowance (huurtoeslag) help with housing costs?",
+      a: "**Rent allowance** is a government benefit for **eligible residents** in **qualifying rental homes**—nationality alone is usually not the deciding factor. Property rules, income and household composition all matter, and amounts change regularly. Verify current rules on **Toeslagen** rather than assuming a listing qualifies.",
+      links: [{ label: "Rent allowance guide", href: "/netherlands/taxes/rent-allowance-netherlands/" }],
     },
   ],
   linkRegistry,
@@ -220,6 +229,11 @@ export const nlHousingFlagshipContent: NlFlagshipPillarContent = {
       label: "Municipality registration",
       href: "/netherlands/municipality-registration-netherlands/",
       description: "How address registration ties to your BSN.",
+    },
+    {
+      label: "Rent allowance (huurtoeslag)",
+      href: "/netherlands/taxes/rent-allowance-netherlands/",
+      description: "Practical guide to Dutch housing support for eligible renters.",
     },
   ],
 };

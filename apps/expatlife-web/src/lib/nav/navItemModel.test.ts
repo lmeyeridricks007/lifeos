@@ -87,7 +87,51 @@ describe("healthcare allowance nav active state", () => {
     expect(isNavItemActive("/netherlands/taxes/healthcare-allowance/", item)).toBe(true);
   });
 
-  it("highlights Move for legacy pathname before redirect", () => {
-    expect(getActiveNavKey("/netherlands/taxes/healthcare-allowance/")).toBe("moving");
+  it("does not mark the taxes hub active on a nested taxes guide", () => {
+    const hub = {
+      label: "Taxes hub (Netherlands)",
+      href: "/netherlands/taxes/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(HEALTHCARE_PATH, hub)).toBe(false);
+  });
+});
+
+describe("rent allowance nav active state", () => {
+  const RENT_PATH = "/netherlands/taxes/rent-allowance-netherlands/";
+
+  it("highlights Living for the housing guide path in Living → Housing", () => {
+    expect(getActiveNavKey(RENT_PATH)).toBe("living");
+  });
+
+  it("marks menu rows active for the canonical taxes href", () => {
+    const item = {
+      label: "Rent allowance in the Netherlands",
+      href: RENT_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(RENT_PATH, item)).toBe(true);
+  });
+
+  it("marks legacy rent-allowance href active via alias", () => {
+    const item = {
+      label: "Rent allowance",
+      href: "/netherlands/taxes/rent-allowance/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(RENT_PATH, item)).toBe(true);
+  });
+
+  it("marks canonical href active when pathname is the legacy URL", () => {
+    const item = {
+      label: "Rent allowance in the Netherlands",
+      href: RENT_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/taxes/rent-allowance/", item)).toBe(true);
+  });
+
+  it("highlights Living for legacy pathname before redirect", () => {
+    expect(getActiveNavKey("/netherlands/taxes/rent-allowance/")).toBe("living");
   });
 });

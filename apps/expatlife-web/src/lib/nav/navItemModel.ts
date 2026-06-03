@@ -22,11 +22,25 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/work/holiday-allowance-netherlands": "/netherlands/jobs/holiday-allowance-netherlands",
   "/netherlands/work/bonus-tax-netherlands": "/netherlands/taxes/bonus-tax-netherlands",
   "/netherlands/taxes/healthcare-allowance": "/netherlands/taxes/healthcare-allowance-netherlands",
+  "/netherlands/taxes/rent-allowance": "/netherlands/taxes/rent-allowance-netherlands",
 };
 
 function resolveNavActivePath(path: string): string {
   return NAV_ACTIVE_HREF_ALIASES[pathKey(path)] ?? path;
 }
+
+/** Pillar hub links: highlight only on the hub URL, not every nested guide beneath it. */
+const NAV_HUB_EXACT_MATCH_ONLY = new Set([
+  "/netherlands/taxes",
+  "/netherlands/money",
+  "/netherlands/jobs",
+  "/netherlands/cities",
+  "/netherlands/services",
+  "/netherlands/tools",
+  "/netherlands/living",
+  "/netherlands/moving-to-the-netherlands",
+  "/netherlands/randstad",
+]);
 
 /** Path matches an internal href (same rules as mega menu “current” highlighting). */
 export function isNavHrefActive(pathname: string, href: string | undefined): boolean {
@@ -34,7 +48,10 @@ export function isNavHrefActive(pathname: string, href: string | undefined): boo
   const pn = pathKey(resolveNavActivePath(pathname));
   const h = pathKey(resolveNavActivePath(href));
   if (pn === h) return true;
-  if (h !== "/" && pn.startsWith(h + "/")) return true;
+  if (h !== "/" && pn.startsWith(h + "/")) {
+    if (NAV_HUB_EXACT_MATCH_ONLY.has(h)) return false;
+    return true;
+  }
   const pathSlug = pathname.split("/").filter(Boolean).pop() ?? "";
   const hrefSlug = href.split("/").filter(Boolean).pop() ?? "";
   if (pathSlug && pathSlug === hrefSlug && pathname.includes("/netherlands/")) return true;

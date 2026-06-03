@@ -336,7 +336,7 @@ export const healthcareAllowanceNetherlandsPage = {
     { title: "Supplemental cover", body: "Dental, travel or extra physiotherapy policies sit outside typical basic zorgtoeslag scope — compare total package cost separately." },
   ],
   futureBenefitLinks: [
-    { label: "Housing allowance Netherlands", href: "/netherlands/taxes/housing-allowance-netherlands/", status: "comingSoon", description: "Huurtoeslag guide for qualifying rent situations — separate rules from zorgtoeslag." },
+    { label: "Housing allowance Netherlands", href: "/netherlands/taxes/rent-allowance-netherlands/", status: "live", description: "Huurtoeslag guide for qualifying rent situations — separate rules from zorgtoeslag." },
     { label: "Childcare allowance Netherlands", href: "/netherlands/taxes/childcare-allowance-netherlands/", status: "comingSoon", description: "Childcare toeslag orientation — different income tests and application path." },
   ] satisfies HealthcareAllowanceNetherlandsLink[],
   questionsSectionTips: [

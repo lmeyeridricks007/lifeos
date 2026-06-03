@@ -190,6 +190,12 @@ export const taxesHubPage = {
       description: "Zorgtoeslag guide — eligibility, income tests, applying and expat health insurance support.",
     },
     {
+      label: "Rent Allowance in the Netherlands",
+      href: "/netherlands/taxes/rent-allowance-netherlands/",
+      status: "live",
+      description: "Huurtoeslag guide — eligibility, property rules, income tests and expat housing support.",
+    },
+    {
       label: "Freelancers & ZZP Taxes",
       href: "/netherlands/taxes/freelancer-zzp-taxes/",
       status: "comingSoon",
@@ -231,6 +237,7 @@ export const taxesHubPage = {
     { label: "What taxes are deducted from salary?", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "live" },
     { label: "Why is my bonus taxed so much?", href: "/netherlands/taxes/bonus-tax-netherlands/", status: "live" },
     { label: "Can I get healthcare allowance (zorgtoeslag)?", href: "/netherlands/taxes/healthcare-allowance-netherlands/", status: "live" },
+    { label: "Can I get rent allowance (huurtoeslag)?", href: "/netherlands/taxes/rent-allowance-netherlands/", status: "live" },
   ] satisfies TaxesHubLink[],
   serviceLinks: [
     {
