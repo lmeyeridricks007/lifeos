@@ -23,6 +23,7 @@ import { payrollTaxNetherlandsPage } from "@/src/components/taxes/payrollTaxNeth
 import { bonusTaxNetherlandsPage } from "@/src/components/taxes/bonusTaxNetherlandsPageModel";
 import { healthcareAllowanceNetherlandsPage } from "@/src/components/taxes/healthcareAllowanceNetherlandsPageModel";
 import { rentAllowanceNetherlandsPage } from "@/src/components/taxes/rentAllowanceNetherlandsPageModel";
+import { childcareAllowanceNetherlandsPage } from "@/src/components/taxes/childcareAllowanceNetherlandsPageModel";
 import { averageSalaryNetherlandsPage } from "@/src/components/taxes/averageSalaryNetherlandsPageModel";
 import { salaryNegotiationNetherlandsPage } from "@/src/components/jobs/salaryNegotiationNetherlandsPageModel";
 import { minimumWageNetherlandsPage } from "@/src/components/jobs/minimumWageNetherlandsPageModel";
@@ -506,6 +507,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       rentAllowanceNetherlandsPage.reference2026.workedExamples.map((ex) => `${ex.title} ${ex.inputs} ${ex.indicativeMonthly}`),
       rentAllowanceNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       rentAllowanceNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:childcare-allowance-netherlands",
+    title: childcareAllowanceNetherlandsPage.hero.pageTitle,
+    href: childcareAllowanceNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: childcareAllowanceNetherlandsPage.seo.description,
+    image: childcareAllowanceNetherlandsPage.hero.image.src,
+    imageAlt: childcareAllowanceNetherlandsPage.hero.image.alt,
+    keywords: [...childcareAllowanceNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      childcareAllowanceNetherlandsPage.hero.pageTitle,
+      childcareAllowanceNetherlandsPage.hero.subtitle,
+      childcareAllowanceNetherlandsPage.seo.description,
+      [...childcareAllowanceNetherlandsPage.seo.keywords],
+      childcareAllowanceNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      childcareAllowanceNetherlandsPage.snapshotTips,
+      childcareAllowanceNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      childcareAllowanceNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

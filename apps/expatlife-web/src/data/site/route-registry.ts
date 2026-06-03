@@ -150,7 +150,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/taxes/30-ruling-application/": { title: "30% ruling application", section: "guides" },
   "/netherlands/taxes/30-ruling-expiry/": { title: "30% ruling expiry", section: "guides" },
   /** Live App Router guides — listed in EXTRA_LIVE_PATHS; do not duplicate here or nav shows “Soon”. */
-  "/netherlands/taxes/childcare-allowance/": { title: "Childcare allowance", section: "guides" },
   "/netherlands/taxes/double-taxation-netherlands/": { title: "Double taxation Netherlands", section: "guides" },
   "/netherlands/taxes/foreign-income-netherlands/": { title: "Foreign income Netherlands", section: "guides" },
   "/netherlands/taxes/expat-tax-return/": { title: "Expat tax return", section: "guides" },
@@ -291,6 +290,9 @@ const EXTRA_LIVE_PATHS = [
   /** Legacy taxes URL; 301 → healthcare allowance guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/taxes/healthcare-allowance/",
   "/netherlands/taxes/rent-allowance-netherlands/",
+  "/netherlands/taxes/childcare-allowance-netherlands/",
+  /** Legacy taxes URL; 301 → childcare allowance guide — keep live so nav never surfaces as “Soon”. */
+  "/netherlands/taxes/childcare-allowance/",
   /** Legacy taxes URL; 301 → rent allowance guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/taxes/rent-allowance/",
   "/netherlands/taxes/average-salary-netherlands/",

@@ -196,6 +196,12 @@ export const taxesHubPage = {
       description: "Huurtoeslag guide — eligibility, property rules, income tests and expat housing support.",
     },
     {
+      label: "Childcare Allowance in the Netherlands",
+      href: "/netherlands/taxes/childcare-allowance-netherlands/",
+      status: "live",
+      description: "Kinderopvangtoeslag guide — registered childcare, work requirements, applying and expat family support.",
+    },
+    {
       label: "Freelancers & ZZP Taxes",
       href: "/netherlands/taxes/freelancer-zzp-taxes/",
       status: "comingSoon",
@@ -238,6 +244,7 @@ export const taxesHubPage = {
     { label: "Why is my bonus taxed so much?", href: "/netherlands/taxes/bonus-tax-netherlands/", status: "live" },
     { label: "Can I get healthcare allowance (zorgtoeslag)?", href: "/netherlands/taxes/healthcare-allowance-netherlands/", status: "live" },
     { label: "Can I get rent allowance (huurtoeslag)?", href: "/netherlands/taxes/rent-allowance-netherlands/", status: "live" },
+    { label: "Can I get childcare allowance (kinderopvangtoeslag)?", href: "/netherlands/taxes/childcare-allowance-netherlands/", status: "live" },
   ] satisfies TaxesHubLink[],
   serviceLinks: [
     {

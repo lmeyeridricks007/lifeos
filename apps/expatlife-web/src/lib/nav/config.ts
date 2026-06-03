@@ -433,6 +433,9 @@ const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/taxes/healthcare-allowance-netherlands",
   /** Legacy URL (301 → canonical guide) — keep Move tab active before redirect. */
   "/netherlands/taxes/healthcare-allowance",
+  "/netherlands/taxes/childcare-allowance-netherlands",
+  /** Legacy URL (301 → canonical guide) — keep Move tab active before redirect. */
+  "/netherlands/taxes/childcare-allowance",
 ];
 
 /** Housing-related guides under Living → Housing (URL may live under `/taxes/`). */
@@ -741,6 +744,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/taxes/",
             "Understand income tax, the 30% ruling, payroll, annual returns, freelancers, and expat tax topics."
           ),
+          item(
+            "Childcare allowance",
+            "/netherlands/taxes/childcare-allowance-netherlands/",
+            "Kinderopvangtoeslag for expat families — registered childcare, work requirements and how to apply."
+          ),
         ],
       },
       {
@@ -951,6 +959,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Zorgtoeslag guide: who may qualify, how to apply and what expats should know about Dutch health insurance support."
           ),
           item(
+            "Childcare allowance in the Netherlands",
+            "/netherlands/taxes/childcare-allowance-netherlands/",
+            "Kinderopvangtoeslag guide for expat families — registered childcare, work rules and application steps."
+          ),
+          item(
             "Tax advisors for expats",
             "/netherlands/services/tax-advisors/",
             "Services directory: compare Dutch tax advisors, expat accountants, and international tax specialists."
@@ -995,7 +1008,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/holiday-allowance-netherlands/",
             "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
           ),
-          item("Childcare allowance", "/netherlands/taxes/childcare-allowance/"),
         ],
       },
       {

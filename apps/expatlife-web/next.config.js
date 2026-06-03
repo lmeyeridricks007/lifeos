@@ -245,6 +245,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/taxes/childcare-allowance",
+        destination: "/netherlands/taxes/childcare-allowance-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/taxes/childcare-allowance/",
+        destination: "/netherlands/taxes/childcare-allowance-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/average-salary-netherlands",
         destination: "/netherlands/taxes/average-salary-netherlands/",
         permanent: true,

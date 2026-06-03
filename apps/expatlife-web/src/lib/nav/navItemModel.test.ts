@@ -135,3 +135,51 @@ describe("rent allowance nav active state", () => {
     expect(getActiveNavKey("/netherlands/taxes/rent-allowance/")).toBe("living");
   });
 });
+
+describe("navItemModel — childcare allowance guide", () => {
+  const CHILDCARE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/";
+
+  it("highlights Move for the taxes guide path in Move → More", () => {
+    expect(getActiveNavKey(CHILDCARE_PATH)).toBe("moving");
+  });
+
+  it("marks canonical childcare allowance path active", () => {
+    const item = {
+      label: "Childcare allowance in the Netherlands",
+      href: CHILDCARE_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(CHILDCARE_PATH, item)).toBe(true);
+  });
+
+  it("marks legacy childcare-allowance href active via alias", () => {
+    const item = {
+      label: "Childcare allowance",
+      href: "/netherlands/taxes/childcare-allowance/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(CHILDCARE_PATH, item)).toBe(true);
+  });
+
+  it("marks canonical href active when pathname is the legacy URL", () => {
+    const item = {
+      label: "Childcare allowance in the Netherlands",
+      href: CHILDCARE_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/taxes/childcare-allowance/", item)).toBe(true);
+  });
+
+  it("does not mark the taxes hub active on a nested taxes guide", () => {
+    const hub = {
+      label: "Taxes hub (Netherlands)",
+      href: "/netherlands/taxes/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(CHILDCARE_PATH, hub)).toBe(false);
+  });
+
+  it("highlights Move for legacy pathname before redirect", () => {
+    expect(getActiveNavKey("/netherlands/taxes/childcare-allowance/")).toBe("moving");
+  });
+});

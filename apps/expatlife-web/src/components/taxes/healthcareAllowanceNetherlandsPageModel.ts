@@ -337,7 +337,7 @@ export const healthcareAllowanceNetherlandsPage = {
   ],
   futureBenefitLinks: [
     { label: "Housing allowance Netherlands", href: "/netherlands/taxes/rent-allowance-netherlands/", status: "live", description: "Huurtoeslag guide for qualifying rent situations — separate rules from zorgtoeslag." },
-    { label: "Childcare allowance Netherlands", href: "/netherlands/taxes/childcare-allowance-netherlands/", status: "comingSoon", description: "Childcare toeslag orientation — different income tests and application path." },
+    { label: "Childcare allowance Netherlands", href: "/netherlands/taxes/childcare-allowance-netherlands/", status: "live", description: "Kinderopvangtoeslag guide — registered childcare and work requirements." },
   ] satisfies HealthcareAllowanceNetherlandsLink[],
   questionsSectionTips: [
     "Highly skilled migrants follow the same zorgtoeslag framework — confirm payroll package income against toeslagen definitions.",
