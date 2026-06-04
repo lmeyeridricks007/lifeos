@@ -255,6 +255,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/buying-house-netherlands",
+        destination: "/netherlands/housing/buying-a-house-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/buying-house-netherlands/",
+        destination: "/netherlands/housing/buying-a-house-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/average-salary-netherlands",
         destination: "/netherlands/taxes/average-salary-netherlands/",
         permanent: true,

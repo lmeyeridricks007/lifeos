@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
-import { getActiveNavKey } from "./config";
-import { isNavItemActive } from "./navItemModel";
+import { getActiveNavKey, MEGA_MENUS } from "./config";
+import { getRouteStatus } from "@/src/lib/routes/routeStatus";
+import { isNavItemActive, isNavItemLinkable } from "./navItemModel";
 
 const HOLIDAY_PATH = "/netherlands/jobs/holiday-allowance-netherlands/";
 const BONUS_TAX_PATH = "/netherlands/taxes/bonus-tax-netherlands/";
@@ -181,5 +182,50 @@ describe("navItemModel — childcare allowance guide", () => {
 
   it("highlights Move for legacy pathname before redirect", () => {
     expect(getActiveNavKey("/netherlands/taxes/childcare-allowance/")).toBe("moving");
+  });
+});
+
+describe("buying a house nav active state", () => {
+  const BUYING_PATH = "/netherlands/housing/buying-a-house-netherlands/";
+
+  it("treats the shipped buying guide route as live", () => {
+    expect(getRouteStatus(BUYING_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the housing buying guide path", () => {
+    expect(getActiveNavKey(BUYING_PATH)).toBe("living");
+  });
+
+  it("marks menu rows active for the canonical housing href", () => {
+    const item = {
+      label: "Buying a house in the Netherlands",
+      href: BUYING_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(BUYING_PATH, item)).toBe(true);
+  });
+
+  it("marks canonical href active when pathname is the legacy flat URL", () => {
+    const item = {
+      label: "Buying a house",
+      href: BUYING_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/buying-house-netherlands/", item)).toBe(true);
+  });
+
+  it("highlights Living for legacy flat pathname before redirect", () => {
+    expect(getActiveNavKey("/netherlands/buying-house-netherlands/")).toBe("living");
+  });
+
+  it("renders the Living menu row as an active link, not a Soon row", () => {
+    const buyingItem = MEGA_MENUS.living.sections
+      .flatMap((section) => section.items)
+      .find((item) => item.href === BUYING_PATH);
+
+    expect(buyingItem).toBeDefined();
+    expect(buyingItem?.navStatus).toBe("live");
+    expect(isNavItemLinkable(buyingItem!)).toBe(true);
+    expect(isNavItemActive(BUYING_PATH, buyingItem!)).toBe(true);
   });
 });

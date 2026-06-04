@@ -24,6 +24,7 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/taxes/healthcare-allowance": "/netherlands/taxes/healthcare-allowance-netherlands",
   "/netherlands/taxes/rent-allowance": "/netherlands/taxes/rent-allowance-netherlands",
   "/netherlands/taxes/childcare-allowance": "/netherlands/taxes/childcare-allowance-netherlands",
+  "/netherlands/buying-house-netherlands": "/netherlands/housing/buying-a-house-netherlands",
 };
 
 function resolveNavActivePath(path: string): string {

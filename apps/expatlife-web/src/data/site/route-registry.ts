@@ -122,7 +122,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/registering-address-rental/": { title: "Registering address (rental)", section: "guides" },
   "/netherlands/rental-insurance-netherlands/": { title: "Rental insurance Netherlands", section: "guides" },
   "/netherlands/inventory-check-rental-netherlands/": { title: "Inventory check rental Netherlands", section: "guides" },
-  "/netherlands/buying-house-netherlands/": { title: "Buying a house Netherlands", section: "guides" },
   "/netherlands/mortgage-netherlands-expats/": { title: "Mortgage Netherlands expats", section: "guides" },
   "/netherlands/property-tax-netherlands/": { title: "Property tax Netherlands", section: "guides" },
   "/netherlands/buy-vs-rent-netherlands/": { title: "Buy vs rent Netherlands", section: "guides" },
@@ -260,6 +259,10 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/randstad/",
   /** Flagship housing hub (App Router) — keep live so nav and related guides never show “Soon”. */
   "/netherlands/housing/",
+  /** Live App Router guide — buying property pillar for expats (Housing cluster). */
+  "/netherlands/housing/buying-a-house-netherlands/",
+  /** Legacy flat URL; 301 → buying guide — keep live so nav never surfaces as “Soon”. */
+  "/netherlands/buying-house-netherlands/",
   "/netherlands/amsterdam/",
   "/netherlands/rotterdam/",
   "/netherlands/utrecht/",

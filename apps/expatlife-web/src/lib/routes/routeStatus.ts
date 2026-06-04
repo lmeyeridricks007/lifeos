@@ -39,7 +39,7 @@ function movingToolOriginSlugFromNormalizedPath(n: string): string | null {
 
 export function getRouteStatus(href: string, now: Date = new Date()): PublishRouteStatus {
   const n = normalizeSitePath(href);
-  if (COMING_SOON_ROUTES[n] || PLACEHOLDER_TOOL_PATHS.has(n)) return "coming-soon";
+  if (PLACEHOLDER_TOOL_PATHS.has(n)) return "coming-soon";
 
   const originSlug = originCountrySlugFromNormalizedPath(n);
   const toolFromSlug = movingToolOriginSlugFromNormalizedPath(n);
@@ -55,6 +55,8 @@ export function getRouteStatus(href: string, now: Date = new Date()): PublishRou
 
   const baseLive =
     LIVE_PATHS.has(n) || isOriginCountryGuidePath(href) || isMovingToolFromCountryPath(href);
+
+  if (!baseLive && COMING_SOON_ROUTES[n]) return "coming-soon";
 
   if (!baseLive) {
     const m = /^\/netherlands\/moving\/guides\/([a-z0-9-]+)\/$/.exec(n);

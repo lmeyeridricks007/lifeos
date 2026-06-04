@@ -24,6 +24,7 @@ import { bonusTaxNetherlandsPage } from "@/src/components/taxes/bonusTaxNetherla
 import { healthcareAllowanceNetherlandsPage } from "@/src/components/taxes/healthcareAllowanceNetherlandsPageModel";
 import { rentAllowanceNetherlandsPage } from "@/src/components/taxes/rentAllowanceNetherlandsPageModel";
 import { childcareAllowanceNetherlandsPage } from "@/src/components/taxes/childcareAllowanceNetherlandsPageModel";
+import { buyingHouseNetherlandsPage } from "@/src/components/housing/buyingHouseNetherlandsPageModel";
 import { averageSalaryNetherlandsPage } from "@/src/components/taxes/averageSalaryNetherlandsPageModel";
 import { salaryNegotiationNetherlandsPage } from "@/src/components/jobs/salaryNegotiationNetherlandsPageModel";
 import { minimumWageNetherlandsPage } from "@/src/components/jobs/minimumWageNetherlandsPageModel";
@@ -76,12 +77,12 @@ const VISA_PAGES: VisaPageData[] = [
   PARTNER_FAMILY_VISA,
 ];
 
-function joinSearchParts(...parts: (string | undefined | null | string[])[]): string {
+function joinSearchParts(...parts: (string | undefined | null | readonly string[])[]): string {
   const flat: string[] = [];
   for (const p of parts) {
     if (p == null) continue;
-    if (Array.isArray(p)) flat.push(...p.filter(Boolean));
-    else flat.push(p);
+    if (typeof p === "string") flat.push(p);
+    else flat.push(...p.filter(Boolean));
   }
   return flat.join(" ").trim();
 }
@@ -527,9 +528,34 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       childcareAllowanceNetherlandsPage.seo.description,
       [...childcareAllowanceNetherlandsPage.seo.keywords],
       childcareAllowanceNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
-      childcareAllowanceNetherlandsPage.snapshotTips,
+      [...childcareAllowanceNetherlandsPage.snapshotTips],
       childcareAllowanceNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       childcareAllowanceNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:buying-a-house-netherlands",
+    title: buyingHouseNetherlandsPage.hero.pageTitle,
+    href: buyingHouseNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Housing",
+    description: buyingHouseNetherlandsPage.seo.description,
+    image: buyingHouseNetherlandsPage.hero.image.src,
+    imageAlt: buyingHouseNetherlandsPage.hero.image.alt,
+    keywords: [...buyingHouseNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      buyingHouseNetherlandsPage.hero.pageTitle,
+      buyingHouseNetherlandsPage.hero.subtitle,
+      buyingHouseNetherlandsPage.seo.description,
+      [...buyingHouseNetherlandsPage.seo.keywords],
+      buyingHouseNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      [...buyingHouseNetherlandsPage.snapshotTips],
+      buyingHouseNetherlandsPage.reference2026.highlights.map((item) => `${item.label} ${item.value} ${item.note}`),
+      buyingHouseNetherlandsPage.cityCards.map((city) => `${city.label} ${city.vibe} ${city.pricing}`),
+      buyingHouseNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      buyingHouseNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

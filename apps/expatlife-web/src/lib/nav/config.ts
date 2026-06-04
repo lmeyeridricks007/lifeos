@@ -443,6 +443,9 @@ const LIVING_HOUSING_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/taxes/rent-allowance-netherlands",
   /** Legacy URL (301 → canonical guide) — keep Living tab active before redirect. */
   "/netherlands/taxes/rent-allowance",
+  "/netherlands/housing/buying-a-house-netherlands",
+  /** Legacy flat URL (301 → canonical guide) — keep Living tab active before redirect. */
+  "/netherlands/buying-house-netherlands",
 ];
 
 function isJobsSalaryGuidePath(pathname: string): boolean {
@@ -1068,7 +1071,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Buying & housing economics",
         items: [
-          item("Buying a house", "/netherlands/buying-house-netherlands/"),
+          item(
+            "Buying a house",
+            "/netherlands/housing/buying-a-house-netherlands/",
+            "Mortgages, kosten koper, overbidding and the Dutch purchase process for expats."
+          ),
           item("Mortgage (expats)", "/netherlands/mortgage-netherlands-expats/"),
           item("Property tax", "/netherlands/property-tax-netherlands/"),
           item("Buy vs rent", "/netherlands/buy-vs-rent-netherlands/"),
@@ -1261,6 +1268,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Rent allowance in the Netherlands",
             "/netherlands/taxes/rent-allowance-netherlands/",
             "Huurtoeslag guide: who may qualify, property rules, income tests and how to apply through Dienst Toeslagen."
+          ),
+          item(
+            "Buying a house in the Netherlands",
+            "/netherlands/housing/buying-a-house-netherlands/",
+            "Expat guide to mortgages, kosten koper, overbidding and the Dutch home buying process."
           ),
         ],
       },
