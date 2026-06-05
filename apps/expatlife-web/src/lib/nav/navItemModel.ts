@@ -25,6 +25,10 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/taxes/rent-allowance": "/netherlands/taxes/rent-allowance-netherlands",
   "/netherlands/taxes/childcare-allowance": "/netherlands/taxes/childcare-allowance-netherlands",
   "/netherlands/buying-house-netherlands": "/netherlands/housing/buying-a-house-netherlands",
+  "/netherlands/mortgage-netherlands-expats": "/netherlands/housing/mortgages-netherlands-expats",
+  "/netherlands/property-tax-netherlands": "/netherlands/taxes/property-tax-netherlands",
+  "/netherlands/buy-vs-rent-netherlands": "/netherlands/housing/buy-vs-rent-netherlands",
+  "/netherlands/double-taxation-netherlands": "/netherlands/taxes/double-taxation-netherlands",
 };
 
 function resolveNavActivePath(path: string): string {

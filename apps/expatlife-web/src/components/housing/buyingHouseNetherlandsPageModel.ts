@@ -415,8 +415,10 @@ export const buyingHouseNetherlandsPage = {
   ],
   relatedHousingGuides: [
     { label: "Renting in the Netherlands", href: RENTING_NETHERLANDS_PATH, status: "comingSoon", description: "Full renting guide — contracts, search and tenant rights." },
+    { label: "Buy vs Rent Netherlands", href: "/netherlands/housing/buy-vs-rent-netherlands/", status: "live", description: "Decision guide before you commit to buying." },
     { label: "Housing Costs Netherlands", href: "/netherlands/housing/housing-costs-netherlands/", status: "comingSoon", description: "Typical housing costs for renters and buyers." },
-    { label: "Mortgage Guide Netherlands", href: "/netherlands/housing/mortgages-netherlands-expats/", status: "comingSoon", description: "Deep dive on expat mortgages and lender requirements." },
+    { label: "Mortgage Guide Netherlands", href: "/netherlands/housing/mortgages-netherlands-expats/", status: "live", description: "Deep dive on expat mortgages and lender requirements." },
+    { label: "Property Tax Netherlands", href: "/netherlands/taxes/property-tax-netherlands/", status: "live", description: "WOZ value, municipal taxes and recurring homeowner costs." },
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, status: "live", description: "Compare cities before choosing where to buy." },
     { label: "Moving to the Netherlands", href: MOVING_TO_NETHERLANDS_PATH, status: "live", description: "Relocation hub — registration, employment and housing timeline." },
     { label: "Netherlands Housing Hub", href: HOUSING_HUB_PATH, status: "live", description: "Central housing guide for expats." },
@@ -470,7 +472,9 @@ export const buyingHouseNetherlandsPage = {
     "Property regulations, mortgage rules, transfer tax rates and exemptions may change. Always verify current requirements through official resources and licensed mortgage advisers before purchasing.",
   relatedGuides: [
     { label: "Netherlands Housing Hub", href: HOUSING_HUB_PATH, status: "live", description: "Central housing guide for expats." },
+    { label: "Buy vs Rent Netherlands", href: "/netherlands/housing/buy-vs-rent-netherlands/", status: "live", description: "Compare buying and renting before committing." },
     { label: "Renting in the Netherlands", href: RENTING_NETHERLANDS_PATH, status: "comingSoon", description: "Renting alternative for shorter stays." },
+    { label: "Property Tax Netherlands", href: "/netherlands/taxes/property-tax-netherlands/", status: "live", description: "WOZ, municipal taxes and recurring costs after buying." },
     { label: "Netherlands Taxes Hub", href: TAXES_HUB_PATH, status: "live", description: "Transfer tax and mortgage interest deduction context." },
     { label: "Expat Salary Guide", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Salary expectations for mortgage capacity planning." },
     { label: "Net Salary Guide", href: NET_SALARY_NETHERLANDS_PATH, status: "live", description: "Take-home pay context for affordability." },
@@ -479,7 +483,9 @@ export const buyingHouseNetherlandsPage = {
   ] satisfies BuyingHouseNetherlandsLink[],
   exploreNextCards: [
     { label: "Renting in the Netherlands", href: RENTING_NETHERLANDS_PATH, status: "comingSoon", description: "Full renting guide for expats." },
-    { label: "Mortgage Guide", href: "/netherlands/housing/mortgages-netherlands-expats/", status: "comingSoon", description: "Deep dive on expat mortgages." },
+    { label: "Buy vs Rent", href: "/netherlands/housing/buy-vs-rent-netherlands/", status: "live", description: "Balanced decision guide for expats." },
+    { label: "Mortgage Guide", href: "/netherlands/housing/mortgages-netherlands-expats/", status: "live", description: "Deep dive on expat mortgages." },
+    { label: "Property Tax", href: "/netherlands/taxes/property-tax-netherlands/", status: "live", description: "WOZ value and recurring ownership costs." },
     { label: "Housing Costs", href: "/netherlands/housing/housing-costs-netherlands/", status: "comingSoon", description: "Typical housing costs overview." },
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, status: "live", description: "Compare cities and housing markets." },
     { label: "Moving to the Netherlands", href: MOVING_TO_NETHERLANDS_PATH, status: "live", description: "Main relocation guide." },

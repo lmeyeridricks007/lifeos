@@ -229,3 +229,223 @@ describe("buying a house nav active state", () => {
     expect(isNavItemActive(BUYING_PATH, buyingItem!)).toBe(true);
   });
 });
+
+describe("mortgages for expats nav active state", () => {
+  const MORTGAGE_PATH = "/netherlands/housing/mortgages-netherlands-expats/";
+
+  it("treats the shipped mortgage guide route as live", () => {
+    expect(getRouteStatus(MORTGAGE_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the mortgage guide path", () => {
+    expect(getActiveNavKey(MORTGAGE_PATH)).toBe("living");
+  });
+
+  it("marks menu rows active for the canonical mortgage href", () => {
+    const item = {
+      label: "Mortgages for expats",
+      href: MORTGAGE_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(MORTGAGE_PATH, item)).toBe(true);
+  });
+
+  it("marks canonical href active when pathname is the legacy flat URL", () => {
+    const item = {
+      label: "Mortgage (expats)",
+      href: MORTGAGE_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/mortgage-netherlands-expats/", item)).toBe(true);
+  });
+
+  it("highlights Living for legacy flat pathname before redirect", () => {
+    expect(getActiveNavKey("/netherlands/mortgage-netherlands-expats/")).toBe("living");
+  });
+
+  it("renders the Living menu row as an active link, not a Soon row", () => {
+    const mortgageItem = MEGA_MENUS.living.sections
+      .flatMap((section) => section.items)
+      .find((item) => item.href === MORTGAGE_PATH);
+
+    expect(mortgageItem).toBeDefined();
+    expect(mortgageItem?.navStatus).toBe("live");
+    expect(isNavItemLinkable(mortgageItem!)).toBe(true);
+    expect(isNavItemActive(MORTGAGE_PATH, mortgageItem!)).toBe(true);
+  });
+
+  it("renders the Money menu row as an active link, not a Soon row", () => {
+    const mortgageItem = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((item) => item.href === MORTGAGE_PATH);
+
+    expect(mortgageItem).toBeDefined();
+    expect(mortgageItem?.navStatus).toBe("live");
+    expect(isNavItemLinkable(mortgageItem!)).toBe(true);
+    expect(isNavItemActive(MORTGAGE_PATH, mortgageItem!)).toBe(true);
+  });
+});
+
+describe("property tax nav active state", () => {
+  const PROPERTY_TAX_PATH = "/netherlands/taxes/property-tax-netherlands/";
+
+  it("treats the shipped property tax guide route as live", () => {
+    expect(getRouteStatus(PROPERTY_TAX_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the property tax guide path surfaced under Housing", () => {
+    expect(getActiveNavKey(PROPERTY_TAX_PATH)).toBe("living");
+  });
+
+  it("marks menu rows active for the canonical property tax href", () => {
+    const item = {
+      label: "Property tax in the Netherlands",
+      href: PROPERTY_TAX_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(PROPERTY_TAX_PATH, item)).toBe(true);
+  });
+
+  it("marks canonical href active when pathname is the legacy flat URL", () => {
+    const item = {
+      label: "Property tax",
+      href: PROPERTY_TAX_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/property-tax-netherlands/", item)).toBe(true);
+  });
+
+  it("highlights Living for legacy flat pathname before redirect", () => {
+    expect(getActiveNavKey("/netherlands/property-tax-netherlands/")).toBe("living");
+  });
+
+  it("renders the Living menu row as an active link, not a Soon row", () => {
+    const propertyTaxItem = MEGA_MENUS.living.sections
+      .flatMap((section) => section.items)
+      .find((item) => item.href === PROPERTY_TAX_PATH);
+
+    expect(propertyTaxItem).toBeDefined();
+    expect(propertyTaxItem?.navStatus).toBe("live");
+    expect(isNavItemLinkable(propertyTaxItem!)).toBe(true);
+    expect(isNavItemActive(PROPERTY_TAX_PATH, propertyTaxItem!)).toBe(true);
+  });
+
+  it("renders the Money menu row as an active link, not a Soon row", () => {
+    const propertyTaxItem = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((item) => item.href === PROPERTY_TAX_PATH);
+
+    expect(propertyTaxItem).toBeDefined();
+    expect(propertyTaxItem?.navStatus).toBe("live");
+    expect(isNavItemLinkable(propertyTaxItem!)).toBe(true);
+    expect(isNavItemActive(PROPERTY_TAX_PATH, propertyTaxItem!)).toBe(true);
+  });
+
+  it("renders the Move menu row as an active link, not a Soon row", () => {
+    const propertyTaxItem = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((item) => item.href === PROPERTY_TAX_PATH);
+
+    expect(propertyTaxItem).toBeDefined();
+    expect(propertyTaxItem?.navStatus).toBe("live");
+    expect(isNavItemLinkable(propertyTaxItem!)).toBe(true);
+    expect(isNavItemActive(PROPERTY_TAX_PATH, propertyTaxItem!)).toBe(true);
+  });
+});
+
+describe("buy vs rent nav active state", () => {
+  const BUY_VS_RENT_PATH = "/netherlands/housing/buy-vs-rent-netherlands/";
+
+  it("treats the shipped buy vs rent guide route as live", () => {
+    expect(getRouteStatus(BUY_VS_RENT_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the buy vs rent housing guide path", () => {
+    expect(getActiveNavKey(BUY_VS_RENT_PATH)).toBe("living");
+  });
+
+  it("marks canonical href active when pathname is the legacy flat URL", () => {
+    const item = {
+      label: "Buy vs rent",
+      href: BUY_VS_RENT_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/buy-vs-rent-netherlands/", item)).toBe(true);
+  });
+
+  it("renders the Living menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.living.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === BUY_VS_RENT_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BUY_VS_RENT_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === BUY_VS_RENT_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BUY_VS_RENT_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Move menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === BUY_VS_RENT_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BUY_VS_RENT_PATH, item!)).toBe(true);
+  });
+});
+
+describe("double taxation nav active state", () => {
+  const DOUBLE_TAXATION_PATH = "/netherlands/taxes/double-taxation-netherlands/";
+
+  it("treats the shipped double taxation guide route as live", () => {
+    expect(getRouteStatus(DOUBLE_TAXATION_PATH)).toBe("live");
+  });
+
+  it("highlights Move for the double taxation guide surfaced in Move → More", () => {
+    expect(getActiveNavKey(DOUBLE_TAXATION_PATH)).toBe("moving");
+  });
+
+  it("marks canonical href active when pathname is the legacy flat URL", () => {
+    const item = {
+      label: "Double taxation",
+      href: DOUBLE_TAXATION_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/double-taxation-netherlands/", item)).toBe(true);
+  });
+
+  it("renders the Move menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === DOUBLE_TAXATION_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DOUBLE_TAXATION_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === DOUBLE_TAXATION_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DOUBLE_TAXATION_PATH, item!)).toBe(true);
+  });
+});

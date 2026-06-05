@@ -265,6 +265,46 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/mortgage-netherlands-expats",
+        destination: "/netherlands/housing/mortgages-netherlands-expats/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/mortgage-netherlands-expats/",
+        destination: "/netherlands/housing/mortgages-netherlands-expats/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/property-tax-netherlands",
+        destination: "/netherlands/taxes/property-tax-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/property-tax-netherlands/",
+        destination: "/netherlands/taxes/property-tax-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/buy-vs-rent-netherlands",
+        destination: "/netherlands/housing/buy-vs-rent-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/buy-vs-rent-netherlands/",
+        destination: "/netherlands/housing/buy-vs-rent-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/double-taxation-netherlands",
+        destination: "/netherlands/taxes/double-taxation-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/double-taxation-netherlands/",
+        destination: "/netherlands/taxes/double-taxation-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/average-salary-netherlands",
         destination: "/netherlands/taxes/average-salary-netherlands/",
         permanent: true,

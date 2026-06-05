@@ -1,0 +1,29 @@
+{
+  "id": "nl-housing-mortgages-expats-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/housing/mortgages-netherlands-expats/",
+    "slot": "mortgage-provider-contact-options"
+  },
+  "variant": "cards",
+  "title": "Mortgage providers and banks expats can contact",
+  "intro": "Start with licensed mortgage advice for personal affordability, then compare banks directly for product scope, eligibility and documentation. These links are for discovery and contact, not mortgage advice, approval guarantees or a ranking.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    {
+      "providerId": "abn-amro",
+      "reason": "Traditional Dutch bank with English information and a broad retail stack; useful to compare when you may want banking and mortgage services together."
+    },
+    {
+      "providerId": "ing",
+      "reason": "Large Dutch retail bank commonly used by residents; compare official mortgage pages, documentation requirements and appointment options."
+    },
+    {
+      "providerId": "rabobank",
+      "reason": "Major Dutch bank with regional depth; useful to compare if you want a full-service local banking and mortgage relationship."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat mortgage discovery, not pay-to-rank placement. This is not mortgage, financial, tax or investment advice; confirm suitability, fees, eligibility and terms with licensed advisers and providers directly."
+}

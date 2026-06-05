@@ -436,6 +436,9 @@ const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/taxes/childcare-allowance-netherlands",
   /** Legacy URL (301 → canonical guide) — keep Move tab active before redirect. */
   "/netherlands/taxes/childcare-allowance",
+  "/netherlands/taxes/double-taxation-netherlands",
+  /** Legacy flat URL (301 → canonical guide) — keep Move tab active before redirect. */
+  "/netherlands/double-taxation-netherlands",
 ];
 
 /** Housing-related guides under Living → Housing (URL may live under `/taxes/`). */
@@ -443,9 +446,18 @@ const LIVING_HOUSING_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/taxes/rent-allowance-netherlands",
   /** Legacy URL (301 → canonical guide) — keep Living tab active before redirect. */
   "/netherlands/taxes/rent-allowance",
+  "/netherlands/taxes/property-tax-netherlands",
   "/netherlands/housing/buying-a-house-netherlands",
+  "/netherlands/housing/mortgages-netherlands-expats",
+  "/netherlands/housing/buy-vs-rent-netherlands",
   /** Legacy flat URL (301 → canonical guide) — keep Living tab active before redirect. */
   "/netherlands/buying-house-netherlands",
+  /** Legacy flat URL (301 → canonical guide) — keep Living tab active before redirect. */
+  "/netherlands/mortgage-netherlands-expats",
+  /** Legacy flat URL (301 → canonical property-tax guide) — keep Living tab active before redirect. */
+  "/netherlands/property-tax-netherlands",
+  /** Legacy flat URL (301 → canonical buy-vs-rent guide) — keep Living tab active before redirect. */
+  "/netherlands/buy-vs-rent-netherlands",
 ];
 
 function isJobsSalaryGuidePath(pathname: string): boolean {
@@ -752,6 +764,26 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/taxes/childcare-allowance-netherlands/",
             "Kinderopvangtoeslag for expat families — registered childcare, work requirements and how to apply."
           ),
+          item(
+            "Mortgages for expats",
+            "/netherlands/housing/mortgages-netherlands-expats/",
+            "Dutch mortgage eligibility, borrowing capacity and buying finance for international professionals."
+          ),
+          item(
+            "Property tax",
+            "/netherlands/taxes/property-tax-netherlands/",
+            "WOZ value, municipal taxes and recurring homeowner costs for expats buying or owning property."
+          ),
+          item(
+            "Double taxation",
+            "/netherlands/taxes/double-taxation-netherlands/",
+            "Tax treaties, residency and foreign-income questions for internationally mobile expats."
+          ),
+          item(
+            "Buy vs rent",
+            "/netherlands/housing/buy-vs-rent-netherlands/",
+            "Balanced decision guide for renting versus buying as an expat."
+          ),
         ],
       },
       {
@@ -952,6 +984,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Taxes guide: what the 30% facility is, employer involvement, eligibility, changes, and official sources."
           ),
           item(
+            "Double taxation in the Netherlands",
+            "/netherlands/taxes/double-taxation-netherlands/",
+            "Tax treaties, foreign income, residency and cross-border expat tax scenarios."
+          ),
+          item(
             "Bonus tax in the Netherlands",
             "/netherlands/taxes/bonus-tax-netherlands/",
             "Why bonuses seem heavily taxed — payroll withholding, bijzondere beloning and expat payslip context."
@@ -1076,9 +1113,21 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/housing/buying-a-house-netherlands/",
             "Mortgages, kosten koper, overbidding and the Dutch purchase process for expats."
           ),
-          item("Mortgage (expats)", "/netherlands/mortgage-netherlands-expats/"),
-          item("Property tax", "/netherlands/property-tax-netherlands/"),
-          item("Buy vs rent", "/netherlands/buy-vs-rent-netherlands/"),
+          item(
+            "Mortgage (expats)",
+            "/netherlands/housing/mortgages-netherlands-expats/",
+            "Eligibility, borrowing capacity, Dutch mortgage types and expat application steps."
+          ),
+          item(
+            "Property tax",
+            "/netherlands/taxes/property-tax-netherlands/",
+            "WOZ value, municipal taxes, transfer-tax context and recurring homeowner costs."
+          ),
+          item(
+            "Buy vs rent",
+            "/netherlands/housing/buy-vs-rent-netherlands/",
+            "Compare rent, mortgage, upfront costs, flexibility and city tradeoffs."
+          ),
         ],
       },
       {
@@ -1273,6 +1322,21 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Buying a house in the Netherlands",
             "/netherlands/housing/buying-a-house-netherlands/",
             "Expat guide to mortgages, kosten koper, overbidding and the Dutch home buying process."
+          ),
+          item(
+            "Mortgages for expats",
+            "/netherlands/housing/mortgages-netherlands-expats/",
+            "Dutch mortgage eligibility, borrowing capacity, fixed vs variable rates and application steps."
+          ),
+          item(
+            "Property tax in the Netherlands",
+            "/netherlands/taxes/property-tax-netherlands/",
+            "WOZ value, municipal taxes and recurring owner costs for expats."
+          ),
+          item(
+            "Buy vs rent in the Netherlands",
+            "/netherlands/housing/buy-vs-rent-netherlands/",
+            "Decision guide for expats comparing rental flexibility with ownership stability."
           ),
         ],
       },

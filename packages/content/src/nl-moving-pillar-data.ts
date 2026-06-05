@@ -44,6 +44,18 @@ const linkRegistry: LinkRegistry = {
     href: "/netherlands/services/rental-agencies/",
     title: "rental agencies directory",
   },
+  buy_vs_rent: {
+    href: "/netherlands/housing/buy-vs-rent-netherlands/",
+    title: "buy vs rent in the Netherlands guide",
+  },
+  mortgages_expats: {
+    href: "/netherlands/housing/mortgages-netherlands-expats/",
+    title: "mortgages for expats guide",
+  },
+  property_tax: {
+    href: "/netherlands/taxes/property-tax-netherlands/",
+    title: "property tax in the Netherlands guide",
+  },
   health_insurance: {
     href: "/netherlands/health-insurance-netherlands/",
     title: "Health insurance in the Netherlands",
@@ -119,6 +131,10 @@ const linkRegistry: LinkRegistry = {
   thirty_percent_ruling: {
     href: "/netherlands/taxes/30-percent-ruling/",
     title: "30% Ruling in the Netherlands",
+  },
+  double_taxation: {
+    href: "/netherlands/taxes/double-taxation-netherlands/",
+    title: "Double taxation in the Netherlands",
   },
   healthcare_allowance_netherlands: {
     href: "/netherlands/taxes/healthcare-allowance-netherlands/",
@@ -518,8 +534,8 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       introParagraph:
         "Everyday money in the Netherlands usually runs through a **Dutch current account** (betaalrekening): **iDEAL** for online payments, **direct debit** (incasso) for rent and utilities, and a debit card for shops and public transport. Banks must verify who you are (AML/KYC); after you relocate, that typically means a **registrable address** and **BSN**, though a few **digital banks** still onboard some people with limited Dutch paperwork earlier. Salaries and many government letters expect a **local IBAN**.",
       paragraph:
-        "For a full walkthrough—documents, timing, iDEAL, and common mistakes—read {0}. To compare **banks and accounts** we list for expats (fees, English support, onboarding), use {1}. For payroll and annual return context, open {2}; for the Dutch expat tax facility, use {3}. The **provider cards below** link to official sites; always confirm **eligibility and pricing there** before you apply.",
-      paragraphLinkKeys: ["open_bank_account", "services_banks", "taxes_hub", "thirty_percent_ruling"],
+        "For a full walkthrough—documents, timing, iDEAL, and common mistakes—read {0}. To compare **banks and accounts** we list for expats (fees, English support, onboarding), use {1}. For payroll and annual return context, open {2}; for the Dutch expat tax facility, use {3}. If your move involves foreign income, remote work, or multiple countries, start with {4}. The **provider cards below** link to official sites; always confirm **eligibility and pricing there** before you apply.",
+      paragraphLinkKeys: ["open_bank_account", "services_banks", "taxes_hub", "thirty_percent_ruling", "double_taxation"],
     },
     housing: {
       sectionTitle: "Housing",
@@ -528,12 +544,15 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       registrationWarning:
         "BSN registration usually needs a registrable address—confirm inschrijving before you pay large deposits.",
       paragraph:
-        "See {0} for how **your address**, **BSN**, and **appointments** fit together. If you are choosing between Amsterdam, Rotterdam, The Hague, Utrecht, and nearby cities, use {1} to compare the region before you commit to one postcode. To search listings and mid-term options, start with {2}; if you want **agency-assisted** search, browse {3}. The **platforms below** are practical entry points—always verify **scams, deposits, and registration eligibility** before you pay or sign.",
+        "See {0} for how **your address**, **BSN**, and **appointments** fit together. If you are choosing between Amsterdam, Rotterdam, The Hague, Utrecht, and nearby cities, use {1} to compare the region before you commit to one postcode. To search listings and mid-term options, start with {2}; if you want **agency-assisted** search, browse {3}. If you are unsure whether to rent first or buy, read {4}. If buying is part of your relocation plan, read {5} before you estimate a purchase budget, then use {6} to understand WOZ value, municipal taxes, and recurring owner costs. The **platforms below** are practical entry points—always verify **scams, deposits, and registration eligibility** before you pay or sign.",
       paragraphLinkKeys: [
         "municipality_registration",
         "randstad_overview",
         "services_housing_platforms",
         "services_rental_agencies",
+        "buy_vs_rent",
+        "mortgages_expats",
+        "property_tax",
       ],
     },
     practicalEssentials: {

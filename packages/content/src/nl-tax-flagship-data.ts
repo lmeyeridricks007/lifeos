@@ -20,6 +20,14 @@ const linkRegistry: LinkRegistry = {
     href: "/netherlands/taxes/rent-allowance-netherlands/",
     title: "Rent allowance (huurtoeslag) guide",
   },
+  property_tax: {
+    href: "/netherlands/taxes/property-tax-netherlands/",
+    title: "Property tax in the Netherlands guide",
+  },
+  double_taxation: {
+    href: "/netherlands/taxes/double-taxation-netherlands/",
+    title: "Double taxation in the Netherlands guide",
+  },
 };
 
 export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
@@ -61,9 +69,18 @@ export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
       chips: ["cross_border"],
       personaTitle: "Cross-border or recent arrival",
       whatMatters: ["Tax residency timing", "Double taxation angles", "Records to keep"],
-      readingOrder: ["taxes_expat", "taxes_how", "bsn", "taxes_advisors"],
-      startTool: { key: "taxes_expat" },
+      readingOrder: ["double_taxation", "taxes_expat", "taxes_how", "bsn", "taxes_advisors"],
+      startTool: { key: "double_taxation" },
       unknownsToConfirm: ["Split year", "Foreign assets", "Treaty position"],
+    },
+    {
+      id: "tax-homeowner",
+      chips: ["homeowner"],
+      personaTitle: "Buying or owning a Dutch home",
+      whatMatters: ["WOZ value", "Municipal taxes", "Recurring homeowner costs"],
+      readingOrder: ["property_tax", "taxes_return", "taxes_advisors"],
+      startTool: { key: "property_tax" },
+      unknownsToConfirm: ["WOZ assessment", "Local municipality bills", "Transfer-tax position"],
     },
     {
       id: "tax-unsure",
@@ -232,6 +249,11 @@ export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
       description: "When and how filing usually works.",
     },
     {
+      label: "Double taxation in the Netherlands",
+      href: "/netherlands/taxes/double-taxation-netherlands/",
+      description: "Tax treaties, foreign income, tax residency and cross-border scenarios for expats.",
+    },
+    {
       label: "Healthcare allowance (zorgtoeslag)",
       href: "/netherlands/taxes/healthcare-allowance-netherlands/",
       description: "Health insurance support for eligible residents — separate from huurtoeslag.",
@@ -240,6 +262,11 @@ export const nlTaxFlagshipContent: NlFlagshipPillarContent = {
       label: "Rent allowance (huurtoeslag)",
       href: "/netherlands/taxes/rent-allowance-netherlands/",
       description: "Housing support for qualifying rental situations — verify property and income rules.",
+    },
+    {
+      label: "Property tax in the Netherlands",
+      href: "/netherlands/taxes/property-tax-netherlands/",
+      description: "WOZ value, municipal taxes and recurring homeowner costs for expats.",
     },
   ],
 };

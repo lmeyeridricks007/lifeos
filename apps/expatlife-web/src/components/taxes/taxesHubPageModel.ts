@@ -202,6 +202,12 @@ export const taxesHubPage = {
       description: "Kinderopvangtoeslag guide — registered childcare, work requirements, applying and expat family support.",
     },
     {
+      label: "Property Tax in the Netherlands",
+      href: "/netherlands/taxes/property-tax-netherlands/",
+      status: "live",
+      description: "WOZ value, municipal taxes, homeowner costs and property-tax basics for expats.",
+    },
+    {
       label: "Freelancers & ZZP Taxes",
       href: "/netherlands/taxes/freelancer-zzp-taxes/",
       status: "comingSoon",
@@ -245,6 +251,7 @@ export const taxesHubPage = {
     { label: "Can I get healthcare allowance (zorgtoeslag)?", href: "/netherlands/taxes/healthcare-allowance-netherlands/", status: "live" },
     { label: "Can I get rent allowance (huurtoeslag)?", href: "/netherlands/taxes/rent-allowance-netherlands/", status: "live" },
     { label: "Can I get childcare allowance (kinderopvangtoeslag)?", href: "/netherlands/taxes/childcare-allowance-netherlands/", status: "live" },
+    { label: "What property taxes do Dutch homeowners pay?", href: "/netherlands/taxes/property-tax-netherlands/", status: "live" },
   ] satisfies TaxesHubLink[],
   serviceLinks: [
     {

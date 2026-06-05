@@ -4,6 +4,10 @@ const linkRegistry: LinkRegistry = {
   housing_tools: { href: "/netherlands/housing/tools/", title: "Housing tools hub" },
   services_platforms: { href: "/netherlands/services/housing-platforms/", title: "Housing platforms directory" },
   services_rental: { href: "/netherlands/services/rental-agencies/", title: "Rental agencies directory" },
+  buy_vs_rent: { href: "/netherlands/housing/buy-vs-rent-netherlands/", title: "Buy vs rent in the Netherlands guide" },
+  buying_house: { href: "/netherlands/housing/buying-a-house-netherlands/", title: "Buying a house guide" },
+  mortgages_expats: { href: "/netherlands/housing/mortgages-netherlands-expats/", title: "Mortgages for expats guide" },
+  property_tax: { href: "/netherlands/taxes/property-tax-netherlands/", title: "Property tax in the Netherlands guide" },
   municipality_registration: {
     href: "/netherlands/municipality-registration-netherlands/",
     title: "Municipality registration guide",
@@ -69,6 +73,15 @@ export const nlHousingFlagshipContent: NlFlagshipPillarContent = {
       readingOrder: ["moving_pillar", "housing_tools", "cost_estimator"],
       startTool: { key: "housing_tools" },
       unknownsToConfirm: ["Work location", "Household size", "Move-in date"],
+    },
+    {
+      id: "buying-property",
+      chips: ["buying"],
+      personaTitle: "Considering buying a home",
+      whatMatters: ["Mortgage capacity", "Upfront buyer costs", "Recurring property taxes"],
+      readingOrder: ["buy_vs_rent", "mortgages_expats", "buying_house", "property_tax"],
+      startTool: { key: "housing_tools" },
+      unknownsToConfirm: ["Borrowing capacity", "WOZ value", "Municipal and VvE costs"],
     },
   ],
   faq: [
@@ -234,6 +247,26 @@ export const nlHousingFlagshipContent: NlFlagshipPillarContent = {
       label: "Rent allowance (huurtoeslag)",
       href: "/netherlands/taxes/rent-allowance-netherlands/",
       description: "Practical guide to Dutch housing support for eligible renters.",
+    },
+    {
+      label: "Mortgages for expats",
+      href: "/netherlands/housing/mortgages-netherlands-expats/",
+      description: "Dutch mortgage eligibility, borrowing capacity, costs and application steps for international buyers.",
+    },
+    {
+      label: "Buy vs rent in the Netherlands",
+      href: "/netherlands/housing/buy-vs-rent-netherlands/",
+      description: "Balanced decision guide for expats comparing rental flexibility with ownership stability.",
+    },
+    {
+      label: "Buying a house in the Netherlands",
+      href: "/netherlands/housing/buying-a-house-netherlands/",
+      description: "How the Dutch property purchase process works once mortgage planning is realistic.",
+    },
+    {
+      label: "Property tax in the Netherlands",
+      href: "/netherlands/taxes/property-tax-netherlands/",
+      description: "WOZ value, municipal taxes and recurring homeowner costs after buying.",
     },
   ],
 };

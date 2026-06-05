@@ -122,9 +122,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/registering-address-rental/": { title: "Registering address (rental)", section: "guides" },
   "/netherlands/rental-insurance-netherlands/": { title: "Rental insurance Netherlands", section: "guides" },
   "/netherlands/inventory-check-rental-netherlands/": { title: "Inventory check rental Netherlands", section: "guides" },
-  "/netherlands/mortgage-netherlands-expats/": { title: "Mortgage Netherlands expats", section: "guides" },
-  "/netherlands/property-tax-netherlands/": { title: "Property tax Netherlands", section: "guides" },
-  "/netherlands/buy-vs-rent-netherlands/": { title: "Buy vs rent Netherlands", section: "guides" },
   "/netherlands/housing/renting-in-amsterdam/": { title: "Renting in Amsterdam", section: "guides" },
   "/netherlands/housing/renting-in-rotterdam/": { title: "Renting in Rotterdam", section: "guides" },
   "/netherlands/housing/renting-in-utrecht/": { title: "Renting in Utrecht", section: "guides" },
@@ -149,7 +146,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/taxes/30-ruling-application/": { title: "30% ruling application", section: "guides" },
   "/netherlands/taxes/30-ruling-expiry/": { title: "30% ruling expiry", section: "guides" },
   /** Live App Router guides — listed in EXTRA_LIVE_PATHS; do not duplicate here or nav shows “Soon”. */
-  "/netherlands/taxes/double-taxation-netherlands/": { title: "Double taxation Netherlands", section: "guides" },
   "/netherlands/taxes/foreign-income-netherlands/": { title: "Foreign income Netherlands", section: "guides" },
   "/netherlands/taxes/expat-tax-return/": { title: "Expat tax return", section: "guides" },
   "/netherlands/taxes/self-employed-tax-netherlands/": { title: "Self-employed tax Netherlands", section: "guides" },
@@ -261,8 +257,20 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/housing/",
   /** Live App Router guide — buying property pillar for expats (Housing cluster). */
   "/netherlands/housing/buying-a-house-netherlands/",
+  /** Live App Router guide — mortgage planning for expats (Housing cluster). */
+  "/netherlands/housing/mortgages-netherlands-expats/",
+  /** Live App Router guide — property tax and recurring homeowner costs (Taxes + Housing cluster). */
+  "/netherlands/taxes/property-tax-netherlands/",
+  /** Live App Router guide — buy vs rent decision guide for expats (Housing cluster). */
+  "/netherlands/housing/buy-vs-rent-netherlands/",
   /** Legacy flat URL; 301 → buying guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/buying-house-netherlands/",
+  /** Legacy flat URL; 301 → mortgage guide — keep live so nav never surfaces as “Soon”. */
+  "/netherlands/mortgage-netherlands-expats/",
+  /** Legacy flat URL; 301 → canonical property tax guide — keep live so nav never surfaces as “Soon”. */
+  "/netherlands/property-tax-netherlands/",
+  /** Legacy flat URL; 301 → canonical buy vs rent guide — keep live so nav never surfaces as “Soon”. */
+  "/netherlands/buy-vs-rent-netherlands/",
   "/netherlands/amsterdam/",
   "/netherlands/rotterdam/",
   "/netherlands/utrecht/",
@@ -289,6 +297,10 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/taxes/gross-vs-net-salary/",
   "/netherlands/taxes/payroll-tax-netherlands/",
   "/netherlands/taxes/bonus-tax-netherlands/",
+  /** Live App Router guide — double taxation and treaty concepts for expats. */
+  "/netherlands/taxes/double-taxation-netherlands/",
+  /** Legacy flat URL; 301 → canonical double taxation guide — keep live so nav never surfaces as “Soon”. */
+  "/netherlands/double-taxation-netherlands/",
   "/netherlands/taxes/healthcare-allowance-netherlands/",
   /** Legacy taxes URL; 301 → healthcare allowance guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/taxes/healthcare-allowance/",

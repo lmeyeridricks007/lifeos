@@ -21,10 +21,14 @@ import { netSalaryNetherlandsPage } from "@/src/components/taxes/netSalaryNether
 import { grossVsNetSalaryPage } from "@/src/components/taxes/grossVsNetSalaryPageModel";
 import { payrollTaxNetherlandsPage } from "@/src/components/taxes/payrollTaxNetherlandsPageModel";
 import { bonusTaxNetherlandsPage } from "@/src/components/taxes/bonusTaxNetherlandsPageModel";
+import { doubleTaxationNetherlandsPage } from "@/src/components/taxes/doubleTaxationNetherlandsPageModel";
 import { healthcareAllowanceNetherlandsPage } from "@/src/components/taxes/healthcareAllowanceNetherlandsPageModel";
 import { rentAllowanceNetherlandsPage } from "@/src/components/taxes/rentAllowanceNetherlandsPageModel";
 import { childcareAllowanceNetherlandsPage } from "@/src/components/taxes/childcareAllowanceNetherlandsPageModel";
 import { buyingHouseNetherlandsPage } from "@/src/components/housing/buyingHouseNetherlandsPageModel";
+import { mortgagesNetherlandsExpatsPage } from "@/src/components/housing/mortgagesNetherlandsExpatsPageModel";
+import { buyVsRentNetherlandsPage } from "@/src/components/housing/buyVsRentNetherlandsPageModel";
+import { propertyTaxNetherlandsPage } from "@/src/components/taxes/propertyTaxNetherlandsPageModel";
 import { averageSalaryNetherlandsPage } from "@/src/components/taxes/averageSalaryNetherlandsPageModel";
 import { salaryNegotiationNetherlandsPage } from "@/src/components/jobs/salaryNegotiationNetherlandsPageModel";
 import { minimumWageNetherlandsPage } from "@/src/components/jobs/minimumWageNetherlandsPageModel";
@@ -465,6 +469,43 @@ export function buildAllSearchDocuments(): SearchDocument[] {
   });
 
   out.push({
+    id: "guide:double-taxation-netherlands",
+    title: doubleTaxationNetherlandsPage.hero.pageTitle,
+    href: doubleTaxationNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: doubleTaxationNetherlandsPage.seo.description,
+    image: doubleTaxationNetherlandsPage.hero.image.src,
+    imageAlt: doubleTaxationNetherlandsPage.hero.image.alt,
+    keywords: [...doubleTaxationNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      doubleTaxationNetherlandsPage.hero.pageTitle,
+      doubleTaxationNetherlandsPage.hero.subtitle,
+      doubleTaxationNetherlandsPage.seo.description,
+      [...doubleTaxationNetherlandsPage.seo.keywords],
+      doubleTaxationNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      doubleTaxationNetherlandsPage.treatyExamples.map((row) => `${row.situation} ${row.possibleIssue} ${row.treatyConcept} ${row.whatToVerify}`),
+      doubleTaxationNetherlandsPage.treatyReliefExamples.map((row) => `${row.example} ${row.amount} ${row.possibleReliefQuestion} ${row.whatToBring}`),
+      doubleTaxationNetherlandsPage.residencyScenarios.map((row) => `${row.profile} ${row.factPattern} ${row.risk} ${row.nextStep}`),
+      doubleTaxationNetherlandsPage.residencyTimelineExamples.map((row) => `${row.timeline} ${row.nlDays} ${row.commonQuestion} ${row.usefulRecords}`),
+      doubleTaxationNetherlandsPage.scenarioCards.map((item) => `${item.title} ${item.body}`),
+      doubleTaxationNetherlandsPage.foreignIncomeExamples.map((row) => `${row.incomeType} ${row.commonConcern} ${row.practicalCheck}`),
+      doubleTaxationNetherlandsPage.foreignIncomeScenarioExamples.map((row) => `${row.profile} ${row.exampleAmount} ${row.whatCanGetComplex} ${row.usefulNextStep}`),
+      doubleTaxationNetherlandsPage.remoteWorkScenarios.map((row) => `${row.pattern} ${row.complexity} ${row.practicalMove}`),
+      doubleTaxationNetherlandsPage.remoteWorkdayExamples.map((row) => `${row.pattern} ${row.workdaySplit} ${row.likelyQuestion} ${row.recordsToKeep}`),
+      doubleTaxationNetherlandsPage.countryTreatyCards.map((item) => `${item.region} ${item.examples} ${item.note}`),
+      doubleTaxationNetherlandsPage.countryComparisonExamples.map((row) => `${row.countryContext} ${row.exampleConcern} ${row.typicalDocuments} ${row.adviceSignal}`),
+      doubleTaxationNetherlandsPage.freelancerScenarioExamples.map((row) => `${row.profile} ${row.exampleRevenue} ${row.issueToCheck} ${row.usefulRecord}`),
+      doubleTaxationNetherlandsPage.foreignAssetExamples.map((row) => `${row.assetType} ${row.exampleFigure} ${row.whyItMatters} ${row.recordToKeep}`),
+      doubleTaxationNetherlandsPage.advisorBriefExamples.map((row) => `${row.situation} ${row.numbersToBring} ${row.documentsToBring}`),
+      doubleTaxationNetherlandsPage.mistakeCards.map((item) => `${item.title} ${item.body}`),
+      doubleTaxationNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      doubleTaxationNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
     id: "guide:healthcare-allowance-netherlands",
     title: healthcareAllowanceNetherlandsPage.hero.pageTitle,
     href: healthcareAllowanceNetherlandsPage.path,
@@ -556,6 +597,104 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       buyingHouseNetherlandsPage.cityCards.map((city) => `${city.label} ${city.vibe} ${city.pricing}`),
       buyingHouseNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       buyingHouseNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:mortgages-netherlands-expats",
+    title: mortgagesNetherlandsExpatsPage.hero.pageTitle,
+    href: mortgagesNetherlandsExpatsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Housing",
+    description: mortgagesNetherlandsExpatsPage.seo.description,
+    image: mortgagesNetherlandsExpatsPage.hero.image.src,
+    imageAlt: mortgagesNetherlandsExpatsPage.hero.image.alt,
+    keywords: [...mortgagesNetherlandsExpatsPage.seo.keywords],
+    searchText: joinSearchParts(
+      mortgagesNetherlandsExpatsPage.hero.pageTitle,
+      mortgagesNetherlandsExpatsPage.hero.subtitle,
+      mortgagesNetherlandsExpatsPage.seo.description,
+      [...mortgagesNetherlandsExpatsPage.seo.keywords],
+      mortgagesNetherlandsExpatsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      mortgagesNetherlandsExpatsPage.introChecklist,
+      mortgagesNetherlandsExpatsPage.adviserCallMilestones.map((item) => `${item.title} ${item.body}`),
+      mortgagesNetherlandsExpatsPage.documentReadinessExamples.map((item) => `${item.situation} ${item.documents} ${item.watchOut}`),
+      mortgagesNetherlandsExpatsPage.borrowingFactors.map((item) => `${item.title} ${item.body}`),
+      mortgagesNetherlandsExpatsPage.capacityPlanningExamples.map((item) => `${item.profile} ${item.incomeSignal} ${item.planningFocus}`),
+      mortgagesNetherlandsExpatsPage.rateDecisionExamples.map((item) => `${item.preference} ${item.mayFit} ${item.tradeOff}`),
+      mortgagesNetherlandsExpatsPage.temporaryContractScenarios.map((item) => `${item.contractType} ${item.likelyIssue} ${item.practicalMove}`),
+      mortgagesNetherlandsExpatsPage.costItems.map((item) => `${item.title} ${item.body}`),
+      mortgagesNetherlandsExpatsPage.mortgageTimelineRisks.map((item) => `${item.risk} ${item.effect} ${item.mitigation}`),
+      mortgagesNetherlandsExpatsPage.cityCards.map((city) => `${city.label} ${city.affordability} ${city.competition} ${city.expatDemand}`),
+      mortgagesNetherlandsExpatsPage.cityMortgageExamples.map((item) => `${item.cityType} ${item.mortgageImpact} ${item.planningQuestion}`),
+      mortgagesNetherlandsExpatsPage.providerContactChecklist,
+      mortgagesNetherlandsExpatsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      mortgagesNetherlandsExpatsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:buy-vs-rent-netherlands",
+    title: buyVsRentNetherlandsPage.hero.pageTitle,
+    href: buyVsRentNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Housing",
+    description: buyVsRentNetherlandsPage.seo.description,
+    image: buyVsRentNetherlandsPage.hero.image.src,
+    imageAlt: buyVsRentNetherlandsPage.hero.image.alt,
+    keywords: [...buyVsRentNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      buyVsRentNetherlandsPage.hero.pageTitle,
+      buyVsRentNetherlandsPage.hero.subtitle,
+      buyVsRentNetherlandsPage.seo.description,
+      [...buyVsRentNetherlandsPage.seo.keywords],
+      buyVsRentNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      buyVsRentNetherlandsPage.monthlyBudgetScenarios.map((row) => `${row.profile} ${row.rentingMonthly} ${row.buyingMonthly} ${row.usefulTakeaway}`),
+      buyVsRentNetherlandsPage.financialComparisonRows.map((row) => `${row.costArea} ${row.buyingExample} ${row.rentingExample} ${row.decisionPoint}`),
+      buyVsRentNetherlandsPage.upfrontCostExamples.map((row) => `${row.scenario} ${row.depositOrTax} ${row.otherCosts} ${row.initialCashNeed}`),
+      buyVsRentNetherlandsPage.cashBufferExamples.map((row) => `${row.situation} ${row.cashBeforeKeys} ${row.bufferAfterMove} ${row.whyItMatters}`),
+      buyVsRentNetherlandsPage.stayHorizonExamples.map((row) => `${row.horizon} ${row.likelyBias} ${row.reason}`),
+      buyVsRentNetherlandsPage.exitRiskExamples.map((row) => `${row.scenario} ${row.rentalExit} ${row.ownerExit} ${row.decisionUse}`),
+      buyVsRentNetherlandsPage.cityScenarioExamples.map((row) => `${row.cityType} ${row.rentExample} ${row.buyingExample} ${row.practicalUse}`),
+      buyVsRentNetherlandsPage.cityCards.map((city) => `${city.label} ${city.affordability} ${city.rentalPressure} ${city.buyingCompetition}`),
+      buyVsRentNetherlandsPage.checklistCards.map((item) => `${item.q} ${item.buySignal} ${item.rentSignal}`),
+      buyVsRentNetherlandsPage.selfAssessmentScenarios.map((row) => `${row.profile} ${row.signals} ${row.likelyNextStep}`),
+      buyVsRentNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      buyVsRentNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:property-tax-netherlands",
+    title: propertyTaxNetherlandsPage.hero.pageTitle,
+    href: propertyTaxNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Taxes",
+    description: propertyTaxNetherlandsPage.seo.description,
+    image: propertyTaxNetherlandsPage.hero.image.src,
+    imageAlt: propertyTaxNetherlandsPage.hero.image.alt,
+    keywords: [...propertyTaxNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      propertyTaxNetherlandsPage.hero.pageTitle,
+      propertyTaxNetherlandsPage.hero.subtitle,
+      propertyTaxNetherlandsPage.seo.description,
+      [...propertyTaxNetherlandsPage.seo.keywords],
+      propertyTaxNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      propertyTaxNetherlandsPage.wozCards.map((item) => `${item.title} ${item.body}`),
+      propertyTaxNetherlandsPage.wozCalculationExamples.map((item) => `${item.wozValue} ${item.exampleLocalRate} ${item.exampleOzb} ${item.whyItMatters}`),
+      propertyTaxNetherlandsPage.municipalTaxCards.map((item) => `${item.title} ${item.body}`),
+      propertyTaxNetherlandsPage.municipalBillExamples.map((item) => `${item.bill} ${item.exampleAmount} ${item.typicalRhythm} ${item.whatToCheck}`),
+      propertyTaxNetherlandsPage.buyingTaxExamples.map((item) => `${item.purchasePrice} ${item.ownerOccupiedTransferTaxExample} ${item.notaryAndRegistrationPlanning} ${item.note}`),
+      propertyTaxNetherlandsPage.homeownerCostCards.map((item) => `${item.title} ${item.body}`),
+      propertyTaxNetherlandsPage.annualOwnerBudgetExamples.map((item) => `${item.profile} ${item.localTaxesAndWater} ${item.insuranceMaintenance} ${item.vve} ${item.annualPlanningRange}`),
+      propertyTaxNetherlandsPage.vveCostExamples.map((item) => `${item.apartmentType} ${item.monthlyVve} ${item.annualCost} ${item.whatToCheck}`),
+      propertyTaxNetherlandsPage.wozTimingExamples.map((item) => `${item.received} ${item.exampleDeadline} ${item.whatToDo}`),
+      propertyTaxNetherlandsPage.cityCards.map((city) => `${city.label} ${city.market} ${city.municipalVariation}`),
+      propertyTaxNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      propertyTaxNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 
