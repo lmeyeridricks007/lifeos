@@ -438,7 +438,7 @@ export const buyingHouseNetherlandsPage = {
     "This guide does not endorse specific providers — orientation only.",
   ],
   services: [
-    { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/", status: "comingSoon", description: "Directory of AFM-regulated hypotheekadviseurs for expats." },
+    { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/", status: "live", description: "Directory of AFM-regulated hypotheekadviseurs for expats." },
     { label: "Real estate agents", href: "/netherlands/services/real-estate-agents/", status: "comingSoon", description: "Buyer's and seller's agents for Dutch property search." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Move support including housing orientation." },
     { label: "Property lawyers", href: "/netherlands/services/property-lawyers/", status: "comingSoon", description: "Legal review for purchase contracts and VvE." },

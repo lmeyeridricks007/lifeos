@@ -6,6 +6,16 @@ import { isNavItemActive, isNavItemLinkable } from "./navItemModel";
 const HOLIDAY_PATH = "/netherlands/jobs/holiday-allowance-netherlands/";
 const BONUS_TAX_PATH = "/netherlands/taxes/bonus-tax-netherlands/";
 
+function menuRowsForHref(href: string) {
+  return Object.entries(MEGA_MENUS).flatMap(([menuKey, menu]) =>
+    menu.sections.flatMap((section) =>
+      section.items
+        .filter((item) => item.href === href)
+        .map((item) => ({ menuKey, sectionTitle: section.title, item }))
+    )
+  );
+}
+
 describe("holiday allowance nav active state", () => {
   it("highlights Move (not Money) for the jobs guide path", () => {
     expect(getActiveNavKey(HOLIDAY_PATH)).toBe("moving");
@@ -274,15 +284,12 @@ describe("mortgages for expats nav active state", () => {
     expect(isNavItemActive(MORTGAGE_PATH, mortgageItem!)).toBe(true);
   });
 
-  it("renders the Money menu row as an active link, not a Soon row", () => {
-    const mortgageItem = MEGA_MENUS.money.sections
-      .flatMap((section) => section.items)
-      .find((item) => item.href === MORTGAGE_PATH);
+  it("has exactly one menu row, in Living > Housing", () => {
+    const rows = menuRowsForHref(MORTGAGE_PATH);
 
-    expect(mortgageItem).toBeDefined();
-    expect(mortgageItem?.navStatus).toBe("live");
-    expect(isNavItemLinkable(mortgageItem!)).toBe(true);
-    expect(isNavItemActive(MORTGAGE_PATH, mortgageItem!)).toBe(true);
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Housing");
   });
 });
 
@@ -330,26 +337,12 @@ describe("property tax nav active state", () => {
     expect(isNavItemActive(PROPERTY_TAX_PATH, propertyTaxItem!)).toBe(true);
   });
 
-  it("renders the Money menu row as an active link, not a Soon row", () => {
-    const propertyTaxItem = MEGA_MENUS.money.sections
-      .flatMap((section) => section.items)
-      .find((item) => item.href === PROPERTY_TAX_PATH);
+  it("has exactly one menu row, in Living > Housing", () => {
+    const rows = menuRowsForHref(PROPERTY_TAX_PATH);
 
-    expect(propertyTaxItem).toBeDefined();
-    expect(propertyTaxItem?.navStatus).toBe("live");
-    expect(isNavItemLinkable(propertyTaxItem!)).toBe(true);
-    expect(isNavItemActive(PROPERTY_TAX_PATH, propertyTaxItem!)).toBe(true);
-  });
-
-  it("renders the Move menu row as an active link, not a Soon row", () => {
-    const propertyTaxItem = MEGA_MENUS.moving.sections
-      .flatMap((section) => section.items)
-      .find((item) => item.href === PROPERTY_TAX_PATH);
-
-    expect(propertyTaxItem).toBeDefined();
-    expect(propertyTaxItem?.navStatus).toBe("live");
-    expect(isNavItemLinkable(propertyTaxItem!)).toBe(true);
-    expect(isNavItemActive(PROPERTY_TAX_PATH, propertyTaxItem!)).toBe(true);
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Housing");
   });
 });
 
@@ -384,26 +377,12 @@ describe("buy vs rent nav active state", () => {
     expect(isNavItemActive(BUY_VS_RENT_PATH, item!)).toBe(true);
   });
 
-  it("renders the Money menu row as an active link, not a Soon row", () => {
-    const item = MEGA_MENUS.money.sections
-      .flatMap((section) => section.items)
-      .find((navItem) => navItem.href === BUY_VS_RENT_PATH);
+  it("has exactly one menu row, in Living > Housing", () => {
+    const rows = menuRowsForHref(BUY_VS_RENT_PATH);
 
-    expect(item).toBeDefined();
-    expect(item?.navStatus).toBe("live");
-    expect(isNavItemLinkable(item!)).toBe(true);
-    expect(isNavItemActive(BUY_VS_RENT_PATH, item!)).toBe(true);
-  });
-
-  it("renders the Move menu row as an active link, not a Soon row", () => {
-    const item = MEGA_MENUS.moving.sections
-      .flatMap((section) => section.items)
-      .find((navItem) => navItem.href === BUY_VS_RENT_PATH);
-
-    expect(item).toBeDefined();
-    expect(item?.navStatus).toBe("live");
-    expect(isNavItemLinkable(item!)).toBe(true);
-    expect(isNavItemActive(BUY_VS_RENT_PATH, item!)).toBe(true);
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Housing");
   });
 });
 
@@ -414,8 +393,8 @@ describe("double taxation nav active state", () => {
     expect(getRouteStatus(DOUBLE_TAXATION_PATH)).toBe("live");
   });
 
-  it("highlights Move for the double taxation guide surfaced in Move → More", () => {
-    expect(getActiveNavKey(DOUBLE_TAXATION_PATH)).toBe("moving");
+  it("highlights Money for the double taxation guide in Money > Taxes", () => {
+    expect(getActiveNavKey(DOUBLE_TAXATION_PATH)).toBe("money");
   });
 
   it("marks canonical href active when pathname is the legacy flat URL", () => {
@@ -427,17 +406,6 @@ describe("double taxation nav active state", () => {
     expect(isNavItemActive("/netherlands/double-taxation-netherlands/", item)).toBe(true);
   });
 
-  it("renders the Move menu row as an active link, not a Soon row", () => {
-    const item = MEGA_MENUS.moving.sections
-      .flatMap((section) => section.items)
-      .find((navItem) => navItem.href === DOUBLE_TAXATION_PATH);
-
-    expect(item).toBeDefined();
-    expect(item?.navStatus).toBe("live");
-    expect(isNavItemLinkable(item!)).toBe(true);
-    expect(isNavItemActive(DOUBLE_TAXATION_PATH, item!)).toBe(true);
-  });
-
   it("renders the Money menu row as an active link, not a Soon row", () => {
     const item = MEGA_MENUS.money.sections
       .flatMap((section) => section.items)
@@ -447,5 +415,137 @@ describe("double taxation nav active state", () => {
     expect(item?.navStatus).toBe("live");
     expect(isNavItemLinkable(item!)).toBe(true);
     expect(isNavItemActive(DOUBLE_TAXATION_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Taxes", () => {
+    const rows = menuRowsForHref(DOUBLE_TAXATION_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Taxes");
+  });
+});
+
+describe("foreign income nav active state", () => {
+  const FOREIGN_INCOME_PATH = "/netherlands/taxes/foreign-income-netherlands/";
+
+  it("treats the shipped foreign income guide route as live", () => {
+    expect(getRouteStatus(FOREIGN_INCOME_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the foreign income guide in Money > Taxes", () => {
+    expect(getActiveNavKey(FOREIGN_INCOME_PATH)).toBe("money");
+  });
+
+  it("renders the Money menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === FOREIGN_INCOME_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(FOREIGN_INCOME_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Taxes", () => {
+    const rows = menuRowsForHref(FOREIGN_INCOME_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Taxes");
+  });
+});
+
+describe("taxes after moving nav active state", () => {
+  const TAXES_AFTER_MOVING_PATH = "/netherlands/taxes/taxes-after-moving-netherlands/";
+
+  it("treats the shipped taxes after moving guide route as live", () => {
+    expect(getRouteStatus(TAXES_AFTER_MOVING_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the taxes after moving guide in Money > Taxes", () => {
+    expect(getActiveNavKey(TAXES_AFTER_MOVING_PATH)).toBe("money");
+  });
+
+  it("renders the Money menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === TAXES_AFTER_MOVING_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(TAXES_AFTER_MOVING_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Taxes", () => {
+    const rows = menuRowsForHref(TAXES_AFTER_MOVING_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Taxes");
+  });
+});
+
+describe("leaving Netherlands tax nav active state", () => {
+  const LEAVING_NETHERLANDS_TAX_PATH = "/netherlands/taxes/leaving-netherlands-tax/";
+
+  it("treats the shipped leaving tax guide route as live", () => {
+    expect(getRouteStatus(LEAVING_NETHERLANDS_TAX_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the leaving tax guide in Money > Taxes", () => {
+    expect(getActiveNavKey(LEAVING_NETHERLANDS_TAX_PATH)).toBe("money");
+  });
+
+  it("renders the Money menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === LEAVING_NETHERLANDS_TAX_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(LEAVING_NETHERLANDS_TAX_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Taxes", () => {
+    const rows = menuRowsForHref(LEAVING_NETHERLANDS_TAX_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Taxes");
+  });
+});
+
+describe("mortgage advisors service nav active state", () => {
+  const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors/";
+
+  it("treats the shipped mortgage advisors service route as live", () => {
+    expect(getRouteStatus(MORTGAGE_ADVISORS_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the mortgage advisors route", () => {
+    expect(getActiveNavKey(MORTGAGE_ADVISORS_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === MORTGAGE_ADVISORS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MORTGAGE_ADVISORS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Banking & financial services", () => {
+    const rows = menuRowsForHref(MORTGAGE_ADVISORS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Banking & financial services");
   });
 });

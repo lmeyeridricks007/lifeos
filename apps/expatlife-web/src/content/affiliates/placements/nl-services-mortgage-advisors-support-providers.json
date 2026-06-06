@@ -1,0 +1,41 @@
+{
+  "id": "nl-services-mortgage-advisors-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/mortgage-advisors/",
+    "slot": "mortgage-advisor-contact-options"
+  },
+  "variant": "cards",
+  "title": "Mortgage advisors and providers expats can contact",
+  "intro": "These providers can help users move from research to a real mortgage conversation: independent mortgage advice, broker-style comparison, digital-first consultations, and bank/product checks. Treat this as a discovery list, not a ranking or recommendation.",
+  "categoryOrder": ["housing", "banking", "services"],
+  "items": [
+    {
+      "providerId": "expat-mortgages",
+      "reason": "Expat-focused mortgage brokerage useful when users want English-language guidance on affordability, documents, lender comparison and the buying timeline."
+    },
+    {
+      "providerId": "viisi-expats",
+      "reason": "Mortgage-advice brand with expat-specific information; useful for users who want to compare a full-process advisory model."
+    },
+    {
+      "providerId": "hanno",
+      "reason": "Digital-first mortgage advice option; useful for users who prefer online consultations and structured document workflows."
+    },
+    {
+      "providerId": "mister-mortgage",
+      "reason": "Broker-style mortgage support for Dutch home buyers; useful for expats comparing English-language mortgage guidance and process support."
+    },
+    {
+      "providerId": "abn-amro",
+      "reason": "Traditional Dutch bank with English information and mortgage products; useful as a bank-side comparison alongside independent advice."
+    },
+    {
+      "providerId": "ing",
+      "reason": "Large Dutch retail bank; useful for comparing bank-direct mortgage pages, documentation expectations and appointment options."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat mortgage-advisor discovery, not pay-to-rank placement. This is not mortgage, financial, tax or investment advice; verify AFM registration where relevant and confirm fees, lender access, eligibility and terms directly with licensed advisers and providers."
+}

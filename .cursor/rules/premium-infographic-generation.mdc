@@ -1,0 +1,76 @@
+---
+description: Premium ExpatLife infographic generation standards
+alwaysApply: true
+---
+
+# Premium Infographic Generation
+
+When creating or replacing ExpatLife infographics, use the high-end editorial image-generation approach. Do not default to code-generated SVG/PNG templates for premium pillar pages.
+
+## Benchmark Style
+
+Use existing premium double-taxation assets as the quality benchmark:
+
+- `apps/expatlife-web/public/images/infographics/netherlands-double-taxation-treaty-premium-v1.png`
+- `apps/expatlife-web/public/images/infographics/netherlands-double-taxation-residency-premium-v1.png`
+- `apps/expatlife-web/public/images/infographics/netherlands-double-taxation-foreign-income-premium-v1.png`
+- `apps/expatlife-web/public/images/infographics/netherlands-double-taxation-mistakes-premium-v1.png`
+
+Target the same editorial quality: rich Dutch city/canal context, realistic desk or consultation scenes, detailed props, textured illustration, shadows, clear information hierarchy, right-side record/checklist rails, bottom skyline/water band, and ExpatLife branding.
+
+## Required Workflow
+
+1. Inspect the page model and list every visual key that needs an asset.
+2. Design a unique concept per section before generating images.
+3. Use `GenerateImage` with 1-3 benchmark reference images.
+4. Save assets with a new version suffix such as `premium-v6`; do not overwrite old versions unless intentionally regenerating the same filename.
+5. Copy generated files into `apps/expatlife-web/public/images/infographics/`.
+6. Update page-model `src` references only after the image exists.
+7. Run lints on edited model files and verify referenced assets exist.
+
+## Prompt Requirements
+
+Every prompt should specify:
+
+- `1024x768 landscape`
+- Page/topic and exact title/subtitle text
+- Section-specific concept, not a generic dashboard
+- Concrete user-helpful labels, numbers, examples, scenarios or records
+- Dutch visual context, premium navy/teal/white palette, and ExpatLife brand area
+- Safety constraints such as no legal/tax/financial advice, no guarantees, no fake ratings, no fake official logos
+
+## Variety Rules
+
+Do not generate a batch where every image shares the same composition. Mix layouts such as:
+
+- record-file builders
+- map and treaty bridges
+- timeline/calendar flows
+- desk scenes with documents
+- advisor consultation scenes
+- city or route maps
+- checklist and mistake boards
+- ecosystem diagrams
+- provider/service maps
+
+## Rejection Criteria
+
+Regenerate any image that has:
+
+- flat SVG-template appearance
+- low-detail generic icons
+- repeated composition across many sections
+- unreadable or malformed title text
+- misleading legal/tax/financial claims
+- fabricated awards, reviews, rankings or guarantees
+- wrong section concept despite the correct filename
+- stray footer titles or off-brand copy that changes the page meaning
+
+## Verification
+
+Before final response, confirm:
+
+- each referenced image path exists
+- no rejected version remains referenced
+- page models point to the newest intended version
+- `ReadLints` reports no new diagnostics for edited model files

@@ -242,7 +242,7 @@ function filterMegaMenu(menu: MegaMenu): MegaMenu {
     ) {
       const chain = [
         item("Netherlands taxes", "/netherlands/taxes/", "Tax guides for expats."),
-        item("Expat Taxes in the Netherlands", "/netherlands/taxes/expat-taxes-netherlands/", "Scenario-led expat tax topics and tools."),
+        item("Expat Taxes in the Netherlands", "/netherlands/money/expat-taxes-netherlands/", "Scenario-led expat tax topics and tools."),
         item("Banking", "/netherlands/money/banking/", "Accounts, switching, and everyday banking."),
       ];
       for (const cand of chain) {
@@ -344,9 +344,38 @@ function buildServicesToolRail(): NavItem[] {
   ]);
 }
 
+function shouldShowToolInTopLevelCategory(categoryId: string, route: string): boolean {
+  if (categoryId === "taxes-tools") {
+    return route.startsWith("/netherlands/taxes/tools/") && !route.includes("healthcare-allowance-estimator");
+  }
+  if (categoryId === "healthcare") {
+    return route.startsWith("/netherlands/health/tools/") || route.includes("healthcare-allowance-estimator");
+  }
+  if (categoryId === "work-employment") {
+    return route.startsWith("/netherlands/work/tools/");
+  }
+  if (categoryId === "money-tax") {
+    return (
+      route.startsWith("/netherlands/money/tools/") ||
+      route.startsWith("/netherlands/family/tools/childcare-cost-estimator") ||
+      route.startsWith("/netherlands/tools/bank") ||
+      route.startsWith("/netherlands/tools/transfer-cost-calculator") ||
+      route.startsWith("/netherlands/tools/city-comparison")
+    );
+  }
+  if (categoryId === "housing") {
+    return (
+      route.startsWith("/netherlands/housing/tools/") ||
+      route.startsWith("/netherlands/living/tools/utilities-services-comparison/")
+    );
+  }
+  return true;
+}
+
 function buildToolsMegaSections(): NavSection[] {
   return getTopLevelToolsMenuGroups().map(({ category, tools }) => {
     const viewAll = item(`View all ${category.label} tools`, category.route);
+    const categoryTools = tools.filter((tool) => shouldShowToolInTopLevelCategory(category.id, tool.route));
     if (category.id === "housing") {
       const housingToolIds = [
         "rent-affordability-calculator",
@@ -357,14 +386,16 @@ function buildToolsMegaSections(): NavSection[] {
         "dutch-rental-budget-calculator",
       ];
       const housingItems = dedupeNavItems([
-        ...toolItemsByIds(housingToolIds),
+        ...toolItemsByIds(housingToolIds).filter((tool) =>
+          tool.href ? shouldShowToolInTopLevelCategory(category.id, tool.href) : true
+        ),
         viewAll,
       ]);
       return { title: category.label, items: housingItems };
     }
     return {
       title: category.label,
-      items: dedupeNavItems([...tools.map(toToolNavItem), viewAll]),
+      items: dedupeNavItems([...categoryTools.map(toToolNavItem), viewAll]),
     };
   });
 }
@@ -427,7 +458,7 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/holiday-allowance-netherlands",
 ];
 
-/** Taxes guides surfaced under Move → More — highlight Move at top level (canonical URL may live under `/taxes/`). */
+/** Tax/compensation guides surfaced under Move → More — highlight Move at top level (canonical URL may live under `/taxes/`). */
 const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/taxes/bonus-tax-netherlands",
   "/netherlands/taxes/healthcare-allowance-netherlands",
@@ -436,9 +467,6 @@ const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/taxes/childcare-allowance-netherlands",
   /** Legacy URL (301 → canonical guide) — keep Move tab active before redirect. */
   "/netherlands/taxes/childcare-allowance",
-  "/netherlands/taxes/double-taxation-netherlands",
-  /** Legacy flat URL (301 → canonical guide) — keep Move tab active before redirect. */
-  "/netherlands/double-taxation-netherlands",
 ];
 
 /** Housing-related guides under Living → Housing (URL may live under `/taxes/`). */
@@ -662,12 +690,27 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Moving checklist Netherlands", "/netherlands/moving-checklist-netherlands"),
           item("Moving from your country", "/netherlands/moving-to-netherlands-from"),
           item("Documents needed", "/netherlands/documents-needed-to-move-netherlands"),
+          item("Step-by-step moving guide", "/netherlands/moving-to-netherlands-steps/"),
+          item("Key requirements", "/netherlands/moving-requirements-netherlands/"),
+          item("Common moving mistakes", "/netherlands/moving-mistakes-netherlands/"),
+          item("Moving documents checklist", "/netherlands/moving-documents-checklist/"),
           item("Moving timeline", "/netherlands/moving-to-netherlands-timeline"),
           item("Moving costs", "/netherlands/moving-to-netherlands-cost"),
           item("Moving with family", "/netherlands/moving-to-netherlands-with-family"),
+          item("Moving with a partner", "/netherlands/moving-to-netherlands-with-partner/"),
+          item("Moving with kids", "/netherlands/moving-to-netherlands-with-kids/"),
           item("Move without a job", "/netherlands/move-to-netherlands-without-job"),
           item("EU vs non-EU", "/netherlands/eu-vs-non-eu-moving-to-netherlands"),
           item("Bringing pets", "/netherlands/bringing-pets-to-netherlands"),
+        ],
+      },
+      {
+        title: "Documents",
+        items: [
+          item("Visa documents", "/netherlands/visa-documents-netherlands/"),
+          item("Apostille documents", "/netherlands/apostille-documents-netherlands/"),
+          item("Document legalization", "/netherlands/document-legalization-netherlands/"),
+          item("Document translation", "/netherlands/document-translation-netherlands/"),
         ],
       },
       {
@@ -679,11 +722,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Register your address", "/netherlands/register-address-netherlands/"),
           item("DigiD guide", "/netherlands/digid-awareness/"),
           item("Open a bank account", "/netherlands/open-bank-account-netherlands"),
-          item(
-            "Bank account rejected or delayed",
-            "/netherlands/money/banking/account-rejection/",
-            "When onboarding stalls — documents, BSN, next banks to compare, and short-term payment options."
-          ),
           item("Shipping household goods", "/netherlands/shipping-household-goods-netherlands"),
         ],
       },
@@ -706,6 +744,8 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "First weeks & months",
         items: [
+          item("After arriving", "/netherlands/after-arriving-netherlands/"),
+          item("Settling in", "/netherlands/settling-in-netherlands/"),
           item("First 30 days", "/netherlands/first-30-days-netherlands"),
           item("First 60 days", "/netherlands/first-60-days-netherlands"),
           item("First 90 days", "/netherlands/first-90-days-netherlands"),
@@ -743,46 +783,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Holiday allowance",
             "/netherlands/jobs/holiday-allowance-netherlands/",
             "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
-          ),
-        ],
-      },
-      {
-        title: "More",
-        items: [
-          item(
-            "Randstad Guide",
-            "/netherlands/randstad/",
-            "Compare the main urban region before choosing where to live, work, study, or commute."
-          ),
-          item(
-            "Taxes",
-            "/netherlands/taxes/",
-            "Understand income tax, the 30% ruling, payroll, annual returns, freelancers, and expat tax topics."
-          ),
-          item(
-            "Childcare allowance",
-            "/netherlands/taxes/childcare-allowance-netherlands/",
-            "Kinderopvangtoeslag for expat families — registered childcare, work requirements and how to apply."
-          ),
-          item(
-            "Mortgages for expats",
-            "/netherlands/housing/mortgages-netherlands-expats/",
-            "Dutch mortgage eligibility, borrowing capacity and buying finance for international professionals."
-          ),
-          item(
-            "Property tax",
-            "/netherlands/taxes/property-tax-netherlands/",
-            "WOZ value, municipal taxes and recurring homeowner costs for expats buying or owning property."
-          ),
-          item(
-            "Double taxation",
-            "/netherlands/taxes/double-taxation-netherlands/",
-            "Tax treaties, residency and foreign-income questions for internationally mobile expats."
-          ),
-          item(
-            "Buy vs rent",
-            "/netherlands/housing/buy-vs-rent-netherlands/",
-            "Balanced decision guide for renting versus buying as an expat."
           ),
         ],
       },
@@ -838,6 +838,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Leiden", "/netherlands/leiden"),
           item("Maastricht", "/netherlands/maastricht"),
           item("Nijmegen", "/netherlands/nijmegen"),
+          item("Tilburg", "/netherlands/tilburg/"),
         ],
       },
       {
@@ -962,7 +963,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/money/tax-guide-for-expats/",
             "Money-pillar orientation: payroll, returns, 30% ruling, Box 3, payslips, cross-border — planning only."
           ),
-          item("Expat Taxes in the Netherlands", "/netherlands/taxes/expat-taxes-netherlands/", "Scenario-led expat tax topics."),
+          item("Expat Taxes in the Netherlands", "/netherlands/money/expat-taxes-netherlands/", "Scenario-led expat tax topics."),
           item(
             "How taxes work in the Netherlands",
             "/netherlands/money/how-taxes-work-in-the-netherlands/",
@@ -989,6 +990,21 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Tax treaties, foreign income, residency and cross-border expat tax scenarios."
           ),
           item(
+            "Foreign income in the Netherlands",
+            "/netherlands/taxes/foreign-income-netherlands/",
+            "Foreign salary, rental income, investments, remote work and worldwide income concepts."
+          ),
+          item(
+            "Taxes after moving to the Netherlands",
+            "/netherlands/taxes/taxes-after-moving-netherlands/",
+            "Starter roadmap for tax residency, payroll, allowances, 30% ruling and annual returns after relocation."
+          ),
+          item(
+            "Leaving the Netherlands tax",
+            "/netherlands/taxes/leaving-netherlands-tax/",
+            "Exit guide for deregistration, residency changes, final tax returns, pensions, allowances and cross-border income."
+          ),
+          item(
             "Bonus tax in the Netherlands",
             "/netherlands/taxes/bonus-tax-netherlands/",
             "Why bonuses seem heavily taxed — payroll withholding, bijzondere beloning and expat payslip context."
@@ -1005,8 +1021,8 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           ),
           item(
             "Tax advisors for expats",
-            "/netherlands/services/tax-advisors/",
-            "Services directory: compare Dutch tax advisors, expat accountants, and international tax specialists."
+            "/netherlands/money/taxes/tax-advisors/",
+            "How to find and compare Dutch tax advisors for returns, 30% ruling, ZZP and cross-border questions."
           ),
         ],
       },
@@ -1018,83 +1034,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Gross vs net salary Netherlands", "/netherlands/taxes/gross-vs-net-salary/"),
           item("Payroll tax Netherlands", "/netherlands/taxes/payroll-tax-netherlands/"),
           item("Average salary Netherlands", "/netherlands/taxes/average-salary-netherlands/"),
-          item(
-            "Salary negotiation Netherlands",
-            "/netherlands/jobs/salary-negotiation-netherlands/",
-            "Practical expat guide to Dutch offer negotiation, benefits and total compensation."
-          ),
-          item(
-            "Minimum wage Netherlands",
-            "/netherlands/jobs/minimum-wage-netherlands/",
-            "How Dutch minimum wage works for expats — age bands, taxes, take-home pay and living costs."
-          ),
-          item(
-            "Expat salary Netherlands",
-            "/netherlands/jobs/expat-salary-netherlands/",
-            "Salary expectations for expats by city, industry and experience — with gross-to-net and 30% ruling context."
-          ),
-          item(
-            "Employee benefits Netherlands",
-            "/netherlands/jobs/employee-benefits-netherlands/",
-            "Pension, holiday allowance, vacation days, sick leave, remote work and expat packages."
-          ),
-          item(
-            "Pension in the Netherlands",
-            "/netherlands/jobs/pension-netherlands-expats/",
-            "Dutch pension system for expats: AOW, employer pensions, salary deductions and portability."
-          ),
-          item(
-            "Holiday allowance Netherlands",
-            "/netherlands/jobs/holiday-allowance-netherlands/",
-            "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
-          ),
-        ],
-      },
-      {
-        title: "Employment contracts & rights",
-        items: [
-          item(
-            "Working in the Netherlands",
-            "/netherlands/moving/working-in-the-netherlands/",
-            "Work-led move guide: offers, permits, payroll, and first-month setup."
-          ),
-          item(
-            "Changing jobs in the Netherlands",
-            "/netherlands/moving/changing-jobs-netherlands/",
-            "Contracts, permits, salary timing, and admin when switching employers."
-          ),
-          item(
-            "Resigning a job in the Netherlands",
-            "/netherlands/moving/resigning-job-netherlands/",
-            "Notice, stay, salary continuity, and life admin before you resign."
-          ),
-          item(
-            "Layoffs in the Netherlands",
-            "/netherlands/moving/layoffs-netherlands/",
-            "Redundancy risk: employment ending, permits, money, housing, and next steps."
-          ),
-          item("Employment contract Netherlands", "/netherlands/work/employment-contract-netherlands/"),
-          item("Probation period Netherlands", "/netherlands/work/probation-period-netherlands/"),
-          item("Notice period Netherlands", "/netherlands/work/notice-period-netherlands/"),
-          item("Employee rights Netherlands", "/netherlands/work/employee-rights-netherlands/"),
-        ],
-      },
-      {
-        title: "Freelancing & work format",
-        items: [
-          item("Freelancing Netherlands", "/netherlands/work/freelancing-netherlands/"),
-          item("ZZP Netherlands", "/netherlands/work/zzp-netherlands/"),
-          item(
-            "Best bank for freelancers (ZZP)",
-            "/netherlands/money/banking/best-bank-zzp/",
-            "Money guide: bank setups freelancers compare first — confirm with your bank and accountant."
-          ),
-          item("Contractor vs employee Netherlands", "/netherlands/work/contractor-vs-employee-netherlands/"),
-        ],
-      },
-      {
-        title: "Job search",
-        items: [
           item("Finding jobs Netherlands", "/netherlands/work/finding-jobs-netherlands/"),
           item("Job websites Netherlands", "/netherlands/work/job-websites-netherlands/"),
           item("LinkedIn jobs Netherlands", "/netherlands/work/linkedin-jobs-netherlands/"),
@@ -1106,28 +1045,15 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         ],
       },
       {
-        title: "Buying & housing economics",
+        title: "Employment contracts & rights",
         items: [
-          item(
-            "Buying a house",
-            "/netherlands/housing/buying-a-house-netherlands/",
-            "Mortgages, kosten koper, overbidding and the Dutch purchase process for expats."
-          ),
-          item(
-            "Mortgage (expats)",
-            "/netherlands/housing/mortgages-netherlands-expats/",
-            "Eligibility, borrowing capacity, Dutch mortgage types and expat application steps."
-          ),
-          item(
-            "Property tax",
-            "/netherlands/taxes/property-tax-netherlands/",
-            "WOZ value, municipal taxes, transfer-tax context and recurring homeowner costs."
-          ),
-          item(
-            "Buy vs rent",
-            "/netherlands/housing/buy-vs-rent-netherlands/",
-            "Compare rent, mortgage, upfront costs, flexibility and city tradeoffs."
-          ),
+          item("Employment contract Netherlands", "/netherlands/work/employment-contract-netherlands/"),
+          item("Probation period Netherlands", "/netherlands/work/probation-period-netherlands/"),
+          item("Notice period Netherlands", "/netherlands/work/notice-period-netherlands/"),
+          item("Employee rights Netherlands", "/netherlands/work/employee-rights-netherlands/"),
+          item("Freelancing Netherlands", "/netherlands/work/freelancing-netherlands/"),
+          item("ZZP Netherlands", "/netherlands/work/zzp-netherlands/"),
+          item("Contractor vs employee Netherlands", "/netherlands/work/contractor-vs-employee-netherlands/"),
         ],
       },
       {
@@ -1136,10 +1062,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Insurance", "/netherlands/money/insurance"),
           item("Health", "/netherlands/money/insurance/health"),
           item("Liability + household", "/netherlands/money/insurance/liability-household"),
-          item("Double taxation", "/netherlands/taxes/double-taxation-netherlands/"),
-          item("Foreign income", "/netherlands/taxes/foreign-income-netherlands/"),
-          item("Taxes after moving", "/netherlands/taxes/taxes-after-moving-netherlands/"),
-          item("Leaving Netherlands tax", "/netherlands/taxes/leaving-netherlands-tax/"),
         ],
       },
     ],
@@ -1163,41 +1085,10 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Banks", "/netherlands/services/banks/"),
           item("Tax Advisors", "/netherlands/services/tax-advisors/", "Tax returns, 30% ruling, ZZP and cross-border tax support for expats."),
           item(
-            "Traditional vs digital banks (guide)",
-            "/netherlands/money/banking/traditional-vs-digital/",
-            "Plain-language Money guide: branch banks vs app banks and using both."
+            "Mortgage advisors",
+            "/netherlands/services/mortgage-advisors/",
+            "Compare mortgage advisors, broker models, fees and expat document support."
           ),
-          item(
-            "Banking fees & costs (guide)",
-            "/netherlands/money/banking/fees/",
-            "Simple guide to common bank charges — always confirm prices on each bank’s website."
-          ),
-          item(
-            "Cheapest bank accounts (guide)",
-            "/netherlands/money/banking/cheapest-accounts/",
-            "Low-cost Dutch accounts for expats — total yearly cost and hidden fees; verify on provider sites."
-          ),
-          item(
-            "Types of bank accounts (guide)",
-            "/netherlands/money/banking/types-of-accounts/",
-            "Easy read for expats: which Dutch account types exist and what people use them for."
-          ),
-          item(
-            "How payments work (guide)",
-            "/netherlands/money/banking/how-payments-work/",
-            "Everyday money in the Netherlands: paying rent and shops, online checkout, and bills — in plain language."
-          ),
-          item(
-            "International transfers (guide)",
-            "/netherlands/money/banking/international-transfers/",
-            "Money guide: compare total cost, FX, and speed when you send from the Netherlands — confirm on each provider’s site."
-          ),
-          item(
-            "Best bank for freelancers / ZZP (guide)",
-            "/netherlands/money/banking/best-bank-zzp/",
-            "Money guide: freelancer banking setups and what to check on each bank’s business pages."
-          ),
-          item("Mortgage advisors", "/netherlands/services/mortgage-advisors/"),
           item("Financial advisors", "/netherlands/services/financial-advisors/"),
           item("View all services", "/netherlands/services/"),
         ],
@@ -1214,7 +1105,9 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Housing & relocation",
         items: [
           item("Housing platforms", "/netherlands/services/housing-platforms/"),
+          item("Rental agencies", "/netherlands/services/rental-agencies/"),
           item("Expat housing agencies", "/netherlands/services/expat-housing-agencies/"),
+          item("Relocation agencies", "/netherlands/services/relocation-agencies/"),
           item("Relocation services", "/netherlands/services/relocation-services/"),
           item("Moving companies", "/netherlands/services/moving-companies/"),
           item("International shipping", "/netherlands/services/international-shipping/"),
@@ -1225,6 +1118,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         items: [
           item("Visa consultants", "/netherlands/services/visa-consultants/"),
           item("Immigration lawyers", "/netherlands/services/immigration-lawyers/"),
+          item(
+            "Highly skilled migrant sponsors",
+            "/netherlands/services/highly-skilled-migrant-sponsors/",
+            "Search the official IND recognised sponsor register."
+          ),
+          item(
+            "Startup visa advisors",
+            "/netherlands/services/startup-visa-advisors/",
+            "Compare startup facilitators and startup-route support."
+          ),
           item("Work permit services", "/netherlands/services/work-permit-services/"),
         ],
       },
@@ -1262,46 +1165,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Survival Guide",
             "/netherlands/living/survival-guide/",
             "OV, apps, PIN-first payments, weather, and first-week sequencing—bookmarkable hub."
-          ),
-          item(
-            "Essential apps",
-            "/netherlands/living/apps/",
-            "What to install first: transport, Tikkie, groceries, delivery, and chat—curated for newcomers."
-          ),
-          item(
-            "Daily life basics",
-            "/netherlands/living/daily-life/",
-            "Groceries, errands, payments, deliveries, and household rhythms—practical onboarding beside apps and transport."
-          ),
-          item(
-            "Payments basics",
-            "/netherlands/living/payments/",
-            "Short Living overview of tills, apps, and habits — with links to deeper guides."
-          ),
-          item(
-            "Using your Dutch bank day to day (full guide)",
-            "/netherlands/money/banking/how-payments-work/",
-            "Rent, salary, paying in shops and online, and bills that go out automatically — plain English, step by step."
-          ),
-          item(
-            "Shopping & groceries",
-            "/netherlands/living/shopping-groceries/",
-            "How supermarkets, self-checkout, store apps, household basics, and delivery habits actually work in the Netherlands."
-          ),
-          item(
-            "Healthcare basics",
-            "/netherlands/living/healthcare-basics/",
-            "Insurance, GP registration, pharmacies, urgent care, and the healthcare flow newcomers usually need first."
-          ),
-          item(
-            "Emergencies & safety",
-            "/netherlands/living/emergencies-safety/",
-            "112, urgent vs non-urgent situations, lost items, and the practical safety basics newcomers should know early."
-          ),
-          item(
-            "Dutch Culture & Etiquette",
-            "/netherlands/living/culture-etiquette/",
-            "Directness, invitations, neighbors, work culture, and the social cues newcomers usually learn by trial and error."
           ),
         ],
       },

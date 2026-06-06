@@ -321,7 +321,7 @@ export const propertyTaxNetherlandsPage = {
     "Open the taxes hub if WOZ, transfer tax or tax-return questions expand beyond property costs.",
   ],
   services: [
-    { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/", status: "comingSoon", description: "Mortgage capacity, buyer costs and lender process context." },
+    { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/", status: "live", description: "Mortgage capacity, buyer costs and lender process context." },
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Personal tax questions, returns and property-related tax context." },
     { label: "Real estate agents", href: "/netherlands/services/real-estate-agents/", status: "comingSoon", description: "Buying support and local property-market context." },
     { label: "Property lawyers", href: "/netherlands/services/property-lawyers/", status: "comingSoon", description: "Contract, ownership and dispute context where legal review is needed." },

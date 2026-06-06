@@ -1,0 +1,29 @@
+{
+  "id": "nl-taxes-leaving-netherlands-tax-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/taxes/leaving-netherlands-tax/",
+    "slot": "mid-page-leaving-tax-support"
+  },
+  "variant": "cards",
+  "title": "Tax providers expats compare before leaving the Netherlands",
+  "intro": "Optional tax-focused providers only — useful when your leaving year involves a final return, M-form, 30% ruling changes, Dutch property, pensions, allowances, remote work, or income in more than one country.",
+  "categoryOrder": ["tax"],
+  "items": [
+    {
+      "providerId": "blue-umbrella",
+      "reason": "Online Dutch tax filing and administration support for internationals, including income tax return and allowance questions."
+    },
+    {
+      "providerId": "broadstreet",
+      "reason": "Tax, accountancy, payroll, and cross-border support for expats, entrepreneurs, and internationally mobile residents."
+    },
+    {
+      "providerId": "taxsavers",
+      "reason": "Dutch tax return, M-form, 30% ruling, VAT, and international taxpayer support for expats."
+    }
+  ],
+  "disclosure": "These are tax-focused discovery listings, not endorsements, filing advice, or outcome guarantees. Links are currently non-affiliate unless marked otherwise. Always confirm scope, pricing, credentials, and terms with the provider directly."
+}

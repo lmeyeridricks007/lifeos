@@ -4,6 +4,7 @@ const linkRegistry: LinkRegistry = {
   housing_tools: { href: "/netherlands/housing/tools/", title: "Housing tools hub" },
   services_platforms: { href: "/netherlands/services/housing-platforms/", title: "Housing platforms directory" },
   services_rental: { href: "/netherlands/services/rental-agencies/", title: "Rental agencies directory" },
+  mortgage_advisors: { href: "/netherlands/services/mortgage-advisors/", title: "Mortgage advisors directory" },
   buy_vs_rent: { href: "/netherlands/housing/buy-vs-rent-netherlands/", title: "Buy vs rent in the Netherlands guide" },
   buying_house: { href: "/netherlands/housing/buying-a-house-netherlands/", title: "Buying a house guide" },
   mortgages_expats: { href: "/netherlands/housing/mortgages-netherlands-expats/", title: "Mortgages for expats guide" },
@@ -79,7 +80,7 @@ export const nlHousingFlagshipContent: NlFlagshipPillarContent = {
       chips: ["buying"],
       personaTitle: "Considering buying a home",
       whatMatters: ["Mortgage capacity", "Upfront buyer costs", "Recurring property taxes"],
-      readingOrder: ["buy_vs_rent", "mortgages_expats", "buying_house", "property_tax"],
+      readingOrder: ["buy_vs_rent", "mortgages_expats", "mortgage_advisors", "buying_house", "property_tax"],
       startTool: { key: "housing_tools" },
       unknownsToConfirm: ["Borrowing capacity", "WOZ value", "Municipal and VvE costs"],
     },
@@ -252,6 +253,11 @@ export const nlHousingFlagshipContent: NlFlagshipPillarContent = {
       label: "Mortgages for expats",
       href: "/netherlands/housing/mortgages-netherlands-expats/",
       description: "Dutch mortgage eligibility, borrowing capacity, costs and application steps for international buyers.",
+    },
+    {
+      label: "Mortgage advisors",
+      href: "/netherlands/services/mortgage-advisors/",
+      description: "Compare expat-friendly mortgage advisors, broker models, fees and document support.",
     },
     {
       label: "Buy vs rent in the Netherlands",

@@ -52,6 +52,16 @@ export const NETHERLANDS_SERVICES_CATEGORIES: ServiceCategoryCard[] = [
     group: "money-tax",
     featured: true,
   },
+  {
+    slug: "mortgage-advisors",
+    name: "Mortgage Advisors",
+    href: `${BASE}/mortgage-advisors/`,
+    description: "Compare mortgage advisors and brokers helping expats navigate Dutch mortgage advice, documents, lender comparison, and home-buying finance.",
+    examples: ["Expat mortgages", "Advisor fees", "Lender comparison"],
+    bestForStage: "Buying a home in the Netherlands",
+    group: "money-tax",
+    featured: true,
+  },
   // ——— Immigration & Legal ———
   {
     slug: "immigration-lawyers",

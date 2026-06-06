@@ -1,0 +1,26 @@
+{
+  "id": "mister-mortgage",
+  "name": "Mister Mortgage",
+  "tagline": "Mortgage brokerage serving home buyers in the Netherlands, including international professionals and expats.",
+  "categoryIds": ["housing", "banking"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Mortgage broker", "Expat-friendly"],
+  "highlights": [
+    "English-language mortgage guidance",
+    "Online and advisor-led process information",
+    "Useful for comparing broker-style support"
+  ],
+  "cta": {
+    "label": "View Mister Mortgage",
+    "href": "https://mistermortgage.nl/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Confirm credentials, fees, scope, lender access, and terms directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "Mister Mortgage"
+  }
+}

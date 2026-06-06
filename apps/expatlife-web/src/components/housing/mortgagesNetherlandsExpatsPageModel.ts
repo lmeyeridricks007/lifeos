@@ -373,7 +373,7 @@ export const mortgagesNetherlandsExpatsPage = {
   ],
   affiliatePlacementId: "nl-housing-mortgages-expats-support-providers",
   services: [
-    { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/", status: "comingSoon", description: "Regulated advice, lender selection and mortgage application coordination." },
+    { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/", status: "live", description: "Regulated advice, lender selection and mortgage application coordination." },
     { label: "Banks", href: "/netherlands/services/banks/", status: "live", description: "Compare Dutch banks if you want mortgage and everyday banking under one provider." },
     { label: "Real estate agents", href: "/netherlands/services/real-estate-agents/", status: "comingSoon", description: "Buying agents and search support in competitive markets." },
     { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "comingSoon", description: "Broader planning around cash flow and major purchases." },

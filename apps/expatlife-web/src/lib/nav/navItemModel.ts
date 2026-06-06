@@ -29,6 +29,7 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/property-tax-netherlands": "/netherlands/taxes/property-tax-netherlands",
   "/netherlands/buy-vs-rent-netherlands": "/netherlands/housing/buy-vs-rent-netherlands",
   "/netherlands/double-taxation-netherlands": "/netherlands/taxes/double-taxation-netherlands",
+  "/netherlands/taxes/expat-taxes-netherlands": "/netherlands/money/expat-taxes-netherlands",
 };
 
 function resolveNavActivePath(path: string): string {

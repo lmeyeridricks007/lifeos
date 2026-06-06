@@ -1,0 +1,26 @@
+{
+  "id": "hanno",
+  "name": "Hanno",
+  "tagline": "Digital-first Dutch mortgage-advice organisation with dedicated expat mortgage information.",
+  "categoryIds": ["housing", "banking"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Mortgage advisor", "Online consultations"],
+  "highlights": [
+    "Online-oriented mortgage advice workflow",
+    "Dedicated expat mortgage pages",
+    "Useful for comparing digital-first advice"
+  ],
+  "cta": {
+    "label": "View Hanno",
+    "href": "https://www.hanno.nl/expat-mortgages/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Confirm credentials, fees, scope, lender access, and terms directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "Hanno"
+  }
+}

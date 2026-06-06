@@ -31,7 +31,8 @@
     "test:utilities-services": "tsx --test src/lib/tools/utilities-services/estimate.test.ts",
     "test:bank-scoring": "tsx --test src/lib/banking/bankScoring.test.ts",
     "test:banking-cost-estimator": "tsx --test src/lib/banking/bankingCostEstimator.test.ts src/lib/banking/bankingCostSummaryText.test.ts src/data/banking/bankingProviderFeeConfig.test.ts",
-    "test:transfer-cost-calculator": "tsx --test src/lib/tools/transfer-cost-calculator/engine.test.ts src/lib/banking/transferCostEstimator.test.ts"
+    "test:transfer-cost-calculator": "tsx --test src/lib/tools/transfer-cost-calculator/engine.test.ts src/lib/banking/transferCostEstimator.test.ts",
+    "test:nav": "tsx scripts/audit-nav-coverage.ts"
   },
   "dependencies": {
     "@expatlife/content": "workspace:*",

@@ -30,6 +30,7 @@
       { "label": "Relocation services", "href": "/netherlands/services/relocation-services/" },
       { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
       { "label": "Open a Bank Account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
+      { "label": "Taxes After Moving to the Netherlands", "href": "/netherlands/taxes/taxes-after-moving-netherlands/" },
       { "label": "Relocation Cost Estimator", "href": "/netherlands/moving/tools/relocation-cost-estimator/" },
       { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Document Translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" },
@@ -143,7 +144,8 @@
         "Salary and payroll — in many cases your employer needs it"
       ],
       "links": [
-        { "label": "Municipality registration (BSN)", "href": "/netherlands/municipality-registration-netherlands/" }
+        { "label": "Municipality registration (BSN)", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "Taxes after moving to the Netherlands", "href": "/netherlands/taxes/taxes-after-moving-netherlands/" }
       ],
       "callout": {
         "type": "tip",
@@ -180,6 +182,7 @@
       ],
       "links": [
         { "label": "DigiD for expats in the Netherlands", "href": "/netherlands/digid-awareness/" },
+        { "label": "Taxes after moving to the Netherlands", "href": "/netherlands/taxes/taxes-after-moving-netherlands/" },
         { "label": "Netherlands Worldwide – MijnOverheid", "href": "https://www.netherlandsworldwide.nl/mijnoverheid-abroad/what-is-mijnoverheid" }
       ]
     },
@@ -321,6 +324,13 @@
       "ctaLabel": "Estimate your costs"
     },
     {
+      "key": "taxes-after-moving",
+      "label": "Taxes After Moving",
+      "href": "/netherlands/taxes/taxes-after-moving-netherlands/",
+      "description": "Understand payroll, residency, allowances, foreign income and first-year tax questions after relocation.",
+      "ctaLabel": "Understand tax steps"
+    },
+    {
       "key": "visa-timeline",
       "label": "Visa Timeline Estimator",
       "href": "/netherlands/visa-timeline-estimator/",
@@ -388,6 +398,7 @@
       { "label": "Relocation services", "href": "/netherlands/services/relocation-services/" },
       { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
       { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
+      { "label": "Taxes After Moving to the Netherlands", "href": "/netherlands/taxes/taxes-after-moving-netherlands/" },
       { "label": "Open a Bank Account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
       { "label": "Cost of Moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" },
       { "label": "Documents Needed to Move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
@@ -414,6 +425,7 @@
     { "label": "Plan Your First 90 Days", "href": "/netherlands/moving/tools/first-90-days/" },
     { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
     { "label": "Estimate Your Costs", "href": "/netherlands/moving/tools/relocation-cost-estimator/" },
+    { "label": "Understand Taxes After Moving", "href": "/netherlands/taxes/taxes-after-moving-netherlands/" },
     { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
     { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" }
   ],

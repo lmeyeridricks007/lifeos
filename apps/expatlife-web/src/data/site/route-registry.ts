@@ -146,12 +146,9 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/taxes/30-ruling-application/": { title: "30% ruling application", section: "guides" },
   "/netherlands/taxes/30-ruling-expiry/": { title: "30% ruling expiry", section: "guides" },
   /** Live App Router guides — listed in EXTRA_LIVE_PATHS; do not duplicate here or nav shows “Soon”. */
-  "/netherlands/taxes/foreign-income-netherlands/": { title: "Foreign income Netherlands", section: "guides" },
   "/netherlands/taxes/expat-tax-return/": { title: "Expat tax return", section: "guides" },
   "/netherlands/taxes/self-employed-tax-netherlands/": { title: "Self-employed tax Netherlands", section: "guides" },
   "/netherlands/taxes/zzp-tax-netherlands/": { title: "ZZP tax Netherlands", section: "guides" },
-  "/netherlands/taxes/taxes-after-moving-netherlands/": { title: "Taxes after moving Netherlands", section: "guides" },
-  "/netherlands/taxes/leaving-netherlands-tax/": { title: "Leaving Netherlands tax", section: "guides" },
   "/netherlands/taxes/tools/net-salary-calculator/": { title: "Net salary calculator (taxes)", section: "tools" },
   "/netherlands/taxes/tools/allowance-estimator/": { title: "Allowance estimator (taxes)", section: "tools" },
   "/netherlands/taxes/tools/double-tax-checker/": { title: "Double tax checker (taxes)", section: "tools" },
@@ -165,7 +162,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/taxes/cost-of-living-eindhoven/": { title: "Cost of living Eindhoven (taxes)", section: "guides" },
   /** Services hub — planned compare / provider directories (nav Soon until live). Live category pages come from `NETHERLANDS_SERVICES_CATEGORIES`. */
   "/netherlands/services/bank-comparison/": { title: "Bank comparison", section: "services" },
-  "/netherlands/services/mortgage-advisors/": { title: "Mortgage advisors", section: "services" },
   "/netherlands/services/financial-advisors/": { title: "Financial advisors", section: "services" },
   "/netherlands/services/compare-health-insurance/": { title: "Compare health insurance", section: "services" },
   "/netherlands/services/insurance-providers/": { title: "Insurance providers", section: "services" },
@@ -247,6 +243,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/moving-to-the-netherlands/",
   "/netherlands/moving-to-netherlands-from/",
   "/netherlands/services/",
+  /** Live App Router service directory — mortgage advisor discovery for expats. */
+  "/netherlands/services/mortgage-advisors/",
   "/netherlands/cities/",
   "/netherlands/cities/best-cities-for-expats/",
   "/netherlands/cities/cheapest-cities-for-expats/",
@@ -299,6 +297,12 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/taxes/bonus-tax-netherlands/",
   /** Live App Router guide — double taxation and treaty concepts for expats. */
   "/netherlands/taxes/double-taxation-netherlands/",
+  /** Live App Router guide — foreign income and cross-border reporting concepts for expats. */
+  "/netherlands/taxes/foreign-income-netherlands/",
+  /** Live App Router guide — first tax steps after relocating to the Netherlands. */
+  "/netherlands/taxes/taxes-after-moving-netherlands/",
+  /** Live App Router guide — exit tax considerations for expats leaving the Netherlands. */
+  "/netherlands/taxes/leaving-netherlands-tax/",
   /** Legacy flat URL; 301 → canonical double taxation guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/double-taxation-netherlands/",
   "/netherlands/taxes/healthcare-allowance-netherlands/",

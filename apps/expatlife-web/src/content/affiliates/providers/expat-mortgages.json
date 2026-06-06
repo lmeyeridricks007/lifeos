@@ -1,0 +1,26 @@
+{
+  "id": "expat-mortgages",
+  "name": "Expat Mortgages",
+  "tagline": "Independent mortgage brokerage focused on international clients buying property in the Netherlands.",
+  "categoryIds": ["housing", "banking"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Mortgage advisor", "Expat-focused"],
+  "highlights": [
+    "English-language mortgage process guidance",
+    "Independent mortgage brokerage positioning",
+    "Useful for expat home-buying orientation"
+  ],
+  "cta": {
+    "label": "View Expat Mortgages",
+    "href": "https://expatmortgages.nl/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Confirm credentials, fees, scope, lender access, and terms directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "Expat Mortgages"
+  }
+}

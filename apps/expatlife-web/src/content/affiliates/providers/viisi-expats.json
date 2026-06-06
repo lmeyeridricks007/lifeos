@@ -1,0 +1,26 @@
+{
+  "id": "viisi-expats",
+  "name": "Viisi Expats",
+  "tagline": "Full-service mortgage advice brand with expat-focused pages and offices across the Netherlands.",
+  "categoryIds": ["housing", "banking"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Mortgage advisor", "Independent advice"],
+  "highlights": [
+    "Expat mortgage advice pages",
+    "Online document workflow",
+    "Full-process mortgage guidance"
+  ],
+  "cta": {
+    "label": "View Viisi Expats",
+    "href": "https://www.viisi-expats.nl/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Confirm credentials, fees, scope, lender access, and terms directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "Viisi Expats"
+  }
+}

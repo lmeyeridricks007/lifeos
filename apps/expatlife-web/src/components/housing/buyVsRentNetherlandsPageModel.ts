@@ -362,7 +362,7 @@ export const buyVsRentNetherlandsPage = {
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, status: "live", description: "Compare cities before committing." },
   ] satisfies BuyVsRentNetherlandsLink[],
   services: [
-    { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/", status: "comingSoon", description: "Borrowing capacity and mortgage-route context." },
+    { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/", status: "live", description: "Borrowing capacity and mortgage-route context." },
     { label: "Real estate agents", href: "/netherlands/services/real-estate-agents/", status: "comingSoon", description: "Buying-agent support and bidding strategy." },
     { label: "Rental agencies", href: "/netherlands/services/rental-agencies/", status: "live", description: "Rental search support while you compare cities." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "City orientation, temporary housing and arrival setup." },

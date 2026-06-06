@@ -185,6 +185,12 @@ export const netherlandsServicesPage: ServicesHubPageData = {
       href: "/netherlands/services/rental-agencies/",
       linkLabel: "Browse Rental Agencies",
     },
+    {
+      title: "Mortgage advisors for expat buyers",
+      description: "Compare mortgage advisors and brokers who help internationals understand borrowing capacity, documents, fees, and Dutch lender criteria.",
+      href: "/netherlands/services/mortgage-advisors/",
+      linkLabel: "Compare Mortgage Advisors",
+    },
   ],
 
   highlights: NETHERLANDS_FEATURED_HIGHLIGHTS,

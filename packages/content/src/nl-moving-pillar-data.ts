@@ -60,6 +60,14 @@ const linkRegistry: LinkRegistry = {
     href: "/netherlands/health-insurance-netherlands/",
     title: "Health insurance in the Netherlands",
   },
+  taxes_after_moving: {
+    href: "/netherlands/taxes/taxes-after-moving-netherlands/",
+    title: "Taxes after moving to the Netherlands",
+  },
+  leaving_netherlands_tax: {
+    href: "/netherlands/taxes/leaving-netherlands-tax/",
+    title: "Taxes when leaving the Netherlands",
+  },
   digid_awareness: {
     href: "/netherlands/digid-awareness/",
     title: "DigiD awareness",
@@ -384,6 +392,12 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       timeToComplete: "12 min",
     },
     {
+      title: "Taxes when leaving",
+      href: "/netherlands/taxes/leaving-netherlands-tax/",
+      description: "Deregistration, final tax returns, pensions, allowances and cross-border questions when moving away.",
+      timeToComplete: "14 min",
+    },
+    {
       title: "TWV work permit",
       href: "/netherlands/moving/twv-work-permit/",
       description: "Practical route guide for TWV, employer action, route comparison, and timing questions.",
@@ -412,6 +426,12 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       href: "/netherlands/work/tools/payslip-decoder",
       description: "Understand your loonstrook after payroll starts.",
       timeToComplete: "5 min",
+    },
+    {
+      title: "Taxes after moving",
+      href: "/netherlands/taxes/taxes-after-moving-netherlands/",
+      description: "First tax steps after relocation: BSN, payroll, residency, allowances, and annual filing.",
+      timeToComplete: "15 min",
     },
     {
       title: "Arrival planner",
@@ -700,6 +720,8 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       sectionTitle: "Related pages",
       cards: [
         { linkKey: "working_in_netherlands_move_guide", description: "Move-pillar guide for job offers, salary, permits, payroll, and relocation trade-offs." },
+        { linkKey: "taxes_after_moving", description: "Tax onboarding guide for BSN, payroll, residency, allowances, 30% ruling and annual returns after relocation." },
+        { linkKey: "leaving_netherlands_tax", description: "Exit tax guide for deregistration, final returns, pensions, allowances and international transitions." },
         { linkKey: "net_salary_netherlands", description: "Gross-to-net salary guide for comparing Dutch offers, payroll deductions and take-home pay." },
         { linkKey: "gross_vs_net_salary", description: "Beginner guide to Dutch salary wording, payslips, deductions and take-home pay." },
         {
