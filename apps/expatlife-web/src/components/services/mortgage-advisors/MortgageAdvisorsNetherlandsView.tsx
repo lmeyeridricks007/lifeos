@@ -498,7 +498,7 @@ export function MortgageAdvisorsNetherlandsView() {
                 <VisualFigure visual={page.visuals.comparisonMatrix} className={sectionVisualMtClass} />
               </section>
 
-              {showAffiliateProviders ? (
+              {showAffiliateProviders && affiliateProviderData ? (
                 <section id="affiliate-providers" className={sectionClass}>
                   <SectionIntro eyebrow="Provider support" title="Affiliates and Providers That May Help">
                     <p>

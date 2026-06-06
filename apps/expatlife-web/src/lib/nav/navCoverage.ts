@@ -127,7 +127,7 @@ export function isEditoriallyActiveMenuTarget(path: string): boolean {
 }
 
 export function listActivePathsRequiringMenu(): string[] {
-  return [...LIVE_PATHS].filter(shouldRequireMegaMenu).filter(isEditoriallyActiveMenuTarget).sort();
+  return Array.from(LIVE_PATHS).filter(shouldRequireMegaMenu).filter(isEditoriallyActiveMenuTarget).sort();
 }
 
 export function listMissingFromMegaMenu(): string[] {
@@ -139,7 +139,7 @@ export function listMissingFromMegaMenu(): string[] {
 export function listDuplicateEditorialMenuHrefs(): Array<{ href: string; rows: MenuRow[] }> {
   const editorialRows = collectLinkableMenuRows().filter((r) => !LIVE_TOOL_ROUTES.has(r.href) && !ROOT_VISA_TOOL_PATHS.has(r.href));
   const grouped = groupMenuRowsByHref(editorialRows);
-  return [...grouped.entries()]
+  return Array.from(grouped.entries())
     .filter(([, rows]) => rows.length > 1)
     .map(([href, rows]) => ({ href, rows }))
     .sort((a, b) => a.href.localeCompare(b.href));
