@@ -1,0 +1,26 @@
+{
+  "id": "holland-financial-centre",
+  "name": "Holland Financial Centre",
+  "tagline": "Independent financial advice and planning support for residents in the Netherlands.",
+  "categoryIds": ["services"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Financial advisor", "Independent advice"],
+  "highlights": [
+    "Financial planning, pensions and investment context",
+    "Independent advisory positioning",
+    "English and Dutch service options"
+  ],
+  "cta": {
+    "label": "View Holland Financial Centre",
+    "href": "https://www.hollandfinancialcentre.nl/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Verify AFM/Wft status, independence disclosures and current service scope directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "Holland Financial Centre"
+  }
+}

@@ -37,7 +37,10 @@ Every prompt should specify:
 - Section-specific concept, not a generic dashboard
 - Concrete user-helpful labels, numbers, examples, scenarios or records
 - Dutch visual context, premium navy/teal/white palette, and ExpatLife brand area
-- Safety constraints such as no legal/tax/financial advice, no guarantees, no fake ratings, no fake official logos
+- Brand footer: gold compass icon + wordmark **ExpatLife** + tagline **Live. Love. Stay.** only (match double-taxation benchmark). Do not draw website addresses, domains, or TLD suffixes anywhere in the image
+- In image-generation prompts, describe branding **positively only**. Never write literal negative instructions such as "NO", "do not show .eu", or "without ExpatLife.eu" — models may render that text into the artwork
+- Use positive disclaimer copy in sidebars (e.g. "General information only" / "Verify with providers") instead of large "No advice" callouts unless the section concept requires it
+- Safety constraints such as no legal/tax/financial advice guarantees, no fake ratings, no fake official logos
 
 ## Variety Rules
 
@@ -65,6 +68,8 @@ Regenerate any image that has:
 - fabricated awards, reviews, rankings or guarantees
 - wrong section concept despite the correct filename
 - stray footer titles or off-brand copy that changes the page meaning
+- domain extensions, website URLs, or TLD suffixes in ExpatLife branding
+- literal negative prompt text baked into artwork ("NO", "do not show", domain names used as rejection labels)
 
 ## Verification
 

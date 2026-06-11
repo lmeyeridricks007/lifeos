@@ -1,0 +1,26 @@
+{
+  "id": "expat-investment-advice",
+  "name": "Expat Investment Advice",
+  "tagline": "Investment and financial planning guidance oriented toward expats in the Netherlands.",
+  "categoryIds": ["services"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Financial advisor", "Expat-focused"],
+  "highlights": [
+    "Expat-oriented investment and planning conversations",
+    "Retirement and long-term planning context",
+    "Primarily remote consultations"
+  ],
+  "cta": {
+    "label": "View Expat Investment Advice",
+    "href": "https://www.expatinvestmentadvice.com/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Verify AFM registration, independence, fees and advice scope directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "Expat Investment Advice"
+  }
+}

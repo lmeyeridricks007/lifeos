@@ -514,7 +514,7 @@ export const mortgageAdvisorsNetherlandsPage = {
     { label: "Banks", href: "/netherlands/services/banks/", status: "live", description: "Compare Dutch banks and banking setup for expats." },
     { label: "Tax Advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Tax support where housing, mortgage interest and relocation overlap." },
     { label: "Real Estate Agents", href: "/netherlands/services/real-estate-agents/", status: "comingSoon", description: "Buying-agent support for search, bidding and local market insight." },
-    { label: "Financial Advisors", href: "/netherlands/services/financial-advisors/", status: "comingSoon", description: "Broader financial planning beyond the mortgage transaction." },
+    { label: "Financial Advisors", href: "/netherlands/services/financial-advisors/", status: "live", description: "Broader financial planning beyond the mortgage transaction." },
   ] satisfies MortgageAdvisorLink[],
   exploreNextCards: [
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Understand the buying process before you choose providers." },

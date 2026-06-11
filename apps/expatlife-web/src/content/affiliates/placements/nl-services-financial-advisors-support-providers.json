@@ -1,0 +1,57 @@
+{
+  "id": "nl-services-financial-advisors-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/financial-advisors/",
+    "slot": "financial-advisor-contact-options"
+  },
+  "variant": "cards",
+  "title": "Financial advisors and providers expats can contact",
+  "intro": "These providers can help users move from research to a real financial planning conversation: expat-focused planners, wealth managers, cross-border support and banking pathways. Treat this as a discovery list, not a ranking or recommendation.",
+  "categoryOrder": ["services", "banking", "tax"],
+  "items": [
+    {
+      "providerId": "black-swan-capital-europe",
+      "reason": "Expat-focused financial planning for internationally mobile professionals — useful when pensions, investments and cross-border complexity need structured planning."
+    },
+    {
+      "providerId": "octas-capital",
+      "reason": "Wealth management and financial planning for international clients; useful for retirement, investment structure and ongoing advisory relationships."
+    },
+    {
+      "providerId": "holland-financial-centre",
+      "reason": "Independent financial advice provider; useful for expats comparing planning-only conversations around pensions, investments and household goals."
+    },
+    {
+      "providerId": "vwp-wealth-planning",
+      "reason": "Wealth planning organisation with English-language materials; useful for retirement projections, investments and estate planning discussions."
+    },
+    {
+      "providerId": "expat-investment-advice",
+      "reason": "Dedicated expat positioning around investment and financial planning; useful when English-first guidance is a priority."
+    },
+    {
+      "providerId": "finex-wealth-management",
+      "reason": "Wealth management for international professionals and entrepreneurs; useful for higher-complexity investment and cross-border files."
+    },
+    {
+      "providerId": "wise",
+      "reason": "Partner option for low-cost international transfers and multi-currency accounts — often relevant when planning spans more than one country."
+    },
+    {
+      "providerId": "broadstreet",
+      "reason": "Cross-border tax and accountancy support when financial planning questions overlap with returns, payroll or entrepreneur income."
+    },
+    {
+      "providerId": "abn-amro",
+      "reason": "Partner bank with wealth-management and private-banking pathways; useful as a bank-side comparison alongside independent planners."
+    },
+    {
+      "providerId": "ing",
+      "reason": "Partner bank useful for comparing banking, savings and investment account context alongside advisory support."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat financial-advisor discovery, not pay-to-rank placement. This is not investment, tax, pension or financial advice; verify AFM registration where relevant and confirm fees, scope, credentials and terms directly with licensed advisers and providers."
+}

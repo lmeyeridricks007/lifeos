@@ -162,7 +162,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/taxes/cost-of-living-eindhoven/": { title: "Cost of living Eindhoven (taxes)", section: "guides" },
   /** Services hub — planned compare / provider directories (nav Soon until live). Live category pages come from `NETHERLANDS_SERVICES_CATEGORIES`. */
   "/netherlands/services/bank-comparison/": { title: "Bank comparison", section: "services" },
-  "/netherlands/services/financial-advisors/": { title: "Financial advisors", section: "services" },
   "/netherlands/services/compare-health-insurance/": { title: "Compare health insurance", section: "services" },
   "/netherlands/services/insurance-providers/": { title: "Insurance providers", section: "services" },
   "/netherlands/services/expat-housing-agencies/": { title: "Expat housing agencies", section: "services" },
@@ -245,6 +244,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/services/",
   /** Live App Router service directory — mortgage advisor discovery for expats. */
   "/netherlands/services/mortgage-advisors/",
+  /** Live App Router service directory — financial advisor discovery for expats. */
+  "/netherlands/services/financial-advisors/",
   "/netherlands/cities/",
   "/netherlands/cities/best-cities-for-expats/",
   "/netherlands/cities/cheapest-cities-for-expats/",

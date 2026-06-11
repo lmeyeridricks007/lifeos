@@ -549,3 +549,34 @@ describe("mortgage advisors service nav active state", () => {
     expect(rows[0].sectionTitle).toBe("Banking & financial services");
   });
 });
+
+describe("financial advisors service nav active state", () => {
+  const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors/";
+
+  it("treats the shipped financial advisors service route as live", () => {
+    expect(getRouteStatus(FINANCIAL_ADVISORS_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the financial advisors route", () => {
+    expect(getActiveNavKey(FINANCIAL_ADVISORS_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === FINANCIAL_ADVISORS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(FINANCIAL_ADVISORS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Banking & financial services", () => {
+    const rows = menuRowsForHref(FINANCIAL_ADVISORS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Banking & financial services");
+  });
+});

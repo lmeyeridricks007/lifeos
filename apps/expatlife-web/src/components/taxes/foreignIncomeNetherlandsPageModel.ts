@@ -321,7 +321,7 @@ export const foreignIncomeNetherlandsPage = {
     { label: "Expat tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Personal tax filing and cross-border tax support." },
     { label: "International tax specialists", href: "/netherlands/services/expat-tax-services/", status: "comingSoon", description: "Specialist help for foreign income, treaties and residency." },
     { label: "Payroll specialists", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Support where employer withholding and work location overlap." },
-    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "comingSoon", description: "Broader planning for assets, pensions and investments." },
+    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "live", description: "Broader planning for assets, pensions and investments." },
     { label: "Immigration lawyers", href: "/netherlands/services/immigration-lawyers/", status: "live", description: "Useful where work permission and remote work status interact." },
   ] satisfies ForeignIncomeNetherlandsLink[],
   faq: [

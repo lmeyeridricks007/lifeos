@@ -325,7 +325,7 @@ export const propertyTaxNetherlandsPage = {
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Personal tax questions, returns and property-related tax context." },
     { label: "Real estate agents", href: "/netherlands/services/real-estate-agents/", status: "comingSoon", description: "Buying support and local property-market context." },
     { label: "Property lawyers", href: "/netherlands/services/property-lawyers/", status: "comingSoon", description: "Contract, ownership and dispute context where legal review is needed." },
-    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "comingSoon", description: "Wider planning around ownership costs and cash buffers." },
+    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "live", description: "Wider planning around ownership costs and cash buffers." },
   ] satisfies PropertyTaxNetherlandsLink[],
   serviceSelectionTips: [
     "Use tax advisors for personal tax treatment, not for property inspections or bidding strategy.",

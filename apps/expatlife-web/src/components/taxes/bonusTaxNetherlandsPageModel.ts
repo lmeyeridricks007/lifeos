@@ -366,7 +366,7 @@ export const bonusTaxNetherlandsPage = {
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Payroll tax and expat bonus context." },
     { label: "Payroll services", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Future directory for payroll support." },
     { label: "Expat tax services", href: "/netherlands/services/expat-tax-services/", status: "comingSoon", description: "Future directory for expat tax specialists." },
-    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "comingSoon", description: "Future directory for financial planning support." },
+    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "live", description: "Compare financial advisors for pensions, investments and long-term planning." },
   ] satisfies BonusTaxNetherlandsLink[],
   faq: [
     { q: "Why is my bonus taxed so much?", a: "Dutch payroll often withholds at higher rates on irregular payments through special wage tax logic. The payslip shows withholding — not necessarily your final annual tax rate." },

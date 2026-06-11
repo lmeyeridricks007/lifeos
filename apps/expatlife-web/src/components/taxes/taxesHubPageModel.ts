@@ -287,7 +287,7 @@ export const taxesHubPage = {
     { label: "Business setup services", href: "/netherlands/services/business-registration/", status: "comingSoon", description: "Registration and setup help for entrepreneurs." },
     { label: "Freelance accounting tools", href: "/netherlands/services/freelance-accounting-tools/", status: "comingSoon", description: "Tools for invoices, VAT and administration." },
     { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/", status: "live", description: "Mortgage advice where tax and housing questions meet." },
-    { label: "Financial planners", href: "/netherlands/services/financial-advisors/", status: "comingSoon", description: "Financial planning support for broader money decisions." },
+    { label: "Financial planners", href: "/netherlands/services/financial-advisors/", status: "live", description: "Financial planning support for broader money decisions." },
   ] satisfies TaxesHubLink[],
   relatedGuides: [
     { label: "Taxes After Moving to the Netherlands", href: "/netherlands/taxes/taxes-after-moving-netherlands/" },

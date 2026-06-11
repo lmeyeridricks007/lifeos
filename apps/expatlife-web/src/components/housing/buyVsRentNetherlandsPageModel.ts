@@ -366,7 +366,7 @@ export const buyVsRentNetherlandsPage = {
     { label: "Real estate agents", href: "/netherlands/services/real-estate-agents/", status: "comingSoon", description: "Buying-agent support and bidding strategy." },
     { label: "Rental agencies", href: "/netherlands/services/rental-agencies/", status: "live", description: "Rental search support while you compare cities." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "City orientation, temporary housing and arrival setup." },
-    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "comingSoon", description: "Broader household planning and cash-flow context." },
+    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "live", description: "Broader household planning and cash-flow context." },
   ] satisfies BuyVsRentNetherlandsLink[],
   faq: [
     { q: "Should expats buy or rent in the Netherlands?", a: "It depends on stay horizon, job stability, savings, household plans, city choice and risk tolerance. There is no universal answer." },

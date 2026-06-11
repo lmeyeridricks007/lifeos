@@ -342,7 +342,7 @@ export const pensionNetherlandsExpatsPage = {
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Pension, payroll and cross-border tax context." },
     { label: "Payroll services", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Future directory for payroll support." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Move planning alongside employment packages." },
-    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "comingSoon", description: "Future directory for financial planning support." },
+    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "live", description: "Compare financial advisors for retirement planning and cross-border finances." },
   ] satisfies PensionNetherlandsExpatsLink[],
   faq: [
     {

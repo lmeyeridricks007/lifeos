@@ -324,7 +324,7 @@ export const doubleTaxationNetherlandsPage = {
     { label: "International tax specialists", href: "/netherlands/services/expat-tax-services/", status: "comingSoon", description: "Specialist help for treaty, foreign income and residency questions." },
     { label: "Payroll specialists", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Support for employers and employees with payroll withholding questions." },
     { label: "Immigration lawyers", href: "/netherlands/services/immigration-lawyers/", status: "live", description: "Useful when visa status and work location interact." },
-    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "comingSoon", description: "Broader cross-border financial planning context." },
+    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "live", description: "Broader cross-border financial planning context." },
   ] satisfies DoubleTaxationNetherlandsLink[],
   serviceSelectionTips: [
     "Use tax advisors for filing positions, treaty questions and foreign income reporting.",

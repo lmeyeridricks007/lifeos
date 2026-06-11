@@ -442,7 +442,7 @@ export const buyingHouseNetherlandsPage = {
     { label: "Real estate agents", href: "/netherlands/services/real-estate-agents/", status: "comingSoon", description: "Buyer's and seller's agents for Dutch property search." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Move support including housing orientation." },
     { label: "Property lawyers", href: "/netherlands/services/property-lawyers/", status: "comingSoon", description: "Legal review for purchase contracts and VvE." },
-    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "comingSoon", description: "Financial planning context for major purchases." },
+    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "live", description: "Financial planning context for major purchases." },
   ] satisfies BuyingHouseNetherlandsLink[],
   faqQuickChecks: [
     "At €400,000 plan ~€13,500 kosten koper from savings — separate from the mortgage amount.",

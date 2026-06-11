@@ -1,0 +1,26 @@
+{
+  "id": "vwp-wealth-planning",
+  "name": "VWP Wealth Planning",
+  "tagline": "Structured wealth planning for internationally oriented households in the Netherlands.",
+  "categoryIds": ["services"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Wealth planning", "Retirement planning"],
+  "highlights": [
+    "Wealth planning and retirement projections",
+    "Investment and estate planning discussions",
+    "English-language wealth planning information"
+  ],
+  "cta": {
+    "label": "View VWP Wealth Planning",
+    "href": "https://www.vwp.nl/en/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Confirm licenses, fee model and planning scope directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "VWP Wealth Planning"
+  }
+}

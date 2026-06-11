@@ -191,6 +191,12 @@ export const netherlandsServicesPage: ServicesHubPageData = {
       href: "/netherlands/services/mortgage-advisors/",
       linkLabel: "Compare Mortgage Advisors",
     },
+    {
+      title: "Financial advisors for expats",
+      description: "Compare financial advisors helping internationals with pensions, investments, wealth planning and cross-border financial decisions.",
+      href: "/netherlands/services/financial-advisors/",
+      linkLabel: "Compare Financial Advisors",
+    },
   ],
 
   highlights: NETHERLANDS_FEATURED_HIGHLIGHTS,

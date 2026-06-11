@@ -1,0 +1,26 @@
+{
+  "id": "black-swan-capital-europe",
+  "name": "Black Swan Capital Europe",
+  "tagline": "Financial planning for internationally mobile professionals and expatriates in Europe.",
+  "categoryIds": ["services"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Financial advisor", "Expat-focused"],
+  "highlights": [
+    "Expat financial planning and cross-border complexity",
+    "Retirement, investment and relocation planning context",
+    "English-language advisory positioning"
+  ],
+  "cta": {
+    "label": "View Black Swan Capital Europe",
+    "href": "https://www.blackswancapitaleurope.com/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Verify AFM registration, advisory scope, fee structure and credentials directly with the firm.",
+  "logo": {
+    "src": "",
+    "alt": "Black Swan Capital Europe"
+  }
+}

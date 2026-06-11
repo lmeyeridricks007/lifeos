@@ -1,0 +1,26 @@
+{
+  "id": "finex-wealth-management",
+  "name": "FINEX Wealth Management",
+  "tagline": "Wealth management for international professionals and entrepreneurs in the Netherlands.",
+  "categoryIds": ["services"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Wealth management", "Cross-border"],
+  "highlights": [
+    "Wealth management and investment planning",
+    "Cross-border and internationally mobile client positioning",
+    "Amsterdam and remote meeting options"
+  ],
+  "cta": {
+    "label": "View FINEX Wealth Management",
+    "href": "https://www.finexwm.com/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Verify regulatory status, fee structure and minimum engagement requirements directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "FINEX Wealth Management"
+  }
+}

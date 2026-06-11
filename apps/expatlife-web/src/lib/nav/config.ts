@@ -1089,7 +1089,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/services/mortgage-advisors/",
             "Compare mortgage advisors, broker models, fees and expat document support."
           ),
-          item("Financial advisors", "/netherlands/services/financial-advisors/"),
+          item(
+            "Financial advisors",
+            "/netherlands/services/financial-advisors/",
+            "Compare financial advisors for pensions, investments, wealth planning and cross-border finances."
+          ),
           item("View all services", "/netherlands/services/"),
         ],
       },

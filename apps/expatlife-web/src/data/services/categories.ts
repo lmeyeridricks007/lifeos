@@ -62,6 +62,16 @@ export const NETHERLANDS_SERVICES_CATEGORIES: ServiceCategoryCard[] = [
     group: "money-tax",
     featured: true,
   },
+  {
+    slug: "financial-advisors",
+    name: "Financial Advisors",
+    href: `${BASE}/financial-advisors/`,
+    description: "Compare financial advisors helping expats with pensions, investments, wealth planning, cross-border finances and long-term financial decisions in the Netherlands.",
+    examples: ["Financial planning", "Pensions", "Investments", "Wealth planning"],
+    bestForStage: "Long-term financial planning after relocation",
+    group: "money-tax",
+    featured: true,
+  },
   // ——— Immigration & Legal ———
   {
     slug: "immigration-lawyers",

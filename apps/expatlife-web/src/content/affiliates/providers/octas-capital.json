@@ -1,0 +1,26 @@
+{
+  "id": "octas-capital",
+  "name": "Octas Capital",
+  "tagline": "Wealth management and financial planning for international clients in the Netherlands.",
+  "categoryIds": ["services"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Wealth management", "Financial planning"],
+  "highlights": [
+    "Wealth management and structured financial planning",
+    "Retirement and investment planning conversations",
+    "Amsterdam office and remote consultations"
+  ],
+  "cta": {
+    "label": "View Octas Capital",
+    "href": "https://www.octascapital.nl/",
+    "isAffiliate": false
+  },
+  "disclosure": "Non-affiliate listing. Confirm regulatory status, minimum requirements, fees and service scope directly with the provider.",
+  "logo": {
+    "src": "",
+    "alt": "Octas Capital"
+  }
+}
