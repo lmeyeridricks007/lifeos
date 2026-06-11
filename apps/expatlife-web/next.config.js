@@ -205,6 +205,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/employment-contract-netherlands",
+        destination: "/netherlands/jobs/employment-contract-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/employment-contract-netherlands/",
+        destination: "/netherlands/jobs/employment-contract-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/pension-netherlands",
         destination: "/netherlands/jobs/pension-netherlands-expats/",
         permanent: true,

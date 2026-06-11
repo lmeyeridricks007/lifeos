@@ -21,6 +21,7 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/work/pension-netherlands": "/netherlands/jobs/pension-netherlands-expats",
   "/netherlands/work/holiday-allowance-netherlands": "/netherlands/jobs/holiday-allowance-netherlands",
   "/netherlands/work/finding-jobs-netherlands": "/netherlands/jobs/finding-jobs-netherlands",
+  "/netherlands/work/employment-contract-netherlands": "/netherlands/jobs/employment-contract-netherlands",
   "/netherlands/work/bonus-tax-netherlands": "/netherlands/taxes/bonus-tax-netherlands",
   "/netherlands/taxes/healthcare-allowance": "/netherlands/taxes/healthcare-allowance-netherlands",
   "/netherlands/taxes/rent-allowance": "/netherlands/taxes/rent-allowance-netherlands",

@@ -5,6 +5,7 @@ import { isNavItemActive, isNavItemLinkable } from "./navItemModel";
 
 const HOLIDAY_PATH = "/netherlands/jobs/holiday-allowance-netherlands/";
 const FINDING_JOBS_PATH = "/netherlands/jobs/finding-jobs-netherlands/";
+const EMPLOYMENT_CONTRACT_PATH = "/netherlands/jobs/employment-contract-netherlands/";
 const BONUS_TAX_PATH = "/netherlands/taxes/bonus-tax-netherlands/";
 
 function menuRowsForHref(href: string) {
@@ -57,6 +58,70 @@ describe("finding jobs nav active state", () => {
     expect(item?.navStatus).toBe("live");
     expect(isNavItemLinkable(item!)).toBe(true);
     expect(isNavItemActive(FINDING_JOBS_PATH, item!)).toBe(true);
+  });
+});
+
+describe("employment contract nav active state", () => {
+  it("treats the shipped employment contract guide route as live", () => {
+    expect(getRouteStatus(EMPLOYMENT_CONTRACT_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(EMPLOYMENT_CONTRACT_PATH)).toBe("moving");
+  });
+
+  it("highlights Move for the legacy work href before redirect", () => {
+    expect(getActiveNavKey("/netherlands/work/employment-contract-netherlands/")).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical jobs href", () => {
+    const item = {
+      label: "Employment contracts",
+      href: EMPLOYMENT_CONTRACT_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(EMPLOYMENT_CONTRACT_PATH, item)).toBe(true);
+  });
+
+  it("marks legacy work href active via alias when on the jobs guide", () => {
+    const item = {
+      label: "Employment contract Netherlands",
+      href: "/netherlands/work/employment-contract-netherlands/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(EMPLOYMENT_CONTRACT_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === EMPLOYMENT_CONTRACT_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(EMPLOYMENT_CONTRACT_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === EMPLOYMENT_CONTRACT_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(EMPLOYMENT_CONTRACT_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Employment contracts & rights", () => {
+    const rows = menuRowsForHref(EMPLOYMENT_CONTRACT_PATH);
+
+    expect(rows).toHaveLength(2);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Employment contracts & rights",
+      "moving:Jobs & salaries",
+    ]);
   });
 });
 

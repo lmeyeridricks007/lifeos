@@ -70,7 +70,7 @@ export const CONTRACT_SCANNER_RELATED_GUIDES = [
     description: "Helpful when contract timing, employer action, and work authorization route need clarifying together.",
   },
   {
-    href: `${NL_BASE}/work/employment-contract-netherlands/`,
+    href: `${NL_BASE}/jobs/employment-contract-netherlands/`,
     title: "Employment contract in the Netherlands",
     description: "Context on typical contract structure and what expats often negotiate.",
   },

@@ -171,7 +171,7 @@ export default function EmploymentContractRiskScannerPage() {
             primaryCtaLabel="Start scanning"
             primaryCtaScrollToId="tool-inputs"
             secondaryCtaLabel="Read Dutch employment guide"
-            secondaryCtaHref={`${NL_BASE}/work/employment-contract-netherlands/`}
+            secondaryCtaHref={`${NL_BASE}/jobs/employment-contract-netherlands/`}
             image={{
               src: HERO_IMAGE,
               alt: "Professional reviewing an employment contract at a desk — Dutch expat work tool.",
@@ -273,7 +273,7 @@ export default function EmploymentContractRiskScannerPage() {
             <Link href={`${NL_BASE}/work/tools/`} className="font-medium text-copilot-primary hover:underline">
               Work tools hub
             </Link>
-            <Link href={`${NL_BASE}/work/employment-contract-netherlands/`} className="font-medium text-copilot-primary hover:underline">
+            <Link href={`${NL_BASE}/jobs/employment-contract-netherlands/`} className="font-medium text-copilot-primary hover:underline">
               Employment contract guide
             </Link>
             <Link href={`${NL_BASE}/taxes/tools/`} className="font-medium text-copilot-primary hover:underline">

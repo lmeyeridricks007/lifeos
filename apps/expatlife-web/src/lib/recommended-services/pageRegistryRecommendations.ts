@@ -403,6 +403,69 @@ export function getFindingJobsNetherlandsSupportCardGroups(): {
   };
 }
 
+/** Employment contract guide — visa, tax, relocation, post-sign setup and mortgage discovery. */
+export function getEmploymentContractNetherlandsSupportCardGroups(): {
+  visaPermits: PageRecommendedProviderCard[];
+  taxPayroll: PageRecommendedProviderCard[];
+  relocation: PageRecommendedProviderCard[];
+  setup: PageRecommendedProviderCard[];
+} {
+  return {
+    visaPermits: buildPageRecommendedProviderCards({
+      categories: ["immigration-lawyers", "visa-consultants"],
+      limit: 4,
+      strategy: "round-robin",
+    }),
+    taxPayroll: getThirtyPercentRulingTaxAdvisorCards(),
+    relocation: buildPageRecommendedProviderCards({
+      categories: ["relocation-services", "relocation-agencies"],
+      limit: 4,
+      strategy: "round-robin",
+    }),
+    setup: buildPageRecommendedProviderCards({
+      categories: ["banks", "health-insurance", "housing-platforms"],
+      limit: 6,
+      strategy: "round-robin",
+      append: [INDEPENDER],
+    }),
+  };
+}
+
+/** Mortgage advisers when contract type, probation or visa status may affect borrowing. */
+export function getEmploymentContractMortgageAdvisorCards(): PageRecommendedProviderCard[] {
+  return [
+    {
+      name: "Expat Mortgages",
+      url: "https://expatmortgages.nl/",
+      useFor:
+        "Independent mortgage brokerage for international clients — useful when contract type, probation and visa status affect lender requirements.",
+      partnerSlug: "expat-mortgages",
+      priceRange: "Confirm fees, lender access and scope with the adviser.",
+    },
+    {
+      name: "Viisi Expats",
+      url: "https://www.viisi-expats.nl/",
+      useFor: "Full-process mortgage advice with expat-focused pages — compare how lenders may view your contract and income.",
+      partnerSlug: "viisi-expats",
+      priceRange: "Confirm advisory model and fees before engaging.",
+    },
+    {
+      name: "Hanno",
+      url: "https://www.hanno.nl/expat-mortgages/",
+      useFor: "Digital-first mortgage advice — helpful when you want online consultations alongside contract document checks.",
+      partnerSlug: "hanno",
+      priceRange: "Confirm credentials and pricing directly.",
+    },
+    {
+      name: "Mister Mortgage",
+      url: "https://mistermortgage.nl/",
+      useFor: "Broker-style mortgage support in English — compare process guidance before assuming your contract supports borrowing.",
+      partnerSlug: "mister-mortgage",
+      priceRange: "Confirm broker fees and lender panel.",
+    },
+  ];
+}
+
 /** Banks for salary-net tool shortlist (registry order). */
 export function getDutchSalaryNetBankCards(): PageRecommendedProviderCard[] {
   return buildPageRecommendedProviderCards({

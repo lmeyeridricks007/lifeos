@@ -150,7 +150,7 @@ export const JOB_OFFER_RELATED_GUIDES = [
     description: "How to read offers, total reward, vakantiegeld, and what to verify before you accept.",
   },
   {
-    href: `${NL_BASE}/work/employment-contract-netherlands/`,
+    href: `${NL_BASE}/jobs/employment-contract-netherlands/`,
     title: "Employment contract Netherlands",
     description: "What typically appears in Dutch contracts, fixed-term risk, and where surprises hide.",
   },

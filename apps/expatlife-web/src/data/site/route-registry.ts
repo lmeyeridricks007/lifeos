@@ -326,6 +326,7 @@ const EXTRA_LIVE_PATHS = [
   /** Live App Router guide — holiday allowance (vakantiegeld) for expats (Jobs & salaries cluster). */
   "/netherlands/jobs/holiday-allowance-netherlands/",
   "/netherlands/jobs/finding-jobs-netherlands/",
+  "/netherlands/jobs/employment-contract-netherlands/",
   /** Money pillar tax orientation guide (App Router). */
   "/netherlands/money/tax-guide-for-expats/",
   "/netherlands/money/how-taxes-work-in-the-netherlands/",

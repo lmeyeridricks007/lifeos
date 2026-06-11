@@ -457,6 +457,7 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/pension-netherlands-expats",
   "/netherlands/jobs/holiday-allowance-netherlands",
   "/netherlands/jobs/finding-jobs-netherlands",
+  "/netherlands/jobs/employment-contract-netherlands",
 ];
 
 /** Tax/compensation guides surfaced under Move → More — highlight Move at top level (canonical URL may live under `/taxes/`). */
@@ -787,6 +788,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Dutch pension system for expats: AOW, employer pensions, deductions and portability."
           ),
           item(
+            "Employment contracts",
+            "/netherlands/jobs/employment-contract-netherlands/",
+            "Dutch employment contracts for expats: temporary vs permanent, probation, notice periods and benefits."
+          ),
+          item(
             "Holiday allowance",
             "/netherlands/jobs/holiday-allowance-netherlands/",
             "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
@@ -1054,7 +1060,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Employment contracts & rights",
         items: [
-          item("Employment contract Netherlands", "/netherlands/work/employment-contract-netherlands/"),
+          item("Employment contract Netherlands", "/netherlands/jobs/employment-contract-netherlands/"),
           item("Probation period Netherlands", "/netherlands/work/probation-period-netherlands/"),
           item("Notice period Netherlands", "/netherlands/work/notice-period-netherlands/"),
           item("Employee rights Netherlands", "/netherlands/work/employee-rights-netherlands/"),

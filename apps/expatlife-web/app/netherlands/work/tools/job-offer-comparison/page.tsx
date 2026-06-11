@@ -445,7 +445,7 @@ export default function JobOfferComparisonToolPage() {
                   employment contract risk scanner
                 </Link>{" "}
                 and escalate non-compete, overtime, and repayment clauses to an employment lawyer when the stakes justify it. Our{" "}
-                <Link href={`${NL_BASE}/work/employment-contract-netherlands/`} className="font-semibold text-brand-600 hover:underline">
+                <Link href={`${NL_BASE}/jobs/employment-contract-netherlands/`} className="font-semibold text-brand-600 hover:underline">
                   employment contract Netherlands
                 </Link>{" "}
                 guide explains what typically appears in Dutch paperwork so you know which questions are normal — and which are red flags.
