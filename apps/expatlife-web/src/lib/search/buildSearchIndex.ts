@@ -36,6 +36,7 @@ import { expatSalaryNetherlandsPage } from "@/src/components/jobs/expatSalaryNet
 import { employeeBenefitsNetherlandsPage } from "@/src/components/jobs/employeeBenefitsNetherlandsPageModel";
 import { pensionNetherlandsExpatsPage } from "@/src/components/jobs/pensionNetherlandsExpatsPageModel";
 import { holidayAllowanceNetherlandsPage } from "@/src/components/jobs/holidayAllowanceNetherlandsPageModel";
+import { findingJobsNetherlandsPage } from "@/src/components/jobs/findingJobsNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -811,6 +812,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       employeeBenefitsNetherlandsPage.industryCards.map((card) => `${card.title} ${card.body}`),
       employeeBenefitsNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       employeeBenefitsNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:finding-jobs-netherlands",
+    title: findingJobsNetherlandsPage.hero.pageTitle,
+    href: findingJobsNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: findingJobsNetherlandsPage.seo.description,
+    image: findingJobsNetherlandsPage.hero.image.src,
+    imageAlt: findingJobsNetherlandsPage.hero.image.alt,
+    keywords: [...findingJobsNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      findingJobsNetherlandsPage.hero.pageTitle,
+      findingJobsNetherlandsPage.hero.subtitle,
+      findingJobsNetherlandsPage.seo.description,
+      [...findingJobsNetherlandsPage.seo.keywords],
+      findingJobsNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      findingJobsNetherlandsPage.industryCards.map((card) => `${card.title} ${card.body}`),
+      findingJobsNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      findingJobsNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

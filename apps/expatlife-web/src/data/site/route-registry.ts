@@ -187,7 +187,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/work/contractor-vs-employee-netherlands/": { title: "Contractor vs employee Netherlands", section: "guides" },
   "/netherlands/work/work-culture-netherlands/": { title: "Work culture Netherlands", section: "guides" },
   "/netherlands/work/work-hours-netherlands/": { title: "Work hours Netherlands", section: "guides" },
-  "/netherlands/work/finding-jobs-netherlands/": { title: "Finding jobs Netherlands", section: "guides" },
   "/netherlands/work/job-websites-netherlands/": { title: "Job websites Netherlands", section: "guides" },
   "/netherlands/work/linkedin-jobs-netherlands/": { title: "LinkedIn jobs Netherlands", section: "guides" },
   "/netherlands/work/jobs-in-amsterdam/": { title: "Jobs in Amsterdam", section: "guides" },
@@ -326,6 +325,7 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/pension-netherlands-expats/",
   /** Live App Router guide — holiday allowance (vakantiegeld) for expats (Jobs & salaries cluster). */
   "/netherlands/jobs/holiday-allowance-netherlands/",
+  "/netherlands/jobs/finding-jobs-netherlands/",
   /** Money pillar tax orientation guide (App Router). */
   "/netherlands/money/tax-guide-for-expats/",
   "/netherlands/money/how-taxes-work-in-the-netherlands/",

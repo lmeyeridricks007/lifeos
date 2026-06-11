@@ -3,6 +3,7 @@
 import Link from "next/link";
 import type { AffiliateProvider } from "@/src/lib/affiliates/types";
 import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
+import { partnerSlugForAffiliateProvider } from "@/lib/analytics/tracked-outbound";
 import { ProviderLogo } from "./ProviderLogo";
 
 const ctaButtonClass =
@@ -64,6 +65,7 @@ function AffiliateCard({ provider, reason }: CardItem) {
                 target="_blank"
                 rel={provider.cta.isAffiliate ? "sponsored noopener noreferrer" : "noopener noreferrer"}
                 linkType="provider"
+                partnerSlug={partnerSlugForAffiliateProvider(provider)}
                 linkText={provider.cta.label}
                 className={ctaButtonClass}
               >

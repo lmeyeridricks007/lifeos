@@ -195,6 +195,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/finding-jobs-netherlands",
+        destination: "/netherlands/jobs/finding-jobs-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/finding-jobs-netherlands/",
+        destination: "/netherlands/jobs/finding-jobs-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/pension-netherlands",
         destination: "/netherlands/jobs/pension-netherlands-expats/",
         permanent: true,

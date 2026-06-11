@@ -5,8 +5,9 @@
 
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import path from "node:path";
-import type { GuideSectionServiceResolved } from "@/src/lib/guides/types";
 import { getRecommendedGuideServicesFromRegistry } from "@/src/lib/guides/registryRecommendedServices";
+import type { GuideSectionServiceResolved } from "@/src/lib/guides/types";
+import { partnerSlugFromProviderUrl } from "@/lib/analytics/tracked-outbound";
 import type { AffiliateProvider, AffiliateCategory, AffiliatePlacement } from "./types";
 
 const CONTENT_ROOT = path.join(process.cwd(), "src", "content", "affiliates");
@@ -26,6 +27,16 @@ function registryGuideServiceToAffiliateProvider(
   id: string,
   categoryIds: string[]
 ): AffiliateProvider {
+  const hostSlug = partnerSlugFromProviderUrl(resolved.url);
+  const curated = hostSlug ? loadProvider(hostSlug) : null;
+  if (curated && providerMatchesCountry(curated, "netherlands", undefined)) {
+    return {
+      ...curated,
+      categoryIds,
+      tagline: resolved.description || curated.tagline,
+    };
+  }
+
   const hasLogo = Boolean(resolved.logo?.src?.trim());
   return {
     id,
@@ -131,6 +142,24 @@ export function loadPlacementWithProviders(
   if (!placement) return null;
 
   const items: Array<{ provider: AffiliateProvider; reason: string; meta?: Record<string, string> }> = [];
+  const seenProviderIds = new Set<string>();
+
+  const pushItem = (entry: { provider: AffiliateProvider; reason: string; meta?: Record<string, string> }) => {
+    if (seenProviderIds.has(entry.provider.id)) return;
+    seenProviderIds.add(entry.provider.id);
+    items.push(entry);
+  };
+
+  for (const item of placement.items) {
+    const provider = loadProvider(item.providerId);
+    if (!provider) continue;
+    if (!providerMatchesCountry(provider, destinationCountry, originCountry)) continue;
+    pushItem({
+      provider,
+      reason: item.reason,
+      meta: item.meta,
+    });
+  }
 
   if (placement.registryProviders?.categories?.length) {
     const rp = placement.registryProviders;
@@ -143,19 +172,8 @@ export function loadPlacementWithProviders(
     resolved.forEach((s, i) => {
       const provider = registryGuideServiceToAffiliateProvider(s, stableRegistryProviderId(s.url, i), catIds);
       if (!providerMatchesCountry(provider, destinationCountry, originCountry)) return;
-      items.push({ provider, reason: "", meta: undefined });
+      pushItem({ provider, reason: "", meta: undefined });
     });
-  } else {
-    for (const item of placement.items) {
-      const provider = loadProvider(item.providerId);
-      if (!provider) continue;
-      if (!providerMatchesCountry(provider, destinationCountry, originCountry)) continue;
-      items.push({
-        provider,
-        reason: item.reason,
-        meta: item.meta,
-      });
-    }
   }
 
   return { placement, items };

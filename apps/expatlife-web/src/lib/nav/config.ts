@@ -3,7 +3,7 @@
  * Rollback reference: `config.pre-phase1.ts` + `types.pre-phase1.ts`.
  */
 import type { CountryOption, MegaMenu, NavItem, NavSection, TopNavEntry, TopNavKey } from "./types";
-import { orderMegaMenuSectionItems, sortNavItemsForDisplay } from "./navItemModel";
+import { orderMegaMenuSectionItems, resolveNavActivePath, sortNavItemsForDisplay } from "./navItemModel";
 import { getDomainFeaturedTools, getTopLevelToolsMenuGroups } from "@/src/lib/tools/getFeaturedTools";
 import type { ToolRecord } from "@/src/lib/tools/loadToolRegistry";
 import { getToolCategoryById, loadToolRegistry } from "@/src/lib/tools/loadToolRegistry";
@@ -456,6 +456,7 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/employee-benefits-netherlands",
   "/netherlands/jobs/pension-netherlands-expats",
   "/netherlands/jobs/holiday-allowance-netherlands",
+  "/netherlands/jobs/finding-jobs-netherlands",
 ];
 
 /** Tax/compensation guides surfaced under Move → More — highlight Move at top level (canonical URL may live under `/taxes/`). */
@@ -618,50 +619,51 @@ const CITY_HUB_PREFIXES = [
 /** Returns which top nav key is active for the current path (for trigger highlighting). */
 export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (!pathname || pathname === "/") return null;
+  const path = resolveNavActivePath(pathname);
 
   if (
-    pathname.startsWith("/netherlands/tools") ||
-    pathname.startsWith("/tools") ||
-    pathname.startsWith("/netherlands/housing/tools")
+    path.startsWith("/netherlands/tools") ||
+    path.startsWith("/tools") ||
+    path.startsWith("/netherlands/housing/tools")
   ) {
     return "tools";
   }
 
-  if (pathname.startsWith("/netherlands/services")) return "services";
+  if (path.startsWith("/netherlands/services")) return "services";
 
-  if (pathname.startsWith("/netherlands/cities")) return "cities";
+  if (path.startsWith("/netherlands/cities")) return "cities";
 
-  if (CITY_HUB_PREFIXES.some((pre) => pathname === pre || pathname.startsWith(`${pre}/`))) return "cities";
+  if (CITY_HUB_PREFIXES.some((pre) => path === pre || path.startsWith(`${pre}/`))) return "cities";
 
-  if (isJobsSalaryGuidePath(pathname)) return "moving";
+  if (isJobsSalaryGuidePath(path)) return "moving";
 
-  if (isLivingHousingGuidePath(pathname)) return "living";
+  if (isLivingHousingGuidePath(path)) return "living";
 
-  if (isMoveTaxCompensationGuidePath(pathname)) return "moving";
+  if (isMoveTaxCompensationGuidePath(path)) return "moving";
 
-  if (pathname.startsWith("/netherlands/money") || pathname.startsWith("/netherlands/taxes") || pathname.startsWith("/netherlands/jobs")) {
+  if (path.startsWith("/netherlands/money") || path.startsWith("/netherlands/taxes") || path.startsWith("/netherlands/jobs")) {
     return "money";
   }
 
   if (
-    pathname === "/netherlands/family/tools/childcare-cost-estimator" ||
-    pathname.startsWith("/netherlands/family/tools/childcare-cost-estimator/")
+    path === "/netherlands/family/tools/childcare-cost-estimator" ||
+    path.startsWith("/netherlands/family/tools/childcare-cost-estimator/")
   ) {
     return "money";
   }
 
-  if (pathname.startsWith("/netherlands/work")) return getWorkClusterNavKey(pathname);
+  if (path.startsWith("/netherlands/work")) return getWorkClusterNavKey(path);
 
-  if (pathname.startsWith("/netherlands/living")) return "living";
+  if (path.startsWith("/netherlands/living")) return "living";
 
-  const seg1 = pathname.split("/").filter(Boolean)[1];
+  const seg1 = path.split("/").filter(Boolean)[1];
   if (seg1 && HOUSING_GUIDE_FIRST_SEGMENTS.has(seg1)) return "living";
 
-  if (isCulturePillarPath(pathname)) return "culture";
+  if (isCulturePillarPath(path)) return "culture";
 
-  if (isStartHerePath(pathname)) return "moving";
+  if (isStartHerePath(path)) return "moving";
 
-  if (isMovingPillarPath(pathname)) return "moving";
+  if (isMovingPillarPath(path)) return "moving";
 
   return null;
 }
@@ -754,6 +756,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Jobs & salaries",
         items: [
+          item(
+            "Finding jobs in the Netherlands",
+            "/netherlands/jobs/finding-jobs-netherlands/",
+            "How expats find work: Dutch job market, English roles, recruiters, visa sponsorship and city demand."
+          ),
           item(
             "Salary negotiation",
             "/netherlands/jobs/salary-negotiation-netherlands/",
@@ -1034,7 +1041,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Gross vs net salary Netherlands", "/netherlands/taxes/gross-vs-net-salary/"),
           item("Payroll tax Netherlands", "/netherlands/taxes/payroll-tax-netherlands/"),
           item("Average salary Netherlands", "/netherlands/taxes/average-salary-netherlands/"),
-          item("Finding jobs Netherlands", "/netherlands/work/finding-jobs-netherlands/"),
+          item("Finding jobs Netherlands", "/netherlands/jobs/finding-jobs-netherlands/"),
           item("Job websites Netherlands", "/netherlands/work/job-websites-netherlands/"),
           item("LinkedIn jobs Netherlands", "/netherlands/work/linkedin-jobs-netherlands/"),
           item("Jobs in Amsterdam", "/netherlands/work/jobs-in-amsterdam/"),

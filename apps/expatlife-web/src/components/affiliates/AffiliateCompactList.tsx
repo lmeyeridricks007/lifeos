@@ -1,4 +1,8 @@
+"use client";
+
 import type { AffiliateProvider } from "@/src/lib/affiliates/types";
+import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
+import { partnerSlugForAffiliateProvider } from "@/lib/analytics/tracked-outbound";
 import { cn } from "@/lib/cn";
 import { ProviderLogo } from "./ProviderLogo";
 
@@ -46,10 +50,13 @@ export function AffiliateCompactList({ items, variant = "default" }: Props) {
             >
               {item.reason}
             </p>
-            <a
+            <TrackedExternalLink
               href={item.provider.cta.href}
               target="_blank"
               rel="sponsored noopener noreferrer"
+              linkType="provider"
+              partnerSlug={partnerSlugForAffiliateProvider(item.provider)}
+              linkText={item.provider.cta.label}
               className={cn(
                 "mt-2 inline-block whitespace-nowrap rounded-xl px-2.5 py-1.5 text-xs font-semibold transition",
                 variant === "copilot"
@@ -59,7 +66,7 @@ export function AffiliateCompactList({ items, variant = "default" }: Props) {
               title={item.provider.cta.label}
             >
               View <span aria-hidden>→</span>
-            </a>
+            </TrackedExternalLink>
           </div>
         </li>
       ))}

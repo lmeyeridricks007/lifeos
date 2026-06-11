@@ -20,6 +20,7 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/work/employee-benefits-netherlands": "/netherlands/jobs/employee-benefits-netherlands",
   "/netherlands/work/pension-netherlands": "/netherlands/jobs/pension-netherlands-expats",
   "/netherlands/work/holiday-allowance-netherlands": "/netherlands/jobs/holiday-allowance-netherlands",
+  "/netherlands/work/finding-jobs-netherlands": "/netherlands/jobs/finding-jobs-netherlands",
   "/netherlands/work/bonus-tax-netherlands": "/netherlands/taxes/bonus-tax-netherlands",
   "/netherlands/taxes/healthcare-allowance": "/netherlands/taxes/healthcare-allowance-netherlands",
   "/netherlands/taxes/rent-allowance": "/netherlands/taxes/rent-allowance-netherlands",
@@ -32,8 +33,10 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/taxes/expat-taxes-netherlands": "/netherlands/money/expat-taxes-netherlands",
 };
 
-function resolveNavActivePath(path: string): string {
-  return NAV_ACTIVE_HREF_ALIASES[pathKey(path)] ?? path;
+/** Normalize pathname/href for active-state checks (legacy 301 sources → canonical guides). */
+export function resolveNavActivePath(path: string): string {
+  const normalized = pathKey(path);
+  return NAV_ACTIVE_HREF_ALIASES[normalized] ?? normalized;
 }
 
 /** Pillar hub links: highlight only on the hub URL, not every nested guide beneath it. */

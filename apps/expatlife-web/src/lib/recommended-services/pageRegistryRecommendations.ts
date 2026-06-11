@@ -27,6 +27,8 @@ export type PageRecommendedProviderCard = {
   logo?: { src: string; alt: string };
   /** Cost / pricing note when the layout shows a second line */
   priceRange?: string;
+  /** Stable slug for referral UTMs (`utm_campaign=reloc-{slug}`). */
+  partnerSlug?: string;
 };
 
 const INDEPENDER: PageRecommendedProviderCard = {
@@ -35,6 +37,7 @@ const INDEPENDER: PageRecommendedProviderCard = {
   useFor: "Compare Dutch basic health and other insurance when you are choosing a policy.",
   logo: { src: "/images/affiliates/logos/independer.svg", alt: "Independer logo" },
   priceRange: "Free comparison; insurer premiums vary.",
+  partnerSlug: "independer",
 };
 
 function fromResolved(s: GuideSectionServiceResolved): PageRecommendedProviderCard {
@@ -44,6 +47,7 @@ function fromResolved(s: GuideSectionServiceResolved): PageRecommendedProviderCa
     useFor: s.description,
     logo: s.logo,
     priceRange: s.indicativeCost,
+    partnerSlug: s.partnerSlug,
   };
 }
 
@@ -372,6 +376,31 @@ export function getDutchSalaryNetRelocationConsultantCards(): PageRecommendedPro
     limit: 4,
     strategy: "sequential",
   });
+}
+
+/** Job search guide — grouped registry cards for visa, relocation and post-offer setup. */
+export function getFindingJobsNetherlandsSupportCardGroups(): {
+  visaPermits: PageRecommendedProviderCard[];
+  relocation: PageRecommendedProviderCard[];
+  setup: PageRecommendedProviderCard[];
+} {
+  return {
+    visaPermits: buildPageRecommendedProviderCards({
+      categories: ["immigration-lawyers", "visa-consultants"],
+      limit: 4,
+      strategy: "round-robin",
+    }),
+    relocation: buildPageRecommendedProviderCards({
+      categories: ["relocation-services", "relocation-agencies"],
+      limit: 4,
+      strategy: "round-robin",
+    }),
+    setup: buildPageRecommendedProviderCards({
+      categories: ["banks", "health-insurance", "housing-platforms"],
+      limit: 6,
+      strategy: "round-robin",
+    }),
+  };
 }
 
 /** Banks for salary-net tool shortlist (registry order). */

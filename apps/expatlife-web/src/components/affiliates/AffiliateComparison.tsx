@@ -1,5 +1,9 @@
+"use client";
+
 import type { AffiliateProvider } from "@/src/lib/affiliates/types";
 import type { ComparisonField } from "@/src/lib/affiliates/types";
+import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
+import { partnerSlugForAffiliateProvider } from "@/lib/analytics/tracked-outbound";
 import { ProviderLogo } from "./ProviderLogo";
 import {
   ContentTable,
@@ -42,14 +46,17 @@ function ComparisonRow({
         </ContentTableCell>
       ))}
       <ContentTableCell className="text-right">
-        <a
+        <TrackedExternalLink
           href={item.provider.cta.href}
           target="_blank"
           rel="sponsored noopener noreferrer"
+          linkType="provider"
+          partnerSlug={partnerSlugForAffiliateProvider(item.provider)}
+          linkText={item.provider.cta.label}
           className="inline-flex rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-900 hover:bg-slate-50"
         >
           {item.provider.cta.label}
-        </a>
+        </TrackedExternalLink>
       </ContentTableCell>
     </ContentTableRow>
   );

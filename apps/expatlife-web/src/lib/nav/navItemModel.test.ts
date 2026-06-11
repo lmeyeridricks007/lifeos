@@ -4,6 +4,7 @@ import { getRouteStatus } from "@/src/lib/routes/routeStatus";
 import { isNavItemActive, isNavItemLinkable } from "./navItemModel";
 
 const HOLIDAY_PATH = "/netherlands/jobs/holiday-allowance-netherlands/";
+const FINDING_JOBS_PATH = "/netherlands/jobs/finding-jobs-netherlands/";
 const BONUS_TAX_PATH = "/netherlands/taxes/bonus-tax-netherlands/";
 
 function menuRowsForHref(href: string) {
@@ -15,6 +16,49 @@ function menuRowsForHref(href: string) {
     )
   );
 }
+
+describe("finding jobs nav active state", () => {
+  it("treats the shipped finding jobs guide route as live", () => {
+    expect(getRouteStatus(FINDING_JOBS_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(FINDING_JOBS_PATH)).toBe("moving");
+  });
+
+  it("highlights Move for the legacy work href before redirect", () => {
+    expect(getActiveNavKey("/netherlands/work/finding-jobs-netherlands/")).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical jobs href", () => {
+    const item = {
+      label: "Finding jobs in the Netherlands",
+      href: FINDING_JOBS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(FINDING_JOBS_PATH, item)).toBe(true);
+  });
+
+  it("marks legacy work href active via alias when on the jobs guide", () => {
+    const item = {
+      label: "Finding jobs Netherlands",
+      href: "/netherlands/work/finding-jobs-netherlands/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(FINDING_JOBS_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === FINDING_JOBS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(FINDING_JOBS_PATH, item!)).toBe(true);
+  });
+});
 
 describe("holiday allowance nav active state", () => {
   it("highlights Move (not Money) for the jobs guide path", () => {

@@ -127,6 +127,7 @@ function HeroImage() {
         width={1600}
         height={900}
         priority
+        unoptimized
         sizes="(min-width: 1024px) 42vw, 100vw"
         className="h-full w-full object-cover"
       />
@@ -175,7 +176,7 @@ function VisualFigure({ visual, className }: { visual: (typeof page.visuals)[key
       <div className={cn("h-1.5", movingNlSignatureGradientClass)} aria-hidden />
       <div className="pointer-events-none absolute -right-20 -top-20 h-44 w-44 rounded-full bg-cyan-200/25 blur-3xl" aria-hidden />
       <div className="relative aspect-[4/3] w-full min-h-[280px] bg-gradient-to-br from-slate-50 via-white to-copilot-bg-soft sm:min-h-[360px] lg:min-h-[480px] xl:min-h-[560px]">
-        <Image src={visual.src} alt={visual.alt} fill sizes="(min-width: 1280px) 1400px, 100vw" className="object-contain p-1 drop-shadow-sm sm:p-2" />
+        <Image src={visual.src} alt={visual.alt} fill unoptimized sizes="(min-width: 1280px) 1400px, 100vw" className="object-contain p-1 drop-shadow-sm sm:p-2" />
       </div>
       <figcaption className="border-t border-slate-200/80 bg-slate-50/90 px-4 py-3 text-sm leading-relaxed text-foreground-muted sm:px-5">
         {visual.caption}

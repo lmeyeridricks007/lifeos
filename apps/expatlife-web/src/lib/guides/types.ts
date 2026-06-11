@@ -61,6 +61,7 @@ export type GuideSectionServiceResolved = {
   indicativeCost?: string;
   reason?: string;
   logo?: { src: string; alt: string };
+  partnerSlug?: string;
 };
 
 /**

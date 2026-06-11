@@ -354,6 +354,7 @@ export const expatSalaryNetherlandsPage = {
     { label: "Employee Benefits Guide", href: "/netherlands/jobs/employee-benefits-netherlands/", status: "live", description: "Pension, allowance, leave and expat packages." },
   ] satisfies ExpatSalaryNetherlandsLink[],
   relatedGuides: [
+    { label: "Finding Jobs in the Netherlands", href: "/netherlands/jobs/finding-jobs-netherlands/", status: "live", description: "Job market, visa sponsorship context, recruiters and Dutch hiring culture for expats." },
     { label: "Moving to the Netherlands", href: MOVING_HUB_PATH, status: "live", description: "Relocation planning with employment context." },
     { label: "Netherlands Taxes Guide", href: TAXES_HUB_PATH, status: "live", description: "Salary and tax hub for expats." },
     { label: "Highly Skilled Migrant Visa", href: HSM_VISA_PATH, status: "live", description: "Visa route context alongside salary thresholds." },

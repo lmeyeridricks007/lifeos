@@ -47,6 +47,7 @@ function registryRowToGuideService(row: CompanyRegistryRow): GuideSectionService
       description: row.shortDescription,
       url: row.externalUrl ?? row.href,
       indicativeCost: row.typicalCost ?? row.priceNote,
+      partnerSlug: row.slug,
       logo: row.logo
         ? {
             src: normalizeExternalProviderLogoSrc(row.logo.src),
@@ -62,6 +63,7 @@ function registryRowToGuideService(row: CompanyRegistryRow): GuideSectionService
       description: row.shortDescription,
       url,
       indicativeCost: row.typicalCost,
+      partnerSlug: row.slug,
       logo: row.logoUrl
         ? { src: normalizeExternalProviderLogoSrc(row.logoUrl), alt: row.name }
         : undefined,
@@ -74,6 +76,7 @@ function registryRowToGuideService(row: CompanyRegistryRow): GuideSectionService
       description: row.shortDescription,
       url: row.providerUrl,
       indicativeCost: row.feeNote,
+      partnerSlug: row.slug,
       logo: logoSrc
         ? { src: normalizeExternalProviderLogoSrc(logoSrc), alt: row.name }
         : undefined,
@@ -98,6 +101,7 @@ function registryRowToGuideService(row: CompanyRegistryRow): GuideSectionService
       description: row.shortDescription,
       url,
       indicativeCost: row.feeNote,
+      partnerSlug: row.slug,
       logo,
     };
   }
@@ -108,6 +112,7 @@ function registryRowToGuideService(row: CompanyRegistryRow): GuideSectionService
       description: row.shortDescription ?? "Official RVO-listed startup facilitator.",
       url,
       indicativeCost: row.typicalCost,
+      partnerSlug: row.slug,
     };
   }
   return {
