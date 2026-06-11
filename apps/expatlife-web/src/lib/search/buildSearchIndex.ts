@@ -38,6 +38,7 @@ import { pensionNetherlandsExpatsPage } from "@/src/components/jobs/pensionNethe
 import { holidayAllowanceNetherlandsPage } from "@/src/components/jobs/holidayAllowanceNetherlandsPageModel";
 import { findingJobsNetherlandsPage } from "@/src/components/jobs/findingJobsNetherlandsPageModel";
 import { employmentContractNetherlandsPage } from "@/src/components/jobs/employmentContractNetherlandsPageModel";
+import { probationPeriodNetherlandsPage } from "@/src/components/jobs/probationPeriodNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -859,6 +860,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       employmentContractNetherlandsPage.contractTypeCards.map((card) => `${card.title} ${card.body}`),
       employmentContractNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       employmentContractNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:probation-period-netherlands",
+    title: probationPeriodNetherlandsPage.hero.pageTitle,
+    href: probationPeriodNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: probationPeriodNetherlandsPage.seo.description,
+    image: probationPeriodNetherlandsPage.hero.image.src,
+    imageAlt: probationPeriodNetherlandsPage.hero.image.alt,
+    keywords: [...probationPeriodNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      probationPeriodNetherlandsPage.hero.pageTitle,
+      probationPeriodNetherlandsPage.hero.subtitle,
+      probationPeriodNetherlandsPage.seo.description,
+      [...probationPeriodNetherlandsPage.seo.keywords],
+      probationPeriodNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      probationPeriodNetherlandsPage.mythCards.map((card) => `${card.title} ${card.body}`),
+      probationPeriodNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      probationPeriodNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

@@ -638,6 +638,7 @@ export const employmentContractNetherlandsPage = {
   officialSourcesNote:
     "Employment law, visa sponsorship requirements and workplace regulations can change over time. Always verify current requirements through official resources.",
   relatedGuides: [
+    { label: "Probation Period Netherlands", href: "/netherlands/jobs/probation-period-netherlands/", status: "live", description: "Deep dive on proeftijd expectations during onboarding." },
     { label: "Finding Jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Job search before the contract stage." },
     { label: "Expat Salary Netherlands", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Compare offer lines against market benchmarks." },
     { label: "Net Salary Netherlands", href: NET_SALARY_NETHERLANDS_PATH, status: "live", description: "Estimate take-home pay from gross contract salary." },

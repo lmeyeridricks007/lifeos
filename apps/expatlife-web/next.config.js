@@ -215,6 +215,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/probation-period-netherlands",
+        destination: "/netherlands/jobs/probation-period-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/probation-period-netherlands/",
+        destination: "/netherlands/jobs/probation-period-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/pension-netherlands",
         destination: "/netherlands/jobs/pension-netherlands-expats/",
         permanent: true,

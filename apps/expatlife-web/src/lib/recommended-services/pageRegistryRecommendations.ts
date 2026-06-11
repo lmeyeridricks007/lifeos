@@ -431,6 +431,16 @@ export function getEmploymentContractNetherlandsSupportCardGroups(): {
   };
 }
 
+/** Probation guide — same discovery groups as employment contract (visa, tax, relocation, setup). */
+export function getProbationPeriodNetherlandsSupportCardGroups(): {
+  visaPermits: PageRecommendedProviderCard[];
+  taxPayroll: PageRecommendedProviderCard[];
+  relocation: PageRecommendedProviderCard[];
+  setup: PageRecommendedProviderCard[];
+} {
+  return getEmploymentContractNetherlandsSupportCardGroups();
+}
+
 /** Mortgage advisers when contract type, probation or visa status may affect borrowing. */
 export function getEmploymentContractMortgageAdvisorCards(): PageRecommendedProviderCard[] {
   return [
@@ -633,12 +643,14 @@ export function getThirtyPercentRulingTaxAdvisorCards(): PageRecommendedProvider
       url: "https://www.blueumbrella.nl/",
       useFor: "Dutch tax filing and expat-focused support — useful for ruling-related questions, payroll context, and annual returns.",
       priceRange: "Paid services; confirm pricing for your case.",
+      partnerSlug: "blue-umbrella",
     },
     {
       name: "TaxSavers",
       url: "https://www.taxsavers.nl/",
       useFor: "Tax returns and advice aimed at internationals; helpful when you want hands-on filing or a second opinion on ruling paperwork.",
       priceRange: "Paid services; check current rates.",
+      partnerSlug: "taxsavers",
     },
     {
       name: "Expatax",

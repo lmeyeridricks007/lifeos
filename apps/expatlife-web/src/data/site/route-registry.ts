@@ -327,6 +327,7 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/holiday-allowance-netherlands/",
   "/netherlands/jobs/finding-jobs-netherlands/",
   "/netherlands/jobs/employment-contract-netherlands/",
+  "/netherlands/jobs/probation-period-netherlands/",
   /** Money pillar tax orientation guide (App Router). */
   "/netherlands/money/tax-guide-for-expats/",
   "/netherlands/money/how-taxes-work-in-the-netherlands/",
@@ -351,6 +352,10 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/moving/resigning-job-netherlands/",
   /** Layoffs guide (App Router). Keep live so mega menu / `filterNavItem` never surface it as “Soon”. */
   "/netherlands/moving/layoffs-netherlands/",
+  /** Legacy Work-cluster URL; 301 → `/netherlands/jobs/employment-contract-netherlands/`. */
+  "/netherlands/work/employment-contract-netherlands/",
+  /** Legacy Work-cluster URL; 301 → `/netherlands/jobs/probation-period-netherlands/`. */
+  "/netherlands/work/probation-period-netherlands/",
   /** Legacy Work-cluster URL; 301 → Move guide — must not surface as “coming soon” in nav or link helpers. */
   "/netherlands/work/changing-jobs-netherlands/",
   /** Legacy Work-cluster URL; 301 → Move guide. */
