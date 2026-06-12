@@ -431,6 +431,16 @@ export function getEmploymentContractNetherlandsSupportCardGroups(): {
   };
 }
 
+/** Notice period guide — visa, tax, relocation, setup and mortgage discovery. */
+export function getNoticePeriodNetherlandsSupportCardGroups(): {
+  visaPermits: PageRecommendedProviderCard[];
+  taxPayroll: PageRecommendedProviderCard[];
+  relocation: PageRecommendedProviderCard[];
+  setup: PageRecommendedProviderCard[];
+} {
+  return getEmploymentContractNetherlandsSupportCardGroups();
+}
+
 /** Probation guide — same discovery groups as employment contract (visa, tax, relocation, setup). */
 export function getProbationPeriodNetherlandsSupportCardGroups(): {
   visaPermits: PageRecommendedProviderCard[];

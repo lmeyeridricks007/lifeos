@@ -189,6 +189,70 @@ describe("probation period nav active state", () => {
   });
 });
 
+describe("notice period nav active state", () => {
+  const NOTICE_PATH = "/netherlands/jobs/notice-period-netherlands/";
+
+  it("treats the shipped notice period guide route as live", () => {
+    expect(getRouteStatus(NOTICE_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(NOTICE_PATH)).toBe("moving");
+  });
+
+  it("highlights Move for the legacy work href before redirect", () => {
+    expect(getActiveNavKey("/netherlands/work/notice-period-netherlands/")).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical jobs href", () => {
+    const item = {
+      label: "Notice period",
+      href: NOTICE_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(NOTICE_PATH, item)).toBe(true);
+  });
+
+  it("marks legacy work href active via alias when on the jobs guide", () => {
+    const item = {
+      label: "Notice period Netherlands",
+      href: "/netherlands/work/notice-period-netherlands/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(NOTICE_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === NOTICE_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(NOTICE_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === NOTICE_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(NOTICE_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Employment contracts & rights", () => {
+    const rows = menuRowsForHref(NOTICE_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Employment contracts & rights",
+      "moving:Jobs & salaries",
+    ]);
+  });
+});
+
 describe("holiday allowance nav active state", () => {
   it("highlights Move (not Money) for the jobs guide path", () => {
     expect(getActiveNavKey(HOLIDAY_PATH)).toBe("moving");

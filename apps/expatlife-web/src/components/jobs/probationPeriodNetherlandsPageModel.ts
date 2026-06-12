@@ -543,6 +543,7 @@ export const probationPeriodNetherlandsPage = {
   ] satisfies ProbationConversationPrompt[],
   relatedWorkGuides: [
     { label: "Employment Contracts Netherlands", href: EMPLOYMENT_CONTRACT_NETHERLANDS_PATH, status: "live", description: "How proeftijd fits into contract duration, notice and salary clauses." },
+    { label: "Notice Period Netherlands", href: "/netherlands/jobs/notice-period-netherlands/", status: "live", description: "How notice periods work when employment ends — separate from proeftijd." },
     { label: "Finding Jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Job search context before you reach probation discussions." },
     { label: "Expat Salary Netherlands", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Salary benchmarks to compare against your contract during onboarding." },
     { label: "Employee Benefits Netherlands", href: EMPLOYEE_BENEFITS_NETHERLANDS_PATH, status: "live", description: "Benefits enrolment often happens during early employment." },
@@ -598,6 +599,7 @@ export const probationPeriodNetherlandsPage = {
     "Employment rules, immigration requirements and contract regulations can change over time. Always verify current requirements through official resources.",
   relatedGuides: [
     { label: "Employment Contracts Netherlands", href: EMPLOYMENT_CONTRACT_NETHERLANDS_PATH, status: "live", description: "Read proeftijd alongside contract type, notice and salary clauses." },
+    { label: "Notice Period Netherlands", href: "/netherlands/jobs/notice-period-netherlands/", status: "live", description: "Resignation and job-change timing — separate from proeftijd planning." },
     { label: "Finding Jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Job search before the contract and probation stage." },
     { label: "Expat Salary Netherlands", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Compare offer lines during onboarding." },
     { label: "Mortgages for Expats", href: MORTGAGES_NETHERLANDS_EXPATS_PATH, status: "live", description: "How employment stability affects borrowing conversations." },

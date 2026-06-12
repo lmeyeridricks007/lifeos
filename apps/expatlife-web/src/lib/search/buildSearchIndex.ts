@@ -39,6 +39,7 @@ import { holidayAllowanceNetherlandsPage } from "@/src/components/jobs/holidayAl
 import { findingJobsNetherlandsPage } from "@/src/components/jobs/findingJobsNetherlandsPageModel";
 import { employmentContractNetherlandsPage } from "@/src/components/jobs/employmentContractNetherlandsPageModel";
 import { probationPeriodNetherlandsPage } from "@/src/components/jobs/probationPeriodNetherlandsPageModel";
+import { noticePeriodNetherlandsPage } from "@/src/components/jobs/noticePeriodNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -883,6 +884,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       probationPeriodNetherlandsPage.mythCards.map((card) => `${card.title} ${card.body}`),
       probationPeriodNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       probationPeriodNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:notice-period-netherlands",
+    title: noticePeriodNetherlandsPage.hero.pageTitle,
+    href: noticePeriodNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: noticePeriodNetherlandsPage.seo.description,
+    image: noticePeriodNetherlandsPage.hero.image.src,
+    imageAlt: noticePeriodNetherlandsPage.hero.image.alt,
+    keywords: [...noticePeriodNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      noticePeriodNetherlandsPage.hero.pageTitle,
+      noticePeriodNetherlandsPage.hero.subtitle,
+      noticePeriodNetherlandsPage.seo.description,
+      [...noticePeriodNetherlandsPage.seo.keywords],
+      noticePeriodNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      noticePeriodNetherlandsPage.mythCards.map((card) => `${card.title} ${card.body}`),
+      noticePeriodNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      noticePeriodNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

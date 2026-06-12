@@ -225,6 +225,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/notice-period-netherlands",
+        destination: "/netherlands/jobs/notice-period-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/notice-period-netherlands/",
+        destination: "/netherlands/jobs/notice-period-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/pension-netherlands",
         destination: "/netherlands/jobs/pension-netherlands-expats/",
         permanent: true,
