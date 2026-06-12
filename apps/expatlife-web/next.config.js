@@ -235,6 +235,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/employee-rights-netherlands",
+        destination: "/netherlands/jobs/employee-rights-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/employee-rights-netherlands/",
+        destination: "/netherlands/jobs/employee-rights-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/pension-netherlands",
         destination: "/netherlands/jobs/pension-netherlands-expats/",
         permanent: true,

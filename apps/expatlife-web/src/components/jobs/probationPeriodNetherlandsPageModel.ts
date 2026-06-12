@@ -547,6 +547,7 @@ export const probationPeriodNetherlandsPage = {
     { label: "Finding Jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Job search context before you reach probation discussions." },
     { label: "Expat Salary Netherlands", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Salary benchmarks to compare against your contract during onboarding." },
     { label: "Employee Benefits Netherlands", href: EMPLOYEE_BENEFITS_NETHERLANDS_PATH, status: "live", description: "Benefits enrolment often happens during early employment." },
+    { label: "Employee Rights Netherlands", href: "/netherlands/jobs/employee-rights-netherlands/", status: "live", description: "Workplace protections, leave and sick pay during and after proeftijd." },
     { label: "Highly Skilled Migrant Guide", href: HSM_VISA_PATH, status: "live", description: "Permit context when probation overlaps with sponsored employment." },
   ] satisfies ProbationPeriodLink[],
   serviceCategories: [

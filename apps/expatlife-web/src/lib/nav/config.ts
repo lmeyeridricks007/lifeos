@@ -460,6 +460,7 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/employment-contract-netherlands",
   "/netherlands/jobs/probation-period-netherlands",
   "/netherlands/jobs/notice-period-netherlands",
+  "/netherlands/jobs/employee-rights-netherlands",
 ];
 
 /** Tax/compensation guides surfaced under Move → More — highlight Move at top level (canonical URL may live under `/taxes/`). */
@@ -805,6 +806,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "How notice periods work in Dutch employment contracts when changing jobs, resigning or planning transitions."
           ),
           item(
+            "Employee rights",
+            "/netherlands/jobs/employee-rights-netherlands/",
+            "Workplace rights, leave, sick pay and equal treatment for expats in Dutch employment."
+          ),
+          item(
             "Holiday allowance",
             "/netherlands/jobs/holiday-allowance-netherlands/",
             "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
@@ -1075,7 +1081,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Employment contract Netherlands", "/netherlands/jobs/employment-contract-netherlands/"),
           item("Probation period Netherlands", "/netherlands/jobs/probation-period-netherlands/"),
           item("Notice period Netherlands", "/netherlands/jobs/notice-period-netherlands/"),
-          item("Employee rights Netherlands", "/netherlands/work/employee-rights-netherlands/"),
+          item("Employee rights Netherlands", "/netherlands/jobs/employee-rights-netherlands/"),
           item("Freelancing Netherlands", "/netherlands/work/freelancing-netherlands/"),
           item("ZZP Netherlands", "/netherlands/work/zzp-netherlands/"),
           item("Contractor vs employee Netherlands", "/netherlands/work/contractor-vs-employee-netherlands/"),

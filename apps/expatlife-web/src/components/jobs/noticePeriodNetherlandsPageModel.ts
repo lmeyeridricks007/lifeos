@@ -588,6 +588,7 @@ export const noticePeriodNetherlandsPage = {
     { label: "Finding Jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Job search and offer timing when planning a transition." },
     { label: "Expat Salary Netherlands", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Salary context when comparing offers during a job change." },
     { label: "Employee Benefits Netherlands", href: EMPLOYEE_BENEFITS_NETHERLANDS_PATH, status: "live", description: "Benefits end dates and transitions when employment ends." },
+    { label: "Employee Rights Netherlands", href: "/netherlands/jobs/employee-rights-netherlands/", status: "live", description: "Workplace protections, leave, sick pay and equal treatment orientation." },
   ] satisfies NoticePeriodLink[],
   relatedGuideScenarios: [
     { profile: "Offer review — fintech PM, Amsterdam", scenario: "Permanent contract: 2-month proeftijd to 30 September, 1-month employee notice, €7,200/month, €5k relocation clawback if leaving before month 12", whatToCheck: "Open employment contract guide — read notice Articles 11–12 alongside proeftijd end date and clawback before signing." },

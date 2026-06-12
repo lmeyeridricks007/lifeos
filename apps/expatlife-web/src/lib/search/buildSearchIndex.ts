@@ -40,6 +40,7 @@ import { findingJobsNetherlandsPage } from "@/src/components/jobs/findingJobsNet
 import { employmentContractNetherlandsPage } from "@/src/components/jobs/employmentContractNetherlandsPageModel";
 import { probationPeriodNetherlandsPage } from "@/src/components/jobs/probationPeriodNetherlandsPageModel";
 import { noticePeriodNetherlandsPage } from "@/src/components/jobs/noticePeriodNetherlandsPageModel";
+import { employeeRightsNetherlandsPage } from "@/src/components/jobs/employeeRightsNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -907,6 +908,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       noticePeriodNetherlandsPage.mythCards.map((card) => `${card.title} ${card.body}`),
       noticePeriodNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       noticePeriodNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:employee-rights-netherlands",
+    title: employeeRightsNetherlandsPage.hero.pageTitle,
+    href: employeeRightsNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: employeeRightsNetherlandsPage.seo.description,
+    image: employeeRightsNetherlandsPage.hero.image.src,
+    imageAlt: employeeRightsNetherlandsPage.hero.image.alt,
+    keywords: [...employeeRightsNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      employeeRightsNetherlandsPage.hero.pageTitle,
+      employeeRightsNetherlandsPage.hero.subtitle,
+      employeeRightsNetherlandsPage.seo.description,
+      [...employeeRightsNetherlandsPage.seo.keywords],
+      employeeRightsNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      employeeRightsNetherlandsPage.misconceptionCards.map((card) => `${card.title} ${card.body}`),
+      employeeRightsNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      employeeRightsNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

@@ -329,6 +329,7 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/employment-contract-netherlands/",
   "/netherlands/jobs/probation-period-netherlands/",
   "/netherlands/jobs/notice-period-netherlands/",
+  "/netherlands/jobs/employee-rights-netherlands/",
   /** Money pillar tax orientation guide (App Router). */
   "/netherlands/money/tax-guide-for-expats/",
   "/netherlands/money/how-taxes-work-in-the-netherlands/",
@@ -359,6 +360,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/work/probation-period-netherlands/",
   /** Legacy Work-cluster URL; 301 → `/netherlands/jobs/notice-period-netherlands/`. */
   "/netherlands/work/notice-period-netherlands/",
+  /** Legacy Work-cluster URL; 301 → `/netherlands/jobs/employee-rights-netherlands/`. */
+  "/netherlands/work/employee-rights-netherlands/",
   /** Legacy Work-cluster URL; 301 → Move guide — must not surface as “coming soon” in nav or link helpers. */
   "/netherlands/work/changing-jobs-netherlands/",
   /** Legacy Work-cluster URL; 301 → Move guide. */

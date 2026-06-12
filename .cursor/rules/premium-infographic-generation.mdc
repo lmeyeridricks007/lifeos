@@ -18,6 +18,21 @@ Use existing premium double-taxation assets as the quality benchmark:
 
 Target the same editorial quality: rich Dutch city/canal context, realistic desk or consultation scenes, detailed props, textured illustration, shadows, clear information hierarchy, right-side record/checklist rails, bottom skyline/water band, and ExpatLife branding.
 
+## Page Layout (premium pillar guides)
+
+Use **single-column** section layout — not sticky two-column sidebars with a small infographic on the right.
+
+- Render intro copy first (`SectionIntro` + optional orientation `BulletPanel`).
+- Place the section infographic **full width directly below** that intro block.
+- Put checklists, tables, scenarios, and affiliates **below** the infographic.
+
+Shared primitives:
+
+- `GuidePremiumVisualFigure` — `apps/expatlife-web/src/components/guides/GuidePremiumVisualFigure.tsx`
+- Layout classes — `apps/expatlife-web/lib/ui/guide-premium-page-ui.ts` (`guidePremiumIntroStackClass`, `guidePremiumVisualAfterIntroClass`, `guidePremiumSectionDetailStackClass`)
+
+Reference implementation: `EmployeeRightsNetherlandsView.tsx`.
+
 ## Required Workflow
 
 1. Inspect the page model and list every visual key that needs an asset.

@@ -253,6 +253,61 @@ describe("notice period nav active state", () => {
   });
 });
 
+describe("employee rights nav active state", () => {
+  const RIGHTS_PATH = "/netherlands/jobs/employee-rights-netherlands/";
+
+  it("treats the shipped employee rights guide route as live", () => {
+    expect(getRouteStatus(RIGHTS_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(RIGHTS_PATH)).toBe("moving");
+  });
+
+  it("highlights Move for the legacy work href before redirect", () => {
+    expect(getActiveNavKey("/netherlands/work/employee-rights-netherlands/")).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical jobs href", () => {
+    const item = {
+      label: "Employee rights",
+      href: RIGHTS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(RIGHTS_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === RIGHTS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(RIGHTS_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === RIGHTS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(RIGHTS_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Employment contracts & rights", () => {
+    const rows = menuRowsForHref(RIGHTS_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Employment contracts & rights",
+      "moving:Jobs & salaries",
+    ]);
+  });
+});
+
 describe("holiday allowance nav active state", () => {
   it("highlights Move (not Money) for the jobs guide path", () => {
     expect(getActiveNavKey(HOLIDAY_PATH)).toBe("moving");

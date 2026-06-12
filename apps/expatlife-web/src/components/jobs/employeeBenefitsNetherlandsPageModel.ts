@@ -409,6 +409,7 @@ export const employeeBenefitsNetherlandsPage = {
     { label: "Net Salary Guide", href: NET_SALARY_NETHERLANDS_PATH, status: "live", description: "Estimate take-home pay from your package." },
     { label: "Gross vs Net Salary", href: GROSS_VS_NET_SALARY_PATH, status: "live", description: "Why benefits and deductions matter for net pay." },
     { label: "Moving to the Netherlands", href: MOVING_HUB_PATH, status: "live", description: "Relocation planning with employment offers." },
+    { label: "Employee Rights Guide", href: "/netherlands/jobs/employee-rights-netherlands/", status: "live", description: "Workplace rights, leave, sick pay and equal treatment orientation." },
   ] satisfies EmployeeBenefitsNetherlandsLink[],
   exploreNextCards: [
     { label: "Holiday Allowance Guide", href: "/netherlands/jobs/holiday-allowance-netherlands/", status: "live", description: "Deep dive into vakantiegeld for expats." },
