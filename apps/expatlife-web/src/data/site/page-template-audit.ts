@@ -220,6 +220,7 @@ export const ROUTE_TEMPLATE_HINTS: Partial<Record<string, TemplateArchetype>> = 
   "/netherlands/jobs/probation-period-netherlands": "guideShell",
   "/netherlands/jobs/notice-period-netherlands": "guideShell",
   "/netherlands/jobs/employee-rights-netherlands": "guideShell",
+  "/netherlands/jobs/freelancing-netherlands": "guideShell",
   "/netherlands/taxes/tools": "clusterHub",
   "/netherlands/taxes/tools/30-ruling-calculator": "toolLanding",
   "/netherlands/taxes/tools/dutch-salary-net-calculator": "toolLanding",

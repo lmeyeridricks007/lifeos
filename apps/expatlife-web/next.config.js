@@ -245,6 +245,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/freelancing-netherlands",
+        destination: "/netherlands/jobs/freelancing-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/freelancing-netherlands/",
+        destination: "/netherlands/jobs/freelancing-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/pension-netherlands",
         destination: "/netherlands/jobs/pension-netherlands-expats/",
         permanent: true,

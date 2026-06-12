@@ -581,6 +581,7 @@ export const employeeRightsNetherlandsPage = {
     { label: "Employee Benefits Netherlands", href: EMPLOYEE_BENEFITS_NETHERLANDS_PATH, status: "live", description: "Pension, holiday allowance, leave and expat packages beyond base salary." },
     { label: "Probation Period Netherlands", href: PROBATION_PERIOD_NETHERLANDS_PATH, status: "live", description: "Proeftijd rights and expectations during early employment." },
     { label: "Notice Period Netherlands", href: NOTICE_PERIOD_NETHERLANDS_PATH, status: "live", description: "End-of-employment timing when changing jobs or resigning." },
+    { label: "Freelancing Netherlands", href: "/netherlands/jobs/freelancing-netherlands/", status: "live", description: "ZZP registration, taxes and client contracts when leaving employment." },
     { label: "Finding Jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Job search and offer review when comparing employer protections." },
   ] satisfies EmployeeRightsLink[],
   relatedGuideScenarios: [

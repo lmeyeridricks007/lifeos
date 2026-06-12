@@ -107,6 +107,11 @@ export function shouldRequireMegaMenu(path: string): boolean {
     "/netherlands/work/resigning-job-netherlands/",
     "/netherlands/work/layoffs-netherlands/",
     "/netherlands/work/bonus-tax-netherlands/",
+    "/netherlands/work/employment-contract-netherlands/",
+    "/netherlands/work/probation-period-netherlands/",
+    "/netherlands/work/notice-period-netherlands/",
+    "/netherlands/work/employee-rights-netherlands/",
+    "/netherlands/work/freelancing-netherlands/",
   ];
   if (legacy.includes(p)) return false;
 
