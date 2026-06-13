@@ -26,6 +26,7 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/work/notice-period-netherlands": "/netherlands/jobs/notice-period-netherlands",
   "/netherlands/work/employee-rights-netherlands": "/netherlands/jobs/employee-rights-netherlands",
   "/netherlands/work/freelancing-netherlands": "/netherlands/jobs/freelancing-netherlands",
+  "/netherlands/work/zzp-netherlands": "/netherlands/business/zzp-netherlands",
   "/netherlands/work/bonus-tax-netherlands": "/netherlands/taxes/bonus-tax-netherlands",
   "/netherlands/taxes/healthcare-allowance": "/netherlands/taxes/healthcare-allowance-netherlands",
   "/netherlands/taxes/rent-allowance": "/netherlands/taxes/rent-allowance-netherlands",

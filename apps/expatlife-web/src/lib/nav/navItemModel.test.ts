@@ -308,6 +308,61 @@ describe("employee rights nav active state", () => {
   });
 });
 
+describe("zzp nav active state", () => {
+  const ZZP_PATH = "/netherlands/business/zzp-netherlands/";
+
+  it("treats the shipped zzp guide route as live", () => {
+    expect(getRouteStatus(ZZP_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the business guide path", () => {
+    expect(getActiveNavKey(ZZP_PATH)).toBe("moving");
+  });
+
+  it("highlights Move for the legacy work href before redirect", () => {
+    expect(getActiveNavKey("/netherlands/work/zzp-netherlands/")).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical business href", () => {
+    const item = {
+      label: "ZZP in the Netherlands",
+      href: ZZP_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(ZZP_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move Business menu row as an active link", () => {
+    const item = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === ZZP_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ZZP_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money menu row as an active link", () => {
+    const item = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === ZZP_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ZZP_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Move > Business and Money > Employment contracts & rights", () => {
+    const rows = menuRowsForHref(ZZP_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Employment contracts & rights",
+      "moving:Business",
+    ]);
+  });
+});
+
 describe("freelancing nav active state", () => {
   const FREELANCING_PATH = "/netherlands/jobs/freelancing-netherlands/";
 

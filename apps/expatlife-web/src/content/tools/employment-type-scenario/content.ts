@@ -101,7 +101,7 @@ export const EMPLOYMENT_TYPE_RELATED_GUIDES = [
     description: "How independence differs from payroll in practice — beyond the label on the contract.",
   },
   {
-    href: `${NL_BASE}/work/zzp-netherlands/`,
+    href: `${NL_BASE}/business/zzp-netherlands/`,
     title: "ZZP in the Netherlands",
     description: "Self-employment registration, mindset, and how ZZP compares to umbrella contractor routes.",
   },

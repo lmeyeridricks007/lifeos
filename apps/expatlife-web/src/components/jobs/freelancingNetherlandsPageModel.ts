@@ -1,4 +1,5 @@
 export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
+export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as const;
 export const FREELANCING_AFFILIATE_PLACEMENT_ID = "nl-jobs-freelancing-support-providers" as const;
 
 export const EMPLOYMENT_CONTRACT_NETHERLANDS_PATH = "/netherlands/jobs/employment-contract-netherlands/" as const;
@@ -694,6 +695,7 @@ export const freelancingNetherlandsPage = {
     { q: "Is freelancing popular in the Netherlands?", a: "Yes — ZZP self-employment is common across consulting, tech, creative and business services in major cities." },
   ],
   relatedGuides: [
+    { label: "ZZP in the Netherlands", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Cornerstone guide on Dutch ZZP registration, taxes, invoicing and expat context." },
     { label: "Finding Jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Employer routes and job search when freelancing is a bridge or alternative." },
     { label: "Expat Taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation when freelance income joins employment or foreign assets." },
     { label: "Foreign Income Netherlands", href: FOREIGN_INCOME_NETHERLANDS_PATH, status: "live", description: "Cross-border income context for international client work." },

@@ -112,6 +112,7 @@ export function shouldRequireMegaMenu(path: string): boolean {
     "/netherlands/work/notice-period-netherlands/",
     "/netherlands/work/employee-rights-netherlands/",
     "/netherlands/work/freelancing-netherlands/",
+    "/netherlands/work/zzp-netherlands/",
   ];
   if (legacy.includes(p)) return false;
 

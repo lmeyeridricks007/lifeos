@@ -42,6 +42,7 @@ import { probationPeriodNetherlandsPage } from "@/src/components/jobs/probationP
 import { noticePeriodNetherlandsPage } from "@/src/components/jobs/noticePeriodNetherlandsPageModel";
 import { employeeRightsNetherlandsPage } from "@/src/components/jobs/employeeRightsNetherlandsPageModel";
 import { freelancingNetherlandsPage } from "@/src/components/jobs/freelancingNetherlandsPageModel";
+import { zzpNetherlandsPage } from "@/src/components/business/zzpNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -955,6 +956,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       freelancingNetherlandsPage.mistakeCards.map((card) => `${card.title} ${card.body}`),
       freelancingNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       freelancingNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:zzp-netherlands",
+    title: zzpNetherlandsPage.hero.pageTitle,
+    href: zzpNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Business",
+    description: zzpNetherlandsPage.seo.description,
+    image: zzpNetherlandsPage.hero.image.src,
+    imageAlt: zzpNetherlandsPage.hero.image.alt,
+    keywords: [...zzpNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      zzpNetherlandsPage.hero.pageTitle,
+      zzpNetherlandsPage.hero.subtitle,
+      zzpNetherlandsPage.seo.description,
+      [...zzpNetherlandsPage.seo.keywords],
+      zzpNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      zzpNetherlandsPage.mistakeCards.map((card) => `${card.title} ${card.body}`),
+      zzpNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      zzpNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

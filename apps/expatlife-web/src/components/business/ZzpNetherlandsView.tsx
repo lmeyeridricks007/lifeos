@@ -52,21 +52,20 @@ import {
   guidePremiumVisualSpacingClass,
 } from "@/lib/ui/guide-premium-page-ui";
 import {
-  FreelancingNetherlandsRecommendedServices,
-  FreelancingTaxAffiliateSupport,
-  FreelancingVisaAffiliateSupport,
-} from "./FreelancingNetherlandsRecommendedServices";
+  ZzpNetherlandsRecommendedServices,
+  ZzpResidenceAffiliateSupport,
+  ZzpTaxAffiliateSupport,
+} from "./ZzpNetherlandsRecommendedServices";
 import {
-  EMPLOYEE_RIGHTS_NETHERLANDS_PATH,
+  BUSINESS_HUB_PATH,
   EMPLOYMENT_CONTRACT_NETHERLANDS_PATH,
   FINANCIAL_ADVISORS_PATH,
-  HSM_VISA_PATH,
-  JOBS_HUB_PATH,
+  FREELANCING_NETHERLANDS_PATH,
+  SELF_EMPLOYED_VISA_PATH,
   VISAS_HUB_PATH,
-  ZZP_NETHERLANDS_PATH,
-  freelancingNetherlandsPage as page,
-  type FreelancingLink,
-} from "./freelancingNetherlandsPageModel";
+  zzpNetherlandsPage as page,
+  type ZzpLink,
+} from "./zzpNetherlandsPageModel";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -298,7 +297,7 @@ function FeatureCard({ title, body, iconIndex = 0 }: { title: string; body: stri
   );
 }
 
-function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: FreelancingLink; iconIndex?: number; tone?: "default" | "onDark" }) {
+function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: ZzpLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
   const isLive = item.status !== "comingSoon";
   const onDark = tone === "onDark";
@@ -441,15 +440,15 @@ function ProcessPanel({
   );
 }
 
-function FreelancingPlanningPanel() {
+function ZzpPlanningPanel() {
   return (
     <aside className="relative flex flex-col overflow-hidden rounded-3xl bg-slate-950 p-5 text-white shadow-expatos-xl ring-1 ring-black/20 sm:p-6">
       <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-brand via-cyan-300 to-emerald-300" aria-hidden />
       <div className="relative flex flex-col">
         <p className="text-xs font-bold uppercase tracking-[0.14em] text-cyan-200">Planning links</p>
-        <h3 className="mt-2 text-lg font-bold tracking-tight">Connect freelancing to your wider career picture</h3>
+        <h3 className="mt-2 text-lg font-bold tracking-tight">Connect ZZP to your wider business picture</h3>
         <p className="mt-3 text-sm leading-relaxed text-slate-300">
-          ZZP setup sits alongside employment options, tax planning and permit rules — use these guides alongside KvK and official sources, not instead of qualified advice.
+          ZZP registration sits alongside permit rules, tax planning and client contracts — use these guides alongside KvK and official sources, not instead of qualified advice.
         </p>
         <div className="mt-5 grid gap-3">
           {page.planningLinks.map((tool) => (
@@ -472,9 +471,9 @@ function FreelancingPlanningPanel() {
   );
 }
 
-function FreelancingOrientationFlowBand({ className }: { className?: string }) {
+function ZzpOrientationFlowBand({ className }: { className?: string }) {
   const items = [
-    { label: "Confirm your route", body: "Check permit rules on ind.nl and whether ZZP fits your work pattern before registering.", Icon: ShieldCheck },
+    { label: "Confirm your route", body: "Check permit rules on ind.nl and whether ZZP fits your work pattern before registering at KvK.", Icon: ShieldCheck },
     { label: "Register and bank", body: "KvK enrolment, BTW choice and business banking before substantial client invoices.", Icon: FileText },
     { label: "Plan tax buffers", body: "Set aside BTW and income tax monthly — speak with an accountant for cross-border clients.", Icon: WalletCards },
   ] as const;
@@ -485,7 +484,7 @@ function FreelancingOrientationFlowBand({ className }: { className?: string }) {
       <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-cyan-400/20 blur-3xl" aria-hidden />
       <div className="relative">
         <p className="text-xs font-bold uppercase tracking-[0.14em] text-cyan-200">Orientation flow</p>
-        <h3 className="mt-2 text-xl font-bold tracking-tight">Three moves that reduce freelancing uncertainty</h3>
+        <h3 className="mt-2 text-xl font-bold tracking-tight">Three moves that reduce ZZP uncertainty</h3>
         <div className="mt-5 grid gap-3 md:grid-cols-3">
           {items.map(({ label, body, Icon }, index) => (
             <div key={label} className="flex gap-3 rounded-2xl border border-white/10 bg-white/10 p-4 ring-1 ring-white/10">
@@ -523,12 +522,12 @@ function ProsConsGrid() {
   );
 }
 
-export function FreelancingNetherlandsView() {
+export function ZzpNetherlandsView() {
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Jobs", item: new URL(JOBS_HUB_PATH, baseUrl).toString() },
-    { name: "Freelancing", item: new URL(page.path, baseUrl).toString() },
+    { name: "Business", item: new URL(BUSINESS_HUB_PATH, baseUrl).toString() },
+    { name: "ZZP", item: new URL(page.path, baseUrl).toString() },
   ];
   const faqItems = page.faq.map((item, idx) => ({ id: `faq-${idx}`, title: item.q, content: item.a }));
 
@@ -549,9 +548,9 @@ export function FreelancingNetherlandsView() {
                     <span aria-hidden>/</span>
                     <Link href="/netherlands/" className="hover:text-foreground">Netherlands</Link>
                     <span aria-hidden>/</span>
-                    <Link href={JOBS_HUB_PATH} className="hover:text-foreground">Jobs</Link>
+                    <Link href={BUSINESS_HUB_PATH} className="hover:text-foreground">Business</Link>
                     <span aria-hidden>/</span>
-                    <span className="text-foreground" aria-current="page">Freelancing</span>
+                    <span className="text-foreground" aria-current="page">ZZP</span>
                   </nav>
                   <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-brand-strong">{page.hero.eyebrow}</p>
                   <h1 className="mt-3 text-4xl font-black tracking-tight text-foreground sm:text-5xl lg:text-6xl">{page.hero.pageTitle}</h1>
@@ -571,7 +570,7 @@ export function FreelancingNetherlandsView() {
                     </Link>
                   </div>
                   <p className="mt-5 max-w-3xl rounded-2xl border border-amber-200/70 bg-amber-50/70 px-4 py-3 text-sm leading-relaxed text-amber-950 shadow-sm ring-1 ring-amber-200/40">
-                    This guide is practical orientation only — not legal, tax or immigration advice. Freelancing rules depend on your permit, client mix, registration and official regulations.
+                    This guide is practical orientation only — not tax, legal or immigration advice. ZZP rules depend on your permit, client mix, registration and official regulations.
                   </p>
                 </div>
                 <HeroImage />
@@ -581,7 +580,7 @@ export function FreelancingNetherlandsView() {
           </section>
 
           <div className="sticky top-3 z-20 mt-6 overflow-x-auto rounded-2xl border border-slate-200/80 bg-white/90 p-2 shadow-card ring-1 ring-slate-900/[0.04] backdrop-blur-xl">
-            <nav aria-label="Freelancing guide sections" className="flex min-w-max gap-2">
+            <nav aria-label="ZZP guide sections" className="flex min-w-max gap-2">
               {page.sectionNav.map((item) => (
                 <a
                   key={item.href}
@@ -606,7 +605,7 @@ export function FreelancingNetherlandsView() {
               <GuidePremiumVisualFigure visual={page.visuals.intro} className={guidePremiumVisualSpacingClass} />
               <div className={guidePremiumSectionDetailStackClass}>
                 <div>
-                  <SectionIntro eyebrow="Key points" title="What to know about Dutch freelancing" />
+                  <SectionIntro eyebrow="Key points" title="What to know about ZZP in the Netherlands" />
                   <div className={cn("mt-4 grid gap-4 sm:grid-cols-2")}>
                     {page.intro.keyPoints.map((item, idx) => (
                       <FeatureCard key={item.title} title={item.title} body={item.body} iconIndex={idx} />
@@ -615,17 +614,17 @@ export function FreelancingNetherlandsView() {
                 </div>
                 <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.72fr)] lg:items-start">
                   <ChecklistBlock title="Three orientation moves before your first invoice" items={page.introPlanningSteps} columns={2} />
-                  <FreelancingPlanningPanel />
+                  <ZzpPlanningPanel />
                 </div>
-                <FreelancingOrientationFlowBand />
-                <ScenarioTable title="When freelancing affects real plans" rows={page.intro.scenarios} />
-                <FreelancingTaxAffiliateSupport />
+                <ZzpOrientationFlowBand />
+                <ScenarioTable title="When ZZP affects real plans" rows={page.intro.scenarios} />
+                <ZzpTaxAffiliateSupport />
               </div>
             </section>
 
             <section id="snapshot" className={sectionClass}>
-              <SectionIntro eyebrow="At a glance" title="Freelancing at a Glance">
-                <p>Practical orientation on KvK registration, BTW, insurance, client contracts and permit context before you commit to ZZP.</p>
+              <SectionIntro eyebrow="At a glance" title="ZZP at a Glance">
+                <p>Practical orientation on KvK registration, BTW, tax responsibility, flexibility and admin obligations before you commit to self-employment.</p>
               </SectionIntro>
               <GuidePremiumVisualFigure visual={page.visuals.snapshot} className={guidePremiumVisualSpacingClass} />
               <div className={guidePremiumSectionDetailStackClass}>
@@ -645,53 +644,28 @@ export function FreelancingNetherlandsView() {
                       }))}
                       columns={[
                         { key: "topic", label: "Topic" },
-                        { key: "dutchContext", label: "Dutch context" },
-                        { key: "whatToConfirm", label: "Confirm" },
+                        { key: "dutchContext", label: "Employment" },
+                        { key: "whatToConfirm", label: "ZZP" },
                       ]}
                     />
                   </div>
                 </div>
-                <ScenarioTable title="Freelancing examples expats often see" rows={page.snapshotScenarios} />
+                <ScenarioTable title="ZZP examples expats often see" rows={page.snapshotScenarios} />
                 <ChecklistBlock title="Three moves after reading this snapshot" items={page.snapshotNextSteps} columns={2} />
               </div>
             </section>
 
-            <section id="zzp" className={sectionClass}>
+            <section id="vs-comparison" className={sectionClass}>
               <div className={guidePremiumIntroStackClass}>
-                <SectionIntro eyebrow="ZZP" title={page.zzpHeading} fullWidth>
-                  {page.zzpParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                <SectionIntro eyebrow="Compare routes" title={page.vsComparisonHeading} fullWidth>
+                  {page.vsComparisonParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                 </SectionIntro>
-                <BulletPanel title="ZZP orientation" items={page.zzpPoints} />
+                <BulletPanel title="Employee vs freelancer vs ZZP" items={page.vsComparisonPoints} />
               </div>
-              <GuidePremiumVisualFigure visual={page.visuals.zzp} className={guidePremiumVisualSpacingClass} />
-              <div className={guidePremiumSectionDetailStackClass}>
-                <div className="grid gap-4 sm:grid-cols-2">
-                  {page.zzpCards.map((item, idx) => (
-                    <FeatureCard key={item.title} title={item.title} body={item.body} iconIndex={idx} />
-                  ))}
-                </div>
-                <ChecklistBlock title="ZZP setup checklist" items={page.zzpChecklist} columns={2} />
-                <GuideLinkAside
-                  title="ZZP in the Netherlands — full guide"
-                  description="Deep-dive on ZZP definition, KvK, taxes, invoicing, expat permits and common mistakes."
-                  href={ZZP_NETHERLANDS_PATH}
-                  linkLabel="Open ZZP guide"
-                />
-                <ScenarioTable title="ZZP — practical examples" rows={page.zzpScenarios} />
-              </div>
-            </section>
-
-            <section id="vs-employment" className={sectionClass}>
-              <div className={guidePremiumIntroStackClass}>
-                <SectionIntro eyebrow="Compare routes" title={page.vsEmploymentHeading} fullWidth>
-                  {page.vsEmploymentParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-                </SectionIntro>
-                <BulletPanel title="Freelancing vs employment" items={page.vsEmploymentPoints} />
-              </div>
-              <GuidePremiumVisualFigure visual={page.visuals.vsEmployment} className={guidePremiumVisualSpacingClass} />
+              <GuidePremiumVisualFigure visual={page.visuals.vsComparison} className={guidePremiumVisualSpacingClass} />
               <div className={guidePremiumSectionDetailStackClass}>
                 <InfoTable
-                  rows={page.vsEmploymentSimpleRows.map((row) => ({
+                  rows={page.vsComparisonRows.map((row) => ({
                     topic: row.topic,
                     dutchContext: row.dutchContext,
                     whatToConfirm: row.whatToConfirm,
@@ -699,7 +673,7 @@ export function FreelancingNetherlandsView() {
                   columns={[
                     { key: "topic", label: "Topic" },
                     { key: "dutchContext", label: "Employment" },
-                    { key: "whatToConfirm", label: "Freelancing (ZZP)" },
+                    { key: "whatToConfirm", label: "ZZP" },
                   ]}
                 />
                 <GuideLinkAside
@@ -709,24 +683,31 @@ export function FreelancingNetherlandsView() {
                   linkLabel="Open employment contract guide"
                 />
                 <GuideLinkAside
-                  title="Employee rights guide"
-                  description="Understand workplace protections you typically leave behind when moving from employment to ZZP."
-                  href={EMPLOYEE_RIGHTS_NETHERLANDS_PATH}
-                  linkLabel="Open employee rights guide"
+                  title="Freelancing guide"
+                  description="Broader freelance orientation beyond the Dutch ZZP registration framework."
+                  href={FREELANCING_NETHERLANDS_PATH}
+                  linkLabel="Open freelancing guide"
                 />
-                <InfoTable
-                  rows={page.vsEmploymentComparisonRows.map((row) => ({
-                    topic: row.topic,
-                    dutchContext: row.dutchContext,
-                    whatToConfirm: row.whatToConfirm,
-                  }))}
-                  columns={[
-                    { key: "topic", label: "Topic" },
-                    { key: "dutchContext", label: "Freelance vs employee" },
-                    { key: "whatToConfirm", label: "Confirm" },
-                  ]}
-                />
-                <ScenarioTable title="Freelancing vs employment — examples" rows={page.vsEmploymentScenarios} />
+                <ScenarioTable title="ZZP vs employment — practical examples" rows={page.vsComparisonScenarios} />
+              </div>
+            </section>
+
+            <section id="professions" className={sectionClass}>
+              <div className={guidePremiumIntroStackClass}>
+                <SectionIntro eyebrow="Sectors" title={page.professionsHeading} fullWidth>
+                  {page.professionsParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                </SectionIntro>
+                <BulletPanel title="Sector orientation" items={page.professionsPoints} />
+              </div>
+              <GuidePremiumVisualFigure visual={page.visuals.professions} className={guidePremiumVisualSpacingClass} />
+              <div className={guidePremiumSectionDetailStackClass}>
+                <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                  {page.professionCards.map((item, idx) => (
+                    <FeatureCard key={item.title} title={item.title} body={item.body} iconIndex={idx} />
+                  ))}
+                </div>
+                <ChecklistBlock title="Sector checklist before you register" items={page.professionsChecklist} columns={2} />
+                <ScenarioTable title="ZZP professions — practical examples" rows={page.professionsScenarios} />
               </div>
             </section>
 
@@ -740,11 +721,9 @@ export function FreelancingNetherlandsView() {
               <GuidePremiumVisualFigure visual={page.visuals.registration} className={guidePremiumVisualSpacingClass} />
               <div className={guidePremiumSectionDetailStackClass}>
                 <ChecklistBlock title="Registration checklist" items={page.registrationChecklist} columns={2} />
-                <ChecklistBlock title="Invoice essentials for Dutch clients" items={page.invoicingChecklist} columns={2} />
-                <p className="text-sm leading-relaxed text-foreground-muted">{page.invoicingNote}</p>
                 <ProcessPanel
                   eyebrow="Registration flow"
-                  title="Four steps when setting up as a freelancer"
+                  title="Four steps when setting up as a ZZP'er"
                   rows={page.registrationFlow.map((item, idx) => ({
                     label: item.title,
                     body: item.body,
@@ -757,18 +736,32 @@ export function FreelancingNetherlandsView() {
               </div>
             </section>
 
-            <section id="taxes-vat" className={sectionClass}>
+            <section id="kvk" className={sectionClass}>
               <div className={guidePremiumIntroStackClass}>
-                <SectionIntro eyebrow="Tax" title={page.taxesVatHeading} fullWidth>
-                  {page.taxesVatParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                <SectionIntro eyebrow="KvK" title={page.kvkHeading} fullWidth>
+                  {page.kvkParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                 </SectionIntro>
-                <BulletPanel title="Tax and VAT orientation" items={page.taxesVatPoints} />
+                <BulletPanel title="KvK orientation" items={page.kvkPoints} />
               </div>
-              <GuidePremiumVisualFigure visual={page.visuals.taxesVat} className={guidePremiumVisualSpacingClass} />
+              <GuidePremiumVisualFigure visual={page.visuals.kvk} className={guidePremiumVisualSpacingClass} />
               <div className={guidePremiumSectionDetailStackClass}>
-                <ChecklistBlock title="Tax planning checklist" items={page.taxesVatChecklist} columns={2} />
+                <ChecklistBlock title="KvK checklist" items={page.kvkChecklist} columns={2} />
+                <ScenarioTable title="KvK — practical examples" rows={page.kvkScenarios} />
+              </div>
+            </section>
+
+            <section id="taxes" className={sectionClass}>
+              <div className={guidePremiumIntroStackClass}>
+                <SectionIntro eyebrow="Tax" title={page.taxesHeading} fullWidth>
+                  {page.taxesParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                </SectionIntro>
+                <BulletPanel title="Tax orientation" items={page.taxesPoints} />
+              </div>
+              <GuidePremiumVisualFigure visual={page.visuals.taxes} className={guidePremiumVisualSpacingClass} />
+              <div className={guidePremiumSectionDetailStackClass}>
+                <ChecklistBlock title="Tax planning checklist" items={page.taxesChecklist} columns={2} />
                 <InfoTable
-                  rows={page.taxesVatComparisonRows.map((row) => ({
+                  rows={page.taxesComparisonRows.map((row) => ({
                     topic: row.topic,
                     dutchContext: row.dutchContext,
                     whatToConfirm: row.whatToConfirm,
@@ -779,13 +772,65 @@ export function FreelancingNetherlandsView() {
                     { key: "whatToConfirm", label: "Confirm with accountant" },
                   ]}
                 />
-                <ScenarioTable title="Tax and VAT — examples" rows={page.taxesVatScenarios} />
                 <div className="grid gap-4 sm:grid-cols-2">
                   {page.taxGuideLinks.map((item, idx) => (
                     <LinkCard key={item.href} item={item} iconIndex={idx} />
                   ))}
                 </div>
-                <FreelancingTaxAffiliateSupport />
+                <ScenarioTable title="Taxes — practical examples" rows={page.taxesScenarios} />
+                <ZzpTaxAffiliateSupport />
+              </div>
+            </section>
+
+            <section id="vat-btw" className={sectionClass}>
+              <div className={guidePremiumIntroStackClass}>
+                <SectionIntro eyebrow="BTW" title={page.vatBtwHeading} fullWidth>
+                  {page.vatBtwParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                </SectionIntro>
+                <BulletPanel title="BTW orientation" items={page.vatBtwPoints} />
+              </div>
+              <GuidePremiumVisualFigure visual={page.visuals.vatBtw} className={guidePremiumVisualSpacingClass} />
+              <div className={guidePremiumSectionDetailStackClass}>
+                <ChecklistBlock title="BTW checklist" items={page.vatBtwChecklist} columns={2} />
+                <InfoTable
+                  rows={page.vatBtwComparisonRows.map((row) => ({
+                    topic: row.topic,
+                    dutchContext: row.dutchContext,
+                    whatToConfirm: row.whatToConfirm,
+                  }))}
+                  columns={[
+                    { key: "topic", label: "Client / scheme" },
+                    { key: "dutchContext", label: "Typical BTW treatment" },
+                    { key: "whatToConfirm", label: "Confirm with accountant" },
+                  ]}
+                />
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {page.vatBtwGuideLinks.map((item, idx) => (
+                    <LinkCard key={item.href} item={item} iconIndex={idx} />
+                  ))}
+                </div>
+                <ScenarioTable title="BTW — practical examples" rows={page.vatBtwScenarios} />
+              </div>
+            </section>
+
+            <section id="invoicing" className={sectionClass}>
+              <div className={guidePremiumIntroStackClass}>
+                <SectionIntro eyebrow="Clients" title={page.invoicingHeading} fullWidth>
+                  {page.invoicingParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                </SectionIntro>
+                <BulletPanel title="Invoicing orientation" items={page.invoicingPoints} />
+              </div>
+              <GuidePremiumVisualFigure visual={page.visuals.invoicing} className={guidePremiumVisualSpacingClass} />
+              <div className={guidePremiumSectionDetailStackClass}>
+                <ChecklistBlock title="Invoicing checklist" items={page.invoicingChecklist} columns={2} />
+                <GuideLinkAside
+                  title="Employment contract guide"
+                  description="Compare contractor agreements with employment — especially when invoicing a former employer as ZZP."
+                  href={EMPLOYMENT_CONTRACT_NETHERLANDS_PATH}
+                  linkLabel="Open employment contract guide"
+                />
+                <p className="text-sm leading-relaxed text-foreground-muted">{page.invoicingNote}</p>
+                <ScenarioTable title="Invoicing — practical examples" rows={page.invoicingScenarios} />
               </div>
             </section>
 
@@ -799,27 +844,39 @@ export function FreelancingNetherlandsView() {
               <GuidePremiumVisualFigure visual={page.visuals.internationalClients} className={guidePremiumVisualSpacingClass} />
               <div className={guidePremiumSectionDetailStackClass}>
                 <ChecklistBlock title="International client checklist" items={page.internationalClientsChecklist} columns={2} />
+                <InfoTable
+                  rows={page.internationalClientsComparisonRows.map((row) => ({
+                    topic: row.topic,
+                    dutchContext: row.dutchContext,
+                    whatToConfirm: row.whatToConfirm,
+                  }))}
+                  columns={[
+                    { key: "topic", label: "Client type" },
+                    { key: "dutchContext", label: "Typical context" },
+                    { key: "whatToConfirm", label: "Confirm before invoicing" },
+                  ]}
+                />
                 <div className="grid gap-4 sm:grid-cols-2">
                   {page.internationalClientGuideLinks.map((item, idx) => (
                     <LinkCard key={item.href} item={item} iconIndex={idx} />
                   ))}
                 </div>
-                <ScenarioTable title="International clients — examples" rows={page.internationalClientsScenarios} />
+                <ScenarioTable title="International clients — practical examples" rows={page.internationalClientsScenarios} />
               </div>
             </section>
 
-            <section id="visas" className={sectionClass}>
+            <section id="residence-status" className={sectionClass}>
               <div className={guidePremiumIntroStackClass}>
-                <SectionIntro eyebrow="Permits" title={page.visasHeading} fullWidth>
-                  {page.visasParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                <SectionIntro eyebrow="Permits" title={page.residenceStatusHeading} fullWidth>
+                  {page.residenceStatusParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                 </SectionIntro>
-                <BulletPanel title="Visa and permit orientation" items={page.visasPoints} />
+                <BulletPanel title="Permit orientation" items={page.residenceStatusPoints} />
               </div>
-              <GuidePremiumVisualFigure visual={page.visuals.visas} className={guidePremiumVisualSpacingClass} />
+              <GuidePremiumVisualFigure visual={page.visuals.residenceStatus} className={guidePremiumVisualSpacingClass} />
               <div className={guidePremiumSectionDetailStackClass}>
-                <ChecklistBlock title="Permit checklist before KvK" items={page.visasChecklist} columns={2} />
+                <ChecklistBlock title="Permit checklist before KvK" items={page.residenceStatusChecklist} columns={2} />
                 <InfoTable
-                  rows={page.visasComparisonRows.map((row) => ({
+                  rows={page.residenceStatusComparisonRows.map((row) => ({
                     topic: row.topic,
                     dutchContext: row.dutchContext,
                     whatToConfirm: row.whatToConfirm,
@@ -830,13 +887,12 @@ export function FreelancingNetherlandsView() {
                     { key: "whatToConfirm", label: "Verify on ind.nl" },
                   ]}
                 />
-                <ScenarioTable title="Visas and freelancing — examples" rows={page.visasScenarios} />
                 <div className="grid gap-4 lg:grid-cols-2">
                   <GuideLinkAside
-                    title="Highly skilled migrant guide"
-                    description="When employment and freelance paths intersect — verify IND rules independently."
-                    href={HSM_VISA_PATH}
-                    linkLabel="Open highly skilled migrant guide"
+                    title="Self-employed visa guide"
+                    description="Separate route for entrepreneur activity — verify IND rules independently."
+                    href={SELF_EMPLOYED_VISA_PATH}
+                    linkLabel="Open self-employed visa guide"
                   />
                   <GuideLinkAside
                     title="Visas & residency hub"
@@ -845,7 +901,20 @@ export function FreelancingNetherlandsView() {
                     linkLabel="Open visas & residency guides"
                   />
                 </div>
-                <FreelancingVisaAffiliateSupport />
+                <ScenarioTable title="Permits and ZZP — practical examples" rows={page.residenceStatusScenarios} />
+                <ZzpResidenceAffiliateSupport />
+              </div>
+            </section>
+
+            <section id="pros-cons" className={sectionClass}>
+              <SectionIntro eyebrow="Balance" title={page.prosCons.heading} fullWidth>
+                {page.prosCons.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+              </SectionIntro>
+              <GuidePremiumVisualFigure visual={page.visuals.advantages} className={guidePremiumVisualSpacingClass} />
+              <GuidePremiumVisualFigure visual={page.visuals.challenges} className={guidePremiumVisualSpacingClass} />
+              <div className={guidePremiumSectionDetailStackClass}>
+                <ProsConsGrid />
+                <ScenarioTable title="Pros and cons — practical examples" rows={page.prosCons.scenarios} />
               </div>
             </section>
 
@@ -871,79 +940,12 @@ export function FreelancingNetherlandsView() {
                     { key: "whatToConfirm", label: "What to model" },
                   ]}
                 />
-                <ScenarioTable title="Financial planning — examples" rows={page.financialPlanningScenarios} />
                 <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
                   {page.financialPlanningGuideLinks.map((item, idx) => (
                     <LinkCard key={item.href} item={item} iconIndex={idx} />
                   ))}
                 </div>
-              </div>
-            </section>
-
-            <section id="health-pension" className={sectionClass}>
-              <div className={guidePremiumIntroStackClass}>
-                <SectionIntro eyebrow="Insurance" title={page.healthPensionHeading} fullWidth>
-                  {page.healthPensionParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-                </SectionIntro>
-                <BulletPanel title="Health and pension orientation" items={page.healthPensionPoints} />
-              </div>
-              <GuidePremiumVisualFigure visual={page.visuals.healthPension} className={guidePremiumVisualSpacingClass} />
-              <div className={guidePremiumSectionDetailStackClass}>
-                <ChecklistBlock title="Health and pension checklist" items={page.healthPensionChecklist} columns={2} />
-                <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-                  {page.healthPensionGuideLinks.map((item, idx) => (
-                    <LinkCard key={item.href} item={item} iconIndex={idx} />
-                  ))}
-                </div>
-                <ScenarioTable title="Health and pension — examples" rows={page.healthPensionScenarios} />
-              </div>
-            </section>
-
-            <section id="finding-clients" className={sectionClass}>
-              <div className={guidePremiumIntroStackClass}>
-                <SectionIntro eyebrow="Pipeline" title={page.findingClientsHeading} fullWidth>
-                  {page.findingClientsParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-                </SectionIntro>
-                <BulletPanel title="Finding clients" items={page.findingClientsPoints} />
-              </div>
-              <GuidePremiumVisualFigure visual={page.visuals.findingClients} className={guidePremiumVisualSpacingClass} />
-              <div className={guidePremiumSectionDetailStackClass}>
-                <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-                  {page.findingClientsCards.map((item, idx) => (
-                    <FeatureCard key={item.title} title={item.title} body={item.body} iconIndex={idx} />
-                  ))}
-                </div>
-                <ChecklistBlock title="Client acquisition checklist" items={page.findingClientsChecklist} columns={2} />
-                <ScenarioTable title="Finding clients — examples" rows={page.findingClientsScenarios} />
-              </div>
-            </section>
-
-            <section id="cities" className={sectionClass}>
-              <div className={guidePremiumIntroStackClass}>
-                <SectionIntro eyebrow="Location" title={page.citiesHeading} fullWidth>
-                  {page.citiesParagraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-                </SectionIntro>
-                <BulletPanel title="What to weigh when choosing a city" items={page.citiesPoints} />
-              </div>
-              <GuidePremiumVisualFigure visual={page.visuals.cities} className={guidePremiumVisualSpacingClass} />
-              <div className={guidePremiumSectionDetailStackClass}>
-                <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-                  {page.cityCards.map((item, idx) => <LinkCard key={item.href} item={item} iconIndex={idx} />)}
-                </div>
-                <InfoTable
-                  rows={page.citiesComparisonRows.map((row) => ({
-                    topic: row.topic,
-                    dutchContext: row.dutchContext,
-                    whatToConfirm: row.whatToConfirm,
-                  }))}
-                  columns={[
-                    { key: "topic", label: "Factor" },
-                    { key: "dutchContext", label: "Typical pattern" },
-                    { key: "whatToConfirm", label: "Confirm for your sector" },
-                  ]}
-                />
-                <ChecklistBlock title="City choice checklist" items={page.citiesChecklist} columns={2} />
-                <ScenarioTable title="Freelancing by city — examples" rows={page.citiesScenarios} />
+                <ScenarioTable title="Financial planning — practical examples" rows={page.financialPlanningScenarios} />
               </div>
             </section>
 
@@ -959,24 +961,13 @@ export function FreelancingNetherlandsView() {
                   ))}
                 </div>
                 <ChecklistBlock title="Reality check before you invoice" items={page.mistakesChecklist} columns={2} />
-                <ScenarioTable title="Common mistakes — examples" rows={page.mistakesScenarios} />
-              </div>
-            </section>
-
-            <section id="pros-cons" className={sectionClass}>
-              <SectionIntro eyebrow="Balance" title={page.prosCons.heading} fullWidth>
-                {page.prosCons.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-              </SectionIntro>
-              <GuidePremiumVisualFigure visual={page.visuals.prosCons} className={guidePremiumVisualSpacingClass} />
-              <div className={guidePremiumSectionDetailStackClass}>
-                <ProsConsGrid />
-                <ScenarioTable title="Pros and cons — practical examples" rows={page.prosCons.scenarios} />
+                <ScenarioTable title="Common mistakes — practical examples" rows={page.mistakesScenarios} />
               </div>
             </section>
 
             <section id="questions" className={sectionClass}>
               <SectionIntro eyebrow="Ask early" title="Questions Expats Often Ask" fullWidth>
-                <p>Use these prompts with accountants, clients and official sources — verify your situation independently.</p>
+                <p>Use these prompts with accountants, KvK, IND and clients — verify your situation independently.</p>
               </SectionIntro>
               <GuidePremiumVisualFigure visual={page.visuals.questions} className={guidePremiumVisualSpacingClass} />
               <div className={guidePremiumSectionDetailStackClass}>
@@ -1002,7 +993,7 @@ export function FreelancingNetherlandsView() {
 
             <section id="related-guides" className={sectionClass}>
               <SectionIntro eyebrow="Work & business" title="Related Guides">
-                <p>Connect freelancing to job search, expat taxes, foreign income, financial planning and entrepreneurship.</p>
+                <p>Connect ZZP to freelancing, expat taxes, foreign income, financial planning and entrepreneurship.</p>
               </SectionIntro>
               <GuidePremiumVisualFigure visual={page.visuals.relatedGuides} className={guidePremiumVisualSpacingClass} />
               <div className={guidePremiumSectionDetailStackClass}>
@@ -1016,7 +1007,7 @@ export function FreelancingNetherlandsView() {
 
             <section id="services" className={sectionClass}>
               <SectionIntro eyebrow="Professional support" title="Professional Services That May Help">
-                <p>Tax, immigration and career support may help with specific steps — this page does not replace KvK registration or qualified advice.</p>
+                <p>Tax, immigration and business support may help with specific steps — this page does not replace KvK registration or qualified advice.</p>
               </SectionIntro>
               <GuidePremiumVisualFigure visual={page.visuals.services} className={guidePremiumVisualSpacingClass} />
               <div className={guidePremiumSectionDetailStackClass}>
@@ -1031,14 +1022,14 @@ export function FreelancingNetherlandsView() {
                 </div>
                 <BulletPanel title="When professional support may help" items={page.servicesWhenToUse} />
                 <ScenarioTable title="When expats typically seek support" rows={page.serviceScenarios} />
-                <FreelancingNetherlandsRecommendedServices />
+                <ZzpNetherlandsRecommendedServices />
                 <p className="text-sm leading-relaxed text-foreground-muted">{page.servicesNote}</p>
               </div>
             </section>
 
             <section id="faq" className={sectionClass}>
               <SectionIntro eyebrow="FAQ" title="Frequently Asked Questions">
-                <p>These answers help you identify what still needs verification — registration, tax, visas and insurance.</p>
+                <p>These answers help you identify what still needs verification — registration, tax, permits and financial planning.</p>
               </SectionIntro>
               <GuidePremiumVisualFigure visual={page.visuals.faq} className={guidePremiumVisualSpacingClass} />
               <div className={guidePremiumSectionDetailStackClass}>
@@ -1063,7 +1054,7 @@ export function FreelancingNetherlandsView() {
                 <ScenarioTable title="Which official source when — examples" rows={page.officialSourcesScenarios} />
                 <div>
                   <SectionIntro eyebrow="Explore" title="Related Work, Tax & Business Guides">
-                    <p>Continue into jobs, taxes, services and future business content from this freelancing hub.</p>
+                    <p>Continue into freelancing, taxes, services and future business content from this ZZP hub.</p>
                   </SectionIntro>
                   <div className={cn("mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3")}>
                     {page.ecosystemLinks.map((item, idx) => (
@@ -1084,7 +1075,7 @@ export function FreelancingNetherlandsView() {
               <div className={cn("h-1.5 rounded-full", movingNlSignatureGradientClass)} aria-hidden />
               <div className="mt-6">
                 <SectionIntro eyebrow="Explore next" title="Explore Next" tone="onDark">
-                  <p>Move from freelancing orientation into taxes, foreign income, financial planning and entrepreneurship.</p>
+                  <p>Move from ZZP orientation into freelancing, taxes, foreign income, financial planning and entrepreneurship.</p>
                 </SectionIntro>
                 <GuidePremiumVisualFigure
                   visual={page.visuals.exploreNext}

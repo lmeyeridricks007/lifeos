@@ -331,6 +331,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/notice-period-netherlands/",
   "/netherlands/jobs/employee-rights-netherlands/",
   "/netherlands/jobs/freelancing-netherlands/",
+  /** Live App Router guide — ZZP self-employment cornerstone (Business cluster). */
+  "/netherlands/business/zzp-netherlands/",
   /** Money pillar tax orientation guide (App Router). */
   "/netherlands/money/tax-guide-for-expats/",
   "/netherlands/money/how-taxes-work-in-the-netherlands/",
@@ -365,6 +367,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/work/employee-rights-netherlands/",
   /** Legacy Work-cluster URL; 301 → `/netherlands/jobs/freelancing-netherlands/`. */
   "/netherlands/work/freelancing-netherlands/",
+  /** Legacy Work-cluster URL; 301 → `/netherlands/business/zzp-netherlands/`. */
+  "/netherlands/work/zzp-netherlands/",
   /** Legacy Work-cluster URL; 301 → Move guide — must not surface as “coming soon” in nav or link helpers. */
   "/netherlands/work/changing-jobs-netherlands/",
   /** Legacy Work-cluster URL; 301 → Move guide. */

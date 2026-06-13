@@ -464,6 +464,11 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/freelancing-netherlands",
 ];
 
+/** Business App Router guides — highlight Move at top level (canonical URL under `/business/`). */
+const BUSINESS_GUIDE_PREFIXES: readonly string[] = [
+  "/netherlands/business/zzp-netherlands",
+];
+
 /** Tax/compensation guides surfaced under Move → More — highlight Move at top level (canonical URL may live under `/taxes/`). */
 const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/taxes/bonus-tax-netherlands",
@@ -497,6 +502,11 @@ const LIVING_HOUSING_GUIDE_PREFIXES: readonly string[] = [
 function isJobsSalaryGuidePath(pathname: string): boolean {
   const base = pathname.split("?")[0].replace(/\/+$/, "") || "/";
   return JOBS_SALARY_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
+}
+
+function isBusinessGuidePath(pathname: string): boolean {
+  const base = resolveNavActivePath(pathname).split("?")[0].replace(/\/+$/, "") || "/";
+  return BUSINESS_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
 }
 
 function isMoveTaxCompensationGuidePath(pathname: string): boolean {
@@ -641,6 +651,8 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (CITY_HUB_PREFIXES.some((pre) => path === pre || path.startsWith(`${pre}/`))) return "cities";
 
   if (isJobsSalaryGuidePath(path)) return "moving";
+
+  if (isBusinessGuidePath(path)) return "moving";
 
   if (isLivingHousingGuidePath(path)) return "living";
 
@@ -821,6 +833,17 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/holiday-allowance-netherlands/",
             "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
           ),
+        ],
+      },
+      {
+        title: "Business",
+        items: [
+          item(
+            "ZZP in the Netherlands",
+            "/netherlands/business/zzp-netherlands/",
+            "What a ZZP'er is, KvK registration, taxes, invoicing and expat considerations for Dutch self-employment."
+          ),
+          soon("Starting a business"),
         ],
       },
       {
@@ -1089,7 +1112,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Notice period Netherlands", "/netherlands/jobs/notice-period-netherlands/"),
           item("Employee rights Netherlands", "/netherlands/jobs/employee-rights-netherlands/"),
           item("Freelancing Netherlands", "/netherlands/jobs/freelancing-netherlands/"),
-          item("ZZP Netherlands", "/netherlands/work/zzp-netherlands/"),
+          item("ZZP Netherlands", "/netherlands/business/zzp-netherlands/"),
           item("Contractor vs employee Netherlands", "/netherlands/work/contractor-vs-employee-netherlands/"),
         ],
       },
