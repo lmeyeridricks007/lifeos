@@ -8,6 +8,7 @@ export const DOUBLE_TAXATION_PATH = "/netherlands/taxes/double-taxation-netherla
 export const FOREIGN_INCOME_PATH = "/netherlands/taxes/foreign-income-netherlands/" as const;
 export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
 export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
+export const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers/" as const;
 export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
 
 export type FinancialAdvisorProvider = {
@@ -764,6 +765,7 @@ export const financialAdvisorsNetherlandsPage = {
     { label: "Tax Advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Tax support where financial planning overlaps with returns and residency." },
     { label: "Mortgage Advisors", href: MORTGAGE_ADVISORS_PATH, status: "live", description: "Mortgage advice for expats buying property in the Netherlands." },
     { label: "Banks", href: "/netherlands/services/banks/", status: "live", description: "Banking setup and account options for international residents." },
+    { label: "Insurance Providers", href: INSURANCE_PROVIDERS_PATH, status: "live", description: "Compare Dutch insurers for healthcare, home, travel, liability and business insurance." },
     { label: "Wealth Management", href: "/netherlands/services/wealth-management/", status: "comingSoon", description: "Future directory for wealth-management providers." },
   ] satisfies FinancialAdvisorLink[],
   exploreNextCards: [

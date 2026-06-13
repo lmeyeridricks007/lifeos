@@ -1188,7 +1188,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         items: [
           item("Health insurance", "/netherlands/services/health-insurance/"),
           item("Compare health insurance", "/netherlands/services/compare-health-insurance/"),
-          item("Insurance providers", "/netherlands/services/insurance-providers/"),
+          item(
+            "Insurance providers",
+            "/netherlands/services/insurance-providers/",
+            "Compare Dutch insurers across health, liability, home, travel and business insurance."
+          ),
         ],
       },
       {

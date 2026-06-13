@@ -33,6 +33,16 @@ export const NETHERLANDS_SERVICES_CATEGORIES: ServiceCategoryCard[] = [
     featured: true,
   },
   {
+    slug: "insurance-providers",
+    name: "Insurance Providers",
+    href: `${BASE}/insurance-providers/`,
+    description: "Compare Dutch insurance providers across health, liability, home, travel, business and expat-focused insurance needs.",
+    examples: ["Health", "Liability", "Home", "Travel", "Business"],
+    bestForStage: "Before arrival, first weeks, and long-term household planning",
+    group: "banking-insurance",
+    featured: true,
+  },
+  {
     slug: "banks",
     name: "Banks",
     href: `${BASE}/banks/`,

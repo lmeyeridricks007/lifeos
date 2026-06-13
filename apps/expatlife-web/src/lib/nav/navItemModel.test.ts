@@ -7,6 +7,7 @@ const HOLIDAY_PATH = "/netherlands/jobs/holiday-allowance-netherlands/";
 const FINDING_JOBS_PATH = "/netherlands/jobs/finding-jobs-netherlands/";
 const EMPLOYMENT_CONTRACT_PATH = "/netherlands/jobs/employment-contract-netherlands/";
 const BONUS_TAX_PATH = "/netherlands/taxes/bonus-tax-netherlands/";
+const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers/";
 
 function menuRowsForHref(href: string) {
   return Object.entries(MEGA_MENUS).flatMap(([menuKey, menu]) =>
@@ -17,6 +18,27 @@ function menuRowsForHref(href: string) {
     )
   );
 }
+
+describe("insurance providers nav active state", () => {
+  it("treats the insurance providers service route as live", () => {
+    expect(getRouteStatus(INSURANCE_PROVIDERS_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the insurance providers path", () => {
+    expect(getActiveNavKey(INSURANCE_PROVIDERS_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === INSURANCE_PROVIDERS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(INSURANCE_PROVIDERS_PATH, item!)).toBe(true);
+  });
+});
 
 describe("finding jobs nav active state", () => {
   it("treats the shipped finding jobs guide route as live", () => {

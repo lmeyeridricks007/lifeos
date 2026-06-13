@@ -163,7 +163,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   /** Services hub — planned compare / provider directories (nav Soon until live). Live category pages come from `NETHERLANDS_SERVICES_CATEGORIES`. */
   "/netherlands/services/bank-comparison/": { title: "Bank comparison", section: "services" },
   "/netherlands/services/compare-health-insurance/": { title: "Compare health insurance", section: "services" },
-  "/netherlands/services/insurance-providers/": { title: "Insurance providers", section: "services" },
   "/netherlands/services/expat-housing-agencies/": { title: "Expat housing agencies", section: "services" },
   "/netherlands/services/moving-companies/": { title: "Moving companies", section: "services" },
   "/netherlands/services/international-shipping/": { title: "International shipping", section: "services" },

@@ -16,6 +16,7 @@ import type {
 } from "./livingHealthcare.types";
 
 const HEALTH_INSURANCE_GUIDE_PATH = "/netherlands/health-insurance-netherlands/";
+const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers/";
 const HEALTHCARE_ALLOWANCE_TOOL_PATH = "/netherlands/taxes/tools/healthcare-allowance-estimator/";
 const COST_OF_LIVING_TOOL_PATH = "/netherlands/money/tools/cost-of-living-calculator/";
 const CHILDCARE_TOOL_PATH = "/netherlands/family/tools/childcare-cost-estimator/";
@@ -220,6 +221,11 @@ export const livingHealthcareFlowSections: LivingHealthcareFlowSections = {
       ],
       iconKey: "checkCircle2",
       visualKey: "insurance-confidence",
+      internalLink: {
+        href: INSURANCE_PROVIDERS_PATH,
+        label: "Compare insurance providers",
+        description: "Compare Dutch insurers across health, liability, home, travel and expat-focused products.",
+      },
     },
   ],
   gp: [

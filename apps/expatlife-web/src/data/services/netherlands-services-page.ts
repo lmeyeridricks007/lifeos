@@ -156,6 +156,12 @@ export const netherlandsServicesPage: ServicesHubPageData = {
       linkLabel: "Compare Health Insurance",
     },
     {
+      title: "Insurance providers in the Netherlands",
+      description: "Compare Dutch insurers across health, liability, home, contents, travel and business insurance without treating the list as advice.",
+      href: "/netherlands/services/insurance-providers/",
+      linkLabel: "Compare Insurance Providers",
+    },
+    {
       title: "Dutch mobile number and SIM for expats",
       description: "Why a local number matters for banking and DigiD, and SIM-only or prepaid options to compare.",
       href: "/netherlands/services/mobile-connectivity/",
