@@ -940,7 +940,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/cities/best-cities-for-international-professionals/",
             "Job-market fit, net pay vs rent, hybrid commute honesty, and career scenario shortlists."
           ),
-          soon("Amsterdam vs Rotterdam"),
+          item(
+            "Compare cities hub",
+            "/netherlands/cities/compare/",
+            "Head-to-head city comparisons and links to shortlist guides and tools."
+          ),
+          item(
+            "Amsterdam vs Rotterdam",
+            "/netherlands/cities/amsterdam-vs-rotterdam/",
+            "Housing, jobs, salaries, lifestyle, transport and expat life — flagship Randstad comparison."
+          ),
         ],
       },
     ],

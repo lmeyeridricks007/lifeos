@@ -304,6 +304,8 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
         href: "/netherlands/cities/best-cities-for-international-professionals/",
       },
       { label: "Cheapest cities for expats", href: "/netherlands/cities/cheapest-cities-for-expats/" },
+      { label: "Compare cities hub", href: "/netherlands/cities/compare/" },
+      { label: "Amsterdam vs Rotterdam", href: "/netherlands/cities/amsterdam-vs-rotterdam/" },
       { label: "City comparison tool", href: "/netherlands/tools/city-comparison/" },
       { label: "Netherlands hub", href: "/netherlands/" },
       { label: "Services hub", href: "/netherlands/services/" },

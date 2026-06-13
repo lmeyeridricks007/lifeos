@@ -45,6 +45,8 @@ import { freelancingNetherlandsPage } from "@/src/components/jobs/freelancingNet
 import { contractorVsEmployeeNetherlandsPage } from "@/src/components/jobs/contractorVsEmployeeNetherlandsPageModel";
 import { zzpNetherlandsPage } from "@/src/components/business/zzpNetherlandsPageModel";
 import { startingBusinessNetherlandsPage } from "@/src/components/business/startingBusinessNetherlandsPageModel";
+import { amsterdamVsRotterdamPage } from "@/src/components/cities/amsterdam-vs-rotterdam/amsterdamVsRotterdamPageModel";
+import { citiesCompareHubPage } from "@/src/components/cities/compare/citiesCompareHubPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -326,6 +328,45 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       randstadPage.seo.description,
       [...randstadPage.seo.keywords],
       randstadPage.mainCities.map((city) => city.name)
+    ),
+  });
+
+  out.push({
+    id: "guide:amsterdam-vs-rotterdam",
+    title: amsterdamVsRotterdamPage.hero.pageTitle,
+    href: amsterdamVsRotterdamPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Cities",
+    description: amsterdamVsRotterdamPage.seo.description,
+    image: amsterdamVsRotterdamPage.hero.image.src,
+    imageAlt: amsterdamVsRotterdamPage.hero.image.alt,
+    keywords: [...amsterdamVsRotterdamPage.seo.keywords],
+    searchText: joinSearchParts(
+      amsterdamVsRotterdamPage.hero.pageTitle,
+      amsterdamVsRotterdamPage.hero.subtitle,
+      amsterdamVsRotterdamPage.seo.description,
+      [...amsterdamVsRotterdamPage.seo.keywords],
+      amsterdamVsRotterdamPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "hub:cities-compare",
+    title: citiesCompareHubPage.hero.pageTitle,
+    href: citiesCompareHubPage.path,
+    categoryLabel: "Hub",
+    pageType: "hub",
+    section: "Cities",
+    description: citiesCompareHubPage.seo.description,
+    image: amsterdamVsRotterdamPage.hero.image.src,
+    imageAlt: amsterdamVsRotterdamPage.hero.image.alt,
+    keywords: [...citiesCompareHubPage.seo.keywords],
+    searchText: joinSearchParts(
+      citiesCompareHubPage.hero.pageTitle,
+      citiesCompareHubPage.hero.subtitle,
+      citiesCompareHubPage.seo.description,
+      [...citiesCompareHubPage.seo.keywords]
     ),
   });
 

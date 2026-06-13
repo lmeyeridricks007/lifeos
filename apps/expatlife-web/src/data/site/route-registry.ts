@@ -249,6 +249,10 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/cities/cheapest-cities-for-expats/",
   "/netherlands/cities/best-cities-for-families/",
   "/netherlands/cities/best-cities-for-international-professionals/",
+  /** Live App Router guide — city comparison hub index. */
+  "/netherlands/cities/compare/",
+  /** Live App Router guide — Amsterdam vs Rotterdam flagship comparison. */
+  "/netherlands/cities/amsterdam-vs-rotterdam/",
   "/netherlands/randstad/",
   /** Flagship housing hub (App Router) — keep live so nav and related guides never show “Soon”. */
   "/netherlands/housing/",

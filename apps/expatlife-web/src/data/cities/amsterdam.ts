@@ -550,6 +550,8 @@ export const amsterdamCityPage: CityHubPageData = {
   ],
 
   cityLinks: [
+    { label: "Amsterdam vs Rotterdam", href: "/netherlands/cities/amsterdam-vs-rotterdam/" },
+    { label: "Compare Dutch cities", href: "/netherlands/cities/compare/" },
     { label: "Compare the Randstad", href: "/netherlands/randstad/" },
     { label: "Moving to Rotterdam", href: "/netherlands/rotterdam/" },
     { label: "Moving to Utrecht", href: "/netherlands/utrecht/" },

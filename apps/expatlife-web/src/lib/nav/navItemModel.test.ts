@@ -1070,6 +1070,37 @@ describe("mortgage advisors service nav active state", () => {
   });
 });
 
+describe("amsterdam vs rotterdam nav active state", () => {
+  const AMSTERDAM_VS_ROTTERDAM_PATH = "/netherlands/cities/amsterdam-vs-rotterdam/";
+  const CITIES_COMPARE_PATH = "/netherlands/cities/compare/";
+
+  it("treats the shipped comparison guide route as live", () => {
+    expect(getRouteStatus(AMSTERDAM_VS_ROTTERDAM_PATH)).toBe("live");
+    expect(getRouteStatus(CITIES_COMPARE_PATH)).toBe("live");
+  });
+
+  it("highlights Cities for the comparison guide path", () => {
+    expect(getActiveNavKey(AMSTERDAM_VS_ROTTERDAM_PATH)).toBe("cities");
+    expect(getActiveNavKey(CITIES_COMPARE_PATH)).toBe("cities");
+  });
+
+  it("renders the Cities menu row as an active link for Amsterdam vs Rotterdam", () => {
+    const item = MEGA_MENUS.cities.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === AMSTERDAM_VS_ROTTERDAM_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(AMSTERDAM_VS_ROTTERDAM_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Cities > Compare / discover", () => {
+    const rows = menuRowsForHref(AMSTERDAM_VS_ROTTERDAM_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toEqual(["cities:Compare / discover"]);
+  });
+});
+
 describe("financial advisors service nav active state", () => {
   const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors/";
 
