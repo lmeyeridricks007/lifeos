@@ -663,7 +663,7 @@ export const zzpNetherlandsPage = {
   relatedGuides: [
     { label: "Contractor vs Employee", href: CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH, status: "live", description: "Compare employment and ZZP models before choosing your work structure." },
     { label: "Freelancing Netherlands", href: FREELANCING_NETHERLANDS_PATH, status: "live", description: "Broader freelance guide — clients, cities, visas and pipeline." },
-    { label: "Starting a Business Netherlands", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "comingSoon", description: "Future guide for entrepreneurship beyond solo ZZP." },
+    { label: "Starting a Business Netherlands", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "live", description: "Cornerstone entrepreneurship guide beyond solo ZZP." },
     { label: "Expat Taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation when ZZP income joins other streams." },
     { label: "Foreign Income Netherlands", href: FOREIGN_INCOME_NETHERLANDS_PATH, status: "live", description: "Cross-border clients and income outside the Netherlands." },
     { label: "Financial Advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Buffers, pension and planning for variable ZZP income." },
@@ -747,7 +747,7 @@ export const zzpNetherlandsPage = {
   ] satisfies ZzpLink[],
   exploreNextCards: [
     { label: "Freelancing Guide", href: FREELANCING_NETHERLANDS_PATH, status: "live", description: "Broader freelance orientation beyond ZZP definition." },
-    { label: "Starting a Business", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "comingSoon", description: "Future entrepreneurship guide." },
+    { label: "Starting a Business", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "live", description: "Cornerstone entrepreneurship guide for expats." },
     { label: "Expat Taxes", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax planning when ZZP joins other income." },
     { label: "Foreign Income", href: FOREIGN_INCOME_NETHERLANDS_PATH, status: "live", description: "Cross-border client and income context." },
     { label: "Financial Advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Buffers and pension planning for ZZP income." },

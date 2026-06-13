@@ -468,6 +468,7 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
 /** Business App Router guides — highlight Move at top level (canonical URL under `/business/`). */
 const BUSINESS_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/business/zzp-netherlands",
+  "/netherlands/business/starting-a-business-netherlands",
 ];
 
 /** Tax/compensation guides surfaced under Move → More — highlight Move at top level (canonical URL may live under `/taxes/`). */
@@ -854,7 +855,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/contractor-vs-employee-netherlands/",
             "Compare employment and ZZP or contractor models before choosing your work structure."
           ),
-          soon("Starting a business"),
+          item(
+            "Starting a business",
+            "/netherlands/business/starting-a-business-netherlands/",
+            "Cornerstone guide for expats starting a business: KvK, structures, taxes, banking, visas and practical first steps."
+          ),
         ],
       },
       {
@@ -1124,6 +1129,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Employee rights Netherlands", "/netherlands/jobs/employee-rights-netherlands/"),
           item("Freelancing Netherlands", "/netherlands/jobs/freelancing-netherlands/"),
           item("ZZP Netherlands", "/netherlands/business/zzp-netherlands/"),
+          item("Starting a business Netherlands", "/netherlands/business/starting-a-business-netherlands/"),
           item("Contractor vs employee Netherlands", "/netherlands/jobs/contractor-vs-employee-netherlands/"),
         ],
       },

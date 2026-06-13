@@ -485,6 +485,57 @@ describe("contractor vs employee nav active state", () => {
   });
 });
 
+describe("starting a business nav active state", () => {
+  const STARTING_BUSINESS_PATH = "/netherlands/business/starting-a-business-netherlands/";
+
+  it("treats the shipped starting a business guide route as live", () => {
+    expect(getRouteStatus(STARTING_BUSINESS_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the business guide path", () => {
+    expect(getActiveNavKey(STARTING_BUSINESS_PATH)).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical business href", () => {
+    const item = {
+      label: "Starting a business",
+      href: STARTING_BUSINESS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(STARTING_BUSINESS_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move Business menu row as an active link", () => {
+    const item = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === STARTING_BUSINESS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(STARTING_BUSINESS_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money menu row as an active link", () => {
+    const item = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === STARTING_BUSINESS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(STARTING_BUSINESS_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Move > Business and Money > Employment contracts & rights", () => {
+    const rows = menuRowsForHref(STARTING_BUSINESS_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Employment contracts & rights",
+      "moving:Business",
+    ]);
+  });
+});
+
 describe("holiday allowance nav active state", () => {
   it("highlights Move (not Money) for the jobs guide path", () => {
     expect(getActiveNavKey(HOLIDAY_PATH)).toBe("moving");

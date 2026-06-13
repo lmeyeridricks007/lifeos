@@ -702,7 +702,7 @@ export const freelancingNetherlandsPage = {
     { label: "Expat Taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation when freelance income joins employment or foreign assets." },
     { label: "Foreign Income Netherlands", href: FOREIGN_INCOME_NETHERLANDS_PATH, status: "live", description: "Cross-border income context for international client work." },
     { label: "Financial Advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Pension, buffers and planning when income becomes variable." },
-    { label: "Starting a Business Netherlands", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "comingSoon", description: "Future guide for broader entrepreneurship beyond solo ZZP." },
+    { label: "Starting a Business Netherlands", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "live", description: "Cornerstone guide for broader entrepreneurship beyond solo ZZP." },
   ] satisfies FreelancingLink[],
   relatedGuideReadingOrder: [
     "Open finding jobs when freelancing is a bridge while you search for employment.",
@@ -795,7 +795,7 @@ export const freelancingNetherlandsPage = {
     "Use financial advisor listings when buffers, pension gaps or insurance add complexity.",
   ],
   exploreNextCards: [
-    { label: "Starting a Business", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "comingSoon", description: "Future guide for broader entrepreneurship beyond solo ZZP." },
+    { label: "Starting a Business", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "live", description: "Cornerstone entrepreneurship guide for expats." },
     { label: "Expat Taxes", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation when freelance income joins other streams." },
     { label: "Foreign Income", href: FOREIGN_INCOME_NETHERLANDS_PATH, status: "live", description: "Cross-border income when clients sit outside the Netherlands." },
     { label: "Financial Advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Buffers, pension and insurance planning for variable income." },

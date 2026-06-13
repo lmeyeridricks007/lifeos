@@ -44,6 +44,7 @@ import { employeeRightsNetherlandsPage } from "@/src/components/jobs/employeeRig
 import { freelancingNetherlandsPage } from "@/src/components/jobs/freelancingNetherlandsPageModel";
 import { contractorVsEmployeeNetherlandsPage } from "@/src/components/jobs/contractorVsEmployeeNetherlandsPageModel";
 import { zzpNetherlandsPage } from "@/src/components/business/zzpNetherlandsPageModel";
+import { startingBusinessNetherlandsPage } from "@/src/components/business/startingBusinessNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
 import { healthInsuranceCategoryPage } from "@/src/data/services/categories/health-insurance";
@@ -980,6 +981,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       contractorVsEmployeeNetherlandsPage.mistakeCards.map((card) => `${card.title} ${card.body}`),
       contractorVsEmployeeNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       contractorVsEmployeeNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:starting-a-business-netherlands",
+    title: startingBusinessNetherlandsPage.hero.pageTitle,
+    href: startingBusinessNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Business",
+    description: startingBusinessNetherlandsPage.seo.description,
+    image: startingBusinessNetherlandsPage.hero.image.src,
+    imageAlt: startingBusinessNetherlandsPage.hero.image.alt,
+    keywords: [...startingBusinessNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      startingBusinessNetherlandsPage.hero.pageTitle,
+      startingBusinessNetherlandsPage.hero.subtitle,
+      startingBusinessNetherlandsPage.seo.description,
+      [...startingBusinessNetherlandsPage.seo.keywords],
+      startingBusinessNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      startingBusinessNetherlandsPage.mistakeCards.map((card) => `${card.title} ${card.body}`),
+      startingBusinessNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      startingBusinessNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

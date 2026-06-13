@@ -458,6 +458,15 @@ export function getContractorVsEmployeeNetherlandsSupportCardGroups(): {
   return getEmploymentContractNetherlandsSupportCardGroups();
 }
 
+export function getStartingBusinessNetherlandsSupportCardGroups(): {
+  visaPermits: PageRecommendedProviderCard[];
+  taxPayroll: PageRecommendedProviderCard[];
+  relocation: PageRecommendedProviderCard[];
+  setup: PageRecommendedProviderCard[];
+} {
+  return getEmploymentContractNetherlandsSupportCardGroups();
+}
+
 export function getZzpNetherlandsSupportCardGroups(): {
   visaPermits: PageRecommendedProviderCard[];
   taxPayroll: PageRecommendedProviderCard[];

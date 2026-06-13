@@ -334,6 +334,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/contractor-vs-employee-netherlands/",
   /** Live App Router guide — ZZP self-employment cornerstone (Business cluster). */
   "/netherlands/business/zzp-netherlands/",
+  /** Live App Router guide — starting a business cornerstone (Business cluster). */
+  "/netherlands/business/starting-a-business-netherlands/",
   /** Money pillar tax orientation guide (App Router). */
   "/netherlands/money/tax-guide-for-expats/",
   "/netherlands/money/how-taxes-work-in-the-netherlands/",
