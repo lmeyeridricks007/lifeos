@@ -96,7 +96,7 @@ export const EMPLOYMENT_TYPE_RELATED_GUIDES = [
     description: "Useful when employer-driven work authorization may change how you interpret the work setup.",
   },
   {
-    href: `${NL_BASE}/work/contractor-vs-employee-netherlands/`,
+    href: `${NL_BASE}/jobs/contractor-vs-employee-netherlands/`,
     title: "Contractor vs employee Netherlands",
     description: "How independence differs from payroll in practice — beyond the label on the contract.",
   },
@@ -106,7 +106,7 @@ export const EMPLOYMENT_TYPE_RELATED_GUIDES = [
     description: "Self-employment registration, mindset, and how ZZP compares to umbrella contractor routes.",
   },
   {
-    href: `${NL_BASE}/work/freelancing-netherlands/`,
+    href: `${NL_BASE}/jobs/freelancing-netherlands/`,
     title: "Freelancing in the Netherlands",
     description: "Permits, clients, and administration when you are not on a standard payslip.",
   },

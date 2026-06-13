@@ -42,6 +42,7 @@ import { probationPeriodNetherlandsPage } from "@/src/components/jobs/probationP
 import { noticePeriodNetherlandsPage } from "@/src/components/jobs/noticePeriodNetherlandsPageModel";
 import { employeeRightsNetherlandsPage } from "@/src/components/jobs/employeeRightsNetherlandsPageModel";
 import { freelancingNetherlandsPage } from "@/src/components/jobs/freelancingNetherlandsPageModel";
+import { contractorVsEmployeeNetherlandsPage } from "@/src/components/jobs/contractorVsEmployeeNetherlandsPageModel";
 import { zzpNetherlandsPage } from "@/src/components/business/zzpNetherlandsPageModel";
 import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHubPages";
 import { banksCategoryPage } from "@/src/data/services/categories/banks";
@@ -956,6 +957,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       freelancingNetherlandsPage.mistakeCards.map((card) => `${card.title} ${card.body}`),
       freelancingNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       freelancingNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:contractor-vs-employee-netherlands",
+    title: contractorVsEmployeeNetherlandsPage.hero.pageTitle,
+    href: contractorVsEmployeeNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: contractorVsEmployeeNetherlandsPage.seo.description,
+    image: contractorVsEmployeeNetherlandsPage.hero.image.src,
+    imageAlt: contractorVsEmployeeNetherlandsPage.hero.image.alt,
+    keywords: [...contractorVsEmployeeNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      contractorVsEmployeeNetherlandsPage.hero.pageTitle,
+      contractorVsEmployeeNetherlandsPage.hero.subtitle,
+      contractorVsEmployeeNetherlandsPage.seo.description,
+      [...contractorVsEmployeeNetherlandsPage.seo.keywords],
+      contractorVsEmployeeNetherlandsPage.snapshotCards.map((card) => `${card.label} ${card.value}`),
+      contractorVsEmployeeNetherlandsPage.mistakeCards.map((card) => `${card.title} ${card.body}`),
+      contractorVsEmployeeNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      contractorVsEmployeeNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

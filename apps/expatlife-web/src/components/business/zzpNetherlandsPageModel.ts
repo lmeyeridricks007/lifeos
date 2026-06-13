@@ -2,6 +2,7 @@ export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as 
 export const ZZP_AFFILIATE_PLACEMENT_ID = "nl-business-zzp-support-providers" as const;
 
 export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
+export const CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands/" as const;
 export const BUSINESS_HUB_PATH = "/netherlands/business/" as const;
 export const STARTING_BUSINESS_NETHERLANDS_PATH = "/netherlands/business/starting-a-business-netherlands/" as const;
 export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/taxes/expat-taxes-netherlands/" as const;
@@ -660,6 +661,7 @@ export const zzpNetherlandsPage = {
     { profile: "Accountant shortlist", scenario: "Three quotes; unsure what to ask", whatToCheck: "Use conversation prompts table — scope BTW, cross-border and first-year filings." },
   ] satisfies ZzpScenarioRow[],
   relatedGuides: [
+    { label: "Contractor vs Employee", href: CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH, status: "live", description: "Compare employment and ZZP models before choosing your work structure." },
     { label: "Freelancing Netherlands", href: FREELANCING_NETHERLANDS_PATH, status: "live", description: "Broader freelance guide — clients, cities, visas and pipeline." },
     { label: "Starting a Business Netherlands", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "comingSoon", description: "Future guide for entrepreneurship beyond solo ZZP." },
     { label: "Expat Taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation when ZZP income joins other streams." },

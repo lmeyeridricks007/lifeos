@@ -255,6 +255,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/contractor-vs-employee-netherlands",
+        destination: "/netherlands/jobs/contractor-vs-employee-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/contractor-vs-employee-netherlands/",
+        destination: "/netherlands/jobs/contractor-vs-employee-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/zzp-netherlands",
         destination: "/netherlands/business/zzp-netherlands/",
         permanent: true,

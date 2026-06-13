@@ -184,7 +184,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/work/holiday-allowance-netherlands/": { title: "Holiday allowance Netherlands", section: "guides" },
   "/netherlands/work/freelancing-netherlands/": { title: "Freelancing Netherlands", section: "guides" },
   "/netherlands/work/zzp-netherlands/": { title: "ZZP Netherlands", section: "guides" },
-  "/netherlands/work/contractor-vs-employee-netherlands/": { title: "Contractor vs employee Netherlands", section: "guides" },
   "/netherlands/work/work-culture-netherlands/": { title: "Work culture Netherlands", section: "guides" },
   "/netherlands/work/work-hours-netherlands/": { title: "Work hours Netherlands", section: "guides" },
   "/netherlands/work/job-websites-netherlands/": { title: "Job websites Netherlands", section: "guides" },
@@ -331,6 +330,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/notice-period-netherlands/",
   "/netherlands/jobs/employee-rights-netherlands/",
   "/netherlands/jobs/freelancing-netherlands/",
+  /** Live App Router guide — contractor vs employee comparison (Jobs & salaries cluster). */
+  "/netherlands/jobs/contractor-vs-employee-netherlands/",
   /** Live App Router guide — ZZP self-employment cornerstone (Business cluster). */
   "/netherlands/business/zzp-netherlands/",
   /** Money pillar tax orientation guide (App Router). */
@@ -369,6 +370,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/work/freelancing-netherlands/",
   /** Legacy Work-cluster URL; 301 → `/netherlands/business/zzp-netherlands/`. */
   "/netherlands/work/zzp-netherlands/",
+  /** Legacy Work-cluster URL; 301 → `/netherlands/jobs/contractor-vs-employee-netherlands/`. */
+  "/netherlands/work/contractor-vs-employee-netherlands/",
   /** Legacy Work-cluster URL; 301 → Move guide — must not surface as “coming soon” in nav or link helpers. */
   "/netherlands/work/changing-jobs-netherlands/",
   /** Legacy Work-cluster URL; 301 → Move guide. */

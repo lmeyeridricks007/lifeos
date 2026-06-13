@@ -1,4 +1,5 @@
 export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
+export const CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands/" as const;
 export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as const;
 export const FREELANCING_AFFILIATE_PLACEMENT_ID = "nl-jobs-freelancing-support-providers" as const;
 
@@ -695,6 +696,7 @@ export const freelancingNetherlandsPage = {
     { q: "Is freelancing popular in the Netherlands?", a: "Yes — ZZP self-employment is common across consulting, tech, creative and business services in major cities." },
   ],
   relatedGuides: [
+    { label: "Contractor vs Employee", href: CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH, status: "live", description: "Compare employment and ZZP or contractor models: income, benefits, taxes and expat tradeoffs." },
     { label: "ZZP in the Netherlands", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Cornerstone guide on Dutch ZZP registration, taxes, invoicing and expat context." },
     { label: "Finding Jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Employer routes and job search when freelancing is a bridge or alternative." },
     { label: "Expat Taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation when freelance income joins employment or foreign assets." },
@@ -708,6 +710,7 @@ export const freelancingNetherlandsPage = {
     "Use financial advisors when buffers, pension gaps or insurance add complexity.",
   ],
   ecosystemLinks: [
+    { label: "Contractor vs employee", href: CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH, status: "live", description: "Work-model comparison hub between employment and ZZP routes." },
     { label: "Finding jobs Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Job search hub alongside freelance planning." },
     { label: "Expat taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Core tax orientation for international residents." },
     { label: "Foreign income Netherlands", href: FOREIGN_INCOME_NETHERLANDS_PATH, status: "live", description: "When clients or assets sit outside the Netherlands." },

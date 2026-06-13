@@ -462,6 +462,7 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/notice-period-netherlands",
   "/netherlands/jobs/employee-rights-netherlands",
   "/netherlands/jobs/freelancing-netherlands",
+  "/netherlands/jobs/contractor-vs-employee-netherlands",
 ];
 
 /** Business App Router guides — highlight Move at top level (canonical URL under `/business/`). */
@@ -500,7 +501,7 @@ const LIVING_HOUSING_GUIDE_PREFIXES: readonly string[] = [
 ];
 
 function isJobsSalaryGuidePath(pathname: string): boolean {
-  const base = pathname.split("?")[0].replace(/\/+$/, "") || "/";
+  const base = resolveNavActivePath(pathname).split("?")[0].replace(/\/+$/, "") || "/";
   return JOBS_SALARY_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
 }
 
@@ -829,6 +830,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "ZZP registration, taxes, client contracts and freelancing orientation for expats."
           ),
           item(
+            "Contractor vs employee",
+            "/netherlands/jobs/contractor-vs-employee-netherlands/",
+            "Compare employment and contractor or ZZP work models: income, benefits, taxes, pensions and expat tradeoffs."
+          ),
+          item(
             "Holiday allowance",
             "/netherlands/jobs/holiday-allowance-netherlands/",
             "How vakantiegeld works for expats: payment timing, salary inclusion and tax context."
@@ -842,6 +848,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "ZZP in the Netherlands",
             "/netherlands/business/zzp-netherlands/",
             "What a ZZP'er is, KvK registration, taxes, invoicing and expat considerations for Dutch self-employment."
+          ),
+          item(
+            "Contractor vs employee",
+            "/netherlands/jobs/contractor-vs-employee-netherlands/",
+            "Compare employment and ZZP or contractor models before choosing your work structure."
           ),
           soon("Starting a business"),
         ],
@@ -1113,7 +1124,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Employee rights Netherlands", "/netherlands/jobs/employee-rights-netherlands/"),
           item("Freelancing Netherlands", "/netherlands/jobs/freelancing-netherlands/"),
           item("ZZP Netherlands", "/netherlands/business/zzp-netherlands/"),
-          item("Contractor vs employee Netherlands", "/netherlands/work/contractor-vs-employee-netherlands/"),
+          item("Contractor vs employee Netherlands", "/netherlands/jobs/contractor-vs-employee-netherlands/"),
         ],
       },
       {

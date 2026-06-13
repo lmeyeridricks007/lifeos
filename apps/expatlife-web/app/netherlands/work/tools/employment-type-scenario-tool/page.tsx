@@ -168,7 +168,7 @@ export default function EmploymentTypeScenarioToolPage() {
             primaryCtaLabel="Start comparing"
             primaryCtaScrollToId="tool-inputs"
             secondaryCtaLabel="Read work model guide"
-            secondaryCtaHref={`${NL_BASE}/work/contractor-vs-employee-netherlands/`}
+            secondaryCtaHref={`${NL_BASE}/jobs/contractor-vs-employee-netherlands/`}
             image={{
               src: HERO_IMAGE,
               alt: "Desk with laptop and contract papers — visual for comparing employee, contractor, and ZZP work in the Netherlands.",
@@ -379,7 +379,7 @@ export default function EmploymentTypeScenarioToolPage() {
                     “Contractor” here includes umbrella / payroll-style arrangements where a provider withholds wage tax. That is not
                     the same as ZZP invoicing. Employees sit directly on the client payroll. Misclassification risk is a legal topic —
                     start from our{" "}
-                    <Link href={`${NL_BASE}/work/contractor-vs-employee-netherlands/`} className="font-medium text-brand-600 hover:underline">
+                    <Link href={`${NL_BASE}/jobs/contractor-vs-employee-netherlands/`} className="font-medium text-brand-600 hover:underline">
                       contractor vs employee guide
                     </Link>{" "}
                     and professional advice.
