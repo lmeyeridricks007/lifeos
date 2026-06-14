@@ -38,6 +38,8 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/buy-vs-rent-netherlands": "/netherlands/housing/buy-vs-rent-netherlands",
   "/netherlands/double-taxation-netherlands": "/netherlands/taxes/double-taxation-netherlands",
   "/netherlands/taxes/expat-taxes-netherlands": "/netherlands/money/expat-taxes-netherlands",
+  "/netherlands/living/utilities": "/netherlands/utilities/utilities-netherlands",
+  "/netherlands/utilities-in-netherlands": "/netherlands/utilities/utilities-netherlands",
 };
 
 /** Normalize pathname/href for active-state checks (legacy 301 sources → canonical guides). */
@@ -55,6 +57,7 @@ const NAV_HUB_EXACT_MATCH_ONLY = new Set([
   "/netherlands/services",
   "/netherlands/tools",
   "/netherlands/living",
+  "/netherlands/utilities",
   "/netherlands/moving-to-the-netherlands",
   "/netherlands/randstad",
 ]);

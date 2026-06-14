@@ -484,6 +484,7 @@ const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
 
 /** Housing-related guides under Living → Housing (URL may live under `/taxes/`). */
 const LIVING_HOUSING_GUIDE_PREFIXES: readonly string[] = [
+  "/netherlands/utilities",
   "/netherlands/taxes/rent-allowance-netherlands",
   /** Legacy URL (301 → canonical guide) — keep Living tab active before redirect. */
   "/netherlands/taxes/rent-allowance",
@@ -557,6 +558,7 @@ function isMovingPillarPath(pathname: string): boolean {
     "/netherlands/document-readiness-checker",
     "/netherlands/municipality-registration-netherlands",
     "/netherlands/health-insurance-netherlands",
+    "/netherlands/utilities",
     "/netherlands/digid-awareness",
     "/netherlands/shipping-household-goods-netherlands",
     "/netherlands/open-bank-account-netherlands",
@@ -599,6 +601,7 @@ const HOUSING_GUIDE_FIRST_SEGMENTS = new Set([
   "social-housing-netherlands",
   "private-rental-netherlands",
   "furnished-vs-unfurnished-netherlands",
+  "utilities",
   "utilities-in-netherlands",
   "electricity-providers-netherlands",
   "internet-providers-netherlands",
@@ -744,6 +747,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("DigiD guide", "/netherlands/digid-awareness/"),
           item("Open a bank account", "/netherlands/open-bank-account-netherlands"),
           item("Shipping household goods", "/netherlands/shipping-household-goods-netherlands"),
+        ],
+      },
+      {
+        title: "Practical life",
+        items: [
+          item(
+            "Utilities",
+            "/netherlands/utilities/utilities-netherlands/",
+            "Set up electricity, gas or heating, water, internet, mobile and waste collection after moving."
+          ),
         ],
       },
       {
@@ -1300,7 +1313,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Utilities",
         items: [
-          item("Utilities in the Netherlands", "/netherlands/living/utilities/", "Energy, water, and setup flow."),
+          item(
+            "Utilities in the Netherlands",
+            "/netherlands/utilities/utilities-netherlands/",
+            "Set up electricity, gas or heating, water, internet, mobile and waste collection after moving."
+          ),
           item("Energy and water", "/netherlands/living/energy-and-water/", "Suppliers and metering basics."),
           item("Internet and mobile", "/netherlands/living/internet-and-mobile/", "Home connectivity setup."),
           item("Municipality services", "/netherlands/living/municipality-services/", "Local digital services (not BRP)."),

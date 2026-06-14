@@ -44,6 +44,7 @@ export const FOOTER_GROUPS = {
     links: [
       { label: "Netherlands", href: "/netherlands/" },
       { label: "Survival Guide", href: "/netherlands/living/survival-guide/" },
+      { label: "Utilities", href: "/netherlands/utilities/utilities-netherlands/" },
       { label: "Getting around", href: "/netherlands/living/getting-around/" },
       { label: "Essential apps", href: "/netherlands/living/apps/" },
       { label: "Dutch Culture & Etiquette", href: "/netherlands/living/culture-etiquette/" },
@@ -112,6 +113,7 @@ export const SITEMAP_MAIN_LINKS: FooterLink[] = [
   { label: "Home", href: "/" },
   { label: "Netherlands", href: "/netherlands/" },
   { label: "Living Survival Guide", href: "/netherlands/living/survival-guide/" },
+  { label: "Utilities in the Netherlands", href: "/netherlands/utilities/utilities-netherlands/" },
   { label: "Getting around in the Netherlands", href: "/netherlands/living/getting-around/" },
   { label: "Essential apps (Netherlands)", href: "/netherlands/living/apps/" },
   { label: "Language & phrases for life in the Netherlands", href: "/netherlands/living/language/" },

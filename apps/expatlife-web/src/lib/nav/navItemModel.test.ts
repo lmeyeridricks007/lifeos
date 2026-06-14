@@ -8,6 +8,7 @@ const FINDING_JOBS_PATH = "/netherlands/jobs/finding-jobs-netherlands/";
 const EMPLOYMENT_CONTRACT_PATH = "/netherlands/jobs/employment-contract-netherlands/";
 const BONUS_TAX_PATH = "/netherlands/taxes/bonus-tax-netherlands/";
 const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers/";
+const UTILITIES_PATH = "/netherlands/utilities/utilities-netherlands/";
 
 function menuRowsForHref(href: string) {
   return Object.entries(MEGA_MENUS).flatMap(([menuKey, menu]) =>
@@ -37,6 +38,41 @@ describe("insurance providers nav active state", () => {
     expect(item?.navStatus).toBe("live");
     expect(isNavItemLinkable(item!)).toBe(true);
     expect(isNavItemActive(INSURANCE_PROVIDERS_PATH, item!)).toBe(true);
+  });
+});
+
+describe("utilities nav active state", () => {
+  it("treats the utilities guide route as live", () => {
+    expect(getRouteStatus(UTILITIES_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the utilities guide path", () => {
+    expect(getActiveNavKey(UTILITIES_PATH)).toBe("living");
+  });
+
+  it("highlights Living for the legacy living utilities scaffold href", () => {
+    expect(getActiveNavKey("/netherlands/living/utilities/")).toBe("living");
+  });
+
+  it("renders the Living utilities menu row as an active link", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Utilities in the Netherlands");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(UTILITIES_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Move practical life menu row as an active link", () => {
+    const rows = menuRowsForHref(UTILITIES_PATH);
+    const moveRow = rows.find((row) => row.menuKey === "moving" && row.sectionTitle === "Practical life");
+
+    expect(moveRow).toBeDefined();
+    expect(moveRow?.item.navStatus).toBe("live");
+    expect(isNavItemLinkable(moveRow!.item)).toBe(true);
+    expect(isNavItemActive(UTILITIES_PATH, moveRow!.item)).toBe(true);
   });
 });
 

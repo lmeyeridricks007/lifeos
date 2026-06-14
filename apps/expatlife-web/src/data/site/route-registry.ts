@@ -119,6 +119,11 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/utilities-in-netherlands/": { title: "Utilities in the Netherlands", section: "guides" },
   "/netherlands/electricity-providers-netherlands/": { title: "Electricity providers Netherlands", section: "guides" },
   "/netherlands/internet-providers-netherlands/": { title: "Internet providers Netherlands", section: "guides" },
+  "/netherlands/utilities/electricity-netherlands/": { title: "Electricity Netherlands", section: "guides" },
+  "/netherlands/utilities/internet-providers-netherlands/": { title: "Internet Providers Netherlands", section: "guides" },
+  "/netherlands/utilities/water-netherlands/": { title: "Water Netherlands", section: "guides" },
+  "/netherlands/utilities/mobile-providers-netherlands/": { title: "Mobile Providers Netherlands", section: "guides" },
+  "/netherlands/utilities/energy-providers-netherlands/": { title: "Energy Providers Netherlands", section: "guides" },
   "/netherlands/registering-address-rental/": { title: "Registering address (rental)", section: "guides" },
   "/netherlands/rental-insurance-netherlands/": { title: "Rental insurance Netherlands", section: "guides" },
   "/netherlands/inventory-check-rental-netherlands/": { title: "Inventory check rental Netherlands", section: "guides" },
@@ -263,6 +268,9 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/taxes/property-tax-netherlands/",
   /** Live App Router guide — buy vs rent decision guide for expats (Housing cluster). */
   "/netherlands/housing/buy-vs-rent-netherlands/",
+  /** Utilities hub and setup guide for expats after moving. */
+  "/netherlands/utilities/",
+  "/netherlands/utilities/utilities-netherlands/",
   /** Legacy flat URL; 301 → buying guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/buying-house-netherlands/",
   /** Legacy flat URL; 301 → mortgage guide — keep live so nav never surfaces as “Soon”. */
