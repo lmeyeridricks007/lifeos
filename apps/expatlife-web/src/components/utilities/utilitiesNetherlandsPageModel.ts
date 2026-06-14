@@ -727,6 +727,7 @@ export const utilitiesNetherlandsPage = {
     { label: "Local municipalities", href: "https://www.government.nl/topics/municipalities", description: "Municipality routes for waste collection, local taxes and neighborhood rules." },
   ],
   relatedGuides: [
+    { label: "Energy and Water", href: "/netherlands/utilities/energy-and-water-netherlands/", status: "live", description: "Deep guide to electricity, gas, water, district heating and costs." },
     { label: "Renting in the Netherlands", href: RENTING_NETHERLANDS_PATH, status: "comingSoon", description: "Rental setup, contracts and what to confirm before signing." },
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Owner responsibilities, utilities and post-transfer setup." },
     { label: "Moving to the Netherlands", href: MOVING_TO_NETHERLANDS_PATH, status: "live", description: "Relocation planning and first-week admin." },

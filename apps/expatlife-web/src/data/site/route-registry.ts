@@ -122,6 +122,8 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/utilities/electricity-netherlands/": { title: "Electricity Netherlands", section: "guides" },
   "/netherlands/utilities/internet-providers-netherlands/": { title: "Internet Providers Netherlands", section: "guides" },
   "/netherlands/utilities/water-netherlands/": { title: "Water Netherlands", section: "guides" },
+  "/netherlands/utilities/gas-netherlands/": { title: "Gas Netherlands", section: "guides" },
+  "/netherlands/utilities/district-heating-netherlands/": { title: "District Heating Netherlands", section: "guides" },
   "/netherlands/utilities/mobile-providers-netherlands/": { title: "Mobile Providers Netherlands", section: "guides" },
   "/netherlands/utilities/energy-providers-netherlands/": { title: "Energy Providers Netherlands", section: "guides" },
   "/netherlands/registering-address-rental/": { title: "Registering address (rental)", section: "guides" },
@@ -271,6 +273,7 @@ const EXTRA_LIVE_PATHS = [
   /** Utilities hub and setup guide for expats after moving. */
   "/netherlands/utilities/",
   "/netherlands/utilities/utilities-netherlands/",
+  "/netherlands/utilities/energy-and-water-netherlands/",
   /** Legacy flat URL; 301 → buying guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/buying-house-netherlands/",
   /** Legacy flat URL; 301 → mortgage guide — keep live so nav never surfaces as “Soon”. */

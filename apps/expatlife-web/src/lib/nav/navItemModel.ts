@@ -39,7 +39,9 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/double-taxation-netherlands": "/netherlands/taxes/double-taxation-netherlands",
   "/netherlands/taxes/expat-taxes-netherlands": "/netherlands/money/expat-taxes-netherlands",
   "/netherlands/living/utilities": "/netherlands/utilities/utilities-netherlands",
+  "/netherlands/living/energy-and-water": "/netherlands/utilities/energy-and-water-netherlands",
   "/netherlands/utilities-in-netherlands": "/netherlands/utilities/utilities-netherlands",
+  "/netherlands/utilities": "/netherlands/utilities/utilities-netherlands",
 };
 
 /** Normalize pathname/href for active-state checks (legacy 301 sources → canonical guides). */

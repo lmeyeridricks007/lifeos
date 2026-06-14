@@ -41,6 +41,68 @@ describe("insurance providers nav active state", () => {
   });
 });
 
+describe("energy and water nav active state", () => {
+  const ENERGY_WATER_PATH = "/netherlands/utilities/energy-and-water-netherlands/";
+  const UTILITIES_HUB_PATH = "/netherlands/utilities/";
+
+  it("treats the energy and water guide route as live", () => {
+    expect(getRouteStatus(ENERGY_WATER_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the energy and water guide path", () => {
+    expect(getActiveNavKey(ENERGY_WATER_PATH)).toBe("living");
+  });
+
+  it("renders the Living energy and water menu row as an active link", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Energy and water");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ENERGY_WATER_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Move practical life energy and water row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Practical life")
+      ?.items.find((row) => row.label === "Energy and water");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ENERGY_WATER_PATH, item!)).toBe(true);
+  });
+
+  it("highlights energy and water for legacy living scaffold hrefs", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Energy and water");
+
+    expect(item).toBeDefined();
+    expect(isNavItemActive("/netherlands/living/energy-and-water/", item!)).toBe(true);
+  });
+
+  it("does not highlight the main utilities guide when on energy and water", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Utilities in the Netherlands");
+
+    expect(item).toBeDefined();
+    expect(isNavItemActive(ENERGY_WATER_PATH, item!)).toBe(false);
+  });
+
+  it("highlights the main utilities guide on the utilities hub path", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Utilities in the Netherlands");
+
+    expect(item).toBeDefined();
+    expect(isNavItemActive(UTILITIES_HUB_PATH, item!)).toBe(true);
+  });
+});
+
 describe("utilities nav active state", () => {
   it("treats the utilities guide route as live", () => {
     expect(getRouteStatus(UTILITIES_PATH)).toBe("live");

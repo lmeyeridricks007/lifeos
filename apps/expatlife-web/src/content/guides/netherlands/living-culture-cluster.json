@@ -159,7 +159,7 @@
       "menuVisible": true,
       "navGroup": "utilities",
       "intro": "From move-in meter readings to choosing a supplier—utilities are a core post-arrival task once you have keys.",
-      "canonicalGuidePath": "/netherlands/utilities-in-netherlands/",
+      "canonicalGuidePath": "/netherlands/utilities/utilities-netherlands/",
       "canonicalLabel": "Utilities guide",
       "related": [
         { "label": "Electricity providers", "href": "/netherlands/electricity-providers-netherlands/", "description": "Compare supplier models." },
@@ -180,10 +180,10 @@
       "menuVisible": true,
       "navGroup": "utilities",
       "intro": "Energy retail choice and water authority rules vary by region—this scaffold links you to provider directories and official explainers.",
-      "canonicalGuidePath": null,
-      "canonicalLabel": null,
+      "canonicalGuidePath": "/netherlands/utilities/energy-and-water-netherlands/",
+      "canonicalLabel": "Energy and water guide",
       "related": [
-        { "label": "Utilities overview", "href": "/netherlands/living/utilities/", "description": "Start of the utilities cluster." },
+        { "label": "Utilities overview", "href": "/netherlands/utilities/utilities-netherlands/", "description": "Complete utilities setup guide." },
         { "label": "Electricity providers", "href": "/netherlands/electricity-providers-netherlands/", "description": "Services directory slice." }
       ]
     },

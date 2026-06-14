@@ -85,6 +85,36 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/utilities",
+        destination: "/netherlands/utilities/utilities-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/utilities/",
+        destination: "/netherlands/utilities/utilities-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/energy-and-water",
+        destination: "/netherlands/utilities/energy-and-water-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/energy-and-water/",
+        destination: "/netherlands/utilities/energy-and-water-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/utilities-in-netherlands",
+        destination: "/netherlands/utilities/utilities-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/utilities-in-netherlands/",
+        destination: "/netherlands/utilities/utilities-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/housing/tools/utilities-services-comparison-tool",
         destination: "/netherlands/living/tools/utilities-services-comparison/",
         permanent: true,
