@@ -190,22 +190,22 @@
     {
       "cluster": "living",
       "slug": "internet-and-mobile",
-      "path": "/netherlands/living/internet-and-mobile/",
+      "path": "/netherlands/utilities/internet-and-mobile-netherlands/",
       "title": "Internet and mobile in the Netherlands",
       "metaDescription": "Home internet and mobile plans for expats in the Netherlands: contracts, prepaid, and what to book before move-in.",
       "breadcrumbLabel": "Internet and mobile",
       "section": "guides",
       "clusterLabel": "Living in the Netherlands",
       "pageType": "guide",
-      "contentStatus": "scaffold",
+      "contentStatus": "live",
       "menuVisible": true,
       "navGroup": "utilities",
       "intro": "Stable Wi‑Fi and a Dutch mobile number simplify banking alerts, 2FA, and gemeente contact—plan both early.",
-      "canonicalGuidePath": null,
-      "canonicalLabel": null,
+      "canonicalGuidePath": "/netherlands/utilities/internet-and-mobile-netherlands/",
+      "canonicalLabel": "Internet and Mobile in the Netherlands",
       "related": [
-        { "label": "Mobile connectivity (services)", "href": "/netherlands/services/mobile-connectivity/", "description": "Provider-style directory page." },
-        { "label": "Internet providers", "href": "/netherlands/internet-providers-netherlands/", "description": "Broadband comparison entry points." }
+        { "label": "Utilities overview", "href": "/netherlands/utilities/utilities-netherlands/", "description": "Complete utilities setup guide." },
+        { "label": "Energy and water", "href": "/netherlands/utilities/energy-and-water-netherlands/", "description": "Electricity, gas and water setup." }
       ]
     },
     {

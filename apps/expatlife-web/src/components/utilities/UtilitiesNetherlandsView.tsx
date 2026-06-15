@@ -38,6 +38,7 @@ import {
 import { movingNlCardMicroLiftClass, movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
 import { GuidePremiumVisualFigure } from "@/src/components/guides/GuidePremiumVisualFigure";
 import { utilitiesNetherlandsPage as page, type UtilitiesLink } from "./utilitiesNetherlandsPageModel";
+import { INTERNET_AND_MOBILE_NETHERLANDS_PATH } from "./internetAndMobileNetherlandsPageModel";
 
 const baseUrl = getSiteOrigin();
 
@@ -467,6 +468,21 @@ export function UtilitiesNetherlandsView() {
               <div className={guidePremiumSectionDetailStackClass}>
                 <VisualTextDetails details={page.visualTextDetails.connectivity} />
                 <InternetTable />
+                <Link
+                  href={INTERNET_AND_MOBILE_NETHERLANDS_PATH}
+                  className={cn(cardClass, "block", transitionInteractive, activeBrightnessPress)}
+                >
+                  <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
+                  <Router className="h-5 w-5 text-brand-strong" aria-hidden />
+                  <h3 className="mt-3 text-lg font-black tracking-tight text-foreground">Internet and Mobile in the Netherlands</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
+                    Open the complete connectivity guide for fibre, mobile providers, SIM-only, eSIM, costs, setup and coverage.
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-brand-strong">
+                    Open complete guide
+                    <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+                  </span>
+                </Link>
               </div>
             </section>
 

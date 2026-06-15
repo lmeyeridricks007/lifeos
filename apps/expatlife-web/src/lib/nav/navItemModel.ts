@@ -40,6 +40,7 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/taxes/expat-taxes-netherlands": "/netherlands/money/expat-taxes-netherlands",
   "/netherlands/living/utilities": "/netherlands/utilities/utilities-netherlands",
   "/netherlands/living/energy-and-water": "/netherlands/utilities/energy-and-water-netherlands",
+  "/netherlands/living/internet-and-mobile": "/netherlands/utilities/internet-and-mobile-netherlands",
   "/netherlands/utilities-in-netherlands": "/netherlands/utilities/utilities-netherlands",
   "/netherlands/utilities": "/netherlands/utilities/utilities-netherlands",
 };

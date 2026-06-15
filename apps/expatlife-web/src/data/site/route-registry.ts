@@ -274,6 +274,7 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/utilities/",
   "/netherlands/utilities/utilities-netherlands/",
   "/netherlands/utilities/energy-and-water-netherlands/",
+  "/netherlands/utilities/internet-and-mobile-netherlands/",
   /** Legacy flat URL; 301 → buying guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/buying-house-netherlands/",
   /** Legacy flat URL; 301 → mortgage guide — keep live so nav never surfaces as “Soon”. */

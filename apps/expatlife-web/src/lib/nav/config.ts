@@ -762,6 +762,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/utilities/energy-and-water-netherlands/",
             "Electricity, gas, water, district heating, costs and setup after moving."
           ),
+          item(
+            "Internet and mobile",
+            "/netherlands/utilities/internet-and-mobile-netherlands/",
+            "Fibre, broadband, SIM-only, eSIM, providers and setup after moving."
+          ),
         ],
       },
       {
@@ -1324,7 +1329,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Set up electricity, gas or heating, water, internet, mobile and waste collection after moving."
           ),
           item("Energy and water", "/netherlands/utilities/energy-and-water-netherlands/", "Electricity, gas, water, district heating, costs and setup."),
-          item("Internet and mobile", "/netherlands/living/internet-and-mobile/", "Home connectivity setup."),
+          item(
+            "Internet and mobile",
+            "/netherlands/utilities/internet-and-mobile-netherlands/",
+            "Fibre, broadband, mobile, SIM-only, eSIM, costs and provider setup."
+          ),
           item("Municipality services", "/netherlands/living/municipality-services/", "Local digital services (not BRP)."),
         ],
       },

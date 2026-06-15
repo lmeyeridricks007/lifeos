@@ -103,6 +103,68 @@ describe("energy and water nav active state", () => {
   });
 });
 
+describe("internet and mobile nav active state", () => {
+  const INTERNET_MOBILE_PATH = "/netherlands/utilities/internet-and-mobile-netherlands/";
+  const UTILITIES_HUB_PATH = "/netherlands/utilities/";
+
+  it("treats the internet and mobile guide route as live", () => {
+    expect(getRouteStatus(INTERNET_MOBILE_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the internet and mobile guide path", () => {
+    expect(getActiveNavKey(INTERNET_MOBILE_PATH)).toBe("living");
+  });
+
+  it("renders the Living internet and mobile menu row as an active link", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Internet and mobile");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(INTERNET_MOBILE_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Move practical life internet and mobile row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Practical life")
+      ?.items.find((row) => row.label === "Internet and mobile");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(INTERNET_MOBILE_PATH, item!)).toBe(true);
+  });
+
+  it("highlights internet and mobile for legacy living scaffold hrefs", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Internet and mobile");
+
+    expect(item).toBeDefined();
+    expect(isNavItemActive("/netherlands/living/internet-and-mobile/", item!)).toBe(true);
+  });
+
+  it("does not highlight the main utilities guide when on internet and mobile", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Utilities in the Netherlands");
+
+    expect(item).toBeDefined();
+    expect(isNavItemActive(INTERNET_MOBILE_PATH, item!)).toBe(false);
+  });
+
+  it("highlights the main utilities guide on the utilities hub path", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Utilities in the Netherlands");
+
+    expect(item).toBeDefined();
+    expect(isNavItemActive(UTILITIES_HUB_PATH, item!)).toBe(true);
+  });
+});
+
 describe("utilities nav active state", () => {
   it("treats the utilities guide route as live", () => {
     expect(getRouteStatus(UTILITIES_PATH)).toBe("live");

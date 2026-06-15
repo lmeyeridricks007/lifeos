@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowRight, Router, Zap } from "lucide-react";
 import { WebPageJsonLd } from "@/lib/seo/jsonld";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { cn } from "@/lib/cn";
@@ -17,6 +17,7 @@ import {
 import { movingNlCardMicroLiftClass, movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
 import { utilitiesNetherlandsPage as guide } from "@/src/components/utilities/utilitiesNetherlandsPageModel";
 import { energyAndWaterNetherlandsPage as energyGuide } from "@/src/components/utilities/energyAndWaterNetherlandsPageModel";
+import { internetAndMobileNetherlandsPage as connectivityGuide } from "@/src/components/utilities/internetAndMobileNetherlandsPageModel";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -122,7 +123,7 @@ export default function UtilitiesHubPage() {
             <section className="rounded-[2rem] border border-slate-200/90 bg-white/92 p-6 shadow-card ring-1 ring-slate-900/[0.03] sm:p-8 lg:p-10">
               <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-strong">Start here</p>
               <h2 className="mt-2 text-2xl font-black tracking-tight text-foreground sm:text-3xl">Complete Setup Guide</h2>
-              <div className="mt-6 grid gap-5 lg:grid-cols-2">
+              <div className="mt-6 grid gap-5 lg:grid-cols-3">
                 <Link href={guide.path} className={cn(cardClass, "block", transitionInteractive, activeBrightnessPress)}>
                   <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
                   <Zap className="h-6 w-6 text-brand-strong" aria-hidden />
@@ -138,6 +139,16 @@ export default function UtilitiesHubPage() {
                   <Zap className="h-6 w-6 text-brand-strong" aria-hidden />
                   <h3 className="mt-4 text-xl font-black tracking-tight text-foreground">{energyGuide.hero.pageTitle}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-foreground-muted">{energyGuide.hero.subtitle}</p>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-brand-strong">
+                    Read the guide
+                    <ArrowRight className="h-4 w-4" aria-hidden />
+                  </span>
+                </Link>
+                <Link href={connectivityGuide.path} className={cn(cardClass, "block", transitionInteractive, activeBrightnessPress)}>
+                  <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
+                  <Router className="h-6 w-6 text-brand-strong" aria-hidden />
+                  <h3 className="mt-4 text-xl font-black tracking-tight text-foreground">{connectivityGuide.hero.pageTitle}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-foreground-muted">{connectivityGuide.hero.subtitle}</p>
                   <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-brand-strong">
                     Read the guide
                     <ArrowRight className="h-4 w-4" aria-hidden />

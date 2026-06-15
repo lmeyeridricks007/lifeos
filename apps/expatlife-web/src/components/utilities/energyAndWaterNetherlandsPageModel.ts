@@ -538,6 +538,7 @@ export const energyAndWaterNetherlandsPage = {
   ],
   relatedGuides: [
     { label: "Utilities Guide", href: UTILITIES_NETHERLANDS_PATH, status: "live", description: "Complete utilities setup guide covering internet, mobile, waste and more." },
+    { label: "Internet and Mobile", href: "/netherlands/utilities/internet-and-mobile-netherlands/", status: "live", description: "Home internet, mobile plans, SIM-only, eSIM and provider comparison." },
     { label: "Renting", href: RENTING_NETHERLANDS_PATH, status: "comingSoon", description: "Check included utilities, service costs and tenant responsibilities." },
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Owner responsibilities for energy, water and post-transfer setup." },
     { label: "Insurance Providers", href: INSURANCE_PROVIDERS_PATH, status: "live", description: "Connect utility setup with home and contents cover." },

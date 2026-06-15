@@ -126,7 +126,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         actions: ["Take meter readings on handover", "Shortlist energy and broadband providers", "Use gemeente portals for local services"],
         links: [
           { href: "/netherlands/living/utilities/", label: "Utilities overview" },
-          { href: "/netherlands/living/internet-and-mobile/", label: "Internet & mobile" },
+          { href: "/netherlands/utilities/internet-and-mobile-netherlands/", label: "Internet & mobile" },
         ],
       },
       {
@@ -189,7 +189,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         readingOrderLinks: [
           { title: "Utilities overview", href: "/netherlands/living/utilities/" },
           { title: "Energy & water", href: "/netherlands/living/energy-and-water/" },
-          { title: "Internet & mobile", href: "/netherlands/living/internet-and-mobile/" },
+          { title: "Internet & mobile", href: "/netherlands/utilities/internet-and-mobile-netherlands/" },
         ],
         startToolLink: {
           title: "Utilities & Services Comparison Tool",

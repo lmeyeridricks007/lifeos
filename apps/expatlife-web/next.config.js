@@ -105,6 +105,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/internet-and-mobile",
+        destination: "/netherlands/utilities/internet-and-mobile-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/internet-and-mobile/",
+        destination: "/netherlands/utilities/internet-and-mobile-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/utilities-in-netherlands",
         destination: "/netherlands/utilities/utilities-netherlands/",
         permanent: true,
