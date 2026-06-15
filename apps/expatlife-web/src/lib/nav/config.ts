@@ -582,7 +582,6 @@ function isMovingPillarPath(pathname: string): boolean {
 
 /** First path segment after `/netherlands/` for planned housing-cluster guides (active nav: Living). */
 const HOUSING_GUIDE_FIRST_SEGMENTS = new Set([
-  "housing",
   "renting-in-the-netherlands",
   "how-to-rent-in-netherlands",
   "rental-contract-netherlands",
@@ -661,6 +660,15 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (isBusinessGuidePath(path)) return "moving";
 
   if (isLivingHousingGuidePath(path)) return "living";
+
+  if (path === "/netherlands/housing") return "moving";
+
+  if (
+    path.startsWith("/netherlands/housing/") &&
+    !path.startsWith("/netherlands/housing/tools")
+  ) {
+    return "living";
+  }
 
   if (isMoveTaxCompensationGuidePath(path)) return "moving";
 
@@ -772,6 +780,41 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Municipality services",
             "/netherlands/practical-life/municipality-services-netherlands/",
             "Gemeente registration, BSN, local taxes, permits, parking and waste for expats."
+          ),
+        ],
+      },
+      {
+        title: "Housing",
+        items: [
+          item(
+            "Housing in the Netherlands",
+            "/netherlands/housing/",
+            "Renting, buying, costs, mortgages, cities and accommodation for expats."
+          ),
+          item(
+            "Renting in the Netherlands",
+            "/netherlands/housing/renting-in-the-netherlands/",
+            "Contracts, deposits, viewings and tenant orientation for newcomers."
+          ),
+          item(
+            "Buying a house in the Netherlands",
+            "/netherlands/housing/buying-a-house-netherlands/",
+            "Purchase process, kosten koper, bidding and owner responsibilities."
+          ),
+          item(
+            "Mortgages for expats",
+            "/netherlands/housing/mortgages-netherlands-expats/",
+            "Mortgage eligibility, borrowing capacity and application steps."
+          ),
+          item(
+            "Buy vs rent in the Netherlands",
+            "/netherlands/housing/buy-vs-rent-netherlands/",
+            "Compare rental flexibility with ownership stability and costs."
+          ),
+          item(
+            "Property tax in the Netherlands",
+            "/netherlands/taxes/property-tax-netherlands/",
+            "WOZ value and municipal owner charges."
           ),
         ],
       },
@@ -1294,7 +1337,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Housing",
         items: [
-          item("Housing in the Netherlands", "/netherlands/living/housing/", "Living cluster: rental and home setup."),
+          item("Housing in the Netherlands", "/netherlands/housing/", "Central housing hub for renting, buying, costs and cities."),
           item("Rental market", "/netherlands/living/rental-market/", "Demand, viewings, and timelines."),
           item("Registering your address", "/netherlands/living/registering-your-address/", "Rental address context (BRP under Move)."),
           item("Rental contracts and deposits", "/netherlands/living/rental-contracts-and-deposits/", "Before you sign."),

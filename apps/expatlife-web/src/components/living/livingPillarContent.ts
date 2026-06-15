@@ -708,7 +708,7 @@ export const LIVING_SURVIVAL_CONTINUE_CARDS: LivingContinueCard[] = [
     meta: "Follow the move timeline",
   },
   {
-    href: "/netherlands/living/housing/",
+    href: "/netherlands/housing/",
     title: "Housing in the Netherlands",
     description: "Contracts, market pace, and costs—once you are past sleeping-on-a-mattress energy.",
     meta: "Go to housing hub",

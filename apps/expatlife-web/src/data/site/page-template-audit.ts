@@ -204,6 +204,7 @@ export const ROUTE_TEMPLATE_HINTS: Partial<Record<string, TemplateArchetype>> = 
   "/netherlands/taxes/leaving-netherlands-tax": "guideShell",
   "/netherlands/taxes/healthcare-allowance-netherlands": "guideShell",
   "/netherlands/taxes/rent-allowance-netherlands": "guideShell",
+  "/netherlands/housing": "guideShell",
   "/netherlands/housing/buying-a-house-netherlands": "guideShell",
   "/netherlands/housing/mortgages-netherlands-expats": "guideShell",
   "/netherlands/housing/buy-vs-rent-netherlands": "guideShell",

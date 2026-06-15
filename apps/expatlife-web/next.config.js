@@ -125,6 +125,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/housing",
+        destination: "/netherlands/housing/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/housing/",
+        destination: "/netherlands/housing/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/utilities-in-netherlands",
         destination: "/netherlands/utilities/utilities-netherlands/",
         permanent: true,

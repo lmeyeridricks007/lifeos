@@ -81,7 +81,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
       "Turn keys, contracts, and local systems into a workable routine—without mixing in visa law or tax planning (those live under Move and Money).",
     heroImage: "/images/heroes/moving-to-netherlands-canal-hero.png",
     heroImageAlt: "Canal houses and bicycles—everyday life in a Dutch city",
-    primaryCta: { label: "Start with housing", href: "/netherlands/living/housing/" },
+    primaryCta: { label: "Start with housing", href: "/netherlands/housing/" },
     secondaryCtas: [
       { label: "Living utilities hub", href: "/netherlands/living/utilities/" },
       { label: "Housing tools", href: "/netherlands/housing/tools/" },
@@ -115,7 +115,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         goal: "Search, sign, and understand your rental without surprises.",
         actions: ["Compare neighbourhoods and rent bands", "Read contracts and deposit clauses carefully", "Plan address registration with Move guides"],
         links: [
-          { href: "/netherlands/living/housing/", label: "Housing hub" },
+          { href: "/netherlands/housing/", label: "Housing hub" },
           { href: "/netherlands/living/rental-market/", label: "Rental market" },
         ],
       },
@@ -172,7 +172,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         personaTitle: "Finding a place to live",
         whatMatters: ["Proof of income and landlord expectations", "Rental timeline vs. job start dates", "Furnished vs. unfurnished trade-offs"],
         readingOrderLinks: [
-          { title: "Housing hub", href: "/netherlands/living/housing/" },
+          { title: "Housing hub", href: "/netherlands/housing/" },
           { title: "Rental market", href: "/netherlands/living/rental-market/" },
           { title: "Contracts & deposits", href: "/netherlands/living/rental-contracts-and-deposits/" },
         ],

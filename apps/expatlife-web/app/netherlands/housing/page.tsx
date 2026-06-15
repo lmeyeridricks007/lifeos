@@ -1,31 +1,76 @@
 import type { Metadata } from "next";
-import { getNlHousingFlagshipContent } from "@expatlife/content";
-import { NetherlandsFlagshipPillarPage } from "@/components/page/NetherlandsFlagshipPillarPage";
-import { HousingFlagshipMonetization } from "@/src/components/monetization/HousingFlagshipMonetization";
-import { getSiteOrigin } from "@/lib/site-origin";
-import { buildSocialMetadata } from "@/lib/seo/metadata";
+import { ArticleJsonLd, FaqPageJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
-
-export const revalidate = CONTENT_REVALIDATE;
+import { getSiteOrigin } from "@/lib/site-origin";
+import { HousingNetherlandsView } from "@/src/components/housing/HousingNetherlandsView";
+import { housingNetherlandsPage as page } from "@/src/components/housing/housingNetherlandsPageModel";
 
 const baseUrl = getSiteOrigin();
 
-export async function generateMetadata(): Promise<Metadata> {
-  const content = await getNlHousingFlagshipContent();
-  return buildSocialMetadata({
-    title: content.meta.seo.title,
-    description: content.meta.seo.description,
-    path: content.meta.canonicalPath,
-    ogType: "article",
-  });
+export const revalidate = CONTENT_REVALIDATE;
+
+export const metadata: Metadata = {
+  title: page.seo.title,
+  description: page.seo.description,
+  keywords: page.seo.keywords,
+  alternates: { canonical: page.path },
+  openGraph: {
+    title: page.seo.title,
+    description: page.seo.description,
+    type: "article",
+    url: new URL(page.path, baseUrl).toString(),
+    images: [page.hero.image.src],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: page.seo.title,
+    description: page.seo.description,
+    images: [page.hero.image.src],
+  },
+};
+
+function HousingCollectionJsonLd() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: page.hero.pageTitle,
+    description: page.seo.description,
+    url: new URL(page.path, baseUrl).toString(),
+    isPartOf: {
+      "@type": "WebSite",
+      name: "ExpatLife",
+      url: baseUrl,
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      name: "Housing guides for expats in the Netherlands",
+      numberOfItems: page.featuredGuides.length,
+      itemListElement: page.featuredGuides.map((guide, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "WebPage",
+          name: guide.label,
+          url: new URL(guide.href, baseUrl).toString(),
+          description: guide.description,
+        },
+      })),
+    },
+  };
+
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 }
 
-export default async function NetherlandsHousingFlagshipPage() {
-  const content = await getNlHousingFlagshipContent();
+export default function HousingNetherlandsPage() {
+  const dateModified = new Date().toISOString().slice(0, 10);
+
   return (
     <>
-      <NetherlandsFlagshipPillarPage content={content} baseUrl={baseUrl} />
-      <HousingFlagshipMonetization />
+      <WebPageJsonLd name={page.hero.pageTitle} description={page.seo.description} urlPath={page.path} datePublished={page.publishDate} />
+      <ArticleJsonLd headline={page.hero.pageTitle} description={page.seo.description} dateModified={dateModified} urlPath={page.path} />
+      <FaqPageJsonLd items={page.faqs} url={new URL(page.path, baseUrl).toString()} />
+      <HousingCollectionJsonLd />
+      <HousingNetherlandsView />
     </>
   );
 }

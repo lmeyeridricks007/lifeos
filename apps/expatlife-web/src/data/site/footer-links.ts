@@ -43,6 +43,7 @@ export const FOOTER_GROUPS = {
     /** Curated hubs only — deeper Living / city / tax pages stay on the HTML sitemap and in-guide cross-links. */
     links: [
       { label: "Netherlands", href: "/netherlands/" },
+      { label: "Housing in the Netherlands", href: "/netherlands/housing/" },
       { label: "Survival Guide", href: "/netherlands/living/survival-guide/" },
       { label: "Utilities", href: "/netherlands/utilities/utilities-netherlands/" },
       { label: "Energy and water", href: "/netherlands/utilities/energy-and-water-netherlands/" },

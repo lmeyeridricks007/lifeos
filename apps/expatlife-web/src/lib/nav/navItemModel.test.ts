@@ -940,6 +940,66 @@ describe("navItemModel — childcare allowance guide", () => {
   });
 });
 
+describe("housing hub nav active state", () => {
+  const HOUSING_HUB_PATH = "/netherlands/housing/";
+
+  it("treats the housing hub route as live", () => {
+    expect(getRouteStatus(HOUSING_HUB_PATH)).toBe("live");
+  });
+
+  it("highlights Move for the housing hub path", () => {
+    expect(getActiveNavKey(HOUSING_HUB_PATH)).toBe("moving");
+  });
+
+  it("renders the Move housing hub menu row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Housing")
+      ?.items.find((row) => row.label === "Housing in the Netherlands");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HOUSING_HUB_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Living housing hub menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Housing")
+      ?.items.find((row) => row.label === "Housing in the Netherlands");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HOUSING_HUB_PATH, item!)).toBe(true);
+  });
+
+  it("highlights Move for legacy living housing scaffold hrefs", () => {
+    expect(getActiveNavKey("/netherlands/living/housing/")).toBe("moving");
+  });
+
+  it("marks legacy living housing href active via alias", () => {
+    const item = {
+      label: "Housing in the Netherlands",
+      href: HOUSING_HUB_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/living/housing/", item)).toBe(true);
+  });
+
+  it("does not mark the hub row active on child housing guide paths", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Housing")
+      ?.items.find((row) => row.label === "Housing in the Netherlands");
+
+    expect(item).toBeDefined();
+    expect(isNavItemActive("/netherlands/housing/buying-a-house-netherlands/", item!)).toBe(false);
+  });
+
+  it("highlights Living for child housing guide paths", () => {
+    expect(getActiveNavKey("/netherlands/housing/renting-in-the-netherlands/")).toBe("living");
+  });
+});
+
 describe("buying a house nav active state", () => {
   const BUYING_PATH = "/netherlands/housing/buying-a-house-netherlands/";
 

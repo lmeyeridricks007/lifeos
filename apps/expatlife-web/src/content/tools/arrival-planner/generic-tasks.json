@@ -352,7 +352,7 @@
     "timeline": "As soon as you arrive or before; short-term first if you need time to find a permanent place.",
     "whenVisible": { "addressStatus": ["no"] },
     "whoToContact": [],
-    "officialLinks": ["/netherlands/moving-to-the-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/housing/", "/netherlands/moving-to-the-netherlands/", "/netherlands/register-address-netherlands/"],
     "affiliateCategories": ["housing"],
     "tags": ["housing", "address", "arrival"]
   },

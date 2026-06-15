@@ -42,6 +42,7 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/living/energy-and-water": "/netherlands/utilities/energy-and-water-netherlands",
   "/netherlands/living/internet-and-mobile": "/netherlands/utilities/internet-and-mobile-netherlands",
   "/netherlands/living/municipality-services": "/netherlands/practical-life/municipality-services-netherlands",
+  "/netherlands/living/housing": "/netherlands/housing",
   "/netherlands/utilities-in-netherlands": "/netherlands/utilities/utilities-netherlands",
   "/netherlands/utilities": "/netherlands/utilities/utilities-netherlands",
 };
@@ -64,6 +65,7 @@ const NAV_HUB_EXACT_MATCH_ONLY = new Set([
   "/netherlands/utilities",
   "/netherlands/moving-to-the-netherlands",
   "/netherlands/randstad",
+  "/netherlands/housing",
 ]);
 
 /** Path matches an internal href (same rules as mega menu “current” highlighting). */

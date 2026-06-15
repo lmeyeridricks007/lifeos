@@ -378,7 +378,7 @@ export function SurvivalGuideView() {
           description: "A calm guide to 112, urgent situations, lost items, and the basic readiness habits that help under stress.",
         },
         {
-          href: "/netherlands/living/housing/",
+          href: "/netherlands/housing/",
           label: "Housing in the Netherlands",
           description: "Rental market, contracts, and utilities sit in dedicated Living guides once you are past first-week survival mode.",
         },
