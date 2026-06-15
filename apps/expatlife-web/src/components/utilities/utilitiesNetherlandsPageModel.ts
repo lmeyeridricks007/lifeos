@@ -730,6 +730,7 @@ export const utilitiesNetherlandsPage = {
   relatedGuides: [
     { label: "Energy and Water", href: "/netherlands/utilities/energy-and-water-netherlands/", status: "live", description: "Deep guide to electricity, gas, water, district heating and costs." },
     { label: "Internet and Mobile", href: "/netherlands/utilities/internet-and-mobile-netherlands/", status: "live", description: "Home internet, mobile plans, SIM-only, eSIM and provider comparison." },
+    { label: "Municipality Services", href: "/netherlands/practical-life/municipality-services-netherlands/", status: "live", description: "Gemeente registration, BSN, local taxes, parking and waste services." },
     { label: "Renting in the Netherlands", href: RENTING_NETHERLANDS_PATH, status: "comingSoon", description: "Rental setup, contracts and what to confirm before signing." },
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Owner responsibilities, utilities and post-transfer setup." },
     { label: "Moving to the Netherlands", href: MOVING_TO_NETHERLANDS_PATH, status: "live", description: "Relocation planning and first-week admin." },

@@ -559,6 +559,7 @@ function isMovingPillarPath(pathname: string): boolean {
     "/netherlands/municipality-registration-netherlands",
     "/netherlands/health-insurance-netherlands",
     "/netherlands/utilities",
+    "/netherlands/practical-life",
     "/netherlands/digid-awareness",
     "/netherlands/shipping-household-goods-netherlands",
     "/netherlands/open-bank-account-netherlands",
@@ -766,6 +767,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Internet and mobile",
             "/netherlands/utilities/internet-and-mobile-netherlands/",
             "Fibre, broadband, SIM-only, eSIM, providers and setup after moving."
+          ),
+          item(
+            "Municipality services",
+            "/netherlands/practical-life/municipality-services-netherlands/",
+            "Gemeente registration, BSN, local taxes, permits, parking and waste for expats."
           ),
         ],
       },
@@ -1334,7 +1340,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/utilities/internet-and-mobile-netherlands/",
             "Fibre, broadband, mobile, SIM-only, eSIM, costs and provider setup."
           ),
-          item("Municipality services", "/netherlands/living/municipality-services/", "Local digital services (not BRP)."),
+          item(
+            "Municipality services",
+            "/netherlands/practical-life/municipality-services-netherlands/",
+            "Gemeente services, registration context, BSN, local taxes, parking and waste."
+          ),
         ],
       },
       {

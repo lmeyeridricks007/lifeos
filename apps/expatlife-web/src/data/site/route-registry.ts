@@ -126,6 +126,10 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/utilities/district-heating-netherlands/": { title: "District Heating Netherlands", section: "guides" },
   "/netherlands/utilities/mobile-providers-netherlands/": { title: "Mobile Providers Netherlands", section: "guides" },
   "/netherlands/utilities/energy-providers-netherlands/": { title: "Energy Providers Netherlands", section: "guides" },
+  "/netherlands/practical-life/bsn-netherlands/": { title: "BSN Netherlands", section: "guides" },
+  "/netherlands/practical-life/digid-netherlands/": { title: "DigiD Netherlands", section: "guides" },
+  "/netherlands/practical-life/address-registration-netherlands/": { title: "Address Registration Netherlands", section: "guides" },
+  "/netherlands/practical-life/local-taxes-netherlands/": { title: "Local Taxes Netherlands", section: "guides" },
   "/netherlands/registering-address-rental/": { title: "Registering address (rental)", section: "guides" },
   "/netherlands/rental-insurance-netherlands/": { title: "Rental insurance Netherlands", section: "guides" },
   "/netherlands/inventory-check-rental-netherlands/": { title: "Inventory check rental Netherlands", section: "guides" },
@@ -275,6 +279,7 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/utilities/utilities-netherlands/",
   "/netherlands/utilities/energy-and-water-netherlands/",
   "/netherlands/utilities/internet-and-mobile-netherlands/",
+  "/netherlands/practical-life/municipality-services-netherlands/",
   /** Legacy flat URL; 301 → buying guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/buying-house-netherlands/",
   /** Legacy flat URL; 301 → mortgage guide — keep live so nav never surfaces as “Soon”. */

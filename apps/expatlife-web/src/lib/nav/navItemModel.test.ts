@@ -165,6 +165,49 @@ describe("internet and mobile nav active state", () => {
   });
 });
 
+describe("municipality services nav active state", () => {
+  const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands/";
+
+  it("treats the municipality services guide route as live", () => {
+    expect(getRouteStatus(MUNICIPALITY_SERVICES_PATH)).toBe("live");
+  });
+
+  it("highlights Move for the municipality services guide path", () => {
+    expect(getActiveNavKey(MUNICIPALITY_SERVICES_PATH)).toBe("moving");
+  });
+
+  it("renders the Living municipality services menu row as an active link", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Municipality services");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MUNICIPALITY_SERVICES_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Move practical life municipality services row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Practical life")
+      ?.items.find((row) => row.label === "Municipality services");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MUNICIPALITY_SERVICES_PATH, item!)).toBe(true);
+  });
+
+  it("highlights municipality services for legacy living scaffold hrefs", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Municipality services");
+
+    expect(item).toBeDefined();
+    expect(isNavItemActive("/netherlands/living/municipality-services/", item!)).toBe(true);
+  });
+});
+
 describe("utilities nav active state", () => {
   it("treats the utilities guide route as live", () => {
     expect(getRouteStatus(UTILITIES_PATH)).toBe("live");

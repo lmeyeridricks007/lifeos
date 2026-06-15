@@ -211,22 +211,23 @@
     {
       "cluster": "living",
       "slug": "municipality-services",
-      "path": "/netherlands/living/municipality-services/",
-      "title": "Municipality digital services (Living)",
-      "metaDescription": "How local municipality online services fit into daily life in the Netherlands—not the same as BRP registration (Move).",
+      "path": "/netherlands/practical-life/municipality-services-netherlands/",
+      "title": "Municipality services in the Netherlands",
+      "metaDescription": "Learn how Dutch municipalities work, including registration, BSN numbers, local taxes, permits, parking, waste collection and essential services for expats.",
       "breadcrumbLabel": "Municipality services",
       "section": "guides",
       "clusterLabel": "Living in the Netherlands",
-      "pageType": "support",
-      "contentStatus": "scaffold",
+      "pageType": "guide",
+      "contentStatus": "live",
       "menuVisible": true,
       "navGroup": "utilities",
-      "intro": "After registration, you still use gemeente portals for waste passes, parking, and local permits. This page stays on the “living systems” side.",
-      "canonicalGuidePath": "/netherlands/municipality-registration-netherlands/",
-      "canonicalLabel": "When you still need the gemeente (registration hub)",
+      "intro": "Gemeente services connect registration, BSN, local taxes, parking, waste and daily local life after you move.",
+      "canonicalGuidePath": "/netherlands/practical-life/municipality-services-netherlands/",
+      "canonicalLabel": "Municipality Services in the Netherlands",
       "related": [
+        { "label": "BSN registration", "href": "/netherlands/bsn-registration/", "description": "Registration and BSN setup after arrival." },
         { "label": "DigiD awareness", "href": "/netherlands/digid-awareness/", "description": "Login used for many gemeente tasks." },
-        { "label": "Government portals overview", "href": "/netherlands/living/government-portals-overview/", "description": "Sibling page in this cluster." }
+        { "label": "Utilities overview", "href": "/netherlands/utilities/utilities-netherlands/", "description": "Energy, water, internet and waste setup." }
       ]
     },
     {

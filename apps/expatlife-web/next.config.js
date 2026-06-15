@@ -115,6 +115,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/municipality-services",
+        destination: "/netherlands/practical-life/municipality-services-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/municipality-services/",
+        destination: "/netherlands/practical-life/municipality-services-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/utilities-in-netherlands",
         destination: "/netherlands/utilities/utilities-netherlands/",
         permanent: true,
