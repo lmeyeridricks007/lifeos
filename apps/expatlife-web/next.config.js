@@ -155,6 +155,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/waste-and-recycling",
+        destination: "/netherlands/practical-life/waste-and-recycling-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/waste-and-recycling/",
+        destination: "/netherlands/practical-life/waste-and-recycling-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/living/housing",
         destination: "/netherlands/housing/",
         permanent: true,

@@ -10,6 +10,7 @@ import { getToolCategoryById, loadToolRegistry } from "@/src/lib/tools/loadToolR
 import { getRouteStatus } from "@/src/lib/routes/routeStatus";
 import { isComingSoonContent } from "@/src/lib/content/contentPublishStatus";
 import { getClusterPageByPath } from "@/src/lib/guides/livingCultureCluster";
+import { normalizeSitePath } from "@/src/data/site/route-registry";
 /** Static menu rows: authored as live; `filterNavItem` reconciles with route registry. */
 const item = (label: string, href: string, description?: string, badge?: string): NavItem => ({
   label,
@@ -171,16 +172,34 @@ const DEFAULT_FEATURED_FALLBACK: Partial<Record<TopNavKey, NavItem>> = {
   ),
 };
 
-function filterMegaMenu(menu: MegaMenu): MegaMenu {
-  let sections = menu.sections
+function dedupeMegaMenuSectionsByHref(sections: NavSection[]): NavSection[] {
+  const seen = new Set<string>();
+  return sections
     .map((section) => ({
       ...section,
-      items: orderMegaMenuSectionItems(
-        section.items.map(filterNavItem).filter((x): x is NavItem => x != null),
-        section.comingSoonFirst ? { comingSoonFirst: true } : undefined
-      ),
+      items: section.items.filter((entry) => {
+        if (!entry.href) return true;
+        const key = normalizeSitePath(resolveNavActivePath(entry.href));
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      }),
     }))
     .filter((section) => section.items.length > 0);
+}
+
+function filterMegaMenu(menu: MegaMenu): MegaMenu {
+  let sections = dedupeMegaMenuSectionsByHref(
+    menu.sections
+      .map((section) => ({
+        ...section,
+        items: orderMegaMenuSectionItems(
+          section.items.map(filterNavItem).filter((x): x is NavItem => x != null),
+          section.comingSoonFirst ? { comingSoonFirst: true } : undefined
+        ),
+      }))
+      .filter((section) => section.items.length > 0)
+  );
 
   if (sections.length === 0) {
     sections = [mvpFallbackSection(menu.label)];
@@ -485,6 +504,7 @@ const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
 /** Housing-related guides under Living → Housing (URL may live under `/taxes/`). */
 const LIVING_HOUSING_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/utilities",
+  "/netherlands/practical-life/waste-and-recycling-netherlands",
   "/netherlands/taxes/rent-allowance-netherlands",
   /** Legacy URL (301 → canonical guide) — keep Living tab active before redirect. */
   "/netherlands/taxes/rent-allowance",
@@ -784,6 +804,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Municipality services",
             "/netherlands/practical-life/municipality-services-netherlands/",
             "Gemeente registration, BSN, local taxes, permits, parking and waste for expats."
+          ),
+          item(
+            "Waste and recycling",
+            "/netherlands/practical-life/waste-and-recycling-netherlands/",
+            "Sorting rules, collection schedules, underground containers and milieustraat for expats."
           ),
         ],
       },
@@ -1409,11 +1434,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/practical-life/municipality-services-netherlands/",
             "Gemeente services, registration context, BSN, local taxes, parking and waste."
           ),
-          item(
-            "Registering your address",
-            "/netherlands/practical-life/registering-your-address-netherlands/",
-            "Address registration, BSN connection and municipality appointment steps."
-          ),
         ],
       },
       {
@@ -1457,7 +1477,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/living/weather/",
             "Wind, rain, dark days, and what actually changes in everyday Dutch life."
           ),
-          item("Waste and recycling", "/netherlands/living/waste-and-recycling/", "Sorting, pickup, and containers."),
+          item(
+            "Waste and recycling",
+            "/netherlands/practical-life/waste-and-recycling-netherlands/",
+            "Sorting, pickup schedules, underground containers and recycling centers."
+          ),
           item("Parking and local permits", "/netherlands/living/parking-and-local-permits/", "Street parking and permits."),
           item("Community basics", "/netherlands/living/community-basics/", "Neighbors, noise, and building life."),
         ],

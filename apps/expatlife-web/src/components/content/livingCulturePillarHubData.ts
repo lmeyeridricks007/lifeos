@@ -203,7 +203,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         whatMatters: ["Waste sorting and pickup cadence", "Bike + OV combinations", "Parking permits if you drive"],
         readingOrderLinks: [
           { title: "Daily life hub", href: "/netherlands/living/daily-life/" },
-          { title: "Waste & recycling", href: "/netherlands/living/waste-and-recycling/" },
+          { title: "Waste & recycling", href: "/netherlands/practical-life/waste-and-recycling-netherlands/" },
           { title: "Getting around", href: "/netherlands/living/getting-around/" },
         ],
         startToolLink: null,

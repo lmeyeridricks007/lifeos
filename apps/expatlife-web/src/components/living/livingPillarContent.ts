@@ -197,7 +197,7 @@ export const LIVING_SURVIVAL_TOPIC_CARDS: LivingTopicCard[] = [
     cta: "See who to call",
   },
   {
-    href: "/netherlands/living/waste-and-recycling/",
+    href: "/netherlands/practical-life/waste-and-recycling-netherlands/",
     title: "Waste, recycling & local habits",
     description: "Which bag is which, pickup cadence, and how streets stay quiet about it.",
     icon: Recycle,

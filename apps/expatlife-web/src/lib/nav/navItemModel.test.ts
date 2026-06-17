@@ -219,17 +219,6 @@ describe("address registration nav active state", () => {
     expect(getActiveNavKey(ADDRESS_REGISTRATION_PATH)).toBe("moving");
   });
 
-  it("renders the Move registration menu row as active", () => {
-    const item = MEGA_MENUS.moving.sections
-      .find((section) => section.title === "Registration")
-      ?.items.find((row) => row.label === "Registering your address");
-
-    expect(item).toBeDefined();
-    expect(item?.navStatus).toBe("live");
-    expect(isNavItemLinkable(item!)).toBe(true);
-    expect(isNavItemActive(ADDRESS_REGISTRATION_PATH, item!)).toBe(true);
-  });
-
   it("renders the Move early setup register address row as active", () => {
     const item = MEGA_MENUS.moving.sections
       .find((section) => section.title === "Early setup")
@@ -241,16 +230,6 @@ describe("address registration nav active state", () => {
     expect(isNavItemActive(ADDRESS_REGISTRATION_PATH, item!)).toBe(true);
   });
 
-  it("renders the Living utilities register address row as active", () => {
-    const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Utilities")
-      ?.items.find((row) => row.label === "Registering your address");
-
-    expect(item).toBeDefined();
-    expect(item?.navStatus).toBe("live");
-    expect(isNavItemActive(ADDRESS_REGISTRATION_PATH, item!)).toBe(true);
-  });
-
   it("renders the Living housing registration menu row as active", () => {
     const item = MEGA_MENUS.living.sections
       .find((section) => section.title === "Housing")
@@ -259,6 +238,15 @@ describe("address registration nav active state", () => {
     expect(item).toBeDefined();
     expect(item?.navStatus).toBe("live");
     expect(isNavItemActive(ADDRESS_REGISTRATION_PATH, item!)).toBe(true);
+  });
+
+  it("shows address registration only once in each mega menu", () => {
+    for (const menuKey of ["moving", "living"] as const) {
+      const rows = MEGA_MENUS[menuKey].sections.flatMap((section) =>
+        section.items.filter((row) => row.href === ADDRESS_REGISTRATION_PATH)
+      );
+      expect(rows).toHaveLength(1);
+    }
   });
 
   it("marks legacy living registering-your-address href active via alias", () => {
@@ -277,6 +265,63 @@ describe("address registration nav active state", () => {
       navStatus: "live" as const,
     };
     expect(isNavItemActive("/netherlands/register-address-netherlands/", item)).toBe(true);
+  });
+});
+
+describe("waste and recycling nav active state", () => {
+  const WASTE_RECYCLING_PATH = "/netherlands/practical-life/waste-and-recycling-netherlands/";
+
+  it("treats the waste and recycling guide route as live", () => {
+    expect(getRouteStatus(WASTE_RECYCLING_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the waste and recycling guide path", () => {
+    expect(getActiveNavKey(WASTE_RECYCLING_PATH)).toBe("living");
+  });
+
+  it("highlights Living for the legacy living waste scaffold href", () => {
+    expect(getActiveNavKey("/netherlands/living/waste-and-recycling/")).toBe("living");
+  });
+
+  it("renders the Move practical life waste menu row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Practical life")
+      ?.items.find((row) => row.label === "Waste and recycling");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(WASTE_RECYCLING_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Living daily life waste menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Waste and recycling");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(WASTE_RECYCLING_PATH, item!)).toBe(true);
+  });
+
+  it("marks both Move and Living menu rows active for the canonical waste href", () => {
+    const rows = menuRowsForHref(WASTE_RECYCLING_PATH);
+    expect(rows.some((row) => row.menuKey === "moving" && row.sectionTitle === "Practical life")).toBe(true);
+    expect(rows.some((row) => row.menuKey === "living" && row.sectionTitle === "Daily life")).toBe(true);
+    for (const row of rows) {
+      expect(row.item.navStatus).toBe("live");
+      expect(isNavItemActive(WASTE_RECYCLING_PATH, row.item)).toBe(true);
+    }
+  });
+
+  it("marks legacy living waste-and-recycling href active via alias", () => {
+    const item = {
+      label: "Waste and recycling",
+      href: WASTE_RECYCLING_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/living/waste-and-recycling/", item)).toBe(true);
   });
 });
 

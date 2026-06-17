@@ -1079,6 +1079,12 @@ export const municipalityServicesNetherlandsPage = {
       description: "Energy, water, internet, mobile and waste within the wider utilities picture.",
     },
     {
+      label: "Waste and Recycling",
+      href: "/netherlands/practical-life/waste-and-recycling-netherlands/",
+      status: "live",
+      description: "Sorting rules, collection schedules, underground containers and milieustraat.",
+    },
+    {
       label: "Renting in the Netherlands",
       href: RENTING_NETHERLANDS_PATH,
       status: "live",

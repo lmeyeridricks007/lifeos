@@ -14,7 +14,7 @@ export const LIVING_DAILY_LIFE_INTERNAL_LINKS: Record<LivingDailyLifeLinkKey, st
   shoppingGroceries: LIVING_SHOPPING_GROCERIES_PATH,
   gettingAround: LIVING_GETTING_AROUND_PATH,
   paymentsBasics: "/netherlands/money/banking/how-payments-work/",
-  wasteRecycling: "/netherlands/living/waste-and-recycling/",
+  wasteRecycling: "/netherlands/practical-life/waste-and-recycling-netherlands/",
   costOfLiving: "/netherlands/money/tools/cost-of-living-calculator/",
   utilities: "/netherlands/living/tools/utilities-services-comparison/",
   childcare: "/netherlands/family/tools/childcare-cost-estimator/",

@@ -381,8 +381,8 @@
       "menuVisible": true,
       "navGroup": "daily-life",
       "intro": "Rules differ by municipality. This page will collect patterns and link to local waste sites once expanded.",
-      "canonicalGuidePath": null,
-      "canonicalLabel": null,
+      "canonicalGuidePath": "/netherlands/practical-life/waste-and-recycling-netherlands/",
+      "canonicalLabel": "Waste and recycling guide",
       "related": [
         { "label": "Municipality services", "href": "/netherlands/living/municipality-services/", "description": "Digital gemeente touchpoints." },
         { "label": "Daily life", "href": "/netherlands/living/daily-life/", "description": "Parent topic in this cluster." }
