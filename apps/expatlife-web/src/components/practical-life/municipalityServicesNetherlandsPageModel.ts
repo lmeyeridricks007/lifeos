@@ -16,7 +16,8 @@ export const MUNICIPALITY_REGISTRATION_PATH = "/netherlands/municipality-registr
 
 export const BSN_NETHERLANDS_PATH = "/netherlands/practical-life/bsn-netherlands/" as const;
 export const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands/" as const;
-export const ADDRESS_REGISTRATION_NETHERLANDS_PATH = "/netherlands/practical-life/address-registration-netherlands/" as const;
+export const ADDRESS_REGISTRATION_NETHERLANDS_PATH =
+  "/netherlands/practical-life/registering-your-address-netherlands/" as const;
 export const LOCAL_TAXES_NETHERLANDS_PATH = "/netherlands/practical-life/local-taxes-netherlands/" as const;
 
 export type PracticalLifeLink = {
@@ -1192,7 +1193,7 @@ export const municipalityServicesNetherlandsPage = {
     {
       label: "Address Registration Netherlands",
       href: ADDRESS_REGISTRATION_NETHERLANDS_PATH,
-      status: "comingSoon",
+      status: "live",
       description: "Focused address-registration walkthrough with document checklists.",
     },
     {

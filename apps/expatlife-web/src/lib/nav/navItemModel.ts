@@ -43,6 +43,9 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/living/internet-and-mobile": "/netherlands/utilities/internet-and-mobile-netherlands",
   "/netherlands/living/municipality-services": "/netherlands/practical-life/municipality-services-netherlands",
   "/netherlands/living/housing": "/netherlands/housing",
+  "/netherlands/living/registering-your-address": "/netherlands/practical-life/registering-your-address-netherlands",
+  "/netherlands/practical-life/address-registration-netherlands": "/netherlands/practical-life/registering-your-address-netherlands",
+  "/netherlands/register-address-netherlands": "/netherlands/practical-life/registering-your-address-netherlands",
   "/netherlands/utilities-in-netherlands": "/netherlands/utilities/utilities-netherlands",
   "/netherlands/utilities": "/netherlands/utilities/utilities-netherlands",
 };

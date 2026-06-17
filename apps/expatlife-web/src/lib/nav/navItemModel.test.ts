@@ -208,6 +208,78 @@ describe("municipality services nav active state", () => {
   });
 });
 
+describe("address registration nav active state", () => {
+  const ADDRESS_REGISTRATION_PATH = "/netherlands/practical-life/registering-your-address-netherlands/";
+
+  it("treats the address registration guide route as live", () => {
+    expect(getRouteStatus(ADDRESS_REGISTRATION_PATH)).toBe("live");
+  });
+
+  it("highlights Move for the address registration guide path", () => {
+    expect(getActiveNavKey(ADDRESS_REGISTRATION_PATH)).toBe("moving");
+  });
+
+  it("renders the Move registration menu row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Registration")
+      ?.items.find((row) => row.label === "Registering your address");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ADDRESS_REGISTRATION_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Move early setup register address row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Early setup")
+      ?.items.find((row) => row.label === "Register your address");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ADDRESS_REGISTRATION_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Living utilities register address row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Utilities")
+      ?.items.find((row) => row.label === "Registering your address");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemActive(ADDRESS_REGISTRATION_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Living housing registration menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Housing")
+      ?.items.find((row) => row.label === "Registering your address");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemActive(ADDRESS_REGISTRATION_PATH, item!)).toBe(true);
+  });
+
+  it("marks legacy living registering-your-address href active via alias", () => {
+    const item = {
+      label: "Registering your address",
+      href: ADDRESS_REGISTRATION_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/living/registering-your-address/", item)).toBe(true);
+  });
+
+  it("marks legacy register-address-netherlands href active via alias", () => {
+    const item = {
+      label: "Register your address",
+      href: ADDRESS_REGISTRATION_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/register-address-netherlands/", item)).toBe(true);
+  });
+});
+
 describe("utilities nav active state", () => {
   it("treats the utilities guide route as live", () => {
     expect(getRouteStatus(UTILITIES_PATH)).toBe("live");

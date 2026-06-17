@@ -752,7 +752,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Health insurance", "/netherlands/health-insurance-netherlands"),
           item("Municipality registration", "/netherlands/municipality-registration-netherlands"),
           item("BSN registration", "/netherlands/bsn-registration/"),
-          item("Register your address", "/netherlands/register-address-netherlands/"),
+          item(
+            "Register your address",
+            "/netherlands/practical-life/registering-your-address-netherlands/",
+            "Municipality address registration, BSN connection, documents and appointment steps."
+          ),
           item("DigiD guide", "/netherlands/digid-awareness/"),
           item("Open a bank account", "/netherlands/open-bank-account-netherlands"),
           item("Shipping household goods", "/netherlands/shipping-household-goods-netherlands"),
@@ -781,6 +785,19 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/practical-life/municipality-services-netherlands/",
             "Gemeente registration, BSN, local taxes, permits, parking and waste for expats."
           ),
+        ],
+      },
+      {
+        title: "Registration",
+        items: [
+          item(
+            "Registering your address",
+            "/netherlands/practical-life/registering-your-address-netherlands/",
+            "Municipality address registration, BSN connection, documents and appointment steps."
+          ),
+          item("BSN Netherlands", "/netherlands/practical-life/bsn-netherlands/", "BSN routes, documents and timing for newcomers."),
+          item("DigiD Netherlands", "/netherlands/practical-life/digid-netherlands/", "Digital identity setup after registration."),
+          item("Local taxes Netherlands", "/netherlands/practical-life/local-taxes-netherlands/", "Gemeente tax letters, charges and payment steps."),
         ],
       },
       {
@@ -1339,7 +1356,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         items: [
           item("Housing in the Netherlands", "/netherlands/housing/", "Central housing hub for renting, buying, costs and cities."),
           item("Rental market", "/netherlands/living/rental-market/", "Demand, viewings, and timelines."),
-          item("Registering your address", "/netherlands/living/registering-your-address/", "Rental address context (BRP under Move)."),
+          item(
+            "Registering your address",
+            "/netherlands/practical-life/registering-your-address-netherlands/",
+            "Municipality address registration, BSN and document steps for newcomers."
+          ),
           item("Rental contracts and deposits", "/netherlands/living/rental-contracts-and-deposits/", "Before you sign."),
           item("Housing costs", "/netherlands/living/housing-costs/", "Typical costs (calculators under Money)."),
           item(
@@ -1387,6 +1408,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Municipality services",
             "/netherlands/practical-life/municipality-services-netherlands/",
             "Gemeente services, registration context, BSN, local taxes, parking and waste."
+          ),
+          item(
+            "Registering your address",
+            "/netherlands/practical-life/registering-your-address-netherlands/",
+            "Address registration, BSN connection and municipality appointment steps."
           ),
         ],
       },

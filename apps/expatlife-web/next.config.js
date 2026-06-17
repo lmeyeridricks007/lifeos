@@ -125,6 +125,36 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/registering-your-address",
+        destination: "/netherlands/practical-life/registering-your-address-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/registering-your-address/",
+        destination: "/netherlands/practical-life/registering-your-address-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/practical-life/address-registration-netherlands",
+        destination: "/netherlands/practical-life/registering-your-address-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/practical-life/address-registration-netherlands/",
+        destination: "/netherlands/practical-life/registering-your-address-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/register-address-netherlands",
+        destination: "/netherlands/practical-life/registering-your-address-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/register-address-netherlands/",
+        destination: "/netherlands/practical-life/registering-your-address-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/living/housing",
         destination: "/netherlands/housing/",
         permanent: true,
