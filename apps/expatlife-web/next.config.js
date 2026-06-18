@@ -175,6 +175,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/community-basics",
+        destination: "/netherlands/life/community-basics-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/community-basics/",
+        destination: "/netherlands/life/community-basics-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/living/housing",
         destination: "/netherlands/housing/",
         permanent: true,

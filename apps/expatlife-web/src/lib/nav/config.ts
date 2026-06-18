@@ -708,6 +708,8 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
 
   if (path.startsWith("/netherlands/living")) return "living";
 
+  if (path.startsWith("/netherlands/life")) return "living";
+
   const seg1 = path.split("/").filter(Boolean)[1];
   if (seg1 && HOUSING_GUIDE_FIRST_SEGMENTS.has(seg1)) return "living";
 
@@ -1493,7 +1495,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/practical-life/parking-and-local-permits-netherlands/",
             "Resident permits, visitor passes, paid zones, parking apps and municipality permits."
           ),
-          item("Community basics", "/netherlands/living/community-basics/", "Neighbors, noise, and building life."),
+          item(
+            "Community basics",
+            "/netherlands/life/community-basics-netherlands/",
+            "Making friends, neighbors, clubs, volunteering and integration."
+          ),
         ],
       },
       {

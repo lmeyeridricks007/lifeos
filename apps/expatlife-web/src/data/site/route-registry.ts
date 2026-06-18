@@ -284,6 +284,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/utilities/utilities-netherlands/",
   "/netherlands/utilities/energy-and-water-netherlands/",
   "/netherlands/utilities/internet-and-mobile-netherlands/",
+  "/netherlands/life/",
+  "/netherlands/life/community-basics-netherlands/",
   "/netherlands/practical-life/municipality-services-netherlands/",
   "/netherlands/practical-life/registering-your-address-netherlands/",
   "/netherlands/practical-life/waste-and-recycling-netherlands/",

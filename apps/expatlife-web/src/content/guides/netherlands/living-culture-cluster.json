@@ -414,7 +414,7 @@
       "slug": "community-basics",
       "path": "/netherlands/living/community-basics/",
       "title": "Community basics in the Netherlands",
-      "metaDescription": "Neighbors, building associations, and quiet hours—practical community norms for expats renting in the Netherlands.",
+      "metaDescription": "Learn how community life works in the Netherlands — making friends, neighbors, clubs, volunteering and practical integration tips for expats.",
       "breadcrumbLabel": "Community basics",
       "section": "guides",
       "clusterLabel": "Living in the Netherlands",
@@ -422,12 +422,12 @@
       "contentStatus": "scaffold",
       "menuVisible": true,
       "navGroup": "daily-life",
-      "intro": "Good neighbor habits reduce friction in apartments and terraced housing. Pair this with Culture pages for social nuance.",
-      "canonicalGuidePath": null,
-      "canonicalLabel": null,
+      "intro": "Canonical community integration guide for expats: social life, clubs, volunteering and neighborhood participation.",
+      "canonicalGuidePath": "/netherlands/life/community-basics-netherlands/",
+      "canonicalLabel": "Community basics guide",
       "related": [
-        { "label": "Dutch social norms", "href": "/netherlands/culture/dutch-social-norms/", "description": "Culture cluster sibling." },
-        { "label": "Daily life", "href": "/netherlands/living/daily-life/", "description": "Cluster overview." }
+        { "label": "Life in the Netherlands hub", "href": "/netherlands/life/", "description": "Community and integration hub." },
+        { "label": "Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Social norms and neighbor etiquette." }
       ]
     },
     {
@@ -813,7 +813,7 @@
       "canonicalLabel": null,
       "related": [
         { "label": "Invitations and planning", "href": "/netherlands/culture/invitations-and-planning/", "description": "Scheduling culture." },
-        { "label": "Community basics", "href": "/netherlands/living/community-basics/", "description": "Neighbor boundaries (Living)." }
+        { "label": "Community basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Making friends, neighbors and integration." }
       ]
     },
     {

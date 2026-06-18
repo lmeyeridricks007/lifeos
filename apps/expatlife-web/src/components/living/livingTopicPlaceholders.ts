@@ -69,7 +69,7 @@ export const LIVING_PLACEHOLDER_LANGUAGE: LivingTopicPlaceholderSpec = {
       description: "Social norms, directness, and everyday context for language use.",
     },
     { href: "/netherlands/culture/dutch-language-basics/", label: "Dutch language basics (Culture)", description: "Deeper phrase and pattern guide." },
-    { href: "/netherlands/living/community-basics/", label: "Community basics (Living)", description: "Neighbours, noise, and building life." },
+    { href: "/netherlands/life/community-basics-netherlands/", label: "Community basics", description: "Making friends, neighbors, clubs and integration." },
     { href: "/netherlands/moving-to-the-netherlands/", label: "Moving to the Netherlands", description: "Big-picture relocation context." },
   ],
 };

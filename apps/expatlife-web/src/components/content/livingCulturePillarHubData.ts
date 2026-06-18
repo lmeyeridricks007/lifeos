@@ -155,7 +155,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         goal: "Stay neighbourly, aware, and resilient in shared spaces.",
         actions: ["Introduce yourself to neighbours when it fits", "Know parking and permit basics", "Keep digital hygiene for gemeente scams"],
         links: [
-          { href: "/netherlands/living/community-basics/", label: "Community basics" },
+          { href: "/netherlands/life/community-basics-netherlands/", label: "Community basics" },
           { href: "/netherlands/living/privacy-and-safety-basics/", label: "Privacy & safety" },
         ],
       },
@@ -428,7 +428,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         readingOrderLinks: [
           { title: "Dutch social norms", href: "/netherlands/culture/dutch-social-norms/" },
           { title: "Invitations & planning", href: "/netherlands/culture/invitations-and-planning/" },
-          { title: "Community basics (Living)", href: "/netherlands/living/community-basics/" },
+          { title: "Community basics", href: "/netherlands/life/community-basics-netherlands/" },
         ],
         startToolLink: null,
         unknownsToConfirm: [],

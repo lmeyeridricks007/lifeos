@@ -369,6 +369,46 @@ describe("parking and local permits nav active state", () => {
   });
 });
 
+describe("community basics nav active state", () => {
+  const COMMUNITY_BASICS_PATH = "/netherlands/life/community-basics-netherlands/";
+
+  it("treats the community basics guide route as live", () => {
+    expect(getRouteStatus(COMMUNITY_BASICS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the community basics guide path", () => {
+    expect(getActiveNavKey(COMMUNITY_BASICS_PATH)).toBe("living");
+  });
+
+  it("highlights Living for the life hub path", () => {
+    expect(getActiveNavKey("/netherlands/life/")).toBe("living");
+  });
+
+  it("highlights Living for the legacy living community-basics redirect source", () => {
+    expect(getActiveNavKey("/netherlands/living/community-basics/")).toBe("living");
+  });
+
+  it("renders the Living daily life community basics menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Community basics");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(COMMUNITY_BASICS_PATH, item!)).toBe(true);
+  });
+
+  it("marks legacy living community-basics href active via alias", () => {
+    const item = {
+      label: "Community basics",
+      href: COMMUNITY_BASICS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/living/community-basics/", item)).toBe(true);
+  });
+});
+
 describe("utilities nav active state", () => {
   it("treats the utilities guide route as live", () => {
     expect(getRouteStatus(UTILITIES_PATH)).toBe("live");
