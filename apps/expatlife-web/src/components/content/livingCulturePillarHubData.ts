@@ -204,6 +204,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         readingOrderLinks: [
           { title: "Daily life hub", href: "/netherlands/living/daily-life/" },
           { title: "Waste & recycling", href: "/netherlands/practical-life/waste-and-recycling-netherlands/" },
+          { title: "Parking & local permits", href: "/netherlands/practical-life/parking-and-local-permits-netherlands/" },
           { title: "Getting around", href: "/netherlands/living/getting-around/" },
         ],
         startToolLink: null,

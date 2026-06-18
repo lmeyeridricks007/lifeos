@@ -7,6 +7,8 @@ export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
 export const REGISTERING_ADDRESS_PATH = "/netherlands/practical-life/registering-your-address-netherlands/" as const;
 export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
 export const LOCAL_TAXES_NETHERLANDS_PATH = "/netherlands/practical-life/local-taxes-netherlands/" as const;
+export const PARKING_AND_LOCAL_PERMITS_PATH =
+  "/netherlands/practical-life/parking-and-local-permits-netherlands/" as const;
 
 export type PracticalLifeLink = {
   label: string;
@@ -750,6 +752,12 @@ export const wasteAndRecyclingNetherlandsPage = {
       href: REGISTERING_ADDRESS_PATH,
       status: "live",
       description: "Address registration unlocks waste passes and gemeente services.",
+    },
+    {
+      label: "Parking and Local Permits",
+      href: PARKING_AND_LOCAL_PERMITS_PATH,
+      status: "live",
+      description: "Resident permits, visitor codes, paid zones and gemeente parking rules.",
     },
     {
       label: "Moving to the Netherlands",

@@ -398,12 +398,12 @@
       "section": "guides",
       "clusterLabel": "Living in the Netherlands",
       "pageType": "article",
-      "contentStatus": "scaffold",
-      "menuVisible": true,
+      "contentStatus": "live",
+      "menuVisible": false,
       "navGroup": "daily-life",
-      "intro": "Resident permits and zone rules are local. Use this scaffold to orient; verify with your gemeente before you rely on street parking.",
-      "canonicalGuidePath": null,
-      "canonicalLabel": null,
+      "intro": "Resident permits, visitor passes, paid zones, and parking apps vary by gemeente. See the full practical-life guide for city-by-city steps.",
+      "canonicalGuidePath": "/netherlands/practical-life/parking-and-local-permits-netherlands/",
+      "canonicalLabel": "Parking and local permits guide",
       "related": [
         { "label": "Municipality services", "href": "/netherlands/living/municipality-services/", "description": "Where permits often start online." },
         { "label": "Amsterdam city hub", "href": "/netherlands/amsterdam/", "description": "Example city context." }

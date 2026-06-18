@@ -1085,6 +1085,12 @@ export const municipalityServicesNetherlandsPage = {
       description: "Sorting rules, collection schedules, underground containers and milieustraat.",
     },
     {
+      label: "Parking and Local Permits",
+      href: "/netherlands/practical-life/parking-and-local-permits-netherlands/",
+      status: "live",
+      description: "Resident permits, visitor passes, paid zones, parking apps and municipality permits.",
+    },
+    {
       label: "Renting in the Netherlands",
       href: RENTING_NETHERLANDS_PATH,
       status: "live",

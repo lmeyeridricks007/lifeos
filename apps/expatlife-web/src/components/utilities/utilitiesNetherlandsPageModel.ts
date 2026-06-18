@@ -732,6 +732,7 @@ export const utilitiesNetherlandsPage = {
     { label: "Internet and Mobile", href: "/netherlands/utilities/internet-and-mobile-netherlands/", status: "live", description: "Home internet, mobile plans, SIM-only, eSIM and provider comparison." },
     { label: "Municipality Services", href: "/netherlands/practical-life/municipality-services-netherlands/", status: "live", description: "Gemeente registration, BSN, local taxes, parking and waste services." },
     { label: "Waste and Recycling", href: "/netherlands/practical-life/waste-and-recycling-netherlands/", status: "live", description: "Sorting, schedules, underground containers and recycling centers." },
+    { label: "Parking and Local Permits", href: "/netherlands/practical-life/parking-and-local-permits-netherlands/", status: "live", description: "Resident permits, visitor codes, paid zones and parking apps." },
     { label: "Renting in the Netherlands", href: RENTING_NETHERLANDS_PATH, status: "comingSoon", description: "Rental setup, contracts and what to confirm before signing." },
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Owner responsibilities, utilities and post-transfer setup." },
     { label: "Moving to the Netherlands", href: MOVING_TO_NETHERLANDS_PATH, status: "live", description: "Relocation planning and first-week admin." },

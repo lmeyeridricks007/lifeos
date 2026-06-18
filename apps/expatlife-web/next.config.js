@@ -165,6 +165,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/parking-and-local-permits",
+        destination: "/netherlands/practical-life/parking-and-local-permits-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/parking-and-local-permits/",
+        destination: "/netherlands/practical-life/parking-and-local-permits-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/living/housing",
         destination: "/netherlands/housing/",
         permanent: true,

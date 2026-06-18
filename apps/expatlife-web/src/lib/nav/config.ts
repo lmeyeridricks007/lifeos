@@ -505,6 +505,7 @@ const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
 const LIVING_HOUSING_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/utilities",
   "/netherlands/practical-life/waste-and-recycling-netherlands",
+  "/netherlands/practical-life/parking-and-local-permits-netherlands",
   "/netherlands/taxes/rent-allowance-netherlands",
   /** Legacy URL (301 → canonical guide) — keep Living tab active before redirect. */
   "/netherlands/taxes/rent-allowance",
@@ -809,6 +810,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Waste and recycling",
             "/netherlands/practical-life/waste-and-recycling-netherlands/",
             "Sorting rules, collection schedules, underground containers and milieustraat for expats."
+          ),
+          item(
+            "Parking and local permits",
+            "/netherlands/practical-life/parking-and-local-permits-netherlands/",
+            "Resident permits, visitor passes, paid zones, parking apps and municipality permits."
           ),
         ],
       },
@@ -1482,7 +1488,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/practical-life/waste-and-recycling-netherlands/",
             "Sorting, pickup schedules, underground containers and recycling centers."
           ),
-          item("Parking and local permits", "/netherlands/living/parking-and-local-permits/", "Street parking and permits."),
+          item(
+            "Parking and local permits",
+            "/netherlands/practical-life/parking-and-local-permits-netherlands/",
+            "Resident permits, visitor passes, paid zones, parking apps and municipality permits."
+          ),
           item("Community basics", "/netherlands/living/community-basics/", "Neighbors, noise, and building life."),
         ],
       },

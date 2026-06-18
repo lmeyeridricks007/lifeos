@@ -325,6 +325,50 @@ describe("waste and recycling nav active state", () => {
   });
 });
 
+describe("parking and local permits nav active state", () => {
+  const PARKING_PATH = "/netherlands/practical-life/parking-and-local-permits-netherlands/";
+
+  it("treats the parking guide route as live", () => {
+    expect(getRouteStatus(PARKING_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the parking guide path", () => {
+    expect(getActiveNavKey(PARKING_PATH)).toBe("living");
+  });
+
+  it("renders the Move practical life parking menu row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Practical life")
+      ?.items.find((row) => row.label === "Parking and local permits");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PARKING_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Living daily life parking menu row as active", () => {
+    const items = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.filter((row) => row.label === "Parking and local permits");
+
+    expect(items).toHaveLength(1);
+    const item = items![0];
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PARKING_PATH, item!)).toBe(true);
+  });
+
+  it("marks legacy living parking href active via alias", () => {
+    const item = {
+      label: "Parking and local permits",
+      href: PARKING_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/living/parking-and-local-permits/", item)).toBe(true);
+  });
+});
+
 describe("utilities nav active state", () => {
   it("treats the utilities guide route as live", () => {
     expect(getRouteStatus(UTILITIES_PATH)).toBe("live");

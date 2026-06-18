@@ -10,6 +10,7 @@ import {
   HeartPulse,
   Languages,
   Recycle,
+  ParkingCircle,
   Shield,
   ShoppingBag,
   Smartphone,
@@ -202,6 +203,13 @@ export const LIVING_SURVIVAL_TOPIC_CARDS: LivingTopicCard[] = [
     description: "Which bag is which, pickup cadence, and how streets stay quiet about it.",
     icon: Recycle,
     cta: "Sort like your street",
+  },
+  {
+    href: "/netherlands/practical-life/parking-and-local-permits-netherlands/",
+    title: "Parking & local permits",
+    description: "Resident permits, visitor codes, paid zones and the apps locals actually use.",
+    icon: ParkingCircle,
+    cta: "Understand parking rules",
   },
 ];
 
