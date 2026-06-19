@@ -369,6 +369,65 @@ describe("parking and local permits nav active state", () => {
   });
 });
 
+describe("subscriptions and cancellations nav active state", () => {
+  const SUBSCRIPTIONS_PATH = "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/";
+
+  it("treats the subscriptions guide route as live", () => {
+    expect(getRouteStatus(SUBSCRIPTIONS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the subscriptions guide path", () => {
+    expect(getActiveNavKey(SUBSCRIPTIONS_PATH)).toBe("living");
+  });
+
+  it("highlights Living for the legacy living subscriptions redirect source", () => {
+    expect(getActiveNavKey("/netherlands/living/subscriptions-and-cancellations/")).toBe("living");
+  });
+
+  it("renders the Move practical life subscriptions menu row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Practical life")
+      ?.items.find((row) => row.label === "Subscriptions and cancellations");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(SUBSCRIPTIONS_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Living digital life subscriptions menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Digital life / admin-light")
+      ?.items.find((row) => row.label === "Subscriptions and cancellations");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(SUBSCRIPTIONS_PATH, item!)).toBe(true);
+  });
+
+  it("marks both Move and Living menu rows active for the canonical subscriptions href", () => {
+    const rows = menuRowsForHref(SUBSCRIPTIONS_PATH);
+    expect(rows.some((row) => row.menuKey === "moving" && row.sectionTitle === "Practical life")).toBe(true);
+    expect(rows.some((row) => row.menuKey === "living" && row.sectionTitle === "Digital life / admin-light")).toBe(
+      true
+    );
+    for (const row of rows) {
+      expect(row.item.navStatus).toBe("live");
+      expect(isNavItemActive(SUBSCRIPTIONS_PATH, row.item)).toBe(true);
+    }
+  });
+
+  it("marks legacy living subscriptions-and-cancellations href active via alias", () => {
+    const item = {
+      label: "Subscriptions and cancellations",
+      href: SUBSCRIPTIONS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/living/subscriptions-and-cancellations/", item)).toBe(true);
+  });
+});
+
 describe("community basics nav active state", () => {
   const COMMUNITY_BASICS_PATH = "/netherlands/life/community-basics-netherlands/";
 

@@ -217,7 +217,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         readingOrderLinks: [
           { title: "DigiD awareness", href: "/netherlands/living/digid-awareness/" },
           { title: "Government portals map", href: "/netherlands/practical-life/government-portals-netherlands/" },
-          { title: "Subscriptions & cancellations", href: "/netherlands/living/subscriptions-and-cancellations/" },
+          { title: "Subscriptions & cancellations", href: "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/" },
         ],
         startToolLink: {
           title: "Full DigiD guide (Move)",

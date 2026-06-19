@@ -506,6 +506,7 @@ const LIVING_HOUSING_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/utilities",
   "/netherlands/practical-life/waste-and-recycling-netherlands",
   "/netherlands/practical-life/parking-and-local-permits-netherlands",
+  "/netherlands/practical-life/subscriptions-and-cancellations-netherlands",
   "/netherlands/taxes/rent-allowance-netherlands",
   /** Legacy URL (301 → canonical guide) — keep Living tab active before redirect. */
   "/netherlands/taxes/rent-allowance",
@@ -817,6 +818,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Parking and local permits",
             "/netherlands/practical-life/parking-and-local-permits-netherlands/",
             "Resident permits, visitor passes, paid zones, parking apps and municipality permits."
+          ),
+          item(
+            "Subscriptions and cancellations",
+            "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
+            "Contracts, notice periods, gym, internet, utilities and cancellation processes for expats."
           ),
         ],
       },
@@ -1512,7 +1518,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         items: [
           item("DigiD awareness", "/netherlands/practical-life/digid-netherlands/", "Digital identity setup after registration."),
           item("Government portals overview", "/netherlands/practical-life/government-portals-netherlands/", "Map of Dutch government websites and digital services."),
-          item("Subscriptions and cancellations", "/netherlands/living/subscriptions-and-cancellations/", "Contracts and notice windows."),
+          item(
+            "Subscriptions and cancellations",
+            "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
+            "Contracts, notice periods and cancellation processes for expats."
+          ),
           item("Privacy and safety basics", "/netherlands/living/privacy-and-safety-basics/", "Practical digital hygiene."),
         ],
       },

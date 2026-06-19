@@ -129,6 +129,7 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/practical-life/bsn-netherlands/": { title: "BSN Netherlands", section: "guides" },
   "/netherlands/practical-life/digid-netherlands/": { title: "DigiD Netherlands", section: "guides" },
   "/netherlands/practical-life/government-portals-netherlands/": { title: "Government Portals Netherlands", section: "guides" },
+  "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/": { title: "Subscriptions and Cancellations Netherlands", section: "guides" },
   "/netherlands/government-services/": { title: "Government Services Netherlands", section: "guides" },
   "/netherlands/practical-life/address-registration-netherlands/": { title: "Address Registration Netherlands", section: "guides" },
   "/netherlands/practical-life/local-taxes-netherlands/": { title: "Local Taxes Netherlands", section: "guides" },
@@ -294,6 +295,7 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/practical-life/parking-and-local-permits-netherlands/",
   "/netherlands/practical-life/digid-netherlands/",
   "/netherlands/practical-life/government-portals-netherlands/",
+  "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
   "/netherlands/government-services/",
   /** Legacy flat URL; 301 → buying guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/buying-house-netherlands/",

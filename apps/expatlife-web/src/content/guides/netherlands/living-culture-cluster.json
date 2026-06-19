@@ -475,22 +475,22 @@
     {
       "cluster": "living",
       "slug": "subscriptions-and-cancellations",
-      "path": "/netherlands/living/subscriptions-and-cancellations/",
+      "path": "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
       "title": "Subscriptions and cancellations in the Netherlands",
-      "metaDescription": "Managing gym, media, box, and service subscriptions in the Netherlands—notice periods and Dutch cancellation quirks.",
+      "metaDescription": "Learn how subscriptions, memberships and cancellations work in the Netherlands, including gyms, internet, mobile contracts, utilities, streaming services and notice periods.",
       "breadcrumbLabel": "Subscriptions and cancellations",
       "section": "guides",
       "clusterLabel": "Living in the Netherlands",
       "pageType": "article",
-      "contentStatus": "scaffold",
+      "contentStatus": "live",
       "menuVisible": true,
       "navGroup": "digital-life",
       "intro": "Contracts auto-renew by default in many categories. Track end dates and notice windows to avoid another year locked in.",
-      "canonicalGuidePath": null,
-      "canonicalLabel": null,
+      "canonicalGuidePath": "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
+      "canonicalLabel": "Subscriptions and cancellations guide",
       "related": [
-        { "label": "Banking", "href": "/netherlands/money/banking/", "description": "Where charges appear." },
-        { "label": "Utilities", "href": "/netherlands/living/utilities/", "description": "Longer-term household contracts." }
+        { "label": "Internet and mobile", "href": "/netherlands/utilities/internet-and-mobile-netherlands/", "description": "Telecom contracts and switching." },
+        { "label": "Utilities", "href": "/netherlands/utilities/utilities-netherlands/", "description": "Energy and household utilities." }
       ]
     },
     {

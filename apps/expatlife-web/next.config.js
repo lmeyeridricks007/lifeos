@@ -175,6 +175,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/subscriptions-and-cancellations",
+        destination: "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/subscriptions-and-cancellations/",
+        destination: "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/living/community-basics",
         destination: "/netherlands/life/community-basics-netherlands/",
         permanent: true,
