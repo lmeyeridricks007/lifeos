@@ -444,7 +444,7 @@
       "menuVisible": true,
       "navGroup": "digital-life",
       "intro": "DigiD unlocks taxes, healthcare letters, and many gemeente flows. The canonical guide lives under Move; this Living entry orients you in the post-arrival stack.",
-      "canonicalGuidePath": "/netherlands/digid-awareness/",
+      "canonicalGuidePath": "/netherlands/practical-life/digid-netherlands/",
       "canonicalLabel": "Full DigiD guide",
       "related": [
         { "label": "Government portals overview", "href": "/netherlands/living/government-portals-overview/", "description": "What you log into after DigiD." },

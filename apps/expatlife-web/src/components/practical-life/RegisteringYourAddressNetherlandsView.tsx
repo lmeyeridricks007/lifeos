@@ -86,8 +86,8 @@ const digitalLinks: PracticalLifeLink[] = [
   {
     label: "DigiD Netherlands",
     href: DIGID_NETHERLANDS_PATH,
-    status: "comingSoon",
-    description: "Step-by-step digital identity setup after BSN and address registration.",
+    status: "live",
+    description: "Complete expat guide to DigiD — digital identity for government services online.",
   },
 ];
 

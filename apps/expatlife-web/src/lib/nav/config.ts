@@ -780,7 +780,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/practical-life/registering-your-address-netherlands/",
             "Municipality address registration, BSN connection, documents and appointment steps."
           ),
-          item("DigiD guide", "/netherlands/digid-awareness/"),
           item("Open a bank account", "/netherlands/open-bank-account-netherlands"),
           item("Shipping household goods", "/netherlands/shipping-household-goods-netherlands"),
         ],
@@ -1505,7 +1504,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Digital life / admin-light",
         items: [
-          item("DigiD awareness", "/netherlands/living/digid-awareness/", "Cluster entry + link to full guide."),
+          item("DigiD awareness", "/netherlands/practical-life/digid-netherlands/", "Digital identity setup after registration."),
           item("Government portals overview", "/netherlands/living/government-portals-overview/", "Where tasks usually live online."),
           item("Subscriptions and cancellations", "/netherlands/living/subscriptions-and-cancellations/", "Contracts and notice windows."),
           item("Privacy and safety basics", "/netherlands/living/privacy-and-safety-basics/", "Practical digital hygiene."),

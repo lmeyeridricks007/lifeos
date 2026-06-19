@@ -409,6 +409,75 @@ describe("community basics nav active state", () => {
   });
 });
 
+describe("digid netherlands nav active state", () => {
+  const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands/";
+
+  it("treats the DigiD Netherlands guide route as live", () => {
+    expect(getRouteStatus(DIGID_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Move for the canonical DigiD guide path", () => {
+    expect(getActiveNavKey(DIGID_NETHERLANDS_PATH)).toBe("moving");
+  });
+
+  it("highlights Move for legacy digid-awareness redirect source", () => {
+    expect(getActiveNavKey("/netherlands/digid-awareness/")).toBe("moving");
+  });
+
+  it("highlights Living for legacy living digid-awareness redirect source", () => {
+    expect(getActiveNavKey("/netherlands/living/digid-awareness/")).toBe("living");
+  });
+
+  it("renders the Move Registration DigiD Netherlands menu row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Registration")
+      ?.items.find((row) => row.label === "DigiD Netherlands");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DIGID_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Living digital life DigiD awareness menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Digital life / admin-light")
+      ?.items.find((row) => row.label === "DigiD awareness");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DIGID_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("marks legacy digid-awareness href active via alias", () => {
+    const item = {
+      label: "DigiD guide",
+      href: "/netherlands/digid-awareness/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(DIGID_NETHERLANDS_PATH, item)).toBe(true);
+  });
+
+  it("marks legacy living digid-awareness href active via alias", () => {
+    const item = {
+      label: "DigiD awareness",
+      href: "/netherlands/living/digid-awareness/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(DIGID_NETHERLANDS_PATH, item)).toBe(true);
+  });
+
+  it("marks flat digid-netherlands pathname active via alias", () => {
+    const item = {
+      label: "DigiD Netherlands",
+      href: DIGID_NETHERLANDS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/digid-netherlands/", item)).toBe(true);
+  });
+});
+
 describe("utilities nav active state", () => {
   it("treats the utilities guide route as live", () => {
     expect(getRouteStatus(UTILITIES_PATH)).toBe("live");

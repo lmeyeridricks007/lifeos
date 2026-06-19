@@ -50,6 +50,9 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/living/parking-and-local-permits": "/netherlands/practical-life/parking-and-local-permits-netherlands",
   "/netherlands/living/community-basics": "/netherlands/life/community-basics-netherlands",
   "/netherlands/living/local/community-basics": "/netherlands/life/community-basics-netherlands",
+  "/netherlands/digid-awareness": "/netherlands/practical-life/digid-netherlands",
+  "/netherlands/living/digid-awareness": "/netherlands/practical-life/digid-netherlands",
+  "/netherlands/digid-netherlands": "/netherlands/practical-life/digid-netherlands",
   "/netherlands/utilities-in-netherlands": "/netherlands/utilities/utilities-netherlands",
   "/netherlands/utilities": "/netherlands/utilities/utilities-netherlands",
 };
