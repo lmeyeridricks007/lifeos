@@ -824,6 +824,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
             "Contracts, notice periods, gym, internet, utilities and cancellation processes for expats."
           ),
+          item(
+            "Privacy and safety basics",
+            "/netherlands/practical-life/privacy-and-safety-basics-netherlands/",
+            "Personal safety, digital security, scam awareness and emergency services for expats."
+          ),
         ],
       },
       {
@@ -1523,7 +1528,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
             "Contracts, notice periods and cancellation processes for expats."
           ),
-          item("Privacy and safety basics", "/netherlands/living/privacy-and-safety-basics/", "Practical digital hygiene."),
+          item(
+            "Privacy and safety basics",
+            "/netherlands/practical-life/privacy-and-safety-basics-netherlands/",
+            "Personal safety, digital security, scams and emergency orientation for expats."
+          ),
         ],
       },
     ],

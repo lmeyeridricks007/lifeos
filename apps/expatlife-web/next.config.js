@@ -185,6 +185,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/privacy-and-safety-basics",
+        destination: "/netherlands/practical-life/privacy-and-safety-basics-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/privacy-and-safety-basics/",
+        destination: "/netherlands/practical-life/privacy-and-safety-basics-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/living/community-basics",
         destination: "/netherlands/life/community-basics-netherlands/",
         permanent: true,

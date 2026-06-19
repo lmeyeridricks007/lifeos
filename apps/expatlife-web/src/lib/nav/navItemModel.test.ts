@@ -369,6 +369,65 @@ describe("parking and local permits nav active state", () => {
   });
 });
 
+describe("privacy and safety basics nav active state", () => {
+  const PRIVACY_SAFETY_PATH = "/netherlands/practical-life/privacy-and-safety-basics-netherlands/";
+
+  it("treats the privacy and safety guide route as live", () => {
+    expect(getRouteStatus(PRIVACY_SAFETY_PATH)).toBe("live");
+  });
+
+  it("highlights Move for the privacy and safety guide path", () => {
+    expect(getActiveNavKey(PRIVACY_SAFETY_PATH)).toBe("moving");
+  });
+
+  it("highlights Move for the legacy living privacy redirect source", () => {
+    expect(getActiveNavKey("/netherlands/living/privacy-and-safety-basics/")).toBe("moving");
+  });
+
+  it("renders the Move practical life privacy menu row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Practical life")
+      ?.items.find((row) => row.label === "Privacy and safety basics");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PRIVACY_SAFETY_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Living digital life privacy menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Digital life / admin-light")
+      ?.items.find((row) => row.label === "Privacy and safety basics");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PRIVACY_SAFETY_PATH, item!)).toBe(true);
+  });
+
+  it("marks both Move and Living menu rows active for the canonical privacy href", () => {
+    const rows = menuRowsForHref(PRIVACY_SAFETY_PATH);
+    expect(rows.some((row) => row.menuKey === "moving" && row.sectionTitle === "Practical life")).toBe(true);
+    expect(rows.some((row) => row.menuKey === "living" && row.sectionTitle === "Digital life / admin-light")).toBe(
+      true
+    );
+    for (const row of rows) {
+      expect(row.item.navStatus).toBe("live");
+      expect(isNavItemActive(PRIVACY_SAFETY_PATH, row.item)).toBe(true);
+    }
+  });
+
+  it("marks legacy living privacy-and-safety-basics href active via alias", () => {
+    const item = {
+      label: "Privacy and safety basics",
+      href: PRIVACY_SAFETY_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/living/privacy-and-safety-basics/", item)).toBe(true);
+  });
+});
+
 describe("subscriptions and cancellations nav active state", () => {
   const SUBSCRIPTIONS_PATH = "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/";
 

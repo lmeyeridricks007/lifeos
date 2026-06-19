@@ -147,6 +147,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         links: [
           { href: "/netherlands/living/digid-awareness/", label: "DigiD (Living entry)" },
           { href: "/netherlands/practical-life/government-portals-netherlands/", label: "Government portals" },
+          { href: "/netherlands/practical-life/privacy-and-safety-basics-netherlands/", label: "Privacy & safety" },
         ],
       },
       {
@@ -156,7 +157,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         actions: ["Introduce yourself to neighbours when it fits", "Know parking and permit basics", "Keep digital hygiene for gemeente scams"],
         links: [
           { href: "/netherlands/life/community-basics-netherlands/", label: "Community basics" },
-          { href: "/netherlands/living/privacy-and-safety-basics/", label: "Privacy & safety" },
+          { href: "/netherlands/practical-life/privacy-and-safety-basics-netherlands/", label: "Privacy & safety" },
         ],
       },
     ],
