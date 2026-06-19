@@ -13,6 +13,8 @@ export const BUYING_HOUSE_PATH = "/netherlands/housing/buying-a-house-netherland
 export const STARTING_BUSINESS_PATH = "/netherlands/business/starting-a-business-netherlands/" as const;
 export const ZZP_PATH = "/netherlands/business/zzp-netherlands/" as const;
 export const MUNICIPALITY_REGISTRATION_PATH = "/netherlands/municipality-registration-netherlands/" as const;
+export const GOVERNMENT_PORTALS_NETHERLANDS_PATH =
+  "/netherlands/practical-life/government-portals-netherlands/" as const;
 
 export const BSN_NETHERLANDS_PATH = "/netherlands/practical-life/bsn-netherlands/" as const;
 export const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands/" as const;
@@ -1069,8 +1071,14 @@ export const municipalityServicesNetherlandsPage = {
     {
       label: "DigiD Netherlands",
       href: DIGID_NETHERLANDS_PATH,
-      status: "comingSoon",
+      status: "live",
       description: "Step-by-step digital identity setup after BSN and address registration.",
+    },
+    {
+      label: "Government Portals in the Netherlands",
+      href: GOVERNMENT_PORTALS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Map of Dutch government websites for taxes, healthcare, IND and gemeente portals.",
     },
     {
       label: "Utilities Guide",

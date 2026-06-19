@@ -23,6 +23,7 @@ import { getSiteOrigin } from "@/lib/site-origin";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { GuidePremiumVisualFigure } from "@/src/components/guides/GuidePremiumVisualFigure";
 import {
+  guidePremiumCardGridClass,
   guidePremiumSectionDetailStackClass,
   guidePremiumVisualSpacingClass,
 } from "@/lib/ui/guide-premium-page-ui";
@@ -216,7 +217,7 @@ function SectionNav({ items }: { items: typeof page.sectionNav }) {
 
 function FeatureGrid({ items }: { items: Array<{ title: string; body: string }> }) {
   return (
-    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <div className={guidePremiumCardGridClass(items.length)}>
       {items.map((item, index) => {
         const Icon = iconPool[index % iconPool.length];
         return (

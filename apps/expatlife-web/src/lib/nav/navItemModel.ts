@@ -52,7 +52,8 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/living/local/community-basics": "/netherlands/life/community-basics-netherlands",
   "/netherlands/digid-awareness": "/netherlands/practical-life/digid-netherlands",
   "/netherlands/living/digid-awareness": "/netherlands/practical-life/digid-netherlands",
-  "/netherlands/digid-netherlands": "/netherlands/practical-life/digid-netherlands",
+  "/netherlands/living/government-portals-overview": "/netherlands/practical-life/government-portals-netherlands",
+  "/netherlands/government-portals-netherlands": "/netherlands/practical-life/government-portals-netherlands",
   "/netherlands/utilities-in-netherlands": "/netherlands/utilities/utilities-netherlands",
   "/netherlands/utilities": "/netherlands/utilities/utilities-netherlands",
 };

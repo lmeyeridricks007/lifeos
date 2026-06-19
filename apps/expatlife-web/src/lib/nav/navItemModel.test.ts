@@ -478,6 +478,93 @@ describe("digid netherlands nav active state", () => {
   });
 });
 
+describe("government portals netherlands nav active state", () => {
+  const GOVERNMENT_PORTALS_PATH = "/netherlands/practical-life/government-portals-netherlands/";
+  const GOVERNMENT_SERVICES_HUB_PATH = "/netherlands/government-services/";
+
+  it("treats the government portals guide route as live", () => {
+    expect(getRouteStatus(GOVERNMENT_PORTALS_PATH)).toBe("live");
+  });
+
+  it("treats the government services hub route as live", () => {
+    expect(getRouteStatus(GOVERNMENT_SERVICES_HUB_PATH)).toBe("live");
+  });
+
+  it("highlights Move for the canonical government portals guide path", () => {
+    expect(getActiveNavKey(GOVERNMENT_PORTALS_PATH)).toBe("moving");
+  });
+
+  it("highlights Move for the government services hub path", () => {
+    expect(getActiveNavKey(GOVERNMENT_SERVICES_HUB_PATH)).toBe("moving");
+  });
+
+  it("renders the Move Registration Government portals menu row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Registration")
+      ?.items.find((row) => row.label === "Government portals");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(GOVERNMENT_PORTALS_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Living digital life Government portals overview menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Digital life / admin-light")
+      ?.items.find((row) => row.label === "Government portals overview");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(GOVERNMENT_PORTALS_PATH, item!)).toBe(true);
+  });
+
+  it("highlights Living for legacy living government-portals-overview redirect source", () => {
+    expect(getActiveNavKey("/netherlands/living/government-portals-overview/")).toBe("living");
+  });
+
+  it("marks Move and Living menu rows active for the canonical government portals href", () => {
+    const item = {
+      label: "Government portals",
+      href: GOVERNMENT_PORTALS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(GOVERNMENT_PORTALS_PATH, item)).toBe(true);
+  });
+
+  it("marks flat government-portals-netherlands pathname active via alias", () => {
+    const item = {
+      label: "Government portals",
+      href: GOVERNMENT_PORTALS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/government-portals-netherlands/", item)).toBe(true);
+  });
+
+  it("renders Move Registration and Living digital life rows as active", () => {
+    const rows = menuRowsForHref(GOVERNMENT_PORTALS_PATH);
+    const moveRow = rows.find((row) => row.menuKey === "moving" && row.sectionTitle === "Registration");
+    const livingRow = rows.find(
+      (row) => row.menuKey === "living" && row.sectionTitle === "Digital life / admin-light"
+    );
+
+    expect(moveRow).toBeDefined();
+    expect(livingRow).toBeDefined();
+    expect(isNavItemActive(GOVERNMENT_PORTALS_PATH, moveRow!.item)).toBe(true);
+    expect(isNavItemActive(GOVERNMENT_PORTALS_PATH, livingRow!.item)).toBe(true);
+  });
+
+  it("marks legacy living government-portals-overview href active via alias", () => {
+    const item = {
+      label: "Government portals overview",
+      href: "/netherlands/living/government-portals-overview/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(GOVERNMENT_PORTALS_PATH, item)).toBe(true);
+  });
+});
+
 describe("utilities nav active state", () => {
   it("treats the utilities guide route as live", () => {
     expect(getRouteStatus(UTILITIES_PATH)).toBe("live");

@@ -23,6 +23,7 @@ import { cn } from "@/lib/cn";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import {
+  guidePremiumCardGridClass,
   guidePremiumIntroStackClass,
   guidePremiumSectionDetailStackClass,
   guidePremiumVisualAfterIntroClass,
@@ -464,7 +465,7 @@ function BulletPanel({ title, items }: { title: string; items: readonly string[]
 
 function FeatureGrid({ items }: { items: Array<{ title: string; body: string }> }) {
   return (
-    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <div className={guidePremiumCardGridClass(items.length)}>
       {items.map((item, index) => (
         <FeatureCard key={item.title} title={item.title} body={item.body} iconIndex={index} />
       ))}
@@ -541,7 +542,7 @@ function OrganizationGrid({ items }: { items: readonly OrganizationEntry[] }) {
 
 function LinkCardGrid({ items }: { items: PracticalLifeLink[] }) {
   return (
-    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <div className={guidePremiumCardGridClass(items.length)}>
       {items.map((item, index) => (
         <LinkCard key={`${item.label}-${index}`} item={item} iconIndex={index} />
       ))}
@@ -907,7 +908,7 @@ export function DigiDNetherlandsView() {
               <ChecklistBlock title="How to use these resources" items={page.sourceUsageTips} columns={2} />
               <ProfileScenarioTable title="Which official source when — examples" rows={page.sourceVerificationScenarios} />
               <p className="text-sm leading-relaxed text-foreground-muted">{page.sourcesDisclaimer}</p>
-              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              <div className={guidePremiumCardGridClass(page.officialSources.length)}>
                 {page.officialSources.map((source) => (
                   <SourceLink key={source.href} source={source} />
                 ))}

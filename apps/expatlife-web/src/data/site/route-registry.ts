@@ -128,6 +128,8 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/utilities/energy-providers-netherlands/": { title: "Energy Providers Netherlands", section: "guides" },
   "/netherlands/practical-life/bsn-netherlands/": { title: "BSN Netherlands", section: "guides" },
   "/netherlands/practical-life/digid-netherlands/": { title: "DigiD Netherlands", section: "guides" },
+  "/netherlands/practical-life/government-portals-netherlands/": { title: "Government Portals Netherlands", section: "guides" },
+  "/netherlands/government-services/": { title: "Government Services Netherlands", section: "guides" },
   "/netherlands/practical-life/address-registration-netherlands/": { title: "Address Registration Netherlands", section: "guides" },
   "/netherlands/practical-life/local-taxes-netherlands/": { title: "Local Taxes Netherlands", section: "guides" },
   "/netherlands/registering-address-rental/": { title: "Registering address (rental)", section: "guides" },
@@ -291,6 +293,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/practical-life/waste-and-recycling-netherlands/",
   "/netherlands/practical-life/parking-and-local-permits-netherlands/",
   "/netherlands/practical-life/digid-netherlands/",
+  "/netherlands/practical-life/government-portals-netherlands/",
+  "/netherlands/government-services/",
   /** Legacy flat URL; 301 → buying guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/buying-house-netherlands/",
   /** Legacy flat URL; 301 → mortgage guide — keep live so nav never surfaces as “Soon”. */

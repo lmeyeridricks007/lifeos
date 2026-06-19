@@ -447,7 +447,7 @@
       "canonicalGuidePath": "/netherlands/practical-life/digid-netherlands/",
       "canonicalLabel": "Full DigiD guide",
       "related": [
-        { "label": "Government portals overview", "href": "/netherlands/living/government-portals-overview/", "description": "What you log into after DigiD." },
+        { "label": "Government portals overview", "href": "/netherlands/practical-life/government-portals-netherlands/", "description": "What you log into after DigiD." },
         { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/", "description": "Registration sequencing." }
       ]
     },
@@ -465,8 +465,8 @@
       "menuVisible": true,
       "navGroup": "digital-life",
       "intro": "A map of “where tasks live” online once you have BSN and DigiD—focused on recurring admin, not first-time visa work.",
-      "canonicalGuidePath": null,
-      "canonicalLabel": null,
+      "canonicalGuidePath": "/netherlands/practical-life/government-portals-netherlands/",
+      "canonicalLabel": "Government portals guide",
       "related": [
         { "label": "DigiD awareness", "href": "/netherlands/living/digid-awareness/", "description": "Entry point to digital ID." },
         { "label": "Taxes hub", "href": "/netherlands/taxes/", "description": "Belastingdienst-facing flows (Money)." }

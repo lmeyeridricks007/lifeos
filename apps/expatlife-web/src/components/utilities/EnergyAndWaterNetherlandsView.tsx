@@ -22,7 +22,12 @@ import { Container } from "@/components/ui/container";
 import { cn } from "@/lib/cn";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
-import { guidePremiumIntroStackClass, guidePremiumSectionDetailStackClass, guidePremiumVisualAfterIntroClass } from "@/lib/ui/guide-premium-page-ui";
+import {
+  guidePremiumCardGridClass,
+  guidePremiumIntroStackClass,
+  guidePremiumSectionDetailStackClass,
+  guidePremiumVisualAfterIntroClass,
+} from "@/lib/ui/guide-premium-page-ui";
 import {
   siteHeroFramedShellClass,
   siteHeroGlowPrimaryClass,
@@ -176,7 +181,7 @@ function SectionNav() {
 
 function FeatureGrid({ items }: { items: Array<{ title: string; body: string }> }) {
   return (
-    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <div className={guidePremiumCardGridClass(items.length)}>
       {items.map((item, index) => {
         const Icon = iconPool[index % iconPool.length];
         return (
@@ -271,7 +276,7 @@ function HeatingComparisonTable() {
 
 function WaterRegionCards() {
   return (
-    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <div className={guidePremiumCardGridClass(page.waterRegions.length)}>
       {page.waterRegions.map((region) => (
         <article key={region.provider} className={cardClass}>
           <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />

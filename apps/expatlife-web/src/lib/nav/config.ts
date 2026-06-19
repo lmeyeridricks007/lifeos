@@ -581,6 +581,7 @@ function isMovingPillarPath(pathname: string): boolean {
     "/netherlands/health-insurance-netherlands",
     "/netherlands/utilities",
     "/netherlands/practical-life",
+    "/netherlands/government-services",
     "/netherlands/digid-awareness",
     "/netherlands/shipping-household-goods-netherlands",
     "/netherlands/open-bank-account-netherlands",
@@ -829,6 +830,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           ),
           item("BSN Netherlands", "/netherlands/practical-life/bsn-netherlands/", "BSN routes, documents and timing for newcomers."),
           item("DigiD Netherlands", "/netherlands/practical-life/digid-netherlands/", "Digital identity setup after registration."),
+          item(
+            "Government portals",
+            "/netherlands/practical-life/government-portals-netherlands/",
+            "Map of Dutch government websites, DigiD, taxes, IND and gemeente portals."
+          ),
           item("Local taxes Netherlands", "/netherlands/practical-life/local-taxes-netherlands/", "Gemeente tax letters, charges and payment steps."),
         ],
       },
@@ -1505,7 +1511,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Digital life / admin-light",
         items: [
           item("DigiD awareness", "/netherlands/practical-life/digid-netherlands/", "Digital identity setup after registration."),
-          item("Government portals overview", "/netherlands/living/government-portals-overview/", "Where tasks usually live online."),
+          item("Government portals overview", "/netherlands/practical-life/government-portals-netherlands/", "Map of Dutch government websites and digital services."),
           item("Subscriptions and cancellations", "/netherlands/living/subscriptions-and-cancellations/", "Contracts and notice windows."),
           item("Privacy and safety basics", "/netherlands/living/privacy-and-safety-basics/", "Practical digital hygiene."),
         ],

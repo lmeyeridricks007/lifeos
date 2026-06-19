@@ -9,6 +9,8 @@ export const EXPAT_TAXES_PATH = "/netherlands/taxes/expat-taxes-netherlands/" as
 export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands/" as const;
 export const DIGID_AWARENESS_PATH = "/netherlands/digid-awareness/" as const;
 export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration/" as const;
+export const GOVERNMENT_PORTALS_NETHERLANDS_PATH =
+  "/netherlands/practical-life/government-portals-netherlands/" as const;
 
 export type PracticalLifeLink = {
   label: string;
@@ -1017,6 +1019,12 @@ export const digiDNetherlandsPage = {
     "Still relocating — moving guide for full first-month sequencing including digital admin.",
   ],
   relatedGuides: [
+    {
+      label: "Government Portals in the Netherlands",
+      href: GOVERNMENT_PORTALS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Directory of Dutch government websites — taxes, IND, gemeente, healthcare and business portals.",
+    },
     {
       label: "Municipality Services in the Netherlands",
       href: MUNICIPALITY_SERVICES_PATH,

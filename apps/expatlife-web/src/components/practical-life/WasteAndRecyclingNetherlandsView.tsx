@@ -21,6 +21,7 @@ import { cn } from "@/lib/cn";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import {
+  guidePremiumCardGridClass,
   guidePremiumIntroStackClass,
   guidePremiumSectionDetailStackClass,
   guidePremiumVisualAfterIntroClass,
@@ -158,7 +159,7 @@ function ExploreLinkCard({ item, iconIndex = 0, tone = "default" }: { item: Prac
 
 function FeatureGrid({ items }: { items: Array<{ title: string; body: string }> }) {
   return (
-    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <div className={guidePremiumCardGridClass(items.length)}>
       {items.map((item, index) => {
         const Icon = iconPool[index % iconPool.length];
         return (
@@ -404,7 +405,7 @@ function LinkOrPlanned({ item, className }: { item: PracticalLifeLink; className
 
 function LinkCardGrid({ items }: { items: PracticalLifeLink[] }) {
   return (
-    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <div className={guidePremiumCardGridClass(items.length)}>
       {items.map((item) => (
         <LinkOrPlanned key={item.label} item={item} />
       ))}

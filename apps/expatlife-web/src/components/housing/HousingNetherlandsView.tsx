@@ -25,6 +25,7 @@ import { cn } from "@/lib/cn";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import {
+  guidePremiumCardGridClass,
   guidePremiumIntroStackClass,
   guidePremiumSectionDetailStackClass,
   guidePremiumVisualAfterIntroClass,
@@ -208,7 +209,7 @@ function LinkOrPlanned({ item, className }: { item: HousingLink; className?: str
 
 function FeatureGrid({ items }: { items: Array<{ title: string; body: string }> }) {
   return (
-    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <div className={guidePremiumCardGridClass(items.length)}>
       {items.map((item, index) => {
         const Icon = iconPool[index % iconPool.length];
         return (
@@ -454,7 +455,7 @@ function SetupPhaseCards() {
 
 function LinkCardGrid({ items }: { items: HousingLink[] }) {
   return (
-    <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <div className={guidePremiumCardGridClass(items.length)}>
       {items.map((item) => (
         <LinkOrPlanned key={item.label} item={item} />
       ))}
@@ -709,7 +710,7 @@ export function HousingNetherlandsView() {
 
             <PremiumGuideSection id="guides" intro={<SectionIntro title={page.guidesSection.heading}>{page.guidesSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.guides}>
               <VisualTextDetails details={page.visualTextDetails.guides} />
-              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              <div className={guidePremiumCardGridClass(page.featuredGuides.length)}>
                 {page.featuredGuides.map((item) => (
                   <LinkOrPlanned key={item.label} item={item} />
                 ))}
