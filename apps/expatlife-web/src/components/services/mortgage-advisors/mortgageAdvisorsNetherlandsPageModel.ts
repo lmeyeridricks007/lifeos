@@ -479,7 +479,7 @@ export const mortgageAdvisorsNetherlandsPage = {
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Full expat guide to buying Dutch property, costs, bidding and notary transfer." },
     { label: "Buy vs Rent", href: BUY_VS_RENT_NETHERLANDS_PATH, status: "live", description: "Decision guide before committing to a Dutch home purchase." },
     { label: "Property Tax Netherlands", href: "/netherlands/taxes/property-tax-netherlands/", status: "live", description: "Transfer tax, WOZ value and recurring homeowner costs." },
-    { label: "Housing Costs Netherlands", href: "/netherlands/housing/housing-costs-netherlands/", status: "comingSoon", description: "Typical housing costs for renters and buyers." },
+    { label: "Housing Costs Netherlands", href: "/netherlands/housing/housing-costs-netherlands/", status: "live", description: "Typical housing costs for renters and buyers." },
   ] satisfies MortgageAdvisorLink[],
   leadCta: {
     heading: "Need Help Finding the Right Mortgage Advisor?",
@@ -520,7 +520,7 @@ export const mortgageAdvisorsNetherlandsPage = {
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Understand the buying process before you choose providers." },
     { label: "Mortgages for Expats", href: MORTGAGES_FOR_EXPATS_PATH, status: "live", description: "Go deeper on eligibility, capacity and mortgage types." },
     { label: "Buy vs Rent", href: BUY_VS_RENT_NETHERLANDS_PATH, status: "live", description: "Pressure-test whether buying fits your relocation horizon." },
-    { label: "Housing Costs", href: "/netherlands/housing/housing-costs-netherlands/", status: "comingSoon", description: "Plan recurring housing costs beyond mortgage payments." },
+    { label: "Housing Costs", href: "/netherlands/housing/housing-costs-netherlands/", status: "live", description: "Plan recurring housing costs beyond mortgage payments." },
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, status: "live", description: "Compare city markets, commute and lifestyle trade-offs." },
   ] satisfies MortgageAdvisorLink[],
 };

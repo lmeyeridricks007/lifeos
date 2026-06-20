@@ -963,6 +963,6 @@ export const housingNetherlandsPage = {
     { label: "Social Housing Netherlands", href: SOCIAL_HOUSING_NETHERLANDS_PATH, status: "comingSoon", description: "Eligibility, waiting lists and realistic expectations." },
     { label: "Temporary Accommodation", href: TEMPORARY_ACCOMMODATION_NETHERLANDS_PATH, status: "comingSoon", description: "Short-stay options for arrival windows." },
     { label: "Best Neighborhoods", href: NEIGHBORHOODS_NETHERLANDS_PATH, status: "comingSoon", description: "Compare areas within major Dutch cities." },
-    { label: "Housing Costs Netherlands", href: HOUSING_COSTS_NETHERLANDS_PATH, status: "comingSoon", description: "Deeper cost breakdowns by property and city." },
+    { label: "Housing Costs Netherlands", href: HOUSING_COSTS_NETHERLANDS_PATH, status: "live", description: "Rent, purchase, utilities and city cost comparisons." },
   ] satisfies HousingLink[],
 };

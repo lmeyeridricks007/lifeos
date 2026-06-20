@@ -397,7 +397,7 @@ export const buyVsRentNetherlandsPage = {
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Go deeper on the purchase process." },
     { label: "Mortgages for Expats", href: MORTGAGES_NETHERLANDS_EXPATS_PATH, status: "live", description: "Check mortgage eligibility and borrowing factors." },
     { label: "Renting in the Netherlands", href: RENTING_NETHERLANDS_PATH, status: "comingSoon", description: "Compare the rental path." },
-    { label: "Housing Costs Guide", href: "/netherlands/housing/housing-costs-netherlands/", status: "comingSoon", description: "Future guide to total housing budgets." },
+    { label: "Housing Costs Guide", href: "/netherlands/housing/housing-costs-netherlands/", status: "live", description: "Total housing budgets for renters and buyers." },
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, status: "live", description: "Compare cities before deciding." },
   ] satisfies BuyVsRentNetherlandsLink[],
 } as const;

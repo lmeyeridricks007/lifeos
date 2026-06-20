@@ -1520,6 +1520,63 @@ describe("buying a house nav active state", () => {
   });
 });
 
+describe("housing costs nav active state", () => {
+  const HOUSING_COSTS_PATH = "/netherlands/housing/housing-costs-netherlands/";
+
+  it("treats the housing costs guide route as live", () => {
+    expect(getRouteStatus(HOUSING_COSTS_PATH)).toBe("live");
+  });
+
+  it("highlights Move for the housing costs guide path", () => {
+    expect(getActiveNavKey(HOUSING_COSTS_PATH)).toBe("moving");
+  });
+
+  it("highlights Move for the legacy living housing-costs redirect source", () => {
+    expect(getActiveNavKey("/netherlands/living/housing-costs/")).toBe("moving");
+  });
+
+  it("renders the Move housing menu row as active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Housing")
+      ?.items.find((row) => row.label === "Housing costs in the Netherlands");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HOUSING_COSTS_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Living housing menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Housing")
+      ?.items.find((row) => row.label === "Housing costs");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HOUSING_COSTS_PATH, item!)).toBe(true);
+  });
+
+  it("marks both Move and Living menu rows active for the canonical href", () => {
+    const rows = menuRowsForHref(HOUSING_COSTS_PATH);
+    expect(rows.some((row) => row.menuKey === "moving" && row.sectionTitle === "Housing")).toBe(true);
+    expect(rows.some((row) => row.menuKey === "living" && row.sectionTitle === "Housing")).toBe(true);
+    for (const row of rows) {
+      expect(row.item.navStatus).toBe("live");
+      expect(isNavItemActive(HOUSING_COSTS_PATH, row.item)).toBe(true);
+    }
+  });
+
+  it("marks legacy living housing-costs href active via alias", () => {
+    const item = {
+      label: "Housing costs",
+      href: HOUSING_COSTS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/living/housing-costs/", item)).toBe(true);
+  });
+});
+
 describe("mortgages for expats nav active state", () => {
   const MORTGAGE_PATH = "/netherlands/housing/mortgages-netherlands-expats/";
 

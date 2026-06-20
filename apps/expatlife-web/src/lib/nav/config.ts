@@ -501,6 +501,13 @@ const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/taxes/childcare-allowance",
 ];
 
+/** Housing guides surfaced under Move → Housing — highlight Move at top level (not Living). */
+const MOVE_HOUSING_GUIDE_PREFIXES: readonly string[] = [
+  "/netherlands/housing/housing-costs-netherlands",
+  /** Legacy URL (301 → canonical guide) — keep Move tab active before redirect. */
+  "/netherlands/living/housing-costs",
+];
+
 /** Housing-related guides under Living → Housing (URL may live under `/taxes/`). */
 const LIVING_HOUSING_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/utilities",
@@ -537,6 +544,11 @@ function isBusinessGuidePath(pathname: string): boolean {
 function isMoveTaxCompensationGuidePath(pathname: string): boolean {
   const base = pathname.split("?")[0].replace(/\/+$/, "") || "/";
   return MOVE_TAX_COMPENSATION_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
+}
+
+function isMoveHousingGuidePath(pathname: string): boolean {
+  const base = resolveNavActivePath(pathname).split("?")[0].replace(/\/+$/, "") || "/";
+  return MOVE_HOUSING_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
 }
 
 function isLivingHousingGuidePath(pathname: string): boolean {
@@ -681,6 +693,8 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (isJobsSalaryGuidePath(path)) return "moving";
 
   if (isBusinessGuidePath(path)) return "moving";
+
+  if (isMoveHousingGuidePath(path)) return "moving";
 
   if (isLivingHousingGuidePath(path)) return "living";
 
@@ -876,6 +890,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Buy vs rent in the Netherlands",
             "/netherlands/housing/buy-vs-rent-netherlands/",
             "Compare rental flexibility with ownership stability and costs."
+          ),
+          item(
+            "Housing costs in the Netherlands",
+            "/netherlands/housing/housing-costs-netherlands/",
+            "Rent, purchase, utilities, hidden costs and city-by-city comparisons for expats."
           ),
           item(
             "Property tax in the Netherlands",
@@ -1411,7 +1430,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Municipality address registration, BSN and document steps for newcomers."
           ),
           item("Rental contracts and deposits", "/netherlands/living/rental-contracts-and-deposits/", "Before you sign."),
-          item("Housing costs", "/netherlands/living/housing-costs/", "Typical costs (calculators under Money)."),
+          item("Housing costs", "/netherlands/housing/housing-costs-netherlands/", "Rent, buying, utilities and city cost comparisons."),
           item(
             "Rent allowance in the Netherlands",
             "/netherlands/taxes/rent-allowance-netherlands/",

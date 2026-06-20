@@ -195,6 +195,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/housing-costs",
+        destination: "/netherlands/housing/housing-costs-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/housing-costs/",
+        destination: "/netherlands/housing/housing-costs-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/living/community-basics",
         destination: "/netherlands/life/community-basics-netherlands/",
         permanent: true,

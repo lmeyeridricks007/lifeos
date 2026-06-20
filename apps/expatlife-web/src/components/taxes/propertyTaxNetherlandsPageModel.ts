@@ -366,7 +366,7 @@ export const propertyTaxNetherlandsPage = {
     { label: "Buy vs Rent", href: "/netherlands/housing/buy-vs-rent-netherlands/", status: "live", description: "Compare ownership and renting before buying." },
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Move from tax concepts into the purchase process." },
     { label: "Mortgages for Expats", href: MORTGAGES_NETHERLANDS_EXPATS_PATH, status: "live", description: "Connect ownership costs to borrowing and cash flow." },
-    { label: "Housing Costs", href: "/netherlands/housing/housing-costs-netherlands/", status: "comingSoon", description: "Future deeper budget guide for owners and renters." },
+    { label: "Housing Costs", href: "/netherlands/housing/housing-costs-netherlands/", status: "live", description: "Future deeper budget guide for owners and renters." },
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, status: "live", description: "Compare city context before buying." },
     { label: "Moving to the Netherlands", href: MOVING_TO_NETHERLANDS_PATH, status: "live", description: "Coordinate housing with relocation admin." },
   ] satisfies PropertyTaxNetherlandsLink[],

@@ -283,6 +283,9 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/taxes/property-tax-netherlands/",
   /** Live App Router guide — buy vs rent decision guide for expats (Housing cluster). */
   "/netherlands/housing/buy-vs-rent-netherlands/",
+  "/netherlands/housing/housing-costs-netherlands/",
+  /** Legacy Living URL (301 → canonical housing costs guide). */
+  "/netherlands/living/housing-costs/",
   /** Utilities hub and setup guide for expats after moving. */
   "/netherlands/utilities/",
   "/netherlands/utilities/utilities-netherlands/",

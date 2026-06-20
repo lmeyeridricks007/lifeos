@@ -427,7 +427,7 @@ export const mortgagesNetherlandsExpatsPage = {
     { label: "Buy vs Rent", href: "/netherlands/housing/buy-vs-rent-netherlands/", status: "live", description: "Compare renting and buying before moving deeper." },
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Understand offers, costs, notary transfer and Dutch purchase steps." },
     { label: "Property Tax", href: "/netherlands/taxes/property-tax-netherlands/", status: "live", description: "Plan WOZ and recurring local ownership costs." },
-    { label: "Housing Costs", href: "/netherlands/housing/housing-costs-netherlands/", status: "comingSoon", description: "Future guide to recurring housing costs." },
+    { label: "Housing Costs", href: "/netherlands/housing/housing-costs-netherlands/", status: "live", description: "Future guide to recurring housing costs." },
     { label: "Expat Salary Guide", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Plan mortgage capacity from realistic salary ranges." },
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, status: "live", description: "Compare city pressure before choosing where to buy." },
     { label: "Moving to the Netherlands", href: MOVING_TO_NETHERLANDS_PATH, status: "live", description: "Connect mortgage planning to relocation timing." },

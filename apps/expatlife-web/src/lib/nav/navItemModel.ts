@@ -56,6 +56,7 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/government-portals-netherlands": "/netherlands/practical-life/government-portals-netherlands",
   "/netherlands/living/subscriptions-and-cancellations": "/netherlands/practical-life/subscriptions-and-cancellations-netherlands",
   "/netherlands/living/privacy-and-safety-basics": "/netherlands/practical-life/privacy-and-safety-basics-netherlands",
+  "/netherlands/living/housing-costs": "/netherlands/housing/housing-costs-netherlands",
   "/netherlands/utilities-in-netherlands": "/netherlands/utilities/utilities-netherlands",
   "/netherlands/utilities": "/netherlands/utilities/utilities-netherlands",
 };
