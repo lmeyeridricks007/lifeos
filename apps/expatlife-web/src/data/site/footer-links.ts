@@ -45,6 +45,7 @@ export const FOOTER_GROUPS = {
       { label: "Netherlands", href: "/netherlands/" },
       { label: "Housing in the Netherlands", href: "/netherlands/housing/" },
       { label: "Housing costs", href: "/netherlands/housing/housing-costs-netherlands/" },
+      { label: "Rental contracts & deposits", href: "/netherlands/housing/rental-contracts-and-deposits-netherlands/" },
       { label: "Survival Guide", href: "/netherlands/living/survival-guide/" },
       { label: "Utilities", href: "/netherlands/utilities/utilities-netherlands/" },
       { label: "Energy and water", href: "/netherlands/utilities/energy-and-water-netherlands/" },

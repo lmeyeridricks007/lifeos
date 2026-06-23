@@ -139,6 +139,10 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/inventory-check-rental-netherlands/": { title: "Inventory check rental Netherlands", section: "guides" },
   "/netherlands/housing/renting-in-the-netherlands/": { title: "Renting in the Netherlands", section: "guides" },
   "/netherlands/housing/housing-costs-netherlands/": { title: "Housing Costs Netherlands", section: "guides" },
+  "/netherlands/housing/rental-contracts-and-deposits-netherlands/": {
+    title: "Rental Contracts and Deposits Netherlands",
+    section: "guides",
+  },
   "/netherlands/housing/social-housing-netherlands/": { title: "Social Housing Netherlands", section: "guides" },
   "/netherlands/housing/temporary-accommodation-netherlands/": { title: "Temporary Accommodation Netherlands", section: "guides" },
   "/netherlands/housing/neighborhoods/": { title: "Best Neighborhoods Netherlands", section: "guides" },
@@ -284,8 +288,11 @@ const EXTRA_LIVE_PATHS = [
   /** Live App Router guide — buy vs rent decision guide for expats (Housing cluster). */
   "/netherlands/housing/buy-vs-rent-netherlands/",
   "/netherlands/housing/housing-costs-netherlands/",
+  "/netherlands/housing/rental-contracts-and-deposits-netherlands/",
   /** Legacy Living URL (301 → canonical housing costs guide). */
   "/netherlands/living/housing-costs/",
+  /** Legacy Living URL (301 → canonical rental contracts guide). */
+  "/netherlands/living/rental-contracts-and-deposits/",
   /** Utilities hub and setup guide for expats after moving. */
   "/netherlands/utilities/",
   "/netherlands/utilities/utilities-netherlands/",

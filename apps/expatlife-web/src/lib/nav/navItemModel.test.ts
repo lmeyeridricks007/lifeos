@@ -1577,6 +1577,65 @@ describe("housing costs nav active state", () => {
   });
 });
 
+describe("rental contracts and deposits nav active state", () => {
+  const RENTAL_CONTRACTS_PATH = "/netherlands/housing/rental-contracts-and-deposits-netherlands/";
+
+  it("treats the rental contracts guide route as live", () => {
+    expect(getRouteStatus(RENTAL_CONTRACTS_PATH)).toBe("live");
+  });
+
+  it("treats the legacy living rental-contracts redirect source as live", () => {
+    expect(getRouteStatus("/netherlands/living/rental-contracts-and-deposits/")).toBe("live");
+  });
+
+  it("highlights Move for the rental contracts guide path", () => {
+    expect(getActiveNavKey(RENTAL_CONTRACTS_PATH)).toBe("moving");
+  });
+
+  it("highlights Move for the legacy living rental-contracts redirect source", () => {
+    expect(getActiveNavKey("/netherlands/living/rental-contracts-and-deposits/")).toBe("moving");
+  });
+
+  it("does not add a duplicate Move housing menu row", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Housing")
+      ?.items.find((row) => row.label === "Rental contracts and deposits");
+
+    expect(item).toBeUndefined();
+  });
+
+  it("renders the Living housing menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Housing")
+      ?.items.find((row) => row.label === "Rental contracts and deposits");
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(RENTAL_CONTRACTS_PATH, item!)).toBe(true);
+  });
+
+  it("marks only the existing Living menu row active for the canonical href", () => {
+    const rows = menuRowsForHref(RENTAL_CONTRACTS_PATH);
+    expect(rows.some((row) => row.menuKey === "moving" && row.sectionTitle === "Housing")).toBe(false);
+    expect(rows.some((row) => row.menuKey === "living" && row.sectionTitle === "Housing")).toBe(true);
+    expect(rows).toHaveLength(1);
+    for (const row of rows) {
+      expect(row.item.navStatus).toBe("live");
+      expect(isNavItemActive(RENTAL_CONTRACTS_PATH, row.item)).toBe(true);
+    }
+  });
+
+  it("marks legacy living rental-contracts href active via alias", () => {
+    const item = {
+      label: "Rental contracts and deposits",
+      href: RENTAL_CONTRACTS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive("/netherlands/living/rental-contracts-and-deposits/", item)).toBe(true);
+  });
+});
+
 describe("mortgages for expats nav active state", () => {
   const MORTGAGE_PATH = "/netherlands/housing/mortgages-netherlands-expats/";
 

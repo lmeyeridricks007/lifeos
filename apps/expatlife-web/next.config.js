@@ -205,6 +205,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/living/rental-contracts-and-deposits",
+        destination: "/netherlands/housing/rental-contracts-and-deposits-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/rental-contracts-and-deposits/",
+        destination: "/netherlands/housing/rental-contracts-and-deposits-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/living/community-basics",
         destination: "/netherlands/life/community-basics-netherlands/",
         permanent: true,

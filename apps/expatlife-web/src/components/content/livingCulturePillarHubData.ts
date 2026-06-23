@@ -175,7 +175,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         readingOrderLinks: [
           { title: "Housing hub", href: "/netherlands/housing/" },
           { title: "Rental market", href: "/netherlands/living/rental-market/" },
-          { title: "Contracts & deposits", href: "/netherlands/living/rental-contracts-and-deposits/" },
+          { title: "Contracts & deposits", href: "/netherlands/housing/rental-contracts-and-deposits-netherlands/" },
         ],
         startToolLink: {
           title: "Dutch Rental Budget Calculator",

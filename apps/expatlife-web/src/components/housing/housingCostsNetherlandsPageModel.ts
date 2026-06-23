@@ -3,6 +3,7 @@ import {
   BUY_VS_RENT_NETHERLANDS_PATH,
   HOUSING_HUB_PATH,
   MORTGAGES_NETHERLANDS_EXPATS_PATH,
+  RENTAL_CONTRACTS_AND_DEPOSITS_NETHERLANDS_PATH,
   RENTING_NETHERLANDS_PATH,
 } from "./housingNetherlandsPageModel";
 import { UTILITIES_NETHERLANDS_PATH } from "../utilities/utilitiesNetherlandsPageModel";
@@ -855,6 +856,7 @@ export const housingCostsNetherlandsPage = {
   relatedGuides: [
     { label: "Housing in the Netherlands", href: HOUSING_HUB_PATH, description: "Central hub for renting, buying and city guides.", status: "live" },
     { label: "Renting in the Netherlands", href: RENTING_NETHERLANDS_PATH, description: "Contracts, deposits and tenant orientation.", status: "live" },
+    { label: "Rental contracts and deposits", href: RENTAL_CONTRACTS_AND_DEPOSITS_NETHERLANDS_PATH, description: "Leases, deposits, inventory lists and move-in inspections.", status: "live" },
     { label: "Buying a house", href: BUYING_HOUSE_NETHERLANDS_PATH, description: "Purchase process and kosten koper for expats.", status: "live" },
     { label: "Mortgages for expats", href: MORTGAGES_NETHERLANDS_EXPATS_PATH, description: "Borrowing capacity and application steps.", status: "live" },
     { label: "Buy vs rent", href: BUY_VS_RENT_NETHERLANDS_PATH, description: "Decision guide for stay horizon and flexibility.", status: "live" },

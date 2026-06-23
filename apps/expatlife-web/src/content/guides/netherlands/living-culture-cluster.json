@@ -106,22 +106,23 @@
     {
       "cluster": "living",
       "slug": "rental-contracts-and-deposits",
-      "path": "/netherlands/living/rental-contracts-and-deposits/",
-      "title": "Rental contracts and deposits in the Netherlands",
-      "metaDescription": "Rental contracts, deposits, and inventory checks for expats in the Netherlands—what to verify before you sign.",
+      "path": "/netherlands/housing/rental-contracts-and-deposits-netherlands/",
+      "title": "Rental Contracts and Deposits in the Netherlands",
+      "metaDescription": "Learn how rental contracts, deposits, inspections and tenant responsibilities work in the Netherlands before signing a lease.",
       "breadcrumbLabel": "Rental contracts and deposits",
       "section": "guides",
       "clusterLabel": "Living in the Netherlands",
-      "pageType": "guide",
-      "contentStatus": "scaffold",
+      "pageType": "article",
+      "contentStatus": "live",
       "menuVisible": true,
       "navGroup": "housing",
-      "intro": "Contracts and deposits are where many disputes start. We outline clauses, norms, and red flags while deeper legal guides are expanded next.",
-      "canonicalGuidePath": "/netherlands/rental-contract-netherlands/",
-      "canonicalLabel": "Rental contract guide",
+      "intro": "Contracts, deposits, inventory lists and move-in documentation — practical orientation before you sign a Dutch lease.",
+      "canonicalGuidePath": "/netherlands/housing/rental-contracts-and-deposits-netherlands/",
+      "canonicalLabel": "Rental contracts and deposits guide",
       "related": [
-        { "label": "Rental deposit", "href": "/netherlands/rental-deposit-netherlands/", "description": "Deposit rules and return expectations." },
-        { "label": "Renter rights", "href": "/netherlands/renter-rights-netherlands/", "description": "Tenant protections overview." }
+        { "label": "Renting in the Netherlands", "href": "/netherlands/housing/renting-in-the-netherlands/", "description": "Full rental pillar for expats." },
+        { "label": "Housing costs", "href": "/netherlands/housing/housing-costs-netherlands/", "description": "Rent, utilities and city comparisons." },
+        { "label": "Registering your address", "href": "/netherlands/practical-life/registering-your-address-netherlands/", "description": "Gemeente registration after move-in." }
       ]
     },
     {

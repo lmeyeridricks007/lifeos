@@ -504,8 +504,11 @@ const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
 /** Housing guides surfaced under Move → Housing — highlight Move at top level (not Living). */
 const MOVE_HOUSING_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/housing/housing-costs-netherlands",
+  "/netherlands/housing/rental-contracts-and-deposits-netherlands",
   /** Legacy URL (301 → canonical guide) — keep Move tab active before redirect. */
   "/netherlands/living/housing-costs",
+  /** Legacy URL (301 → canonical guide) — keep Move tab active before redirect. */
+  "/netherlands/living/rental-contracts-and-deposits",
 ];
 
 /** Housing-related guides under Living → Housing (URL may live under `/taxes/`). */
@@ -1429,7 +1432,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/practical-life/registering-your-address-netherlands/",
             "Municipality address registration, BSN and document steps for newcomers."
           ),
-          item("Rental contracts and deposits", "/netherlands/living/rental-contracts-and-deposits/", "Before you sign."),
+          item("Rental contracts and deposits", "/netherlands/housing/rental-contracts-and-deposits-netherlands/", "Leases, deposits, inventory and inspections before you sign."),
           item("Housing costs", "/netherlands/housing/housing-costs-netherlands/", "Rent, buying, utilities and city cost comparisons."),
           item(
             "Rent allowance in the Netherlands",
