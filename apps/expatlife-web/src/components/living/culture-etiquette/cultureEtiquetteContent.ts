@@ -145,7 +145,7 @@ export const cultureEtiquetteMeta = {
 };
 
 export const cultureEtiquetteDeeperLinks = {
-  workCultureGuide: "/netherlands/work/work-culture-netherlands/",
+  workCultureGuide: "/netherlands/jobs/dutch-workplace-culture/",
   first90Days: "/netherlands/first-90-days-netherlands/",
   first30Days: "/netherlands/first-30-days-netherlands/",
 };

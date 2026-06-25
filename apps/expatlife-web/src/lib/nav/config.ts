@@ -484,6 +484,11 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/contractor-vs-employee-netherlands",
 ];
 
+/** Jobs URLs owned by Culture mega menu (not Move/Money). */
+const CULTURE_OWNED_JOBS_GUIDE_PREFIXES: readonly string[] = [
+  "/netherlands/jobs/dutch-workplace-culture",
+];
+
 /** Business App Router guides — highlight Move at top level (canonical URL under `/business/`). */
 const BUSINESS_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/business/zzp-netherlands",
@@ -539,6 +544,11 @@ function isJobsSalaryGuidePath(pathname: string): boolean {
   return JOBS_SALARY_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
 }
 
+function isCultureOwnedJobsGuidePath(pathname: string): boolean {
+  const base = resolveNavActivePath(pathname).split("?")[0].replace(/\/+$/, "") || "/";
+  return CULTURE_OWNED_JOBS_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
+}
+
 function isBusinessGuidePath(pathname: string): boolean {
   const base = resolveNavActivePath(pathname).split("?")[0].replace(/\/+$/, "") || "/";
   return BUSINESS_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
@@ -560,6 +570,7 @@ function isLivingHousingGuidePath(pathname: string): boolean {
 }
 
 const WORK_PATH_HIGHLIGHT_CULTURE: readonly string[] = [
+  /** Legacy URL (301 → canonical workplace culture guide) — Culture tab before redirect. */
   "/netherlands/work/work-culture-netherlands",
   "/netherlands/work/work-hours-netherlands",
 ];
@@ -692,6 +703,8 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (path.startsWith("/netherlands/cities")) return "cities";
 
   if (CITY_HUB_PREFIXES.some((pre) => path === pre || path.startsWith(`${pre}/`))) return "cities";
+
+  if (isCultureOwnedJobsGuidePath(path)) return "culture";
 
   if (isJobsSalaryGuidePath(path)) return "moving";
 
@@ -1574,7 +1587,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Workplace culture",
         items: [
-          item("Dutch workplace culture", "/netherlands/culture/dutch-workplace-culture/", "Norms, pace, and expectations."),
+          item(
+            "Dutch workplace culture",
+            "/netherlands/jobs/dutch-workplace-culture/",
+            "Communication styles, feedback, hierarchy, meetings and work-life balance in Dutch companies."
+          ),
           item("Dutch directness at work", "/netherlands/culture/dutch-directness-at-work/", "Feedback and bluntness in context."),
           item("Meetings and consensus", "/netherlands/culture/meetings-and-consensus/", "How decisions tend to form."),
           item("Hierarchy and flatness", "/netherlands/culture/hierarchy-and-flatness/", "Titles, autonomy, and structure."),

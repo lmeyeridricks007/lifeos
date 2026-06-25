@@ -25,6 +25,8 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/work/probation-period-netherlands": "/netherlands/jobs/probation-period-netherlands",
   "/netherlands/work/notice-period-netherlands": "/netherlands/jobs/notice-period-netherlands",
   "/netherlands/work/employee-rights-netherlands": "/netherlands/jobs/employee-rights-netherlands",
+  "/netherlands/work/work-culture-netherlands": "/netherlands/jobs/dutch-workplace-culture",
+  "/netherlands/culture/dutch-workplace-culture": "/netherlands/jobs/dutch-workplace-culture",
   "/netherlands/work/freelancing-netherlands": "/netherlands/jobs/freelancing-netherlands",
   "/netherlands/work/contractor-vs-employee-netherlands": "/netherlands/jobs/contractor-vs-employee-netherlands",
   "/netherlands/work/zzp-netherlands": "/netherlands/business/zzp-netherlands",

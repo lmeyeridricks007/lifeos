@@ -268,6 +268,7 @@ export const moveWorkingNlStartCards: MoveWorkingNlStartCard[] = [
     internalLinks: [
       { label: "First 90 days planner", href: ROUTES.first90Days },
       { label: "Healthcare basics", href: ROUTES.healthcareBasics },
+      { label: "Dutch workplace culture guide", href: "/netherlands/jobs/dutch-workplace-culture/" },
     ],
   },
 ];

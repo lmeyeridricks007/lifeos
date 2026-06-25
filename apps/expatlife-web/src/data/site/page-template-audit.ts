@@ -221,6 +221,7 @@ export const ROUTE_TEMPLATE_HINTS: Partial<Record<string, TemplateArchetype>> = 
   "/netherlands/jobs/probation-period-netherlands": "guideShell",
   "/netherlands/jobs/notice-period-netherlands": "guideShell",
   "/netherlands/jobs/employee-rights-netherlands": "guideShell",
+  "/netherlands/jobs/dutch-workplace-culture": "guideShell",
   "/netherlands/jobs/freelancing-netherlands": "guideShell",
   "/netherlands/jobs/contractor-vs-employee-netherlands": "guideShell",
   "/netherlands/business/zzp-netherlands": "guideShell",

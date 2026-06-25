@@ -1008,6 +1008,61 @@ describe("employee rights nav active state", () => {
   });
 });
 
+describe("dutch workplace culture nav active state", () => {
+  const WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-culture/";
+
+  it("treats the shipped workplace culture guide route as live", () => {
+    expect(getRouteStatus(WORKPLACE_CULTURE_PATH)).toBe("live");
+  });
+
+  it("highlights Culture (not Move or Money) for the canonical jobs guide path", () => {
+    expect(getActiveNavKey(WORKPLACE_CULTURE_PATH)).toBe("culture");
+  });
+
+  it("highlights Culture for the legacy work href before redirect", () => {
+    expect(getActiveNavKey("/netherlands/work/work-culture-netherlands/")).toBe("culture");
+  });
+
+  it("highlights Culture for the culture cluster href alias", () => {
+    expect(getActiveNavKey("/netherlands/culture/dutch-workplace-culture/")).toBe("culture");
+  });
+
+  it("marks the Culture menu row active for the canonical jobs href", () => {
+    const item = {
+      label: "Dutch workplace culture",
+      href: WORKPLACE_CULTURE_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(WORKPLACE_CULTURE_PATH, item)).toBe(true);
+  });
+
+  it("renders the Culture menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.culture.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.label === "Dutch workplace culture");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(WORKPLACE_CULTURE_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(WORKPLACE_CULTURE_PATH, item!)).toBe(true);
+  });
+
+  it("does not duplicate the guide under Move > Jobs & salaries", () => {
+    const moveRows = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .filter((navItem) => navItem.href === WORKPLACE_CULTURE_PATH);
+    expect(moveRows).toHaveLength(0);
+  });
+
+  it("has a single Culture > Workplace culture menu row", () => {
+    const rows = menuRowsForHref(WORKPLACE_CULTURE_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toEqual([
+      "culture:Workplace culture",
+    ]);
+  });
+});
+
 describe("zzp nav active state", () => {
   const ZZP_PATH = "/netherlands/business/zzp-netherlands/";
 

@@ -366,7 +366,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         actions: ["Separate tone from intent in feedback", "Expect agendas and documented outcomes", "Know when hierarchy is flat in practice"],
         links: [
           { href: "/netherlands/culture/dutch-workplace-culture/", label: "Workplace hub" },
-          { href: "/netherlands/work/work-culture-netherlands/", label: "Deep work-culture guide" },
+          { href: "/netherlands/jobs/dutch-workplace-culture/", label: "Deep work-culture guide" },
         ],
       },
       {

@@ -355,6 +355,7 @@ export const expatSalaryNetherlandsPage = {
   ] satisfies ExpatSalaryNetherlandsLink[],
   relatedGuides: [
     { label: "Finding Jobs in the Netherlands", href: "/netherlands/jobs/finding-jobs-netherlands/", status: "live", description: "Job market, visa sponsorship context, recruiters and Dutch hiring culture for expats." },
+    { label: "Dutch workplace culture", href: "/netherlands/jobs/dutch-workplace-culture/", status: "live", description: "Professional culture, communication and work-life balance for expats." },
     { label: "Moving to the Netherlands", href: MOVING_HUB_PATH, status: "live", description: "Relocation planning with employment context." },
     { label: "Netherlands Taxes Guide", href: TAXES_HUB_PATH, status: "live", description: "Salary and tax hub for expats." },
     { label: "Highly Skilled Migrant Visa", href: HSM_VISA_PATH, status: "live", description: "Visa route context alongside salary thresholds." },

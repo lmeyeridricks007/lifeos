@@ -260,7 +260,7 @@ export const livingCultureSections: LivingCultureSection[] = [
     },
     supportingText: "Go deeper with",
     supportingLinks: [
-      { href: "/netherlands/work/work-culture-netherlands/", label: "Work culture in the Netherlands" },
+      { href: "/netherlands/jobs/dutch-workplace-culture/", label: "Work culture in the Netherlands" },
       { href: "/netherlands/work/tools/job-offer-comparison/", label: "Job offer comparison tool" },
     ],
   },
@@ -532,7 +532,7 @@ export const livingCultureRelatedTools: LivingCultureRelatedTools = {
   roundOutEyebrow: "Round out the context",
   roundOutBody: "Pair this page with",
   roundOutLinks: [
-    { href: "/netherlands/work/work-culture-netherlands/", label: "Work culture in the Netherlands" },
+    { href: "/netherlands/jobs/dutch-workplace-culture/", label: "Work culture in the Netherlands" },
     { href: LIVING_DAILY_LIFE_PATH, label: "Daily Life Basics" },
     { href: LIVING_GETTING_AROUND_PATH, label: "Getting Around" },
   ],

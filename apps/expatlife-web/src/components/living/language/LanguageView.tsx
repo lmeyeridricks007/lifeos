@@ -690,7 +690,7 @@ export function LanguageView() {
               <div className="mt-5 border-t border-border/70 pt-4 sm:mt-6 sm:pt-5">
                 <p className="text-sm leading-relaxed text-foreground-muted">
                   For more on workplace tone and feedback, continue to{" "}
-                  <Link href="/netherlands/work/work-culture-netherlands/" className={crossLinkClass}>
+                  <Link href="/netherlands/jobs/dutch-workplace-culture/" className={crossLinkClass}>
                     Work culture in the Netherlands
                   </Link>
                   . If your language questions are starting to turn into a bigger integration plan, the{" "}

@@ -378,7 +378,10 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/probation-period-netherlands/",
   "/netherlands/jobs/notice-period-netherlands/",
   "/netherlands/jobs/employee-rights-netherlands/",
+  "/netherlands/jobs/dutch-workplace-culture/",
   "/netherlands/jobs/freelancing-netherlands/",
+  /** Legacy Work-cluster URL (301 → canonical workplace culture guide). */
+  "/netherlands/work/work-culture-netherlands/",
   /** Live App Router guide — contractor vs employee comparison (Jobs & salaries cluster). */
   "/netherlands/jobs/contractor-vs-employee-netherlands/",
   /** Live App Router guide — ZZP self-employment cornerstone (Business cluster). */

@@ -465,7 +465,7 @@ export const livingLanguageRelatedTools: LivingLanguageRelatedTools = {
       cta: "Practice real scenarios",
     },
     {
-      href: "/netherlands/work/work-culture-netherlands/",
+      href: "/netherlands/jobs/dutch-workplace-culture/",
       title: "Work culture in the Netherlands",
       description: "Useful when language questions start mixing with meeting style, direct feedback, and office expectations.",
       cta: "Read work-culture guide",

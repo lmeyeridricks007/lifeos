@@ -661,6 +661,7 @@ export const employeeRightsNetherlandsPage = {
   ],
   exploreNextCards: [
     { label: "Employment Contracts", href: EMPLOYMENT_CONTRACT_NETHERLANDS_PATH, status: "live", description: "Contract types, proeftijd, notice and benefits in one place." },
+    { label: "Dutch workplace culture", href: "/netherlands/jobs/dutch-workplace-culture/", status: "live", description: "Communication, feedback and day-to-day workplace expectations." },
     { label: "Employee Benefits", href: EMPLOYEE_BENEFITS_NETHERLANDS_PATH, status: "live", description: "Pension, vakantiegeld, leave and expat packages." },
     { label: "Finding Jobs", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Search, offers and employer comparison for international hires." },
     { label: "Expat Salary", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Salary benchmarks and negotiation context." },
@@ -668,6 +669,7 @@ export const employeeRightsNetherlandsPage = {
   ] satisfies EmployeeRightsLink[],
   planningLinks: [
     { label: "Employment contract guide", href: EMPLOYMENT_CONTRACT_NETHERLANDS_PATH, description: "Read rights alongside contract type, proeftijd and notice." },
+    { label: "Dutch workplace culture guide", href: "/netherlands/jobs/dutch-workplace-culture/", description: "Adapt to communication, feedback and team norms alongside legal rights." },
     { label: "Employee benefits guide", href: EMPLOYEE_BENEFITS_NETHERLANDS_PATH, description: "Pension, holiday allowance and leave in total compensation." },
     { label: "Highly skilled migrant guide", href: HSM_VISA_PATH, description: "Permit context separate from general workplace rights." },
     { label: "Contract risk scanner", href: CONTRACT_RISK_SCANNER_PATH, description: "Orientation checklist before signing — not legal advice." },

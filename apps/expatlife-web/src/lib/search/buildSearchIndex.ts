@@ -41,6 +41,7 @@ import { employmentContractNetherlandsPage } from "@/src/components/jobs/employm
 import { probationPeriodNetherlandsPage } from "@/src/components/jobs/probationPeriodNetherlandsPageModel";
 import { noticePeriodNetherlandsPage } from "@/src/components/jobs/noticePeriodNetherlandsPageModel";
 import { employeeRightsNetherlandsPage } from "@/src/components/jobs/employeeRightsNetherlandsPageModel";
+import { dutchWorkplaceCulturePage } from "@/src/components/jobs/dutchWorkplaceCulturePageModel";
 import { freelancingNetherlandsPage } from "@/src/components/jobs/freelancingNetherlandsPageModel";
 import { contractorVsEmployeeNetherlandsPage } from "@/src/components/jobs/contractorVsEmployeeNetherlandsPageModel";
 import { zzpNetherlandsPage } from "@/src/components/business/zzpNetherlandsPageModel";
@@ -976,6 +977,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       employeeRightsNetherlandsPage.misconceptionCards.map((card) => `${card.title} ${card.body}`),
       employeeRightsNetherlandsPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       employeeRightsNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:dutch-workplace-culture",
+    title: dutchWorkplaceCulturePage.hero.pageTitle,
+    href: dutchWorkplaceCulturePage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: dutchWorkplaceCulturePage.seo.description,
+    image: dutchWorkplaceCulturePage.hero.image.src,
+    imageAlt: dutchWorkplaceCulturePage.hero.image.alt,
+    keywords: [...dutchWorkplaceCulturePage.seo.keywords],
+    searchText: joinSearchParts(
+      dutchWorkplaceCulturePage.hero.pageTitle,
+      dutchWorkplaceCulturePage.hero.subtitle,
+      dutchWorkplaceCulturePage.seo.description,
+      [...dutchWorkplaceCulturePage.seo.keywords],
+      dutchWorkplaceCulturePage.snapshotCards.map((card) => `${card.title} ${card.body}`),
+      dutchWorkplaceCulturePage.snapshotSignals.map((signal) => `${signal.label} ${signal.value}`),
+      dutchWorkplaceCulturePage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      dutchWorkplaceCulturePage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

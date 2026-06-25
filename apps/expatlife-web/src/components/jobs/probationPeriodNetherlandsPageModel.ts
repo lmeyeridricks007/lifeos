@@ -602,6 +602,7 @@ export const probationPeriodNetherlandsPage = {
     { label: "Employment Contracts Netherlands", href: EMPLOYMENT_CONTRACT_NETHERLANDS_PATH, status: "live", description: "Read proeftijd alongside contract type, notice and salary clauses." },
     { label: "Notice Period Netherlands", href: "/netherlands/jobs/notice-period-netherlands/", status: "live", description: "Resignation and job-change timing — separate from proeftijd planning." },
     { label: "Finding Jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Job search before the contract and probation stage." },
+    { label: "Dutch workplace culture", href: "/netherlands/jobs/dutch-workplace-culture/", status: "live", description: "Onboarding culture, feedback and team expectations during proeftijd." },
     { label: "Expat Salary Netherlands", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Compare offer lines during onboarding." },
     { label: "Mortgages for Expats", href: MORTGAGES_NETHERLANDS_EXPATS_PATH, status: "live", description: "How employment stability affects borrowing conversations." },
     { label: "Moving to the Netherlands", href: MOVING_HUB_PATH, status: "live", description: "Relocation hub connecting work, housing and visas." },

@@ -418,6 +418,6 @@ export const employeeBenefitsNetherlandsPage = {
     { label: "Expat Salary Guide", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Salary expectations for expats." },
     { label: "Net Salary Calculator", href: DUTCH_SALARY_NET_CALCULATOR_PATH, status: "live", description: "Estimate take-home pay from gross offers." },
     { label: "30% Ruling", href: THIRTY_PERCENT_RULING_PATH, status: "live", description: "Expat tax scheme and package context." },
-    { label: "Dutch Work Culture", href: "/netherlands/culture/dutch-work-culture/", status: "comingSoon", description: "Workplace norms and expectations." },
+    { label: "Dutch workplace culture", href: "/netherlands/jobs/dutch-workplace-culture/", status: "live", description: "Workplace norms and expectations." },
   ] satisfies EmployeeBenefitsNetherlandsLink[],
 } as const;

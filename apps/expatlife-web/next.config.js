@@ -405,6 +405,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/work/work-culture-netherlands",
+        destination: "/netherlands/jobs/dutch-workplace-culture/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/work/work-culture-netherlands/",
+        destination: "/netherlands/jobs/dutch-workplace-culture/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/freelancing-netherlands",
         destination: "/netherlands/jobs/freelancing-netherlands/",
         permanent: true,

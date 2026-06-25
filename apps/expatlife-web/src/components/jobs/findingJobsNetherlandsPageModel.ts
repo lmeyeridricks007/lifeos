@@ -741,6 +741,7 @@ export const findingJobsNetherlandsPage = {
     { label: "Best Cities for Expats", href: BEST_CITIES_FOR_EXPATS_PATH, status: "live", description: "Compare Dutch cities for international professionals and families." },
     { label: "Salary Negotiation", href: SALARY_NEGOTIATION_NETHERLANDS_PATH, status: "live", description: "Negotiate total compensation once interviews progress." },
     { label: "Freelancing Netherlands", href: "/netherlands/jobs/freelancing-netherlands/", status: "live", description: "ZZP route when comparing self-employment with employer offers." },
+    { label: "Dutch workplace culture", href: "/netherlands/jobs/dutch-workplace-culture/", status: "live", description: "Communication styles, feedback, hierarchy and work-life balance orientation." },
     { label: "Working in the Netherlands hub", href: JOBS_HUB_PATH, status: "live", description: "Broader career and employment guides for newcomers." },
     { label: "Moving to the Netherlands", href: MOVING_HUB_PATH, status: "live", description: "Relocation planning with employment and visa context." },
   ] satisfies FindingJobsLink[],
