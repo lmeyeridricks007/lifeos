@@ -42,6 +42,7 @@ import { probationPeriodNetherlandsPage } from "@/src/components/jobs/probationP
 import { noticePeriodNetherlandsPage } from "@/src/components/jobs/noticePeriodNetherlandsPageModel";
 import { employeeRightsNetherlandsPage } from "@/src/components/jobs/employeeRightsNetherlandsPageModel";
 import { dutchWorkplaceCulturePage } from "@/src/components/jobs/dutchWorkplaceCulturePageModel";
+import { dutchDirectnessAtWorkPage } from "@/src/components/jobs/dutchDirectnessAtWorkPageModel";
 import { freelancingNetherlandsPage } from "@/src/components/jobs/freelancingNetherlandsPageModel";
 import { contractorVsEmployeeNetherlandsPage } from "@/src/components/jobs/contractorVsEmployeeNetherlandsPageModel";
 import { zzpNetherlandsPage } from "@/src/components/business/zzpNetherlandsPageModel";
@@ -1000,6 +1001,29 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       dutchWorkplaceCulturePage.snapshotSignals.map((signal) => `${signal.label} ${signal.value}`),
       dutchWorkplaceCulturePage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       dutchWorkplaceCulturePage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:dutch-directness-at-work",
+    title: dutchDirectnessAtWorkPage.hero.pageTitle,
+    href: dutchDirectnessAtWorkPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Jobs",
+    description: dutchDirectnessAtWorkPage.seo.description,
+    image: dutchDirectnessAtWorkPage.hero.image.src,
+    imageAlt: dutchDirectnessAtWorkPage.hero.image.alt,
+    keywords: [...dutchDirectnessAtWorkPage.seo.keywords],
+    searchText: joinSearchParts(
+      dutchDirectnessAtWorkPage.hero.pageTitle,
+      dutchDirectnessAtWorkPage.hero.subtitle,
+      dutchDirectnessAtWorkPage.seo.description,
+      [...dutchDirectnessAtWorkPage.seo.keywords],
+      dutchDirectnessAtWorkPage.snapshotCards.map((card) => `${card.title} ${card.body}`),
+      dutchDirectnessAtWorkPage.snapshotSignals.map((signal) => `${signal.label} ${signal.value}`),
+      dutchDirectnessAtWorkPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
+      dutchDirectnessAtWorkPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

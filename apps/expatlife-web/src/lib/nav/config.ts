@@ -487,6 +487,7 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
 /** Jobs URLs owned by Culture mega menu (not Move/Money). */
 const CULTURE_OWNED_JOBS_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/dutch-workplace-culture",
+  "/netherlands/jobs/dutch-directness-at-work",
 ];
 
 /** Business App Router guides — highlight Move at top level (canonical URL under `/business/`). */
@@ -1592,7 +1593,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/jobs/dutch-workplace-culture/",
             "Communication styles, feedback, hierarchy, meetings and work-life balance in Dutch companies."
           ),
-          item("Dutch directness at work", "/netherlands/culture/dutch-directness-at-work/", "Feedback and bluntness in context."),
+          item(
+            "Dutch directness at work",
+            "/netherlands/jobs/dutch-directness-at-work/",
+            "Understand direct feedback, meeting debate and how to adapt professionally as an expat."
+          ),
           item("Meetings and consensus", "/netherlands/culture/meetings-and-consensus/", "How decisions tend to form."),
           item("Hierarchy and flatness", "/netherlands/culture/hierarchy-and-flatness/", "Titles, autonomy, and structure."),
           item("Written follow-ups", "/netherlands/culture/written-follow-ups/", "Email, Slack, and documentation."),

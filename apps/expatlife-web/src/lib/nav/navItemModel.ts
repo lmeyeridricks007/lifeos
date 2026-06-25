@@ -27,6 +27,7 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/work/employee-rights-netherlands": "/netherlands/jobs/employee-rights-netherlands",
   "/netherlands/work/work-culture-netherlands": "/netherlands/jobs/dutch-workplace-culture",
   "/netherlands/culture/dutch-workplace-culture": "/netherlands/jobs/dutch-workplace-culture",
+  "/netherlands/culture/dutch-directness-at-work": "/netherlands/jobs/dutch-directness-at-work",
   "/netherlands/work/freelancing-netherlands": "/netherlands/jobs/freelancing-netherlands",
   "/netherlands/work/contractor-vs-employee-netherlands": "/netherlands/jobs/contractor-vs-employee-netherlands",
   "/netherlands/work/zzp-netherlands": "/netherlands/business/zzp-netherlands",

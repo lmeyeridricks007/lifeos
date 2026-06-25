@@ -1,4 +1,5 @@
 export const DUTCH_WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-culture/" as const;
+export const DUTCH_DIRECTNESS_AT_WORK_PATH = "/netherlands/jobs/dutch-directness-at-work/" as const;
 
 export const FINDING_JOBS_NETHERLANDS_PATH = "/netherlands/jobs/finding-jobs-netherlands/" as const;
 export const EMPLOYMENT_CONTRACT_NETHERLANDS_PATH = "/netherlands/jobs/employment-contract-netherlands/" as const;
@@ -951,6 +952,7 @@ export const dutchWorkplaceCulturePage = {
     { phase: "Settling in", detail: "Expat salary guide and community basics for life beyond the office." },
   ] satisfies TimelineStep[],
   relatedGuides: [
+    { label: "Dutch directness at work", href: DUTCH_DIRECTNESS_AT_WORK_PATH, status: "live", description: "Deep dive into direct feedback, meeting debate and expat adaptation strategies." },
     { label: "Finding jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Job search, recruiters and visa sponsorship context." },
     { label: "Employment contracts", href: EMPLOYMENT_CONTRACT_NETHERLANDS_PATH, status: "live", description: "Contract types, probation and notice periods." },
     { label: "Probation period", href: PROBATION_PERIOD_NETHERLANDS_PATH, status: "live", description: "Proeftijd expectations and onboarding culture." },
@@ -972,6 +974,7 @@ export const dutchWorkplaceCulturePage = {
     "Settling in → community basics beyond the office",
   ],
   exploreNextCards: [
+    { label: "Dutch directness at work", href: DUTCH_DIRECTNESS_AT_WORK_PATH, description: "Deep dive into direct communication and feedback culture." },
     { label: "Finding jobs", href: FINDING_JOBS_NETHERLANDS_PATH, description: "Search strategy and market orientation." },
     { label: "Employment contracts", href: EMPLOYMENT_CONTRACT_NETHERLANDS_PATH, description: "Review offers and contract clauses." },
     { label: "Employee rights", href: EMPLOYEE_RIGHTS_NETHERLANDS_PATH, description: "Protections and leave frameworks." },

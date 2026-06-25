@@ -379,6 +379,9 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/notice-period-netherlands/",
   "/netherlands/jobs/employee-rights-netherlands/",
   "/netherlands/jobs/dutch-workplace-culture/",
+  "/netherlands/jobs/dutch-directness-at-work/",
+  /** Legacy Culture-cluster URL (301 → canonical jobs guide). */
+  "/netherlands/culture/dutch-directness-at-work/",
   "/netherlands/jobs/freelancing-netherlands/",
   /** Legacy Work-cluster URL (301 → canonical workplace culture guide). */
   "/netherlands/work/work-culture-netherlands/",

@@ -1063,6 +1063,56 @@ describe("dutch workplace culture nav active state", () => {
   });
 });
 
+describe("dutch directness at work nav active state", () => {
+  const DIRECTNESS_PATH = "/netherlands/jobs/dutch-directness-at-work/";
+
+  it("treats the shipped directness guide route as live", () => {
+    expect(getRouteStatus(DIRECTNESS_PATH)).toBe("live");
+  });
+
+  it("highlights Culture for the canonical jobs guide path", () => {
+    expect(getActiveNavKey(DIRECTNESS_PATH)).toBe("culture");
+  });
+
+  it("highlights Culture for the culture cluster href alias", () => {
+    expect(getActiveNavKey("/netherlands/culture/dutch-directness-at-work/")).toBe("culture");
+  });
+
+  it("marks the Culture menu row active for the canonical jobs href", () => {
+    const item = {
+      label: "Dutch directness at work",
+      href: DIRECTNESS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(DIRECTNESS_PATH, item)).toBe(true);
+  });
+
+  it("renders the Culture menu row as an active link", () => {
+    const item = MEGA_MENUS.culture.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === DIRECTNESS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DIRECTNESS_PATH, item!)).toBe(true);
+  });
+
+  it("does not duplicate the guide under Move > Jobs & salaries", () => {
+    const moveRows = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .filter((navItem) => navItem.href === DIRECTNESS_PATH);
+    expect(moveRows).toHaveLength(0);
+  });
+
+  it("has Culture > Workplace culture menu row", () => {
+    const rows = menuRowsForHref(DIRECTNESS_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toEqual([
+      "culture:Workplace culture",
+    ]);
+  });
+});
+
 describe("zzp nav active state", () => {
   const ZZP_PATH = "/netherlands/business/zzp-netherlands/";
 

@@ -415,6 +415,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/culture/dutch-directness-at-work",
+        destination: "/netherlands/jobs/dutch-directness-at-work/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-directness-at-work/",
+        destination: "/netherlands/jobs/dutch-directness-at-work/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/freelancing-netherlands",
         destination: "/netherlands/jobs/freelancing-netherlands/",
         permanent: true,
