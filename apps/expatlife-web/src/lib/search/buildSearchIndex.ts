@@ -46,6 +46,7 @@ import { dutchDirectnessAtWorkPage } from "@/src/components/jobs/dutchDirectness
 import { dutchSocialNormsPage } from "@/src/components/life/dutchSocialNormsPageModel";
 import { datingNetherlandsPage } from "@/src/components/life/datingNetherlandsPageModel";
 import { dutchHolidaysTraditionsPage } from "@/src/components/life/dutchHolidaysTraditionsPageModel";
+import { dutchBirthdayTraditionsPage } from "@/src/components/life/dutchBirthdayTraditionsPageModel";
 import { dutchCulturePage } from "@/src/components/life/dutchCulturePageModel";
 import { freelancingNetherlandsPage } from "@/src/components/jobs/freelancingNetherlandsPageModel";
 import { contractorVsEmployeeNetherlandsPage } from "@/src/components/jobs/contractorVsEmployeeNetherlandsPageModel";
@@ -1118,6 +1119,27 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       dutchHolidaysTraditionsPage.snapshotCards.map((card) => `${card.title} ${card.body}`),
       dutchHolidaysTraditionsPage.publicHolidays.map((h) => h.name),
       dutchHolidaysTraditionsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:dutch-birthday-traditions",
+    title: dutchBirthdayTraditionsPage.hero.pageTitle,
+    href: dutchBirthdayTraditionsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Life",
+    description: dutchBirthdayTraditionsPage.seo.description,
+    image: dutchBirthdayTraditionsPage.hero.image.src,
+    imageAlt: dutchBirthdayTraditionsPage.hero.image.alt,
+    keywords: [...dutchBirthdayTraditionsPage.seo.keywords],
+    searchText: joinSearchParts(
+      dutchBirthdayTraditionsPage.hero.pageTitle,
+      dutchBirthdayTraditionsPage.hero.subtitle,
+      dutchBirthdayTraditionsPage.seo.description,
+      [...dutchBirthdayTraditionsPage.seo.keywords],
+      dutchBirthdayTraditionsPage.snapshotCards.map((card) => `${card.title} ${card.body}`),
+      dutchBirthdayTraditionsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

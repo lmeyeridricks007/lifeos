@@ -24,6 +24,8 @@ import {
 import { DUTCH_SOCIAL_NORMS_PATH } from "@/src/components/life/dutchSocialNormsPageModel";
 import { DATING_NETHERLANDS_PATH } from "@/src/components/life/datingNetherlandsPageModel";
 import { DUTCH_HOLIDAYS_TRADITIONS_PATH } from "@/src/components/life/dutchHolidaysTraditionsPageModel";
+import { DUTCH_BIRTHDAY_TRADITIONS_PATH } from "@/src/components/life/dutchBirthdayTraditionsPageModel";
+import { MAKING_DUTCH_FRIENDS_PATH } from "@/src/components/life/makingDutchFriendsPageModel";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -46,6 +48,11 @@ const HUB_LINKS = [
     description: "Making friends, neighbors, clubs, volunteering, events and practical integration strategies.",
   },
   {
+    href: MAKING_DUTCH_FRIENDS_PATH,
+    title: "Making Dutch Friends",
+    description: "Activity-based friendship routes, sports clubs, neighbours, direct communication and realistic timelines.",
+  },
+  {
     href: DUTCH_CULTURE_PATH,
     title: "Dutch Culture",
     description: "Flagship guide to Dutch values, traditions, communication, work culture, food, holidays and regional life.",
@@ -64,6 +71,11 @@ const HUB_LINKS = [
     href: DUTCH_HOLIDAYS_TRADITIONS_PATH,
     title: "Dutch Holidays & Traditions",
     description: "King's Day, Sinterklaas, Christmas, public holidays, school breaks and regional celebrations.",
+  },
+  {
+    href: DUTCH_BIRTHDAY_TRADITIONS_PATH,
+    title: "Dutch Birthday Traditions",
+    description: "Circle parties, family congratulations, gifts, children's birthdays and workplace celebrations.",
   },
   {
     href: SURVIVAL_GUIDE_PATH,

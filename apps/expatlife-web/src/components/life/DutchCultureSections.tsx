@@ -242,7 +242,7 @@ export function DutchCultureSections() {
         intro={
           <SectionIntro title="Holidays & Traditions" fullWidth>
             <p>The annual calendar shapes shop hours, school conversations and neighbourhood events.</p>
-            <p>King's Day, Sinterklaas and remembrance traditions catch newcomers by surprise if not planned early.</p>
+            <p>King&apos;s Day, Sinterklaas and remembrance traditions catch newcomers by surprise if not planned early.</p>
           </SectionIntro>
         }
         visual={page.visuals.holidays}

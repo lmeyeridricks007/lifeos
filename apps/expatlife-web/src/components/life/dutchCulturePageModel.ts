@@ -11,7 +11,7 @@ export const FAMILY_LIFE_PATH = "/netherlands/life/family-life-netherlands/" as 
 export const VOLUNTEERING_PATH = "/netherlands/life/volunteering-netherlands/" as const;
 export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/living/culture-etiquette/" as const;
 export const GETTING_AROUND_PATH = "/netherlands/living/getting-around/" as const;
-export const MAKING_FRIENDS_PATH = "/netherlands/life/making-friends/" as const;
+export const MAKING_FRIENDS_PATH = "/netherlands/life/making-dutch-friends/" as const;
 export const DUTCH_FOOD_PATH = "/netherlands/life/dutch-food/" as const;
 export const FESTIVALS_PATH = "/netherlands/life/festivals/" as const;
 export const CYCLING_CULTURE_PATH = "/netherlands/life/cycling-culture/" as const;
@@ -784,9 +784,10 @@ export const dutchCulturePage = {
     { label: "Dutch Directness at Work", href: DUTCH_DIRECTNESS_AT_WORK_PATH, description: "Professional communication deep dive.", status: "live" },
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Friends, neighbours and clubs.", status: "live" },
     { label: "Dutch Holidays & Traditions", href: DUTCH_HOLIDAYS_TRADITIONS_PATH, description: "Annual calendar and celebrations.", status: "live" },
+    { label: "Dutch Birthday Traditions", href: DUTCH_BIRTHDAY_TRADITIONS_PATH, description: "Circle parties, gifts and birthday etiquette.", status: "live" },
     { label: "Learning Dutch", href: LANGUAGE_LEARNING_PATH, description: "Courses and practice routes.", status: "live" },
     { label: "Dating in the Netherlands", href: DATING_NETHERLANDS_PATH, description: "Relationships and meeting people.", status: "live" },
-    { label: "Making Friends", href: MAKING_FRIENDS_PATH, description: "Social routes for newcomers.", status: "comingSoon" },
+    { label: "Making Dutch Friends", href: MAKING_FRIENDS_PATH, description: "Activity routes, clubs and realistic timelines for local friendships.", status: "live" },
   ] satisfies LifeGuideLink[],
   relatedGuidesReadingOrder: [
     "Dutch Culture (this hub) → values and daily context",
@@ -802,6 +803,7 @@ export const dutchCulturePage = {
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Neighbours, clubs and integration.", status: "live" },
     { label: "Dating in the Netherlands", href: DATING_NETHERLANDS_PATH, description: "Relationships and social life.", status: "live" },
     { label: "Dutch Holidays & Traditions", href: DUTCH_HOLIDAYS_TRADITIONS_PATH, description: "King's Day, Sinterklaas, Christmas.", status: "live" },
+    { label: "Dutch Birthday Traditions", href: DUTCH_BIRTHDAY_TRADITIONS_PATH, description: "Circle parties, gifts and etiquette.", status: "live" },
     { label: "Dutch Food Culture", href: DUTCH_FOOD_PATH, description: "Meals, markets and traditions.", status: "comingSoon" },
     { label: "Cycling Culture", href: CYCLING_CULTURE_PATH, description: "Bike commuting and etiquette.", status: "comingSoon" },
     { label: "Learning Dutch", href: LANGUAGE_LEARNING_PATH, description: "Language learning routes.", status: "live" },
@@ -817,7 +819,7 @@ export const dutchCulturePage = {
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Everyday etiquette.", status: "live" },
     { label: "Dutch Holidays & Traditions", href: DUTCH_HOLIDAYS_TRADITIONS_PATH, description: "Annual celebrations.", status: "live" },
     { label: "Learning Dutch", href: LANGUAGE_LEARNING_PATH, description: "Language momentum.", status: "live" },
-    { label: "Making Friends", href: MAKING_FRIENDS_PATH, description: "Social routes.", status: "comingSoon" },
+    { label: "Making Dutch Friends", href: MAKING_FRIENDS_PATH, description: "Friendship routes and clubs.", status: "live" },
   ] satisfies LifeGuideLink[],
   exploreNextTips: [
     "Need neighbours and clubs → Community Basics.",
@@ -835,6 +837,7 @@ export const dutchCulturePage = {
     { name: "Dutch Social Norms", description: "Everyday etiquette and social customs for expats." },
     { name: "Dutch Workplace Culture", description: "Professional communication and work-life norms." },
     { name: "Dutch Holidays & Traditions", description: "Annual celebrations and public holidays." },
+    { name: "Dutch Birthday Traditions", description: "Circle parties, gifts and birthday etiquette for expats." },
     { name: "Community Basics", description: "Building social life and neighbourhood connections." },
     { name: "Dating in the Netherlands", description: "Relationships and meeting people." },
     { name: "Learning Dutch", description: "Language learning resources and routes." },

@@ -182,7 +182,7 @@ function SectionIntro({
   title,
   children,
   tone = "default",
-  fullWidth = false,
+  fullWidth = true,
 }: {
   eyebrow?: string;
   title: string;

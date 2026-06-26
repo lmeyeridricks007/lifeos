@@ -157,6 +157,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         actions: ["Introduce yourself to neighbours when it fits", "Know parking and permit basics", "Keep digital hygiene for gemeente scams"],
         links: [
           { href: "/netherlands/life/community-basics-netherlands/", label: "Community basics" },
+          { href: "/netherlands/life/making-dutch-friends/", label: "Making Dutch Friends" },
           { href: "/netherlands/practical-life/privacy-and-safety-basics-netherlands/", label: "Privacy & safety" },
         ],
       },
@@ -379,6 +380,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
           { href: "/netherlands/life/dutch-social-norms/", label: "Social norms hub" },
           { href: "/netherlands/life/dating-in-the-netherlands/", label: "Dating in the Netherlands" },
           { href: "/netherlands/life/dutch-holidays-and-traditions/", label: "Dutch Holidays & Traditions" },
+          { href: "/netherlands/life/dutch-birthday-traditions/", label: "Dutch Birthday Traditions" },
           { href: "/netherlands/culture/communication-style/", label: "Communication style" },
         ],
       },

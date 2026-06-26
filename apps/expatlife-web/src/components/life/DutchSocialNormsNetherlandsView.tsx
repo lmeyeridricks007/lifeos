@@ -50,6 +50,7 @@ import {
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
 import {
   COMMUNITY_BASICS_NETHERLANDS_PATH,
+  DUTCH_BIRTHDAY_TRADITIONS_PATH,
   dutchSocialNormsPage as page,
   LIFE_HUB_PATH,
   type LifeGuideLink,
@@ -126,7 +127,7 @@ function SectionIntro({
   title,
   children,
   tone = "default",
-  fullWidth = false,
+  fullWidth = true,
 }: {
   eyebrow?: string;
   title: string;
@@ -681,6 +682,12 @@ export function DutchSocialNormsNetherlandsView() {
               />
               <ChecklistBlock title="Office birthday checklist" items={page.officeBirthdayChecklist} columns={2} />
               <BulletPanel title="Birthday practical tips" items={page.birthdayTips} />
+              <GuideCrossLink
+                href={DUTCH_BIRTHDAY_TRADITIONS_PATH}
+                title="Dutch Birthday Traditions"
+                description="Deep dive into circle parties, family congratulations, gifts, children's birthdays and workplace customs."
+                linkLabel="Open full birthday guide"
+              />
             </PremiumGuideSection>
 
             <PremiumGuideSection

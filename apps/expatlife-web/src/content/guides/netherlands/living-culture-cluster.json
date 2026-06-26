@@ -428,6 +428,7 @@
       "canonicalLabel": "Community basics guide",
       "related": [
         { "label": "Life in the Netherlands hub", "href": "/netherlands/life/", "description": "Community and integration hub." },
+        { "label": "Making Dutch Friends", "href": "/netherlands/life/making-dutch-friends/", "description": "Platonic friendship routes via clubs and sport." },
         { "label": "Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Social norms and neighbor etiquette." }
       ]
     },
@@ -797,6 +798,52 @@
         { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Everyday etiquette on dates and visits." },
         { "label": "Community Basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Friends, clubs and integration routes." },
         { "label": "Dutch cities guide", "href": "/netherlands/cities/", "description": "Compare social life by city." }
+      ]
+    },
+    {
+      "cluster": "culture",
+      "slug": "making-dutch-friends",
+      "path": "/netherlands/life/making-dutch-friends/",
+      "title": "Making Dutch Friends",
+      "metaDescription": "Learn how to build genuine friendships in the Netherlands with practical advice, clubs, sports, volunteering, language exchanges, meetups and Dutch social customs.",
+      "breadcrumbLabel": "Making Dutch Friends",
+      "section": "guides",
+      "clusterLabel": "Culture in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "live",
+      "menuVisible": true,
+      "navGroup": "social",
+      "intro": "Platonic Dutch friendships grow through recurring activities — sports, volunteering and hobby clubs — start here for practical routes beyond broad integration.",
+      "canonicalGuidePath": "/netherlands/life/making-dutch-friends/",
+      "canonicalLabel": "Making Dutch Friends guide (Life cluster)",
+      "related": [
+        { "label": "Community Basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Broad integration overview." },
+        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Borrels, invitations and etiquette." },
+        { "label": "Dating in the Netherlands", "href": "/netherlands/life/dating-in-the-netherlands/", "description": "Romantic connections — different goal." }
+      ]
+    },
+    {
+      "cluster": "culture",
+      "slug": "dutch-birthday-traditions",
+      "path": "/netherlands/life/dutch-birthday-traditions/",
+      "title": "Dutch Birthday Traditions",
+      "metaDescription": "Complete expat guide to Dutch birthday traditions: circle parties, congratulations, gifts, children's birthdays, workplace celebrations and etiquette.",
+      "breadcrumbLabel": "Dutch Birthday Traditions",
+      "section": "guides",
+      "clusterLabel": "Culture in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "live",
+      "menuVisible": true,
+      "navGroup": "social",
+      "intro": "Dutch birthdays have distinctive customs — kringverjaardag, family congratulations and office cake traditions — start here before your first invitation.",
+      "canonicalGuidePath": "/netherlands/life/dutch-birthday-traditions/",
+      "canonicalLabel": "Birthday traditions guide (Life cluster)",
+      "related": [
+        { "label": "Dutch Culture", "href": "/netherlands/life/dutch-culture/", "description": "Culture cluster overview." },
+        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Everyday etiquette and visiting customs." },
+        { "label": "Dutch Holidays & Traditions", "href": "/netherlands/life/dutch-holidays-and-traditions/", "description": "Annual calendar beyond birthdays." },
+        { "label": "Community basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Friends, neighbours and integration." },
+        { "label": "Learning Dutch", "href": "/netherlands/language-learning/", "description": "Birthday phrases and language routes." }
       ]
     },
     {

@@ -1220,6 +1220,81 @@ describe("dating in the netherlands nav active state", () => {
   });
 });
 
+describe("making dutch friends nav active state", () => {
+  const MAKING_DUTCH_FRIENDS_PATH = "/netherlands/life/making-dutch-friends/";
+
+  it("treats the shipped making dutch friends guide route as live", () => {
+    expect(getRouteStatus(MAKING_DUTCH_FRIENDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the canonical Life guide path", () => {
+    expect(getActiveNavKey(MAKING_DUTCH_FRIENDS_PATH)).toBe("living");
+  });
+
+  it("highlights Living for the culture cluster href alias", () => {
+    expect(getActiveNavKey("/netherlands/culture/making-dutch-friends/")).toBe("living");
+  });
+
+  it("marks the Culture menu row active for the canonical Life href", () => {
+    const item = {
+      label: "Making Dutch Friends",
+      href: MAKING_DUTCH_FRIENDS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(MAKING_DUTCH_FRIENDS_PATH, item)).toBe(true);
+  });
+
+  it("renders the Culture menu row as an active link", () => {
+    const item = MEGA_MENUS.culture.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === MAKING_DUTCH_FRIENDS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MAKING_DUTCH_FRIENDS_PATH, item!)).toBe(true);
+  });
+
+  it("has Culture > Social norms menu row", () => {
+    const rows = menuRowsForHref(MAKING_DUTCH_FRIENDS_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
+  });
+
+  it("has Living > Community menu row", () => {
+    const rows = menuRowsForHref(MAKING_DUTCH_FRIENDS_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Community");
+  });
+
+  it("renders the Living Community menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Community")
+      ?.items.find((row) => row.href === MAKING_DUTCH_FRIENDS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MAKING_DUTCH_FRIENDS_PATH, item!)).toBe(true);
+  });
+
+  it("marks legacy culture making-dutch-friends href active via alias", () => {
+    const item = {
+      label: "Making Dutch Friends",
+      href: "/netherlands/culture/making-dutch-friends/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(MAKING_DUTCH_FRIENDS_PATH, item)).toBe(true);
+  });
+
+  it("marks legacy living making-dutch-friends href active via alias", () => {
+    const item = {
+      label: "Making Dutch Friends",
+      href: "/netherlands/living/making-dutch-friends/",
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(MAKING_DUTCH_FRIENDS_PATH, item)).toBe(true);
+  });
+});
+
 describe("dutch holidays and traditions nav active state", () => {
   const HOLIDAYS_PATH = "/netherlands/life/dutch-holidays-and-traditions/";
 
@@ -1274,6 +1349,63 @@ describe("dutch holidays and traditions nav active state", () => {
     expect(item?.navStatus).toBe("live");
     expect(isNavItemLinkable(item!)).toBe(true);
     expect(isNavItemActive(HOLIDAYS_PATH, item!)).toBe(true);
+  });
+});
+
+describe("dutch birthday traditions nav active state", () => {
+  const BIRTHDAY_PATH = "/netherlands/life/dutch-birthday-traditions/";
+
+  it("treats the shipped birthday traditions guide route as live", () => {
+    expect(getRouteStatus(BIRTHDAY_PATH)).toBe("live");
+  });
+
+  it("highlights Culture for the canonical Life guide path", () => {
+    expect(getActiveNavKey(BIRTHDAY_PATH)).toBe("culture");
+  });
+
+  it("highlights Culture for the culture cluster href alias", () => {
+    expect(getActiveNavKey("/netherlands/culture/dutch-birthday-traditions/")).toBe("culture");
+  });
+
+  it("marks the Culture menu row active for the canonical Life href", () => {
+    const item = {
+      label: "Dutch Birthday Traditions",
+      href: BIRTHDAY_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(BIRTHDAY_PATH, item)).toBe(true);
+  });
+
+  it("has Living > Culture menu row", () => {
+    const rows = menuRowsForHref(BIRTHDAY_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Culture");
+  });
+
+  it("has Culture > Social norms menu row", () => {
+    const rows = menuRowsForHref(BIRTHDAY_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
+  });
+
+  it("renders the Living Culture menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Culture")
+      ?.items.find((row) => row.href === BIRTHDAY_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BIRTHDAY_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Culture mega menu row as an active link", () => {
+    const item = MEGA_MENUS.culture.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === BIRTHDAY_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BIRTHDAY_PATH, item!)).toBe(true);
   });
 });
 

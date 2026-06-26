@@ -500,6 +500,7 @@ const CULTURE_OWNED_LIFE_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/life/dutch-culture",
   "/netherlands/life/dutch-social-norms",
   "/netherlands/life/dutch-holidays-and-traditions",
+  "/netherlands/life/dutch-birthday-traditions",
 ];
 
 /** Business App Router guides — highlight Move at top level (canonical URL under `/business/`). */
@@ -1582,6 +1583,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Making friends, neighbors, clubs, volunteering and integration."
           ),
           item(
+            "Making Dutch Friends",
+            "/netherlands/life/making-dutch-friends/",
+            "Activity routes, sports clubs, neighbours and realistic friendship timelines."
+          ),
+          item(
             "Dutch social norms",
             "/netherlands/life/dutch-social-norms/",
             "Everyday etiquette, greetings, birthdays, punctuality and neighbour culture."
@@ -1590,6 +1596,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Dating in the Netherlands",
             "/netherlands/life/dating-in-the-netherlands/",
             "Dutch dating culture, apps, singles events, sports clubs and where to meet people."
+          ),
+        ],
+      },
+      {
+        title: "Community",
+        items: [
+          item(
+            "Making Dutch Friends",
+            "/netherlands/life/making-dutch-friends/",
+            "Friendship circles, borrels, clubs, sports leagues and realistic timelines for expats."
           ),
         ],
       },
@@ -1605,6 +1621,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Dutch Holidays & Traditions",
             "/netherlands/life/dutch-holidays-and-traditions/",
             "King's Day, Sinterklaas, Christmas, public holidays and the annual calendar."
+          ),
+          item(
+            "Dutch Birthday Traditions",
+            "/netherlands/life/dutch-birthday-traditions/",
+            "Circle parties, congratulations, gifts and birthday etiquette for expats."
           ),
         ],
       },
@@ -1663,8 +1684,10 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Social norms",
         items: [
           item("Dutch social norms", "/netherlands/life/dutch-social-norms/", "Everyday social expectations, greetings and etiquette."),
+          item("Making Dutch Friends", "/netherlands/life/making-dutch-friends/", "Friendship circles, borrels, clubs and realistic timelines for expats."),
           item("Dating in the Netherlands", "/netherlands/life/dating-in-the-netherlands/", "Apps, culture, singles events and activity-first ways to meet people."),
           item("Dutch Holidays & Traditions", "/netherlands/life/dutch-holidays-and-traditions/", "King's Day, Sinterklaas, Christmas and public holidays."),
+          item("Dutch Birthday Traditions", "/netherlands/life/dutch-birthday-traditions/", "Circle parties, congratulations, gifts and birthday etiquette."),
           item("Communication style", "/netherlands/culture/communication-style/", "Tone, humor, and clarity."),
           item("Invitations and planning", "/netherlands/culture/invitations-and-planning/", "How social plans usually work."),
           item("Time and boundaries", "/netherlands/culture/time-and-boundaries/", "Punctuality and personal space."),

@@ -2,6 +2,7 @@ export const DUTCH_HOLIDAYS_TRADITIONS_PATH = "/netherlands/life/dutch-holidays-
 export const LIFE_HUB_PATH = "/netherlands/life/" as const;
 export const DUTCH_CULTURE_PATH = "/netherlands/life/dutch-culture/" as const;
 export const DUTCH_SOCIAL_NORMS_PATH = "/netherlands/life/dutch-social-norms/" as const;
+export const DUTCH_BIRTHDAY_TRADITIONS_PATH = "/netherlands/life/dutch-birthday-traditions/" as const;
 export const COMMUNITY_BASICS_NETHERLANDS_PATH = "/netherlands/life/community-basics-netherlands/" as const;
 export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/living/culture-etiquette/" as const;
 export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
@@ -813,6 +814,7 @@ export const dutchHolidaysTraditionsPage = {
   relatedGuides: [
     { label: "Dutch Culture (overview)", href: DUTCH_CULTURE_PATH, description: "Broad culture cluster overview — planned hub.", status: "comingSoon" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Everyday etiquette, greetings and visiting customs.", status: "live" },
+    { label: "Dutch Birthday Traditions", href: DUTCH_BIRTHDAY_TRADITIONS_PATH, description: "Circle parties, congratulations, gifts and birthday etiquette.", status: "live" },
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Friends, neighbours and local integration.", status: "live" },
     { label: "Dutch traditions (Culture hub)", href: DUTCH_TRADITIONS_PATH, description: "Calendar touchpoints in the Culture cluster.", status: "comingSoon" },
     { label: "Dutch Culture & Etiquette", href: LIVING_CULTURE_ETIQUETTE_PATH, description: "Living pillar guide to daily cultural interpretation.", status: "live" },
@@ -820,6 +822,7 @@ export const dutchHolidaysTraditionsPage = {
   ] satisfies LifeGuideLink[],
   exploreNextCards: [
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Etiquette at parties and visits.", status: "live" },
+    { label: "Dutch Birthday Traditions", href: DUTCH_BIRTHDAY_TRADITIONS_PATH, description: "Circle parties, gifts and birthday etiquette.", status: "live" },
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Neighbourhood life and clubs.", status: "live" },
     { label: "Dutch Culture overview", href: DUTCH_CULTURE_PATH, description: "Planned culture hub.", status: "comingSoon" },
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, description: "Pick a city for each holiday.", status: "live" },

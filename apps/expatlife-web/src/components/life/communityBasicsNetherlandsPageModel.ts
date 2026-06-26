@@ -1002,6 +1002,12 @@ export const communityBasicsNetherlandsPage = {
       description: "Everyday etiquette, greetings, birthdays, punctuality and neighbour culture.",
     },
     {
+      label: "Making Dutch Friends",
+      href: "/netherlands/life/making-dutch-friends/",
+      status: "live",
+      description: "Platonic friendship routes — sports clubs, volunteering, language exchanges and recurring activities.",
+    },
+    {
       label: "Dating in the Netherlands",
       href: "/netherlands/life/dating-in-the-netherlands/",
       status: "live",

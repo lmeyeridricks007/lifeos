@@ -1,4 +1,5 @@
 export const DUTCH_SOCIAL_NORMS_PATH = "/netherlands/life/dutch-social-norms/" as const;
+export const DUTCH_BIRTHDAY_TRADITIONS_PATH = "/netherlands/life/dutch-birthday-traditions/" as const;
 export const LIFE_HUB_PATH = "/netherlands/life/" as const;
 export const DUTCH_CULTURE_PATH = "/netherlands/life/dutch-culture/" as const;
 export const COMMUNITY_BASICS_NETHERLANDS_PATH = "/netherlands/life/community-basics-netherlands/" as const;
@@ -747,7 +748,7 @@ export const dutchSocialNormsPage = {
     { q: "Is punctuality important?", a: "Yes for appointments, work and many social plans. Casual meetups may allow small delays — message the group if you are late." },
     { q: "Should I bring gifts when visiting?", a: "A small gift is often appreciated but not required. Flowers, wine or dessert are safe choices — ask if unsure." },
     { q: "Why do people split the bill?", a: "Fair cost-sharing is everyday practice. Tikkie and itemised splits keep group finances clear." },
-    { q: "What happens at Dutch birthdays?", a: "Office circles with cake, home parties with seated circles and congratulating relatives in some settings — ask colleagues for team customs." },
+    { q: "What happens at Dutch birthdays?", a: "Office circles with cake, home kringverjaardag parties with seated circles and congratulating relatives in some settings — see our Dutch Birthday Traditions guide for the full etiquette deep dive." },
     { q: "How should I greet people?", a: "Handshake in professional settings; cheek kisses possible among friends — follow the other person's lead." },
     { q: "Are Dutch people informal?", a: "Many social and work settings use first names quickly, but formality still appears in official and first meetings." },
     { q: "What mistakes should I avoid?", a: "Repeated lateness, ignoring RSVPs, loud behaviour in shared spaces and misreading direct tone as personal attack are common adaptation gaps." },
@@ -767,6 +768,7 @@ export const dutchSocialNormsPage = {
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Making friends, neighbours, clubs and integration routes.", status: "live" },
     { label: "Dating in the Netherlands", href: "/netherlands/life/dating-in-the-netherlands/", description: "Apps, singles events, sports clubs and meeting people.", status: "live" },
     { label: "Dutch Holidays & Traditions", href: "/netherlands/life/dutch-holidays-and-traditions/", description: "King's Day, Sinterklaas, Christmas and public holidays.", status: "live" },
+    { label: "Dutch Birthday Traditions", href: DUTCH_BIRTHDAY_TRADITIONS_PATH, description: "Circle parties, congratulations, gifts and birthday etiquette.", status: "live" },
     { label: "Dutch Workplace Culture", href: DUTCH_WORKPLACE_CULTURE_PATH, description: "Professional communication, meetings and work-life balance.", status: "live" },
     { label: "Dutch Directness at Work", href: DUTCH_DIRECTNESS_AT_WORK_PATH, description: "Workplace feedback and meeting debate for expats.", status: "live" },
     { label: "Learning Dutch", href: LANGUAGE_LEARNING_PATH, description: "Language hub for courses, apps and municipal programs.", status: "comingSoon" },

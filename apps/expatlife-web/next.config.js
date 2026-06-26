@@ -445,6 +445,36 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/culture/making-dutch-friends",
+        destination: "/netherlands/life/making-dutch-friends/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/making-dutch-friends/",
+        destination: "/netherlands/life/making-dutch-friends/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/making-dutch-friends",
+        destination: "/netherlands/life/making-dutch-friends/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/making-dutch-friends/",
+        destination: "/netherlands/life/making-dutch-friends/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/life/making-friends",
+        destination: "/netherlands/life/making-dutch-friends/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/life/making-friends/",
+        destination: "/netherlands/life/making-dutch-friends/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/culture/dutch-holidays-and-traditions",
         destination: "/netherlands/life/dutch-holidays-and-traditions/",
         permanent: true,
@@ -452,6 +482,16 @@ const nextConfig = {
       {
         source: "/netherlands/culture/dutch-holidays-and-traditions/",
         destination: "/netherlands/life/dutch-holidays-and-traditions/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-birthday-traditions",
+        destination: "/netherlands/life/dutch-birthday-traditions/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-birthday-traditions/",
+        destination: "/netherlands/life/dutch-birthday-traditions/",
         permanent: true,
       },
       {
