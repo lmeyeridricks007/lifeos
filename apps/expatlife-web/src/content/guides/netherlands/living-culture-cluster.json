@@ -733,24 +733,92 @@
     },
     {
       "cluster": "culture",
+      "slug": "dutch-culture",
+      "path": "/netherlands/life/dutch-culture/",
+      "title": "Dutch Culture",
+      "metaDescription": "Everything expats should know about Dutch culture, traditions, communication, work, food, social norms and everyday life in the Netherlands.",
+      "breadcrumbLabel": "Dutch Culture",
+      "section": "guides",
+      "clusterLabel": "Culture in the Netherlands",
+      "pageType": "hub",
+      "contentStatus": "live",
+      "menuVisible": true,
+      "navGroup": "social",
+      "intro": "Flagship culture hub for expats: values, daily life, social norms, work culture, food, holidays, regional differences and integration — with links into every deep-dive guide.",
+      "canonicalGuidePath": "/netherlands/life/dutch-culture/",
+      "canonicalLabel": "Culture hub (Life cluster)",
+      "related": [
+        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Everyday etiquette deep dive." },
+        { "label": "Dutch Holidays & Traditions", "href": "/netherlands/life/dutch-holidays-and-traditions/", "description": "Annual calendar and celebrations." },
+        { "label": "Dutch workplace culture", "href": "/netherlands/jobs/dutch-workplace-culture/", "description": "Professional norms and meetings." },
+        { "label": "Community basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Neighbours, clubs and integration." },
+        { "label": "Learning Dutch", "href": "/netherlands/language-learning/", "description": "Language learning routes." }
+      ]
+    },
+    {
+      "cluster": "culture",
       "slug": "dutch-social-norms",
-      "path": "/netherlands/culture/dutch-social-norms/",
+      "path": "/netherlands/life/dutch-social-norms/",
       "title": "Dutch social norms",
       "metaDescription": "Everyday social norms in the Netherlands for expats: directness, planning, and personal space.",
       "breadcrumbLabel": "Dutch social norms",
       "section": "guides",
       "clusterLabel": "Culture in the Netherlands",
       "pageType": "guide",
-      "contentStatus": "scaffold",
+      "contentStatus": "live",
       "menuVisible": true,
       "navGroup": "social",
       "intro": "Social life has different rhythms than many expat home cultures—start here before diving into subtopics.",
-      "canonicalGuidePath": null,
-      "canonicalLabel": null,
+      "canonicalGuidePath": "/netherlands/life/dutch-social-norms/",
+      "canonicalLabel": "Social norms guide (Life cluster)",
       "related": [
         { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Practical Living guide to social norms and daily interpretation." },
         { "label": "Daily life (Living)", "href": "/netherlands/living/daily-life/", "description": "Practical routines." },
         { "label": "Traditions", "href": "/netherlands/culture/dutch-traditions/", "description": "Calendar and customs." }
+      ]
+    },
+    {
+      "cluster": "culture",
+      "slug": "dating-in-the-netherlands",
+      "path": "/netherlands/life/dating-in-the-netherlands/",
+      "title": "Dating in the Netherlands",
+      "metaDescription": "Expat guide to dating in the Netherlands: Dutch culture, apps, singles events, sports clubs and activity-first ways to meet people.",
+      "breadcrumbLabel": "Dating in the Netherlands",
+      "section": "guides",
+      "clusterLabel": "Culture in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "live",
+      "menuVisible": true,
+      "navGroup": "social",
+      "intro": "Meeting people in the Netherlands works best when you combine apps with recurring activities — start here for culture context and practical routes.",
+      "canonicalGuidePath": "/netherlands/life/dating-in-the-netherlands/",
+      "canonicalLabel": "Dating guide (Life cluster)",
+      "related": [
+        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Everyday etiquette on dates and visits." },
+        { "label": "Community Basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Friends, clubs and integration routes." },
+        { "label": "Dutch cities guide", "href": "/netherlands/cities/", "description": "Compare social life by city." }
+      ]
+    },
+    {
+      "cluster": "culture",
+      "slug": "dutch-holidays-and-traditions",
+      "path": "/netherlands/life/dutch-holidays-and-traditions/",
+      "title": "Dutch Holidays and Traditions",
+      "metaDescription": "Complete expat guide to Dutch holidays and traditions: King's Day, Sinterklaas, Christmas, Easter, Liberation Day, public holidays and school breaks.",
+      "breadcrumbLabel": "Dutch Holidays and Traditions",
+      "section": "guides",
+      "clusterLabel": "Culture in the Netherlands",
+      "pageType": "guide",
+      "contentStatus": "live",
+      "menuVisible": true,
+      "navGroup": "social",
+      "intro": "The Dutch calendar mixes national parties, family traditions and regional festivals — start here before planning travel, childcare or neighbourhood participation.",
+      "canonicalGuidePath": "/netherlands/life/dutch-holidays-and-traditions/",
+      "canonicalLabel": "Holidays guide (Life cluster)",
+      "related": [
+        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Etiquette at celebrations and visits." },
+        { "label": "Community Basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Neighbourhood events and integration." },
+        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Living pillar culture guide." }
       ]
     },
     {
@@ -770,7 +838,7 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Dutch social norms", "href": "/netherlands/culture/dutch-social-norms/", "description": "Overview." },
+        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Overview." },
         { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Living-guide companion with work, neighbor, and social examples." },
         { "label": "Dutch directness at work", "href": "/netherlands/culture/dutch-directness-at-work/", "description": "Workplace parallel." }
       ]
@@ -793,7 +861,7 @@
       "canonicalLabel": null,
       "related": [
         { "label": "Time and boundaries", "href": "/netherlands/culture/time-and-boundaries/", "description": "Punctuality and space." },
-        { "label": "Dutch social norms", "href": "/netherlands/culture/dutch-social-norms/", "description": "Parent topic." }
+        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Parent topic." }
       ]
     },
     {
@@ -834,7 +902,7 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Dutch social norms", "href": "/netherlands/culture/dutch-social-norms/", "description": "Framework." },
+        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Framework." },
         { "label": "Daily life (Living)", "href": "/netherlands/living/daily-life/", "description": "Systems and routines." }
       ]
     },

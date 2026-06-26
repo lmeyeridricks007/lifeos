@@ -300,6 +300,10 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/utilities/internet-and-mobile-netherlands/",
   "/netherlands/life/",
   "/netherlands/life/community-basics-netherlands/",
+  "/netherlands/life/dutch-culture/",
+  "/netherlands/life/dutch-social-norms/",
+  "/netherlands/life/dating-in-the-netherlands/",
+  "/netherlands/life/dutch-holidays-and-traditions/",
   "/netherlands/practical-life/municipality-services-netherlands/",
   "/netherlands/practical-life/registering-your-address-netherlands/",
   "/netherlands/practical-life/waste-and-recycling-netherlands/",
@@ -382,6 +386,11 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/dutch-directness-at-work/",
   /** Legacy Culture-cluster URL (301 → canonical jobs guide). */
   "/netherlands/culture/dutch-directness-at-work/",
+  /** Legacy Culture-cluster URL (301 → canonical Life guide). */
+  "/netherlands/culture/dutch-social-norms/",
+  "/netherlands/culture/dutch-culture/",
+  "/netherlands/culture/dating-in-the-netherlands/",
+  "/netherlands/culture/dutch-holidays-and-traditions/",
   "/netherlands/jobs/freelancing-netherlands/",
   /** Legacy Work-cluster URL (301 → canonical workplace culture guide). */
   "/netherlands/work/work-culture-netherlands/",

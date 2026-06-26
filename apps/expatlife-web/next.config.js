@@ -425,6 +425,46 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/culture/dutch-social-norms",
+        destination: "/netherlands/life/dutch-social-norms/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-social-norms/",
+        destination: "/netherlands/life/dutch-social-norms/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dating-in-the-netherlands",
+        destination: "/netherlands/life/dating-in-the-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dating-in-the-netherlands/",
+        destination: "/netherlands/life/dating-in-the-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-holidays-and-traditions",
+        destination: "/netherlands/life/dutch-holidays-and-traditions/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-holidays-and-traditions/",
+        destination: "/netherlands/life/dutch-holidays-and-traditions/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-culture",
+        destination: "/netherlands/life/dutch-culture/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-culture/",
+        destination: "/netherlands/life/dutch-culture/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/work/freelancing-netherlands",
         destination: "/netherlands/jobs/freelancing-netherlands/",
         permanent: true,

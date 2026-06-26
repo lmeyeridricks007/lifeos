@@ -21,6 +21,9 @@ import {
   SURVIVAL_GUIDE_PATH,
   VOLUNTEERING_PATH,
 } from "@/src/components/life/communityBasicsNetherlandsPageModel";
+import { DUTCH_SOCIAL_NORMS_PATH } from "@/src/components/life/dutchSocialNormsPageModel";
+import { DATING_NETHERLANDS_PATH } from "@/src/components/life/datingNetherlandsPageModel";
+import { DUTCH_HOLIDAYS_TRADITIONS_PATH } from "@/src/components/life/dutchHolidaysTraditionsPageModel";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -43,6 +46,26 @@ const HUB_LINKS = [
     description: "Making friends, neighbors, clubs, volunteering, events and practical integration strategies.",
   },
   {
+    href: DUTCH_CULTURE_PATH,
+    title: "Dutch Culture",
+    description: "Flagship guide to Dutch values, traditions, communication, work culture, food, holidays and regional life.",
+  },
+  {
+    href: DUTCH_SOCIAL_NORMS_PATH,
+    title: "Dutch Social Norms",
+    description: "Everyday etiquette, greetings, birthdays, punctuality, neighbour culture and unwritten social rules.",
+  },
+  {
+    href: DATING_NETHERLANDS_PATH,
+    title: "Dating in the Netherlands",
+    description: "Dutch dating culture, apps, singles events, sports clubs, active holidays and practical ways to meet people.",
+  },
+  {
+    href: DUTCH_HOLIDAYS_TRADITIONS_PATH,
+    title: "Dutch Holidays & Traditions",
+    description: "King's Day, Sinterklaas, Christmas, public holidays, school breaks and regional celebrations.",
+  },
+  {
     href: SURVIVAL_GUIDE_PATH,
     title: "Netherlands Survival Guide",
     description: "Day-one through month-one Living hub: transport, apps, payments, groceries and first-week sequencing.",
@@ -61,11 +84,6 @@ const HUB_LINKS = [
     href: CITIES_HUB_PATH,
     title: "Dutch Cities Guide",
     description: "Compare cities for international population, neighborhoods and social opportunities.",
-  },
-  {
-    href: DUTCH_CULTURE_PATH,
-    title: "Dutch Culture (planned)",
-    description: "Planned deeper guide to traditions, social norms and cultural context.",
   },
   {
     href: LANGUAGE_LEARNING_PATH,

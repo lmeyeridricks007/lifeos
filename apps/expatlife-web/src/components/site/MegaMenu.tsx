@@ -3,7 +3,7 @@
 import Link from "next/link";
 import type { Ref, RefObject } from "react";
 import type { MegaMenu as MegaMenuType } from "@/src/lib/nav/types";
-import { isNavItemLinkable } from "@/src/lib/nav/navItemModel";
+import { isNavHrefActive, isNavItemLinkable } from "@/src/lib/nav/navItemModel";
 import { NavMenuItemRow } from "@/src/components/navigation/NavMenuItemRow";
 import { cn } from "@/lib/cn";
 
@@ -25,6 +25,9 @@ export function MegaMenu({ menu, panelRef, firstLinkRef, onNavigate, pathname }:
   const showToolsCol = menu.showToolsRail !== false && tools.length > 0;
   const showFeaturedCard = menu.showFeatured !== false && Boolean(menu.featured);
   const sectionCount = menu.sections.length;
+  /** Four dense guide columns + featured/tools sidebar — stack sections on their own row. */
+  const useSectionsFirstLayout =
+    !isToolsMenu && !isCompact && sectionCount >= 4 && showFeaturedCard;
   /** Fewer section cards → narrower mega so the panel does not feel hollow. */
   const dense = sectionCount <= 2 && !isToolsMenu && !isCompact;
 
@@ -64,6 +67,7 @@ export function MegaMenu({ menu, panelRef, firstLinkRef, onNavigate, pathname }:
   ));
 
   const featuredLive = menu.featured?.navStatus === "live" && menu.featured.href;
+  const featuredActive = featuredLive && isNavHrefActive(pathname, menu.featured!.href);
   const featuredCompact =
     menu.megaDensity === "standard" || menu.presentation === "compact" || menu.key === "services";
 
@@ -71,33 +75,43 @@ export function MegaMenu({ menu, panelRef, firstLinkRef, onNavigate, pathname }:
     <div
       className={cn(
         "flex flex-col gap-3.5 rounded-card border border-brand/25 bg-gradient-to-br from-brand-muted/90 to-accent-muted/80 shadow-card ring-1 ring-border/25",
-        featuredCompact ? "p-4" : "p-5"
+        featuredCompact ? "p-4" : "p-5",
+        useSectionsFirstLayout && "sm:flex-row sm:items-center sm:justify-between sm:gap-6"
       )}
     >
-      <p className="text-xs font-semibold uppercase leading-none tracking-[0.14em] text-brand-strong">Featured</p>
-      <h4
-        className={cn(
-          "font-semibold leading-snug text-foreground",
-          featuredCompact ? "text-sm" : "text-base"
-        )}
-      >
-        {menu.featured?.label ?? `${menu.label} overview`}
-      </h4>
-      {menu.featured?.description ? (
-        <p
+      <div className={cn(useSectionsFirstLayout && "min-w-0 flex-1")}>
+        <p className="text-xs font-semibold uppercase leading-none tracking-[0.14em] text-brand-strong">Featured</p>
+        <h4
           className={cn(
-            "leading-relaxed text-foreground-muted",
-            featuredCompact ? "text-xs" : "text-sm"
+            "mt-3 font-semibold leading-snug text-foreground",
+            featuredCompact ? "text-sm" : "text-base"
           )}
         >
-          {menu.featured.description}
-        </p>
-      ) : null}
+          {menu.featured?.label ?? `${menu.label} overview`}
+        </h4>
+        {menu.featured?.description ? (
+          <p
+            className={cn(
+              "mt-2 leading-relaxed text-foreground-muted",
+              featuredCompact ? "text-xs" : "text-sm"
+            )}
+          >
+            {menu.featured.description}
+          </p>
+        ) : null}
+      </div>
       {featuredLive ? (
         <Link
           href={menu.featured!.href!}
           onClick={onNavigate}
-          className="mt-1 inline-flex w-fit items-center rounded-lg px-2 py-1.5 text-sm font-semibold text-link transition-colors duration-150 hover:bg-brand-muted hover:text-link-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/25 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas"
+          aria-current={featuredActive ? "page" : undefined}
+          className={cn(
+            "inline-flex w-fit shrink-0 items-center rounded-lg px-2 py-1.5 text-sm font-semibold transition-colors duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/25 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas",
+            useSectionsFirstLayout ? "mt-0" : "mt-1",
+            featuredActive
+              ? "bg-brand-muted/90 font-semibold text-brand-strong ring-1 ring-inset ring-brand/10"
+              : "text-link hover:bg-brand-muted hover:text-link-hover"
+          )}
         >
           {menu.featured!.label} -&gt;
         </Link>
@@ -145,15 +159,17 @@ export function MegaMenu({ menu, panelRef, firstLinkRef, onNavigate, pathname }:
     isToolsMenu && "sm:grid-cols-2 xl:max-h-[65vh] xl:grid-cols-4 xl:overflow-y-auto xl:pr-2",
     !isToolsMenu &&
       !isCompact &&
-      (sectionCount >= 6
-        ? "sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 xl:max-h-[min(70vh,800px)] xl:overflow-y-auto xl:pr-1"
-        : sectionCount === 5
-          ? "sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 xl:max-h-[min(70vh,800px)] xl:overflow-y-auto xl:pr-1"
-          : sectionCount >= 4
-            ? "sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 xl:max-h-[min(70vh,800px)] xl:overflow-y-auto xl:pr-1"
-            : sectionCount === 3
-              ? "sm:grid-cols-2 xl:grid-cols-3 xl:max-h-[min(70vh,800px)] xl:overflow-y-auto xl:pr-1"
-              : "sm:grid-cols-2 xl:max-h-[min(70vh,800px)] xl:overflow-y-auto xl:pr-1"),
+      (useSectionsFirstLayout
+        ? "sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4"
+        : sectionCount >= 6
+          ? "sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 xl:max-h-[min(70vh,800px)] xl:overflow-y-auto xl:pr-1"
+          : sectionCount === 5
+            ? "sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-3 xl:max-h-[min(70vh,800px)] xl:overflow-y-auto xl:pr-1"
+            : sectionCount >= 4
+              ? "sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 xl:max-h-[min(70vh,800px)] xl:overflow-y-auto xl:pr-1"
+              : sectionCount === 3
+                ? "sm:grid-cols-2 xl:grid-cols-3 xl:max-h-[min(70vh,800px)] xl:overflow-y-auto xl:pr-1"
+                : "sm:grid-cols-2 xl:max-h-[min(70vh,800px)] xl:overflow-y-auto xl:pr-1"),
     isCompact && "sm:grid-cols-2"
   );
 
@@ -207,6 +223,20 @@ export function MegaMenu({ menu, panelRef, firstLinkRef, onNavigate, pathname }:
                 : "xl:grid-cols-[3fr_1.1fr_1.1fr]"
         : "xl:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]";
 
+  const panelBody = useSectionsFirstLayout ? (
+    <div className="flex flex-col gap-6 sm:gap-7">
+      <div className={sectionsGridClass}>{sectionCards}</div>
+      {showFeaturedCard ? featuredBlock : null}
+      {showToolsCol ? toolsBlock : null}
+    </div>
+  ) : (
+    <div className={cn("grid items-start gap-6 sm:gap-7", mainGridCols)}>
+      <div className={cn(sectionsGridClass, showToolsCol && "min-w-0")}>{sectionCards}</div>
+      {featuredBlock}
+      {showToolsCol ? toolsBlock : null}
+    </div>
+  );
+
   return (
     <div className="absolute inset-x-0 top-full z-50 pt-2" data-mega-menu-key={menu.key}>
       <div
@@ -218,13 +248,7 @@ export function MegaMenu({ menu, panelRef, firstLinkRef, onNavigate, pathname }:
         className={nonCompactOuterClass}
       >
         <div className="max-h-[calc(100vh-6rem)] overflow-y-auto overscroll-y-contain rounded-card border border-border bg-surface-raised p-5 pb-safe shadow-popover sm:p-6 sm:px-7 sm:pb-6">
-          <div className={cn("grid items-start gap-6 sm:gap-7", mainGridCols)}>
-            <div className={cn(sectionsGridClass, showToolsCol && "min-w-0")}>{sectionCards}</div>
-
-            {featuredBlock}
-
-            {showToolsCol ? toolsBlock : null}
-          </div>
+          {panelBody}
         </div>
       </div>
     </div>

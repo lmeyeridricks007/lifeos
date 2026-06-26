@@ -55,8 +55,8 @@ export function NavMenuItemRow({
       <span
         role="group"
         className={cn(
-          "flex w-full min-w-0 cursor-default items-center gap-2 rounded-lg py-1.5 pl-2 pr-2 -mx-2 text-sm",
-          variant === "mega" ? "text-foreground-faint" : "min-h-[44px] cursor-not-allowed text-foreground-faint/90"
+          "flex w-full min-w-0 cursor-default gap-2 rounded-lg py-1.5 pl-2 pr-2 -mx-2 text-sm",
+          variant === "mega" ? "flex-col items-start sm:flex-row sm:items-center" : "min-h-[44px] cursor-not-allowed text-foreground-faint/90"
         )}
         aria-label={`${item.label}, ${ariaStatus}`}
       >

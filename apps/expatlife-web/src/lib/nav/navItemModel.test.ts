@@ -506,9 +506,9 @@ describe("community basics nav active state", () => {
     expect(getActiveNavKey("/netherlands/living/community-basics/")).toBe("living");
   });
 
-  it("renders the Living daily life community basics menu row as active", () => {
+  it("renders the Living Life community basics menu row as active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Daily life")
+      .find((section) => section.title === "Life in the Netherlands")
       ?.items.find((row) => row.label === "Community basics");
 
     expect(item).toBeDefined();
@@ -1110,6 +1110,218 @@ describe("dutch directness at work nav active state", () => {
     expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toEqual([
       "culture:Workplace culture",
     ]);
+  });
+});
+
+describe("dutch social norms nav active state", () => {
+  const SOCIAL_NORMS_PATH = "/netherlands/life/dutch-social-norms/";
+
+  it("treats the shipped social norms guide route as live", () => {
+    expect(getRouteStatus(SOCIAL_NORMS_PATH)).toBe("live");
+  });
+
+  it("highlights Culture for the canonical Life guide path", () => {
+    expect(getActiveNavKey(SOCIAL_NORMS_PATH)).toBe("culture");
+  });
+
+  it("highlights Culture for the culture cluster href alias", () => {
+    expect(getActiveNavKey("/netherlands/culture/dutch-social-norms/")).toBe("culture");
+  });
+
+  it("marks the Culture menu row active for the canonical Life href", () => {
+    const item = {
+      label: "Dutch social norms",
+      href: SOCIAL_NORMS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(SOCIAL_NORMS_PATH, item)).toBe(true);
+  });
+
+  it("renders the Culture menu row as an active link", () => {
+    const item = MEGA_MENUS.culture.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === SOCIAL_NORMS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(SOCIAL_NORMS_PATH, item!)).toBe(true);
+  });
+
+  it("has Culture > Social norms menu row", () => {
+    const rows = menuRowsForHref(SOCIAL_NORMS_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
+  });
+
+  it("still marks the Living Life row active via shared href", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Life in the Netherlands")
+      ?.items.find((row) => row.href === SOCIAL_NORMS_PATH);
+
+    expect(item).toBeDefined();
+    expect(isNavItemActive(SOCIAL_NORMS_PATH, item!)).toBe(true);
+  });
+});
+
+describe("dating in the netherlands nav active state", () => {
+  const DATING_PATH = "/netherlands/life/dating-in-the-netherlands/";
+
+  it("treats the shipped dating guide route as live", () => {
+    expect(getRouteStatus(DATING_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the canonical Life guide path", () => {
+    expect(getActiveNavKey(DATING_PATH)).toBe("living");
+  });
+
+  it("highlights Living for the culture cluster href alias", () => {
+    expect(getActiveNavKey("/netherlands/culture/dating-in-the-netherlands/")).toBe("living");
+  });
+
+  it("marks the Culture menu row active for the canonical Life href", () => {
+    const item = {
+      label: "Dating in the Netherlands",
+      href: DATING_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(DATING_PATH, item)).toBe(true);
+  });
+
+  it("renders the Culture menu row as an active link", () => {
+    const item = MEGA_MENUS.culture.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === DATING_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DATING_PATH, item!)).toBe(true);
+  });
+
+  it("has Culture > Social norms menu row", () => {
+    const rows = menuRowsForHref(DATING_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
+  });
+
+  it("has Living > Life in the Netherlands menu row", () => {
+    const rows = menuRowsForHref(DATING_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Life in the Netherlands");
+  });
+
+  it("renders the Living Life menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Life in the Netherlands")
+      ?.items.find((row) => row.href === DATING_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DATING_PATH, item!)).toBe(true);
+  });
+});
+
+describe("dutch holidays and traditions nav active state", () => {
+  const HOLIDAYS_PATH = "/netherlands/life/dutch-holidays-and-traditions/";
+
+  it("treats the shipped holidays guide route as live", () => {
+    expect(getRouteStatus(HOLIDAYS_PATH)).toBe("live");
+  });
+
+  it("highlights Culture for the canonical Life guide path", () => {
+    expect(getActiveNavKey(HOLIDAYS_PATH)).toBe("culture");
+  });
+
+  it("highlights Culture for the culture cluster href alias", () => {
+    expect(getActiveNavKey("/netherlands/culture/dutch-holidays-and-traditions/")).toBe("culture");
+  });
+
+  it("marks the Culture menu row active for the canonical Life href", () => {
+    const item = {
+      label: "Dutch Holidays & Traditions",
+      href: HOLIDAYS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(HOLIDAYS_PATH, item)).toBe(true);
+  });
+
+  it("has Living > Culture menu row", () => {
+    const rows = menuRowsForHref(HOLIDAYS_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Culture");
+  });
+
+  it("has Culture > Social norms menu row", () => {
+    const rows = menuRowsForHref(HOLIDAYS_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
+  });
+
+  it("renders the Living Culture menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Culture")
+      ?.items.find((row) => row.href === HOLIDAYS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HOLIDAYS_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Culture mega menu row as an active link", () => {
+    const item = MEGA_MENUS.culture.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === HOLIDAYS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HOLIDAYS_PATH, item!)).toBe(true);
+  });
+});
+
+describe("dutch culture nav active state", () => {
+  const CULTURE_PATH = "/netherlands/life/dutch-culture/";
+
+  it("treats the shipped culture hub route as live", () => {
+    expect(getRouteStatus(CULTURE_PATH)).toBe("live");
+  });
+
+  it("highlights Culture for the canonical Life guide path", () => {
+    expect(getActiveNavKey(CULTURE_PATH)).toBe("culture");
+  });
+
+  it("highlights Culture for the culture cluster href alias", () => {
+    expect(getActiveNavKey("/netherlands/culture/dutch-culture/")).toBe("culture");
+  });
+
+  it("marks the Culture menu row active for the canonical Life href", () => {
+    const item = {
+      label: "Dutch Culture",
+      href: CULTURE_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(CULTURE_PATH, item)).toBe(true);
+  });
+
+  it("has Living > Culture menu row", () => {
+    const rows = menuRowsForHref(CULTURE_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Culture");
+  });
+
+  it("does not duplicate Dutch Culture in a standalone Culture hub column", () => {
+    const rows = menuRowsForHref(CULTURE_PATH).filter((row) => row.menuKey === "culture");
+    expect(rows.map((row) => row.sectionTitle)).not.toContain("Culture hub");
+  });
+
+  it("features Dutch Culture as the Culture pillar entry", () => {
+    expect(MEGA_MENUS.culture.featured?.href).toBe(CULTURE_PATH);
+    expect(MEGA_MENUS.culture.featured?.navStatus).toBe("live");
+    expect(isNavItemActive(CULTURE_PATH, MEGA_MENUS.culture.featured!)).toBe(true);
+  });
+
+  it("does not list Dutch Culture in a Culture mega menu section column", () => {
+    const sectionRows = MEGA_MENUS.culture.sections
+      .flatMap((section) => section.items)
+      .filter((navItem) => navItem.href === CULTURE_PATH);
+    expect(sectionRows).toHaveLength(0);
   });
 });
 

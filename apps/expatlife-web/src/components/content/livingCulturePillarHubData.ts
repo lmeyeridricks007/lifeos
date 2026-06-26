@@ -332,9 +332,9 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
       "Decode directness, planning culture, holidays, and language expectations—alongside (not instead of) your Move and Money checklists.",
     heroImage: "/images/heroes/moving-to-netherlands-canal-hero.png",
     heroImageAlt: "Dutch city life—canals, bikes, and everyday social rhythm",
-    primaryCta: { label: "Workplace culture", href: "/netherlands/culture/dutch-workplace-culture/" },
+    primaryCta: { label: "Dutch Culture hub", href: "/netherlands/life/dutch-culture/" },
     secondaryCtas: [
-      { label: "Social norms", href: "/netherlands/culture/dutch-social-norms/" },
+      { label: "Social norms", href: "/netherlands/life/dutch-social-norms/" },
       { label: "Tools hub", href: "/netherlands/tools/" },
     ],
   },
@@ -375,7 +375,10 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         goal: "Navigate invitations, timing, and everyday communication confidently.",
         actions: ["Plan social dates early", "Understand punctuality signals respect", "Blend Living + Culture cues for neighbours"],
         links: [
-          { href: "/netherlands/culture/dutch-social-norms/", label: "Social norms hub" },
+          { href: "/netherlands/life/dutch-culture/", label: "Dutch Culture hub" },
+          { href: "/netherlands/life/dutch-social-norms/", label: "Social norms hub" },
+          { href: "/netherlands/life/dating-in-the-netherlands/", label: "Dating in the Netherlands" },
+          { href: "/netherlands/life/dutch-holidays-and-traditions/", label: "Dutch Holidays & Traditions" },
           { href: "/netherlands/culture/communication-style/", label: "Communication style" },
         ],
       },
@@ -427,7 +430,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         personaTitle: "Social expectations in daily life",
         whatMatters: ["How invites and RSVPs work", "Personal space and direct questions", "Neighbour and building norms"],
         readingOrderLinks: [
-          { title: "Dutch social norms", href: "/netherlands/culture/dutch-social-norms/" },
+          { title: "Dutch social norms", href: "/netherlands/life/dutch-social-norms/" },
           { title: "Invitations & planning", href: "/netherlands/culture/invitations-and-planning/" },
           { title: "Community basics", href: "/netherlands/life/community-basics-netherlands/" },
         ],

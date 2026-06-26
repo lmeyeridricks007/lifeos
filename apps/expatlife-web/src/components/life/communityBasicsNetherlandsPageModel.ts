@@ -996,6 +996,18 @@ export const communityBasicsNetherlandsPage = {
       description: "Planned language-learning hub for courses, apps and municipal programs.",
     },
     {
+      label: "Dutch Social Norms",
+      href: "/netherlands/life/dutch-social-norms/",
+      status: "live",
+      description: "Everyday etiquette, greetings, birthdays, punctuality and neighbour culture.",
+    },
+    {
+      label: "Dating in the Netherlands",
+      href: "/netherlands/life/dating-in-the-netherlands/",
+      status: "live",
+      description: "Dutch dating culture, apps, singles events and activity-first ways to meet people.",
+    },
+    {
       label: "Dutch Culture",
       href: DUTCH_CULTURE_PATH,
       status: "comingSoon",

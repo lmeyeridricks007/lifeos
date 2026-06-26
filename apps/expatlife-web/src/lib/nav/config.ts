@@ -166,9 +166,9 @@ const DEFAULT_FEATURED_FALLBACK: Partial<Record<TopNavKey, NavItem>> = {
     "Day-to-day life, transport, apps, payments, and practical rhythms after you arrive."
   ),
   culture: item(
-    "Moving to the Netherlands",
-    "/netherlands/moving-to-the-netherlands/",
-    "Start with the move, then explore Dutch culture, language, and integration."
+    "Dutch Culture",
+    "/netherlands/life/dutch-culture/",
+    "Flagship overview of Dutch values, traditions, daily life and integration context for expats."
   ),
 };
 
@@ -281,12 +281,17 @@ function filterMegaMenu(menu: MegaMenu): MegaMenu {
         }
       }
     }
-    /** Culture: featured CTA points at the main moving guide (onboarding), not culture silo. */
+    /** Culture: prefer flagship Dutch Culture hub, then moving onboarding guide. */
     if (
       menu.key === "culture" &&
       (!featured || featured.navStatus !== "live" || !featured.href)
     ) {
       const chain = [
+        item(
+          "Dutch Culture",
+          "/netherlands/life/dutch-culture/",
+          "Flagship overview of Dutch values, traditions, daily life and integration context for expats."
+        ),
         item(
           "Moving to the Netherlands",
           "/netherlands/moving-to-the-netherlands/",
@@ -490,6 +495,13 @@ const CULTURE_OWNED_JOBS_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/dutch-directness-at-work",
 ];
 
+/** Life URLs owned by Culture mega menu (not Living). */
+const CULTURE_OWNED_LIFE_GUIDE_PREFIXES: readonly string[] = [
+  "/netherlands/life/dutch-culture",
+  "/netherlands/life/dutch-social-norms",
+  "/netherlands/life/dutch-holidays-and-traditions",
+];
+
 /** Business App Router guides — highlight Move at top level (canonical URL under `/business/`). */
 const BUSINESS_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/business/zzp-netherlands",
@@ -548,6 +560,11 @@ function isJobsSalaryGuidePath(pathname: string): boolean {
 function isCultureOwnedJobsGuidePath(pathname: string): boolean {
   const base = resolveNavActivePath(pathname).split("?")[0].replace(/\/+$/, "") || "/";
   return CULTURE_OWNED_JOBS_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
+}
+
+function isCultureOwnedLifeGuidePath(pathname: string): boolean {
+  const base = resolveNavActivePath(pathname).split("?")[0].replace(/\/+$/, "") || "/";
+  return CULTURE_OWNED_LIFE_GUIDE_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
 }
 
 function isBusinessGuidePath(pathname: string): boolean {
@@ -706,6 +723,8 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (CITY_HUB_PREFIXES.some((pre) => path === pre || path.startsWith(`${pre}/`))) return "cities";
 
   if (isCultureOwnedJobsGuidePath(path)) return "culture";
+
+  if (isCultureOwnedLifeGuidePath(path)) return "culture";
 
   if (isJobsSalaryGuidePath(path)) return "moving";
 
@@ -1547,10 +1566,45 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/practical-life/parking-and-local-permits-netherlands/",
             "Resident permits, visitor passes, paid zones, parking apps and municipality permits."
           ),
+        ],
+      },
+      {
+        title: "Life in the Netherlands",
+        items: [
+          item(
+            "Life in the Netherlands",
+            "/netherlands/life/",
+            "Hub for community, integration, social norms, dating and social life guides."
+          ),
           item(
             "Community basics",
             "/netherlands/life/community-basics-netherlands/",
             "Making friends, neighbors, clubs, volunteering and integration."
+          ),
+          item(
+            "Dutch social norms",
+            "/netherlands/life/dutch-social-norms/",
+            "Everyday etiquette, greetings, birthdays, punctuality and neighbour culture."
+          ),
+          item(
+            "Dating in the Netherlands",
+            "/netherlands/life/dating-in-the-netherlands/",
+            "Dutch dating culture, apps, singles events, sports clubs and where to meet people."
+          ),
+        ],
+      },
+      {
+        title: "Culture",
+        items: [
+          item(
+            "Dutch Culture",
+            "/netherlands/life/dutch-culture/",
+            "Broad overview of Dutch culture, traditions and integration context."
+          ),
+          item(
+            "Dutch Holidays & Traditions",
+            "/netherlands/life/dutch-holidays-and-traditions/",
+            "King's Day, Sinterklaas, Christmas, public holidays and the annual calendar."
           ),
         ],
       },
@@ -1582,7 +1636,9 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
   culture: {
     key: "culture",
     label: "Culture",
-    showFeatured: false,
+    showFeatured: true,
+    /** Tools live in the Tools pillar; keep Culture mega focused on guides. */
+    showToolsRail: false,
     megaDensity: "full",
     sections: [
       {
@@ -1606,7 +1662,9 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Social norms",
         items: [
-          item("Dutch social norms", "/netherlands/culture/dutch-social-norms/", "Everyday social expectations."),
+          item("Dutch social norms", "/netherlands/life/dutch-social-norms/", "Everyday social expectations, greetings and etiquette."),
+          item("Dating in the Netherlands", "/netherlands/life/dating-in-the-netherlands/", "Apps, culture, singles events and activity-first ways to meet people."),
+          item("Dutch Holidays & Traditions", "/netherlands/life/dutch-holidays-and-traditions/", "King's Day, Sinterklaas, Christmas and public holidays."),
           item("Communication style", "/netherlands/culture/communication-style/", "Tone, humor, and clarity."),
           item("Invitations and planning", "/netherlands/culture/invitations-and-planning/", "How social plans usually work."),
           item("Time and boundaries", "/netherlands/culture/time-and-boundaries/", "Punctuality and personal space."),
@@ -1636,9 +1694,9 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       },
     ],
     featured: item(
-      "Moving to the Netherlands",
-      "/netherlands/moving-to-the-netherlands/",
-      "Anchor the practical move first, then unpack Dutch workplace cues, social norms, and language basics."
+      "Dutch Culture",
+      "/netherlands/life/dutch-culture/",
+      "Your Culture pillar entry: values, traditions, social norms, workplace cues and language basics for expats."
     ),
     tools: buildCultureToolRail(),
   },

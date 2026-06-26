@@ -43,6 +43,10 @@ import { noticePeriodNetherlandsPage } from "@/src/components/jobs/noticePeriodN
 import { employeeRightsNetherlandsPage } from "@/src/components/jobs/employeeRightsNetherlandsPageModel";
 import { dutchWorkplaceCulturePage } from "@/src/components/jobs/dutchWorkplaceCulturePageModel";
 import { dutchDirectnessAtWorkPage } from "@/src/components/jobs/dutchDirectnessAtWorkPageModel";
+import { dutchSocialNormsPage } from "@/src/components/life/dutchSocialNormsPageModel";
+import { datingNetherlandsPage } from "@/src/components/life/datingNetherlandsPageModel";
+import { dutchHolidaysTraditionsPage } from "@/src/components/life/dutchHolidaysTraditionsPageModel";
+import { dutchCulturePage } from "@/src/components/life/dutchCulturePageModel";
 import { freelancingNetherlandsPage } from "@/src/components/jobs/freelancingNetherlandsPageModel";
 import { contractorVsEmployeeNetherlandsPage } from "@/src/components/jobs/contractorVsEmployeeNetherlandsPageModel";
 import { zzpNetherlandsPage } from "@/src/components/business/zzpNetherlandsPageModel";
@@ -1024,6 +1028,96 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       dutchDirectnessAtWorkPage.snapshotSignals.map((signal) => `${signal.label} ${signal.value}`),
       dutchDirectnessAtWorkPage.expatQuestions.map((item) => `${item.q} ${item.a}`),
       dutchDirectnessAtWorkPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:dutch-social-norms",
+    title: dutchSocialNormsPage.hero.pageTitle,
+    href: dutchSocialNormsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Life",
+    description: dutchSocialNormsPage.seo.description,
+    image: dutchSocialNormsPage.hero.image.src,
+    imageAlt: dutchSocialNormsPage.hero.image.alt,
+    keywords: [...dutchSocialNormsPage.seo.keywords],
+    searchText: joinSearchParts(
+      dutchSocialNormsPage.hero.pageTitle,
+      dutchSocialNormsPage.hero.subtitle,
+      dutchSocialNormsPage.seo.description,
+      [...dutchSocialNormsPage.seo.keywords],
+      dutchSocialNormsPage.snapshotCards.map((card) => `${card.title} ${card.body}`),
+      dutchSocialNormsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:dating-in-the-netherlands",
+    title: datingNetherlandsPage.hero.pageTitle,
+    href: datingNetherlandsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Life",
+    description: datingNetherlandsPage.seo.description,
+    image: datingNetherlandsPage.hero.image.src,
+    imageAlt: datingNetherlandsPage.hero.image.alt,
+    keywords: [...datingNetherlandsPage.seo.keywords],
+    searchText: joinSearchParts(
+      datingNetherlandsPage.hero.pageTitle,
+      datingNetherlandsPage.hero.subtitle,
+      datingNetherlandsPage.seo.description,
+      [...datingNetherlandsPage.seo.keywords],
+      datingNetherlandsPage.datingApps.map((app) => app.name),
+      datingNetherlandsPage.snapshotCards.map((card) => `${card.title} ${card.body}`),
+      datingNetherlandsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:dutch-culture",
+    title: dutchCulturePage.hero.pageTitle,
+    href: dutchCulturePage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Life",
+    description: dutchCulturePage.seo.description,
+    image: dutchCulturePage.hero.image.src,
+    imageAlt: dutchCulturePage.hero.image.alt,
+    keywords: [...dutchCulturePage.seo.keywords],
+    searchText: joinSearchParts(
+      dutchCulturePage.hero.pageTitle,
+      dutchCulturePage.hero.subtitle,
+      dutchCulturePage.seo.description,
+      [...dutchCulturePage.seo.keywords],
+      dutchCulturePage.snapshotCards.map((card) => `${card.title} ${card.body}`),
+      dutchCulturePage.coreValues.map((v) => `${v.title} ${v.body} ${v.example}`),
+      dutchCulturePage.socialNormsExamples.map((r) => `${r.setting} ${r.norm}`),
+      dutchCulturePage.holidaysKeyDates.map((h) => h.holiday),
+      dutchCulturePage.cultureShockCards.map((c) => `${c.title} ${c.tip}`),
+      dutchCulturePage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:dutch-holidays-and-traditions",
+    title: dutchHolidaysTraditionsPage.hero.pageTitle,
+    href: dutchHolidaysTraditionsPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Life",
+    description: dutchHolidaysTraditionsPage.seo.description,
+    image: dutchHolidaysTraditionsPage.hero.image.src,
+    imageAlt: dutchHolidaysTraditionsPage.hero.image.alt,
+    keywords: [...dutchHolidaysTraditionsPage.seo.keywords],
+    searchText: joinSearchParts(
+      dutchHolidaysTraditionsPage.hero.pageTitle,
+      dutchHolidaysTraditionsPage.hero.subtitle,
+      dutchHolidaysTraditionsPage.seo.description,
+      [...dutchHolidaysTraditionsPage.seo.keywords],
+      dutchHolidaysTraditionsPage.snapshotCards.map((card) => `${card.title} ${card.body}`),
+      dutchHolidaysTraditionsPage.publicHolidays.map((h) => h.name),
+      dutchHolidaysTraditionsPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 
