@@ -996,6 +996,12 @@ export const communityBasicsNetherlandsPage = {
       description: "Planned language-learning hub for courses, apps and municipal programs.",
     },
     {
+      label: "Dutch Etiquette",
+      href: "/netherlands/life/dutch-etiquette/",
+      status: "live",
+      description: "Practical manners for neighbours, greetings, dining and everyday life.",
+    },
+    {
       label: "Dutch Social Norms",
       href: "/netherlands/life/dutch-social-norms/",
       status: "live",

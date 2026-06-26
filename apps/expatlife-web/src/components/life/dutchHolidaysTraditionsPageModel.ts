@@ -813,6 +813,7 @@ export const dutchHolidaysTraditionsPage = {
   ],
   relatedGuides: [
     { label: "Dutch Culture (overview)", href: DUTCH_CULTURE_PATH, description: "Broad culture cluster overview — planned hub.", status: "comingSoon" },
+    { label: "Dutch Etiquette", href: "/netherlands/life/dutch-etiquette/", description: "Practical manners for celebrations, visits and gifts.", status: "live" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Everyday etiquette, greetings and visiting customs.", status: "live" },
     { label: "Dutch Birthday Traditions", href: DUTCH_BIRTHDAY_TRADITIONS_PATH, description: "Circle parties, congratulations, gifts and birthday etiquette.", status: "live" },
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Friends, neighbours and local integration.", status: "live" },

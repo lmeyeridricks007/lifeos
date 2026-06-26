@@ -336,6 +336,8 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
     primaryCta: { label: "Dutch Culture hub", href: "/netherlands/life/dutch-culture/" },
     secondaryCtas: [
       { label: "Social norms", href: "/netherlands/life/dutch-social-norms/" },
+      { label: "Dutch Etiquette", href: "/netherlands/life/dutch-etiquette/" },
+      { label: "Dutch Humour Explained", href: "/netherlands/life/dutch-humour/" },
       { label: "Tools hub", href: "/netherlands/tools/" },
     ],
   },
@@ -377,6 +379,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         actions: ["Plan social dates early", "Understand punctuality signals respect", "Blend Living + Culture cues for neighbours"],
         links: [
           { href: "/netherlands/life/dutch-culture/", label: "Dutch Culture hub" },
+          { href: "/netherlands/life/dutch-etiquette/", label: "Dutch Etiquette guide" },
           { href: "/netherlands/life/dutch-social-norms/", label: "Social norms hub" },
           { href: "/netherlands/life/dating-in-the-netherlands/", label: "Dating in the Netherlands" },
           { href: "/netherlands/life/dutch-holidays-and-traditions/", label: "Dutch Holidays & Traditions" },
@@ -432,6 +435,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         personaTitle: "Social expectations in daily life",
         whatMatters: ["How invites and RSVPs work", "Personal space and direct questions", "Neighbour and building norms"],
         readingOrderLinks: [
+          { title: "Dutch Etiquette", href: "/netherlands/life/dutch-etiquette/" },
           { title: "Dutch social norms", href: "/netherlands/life/dutch-social-norms/" },
           { title: "Invitations & planning", href: "/netherlands/culture/invitations-and-planning/" },
           { title: "Community basics", href: "/netherlands/life/community-basics-netherlands/" },

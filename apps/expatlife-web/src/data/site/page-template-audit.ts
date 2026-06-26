@@ -229,6 +229,8 @@ export const ROUTE_TEMPLATE_HINTS: Partial<Record<string, TemplateArchetype>> = 
   "/netherlands/life/making-dutch-friends": "guideShell",
   "/netherlands/life/dutch-holidays-and-traditions": "guideShell",
   "/netherlands/life/dutch-birthday-traditions": "guideShell",
+  "/netherlands/life/dutch-etiquette": "guideShell",
+  "/netherlands/life/dutch-humour": "guideShell",
   "/netherlands/jobs/freelancing-netherlands": "guideShell",
   "/netherlands/jobs/contractor-vs-employee-netherlands": "guideShell",
   "/netherlands/business/zzp-netherlands": "guideShell",

@@ -1,6 +1,7 @@
 export const DUTCH_CULTURE_PATH = "/netherlands/life/dutch-culture/" as const;
 export const LIFE_HUB_PATH = "/netherlands/life/" as const;
 export const DUTCH_SOCIAL_NORMS_PATH = "/netherlands/life/dutch-social-norms/" as const;
+export const DUTCH_ETIQUETTE_PATH = "/netherlands/life/dutch-etiquette/" as const;
 export const DUTCH_HOLIDAYS_TRADITIONS_PATH = "/netherlands/life/dutch-holidays-and-traditions/" as const;
 export const DATING_NETHERLANDS_PATH = "/netherlands/life/dating-in-the-netherlands/" as const;
 export const COMMUNITY_BASICS_NETHERLANDS_PATH = "/netherlands/life/community-basics-netherlands/" as const;
@@ -779,6 +780,8 @@ export const dutchCulturePage = {
     "Bookmark this hub as your culture cluster starting point.",
   ],
   relatedGuides: [
+    { label: "Dutch Etiquette", href: DUTCH_ETIQUETTE_PATH, description: "Practical manners for greetings, dining, neighbours and gifts.", status: "live" },
+    { label: "Dutch Humour Explained", href: DUTCH_HUMOUR_PATH, description: "Dry wit, sarcasm, teasing and humour in context.", status: "live" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Greetings, birthdays, neighbours and everyday etiquette.", status: "live" },
     { label: "Dutch Workplace Culture", href: DUTCH_WORKPLACE_CULTURE_PATH, description: "Meetings, hierarchy, balance and feedback.", status: "live" },
     { label: "Dutch Directness at Work", href: DUTCH_DIRECTNESS_AT_WORK_PATH, description: "Professional communication deep dive.", status: "live" },
@@ -797,6 +800,7 @@ export const dutchCulturePage = {
     "Dutch Holidays → annual traditions",
   ],
   cultureHubCards: [
+    { label: "Dutch Etiquette", href: DUTCH_ETIQUETTE_PATH, description: "Practical manners for everyday situations.", status: "live" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Everyday etiquette and unwritten rules.", status: "live" },
     { label: "Dutch Workplace Culture", href: DUTCH_WORKPLACE_CULTURE_PATH, description: "How Dutch teams operate.", status: "live" },
     { label: "Dutch Directness at Work", href: DUTCH_DIRECTNESS_AT_WORK_PATH, description: "Feedback and meeting debate.", status: "live" },
@@ -809,7 +813,7 @@ export const dutchCulturePage = {
     { label: "Learning Dutch", href: LANGUAGE_LEARNING_PATH, description: "Language learning routes.", status: "live" },
     { label: "Family Life", href: FAMILY_LIFE_PATH, description: "Schools, parenting and weekends.", status: "comingSoon" },
     { label: "Festivals", href: FESTIVALS_PATH, description: "Events across the calendar.", status: "comingSoon" },
-    { label: "Dutch Humour", href: DUTCH_HUMOUR_PATH, description: "Irony, jokes and social context.", status: "comingSoon" },
+    { label: "Dutch Humour", href: DUTCH_HUMOUR_PATH, description: "Irony, jokes and social context.", status: "live" },
   ] satisfies LifeGuideLink[],
   cultureHubHeading: "Our Dutch Culture Guides",
   cultureHubIntro:

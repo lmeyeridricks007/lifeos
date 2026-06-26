@@ -495,6 +495,36 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/culture/dutch-etiquette",
+        destination: "/netherlands/life/dutch-etiquette/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-etiquette/",
+        destination: "/netherlands/life/dutch-etiquette/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/culture-etiquette",
+        destination: "/netherlands/life/dutch-etiquette/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/culture-etiquette/",
+        destination: "/netherlands/life/dutch-etiquette/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-humour",
+        destination: "/netherlands/life/dutch-humour/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-humour/",
+        destination: "/netherlands/life/dutch-humour/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/culture/dutch-culture",
         destination: "/netherlands/life/dutch-culture/",
         permanent: true,

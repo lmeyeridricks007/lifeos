@@ -501,6 +501,8 @@ const CULTURE_OWNED_LIFE_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/life/dutch-social-norms",
   "/netherlands/life/dutch-holidays-and-traditions",
   "/netherlands/life/dutch-birthday-traditions",
+  "/netherlands/life/dutch-etiquette",
+  "/netherlands/life/dutch-humour",
 ];
 
 /** Business App Router guides — highlight Move at top level (canonical URL under `/business/`). */
@@ -1525,11 +1527,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/living/payments/",
             "How paying in shops and online usually works: debit norms, apps, and first-week setup."
           ),
-          item(
-            "Dutch Culture & Etiquette",
-            "/netherlands/living/culture-etiquette/",
-            "Directness, invitations, public etiquette, and work or neighbor norms."
-          ),
           item("Getting around", "/netherlands/living/getting-around/", "OV, bikes, and local mobility."),
           item(
             "Essential apps",
@@ -1627,6 +1624,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/life/dutch-birthday-traditions/",
             "Circle parties, congratulations, gifts and birthday etiquette for expats."
           ),
+          item(
+            "Dutch Etiquette",
+            "/netherlands/life/dutch-etiquette/",
+            "Practical manners for greetings, dining, neighbours, gifts and everyday life."
+          ),
+          item(
+            "Dutch Humour Explained",
+            "/netherlands/life/dutch-humour/",
+            "Dry wit, sarcasm, teasing and how humour connects to Dutch directness."
+          ),
         ],
       },
       {
@@ -1683,7 +1690,9 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Social norms",
         items: [
-          item("Dutch social norms", "/netherlands/life/dutch-social-norms/", "Everyday social expectations, greetings and etiquette."),
+          item("Dutch social norms", "/netherlands/life/dutch-social-norms/", "Everyday social expectations, greetings and unwritten rules."),
+          item("Dutch Etiquette", "/netherlands/life/dutch-etiquette/", "Practical manners for greetings, dining, neighbours, gifts and everyday life."),
+          item("Dutch Humour Explained", "/netherlands/life/dutch-humour/", "Dry wit, sarcasm, teasing and how humour connects to Dutch directness."),
           item("Making Dutch Friends", "/netherlands/life/making-dutch-friends/", "Friendship circles, borrels, clubs and realistic timelines for expats."),
           item("Dating in the Netherlands", "/netherlands/life/dating-in-the-netherlands/", "Apps, culture, singles events and activity-first ways to meet people."),
           item("Dutch Holidays & Traditions", "/netherlands/life/dutch-holidays-and-traditions/", "King's Day, Sinterklaas, Christmas and public holidays."),

@@ -47,6 +47,8 @@ import { dutchSocialNormsPage } from "@/src/components/life/dutchSocialNormsPage
 import { datingNetherlandsPage } from "@/src/components/life/datingNetherlandsPageModel";
 import { dutchHolidaysTraditionsPage } from "@/src/components/life/dutchHolidaysTraditionsPageModel";
 import { dutchBirthdayTraditionsPage } from "@/src/components/life/dutchBirthdayTraditionsPageModel";
+import { dutchEtiquettePage } from "@/src/components/life/dutchEtiquettePageModel";
+import { dutchHumourPage } from "@/src/components/life/dutchHumourPageModel";
 import { dutchCulturePage } from "@/src/components/life/dutchCulturePageModel";
 import { freelancingNetherlandsPage } from "@/src/components/jobs/freelancingNetherlandsPageModel";
 import { contractorVsEmployeeNetherlandsPage } from "@/src/components/jobs/contractorVsEmployeeNetherlandsPageModel";
@@ -1140,6 +1142,48 @@ export function buildAllSearchDocuments(): SearchDocument[] {
       [...dutchBirthdayTraditionsPage.seo.keywords],
       dutchBirthdayTraditionsPage.snapshotCards.map((card) => `${card.title} ${card.body}`),
       dutchBirthdayTraditionsPage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:dutch-etiquette",
+    title: dutchEtiquettePage.hero.pageTitle,
+    href: dutchEtiquettePage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Life",
+    description: dutchEtiquettePage.seo.description,
+    image: dutchEtiquettePage.hero.image.src,
+    imageAlt: dutchEtiquettePage.hero.image.alt,
+    keywords: [...dutchEtiquettePage.seo.keywords],
+    searchText: joinSearchParts(
+      dutchEtiquettePage.hero.pageTitle,
+      dutchEtiquettePage.hero.subtitle,
+      dutchEtiquettePage.seo.description,
+      [...dutchEtiquettePage.seo.keywords],
+      dutchEtiquettePage.snapshotCards.map((card) => `${card.title} ${card.body}`),
+      dutchEtiquettePage.faq.map((item) => `${item.q} ${item.a}`)
+    ),
+  });
+
+  out.push({
+    id: "guide:dutch-humour",
+    title: dutchHumourPage.hero.pageTitle,
+    href: dutchHumourPage.path,
+    categoryLabel: "Guide",
+    pageType: "guide",
+    section: "Life",
+    description: dutchHumourPage.seo.description,
+    image: dutchHumourPage.hero.image.src,
+    imageAlt: dutchHumourPage.hero.image.alt,
+    keywords: [...dutchHumourPage.seo.keywords],
+    searchText: joinSearchParts(
+      dutchHumourPage.hero.pageTitle,
+      dutchHumourPage.hero.subtitle,
+      dutchHumourPage.seo.description,
+      [...dutchHumourPage.seo.keywords],
+      dutchHumourPage.snapshotCards.map((card) => `${card.title} ${card.body}`),
+      dutchHumourPage.faq.map((item) => `${item.q} ${item.a}`)
     ),
   });
 

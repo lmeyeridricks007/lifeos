@@ -1,4 +1,6 @@
 export const DUTCH_SOCIAL_NORMS_PATH = "/netherlands/life/dutch-social-norms/" as const;
+export const DUTCH_ETIQUETTE_PATH = "/netherlands/life/dutch-etiquette/" as const;
+export const DUTCH_HUMOUR_PATH = "/netherlands/life/dutch-humour/" as const;
 export const DUTCH_BIRTHDAY_TRADITIONS_PATH = "/netherlands/life/dutch-birthday-traditions/" as const;
 export const LIFE_HUB_PATH = "/netherlands/life/" as const;
 export const DUTCH_CULTURE_PATH = "/netherlands/life/dutch-culture/" as const;
@@ -89,8 +91,8 @@ export const dutchSocialNormsPage = {
     pageTitle: "Dutch Social Norms",
     subtitle:
       "Understand the everyday customs, etiquette and unwritten rules that help newcomers feel more comfortable living in the Netherlands.",
-    primaryCta: { label: "Learn Dutch Etiquette", href: "#intro" },
-    secondaryCta: { label: "Explore Dutch Culture", href: LIVING_CULTURE_ETIQUETTE_PATH },
+    primaryCta: { label: "Learn Dutch Etiquette", href: DUTCH_ETIQUETTE_PATH },
+    secondaryCta: { label: "Explore Dutch Culture", href: DUTCH_CULTURE_PATH },
     chips: ["Greetings", "Punctuality", "Birthdays", "Neighbours", "Everyday etiquette"],
     disclaimer:
       "Orientation only — social customs vary by person, region, age and household. Observe locally and ask politely rather than assuming one national style fits everyone.",
@@ -765,6 +767,8 @@ export const dutchSocialNormsPage = {
     "Learning Dutch → phrases for shops and neighbours",
   ],
   relatedGuides: [
+    { label: "Dutch Etiquette", href: DUTCH_ETIQUETTE_PATH, description: "Practical manners for greetings, dining, neighbours and gifts.", status: "live" },
+    { label: "Dutch Humour Explained", href: DUTCH_HUMOUR_PATH, description: "Dry wit, sarcasm, teasing and humour in everyday life.", status: "live" },
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Making friends, neighbours, clubs and integration routes.", status: "live" },
     { label: "Dating in the Netherlands", href: "/netherlands/life/dating-in-the-netherlands/", description: "Apps, singles events, sports clubs and meeting people.", status: "live" },
     { label: "Dutch Holidays & Traditions", href: "/netherlands/life/dutch-holidays-and-traditions/", description: "King's Day, Sinterklaas, Christmas and public holidays.", status: "live" },

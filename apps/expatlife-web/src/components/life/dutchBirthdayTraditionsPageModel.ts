@@ -725,6 +725,7 @@ export const dutchBirthdayTraditionsPage = {
   ],
   relatedGuides: [
     { label: "Dutch Culture", href: DUTCH_CULTURE_PATH, description: "High-level overview of Dutch society and culture cluster.", status: "live" },
+    { label: "Dutch Etiquette", href: "/netherlands/life/dutch-etiquette/", description: "Practical manners for greetings, dining and visiting.", status: "live" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Everyday etiquette, greetings and visiting customs.", status: "live" },
     { label: "Dutch Holidays & Traditions", href: DUTCH_HOLIDAYS_TRADITIONS_PATH, description: "Annual calendar, King's Day, Sinterklaas and Christmas.", status: "live" },
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Friends, neighbours and local integration.", status: "live" },

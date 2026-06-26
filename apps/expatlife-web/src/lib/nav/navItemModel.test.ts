@@ -1409,6 +1409,142 @@ describe("dutch birthday traditions nav active state", () => {
   });
 });
 
+describe("dutch etiquette nav active state", () => {
+  const ETIQUETTE_PATH = "/netherlands/life/dutch-etiquette/";
+
+  it("treats the shipped dutch etiquette guide route as live", () => {
+    expect(getRouteStatus(ETIQUETTE_PATH)).toBe("live");
+  });
+
+  it("highlights Culture for the canonical Life guide path", () => {
+    expect(getActiveNavKey(ETIQUETTE_PATH)).toBe("culture");
+  });
+
+  it("highlights Culture for the culture cluster href alias", () => {
+    expect(getActiveNavKey("/netherlands/culture/dutch-etiquette/")).toBe("culture");
+  });
+
+  it("highlights Culture for the legacy Living culture-etiquette alias", () => {
+    expect(getActiveNavKey("/netherlands/living/culture-etiquette/")).toBe("culture");
+  });
+
+  it("marks the Culture menu row active for the canonical Life href", () => {
+    const item = {
+      label: "Dutch Etiquette",
+      href: ETIQUETTE_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(ETIQUETTE_PATH, item)).toBe(true);
+  });
+
+  it("has Living > Culture menu row", () => {
+    const rows = menuRowsForHref(ETIQUETTE_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Culture");
+  });
+
+  it("has Culture > Social norms menu row", () => {
+    const rows = menuRowsForHref(ETIQUETTE_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
+  });
+
+  it("does not duplicate the guide under Living > Life in the Netherlands", () => {
+    const rows = menuRowsForHref(ETIQUETTE_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).not.toContain(
+      "living:Life in the Netherlands"
+    );
+  });
+
+  it("renders the Living Culture menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Culture")
+      ?.items.find((row) => row.href === ETIQUETTE_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ETIQUETTE_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Culture mega menu row as an active link", () => {
+    const item = MEGA_MENUS.culture.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === ETIQUETTE_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ETIQUETTE_PATH, item!)).toBe(true);
+  });
+});
+
+describe("dutch humour nav active state", () => {
+  const HUMOUR_PATH = "/netherlands/life/dutch-humour/";
+
+  it("treats the shipped dutch humour guide route as live", () => {
+    expect(getRouteStatus(HUMOUR_PATH)).toBe("live");
+  });
+
+  it("highlights Culture for the canonical Life guide path", () => {
+    expect(getActiveNavKey(HUMOUR_PATH)).toBe("culture");
+  });
+
+  it("highlights Culture for the culture cluster href alias", () => {
+    expect(getActiveNavKey("/netherlands/culture/dutch-humour/")).toBe("culture");
+  });
+
+  it("marks the Culture menu row active for the canonical Life href", () => {
+    const item = {
+      label: "Dutch Humour Explained",
+      href: HUMOUR_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(HUMOUR_PATH, item)).toBe(true);
+  });
+
+  it("has Living > Culture menu row", () => {
+    const rows = menuRowsForHref(HUMOUR_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Culture");
+  });
+
+  it("has Culture > Social norms menu row", () => {
+    const rows = menuRowsForHref(HUMOUR_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
+  });
+
+  it("does not duplicate the guide under Living > Life in the Netherlands", () => {
+    const rows = menuRowsForHref(HUMOUR_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).not.toContain(
+      "living:Life in the Netherlands"
+    );
+  });
+
+  it("appears in exactly two mega menu sections (Living Culture + Culture Social norms)", () => {
+    expect(menuRowsForHref(HUMOUR_PATH)).toHaveLength(2);
+  });
+
+  it("renders the Living Culture menu row as active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Culture")
+      ?.items.find((row) => row.href === HUMOUR_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HUMOUR_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Culture mega menu row as an active link", () => {
+    const item = MEGA_MENUS.culture.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === HUMOUR_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HUMOUR_PATH, item!)).toBe(true);
+  });
+});
+
 describe("dutch culture nav active state", () => {
   const CULTURE_PATH = "/netherlands/life/dutch-culture/";
 

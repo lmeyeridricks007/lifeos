@@ -866,6 +866,8 @@ export const makingDutchFriendsPage = {
   ],
   relatedGuides: [
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Neighbours, clubs, volunteering and integration.", status: "live" },
+    { label: "Dutch Etiquette", href: "/netherlands/life/dutch-etiquette/", description: "Practical manners for greetings, dining and neighbours.", status: "live" },
+    { label: "Dutch Humour Explained", href: "/netherlands/life/dutch-humour/", description: "Dry wit, sarcasm and teasing in everyday conversations.", status: "live" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Everyday etiquette, greetings and social expectations.", status: "live" },
     { label: "Dating in the Netherlands", href: DATING_NETHERLANDS_PATH, description: "Meeting people and activity-first social life.", status: "live" },
     { label: "Learning Dutch", href: LANGUAGE_LEARNING_PATH, description: "Language hub for courses and municipal programs.", status: "comingSoon" },
