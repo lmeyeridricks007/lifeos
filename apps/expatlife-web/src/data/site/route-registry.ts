@@ -380,6 +380,12 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/expat-salary-netherlands/",
   /** Live App Router guide — keep in EXTRA_LIVE_PATHS so Money mega menu Jobs & salaries links stay clickable (not “Soon”). */
   "/netherlands/jobs/employee-benefits-netherlands/",
+  /** Flagship education guide — international schools cornerstone for relocating families. */
+  "/netherlands/education/international-schools-netherlands/",
+  /** Flagship education guide — Dutch public and special schools for expat families. */
+  "/netherlands/education/dutch-schools-netherlands/",
+  /** Flagship education guide — Dutch public and special schools for expat families. */
+  "/netherlands/education/dutch-schools-netherlands/",
   /** Live App Router guide — pension pillar for expats (Jobs & salaries cluster). */
   "/netherlands/jobs/pension-netherlands-expats/",
   /** Live App Router guide — holiday allowance (vakantiegeld) for expats (Jobs & salaries cluster). */

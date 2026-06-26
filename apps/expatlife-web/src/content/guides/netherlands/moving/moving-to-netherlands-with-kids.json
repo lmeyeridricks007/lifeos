@@ -144,8 +144,8 @@
         "supportingText": "Use the Family Moving Checklist to organize school research, housing, documents, and early arrival setup in one place.",
         "primaryLabel": "Generate a Family Moving Checklist",
         "primaryHref": "/netherlands/moving/tools/moving-checklist/",
-        "secondaryLabel": "Plan Your First 90 Days",
-        "secondaryHref": "/netherlands/moving/tools/first-90-days/"
+        "secondaryLabel": "Compare international schools",
+        "secondaryHref": "/netherlands/education/international-schools-netherlands/"
       },
       "services": [
         {
@@ -163,6 +163,10 @@
           "indicativeCost": "Tuition varies by grade",
           "reason": "International school, education, families"
         }
+      ],
+      "links": [
+        { "label": "International Schools in the Netherlands", "href": "/netherlands/education/international-schools-netherlands/" },
+        { "label": "Best cities for families", "href": "/netherlands/cities/best-cities-for-families/" }
       ]
     },
     {
@@ -404,7 +408,9 @@
       { "label": "BSN Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
       { "label": "EU vs Non-EU Moving to the Netherlands", "href": "/netherlands/eu-vs-non-eu-moving-to-netherlands/" },
-      { "label": "Move to the Netherlands Without a Job", "href": "/netherlands/move-to-netherlands-without-job/" }
+      { "label": "Move to the Netherlands Without a Job", "href": "/netherlands/move-to-netherlands-without-job/" },
+      { "label": "International Schools in the Netherlands", "href": "/netherlands/education/international-schools-netherlands/" },
+      { "label": "Dutch Schools in the Netherlands", "href": "/netherlands/education/dutch-schools-netherlands/" }
     ]
   },
 

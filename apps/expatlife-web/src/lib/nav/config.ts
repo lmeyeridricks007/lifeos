@@ -763,6 +763,8 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
 
   if (path.startsWith("/netherlands/living")) return "living";
 
+  if (path.startsWith("/netherlands/education")) return "living";
+
   if (path.startsWith("/netherlands/life")) return "living";
 
   const seg1 = path.split("/").filter(Boolean)[1];
@@ -1495,6 +1497,27 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/housing/buy-vs-rent-netherlands/",
             "Decision guide for expats comparing rental flexibility with ownership stability."
           ),
+        ],
+      },
+      {
+        title: "Education",
+        items: [
+          item(
+            "International schools",
+            "/netherlands/education/international-schools-netherlands/",
+            "Flagship guide to international education — curricula, directory, admissions and fees."
+          ),
+          item(
+            "Dutch schools",
+            "/netherlands/education/dutch-schools-netherlands/",
+            "Basisschool, secondary pathways, enrolment, language support and comparison with international schools."
+          ),
+          soon("Education hub"),
+          soon("Dutch education system"),
+          soon("Daycare Netherlands"),
+          soon("IB schools Netherlands"),
+          soon("British schools Netherlands"),
+          soon("American schools Netherlands"),
         ],
       },
       {
