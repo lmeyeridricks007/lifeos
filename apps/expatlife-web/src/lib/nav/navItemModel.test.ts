@@ -2592,3 +2592,81 @@ describe("financial advisors service nav active state", () => {
     expect(rows[0].sectionTitle).toBe("Banking & financial services");
   });
 });
+
+describe("daycare Netherlands nav active state", () => {
+  const DAYCARE_PATH = "/netherlands/education/daycare-netherlands/";
+
+  it("treats the daycare guide route as live", () => {
+    expect(getRouteStatus(DAYCARE_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the daycare guide path", () => {
+    expect(getActiveNavKey(DAYCARE_PATH)).toBe("living");
+  });
+
+  it("renders the Living Education menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Education")
+      ?.items.find((row) => row.label === "Daycare Netherlands");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(DAYCARE_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DAYCARE_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Education", () => {
+    const rows = menuRowsForHref(DAYCARE_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Education");
+  });
+});
+
+describe("child benefits Netherlands nav active state", () => {
+  const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands/";
+  const LEGACY_CHILD_BENEFIT_PATH = "/netherlands/family/child-benefit-netherlands/";
+
+  it("treats the child benefits guide route as live", () => {
+    expect(getRouteStatus(CHILD_BENEFITS_PATH)).toBe("live");
+  });
+
+  it("highlights Culture for the child benefits guide path", () => {
+    expect(getActiveNavKey(CHILD_BENEFITS_PATH)).toBe("culture");
+  });
+
+  it("renders the Culture Benefits menu row as live and active", () => {
+    const item = MEGA_MENUS.culture.sections
+      .find((section) => section.title === "Benefits")
+      ?.items.find((row) => row.label === "Child Benefits");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(CHILD_BENEFITS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CHILD_BENEFITS_PATH, item!)).toBe(true);
+  });
+
+  it("marks legacy child-benefit href active via alias", () => {
+    const item = {
+      label: "Child Benefits",
+      href: CHILD_BENEFITS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(LEGACY_CHILD_BENEFIT_PATH, item)).toBe(true);
+  });
+
+  it("highlights Culture for legacy pathname before redirect", () => {
+    expect(getActiveNavKey(LEGACY_CHILD_BENEFIT_PATH)).toBe("culture");
+  });
+
+  it("has exactly one menu row, in Culture > Benefits", () => {
+    const rows = menuRowsForHref(CHILD_BENEFITS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("culture");
+    expect(rows[0].sectionTitle).toBe("Benefits");
+  });
+});

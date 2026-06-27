@@ -1514,10 +1514,19 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           ),
           soon("Education hub"),
           soon("Dutch education system"),
-          soon("Daycare Netherlands"),
           soon("IB schools Netherlands"),
           soon("British schools Netherlands"),
           soon("American schools Netherlands"),
+        ],
+      },
+      {
+        title: "Childcare",
+        items: [
+          item(
+            "Daycare in the Netherlands",
+            "/netherlands/education/daycare-netherlands/",
+            "Flagship childcare guide — kinderopvang types, directory, costs, allowance and waiting lists."
+          ),
         ],
       },
       {
@@ -1734,6 +1743,23 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Sinterklaas", "/netherlands/culture/sinterklaas/", "Seasonal tradition context."),
           item("National holidays", "/netherlands/culture/national-holidays/", "Public holidays and closures."),
           item("Dutch social calendar", "/netherlands/culture/dutch-social-calendar/", "Seasonal events and themes."),
+        ],
+      },
+      {
+        title: "Family",
+        items: [
+          item("Family tools", "/netherlands/family/tools/", "Childcare estimator, partner checks and family planning tools."),
+          item("Moving with kids", "/netherlands/moving-to-netherlands-with-kids/", "Registration, schools, childcare and healthcare for relocating families."),
+        ],
+      },
+      {
+        title: "Benefits",
+        items: [
+          item(
+            "Child Benefits",
+            "/netherlands/family/child-benefits-netherlands/",
+            "Kinderbijslag, kindgebonden budget and childcare allowance — eligibility and application orientation."
+          ),
         ],
       },
       {

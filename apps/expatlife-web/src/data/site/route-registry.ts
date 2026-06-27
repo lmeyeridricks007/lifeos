@@ -384,8 +384,12 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/education/international-schools-netherlands/",
   /** Flagship education guide — Dutch public and special schools for expat families. */
   "/netherlands/education/dutch-schools-netherlands/",
-  /** Flagship education guide — Dutch public and special schools for expat families. */
-  "/netherlands/education/dutch-schools-netherlands/",
+  /** Flagship education guide — childcare and daycare for expat families. */
+  "/netherlands/education/daycare-netherlands/",
+  /** Flagship family guide — Kinderbijslag, Kindgebonden Budget and child benefits for expat families. */
+  "/netherlands/family/child-benefits-netherlands/",
+  /** Legacy family URL; 301 → child benefits guide — keep live so placeholder links stay clickable. */
+  "/netherlands/family/child-benefit-netherlands/",
   /** Live App Router guide — pension pillar for expats (Jobs & salaries cluster). */
   "/netherlands/jobs/pension-netherlands-expats/",
   /** Live App Router guide — holiday allowance (vakantiegeld) for expats (Jobs & salaries cluster). */

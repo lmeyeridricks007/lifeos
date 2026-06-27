@@ -668,7 +668,7 @@ export const dutchSchoolsNetherlandsPage = {
   educationHubCards: [
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_NETHERLANDS_PATH, status: "live", description: "This guide — public and special schools for expat families." },
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "IB, British, American and bilingual private options." },
-    { label: "Daycare", href: "/netherlands/education/daycare-netherlands/", status: "comingSoon", description: "Early childhood care before school age." },
+    { label: "Daycare", href: "/netherlands/education/daycare-netherlands/", status: "live", description: "Early childhood care before school age." },
     { label: "Universities", href: "/netherlands/education/universities-netherlands/", status: "comingSoon", description: "Higher education for international students." },
     { label: "Learning Dutch", href: LEARNING_DUTCH_PATH, status: "live", description: "Practical Dutch for daily life and integration." },
     { label: "Moving with Family", href: MOVING_WITH_FAMILY_PATH, status: "live", description: "Broader family relocation planning." },

@@ -376,7 +376,7 @@ export const childcareAllowanceNetherlandsPage = {
   futureBenefitLinks: [
     { label: "Healthcare Allowance Netherlands", href: HEALTHCARE_ALLOWANCE_NETHERLANDS_PATH, status: "live", description: "Zorgtoeslag guide — separate rules from kinderopvangtoeslag." },
     { label: "Rent Allowance Netherlands", href: RENT_ALLOWANCE_NETHERLANDS_PATH, status: "live", description: "Huurtoeslag guide — housing support with different tests." },
-    { label: "Child Benefit Netherlands", href: "/netherlands/family/child-benefit-netherlands/", status: "comingSoon", description: "Kinderbijslag orientation — SVB child benefit separate from childcare toeslag." },
+    { label: "Child Benefits Netherlands", href: "/netherlands/family/child-benefits-netherlands/", status: "live", description: "Kinderbijslag orientation — SVB child benefit separate from childcare toeslag." },
   ] satisfies ChildcareAllowanceNetherlandsLink[],
   questionsSectionTips: [
     "Highly skilled migrant families follow the same kinderopvangtoeslag framework — confirm provider registration and work hours.",
@@ -453,7 +453,7 @@ export const childcareAllowanceNetherlandsPage = {
   sourcesDisclaimer:
     "Childcare allowance eligibility rules, reimbursement rates, income tests and hourly limits can change regularly. Always verify current requirements through official government resources before applying or updating records.",
   exploreNextCards: [
-    { label: "Child Benefit Netherlands", href: "/netherlands/family/child-benefit-netherlands/", status: "comingSoon", description: "Kinderbijslag guide — SVB child benefit separate from kinderopvangtoeslag." },
+    { label: "Child Benefits Netherlands", href: "/netherlands/family/child-benefits-netherlands/", status: "live", description: "Kinderbijslag guide — SVB child benefit separate from kinderopvangtoeslag." },
     { label: "International Schools", href: "/netherlands/education/international-schools-netherlands/", status: "live", description: "Compare international schools, curricula, admissions and fees for expat families." },
     { label: "Schools in the Netherlands", href: "/netherlands/education/schools-netherlands/", status: "comingSoon", description: "School system orientation for expat families." },
     { label: "Healthcare Allowance", href: HEALTHCARE_ALLOWANCE_NETHERLANDS_PATH, status: "live", description: "Zorgtoeslag guide — separate rules from kinderopvangtoeslag." },

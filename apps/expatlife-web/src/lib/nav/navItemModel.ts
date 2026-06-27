@@ -74,6 +74,7 @@ const NAV_ACTIVE_HREF_ALIASES: Record<string, string> = {
   "/netherlands/living/rental-contracts-and-deposits": "/netherlands/housing/rental-contracts-and-deposits-netherlands",
   "/netherlands/utilities-in-netherlands": "/netherlands/utilities/utilities-netherlands",
   "/netherlands/utilities": "/netherlands/utilities/utilities-netherlands",
+  "/netherlands/family/child-benefit-netherlands": "/netherlands/family/child-benefits-netherlands",
 };
 
 /** Normalize pathname/href for active-state checks (legacy 301 sources → canonical guides). */

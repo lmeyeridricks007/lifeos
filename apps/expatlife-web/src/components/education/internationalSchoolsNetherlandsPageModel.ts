@@ -773,7 +773,7 @@ export const internationalSchoolsNetherlandsPage = {
   educationHubCards: [
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_NETHERLANDS_PATH, status: "live", description: "This guide — curricula, directory, admissions and fees." },
     { label: "Dutch Schools", href: "/netherlands/education/dutch-schools-netherlands/", status: "live", description: "Public and special Dutch-medium schools — basisschool, enrolment and language support." },
-    { label: "Daycare", href: "/netherlands/education/daycare-netherlands/", status: "comingSoon", description: "Early childhood care before school age." },
+    { label: "Daycare", href: "/netherlands/education/daycare-netherlands/", status: "live", description: "Early childhood care before school age." },
     { label: "Universities", href: "/netherlands/education/universities-netherlands/", status: "comingSoon", description: "Higher education options for international students." },
     { label: "Student Life", href: "/netherlands/education/universities-netherlands/", status: "comingSoon", description: "Student housing, visas and campus life." },
     { label: "Learning Dutch", href: "/netherlands/living/language/", status: "live", description: "Practical Dutch for daily life and integration." },

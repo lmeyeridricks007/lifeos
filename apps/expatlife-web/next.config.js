@@ -625,6 +625,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: "/netherlands/family/child-benefit-netherlands",
+        destination: "/netherlands/family/child-benefits-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/family/child-benefit-netherlands/",
+        destination: "/netherlands/family/child-benefits-netherlands/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/buying-house-netherlands",
         destination: "/netherlands/housing/buying-a-house-netherlands/",
         permanent: true,
