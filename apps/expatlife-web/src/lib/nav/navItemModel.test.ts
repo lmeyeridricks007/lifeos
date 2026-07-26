@@ -2703,6 +2703,38 @@ describe("after-school care Netherlands nav active state", () => {
   });
 });
 
+describe("before-school care Netherlands nav active state", () => {
+  const VSO_PATH = "/netherlands/education/before-school-care-netherlands/";
+
+  it("treats the VSO guide route as live", () => {
+    expect(getRouteStatus(VSO_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the VSO guide path", () => {
+    expect(getActiveNavKey(VSO_PATH)).toBe("living");
+  });
+
+  it("renders the Living Childcare menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Childcare")
+      ?.items.find((row) => row.label === "Before-School Care (VSO)");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(VSO_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(VSO_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Childcare", () => {
+    const rows = menuRowsForHref(VSO_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Childcare");
+  });
+});
+
 describe("parenting Netherlands nav active state", () => {
   const PARENTING_PATH = "/netherlands/family/parenting-netherlands/";
 

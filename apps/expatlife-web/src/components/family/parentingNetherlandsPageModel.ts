@@ -2,6 +2,7 @@ export const PARENTING_NETHERLANDS_PATH = "/netherlands/family/parenting-netherl
 export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands/" as const;
 export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands/" as const;
 export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands/" as const;
+export const BEFORE_SCHOOL_CARE_PATH = "/netherlands/education/before-school-care-netherlands/" as const;
 export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands/" as const;
 export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands/" as const;
 export const MOVING_WITH_CHILDREN_PATH = "/netherlands/family/moving-with-children-netherlands/" as const;
@@ -349,6 +350,7 @@ export const parentingNetherlandsPage = {
     links: [
       { label: "Daycare guide", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Full guide to Dutch childcare options, costs and waiting lists." },
       { label: "After-School Care (BSO)", href: AFTER_SCHOOL_CARE_PATH, status: "live", description: "Buitenschoolse opvang for primary school children — hours, costs and providers." },
+      { label: "Before-School Care (VSO)", href: BEFORE_SCHOOL_CARE_PATH, status: "live", description: "Voorschoolse opvang — morning care before school for working parents." },
       { label: "Child benefits", href: CHILD_BENEFITS_PATH, status: "live", description: "Kinderbijslag and childcare allowance orientation." },
       { label: "Childcare cost estimator", href: "/netherlands/family/tools/childcare-cost-estimator/", status: "live", description: "Model net childcare costs with allowance." },
     ] satisfies ParentingLink[],
@@ -620,6 +622,7 @@ export const parentingNetherlandsPage = {
     { label: "Child Benefits", href: CHILD_BENEFITS_PATH, status: "live", description: "Kinderbijslag and family financial support." },
     { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Childcare options, costs and waiting lists." },
     { label: "After-School Care (BSO)", href: AFTER_SCHOOL_CARE_PATH, status: "live", description: "After-school and holiday care for primary school children." },
+    { label: "Before-School Care (VSO)", href: BEFORE_SCHOOL_CARE_PATH, status: "live", description: "Morning voorschoolse opvang before basisschool for working parents." },
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Basisschool, secondary tracks and parent involvement." },
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "International and bilingual education options." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "GP, JGZ, vaccinations and dental care." },

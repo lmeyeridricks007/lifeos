@@ -1,4 +1,5 @@
 export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands/" as const;
+export const BEFORE_SCHOOL_CARE_PATH = "/netherlands/education/before-school-care-netherlands/" as const;
 export const EDUCATION_HUB_PATH = "/netherlands/education/" as const;
 export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands/" as const;
 export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/" as const;
@@ -316,10 +317,10 @@ export const afterSchoolCareNetherlandsPage = {
   careTypes: [
     {
       title: "Before-school care",
-      dutchName: "VSO (vroegschoolse opvang)",
+      dutchName: "VSO (voorschoolse opvang)",
       hours: "~07:00–08:30 (varies)",
       users: "Parents with early commutes or shift starts before school gates open.",
-      activities: "Quiet play, breakfast where offered, walk to school with staff.",
+      activities: "Quiet play, breakfast where offered, walk to school with staff — full VSO guide available.",
     },
     {
       title: "After-school care",
@@ -351,7 +352,7 @@ export const afterSchoolCareNetherlandsPage = {
     },
   ] satisfies BsoTypeCard[],
   careTypeSelectionTips: [
-    "Early commute before 08:30 → shortlist VSO (vroegschoolse opvang) locations first.",
+    "Early commute before 08:30 → shortlist VSO (voorschoolse opvang) locations first — see our Before-School Care (VSO) guide.",
     "Standard office hours → core BSO afternoons (3–5 days) are the usual contract.",
     "Six-week summer + school breaks → plan vakantieopvang in spring, not in July.",
     "Teacher training days → ask about studiedagopvang or per-day holiday slots.",
@@ -806,12 +807,14 @@ export const afterSchoolCareNetherlandsPage = {
     },
   ],
   relatedGuidesTips: [
+    "Need mornings before school → Before-School Care (VSO) guide.",
     "Younger sibling still in kinderdagverblijf → Daycare guide (separate waiting lists).",
     "School hours unclear → Dutch Schools or International Schools guide first.",
     "Net cost modelling → Childcare Allowance guide + cost estimator tool.",
     "Broader family context → Parenting guide and Moving with Children checklist.",
   ],
   relatedGuides: [
+    { label: "Before-School Care (VSO)", href: BEFORE_SCHOOL_CARE_PATH, status: "live", description: "Morning voorschoolse opvang — often combined with BSO for wraparound cover." },
     { label: "Daycare in the Netherlands", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Kinderopvang for younger children — separate from BSO planning." },
     { label: "Childcare Allowance", href: CHILDCARE_ALLOWANCE_PATH, status: "live", description: "Kinderopvangtoeslag rules, eligibility and application for expat families." },
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Basisschool enrolment — school choice affects BSO pickup routes." },
@@ -822,12 +825,13 @@ export const afterSchoolCareNetherlandsPage = {
   ] satisfies BsoLink[],
   educationHubTips: [
     "BSO (this page): after-school and holiday care for primary school age.",
+    "VSO: before-school morning care — see the dedicated Before-School Care guide.",
     "Daycare: 0–4 kinderopvang — plan both if you have children in different age bands.",
     "School guides: basisschool vs international choice shapes pickup routes and BSO options.",
-    "Benefits: kinderopvangtoeslag and Kinderbijslag reduce family childcare costs.",
   ],
   educationHubCards: [
     { label: "After-School Care (BSO)", href: AFTER_SCHOOL_CARE_PATH, status: "live", description: "This guide — BSO hours, costs, allowance and provider orientation." },
+    { label: "Before-School Care (VSO)", href: BEFORE_SCHOOL_CARE_PATH, status: "live", description: "Morning voorschoolse opvang for early work starts." },
     { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Childcare for babies and toddlers before basisschool age." },
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Basisschool pathways — school hours shape BSO needs." },
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "International primary education and BSO pickup logistics." },
@@ -835,6 +839,7 @@ export const afterSchoolCareNetherlandsPage = {
     { label: "Child Benefits", href: CHILD_BENEFITS_PATH, status: "live", description: "Kinderbijslag and family benefits alongside childcare costs." },
   ] satisfies BsoLink[],
   exploreNextCards: [
+    { label: "Before-School Care (VSO)", href: BEFORE_SCHOOL_CARE_PATH, status: "live", description: "Morning care when work starts before school gates open." },
     { label: "Daycare in the Netherlands", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Kinderopvang for younger children — separate from BSO registration." },
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Basisschool enrolment when planning BSO pickup routes." },
     { label: "Childcare Allowance", href: CHILDCARE_ALLOWANCE_PATH, status: "live", description: "Apply for kinderopvangtoeslag and understand work rules." },

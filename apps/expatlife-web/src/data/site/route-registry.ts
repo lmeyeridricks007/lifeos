@@ -391,6 +391,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/education/daycare-netherlands/",
   /** Flagship education guide — after-school care (BSO) for expat families. */
   "/netherlands/education/after-school-care-netherlands/",
+  /** Flagship education guide — before-school care (VSO) for expat families. */
+  "/netherlands/education/before-school-care-netherlands/",
   /** Flagship family guide — Kinderbijslag, Kindgebonden Budget and child benefits for expat families. */
   "/netherlands/family/child-benefits-netherlands/",
   /** Flagship family guide — Dutch parenting culture, childcare, schools and family life for expat families. */

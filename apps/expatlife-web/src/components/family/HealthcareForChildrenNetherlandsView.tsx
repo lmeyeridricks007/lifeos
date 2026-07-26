@@ -1396,7 +1396,7 @@ export function HealthcareForChildrenNetherlandsView() {
               intro={
                 <SectionIntro eyebrow="Family hub" title="Explore the family cluster" fullWidth>
                   <p>
-                    This page is the children's healthcare cornerstone. Use the family cluster to sequence childcare, schools,
+                    This page is the children&apos;s healthcare cornerstone. Use the family cluster to sequence childcare, schools,
                     benefits and relocation around it.
                   </p>
                 </SectionIntro>

@@ -1543,6 +1543,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/education/after-school-care-netherlands/",
             "Buitenschoolse opvang guide — hours, costs, allowance, holiday care and provider orientation."
           ),
+          item(
+            "Before-School Care (VSO)",
+            "/netherlands/education/before-school-care-netherlands/",
+            "Voorschoolse opvang guide — morning care, school drop-off, costs, allowance and provider orientation."
+          ),
         ],
       },
       {
