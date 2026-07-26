@@ -2735,6 +2735,38 @@ describe("parenting Netherlands nav active state", () => {
   });
 });
 
+describe("healthcare for children Netherlands nav active state", () => {
+  const HEALTHCARE_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/";
+
+  it("treats the healthcare for children guide route as live", () => {
+    expect(getRouteStatus(HEALTHCARE_CHILDREN_PATH)).toBe("live");
+  });
+
+  it("highlights Culture for the healthcare for children guide path", () => {
+    expect(getActiveNavKey(HEALTHCARE_CHILDREN_PATH)).toBe("culture");
+  });
+
+  it("renders the Culture Family menu row as live and active", () => {
+    const item = MEGA_MENUS.culture.sections
+      .find((section) => section.title === "Family")
+      ?.items.find((row) => row.label === "Healthcare for Children");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(HEALTHCARE_CHILDREN_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HEALTHCARE_CHILDREN_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Culture > Family", () => {
+    const rows = menuRowsForHref(HEALTHCARE_CHILDREN_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("culture");
+    expect(rows[0].sectionTitle).toBe("Family");
+  });
+});
+
 describe("rental scams Netherlands nav active state", () => {
   const RENTAL_SCAMS_PATH = "/netherlands/housing/rental-scams-netherlands/";
 

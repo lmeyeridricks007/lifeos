@@ -9,6 +9,7 @@ export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-ki
 export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family/" as const;
 export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
 export const HEALTHCARE_ALLOWANCE_PATH = "/netherlands/taxes/healthcare-allowance-netherlands/" as const;
+export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/" as const;
 export const RENT_ALLOWANCE_PATH = "/netherlands/taxes/rent-allowance-netherlands/" as const;
 export const DIGID_PATH = "/netherlands/practical-life/digid-netherlands/" as const;
 export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration/" as const;
@@ -582,6 +583,7 @@ export const childBenefitsNetherlandsPage = {
   relatedGuides: [
     { label: "Childcare Allowance", href: CHILDCARE_ALLOWANCE_PATH, status: "live", description: "Kinderopvangtoeslag rules, work hours and application for expat parents." },
     { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Registered childcare, LRK and waiting lists for young children." },
+    { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "GPs, JGZ, vaccinations, specialists and emergencies for children." },
     { label: "Moving with Children", href: MOVING_WITH_KIDS_PATH, status: "live", description: "Family relocation checklist including schools and registration." },
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Basisschool enrolment from age 4 — parallel to benefit planning." },
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "International education costs — separate from statutory child benefits." },
@@ -590,6 +592,7 @@ export const childBenefitsNetherlandsPage = {
   ] satisfies ChildBenefitsLink[],
   familyHubCards: [
     { label: "Parenting", href: "/netherlands/family/parenting-netherlands/", status: "live", description: "Raising children, Dutch parenting culture and everyday family life." },
+    { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "GP, JGZ, vaccinations and paediatric care pathways." },
     { label: "Child benefits", href: CHILD_BENEFITS_NETHERLANDS_PATH, status: "live", description: "This guide — Kinderbijslag, Kindgebonden Budget and family allowances." },
     { label: "Childcare Allowance", href: CHILDCARE_ALLOWANCE_PATH, status: "live", description: "Kinderopvangtoeslag for registered childcare." },
     { label: "Childcare cost estimator", href: CHILDCARE_COST_ESTIMATOR_PATH, status: "live", description: "Model net childcare costs with allowance orientation." },

@@ -1784,6 +1784,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/family/parenting-netherlands/",
             "Dutch parenting culture, childcare, schools, healthcare and everyday family life for expat families."
           ),
+          item(
+            "Healthcare for Children",
+            "/netherlands/family/healthcare-for-children-netherlands/",
+            "GPs, Youth Healthcare (JGZ), vaccinations, specialists, dental care and emergencies for children."
+          ),
           item("Family tools", "/netherlands/family/tools/", "Childcare estimator, partner checks and family planning tools."),
           item("Moving with kids", "/netherlands/moving-to-netherlands-with-kids/", "Registration, schools, childcare and healthcare for relocating families."),
         ],

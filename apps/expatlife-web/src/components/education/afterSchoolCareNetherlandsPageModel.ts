@@ -817,6 +817,7 @@ export const afterSchoolCareNetherlandsPage = {
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Basisschool enrolment — school choice affects BSO pickup routes." },
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "International primary options and BSO logistics for expat families." },
     { label: "Parenting in the Netherlands", href: PARENTING_NETHERLANDS_PATH, status: "live", description: "Dutch family life, childcare culture and community integration." },
+    { label: "Healthcare for Children", href: "/netherlands/family/healthcare-for-children-netherlands/", status: "live", description: "GPs, JGZ, vaccinations and paediatric care for school-age families." },
     { label: "Moving with Children", href: MOVING_WITH_KIDS_PATH, status: "live", description: "Relocation planning including schools, registration and settling in." },
   ] satisfies BsoLink[],
   educationHubTips: [

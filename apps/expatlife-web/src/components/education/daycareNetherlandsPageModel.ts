@@ -11,6 +11,7 @@ export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-
 export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands/" as const;
 export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
 export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" as const;
+export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/" as const;
 export const FAMILY_LIFE_PATH = "/netherlands/culture/family-and-school-culture/" as const;
 
 export type DaycareLink = {
@@ -635,7 +636,7 @@ export const daycareNetherlandsPage = {
     { label: "Moving with Children", href: MOVING_WITH_KIDS_PATH, status: "live", description: "Family relocation planning including schools, registration and settling in." },
     { label: "Family Life", href: FAMILY_LIFE_PATH, status: "live", description: "Dutch family norms, school culture and community integration." },
     { label: "Housing for Families", href: HOUSING_HUB_PATH, status: "live", description: "Find family-friendly areas near childcare and school routes." },
-    { label: "Healthcare for Children", href: HEALTHCARE_BASICS_PATH, status: "live", description: "Insurance, huisarts and paediatric care after your move." },
+    { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "GPs, JGZ, vaccinations and paediatric care for expat families." },
   ] satisfies DaycareLink[],
   educationHubCards: [
     { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "This guide — childcare types, directory, costs and waiting lists." },
@@ -653,7 +654,7 @@ export const daycareNetherlandsPage = {
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "Plan primary education alongside early years care." },
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Basisschool enrolment when your child turns 4." },
     { label: "Moving with Children", href: MOVING_WITH_KIDS_PATH, status: "live", description: "End-to-end family relocation planning." },
-    { label: "Healthcare for Children", href: HEALTHCARE_BASICS_PATH, status: "live", description: "Insurance and paediatric care setup." },
+    { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "GP, JGZ, vaccinations and paediatric care setup." },
   ] satisfies DaycareLink[],
   officialSources: [
     { label: "Government.nl — Childcare", href: "https://www.government.nl/topics/childcare", description: "Official Dutch government overview of childcare policy and parents' rights." },

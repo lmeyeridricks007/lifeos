@@ -395,6 +395,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/family/child-benefits-netherlands/",
   /** Flagship family guide — Dutch parenting culture, childcare, schools and family life for expat families. */
   "/netherlands/family/parenting-netherlands/",
+  /** Flagship family guide — children's healthcare from birth through adolescence for expat families. */
+  "/netherlands/family/healthcare-for-children-netherlands/",
   /** Legacy family URL; 301 → child benefits guide — keep live so placeholder links stay clickable. */
   "/netherlands/family/child-benefit-netherlands/",
   /** Live App Router guide — pension pillar for expats (Jobs & salaries cluster). */

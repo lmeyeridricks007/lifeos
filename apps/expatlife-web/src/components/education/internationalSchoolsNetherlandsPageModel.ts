@@ -764,7 +764,7 @@ export const internationalSchoolsNetherlandsPage = {
     { label: "Dutch Schools", href: "/netherlands/education/dutch-schools-netherlands/", status: "live", description: "Basisschool, secondary pathways, enrolment and language support for expat families." },
     { label: "Dutch Education System", href: "/netherlands/education/dutch-education-system/", status: "comingSoon", description: "Broader system overview — complements the Dutch schools guide." },
     { label: "Housing for Families", href: HOUSING_HUB_PATH, status: "live", description: "Find family-friendly areas near schools and commute routes." },
-    { label: "Healthcare for Children", href: "/netherlands/living/healthcare-basics/", status: "live", description: "Insurance, huisarts and paediatric care after your move." },
+    { label: "Healthcare for Children", href: "/netherlands/family/healthcare-for-children-netherlands/", status: "live", description: "GPs, JGZ, vaccinations and paediatric care after your move." },
     { label: "Childcare Allowance", href: CHILDCARE_ALLOWANCE_PATH, status: "live", description: "Kinderopvangtoeslag for registered childcare — separate from school fees." },
     { label: "Best Cities for Families", href: BEST_CITIES_FOR_FAMILIES_PATH, status: "live", description: "Compare family-oriented Dutch cities including school access." },
     { label: "Family Life", href: "/netherlands/culture/family-and-school-culture/", status: "live", description: "Dutch family norms, school culture and community integration." },
