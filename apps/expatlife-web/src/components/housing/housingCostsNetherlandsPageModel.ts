@@ -4,6 +4,7 @@ import {
   HOUSING_HUB_PATH,
   MORTGAGES_NETHERLANDS_EXPATS_PATH,
   RENTAL_CONTRACTS_AND_DEPOSITS_NETHERLANDS_PATH,
+  RENTAL_SCAMS_NETHERLANDS_PATH,
   RENTING_NETHERLANDS_PATH,
 } from "./housingNetherlandsPageModel";
 import { UTILITIES_NETHERLANDS_PATH } from "../utilities/utilitiesNetherlandsPageModel";
@@ -857,6 +858,7 @@ export const housingCostsNetherlandsPage = {
     { label: "Housing in the Netherlands", href: HOUSING_HUB_PATH, description: "Central hub for renting, buying and city guides.", status: "live" },
     { label: "Renting in the Netherlands", href: RENTING_NETHERLANDS_PATH, description: "Contracts, deposits and tenant orientation.", status: "live" },
     { label: "Rental contracts and deposits", href: RENTAL_CONTRACTS_AND_DEPOSITS_NETHERLANDS_PATH, description: "Leases, deposits, inventory lists and move-in inspections.", status: "live" },
+    { label: "Rental Scams", href: RENTAL_SCAMS_NETHERLANDS_PATH, description: "Warning signs, landlord verification and safe payments.", status: "live" },
     { label: "Buying a house", href: BUYING_HOUSE_NETHERLANDS_PATH, description: "Purchase process and kosten koper for expats.", status: "live" },
     { label: "Mortgages for expats", href: MORTGAGES_NETHERLANDS_EXPATS_PATH, description: "Borrowing capacity and application steps.", status: "live" },
     { label: "Buy vs rent", href: BUY_VS_RENT_NETHERLANDS_PATH, description: "Decision guide for stay horizon and flexibility.", status: "live" },
@@ -865,6 +867,7 @@ export const housingCostsNetherlandsPage = {
   ] satisfies HousingCostsLink[],
   exploreNextCards: [
     { label: "Renting guide", href: RENTING_NETHERLANDS_PATH, description: "Contracts, deposits and search strategy.", status: "live" },
+    { label: "Rental Scams", href: RENTAL_SCAMS_NETHERLANDS_PATH, description: "Verify listings before any deposit transfer.", status: "live" },
     { label: "Buying guide", href: BUYING_HOUSE_NETHERLANDS_PATH, description: "Kosten koper and Dutch purchase process.", status: "live" },
     { label: "Mortgage guide", href: MORTGAGES_NETHERLANDS_EXPATS_PATH, description: "Expat mortgage eligibility and capacity.", status: "live" },
     { label: "Utilities guide", href: UTILITIES_NETHERLANDS_PATH, description: "Monthly household services setup.", status: "live" },

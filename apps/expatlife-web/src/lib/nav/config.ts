@@ -526,6 +526,7 @@ const MOVE_TAX_COMPENSATION_GUIDE_PREFIXES: readonly string[] = [
 const MOVE_HOUSING_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/housing/housing-costs-netherlands",
   "/netherlands/housing/rental-contracts-and-deposits-netherlands",
+  "/netherlands/housing/rental-scams-netherlands",
   /** Legacy URL (301 → canonical guide) — keep Move tab active before redirect. */
   "/netherlands/living/housing-costs",
   /** Legacy URL (301 → canonical guide) — keep Move tab active before redirect. */
@@ -916,6 +917,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Renting in the Netherlands",
             "/netherlands/housing/renting-in-the-netherlands/",
             "Contracts, deposits, viewings and tenant orientation for newcomers."
+          ),
+          item(
+            "Rental Scams",
+            "/netherlands/housing/rental-scams-netherlands/",
+            "Warning signs, landlord verification, safe payments and reporting housing fraud."
           ),
           item(
             "Buying a house in the Netherlands",
@@ -1471,6 +1477,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Municipality address registration, BSN and document steps for newcomers."
           ),
           item("Rental contracts and deposits", "/netherlands/housing/rental-contracts-and-deposits-netherlands/", "Leases, deposits, inventory and inspections before you sign."),
+          item(
+            "Rental Scams",
+            "/netherlands/housing/rental-scams-netherlands/",
+            "Spot warning signs, verify landlords, protect deposits and report housing fraud."
+          ),
           item("Housing costs", "/netherlands/housing/housing-costs-netherlands/", "Rent, buying, utilities and city cost comparisons."),
           item(
             "Rent allowance in the Netherlands",
@@ -1526,6 +1537,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Daycare in the Netherlands",
             "/netherlands/education/daycare-netherlands/",
             "Flagship childcare guide — kinderopvang types, directory, costs, allowance and waiting lists."
+          ),
+          item(
+            "After-School Care (BSO)",
+            "/netherlands/education/after-school-care-netherlands/",
+            "Buitenschoolse opvang guide — hours, costs, allowance, holiday care and provider orientation."
           ),
         ],
       },
@@ -1617,6 +1633,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Activity routes, sports clubs, neighbours and realistic friendship timelines."
           ),
           item(
+            "Expat Loneliness",
+            "/netherlands/life/expat-loneliness-netherlands/",
+            "Why loneliness is common after moving, how to rebuild community and when to seek support."
+          ),
+          item(
             "Dutch social norms",
             "/netherlands/life/dutch-social-norms/",
             "Everyday etiquette, greetings, birthdays, punctuality and neighbour culture."
@@ -1635,6 +1656,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Making Dutch Friends",
             "/netherlands/life/making-dutch-friends/",
             "Friendship circles, borrels, clubs, sports leagues and realistic timelines for expats."
+          ),
+          item(
+            "Expat Loneliness",
+            "/netherlands/life/expat-loneliness-netherlands/",
+            "Relocation loneliness, culture shock stages, communities and a 30-day social reset."
           ),
         ],
       },
@@ -1726,6 +1752,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Dutch Etiquette", "/netherlands/life/dutch-etiquette/", "Practical manners for greetings, dining, neighbours, gifts and everyday life."),
           item("Dutch Humour Explained", "/netherlands/life/dutch-humour/", "Dry wit, sarcasm, teasing and how humour connects to Dutch directness."),
           item("Making Dutch Friends", "/netherlands/life/making-dutch-friends/", "Friendship circles, borrels, clubs and realistic timelines for expats."),
+          item(
+            "Expat Loneliness",
+            "/netherlands/life/expat-loneliness-netherlands/",
+            "Relocation loneliness, friendship culture, communities and practical wellbeing routes."
+          ),
           item("Dating in the Netherlands", "/netherlands/life/dating-in-the-netherlands/", "Apps, culture, singles events and activity-first ways to meet people."),
           item("Dutch Holidays & Traditions", "/netherlands/life/dutch-holidays-and-traditions/", "King's Day, Sinterklaas, Christmas and public holidays."),
           item("Dutch Birthday Traditions", "/netherlands/life/dutch-birthday-traditions/", "Circle parties, congratulations, gifts and birthday etiquette."),
@@ -1748,6 +1779,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Family",
         items: [
+          item(
+            "Parenting",
+            "/netherlands/family/parenting-netherlands/",
+            "Dutch parenting culture, childcare, schools, healthcare and everyday family life for expat families."
+          ),
           item("Family tools", "/netherlands/family/tools/", "Childcare estimator, partner checks and family planning tools."),
           item("Moving with kids", "/netherlands/moving-to-netherlands-with-kids/", "Registration, schools, childcare and healthcare for relocating families."),
         ],

@@ -1,6 +1,7 @@
 import { daycareProvidersDirectory } from "@/src/data/education/daycareProvidersDirectory";
 
 export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands/" as const;
+export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands/" as const;
 export const EDUCATION_HUB_PATH = "/netherlands/education/" as const;
 export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
 export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/" as const;
@@ -625,6 +626,7 @@ export const daycareNetherlandsPage = {
     },
   ],
   relatedGuides: [
+    { label: "After-School Care (BSO)", href: AFTER_SCHOOL_CARE_PATH, status: "live", description: "Buitenschoolse opvang for primary school children — hours, costs and provider directory." },
     { label: "Childcare Cost Estimator", href: CHILDCARE_COST_ESTIMATOR_PATH, status: "live", description: "Model gross fees and net cost after kinderopvangtoeslag." },
     { label: "Childcare Allowance", href: CHILDCARE_ALLOWANCE_PATH, status: "live", description: "Kinderopvangtoeslag rules, eligibility and application for expat families." },
     { label: "Child Benefits", href: CHILD_BENEFITS_PATH, status: "live", description: "Kinderbijslag, Kindgebonden Budget and how Dutch family benefits fit together." },
@@ -637,6 +639,7 @@ export const daycareNetherlandsPage = {
   ] satisfies DaycareLink[],
   educationHubCards: [
     { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "This guide — childcare types, directory, costs and waiting lists." },
+    { label: "After-School Care (BSO)", href: AFTER_SCHOOL_CARE_PATH, status: "live", description: "BSO for school-age children — separate registration from daycare." },
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Basisschool and secondary pathways after early years." },
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "International curricula from primary age — compare with Dutch route." },
     { label: "Childcare Allowance", href: CHILDCARE_ALLOWANCE_PATH, status: "live", description: "Financial support for registered childcare." },

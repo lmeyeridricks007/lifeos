@@ -1014,6 +1014,12 @@ export const communityBasicsNetherlandsPage = {
       description: "Platonic friendship routes — sports clubs, volunteering, language exchanges and recurring activities.",
     },
     {
+      label: "Expat Loneliness",
+      href: "/netherlands/life/expat-loneliness-netherlands/",
+      status: "live",
+      description: "Relocation loneliness, culture shock stages, communities and a 30-day social reset.",
+    },
+    {
       label: "Dating in the Netherlands",
       href: "/netherlands/life/dating-in-the-netherlands/",
       status: "live",

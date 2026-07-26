@@ -9,6 +9,7 @@ export const PROPERTY_TAX_NETHERLANDS_PATH = "/netherlands/taxes/property-tax-ne
 export const HOUSING_COSTS_NETHERLANDS_PATH = "/netherlands/housing/housing-costs-netherlands/" as const;
 export const RENTAL_CONTRACTS_AND_DEPOSITS_NETHERLANDS_PATH =
   "/netherlands/housing/rental-contracts-and-deposits-netherlands/" as const;
+export const RENTAL_SCAMS_NETHERLANDS_PATH = "/netherlands/housing/rental-scams-netherlands/" as const;
 export const SOCIAL_HOUSING_NETHERLANDS_PATH = "/netherlands/housing/social-housing-netherlands/" as const;
 export const TEMPORARY_ACCOMMODATION_NETHERLANDS_PATH = "/netherlands/housing/temporary-accommodation-netherlands/" as const;
 export const NEIGHBORHOODS_NETHERLANDS_PATH = "/netherlands/housing/neighborhoods/" as const;
@@ -941,6 +942,7 @@ export const housingNetherlandsPage = {
     { label: "Moving to the Netherlands", href: MOVING_TO_NETHERLANDS_PATH, status: "live", description: "Wider relocation timeline connecting housing with first-month setup." },
     { label: "Renting in the Netherlands", href: RENTING_NETHERLANDS_PATH, status: "comingSoon", description: "Deep rental guide for contracts, viewings and deposits." },
     { label: "Rental contracts and deposits", href: RENTAL_CONTRACTS_AND_DEPOSITS_NETHERLANDS_PATH, status: "live", description: "Leases, deposits, inventory lists and inspections before signing." },
+    { label: "Rental Scams", href: RENTAL_SCAMS_NETHERLANDS_PATH, status: "live", description: "Spot warning signs, verify landlords and pay safely when renting." },
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Expat guide to the Dutch purchase process." },
     { label: "Mortgage for Expats", href: MORTGAGES_NETHERLANDS_EXPATS_PATH, status: "live", description: "Mortgage eligibility and application orientation." },
     { label: "Buy vs Rent", href: BUY_VS_RENT_NETHERLANDS_PATH, status: "live", description: "Structured rent-versus-buy decision guide." },
@@ -958,6 +960,7 @@ export const housingNetherlandsPage = {
   exploreNextCards: [
     { label: "Renting Guide", href: RENTING_NETHERLANDS_PATH, status: "comingSoon", description: "Go deeper on rental contracts, viewings and deposits." },
     { label: "Rental contracts and deposits", href: RENTAL_CONTRACTS_AND_DEPOSITS_NETHERLANDS_PATH, status: "live", description: "Leases, deposits, inventory and inspections before signing." },
+    { label: "Rental Scams", href: RENTAL_SCAMS_NETHERLANDS_PATH, status: "live", description: "Verify listings and landlords before paying a deposit." },
     { label: "Buying Guide", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Learn the Dutch purchase and bidding process." },
     { label: "Mortgage Guide", href: MORTGAGES_NETHERLANDS_EXPATS_PATH, status: "live", description: "Understand expat mortgage eligibility and steps." },
     { label: "Utilities Guide", href: UTILITIES_NETHERLANDS_PATH, status: "live", description: "Set up energy, water, internet and waste." },
@@ -965,6 +968,7 @@ export const housingNetherlandsPage = {
   ] satisfies HousingLink[],
   futureGuides: [
     { label: "Renting Netherlands", href: RENTING_NETHERLANDS_PATH, status: "comingSoon", description: "Full rental pillar guide for expats." },
+    { label: "Rental Scams", href: RENTAL_SCAMS_NETHERLANDS_PATH, status: "live", description: "Warning signs, landlord verification and safe payment practices." },
     { label: "Social Housing Netherlands", href: SOCIAL_HOUSING_NETHERLANDS_PATH, status: "comingSoon", description: "Eligibility, waiting lists and realistic expectations." },
     { label: "Temporary Accommodation", href: TEMPORARY_ACCOMMODATION_NETHERLANDS_PATH, status: "comingSoon", description: "Short-stay options for arrival windows." },
     { label: "Best Neighborhoods", href: NEIGHBORHOODS_NETHERLANDS_PATH, status: "comingSoon", description: "Compare areas within major Dutch cities." },

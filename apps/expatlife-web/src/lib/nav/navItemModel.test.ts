@@ -2604,10 +2604,10 @@ describe("daycare Netherlands nav active state", () => {
     expect(getActiveNavKey(DAYCARE_PATH)).toBe("living");
   });
 
-  it("renders the Living Education menu row as live and active", () => {
+  it("renders the Living Childcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Education")
-      ?.items.find((row) => row.label === "Daycare Netherlands");
+      .find((section) => section.title === "Childcare")
+      ?.items.find((row) => row.label === "Daycare in the Netherlands");
 
     expect(item).toBeDefined();
     expect(item?.href).toBe(DAYCARE_PATH);
@@ -2616,12 +2616,12 @@ describe("daycare Netherlands nav active state", () => {
     expect(isNavItemActive(DAYCARE_PATH, item!)).toBe(true);
   });
 
-  it("has exactly one menu row, in Living > Education", () => {
+  it("has exactly one menu row, in Living > Childcare", () => {
     const rows = menuRowsForHref(DAYCARE_PATH);
 
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("living");
-    expect(rows[0].sectionTitle).toBe("Education");
+    expect(rows[0].sectionTitle).toBe("Childcare");
   });
 });
 
@@ -2668,5 +2668,147 @@ describe("child benefits Netherlands nav active state", () => {
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("culture");
     expect(rows[0].sectionTitle).toBe("Benefits");
+  });
+});
+
+describe("after-school care Netherlands nav active state", () => {
+  const BSO_PATH = "/netherlands/education/after-school-care-netherlands/";
+
+  it("treats the BSO guide route as live", () => {
+    expect(getRouteStatus(BSO_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the BSO guide path", () => {
+    expect(getActiveNavKey(BSO_PATH)).toBe("living");
+  });
+
+  it("renders the Living Childcare menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Childcare")
+      ?.items.find((row) => row.label === "After-School Care (BSO)");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(BSO_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BSO_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Childcare", () => {
+    const rows = menuRowsForHref(BSO_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Childcare");
+  });
+});
+
+describe("parenting Netherlands nav active state", () => {
+  const PARENTING_PATH = "/netherlands/family/parenting-netherlands/";
+
+  it("treats the parenting guide route as live", () => {
+    expect(getRouteStatus(PARENTING_PATH)).toBe("live");
+  });
+
+  it("highlights Culture for the parenting guide path", () => {
+    expect(getActiveNavKey(PARENTING_PATH)).toBe("culture");
+  });
+
+  it("renders the Culture Family menu row as live and active", () => {
+    const item = MEGA_MENUS.culture.sections
+      .find((section) => section.title === "Family")
+      ?.items.find((row) => row.label === "Parenting");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(PARENTING_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PARENTING_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Culture > Family", () => {
+    const rows = menuRowsForHref(PARENTING_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("culture");
+    expect(rows[0].sectionTitle).toBe("Family");
+  });
+});
+
+describe("rental scams Netherlands nav active state", () => {
+  const RENTAL_SCAMS_PATH = "/netherlands/housing/rental-scams-netherlands/";
+
+  it("treats the rental scams guide route as live", () => {
+    expect(getRouteStatus(RENTAL_SCAMS_PATH)).toBe("live");
+  });
+
+  it("highlights Move for the rental scams guide path", () => {
+    expect(getActiveNavKey(RENTAL_SCAMS_PATH)).toBe("moving");
+  });
+
+  it("renders the Living Housing menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Housing")
+      ?.items.find((row) => row.label === "Rental Scams");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(RENTAL_SCAMS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(RENTAL_SCAMS_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Move Housing menu row as live and active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Housing")
+      ?.items.find((row) => row.label === "Rental Scams");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(RENTAL_SCAMS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(RENTAL_SCAMS_PATH, item!)).toBe(true);
+  });
+
+  it("has Move Housing and Living Housing menu rows", () => {
+    const rows = menuRowsForHref(RENTAL_SCAMS_PATH);
+    const keys = rows.map((row) => `${row.menuKey}:${row.sectionTitle}`);
+
+    expect(keys).toContain("moving:Housing");
+    expect(keys).toContain("living:Housing");
+    expect(rows).toHaveLength(2);
+  });
+});
+
+describe("expat loneliness Netherlands nav active state", () => {
+  const LONELINESS_PATH = "/netherlands/life/expat-loneliness-netherlands/";
+
+  it("treats the expat loneliness guide route as live", () => {
+    expect(getRouteStatus(LONELINESS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the loneliness guide path", () => {
+    expect(getActiveNavKey(LONELINESS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Life in the Netherlands")
+      ?.items.find((row) => row.label === "Expat Loneliness");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(LONELINESS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(LONELINESS_PATH, item!)).toBe(true);
+  });
+
+  it("has Living Life and Culture Social norms menu rows", () => {
+    const rows = menuRowsForHref(LONELINESS_PATH);
+    const keys = rows.map((row) => `${row.menuKey}:${row.sectionTitle}`);
+
+    expect(keys).toContain("living:Life in the Netherlands");
+    expect(keys).toContain("culture:Social norms");
+    expect(rows).toHaveLength(2);
   });
 });

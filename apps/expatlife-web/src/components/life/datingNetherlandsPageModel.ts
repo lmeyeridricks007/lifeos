@@ -6,6 +6,7 @@ export const LANGUAGE_LEARNING_PATH = "/netherlands/language-learning/" as const
 export const DUTCH_WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-culture/" as const;
 export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
 export const VOLUNTEERING_PATH = "/netherlands/life/volunteering-netherlands/" as const;
+export const EXPAT_LONELINESS_PATH = "/netherlands/life/expat-loneliness-netherlands/" as const;
 
 export type LifeGuideLink = {
   label: string;
@@ -1650,6 +1651,7 @@ export const datingNetherlandsPage = {
     "Cities hub → compare pools by city",
   ],
   relatedGuides: [
+    { label: "Expat Loneliness", href: EXPAT_LONELINESS_PATH, description: "Relocation loneliness, friendship culture and rebuilding community.", status: "live" },
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Making friends, clubs, volunteering and integration.", status: "live" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Everyday etiquette, greetings and social expectations.", status: "live" },
     { label: "Learning Dutch", href: LANGUAGE_LEARNING_PATH, description: "Language hub for courses and municipal programs.", status: "comingSoon" },
@@ -1658,6 +1660,7 @@ export const datingNetherlandsPage = {
     { label: "Volunteering", href: VOLUNTEERING_PATH, description: "Volunteer portals and recurring social shifts.", status: "comingSoon" },
   ] satisfies LifeGuideLink[],
   exploreNextCards: [
+    { label: "Expat Loneliness", href: EXPAT_LONELINESS_PATH, description: "If dating is not enough — rebuild a wider support network.", status: "live" },
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Build friendships and local networks.", status: "live" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Etiquette for dates, visits and neighbours.", status: "live" },
     { label: "Learning Dutch", href: LANGUAGE_LEARNING_PATH, description: "Phrases and courses for daily life.", status: "comingSoon" },
@@ -1665,10 +1668,10 @@ export const datingNetherlandsPage = {
     { label: "Volunteering", href: VOLUNTEERING_PATH, description: "Meet people through structured giving back.", status: "comingSoon" },
   ] satisfies LifeGuideLink[],
   exploreNextTips: [
+    "Feeling isolated → Expat Loneliness guide for wellbeing and social reset.",
     "Building a social circle → Community Basics after this guide.",
     "First-date etiquette → Dutch Social Norms.",
     "Choosing a city pool → Cities hub.",
-    "Weekly rhythm → Volunteering when live.",
   ],
   officialSources: [
     {

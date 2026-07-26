@@ -1,6 +1,7 @@
 import {
   HOUSING_COSTS_NETHERLANDS_PATH,
   HOUSING_HUB_PATH,
+  RENTAL_SCAMS_NETHERLANDS_PATH,
   RENTING_NETHERLANDS_PATH,
   TEMPORARY_ACCOMMODATION_NETHERLANDS_PATH,
   UTILITIES_NETHERLANDS_PATH,
@@ -929,6 +930,7 @@ export const rentalContractsAndDepositsNetherlandsPage = {
   ],
   relatedGuides: [
     { label: "Renting in the Netherlands", href: RENTING_NETHERLANDS_PATH, description: "Search, viewings and tenant orientation.", status: "comingSoon" },
+    { label: "Rental Scams", href: RENTAL_SCAMS_NETHERLANDS_PATH, description: "Warning signs, landlord verification and safe payments.", status: "live" },
     { label: "Housing costs", href: HOUSING_COSTS_NETHERLANDS_PATH, description: "Rent, utilities and city comparisons.", status: "live" },
     { label: "Housing hub", href: HOUSING_HUB_PATH, description: "Central housing pillar for expats.", status: "live" },
     { label: "Utilities", href: UTILITIES_NETHERLANDS_PATH, description: "Energy, water and internet setup.", status: "live" },
@@ -939,6 +941,7 @@ export const rentalContractsAndDepositsNetherlandsPage = {
   ] satisfies RentalGuideLink[],
   exploreNextCards: [
     { label: "Renting guide", href: RENTING_NETHERLANDS_PATH, description: "Full rental pillar for expats.", status: "comingSoon" },
+    { label: "Rental Scams", href: RENTAL_SCAMS_NETHERLANDS_PATH, description: "Verify listings before any deposit.", status: "live" },
     { label: "Housing costs", href: HOUSING_COSTS_NETHERLANDS_PATH, description: "Budget total monthly stack.", status: "live" },
     { label: "Utilities guide", href: UTILITIES_NETHERLANDS_PATH, description: "Set up after key handover.", status: "live" },
     { label: "Address registration", href: REGISTERING_YOUR_ADDRESS_NETHERLANDS_PATH, description: "Gemeente appointment steps.", status: "live" },

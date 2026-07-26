@@ -289,6 +289,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/housing/buy-vs-rent-netherlands/",
   "/netherlands/housing/housing-costs-netherlands/",
   "/netherlands/housing/rental-contracts-and-deposits-netherlands/",
+  /** Live App Router guide — rental scam prevention and safe renting (Housing cluster). */
+  "/netherlands/housing/rental-scams-netherlands/",
   /** Legacy Living URL (301 → canonical housing costs guide). */
   "/netherlands/living/housing-costs/",
   /** Legacy Living URL (301 → canonical rental contracts guide). */
@@ -301,6 +303,7 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/life/",
   "/netherlands/life/community-basics-netherlands/",
   "/netherlands/life/making-dutch-friends/",
+  "/netherlands/life/expat-loneliness-netherlands/",
   "/netherlands/life/dutch-culture/",
   "/netherlands/life/dutch-social-norms/",
   "/netherlands/life/dating-in-the-netherlands/",
@@ -386,8 +389,12 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/education/dutch-schools-netherlands/",
   /** Flagship education guide — childcare and daycare for expat families. */
   "/netherlands/education/daycare-netherlands/",
+  /** Flagship education guide — after-school care (BSO) for expat families. */
+  "/netherlands/education/after-school-care-netherlands/",
   /** Flagship family guide — Kinderbijslag, Kindgebonden Budget and child benefits for expat families. */
   "/netherlands/family/child-benefits-netherlands/",
+  /** Flagship family guide — Dutch parenting culture, childcare, schools and family life for expat families. */
+  "/netherlands/family/parenting-netherlands/",
   /** Legacy family URL; 301 → child benefits guide — keep live so placeholder links stay clickable. */
   "/netherlands/family/child-benefit-netherlands/",
   /** Live App Router guide — pension pillar for expats (Jobs & salaries cluster). */

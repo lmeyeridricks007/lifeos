@@ -589,6 +589,7 @@ export const childBenefitsNetherlandsPage = {
     { label: "Taxes Hub", href: TAXES_HUB_PATH, status: "live", description: "Broader tax and toeslagen orientation for expat households." },
   ] satisfies ChildBenefitsLink[],
   familyHubCards: [
+    { label: "Parenting", href: "/netherlands/family/parenting-netherlands/", status: "live", description: "Raising children, Dutch parenting culture and everyday family life." },
     { label: "Child benefits", href: CHILD_BENEFITS_NETHERLANDS_PATH, status: "live", description: "This guide — Kinderbijslag, Kindgebonden Budget and family allowances." },
     { label: "Childcare Allowance", href: CHILDCARE_ALLOWANCE_PATH, status: "live", description: "Kinderopvangtoeslag for registered childcare." },
     { label: "Childcare cost estimator", href: CHILDCARE_COST_ESTIMATOR_PATH, status: "live", description: "Model net childcare costs with allowance orientation." },

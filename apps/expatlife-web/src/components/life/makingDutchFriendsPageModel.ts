@@ -4,6 +4,7 @@ export const DUTCH_CULTURE_PATH = "/netherlands/life/dutch-culture/" as const;
 export const COMMUNITY_BASICS_NETHERLANDS_PATH = "/netherlands/life/community-basics-netherlands/" as const;
 export const DUTCH_SOCIAL_NORMS_PATH = "/netherlands/life/dutch-social-norms/" as const;
 export const DATING_NETHERLANDS_PATH = "/netherlands/life/dating-in-the-netherlands/" as const;
+export const EXPAT_LONELINESS_PATH = "/netherlands/life/expat-loneliness-netherlands/" as const;
 export const LANGUAGE_LEARNING_PATH = "/netherlands/language-learning/" as const;
 export const DUTCH_WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-culture/" as const;
 export const VOLUNTEERING_PATH = "/netherlands/life/volunteering-netherlands/" as const;
@@ -860,11 +861,12 @@ export const makingDutchFriendsPage = {
   ],
   relatedGuidesReadingOrder: [
     "Making Dutch Friends (this page) → friendship routes",
+    "Expat Loneliness → emotional challenges and 30-day social reset",
     "Community Basics → neighbours, clubs, integration",
     "Dutch Social Norms → etiquette and direct communication",
-    "Cities hub → compare social life by city",
   ],
   relatedGuides: [
+    { label: "Expat Loneliness", href: EXPAT_LONELINESS_PATH, description: "Why loneliness is common after moving and how to rebuild community.", status: "live" },
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Neighbours, clubs, volunteering and integration.", status: "live" },
     { label: "Dutch Etiquette", href: "/netherlands/life/dutch-etiquette/", description: "Practical manners for greetings, dining and neighbours.", status: "live" },
     { label: "Dutch Humour Explained", href: "/netherlands/life/dutch-humour/", description: "Dry wit, sarcasm and teasing in everyday conversations.", status: "live" },
@@ -875,6 +877,7 @@ export const makingDutchFriendsPage = {
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, description: "Compare cities for international life.", status: "live" },
   ] satisfies LifeGuideLink[],
   exploreNextCards: [
+    { label: "Expat Loneliness", href: EXPAT_LONELINESS_PATH, description: "Normalise relocation loneliness and run a 30-day social reset.", status: "live" },
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Broader integration and neighbourhood life.", status: "live" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Etiquette for visits, neighbours and direct communication.", status: "live" },
     { label: "Dating in the Netherlands", href: DATING_NETHERLANDS_PATH, description: "Activity-first routes for meeting people.", status: "live" },
@@ -882,10 +885,10 @@ export const makingDutchFriendsPage = {
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, description: "Compare social life by city.", status: "live" },
   ] satisfies LifeGuideLink[],
   exploreNextTips: [
+    "Feeling isolated → Expat Loneliness guide for emotional context and reset plan.",
     "Broader integration → Community Basics after this guide.",
     "Etiquette context → Dutch Social Norms.",
     "Meeting people romantically → Dating guide.",
-    "Choosing a city → Cities hub.",
   ],
   officialSources: [
     {
