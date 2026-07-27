@@ -401,6 +401,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/family/healthcare-for-children-netherlands/",
   /** Flagship health guide — general practitioner (GP / huisarts) cornerstone for expats. */
   "/netherlands/health/gp-netherlands/",
+  /** Flagship health guide — dentists / dental care cornerstone for expats. */
+  "/netherlands/health/dentists-netherlands/",
   /** Legacy family URL; 301 → child benefits guide — keep live so placeholder links stay clickable. */
   "/netherlands/family/child-benefit-netherlands/",
   /** Live App Router guide — pension pillar for expats (Jobs & salaries cluster). */

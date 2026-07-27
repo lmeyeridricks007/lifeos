@@ -2831,6 +2831,38 @@ describe("gp Netherlands nav active state", () => {
   });
 });
 
+describe("dentists Netherlands nav active state", () => {
+  const DENTISTS_NETHERLANDS_PATH = "/netherlands/health/dentists-netherlands/";
+
+  it("treats the dentists Netherlands guide route as live", () => {
+    expect(getRouteStatus(DENTISTS_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the dentists Netherlands guide path", () => {
+    expect(getActiveNavKey(DENTISTS_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Dentists");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(DENTISTS_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DENTISTS_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(DENTISTS_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+});
+
 describe("rental scams Netherlands nav active state", () => {
   const RENTAL_SCAMS_PATH = "/netherlands/housing/rental-scams-netherlands/";
 

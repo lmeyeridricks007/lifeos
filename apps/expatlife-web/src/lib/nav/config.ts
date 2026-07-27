@@ -463,6 +463,7 @@ function isCulturePillarPath(pathname: string): boolean {
 /** Living-owned health/family guides that sit in the Living mega menu (not Culture). */
 const LIVING_OWNED_HEALTH_FAMILY_PREFIXES: readonly string[] = [
   "/netherlands/health/gp-netherlands",
+  "/netherlands/health/dentists-netherlands",
   "/netherlands/family/child-benefits-netherlands",
   /** Legacy singular URL — keep Living tab active before redirect. */
   "/netherlands/family/child-benefit-netherlands",
@@ -1625,6 +1626,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "General Practitioner (GP)",
             "/netherlands/health/gp-netherlands/",
             "Huisarts registration, appointments, referrals, prescriptions and out-of-hours care for expats."
+          ),
+          item(
+            "Dentists",
+            "/netherlands/health/dentists-netherlands/",
+            "Finding a dentist, dental insurance, check-ups, emergency care, children's dentistry and orthodontics."
           ),
           item(
             "Emergencies & safety",
