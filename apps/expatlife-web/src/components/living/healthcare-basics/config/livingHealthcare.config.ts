@@ -16,6 +16,7 @@ import type {
 } from "./livingHealthcare.types";
 
 const HEALTH_INSURANCE_GUIDE_PATH = "/netherlands/health-insurance-netherlands/";
+const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands/";
 const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers/";
 const HEALTHCARE_ALLOWANCE_TOOL_PATH = "/netherlands/taxes/tools/healthcare-allowance-estimator/";
 const COST_OF_LIVING_TOOL_PATH = "/netherlands/money/tools/cost-of-living-calculator/";
@@ -595,6 +596,13 @@ export const livingHealthcareRelatedTools: LivingHealthcareRelatedTools = {
       ctaLabel: "Read the insurance guide",
       iconKey: "shield",
     },
+    {
+      title: "General Practitioner (GP)",
+      description: "Huisarts registration, appointments, referrals, prescriptions and out-of-hours care for expats.",
+      href: GP_NETHERLANDS_PATH,
+      ctaLabel: "Read the GP guide",
+      iconKey: "stethoscope",
+    },
   ],
   shortcutEyebrow: "Broader setup",
   shortcutTitle: "Keep healthcare connected to the rest of your move",
@@ -606,6 +614,12 @@ export const livingHealthcareRelatedTools: LivingHealthcareRelatedTools = {
       title: "First 90 Days in the Netherlands",
       description: "See where insurance, GP registration, and healthcare admin usually fit into your arrival timeline.",
       meta: "Read the 90-day guide",
+    },
+    {
+      href: GP_NETHERLANDS_PATH,
+      title: "General Practitioner (GP)",
+      description: "Deep-dive on registering with a huisarts, booking, referrals and emergency pathways.",
+      meta: "Open the GP guide",
     },
     {
       href: MOVING_WITH_KIDS_GUIDE_PATH,

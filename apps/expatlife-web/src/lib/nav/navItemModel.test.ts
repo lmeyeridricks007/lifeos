@@ -2633,12 +2633,12 @@ describe("child benefits Netherlands nav active state", () => {
     expect(getRouteStatus(CHILD_BENEFITS_PATH)).toBe("live");
   });
 
-  it("highlights Culture for the child benefits guide path", () => {
-    expect(getActiveNavKey(CHILD_BENEFITS_PATH)).toBe("culture");
+  it("highlights Living for the child benefits guide path", () => {
+    expect(getActiveNavKey(CHILD_BENEFITS_PATH)).toBe("living");
   });
 
-  it("renders the Culture Benefits menu row as live and active", () => {
-    const item = MEGA_MENUS.culture.sections
+  it("renders the Living Benefits menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
       .find((section) => section.title === "Benefits")
       ?.items.find((row) => row.label === "Child Benefits");
 
@@ -2658,15 +2658,15 @@ describe("child benefits Netherlands nav active state", () => {
     expect(isNavItemActive(LEGACY_CHILD_BENEFIT_PATH, item)).toBe(true);
   });
 
-  it("highlights Culture for legacy pathname before redirect", () => {
-    expect(getActiveNavKey(LEGACY_CHILD_BENEFIT_PATH)).toBe("culture");
+  it("highlights Living for legacy pathname before redirect", () => {
+    expect(getActiveNavKey(LEGACY_CHILD_BENEFIT_PATH)).toBe("living");
   });
 
-  it("has exactly one menu row, in Culture > Benefits", () => {
+  it("has exactly one menu row, in Living > Benefits", () => {
     const rows = menuRowsForHref(CHILD_BENEFITS_PATH);
 
     expect(rows).toHaveLength(1);
-    expect(rows[0].menuKey).toBe("culture");
+    expect(rows[0].menuKey).toBe("living");
     expect(rows[0].sectionTitle).toBe("Benefits");
   });
 });
@@ -2796,6 +2796,38 @@ describe("healthcare for children Netherlands nav active state", () => {
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("culture");
     expect(rows[0].sectionTitle).toBe("Family");
+  });
+});
+
+describe("gp Netherlands nav active state", () => {
+  const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands/";
+
+  it("treats the gp Netherlands guide route as live", () => {
+    expect(getRouteStatus(GP_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the gp Netherlands guide path", () => {
+    expect(getActiveNavKey(GP_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "General Practitioner (GP)");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(GP_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(GP_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(GP_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
   });
 });
 

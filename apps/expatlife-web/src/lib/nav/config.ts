@@ -460,6 +460,19 @@ function isCulturePillarPath(pathname: string): boolean {
   return false;
 }
 
+/** Living-owned health/family guides that sit in the Living mega menu (not Culture). */
+const LIVING_OWNED_HEALTH_FAMILY_PREFIXES: readonly string[] = [
+  "/netherlands/health/gp-netherlands",
+  "/netherlands/family/child-benefits-netherlands",
+  /** Legacy singular URL — keep Living tab active before redirect. */
+  "/netherlands/family/child-benefit-netherlands",
+];
+
+function isLivingOwnedHealthFamilyPath(pathname: string): boolean {
+  const base = resolveNavActivePath(pathname).split("?")[0].replace(/\/+$/, "") || "/";
+  return LIVING_OWNED_HEALTH_FAMILY_PREFIXES.some((pre) => base === pre || base.startsWith(`${pre}/`));
+}
+
 const WORK_PATH_HIGHLIGHT_MOVING: readonly string[] = [
   "/netherlands/moving/working-in-the-netherlands",
   "/netherlands/moving/changing-jobs-netherlands",
@@ -767,6 +780,8 @@ export function getActiveNavKey(pathname: string): TopNavKey | null {
   if (path.startsWith("/netherlands/education")) return "living";
 
   if (path.startsWith("/netherlands/life")) return "living";
+
+  if (isLivingOwnedHealthFamilyPath(path)) return "living";
 
   const seg1 = path.split("/").filter(Boolean)[1];
   if (seg1 && HOUSING_GUIDE_FIRST_SEGMENTS.has(seg1)) return "living";
@@ -1551,6 +1566,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         ],
       },
       {
+        title: "Benefits",
+        items: [
+          item(
+            "Child Benefits",
+            "/netherlands/family/child-benefits-netherlands/",
+            "Kinderbijslag, kindgebonden budget and childcare allowance — eligibility and application orientation."
+          ),
+        ],
+      },
+      {
         title: "Utilities",
         items: [
           item(
@@ -1595,6 +1620,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Healthcare basics",
             "/netherlands/living/healthcare-basics/",
             "Insurance, huisarts setup, pharmacies, urgent care, and everyday healthcare expectations for newcomers."
+          ),
+          item(
+            "General Practitioner (GP)",
+            "/netherlands/health/gp-netherlands/",
+            "Huisarts registration, appointments, referrals, prescriptions and out-of-hours care for expats."
           ),
           item(
             "Emergencies & safety",
@@ -1796,16 +1826,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           ),
           item("Family tools", "/netherlands/family/tools/", "Childcare estimator, partner checks and family planning tools."),
           item("Moving with kids", "/netherlands/moving-to-netherlands-with-kids/", "Registration, schools, childcare and healthcare for relocating families."),
-        ],
-      },
-      {
-        title: "Benefits",
-        items: [
-          item(
-            "Child Benefits",
-            "/netherlands/family/child-benefits-netherlands/",
-            "Kinderbijslag, kindgebonden budget and childcare allowance — eligibility and application orientation."
-          ),
         ],
       },
       {

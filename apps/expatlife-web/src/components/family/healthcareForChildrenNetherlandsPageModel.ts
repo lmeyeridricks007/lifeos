@@ -1,4 +1,5 @@
 export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/" as const;
+export const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands/" as const;
 export const PARENTING_NETHERLANDS_PATH = "/netherlands/family/parenting-netherlands/" as const;
 export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands/" as const;
 export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands/" as const;
@@ -1384,12 +1385,14 @@ export const healthcareForChildrenNetherlandsPage = {
     anchor: "#gp",
   },
   relatedGuidesTips: [
+    "Family GP setup → the General Practitioner (GP) guide for registration and referrals.",
     "Insurance not arranged yet → start with the health insurance guide before anything else.",
     "New to Dutch family life → the parenting guide covers culture, schools, sport and daily rhythm.",
     "Planning childcare → daycare and after-school care guides explain waiting lists and allowance.",
     "Still relocating → the moving-with-children guide sequences registration, schools and healthcare.",
   ],
   relatedGuides: [
+    { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "Huisarts registration, appointments, referrals and out-of-hours care." },
     { label: "Health Insurance in the Netherlands", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package, deductible, choosing an insurer and supplementary cover." },
     { label: "Parenting in the Netherlands", href: PARENTING_NETHERLANDS_PATH, status: "live", description: "Dutch parenting culture, daily family life and practical orientation." },
     { label: "Child Benefits", href: CHILD_BENEFITS_PATH, status: "live", description: "Kinderbijslag and financial support for families with children." },
@@ -1414,6 +1417,7 @@ export const healthcareForChildrenNetherlandsPage = {
     { label: "Moving With Kids", href: MOVING_WITH_KIDS_PATH, status: "live", description: "Relocation checklist for families with children." },
   ] satisfies HealthcareLink[],
   exploreNextCards: [
+    { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "Register and use the family huisarts for illness and referrals." },
     { label: "Health Insurance", href: HEALTH_INSURANCE_PATH, status: "live", description: "Arrange the policy that covers your children's care." },
     { label: "Parenting", href: PARENTING_NETHERLANDS_PATH, status: "live", description: "Culture, daily life and family orientation." },
     { label: "Child Benefits", href: CHILD_BENEFITS_PATH, status: "live", description: "Financial support for families with children." },
@@ -1421,6 +1425,7 @@ export const healthcareForChildrenNetherlandsPage = {
     { label: "Moving With Kids", href: MOVING_WITH_KIDS_PATH, status: "live", description: "Registration and arrival checklist." },
   ] satisfies HealthcareLink[],
   exploreNextTips: [
+    "Family GP setup still open → the General Practitioner (GP) guide.",
     "Coverage questions still open → open the health insurance guide first.",
     "Everyday family life and Dutch parenting norms → the parenting guide.",
     "Childcare setup and waiting lists → daycare (and BSO once school starts).",
