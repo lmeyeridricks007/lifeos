@@ -464,6 +464,7 @@ function isCulturePillarPath(pathname: string): boolean {
 const LIVING_OWNED_HEALTH_FAMILY_PREFIXES: readonly string[] = [
   "/netherlands/health/gp-netherlands",
   "/netherlands/health/dentists-netherlands",
+  "/netherlands/health/emergency-healthcare-netherlands",
   "/netherlands/family/child-benefits-netherlands",
   /** Legacy singular URL — keep Living tab active before redirect. */
   "/netherlands/family/child-benefit-netherlands",
@@ -1631,6 +1632,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Dentists",
             "/netherlands/health/dentists-netherlands/",
             "Finding a dentist, dental insurance, check-ups, emergency care, children's dentistry and orthodontics."
+          ),
+          item(
+            "Emergency Healthcare",
+            "/netherlands/health/emergency-healthcare-netherlands/",
+            "112, Huisartsenpost, SEH, ambulance, emergency pharmacy and urgent care pathways for expats."
           ),
           item(
             "Emergencies & safety",

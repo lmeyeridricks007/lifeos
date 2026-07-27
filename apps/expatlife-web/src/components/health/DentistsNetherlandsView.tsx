@@ -58,7 +58,7 @@ import {
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
 import {
   DENTISTS_NETHERLANDS_PATH,
-  EMERGENCIES_SAFETY_PATH,
+  EMERGENCY_HEALTHCARE_NETHERLANDS_PATH,
   HEALTH_HUB_PATH,
   HEALTH_INSURANCE_PATH,
   HEALTHCARE_BASICS_PATH,
@@ -1193,10 +1193,10 @@ export function DentistsNetherlandsView() {
               <ChecklistBlock title="Prepare before you need it" items={page.emergency.preparednessChecklist} columns={2} />
               <WarningPanel title="When in doubt, call" items={[page.emergency.whenInDoubt]} />
               <GuideCrossLink
-                href={EMERGENCIES_SAFETY_PATH}
-                title="Emergencies & Safety"
-                description="Broader living guide for emergency numbers, safety orientation and what to do under pressure."
-                linkLabel="Open emergencies guide"
+                href={EMERGENCY_HEALTHCARE_NETHERLANDS_PATH}
+                title="Emergency Healthcare in the Netherlands"
+                description="Flagship guide for 112, Huisartsenpost, SEH and ambulance pathways — dental emergencies also connect into the wider medical urgent-care system."
+                linkLabel="Open emergency healthcare guide"
               />
             </PremiumGuideSection>
 

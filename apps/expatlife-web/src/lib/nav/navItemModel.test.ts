@@ -2863,6 +2863,47 @@ describe("dentists Netherlands nav active state", () => {
   });
 });
 
+describe("emergency healthcare Netherlands nav active state", () => {
+  const EMERGENCY_HEALTHCARE_PATH = "/netherlands/health/emergency-healthcare-netherlands/";
+
+  it("treats the emergency healthcare Netherlands guide route as live", () => {
+    expect(getRouteStatus(EMERGENCY_HEALTHCARE_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the emergency healthcare Netherlands guide path", () => {
+    expect(getActiveNavKey(EMERGENCY_HEALTHCARE_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Emergency Healthcare");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(EMERGENCY_HEALTHCARE_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(EMERGENCY_HEALTHCARE_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(EMERGENCY_HEALTHCARE_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("keeps Emergencies & safety as a separate Living Daily life item", () => {
+    const safety = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Emergencies & safety");
+
+    expect(safety).toBeDefined();
+    expect(safety?.href).toBe("/netherlands/living/emergencies-safety/");
+  });
+});
+
 describe("rental scams Netherlands nav active state", () => {
   const RENTAL_SCAMS_PATH = "/netherlands/housing/rental-scams-netherlands/";
 

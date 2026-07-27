@@ -4,6 +4,8 @@ export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands/
 export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/" as const;
 export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" as const;
 export const EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety/" as const;
+export const EMERGENCY_HEALTHCARE_NETHERLANDS_PATH =
+  "/netherlands/health/emergency-healthcare-netherlands/" as const;
 export const HEALTH_SYSTEM_CULTURE_PATH = "/netherlands/culture/health-system-culture-basics/" as const;
 
 export type GpLink = {
@@ -1071,14 +1073,15 @@ export const gpNetherlandsPage = {
     "Insurance not arranged yet → start with the health insurance guide.",
     "Want the wider system map → healthcare basics.",
     "Family with children → healthcare for children cornerstone.",
-    "Emergency planning → emergencies and safety living guide.",
+    "Emergency planning → emergency healthcare cornerstone.",
   ],
   relatedGuides: [
     { label: "Health Insurance in the Netherlands", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package, deductible, choosing an insurer and supplementary cover." },
     { label: "Dentists in the Netherlands", href: "/netherlands/health/dentists-netherlands/", status: "live", description: "Finding a dentist, dental insurance, check-ups, emergency care and orthodontics." },
+    { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "112, Huisartsenpost, SEH, ambulance and urgent-care pathways." },
     { label: "Healthcare Basics", href: HEALTHCARE_BASICS_PATH, status: "live", description: "How Dutch healthcare fits together for everyday living." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "GPs, JGZ, vaccinations, specialists and emergencies for children." },
-    { label: "Emergencies & Safety", href: EMERGENCIES_SAFETY_PATH, status: "live", description: "Emergency numbers, safety orientation and what to do under pressure." },
+    { label: "Emergencies & Safety", href: EMERGENCIES_SAFETY_PATH, status: "live", description: "Broader living guide for emergency numbers, safety and day-to-day readiness." },
     { label: "Health System Culture Basics", href: HEALTH_SYSTEM_CULTURE_PATH, status: "live", description: "How care interactions often feel in Dutch healthcare culture." },
     { label: "Pharmacies (Apotheek)", href: HEALTHCARE_BASICS_PATH + "#care-settings", status: "live", description: "Pharmacy orientation inside the healthcare basics guide until a dedicated page ships." },
     { label: "Mental Health Guide", href: "#mental-health", status: "comingSoon", description: "Dedicated adult mental health cornerstone — planned." },
@@ -1092,23 +1095,23 @@ export const gpNetherlandsPage = {
   healthcareHubCards: [
     { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "Huisarts registration, appointments, referrals and emergencies — you are here." },
     { label: "Dentists", href: "/netherlands/health/dentists-netherlands/", status: "live", description: "Dental care, insurance, check-ups and emergency dentists." },
+    { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "112, Huisartsenpost, SEH and ambulance pathways." },
     { label: "Health Insurance", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package and insurer setup." },
     { label: "Healthcare Basics", href: HEALTHCARE_BASICS_PATH, status: "live", description: "System overview for everyday living." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "Family and children's healthcare cornerstone." },
-    { label: "Emergencies & Safety", href: EMERGENCIES_SAFETY_PATH, status: "live", description: "112 and urgent-care orientation." },
   ] satisfies GpLink[],
   exploreNextCards: [
     { label: "Health Insurance", href: HEALTH_INSURANCE_PATH, status: "live", description: "Arrange the policy that covers GP and hospital care." },
+    { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "Know which door to use before the first difficult evening." },
     { label: "Healthcare Basics", href: HEALTHCARE_BASICS_PATH, status: "live", description: "See how pharmacies, hospitals and urgent care fit together." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "Family GP care, JGZ and paediatric pathways." },
-    { label: "Emergencies & Safety", href: EMERGENCIES_SAFETY_PATH, status: "live", description: "Save the right numbers before you need them." },
     { label: "Health System Culture", href: HEALTH_SYSTEM_CULTURE_PATH, status: "live", description: "What care conversations often feel like here." },
   ] satisfies GpLink[],
   exploreNextTips: [
     "Coverage questions still open → health insurance guide.",
     "Want the full system map → healthcare basics.",
     "Moving with children → healthcare for children.",
-    "Need emergency clarity → emergencies and safety.",
+    "Need emergency clarity → emergency healthcare cornerstone.",
     "Curious about interaction style → health system culture basics.",
   ],
   visualTextDetails: {
