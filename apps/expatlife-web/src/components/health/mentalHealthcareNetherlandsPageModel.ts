@@ -13,6 +13,10 @@ export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" a
 export const EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety/" as const;
 export const HEALTH_SYSTEM_CULTURE_PATH = "/netherlands/culture/health-system-culture-basics/" as const;
 export const EXPAT_LONELINESS_PATH = "/netherlands/life/expat-loneliness-netherlands/" as const;
+export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-netherlands/" as const;
+export const HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH =
+  "/netherlands/health/health-insurance-comparison-netherlands/" as const;
+export const HEALTH_INSURANCE_COMPARISON_PATH = HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH;
 
 export type MentalHealthLink = {
   label: string;
@@ -1714,6 +1718,18 @@ export const mentalHealthcareNetherlandsPage = {
       description: "Basic package, annual deductible, policy types, contracted providers and switching.",
     },
     {
+      label: "Health insurance comparison",
+      href: HEALTH_INSURANCE_COMPARISON_PATH,
+      status: "live",
+      description: "Decision framework for comparing policies — not an insurer ranking.",
+    },
+    {
+      label: "Pharmacies",
+      href: PHARMACIES_NETHERLANDS_PATH,
+      status: "live",
+      description: "Apotheek finding, hours, counseling and dienstapotheek when medicines sit beside mental health care.",
+    },
+    {
       label: "Healthcare for Children",
       href: HEALTHCARE_FOR_CHILDREN_PATH,
       status: "live",
@@ -1793,6 +1809,18 @@ export const mentalHealthcareNetherlandsPage = {
       href: HEALTH_INSURANCE_PATH,
       status: "live",
       description: "Basic package, deductible and insurer contracts.",
+    },
+    {
+      label: "Health insurance comparison",
+      href: HEALTH_INSURANCE_COMPARISON_PATH,
+      status: "live",
+      description: "Compare policy factors without rankings — useful beside GGZ deductible literacy.",
+    },
+    {
+      label: "Pharmacies",
+      href: PHARMACIES_NETHERLANDS_PATH,
+      status: "live",
+      description: "Apotheek finding, hours, counseling and dienstapotheek.",
     },
     {
       label: "Healthcare for Children",

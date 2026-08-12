@@ -1439,6 +1439,8 @@ export const emergencyHealthcareNetherlandsPage = {
     "Insurance and deductible questions → health insurance guide.",
     "Family with children → healthcare for children cornerstone.",
     "Dental urgency detail → dentists guide.",
+    "Dienstapotheek depth → Pharmacies guide.",
+    "Recept mechanics → Prescriptions guide.",
     "Broader safety numbers → emergencies and safety living guide.",
   ],
   relatedGuides: [
@@ -1467,6 +1469,18 @@ export const emergencyHealthcareNetherlandsPage = {
       description: "Finding a dentist, insurance, costs and emergency dental routes.",
     },
     {
+      label: "Pharmacies",
+      href: PHARMACIES_NETHERLANDS_PATH,
+      status: "live",
+      description: "Finding an apotheek, hours, counseling and dienstapotheek depth.",
+    },
+    {
+      label: "Prescriptions",
+      href: PRESCRIPTIONS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Recepten, e-prescriptions, herhaalrecept, medication lists and foreign prescriptions.",
+    },
+    {
       label: "Healthcare Basics",
       href: HEALTHCARE_BASICS_PATH,
       status: "live",
@@ -1486,13 +1500,13 @@ export const emergencyHealthcareNetherlandsPage = {
     },
     {
       label: "Hospitals in the Netherlands",
-      href: "/netherlands/health/hospitals-netherlands/",
+      href: HOSPITALS_NETHERLANDS_PATH,
       status: "live",
       description: "GP referrals, specialists, outpatient clinics, admissions, UMCs and hospital pathways for expats.",
     },
     {
       label: "Mental Healthcare in the Netherlands",
-      href: "/netherlands/health/mental-healthcare-netherlands/",
+      href: MENTAL_HEALTHCARE_NETHERLANDS_PATH,
       status: "live",
       description: "GP first contact, POH-GGZ, GGZ specialist care, stepped care, waiting times and crisis routes.",
     },
@@ -1501,6 +1515,7 @@ export const emergencyHealthcareNetherlandsPage = {
     "Emergency care, GP care and insurance are connected — set up numbers and registration before you need them.",
     "This page is the emergency healthcare cornerstone; the GP guide covers daytime primary care in depth.",
     "Families should also read the children's healthcare guide for paediatric pathways.",
+    "Pharmacies owns dienstapotheek depth; Prescriptions owns recept mechanics.",
     "A dedicated health hub landing page is planned — use the live links meanwhile.",
   ],
   healthcareHubCards: [
@@ -1518,7 +1533,7 @@ export const emergencyHealthcareNetherlandsPage = {
     },
     {
       label: "Hospitals",
-      href: "/netherlands/health/hospitals-netherlands/",
+      href: HOSPITALS_NETHERLANDS_PATH,
       status: "live",
       description: "Referrals, specialists, outpatient clinics, admissions and UMCs.",
     },
@@ -1536,9 +1551,21 @@ export const emergencyHealthcareNetherlandsPage = {
     },
     {
       label: "Mental Healthcare",
-      href: "/netherlands/health/mental-healthcare-netherlands/",
+      href: MENTAL_HEALTHCARE_NETHERLANDS_PATH,
       status: "live",
       description: "GP first contact, POH-GGZ, GGZ specialist care, stepped care and crisis routes.",
+    },
+    {
+      label: "Pharmacies",
+      href: PHARMACIES_NETHERLANDS_PATH,
+      status: "live",
+      description: "Apotheek finding, hours, counseling and dienstapotheek.",
+    },
+    {
+      label: "Prescriptions",
+      href: PRESCRIPTIONS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Recepten, e-prescriptions, herhaalrecept and medication lists.",
     },
     {
       label: "Healthcare for Children",
@@ -1568,9 +1595,21 @@ export const emergencyHealthcareNetherlandsPage = {
     },
     {
       label: "Hospitals",
-      href: "/netherlands/health/hospitals-netherlands/",
+      href: HOSPITALS_NETHERLANDS_PATH,
       status: "live",
       description: "Understand referrals, specialists and hospital pathways.",
+    },
+    {
+      label: "Pharmacies",
+      href: PHARMACIES_NETHERLANDS_PATH,
+      status: "live",
+      description: "Learn daytime apotheek setup and dienstapotheek patterns in depth.",
+    },
+    {
+      label: "Prescriptions",
+      href: PRESCRIPTIONS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Understand recepten, herhaalrecept and medication lists.",
     },
     {
       label: "Health Insurance",
@@ -1584,24 +1623,13 @@ export const emergencyHealthcareNetherlandsPage = {
       status: "live",
       description: "Family GP care, JGZ and paediatric emergency context.",
     },
-    {
-      label: "Dentists",
-      href: DENTISTS_NETHERLANDS_PATH,
-      status: "live",
-      description: "Dental emergency routes and registration.",
-    },
-    {
-      label: "Emergencies & Safety",
-      href: EMERGENCIES_SAFETY_PATH,
-      status: "live",
-      description: "Save the right numbers before you need them.",
-    },
   ] satisfies EmergencyLink[],
   exploreNextTips: [
     "No GP yet → register using the GP guide.",
     "Coverage questions → health insurance guide.",
     "Moving with children → healthcare for children.",
-    "Tooth pain pathways → dentists guide.",
+    "Dienstapotheek depth → Pharmacies guide.",
+    "Recept mechanics → Prescriptions guide.",
     "Broader safety planning → emergencies and safety.",
   ],
   visualTextDetails: {

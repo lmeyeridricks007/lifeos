@@ -1281,6 +1281,18 @@ export function EmergencyHealthcareNetherlandsView() {
               <ChecklistBlock title="Pharmacy checklist" items={page.pharmacy.checklist} columns={2} />
               <ScenarioTable title="Pharmacy in practice" rows={page.pharmacy.scenarios} />
               <BulletPanel title="Tips" items={page.pharmacy.tips} />
+              <GuideCrossLink
+                href={page.pharmacy.crossLink.href}
+                title={page.pharmacy.crossLink.label}
+                description={page.pharmacy.crossLink.description}
+                linkLabel="Open pharmacies guide"
+              />
+              <GuideCrossLink
+                href={page.pharmacy.prescriptionsCrossLink.href}
+                title={page.pharmacy.prescriptionsCrossLink.label}
+                description={page.pharmacy.prescriptionsCrossLink.description}
+                linkLabel="Open prescriptions guide"
+              />
             </PremiumGuideSection>
 
             <PremiumGuideSection
