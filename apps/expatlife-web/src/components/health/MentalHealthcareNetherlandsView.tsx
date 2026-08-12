@@ -4,8 +4,8 @@ import Link from "next/link";
 import {
   Activity,
   AlertTriangle,
-  Ambulance,
   ArrowRight,
+  Baby,
   Brain,
   CalendarCheck,
   CheckCircle2,
@@ -13,10 +13,9 @@ import {
   Clock,
   ExternalLink,
   FileText,
+  HeartHandshake,
   HeartPulse,
-  Home,
-  Hospital,
-  Pill,
+  MessageCircleHeart,
   ShieldCheck,
   Siren,
   Stethoscope,
@@ -57,16 +56,16 @@ import {
 } from "@/src/components/cities/shared/citiesFunnelPageUi";
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
 import {
-  EMERGENCY_HEALTHCARE_NETHERLANDS_PATH,
-  GP_NETHERLANDS_PATH,
   HEALTH_HUB_PATH,
   HEALTHCARE_BASICS_PATH,
-  gpNetherlandsPage as page,
-  type GpLink,
+  MENTAL_HEALTHCARE_NETHERLANDS_PATH,
+  mentalHealthcareNetherlandsPage as page,
+  type ComparisonRow,
+  type MentalHealthLink,
   type MistakeCard as MistakeCardData,
   type TimelineStep,
   type UrgencyRow,
-} from "./gpNetherlandsPageModel";
+} from "./mentalHealthcareNetherlandsPageModel";
 
 const baseUrl = getSiteOrigin();
 
@@ -87,25 +86,24 @@ const cardClass = cn(
 );
 
 const iconPool = [
-  Stethoscope,
-  HeartPulse,
-  ClipboardList,
-  Hospital,
-  Siren,
-  Pill,
   Brain,
-  Home,
+  HeartHandshake,
+  MessageCircleHeart,
+  HeartPulse,
+  Stethoscope,
   Users,
-  FileText,
   ShieldCheck,
-  CalendarCheck,
+  ClipboardList,
   Clock,
-  Activity,
+  CalendarCheck,
   WalletCards,
-  Ambulance,
+  FileText,
+  Baby,
+  Activity,
+  Siren,
 ] as const;
-const snapshotIcons = [Stethoscope, ClipboardList, Hospital, Siren] as const;
-const orientationIcons = [WalletCards, Stethoscope, CalendarCheck, Siren] as const;
+const snapshotIcons = [Brain, HeartHandshake, MessageCircleHeart, Siren] as const;
+const orientationIcons = [Stethoscope, ShieldCheck, ClipboardList, HeartPulse] as const;
 
 const scenarioColumns = [
   { key: "situation", label: "Situation" },
@@ -113,10 +111,11 @@ const scenarioColumns = [
   { key: "firstStep", label: "First step" },
 ] as const;
 
-const referralColumns = [
-  { key: "topic", label: "Topic" },
-  { key: "withReferral", label: "With GP referral" },
-  { key: "withoutReferral", label: "Without referral" },
+const hospitalTypeColumns = [
+  { key: "type", label: "Type" },
+  { key: "focus", label: "Focus" },
+  { key: "whenReferred", label: "When you are referred" },
+  { key: "note", label: "Note" },
 ] as const;
 
 const contactRouteColumns = [
@@ -495,8 +494,8 @@ const urgencyGroups = [
   },
   {
     level: "routine" as const,
-    eyebrow: "Next working day",
-    title: "Routine — a normal GP appointment",
+    eyebrow: "Planned route",
+    title: "Routine — GP practice or intake secretariat",
     icon: CalendarCheck,
     shell: "border-emerald-200/80 bg-emerald-50/70 ring-emerald-200/50",
     accent: "bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-300",
@@ -510,6 +509,7 @@ function UrgencyBoard({ rows }: { rows: readonly UrgencyRow[] }) {
     <div className="grid gap-5 xl:grid-cols-3">
       {urgencyGroups.map((group) => {
         const groupRows = rows.filter((row) => row.level === group.level);
+        if (groupRows.length === 0) return null;
         const Icon = group.icon;
         return (
           <div
@@ -543,7 +543,7 @@ function UrgencyBoard({ rows }: { rows: readonly UrgencyRow[] }) {
   );
 }
 
-function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: GpLink; iconIndex?: number; tone?: "default" | "onDark" }) {
+function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: MentalHealthLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
   const isExternal = item.status === "external";
   const isLive = item.status !== "comingSoon";
@@ -695,27 +695,32 @@ function GuideCrossLink({
   title,
   description,
   linkLabel,
+  icon: Icon = ArrowRight,
 }: {
   href: string;
   title: string;
   description: string;
   linkLabel: string;
+  icon?: typeof ArrowRight;
 }) {
   return (
-    <aside className={cn(cardClass, "flex flex-col sm:flex-row sm:items-center sm:justify-between sm:gap-6")}>
-      <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
-      <div>
-        <h3 className="text-lg font-bold tracking-tight text-foreground">{title}</h3>
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-foreground-muted">{description}</p>
+    <aside
+      className={cn(
+        cardClass,
+        "flex flex-col gap-4 border-brand/10 bg-gradient-to-br from-white via-white to-copilot-bg-soft/60 sm:flex-row sm:items-center sm:justify-between sm:gap-6"
+      )}
+    >
+      <div className={cn("absolute inset-x-0 top-0 h-1.5", movingNlSignatureGradientClass)} aria-hidden />
+      <div className="flex gap-3">
+        <span className="mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-copilot-bg-soft to-white text-brand-strong shadow-sm ring-1 ring-copilot-primary/10">
+          <Icon className="h-5 w-5" aria-hidden />
+        </span>
+        <div>
+          <h3 className="text-lg font-bold tracking-tight text-foreground">{title}</h3>
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-foreground-muted">{description}</p>
+        </div>
       </div>
-      <Link
-        href={href}
-        className={cn(
-          "mt-4 inline-flex shrink-0 items-center gap-2 rounded-xl border border-brand/20 bg-brand px-4 py-2.5 text-sm font-bold text-white shadow-sm hover:bg-brand-strong focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas sm:mt-0",
-          transitionInteractive,
-          activeBrightnessPress
-        )}
-      >
+      <Link href={href} className={cn(primaryCtaClass, "w-full shrink-0 sm:w-auto")}>
         {linkLabel}
         <ArrowRight className="h-4 w-4" aria-hidden />
       </Link>
@@ -753,15 +758,15 @@ function OrientationFlowBand({ className }: { className?: string }) {
   return (
     <aside
       className={cn(
-        "relative w-full overflow-hidden rounded-3xl bg-slate-950 p-5 text-white shadow-expatos-xl ring-1 ring-black/20 sm:p-6",
+        "relative w-full overflow-hidden rounded-3xl bg-slate-950 p-5 text-white shadow-expatos-xl ring-1 ring-white/10 sm:p-6",
         className
       )}
     >
-      <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-brand via-cyan-300 to-emerald-300" aria-hidden />
+      <div className={cn("absolute inset-x-0 top-0 h-1.5", movingNlSignatureGradientClass)} aria-hidden />
       <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-cyan-400/20 blur-3xl" aria-hidden />
       <div className="relative">
         <p className="text-xs font-bold uppercase tracking-[0.14em] text-cyan-200">Orientation flow</p>
-        <h3 className="mt-2 text-xl font-bold tracking-tight">Four building blocks before your first appointment</h3>
+        <h3 className="mt-2 text-xl font-bold tracking-tight">Four building blocks before you seek support</h3>
         <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {page.orientationFlowSteps.map((step, index) => {
             const Icon = orientationIcons[index % orientationIcons.length];
@@ -780,6 +785,59 @@ function OrientationFlowBand({ className }: { className?: string }) {
         </div>
       </div>
     </aside>
+  );
+}
+
+function DecisionFlowStrip({ labels, eyebrow = "Care pathway" }: { labels: readonly string[]; eyebrow?: string }) {
+  return (
+    <div className="relative w-full overflow-hidden rounded-3xl border border-slate-200/90 bg-white/95 p-4 shadow-card ring-1 ring-slate-900/[0.04] sm:p-5">
+      <div className={cn("absolute inset-x-0 top-0 h-1.5", movingNlSignatureGradientClass)} aria-hidden />
+      <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-strong">{eyebrow}</p>
+      <div className={cn("mt-4 grid gap-3", guidePremiumCardGridClass(labels.length))}>
+        {labels.map((label, index) => (
+          <div
+            key={label}
+            className="relative flex items-start gap-3 overflow-hidden rounded-2xl border border-slate-200/80 bg-gradient-to-br from-white via-white to-copilot-bg-soft/70 p-4 shadow-sm"
+          >
+            <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-copilot-bg-soft to-white text-sm font-black text-brand-strong shadow-sm ring-1 ring-copilot-primary/10">
+              {index + 1}
+            </span>
+            <span className="pt-1.5 text-sm font-semibold leading-snug text-foreground">{label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function HowToStepCards({
+  steps,
+  title,
+}: {
+  steps: ReadonlyArray<{ name: string; text: string }>;
+  title: string;
+}) {
+  return (
+    <div className="w-full">
+      <SectionIntro eyebrow="How to" title={title} fullWidth />
+      <ol className={cn("mt-4", guidePremiumCardGridClass(steps.length))}>
+        {steps.map((step, index) => (
+          <li key={step.name} className={cn(cardClass, "list-none p-5")}>
+            <div className={cn("absolute inset-x-0 top-0 h-1.5", movingNlSignatureGradientClass)} aria-hidden />
+            <div className="flex items-start gap-3">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-copilot-bg-soft to-white text-sm font-black text-brand-strong shadow-sm ring-1 ring-copilot-primary/10">
+                {index + 1}
+              </span>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-brand-strong">Step {index + 1}</p>
+                <h3 className="mt-1 text-base font-bold text-foreground">{step.name}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{step.text}</p>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
   );
 }
 
@@ -837,7 +895,7 @@ const faqAccordionItems = page.faq.map((item, index) => ({
   content: item.a,
 }));
 
-export function GpNetherlandsView() {
+export function MentalHealthcareNetherlandsView() {
   return (
     <>
       <BreadcrumbJsonLd
@@ -845,7 +903,7 @@ export function GpNetherlandsView() {
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
           { name: "Health", item: new URL(HEALTH_HUB_PATH, baseUrl).toString() },
-          { name: "General Practitioner (GP)", item: new URL(GP_NETHERLANDS_PATH, baseUrl).toString() },
+          { name: "Mental Healthcare", item: new URL(MENTAL_HEALTHCARE_NETHERLANDS_PATH, baseUrl).toString() },
         ]}
       />
       <main className={sitePageCanvasClass}>
@@ -871,7 +929,7 @@ export function GpNetherlandsView() {
                     </Link>
                     <span aria-hidden>/</span>
                     <span className="text-foreground" aria-current="page">
-                      General Practitioner (GP)
+                      Mental Healthcare
                     </span>
                   </nav>
                   <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-brand-strong">{page.hero.eyebrow}</p>
@@ -939,7 +997,7 @@ export function GpNetherlandsView() {
               <QuickAnswerBox />
               <OrientationFlowBand />
               <BulletPanel title="What this overview is for" items={page.introHighlights} />
-              <ChecklistBlock title="Safety file — keep these together" items={page.safetyFileChecklist} columns={2} />
+              <ChecklistBlock title="Support file — keep these together" items={page.safetyFileChecklist} columns={2} />
               <ScenarioTable title="Where newcomers usually start" rows={page.introScenarios} />
             </PremiumGuideSection>
 
@@ -948,15 +1006,15 @@ export function GpNetherlandsView() {
               tipsKey="snapshot"
               visual={page.visuals.snapshot}
               intro={
-                <SectionIntro eyebrow="Snapshot" title="Six building blocks of the Dutch GP system" fullWidth>
+                <SectionIntro eyebrow="Snapshot" title="Six building blocks of Dutch mental healthcare" fullWidth>
                   <p>
-                    Almost every question expats ask about the huisarts fits into one of these six blocks. Read them once now,
-                    then use the detailed sections below when you need the specifics.
+                    Almost every adult mental health pathway expats meet is built from these six blocks. Read them once
+                    now, then use the detailed sections below when you need the specifics.
                   </p>
                 </SectionIntro>
               }
             >
-              <div className={guidePremiumCardGridClass(page.snapshotSignals.length)}>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {page.snapshotSignals.map((signal) => (
                   <MiniStatCard key={signal.label} label={signal.label} value={signal.value} note={signal.note} />
                 ))}
@@ -975,310 +1033,356 @@ export function GpNetherlandsView() {
               visual={page.visuals.howItWorks}
               intro={
                 <SectionIntro eyebrow="How it works" title={page.howItWorks.heading} fullWidth>
+                  <p>{page.howItWorks.intro}</p>
                   {page.howItWorks.paragraphs.map((paragraph) => (
                     <p key={paragraph.slice(0, 48)}>{paragraph}</p>
                   ))}
                 </SectionIntro>
               }
             >
-              <div className="flex flex-wrap gap-2">
-                {page.howItWorks.flowLabels.map((label, index) => (
-                  <span
-                    key={label}
-                    className="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white px-3 py-1.5 text-xs font-semibold text-foreground shadow-sm"
-                  >
-                    <span className="flex h-5 w-5 items-center justify-center rounded-full bg-copilot-bg-soft text-[10px] font-bold text-brand-strong">
-                      {index + 1}
-                    </span>
-                    {label}
-                  </span>
-                ))}
-              </div>
+              <DecisionFlowStrip labels={page.howItWorks.flowLabels} />
               <Timeline steps={page.howItWorks.timeline} eyebrow="Step" />
-              <BulletPanel title="Principles worth knowing early" items={page.howItWorks.principles} />
-              <NotePanel>{page.howItWorks.gatekeeperNote}</NotePanel>
+              <BulletPanel title="Routing shortcuts" items={page.howItWorks.decisionTips} />
+              <HowToStepCards
+                steps={page.howItWorks.howToSteps}
+                title="Prepare for your first GP mental health conversation"
+              />
             </PremiumGuideSection>
 
             <PremiumGuideSection
-              id="what-gp-does"
-              tipsKey="whatGpDoes"
-              visual={page.visuals.whatGpDoes}
+              id="gp-first-contact"
+              tipsKey="gpFirstContact"
+              visual={page.visuals.gpFirstContact}
               intro={
-                <SectionIntro eyebrow="Role" title={page.whatGpDoes.heading} fullWidth>
-                  {page.whatGpDoes.paragraphs.map((paragraph) => (
+                <SectionIntro eyebrow="GP first contact" title={page.gpFirstContact.heading} fullWidth>
+                  <p>{page.gpFirstContact.intro}</p>
+                  {page.gpFirstContact.paragraphs.map((paragraph) => (
                     <p key={paragraph.slice(0, 48)}>{paragraph}</p>
                   ))}
                 </SectionIntro>
               }
             >
-              <BulletPanel title="What your GP typically handles" items={page.whatGpDoes.responsibilities} />
-              <BulletPanel title="Useful boundaries to expect" items={page.whatGpDoes.limitations} />
-              <div className={guidePremiumCardGridClass(page.whatGpDoes.teamRoles.length)}>
-                {page.whatGpDoes.teamRoles.map((role, index) => (
-                  <FeatureCard key={role.role} title={role.role} body={role.focus} iconIndex={index} />
+              <div className={guidePremiumCardGridClass(page.gpFirstContact.cards.length)}>
+                {page.gpFirstContact.cards.map((card, index) => (
+                  <FeatureCard key={card.title} title={card.title} body={card.body} iconIndex={index} />
                 ))}
               </div>
+              <BulletPanel title="GP first-contact essentials" items={page.gpFirstContact.points} />
+              <ChecklistBlock title="Before your huisarts conversation" items={page.gpFirstContact.checklist} columns={2} />
+              <ScenarioTable title="GP first contact in practice" rows={page.gpFirstContact.scenarios} />
+              <BulletPanel title="Tips" items={page.gpFirstContact.tips} />
+              <GuideCrossLink
+                href={page.gpFirstContact.crossLink.href}
+                title={page.gpFirstContact.crossLink.label}
+                description={page.gpFirstContact.crossLink.description}
+                linkLabel="Open GP guide"
+                icon={Stethoscope}
+              />
             </PremiumGuideSection>
 
             <PremiumGuideSection
-              id="registering"
-              tipsKey="registering"
-              visual={page.visuals.registering}
+              id="poh-ggz"
+              tipsKey="pohGgz"
+              visual={page.visuals.pohGgz}
               intro={
-                <SectionIntro eyebrow="Registering" title={page.registering.heading} fullWidth>
-                  {page.registering.paragraphs.map((paragraph) => (
+                <SectionIntro eyebrow="POH-GGZ" title={page.pohGgz.heading} fullWidth>
+                  <p>{page.pohGgz.intro}</p>
+                  {page.pohGgz.paragraphs.map((paragraph) => (
                     <p key={paragraph.slice(0, 48)}>{paragraph}</p>
                   ))}
                 </SectionIntro>
               }
             >
-              <Timeline steps={page.registering.timeline} eyebrow="Phase" />
-              <ChecklistBlock title="Registration checklist" items={page.registering.checklist} columns={2} />
-              <ol className="space-y-3">
-                {page.registering.howToSteps.map((step, index) => (
-                  <li key={step.name} className={cn(cardClass, "p-4")}>
-                    <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
-                    <p className="text-xs font-bold uppercase tracking-[0.12em] text-brand-strong">Step {index + 1}</p>
-                    <h3 className="mt-1 text-base font-bold text-foreground">{step.name}</h3>
-                    <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{step.text}</p>
-                  </li>
-                ))}
-              </ol>
-              <BulletPanel title="If nearby practices are full" items={page.registering.closedListTips} />
-            </PremiumGuideSection>
-
-            <PremiumGuideSection
-              id="booking"
-              tipsKey="booking"
-              visual={page.visuals.booking}
-              intro={
-                <SectionIntro eyebrow="Booking" title={page.booking.heading} fullWidth>
-                  {page.booking.paragraphs.map((paragraph) => (
-                    <p key={paragraph.slice(0, 48)}>{paragraph}</p>
-                  ))}
-                </SectionIntro>
-              }
-            >
-              <BulletPanel title="Booking tips that save time" items={page.booking.tips} />
-              <BulletPanel title="What to say on the phone" items={page.booking.callScript} />
-              <ChecklistBlock title="Have this ready when you call" items={page.booking.haveReady} columns={2} />
-              <div className={guidePremiumCardGridClass(page.booking.channels.length)}>
-                {page.booking.channels.map((channel, index) => (
-                  <FeatureCard key={channel.channel} title={channel.channel} body={channel.bestFor} iconIndex={index} />
+              <div className={guidePremiumCardGridClass(page.pohGgz.cards.length)}>
+                {page.pohGgz.cards.map((card, index) => (
+                  <FeatureCard key={card.title} title={card.title} body={card.body} iconIndex={index} />
                 ))}
               </div>
-              <ScenarioTable title="Common booking situations" rows={page.booking.scenarios} />
+              <BulletPanel title="POH-GGZ essentials" items={page.pohGgz.points} />
+              <ChecklistBlock title="POH-GGZ checklist" items={page.pohGgz.checklist} columns={2} />
+              <ScenarioTable title="POH-GGZ in practice" rows={page.pohGgz.scenarios} />
+              <BulletPanel title="Tips" items={page.pohGgz.tips} />
             </PremiumGuideSection>
 
             <PremiumGuideSection
-              id="consultation"
-              tipsKey="consultation"
-              visual={page.visuals.consultation}
+              id="ggz"
+              tipsKey="ggz"
+              visual={page.visuals.ggz}
               intro={
-                <SectionIntro eyebrow="Consultation" title={page.consultation.heading} fullWidth>
-                  {page.consultation.paragraphs.map((paragraph) => (
-                    <p key={paragraph.slice(0, 48)}>{paragraph}</p>
-                  ))}
-                </SectionIntro>
-              }
-            >
-              <BulletPanel title="Three-sentence script" items={page.consultation.threeSentenceScript} />
-              <ChecklistBlock title="Prepare before you go" items={page.consultation.prepareChecklist} columns={2} />
-              <BulletPanel title="During the visit" items={page.consultation.duringVisit} />
-              <BulletPanel title="Leave with these clarified" items={page.consultation.leaveWith} />
-            </PremiumGuideSection>
-
-            <PremiumGuideSection
-              id="referrals"
-              tipsKey="referrals"
-              visual={page.visuals.referrals}
-              intro={
-                <SectionIntro eyebrow="Referrals" title={page.referrals.heading} fullWidth>
-                  {page.referrals.paragraphs.map((paragraph) => (
+                <SectionIntro eyebrow="GGZ care" title={page.ggz.heading} fullWidth>
+                  <p>{page.ggz.intro}</p>
+                  {page.ggz.paragraphs.map((paragraph) => (
                     <p key={paragraph.slice(0, 48)}>{paragraph}</p>
                   ))}
                 </SectionIntro>
               }
             >
               <InfoTable
-                columns={referralColumns}
-                rows={page.referrals.comparisonRows.map((row) => ({
-                  topic: row.topic,
-                  withReferral: row.withReferral,
-                  withoutReferral: row.withoutReferral,
+                columns={hospitalTypeColumns}
+                rows={page.ggz.rows.map((row: ComparisonRow) => ({
+                  type: row.type,
+                  focus: row.focus,
+                  whenReferred: row.whenReferred,
+                  note: row.note,
                 }))}
               />
-              <BulletPanel title="Referral practicalities" items={page.referrals.tips} />
-              <ChecklistBlock title="After the referral letter" items={page.referrals.afterReferralChecklist} columns={2} />
+              <div className={guidePremiumCardGridClass(page.ggz.cards.length)}>
+                {page.ggz.cards.map((card, index) => (
+                  <FeatureCard key={card.title} title={card.title} body={card.body} iconIndex={index} />
+                ))}
+              </div>
+              <BulletPanel title="GGZ essentials" items={page.ggz.points} />
+              <ChecklistBlock title="Before specialist GGZ intake" items={page.ggz.checklist} columns={2} />
+              <ScenarioTable title="GGZ care in practice" rows={page.ggz.scenarios} />
+              <BulletPanel title="Tips" items={page.ggz.tips} />
             </PremiumGuideSection>
 
             <PremiumGuideSection
-              id="prescriptions"
-              tipsKey="prescriptions"
-              visual={page.visuals.prescriptions}
+              id="finding"
+              tipsKey="finding"
+              visual={page.visuals.finding}
               intro={
-                <SectionIntro eyebrow="Prescriptions" title={page.prescriptions.heading} fullWidth>
-                  {page.prescriptions.paragraphs.map((paragraph) => (
+                <SectionIntro eyebrow="Finding care" title={page.finding.heading} fullWidth>
+                  {page.finding.paragraphs.map((paragraph) => (
                     <p key={paragraph.slice(0, 48)}>{paragraph}</p>
                   ))}
                 </SectionIntro>
               }
             >
-              <BulletPanel title="Prescription essentials" items={page.prescriptions.points} />
-              <BulletPanel title="Practical pharmacy tips" items={page.prescriptions.practicalTips} />
-              <ChecklistBlock title="Medication continuity checklist" items={page.prescriptions.continuityChecklist} columns={2} />
-              <ChecklistBlock title="Pharmacy setup checklist" items={page.prescriptions.pharmacyChecklist} columns={2} />
-            </PremiumGuideSection>
-
-            <PremiumGuideSection
-              id="home-visits"
-              tipsKey="homeVisits"
-              visual={page.visuals.homeVisits}
-              intro={
-                <SectionIntro eyebrow="Home visits" title={page.homeVisits.heading} fullWidth>
-                  {page.homeVisits.paragraphs.map((paragraph) => (
-                    <p key={paragraph.slice(0, 48)}>{paragraph}</p>
-                  ))}
-                </SectionIntro>
-              }
-            >
-              <BulletPanel title="When home visits are more typical" items={page.homeVisits.whenTypical} />
-              <BulletPanel title="When another route usually fits better" items={page.homeVisits.whenNotTypical} />
-              <BulletPanel title="How to request sensibly" items={page.homeVisits.tips} />
-              <BulletPanel title="What to say when requesting a visit" items={page.homeVisits.requestScript} />
-            </PremiumGuideSection>
-
-            <PremiumGuideSection
-              id="out-of-hours"
-              tipsKey="outOfHours"
-              visual={page.visuals.outOfHours}
-              intro={
-                <SectionIntro eyebrow="Out of hours" title={page.outOfHours.heading} fullWidth>
-                  {page.outOfHours.paragraphs.map((paragraph) => (
-                    <p key={paragraph.slice(0, 48)}>{paragraph}</p>
-                  ))}
-                </SectionIntro>
-              }
-            >
-              <BulletPanel title="Huisartsenpost essentials" items={page.outOfHours.points} />
-              <BulletPanel title="Find your number and what to say" items={page.outOfHours.findNumberTips} />
+              <BulletPanel title="What actually decides the route" items={page.finding.points} />
               <InfoTable
                 columns={contactRouteColumns}
-                rows={page.outOfHours.contrastRows.map((row) => ({
+                rows={page.finding.contrastRows.map((row) => ({
                   route: row.route,
                   when: row.when,
                   how: row.how,
                   note: row.note,
                 }))}
               />
+              <ChecklistBlock title="Finding-care checklist" items={page.finding.checklist} columns={2} />
+              <ScenarioTable title="Finding care in practice" rows={page.finding.scenarios} />
+              <BulletPanel title="Tips" items={page.finding.tips} />
             </PremiumGuideSection>
 
             <PremiumGuideSection
-              id="emergency-care"
-              tipsKey="emergencyCare"
-              visual={page.visuals.emergencyCare}
+              id="waiting"
+              tipsKey="waiting"
+              visual={page.visuals.waiting}
               intro={
-                <SectionIntro eyebrow="Emergencies" title={page.emergencyCare.heading} fullWidth>
-                  {page.emergencyCare.paragraphs.map((paragraph) => (
+                <SectionIntro eyebrow="Waiting times" title={page.waiting.heading} fullWidth>
+                  <p>{page.waiting.intro}</p>
+                  {page.waiting.paragraphs.map((paragraph) => (
                     <p key={paragraph.slice(0, 48)}>{paragraph}</p>
                   ))}
                 </SectionIntro>
               }
             >
-              <div className={guidePremiumCardGridClass(page.emergencyCare.numbers.length)}>
-                {page.emergencyCare.numbers.map((card, index) => (
+              <InfoTable
+                columns={[
+                  { key: "pathway", label: "Pathway" },
+                  { key: "treeknorm", label: "Treeknorm target" },
+                  { key: "indicative", label: "Indicative real-world range" },
+                  { key: "note", label: "What to do" },
+                ]}
+                rows={page.waiting.indicativeRows.map((row) => ({
+                  pathway: row.pathway,
+                  treeknorm: row.treeknorm,
+                  indicative: row.indicative,
+                  note: row.note,
+                }))}
+              />
+              <BulletPanel title="Waiting essentials" items={page.waiting.points} />
+              <ChecklistBlock title="While you wait" items={page.waiting.checklist} columns={2} />
+              <ScenarioTable title="Waiting times in practice" rows={page.waiting.scenarios} />
+              <BulletPanel title="Tips" items={page.waiting.tips} />
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="english"
+              tipsKey="english"
+              visual={page.visuals.english}
+              intro={
+                <SectionIntro eyebrow="English" title={page.english.heading} fullWidth>
+                  <p>{page.english.intro}</p>
+                  {page.english.paragraphs.map((paragraph) => (
+                    <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+                  ))}
+                </SectionIntro>
+              }
+            >
+              <div className={guidePremiumCardGridClass(page.english.cards.length)}>
+                {page.english.cards.map((card, index) => (
                   <FeatureCard key={card.title} title={card.title} body={card.body} iconIndex={index} />
                 ))}
               </div>
-              <UrgencyBoard rows={page.emergencyCare.urgencyRows} />
-              <BulletPanel title="Decision shortcuts" items={page.emergencyCare.decisionTips} />
-              <ChecklistBlock title="What to say when you call" items={page.emergencyCare.whatToSay} columns={2} />
-              <ChecklistBlock title="Prepare before you need it" items={page.emergencyCare.preparednessChecklist} columns={2} />
-              <WarningPanel title="When in doubt, call" items={[page.emergencyCare.whenInDoubt]} />
+              <BulletPanel title="Language realities" items={page.english.points} />
+              <ChecklistBlock title="Language checklist" items={page.english.checklist} columns={2} />
+              <ScenarioTable title="English-language care in practice" rows={page.english.scenarios} />
+              <BulletPanel title="Tips" items={page.english.tips} />
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="crisis"
+              tipsKey="crisis"
+              visual={page.visuals.crisis}
+              intro={
+                <SectionIntro eyebrow="Crisis" title={page.crisis.heading} fullWidth>
+                  <p>{page.crisis.intro}</p>
+                  {page.crisis.paragraphs.map((paragraph) => (
+                    <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+                  ))}
+                </SectionIntro>
+              }
+            >
+              <BulletPanel title="Crisis pathway essentials" items={page.crisis.points} />
+              <UrgencyBoard rows={page.crisis.urgencyRows} />
+              <ScenarioTable title="Crisis situations in practice" rows={page.crisis.scenarios} />
+              <WarningPanel title="Important" items={[page.crisis.disclaimer]} />
+              <BulletPanel title="Tips" items={page.crisis.tips} />
               <GuideCrossLink
-                href={EMERGENCY_HEALTHCARE_NETHERLANDS_PATH}
-                title="Emergency Healthcare in the Netherlands"
-                description="Flagship guide for 112, Huisartsenpost, SEH, ambulance and urgent-care pathways — keep the living Emergencies & Safety guide for broader day-to-day readiness."
+                href={page.crisis.crossLink.href}
+                title={page.crisis.crossLink.label}
+                description={page.crisis.crossLink.description}
                 linkLabel="Open emergency healthcare guide"
+                icon={Siren}
               />
             </PremiumGuideSection>
 
             <PremiumGuideSection
-              id="expat-differences"
-              tipsKey="expatDifferences"
-              visual={page.visuals.expatDifferences}
+              id="children-youth"
+              tipsKey="childrenYouth"
+              visual={page.visuals.childrenYouth}
               intro={
-                <SectionIntro eyebrow="For expats" title={page.expatDifferences.heading} fullWidth>
-                  {page.expatDifferences.paragraphs.map((paragraph) => (
+                <SectionIntro eyebrow="Children & youth" title={page.childrenYouth.heading} fullWidth>
+                  <p>{page.childrenYouth.intro}</p>
+                  {page.childrenYouth.paragraphs.map((paragraph) => (
                     <p key={paragraph.slice(0, 48)}>{paragraph}</p>
                   ))}
                 </SectionIntro>
               }
             >
-              <div className="grid gap-4 sm:grid-cols-2">
-                <BulletPanel title="Advantages of the huisarts model" items={page.expatDifferences.advantages} />
-                <BulletPanel title="Limitations to plan around" items={page.expatDifferences.limitations} />
+              <div className={guidePremiumCardGridClass(page.childrenYouth.cards.length)}>
+                {page.childrenYouth.cards.map((card, index) => (
+                  <FeatureCard key={card.title} title={card.title} body={card.body} iconIndex={index} />
+                ))}
               </div>
-              <div className={guidePremiumCardGridClass(page.expatDifferences.cards.length)}>
-                {page.expatDifferences.cards.map((card, index) => (
+              <BulletPanel title="Youth pathway essentials" items={page.childrenYouth.points} />
+              <ScenarioTable title="Children and youth in practice" rows={page.childrenYouth.scenarios} />
+              <BulletPanel title="Tips" items={page.childrenYouth.tips} />
+              <GuideCrossLink
+                href={page.childrenYouth.crossLink.href}
+                title={page.childrenYouth.crossLink.label}
+                description={page.childrenYouth.crossLink.description}
+                linkLabel="Open children's healthcare guide"
+                icon={Baby}
+              />
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="costs"
+              tipsKey="costs"
+              visual={page.visuals.costs}
+              intro={
+                <SectionIntro eyebrow="Costs" title={page.costs.heading} fullWidth>
+                  <p>{page.costs.intro}</p>
+                  {page.costs.paragraphs.map((paragraph) => (
+                    <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+                  ))}
+                </SectionIntro>
+              }
+            >
+              <NotePanel>{page.costs.indicativeNote}</NotePanel>
+              <InfoTable
+                columns={[
+                  { key: "item", label: "Cost item" },
+                  { key: "indicative", label: "Indicative figure" },
+                  { key: "whatYouPay", label: "What you usually pay" },
+                  { key: "note", label: "Note" },
+                ]}
+                rows={page.costs.indicativeRows.map((row) => ({
+                  item: row.item,
+                  indicative: row.indicative,
+                  whatYouPay: row.whatYouPay,
+                  note: row.note,
+                }))}
+              />
+              <div className={guidePremiumCardGridClass(page.costs.orientationCards.length)}>
+                {page.costs.orientationCards.map((card, index) => (
+                  <FeatureCard key={card.title} title={card.title} body={card.body} iconIndex={index} />
+                ))}
+              </div>
+              <BulletPanel title="What shapes the bill" items={page.costs.costFactors} />
+              <ChecklistBlock title="Costs checklist" items={page.costs.checklist} columns={2} />
+              <ScenarioTable title="Costs in practice" rows={page.costs.scenarios} />
+              <BulletPanel title="Tips" items={page.costs.tips} />
+              <GuideCrossLink
+                href={page.costs.crossLink.href}
+                title={page.costs.crossLink.label}
+                description={page.costs.crossLink.description}
+                linkLabel="Open health insurance guide"
+                icon={WalletCards}
+              />
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="patient-rights"
+              tipsKey="patientRights"
+              visual={page.visuals.patientRights}
+              intro={
+                <SectionIntro eyebrow="Patient rights" title={page.patientRights.heading} fullWidth>
+                  {page.patientRights.paragraphs.map((paragraph) => (
+                    <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+                  ))}
+                </SectionIntro>
+              }
+            >
+              <div className={guidePremiumCardGridClass(page.patientRights.cards.length)}>
+                {page.patientRights.cards.map((card, index) => (
+                  <FeatureCard key={card.title} title={card.title} body={card.body} iconIndex={index} />
+                ))}
+              </div>
+              <ChecklistBlock title="Using your rights in practice" items={page.patientRights.checklist} columns={2} />
+              <ScenarioTable title="Patient rights in practice" rows={page.patientRights.scenarios} />
+              <BulletPanel title="Tips" items={page.patientRights.tips} />
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="differences"
+              tipsKey="differences"
+              visual={page.visuals.differences}
+              intro={
+                <SectionIntro eyebrow="Differences" title={page.differences.heading} fullWidth>
+                  <p>{page.differences.intro}</p>
+                </SectionIntro>
+              }
+            >
+              <div className={guidePremiumCardGridClass(page.differences.cards.length)}>
+                {page.differences.cards.map((card, index) => (
                   <MistakeCard key={card.title} card={card} index={index} />
                 ))}
               </div>
+              <BulletPanel title="How to adapt" items={page.differences.tips} />
             </PremiumGuideSection>
 
             <PremiumGuideSection
-              id="children-family"
-              tipsKey="childrenFamily"
-              visual={page.visuals.childrenFamily}
+              id="checklist"
+              tipsKey="checklist"
+              visual={page.visuals.checklist}
               intro={
-                <SectionIntro eyebrow="Family" title={page.childrenFamily.heading} fullWidth>
-                  {page.childrenFamily.paragraphs.map((paragraph) => (
+                <SectionIntro eyebrow="Checklist" title={page.preparation.heading} fullWidth>
+                  {page.preparation.paragraphs.map((paragraph) => (
                     <p key={paragraph.slice(0, 48)}>{paragraph}</p>
                   ))}
                 </SectionIntro>
               }
             >
-              <div className={guidePremiumCardGridClass(page.childrenFamily.splitCards.length)}>
-                {page.childrenFamily.splitCards.map((card, index) => (
-                  <FeatureCard key={card.title} title={card.title} body={card.body} iconIndex={index} />
+              <ChecklistBlock title="Preparation checklist" items={page.preparation.checklist} columns={2} />
+              <div className={guidePremiumCardGridClass(page.preparation.roleCards.length)}>
+                {page.preparation.roleCards.map((role, index) => (
+                  <FeatureCard key={role.role} title={role.role} body={role.focus} iconIndex={index} />
                 ))}
               </div>
-              <BulletPanel title="Family GP practicalities" items={page.childrenFamily.points} />
-              <GuideCrossLink
-                href={page.childrenFamily.crossLink.href}
-                title={page.childrenFamily.crossLink.label}
-                description={page.childrenFamily.crossLink.description}
-                linkLabel="Open children's healthcare guide"
-              />
-            </PremiumGuideSection>
-
-            <PremiumGuideSection
-              id="mental-health"
-              tipsKey="mentalHealth"
-              visual={page.visuals.mentalHealth}
-              intro={
-                <SectionIntro eyebrow="Mental health" title={page.mentalHealth.heading} fullWidth>
-                  {page.mentalHealth.paragraphs.map((paragraph) => (
-                    <p key={paragraph.slice(0, 48)}>{paragraph}</p>
-                  ))}
-                </SectionIntro>
-              }
-            >
-              <div className={guidePremiumCardGridClass(page.mentalHealth.routes.length)}>
-                {page.mentalHealth.routes.map((route, index) => (
-                  <FeatureCard key={route.title} title={route.title} body={route.body} iconIndex={index} />
-                ))}
-              </div>
-              <BulletPanel title="Orientation points only" items={page.mentalHealth.points} />
-              <BulletPanel title="Worth discussing with your GP" items={page.mentalHealth.worthDiscussing} />
-              <NotePanel>{page.mentalHealth.disclaimer}</NotePanel>
-              <NotePanel>{page.mentalHealth.comingSoonNote}</NotePanel>
-              <GuideCrossLink
-                href={page.mentalHealth.crossLink.href}
-                title={page.mentalHealth.crossLink.label}
-                description={page.mentalHealth.crossLink.description}
-                linkLabel="Open mental healthcare guide"
-              />
+              <BulletPanel title="Tips" items={page.preparation.tips} />
             </PremiumGuideSection>
 
             <PremiumGuideSection
@@ -1300,29 +1404,15 @@ export function GpNetherlandsView() {
             </PremiumGuideSection>
 
             <PremiumGuideSection
-              id="checklist"
-              tipsKey="checklist"
-              visual={page.visuals.checklist}
-              intro={
-                <SectionIntro eyebrow="Checklist" title={page.checklist.heading} fullWidth>
-                  <p>{page.checklist.intro}</p>
-                </SectionIntro>
-              }
-            >
-              <BulletPanel title="How to use this checklist" items={page.checklist.tips} />
-              <ChecklistBlock title="Phase 1 — early research" items={page.checklist.early} columns={2} />
-              <ChecklistBlock title="Phase 2 — registration" items={page.checklist.registration} columns={2} />
-              <ChecklistBlock title="Phase 3 — readiness" items={page.checklist.readiness} columns={2} />
-              <ChecklistBlock title="Full GP setup checklist" items={page.checklist.full} columns={2} />
-            </PremiumGuideSection>
-
-            <PremiumGuideSection
               id="faq"
               tipsKey="faq"
               visual={page.visuals.faq}
               intro={
                 <SectionIntro eyebrow="FAQ" title="Frequently asked questions" fullWidth>
-                  <p>Orientation answers only — confirm practice rules, insurer contracting and your own clinical situation with professionals.</p>
+                  <p>
+                    Orientation answers only — confirm your own situation with your GP, a mental health professional and
+                    your insurer. Call 112 for immediate danger; contact 113 for suicidal thoughts.
+                  </p>
                 </SectionIntro>
               }
             >
@@ -1335,8 +1425,11 @@ export function GpNetherlandsView() {
               tipsKey="relatedGuides"
               visual={page.visuals.relatedGuides}
               intro={
-                <SectionIntro eyebrow="Related" title="Related guides for healthcare setup" fullWidth>
-                  <p>Connect GP registration with insurance, family healthcare, emergencies and living healthcare basics.</p>
+                <SectionIntro eyebrow="Related" title="Related guides for mental healthcare" fullWidth>
+                  <p>
+                    Mental healthcare connects to GP care, emergency routes, insurance and family pathways — read them
+                    together.
+                  </p>
                 </SectionIntro>
               }
             >
@@ -1354,7 +1447,7 @@ export function GpNetherlandsView() {
               visual={page.visuals.healthcareHub}
               intro={
                 <SectionIntro eyebrow="Health hub" title="Explore the healthcare cluster" fullWidth>
-                  <p>This page is the GP cornerstone — explore related health topics next.</p>
+                  <p>This page is the mental healthcare cornerstone — explore related health topics next.</p>
                 </SectionIntro>
               }
             >
@@ -1375,8 +1468,8 @@ export function GpNetherlandsView() {
               intro={
                 <SectionIntro eyebrow="Explore next" title="Plan the next step" tone="onDark" fullWidth>
                   <p>
-                    Pick the card that matches what is still open — insurance, system basics, children&apos;s care or emergencies —
-                    and verify specifics on the official sources below.
+                    Pick the card that matches what is still open — GP registration, emergency routes, insurance,
+                    children&apos;s care or loneliness support — and verify specifics on the official sources below.
                   </p>
                 </SectionIntro>
               }

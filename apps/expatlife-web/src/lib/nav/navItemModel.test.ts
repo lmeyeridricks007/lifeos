@@ -2904,6 +2904,98 @@ describe("emergency healthcare Netherlands nav active state", () => {
   });
 });
 
+describe("hospitals Netherlands nav active state", () => {
+  const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands/";
+
+  it("treats the hospitals Netherlands guide route as live", () => {
+    expect(getRouteStatus(HOSPITALS_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the hospitals Netherlands guide path", () => {
+    expect(getActiveNavKey(HOSPITALS_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Hospitals");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(HOSPITALS_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HOSPITALS_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(HOSPITALS_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits between Dentists and Emergency Healthcare in Daily life", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const dentists = labels.indexOf("Dentists");
+    const hospitals = labels.indexOf("Hospitals");
+    const emergency = labels.indexOf("Emergency Healthcare");
+
+    expect(dentists).toBeGreaterThanOrEqual(0);
+    expect(hospitals).toBe(dentists + 1);
+    expect(emergency).toBe(hospitals + 1);
+  });
+});
+
+describe("mental healthcare Netherlands nav active state", () => {
+  const MENTAL_HEALTHCARE_PATH = "/netherlands/health/mental-healthcare-netherlands/";
+
+  it("treats the mental healthcare Netherlands guide route as live", () => {
+    expect(getRouteStatus(MENTAL_HEALTHCARE_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the mental healthcare Netherlands guide path", () => {
+    expect(getActiveNavKey(MENTAL_HEALTHCARE_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Mental Healthcare");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(MENTAL_HEALTHCARE_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MENTAL_HEALTHCARE_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(MENTAL_HEALTHCARE_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits between Emergency Healthcare and Emergencies & safety in Daily life", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const emergency = labels.indexOf("Emergency Healthcare");
+    const mental = labels.indexOf("Mental Healthcare");
+    const safety = labels.indexOf("Emergencies & safety");
+
+    expect(emergency).toBeGreaterThanOrEqual(0);
+    expect(mental).toBe(emergency + 1);
+    expect(safety).toBe(mental + 1);
+  });
+});
+
 describe("rental scams Netherlands nav active state", () => {
   const RENTAL_SCAMS_PATH = "/netherlands/housing/rental-scams-netherlands/";
 

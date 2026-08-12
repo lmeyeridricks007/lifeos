@@ -464,7 +464,9 @@ function isCulturePillarPath(pathname: string): boolean {
 const LIVING_OWNED_HEALTH_FAMILY_PREFIXES: readonly string[] = [
   "/netherlands/health/gp-netherlands",
   "/netherlands/health/dentists-netherlands",
+  "/netherlands/health/hospitals-netherlands",
   "/netherlands/health/emergency-healthcare-netherlands",
+  "/netherlands/health/mental-healthcare-netherlands",
   "/netherlands/family/child-benefits-netherlands",
   /** Legacy singular URL — keep Living tab active before redirect. */
   "/netherlands/family/child-benefit-netherlands",
@@ -1634,9 +1636,19 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Finding a dentist, dental insurance, check-ups, emergency care, children's dentistry and orthodontics."
           ),
           item(
+            "Hospitals",
+            "/netherlands/health/hospitals-netherlands/",
+            "Hospital care, GP referrals, specialists, outpatient clinics, admissions, UMCs and what expats should expect."
+          ),
+          item(
             "Emergency Healthcare",
             "/netherlands/health/emergency-healthcare-netherlands/",
             "112, Huisartsenpost, SEH, ambulance, emergency pharmacy and urgent care pathways for expats."
+          ),
+          item(
+            "Mental Healthcare",
+            "/netherlands/health/mental-healthcare-netherlands/",
+            "GP first contact, POH-GGZ, GGZ specialist care, stepped care, waiting times and crisis routes for expats."
           ),
           item(
             "Emergencies & safety",

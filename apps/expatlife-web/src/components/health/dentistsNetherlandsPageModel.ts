@@ -1223,6 +1223,7 @@ export const dentistsNetherlandsPage = {
   ],
   relatedGuides: [
     { label: "General Practitioner (GP) in the Netherlands", href: GP_NETHERLANDS_PATH, status: "live", description: "Registration, appointments, referrals and emergencies with the Dutch GP." },
+    { label: "Hospitals in the Netherlands", href: "/netherlands/health/hospitals-netherlands/", status: "live", description: "GP referrals, specialists, outpatient clinics, admissions and university medical centres." },
     { label: "Health Insurance in the Netherlands", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package, deductible, choosing an insurer and supplementary cover." },
     { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "112, Huisartsenpost, SEH, ambulance and urgent-care pathways." },
     { label: "Healthcare Basics", href: HEALTHCARE_BASICS_PATH, status: "live", description: "How Dutch healthcare fits together for everyday living." },
@@ -1239,25 +1240,25 @@ export const dentistsNetherlandsPage = {
   healthcareHubCards: [
     { label: "Dentists (tandarts)", href: DENTISTS_NETHERLANDS_PATH, status: "live", description: "Finding a dentist, insurance, costs, children's dental care and emergencies — you are here." },
     { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "Huisarts registration, appointments, referrals and emergencies." },
+    { label: "Hospitals", href: "/netherlands/health/hospitals-netherlands/", status: "live", description: "Referrals, specialists, outpatient clinics, admissions and UMCs." },
     { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "112, Huisartsenpost, SEH and ambulance pathways." },
     { label: "Health Insurance", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package and insurer setup." },
     { label: "Healthcare Basics", href: HEALTHCARE_BASICS_PATH, status: "live", description: "System overview for everyday living." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "Family and children's healthcare cornerstone." },
-    { label: "Health Hub", href: HEALTH_HUB_PATH, status: "comingSoon", description: "Dedicated health hub landing page — planned." },
   ] satisfies DentistLink[],
   exploreNextCards: [
     { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "See how GP care and referrals fit alongside dental care." },
+    { label: "Hospitals", href: "/netherlands/health/hospitals-netherlands/", status: "live", description: "Understand referrals, specialists and hospital pathways." },
     { label: "Health Insurance", href: HEALTH_INSURANCE_PATH, status: "live", description: "Arrange basic cover and compare supplementary dental policies." },
     { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "Know which door to use for medical urgency and 112." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "Family GP care, JGZ, dental timing and paediatric pathways." },
-    { label: "Health System Culture", href: HEALTH_SYSTEM_CULTURE_PATH, status: "live", description: "What care conversations often feel like here." },
   ] satisfies DentistLink[],
   exploreNextTips: [
     "GP care and referrals still unclear → the GP guide.",
+    "Hospital or specialist pathway unclear → hospitals guide.",
     "Coverage questions still open → health insurance guide.",
     "Moving with children → healthcare for children.",
     "Need emergency clarity → emergency healthcare cornerstone.",
-    "Curious about interaction style → health system culture basics.",
   ],
   visualTextDetails: {
     intro: {

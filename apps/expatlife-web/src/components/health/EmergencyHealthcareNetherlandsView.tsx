@@ -1248,6 +1248,12 @@ export function EmergencyHealthcareNetherlandsView() {
               <ScenarioTable title="Mental health routes in practice" rows={page.mentalHealth.scenarios} />
               <WarningPanel title="Scope of this section" items={[page.mentalHealth.disclaimer]} />
               <BulletPanel title="Tips" items={page.mentalHealth.tips} />
+              <GuideCrossLink
+                href={page.mentalHealth.crossLink.href}
+                title={page.mentalHealth.crossLink.label}
+                description={page.mentalHealth.crossLink.description}
+                linkLabel="Open mental healthcare guide"
+              />
             </PremiumGuideSection>
 
             <PremiumGuideSection

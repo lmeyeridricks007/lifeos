@@ -895,7 +895,15 @@ export const gpNetherlandsPage = {
     ],
     disclaimer:
       "This section provides system orientation only. It does not assess, diagnose or treat mental health conditions. Seek professional help for your own situation.",
-    comingSoonNote: "A dedicated adult mental health guide is planned. Until then, start with your GP and the official crisis resources above.",
+    comingSoonNote:
+      "For the full adult mental healthcare pathway — POH-GGZ, GGZ, waiting times, English-language realities and crisis doors — open the Mental Healthcare cornerstone guide.",
+    crossLink: {
+      label: "Mental Healthcare in the Netherlands",
+      href: "/netherlands/health/mental-healthcare-netherlands/",
+      description:
+        "Full cornerstone on GP first contact, POH-GGZ, GGZ specialist care, stepped care, waiting times, English-language realities and crisis routes.",
+      status: "live" as const,
+    },
   },
   mistakes: {
     heading: "Common mistakes expats make",
@@ -1078,13 +1086,19 @@ export const gpNetherlandsPage = {
   relatedGuides: [
     { label: "Health Insurance in the Netherlands", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package, deductible, choosing an insurer and supplementary cover." },
     { label: "Dentists in the Netherlands", href: "/netherlands/health/dentists-netherlands/", status: "live", description: "Finding a dentist, dental insurance, check-ups, emergency care and orthodontics." },
+    { label: "Hospitals in the Netherlands", href: "/netherlands/health/hospitals-netherlands/", status: "live", description: "GP referrals, specialists, outpatient clinics, admissions and university medical centres." },
     { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "112, Huisartsenpost, SEH, ambulance and urgent-care pathways." },
     { label: "Healthcare Basics", href: HEALTHCARE_BASICS_PATH, status: "live", description: "How Dutch healthcare fits together for everyday living." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "GPs, JGZ, vaccinations, specialists and emergencies for children." },
     { label: "Emergencies & Safety", href: EMERGENCIES_SAFETY_PATH, status: "live", description: "Broader living guide for emergency numbers, safety and day-to-day readiness." },
     { label: "Health System Culture Basics", href: HEALTH_SYSTEM_CULTURE_PATH, status: "live", description: "How care interactions often feel in Dutch healthcare culture." },
     { label: "Pharmacies (Apotheek)", href: HEALTHCARE_BASICS_PATH + "#care-settings", status: "live", description: "Pharmacy orientation inside the healthcare basics guide until a dedicated page ships." },
-    { label: "Mental Health Guide", href: "#mental-health", status: "comingSoon", description: "Dedicated adult mental health cornerstone — planned." },
+    {
+      label: "Mental Healthcare in the Netherlands",
+      href: "/netherlands/health/mental-healthcare-netherlands/",
+      status: "live",
+      description: "GP first contact, POH-GGZ, GGZ specialist care, stepped care, waiting times and crisis routes.",
+    },
   ] satisfies GpLink[],
   healthcareHubTips: [
     "Primary care, insurance and emergencies are decided together — finish registration first.",
@@ -1094,25 +1108,27 @@ export const gpNetherlandsPage = {
   ],
   healthcareHubCards: [
     { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "Huisarts registration, appointments, referrals and emergencies — you are here." },
+    { label: "Hospitals", href: "/netherlands/health/hospitals-netherlands/", status: "live", description: "Referrals, specialists, outpatient clinics, admissions and UMCs." },
     { label: "Dentists", href: "/netherlands/health/dentists-netherlands/", status: "live", description: "Dental care, insurance, check-ups and emergency dentists." },
     { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "112, Huisartsenpost, SEH and ambulance pathways." },
+    { label: "Mental Healthcare", href: "/netherlands/health/mental-healthcare-netherlands/", status: "live", description: "GP first contact, POH-GGZ, GGZ, stepped care and crisis routes." },
     { label: "Health Insurance", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package and insurer setup." },
     { label: "Healthcare Basics", href: HEALTHCARE_BASICS_PATH, status: "live", description: "System overview for everyday living." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "Family and children's healthcare cornerstone." },
   ] satisfies GpLink[],
   exploreNextCards: [
+    { label: "Hospitals", href: "/netherlands/health/hospitals-netherlands/", status: "live", description: "Understand referrals, specialists and hospital pathways after your GP visit." },
     { label: "Health Insurance", href: HEALTH_INSURANCE_PATH, status: "live", description: "Arrange the policy that covers GP and hospital care." },
     { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "Know which door to use before the first difficult evening." },
     { label: "Healthcare Basics", href: HEALTHCARE_BASICS_PATH, status: "live", description: "See how pharmacies, hospitals and urgent care fit together." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "Family GP care, JGZ and paediatric pathways." },
-    { label: "Health System Culture", href: HEALTH_SYSTEM_CULTURE_PATH, status: "live", description: "What care conversations often feel like here." },
   ] satisfies GpLink[],
   exploreNextTips: [
+    "Need specialist or hospital clarity → hospitals guide.",
     "Coverage questions still open → health insurance guide.",
     "Want the full system map → healthcare basics.",
     "Moving with children → healthcare for children.",
     "Need emergency clarity → emergency healthcare cornerstone.",
-    "Curious about interaction style → health system culture basics.",
   ],
   visualTextDetails: {
     intro: {

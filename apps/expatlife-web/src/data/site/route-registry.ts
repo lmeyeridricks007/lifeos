@@ -403,8 +403,12 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/health/gp-netherlands/",
   /** Flagship health guide — dentists / dental care cornerstone for expats. */
   "/netherlands/health/dentists-netherlands/",
+  /** Flagship health guide — hospitals / secondary care cornerstone for expats. */
+  "/netherlands/health/hospitals-netherlands/",
   /** Flagship health guide — emergency healthcare cornerstone for expats. */
   "/netherlands/health/emergency-healthcare-netherlands/",
+  /** Flagship health guide — mental healthcare / GGZ cornerstone for expats. */
+  "/netherlands/health/mental-healthcare-netherlands/",
   /** Legacy family URL; 301 → child benefits guide — keep live so placeholder links stay clickable. */
   "/netherlands/family/child-benefit-netherlands/",
   /** Live App Router guide — pension pillar for expats (Jobs & salaries cluster). */

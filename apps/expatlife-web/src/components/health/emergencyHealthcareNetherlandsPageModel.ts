@@ -877,6 +877,13 @@ export const emergencyHealthcareNetherlandsPage = {
       "Tell triage about medicines, alcohol or substance use if relevant to safety.",
       "Ask what interim support exists while waiting for specialist follow-up.",
     ],
+    crossLink: {
+      label: "Mental Healthcare in the Netherlands",
+      href: "/netherlands/health/mental-healthcare-netherlands/",
+      description:
+        "Full cornerstone on GP first contact, POH-GGZ, GGZ specialist care, stepped care, waiting times and crisis routes beyond the emergency moment.",
+      status: "live" as const,
+    },
     contrastRows: [
       {
         route: "112",
@@ -1458,16 +1465,16 @@ export const emergencyHealthcareNetherlandsPage = {
       description: "How care interactions often feel in Dutch healthcare culture.",
     },
     {
-      label: "Hospitals Guide",
-      href: "#related-guides",
-      status: "comingSoon",
-      description: "Dedicated hospitals cornerstone — planned.",
+      label: "Hospitals in the Netherlands",
+      href: "/netherlands/health/hospitals-netherlands/",
+      status: "live",
+      description: "GP referrals, specialists, outpatient clinics, admissions, UMCs and hospital pathways for expats.",
     },
     {
-      label: "Mental Health Guide",
-      href: "#mental-health",
-      status: "comingSoon",
-      description: "Dedicated adult mental health cornerstone — planned.",
+      label: "Mental Healthcare in the Netherlands",
+      href: "/netherlands/health/mental-healthcare-netherlands/",
+      status: "live",
+      description: "GP first contact, POH-GGZ, GGZ specialist care, stepped care, waiting times and crisis routes.",
     },
   ] satisfies EmergencyLink[],
   healthcareHubTips: [
@@ -1490,6 +1497,12 @@ export const emergencyHealthcareNetherlandsPage = {
       description: "Huisarts registration, appointments, referrals and daytime urgent care.",
     },
     {
+      label: "Hospitals",
+      href: "/netherlands/health/hospitals-netherlands/",
+      status: "live",
+      description: "Referrals, specialists, outpatient clinics, admissions and UMCs.",
+    },
+    {
       label: "Health Insurance",
       href: HEALTH_INSURANCE_PATH,
       status: "live",
@@ -1500,6 +1513,12 @@ export const emergencyHealthcareNetherlandsPage = {
       href: DENTISTS_NETHERLANDS_PATH,
       status: "live",
       description: "Dental care and dental emergency routes.",
+    },
+    {
+      label: "Mental Healthcare",
+      href: "/netherlands/health/mental-healthcare-netherlands/",
+      status: "live",
+      description: "GP first contact, POH-GGZ, GGZ specialist care, stepped care and crisis routes.",
     },
     {
       label: "Healthcare for Children",
@@ -1519,12 +1538,6 @@ export const emergencyHealthcareNetherlandsPage = {
       status: "live",
       description: "Broader emergency numbers and safety orientation.",
     },
-    {
-      label: "Health Hub",
-      href: HEALTH_HUB_PATH,
-      status: "comingSoon",
-      description: "Dedicated health hub landing page — planned.",
-    },
   ] satisfies EmergencyLink[],
   exploreNextCards: [
     {
@@ -1532,6 +1545,12 @@ export const emergencyHealthcareNetherlandsPage = {
       href: GP_NETHERLANDS_PATH,
       status: "live",
       description: "Register and understand daytime urgent primary care.",
+    },
+    {
+      label: "Hospitals",
+      href: "/netherlands/health/hospitals-netherlands/",
+      status: "live",
+      description: "Understand referrals, specialists and hospital pathways.",
     },
     {
       label: "Health Insurance",
