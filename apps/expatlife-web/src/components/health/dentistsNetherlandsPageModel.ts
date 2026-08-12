@@ -8,6 +8,12 @@ export const EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety/"
 export const EMERGENCY_HEALTHCARE_NETHERLANDS_PATH =
   "/netherlands/health/emergency-healthcare-netherlands/" as const;
 export const HEALTH_SYSTEM_CULTURE_PATH = "/netherlands/culture/health-system-culture-basics/" as const;
+export const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands/" as const;
+export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-netherlands/" as const;
+export const PHYSIOTHERAPY_NETHERLANDS_PATH = "/netherlands/health/physiotherapy-netherlands/" as const;
+export const HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH =
+  "/netherlands/health/health-insurance-comparison-netherlands/" as const;
+export const HEALTH_INSURANCE_COMPARISON_PATH = HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH;
 
 export type DentistLink = {
   label: string;
@@ -1217,15 +1223,19 @@ export const dentistsNetherlandsPage = {
   relatedGuidesTips: [
     "GP care and referrals → the GP (huisarts) guide.",
     "Insurance not arranged yet → start with the health insurance guide.",
+    "Supplementary dental decision factors → health insurance comparison.",
     "Family with children → healthcare for children cornerstone.",
     "Want the wider system map → healthcare basics.",
     "Emergency planning → emergency healthcare cornerstone.",
   ],
   relatedGuides: [
     { label: "General Practitioner (GP) in the Netherlands", href: GP_NETHERLANDS_PATH, status: "live", description: "Registration, appointments, referrals and emergencies with the Dutch GP." },
-    { label: "Hospitals in the Netherlands", href: "/netherlands/health/hospitals-netherlands/", status: "live", description: "GP referrals, specialists, outpatient clinics, admissions and university medical centres." },
+    { label: "Hospitals in the Netherlands", href: HOSPITALS_NETHERLANDS_PATH, status: "live", description: "GP referrals, specialists, outpatient clinics, admissions and university medical centres." },
     { label: "Health Insurance in the Netherlands", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package, deductible, choosing an insurer and supplementary cover." },
+    { label: "Health insurance comparison", href: HEALTH_INSURANCE_COMPARISON_PATH, status: "live", description: "Decision framework for comparing policies, including supplementary dental factors — not rankings." },
     { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "112, Huisartsenpost, SEH, ambulance and urgent-care pathways." },
+    { label: "Pharmacies", href: PHARMACIES_NETHERLANDS_PATH, status: "live", description: "Finding an apotheek, hours, counseling and dienstapotheek." },
+    { label: "Physiotherapy", href: PHYSIOTHERAPY_NETHERLANDS_PATH, status: "live", description: "Fysiotherapie, direct access, insurance limits and finding a therapist." },
     { label: "Healthcare Basics", href: HEALTHCARE_BASICS_PATH, status: "live", description: "How Dutch healthcare fits together for everyday living." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "GPs, JGZ, vaccinations, dental care and emergencies for children." },
     { label: "Emergencies & Safety", href: EMERGENCIES_SAFETY_PATH, status: "live", description: "Broader living guide for emergency numbers, safety and day-to-day readiness." },
@@ -1235,21 +1245,26 @@ export const dentistsNetherlandsPage = {
     "Dental care, GP care and insurance are decided separately — register for each on its own timeline.",
     "This page is the dentistry cornerstone; the GP guide and healthcare basics cover the wider system.",
     "Families should also read the children's healthcare guide for JGZ and paediatric dental timing.",
+    "Compare supplementary dental cover with the health insurance comparison framework — not insurer rankings.",
     "A dedicated health hub landing page is planned — use the live links meanwhile.",
   ],
   healthcareHubCards: [
     { label: "Dentists (tandarts)", href: DENTISTS_NETHERLANDS_PATH, status: "live", description: "Finding a dentist, insurance, costs, children's dental care and emergencies — you are here." },
     { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "Huisarts registration, appointments, referrals and emergencies." },
-    { label: "Hospitals", href: "/netherlands/health/hospitals-netherlands/", status: "live", description: "Referrals, specialists, outpatient clinics, admissions and UMCs." },
+    { label: "Hospitals", href: HOSPITALS_NETHERLANDS_PATH, status: "live", description: "Referrals, specialists, outpatient clinics, admissions and UMCs." },
     { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "112, Huisartsenpost, SEH and ambulance pathways." },
+    { label: "Pharmacies", href: PHARMACIES_NETHERLANDS_PATH, status: "live", description: "Apotheek finding, hours, counseling and dienstapotheek." },
+    { label: "Physiotherapy", href: PHYSIOTHERAPY_NETHERLANDS_PATH, status: "live", description: "Direct access, insurance limits and finding a therapist." },
     { label: "Health Insurance", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package and insurer setup." },
+    { label: "Health insurance comparison", href: HEALTH_INSURANCE_COMPARISON_PATH, status: "live", description: "Compare policy factors including supplementary dental — not rankings." },
     { label: "Healthcare Basics", href: HEALTHCARE_BASICS_PATH, status: "live", description: "System overview for everyday living." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "Family and children's healthcare cornerstone." },
   ] satisfies DentistLink[],
   exploreNextCards: [
     { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "See how GP care and referrals fit alongside dental care." },
-    { label: "Hospitals", href: "/netherlands/health/hospitals-netherlands/", status: "live", description: "Understand referrals, specialists and hospital pathways." },
+    { label: "Hospitals", href: HOSPITALS_NETHERLANDS_PATH, status: "live", description: "Understand referrals, specialists and hospital pathways." },
     { label: "Health Insurance", href: HEALTH_INSURANCE_PATH, status: "live", description: "Arrange basic cover and compare supplementary dental policies." },
+    { label: "Health insurance comparison", href: HEALTH_INSURANCE_COMPARISON_PATH, status: "live", description: "Use the comparison framework for aanvullende dental decision factors." },
     { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "Know which door to use for medical urgency and 112." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "Family GP care, JGZ, dental timing and paediatric pathways." },
   ] satisfies DentistLink[],
@@ -1257,6 +1272,7 @@ export const dentistsNetherlandsPage = {
     "GP care and referrals still unclear → the GP guide.",
     "Hospital or specialist pathway unclear → hospitals guide.",
     "Coverage questions still open → health insurance guide.",
+    "Supplementary dental factors → health insurance comparison.",
     "Moving with children → healthcare for children.",
     "Need emergency clarity → emergency healthcare cornerstone.",
   ],

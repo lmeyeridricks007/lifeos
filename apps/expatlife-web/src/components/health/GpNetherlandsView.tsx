@@ -1128,6 +1128,18 @@ export function GpNetherlandsView() {
               <BulletPanel title="Practical pharmacy tips" items={page.prescriptions.practicalTips} />
               <ChecklistBlock title="Medication continuity checklist" items={page.prescriptions.continuityChecklist} columns={2} />
               <ChecklistBlock title="Pharmacy setup checklist" items={page.prescriptions.pharmacyChecklist} columns={2} />
+              <GuideCrossLink
+                href={page.prescriptions.crossLink.href}
+                title={page.prescriptions.crossLink.label}
+                description={page.prescriptions.crossLink.description}
+                linkLabel="Open prescriptions guide"
+              />
+              <GuideCrossLink
+                href={page.prescriptions.pharmaciesCrossLink.href}
+                title={page.prescriptions.pharmaciesCrossLink.label}
+                description={page.prescriptions.pharmaciesCrossLink.description}
+                linkLabel="Open pharmacies guide"
+              />
             </PremiumGuideSection>
 
             <PremiumGuideSection

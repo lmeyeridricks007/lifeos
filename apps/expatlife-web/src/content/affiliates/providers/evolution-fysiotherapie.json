@@ -1,0 +1,26 @@
+{
+  "id": "evolution-fysiotherapie",
+  "name": "Evolution Fysiotherapie",
+  "tagline": "English physiotherapy for expats in Amsterdam",
+  "categoryIds": ["healthcare", "physiotherapy"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["English-speaking", "Expat-focused"],
+  "highlights": [
+    "English-speaking physiotherapists",
+    "Direct access without GP referral",
+    "Amsterdam East location"
+  ],
+  "cta": {
+    "label": "View Evolution Fysiotherapie",
+    "href": "https://evolutionfysiotherapie.nl/physiotherapy-for-expats-in-amsterdam/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you use this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/placeholder-physio.svg",
+    "alt": "Evolution Fysiotherapie"
+  }
+}

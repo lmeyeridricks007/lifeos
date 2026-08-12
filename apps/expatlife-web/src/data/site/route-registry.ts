@@ -186,7 +186,12 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/taxes/cost-of-living-eindhoven/": { title: "Cost of living Eindhoven (taxes)", section: "guides" },
   /** Services hub — planned compare / provider directories (nav Soon until live). Live category pages come from `NETHERLANDS_SERVICES_CATEGORIES`. */
   "/netherlands/services/bank-comparison/": { title: "Bank comparison", section: "services" },
-  "/netherlands/services/compare-health-insurance/": { title: "Compare health insurance", section: "services" },
+  /** Legacy services path — compare guide now lives under health; keep registry title for redirects/bookmarks. */
+  "/netherlands/services/compare-health-insurance/": { title: "Compare health insurance (legacy path)", section: "services" },
+  "/netherlands/health/health-insurance-comparison-netherlands/": {
+    title: "Health insurance comparison Netherlands",
+    section: "guides",
+  },
   "/netherlands/services/expat-housing-agencies/": { title: "Expat housing agencies", section: "services" },
   "/netherlands/services/moving-companies/": { title: "Moving companies", section: "services" },
   "/netherlands/services/international-shipping/": { title: "International shipping", section: "services" },
@@ -409,6 +414,15 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/health/emergency-healthcare-netherlands/",
   /** Flagship health guide — mental healthcare / GGZ cornerstone for expats. */
   "/netherlands/health/mental-healthcare-netherlands/",
+  /** Flagship health guide — pharmacies / apotheek cornerstone for expats. */
+  "/netherlands/health/pharmacies-netherlands/",
+  "/netherlands/health/prescriptions-netherlands/",
+  /** Flagship health guide — physiotherapy / fysiotherapie cornerstone for expats. */
+  "/netherlands/health/physiotherapy-netherlands/",
+  /** Flagship health guide — maternity care / verloskunde cornerstone for expats. */
+  "/netherlands/health/maternity-care-netherlands/",
+  /** Flagship health guide — health insurance comparison framework for expats (not an insurer ranking). */
+  "/netherlands/health/health-insurance-comparison-netherlands/",
   /** Legacy family URL; 301 → child benefits guide — keep live so placeholder links stay clickable. */
   "/netherlands/family/child-benefit-netherlands/",
   /** Live App Router guide — pension pillar for expats (Jobs & salaries cluster). */

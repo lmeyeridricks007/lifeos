@@ -1,0 +1,21 @@
+{
+  "id": "nl-health-physiotherapy-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/health/physiotherapy-netherlands/",
+    "slot": "mid-page-physiotherapy-support"
+  },
+  "variant": "cards",
+  "title": "Compare cover for physio sessions",
+  "intro": "Most adult everyday physiotherapy sits in **aanvullende** packages. Use a comparison tool when checking session budgets (often around **6–52**), then confirm remaining sessions and referral rules in your insurer portal.",
+  "categoryOrder": ["insurance", "healthcare", "physiotherapy"],
+  "items": [
+    {
+      "providerId": "independer",
+      "reason": "Compare Dutch basic and supplementary insurance when checking physio session budgets (often 6–52)."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance for insurance comparison alongside English-friendly physio discovery, not pay-to-rank. This is not medical or insurance advice — confirm fit, language, credentials and insurer contracts with each provider."
+}

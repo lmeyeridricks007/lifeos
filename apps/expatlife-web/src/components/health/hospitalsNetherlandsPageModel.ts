@@ -11,6 +11,9 @@ export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-
 export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" as const;
 export const EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety/" as const;
 export const HEALTH_SYSTEM_CULTURE_PATH = "/netherlands/culture/health-system-culture-basics/" as const;
+export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-netherlands/" as const;
+export const PHYSIOTHERAPY_NETHERLANDS_PATH = "/netherlands/health/physiotherapy-netherlands/" as const;
+export const MATERNITY_CARE_NETHERLANDS_PATH = "/netherlands/health/maternity-care-netherlands/" as const;
 
 export type HospitalLink = {
   label: string;
@@ -1069,7 +1072,14 @@ export const hospitalsNetherlandsPage = {
       },
     ] satisfies TipCard[],
     comingSoonNote:
-      "A dedicated Pregnancy & Birth in the Netherlands guide is coming soon and will cover antenatal care, birth choices, kraamzorg, leave and registration in full. This section is hospital-focused orientation only.",
+      "For full antenatal care, birth choices, kraamzorg, leave and registration depth, open the Maternity care cornerstone. This section is hospital-focused orientation only.",
+    crossLink: {
+      label: "Maternity care in the Netherlands",
+      href: MATERNITY_CARE_NETHERLANDS_PATH,
+      description:
+        "Verloskundige first line, obstetric pathways, registration, insurance orientation and kraamzorg awareness.",
+      status: "live" as const,
+    },
     scenarios: [
       {
         situation: "You want to give birth in hospital without a medical indication",
@@ -1659,10 +1669,22 @@ export const hospitalsNetherlandsPage = {
       description: "GP first contact, POH-GGZ, GGZ specialist care, stepped care, waiting times and crisis routes.",
     },
     {
-      label: "Pregnancy & Birth Guide",
-      href: "#maternity",
-      status: "comingSoon",
-      description: "Antenatal care, birth choices and kraamzorg in full — planned.",
+      label: "Maternity care",
+      href: MATERNITY_CARE_NETHERLANDS_PATH,
+      status: "live",
+      description: "Verloskundige first line, obstetric pathways, registration, insurance and kraamzorg awareness.",
+    },
+    {
+      label: "Pharmacies",
+      href: PHARMACIES_NETHERLANDS_PATH,
+      status: "live",
+      description: "Apotheek finding, hours, counseling and dienstapotheek — including discharge medicine pickup.",
+    },
+    {
+      label: "Physiotherapy",
+      href: PHYSIOTHERAPY_NETHERLANDS_PATH,
+      status: "live",
+      description: "Fysiotherapie, direct access, insurance limits and post-op recovery orientation.",
     },
   ] satisfies HospitalLink[],
   healthcareHubTips: [
@@ -1670,6 +1692,7 @@ export const hospitalsNetherlandsPage = {
     "This page is the hospitals cornerstone; the GP guide covers primary care and referrals in depth.",
     "Emergency situations follow separate doors — read the emergency healthcare guide alongside this one.",
     "Families should also read the children's healthcare guide for paediatric pathways.",
+    "Maternity care owns midwife-first and kraamzorg depth; this page stays hospital-focused.",
     "A dedicated health hub landing page is planned — use the live links meanwhile.",
   ],
   healthcareHubCards: [
@@ -1696,6 +1719,24 @@ export const hospitalsNetherlandsPage = {
       href: MENTAL_HEALTHCARE_NETHERLANDS_PATH,
       status: "live",
       description: "GP first contact, POH-GGZ, GGZ specialist care and crisis routes.",
+    },
+    {
+      label: "Maternity care",
+      href: MATERNITY_CARE_NETHERLANDS_PATH,
+      status: "live",
+      description: "Midwife-first pathways, obstetric care and kraamzorg awareness.",
+    },
+    {
+      label: "Pharmacies",
+      href: PHARMACIES_NETHERLANDS_PATH,
+      status: "live",
+      description: "Apotheek finding, hours and dienstapotheek.",
+    },
+    {
+      label: "Physiotherapy",
+      href: PHYSIOTHERAPY_NETHERLANDS_PATH,
+      status: "live",
+      description: "Direct access, insurance limits and recovery pathways.",
     },
     {
       label: "Health Insurance",
@@ -1748,6 +1789,12 @@ export const hospitalsNetherlandsPage = {
       description: "Know which door to use when something is urgent tonight.",
     },
     {
+      label: "Maternity care",
+      href: MATERNITY_CARE_NETHERLANDS_PATH,
+      status: "live",
+      description: "Continue from hospital birth orientation to the full maternity pathway.",
+    },
+    {
       label: "Health Insurance",
       href: HEALTH_INSURANCE_PATH,
       status: "live",
@@ -1760,18 +1807,19 @@ export const hospitalsNetherlandsPage = {
       description: "Paediatric pathways, vaccinations and family healthcare setup.",
     },
     {
-      label: "Dentists",
-      href: DENTISTS_NETHERLANDS_PATH,
+      label: "Physiotherapy",
+      href: PHYSIOTHERAPY_NETHERLANDS_PATH,
       status: "live",
-      description: "Dental registration, insurance and emergency dental routes.",
+      description: "Post-op and recovery physiotherapy orientation.",
     },
   ] satisfies HospitalLink[],
   exploreNextTips: [
     "No referral route yet → GP guide.",
     "Urgent situation planning → emergency healthcare guide.",
+    "Birth pathway depth → maternity care guide.",
     "Coverage and invoice questions → health insurance guide.",
     "Children in hospital → healthcare for children.",
-    "Dental pathways → dentists guide.",
+    "Recovery movement care → physiotherapy guide.",
   ],
   visualTextDetails: {
     intro: {

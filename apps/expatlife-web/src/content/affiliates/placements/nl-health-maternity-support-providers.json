@@ -1,0 +1,16 @@
+{
+  "id": "nl-health-maternity-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/health/maternity-care-netherlands/",
+    "slot": "mid-page-maternity-support"
+  },
+  "variant": "cards",
+  "title": "Compare cover and plan post-birth support",
+  "intro": "Use the referral cards above for **insurance comparison** and **childcare discovery**. Midwife and kraamzorg agency registration still happens via your local maternity pathway — this page does not rank clinical providers.",
+  "categoryOrder": ["insurance", "childcare"],
+  "items": [],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance for insurance comparison and post-birth childcare discovery, not pay-to-rank. This is not medical advice — confirm midwife, hospital and kraamzorg routes locally."
+}

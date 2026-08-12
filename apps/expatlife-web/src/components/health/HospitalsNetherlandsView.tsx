@@ -1272,6 +1272,12 @@ export function HospitalsNetherlandsView() {
               }
             >
               <NotePanel>{page.maternity.comingSoonNote}</NotePanel>
+              <GuideCrossLink
+                href={page.maternity.crossLink.href}
+                title={page.maternity.crossLink.label}
+                description={page.maternity.crossLink.description}
+                linkLabel="Open maternity care guide"
+              />
               <div className={guidePremiumCardGridClass(page.maternity.cards.length)}>
                 {page.maternity.cards.map((card, index) => (
                   <FeatureCard key={card.title} title={card.title} body={card.body} iconIndex={index} />

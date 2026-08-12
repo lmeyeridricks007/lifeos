@@ -1,0 +1,26 @@
+{
+  "id": "alter-physio",
+  "name": "Alter Physio",
+  "tagline": "English physio near Amsterdam Zuidas",
+  "categoryIds": ["healthcare", "physiotherapy"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["English-speaking", "Zuidas"],
+  "highlights": [
+    "English sessions for international professionals",
+    "Near Amsterdam Zuid / Zuidas",
+    "Direct access physiotherapy"
+  ],
+  "cta": {
+    "label": "View Alter Physio",
+    "href": "https://www.alterphysio.com/physiotherapy-zuidas-amsterdam",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you use this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/placeholder-physio.svg",
+    "alt": "Alter Physio"
+  }
+}

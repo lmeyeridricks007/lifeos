@@ -1260,14 +1260,14 @@ describe("making dutch friends nav active state", () => {
     expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
   });
 
-  it("has Living > Community menu row", () => {
+  it("has Living > Life in the Netherlands menu row", () => {
     const rows = menuRowsForHref(MAKING_DUTCH_FRIENDS_PATH);
-    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Community");
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Life in the Netherlands");
   });
 
-  it("renders the Living Community menu row as active", () => {
+  it("renders the Living Life menu row as active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Community")
+      .find((section) => section.title === "Life in the Netherlands")
       ?.items.find((row) => row.href === MAKING_DUTCH_FRIENDS_PATH);
 
     expect(item).toBeDefined();
@@ -2637,9 +2637,9 @@ describe("child benefits Netherlands nav active state", () => {
     expect(getActiveNavKey(CHILD_BENEFITS_PATH)).toBe("living");
   });
 
-  it("renders the Living Benefits menu row as live and active", () => {
+  it("renders the Living Childcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Benefits")
+      .find((section) => section.title === "Childcare")
       ?.items.find((row) => row.label === "Child Benefits");
 
     expect(item).toBeDefined();
@@ -2662,12 +2662,12 @@ describe("child benefits Netherlands nav active state", () => {
     expect(getActiveNavKey(LEGACY_CHILD_BENEFIT_PATH)).toBe("living");
   });
 
-  it("has exactly one menu row, in Living > Benefits", () => {
+  it("has exactly one menu row, in Living > Childcare", () => {
     const rows = menuRowsForHref(CHILD_BENEFITS_PATH);
 
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("living");
-    expect(rows[0].sectionTitle).toBe("Benefits");
+    expect(rows[0].sectionTitle).toBe("Childcare");
   });
 });
 
@@ -2981,18 +2981,268 @@ describe("mental healthcare Netherlands nav active state", () => {
     expect(rows[0].sectionTitle).toBe("Daily life");
   });
 
-  it("sits between Emergency Healthcare and Emergencies & safety in Daily life", () => {
+  it("sits between Emergency Healthcare and Pharmacies in Daily life", () => {
     const labels =
       MEGA_MENUS.living.sections
         .find((section) => section.title === "Daily life")
         ?.items.map((row) => row.label) ?? [];
     const emergency = labels.indexOf("Emergency Healthcare");
     const mental = labels.indexOf("Mental Healthcare");
-    const safety = labels.indexOf("Emergencies & safety");
+    const pharmacies = labels.indexOf("Pharmacies");
 
     expect(emergency).toBeGreaterThanOrEqual(0);
     expect(mental).toBe(emergency + 1);
-    expect(safety).toBe(mental + 1);
+    expect(pharmacies).toBe(mental + 1);
+  });
+});
+
+describe("pharmacies Netherlands nav active state", () => {
+  const PHARMACIES_PATH = "/netherlands/health/pharmacies-netherlands/";
+
+  it("treats the pharmacies Netherlands guide route as live", () => {
+    expect(getRouteStatus(PHARMACIES_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the pharmacies Netherlands guide path", () => {
+    expect(getActiveNavKey(PHARMACIES_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Pharmacies");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(PHARMACIES_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PHARMACIES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(PHARMACIES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits between Mental Healthcare and Prescriptions in Daily life", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const mental = labels.indexOf("Mental Healthcare");
+    const pharmacies = labels.indexOf("Pharmacies");
+    const prescriptions = labels.indexOf("Prescriptions");
+    const safety = labels.indexOf("Emergencies & safety");
+
+    expect(mental).toBeGreaterThanOrEqual(0);
+    expect(pharmacies).toBe(mental + 1);
+    expect(prescriptions).toBe(pharmacies + 1);
+    expect(labels.indexOf("Physiotherapy")).toBe(prescriptions + 1);
+    expect(safety).toBe(labels.indexOf("Physiotherapy") + 1);
+  });
+});
+
+describe("prescriptions Netherlands nav active state", () => {
+  const PRESCRIPTIONS_PATH = "/netherlands/health/prescriptions-netherlands/";
+
+  it("treats the prescriptions Netherlands guide route as live", () => {
+    expect(getRouteStatus(PRESCRIPTIONS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the prescriptions Netherlands guide path", () => {
+    expect(getActiveNavKey(PRESCRIPTIONS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Prescriptions");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(PRESCRIPTIONS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PRESCRIPTIONS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(PRESCRIPTIONS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits between Pharmacies and Physiotherapy in Daily life", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const pharmacies = labels.indexOf("Pharmacies");
+    const prescriptions = labels.indexOf("Prescriptions");
+    const physiotherapy = labels.indexOf("Physiotherapy");
+    const safety = labels.indexOf("Emergencies & safety");
+
+    expect(pharmacies).toBeGreaterThanOrEqual(0);
+    expect(prescriptions).toBe(pharmacies + 1);
+    expect(physiotherapy).toBe(prescriptions + 1);
+    expect(safety).toBe(physiotherapy + 1);
+  });
+});
+
+describe("physiotherapy Netherlands nav active state", () => {
+  const PHYSIOTHERAPY_PATH = "/netherlands/health/physiotherapy-netherlands/";
+
+  it("treats the physiotherapy Netherlands guide route as live", () => {
+    expect(getRouteStatus(PHYSIOTHERAPY_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the physiotherapy Netherlands guide path", () => {
+    expect(getActiveNavKey(PHYSIOTHERAPY_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Physiotherapy");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(PHYSIOTHERAPY_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PHYSIOTHERAPY_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(PHYSIOTHERAPY_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits between Prescriptions and Maternity care in Daily life", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const prescriptions = labels.indexOf("Prescriptions");
+    const physiotherapy = labels.indexOf("Physiotherapy");
+    const maternity = labels.indexOf("Maternity care");
+
+    expect(prescriptions).toBeGreaterThanOrEqual(0);
+    expect(physiotherapy).toBe(prescriptions + 1);
+    expect(maternity).toBe(physiotherapy + 1);
+  });
+});
+
+describe("maternity care Netherlands nav active state", () => {
+  const MATERNITY_PATH = "/netherlands/health/maternity-care-netherlands/";
+
+  it("treats the maternity care Netherlands guide route as live", () => {
+    expect(getRouteStatus(MATERNITY_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the maternity care Netherlands guide path", () => {
+    expect(getActiveNavKey(MATERNITY_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Maternity care");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(MATERNITY_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MATERNITY_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(MATERNITY_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits between Physiotherapy and Health insurance comparison in Daily life", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const physiotherapy = labels.indexOf("Physiotherapy");
+    const maternity = labels.indexOf("Maternity care");
+    const comparison = labels.indexOf("Health insurance comparison");
+    const safety = labels.indexOf("Emergencies & safety");
+
+    expect(physiotherapy).toBeGreaterThanOrEqual(0);
+    expect(maternity).toBe(physiotherapy + 1);
+    expect(comparison).toBe(maternity + 1);
+    expect(safety).toBe(comparison + 1);
+  });
+});
+
+describe("health insurance comparison Netherlands nav active state", () => {
+  const COMPARISON_PATH = "/netherlands/health/health-insurance-comparison-netherlands/";
+
+  it("treats the health insurance comparison Netherlands guide route as live", () => {
+    expect(getRouteStatus(COMPARISON_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the health insurance comparison Netherlands guide path", () => {
+    expect(getActiveNavKey(COMPARISON_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Health insurance comparison");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(COMPARISON_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(COMPARISON_PATH, item!)).toBe(true);
+  });
+
+  it("updates Services Compare health insurance href to the new health route", () => {
+    const item = MEGA_MENUS.services.sections
+      .find((section) => section.title === "Health & insurance")
+      ?.items.find((row) => row.label === "Compare health insurance");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(COMPARISON_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(COMPARISON_PATH, item!)).toBe(true);
+  });
+
+  it("has Living Daily life and Services Health & insurance menu rows", () => {
+    const rows = menuRowsForHref(COMPARISON_PATH);
+    const keys = rows.map((row) => `${row.menuKey}:${row.sectionTitle}`);
+
+    expect(keys).toContain("living:Daily life");
+    expect(keys).toContain("services:Health & insurance");
+    expect(rows).toHaveLength(2);
+  });
+
+  it("sits between Maternity care and Emergencies & safety in Daily life", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const maternity = labels.indexOf("Maternity care");
+    const comparison = labels.indexOf("Health insurance comparison");
+    const safety = labels.indexOf("Emergencies & safety");
+
+    expect(maternity).toBeGreaterThanOrEqual(0);
+    expect(comparison).toBe(maternity + 1);
+    expect(safety).toBe(comparison + 1);
   });
 });
 

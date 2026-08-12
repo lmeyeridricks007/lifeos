@@ -1,0 +1,26 @@
+{
+  "id": "art-of-physio",
+  "name": "Art of Physio",
+  "tagline": "International physiotherapy team in Amsterdam Zuid",
+  "categoryIds": ["healthcare", "physiotherapy"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["English-speaking", "Expat-focused"],
+  "highlights": [
+    "International therapist team",
+    "Amsterdam Zuid location",
+    "Injury and desk-work recovery focus"
+  ],
+  "cta": {
+    "label": "View Art of Physio",
+    "href": "https://artofphysio.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you use this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/placeholder-physio.svg",
+    "alt": "Art of Physio"
+  }
+}

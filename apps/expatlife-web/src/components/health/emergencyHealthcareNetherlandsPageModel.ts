@@ -8,6 +8,11 @@ export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-
 export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" as const;
 export const EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety/" as const;
 export const HEALTH_SYSTEM_CULTURE_PATH = "/netherlands/culture/health-system-culture-basics/" as const;
+export const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands/" as const;
+export const MENTAL_HEALTHCARE_NETHERLANDS_PATH =
+  "/netherlands/health/mental-healthcare-netherlands/" as const;
+export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-netherlands/" as const;
+export const PRESCRIPTIONS_NETHERLANDS_PATH = "/netherlands/health/prescriptions-netherlands/" as const;
 
 export type EmergencyLink = {
   label: string;
@@ -960,7 +965,22 @@ export const emergencyHealthcareNetherlandsPage = {
       "Ask whether the medicine is available immediately or needs ordering.",
       "Keep packaging and instructions for your GP follow-up.",
       "For children's dosing questions, ask the pharmacist directly and state the child's age and weight if known.",
+      "For full apotheek finding, hours, OTC vs Rx and dienstapotheek depth, open the Pharmacies cornerstone.",
     ],
+    crossLink: {
+      label: "Pharmacies in the Netherlands",
+      href: PHARMACIES_NETHERLANDS_PATH,
+      description:
+        "Finding an apotheek, opening hours, OTC vs Rx, counseling and dienstapotheek depth — this emergency page orients the urgent door only.",
+      status: "live" as const,
+    },
+    prescriptionsCrossLink: {
+      label: "Prescriptions in the Netherlands",
+      href: PRESCRIPTIONS_NETHERLANDS_PATH,
+      description:
+        "Recepten, e-prescriptions, herhaalrecept, medication lists and foreign prescriptions.",
+      status: "live" as const,
+    },
     scenarios: [
       {
         situation: "Ran out of essential medicine on a Sunday",

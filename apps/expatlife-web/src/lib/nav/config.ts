@@ -467,6 +467,11 @@ const LIVING_OWNED_HEALTH_FAMILY_PREFIXES: readonly string[] = [
   "/netherlands/health/hospitals-netherlands",
   "/netherlands/health/emergency-healthcare-netherlands",
   "/netherlands/health/mental-healthcare-netherlands",
+  "/netherlands/health/pharmacies-netherlands",
+  "/netherlands/health/prescriptions-netherlands",
+  "/netherlands/health/physiotherapy-netherlands",
+  "/netherlands/health/maternity-care-netherlands",
+  "/netherlands/health/health-insurance-comparison-netherlands",
   "/netherlands/family/child-benefits-netherlands",
   /** Legacy singular URL — keep Living tab active before redirect. */
   "/netherlands/family/child-benefit-netherlands",
@@ -1410,7 +1415,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Health & insurance",
         items: [
           item("Health insurance", "/netherlands/services/health-insurance/"),
-          item("Compare health insurance", "/netherlands/services/compare-health-insurance/"),
+          item(
+            "Compare health insurance",
+            "/netherlands/health/health-insurance-comparison-netherlands/",
+            "Decision framework for comparing Dutch basic and supplementary health insurance — not an insurer ranking."
+          ),
           item(
             "Insurance providers",
             "/netherlands/services/insurance-providers/",
@@ -1476,12 +1485,47 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
     megaDensity: "full",
     sections: [
       {
-        title: "Start here",
+        title: "Life in the Netherlands",
         items: [
           item(
             "Survival Guide",
             "/netherlands/living/survival-guide/",
             "OV, apps, PIN-first payments, weather, and first-week sequencing—bookmarkable hub."
+          ),
+          item(
+            "Daily life in the Netherlands",
+            "/netherlands/living/daily-life/",
+            "Rhythms, expectations, and local life."
+          ),
+          item(
+            "Life in the Netherlands",
+            "/netherlands/life/",
+            "Hub for community, integration, social norms, dating and social life guides."
+          ),
+          item(
+            "Community basics",
+            "/netherlands/life/community-basics-netherlands/",
+            "Making friends, neighbors, clubs, volunteering and integration."
+          ),
+          item(
+            "Making Dutch Friends",
+            "/netherlands/life/making-dutch-friends/",
+            "Activity routes, sports clubs, neighbours and realistic friendship timelines."
+          ),
+          item(
+            "Expat Loneliness",
+            "/netherlands/life/expat-loneliness-netherlands/",
+            "Why loneliness is common after moving, how to rebuild community and when to seek support."
+          ),
+          item(
+            "Dutch social norms",
+            "/netherlands/life/dutch-social-norms/",
+            "Everyday etiquette, greetings, birthdays, punctuality and neighbour culture."
+          ),
+          item(
+            "Dating in the Netherlands",
+            "/netherlands/life/dating-in-the-netherlands/",
+            "Dutch dating culture, apps, singles events, sports clubs and where to meet people."
           ),
         ],
       },
@@ -1567,11 +1611,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/education/before-school-care-netherlands/",
             "Voorschoolse opvang guide — morning care, school drop-off, costs, allowance and provider orientation."
           ),
-        ],
-      },
-      {
-        title: "Benefits",
-        items: [
           item(
             "Child Benefits",
             "/netherlands/family/child-benefits-netherlands/",
@@ -1603,7 +1642,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Daily life",
         items: [
-          item("Daily life in the Netherlands", "/netherlands/living/daily-life/", "Rhythms, expectations, and local life."),
           item(
             "Payments basics",
             "/netherlands/living/payments/",
@@ -1651,6 +1689,31 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "GP first contact, POH-GGZ, GGZ specialist care, stepped care, waiting times and crisis routes for expats."
           ),
           item(
+            "Pharmacies",
+            "/netherlands/health/pharmacies-netherlands/",
+            "Dutch apotheken, opening hours, OTC vs prescription pickup, counseling and emergency pharmacy orientation."
+          ),
+          item(
+            "Prescriptions",
+            "/netherlands/health/prescriptions-netherlands/",
+            "Recepten, e-prescriptions, herhaalrecept, medication lists, insurance orientation and foreign prescriptions."
+          ),
+          item(
+            "Physiotherapy",
+            "/netherlands/health/physiotherapy-netherlands/",
+            "Fysiotherapie for expats — direct access, GP referral, finding a therapist, insurance limits and English support."
+          ),
+          item(
+            "Maternity care",
+            "/netherlands/health/maternity-care-netherlands/",
+            "Verloskundige first line, obstetric and hospital pathways, registration timing, insurance and kraamzorg awareness."
+          ),
+          item(
+            "Health insurance comparison",
+            "/netherlands/health/health-insurance-comparison-netherlands/",
+            "Compare Dutch health insurance for expats — basic vs supplementary factors, eigen risico, networks and comparison-site checks."
+          ),
+          item(
             "Emergencies & safety",
             "/netherlands/living/emergencies-safety/",
             "Emergency numbers, urgent situations, lost items, and calm readiness for day-to-day Dutch life."
@@ -1670,56 +1733,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Parking and local permits",
             "/netherlands/practical-life/parking-and-local-permits-netherlands/",
             "Resident permits, visitor passes, paid zones, parking apps and municipality permits."
-          ),
-        ],
-      },
-      {
-        title: "Life in the Netherlands",
-        items: [
-          item(
-            "Life in the Netherlands",
-            "/netherlands/life/",
-            "Hub for community, integration, social norms, dating and social life guides."
-          ),
-          item(
-            "Community basics",
-            "/netherlands/life/community-basics-netherlands/",
-            "Making friends, neighbors, clubs, volunteering and integration."
-          ),
-          item(
-            "Making Dutch Friends",
-            "/netherlands/life/making-dutch-friends/",
-            "Activity routes, sports clubs, neighbours and realistic friendship timelines."
-          ),
-          item(
-            "Expat Loneliness",
-            "/netherlands/life/expat-loneliness-netherlands/",
-            "Why loneliness is common after moving, how to rebuild community and when to seek support."
-          ),
-          item(
-            "Dutch social norms",
-            "/netherlands/life/dutch-social-norms/",
-            "Everyday etiquette, greetings, birthdays, punctuality and neighbour culture."
-          ),
-          item(
-            "Dating in the Netherlands",
-            "/netherlands/life/dating-in-the-netherlands/",
-            "Dutch dating culture, apps, singles events, sports clubs and where to meet people."
-          ),
-        ],
-      },
-      {
-        title: "Community",
-        items: [
-          item(
-            "Making Dutch Friends",
-            "/netherlands/life/making-dutch-friends/",
-            "Friendship circles, borrels, clubs, sports leagues and realistic timelines for expats."
-          ),
-          item(
-            "Expat Loneliness",
-            "/netherlands/life/expat-loneliness-netherlands/",
-            "Relocation loneliness, culture shock stages, communities and a 30-day social reset."
           ),
         ],
       },
