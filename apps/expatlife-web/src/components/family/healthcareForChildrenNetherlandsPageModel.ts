@@ -9,6 +9,18 @@ export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-
 export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
 export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands/" as const;
 export const FAMILY_HUB_PATH = PARENTING_NETHERLANDS_PATH;
+export const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands/" as const;
+export const EMERGENCY_HEALTHCARE_NETHERLANDS_PATH =
+  "/netherlands/health/emergency-healthcare-netherlands/" as const;
+export const MENTAL_HEALTHCARE_NETHERLANDS_PATH =
+  "/netherlands/health/mental-healthcare-netherlands/" as const;
+export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-netherlands/" as const;
+export const PRESCRIPTIONS_NETHERLANDS_PATH = "/netherlands/health/prescriptions-netherlands/" as const;
+export const PHYSIOTHERAPY_NETHERLANDS_PATH = "/netherlands/health/physiotherapy-netherlands/" as const;
+export const MATERNITY_CARE_NETHERLANDS_PATH = "/netherlands/health/maternity-care-netherlands/" as const;
+export const HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH =
+  "/netherlands/health/health-insurance-comparison-netherlands/" as const;
+export const HEALTH_INSURANCE_COMPARISON_PATH = HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH;
 
 export type HealthcareLink = {
   label: string;
@@ -1394,6 +1406,14 @@ export const healthcareForChildrenNetherlandsPage = {
   relatedGuides: [
     { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "Huisarts registration, appointments, referrals and out-of-hours care." },
     { label: "Health Insurance in the Netherlands", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package, deductible, choosing an insurer and supplementary cover." },
+    { label: "Health insurance comparison", href: HEALTH_INSURANCE_COMPARISON_PATH, status: "live", description: "Decision framework for comparing policies — not an insurer ranking." },
+    { label: "Maternity care", href: MATERNITY_CARE_NETHERLANDS_PATH, status: "live", description: "Verloskundige first line, obstetric pathways, registration, insurance and kraamzorg awareness." },
+    { label: "Pharmacies", href: PHARMACIES_NETHERLANDS_PATH, status: "live", description: "Finding an apotheek, hours, counseling and dienstapotheek for family medicines." },
+    { label: "Prescriptions", href: PRESCRIPTIONS_NETHERLANDS_PATH, status: "live", description: "Recepten, e-prescriptions, herhaalrecept, medication lists and foreign prescriptions." },
+    { label: "Hospitals", href: HOSPITALS_NETHERLANDS_PATH, status: "live", description: "Referrals, specialists, outpatient clinics, admissions and paediatric hospital pathways." },
+    { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "112, Huisartsenpost, SEH, ambulance and urgent-care pathways." },
+    { label: "Mental Healthcare", href: MENTAL_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "GP first contact, POH-GGZ, GGZ, stepped care, waiting times and crisis routes." },
+    { label: "Physiotherapy", href: PHYSIOTHERAPY_NETHERLANDS_PATH, status: "live", description: "Fysiotherapie, direct access, insurance limits and finding a therapist." },
     { label: "Parenting in the Netherlands", href: PARENTING_NETHERLANDS_PATH, status: "live", description: "Dutch parenting culture, daily family life and practical orientation." },
     { label: "Child Benefits", href: CHILD_BENEFITS_PATH, status: "live", description: "Kinderbijslag and financial support for families with children." },
     { label: "Daycare (Kinderopvang)", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Childcare options, costs and waiting lists for ages 0–4." },
@@ -1417,19 +1437,19 @@ export const healthcareForChildrenNetherlandsPage = {
     { label: "Moving With Kids", href: MOVING_WITH_KIDS_PATH, status: "live", description: "Relocation checklist for families with children." },
   ] satisfies HealthcareLink[],
   exploreNextCards: [
+    { label: "Maternity care", href: MATERNITY_CARE_NETHERLANDS_PATH, status: "live", description: "Midwife pathways, registration and kraamzorg before and after birth." },
     { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "Register and use the family huisarts for illness and referrals." },
+    { label: "Pharmacies", href: PHARMACIES_NETHERLANDS_PATH, status: "live", description: "Register a family apotheek and learn hours and dienstapotheek." },
+    { label: "Prescriptions", href: PRESCRIPTIONS_NETHERLANDS_PATH, status: "live", description: "Understand recepten, herhaalrecept and medication lists for children." },
+    { label: "Emergency Healthcare", href: EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, status: "live", description: "Know which door to use for paediatric urgency." },
     { label: "Health Insurance", href: HEALTH_INSURANCE_PATH, status: "live", description: "Arrange the policy that covers your children's care." },
-    { label: "Parenting", href: PARENTING_NETHERLANDS_PATH, status: "live", description: "Culture, daily life and family orientation." },
-    { label: "Child Benefits", href: CHILD_BENEFITS_PATH, status: "live", description: "Financial support for families with children." },
-    { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Childcare planning and waiting lists." },
-    { label: "Moving With Kids", href: MOVING_WITH_KIDS_PATH, status: "live", description: "Registration and arrival checklist." },
   ] satisfies HealthcareLink[],
   exploreNextTips: [
+    "Pregnancy or newborn pathway → maternity care guide.",
     "Family GP setup still open → the General Practitioner (GP) guide.",
+    "Medicines logistics → Pharmacies and Prescriptions.",
     "Coverage questions still open → open the health insurance guide first.",
     "Everyday family life and Dutch parenting norms → the parenting guide.",
-    "Childcare setup and waiting lists → daycare (and BSO once school starts).",
-    "Financial support after registration → child benefits.",
     "Still mid-relocation → the moving-with-children checklist sequences the rest.",
   ],
   visualTextDetails: {
