@@ -216,9 +216,33 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
             false
           ),
           link(
+            "Cash vs card",
+            "/netherlands/money/banking/cash-vs-card/",
+            "PIN-first shops, when cash still helps, contactless habits, and calm tourist/expat till scenarios",
+            false
+          ),
+          link(
+            "Debit cards",
+            "/netherlands/money/banking/debit-cards/",
+            "Dutch debit / PIN culture: pinpas, Maestro and Debit Mastercard norms, shops, ATMs, credit-first habit shifts",
+            false
+          ),
+          link(
+            "Credit cards",
+            "/netherlands/money/banking/credit-cards/",
+            "How credit fits Dutch payment culture: availability, when useful, fees orientation, and credit vs debit for everyday spend",
+            false
+          ),
+          link(
             "International transfers",
             "/netherlands/money/banking/international-transfers/",
             "Send money abroad from the Netherlands — banks, apps, specialists, FX markups, and hidden costs",
+            false
+          ),
+          link(
+            "Wise vs Revolut",
+            "/netherlands/money/banking/wise-vs-revolut/",
+            "Multi-currency and app banking decision orientation for expats — fit signals, fees/FX framing, Dutch-account pairing",
             false
           ),
           link(
@@ -494,9 +518,33 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
             false
           ),
           link(
+            "Cash vs card",
+            "/netherlands/money/banking/cash-vs-card/",
+            "PIN-first shops, when cash still helps, contactless habits, and calm tourist/expat till scenarios",
+            false
+          ),
+          link(
+            "Debit cards",
+            "/netherlands/money/banking/debit-cards/",
+            "Dutch debit / PIN culture: pinpas, Maestro and Debit Mastercard norms, shops, ATMs, credit-first habit shifts",
+            false
+          ),
+          link(
+            "Credit cards",
+            "/netherlands/money/banking/credit-cards/",
+            "How credit fits Dutch payment culture: availability, when useful, fees orientation, and credit vs debit for everyday spend",
+            false
+          ),
+          link(
             "International transfers",
             "/netherlands/money/banking/international-transfers/",
             "Compare banks, digital providers, and transfer services — fees, FX, speed, and amount received",
+            false
+          ),
+          link(
+            "Wise vs Revolut",
+            "/netherlands/money/banking/wise-vs-revolut/",
+            "Multi-currency and app banking decision orientation — fit signals, fees/FX framing, Dutch-account pairing",
             false
           ),
           link(

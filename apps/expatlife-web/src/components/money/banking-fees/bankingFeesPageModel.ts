@@ -342,6 +342,30 @@ export const bankingFeesPageModel = {
         ctaLabel: "Open payments guide",
       },
       {
+        title: "Cash vs card",
+        description: "Everyday till culture — when cash, PIN debit, or contactless tends to fit.",
+        href: "/netherlands/money/banking/cash-vs-card/",
+        ctaLabel: "Open guide",
+      },
+      {
+        title: "Debit cards",
+        description: "Pinpas and PIN culture before you compare debit-related fee lines.",
+        href: "/netherlands/money/banking/debit-cards/",
+        ctaLabel: "Open guide",
+      },
+      {
+        title: "Credit cards",
+        description: "Credit availability and fee/interest orientation — verify issuer price lists.",
+        href: "/netherlands/money/banking/credit-cards/",
+        ctaLabel: "Open guide",
+      },
+      {
+        title: "Wise vs Revolut",
+        description: "App-layer and multi-currency fee/FX framing beside a Dutch everyday account.",
+        href: "/netherlands/money/banking/wise-vs-revolut/",
+        ctaLabel: "Open guide",
+      },
+      {
         title: "Banking safety & fraud",
         description: "Spot phishing and payment-request scams before fee shopping turns into rushed transfers.",
         href: "/netherlands/money/banking/security/",

@@ -725,7 +725,7 @@ export const pharmaciesNetherlandsPage = {
       {
         situation: "You want to set up automatic repeats",
         approach:
-          "That is a prescriptions-workflow topic. Use your pharmacy and GP processes, and watch for the Prescriptions cornerstone.",
+          "That is a prescriptions-workflow topic. Use your pharmacy and GP processes, then open the Prescriptions cornerstone for herhaalrecept depth.",
         firstStep: "Ask your current pharmacy what repeat options they support at a high level, then follow clinician rules.",
       },
     ] satisfies ScenarioRow[],
@@ -739,8 +739,8 @@ export const pharmaciesNetherlandsPage = {
       label: "Prescriptions in the Netherlands",
       href: PRESCRIPTIONS_NETHERLANDS_PATH,
       description:
-        "Planned deep guide for herhaalrecept, e-prescription mechanics and repeat workflows — this pharmacies page stays at overall orientation.",
-      status: "comingSoon" as const,
+        "Deep guide for herhaalrecept, e-prescription mechanics and repeat workflows — this pharmacies page stays at apotheek operations.",
+      status: "live" as const,
     },
   },
   serviceDesk: {
@@ -1339,11 +1339,14 @@ export const pharmaciesNetherlandsPage = {
     { label: "Health Insurance", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package, deductible and choosing an insurer." },
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "Family healthcare pathways from birth through adolescence." },
     { label: "Prescriptions", href: PRESCRIPTIONS_NETHERLANDS_PATH, status: "live", description: "Recepten, e-prescriptions, herhaalrecept, medication lists and foreign prescriptions." },
+    { label: "Physiotherapy", href: PHYSIOTHERAPY_NETHERLANDS_PATH, status: "live", description: "Fysiotherapie, direct access, insurance limits and finding a therapist." },
+    { label: "Maternity care", href: MATERNITY_CARE_NETHERLANDS_PATH, status: "live", description: "Verloskundige first line, obstetric pathways, registration, insurance and kraamzorg awareness." },
+    { label: "Health insurance comparison", href: HEALTH_INSURANCE_COMPARISON_PATH, status: "live", description: "Decision framework for comparing Dutch health insurance — not an insurer ranking." },
     { label: "Healthcare Basics", href: HEALTHCARE_BASICS_PATH, status: "live", description: "How Dutch healthcare fits together for everyday living." },
   ] satisfies PharmacyLink[],
   healthcareHubTips: [
     "Pharmacies connect GP care, prescriptions, insurance and urgent routes.",
-    "This page is the pharmacies cornerstone; Prescriptions will go deeper on repeats.",
+    "This page is the pharmacies cornerstone; Prescriptions goes deeper on repeats.",
     "Keep Emergency Healthcare bookmarked for after-hours medicine urgency.",
     "Families should also read Healthcare for Children for paediatric pathways.",
   ],

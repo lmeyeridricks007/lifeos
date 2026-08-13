@@ -1319,25 +1319,14 @@ describe("dutch holidays and traditions nav active state", () => {
     expect(isNavItemActive(HOLIDAYS_PATH, item)).toBe(true);
   });
 
-  it("has Living > Culture menu row", () => {
-    const rows = menuRowsForHref(HOLIDAYS_PATH);
-    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Culture");
-  });
-
   it("has Culture > Social norms menu row", () => {
     const rows = menuRowsForHref(HOLIDAYS_PATH);
     expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
   });
 
-  it("renders the Living Culture menu row as active", () => {
-    const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Culture")
-      ?.items.find((row) => row.href === HOLIDAYS_PATH);
-
-    expect(item).toBeDefined();
-    expect(item?.navStatus).toBe("live");
-    expect(isNavItemLinkable(item!)).toBe(true);
-    expect(isNavItemActive(HOLIDAYS_PATH, item!)).toBe(true);
+  it("does not duplicate the guide under Living", () => {
+    const livingRows = menuRowsForHref(HOLIDAYS_PATH).filter((row) => row.menuKey === "living");
+    expect(livingRows).toHaveLength(0);
   });
 
   it("renders the Culture mega menu row as an active link", () => {
@@ -1376,25 +1365,14 @@ describe("dutch birthday traditions nav active state", () => {
     expect(isNavItemActive(BIRTHDAY_PATH, item)).toBe(true);
   });
 
-  it("has Living > Culture menu row", () => {
-    const rows = menuRowsForHref(BIRTHDAY_PATH);
-    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Culture");
-  });
-
   it("has Culture > Social norms menu row", () => {
     const rows = menuRowsForHref(BIRTHDAY_PATH);
     expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
   });
 
-  it("renders the Living Culture menu row as active", () => {
-    const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Culture")
-      ?.items.find((row) => row.href === BIRTHDAY_PATH);
-
-    expect(item).toBeDefined();
-    expect(item?.navStatus).toBe("live");
-    expect(isNavItemLinkable(item!)).toBe(true);
-    expect(isNavItemActive(BIRTHDAY_PATH, item!)).toBe(true);
+  it("does not duplicate the guide under Living", () => {
+    const livingRows = menuRowsForHref(BIRTHDAY_PATH).filter((row) => row.menuKey === "living");
+    expect(livingRows).toHaveLength(0);
   });
 
   it("renders the Culture mega menu row as an active link", () => {
@@ -1437,32 +1415,14 @@ describe("dutch etiquette nav active state", () => {
     expect(isNavItemActive(ETIQUETTE_PATH, item)).toBe(true);
   });
 
-  it("has Living > Culture menu row", () => {
-    const rows = menuRowsForHref(ETIQUETTE_PATH);
-    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Culture");
-  });
-
   it("has Culture > Social norms menu row", () => {
     const rows = menuRowsForHref(ETIQUETTE_PATH);
     expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
   });
 
-  it("does not duplicate the guide under Living > Life in the Netherlands", () => {
-    const rows = menuRowsForHref(ETIQUETTE_PATH);
-    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).not.toContain(
-      "living:Life in the Netherlands"
-    );
-  });
-
-  it("renders the Living Culture menu row as active", () => {
-    const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Culture")
-      ?.items.find((row) => row.href === ETIQUETTE_PATH);
-
-    expect(item).toBeDefined();
-    expect(item?.navStatus).toBe("live");
-    expect(isNavItemLinkable(item!)).toBe(true);
-    expect(isNavItemActive(ETIQUETTE_PATH, item!)).toBe(true);
+  it("does not duplicate the guide under Living", () => {
+    const livingRows = menuRowsForHref(ETIQUETTE_PATH).filter((row) => row.menuKey === "living");
+    expect(livingRows).toHaveLength(0);
   });
 
   it("renders the Culture mega menu row as an active link", () => {
@@ -1501,36 +1461,18 @@ describe("dutch humour nav active state", () => {
     expect(isNavItemActive(HUMOUR_PATH, item)).toBe(true);
   });
 
-  it("has Living > Culture menu row", () => {
-    const rows = menuRowsForHref(HUMOUR_PATH);
-    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Culture");
-  });
-
   it("has Culture > Social norms menu row", () => {
     const rows = menuRowsForHref(HUMOUR_PATH);
     expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
   });
 
-  it("does not duplicate the guide under Living > Life in the Netherlands", () => {
-    const rows = menuRowsForHref(HUMOUR_PATH);
-    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).not.toContain(
-      "living:Life in the Netherlands"
-    );
+  it("does not duplicate the guide under Living", () => {
+    const livingRows = menuRowsForHref(HUMOUR_PATH).filter((row) => row.menuKey === "living");
+    expect(livingRows).toHaveLength(0);
   });
 
-  it("appears in exactly two mega menu sections (Living Culture + Culture Social norms)", () => {
-    expect(menuRowsForHref(HUMOUR_PATH)).toHaveLength(2);
-  });
-
-  it("renders the Living Culture menu row as active", () => {
-    const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Culture")
-      ?.items.find((row) => row.href === HUMOUR_PATH);
-
-    expect(item).toBeDefined();
-    expect(item?.navStatus).toBe("live");
-    expect(isNavItemLinkable(item!)).toBe(true);
-    expect(isNavItemActive(HUMOUR_PATH, item!)).toBe(true);
+  it("appears in exactly one mega menu section (Culture Social norms)", () => {
+    expect(menuRowsForHref(HUMOUR_PATH)).toHaveLength(1);
   });
 
   it("renders the Culture mega menu row as an active link", () => {
@@ -1569,14 +1511,14 @@ describe("dutch culture nav active state", () => {
     expect(isNavItemActive(CULTURE_PATH, item)).toBe(true);
   });
 
-  it("has Living > Culture menu row", () => {
+  it("has Culture > Social norms menu row", () => {
     const rows = menuRowsForHref(CULTURE_PATH);
-    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("living:Culture");
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`)).toContain("culture:Social norms");
   });
 
-  it("does not duplicate Dutch Culture in a standalone Culture hub column", () => {
-    const rows = menuRowsForHref(CULTURE_PATH).filter((row) => row.menuKey === "culture");
-    expect(rows.map((row) => row.sectionTitle)).not.toContain("Culture hub");
+  it("does not duplicate the guide under Living", () => {
+    const livingRows = menuRowsForHref(CULTURE_PATH).filter((row) => row.menuKey === "living");
+    expect(livingRows).toHaveLength(0);
   });
 
   it("features Dutch Culture as the Culture pillar entry", () => {
@@ -1585,11 +1527,14 @@ describe("dutch culture nav active state", () => {
     expect(isNavItemActive(CULTURE_PATH, MEGA_MENUS.culture.featured!)).toBe(true);
   });
 
-  it("does not list Dutch Culture in a Culture mega menu section column", () => {
-    const sectionRows = MEGA_MENUS.culture.sections
-      .flatMap((section) => section.items)
-      .filter((navItem) => navItem.href === CULTURE_PATH);
-    expect(sectionRows).toHaveLength(0);
+  it("lists Dutch Culture in Culture > Social norms", () => {
+    const item = MEGA_MENUS.culture.sections
+      .find((section) => section.title === "Social norms")
+      ?.items.find((row) => row.href === CULTURE_PATH);
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CULTURE_PATH, item!)).toBe(true);
   });
 });
 
@@ -3321,5 +3266,336 @@ describe("expat loneliness Netherlands nav active state", () => {
     expect(keys).toContain("living:Life in the Netherlands");
     expect(keys).toContain("culture:Social norms");
     expect(rows).toHaveLength(2);
+  });
+});
+
+describe("cash vs card Netherlands nav active state", () => {
+  const CASH_VS_CARD_PATH = "/netherlands/money/banking/cash-vs-card/";
+
+  it("treats the cash vs card guide route as live", () => {
+    expect(getRouteStatus(CASH_VS_CARD_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the cash vs card guide path", () => {
+    expect(getActiveNavKey(CASH_VS_CARD_PATH)).toBe("money");
+  });
+
+  it("renders the Money Banking menu row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Banking")
+      ?.items.find((row) => row.label === "Cash vs card");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(CASH_VS_CARD_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CASH_VS_CARD_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Banking", () => {
+    const rows = menuRowsForHref(CASH_VS_CARD_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Banking");
+  });
+
+  it("sits between How payments work and Banking fees & costs", () => {
+    const labels =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Banking")
+        ?.items.map((row) => row.label) ?? [];
+    const howPayments = labels.indexOf("How payments work");
+    const cashVsCard = labels.indexOf("Cash vs card");
+    const debitCards = labels.indexOf("Debit cards");
+    const creditCards = labels.indexOf("Credit cards");
+    const fees = labels.indexOf("Banking fees & costs");
+
+    expect(howPayments).toBeGreaterThanOrEqual(0);
+    expect(cashVsCard).toBe(howPayments + 1);
+    expect(debitCards).toBe(cashVsCard + 1);
+    expect(creditCards).toBe(debitCards + 1);
+    expect(fees).toBe(creditCards + 1);
+  });
+});
+
+describe("debit cards Netherlands nav active state", () => {
+  const DEBIT_CARDS_PATH = "/netherlands/money/banking/debit-cards/";
+
+  it("treats the debit cards guide route as live", () => {
+    expect(getRouteStatus(DEBIT_CARDS_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the debit cards guide path", () => {
+    expect(getActiveNavKey(DEBIT_CARDS_PATH)).toBe("money");
+  });
+
+  it("renders the Money Banking menu row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Banking")
+      ?.items.find((row) => row.label === "Debit cards");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(DEBIT_CARDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DEBIT_CARDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Banking", () => {
+    const rows = menuRowsForHref(DEBIT_CARDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Banking");
+  });
+
+  it("sits between Cash vs card and Credit cards", () => {
+    const labels =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Banking")
+        ?.items.map((row) => row.label) ?? [];
+    const cashVsCard = labels.indexOf("Cash vs card");
+    const debitCards = labels.indexOf("Debit cards");
+    const creditCards = labels.indexOf("Credit cards");
+
+    expect(cashVsCard).toBeGreaterThanOrEqual(0);
+    expect(debitCards).toBe(cashVsCard + 1);
+    expect(creditCards).toBe(debitCards + 1);
+  });
+});
+
+describe("credit cards Netherlands nav active state", () => {
+  const CREDIT_CARDS_PATH = "/netherlands/money/banking/credit-cards/";
+
+  it("treats the credit cards guide route as live", () => {
+    expect(getRouteStatus(CREDIT_CARDS_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the credit cards guide path", () => {
+    expect(getActiveNavKey(CREDIT_CARDS_PATH)).toBe("money");
+  });
+
+  it("renders the Money Banking menu row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Banking")
+      ?.items.find((row) => row.label === "Credit cards");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(CREDIT_CARDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CREDIT_CARDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Banking", () => {
+    const rows = menuRowsForHref(CREDIT_CARDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Banking");
+  });
+
+  it("sits between Debit cards and Banking fees & costs", () => {
+    const labels =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Banking")
+        ?.items.map((row) => row.label) ?? [];
+    const debitCards = labels.indexOf("Debit cards");
+    const creditCards = labels.indexOf("Credit cards");
+    const fees = labels.indexOf("Banking fees & costs");
+
+    expect(debitCards).toBeGreaterThanOrEqual(0);
+    expect(creditCards).toBe(debitCards + 1);
+    expect(fees).toBe(creditCards + 1);
+  });
+});
+
+describe("Wise vs Revolut Netherlands nav active state", () => {
+  const WISE_VS_REVOLUT_PATH = "/netherlands/money/banking/wise-vs-revolut/";
+
+  it("treats the Wise vs Revolut guide route as live", () => {
+    expect(getRouteStatus(WISE_VS_REVOLUT_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the Wise vs Revolut guide path", () => {
+    expect(getActiveNavKey(WISE_VS_REVOLUT_PATH)).toBe("money");
+  });
+
+  it("renders the Money Banking menu row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Banking")
+      ?.items.find((row) => row.label === "Wise vs Revolut");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(WISE_VS_REVOLUT_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(WISE_VS_REVOLUT_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Banking", () => {
+    const rows = menuRowsForHref(WISE_VS_REVOLUT_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Banking");
+  });
+
+  it("sits after International transfers and leaves FX abroad as a separate roadmap row", () => {
+    const labels =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Banking")
+        ?.items.map((row) => row.label) ?? [];
+    const internationalTransfers = labels.indexOf("International transfers");
+    const wiseVsRevolut = labels.indexOf("Wise vs Revolut");
+    const fxAbroad = labels.indexOf("FX abroad");
+
+    expect(internationalTransfers).toBeGreaterThanOrEqual(0);
+    expect(wiseVsRevolut).toBe(internationalTransfers + 1);
+    expect(fxAbroad).toBeGreaterThan(wiseVsRevolut);
+    expect(labels.filter((label) => label === "Wise vs Revolut")).toHaveLength(1);
+  });
+});
+
+describe("best banks for expats Netherlands nav active state", () => {
+  const BEST_BANKS_EXPATS_PATH = "/netherlands/money/banking/best-banks-expats/";
+
+  it("treats the best banks for expats guide route as live", () => {
+    expect(getRouteStatus(BEST_BANKS_EXPATS_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the best banks for expats guide path", () => {
+    expect(getActiveNavKey(BEST_BANKS_EXPATS_PATH)).toBe("money");
+  });
+
+  it("renders the Money Banking menu row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Banking")
+      ?.items.find((row) => row.label === "Best banks for expats");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(BEST_BANKS_EXPATS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BEST_BANKS_EXPATS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Banking", () => {
+    const rows = menuRowsForHref(BEST_BANKS_EXPATS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Banking");
+  });
+
+  it("sits between Traditional vs digital banks and International transfers", () => {
+    const labels =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Banking")
+        ?.items.map((row) => row.label) ?? [];
+    const tradDigital = labels.indexOf("Traditional vs digital banks");
+    const bestBanks = labels.indexOf("Best banks for expats");
+    const transfers = labels.indexOf("International transfers");
+
+    expect(tradDigital).toBeGreaterThanOrEqual(0);
+    expect(bestBanks).toBe(tradDigital + 1);
+    expect(transfers).toBe(bestBanks + 1);
+  });
+});
+
+describe("international transfers Netherlands nav active state", () => {
+  const INTERNATIONAL_TRANSFERS_FROM_NL_PATH = "/netherlands/money/banking/international-transfers/";
+
+  it("treats the international transfers guide route as live", () => {
+    expect(getRouteStatus(INTERNATIONAL_TRANSFERS_FROM_NL_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the international transfers guide path", () => {
+    expect(getActiveNavKey(INTERNATIONAL_TRANSFERS_FROM_NL_PATH)).toBe("money");
+  });
+
+  it("renders the Money Banking menu row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Banking")
+      ?.items.find((row) => row.label === "International transfers");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(INTERNATIONAL_TRANSFERS_FROM_NL_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(INTERNATIONAL_TRANSFERS_FROM_NL_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Banking", () => {
+    const rows = menuRowsForHref(INTERNATIONAL_TRANSFERS_FROM_NL_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Banking");
+  });
+
+  it("sits between Best banks for expats and Wise vs Revolut", () => {
+    const labels =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Banking")
+        ?.items.map((row) => row.label) ?? [];
+    const bestBanks = labels.indexOf("Best banks for expats");
+    const transfers = labels.indexOf("International transfers");
+    const wiseVsRevolut = labels.indexOf("Wise vs Revolut");
+    const safety = labels.indexOf("Banking safety & fraud");
+
+    expect(bestBanks).toBeGreaterThanOrEqual(0);
+    expect(transfers).toBe(bestBanks + 1);
+    expect(wiseVsRevolut).toBe(transfers + 1);
+    expect(safety).toBe(wiseVsRevolut + 1);
+  });
+});
+
+describe("open bank account Netherlands nav active state", () => {
+  const OPEN_BANK_ACCOUNT_NETHERLANDS_PATH = "/netherlands/open-bank-account-netherlands/";
+  /** Nav config authors this href without a trailing slash. */
+  const OPEN_BANK_ACCOUNT_NAV_HREF = "/netherlands/open-bank-account-netherlands";
+
+  it("treats the open bank account guide route as live", () => {
+    expect(getRouteStatus(OPEN_BANK_ACCOUNT_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Move for the open bank account guide path", () => {
+    expect(getActiveNavKey(OPEN_BANK_ACCOUNT_NETHERLANDS_PATH)).toBe("moving");
+  });
+
+  it("renders the Move Early setup Open a bank account row as live and active", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Early setup")
+      ?.items.find((row) => row.label === "Open a bank account");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(OPEN_BANK_ACCOUNT_NAV_HREF);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(OPEN_BANK_ACCOUNT_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Move > Early setup", () => {
+    const rows = menuRowsForHref(OPEN_BANK_ACCOUNT_NAV_HREF);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("moving");
+    expect(rows[0].sectionTitle).toBe("Early setup");
+  });
+
+  it("does not duplicate Open a bank account under Money > Banking", () => {
+    const moneyBankingRows =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Banking")
+        ?.items.filter(
+          (row) =>
+            row.label === "Open a bank account" ||
+            row.href === OPEN_BANK_ACCOUNT_NAV_HREF ||
+            row.href === OPEN_BANK_ACCOUNT_NETHERLANDS_PATH
+        ) ?? [];
+
+    expect(moneyBankingRows).toHaveLength(0);
   });
 });

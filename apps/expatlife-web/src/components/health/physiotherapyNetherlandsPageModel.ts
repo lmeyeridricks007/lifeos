@@ -1393,6 +1393,18 @@ export const physiotherapyNetherlandsPage = {
       description: "Recepten, e-prescriptions and medication lists around recovery.",
     },
     {
+      label: "Maternity care",
+      href: MATERNITY_CARE_NETHERLANDS_PATH,
+      status: "live",
+      description: "Verloskundige first line, obstetric pathways and kraamzorg awareness.",
+    },
+    {
+      label: "Health insurance comparison",
+      href: HEALTH_INSURANCE_COMPARISON_PATH,
+      status: "live",
+      description: "Decision framework for comparing policies — including physio session logic.",
+    },
+    {
       label: "Mental Healthcare",
       href: MENTAL_HEALTHCARE_NETHERLANDS_PATH,
       status: "live",
@@ -1665,7 +1677,7 @@ export const physiotherapyNetherlandsPage = {
         "Physiotherapy cornerstone (this page).",
         "GP, hospitals, emergency, insurance.",
         "Pharmacies, prescriptions, mental health.",
-        "Live: maternity care; planned: insurance comparison.",
+        "Live: maternity care; live: insurance comparison.",
       ],
     },
     exploreNext: {

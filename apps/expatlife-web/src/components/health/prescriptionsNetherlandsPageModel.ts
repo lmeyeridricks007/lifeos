@@ -1379,6 +1379,24 @@ export const prescriptionsNetherlandsPage = {
       description: "Family healthcare pathways from birth through adolescence.",
     },
     {
+      label: "Physiotherapy",
+      href: PHYSIOTHERAPY_NETHERLANDS_PATH,
+      status: "live",
+      description: "Fysiotherapie, direct access, insurance limits and finding a therapist.",
+    },
+    {
+      label: "Maternity care",
+      href: MATERNITY_CARE_NETHERLANDS_PATH,
+      status: "live",
+      description: "Verloskundige first line, obstetric pathways, registration, insurance and kraamzorg awareness.",
+    },
+    {
+      label: "Health insurance comparison",
+      href: HEALTH_INSURANCE_COMPARISON_PATH,
+      status: "live",
+      description: "Decision framework for comparing Dutch health insurance — not an insurer ranking.",
+    },
+    {
       label: "Healthcare Basics",
       href: HEALTHCARE_BASICS_PATH,
       status: "live",

@@ -1223,6 +1223,21 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Your account number, paying on Dutch websites, bank transfers, cards in shops, rent, salary, and bills — without jargon."
           ),
           item(
+            "Cash vs card",
+            "/netherlands/money/banking/cash-vs-card/",
+            "PIN-first shops, when cash still helps, contactless habits, and calm tourist/expat till scenarios — everyday payment culture."
+          ),
+          item(
+            "Debit cards",
+            "/netherlands/money/banking/debit-cards/",
+            "Dutch debit / PIN culture: pinpas basics, Maestro and Debit Mastercard norms, shops, ATMs, and credit-first habit shifts."
+          ),
+          item(
+            "Credit cards",
+            "/netherlands/money/banking/credit-cards/",
+            "How credit fits Dutch payment culture: availability, when useful, fees orientation, and credit vs debit for everyday spend."
+          ),
+          item(
             "Banking fees & costs",
             "/netherlands/money/banking/fees/",
             "Simple guide: common bank charges in the Netherlands, what to check on each bank’s website, and how to compare costs."
@@ -1246,6 +1261,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "International transfers",
             "/netherlands/money/banking/international-transfers/",
             "Sending money abroad from a Dutch account: fees, exchange rates, timing, and what to check before you send."
+          ),
+          item(
+            "Wise vs Revolut",
+            "/netherlands/money/banking/wise-vs-revolut/",
+            "Decision orientation for multi-currency and app banking: when each tends to fit, fees/FX framing, and Dutch-account pairing — not a winner ranking."
           ),
           item(
             "Banking safety & fraud",
@@ -1737,36 +1757,6 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         ],
       },
       {
-        title: "Culture",
-        items: [
-          item(
-            "Dutch Culture",
-            "/netherlands/life/dutch-culture/",
-            "Broad overview of Dutch culture, traditions and integration context."
-          ),
-          item(
-            "Dutch Holidays & Traditions",
-            "/netherlands/life/dutch-holidays-and-traditions/",
-            "King's Day, Sinterklaas, Christmas, public holidays and the annual calendar."
-          ),
-          item(
-            "Dutch Birthday Traditions",
-            "/netherlands/life/dutch-birthday-traditions/",
-            "Circle parties, congratulations, gifts and birthday etiquette for expats."
-          ),
-          item(
-            "Dutch Etiquette",
-            "/netherlands/life/dutch-etiquette/",
-            "Practical manners for greetings, dining, neighbours, gifts and everyday life."
-          ),
-          item(
-            "Dutch Humour Explained",
-            "/netherlands/life/dutch-humour/",
-            "Dry wit, sarcasm, teasing and how humour connects to Dutch directness."
-          ),
-        ],
-      },
-      {
         title: "Digital life / admin-light",
         items: [
           item("DigiD awareness", "/netherlands/practical-life/digid-netherlands/", "Digital identity setup after registration."),
@@ -1820,6 +1810,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Social norms",
         items: [
+          item(
+            "Dutch Culture",
+            "/netherlands/life/dutch-culture/",
+            "Flagship overview of Dutch values, traditions, daily life and integration context for expats."
+          ),
           item("Dutch social norms", "/netherlands/life/dutch-social-norms/", "Everyday social expectations, greetings and unwritten rules."),
           item("Dutch Etiquette", "/netherlands/life/dutch-etiquette/", "Practical manners for greetings, dining, neighbours, gifts and everyday life."),
           item("Dutch Humour Explained", "/netherlands/life/dutch-humour/", "Dry wit, sarcasm, teasing and how humour connects to Dutch directness."),

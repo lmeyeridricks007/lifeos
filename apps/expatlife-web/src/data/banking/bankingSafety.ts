@@ -6,7 +6,7 @@
 
 import type { MoveVisaResidencyReferences } from "@/src/components/moving/visas-residency/config/moveVisaResidency.types";
 import { BANK_COMPARISON_TOOL_PATH, BANKING_COST_ESTIMATOR_PATH } from "@/src/components/tools/banking-cost/bankingCostPageModel";
-import { BEST_BANKS_EXPATS_PATH } from "@/src/components/money/best-banks-expats/bestBanksExpatsPageModel";
+import { BEST_BANKS_EXPATS_PATH } from "@/src/components/money/best-banks-expats/bestBanksExpatsPaths";
 import { BANKING_FEES_PAGE_PATH } from "@/src/data/banking/bankingFeesContent";
 
 /** Living pillar paths referenced from Money · Banking safety copy — keep aligned with `livingPillarContent.ts`. */

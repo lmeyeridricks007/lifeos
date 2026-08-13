@@ -69,6 +69,21 @@ export function BankingHubView() {
       clusterTitle="Also helpful"
       deepLinks={[
         {
+          href: "/netherlands/open-bank-account-netherlands/",
+          label: "Open bank account guide →",
+          description: "Documents, BSN timing, setup steps — cluster how-to.",
+        },
+        {
+          href: "/netherlands/money/banking/best-banks-expats/",
+          label: "Best banks for expats →",
+          description: "Editorial shortlist — confirm products on each bank’s site.",
+        },
+        {
+          href: "/netherlands/money/banking/international-transfers/",
+          label: "International transfers →",
+          description: "Fees, FX and timing when sending money abroad.",
+        },
+        {
           href: "/netherlands/tools/bank-comparison/",
           label: "Bank comparison tool →",
           description: "Interactive fit map — same banking cluster assumptions as these guides.",
@@ -79,19 +94,9 @@ export function BankingHubView() {
           description: "Monthly and yearly euro planning bands before you open or switch accounts.",
         },
         {
-          href: "/netherlands/money/banking/best-banks-expats/",
-          label: "Best banks for expats →",
-          description: "Editorial shortlist — confirm products on each bank’s site.",
-        },
-        {
           href: "/netherlands/money/banking/how-payments-work/",
           label: "How payments work →",
           description: "IBAN, iDEAL, SEPA, and Dutch payment habits.",
-        },
-        {
-          href: "/netherlands/open-bank-account-netherlands/",
-          label: "Open bank account guide →",
-          description: "Documents, BSN timing, and typical asks.",
         },
         { href: "/netherlands/money/tools/", label: "Money tools →", description: "Calculators next to banking decisions." },
         { href: "/netherlands/money/tax-guide-for-expats/", label: "Tax guide for expats →", description: "Payroll, withholding, and planning context." },

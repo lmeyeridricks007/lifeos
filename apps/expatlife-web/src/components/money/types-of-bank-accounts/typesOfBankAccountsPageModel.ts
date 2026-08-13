@@ -373,7 +373,7 @@ export const typesOfBankAccountsPageModel = {
       { title: "Best banks for expats", description: "Plain-language comparison after you know what kind of account you want.", href: BEST_BANKS_PATH, ctaLabel: "Open guide" },
       { title: "Traditional vs digital banks", description: "When people use high-street banks, apps, or both together.", href: TRAD_DIG_PATH, ctaLabel: "Read guide" },
       { title: "Banking fees and costs", description: "A simple checklist of fees before you pick a package.", href: FEES_PATH, ctaLabel: "Open fee guide" },
-      { title: "Open a bank account in the Netherlands", description: "Move guide: papers, citizen service number timing, and sensible order of steps.", href: "/netherlands/open-bank-account-netherlands/", ctaLabel: "Move guide" },
+      { title: "Open a bank account in the Netherlands", description: "Documents, BSN timing, setup steps, and delays pointer — how-to for expats (not a bank ranking).", href: "/netherlands/open-bank-account-netherlands/", ctaLabel: "Open account guide" },
       { title: "How payments work", description: "Account numbers, Dutch online checkout, and paying rent and salary in plain language.", href: "/netherlands/money/banking/how-payments-work/", ctaLabel: "Open guide" },
       {
         title: "Bank account rejected or delayed",

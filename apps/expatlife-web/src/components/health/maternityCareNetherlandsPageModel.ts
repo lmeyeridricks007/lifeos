@@ -1514,6 +1514,12 @@ export const maternityCareNetherlandsPage = {
       description: "Fysiotherapie orientation — separate from maternity pathways.",
     },
     {
+      label: "Health insurance comparison",
+      href: HEALTH_INSURANCE_COMPARISON_PATH,
+      status: "live",
+      description: "Decision framework for comparing policies beside maternity cover questions.",
+    },
+    {
       label: "Healthcare Basics",
       href: HEALTHCARE_BASICS_PATH,
       status: "live",

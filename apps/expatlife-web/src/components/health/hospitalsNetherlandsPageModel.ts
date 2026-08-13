@@ -1035,7 +1035,7 @@ export const hospitalsNetherlandsPage = {
     paragraphs: [
       "Dutch maternity care is midwife-led by default. A community midwife (verloskundige) provides routine antenatal care, and hospital involvement follows a medical indication rather than being automatic. If risks or complications appear, care shifts to an obstetrician-gynaecologist and the hospital takes a larger role.",
       "Birth location is a real choice within that framework: at home, in a birth centre, or in hospital as an outpatient birth (poliklinische bevalling) or a medically indicated hospital birth. Which options are open to you depends on your clinical situation, and midwives explain the reasoning as the pregnancy progresses.",
-      "After birth, Dutch postnatal care includes kraamzorg — maternity home care that supports recovery, feeding and newborn checks in your own home. Hospitals provide neonatal care when a baby needs medical support. A dedicated Pregnancy & Birth guide covering the full pathway is coming soon.",
+      "After birth, Dutch postnatal care includes kraamzorg — maternity home care that supports recovery, feeding and newborn checks in your own home. Hospitals provide neonatal care when a baby needs medical support. For the full midwife-first pathway, registration, insurance orientation and kraamzorg depth, open the Maternity care cornerstone.",
     ],
     points: [
       "Routine pregnancy care is led by a community midwife, not automatically by a hospital.",
@@ -1939,7 +1939,7 @@ export const hospitalsNetherlandsPage = {
         "Hospital involvement follows a medical indication.",
         "Birth options include home, birth centre and hospital.",
         "Kraamzorg supports recovery at home after birth.",
-        "A dedicated Pregnancy & Birth guide is coming soon.",
+        "Open the Maternity care guide for the full pathway.",
       ],
     },
     privateClinics: {

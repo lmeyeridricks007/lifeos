@@ -50,6 +50,12 @@ export const bankingHubPageModel = {
   ] satisfies MovePillarTocItem[],
   guideLinks: [
     {
+      href: "/netherlands/open-bank-account-netherlands/",
+      title: "Open a bank account in the Netherlands",
+      description:
+        "How-to for expats: documents, BSN timing, setup steps, delays and rejections pointer — keep this URL for SEO; not a bank ranking page.",
+    },
+    {
       href: "/netherlands/money/banking/types-of-accounts/",
       title: "Types of bank accounts",
       description:
@@ -62,10 +68,40 @@ export const bankingHubPageModel = {
         "Account numbers, paying online through your bank, transfers, automatic bills, cards in shops, payment requests, and how salary, rent, and utilities usually work — in plain English.",
     },
     {
+      href: "/netherlands/money/banking/cash-vs-card/",
+      title: "Cash vs card in the Netherlands",
+      description:
+        "PIN-first shops, when cash still helps, contactless habits, and calm tourist/expat till scenarios — everyday payment culture.",
+    },
+    {
+      href: "/netherlands/money/banking/debit-cards/",
+      title: "Debit cards in the Netherlands",
+      description:
+        "Dutch debit / PIN culture: pinpas basics, Maestro and Debit Mastercard norms, shops, ATMs, and credit-first habit shifts.",
+    },
+    {
+      href: "/netherlands/money/banking/credit-cards/",
+      title: "Credit cards in the Netherlands",
+      description:
+        "How credit fits Dutch payment culture: availability, when useful, fees orientation, and credit vs debit for everyday spend — not issuer rankings.",
+    },
+    {
+      href: "/netherlands/money/banking/best-banks-expats/",
+      title: "Best banks for expats",
+      description:
+        "Compare onboarding, fees, English support, and typical trade-offs — editorial shortlist, then confirm on each bank’s site (not pay-to-rank awards).",
+    },
+    {
       href: "/netherlands/money/banking/international-transfers/",
       title: "International transfers from the Netherlands",
       description:
-        "Compare banks, digital providers, and transfer specialists — fees, FX markups, speed, and hidden costs — then confirm every detail on official calculators.",
+        "Sending money abroad: fees, FX, speed, and what to check — then confirm every detail on official calculators.",
+    },
+    {
+      href: "/netherlands/money/banking/wise-vs-revolut/",
+      title: "Wise vs Revolut for expats",
+      description:
+        "Decision orientation for multi-currency and app banking: when each tends to fit, fees/FX framing, and Dutch-account pairing — not a winner ranking.",
     },
     {
       href: "/netherlands/money/banking/security/",
@@ -98,12 +134,6 @@ export const bankingHubPageModel = {
         "High-street banks versus app-first banks, salary and rent on an everyday account, and paying in shops — pair with how payments work for transfer and checkout detail.",
     },
     {
-      href: "/netherlands/money/banking/best-banks-expats/",
-      title: "Best banks for expats",
-      description:
-        "Compare onboarding, fees, English support, and typical trade-offs — editorial best banks for expats shortlist, then confirm on each bank’s site.",
-    },
-    {
       href: "/netherlands/money/banking/best-bank-zzp/",
       title: "Best bank for freelancers (ZZP)",
       description:
@@ -119,11 +149,6 @@ export const bankingHubPageModel = {
       href: "/netherlands/tools/bank-comparison/",
       title: "Bank comparison tool",
       description: "Questionnaire plus editorial fit scores for traditional, digital, and transfer providers — partner links do not change the math.",
-    },
-    {
-      href: "/netherlands/open-bank-account-netherlands/",
-      title: "Open a bank account in the Netherlands",
-      description: "Documents, BSN timing, and what employers and landlords often expect.",
     },
     {
       href: "/netherlands/services/banks/",

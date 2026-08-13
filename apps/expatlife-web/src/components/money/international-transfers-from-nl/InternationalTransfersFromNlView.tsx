@@ -1,558 +1,1130 @@
+import { Children, type ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ChevronRight } from "lucide-react";
-import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
-import { BoldParagraph } from "@/components/content/PillarContentBlocks";
-import { GuidePageTemplate } from "@/components/page/page-templates";
-import { MovePageTemplate } from "@/components/page/move-shell";
 import {
-  FAQBlock,
-  PageHero,
-  PillarGuideAtGlanceRegion,
-  PillarGuideFaqRegion,
-  PillarGuideHeroRegion,
-  PillarJourneyStack,
-} from "@/components/page/pillar-template";
-import { SectionBlock } from "@/components/page/moving-pillar";
+  AlertTriangle,
+  ArrowLeftRight,
+  ArrowRight,
+  Banknote,
+  Building2,
+  CheckCircle2,
+  ClipboardList,
+  Clock3,
+  ExternalLink,
+  Landmark,
+  Percent,
+  ShieldCheck,
+  Smartphone,
+  WalletCards,
+} from "lucide-react";
+import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
+import { Accordion } from "@/components/ui/accordion";
 import { Container } from "@/components/ui/container";
-import { ArticleJsonLd, FaqPageJsonLd, faqAnswerPlainText } from "@/lib/seo/jsonld";
-import { getSiteOrigin } from "@/lib/site-origin";
+import { BankingRecommendedOptionsSection } from "@/components/banking/BankingRecommendedOptionsSection";
+import { BankingSafetyContextCallout } from "@/components/banking/BankingSafetyContextCallout";
+import { BankingSetupDecisionCards } from "@/components/banking/BankingSetupDecisionCards";
+import { LowCostBankingShortlistCards } from "@/components/banking/LowCostBankingShortlistCards";
+import { TransferComparisonTable } from "@/components/banking/TransferComparisonTable";
+import { TransferCostBreakdown } from "@/components/banking/TransferCostBreakdown";
+import { TransferOverpayComparisonVisual } from "@/components/banking/TransferOverpayComparisonVisual";
+import { TransferScenarioCards } from "@/components/banking/TransferScenarioCards";
+import { AffiliateDisclosureNote } from "@/src/components/monetization/AffiliateDisclosureNote";
+import { DEFAULT_MONETIZATION_DISCLOSURE } from "@/src/lib/monetization/types";
 import { cn } from "@/lib/cn";
+import { getSiteOrigin } from "@/lib/site-origin";
+import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
+import {
+  guidePremiumCardGridClass,
+  guidePremiumIntroStackClass,
+  guidePremiumSectionDetailStackClass,
+  guidePremiumVisualSpacingClass,
+} from "@/lib/ui/guide-premium-page-ui";
 import {
   siteGuideColumnPadYClass,
-  sitePillarFramedHeroGutterXClass,
-  sitePillarFramedHeroTopBandClass,
+  siteHeroFramedShellClass,
+  siteHeroGlowPrimaryClass,
+  siteHeroGlowSecondaryClass,
+  siteHeroTopAccentClass,
+  sitePageCanvasClass,
 } from "@/lib/ui/site-shell-identity";
 import {
   movingNlCardMicroLiftClass,
-  movingNlFaqCardInnerClass,
-  movingNlGuideShortlistChipClass,
-  movingNlSectionSubtitleClass,
+  movingNlSectionH2Class,
+  movingNlSectionH2OnDarkClass,
   movingNlSignatureGradientClass,
 } from "@/lib/ui/moving-nl-pillar-identity";
-import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
-import { BankingSafetyContextCallout } from "@/components/banking/BankingSafetyContextCallout";
-import { BankingCompareFitEstimateCostCta } from "@/components/banking/BankingCompareFitEstimateCostCta";
-import { TransferComparisonTable } from "@/components/banking/TransferComparisonTable";
-import { TransferOverpayComparisonVisual } from "@/components/banking/TransferOverpayComparisonVisual";
-import { TransferScenarioCards } from "@/components/banking/TransferScenarioCards";
-import { BankingRecommendedOptionsSection } from "@/components/banking/BankingRecommendedOptionsSection";
-import { BankingSetupDecisionCards } from "@/components/banking/BankingSetupDecisionCards";
-import { LowCostBankingShortlistCards } from "@/components/banking/LowCostBankingShortlistCards";
-import { TransferCostBreakdown } from "@/components/banking/TransferCostBreakdown";
-import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc";
-import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
-import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
-import { AffiliateDisclosureNote } from "@/src/components/monetization/AffiliateDisclosureNote";
-import { DEFAULT_MONETIZATION_DISCLOSURE } from "@/src/lib/monetization/types";
-import { BANKING_FEES_PAGE_PATH } from "@/src/data/banking/bankingFeesContent";
-import { BANKING_CONTENT_TRADITIONAL_VS_DIGITAL_PATH } from "@/src/data/banking/bankingTraditionalDigitalContent";
-import { CHEAPEST_BANK_ACCOUNTS_PATH } from "@/src/components/money/cheapest-bank-accounts/cheapestBankAccountsPageModel";
-import { BEST_BANK_ZZP_PATH } from "@/src/components/money/best-bank-zzp/bestBankZzpPageModel";
+import {
+  CITIES_FUNNEL_INFO_CHIP,
+  CITIES_FUNNEL_SECTION_SCROLL_MARGIN,
+  CITIES_FUNNEL_SOFT_COPILOT_SURFACE,
+  citiesFunnelHeroFigureClassName,
+} from "@/src/components/cities/shared/citiesFunnelPageUi";
+import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
+import { BANKING_HUB_PATH } from "@/src/components/money/banking-hub/bankingHubPageModel";
 import { BANKING_INTERNATIONAL_TRANSFERS_SHORTLIST_ENTRIES } from "@/src/data/banking/bankingLowCostShortlist";
-import { BEST_BANKS_EXPATS_PATH } from "@/src/components/money/best-banks-expats/bestBanksExpatsPageModel";
-import { bankingInstructionalRasterAssets } from "@/src/components/money/banking-cluster/bankingInstructionalRasterAssets";
-import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
-import { internationalTransfersFromNlPageModel as meta } from "./internationalTransfersFromNlPageModel";
+import { BEST_BANKS_EXPATS_PATH } from "@/src/components/money/best-banks-expats/bestBanksExpatsPaths";
+import {
+  INTERNATIONAL_TRANSFERS_FROM_NL_PATH,
+  internationalTransfersFromNlPage as page,
+  type InternationalTransfersLink,
+  type MistakeCard as MistakeCardData,
+} from "./internationalTransfersFromNlPageModel";
 
-const CANONICAL = meta.path;
-/** Same scroll offset as Move pillar guides (sticky chrome). */
-const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
+const baseUrl = getSiteOrigin();
 
-/** Primary / secondary actions — same rhythm as {@link VisasResidencyView}. */
+const sectionClass = cn(
+  CITIES_FUNNEL_SECTION_SCROLL_MARGIN,
+  CITIES_FUNNEL_SOFT_COPILOT_SURFACE,
+  "relative isolate overflow-hidden p-6 shadow-card ring-1 ring-slate-900/[0.04] before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:h-1 before:bg-gradient-to-r before:from-cyan-400/70 before:via-brand/80 before:to-emerald-300/70 after:pointer-events-none after:absolute after:-right-28 after:-top-28 after:h-56 after:w-56 after:rounded-full after:bg-cyan-200/15 after:blur-3xl sm:p-8 lg:p-10"
+);
+const sectionClassOnDark = cn(
+  CITIES_FUNNEL_SECTION_SCROLL_MARGIN,
+  "relative isolate overflow-hidden rounded-[2rem] bg-slate-950 p-6 text-white shadow-expatos-xl ring-1 ring-white/10 sm:p-8 lg:p-10"
+);
+const sectionStackClass = "mt-8 space-y-6 sm:space-y-8 md:space-y-9";
+const cardClass = cn(
+  CITIES_FUNNEL_SOFT_COPILOT_SURFACE,
+  "relative overflow-hidden bg-white/90 p-5 shadow-sm ring-1 ring-slate-900/[0.04]",
+  movingNlCardMicroLiftClass
+);
+
+const iconPool = [
+  Landmark,
+  ArrowLeftRight,
+  Percent,
+  Banknote,
+  Smartphone,
+  Building2,
+  ClipboardList,
+  Clock3,
+  WalletCards,
+  ShieldCheck,
+] as const;
+const snapshotIcons = [ArrowLeftRight, Percent, Landmark, Clock3] as const;
+const orientationIcons = [ClipboardList, ArrowLeftRight, Clock3, ShieldCheck] as const;
+
+const scenarioColumns = [
+  { key: "situation", label: "Situation" },
+  { key: "approach", label: "How it works" },
+  { key: "firstStep", label: "First step" },
+] as const;
+
 const primaryCtaClass = cn(
   "inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl border border-brand-strong/25 bg-brand px-5 py-2.5 text-sm font-semibold text-white shadow-card hover:bg-brand-strong focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas",
   transitionInteractive,
   activeBrightnessPress
 );
+const secondaryCtaClass = cn(
+  "inline-flex min-h-[44px] items-center justify-center gap-2 rounded-xl border border-border bg-surface-raised px-5 py-2.5 text-sm font-semibold text-foreground shadow-card hover:border-border-strong hover:bg-surface-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas",
+  transitionInteractive,
+  activeBrightnessPress
+);
 
-const secondaryCtaClass =
-  "inline-flex min-h-[44px] items-center justify-center rounded-xl border border-border bg-surface-raised px-5 py-2.5 text-sm font-semibold text-foreground shadow-card hover:border-border-strong hover:bg-surface-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas";
-
-/** Compact hero quick links — 2-column grid on sm+ so the block stays short and chevrons sit near labels. */
-const heroNextStepLinkClass =
-  "group flex min-h-0 w-full items-center justify-between gap-2 rounded-lg border border-copilot-primary/10 bg-white/85 px-2.5 py-2 text-left text-xs font-semibold text-copilot-text-primary shadow-sm transition-colors hover:border-copilot-primary/18 hover:bg-white hover:text-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-copilot-accent/35 focus-visible:ring-offset-1";
-
-export function InternationalTransfersFromNlView() {
-  const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
-  const crumbs = [
-    { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Banking", item: new URL("/netherlands/money/banking/", baseUrl).toString() },
-    { name: "International transfers", item: new URL(CANONICAL, baseUrl).toString() },
-  ];
-
-  const sidebar = (
-    <MovePillarSectionNav
-      items={[...meta.sectionNav]}
-      clusterTitle="Go deeper"
-      deepLinks={[
-        {
-          href: "/netherlands/tools/bank-comparison/",
-          label: "Bank comparison tool →",
-          description: "Weight transfer-heavy setups alongside a Dutch everyday account.",
-        },
-        {
-          href: "/netherlands/tools/banking-cost-estimator/",
-          label: "Banking cost estimator →",
-          description: "See how often you send abroad changes the monthly planning band.",
-        },
-        { href: BANKING_FEES_PAGE_PATH, label: "Banking fees →", description: "Transfer and exchange-rate lines on Dutch price lists." },
-        {
-          href: "/netherlands/money/banking/security/",
-          label: "Banking safety & fraud →",
-          description: "Verify recipients and spot transfer-related scams before you confirm large sends.",
-        },
-        {
-          href: "/netherlands/money/banking/account-rejection/",
-          label: "Account rejected or delayed →",
-          description: "If you still need a Dutch account for smoother transfers and direct debits.",
-        },
-        { href: BEST_BANKS_EXPATS_PATH, label: "Best banks for expats →", description: "Shortlist and comparison table." },
-        { href: "/netherlands/money/banking/how-payments-work/", label: "How payments work →", description: "Paying bills, cards, and bank transfers in the Netherlands." },
-        { href: CHEAPEST_BANK_ACCOUNTS_PATH, label: "Cheapest bank accounts →", description: "Lower-fee everyday Dutch accounts." },
-        { href: BANKING_CONTENT_TRADITIONAL_VS_DIGITAL_PATH, label: "Traditional vs digital →", description: "Branch banks and phone-first banks side by side." },
-        { href: "/netherlands/money/banking/#banking-glossary-hub", label: "Banking glossary →", description: "Short definitions on the Banking hub." },
-        { href: "/netherlands/money/tools/cost-of-living-calculator/", label: "Cost of living calculator →", description: "Model monthly budgets after rent." },
-        { href: "/netherlands/taxes/tools/dutch-salary-net-calculator/", label: "Dutch salary (net) calculator →", description: "Understand payslip lines before sizing transfers." },
-        { href: BEST_BANK_ZZP_PATH, label: "Freelancer banking (ZZP) →", description: "Business vs personal stacks for self-employed expats." },
-      ]}
-    />
-  );
-
+function PremiumGuideSection({
+  id,
+  intro,
+  visual,
+  children,
+  visualTone = "default",
+  sectionTone = "default",
+  tipsKey,
+}: {
+  id: string;
+  intro: ReactNode;
+  visual: GuidePremiumVisual;
+  children: ReactNode;
+  visualTone?: "default" | "onDark";
+  sectionTone?: "default" | "onDark";
+  tipsKey?: keyof typeof page.visualTextDetails;
+}) {
+  const onDark = sectionTone === "onDark";
   return (
-    <>
-      <BreadcrumbJsonLd crumbs={crumbs} />
-      <ArticleJsonLd headline={meta.hero.pageTitle} description={meta.seo.description} dateModified={meta.publishDate} urlPath={CANONICAL} />
-      <FaqPageJsonLd url={shareUrl} items={meta.faq.map((item) => ({ q: item.q, a: faqAnswerPlainText(item.a) }))} />
+    <section id={id} className={onDark ? sectionClassOnDark : sectionClass}>
+      {onDark ? (
+        <div
+          className={cn("absolute inset-x-6 top-0 h-1.5 rounded-full sm:inset-x-8 lg:inset-x-10", movingNlSignatureGradientClass)}
+          aria-hidden
+        />
+      ) : null}
+      <div className={cn(guidePremiumIntroStackClass, onDark && "relative mt-2")}>{intro}</div>
+      <GuidePremiumVisualFigure visual={visual} tone={visualTone} className={guidePremiumVisualSpacingClass} />
+      <div className={guidePremiumSectionDetailStackClass}>
+        {tipsKey ? <VisualTextDetails tipsKey={tipsKey} tone={onDark ? "onDark" : "default"} /> : null}
+        {children}
+      </div>
+    </section>
+  );
+}
 
-      <GuidePageTemplate
-        mainStackClassName="mt-2 space-y-4 sm:mt-3 sm:space-y-5 md:space-y-6"
-        wrapContent={(inner) => (
-          <Container className={cn("w-full max-w-screen-2xl", siteGuideColumnPadYClass)}>
-            <MovePageTemplate variant="hub" showSidebar sidebarAriaLabel={false} sidebar={sidebar}>
-              {inner}
-            </MovePageTemplate>
-          </Container>
-        )}
-        hero={
-          <PillarGuideHeroRegion>
-            <PageHero
-              movingPillarIdentity
-              heroTitleDensity="tight"
-              eyebrowBandClassName={sitePillarFramedHeroTopBandClass}
-              contentGutterClassName={sitePillarFramedHeroGutterXClass}
-              heroTopBandSlot={
-                <nav aria-label="Breadcrumbs" className="flex flex-wrap gap-2 text-xs text-copilot-text-muted">
-                  <Link href="/" className="transition-colors hover:text-copilot-text-primary">
-                    Home
-                  </Link>
-                  <span className="text-copilot-text-muted/70" aria-hidden>
-                    /
-                  </span>
-                  <Link href="/netherlands/" className="transition-colors hover:text-copilot-text-primary">
-                    Netherlands
-                  </Link>
-                  <span className="text-copilot-text-muted/70" aria-hidden>
-                    /
-                  </span>
-                  <Link href="/netherlands/money/banking/" className="transition-colors hover:text-copilot-text-primary">
-                    Banking
-                  </Link>
-                  <span className="text-copilot-text-muted/70" aria-hidden>
-                    /
-                  </span>
-                  <span className="text-copilot-text-primary" aria-current="page">
-                    International transfers
-                  </span>
-                </nav>
-              }
-              eyebrow={meta.hero.eyebrow}
-              title={meta.hero.pageTitle}
-              subtitle={meta.hero.subtitle}
-              heroMediaSlot={
-                <div
-                  className={cn(
-                    "mt-4 min-w-0 sm:mt-5",
-                    sitePillarFramedHeroGutterXClass,
-                    "grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,min(100%,380px))] md:items-start md:gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:gap-10"
-                  )}
-                >
-                  <div className="min-w-0 space-y-4 sm:space-y-5">
-                    <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
-                      <div
-                        className={cn(
-                          "relative flex flex-col overflow-hidden rounded-2xl border-0 bg-white/90 p-4 shadow-expatos-sm ring-1 ring-slate-900/[0.04] sm:p-5",
-                          movingNlCardMicroLiftClass
-                        )}
-                      >
-                        <div className={cn("absolute inset-x-0 top-0 h-1 opacity-90", movingNlSignatureGradientClass)} aria-hidden />
-                        <p className="pt-1 text-xs font-bold uppercase tracking-[0.12em] text-copilot-text-muted">Compare received amount</p>
-                        <BoldParagraph
-                          text={meta.hero.notOneWinnerBanner}
-                          className="mt-2 text-xs leading-snug text-copilot-text-primary sm:text-sm [&_strong]:font-semibold [&_strong]:text-copilot-text-primary"
-                        />
-                      </div>
-                      <div
-                        className={cn(
-                          "relative flex flex-col overflow-hidden rounded-2xl border-0 bg-white/90 p-4 shadow-expatos-sm ring-1 ring-slate-900/[0.04] sm:p-5",
-                          movingNlCardMicroLiftClass
-                        )}
-                      >
-                        <div className={cn("absolute inset-x-0 top-0 h-1 opacity-90", movingNlSignatureGradientClass)} aria-hidden />
-                        <p className="pt-1 text-xs font-bold uppercase tracking-[0.12em] text-copilot-text-muted">Prices change often</p>
-                        <BoldParagraph
-                          text={meta.hero.pricesChangeBanner}
-                          className="mt-2 text-xs leading-snug text-copilot-text-primary sm:text-sm [&_strong]:font-semibold [&_strong]:text-copilot-text-primary"
-                        />
-                      </div>
-                    </div>
-                    <p className="max-w-none text-xs leading-snug text-copilot-text-secondary sm:text-sm">{meta.hero.guidePrinciple}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {meta.hero.contextChips.map((chip) => (
-                        <span key={chip} className={movingNlGuideShortlistChipClass}>
-                          {chip}
-                        </span>
-                      ))}
-                    </div>
-                    <p className="max-w-none text-xs leading-snug text-copilot-text-secondary sm:text-sm">{meta.hero.trustLine}</p>
-                    <ul className="max-w-none space-y-2.5 text-sm leading-snug text-copilot-text-secondary sm:text-[0.9375rem] sm:leading-relaxed" role="list">
-                      {meta.hero.bullets.map((bullet) => (
-                        <li key={bullet} className="flex gap-2">
-                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-copilot-primary" aria-hidden />
-                          <span className="min-w-0">{bullet}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="flex flex-wrap gap-3">
-                      <Link href={meta.hero.primaryCta.href} className={primaryCtaClass}>
-                        {meta.hero.primaryCta.label}
-                        <ArrowRight className="h-4 w-4" aria-hidden />
-                      </Link>
-                      <Link href={meta.hero.secondaryCta.href} className={secondaryCtaClass}>
-                        {meta.hero.secondaryCta.label}
-                      </Link>
-                    </div>
-                    <nav
-                      className="rounded-xl border-0 bg-copilot-surface p-2 shadow-expatos-sm ring-1 ring-copilot-primary/[0.07] sm:p-2.5"
-                      aria-label="Next steps"
-                    >
-                      <p className="px-1 pb-1.5 pt-0.5 text-[10px] font-bold uppercase tracking-[0.12em] text-copilot-text-muted">Next steps</p>
-                      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2" role="list">
-                        {meta.hero.heroQuickLinks.map((l) => (
-                          <Link key={l.href} href={l.href} className={heroNextStepLinkClass} role="listitem">
-                            <span className="min-w-0 break-words leading-snug">{l.label}</span>
-                            <ChevronRight
-                              className="h-3.5 w-3.5 shrink-0 text-copilot-text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-link"
-                              aria-hidden
-                            />
-                          </Link>
-                        ))}
-                        <Link
-                          href="/netherlands/money/banking/"
-                          className={cn(heroNextStepLinkClass, "text-copilot-text-secondary hover:text-link sm:col-span-2")}
-                          role="listitem"
-                        >
-                          <span className="min-w-0 break-words leading-snug">Back to Banking hub</span>
-                          <ChevronRight className="h-3.5 w-3.5 shrink-0 text-copilot-text-muted group-hover:text-link" aria-hidden />
-                        </Link>
-                      </div>
-                    </nav>
-                    <BankingCompareFitEstimateCostCta className="mt-4 max-w-full" />
-                  </div>
-                  <div className="min-w-0 w-full md:justify-self-end">
-                    <div className="relative aspect-[3/2] w-full max-w-full overflow-hidden rounded-2xl bg-copilot-bg-soft ring-1 ring-copilot-primary/[0.1] shadow-expatos-md">
-                      <Image
-                        src={meta.heroImage.src}
-                        alt={meta.heroImage.alt}
-                        fill
-                        className="object-cover object-center"
-                        sizes="(max-width: 768px) 100vw, (max-width: 1280px) 42vw, 420px"
-                        priority
-                      />
-                    </div>
-                  </div>
-                </div>
-              }
-              shareUrl={shareUrl}
-              pageId={CANONICAL}
-            />
-          </PillarGuideHeroRegion>
-        }
-        atAGlance={
-          <PillarGuideAtGlanceRegion>
-            <section
-              id="at-a-glance"
+function VisualTextDetails({
+  tipsKey,
+  tone = "default",
+}: {
+  tipsKey: keyof typeof page.visualTextDetails;
+  tone?: "default" | "onDark";
+}) {
+  const details = page.visualTextDetails[tipsKey];
+  return <BulletPanel title={details.title} items={details.items} tone={tone} />;
+}
+
+function SectionIntro({
+  eyebrow,
+  title,
+  children,
+  tone = "default",
+  fullWidth = true,
+}: {
+  eyebrow?: string;
+  title: string;
+  children?: ReactNode;
+  tone?: "default" | "onDark";
+  fullWidth?: boolean;
+}) {
+  const onDark = tone === "onDark";
+  const useColumnLayout = fullWidth && Children.count(children) > 1;
+  return (
+    <div className={cn(fullWidth ? "w-full max-w-none" : "max-w-3xl")}>
+      {eyebrow ? (
+        <p className={cn("text-xs font-bold uppercase tracking-[0.14em]", onDark ? "text-cyan-200" : "text-brand-strong")}>
+          {eyebrow}
+        </p>
+      ) : null}
+      <h2 className={cn(onDark ? movingNlSectionH2OnDarkClass : movingNlSectionH2Class, eyebrow ? "mt-2" : undefined)}>
+        {title}
+      </h2>
+      {children ? (
+        <div
+          className={cn(
+            "mt-3 space-y-3 text-base leading-relaxed",
+            useColumnLayout && "max-w-none lg:columns-2 lg:gap-x-10 [&>p]:break-inside-avoid",
+            onDark ? "text-slate-300" : "text-foreground-muted"
+          )}
+        >
+          {children}
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function BulletPanel({
+  title,
+  items,
+  tone = "default",
+}: {
+  title: string;
+  items: readonly string[];
+  tone?: "default" | "onDark";
+}) {
+  const onDark = tone === "onDark";
+  return (
+    <aside
+      className={cn(
+        "relative overflow-hidden rounded-3xl p-5 shadow-sm ring-1",
+        onDark
+          ? "border-white/10 bg-white/10 text-white ring-white/10"
+          : "border border-slate-200/90 bg-white/95 ring-slate-900/[0.04]",
+        movingNlCardMicroLiftClass
+      )}
+    >
+      <div className={cn("absolute inset-x-0 top-0 h-1 rounded-t-3xl", movingNlSignatureGradientClass)} aria-hidden />
+      <h3 className={cn("text-base font-bold tracking-tight", onDark ? "text-white" : "text-foreground")}>{title}</h3>
+      <ul className={cn("mt-4 grid gap-3", onDark ? undefined : "md:grid-cols-2")}>
+        {items.map((item) => (
+          <li
+            key={item}
+            className={cn("flex gap-3 text-sm leading-relaxed", onDark ? "text-slate-300" : "text-foreground-muted")}
+          >
+            <span
               className={cn(
-                SECTION_SCROLL_MARGIN,
-                "relative overflow-hidden rounded-2xl border-0 bg-copilot-surface p-6 shadow-expatos-lg ring-1 ring-copilot-primary/[0.07] sm:p-7"
+                "mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full ring-1",
+                onDark
+                  ? "bg-white/10 text-cyan-200 ring-white/15"
+                  : "bg-copilot-bg-soft text-brand-strong ring-copilot-primary/10"
               )}
             >
-              <div className={cn("absolute inset-x-0 top-0 h-1.5 rounded-t-2xl", movingNlSignatureGradientClass)} aria-hidden />
-              <h2 className="text-xl font-bold tracking-tight text-copilot-text-primary sm:text-2xl">{meta.atAGlance.sectionTitle}</h2>
-              <p className={cn(movingNlSectionSubtitleClass, "mt-2 text-copilot-text-secondary")}>{meta.atAGlance.subtitle}</p>
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                {meta.atAGlance.cells.map((cell) => {
-                  const body = cell.bullets.join(" ");
-                  return (
-                    <div
-                      key={cell.title}
-                      className={cn(
-                        "relative flex flex-col overflow-hidden rounded-2xl border-0 bg-white/90 p-5 shadow-expatos-sm ring-1 ring-slate-900/[0.04]",
-                        movingNlCardMicroLiftClass
-                      )}
-                    >
-                      <div className={cn("absolute inset-x-0 top-0 h-1 opacity-90", movingNlSignatureGradientClass)} aria-hidden />
-                      <p className="pt-1 text-xs font-bold uppercase tracking-[0.12em] text-copilot-text-muted">{cell.title}</p>
-                      <BoldParagraph
-                        text={body}
-                        className="mt-2 text-sm leading-relaxed text-copilot-text-primary [&_strong]:font-semibold [&_strong]:text-copilot-text-primary"
-                      />
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="relative mt-5 rounded-xl bg-slate-50/90 px-4 py-4 text-sm leading-relaxed text-copilot-text-secondary ring-1 ring-copilot-primary/[0.06]">
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-copilot-text-muted">Timing</p>
-                <p className="mt-1.5">
-                  Exchange rates and fee lines move — capture provider quotes the <strong className="font-semibold text-copilot-text-primary">same day</strong> you
-                  decide.
-                </p>
-                <BoldParagraph
-                  text={meta.atAGlance.note}
-                  className="mt-3 border-t border-copilot-primary/[0.08] pt-3 text-sm [&_strong]:font-semibold [&_strong]:text-copilot-text-primary"
-                />
-              </div>
-            </section>
-          </PillarGuideAtGlanceRegion>
-        }
-        keySections={
-          <PillarJourneyStack variant="guide">
-            <MovePillarMobileToc items={[...meta.sectionNav]} />
+              <CheckCircle2 className="h-3.5 w-3.5" aria-hidden />
+            </span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  );
+}
 
+function ChecklistBlock({
+  title,
+  items,
+  columns = 1,
+  className,
+}: {
+  title: string;
+  items: readonly string[];
+  columns?: 1 | 2;
+  className?: string;
+}) {
+  return (
+    <div
+      className={cn(
+        "w-full rounded-2xl border border-slate-200/90 bg-white/95 p-5 shadow-sm ring-1 ring-slate-900/[0.04]",
+        movingNlCardMicroLiftClass,
+        className
+      )}
+    >
+      <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-strong">{title}</p>
+      <ul className={cn("mt-4 gap-3", columns === 2 ? "grid md:grid-cols-2" : "space-y-3")}>
+        {items.map((item) => (
+          <li key={item} className="flex gap-3 text-sm leading-relaxed text-foreground-muted">
+            <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-copilot-bg-soft text-brand-strong ring-1 ring-copilot-primary/10">
+              <CheckCircle2 className="h-3.5 w-3.5" aria-hidden />
+            </span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function InfoTable({
+  rows,
+  columns,
+}: {
+  rows: Array<Record<string, ReactNode>>;
+  columns: ReadonlyArray<{ key: string; label: string }>;
+}) {
+  return (
+    <div className="w-full overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-card">
+      <div className={cn("h-1.5", movingNlSignatureGradientClass)} aria-hidden />
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[760px] divide-y divide-slate-200 text-left text-sm">
+          <thead className="bg-slate-50 text-xs uppercase tracking-[0.12em] text-slate-500">
+            <tr>
+              {columns.map((column) => (
+                <th key={column.key} scope="col" className="px-4 py-3 font-bold">
+                  {column.label}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-slate-100">
+            {rows.map((row, idx) => (
+              <tr key={idx}>
+                {columns.map((column, cellIdx) => (
+                  <td
+                    key={column.key}
+                    className={cn("px-4 py-4 text-foreground-muted", cellIdx === 0 && "font-semibold text-foreground")}
+                  >
+                    {row[column.key]}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function ScenarioTable({
+  title,
+  rows,
+}: {
+  title: string;
+  rows: ReadonlyArray<{ situation: string; approach: string; firstStep: string }>;
+}) {
+  return (
+    <div className="w-full">
+      <SectionIntro eyebrow="Examples" title={title} fullWidth />
+      <div className="mt-4 w-full">
+        <InfoTable
+          columns={scenarioColumns}
+          rows={rows.map((row) => ({ situation: row.situation, approach: row.approach, firstStep: row.firstStep }))}
+        />
+      </div>
+    </div>
+  );
+}
+
+function WarningPanel({ title, items }: { title: string; items: readonly string[] }) {
+  return (
+    <aside
+      className={cn(
+        "relative overflow-hidden rounded-3xl border border-amber-200/80 bg-amber-50/80 p-5 shadow-sm ring-1 ring-amber-200/50",
+        movingNlCardMicroLiftClass
+      )}
+      role="note"
+    >
+      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-amber-400 via-orange-400 to-rose-300" aria-hidden />
+      <h3 className="flex items-center gap-2 text-base font-bold tracking-tight text-amber-950">
+        <AlertTriangle className="h-4 w-4 text-amber-700" aria-hidden />
+        {title}
+      </h3>
+      <ul className="mt-4 grid gap-3">
+        {items.map((item) => (
+          <li key={item} className="flex gap-3 text-sm leading-relaxed text-amber-950">
+            <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-white/70 text-amber-800 ring-1 ring-amber-200/70">
+              <AlertTriangle className="h-3.5 w-3.5" aria-hidden />
+            </span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </aside>
+  );
+}
+
+function FeatureCard({ title, body, iconIndex = 0 }: { title: string; body: string; iconIndex?: number }) {
+  const Icon = iconPool[iconIndex % iconPool.length];
+  return (
+    <article className={cardClass}>
+      <div className={cn("absolute inset-x-0 top-0 h-1.5", movingNlSignatureGradientClass)} aria-hidden />
+      <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-copilot-bg-soft to-white text-brand-strong shadow-sm ring-1 ring-copilot-primary/10">
+        <Icon className="h-5 w-5" aria-hidden />
+      </span>
+      <h3 className="mt-4 text-lg font-bold tracking-tight text-foreground">{title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{body}</p>
+    </article>
+  );
+}
+
+function MiniStatCard({ label, value, note }: { label: string; value: string; note: string }) {
+  return (
+    <article className={cn(cardClass, "p-4 sm:p-5")}>
+      <div className={cn("absolute inset-x-0 top-0 h-1.5", movingNlSignatureGradientClass)} aria-hidden />
+      <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-strong">{label}</p>
+      <p className="mt-2 text-xl font-black tracking-tight text-foreground">{value}</p>
+      <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{note}</p>
+    </article>
+  );
+}
+
+function MistakeCard({ card, index }: { card: MistakeCardData; index: number }) {
+  const Icon = iconPool[index % iconPool.length];
+  return (
+    <article className={cardClass}>
+      <div className={cn("absolute inset-x-0 top-0 h-1.5", movingNlSignatureGradientClass)} aria-hidden />
+      <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-copilot-bg-soft to-white text-brand-strong shadow-sm ring-1 ring-copilot-primary/10">
+        <Icon className="h-5 w-5" aria-hidden />
+      </span>
+      <h3 className="mt-4 text-lg font-bold tracking-tight text-foreground">{card.title}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{card.body}</p>
+      <p className="mt-3 rounded-2xl bg-copilot-bg-soft/70 p-3 text-sm leading-relaxed text-foreground-muted ring-1 ring-copilot-primary/10">
+        <span className="font-bold text-foreground">Fix: </span>
+        {card.advice}
+      </p>
+    </article>
+  );
+}
+
+function LinkCard({
+  item,
+  iconIndex = 0,
+  tone = "default",
+}: {
+  item: InternationalTransfersLink;
+  iconIndex?: number;
+  tone?: "default" | "onDark";
+}) {
+  const Icon = iconPool[iconIndex % iconPool.length];
+  const isExternal = item.status === "external";
+  const isLive = item.status !== "comingSoon";
+  const onDark = tone === "onDark";
+  const body = (
+    <>
+      <div
+        className={cn(
+          "absolute inset-x-0 top-0 h-1.5 rounded-t-2xl",
+          isLive ? movingNlSignatureGradientClass : onDark ? "bg-white/20" : "bg-slate-200"
+        )}
+        aria-hidden
+      />
+      <span
+        className={cn(
+          "flex h-10 w-10 items-center justify-center rounded-xl shadow-sm ring-1",
+          onDark
+            ? "bg-white/10 text-cyan-100 ring-white/15"
+            : "bg-gradient-to-br from-copilot-bg-soft to-white text-brand-strong ring-copilot-primary/10"
+        )}
+      >
+        <Icon className="h-5 w-5" aria-hidden />
+      </span>
+      <span className={cn("mt-4 block text-sm font-bold", onDark ? "text-white" : "text-foreground")}>
+        {item.label}
+        {!isLive ? (
+          <span
+            className={cn(
+              "ml-2 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.1em]",
+              onDark ? "bg-white/10 text-slate-300" : "bg-slate-100 text-slate-500"
+            )}
+          >
+            Coming soon
+          </span>
+        ) : null}
+      </span>
+      {item.description ? (
+        <span className={cn("mt-2 block text-sm leading-relaxed", onDark ? "text-slate-300" : "text-foreground-muted")}>
+          {item.description}
+        </span>
+      ) : null}
+      {isLive ? (
+        <span
+          className={cn(
+            "mt-4 inline-flex items-center gap-1 text-xs font-semibold",
+            onDark ? "text-cyan-200" : "text-link group-hover:text-link-hover"
+          )}
+        >
+          Open {isExternal ? <ExternalLink className="h-3.5 w-3.5" aria-hidden /> : <ArrowRight className="h-3.5 w-3.5" aria-hidden />}
+        </span>
+      ) : null}
+    </>
+  );
+
+  if (!isLive) {
+    return (
+      <article className={cn(cardClass, "opacity-90", onDark && "border-white/10 bg-white/10 text-white ring-white/10")}>
+        {body}
+      </article>
+    );
+  }
+
+  const linkClass = cn(
+    cardClass,
+    "group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2",
+    onDark
+      ? "border-white/10 bg-white/10 ring-white/10 focus-visible:ring-offset-slate-950"
+      : "focus-visible:ring-offset-canvas",
+    transitionInteractive,
+    activeBrightnessPress
+  );
+
+  if (isExternal) {
+    return (
+      <a href={item.href} target="_blank" rel="noopener noreferrer" className={linkClass}>
+        {body}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={item.href} className={linkClass}>
+      {body}
+    </Link>
+  );
+}
+
+function SourceLink({
+  source,
+  tone = "default",
+}: {
+  source: { label: string; href: string; description: string };
+  tone?: "default" | "onDark";
+}) {
+  const onDark = tone === "onDark";
+  return (
+    <a
+      href={source.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={cn(
+        "group relative block overflow-hidden p-5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2",
+        onDark
+          ? "rounded-3xl border border-white/10 bg-white/10 text-white shadow-sm ring-1 ring-white/10 focus-visible:ring-offset-slate-950"
+          : cn(CITIES_FUNNEL_SOFT_COPILOT_SURFACE, "focus-visible:ring-offset-canvas"),
+        movingNlCardMicroLiftClass,
+        transitionInteractive,
+        activeBrightnessPress
+      )}
+    >
+      <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
+      <span
+        className={cn(
+          "flex items-center gap-2 text-sm font-bold",
+          onDark ? "text-white group-hover:text-cyan-200" : "text-foreground group-hover:text-link"
+        )}
+      >
+        <ShieldCheck className={cn("h-4 w-4", onDark ? "text-cyan-200" : "text-brand-strong")} aria-hidden />
+        {source.label}
+        <ExternalLink className={cn("h-3.5 w-3.5", onDark ? "text-slate-400" : "text-foreground-muted")} aria-hidden />
+      </span>
+      <span className={cn("mt-2 block text-sm leading-relaxed", onDark ? "text-slate-300" : "text-foreground-muted")}>
+        {source.description}
+      </span>
+      <span className={cn("mt-4 inline-flex items-center gap-1 text-xs font-semibold", onDark ? "text-cyan-200" : "text-link")}>
+        Open source <ArrowRight className="h-3.5 w-3.5" aria-hidden />
+      </span>
+    </a>
+  );
+}
+
+function QuickAnswerBox() {
+  return (
+    <aside
+      className={cn(
+        "relative overflow-hidden rounded-3xl border border-brand/15 bg-gradient-to-br from-copilot-bg-soft via-white to-cyan-50/50 p-5 ring-1 ring-copilot-primary/10",
+        movingNlCardMicroLiftClass
+      )}
+    >
+      <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
+      <p className="text-sm font-bold text-foreground">{page.quickAnswer.summary}</p>
+      <ul className="mt-4 space-y-2">
+        {page.quickAnswer.bullets.map((bullet) => (
+          <li key={bullet} className="flex gap-2 text-sm leading-relaxed text-foreground-muted">
+            <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-brand-strong" aria-hidden />
+            <span>{bullet}</span>
+          </li>
+        ))}
+      </ul>
+      <p className="mt-4 rounded-2xl bg-white/80 p-3 text-sm leading-relaxed text-foreground-muted ring-1 ring-slate-900/[0.04]">
+        <span className="font-bold text-foreground">Tip: </span>
+        {page.quickAnswer.note}
+      </p>
+    </aside>
+  );
+}
+
+function OrientationFlowBand({ className }: { className?: string }) {
+  return (
+    <aside
+      className={cn(
+        "relative w-full overflow-hidden rounded-3xl bg-slate-950 p-5 text-white shadow-expatos-xl ring-1 ring-black/20 sm:p-6",
+        className
+      )}
+    >
+      <div className="absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r from-brand via-cyan-300 to-emerald-300" aria-hidden />
+      <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-cyan-400/20 blur-3xl" aria-hidden />
+      <div className="relative">
+        <p className="text-xs font-bold uppercase tracking-[0.14em] text-cyan-200">Orientation flow</p>
+        <h3 className="mt-2 text-xl font-bold tracking-tight">Four habits for sending abroad</h3>
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {page.orientationFlowSteps.map((step, index) => {
+            const Icon = orientationIcons[index % orientationIcons.length];
+            return (
+              <div key={step} className="flex gap-3 rounded-2xl border border-white/10 bg-white/10 p-4 ring-1 ring-white/10">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 text-cyan-100 ring-1 ring-white/15">
+                  <Icon className="h-5 w-5" aria-hidden />
+                </span>
+                <span>
+                  <span className="block text-sm font-semibold text-white">{index + 1}.</span>
+                  <span className="mt-1 block text-sm leading-relaxed text-slate-300">{step}</span>
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </aside>
+  );
+}
+
+function HeroImage() {
+  return (
+    <figure className={citiesFunnelHeroFigureClassName()}>
+      <div className={cn("absolute inset-x-0 top-0 z-10 h-1.5", movingNlSignatureGradientClass)} aria-hidden />
+      <Image
+        src={page.hero.image.src}
+        alt={page.hero.image.alt}
+        width={1600}
+        height={900}
+        priority
+        unoptimized
+        sizes="(min-width: 1024px) 42vw, 100vw"
+        className="h-full w-full object-cover"
+      />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/24 via-transparent to-white/10" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/35" aria-hidden />
+    </figure>
+  );
+}
+
+function HeroSignalStrip() {
+  return (
+    <div className="relative mt-5 grid gap-3 overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white/82 p-3 shadow-card ring-1 ring-slate-900/[0.03] backdrop-blur-xl sm:grid-cols-2 lg:grid-cols-4">
+      <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
+      {page.snapshotSignals.map((signal, index) => {
+        const Icon = snapshotIcons[index % snapshotIcons.length];
+        return (
+          <div
+            key={signal.label}
+            className="relative rounded-2xl border border-slate-200/70 bg-gradient-to-br from-white via-white to-copilot-bg-soft/70 p-4 shadow-sm"
+          >
+            <div className="flex items-start gap-3">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-copilot-bg-soft to-white text-brand-strong shadow-sm ring-1 ring-copilot-primary/10">
+                <Icon className="h-5 w-5" aria-hidden />
+              </span>
+              <span>
+                <span className="block text-xs font-bold uppercase tracking-[0.14em] text-foreground-muted">{signal.label}</span>
+                <span className="mt-1 block text-sm font-bold leading-snug text-foreground">{signal.value}</span>
+                <span className="mt-0.5 block text-xs leading-relaxed text-foreground-muted">{signal.note}</span>
+              </span>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+const faqAccordionItems = page.faq.map((item, index) => ({
+  id: `faq-${index}`,
+  title: item.q,
+  content: item.a,
+}));
+
+export function InternationalTransfersFromNlView() {
+  return (
+    <>
+      <BreadcrumbJsonLd
+        crumbs={[
+          { name: "Home", item: new URL("/", baseUrl).toString() },
+          { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
+          { name: "Banking", item: new URL(BANKING_HUB_PATH, baseUrl).toString() },
+          { name: "International transfers", item: new URL(INTERNATIONAL_TRANSFERS_FROM_NL_PATH, baseUrl).toString() },
+        ]}
+      />
+      <main className={sitePageCanvasClass}>
+        <Container className={cn("w-full max-w-screen-2xl", siteGuideColumnPadYClass)}>
+          <section className={cn(siteHeroFramedShellClass, "overflow-hidden p-0")}>
+            <div className={siteHeroTopAccentClass} aria-hidden />
+            <div className={siteHeroGlowPrimaryClass} aria-hidden />
+            <div className={siteHeroGlowSecondaryClass} aria-hidden />
+            <div className="relative z-[1] p-6 sm:p-8 lg:p-10">
+              <div className="grid gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(360px,0.85fr)] lg:items-center">
+                <div>
+                  <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-xs text-foreground-muted">
+                    <Link href="/" className="hover:text-foreground">
+                      Home
+                    </Link>
+                    <span aria-hidden>/</span>
+                    <Link href="/netherlands/" className="hover:text-foreground">
+                      Netherlands
+                    </Link>
+                    <span aria-hidden>/</span>
+                    <Link href={BANKING_HUB_PATH} className="hover:text-foreground">
+                      Banking
+                    </Link>
+                    <span aria-hidden>/</span>
+                    <span className="text-foreground" aria-current="page">
+                      International transfers
+                    </span>
+                  </nav>
+                  <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-brand-strong">{page.hero.eyebrow}</p>
+                  <h1 className="mt-3 text-4xl font-black tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+                    {page.hero.pageTitle}
+                  </h1>
+                  <p className="mt-5 max-w-2xl text-lg leading-relaxed text-foreground-muted sm:text-xl">{page.hero.subtitle}</p>
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {page.hero.chips.map((chip) => (
+                      <span key={chip} className={cn(CITIES_FUNNEL_INFO_CHIP, "shadow-sm ring-1 ring-slate-900/[0.03]")}>
+                        {chip}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                    <Link href={page.hero.primaryCta.href} className={primaryCtaClass}>
+                      {page.hero.primaryCta.label}
+                      <ArrowRight className="h-4 w-4" aria-hidden />
+                    </Link>
+                    <Link href={page.hero.secondaryCta.href} className={secondaryCtaClass}>
+                      {page.hero.secondaryCta.label}
+                    </Link>
+                  </div>
+                  <p className="mt-5 max-w-3xl rounded-2xl border border-amber-200/70 bg-amber-50/70 px-4 py-3 text-sm leading-relaxed text-amber-950 shadow-sm ring-1 ring-amber-200/40">
+                    {page.hero.disclaimer}
+                  </p>
+                </div>
+                <HeroImage />
+              </div>
+              <HeroSignalStrip />
+            </div>
+          </section>
+
+          <div className="sticky top-3 z-20 mt-6 overflow-x-auto rounded-2xl border border-slate-200/80 bg-white/90 p-2 shadow-card ring-1 ring-slate-900/[0.04] backdrop-blur-xl">
+            <nav aria-label="Page sections" className="flex min-w-max gap-2">
+              {page.sectionNav.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={cn(
+                    "rounded-full px-3 py-2 text-xs font-semibold text-foreground-muted hover:bg-copilot-bg-soft hover:text-brand-strong focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas",
+                    transitionInteractive,
+                    activeBrightnessPress
+                  )}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+
+          <div className={sectionStackClass}>
             <BankingSafetyContextCallout variant="internationalTransfers" tone="copilot" className="max-w-none" />
 
-            <SectionBlock
-              id={meta.whyOverpay.id}
-              className={SECTION_SCROLL_MARGIN}
-              eyebrow={meta.whyOverpay.eyebrow}
-              title={meta.whyOverpay.title}
+            <PremiumGuideSection
+              id="quick-answer"
+              tipsKey="intro"
+              visual={page.visuals.intro}
+              intro={
+                <SectionIntro eyebrow="Quick answer" title={page.quickAnswer.heading} fullWidth>
+                  {page.introParagraphs.map((paragraph) => (
+                    <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+                  ))}
+                </SectionIntro>
+              }
             >
-              <BoldParagraph text={meta.whyOverpay.lead} className="mt-4 max-w-none text-sm leading-relaxed text-copilot-text-secondary" />
-              <ul className="mt-6 max-w-none space-y-5 border-l-2 border-copilot-primary/25 pl-4 sm:pl-5" role="list">
-                {meta.whyOverpay.points.map((p) => (
-                  <li key={p.title} className="min-w-0">
-                    <p className="text-sm font-semibold text-copilot-text-primary">{p.title}</p>
-                    <BoldParagraph text={p.body} className="mt-2 text-sm leading-relaxed text-copilot-text-secondary" />
-                  </li>
+              <QuickAnswerBox />
+              <OrientationFlowBand />
+              <BulletPanel title="What this overview is for" items={page.introHighlights} />
+              <ChecklistBlock title="Transfer readiness file — keep these together" items={page.safetyFileChecklist} columns={2} />
+              <ScenarioTable title="Where newcomers usually start" rows={page.introScenarios} />
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="snapshot"
+              tipsKey="snapshot"
+              visual={page.visuals.snapshot}
+              intro={
+                <SectionIntro eyebrow="Snapshot" title="International transfers at a glance" fullWidth>
+                  <p>Six cards cover sending money abroad from a Dutch account. Deeper sections expand each theme without live rankings.</p>
+                </SectionIntro>
+              }
+            >
+              <div className={guidePremiumCardGridClass(page.snapshotSignals.length)}>
+                {page.snapshotSignals.map((signal) => (
+                  <MiniStatCard key={signal.label} label={signal.label} value={signal.value} note={signal.note} />
                 ))}
-              </ul>
+              </div>
+              <div className={guidePremiumCardGridClass(page.snapshotCards.length)}>
+                {page.snapshotCards.map((card, idx) => (
+                  <FeatureCard key={card.title} title={card.title} body={card.body} iconIndex={idx} />
+                ))}
+              </div>
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="why-overpay"
+              tipsKey="overpay"
+              visual={page.visuals.overpay}
+              intro={
+                <SectionIntro eyebrow="Reality check" title={page.whyOverpay.heading} fullWidth>
+                  <p>{page.whyOverpay.lead}</p>
+                </SectionIntro>
+              }
+            >
+              <div className="space-y-5">
+                {page.whyOverpay.points.map((point) => (
+                  <article key={point.title} className={cardClass}>
+                    <div className={cn("absolute inset-x-0 top-0 h-1.5", movingNlSignatureGradientClass)} aria-hidden />
+                    <h3 className="text-lg font-bold tracking-tight text-foreground">{point.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{point.body}</p>
+                  </article>
+                ))}
+              </div>
               <TransferOverpayComparisonVisual
-                caption={meta.whyOverpay.visualCaption}
-                disclaimer={meta.whyOverpay.visualDisclaimer}
+                caption={page.whyOverpay.visualCaption}
+                disclaimer={page.whyOverpay.visualDisclaimer}
                 className="w-full max-w-none"
               />
-            </SectionBlock>
+            </PremiumGuideSection>
 
-            <SectionBlock
-              id={meta.transferShortlist.id}
-              className={SECTION_SCROLL_MARGIN}
-              eyebrow={meta.transferShortlist.sectionEyebrow}
-              title={meta.transferShortlist.sectionTitle}
-              subtitle={meta.transferShortlist.sectionSubtitle}
-              contentClassName="mt-4 sm:mt-5"
+            <PremiumGuideSection
+              id="options"
+              tipsKey="options"
+              visual={page.visuals.options}
+              intro={
+                <SectionIntro eyebrow="Shortlist" title={page.options.heading} fullWidth>
+                  <p>{page.options.lead}</p>
+                </SectionIntro>
+              }
             >
-              <div
-                className={cn(
-                  "relative min-w-0 overflow-hidden rounded-2xl border-0 bg-copilot-surface p-5 shadow-expatos-lg ring-1 ring-copilot-primary/[0.07] sm:p-6 md:p-7"
-                )}
-              >
-                <div className={cn("absolute inset-x-0 top-0 h-1.5 rounded-t-2xl", movingNlSignatureGradientClass)} aria-hidden />
-                <div className="relative">
-                  <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.12em] text-copilot-text-muted">{meta.transferShortlist.summaryEyebrow}</p>
-                    <h3 className="mt-2 text-base font-semibold tracking-tight text-copilot-text-primary sm:text-lg">{meta.transferShortlist.summaryTitle}</h3>
-                    <p className="mt-2 max-w-none text-sm leading-relaxed text-copilot-text-secondary">{meta.transferShortlist.summaryIntro}</p>
-                  </div>
-                  <div className="mt-6 border-t border-copilot-primary/[0.1] pt-6" aria-labelledby="intl-transfer-provider-heading">
-                    <p className="text-xs font-bold uppercase tracking-[0.12em] text-copilot-text-muted">{meta.transferShortlist.providerEyebrow}</p>
-                    <h3 id="intl-transfer-provider-heading" className="mt-2 text-base font-semibold tracking-tight text-copilot-text-primary sm:text-lg">
-                      {meta.transferShortlist.providerTitle}
-                    </h3>
-                    <p className="mt-2 max-w-none text-sm leading-relaxed text-copilot-text-secondary">{meta.transferShortlist.providerIntro}</p>
-                    <LowCostBankingShortlistCards
-                      entries={[...BANKING_INTERNATIONAL_TRANSFERS_SHORTLIST_ENTRIES]}
-                      titleChipLabel="Transfer options"
-                      utmReferrerPath={CANONICAL}
-                      bestBanksHref={BEST_BANKS_EXPATS_PATH}
-                      visualVariant="moving"
-                      className="mt-5 min-w-0 max-w-full"
-                    />
-                  </div>
-                </div>
+              <div className={cardClass}>
+                <div className={cn("absolute inset-x-0 top-0 h-1.5", movingNlSignatureGradientClass)} aria-hidden />
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-brand-strong">How to read this</p>
+                <h3 className="mt-2 text-lg font-bold tracking-tight text-foreground">{page.options.summaryTitle}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{page.options.summaryIntro}</p>
               </div>
-              <AffiliateDisclosureNote className="mt-5 text-xs text-copilot-text-secondary">
+              <LowCostBankingShortlistCards
+                entries={[...BANKING_INTERNATIONAL_TRANSFERS_SHORTLIST_ENTRIES]}
+                titleChipLabel="Transfer options"
+                utmReferrerPath={INTERNATIONAL_TRANSFERS_FROM_NL_PATH}
+                bestBanksHref={BEST_BANKS_EXPATS_PATH}
+                visualVariant="moving"
+                className="min-w-0 max-w-full"
+              />
+              <AffiliateDisclosureNote className="text-xs text-foreground-muted">
                 {DEFAULT_MONETIZATION_DISCLOSURE}
               </AffiliateDisclosureNote>
-            </SectionBlock>
+            </PremiumGuideSection>
 
-            <SectionBlock
-              id={meta.bankVsDigitalTransfer.id}
-              className={SECTION_SCROLL_MARGIN}
-              eyebrow={meta.bankVsDigitalTransfer.eyebrow}
-              title={meta.bankVsDigitalTransfer.title}
-              subtitle={meta.bankVsDigitalTransfer.subtitle}
+            <PremiumGuideSection
+              id="provider-types"
+              tipsKey="types"
+              visual={page.visuals.types}
+              intro={
+                <SectionIntro eyebrow="Three types" title={page.providerTypes.heading} fullWidth>
+                  <p>{page.providerTypes.lead}</p>
+                </SectionIntro>
+              }
             >
-              <p className="mt-4 max-w-none text-sm leading-relaxed text-copilot-text-secondary">{meta.bankVsDigitalTransfer.lead}</p>
-              <InstructionalRasterFigure
-                raster={bankingInstructionalRasterAssets.intlTransferThreePaths}
-                caption={meta.bankVsDigitalTransfer.instructionalCaption}
-                className="mt-5 w-full"
-              />
               <TransferComparisonTable
-                rows={meta.bankVsDigitalTransfer.rows}
-                tableCaption={meta.bankVsDigitalTransfer.tableCaption}
-                columnLabels={meta.bankVsDigitalTransfer.columnLabels}
-                className="mt-5"
+                rows={page.providerTypes.rows}
+                tableCaption={page.providerTypes.tableCaption}
+                columnLabels={page.providerTypes.columnLabels}
               />
-              <div className="mt-6 max-w-none space-y-3 border-t border-dashed border-copilot-primary/[0.12] pt-6">
-                <p className="text-sm leading-relaxed text-copilot-text-secondary">{meta.bankVsDigitalTransfer.afterTableLead}</p>
-                <Link href={meta.bankVsDigitalTransfer.afterTableCta.href} className={primaryCtaClass}>
-                  {meta.bankVsDigitalTransfer.afterTableCta.label}
-                  <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
-                </Link>
-              </div>
-            </SectionBlock>
+              <p className="text-sm leading-relaxed text-foreground-muted">{page.providerTypes.afterTableLead}</p>
+              <Link href="#full-cost" className={primaryCtaClass}>
+                See what makes up the total cost
+                <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
+            </PremiumGuideSection>
 
-            <SectionBlock
-              id={meta.whatDeterminesCost.id}
-              className={SECTION_SCROLL_MARGIN}
-              eyebrow={meta.whatDeterminesCost.eyebrow}
-              title={meta.whatDeterminesCost.title}
-              subtitle={meta.whatDeterminesCost.subtitle}
+            <PremiumGuideSection
+              id="full-cost"
+              tipsKey="cost"
+              visual={page.visuals.cost}
+              intro={
+                <SectionIntro eyebrow="Full cost" title={page.fullCost.heading} fullWidth>
+                  <p>{page.fullCost.lead}</p>
+                </SectionIntro>
+              }
             >
-              <InstructionalRasterFigure
-                raster={bankingInstructionalRasterAssets.intlTransferTotalCost}
-                caption={meta.whatDeterminesCost.instructionalCaption}
-                className="mt-4 w-full"
-              />
               <TransferCostBreakdown
-                items={[...meta.whatDeterminesCost.items]}
-                summaryVisual={meta.whatDeterminesCost.equationSummary}
-                summaryRegionHeadingId={`${meta.whatDeterminesCost.id}-total-picture`}
-                className="mt-4"
+                items={[...page.fullCost.items]}
+                summaryVisual={page.fullCost.equationSummary}
+                summaryRegionHeadingId="full-cost-total-picture"
               />
-              <div className="mt-6 max-w-none space-y-3">
-                <p className="text-sm leading-relaxed text-copilot-text-secondary">{meta.whatDeterminesCost.afterBreakdownLead}</p>
-                <Link href={meta.whatDeterminesCost.afterBreakdownCta.href} className={primaryCtaClass}>
-                  {meta.whatDeterminesCost.afterBreakdownCta.label}
-                  <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
+              <WarningPanel
+                title="Verify every quote with providers"
+                items={[
+                  "Educational cost pieces are not live prices for 2026 or any year",
+                  "Same-day official calculators beat memory and marketing stickers",
+                  "Receiver fees and timing can still change what arrives",
+                ]}
+              />
+              <p className="text-sm leading-relaxed text-foreground-muted">{page.fullCost.afterBreakdownLead}</p>
+              <Link href="#options" className={primaryCtaClass}>
+                Open transfer options
+                <ArrowRight className="h-4 w-4" aria-hidden />
+              </Link>
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="tradeoffs"
+              tipsKey="tradeoffs"
+              visual={page.visuals.tradeoffs}
+              intro={
+                <SectionIntro eyebrow="Trade-offs" title={page.tradeoffs.heading} fullWidth>
+                  <p>{page.tradeoffs.lead}</p>
+                </SectionIntro>
+              }
+            >
+              <BankingSetupDecisionCards cards={[...page.tradeoffs.cards]} />
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="scenarios"
+              tipsKey="scenarios"
+              visual={page.visuals.scenarios}
+              intro={
+                <SectionIntro eyebrow="Situations" title={page.scenarios.heading} fullWidth>
+                  <p>{page.scenarios.intro}</p>
+                </SectionIntro>
+              }
+            >
+              <p className="text-sm leading-relaxed text-foreground-muted">{page.scenarios.guidance}</p>
+              <TransferScenarioCards scenarios={page.scenarios.cards} />
+              <ScenarioTable title="Tourist and expat transfer stories" rows={page.scenarios.rows} />
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <Link href="#howto" className={primaryCtaClass}>
+                  Run the five-step checklist
+                  <ArrowRight className="h-4 w-4" aria-hidden />
+                </Link>
+                <Link href="#options" className={secondaryCtaClass}>
+                  Browse transfer options
                 </Link>
               </div>
-            </SectionBlock>
+            </PremiumGuideSection>
 
-            <SectionBlock
-              id={meta.cheapestFastConvenient.id}
-              className={SECTION_SCROLL_MARGIN}
-              eyebrow={meta.cheapestFastConvenient.eyebrow}
-              title={meta.cheapestFastConvenient.title}
-              subtitle={meta.cheapestFastConvenient.subtitle}
+            <PremiumGuideSection
+              id="howto"
+              tipsKey="checklist"
+              visual={page.visuals.checklist}
+              intro={
+                <SectionIntro eyebrow="How-to" title={page.howTo.heading} fullWidth>
+                  <p>{page.howTo.lead}</p>
+                </SectionIntro>
+              }
             >
-              <BankingSetupDecisionCards cards={[...meta.cheapestFastConvenient.cards]} />
-            </SectionBlock>
-
-            <SectionBlock
-              id={meta.transferScenarios.id}
-              className={SECTION_SCROLL_MARGIN}
-              eyebrow={meta.transferScenarios.eyebrow}
-              title={meta.transferScenarios.title}
-              subtitle={meta.transferScenarios.subtitle}
-            >
-              <BoldParagraph text={meta.transferScenarios.scenarioGuidance} className="mt-4 max-w-none text-sm leading-relaxed text-copilot-text-secondary" />
-              <TransferScenarioCards scenarios={meta.transferScenarios.cards} className="mt-5" />
-              <div className="mt-6 flex w-full max-w-none flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-                <Link href={meta.transferScenarios.afterScenariosPrimaryCta.href} className={primaryCtaClass}>
-                  {meta.transferScenarios.afterScenariosPrimaryCta.label}
-                  <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
-                </Link>
-                <Link href={meta.transferScenarios.afterScenariosSecondaryCta.href} className={secondaryCtaClass}>
-                  {meta.transferScenarios.afterScenariosSecondaryCta.label}
-                </Link>
-              </div>
-            </SectionBlock>
-
-            <SectionBlock id={meta.howToCompare.id} className={SECTION_SCROLL_MARGIN} eyebrow={meta.howToCompare.eyebrow} title={meta.howToCompare.title} subtitle={meta.howToCompare.subtitle}>
-              <InstructionalRasterFigure
-                raster={bankingInstructionalRasterAssets.intlTransferCompareSteps}
-                caption={meta.howToCompare.instructionalCaption}
-                className="mt-4 w-full"
-              />
-              <ol className="mt-6 max-w-none list-decimal space-y-4 pl-5 text-sm text-copilot-text-secondary">
-                {meta.howToCompare.steps.map((step, i) => (
-                  <li key={step.title} className="pl-1">
-                    <p className="font-medium text-copilot-text-primary">
-                      {i + 1}. {step.title}
-                    </p>
-                    <p className="mt-1.5 leading-relaxed">{step.body}</p>
+              <ol className="space-y-4">
+                {page.howTo.steps.map((step, index) => (
+                  <li key={step.name} className={cn(cardClass, "p-5")}>
+                    <div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden />
+                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand-strong">Step {index + 1}</p>
+                    <h3 className="mt-2 text-lg font-bold tracking-tight text-foreground">{step.name}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{step.text}</p>
                   </li>
                 ))}
               </ol>
-              <div className="mt-6 flex w-full max-w-none flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
-                <Link href={meta.howToCompare.cta.href} className={primaryCtaClass}>
-                  {meta.howToCompare.cta.label}
-                  <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
-                </Link>
-                <Link href={meta.howToCompare.secondaryCta.href} className={secondaryCtaClass}>
-                  {meta.howToCompare.secondaryCta.label}
-                </Link>
-              </div>
-            </SectionBlock>
+            </PremiumGuideSection>
 
-            <SectionBlock
-              id={meta.recommendedProviders.sectionId}
-              className={SECTION_SCROLL_MARGIN}
-              eyebrow={meta.recommendedProviders.eyebrow}
-              title={meta.recommendedProviders.title}
-              subtitle={meta.recommendedProviders.subtitle}
+            <PremiumGuideSection
+              id="mistakes"
+              tipsKey="mistakes"
+              visual={page.visuals.mistakes}
+              intro={
+                <SectionIntro eyebrow="Avoid" title={page.mistakes.heading} fullWidth>
+                  <p>These patterns create avoidable transfer friction — calm same-day compares beat rushed confirms.</p>
+                </SectionIntro>
+              }
             >
-              <p className="mt-4 max-w-none rounded-xl border border-amber-200/70 bg-amber-50/50 px-4 py-3 text-sm leading-snug text-copilot-text-secondary ring-1 ring-amber-100/40">
-                {meta.recommendedProviders.disclaimer}
-              </p>
-              <div className="mt-8 space-y-10">
-                {meta.recommendedProviders.groups.map((group) => (
+              <div className={guidePremiumCardGridClass(page.mistakes.cards.length)}>
+                {page.mistakes.cards.map((card, idx) => (
+                  <MistakeCard key={card.title} card={card} index={idx} />
+                ))}
+              </div>
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="checklist"
+              tipsKey="checklist"
+              visual={page.visuals.checklist}
+              intro={
+                <SectionIntro eyebrow="Ready to send" title={page.checklist.heading} fullWidth>
+                  <p>Work through this list before a rent-sized or first-time international send.</p>
+                </SectionIntro>
+              }
+            >
+              <ChecklistBlock title="Transfer readiness checklist" items={page.checklist.items} columns={2} />
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="recommended"
+              tipsKey="options"
+              visual={page.visuals.options}
+              intro={
+                <SectionIntro eyebrow="Optional" title={page.recommended.heading} fullWidth>
+                  <p>{page.recommended.lead}</p>
+                </SectionIntro>
+              }
+            >
+              <WarningPanel title="Affiliate and pricing note" items={[page.recommended.disclaimer]} />
+              <div className="space-y-10">
+                {page.recommended.groups.map((group) => (
                   <div key={group.placementId}>
-                    <h3 className="text-base font-bold tracking-tight text-copilot-text-primary">{group.title}</h3>
+                    <h3 className="text-base font-bold tracking-tight text-foreground">{group.title}</h3>
                     <BankingRecommendedOptionsSection
                       placementId={group.placementId}
                       analyticsPageContext={group.analyticsPageContext}
                       boundaryNote={group.boundaryNote}
                       categoryLinks={[...group.categoryLinks]}
-                      browseLabel="More on ExpatCopilot: "
+                      browseLabel="More on ExpatLife: "
                       regionIntroLabel="Outside the guide above"
-                      utmReferrerPath={CANONICAL}
+                      utmReferrerPath={INTERNATIONAL_TRANSFERS_FROM_NL_PATH}
                     />
                   </div>
                 ))}
               </div>
-            </SectionBlock>
-          </PillarJourneyStack>
-        }
-        faq={
-          <PillarGuideFaqRegion>
-            <div className={cn(movingNlFaqCardInnerClass, SECTION_SCROLL_MARGIN)}>
-              <FAQBlock
-                id="faq"
-                eyebrow="Support"
-                title="Frequently asked questions"
-                items={meta.faq.map((f) => ({ q: f.q, a: f.a }))}
-                maxItems={20}
-              />
-            </div>
-            <VisasResidencyOfficialSources references={meta.officialSources} density="compact" />
-          </PillarGuideFaqRegion>
-        }
-      />
+              <AffiliateDisclosureNote className="text-xs text-foreground-muted">
+                {DEFAULT_MONETIZATION_DISCLOSURE}
+              </AffiliateDisclosureNote>
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="tools"
+              tipsKey="cost"
+              visual={page.visuals.cost}
+              intro={
+                <SectionIntro eyebrow="Tools" title={page.tools.heading} fullWidth>
+                  <p>Use tools for planning bands — then verify products and quotes on each provider’s official pages.</p>
+                </SectionIntro>
+              }
+            >
+              <div className={guidePremiumCardGridClass(page.tools.items.length)}>
+                {page.tools.items.map((item, idx) => (
+                  <LinkCard key={item.href} item={item} iconIndex={idx} />
+                ))}
+              </div>
+            </PremiumGuideSection>
+
+            <section id="faq" className={sectionClass}>
+              <div className={guidePremiumIntroStackClass}>
+                <SectionIntro eyebrow="FAQ" title="Frequently asked questions" fullWidth>
+                  <p>Short answers for the searches expats ask most often about sending money abroad from the Netherlands.</p>
+                </SectionIntro>
+              </div>
+              <div className={guidePremiumSectionDetailStackClass}>
+                <Accordion items={faqAccordionItems} allowMultiple initialOpenId="faq-0" density="comfortable" tone="copilot" />
+              </div>
+            </section>
+
+            <PremiumGuideSection
+              id="related-guides"
+              tipsKey="intro"
+              visual={page.visuals.intro}
+              intro={
+                <SectionIntro eyebrow="Related" title="Related banking guides" fullWidth>
+                  <p>Live cluster peers and outside siblings stay linkable — Open a bank account and Best banks are live.</p>
+                </SectionIntro>
+              }
+            >
+              <div className={guidePremiumCardGridClass(page.relatedGuides.length)}>
+                {page.relatedGuides.map((item, idx) => (
+                  <LinkCard key={`${item.href}-${item.label}`} item={item} iconIndex={idx} />
+                ))}
+              </div>
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="banking-hub"
+              tipsKey="snapshot"
+              visual={page.visuals.snapshot}
+              intro={
+                <SectionIntro eyebrow="Hub" title="Banking hub and cluster cards" fullWidth>
+                  <p>Return to the Banking hub or jump to live cluster peers and payment rails.</p>
+                </SectionIntro>
+              }
+            >
+              <div className={guidePremiumCardGridClass(page.hubCards.length)}>
+                {page.hubCards.map((item, idx) => (
+                  <LinkCard key={`${item.href}-${item.label}`} item={item} iconIndex={idx} />
+                ))}
+              </div>
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
+              id="explore-next"
+              tipsKey="scenarios"
+              visual={page.visuals.scenarios}
+              visualTone="onDark"
+              sectionTone="onDark"
+              intro={
+                <SectionIntro eyebrow="Explore next" title="Pick your next money step" tone="onDark" fullWidth>
+                  <p>Model transfer costs, compare banks, estimate monthly bands, or tighten safety habits.</p>
+                </SectionIntro>
+              }
+            >
+              <div className={guidePremiumCardGridClass(page.exploreNext.length)}>
+                {page.exploreNext.map((item, idx) => (
+                  <LinkCard key={`${item.href}-${item.label}`} item={item} iconIndex={idx} tone="onDark" />
+                ))}
+              </div>
+              <div id="sources" className="mt-8 space-y-6">
+                <SectionIntro eyebrow="Trust" title="Official sources" tone="onDark" fullWidth>
+                  <p>Confirm fees, FX and eligibility with providers — rules and prices change.</p>
+                </SectionIntro>
+                <div className={guidePremiumCardGridClass(page.officialSources.length)}>
+                  {page.officialSources.map((source) => (
+                    <SourceLink key={source.href} source={source} tone="onDark" />
+                  ))}
+                </div>
+                <p className="text-sm leading-relaxed text-slate-400">{page.disclosure}</p>
+              </div>
+            </PremiumGuideSection>
+          </div>
+        </Container>
+      </main>
     </>
   );
 }

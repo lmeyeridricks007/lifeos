@@ -315,6 +315,27 @@ export const bankingRelatedGuides: readonly BankingRelatedGuide[] = [
     ctaLabel: "Open payments guide",
   },
   {
+    id: "wise-vs-revolut",
+    title: "Wise vs Revolut",
+    description: "Decision orientation for multi-currency and app banking beside a Dutch everyday account — not a winner ranking.",
+    href: "/netherlands/money/banking/wise-vs-revolut/",
+    ctaLabel: "Open guide",
+  },
+  {
+    id: "cash-vs-card",
+    title: "Cash vs card",
+    description: "PIN-first shops, cash pockets, and contactless till culture for newcomers.",
+    href: "/netherlands/money/banking/cash-vs-card/",
+    ctaLabel: "Open guide",
+  },
+  {
+    id: "debit-cards",
+    title: "Debit cards",
+    description: "Dutch debit / PIN culture — pinpas norms for everyday shops and ATMs.",
+    href: "/netherlands/money/banking/debit-cards/",
+    ctaLabel: "Open guide",
+  },
+  {
     id: "wise-external",
     title: "International transfers (Wise)",
     description: "Many people use Wise next to a Dutch account for sending money abroad.",
