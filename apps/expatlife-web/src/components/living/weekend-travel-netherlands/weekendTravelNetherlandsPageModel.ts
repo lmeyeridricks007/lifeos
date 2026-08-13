@@ -13,7 +13,6 @@ import {
   TRAMS_NETHERLANDS_PATH,
   WEEKEND_TRAVEL_NETHERLANDS_PATH,
 } from "@/src/components/living/ov-chipkaart-netherlands/ovChipkaartNetherlandsPageModel";
-import { LIVING_TRANSPORT_APP_DOWNLOADS } from "@/src/components/living/livingTransportAppStoreLinks";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 /** Re-export cluster PATH constants from the OV-chipkaart lead model (single source of truth). */
@@ -723,30 +722,113 @@ export const weekendTravelNetherlandsPage = {
     "Occasional car → Car sharing.",
     "Modes and apps → Getting around.",
   ],
-  sources: [
+  officialSources: [
     {
       label: "NS — tickets and journey planner",
       href: "https://www.ns.nl/en",
-      note: "Official national rail tickets, planners and product pages.",
+      description: "Official national rail tickets, planners and product pages.",
     },
     {
       label: "9292 — door-to-door OV planner",
       href: "https://9292.nl/en",
-      note: "National public-transport journey planner including regional legs.",
+      description: "National public-transport journey planner including regional legs.",
     },
     {
       label: "OVpay",
       href: "https://www.ovpay.nl/en",
-      note: "Contactless travel orientation.",
+      description: "Contactless travel orientation.",
     },
     {
       label: "OV-chipkaart",
       href: "https://www.ov-chipkaart.nl/en",
-      note: "Personal and anonymous travel card orientation.",
+      description: "Personal and anonymous travel card orientation.",
     },
   ],
-  appDownloads: LIVING_TRANSPORT_APP_DOWNLOADS,
+  visualTextDetails: {
+    intro: {
+      title: "From the visual — four building blocks",
+      items: [
+        "Pick a destination pattern.",
+        "Check tickets and discounts.",
+        "Plan the last mile.",
+        "Pack light.",
+      ],
+    },
+    snapshot: {
+      title: "From the visual — six building blocks",
+      items: [
+        "Plan early.",
+        "Tickets and discounts.",
+        "Destination patterns.",
+        "Last mile.",
+        "Packing tips.",
+        "Mistakes to avoid.",
+      ],
+    },
+    products: {
+      title: "From the visual — planning cues",
+      items: [
+        "Day trip vs overnight.",
+        "NS plus regional OV.",
+        "9292 planner habits.",
+        "Pattern before tickets.",
+      ],
+    },
+    chipkaart: {
+      title: "From the visual — ticket cues",
+      items: [
+        "Singles for rare days.",
+        "OVpay for light use.",
+        "Weekend Voordeel orientation.",
+        "Train discounts for product math.",
+      ],
+    },
+    decide: {
+      title: "From the visual — last-mile cues",
+      items: [
+        "OV-fiets and bike sharing.",
+        "Walking and local OV.",
+        "Occasional car sharing.",
+        "Last kilometre decides ease.",
+      ],
+    },
+    student: {
+      title: "From the visual — packing cues",
+      items: [
+        "Light bag.",
+        "Ticket method ready.",
+        "Check-in reminders.",
+        "Weather layer.",
+      ],
+    },
+    scenarios: {
+      title: "From the visual — scenario cues",
+      items: [
+        "First leisure weekend.",
+        "Day trip by NS.",
+        "Overnight with regional OV.",
+        "Last-mile bike or share-car.",
+      ],
+    },
+    mistakes: {
+      title: "From the visual — mistake cues",
+      items: [
+        "Skipping the planner.",
+        "Buying the wrong product.",
+        "Ignoring last mile.",
+        "Overpacking for a day trip.",
+      ],
+    },
+    checklist: {
+      title: "From the visual — checklist cues",
+      items: [
+        "Destination pattern chosen.",
+        "Tickets confirmed.",
+        "Last mile planned.",
+        "Bag ready.",
+      ],
+    },
+  },
   disclosure:
     "ExpatLife provides general weekend-travel and mobility orientation for newcomers. It is not financial, travel or product advice. Timetables, NS products, fees and OV rules change — always confirm on official NS, 9292 and OV pages before you travel. Some links may be affiliate links; if you use them, we may earn a commission at no extra cost to you.",
-
-};
+} as const;
