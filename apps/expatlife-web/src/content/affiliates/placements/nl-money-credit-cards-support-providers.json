@@ -1,0 +1,41 @@
+{
+  "id": "nl-money-credit-cards-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/credit-cards/",
+    "slot": "recommended-providers-credit-cards"
+  },
+  "variant": "cards",
+  "title": "Explore credit and travel-card options",
+  "intro": "Soft CTAs only — we are not approving cards for you. Traditional banks often route credit products through their sites; digital apps are common travel companions. Confirm annual fees, APR, FX markups and eligibility on each official page. This block is not a ranking of issuers.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    {
+      "providerId": "ing",
+      "reason": "Onboarding: Explore ING credit-card and package options after you have a clear use-case. Best for: residents who already bank with ING and want holds/travel cover. Watch-outs: approvals and annual fees are product-specific — read the live tariff, not this guide."
+    },
+    {
+      "providerId": "abn-amro",
+      "reason": "Onboarding: Full-service bank path to credit products and related cards. Best for: newcomers who want branch help when applying. Watch-outs: income and BKR checks apply; verify current annual fee and interest terms on ABN’s site."
+    },
+    {
+      "providerId": "rabobank",
+      "reason": "Onboarding: Cooperative bank credit and card offerings for eligible customers. Best for: residents who prefer a traditional Dutch issuer relationship. Watch-outs: product names and fees change — confirm the 2026 tariff PDF before you apply."
+    },
+    {
+      "providerId": "revolut",
+      "reason": "Onboarding: App-first travel and spending card many expats use for hotels and FX. Best for: multi-currency spend and temporary holds while debit covers Dutch shops. Watch-outs: product type (debit vs credit-style) and fees depend on plan — verify before relying on it for deposits."
+    },
+    {
+      "providerId": "bunq",
+      "reason": "Onboarding: Digital Dutch banking with card products that often sit beside everyday debit. Best for: English-first app users who want a modern stack. Watch-outs: confirm whether you need a true revolving credit line vs a debit/credit hybrid — check bunq’s current product pages."
+    },
+    {
+      "providerId": "wise",
+      "reason": "Onboarding: Multi-currency account and card for foreign spend and transfers. Best for: reducing FX friction on travel and remittances alongside a Dutch debit pinpas. Watch-outs: Wise is not a classic Dutch revolving credit card — use it for FX clarity, not as a hotel-deposit substitute unless the merchant accepts it."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm annual fees, interest, FX markups and eligibility with the provider directly."
+}

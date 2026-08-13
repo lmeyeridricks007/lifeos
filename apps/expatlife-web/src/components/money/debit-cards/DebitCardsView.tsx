@@ -50,6 +50,7 @@ import {
   citiesFunnelHeroFigureClassName,
 } from "@/src/components/cities/shared/citiesFunnelPageUi";
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
+import { BankingRecommendedOptionsSection } from "@/components/banking/BankingRecommendedOptionsSection";
 import { BANKING_HUB_PATH } from "@/src/components/money/banking-hub/bankingHubPageModel";
 import {
   DEBIT_CARDS_PATH,
@@ -101,6 +102,12 @@ const compareColumns = [
   { key: "setting", label: "Setting" },
   { key: "homeHabit", label: "Credit-first habit" },
   { key: "dutchNorm", label: "Dutch debit norm" },
+  { key: "tip", label: "Practical tip" },
+] as const;
+
+const costColumns = [
+  { key: "setting", label: "Cost line" },
+  { key: "band", label: "Indicative 2026 band" },
   { key: "tip", label: "Practical tip" },
 ] as const;
 
@@ -922,6 +929,38 @@ export function DebitCardsView() {
             </PremiumGuideSection>
 
             <PremiumGuideSection
+              id="costs"
+              tipsKey="costs"
+              visual={page.visuals.costs}
+              intro={
+                <SectionIntro eyebrow="Costs" title={page.costs.heading} fullWidth>
+                  <p>{page.costs.lead}</p>
+                </SectionIntro>
+              }
+            >
+              <ChecklistBlock title="What to verify with banks" items={page.costs.bullets} columns={2} />
+              <div className={guidePremiumCardGridClass(page.costs.cards.length)}>
+                {page.costs.cards.map((card, idx) => (
+                  <FeatureCard key={card.title} title={card.title} body={card.body} iconIndex={idx} />
+                ))}
+              </div>
+              <InfoTable
+                columns={costColumns}
+                rows={page.costs.indicativeRows.map((row) => ({
+                  setting: row.setting,
+                  band: row.band,
+                  tip: row.tip,
+                }))}
+              />
+              <WarningPanel title="Costs are orientation only" items={page.costs.warningItems} />
+              <div className={guidePremiumCardGridClass(page.costs.crossLinks.length)}>
+                {page.costs.crossLinks.map((item, idx) => (
+                  <LinkCard key={`${item.href}-${item.label}`} item={item} iconIndex={idx} />
+                ))}
+              </div>
+            </PremiumGuideSection>
+
+            <PremiumGuideSection
               id="online"
               tipsKey="online"
               visual={page.visuals.online}
@@ -1047,6 +1086,28 @@ export function DebitCardsView() {
                 ))}
               </div>
             </PremiumGuideSection>
+
+            <section id={page.recommendedOptions.sectionId} className={sectionClass}>
+              <div className={guidePremiumIntroStackClass}>
+                <SectionIntro
+                  eyebrow={page.recommendedOptions.eyebrow}
+                  title={page.recommendedOptions.title}
+                  fullWidth
+                >
+                  <p>{page.recommendedOptions.subtitle}</p>
+                </SectionIntro>
+              </div>
+              <div className={guidePremiumSectionDetailStackClass}>
+                <BankingRecommendedOptionsSection
+                  placementId={page.recommendedOptions.placementId}
+                  analyticsPageContext={page.recommendedOptions.analyticsPageContext}
+                  boundaryNote={page.recommendedOptions.boundaryNote}
+                  categoryLinks={[...page.recommendedOptions.categoryLinks]}
+                  browseLabel={page.recommendedOptions.browseLabel}
+                  utmReferrerPath={DEBIT_CARDS_PATH}
+                />
+              </div>
+            </section>
 
             <section id="faq" className={sectionClass}>
               <div className={guidePremiumIntroStackClass}>

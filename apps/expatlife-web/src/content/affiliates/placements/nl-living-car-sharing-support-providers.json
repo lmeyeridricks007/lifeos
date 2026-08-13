@@ -1,0 +1,29 @@
+{
+  "id": "nl-living-car-sharing-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/car-sharing-netherlands/",
+    "slot": "recommended-providers-car-sharing"
+  },
+  "variant": "cards",
+  "title": "Car-sharing providers to explore",
+  "intro": "Soft CTAs for established Dutch car-sharing options when occasional four wheels fit your life. Confirm live rates, zones and insurance terms in each app — this block is not a ranking of fleets.",
+  "categoryOrder": ["mobility", "cars"],
+  "items": [
+    {
+      "providerId": "greenwheels",
+      "reason": "Station- and neighbourhood-based shared cars — a classic complement to OV when you need occasional four wheels near hubs."
+    },
+    {
+      "providerId": "swapfiets",
+      "reason": "Bike subscription for everyday city trips between car-share bookings — keep ownership optional longer."
+    },
+    {
+      "providerId": "ns",
+      "reason": "Train travel as the default long-distance mode — combine with car sharing for the last mile or weekend errands."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing and availability with the provider directly. This is not legal or insurance advice."
+}

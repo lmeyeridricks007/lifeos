@@ -12,9 +12,9 @@
   "cta": {
     "label": "View Sitters.nl",
     "href": "https://www.sitters.nl/",
-    "isAffiliate": false
+    "isAffiliate": true
   },
-  "disclosure": "Third-party platform; we do not earn a commission from this link. Confirm pricing and vetting on their site.",
+  "disclosure": "We may earn a commission if you book through this link. Confirm pricing and vetting on their site.",
   "logo": {
     "src": "https://www.google.com/s2/favicons?domain=sitters.nl&sz=128",
     "alt": "Sitters.nl"

@@ -1,0 +1,33 @@
+{
+  "id": "nl-money-col-housing-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/cost-of-living-netherlands/",
+    "slot": "housing-cost-providers"
+  },
+  "variant": "cards",
+  "title": "Find rentals that set your housing line",
+  "intro": "Soft CTAs to build a realistic rent band from live listings — not a ranking of landlords or agencies.",
+  "categoryOrder": ["housing"],
+  "items": [
+    {
+      "providerId": "pararius",
+      "reason": "Long-term rental marketplace — use city and size filters to stress-test the rent line in your budget."
+    },
+    {
+      "providerId": "funda",
+      "reason": "Nationwide rent search — compare neighbourhood bands before you treat any average as a quote."
+    },
+    {
+      "providerId": "housinganywhere",
+      "reason": "Furnished mid-term options while you settle — useful when first-month housing sits above long-term targets."
+    },
+    {
+      "providerId": "kamernet",
+      "reason": "Rooms and shared housing — often the entry point for singles modelling a lower housing stack."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects planning relevance for cost-of-living, not pay-to-rank. Confirm rent, deposit and fees on each listing yourself."
+}

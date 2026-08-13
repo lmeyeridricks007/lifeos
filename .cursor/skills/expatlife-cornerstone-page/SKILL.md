@@ -65,7 +65,7 @@ Expand the topic into the full brief using [brief-template.md](brief-template.md
 
 If the user asks **brief only**, stop after Step 0 and output the brief (see also skill `expatlife-cornerstone-brief`).
 
-If invoked as part of skill/agent `expatlife-cornerstone-cluster`, also apply the provided cluster context: sibling routes, content boundary, PATH constants, and “live peers must not be comingSoon”.
+If invoked as part of skill/agent `expatlife-cornerstone-cluster`, also apply the provided cluster context: sibling routes, content boundary, PATH constants, “live peers must not be comingSoon”, and **go-live** (`immediate` or `YYYY-MM-DD`). When go-live is a date, follow `.cursor/skills/expatlife-cornerstone-cluster/scheduling.md`. When immediate (or no date), do not add `SCHEDULED_GUIDES` rows.
 
 ## Steps 1–2 — Implement from the brief
 

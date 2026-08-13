@@ -1,0 +1,29 @@
+{
+  "id": "nl-living-bike-sharing-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/bike-sharing-netherlands/",
+    "slot": "recommended-providers-bike-sharing"
+  },
+  "variant": "cards",
+  "title": "Bike-sharing options to explore",
+  "intro": "Soft CTAs for established Dutch mobility options when shared or subscription bikes fit your week. Private ownership deepens on the Cycling guide — confirm live plans on each site. This block is not a ranking of fleets, apps or shops.",
+  "categoryOrder": ["mobility"],
+  "items": [
+    {
+      "providerId": "swapfiets",
+      "reason": "Maintained doorstep subscription bike with predictable monthly cost — strong when you want a reliable city bike without buying or hunting workshops after every flat."
+    },
+    {
+      "providerId": "ns",
+      "reason": "Train travel for longer legs that often pair with OV-fiets last-mile unlocks — keep return windows visible before you leave the office."
+    },
+    {
+      "providerId": "greenwheels",
+      "reason": "Occasional shared cars when bikes and OV are not enough for a weekend errand — keep four wheels optional."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing and availability with the provider directly. This is not legal or product advice."
+}

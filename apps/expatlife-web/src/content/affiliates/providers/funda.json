@@ -1,0 +1,25 @@
+{
+  "id": "funda",
+  "name": "Funda",
+  "tagline": "Netherlands’ main housing portal for rent and sale listings",
+  "categoryIds": ["housing"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Rent & buy"],
+  "highlights": [
+    "Strong coverage of agent-listed rentals nationwide",
+    "Use filters carefully — competition in Amsterdam and Utrecht is high"
+  ],
+  "cta": {
+    "label": "Search Funda rentals",
+    "href": "https://www.funda.nl/en/zoeken/huur/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you use this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=funda.nl&sz=128",
+    "alt": "Funda logo"
+  }
+}

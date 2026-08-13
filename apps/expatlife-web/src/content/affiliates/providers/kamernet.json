@@ -1,0 +1,25 @@
+{
+  "id": "kamernet",
+  "name": "Kamernet",
+  "tagline": "Rooms and shared housing across the Netherlands",
+  "categoryIds": ["housing"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Rooms", "Students"],
+  "highlights": [
+    "Common for rooms and early shared housing after arrival",
+    "Confirm contract length, deposit and house rules before you pay"
+  ],
+  "cta": {
+    "label": "Browse Kamernet",
+    "href": "https://kamernet.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you use this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=kamernet.nl&sz=128",
+    "alt": "Kamernet logo"
+  }
+}

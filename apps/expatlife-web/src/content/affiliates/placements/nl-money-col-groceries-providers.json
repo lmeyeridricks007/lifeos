@@ -1,0 +1,29 @@
+{
+  "id": "nl-money-col-groceries-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/cost-of-living-netherlands/",
+    "slot": "groceries-cost-providers"
+  },
+  "variant": "cards",
+  "title": "Model everyday food and delivery spend",
+  "intro": "Soft CTAs for supermarket and meal patterns that stretch the groceries line — habits matter more than brand loyalty.",
+  "categoryOrder": ["groceries"],
+  "items": [
+    {
+      "providerId": "albert-heijn",
+      "reason": "Benchmark supermarket baskets and delivery (AH Bezorgen) against your household size."
+    },
+    {
+      "providerId": "picnic",
+      "reason": "App-based grocery delivery — check postcode coverage when modelling delivery-led months."
+    },
+    {
+      "providerId": "hellofresh",
+      "reason": "Meal kits for predictable dinner costs — compare per-serving price with store-brand cooking."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Food prices change weekly — treat any basket as orientation, not a quote."
+}

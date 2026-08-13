@@ -1,0 +1,25 @@
+{
+  "id": "picnic",
+  "name": "Picnic",
+  "tagline": "Dutch supermarket delivery with app-based slots",
+  "categoryIds": ["groceries"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Grocery delivery"],
+  "highlights": [
+    "Useful for modelling delivery-led grocery spend after arrival",
+    "Availability depends on your postcode — confirm live coverage"
+  ],
+  "cta": {
+    "label": "Explore Picnic",
+    "href": "https://picnic.app/nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you shop through this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=picnic.app&sz=128",
+    "alt": "Picnic logo"
+  }
+}

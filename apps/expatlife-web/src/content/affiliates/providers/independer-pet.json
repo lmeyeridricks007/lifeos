@@ -1,0 +1,25 @@
+{
+  "id": "independer-pet",
+  "name": "Independer",
+  "tagline": "Compare Dutch pet and household insurance options",
+  "categoryIds": ["insurance"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Comparison site", "Pet insurance"],
+  "highlights": [
+    "Start insurance comparison for Dutch policies, including pet-related cover orientation",
+    "Useful once you have a BSN and want side-by-side quotes"
+  ],
+  "cta": {
+    "label": "Compare on Independer",
+    "href": "https://www.independer.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you use this link.",
+  "logo": {
+    "src": "/images/affiliates/logos/independer.svg",
+    "alt": "Independer logo"
+  }
+}

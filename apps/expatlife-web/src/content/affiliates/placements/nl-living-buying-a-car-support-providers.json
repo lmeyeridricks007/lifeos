@@ -1,0 +1,25 @@
+{
+  "id": "nl-living-buying-a-car-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/buying-a-car-netherlands/",
+    "slot": "recommended-providers-buying-a-car"
+  },
+  "variant": "cards",
+  "title": "Mobility and insurance while you buy a car",
+  "intro": "Soft CTAs for car-sharing if you want to delay ownership, and insurance comparison when you are ready to cover a car. Confirm live prices and cover on official sites — this block is not a ranking of dealers, workshops or municipalities.",
+  "categoryOrder": ["mobility", "insurance", "cars"],
+  "items": [
+    {
+      "providerId": "greenwheels",
+      "reason": "Car sharing for occasional trips while you decide whether ownership is worth it — often useful before a full purchase."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Compare Dutch car insurance options when you are ready to insure — verify cover, excess and exclusions yourself."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing and availability with the provider directly. This is not legal or insurance advice."
+}

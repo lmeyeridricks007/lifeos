@@ -1,0 +1,29 @@
+{
+  "id": "nl-money-col-transport-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/cost-of-living-netherlands/",
+    "slot": "transport-cost-providers"
+  },
+  "variant": "cards",
+  "title": "Price bike-first, OV and occasional car use",
+  "intro": "Transport is usually modest in Dutch cities until you add a car — compare subscription bikes, trains and car-sharing against ownership.",
+  "categoryOrder": ["mobility", "cars"],
+  "items": [
+    {
+      "providerId": "swapfiets",
+      "reason": "Bike subscription with repairs — a predictable monthly mobility line for city commuting."
+    },
+    {
+      "providerId": "ns",
+      "reason": "Train tickets and Flex-style subscriptions — model commute and weekend travel separately from local bike trips."
+    },
+    {
+      "providerId": "greenwheels",
+      "reason": "Car sharing for occasional trips — often cheaper than parking + insurance for low-mileage households."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Confirm live membership prices and coverage areas on each provider site."
+}

@@ -1,0 +1,37 @@
+{
+  "id": "nl-family-pets-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/family/pets-netherlands/",
+    "slot": "recommended-providers-pets"
+  },
+  "variant": "cards",
+  "title": "Explore pet insurance, sitting and supplies",
+  "intro": "Soft CTAs for everyday pet life after arrival. Compare insurance terms, meet sitters, and buy setup gear on official sites — this block is not a ranking of vets or trainers.",
+  "categoryOrder": ["insurance", "services"],
+  "items": [
+    {
+      "providerId": "independer-pet",
+      "reason": "Compare Dutch insurance options and read pet-related cover orientation — useful before you buy a dierenverzekering or check liability context."
+    },
+    {
+      "providerId": "ohra-pet",
+      "reason": "Mainstream Dutch pet insurance packages — verify 2026 premiums, cover ceilings and waiting periods on OHRA’s site."
+    },
+    {
+      "providerId": "figo-pet",
+      "reason": "Alternative pet insurance brand many households compare — confirm exclusions and claim rules yourself."
+    },
+    {
+      "providerId": "pawshake",
+      "reason": "Pet sitting, boarding and dog walking marketplace for travel weeks and busy workdays."
+    },
+    {
+      "providerId": "petsplace",
+      "reason": "Everyday food, litter and gear for first-month setup and restocking."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing, cover and availability with the provider directly. This is not veterinary or insurance advice."
+}

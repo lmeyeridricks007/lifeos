@@ -1,0 +1,25 @@
+{
+  "id": "ns",
+  "name": "NS",
+  "tagline": "Dutch Railways — train tickets, season tickets and NS Flex subscriptions",
+  "categoryIds": ["mobility"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Trains", "OV"],
+  "highlights": [
+    "Model commute and intercity travel against bike-first living",
+    "Compare single tickets vs Flex / season options for your pattern"
+  ],
+  "cta": {
+    "label": "Explore NS tickets",
+    "href": "https://www.ns.nl/en",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you use this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=ns.nl&sz=128",
+    "alt": "NS logo"
+  }
+}

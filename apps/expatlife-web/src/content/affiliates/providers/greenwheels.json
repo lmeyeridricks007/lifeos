@@ -1,0 +1,25 @@
+{
+  "id": "greenwheels",
+  "name": "Greenwheels",
+  "tagline": "Car sharing across Dutch cities when you need a car occasionally",
+  "categoryIds": ["mobility", "cars"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Car sharing"],
+  "highlights": [
+    "Useful alternative to full car ownership for weekend trips or IKEA runs",
+    "Compare membership + hourly rates against parking and insurance costs"
+  ],
+  "cta": {
+    "label": "View Greenwheels",
+    "href": "https://www.greenwheels.com/nl-en/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=greenwheels.com&sz=128",
+    "alt": "Greenwheels logo"
+  }
+}

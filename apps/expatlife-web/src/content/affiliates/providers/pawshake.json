@@ -1,0 +1,25 @@
+{
+  "id": "pawshake",
+  "name": "Pawshake",
+  "tagline": "Book pet sitters, dog walkers and boarding with local caregivers in the Netherlands",
+  "categoryIds": ["services"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Pet sitting", "Dog walking"],
+  "highlights": [
+    "Find local sitters and walkers for travel weeks or busy workdays",
+    "Read reviews and meet-and-greets before you book"
+  ],
+  "cta": {
+    "label": "Explore Pawshake",
+    "href": "https://www.pawshake.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you book through this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=pawshake.nl&sz=128",
+    "alt": "Pawshake logo"
+  }
+}

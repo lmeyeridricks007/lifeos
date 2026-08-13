@@ -1,0 +1,41 @@
+{
+  "id": "nl-money-debit-cards-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/debit-cards/",
+    "slot": "recommended-providers-debit-cards"
+  },
+  "variant": "cards",
+  "title": "Explore debit / pinpas account options",
+  "intro": "A Dutch debit card usually comes with an everyday account. Use these soft CTAs to open official sites, then confirm package fees, card shipping and eligibility yourself — this block is not a ranking.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    {
+      "providerId": "bunq",
+      "reason": "Onboarding: English-first digital Dutch account with a debit card path. Best for: expats who want fast app setup alongside salary and direct debits. Watch-outs: confirm plan tier, physical card costs and whether employers accept your IBAN."
+    },
+    {
+      "providerId": "ing",
+      "reason": "Onboarding: Major Dutch retail bank with a widely used pinpas package. Best for: salary, rent and everyday PIN culture. Watch-outs: compare monthly package fees and English support for your branch region."
+    },
+    {
+      "providerId": "abn-amro",
+      "reason": "Onboarding: Full-service Dutch bank with branch depth when you need help. Best for: newcomers who want a traditional debit stack. Watch-outs: verify package price, card delivery timing and ID/BSN steps on ABN’s site."
+    },
+    {
+      "providerId": "rabobank",
+      "reason": "Onboarding: Cooperative retail bank with Dutch debit products. Best for: residents who prefer a mainstream pinpas and local presence. Watch-outs: check regional English UX and live tariff PDFs."
+    },
+    {
+      "providerId": "n26",
+      "reason": "Onboarding: App-first EU debit account many expats use for spending. Best for: travel and digital everyday spend while you settle. Watch-outs: confirm salary, rent and Dutch direct-debit fit before treating it as your only account."
+    },
+    {
+      "providerId": "revolut",
+      "reason": "Onboarding: Spending and FX companion with a debit-style card. Best for: travel wallets and multi-currency controls beside a Dutch pinpas. Watch-outs: not a substitute for every Dutch payroll or landlord requirement — verify contracts."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm fees, card terms and eligibility on the provider’s official pages."
+}

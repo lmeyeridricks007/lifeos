@@ -8,13 +8,14 @@ Pillar: {health|family|housing|life|education|jobs|money|…}
 Parent hub: {existing path or "deferred"}
 Menu section: {e.g. Living → Daily life / Healthcare}
 Tone cluster: {practical / reassuring / …}
+Go-live: {immediate | YYYY-MM-DD}   # from user; default immediate — never invent a future date
 
 ## Pages (build order)
 
-| # | Topic | Title | Slug | Route | Boundary (1 line) | Status |
-|---|---|---|---|---|---|---|
-| 1 | Pharmacies | Pharmacies in the Netherlands | pharmacies-netherlands | /netherlands/health/pharmacies-netherlands/ | How Dutch pharmacies work overall | building |
-| 2 | … | … | … | … | … | planned |
+| # | Topic | Title | Slug | Route | Boundary (1 line) | Go-live | Status |
+|---|---|---|---|---|---|---|---|
+| 1 | Pharmacies | Pharmacies in the Netherlands | pharmacies-netherlands | /netherlands/health/pharmacies-netherlands/ | How Dutch pharmacies work overall | (cluster) | building |
+| 2 | … | … | … | … | … | (cluster) or YYYY-MM-DD | planned |
 
 ## Outside-cluster links (shared)
 
@@ -34,9 +35,12 @@ Tone cluster: {practical / reassuring / …}
 1. …
 2. …
 
-## publishDate series
+## Go-live / scheduling
 
-Assign sequential future dates in the cluster series unless user specifies.
+- **Default:** `immediate` when the user did not give a date.
+- **Scheduled:** when the user gave a date, set cluster Go-live to `YYYY-MM-DD` and follow [scheduling.md](scheduling.md) (`SCHEDULED_GUIDES` + publishGate).
+- Per-page override only if the user listed different dates per page.
+- Do **not** auto-assign a sequential future “publishDate series” unless the user asked to schedule.
 ```
 
 ## Build-order heuristics

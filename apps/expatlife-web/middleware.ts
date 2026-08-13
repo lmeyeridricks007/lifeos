@@ -15,6 +15,7 @@ import {
   findMovingGuideByNormalizedPath,
   findMovingGuideBySlug,
 } from "@/src/lib/publishing/registryPublishing";
+import { findScheduledGuide, isScheduledGuidePubliclyVisible } from "@/src/lib/publishing/scheduledGuides";
 import countryIndex from "@/src/content/countries/index.json";
 import { MOVING_TOOL_FROM_SLUGS } from "@/src/data/site/route-registry";
 
@@ -110,6 +111,11 @@ export function middleware(request: NextRequest) {
     isNetherlandsCitiesHubPath(n) &&
     !isNetherlandsCitiesHubPubliclyVisible(now, visibilityOpts)
   ) {
+    const res = new NextResponse(null, { status: 404 });
+    return attachSimulateProductionCookie(request, res);
+  }
+
+  if (findScheduledGuide(n) && !isScheduledGuidePubliclyVisible(n, now, visibilityOpts)) {
     const res = new NextResponse(null, { status: 404 });
     return attachSimulateProductionCookie(request, res);
   }

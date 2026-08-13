@@ -50,6 +50,7 @@ import {
   citiesFunnelHeroFigureClassName,
 } from "@/src/components/cities/shared/citiesFunnelPageUi";
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
+import { BankingRecommendedOptionsSection } from "@/components/banking/BankingRecommendedOptionsSection";
 import { BANKING_HUB_PATH } from "@/src/components/money/banking-hub/bankingHubPageModel";
 import {
   CREDIT_CARDS_PATH,
@@ -1064,6 +1065,28 @@ export function CreditCardsView() {
                 ))}
               </div>
             </PremiumGuideSection>
+
+            <section id={page.recommendedOptions.sectionId} className={sectionClass}>
+              <div className={guidePremiumIntroStackClass}>
+                <SectionIntro
+                  eyebrow={page.recommendedOptions.eyebrow}
+                  title={page.recommendedOptions.title}
+                  fullWidth
+                >
+                  <p>{page.recommendedOptions.subtitle}</p>
+                </SectionIntro>
+              </div>
+              <div className={guidePremiumSectionDetailStackClass}>
+                <BankingRecommendedOptionsSection
+                  placementId={page.recommendedOptions.placementId}
+                  analyticsPageContext={page.recommendedOptions.analyticsPageContext}
+                  boundaryNote={page.recommendedOptions.boundaryNote}
+                  categoryLinks={[...page.recommendedOptions.categoryLinks]}
+                  browseLabel={page.recommendedOptions.browseLabel}
+                  utmReferrerPath={CREDIT_CARDS_PATH}
+                />
+              </div>
+            </section>
 
             <section id="faq" className={sectionClass}>
               <div className={guidePremiumIntroStackClass}>

@@ -59,7 +59,7 @@ const accountTypeComparisonPairs = [
       "Your own account number for pay, your bills, and your subscriptions. Most people start here if they do not need one shared balance with someone else.",
     rightTitle: "Shared household account",
     rightBody:
-      "One balance that two or more people can use for bills you agree on, such as rent or groceries. Read the bank’s rules on who can move money and what happens if someone moves out.",
+      "One balance that two or more people can use for bills you agree on, such as rent or groceries. Read the bank’s rules on who can move money and what happens if someone moves out. Deep dive: Joint bank accounts.",
   },
   {
     id: "personal-vs-business",
@@ -115,7 +115,7 @@ const commonExpatAccountSetupsSource = [
       "Opening a shared account before you agree who can move money, whether you can borrow on the account, and what happens if someone leaves.",
       "Putting all pay into shared first — many families keep salaries in personal accounts and transfer a fixed amount for shared costs.",
     ],
-    relatedGuideKeys: ["living-payments", "open-bank-account", "best-banks-expats"] as const satisfies readonly BankingAccountRelatedGuideKey[],
+    relatedGuideKeys: ["joint-accounts", "open-bank-account", "best-banks-expats"] as const satisfies readonly BankingAccountRelatedGuideKey[],
   },
   {
     id: "international",
@@ -163,7 +163,7 @@ const commonExpatAccountSetupsSource = [
       "Underestimating how long citizen service number (BSN), address, and ID take — missed paperwork beats a clever app stack.",
       "Treating a short trip card pattern as enough for a full year of local bills.",
     ],
-    relatedGuideKeys: ["student-visa", "first-30-days", "traditional-vs-digital", "banking-fees"] as const satisfies readonly BankingAccountRelatedGuideKey[],
+    relatedGuideKeys: ["student-accounts", "student-visa", "first-30-days", "banking-fees"] as const satisfies readonly BankingAccountRelatedGuideKey[],
   },
 ] as const;
 
@@ -370,6 +370,18 @@ export const typesOfBankAccountsPageModel = {
     title: "Related guides",
     subtitle: "Once you know which account types you need, use these pages for fees, how paying works here, and planning tools.",
     cards: [
+      {
+        title: "Joint bank accounts",
+        description: "Gezamenlijke rekening deep dive: shared access, dual cards, household habits, fees and exit checklist.",
+        href: "/netherlands/money/banking/joint-accounts/",
+        ctaLabel: "Open joint guide",
+      },
+      {
+        title: "Student bank accounts",
+        description: "Studentrekening deep dive: eligibility, package fees, international docs and graduation transition.",
+        href: "/netherlands/money/banking/student-accounts/",
+        ctaLabel: "Open student guide",
+      },
       { title: "Best banks for expats", description: "Plain-language comparison after you know what kind of account you want.", href: BEST_BANKS_PATH, ctaLabel: "Open guide" },
       { title: "Traditional vs digital banks", description: "When people use high-street banks, apps, or both together.", href: TRAD_DIG_PATH, ctaLabel: "Read guide" },
       { title: "Banking fees and costs", description: "A simple checklist of fees before you pick a package.", href: FEES_PATH, ctaLabel: "Open fee guide" },
@@ -404,7 +416,11 @@ export const typesOfBankAccountsPageModel = {
     },
     {
       q: "Should couples open a joint account?",
-      a: "You do not have to. A shared account can help with household bills if you want one pot. Before you open one, agree who can move money, whether you can borrow on the account, and what happens if someone moves out.",
+      a: "You do not have to. A shared account can help with household bills if you want one pot. Before you open one, agree who can move money, whether you can borrow on the account, and what happens if someone moves out. For the deep dive on gezamenlijke rekening access, cards, fees and exit steps, see Joint bank accounts.",
+    },
+    {
+      q: "What is a student bank account?",
+      a: "A studentrekening is usually an everyday payment account with student-oriented pricing or perks if you meet enrolment and age rules. This page only orients the label — for eligibility, fee bands, international docs and graduation transitions, see Student bank accounts.",
     },
     {
       q: "Do freelancers need a business bank account?",

@@ -1,0 +1,25 @@
+{
+  "id": "figo-pet",
+  "name": "Figo Pet",
+  "tagline": "Pet insurance and care products popular with Dutch pet owners",
+  "categoryIds": ["insurance"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Pet insurance"],
+  "highlights": [
+    "Explore Figo Pet cover options for dogs and cats",
+    "Confirm waiting periods, exclusions and claim process on the official site"
+  ],
+  "cta": {
+    "label": "View Figo Pet",
+    "href": "https://www.figopet.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=figopet.nl&sz=128",
+    "alt": "Figo Pet logo"
+  }
+}

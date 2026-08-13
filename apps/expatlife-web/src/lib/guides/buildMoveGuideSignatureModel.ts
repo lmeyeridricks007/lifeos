@@ -96,7 +96,8 @@ const MOVE_SIGNATURE_BY_SLUG: Record<string, SlugConfig> = {
     sectionIds: ["rules-documents", "travel-and-costs", "pet-housing", "after-arrival"],
     eyebrow: "With pets",
     title: "Import, travel, housing, then settling in",
-    subtitle: "The sequence most pet owners follow—full rules and checklists are in the sections below.",
+    subtitle:
+      "The sequence most pet owners follow—full rules and checklists are below. For everyday life after arrival (vets, etiquette, costs), continue to Pets in the Netherlands.",
   },
   "moving-mistakes-netherlands": {
     sectionIds: ["mistake-housing", "mistake-documents", "mistake-arrival", "mistake-finances"],

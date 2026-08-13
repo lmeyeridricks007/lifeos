@@ -1,0 +1,25 @@
+{
+  "id": "nl-living-ov-chipkaart-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/ov-chipkaart-netherlands/",
+    "slot": "recommended-providers-ov-chipkaart"
+  },
+  "variant": "cards",
+  "title": "Transport tools to explore",
+  "intro": "Soft CTAs for established Dutch rail and mobility options when your week runs on OV. Confirm live products and acceptance rules on each site — this block is not a ranking of operators or cards.",
+  "categoryOrder": ["mobility"],
+  "items": [
+    {
+      "providerId": "ns",
+      "reason": "Dutch Railways tickets and subscriptions — the usual next step when your personal OV-chipkaart supports a stable commute product."
+    },
+    {
+      "providerId": "greenwheels",
+      "reason": "Occasional shared cars when trains and bikes are not enough for a weekend errand — keep ownership optional."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing and availability with the provider directly. This is not legal or financial advice."
+}

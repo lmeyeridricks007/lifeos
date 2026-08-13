@@ -1,0 +1,25 @@
+{
+  "id": "petsplace",
+  "name": "Pets Place",
+  "tagline": "Dutch pet store chain for food, litter, gear and everyday supplies",
+  "categoryIds": ["services"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Pet supplies"],
+  "highlights": [
+    "Useful for first-month setup: food, litter, carriers, leads and bowls",
+    "Confirm live prices and delivery options on the Pets Place site"
+  ],
+  "cta": {
+    "label": "Shop Pets Place",
+    "href": "https://www.petsplace.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you shop through this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=petsplace.nl&sz=128",
+    "alt": "Pets Place logo"
+  }
+}

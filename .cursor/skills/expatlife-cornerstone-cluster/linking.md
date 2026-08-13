@@ -16,15 +16,17 @@ Update these consistently across the cluster:
 | `exploreNextCards` | 4–6 next-step cards; prefer cluster peers that answer “what should I do next?” |
 | Section cross-links | Deep links where a section owns a sibling topic (e.g. SEH → Emergency Healthcare) |
 | FAQ / intro | Mention sibling pathways by name when relevant |
-| `status` | `"live"` for shipped cluster peers — never `comingSoon` once the route exists |
+| `status` | `"live"` for shipped cluster peers — never editorial `comingSoon` once the route exists. Production holds use `scheduledGuides`, not model status. |
 
 ## Anti-patterns
 
-- Leaving `comingSoon` on a route that already has `page.tsx`
+- Leaving editorial `comingSoon` on a route that already has `page.tsx`
+- Using model `comingSoon` to mean “scheduled for later” — use [scheduling.md](scheduling.md) instead
 - Linking only from the flagship page downward (make links **bidirectional** among peers)
 - Identical descriptions on every card
 - Duplicate menu items for the same href
 - Orphan pages with zero inbound links from cluster peers
+- Adding `SCHEDULED_GUIDES` rows when the user asked for immediate live (no date)
 
 ## Linking pass checklist
 
@@ -33,6 +35,7 @@ After all pages in the batch exist:
 ```
 Linking pass:
 - [ ] Collect final PATH constants + titles for every cluster page
+- [ ] Go-live: SCHEDULED_GUIDES + publishGate if dated; no schedule rows if immediate
 - [ ] For each page model: relatedGuides includes all live peers
 - [ ] For each page model: hub + exploreNext updated; statuses live
 - [ ] Outside siblings updated (GP/Emergency/etc.) where they previously said comingSoon for this topic

@@ -62,6 +62,18 @@ export const bankingHubPageModel = {
         "What everyday, savings, joint, student, business, multi-currency, and card products mean — before best-banks or traditional-vs-digital comparisons.",
     },
     {
+      href: "/netherlands/money/banking/joint-accounts/",
+      title: "Joint bank accounts",
+      description:
+        "Gezamenlijke rekening for couples and housemates: shared access, dual cards, household habits, indicative joint fees, and a calm exit checklist.",
+    },
+    {
+      href: "/netherlands/money/banking/student-accounts/",
+      title: "Student bank accounts",
+      description:
+        "Studentrekening for enrolled students: eligibility, package fees, international docs, and what changes after graduation.",
+    },
+    {
       href: "/netherlands/money/banking/how-payments-work/",
       title: "How paying in the Netherlands works",
       description:

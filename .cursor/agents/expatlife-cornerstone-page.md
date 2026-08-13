@@ -55,11 +55,11 @@ Before doing work, read and follow these project skills/files:
 - **Full build** (default): brief → implement → all six follow-ups → verify
 - **Brief only**: if user says “brief only” / “just the prompt”, output the brief and stop
 - **Resume**: if files already exist for the topic, inspect them and continue from the first incomplete follow-up phase
-- **Cluster member**: when invoked by `expatlife-cornerstone-cluster`, honor the provided sibling routes, content boundary, and linking requirements; export a PATH constant; do not mark live cluster peers as `comingSoon`
+- **Cluster member**: when invoked by `expatlife-cornerstone-cluster`, honor the provided sibling routes, content boundary, linking requirements, and **go-live** (`immediate` or `YYYY-MM-DD`); export a PATH constant; do not mark live cluster peers as `comingSoon`. If go-live is a date, follow `.cursor/skills/expatlife-cornerstone-cluster/scheduling.md` (`SCHEDULED_GUIDES`, `scheduledPublishDateForPath`, `publishGate`). If immediate, do not add a schedule row.
 
 ## Cluster note
 
-For multi-page batches, prefer the `expatlife-cornerstone-cluster` agent. It plans the set, calls this agent per page, then runs a cluster linking pass.
+For multi-page batches, prefer the `expatlife-cornerstone-cluster` agent. It plans the set, applies go-live scheduling when a date is given, calls this agent per page, then runs a cluster linking pass.
 
 ## Done criteria
 

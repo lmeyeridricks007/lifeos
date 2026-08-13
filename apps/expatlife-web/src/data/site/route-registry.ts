@@ -323,6 +323,44 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/practical-life/registering-your-address-netherlands/",
   "/netherlands/practical-life/waste-and-recycling-netherlands/",
   "/netherlands/practical-life/parking-and-local-permits-netherlands/",
+  /** Flagship living guide — driving licence exchange for expats (Driving cluster). */
+  "/netherlands/living/driving-licence-exchange-netherlands/",
+  /** Flagship living guide — buying a car for expats (Driving cluster). */
+  "/netherlands/living/buying-a-car-netherlands/",
+  /** Flagship living guide — road tax / wegenbelasting for expats (Driving cluster). */
+  "/netherlands/living/road-tax-netherlands/",
+  /** Flagship living guide — car insurance for expats (Driving cluster). */
+  "/netherlands/living/car-insurance-netherlands/",
+  /** Flagship living guide — MOT / APK vehicle inspection for expats (Driving cluster). */
+  "/netherlands/living/mot-apk-netherlands/",
+  /** Flagship living guide — speed cameras / trajectcontrole for expats (Driving cluster). */
+  "/netherlands/living/speed-cameras-netherlands/",
+  /** Flagship living guide — electric vehicles for expats (Driving cluster). */
+  "/netherlands/living/electric-vehicles-netherlands/",
+  /** Flagship living guide — car sharing for expats (Driving cluster). */
+  "/netherlands/living/car-sharing-netherlands/",
+  /** Flagship living guide — lease cars for expats (Driving cluster). */
+  "/netherlands/living/lease-cars-netherlands/",
+  /** Flagship living guide — OV-chipkaart for expats (Public Transport cluster). */
+  "/netherlands/living/ov-chipkaart-netherlands/",
+  /** Flagship living guide — OVpay for expats (Public Transport cluster). */
+  "/netherlands/living/ovpay-netherlands/",
+  /** Flagship living guide — NS trains for expats (Public Transport cluster). */
+  "/netherlands/living/ns-trains-netherlands/",
+  /** Flagship living guide — Trams for expats (Public Transport cluster). */
+  "/netherlands/living/trams-netherlands/",
+  /** Flagship living guide — Metro for expats (Public Transport cluster). */
+  "/netherlands/living/metro-netherlands/",
+  /** Flagship living guide — Regional buses for expats (Public Transport cluster). */
+  "/netherlands/living/regional-buses-netherlands/",
+  /** Flagship living guide — Cycling for expats (Public Transport / active mobility). */
+  "/netherlands/living/cycling-netherlands/",
+  /** Flagship living guide — Bike sharing for expats (Public Transport / active mobility). */
+  "/netherlands/living/bike-sharing-netherlands/",
+  /** Flagship living guide — Train discounts for expats (Public Transport fares continuation). */
+  "/netherlands/living/train-discounts-netherlands/",
+  /** Flagship living guide — Weekend travel for expats (Public Transport leisure continuation). */
+  "/netherlands/living/weekend-travel-netherlands/",
   "/netherlands/practical-life/digid-netherlands/",
   "/netherlands/practical-life/government-portals-netherlands/",
   "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
@@ -404,6 +442,10 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/family/parenting-netherlands/",
   /** Flagship family guide — children's healthcare from birth through adolescence for expat families. */
   "/netherlands/family/healthcare-for-children-netherlands/",
+  /** Flagship family guide — parks, museums, libraries, sports clubs and everyday family activities. */
+  "/netherlands/family/family-activities-netherlands/",
+  /** Flagship family guide — pregnancy / prenatal journey orientation for expats. */
+  "/netherlands/family/pregnancy-netherlands/",
   /** Flagship health guide — general practitioner (GP / huisarts) cornerstone for expats. */
   "/netherlands/health/gp-netherlands/",
   /** Flagship health guide — dentists / dental care cornerstone for expats. */
@@ -421,6 +463,10 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/health/physiotherapy-netherlands/",
   /** Flagship health guide — maternity care / verloskunde cornerstone for expats. */
   "/netherlands/health/maternity-care-netherlands/",
+  /** Flagship family guide — giving birth / birth-day orientation for expats. */
+  "/netherlands/family/giving-birth-netherlands/",
+  /** Flagship family guide — everyday pet life after arrival for expats. */
+  "/netherlands/family/pets-netherlands/",
   /** Flagship health guide — health insurance comparison framework for expats (not an insurer ranking). */
   "/netherlands/health/health-insurance-comparison-netherlands/",
   /** Legacy family URL; 301 → child benefits guide — keep live so placeholder links stay clickable. */
@@ -466,6 +512,11 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/money/banking/fees/",
   "/netherlands/money/banking/cheapest-accounts/",
   "/netherlands/money/banking/types-of-accounts/",
+  "/netherlands/money/banking/joint-accounts/",
+  "/netherlands/money/banking/student-accounts/",
+  "/netherlands/money/cost-of-living-netherlands/",
+  "/netherlands/money/monthly-budget-netherlands/",
+  "/netherlands/money/saving-money-netherlands/",
   "/netherlands/money/banking/how-payments-work/",
   "/netherlands/money/banking/cash-vs-card/",
   "/netherlands/money/banking/debit-cards/",
@@ -475,6 +526,9 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/money/banking/security/",
   "/netherlands/money/banking/account-rejection/",
   "/netherlands/money/banking/best-bank-zzp/",
+  /** Live App Router guides — hidden costs + financial checklist (2026-08-18 schedule). */
+  "/netherlands/money/hidden-costs-netherlands/",
+  "/netherlands/money/financial-checklist-netherlands/",
   /** Live App Router cornerstone — keep SEO URL under /netherlands/ (not relocated under /money/banking/). */
   "/netherlands/open-bank-account-netherlands/",
   "/netherlands/moving/visas-residency/",

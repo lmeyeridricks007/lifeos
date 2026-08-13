@@ -85,6 +85,7 @@ export const citiesCheapestRelatedGuideBlocks: CitiesBestForExpatsRelatedGuideBl
       { label: "Best Dutch cities for families", href: "/netherlands/cities/best-cities-for-families/" },
       { label: "Cities hub", href: R.citiesHub },
       { label: "City comparison tool", href: R.cityComparison },
+      { label: "Cost of living in the Netherlands", href: "/netherlands/money/cost-of-living-netherlands/" },
       { label: "Cost of living calculator", href: R.costOfLiving },
       { label: "Rent affordability calculator", href: R.rentAffordability },
     ],
@@ -113,6 +114,12 @@ export const citiesCheapestRelatedGuideBlocks: CitiesBestForExpatsRelatedGuideBl
 export const citiesCheapestExploreCards: CitiesBestForExpatsExploreCardsConfig = [
   { href: R.citiesHub, title: "Cities hub", description: "Return to the index, comparison table, and every live municipality guide.", meta: "Cities" },
   { href: "/netherlands/cities/best-cities-for-expats/", title: "Best cities for expats", description: "The wider shortlist guide when affordability is only one lens.", meta: "Cities" },
+  {
+    href: "/netherlands/money/cost-of-living-netherlands/",
+    title: "Cost of living in the Netherlands",
+    description: "National cost drivers and how to read Dutch monthly numbers before you shortlist cities.",
+    meta: "Money",
+  },
   { href: R.housingHub, title: "Housing in the Netherlands", description: "National renting context — contracts, registration, search realism.", meta: "Housing" },
   { href: R.moneyToolsHub, title: "Money tools", description: "Cost of living, salary net, and allowance tools on shared assumptions.", meta: "Money" },
   { href: R.movingToNl, title: "Moving to the Netherlands", description: "Visas, timelines, and how address choice interacts with admin.", meta: "Move" },

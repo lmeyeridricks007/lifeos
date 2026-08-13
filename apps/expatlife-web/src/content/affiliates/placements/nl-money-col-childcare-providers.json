@@ -1,0 +1,33 @@
+{
+  "id": "nl-money-col-childcare-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/cost-of-living-netherlands/",
+    "slot": "childcare-cost-providers"
+  },
+  "variant": "cards",
+  "title": "Explore childcare and babysitting options",
+  "intro": "Soft CTAs for daycare discovery and flexible sitting — put childcare beside rent in family budgets, then verify hours and toeslag eligibility separately.",
+  "categoryOrder": ["childcare"],
+  "items": [
+    {
+      "providerId": "kinderdagverblijf-nl",
+      "reason": "Search kinderdagverblijven by location — useful before you lock commute and housing together."
+    },
+    {
+      "providerId": "sitters-nl",
+      "reason": "Babysitting and gap cover while waiting lists clear or for evening hours."
+    },
+    {
+      "providerId": "bunq",
+      "reason": "English-friendly banking for salary, deposits and childcare direct debits once you have an address."
+    },
+    {
+      "providerId": "wise",
+      "reason": "Cross-border money moves while you settle registration fees, deposits or first invoices."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Childcare places and allowance rules change — confirm with providers and Belastingdienst pathways yourself. This is not financial or childcare advice."
+}

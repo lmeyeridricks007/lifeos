@@ -15,6 +15,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/netherlands/money/cheap-cities-netherlands",
+        destination: "/netherlands/cities/cheapest-cities-for-expats/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/money/cheap-cities-netherlands/",
+        destination: "/netherlands/cities/cheapest-cities-for-expats/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/taxes/expat-taxes-netherlands",
         destination: "/netherlands/money/expat-taxes-netherlands/",
         permanent: true,

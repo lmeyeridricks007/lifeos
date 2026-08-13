@@ -1,0 +1,25 @@
+{
+  "id": "nl-living-driving-licence-exchange-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/driving-licence-exchange-netherlands/",
+    "slot": "recommended-providers-driving-licence-exchange"
+  },
+  "variant": "cards",
+  "title": "Mobility and insurance while you sort your licence",
+  "intro": "Soft CTAs for occasional car-sharing and insurance comparison when you later insure a car. Confirm live prices and cover on official sites — this block is not a ranking of driving schools, municipalities or licence agents.",
+  "categoryOrder": ["mobility", "insurance", "cars"],
+  "items": [
+    {
+      "providerId": "greenwheels",
+      "reason": "Car sharing for occasional trips while licence exchange or processing is underway — often useful before full car ownership."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Compare Dutch insurance options when you are ready to insure a car — verify cover, excess and exclusions yourself."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing and availability with the provider directly. This is not legal or insurance advice."
+}

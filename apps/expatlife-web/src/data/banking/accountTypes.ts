@@ -55,6 +55,14 @@ export const bankingAccountRelatedGuides = {
     href: "/netherlands/money/banking/types-of-accounts/",
     label: "Types of bank accounts",
   },
+  "joint-accounts": {
+    href: "/netherlands/money/banking/joint-accounts/",
+    label: "Joint bank accounts",
+  },
+  "student-accounts": {
+    href: "/netherlands/money/banking/student-accounts/",
+    label: "Student bank accounts",
+  },
   "how-payments-work": {
     href: "/netherlands/money/banking/how-payments-work/",
     label: "How payments work",
@@ -145,7 +153,7 @@ export const bankingAccountTypes: readonly BankingAccountTypeDefinition[] = [
     watchOuts: [
       "Shared responsibility and what happens if the relationship changes need a clear agreement — not a bank marketing topic",
     ],
-    relatedGuideKeys: ["living-payments", "best-banks-expats"],
+    relatedGuideKeys: ["joint-accounts", "living-payments", "best-banks-expats"],
     providerFit: ["traditional", "digital"],
   },
   {
@@ -158,7 +166,7 @@ export const bankingAccountTypes: readonly BankingAccountTypeDefinition[] = [
     watchOuts: [
       "Eligibility and English onboarding vary; international students should confirm ID, citizen service number, and address rules up front",
     ],
-    relatedGuideKeys: ["student-visa", "first-30-days", "best-banks-expats"],
+    relatedGuideKeys: ["student-accounts", "student-visa", "first-30-days", "best-banks-expats"],
     providerFit: ["traditional", "digital"],
   },
   {
@@ -271,7 +279,7 @@ export const bankingAccountQuickAnswerProfiles: readonly BankingAccountQuickAnsw
     recommendedSetup: ["Individual everyday accounts", "optional shared account for household costs", "optional savings pot"],
     why: "Many households keep personal money separate and use a shared pool for rent, utilities, childcare, or travel savings.",
     watchOuts: ["Shared accounts mean shared control and responsibility — agree who pays what before opening"],
-    relatedGuideKeys: ["living-payments"],
+    relatedGuideKeys: ["joint-accounts", "living-payments"],
   },
   {
     id: "students",
@@ -281,7 +289,7 @@ export const bankingAccountQuickAnswerProfiles: readonly BankingAccountQuickAnsw
     watchOuts: [
       "Short stays sometimes fit a minimal setup — long stays usually benefit from a proper Dutch everyday account for recurring bills",
     ],
-    relatedGuideKeys: ["student-visa", "first-30-days"],
+    relatedGuideKeys: ["student-accounts", "student-visa", "first-30-days"],
   },
   {
     id: "zzp",
@@ -331,7 +339,7 @@ export const bankingAccountScenarioRecommendations: readonly BankingAccountScena
     why: "Families often split personal spending from household pools to keep budgeting clear.",
     watchOuts: [],
     nextStep: "List shared costs (rent, childcare, utilities) and decide whether a joint account is worth the extra admin.",
-    relatedGuideKeys: ["living-payments"],
+    relatedGuideKeys: ["joint-accounts", "living-payments"],
   },
   {
     id: "student",
@@ -340,7 +348,7 @@ export const bankingAccountScenarioRecommendations: readonly BankingAccountScena
     why: "You need reliable euro in and out for tuition-related flows, rent, and daily spend.",
     watchOuts: [],
     nextStep: "Gather enrolment and ID docs; ask the bank’s international student checklist if available.",
-    relatedGuideKeys: ["student-visa", "best-banks-expats"],
+    relatedGuideKeys: ["student-accounts", "student-visa", "best-banks-expats"],
   },
   {
     id: "freelancer",

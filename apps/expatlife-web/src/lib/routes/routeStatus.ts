@@ -21,6 +21,10 @@ import {
   enforceOriginCountryPublishDatesForPublicIndexing,
   isOriginCountryGuidePubliclyVisible,
 } from "@/src/lib/countries/originCountryPublishing";
+import {
+  findScheduledGuide,
+  isScheduledGuidePubliclyVisible,
+} from "@/src/lib/publishing/scheduledGuides";
 
 export type PublishRouteStatus = "live" | "coming-soon" | "hidden";
 
@@ -78,6 +82,12 @@ export function getRouteStatus(href: string, now: Date = new Date()): PublishRou
   const cityHub = findNetherlandsCityHubByNormalizedPath(n);
   if (cityHub && !isPubliclyVisible(cityHub.publish, cityHub.publishDate, now)) {
     return "hidden";
+  }
+
+  // Built App Router guides with a future go-live date: show as Coming soon in nav
+  // (not hidden), omit from sitemap via isRouteLive, and middleware 404s the URL in production.
+  if (findScheduledGuide(n) && !isScheduledGuidePubliclyVisible(n, now)) {
+    return "coming-soon";
   }
 
   return "live";

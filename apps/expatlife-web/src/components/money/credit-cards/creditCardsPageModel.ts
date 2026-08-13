@@ -85,7 +85,7 @@ export const creditCardsPage = {
     { href: "#culture", label: "Culture fit" },
     { href: "#availability", label: "Availability" },
     { href: "#when-useful", label: "When useful" },
-    { href: "#fees", label: "Fees" },
+    { href: "#fees", label: "Fees & costs" },
     { href: "#vs-debit", label: "Vs debit" },
     { href: "#acceptance", label: "Acceptance" },
     { href: "#scenarios", label: "Scenarios" },
@@ -93,6 +93,7 @@ export const creditCardsPage = {
     { href: "#checklist", label: "Checklist" },
     { href: "#howto", label: "How-to" },
     { href: "#tools", label: "Tools" },
+    { href: "#recommended-options", label: "Providers" },
     { href: "#faq", label: "FAQ" },
     { href: "#related-guides", label: "Related" },
     { href: "#banking-hub", label: "Banking hub" },
@@ -125,11 +126,13 @@ export const creditCardsPage = {
       "Premium use-case map for credit in the Netherlands — hotel holds, car rentals, some online deposits, travel bookings, and foreign-merchant fallbacks — checklist rail with General information only.",
       "Credit shines for holds and some travel contexts — not as a replacement for Dutch debit at the supermarket."
     ),
-    fees: visual(
-      "fees",
-      "Premium fees orientation desk — annual card fee card, interest if you revolve, FX markup note, cash-advance warning — calendar year label 2026 indicative bands with Verify with your issuer rail, ExpatLife brand footer with compass and Live. Love. Stay.",
-      "Treat fee figures as indicative orientation for 2026 — always confirm current terms with your issuer."
-    ),
+    fees: {
+      src: `/images/infographics/${VISUAL_PREFIX}-fees-premium-v2.png`,
+      alt:
+        "Premium fees orientation desk for Netherlands credit cards — annual fee bands Classic about €35–€45, Gold about €45–€60, Premium about €175–€225, FX markup about 2 percent, cash advance about 4 percent — calendar year label 2026 indicative with Verify with your issuer rail, canal skyline band, ExpatLife brand footer with compass and Live. Love. Stay.",
+      caption:
+        "Indicative 2026 fee bands for planning conversations — always confirm live tariffs with your issuer.",
+    },
     vsDebit: visual(
       "vs-debit",
       "Premium side-by-side comparison board — debit for weekly shops and PIN culture vs credit for holds, travel and some online deposits — Fix tips rail and Dutch canal skyline band.",
@@ -205,10 +208,10 @@ export const creditCardsPage = {
     fees: {
       title: "Fee orientation habits",
       items: [
-        "Check annual fees and interest APRs on issuer pages",
-        "FX markups can apply abroad or in foreign currency",
-        "Cash advances are often expensive — avoid as a habit",
-        "Indicative 2026 bands are not live tariffs",
+        "Budget ~€35–€45/year for many classic cards (2026 orientation)",
+        "Expect ~2% FX markup and ~4% cash-advance fees on many products",
+        "Pay in full when you can — revolving APR is set by the issuer",
+        "Indicative bands are not live tariffs — verify the PDF",
       ],
     },
     vsDebit: {
@@ -547,61 +550,85 @@ export const creditCardsPage = {
     ] satisfies CreditCardsLink[],
   },
   fees: {
-    heading: "Fees and interest orientation",
+    heading: "Fees and interest — indicative 2026 costs",
     lead:
-      "Credit products can include annual fees, interest if you carry a balance, foreign-exchange markups and expensive cash advances. Figures below are indicative orientation for planning conversations in 2026 — not live tariffs and not personal advice. Always verify current terms on the issuer’s official pages before you apply or spend.",
+      "Credit products can include annual fees, interest if you carry a balance, foreign-exchange markups and expensive cash advances. Euro figures below are indicative orientation for planning conversations in 2026 — not live tariffs, not a ranking of issuers, and not personal advice. Always verify current terms on the issuer’s official pages before you apply or spend.",
     bullets: [
-      "Annual or monthly card fees differ widely by product — check the tariff sheet",
+      "Many classic consumer cards sit around €35–€45 per year in 2026 — confirm the exact product",
       "Interest applies if you revolve a balance; paying in full usually changes the cost picture",
-      "FX markups and foreign-transaction fees can apply abroad or in non-euro spend",
-      "Cash advances often carry higher costs — avoid as a default habit",
+      "FX markups on non-euro spend often land near ~2% on mainstream Dutch-issued cards",
+      "Cash advances often cost around ~4% (plus interest timing) — avoid as a default habit",
     ],
     cards: [
       {
-        title: "Indicative annual fee band (2026)",
-        body: "Many consumer cards sit from €0 on simple products up to tens of euros per year on packaged cards — verify the exact product page. Not a ranking.",
+        title: "Annual fee — classic (2026)",
+        body: "Mainstream classic cards often land around €35–€45 per year (examples in the market have sat near €39 for Mastercard Classic-style products and ~€43 for Visa World-style cards). Not a ranking — verify the issuer PDF.",
       },
       {
-        title: "Interest if you revolve",
-        body: "Revolving APRs are set by the issuer and can be meaningful. If you plan to pay in full each month, still read the interest clause for missed payments.",
+        title: "Gold / mid and premium tiers",
+        body: "Mid-tier gold cards often sit around €45–€60 per year. Premium / platinum / black-style products commonly run ~€175–€225 per year when lounge and insurance extras are bundled. Only pay for benefits you will use.",
       },
       {
-        title: "FX and foreign spend",
-        body: "Spending in other currencies or abroad can add markups. Compare with debit FX rules and specialist transfer tools when relevant.",
+        title: "FX and foreign spend (~2%)",
+        body: "Spending in other currencies often adds about a ~2% markup on many Dutch-issued credit cards. Compare with debit FX rules and specialist tools (see Wise vs Revolut) when you travel.",
       },
       {
-        title: "Cash advances",
-        body: "Withdrawing cash on credit is often costly (fees + interest timing). Prefer debit ATMs for cash floats — see Debit cards and Cash vs card.",
+        title: "Cash advances (~4%)",
+        body: "Cash advances commonly cost around ~4% of the amount, and interest timing can start immediately. Prefer debit ATMs for cash floats — see Debit cards and Cash vs card.",
       },
     ] satisfies TipCard[],
     indicativeRows: [
       {
-        setting: "Annual card fee",
-        debit: "Often bundled in account package",
-        credit: "€0–tens/year indicative — verify 2026 tariff",
-        tip: "Read the product PDF / site table",
+        setting: "Annual fee — classic",
+        debit: "Usually bundled in account package",
+        credit: "~€35–€45 / year indicative (2026)",
+        tip: "Confirm issuer tariff PDF",
+      },
+      {
+        setting: "Annual fee — gold / mid",
+        debit: "N/A",
+        credit: "~€45–€60 / year indicative",
+        tip: "Check insurance extras",
+      },
+      {
+        setting: "Annual fee — premium",
+        debit: "N/A",
+        credit: "~€175–€225 / year indicative",
+        tip: "Only if benefits used",
+      },
+      {
+        setting: "Extra / partner card",
+        debit: "Extra debit often a few €/month",
+        credit: "~€15–€22 / year indicative",
+        tip: "Verify Extra Card fee",
+      },
+      {
+        setting: "FX / non-euro spend",
+        debit: "Issuer FX rules vary",
+        credit: "Often ~2% markup indicative",
+        tip: "Compare debit + FX tools",
+      },
+      {
+        setting: "Cash advance",
+        debit: "Own-bank ATM often free within limits",
+        credit: "Often ~4% + interest timing",
+        tip: "Use debit ATM + modest float",
       },
       {
         setting: "Paying balance in full",
         debit: "N/A (account balance)",
-        credit: "Usually avoids revolving interest — confirm terms",
+        credit: "Usually avoids revolving interest — confirm grace terms",
         tip: "Set calendar reminders",
       },
       {
         setting: "Carrying a balance",
         debit: "Overdraft rules differ by bank",
-        credit: "Interest can apply — verify APR",
+        credit: "Issuer APR applies — verify current rate",
         tip: "Do not assume “grace always”",
-      },
-      {
-        setting: "Cash advance",
-        debit: "ATM from debit is the usual cash path",
-        credit: "Often expensive — avoid as habit",
-        tip: "Use debit ATM + modest float",
       },
     ] satisfies CompareRow[],
     warningItems: [
-      "Indicative 2026 bands are orientation only — not live prices",
+      "Indicative 2026 euro bands are orientation only — not live prices",
       "Issuer pages and contracts override anything on this guide",
       "This is not credit advice, affordability advice or an approval promise",
     ],
@@ -851,6 +878,23 @@ export const creditCardsPage = {
       },
     ] satisfies CreditCardsLink[],
   },
+  recommendedOptions: {
+    sectionId: "recommended-options",
+    eyebrow: "Provider listings",
+    title: "Recommended options",
+    subtitle:
+      "Soft CTAs — we are not approving cards for you. Jump to official sites for bank credit products and travel-card companions, then validate annual fees, APR, FX markups and eligibility yourself.",
+    boundaryNote:
+      "Editorial sections above are separate from this block. Ordering reflects relevance to credit and travel-card discovery for expats, not pay-to-rank placement unless a link is explicitly labelled as sponsored.",
+    placementId: "nl-money-credit-cards-support-providers",
+    analyticsPageContext: "credit-cards-recommended-options",
+    categoryLinks: [
+      { href: "/netherlands/services/banks/", label: "Banks directory" },
+      { href: BEST_BANKS_EXPATS_PATH, label: "Best banks for expats" },
+      { href: DEBIT_CARDS_PATH, label: "Debit cards guide" },
+    ],
+    browseLabel: "More banking context: ",
+  },
   faq: [
     {
       q: "Do I need a credit card in the Netherlands?",
@@ -870,7 +914,7 @@ export const creditCardsPage = {
     },
     {
       q: "What fees should I check?",
-      a: "Annual or package fees, interest if you revolve, FX markups and cash-advance costs. Treat any figures on blogs as non-authoritative; confirm the current year tariff with the issuer.",
+      a: "As a 2026 orientation: many classic cards sit around €35–€45 per year, gold/mid tiers often ~€45–€60, and premium products can reach ~€175–€225. Also check revolving APR, FX markups (often ~2% on non-euro spend) and cash-advance fees (often ~4%). Confirm the live issuer tariff — figures here are indicative only.",
     },
     {
       q: "Why do hotels ask for a credit card?",
@@ -1051,7 +1095,7 @@ export const creditCardsPage = {
     },
   ],
   disclosure:
-    "Some links on related banking pages may be affiliate links. If you use them, we may earn a commission at no extra cost to you. Affiliate status never changes merchant acceptance, issuer approvals or fee schedules.",
+    "Some links on this page — including the Recommended options block — may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Affiliate status never changes merchant acceptance, issuer approvals or fee schedules.",
 } as const;
 
 export type CreditCardsPage = typeof creditCardsPage;

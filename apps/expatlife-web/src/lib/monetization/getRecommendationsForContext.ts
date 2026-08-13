@@ -89,7 +89,12 @@ function pickPool(slug: string, topic: string): MonetizationProvider[] {
   ) {
     return [...housingMonetizationProviders];
   }
-  if (s.includes("getting-around") || s.includes("living/getting-around") || s.includes("/transport/")) {
+  if (
+    s.includes("getting-around") ||
+    s.includes("living/getting-around") ||
+    s.includes("car-sharing") ||
+    s.includes("/transport/")
+  ) {
     return [...mobilityMonetizationProviders];
   }
 

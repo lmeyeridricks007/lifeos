@@ -1,0 +1,25 @@
+{
+  "id": "swapfiets",
+  "name": "Swapfiets",
+  "tagline": "Subscription city bikes with repairs included — common expat mobility choice",
+  "categoryIds": ["mobility"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Bike subscription"],
+  "highlights": [
+    "Predictable monthly bike cost instead of buying and repairing",
+    "Compare membership tiers for city commuting"
+  ],
+  "cta": {
+    "label": "View Swapfiets",
+    "href": "https://swapfiets.nl/en/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=swapfiets.nl&sz=128",
+    "alt": "Swapfiets logo"
+  }
+}

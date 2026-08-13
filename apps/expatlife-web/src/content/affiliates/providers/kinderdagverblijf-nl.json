@@ -12,9 +12,9 @@
   "cta": {
     "label": "Search childcare locations",
     "href": "https://www.kinderdagverblijf.nl/",
-    "isAffiliate": false
+    "isAffiliate": true
   },
-  "disclosure": "Independent directory; we do not earn a commission from this link.",
+  "disclosure": "We may earn a commission if you use this link.",
   "logo": {
     "src": "https://www.google.com/s2/favicons?domain=kinderdagverblijf.nl&sz=128",
     "alt": "Kinderdagverblijf.nl"

@@ -31,6 +31,7 @@ export type MistakeCard = { title: string; body: string; advice: string };
 export type ScenarioRow = { situation: string; approach: string; firstStep: string };
 export type HowToStep = { name: string; text: string };
 export type CompareRow = { setting: string; homeHabit: string; dutchNorm: string; tip: string };
+export type CostRow = { setting: string; band: string; tip: string };
 
 const INFOGRAPHIC_VERSION = "premium-v1";
 const HERO_IMAGE_VERSION = "premium-v1";
@@ -86,6 +87,7 @@ export const debitCardsPage = {
     { href: "#networks", label: "Networks" },
     { href: "#shops", label: "Shops" },
     { href: "#atms", label: "ATMs" },
+    { href: "#costs", label: "Costs" },
     { href: "#online", label: "Online" },
     { href: "#habits", label: "Habits" },
     { href: "#scenarios", label: "Scenarios" },
@@ -93,6 +95,7 @@ export const debitCardsPage = {
     { href: "#checklist", label: "Checklist" },
     { href: "#howto", label: "How-to" },
     { href: "#tools", label: "Tools" },
+    { href: "#recommended-options", label: "Providers" },
     { href: "#faq", label: "FAQ" },
     { href: "#related-guides", label: "Related" },
     { href: "#banking-hub", label: "Banking hub" },
@@ -132,6 +135,13 @@ export const debitCardsPage = {
       "Premium ATM habits board — prefer own-bank machines, watch third-party fee screens, shield the PIN pad, withdraw a modest float — Dutch street evening context and a Verify fees with issuer rail.",
       "ATMs are for cash floats and emergencies — not a substitute for learning PIN culture in shops."
     ),
+    costs: {
+      src: `/images/infographics/${VISUAL_PREFIX}-costs-premium-v1.png`,
+      alt:
+        "Premium costs orientation board for Dutch debit cards — everyday account package about €3.50–€7 per month, digital plans often €0 to €10+, replacement card about €7–€15, own-bank ATM often free, third-party and foreign ATM fees apply — calendar year 2026 indicative with Verify with your bank rail, canal skyline, ExpatLife brand footer with compass and Live. Love. Stay.",
+      caption:
+        "Indicative 2026 debit and account cost bands — confirm live tariffs with your bank.",
+    },
     online: visual(
       "online",
       "Premium online payments boundary board — Dutch webshops often use iDEAL via bank app; card-not-present debit differs by issuer; pointer cards to How payments work — desk with laptop and bank phone, ExpatLife brand area.",
@@ -211,6 +221,15 @@ export const debitCardsPage = {
         "Read fee screens on third-party ATMs",
         "Withdraw a modest float — not a travel stash",
         "Shield your PIN; put cash away before walking off",
+      ],
+    },
+    costs: {
+      title: "Cost orientation habits",
+      items: [
+        "Budget ~€3.50–€7/month for many big-bank packages (2026)",
+        "First debit card is usually included — replacements often ~€7–€15",
+        "Prefer own-bank ATMs; third-party and foreign fees add up",
+        "Indicative bands are not live tariffs — verify the PDF",
       ],
     },
     online: {
@@ -530,6 +549,97 @@ export const debitCardsPage = {
       },
     ] satisfies TipCard[],
   },
+  costs: {
+    heading: "Indicative debit and account costs (2026)",
+    lead:
+      "A Dutch pinpas is usually bundled with an everyday current-account package. Euro figures below are indicative orientation for 2026 planning conversations — not live tariffs, not a ranking of banks, and not personal advice. Always verify current package prices and card fees on your bank’s official pages.",
+    bullets: [
+      "Many big-bank everyday packages sit around €3.50–€7 per month (~€42–€84 per year) and usually include a first debit card",
+      "Digital / neo plans often start at €0; paid tiers commonly land around €3–€10+ per month — confirm card shipping",
+      "Replacement debit cards often cost about €7–€15 one-off; extra cards may add a few euros per month",
+      "Own-bank ATMs in the Netherlands are often free within package limits; third-party and foreign ATMs add fees and FX",
+    ],
+    cards: [
+      {
+        title: "Account package (big banks)",
+        body: "Mainstream retail packages commonly land around €3.50–€7 per month in 2026 (~€42–€84 per year), often including the first standard debit card. Employer discounts and student packages can sit lower — verify your bank’s PDF.",
+      },
+      {
+        title: "Digital / neo plans",
+        body: "Many digital banks advertise €0 base accounts with optional paid plans around €3–€10+ per month. Physical card shipping or metal cards can add a one-off fee (often roughly €5–€10+). Confirm what is included.",
+      },
+      {
+        title: "Replacement and extra cards",
+        body: "A first standard debit card is usually included. Replacements commonly cost about €7–€15. Extra or partner debit cards often add a few euros per month — check the exact line item.",
+      },
+      {
+        title: "ATM and foreign use",
+        body: "Own-bank ATMs in the Netherlands are often free within limits. Independent machines can surcharge. Abroad, budget roughly €2–€5 from your bank per withdrawal plus FX markups — read your tariff before travel.",
+      },
+    ] satisfies TipCard[],
+    indicativeRows: [
+      {
+        setting: "Everyday account package (big banks)",
+        band: "~€3.50–€7 / month (~€42–€84 / year)",
+        tip: "Often includes first debit card",
+      },
+      {
+        setting: "Digital / neo packages",
+        band: "Often €0 base; paid plans ~€3–€10+ / month",
+        tip: "Confirm card shipping fees",
+      },
+      {
+        setting: "First standard debit card",
+        band: "Usually included in package",
+        tip: "Verify activation / delivery",
+      },
+      {
+        setting: "Replacement debit card",
+        band: "Commonly ~€7–€15 one-off",
+        tip: "Check bank tariff PDF",
+      },
+      {
+        setting: "Extra / second debit card",
+        band: "Often a few euros per month",
+        tip: "Joint/partner cards differ",
+      },
+      {
+        setting: "Own-bank ATM (NL)",
+        band: "Often free within package limits",
+        tip: "Prefer your own network",
+      },
+      {
+        setting: "Third-party / foreign ATM",
+        band: "Machine surcharge + bank fee; abroad often ~€2–€5 + FX",
+        tip: "Read the fee screen",
+      },
+    ] satisfies CostRow[],
+    warningItems: [
+      "Indicative 2026 euro bands are orientation only — not live prices",
+      "Bank tariff PDFs and contracts override anything on this guide",
+      "This is not banking advice or a promise of free ATM access",
+    ],
+    crossLinks: [
+      {
+        label: "Banking fees & costs",
+        href: HPW_FEES_PATH,
+        description: "Broader fee categories for Dutch banking — live sibling",
+        status: "live" as const,
+      },
+      {
+        label: "Banking cost estimator",
+        href: BANKING_COST_ESTIMATOR_PATH,
+        description: "Planning bands for monthly banking costs",
+        status: "live" as const,
+      },
+      {
+        label: "Best banks for expats",
+        href: BEST_BANKS_EXPATS_PATH,
+        description: "Shortlist accounts that issue a Dutch pinpas",
+        status: "live" as const,
+      },
+    ] satisfies DebitCardsLink[],
+  },
   online: {
     heading: "Online use and the iDEAL boundary",
     lead:
@@ -754,6 +864,23 @@ export const debitCardsPage = {
       },
     ] satisfies DebitCardsLink[],
   },
+  recommendedOptions: {
+    sectionId: "recommended-options",
+    eyebrow: "Provider listings",
+    title: "Recommended options",
+    subtitle:
+      "Soft CTAs — we are not opening accounts for you. Use these cards to jump to official sites for pinpas / debit account options, then validate package fees and eligibility yourself.",
+    boundaryNote:
+      "Editorial sections above are separate from this block. Ordering reflects relevance to everyday Dutch debit discovery, not pay-to-rank placement unless a link is explicitly labelled as sponsored.",
+    placementId: "nl-money-debit-cards-support-providers",
+    analyticsPageContext: "debit-cards-recommended-options",
+    categoryLinks: [
+      { href: "/netherlands/services/banks/", label: "Banks directory" },
+      { href: OPEN_BANK_ACCOUNT_NETHERLANDS_PATH, label: "Open a bank account guide" },
+      { href: BEST_BANKS_EXPATS_PATH, label: "Best banks for expats" },
+    ],
+    browseLabel: "More banking context: ",
+  },
   faq: [
     {
       q: "What is a pinpas?",
@@ -782,6 +909,10 @@ export const debitCardsPage = {
     {
       q: "How do I get a Dutch debit card?",
       a: "By opening a Dutch everyday account and activating the card the bank issues. Start with Open a bank account, then Best banks for expats when you shortlist.",
+    },
+    {
+      q: "What do debit cards and accounts usually cost?",
+      a: "As a 2026 orientation: many big-bank packages sit around €3.50–€7 per month (~€42–€84 per year) and usually include a first debit card. Digital plans often start at €0 with paid tiers around €3–€10+ per month. Replacements commonly cost about €7–€15. Confirm live tariffs with your bank.",
     },
     {
       q: "Is this financial advice?",
@@ -954,7 +1085,7 @@ export const debitCardsPage = {
     },
   ],
   disclosure:
-    "Some links on related banking pages may be affiliate links. If you use them, we may earn a commission at no extra cost to you. Affiliate status never changes merchant acceptance or bank decisions.",
+    "Some links on this page — including the Recommended options block — may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Affiliate status never changes merchant acceptance or bank decisions.",
 } as const;
 
 export type DebitCardsPage = typeof debitCardsPage;

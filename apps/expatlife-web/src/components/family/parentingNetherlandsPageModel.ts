@@ -619,6 +619,9 @@ export const parentingNetherlandsPage = {
   ],
   relatedGuides: [
     { label: "Moving with Children", href: MOVING_WITH_CHILDREN_PATH, status: "comingSoon", description: "Relocation planning for families with children." },
+    { label: "Family activities", href: "/netherlands/family/family-activities-netherlands/", status: "live", description: "Parks, museums, libraries, sports clubs and rainy-day ideas — leisure sibling." },
+    { label: "Pregnancy", href: "/netherlands/family/pregnancy-netherlands/", status: "live", description: "Prenatal journey orientation — midwife, trimesters, BSN timing and insurance basics." },
+    { label: "Giving birth", href: "/netherlands/family/giving-birth-netherlands/", status: "live", description: "Birth-day orientation — place of birth, when to call, packing and first hours." },
     { label: "Child Benefits", href: CHILD_BENEFITS_PATH, status: "live", description: "Kinderbijslag and family financial support." },
     { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Childcare options, costs and waiting lists." },
     { label: "After-School Care (BSO)", href: AFTER_SCHOOL_CARE_PATH, status: "live", description: "After-school and holiday care for primary school children." },
@@ -631,6 +634,7 @@ export const parentingNetherlandsPage = {
   ] satisfies ParentingLink[],
   familyHubCards: [
     { label: "Parenting", href: PARENTING_NETHERLANDS_PATH, status: "live", description: "Raising children and Dutch parenting culture — you are here." },
+    { label: "Family activities", href: "/netherlands/family/family-activities-netherlands/", status: "live", description: "Everyday leisure — parks, museums, libraries and clubs." },
     { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Childcare options and waiting lists." },
     { label: "Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Dutch and international education." },
     { label: "Healthcare", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "Medical care and youth health services." },
@@ -638,6 +642,7 @@ export const parentingNetherlandsPage = {
     { label: "Moving with Children", href: MOVING_WITH_CHILDREN_PATH, status: "comingSoon", description: "Relocation planning for families." },
   ] satisfies ParentingLink[],
   exploreNextCards: [
+    { label: "Family activities", href: "/netherlands/family/family-activities-netherlands/", status: "live", description: "Find parks, museums and rainy-day plans." },
     { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Start childcare research early." },
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Understand the Dutch education system." },
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "Explore international education options." },

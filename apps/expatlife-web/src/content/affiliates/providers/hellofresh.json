@@ -1,0 +1,25 @@
+{
+  "id": "hellofresh",
+  "name": "HelloFresh",
+  "tagline": "Meal-kit boxes that can raise or simplify weekly food spend",
+  "categoryIds": ["groceries"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Meal kits"],
+  "highlights": [
+    "Helpful when you want predictable dinner costs while settling in",
+    "Compare box price per serving against supermarket habits"
+  ],
+  "cta": {
+    "label": "View HelloFresh NL",
+    "href": "https://www.hellofresh.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=hellofresh.nl&sz=128",
+    "alt": "HelloFresh logo"
+  }
+}

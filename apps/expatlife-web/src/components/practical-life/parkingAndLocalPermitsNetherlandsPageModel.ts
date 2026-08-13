@@ -7,6 +7,16 @@ export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
 export const UTILITIES_NETHERLANDS_PATH = "/netherlands/utilities/utilities-netherlands/" as const;
 export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
 export const GETTING_AROUND_PATH = "/netherlands/living/getting-around/" as const;
+export const DRIVING_LICENCE_EXCHANGE_PATH =
+  "/netherlands/living/driving-licence-exchange-netherlands/" as const;
+export const BUYING_A_CAR_PATH = "/netherlands/living/buying-a-car-netherlands/" as const;
+export const ROAD_TAX_PATH = "/netherlands/living/road-tax-netherlands/" as const;
+export const CAR_INSURANCE_PATH = "/netherlands/living/car-insurance-netherlands/" as const;
+export const MOT_APK_PATH = "/netherlands/living/mot-apk-netherlands/" as const;
+export const SPEED_CAMERAS_PATH = "/netherlands/living/speed-cameras-netherlands/" as const;
+export const ELECTRIC_VEHICLES_PATH = "/netherlands/living/electric-vehicles-netherlands/" as const;
+export const CAR_SHARING_PATH = "/netherlands/living/car-sharing-netherlands/" as const;
+export const LEASE_CARS_PATH = "/netherlands/living/lease-cars-netherlands/" as const;
 export const WASTE_AND_RECYCLING_PATH = "/netherlands/practical-life/waste-and-recycling-netherlands/" as const;
 
 export type PracticalLifeLink = {
@@ -852,22 +862,64 @@ export const parkingAndLocalPermitsNetherlandsPage = {
       description: "Public transport, cycling and mobility options before buying a car.",
     },
     {
+      label: "Driving licence exchange",
+      href: DRIVING_LICENCE_EXCHANGE_PATH,
+      status: "live",
+      description: "Foreign licence validity and Dutch rijbewijs exchange for expats.",
+    },
+    {
+      label: "Buying a car",
+      href: BUYING_A_CAR_PATH,
+      status: "live",
+      description: "Purchase, RDW registration, insurance and ownership costs before you need a parking permit.",
+    },
+    {
+      label: "Car insurance",
+      href: CAR_INSURANCE_PATH,
+      status: "live",
+      description: "WA, WA+ and cover orientation — align with RDW transfer before you drive.",
+    },
+    {
+      label: "Road tax",
+      href: ROAD_TAX_PATH,
+      status: "live",
+      description: "Wegenbelasting / MRB orientation once you are the registered keeper.",
+    },
+    {
+      label: "MOT / APK",
+      href: MOT_APK_PATH,
+      status: "live",
+      description: "Dutch vehicle inspection (APK): when due, booking, pass/fail and ownership timing.",
+    },
+    {
+      label: "Speed cameras",
+      href: SPEED_CAMERAS_PATH,
+      status: "live",
+      description: "Speed cameras, trajectcontrole and fine orientation for drivers in the Netherlands.",
+    },
+    {
+      label: "Electric vehicles",
+      href: ELECTRIC_VEHICLES_PATH,
+      status: "live",
+      description: "EV ownership and charging — garage/VvE parking often pairs with home charging.",
+    },
+    {
+      label: "Car sharing",
+      href: CAR_SHARING_PATH,
+      status: "live",
+      description: "Skip resident permits when occasional shared cars beat ownership.",
+    },
+    {
+      label: "Lease cars",
+      href: LEASE_CARS_PATH,
+      status: "live",
+      description: "Lease and company cars may need separate permit registration rules.",
+    },
+    {
       label: "Waste and Recycling",
       href: WASTE_AND_RECYCLING_PATH,
       status: "live",
       description: "Sorting, schedules and gemeente waste services — another local rule set that varies by municipality.",
-    },
-    {
-      label: "Driving in the Netherlands",
-      href: "/netherlands/transport/driving-in-the-netherlands/",
-      status: "comingSoon",
-      description: "Licence rules, road basics and car ownership for expats.",
-    },
-    {
-      label: "Public Transport Netherlands",
-      href: "/netherlands/transport/public-transport-netherlands/",
-      status: "comingSoon",
-      description: "OV chip card, NS trains and city transit networks.",
     },
   ] satisfies PracticalLifeLink[],
   mistakesSection: {
@@ -915,22 +967,40 @@ export const parkingAndLocalPermitsNetherlandsPage = {
       description: "Public transport, cycling and mobility before buying a car.",
     },
     {
+      label: "Buying a car",
+      href: BUYING_A_CAR_PATH,
+      status: "live",
+      description: "Ownership path before resident parking becomes relevant.",
+    },
+    {
+      label: "Car sharing",
+      href: CAR_SHARING_PATH,
+      status: "live",
+      description: "Occasional shared cars may avoid resident-permit pressure.",
+    },
+    {
+      label: "Electric vehicles",
+      href: ELECTRIC_VEHICLES_PATH,
+      status: "live",
+      description: "EV + garage/VvE charging often ties to parking access.",
+    },
+    {
+      label: "Lease cars",
+      href: LEASE_CARS_PATH,
+      status: "live",
+      description: "Lease plates and permits — confirm who registers what.",
+    },
+    {
+      label: "Car insurance",
+      href: CAR_INSURANCE_PATH,
+      status: "live",
+      description: "Cover orientation before you drive the car you park at home.",
+    },
+    {
       label: "Registering Your Address",
       href: REGISTERING_ADDRESS_PATH,
       status: "live",
       description: "Address registration for resident parking permits.",
-    },
-    {
-      label: "Housing Guide",
-      href: HOUSING_HUB_PATH,
-      status: "live",
-      description: "Garage access, VvE rules and accommodation for newcomers.",
-    },
-    {
-      label: "Utilities Guide",
-      href: UTILITIES_NETHERLANDS_PATH,
-      status: "live",
-      description: "Energy, water, internet and household setup after moving.",
     },
   ] satisfies PracticalLifeLink[],
   visualTextDetails: {

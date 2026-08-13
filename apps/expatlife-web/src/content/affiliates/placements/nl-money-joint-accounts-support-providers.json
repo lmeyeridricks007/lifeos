@@ -1,0 +1,41 @@
+{
+  "id": "nl-money-joint-accounts-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/joint-accounts/",
+    "slot": "recommended-providers-joint-accounts"
+  },
+  "variant": "cards",
+  "title": "Explore joint / partner account options",
+  "intro": "A Dutch gezamenlijke rekening is an everyday account with shared access. Use these soft CTAs to open official sites, then confirm joint eligibility, dual-card fees and exit rules yourself — this block is not a ranking.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    {
+      "providerId": "bunq",
+      "reason": "Onboarding: English-first digital Dutch account many couples use for shared household money. Best for: expats who want app-speed joint or partner setups. Watch-outs: confirm which plan tiers support dual cards, joint access and physical card costs."
+    },
+    {
+      "providerId": "ing",
+      "reason": "Onboarding: Major Dutch retail bank with widely used joint / partner everyday packages. Best for: salary, rent and dual pinpas habits. Watch-outs: compare monthly joint package fees and English support for your branch region."
+    },
+    {
+      "providerId": "abn-amro",
+      "reason": "Onboarding: Full-service Dutch bank with branch depth when both adults need help. Best for: newcomers who want a traditional joint stack. Watch-outs: verify package price, second-card fees and ID/BSN steps on ABN’s site."
+    },
+    {
+      "providerId": "rabobank",
+      "reason": "Onboarding: Cooperative retail bank with Dutch joint products. Best for: residents who prefer a mainstream gezamenlijke rekening and local presence. Watch-outs: check regional English UX and live tariff PDFs for partner cards."
+    },
+    {
+      "providerId": "n26",
+      "reason": "Onboarding: App-first EU account some households use for shared spending. Best for: digital everyday spend while you settle. Watch-outs: confirm whether a true joint product fits Dutch rent/direct-debit needs before treating it as your only household IBAN."
+    },
+    {
+      "providerId": "revolut",
+      "reason": "Onboarding: Spending and FX companion some couples use beside a Dutch joint IBAN. Best for: travel wallets and multi-currency controls. Watch-outs: not a substitute for every Dutch payroll or landlord requirement — verify contracts and joint eligibility."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm joint fees, dual-card terms and eligibility on the provider’s official pages."
+}

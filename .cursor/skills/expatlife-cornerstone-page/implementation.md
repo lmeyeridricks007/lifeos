@@ -25,12 +25,16 @@ App root: `apps/expatlife-web`
 ## page.tsx expectations
 
 - `metadata` from model `seo` + `hero.image`
+- When the page is **scheduled** (cluster go-live date): use `buildSocialMetadata` with `publishGate: { publish: true, publishDate }` — see `.cursor/skills/expatlife-cornerstone-cluster/scheduling.md`
+- When **immediate**: no production hold; omit publishGate or use a non-future editorial date
 - JSON-LD: `WebPageJsonLd`, `ArticleJsonLd` / MedicalWebPage when health, `FaqPageJsonLd`, `HowToJsonLd` when brief requires HowTo
 - Render the View only (content lives in model + view)
 
 ## Model expectations
 
 - `path`, `publish`, `publishDate`, `seo`, `hero`
+- If scheduled: `publishDate: scheduledPublishDateForPath(PATH) ?? "YYYY-MM-DD"` and a matching row in `src/lib/publishing/scheduledGuides.ts`
+- If immediate: do **not** add a `SCHEDULED_GUIDES` row; `publishDate` is editorial/today only
 - Section content arrays (cards, tables, timelines, checklists, FAQ)
 - Visual keys with `src`, `alt`, `caption` for every premium figure
 - Related guides / hub / explore-next cards with real existing routes when possible

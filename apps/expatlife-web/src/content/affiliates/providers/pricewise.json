@@ -1,0 +1,25 @@
+{
+  "id": "pricewise",
+  "name": "Pricewise",
+  "tagline": "Compare Dutch energy, internet and insurance deals",
+  "categoryIds": ["insurance", "services"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Comparison site"],
+  "highlights": [
+    "Useful beside health-insurance comparison for energy and broadband lines",
+    "Confirm contract length and cancellation rules on the provider site"
+  ],
+  "cta": {
+    "label": "Compare on Pricewise",
+    "href": "https://www.pricewise.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you use this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=pricewise.nl&sz=128",
+    "alt": "Pricewise logo"
+  }
+}

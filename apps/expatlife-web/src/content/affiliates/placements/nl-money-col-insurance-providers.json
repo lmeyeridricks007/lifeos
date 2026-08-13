@@ -1,0 +1,33 @@
+{
+  "id": "nl-money-col-insurance-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/cost-of-living-netherlands/",
+    "slot": "insurance-cost-providers"
+  },
+  "variant": "cards",
+  "title": "Compare insurance and fixed household bills",
+  "intro": "Basic health insurance is a fixed monthly line for most residents — compare premiums and also energy/internet where relevant.",
+  "categoryOrder": ["insurance", "services"],
+  "items": [
+    {
+      "providerId": "independer",
+      "reason": "Compare Dutch basic and supplementary health insurance once you have a BSN — budget premium + eigen risico separately."
+    },
+    {
+      "providerId": "pricewise",
+      "reason": "Compare energy, internet and other household deals that sit beside rent in your fixed-cost stack."
+    },
+    {
+      "providerId": "simyo",
+      "reason": "Simple mobile plans — a small but recurring line many expats forget when modelling the first month."
+    },
+    {
+      "providerId": "lebara",
+      "reason": "Mobile plans with international calling context — useful while you still call home often."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. This is not insurance advice — verify cover, deductibles and eligibility on official sites."
+}

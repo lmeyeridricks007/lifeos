@@ -1,0 +1,25 @@
+{
+  "id": "ohra-pet",
+  "name": "OHRA Huisdieren",
+  "tagline": "Dutch pet insurance packages for dogs and cats",
+  "categoryIds": ["insurance"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Pet insurance"],
+  "highlights": [
+    "Compare basic, plus and top-style pet packages on OHRA’s site",
+    "Useful when you want a mainstream Dutch dierenverzekering option"
+  ],
+  "cta": {
+    "label": "View OHRA pet insurance",
+    "href": "https://www.ohra.nl/verzekeringen/huisdierenverzekering",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you sign up through this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=ohra.nl&sz=128",
+    "alt": "OHRA logo"
+  }
+}

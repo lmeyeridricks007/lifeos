@@ -1451,6 +1451,8 @@ export const maternityCareNetherlandsPage = {
     anchor: "#how-it-works",
   },
   relatedGuidesTips: [
+    "Prenatal journey for newcomers → Pregnancy.",
+    "Birth day place / packing / call cues → Giving birth.",
     "Post-birth baby pathways → Healthcare for Children.",
     "GP registration → GP guide.",
     "Hospital system context → Hospitals.",
@@ -1459,6 +1461,18 @@ export const maternityCareNetherlandsPage = {
     "Medicines → Pharmacies / Prescriptions.",
   ],
   relatedGuides: [
+    {
+      label: "Pregnancy in the Netherlands",
+      href: "/netherlands/family/pregnancy-netherlands/",
+      status: "live",
+      description: "Prenatal journey — finding a midwife, trimester checkpoints, BSN timing, insurance basics and what to prepare.",
+    },
+    {
+      label: "Giving birth in the Netherlands",
+      href: "/netherlands/family/giving-birth-netherlands/",
+      status: "live",
+      description: "Birth-day orientation — place of birth, when to call, packing, partner role and first hours.",
+    },
     {
       label: "Healthcare for Children",
       href: HEALTHCARE_FOR_CHILDREN_PATH,
@@ -1540,6 +1554,18 @@ export const maternityCareNetherlandsPage = {
       description: "Midwife and obstetric pathways, registration, insurance and kraamzorg awareness — you are here.",
     },
     {
+      label: "Pregnancy",
+      href: "/netherlands/family/pregnancy-netherlands/",
+      status: "live",
+      description: "Prenatal journey companion — midwife finding, trimester checkpoints, BSN timing and prepare lists.",
+    },
+    {
+      label: "Giving birth",
+      href: "/netherlands/family/giving-birth-netherlands/",
+      status: "live",
+      description: "Birth-day companion — home, centre or hospital, packing and first hours.",
+    },
+    {
       label: "Healthcare for Children",
       href: HEALTHCARE_FOR_CHILDREN_PATH,
       status: "live",
@@ -1602,6 +1628,18 @@ export const maternityCareNetherlandsPage = {
   ] satisfies MaternityLink[],
   exploreNextCards: [
     {
+      label: "Pregnancy",
+      href: "/netherlands/family/pregnancy-netherlands/",
+      status: "live",
+      description: "Continue to prenatal journey orientation — midwife finding, trimesters, BSN timing and prepare lists.",
+    },
+    {
+      label: "Giving birth",
+      href: "/netherlands/family/giving-birth-netherlands/",
+      status: "live",
+      description: "Continue to birth-day place options, call cues, packing and first hours.",
+    },
+    {
       label: "Healthcare for Children",
       href: HEALTHCARE_FOR_CHILDREN_PATH,
       status: "live",
@@ -1639,6 +1677,8 @@ export const maternityCareNetherlandsPage = {
     },
   ] satisfies MaternityLink[],
   exploreNextTips: [
+    "Prenatal journey → Pregnancy.",
+    "Birth day → Giving birth.",
     "Baby pathways next → Healthcare for Children.",
     "No GP yet → GP guide.",
     "Cover confusion → Health Insurance.",

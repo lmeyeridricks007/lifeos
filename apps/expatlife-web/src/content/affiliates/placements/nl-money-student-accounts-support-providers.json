@@ -1,0 +1,41 @@
+{
+  "id": "nl-money-student-accounts-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/banking/student-accounts/",
+    "slot": "recommended-providers-student-accounts"
+  },
+  "variant": "cards",
+  "title": "Explore student-oriented account options",
+  "intro": "A Dutch studentrekening is an everyday account with student-oriented pricing while you are enrolled. Use these soft CTAs to open official sites, then confirm enrolment rules, fee bands and graduation conversion yourself — this block is not a ranking.",
+  "categoryOrder": ["banking", "services"],
+  "items": [
+    {
+      "providerId": "bunq",
+      "reason": "Onboarding: English-first digital Dutch account many students use for everyday IBAN life. Best for: international students who want app-speed setup. Watch-outs: confirm whether a named student package or youth tier fits your enrolment proof and physical card costs."
+    },
+    {
+      "providerId": "ing",
+      "reason": "Onboarding: Major Dutch retail bank with widely used student / youth everyday packages. Best for: campus life with salary or part-time pay later. Watch-outs: compare monthly student package fees, enrolment proof rules and English support for your branch region."
+    },
+    {
+      "providerId": "abn-amro",
+      "reason": "Onboarding: Full-service Dutch bank with branch depth when newcomers need help. Best for: students who want a traditional retail stack and clear package pages. Watch-outs: verify student eligibility, age/duration limits and the post-graduation fee on ABN’s site."
+    },
+    {
+      "providerId": "rabobank",
+      "reason": "Onboarding: Cooperative retail bank with Dutch student / youth products. Best for: residents who prefer mainstream campus banking and local presence. Watch-outs: check regional English UX and live tariff PDFs for student vs regular pricing."
+    },
+    {
+      "providerId": "n26",
+      "reason": "Onboarding: App-first EU account some students use for everyday spend while settling. Best for: digital everyday spend and travel. Watch-outs: confirm whether a true Dutch student package or enrolment discount fits rent/direct-debit needs before treating it as your only IBAN."
+    },
+    {
+      "providerId": "revolut",
+      "reason": "Onboarding: Spending and FX companion some students use beside a Dutch everyday IBAN. Best for: travel wallets, multi-currency support from family and weekend trips. Watch-outs: not a substitute for every Dutch payroll, tuition or landlord requirement — verify contracts and student eligibility."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm student fees, enrolment rules and graduation conversion on the provider’s official pages."
+}

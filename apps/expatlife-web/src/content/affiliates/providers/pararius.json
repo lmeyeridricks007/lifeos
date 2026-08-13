@@ -1,0 +1,25 @@
+{
+  "id": "pararius",
+  "name": "Pararius",
+  "tagline": "Dutch rental marketplace for apartments and houses",
+  "categoryIds": ["housing"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Long-term rentals"],
+  "highlights": [
+    "Widely used for unfurnished and agent-listed rentals",
+    "Useful to build a realistic rent band for your city"
+  ],
+  "cta": {
+    "label": "Search Pararius",
+    "href": "https://www.pararius.com/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you use this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=pararius.com&sz=128",
+    "alt": "Pararius logo"
+  }
+}

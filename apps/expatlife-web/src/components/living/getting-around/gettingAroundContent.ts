@@ -135,7 +135,7 @@ export const GETTING_AROUND_FAQ_ITEMS: GettingAroundFaqItem[] = [
     id: "ov-chipkaart",
     question: "Do I need an OV-chipkaart?",
     answer:
-      "Not on day one for many people—contactless is often enough to start. Buy or load a chipkaart (or a subscription) when your commute is stable or a product requires it.",
+      "Not on day one for many people—contactless is often enough to start. Buy or load a chipkaart (or a subscription) when your commute is stable or a product requires it. For anonymous vs personal cards, top-up, check-in/out and missed checkout, see OV-chipkaart; for contactless bank-card travel, see OVpay.",
   },
   {
     id: "9292-vs-ns",
@@ -171,7 +171,7 @@ export const GETTING_AROUND_FAQ_ITEMS: GettingAroundFaqItem[] = [
     id: "international-card-tap",
     question: "Will my international credit or debit card work for tapping in and out?",
     answer:
-      "Often yes, especially at NS and on many urban lines—but Dutch bank-issued debit cards remain the most reliable default, and some validators still reject certain foreign schemes. If tapping fails, use a Dutch debit card if you have one, or buy a ticket at an NS machine or service desk. See OVpay for official contactless rules and NS for rail products you can load or print before you travel.",
+      "Often yes, especially at NS and on many urban lines—but Dutch bank-issued debit cards remain the most reliable default, and some validators still reject certain foreign schemes. If tapping fails, use a Dutch debit card if you have one, or buy a ticket at an NS machine or service desk. See OVpay for contactless rules, OV-chipkaart when a card product is required, and NS trains for rail ticket types you can buy before you travel.",
   },
 ];
 
@@ -476,7 +476,25 @@ export const GETTING_AROUND_CYCLING_GUIDE_CARDS: GettingAroundCyclingGuideCard[]
       [
         {
           kind: "text",
-          text: "Subscription bikes (e.g. Swapfiets) or a simple omafiets from a reputable shop are normal first choices—upgrade once you know your commute shape.",
+          text: "Subscription bikes (e.g. Swapfiets) or a simple omafiets from a reputable shop are normal first choices—upgrade once you know your commute shape. For depth, open ",
+        },
+        {
+          kind: "link",
+          text: "Cycling",
+          href: "/netherlands/living/cycling-netherlands/",
+        },
+        {
+          kind: "text",
+          text: " for ownership and rules, or ",
+        },
+        {
+          kind: "link",
+          text: "Bike sharing",
+          href: "/netherlands/living/bike-sharing-netherlands/",
+        },
+        {
+          kind: "text",
+          text: " for subscription and OV-fiets fleets.",
         },
       ],
     ],

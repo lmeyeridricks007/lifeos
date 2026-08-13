@@ -139,13 +139,16 @@
       "heading": "After arrival: checks, vet, and settling in",
       "body": [
         "After a long trip, most pets need a calm routine and a local vet for registration or a post-travel check. Entry procedures depend on how you travelled—follow any instructions from the carrier or border process that applied to your route.",
-        "Give your pet time to adjust: familiar bedding, steady feeding times, and gradual exploration of the new home and neighbourhood."
+        "Give your pet time to adjust: familiar bedding, steady feeding times, and gradual exploration of the new home and neighbourhood. For ongoing life after you settle — housing rules, chip norms, vets, insurance orientation, parks etiquette and costs — continue with Pets in the Netherlands."
       ],
       "bullets": [
         "Keep vaccination and identification paperwork accessible after arrival",
         "Register with a local veterinarian when needed",
         "Rebuild walking and feeding routines quickly",
         "Watch appetite and behaviour for a few days after travel"
+      ],
+      "links": [
+        { "label": "Pets in the Netherlands — living with pets after arrival", "href": "/netherlands/family/pets-netherlands/" }
       ],
       "services": [
         {
@@ -239,6 +242,7 @@
       "href": "/netherlands/moving-to-the-netherlands/"
     },
     "related": [
+      { "label": "Pets in the Netherlands (everyday life after arrival)", "href": "/netherlands/family/pets-netherlands/" },
       { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
       { "label": "Shipping household goods to the Netherlands", "href": "/netherlands/shipping-household-goods-netherlands/" },
       { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
@@ -250,6 +254,7 @@
 
   "sidebarStartLinks": [
     { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
+    { "label": "Pets in the Netherlands (after arrival)", "href": "/netherlands/family/pets-netherlands/" },
     { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
     { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
     { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" }

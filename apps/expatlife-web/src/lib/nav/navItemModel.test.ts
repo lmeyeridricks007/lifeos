@@ -2744,6 +2744,38 @@ describe("healthcare for children Netherlands nav active state", () => {
   });
 });
 
+describe("family activities Netherlands nav active state", () => {
+  const FAMILY_ACTIVITIES_PATH = "/netherlands/family/family-activities-netherlands/";
+
+  it("treats the family activities guide route as live", () => {
+    expect(getRouteStatus(FAMILY_ACTIVITIES_PATH)).toBe("live");
+  });
+
+  it("highlights Culture for the family activities guide path", () => {
+    expect(getActiveNavKey(FAMILY_ACTIVITIES_PATH)).toBe("culture");
+  });
+
+  it("renders the Culture Family menu row as live and active", () => {
+    const item = MEGA_MENUS.culture.sections
+      .find((section) => section.title === "Family")
+      ?.items.find((row) => row.label === "Family activities");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(FAMILY_ACTIVITIES_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(FAMILY_ACTIVITIES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Culture > Family", () => {
+    const rows = menuRowsForHref(FAMILY_ACTIVITIES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("culture");
+    expect(rows[0].sectionTitle).toBe("Family");
+  });
+});
+
 describe("gp Netherlands nav active state", () => {
   const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands/";
 
@@ -2755,9 +2787,9 @@ describe("gp Netherlands nav active state", () => {
     expect(getActiveNavKey(GP_NETHERLANDS_PATH)).toBe("living");
   });
 
-  it("renders the Living Daily life menu row as live and active", () => {
+  it("renders the Living Healthcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Daily life")
+      .find((section) => section.title === "Healthcare")
       ?.items.find((row) => row.label === "General Practitioner (GP)");
 
     expect(item).toBeDefined();
@@ -2767,12 +2799,12 @@ describe("gp Netherlands nav active state", () => {
     expect(isNavItemActive(GP_NETHERLANDS_PATH, item!)).toBe(true);
   });
 
-  it("has exactly one menu row, in Living > Daily life", () => {
+  it("has exactly one menu row, in Living > Healthcare", () => {
     const rows = menuRowsForHref(GP_NETHERLANDS_PATH);
 
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("living");
-    expect(rows[0].sectionTitle).toBe("Daily life");
+    expect(rows[0].sectionTitle).toBe("Healthcare");
   });
 });
 
@@ -2787,9 +2819,9 @@ describe("dentists Netherlands nav active state", () => {
     expect(getActiveNavKey(DENTISTS_NETHERLANDS_PATH)).toBe("living");
   });
 
-  it("renders the Living Daily life menu row as live and active", () => {
+  it("renders the Living Healthcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Daily life")
+      .find((section) => section.title === "Healthcare")
       ?.items.find((row) => row.label === "Dentists");
 
     expect(item).toBeDefined();
@@ -2799,12 +2831,12 @@ describe("dentists Netherlands nav active state", () => {
     expect(isNavItemActive(DENTISTS_NETHERLANDS_PATH, item!)).toBe(true);
   });
 
-  it("has exactly one menu row, in Living > Daily life", () => {
+  it("has exactly one menu row, in Living > Healthcare", () => {
     const rows = menuRowsForHref(DENTISTS_NETHERLANDS_PATH);
 
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("living");
-    expect(rows[0].sectionTitle).toBe("Daily life");
+    expect(rows[0].sectionTitle).toBe("Healthcare");
   });
 });
 
@@ -2819,9 +2851,9 @@ describe("emergency healthcare Netherlands nav active state", () => {
     expect(getActiveNavKey(EMERGENCY_HEALTHCARE_PATH)).toBe("living");
   });
 
-  it("renders the Living Daily life menu row as live and active", () => {
+  it("renders the Living Healthcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Daily life")
+      .find((section) => section.title === "Healthcare")
       ?.items.find((row) => row.label === "Emergency Healthcare");
 
     expect(item).toBeDefined();
@@ -2831,12 +2863,12 @@ describe("emergency healthcare Netherlands nav active state", () => {
     expect(isNavItemActive(EMERGENCY_HEALTHCARE_PATH, item!)).toBe(true);
   });
 
-  it("has exactly one menu row, in Living > Daily life", () => {
+  it("has exactly one menu row, in Living > Healthcare", () => {
     const rows = menuRowsForHref(EMERGENCY_HEALTHCARE_PATH);
 
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("living");
-    expect(rows[0].sectionTitle).toBe("Daily life");
+    expect(rows[0].sectionTitle).toBe("Healthcare");
   });
 
   it("keeps Emergencies & safety as a separate Living Daily life item", () => {
@@ -2860,9 +2892,9 @@ describe("hospitals Netherlands nav active state", () => {
     expect(getActiveNavKey(HOSPITALS_NETHERLANDS_PATH)).toBe("living");
   });
 
-  it("renders the Living Daily life menu row as live and active", () => {
+  it("renders the Living Healthcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Daily life")
+      .find((section) => section.title === "Healthcare")
       ?.items.find((row) => row.label === "Hospitals");
 
     expect(item).toBeDefined();
@@ -2872,18 +2904,18 @@ describe("hospitals Netherlands nav active state", () => {
     expect(isNavItemActive(HOSPITALS_NETHERLANDS_PATH, item!)).toBe(true);
   });
 
-  it("has exactly one menu row, in Living > Daily life", () => {
+  it("has exactly one menu row, in Living > Healthcare", () => {
     const rows = menuRowsForHref(HOSPITALS_NETHERLANDS_PATH);
 
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("living");
-    expect(rows[0].sectionTitle).toBe("Daily life");
+    expect(rows[0].sectionTitle).toBe("Healthcare");
   });
 
-  it("sits between Dentists and Emergency Healthcare in Daily life", () => {
+  it("sits between Dentists and Emergency Healthcare in Healthcare", () => {
     const labels =
       MEGA_MENUS.living.sections
-        .find((section) => section.title === "Daily life")
+        .find((section) => section.title === "Healthcare")
         ?.items.map((row) => row.label) ?? [];
     const dentists = labels.indexOf("Dentists");
     const hospitals = labels.indexOf("Hospitals");
@@ -2906,9 +2938,9 @@ describe("mental healthcare Netherlands nav active state", () => {
     expect(getActiveNavKey(MENTAL_HEALTHCARE_PATH)).toBe("living");
   });
 
-  it("renders the Living Daily life menu row as live and active", () => {
+  it("renders the Living Healthcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Daily life")
+      .find((section) => section.title === "Healthcare")
       ?.items.find((row) => row.label === "Mental Healthcare");
 
     expect(item).toBeDefined();
@@ -2918,18 +2950,18 @@ describe("mental healthcare Netherlands nav active state", () => {
     expect(isNavItemActive(MENTAL_HEALTHCARE_PATH, item!)).toBe(true);
   });
 
-  it("has exactly one menu row, in Living > Daily life", () => {
+  it("has exactly one menu row, in Living > Healthcare", () => {
     const rows = menuRowsForHref(MENTAL_HEALTHCARE_PATH);
 
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("living");
-    expect(rows[0].sectionTitle).toBe("Daily life");
+    expect(rows[0].sectionTitle).toBe("Healthcare");
   });
 
-  it("sits between Emergency Healthcare and Pharmacies in Daily life", () => {
+  it("sits between Emergency Healthcare and Pharmacies in Healthcare", () => {
     const labels =
       MEGA_MENUS.living.sections
-        .find((section) => section.title === "Daily life")
+        .find((section) => section.title === "Healthcare")
         ?.items.map((row) => row.label) ?? [];
     const emergency = labels.indexOf("Emergency Healthcare");
     const mental = labels.indexOf("Mental Healthcare");
@@ -2952,9 +2984,9 @@ describe("pharmacies Netherlands nav active state", () => {
     expect(getActiveNavKey(PHARMACIES_PATH)).toBe("living");
   });
 
-  it("renders the Living Daily life menu row as live and active", () => {
+  it("renders the Living Healthcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Daily life")
+      .find((section) => section.title === "Healthcare")
       ?.items.find((row) => row.label === "Pharmacies");
 
     expect(item).toBeDefined();
@@ -2964,29 +2996,27 @@ describe("pharmacies Netherlands nav active state", () => {
     expect(isNavItemActive(PHARMACIES_PATH, item!)).toBe(true);
   });
 
-  it("has exactly one menu row, in Living > Daily life", () => {
+  it("has exactly one menu row, in Living > Healthcare", () => {
     const rows = menuRowsForHref(PHARMACIES_PATH);
 
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("living");
-    expect(rows[0].sectionTitle).toBe("Daily life");
+    expect(rows[0].sectionTitle).toBe("Healthcare");
   });
 
-  it("sits between Mental Healthcare and Prescriptions in Daily life", () => {
+  it("sits between Mental Healthcare and Prescriptions in Healthcare", () => {
     const labels =
       MEGA_MENUS.living.sections
-        .find((section) => section.title === "Daily life")
+        .find((section) => section.title === "Healthcare")
         ?.items.map((row) => row.label) ?? [];
     const mental = labels.indexOf("Mental Healthcare");
     const pharmacies = labels.indexOf("Pharmacies");
     const prescriptions = labels.indexOf("Prescriptions");
-    const safety = labels.indexOf("Emergencies & safety");
 
     expect(mental).toBeGreaterThanOrEqual(0);
     expect(pharmacies).toBe(mental + 1);
     expect(prescriptions).toBe(pharmacies + 1);
     expect(labels.indexOf("Physiotherapy")).toBe(prescriptions + 1);
-    expect(safety).toBe(labels.indexOf("Physiotherapy") + 1);
   });
 });
 
@@ -3001,9 +3031,9 @@ describe("prescriptions Netherlands nav active state", () => {
     expect(getActiveNavKey(PRESCRIPTIONS_PATH)).toBe("living");
   });
 
-  it("renders the Living Daily life menu row as live and active", () => {
+  it("renders the Living Healthcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Daily life")
+      .find((section) => section.title === "Healthcare")
       ?.items.find((row) => row.label === "Prescriptions");
 
     expect(item).toBeDefined();
@@ -3013,28 +3043,26 @@ describe("prescriptions Netherlands nav active state", () => {
     expect(isNavItemActive(PRESCRIPTIONS_PATH, item!)).toBe(true);
   });
 
-  it("has exactly one menu row, in Living > Daily life", () => {
+  it("has exactly one menu row, in Living > Healthcare", () => {
     const rows = menuRowsForHref(PRESCRIPTIONS_PATH);
 
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("living");
-    expect(rows[0].sectionTitle).toBe("Daily life");
+    expect(rows[0].sectionTitle).toBe("Healthcare");
   });
 
-  it("sits between Pharmacies and Physiotherapy in Daily life", () => {
+  it("sits between Pharmacies and Physiotherapy in Healthcare", () => {
     const labels =
       MEGA_MENUS.living.sections
-        .find((section) => section.title === "Daily life")
+        .find((section) => section.title === "Healthcare")
         ?.items.map((row) => row.label) ?? [];
     const pharmacies = labels.indexOf("Pharmacies");
     const prescriptions = labels.indexOf("Prescriptions");
     const physiotherapy = labels.indexOf("Physiotherapy");
-    const safety = labels.indexOf("Emergencies & safety");
 
     expect(pharmacies).toBeGreaterThanOrEqual(0);
     expect(prescriptions).toBe(pharmacies + 1);
     expect(physiotherapy).toBe(prescriptions + 1);
-    expect(safety).toBe(physiotherapy + 1);
   });
 });
 
@@ -3049,9 +3077,9 @@ describe("physiotherapy Netherlands nav active state", () => {
     expect(getActiveNavKey(PHYSIOTHERAPY_PATH)).toBe("living");
   });
 
-  it("renders the Living Daily life menu row as live and active", () => {
+  it("renders the Living Healthcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Daily life")
+      .find((section) => section.title === "Healthcare")
       ?.items.find((row) => row.label === "Physiotherapy");
 
     expect(item).toBeDefined();
@@ -3061,18 +3089,18 @@ describe("physiotherapy Netherlands nav active state", () => {
     expect(isNavItemActive(PHYSIOTHERAPY_PATH, item!)).toBe(true);
   });
 
-  it("has exactly one menu row, in Living > Daily life", () => {
+  it("has exactly one menu row, in Living > Healthcare", () => {
     const rows = menuRowsForHref(PHYSIOTHERAPY_PATH);
 
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("living");
-    expect(rows[0].sectionTitle).toBe("Daily life");
+    expect(rows[0].sectionTitle).toBe("Healthcare");
   });
 
-  it("sits between Prescriptions and Maternity care in Daily life", () => {
+  it("sits between Prescriptions and Maternity care in Healthcare", () => {
     const labels =
       MEGA_MENUS.living.sections
-        .find((section) => section.title === "Daily life")
+        .find((section) => section.title === "Healthcare")
         ?.items.map((row) => row.label) ?? [];
     const prescriptions = labels.indexOf("Prescriptions");
     const physiotherapy = labels.indexOf("Physiotherapy");
@@ -3095,9 +3123,9 @@ describe("maternity care Netherlands nav active state", () => {
     expect(getActiveNavKey(MATERNITY_PATH)).toBe("living");
   });
 
-  it("renders the Living Daily life menu row as live and active", () => {
+  it("renders the Living Healthcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Daily life")
+      .find((section) => section.title === "Healthcare")
       ?.items.find((row) => row.label === "Maternity care");
 
     expect(item).toBeDefined();
@@ -3107,28 +3135,176 @@ describe("maternity care Netherlands nav active state", () => {
     expect(isNavItemActive(MATERNITY_PATH, item!)).toBe(true);
   });
 
-  it("has exactly one menu row, in Living > Daily life", () => {
+  it("has exactly one menu row, in Living > Healthcare", () => {
     const rows = menuRowsForHref(MATERNITY_PATH);
 
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("living");
-    expect(rows[0].sectionTitle).toBe("Daily life");
+    expect(rows[0].sectionTitle).toBe("Healthcare");
   });
 
-  it("sits between Physiotherapy and Health insurance comparison in Daily life", () => {
+  it("sits between Physiotherapy and Health insurance comparison in Healthcare", () => {
     const labels =
       MEGA_MENUS.living.sections
-        .find((section) => section.title === "Daily life")
+        .find((section) => section.title === "Healthcare")
         ?.items.map((row) => row.label) ?? [];
     const physiotherapy = labels.indexOf("Physiotherapy");
     const maternity = labels.indexOf("Maternity care");
     const comparison = labels.indexOf("Health insurance comparison");
-    const safety = labels.indexOf("Emergencies & safety");
 
     expect(physiotherapy).toBeGreaterThanOrEqual(0);
     expect(maternity).toBe(physiotherapy + 1);
     expect(comparison).toBe(maternity + 1);
-    expect(safety).toBe(comparison + 1);
+  });
+});
+
+describe("pregnancy Netherlands nav active state", () => {
+  const PREGNANCY_PATH = "/netherlands/family/pregnancy-netherlands/";
+
+  it("treats the pregnancy Netherlands guide route as live in local/preview", () => {
+    expect(getRouteStatus(PREGNANCY_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the pregnancy Netherlands guide path", () => {
+    expect(getActiveNavKey(PREGNANCY_PATH)).toBe("living");
+  });
+
+  it("renders the Living Family & pets menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Family & pets")
+      ?.items.find((row) => row.label === "Pregnancy");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(PREGNANCY_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PREGNANCY_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Family & pets", () => {
+    const rows = menuRowsForHref(PREGNANCY_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Family & pets");
+  });
+
+  it("sits first in Family & pets, before Giving birth", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Family & pets")
+        ?.items.map((row) => row.label) ?? [];
+    const pregnancy = labels.indexOf("Pregnancy");
+    const givingBirth = labels.indexOf("Giving birth");
+    const pets = labels.indexOf("Pets");
+
+    expect(pregnancy).toBe(0);
+    expect(givingBirth).toBe(pregnancy + 1);
+    expect(pets).toBe(givingBirth + 1);
+  });
+});
+
+describe("giving birth Netherlands nav active state", () => {
+  const GIVING_BIRTH_PATH = "/netherlands/family/giving-birth-netherlands/";
+
+  it("treats the giving birth Netherlands guide route as live in local/preview", () => {
+    expect(getRouteStatus(GIVING_BIRTH_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the giving birth Netherlands guide path", () => {
+    expect(getActiveNavKey(GIVING_BIRTH_PATH)).toBe("living");
+  });
+
+  it("renders the Living Family & pets menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Family & pets")
+      ?.items.find((row) => row.label === "Giving birth");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(GIVING_BIRTH_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(GIVING_BIRTH_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Family & pets", () => {
+    const rows = menuRowsForHref(GIVING_BIRTH_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Family & pets");
+  });
+
+  it("sits between Pregnancy and Pets in Family & pets", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Family & pets")
+        ?.items.map((row) => row.label) ?? [];
+    const pregnancy = labels.indexOf("Pregnancy");
+    const givingBirth = labels.indexOf("Giving birth");
+    const pets = labels.indexOf("Pets");
+
+    expect(pregnancy).toBeGreaterThanOrEqual(0);
+    expect(givingBirth).toBe(pregnancy + 1);
+    expect(pets).toBe(givingBirth + 1);
+  });
+});
+
+describe("pets Netherlands nav active state", () => {
+  const PETS_PATH = "/netherlands/family/pets-netherlands/";
+
+  it("treats the pets Netherlands guide route as live in local/preview", () => {
+    expect(getRouteStatus(PETS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the pets Netherlands guide path", () => {
+    expect(getActiveNavKey(PETS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Family & pets menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Family & pets")
+      ?.items.find((row) => row.label === "Pets");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(PETS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PETS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Family & pets", () => {
+    const rows = menuRowsForHref(PETS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Family & pets");
+  });
+
+  it("does not duplicate or replace the Move Bringing pets item", () => {
+    const bringing = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((row) => row.label === "Bringing pets");
+    const petsRows = menuRowsForHref(PETS_PATH);
+    const bringingRows = menuRowsForHref("/netherlands/bringing-pets-to-netherlands/");
+
+    expect(bringing).toBeDefined();
+    expect(bringing?.href).toContain("bringing-pets-to-netherlands");
+    expect(petsRows).toHaveLength(1);
+    expect(bringingRows.some((row) => row.menuKey === "moving")).toBe(true);
+  });
+
+  it("sits after Giving birth as the last Family & pets item", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Family & pets")
+        ?.items.map((row) => row.label) ?? [];
+    const givingBirth = labels.indexOf("Giving birth");
+    const pets = labels.indexOf("Pets");
+
+    expect(givingBirth).toBeGreaterThanOrEqual(0);
+    expect(pets).toBe(givingBirth + 1);
+    expect(pets).toBe(labels.length - 1);
   });
 });
 
@@ -3143,9 +3319,9 @@ describe("health insurance comparison Netherlands nav active state", () => {
     expect(getActiveNavKey(COMPARISON_PATH)).toBe("living");
   });
 
-  it("renders the Living Daily life menu row as live and active", () => {
+  it("renders the Living Healthcare menu row as live and active", () => {
     const item = MEGA_MENUS.living.sections
-      .find((section) => section.title === "Daily life")
+      .find((section) => section.title === "Healthcare")
       ?.items.find((row) => row.label === "Health insurance comparison");
 
     expect(item).toBeDefined();
@@ -3167,27 +3343,26 @@ describe("health insurance comparison Netherlands nav active state", () => {
     expect(isNavItemActive(COMPARISON_PATH, item!)).toBe(true);
   });
 
-  it("has Living Daily life and Services Health & insurance menu rows", () => {
+  it("has Living Healthcare and Services Health & insurance menu rows", () => {
     const rows = menuRowsForHref(COMPARISON_PATH);
     const keys = rows.map((row) => `${row.menuKey}:${row.sectionTitle}`);
 
-    expect(keys).toContain("living:Daily life");
+    expect(keys).toContain("living:Healthcare");
     expect(keys).toContain("services:Health & insurance");
     expect(rows).toHaveLength(2);
   });
 
-  it("sits between Maternity care and Emergencies & safety in Daily life", () => {
+  it("sits after Maternity care as the last Healthcare item", () => {
     const labels =
       MEGA_MENUS.living.sections
-        .find((section) => section.title === "Daily life")
+        .find((section) => section.title === "Healthcare")
         ?.items.map((row) => row.label) ?? [];
     const maternity = labels.indexOf("Maternity care");
     const comparison = labels.indexOf("Health insurance comparison");
-    const safety = labels.indexOf("Emergencies & safety");
 
     expect(maternity).toBeGreaterThanOrEqual(0);
     expect(comparison).toBe(maternity + 1);
-    expect(safety).toBe(comparison + 1);
+    expect(comparison).toBe(labels.length - 1);
   });
 });
 
@@ -3316,6 +3491,86 @@ describe("cash vs card Netherlands nav active state", () => {
     expect(debitCards).toBe(cashVsCard + 1);
     expect(creditCards).toBe(debitCards + 1);
     expect(fees).toBe(creditCards + 1);
+  });
+});
+
+describe("joint bank accounts Netherlands nav active state", () => {
+  const JOINT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/joint-accounts/";
+
+  it("treats the joint bank accounts guide route as live", () => {
+    expect(getRouteStatus(JOINT_BANK_ACCOUNTS_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the joint bank accounts guide path", () => {
+    expect(getActiveNavKey(JOINT_BANK_ACCOUNTS_PATH)).toBe("money");
+  });
+
+  it("renders the Money Banking menu row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Banking")
+      ?.items.find((row) => row.label === "Joint bank accounts");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(JOINT_BANK_ACCOUNTS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(JOINT_BANK_ACCOUNTS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Banking", () => {
+    const rows = menuRowsForHref(JOINT_BANK_ACCOUNTS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Banking");
+  });
+
+  it("sits after Types of bank accounts and before Student bank accounts", () => {
+    const labels =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Banking")
+        ?.items.map((row) => row.label) ?? [];
+    const typesOfAccounts = labels.indexOf("Types of bank accounts");
+    const jointAccounts = labels.indexOf("Joint bank accounts");
+    const studentAccounts = labels.indexOf("Student bank accounts");
+    const howPayments = labels.indexOf("How payments work");
+
+    expect(typesOfAccounts).toBeGreaterThanOrEqual(0);
+    expect(jointAccounts).toBe(typesOfAccounts + 1);
+    expect(studentAccounts).toBe(jointAccounts + 1);
+    expect(howPayments).toBe(studentAccounts + 1);
+  });
+});
+
+describe("student bank accounts Netherlands nav active state", () => {
+  const STUDENT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/student-accounts/";
+
+  it("treats the student bank accounts guide route as live", () => {
+    expect(getRouteStatus(STUDENT_BANK_ACCOUNTS_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the student bank accounts guide path", () => {
+    expect(getActiveNavKey(STUDENT_BANK_ACCOUNTS_PATH)).toBe("money");
+  });
+
+  it("renders the Money Banking menu row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Banking")
+      ?.items.find((row) => row.label === "Student bank accounts");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(STUDENT_BANK_ACCOUNTS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(STUDENT_BANK_ACCOUNTS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Banking", () => {
+    const rows = menuRowsForHref(STUDENT_BANK_ACCOUNTS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Banking");
   });
 });
 
@@ -3597,5 +3852,1066 @@ describe("open bank account Netherlands nav active state", () => {
         ) ?? [];
 
     expect(moneyBankingRows).toHaveLength(0);
+  });
+});
+
+describe("joint and student bank accounts nav rows", () => {
+  const JOINT_PATH = "/netherlands/money/banking/joint-accounts/";
+  const STUDENT_PATH = "/netherlands/money/banking/student-accounts/";
+
+  it("authors both rows under Money > Banking after Types of bank accounts", () => {
+    const labels =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Banking")
+        ?.items.map((row) => row.label) ?? [];
+    const types = labels.indexOf("Types of bank accounts");
+    const joint = labels.indexOf("Joint bank accounts");
+    const student = labels.indexOf("Student bank accounts");
+    const payments = labels.indexOf("How payments work");
+
+    expect(types).toBeGreaterThanOrEqual(0);
+    expect(joint).toBe(types + 1);
+    expect(student).toBe(joint + 1);
+    expect(payments).toBe(student + 1);
+  });
+
+  it("has exactly one menu row each in Money > Banking", () => {
+    expect(menuRowsForHref(JOINT_PATH)).toHaveLength(1);
+    expect(menuRowsForHref(JOINT_PATH)[0].menuKey).toBe("money");
+    expect(menuRowsForHref(STUDENT_PATH)).toHaveLength(1);
+    expect(menuRowsForHref(STUDENT_PATH)[0].menuKey).toBe("money");
+  });
+});
+
+describe("cost of living Netherlands nav row", () => {
+  const COST_OF_LIVING_PATH = "/netherlands/money/cost-of-living-netherlands/";
+
+  it("authors Cost of living under Money > Cost of living & everyday money before Insurance", () => {
+    const sectionTitles = MEGA_MENUS.money.sections.map((section) => section.title);
+    const costIdx = sectionTitles.indexOf("Cost of living & everyday money");
+    const insuranceIdx = sectionTitles.indexOf("Insurance & expat tax topics");
+
+    expect(costIdx).toBeGreaterThanOrEqual(0);
+    expect(insuranceIdx).toBeGreaterThan(costIdx);
+
+    const labels =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Cost of living & everyday money")
+        ?.items.map((row) => row.label) ?? [];
+
+    expect(labels[0]).toBe("Cost of living in the Netherlands");
+    expect(labels).not.toContain("Cost of living calculator");
+  });
+
+  it("has exactly one menu row in Money and highlights Money", () => {
+    const rows = menuRowsForHref(COST_OF_LIVING_PATH);
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Cost of living & everyday money");
+    expect(getActiveNavKey(COST_OF_LIVING_PATH)).toBe("money");
+  });
+
+  it("renders the Cost of living row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Cost of living & everyday money")
+      ?.items.find((row) => row.href === COST_OF_LIVING_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(COST_OF_LIVING_PATH, item!)).toBe(true);
+  });
+});
+
+describe("monthly budget Netherlands nav row", () => {
+  const MONTHLY_BUDGET_PATH = "/netherlands/money/monthly-budget-netherlands/";
+
+  it("has exactly one menu row in Money > Cost of living & everyday money", () => {
+    const rows = menuRowsForHref(MONTHLY_BUDGET_PATH);
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Cost of living & everyday money");
+    expect(getActiveNavKey(MONTHLY_BUDGET_PATH)).toBe("money");
+  });
+
+  it("renders the Monthly budget row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Cost of living & everyday money")
+      ?.items.find((row) => row.href === MONTHLY_BUDGET_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.label).toBe("Monthly budget for expats");
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MONTHLY_BUDGET_PATH, item!)).toBe(true);
+  });
+
+  it("sits with Saving money under Cost of living & everyday money", () => {
+    const labels =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Cost of living & everyday money")
+        ?.items.map((row) => row.label) ?? [];
+    const monthly = labels.indexOf("Monthly budget for expats");
+    const saving = labels.indexOf("Saving money in the Netherlands");
+
+    expect(monthly).toBeGreaterThanOrEqual(0);
+    expect(saving).toBe(monthly + 1);
+  });
+});
+
+describe("saving money Netherlands nav row", () => {
+  const SAVING_MONEY_PATH = "/netherlands/money/saving-money-netherlands/";
+
+  it("has exactly one menu row in Money > Cost of living & everyday money", () => {
+    const rows = menuRowsForHref(SAVING_MONEY_PATH);
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Cost of living & everyday money");
+    expect(getActiveNavKey(SAVING_MONEY_PATH)).toBe("money");
+  });
+
+  it("renders the Saving money row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Cost of living & everyday money")
+      ?.items.find((row) => row.href === SAVING_MONEY_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.label).toBe("Saving money in the Netherlands");
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(SAVING_MONEY_PATH, item!)).toBe(true);
+  });
+});
+
+describe("hidden costs Netherlands nav row", () => {
+  const HIDDEN_COSTS_PATH = "/netherlands/money/hidden-costs-netherlands/";
+
+  it("treats the hidden costs guide route as live", () => {
+    expect(getRouteStatus(HIDDEN_COSTS_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the hidden costs guide path", () => {
+    expect(getActiveNavKey(HIDDEN_COSTS_PATH)).toBe("money");
+  });
+
+  it("renders the Money Cost of living & everyday money menu row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Cost of living & everyday money")
+      ?.items.find((row) => row.label === "Hidden costs of living");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(HIDDEN_COSTS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HIDDEN_COSTS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Cost of living & everyday money", () => {
+    const rows = menuRowsForHref(HIDDEN_COSTS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Cost of living & everyday money");
+  });
+
+  it("sits after Cost of living and before Financial checklist", () => {
+    const labels =
+      MEGA_MENUS.money.sections
+        .find((section) => section.title === "Cost of living & everyday money")
+        ?.items.map((row) => row.label) ?? [];
+    const col = labels.indexOf("Cost of living in the Netherlands");
+    const hidden = labels.indexOf("Hidden costs of living");
+    const financial = labels.indexOf("Financial checklist for expats");
+
+    expect(col).toBeGreaterThanOrEqual(0);
+    expect(hidden).toBe(col + 1);
+    expect(financial).toBe(hidden + 1);
+  });
+});
+
+describe("financial checklist Netherlands nav row", () => {
+  const FINANCIAL_CHECKLIST_PATH = "/netherlands/money/financial-checklist-netherlands/";
+
+  it("treats the financial checklist guide route as live", () => {
+    expect(getRouteStatus(FINANCIAL_CHECKLIST_PATH)).toBe("live");
+  });
+
+  it("highlights Money for the financial checklist guide path", () => {
+    expect(getActiveNavKey(FINANCIAL_CHECKLIST_PATH)).toBe("money");
+  });
+
+  it("renders the Money Cost of living & everyday money menu row as live and active", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Cost of living & everyday money")
+      ?.items.find((row) => row.label === "Financial checklist for expats");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(FINANCIAL_CHECKLIST_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(FINANCIAL_CHECKLIST_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Money > Cost of living & everyday money", () => {
+    const rows = menuRowsForHref(FINANCIAL_CHECKLIST_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("money");
+    expect(rows[0].sectionTitle).toBe("Cost of living & everyday money");
+  });
+});
+
+describe("driving licence exchange Netherlands nav active state", () => {
+  const DRIVING_LICENCE_PATH = "/netherlands/living/driving-licence-exchange-netherlands/";
+
+  it("treats the driving licence exchange guide route as live in local/preview", () => {
+    expect(getRouteStatus(DRIVING_LICENCE_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the driving licence exchange guide path", () => {
+    expect(getActiveNavKey(DRIVING_LICENCE_PATH)).toBe("living");
+  });
+
+  it("renders the Living Driving & cars menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Driving & cars")
+      ?.items.find((row) => row.label === "Driving licence exchange");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(DRIVING_LICENCE_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DRIVING_LICENCE_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Driving & cars", () => {
+    const rows = menuRowsForHref(DRIVING_LICENCE_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Driving & cars");
+  });
+
+  it("is first in Driving & cars, before Buying a car", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Driving & cars")
+        ?.items.map((row) => row.label) ?? [];
+    const drivingLicence = labels.indexOf("Driving licence exchange");
+    const buyingACar = labels.indexOf("Buying a car");
+
+    expect(drivingLicence).toBe(0);
+    expect(buyingACar).toBe(drivingLicence + 1);
+  });
+});
+
+describe("OV-chipkaart Netherlands nav active state", () => {
+  const OV_CHIPKAART_PATH = "/netherlands/living/ov-chipkaart-netherlands/";
+
+  it("treats the OV-chipkaart guide route as live in local/preview", () => {
+    expect(getRouteStatus(OV_CHIPKAART_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the OV-chipkaart guide path", () => {
+    expect(getActiveNavKey(OV_CHIPKAART_PATH)).toBe("living");
+  });
+
+  it("renders the Living Public transport menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Public transport")
+      ?.items.find((row) => row.label === "OV-chipkaart");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(OV_CHIPKAART_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(OV_CHIPKAART_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Public transport", () => {
+    const rows = menuRowsForHref(OV_CHIPKAART_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Public transport");
+  });
+
+  it("is first in Public transport, before OVpay", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Public transport")
+        ?.items.map((row) => row.label) ?? [];
+    const ovChipkaart = labels.indexOf("OV-chipkaart");
+    const ovpay = labels.indexOf("OVpay");
+
+    expect(ovChipkaart).toBe(0);
+    expect(ovpay).toBe(ovChipkaart + 1);
+  });
+});
+
+describe("OVpay Netherlands nav active state", () => {
+  const OVPAY_PATH = "/netherlands/living/ovpay-netherlands/";
+
+  it("treats the OVpay guide route as live in local/preview", () => {
+    expect(getRouteStatus(OVPAY_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the OVpay guide path", () => {
+    expect(getActiveNavKey(OVPAY_PATH)).toBe("living");
+  });
+
+  it("renders the Living Public transport menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Public transport")
+      ?.items.find((row) => row.label === "OVpay");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(OVPAY_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(OVPAY_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Public transport", () => {
+    const rows = menuRowsForHref(OVPAY_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Public transport");
+  });
+
+  it("sits immediately after OV-chipkaart and before NS trains in Public transport", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Public transport")
+        ?.items.map((row) => row.label) ?? [];
+    const ovChipkaart = labels.indexOf("OV-chipkaart");
+    const ovpay = labels.indexOf("OVpay");
+    const nsTrains = labels.indexOf("NS trains");
+
+    expect(ovChipkaart).toBeGreaterThanOrEqual(0);
+    expect(ovpay).toBe(ovChipkaart + 1);
+    expect(nsTrains).toBe(ovpay + 1);
+  });
+});
+
+describe("NS trains Netherlands nav active state", () => {
+  const NS_TRAINS_PATH = "/netherlands/living/ns-trains-netherlands/";
+
+  it("treats the NS trains guide route as live in local/preview", () => {
+    expect(getRouteStatus(NS_TRAINS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the NS trains guide path", () => {
+    expect(getActiveNavKey(NS_TRAINS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Public transport menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Public transport")
+      ?.items.find((row) => row.label === "NS trains");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(NS_TRAINS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(NS_TRAINS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Public transport", () => {
+    const rows = menuRowsForHref(NS_TRAINS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Public transport");
+  });
+
+  it("sits immediately after OVpay and before Trams in Public transport", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Public transport")
+        ?.items.map((row) => row.label) ?? [];
+    const ovpay = labels.indexOf("OVpay");
+    const nsTrains = labels.indexOf("NS trains");
+    const trams = labels.indexOf("Trams");
+
+    expect(ovpay).toBeGreaterThanOrEqual(0);
+    expect(nsTrains).toBe(ovpay + 1);
+    expect(trams).toBe(nsTrains + 1);
+  });
+});
+
+describe("Trams Netherlands nav active state", () => {
+  const TRAMS_PATH = "/netherlands/living/trams-netherlands/";
+
+  it("treats the Trams guide route as live in local/preview", () => {
+    expect(getRouteStatus(TRAMS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Trams guide path", () => {
+    expect(getActiveNavKey(TRAMS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Public transport menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Public transport")
+      ?.items.find((row) => row.label === "Trams");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(TRAMS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(TRAMS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Public transport", () => {
+    const rows = menuRowsForHref(TRAMS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Public transport");
+  });
+
+  it("sits immediately after NS trains and before Metro in Public transport", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Public transport")
+        ?.items.map((row) => row.label) ?? [];
+    const nsTrains = labels.indexOf("NS trains");
+    const trams = labels.indexOf("Trams");
+    const metro = labels.indexOf("Metro");
+
+    expect(nsTrains).toBeGreaterThanOrEqual(0);
+    expect(trams).toBe(nsTrains + 1);
+    expect(metro).toBe(trams + 1);
+  });
+});
+
+describe("Metro Netherlands nav active state", () => {
+  const METRO_PATH = "/netherlands/living/metro-netherlands/";
+
+  it("treats the Metro guide route as live in local/preview", () => {
+    expect(getRouteStatus(METRO_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Metro guide path", () => {
+    expect(getActiveNavKey(METRO_PATH)).toBe("living");
+  });
+
+  it("renders the Living Public transport menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Public transport")
+      ?.items.find((row) => row.label === "Metro");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(METRO_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(METRO_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Public transport", () => {
+    const rows = menuRowsForHref(METRO_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Public transport");
+  });
+
+  it("sits immediately after Trams and before Regional buses in Public transport", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Public transport")
+        ?.items.map((row) => row.label) ?? [];
+    const trams = labels.indexOf("Trams");
+    const metro = labels.indexOf("Metro");
+    const regionalBuses = labels.indexOf("Regional buses");
+
+    expect(trams).toBeGreaterThanOrEqual(0);
+    expect(metro).toBe(trams + 1);
+    expect(regionalBuses).toBe(metro + 1);
+  });
+});
+
+describe("Regional buses Netherlands nav active state", () => {
+  const REGIONAL_BUSES_PATH = "/netherlands/living/regional-buses-netherlands/";
+
+  it("treats the Regional buses guide route as live in local/preview", () => {
+    expect(getRouteStatus(REGIONAL_BUSES_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Regional buses guide path", () => {
+    expect(getActiveNavKey(REGIONAL_BUSES_PATH)).toBe("living");
+  });
+
+  it("renders the Living Public transport menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Public transport")
+      ?.items.find((row) => row.label === "Regional buses");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(REGIONAL_BUSES_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(REGIONAL_BUSES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Public transport", () => {
+    const rows = menuRowsForHref(REGIONAL_BUSES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Public transport");
+  });
+
+  it("sits immediately after Metro and before Train discounts in Public transport", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Public transport")
+        ?.items.map((row) => row.label) ?? [];
+    const metro = labels.indexOf("Metro");
+    const regionalBuses = labels.indexOf("Regional buses");
+    const trainDiscounts = labels.indexOf("Train discounts");
+
+    expect(metro).toBeGreaterThanOrEqual(0);
+    expect(regionalBuses).toBe(metro + 1);
+    expect(trainDiscounts).toBe(regionalBuses + 1);
+  });
+});
+
+describe("Cycling Netherlands nav active state", () => {
+  const CYCLING_PATH = "/netherlands/living/cycling-netherlands/";
+
+  it("treats the Cycling guide route as live in local/preview", () => {
+    expect(getRouteStatus(CYCLING_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Cycling guide path", () => {
+    expect(getActiveNavKey(CYCLING_PATH)).toBe("living");
+  });
+
+  it("renders the Living Cycling menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Cycling")
+      ?.items.find((row) => row.label === "Cycling");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(CYCLING_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CYCLING_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Cycling", () => {
+    const rows = menuRowsForHref(CYCLING_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Cycling");
+  });
+
+  it("is first in Cycling, before Bike sharing", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Cycling")
+        ?.items.map((row) => row.label) ?? [];
+    const cycling = labels.indexOf("Cycling");
+    const bikeSharing = labels.indexOf("Bike sharing");
+
+    expect(cycling).toBe(0);
+    expect(bikeSharing).toBe(cycling + 1);
+  });
+});
+
+describe("Bike sharing Netherlands nav active state", () => {
+  const BIKE_SHARING_PATH = "/netherlands/living/bike-sharing-netherlands/";
+
+  it("treats the Bike sharing guide route as live in local/preview", () => {
+    expect(getRouteStatus(BIKE_SHARING_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Bike sharing guide path", () => {
+    expect(getActiveNavKey(BIKE_SHARING_PATH)).toBe("living");
+  });
+
+  it("renders the Living Cycling menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Cycling")
+      ?.items.find((row) => row.label === "Bike sharing");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(BIKE_SHARING_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BIKE_SHARING_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Cycling", () => {
+    const rows = menuRowsForHref(BIKE_SHARING_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Cycling");
+  });
+
+  it("sits immediately after Cycling as the last Cycling item", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Cycling")
+        ?.items.map((row) => row.label) ?? [];
+    const cycling = labels.indexOf("Cycling");
+    const bikeSharing = labels.indexOf("Bike sharing");
+
+    expect(cycling).toBeGreaterThanOrEqual(0);
+    expect(bikeSharing).toBe(cycling + 1);
+    expect(bikeSharing).toBe(labels.length - 1);
+  });
+});
+
+describe("Train discounts Netherlands nav active state", () => {
+  const TRAIN_DISCOUNTS_PATH = "/netherlands/living/train-discounts-netherlands/";
+
+  it("treats the Train discounts guide route as live in local/preview", () => {
+    expect(getRouteStatus(TRAIN_DISCOUNTS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Train discounts guide path", () => {
+    expect(getActiveNavKey(TRAIN_DISCOUNTS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Public transport menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Public transport")
+      ?.items.find((row) => row.label === "Train discounts");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(TRAIN_DISCOUNTS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(TRAIN_DISCOUNTS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Public transport", () => {
+    const rows = menuRowsForHref(TRAIN_DISCOUNTS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Public transport");
+  });
+
+  it("sits immediately after Regional buses and before Weekend travel in Public transport", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Public transport")
+        ?.items.map((row) => row.label) ?? [];
+    const regionalBuses = labels.indexOf("Regional buses");
+    const trainDiscounts = labels.indexOf("Train discounts");
+    const weekendTravel = labels.indexOf("Weekend travel");
+
+    expect(regionalBuses).toBeGreaterThanOrEqual(0);
+    expect(trainDiscounts).toBe(regionalBuses + 1);
+    expect(weekendTravel).toBe(trainDiscounts + 1);
+  });
+});
+
+describe("Weekend travel Netherlands nav active state", () => {
+  const WEEKEND_TRAVEL_PATH = "/netherlands/living/weekend-travel-netherlands/";
+
+  it("treats the Weekend travel guide route as live in local/preview", () => {
+    expect(getRouteStatus(WEEKEND_TRAVEL_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Weekend travel guide path", () => {
+    expect(getActiveNavKey(WEEKEND_TRAVEL_PATH)).toBe("living");
+  });
+
+  it("renders the Living Public transport menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Public transport")
+      ?.items.find((row) => row.label === "Weekend travel");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(WEEKEND_TRAVEL_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(WEEKEND_TRAVEL_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Public transport", () => {
+    const rows = menuRowsForHref(WEEKEND_TRAVEL_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Public transport");
+  });
+
+  it("sits immediately after Train discounts as the last Public transport item", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Public transport")
+        ?.items.map((row) => row.label) ?? [];
+    const trainDiscounts = labels.indexOf("Train discounts");
+    const weekendTravel = labels.indexOf("Weekend travel");
+
+    expect(trainDiscounts).toBeGreaterThanOrEqual(0);
+    expect(weekendTravel).toBe(trainDiscounts + 1);
+    expect(weekendTravel).toBe(labels.length - 1);
+  });
+});
+
+describe("buying a car Netherlands nav active state", () => {
+  const BUYING_A_CAR_PATH = "/netherlands/living/buying-a-car-netherlands/";
+
+  it("treats the buying a car guide route as live in local/preview", () => {
+    expect(getRouteStatus(BUYING_A_CAR_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the buying a car guide path", () => {
+    expect(getActiveNavKey(BUYING_A_CAR_PATH)).toBe("living");
+  });
+
+  it("renders the Living Driving & cars menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Driving & cars")
+      ?.items.find((row) => row.label === "Buying a car");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(BUYING_A_CAR_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BUYING_A_CAR_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Driving & cars", () => {
+    const rows = menuRowsForHref(BUYING_A_CAR_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Driving & cars");
+  });
+
+  it("sits immediately after Driving licence exchange in Driving & cars", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Driving & cars")
+        ?.items.map((row) => row.label) ?? [];
+    const drivingLicence = labels.indexOf("Driving licence exchange");
+    const buyingACar = labels.indexOf("Buying a car");
+
+    expect(drivingLicence).toBeGreaterThanOrEqual(0);
+    expect(buyingACar).toBe(drivingLicence + 1);
+  });
+});
+
+describe("road tax Netherlands nav active state", () => {
+  const ROAD_TAX_PATH = "/netherlands/living/road-tax-netherlands/";
+
+  it("treats the road tax guide route as live in local/preview", () => {
+    expect(getRouteStatus(ROAD_TAX_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the road tax guide path", () => {
+    expect(getActiveNavKey(ROAD_TAX_PATH)).toBe("living");
+  });
+
+  it("renders the Living Driving & cars menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Driving & cars")
+      ?.items.find((row) => row.label === "Road tax");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(ROAD_TAX_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ROAD_TAX_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Driving & cars", () => {
+    const rows = menuRowsForHref(ROAD_TAX_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Driving & cars");
+  });
+
+  it("sits immediately after Buying a car in Driving & cars", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Driving & cars")
+        ?.items.map((row) => row.label) ?? [];
+    const buyingACar = labels.indexOf("Buying a car");
+    const roadTax = labels.indexOf("Road tax");
+
+    expect(buyingACar).toBeGreaterThanOrEqual(0);
+    expect(roadTax).toBe(buyingACar + 1);
+  });
+});
+
+describe("car insurance Netherlands nav active state", () => {
+  const CAR_INSURANCE_PATH = "/netherlands/living/car-insurance-netherlands/";
+
+  it("treats the car insurance guide route as live in local/preview", () => {
+    expect(getRouteStatus(CAR_INSURANCE_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the car insurance guide path", () => {
+    expect(getActiveNavKey(CAR_INSURANCE_PATH)).toBe("living");
+  });
+
+  it("renders the Living Driving & cars menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Driving & cars")
+      ?.items.find((row) => row.label === "Car insurance");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(CAR_INSURANCE_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CAR_INSURANCE_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Driving & cars", () => {
+    const rows = menuRowsForHref(CAR_INSURANCE_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Driving & cars");
+  });
+
+  it("sits immediately after Road tax in Driving & cars", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Driving & cars")
+        ?.items.map((row) => row.label) ?? [];
+    const roadTax = labels.indexOf("Road tax");
+    const carInsurance = labels.indexOf("Car insurance");
+
+    expect(roadTax).toBeGreaterThanOrEqual(0);
+    expect(carInsurance).toBe(roadTax + 1);
+  });
+});
+
+describe("MOT / APK Netherlands nav active state", () => {
+  const MOT_APK_PATH = "/netherlands/living/mot-apk-netherlands/";
+
+  it("treats the MOT / APK guide route as live in local/preview", () => {
+    expect(getRouteStatus(MOT_APK_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the MOT / APK guide path", () => {
+    expect(getActiveNavKey(MOT_APK_PATH)).toBe("living");
+  });
+
+  it("renders the Living Driving & cars menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Driving & cars")
+      ?.items.find((row) => row.label === "MOT / APK");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(MOT_APK_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MOT_APK_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Driving & cars", () => {
+    const rows = menuRowsForHref(MOT_APK_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Driving & cars");
+  });
+
+  it("sits immediately after Car insurance in Driving & cars", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Driving & cars")
+        ?.items.map((row) => row.label) ?? [];
+    const carInsurance = labels.indexOf("Car insurance");
+    const motApk = labels.indexOf("MOT / APK");
+
+    expect(carInsurance).toBeGreaterThanOrEqual(0);
+    expect(motApk).toBe(carInsurance + 1);
+  });
+});
+
+describe("Speed cameras Netherlands nav active state", () => {
+  const SPEED_CAMERAS_PATH = "/netherlands/living/speed-cameras-netherlands/";
+
+  it("treats the Speed cameras guide route as live in local/preview", () => {
+    expect(getRouteStatus(SPEED_CAMERAS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Speed cameras guide path", () => {
+    expect(getActiveNavKey(SPEED_CAMERAS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Driving & cars menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Driving & cars")
+      ?.items.find((row) => row.label === "Speed cameras");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(SPEED_CAMERAS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(SPEED_CAMERAS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Driving & cars", () => {
+    const rows = menuRowsForHref(SPEED_CAMERAS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Driving & cars");
+  });
+
+  it("sits immediately after MOT / APK in Driving & cars", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Driving & cars")
+        ?.items.map((row) => row.label) ?? [];
+    const motApk = labels.indexOf("MOT / APK");
+    const speedCameras = labels.indexOf("Speed cameras");
+
+    expect(motApk).toBeGreaterThanOrEqual(0);
+    expect(speedCameras).toBe(motApk + 1);
+  });
+});
+
+describe("Electric vehicles Netherlands nav active state", () => {
+  const ELECTRIC_VEHICLES_PATH = "/netherlands/living/electric-vehicles-netherlands/";
+
+  it("treats the Electric vehicles guide route as live in local/preview", () => {
+    expect(getRouteStatus(ELECTRIC_VEHICLES_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Electric vehicles guide path", () => {
+    expect(getActiveNavKey(ELECTRIC_VEHICLES_PATH)).toBe("living");
+  });
+
+  it("renders the Living Driving & cars menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Driving & cars")
+      ?.items.find((row) => row.label === "Electric vehicles");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(ELECTRIC_VEHICLES_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ELECTRIC_VEHICLES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Driving & cars", () => {
+    const rows = menuRowsForHref(ELECTRIC_VEHICLES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Driving & cars");
+  });
+
+  it("sits immediately after Speed cameras and before Car sharing in Driving & cars", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Driving & cars")
+        ?.items.map((row) => row.label) ?? [];
+    const speedCameras = labels.indexOf("Speed cameras");
+    const electricVehicles = labels.indexOf("Electric vehicles");
+    const carSharing = labels.indexOf("Car sharing");
+
+    expect(speedCameras).toBeGreaterThanOrEqual(0);
+    expect(electricVehicles).toBe(speedCameras + 1);
+    expect(carSharing).toBe(electricVehicles + 1);
+  });
+});
+
+describe("Car sharing Netherlands nav active state", () => {
+  const CAR_SHARING_PATH = "/netherlands/living/car-sharing-netherlands/";
+
+  it("treats the Car sharing guide route as live in local/preview", () => {
+    expect(getRouteStatus(CAR_SHARING_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Car sharing guide path", () => {
+    expect(getActiveNavKey(CAR_SHARING_PATH)).toBe("living");
+  });
+
+  it("renders the Living Driving & cars menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Driving & cars")
+      ?.items.find((row) => row.label === "Car sharing");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(CAR_SHARING_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CAR_SHARING_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Driving & cars", () => {
+    const rows = menuRowsForHref(CAR_SHARING_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Driving & cars");
+  });
+
+  it("sits immediately after Electric vehicles and before Lease cars in Driving & cars", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Driving & cars")
+        ?.items.map((row) => row.label) ?? [];
+    const electricVehicles = labels.indexOf("Electric vehicles");
+    const carSharing = labels.indexOf("Car sharing");
+    const leaseCars = labels.indexOf("Lease cars");
+
+    expect(electricVehicles).toBeGreaterThanOrEqual(0);
+    expect(carSharing).toBe(electricVehicles + 1);
+    expect(leaseCars).toBe(carSharing + 1);
+  });
+});
+
+describe("Lease cars Netherlands nav active state", () => {
+  const LEASE_CARS_PATH = "/netherlands/living/lease-cars-netherlands/";
+
+  it("treats the Lease cars guide route as live in local/preview", () => {
+    expect(getRouteStatus(LEASE_CARS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Lease cars guide path", () => {
+    expect(getActiveNavKey(LEASE_CARS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Driving & cars menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Driving & cars")
+      ?.items.find((row) => row.label === "Lease cars");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(LEASE_CARS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(LEASE_CARS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Driving & cars", () => {
+    const rows = menuRowsForHref(LEASE_CARS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Driving & cars");
+  });
+
+  it("sits immediately after Car sharing as the last Driving & cars item", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Driving & cars")
+        ?.items.map((row) => row.label) ?? [];
+    const carSharing = labels.indexOf("Car sharing");
+    const leaseCars = labels.indexOf("Lease cars");
+
+    expect(carSharing).toBeGreaterThanOrEqual(0);
+    expect(leaseCars).toBe(carSharing + 1);
+    expect(leaseCars).toBe(labels.length - 1);
   });
 });

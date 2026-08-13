@@ -18,6 +18,8 @@ export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-nethe
 export const PRESCRIPTIONS_NETHERLANDS_PATH = "/netherlands/health/prescriptions-netherlands/" as const;
 export const PHYSIOTHERAPY_NETHERLANDS_PATH = "/netherlands/health/physiotherapy-netherlands/" as const;
 export const MATERNITY_CARE_NETHERLANDS_PATH = "/netherlands/health/maternity-care-netherlands/" as const;
+export const PREGNANCY_NETHERLANDS_PATH = "/netherlands/family/pregnancy-netherlands/" as const;
+export const FAMILY_ACTIVITIES_NETHERLANDS_PATH = "/netherlands/family/family-activities-netherlands/" as const;
 export const HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH =
   "/netherlands/health/health-insurance-comparison-netherlands/" as const;
 export const HEALTH_INSURANCE_COMPARISON_PATH = HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH;
@@ -1407,7 +1409,10 @@ export const healthcareForChildrenNetherlandsPage = {
     { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "Huisarts registration, appointments, referrals and out-of-hours care." },
     { label: "Health Insurance in the Netherlands", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package, deductible, choosing an insurer and supplementary cover." },
     { label: "Health insurance comparison", href: HEALTH_INSURANCE_COMPARISON_PATH, status: "live", description: "Decision framework for comparing policies — not an insurer ranking." },
+    { label: "Pregnancy", href: PREGNANCY_NETHERLANDS_PATH, status: "live", description: "Prenatal journey orientation — midwife, trimesters, BSN timing and insurance basics." },
     { label: "Maternity care", href: MATERNITY_CARE_NETHERLANDS_PATH, status: "live", description: "Verloskundige first line, obstetric pathways, registration, insurance and kraamzorg awareness." },
+    { label: "Family activities", href: FAMILY_ACTIVITIES_NETHERLANDS_PATH, status: "live", description: "Parks, museums, libraries and rainy-day leisure for families." },
+    { label: "Giving birth", href: "/netherlands/family/giving-birth-netherlands/", status: "live", description: "Birth-day companion — home, centre or hospital, packing, partner role and first hours." },
     { label: "Pharmacies", href: PHARMACIES_NETHERLANDS_PATH, status: "live", description: "Finding an apotheek, hours, counseling and dienstapotheek for family medicines." },
     { label: "Prescriptions", href: PRESCRIPTIONS_NETHERLANDS_PATH, status: "live", description: "Recepten, e-prescriptions, herhaalrecept, medication lists and foreign prescriptions." },
     { label: "Hospitals", href: HOSPITALS_NETHERLANDS_PATH, status: "live", description: "Referrals, specialists, outpatient clinics, admissions and paediatric hospital pathways." },
@@ -1438,6 +1443,7 @@ export const healthcareForChildrenNetherlandsPage = {
   ] satisfies HealthcareLink[],
   exploreNextCards: [
     { label: "Maternity care", href: MATERNITY_CARE_NETHERLANDS_PATH, status: "live", description: "Midwife pathways, registration and kraamzorg before and after birth." },
+    { label: "Giving birth", href: "/netherlands/family/giving-birth-netherlands/", status: "live", description: "Birth-day place options, call cues, packing and first hours." },
     { label: "General Practitioner (GP)", href: GP_NETHERLANDS_PATH, status: "live", description: "Register and use the family huisarts for illness and referrals." },
     { label: "Pharmacies", href: PHARMACIES_NETHERLANDS_PATH, status: "live", description: "Register a family apotheek and learn hours and dienstapotheek." },
     { label: "Prescriptions", href: PRESCRIPTIONS_NETHERLANDS_PATH, status: "live", description: "Understand recepten, herhaalrecept and medication lists for children." },

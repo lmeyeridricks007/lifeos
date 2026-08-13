@@ -1,0 +1,25 @@
+{
+  "id": "albert-heijn",
+  "name": "Albert Heijn",
+  "tagline": "Netherlands’ largest supermarket chain — in-store and AH Bezorgen",
+  "categoryIds": ["groceries"],
+  "countries": {
+    "destination": ["netherlands"],
+    "origin": ["*"]
+  },
+  "badges": ["Supermarket"],
+  "highlights": [
+    "Useful benchmark for everyday grocery baskets",
+    "Bonuskaart and delivery slots change effective monthly spend"
+  ],
+  "cta": {
+    "label": "Shop Albert Heijn",
+    "href": "https://www.ah.nl/",
+    "isAffiliate": true
+  },
+  "disclosure": "We may earn a commission if you shop through this link.",
+  "logo": {
+    "src": "https://www.google.com/s2/favicons?domain=ah.nl&sz=128",
+    "alt": "Albert Heijn logo"
+  }
+}

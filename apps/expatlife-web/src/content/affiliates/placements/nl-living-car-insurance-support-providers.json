@@ -1,0 +1,25 @@
+{
+  "id": "nl-living-car-insurance-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/car-insurance-netherlands/",
+    "slot": "recommended-providers-car-insurance"
+  },
+  "variant": "cards",
+  "title": "Compare car insurance quotes",
+  "intro": "Soft CTAs for insurance comparison when you are ready to cover a car. Confirm live prices, excess and exclusions yourself — this block is not a ranking of insurers and not personal insurance advice.",
+  "categoryOrder": ["insurance", "mobility", "cars"],
+  "items": [
+    {
+      "providerId": "independer",
+      "reason": "Compare Dutch car insurance options — verify cover, excess, named drivers and exclusions on the live quote yourself."
+    },
+    {
+      "providerId": "greenwheels",
+      "reason": "Car sharing if you want to delay ownership while you decide whether buying and insuring a car is worth it."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing and availability with the provider directly. This is not legal or insurance advice."
+}

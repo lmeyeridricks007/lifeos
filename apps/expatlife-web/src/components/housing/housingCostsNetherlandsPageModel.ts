@@ -864,6 +864,12 @@ export const housingCostsNetherlandsPage = {
     { label: "Buy vs rent", href: BUY_VS_RENT_NETHERLANDS_PATH, description: "Decision guide for stay horizon and flexibility.", status: "live" },
     { label: "Utilities in the Netherlands", href: UTILITIES_NETHERLANDS_PATH, description: "Energy, water, internet and setup after moving.", status: "live" },
     { label: "Insurance providers", href: INSURANCE_PROVIDERS_NETHERLANDS_PATH, description: "Contents, liability and home insurance orientation.", status: "live" },
+    {
+      label: "Hidden costs of living (Money)",
+      href: "/netherlands/money/hidden-costs-netherlands/",
+      description: "Cross-category newcomer surprises beyond housing-only lines.",
+      status: "live",
+    },
   ] satisfies HousingCostsLink[],
   exploreNextCards: [
     { label: "Renting guide", href: RENTING_NETHERLANDS_PATH, description: "Contracts, deposits and search strategy.", status: "live" },

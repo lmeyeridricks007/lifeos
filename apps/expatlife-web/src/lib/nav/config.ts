@@ -475,6 +475,9 @@ const LIVING_OWNED_HEALTH_FAMILY_PREFIXES: readonly string[] = [
   "/netherlands/family/child-benefits-netherlands",
   /** Legacy singular URL — keep Living tab active before redirect. */
   "/netherlands/family/child-benefit-netherlands",
+  "/netherlands/family/giving-birth-netherlands",
+  "/netherlands/family/pregnancy-netherlands",
+  "/netherlands/family/pets-netherlands",
 ];
 
 function isLivingOwnedHealthFamilyPath(pathname: string): boolean {
@@ -1218,6 +1221,16 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Simple guide: everyday account, savings, joint, student, business, and app-style banks — read this before you compare fees."
           ),
           item(
+            "Joint bank accounts",
+            "/netherlands/money/banking/joint-accounts/",
+            "Gezamenlijke rekening for couples and housemates: shared access, dual cards, household habits, indicative joint fees, and a calm exit checklist."
+          ),
+          item(
+            "Student bank accounts",
+            "/netherlands/money/banking/student-accounts/",
+            "Studentrekening for international and Dutch students: eligibility, package fees, debit habits, and what changes after graduation."
+          ),
+          item(
             "How payments work",
             "/netherlands/money/banking/how-payments-work/",
             "Your account number, paying on Dutch websites, bank transfers, cards in shops, rent, salary, and bills — without jargon."
@@ -1388,6 +1401,36 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("ZZP Netherlands", "/netherlands/business/zzp-netherlands/"),
           item("Starting a business Netherlands", "/netherlands/business/starting-a-business-netherlands/"),
           item("Contractor vs employee Netherlands", "/netherlands/jobs/contractor-vs-employee-netherlands/"),
+        ],
+      },
+      {
+        title: "Cost of living & everyday money",
+        items: [
+          item(
+            "Cost of living in the Netherlands",
+            "/netherlands/money/cost-of-living-netherlands/",
+            "What drives Dutch living costs in 2026: housing, insurance, groceries, transport and childcare — plus indicative city bands and how to read the numbers."
+          ),
+          item(
+            "Hidden costs of living",
+            "/netherlands/money/hidden-costs-netherlands/",
+            "Surprise lines beyond headline rent — deposits, setup, allowances timing and everyday traps."
+          ),
+          item(
+            "Financial checklist for expats",
+            "/netherlands/money/financial-checklist-netherlands/",
+            "Ordered money setup steps after you choose a place — banking, insurance, budget and buffers."
+          ),
+          item(
+            "Monthly budget for expats",
+            "/netherlands/money/monthly-budget-netherlands/",
+            "Category template, planning workflow and an example month for expat households."
+          ),
+          item(
+            "Saving money in the Netherlands",
+            "/netherlands/money/saving-money-netherlands/",
+            "Practical levers and habits to cut everyday spend after you know your cost drivers."
+          ),
         ],
       },
       {
@@ -1679,6 +1722,142 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Supermarkets, self-checkout, household basics, deliveries, and the store habits that shape everyday errands."
           ),
           item(
+            "Emergencies & safety",
+            "/netherlands/living/emergencies-safety/",
+            "Emergency numbers, urgent situations, lost items, and calm readiness for day-to-day Dutch life."
+          ),
+          item("Language & phrases", "/netherlands/living/language/", "Practical Dutch for daily life (Living hub)."),
+          item(
+            "Weather & seasons",
+            "/netherlands/living/weather/",
+            "Wind, rain, dark days, and what actually changes in everyday Dutch life."
+          ),
+          item(
+            "Waste and recycling",
+            "/netherlands/practical-life/waste-and-recycling-netherlands/",
+            "Sorting, pickup schedules, underground containers and recycling centers."
+          ),
+          item(
+            "Parking and local permits",
+            "/netherlands/practical-life/parking-and-local-permits-netherlands/",
+            "Resident permits, visitor passes, paid zones, parking apps and municipality permits."
+          ),
+        ],
+      },
+      {
+        title: "Public transport",
+        items: [
+          item(
+            "OV-chipkaart",
+            "/netherlands/living/ov-chipkaart-netherlands/",
+            "Personal OV-chipkaart for expats: anonymous vs personal, top-up, check-in/out, missed checkout and when OVpay is enough."
+          ),
+          item(
+            "OVpay",
+            "/netherlands/living/ovpay-netherlands/",
+            "Contactless OV travel for expats: bank card or phone check-in/out, day caps orientation, and when to prefer OVpay vs OV-chipkaart."
+          ),
+          item(
+            "NS trains",
+            "/netherlands/living/ns-trains-netherlands/",
+            "NS train travel for expats: ticket types (single, Flex, season), how to buy, peak orientation and first-week commute tips."
+          ),
+          item(
+            "Trams",
+            "/netherlands/living/trams-netherlands/",
+            "City tram travel for expats: GVB, HTM, RET and U-OV orientation, check-in/out, etiquette and when tram beats bus or metro."
+          ),
+          item(
+            "Metro",
+            "/netherlands/living/metro-netherlands/",
+            "Metro travel for expats: Amsterdam GVB and Rotterdam RET orientation, OVpay/chipkaart tickets, peak tips, NS interchange and when metro beats tram or bus."
+          ),
+          item(
+            "Regional buses",
+            "/netherlands/living/regional-buses-netherlands/",
+            "Regional and city bus travel for expats: operators orientation, OVpay/chipkaart check-in quirks, 9292 planning, night buses lightly and when buses are the only link."
+          ),
+          item(
+            "Train discounts",
+            "/netherlands/living/train-discounts-netherlands/",
+            "NS train discount products for expats: Dal Voordeel, Weekend Voordeel, Flex and season orientation, chipkaart vs OVpay, and when a discount beats pay-as-you-go."
+          ),
+          item(
+            "Weekend travel",
+            "/netherlands/living/weekend-travel-netherlands/",
+            "Weekend getaways by Dutch public transport for expats: day trips and weekends with NS and regional OV, discount orientation, last mile and packing tips."
+          ),
+        ],
+      },
+      {
+        title: "Cycling",
+        items: [
+          item(
+            "Cycling",
+            "/netherlands/living/cycling-netherlands/",
+            "Everyday cycling for expats: buy or borrow a bike, rules and etiquette, lights and locks, rain and winter, parking and theft prevention, and when the bike beats OV."
+          ),
+          item(
+            "Bike sharing",
+            "/netherlands/living/bike-sharing-netherlands/",
+            "Shared and subscription bikes for expats: when sharing beats owning, Swapfiets-style doorstep plans, OV-fiets and city systems, costs orientation and train multimodal tips."
+          ),
+        ],
+      },
+      {
+        title: "Driving & cars",
+        items: [
+          item(
+            "Driving licence exchange",
+            "/netherlands/living/driving-licence-exchange-netherlands/",
+            "Foreign licence validity, RDW and municipality exchange steps, documents and timelines for expats."
+          ),
+          item(
+            "Buying a car",
+            "/netherlands/living/buying-a-car-netherlands/",
+            "Buy used or new in NL: BPM and tax orientation, RDW registration, insurance, APK and ownership costs."
+          ),
+          item(
+            "Road tax",
+            "/netherlands/living/road-tax-netherlands/",
+            "Dutch motor vehicle tax (wegenbelasting): who pays, weight/fuel/province factors, check and pay via official portals."
+          ),
+          item(
+            "Car insurance",
+            "/netherlands/living/car-insurance-netherlands/",
+            "Dutch car insurance for expats: mandatory WA, WA+ vs all-risk, what to compare, registration timing and soft quote comparison."
+          ),
+          item(
+            "MOT / APK",
+            "/netherlands/living/mot-apk-netherlands/",
+            "Dutch APK vehicle inspection (MOT): when due, how to book RDW-approved stations, pass/fail orientation and ownership timing after buying a car."
+          ),
+          item(
+            "Speed cameras",
+            "/netherlands/living/speed-cameras-netherlands/",
+            "Dutch speed cameras, flitsers and trajectcontrole for expats: how enforcement works, how fines arrive, and high-level pay or object orientation."
+          ),
+          item(
+            "Electric vehicles",
+            "/netherlands/living/electric-vehicles-netherlands/",
+            "Buying and using EVs in NL: home and public charging, tax and road-tax orientation, range and winter notes, insurance and APK ties."
+          ),
+          item(
+            "Car sharing",
+            "/netherlands/living/car-sharing-netherlands/",
+            "Car sharing for expats: when sharing beats owning, membership models, trip flow, cost orientation vs ownership, licence and insurance notes."
+          ),
+          item(
+            "Lease cars",
+            "/netherlands/living/lease-cars-netherlands/",
+            "Private lease, operational lease and company cars for expats: bijtelling orientation, costs vs buy, and contract watch-outs."
+          ),
+        ],
+      },
+      {
+        title: "Healthcare",
+        items: [
+          item(
             "Healthcare basics",
             "/netherlands/living/healthcare-basics/",
             "Insurance, huisarts setup, pharmacies, urgent care, and everyday healthcare expectations for newcomers."
@@ -1733,26 +1912,25 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/health/health-insurance-comparison-netherlands/",
             "Compare Dutch health insurance for expats — basic vs supplementary factors, eigen risico, networks and comparison-site checks."
           ),
+        ],
+      },
+      {
+        title: "Family & pets",
+        items: [
           item(
-            "Emergencies & safety",
-            "/netherlands/living/emergencies-safety/",
-            "Emergency numbers, urgent situations, lost items, and calm readiness for day-to-day Dutch life."
-          ),
-          item("Language & phrases", "/netherlands/living/language/", "Practical Dutch for daily life (Living hub)."),
-          item(
-            "Weather & seasons",
-            "/netherlands/living/weather/",
-            "Wind, rain, dark days, and what actually changes in everyday Dutch life."
-          ),
-          item(
-            "Waste and recycling",
-            "/netherlands/practical-life/waste-and-recycling-netherlands/",
-            "Sorting, pickup schedules, underground containers and recycling centers."
+            "Pregnancy",
+            "/netherlands/family/pregnancy-netherlands/",
+            "Expat pregnancy orientation — finding a midwife, trimester checkpoints, BSN timing, insurance basics and what to prepare."
           ),
           item(
-            "Parking and local permits",
-            "/netherlands/practical-life/parking-and-local-permits-netherlands/",
-            "Resident permits, visitor passes, paid zones, parking apps and municipality permits."
+            "Giving birth",
+            "/netherlands/family/giving-birth-netherlands/",
+            "Birth-day orientation — home, hospital or birth centre, when to call the midwife, packing, partner role and first hours."
+          ),
+          item(
+            "Pets",
+            "/netherlands/family/pets-netherlands/",
+            "Everyday pet life after arrival — housing rules, chip norms, vets, insurance orientation, parks etiquette and costs."
           ),
         ],
       },
@@ -1850,6 +2028,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Parenting",
             "/netherlands/family/parenting-netherlands/",
             "Dutch parenting culture, childcare, schools, healthcare and everyday family life for expat families."
+          ),
+          item(
+            "Family activities",
+            "/netherlands/family/family-activities-netherlands/",
+            "Parks, museums, libraries, sports clubs, seasonal outings and rainy-day plans for expat families."
           ),
           item(
             "Healthcare for Children",

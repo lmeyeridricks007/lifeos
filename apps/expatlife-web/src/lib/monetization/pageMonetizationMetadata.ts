@@ -63,7 +63,7 @@ export function inferMonetizationCategoriesFromPath(path: string): ContextualAff
   ) {
     add("utilities");
   }
-  if (p.includes("getting-around") || p.includes("/transport/")) {
+  if (p.includes("getting-around") || p.includes("car-sharing") || p.includes("/transport/")) {
     add("mobility");
   }
 

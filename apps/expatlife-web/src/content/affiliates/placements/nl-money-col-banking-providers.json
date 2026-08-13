@@ -1,0 +1,37 @@
+{
+  "id": "nl-money-col-banking-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/money/cost-of-living-netherlands/",
+    "slot": "banking-cost-providers"
+  },
+  "variant": "cards",
+  "title": "Open accounts that can pay rent and bills",
+  "intro": "A Dutch IBAN (or workable euro setup) sits under every housing and insurance line — soft CTAs only; confirm fees and eligibility yourself.",
+  "categoryOrder": ["banking"],
+  "items": [
+    {
+      "providerId": "bunq",
+      "reason": "Digital Dutch bank — useful for rent, iDEAL and direct debits with English-friendly onboarding."
+    },
+    {
+      "providerId": "ing",
+      "reason": "Traditional Dutch everyday banking — common for salary and landlord expectations."
+    },
+    {
+      "providerId": "abn-amro",
+      "reason": "Full-service Dutch bank with expat-oriented pathways — verify current package fees."
+    },
+    {
+      "providerId": "wise",
+      "reason": "Multi-currency transfers while you move deposits and first-month cash across borders."
+    },
+    {
+      "providerId": "revolut",
+      "reason": "App-based multi-currency spending — validate FX and weekend rules before relying on it for rent."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects cost-of-living setup relevance, not pay-to-rank. Confirm account fees and eligibility on each bank’s site."
+}

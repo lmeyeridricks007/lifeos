@@ -62,6 +62,16 @@ import {
 } from "@/src/components/living/livingPillarContent";
 import { LIVING_TRANSPORT_APP_DOWNLOADS } from "@/src/components/living/livingTransportAppStoreLinks";
 import {
+  BIKE_SHARING_NETHERLANDS_PATH,
+  CYCLING_NETHERLANDS_PATH,
+  METRO_NETHERLANDS_PATH,
+  NS_TRAINS_NETHERLANDS_PATH,
+  OV_CHIPKAART_NETHERLANDS_PATH,
+  OVPAY_NETHERLANDS_PATH,
+  REGIONAL_BUSES_NETHERLANDS_PATH,
+  TRAMS_NETHERLANDS_PATH,
+} from "@/src/components/living/ov-chipkaart-netherlands/ovChipkaartNetherlandsPageModel";
+import {
   siteGuideColumnPadYClass,
   sitePillarFramedHeroGutterXClass,
   sitePillarFramedHeroTopBandClass,
@@ -981,6 +991,46 @@ export function GettingAroundView() {
           href: LIVING_SURVIVAL_GUIDE_PATH,
           label: "Netherlands Survival Guide",
           description: "The wider Living hub covers payments, weather, groceries, and first-month sequencing—open when you want the full field guide.",
+        },
+        {
+          href: OV_CHIPKAART_NETHERLANDS_PATH,
+          label: "OV-chipkaart in the Netherlands",
+          description: "Anonymous vs personal cards, top-up, check-in/out, missed checkout, and when OVpay is enough.",
+        },
+        {
+          href: OVPAY_NETHERLANDS_PATH,
+          label: "OVpay in the Netherlands",
+          description: "Contactless bank-card and phone travel: check-in/out, day caps orientation, and when a chipkaart still helps.",
+        },
+        {
+          href: NS_TRAINS_NETHERLANDS_PATH,
+          label: "NS trains in the Netherlands",
+          description: "Ticket types (single, Flex, season), how to buy, peak orientation, and first-week commute tips for Dutch Railways.",
+        },
+        {
+          href: TRAMS_NETHERLANDS_PATH,
+          label: "Trams in the Netherlands",
+          description: "City tram travel for expats: how to ride, check-in/out, etiquette, and when tram beats bus or metro.",
+        },
+        {
+          href: METRO_NETHERLANDS_PATH,
+          label: "Metro in the Netherlands",
+          description: "Amsterdam and Rotterdam metro orientation: tickets, peak tips, NS interchange, and when metro wins.",
+        },
+        {
+          href: REGIONAL_BUSES_NETHERLANDS_PATH,
+          label: "Regional buses in the Netherlands",
+          description: "Regional and city bus travel: operators, check-in quirks, 9292 planning, and when buses are the only link.",
+        },
+        {
+          href: CYCLING_NETHERLANDS_PATH,
+          label: "Cycling in the Netherlands",
+          description: "Everyday cycling for expats: buying a bike, rules and etiquette, lights, locks, rain and when bike beats OV.",
+        },
+        {
+          href: BIKE_SHARING_NETHERLANDS_PATH,
+          label: "Bike sharing in the Netherlands",
+          description: "Subscription and shared bikes: Swapfiets, OV-fiets and city systems — when sharing beats owning.",
         },
         {
           href: LIVING_ESSENTIAL_APPS_PATH,

@@ -265,6 +265,9 @@ FINAL RESULT
 - Infer menu placement from existing siblings in `apps/expatlife-web/src/lib/nav/config.ts`
 - Prefer Living mega-menu for health/family operational guides (not Culture)
 
-## publishDate
+## publishDate / go-live
 
-If the user does not specify a date, pick the next unused future cornerstone date in the same cluster series, or ask once. Never invent past publish dates for new pages unless requested.
+- **Cluster with a user-provided date** → that `YYYY-MM-DD` is the production go-live; wire via `scheduledGuides` (see `.cursor/skills/expatlife-cornerstone-cluster/scheduling.md`). Local preview stays full.
+- **No date from the user** → live immediately after deploy. Set brief/model `publishDate` to today or the editorial date; do **not** invent a future schedule gate.
+- Never invent past publish dates for new pages unless requested.
+- Do not auto-pick the “next unused future cornerstone date” unless the user asked to schedule.
