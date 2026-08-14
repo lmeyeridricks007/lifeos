@@ -758,7 +758,7 @@ export function EnergyProvidersNetherlandsView() {
                 <ul className="mt-4 grid gap-3 text-sm leading-relaxed text-slate-300 sm:grid-cols-3">
                   <li className="flex gap-2">
                     <BadgeCheck className="mt-0.5 h-4 w-4 shrink-0 text-cyan-200" aria-hidden />
-                    Confirm supplier vs grid roles and who holds today's contract.
+                    Confirm supplier vs grid roles and who holds the current contract.
                   </li>
                   <li className="flex gap-2">
                     <BadgeCheck className="mt-0.5 h-4 w-4 shrink-0 text-cyan-200" aria-hidden />
