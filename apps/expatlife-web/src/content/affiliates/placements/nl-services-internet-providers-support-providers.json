@@ -1,0 +1,25 @@
+{
+  "id": "nl-services-internet-providers-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/internet-providers/",
+    "slot": "broadband-comparison-options"
+  },
+  "variant": "cards",
+  "title": "Compare broadband deals before you choose an ISP",
+  "intro": "Soft CTAs for Dutch internet and household utility comparison when you want to orient yourself before signing a fibre, cable or DSL contract. Confirm address availability, contract length, installation windows and cancellation rules yourself — this block is not a ranking of ISPs, and not personal telecom advice.",
+  "categoryOrder": ["services", "insurance"],
+  "items": [
+    {
+      "providerId": "pricewise",
+      "reason": "Real Dutch comparison site covering internet alongside energy and insurance — useful when you want to screen broadband deals and contract lengths before committing to a provider."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Comparison platform that also covers utilities orientation — soft overlap when you are setting up a household package, not an ISP endorsement."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat broadband discovery and comparison orientation — not pay-to-rank placement of ISPs. This is not telecom, financial or legal advice; verify address availability, speeds, installation fees and terms directly with providers and official ACM consumer guidance."
+}

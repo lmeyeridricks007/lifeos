@@ -291,7 +291,7 @@ export const minimumWageNetherlandsPage = {
     { title: "Career support", body: "Recruitment and career guidance may help before accepting long-term minimum-wage-level roles." },
   ],
   services: [
-    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "comingSoon", description: "Future directory for job search support." },
+    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "live", description: "Services directory for comparing recruitment agency providers." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Help with move planning alongside job evaluation." },
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Payroll and tax questions for international workers." },
   ] satisfies MinimumWageNetherlandsLink[],

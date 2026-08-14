@@ -332,7 +332,7 @@ export const employeeBenefitsNetherlandsPage = {
     { title: "Payroll specialists", body: "Clarify payslip items, pension deductions and contract benefit wording." },
   ],
   services: [
-    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "comingSoon", description: "Future directory for recruitment support." },
+    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "live", description: "Services directory for comparing recruitment agency providers." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Move planning alongside employment packages." },
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Benefits, pension and cross-border tax context." },
     { label: "Immigration lawyers", href: "/netherlands/services/immigration-lawyers/", status: "live", description: "Visa routes linked to employment offers." },

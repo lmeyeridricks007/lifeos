@@ -439,6 +439,10 @@ export const relocationAgenciesCategoryPage: ServiceCategoryPageData = {
     { label: "Visa consultants", href: "/netherlands/services/visa-consultants/" },
     { label: "Immigration lawyers", href: "/netherlands/services/immigration-lawyers/" },
     { label: "Highly skilled migrant sponsors", href: "/netherlands/services/highly-skilled-migrant-sponsors/" },
+    { label: "Moving companies", href: "/netherlands/services/moving-companies/" },
+    { label: "Removal companies", href: "/netherlands/services/removal-companies/" },
+    { label: "Relocation services", href: "/netherlands/services/relocation-services/" },
+    { label: "Tax advisors", href: "/netherlands/services/tax-advisors/" },
   ],
 
   tools: [

@@ -954,6 +954,8 @@ export const dutchWorkplaceCulturePage = {
   relatedGuides: [
     { label: "Dutch directness at work", href: DUTCH_DIRECTNESS_AT_WORK_PATH, status: "live", description: "Deep dive into direct feedback, meeting debate and expat adaptation strategies." },
     { label: "Finding jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Job search, recruiters and visa sponsorship context." },
+    { label: "CV Netherlands", href: "/netherlands/jobs/cv-netherlands/", status: "live", description: "Dutch CV and application document norms for expats." },
+    { label: "Interview tips Netherlands", href: "/netherlands/jobs/interview-tips-netherlands/", status: "live", description: "Dutch interview culture, preparation and follow-up for expats." },
     { label: "Employment contracts", href: EMPLOYMENT_CONTRACT_NETHERLANDS_PATH, status: "live", description: "Contract types, probation and notice periods." },
     { label: "Probation period", href: PROBATION_PERIOD_NETHERLANDS_PATH, status: "live", description: "Proeftijd expectations and onboarding culture." },
     { label: "Employee rights", href: EMPLOYEE_RIGHTS_NETHERLANDS_PATH, status: "live", description: "Leave, sick pay and workplace protections." },

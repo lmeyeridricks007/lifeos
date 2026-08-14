@@ -111,6 +111,9 @@ export const netherlandsServicesPage: ServicesHubPageData = {
       categoryHrefs: [
         { label: "Banks", href: "/netherlands/services/banks/" },
         { label: "Health Insurance", href: "/netherlands/services/health-insurance/" },
+        { label: "Internet providers", href: "/netherlands/services/internet-providers/" },
+        { label: "Energy providers", href: "/netherlands/services/energy-providers/" },
+        { label: "Phone providers", href: "/netherlands/services/phone-providers/" },
         { label: "Mobile & connectivity", href: "/netherlands/services/mobile-connectivity/" },
         { label: "Relocation Services", href: "/netherlands/services/relocation-services/" },
       ],
@@ -126,6 +129,8 @@ export const netherlandsServicesPage: ServicesHubPageData = {
         { label: "Relocation Agencies", href: "/netherlands/services/relocation-agencies/" },
         { label: "Immigration Lawyers", href: "/netherlands/services/immigration-lawyers/" },
         { label: "Visa Consultants", href: "/netherlands/services/visa-consultants/" },
+        { label: "Recruitment Agencies", href: "/netherlands/services/recruitment-agencies/" },
+        { label: "Mortgage Advisors", href: "/netherlands/services/mortgage-advisors/" },
       ],
     },
     {
@@ -163,7 +168,25 @@ export const netherlandsServicesPage: ServicesHubPageData = {
     },
     {
       title: "Dutch mobile number and SIM for expats",
-      description: "Why a local number matters for banking and DigiD, and SIM-only or prepaid options to compare.",
+      description: "Compare prepaid, SIM-only and eSIM phone providers for a local number — soft discovery directory.",
+      href: "/netherlands/services/phone-providers/",
+      linkLabel: "Compare Phone Providers",
+    },
+    {
+      title: "Internet providers for expats",
+      description: "Compare fibre, cable and DSL broadband deals, contracts and TV bundles — soft discovery, not an ISP ranking.",
+      href: "/netherlands/services/internet-providers/",
+      linkLabel: "Compare Internet Providers",
+    },
+    {
+      title: "Energy providers for expats",
+      description: "Compare electricity and gas suppliers, fixed vs variable contracts and switching — soft discovery, not an energy-brand ranking.",
+      href: "/netherlands/services/energy-providers/",
+      linkLabel: "Compare Energy Providers",
+    },
+    {
+      title: "Mobile & connectivity category",
+      description: "Broader services category orientation for SIMs, data and local numbers alongside the phone-providers directory.",
       href: "/netherlands/services/mobile-connectivity/",
       linkLabel: "Mobile & connectivity",
     },
@@ -196,6 +219,12 @@ export const netherlandsServicesPage: ServicesHubPageData = {
       description: "Compare mortgage advisors and brokers who help internationals understand borrowing capacity, documents, fees, and Dutch lender criteria.",
       href: "/netherlands/services/mortgage-advisors/",
       linkLabel: "Compare Mortgage Advisors",
+    },
+    {
+      title: "Recruitment agencies for expats",
+      description: "Compare recruitment agency types, fee models, languages and sector coverage — a provider directory, not a job-seeker how-to.",
+      href: "/netherlands/services/recruitment-agencies/",
+      linkLabel: "Compare Recruitment Agencies",
     },
     {
       title: "Financial advisors for expats",

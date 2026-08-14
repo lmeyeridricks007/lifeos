@@ -223,7 +223,7 @@ export const netSalaryNetherlandsPage = {
   ] satisfies NetSalaryGuideLink[],
   services: [
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Compare expat tax advisors and international tax specialists." },
-    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "comingSoon", description: "Future directory for accounting and return support." },
+    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "live", description: "Bookkeeping, BTW filings and accounting support for expats." },
     { label: "Payroll specialists", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Future directory for employer and payroll support." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Help with moving logistics alongside job and salary planning." },
   ] satisfies NetSalaryGuideLink[],

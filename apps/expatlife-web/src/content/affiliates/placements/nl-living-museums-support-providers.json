@@ -1,0 +1,29 @@
+{
+  "id": "nl-living-museums-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/museums-netherlands/",
+    "slot": "recommended-providers-museums"
+  },
+  "variant": "cards",
+  "title": "Mobility options for museum days",
+  "intro": "Soft CTAs for established Dutch rail and mobility options when a museum day needs a train hub, optional car share or a local bike. Confirm live products on each site — this block is not a ranking of museums, Museumkaart products or tour operators. Deepen OV planning on the Weekend travel sibling guide.",
+  "categoryOrder": ["mobility"],
+  "items": [
+    {
+      "providerId": "ns",
+      "reason": "Dutch Railways tickets and planners when your museum day starts from a station city — open Weekend travel for leisure OV planning depth."
+    },
+    {
+      "providerId": "greenwheels",
+      "reason": "Occasional shared cars when regional collections or family museum days have a thin last mile — keep four wheels optional."
+    },
+    {
+      "providerId": "swapfiets",
+      "reason": "Maintained subscription bike for local hops between neighbourhood museums or station-to-venue last mile — deepen fleets on Bike sharing."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing and availability with the provider directly. This is not travel, booking or product advice and not a ranking of museums, Museumkaart products or tour operators."
+}

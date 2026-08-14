@@ -1,5 +1,10 @@
 import { PARENTING_NETHERLANDS_PATH } from "@/src/components/family/parentingNetherlandsPageModel";
 import { HEALTHCARE_FOR_CHILDREN_PATH } from "@/src/components/family/healthcareForChildrenNetherlandsPageModel";
+import {
+  HIDDEN_GEMS_NETHERLANDS_PATH,
+  MUSEUMS_NETHERLANDS_PATH,
+  WEEKEND_TRIPS_NETHERLANDS_PATH,
+} from "@/src/components/living/weekend-trips-netherlands/weekendTripsNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 export const FAMILY_ACTIVITIES_NETHERLANDS_PATH =
@@ -454,6 +459,12 @@ export const familyActivitiesNetherlandsPage = {
     ] satisfies TipCard[],
     crossLinks: [
       {
+        label: "Museums in the Netherlands",
+        href: MUSEUMS_NETHERLANDS_PATH,
+        description: "Museumkaart, booking and etiquette depth — museums lane owner",
+        status: "live" as const,
+      },
+      {
         label: "Pregnancy in the Netherlands",
         href: PREGNANCY_NETHERLANDS_PATH,
         description: "Cluster sibling — prenatal journey (not leisure)",
@@ -857,6 +868,24 @@ export const familyActivitiesNetherlandsPage = {
       description: "Household support — short link",
       status: "live" as const,
     },
+    {
+      label: "Weekend trips",
+      href: WEEKEND_TRIPS_NETHERLANDS_PATH,
+      description: "Destination ideas for family weekend getaways",
+      status: "live" as const,
+    },
+    {
+      label: "Museums",
+      href: MUSEUMS_NETHERLANDS_PATH,
+      description: "Museumkaart and museum-going depth for family culture days",
+      status: "live" as const,
+    },
+    {
+      label: "Hidden gems",
+      href: HIDDEN_GEMS_NETHERLANDS_PATH,
+      description: "Quieter neighbourhoods and small-town day patterns",
+      status: "live" as const,
+    },
   ] satisfies FamilyActivitiesLink[],
   hubCards: [
     {
@@ -931,6 +960,12 @@ export const familyActivitiesNetherlandsPage = {
       label: "Family tools",
       href: FAMILY_TOOLS_PATH,
       description: "Open planning tools",
+      status: "live" as const,
+    },
+    {
+      label: "Museums",
+      href: MUSEUMS_NETHERLANDS_PATH,
+      description: "Deepen Museumkaart and museum habits",
       status: "live" as const,
     },
   ] satisfies FamilyActivitiesLink[],

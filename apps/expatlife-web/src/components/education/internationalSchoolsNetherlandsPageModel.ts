@@ -760,6 +760,8 @@ export const internationalSchoolsNetherlandsPage = {
     },
   ],
   relatedGuides: [
+    { label: "International schools (services directory)", href: "/netherlands/services/international-schools/", status: "live", description: "Compare schools as providers — curricula, fee orientation, admission and locations." },
+    { label: "Daycare providers (services)", href: "/netherlands/services/daycare-providers/", status: "live", description: "Compare kinderopvang providers — KDV and gastouder discovery (not the education system guide)." },
     { label: "Moving with Children", href: MOVING_WITH_KIDS_PATH, status: "live", description: "Family relocation guide covering schools, registration and settling in." },
     { label: "Dutch Schools", href: "/netherlands/education/dutch-schools-netherlands/", status: "live", description: "Basisschool, secondary pathways, enrolment and language support for expat families." },
     { label: "Dutch Education System", href: "/netherlands/education/dutch-education-system/", status: "comingSoon", description: "Broader system overview — complements the Dutch schools guide." },
@@ -772,13 +774,17 @@ export const internationalSchoolsNetherlandsPage = {
   ] satisfies InternationalSchoolsLink[],
   educationHubCards: [
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_NETHERLANDS_PATH, status: "live", description: "This guide — curricula, directory, admissions and fees." },
+    { label: "Schools provider directory", href: "/netherlands/services/international-schools/", status: "live", description: "Compare international schools as providers — fees, curricula and locations." },
     { label: "Dutch Schools", href: "/netherlands/education/dutch-schools-netherlands/", status: "live", description: "Public and special Dutch-medium schools — basisschool, enrolment and language support." },
     { label: "Daycare", href: "/netherlands/education/daycare-netherlands/", status: "live", description: "Early childhood care before school age." },
+    { label: "Daycare providers", href: "/netherlands/services/daycare-providers/", status: "live", description: "Compare KDV and gastouder providers as a services directory." },
     { label: "Universities", href: "/netherlands/education/universities-netherlands/", status: "comingSoon", description: "Higher education options for international students." },
     { label: "Student Life", href: "/netherlands/education/universities-netherlands/", status: "comingSoon", description: "Student housing, visas and campus life." },
     { label: "Learning Dutch", href: "/netherlands/living/language/", status: "live", description: "Practical Dutch for daily life and integration." },
   ] satisfies InternationalSchoolsLink[],
   exploreNextCards: [
+    { label: "Schools provider directory", href: "/netherlands/services/international-schools/", status: "live", description: "Compare international schools as providers — fees, curricula and locations." },
+    { label: "Daycare providers", href: "/netherlands/services/daycare-providers/", status: "live", description: "Shortlist kinderopvang providers while you plan school start dates." },
     { label: "Moving with Children", href: MOVING_WITH_KIDS_PATH, status: "live", description: "End-to-end family relocation planning." },
     { label: "Family Life", href: "/netherlands/culture/family-and-school-culture/", status: "live", description: "School culture and Dutch family life." },
     { label: "Dutch Schools", href: "/netherlands/education/dutch-schools-netherlands/", status: "live", description: "Dutch public and special schools — enrolment and language support." },

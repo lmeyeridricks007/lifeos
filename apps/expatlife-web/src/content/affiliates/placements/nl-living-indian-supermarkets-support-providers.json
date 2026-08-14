@@ -1,0 +1,29 @@
+{
+  "id": "nl-living-indian-supermarkets-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/indian-supermarkets-netherlands/",
+    "slot": "recommended-providers-indian-supermarkets"
+  },
+  "variant": "cards",
+  "title": "Grocery tools to explore",
+  "intro": "Soft CTAs for established supermarket and delivery patterns when you are modelling everyday food sourcing alongside Indian and South Asian pantry needs. Confirm coverage and world-food stock on each site — this block is not a ranking of Indian specialty markets.",
+  "categoryOrder": ["groceries"],
+  "items": [
+    {
+      "providerId": "albert-heijn",
+      "reason": "Full-service benchmark with Indian and South Asian world-food lines in many larger branches — useful when modelling weekly spice, sauce and basmati top-ups beside everyday staples."
+    },
+    {
+      "providerId": "picnic",
+      "reason": "App-based grocery delivery — search Indian and South Asian world-food lines for your postcode and compare fees with a specialty shop trip when time-poor weeks tempt convenience."
+    },
+    {
+      "providerId": "hellofresh",
+      "reason": "Meal kits for predictable dinners — compare with cooking from aisle staples plus occasional Indian specialty ingredients before treating kits as a pantry replacement."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance for everyday grocery modelling, not pay-to-rank placement or an Indian-store podium. Assortments and coverage change — treat any basket as orientation, not a quote. This is not shopping or financial advice."
+}

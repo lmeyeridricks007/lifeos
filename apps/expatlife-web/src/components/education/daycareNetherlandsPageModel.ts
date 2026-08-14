@@ -10,6 +10,8 @@ export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlan
 export const CHILDCARE_COST_ESTIMATOR_PATH = "/netherlands/family/tools/childcare-cost-estimator/" as const;
 export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands/" as const;
 export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands/" as const;
+export const DAYCARE_PROVIDERS_SERVICES_PATH = "/netherlands/services/daycare-providers/" as const;
+export const INTERNATIONAL_SCHOOLS_SERVICES_PATH = "/netherlands/services/international-schools/" as const;
 export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
 export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" as const;
 export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/" as const;
@@ -628,12 +630,14 @@ export const daycareNetherlandsPage = {
     },
   ],
   relatedGuides: [
+    { label: "Daycare Providers (services)", href: DAYCARE_PROVIDERS_SERVICES_PATH, status: "live", description: "Compare KDV, gastouderbureaus and discovery paths — provider directory owned by Services." },
     { label: "After-School Care (BSO)", href: AFTER_SCHOOL_CARE_PATH, status: "live", description: "Buitenschoolse opvang for primary school children — hours, costs and provider directory." },
     { label: "Before-School Care (VSO)", href: BEFORE_SCHOOL_CARE_PATH, status: "live", description: "Voorschoolse opvang — morning care before basisschool for working parents." },
     { label: "Childcare Cost Estimator", href: CHILDCARE_COST_ESTIMATOR_PATH, status: "live", description: "Model gross fees and net cost after kinderopvangtoeslag." },
     { label: "Childcare Allowance", href: CHILDCARE_ALLOWANCE_PATH, status: "live", description: "Kinderopvangtoeslag rules, eligibility and application for expat families." },
     { label: "Child Benefits", href: CHILD_BENEFITS_PATH, status: "live", description: "Kinderbijslag, Kindgebonden Budget and how Dutch family benefits fit together." },
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "International education from primary age — separate from daycare planning." },
+    { label: "International Schools (services)", href: INTERNATIONAL_SCHOOLS_SERVICES_PATH, status: "live", description: "Compare international schools as providers — curricula, fees orientation and locations." },
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Basisschool enrolment and language support after childcare years." },
     { label: "Moving with Children", href: MOVING_WITH_KIDS_PATH, status: "live", description: "Family relocation planning including schools, registration and settling in." },
     { label: "Family Life", href: FAMILY_LIFE_PATH, status: "live", description: "Dutch family norms, school culture and community integration." },
@@ -642,6 +646,7 @@ export const daycareNetherlandsPage = {
   ] satisfies DaycareLink[],
   educationHubCards: [
     { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "This guide — childcare types, directory, costs and waiting lists." },
+    { label: "Daycare Providers (services)", href: DAYCARE_PROVIDERS_SERVICES_PATH, status: "live", description: "Provider directory for comparing KDV and gastouder discovery paths." },
     { label: "After-School Care (BSO)", href: AFTER_SCHOOL_CARE_PATH, status: "live", description: "BSO for school-age children — separate registration from daycare." },
     { label: "Before-School Care (VSO)", href: BEFORE_SCHOOL_CARE_PATH, status: "live", description: "Morning VSO for primary school children — separate from daycare." },
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_PATH, status: "live", description: "Basisschool and secondary pathways after early years." },
@@ -652,6 +657,7 @@ export const daycareNetherlandsPage = {
     { label: "Learning Dutch", href: "/netherlands/living/language/", status: "live", description: "Practical Dutch for parents and daily life." },
   ] satisfies DaycareLink[],
   exploreNextCards: [
+    { label: "Daycare Providers (services)", href: DAYCARE_PROVIDERS_SERVICES_PATH, status: "live", description: "Shortlist KDV and gastouder discovery paths after you understand the system." },
     { label: "Childcare Allowance", href: CHILDCARE_ALLOWANCE_PATH, status: "live", description: "Apply for kinderopvangtoeslag and understand work rules." },
     { label: "Child Benefits", href: CHILD_BENEFITS_PATH, status: "live", description: "Understand Kinderbijslag and Kindgebonden Budget alongside childcare costs." },
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "Plan primary education alongside early years care." },

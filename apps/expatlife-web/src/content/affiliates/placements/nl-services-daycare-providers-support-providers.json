@@ -1,0 +1,34 @@
+{
+  "id": "nl-services-daycare-providers-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/daycare-providers/",
+    "slot": "daycare-providers-related-support"
+  },
+  "variant": "cards",
+  "title": "Daycare discovery and related support",
+  "intro": "Soft discovery while you compare **kinderopvang** providers — location search, housing near commute corridors and household setup. These listings are **not a ranking of daycares**, and not placement or allowance advice. Confirm places, hours, LRK registration and toeslag eligibility directly before you decide.",
+  "categoryOrder": ["childcare", "housing", "services"],
+  "items": [
+    {
+      "providerId": "kinderdagverblijf-nl",
+      "reason": "Search kinderdagverblijven by location — useful when you want to compare nearby KDV options before you lock commute and housing together."
+    },
+    {
+      "providerId": "housinganywhere",
+      "reason": "Furnished mid-term rentals helpful when a daycare offer arrives before a long-term lease is ready — search near your shortlisted locations."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Household insurance comparison orientation once you settle near childcare — not daycare placement support."
+    }
+  ],
+  "registryProviders": {
+    "categories": ["childcare", "housing-platforms"],
+    "limit": 3,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat daycare-provider discovery and related settling steps — not pay-to-rank placement of childcare centres. This is not a ranking of daycare providers, and not childcare, financial or placement advice. Verify places, fees, LRK registration and allowance rules directly with providers and official sources."
+}

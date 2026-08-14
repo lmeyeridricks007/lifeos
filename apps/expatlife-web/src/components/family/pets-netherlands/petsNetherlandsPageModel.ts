@@ -14,6 +14,7 @@ export const BRINGING_PETS_PATH = "/netherlands/bringing-pets-to-netherlands/" a
 export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family/" as const;
 export const RENTING_PATH = "/netherlands/housing/rental-contracts-and-deposits-netherlands/" as const;
 export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
+export const PET_RELOCATION_COMPANIES_PATH = "/netherlands/services/pet-relocation-companies/" as const;
 
 export type PetsLink = {
   label: string;
@@ -729,6 +730,7 @@ export const petsNetherlandsPage = {
   ],
   relatedGuidesTips: [
     "Import & travel paperwork → Bringing pets.",
+    "Specialist pet movers → Pet relocation companies.",
     "Family cluster sibling → Giving birth.",
     "Family culture → Parenting.",
     "Parks for families → Family activities.",
@@ -741,6 +743,12 @@ export const petsNetherlandsPage = {
       href: BRINGING_PETS_PATH,
       status: "live",
       description: "Import, documents and travel — the move guide this page complements.",
+    },
+    {
+      label: "Pet relocation companies",
+      href: PET_RELOCATION_COMPANIES_PATH,
+      status: "live",
+      description: "Specialist pet import/export and flight-pet logistics providers — IATA crates and quarantine orientation.",
     },
     {
       label: "Giving birth in the Netherlands",
@@ -819,6 +827,12 @@ export const petsNetherlandsPage = {
       description: "Need import or travel docs? Start with the move guide.",
     },
     {
+      label: "Pet relocation companies",
+      href: PET_RELOCATION_COMPANIES_PATH,
+      status: "live",
+      description: "Compare specialist pet movers for crates, flights and ground transfer.",
+    },
+    {
       label: "Giving birth",
       href: GIVING_BIRTH_NETHERLANDS_PATH,
       status: "live",
@@ -851,6 +865,7 @@ export const petsNetherlandsPage = {
   ] satisfies PetsLink[],
   exploreNextTips: [
     "Import paperwork → Bringing pets.",
+    "Specialist pet movers → Pet relocation companies.",
     "Cluster sibling → Giving birth.",
     "Family culture → Parenting.",
     "Housing search → Rental contracts.",

@@ -2,6 +2,7 @@ export const CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH = "/netherlands/jobs/contra
 export const CONTRACTOR_VS_EMPLOYEE_AFFILIATE_PLACEMENT_ID = "nl-jobs-contractor-vs-employee-support-providers" as const;
 
 export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
+export const STARTING_CONSULTANCY_NETHERLANDS_PATH = "/netherlands/jobs/starting-consultancy-netherlands/" as const;
 export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as const;
 export const EMPLOYMENT_CONTRACT_NETHERLANDS_PATH = "/netherlands/jobs/employment-contract-netherlands/" as const;
 export const EMPLOYEE_RIGHTS_NETHERLANDS_PATH = "/netherlands/jobs/employee-rights-netherlands/" as const;
@@ -827,6 +828,7 @@ export const contractorVsEmployeeNetherlandsPage = {
   ] satisfies ContractorVsEmployeeScenarioRow[],
   relatedGuides: [
     { label: "Freelancing Netherlands", href: FREELANCING_NETHERLANDS_PATH, status: "live", description: "ZZP setup, clients, taxes and financial planning for freelancers." },
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Consultancy practice setup when the contractor path is advisory work." },
     { label: "ZZP Netherlands", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Cornerstone guide on Dutch ZZP registration and invoicing." },
     { label: "Employment contract Netherlands", href: EMPLOYMENT_CONTRACT_NETHERLANDS_PATH, status: "live", description: "Contract clauses when comparing with contractor agreements." },
     { label: "Employee rights Netherlands", href: EMPLOYEE_RIGHTS_NETHERLANDS_PATH, status: "live", description: "Workplace protections on the employment path." },
@@ -835,21 +837,21 @@ export const contractorVsEmployeeNetherlandsPage = {
   ] satisfies ContractorVsEmployeeLink[],
   relatedGuideReadingOrder: [
     "Read employment contract and employee rights if leaning employment.",
-    "Open ZZP and freelancing guides if leaning contractor.",
+    "Open ZZP and freelancing guides if leaning contractor; Starting consultancy if building an advisory practice.",
     "Use expat taxes and financial advisors when cross-border or pension complexity appears.",
   ],
   relatedGuideScenarios: [
     { profile: "Employment path", scenario: "Accepting permanent offer next week", whatToCheck: "Employment contract → employee rights → benefits order." },
     { profile: "Contractor path", scenario: "First KvK registration planned", whatToCheck: "ZZP → freelancing → expat taxes for client mix." },
-    { profile: "Undecided", scenario: "Two offers with signing deadlines", whatToCheck: "This comparison page plus accountant call before signing." },
+    { profile: "Consultancy path", scenario: "Leaving employment for niche advisory clients", whatToCheck: "Starting consultancy for practice design; this page for employment vs ZZP tradeoffs." },
     { profile: "Pension focus", scenario: "Leaving employer pension scheme", whatToCheck: "Pension for expats and financial advisors guides." },
   ] satisfies ContractorVsEmployeeScenarioRow[],
   serviceCategories: [
     { label: "Financial advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Buffers, pension gaps and insurance when structure changes." },
-    { label: "Accountants", href: ACCOUNTANTS_PATH, status: "comingSoon", description: "Bookkeeping, BTW and ZZP compliance for contractor paths." },
+    { label: "Accountants", href: ACCOUNTANTS_PATH, status: "live", description: "Bookkeeping, BTW and ZZP compliance for contractor paths." },
     { label: "Tax advisors", href: TAX_ADVISORS_PATH, status: "live", description: "Structure comparison, cross-border clients and expat context." },
     { label: "Mortgage advisors", href: MORTGAGE_ADVISORS_PATH, status: "live", description: "Property timing and lender view of contractor vs employment income." },
-    { label: "Business consultants", href: BUSINESS_CONSULTANTS_PATH, status: "comingSoon", description: "Positioning and operations when choosing contractor route." },
+    { label: "Business consultants", href: BUSINESS_CONSULTANTS_PATH, status: "live", description: "Positioning and operations when choosing contractor route." },
   ] satisfies ServiceCategory[],
   servicesWhenToUse: [
     "Tax advisors: structure comparison, BTW, cross-border clients and expat tax context.",
@@ -911,28 +913,28 @@ export const contractorVsEmployeeNetherlandsPage = {
   ] satisfies ContractorVsEmployeeScenarioRow[],
   exploreNextTips: [
     "Open employment contract guide if leaning toward salaried route.",
-    "Read ZZP and freelancing guides if leaning contractor.",
+    "Read ZZP and freelancing guides if leaning contractor; Starting consultancy for advisory practice design.",
     "Use expat taxes and financial advisors when pension or cross-border clients matter.",
   ],
   exploreNextCards: [
     { label: "Freelancing Netherlands", href: FREELANCING_NETHERLANDS_PATH, status: "live", description: "Freelance orientation beyond this comparison." },
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Practice setup when the contractor path is consultancy." },
     { label: "ZZP Netherlands", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Registration, taxes and invoicing for contractors." },
     { label: "Employment contract", href: EMPLOYMENT_CONTRACT_NETHERLANDS_PATH, status: "live", description: "Contract review when choosing employment." },
     { label: "Expat taxes", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax planning across structure types." },
-    { label: "Financial advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Buffers and pension when structure changes." },
   ] satisfies ContractorVsEmployeeLink[],
   planningLinks: [
     { label: "Employment contract guide", href: EMPLOYMENT_CONTRACT_NETHERLANDS_PATH, description: "Contract clauses and signing checklist for employment path." },
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, description: "Advisory practice design on the contractor path." },
     { label: "ZZP guide", href: ZZP_NETHERLANDS_PATH, description: "Registration and tax orientation for contractor path." },
     { label: "Expat taxes guide", href: EXPAT_TAXES_NETHERLANDS_PATH, description: "Tax context when comparing or mixing structures." },
-    { label: "Financial advisors", href: FINANCIAL_ADVISORS_PATH, description: "Pension gaps and buffers when income structure changes." },
   ] satisfies ContractorVsEmployeeLink[],
   ecosystemLinks: [
     { label: "Finding jobs Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Employer routes when employment is the target." },
     { label: "Employee rights Netherlands", href: EMPLOYEE_RIGHTS_NETHERLANDS_PATH, status: "live", description: "Protections on the employment path." },
     { label: "Freelancing Netherlands", href: FREELANCING_NETHERLANDS_PATH, status: "live", description: "Freelance hub for contractor orientation." },
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Consultancy practice lane for advisory contractors." },
     { label: "Expat taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Core tax orientation for international residents." },
-    { label: "Mortgages for expats", href: MORTGAGES_NETHERLANDS_EXPATS_PATH, status: "live", description: "Property planning alongside structure choice." },
     { label: "Highly skilled migrant", href: HSM_VISA_PATH, status: "live", description: "Sponsored employment permit context for expats." },
   ] satisfies ContractorVsEmployeeLink[],
 } as const;

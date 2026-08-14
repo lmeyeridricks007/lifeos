@@ -9,6 +9,12 @@ export const FOREIGN_INCOME_PATH = "/netherlands/taxes/foreign-income-netherland
 export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
 export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
 export const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers/" as const;
+export const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers/" as const;
+export const NOTARIES_PATH = "/netherlands/services/notaries/" as const;
+export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors/" as const;
+export const ACCOUNTANTS_PATH = "/netherlands/services/accountants/" as const;
+export const BUSINESS_CONSULTANTS_PATH = "/netherlands/services/business-consultants/" as const;
+export const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents/" as const;
 export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
 
 export type FinancialAdvisorProvider = {
@@ -758,21 +764,33 @@ export const financialAdvisorsNetherlandsPage = {
     { label: "Mortgages for Expats", href: MORTGAGES_FOR_EXPATS_PATH, status: "live", description: "Mortgage eligibility and borrowing context for international buyers." },
     { label: "Pension Guide", href: PENSION_NETHERLANDS_EXPATS_PATH, status: "live", description: "Dutch pension building blocks for expats." },
     { label: "Foreign Income", href: FOREIGN_INCOME_PATH, status: "live", description: "Reporting and planning context for overseas income." },
+    { label: "Notaries", href: NOTARIES_PATH, status: "live", description: "Dutch notaris for purchase deeds and estate orientation — separate from financial planning." },
+    { label: "Insurance brokers", href: INSURANCE_BROKERS_PATH, status: "live", description: "Independent intermediaries who compare non-life and life packages." },
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, status: "live", description: "Compare cities before making long-term financial commitments." },
   ] satisfies FinancialAdvisorLink[],
   servicesLinks: [
     { label: "All Services", href: SERVICES_HUB_PATH, status: "live", description: "Browse service providers for expats in the Netherlands." },
-    { label: "Tax Advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Tax support where financial planning overlaps with returns and residency." },
+    { label: "Tax Advisors", href: TAX_ADVISORS_PATH, status: "live", description: "Tax support where financial planning overlaps with returns and residency." },
+    { label: "Accountants", href: ACCOUNTANTS_PATH, status: "live", description: "Bookkeeping, BTW and jaarrekening support — separate from wealth planning." },
+    { label: "Business consultants", href: BUSINESS_CONSULTANTS_PATH, status: "live", description: "Strategy and KvK growth consulting when planning overlaps with business setup." },
     { label: "Mortgage Advisors", href: MORTGAGE_ADVISORS_PATH, status: "live", description: "Mortgage advice for expats buying property in the Netherlands." },
+    { label: "Notaries", href: NOTARIES_PATH, status: "live", description: "Notaris for purchase deeds, hypotheekakte and related acts." },
+    { label: "Insurance brokers", href: INSURANCE_BROKERS_PATH, status: "live", description: "Independent insurance adviseurs and tussenpersonen for package comparison." },
+    { label: "Estate agents", href: ESTATE_AGENTS_PATH, status: "live", description: "Dutch makelaars for buying and selling property." },
     { label: "Banks", href: "/netherlands/services/banks/", status: "live", description: "Banking setup and account options for international residents." },
+    { label: "Immigration Lawyers", href: "/netherlands/services/immigration-lawyers/", status: "live", description: "Legal immigration representation when residence status shapes long-term planning." },
+    { label: "Recruitment Agencies Directory", href: "/netherlands/services/recruitment-agencies/", status: "live", description: "Compare recruitment agency providers when career moves drive financial planning." },
     { label: "Insurance Providers", href: INSURANCE_PROVIDERS_PATH, status: "live", description: "Compare Dutch insurers for healthcare, home, travel, liability and business insurance." },
     { label: "Wealth Management", href: "/netherlands/services/wealth-management/", status: "comingSoon", description: "Future directory for wealth-management providers." },
   ] satisfies FinancialAdvisorLink[],
   exploreNextCards: [
     { label: "Mortgage Advisors", href: MORTGAGE_ADVISORS_PATH, status: "live", description: "Compare mortgage advisors when property purchase is on the horizon." },
+    { label: "Notaries", href: NOTARIES_PATH, status: "live", description: "Coordinate deed timing when buying or settling estate documents." },
+    { label: "Insurance brokers", href: INSURANCE_BROKERS_PATH, status: "live", description: "Compare household and life cover with an independent intermediary." },
+    { label: "Tax Advisors", href: TAX_ADVISORS_PATH, status: "live", description: "Tax filing support that often sits beside long-term planning." },
+    { label: "Accountants", href: ACCOUNTANTS_PATH, status: "live", description: "Bookkeeping and admin support when planning overlaps with business income." },
+    { label: "Business consultants", href: BUSINESS_CONSULTANTS_PATH, status: "live", description: "Strategy and setup consulting when entrepreneurship drives planning questions." },
     { label: "Pension Guide", href: PENSION_NETHERLANDS_EXPATS_PATH, status: "live", description: "Understand Dutch pensions before long-term planning conversations." },
-    { label: "Expat Taxes", href: EXPAT_TAXES_PATH, status: "live", description: "Tax context that often shapes financial planning assumptions." },
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Property purchase guide for expat buyers." },
-    { label: "Double Taxation", href: DOUBLE_TAXATION_PATH, status: "live", description: "Treaty context for cross-border income and assets." },
   ] satisfies FinancialAdvisorLink[],
 };

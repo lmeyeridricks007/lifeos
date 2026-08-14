@@ -1,0 +1,29 @@
+{
+  "id": "nl-living-dutch-supermarkets-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/dutch-supermarkets/",
+    "slot": "recommended-providers-dutch-supermarkets"
+  },
+  "variant": "cards",
+  "title": "Grocery tools to explore",
+  "intro": "Soft CTAs for established supermarket and meal patterns when you are modelling everyday food spend. Confirm coverage, hours and offers on each site — this block is not a ranking of chains.",
+  "categoryOrder": ["groceries"],
+  "items": [
+    {
+      "providerId": "albert-heijn",
+      "reason": "Full-service supermarket benchmark — useful when modelling a typical in-store or AH Bezorgen weekly basket."
+    },
+    {
+      "providerId": "picnic",
+      "reason": "App-based grocery delivery — check postcode coverage when a delivery-led week fits your household."
+    },
+    {
+      "providerId": "hellofresh",
+      "reason": "Meal kits for predictable dinner costs — compare per-serving price with store-brand cooking habits."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Food prices and coverage change — treat any basket as orientation, not a quote. This is not financial advice."
+}

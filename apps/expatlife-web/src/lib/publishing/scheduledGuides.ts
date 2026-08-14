@@ -176,6 +176,241 @@ export const SCHEDULED_GUIDES: readonly ScheduledGuide[] = [
     publishDate: "2026-09-16",
     title: "Weekend travel",
   },
+  {
+    path: "/netherlands/living/dutch-supermarkets/",
+    publishDate: "2026-09-18",
+    title: "Dutch supermarkets",
+  },
+  {
+    path: "/netherlands/living/best-supermarkets-netherlands/",
+    publishDate: "2026-09-18",
+    title: "Best supermarkets",
+  },
+  {
+    path: "/netherlands/living/cheap-groceries-netherlands/",
+    publishDate: "2026-09-21",
+    title: "Cheap groceries",
+  },
+  {
+    path: "/netherlands/living/international-supermarkets-netherlands/",
+    publishDate: "2026-09-21",
+    title: "International supermarkets",
+  },
+  {
+    path: "/netherlands/living/asian-supermarkets-netherlands/",
+    publishDate: "2026-09-21",
+    title: "Asian supermarkets",
+  },
+  {
+    path: "/netherlands/living/turkish-supermarkets-netherlands/",
+    publishDate: "2026-09-24",
+    title: "Turkish supermarkets",
+  },
+  {
+    path: "/netherlands/living/indian-supermarkets-netherlands/",
+    publishDate: "2026-09-24",
+    title: "Indian supermarkets",
+  },
+  {
+    path: "/netherlands/living/south-african-shops-netherlands/",
+    publishDate: "2026-09-24",
+    title: "South African shops",
+  },
+  {
+    path: "/netherlands/living/meal-kits-netherlands/",
+    publishDate: "2026-09-27",
+    title: "Meal kits",
+  },
+  {
+    path: "/netherlands/living/food-delivery-netherlands/",
+    publishDate: "2026-09-27",
+    title: "Food delivery",
+  },
+  {
+    path: "/netherlands/living/restaurants-netherlands/",
+    publishDate: "2026-09-30",
+    title: "Restaurants",
+  },
+  {
+    path: "/netherlands/living/tipping-netherlands/",
+    publishDate: "2026-09-30",
+    title: "Tipping",
+  },
+  {
+    path: "/netherlands/jobs/cv-netherlands/",
+    publishDate: "2026-10-01",
+    title: "CV Netherlands",
+  },
+  {
+    path: "/netherlands/jobs/interview-tips-netherlands/",
+    publishDate: "2026-10-01",
+    title: "Interview tips",
+  },
+  {
+    path: "/netherlands/jobs/cover-letter-netherlands/",
+    publishDate: "2026-10-04",
+    title: "Cover letter",
+  },
+  {
+    path: "/netherlands/jobs/linkedin-netherlands/",
+    publishDate: "2026-10-04",
+    title: "LinkedIn Netherlands",
+  },
+  {
+    path: "/netherlands/jobs/networking-netherlands/",
+    publishDate: "2026-10-04",
+    title: "Networking Netherlands",
+  },
+  {
+    path: "/netherlands/jobs/recruitment-agencies-netherlands/",
+    publishDate: "2026-10-07",
+    title: "Recruitment agencies",
+  },
+  {
+    path: "/netherlands/jobs/english-speaking-jobs-netherlands/",
+    publishDate: "2026-10-07",
+    title: "English speaking jobs",
+  },
+  {
+    path: "/netherlands/jobs/remote-work-netherlands/",
+    publishDate: "2026-10-07",
+    title: "Remote work",
+  },
+  {
+    path: "/netherlands/jobs/starting-consultancy-netherlands/",
+    publishDate: "2026-10-09",
+    title: "Starting consultancy",
+  },
+  {
+    path: "/netherlands/living/weekend-trips-netherlands/",
+    publishDate: "2026-10-12",
+    title: "Weekend trips",
+  },
+  {
+    path: "/netherlands/living/national-parks-netherlands/",
+    publishDate: "2026-10-12",
+    title: "National parks",
+  },
+  {
+    path: "/netherlands/living/hiking-netherlands/",
+    publishDate: "2026-10-12",
+    title: "Hiking",
+  },
+  {
+    path: "/netherlands/living/museums-netherlands/",
+    publishDate: "2026-10-15",
+    title: "Museums",
+  },
+  {
+    path: "/netherlands/living/hidden-gems-netherlands/",
+    publishDate: "2026-10-15",
+    title: "Hidden gems",
+  },
+  {
+    path: "/netherlands/living/beach-towns-netherlands/",
+    publishDate: "2026-10-17",
+    title: "Beach towns",
+  },
+  {
+    path: "/netherlands/living/castles-netherlands/",
+    publishDate: "2026-10-17",
+    title: "Castles",
+  },
+  {
+    path: "/netherlands/living/road-trips-netherlands/",
+    publishDate: "2026-10-19",
+    title: "Road trips",
+  },
+  {
+    path: "/netherlands/living/day-trips-netherlands/",
+    publishDate: "2026-10-19",
+    title: "Day trips",
+  },
+  {
+    path: "/netherlands/services/recruitment-agencies/",
+    publishDate: "2026-10-22",
+    title: "Recruitment agencies",
+  },
+  {
+    path: "/netherlands/services/moving-companies/",
+    publishDate: "2026-10-25",
+    title: "Moving companies",
+  },
+  {
+    path: "/netherlands/services/removal-companies/",
+    publishDate: "2026-10-25",
+    title: "Removal companies",
+  },
+  {
+    path: "/netherlands/services/storage-companies/",
+    publishDate: "2026-10-28",
+    title: "Storage companies",
+  },
+  {
+    path: "/netherlands/services/estate-agents/",
+    publishDate: "2026-10-28",
+    title: "Estate agents",
+  },
+  {
+    path: "/netherlands/services/notaries/",
+    publishDate: "2026-11-01",
+    title: "Notaries",
+  },
+  {
+    path: "/netherlands/services/insurance-brokers/",
+    publishDate: "2026-11-01",
+    title: "Insurance brokers",
+  },
+  {
+    path: "/netherlands/services/internet-providers/",
+    publishDate: "2026-11-04",
+    title: "Internet providers",
+  },
+  {
+    path: "/netherlands/services/energy-providers/",
+    publishDate: "2026-11-04",
+    title: "Energy providers",
+  },
+  {
+    path: "/netherlands/services/phone-providers/",
+    publishDate: "2026-11-04",
+    title: "Phone providers",
+  },
+  {
+    path: "/netherlands/services/international-schools/",
+    publishDate: "2026-11-07",
+    title: "International schools",
+  },
+  {
+    path: "/netherlands/services/daycare-providers/",
+    publishDate: "2026-11-07",
+    title: "Daycare providers",
+  },
+  {
+    path: "/netherlands/services/pet-relocation-companies/",
+    publishDate: "2026-11-10",
+    title: "Pet relocation companies",
+  },
+  {
+    path: "/netherlands/services/cleaning-companies/",
+    publishDate: "2026-11-10",
+    title: "Cleaning companies",
+  },
+  {
+    path: "/netherlands/services/handymen/",
+    publishDate: "2026-11-10",
+    title: "Handymen",
+  },
+  {
+    path: "/netherlands/services/accountants/",
+    publishDate: "2026-11-13",
+    title: "Accountants",
+  },
+  {
+    path: "/netherlands/services/business-consultants/",
+    publishDate: "2026-11-13",
+    title: "Business consultants",
+  },
 ] as const;
 
 const byNormalizedPath = new Map(

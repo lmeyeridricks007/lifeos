@@ -15,6 +15,8 @@ export const BEST_CITIES_FOR_EXPATS_PATH = "/netherlands/cities/best-cities-for-
 export const DOUBLE_TAXATION_PATH = "/netherlands/taxes/double-taxation-netherlands/" as const;
 export const FOREIGN_INCOME_PATH = "/netherlands/taxes/foreign-income-netherlands/" as const;
 export const SALARY_NEGOTIATION_NETHERLANDS_PATH = "/netherlands/jobs/salary-negotiation-netherlands/" as const;
+export const CV_NETHERLANDS_PATH = "/netherlands/jobs/cv-netherlands/" as const;
+export const INTERVIEW_TIPS_NETHERLANDS_PATH = "/netherlands/jobs/interview-tips-netherlands/" as const;
 
 export const FINDING_JOBS_AFFILIATE_PLACEMENT_ID = "nl-jobs-finding-jobs-support-providers" as const;
 
@@ -734,6 +736,14 @@ export const findingJobsNetherlandsPage = {
     },
   ],
   relatedGuides: [
+    { label: "Recruitment Agencies Netherlands", href: "/netherlands/jobs/recruitment-agencies-netherlands/", status: "live", description: "How Dutch recruiters, uitzendbureaus and intermediars work for expats." },
+    { label: "English Speaking Jobs Netherlands", href: "/netherlands/jobs/english-speaking-jobs-netherlands/", status: "live", description: "English-friendly sectors, cities and language reality checks." },
+    { label: "Remote Work Netherlands", href: "/netherlands/jobs/remote-work-netherlands/", status: "live", description: "Remote and hybrid employment norms for Dutch roles." },
+    { label: "CV Netherlands", href: CV_NETHERLANDS_PATH, status: "live", description: "Dutch CV, motivation letter and LinkedIn alignment for applications." },
+    { label: "Cover Letter Netherlands", href: "/netherlands/jobs/cover-letter-netherlands/", status: "live", description: "Dutch motivatiebrief norms when vacancies require a letter." },
+    { label: "LinkedIn Netherlands", href: "/netherlands/jobs/linkedin-netherlands/", status: "live", description: "Profile, Open to Work, messaging recruiters and Dutch LinkedIn norms." },
+    { label: "Networking Netherlands", href: "/netherlands/jobs/networking-netherlands/", status: "live", description: "Events, communities, referrals and Dutch directness in professional outreach." },
+    { label: "Interview Tips Netherlands", href: INTERVIEW_TIPS_NETHERLANDS_PATH, status: "live", description: "Dutch interview culture, preparation, questions and follow-up for expats." },
     { label: "Expat Salary Netherlands", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Salary expectations, taxes and cost-of-living context for international professionals." },
     { label: "Highly Skilled Migrant Visa", href: HSM_VISA_PATH, status: "live", description: "Work permit route context alongside employer-sponsored hiring." },
     { label: "Average Salary Netherlands", href: AVERAGE_SALARY_NETHERLANDS_PATH, status: "live", description: "Broader wage benchmarks by city, industry and experience." },
@@ -754,7 +764,7 @@ export const findingJobsNetherlandsPage = {
     { title: "Relocation services", body: "Useful when job timing depends on housing search, family logistics and arrival planning." },
   ],
   services: [
-    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "comingSoon", description: "Future directory for expat-focused recruitment support." },
+    { label: "Recruitment agencies Netherlands", href: "/netherlands/jobs/recruitment-agencies-netherlands/", status: "live", description: "How Dutch recruiters and uitzendbureaus work for expats — not a services directory ranking." },
     { label: "Career coaches", href: "/netherlands/services/career-coaches/", status: "comingSoon", description: "Future directory for career coaching and interview support." },
     { label: "Immigration lawyers", href: "/netherlands/services/immigration-lawyers/", status: "live", description: "Permit and sponsorship questions alongside job offers." },
     { label: "CV writing services", href: "/netherlands/services/cv-writing-services/", status: "comingSoon", description: "Future directory for CV and application localization support." },
@@ -819,10 +829,14 @@ export const findingJobsNetherlandsPage = {
   officialSourcesNote:
     "Visa sponsorship, labour market demand and salary expectations vary significantly depending on profession, experience and economic conditions. Verify current rules on official sources.",
   exploreNextCards: [
-    { label: "Expat Salary Guide", href: EXPAT_SALARY_NETHERLANDS_PATH, status: "live", description: "Understand compensation expectations after identifying target roles." },
-    { label: "Highly Skilled Migrant Visa", href: HSM_VISA_PATH, status: "live", description: "Permit route context for employer-sponsored offers." },
-    { label: "Best Dutch Cities", href: BEST_CITIES_FOR_EXPATS_PATH, status: "live", description: "Compare cities before committing to a job location." },
-    { label: "Cost of Living Calculator", href: COST_OF_LIVING_CALCULATOR_PATH, status: "live", description: "Stress-test offers against local expenses." },
-    { label: "Moving to the Netherlands", href: MOVING_HUB_PATH, status: "live", description: "Relocation hub connecting visas, housing and employment." },
+    { label: "Recruitment Agencies Netherlands", href: "/netherlands/jobs/recruitment-agencies-netherlands/", status: "live", description: "Work the agency channel: uitzend, intermediars and partnership habits." },
+    { label: "English Speaking Jobs Netherlands", href: "/netherlands/jobs/english-speaking-jobs-netherlands/", status: "live", description: "English-friendly market lane and language reality checks." },
+    { label: "Remote Work Netherlands", href: "/netherlands/jobs/remote-work-netherlands/", status: "live", description: "Remote and hybrid employment expectations." },
+    { label: "CV Netherlands", href: CV_NETHERLANDS_PATH, status: "live", description: "Localise CV, motivation letter and LinkedIn for Dutch applications." },
+    { label: "Cover Letter Netherlands", href: "/netherlands/jobs/cover-letter-netherlands/", status: "live", description: "Dutch motivatiebrief when vacancies still require a letter." },
+    { label: "LinkedIn Netherlands", href: "/netherlands/jobs/linkedin-netherlands/", status: "live", description: "Profile, Open to Work and recruiter messaging for Dutch hiring." },
+    { label: "Networking Netherlands", href: "/netherlands/jobs/networking-netherlands/", status: "live", description: "Events, communities and referrals beyond public job boards." },
+    { label: "Interview Tips Netherlands", href: INTERVIEW_TIPS_NETHERLANDS_PATH, status: "live", description: "Prepare for Dutch interview culture, questions and follow-up." },
+    { label: "Salary Negotiation", href: SALARY_NEGOTIATION_NETHERLANDS_PATH, status: "live", description: "Negotiate total compensation once interviews progress." },
   ] satisfies FindingJobsLink[],
 } as const;

@@ -1,4 +1,15 @@
 export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors/" as const;
+export const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies/" as const;
+export const REMOVAL_COMPANIES_PATH = "/netherlands/services/removal-companies/" as const;
+export const RELOCATION_AGENCIES_PATH = "/netherlands/services/relocation-agencies/" as const;
+export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services/" as const;
+export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors/" as const;
+export const RECRUITMENT_AGENCIES_SERVICES_PATH = "/netherlands/services/recruitment-agencies/" as const;
+export const HOUSING_PLATFORMS_PATH = "/netherlands/services/housing-platforms/" as const;
+export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers/" as const;
+
+export const TAX_ADVISORS_AFFILIATE_PLACEMENT_ID =
+  "nl-services-tax-advisors-support-providers" as const;
 
 export type TaxAdvisorDirectoryLink = {
   label: string;
@@ -35,6 +46,7 @@ export const taxAdvisorsPage = {
   path: TAX_ADVISORS_PATH,
   publish: true,
   publishDate: "2026-05-20",
+  affiliatePlacementId: TAX_ADVISORS_AFFILIATE_PLACEMENT_ID,
   seo: {
     title: "Tax Advisors for Expats in the Netherlands | Dutch Tax & Expat Specialists",
     description:
@@ -137,12 +149,87 @@ export const taxAdvisorsPage = {
     { label: "Freelancer & ZZP Taxes", href: "/netherlands/taxes/freelancer-zzp-taxes/", status: "comingSoon", description: "Future freelancer guide." },
   ] satisfies TaxAdvisorDirectoryLink[],
   relatedServices: [
-    { label: "Accountants", href: "/netherlands/services/accountants/", status: "comingSoon" },
+    {
+      label: "Immigration lawyers",
+      href: IMMIGRATION_LAWYERS_PATH,
+      status: "live",
+      description: "Visa and residence questions that sit beside tax residency facts.",
+    },
+    {
+      label: "Mortgage advisors",
+      href: MORTGAGE_ADVISORS_PATH,
+      status: "live",
+      description: "Housing finance where tax, interest and buying timelines overlap.",
+    },
+    {
+      label: "Financial advisors",
+      href: "/netherlands/services/financial-advisors/",
+      status: "live",
+      description: "Long-term planning for pensions and investments beside tax filing.",
+    },
+    {
+      label: "Notaries",
+      href: "/netherlands/services/notaries/",
+      status: "live",
+      description: "Dutch notaris for purchase deeds and estate orientation — separate from tax returns.",
+    },
+    {
+      label: "Insurance brokers",
+      href: "/netherlands/services/insurance-brokers/",
+      status: "live",
+      description: "Independent intermediaries for household and life package comparison.",
+    },
+    {
+      label: "Relocation services",
+      href: RELOCATION_SERVICES_PATH,
+      status: "live",
+      description: "Broader settling support beyond tax filing.",
+    },
+    {
+      label: "Relocation agencies",
+      href: RELOCATION_AGENCIES_PATH,
+      status: "live",
+      description: "Full-package relocation coordination for arrivals and leavers.",
+    },
+    {
+      label: "Moving companies",
+      href: MOVING_COMPANIES_PATH,
+      status: "live",
+      description: "Domestic NL house moves, packing and local transport.",
+    },
+    {
+      label: "Removal companies",
+      href: REMOVAL_COMPANIES_PATH,
+      status: "live",
+      description: "International household removals for arrivals and leavers.",
+    },
+    {
+      label: "Housing platforms",
+      href: HOUSING_PLATFORMS_PATH,
+      status: "live",
+      description: "Listings and mid-term rentals while tax setup continues.",
+    },
+    {
+      label: "Recruitment agencies",
+      href: RECRUITMENT_AGENCIES_SERVICES_PATH,
+      status: "live",
+      description: "Provider directory when job offers drive tax complexity.",
+    },
+    {
+      label: "Accountants",
+      href: "/netherlands/services/accountants/",
+      status: "live",
+      description: "Bookkeeping, BTW, jaarrekening and ZZP admin — separate from tax advice.",
+    },
+    {
+      label: "Business consultants",
+      href: "/netherlands/services/business-consultants/",
+      status: "live",
+      description: "Strategy, KvK growth and operations consulting — separate from tax filing.",
+    },
     { label: "Bookkeeping", href: "/netherlands/services/bookkeeping/", status: "comingSoon" },
     { label: "Payroll services", href: "/netherlands/services/payroll-services/", status: "comingSoon" },
     { label: "Business registration", href: "/netherlands/services/business-registration/", status: "comingSoon" },
-    { label: "Immigration lawyers", href: "/netherlands/services/immigration-lawyers/", status: "live" },
-    { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live" },
   ] satisfies TaxAdvisorDirectoryLink[],
   faq: [
     { q: "Do expats need a tax advisor?", a: "Not always. Straightforward payroll situations may be manageable with official guidance and employer payroll, while cross-border or mixed-income cases often benefit from scoped help." },

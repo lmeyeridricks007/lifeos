@@ -1,0 +1,29 @@
+{
+  "id": "nl-living-day-trips-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/day-trips-netherlands/",
+    "slot": "recommended-providers-day-trips"
+  },
+  "variant": "cards",
+  "title": "Mobility options for same-day outings",
+  "intro": "Soft CTAs for established Dutch rail and complementary mobility options when a same-day outing needs tickets, an occasional shared car or a maintained bike. Confirm live products on each site — this block is not a ranking of destinations, routes or tour operators. Deepen OV planning on Weekend travel; deepen multi-stop driving on Road trips.",
+  "categoryOrder": ["mobility"],
+  "items": [
+    {
+      "providerId": "ns",
+      "reason": "Dutch Railways tickets and planners for classic same-day outs to station hubs and many coast towns — open Weekend travel for leisure OV planning depth."
+    },
+    {
+      "providerId": "greenwheels",
+      "reason": "Occasional shared cars when a same-day outing has a thin last mile or light gear needs — deepen fleets on Car sharing and multi-stop culture on Road trips."
+    },
+    {
+      "providerId": "swapfiets",
+      "reason": "Maintained subscription bike for nearby same-day loops around your base city — deepen fleets on Bike sharing."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing and availability with the provider directly. This is not travel, booking or product advice and not a ranking of destinations, routes or tour operators."
+}

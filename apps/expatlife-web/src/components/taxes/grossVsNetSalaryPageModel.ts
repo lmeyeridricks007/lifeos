@@ -183,7 +183,7 @@ export const grossVsNetSalaryPage = {
   ] satisfies GrossVsNetSalaryLink[],
   services: [
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Compare tax advisors and expat tax specialists." },
-    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "comingSoon", description: "Future directory for accounting support." },
+    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "live", description: "Bookkeeping, BTW filings and accounting support for expats." },
     { label: "Payroll specialists", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Future directory for payroll help." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Help with setup, housing and arrival tasks." },
   ] satisfies GrossVsNetSalaryLink[],

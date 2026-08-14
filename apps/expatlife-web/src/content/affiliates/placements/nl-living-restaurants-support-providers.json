@@ -1,0 +1,29 @@
+{
+  "id": "nl-living-restaurants-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/restaurants-netherlands/",
+    "slot": "recommended-providers-restaurants"
+  },
+  "variant": "cards",
+  "title": "Cook-at-home tools for non-restaurant nights",
+  "intro": "Soft CTAs for established grocery and meal-kit patterns when you are balancing sit-down restaurant nights with cooking at home. Confirm coverage, box prices and baskets on each site — this block is not a ranking of restaurants.",
+  "categoryOrder": ["groceries"],
+  "items": [
+    {
+      "providerId": "hellofresh",
+      "reason": "Meal-kit modelling for planned home dinners — useful when comparing predictable cook-at-home nights against restaurant evenings and takeaway."
+    },
+    {
+      "providerId": "picnic",
+      "reason": "App-based grocery delivery when you want kitchen staples ready for cook nights between restaurant outings."
+    },
+    {
+      "providerId": "albert-heijn",
+      "reason": "Full-service supermarket baseline and AH Bezorgen — useful when modelling weekly shop habits against dining-out spend."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance for cook-at-home modelling beside restaurant nights — HelloFresh first, then grocery alternatives — not pay-to-rank placement or a restaurant awards podium. Prices, fees and coverage change — treat any link as orientation, not a quote. This is not financial or dining advice and not a ranking of restaurants."
+}

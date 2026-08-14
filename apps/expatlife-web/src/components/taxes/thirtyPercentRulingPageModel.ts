@@ -157,7 +157,7 @@ export const thirtyPercentRulingPage = {
   ] satisfies ThirtyPercentRulingLink[],
   serviceLinks: [
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "comingSoon", description: "Future category for scoped tax help." },
-    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "comingSoon", description: "Future category for accounting support." },
+    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "live", description: "Bookkeeping, BTW filings and accounting support for expats." },
     { label: "Payroll specialists", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Future category for payroll setup and administration." },
     { label: "Immigration lawyers", href: "/netherlands/services/immigration-lawyers/", status: "live", description: "Immigration legal support where work status and relocation questions overlap." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Practical relocation support around arrival, housing and setup." },

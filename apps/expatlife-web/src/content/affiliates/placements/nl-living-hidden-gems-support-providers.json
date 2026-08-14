@@ -1,0 +1,29 @@
+{
+  "id": "nl-living-hidden-gems-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/hidden-gems-netherlands/",
+    "slot": "recommended-providers-hidden-gems"
+  },
+  "variant": "cards",
+  "title": "Mobility options for quiet days out",
+  "intro": "Soft CTAs for established Dutch rail and mobility options when a lesser-known neighbourhood, small-town or quiet-edge day needs a train hub, optional car share or a local bike. Confirm live products on each site — this block is not a ranking of hidden gems, attractions or tour operators. Deepen OV planning on the Weekend travel sibling guide.",
+  "categoryOrder": ["mobility"],
+  "items": [
+    {
+      "providerId": "ns",
+      "reason": "Dutch Railways tickets and planners when your quiet day starts from a station town — open Weekend travel for leisure OV planning depth."
+    },
+    {
+      "providerId": "greenwheels",
+      "reason": "Occasional shared cars when a small-town or nature-edge day has a thin last mile — keep four wheels optional."
+    },
+    {
+      "providerId": "swapfiets",
+      "reason": "Maintained subscription bike for neighbourhood hops and station-to-spot last mile — deepen fleets on Bike sharing."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing and availability with the provider directly. This is not travel, booking or product advice and not a ranking of hidden gems, attractions or tour operators."
+}

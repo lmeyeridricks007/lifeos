@@ -836,6 +836,18 @@ export const dutchDirectnessAtWorkPage = {
       description: "Job search, recruiters and interview context.",
     },
     {
+      label: "Interview tips Netherlands",
+      href: "/netherlands/jobs/interview-tips-netherlands/",
+      status: "live",
+      description: "Dutch interview culture where directness shows up in hiring conversations.",
+    },
+    {
+      label: "CV Netherlands",
+      href: "/netherlands/jobs/cv-netherlands/",
+      status: "live",
+      description: "Dutch CV and application norms before interviews begin.",
+    },
+    {
       label: "Employee rights",
       href: EMPLOYEE_RIGHTS_NETHERLANDS_PATH,
       status: "live",

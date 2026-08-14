@@ -388,10 +388,20 @@ export const rentalAgenciesCategoryPage: ServiceCategoryPageData = {
 
   relatedGuides: [
     {
-      title: "Housing guides",
+      title: "Housing & agent directories",
       links: [
         { label: "Housing platforms", href: "/netherlands/services/housing-platforms/" },
+        { label: "Estate agents", href: "/netherlands/services/estate-agents/" },
+        { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/" },
         { label: "Relocation services", href: "/netherlands/services/relocation-services/" },
+      ],
+    },
+    {
+      title: "Moving & storage",
+      links: [
+        { label: "Moving companies", href: "/netherlands/services/moving-companies/" },
+        { label: "Removal companies", href: "/netherlands/services/removal-companies/" },
+        { label: "Storage companies", href: "/netherlands/services/storage-companies/" },
         { label: "Moving with family", href: "/netherlands/moving-to-netherlands-with-family/" },
       ],
     },
@@ -420,15 +430,18 @@ export const rentalAgenciesCategoryPage: ServiceCategoryPageData = {
         { label: "All services", href: "/netherlands/services/" },
         { label: "Housing platforms", href: "/netherlands/services/housing-platforms/" },
         { label: "Relocation agencies", href: "/netherlands/services/relocation-agencies/" },
-        { label: "Temporary accommodation (planned)", href: "/netherlands/services/temporary-accommodation/" },
       ],
     },
   ],
 
   relatedCategories: [
     { label: "Housing platforms", href: "/netherlands/services/housing-platforms/" },
+    { label: "Estate agents", href: "/netherlands/services/estate-agents/" },
+    { label: "Storage companies", href: "/netherlands/services/storage-companies/" },
+    { label: "Moving companies", href: "/netherlands/services/moving-companies/" },
+    { label: "Removal companies", href: "/netherlands/services/removal-companies/" },
+    { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/" },
     { label: "Relocation agencies", href: "/netherlands/services/relocation-agencies/" },
-    { label: "Visa consultants", href: "/netherlands/services/visa-consultants/" },
   ],
 
   tools: [

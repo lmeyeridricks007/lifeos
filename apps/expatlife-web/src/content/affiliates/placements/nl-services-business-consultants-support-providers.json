@@ -1,0 +1,70 @@
+{
+  "id": "nl-services-business-consultants-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/business-consultants/",
+    "slot": "business-consultant-related-support"
+  },
+  "variant": "cards",
+  "title": "Providers expats contact when strategy and setup meet tax, admin and planning",
+  "intro": "Business consulting often overlaps with bookkeeping, tax filings, banking and wealth planning. These providers help expats move from strategy research to a real conversation about Dutch admin and money setup. Treat this as soft discovery — not a ranking of business consultants, and not tax, legal or financial advice.",
+  "categoryOrder": ["tax", "services", "banking"],
+  "items": [
+    {
+      "providerId": "blue-umbrella",
+      "reason": "Dutch tax filing and administration support useful when market-entry or KvK setup work hits Belastingdienst and bookkeeping handoffs."
+    },
+    {
+      "providerId": "broadstreet",
+      "reason": "Tax, accountancy and cross-border support for entrepreneurs comparing setup depth beyond a single strategy workshop."
+    },
+    {
+      "providerId": "taxsavers",
+      "reason": "Dutch tax return, VAT and self-employed filing support when first-year business setup creates annual admin obligations."
+    },
+    {
+      "providerId": "black-swan-capital-europe",
+      "reason": "Expat-focused financial planning when growth consulting raises pensions, investments and cross-border money questions."
+    },
+    {
+      "providerId": "octas-capital",
+      "reason": "Wealth management and financial planning for international founders comparing longer-term structure beside operations advice."
+    },
+    {
+      "providerId": "holland-financial-centre",
+      "reason": "Independent financial advice useful when strategy work overlaps with household and business planning conversations."
+    },
+    {
+      "providerId": "vwp-wealth-planning",
+      "reason": "Wealth planning with English-language materials when founder income and retirement projections enter the shortlist."
+    },
+    {
+      "providerId": "finex-wealth-management",
+      "reason": "Wealth management for international professionals and entrepreneurs with higher-complexity cross-border files."
+    },
+    {
+      "providerId": "expat-investment-advice",
+      "reason": "Expat-oriented investment and planning conversations when English-first guidance is a priority beside business setup."
+    },
+    {
+      "providerId": "wise",
+      "reason": "Partner option for low-cost international transfers and multi-currency accounts — often relevant when market entry spans more than one country."
+    },
+    {
+      "providerId": "abn-amro",
+      "reason": "Partner bank pathway useful when consulting work leads into business banking and account setup comparisons."
+    },
+    {
+      "providerId": "ing",
+      "reason": "Partner bank useful for comparing business and personal banking context alongside setup and growth support."
+    }
+  ],
+  "registryProviders": {
+    "categories": ["tax-advisors", "financial-advisors", "accountants", "relocation-services", "banks"],
+    "limit": 6,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat business-consultant discovery and adjacent setup support, not pay-to-rank. This is not a ranking of business consultants and not tax, legal or financial advice. Confirm scope, credentials, fees and terms directly with each provider."
+}

@@ -1,3 +1,5 @@
+import { HIKING_NETHERLANDS_PATH } from "@/src/components/living/weekend-trips-netherlands/weekendTripsNetherlandsPageModel";
+
 export const MAKING_DUTCH_FRIENDS_PATH = "/netherlands/life/making-dutch-friends/" as const;
 export const LIFE_HUB_PATH = "/netherlands/life/" as const;
 export const DUTCH_CULTURE_PATH = "/netherlands/life/dutch-culture/" as const;
@@ -872,6 +874,7 @@ export const makingDutchFriendsPage = {
     { label: "Dutch Humour Explained", href: "/netherlands/life/dutch-humour/", description: "Dry wit, sarcasm and teasing in everyday conversations.", status: "live" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Everyday etiquette, greetings and social expectations.", status: "live" },
     { label: "Dating in the Netherlands", href: DATING_NETHERLANDS_PATH, description: "Meeting people and activity-first social life.", status: "live" },
+    { label: "Hiking", href: HIKING_NETHERLANDS_PATH, description: "Walking culture and outdoor habits for activity-first friendships.", status: "live" },
     { label: "Learning Dutch", href: LANGUAGE_LEARNING_PATH, description: "Language hub for courses and municipal programs.", status: "comingSoon" },
     { label: "Dutch Workplace Culture", href: DUTCH_WORKPLACE_CULTURE_PATH, description: "Colleague relationships and after-work borrels.", status: "live" },
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, description: "Compare cities for international life.", status: "live" },
@@ -881,7 +884,7 @@ export const makingDutchFriendsPage = {
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Broader integration and neighbourhood life.", status: "live" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Etiquette for visits, neighbours and direct communication.", status: "live" },
     { label: "Dating in the Netherlands", href: DATING_NETHERLANDS_PATH, description: "Activity-first routes for meeting people.", status: "live" },
-    { label: "Learning Dutch", href: LANGUAGE_LEARNING_PATH, description: "Phrases and courses for daily life.", status: "comingSoon" },
+    { label: "Hiking", href: HIKING_NETHERLANDS_PATH, description: "Try walking groups and outdoor weekends as social glue.", status: "live" },
     { label: "Dutch Cities Guide", href: CITIES_HUB_PATH, description: "Compare social life by city.", status: "live" },
   ] satisfies LifeGuideLink[],
   exploreNextTips: [
@@ -889,6 +892,7 @@ export const makingDutchFriendsPage = {
     "Broader integration → Community Basics after this guide.",
     "Etiquette context → Dutch Social Norms.",
     "Meeting people romantically → Dating guide.",
+    "Outdoor activity-first → Hiking.",
   ],
   officialSources: [
     {

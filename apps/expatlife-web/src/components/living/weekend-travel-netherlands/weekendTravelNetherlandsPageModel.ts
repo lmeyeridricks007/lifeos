@@ -13,6 +13,17 @@ import {
   TRAMS_NETHERLANDS_PATH,
   WEEKEND_TRAVEL_NETHERLANDS_PATH,
 } from "@/src/components/living/ov-chipkaart-netherlands/ovChipkaartNetherlandsPageModel";
+import {
+  BEACH_TOWNS_NETHERLANDS_PATH,
+  CASTLES_NETHERLANDS_PATH,
+  DAY_TRIPS_NETHERLANDS_PATH,
+  HIDDEN_GEMS_NETHERLANDS_PATH,
+  HIKING_NETHERLANDS_PATH,
+  MUSEUMS_NETHERLANDS_PATH,
+  NATIONAL_PARKS_NETHERLANDS_PATH,
+  ROAD_TRIPS_NETHERLANDS_PATH,
+  WEEKEND_TRIPS_NETHERLANDS_PATH,
+} from "@/src/components/living/weekend-trips-netherlands/weekendTripsNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 /** Re-export cluster PATH constants from the OV-chipkaart lead model (single source of truth). */
@@ -416,10 +427,11 @@ export const weekendTravelNetherlandsPage = {
     subtitle:
       "Soft CTAs for established Dutch rail and mobility options when weekend trips fit your month. This block is not a ranking of destinations, apps or operators.",
     boundaryNote:
-      "Editorial sections above are separate from this block. Ordering reflects relevance for a leisure weekend — not pay-to-rank placement unless a link is explicitly labelled as sponsored. Prefer NS trains for riding depth and Train discounts for product math.",
+      "Editorial sections above are separate from this block. Ordering reflects relevance for a leisure weekend — not pay-to-rank placement unless a link is explicitly labelled as sponsored. Prefer Weekend trips for destination ideas, NS trains for riding depth and Train discounts for product math.",
     placementId: "nl-living-weekend-travel-support-providers",
     analyticsPageContext: "weekend-travel-netherlands-recommended-options",
     categoryLinks: [
+      { href: WEEKEND_TRIPS_NETHERLANDS_PATH, label: "Weekend trips" },
       { href: NS_TRAINS_NETHERLANDS_PATH, label: "NS trains" },
       { href: TRAIN_DISCOUNTS_NETHERLANDS_PATH, label: "Train discounts" },
       { href: GETTING_AROUND_PATH, label: "Getting around" },
@@ -569,14 +581,40 @@ export const weekendTravelNetherlandsPage = {
     },
   ],
   relatedGuidesTips: [
+    "Destination ideas & weekend lifestyle → Weekend trips.",
     "How to ride & ticket types → NS trains.",
     "Discount product math → Train discounts.",
+    "Nationale Parken orientation → National parks.",
+    "Walking culture → Hiking.",
+    "Museumkaart culture → Museums.",
+    "Quieter places → Hidden gems.",
+    "Coast weekends → Beach towns.",
+    "Historic houses → Castles.",
+    "Car multi-stop leisure → Road trips.",
+    "Same-day outs (lifestyle lane) → Day trips.",
     "Shared bikes / OV-fiets → Bike sharing.",
     "Occasional four wheels → Car sharing.",
     "Wider mobility → Getting around.",
-    "Contactless PAYG → OVpay.",
   ],
   relatedGuides: [
+    {
+      label: "Weekend trips",
+      href: WEEKEND_TRIPS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Destination ideas and weekend lifestyle planning — where to go.",
+    },
+    {
+      label: "Day trips",
+      href: DAY_TRIPS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Same-day outing patterns — lifestyle lane; this page owns OV how-to.",
+    },
+    {
+      label: "Road trips",
+      href: ROAD_TRIPS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Car multi-stop leisure driving — when OV is not the plan.",
+    },
     {
       label: "NS trains",
       href: NS_TRAINS_NETHERLANDS_PATH,
@@ -588,6 +626,42 @@ export const weekendTravelNetherlandsPage = {
       href: TRAIN_DISCOUNTS_NETHERLANDS_PATH,
       status: "live",
       description: "Weekend Voordeel and NS discount product math.",
+    },
+    {
+      label: "National parks",
+      href: NATIONAL_PARKS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Nationale Parken orientation for nature weekends.",
+    },
+    {
+      label: "Hiking",
+      href: HIKING_NETHERLANDS_PATH,
+      status: "live",
+      description: "Walking and hiking culture for leisure days.",
+    },
+    {
+      label: "Museums",
+      href: MUSEUMS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Museumkaart culture for city and rainy getaways.",
+    },
+    {
+      label: "Hidden gems",
+      href: HIDDEN_GEMS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Quieter towns and neighbourhood day patterns.",
+    },
+    {
+      label: "Beach towns",
+      href: BEACH_TOWNS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Coastal towns and beach-day culture — OV last mile here.",
+    },
+    {
+      label: "Castles",
+      href: CASTLES_NETHERLANDS_PATH,
+      status: "live",
+      description: "Castles and historic houses — station-to-estate hops.",
     },
     {
       label: "Getting around",
@@ -627,11 +701,13 @@ export const weekendTravelNetherlandsPage = {
     },
   ] satisfies TransportLink[],
   transportHubTips: [
-    "Weekend travel is the leisure-planning guide in the Public Transport fares & leisure continuation.",
+    "Weekend travel is the leisure OV how-to in Public transport.",
+    "Weekend trips (Weekend & lifestyle) owns destination ideas.",
+    "Day trips owns same-day lifestyle patterns; Road trips owns car multi-stop.",
+    "National parks and Hiking deepen nature weekends.",
     "NS trains deepens how to ride and ticket types.",
     "Train discounts deepens Weekend Voordeel and product math.",
     "Bike sharing and Car sharing cover last-mile options.",
-    "Getting around remains the wider mobility overview.",
   ],
   transportHubCards: [
     {
@@ -639,6 +715,24 @@ export const weekendTravelNetherlandsPage = {
       href: WEEKEND_TRAVEL_NETHERLANDS_PATH,
       status: "live",
       description: "Leisure rail weekends — you are here.",
+    },
+    {
+      label: "Weekend trips",
+      href: WEEKEND_TRIPS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Destination ideas and weekend lifestyle.",
+    },
+    {
+      label: "Day trips",
+      href: DAY_TRIPS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Same-day outing lifestyle patterns.",
+    },
+    {
+      label: "Road trips",
+      href: ROAD_TRIPS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Car multi-stop leisure driving.",
     },
     {
       label: "Train discounts",
@@ -664,20 +758,32 @@ export const weekendTravelNetherlandsPage = {
       status: "live",
       description: "Shared bikes and OV-fiets last mile.",
     },
-    {
-      label: "OVpay",
-      href: OVPAY_NETHERLANDS_PATH,
-      status: "live",
-      description: "Contactless bank-card and phone travel.",
-    },
-    {
-      label: "OV-chipkaart",
-      href: OV_CHIPKAART_NETHERLANDS_PATH,
-      status: "live",
-      description: "Personal travel card setup and products.",
-    },
   ] satisfies TransportLink[],
   exploreNextCards: [
+    {
+      label: "Day trips",
+      href: DAY_TRIPS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Same-day outing patterns after you know OV basics?",
+    },
+    {
+      label: "Weekend trips",
+      href: WEEKEND_TRIPS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Need destination ideas and weekend vibe planning?",
+    },
+    {
+      label: "Road trips",
+      href: ROAD_TRIPS_NETHERLANDS_PATH,
+      status: "live",
+      description: "When a shared car multi-stop beats rail?",
+    },
+    {
+      label: "Beach towns",
+      href: BEACH_TOWNS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Planning a coast day and need stretch orientation?",
+    },
     {
       label: "Train discounts",
       href: TRAIN_DISCOUNTS_NETHERLANDS_PATH,
@@ -685,42 +791,19 @@ export const weekendTravelNetherlandsPage = {
       description: "Need Weekend Voordeel or Dal product math?",
     },
     {
-      label: "NS trains",
-      href: NS_TRAINS_NETHERLANDS_PATH,
+      label: "Castles",
+      href: CASTLES_NETHERLANDS_PATH,
       status: "live",
-      description: "Need riding, platforms and ticket-type depth?",
-    },
-    {
-      label: "Bike sharing",
-      href: BIKE_SHARING_NETHERLANDS_PATH,
-      status: "live",
-      description: "Need OV-fiets or shared bikes for last mile?",
-    },
-    {
-      label: "Car sharing",
-      href: CAR_SHARING_NETHERLANDS_PATH,
-      status: "live",
-      description: "Need occasional four wheels for a thin last mile?",
-    },
-    {
-      label: "Getting around",
-      href: GETTING_AROUND_PATH,
-      status: "live",
-      description: "Widen the model to multimodal weeks?",
-    },
-    {
-      label: "OVpay",
-      href: OVPAY_NETHERLANDS_PATH,
-      status: "live",
-      description: "Need contactless taps for rare leisure days?",
+      description: "Heading to castles and need visit-culture depth?",
     },
   ] satisfies TransportLink[],
   exploreNextTips: [
+    "Same-day lifestyle → Day trips.",
+    "Destination ideas → Weekend trips.",
+    "Car multi-stop → Road trips.",
+    "Coast → Beach towns.",
     "Product math → Train discounts.",
-    "Riding depth → NS trains.",
-    "Last-mile bikes → Bike sharing.",
-    "Occasional car → Car sharing.",
-    "Modes and apps → Getting around.",
+    "Historic houses → Castles.",
   ],
   officialSources: [
     {

@@ -1,0 +1,55 @@
+{
+  "id": "nl-services-notaries-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/notaries/",
+    "slot": "notary-related-support"
+  },
+  "variant": "cards",
+  "title": "Housing search and mortgage support expats compare alongside a notaris",
+  "intro": "Working with a Dutch **notaris** on a purchase deed often overlaps with **listing search** and **mortgage advice**. These listings are soft discovery for related support — **not a ranking of notaries**, and not fee or deed guarantees. Confirm KNB/notaris credentials, fee estimates and attendance rules directly with the notary office.",
+  "categoryOrder": ["housing", "banking", "services"],
+  "items": [
+    {
+      "providerId": "expat-mortgages",
+      "reason": "Expat-focused mortgage brokerage useful when purchase completion depends on lender timing beside the notary diary."
+    },
+    {
+      "providerId": "viisi-expats",
+      "reason": "Mortgage-advice brand with expat-specific information for buyers coordinating finance with levering and hypotheekakte."
+    },
+    {
+      "providerId": "hanno",
+      "reason": "Digital-first mortgage advice option when buyers prefer online consultations next to notary prep calls."
+    },
+    {
+      "providerId": "mister-mortgage",
+      "reason": "Broker-style mortgage support for Dutch home buyers comparing English-language guidance beside notary completion."
+    },
+    {
+      "providerId": "funda",
+      "reason": "Primary Dutch property search platform buyers use before instructing a makelaar and later completing with a notaris."
+    },
+    {
+      "providerId": "pararius",
+      "reason": "Rental listings useful if you are bridging with a rental while purchase deed timing is still open."
+    },
+    {
+      "providerId": "housinganywhere",
+      "reason": "Furnished mid-term rentals when purchase completion and move-in dates do not align."
+    }
+  ],
+  "registryProviders": {
+    "categories": [
+      "housing-platforms",
+      "mortgage-advisors",
+      "relocation-services",
+      "relocation-agencies"
+    ],
+    "limit": 6,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat notary discovery and related purchase support, not pay-to-rank. This is not a ranking of notaries — and not legal, mortgage or property advice. Verify credentials, fees and attendance rules directly with licensed notaries and advisers."
+}

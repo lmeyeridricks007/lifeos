@@ -2,6 +2,7 @@ export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as 
 export const ZZP_AFFILIATE_PLACEMENT_ID = "nl-business-zzp-support-providers" as const;
 
 export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
+export const STARTING_CONSULTANCY_NETHERLANDS_PATH = "/netherlands/jobs/starting-consultancy-netherlands/" as const;
 export const CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands/" as const;
 export const BUSINESS_HUB_PATH = "/netherlands/business/" as const;
 export const STARTING_BUSINESS_NETHERLANDS_PATH = "/netherlands/business/starting-a-business-netherlands/" as const;
@@ -663,6 +664,7 @@ export const zzpNetherlandsPage = {
   relatedGuides: [
     { label: "Contractor vs Employee", href: CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH, status: "live", description: "Compare employment and ZZP models before choosing your work structure." },
     { label: "Freelancing Netherlands", href: FREELANCING_NETHERLANDS_PATH, status: "live", description: "Broader freelance guide — clients, cities, visas and pipeline." },
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Consultancy practice design when ZZP is your advisory business model." },
     { label: "Starting a Business Netherlands", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "live", description: "Cornerstone entrepreneurship guide beyond solo ZZP." },
     { label: "Expat Taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation when ZZP income joins other streams." },
     { label: "Foreign Income Netherlands", href: FOREIGN_INCOME_NETHERLANDS_PATH, status: "live", description: "Cross-border clients and income outside the Netherlands." },
@@ -670,11 +672,13 @@ export const zzpNetherlandsPage = {
   ] satisfies ZzpLink[],
   relatedGuideReadingOrder: [
     "Read freelancing guide for full freelance lifecycle beyond ZZP definition.",
+    "Open Starting consultancy when building an advisory practice on ZZP plumbing.",
     "Open expat taxes and foreign income before scaling international clients.",
     "Use financial advisors when buffers, pension gaps or insurance add complexity.",
   ],
   relatedGuideScenarios: [
     { profile: "Just registered", scenario: "KvK done; first Dutch client next week", whatToCheck: "Freelancing guide invoicing + expat taxes for set-asides." },
+    { profile: "Consultancy niche", scenario: "Advisory offer with day rates and SOWs", whatToCheck: "Starting consultancy for practice design; this page for registration depth." },
     { profile: "Scaling EU clients", scenario: "Three new countries in pipeline", whatToCheck: "Foreign income and double taxation guides + accountant." },
   ] satisfies ZzpScenarioRow[],
   serviceCategories: [
@@ -740,29 +744,29 @@ export const zzpNetherlandsPage = {
   ] satisfies ZzpScenarioRow[],
   ecosystemLinks: [
     { label: "Freelancing guide", href: FREELANCING_NETHERLANDS_PATH, status: "live", description: "Full freelance lifecycle — clients, cities, mistakes and services." },
-    { label: "Business hub", href: BUSINESS_HUB_PATH, status: "comingSoon", description: "Future entrepreneurship cluster." },
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Advisory practice setup on shared ZZP plumbing." },
     { label: "Expat taxes", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation for international residents." },
     { label: "Tax advisors directory", href: TAX_ADVISORS_PATH, status: "live", description: "Find tax support for ZZP and cross-border work." },
     { label: "Accountants directory", href: ACCOUNTANTS_PATH, status: "live", description: "Bookkeeping and filing support for self-employed professionals." },
   ] satisfies ZzpLink[],
   exploreNextCards: [
     { label: "Freelancing Guide", href: FREELANCING_NETHERLANDS_PATH, status: "live", description: "Broader freelance orientation beyond ZZP definition." },
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Practice design when consultancy is your ZZP lane." },
     { label: "Starting a Business", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "live", description: "Cornerstone entrepreneurship guide for expats." },
     { label: "Expat Taxes", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax planning when ZZP joins other income." },
     { label: "Foreign Income", href: FOREIGN_INCOME_NETHERLANDS_PATH, status: "live", description: "Cross-border client and income context." },
-    { label: "Financial Advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Buffers and pension planning for ZZP income." },
   ] satisfies ZzpLink[],
   exploreNextTips: [
     "Open freelancing guide if you need client pipeline and city context.",
+    "Open Starting consultancy when niche, rates and SOWs are the next decision.",
     "Read expat taxes before your first full ZZP tax year.",
     "Use foreign income guide when more than half of revenue is cross-border.",
-    "Browse financial advisors when rate math must cover pension and buffers.",
   ],
   planningLinks: [
     { label: "Freelancing guide", href: FREELANCING_NETHERLANDS_PATH, description: "Full freelance lifecycle for expats in the Netherlands." },
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, description: "Advisory practice design on ZZP plumbing." },
     { label: "Expat taxes guide", href: EXPAT_TAXES_NETHERLANDS_PATH, description: "Tax orientation when ZZP income joins employment or foreign assets." },
     { label: "Foreign income guide", href: FOREIGN_INCOME_NETHERLANDS_PATH, description: "Cross-border clients and income streams." },
-    { label: "Financial advisors", href: FINANCIAL_ADVISORS_PATH, description: "Buffers, pension gaps and insurance for variable income." },
   ] satisfies ZzpLink[],
 } as const;
 

@@ -85,10 +85,6 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
     title: "Real Estate Agents",
     section: "services",
   },
-  "/netherlands/services/international-schools/": {
-    title: "International Schools",
-    section: "services",
-  },
   "/netherlands/housing-netherlands/": {
     title: "Housing in the Netherlands (guide)",
     section: "guides",
@@ -194,6 +190,21 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   },
   "/netherlands/services/expat-housing-agencies/": { title: "Expat housing agencies", section: "services" },
   "/netherlands/services/moving-companies/": { title: "Moving companies", section: "services" },
+  "/netherlands/services/removal-companies/": { title: "Removal companies", section: "services" },
+  "/netherlands/services/storage-companies/": { title: "Storage companies", section: "services" },
+  "/netherlands/services/pet-relocation-companies/": { title: "Pet relocation companies", section: "services" },
+  "/netherlands/services/cleaning-companies/": { title: "Cleaning companies", section: "services" },
+  "/netherlands/services/handymen/": { title: "Handymen", section: "services" },
+  "/netherlands/services/estate-agents/": { title: "Estate agents", section: "services" },
+  "/netherlands/services/notaries/": { title: "Notaries", section: "services" },
+  "/netherlands/services/insurance-brokers/": { title: "Insurance brokers", section: "services" },
+  "/netherlands/services/accountants/": { title: "Accountants", section: "services" },
+  "/netherlands/services/business-consultants/": { title: "Business consultants", section: "services" },
+  "/netherlands/services/internet-providers/": { title: "Internet providers", section: "services" },
+  "/netherlands/services/energy-providers/": { title: "Energy providers", section: "services" },
+  "/netherlands/services/phone-providers/": { title: "Phone providers", section: "services" },
+  "/netherlands/services/international-schools/": { title: "International schools", section: "services" },
+  "/netherlands/services/daycare-providers/": { title: "Daycare providers", section: "services" },
   "/netherlands/services/international-shipping/": { title: "International shipping", section: "services" },
   "/netherlands/services/work-permit-services/": { title: "Work permit services", section: "services" },
   /** Work cluster (planned guides — nav surfaces as Soon until promoted to live). Tool routes use `PLACEHOLDER_TOOL_PATHS` from tools registry. */
@@ -272,6 +283,39 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/services/mortgage-advisors/",
   /** Live App Router service directory — financial advisor discovery for expats. */
   "/netherlands/services/financial-advisors/",
+  /** Live App Router service directory — recruitment agency discovery for expats (scheduled go-live). */
+  "/netherlands/services/recruitment-agencies/",
+  /** Live App Router service directory — domestic moving company discovery for expats (scheduled go-live). */
+  "/netherlands/services/moving-companies/",
+  /** Live App Router service directory — international removal company discovery for expats (scheduled go-live). */
+  "/netherlands/services/removal-companies/",
+  /** Live App Router service directory — self-storage / interim furniture storage discovery for expats (scheduled go-live). */
+  "/netherlands/services/storage-companies/",
+  /** Live App Router service directory — pet relocation / flight-pet logistics discovery for expats (scheduled go-live). */
+  "/netherlands/services/pet-relocation-companies/",
+  /** Live App Router service directory — domestic / end-of-tenancy cleaning discovery for expats (scheduled go-live). */
+  "/netherlands/services/cleaning-companies/",
+  /** Live App Router service directory — handyman / klusjesman discovery for expats (scheduled go-live). */
+  "/netherlands/services/handymen/",
+  /** Live App Router service directory — estate agent / makelaar discovery for expats (scheduled go-live). */
+  "/netherlands/services/estate-agents/",
+  /** Live App Router service directory — notary / notaris discovery for expats (scheduled go-live). */
+  "/netherlands/services/notaries/",
+  /** Live App Router service directory — insurance broker / adviseur discovery for expats (scheduled go-live). */
+  "/netherlands/services/insurance-brokers/",
+  /** Live App Router service directory — accountant / administratiekantoor discovery for expats (scheduled go-live). */
+  "/netherlands/services/accountants/",
+  /** Live App Router service directory — business consultant / strategy discovery for expats (scheduled go-live). */
+  "/netherlands/services/business-consultants/",
+  /** Live App Router service directory — fixed broadband / ISP discovery for expats (scheduled go-live). */
+  "/netherlands/services/internet-providers/",
+  /** Live App Router service directory — electricity/gas supplier discovery for expats (scheduled go-live). */
+  "/netherlands/services/energy-providers/",
+  /** Live App Router service directory — mobile / SIM / eSIM provider discovery for expats (scheduled go-live). */
+  "/netherlands/services/phone-providers/",
+  /** Live App Router service directory — international school provider discovery for expats (scheduled go-live). */
+  "/netherlands/services/international-schools/",
+  "/netherlands/services/daycare-providers/",
   "/netherlands/cities/",
   "/netherlands/cities/best-cities-for-expats/",
   "/netherlands/cities/cheapest-cities-for-expats/",
@@ -361,6 +405,48 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/living/train-discounts-netherlands/",
   /** Flagship living guide — Weekend travel for expats (Public Transport leisure continuation). */
   "/netherlands/living/weekend-travel-netherlands/",
+  /** Flagship living guide — Weekend trips for expats (Weekend & lifestyle cluster). */
+  "/netherlands/living/weekend-trips-netherlands/",
+  /** Flagship living guide — National parks for expats (Weekend & lifestyle cluster). */
+  "/netherlands/living/national-parks-netherlands/",
+  /** Flagship living guide — Hiking for expats (Weekend & lifestyle cluster). */
+  "/netherlands/living/hiking-netherlands/",
+  /** Flagship living guide — Museums for expats (Weekend & lifestyle cluster). */
+  "/netherlands/living/museums-netherlands/",
+  /** Flagship living guide — Hidden gems for expats (Weekend & lifestyle cluster). */
+  "/netherlands/living/hidden-gems-netherlands/",
+  /** Flagship living guide — Beach towns for expats (Weekend & lifestyle cluster). */
+  "/netherlands/living/beach-towns-netherlands/",
+  /** Flagship living guide — Castles for expats (Weekend & lifestyle cluster). */
+  "/netherlands/living/castles-netherlands/",
+  /** Flagship living guide — Road trips for expats (Weekend & lifestyle cluster). */
+  "/netherlands/living/road-trips-netherlands/",
+  /** Flagship living guide — Day trips for expats (Weekend & lifestyle cluster). */
+  "/netherlands/living/day-trips-netherlands/",
+  /** Flagship living guide — Dutch supermarket system (Food cluster). */
+  "/netherlands/living/dutch-supermarkets/",
+  /** Flagship living guide — Best supermarket fit decision guide (Food cluster). */
+  "/netherlands/living/best-supermarkets-netherlands/",
+  /** Flagship living guide — Cheap groceries money-saving tactics (Food cluster). */
+  "/netherlands/living/cheap-groceries-netherlands/",
+  /** Flagship living guide — International / specialty product sourcing (Food cluster). */
+  "/netherlands/living/international-supermarkets-netherlands/",
+  /** Flagship living guide — Asian toko / supermarket specialty depth (Food cluster). */
+  "/netherlands/living/asian-supermarkets-netherlands/",
+  /** Flagship living guide — Turkish / Middle-Eastern specialty grocery depth (Food cluster). */
+  "/netherlands/living/turkish-supermarkets-netherlands/",
+  /** Flagship living guide — Indian / South Asian specialty grocery depth (Food cluster). */
+  "/netherlands/living/indian-supermarkets-netherlands/",
+  /** Flagship living guide — South African specialty shops / comfort-food depth (Food cluster). */
+  "/netherlands/living/south-african-shops-netherlands/",
+  /** Flagship living guide — Meal-kit subscriptions (Food cluster). */
+  "/netherlands/living/meal-kits-netherlands/",
+  /** Flagship living guide — Food delivery / takeaway + grocery delivery (Food cluster). */
+  "/netherlands/living/food-delivery-netherlands/",
+  /** Flagship living guide — Restaurants / sit-down dining culture (Food cluster). */
+  "/netherlands/living/restaurants-netherlands/",
+  /** Flagship living guide — Tipping etiquette (Food cluster). */
+  "/netherlands/living/tipping-netherlands/",
   "/netherlands/practical-life/digid-netherlands/",
   "/netherlands/practical-life/government-portals-netherlands/",
   "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
@@ -476,6 +562,14 @@ const EXTRA_LIVE_PATHS = [
   /** Live App Router guide — holiday allowance (vakantiegeld) for expats (Jobs & salaries cluster). */
   "/netherlands/jobs/holiday-allowance-netherlands/",
   "/netherlands/jobs/finding-jobs-netherlands/",
+  "/netherlands/jobs/recruitment-agencies-netherlands/",
+  "/netherlands/jobs/english-speaking-jobs-netherlands/",
+  "/netherlands/jobs/remote-work-netherlands/",
+  "/netherlands/jobs/cv-netherlands/",
+  "/netherlands/jobs/cover-letter-netherlands/",
+  "/netherlands/jobs/linkedin-netherlands/",
+  "/netherlands/jobs/networking-netherlands/",
+  "/netherlands/jobs/interview-tips-netherlands/",
   "/netherlands/jobs/employment-contract-netherlands/",
   "/netherlands/jobs/probation-period-netherlands/",
   "/netherlands/jobs/notice-period-netherlands/",
@@ -491,6 +585,7 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/culture/making-dutch-friends/",
   "/netherlands/culture/dutch-holidays-and-traditions/",
   "/netherlands/jobs/freelancing-netherlands/",
+  "/netherlands/jobs/starting-consultancy-netherlands/",
   /** Legacy Work-cluster URL (301 → canonical workplace culture guide). */
   "/netherlands/work/work-culture-netherlands/",
   /** Live App Router guide — contractor vs employee comparison (Jobs & salaries cluster). */

@@ -281,7 +281,7 @@ export const taxesHubPage = {
       status: "live",
       description: "Compare tax advisors, expat accountants and international tax specialists.",
     },
-    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "comingSoon", description: "Accounting support for returns, business or cross-border situations." },
+    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "live", description: "Accounting support for returns, business or cross-border situations." },
     { label: "Payroll providers", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Employer and business payroll support." },
     { label: "Bookkeeping services", href: "/netherlands/services/bookkeeping/", status: "comingSoon", description: "Records and bookkeeping for freelancers and small businesses." },
     { label: "Business setup services", href: "/netherlands/services/business-registration/", status: "comingSoon", description: "Registration and setup help for entrepreneurs." },

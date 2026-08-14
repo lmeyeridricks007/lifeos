@@ -55,9 +55,11 @@ import {
   type JobPlatform,
   type RecruitmentAgency,
   COST_OF_LIVING_CALCULATOR_PATH,
+  CV_NETHERLANDS_PATH,
   DUTCH_SALARY_NET_CALCULATOR_PATH,
   EXPAT_SALARY_NETHERLANDS_PATH,
   FINDING_JOBS_NETHERLANDS_PATH,
+  INTERVIEW_TIPS_NETHERLANDS_PATH,
 } from "./findingJobsNetherlandsPageModel";
 import { buildTrackedOutboundLink, trackedOutboundAnchorProps } from "@/lib/analytics/tracked-outbound";
 
@@ -838,7 +840,7 @@ export function FindingJobsNetherlandsView() {
 
             <section id="cv-culture" className={sectionClass}>
               <SectionIntro eyebrow="Applications" title={page.cvCultureHeading}>
-                <p>Dutch hiring culture often favours concise CVs, direct communication and realistic salary expectations.</p>
+                <p>Dutch hiring culture often favours concise CVs, direct communication and realistic salary expectations. This section is a short orientation — use the dedicated CV and interview guides for deep dives.</p>
               </SectionIntro>
               <div className="mt-6 grid gap-4 lg:grid-cols-3">
                 <BulletPanel title="CV and application culture" items={page.cvCulturePoints} />
@@ -846,6 +848,26 @@ export function FindingJobsNetherlandsView() {
                 <BulletPanel title={page.interviewCulture.heading} items={page.interviewCulture.points} />
               </div>
               <ChecklistBlock title="Application checklist before you submit" items={page.applicationChecklist} columns={2} className="mt-6" />
+              <div className={cn(sectionStackClass, "mt-6 grid gap-4 sm:grid-cols-2")}>
+                <LinkCard
+                  item={{
+                    label: "CV Netherlands",
+                    href: CV_NETHERLANDS_PATH,
+                    status: "live",
+                    description: "Dutch CV length, photo norms, motivation letter and LinkedIn alignment.",
+                  }}
+                  iconIndex={0}
+                />
+                <LinkCard
+                  item={{
+                    label: "Interview Tips Netherlands",
+                    href: INTERVIEW_TIPS_NETHERLANDS_PATH,
+                    status: "live",
+                    description: "Dutch interview culture, preparation, questions, remote vs onsite and follow-up.",
+                  }}
+                  iconIndex={1}
+                />
+              </div>
               <VisualFigure visual={page.visuals.cvCulture} className={sectionVisualMtClass} />
             </section>
 
@@ -922,6 +944,17 @@ export function FindingJobsNetherlandsView() {
             <section id="networking" className={sectionClass}>
               <SectionIntro eyebrow="Networking" title={page.networkingHeading}>
                 <p>Many roles are filled through referrals, communities and professional networks — not only public job boards.</p>
+                <p className="mt-3">
+                  For events, communities, referrals and Dutch outreach norms, see{" "}
+                  <Link href="/netherlands/jobs/networking-netherlands/" className="font-semibold text-cyan-700 underline-offset-2 hover:underline dark:text-cyan-300">
+                    Networking Netherlands
+                  </Link>
+                  . For LinkedIn profile and messaging tactics, see{" "}
+                  <Link href="/netherlands/jobs/linkedin-netherlands/" className="font-semibold text-cyan-700 underline-offset-2 hover:underline dark:text-cyan-300">
+                    LinkedIn Netherlands
+                  </Link>
+                  .
+                </p>
               </SectionIntro>
               <div className={cn(sectionStackClass, "grid gap-4 sm:grid-cols-2 xl:grid-cols-3")}>
                 {page.networkingChannels.map((item, idx) => <FeatureCard key={item.title} title={item.title} body={item.body} iconIndex={idx} />)}

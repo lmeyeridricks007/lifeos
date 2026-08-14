@@ -10,6 +10,11 @@ import {
   REGIONAL_BUSES_NETHERLANDS_PATH,
   TRAMS_NETHERLANDS_PATH,
 } from "@/src/components/living/ov-chipkaart-netherlands/ovChipkaartNetherlandsPageModel";
+import {
+  HIDDEN_GEMS_NETHERLANDS_PATH,
+  HIKING_NETHERLANDS_PATH,
+  MUSEUMS_NETHERLANDS_PATH,
+} from "@/src/components/living/weekend-trips-netherlands/weekendTripsNetherlandsPageModel";
 import { LIVING_TRANSPORT_APP_DOWNLOADS } from "@/src/components/living/livingTransportAppStoreLinks";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
@@ -848,6 +853,8 @@ export const cyclingNetherlandsPage = {
     "Personal travel card → OV-chipkaart.",
     "National rail → NS trains.",
     "Bus corridors → Regional buses.",
+    "Indoor culture days → Museums.",
+    "Quiet neighbourhood rides → Hidden gems.",
   ],
   relatedGuides: [
     {
@@ -897,6 +904,24 @@ export const cyclingNetherlandsPage = {
       href: METRO_NETHERLANDS_PATH,
       status: "live",
       description: "Metro / rapid transit for expats.",
+    },
+    {
+      label: "Hiking",
+      href: HIKING_NETHERLANDS_PATH,
+      status: "live",
+      description: "Walking culture when you want trails instead of wheels.",
+    },
+    {
+      label: "Museums",
+      href: MUSEUMS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Museumkaart and museum-going — bike to the door when rain ends.",
+    },
+    {
+      label: "Hidden gems",
+      href: HIDDEN_GEMS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Lesser-known neighbourhood and small-town spots by bike.",
     },
   ] satisfies TransportLink[],
   transportHubTips: [
@@ -982,10 +1007,16 @@ export const cyclingNetherlandsPage = {
       description: "Bike-to-station then national rail?",
     },
     {
-      label: "Regional buses",
-      href: REGIONAL_BUSES_NETHERLANDS_PATH,
+      label: "Museums",
+      href: MUSEUMS_NETHERLANDS_PATH,
       status: "live",
-      description: "Corridor is bus-first beyond bike range?",
+      description: "Swap a wet ride for Museumkaart culture?",
+    },
+    {
+      label: "Hidden gems",
+      href: HIDDEN_GEMS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Explore quieter neighbourhood loops by bike?",
     },
   ] satisfies TransportLink[],
   exploreNextTips: [
@@ -994,7 +1025,8 @@ export const cyclingNetherlandsPage = {
     "Contactless taps → OVpay.",
     "Plastic and products → OV-chipkaart.",
     "National rail → NS trains.",
-    "Bus corridors → Regional buses.",
+    "Indoor culture → Museums.",
+    "Quiet loops → Hidden gems.",
   ],
   officialSources: [
     {

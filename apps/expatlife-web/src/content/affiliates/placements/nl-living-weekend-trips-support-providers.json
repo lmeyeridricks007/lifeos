@@ -1,0 +1,29 @@
+{
+  "id": "nl-living-weekend-trips-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/weekend-trips-netherlands/",
+    "slot": "recommended-providers-weekend-trips"
+  },
+  "variant": "cards",
+  "title": "Mobility options for weekend getaways",
+  "intro": "Soft CTAs for established Dutch rail and mobility options when destination ideas turn into a trip. Confirm live products on each site — this block is not a ranking of destinations, hotels or tour operators. Deepen OV planning on the Weekend travel sibling guide.",
+  "categoryOrder": ["mobility"],
+  "items": [
+    {
+      "providerId": "ns",
+      "reason": "Dutch Railways tickets and planners when your weekend destination is a station city or coast hub — open Weekend travel for leisure OV planning depth."
+    },
+    {
+      "providerId": "greenwheels",
+      "reason": "Occasional shared cars when nature or countryside weekends have a thin last mile — keep four wheels optional."
+    },
+    {
+      "providerId": "swapfiets",
+      "reason": "Maintained subscription bike for local exploration around your base city between weekend trips — deepen fleets on Bike sharing."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing and availability with the provider directly. This is not travel, booking or product advice and not a ranking of destinations or hotels."
+}

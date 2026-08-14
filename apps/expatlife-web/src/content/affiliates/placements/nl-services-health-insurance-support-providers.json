@@ -1,0 +1,25 @@
+{
+  "id": "nl-services-health-insurance-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/health-insurance/",
+    "slot": "health-insurer-comparison-options"
+  },
+  "variant": "cards",
+  "title": "Compare Dutch health insurance options",
+  "intro": "Soft CTAs for Dutch basic and supplementary health insurance comparison — useful when you want to orient yourself before choosing a zorgverzekeraar. Confirm live quotes, cover and excess yourself — this block is not a ranking of insurers, and not personal insurance advice.",
+  "categoryOrder": ["insurance", "services"],
+  "items": [
+    {
+      "providerId": "independer",
+      "reason": "Real Dutch comparison site for basic and aanvullend health insurance — useful when you want to self-compare packages by premium, excess and extras before you enrol."
+    },
+    {
+      "providerId": "pricewise",
+      "reason": "Comparison site that covers insurance alongside energy and internet — useful for household setup orientation beside health cover, not an insurer endorsement."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat health-insurance discovery and comparison orientation — not pay-to-rank placement of insurers. This is not insurance, medical, financial or legal advice; verify premiums, cover, excess, policy type and enrolment deadlines directly with licensed insurers and official sources."
+}

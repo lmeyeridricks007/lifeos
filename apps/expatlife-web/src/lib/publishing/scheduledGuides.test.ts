@@ -245,3 +245,90 @@ test("unknown paths are not gated", () => {
     true
   );
 });
+
+const STARTING_CONSULTANCY = "/netherlands/jobs/starting-consultancy-netherlands/";
+const WEEKEND_TRIPS = "/netherlands/living/weekend-trips-netherlands/";
+const NATIONAL_PARKS = "/netherlands/living/national-parks-netherlands/";
+const HIKING = "/netherlands/living/hiking-netherlands/";
+const MUSEUMS = "/netherlands/living/museums-netherlands/";
+const HIDDEN_GEMS = "/netherlands/living/hidden-gems-netherlands/";
+
+test("scheduled guides register Starting consultancy for 2026-10-09", () => {
+  assert.equal(scheduledPublishDateForPath(STARTING_CONSULTANCY), "2026-10-09");
+  assert.equal(findScheduledGuide(STARTING_CONSULTANCY)?.title, "Starting consultancy");
+});
+
+test("from 00:00 UTC on 2026-10-09 with enforcePublishDates → Starting consultancy publicly visible", () => {
+  const before = new Date("2026-10-08T23:59:59.000Z");
+  assert.equal(isScheduledGuidePubliclyVisible(STARTING_CONSULTANCY, before, { enforcePublishDates: true }), false);
+  const goLive = new Date("2026-10-09T00:00:00.000Z");
+  assert.equal(isScheduledGuidePubliclyVisible(STARTING_CONSULTANCY, goLive, { enforcePublishDates: true }), true);
+});
+
+test("scheduled guides register Weekend & lifestyle cluster for 2026-10-12", () => {
+  assert.equal(scheduledPublishDateForPath(WEEKEND_TRIPS), "2026-10-12");
+  assert.equal(findScheduledGuide(WEEKEND_TRIPS)?.title, "Weekend trips");
+  assert.equal(scheduledPublishDateForPath(NATIONAL_PARKS), "2026-10-12");
+  assert.equal(findScheduledGuide(NATIONAL_PARKS)?.title, "National parks");
+  assert.equal(scheduledPublishDateForPath(HIKING), "2026-10-12");
+  assert.equal(findScheduledGuide(HIKING)?.title, "Hiking");
+});
+
+test("from 00:00 UTC on 2026-10-12 with enforcePublishDates → Weekend & lifestyle cluster publicly visible", () => {
+  const before = new Date("2026-10-11T23:59:59.000Z");
+  assert.equal(isScheduledGuidePubliclyVisible(WEEKEND_TRIPS, before, { enforcePublishDates: true }), false);
+  assert.equal(isScheduledGuidePubliclyVisible(NATIONAL_PARKS, before, { enforcePublishDates: true }), false);
+  assert.equal(isScheduledGuidePubliclyVisible(HIKING, before, { enforcePublishDates: true }), false);
+  const goLive = new Date("2026-10-12T00:00:00.000Z");
+  assert.equal(isScheduledGuidePubliclyVisible(WEEKEND_TRIPS, goLive, { enforcePublishDates: true }), true);
+  assert.equal(isScheduledGuidePubliclyVisible(NATIONAL_PARKS, goLive, { enforcePublishDates: true }), true);
+  assert.equal(isScheduledGuidePubliclyVisible(HIKING, goLive, { enforcePublishDates: true }), true);
+});
+
+test("scheduled guides register Museums and Hidden gems for 2026-10-15", () => {
+  assert.equal(scheduledPublishDateForPath(MUSEUMS), "2026-10-15");
+  assert.equal(findScheduledGuide(MUSEUMS)?.title, "Museums");
+  assert.equal(scheduledPublishDateForPath(HIDDEN_GEMS), "2026-10-15");
+  assert.equal(findScheduledGuide(HIDDEN_GEMS)?.title, "Hidden gems");
+});
+
+test("from 00:00 UTC on 2026-10-15 with enforcePublishDates → Museums and Hidden gems publicly visible", () => {
+  const before = new Date("2026-10-14T23:59:59.000Z");
+  assert.equal(isScheduledGuidePubliclyVisible(MUSEUMS, before, { enforcePublishDates: true }), false);
+  assert.equal(isScheduledGuidePubliclyVisible(HIDDEN_GEMS, before, { enforcePublishDates: true }), false);
+  const goLive = new Date("2026-10-15T00:00:00.000Z");
+  assert.equal(isScheduledGuidePubliclyVisible(MUSEUMS, goLive, { enforcePublishDates: true }), true);
+  assert.equal(isScheduledGuidePubliclyVisible(HIDDEN_GEMS, goLive, { enforcePublishDates: true }), true);
+});
+
+const RECRUITMENT_AGENCIES_SERVICES = "/netherlands/services/recruitment-agencies/";
+
+test("scheduled guides register Recruitment agencies services directory for 2026-10-22", () => {
+  assert.equal(scheduledPublishDateForPath(RECRUITMENT_AGENCIES_SERVICES), "2026-10-22");
+  assert.equal(findScheduledGuide(RECRUITMENT_AGENCIES_SERVICES)?.title, "Recruitment agencies");
+});
+
+test("from 00:00 UTC on 2026-10-22 with enforcePublishDates → Recruitment agencies services publicly visible", () => {
+  const before = new Date("2026-10-21T23:59:59.000Z");
+  assert.equal(isScheduledGuidePubliclyVisible(RECRUITMENT_AGENCIES_SERVICES, before, { enforcePublishDates: true }), false);
+  const goLive = new Date("2026-10-22T00:00:00.000Z");
+  assert.equal(isScheduledGuidePubliclyVisible(RECRUITMENT_AGENCIES_SERVICES, goLive, { enforcePublishDates: true }), true);
+});
+
+test("Career recruitment agencies guide schedule remains 2026-10-07", () => {
+  assert.equal(scheduledPublishDateForPath("/netherlands/jobs/recruitment-agencies-netherlands/"), "2026-10-07");
+});
+
+const MOVING_COMPANIES_SERVICES = "/netherlands/services/moving-companies/";
+
+test("scheduled guides register Moving companies services directory for 2026-10-25", () => {
+  assert.equal(scheduledPublishDateForPath(MOVING_COMPANIES_SERVICES), "2026-10-25");
+  assert.equal(findScheduledGuide(MOVING_COMPANIES_SERVICES)?.title, "Moving companies");
+});
+
+test("from 00:00 UTC on 2026-10-25 with enforcePublishDates → Moving companies services publicly visible", () => {
+  const before = new Date("2026-10-24T23:59:59.000Z");
+  assert.equal(isScheduledGuidePubliclyVisible(MOVING_COMPANIES_SERVICES, before, { enforcePublishDates: true }), false);
+  const goLive = new Date("2026-10-25T00:00:00.000Z");
+  assert.equal(isScheduledGuidePubliclyVisible(MOVING_COMPANIES_SERVICES, goLive, { enforcePublishDates: true }), true);
+});

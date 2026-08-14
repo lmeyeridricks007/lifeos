@@ -1,0 +1,29 @@
+{
+  "id": "nl-living-castles-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/castles-netherlands/",
+    "slot": "recommended-providers-castles"
+  },
+  "variant": "cards",
+  "title": "Mobility options for castle days",
+  "intro": "Soft CTAs for established Dutch rail and mobility options when a castle or historic-house day needs a train hub, optional car share or a local bike. Confirm live products on each site — this block is not a ranking of castles, hotels or tour operators. Deepen OV planning on the Weekend travel sibling guide.",
+  "categoryOrder": ["mobility"],
+  "items": [
+    {
+      "providerId": "ns",
+      "reason": "Dutch Railways tickets and planners when your castle day starts from a station town — open Weekend travel for leisure OV planning depth."
+    },
+    {
+      "providerId": "greenwheels",
+      "reason": "Occasional shared cars when regional estates, family gear or thin bus links make four wheels useful — keep cars optional."
+    },
+    {
+      "providerId": "swapfiets",
+      "reason": "Maintained subscription bike for local hops between station, estate grounds and neighbourhood — deepen fleets on Bike sharing."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance, not pay-to-rank placement. Always confirm pricing and availability with the provider directly. This is not travel, booking or product advice and not a ranking of castles, hotels or tour operators."
+}

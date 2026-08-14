@@ -43,6 +43,16 @@ export const NETHERLANDS_SERVICES_CATEGORIES: ServiceCategoryCard[] = [
     featured: true,
   },
   {
+    slug: "insurance-brokers",
+    name: "Insurance Brokers",
+    href: `${BASE}/insurance-brokers/`,
+    description: "Compare Dutch insurance brokers and adviseurs (tussenpersonen) who help expats shortlist liability, home, travel, life and business packages.",
+    examples: ["Independent adviseurs", "Tied advisors", "Commercial brokers", "Comparison orientation"],
+    bestForStage: "Household setup, after arrival, and when comparing complex packages",
+    group: "banking-insurance",
+    featured: true,
+  },
+  {
     slug: "banks",
     name: "Banks",
     href: `${BASE}/banks/`,
@@ -147,6 +157,17 @@ export const NETHERLANDS_SERVICES_CATEGORIES: ServiceCategoryCard[] = [
     featured: true,
   },
   {
+    slug: "notaries",
+    name: "Notaries",
+    href: `${BASE}/notaries/`,
+    description:
+      "Compare Dutch notaris support for house purchase deeds, hypotheekakte, inheritance orientation and family agreements — soft discovery, not a ranking.",
+    examples: ["Levering", "Hypotheekakte", "Inheritance", "Cohabitation deeds"],
+    bestForStage: "Buying a home or formalising Dutch notarial acts",
+    group: "housing-relocation",
+    featured: true,
+  },
+  {
     slug: "relocation-agencies",
     name: "Relocation Agencies",
     href: `${BASE}/relocation-agencies/`,
@@ -166,7 +187,51 @@ export const NETHERLANDS_SERVICES_CATEGORIES: ServiceCategoryCard[] = [
     group: "housing-relocation",
     featured: true,
   },
+  {
+    slug: "moving-companies",
+    name: "Moving Companies",
+    href: `${BASE}/moving-companies/`,
+    description:
+      "Compare domestic Dutch movers for house and apartment moves within the Netherlands — packing, stairs, elevators and city-to-city vans.",
+    examples: ["Local van", "Full-service packing", "Apartment stairs", "City-to-city"],
+    bestForStage: "Before you move & first weeks",
+    group: "housing-relocation",
+    featured: false,
+  },
   // ——— Family & Everyday Life ———
+  {
+    slug: "internet-providers",
+    name: "Internet Providers",
+    href: `${BASE}/internet-providers/`,
+    description:
+      "Compare Dutch fibre, cable and DSL internet providers for expats — contracts, installation, address checks and TV bundles.",
+    examples: ["Fibre / glasvezel", "Cable broadband", "TV bundles", "Comparison orientation"],
+    bestForStage: "Before move-in and first weeks after arrival",
+    group: "family-everyday-life",
+    featured: true,
+  },
+  {
+    slug: "energy-providers",
+    name: "Energy Providers",
+    href: `${BASE}/energy-providers/`,
+    description:
+      "Compare Dutch electricity and gas suppliers for expats — fixed vs variable contracts, switching and soft discovery.",
+    examples: ["Fixed contracts", "Variable rates", "Switching", "Comparison orientation"],
+    bestForStage: "Before move-in and first weeks after arrival",
+    group: "family-everyday-life",
+    featured: true,
+  },
+  {
+    slug: "phone-providers",
+    name: "Phone Providers",
+    href: `${BASE}/phone-providers/`,
+    description:
+      "Compare Dutch prepaid, SIM-only and eSIM phone providers for expats — plan types, activation and soft discovery.",
+    examples: ["Prepaid", "SIM-only", "eSIM", "MVNO orientation"],
+    bestForStage: "First days after arrival",
+    group: "family-everyday-life",
+    featured: true,
+  },
   {
     slug: "mobile-connectivity",
     name: "Mobile & connectivity",
@@ -176,6 +241,17 @@ export const NETHERLANDS_SERVICES_CATEGORIES: ServiceCategoryCard[] = [
     bestForStage: "First days after arrival",
     group: "family-everyday-life",
     featured: false,
+  },
+  // ——— Career & Employment ———
+  {
+    slug: "recruitment-agencies",
+    name: "Recruitment Agencies",
+    href: `${BASE}/recruitment-agencies/`,
+    description: "Compare recruitment agency types, fee models, languages and sector coverage for expats — a provider directory, not a job-seeker how-to.",
+    examples: ["Uitzendbureau", "Specialist recruiters", "Executive search", "Interim"],
+    bestForStage: "Job search and career moves",
+    group: "career-employment",
+    featured: true,
   },
 ];
 

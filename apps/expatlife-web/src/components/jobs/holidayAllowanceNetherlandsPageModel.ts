@@ -398,7 +398,7 @@ export const holidayAllowanceNetherlandsPage = {
   services: [
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Payroll tax and expat compensation context." },
     { label: "Payroll services", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Future directory for payroll support." },
-    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "comingSoon", description: "Future directory for recruitment support." },
+    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "live", description: "Services directory for comparing recruitment agency providers." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Move planning alongside employment offers." },
   ] satisfies HolidayAllowanceNetherlandsLink[],
   faq: [

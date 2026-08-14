@@ -10,6 +10,8 @@ import { cn } from "@/lib/cn";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { TrackedExternalLink } from "@/components/analytics/TrackedExternalLink";
+import { AffiliateBlockView } from "@/src/components/affiliates/AffiliateBlockView";
+import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 import {
   siteGuideColumnPadYClass,
   siteHeroFramedShellClass,
@@ -31,6 +33,8 @@ export const revalidate = 86400;
 
 const baseUrl = getSiteOrigin();
 const { path, seo, hero, publishDate } = page;
+const affiliateProviderData = loadPlacementWithProviders(page.affiliatePlacementId, "netherlands", undefined);
+const showAffiliateProviders = Boolean(affiliateProviderData?.items?.length);
 const icons = [Calculator, ReceiptText, Globe2, BriefcaseBusiness, PiggyBank, FileText, ShieldCheck, CheckCircle2] as const;
 const sectionClass = cn(CITIES_FUNNEL_SECTION_SCROLL_MARGIN, CITIES_FUNNEL_SOFT_COPILOT_SURFACE, "p-6 sm:p-8");
 const sectionStackClass = "mt-6 space-y-6 sm:space-y-8 md:space-y-9";
@@ -43,6 +47,7 @@ const sectionNav = [
   { href: "#when-help", label: "When help fits" },
   { href: "#types", label: "Specialist types" },
   { href: "#providers", label: "Providers" },
+  { href: "#affiliate-providers", label: "Related support" },
   { href: "#specialized", label: "Service fit" },
   { href: "#choose", label: "How to choose" },
   { href: "#scenarios", label: "Scenarios" },
@@ -299,6 +304,23 @@ export default function TaxAdvisorsServicesPage() {
               </div>
               <p className="mt-5 rounded-2xl border border-amber-200/80 bg-amber-50/90 p-4 text-sm leading-relaxed text-amber-950 shadow-sm ring-1 ring-amber-100">{page.disclosure}</p>
             </section>
+
+            {showAffiliateProviders && affiliateProviderData ? (
+              <section id="affiliate-providers" className={sectionClass}>
+                <SectionIntro title="Providers Expats Can Contact for Tax Support">
+                  <p>
+                    Soft discovery for real tax-support providers — not a ranking of tax firms. Confirm scope, credentials and fees before you share documents.
+                  </p>
+                </SectionIntro>
+                <div className="mt-6">
+                  <AffiliateBlockView
+                    placement={affiliateProviderData.placement}
+                    items={affiliateProviderData.items}
+                    hidePlacementTitle
+                  />
+                </div>
+              </section>
+            ) : null}
 
             <section id="specialized" className={sectionClass}><div className="grid gap-7 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.7fr)] lg:items-start"><div><SectionIntro title="Find the Right Tax Specialist for Your Situation"><p>These service groupings show where a provider may fit. They are examples for discovery, not rankings or guarantees that a provider is right for every case.</p></SectionIntro><div className="mt-6 grid gap-4 lg:grid-cols-4">{page.specializedServices.map((group) => <article key={group.title} className={cn(CITIES_FUNNEL_SOFT_COPILOT_SURFACE, "p-5", movingNlCardMicroLiftClass)}><div className={cn("absolute inset-x-0 top-0 h-1", movingNlSignatureGradientClass)} aria-hidden /><h3 className="font-bold text-foreground">{group.title}</h3><ul className="mt-3 space-y-2 text-sm text-foreground-muted">{group.providers.map((p) => <li key={p}>{p}</li>)}</ul></article>)}</div></div><InsightPanel eyebrow="Service fit" title="Choose by problem, then provider" rows={[{ label: "Name the problem", body: "30% ruling, M-form, ZZP, payroll and foreign income point to different skills.", Icon: Calculator }, { label: "Ask what is included", body: "Filing, review, coaching and representation are different service scopes.", Icon: FileText }, { label: "Confirm handoff", body: "If tax connects to immigration or payroll, ask whether the provider coordinates or only advises.", Icon: ShieldCheck }]} /></div></section>
 

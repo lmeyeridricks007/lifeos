@@ -506,11 +506,20 @@ const JOBS_SALARY_GUIDE_PREFIXES: readonly string[] = [
   "/netherlands/jobs/pension-netherlands-expats",
   "/netherlands/jobs/holiday-allowance-netherlands",
   "/netherlands/jobs/finding-jobs-netherlands",
+  "/netherlands/jobs/recruitment-agencies-netherlands",
+  "/netherlands/jobs/english-speaking-jobs-netherlands",
+  "/netherlands/jobs/remote-work-netherlands",
+  "/netherlands/jobs/cv-netherlands",
+  "/netherlands/jobs/cover-letter-netherlands",
+  "/netherlands/jobs/linkedin-netherlands",
+  "/netherlands/jobs/interview-tips-netherlands",
+  "/netherlands/jobs/networking-netherlands",
   "/netherlands/jobs/employment-contract-netherlands",
   "/netherlands/jobs/probation-period-netherlands",
   "/netherlands/jobs/notice-period-netherlands",
   "/netherlands/jobs/employee-rights-netherlands",
   "/netherlands/jobs/freelancing-netherlands",
+  "/netherlands/jobs/starting-consultancy-netherlands",
   "/netherlands/jobs/contractor-vs-employee-netherlands",
 ];
 
@@ -888,6 +897,21 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Fibre, broadband, SIM-only, eSIM, providers and setup after moving."
           ),
           item(
+            "Internet providers",
+            "/netherlands/services/internet-providers/",
+            "Compare fibre, cable and DSL ISPs — provider directory beside the how-to guide."
+          ),
+          item(
+            "Energy providers",
+            "/netherlands/services/energy-providers/",
+            "Compare electricity and gas suppliers — provider directory beside Energy and water."
+          ),
+          item(
+            "Phone providers",
+            "/netherlands/services/phone-providers/",
+            "Compare prepaid, SIM-only and eSIM plans — provider directory."
+          ),
+          item(
             "Municipality services",
             "/netherlands/practical-life/municipality-services-netherlands/",
             "Gemeente registration, BSN, local taxes, permits, parking and waste for expats."
@@ -1012,6 +1036,46 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "How expats find work: Dutch job market, English roles, recruiters, visa sponsorship and city demand."
           ),
           item(
+            "Recruitment agencies Netherlands",
+            "/netherlands/jobs/recruitment-agencies-netherlands/",
+            "How Dutch recruiters, uitzendbureaus and intermediars work for expats: when to use them, fees and partnership habits."
+          ),
+          item(
+            "English speaking jobs Netherlands",
+            "/netherlands/jobs/english-speaking-jobs-netherlands/",
+            "English-friendly roles for expats: sectors, cities, language reality checks and when Dutch is still needed."
+          ),
+          item(
+            "Remote work Netherlands",
+            "/netherlands/jobs/remote-work-netherlands/",
+            "Remote and hybrid employment for expats: employer expectations, abroad caution and home-office habits."
+          ),
+          item(
+            "CV Netherlands",
+            "/netherlands/jobs/cv-netherlands/",
+            "Dutch CV and application norms: length, photo, motivation letter, LinkedIn alignment and common mistakes."
+          ),
+          item(
+            "Cover letter Netherlands",
+            "/netherlands/jobs/cover-letter-netherlands/",
+            "Dutch motivation letters (motivatiebrief): when required, length, tone, structure, language and common mistakes."
+          ),
+          item(
+            "LinkedIn Netherlands",
+            "/netherlands/jobs/linkedin-netherlands/",
+            "LinkedIn for Dutch job search: profile, headline, Open to Work, messaging recruiters and Dutch hiring norms."
+          ),
+          item(
+            "Interview tips Netherlands",
+            "/netherlands/jobs/interview-tips-netherlands/",
+            "Dutch job interview culture for expats: preparation, directness, common questions, remote vs onsite and follow-up."
+          ),
+          item(
+            "Networking Netherlands",
+            "/netherlands/jobs/networking-netherlands/",
+            "Professional networking for expats: events, communities, referrals, warm intros and Dutch directness in outreach."
+          ),
+          item(
             "Salary negotiation",
             "/netherlands/jobs/salary-negotiation-netherlands/",
             "How expats negotiate Dutch job offers: culture, gross vs net, benefits and total compensation."
@@ -1060,6 +1124,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Freelancing",
             "/netherlands/jobs/freelancing-netherlands/",
             "ZZP registration, taxes, client contracts and freelancing orientation for expats."
+          ),
+          item(
+            "Starting consultancy",
+            "/netherlands/jobs/starting-consultancy-netherlands/",
+            "How expats start a consultancy practice: positioning, first clients, rates orientation, contracts and KvK/ZZP overlap."
           ),
           item(
             "Contractor vs employee",
@@ -1381,6 +1450,46 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Payroll tax Netherlands", "/netherlands/taxes/payroll-tax-netherlands/"),
           item("Average salary Netherlands", "/netherlands/taxes/average-salary-netherlands/"),
           item("Finding jobs Netherlands", "/netherlands/jobs/finding-jobs-netherlands/"),
+          item(
+            "Recruitment agencies Netherlands",
+            "/netherlands/jobs/recruitment-agencies-netherlands/",
+            "How Dutch recruiters, uitzendbureaus and intermediars work for expats."
+          ),
+          item(
+            "English speaking jobs Netherlands",
+            "/netherlands/jobs/english-speaking-jobs-netherlands/",
+            "English-friendly roles: sectors, cities and language reality checks."
+          ),
+          item(
+            "Remote work Netherlands",
+            "/netherlands/jobs/remote-work-netherlands/",
+            "Remote and hybrid employment norms for expats in the Netherlands."
+          ),
+          item(
+            "CV Netherlands",
+            "/netherlands/jobs/cv-netherlands/",
+            "Dutch CV and application norms: length, photo, motivation letter and LinkedIn alignment."
+          ),
+          item(
+            "Cover letter Netherlands",
+            "/netherlands/jobs/cover-letter-netherlands/",
+            "Dutch motivation letters (motivatiebrief): when required, length, tone, structure and language choice."
+          ),
+          item(
+            "LinkedIn Netherlands",
+            "/netherlands/jobs/linkedin-netherlands/",
+            "LinkedIn for Dutch job search: profile, headline, Open to Work, messaging recruiters and Dutch hiring norms."
+          ),
+          item(
+            "Interview tips Netherlands",
+            "/netherlands/jobs/interview-tips-netherlands/",
+            "Dutch job interview culture for expats: preparation, directness, common questions and follow-up."
+          ),
+          item(
+            "Networking Netherlands",
+            "/netherlands/jobs/networking-netherlands/",
+            "Professional networking for expats: events, communities, referrals, warm intros and Dutch directness in outreach."
+          ),
           item("Job websites Netherlands", "/netherlands/work/job-websites-netherlands/"),
           item("LinkedIn jobs Netherlands", "/netherlands/work/linkedin-jobs-netherlands/"),
           item("Jobs in Amsterdam", "/netherlands/work/jobs-in-amsterdam/"),
@@ -1398,9 +1507,10 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Notice period Netherlands", "/netherlands/jobs/notice-period-netherlands/"),
           item("Employee rights Netherlands", "/netherlands/jobs/employee-rights-netherlands/"),
           item("Freelancing Netherlands", "/netherlands/jobs/freelancing-netherlands/"),
+          item("Starting consultancy Netherlands", "/netherlands/jobs/starting-consultancy-netherlands/"),
+          item("Contractor vs employee Netherlands", "/netherlands/jobs/contractor-vs-employee-netherlands/"),
           item("ZZP Netherlands", "/netherlands/business/zzp-netherlands/"),
           item("Starting a business Netherlands", "/netherlands/business/starting-a-business-netherlands/"),
-          item("Contractor vs employee Netherlands", "/netherlands/jobs/contractor-vs-employee-netherlands/"),
         ],
       },
       {
@@ -1462,6 +1572,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Banks", "/netherlands/services/banks/"),
           item("Tax Advisors", "/netherlands/services/tax-advisors/", "Tax returns, 30% ruling, ZZP and cross-border tax support for expats."),
           item(
+            "Accountants",
+            "/netherlands/services/accountants/",
+            "Compare accountants and administratiekantoren for bookkeeping, BTW, jaarrekening and ZZP admin."
+          ),
+          item(
             "Mortgage advisors",
             "/netherlands/services/mortgage-advisors/",
             "Compare mortgage advisors, broker models, fees and expat document support."
@@ -1470,6 +1585,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Financial advisors",
             "/netherlands/services/financial-advisors/",
             "Compare financial advisors for pensions, investments, wealth planning and cross-border finances."
+          ),
+          item(
+            "Business consultants",
+            "/netherlands/services/business-consultants/",
+            "Compare business consultants for strategy, market entry, KvK growth facilitation and operations."
           ),
           item("View all services", "/netherlands/services/"),
         ],
@@ -1488,6 +1608,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/services/insurance-providers/",
             "Compare Dutch insurers across health, liability, home, travel and business insurance."
           ),
+          item(
+            "Insurance brokers",
+            "/netherlands/services/insurance-brokers/",
+            "Compare Dutch insurance brokers and adviseurs who help shortlist liability, home, travel and business packages."
+          ),
         ],
       },
       {
@@ -1495,10 +1620,49 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         items: [
           item("Housing platforms", "/netherlands/services/housing-platforms/"),
           item("Rental agencies", "/netherlands/services/rental-agencies/"),
+          item(
+            "Estate agents",
+            "/netherlands/services/estate-agents/",
+            "Compare Dutch makelaars for buying and selling property — aankoopmakelaar and verkoopmakelaar support."
+          ),
+          item(
+            "Notaries",
+            "/netherlands/services/notaries/",
+            "Compare Dutch notaris support for purchase deeds, hypotheekakte, inheritance orientation and family agreements."
+          ),
           item("Expat housing agencies", "/netherlands/services/expat-housing-agencies/"),
           item("Relocation agencies", "/netherlands/services/relocation-agencies/"),
           item("Relocation services", "/netherlands/services/relocation-services/"),
-          item("Moving companies", "/netherlands/services/moving-companies/"),
+          item(
+            "Moving companies",
+            "/netherlands/services/moving-companies/",
+            "Compare domestic Dutch movers for house and apartment moves within the Netherlands — packing, stairs and city-to-city vans."
+          ),
+          item(
+            "Removal companies",
+            "/netherlands/services/removal-companies/",
+            "International household removals for arrivals and leavers — door-to-door overseas moves."
+          ),
+          item(
+            "Storage companies",
+            "/netherlands/services/storage-companies/",
+            "Compare Dutch self-storage and temporary furniture storage for lease gaps and international move windows."
+          ),
+          item(
+            "Pet relocation companies",
+            "/netherlands/services/pet-relocation-companies/",
+            "Compare specialist pet import/export and flight-pet logistics providers — IATA crates, quarantine orientation and ground transfer."
+          ),
+          item(
+            "Cleaning companies",
+            "/netherlands/services/cleaning-companies/",
+            "Compare domestic cleaners, deep cleans and end-of-tenancy / oplevering providers for expats — weekly help and deposit-return cleans."
+          ),
+          item(
+            "Handymen",
+            "/netherlands/services/handymen/",
+            "Compare klusjesman providers for shelves, furniture assembly, painting touch-ups and small home repairs — soft discovery for expats."
+          ),
           item("International shipping", "/netherlands/services/international-shipping/"),
         ],
       },
@@ -1521,9 +1685,49 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         ],
       },
       {
+        title: "Work & career support",
+        items: [
+          item(
+            "Recruitment agencies",
+            "/netherlands/services/recruitment-agencies/",
+            "Compare recruitment agency types, fee models, languages and sector coverage — provider directory."
+          ),
+        ],
+      },
+      {
         title: "Connectivity",
         items: [
+          item(
+            "Internet providers",
+            "/netherlands/services/internet-providers/",
+            "Compare fibre, cable and DSL ISPs, contracts, install and TV bundles — provider directory."
+          ),
+          item(
+            "Energy providers",
+            "/netherlands/services/energy-providers/",
+            "Compare electricity and gas suppliers, fixed vs variable contracts and switching — provider directory."
+          ),
+          item(
+            "Phone providers",
+            "/netherlands/services/phone-providers/",
+            "Compare prepaid, SIM-only and eSIM phone plans for expats — provider directory."
+          ),
           item("Mobile & connectivity", "/netherlands/services/mobile-connectivity/"),
+        ],
+      },
+      {
+        title: "Family & education",
+        items: [
+          item(
+            "International schools",
+            "/netherlands/services/international-schools/",
+            "Compare international schools as providers — curricula, fee orientation, admission and locations (not the Living education system guide)."
+          ),
+          item(
+            "Daycare providers",
+            "/netherlands/services/daycare-providers/",
+            "Compare daycare / kinderopvang providers — KDV, gastouderbureaus, commute and LRK checks (not the Living Childcare education system guide)."
+          ),
         ],
       },
     ],
@@ -1696,6 +1900,21 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Fibre, broadband, mobile, SIM-only, eSIM, costs and provider setup."
           ),
           item(
+            "Internet providers",
+            "/netherlands/services/internet-providers/",
+            "Compare fibre, cable and DSL ISPs — provider directory (setup how-to stays on Internet and mobile)."
+          ),
+          item(
+            "Energy providers",
+            "/netherlands/services/energy-providers/",
+            "Compare electricity and gas suppliers — provider directory (meters and water stay on Energy and water)."
+          ),
+          item(
+            "Phone providers",
+            "/netherlands/services/phone-providers/",
+            "Compare prepaid, SIM-only and eSIM plans — provider directory beside Mobile & connectivity."
+          ),
+          item(
             "Municipality services",
             "/netherlands/practical-life/municipality-services-netherlands/",
             "Gemeente services, registration context, BSN, local taxes, parking and waste."
@@ -1720,6 +1939,66 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Shopping & groceries",
             "/netherlands/living/shopping-groceries/",
             "Supermarkets, self-checkout, household basics, deliveries, and the store habits that shape everyday errands."
+          ),
+          item(
+            "Dutch supermarkets",
+            "/netherlands/living/dutch-supermarkets/",
+            "How Dutch grocery chains work day to day: formats, opening hours, bags, self-scan and loyalty apps orientation, weekly rhythm."
+          ),
+          item(
+            "Best supermarkets",
+            "/netherlands/living/best-supermarkets-netherlands/",
+            "Decision guide: which supermarket fit matches budget, organic, international products, one-stop, neighbourhood or delivery — not a ranked awards list."
+          ),
+          item(
+            "Cheap groceries",
+            "/netherlands/living/cheap-groceries-netherlands/",
+            "Spend less on food: discounters, Bonus and weekly offers, private label, timing, waste reduction and student-friendly budget tactics."
+          ),
+          item(
+            "International supermarkets",
+            "/netherlands/living/international-supermarkets-netherlands/",
+            "Find non-Dutch products: world-food aisles, specialty and ethnic markets, and when to use which — not an Asian-only deep dive."
+          ),
+          item(
+            "Asian supermarkets",
+            "/netherlands/living/asian-supermarkets-netherlands/",
+            "Asian toko and supermarket shopping: formats, product categories, city patterns and first-visit tips — not a ranked store awards list."
+          ),
+          item(
+            "Turkish supermarkets",
+            "/netherlands/living/turkish-supermarkets-netherlands/",
+            "Turkish and Middle-Eastern specialty shopping: formats, spices, breads, dairy drinks, city patterns and first-visit tips — not a ranked store awards list."
+          ),
+          item(
+            "Indian supermarkets",
+            "/netherlands/living/indian-supermarkets-netherlands/",
+            "Indian and South Asian specialty shopping: formats, spices, dal, rice, flours, pickles, snacks, city patterns and first-visit tips — not a ranked store awards list."
+          ),
+          item(
+            "South African shops",
+            "/netherlands/living/south-african-shops-netherlands/",
+            "South African specialty shops and comfort foods: biltong, pantry staples, sauces, sweets, city patterns and first-visit tips — not a ranked store awards list."
+          ),
+          item(
+            "Meal kits",
+            "/netherlands/living/meal-kits-netherlands/",
+            "Subscription meal-kit boxes: how they work, cost modelling vs supermarket cooking, who they suit, and pause/skip/cancel habits — not a ranked meal-kit awards list."
+          ),
+          item(
+            "Food delivery",
+            "/netherlands/living/food-delivery-netherlands/",
+            "Restaurant takeaway apps and grocery delivery: fees, tipping norms, coverage checks and when delivery beats cooking or shopping — not a ranked delivery-app awards list."
+          ),
+          item(
+            "Restaurants",
+            "/netherlands/living/restaurants-netherlands/",
+            "Sit-down dining culture: reservations, lunch vs dinner, terraces, bills and service, dietary norms and what expats should expect — not a ranked restaurant awards list."
+          ),
+          item(
+            "Tipping",
+            "/netherlands/living/tipping-netherlands/",
+            "Dutch tipping norms for restaurants, cafés, delivery and everyday service — usually more modest than US expectations, not a tip-app ranking."
           ),
           item(
             "Emergencies & safety",
@@ -1786,6 +2065,56 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Weekend travel",
             "/netherlands/living/weekend-travel-netherlands/",
             "Weekend getaways by Dutch public transport for expats: day trips and weekends with NS and regional OV, discount orientation, last mile and packing tips."
+          ),
+        ],
+      },
+      {
+        title: "Weekend & lifestyle",
+        items: [
+          item(
+            "Weekend trips",
+            "/netherlands/living/weekend-trips-netherlands/",
+            "Weekend trip ideas for expats: city, coast and nature getaways, when to go, packing culture and how to choose a vibe — transport depth on Weekend travel."
+          ),
+          item(
+            "National parks",
+            "/netherlands/living/national-parks-netherlands/",
+            "Nationale Parken orientation for expats: how Dutch national parks work, visitor basics and calm nature-weekend planning."
+          ),
+          item(
+            "Hiking",
+            "/netherlands/living/hiking-netherlands/",
+            "Hiking and walking culture in the Netherlands for expats: trail habits, etiquette, kit orientation and weekend walking ideas."
+          ),
+          item(
+            "Museums",
+            "/netherlands/living/museums-netherlands/",
+            "Museum-going for expats: Museumkaart orientation, free days and booking habits, city patterns, etiquette and rainy-day museum plans."
+          ),
+          item(
+            "Hidden gems",
+            "/netherlands/living/hidden-gems-netherlands/",
+            "Lesser-known places for expats: neighbourhood gems, small towns, quiet edges and leave-no-trace habits — not a ranked secrets list."
+          ),
+          item(
+            "Beach towns",
+            "/netherlands/living/beach-towns-netherlands/",
+            "Coastal towns and beach-day culture for expats: seasons, North Sea vs Zeeland vs Wadden orientation, packing and crowds — not a ranked beaches list."
+          ),
+          item(
+            "Castles",
+            "/netherlands/living/castles-netherlands/",
+            "Castles and historic houses for expats: visit culture, booking and seasons, regional orientation, gardens vs interiors — not a ranked castles list."
+          ),
+          item(
+            "Road trips",
+            "/netherlands/living/road-trips-netherlands/",
+            "Leisure road trips for expats: when a car helps, route planning, parking and ferry habits, sharing vs owning — not a ranked routes list."
+          ),
+          item(
+            "Day trips",
+            "/netherlands/living/day-trips-netherlands/",
+            "Same-day outings for expats: day-out patterns, timing, packing light, when a day trip beats overnight — not a ranked destinations list."
           ),
         ],
       },

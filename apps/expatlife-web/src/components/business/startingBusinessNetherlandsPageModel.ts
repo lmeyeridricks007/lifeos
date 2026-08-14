@@ -3,6 +3,7 @@ export const STARTING_BUSINESS_AFFILIATE_PLACEMENT_ID = "nl-business-starting-a-
 
 export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as const;
 export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
+export const STARTING_CONSULTANCY_NETHERLANDS_PATH = "/netherlands/jobs/starting-consultancy-netherlands/" as const;
 export const BUSINESS_HUB_PATH = "/netherlands/business/" as const;
 export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/taxes/expat-taxes-netherlands/" as const;
 export const FOREIGN_INCOME_NETHERLANDS_PATH = "/netherlands/taxes/foreign-income-netherlands/" as const;
@@ -620,7 +621,7 @@ export const startingBusinessNetherlandsPage = {
   administrationGuideLinks: [
     { label: "ZZP Netherlands", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Invoicing and admin patterns many solo entrepreneurs follow." },
     { label: "Expat taxes guide", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax filing context when business income joins other streams." },
-    { label: "Accountants", href: ACCOUNTANTS_PATH, status: "comingSoon", description: "Future directory for bookkeeping and annual accounts support." },
+    { label: "Accountants", href: ACCOUNTANTS_PATH, status: "live", description: "Bookkeeping and annual accounts support for new businesses." },
     { label: "VAT Netherlands", href: VAT_NETHERLANDS_PATH, status: "comingSoon", description: "Future BTW guide — confirm invoice fields with Belastingdienst meanwhile." },
   ] satisfies StartingBusinessLink[],
   administrationNextSteps: [
@@ -693,7 +694,7 @@ export const startingBusinessNetherlandsPage = {
     { label: "Eindhoven city guide", href: EINDHOVEN_PATH, status: "live", description: "Brainport deep tech and hardware ecosystem." },
     { label: "RVO", href: "https://www.rvo.nl/", status: "live", description: "Government agency for entrepreneurship programmes and grants." },
     { label: "Startup visa guide", href: STARTUP_VISA_NETHERLANDS_PATH, status: "comingSoon", description: "Future guide on facilitator-linked startup residence routes." },
-    { label: "Business consultants", href: BUSINESS_CONSULTANTS_PATH, status: "comingSoon", description: "Future directory for business model and scaling support." },
+    { label: "Business consultants", href: BUSINESS_CONSULTANTS_PATH, status: "live", description: "Business model and scaling support beyond day-one registration." },
     { label: "ZZP guide", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Many ecosystem participants start as solo ZZP before scaling." },
   ] satisfies StartingBusinessLink[],
   ecosystemScenarios: [
@@ -879,10 +880,10 @@ export const startingBusinessNetherlandsPage = {
     "Use professionals for scoped review on structure, cross-border clients, permits and first-year admin — still read official sources yourself.",
   ],
   serviceCategories: [
-    { label: "Accountants", href: ACCOUNTANTS_PATH, description: "Bookkeeping, annual accounts and filing support for new businesses.", status: "comingSoon" },
+    { label: "Accountants", href: ACCOUNTANTS_PATH, description: "Bookkeeping, annual accounts and filing support for new businesses.", status: "live" },
     { label: "Tax advisors", href: TAX_ADVISORS_PATH, description: "BTW, income tax, corporate tax and cross-border orientation.", status: "live" },
     { label: "Financial advisors", href: FINANCIAL_ADVISORS_PATH, description: "Runway, buffers, insurance and cash-flow planning for founders.", status: "live" },
-    { label: "Business consultants", href: BUSINESS_CONSULTANTS_PATH, description: "Business model, market entry and scaling beyond day-one registration.", status: "comingSoon" },
+    { label: "Business consultants", href: BUSINESS_CONSULTANTS_PATH, description: "Business model, market entry and scaling beyond day-one registration.", status: "live" },
     { label: "Immigration lawyers", href: IMMIGRATION_LAWYERS_PATH, description: "Permit and entrepreneur route questions alongside business plans.", status: "live" },
   ] satisfies ServiceCategory[],
   servicesWhenToUse: [
@@ -993,30 +994,34 @@ export const startingBusinessNetherlandsPage = {
   relatedGuides: [
     { label: "ZZP Netherlands", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Dutch self-employment framework many entrepreneurs start with." },
     { label: "Freelancing Netherlands", href: FREELANCING_NETHERLANDS_PATH, status: "live", description: "Broader freelance guide — clients, cities, visas and pipeline." },
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Consultancy practice lane before broader company setup." },
     { label: "Expat Taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation when business income joins other streams." },
     { label: "VAT Netherlands", href: VAT_NETHERLANDS_PATH, status: "comingSoon", description: "Future dedicated BTW guide — confirm rules with Belastingdienst meanwhile." },
-    { label: "Accountants", href: ACCOUNTANTS_PATH, status: "comingSoon", description: "Future directory for bookkeeping and filing support." },
-    { label: "Business Consultants", href: BUSINESS_CONSULTANTS_PATH, status: "comingSoon", description: "Future directory for business model and scaling support." },
+    { label: "Accountants", href: ACCOUNTANTS_PATH, status: "live", description: "Bookkeeping and filing support for new businesses." },
+    { label: "Business Consultants", href: BUSINESS_CONSULTANTS_PATH, status: "live", description: "Business model and scaling support beyond day-one registration." },
   ] satisfies StartingBusinessLink[],
   relatedGuideReadingOrder: [
     "Read ZZP guide if you are starting solo — fastest path for many consultants.",
     "Open freelancing guide for client acquisition and city context beyond registration.",
+    "Open Starting consultancy when the venture is an advisory practice first.",
     "Read expat taxes before your first full business tax year.",
     "Browse tax advisors when cross-border clients or BV structure add complexity.",
   ],
   relatedGuideScenarios: [
     { profile: "Just registered", scenario: "KvK done; first Dutch client next week", whatToCheck: "ZZP or freelancing invoicing guides + expat taxes for set-asides." },
+    { profile: "Consultancy first", scenario: "Solo advisory practice before hiring", whatToCheck: "Starting consultancy for practice design; this page when you outgrow solo." },
     { profile: "Scaling EU clients", scenario: "Three new countries in pipeline", whatToCheck: "Foreign income and tax advisors before first cross-border invoice." },
   ] satisfies StartingBusinessScenarioRow[],
   exploreNextCards: [
     { label: "ZZP Guide", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Dutch self-employment framework — registration, taxes and clients." },
     { label: "Freelancing Guide", href: FREELANCING_NETHERLANDS_PATH, status: "live", description: "Broader freelance orientation beyond solo registration." },
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Advisory practice setup before broader entrepreneurship." },
     { label: "Business Banking", href: BEST_BANK_ZZP_PATH, status: "live", description: "Compare business banking for entrepreneurs and ZZP'ers." },
-    { label: "VAT Guide", href: VAT_NETHERLANDS_PATH, status: "comingSoon", description: "Future BTW guide — confirm rules with Belastingdienst meanwhile." },
     { label: "Tax Advisors", href: TAX_ADVISORS_PATH, status: "live", description: "Find tax support for business setup and cross-border work." },
   ] satisfies StartingBusinessLink[],
   exploreNextTips: [
     "Open ZZP guide if you are starting solo with client invoices.",
+    "Open Starting consultancy when niche consulting is the business model.",
     "Read freelancing guide for pipeline and city context beyond registration.",
     "Compare business banking before your first substantial client payments.",
     "Browse tax advisors when BTW, BV or international clients add complexity.",

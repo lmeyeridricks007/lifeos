@@ -1,0 +1,34 @@
+{
+  "id": "nl-services-tax-advisors-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/tax-advisors/",
+    "slot": "tax-advisor-related-support"
+  },
+  "variant": "cards",
+  "title": "Tax providers expats can contact for Dutch filing support",
+  "intro": "These providers help expats move from tax research to a real conversation about Dutch returns, the 30% ruling, M-forms and cross-border income. Treat this as soft discovery — not a ranking of tax firms, and not tax advice.",
+  "categoryOrder": ["tax", "services", "housing", "insurance"],
+  "items": [
+    {
+      "providerId": "blue-umbrella",
+      "reason": "Online Dutch tax filing and administration support useful when you need English-language help with returns and Belastingdienst communication."
+    },
+    {
+      "providerId": "broadstreet",
+      "reason": "Tax, accountancy and cross-border support for expats comparing advisory depth beyond a single filing."
+    },
+    {
+      "providerId": "taxsavers",
+      "reason": "Dutch tax return, M-form and 30% ruling support for newcomers and leavers sorting annual obligations."
+    }
+  ],
+  "registryProviders": {
+    "categories": ["tax-advisors", "financial-advisors", "relocation-services"],
+    "limit": 6,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat tax-advisor discovery, not pay-to-rank. This is not a ranking of tax firms and not tax, legal or financial advice. Confirm scope, credentials, fees and terms directly with each provider."
+}

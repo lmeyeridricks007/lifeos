@@ -27,6 +27,35 @@ export const LIVING_ESSENTIAL_APPS_PATH = "/netherlands/living/apps/" as const;
 /** Practical groceries, shops, payments, deliveries, and household rhythms. */
 export const LIVING_DAILY_LIFE_PATH = "/netherlands/living/daily-life/" as const;
 export const LIVING_SHOPPING_GROCERIES_PATH = "/netherlands/living/shopping-groceries/" as const;
+/** Food cluster — how Dutch supermarket chains work (not a ranked best-of). */
+export const DUTCH_SUPERMARKETS_PATH = "/netherlands/living/dutch-supermarkets/" as const;
+/** Food cluster — choosing among supermarket fits (not a ranked awards list). */
+export const BEST_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/best-supermarkets-netherlands/" as const;
+/** Food cluster — money-saving grocery tactics (discounters, offers, private label, waste). */
+export const CHEAP_GROCERIES_NETHERLANDS_PATH = "/netherlands/living/cheap-groceries-netherlands/" as const;
+/** Food cluster — finding non-Dutch / international products (specialty + mainstream aisles). */
+export const INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH =
+  "/netherlands/living/international-supermarkets-netherlands/" as const;
+/** Food cluster — Asian toko / supermarket specialty depth (not the broad international map). */
+export const ASIAN_SUPERMARKETS_NETHERLANDS_PATH =
+  "/netherlands/living/asian-supermarkets-netherlands/" as const;
+/** Food cluster — Turkish / Middle-Eastern specialty grocery depth (not the broad international map). */
+export const TURKISH_SUPERMARKETS_NETHERLANDS_PATH =
+  "/netherlands/living/turkish-supermarkets-netherlands/" as const;
+/** Food cluster — Indian / South Asian specialty grocery depth (not the broad international map). */
+export const INDIAN_SUPERMARKETS_NETHERLANDS_PATH =
+  "/netherlands/living/indian-supermarkets-netherlands/" as const;
+/** Food cluster — South African specialty shops / comfort-food depth (not the broad international map). */
+export const SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH =
+  "/netherlands/living/south-african-shops-netherlands/" as const;
+/** Food cluster — subscription meal-kit boxes (how they work, cost modelling, pause habits). */
+export const MEAL_KITS_NETHERLANDS_PATH = "/netherlands/living/meal-kits-netherlands/" as const;
+/** Food cluster — restaurant takeaway apps + grocery delivery (fees, tipping, when delivery wins). */
+export const FOOD_DELIVERY_NETHERLANDS_PATH = "/netherlands/living/food-delivery-netherlands/" as const;
+/** Food cluster — sit-down dining culture (reservations, lunch/dinner, terraces, bills, dietary norms). */
+export const RESTAURANTS_NETHERLANDS_PATH = "/netherlands/living/restaurants-netherlands/" as const;
+/** Food cluster — tipping norms (service culture, when/how much, delivery vs sit-down). */
+export const TIPPING_NETHERLANDS_PATH = "/netherlands/living/tipping-netherlands/" as const;
 export const LIVING_HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" as const;
 export const LIVING_EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety/" as const;
 export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/living/culture-etiquette/" as const;
@@ -686,6 +715,78 @@ export const LIVING_CLUSTER_SIBLING_LINKS_WEATHER: LivingClusterLinkItem[] = [
 ];
 
 export const LIVING_CLUSTER_SIBLING_LINKS_SHOPPING_GROCERIES: LivingClusterLinkItem[] = [
+  {
+    href: DUTCH_SUPERMARKETS_PATH,
+    title: "Dutch supermarkets",
+    description: "How Dutch grocery chains work day to day: formats, opening hours, bags, self-scan orientation, loyalty and weekly rhythm.",
+    cta: "Open Dutch supermarket system",
+  },
+  {
+    href: BEST_SUPERMARKETS_NETHERLANDS_PATH,
+    title: "Best supermarkets",
+    description: "Decision guide for which supermarket fit matches budget, organic, international products, one-stop, neighbourhood or delivery.",
+    cta: "Choose a supermarket fit",
+  },
+  {
+    href: CHEAP_GROCERIES_NETHERLANDS_PATH,
+    title: "Cheap groceries",
+    description: "Spend less on food with discounters, weekly offers, private label, timing, waste reduction and student-friendly budget tactics.",
+    cta: "Open cheap groceries tactics",
+  },
+  {
+    href: INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH,
+    title: "International supermarkets",
+    description: "Find non-Dutch products via world-food aisles, specialty markets and ethnic shops — an orientation map for when to use which.",
+    cta: "Open international sourcing map",
+  },
+  {
+    href: ASIAN_SUPERMARKETS_NETHERLANDS_PATH,
+    title: "Asian supermarkets",
+    description: "Asian toko and supermarket shopping: formats, product categories, city patterns and first-visit tips for East and Southeast Asian cooking.",
+    cta: "Open Asian specialty guide",
+  },
+  {
+    href: TURKISH_SUPERMARKETS_NETHERLANDS_PATH,
+    title: "Turkish supermarkets",
+    description: "Turkish and Middle-Eastern specialty shopping: formats, spices, breads, dairy drinks, city patterns and first-visit tips.",
+    cta: "Open Turkish specialty guide",
+  },
+  {
+    href: INDIAN_SUPERMARKETS_NETHERLANDS_PATH,
+    title: "Indian supermarkets",
+    description: "Indian and South Asian specialty shopping: formats, spices, dal, rice, flours, pickles, snacks, city patterns and first-visit tips.",
+    cta: "Open Indian specialty guide",
+  },
+  {
+    href: SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH,
+    title: "South African shops",
+    description: "South African specialty shops and comfort foods: biltong, pantry staples, sauces, sweets, city patterns and first-visit tips.",
+    cta: "Open South African shops guide",
+  },
+  {
+    href: MEAL_KITS_NETHERLANDS_PATH,
+    title: "Meal kits",
+    description: "Subscription meal-kit boxes: how they work, cost modelling vs supermarket cooking, who they suit, and pause/skip/cancel habits.",
+    cta: "Open meal kits guide",
+  },
+  {
+    href: FOOD_DELIVERY_NETHERLANDS_PATH,
+    title: "Food delivery",
+    description: "Restaurant takeaway apps and grocery delivery: fees, tipping norms, coverage checks and when delivery beats cooking or shopping.",
+    cta: "Open food delivery guide",
+  },
+  {
+    href: RESTAURANTS_NETHERLANDS_PATH,
+    title: "Restaurants",
+    description: "Sit-down dining culture: reservations, lunch vs dinner, terraces, bills and service, dietary norms and what expats should expect.",
+    cta: "Open restaurants guide",
+  },
+  {
+    href: TIPPING_NETHERLANDS_PATH,
+    title: "Tipping",
+    description: "Dutch tipping norms for restaurants, cafés, delivery and everyday service — usually more modest than US expectations.",
+    cta: "Open tipping guide",
+  },
   {
     href: LIVING_SURVIVAL_GUIDE_PATH,
     title: "Netherlands Survival Guide",

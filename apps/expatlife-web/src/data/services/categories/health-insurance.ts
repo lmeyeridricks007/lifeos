@@ -80,6 +80,11 @@ export const healthInsuranceCategoryPage: ServiceCategoryPageData = {
     ],
     links: [
       { label: "Health insurance guide", href: "/netherlands/health-insurance-netherlands/" },
+      {
+        label: "Health insurance comparison",
+        href: "/netherlands/health/health-insurance-comparison-netherlands/",
+      },
+      { label: "Insurance brokers", href: "/netherlands/services/insurance-brokers/" },
       { label: "After arriving in the Netherlands", href: "/netherlands/after-arriving-netherlands/" },
       { label: "All services hub", href: "/netherlands/services/" },
       { label: "Dutch cities overview", href: "/netherlands/cities/" },
@@ -329,6 +334,10 @@ export const healthInsuranceCategoryPage: ServiceCategoryPageData = {
       title: "Essential Guides",
       links: [
         { label: "Health insurance in the Netherlands", href: "/netherlands/health-insurance-netherlands/" },
+        {
+          label: "Health insurance comparison",
+          href: "/netherlands/health/health-insurance-comparison-netherlands/",
+        },
         { label: "After arriving in the Netherlands", href: "/netherlands/after-arriving-netherlands/" },
         { label: "Municipality registration", href: "/netherlands/municipality-registration-netherlands/" },
         { label: "Open a bank account", href: "/netherlands/open-bank-account-netherlands/" },
@@ -356,16 +365,27 @@ export const healthInsuranceCategoryPage: ServiceCategoryPageData = {
       title: "Services Hub",
       links: [
         { label: "All services", href: "/netherlands/services/" },
+        { label: "Insurance providers", href: "/netherlands/services/insurance-providers/" },
+        { label: "Insurance brokers", href: "/netherlands/services/insurance-brokers/" },
+        { label: "Financial advisors", href: "/netherlands/services/financial-advisors/" },
       ],
     },
   ],
 
   relatedCategories: [
+    { label: "Insurance providers", href: "/netherlands/services/insurance-providers/" },
+    { label: "Insurance brokers", href: "/netherlands/services/insurance-brokers/" },
+    {
+      label: "Health insurance comparison",
+      href: "/netherlands/health/health-insurance-comparison-netherlands/",
+    },
     { label: "Insurance overview", href: "/netherlands/services/insurance/" },
     { label: "Liability insurance", href: "/netherlands/services/insurance/#liability" },
     { label: "Home insurance", href: "/netherlands/services/insurance/#home" },
     { label: "Travel insurance", href: "/netherlands/services/insurance/#travel" },
   ],
+
+  affiliatePlacementId: "nl-services-health-insurance-support-providers",
 
   tools: [
     { label: "Moving Checklist", href: "/netherlands/moving/tools/moving-checklist/", description: "Personalized checklist for your move", status: "live" },

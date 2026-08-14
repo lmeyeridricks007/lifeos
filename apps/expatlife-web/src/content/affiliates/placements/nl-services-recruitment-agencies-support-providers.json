@@ -1,0 +1,48 @@
+{
+  "id": "nl-services-recruitment-agencies-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/recruitment-agencies/",
+    "slot": "recruitment-agency-related-support"
+  },
+  "variant": "cards",
+  "title": "Providers expats compare around a Dutch agency-led job search",
+  "intro": "Shortlisting **recruitment agencies** often overlaps with **tax and offer modelling**, **visa questions**, **relocation timing**, **housing search** and **mandatory setup** once a placement is in play. These listings are soft discovery for related support — not a ranking of recruitment agencies, uitzendbureaus or headhunters, and not job placement guarantees. Confirm services, pricing and credentials before you commit.",
+  "categoryOrder": ["tax", "services", "visa", "housing", "banking", "insurance"],
+  "items": [
+    {
+      "providerId": "blue-umbrella",
+      "reason": "Online Dutch tax filing and payroll context when an agency-led offer needs gross-to-net modelling."
+    },
+    {
+      "providerId": "broadstreet",
+      "reason": "Tax, accountancy and cross-border support for expats evaluating Dutch employment contracts after agency interviews."
+    },
+    {
+      "providerId": "taxsavers",
+      "reason": "Dutch tax return, M-form and 30% ruling support once a recruiter-facilitated Dutch offer is on the table."
+    },
+    {
+      "providerId": "housinganywhere",
+      "reason": "Furnished rentals and mid-term housing while you interview via agencies, relocate or start a new role."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Compare Dutch basic health insurance before or after starting a recruiter-placed job in the Netherlands."
+    }
+  ],
+  "registryProviders": {
+    "categories": [
+      "immigration-lawyers",
+      "visa-consultants",
+      "relocation-services",
+      "relocation-agencies",
+      "housing-platforms"
+    ],
+    "limit": 8,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat recruitment-agency discovery and related support, not pay-to-rank. This is not a ranking of recruitment agencies, uitzendbureaus or headhunters — and not career, immigration or recruitment advice. Verify outcomes with employers, IND or qualified advisers."
+}

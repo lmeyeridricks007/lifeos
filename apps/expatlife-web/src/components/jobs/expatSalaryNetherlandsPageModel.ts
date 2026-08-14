@@ -339,7 +339,7 @@ export const expatSalaryNetherlandsPage = {
     { title: "Recruitment support", body: "Market context and offer benchmarking — not a substitute for your own negotiation." },
   ],
   services: [
-    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "comingSoon", description: "Future directory for job search support." },
+    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "live", description: "Services directory for comparing recruitment agency providers." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Help with move planning alongside offer evaluation." },
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Payroll, 30% ruling and tax questions for international workers." },
     { label: "Immigration lawyers", href: "/netherlands/services/immigration-lawyers/", status: "live", description: "Visa and permit context alongside employment offers." },
@@ -355,6 +355,8 @@ export const expatSalaryNetherlandsPage = {
   ] satisfies ExpatSalaryNetherlandsLink[],
   relatedGuides: [
     { label: "Finding Jobs in the Netherlands", href: "/netherlands/jobs/finding-jobs-netherlands/", status: "live", description: "Job market, visa sponsorship context, recruiters and Dutch hiring culture for expats." },
+    { label: "CV Netherlands", href: "/netherlands/jobs/cv-netherlands/", status: "live", description: "Dutch CV and application materials for international professionals." },
+    { label: "Interview Tips Netherlands", href: "/netherlands/jobs/interview-tips-netherlands/", status: "live", description: "Dutch interview culture and preparation before offer talks." },
     { label: "Dutch workplace culture", href: "/netherlands/jobs/dutch-workplace-culture/", status: "live", description: "Professional culture, communication and work-life balance for expats." },
     { label: "Moving to the Netherlands", href: MOVING_HUB_PATH, status: "live", description: "Relocation planning with employment context." },
     { label: "Netherlands Taxes Guide", href: TAXES_HUB_PATH, status: "live", description: "Salary and tax hub for expats." },

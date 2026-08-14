@@ -278,12 +278,16 @@ export const mobileConnectivityCategoryPage: ServiceCategoryPageData = {
   ],
 
   relatedCategories: [
+    { label: "Phone providers", href: "/netherlands/services/phone-providers/" },
+    { label: "Internet providers", href: "/netherlands/services/internet-providers/" },
+    { label: "Energy providers", href: "/netherlands/services/energy-providers/" },
     { label: "Banks", href: "/netherlands/services/banks/" },
     { label: "Health insurance", href: "/netherlands/services/health-insurance/" },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/" },
   ],
 
   tools: [
+    { label: "Phone providers directory", href: "/netherlands/services/phone-providers/", description: "SIM, prepaid and eSIM provider discovery", status: "live" },
     { label: "Arrival planner", href: "/netherlands/moving/tools/arrival-planner/", description: "Order tasks including mobile connectivity", status: "live" },
     { label: "Moving checklist", href: "/netherlands/moving/tools/moving-checklist/", description: "Personalized relocation checklist", status: "live" },
     { label: "First 90 days", href: "/netherlands/first-90-days-netherlands/", description: "Structured first months guide", status: "live" },

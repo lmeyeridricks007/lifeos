@@ -1,0 +1,29 @@
+{
+  "id": "nl-services-insurance-brokers-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/insurance-brokers/",
+    "slot": "insurance-broker-comparison-options"
+  },
+  "variant": "cards",
+  "title": "Compare insurance options before you instruct a broker",
+  "intro": "Soft CTAs for Dutch insurance comparison when you want to orient yourself before or beside broker advice. Confirm live quotes, cover and exclusions yourself — this block is not a ranking of brokers or insurers, and not personal insurance advice.",
+  "categoryOrder": ["insurance", "services"],
+  "items": [
+    {
+      "providerId": "independer",
+      "reason": "Real Dutch comparison site for health and other insurance lines — useful when you want to self-compare packages before talking to an independent broker."
+    },
+    {
+      "providerId": "pricewise",
+      "reason": "Comparison site that also covers insurance alongside energy and internet — useful for household setup orientation, not a broker endorsement."
+    },
+    {
+      "providerId": "independer-pet",
+      "reason": "Pet and household insurance comparison orientation when you are building a wider non-life package — verify cover yourself."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat insurance-broker discovery and comparison orientation — not pay-to-rank placement of brokers. This is not insurance, financial or legal advice; verify AFM registration where relevant and confirm fees, independence, cover and terms directly with licensed intermediaries and insurers."
+}

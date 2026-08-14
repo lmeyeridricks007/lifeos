@@ -1,0 +1,29 @@
+{
+  "id": "nl-living-meal-kits-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/living/meal-kits-netherlands/",
+    "slot": "recommended-providers-meal-kits"
+  },
+  "variant": "cards",
+  "title": "Meal-kit and grocery tools to explore",
+  "intro": "Soft CTAs for established meal-kit and grocery patterns when you are modelling subscription boxes against supermarket cooking and grocery delivery. Confirm coverage, box prices and pause rules on each site — this block is not a ranking of meal-kit apps.",
+  "categoryOrder": ["groceries"],
+  "items": [
+    {
+      "providerId": "hellofresh",
+      "reason": "Central meal-kit modelling option — useful when comparing predictable dinner costs, portioned ingredients and pause/skip habits with supermarket cooking."
+    },
+    {
+      "providerId": "picnic",
+      "reason": "App-based grocery delivery alternative when you are weighing meal kits against shopping your own ingredients with delivery convenience."
+    },
+    {
+      "providerId": "albert-heijn",
+      "reason": "Full-service supermarket baseline and AH Bezorgen — useful when modelling kit per-serving cost against store-brand cooking and weekly shop habits."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects page relevance for meal-kit modelling — HelloFresh first, then grocery alternatives — not pay-to-rank placement or a meal-kit awards podium. Box prices, fees and coverage change — treat any basket as orientation, not a quote. This is not financial or shopping advice."
+}

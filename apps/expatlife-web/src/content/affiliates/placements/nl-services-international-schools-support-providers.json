@@ -1,0 +1,38 @@
+{
+  "id": "nl-services-international-schools-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/international-schools/",
+    "slot": "international-schools-related-support"
+  },
+  "variant": "cards",
+  "title": "Housing and relocation support near school shortlists",
+  "intro": "Choosing an international school often overlaps with **where you live**, commute timing and temporary housing. These listings are soft discovery for related support — **not a ranking of schools**, and not admissions or fee advice. Confirm school places, fees and housing terms directly before you decide.",
+  "categoryOrder": ["housing", "services"],
+  "items": [
+    {
+      "providerId": "housinganywhere",
+      "reason": "Furnished mid-term rentals useful when school offers arrive before a long-term lease is ready — search near your shortlisted campuses."
+    },
+    {
+      "providerId": "pararius",
+      "reason": "Dutch rental listings families use when aligning neighbourhood choice with school commute and start dates."
+    },
+    {
+      "providerId": "funda",
+      "reason": "Primary Dutch property search platform when buying near international school catchment or commute corridors."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Household insurance comparison orientation once you settle near a school — not school placement support."
+    }
+  ],
+  "registryProviders": {
+    "categories": ["housing-platforms", "relocation-services", "relocation-agencies"],
+    "limit": 4,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat school-related housing and relocation timing — not pay-to-rank placement of schools. This is not a ranking of international schools, and not admissions, education or financial advice. Verify fees, places and housing terms directly with schools and providers."
+}

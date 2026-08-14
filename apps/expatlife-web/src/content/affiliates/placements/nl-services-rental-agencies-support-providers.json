@@ -1,0 +1,51 @@
+{
+  "id": "nl-services-rental-agencies-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/rental-agencies/",
+    "slot": "rental-agency-related-support"
+  },
+  "variant": "cards",
+  "title": "Housing platforms and support expats compare alongside rental agencies",
+  "intro": "Many expats combine **rental-agency mediation** with **DIY listing platforms** and arrival setup (insurance, tax timing). These listings are soft discovery for related housing and settling support — **not a ranking of rental agencies or brokers**, and not fee or contract guarantees. Confirm agency fees, landlord arrangements and listing terms before you commit.",
+  "categoryOrder": ["housing", "insurance", "tax", "services"],
+  "items": [
+    {
+      "providerId": "pararius",
+      "reason": "Major Dutch rental listing platform commonly used alongside or instead of agency shortlists when you want to browse apartments yourself."
+    },
+    {
+      "providerId": "funda",
+      "reason": "Broad property search when you are comparing rentals on the open market while also speaking with a rental agency."
+    },
+    {
+      "providerId": "kamernet",
+      "reason": "Rooms and shared housing listings useful for students and newcomers who may not need full agency mediation."
+    },
+    {
+      "providerId": "housinganywhere",
+      "reason": "Furnished and mid-term rentals often used by internationals bridging arrival before a long-term agency or DIY lease."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Compare Dutch basic health insurance when a new rental coincides with municipality registration and cover deadlines."
+    },
+    {
+      "providerId": "blue-umbrella",
+      "reason": "Online Dutch tax filing context when a rental move overlaps with arrival-year or address-change tax questions."
+    }
+  ],
+  "registryProviders": {
+    "categories": [
+      "housing-platforms",
+      "relocation-services",
+      "relocation-agencies",
+      "rental-agencies"
+    ],
+    "limit": 6,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat rental-agency discovery and related housing support, not pay-to-rank. This is not a ranking of rental agencies or brokers — and not legal, housing or financial advice. Verify fees, contracts and registration rules directly with agencies and landlords."
+}

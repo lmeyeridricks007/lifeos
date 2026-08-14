@@ -128,6 +128,8 @@ export type ServiceCategoryPageData = {
   relatedCategories?: Array<{ label: string; href: string }>;
   tools: Array<{ label: string; href: string; description?: string; status?: "live" | "coming_soon" }>;
   disclosure: string[];
+  /** Optional affiliate placement id (e.g. nl-services-*-support-providers) for soft discovery CTAs */
+  affiliatePlacementId?: string;
   /** Optional: e.g. Dutch Deposit Guarantee for banks page */
   trustBlock?: { heading: string; paragraphs: string[]; highlight?: string; link?: { label: string; href: string } };
   /** Optional: legal matters grid (immigration lawyers page) */

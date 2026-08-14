@@ -60,6 +60,7 @@ export const immigrationLawyersCategoryPage: ServiceCategoryPageData = {
     { id: "common-matters", label: "Common Immigration Matters" },
     { id: "what-to-compare", label: "What to Compare Between Lawyers" },
     { id: "compare-providers", label: "Compare Providers" },
+    { id: "affiliate-providers", label: "Related Providers" },
     { id: "typical-costs", label: "Typical Costs" },
     { id: "when-not-need", label: "When You May Not Need a Lawyer" },
     { id: "scenarios", label: "Example Scenarios" },
@@ -380,20 +381,35 @@ export const immigrationLawyersCategoryPage: ServiceCategoryPageData = {
       ],
     },
     {
-      title: "Services hub",
+      title: "Service directories",
       links: [
         { label: "All services", href: "/netherlands/services/" },
-        { label: "Immigration & visas", href: "/netherlands/services/immigration-visas/" },
-        { label: "Relocation agencies (planned)", href: "/netherlands/services/relocation-agencies/" },
-        { label: "Document translation (planned)", href: "/netherlands/services/document-translation/" },
+        { label: "Visa consultants", href: "/netherlands/services/visa-consultants/" },
+        { label: "Recruitment agencies directory", href: "/netherlands/services/recruitment-agencies/" },
+        { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/" },
+        { label: "Financial advisors", href: "/netherlands/services/financial-advisors/" },
+        { label: "Tax advisors", href: "/netherlands/services/tax-advisors/" },
+        { label: "Relocation agencies", href: "/netherlands/services/relocation-agencies/" },
+      ],
+    },
+    {
+      title: "Jobs & career context",
+      links: [
+        { label: "Recruitment agencies career guide", href: "/netherlands/jobs/recruitment-agencies-netherlands/" },
+        { label: "Finding jobs Netherlands", href: "/netherlands/jobs/finding-jobs-netherlands/" },
       ],
     },
   ],
 
   relatedCategories: [
+    { label: "Visa consultants", href: "/netherlands/services/visa-consultants/" },
+    { label: "Recruitment agencies directory", href: "/netherlands/services/recruitment-agencies/" },
+    { label: "Mortgage advisors", href: "/netherlands/services/mortgage-advisors/" },
+    { label: "Financial advisors", href: "/netherlands/services/financial-advisors/" },
+    { label: "Tax advisors", href: "/netherlands/services/tax-advisors/" },
+    { label: "Relocation agencies", href: "/netherlands/services/relocation-agencies/" },
     { label: "Immigration & visas", href: "/netherlands/services/immigration-visas/" },
     { label: "Documents & legal", href: "/netherlands/services/documents-legal/" },
-    { label: "Relocation agencies (planned)", href: "/netherlands/services/relocation-agencies/" },
   ],
 
   tools: [
@@ -407,6 +423,7 @@ export const immigrationLawyersCategoryPage: ServiceCategoryPageData = {
   disclosure: [
     "This page is for information only and does not constitute legal advice.",
     "Provider comparisons are editorial guidance. We do not recommend a specific lawyer or firm; suitability depends on your case.",
+    "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you.",
     "Always verify current fees, availability, and case fit directly with the lawyer or firm.",
     "Immigration rules and procedures can change; check official IND and government sources.",
   ],

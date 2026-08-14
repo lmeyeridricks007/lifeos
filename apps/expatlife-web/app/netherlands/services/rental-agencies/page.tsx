@@ -23,6 +23,7 @@ import {
 import { RelatedGuidesSection } from "@/src/components/city-hub/RelatedGuidesGrid";
 import { ToolCards } from "@/src/components/city-hub/ToolCards";
 import { OfficialSourcesList } from "@/src/components/city-hub/OfficialSourcesList";
+import { AffiliateBlockView } from "@/src/components/affiliates/AffiliateBlockView";
 import { rentalAgenciesCategoryPage } from "@/src/data/services/categories/rental-agencies";
 import { rentalAgencies } from "@/src/data/companies-registry";
 import type { CityRelatedGuideBlock } from "@/src/lib/city-hub/types";
@@ -31,9 +32,18 @@ import type { CityOfficialSource } from "@/src/lib/city-hub/types";
 import type { ServiceCategoryProviderCard } from "@/src/lib/service-category/types";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { googleFaviconUrl } from "@/src/lib/provider-logo-url";
+import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
+
+const RENTAL_AGENCIES_AFFILIATE_PLACEMENT_ID = "nl-services-rental-agencies-support-providers";
 
 const baseUrl = getSiteOrigin();
 const data = rentalAgenciesCategoryPage;
+const affiliateProviderData = loadPlacementWithProviders(
+  RENTAL_AGENCIES_AFFILIATE_PLACEMENT_ID,
+  "netherlands",
+  undefined
+);
+const showAffiliateProviders = Boolean(affiliateProviderData?.items?.length);
 
 function mapRentalAgenciesToComparisonCards(): ServiceCategoryProviderCard[] {
   const basePath = "/netherlands/services/rental-agencies";
@@ -215,6 +225,23 @@ export default function RentalAgenciesCategoryPage() {
                   sectionIntro={data.comparisonSection?.intro}
                 />
 
+                {showAffiliateProviders && affiliateProviderData ? (
+                  <section id="affiliate-providers" className="scroll-mt-24 mt-8 space-y-5">
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
+                      Housing platforms and related support
+                    </h2>
+                    <p className="text-copilot-text-secondary leading-relaxed">
+                      Soft discovery for listing platforms and settling support often used alongside rental agencies —
+                      not a ranking of agencies or brokers. Confirm fees and terms before you commit.
+                    </p>
+                    <AffiliateBlockView
+                      placement={affiliateProviderData.placement}
+                      items={affiliateProviderData.items}
+                      hidePlacementTitle
+                    />
+                  </section>
+                ) : null}
+
                 <section id="what-to-compare" className="scroll-mt-24 mt-8 space-y-5">
                   <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
                     How to Compare Rental Agencies in the Netherlands
@@ -302,6 +329,11 @@ export default function RentalAgenciesCategoryPage() {
                 <section className="scroll-mt-24 mt-8 space-y-5">
                   <h2 className="text-xl font-bold text-copilot-text-primary">Editorial disclosure</h2>
                   <EditorialDisclosureBlock disclosure={data.disclosure} />
+                  {affiliateProviderData?.placement?.disclosure ? (
+                    <p className="text-sm leading-relaxed text-copilot-text-secondary">
+                      {affiliateProviderData.placement.disclosure}
+                    </p>
+                  ) : null}
                   <ServiceCategoryTrustLinks />
                 </section>
               </main>

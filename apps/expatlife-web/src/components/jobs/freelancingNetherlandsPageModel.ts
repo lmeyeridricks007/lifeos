@@ -1,4 +1,5 @@
 export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
+export const STARTING_CONSULTANCY_NETHERLANDS_PATH = "/netherlands/jobs/starting-consultancy-netherlands/" as const;
 export const CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands/" as const;
 export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as const;
 export const FREELANCING_AFFILIATE_PLACEMENT_ID = "nl-jobs-freelancing-support-providers" as const;
@@ -233,7 +234,7 @@ export const freelancingNetherlandsPage = {
     paragraphs: [
       "Many expats successfully freelance in the Netherlands. Freelancers work across industries such as software development, design, consulting, marketing, writing, photography, coaching and business services — often for Dutch, EU and global clients.",
       "However, freelancing involves both freedom and responsibility. You typically manage KvK registration, taxes, insurance, contracts and client administration yourself, while gaining flexibility over clients, hours and rates.",
-      "This guide explains practical orientation to reduce overwhelm — not legal, tax or immigration advice. Verify your situation with KvK, Belastingdienst, IND and qualified professionals.",
+      "This guide explains practical orientation to reduce overwhelm — not legal, tax or immigration advice. Verify your situation with KvK, Belastingdienst, IND and qualified professionals. If you are designing an advisory practice (niche, rates, SOWs and pipeline), use the Starting consultancy guide alongside this freelancing orientation.",
     ],
     keyPoints: [
       { title: "ZZP is the common self-employment form", body: "Example: UX consultant registers eenmanszaak at KvK, invoices clients €90/hour ex BTW — verify whether your activity fits ZZP rules before starting." },
@@ -696,38 +697,40 @@ export const freelancingNetherlandsPage = {
     { q: "Is freelancing popular in the Netherlands?", a: "Yes — ZZP self-employment is common across consulting, tech, creative and business services in major cities." },
   ],
   relatedGuides: [
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Consultancy practice setup — positioning, first clients, rates orientation, contracts and when consultancy differs from generic freelancing." },
     { label: "Contractor vs Employee", href: CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH, status: "live", description: "Compare employment and ZZP or contractor models: income, benefits, taxes and expat tradeoffs." },
+    { label: "Remote Work Netherlands", href: "/netherlands/jobs/remote-work-netherlands/", status: "live", description: "Employee remote/hybrid norms — different from ZZP freelancing." },
     { label: "ZZP in the Netherlands", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Cornerstone guide on Dutch ZZP registration, taxes, invoicing and expat context." },
     { label: "Finding Jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Employer routes and job search when freelancing is a bridge or alternative." },
     { label: "Expat Taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation when freelance income joins employment or foreign assets." },
     { label: "Foreign Income Netherlands", href: FOREIGN_INCOME_NETHERLANDS_PATH, status: "live", description: "Cross-border income context for international client work." },
-    { label: "Financial Advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Pension, buffers and planning when income becomes variable." },
     { label: "Starting a Business Netherlands", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "live", description: "Cornerstone guide for broader entrepreneurship beyond solo ZZP." },
   ] satisfies FreelancingLink[],
   relatedGuideReadingOrder: [
+    "Open Starting consultancy when you are designing an advisory practice, not only general ZZP freelancing.",
     "Open finding jobs when freelancing is a bridge while you search for employment.",
     "Read expat taxes and foreign income guides before scaling international clients.",
     "Use financial advisors when buffers, pension gaps or insurance add complexity.",
   ],
   ecosystemLinks: [
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Practice design lane — niche, pipeline, rates and professional-services contracts." },
     { label: "Contractor vs employee", href: CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH, status: "live", description: "Work-model comparison hub between employment and ZZP routes." },
     { label: "Finding jobs Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Job search hub alongside freelance planning." },
     { label: "Expat taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Core tax orientation for international residents." },
     { label: "Foreign income Netherlands", href: FOREIGN_INCOME_NETHERLANDS_PATH, status: "live", description: "When clients or assets sit outside the Netherlands." },
     { label: "Double taxation Netherlands", href: DOUBLE_TAXATION_NETHERLANDS_PATH, status: "live", description: "Treaty context for global client relationships." },
     { label: "Financial advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Professional support for buffers, pension and insurance." },
-    { label: "Business hub", href: BUSINESS_HUB_PATH, status: "comingSoon", description: "Future entrepreneurship cluster for company setup beyond ZZP." },
   ] satisfies FreelancingLink[],
   relatedGuideScenarios: [
     { profile: "Freelance bridge", scenario: "ZZP while searching for permanent employment", whatToCheck: "Finding jobs guide for pipeline; KvK for interim invoices." },
+    { profile: "Advisory practice", scenario: "Niche consulting offer with SOWs and day rates", whatToCheck: "Starting consultancy for practice design; this freelancing guide for ZZP admin." },
     { profile: "Scaling EU clients", scenario: "Second year with German and French B2B clients", whatToCheck: "Foreign income and double taxation guides before revenue grows." },
-    { profile: "Variable income planning", scenario: "Leaving employment; first ZZP year", whatToCheck: "Financial advisors guide for buffers, pension gap and insurance." },
-    { profile: "Beyond solo ZZP", scenario: "Considering hiring or BV structure later", whatToCheck: "Starting a business guide when live; accountant scoping meanwhile." },
+    { profile: "Beyond solo ZZP", scenario: "Considering hiring or BV structure later", whatToCheck: "Starting a business guide; accountant scoping meanwhile." },
   ] satisfies FreelancingScenarioRow[],
   serviceCategories: [
-    { label: "Accountants", href: ACCOUNTANTS_PATH, status: "comingSoon", description: "Bookkeeping, BTW filings and ZZP compliance — confirm scope before engaging." },
+    { label: "Accountants", href: ACCOUNTANTS_PATH, status: "live", description: "Bookkeeping, BTW filings and ZZP compliance — confirm scope before engaging." },
     { label: "Tax advisors", href: TAX_ADVISORS_PATH, status: "live", description: "Income tax, cross-border clients, kleineondernemersregeling and expat context." },
-    { label: "Business consultants", href: BUSINESS_CONSULTANTS_PATH, status: "comingSoon", description: "Structure, positioning and operational setup beyond day-one registration." },
+    { label: "Business consultants", href: BUSINESS_CONSULTANTS_PATH, status: "live", description: "Structure, positioning and operational setup beyond day-one registration." },
     { label: "Financial advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Buffers, pension gaps, insurance and variable-income planning." },
     { label: "Immigration lawyers", href: IMMIGRATION_LAWYERS_PATH, status: "live", description: "Permit questions when self-employment intersects with residency routes." },
   ] satisfies ServiceCategory[],
@@ -755,11 +758,13 @@ export const freelancingNetherlandsPage = {
     { q: "Do freelancers pay VAT?", a: "Many charge BTW on invoices and file quarterly returns. Small-business VAT scheme may apply below thresholds — verify independently." },
     { q: "How do freelancers find clients?", a: "LinkedIn, referrals, agencies, platforms, coworking communities and professional associations are common channels in the Netherlands." },
     { q: "Is freelancing common in the Netherlands?", a: "Yes — ZZP self-employment is widespread across consulting, tech, creative and business services in major cities." },
+    { q: "How is freelancing different from starting a consultancy?", a: "Freelancing is the broad ZZP orientation (registration, clients, taxes). Starting consultancy covers practice design — niche, advisory offers, rates thinking and professional-services contracts — when that is your lane." },
   ],
   faqNextSteps: [
     "Confirm permit rules on ind.nl if you are not freelancing under EU free movement.",
     "Register at KvK and speak with a tax adviser before large client invoices.",
     "Build a 3–6 month buffer and compare health insurance options.",
+    "Open Starting consultancy if you are building an advisory practice rather than general freelancing.",
   ],
   faqScenarios: [
     { profile: "KvK timing", scenario: "Client start date in 5 days; no registration yet", whatToCheck: "Priority KvK enrolment and accountant call this week." },
@@ -790,22 +795,23 @@ export const freelancingNetherlandsPage = {
     { profile: "Leaving employment for ZZP", scenario: "Last employment day 30 June", whatToCheck: "UWV orientation plus IND if permit tied to employer." },
   ] satisfies FreelancingScenarioRow[],
   exploreNextTips: [
+    "Open Starting consultancy when your next step is practice design (niche, rates, SOWs), not only ZZP admin.",
     "Open expat taxes when freelance income joins employment or foreign assets in the same year.",
     "Read foreign income before scaling EU or global client contracts.",
     "Use financial advisor listings when buffers, pension gaps or insurance add complexity.",
   ],
   exploreNextCards: [
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Advisory practice setup — positioning, clients, rates and contracts." },
     { label: "Starting a Business", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "live", description: "Cornerstone entrepreneurship guide for expats." },
+    { label: "Contractor vs employee", href: CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH, status: "live", description: "Compare employment and ZZP or contractor models." },
     { label: "Expat Taxes", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation when freelance income joins other streams." },
-    { label: "Foreign Income", href: FOREIGN_INCOME_NETHERLANDS_PATH, status: "live", description: "Cross-border income when clients sit outside the Netherlands." },
-    { label: "Financial Advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Buffers, pension and insurance planning for variable income." },
-    { label: "Finding Clients", href: "#finding-clients", status: "live", description: "Return to client-acquisition channels and pipeline planning on this page." },
+    { label: "ZZP Netherlands", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Registration/system deep-dive for Dutch self-employment." },
   ] satisfies FreelancingLink[],
   planningLinks: [
+    { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, description: "Practice design when consultancy is your freelancing lane." },
     { label: "Expat taxes guide", href: EXPAT_TAXES_NETHERLANDS_PATH, description: "Tax orientation when freelance income joins employment or foreign assets." },
     { label: "Foreign income guide", href: FOREIGN_INCOME_NETHERLANDS_PATH, description: "Cross-border clients and income streams outside the Netherlands." },
     { label: "Finding jobs guide", href: FINDING_JOBS_NETHERLANDS_PATH, description: "Employer routes when freelancing is a bridge while you search." },
-    { label: "Financial advisors", href: FINANCIAL_ADVISORS_PATH, description: "Buffers, pension gaps and insurance for variable ZZP income." },
   ] satisfies FreelancingLink[],
 } as const;
 

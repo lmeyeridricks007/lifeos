@@ -1,0 +1,43 @@
+{
+  "id": "nl-services-handymen-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/handymen/",
+    "slot": "handymen-related-support"
+  },
+  "variant": "cards",
+  "title": "Providers expats compare around home repairs and klusjesman jobs",
+  "intro": "Shortlisting a **klusjesman** or handyman often overlaps with **finding or settling a Dutch rental**, **comparing insurance**, and **relocation timing** when shelves, assembly and small repairs collide with keys and move-in week. These listings are soft discovery for related housing and relocation support — **not a ranking of handymen or klusjesmannen**, and not price or repair guarantees. Confirm scope, insurance, licensed-trade boundaries and credentials before you book.",
+  "categoryOrder": ["housing", "insurance", "services"],
+  "items": [
+    {
+      "providerId": "housinganywhere",
+      "reason": "Furnished and mid-term rentals when you need a bridge address while scheduling move-in assembly, shelves or small repairs."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Compare Dutch basic health insurance when a move or lease change coincides with registration or cover switches."
+    },
+    {
+      "providerId": "pararius",
+      "reason": "Rental listings commonly used by expats hunting apartments before booking assembly, painting touch-ups or odd jobs."
+    },
+    {
+      "providerId": "funda",
+      "reason": "Property search when small works coincide with buying, selling or emptying a purchased home."
+    }
+  ],
+  "registryProviders": {
+    "categories": [
+      "housing-platforms",
+      "rental-agencies",
+      "relocation-services",
+      "relocation-agencies"
+    ],
+    "limit": 8,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat handyman / klusjesman discovery and related housing/relocation support, not pay-to-rank. This is not a ranking of handymen or klusjesmannen — and not housing, legal, insurance, building-code or consumer-rights advice. Verify quotes, insurance, licensed-trade boundaries and scope directly with providers."
+}

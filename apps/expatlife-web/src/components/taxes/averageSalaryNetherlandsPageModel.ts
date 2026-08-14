@@ -344,9 +344,9 @@ export const averageSalaryNetherlandsPage = {
   ] satisfies AverageSalaryNetherlandsLink[],
   services: [
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Compare tax advisors for salary, ruling and cross-border questions." },
-    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "comingSoon", description: "Future directory for accounting support." },
+    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "live", description: "Bookkeeping, BTW filings and accounting support for expats." },
     { label: "Payroll specialists", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Future directory for payroll help." },
-    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "comingSoon", description: "Future directory for recruitment support." },
+    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "live", description: "Services directory for comparing recruitment agency providers." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Help with salary planning alongside move logistics." },
   ] satisfies AverageSalaryNetherlandsLink[],
   faq: [

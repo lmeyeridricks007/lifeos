@@ -1,0 +1,25 @@
+{
+  "id": "nl-services-energy-providers-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/energy-providers/",
+    "slot": "energy-comparison-options"
+  },
+  "variant": "cards",
+  "title": "Compare energy deals before you switch supplier",
+  "intro": "Soft CTAs for Dutch electricity and gas comparison when you want to orient yourself before signing a fixed or variable contract. Confirm unit rates, standing charges, contract length and cancellation rules yourself — this block is not a ranking of energy brands, and not personal energy or financial advice.",
+  "categoryOrder": ["services", "insurance"],
+  "items": [
+    {
+      "providerId": "pricewise",
+      "reason": "Real Dutch comparison site covering energy alongside internet and insurance — useful when you want to screen fixed vs variable deals and contract lengths before switching supplier."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Comparison platform that also covers utilities orientation — soft overlap when you are setting up a household package, not an energy-brand endorsement."
+    }
+  ],
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat energy discovery and comparison orientation — not pay-to-rank placement of energy brands. This is not energy, financial or legal advice; verify rates, standing charges, contract terms and switching rules directly with providers and official ACM / ConsuWijzer consumer guidance."
+}

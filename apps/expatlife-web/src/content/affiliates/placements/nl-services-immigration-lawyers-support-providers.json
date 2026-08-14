@@ -1,0 +1,49 @@
+{
+  "id": "nl-services-immigration-lawyers-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "service-directory",
+    "route": "/netherlands/services/immigration-lawyers/",
+    "slot": "immigration-lawyer-support-options"
+  },
+  "variant": "cards",
+  "title": "Providers expats compare alongside immigration legal support",
+  "intro": "Immigration cases often overlap with **visa route checks**, **relocation logistics**, **tax and payroll setup**, and **housing timing**. These listings are for soft discovery when you need scoped help — not a ranking of immigration lawyers and not legal advice. Confirm services, pricing and credentials before you commit.",
+  "categoryOrder": ["services", "visa", "tax", "housing", "banking", "insurance"],
+  "items": [
+    {
+      "providerId": "blue-umbrella",
+      "reason": "Online Dutch tax filing and payroll context when residence status and first Dutch employment overlap."
+    },
+    {
+      "providerId": "broadstreet",
+      "reason": "Tax, accountancy and cross-border support for expats whose immigration file connects to Dutch income or entrepreneur setup."
+    },
+    {
+      "providerId": "taxsavers",
+      "reason": "Dutch tax return, M-form and 30% ruling support after a residence or work route becomes clearer."
+    },
+    {
+      "providerId": "housinganywhere",
+      "reason": "Furnished rentals and mid-term housing while a permit, registration or family-migration timeline is in motion."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Compare Dutch basic health insurance once you know when Dutch residence and insurance obligations start."
+    }
+  ],
+  "registryProviders": {
+    "categories": [
+      "immigration-lawyers",
+      "visa-consultants",
+      "relocation-services",
+      "relocation-agencies",
+      "housing-platforms",
+      "rental-agencies"
+    ],
+    "limit": 8,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat immigration-support discovery, not pay-to-rank placement. This is not legal, immigration or tax advice — verify outcomes with the IND, Juridisch Loket, licensed lawyers and qualified advisers."
+}

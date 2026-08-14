@@ -1,0 +1,51 @@
+{
+  "id": "nl-jobs-linkedin-netherlands-support-providers",
+  "destinationCountry": "netherlands",
+  "originCountry": "*",
+  "context": {
+    "pageType": "guide",
+    "route": "/netherlands/jobs/linkedin-netherlands/",
+    "slot": "mid-page-linkedin-support"
+  },
+  "variant": "cards",
+  "title": "Providers expats compare while building LinkedIn visibility for Dutch roles",
+  "intro": "Strengthening a **LinkedIn profile** for Netherlands job search often overlaps with **application timing**, **relocation planning**, **tax and payroll questions on upcoming offers** and **mandatory setup** once interviews turn into contracts. These listings are for discovery when you need scoped help — not LinkedIn coach rankings, Premium seller endorsements, recruiter leagues or job guarantees. Confirm services, pricing and credentials before you commit.",
+  "categoryOrder": ["tax", "services", "visa", "housing", "banking", "insurance"],
+  "items": [
+    {
+      "providerId": "blue-umbrella",
+      "reason": "Online Dutch tax filing and payroll context when profile outreach turns into offer modelling."
+    },
+    {
+      "providerId": "broadstreet",
+      "reason": "Tax, accountancy and cross-border support for expats evaluating Dutch employment after LinkedIn-led conversations."
+    },
+    {
+      "providerId": "taxsavers",
+      "reason": "Dutch tax return, M-form and 30% ruling support once a Dutch offer follows recruiter outreach."
+    },
+    {
+      "providerId": "housinganywhere",
+      "reason": "Furnished rentals and mid-term housing while you message recruiters, interview, relocate or start a new role."
+    },
+    {
+      "providerId": "independer",
+      "reason": "Compare Dutch basic health insurance before or after starting a new job in the Netherlands."
+    }
+  ],
+  "registryProviders": {
+    "categories": [
+      "career-coaches",
+      "relocation-services",
+      "relocation-agencies",
+      "immigration-lawyers",
+      "visa-consultants",
+      "housing-platforms",
+      "health-insurance",
+      "banks"
+    ],
+    "limit": 8,
+    "strategy": "round-robin"
+  },
+  "disclosure": "Some links may be affiliate or referral links. If you use them, we may earn a commission at no extra cost to you. Ordering reflects relevance to expat job-search and relocation planning, not pay-to-rank. This is not a ranking of LinkedIn coaches, Premium sellers or recruiters — and not career, immigration or recruitment advice. Verify outcomes with employers, IND or qualified advisers."
+}

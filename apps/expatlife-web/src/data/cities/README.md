@@ -5,6 +5,8 @@ Last reviewed: **2026-08-13**.
 
 This is **not** a full CBS municipality list (340+). It catalogs places that matter for expat SEO / product coverage: dedicated city hubs we already ship, plus high-priority towns we do **not** have yet.
 
+**Full Yes/No list of all Dutch municipalities:** [`NETHERLANDS-CITIES.md`](./NETHERLANDS-CITIES.md)
+
 ---
 
 ## How to read this doc

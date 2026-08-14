@@ -16,6 +16,8 @@ export const MENTAL_HEALTHCARE_NETHERLANDS_PATH =
   "/netherlands/health/mental-healthcare-netherlands/" as const;
 export const HEALTH_HUB_PATH = "/netherlands/health/" as const;
 export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands/" as const;
+export const HEALTH_INSURANCE_SERVICES_PATH = "/netherlands/services/health-insurance/" as const;
+export const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers/" as const;
 export const HEALTHCARE_FOR_CHILDREN_PATH =
   "/netherlands/family/healthcare-for-children-netherlands/" as const;
 export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" as const;
@@ -1194,6 +1196,18 @@ export const healthInsuranceComparisonNetherlandsPage = {
       status: "live",
       description: "Secondary care and contracted-hospital orientation.",
     },
+    {
+      label: "Health insurance (services directory)",
+      href: HEALTH_INSURANCE_SERVICES_PATH,
+      status: "live",
+      description: "Zorgverzekeraar provider directory — how to choose insurers beside this comparison framework.",
+    },
+    {
+      label: "Insurance brokers",
+      href: INSURANCE_BROKERS_PATH,
+      status: "live",
+      description: "Independent adviseurs for non-life packages — not a substitute for basic health cover shopping.",
+    },
   ] satisfies ComparisonLink[],
   healthcareHubTips: [
     "This page owns comparison factors inside the healthcare cluster.",
@@ -1212,6 +1226,18 @@ export const healthInsuranceComparisonNetherlandsPage = {
       href: HEALTH_INSURANCE_PATH,
       status: "live",
       description: "Mandate, timing and basic-package overview.",
+    },
+    {
+      label: "Health insurance (services)",
+      href: HEALTH_INSURANCE_SERVICES_PATH,
+      status: "live",
+      description: "Insurer provider directory for basic and aanvullend orientation.",
+    },
+    {
+      label: "Insurance brokers",
+      href: INSURANCE_BROKERS_PATH,
+      status: "live",
+      description: "Independent brokers for liability, home and non-life packages.",
     },
     {
       label: "GP",
@@ -1280,6 +1306,18 @@ export const healthInsuranceComparisonNetherlandsPage = {
       href: HEALTH_INSURANCE_PATH,
       status: "live",
       description: "Still unsure about mandate or basic package? Start here.",
+    },
+    {
+      label: "Health insurance (services)",
+      href: HEALTH_INSURANCE_SERVICES_PATH,
+      status: "live",
+      description: "Browse insurer directory after you know your comparison criteria.",
+    },
+    {
+      label: "Insurance brokers",
+      href: INSURANCE_BROKERS_PATH,
+      status: "live",
+      description: "Need help with liability or home packages beside health cover?",
     },
     {
       label: "Physiotherapy",

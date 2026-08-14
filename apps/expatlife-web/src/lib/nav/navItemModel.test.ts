@@ -761,6 +761,422 @@ describe("finding jobs nav active state", () => {
   });
 });
 
+describe("CV Netherlands nav active state", () => {
+  const CV_NETHERLANDS_PATH = "/netherlands/jobs/cv-netherlands/";
+
+  it("treats the CV Netherlands guide route as live in local/preview", () => {
+    expect(getRouteStatus(CV_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(CV_NETHERLANDS_PATH)).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical jobs href", () => {
+    const item = {
+      label: "CV Netherlands",
+      href: CV_NETHERLANDS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(CV_NETHERLANDS_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move Jobs & salaries menu row as an active link", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Jobs & salaries")
+      ?.items.find((navItem) => navItem.href === CV_NETHERLANDS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CV_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money Jobs & salaries menu row as an active link", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Jobs & salaries")
+      ?.items.find((navItem) => navItem.href === CV_NETHERLANDS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CV_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Jobs & salaries", () => {
+    const rows = menuRowsForHref(CV_NETHERLANDS_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Jobs & salaries",
+      "moving:Jobs & salaries",
+    ]);
+  });
+
+  it("sits immediately after Finding jobs in Move > Jobs & salaries", () => {
+    const labels =
+      MEGA_MENUS.moving.sections
+        .find((section) => section.title === "Jobs & salaries")
+        ?.items.map((row) => row.label) ?? [];
+    const finding = labels.indexOf("Finding jobs in the Netherlands");
+    const cv = labels.indexOf("CV Netherlands");
+
+    expect(finding).toBeGreaterThanOrEqual(0);
+    expect(cv).toBe(finding + 1);
+  });
+});
+
+describe("Interview tips Netherlands nav active state", () => {
+  const INTERVIEW_TIPS_PATH = "/netherlands/jobs/interview-tips-netherlands/";
+
+  it("treats the Interview tips guide route as live in local/preview", () => {
+    expect(getRouteStatus(INTERVIEW_TIPS_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(INTERVIEW_TIPS_PATH)).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical jobs href", () => {
+    const item = {
+      label: "Interview tips Netherlands",
+      href: INTERVIEW_TIPS_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(INTERVIEW_TIPS_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move Jobs & salaries menu row as an active link", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Jobs & salaries")
+      ?.items.find((navItem) => navItem.href === INTERVIEW_TIPS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(INTERVIEW_TIPS_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money Jobs & salaries menu row as an active link", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Jobs & salaries")
+      ?.items.find((navItem) => navItem.href === INTERVIEW_TIPS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(INTERVIEW_TIPS_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Jobs & salaries", () => {
+    const rows = menuRowsForHref(INTERVIEW_TIPS_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Jobs & salaries",
+      "moving:Jobs & salaries",
+    ]);
+  });
+
+  it("sits immediately after CV Netherlands and before Salary negotiation in Move > Jobs & salaries", () => {
+    const labels =
+      MEGA_MENUS.moving.sections
+        .find((section) => section.title === "Jobs & salaries")
+        ?.items.map((row) => row.label) ?? [];
+    const cv = labels.indexOf("CV Netherlands");
+    const coverLetter = labels.indexOf("Cover letter Netherlands");
+    const linkedIn = labels.indexOf("LinkedIn Netherlands");
+    const interview = labels.indexOf("Interview tips Netherlands");
+    const salary = labels.indexOf("Salary negotiation");
+
+    expect(cv).toBeGreaterThanOrEqual(0);
+    expect(coverLetter).toBe(cv + 1);
+    expect(linkedIn).toBe(coverLetter + 1);
+    expect(interview).toBe(linkedIn + 1);
+    expect(salary).toBeGreaterThan(interview);
+  });
+});
+
+describe("Cover letter Netherlands nav active state", () => {
+  const COVER_LETTER_PATH = "/netherlands/jobs/cover-letter-netherlands/";
+
+  it("treats the Cover letter guide route as live in local/preview", () => {
+    expect(getRouteStatus(COVER_LETTER_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(COVER_LETTER_PATH)).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical jobs href", () => {
+    const item = {
+      label: "Cover letter Netherlands",
+      href: COVER_LETTER_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(COVER_LETTER_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move Jobs & salaries menu row as an active link", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Jobs & salaries")
+      ?.items.find((navItem) => navItem.href === COVER_LETTER_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(COVER_LETTER_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money Jobs & salaries menu row as an active link", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Jobs & salaries")
+      ?.items.find((navItem) => navItem.href === COVER_LETTER_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(COVER_LETTER_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Jobs & salaries", () => {
+    const rows = menuRowsForHref(COVER_LETTER_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Jobs & salaries",
+      "moving:Jobs & salaries",
+    ]);
+  });
+
+  it("sits immediately after CV Netherlands and before LinkedIn in Move > Jobs & salaries", () => {
+    const labels =
+      MEGA_MENUS.moving.sections
+        .find((section) => section.title === "Jobs & salaries")
+        ?.items.map((row) => row.label) ?? [];
+    const cv = labels.indexOf("CV Netherlands");
+    const coverLetter = labels.indexOf("Cover letter Netherlands");
+    const linkedIn = labels.indexOf("LinkedIn Netherlands");
+    const interview = labels.indexOf("Interview tips Netherlands");
+
+    expect(cv).toBeGreaterThanOrEqual(0);
+    expect(coverLetter).toBe(cv + 1);
+    expect(linkedIn).toBe(coverLetter + 1);
+    expect(interview).toBe(linkedIn + 1);
+  });
+});
+
+describe("LinkedIn Netherlands nav active state", () => {
+  const LINKEDIN_PATH = "/netherlands/jobs/linkedin-netherlands/";
+
+  it("treats the LinkedIn guide route as live in local/preview", () => {
+    expect(getRouteStatus(LINKEDIN_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(LINKEDIN_PATH)).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical jobs href", () => {
+    const item = {
+      label: "LinkedIn Netherlands",
+      href: LINKEDIN_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(LINKEDIN_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move Jobs & salaries menu row as an active link", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Jobs & salaries")
+      ?.items.find((navItem) => navItem.href === LINKEDIN_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(LINKEDIN_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money Jobs & salaries menu row as an active link", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Jobs & salaries")
+      ?.items.find((navItem) => navItem.href === LINKEDIN_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(LINKEDIN_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Jobs & salaries", () => {
+    const rows = menuRowsForHref(LINKEDIN_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Jobs & salaries",
+      "moving:Jobs & salaries",
+    ]);
+  });
+
+  it("sits immediately after Cover letter and before Interview tips in Move > Jobs & salaries", () => {
+    const labels =
+      MEGA_MENUS.moving.sections
+        .find((section) => section.title === "Jobs & salaries")
+        ?.items.map((row) => row.label) ?? [];
+    const coverLetter = labels.indexOf("Cover letter Netherlands");
+    const linkedIn = labels.indexOf("LinkedIn Netherlands");
+    const interview = labels.indexOf("Interview tips Netherlands");
+
+    expect(coverLetter).toBeGreaterThanOrEqual(0);
+    expect(linkedIn).toBe(coverLetter + 1);
+    expect(interview).toBe(linkedIn + 1);
+  });
+
+  it("keeps the LinkedIn jobs Netherlands stub as a separate Money menu href", () => {
+    const stub = "/netherlands/work/linkedin-jobs-netherlands/";
+    const moneyJobs =
+      MEGA_MENUS.money.sections.find((section) => section.title === "Jobs & salaries")?.items ?? [];
+    expect(moneyJobs.some((row) => row.href === stub)).toBe(true);
+    expect(moneyJobs.some((row) => row.href === LINKEDIN_PATH)).toBe(true);
+    expect(stub).not.toBe(LINKEDIN_PATH);
+  });
+});
+
+describe("Networking Netherlands nav active state", () => {
+  const NETWORKING_PATH = "/netherlands/jobs/networking-netherlands/";
+
+  it("treats the Networking guide route as live in local/preview", () => {
+    expect(getRouteStatus(NETWORKING_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(NETWORKING_PATH)).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical jobs href", () => {
+    const item = {
+      label: "Networking Netherlands",
+      href: NETWORKING_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(NETWORKING_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move Jobs & salaries menu row as an active link", () => {
+    const item = MEGA_MENUS.moving.sections
+      .find((section) => section.title === "Jobs & salaries")
+      ?.items.find((navItem) => navItem.href === NETWORKING_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(NETWORKING_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money Jobs & salaries menu row as an active link", () => {
+    const item = MEGA_MENUS.money.sections
+      .find((section) => section.title === "Jobs & salaries")
+      ?.items.find((navItem) => navItem.href === NETWORKING_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(NETWORKING_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Jobs & salaries", () => {
+    const rows = menuRowsForHref(NETWORKING_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Jobs & salaries",
+      "moving:Jobs & salaries",
+    ]);
+  });
+
+  it("sits immediately after Interview tips and before Salary negotiation in Move > Jobs & salaries", () => {
+    const labels =
+      MEGA_MENUS.moving.sections
+        .find((section) => section.title === "Jobs & salaries")
+        ?.items.map((row) => row.label) ?? [];
+    const interview = labels.indexOf("Interview tips Netherlands");
+    const networking = labels.indexOf("Networking Netherlands");
+    const salary = labels.indexOf("Salary negotiation");
+
+    expect(interview).toBeGreaterThanOrEqual(0);
+    expect(networking).toBe(interview + 1);
+    expect(salary).toBe(networking + 1);
+  });
+});
+
+describe("Recruitment agencies Netherlands nav active state", () => {
+  const RECRUITMENT_PATH = "/netherlands/jobs/recruitment-agencies-netherlands/";
+
+  it("treats the Recruitment agencies guide route as live in local/preview", () => {
+    expect(getRouteStatus(RECRUITMENT_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(RECRUITMENT_PATH)).toBe("moving");
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Jobs & salaries", () => {
+    const rows = menuRowsForHref(RECRUITMENT_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Jobs & salaries",
+      "moving:Jobs & salaries",
+    ]);
+  });
+
+  it("sits immediately after Finding jobs and before English speaking jobs in Move > Jobs & salaries", () => {
+    const labels =
+      MEGA_MENUS.moving.sections
+        .find((section) => section.title === "Jobs & salaries")
+        ?.items.map((row) => row.label) ?? [];
+    const finding = labels.indexOf("Finding jobs in the Netherlands");
+    const recruitment = labels.indexOf("Recruitment agencies Netherlands");
+    const english = labels.indexOf("English speaking jobs Netherlands");
+    const remote = labels.indexOf("Remote work Netherlands");
+    const cv = labels.indexOf("CV Netherlands");
+
+    expect(finding).toBeGreaterThanOrEqual(0);
+    expect(recruitment).toBe(finding + 1);
+    expect(english).toBe(recruitment + 1);
+    expect(remote).toBe(english + 1);
+    expect(cv).toBe(remote + 1);
+  });
+});
+
+describe("English speaking jobs Netherlands nav active state", () => {
+  const ENGLISH_PATH = "/netherlands/jobs/english-speaking-jobs-netherlands/";
+
+  it("treats the English speaking jobs guide route as live in local/preview", () => {
+    expect(getRouteStatus(ENGLISH_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(ENGLISH_PATH)).toBe("moving");
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Jobs & salaries", () => {
+    const rows = menuRowsForHref(ENGLISH_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Jobs & salaries",
+      "moving:Jobs & salaries",
+    ]);
+  });
+});
+
+describe("Remote work Netherlands nav active state", () => {
+  const REMOTE_PATH = "/netherlands/jobs/remote-work-netherlands/";
+
+  it("treats the Remote work guide route as live in local/preview", () => {
+    expect(getRouteStatus(REMOTE_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(REMOTE_PATH)).toBe("moving");
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Jobs & salaries", () => {
+    const rows = menuRowsForHref(REMOTE_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Jobs & salaries",
+      "moving:Jobs & salaries",
+    ]);
+  });
+});
+
 describe("employment contract nav active state", () => {
   it("treats the shipped employment contract guide route as live", () => {
     expect(getRouteStatus(EMPLOYMENT_CONTRACT_PATH)).toBe("live");
@@ -1645,6 +2061,71 @@ describe("freelancing nav active state", () => {
       "money:Employment contracts & rights",
       "moving:Jobs & salaries",
     ]);
+  });
+});
+
+describe("starting consultancy nav active state", () => {
+  const STARTING_CONSULTANCY_PATH = "/netherlands/jobs/starting-consultancy-netherlands/";
+
+  it("treats the starting consultancy guide route as live in local/preview", () => {
+    expect(getRouteStatus(STARTING_CONSULTANCY_PATH)).toBe("live");
+  });
+
+  it("highlights Move (not Money) for the jobs guide path", () => {
+    expect(getActiveNavKey(STARTING_CONSULTANCY_PATH)).toBe("moving");
+  });
+
+  it("marks Move and Money menu rows active for the canonical jobs href", () => {
+    const item = {
+      label: "Starting consultancy",
+      href: STARTING_CONSULTANCY_PATH,
+      navStatus: "live" as const,
+    };
+    expect(isNavItemActive(STARTING_CONSULTANCY_PATH, item)).toBe(true);
+  });
+
+  it("renders the Move menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === STARTING_CONSULTANCY_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(STARTING_CONSULTANCY_PATH, item!)).toBe(true);
+  });
+
+  it("renders the Money menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.money.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === STARTING_CONSULTANCY_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(STARTING_CONSULTANCY_PATH, item!)).toBe(true);
+  });
+
+  it("has menu rows in Move > Jobs & salaries and Money > Employment contracts & rights", () => {
+    const rows = menuRowsForHref(STARTING_CONSULTANCY_PATH);
+    expect(rows.map((row) => `${row.menuKey}:${row.sectionTitle}`).sort()).toEqual([
+      "money:Employment contracts & rights",
+      "moving:Jobs & salaries",
+    ]);
+  });
+
+  it("sits between Freelancing and Contractor vs employee in Move > Jobs & salaries", () => {
+    const labels =
+      MEGA_MENUS.moving.sections
+        .find((section) => section.title === "Jobs & salaries")
+        ?.items.map((row) => row.label) ?? [];
+    const freelancing = labels.indexOf("Freelancing");
+    const consultancy = labels.indexOf("Starting consultancy");
+    const contractor = labels.indexOf("Contractor vs employee");
+
+    expect(freelancing).toBeGreaterThanOrEqual(0);
+    expect(consultancy).toBe(freelancing + 1);
+    expect(contractor).toBe(consultancy + 1);
   });
 });
 
@@ -2535,6 +3016,541 @@ describe("financial advisors service nav active state", () => {
     expect(rows).toHaveLength(1);
     expect(rows[0].menuKey).toBe("services");
     expect(rows[0].sectionTitle).toBe("Banking & financial services");
+  });
+});
+
+describe("recruitment agencies services directory nav active state", () => {
+  const RECRUITMENT_SERVICES_PATH = "/netherlands/services/recruitment-agencies/";
+
+  it("treats the recruitment agencies services route as live in local/preview", () => {
+    expect(getRouteStatus(RECRUITMENT_SERVICES_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the recruitment agencies directory path", () => {
+    expect(getActiveNavKey(RECRUITMENT_SERVICES_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === RECRUITMENT_SERVICES_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(RECRUITMENT_SERVICES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Work & career support", () => {
+    const rows = menuRowsForHref(RECRUITMENT_SERVICES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Work & career support");
+  });
+});
+
+describe("moving companies services directory nav active state", () => {
+  const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies/";
+
+  it("treats the moving companies services route as live in local/preview", () => {
+    expect(getRouteStatus(MOVING_COMPANIES_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the moving companies directory path", () => {
+    expect(getActiveNavKey(MOVING_COMPANIES_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === MOVING_COMPANIES_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MOVING_COMPANIES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Housing & relocation", () => {
+    const rows = menuRowsForHref(MOVING_COMPANIES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Housing & relocation");
+  });
+});
+
+describe("removal companies services directory nav active state", () => {
+  const REMOVAL_COMPANIES_PATH = "/netherlands/services/removal-companies/";
+
+  it("treats the removal companies services route as live in local/preview", () => {
+    expect(getRouteStatus(REMOVAL_COMPANIES_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the removal companies directory path", () => {
+    expect(getActiveNavKey(REMOVAL_COMPANIES_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === REMOVAL_COMPANIES_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(REMOVAL_COMPANIES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Housing & relocation", () => {
+    const rows = menuRowsForHref(REMOVAL_COMPANIES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Housing & relocation");
+  });
+});
+
+describe("storage companies services directory nav active state", () => {
+  const STORAGE_COMPANIES_PATH = "/netherlands/services/storage-companies/";
+
+  it("treats the storage companies services route as live in local/preview", () => {
+    expect(getRouteStatus(STORAGE_COMPANIES_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the storage companies directory path", () => {
+    expect(getActiveNavKey(STORAGE_COMPANIES_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === STORAGE_COMPANIES_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(STORAGE_COMPANIES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Housing & relocation", () => {
+    const rows = menuRowsForHref(STORAGE_COMPANIES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Housing & relocation");
+  });
+});
+
+describe("pet relocation companies services directory nav active state", () => {
+  const PET_RELOCATION_COMPANIES_PATH = "/netherlands/services/pet-relocation-companies/";
+
+  it("treats the pet relocation companies services route as live in local/preview", () => {
+    expect(getRouteStatus(PET_RELOCATION_COMPANIES_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the pet relocation companies directory path", () => {
+    expect(getActiveNavKey(PET_RELOCATION_COMPANIES_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === PET_RELOCATION_COMPANIES_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PET_RELOCATION_COMPANIES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Housing & relocation", () => {
+    const rows = menuRowsForHref(PET_RELOCATION_COMPANIES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Housing & relocation");
+  });
+});
+
+describe("cleaning companies services directory nav active state", () => {
+  const CLEANING_COMPANIES_PATH = "/netherlands/services/cleaning-companies/";
+
+  it("treats the cleaning companies services route as live in local/preview", () => {
+    expect(getRouteStatus(CLEANING_COMPANIES_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the cleaning companies directory path", () => {
+    expect(getActiveNavKey(CLEANING_COMPANIES_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === CLEANING_COMPANIES_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CLEANING_COMPANIES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Housing & relocation", () => {
+    const rows = menuRowsForHref(CLEANING_COMPANIES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Housing & relocation");
+  });
+});
+
+describe("handymen services directory nav active state", () => {
+  const HANDYMEN_PATH = "/netherlands/services/handymen/";
+
+  it("treats the handymen services route as live in local/preview", () => {
+    expect(getRouteStatus(HANDYMEN_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the handymen directory path", () => {
+    expect(getActiveNavKey(HANDYMEN_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === HANDYMEN_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HANDYMEN_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Housing & relocation", () => {
+    const rows = menuRowsForHref(HANDYMEN_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Housing & relocation");
+  });
+});
+
+describe("estate agents services directory nav active state", () => {
+  const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents/";
+
+  it("treats the estate agents services route as live in local/preview", () => {
+    expect(getRouteStatus(ESTATE_AGENTS_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the estate agents directory path", () => {
+    expect(getActiveNavKey(ESTATE_AGENTS_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === ESTATE_AGENTS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ESTATE_AGENTS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Housing & relocation", () => {
+    const rows = menuRowsForHref(ESTATE_AGENTS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Housing & relocation");
+  });
+});
+
+describe("notaries services directory nav active state", () => {
+  const NOTARIES_PATH = "/netherlands/services/notaries/";
+
+  it("treats the notaries services route as live in local/preview", () => {
+    expect(getRouteStatus(NOTARIES_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the notaries directory path", () => {
+    expect(getActiveNavKey(NOTARIES_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === NOTARIES_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(NOTARIES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Housing & relocation", () => {
+    const rows = menuRowsForHref(NOTARIES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Housing & relocation");
+  });
+});
+
+describe("insurance brokers services directory nav active state", () => {
+  const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers/";
+
+  it("treats the insurance brokers services route as live in local/preview", () => {
+    expect(getRouteStatus(INSURANCE_BROKERS_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the insurance brokers directory path", () => {
+    expect(getActiveNavKey(INSURANCE_BROKERS_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === INSURANCE_BROKERS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(INSURANCE_BROKERS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Health & insurance", () => {
+    const rows = menuRowsForHref(INSURANCE_BROKERS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Health & insurance");
+  });
+});
+
+describe("accountants services directory nav active state", () => {
+  const ACCOUNTANTS_PATH = "/netherlands/services/accountants/";
+
+  it("treats the accountants services route as live in local/preview", () => {
+    expect(getRouteStatus(ACCOUNTANTS_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the accountants directory path", () => {
+    expect(getActiveNavKey(ACCOUNTANTS_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === ACCOUNTANTS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ACCOUNTANTS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Banking & financial services", () => {
+    const rows = menuRowsForHref(ACCOUNTANTS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Banking & financial services");
+  });
+});
+
+describe("business consultants services directory nav active state", () => {
+  const BUSINESS_CONSULTANTS_PATH = "/netherlands/services/business-consultants/";
+
+  it("treats the business consultants services route as live in local/preview", () => {
+    expect(getRouteStatus(BUSINESS_CONSULTANTS_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the business consultants directory path", () => {
+    expect(getActiveNavKey(BUSINESS_CONSULTANTS_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === BUSINESS_CONSULTANTS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BUSINESS_CONSULTANTS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Banking & financial services after Financial advisors", () => {
+    const rows = menuRowsForHref(BUSINESS_CONSULTANTS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Banking & financial services");
+
+    const bankingItems = MEGA_MENUS.services.sections
+      .find((section) => section.title === "Banking & financial services")
+      ?.items.map((navItem) => navItem.href);
+    const financialIdx = bankingItems?.indexOf("/netherlands/services/financial-advisors/");
+    const consultantsIdx = bankingItems?.indexOf(BUSINESS_CONSULTANTS_PATH);
+    expect(financialIdx).toBeGreaterThanOrEqual(0);
+    expect(consultantsIdx).toBe((financialIdx ?? -1) + 1);
+  });
+});
+
+describe("internet providers services directory nav active state", () => {
+  const INTERNET_PROVIDERS_PATH = "/netherlands/services/internet-providers/";
+
+  it("treats the internet providers services route as live in local/preview", () => {
+    expect(getRouteStatus(INTERNET_PROVIDERS_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the internet providers directory path", () => {
+    expect(getActiveNavKey(INTERNET_PROVIDERS_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === INTERNET_PROVIDERS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(INTERNET_PROVIDERS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Connectivity", () => {
+    const rows = menuRowsForHref(INTERNET_PROVIDERS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Connectivity");
+  });
+});
+
+describe("energy providers services directory nav active state", () => {
+  const ENERGY_PROVIDERS_PATH = "/netherlands/services/energy-providers/";
+
+  it("treats the energy providers services route as live in local/preview", () => {
+    expect(getRouteStatus(ENERGY_PROVIDERS_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the energy providers directory path", () => {
+    expect(getActiveNavKey(ENERGY_PROVIDERS_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === ENERGY_PROVIDERS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ENERGY_PROVIDERS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Connectivity", () => {
+    const rows = menuRowsForHref(ENERGY_PROVIDERS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Connectivity");
+  });
+});
+
+describe("phone providers services directory nav active state", () => {
+  const PHONE_PROVIDERS_PATH = "/netherlands/services/phone-providers/";
+
+  it("treats the phone providers services route as live in local/preview", () => {
+    expect(getRouteStatus(PHONE_PROVIDERS_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the phone providers directory path", () => {
+    expect(getActiveNavKey(PHONE_PROVIDERS_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === PHONE_PROVIDERS_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(PHONE_PROVIDERS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Connectivity", () => {
+    const rows = menuRowsForHref(PHONE_PROVIDERS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Connectivity");
+  });
+});
+
+describe("international schools services directory nav active state", () => {
+  const INTERNATIONAL_SCHOOLS_SERVICES_PATH = "/netherlands/services/international-schools/";
+
+  it("treats the international schools services route as live in local/preview", () => {
+    expect(getRouteStatus(INTERNATIONAL_SCHOOLS_SERVICES_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the international schools directory path", () => {
+    expect(getActiveNavKey(INTERNATIONAL_SCHOOLS_SERVICES_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === INTERNATIONAL_SCHOOLS_SERVICES_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(INTERNATIONAL_SCHOOLS_SERVICES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Family & education", () => {
+    const rows = menuRowsForHref(INTERNATIONAL_SCHOOLS_SERVICES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Family & education");
+  });
+});
+
+describe("daycare providers services directory nav active state", () => {
+  const DAYCARE_PROVIDERS_SERVICES_PATH = "/netherlands/services/daycare-providers/";
+
+  it("treats the daycare providers services route as live in local/preview", () => {
+    expect(getRouteStatus(DAYCARE_PROVIDERS_SERVICES_PATH)).toBe("live");
+  });
+
+  it("highlights Services for the daycare providers directory path", () => {
+    expect(getActiveNavKey(DAYCARE_PROVIDERS_SERVICES_PATH)).toBe("services");
+  });
+
+  it("renders the Services menu row as an active link, not a Soon row", () => {
+    const item = MEGA_MENUS.services.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === DAYCARE_PROVIDERS_SERVICES_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DAYCARE_PROVIDERS_SERVICES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Services > Family & education", () => {
+    const rows = menuRowsForHref(DAYCARE_PROVIDERS_SERVICES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("services");
+    expect(rows[0].sectionTitle).toBe("Family & education");
   });
 });
 
@@ -4559,6 +5575,430 @@ describe("Weekend travel Netherlands nav active state", () => {
   });
 });
 
+describe("Weekend trips Netherlands nav active state", () => {
+  const WEEKEND_TRIPS_PATH = "/netherlands/living/weekend-trips-netherlands/";
+
+  it("treats the Weekend trips guide route as live in local/preview", () => {
+    expect(getRouteStatus(WEEKEND_TRIPS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Weekend trips guide path", () => {
+    expect(getActiveNavKey(WEEKEND_TRIPS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Weekend & lifestyle menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Weekend & lifestyle")
+      ?.items.find((row) => row.label === "Weekend trips");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(WEEKEND_TRIPS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(WEEKEND_TRIPS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Weekend & lifestyle", () => {
+    const rows = menuRowsForHref(WEEKEND_TRIPS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Weekend & lifestyle");
+  });
+
+  it("sits first in Weekend & lifestyle before National parks and Hiking", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Weekend & lifestyle")
+        ?.items.map((row) => row.label) ?? [];
+
+    expect(labels.indexOf("Weekend trips")).toBe(0);
+    expect(labels.indexOf("National parks")).toBe(1);
+    expect(labels.indexOf("Hiking")).toBe(2);
+  });
+
+  it("keeps Weekend travel under Public transport (not Weekend & lifestyle)", () => {
+    const weekendTravelRows = menuRowsForHref("/netherlands/living/weekend-travel-netherlands/");
+    expect(weekendTravelRows).toHaveLength(1);
+    expect(weekendTravelRows[0].sectionTitle).toBe("Public transport");
+
+    const lifestyleLabels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Weekend & lifestyle")
+        ?.items.map((row) => row.label) ?? [];
+    expect(lifestyleLabels).not.toContain("Weekend travel");
+  });
+});
+
+describe("National parks Netherlands nav active state", () => {
+  const NATIONAL_PARKS_PATH = "/netherlands/living/national-parks-netherlands/";
+
+  it("treats the National parks guide route as live in local/preview", () => {
+    expect(getRouteStatus(NATIONAL_PARKS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the National parks guide path", () => {
+    expect(getActiveNavKey(NATIONAL_PARKS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Weekend & lifestyle menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Weekend & lifestyle")
+      ?.items.find((row) => row.label === "National parks");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(NATIONAL_PARKS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(NATIONAL_PARKS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Weekend & lifestyle", () => {
+    const rows = menuRowsForHref(NATIONAL_PARKS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Weekend & lifestyle");
+  });
+
+  it("sits second in Weekend & lifestyle between Weekend trips and Hiking", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Weekend & lifestyle")
+        ?.items.map((row) => row.label) ?? [];
+
+    expect(labels.indexOf("Weekend trips")).toBe(0);
+    expect(labels.indexOf("National parks")).toBe(1);
+    expect(labels.indexOf("Hiking")).toBe(2);
+  });
+});
+
+describe("Hiking Netherlands nav active state", () => {
+  const HIKING_PATH = "/netherlands/living/hiking-netherlands/";
+
+  it("treats the Hiking guide route as live in local/preview", () => {
+    expect(getRouteStatus(HIKING_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Hiking guide path", () => {
+    expect(getActiveNavKey(HIKING_PATH)).toBe("living");
+  });
+
+  it("renders the Living Weekend & lifestyle menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Weekend & lifestyle")
+      ?.items.find((row) => row.label === "Hiking");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(HIKING_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HIKING_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Weekend & lifestyle", () => {
+    const rows = menuRowsForHref(HIKING_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Weekend & lifestyle");
+  });
+
+  it("sits third in Weekend & lifestyle after Weekend trips and National parks", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Weekend & lifestyle")
+        ?.items.map((row) => row.label) ?? [];
+
+    expect(labels.indexOf("Weekend trips")).toBe(0);
+    expect(labels.indexOf("National parks")).toBe(1);
+    expect(labels.indexOf("Hiking")).toBe(2);
+  });
+});
+
+describe("Museums Netherlands nav active state", () => {
+  const MUSEUMS_PATH = "/netherlands/living/museums-netherlands/";
+
+  it("treats the Museums guide route as live in local/preview", () => {
+    expect(getRouteStatus(MUSEUMS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Museums guide path", () => {
+    expect(getActiveNavKey(MUSEUMS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Weekend & lifestyle menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Weekend & lifestyle")
+      ?.items.find((row) => row.label === "Museums");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(MUSEUMS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MUSEUMS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Weekend & lifestyle", () => {
+    const rows = menuRowsForHref(MUSEUMS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Weekend & lifestyle");
+  });
+
+  it("sits fourth in Weekend & lifestyle after Hiking", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Weekend & lifestyle")
+        ?.items.map((row) => row.label) ?? [];
+
+    expect(labels.indexOf("Weekend trips")).toBe(0);
+    expect(labels.indexOf("National parks")).toBe(1);
+    expect(labels.indexOf("Hiking")).toBe(2);
+    expect(labels.indexOf("Museums")).toBe(3);
+    expect(labels.indexOf("Hidden gems")).toBe(4);
+  });
+});
+
+describe("Hidden gems Netherlands nav active state", () => {
+  const HIDDEN_GEMS_PATH = "/netherlands/living/hidden-gems-netherlands/";
+
+  it("treats the Hidden gems guide route as live in local/preview", () => {
+    expect(getRouteStatus(HIDDEN_GEMS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Hidden gems guide path", () => {
+    expect(getActiveNavKey(HIDDEN_GEMS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Weekend & lifestyle menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Weekend & lifestyle")
+      ?.items.find((row) => row.label === "Hidden gems");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(HIDDEN_GEMS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(HIDDEN_GEMS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Weekend & lifestyle", () => {
+    const rows = menuRowsForHref(HIDDEN_GEMS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Weekend & lifestyle");
+  });
+
+  it("sits fifth in Weekend & lifestyle after Museums", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Weekend & lifestyle")
+        ?.items.map((row) => row.label) ?? [];
+
+    expect(labels.indexOf("Weekend trips")).toBe(0);
+    expect(labels.indexOf("National parks")).toBe(1);
+    expect(labels.indexOf("Hiking")).toBe(2);
+    expect(labels.indexOf("Museums")).toBe(3);
+    expect(labels.indexOf("Hidden gems")).toBe(4);
+    expect(labels.indexOf("Beach towns")).toBe(5);
+    expect(labels.indexOf("Castles")).toBe(6);
+  });
+});
+
+describe("Beach towns Netherlands nav active state", () => {
+  const BEACH_TOWNS_PATH = "/netherlands/living/beach-towns-netherlands/";
+
+  it("treats the Beach towns guide route as live in local/preview", () => {
+    expect(getRouteStatus(BEACH_TOWNS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Beach towns guide path", () => {
+    expect(getActiveNavKey(BEACH_TOWNS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Weekend & lifestyle menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Weekend & lifestyle")
+      ?.items.find((row) => row.label === "Beach towns");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(BEACH_TOWNS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BEACH_TOWNS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Weekend & lifestyle", () => {
+    const rows = menuRowsForHref(BEACH_TOWNS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Weekend & lifestyle");
+  });
+
+  it("sits sixth in Weekend & lifestyle after Hidden gems", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Weekend & lifestyle")
+        ?.items.map((row) => row.label) ?? [];
+
+    expect(labels.indexOf("Weekend trips")).toBe(0);
+    expect(labels.indexOf("National parks")).toBe(1);
+    expect(labels.indexOf("Hiking")).toBe(2);
+    expect(labels.indexOf("Museums")).toBe(3);
+    expect(labels.indexOf("Hidden gems")).toBe(4);
+    expect(labels.indexOf("Beach towns")).toBe(5);
+    expect(labels.indexOf("Castles")).toBe(6);
+  });
+});
+
+describe("Castles Netherlands nav active state", () => {
+  const CASTLES_PATH = "/netherlands/living/castles-netherlands/";
+
+  it("treats the Castles guide route as live in local/preview", () => {
+    expect(getRouteStatus(CASTLES_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Castles guide path", () => {
+    expect(getActiveNavKey(CASTLES_PATH)).toBe("living");
+  });
+
+  it("renders the Living Weekend & lifestyle menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Weekend & lifestyle")
+      ?.items.find((row) => row.label === "Castles");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(CASTLES_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CASTLES_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Weekend & lifestyle", () => {
+    const rows = menuRowsForHref(CASTLES_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Weekend & lifestyle");
+  });
+
+  it("sits seventh in Weekend & lifestyle after Beach towns", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Weekend & lifestyle")
+        ?.items.map((row) => row.label) ?? [];
+
+    expect(labels.indexOf("Weekend trips")).toBe(0);
+    expect(labels.indexOf("National parks")).toBe(1);
+    expect(labels.indexOf("Hiking")).toBe(2);
+    expect(labels.indexOf("Museums")).toBe(3);
+    expect(labels.indexOf("Hidden gems")).toBe(4);
+    expect(labels.indexOf("Beach towns")).toBe(5);
+    expect(labels.indexOf("Castles")).toBe(6);
+  });
+});
+
+describe("Road trips Netherlands nav active state", () => {
+  const ROAD_TRIPS_PATH = "/netherlands/living/road-trips-netherlands/";
+
+  it("treats the Road trips guide route as live in local/preview", () => {
+    expect(getRouteStatus(ROAD_TRIPS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Road trips guide path", () => {
+    expect(getActiveNavKey(ROAD_TRIPS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Weekend & lifestyle menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Weekend & lifestyle")
+      ?.items.find((row) => row.label === "Road trips");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(ROAD_TRIPS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ROAD_TRIPS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Weekend & lifestyle", () => {
+    const rows = menuRowsForHref(ROAD_TRIPS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Weekend & lifestyle");
+  });
+
+  it("sits eighth in Weekend & lifestyle after Castles", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Weekend & lifestyle")
+        ?.items.map((row) => row.label) ?? [];
+
+    expect(labels.indexOf("Weekend trips")).toBe(0);
+    expect(labels.indexOf("National parks")).toBe(1);
+    expect(labels.indexOf("Hiking")).toBe(2);
+    expect(labels.indexOf("Museums")).toBe(3);
+    expect(labels.indexOf("Hidden gems")).toBe(4);
+    expect(labels.indexOf("Beach towns")).toBe(5);
+    expect(labels.indexOf("Castles")).toBe(6);
+    expect(labels.indexOf("Road trips")).toBe(7);
+  });
+});
+
+describe("Day trips Netherlands nav active state", () => {
+  const DAY_TRIPS_PATH = "/netherlands/living/day-trips-netherlands/";
+
+  it("treats the Day trips guide route as live in local/preview", () => {
+    expect(getRouteStatus(DAY_TRIPS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Day trips guide path", () => {
+    expect(getActiveNavKey(DAY_TRIPS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Weekend & lifestyle menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Weekend & lifestyle")
+      ?.items.find((row) => row.label === "Day trips");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(DAY_TRIPS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DAY_TRIPS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Weekend & lifestyle", () => {
+    const rows = menuRowsForHref(DAY_TRIPS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Weekend & lifestyle");
+  });
+
+  it("sits ninth in Weekend & lifestyle after Road trips", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Weekend & lifestyle")
+        ?.items.map((row) => row.label) ?? [];
+
+    expect(labels.indexOf("Weekend trips")).toBe(0);
+    expect(labels.indexOf("National parks")).toBe(1);
+    expect(labels.indexOf("Hiking")).toBe(2);
+    expect(labels.indexOf("Museums")).toBe(3);
+    expect(labels.indexOf("Hidden gems")).toBe(4);
+    expect(labels.indexOf("Beach towns")).toBe(5);
+    expect(labels.indexOf("Castles")).toBe(6);
+    expect(labels.indexOf("Road trips")).toBe(7);
+    expect(labels.indexOf("Day trips")).toBe(8);
+  });
+});
+
 describe("buying a car Netherlands nav active state", () => {
   const BUYING_A_CAR_PATH = "/netherlands/living/buying-a-car-netherlands/";
 
@@ -4913,5 +6353,561 @@ describe("Lease cars Netherlands nav active state", () => {
     expect(carSharing).toBeGreaterThanOrEqual(0);
     expect(leaseCars).toBe(carSharing + 1);
     expect(leaseCars).toBe(labels.length - 1);
+  });
+});
+
+describe("Dutch supermarkets nav active state", () => {
+  const DUTCH_SUPERMARKETS_PATH = "/netherlands/living/dutch-supermarkets/";
+
+  it("treats the Dutch supermarkets guide route as live in local/preview", () => {
+    expect(getRouteStatus(DUTCH_SUPERMARKETS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Dutch supermarkets guide path", () => {
+    expect(getActiveNavKey(DUTCH_SUPERMARKETS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Dutch supermarkets");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(DUTCH_SUPERMARKETS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(DUTCH_SUPERMARKETS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(DUTCH_SUPERMARKETS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after Shopping & groceries", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const shopping = labels.indexOf("Shopping & groceries");
+    const dutchSupermarkets = labels.indexOf("Dutch supermarkets");
+
+    expect(shopping).toBeGreaterThanOrEqual(0);
+    expect(dutchSupermarkets).toBe(shopping + 1);
+  });
+});
+
+describe("Best supermarkets Netherlands nav active state", () => {
+  const BEST_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/best-supermarkets-netherlands/";
+
+  it("treats the Best supermarkets guide route as live in local/preview", () => {
+    expect(getRouteStatus(BEST_SUPERMARKETS_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Best supermarkets guide path", () => {
+    expect(getActiveNavKey(BEST_SUPERMARKETS_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Best supermarkets");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(BEST_SUPERMARKETS_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(BEST_SUPERMARKETS_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(BEST_SUPERMARKETS_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after Dutch supermarkets", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const dutchSupermarkets = labels.indexOf("Dutch supermarkets");
+    const bestSupermarkets = labels.indexOf("Best supermarkets");
+
+    expect(dutchSupermarkets).toBeGreaterThanOrEqual(0);
+    expect(bestSupermarkets).toBe(dutchSupermarkets + 1);
+  });
+});
+
+describe("Cheap groceries Netherlands nav active state", () => {
+  const CHEAP_GROCERIES_NETHERLANDS_PATH = "/netherlands/living/cheap-groceries-netherlands/";
+
+  it("treats the Cheap groceries guide route as live in local/preview", () => {
+    expect(getRouteStatus(CHEAP_GROCERIES_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Cheap groceries guide path", () => {
+    expect(getActiveNavKey(CHEAP_GROCERIES_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Cheap groceries");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(CHEAP_GROCERIES_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(CHEAP_GROCERIES_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(CHEAP_GROCERIES_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after Best supermarkets and before International supermarkets", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const bestSupermarkets = labels.indexOf("Best supermarkets");
+    const cheapGroceries = labels.indexOf("Cheap groceries");
+    const internationalSupermarkets = labels.indexOf("International supermarkets");
+
+    expect(bestSupermarkets).toBeGreaterThanOrEqual(0);
+    expect(cheapGroceries).toBe(bestSupermarkets + 1);
+    expect(internationalSupermarkets).toBe(cheapGroceries + 1);
+  });
+});
+
+describe("International supermarkets Netherlands nav active state", () => {
+  const INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/international-supermarkets-netherlands/";
+
+  it("treats the International supermarkets guide route as live in local/preview", () => {
+    expect(getRouteStatus(INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the International supermarkets guide path", () => {
+    expect(getActiveNavKey(INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "International supermarkets");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after Cheap groceries and before Asian supermarkets", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const cheapGroceries = labels.indexOf("Cheap groceries");
+    const internationalSupermarkets = labels.indexOf("International supermarkets");
+    const asianSupermarkets = labels.indexOf("Asian supermarkets");
+
+    expect(cheapGroceries).toBeGreaterThanOrEqual(0);
+    expect(internationalSupermarkets).toBe(cheapGroceries + 1);
+    expect(asianSupermarkets).toBe(internationalSupermarkets + 1);
+  });
+});
+
+describe("Asian supermarkets Netherlands nav active state", () => {
+  const ASIAN_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/asian-supermarkets-netherlands/";
+
+  it("treats the Asian supermarkets guide route as live in local/preview", () => {
+    expect(getRouteStatus(ASIAN_SUPERMARKETS_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Asian supermarkets guide path", () => {
+    expect(getActiveNavKey(ASIAN_SUPERMARKETS_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Asian supermarkets");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(ASIAN_SUPERMARKETS_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(ASIAN_SUPERMARKETS_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(ASIAN_SUPERMARKETS_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after International supermarkets and before Turkish supermarkets", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const internationalSupermarkets = labels.indexOf("International supermarkets");
+    const asianSupermarkets = labels.indexOf("Asian supermarkets");
+    const turkishSupermarkets = labels.indexOf("Turkish supermarkets");
+
+    expect(internationalSupermarkets).toBeGreaterThanOrEqual(0);
+    expect(asianSupermarkets).toBe(internationalSupermarkets + 1);
+    expect(turkishSupermarkets).toBe(asianSupermarkets + 1);
+  });
+});
+
+describe("Turkish supermarkets Netherlands nav active state", () => {
+  const TURKISH_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/turkish-supermarkets-netherlands/";
+
+  it("treats the Turkish supermarkets guide route as live in local/preview", () => {
+    expect(getRouteStatus(TURKISH_SUPERMARKETS_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Turkish supermarkets guide path", () => {
+    expect(getActiveNavKey(TURKISH_SUPERMARKETS_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Turkish supermarkets");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(TURKISH_SUPERMARKETS_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(TURKISH_SUPERMARKETS_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(TURKISH_SUPERMARKETS_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after Asian supermarkets and before Indian supermarkets", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const asianSupermarkets = labels.indexOf("Asian supermarkets");
+    const turkishSupermarkets = labels.indexOf("Turkish supermarkets");
+    const indianSupermarkets = labels.indexOf("Indian supermarkets");
+
+    expect(asianSupermarkets).toBeGreaterThanOrEqual(0);
+    expect(turkishSupermarkets).toBe(asianSupermarkets + 1);
+    expect(indianSupermarkets).toBe(turkishSupermarkets + 1);
+  });
+});
+
+describe("Indian supermarkets Netherlands nav active state", () => {
+  const INDIAN_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/indian-supermarkets-netherlands/";
+
+  it("treats the Indian supermarkets guide route as live in local/preview", () => {
+    expect(getRouteStatus(INDIAN_SUPERMARKETS_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Indian supermarkets guide path", () => {
+    expect(getActiveNavKey(INDIAN_SUPERMARKETS_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Indian supermarkets");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(INDIAN_SUPERMARKETS_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(INDIAN_SUPERMARKETS_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(INDIAN_SUPERMARKETS_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after Turkish supermarkets and before South African shops", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const turkishSupermarkets = labels.indexOf("Turkish supermarkets");
+    const indianSupermarkets = labels.indexOf("Indian supermarkets");
+    const southAfricanShops = labels.indexOf("South African shops");
+
+    expect(turkishSupermarkets).toBeGreaterThanOrEqual(0);
+    expect(indianSupermarkets).toBe(turkishSupermarkets + 1);
+    expect(southAfricanShops).toBe(indianSupermarkets + 1);
+  });
+});
+
+describe("South African shops Netherlands nav active state", () => {
+  const SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH = "/netherlands/living/south-african-shops-netherlands/";
+
+  it("treats the South African shops guide route as live in local/preview", () => {
+    expect(getRouteStatus(SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the South African shops guide path", () => {
+    expect(getActiveNavKey(SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "South African shops");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after Indian supermarkets and before Meal kits", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const indianSupermarkets = labels.indexOf("Indian supermarkets");
+    const southAfricanShops = labels.indexOf("South African shops");
+    const mealKits = labels.indexOf("Meal kits");
+    const foodDelivery = labels.indexOf("Food delivery");
+
+    expect(indianSupermarkets).toBeGreaterThanOrEqual(0);
+    expect(southAfricanShops).toBe(indianSupermarkets + 1);
+    expect(mealKits).toBe(southAfricanShops + 1);
+    expect(foodDelivery).toBe(mealKits + 1);
+  });
+});
+
+describe("Meal kits Netherlands nav active state", () => {
+  const MEAL_KITS_NETHERLANDS_PATH = "/netherlands/living/meal-kits-netherlands/";
+
+  it("treats the Meal kits guide route as live in local/preview", () => {
+    expect(getRouteStatus(MEAL_KITS_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Meal kits guide path", () => {
+    expect(getActiveNavKey(MEAL_KITS_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Meal kits");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(MEAL_KITS_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(MEAL_KITS_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(MEAL_KITS_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after South African shops and before Food delivery", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const southAfricanShops = labels.indexOf("South African shops");
+    const mealKits = labels.indexOf("Meal kits");
+    const foodDelivery = labels.indexOf("Food delivery");
+
+    expect(southAfricanShops).toBeGreaterThanOrEqual(0);
+    expect(mealKits).toBe(southAfricanShops + 1);
+    expect(foodDelivery).toBe(mealKits + 1);
+  });
+});
+
+describe("Food delivery Netherlands nav active state", () => {
+  const FOOD_DELIVERY_NETHERLANDS_PATH = "/netherlands/living/food-delivery-netherlands/";
+
+  it("treats the Food delivery guide route as live in local/preview", () => {
+    expect(getRouteStatus(FOOD_DELIVERY_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Food delivery guide path", () => {
+    expect(getActiveNavKey(FOOD_DELIVERY_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Food delivery");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(FOOD_DELIVERY_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(FOOD_DELIVERY_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(FOOD_DELIVERY_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after Meal kits and before Emergencies & safety", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const mealKits = labels.indexOf("Meal kits");
+    const foodDelivery = labels.indexOf("Food delivery");
+    const restaurants = labels.indexOf("Restaurants");
+    const tipping = labels.indexOf("Tipping");
+    const emergencies = labels.indexOf("Emergencies & safety");
+
+    expect(mealKits).toBeGreaterThanOrEqual(0);
+    expect(foodDelivery).toBe(mealKits + 1);
+    expect(restaurants).toBe(foodDelivery + 1);
+    expect(tipping).toBe(restaurants + 1);
+    expect(emergencies).toBe(tipping + 1);
+  });
+});
+
+describe("Restaurants Netherlands nav active state", () => {
+  const RESTAURANTS_NETHERLANDS_PATH = "/netherlands/living/restaurants-netherlands/";
+
+  it("treats the Restaurants guide route as live in local/preview", () => {
+    expect(getRouteStatus(RESTAURANTS_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Restaurants guide path", () => {
+    expect(getActiveNavKey(RESTAURANTS_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Restaurants");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(RESTAURANTS_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(RESTAURANTS_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(RESTAURANTS_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after Food delivery and before Tipping", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const foodDelivery = labels.indexOf("Food delivery");
+    const restaurants = labels.indexOf("Restaurants");
+    const tipping = labels.indexOf("Tipping");
+    const emergencies = labels.indexOf("Emergencies & safety");
+
+    expect(foodDelivery).toBeGreaterThanOrEqual(0);
+    expect(restaurants).toBe(foodDelivery + 1);
+    expect(tipping).toBe(restaurants + 1);
+    expect(emergencies).toBe(tipping + 1);
+  });
+});
+
+describe("Tipping Netherlands nav active state", () => {
+  const TIPPING_NETHERLANDS_PATH = "/netherlands/living/tipping-netherlands/";
+
+  it("treats the Tipping guide route as live in local/preview", () => {
+    expect(getRouteStatus(TIPPING_NETHERLANDS_PATH)).toBe("live");
+  });
+
+  it("highlights Living for the Tipping guide path", () => {
+    expect(getActiveNavKey(TIPPING_NETHERLANDS_PATH)).toBe("living");
+  });
+
+  it("renders the Living Daily life menu row as live and active", () => {
+    const item = MEGA_MENUS.living.sections
+      .find((section) => section.title === "Daily life")
+      ?.items.find((row) => row.label === "Tipping");
+
+    expect(item).toBeDefined();
+    expect(item?.href).toBe(TIPPING_NETHERLANDS_PATH);
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(TIPPING_NETHERLANDS_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Living > Daily life", () => {
+    const rows = menuRowsForHref(TIPPING_NETHERLANDS_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("living");
+    expect(rows[0].sectionTitle).toBe("Daily life");
+  });
+
+  it("sits immediately after Restaurants and before Emergencies & safety", () => {
+    const labels =
+      MEGA_MENUS.living.sections
+        .find((section) => section.title === "Daily life")
+        ?.items.map((row) => row.label) ?? [];
+    const restaurants = labels.indexOf("Restaurants");
+    const tipping = labels.indexOf("Tipping");
+    const emergencies = labels.indexOf("Emergencies & safety");
+
+    expect(restaurants).toBeGreaterThanOrEqual(0);
+    expect(tipping).toBe(restaurants + 1);
+    expect(emergencies).toBe(tipping + 1);
   });
 });

@@ -23,11 +23,19 @@ import {
 import { RelatedGuidesSection } from "@/src/components/city-hub/RelatedGuidesGrid";
 import { ToolCards } from "@/src/components/city-hub/ToolCards";
 import { OfficialSourcesList } from "@/src/components/city-hub/OfficialSourcesList";
+import { AffiliateBlockView } from "@/src/components/affiliates/AffiliateBlockView";
 import { immigrationLawyersCategoryPage } from "@/src/data/services/categories/immigration-lawyers";
 import type { CityRelatedGuideBlock } from "@/src/lib/city-hub/types";
 import type { CityToolCard } from "@/src/lib/city-hub/types";
 import type { CityOfficialSource } from "@/src/lib/city-hub/types";
+import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 import { getSiteOrigin } from "@/lib/site-origin";
+
+const affiliateProviderData = loadPlacementWithProviders(
+  "nl-services-immigration-lawyers-support-providers",
+  "netherlands",
+  undefined
+);
 
 const baseUrl = getSiteOrigin();
 const data = immigrationLawyersCategoryPage;
@@ -186,6 +194,22 @@ export default function ImmigrationLawyersCategoryPage() {
                   sectionTitle={data.comparisonSection?.title ?? "Compare providers"}
                   sectionIntro={data.comparisonSection?.intro}
                 />
+
+                {affiliateProviderData && affiliateProviderData.items.length > 0 ? (
+                  <section id="affiliate-providers" className="scroll-mt-24 mt-12 space-y-6">
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
+                      Providers to contact for related support
+                    </h2>
+                    <p className="text-copilot-text-secondary leading-relaxed">
+                      Soft discovery only — compare scoped help for visa routes, relocation, tax setup and housing timing alongside immigration legal research. This is not a ranking of lawyers.
+                    </p>
+                    <AffiliateBlockView
+                      placement={affiliateProviderData.placement}
+                      items={affiliateProviderData.items}
+                      hidePlacementTitle
+                    />
+                  </section>
+                ) : null}
 
                 <section id="typical-costs" className="scroll-mt-24 mt-12 space-y-6">
                   <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">

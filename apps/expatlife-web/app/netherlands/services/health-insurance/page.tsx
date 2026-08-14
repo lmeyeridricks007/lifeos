@@ -31,9 +31,15 @@ import type { CityToolCard } from "@/src/lib/city-hub/types";
 import type { CityOfficialSource } from "@/src/lib/city-hub/types";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { PresetSoftCTA } from "@/src/components/soft-cta/PresetSoftCTA";
+import { AffiliateBlockView } from "@/src/components/affiliates/AffiliateBlockView";
+import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
 
 const baseUrl = getSiteOrigin();
 const data = healthInsuranceCategoryPage;
+const affiliateProviderData =
+  data.affiliatePlacementId != null
+    ? loadPlacementWithProviders(data.affiliatePlacementId, "netherlands", undefined)
+    : null;
 
 /*
  * INTERNAL LINKING RECOMMENDATIONS:
@@ -281,6 +287,24 @@ export default function HealthInsuranceCategoryPage() {
                 </section>
 
                 <PresetSoftCTA preset="servicesHealthHubSoftCta" contained={false} />
+
+                {affiliateProviderData && affiliateProviderData.items.length > 0 ? (
+                  <section id="affiliate-providers" className="scroll-mt-24 mt-12 space-y-6">
+                    <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
+                      Affiliates and Providers That May Help
+                    </h2>
+                    <p className="text-copilot-text-secondary leading-relaxed">
+                      Soft discovery for Dutch health insurance comparison — prioritising Independer — not a ranking of insurers.
+                      Confirm premiums, excess, policy type and cover directly before you enrol. For independent broker advice on
+                      non-life packages, see Insurance brokers.
+                    </p>
+                    <AffiliateBlockView
+                      placement={affiliateProviderData.placement}
+                      items={affiliateProviderData.items}
+                      hidePlacementTitle
+                    />
+                  </section>
+                ) : null}
 
                 <section id="faq" className="scroll-mt-24 mt-12 space-y-6">
                   <h2 className="text-2xl font-bold tracking-tight text-copilot-text-primary">
