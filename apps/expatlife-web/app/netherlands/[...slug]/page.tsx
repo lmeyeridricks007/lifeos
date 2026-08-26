@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { ComingSoonPage } from "@/src/components/content/ComingSoonPage";
 import { GuidePageTemplate } from "@/src/components/guides/GuidePageTemplate";
 import {
@@ -17,14 +17,22 @@ import {
   loadGuideBySlug,
 } from "@/src/lib/guides/loadGuide";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
-import { getSiteOrigin } from "@/lib/site-origin";
+import { buildSocialMetadata } from "@/lib/seo/metadata";
+import { getSeoPublicOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 type Props = {
   params: Promise<{ slug: string[] }>;
 };
 
-const baseUrl = getSiteOrigin();
+function humanizeSegment(segment: string) {
+  return segment.replace(/-/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function comingSoonPathFromSlug(slug: string[]): string {
+  const joined = slug.join("/");
+  return joined.endsWith("/") ? `/netherlands/${joined}` : `/netherlands/${joined}/`;
+}
 
 /** Only handle guide routes when we have exactly one segment (e.g. /netherlands/bsn-registration/). */
 function getGuideSlugFromParams(slug: string[]): string | null {
@@ -35,14 +43,42 @@ function getGuideSlugFromParams(slug: string[]): string | null {
 
 export const revalidate = CONTENT_REVALIDATE;
 
-/** Static metadata only (plain strings) to avoid DataCloneError in Next.js metadata resolution. */
-export const metadata: Metadata = {
-  title: String("Netherlands"),
-  description: String("Guides and resources for moving to and living in the Netherlands."),
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const guideSlug = getGuideSlugFromParams(slug);
+
+  if (guideSlug) {
+    return {
+      title: String("Netherlands"),
+      description: String("Guides and resources for moving to and living in the Netherlands."),
+    };
+  }
+
+  const title = slug.map(humanizeSegment).join(" / ");
+  const path = comingSoonPathFromSlug(slug);
+
+  return buildSocialMetadata({
+    title,
+    description: "This section is planned and linked in the mega menu.",
+    path,
+    ogType: "website",
+    publishGate: { publish: false },
+  });
+}
+
+const STUB_HUB_REDIRECTS: Record<string, string> = {
+  moving: "/netherlands/moving-to-the-netherlands/",
+  "survival-guide": "/netherlands/living/survival-guide/",
 };
 
 export default async function NetherlandsCatchAllPage({ params }: Props) {
+  const baseUrl = getSeoPublicOrigin();
   const { slug } = await params;
+
+  if (slug.length === 1 && STUB_HUB_REDIRECTS[slug[0]]) {
+    permanentRedirect(STUB_HUB_REDIRECTS[slug[0]]);
+  }
+
   const guideSlug = getGuideSlugFromParams(slug);
 
   if (guideSlug) {
@@ -119,7 +155,7 @@ export default async function NetherlandsCatchAllPage({ params }: Props) {
   }
 
   function humanize(segment: string) {
-    return segment.replace(/-/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
+    return humanizeSegment(segment);
   }
   const title = slug.map(humanize).join(" / ");
 
@@ -140,12 +176,17 @@ export default async function NetherlandsCatchAllPage({ params }: Props) {
       suggestedLinks={[
         {
           title: "Moving to the Netherlands",
-          href: "/netherlands/moving-to-the-netherlands",
+          href: "/netherlands/moving-to-the-netherlands/",
           description: "Full relocation guide, checklist, and tools.",
         },
         {
+          title: "Netherlands Survival Guide",
+          href: "/netherlands/living/survival-guide/",
+          description: "First-week priorities, apps, and daily-life setup.",
+        },
+        {
           title: "Tools",
-          href: "/netherlands/moving/tools",
+          href: "/netherlands/moving/tools/",
           description: "Moving checklist, document readiness, arrival planner.",
         },
       ]}

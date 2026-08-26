@@ -2,8 +2,20 @@ import type { MoneyThirtyRulingFaqItemConfig } from "./moneyThirtyRulingContent.
 
 export const moneyThirtyRulingFaq: readonly MoneyThirtyRulingFaqItemConfig[] = [
   {
+    q: "What are the 2026 salary norms for the 30% ruling?",
+    a: "For tax year 2026, Belastingdienst publishes minimum taxable salary norms of more than €48,013/year (standard) and more than €36,497/year (under 30 with qualifying master's), with a salary cap of €262,000/year for the facility calculation and a maximum untaxed allowance of €78,600/year at 30% for a full year at the cap. Role exceptions and indexation can apply — confirm your category on Belastingdienst and use the 30% ruling calculator with tax year 2026 selected.",
+  },
+  {
+    q: "What is the 30% rate in 2026 vs 2027?",
+    a: "For 2026 payroll the statutory facility rate remains 30% within caps and eligibility rules. The government has stated a reduction to 27% from 1 January 2027 for most people who entered the scheme after 2023 — that 27% rate is not yet in force. Use the 30% ruling calculator’s 2027 preview for planning only; confirm current law on Belastingdienst for your tax year.",
+  },
+  {
+    q: "What happened to partial foreign taxpayer status with the 30% ruling?",
+    a: "Partial foreign taxpayer treatment for Box 2 and Box 3 linked to the expat scheme generally ended for 2025 income tax returns onward. Transitional arrangements may apply only through 2026 for people who used the option before 2024 — verify on Belastingdienst whether any transition affects your filing.",
+  },
+  {
     q: "What is the 30% ruling?",
-    a: "A Dutch tax facility for eligible incoming employees that can allow part of compensation to be treated as a tax-free allowance within year-specific rules — implemented through employer payroll.",
+    a: "A Dutch tax facility (expat scheme) for eligible incoming employees that can allow part of compensation to be treated as a tax-free allowance within year-specific rules — implemented through employer payroll.",
   },
   {
     q: "Who can qualify for the 30% ruling?",

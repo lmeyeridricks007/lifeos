@@ -31,6 +31,7 @@ import {
 import { filterLiveInternalLinks, isRouteLive } from "@/src/lib/routes/routeStatus";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import { cn } from "@/lib/cn";
 import { siteGuideColumnPadYClass } from "@/lib/ui/site-shell-identity";
 import {
@@ -119,20 +120,22 @@ const baseUrl = getSiteOrigin();
 const path = netherlandsCitiesOverview.path;
 const data = netherlandsCitiesOverview;
 
+const shareTitle = sharePreviewTitle(data.seo.title);
+
 export const metadata: Metadata = {
-  title: data.seo.title,
+  title: pageMetadataTitle(data.seo.title),
   description: data.seo.description,
   keywords: data.seo.keywords,
   alternates: { canonical: path },
   openGraph: {
-    title: data.seo.title,
+    title: shareTitle,
     description: data.seo.description,
     type: "article",
-    url: new URL(path, baseUrl).toString(),
+    url: path,
   },
   twitter: {
     card: "summary_large_image",
-    title: data.seo.title,
+    title: shareTitle,
     description: data.seo.description,
   },
 };

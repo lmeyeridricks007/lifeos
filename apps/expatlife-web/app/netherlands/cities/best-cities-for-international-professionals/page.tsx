@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { INTERNATIONAL_PROFESSIONALS_CITIES_HERO_SRC } from "@/src/components/cities/best-cities-for-international-professionals/BestCitiesForInternationalProfessionalsHeroGraphic";
 import { BestCitiesForInternationalProfessionalsView } from "@/src/components/cities/best-cities-for-international-professionals/BestCitiesForInternationalProfessionalsView";
 import { bestCitiesForInternationalProfessionalsPageModel } from "@/src/components/cities/best-cities-for-international-professionals/bestCitiesForInternationalProfessionalsPageModel";
@@ -12,7 +13,7 @@ const { path, seo, publishDate, hero } = bestCitiesForInternationalProfessionals
 const professionalsHeroImageUrl = new URL(INTERNATIONAL_PROFESSIONALS_CITIES_HERO_SRC, baseUrl).toString();
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { MoveHero } from "@/components/page/move-shell";
@@ -22,12 +23,12 @@ import { TaxClusterToolsSection } from "@/src/components/money/tax-cluster/TaxCl
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const META_TITLE = "Double Tax Awareness Tool Netherlands | ExpatCopilot";
+const META_TITLE = "Double Tax Awareness Tool Netherlands";
 const META_DESCRIPTION =
   "Check whether you may need to file tax in more than one country when moving to or working in the Netherlands. Understand residency signals, foreign income, treaty relief, and next steps.";
 
 export const metadata: Metadata = {
-  title: META_TITLE,
+  title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
   alternates: { canonical: DOUBLE_TAX_CANONICAL },
   keywords: [
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     "tax treaty relief Netherlands expat",
   ],
   openGraph: {
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     url: DOUBLE_TAX_CANONICAL,
     images: [
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     images: ["/images/tools/expatlife-netherlands-budget-planning.png"],
   },
@@ -87,7 +88,7 @@ export default function DoubleTaxAwarenessToolPage() {
     offers: { price: "0", priceCurrency: "EUR" },
   });
   const webPageJsonLd = buildToolPageSchema({
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     canonicalPath: DOUBLE_TAX_CANONICAL,
   });

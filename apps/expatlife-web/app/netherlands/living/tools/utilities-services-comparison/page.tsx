@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Suspense } from "react";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
@@ -27,12 +28,12 @@ const canonical = "/netherlands/living/tools/utilities-services-comparison/";
 const BASE = "/netherlands";
 const HERO_IMAGE = "/images/tools/netherlands-utilities-services-comparison-hero.png";
 
-const META_TITLE = "Netherlands Utilities & Household Services Planner | ExpatCopilot";
+const META_TITLE = "Netherlands Utilities & Household Services Planner";
 const META_DESCRIPTION =
   "Destination guide and free planner for Dutch household utilities: what to arrange yourself vs local charges, landlord questions, first-month setup, and monthly bands for energy, water, internet, mobile, and gemeente-linked costs. Worked presets, FAQs, official sources, and links to cost of living, rent, cities, and moving tools. Planning only — not live quotes.";
 
 export const metadata: Metadata = {
-  title: META_TITLE,
+  title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   alternates: { canonical },
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     "water company Netherlands expat",
   ],
   openGraph: {
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     url: canonical,
     images: [
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     images: [HERO_IMAGE],
   },
@@ -194,7 +195,7 @@ export default function UtilitiesServicesComparisonPage() {
     offers: { price: "0", priceCurrency: "EUR" },
   });
   const webPageJsonLd = buildToolPageSchema({
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description:
       "Guide and calculator for Dutch household utilities: energy, internet, mobile, water, gemeente charges, first-month setup, landlord questions, presets, FAQs, and links to cost of living, rent, cities, and moving tools.",
     canonicalPath: canonical,

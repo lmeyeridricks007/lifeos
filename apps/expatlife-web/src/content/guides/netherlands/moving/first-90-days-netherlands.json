@@ -302,7 +302,7 @@
   "internalLinks": {
     "hub": {
       "label": "Back to Moving Hub",
-      "href": "/netherlands/moving/"
+      "href": "/netherlands/moving-to-the-netherlands/"
     },
     "pillar": {
       "label": "Read the full Moving Guide",
@@ -329,7 +329,7 @@
   },
 
   "sidebarStartLinks": [
-    { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    { "label": "Back to Moving Hub", "href": "/netherlands/moving-to-the-netherlands/" },
     { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" }
   ],
 

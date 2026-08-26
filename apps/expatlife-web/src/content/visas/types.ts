@@ -13,6 +13,8 @@ export type VisaKeyFacts = {
   sponsorRequirement?: string;
   indFee: string;
   commonUsers: string;
+  /** Optional IND policy note (e.g. post-employment job-search window). */
+  jobSearchWindow?: string;
 };
 
 export type VisaInvestmentRequirement = {
@@ -69,6 +71,32 @@ export type VisaExampleScenario = {
 export type VisaFaqItem = {
   q: string;
   a: string;
+};
+
+/** Proposed legislative changes — not in force; label clearly as WATCH on the page. */
+export type VisaProposedReformsWatch = {
+  title: string;
+  possibleEffectiveDate: string;
+  businessGovUrl: string;
+  governmentNlUrl?: string;
+  summary: string;
+  bullets: string[];
+  disclaimer: string;
+};
+
+/** IND job-search period after HSM employment ends (unemployment while permit still valid). */
+export type VisaJobLossGuide = {
+  title: string;
+  effectiveDate: string;
+  indLastUpdate: string;
+  indUrl: string;
+  summary: string;
+  scenarios: Array<{ situation: string; maxSearchPeriod: string; notes: string }>;
+  clockStarts: string;
+  permitValidityCap: string;
+  afterPeriodEnds: string;
+  newEmployerNote: string;
+  disclaimer: string;
 };
 
 export type VisaRelatedGuide = {
@@ -128,6 +156,10 @@ export type VisaPageData = {
   whoCanApplyCards?: Array<{ name: string; description: string }>;
   /** Optional official source links (IND, government). */
   officialSources?: Array<{ label: string; href: string }>;
+  /** Dated IND guidance when HSM employment ends before permit expiry. */
+  jobLossGuide?: VisaJobLossGuide;
+  /** Proposed reforms pending parliament — render as WATCH, not current law. */
+  proposedReformsWatch?: VisaProposedReformsWatch;
   /** For partner/family route: general eligibility/requirements list. */
   requirementsBullets?: string[];
 }

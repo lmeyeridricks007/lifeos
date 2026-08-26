@@ -23,7 +23,9 @@
       "description": "Tools for integration planning, exams and requirements.",
       "menuGroup": "move",
       "relatedGuides": [
-        "/netherlands/integration/",
+        "/netherlands/integration/inburgering/",
+        "/netherlands/citizenship/permanent-residence/",
+        "/netherlands/citizenship/dutch-citizenship/",
         "/netherlands/moving-to-the-netherlands/"
       ]
     },
@@ -34,7 +36,10 @@
       "description": "Eligibility and timeline tools for permanent residence and citizenship.",
       "menuGroup": "move",
       "relatedGuides": [
-        "/netherlands/citizenship/",
+        "/netherlands/citizenship/permanent-residence/",
+        "/netherlands/citizenship/dutch-citizenship/",
+        "/netherlands/integration/inburgering/",
+        "/netherlands/visa/highly-skilled-migrant/",
         "/netherlands/moving-to-the-netherlands/"
       ]
     },
@@ -84,7 +89,7 @@
       "additionalToolIds": ["netherlands-city-comparison-tool"],
       "relatedGuides": [
         "/netherlands/housing/",
-        "/netherlands/moving/"
+        "/netherlands/moving-to-the-netherlands/"
       ]
     },
     {
@@ -141,7 +146,8 @@
       "description": "Exit and repatriation planning tools.",
       "menuGroup": "move",
       "relatedGuides": [
-        "/netherlands/leaving/",
+        "/netherlands/taxes/leaving-netherlands-tax/",
+        "/netherlands/moving/extensions-changes/",
         "/netherlands/moving-to-the-netherlands/"
       ]
     },

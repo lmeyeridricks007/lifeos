@@ -7,6 +7,9 @@ export const PAYROLL_TAX_NETHERLANDS_PATH = "/netherlands/taxes/payroll-tax-neth
 export const SALARY_NEGOTIATION_NETHERLANDS_PATH = "/netherlands/jobs/salary-negotiation-netherlands/" as const;
 export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
 export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
+export const HSM_VISA_PATH = "/netherlands/visa/highly-skilled-migrant/" as const;
+export const THIRTY_PERCENT_RULING_GUIDE_PATH = "/netherlands/taxes/30-percent-ruling/" as const;
+export const MOVING_CHECKLIST_TOOL_PATH = "/netherlands/moving/tools/moving-checklist/" as const;
 export const COST_OF_LIVING_CALCULATOR_PATH = "/netherlands/money/tools/cost-of-living-calculator/" as const;
 export const RENT_AFFORDABILITY_CALCULATOR_PATH = "/netherlands/housing/tools/rent-affordability-calculator/" as const;
 
@@ -23,11 +26,22 @@ export const minimumWageNetherlandsPage = {
   slug: "minimum-wage-netherlands",
   path: MINIMUM_WAGE_NETHERLANDS_PATH,
   publish: true,
-  publishDate: "2026-05-31",
+  publishDate: "2026-08-26",
+  lastReviewed: "26 August 2026",
+  heroOfficialSources: [
+    {
+      label: "Government.nl — Minimum wage amounts",
+      href: "https://www.government.nl/themes/work/minimum-wage/minimum-wage-amounts",
+    },
+    {
+      label: "Rijksoverheid — Bedragen minimumloon 2026",
+      href: "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026",
+    },
+  ],
   seo: {
     title: "Minimum Wage in the Netherlands | Salary, Taxes & Cost of Living Guide",
     description:
-      "Learn how minimum wage works in the Netherlands, including age-based rates, taxes, take-home pay, part-time work and whether minimum wage is enough to live on.",
+      "Dutch minimum wage from 1 July 2026: €14.99/hr for 21+, age-based youth tiers, gross vs net pay, and whether minimum wage is enough to live on as an expat.",
     keywords: [
       "minimum wage netherlands",
       "dutch minimum wage",
@@ -48,7 +62,7 @@ export const minimumWageNetherlandsPage = {
       "Understand how Dutch minimum wage works, how much employees may earn, what reaches your bank account after tax, and what expats should know before accepting lower-salary roles.",
     primaryCta: { label: "Understand Minimum Wage", href: "#intro" },
     secondaryCta: { label: "Explore Salary Guides", href: TAXES_HUB_PATH },
-    chips: ["Age-based rates", "Gross vs net", "Living costs", "Official sources"],
+    chips: ["€14.99/hr from July 2026", "Age-based rates", "Gross vs net", "Official sources"],
     image: {
       src: "/images/heroes/netherlands-minimum-wage-hero-v3.png",
       alt: "Photorealistic editorial photo of a young employee working a everyday shift at a bright Dutch supermarket checkout, with bicycles and canal-side brick buildings visible through the storefront — calm, realistic working-life atmosphere.",
@@ -83,7 +97,7 @@ export const minimumWageNetherlandsPage = {
     hourlyMonthly: {
       src: "/images/infographics/netherlands-minimum-wage-hourly-monthly-infographic.png",
       alt: "Infographic explaining how Dutch minimum wage may be quoted hourly, weekly or monthly and how hours worked affect total earnings.",
-      caption: "Confirm whether your contract quotes hourly, weekly or monthly gross before comparing offers.",
+      caption: "Since 2024 the statutory minimum is an hourly rate — multiply by contracted hours for monthly gross. Contracts may still quote weekly or monthly equivalents.",
     },
     afterTax: {
       src: "/images/infographics/netherlands-minimum-wage-after-tax-infographic.png",
@@ -161,12 +175,12 @@ export const minimumWageNetherlandsPage = {
     },
   ],
   snapshotCards: [
+    { label: "Current adult rate (21+)", value: "€14.99/hr from 1 July 2026" },
+    { label: "Previous adult rate", value: "€14.71/hr (1 Jan – 30 Jun 2026)" },
     { label: "Managed by", value: "Dutch government" },
     { label: "Applies to", value: "Employees aged 15+" },
     { label: "Structure", value: "Hourly rate since 2024" },
-    { label: "Age bands", value: "15–20 youth tiers; 21+ full rate" },
-    { label: "Updated", value: "Periodically (e.g. Jan & Jul)" },
-    { label: "Important", value: "Gross ≠ take-home pay" },
+    { label: "Next typical update", value: "1 January 2027 (confirm on Government.nl)" },
   ],
   snapshotChecklist: [
     "Check whether your contract quotes hourly, weekly or monthly gross pay.",
@@ -180,14 +194,15 @@ export const minimumWageNetherlandsPage = {
     "Overtime, shift premiums and CAO agreements can push total earnings above the statutory hourly floor.",
   ],
   monthlyHourlyExamples: [
-    { label: "36 hrs/week at adult minimum", value: "~€2,300/mo gross", note: "Illustrative at €14.71/hr — verify current rate and your contract hours." },
-    { label: "24 hrs/week part-time", value: "~€1,530/mo gross", note: "Common student or second-job pattern — net depends on payroll setup." },
+    { label: "36 hrs/week at adult minimum", value: "~€2,340/mo gross", note: "Illustrative at €14.99/hr (from 1 July 2026) — verify current rate and your contract hours." },
+    { label: "24 hrs/week part-time", value: "~€1,560/mo gross", note: "Illustrative at €14.99/hr (from 1 July 2026) — net depends on payroll setup." },
     { label: "12 hrs/week student shift", value: "Age-dependent gross", note: "Youth hourly tiers apply below 21 — confirm your age band on Government.nl." },
   ],
   expatTips: [
     "Highly skilled migrant and multinational roles are usually well above minimum wage — but verify written offers and visa salary thresholds separately.",
     "Students and hospitality newcomers may encounter minimum-wage-level hourly pay — check your age band on the official schedule.",
     "Minimum wage is not an immigration salary threshold — visa routes (e.g. HSM) have separate gross requirements.",
+    "Highly skilled migrant 2026 IND floors: €5,942/month gross (30+), €4,357 (under 30), €3,122 reduced criterion in certain cases — see the HSM guide.",
     "Compare gross minimum wage with city rent and transport before relocating on a lower-paid role — Randstad cities are often tight.",
   ],
   expatScenarios: [
@@ -206,7 +221,7 @@ export const minimumWageNetherlandsPage = {
   ],
   livingCostsTips: [
     "Rent is usually the largest cost — shared housing is common for minimum-wage-level earners in Randstad cities.",
-    "Health insurance (zorgverzekering) is mandatory for residents — budget roughly €120–€150/month on top of rent.",
+    "Health insurance (zorgverzekering) is mandatory for residents — budget roughly ~€142–€159/month for basic cover in 2026 (average market pricing is often around €159/month before eigen risico).",
     "Transport passes and bike costs vary by commute — factor in travel between cheaper housing and work locations.",
     "A second income, housemate or family support often makes minimum-wage-level roles workable in expensive cities.",
   ],
@@ -244,7 +259,7 @@ export const minimumWageNetherlandsPage = {
     },
     {
       q: "Is minimum wage monthly or hourly?",
-      a: "Government schedules publish hourly, weekly and monthly equivalents. Contracts may quote any of these — confirm the basis.",
+      a: "Since 2024 Dutch law sets minimum wage as an hourly rate (currently €14.99/hr for 21+ from 1 July 2026). There is no fixed statutory monthly amount — monthly gross depends on your contracted hours. Government.nl may show weekly or monthly equivalents for convenience, but the legal floor is hourly.",
     },
     {
       q: "Do expats earn minimum wage?",
@@ -303,6 +318,12 @@ export const minimumWageNetherlandsPage = {
     { label: "Salary Negotiation", href: SALARY_NEGOTIATION_NETHERLANDS_PATH, status: "live", description: "When your offer sits above the legal floor." },
   ] satisfies MinimumWageNetherlandsLink[],
   relatedGuides: [
+    {
+      label: "Highly skilled migrant visa",
+      href: HSM_VISA_PATH,
+      status: "live",
+      description: "Minimum wage is not an HSM salary threshold — 2026 IND floors are €5,942 (30+), €4,357 (under 30), €3,122 reduced.",
+    },
     { label: "Netherlands Taxes Guide", href: TAXES_HUB_PATH, status: "live", description: "Salary and tax hub for expats." },
     { label: "Average Salary Netherlands", href: AVERAGE_SALARY_NETHERLANDS_PATH, status: "live", description: "Labour market benchmarks beyond the legal floor." },
     { label: "Expat Salary in the Netherlands", href: "/netherlands/jobs/expat-salary-netherlands/", status: "live", description: "Salary expectations for international professionals by city and industry." },
@@ -321,19 +342,19 @@ export const minimumWageNetherlandsPage = {
   ] satisfies MinimumWageNetherlandsLink[],
   officialSources: [
     {
-      label: "Government.nl — Minimum wage",
-      href: "https://www.government.nl/topics/minimum-wage",
-      description: "Official government information on minimum wage rules, age bands and updates.",
+      label: "Government.nl — Minimum wage amounts",
+      href: "https://www.government.nl/themes/work/minimum-wage/minimum-wage-amounts",
+      description: "Official hourly minimum wage tables for 1 July 2026 and 1 January 2026.",
+    },
+    {
+      label: "Rijksoverheid — Bedragen minimumloon 2026",
+      href: "https://www.rijksoverheid.nl/themas/werk/minimumloon/bedragen-minimumloon/bedragen-minimumloon-2026",
+      description: "Dutch-language official minimum wage amounts for 2026.",
     },
     {
       label: "Business.gov.nl — Minimum wage",
       href: "https://business.gov.nl/regulation/minimum-wage/",
       description: "Employer-facing guidance on statutory minimum wage compliance.",
-    },
-    {
-      label: "Rijksoverheid — Minimumloon",
-      href: "https://www.rijksoverheid.nl/onderwerpen/minimumloon",
-      description: "Dutch-language official minimum wage information from the central government.",
     },
     {
       label: "Belastingdienst",
@@ -349,11 +370,11 @@ export const minimumWageNetherlandsPage = {
   faq: [
     {
       q: "What is the minimum wage in the Netherlands?",
-      a: "The Netherlands sets a statutory minimum wage that changes periodically. Rates depend on age and are published on official government websites — verify the current schedule rather than relying on copied figures.",
+      a: "From 1 July 2026 the statutory hourly minimum for workers aged 21+ is €14.99/hr before tax (it was €14.71/hr from 1 January to 30 June 2026). Youth tiers apply below 21. Rates are published on Government.nl — verify the current schedule rather than relying on copied figures.",
     },
     {
       q: "Is minimum wage monthly or hourly?",
-      a: "Government schedules publish hourly, weekly and monthly equivalents. Employment contracts may quote any of these — confirm the basis and whether holiday allowance is included.",
+      a: "Since 2024 Dutch law sets minimum wage as an hourly rate (€14.99/hr for 21+ from 1 July 2026). Monthly gross follows contracted hours — there is no fixed government monthly minimum. Verify the current hourly schedule on Government.nl.",
     },
     {
       q: "Does minimum wage depend on age?",

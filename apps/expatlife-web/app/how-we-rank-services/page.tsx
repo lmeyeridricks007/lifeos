@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { howWeRankServicesPage } from "@/src/data/trust/how-we-rank-services";
@@ -8,7 +9,7 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
-  title: howWeRankServicesPage.seo.title,
+  title: pageMetadataTitle(howWeRankServicesPage.seo.title),
   description: howWeRankServicesPage.seo.description,
   alternates: { canonical: "/how-we-rank-services/" },
 };

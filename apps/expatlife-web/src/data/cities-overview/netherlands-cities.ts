@@ -175,7 +175,7 @@ export const netherlandsCitiesOverview: NetherlandsCitiesOverviewData = {
   publishDate: "2026-03-24",
 
   seo: {
-    title: "Dutch Cities for Expats | Compare City Guides & Hubs | ExpatCopilot",
+    title: "Dutch Cities for Expats | Compare City Guides & Hubs",
     description:
       "Explore the best cities in the Netherlands for expats, including Amsterdam, Amstelveen, Haarlem, Rotterdam, Utrecht, The Hague, Delft, Leiden, Maastricht, Breda, Tilburg, Arnhem, Nijmegen, Eindhoven, and Groningen, with practical guidance and city comparisons.",
     keywords: [

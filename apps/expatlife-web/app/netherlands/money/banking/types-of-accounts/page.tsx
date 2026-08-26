@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { TypesOfBankAccountsView } from "@/src/components/money/types-of-bank-accounts/TypesOfBankAccountsView";
 import { typesOfBankAccountsPageModel } from "@/src/components/money/types-of-bank-accounts/typesOfBankAccountsPageModel";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -10,7 +11,7 @@ const { path, seo, publishDate, heroImage } = typesOfBankAccountsPageModel;
 const ogImageUrl = new URL(heroImage.src, baseUrl).toString();
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },

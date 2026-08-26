@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { AccountRejectionView } from "@/src/components/money/banking-account-rejection/AccountRejectionView";
 import { accountRejectionPageModel, accountRejectionHeroImage } from "@/src/components/money/banking-account-rejection/accountRejectionPageModel";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -10,7 +11,7 @@ const { path, seo, publishDate } = accountRejectionPageModel;
 const ogImageUrl = new URL(accountRejectionHeroImage.src, baseUrl).toString();
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },

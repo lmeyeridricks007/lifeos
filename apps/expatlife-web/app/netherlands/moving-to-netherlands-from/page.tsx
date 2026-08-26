@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Calculator, CalendarDays, ListChecks } from "lucide-react";
 import { cloneSafeMetadata } from "@/lib/metadata";
+import { absoluteUrlFromPath, pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import { Container } from "@/components/ui/container";
 import { cn } from "@/lib/cn";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
@@ -123,20 +124,22 @@ const serviceCardClass = cn(
   movingNlCardMicroLiftClass
 );
 
+const META_TITLE = "Moving to the Netherlands from Your Country";
+
 export const metadata: Metadata = cloneSafeMetadata({
-  title: "Moving to the Netherlands from Your Country | ExpatCopilot",
+  title: pageMetadataTitle(META_TITLE),
   description:
     "Explore country-specific relocation guides for moving to the Netherlands, with origin-based planning notes, document guidance, route context, and links to the right tools.",
-  alternates: { canonical },
+  alternates: { canonical: absoluteUrlFromPath(canonical) },
   openGraph: {
-    title: "Moving to the Netherlands from Your Country | ExpatCopilot",
+    title: sharePreviewTitle(META_TITLE),
     description:
       "Explore country-specific relocation guides for moving to the Netherlands, with origin-based planning notes, document guidance, route context, and links to the right tools.",
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
   },
   twitter: {
     card: "summary_large_image",
-    title: "Moving to the Netherlands from Your Country | ExpatCopilot",
+    title: sharePreviewTitle(META_TITLE),
     description:
       "Explore country-specific relocation guides for moving to the Netherlands, with origin-based planning notes, document guidance, and links to the right tools.",
   },

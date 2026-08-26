@@ -44,9 +44,19 @@ export const moveChangingJobsFaq: PillarFaqItem[] = [
     ],
   },
   {
-    q: "What if there is a gap between my old job and my new one?",
-    a: "Plan cash, insurance, and any permit-related sequencing on paper — short gaps still cause stress. If stay is employment-shaped, align the gap with employer and IND guidance; do not assume continuity.",
+    q: "I am on a highly skilled migrant permit — how long do I have if I lose my job before finding a new one?",
+    a: "If employment ends while your permit is still valid, the IND allows a job-search period — usually up to 3 months. From 22 May 2026, the maximum is 6 months when your contract ended on or after that date and you held the permit for two years or more (or you are a victim of labour exploitation). Earlier job loss stays on the 3-month rule. The clock starts when your contract ends; the period cannot exceed remaining permit validity. See the IND rule section on this page and the highly skilled migrant guide.",
     links: [
+      { label: "HSM job-search rule (this page)", href: "#if-you-lose-your-hsm-job" },
+      { label: "Highly skilled migrant guide", href: "/netherlands/visa/highly-skilled-migrant/#if-you-lose-your-hsm-job" },
+      { label: "Layoffs in the Netherlands", href: ROUTES.layoffs },
+    ],
+  },
+  {
+    q: "What if there is a gap between my old job and my new one?",
+    a: "Plan cash, insurance, and any permit-related sequencing on paper — short gaps still cause stress. If stay is employment-shaped, align the gap with employer and IND guidance; do not assume continuity. HSM holders should read the dated 3/6-month IND job-search rule on this page.",
+    links: [
+      { label: "HSM job-search rule (this page)", href: "#if-you-lose-your-hsm-job" },
       { label: "Permits & status (this guide)", href: "#permits-status" },
       { label: "Practical life impact", href: "#practical-life" },
     ],

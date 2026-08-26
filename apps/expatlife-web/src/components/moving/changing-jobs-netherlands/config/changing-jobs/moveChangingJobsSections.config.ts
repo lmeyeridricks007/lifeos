@@ -184,6 +184,7 @@ export const moveChangingJobsSections: MoveChangingJobsSections = {
           "If any part of your stay is employer-named or employer-processed, add status questions to the same calendar as notice and start date.",
         keyPoints: [
           "Some routes are sponsor- or employer-typed; switching names can mean new steps",
+          "HSM unemployment — IND job-search period is usually 3 months, or up to 6 months from 22 May 2026 when you held the permit 2+ years (or are a victim of labour exploitation); see #if-you-lose-your-hsm-job",
           "A switch may need notifications, checks, or paperwork — route-dependent",
           "Gaps between employers can matter for continuity in practice",
           "Partner-led vs work-led routes change what is urgent first",

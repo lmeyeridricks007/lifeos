@@ -13,6 +13,22 @@ import { isRouteLive } from "@/src/lib/routes/routeStatus";
  */
 const XML_SITEMAP_EXCLUDE = new Set(["/search/"].map((p) => normalizeSitePath(p)));
 
+/** Legacy 301 aliases — live for nav but excluded from XML sitemap (canonical guides only). */
+const XML_SITEMAP_LEGACY_REDIRECT_ALIASES = new Set(
+  [
+    "/netherlands/buy-vs-rent-netherlands/",
+    "/netherlands/buying-house-netherlands/",
+    "/netherlands/taxes/childcare-allowance/",
+    "/netherlands/family/child-benefit-netherlands/",
+    "/netherlands/taxes/healthcare-allowance/",
+    "/netherlands/taxes/rent-allowance/",
+    "/netherlands/double-taxation-netherlands/",
+    "/netherlands/mortgage-netherlands-expats/",
+    "/netherlands/property-tax-netherlands/",
+    "/netherlands/living/digid-awareness/",
+  ].map((p) => normalizeSitePath(p))
+);
+
 const routingSlugSet = new Set<string>(ROUTING_ORIGIN_COUNTRY_SLUGS);
 
 /**
@@ -32,7 +48,7 @@ export function collectLiveSitemapNormalizedPaths(): string[] {
 
   for (const p of Array.from(LIVE_PATHS)) {
     const n = normalizeSitePath(p);
-    if (!XML_SITEMAP_EXCLUDE.has(n)) set.add(n);
+    if (!XML_SITEMAP_EXCLUDE.has(n) && !XML_SITEMAP_LEGACY_REDIRECT_ALIASES.has(n)) set.add(n);
   }
 
   for (const c of loadAllEnabledCountries()) {

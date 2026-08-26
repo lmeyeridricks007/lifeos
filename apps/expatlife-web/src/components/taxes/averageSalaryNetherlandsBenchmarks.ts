@@ -66,7 +66,7 @@ export const nationalSalaryBenchmarks: SalaryBenchmarkSection = {
       grossMonthlyMax: 2_750,
       indicativeNetAnnualMin: 23_000,
       indicativeNetAnnualMax: 27_000,
-      note: "~€14.71/hr (21+) in 2026; amounts vary by age and hours. Professional roles sit well above this.",
+      note: "~€14.99/hr (21+, from 1 July 2026) in 2026; amounts vary by age and hours. Professional roles sit well above this.",
     },
     {
       id: "holiday-allowance",

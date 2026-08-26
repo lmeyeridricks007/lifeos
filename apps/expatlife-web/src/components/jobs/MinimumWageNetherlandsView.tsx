@@ -54,6 +54,7 @@ import {
   COST_OF_LIVING_CALCULATOR_PATH,
   DUTCH_SALARY_NET_CALCULATOR_PATH,
   GROSS_VS_NET_SALARY_PATH,
+  HSM_VISA_PATH,
   NET_SALARY_NETHERLANDS_PATH,
   PAYROLL_TAX_NETHERLANDS_PATH,
   RENT_AFFORDABILITY_CALCULATOR_PATH,
@@ -329,10 +330,23 @@ function ConceptFlow({ className }: { className?: string }) {
 }
 
 function RateHighlightCards({ className }: { className?: string }) {
+  const { currentSchedule, nextTypicalIndexation } = rates;
   const cards = [
-    { label: "Adult hourly minimum (21+)", value: rates.indicativeAdultHourlyGross, note: rates.indicativeAdultHourlyNote },
-    { label: "Illustrative full-time monthly gross", value: rates.indicativeFullTimeMonthlyGross, note: rates.indicativeFullTimeMonthlyNote },
-    { label: "Holiday allowance (typical)", value: `${rates.holidayAllowancePercent}% on top`, note: "Usually paid separately — confirm whether your contract quote includes vakantiegeld." },
+    {
+      label: "Adult hourly minimum (21+)",
+      value: currentSchedule.adultHourly,
+      note: `Effective from ${currentSchedule.effectiveFrom}. ${rates.indicativeAdultHourlyNote}`,
+    },
+    {
+      label: "Illustrative full-time monthly gross",
+      value: rates.indicativeFullTimeMonthlyGross,
+      note: rates.indicativeFullTimeMonthlyNote,
+    },
+    {
+      label: "Holiday allowance (typical)",
+      value: `${rates.holidayAllowancePercent}% on top`,
+      note: `Usually paid separately — next typical indexation: ${nextTypicalIndexation}. Confirm whether your contract quote includes vakantiegeld.`,
+    },
   ] as const;
   return (
     <div className={cn("grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-3", className)}>
@@ -453,44 +467,79 @@ function TipsList({ items, className }: { items: readonly string[]; className?: 
 function RatesDisclaimer({ className }: { className?: string }) {
   return (
     <p className={cn("rounded-xl border border-amber-200/80 bg-amber-50/90 px-4 py-3 text-sm leading-relaxed text-foreground-muted", className)}>
-      {MINIMUM_WAGE_RATES_DISCLAIMER} Current official rates:{" "}
+      {MINIMUM_WAGE_RATES_DISCLAIMER} Current official rates ({rates.currentSchedule.effectiveFrom}):{" "}
       <a href={rates.officialSource.href} target="_blank" rel="noopener noreferrer" className="font-semibold text-link hover:text-link-hover">
         {rates.officialSource.label}
       </a>
-      {" "}(as of {rates.asOf} orientation).
+      {" "}and{" "}
+      <a href={rates.officialSources.dutch.href} target="_blank" rel="noopener noreferrer" className="font-semibold text-link hover:text-link-hover">
+        {rates.officialSources.dutch.label}
+      </a>
+      . {rates.priorRateNote} {rates.nextTypicalIndexationNote}
     </p>
   );
 }
 
-function AgeBandsTable() {
+function AgeBandsTableBody({ ageBands }: { ageBands: typeof rates.ageBands }) {
   return (
-    <div className="w-full overflow-x-auto rounded-2xl border border-slate-200/90 bg-white/95 shadow-sm ring-1 ring-slate-900/[0.04]">
-      <p className="border-b border-slate-200/90 bg-slate-50/90 px-4 py-3 text-xs leading-relaxed text-foreground-muted">
-        Indicative hourly gross rates from {rates.effectiveFrom} ({rates.asOf} orientation). Verify current figures on{" "}
-        <a href={rates.officialSource.href} target="_blank" rel="noopener noreferrer" className="font-semibold text-link hover:text-link-hover">
-          {rates.officialSource.label}
-        </a>.
-      </p>
-      <table className="w-full min-w-full border-collapse text-left text-sm">
-        <thead>
-          <tr className="border-b border-slate-200/90 bg-slate-50/90">
-            <th className="px-4 py-3 font-bold text-foreground">Age</th>
-            <th className="px-4 py-3 font-bold text-foreground">% of adult rate</th>
-            <th className="px-4 py-3 font-bold text-foreground">Indicative hourly gross</th>
-            <th className="hidden px-4 py-3 font-bold text-foreground md:table-cell">Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          {rates.ageBands.map((row, index) => (
-            <tr key={row.id} className={index % 2 === 0 ? "bg-white" : "bg-slate-50/50"}>
-              <td className="px-4 py-3 font-semibold text-foreground">{row.label}</td>
-              <td className="px-4 py-3 text-foreground-muted">{row.percentOfAdult ?? "—"}</td>
-              <td className="px-4 py-3 font-semibold text-brand-strong">{row.indicativeHourlyGross}</td>
-              <td className="hidden px-4 py-3 text-foreground-muted md:table-cell">{row.description}</td>
+    <tbody>
+      {ageBands.map((row, index) => (
+        <tr key={row.id} className={index % 2 === 0 ? "bg-white" : "bg-slate-50/50"}>
+          <td className="px-4 py-3 font-semibold text-foreground">{row.label}</td>
+          <td className="px-4 py-3 text-foreground-muted">{row.percentOfAdult ?? "—"}</td>
+          <td className="px-4 py-3 font-semibold text-brand-strong">{row.indicativeHourlyGross}</td>
+          <td className="hidden px-4 py-3 text-foreground-muted md:table-cell">{row.description}</td>
+        </tr>
+      ))}
+    </tbody>
+  );
+}
+
+function AgeBandsTable() {
+  const { currentSchedule, historicalSchedules } = rates;
+  return (
+    <div className="flex w-full flex-col gap-6">
+      <div className="w-full overflow-x-auto rounded-2xl border border-slate-200/90 bg-white/95 shadow-sm ring-1 ring-slate-900/[0.04]">
+        <p className="border-b border-slate-200/90 bg-slate-50/90 px-4 py-3 text-xs leading-relaxed text-foreground-muted">
+          Current statutory hourly gross rates from {currentSchedule.effectiveFrom} ({rates.asOf} orientation). Verify on{" "}
+          <a href={rates.officialSource.href} target="_blank" rel="noopener noreferrer" className="font-semibold text-link hover:text-link-hover">
+            {rates.officialSource.label}
+          </a>.
+        </p>
+        <table className="w-full min-w-full border-collapse text-left text-sm">
+          <thead>
+            <tr className="border-b border-slate-200/90 bg-slate-50/90">
+              <th className="px-4 py-3 font-bold text-foreground">Age</th>
+              <th className="px-4 py-3 font-bold text-foreground">% of adult rate</th>
+              <th className="px-4 py-3 font-bold text-foreground">Indicative hourly gross</th>
+              <th className="hidden px-4 py-3 font-bold text-foreground md:table-cell">Notes</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <AgeBandsTableBody ageBands={currentSchedule.ageBands} />
+        </table>
+      </div>
+      {historicalSchedules.map((schedule) => (
+        <div
+          key={schedule.effectiveFrom}
+          className="w-full overflow-x-auto rounded-2xl border border-slate-200/70 bg-slate-50/60 shadow-sm ring-1 ring-slate-900/[0.03]"
+        >
+          <p className="border-b border-slate-200/80 bg-slate-100/80 px-4 py-3 text-xs leading-relaxed text-foreground-muted">
+            Historical rates from {schedule.effectiveFrom}
+            {schedule.effectiveUntil ? ` through ${schedule.effectiveUntil}` : ""} — adult rate {schedule.adultHourly}.
+          </p>
+          <table className="w-full min-w-full border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-slate-200/80 bg-slate-100/80">
+                <th className="px-4 py-3 font-bold text-foreground">Age</th>
+                <th className="px-4 py-3 font-bold text-foreground">% of adult rate</th>
+                <th className="px-4 py-3 font-bold text-foreground">Indicative hourly gross</th>
+                <th className="hidden px-4 py-3 font-bold text-foreground md:table-cell">Notes</th>
+              </tr>
+            </thead>
+            <AgeBandsTableBody ageBands={schedule.ageBands} />
+          </table>
+        </div>
+      ))}
     </div>
   );
 }
@@ -585,7 +634,34 @@ export function MinimumWageNetherlandsView() {
                   <p className="mt-8 text-xs font-bold uppercase tracking-[0.16em] text-brand-strong">{page.hero.eyebrow}</p>
                   <h1 className="mt-3 text-4xl font-black tracking-tight text-foreground sm:text-5xl lg:text-6xl">{page.hero.pageTitle}</h1>
                   <p className="mt-5 max-w-2xl text-lg leading-relaxed text-foreground-muted sm:text-xl">{page.hero.subtitle}</p>
-                  <div className="mt-6 flex flex-wrap gap-2">{page.hero.chips.map((chip) => <span key={chip} className={CITIES_FUNNEL_INFO_CHIP}>{chip}</span>)}</div>
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {page.hero.chips.map((chip) => (
+                      <span key={chip} className={CITIES_FUNNEL_INFO_CHIP}>
+                        {chip}
+                      </span>
+                    ))}
+                    {page.lastReviewed ? (
+                      <span className={CITIES_FUNNEL_INFO_CHIP}>Last reviewed: {page.lastReviewed}</span>
+                    ) : null}
+                  </div>
+                  {page.heroOfficialSources?.length ? (
+                    <p className="mt-4 text-sm text-foreground-muted">
+                      Official sources:{" "}
+                      {page.heroOfficialSources.map((source, index) => (
+                        <span key={source.href}>
+                          {index > 0 ? " · " : null}
+                          <a
+                            href={source.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-semibold text-link hover:text-link-hover"
+                          >
+                            {source.label}
+                          </a>
+                        </span>
+                      ))}
+                    </p>
+                  ) : null}
                   <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                     <Link href={page.hero.primaryCta.href} className={primaryCtaClass}>{page.hero.primaryCta.label}<ArrowRight className="h-4 w-4" aria-hidden /></Link>
                     <Link href={page.hero.secondaryCta.href} className={secondaryCtaClass}>{page.hero.secondaryCta.label}</Link>
@@ -608,7 +684,7 @@ export function MinimumWageNetherlandsView() {
             <section id="intro" className={sectionClass}>
               <div className="flex w-full flex-col gap-6">
                 <SectionIntro title="How Minimum Wage Works in the Netherlands" fullWidth>
-                  <p>The Netherlands has a legal minimum wage designed to ensure employees receive a minimum level of compensation for work. Rates change periodically and depend on age — they may be expressed monthly or hourly.</p>
+                  <p>The Netherlands has a legal minimum wage designed to ensure employees receive a minimum level of compensation for work. Rates change periodically and depend on age — the statutory floor is always hourly since 2024.</p>
                   <p>Expats often compare minimum wage with living costs, rent, taxes, student jobs and entry-level employment. This guide explains the system clearly — it is practical orientation, not financial or immigration advice.</p>
                   <p>
                     For take-home pay, continue to the{" "}
@@ -641,10 +717,16 @@ export function MinimumWageNetherlandsView() {
               <div className="flex w-full flex-col gap-6">
                 <SectionIntro title="Minimum Wage at a Glance" fullWidth>
                   <p>Use these cards as a quick orientation before comparing contracts, student jobs or part-time offers.</p>
-                  <p>Since 2024, Dutch minimum wage is an hourly rate — there is no fixed government monthly amount. Monthly pay follows your contracted hours.</p>
+                  <p>
+                    <strong>As of 1 July 2026</strong> the adult (21+) hourly minimum is €14.99/hr per{" "}
+                    <a href={rates.officialSource.href} target="_blank" rel="noopener noreferrer" className="font-semibold text-link hover:text-link-hover">
+                      Government.nl
+                    </a>
+                    . Since 2024 there is no fixed statutory monthly amount — monthly pay follows your contracted hours.
+                  </p>
                 </SectionIntro>
+                <AgeBandsTable />
                 <RateHighlightCards />
-                <SnapshotCards />
                 <MinimumWageFlowBand className="mt-0" />
                 <VisualFigure visual={page.infographics.snapshot} className="mt-0" />
               </div>
@@ -655,8 +737,8 @@ export function MinimumWageNetherlandsView() {
                 <SectionIntro title="What Is the Dutch Minimum Wage?" fullWidth>
                   <p>The Netherlands sets a statutory minimum hourly wage. Employers must pay at least the published rate for eligible employees aged 15 and over.</p>
                   <p>Because minimum wage changes regularly (often in January and sometimes mid-year), always verify current figures on{" "}
-                    <a href="https://www.government.nl/topics/minimum-wage" target="_blank" rel="noopener noreferrer" className="font-semibold text-link hover:text-link-hover">Government.nl</a>
-                    {" "}rather than relying on copied numbers from older articles.
+                    <a href={rates.officialSource.href} target="_blank" rel="noopener noreferrer" className="font-semibold text-link hover:text-link-hover">{rates.officialSource.label}</a>
+                    {" "}rather than relying on copied numbers from older articles. The adult rate is {rates.currentSchedule.adultHourly} from {rates.currentSchedule.effectiveFrom}.
                   </p>
                 </SectionIntro>
                 <WhatIsKeyFacts />
@@ -680,11 +762,10 @@ export function MinimumWageNetherlandsView() {
             <section id="age-based" className={sectionClass}>
               <div className="flex w-full flex-col gap-6">
                 <SectionIntro title="Minimum Wage Depends on Age" fullWidth>
-                  <p>The Dutch system uses age-based minimum wage levels. Younger workers may receive lower statutory minimums until the full adult rate generally applies from age 21.</p>
-                  <p>Illustrative tiers below are for orientation only — confirm the current published schedule on official government sources.</p>
+                  <p>The Dutch system uses age-based minimum wage levels. Younger workers may receive lower statutory minimums until the full adult rate generally applies from age 21. The summary cards below reflect the {rates.currentSchedule.effectiveFrom} schedule; January 2026 tiers appear in the historical table on the snapshot section.</p>
                 </SectionIntro>
                 <div className="grid w-full gap-6 lg:grid-cols-2 lg:items-stretch">
-                  <AgeBandsTable />
+                  <SnapshotCards className="lg:grid-cols-2" />
                   <VisualFigure visual={page.infographics.ageBands} className="mt-0 h-full" />
                 </div>
                 <RatesDisclaimer />
@@ -802,7 +883,14 @@ export function MinimumWageNetherlandsView() {
               <div className="flex w-full flex-col gap-6">
                 <SectionIntro title="What Expats Should Know About Minimum Wage" fullWidth>
                   <p>Many expats arrive through highly skilled migrant routes, multinational companies, university positions or internal transfers — salaries are often significantly above minimum wage.</p>
-                  <p>However, students, hospitality workers, entry-level employees and newcomers may encounter minimum-wage-level roles. Minimum wage is not the same as visa salary thresholds.</p>
+                  <p>However, students, hospitality workers, entry-level employees and newcomers may encounter minimum-wage-level roles. Minimum wage is not the same as visa salary thresholds — for example, 2026 highly skilled migrant IND floors are €5,942/month gross (30+), €4,357 (under 30), and €3,122 in certain reduced cases.</p>
+                  <p>
+                    See the{" "}
+                    <Link href={HSM_VISA_PATH} className="font-semibold text-link hover:text-link-hover">
+                      Highly Skilled Migrant visa guide
+                    </Link>
+                    {" "}for permit salary rules separate from the statutory minimum.
+                  </p>
                 </SectionIntro>
                 <ExpatScenarioCards />
                 <TipsList items={page.expatTips} />

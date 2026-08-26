@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { TraditionalVsDigitalBanksView } from "@/src/components/money/traditional-vs-digital-banks/TraditionalVsDigitalBanksView";
 import { traditionalVsDigitalBanksPageModel } from "@/src/components/money/traditional-vs-digital-banks/traditionalVsDigitalBanksPageModel";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -10,7 +11,7 @@ const { path, seo, publishDate, heroImage } = traditionalVsDigitalBanksPageModel
 const ogImageUrl = new URL(heroImage.src, baseUrl).toString();
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },

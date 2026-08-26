@@ -23,6 +23,11 @@ import {
 } from "@/src/components/money/tax-cluster/taxClusterToolsConfig";
 import { MoneyTaxLearningPath } from "@/src/components/money/tax-cluster/MoneyTaxLearningPath";
 import { TaxClusterToolsSection } from "@/src/components/money/tax-cluster/TaxClusterToolsSection";
+import {
+  longTermStayNextSteps,
+  LEAVING_NL_TAX_PATH,
+  EXTENSIONS_CHANGES_PATH,
+} from "@/src/components/moving/long-term-stay-cluster/longTermStayClusterPaths";
 
 const hubContainerClass = "w-full max-w-screen-2xl";
 
@@ -71,6 +76,24 @@ export function ToolHubTemplate({ category, liveTools, comingSoonTools, relatedG
   const allToolsOrdered = [...liveTools, ...comingSoonTools];
   const baseUrl = getSiteOrigin();
   const shareUrl = new URL(category.route.startsWith("/") ? category.route : `/${category.route}`, baseUrl).toString();
+  const isLongTermGuideHub =
+    category.id === "citizenship" || category.id === "integration" || category.id === "leaving-nl";
+  const longTermGuideSteps =
+    category.id === "leaving-nl"
+      ? [
+          {
+            href: LEAVING_NL_TAX_PATH,
+            label: "Leaving the Netherlands tax guide",
+            description: "Tax residency, M-form, and exit admin when you leave NL.",
+          },
+          {
+            href: EXTENSIONS_CHANGES_PATH,
+            label: "Extensions and changes",
+            description: "Permit changes before you exit or if your plans shift.",
+          },
+          ...longTermStayNextSteps.filter((step) => step.href !== "/netherlands/citizenship/tools/"),
+        ]
+      : longTermStayNextSteps.filter((step) => step.href !== "/netherlands/citizenship/tools/");
 
   return (
     <ClusterHubPageTemplate
@@ -93,8 +116,9 @@ export function ToolHubTemplate({ category, liveTools, comingSoonTools, relatedG
       atAGlance={
         <Container className={hubContainerClass}>
           <div className={hubOrientPanelClass}>
-            Pick a tool below to go straight into planning. Live tools work today; coming-soon entries show what we are
-            building so you can align your timeline.
+            {isLongTermGuideHub && liveTools.length === 0
+              ? "Calculators for this stage are coming soon. Start with the evergreen guides below — permanent residence, inburgering, citizenship, or leaving tax — then return when live tools ship."
+              : "Pick a tool below to go straight into planning. Live tools work today; coming-soon entries show what we are building so you can align your timeline."}
           </div>
         </Container>
       }
@@ -174,6 +198,30 @@ export function ToolHubTemplate({ category, liveTools, comingSoonTools, relatedG
                 <div className="mt-6 not-prose">
                   <TaxClusterToolsSection showGuideLink={false} />
                 </div>
+              </SectionBlock>
+            ) : null}
+
+            {isLongTermGuideHub && liveTools.length === 0 ? (
+              <SectionBlock
+                compact
+                title="Start with guides"
+                subtitle="Evergreen orientation while calculators are in development."
+              >
+                <p className="text-sm leading-relaxed text-foreground-muted">
+                  Long-term stay has separate IND criteria for permanent residence, integration, citizenship, and leaving
+                  tax. Use the guide that matches your horizon first.
+                </p>
+                <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+                  {longTermGuideSteps.map((step) => (
+                    <li key={step.href}>
+                      <Link href={step.href} className={hubPathwayCardClass}>
+                        <p className="text-sm font-semibold text-foreground">{step.label}</p>
+                        <p className="mt-2 text-sm leading-relaxed text-foreground-muted">{step.description}</p>
+                        <p className="mt-3 text-sm font-semibold text-link">Open guide →</p>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </SectionBlock>
             ) : null}
 

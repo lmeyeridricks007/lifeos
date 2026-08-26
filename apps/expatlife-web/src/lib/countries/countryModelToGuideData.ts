@@ -33,14 +33,17 @@ import { augmentIndonesiaGuideData } from "./indonesiaMovingGuideData";
 import { augmentPakistanGuideData } from "./pakistanMovingGuideData";
 import { augmentKenyaGuideData } from "./kenyaMovingGuideData";
 
-const HUB_PATH = "/netherlands/moving/";
 const PILLAR_PATH = "/netherlands/moving-to-the-netherlands/";
+const HUB_PATH = PILLAR_PATH;
 const COUNTRY_INDEX_PATH = "/netherlands/moving-to-netherlands-from/";
 const COST_ESTIMATOR_PATH = "/netherlands/moving/tools/relocation-cost-estimator/";
 const VISA_COST_CALCULATOR_PATH = "/netherlands/visa-cost-calculator/";
 const DOCUMENTS_GUIDE_PATH = "/netherlands/documents-needed-to-move-netherlands/";
 const COST_GUIDE_PATH = "/netherlands/moving-to-netherlands-cost/";
 const FIRST_90_DAYS_PATH = "/netherlands/first-90-days-netherlands/";
+const HSM_VISA_PATH = "/netherlands/visa/highly-skilled-migrant/";
+const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling/";
+const MOVING_CHECKLIST_TOOL_PATH = "/netherlands/moving/tools/moving-checklist/";
 
 function buildDefaultCountryGuideData(
   model: CountryPageModel,
@@ -100,6 +103,9 @@ function buildDefaultCountryGuideData(
       },
       links: [
         { label: "Visa checker", href: "/netherlands/visa-checker/" },
+        { label: "Highly skilled migrant visa", href: HSM_VISA_PATH },
+        { label: "30% ruling guide", href: THIRTY_PERCENT_RULING_PATH },
+        { label: "Generate a moving checklist", href: checklistHref },
         { label: "Visa and permit overview", href: model.visaAwareness.visaHubPath },
         { label: "EU Blue Card", href: "/netherlands/visa/eu-blue-card/" },
         { label: "Student visa", href: "/netherlands/visa/student-visa/" },
@@ -217,6 +223,9 @@ function buildDefaultCountryGuideData(
   }));
 
   const sidebarStartLinks = [
+    { label: "Highly skilled migrant visa", href: HSM_VISA_PATH },
+    { label: "30% ruling guide", href: THIRTY_PERCENT_RULING_PATH },
+    { label: "Generate a Moving Checklist", href: checklistHref },
     { label: "Visa Cost Calculator", href: visaCostCalculatorHref },
     { label: "Estimate Relocation Cost", href: costEstimatorHref },
     { label: "Generate a Moving Checklist", href: checklistHref },
@@ -260,6 +269,9 @@ function buildDefaultCountryGuideData(
       tertiaryCtaLabel: "Plan your first 90 days",
       tertiaryCtaHref: first90Href,
       supportingLinks: [
+        { label: "Highly skilled migrant visa", href: HSM_VISA_PATH },
+        { label: "30% ruling guide", href: THIRTY_PERCENT_RULING_PATH },
+        { label: "Generate a moving checklist", href: checklistHref },
         { label: "Plan your first 90 days", href: first90Href },
         { label: "See all country-specific relocation guides", href: COUNTRY_INDEX_PATH },
         { label: "Moving to the Netherlands", href: PILLAR_PATH },
@@ -282,7 +294,7 @@ function buildDefaultCountryGuideData(
       tertiaryHref: first90Href,
     },
     internalLinks: {
-      hub: { label: "Back to Moving Hub", href: HUB_PATH },
+      hub: { label: "Back to Moving Guide", href: HUB_PATH },
       pillar: { label: "Read the complete Moving Guide", href: PILLAR_PATH },
       related: model.relatedLinks.map((l) => ({ label: l.label, href: l.href })),
     },

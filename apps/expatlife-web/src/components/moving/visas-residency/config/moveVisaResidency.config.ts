@@ -525,6 +525,16 @@ export const moveVisaResidencyPageMeta: MoveVisaResidencyPageMeta = {
       description: "When the basis of your stay may be shifting across work, study, family, or self-employment.",
     },
     {
+      href: "/netherlands/citizenship/permanent-residence/",
+      label: "Permanent residence in the Netherlands",
+      description: "Five-year planning anchor: PR routes, absences, integration, and IND next steps.",
+    },
+    {
+      href: "/netherlands/integration/inburgering/",
+      label: "Inburgering in the Netherlands",
+      description: "Who must integrate, exam components, and timeline planning before PR or citizenship.",
+    },
+    {
       href: "/netherlands/moving/tools/",
       label: "Move & immigration tools",
       description: "Checklists, document readiness, first 90 days, and arrival planners in one hub.",

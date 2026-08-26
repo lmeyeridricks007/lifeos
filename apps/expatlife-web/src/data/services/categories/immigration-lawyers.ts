@@ -175,7 +175,7 @@ export const immigrationLawyersCategoryPage: ServiceCategoryPageData = {
       title: "Naturalisation / Dutch citizenship",
       description: "Eligibility and procedure for becoming a Dutch citizen. Strict conditions and long processing; lawyers can advise and assist.",
       whenComplex: "Eligibility doubts, previous refusals, or dual nationality issues",
-      link: { label: "Dutch citizenship (planned guide)", href: "/netherlands/dutch-citizenship-netherlands/" },
+      link: { label: "Dutch citizenship guide", href: "/netherlands/citizenship/dutch-citizenship/" },
     },
     {
       id: "objections-appeals",
@@ -328,7 +328,7 @@ export const immigrationLawyersCategoryPage: ServiceCategoryPageData = {
       commonMistakes: ["Applying before meeting the residence requirement", "Missing integration or language evidence"],
       links: [
         { label: "Juridisch Loket – Becoming a Dutch citizen", href: "https://www.juridischloket.nl/en/family-and-relationships/foreign-partner-or-family/how-can-i-become-a-dutch-citizen/" },
-        { label: "Dutch citizenship (planned guide)", href: "/netherlands/dutch-citizenship-netherlands/" },
+        { label: "Dutch citizenship guide", href: "/netherlands/citizenship/dutch-citizenship/" },
       ],
     },
   ],
@@ -359,7 +359,7 @@ export const immigrationLawyersCategoryPage: ServiceCategoryPageData = {
         { label: "Highly skilled migrant (planned)", href: "/netherlands/highly-skilled-migrant-netherlands/" },
         { label: "Start-up visa (planned)", href: "/netherlands/startup-visa-netherlands/" },
         { label: "Family reunification (planned)", href: "/netherlands/family-reunification-netherlands/" },
-        { label: "Dutch citizenship (planned)", href: "/netherlands/dutch-citizenship-netherlands/" },
+        { label: "Dutch citizenship", href: "/netherlands/citizenship/dutch-citizenship/" },
       ],
     },
     {

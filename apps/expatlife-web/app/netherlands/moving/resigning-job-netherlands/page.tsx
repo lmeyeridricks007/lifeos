@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { buildSocialMetadata } from "@/lib/seo/metadata";
+import { pageMetadataTitle, buildSocialMetadata } from "@/lib/seo/metadata";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { ResigningJobNetherlandsView } from "@/src/components/moving/resigning-job-netherlands/ResigningJobNetherlandsView";
 import {
@@ -9,7 +9,7 @@ import {
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const META_TITLE = "Resigning a Job in the Netherlands | ExpatCopilot";
+const META_TITLE = "Resigning a Job in the Netherlands";
 
 export const metadata: Metadata = {
   ...buildSocialMetadata({

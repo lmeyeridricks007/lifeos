@@ -53,20 +53,32 @@ export const revalidate = CONTENT_REVALIDATE;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = getSeoPublicOrigin();
-  const paths = collectLiveSitemapNormalizedPaths();
-  return paths.map((path) => ({
-    url: `${baseUrl}${path}`,
-    lastModified: sitemapLastModifiedForPath(path),
-    changeFrequency: path === "/" || path === "/netherlands/" ? ("weekly" as const) : ("monthly" as const),
-    priority:
-      path === "/"
-        ? 1
-        : path === "/netherlands/"
-          ? 0.9
-          : path === "/netherlands/moving-to-the-netherlands/"
-            ? 0.8
-            : path === "/netherlands/cities/"
-              ? 0.75
-              : 0.7,
-  }));
+  try {
+    const paths = collectLiveSitemapNormalizedPaths();
+    return paths.map((path) => ({
+      url: `${baseUrl}${path}`,
+      lastModified: sitemapLastModifiedForPath(path).toISOString(),
+      changeFrequency: path === "/" || path === "/netherlands/" ? ("weekly" as const) : ("monthly" as const),
+      priority:
+        path === "/"
+          ? 1
+          : path === "/netherlands/"
+            ? 0.9
+            : path === "/netherlands/moving-to-the-netherlands/"
+              ? 0.8
+              : path === "/netherlands/cities/"
+                ? 0.75
+                : 0.7,
+    }));
+  } catch (error) {
+    console.error("[sitemap.xml] generation failed — serving homepage only", error);
+    return [
+      {
+        url: `${baseUrl}/`,
+        lastModified: new Date().toISOString(),
+        changeFrequency: "weekly",
+        priority: 1,
+      },
+    ];
+  }
 }

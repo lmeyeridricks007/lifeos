@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { CheapestBankAccountsView } from "@/src/components/money/cheapest-bank-accounts/CheapestBankAccountsView";
 import { cheapestBankAccountsPageModel } from "@/src/components/money/cheapest-bank-accounts/cheapestBankAccountsPageModel";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -11,7 +12,7 @@ const ogImageUrl = new URL(heroImage.src, baseUrl).toString();
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },

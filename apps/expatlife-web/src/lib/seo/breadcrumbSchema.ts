@@ -2,13 +2,12 @@
  * BreadcrumbList structured data for tool and guide pages.
  */
 
-import { getSiteOrigin } from "@/lib/site-origin";
-
-const BASE_URL = getSiteOrigin();
+import { getSeoPublicOrigin } from "@/lib/site-origin";
 
 export type BreadcrumbItem = { name: string; url: string };
 
 export function buildBreadcrumbSchema(items: BreadcrumbItem[]): object {
+  const baseUrl = getSeoPublicOrigin();
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -16,7 +15,7 @@ export function buildBreadcrumbSchema(items: BreadcrumbItem[]): object {
       "@type": "ListItem",
       position: i + 1,
       name: item.name,
-      item: item.url.startsWith("http") ? item.url : `${BASE_URL}${item.url}`,
+      item: item.url.startsWith("http") ? item.url : `${baseUrl}${item.url}`,
     })),
   };
 }

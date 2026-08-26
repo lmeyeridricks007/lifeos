@@ -225,6 +225,7 @@ const TOC = [
 ];
 
 const QUICK = [
+  { label: "2026 norms on guide", href: `${BASE}/taxes/30-percent-ruling/#salary-net-caps` },
   { label: "30% ruling guide", href: `${BASE}/taxes/30-percent-ruling/` },
   { label: "Understand first →", href: "#understand-first-then-calculate" },
   { label: "Check eligibility", href: "#tool-inputs" },
@@ -344,7 +345,7 @@ export default function ThirtyPercentRulingCalculatorPage() {
             id: "norm-salary",
             title: "Salary norm",
             body: [
-              "Long-form education (employer involvement, what is not guaranteed, partial years) lives in the Money guide — here we only apply the numbers for the tax year you select.",
+              "Long-form education (employer involvement, what is not guaranteed, partial years) lives in the 30% ruling guide — including dated 2026 Belastingdienst norms (last reviewed 26 August 2026). Here we only apply the numbers for the tax year you select.",
               "The facility is tied to minimum taxable salary levels that change over time. This tool uses 2026 planning figures unless you focus on the 2027 percentage preview.",
             ],
           },
@@ -656,7 +657,7 @@ export default function ThirtyPercentRulingCalculatorPage() {
             </SectionBlock>
 
             <SectionBlock id="official-sources" title="Official sources & methodology" className="scroll-mt-24">
-              <LastUpdated date="April 2026" className="mb-4 text-slate-600" />
+              <LastUpdated date="August 2026" className="mb-4 text-slate-600" />
               <p className="mb-4 text-sm text-slate-600">
                 This calculator applies published planning figures for norms and cap; it does not access your tax file or employer payroll.
               </p>

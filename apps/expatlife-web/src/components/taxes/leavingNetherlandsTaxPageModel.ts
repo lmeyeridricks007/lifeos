@@ -257,6 +257,8 @@ export const leavingNetherlandsTaxPage = {
     { label: "Foreign Income Netherlands", href: "/netherlands/taxes/foreign-income-netherlands/", description: "Map overseas income, assets and cross-border records." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", description: "Learn how the expat tax facility works conceptually." },
     { label: "Taxes After Moving Netherlands", href: "/netherlands/taxes/taxes-after-moving-netherlands/", description: "Read the arrival-side companion to this exit guide." },
+    { label: "Permanent residence guide", href: "/netherlands/citizenship/permanent-residence/", description: "Long-term stay planning before you decide to leave or naturalise." },
+    { label: "Dutch citizenship guide", href: "/netherlands/citizenship/dutch-citizenship/", description: "Naturalisation and dual nationality context if exit timing is uncertain." },
   ] satisfies LeavingNetherlandsTaxLink[],
   services: [
     { label: "Expat tax advisors", href: "/netherlands/services/expat-tax-services/", description: "For final return, residency and cross-border tax questions." },
@@ -304,5 +306,6 @@ export const leavingNetherlandsTaxPage = {
     { label: "Expat Taxes", href: "/netherlands/taxes/expat-taxes-netherlands/", description: "Review the broader Dutch tax framework for expats." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", description: "Check the conceptual rules around the expat tax facility." },
     { label: "Moving to the Netherlands", href: "/netherlands/moving-to-the-netherlands/", description: "Return to the broader relocation ecosystem." },
+    { label: "Permanent residence", href: "/netherlands/citizenship/permanent-residence/", description: "Long-term stay planning if exit timing is still open." },
   ] satisfies LeavingNetherlandsTaxLink[],
 } as const;

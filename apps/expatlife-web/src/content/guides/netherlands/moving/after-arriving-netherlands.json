@@ -387,7 +387,7 @@
   "servicesIntro": "These services are commonly used by expats for banking, insurance, housing, and mobile setup. Compare options and confirm terms on providers’ sites.",
 
   "internalLinks": {
-    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving-to-the-netherlands/" },
     "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
     "related": [
       { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/" },
@@ -426,7 +426,7 @@
     { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
     { "label": "Estimate Your Costs", "href": "/netherlands/moving/tools/relocation-cost-estimator/" },
     { "label": "Understand Taxes After Moving", "href": "/netherlands/taxes/taxes-after-moving-netherlands/" },
-    { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    { "label": "Back to Moving Hub", "href": "/netherlands/moving-to-the-netherlands/" },
     { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" }
   ],
 

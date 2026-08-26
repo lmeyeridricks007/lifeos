@@ -485,7 +485,7 @@ export const housingNetherlandsPage = {
     ],
   },
   quickAnswer: {
-    summary: "Most newcomers start by renting.",
+    summary: "Most newcomers start by renting — expect roughly EUR 850–2,800+ per month depending on city and bedrooms.",
     buyingWhen: [
       "Staying long term with stable employment or income",
       "Financially established with savings for transaction costs",

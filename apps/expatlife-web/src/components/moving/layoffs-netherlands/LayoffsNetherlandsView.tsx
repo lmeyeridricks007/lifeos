@@ -49,6 +49,7 @@ import { MovePillarMobileToc } from "@/src/components/moving/MovePillarMobileToc
 import { MovePillarSectionNav } from "@/src/components/moving/MovePillarSectionNav";
 import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 import { getWorkPermitsJobChangesInstructionalFigure } from "@/src/components/moving/work-permits-job-changes-cluster/workPermitsJobChangesInstructionalRasterAssets";
+import { HsmIndJobSearchSection } from "@/src/components/moving/work-permits-job-changes-cluster/HsmIndJobSearchSection";
 import { ChangingJobsNetherlandsStartHereGrid } from "@/src/components/moving/changing-jobs-netherlands/ChangingJobsNetherlandsStartHereGrid";
 import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
 import type {
@@ -66,7 +67,7 @@ import {
   LayoffsToolTracksInfographic,
 } from "./LayoffsNetherlandsInfographics";
 
-const DATE_MODIFIED = "2026-04-10";
+const DATE_MODIFIED = "2026-11-12";
 const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
 const TIGHT_SECTION_SPACING = `${SECTION_SCROLL_MARGIN} !pt-3 sm:!pt-4`;
 const CHIP_BADGE =
@@ -497,6 +498,10 @@ export function LayoffsNetherlandsView() {
             <SectionDivider />
 
             <CardGridSection section={meta.permitsSection} />
+
+            <SectionDivider />
+
+            <HsmIndJobSearchSection variant="layoffs" />
 
             <SectionDivider />
 

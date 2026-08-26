@@ -12,6 +12,11 @@ export const moneyThirtyRulingOfficialSources = {
       keys: ["bd_30_percent_facility"] as const satisfies readonly MoneyTaxGuideOfficialSourceKey[],
     },
     {
+      id: "business-gov-expat",
+      title: "Business.gov.nl — expat scheme for employers",
+      keys: ["business_gov_expat_scheme"] as const satisfies readonly MoneyTaxGuideOfficialSourceKey[],
+    },
+    {
       id: "bd-payroll",
       title: "Belastingdienst — payroll taxes (employers)",
       keys: ["bd_payroll_taxes"] as const satisfies readonly MoneyTaxGuideOfficialSourceKey[],

@@ -552,6 +552,13 @@ export function HousingNetherlandsView() {
             >
               <VisualTextDetails details={page.visualTextDetails.overview} />
               <QuickAnswerBox />
+              <div className="space-y-3">
+                <h3 className="text-lg font-black tracking-tight text-foreground">Example monthly rent ranges (EUR)</h3>
+                <p className="text-sm leading-relaxed text-foreground-muted">
+                  Orientation only — verify current listings locally before you budget. Full cost context is in the costs section below.
+                </p>
+                <CityCostTable />
+              </div>
               <FeatureGrid items={page.snapshotCards} />
               <BulletPanel title={page.visualTextDetails.snapshot.title} items={page.visualTextDetails.snapshot.items} />
               <GuideCrossLink

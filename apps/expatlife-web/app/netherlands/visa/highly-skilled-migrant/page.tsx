@@ -5,31 +5,23 @@ import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { HIGHLY_SKILLED_MIGRANT_VISA } from "@/src/content/visas/highly-skilled-migrant";
 import { highlySkilledMigrantToGuideData } from "@/src/lib/visas/visaToGuideData";
 import { getSiteOrigin } from "@/lib/site-origin";
+import { buildSocialMetadata } from "@/lib/seo/metadata";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
+import { HSM_JOB_LOSS_CLUSTER_PUBLISH_DATE } from "@/src/components/moving/work-permits-job-changes-cluster/hsmJobLossClusterPaths";
 
 export const revalidate = CONTENT_REVALIDATE;
 
 const baseUrl = getSiteOrigin();
 const data = highlySkilledMigrantToGuideData(HIGHLY_SKILLED_MIGRANT_VISA);
 
-/** Static metadata only (plain strings) to avoid DataCloneError. */
-export const metadata: Metadata = {
+export const metadata: Metadata = buildSocialMetadata({
   title: String(data.metaTitle ?? data.title),
   description: String(HIGHLY_SKILLED_MIGRANT_VISA.seo.description),
-  alternates: { canonical: String(data.path) },
-  openGraph: {
-    title: String(data.metaTitle ?? data.title),
-    description: String(HIGHLY_SKILLED_MIGRANT_VISA.seo.description),
-    type: "article",
-    url: String(new URL(data.path, baseUrl).toString()),
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: String(data.metaTitle ?? data.title),
-    description: String(HIGHLY_SKILLED_MIGRANT_VISA.seo.description),
-  },
-};
+  path: data.path,
+  ogType: "article",
+  publishGate: { publish: true, publishDate: HSM_JOB_LOSS_CLUSTER_PUBLISH_DATE },
+});
 
 const breadcrumbCrumbs = [
   { name: "Home", item: new URL("/", baseUrl).toString() },
@@ -48,7 +40,7 @@ export default function HighlySkilledMigrantVisaPage() {
       <ArticleJsonLd
         headline={data.title}
         description={data.description}
-        dateModified={new Date().toISOString().slice(0, 10)}
+        dateModified="2026-08-26"
         urlPath={data.path}
       />
       {data.faq?.length ? <FaqPageJsonLd items={data.faq} /> : null}

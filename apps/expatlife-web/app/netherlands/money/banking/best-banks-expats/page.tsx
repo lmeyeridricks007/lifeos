@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { ArticleJsonLd, FaqPageJsonLd, HowToJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { BestBanksExpatsView } from "@/src/components/money/best-banks-expats/BestBanksExpatsView";
@@ -11,7 +12,7 @@ const baseUrl = getSiteOrigin();
 const { path, seo, hero, publishDate } = page;
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },

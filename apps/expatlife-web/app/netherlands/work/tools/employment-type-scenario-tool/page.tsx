@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { MoveHero } from "@/components/page/move-shell";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
@@ -24,7 +25,7 @@ import {
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const META_TITLE = "Employment Type Scenario Tool Netherlands | Compare Employee, ZZP & Contractor | ExpatCopilot";
+const META_TITLE = "Employment Type Scenario Tool Netherlands | Compare Employee, ZZP & Contractor";
 const META_DESCRIPTION =
   "Free Netherlands planner: compare permanent vs fixed-term employee, umbrella contractor, ZZP, and foreign-remote work. Indicative income, benefits, admin, sponsorship fit, and risk flags — with links to salary, 30% ruling, double tax, and contract scanner tools. Not legal or tax advice.";
 /** On-brand hero for this tool (generated asset). Dimensions match file in `public/images/tools/`. */
@@ -33,7 +34,7 @@ const HERO_IMAGE_WIDTH = 1376;
 const HERO_IMAGE_HEIGHT = 768;
 
 export const metadata: Metadata = {
-  title: META_TITLE,
+  title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
   alternates: { canonical: EMPLOYMENT_TYPE_SCENARIO_CANONICAL },
   keywords: [
@@ -54,7 +55,7 @@ export const metadata: Metadata = {
     "employment type scenario planner",
   ],
   openGraph: {
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     url: EMPLOYMENT_TYPE_SCENARIO_CANONICAL,
     images: [
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     images: [HERO_IMAGE],
   },
@@ -104,7 +105,7 @@ export default function EmploymentTypeScenarioToolPage() {
     offers: { price: "0", priceCurrency: "EUR" },
   });
   const webPageJsonLd = buildToolPageSchema({
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     canonicalPath: EMPLOYMENT_TYPE_SCENARIO_CANONICAL,
   });

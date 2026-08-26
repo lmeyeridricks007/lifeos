@@ -20,7 +20,10 @@ export function UnderstandFirstThenCalculateCta({ variant, className, id }: Unde
   const readFirst =
     variant === "guide"
       ? { href: `${THIRTY_PERCENT_RULING_NL_PATH}#start-here-30`, label: "Review concepts on this page" }
-      : { href: THIRTY_PERCENT_RULING_NL_PATH, label: "Read the 30% ruling guide" };
+      : {
+          href: `${THIRTY_PERCENT_RULING_NL_PATH}#salary-net-caps`,
+          label: "2026 norms on the guide (last reviewed 26 Aug 2026)",
+        };
 
   const steps = [
     readFirst,
@@ -58,8 +61,9 @@ export function UnderstandFirstThenCalculateCta({ variant, className, id }: Unde
           </>
         ) : (
           <>
-            Use the <strong>Money guide</strong> for the full walkthrough. Tool output follows the <strong>tax year</strong> you select.
-            Estimates support planning; <strong>Belastingdienst</strong> and your <strong>employer</strong> decide binding facts.
+            The <strong>30% ruling guide</strong> publishes dated Belastingdienst norms (last reviewed 26 August 2026) — use it as the citable
+            reference. This calculator models scenarios from your inputs for the <strong>tax year</strong> you select;{" "}
+            <strong>Belastingdienst</strong> and your <strong>employer</strong> decide binding facts.
           </>
         )}
       </p>
@@ -74,6 +78,16 @@ export function UnderstandFirstThenCalculateCta({ variant, className, id }: Unde
         ))}
       </ul>
       <p className="mt-4 flex flex-wrap gap-x-3 gap-y-1 text-xs text-copilot-text-secondary sm:text-sm">
+        {variant === "calculator" ? (
+          <>
+            <Link href={THIRTY_PERCENT_RULING_NL_PATH} className="font-semibold text-copilot-primary underline-offset-2 hover:underline">
+              Full 30% ruling guide
+            </Link>
+            <span aria-hidden className="text-copilot-text-muted">
+              ·
+            </span>
+          </>
+        ) : null}
         <span className="font-semibold text-copilot-text-primary">Broader Money guides:</span>
         <Link href={R.taxGuideForExpats} className="font-semibold text-copilot-primary underline-offset-2 hover:underline">
           Netherlands Tax Guide for Expats

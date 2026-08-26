@@ -31,11 +31,37 @@ function attachSimulateProductionCookie(request: NextRequest, response: NextResp
   } else if (p === "false") {
     response.cookies.delete(DEV_SIMULATE_LIVE_COOKIE);
   }
+  return attachPreviewDeploymentNoIndex(request, response);
+}
+
+/** Block indexing of Vercel preview/production deployment hostnames — canonicals point at www.expatcopilot.com. */
+function attachPreviewDeploymentNoIndex(request: NextRequest, response: NextResponse): NextResponse {
+  const host = request.headers.get("host") ?? "";
+  if (/\.vercel\.app$/i.test(host) || /\.vercel\.sh$/i.test(host)) {
+    response.headers.set("X-Robots-Tag", "noindex, nofollow");
+  }
   return response;
 }
 
+/** Thin coming-soon stubs that must 301 to live pillar URLs (also in next.config.js). */
+const STUB_HUB_REDIRECTS: Record<string, string> = {
+  "/netherlands/moving/": "/netherlands/moving-to-the-netherlands/",
+  "/netherlands/survival-guide/": "/netherlands/living/survival-guide/",
+  "/netherlands/living/digid-awareness/": "/netherlands/digid-awareness/",
+};
+
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
+  const normalizedPath =
+    pathname === "/" ? "/" : pathname.endsWith("/") ? pathname : `${pathname}/`;
+  const stubDestination = STUB_HUB_REDIRECTS[normalizedPath];
+  if (stubDestination) {
+    const url = request.nextUrl.clone();
+    url.pathname = stubDestination;
+    const redirect = NextResponse.redirect(url, 308);
+    return attachPreviewDeploymentNoIndex(request, redirect);
+  }
+
   const previewParam = request.nextUrl.searchParams.get("preview");
   const isDevelopment = process.env.NODE_ENV === "development";
   /**

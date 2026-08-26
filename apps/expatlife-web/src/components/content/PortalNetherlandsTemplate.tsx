@@ -244,7 +244,7 @@ export function PortalNetherlandsTemplate({ content }: { content: NlPortalConten
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
           <p className="max-w-3xl text-slate-600">{content.movingCluster.body}</p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <Link href="/netherlands/moving-to-the-netherlands">
+            <Link href={content.movingCluster.hubHref}>
               <Button>{content.movingCluster.openHubLabel}</Button>
             </Link>
             <Link href="/netherlands/moving/tools/moving-checklist">
@@ -270,7 +270,7 @@ export function PortalNetherlandsTemplate({ content }: { content: NlPortalConten
         <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
           <p className="max-w-3xl text-slate-600">{content.livingCluster.body}</p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <Link href="/netherlands/living/survival-guide/">
+            <Link href={content.livingCluster.survivalGuideHref}>
               <Button>{content.livingCluster.openSurvivalGuideLabel}</Button>
             </Link>
             <Link href="/netherlands/living/tools/utilities-services-comparison/">

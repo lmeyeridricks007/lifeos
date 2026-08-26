@@ -1,0 +1,243 @@
+{
+  "slug": "permanent-residence-netherlands",
+  "path": "/netherlands/citizenship/permanent-residence/",
+  "title": "Permanent Residence in the Netherlands",
+  "metaTitle": "Permanent Residence in the Netherlands: Routes, Requirements & Next Steps",
+  "subtitle": "How lawful long-term stay can lead to a more stable residence status — and what to verify with the IND.",
+  "description": "A comprehensive guide to permanent residence in the Netherlands for expats: EU long-term resident status, Dutch permanent residence, typical five-year residence periods, absences, inburgering links, and official IND next steps.",
+  "breadcrumbLabel": "Permanent residence",
+  "hero": {
+    "eyebrow": "Long-term stay",
+    "badges": ["Citizenship & status", "Verify with IND"],
+    "image": {
+      "src": "/images/heroes/highly-skilled-migrant-netherlands.png",
+      "alt": "Documents and residence paperwork on a desk with a Dutch city view, symbolising long-term stay planning in the Netherlands"
+    }
+  },
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "five-year-planning", "label": "Five-year planning anchor" },
+    { "id": "types-of-permanent-status", "label": "Types of permanent status" },
+    { "id": "typical-requirements", "label": "Typical requirements" },
+    { "id": "work-routes-and-hsm", "label": "Work routes & HSM" },
+    { "id": "absences-and-continuity", "label": "Absences and continuity" },
+    { "id": "application-process", "label": "Application process" },
+    { "id": "after-permanent-residence", "label": "After permanent residence" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "official-sources", "label": "Official sources" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+  "heroCta": {
+    "title": "Map your long-term timeline",
+    "supportingText": "Use the permanent residence eligibility calculator for a structured first pass, then confirm your route on official IND guidance.",
+    "primaryCtaLabel": "Check PR eligibility",
+    "primaryCtaHref": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/",
+    "secondaryCtaLabel": "Residence permits hub",
+    "secondaryCtaHref": "/netherlands/moving/residence-permits/"
+  },
+  "quickAnswers": [
+    { "label": "Who this is for", "value": "Expats who have lived lawfully in the Netherlands and want a more stable long-term status." },
+    { "label": "Common anchor", "value": "Often five years of lawful, continuous residence — but exceptions and route-specific rules apply." },
+    { "label": "Integration", "value": "Inburgering or equivalent may be required before PR or citizenship — plan early even if not urgent in year one." },
+    { "label": "Official source", "value": "IND — confirm permit type, absences, and integration requirements for your case." }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "Permanent residence is the stage many expats reach after several years of lawful stay in the Netherlands. It can reduce the uncertainty tied to renewing temporary permits and may simplify some admin — but the exact status you qualify for depends on your nationality, permit history, absences, income, and integration record.",
+        "This guide orients you to the main permanent-status concepts with links to IND and government.nl sources. It is not legal advice; complex cases (mixed permit types, long absences, family routes, or prior refusals) usually need qualified immigration support."
+      ],
+      "links": [
+        { "label": "Residence permits in the Netherlands", "href": "/netherlands/moving/residence-permits/" },
+        { "label": "Extensions and changes", "href": "/netherlands/moving/extensions-changes/" },
+        { "label": "Inburgering guide", "href": "/netherlands/integration/inburgering/" }
+      ]
+    },
+    {
+      "id": "five-year-planning",
+      "heading": "The five-year planning anchor",
+      "body": [
+        "Expat conversations often start with “can I stay after five years?” That is a useful planning horizon, but it is not a single automatic outcome. Dutch permanent residence, EU long-term resident status, and naturalisation each have their own criteria — and some routes qualify sooner or later than five years.",
+        "Treat years one to four as record-keeping time: preserve IND letters, employment contracts, BRP extracts, insurance proof, and a simple absence log. If integration applies to you, spread language study across those years rather than cramming before an application."
+      ],
+      "table": {
+        "headers": ["Year band", "Practical focus", "Why it matters for PR"],
+        "rows": [
+          ["Years 1–2", "Stabilise permits, BRP, income, insurance", "Gaps or non-compliant renewals can break continuity later."],
+          ["Years 2–4", "Confirm inburgering duty; start language if required", "Integration certificates often reappear at PR or citizenship."],
+          ["Year 4–5", "Audit absences; gather IND checklist documents", "Long trips abroad or permit switches need a clear timeline."],
+          ["After PR", "Decide citizenship vs long-term permit only", "Citizenship is separate — see our Dutch citizenship guide."]
+        ]
+      },
+      "callout": {
+        "type": "tip",
+        "title": "Pair with our tools",
+        "text": "The permanent residence eligibility calculator and citizenship timeline calculator help structure dates — always confirm outcomes on ind.nl.",
+        "href": "/netherlands/citizenship/tools/",
+        "linkLabel": "Citizenship & PR tools"
+      }
+    },
+    {
+      "id": "types-of-permanent-status",
+      "heading": "Types of permanent or long-term status",
+      "body": ["Two labels often come up in expat conversations — they are related but not identical."],
+      "table": {
+        "headers": ["Status", "What it usually means", "Planning note"],
+        "rows": [
+          ["Dutch permanent residence (verblijfsvergunning onbepaalde tijd)", "A national permanent residence permit after qualifying lawful stay.", "Rules depend on your current permit type and personal circumstances."],
+          ["EU long-term resident (EU-LTR)", "Long-term resident status under EU rules, with specific mobility rights in other EU states in some cases.", "Separate criteria and documentation; not every expat needs or qualifies for EU-LTR specifically."]
+        ]
+      },
+      "callout": {
+        "type": "info",
+        "title": "Confirm your label on IND correspondence",
+        "text": "Do not assume permanent residence from time alone. Check which permit type you hold today and which permanent route the IND lists for your situation.",
+        "href": "https://ind.nl/en/residence-permits",
+        "linkLabel": "IND — residence permits"
+      }
+    },
+    {
+      "id": "typical-requirements",
+      "heading": "Typical requirements (high level)",
+      "bullets": [
+        "Lawful residence for a qualifying period — often five years, but shorter or longer paths exist depending on route and nationality.",
+        "Valid passport and compliant residence history (no serious gaps or unapproved long absences).",
+        "Stable and sufficient income and health insurance where required for your route.",
+        "Integration or inburgering obligations satisfied when they apply to your permit history.",
+        "No threat to public order or national security (standard immigration grounds)."
+      ],
+      "links": [
+        { "label": "Inburgering in the Netherlands", "href": "/netherlands/integration/inburgering/" },
+        { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
+        { "label": "Integration requirement checker", "href": "/netherlands/integration/tools/integration-requirement-checker/" }
+      ]
+    },
+    {
+      "id": "work-routes-and-hsm",
+      "heading": "Work routes and Highly Skilled Migrant permits",
+      "body": [
+        "Many non-EU professionals arrive on work permits such as the Highly Skilled Migrant (kennismigrant) route. HSM permits are typically issued for the duration of employment up to a maximum period — they are not permanent status by themselves.",
+        "Continuous lawful residence counts toward permanent routes when renewals and absences comply with IND rules. Job loss, employer changes, or long postings abroad can affect your timeline — use our layoffs and changing-jobs guides alongside the HSM visa guide if employment shifts."
+      ],
+      "links": [
+        { "label": "Highly Skilled Migrant visa guide", "href": "/netherlands/visa/highly-skilled-migrant/" },
+        { "label": "Changing jobs in the Netherlands", "href": "/netherlands/moving/changing-jobs-netherlands/" },
+        { "label": "Layoffs in the Netherlands", "href": "/netherlands/moving/layoffs-netherlands/" },
+        { "label": "IND — highly skilled migrant", "href": "https://ind.nl/en/residence-permits/work/highly-skilled-migrant" }
+      ]
+    },
+    {
+      "id": "absences-and-continuity",
+      "heading": "Absences and continuity",
+      "body": [
+        "Time spent outside the Netherlands can affect whether your residence counts as continuous. Short holidays are normal; long relocations, posting abroad, or frequent travel can complicate a permanent application.",
+        "Keep a simple timeline: entry date, permit types held, renewals, and any absences longer than a few months. That record saves weeks when you later speak to the IND or an adviser."
+      ],
+      "bullets": [
+        "Note every permit type and start/end date — switching routes can reset or merge periods differently.",
+        "Save employer letters for gaps between jobs if you searched for a new sponsor.",
+        "If you leave temporarily, check whether your permit allows re-entry and how absence affects renewal."
+      ]
+    },
+    {
+      "id": "application-process",
+      "heading": "Application process (orientation)",
+      "bullets": [
+        "Check whether you apply for Dutch permanent residence, EU long-term resident status, or another route — the IND pages differ by permit type.",
+        "Gather passport, BRP extract, employment or income evidence, insurance proof, and integration certificates if required.",
+        "Submit through the IND (often online where available); biometrics and fees apply.",
+        "Decision periods vary; plan travel and employment contracts around possible processing time."
+      ],
+      "links": [
+        { "label": "IND — permanent residence permit", "href": "https://ind.nl/en/permanent-residence-permit" },
+        { "label": "IND — EU long-term resident", "href": "https://ind.nl/en/eu-long-term-residence-permit" }
+      ]
+    },
+    {
+      "id": "after-permanent-residence",
+      "heading": "After permanent residence",
+      "body": [
+        "Permanent status is not the same as Dutch citizenship. Many holders keep their original nationality; naturalisation is a separate route with its own integration, residence, and sometimes renunciation rules.",
+        "Update your records after approval: municipality registration, employer HR files, and any sponsor obligations that no longer apply. If you later leave the Netherlands, tax and benefit rules differ from mid-stay renewals — see our leaving tax guide."
+      ],
+      "links": [
+        { "label": "Dutch citizenship guide", "href": "/netherlands/citizenship/dutch-citizenship/" },
+        { "label": "Citizenship timeline calculator", "href": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/" },
+        { "label": "Taxes when leaving the Netherlands", "href": "/netherlands/taxes/leaving-netherlands-tax/" }
+      ]
+    },
+    {
+      "id": "tools",
+      "heading": "Tools",
+      "body": ["Use calculators for orientation; confirm outcomes officially. Tools below are planned or in preview — the guides remain the source of truth until each tool ships."],
+      "links": [
+        { "label": "Permanent residence eligibility calculator", "href": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/" },
+        { "label": "Citizenship timeline calculator", "href": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/" },
+        { "label": "Dual citizenship awareness tool", "href": "/netherlands/citizenship/tools/dual-citizenship-awareness/" },
+        { "label": "Integration tools hub", "href": "/netherlands/integration/tools/" }
+      ]
+    },
+    {
+      "id": "official-sources",
+      "heading": "Official sources",
+      "body": ["Verify every decision on these portals — forum advice and outdated blog posts are a common source of mistakes on PR timing."],
+      "links": [
+        { "label": "IND — residence permits overview", "href": "https://ind.nl/en/residence-permits" },
+        { "label": "IND — permanent residence permit", "href": "https://ind.nl/en/permanent-residence-permit" },
+        { "label": "IND — integration", "href": "https://ind.nl/en/integration" },
+        { "label": "Government.nl — Dutch nationality", "href": "https://www.government.nl/topics/dutch-nationality" },
+        { "label": "DUO — inburgeren.nl", "href": "https://www.inburgeren.nl/en" }
+      ]
+    },
+    {
+      "id": "related-guides",
+      "heading": "Related guides",
+      "links": [
+        { "label": "Residence permits lifecycle", "href": "/netherlands/moving/residence-permits/" },
+        { "label": "Extensions and changes", "href": "/netherlands/moving/extensions-changes/" },
+        { "label": "Highly Skilled Migrant visa", "href": "/netherlands/visa/highly-skilled-migrant/" },
+        { "label": "Inburgering guide", "href": "/netherlands/integration/inburgering/" },
+        { "label": "Dutch citizenship", "href": "/netherlands/citizenship/dutch-citizenship/" },
+        { "label": "Inburgering exams (Culture orientation)", "href": "/netherlands/culture/inburgering-exams/" },
+        { "label": "Taxes when leaving the Netherlands", "href": "/netherlands/taxes/leaving-netherlands-tax/" }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long do I need to live in the Netherlands before permanent residence?",
+      "a": "Many routes look at five years of lawful, continuous residence, but exceptions exist (for example certain family or EU routes, or shorter paths for some long-term residents). Your permit history and absences matter. Use the eligibility calculator for structure, then read the IND page for your current permit type."
+    },
+    {
+      "q": "Is permanent residence the same as Dutch citizenship?",
+      "a": "No. Permanent residence is a long-term stay permit. Citizenship (naturalisation or the option procedure) is a separate legal step that can affect nationality and voting rights. See our Dutch citizenship guide for the distinction."
+    },
+    {
+      "q": "Can I keep my original passport with permanent residence?",
+      "a": "Usually yes — permanent residence is a residence status, not nationality. Citizenship rules are different and may involve renunciation depending on your country of origin and route. Verify on official government guidance."
+    },
+    {
+      "q": "Do I need inburgering before permanent residence?",
+      "a": "It depends on your permit history and whether you were inburgeringsplichtig. Some people must pass integration exams before PR or citizenship; others hold exemptions or completed equivalent programmes. Read our inburgering guide and confirm on ind.nl/integration."
+    },
+    {
+      "q": "Does a Highly Skilled Migrant permit automatically become permanent after five years?",
+      "a": "No. You must meet IND criteria for a permanent route and apply — continuous lawful stay, income, integration where required, and compliant absences all matter. The HSM guide explains how employment changes can affect your timeline."
+    },
+    {
+      "q": "What if I spent months outside the Netherlands?",
+      "a": "Long absences can break continuity or require extra explanation. Build a timeline with entry dates, permit types, and travel — then check the IND page for your permit type or speak to an immigration adviser."
+    }
+  ],
+  "internalLinks": {
+    "pillar": { "label": "Residence permits hub", "href": "/netherlands/moving/residence-permits/" },
+    "related": [
+      { "label": "Dutch citizenship", "href": "/netherlands/citizenship/dutch-citizenship/" },
+      { "label": "Inburgering", "href": "/netherlands/integration/inburgering/" },
+      { "label": "Extensions and changes", "href": "/netherlands/moving/extensions-changes/" }
+    ]
+  }
+}

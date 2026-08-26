@@ -6,9 +6,20 @@
   "subtitle": "A practical guide for expats and new arrivals: who usually needs Dutch health insurance, when to arrange it, what the basic package covers, how much it typically costs, and how to compare providers.",
   "description": "A practical guide to Dutch health insurance for expats, including who needs it, when to arrange it, what the basic package covers, typical monthly costs, provider comparisons, and useful next steps.",
   "breadcrumbLabel": "Health Insurance",
+  "lastUpdated": "Last reviewed: 26 August 2026",
+  "heroOfficialSources": [
+    {
+      "label": "Government.nl — When to take out Dutch health insurance",
+      "href": "https://www.government.nl/topics/health-insurance/question-and-answer/when-do-i-need-to-take-out-health-insurance-if-i-come-to-live-in-the-netherlands"
+    },
+    {
+      "label": "Government.nl — Health insurance and residence permit",
+      "href": "https://www.government.nl/topics/health-insurance/health-insurance-and-residence-permit"
+    }
+  ],
   "hero": {
     "eyebrow": "HEALTHCARE SETUP",
-    "badges": ["Guide", "Updated regularly"],
+    "badges": ["Guide", "2026 premium bands"],
     "image": {
       "src": "/images/heroes/health-insurance-netherlands.png",
       "alt": "A focused expat woman sits at a desk by a Dutch canal window, reviewing health insurance options on a laptop and writing on documents. On the desk are files labeled Health Insurance, Residence Permit, Registration, a passport, and Euro currency, symbolizing the practical steps for new arrivals in the Netherlands."
@@ -73,7 +84,16 @@
       "body": [
         "Dutch health insurance is one of the most important early-arrival setup tasks. Many people who come to live or work in the Netherlands will need Dutch basic health insurance.",
         "The system has a mandatory basic insurance layer plus optional supplementary cover. This page helps expats understand the basics, compare providers, estimate costs, and move to the right next step."
-      ]
+      ],
+      "table": {
+        "headers": ["Planning figure (2026)", "Typical value", "Verify on"],
+        "rows": [
+          ["4-month arrangement deadline", "Take out basic insurance within 4 months of arrival or permit start", "Government.nl"],
+          ["Average basic premium (basisverzekering)", "~€159/month", "Independer 2026 overview"],
+          ["Cheapest standard basic options", "From ~€142.40/month", "Comparison sites"],
+          ["Mandatory eigen risico (annual excess)", "€385/year statutory amount", "Government.nl / insurer policy"]
+        ]
+      }
     },
     {
       "id": "how-it-works",
@@ -461,7 +481,7 @@
   "scenariosSectionTitle": "Example health insurance situations",
   "scenariosSectionIntro": "Different situations lead to different priorities. Use the cards below to jump to the right section or guide.",
   "internalLinks": {
-    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving-to-the-netherlands/" },
     "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
     "related": [
       { "label": "Compare health insurance", "href": "/netherlands/services/health-insurance/" },

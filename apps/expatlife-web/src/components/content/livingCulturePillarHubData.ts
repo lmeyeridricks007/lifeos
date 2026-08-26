@@ -145,7 +145,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         goal: "DigiD, portals, and subscriptions without drowning in tabs.",
         actions: ["Secure DigiD and recognise phishing patterns", "Map which agency owns which task", "Track contract end dates"],
         links: [
-          { href: "/netherlands/living/digid-awareness/", label: "DigiD (Living entry)" },
+          { href: "/netherlands/digid-awareness/", label: "DigiD guide for expats" },
           { href: "/netherlands/practical-life/government-portals-netherlands/", label: "Government portals" },
           { href: "/netherlands/practical-life/privacy-and-safety-basics-netherlands/", label: "Privacy & safety" },
         ],
@@ -217,7 +217,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         personaTitle: "Understanding local admin tools",
         whatMatters: ["DigiD for gemeente and taxes", "Which portal handles which task", "Subscription cancellation windows"],
         readingOrderLinks: [
-          { title: "DigiD awareness", href: "/netherlands/living/digid-awareness/" },
+          { title: "DigiD guide for expats", href: "/netherlands/digid-awareness/" },
           { title: "Government portals map", href: "/netherlands/practical-life/government-portals-netherlands/" },
           { title: "Subscriptions & cancellations", href: "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/" },
         ],

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { buildSocialMetadata } from "@/lib/seo/metadata";
+import { pageMetadataTitle, buildSocialMetadata } from "@/lib/seo/metadata";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { ResidencePermitsView } from "@/src/components/moving/residence-permits/ResidencePermitsView";
 import { PAGE_HERO_SUBTITLE, RESIDENCE_PERMITS_CANONICAL } from "@/src/components/moving/residence-permits/residencePermitsContent";

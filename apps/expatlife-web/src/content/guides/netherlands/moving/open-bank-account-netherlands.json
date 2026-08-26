@@ -444,7 +444,7 @@
   "scenariosSectionTitle": "Example Scenarios",
   "scenariosSectionIntro": "Different situations lead to different banking priorities. The cards below link to guides that help you plan your first steps.",
   "internalLinks": {
-    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving/" },
+    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving-to-the-netherlands/" },
     "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
     "related": [
       { "label": "Types of bank accounts (Money guide)", "href": "/netherlands/money/banking/types-of-accounts/" },
@@ -463,7 +463,7 @@
     { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
     { "label": "Municipality Registration", "href": "/netherlands/municipality-registration-netherlands/" },
     { "label": "First 90 Days Planner", "href": "/netherlands/moving/tools/first-90-days/" },
-    { "label": "Back to Moving Hub", "href": "/netherlands/moving/" }
+    { "label": "Back to Moving Hub", "href": "/netherlands/moving-to-the-netherlands/" }
   ],
   "faq": [
     {

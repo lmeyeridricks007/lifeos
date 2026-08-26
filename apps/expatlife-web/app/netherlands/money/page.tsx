@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { GuidePageTemplate } from "@/components/page/page-templates";
@@ -19,12 +20,12 @@ import { MoneyTaxLearningPath } from "@/src/components/money/tax-cluster/MoneyTa
 export const revalidate = CONTENT_REVALIDATE;
 
 const CANONICAL = "/netherlands/money/" as const;
-const META_TITLE = "Money in the Netherlands for Expats | ExpatCopilot";
+const META_TITLE = "Money in the Netherlands for Expats";
 const META_DESCRIPTION =
   "Start here for Dutch banking, taxes, and calculators: links to the banking hub, money tools, tax guides, and banking planning tools — editorial planning only.";
 
 export const metadata: Metadata = {
-  title: META_TITLE,
+  title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
   alternates: { canonical: CANONICAL },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },

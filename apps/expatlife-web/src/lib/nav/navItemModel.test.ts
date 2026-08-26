@@ -528,14 +528,19 @@ describe("community basics nav active state", () => {
 });
 
 describe("digid netherlands nav active state", () => {
+  const DIGID_AWARENESS_PATH = "/netherlands/digid-awareness/";
   const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands/";
 
-  it("treats the DigiD Netherlands guide route as live", () => {
+  it("treats the canonical DigiD awareness guide as live", () => {
+    expect(getRouteStatus(DIGID_AWARENESS_PATH)).toBe("live");
+  });
+
+  it("treats the DigiD Netherlands practical-life guide route as live", () => {
     expect(getRouteStatus(DIGID_NETHERLANDS_PATH)).toBe("live");
   });
 
   it("highlights Move for the canonical DigiD guide path", () => {
-    expect(getActiveNavKey(DIGID_NETHERLANDS_PATH)).toBe("moving");
+    expect(getActiveNavKey(DIGID_AWARENESS_PATH)).toBe("moving");
   });
 
   it("highlights Move for legacy digid-awareness redirect source", () => {
@@ -554,7 +559,7 @@ describe("digid netherlands nav active state", () => {
     expect(item).toBeDefined();
     expect(item?.navStatus).toBe("live");
     expect(isNavItemLinkable(item!)).toBe(true);
-    expect(isNavItemActive(DIGID_NETHERLANDS_PATH, item!)).toBe(true);
+    expect(isNavItemActive(DIGID_AWARENESS_PATH, item!)).toBe(true);
   });
 
   it("renders the Living digital life DigiD awareness menu row as active", () => {
@@ -565,7 +570,7 @@ describe("digid netherlands nav active state", () => {
     expect(item).toBeDefined();
     expect(item?.navStatus).toBe("live");
     expect(isNavItemLinkable(item!)).toBe(true);
-    expect(isNavItemActive(DIGID_NETHERLANDS_PATH, item!)).toBe(true);
+    expect(isNavItemActive(DIGID_AWARENESS_PATH, item!)).toBe(true);
   });
 
   it("marks legacy digid-awareness href active via alias", () => {
@@ -574,7 +579,7 @@ describe("digid netherlands nav active state", () => {
       href: "/netherlands/digid-awareness/",
       navStatus: "live" as const,
     };
-    expect(isNavItemActive(DIGID_NETHERLANDS_PATH, item)).toBe(true);
+    expect(isNavItemActive(DIGID_AWARENESS_PATH, item)).toBe(true);
   });
 
   it("marks legacy living digid-awareness href active via alias", () => {
@@ -583,7 +588,7 @@ describe("digid netherlands nav active state", () => {
       href: "/netherlands/living/digid-awareness/",
       navStatus: "live" as const,
     };
-    expect(isNavItemActive(DIGID_NETHERLANDS_PATH, item)).toBe(true);
+    expect(isNavItemActive(DIGID_AWARENESS_PATH, item)).toBe(true);
   });
 
   it("marks flat digid-netherlands pathname active via alias", () => {

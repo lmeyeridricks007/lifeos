@@ -18,7 +18,7 @@ export const thirtyPercentRulingPage = {
   slug: "30-percent-ruling",
   path: THIRTY_PERCENT_RULING_PATH,
   publish: true,
-  publishDate: "2026-05-17",
+  publishDate: "2026-08-26",
   seo: {
     title: "30% Ruling in the Netherlands | Expat Tax Benefit Explained",
     description:
@@ -164,8 +164,12 @@ export const thirtyPercentRulingPage = {
   ] satisfies ThirtyPercentRulingLink[],
   faq: [
     {
-      q: "What is the 30% ruling?",
-      a: "The 30% ruling, also called the expat scheme or 30% facility, is a Dutch tax facility that can allow an employer to provide part of compensation tax-free for qualifying employees recruited from abroad.",
+      q: "What are the 2026 salary thresholds for the 30% ruling?",
+      a: "For tax year 2026, Belastingdienst indicative norms include €48,013/year (standard minimum taxable salary), €36,497/year (under 30 with qualifying master's), and a salary cap of €262,000/year for the facility calculation (maximum untaxed allowance €78,600 at 30% for a full year). Verify your role category and tax year on official Belastingdienst pages.",
+    },
+    {
+      q: "Will the 30% rate drop to 27%?",
+      a: "The government has stated a reduction to 27% from 1 January 2027 for most people who entered the scheme after 2023. That 27% rate is not yet in force — 2026 payroll still uses 30% within caps. Use the 30% ruling calculator’s 2027 preview for planning only.",
     },
     {
       q: "Who qualifies for the 30% ruling?",

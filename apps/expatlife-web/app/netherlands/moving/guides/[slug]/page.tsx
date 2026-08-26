@@ -52,7 +52,7 @@ function renderContentlayerMdxArticle(slug: string, guide: Guide) {
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Moving", item: new URL("/netherlands/moving", baseUrl).toString() },
+    { name: "Moving", item: new URL("/netherlands/moving-to-the-netherlands/", baseUrl).toString() },
     { name: guide.title, item: new URL(urlPath, baseUrl).toString() },
   ];
   const dateModified = new Date().toISOString().slice(0, 10);
@@ -165,7 +165,7 @@ function renderJsonGuide(
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Moving", item: new URL("/netherlands/moving", baseUrl).toString() },
+    { name: "Moving", item: new URL("/netherlands/moving-to-the-netherlands/", baseUrl).toString() },
     { name: data.title, item: new URL(`/netherlands/moving/guides/${slug}`, baseUrl).toString() },
   ];
   const dateModified = new Date().toISOString().slice(0, 10);

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { CookieSettingsLink } from "@/src/components/cookies/CookieSettingsLink";
 import { privacyPage } from "@/src/data/legal/privacy";
@@ -9,7 +10,7 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
-  title: privacyPage.seo.title,
+  title: pageMetadataTitle(privacyPage.seo.title),
   description: privacyPage.seo.description,
   alternates: { canonical: "/privacy/" },
 };

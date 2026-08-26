@@ -1,4 +1,4 @@
-import { getSiteOrigin } from "@/lib/site-origin";
+import { getSeoPublicOrigin } from "@/lib/site-origin";
 
 type FaqItem = { q: string; a: string };
 
@@ -24,8 +24,6 @@ export function FaqPageJsonLd({ items, url }: { items: FaqItem[]; url?: string }
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 }
 
-const siteUrl = getSiteOrigin();
-
 export function ArticleJsonLd({
   headline,
   description,
@@ -39,6 +37,7 @@ export function ArticleJsonLd({
   urlPath: string;
   author?: string;
 }) {
+  const siteUrl = getSeoPublicOrigin();
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -62,6 +61,7 @@ export function WebPageJsonLd({
   urlPath: string;
   datePublished?: string;
 }) {
+  const siteUrl = getSeoPublicOrigin();
   const pageUrl = new URL(urlPath, siteUrl).toString();
   const jsonLd = {
     "@context": "https://schema.org",
@@ -92,6 +92,7 @@ export function HowToJsonLd({
   steps: HowToStepItem[];
   urlPath: string;
 }) {
+  const siteUrl = getSeoPublicOrigin();
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "HowTo",

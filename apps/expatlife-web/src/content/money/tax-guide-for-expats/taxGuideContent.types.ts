@@ -39,6 +39,7 @@ export type MoneyTaxGuideOfficialSourceKey =
   | "bd_filing_return"
   | "bd_payroll_taxes"
   | "bd_30_percent_facility"
+  | "business_gov_expat_scheme"
   | "toeslagen_portal"
   | "bd_international_en"
   | "gov_income_tax_allowances"

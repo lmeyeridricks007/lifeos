@@ -5,7 +5,7 @@
 
 import type { Metadata } from "next";
 import { cloneSafeMetadata } from "@/lib/metadata";
-import { getSiteOrigin } from "@/lib/site-origin";
+import { getSeoPublicOrigin } from "@/lib/site-origin";
 import { isPubliclyVisible } from "@/src/lib/publishing/isPubliclyVisible";
 
 /** Default OG/Twitter image route (see `app/opengraph-image.tsx`). */
@@ -43,7 +43,7 @@ function normalizePath(path: string): string {
 /** Absolute URL for a path on this deployment (social crawlers require absolute URLs). */
 export function absoluteUrlFromPath(path: string): string {
   const p = normalizePath(path);
-  return new URL(p, `${getSiteOrigin()}/`).toString();
+  return new URL(p, `${getSeoPublicOrigin()}/`).toString();
 }
 
 function resolveImageUrl(imagePath?: string): string {
@@ -52,9 +52,27 @@ function resolveImageUrl(imagePath?: string): string {
   return absoluteUrlFromPath(imagePath);
 }
 
+const BRAND_TITLE_SUFFIX = /\s*\|\s*ExpatCopilot\s*$/i;
+
+/** Strip a trailing `| ExpatCopilot` so the root layout template does not double the brand. */
+export function stripBrandTitleSuffix(title: string): string {
+  return title.trim().replace(BRAND_TITLE_SUFFIX, "");
+}
+
+/**
+ * Next.js `metadata.title`: short form for `%s | ExpatCopilot`, or `{ absolute }` when already branded.
+ * Use for every page-level title export.
+ */
+export function pageMetadataTitle(title: string, options?: { absoluteTitle?: boolean }): Metadata["title"] {
+  const t = title.trim();
+  if (!t) return "ExpatCopilot";
+  if (options?.absoluteTitle || BRAND_TITLE_SUFFIX.test(t)) return { absolute: t };
+  return t;
+}
+
 /** Crawler-facing title: add brand suffix when the page title is the short form (HTML title adds suffix via layout template). */
 export function sharePreviewTitle(pageTitle: string): string {
-  const t = pageTitle.trim();
+  const t = stripBrandTitleSuffix(pageTitle);
   if (!t) return "ExpatCopilot";
   if (/expatcopilot/i.test(t)) return t;
   return `${t} | ExpatCopilot`;
@@ -110,7 +128,7 @@ export function buildSocialMetadata(input: SocialPageMetaInput): Metadata {
   const t = input.title.trim();
   const d = input.description.trim();
   const normalized: SocialPageMetaInput = { ...input, path, title: t, description: d };
-  const titleField = input.absoluteTitle ? { absolute: t } : t;
+  const titleField = pageMetadataTitle(t, { absoluteTitle: input.absoluteTitle });
   const gate = input.publishGate;
   const robots =
     gate != null && !isPubliclyVisible(gate.publish, gate.publishDate, new Date())
@@ -119,7 +137,7 @@ export function buildSocialMetadata(input: SocialPageMetaInput): Metadata {
   return cloneSafeMetadata({
     title: titleField,
     description: d,
-    alternates: { canonical: path },
+    alternates: { canonical: absoluteUrlFromPath(path) },
     openGraph: buildOpenGraphFields(normalized),
     twitter: buildTwitterFields(normalized),
     ...(robots ? { robots } : {}),

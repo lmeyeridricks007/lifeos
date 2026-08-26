@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { BestCitiesForExpatsView } from "@/src/components/cities/best-cities-for-expats/BestCitiesForExpatsView";
 import { bestCitiesForExpatsPageModel } from "@/src/components/cities/best-cities-for-expats/bestCitiesForExpatsPageModel";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -9,7 +10,7 @@ const baseUrl = getSiteOrigin();
 const { path, seo, publishDate, hero } = bestCitiesForExpatsPageModel;
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },

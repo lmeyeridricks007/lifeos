@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { pageMetadataTitle, sharePreviewTitle, absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { SITEMAP_MAIN_LINKS, SITEMAP_TRUST_LEGAL_LINKS } from "@/src/data/site/footer-links";
 import { NETHERLANDS_SERVICES_CATEGORIES } from "@/src/data/services/categories";
@@ -33,11 +34,19 @@ const CITY_PAGES = [
   { label: "Amstelveen", href: "/netherlands/amstelveen/" },
 ] as const;
 
+const META_TITLE = "Sitemap";
+const META_DESCRIPTION =
+  "Browse the main pages across ExpatCopilot: guides, services, cities, tools, and trust pages.";
+
 export const metadata: Metadata = {
-  title: "Sitemap | ExpatCopilot",
-  description:
-    "Browse the main pages across ExpatCopilot: guides, services, cities, tools, and trust pages.",
-  alternates: { canonical: "/sitemap/" },
+  title: pageMetadataTitle(META_TITLE),
+  description: META_DESCRIPTION,
+  alternates: { canonical: absoluteUrlFromPath("/sitemap/") },
+  openGraph: {
+    title: sharePreviewTitle(META_TITLE),
+    description: META_DESCRIPTION,
+    url: absoluteUrlFromPath("/sitemap/"),
+  },
 };
 
 function SitemapSection({

@@ -30,10 +30,11 @@ export const moneyThirtyRulingEligibilityFactors: readonly MoneyThirtyRulingElig
     id: "e2",
     title: "Salary threshold context",
     plainEnglishExplanation:
-      "Norms for minimum salary can change by tax year and role category. This guide does not quote numbers.",
+      "Belastingdienst publishes minimum taxable salary norms each tax year. For 2026 the standard norm is €48,013/year; the under-30 master's reduced norm is €36,497/year (verify role category on official pages).",
     whyItMatters:
-      "Blog posts go stale fast; the calculator’s tax-year selector and Belastingdienst stay aligned with maintained parameters.",
-    cautionNote: "Never treat a forum screenshot as your norm — pick the tax year that matches your start date.",
+      "Blog posts go stale fast — dated official figures help you sanity-check offers before payroll commits.",
+    cautionNote:
+      "Norms index and role exceptions exist — confirm the tax year and category that match your start date on Belastingdienst.",
     relatedToolKeys: ["ruling", "guideEligibility"],
   },
   {

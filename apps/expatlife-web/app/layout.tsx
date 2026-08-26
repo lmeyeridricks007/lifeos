@@ -5,7 +5,7 @@ import { Inter } from "next/font/google";
 import { AppClientShell } from "@/app/AppClientShell";
 import { getContentVersion } from "@/lib/content-version";
 import { cloneSafeMetadata } from "@/lib/metadata";
-import { getSiteOrigin } from "@/lib/site-origin";
+import { getSeoPublicOrigin } from "@/lib/site-origin";
 import { SiteWideStructuredData } from "@/components/seo/SiteWideStructuredData";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,7 +25,7 @@ const rootMeta: Metadata = {
     title: "ExpatCopilot",
     description:
       "Practical relocation guides, tools, and service discovery for expats moving to the Netherlands — visas, housing, banking, and settling in.",
-    url: "/",
+    url: `${getSeoPublicOrigin()}/`,
   },
   twitter: {
     card: "summary_large_image",
@@ -50,7 +50,8 @@ const cloned = cloneSafeMetadata(rootMeta);
  */
 export const metadata: Metadata = {
   ...cloned,
-  metadataBase: new URL(`${getSiteOrigin()}/`),
+  /** String only — `new URL()` breaks metadata merge / sitemap generation (DataCloneError). */
+  metadataBase: `${getSeoPublicOrigin()}/` as unknown as Metadata["metadataBase"],
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

@@ -14,6 +14,32 @@ import type { GuideSectionService, GuideExampleScenario } from "@/src/lib/guides
 import type { VisaPageData } from "@/src/content/visas/types";
 import { expandGuideDataWithRegistryRecommendations } from "@/src/lib/guides/registryRecommendedServices";
 import { normalizeGuideContract } from "@/src/lib/guides/normalizeMovingGuideContract";
+import {
+  HSM_IND_PAGE_LAST_UPDATE,
+  HSM_IND_PERMANENT_RESIDENCE_URL,
+  HSM_JOB_SEARCH_RULE_EFFECTIVE_DATE,
+  HSM_PERMIT_MAX_DURATION_ORIENTATION,
+  hsmJobSearchDecisionMatrix,
+  hsmJobLossSectionHeading,
+  hsmLongTermStayPathDisclaimer,
+  hsmLongTermStayPathHeading,
+  hsmLongTermStayPathSummary,
+  hsmLongTermStayPathTable,
+  HSM_CONTENT_LAST_REVIEWED,
+} from "@/src/content/visas/hsmJobSearchWindow";
+import {
+  CHANGING_JOBS_NL_PATH,
+  FIRST_90_DAYS_TOOL_PATH,
+  HSM_JOB_LOSS_SECTION_ID,
+  LAYOFFS_NL_PATH,
+  THIRTY_PERCENT_RULING_PATH,
+  VISA_CHECKER_PATH,
+} from "@/src/components/moving/work-permits-job-changes-cluster/hsmJobLossClusterPaths";
+import {
+  DUTCH_CITIZENSHIP_PATH,
+  INBURGERING_PATH,
+  PERMANENT_RESIDENCE_PATH,
+} from "@/src/components/moving/long-term-stay-cluster/longTermStayClusterPaths";
 
 const BASE = "/netherlands";
 const TOOLS = `${BASE}/moving/tools`;
@@ -125,10 +151,13 @@ const HSM_VS_EU_BLUE_CARD_SALARY_EXAMPLES: GuideSalaryComparisonExample[] = EU_B
 export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
   const tocItems: GuideTocItem[] = [
     { id: "overview", label: "Overview" },
+    { id: HSM_JOB_LOSS_SECTION_ID, label: hsmJobLossSectionHeading },
+    { id: "proposed-reforms-watch", label: "WATCH — proposed 2027 reforms" },
+    { id: "long-term-stay-path", label: hsmLongTermStayPathHeading },
     { id: "who-this-visa-is-for", label: "Who this visa is for" },
+    { id: "salary-thresholds", label: "Salary thresholds and costs" },
     { id: "hsm-vs-eu-blue-card", label: "HSM vs EU Blue Card" },
     { id: "alternatives", label: "Alternatives" },
-    { id: "salary-thresholds", label: "Salary thresholds and costs" },
     { id: "employer-requirements", label: "Employer requirements" },
     { id: "documents", label: "Documents" },
     { id: "process-timeline", label: "Process and timeline" },
@@ -158,10 +187,16 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
   };
 
   const quickAnswers = [
+    ...(v.keyFacts.jobSearchWindow
+      ? [{ label: "Job-search period (from 22 May 2026)", value: v.keyFacts.jobSearchWindow }]
+      : []),
+    { label: "Proposed 2027 reforms", value: "Not yet law — possible 1 Jan 2027; current IND thresholds still apply" },
+    { label: "Salary floor (30+)", value: "€5,942/month gross (excl. holiday pay, 2026 IND)" },
+    { label: "Salary floor (under 30)", value: "€4,357/month gross (2026 IND)" },
+    { label: "HSM → permanent residence", value: "Separate IND application after qualifying lawful stay — not automatic at 5 years" },
+    { label: "Current IND fee", value: v.keyFacts.indFee },
     { label: "Route type", value: v.keyFacts.routeType },
     { label: "Sponsor requirement", value: v.keyFacts.sponsorRequirement ?? "N/A" },
-    { label: "Current IND fee", value: v.keyFacts.indFee },
-    { label: "Common users", value: v.keyFacts.commonUsers },
   ];
 
   const overviewSection: GuideSection = {
@@ -170,6 +205,7 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     body: [
       "The Highly Skilled Migrant (kennismigrant) permit is a Dutch residence permit for employees coming to work in the Netherlands in qualifying skilled roles. Only an employer recognized by the IND can apply for this permit.",
       "It is commonly used by international companies hiring non-EU professionals and is one of the most common non-EU work routes for expats moving to the Netherlands. It is different from the EU Blue Card, ICT, startup, and DAFT routes.",
+      `Once you hold the permit, IND rules on job loss and changing employer matter as much as entry salary. From ${HSM_JOB_SEARCH_RULE_EFFECTIVE_DATE}, the IND distinguishes a 3-month vs 6-month job-search window when employment ends while the permit is still valid — see the section below and verify on the IND highly skilled migrant page (last updated ${HSM_IND_PAGE_LAST_UPDATE}).`,
     ],
     links: [
       { label: "EU Blue Card", href: `${BASE}/visa/eu-blue-card/` },
@@ -265,8 +301,10 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     },
     callout: {
       type: "info",
-      title: "Figures can change",
-      text: "Salary criteria and fees can change. Always check the IND required-amounts and fees pages for current figures. Employer and role conditions still apply besides salary.",
+      title: "2026 source of record (IND)",
+      text: "Figures in the table match IND required amounts and fees used for 2026 planning on ExpatCopilot. Verify on the IND required-amounts and fees pages before you sign — thresholds can change with indexation or new legislation. EU Blue Card standard tier uses the same €5,942 floor; reduced Blue Card €4,754 is a separate route with its own criteria.",
+      href: "https://ind.nl/en/required-amounts-income-requirements",
+      linkLabel: "IND — required amounts",
     },
     ctaBlock: {
       title: "Estimate your relocation cost",
@@ -275,6 +313,36 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
       primaryHref: `${TOOLS}/relocation-cost-estimator/`,
     },
   };
+
+  const proposedReformsSection: GuideSection | null = v.proposedReformsWatch
+    ? {
+        id: "proposed-reforms-watch",
+        heading: v.proposedReformsWatch.title,
+        body: [v.proposedReformsWatch.summary],
+        bullets: v.proposedReformsWatch.bullets,
+        callout: {
+          type: "warning",
+          title: `Possible effective date: ${v.proposedReformsWatch.possibleEffectiveDate} — not yet law`,
+          text: v.proposedReformsWatch.disclaimer,
+          href: v.proposedReformsWatch.businessGovUrl,
+          linkLabel: "business.gov.nl — proposed HSM rule changes",
+        },
+        links: [
+          ...(v.proposedReformsWatch.governmentNlUrl
+            ? [
+                {
+                  label: "Government.nl — cabinet proposal (4 July 2025)",
+                  href: v.proposedReformsWatch.governmentNlUrl,
+                },
+              ]
+            : []),
+          {
+            label: "business.gov.nl — proposed HSM rule changes",
+            href: v.proposedReformsWatch.businessGovUrl,
+          },
+        ],
+      }
+    : null;
 
   const employerSection: GuideSection = {
     id: "employer-requirements",
@@ -317,6 +385,80 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     ],
     bullets: v.processSteps.map((s) => `${s.step}. ${s.title}${s.detail ? ` — ${s.detail}` : ""}`),
   };
+
+  const jobLossSection: GuideSection | null = v.jobLossGuide
+    ? {
+        id: HSM_JOB_LOSS_SECTION_ID,
+        heading: hsmJobLossSectionHeading,
+        body: [
+          "Once you hold an HSM permit, life changes — new jobs, layoffs, and long-term planning — still follow IND rules. HSM permits are tied to recognized sponsors and are usually issued for the duration of employment up to a maximum period (often discussed as five years in expat planning, but verify on your decision letter).",
+          `${v.jobLossGuide.summary} IND guidance on this rule was updated ${HSM_IND_PAGE_LAST_UPDATE}; the 3-month vs 6-month split applies from ${HSM_JOB_SEARCH_RULE_EFFECTIVE_DATE}.`,
+          "Changing employer: a new role must be with a recognized IND sponsor who handles permit linkage — see our changing-jobs guide for contracts, timing, and admin.",
+          v.jobLossGuide.clockStarts,
+          v.jobLossGuide.permitValidityCap,
+          v.jobLossGuide.afterPeriodEnds,
+          v.jobLossGuide.newEmployerNote,
+          hsmJobSearchDecisionMatrix.footnote,
+        ],
+        table: {
+          headers: [...hsmJobSearchDecisionMatrix.headers],
+          rows: hsmJobSearchDecisionMatrix.rows.map((row) => [...row]),
+        },
+        callout: {
+          type: "warning",
+          title: `IND rule from ${HSM_JOB_SEARCH_RULE_EFFECTIVE_DATE} (updated ${HSM_IND_PAGE_LAST_UPDATE})`,
+          text: v.jobLossGuide.disclaimer,
+          href: v.jobLossGuide.indUrl,
+          linkLabel: "IND — Highly skilled migrant (unemployment section)",
+        },
+        links: [
+          { label: "Changing jobs in the Netherlands", href: CHANGING_JOBS_NL_PATH },
+          { label: "Layoffs in the Netherlands", href: `${BASE}/moving/layoffs-netherlands/` },
+          { label: "Permanent residence guide", href: PERMANENT_RESIDENCE_PATH },
+          { label: "Inburgering guide", href: INBURGERING_PATH },
+          { label: "Dutch citizenship guide", href: DUTCH_CITIZENSHIP_PATH },
+          { label: "Visa checker", href: VISA_CHECKER_PATH },
+          { label: "First 90 days planner", href: FIRST_90_DAYS_TOOL_PATH },
+          { label: "30% ruling guide", href: "/netherlands/taxes/30-percent-ruling/" },
+        ],
+      }
+    : null;
+
+  const longTermStaySection: GuideSection | null = v.jobLossGuide
+    ? {
+        id: "long-term-stay-path",
+        heading: hsmLongTermStayPathHeading,
+        body: [
+          HSM_PERMIT_MAX_DURATION_ORIENTATION,
+          hsmLongTermStayPathSummary,
+          "Permanent residence (verblijfsvergunning voor onbepaalde tijd) is a separate IND application — not something you automatically receive when an HSM permit reaches its maximum validity. The IND assesses lawful stay length, continuity, absences, income, and integration (including inburgering where required).",
+          hsmLongTermStayPathDisclaimer,
+        ],
+        table: {
+          headers: [...hsmLongTermStayPathTable.headers],
+          rows: hsmLongTermStayPathTable.rows.map((row) => [...row]),
+        },
+        callout: {
+          type: "info",
+          title: "HSM is not permanent residence",
+          text: "Use your decision letter for exact permit validity. When you approach a long-term horizon, read the IND permanent residence criteria and our guides before assuming a five-year clock guarantees PR.",
+          href: HSM_IND_PERMANENT_RESIDENCE_URL,
+          linkLabel: "IND — permanent residence permit",
+        },
+        internalCta: {
+          label: "If you lose this job — layoffs guide",
+          href: LAYOFFS_NL_PATH,
+        },
+        links: [
+          { label: "Layoffs in the Netherlands", href: LAYOFFS_NL_PATH },
+          { label: "Permanent residence guide", href: PERMANENT_RESIDENCE_PATH },
+          { label: "Inburgering guide", href: INBURGERING_PATH },
+          { label: "Dutch citizenship guide", href: DUTCH_CITIZENSHIP_PATH },
+          { label: "Extensions and changes", href: `${BASE}/moving/extensions-changes/` },
+          { label: "Residence permits hub", href: `${BASE}/moving/residence-permits/` },
+        ],
+      }
+    : null;
 
   const afterApprovalSection: GuideSection = {
     id: "after-approval",
@@ -365,10 +507,13 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
 
   const sections: GuideSection[] = [
     overviewSection,
+    ...(jobLossSection ? [jobLossSection] : []),
+    ...(proposedReformsSection ? [proposedReformsSection] : []),
+    ...(longTermStaySection ? [longTermStaySection] : []),
     whoForSection,
+    salarySection,
     hsmVsEuBlueCardSection,
     alternativesSection,
-    salarySection,
     employerSection,
     documentsSection,
     processSection,
@@ -384,9 +529,24 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     breadcrumbLabel: v.shortTitle,
     subtitle: "What it is, who it is for, salary thresholds, employer requirements, and how to plan your move if you are relocating on a recognized sponsor route.",
     description: v.summary,
+    lastUpdated: HSM_CONTENT_LAST_REVIEWED,
+    heroOfficialSources: [
+      {
+        label: "IND — Highly skilled migrant",
+        href: "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+      },
+      {
+        label: "IND — Required amounts (2026)",
+        href: "https://ind.nl/en/required-amounts-income-requirements",
+      },
+      {
+        label: "IND — Application fees",
+        href: "https://ind.nl/en/fees-costs-of-an-application",
+      },
+    ],
     hero: {
       eyebrow: "VISA GUIDE",
-      badges: [v.category],
+      badges: [v.category, "2026 IND figures"],
       image: {
         src: v.heroImage,
         alt: v.heroImageAlt,

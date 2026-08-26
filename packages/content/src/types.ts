@@ -262,6 +262,7 @@ export type NlPortalContent = {
     title: string;
     subtitle: string;
     body: string;
+    hubHref: string;
     openHubLabel: string;
     infoBoxTitle: string;
     infoBoxItems: string[];
@@ -272,6 +273,7 @@ export type NlPortalContent = {
     title: string;
     subtitle: string;
     body: string;
+    survivalGuideHref: string;
     openSurvivalGuideLabel: string;
     openUtilitiesLabel: string;
     infoBoxTitle: string;

@@ -1618,16 +1618,41 @@ export function GuidePageTemplate({
             shareUrl={shareUrl}
             pageId={pageId}
             afterSubtitle={
-              data.hero?.badges?.length ? (
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {data.hero.badges.map((badge, i) => (
-                    <span
-                      key={`badge-${i}-${String(badge).slice(0, 20)}`}
-                      className="rounded-full border border-border/60 bg-surface-muted px-2.5 py-0.5 text-xs font-medium text-foreground-muted"
-                    >
-                      {badge}
-                    </span>
-                  ))}
+              data.hero?.badges?.length || data.lastUpdated || data.heroOfficialSources?.length ? (
+                <div className="mt-4 space-y-3">
+                  {data.hero?.badges?.length ? (
+                    <div className="flex flex-wrap gap-2">
+                      {data.hero.badges.map((badge, i) => (
+                        <span
+                          key={`badge-${i}-${String(badge).slice(0, 20)}`}
+                          className="rounded-full border border-border/60 bg-surface-muted px-2.5 py-0.5 text-xs font-medium text-foreground-muted"
+                        >
+                          {badge}
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
+                  {data.lastUpdated ? (
+                    <p className="text-sm font-medium text-foreground-muted">{data.lastUpdated}</p>
+                  ) : null}
+                  {data.heroOfficialSources?.length ? (
+                    <p className="text-sm text-foreground-muted">
+                      Official sources:{" "}
+                      {data.heroOfficialSources.map((source, index) => (
+                        <span key={source.href}>
+                          {index > 0 ? " · " : null}
+                          <a
+                            href={source.href}
+                            className="font-semibold text-link hover:text-link-hover"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {source.label}
+                          </a>
+                        </span>
+                      ))}
+                    </p>
+                  ) : null}
                 </div>
               ) : undefined
             }

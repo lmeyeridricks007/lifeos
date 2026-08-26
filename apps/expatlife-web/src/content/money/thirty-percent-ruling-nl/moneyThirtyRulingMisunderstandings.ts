@@ -9,4 +9,5 @@ export const moneyThirtyRulingMisunderstandings: readonly MoneyThirtyRulingMisun
   { id: "m6", title: "“Eligibility equals benefit amount.”", body: "You can have complex stories where directionally eligible situations still produce smaller in-payroll benefit than expected." },
   { id: "m7", title: "“Old forum numbers still apply.”", body: "Rule changes and caps can move — verify against official year guidance." },
   { id: "m8", title: "“The calculator approved me.”", body: "Calculators output scenarios — not Dienst letters and not payroll mandates." },
+  { id: "m10", title: "“30% ruling eligibility is the same as IND visa rules.”", body: "The 30% facility is a Belastingdienst payroll/tax arrangement with its own salary norms and caps. IND highly skilled migrant salary thresholds, TB-test rules, and sponsor requirements are separate — meeting one does not automatically mean you qualify for the other." },
 ] as const;

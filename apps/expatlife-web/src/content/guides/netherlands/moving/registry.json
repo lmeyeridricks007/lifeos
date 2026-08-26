@@ -1,5 +1,5 @@
 {
-  "hubPath": "/netherlands/moving/",
+  "hubPath": "/netherlands/moving-to-the-netherlands/",
   "pillarPath": "/netherlands/moving-to-the-netherlands/",
   "toolPaths": {
     "moving-checklist": "/netherlands/moving/tools/moving-checklist/",
@@ -241,6 +241,30 @@
       "description": "Whether you can move without a job depends on nationality, purpose, and legal route. Compare EU/EEA vs non-EU, partner and study routes.",
       "priority": 17,
       "category": "planning"
+    },
+    {
+      "slug": "permanent-residence-netherlands",
+      "path": "/netherlands/citizenship/permanent-residence/",
+      "title": "Permanent Residence in the Netherlands",
+      "description": "Routes, typical residence periods, absences, and official next steps toward permanent status in the Netherlands.",
+      "priority": 18,
+      "category": "long-term-status"
+    },
+    {
+      "slug": "dutch-citizenship-netherlands",
+      "path": "/netherlands/citizenship/dutch-citizenship/",
+      "title": "Dutch Citizenship for Expats",
+      "description": "Naturalisation vs option, integration requirements, dual nationality considerations, and planning tools.",
+      "priority": 19,
+      "category": "long-term-status"
+    },
+    {
+      "slug": "inburgering-netherlands",
+      "path": "/netherlands/integration/inburgering/",
+      "title": "Inburgering in the Netherlands",
+      "description": "Who may need civic integration, exam components, IND and DUO roles, and timeline planning for expats.",
+      "priority": 20,
+      "category": "integration"
     }
   ]
 }

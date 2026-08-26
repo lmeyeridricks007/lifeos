@@ -437,17 +437,17 @@
       "slug": "digid-awareness",
       "path": "/netherlands/living/digid-awareness/",
       "title": "DigiD awareness (Living)",
-      "metaDescription": "Why DigiD matters for daily life in the Netherlands and where to read the full expat-oriented DigiD guide.",
+      "metaDescription": "Redirects to the full DigiD guide for expats at /netherlands/digid-awareness/.",
       "breadcrumbLabel": "DigiD awareness",
       "section": "guides",
       "clusterLabel": "Living in the Netherlands",
       "pageType": "support",
-      "contentStatus": "scaffold",
-      "menuVisible": true,
+      "contentStatus": "hidden",
+      "menuVisible": false,
       "navGroup": "digital-life",
-      "intro": "DigiD unlocks taxes, healthcare letters, and many gemeente flows. The canonical guide lives under Move; this Living entry orients you in the post-arrival stack.",
-      "canonicalGuidePath": "/netherlands/practical-life/digid-netherlands/",
-      "canonicalLabel": "Full DigiD guide",
+      "intro": "DigiD unlocks taxes, healthcare letters, and many gemeente flows. Read the full expat-oriented guide on the Move cluster route.",
+      "canonicalGuidePath": "/netherlands/digid-awareness/",
+      "canonicalLabel": "Full DigiD guide for expats",
       "related": [
         { "label": "Government portals overview", "href": "/netherlands/practical-life/government-portals-netherlands/", "description": "What you log into after DigiD." },
         { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/", "description": "Registration sequencing." }
@@ -470,7 +470,7 @@
       "canonicalGuidePath": "/netherlands/practical-life/government-portals-netherlands/",
       "canonicalLabel": "Government portals guide",
       "related": [
-        { "label": "DigiD awareness", "href": "/netherlands/living/digid-awareness/", "description": "Entry point to digital ID." },
+        { "label": "DigiD guide for expats", "href": "/netherlands/digid-awareness/", "description": "Full activation and security guide." },
         { "label": "Taxes hub", "href": "/netherlands/taxes/", "description": "Belastingdienst-facing flows (Money)." }
       ]
     },
@@ -1161,11 +1161,13 @@
       "contentStatus": "scaffold",
       "menuVisible": true,
       "navGroup": "language-integration",
-      "intro": "Rules change by residence route. Use this page for context and tools; confirm obligations with IND and DUO.",
-      "canonicalGuidePath": "/netherlands/integration/tools/",
-      "canonicalLabel": "Integration tools (verify requirements)",
+      "intro": "Rules change by residence route. Use this page for exam orientation; the full inburgering guide covers obligations, planning, and tools.",
+      "canonicalGuidePath": "/netherlands/integration/inburgering/",
+      "canonicalLabel": "Inburgering guide (authoritative)",
       "related": [
+        { "label": "Inburgering guide (authoritative)", "href": "/netherlands/integration/inburgering/", "description": "Legal obligation, planning, and PR/citizenship links." },
         { "label": "Inburgering tools", "href": "/netherlands/integration/tools/", "description": "Practice and planning tools." },
+        { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/", "description": "Five-year stay planning." },
         { "label": "Compare visas", "href": "/netherlands/visa/compare-visas/", "description": "Legal framing (Move)." }
       ]
     },

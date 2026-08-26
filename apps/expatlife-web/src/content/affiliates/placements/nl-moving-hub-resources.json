@@ -4,7 +4,7 @@
   "originCountry": "*",
   "context": {
     "pageType": "hub",
-    "route": "/netherlands/moving/",
+    "route": "/netherlands/moving-to-the-netherlands/",
     "slot": "end-resources"
   },
   "variant": "cards",

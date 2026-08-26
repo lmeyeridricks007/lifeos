@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { CultureEtiquetteView } from "@/src/components/living/culture-etiquette/CultureEtiquetteView";
 import { LIVING_CULTURE_ETIQUETTE_PATH } from "@/src/components/living/livingPillarContent";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
-import { buildSocialMetadata } from "@/lib/seo/metadata";
+import { pageMetadataTitle, buildSocialMetadata } from "@/lib/seo/metadata";
 
 export const revalidate = CONTENT_REVALIDATE;
 
 const canonical = LIVING_CULTURE_ETIQUETTE_PATH;
 
-const META_TITLE = "Dutch Culture & Etiquette | ExpatCopilot";
+const META_TITLE = "Dutch Culture & Etiquette";
 const META_DESCRIPTION =
   "A practical guide to everyday Dutch social norms — from direct communication and invitations to work culture, neighbors, birthdays, and the small habits that often surprise newcomers.";
 

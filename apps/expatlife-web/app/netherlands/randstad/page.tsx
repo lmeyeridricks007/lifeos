@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { ArticleJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { getSiteOrigin } from "@/lib/site-origin";
@@ -9,7 +10,7 @@ const baseUrl = getSiteOrigin();
 const { path, seo, publishDate, hero } = randstadPage;
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },

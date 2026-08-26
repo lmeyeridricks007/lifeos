@@ -26,7 +26,12 @@ export const MONEY_TAX_GUIDE_OFFICIAL_SOURCES: Record<MoneyTaxGuideOfficialSourc
   bd_30_percent_facility: {
     key: "bd_30_percent_facility",
     label: "Belastingdienst: 30% facility for incoming employees",
-    href: "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/belastingdienst/individuals/income-tax/working/incoming_employees/facility_for_incoming_employees/facility_for_incoming_employees",
+    href: "https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility",
+  },
+  business_gov_expat_scheme: {
+    key: "business_gov_expat_scheme",
+    label: "Business.gov.nl: expat scheme (30% ruling)",
+    href: "https://business.gov.nl/staff/employing-staff/the-expat-scheme-30-percent-ruling-in-the-netherlands/",
   },
   toeslagen_portal: {
     key: "toeslagen_portal",

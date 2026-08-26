@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { HealthcareAllowanceCalculatorClient } from "@/src/components/tools/healthcare-allowance/HealthcareAllowanceCalculatorClient";
@@ -39,7 +40,7 @@ const META_DESCRIPTION =
 const HERO_IMAGE = "/images/heroes/netherlands-healthcare-allowance-estimator-hero.png";
 
 export const metadata: Metadata = {
-  title: META_TITLE,
+  title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
   alternates: { canonical },
   keywords: [
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
     "zorgtoeslag estimate",
   ],
   openGraph: {
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     url: canonical,
     images: [
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     images: [HERO_IMAGE],
   },
@@ -241,7 +242,7 @@ export default function HealthcareAllowanceEstimatorPage() {
   });
   const faqJsonLd = buildFaqSchema(healthcareFaqItems.map((q) => ({ question: q.question, answer: q.answer })));
   const webPageJsonLd = buildToolPageSchema({
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     canonicalPath: canonical,
   });

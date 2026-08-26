@@ -1,7 +1,23 @@
 import { moveLayoffsNlRoutes as ROUTES } from "./moveLayoffsNl.routes";
 import type { MoveLayoffsFaqConfig } from "../moveLayoffsNl.content.model";
+import {
+  HSM_IND_PAGE_LAST_UPDATE,
+  HSM_IND_RESIDENCE_PERMIT_URL,
+  HSM_JOB_SEARCH_RULE_EFFECTIVE_DATE,
+  HSM_JOB_SEARCH_EXTENDED_MONTHS,
+  HSM_JOB_SEARCH_STANDARD_MONTHS,
+} from "@/src/content/visas/hsmJobSearchWindow";
 
 export const moveLayoffsFaq = [
+  {
+    q: "I am on a highly skilled migrant permit — how long do I have to find a new job?",
+    a: `If you lose your job while your permit is still valid, the IND allows a job-search period — usually up to ${HSM_JOB_SEARCH_STANDARD_MONTHS} months. If your contract ended on or after ${HSM_JOB_SEARCH_RULE_EFFECTIVE_DATE} and you have held the permit for two years or more (or you are a victim of labour exploitation), the maximum is ${HSM_JOB_SEARCH_EXTENDED_MONTHS} months. Job loss before ${HSM_JOB_SEARCH_RULE_EFFECTIVE_DATE} stays on the ${HSM_JOB_SEARCH_STANDARD_MONTHS}-month rule even with 2+ years on the permit. The period starts when your contract ends and cannot exceed your permit’s remaining validity. When it ends without a new recognized sponsor registration, the IND may revoke the permit. Read the IND highly skilled migrant page (updated ${HSM_IND_PAGE_LAST_UPDATE}) and confirm dates with HR — this guide is orientation only.`,
+    links: [
+      { label: "HSM job-search rule on this page", href: `${ROUTES.canonical}#if-you-lose-your-hsm-job` },
+      { label: "Highly skilled migrant guide", href: "/netherlands/visa/highly-skilled-migrant/#if-you-lose-your-hsm-job" },
+      { label: "IND — Highly skilled migrant", href: HSM_IND_RESIDENCE_PERMIT_URL },
+    ],
+  },
   {
     q: "What should I check first if a layoff might happen?",
     a: "Four areas: your job (contract, notice, last day, pay), stay if it depends on this job, money (gaps, rent, family costs), and daily life (insurance, proofs, registration). Ask for written answers where banks, landlords, or authorities will care.",

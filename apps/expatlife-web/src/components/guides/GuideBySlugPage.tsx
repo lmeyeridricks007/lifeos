@@ -28,10 +28,13 @@ const baseUrl = getSiteOrigin();
 export function GuideBySlugPage({
   slug,
   monetization,
+  breadcrumbMiddle,
 }: {
   slug: string;
   /** Merged over `NETHERLANDS_GUIDE_PAGE_MONETIZATION[slug]` (override / disable / force). */
   monetization?: PageMonetizationMetadata;
+  /** Optional crumbs inserted after Netherlands and before the guide title. */
+  breadcrumbMiddle?: Array<{ name: string; href: string }>;
 }) {
   if (!isGuidePublishingVisibleBySlug(slug)) notFound();
   const data = loadGuideBySlug(slug);
@@ -60,7 +63,12 @@ export function GuideBySlugPage({
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Moving", item: new URL("/netherlands/moving/", baseUrl).toString() },
+    ...(breadcrumbMiddle ?? [{ name: "Moving", href: "/netherlands/moving-to-the-netherlands/" }]).map(
+      (crumb) => ({
+        name: crumb.name,
+        item: new URL(crumb.href, baseUrl).toString(),
+      })
+    ),
     {
       name: data.breadcrumbLabel ?? data.title,
       item: new URL(data.path, baseUrl).toString(),

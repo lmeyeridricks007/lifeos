@@ -1,0 +1,218 @@
+{
+  "slug": "dutch-citizenship-netherlands",
+  "path": "/netherlands/citizenship/dutch-citizenship/",
+  "title": "Dutch Citizenship for Expats",
+  "metaTitle": "Dutch Citizenship for Expats: Naturalisation, Option & Requirements",
+  "subtitle": "How lawful residence, integration, and personal circumstances interact on the path to becoming Dutch.",
+  "description": "A comprehensive guide to Dutch citizenship for expats: naturalisation vs option, typical five-year residence periods, integration and inburgering requirements, dual nationality considerations, and official IND and government.nl next steps.",
+  "breadcrumbLabel": "Dutch citizenship",
+  "hero": {
+    "eyebrow": "Long-term stay",
+    "badges": ["Citizenship", "Verify officially"],
+    "image": {
+      "src": "/images/heroes/highly-skilled-migrant-netherlands.png",
+      "alt": "Passport and civic documents on a desk overlooking a Dutch canal, symbolising citizenship planning"
+    }
+  },
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "naturalisation-vs-option", "label": "Naturalisation vs option" },
+    { "id": "typical-requirements", "label": "Typical requirements" },
+    { "id": "five-year-and-pr", "label": "Five years, PR, and citizenship" },
+    { "id": "integration-and-inburgering", "label": "Integration and inburgering" },
+    { "id": "dual-nationality", "label": "Dual nationality" },
+    { "id": "application-orientation", "label": "Application orientation" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "official-sources", "label": "Official sources" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+  "heroCta": {
+    "title": "Estimate your citizenship timeline",
+    "supportingText": "Use the citizenship timeline calculator for a first-pass schedule, then confirm eligibility on official government pages.",
+    "primaryCtaLabel": "Citizenship timeline calculator",
+    "primaryCtaHref": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/",
+    "secondaryCtaLabel": "Permanent residence guide",
+    "secondaryCtaHref": "/netherlands/citizenship/permanent-residence/"
+  },
+  "quickAnswers": [
+    { "label": "Main routes", "value": "Naturalisation (most common for adult expats) or option (narrower eligibility)." },
+    { "label": "Residence anchor", "value": "Often five years of lawful residence — exceptions exist; verify for your permit history." },
+    { "label": "Integration", "value": "Inburgering or equivalent may be required depending on when you arrived and your permit type." },
+    { "label": "Dual nationality", "value": "Naturalisation often requires renunciation unless a legal exception applies — verify both Dutch and home-country rules." }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "Dutch citizenship is the step beyond long-term residence. It can bring a Dutch passport, full EU citizenship rights, and simpler travel — but it also involves legal conditions, fees, and sometimes renunciation of another nationality.",
+        "Requirements change with government policy and personal facts (marriage to a Dutch citizen, years of residence, integration record, criminal history). Treat this page as orientation; confirm every decision on government.nl, ind.nl, or with qualified advisers."
+      ],
+      "links": [
+        { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/" },
+        { "label": "Government.nl — Dutch nationality", "href": "https://www.government.nl/topics/dutch-nationality" }
+      ]
+    },
+    {
+      "id": "naturalisation-vs-option",
+      "heading": "Naturalisation vs option",
+      "table": {
+        "headers": ["Route", "Who it may fit", "Orientation"],
+        "rows": [
+          ["Naturalisation", "Most adult expats after qualifying lawful residence and integration.", "Application via municipality/IND process with documentation and ceremony."],
+          ["Option (optie)", "People with specific ties to the Netherlands (for example long residence since childhood or certain family links).", "Separate eligibility tests — not available to every long-term resident."]
+        ]
+      },
+      "links": [
+        { "label": "Government.nl — Dutch nationality", "href": "https://www.government.nl/topics/dutch-nationality" },
+        { "label": "IND — becoming a Dutch citizen", "href": "https://ind.nl/en/dutch-citizenship" }
+      ]
+    },
+    {
+      "id": "typical-requirements",
+      "heading": "Typical requirements (high level)",
+      "bullets": [
+        "Minimum age (usually 18 for naturalisation).",
+        "Lawful residence for the required period with a valid residence permit history.",
+        "Integration requirement met (inburgering certificate or recognised exemption).",
+        "Sufficient integration into Dutch society — language and civic knowledge where applicable.",
+        "No serious criminal record or threat to public order.",
+        "Renunciation of previous nationality may be required unless an exception applies."
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Municipality role",
+        "text": "Many naturalisation applications are handled through your gemeente after preliminary checks. Start with official guidance, then book an appointment when your documents are ready.",
+        "href": "https://www.government.nl/topics/dutch-nationality/acquiring-dutch-nationality",
+        "linkLabel": "Government.nl — acquiring Dutch nationality"
+      }
+    },
+    {
+      "id": "five-year-and-pr",
+      "heading": "Five years, permanent residence, and citizenship",
+      "body": [
+        "Citizenship and permanent residence share a five-year planning horizon for many expats, but they are separate legal steps. You can hold permanent residence for years before deciding on naturalisation — or pursue citizenship when integration and personal circumstances align.",
+        "Some people apply for permanent residence first to stabilise stay rights, then naturalise later. Others skip straight to naturalisation when eligible. Your permit gaps, absences, and integration record affect both paths."
+      ],
+      "links": [
+        { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/" },
+        { "label": "Residence permits hub", "href": "/netherlands/moving/residence-permits/" },
+        { "label": "Extensions and changes", "href": "/netherlands/moving/extensions-changes/" }
+      ]
+    },
+    {
+      "id": "integration-and-inburgering",
+      "heading": "Integration and inburgering",
+      "body": [
+        "Citizenship applications often require proof that you meet integration obligations. What you need depends on when you arrived, your permit type, and whether you already passed inburgering exams or hold recognised equivalents.",
+        "Start early: exam waiting times and study hours are easier to spread across years two to four of residence than to cram in month five. Our inburgering guide covers obligation checks, DUO exams, and timeline planning."
+      ],
+      "links": [
+        { "label": "Inburgering guide", "href": "/netherlands/integration/inburgering/" },
+        { "label": "Inburgering exams orientation (Culture)", "href": "/netherlands/culture/inburgering-exams/" },
+        { "label": "Inburgering timeline planner", "href": "/netherlands/integration/tools/inburgering-timeline-planner/" },
+        { "label": "IND — integration", "href": "https://ind.nl/en/integration" }
+      ]
+    },
+    {
+      "id": "dual-nationality",
+      "heading": "Dual nationality",
+      "body": [
+        "The Netherlands generally expects naturalisation applicants to renounce their previous nationality unless an exception applies (for example certain marriage situations, refugees, or if renunciation is impossible or unreasonably burdensome under the law of the origin country).",
+        "Your origin country's rules also matter — some countries never allow renunciation; others treat naturalisation abroad as automatic loss of citizenship. Check both Dutch and home-country rules before applying."
+      ],
+      "callout": {
+        "type": "warning",
+        "title": "Policy-sensitive topic",
+        "text": "Dual nationality rules are politically sensitive and can change. Read current government guidance rather than forum posts.",
+        "href": "https://www.government.nl/topics/dutch-nationality/dual-nationality",
+        "linkLabel": "Government.nl — dual nationality"
+      },
+      "links": [
+        { "label": "Dual citizenship awareness tool", "href": "/netherlands/citizenship/tools/dual-citizenship-awareness/" }
+      ]
+    },
+    {
+      "id": "application-orientation",
+      "heading": "Application orientation",
+      "bullets": [
+        "Many naturalisation applications start at your municipality (gemeente) after a residence and integration check.",
+        "Fees apply; decision periods can run many months.",
+        "If approved, you attend a naturalisation ceremony to receive Dutch nationality.",
+        "Keep copies of every submission — gemeente and IND correspondence may be needed for future passport or BRP updates."
+      ],
+      "links": [
+        { "label": "IND — becoming a Dutch citizen", "href": "https://ind.nl/en/dutch-citizenship" },
+        { "label": "Naturalisation requirements checker", "href": "/netherlands/citizenship/tools/naturalisation-requirements-checker/" }
+      ]
+    },
+    {
+      "id": "tools",
+      "heading": "Tools",
+      "body": ["Orientation calculators and checkers — confirm outcomes on official sites before you rely on any automated result."],
+      "links": [
+        { "label": "Dutch citizenship timeline calculator", "href": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/" },
+        { "label": "Permanent residence eligibility calculator", "href": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/" },
+        { "label": "Naturalisation requirements checker", "href": "/netherlands/citizenship/tools/naturalisation-requirements-checker/" },
+        { "label": "Dual citizenship awareness tool", "href": "/netherlands/citizenship/tools/dual-citizenship-awareness/" }
+      ]
+    },
+    {
+      "id": "official-sources",
+      "heading": "Official sources",
+      "links": [
+        { "label": "Government.nl — Dutch nationality", "href": "https://www.government.nl/topics/dutch-nationality" },
+        { "label": "Government.nl — dual nationality", "href": "https://www.government.nl/topics/dutch-nationality/dual-nationality" },
+        { "label": "IND — Dutch citizenship", "href": "https://ind.nl/en/dutch-citizenship" },
+        { "label": "IND — integration", "href": "https://ind.nl/en/integration" },
+        { "label": "DUO — inburgeren.nl", "href": "https://www.inburgeren.nl/en" }
+      ]
+    },
+    {
+      "id": "related-guides",
+      "heading": "Related guides",
+      "links": [
+        { "label": "Permanent residence", "href": "/netherlands/citizenship/permanent-residence/" },
+        { "label": "Inburgering", "href": "/netherlands/integration/inburgering/" },
+        { "label": "Residence permits", "href": "/netherlands/moving/residence-permits/" },
+        { "label": "Highly Skilled Migrant visa", "href": "/netherlands/visa/highly-skilled-migrant/" },
+        { "label": "Taxes when leaving the Netherlands", "href": "/netherlands/taxes/leaving-netherlands-tax/" }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long before I can apply for Dutch citizenship?",
+      "a": "Many naturalisation routes look at five years of continuous lawful residence, but exceptions and shorter paths exist (for example through marriage to a Dutch citizen in some cases). Your permit gaps and absences matter. Use the timeline calculator, then confirm on government.nl and with your municipality."
+    },
+    {
+      "q": "Do I need to give up my current passport?",
+      "a": "Often yes for naturalisation, unless you qualify for a renunciation exception under Dutch law or renunciation is impossible under your origin country's rules. Dual nationality policy is complex — verify both countries' current rules before applying."
+    },
+    {
+      "q": "Is citizenship the same as permanent residence?",
+      "a": "No. Permanent residence is a long-term stay permit. Citizenship changes your nationality status and comes with different rights and obligations. Many people hold permanent residence for years before deciding on naturalisation."
+    },
+    {
+      "q": "Can I become Dutch without inburgering?",
+      "a": "Only if you meet an exemption or already hold recognised integration proof. Most naturalisation applicants need to show integration compliance. Check ind.nl/integration and our inburgering guide for your situation."
+    },
+    {
+      "q": "Does my child automatically become Dutch if I naturalise?",
+      "a": "Children may acquire nationality through parents under specific conditions — age, residence, and marital status matter. Read government.nl guidance for family situations rather than assuming automatic inclusion."
+    },
+    {
+      "q": "What if I plan to leave the Netherlands after naturalising?",
+      "a": "Citizenship does not remove tax or pension questions when you emigrate. If departure is possible, read our leaving tax guide alongside citizenship planning."
+    }
+  ],
+  "internalLinks": {
+    "pillar": { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/" },
+    "related": [
+      { "label": "Inburgering guide", "href": "/netherlands/integration/inburgering/" },
+      { "label": "Residence permits", "href": "/netherlands/moving/residence-permits/" },
+      { "label": "Citizenship tools", "href": "/netherlands/citizenship/tools/" }
+    ]
+  }
+}

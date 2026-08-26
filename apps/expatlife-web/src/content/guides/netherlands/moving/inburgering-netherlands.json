@@ -1,0 +1,212 @@
+{
+  "slug": "inburgering-netherlands",
+  "path": "/netherlands/integration/inburgering/",
+  "title": "Inburgering in the Netherlands",
+  "metaTitle": "Inburgering in the Netherlands: Requirements, Exams & Planning for Expats",
+  "subtitle": "Where integration obligations fit in your residence timeline — and how to plan exams without surprises.",
+  "description": "A comprehensive guide to inburgering in the Netherlands for expats: who may need integration, language and KNM exams, IND and DUO roles, planning for PR and citizenship, and official sources.",
+  "breadcrumbLabel": "Inburgering",
+  "hero": {
+    "eyebrow": "Integration",
+    "badges": ["Guide", "Verify with IND & DUO"],
+    "image": {
+      "src": "/images/heroes/highly-skilled-migrant-netherlands.png",
+      "alt": "Study materials and Dutch language notes on a desk with a bicycle and canal view outside"
+    }
+  },
+  "tocItems": [
+    { "id": "overview", "label": "Overview" },
+    { "id": "who-needs-inburgering", "label": "Who may need inburgering" },
+    { "id": "exam-components", "label": "Exam components" },
+    { "id": "planning-timeline", "label": "Planning timeline" },
+    { "id": "official-roles", "label": "IND, DUO, and gemeente" },
+    { "id": "citizenship-and-pr", "label": "Links to PR and citizenship" },
+    { "id": "tools", "label": "Tools" },
+    { "id": "official-sources", "label": "Official sources" },
+    { "id": "faq", "label": "FAQ" },
+    { "id": "related-guides", "label": "Related guides" }
+  ],
+  "heroCta": {
+    "title": "Plan your integration timeline",
+    "supportingText": "Use the inburgering timeline planner and exam readiness checker, then confirm whether you are legally required to integrate.",
+    "primaryCtaLabel": "Inburgering timeline planner",
+    "primaryCtaHref": "/netherlands/integration/tools/inburgering-timeline-planner/",
+    "secondaryCtaLabel": "Integration requirement checker",
+    "secondaryCtaHref": "/netherlands/integration/tools/integration-requirement-checker/"
+  },
+  "quickAnswers": [
+    { "label": "Not everyone", "value": "Integration duty depends on permit type, arrival date, and personal exemptions — do not assume from nationality alone." },
+    { "label": "Core exams", "value": "Language (reading, writing, speaking, listening) plus KNM/ONA civic components where required." },
+    { "label": "PR & citizenship", "value": "Integration proof often reappears at permanent residence or naturalisation even when your first work permit did not emphasise exams." },
+    { "label": "Official sources", "value": "IND for obligation; DUO for exams; gemeente for local courses and referrals." }
+  ],
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "body": [
+        "Inburgering is the Dutch civic integration system. For some residence holders it is a legal obligation; for others it is optional but still useful for permanent residence or citizenship later.",
+        "Rules shifted several times over the past decade (2013, 2021, and ongoing policy debates). Always check whether you are inburgeringsplichtig (subject to integration duty) for your specific permit and arrival date — forum advice from someone who arrived under different rules is a common source of mistakes."
+      ],
+      "links": [
+        { "label": "Inburgering exams orientation (Culture)", "href": "/netherlands/culture/inburgering-exams/" },
+        { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/" },
+        { "label": "Dutch citizenship guide", "href": "/netherlands/citizenship/dutch-citizenship/" }
+      ]
+    },
+    {
+      "id": "who-needs-inburgering",
+      "heading": "Who may need inburgering",
+      "body": [
+        "Whether you must integrate depends on your residence basis, age, arrival date, and exemptions (for example certain EU routes, diplomats, or recognised equivalents). Highly skilled migrants are not automatically exempt — check your IND decision letter and the integration requirement checker."
+      ],
+      "bullets": [
+        "Family reunification routes often trigger integration duty sooner than some work routes.",
+        "Some newcomers must pass exams within a legal deadline; missing deadlines can affect permit renewals or fines.",
+        "Voluntary integration may still help citizenship or permanent residence even when not legally mandatory.",
+        "Children and minors follow different rules — verify age thresholds on official pages."
+      ],
+      "callout": {
+        "type": "info",
+        "title": "Verify obligation first",
+        "text": "Before buying courses or booking exams, confirm whether you are legally required to integrate and by which date.",
+        "href": "https://ind.nl/en/integration",
+        "linkLabel": "IND — integration"
+      },
+      "links": [
+        { "label": "Integration requirement checker", "href": "/netherlands/integration/tools/integration-requirement-checker/" },
+        { "label": "Partner & family visa guide", "href": "/netherlands/visa/partner-family-visa/" }
+      ]
+    },
+    {
+      "id": "exam-components",
+      "heading": "Exam components (orientation)",
+      "table": {
+        "headers": ["Component", "What it tests", "Planning note"],
+        "rows": [
+          ["Dutch language (A2 level in many routes)", "Reading, writing, speaking, listening", "Allow months of study if starting from zero."],
+          ["KNM (Knowledge of Dutch Society)", "Civic knowledge", "Practice with official-style materials; our KNM quiz is for orientation only."],
+          ["ONA (Orientation on the Dutch Labour Market)", "Labour market participation", "Portfolio or exam depending on route and timing."]
+        ]
+      },
+      "links": [
+        { "label": "DUO — inburgering exams", "href": "https://www.inburgeren.nl/en" },
+        { "label": "KNM knowledge quiz (orientation)", "href": "/netherlands/integration/tools/knm-knowledge-quiz/" },
+        { "label": "Culture — inburgering exams page", "href": "/netherlands/culture/inburgering-exams/" }
+      ]
+    },
+    {
+      "id": "planning-timeline",
+      "heading": "Planning timeline",
+      "bullets": [
+        "Year 1: confirm legal obligation and deadline; start language baseline; save IND letters.",
+        "Year 2–3: structured classes or self-study; book KNM/ONA when language is stable.",
+        "Year 4–5: ensure certificates match PR or citizenship application requirements.",
+        "Before any application: cross-check exam validity and whether newer civic integration rules apply to your cohort."
+      ],
+      "links": [
+        { "label": "Learning Dutch (Culture)", "href": "/netherlands/culture/learning-dutch/" },
+        { "label": "Inburgering timeline planner", "href": "/netherlands/integration/tools/inburgering-timeline-planner/" },
+        { "label": "Exam readiness checker", "href": "/netherlands/integration/tools/inburgering-exam-readiness-checker/" }
+      ]
+    },
+    {
+      "id": "official-roles",
+      "heading": "IND, DUO, and gemeente",
+      "body": [
+        "The IND sets whether integration is part of your residence conditions. DUO (via inburgeren.nl) runs exams and registration. Your gemeente may offer courses, referrals, or social support — availability varies widely by city.",
+        "Keep a folder with IND decision letters, course enrolments, exam results, and any gemeente correspondence. That file is invaluable when you later apply for permanent residence or naturalisation."
+      ],
+      "table": {
+        "headers": ["Organisation", "Role", "Where to start"],
+        "rows": [
+          ["IND", "Legal integration obligation and permit conditions", "ind.nl/en/integration"],
+          ["DUO / inburgeren.nl", "Exam registration, results, official study materials", "inburgeren.nl"],
+          ["Gemeente", "Local courses, referrals, sometimes debt/fine questions", "Your municipality website"]
+        ]
+      }
+    },
+    {
+      "id": "citizenship-and-pr",
+      "heading": "Links to permanent residence and citizenship",
+      "body": [
+        "Integration certificates often reappear when you apply for permanent residence or naturalisation, even if your original work permit did not emphasise inburgering at arrival. Plan integration as part of your long-term timeline, not only your first permit.",
+        "Permanent residence stabilises stay rights; citizenship is a separate step with additional nationality rules including possible renunciation. Read both guides when you are mapping years three to five."
+      ],
+      "links": [
+        { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/" },
+        { "label": "Dutch citizenship guide", "href": "/netherlands/citizenship/dutch-citizenship/" },
+        { "label": "Citizenship timeline calculator", "href": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/" }
+      ]
+    },
+    {
+      "id": "tools",
+      "heading": "Tools",
+      "body": ["Planners and quizzes for orientation — they do not replace IND or DUO decisions about your legal duty."],
+      "links": [
+        { "label": "Inburgering timeline planner", "href": "/netherlands/integration/tools/inburgering-timeline-planner/" },
+        { "label": "Exam readiness checker", "href": "/netherlands/integration/tools/inburgering-exam-readiness-checker/" },
+        { "label": "KNM knowledge quiz", "href": "/netherlands/integration/tools/knm-knowledge-quiz/" },
+        { "label": "Integration requirement checker", "href": "/netherlands/integration/tools/integration-requirement-checker/" },
+        { "label": "Integration tools hub", "href": "/netherlands/integration/tools/" }
+      ]
+    },
+    {
+      "id": "official-sources",
+      "heading": "Official sources",
+      "links": [
+        { "label": "IND — integration", "href": "https://ind.nl/en/integration" },
+        { "label": "DUO — inburgeren.nl (English)", "href": "https://www.inburgeren.nl/en" },
+        { "label": "Government.nl — civic integration", "href": "https://www.government.nl/topics/new-in-the-netherlands/civic-integration" },
+        { "label": "IND — permanent residence", "href": "https://ind.nl/en/permanent-residence-permit" },
+        { "label": "IND — Dutch citizenship", "href": "https://ind.nl/en/dutch-citizenship" }
+      ]
+    },
+    {
+      "id": "related-guides",
+      "heading": "Related guides",
+      "links": [
+        { "label": "Residence permits", "href": "/netherlands/moving/residence-permits/" },
+        { "label": "Extensions and changes", "href": "/netherlands/moving/extensions-changes/" },
+        { "label": "Highly Skilled Migrant visa", "href": "/netherlands/visa/highly-skilled-migrant/" },
+        { "label": "Partner & family visa", "href": "/netherlands/visa/partner-family-visa/" },
+        { "label": "Culture & language hub", "href": "/netherlands/culture/" },
+        { "label": "Taxes when leaving the Netherlands", "href": "/netherlands/taxes/leaving-netherlands-tax/" }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do highly skilled migrants need inburgering?",
+      "a": "Not automatically. Some work routes have different integration timelines or exemptions, but policy changes and personal circumstances vary. Read your IND decision letter and use the integration requirement checker, then confirm on ind.nl if anything is unclear."
+    },
+    {
+      "q": "What level of Dutch do I need?",
+      "a": "Many inburgering routes target A2 language level for the core exams. Higher levels may help daily life and citizenship but are not always the legal minimum — verify for your obligation type on inburgeren.nl."
+    },
+    {
+      "q": "Where do I book exams?",
+      "a": "Exam registration and official information are handled through DUO's inburgeren.nl portal. Municipal courses are separate from exam booking."
+    },
+    {
+      "q": "Do I need inburgering for permanent residence?",
+      "a": "Often yes when you were subject to integration duty, but exemptions and route-specific rules apply. The permanent residence guide and IND integration pages describe how certificates fit PR applications."
+    },
+    {
+      "q": "What's the difference between this guide and Culture inburgering exams?",
+      "a": "This guide owns legal obligation, planning, and links to PR/citizenship. The Culture page orients you to exam framing and study habits — start here for requirements, use Culture for exam prep context."
+    },
+    {
+      "q": "Can fines apply if I miss integration deadlines?",
+      "a": "The IND can impose penalties in some cases when legal integration duty is not met. Confirm deadlines on your decision letter and seek qualified advice if you are already overdue."
+    }
+  ],
+  "internalLinks": {
+    "pillar": { "label": "Integration tools", "href": "/netherlands/integration/tools/" },
+    "related": [
+      { "label": "Permanent residence", "href": "/netherlands/citizenship/permanent-residence/" },
+      { "label": "Dutch citizenship", "href": "/netherlands/citizenship/dutch-citizenship/" },
+      { "label": "Inburgering exams (Culture)", "href": "/netherlands/culture/inburgering-exams/" }
+    ]
+  }
+}

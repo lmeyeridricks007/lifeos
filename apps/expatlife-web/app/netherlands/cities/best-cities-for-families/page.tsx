@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { FAMILIES_CITIES_HERO_SRC } from "@/src/components/cities/best-cities-for-families/BestCitiesForFamiliesHeroGraphic";
 import { BestCitiesForFamiliesView } from "@/src/components/cities/best-cities-for-families/BestCitiesForFamiliesView";
 import { bestCitiesForFamiliesPageModel } from "@/src/components/cities/best-cities-for-families/bestCitiesForFamiliesPageModel";
@@ -12,7 +13,7 @@ const { path, seo, publishDate, hero } = bestCitiesForFamiliesPageModel;
 const familiesHeroImageUrl = new URL(FAMILIES_CITIES_HERO_SRC, baseUrl).toString();
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },

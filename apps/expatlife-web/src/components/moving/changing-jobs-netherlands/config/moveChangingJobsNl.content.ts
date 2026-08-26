@@ -163,6 +163,12 @@ const progressionSteps = [
     description: "Who acts, by when, and how start date relates to processing — while you can still negotiate timing.",
   },
   {
+    id: "hsm-ind",
+    label: "If you lose your HSM job",
+    href: "#if-you-lose-your-hsm-job",
+    description: "3 vs 6 months from 22 May 2026 — IND page updated 18 Aug 2026.",
+  },
+  {
     id: "model",
     label: "Model net pay + rent + household",
     href: "#salary-tax-col",
@@ -188,6 +194,7 @@ const sectionNav = [
   { href: "#what-job-change-affects", label: "What a job change can affect" },
   { href: "#contracts-notice", label: "Contracts & notice" },
   { href: "#permits-status", label: "Permits & status" },
+  { href: "#if-you-lose-your-hsm-job", label: "If you lose your HSM job" },
   { href: "#salary-tax-col", label: "Salary, tax & cost of living" },
   { href: "#job-switch-providers", label: "Compare providers" },
   { href: "#practical-life", label: "Practical life impact" },

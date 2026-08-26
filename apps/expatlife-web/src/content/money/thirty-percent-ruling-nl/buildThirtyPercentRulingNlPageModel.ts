@@ -1,3 +1,5 @@
+import { THIRTY_PCT_RULES_2026 } from "@/src/lib/tools/thirty-percent-ruling/assumptions";
+import { MONEY_TAX_GUIDE_OFFICIAL_SOURCES } from "../tax-guide-for-expats/taxGuideOfficialSourceRegistry";
 import type { MovePillarExploreCard } from "@/src/components/moving/MovePillarExploreGrid";
 import type { MovePillarTocItem } from "@/src/components/moving/MovePillarMobileToc";
 import {
@@ -7,7 +9,6 @@ import {
 } from "@/src/components/money/tax-guide-for-expats/taxGuideRoutes";
 import { resolveTaxGuideTool } from "../tax-guide-for-expats/taxGuideToolRegistry";
 import { buildOfficialSourcesReferences, resolveRelatedTools } from "../tax-guide-for-expats/taxGuideContentResolve";
-import { MONEY_TAX_BASICS_CONTENT_TAX_YEAR } from "../money-tax-basics/moneyTaxBasicsTaxYear";
 import { moneyThirtyRulingOfficialSources as official } from "./moneyThirtyRulingOfficialSources";
 import {
   moneyThirtyRulingRecommendedServices,
@@ -131,13 +132,14 @@ export function buildThirtyPercentRulingNlPageModel() {
 
   return {
     path: THIRTY_PERCENT_RULING_NL_PATH,
-    publishDate: `${MONEY_TAX_BASICS_CONTENT_TAX_YEAR}-04-28`,
+    publishDate: "2026-08-26",
+    lastReviewed: "26 August 2026",
     affiliatePlacementId: moneyThirtyRulingRecommendedServices.affiliatePlacementId,
 
     seo: {
-      title: "30% Ruling in the Netherlands | ExpatCopilot",
+      title: "30% Ruling in the Netherlands",
       description:
-        "Plain-language 30% ruling guide for the Netherlands: eligibility vs payslip benefit, employer policy, tax-year changes, and links to calculators — editorial, not tax advice.",
+        "Plain-language 30% ruling guide for the Netherlands: 2026 Belastingdienst norms, eligibility vs payslip benefit, 2027 preview (not in force), and links to calculators — editorial, not tax advice.",
       keywords: [
         "30 ruling netherlands",
         "30 percent ruling netherlands expats",
@@ -168,6 +170,16 @@ export function buildThirtyPercentRulingNlPageModel() {
       ],
       primaryCta: { label: "Check eligibility", href: rulingCalc.href },
       secondaryCta: { label: "Estimate salary impact", href: salaryNet.href },
+      heroOfficialSources: [
+        {
+          label: "Belastingdienst — 30% facility",
+          href: "https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility",
+        },
+        {
+          label: "Business.gov.nl — expat scheme (30% ruling)",
+          href: "https://business.gov.nl/staff/employing-staff/the-expat-scheme-30-percent-ruling-in-the-netherlands/",
+        },
+      ],
       trustNotes: [
         "Not tax or legal advice. Orientation only — not contract review, immigration advice, or filing instructions.",
         "Rules and thresholds change by tax year. Always check official wording for the year that applies to you.",
@@ -198,11 +210,11 @@ export function buildThirtyPercentRulingNlPageModel() {
         },
         {
           title: "What it covers",
-          body: "Concept, eligibility factors (high level), payslip behaviour, package planning, links to tools, and official sources below the FAQ.",
+          body: "Concept, eligibility factors, dated 2026 Belastingdienst norms, 2027 legislative preview (not in force), partial foreign taxpayer context, payslip behaviour, and links to the calculator as the modeller.",
         },
         {
           title: "What it skips",
-          body: "Final eligibility decisions, live legal thresholds stated as guarantees, and binding payroll setup — those belong to Belastingdienst, your employer, or a qualified adviser.",
+          body: "Personalised eligibility decisions and binding payroll setup for your file — use Belastingdienst, your employer, or a qualified adviser. This guide publishes dated official norms for orientation; calculators model scenarios only.",
         },
       ],
       note: "Not automatic: eligibility and payroll must line up. Maximum vs actual: employers are not obliged to grant the full theoretical allowance. Estimates from tools are for planning, not guaranteed pay.",
@@ -276,6 +288,33 @@ export function buildThirtyPercentRulingNlPageModel() {
       cards: [...moneyThirtyRulingStartCards],
     },
 
+    infographics: {
+      howItWorks: {
+        src: "/images/infographics/netherlands-30-ruling-how-it-works-infographic.png",
+        alt: "Infographic showing how the Dutch 30% ruling or expat scheme works, from being recruited abroad to employer and employee application, tax authority decision and payroll treatment if approved.",
+        caption:
+          "Recruitment abroad, joint application, Belastingdienst review, then payroll treatment if approved.",
+      },
+      eligibility: {
+        src: "/images/infographics/netherlands-30-ruling-eligibility-checks-infographic.png",
+        alt: "Infographic checklist for Dutch 30% ruling eligibility, including recruitment from abroad, specific expertise, salary threshold, employer application, 150 kilometre residence history and possible exceptions.",
+        caption:
+          "Main eligibility themes — always verify current official thresholds for your tax year.",
+      },
+      taxYearChanges: {
+        src: "/images/infographics/netherlands-30-ruling-changes-assets-timeline.png",
+        alt: "Infographic timeline explaining recent 30% ruling changes, entry date relevance, transitional arrangements and foreign assets or Box 2 and Box 3 considerations.",
+        caption:
+          "2026 norms vs 2027 preview and foreign-asset context — timing and transitional rules matter.",
+      },
+      negotiation: {
+        src: "/images/infographics/netherlands-30-ruling-negotiation-infographic.png",
+        alt: "Infographic on negotiating a Dutch job offer with the 30% ruling in mind, comparing gross package, taxable base, net pay and employer policy.",
+        caption:
+          "Use when comparing offers — policy and payroll setup can differ from headline percentages.",
+      },
+    },
+
     howItWorks: {
       id: "how-it-works",
       eyebrow: "Mechanics",
@@ -322,7 +361,7 @@ export function buildThirtyPercentRulingNlPageModel() {
       title: "Eligibility factors to understand",
       subtitle: "Prompts, not a final decision — confirm with official rules for your tax year and employer.",
       intro:
-        "Fact- and year-specific reading map — no threshold numbers here (see calculator + Belastingdienst).",
+        "Fact- and year-specific reading map — official 2026 Belastingdienst norms below; use the calculator for your package shape.",
       clarityPair: [...moneyThirtyRulingEligibilityOverviewPair],
       factors: moneyThirtyRulingEligibilityFactors.map((f) => ({
         id: f.id,
@@ -355,6 +394,58 @@ export function buildThirtyPercentRulingNlPageModel() {
       title: "Salary, net pay, caps, and partial-year impact",
       subtitle: "Why one calculator output rarely tells the whole story.",
       lead: "The facility changes how pay splits between taxable wages and the allowance — caps and year rules limit how much fits your package.",
+      officialThresholds2026: {
+        taxYear: "2026",
+        effectiveFrom: "1 January 2026",
+        sourceLabel: MONEY_TAX_GUIDE_OFFICIAL_SOURCES.bd_30_percent_facility.label,
+        sourceHref: MONEY_TAX_GUIDE_OFFICIAL_SOURCES.bd_30_percent_facility.href,
+        secondarySources: [
+          {
+            label: MONEY_TAX_GUIDE_OFFICIAL_SOURCES.business_gov_expat_scheme.label,
+            href: MONEY_TAX_GUIDE_OFFICIAL_SOURCES.business_gov_expat_scheme.href,
+          },
+        ],
+        asOfNote:
+          "Dated Belastingdienst / expat scheme norms for tax year 2026 — aligned with the 30% ruling calculator configuration. Confirm category and indexation on official pages before applying to your contract.",
+        rows: [
+          {
+            label: "Minimum taxable salary — standard norm (30+)",
+            value: `More than €${THIRTY_PCT_RULES_2026.thresholdStandardAnnual.toLocaleString("en-NL")}/year`,
+          },
+          {
+            label: "Minimum taxable salary — under 30 with qualifying master's",
+            value: `More than €${THIRTY_PCT_RULES_2026.thresholdUnder30MastersAnnual.toLocaleString("en-NL")}/year`,
+          },
+          {
+            label: "Scientific researchers & specialist medical trainees",
+            value: "Separate Belastingdienst category — minimum salary norm often does not apply; confirm role and employer type on official pages",
+          },
+          {
+            label: "Salary cap for facility calculation",
+            value: `€${THIRTY_PCT_RULES_2026.salaryCapAnnual.toLocaleString("en-NL")}/year`,
+          },
+          {
+            label: "Maximum untaxed allowance at cap (full year at 30%)",
+            value: `€${THIRTY_PCT_RULES_2026.maxUntaxedFullYearAtCap.toLocaleString("en-NL")}/year (30% of €${THIRTY_PCT_RULES_2026.salaryCapAnnual.toLocaleString("en-NL")})`,
+          },
+          {
+            label: "Statutory facility percentage (2026 payroll)",
+            value: `${THIRTY_PCT_RULES_2026.facilityPercentThrough2026 * 100}%`,
+          },
+        ],
+      },
+      rateFrom2027Preview: {
+        effectiveFrom: "1 January 2027",
+        rate: `${THIRTY_PCT_RULES_2026.facilityPercentFrom2027Preview * 100}%`,
+        title: "27% rate from 2027 — not yet in force",
+        body:
+          "The government has stated that the expat scheme allowance will reduce from 30% to 27% from 1 January 2027 for most people who entered the scheme after 2023. This does not apply to 2026 payroll — treat 30% as the current statutory rate until that date. Use the 30% ruling calculator’s 2027 preview toggle for planning comparisons only.",
+      },
+      partialForeignTaxpayer: {
+        title: "Partial foreign taxpayer status (Box 2 / Box 3)",
+        body:
+          "Partial foreign taxpayer treatment linked to the expat scheme generally ended for 2025 income tax returns onward. Transitional arrangements may apply only through 2026 for people who used the option before 2024 — verify on Belastingdienst whether any transition affects your filing.",
+      },
       bullets: [
         "Partial-year starts affect proration and how you annualise cash flow vs reporting.",
         "Use the 30% calculator for facility-shaped estimates and salary net for take-home — then match payslip lines when live.",
@@ -373,9 +464,9 @@ export function buildThirtyPercentRulingNlPageModel() {
       title: "Rule changes by tax year",
       subtitle: "Parameters move — official pages and tool tax-year selectors beat forums.",
       paragraphs: [
-        "Tax-year parameters used in calculators are maintained in the tool’s own configuration — always pick the tax year that matches your planning question.",
-        "Phase-outs, caps, and salary norms can be updated for future years — Belastingdienst and official announcements remain the source of truth.",
-        "When comparing notes with colleagues, check you mean the same tax year and similar contract structures before assuming identical outcomes.",
+        "For tax year 2026 the statutory facility rate remains 30% on eligible compensation within caps — the dated norms table above reflects Belastingdienst figures effective from 1 January 2026.",
+        "From 1 January 2027 the government has announced a reduction to 27% for most post-2023 entrants — that rate is not yet in force. Use calculator preview modes for what-if planning, not as current payroll law.",
+        "Partial foreign taxpayer status for Box 2 and Box 3 generally ended for 2025 returns; transitional rules may still touch pre-2024 users through 2026 — read Belastingdienst for your entry year.",
       ],
     },
 

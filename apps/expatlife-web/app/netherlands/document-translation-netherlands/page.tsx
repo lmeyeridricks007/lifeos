@@ -85,7 +85,7 @@ export default function DocumentTranslationPage() {
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Moving", item: new URL("/netherlands/moving/", baseUrl).toString() },
+    { name: "Moving", item: new URL("/netherlands/moving-to-the-netherlands/", baseUrl).toString() },
     {
       name: mergedData.breadcrumbLabel ?? mergedData.title,
       item: new URL(mergedData.path, baseUrl).toString(),

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { buildSocialMetadata } from "@/lib/seo/metadata";
+import { pageMetadataTitle, buildSocialMetadata } from "@/lib/seo/metadata";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { StatusChangesView } from "@/src/components/moving/status-changes/StatusChangesView";
 import { PAGE_HERO_SUBTITLE, STATUS_CHANGES_CANONICAL } from "@/src/components/moving/status-changes/statusChangesContent";
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const META_TITLE = "Status Changes in the Netherlands | ExpatCopilot";
+const META_TITLE = "Status Changes in the Netherlands";
 
 export const metadata: Metadata = {
   ...buildSocialMetadata({

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { MoveHero } from "@/components/page/move-shell";
 import { CardLink } from "@/components/ui/card-link";
@@ -28,12 +29,12 @@ const CANONICAL = TRANSFER_COST_CALCULATOR_PATH;
 const BASE = "/netherlands";
 const HERO_IMAGE = "/images/heroes/netherlands-transfer-cost-calculator-hero.webp";
 
-const META_TITLE = "International Transfer Cost Calculator | ExpatCopilot";
+const META_TITLE = "International Transfer Cost Calculator";
 const META_DESCRIPTION =
   "Rough guide to sending money from the Netherlands: send fees, exchange-rate cost (FX), and how much may reach the other person. Uses simple ranges for planning — not live bank prices.";
 
 export const metadata: Metadata = {
-  title: META_TITLE,
+  title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
   alternates: { canonical: CANONICAL },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: "website",
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     url: CANONICAL,
     images: [
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     images: [HERO_IMAGE],
   },
@@ -206,7 +207,7 @@ export default function TransferCostCalculatorPage() {
     offers: { price: "0", priceCurrency: "EUR" },
   });
   const webPageJsonLd = buildToolPageSchema({
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     canonicalPath: CANONICAL,
   });

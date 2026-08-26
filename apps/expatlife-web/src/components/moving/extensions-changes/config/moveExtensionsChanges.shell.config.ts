@@ -215,6 +215,13 @@ export const moveExtensionsChangesShell = {
         ctaLabel: "Open guide",
       },
       {
+        id: "permanent-residence",
+        title: "Permanent residence in the Netherlands",
+        description: "When renewals give way to five-year planning — PR routes, absences, and integration.",
+        href: "/netherlands/citizenship/permanent-residence/",
+        ctaLabel: "Open guide",
+      },
+      {
         id: "first-90",
         title: "First 90 days planner",
         description: "Still useful when you’re re-sequencing admin after a change.",
@@ -317,6 +324,9 @@ export const moveExtensionsChangesShell = {
       { href: "/netherlands/housing/tools/rent-affordability-calculator/", label: "Rent affordability", description: "Housing when income or contract shifts.", meta: "Housing" },
       { href: "/netherlands/living/healthcare-basics/", label: "Healthcare basics", description: "Insurance and care when circumstances move.", meta: "Living" },
       { href: "/netherlands/living/survival-guide/", label: "Netherlands Survival Guide", description: "Daily rhythm while admin catches up.", meta: "Living" },
+      { href: "/netherlands/citizenship/permanent-residence/", label: "Permanent residence guide", description: "Five-year routes, absences, and IND next steps toward long-term stay.", meta: "Citizenship" },
+      { href: "/netherlands/integration/inburgering/", label: "Inburgering guide", description: "Integration duty, exams, and planning before PR or citizenship.", meta: "Integration" },
+      { href: "/netherlands/citizenship/dutch-citizenship/", label: "Dutch citizenship guide", description: "Naturalisation, dual nationality, and ceremony orientation.", meta: "Citizenship" },
     ],
   },
 };

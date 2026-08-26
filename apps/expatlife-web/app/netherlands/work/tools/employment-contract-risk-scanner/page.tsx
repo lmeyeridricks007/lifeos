@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
@@ -44,7 +45,7 @@ const ContractScannerClient = dynamic(
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const META_TITLE = "Dutch Employment Contract Risk Scanner | ExpatCopilot";
+const META_TITLE = "Dutch Employment Contract Risk Scanner";
 const META_DESCRIPTION =
   "Paste contract text or upload a text-based PDF to detect common risk areas in Dutch employment contracts, including notice, probation, non-compete, relocation repayment, and 30% ruling wording.";
 /** Dedicated hero (generated asset); 1376×768 PNG under public/images/heroes/ */
@@ -53,7 +54,7 @@ const HERO_IMAGE_WIDTH = 1376;
 const HERO_IMAGE_HEIGHT = 768;
 
 export const metadata: Metadata = {
-  title: META_TITLE,
+  title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
   alternates: { canonical: CONTRACT_SCANNER_CANONICAL },
   keywords: [
@@ -65,7 +66,7 @@ export const metadata: Metadata = {
     "what to check before signing Dutch contract",
   ],
   openGraph: {
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     url: CONTRACT_SCANNER_CANONICAL,
     images: [
@@ -79,7 +80,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     images: [HERO_IMAGE],
   },
@@ -115,7 +116,7 @@ export default function EmploymentContractRiskScannerPage() {
     offers: { price: "0", priceCurrency: "EUR" },
   });
   const webPageJsonLd = buildToolPageSchema({
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     canonicalPath: CONTRACT_SCANNER_CANONICAL,
   });

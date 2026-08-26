@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
@@ -27,12 +28,12 @@ const canonical = "/netherlands/housing/tools/rent-affordability-calculator/";
 const BASE = "/netherlands";
 const HERO_IMAGE = "/images/tools/netherlands-rent-affordability-calculator-hero.png";
 
-const META_TITLE = "Netherlands Rent Affordability Calculator & Planning Guide | ExpatCopilot";
+const META_TITLE = "Netherlands Rent Affordability Calculator & Planning Guide";
 const META_DESCRIPTION =
   "Free Dutch rent affordability calculator plus a practical guide: affordable rent norms, landlord screening vs net budgeting, Amsterdam vs Rotterdam vs The Hague vs Utrecht, move-in cash, 30% ruling planning, and first-month rental costs. Indicative planning only — not legal or financial advice.";
 
 export const metadata: Metadata = {
-  title: META_TITLE,
+  title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   alternates: { canonical },
@@ -52,7 +53,7 @@ export const metadata: Metadata = {
     "The Hague rent affordability",
   ],
   openGraph: {
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     url: canonical,
     images: [
@@ -66,7 +67,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     images: [HERO_IMAGE],
   },
@@ -262,7 +263,7 @@ export default function RentAffordabilityCalculatorPage() {
     offers: { price: "0", priceCurrency: "EUR" },
   });
   const webPageJsonLd = buildToolPageSchema({
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     canonicalPath: canonical,
   });

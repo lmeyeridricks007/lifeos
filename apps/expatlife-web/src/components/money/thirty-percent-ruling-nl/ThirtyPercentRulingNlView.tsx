@@ -62,6 +62,36 @@ const INFO_CHIP =
   "inline-flex rounded-full border border-copilot-primary/15 bg-copilot-bg-soft/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.12em] text-copilot-primary";
 const HOW_IT_WORKS_ICONS = [BriefcaseBusiness, FileCheck2, BadgePercent, ReceiptText, Calculator, Clock3] as const;
 
+function RulingSectionInfographic({
+  graphic,
+  className,
+}: {
+  graphic: { src: string; alt: string; caption: string };
+  className?: string;
+}) {
+  return (
+    <figure
+      className={cn(
+        "overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-expatos-lg ring-1 ring-slate-900/[0.04]",
+        movingNlCardMicroLiftClass,
+        className
+      )}
+    >
+      <Image
+        src={graphic.src}
+        alt={graphic.alt}
+        width={1600}
+        height={1000}
+        sizes="(min-width: 1024px) 980px, 100vw"
+        className="h-auto w-full object-cover"
+      />
+      <figcaption className="border-t border-slate-100 bg-slate-50/90 px-5 py-4 text-sm leading-relaxed text-foreground-muted">
+        {graphic.caption}
+      </figcaption>
+    </figure>
+  );
+}
+
 export function ThirtyPercentRulingNlView() {
   const baseUrl = getSiteOrigin();
   const shareUrl = new URL(CANONICAL, baseUrl).toString();
@@ -152,7 +182,28 @@ export function ThirtyPercentRulingNlView() {
                           {chip}
                         </span>
                       ))}
+                      {"lastReviewed" in meta && meta.lastReviewed ? (
+                        <span className={INFO_CHIP}>Last reviewed: {meta.lastReviewed}</span>
+                      ) : null}
                     </div>
+                    {"heroOfficialSources" in meta.hero && meta.hero.heroOfficialSources?.length ? (
+                      <p className="mb-3 text-sm text-foreground-muted">
+                        Official sources:{" "}
+                        {meta.hero.heroOfficialSources.map((source, index) => (
+                          <span key={source.href}>
+                            {index > 0 ? " · " : null}
+                            <a
+                              href={source.href}
+                              className="font-semibold text-link hover:text-link-hover"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              {source.label}
+                            </a>
+                          </span>
+                        ))}
+                      </p>
+                    ) : null}
                     <ul className="max-w-2xl space-y-2 text-sm leading-relaxed text-foreground-muted sm:space-y-2.5 sm:text-[0.9375rem]" role="list">
                       {meta.hero.bullets.map((bullet) => (
                         <li key={bullet} className="flex gap-2">
@@ -462,19 +513,7 @@ export function ThirtyPercentRulingNlView() {
                 </aside>
               </div>
 
-              <figure className="mt-7 overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-expatos-lg ring-1 ring-slate-900/[0.04]">
-                <Image
-                  src="/images/infographics/netherlands-30-ruling-how-it-works-infographic.png"
-                  alt="Infographic explaining the Dutch 30% ruling flow from recruitment abroad to employer and employee application, Belastingdienst decision and payroll treatment if approved."
-                  width={1600}
-                  height={1000}
-                  sizes="(min-width: 1024px) 980px, 100vw"
-                  className="h-auto w-full object-cover"
-                />
-                <figcaption className="border-t border-slate-100 bg-slate-50/90 px-5 py-4 text-sm leading-relaxed text-foreground-muted">
-                  This visual is the practical sequence users should remember: recruited from abroad, employer participation, tax authority decision, then payroll treatment if approved.
-                </figcaption>
-              </figure>
+              <RulingSectionInfographic graphic={meta.infographics.howItWorks} className="mt-7" />
 
               <div className="mt-6 rounded-2xl border border-slate-200/90 bg-white/95 p-4 shadow-sm ring-1 ring-slate-900/[0.04] sm:p-5">
                 <div className="flex flex-wrap items-center justify-between gap-3">
@@ -535,6 +574,7 @@ export function ThirtyPercentRulingNlView() {
                 text={meta.eligibility.intro}
                 className="max-w-3xl text-sm leading-relaxed text-foreground-muted [&_strong]:font-semibold [&_strong]:text-foreground"
               />
+              <RulingSectionInfographic graphic={meta.infographics.eligibility} className="mt-5" />
               <div className="mt-4 grid grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-3">
                 {meta.eligibility.clarityPair.map((col) => (
                   <div
@@ -657,6 +697,77 @@ export function ThirtyPercentRulingNlView() {
                   </div>
                 </aside>
               </div>
+              {meta.salaryNetCaps.officialThresholds2026 ? (
+                <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200/90 bg-white/95 shadow-sm ring-1 ring-slate-900/[0.04]">
+                  <div className={cn("h-1 w-full", movingNlSignatureGradientClass)} aria-hidden />
+                  <div className="p-5 sm:p-6">
+                    <div className="flex flex-wrap items-baseline justify-between gap-2">
+                      <h3 className="text-lg font-bold text-foreground">
+                        Official {meta.salaryNetCaps.officialThresholds2026.taxYear} norms (from{" "}
+                        {meta.salaryNetCaps.officialThresholds2026.effectiveFrom})
+                      </h3>
+                      <div className="flex flex-wrap gap-x-4 gap-y-1">
+                        <a
+                          href={meta.salaryNetCaps.officialThresholds2026.sourceHref}
+                          className="text-sm font-semibold text-link hover:text-link-hover"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {meta.salaryNetCaps.officialThresholds2026.sourceLabel}
+                        </a>
+                        {meta.salaryNetCaps.officialThresholds2026.secondarySources?.map((source) => (
+                          <a
+                            key={source.href}
+                            href={source.href}
+                            className="text-sm font-semibold text-link hover:text-link-hover"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {source.label}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                    <p className="mt-2 text-sm text-foreground-muted">
+                      {meta.salaryNetCaps.officialThresholds2026.asOfNote}
+                    </p>
+                    <dl className="mt-4 divide-y divide-slate-200/90">
+                      {meta.salaryNetCaps.officialThresholds2026.rows.map((row) => (
+                        <div key={row.label} className="flex flex-col gap-1 py-3 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+                          <dt className="text-sm font-medium text-foreground">{row.label}</dt>
+                          <dd className="text-sm font-semibold tabular-nums text-brand-strong sm:text-right">{row.value}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </div>
+                </div>
+              ) : null}
+              {meta.salaryNetCaps.rateFrom2027Preview ? (
+                <div className="mt-4 overflow-hidden rounded-2xl border border-amber-200/90 bg-amber-50/80 shadow-sm ring-1 ring-amber-900/[0.05]">
+                  <div className="border-b border-amber-200/80 bg-amber-100/60 px-5 py-3">
+                    <p className="text-xs font-bold uppercase tracking-[0.12em] text-amber-950/90">
+                      Legislative preview · effective {meta.salaryNetCaps.rateFrom2027Preview.effectiveFrom}
+                    </p>
+                    <h3 className="mt-1 text-lg font-bold text-foreground">{meta.salaryNetCaps.rateFrom2027Preview.title}</h3>
+                  </div>
+                  <div className="px-5 py-4">
+                    <p className="text-sm leading-relaxed text-foreground-muted">
+                      {meta.salaryNetCaps.rateFrom2027Preview.body}
+                    </p>
+                    <p className="mt-3 text-sm font-semibold text-amber-950/90">
+                      Preview rate: {meta.salaryNetCaps.rateFrom2027Preview.rate} — not current law for 2026 payroll.
+                    </p>
+                  </div>
+                </div>
+              ) : null}
+              {meta.salaryNetCaps.partialForeignTaxpayer ? (
+                <div className="mt-4 rounded-2xl border border-slate-200/90 bg-white/95 p-5 shadow-sm ring-1 ring-slate-900/[0.04]">
+                  <h3 className="text-base font-bold text-foreground">{meta.salaryNetCaps.partialForeignTaxpayer.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground-muted">
+                    {meta.salaryNetCaps.partialForeignTaxpayer.body}
+                  </p>
+                </div>
+              ) : null}
               <div className="mt-6 grid gap-3 sm:grid-cols-2">
                 {meta.salaryNetCaps.bullets.map((b, index) => {
                   const Icon = HOW_IT_WORKS_ICONS[(index + 3) % HOW_IT_WORKS_ICONS.length];
@@ -673,6 +784,7 @@ export function ThirtyPercentRulingNlView() {
                   );
                 })}
               </div>
+              <RulingSectionInfographic graphic={meta.infographics.negotiation} className="mt-6" />
               <div className="mt-5 flex flex-wrap gap-2">
                 {meta.salaryNetCaps.ctas.map((c) => (
                   <Link key={c.href} href={c.href} className={cn(primaryCtaClass, "min-h-[42px] px-4 py-2")}>
@@ -728,6 +840,7 @@ export function ThirtyPercentRulingNlView() {
                   );
                 })}
               </div>
+              <RulingSectionInfographic graphic={meta.infographics.taxYearChanges} className="mt-6" />
             </section>
 
             <section id={meta.misunderstandings.id} className={cn(SECTION_SCROLL_MARGIN, "space-y-2 sm:space-y-2.5")}>

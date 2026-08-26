@@ -17,8 +17,9 @@ import {
   ReceiptText,
   ShieldCheck,
   Users,
+  type LucideIcon,
 } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import { THIRTY_PCT_RULES_2026 } from "@/src/lib/tools/thirty-percent-ruling/assumptions";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { Container } from "@/components/ui/container";
 import { cn } from "@/lib/cn";
@@ -391,17 +392,22 @@ export function ThirtyPercentRulingView() {
               <div className="grid gap-7 lg:grid-cols-[minmax(0,0.9fr)_minmax(320px,0.7fr)] lg:items-start">
                 <SectionIntro title="Salary Thresholds and Expertise Requirements">
                   <p>Eligibility usually depends on taxable salary levels, expertise criteria, and age or education exceptions in some cases.</p>
-                  <p>Salary thresholds change, so this page does not hardcode values. Scientific researchers and specialist medical training exceptions may apply according to official guidance.</p>
+                  <p>
+                    For tax year 2026, Belastingdienst publishes indicative norms including €
+                    {THIRTY_PCT_RULES_2026.thresholdStandardAnnual.toLocaleString("en-NL")}/year (standard) and €
+                    {THIRTY_PCT_RULES_2026.thresholdUnder30MastersAnnual.toLocaleString("en-NL")}/year (under 30 with qualifying master&apos;s), with a salary cap of €
+                    {THIRTY_PCT_RULES_2026.salaryCapAnnual.toLocaleString("en-NL")}/year for the facility calculation. Scientific researchers and specialist medical training exceptions may apply — verify role category on official guidance.
+                  </p>
                 </SectionIntro>
                 <ProcessPanel
                   eyebrow="Salary check"
-                  title="Do not rely on old numbers"
+                  title="2026 Belastingdienst reference norms"
                   rows={[
-                    { label: "Thresholds change", body: "Salary requirements may be indexed or adjusted.", Icon: Calculator },
-                    { label: "Expertise matters", body: "The facility is tied to scarce specific expertise.", Icon: FileCheck2 },
-                    { label: "Exceptions exist", body: "Some researchers and specialist medical trainees may follow special rules.", Icon: Landmark },
+                    { label: "Standard norm (30+)", body: `€${THIRTY_PCT_RULES_2026.thresholdStandardAnnual.toLocaleString("en-NL")}/year taxable salary`, Icon: Calculator },
+                    { label: "Under-30 master's norm", body: `€${THIRTY_PCT_RULES_2026.thresholdUnder30MastersAnnual.toLocaleString("en-NL")}/year`, Icon: FileCheck2 },
+                    { label: "Facility cap", body: `€${THIRTY_PCT_RULES_2026.salaryCapAnnual.toLocaleString("en-NL")}/year (max untaxed €${THIRTY_PCT_RULES_2026.maxUntaxedFullYearAtCap.toLocaleString("en-NL")} at 30%)`, Icon: Landmark },
                   ]}
-                  note="Always verify the current official threshold for the relevant tax year."
+                  note="Always verify the current official threshold for your tax year and role category on Belastingdienst."
                 />
               </div>
             </section>
@@ -409,8 +415,10 @@ export function ThirtyPercentRulingView() {
             <section id="changes" className={sectionClass}>
               <div className="grid gap-7 lg:grid-cols-[minmax(0,0.9fr)_minmax(320px,0.7fr)] lg:items-start">
                 <SectionIntro title="Recent Changes and Why Expats Should Stay Updated">
-                  <p>The Dutch government has changed the structure of the expat scheme multiple times in recent years. Discussions have included scaling, percentage changes, transitional arrangements, and partial foreign tax liability.</p>
-                  <p>Rules can depend on when someone entered the scheme, whether transitional arrangements apply, and future legislation. This guide focuses on concepts, not predictions.</p>
+                  <p>The Dutch government has changed the structure of the expat scheme multiple times in recent years. For 2026 payroll the statutory rate remains 30% within published norms and caps.</p>
+                  <p>
+                    From 1 January 2027 the government has stated a reduction to 27% for most people who entered the scheme after 2023 — that rate is <strong>not yet in force</strong>. Partial foreign taxpayer status for Box 2 and Box 3 generally ended for 2025 returns, with transitional treatment only through 2026 for pre-2024 users.
+                  </p>
                 </SectionIntro>
                 <ProcessPanel
                   eyebrow="Change risk"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { CheapestCitiesForExpatsView } from "@/src/components/cities/cheapest-cities-for-expats/CheapestCitiesForExpatsView";
 import { cheapestCitiesForExpatsPageModel } from "@/src/components/cities/cheapest-cities-for-expats/cheapestCitiesForExpatsPageModel";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -11,7 +12,7 @@ const { path, seo, publishDate, hero } = cheapestCitiesForExpatsPageModel;
 const ogHeroPath = "/images/heroes/netherlands-cheapest-cities-expats-hero.webp" as const;
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },

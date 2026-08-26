@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { TaxAdvisorsNlView } from "@/src/components/money/tax-advisors-nl/TaxAdvisorsNlView";
 import { taxAdvisorsNlPageModel } from "@/src/components/money/tax-advisors-nl/taxAdvisorsNlPageModel";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -10,7 +11,7 @@ const { path, seo, publishDate, hero, ogImage } = taxAdvisorsNlPageModel;
 const ogImageUrl = new URL(ogImage.src, baseUrl).toString();
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   robots: { index: true, follow: true },

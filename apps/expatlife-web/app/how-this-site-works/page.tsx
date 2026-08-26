@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { howThisSiteWorksPage } from "@/src/data/trust/how-this-site-works";
@@ -16,7 +17,7 @@ const relatedLinks = [
 ];
 
 export const metadata: Metadata = {
-  title: howThisSiteWorksPage.seo.title,
+  title: pageMetadataTitle(howThisSiteWorksPage.seo.title),
   description: howThisSiteWorksPage.seo.description,
   alternates: { canonical: "/how-this-site-works/" },
 };

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -64,7 +65,7 @@ function providerPartnerSlug(name: string): string {
 }
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
   alternates: { canonical: path },

@@ -7,6 +7,28 @@
  */
 
 import type { VisaPageData } from "./types";
+import {
+  HSM_IND_APPLICATION_FEE,
+  HSM_IND_PAGE_LAST_UPDATE,
+  HSM_IND_RESIDENCE_PERMIT_URL,
+  HSM_JOB_SEARCH_RULE_EFFECTIVE_DATE,
+  hsmJobSearchAfterPeriodEnds,
+  hsmJobSearchDisclaimer,
+  hsmJobSearchNewEmployerNote,
+  hsmJobSearchScenarios,
+  hsmJobSearchWindowKeyFact,
+  hsmJobSearchWindowSummary,
+  hsmJobLossSectionHeading,
+} from "./hsmJobSearchWindow";
+import {
+  HSM_PROPOSED_REFORM_BUSINESS_GOV_URL,
+  HSM_PROPOSED_REFORM_GOVERNMENT_NL_URL,
+  HSM_PROPOSED_REFORM_POSSIBLE_EFFECTIVE_DATE,
+  hsmProposedReformsWatchBullets,
+  hsmProposedReformsWatchDisclaimer,
+  hsmProposedReformsWatchSummary,
+  hsmProposedReformsWatchTitle,
+} from "./hsmProposedReforms2027";
 
 const BASE = "/netherlands";
 const TOOLS = `${BASE}/moving/tools`;
@@ -21,7 +43,7 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
   heroImageAlt:
     "A person at a desk by a Dutch canal window, meticulously reviewing highly skilled migrant visa documents, with a laptop showing a global migration route and a 'Work Visa' folder, symbolizing relocation planning to the Netherlands.",
   summary:
-    "The Highly Skilled Migrant permit (kennismigrant) is a Dutch residence permit for employees in qualifying skilled roles. Only an employer recognized by the IND can apply. It is one of the most common non-EU work routes for expats moving to the Netherlands.",
+    "The Highly Skilled Migrant permit (kennismigrant) is a Dutch residence permit for employees in qualifying skilled roles. Only an employer recognized by the IND can apply. It is one of the most common non-EU work routes for expats moving to the Netherlands. Salary thresholds (€5,942 / €4,357 / €3,122), EU Blue Card parity at €5,942 (reduced €4,754), and the €423 IND fee reflect IND figures maintained on this page for 2026 planning.",
 
   seo: {
     title: "Highly Skilled Migrant Visa in the Netherlands | Salary, Sponsor, Costs",
@@ -34,6 +56,36 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
     sponsorRequirement: "Recognized IND sponsor",
     indFee: "€423",
     commonUsers: "Tech, engineering, finance, consulting, research",
+    jobSearchWindow: hsmJobSearchWindowKeyFact,
+  },
+
+  proposedReformsWatch: {
+    title: hsmProposedReformsWatchTitle,
+    possibleEffectiveDate: HSM_PROPOSED_REFORM_POSSIBLE_EFFECTIVE_DATE,
+    businessGovUrl: HSM_PROPOSED_REFORM_BUSINESS_GOV_URL,
+    governmentNlUrl: HSM_PROPOSED_REFORM_GOVERNMENT_NL_URL,
+    summary: hsmProposedReformsWatchSummary,
+    bullets: [...hsmProposedReformsWatchBullets],
+    disclaimer: hsmProposedReformsWatchDisclaimer,
+  },
+
+  jobLossGuide: {
+    title: hsmJobLossSectionHeading,
+    effectiveDate: HSM_JOB_SEARCH_RULE_EFFECTIVE_DATE,
+    indLastUpdate: HSM_IND_PAGE_LAST_UPDATE,
+    indUrl: HSM_IND_RESIDENCE_PERMIT_URL,
+    summary: hsmJobSearchWindowSummary,
+    scenarios: hsmJobSearchScenarios.map(({ situation, maxSearchPeriod, notes }) => ({
+      situation,
+      maxSearchPeriod,
+      notes,
+    })),
+    clockStarts: "The job-search period begins on the day your employment contract ends.",
+    permitValidityCap:
+      "The search period cannot be longer than your permit’s remaining validity — if your permit expires earlier, your window is shorter.",
+    afterPeriodEnds: hsmJobSearchAfterPeriodEnds,
+    newEmployerNote: hsmJobSearchNewEmployerNote,
+    disclaimer: hsmJobSearchDisclaimer,
   },
 
   eligibility: [
@@ -126,6 +178,14 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
 
   faq: [
     {
+      q: "What happens if I lose my job on a highly skilled migrant permit?",
+      a: `If you lose your job while your permit is still valid, the IND allows a job-search period to find a new recognized sponsor — usually up to 3 months. If your contract ended on or after ${HSM_JOB_SEARCH_RULE_EFFECTIVE_DATE} and you have held the permit for two years or more (or you are a victim of labour exploitation), the maximum search period is 6 months. Job loss before ${HSM_JOB_SEARCH_RULE_EFFECTIVE_DATE} stays on the 3-month rule even with 2+ years on the permit. The clock starts when your contract ends; the period cannot exceed your permit’s remaining validity. When the search period ends without a new sponsor registration, the IND may revoke the permit. Read the IND highly skilled migrant page (updated ${HSM_IND_PAGE_LAST_UPDATE}) and confirm dates with HR before your last day.`,
+    },
+    {
+      q: "How long can I stay on a highly skilled migrant permit, and can it lead to permanent residence?",
+      a: "HSM permits are temporary and tied to recognized-sponsor employment. IND may grant validity for the employment period up to a maximum stated on your decision letter — expat planning often references five years, but verify yours. Permanent residence is a separate IND application after qualifying lawful stay, with continuity, absence, income, and integration rules. Lawful years on compliant HSM status may count when requirements align, but HSM is not the same as permanent residence. See the long-term stay section on this page and our permanent residence and inburgering guides; confirm criteria on ind.nl/en/permanent-residence-permit.",
+    },
+    {
       q: "What is a highly skilled migrant visa in the Netherlands?",
       a: "The Highly Skilled Migrant (kennismigrant) permit is a Dutch residence permit for employees in qualifying skilled roles. Only an employer recognized by the IND can apply. It is one of the most common work routes for non-EU professionals moving to the Netherlands.",
     },
@@ -135,7 +195,11 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
     },
     {
       q: "What salary do I need for a highly skilled migrant permit?",
-      a: "The IND sets minimum salary thresholds (gross per month, without holiday pay). As of the current figures: age 30 and over €5,942; under 30 €4,357; reduced criterion €3,122 in certain cases. These amounts can change; check the IND required-amounts page for the latest figures.",
+      a: "The IND sets minimum salary thresholds (gross per month, without holiday pay). Current figures on this page: age 30 and over €5,942; under 30 €4,357; reduced criterion €3,122 in certain cases (same €5,942 standard floor as the EU Blue Card tier). Always verify on the IND required-amounts page before you sign — proposed 2027 tightening is not yet law.",
+    },
+    {
+      q: "Are Highly Skilled Migrant rules changing in 2027?",
+      a: "The government is preparing stricter HSM rules (higher salary floors — especially under 30 — and tougher recognized-sponsor requirements). business.gov.nl mentions a possible 1 January 2027 effective date, but nothing is final until parliament passes legislation. Until then, use the current IND thresholds in the salary table on this page and watch the WATCH callout for updates.",
     },
     {
       q: "Can I move to the Netherlands on this visa without a job offer?",
@@ -176,6 +240,9 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
     { label: "Documents needed to move", href: `${BASE}/documents-needed-to-move-netherlands/` },
     { label: "Cost of moving to the Netherlands", href: `${BASE}/moving-to-netherlands-cost/` },
     { label: "Visa documents for the Netherlands", href: `${BASE}/visa-documents-netherlands/` },
+    { label: "Permanent residence in the Netherlands", href: "/netherlands/citizenship/permanent-residence/" },
+    { label: "Inburgering in the Netherlands", href: "/netherlands/integration/inburgering/" },
+    { label: "Dutch citizenship for expats", href: "/netherlands/citizenship/dutch-citizenship/" },
   ],
 
   relatedCountryPages: [

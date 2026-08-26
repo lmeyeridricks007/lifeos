@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { ArticleJsonLd, FaqPageJsonLd, HowToJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
 import { cloneSafeMetadata } from "@/lib/metadata";

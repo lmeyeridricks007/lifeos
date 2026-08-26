@@ -947,7 +947,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "Municipality address registration, BSN connection, documents and appointment steps."
           ),
           item("BSN Netherlands", "/netherlands/practical-life/bsn-netherlands/", "BSN routes, documents and timing for newcomers."),
-          item("DigiD Netherlands", "/netherlands/practical-life/digid-netherlands/", "Digital identity setup after registration."),
+          item("DigiD Netherlands", "/netherlands/digid-awareness/", "Full expat DigiD guide — activation, security and government login."),
           item(
             "Government portals",
             "/netherlands/practical-life/government-portals-netherlands/",
@@ -2266,7 +2266,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Digital life / admin-light",
         items: [
-          item("DigiD awareness", "/netherlands/practical-life/digid-netherlands/", "Digital identity setup after registration."),
+          item("DigiD awareness", "/netherlands/digid-awareness/", "Full expat DigiD guide — activation, security and government login."),
           item("Government portals overview", "/netherlands/practical-life/government-portals-netherlands/", "Map of Dutch government websites and digital services."),
           item(
             "Subscriptions and cancellations",

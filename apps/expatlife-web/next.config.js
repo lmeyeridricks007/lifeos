@@ -15,6 +15,56 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/netherlands/moving",
+        destination: "/netherlands/moving-to-the-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/moving/",
+        destination: "/netherlands/moving-to-the-netherlands/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/survival-guide",
+        destination: "/netherlands/living/survival-guide/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/survival-guide/",
+        destination: "/netherlands/living/survival-guide/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/digid-awareness",
+        destination: "/netherlands/digid-awareness/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/living/digid-awareness/",
+        destination: "/netherlands/digid-awareness/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/permanent-residence-netherlands",
+        destination: "/netherlands/citizenship/permanent-residence/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/permanent-residence-netherlands/",
+        destination: "/netherlands/citizenship/permanent-residence/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/dutch-citizenship-netherlands",
+        destination: "/netherlands/citizenship/dutch-citizenship/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/dutch-citizenship-netherlands/",
+        destination: "/netherlands/citizenship/dutch-citizenship/",
+        permanent: true,
+      },
+      {
         source: "/netherlands/money/cheap-cities-netherlands",
         destination: "/netherlands/cities/cheapest-cities-for-expats/",
         permanent: true,
@@ -65,13 +115,13 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: "/netherlands/taxes/30-percent-ruling",
-        destination: "/netherlands/money/taxes/30-percent-ruling/",
+        source: "/netherlands/money/taxes/30-percent-ruling",
+        destination: "/netherlands/taxes/30-percent-ruling/",
         permanent: true,
       },
       {
-        source: "/netherlands/taxes/30-percent-ruling/",
-        destination: "/netherlands/money/taxes/30-percent-ruling/",
+        source: "/netherlands/money/taxes/30-percent-ruling/",
+        destination: "/netherlands/taxes/30-percent-ruling/",
         permanent: true,
       },
       {

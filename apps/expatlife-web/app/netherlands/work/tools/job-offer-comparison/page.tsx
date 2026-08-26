@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { MoveHero } from "@/components/page/move-shell";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
@@ -26,7 +27,7 @@ import { buildHowToSchema, buildSoftwareApplicationSchema, buildToolPageSchema }
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const META_TITLE = "Job Offer Comparison Tool Netherlands | Salary, Benefits & Expat Fit | ExpatCopilot";
+const META_TITLE = "Job Offer Comparison Tool Netherlands | Salary, Benefits & Expat Fit";
 const META_DESCRIPTION =
   "Free planner: compare two or three Dutch job offers (or current vs new) on estimated take-home pay, vakantiegeld and bonus handling, 30% ruling support, visa and relocation help, pension and benefits, rent and commute, and contract checklist signals — with topic-by-topic winners, questions to ask employers, and HTML export. Not legal, tax, or immigration advice.";
 
@@ -35,7 +36,7 @@ const HERO_IMAGE_WIDTH = 1376;
 const HERO_IMAGE_HEIGHT = 768;
 
 export const metadata: Metadata = {
-  title: META_TITLE,
+  title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
   alternates: { canonical: JOB_OFFER_COMPARISON_CANONICAL },
   keywords: [
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
     "commute cost job offer comparison",
   ],
   openGraph: {
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     url: JOB_OFFER_COMPARISON_CANONICAL,
     images: [
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     images: [HERO_IMAGE],
   },
@@ -106,7 +107,7 @@ export default function JobOfferComparisonToolPage() {
     offers: { price: "0", priceCurrency: "EUR" },
   });
   const webPageJsonLd = buildToolPageSchema({
-    title: META_TITLE,
+    title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
     canonicalPath: JOB_OFFER_COMPARISON_CANONICAL,
   });

@@ -112,6 +112,18 @@ const linkRegistry: LinkRegistry = {
     href: "/netherlands/moving/extensions-changes/",
     title: "Extensions & changes in the Netherlands",
   },
+  permanent_residence_guide: {
+    href: "/netherlands/citizenship/permanent-residence/",
+    title: "Permanent residence in the Netherlands",
+  },
+  dutch_citizenship_guide: {
+    href: "/netherlands/citizenship/dutch-citizenship/",
+    title: "Dutch citizenship for expats",
+  },
+  inburgering_guide: {
+    href: "/netherlands/integration/inburgering/",
+    title: "Inburgering in the Netherlands",
+  },
   moving_requirements: {
     href: "/netherlands/moving-requirements-netherlands/",
     title: "Moving requirements overview",
@@ -351,8 +363,18 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       actions: ["Health insurance", "DigiD", "Transport pass"],
       links: [{ href: "/netherlands/moving/tools/first-90-days", label: "First 90 days" }],
     },
+    {
+      id: "long-term",
+      label: "Long-term stay",
+      goal: "Plan PR, integration, and citizenship timelines.",
+      actions: ["Track lawful residence", "Confirm inburgering duty", "Map five-year path"],
+      links: [
+        { href: "/netherlands/citizenship/permanent-residence/", label: "Permanent residence guide" },
+        { href: "/netherlands/integration/inburgering/", label: "Inburgering guide" },
+      ],
+    },
   ],
-  timelineIntro: "A practical sequence most expats follow.",
+  timelineIntro: "A practical sequence most expats follow — from first documents through long-term status planning.",
   timelineSectionCta: { label: "Open the moving hub", href: "/netherlands/moving-to-the-netherlands/" },
   toolsStrip: [
     {
@@ -408,6 +430,24 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       href: "/netherlands/moving/extensions-changes/",
       description: "Already here? Renewals, job changes, study or family shifts—when to notice and what to open next.",
       timeToComplete: "12 min",
+    },
+    {
+      title: "Permanent residence in the Netherlands",
+      href: "/netherlands/citizenship/permanent-residence/",
+      description: "Five-year routes, absences, EU long-term resident vs Dutch permanent status, and IND next steps.",
+      timeToComplete: "14 min",
+    },
+    {
+      title: "Inburgering in the Netherlands",
+      href: "/netherlands/integration/inburgering/",
+      description: "Who must integrate, exam components, DUO and IND roles, and planning before PR or citizenship.",
+      timeToComplete: "13 min",
+    },
+    {
+      title: "Dutch citizenship for expats",
+      href: "/netherlands/citizenship/dutch-citizenship/",
+      description: "Naturalisation vs option, dual nationality awareness, and official application orientation.",
+      timeToComplete: "14 min",
     },
     {
       title: "Moving checklist",

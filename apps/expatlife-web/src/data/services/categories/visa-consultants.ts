@@ -472,8 +472,8 @@ export const visaConsultantsCategoryPage: ServiceCategoryPageData = {
         { label: "Highly skilled migrant (planned)", href: "/netherlands/highly-skilled-migrant-netherlands/" },
         { label: "Start-up visa (planned)", href: "/netherlands/startup-visa-netherlands/" },
         { label: "Family reunification (planned)", href: "/netherlands/family-reunification-netherlands/" },
-        { label: "Permanent residence (planned)", href: "/netherlands/permanent-residence-netherlands/" },
-        { label: "Dutch citizenship (planned)", href: "/netherlands/dutch-citizenship-netherlands/" },
+        { label: "Permanent residence", href: "/netherlands/citizenship/permanent-residence/" },
+        { label: "Dutch citizenship", href: "/netherlands/citizenship/dutch-citizenship/" },
       ],
     },
     {

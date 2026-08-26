@@ -35,7 +35,7 @@ export const moveLayoffsPageFrame = {
       },
       {
         title: "What it covers",
-        body: "Notice and end dates, what to ask HR, stay questions (high level), salary and costs, and links to other Move, Work, and Money guides.",
+        body: "Notice and end dates, what to ask HR, stay questions (high level), **HSM job-search period (IND, from 22 May 2026)**, salary and costs, and links to other Move, Work, and Money guides.",
       },
       {
         title: "What it skips",
@@ -93,6 +93,12 @@ export const moveLayoffsPageFrame = {
       description: "High-level questions only; confirm with your employer and official sources.",
     },
     {
+      id: "hsm-ind",
+      label: "If you lose your HSM job",
+      href: "#if-you-lose-your-hsm-job",
+      description: "3 vs 6 months from 22 May 2026 — IND page updated 18 Aug 2026.",
+    },
+    {
       id: "money",
       label: "Money: one realistic month",
       href: "#salary-benefits-tax",
@@ -141,6 +147,7 @@ export const moveLayoffsPageFrame = {
     { href: "#what-layoffs-affect", label: "What layoffs can affect" },
     { href: "#employment-notice", label: "Employment & notice" },
     { href: "#permits-status", label: "Permits & status" },
+    { href: "#if-you-lose-your-hsm-job", label: "If you lose your HSM job" },
     { href: "#salary-benefits-tax", label: "Salary, benefits & tax" },
     { href: "#employee-rights-nl", label: "Employee rights (basics)" },
     { href: "#benefits-extras-layoffs", label: "Benefits & extras" },

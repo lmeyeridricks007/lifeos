@@ -6,9 +6,20 @@
   "subtitle": "How expats receive a BSN (citizen service number) when registering with a Dutch municipality.",
   "description": "Learn how BSN registration works in the Netherlands. Understand when expats receive a citizen service number, which documents may be requested, and what to arrange next.",
   "breadcrumbLabel": "BSN registration",
+  "lastUpdated": "Last reviewed: 26 August 2026",
+  "heroOfficialSources": [
+    {
+      "label": "Government.nl — Burgerservicenummer (BSN)",
+      "href": "https://www.government.nl/topics/personal-records/personal-data/burgerservicenummer-bsn"
+    },
+    {
+      "label": "Government.nl — Registering your address",
+      "href": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/how-do-i-register-my-address-in-the-netherlands"
+    }
+  ],
   "hero": {
     "eyebrow": "Arrival Admin",
-    "badges": ["Guide", "Updated regularly"],
+    "badges": ["Guide", "Municipality registration"],
     "image": {
       "src": "/images/guides/netherlands/moving/bsn-registration-hero.png",
       "alt": "Documents, passport, and BSN registration materials on a table with a person at a window overlooking a European street"
@@ -77,6 +88,15 @@
         "Receive your BSN",
         "Use your BSN for banking, insurance, work, and DigiD"
       ],
+      "table": {
+        "headers": ["Step", "Typical timing", "Official reference"],
+        "rows": [
+          ["Book municipality appointment", "Often within first 1–2 weeks after arrival", "Your gemeente website"],
+          ["Register address & receive BSN", "Usually at the appointment", "Government.nl — BSN"],
+          ["Open bank account with BSN", "Often days to weeks after registration", "ExpatCopilot banking guides"],
+          ["Arrange Dutch health insurance", "Within 4 months if required", "Government.nl — health insurance"]
+        ]
+      },
       "links": [
         { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
         { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
@@ -188,20 +208,32 @@
       "id": "appointment-timing",
       "heading": "When expats usually schedule their appointment",
       "body": [
-        "Many expats schedule their municipality appointment shortly after arrival. Some municipalities allow booking in advance if you already know your address. Availability may vary in large cities, and your registration timing often influences when you can arrange banking and insurance."
+        "Many expats schedule their municipality appointment shortly after arrival. Some municipalities allow booking in advance if you already know your address. Availability varies sharply by city — Amsterdam and Utrecht often show the longest waits.",
+        "See our municipality registration guide for orientation ranges by gemeente. As soon as you know the address you will register at, check live appointment availability on your gemeente website."
       ],
+      "table": {
+        "headers": ["Municipality", "Typical appointment wait (orientation)"],
+        "rows": [
+          ["Amsterdam", "Often 2–6 weeks"],
+          ["Rotterdam", "Often 1–3 weeks"],
+          ["The Hague", "Often 2–4 weeks"],
+          ["Utrecht", "Often 2–4 weeks"],
+          ["Eindhoven", "Often 1–2 weeks"],
+          ["Groningen", "Often 1–2 weeks"]
+        ]
+      },
       "bullets": [
         "Some cities require or prefer online appointments",
-        "Availability may vary depending on demand",
-        "Temporary housing may not always support registration—check with your municipality",
-        "Registration timing can influence how quickly you can complete other admin"
+        "Temporary housing may not always support registration — check with your municipality",
+        "Registration timing can influence how quickly you can complete banking and insurance"
       ],
       "callout": {
         "type": "tip",
         "title": "What tends to take longer than expected",
-        "text": "Limited appointment availability in busy periods, temporary housing that may not support registration, and busy relocation seasons can slow scheduling. As soon as you know the address you will register at, check municipality appointment availability."
+        "text": "Limited appointment availability in busy periods, temporary housing that may not support registration, and busy relocation seasons can slow scheduling. Book as early as your gemeente allows once your registerable address is confirmed."
       },
       "links": [
+        { "label": "Municipality registration (appointment waits by city)", "href": "/netherlands/municipality-registration-netherlands/#municipality-differences" },
         { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
         { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
       ]
@@ -256,7 +288,7 @@
   "internalLinks": {
     "hub": {
       "label": "Back to Moving Hub",
-      "href": "/netherlands/moving/"
+      "href": "/netherlands/moving-to-the-netherlands/"
     },
     "pillar": {
       "label": "Read the complete Moving Guide",

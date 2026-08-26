@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
@@ -26,7 +27,7 @@ const path = "/about/";
  */
 
 export const metadata: Metadata = {
-  title: aboutPage.seo.title,
+  title: pageMetadataTitle(aboutPage.seo.title),
   description: aboutPage.seo.description,
   keywords: [...aboutPage.seo.keywords],
   alternates: { canonical: path },

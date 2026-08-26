@@ -94,6 +94,16 @@ export const moveResidencePermitLifecycle: MoveResidencePermitLifecycle = {
         description: "Day-to-day living basics once your permit route is underway.",
       },
       {
+        label: "Permanent residence guide",
+        href: "/netherlands/citizenship/permanent-residence/",
+        description: "Five-year planning, absences, and IND routes toward long-term stay.",
+      },
+      {
+        label: "Inburgering guide",
+        href: "/netherlands/integration/inburgering/",
+        description: "Integration duty, exams, and planning before PR or citizenship.",
+      },
+      {
         label: "DigiD awareness",
         href: "/netherlands/digid-awareness/",
         description: "When digital ID matters and how people usually get started.",

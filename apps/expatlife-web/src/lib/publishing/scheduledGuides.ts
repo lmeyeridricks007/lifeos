@@ -411,6 +411,21 @@ export const SCHEDULED_GUIDES: readonly ScheduledGuide[] = [
     publishDate: "2026-11-13",
     title: "Business consultants",
   },
+  {
+    path: "/netherlands/citizenship/permanent-residence/",
+    publishDate: "2026-11-13",
+    title: "Permanent residence in the Netherlands",
+  },
+  {
+    path: "/netherlands/citizenship/dutch-citizenship/",
+    publishDate: "2026-11-13",
+    title: "Dutch citizenship for expats",
+  },
+  {
+    path: "/netherlands/integration/inburgering/",
+    publishDate: "2026-11-13",
+    title: "Inburgering in the Netherlands",
+  },
 ] as const;
 
 const byNormalizedPath = new Map(

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { buildSocialMetadata } from "@/lib/seo/metadata";
+import { pageMetadataTitle, buildSocialMetadata } from "@/lib/seo/metadata";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { VisasResidencyView } from "@/src/components/moving/visas-residency/VisasResidencyView";
 import {
@@ -9,7 +9,7 @@ import {
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const META_TITLE = "Visas & Residency in the Netherlands | ExpatCopilot";
+const META_TITLE = "Visas & Residency in the Netherlands";
 const META_DESCRIPTION = PAGE_HERO_SUBTITLE;
 
 export const metadata: Metadata = {

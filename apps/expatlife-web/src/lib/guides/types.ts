@@ -389,6 +389,8 @@ export type GuideData = {
   resourcesAffiliatePlacementId?: string;
   disclosure?: string;
   lastUpdated?: string;
+  /** Official source links shown above the fold in the hero (GEO / verify-on-source). */
+  heroOfficialSources?: Array<{ label: string; href: string }>;
   /** Optional ISO date for structured data (origin-country guides with a scheduled publish date). */
   publishDate?: string;
   /** Optional H2 placed above the quick-answer / snapshot cards. */

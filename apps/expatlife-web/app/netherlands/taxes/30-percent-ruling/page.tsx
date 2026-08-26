@@ -1,42 +1,52 @@
 import type { Metadata } from "next";
-import { ArticleJsonLd, FaqPageJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
+import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { ThirtyPercentRulingNlView } from "@/src/components/money/thirty-percent-ruling-nl/ThirtyPercentRulingNlView";
+import { thirtyPercentRulingNlPageModel } from "@/src/components/money/thirty-percent-ruling-nl/thirtyPercentRulingNlPageModel";
+import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { WebPageJsonLd } from "@/lib/seo/jsonld";
 import { getSiteOrigin } from "@/lib/site-origin";
-import { ThirtyPercentRulingView } from "@/src/components/taxes/ThirtyPercentRulingView";
-import { thirtyPercentRulingPage as page } from "@/src/components/taxes/thirtyPercentRulingPageModel";
-
-export const revalidate = 86400;
 
 const baseUrl = getSiteOrigin();
-const { path, seo, hero, publishDate } = page;
+const { path, seo, publishDate, hero, ogImage } = thirtyPercentRulingNlPageModel;
+const ogImageUrl = new URL(ogImage.src, baseUrl).toString();
 
 export const metadata: Metadata = {
-  title: seo.title,
+  title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
+  robots: { index: true, follow: true },
   alternates: { canonical: path },
-  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title: seo.title,
     description: seo.description,
     type: "article",
     url: new URL(path, baseUrl).toString(),
-    images: [{ url: hero.image.src, alt: hero.image.alt }],
+    publishedTime: publishDate,
+    modifiedTime: publishDate,
+    images: [
+      {
+        url: ogImageUrl,
+        width: ogImage.width,
+        height: ogImage.height,
+        alt: ogImage.alt,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: seo.title,
     description: seo.description,
-    images: [hero.image.src],
+    images: [ogImageUrl],
   },
 };
 
-export default function ThirtyPercentRulingPage() {
+export const revalidate = CONTENT_REVALIDATE;
+
+export default function ThirtyPercentRulingNetherlandsPage() {
   return (
     <>
       <WebPageJsonLd name={hero.pageTitle} description={seo.description} urlPath={path} datePublished={publishDate} />
-      <ArticleJsonLd headline={hero.pageTitle} description={seo.description} dateModified={publishDate} urlPath={path} />
-      <FaqPageJsonLd items={page.faq.map((item) => ({ q: item.q, a: item.a }))} url={new URL(path, baseUrl).toString()} />
-      <ThirtyPercentRulingView />
+      <ThirtyPercentRulingNlView />
     </>
   );
 }

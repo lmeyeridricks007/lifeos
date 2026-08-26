@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { buildSocialMetadata } from "@/lib/seo/metadata";
+import { pageMetadataTitle, buildSocialMetadata } from "@/lib/seo/metadata";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { ExtensionsChangesView } from "@/src/components/moving/extensions-changes/ExtensionsChangesView";
 import { EXTENSIONS_CHANGES_CANONICAL, PAGE_HERO_SUBTITLE } from "@/src/components/moving/extensions-changes/extensionsChangesContent";

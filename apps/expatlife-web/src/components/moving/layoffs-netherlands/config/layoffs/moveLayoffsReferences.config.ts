@@ -14,6 +14,11 @@ export const moveLayoffsReferences = {
         { type: "external", label: "IND — Dutch Immigration and Naturalisation Service", href: "https://ind.nl/en" },
         {
           type: "external",
+          label: "IND — Highly skilled migrant (unemployment / job search)",
+          href: "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+        },
+        {
+          type: "external",
           label: "Government.nl — Working in the Netherlands",
           href: "https://www.government.nl/topics/working-in-the-netherlands",
         },

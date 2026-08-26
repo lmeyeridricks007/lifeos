@@ -37,6 +37,7 @@ export const moveLayoffsSections = {
           "If work is how you stay, the exit is a parallel track to severance — not something to put off until you feel ready.",
         keyPoints: [
           "Your route — employer-tied vs other — at a headline level only",
+          "HSM job-search period (IND) — usually up to 3 months; up to 6 months if employment ended on/after 22 May 2026 and you held the permit 2+ years (or are a victim of labour exploitation), capped by remaining permit validity — see #if-you-lose-your-hsm-job",
           "Who files or notifies, and what you must supply",
           "Gaps between employers — even short ones can matter",
           "Partner / kids on linked documents — one household timeline",
@@ -195,7 +196,7 @@ export const moveLayoffsSections = {
         keyPoints: [
           "Employer-tied vs other stay — headline only",
           "Who notifies / files, and your to-do list",
-          "Search or grace ideas — verify; skip WhatsApp lore",
+          "Search or grace ideas — verify on IND; HSM holders see the dated 3/6-month rule in #if-you-lose-your-hsm-job",
           "Partner / kids on linked documents",
         ],
       },
@@ -543,7 +544,7 @@ export const moveLayoffsSections = {
         whatMattersNext:
           "If your permit name is still the old employer, ask who files what before you book non-refundable travel.",
         keyPoints: [
-          "Search year myths vs your actual permit type",
+          "HSM job-search period — 3 months default; 6 months from 22 May 2026 when permit held 2+ years (or labour exploitation victim); capped by permit validity — #if-you-lose-your-hsm-job",
           "Partner / kids on linked permits — one household decision",
           "Business travel if a sticker appointment slips",
         ],

@@ -7,8 +7,8 @@ import type { ToolRelatedGuide, ToolRelatedTool } from "./toolPageContent";
 
 const BASE = "/netherlands";
 
-export const MOVING_HUB = `${BASE}/moving/`;
 export const PILLAR = `${BASE}/moving-to-the-netherlands/`;
+export const MOVING_HUB = PILLAR;
 
 /** Links from Moving Checklist. */
 export const MOVING_CHECKLIST_RELATED_GUIDES: ToolRelatedGuide[] = [
@@ -40,7 +40,6 @@ export const ARRIVAL_PLANNER_RELATED_GUIDES: ToolRelatedGuide[] = [
   { href: `${BASE}/health-insurance-netherlands/`, title: "Health insurance in the Netherlands for expats", description: "Timing, comparison, and first-month setup." },
   { href: `${BASE}/first-30-days-netherlands/`, title: "First 30 days in the Netherlands", description: "Practical month-one sequence." },
   { href: `${BASE}/moving-to-the-netherlands/`, title: "Moving to the Netherlands", description: "Pillar guide with full planning context." },
-  { href: `${BASE}/moving/`, title: "Moving to the Netherlands", description: "All guides and tools for your relocation." },
 ];
 
 export const ARRIVAL_PLANNER_RELATED_TOOLS: ToolRelatedTool[] = [
@@ -57,7 +56,6 @@ export const FIRST_90_DAYS_RELATED_GUIDES: ToolRelatedGuide[] = [
   { href: `${BASE}/open-bank-account-netherlands/`, title: "Open a bank account in the Netherlands", description: "Banking and DigiD setup." },
   { href: `${BASE}/health-insurance-netherlands/`, title: "Health insurance in the Netherlands", description: "Mandatory insurance and comparison." },
   { href: `${BASE}/moving-to-the-netherlands/`, title: "Moving to the Netherlands", description: "Pillar guide with the big-picture plan." },
-  { href: `${BASE}/moving/`, title: "Moving to the Netherlands", description: "All moving guides and tools." },
 ];
 
 export const FIRST_90_DAYS_RELATED_TOOLS: ToolRelatedTool[] = [
@@ -76,7 +74,6 @@ export const DOCUMENT_READINESS_RELATED_GUIDES: ToolRelatedGuide[] = [
   { href: `${BASE}/document-legalization-netherlands/`, title: "Document legalization in the Netherlands", description: "When legalization may matter." },
   { href: `${BASE}/document-legalization-netherlands/`, title: "Document legalization in the Netherlands", description: "Apostille and legalisation for foreign documents." },
   { href: `${BASE}/moving-to-the-netherlands/`, title: "Moving to the Netherlands", description: "Pillar guide with planning context." },
-  { href: `${BASE}/moving/`, title: "Moving to the Netherlands", description: "All moving guides and tools." },
 ];
 
 export const DOCUMENT_READINESS_RELATED_TOOLS: ToolRelatedTool[] = [
