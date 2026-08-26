@@ -1493,12 +1493,12 @@ function GuideSidebar({
       affiliateBlocks?.[data.resourcesAffiliatePlacementId]?.items.length
   );
 
-  const startLinks = data.sidebarStartLinks?.length
-    ? data.sidebarStartLinks
-    : [
-        { label: internalLinks.hub.label, href: internalLinks.hub.href },
-        { label: internalLinks.pillar.label, href: internalLinks.pillar.href },
-      ];
+  const defaultStartLinks = [
+    internalLinks.hub ? { label: internalLinks.hub.label, href: internalLinks.hub.href } : null,
+    internalLinks.pillar ? { label: internalLinks.pillar.label, href: internalLinks.pillar.href } : null,
+  ].filter((link): link is { label: string; href: string } => link != null);
+
+  const startLinks = data.sidebarStartLinks?.length ? data.sidebarStartLinks : defaultStartLinks;
 
   return (
     <aside className="min-w-0 space-y-6">
