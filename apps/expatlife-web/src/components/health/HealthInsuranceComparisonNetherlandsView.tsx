@@ -29,6 +29,7 @@ import {
   guidePremiumSectionDetailStackClass,
   guidePremiumVisualSpacingClass,
 } from "@/lib/ui/guide-premium-page-ui";
+import { GuideHeroTrustMeta } from "@/src/components/guides/GuideHeroTrustMeta";
 import {
   siteGuideColumnPadYClass,
   siteHeroFramedShellClass,
@@ -856,7 +857,15 @@ export function HealthInsuranceComparisonNetherlandsView() {
                         {chip}
                       </span>
                     ))}
+                    {"lastReviewed" in page && page.lastReviewed ? (
+                      <span className={cn(CITIES_FUNNEL_INFO_CHIP, "shadow-sm ring-1 ring-slate-900/[0.03]")}>
+                        Last reviewed: {page.lastReviewed}
+                      </span>
+                    ) : null}
                   </div>
+                  {"heroOfficialSources" in page && page.heroOfficialSources?.length ? (
+                    <GuideHeroTrustMeta className="mt-4" sources={page.heroOfficialSources} />
+                  ) : null}
                   <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                     <Link href={page.hero.primaryCta.href} className={primaryCtaClass}>
                       {page.hero.primaryCta.label}

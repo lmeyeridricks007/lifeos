@@ -26,6 +26,7 @@ export const FOOTER_GROUPS = {
       { label: "Methodology", href: "/methodology/" },
       { label: "How we rank services", href: "/how-we-rank-services/" },
       { label: "Sources", href: "/sources/" },
+      { label: "Official figures 2026", href: "/netherlands/official-figures/" },
     ] as FooterLink[],
   },
   legal: {
@@ -141,6 +142,7 @@ export const SITEMAP_MAIN_LINKS: FooterLink[] = [
   { label: "Double Taxation Guide", href: "/netherlands/taxes/double-taxation-netherlands/" },
   { label: "Foreign Income Guide", href: "/netherlands/taxes/foreign-income-netherlands/" },
   { label: "Taxes After Moving Guide", href: "/netherlands/taxes/taxes-after-moving-netherlands/" },
+  { label: "Leaving the Netherlands", href: "/netherlands/leaving/" },
   { label: "Leaving the Netherlands Tax Guide", href: "/netherlands/taxes/leaving-netherlands-tax/" },
   { label: "Healthcare Allowance Guide", href: "/netherlands/taxes/healthcare-allowance-netherlands/" },
   { label: "Rent Allowance Guide", href: "/netherlands/taxes/rent-allowance-netherlands/" },

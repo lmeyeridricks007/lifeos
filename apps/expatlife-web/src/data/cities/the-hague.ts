@@ -5,17 +5,23 @@
 
 import type { CityHubPageData, CityOfficialSource } from "@/src/lib/city-hub/types";
 import { getCityStats, cityComparisonSection } from "@/src/data/cities/cityStats";
+import { THE_HAGUE_APPOINTMENT_LINKS } from "@/src/data/cities/municipalityAppointmentLinks";
 
 const OFFICIAL_SOURCES: CityOfficialSource[] = [
   {
     category: "Municipality / registration",
+    label: "Moving and immigration hub (pick your BRP route)",
+    url: THE_HAGUE_APPOINTMENT_LINKS.movingAndImmigration,
+  },
+  {
+    category: "Municipality / registration",
     label: "1st BRP registration – EU/EEA and Swiss nationals (from abroad, no BSN)",
-    url: "https://www.denhaag.nl/en/moving-and-immigration/1st-brp-registration-for-eu-eea-and-swiss-nationals-coming-from-abroad-you-do-not-have-a-bsn/",
+    url: THE_HAGUE_APPOINTMENT_LINKS.euFirstBrp,
   },
   {
     category: "Municipality / registration",
     label: "1st BRP registration – with residence permit (from abroad, no BSN)",
-    url: "https://www.denhaag.nl/en/moving-and-immigration/1st-brp-registration-when-coming-from-abroad-with-residence-permit-you-do-not-have-a-bsn/",
+    url: THE_HAGUE_APPOINTMENT_LINKS.residencePermitFirstBrp,
   },
   {
     category: "Municipality / registration",
@@ -31,6 +37,11 @@ const OFFICIAL_SOURCES: CityOfficialSource[] = [
     category: "Municipality / registration",
     label: "BRP registration for highly skilled migrants and scientific researchers",
     url: "https://www.denhaag.nl/en/moving-and-immigration/brp-registration-for-highly-skilled-migrants-and-scientific-researchers-coming-from-abroad/",
+  },
+  {
+    category: "Highly skilled migrant / newcomer support",
+    label: "The Hague International Centre – Make an appointment for registration",
+    url: THE_HAGUE_APPOINTMENT_LINKS.internationalCentreRegistration,
   },
   {
     category: "Highly skilled migrant / newcomer support",
@@ -251,7 +262,7 @@ export const theHagueCityPage: CityHubPageData = {
     ],
     steps: [
       "Identify which registration route applies: EU/EEA/Swiss first registration, residence permit, Dutch citizen from abroad, re-registration (already have BSN), or highly skilled migrant / scientific researcher.",
-      "Use the correct municipal page or The Hague International Centre if you are eligible for their supported route.",
+      "Use the correct municipal BRP page (start from the moving-and-immigration hub) or book via The Hague International Centre if you are eligible for their supported route.",
       "Gather required documents: valid ID, proof of address, and any route-specific documents (e.g. residence permit, employment contract).",
       "Complete the registration; attend any required appointment. For HSM in supported cases, The Hague International Centre can combine registration and permit collection in one appointment.",
       "You will receive your BSN as part of the process.",
@@ -265,11 +276,13 @@ export const theHagueCityPage: CityHubPageData = {
       "Documents translated or legalized where required",
     ],
     officialSourceLinks: [
-      { label: "EU/EEA/Swiss – first BRP registration", url: "https://www.denhaag.nl/en/moving-and-immigration/1st-brp-registration-for-eu-eea-and-swiss-nationals-coming-from-abroad-you-do-not-have-a-bsn/" },
-      { label: "With residence permit – first BRP registration", url: "https://www.denhaag.nl/en/moving-and-immigration/1st-brp-registration-when-coming-from-abroad-with-residence-permit-you-do-not-have-a-bsn/" },
+      { label: "Moving and immigration hub (pick your BRP route)", url: THE_HAGUE_APPOINTMENT_LINKS.movingAndImmigration },
+      { label: "EU/EEA/Swiss – first BRP registration", url: THE_HAGUE_APPOINTMENT_LINKS.euFirstBrp },
+      { label: "With residence permit – first BRP registration", url: THE_HAGUE_APPOINTMENT_LINKS.residencePermitFirstBrp },
       { label: "Dutch citizens from abroad", url: "https://www.denhaag.nl/en/moving-and-immigration/1st-brp-registration-for-dutch-citizens-coming-from-abroad-you-do-not-have-a-bsn/" },
       { label: "Register again in the BRP (already have BSN)", url: "https://www.denhaag.nl/en/moving-and-immigration/register-again-in-the-brp-you-already-have-a-bsn/" },
       { label: "Highly skilled migrants and researchers", url: "https://www.denhaag.nl/en/moving-and-immigration/brp-registration-for-highly-skilled-migrants-and-scientific-researchers-coming-from-abroad/" },
+      { label: "The Hague International Centre – registration appointment", url: THE_HAGUE_APPOINTMENT_LINKS.internationalCentreRegistration },
     ],
     internalLinks: [
       { label: "Municipality registration in the Netherlands", href: "/netherlands/municipality-registration-netherlands/" },

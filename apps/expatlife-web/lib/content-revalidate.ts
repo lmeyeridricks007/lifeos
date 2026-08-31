@@ -2,7 +2,7 @@
 export const CONTENT_REVALIDATE_SECONDS = 3600;
 
 /**
- * Use for `export const revalidate = ...` on App Router pages and `sitemap.ts`.
+ * Use for `export const revalidate = ...` on App Router pages and `sitemap.xml` route.
  *
  * - **`next dev`:** `0` — no ISR staleness while editing locally.
  * - **Production / Vercel Preview:** {@link CONTENT_REVALIDATE_SECONDS}.

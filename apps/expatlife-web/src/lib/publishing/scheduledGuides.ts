@@ -413,17 +413,17 @@ export const SCHEDULED_GUIDES: readonly ScheduledGuide[] = [
   },
   {
     path: "/netherlands/citizenship/permanent-residence/",
-    publishDate: "2026-11-13",
+    publishDate: "2026-08-30",
     title: "Permanent residence in the Netherlands",
   },
   {
     path: "/netherlands/citizenship/dutch-citizenship/",
-    publishDate: "2026-11-13",
+    publishDate: "2026-08-30",
     title: "Dutch citizenship for expats",
   },
   {
     path: "/netherlands/integration/inburgering/",
-    publishDate: "2026-11-13",
+    publishDate: "2026-08-30",
     title: "Inburgering in the Netherlands",
   },
 ] as const;

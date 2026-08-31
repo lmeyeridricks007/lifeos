@@ -50,6 +50,24 @@ export type HousingCostExample = {
   details: readonly string[];
 };
 
+export type CityCostRow = {
+  city: string;
+  studio: string;
+  oneBed: string;
+  twoBed: string;
+  family: string;
+};
+
+export type RentBenchmarkCity = {
+  city: string;
+  href: string;
+  eurPerSqm: string;
+  studio: string;
+  oneBed: string;
+  twoBed: string;
+  note: string;
+};
+
 export type CityHousingCard = {
   city: string;
   population: string;
@@ -102,11 +120,12 @@ export const housingNetherlandsPage = {
     secondaryCta: { label: "Compare Renting vs Buying", href: "#rent-vs-buy" },
     image: {
       src: "/images/heroes/netherlands-housing-hero-v2.png",
-      alt: "Photo-realistic scene of a quiet Dutch residential street with brick apartments and townhouses, bicycles parked along a tree-lined canal sidewalk, and an international couple walking past with keys and documents on a bright spring afternoon.",
+      alt: "Photo-realistic scene of a quiet Dutch residential street with brick apartments and townhouses, bicycles parked along a tree-lined canal sidewalk, and an…",
     },
   },
   sectionNav: [
     { href: "#intro", label: "Overview" },
+    { href: "#rent-bands", label: "Rent € bands" },
     { href: "#market", label: "Market" },
     { href: "#rent-vs-buy", label: "Rent vs buy" },
     { href: "#renting", label: "Renting" },
@@ -219,54 +238,9 @@ export const housingNetherlandsPage = {
       "Premium infographic showing common expat housing mistakes in the Netherlands.",
       "Late searches, ignored utilities and Amsterdam-only focus are frequent relocation errors."
     ),
-    guides: visual(
-      "guides",
-      "premium-v2",
-      "Premium infographic journey map of featured Dutch housing guides for expats.",
-      "Continue into renting, buying, mortgage, utilities and insurance guides from this hub."
-    ),
-    futureGuides: visual(
-      "future-guides",
-      "premium-v2",
-      "Premium infographic roadmap of planned Dutch housing guides for expats.",
-      "These deeper guides will expand renting, social housing, temporary stays, neighborhoods and cost breakdowns."
-    ),
-    faq: visual(
-      "faq",
-      "premium-v2",
-      "Premium infographic summarizing common housing FAQ answers for expats in the Netherlands.",
-      "Quick orientation on costs, competition, documents and rent-versus-buy decisions."
-    ),
-    sources: visual(
-      "sources",
-      "premium-v2",
-      "Premium infographic showing official Dutch housing and property resources.",
-      "Verify current regulations, mortgage rules and local requirements with official sources."
-    ),
-    relatedGuides: visual(
-      "related",
-      "premium-v2",
-      "Premium infographic connecting housing to moving, cities, utilities and municipality services.",
-      "Housing sits at the centre of relocation — link outward to setup, cities and practical-life guides."
-    ),
-    exploreNext: visual(
-      "explore-next",
-      "premium-v2",
-      "Premium journey map infographic showing five housing next-step guides for expats in the Netherlands.",
-      "Pick your next guide based on whether you are renting, buying, financing or setting up utilities and insurance."
-    ),
   },
+  /** E4: keep only the snapshot bullet list still rendered under the intro visual. */
   visualTextDetails: {
-    overview: {
-      title: "Housing decision framework",
-      items: [
-        "Most newcomers rent first while learning the market, city and commute patterns.",
-        "Buying can suit longer stays when mortgage eligibility, savings and stability align.",
-        "Housing type, city and budget matter more than generic national averages.",
-        "Utilities, insurance and registration are usually separate planning steps.",
-        "This guide is orientation only — not legal, mortgage or financial advice.",
-      ],
-    },
     snapshot: {
       title: "At a glance",
       items: [
@@ -275,204 +249,6 @@ export const housingNetherlandsPage = {
         "Monthly housing costs vary widely by city, property size and energy label.",
         "Utilities, internet and municipal charges are often billed separately from rent.",
         "Location affects commute, schools, international community and listing volume.",
-      ],
-    },
-    market: {
-      title: "Market segments",
-      items: [
-        "Owner-occupied homes dominate many suburban and family neighbourhoods.",
-        "Private rentals include apartments, houses and furnished expat-oriented listings.",
-        "Social housing has strict eligibility and long waiting lists in most cities.",
-        "Student housing and short-stay products serve specific arrival windows.",
-        "Shared accommodation can reduce cost but adds contract and registration complexity.",
-      ],
-    },
-    rentVsBuy: {
-      title: "Comparison notes",
-      items: [
-        "Renting preserves flexibility; buying adds stability and transaction complexity.",
-        "Upfront cash needs differ: deposit and furnishing vs transfer tax and notary costs.",
-        "Maintenance responsibility sits with landlords when renting and owners when buying.",
-        "Mortgage eligibility depends on income, contract type and stay horizon.",
-        "Use the buy vs rent guide for a deeper financial comparison.",
-      ],
-    },
-    renting: {
-      title: "Renting essentials",
-      items: [
-        "Expect income checks, deposit rules and strong competition in popular cities.",
-        "Furnished listings cost more but reduce first-month setup friction.",
-        "Rental contracts define notice periods, service costs and registration permission.",
-        "Viewing speed and document readiness often decide who gets the home.",
-        "Huurtoeslag may apply in limited situations — verify official criteria.",
-      ],
-    },
-    buying: {
-      title: "Buying essentials",
-      items: [
-        "Dutch buyers often use mortgage advisors and notaries for the transaction path.",
-        "Kosten koper and valuation gaps can affect total cash needed beyond the offer.",
-        "Energy labels, VvE rules and inspection reports matter for apartments.",
-        "Overbidding is common in tight markets — plan buffers beyond listing price.",
-        "Property tax and insurance continue after purchase — budget recurring owner costs.",
-      ],
-    },
-    costs: {
-      title: "Cost planning",
-      items: [
-        "Studio and one-bedroom rents are highest in Amsterdam and lowest in smaller cities.",
-        "Family homes cost more in Randstad commuter towns and leafy suburbs.",
-        "Buying adds transaction costs, mortgage interest and maintenance reserves.",
-        "Service costs in leases may cover some utilities but rarely everything.",
-        "Example ranges below are orientation only — not quotes or guarantees.",
-      ],
-    },
-    cities: {
-      title: "City choice factors",
-      items: [
-        "Amsterdam: international hub, highest rent pressure, strong job market.",
-        "Rotterdam and The Hague: more space per euro with distinct neighbourhood characters.",
-        "Utrecht and Eindhoven: popular with professionals, students and tech workers.",
-        "Haarlem, Leiden and Delft: commuter appeal with university and family profiles.",
-        "Open city guides alongside gemeente housing pages when comparing areas.",
-      ],
-    },
-    temporary: {
-      title: "Short-stay uses",
-      items: [
-        "Hotels suit very short arrival windows before viewings begin.",
-        "Serviced apartments help when documentation or employment starts before lease signing.",
-        "Corporate housing may be arranged by employers for relocation packages.",
-        "Short-term rentals bridge gaps but verify registration and contract rules.",
-        "Book temporary stays early in peak relocation seasons.",
-      ],
-    },
-    utilities: {
-      title: "Home setup",
-      items: [
-        "Electricity, gas and water contracts depend on address and meter access.",
-        "Internet availability is postcode-specific — check fibre before moving in.",
-        "Mobile setup supports banking OTPs and appointment booking in week one.",
-        "Waste rules are municipal — save your collection calendar after registration.",
-        "Use the utilities guide for the complete first-week household picture.",
-      ],
-    },
-    insurance: {
-      title: "Cover types",
-      items: [
-        "Contents insurance (inboedelverzekering) protects belongings for most renters.",
-        "Home insurance (opstalverzekering) is typically relevant for owners.",
-        "Liability insurance (aansprakelijkheidsverzekering) is widely recommended for households.",
-        "Mortgage lenders may require specific cover as part of financing.",
-        "Compare providers and policy terms — this is not insurance advice.",
-      ],
-    },
-    municipality: {
-      title: "Registration links",
-      items: [
-        "Register your address at the gemeente where you actually live.",
-        "Landlord permission is required for many rental registrations.",
-        "BSN access often follows registration and unlocks payroll and banking.",
-        "DigiD arrives by post at your registered address — apply after registration.",
-        "Use municipality services guide for permits, taxes and local rules.",
-      ],
-    },
-    mortgages: {
-      title: "Mortgage orientation",
-      items: [
-        "Lenders assess income, contract type, nationality and residency stability.",
-        "Fixed and variable rate products differ in risk and monthly predictability.",
-        "Mortgage advisors help expats navigate NHG, valuation and offer strategy.",
-        "Pre-approval can strengthen buying timelines in competitive markets.",
-        "This section is not mortgage or financial advice — verify with advisors.",
-      ],
-    },
-    lifeStage: {
-      title: "Fit by profile",
-      items: [
-        "Students often use rooms, studios or dedicated student housing products.",
-        "Young professionals may prioritise city access and flexible rental terms.",
-        "Families weigh schools, space, gardens and commute time together.",
-        "Entrepreneurs may need home-office compliant addresses and registration clarity.",
-        "Retirees and digital nomads should confirm visa, tax and stay-horizon implications.",
-      ],
-    },
-    checklist: {
-      title: "Pre-move priorities",
-      items: [
-        "Set a realistic monthly budget including utilities and insurance.",
-        "Choose target cities based on work, schools and commute tolerance.",
-        "Decide rent-first vs buy-ready based on stay horizon and savings.",
-        "Prepare ID, employment proof and references before viewings.",
-        "Line up temporary accommodation for the first weeks after arrival.",
-      ],
-    },
-    mistakes: {
-      title: "Avoid these gaps",
-      items: [
-        "Starting the housing search too late for peak relocation seasons.",
-        "Underestimating competition and income requirements in major cities.",
-        "Ignoring commute time when choosing neighbourhoods.",
-        "Forgetting utility, insurance and municipal setup after signing.",
-        "Skipping contract review and registration permission checks.",
-      ],
-    },
-    guides: {
-      title: "Featured guide paths",
-      items: [
-        "Renting guide covers contracts, deposits, viewings and tenant rights orientation.",
-        "Buying guide explains kosten koper, bidding and the notary process.",
-        "Mortgage guide covers expat eligibility and application steps.",
-        "Buy vs rent guide compares financial and lifestyle tradeoffs.",
-        "Utilities and insurance guides complete the household setup picture.",
-      ],
-    },
-    faq: {
-      title: "FAQ orientation",
-      items: [
-        "Housing is expensive in major cities but varies significantly by region.",
-        "Most newcomers rent first; buying suits longer stable stays.",
-        "Expats can often access mortgages with qualifying income and documentation.",
-        "Documents typically include ID, employment proof and sometimes landlord references.",
-        "Utilities are usually separate from rent — check your contract carefully.",
-      ],
-    },
-    sources: {
-      title: "Official context",
-      items: [
-        "Government.nl publishes general living and housing information for residents.",
-        "Rijksoverheid provides policy context on housing and tenancy frameworks.",
-        "Kadaster supports property ownership and registration research.",
-        "Municipality websites cover local rules, registration and permits.",
-        "Rules change — verify current requirements before acting.",
-      ],
-    },
-    relatedGuides: {
-      title: "Connected topics",
-      items: [
-        "Moving hub sequences housing within the wider relocation timeline.",
-        "Cities hub compares Amsterdam, Rotterdam, Utrecht and regional options.",
-        "Utilities guide covers energy, water, internet and waste after move-in.",
-        "Municipality services links registration, BSN and local charges to housing.",
-        "Insurance and tax guides connect to owner and tenant responsibilities.",
-      ],
-    },
-    exploreNext: {
-      title: "Next-step routing",
-      items: [
-        "Open the renting guide if you need contracts, deposits and viewing orientation.",
-        "Open buying and mortgage guides when stay plans and savings support ownership.",
-        "Open utilities and insurance guides immediately after signing a lease or purchase.",
-        "Return to this hub when comparing cities or revisiting rent-versus-buy decisions.",
-      ],
-    },
-    futureGuides: {
-      title: "Planned deeper guides",
-      items: [
-        "Renting Netherlands will expand contracts, viewings and tenant orientation.",
-        "Social housing guide will explain eligibility and waiting-list reality.",
-        "Temporary accommodation guide will compare short-stay products and use cases.",
-        "Neighborhoods guide will help compare areas within major cities.",
       ],
     },
   },
@@ -485,13 +261,14 @@ export const housingNetherlandsPage = {
     ],
   },
   quickAnswer: {
-    summary: "Most newcomers start by renting — expect roughly EUR 850–2,800+ per month depending on city and bedrooms.",
+    summary:
+      "Most newcomers rent first. Orientation bands (as of Q1 2026): Amsterdam 1-bed ~€1,400–2,200+, Eindhoven ~€900–1,550, Groningen ~€800–1,400 — utilities usually extra.",
     buyingWhen: [
       "Staying long term with stable employment or income",
       "Financially established with savings for transaction costs",
       "Mortgage eligible with documentation lenders accept",
     ],
-    note: "Housing availability and pricing vary significantly by city, property type and season. Plan early in competitive markets.",
+    note: "Bands are planning ranges, not quotes. Free-sector €/m² signals cite Pararius Huurmonitor Q1 2026 — verify live listings for your neighbourhood.",
   },
   snapshotCards: [
     { title: "Competitive rental market", body: "Major cities see strong demand for apartments and family homes — speed and preparation matter." },
@@ -662,45 +439,87 @@ export const housingNetherlandsPage = {
   housingCosts: {
     heading: "How Much Does Housing Cost?",
     paragraphs: [
-      "Housing costs depend on property type, city, energy label and whether utilities are included in the lease. The examples below are orientation ranges only — not quotes, guarantees or market predictions. Always verify current listings for your target cities and neighbourhoods.",
+      "Housing is usually the largest monthly line item for expats. Costs depend on city, bedrooms, energy label and whether utilities are included. Use the dated Amsterdam vs Eindhoven vs Groningen bands above for a first budget frame, then verify live listings.",
+      "The broader city table below adds Rotterdam, The Hague and Utrecht. All monthly columns are ExpatLife orientation ranges — not quotes or guarantees.",
     ],
+  },
+  rentBenchmarks: {
+    id: "rent-bands",
+    heading: "Rent € bands: Amsterdam vs Eindhoven vs Groningen",
+    asOfLabel: "As of Q1 2026",
+    asOfPeriod: "2026-Q1",
+    sourceName: "Pararius Huurmonitor — free-sector new lettings",
+    sourceHref: "https://www.pararius.com/news/dutch-rental-prices-outpace-house-prices",
+    nationalSignal: "National free-sector average ~€1,892/month for new lettings (Pararius Q1 2026).",
+    methodology:
+      "€/m² signals come from Pararius Huurmonitor Q1 2026 (Amsterdam and Eindhoven city; Groningen reported at province level). Monthly studio / 1-bed / 2-bed columns are ExpatLife orientation bands for private-market planning, aligned with our city guides — not average asking prices for a specific flat size. Utilities, service costs and furnished premiums are usually extra.",
+    cities: [
+      {
+        city: "Amsterdam",
+        href: "/netherlands/amsterdam/",
+        eurPerSqm: "€28.53/m²",
+        studio: "€1,200–1,800+",
+        oneBed: "€1,400–2,200+",
+        twoBed: "€1,900–2,800+",
+        note: "Highest free-sector €/m² among major cities; strong competition for listings.",
+      },
+      {
+        city: "Eindhoven",
+        href: "/netherlands/eindhoven/",
+        eurPerSqm: "€19.55/m²",
+        studio: "€850–1,300",
+        oneBed: "€900–1,550",
+        twoBed: "€1,300–1,900",
+        note: "Among strongest YoY €/m² rises in G5 (Pararius Q1 2026); often more space per euro than Amsterdam.",
+      },
+      {
+        city: "Groningen",
+        href: "/netherlands/groningen/",
+        eurPerSqm: "~€17.69/m² (province)",
+        studio: "€700–1,100",
+        oneBed: "€800–1,400",
+        twoBed: "€1,100–1,700",
+        note: "Pararius reported province rents nearly flat YoY; university demand still shapes rooms and studios.",
+      },
+    ] satisfies RentBenchmarkCity[],
   },
   housingCostExamples: [
     {
       profile: "Studio — Amsterdam (orientation)",
-      priceRange: "EUR 1,200–1,800+ / month rent",
+      priceRange: "€1,200–1,800+ / month rent",
       details: ["Highest demand and competition", "Furnished premiums common", "Utilities usually extra"],
     },
     {
-      profile: "1-bedroom apartment — Randstad (orientation)",
-      priceRange: "EUR 1,100–1,700 / month rent",
-      details: ["Rotterdam and The Hague often below Amsterdam peaks", "Check service costs in contract", "Energy label affects utility bills"],
+      profile: "1-bedroom — Eindhoven (orientation)",
+      priceRange: "€900–1,550 / month rent",
+      details: ["Tech / Brainport demand", "Often better space per euro than Randstad core", "Check service costs in contract"],
     },
     {
-      profile: "2-bedroom apartment — Utrecht / Eindhoven (orientation)",
-      priceRange: "EUR 1,300–2,000 / month rent",
-      details: ["Popular with professionals and families", "Parking may cost extra", "Commute time varies by neighbourhood"],
+      profile: "1-bedroom — Groningen (orientation)",
+      priceRange: "€800–1,400 / month rent",
+      details: ["University-city cycles", "Lower than Amsterdam peaks", "Verify registration and contract type"],
     },
     {
       profile: "Family home — suburban (orientation)",
-      priceRange: "EUR 1,800–3,000+ / month rent",
+      priceRange: "€1,800–3,000+ / month rent",
       details: ["More space outside inner cities", "Gardens and parking more common", "Buying may compete on monthly cost long term"],
     },
   ] satisfies HousingCostExample[],
   cityCostRows: [
-    { city: "Amsterdam", studio: "EUR 1,200–1,800+", oneBed: "EUR 1,500–2,200+", twoBed: "EUR 1,900–2,800+", family: "EUR 2,500–4,000+" },
-    { city: "Rotterdam", studio: "EUR 900–1,400", oneBed: "EUR 1,100–1,700", twoBed: "EUR 1,400–2,100", family: "EUR 1,800–3,000" },
-    { city: "The Hague", studio: "EUR 950–1,450", oneBed: "EUR 1,200–1,750", twoBed: "EUR 1,500–2,200", family: "EUR 1,900–3,100" },
-    { city: "Utrecht", studio: "EUR 1,000–1,550", oneBed: "EUR 1,300–1,900", twoBed: "EUR 1,600–2,400", family: "EUR 2,000–3,200" },
-    { city: "Eindhoven", studio: "EUR 850–1,300", oneBed: "EUR 1,000–1,550", twoBed: "EUR 1,300–1,900", family: "EUR 1,700–2,800" },
-  ],
+    { city: "Amsterdam", studio: "€1,200–1,800+", oneBed: "€1,400–2,200+", twoBed: "€1,900–2,800+", family: "€2,500–4,000+" },
+    { city: "Eindhoven", studio: "€850–1,300", oneBed: "€900–1,550", twoBed: "€1,300–1,900", family: "€1,700–2,800" },
+    { city: "Groningen", studio: "€700–1,100", oneBed: "€800–1,400", twoBed: "€1,100–1,700", family: "€1,400–2,200" },
+    { city: "Rotterdam", studio: "€900–1,400", oneBed: "€1,100–1,700", twoBed: "€1,400–2,100", family: "€1,800–3,000" },
+    { city: "The Hague", studio: "€950–1,450", oneBed: "€1,200–1,750", twoBed: "€1,500–2,200", family: "€1,900–3,100" },
+    { city: "Utrecht", studio: "€1,000–1,550", oneBed: "€1,300–1,900", twoBed: "€1,600–2,400", family: "€2,000–3,200" },
+  ] satisfies CityCostRow[],
   cityCards: [
     {
       city: "Amsterdam",
       population: "~872,000",
       href: "/netherlands/amsterdam/",
       housingProfile: "Dense rental market, canals and apartments dominate central districts.",
-      affordability: "Highest rents; strong competition for studios and family homes.",
+      affordability: "Highest rents (~€1,400–2,200+ for many 1-beds); strongest competition.",
       internationalAppeal: "Largest international job market and expat infrastructure.",
     },
     {
@@ -732,8 +551,16 @@ export const housingNetherlandsPage = {
       population: "~248,000",
       href: "/netherlands/eindhoven/",
       housingProfile: "Tech-oriented city with apartments and suburban family homes.",
-      affordability: "Often better value than Randstad core cities.",
+      affordability: "Orientation 1-bed ~€900–1,550; often better value than Randstad core.",
       internationalAppeal: "International talent and Brainport employers.",
+    },
+    {
+      city: "Groningen",
+      population: "~238,000",
+      href: "/netherlands/groningen/",
+      housingProfile: "University city in the north with rooms, studios and compact apartments.",
+      affordability: "Orientation 1-bed ~€800–1,400 — typically below Amsterdam and Eindhoven peaks.",
+      internationalAppeal: "Students, researchers and northern NL employers.",
     },
     {
       city: "Haarlem",
@@ -933,6 +760,11 @@ export const housingNetherlandsPage = {
     "Always confirm current regulations and contract terms before signing.",
   ],
   officialSources: [
+    {
+      label: "Pararius Huurmonitor (Q1 2026)",
+      href: "https://www.pararius.com/news/dutch-rental-prices-outpace-house-prices",
+      description: "Free-sector new-lettings €/m² signals and national average used for dated rent bands on this hub.",
+    },
     { label: "Government.nl", href: "https://www.government.nl/", description: "Official Dutch government information on living, working and housing in the Netherlands." },
     { label: "Rijksoverheid", href: "https://www.rijksoverheid.nl/", description: "Central government site for policy context on housing and resident topics." },
     { label: "Kadaster", href: "https://www.kadaster.nl/", description: "Land registry and property information for ownership research in the Netherlands." },

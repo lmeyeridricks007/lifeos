@@ -246,7 +246,7 @@
       "slug": "permanent-residence-netherlands",
       "path": "/netherlands/citizenship/permanent-residence/",
       "title": "Permanent Residence in the Netherlands",
-      "description": "Routes, typical residence periods, absences, and official next steps toward permanent status in the Netherlands.",
+      "description": "HSM to permanent residence: five-year path, inburgering vs exemption, late job changes, and IND next steps (not citizenship).",
       "priority": 18,
       "category": "long-term-status"
     },
@@ -254,7 +254,7 @@
       "slug": "dutch-citizenship-netherlands",
       "path": "/netherlands/citizenship/dutch-citizenship/",
       "title": "Dutch Citizenship for Expats",
-      "description": "Naturalisation vs option, integration requirements, dual nationality considerations, and planning tools.",
+      "description": "Naturalisation vs option, dual nationality caveats, and what inburgering unlocks — IND-oriented, not legal advice.",
       "priority": 19,
       "category": "long-term-status"
     },
@@ -262,7 +262,7 @@
       "slug": "inburgering-netherlands",
       "path": "/netherlands/integration/inburgering/",
       "title": "Inburgering in the Netherlands",
-      "description": "Who may need civic integration, exam components, IND and DUO roles, and timeline planning for expats.",
+      "description": "HSM vs obligation, Wet inburgering 2021 / B1 default, KNM from 1 July 2025, and DUO as the exam body.",
       "priority": 20,
       "category": "integration"
     }

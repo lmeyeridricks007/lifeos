@@ -244,24 +244,31 @@
       "title": "Highly Skilled Migrant Salary Checker",
       "slug": "hsm-salary-checker",
       "route": "/netherlands/moving/tools/hsm-salary-checker/",
-      "status": "placeholder",
+      "status": "live",
       "templateType": "checker",
       "categoryId": "move-immigration",
       "menuGroup": "move",
       "seo": {
-        "title": "HSM Salary Checker Netherlands (Coming Soon)",
-        "description": "Check if your offer may meet Dutch Highly Skilled Migrant salary thresholds.",
-        "keywords": ["HSM salary checker", "highly skilled migrant salary Netherlands"]
+        "title": "HSM Salary Checker Netherlands",
+        "description": "Compare a job offer to Dutch Highly Skilled Migrant salary floors (2026 planning figures): age 30+, under 30, and reduced criterion. Not an IND decision.",
+        "keywords": ["HSM salary checker", "highly skilled migrant salary Netherlands", "kennismigrant salary threshold"]
       },
-      "summary": "Compare your offer against likely HSM salary threshold ranges.",
+      "summary": "Compare your offer against HSM salary floors and confirm holiday-pay / sponsor checks.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/visa/highly-skilled-migrant/"],
-      "relatedTools": ["/netherlands/work/tools/job-offer-comparison/"],
+      "relatedGuides": [
+        "/netherlands/visa/highly-skilled-migrant/",
+        "/netherlands/visa/eu-blue-card/",
+        "/netherlands/money/taxes/30-percent-ruling/"
+      ],
+      "relatedTools": [
+        "/netherlands/visa-cost-calculator/",
+        "/netherlands/work/tools/job-offer-comparison/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Gross monthly salary", "Age band", "Contract start date"],
-      "exampleOutputs": ["Threshold fit", "Gap estimate", "What to confirm with employer"],
+      "exampleInputs": ["Gross monthly salary", "Age band", "Reduced criterion", "Holiday pay treatment"],
+      "exampleOutputs": ["Threshold fit band", "Gap estimate", "Checklist", "IND next steps"],
       "mostUsefulFor": "Workers assessing HSM feasibility before accepting an offer."
     },
     {
@@ -405,7 +412,7 @@
       },
       "summary": "Map key integration deadlines and prep phases.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/integration/", "/netherlands/moving-to-the-netherlands/"],
+      "relatedGuides": ["/netherlands/integration/inburgering/", "/netherlands/moving-to-the-netherlands/"],
       "relatedTools": ["/netherlands/integration/tools/inburgering-exam-readiness-checker/"],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
@@ -419,24 +426,31 @@
       "title": "Inburgering Exam Readiness Checker",
       "slug": "inburgering-exam-readiness-checker",
       "route": "/netherlands/integration/tools/inburgering-exam-readiness-checker/",
-      "status": "placeholder",
+      "status": "live",
       "templateType": "checker",
       "categoryId": "integration",
       "menuGroup": "move",
       "seo": {
-        "title": "Inburgering Exam Readiness Checker (Coming Soon)",
-        "description": "Assess if you are ready for inburgering exam components.",
-        "keywords": ["inburgering readiness", "Dutch integration exam checker"]
+        "title": "Inburgering Exam Readiness Checker Netherlands",
+        "description": "Self-assessment checklist for Dutch inburgering exam modules: language skills, KNM (post–July 2025 materials), and booking readiness. Not a pass prediction — verify with DUO practice exams.",
+        "keywords": ["inburgering readiness", "Dutch integration exam checker", "KNM prep Netherlands", "inburgering modules"]
       },
-      "summary": "Estimate readiness for exam modules and identify weak spots.",
+      "summary": "Self-check language + KNM module readiness and prioritise weak spots before you book with DUO.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/integration/exams-overview/"],
-      "relatedTools": ["/netherlands/integration/tools/knm-knowledge-quiz/"],
+      "relatedGuides": [
+        "/netherlands/integration/inburgering/",
+        "/netherlands/citizenship/permanent-residence/",
+        "/netherlands/culture/learning-dutch/"
+      ],
+      "relatedTools": [
+        "/netherlands/integration/tools/integration-requirement-checker/",
+        "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/integration/tools/",
-      "exampleInputs": ["Practice scores", "Language level", "Exam schedule"],
-      "exampleOutputs": ["Readiness score", "Priority topics", "Next practice plan"],
+      "exampleInputs": ["Target level", "Language module status", "KNM materials", "Booking window"],
+      "exampleOutputs": ["Readiness band", "Priority modules", "DUO-oriented next steps"],
       "mostUsefulFor": "Candidates preparing for multiple exam components."
     },
     {
@@ -455,7 +469,7 @@
       },
       "summary": "Practice KNM questions and track topic-level confidence.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/integration/language-knm/"],
+      "relatedGuides": ["/netherlands/integration/inburgering/"],
       "relatedTools": ["/netherlands/integration/tools/inburgering-exam-readiness-checker/"],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
@@ -469,24 +483,31 @@
       "title": "Integration Requirement Checker",
       "slug": "integration-requirement-checker",
       "route": "/netherlands/integration/tools/integration-requirement-checker/",
-      "status": "placeholder",
+      "status": "live",
       "templateType": "checker",
       "categoryId": "integration",
       "menuGroup": "move",
       "seo": {
-        "title": "Integration Requirement Checker (Coming Soon)",
-        "description": "Check likely inburgering requirement pathways based on your profile.",
-        "keywords": ["integration requirement checker", "inburgering obligations"]
+        "title": "Integration Requirement Checker Netherlands",
+        "description": "Orientation checklist for Dutch inburgering: obligation vs HSM, Wi 2021 cohort, and civic integration proof for permanent residence or citizenship. Not a legal determination.",
+        "keywords": ["integration requirement checker", "inburgering obligations", "HSM inburgering", "Wi 2021"]
       },
-      "summary": "Check likely integration obligations and exemptions to verify.",
+      "summary": "Map likely obligation vs secure-residence proof pathways — verify on your IND letter and DUO.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/integration/"],
-      "relatedTools": ["/netherlands/integration/tools/inburgering-timeline-planner/"],
+      "relatedGuides": [
+        "/netherlands/integration/inburgering/",
+        "/netherlands/citizenship/permanent-residence/",
+        "/netherlands/visa/highly-skilled-migrant/"
+      ],
+      "relatedTools": [
+        "/netherlands/integration/tools/inburgering-exam-readiness-checker/",
+        "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/integration/tools/",
-      "exampleInputs": ["Residence basis", "Duration in NL", "Education background"],
-      "exampleOutputs": ["Likely requirement path", "Exemption checks", "Suggested actions"],
+      "exampleInputs": ["Residence basis", "Obligation letter", "Cohort", "PR/citizenship goal"],
+      "exampleOutputs": ["Requirement band", "Checklist", "Official next steps"],
       "mostUsefulFor": "Residents unsure which integration rules apply."
     },
     {
@@ -494,49 +515,65 @@
       "title": "Permanent Residence Eligibility Calculator",
       "slug": "permanent-residence-eligibility-calculator",
       "route": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/",
-      "status": "placeholder",
+      "status": "live",
       "templateType": "calculator",
       "categoryId": "citizenship",
       "menuGroup": "move",
       "seo": {
-        "title": "Permanent Residence Eligibility Calculator (Coming Soon)",
-        "description": "Estimate your readiness for Dutch permanent residence applications.",
-        "keywords": ["permanent residence Netherlands calculator", "PR eligibility Netherlands"]
+        "title": "Permanent Residence Eligibility Calculator Netherlands",
+        "description": "Orientation checklist for Dutch permanent residence after HSM or other lawful stay: five-year signals, continuity, BRP, integration, and IND next steps.",
+        "keywords": ["permanent residence Netherlands calculator", "PR eligibility Netherlands", "HSM permanent residence"]
       },
-      "summary": "Estimate permanent residence readiness and remaining requirements.",
+      "summary": "Map common IND themes for PR readiness — not an IND decision.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/citizenship/permanent-residence/"],
-      "relatedTools": ["/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/"],
+      "relatedGuides": [
+        "/netherlands/citizenship/permanent-residence/",
+        "/netherlands/integration/inburgering/",
+        "/netherlands/citizenship/dutch-citizenship/",
+        "/netherlands/visa/highly-skilled-migrant/"
+      ],
+      "relatedTools": [
+        "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/",
+        "/netherlands/citizenship/tools/dual-citizenship-awareness-tool/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/citizenship/tools/",
       "exampleInputs": ["Residence history", "Permit continuity", "Integration status"],
-      "exampleOutputs": ["Eligibility estimate", "Gaps to close", "Timeline projection"],
-      "mostUsefulFor": "Long-term residents planning a PR application."
+      "exampleOutputs": ["Readiness band", "Gaps to close", "IND-oriented next steps"],
+      "mostUsefulFor": "Long-term residents and HSM holders planning a PR application."
     },
     {
       "id": "dutch-citizenship-timeline-calculator",
       "title": "Dutch Citizenship Timeline Calculator",
       "slug": "dutch-citizenship-timeline-calculator",
       "route": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/",
-      "status": "placeholder",
+      "status": "live",
       "templateType": "calculator",
       "categoryId": "citizenship",
       "menuGroup": "move",
       "seo": {
-        "title": "Dutch Citizenship Timeline Calculator (Coming Soon)",
-        "description": "Estimate citizenship timing windows and prep milestones.",
-        "keywords": ["Dutch citizenship timeline", "naturalisation calculator Netherlands"]
+        "title": "Dutch Citizenship Timeline Calculator Netherlands",
+        "description": "Orientation timeline for Dutch naturalisation: five-year horizon, integration, renunciation, gemeente application, IND decision period, and ceremony.",
+        "keywords": ["Dutch citizenship timeline", "naturalisation calculator Netherlands", "when can I naturalise Netherlands"]
       },
-      "summary": "Estimate naturalisation timeline windows and key milestones.",
+      "summary": "Sequence naturalisation milestones — or check whether option comes first. Not an IND decision.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/citizenship/naturalisation/"],
-      "relatedTools": ["/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/"],
+      "relatedGuides": [
+        "/netherlands/citizenship/dutch-citizenship/",
+        "/netherlands/citizenship/permanent-residence/",
+        "/netherlands/integration/inburgering/",
+        "/netherlands/visa/highly-skilled-migrant/"
+      ],
+      "relatedTools": [
+        "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/",
+        "/netherlands/citizenship/tools/dual-citizenship-awareness-tool/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/citizenship/tools/",
-      "exampleInputs": ["Residence start date", "Interruptions", "Current permit"],
-      "exampleOutputs": ["Earliest likely timeline", "Readiness checklist", "Dependency alerts"],
+      "exampleInputs": ["Residence start month", "Integration status", "Renunciation stance"],
+      "exampleOutputs": ["Earliest apply window", "Milestone sequence", "IND-oriented next steps"],
       "mostUsefulFor": "Residents planning medium- to long-term citizenship goals."
     },
     {
@@ -544,25 +581,32 @@
       "title": "Dual Citizenship Awareness Tool",
       "slug": "dual-citizenship-awareness-tool",
       "route": "/netherlands/citizenship/tools/dual-citizenship-awareness-tool/",
-      "status": "placeholder",
+      "status": "live",
       "templateType": "checker",
       "categoryId": "citizenship",
       "menuGroup": "move",
       "seo": {
-        "title": "Dual Citizenship Awareness Tool (Coming Soon)",
-        "description": "Understand potential dual-citizenship constraints before applying.",
-        "keywords": ["dual citizenship Netherlands", "citizenship retention awareness"]
+        "title": "Dual Citizenship Awareness Tool Netherlands",
+        "description": "Orientation checklist for Dutch dual nationality trade-offs: renunciation, exceptions, option vs naturalisation, home-country rules, and long stay abroad. Not a dual-passport verdict.",
+        "keywords": ["dual citizenship Netherlands", "renounce nationality Netherlands", "Dutch dual nationality", "naturalisation renunciation"]
       },
-      "summary": "Surface key dual-citizenship factors and decision points to confirm.",
+      "summary": "Surface renunciation, exception, option, and home-country friction topics before you apply — not a dual-passport verdict.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/citizenship/naturalisation/"],
-      "relatedTools": ["/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/"],
+      "relatedGuides": [
+        "/netherlands/citizenship/dutch-citizenship/",
+        "/netherlands/citizenship/permanent-residence/",
+        "/netherlands/integration/inburgering/"
+      ],
+      "relatedTools": [
+        "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/",
+        "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/citizenship/tools/",
-      "exampleInputs": ["Current nationality", "Family circumstances", "Intentions"],
-      "exampleOutputs": ["Awareness checklist", "Risk topics to verify", "Prep notes"],
-      "mostUsefulFor": "Applicants evaluating citizenship trade-offs."
+      "exampleInputs": ["Route focus", "Home renunciation rules", "Possible Dutch exception", "Willingness to renounce"],
+      "exampleOutputs": ["Awareness band", "Checklist", "Topics to verify", "Official next steps"],
+      "mostUsefulFor": "Applicants evaluating citizenship trade-offs before naturalisation."
     },
     {
       "id": "thirty-percent-ruling-calculator",
@@ -1729,24 +1773,28 @@
       "title": "Exit Readiness Checker",
       "slug": "exit-readiness-checker",
       "route": "/netherlands/leaving/tools/exit-readiness-checker/",
-      "status": "placeholder",
+      "status": "live",
       "templateType": "checker",
       "categoryId": "leaving-nl",
       "menuGroup": "move",
       "seo": {
-        "title": "Exit Readiness Checker Netherlands (Coming Soon)",
-        "description": "Check if key deregistration and closure steps are complete before leaving NL.",
-        "keywords": ["exit checklist Netherlands", "leaving Netherlands readiness"]
+        "title": "Exit Readiness Checker Netherlands",
+        "description": "Orientation checklist for leaving the Netherlands: municipality deregistration, housing, health insurance, toeslagen, payroll, and tax records. Not legal advice.",
+        "keywords": ["exit checklist Netherlands", "leaving Netherlands readiness", "deregistration Netherlands"]
       },
       "summary": "Check deregistration and closure readiness before leaving the Netherlands.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/leaving/"],
+      "relatedGuides": [
+        "/netherlands/leaving/",
+        "/netherlands/taxes/leaving-netherlands-tax/",
+        "/netherlands/moving/extensions-changes/"
+      ],
       "relatedTools": ["/netherlands/leaving/tools/repatriation-cost-calculator/"],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/leaving/tools/",
-      "exampleInputs": ["Departure date", "Contracts still active", "Tax obligations"],
-      "exampleOutputs": ["Exit readiness score", "Pending actions", "Evidence checklist"],
+      "exampleInputs": ["Departure timing", "Deregistration status", "Insurance and tax records"],
+      "exampleOutputs": ["Readiness band", "Pending actions", "Official next steps"],
       "mostUsefulFor": "Residents preparing an organized departure."
     },
     {
@@ -1754,25 +1802,29 @@
       "title": "Repatriation Cost Calculator",
       "slug": "repatriation-cost-calculator",
       "route": "/netherlands/leaving/tools/repatriation-cost-calculator/",
-      "status": "placeholder",
+      "status": "live",
       "templateType": "calculator",
       "categoryId": "leaving-nl",
       "menuGroup": "move",
       "seo": {
-        "title": "Repatriation Cost Calculator (Coming Soon)",
-        "description": "Estimate the main cost categories when leaving the Netherlands.",
-        "keywords": ["repatriation cost calculator", "leaving Netherlands budget"]
+        "title": "Repatriation Cost Calculator Netherlands",
+        "description": "Orientation budget ranges when leaving the Netherlands: flights, shipping, lease break risk, temporary housing, and pets. Not a mover quote.",
+        "keywords": ["repatriation cost calculator", "leaving Netherlands budget", "exit moving costs NL"]
       },
-      "summary": "Estimate costs related to exiting the Netherlands and relocating again.",
+      "summary": "Estimate logistics costs for exiting the Netherlands and relocating again.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/leaving/"],
+      "relatedGuides": [
+        "/netherlands/leaving/",
+        "/netherlands/taxes/leaving-netherlands-tax/",
+        "/netherlands/moving/extensions-changes/"
+      ],
       "relatedTools": ["/netherlands/leaving/tools/exit-readiness-checker/"],
       "affiliatePlacementIds": [],
       "affiliateCategories": ["international-moving"],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/leaving/tools/",
-      "exampleInputs": ["Destination", "Household size", "Move-out obligations"],
-      "exampleOutputs": ["Cost estimate", "Category breakdown", "Cash timing plan"],
+      "exampleInputs": ["Destination region", "Household size", "Shipping volume", "Temp housing"],
+      "exampleOutputs": ["Cost range", "Category breakdown", "Cash timing notes"],
       "mostUsefulFor": "Expats planning a financially smooth departure."
     },
     {

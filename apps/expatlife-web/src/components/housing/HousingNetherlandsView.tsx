@@ -46,6 +46,7 @@ import {
   DIGID_AWARENESS_PATH,
   ENERGY_AND_WATER_NETHERLANDS_PATH,
   BSN_REGISTRATION_PATH,
+  HOUSING_COSTS_NETHERLANDS_PATH,
   housingNetherlandsPage as page,
   INSURANCE_PROVIDERS_PATH,
   INTERNET_AND_MOBILE_NETHERLANDS_PATH,
@@ -79,13 +80,14 @@ function PremiumGuideSection({
 }: {
   id: string;
   intro: ReactNode;
-  visual: GuidePremiumVisual;
+  /** Omit on closing sections (FAQ/sources/related) — E4 HTML payload pass. */
+  visual?: GuidePremiumVisual;
   children: ReactNode;
 }) {
   return (
     <section id={id} className={sectionClass}>
       <div className={guidePremiumIntroStackClass}>{intro}</div>
-      <GuidePremiumVisualFigure visual={visual} className={visualAfterIntroClass} />
+      {visual ? <GuidePremiumVisualFigure visual={visual} className={visualAfterIntroClass} /> : null}
       <div className={guidePremiumSectionDetailStackClass}>{children}</div>
     </section>
   );
@@ -227,22 +229,6 @@ function FeatureGrid({ items }: { items: Array<{ title: string; body: string }> 
   );
 }
 
-function VisualTextDetails({ details }: { details: (typeof page.visualTextDetails)[keyof typeof page.visualTextDetails] }) {
-  return (
-    <aside className="rounded-3xl border border-slate-200/90 bg-slate-50/85 p-5 ring-1 ring-slate-900/[0.03]">
-      <h3 className="text-base font-black tracking-tight text-foreground">{details.title}</h3>
-      <ul className="mt-4 grid gap-3 md:grid-cols-2">
-        {details.items.map((item) => (
-          <li key={item} className="flex gap-3 text-sm leading-relaxed text-foreground-muted">
-            <Check className="mt-0.5 h-4 w-4 shrink-0 text-brand-strong" aria-hidden />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </aside>
-  );
-}
-
 function BulletPanel({ title, items }: { title: string; items: readonly string[] }) {
   return (
     <aside className={cn("relative overflow-hidden rounded-3xl border border-slate-200/90 bg-white/95 p-5 shadow-sm ring-1 ring-slate-900/[0.04]", movingNlCardMicroLiftClass)}>
@@ -379,30 +365,127 @@ function CityCostTable() {
         <table className="min-w-[900px] w-full text-left text-sm">
           <thead className="bg-slate-50 text-xs uppercase tracking-[0.12em] text-foreground-muted">
             <tr>
-              <th scope="col" className="px-4 py-4 font-bold">City</th>
-              <th scope="col" className="px-4 py-4 font-bold">Studio</th>
-              <th scope="col" className="px-4 py-4 font-bold">1 bedroom</th>
-              <th scope="col" className="px-4 py-4 font-bold">2 bedroom</th>
-              <th scope="col" className="px-4 py-4 font-bold">Family home</th>
+              <th scope="col" className="px-4 py-4 font-bold">
+                City
+              </th>
+              <th scope="col" className="px-4 py-4 font-bold">
+                Studio
+              </th>
+              <th scope="col" className="px-4 py-4 font-bold">
+                1 bedroom
+              </th>
+              <th scope="col" className="px-4 py-4 font-bold">
+                2 bedroom
+              </th>
+              <th scope="col" className="px-4 py-4 font-bold">
+                Family home
+              </th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">
             {page.cityCostRows.map((row) => (
               <tr key={row.city} className="hover:bg-slate-50/70">
-                <th scope="row" className="px-4 py-4 font-bold text-foreground">{row.city}</th>
-                <td className="px-4 py-4 text-foreground-muted">{row.studio}</td>
-                <td className="px-4 py-4 text-foreground-muted">{row.oneBed}</td>
-                <td className="px-4 py-4 text-foreground-muted">{row.twoBed}</td>
-                <td className="px-4 py-4 text-foreground-muted">{row.family}</td>
+                <th scope="row" className="px-4 py-4 font-bold text-foreground">
+                  {row.city}
+                </th>
+                <td className="px-4 py-4 font-semibold tabular-nums text-foreground">{row.studio}</td>
+                <td className="px-4 py-4 font-semibold tabular-nums text-foreground">{row.oneBed}</td>
+                <td className="px-4 py-4 font-semibold tabular-nums text-foreground">{row.twoBed}</td>
+                <td className="px-4 py-4 font-semibold tabular-nums text-foreground">{row.family}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
       <p className="border-t border-slate-100 px-4 py-3 text-xs leading-relaxed text-foreground-muted">
-        Example monthly rent ranges for orientation only — not quotes or guarantees. Verify current listings locally.
+        Orientation monthly rent bands ({page.rentBenchmarks.asOfLabel}). Not quotes. Utilities usually extra. See dated
+        Amsterdam / Eindhoven / Groningen panel for source and €/m² signals.
       </p>
     </div>
+  );
+}
+
+function RentBenchmarkPanel() {
+  const b = page.rentBenchmarks;
+  return (
+    <section
+      id={b.id}
+      className="scroll-mt-28 space-y-4 rounded-3xl border border-copilot-primary/15 bg-white p-5 shadow-sm ring-1 ring-copilot-primary/10 md:scroll-mt-32 md:p-6"
+    >
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <p className="text-xs font-black uppercase tracking-[0.14em] text-brand-strong">Dated rent bands</p>
+          <h3 className="mt-2 text-xl font-black tracking-tight text-foreground md:text-2xl">{b.heading}</h3>
+        </div>
+        <div className="rounded-full bg-copilot-bg-soft px-3 py-1.5 text-xs font-bold text-copilot-text-primary ring-1 ring-copilot-primary/10">
+          {b.asOfLabel}
+        </div>
+      </div>
+
+      <p className="text-sm leading-relaxed text-foreground-muted">{b.nationalSignal}</p>
+      <p className="text-sm leading-relaxed text-foreground-muted">{b.methodology}</p>
+      <p className="text-sm text-foreground-muted">
+        Source:{" "}
+        <a
+          href={b.sourceHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-brand-600 underline-offset-2 hover:underline"
+        >
+          {b.sourceName} <ExternalLink className="inline h-3.5 w-3.5" aria-hidden />
+        </a>
+      </p>
+
+      <div className="overflow-hidden rounded-2xl border border-slate-200">
+        <div className="overflow-x-auto">
+          <table className="min-w-[760px] w-full text-left text-sm">
+            <thead className="bg-slate-50 text-xs uppercase tracking-[0.12em] text-foreground-muted">
+              <tr>
+                <th scope="col" className="px-4 py-3 font-bold">
+                  City
+                </th>
+                <th scope="col" className="px-4 py-3 font-bold">
+                  Free-sector €/m²
+                </th>
+                <th scope="col" className="px-4 py-3 font-bold">
+                  Studio
+                </th>
+                <th scope="col" className="px-4 py-3 font-bold">
+                  1 bedroom
+                </th>
+                <th scope="col" className="px-4 py-3 font-bold">
+                  2 bedroom
+                </th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-slate-100">
+              {b.cities.map((row) => (
+                <tr key={row.city} className="hover:bg-slate-50/70">
+                  <th scope="row" className="px-4 py-3.5 font-bold text-foreground">
+                    <Link href={row.href} className="text-brand-600 hover:underline">
+                      {row.city}
+                    </Link>
+                  </th>
+                  <td className="px-4 py-3.5 font-semibold tabular-nums text-foreground">{row.eurPerSqm}</td>
+                  <td className="px-4 py-3.5 font-semibold tabular-nums text-foreground">{row.studio}</td>
+                  <td className="px-4 py-3.5 font-semibold tabular-nums text-foreground">{row.oneBed}</td>
+                  <td className="px-4 py-3.5 font-semibold tabular-nums text-foreground">{row.twoBed}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <ul className="grid gap-3 md:grid-cols-3">
+        {b.cities.map((row) => (
+          <li key={`${row.city}-note`} className="rounded-2xl bg-copilot-bg-soft/70 p-3 text-sm text-foreground-muted ring-1 ring-copilot-primary/10">
+            <p className="font-bold text-foreground">{row.city}</p>
+            <p className="mt-1 leading-relaxed">{row.note}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
   );
 }
 
@@ -550,15 +633,8 @@ export function HousingNetherlandsView() {
               }
               visual={page.visuals.overview}
             >
-              <VisualTextDetails details={page.visualTextDetails.overview} />
               <QuickAnswerBox />
-              <div className="space-y-3">
-                <h3 className="text-lg font-black tracking-tight text-foreground">Example monthly rent ranges (EUR)</h3>
-                <p className="text-sm leading-relaxed text-foreground-muted">
-                  Orientation only — verify current listings locally before you budget. Full cost context is in the costs section below.
-                </p>
-                <CityCostTable />
-              </div>
+              <RentBenchmarkPanel />
               <FeatureGrid items={page.snapshotCards} />
               <BulletPanel title={page.visualTextDetails.snapshot.title} items={page.visualTextDetails.snapshot.items} />
               <GuideCrossLink
@@ -578,19 +654,16 @@ export function HousingNetherlandsView() {
             </PremiumGuideSection>
 
             <PremiumGuideSection id="market" intro={<SectionIntro title={page.market.heading}>{page.market.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.market}>
-              <VisualTextDetails details={page.visualTextDetails.market} />
               <TipCardGrid items={page.marketSegments} icon={Building2} />
               <BulletPanel title="Supply and demand reality" items={page.marketSupplyTips} />
             </PremiumGuideSection>
 
             <PremiumGuideSection id="rent-vs-buy" intro={<SectionIntro title={page.rentVsBuy.heading}>{page.rentVsBuy.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.rentVsBuy}>
-              <VisualTextDetails details={page.visualTextDetails.rentVsBuy} />
               <RentVsBuyTable />
               <LinkCardGrid items={[{ label: "Buy vs Rent Guide", href: BUY_VS_RENT_NETHERLANDS_PATH, status: "live", description: "Deeper financial and lifestyle comparison for expats." }]} />
             </PremiumGuideSection>
 
             <PremiumGuideSection id="renting" intro={<SectionIntro title={page.renting.heading}>{page.renting.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.renting}>
-              <VisualTextDetails details={page.visualTextDetails.renting} />
               <TipCardGrid items={page.rentingTopics} icon={Home} />
               <BulletPanel title="Documents to prepare before viewings" items={page.rentingDocumentChecklist} />
               <LinkCardGrid items={[
@@ -607,7 +680,6 @@ export function HousingNetherlandsView() {
             </PremiumGuideSection>
 
             <PremiumGuideSection id="buying" intro={<SectionIntro title={page.buying.heading}>{page.buying.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.buying}>
-              <VisualTextDetails details={page.visualTextDetails.buying} />
               <TipCardGrid items={page.buyingTopics} icon={Building2} />
               <LinkCardGrid items={[
                 { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Purchase process, kosten koper and bidding strategy." },
@@ -616,9 +688,21 @@ export function HousingNetherlandsView() {
             </PremiumGuideSection>
 
             <PremiumGuideSection id="costs" intro={<SectionIntro title={page.housingCosts.heading}>{page.housingCosts.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.costs}>
-              <VisualTextDetails details={page.visualTextDetails.costs} />
+              <p className="text-sm leading-relaxed text-foreground-muted">
+                Dated Amsterdam / Eindhoven / Groningen bands with source sit in{" "}
+                <a href="#rent-bands" className="font-semibold text-brand-600 hover:underline">
+                  Rent € bands
+                </a>{" "}
+                above. Profiles and the wider city table below expand the same orientation window.
+              </p>
               <CostExampleGrid items={page.housingCostExamples} />
-              <CityCostTable />
+              <div className="space-y-3">
+                <h3 className="text-lg font-black tracking-tight text-foreground">Wider city rent bands (orientation)</h3>
+                <p className="text-sm leading-relaxed text-foreground-muted">
+                  Same as-of window as the trio panel. Rotterdam / The Hague / Utrecht included for Randstad comparison.
+                </p>
+                <CityCostTable />
+              </div>
               <GuideCrossLink
                 href={RENT_AFFORDABILITY_TOOL_PATH}
                 title="Check rent against your income"
@@ -626,10 +710,16 @@ export function HousingNetherlandsView() {
                 linkLabel="Open rent calculator"
                 icon={ClipboardList}
               />
+              <GuideCrossLink
+                href={HOUSING_COSTS_NETHERLANDS_PATH}
+                title="Housing costs deep-dive"
+                description="Utilities, insurance, municipal charges and more cost scenarios beyond headline rent."
+                linkLabel="Open housing costs guide"
+                icon={Home}
+              />
             </PremiumGuideSection>
 
             <PremiumGuideSection id="cities" intro={<SectionIntro title={page.citiesSection.heading}>{page.citiesSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.cities}>
-              <VisualTextDetails details={page.visualTextDetails.cities} />
               <CityHousingCardGrid items={page.cityCards} />
               <GuideCrossLink
                 href={CITIES_HUB_PATH}
@@ -641,14 +731,12 @@ export function HousingNetherlandsView() {
             </PremiumGuideSection>
 
             <PremiumGuideSection id="temporary" intro={<SectionIntro title={page.temporary.heading}>{page.temporary.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.temporary}>
-              <VisualTextDetails details={page.visualTextDetails.temporary} />
               <TipCardGrid items={page.temporaryOptions} icon={Home} />
               <BulletPanel title="Temporary stay planning tips" items={page.temporaryPlanningTips} />
               <LinkCardGrid items={[{ label: "Temporary accommodation guide", href: TEMPORARY_ACCOMMODATION_NETHERLANDS_PATH, status: "comingSoon", description: "Short-stay options, registration rules and arrival windows." }]} />
             </PremiumGuideSection>
 
             <PremiumGuideSection id="utilities" intro={<SectionIntro title={page.utilitiesSection.heading}>{page.utilitiesSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.utilities}>
-              <VisualTextDetails details={page.visualTextDetails.utilities} />
               <TipCardGrid items={page.utilityTopics} icon={Zap} />
               <LinkCardGrid items={[
                 { label: "Utilities Guide", href: UTILITIES_NETHERLANDS_PATH, status: "live", description: "Complete utilities setup after move-in." },
@@ -658,14 +746,12 @@ export function HousingNetherlandsView() {
             </PremiumGuideSection>
 
             <PremiumGuideSection id="insurance" intro={<SectionIntro title={page.insurance.heading}>{page.insurance.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.insurance}>
-              <VisualTextDetails details={page.visualTextDetails.insurance} />
               <TipCardGrid items={page.insuranceTopics} icon={Shield} />
               <BulletPanel title="Cover by renter or owner" items={page.insuranceByRoleTips} />
               <LinkCardGrid items={[{ label: "Insurance Providers", href: INSURANCE_PROVIDERS_PATH, status: "live", description: "Compare contents, home and liability cover." }]} />
             </PremiumGuideSection>
 
             <PremiumGuideSection id="municipality" intro={<SectionIntro title={page.municipality.heading}>{page.municipality.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.municipality}>
-              <VisualTextDetails details={page.visualTextDetails.municipality} />
               <BulletPanel title="Registration checklist" items={page.municipalitySteps} />
               <LinkCardGrid items={[
                 { label: "Municipality Services", href: MUNICIPALITY_SERVICES_PATH, status: "live", description: "Gemeente registration, BSN, taxes and local rules." },
@@ -675,7 +761,6 @@ export function HousingNetherlandsView() {
             </PremiumGuideSection>
 
             <PremiumGuideSection id="mortgages" intro={<SectionIntro title={page.mortgages.heading}>{page.mortgages.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.mortgages}>
-              <VisualTextDetails details={page.visualTextDetails.mortgages} />
               <TipCardGrid items={page.mortgageTopics} icon={Landmark} />
               <BulletPanel title="Pre-approval preparation" items={page.mortgagePreApprovalSteps} />
               <LinkCardGrid items={[
@@ -685,13 +770,11 @@ export function HousingNetherlandsView() {
             </PremiumGuideSection>
 
             <PremiumGuideSection id="life-stage" intro={<SectionIntro title={page.lifeStageSection.heading}>{page.lifeStageSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.lifeStage}>
-              <VisualTextDetails details={page.visualTextDetails.lifeStage} />
               <TipCardGrid items={page.lifeStages} icon={Users} />
               <BulletPanel title="Decision prompts by profile" items={page.lifeStageDecisionTips} />
             </PremiumGuideSection>
 
             <PremiumGuideSection id="checklist" intro={<SectionIntro title={page.checklistSection.heading}>{page.checklistSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.checklist}>
-              <VisualTextDetails details={page.visualTextDetails.checklist} />
               <SetupPhaseCards />
               <div className="grid gap-3 md:grid-cols-2">
                 {page.housingChecklist.map((item) => (
@@ -704,7 +787,6 @@ export function HousingNetherlandsView() {
             </PremiumGuideSection>
 
             <PremiumGuideSection id="mistakes" intro={<SectionIntro title={page.mistakesSection.heading}>{page.mistakesSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.mistakes}>
-              <VisualTextDetails details={page.visualTextDetails.mistakes} />
               <TipCardGrid items={page.commonMistakes} icon={ClipboardList} />
               <GuideCrossLink
                 href={BUY_VS_RENT_NETHERLANDS_PATH}
@@ -715,8 +797,7 @@ export function HousingNetherlandsView() {
               />
             </PremiumGuideSection>
 
-            <PremiumGuideSection id="guides" intro={<SectionIntro title={page.guidesSection.heading}>{page.guidesSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.guides}>
-              <VisualTextDetails details={page.visualTextDetails.guides} />
+            <PremiumGuideSection id="guides" intro={<SectionIntro title={page.guidesSection.heading}>{page.guidesSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>}>
               <div className={guidePremiumCardGridClass(page.featuredGuides.length)}>
                 {page.featuredGuides.map((item) => (
                   <LinkOrPlanned key={item.label} item={item} />
@@ -733,9 +814,7 @@ export function HousingNetherlandsView() {
                   ))}
                 </SectionIntro>
               }
-              visual={page.visuals.futureGuides}
             >
-              <VisualTextDetails details={page.visualTextDetails.futureGuides} />
               <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
                 {page.futureGuides.map((item) => (
                   <LinkOrPlanned key={item.href} item={item} />
@@ -743,13 +822,11 @@ export function HousingNetherlandsView() {
               </div>
             </PremiumGuideSection>
 
-            <PremiumGuideSection id="faq" intro={<SectionIntro title={page.faqSection.heading}>{page.faqSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.faq}>
-              <VisualTextDetails details={page.visualTextDetails.faq} />
+            <PremiumGuideSection id="faq" intro={<SectionIntro title={page.faqSection.heading}>{page.faqSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>}>
               <Accordion items={faqAccordionItems} allowMultiple initialOpenId="faq-0" density="comfortable" tone="copilot" />
             </PremiumGuideSection>
 
-            <PremiumGuideSection id="sources" intro={<SectionIntro title={page.sourcesSection.heading}>{page.sourcesSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.sources}>
-              <VisualTextDetails details={page.visualTextDetails.sources} />
+            <PremiumGuideSection id="sources" intro={<SectionIntro title={page.sourcesSection.heading}>{page.sourcesSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>}>
               <BulletPanel title="How to use these resources" items={page.sourceUsageTips} />
               <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
                 {page.officialSources.map((source) => (
@@ -763,8 +840,7 @@ export function HousingNetherlandsView() {
               </div>
             </PremiumGuideSection>
 
-            <PremiumGuideSection id="related-guides" intro={<SectionIntro title={page.relatedSection.heading}>{page.relatedSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>} visual={page.visuals.relatedGuides}>
-              <VisualTextDetails details={page.visualTextDetails.relatedGuides} />
+            <PremiumGuideSection id="related-guides" intro={<SectionIntro title={page.relatedSection.heading}>{page.relatedSection.paragraphs.map((p) => <p key={p}>{p}</p>)}</SectionIntro>}>
               <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
                 {page.relatedGuides.map((item) => (
                   <LinkOrPlanned key={item.label} item={item} />
@@ -778,7 +854,6 @@ export function HousingNetherlandsView() {
                 <SectionIntro eyebrow="Explore next" title="Plan Your Next Housing Step" tone="onDark">
                   <p>Move from this housing overview into renting, buying, mortgage, utilities and insurance guides.</p>
                 </SectionIntro>
-                <GuidePremiumVisualFigure visual={page.visuals.exploreNext} tone="onDark" className={visualAfterIntroClass} />
                 <div className={guidePremiumSectionDetailStackClass}>
                   <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {page.exploreNextCards.map((item, index) => (

@@ -1015,6 +1015,46 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Residence permits", "/netherlands/moving/residence-permits/"),
           item("Extensions & changes", "/netherlands/moving/extensions-changes/"),
           item("Status changes", "/netherlands/moving/status-changes/"),
+          item(
+            "Permanent residence",
+            "/netherlands/citizenship/permanent-residence/",
+            "Five-year routes, absences, and IND next steps after HSM or other lawful stay."
+          ),
+          item(
+            "Inburgering",
+            "/netherlands/integration/inburgering/",
+            "Integration duty, exams, and planning before PR or citizenship."
+          ),
+          item(
+            "Dutch citizenship",
+            "/netherlands/citizenship/dutch-citizenship/",
+            "Naturalisation vs option, dual nationality caveats, and what inburgering unlocks."
+          ),
+        ],
+      },
+      {
+        title: "Leaving",
+        items: [
+          item(
+            "Leaving the Netherlands",
+            "/netherlands/leaving/",
+            "End-to-end exit journey: timeline, deregistration, insurance, 30% end, PR consequences and tax links."
+          ),
+          item(
+            "Leaving tools hub",
+            "/netherlands/leaving/tools/",
+            "Exit readiness checker and repatriation cost calculator."
+          ),
+          item(
+            "Exit readiness checker",
+            "/netherlands/leaving/tools/exit-readiness-checker/",
+            "Sequence deregistration, insurance, toeslagen and tax records."
+          ),
+          item(
+            "Repatriation cost calculator",
+            "/netherlands/leaving/tools/repatriation-cost-calculator/",
+            "Orientation budget ranges for flights, shipping and housing."
+          ),
         ],
       },
       {
@@ -1398,6 +1438,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "30% ruling in the Netherlands",
             "/netherlands/taxes/30-percent-ruling/",
             "Taxes guide: what the 30% facility is, employer involvement, eligibility, changes, and official sources."
+          ),
+          item(
+            "Netherlands official figures 2026",
+            "/netherlands/official-figures/",
+            "Dated citation table: HSM floors, IND fees, 30% norms/cap, adult minimum wage, eigen risico, basic-premium band."
           ),
           item(
             "Double taxation in the Netherlands",
@@ -2377,7 +2422,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         items: [
           item("Dutch language basics", "/netherlands/culture/dutch-language-basics/", "Starter phrases and patterns."),
           item("Learning Dutch", "/netherlands/culture/learning-dutch/", "Courses, practice, and pace."),
-          item("Inburgering exams", "/netherlands/culture/inburgering-exams/", "Exams and preparation framing."),
+          item("Inburgering guide", "/netherlands/integration/inburgering/", "Wi 2021 / B1, HSM vs obligation, KNM from July 2025."),
           item("Practice scenarios", "/netherlands/culture/practice-scenarios/", "Real-life speaking prompts."),
           item("Family and school culture", "/netherlands/culture/family-and-school-culture/", "School rhythms for families."),
           item("Health system culture basics", "/netherlands/culture/health-system-culture-basics/", "How care interactions often feel."),

@@ -307,10 +307,10 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
       linkLabel: "IND — required amounts",
     },
     ctaBlock: {
-      title: "Estimate your relocation cost",
-      supportingText: "Use the Relocation Cost Estimator to plan your first-year costs for an employer-sponsored move.",
-      primaryLabel: "Estimate your relocation cost →",
-      primaryHref: `${TOOLS}/relocation-cost-estimator/`,
+      title: "Check your offer against HSM salary floors",
+      supportingText: "Use the HSM Salary Checker to compare a gross monthly figure to age-band and reduced-criterion planning amounts — then confirm on IND.",
+      primaryLabel: "Open HSM Salary Checker →",
+      primaryHref: `${TOOLS}/hsm-salary-checker/`,
     },
   };
 
@@ -574,6 +574,7 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     sidebarStartLinks: [
       { label: "Compare visa options", href: COMPARE_VISAS_HREF },
       { label: "Visa checker", href: `${BASE}/visa-checker/` },
+      { label: "HSM salary checker", href: `${TOOLS}/hsm-salary-checker/` },
       { label: "Visa timeline estimator", href: `${BASE}/visa-timeline-estimator/` },
       { label: "Check document readiness", href: DOCUMENT_READINESS_CHECKER },
       { label: "Estimate relocation cost", href: `${TOOLS}/relocation-cost-estimator/` },
@@ -582,9 +583,9 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     ],
     toolsCtaBand: {
       title: "Turn this visa into a practical move plan",
-      body: "Want to estimate how long this route may take? Use the Visa Timeline Estimator. Not sure if this visa fits you? Use the visa checker. Then use the Relocation Cost Estimator, Moving Checklist, First 90 Days Planner, Document Readiness Checker, and Arrival Planner to plan your move step by step.",
-      primaryLabel: "Check your document readiness",
-      primaryHref: DOCUMENT_READINESS_CHECKER,
+      body: "Start with the HSM Salary Checker against IND floors, then estimate costs and documents. Use the Visa Timeline Estimator and visa checker if you are still comparing routes.",
+      primaryLabel: "HSM Salary Checker",
+      primaryHref: `${TOOLS}/hsm-salary-checker/`,
       secondaryLabel: "Estimate your relocation cost",
       secondaryHref: `${TOOLS}/relocation-cost-estimator/`,
       tertiaryLabel: "Generate a moving checklist",

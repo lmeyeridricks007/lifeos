@@ -13,6 +13,8 @@ const nextConfig = {
     },
   },
   async redirects() {
+    // When adding a static permanent redirect whose `source` is also in LIVE_PATHS,
+    // regenerate `src/data/site/sitemap-redirect-aliases.ts` so `/sitemap.xml` stays canonical-only.
     return [
       {
         source: "/netherlands/moving",
@@ -61,6 +63,26 @@ const nextConfig = {
       },
       {
         source: "/netherlands/dutch-citizenship-netherlands/",
+        destination: "/netherlands/citizenship/dutch-citizenship/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/citizenship/naturalisation",
+        destination: "/netherlands/citizenship/dutch-citizenship/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/citizenship/naturalisation/",
+        destination: "/netherlands/citizenship/dutch-citizenship/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/citizenship/naturalization",
+        destination: "/netherlands/citizenship/dutch-citizenship/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/citizenship/naturalization/",
         destination: "/netherlands/citizenship/dutch-citizenship/",
         permanent: true,
       },
@@ -472,6 +494,37 @@ const nextConfig = {
       {
         source: "/netherlands/work/work-culture-netherlands/",
         destination: "/netherlands/jobs/dutch-workplace-culture/",
+        permanent: true,
+      },
+      // E2 (EC-20260826-013): one workplace-culture URL — culture alias → jobs guide (not a second etiquette page).
+      {
+        source: "/netherlands/culture/dutch-workplace-culture",
+        destination: "/netherlands/jobs/dutch-workplace-culture/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/dutch-workplace-culture/",
+        destination: "/netherlands/jobs/dutch-workplace-culture/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/inburgering-exams",
+        destination: "/netherlands/integration/inburgering/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/culture/inburgering-exams/",
+        destination: "/netherlands/integration/inburgering/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/language/inburgering-exams",
+        destination: "/netherlands/integration/inburgering/",
+        permanent: true,
+      },
+      {
+        source: "/netherlands/language/inburgering-exams/",
+        destination: "/netherlands/integration/inburgering/",
         permanent: true,
       },
       {
@@ -1135,12 +1188,24 @@ const nextConfig = {
     ],
   },
   async headers() {
+    /** E3: keep `/sitemap.xml` off RSC Vary fragmentation at the edge (also set in route handler). */
+    const sitemapXmlHeaders = [
+      {
+        source: "/sitemap.xml",
+        headers: [
+          { key: "Content-Type", value: "application/xml; charset=utf-8" },
+          { key: "Vary", value: "Accept-Encoding" },
+        ],
+      },
+    ];
+
     if (process.env.NODE_ENV === "development") {
       return [
         {
           source: "/_next/static/:path*",
           headers: [{ key: "Cache-Control", value: "no-store" }],
         },
+        ...sitemapXmlHeaders,
       ];
     }
 
@@ -1149,6 +1214,7 @@ const nextConfig = {
         source: "/_next/static/:path*",
         headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],
       },
+      ...sitemapXmlHeaders,
     ];
   },
 };

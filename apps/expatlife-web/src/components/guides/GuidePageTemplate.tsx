@@ -53,6 +53,7 @@ import {
 import { cn } from "@/lib/cn";
 import { resolveGuideSectionServices } from "@/src/lib/guides/resolveGuideSectionServices";
 import { GuideBodyParagraphs } from "@/src/components/guides/GuideBodyParagraphs";
+import { GuideHeroTrustMeta } from "@/src/components/guides/GuideHeroTrustMeta";
 import { guideCtaBandClass, guidePrimaryCtaClass, guideSecondaryCtaClass, toolMainSurfaceClass } from "@/lib/ui/page-family";
 import {
   movingNlCardMicroLiftClass,
@@ -1632,26 +1633,12 @@ export function GuidePageTemplate({
                       ))}
                     </div>
                   ) : null}
-                  {data.lastUpdated ? (
-                    <p className="text-sm font-medium text-foreground-muted">{data.lastUpdated}</p>
-                  ) : null}
-                  {data.heroOfficialSources?.length ? (
-                    <p className="text-sm text-foreground-muted">
-                      Official sources:{" "}
-                      {data.heroOfficialSources.map((source, index) => (
-                        <span key={source.href}>
-                          {index > 0 ? " · " : null}
-                          <a
-                            href={source.href}
-                            className="font-semibold text-link hover:text-link-hover"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            {source.label}
-                          </a>
-                        </span>
-                      ))}
-                    </p>
+                  {data.lastUpdated || data.heroOfficialSources?.length ? (
+                    <GuideHeroTrustMeta
+                      className="mt-0"
+                      lastReviewedText={data.lastUpdated}
+                      sources={data.heroOfficialSources}
+                    />
                   ) : null}
                 </div>
               ) : undefined

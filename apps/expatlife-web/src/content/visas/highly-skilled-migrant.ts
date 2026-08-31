@@ -183,7 +183,7 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
     },
     {
       q: "How long can I stay on a highly skilled migrant permit, and can it lead to permanent residence?",
-      a: "HSM permits are temporary and tied to recognized-sponsor employment. IND may grant validity for the employment period up to a maximum stated on your decision letter — expat planning often references five years, but verify yours. Permanent residence is a separate IND application after qualifying lawful stay, with continuity, absence, income, and integration rules. Lawful years on compliant HSM status may count when requirements align, but HSM is not the same as permanent residence. See the long-term stay section on this page and our permanent residence and inburgering guides; confirm criteria on ind.nl/en/permanent-residence-permit.",
+      a: "HSM permits are temporary and tied to recognized-sponsor employment. IND may grant validity for the employment period up to a maximum stated on your decision letter — expat planning often references five years, but verify yours. Permanent residence is a separate IND application after qualifying lawful stay, with continuity, absence, income, and integration rules. Lawful years on compliant HSM status may count when requirements align, but HSM is not the same as permanent residence. See the long-term stay section on this page and our permanent residence and inburgering guides; confirm criteria on the IND permanent residence permit page.",
     },
     {
       q: "What is a highly skilled migrant visa in the Netherlands?",
@@ -232,6 +232,7 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
   ],
 
   relatedGuides: [
+    { label: "Netherlands official figures 2026", href: "/netherlands/official-figures/" },
     { label: "EU vs Non-EU Moving to the Netherlands", href: `${BASE}/eu-vs-non-eu-moving-to-netherlands/` },
     { label: "Move to the Netherlands without a job", href: `${BASE}/move-to-netherlands-without-job/` },
     { label: "30% Ruling in the Netherlands", href: `${BASE}/taxes/30-percent-ruling/` },
@@ -280,6 +281,12 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
   ],
 
   toolCtas: [
+    {
+      key: "hsm-salary-checker",
+      label: "HSM Salary Checker",
+      href: `${TOOLS}/hsm-salary-checker/`,
+      description: "Compare your offer to IND Highly Skilled Migrant salary floors before you sign.",
+    },
     {
       key: "visa-cost-calculator",
       label: "Visa Cost Calculator",

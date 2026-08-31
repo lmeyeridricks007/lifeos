@@ -45,6 +45,7 @@ import { MovePillarExploreGrid } from "@/src/components/moving/MovePillarExplore
 import { VisasResidencyOfficialSources } from "@/src/components/moving/visas-residency/VisasResidencyOfficialSources";
 import { MoneyTaxLearningPath } from "@/src/components/money/tax-cluster/MoneyTaxLearningPath";
 import { TaxClusterToolsSection } from "@/src/components/money/tax-cluster/TaxClusterToolsSection";
+import { GuideHeroTrustMeta } from "@/src/components/guides/GuideHeroTrustMeta";
 import { THIRTY_PERCENT_RULING_NL_PATH, taxGuideRoutes } from "@/src/components/money/tax-guide-for-expats/taxGuideRoutes";
 import {
   thirtyPercentRulingNlExploreCards,
@@ -187,22 +188,7 @@ export function ThirtyPercentRulingNlView() {
                       ) : null}
                     </div>
                     {"heroOfficialSources" in meta.hero && meta.hero.heroOfficialSources?.length ? (
-                      <p className="mb-3 text-sm text-foreground-muted">
-                        Official sources:{" "}
-                        {meta.hero.heroOfficialSources.map((source, index) => (
-                          <span key={source.href}>
-                            {index > 0 ? " · " : null}
-                            <a
-                              href={source.href}
-                              className="font-semibold text-link hover:text-link-hover"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              {source.label}
-                            </a>
-                          </span>
-                        ))}
-                      </p>
+                      <GuideHeroTrustMeta className="mb-3" sources={meta.hero.heroOfficialSources} />
                     ) : null}
                     <ul className="max-w-2xl space-y-2 text-sm leading-relaxed text-foreground-muted sm:space-y-2.5 sm:text-[0.9375rem]" role="list">
                       {meta.hero.bullets.map((bullet) => (

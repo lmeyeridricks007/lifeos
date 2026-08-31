@@ -10,9 +10,9 @@ const PATH = "/netherlands/citizenship/permanent-residence/";
 export const revalidate = CONTENT_REVALIDATE;
 
 export const metadata: Metadata = buildSocialMetadata({
-  title: "Permanent Residence in the Netherlands: Routes, Requirements & Next Steps",
+  title: "Permanent Residence in the Netherlands: HSM, 5 Years & IND Next Steps",
   description:
-    "A practical guide to permanent residence in the Netherlands for expats: EU long-term resident status, Dutch permanent residence, typical residence periods, and official next steps.",
+    "Permanent residence after HSM or other lawful stay: five-year path, inburgering vs exemption, job changes near year five, and what PR is not (citizenship). Orientation only — confirm on IND.",
   path: PATH,
   ogType: "article",
   publishGate: { publish: true, publishDate: LONG_TERM_STAY_CLUSTER_PUBLISH_DATE },

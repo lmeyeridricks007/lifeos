@@ -17,7 +17,7 @@ export const FIRST_90_DAYS_TOOL_PATH = "/netherlands/moving/tools/first-90-days/
 export const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling/" as const;
 
 /** Editorial go-live for the IND 22 May 2026 job-search cluster refresh. */
-export const HSM_JOB_LOSS_CLUSTER_PUBLISH_DATE = "2026-11-12" as const;
+export const HSM_JOB_LOSS_CLUSTER_PUBLISH_DATE = "2026-08-30" as const;
 
 export const hsmJobLossNextSteps = [
   {

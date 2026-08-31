@@ -271,6 +271,7 @@ const EXTRA_LIVE_PATHS = [
   "/editorial-policy/",
   "/methodology/",
   "/sources/",
+  "/netherlands/official-figures/",
   "/how-we-rank-services/",
   "/affiliate-disclosure/",
   "/sitemap/",
@@ -494,6 +495,8 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/taxes/taxes-after-moving-netherlands/",
   /** Live App Router guide — exit tax considerations for expats leaving the Netherlands. */
   "/netherlands/taxes/leaving-netherlands-tax/",
+  /** Live App Router guide — end-to-end exit journey for expats leaving the Netherlands. */
+  "/netherlands/leaving/",
   /** Legacy flat URL; 301 → canonical double taxation guide — keep live so nav never surfaces as “Soon”. */
   "/netherlands/double-taxation-netherlands/",
   "/netherlands/taxes/healthcare-allowance-netherlands/",
@@ -575,6 +578,11 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/notice-period-netherlands/",
   "/netherlands/jobs/employee-rights-netherlands/",
   "/netherlands/jobs/dutch-workplace-culture/",
+  /**
+   * E2 (EC-20260826-013): Culture-cluster alias — 308 → jobs guide (one workplace-culture URL).
+   * Keep live for leftover hrefs; exclude via `SITEMAP_PERMANENT_REDIRECT_ALIASES`. Cluster entry is `hidden`.
+   */
+  "/netherlands/culture/dutch-workplace-culture/",
   "/netherlands/jobs/dutch-directness-at-work/",
   /** Legacy Culture-cluster URL (301 → canonical jobs guide). */
   "/netherlands/culture/dutch-directness-at-work/",
@@ -586,7 +594,10 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/culture/dutch-holidays-and-traditions/",
   "/netherlands/jobs/freelancing-netherlands/",
   "/netherlands/jobs/starting-consultancy-netherlands/",
-  /** Legacy Work-cluster URL (301 → canonical workplace culture guide). */
+  /**
+   * Legacy Work-cluster URL — 308 → `/netherlands/jobs/dutch-workplace-culture/`.
+   * Keep live so leftover hrefs do not show “Soon”; must stay in `SITEMAP_PERMANENT_REDIRECT_ALIASES` (E1).
+   */
   "/netherlands/work/work-culture-netherlands/",
   /** Live App Router guide — contractor vs employee comparison (Jobs & salaries cluster). */
   "/netherlands/jobs/contractor-vs-employee-netherlands/",
@@ -650,7 +661,7 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/work/changing-jobs-netherlands/",
   /** Legacy Work-cluster URL; 301 → Move guide. */
   "/netherlands/work/resigning-job-netherlands/",
-  /** Legacy Work-cluster URL; 301 → Move guide. */
+  /** Legacy Work-cluster URL; 308 → Move guide. Keep live for nav helpers; exclude via sitemap-redirect-aliases (E1). */
   "/netherlands/work/layoffs-netherlands/",
   /** Legacy Work-cluster URL; 301 → `/netherlands/taxes/bonus-tax-netherlands/`. */
   "/netherlands/work/bonus-tax-netherlands/",

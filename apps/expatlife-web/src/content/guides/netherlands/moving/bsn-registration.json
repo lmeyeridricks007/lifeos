@@ -6,7 +6,7 @@
   "subtitle": "How expats receive a BSN (citizen service number) when registering with a Dutch municipality.",
   "description": "Learn how BSN registration works in the Netherlands. Understand when expats receive a citizen service number, which documents may be requested, and what to arrange next.",
   "breadcrumbLabel": "BSN registration",
-  "lastUpdated": "Last reviewed: 26 August 2026",
+  "lastUpdated": "Last reviewed: 30 August 2026",
   "heroOfficialSources": [
     {
       "label": "Government.nl — Burgerservicenummer (BSN)",
@@ -15,6 +15,18 @@
     {
       "label": "Government.nl — Registering your address",
       "href": "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/how-do-i-register-my-address-in-the-netherlands"
+    },
+    {
+      "label": "Amsterdam — City Office immigration appointment",
+      "href": "https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/AfspraakImmigratieENG.aspx/"
+    },
+    {
+      "label": "The Hague — Moving and immigration",
+      "href": "https://www.denhaag.nl/en/moving-and-immigration/"
+    },
+    {
+      "label": "Eindhoven — Online appointment booking",
+      "href": "https://eindhoven.mijnafspraakmaken.nl/client/"
     }
   ],
   "hero": {
@@ -32,7 +44,7 @@
     { "id": "bsn-registration-timeline", "label": "BSN registration timeline" },
     { "id": "documents", "label": "Documents often requested during registration" },
     { "id": "where-you-register", "label": "Where you register for a BSN" },
-    { "id": "appointment-timing", "label": "When expats usually schedule their appointment" },
+    { "id": "appointment-timing", "label": "City appointment booking (Amsterdam / The Hague / Eindhoven)" },
     { "id": "what-next", "label": "What expats typically arrange next" },
     { "id": "tools", "label": "Tools" },
     { "id": "faq", "label": "FAQ" },
@@ -150,7 +162,7 @@
       "id": "bsn-registration-timeline",
       "heading": "BSN registration timeline",
       "body": [
-        "A typical flow for most expats helps you see when and how BSN registration fits into the arrival sequence. Many expats complete these steps within their first days or weeks after arrival. Busy municipalities may have longer waits for appointments; registration timing can affect when you can arrange banking, insurance, and other admin."
+        "A typical flow for most expats helps you see when and how BSN registration fits into the arrival sequence. Many expats complete these steps within their first days or weeks after arrival. Appointment lead times and booking systems differ by gemeente — use the city booking links below for Amsterdam, The Hague and Eindhoven rather than a generic “busy cities wait longer” rule."
       ],
       "bullets": [
         "Arrive in the Netherlands",
@@ -161,7 +173,8 @@
       ],
       "links": [
         { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-        { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" }
+        { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+        { "label": "City appointment booking links", "href": "#appointment-timing" }
       ]
     },
     {
@@ -192,50 +205,72 @@
       "id": "where-you-register",
       "heading": "Where you register for a BSN",
       "body": [
-        "You register at the municipality (gemeente) where you live. Most municipalities require an appointment; the exact booking process and document requirements can vary. Larger cities such as Amsterdam, Rotterdam, Utrecht, The Hague, and Eindhoven are common among expats and may have longer wait times for slots."
+        "You register at the municipality (gemeente) where you live. Most municipalities require an appointment; booking systems and document lists are city-specific. Amsterdam, The Hague and Eindhoven each use different official routes (City Office vs IN Amsterdam; status-based BRP pages vs International Centre; Inwonersplein vs Holland Expat Center South)."
       ],
       "callout": {
         "type": "info",
         "title": "Confirm with your municipality",
-        "text": "Always confirm the latest appointment and document requirements on your municipality's official website."
+        "text": "Always confirm the latest appointment and document requirements on your municipality's official website — use the live booking links in the next section for Amsterdam, The Hague and Eindhoven."
       },
       "links": [
         { "label": "Register your address in the Netherlands", "href": "/netherlands/register-address-netherlands/" },
-        { "label": "Municipality registration", "href": "/netherlands/municipality-registration-netherlands/" }
+        { "label": "Municipality registration", "href": "/netherlands/municipality-registration-netherlands/" },
+        { "label": "City appointment booking", "href": "#appointment-timing" }
       ]
     },
     {
       "id": "appointment-timing",
-      "heading": "When expats usually schedule their appointment",
+      "heading": "City appointment booking: Amsterdam, The Hague, Eindhoven",
       "body": [
-        "Many expats schedule their municipality appointment shortly after arrival. Some municipalities allow booking in advance if you already know your address. Availability varies sharply by city — Amsterdam and Utrecht often show the longest waits.",
-        "See our municipality registration guide for orientation ranges by gemeente. As soon as you know the address you will register at, check live appointment availability on your gemeente website."
+        "Book as soon as you know the address you will register at. These three cities are not just “busier” — their appointment portals and eligibility routes differ. Use the official booking link for your route; wait ranges below are orientation only.",
+        "Other gemeenten (Rotterdam, Utrecht, Groningen, and smaller cities) also require appointments — check that gemeente’s own booking page. We do not maintain separate municipality micro-pages for every Dutch city."
       ],
       "table": {
-        "headers": ["Municipality", "Typical appointment wait (orientation)"],
+        "headers": ["City", "What differs", "Typical wait (orientation)", "Primary booking"],
         "rows": [
-          ["Amsterdam", "Often 2–6 weeks"],
-          ["Rotterdam", "Often 1–3 weeks"],
-          ["The Hague", "Often 2–4 weeks"],
-          ["Utrecht", "Often 2–4 weeks"],
-          ["Eindhoven", "Often 1–2 weeks"],
-          ["Groningen", "Often 1–2 weeks"]
+          [
+            "Amsterdam",
+            "City Office immigration form vs IN Amsterdam for eligible EU / highly skilled newcomers",
+            "Often 2–6 weeks; check all Stadsloket locations",
+            "Book City Office immigration appointment"
+          ],
+          [
+            "The Hague",
+            "Separate BRP pages by status + The Hague International Centre for eligible internationals",
+            "Often 2–4 weeks; International Centre has its own slots",
+            "Moving and immigration hub"
+          ],
+          [
+            "Eindhoven",
+            "Inwonersplein online booking vs Holland Expat Center South (combined municipal + IND)",
+            "Often 1–2 weeks municipally; Expat Center can be faster",
+            "Book Inwonersplein online"
+          ]
         ]
       },
       "bullets": [
-        "Some cities require or prefer online appointments",
-        "Temporary housing may not always support registration — check with your municipality",
-        "Registration timing can influence how quickly you can complete banking and insurance"
+        "Amsterdam: book via the City Office immigration form; eligible EU / highly skilled newcomers can use IN Amsterdam instead",
+        "The Hague: choose the BRP page that matches your status, or book via The Hague International Centre if eligible",
+        "Eindhoven: book Inwonersplein online, or Holland Expat Center South for combined municipal + IND if eligible",
+        "Temporary housing may not support BRP registration — confirm with your gemeente before booking",
+        "Registration timing affects when you can finish banking, insurance and DigiD"
       ],
       "callout": {
         "type": "tip",
-        "title": "What tends to take longer than expected",
-        "text": "Limited appointment availability in busy periods, temporary housing that may not support registration, and busy relocation seasons can slow scheduling. Book as early as your gemeente allows once your registerable address is confirmed."
+        "title": "Use the live booking system",
+        "text": "Orientation waits go stale quickly. Open your city’s official appointment page and book the earliest slot that matches your eligibility route. City guides below summarise documents and which desk applies."
       },
       "links": [
-        { "label": "Municipality registration (appointment waits by city)", "href": "/netherlands/municipality-registration-netherlands/#municipality-differences" },
-        { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-        { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
+        { "label": "Amsterdam — City Office immigration appointment", "href": "https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/AfspraakImmigratieENG.aspx/" },
+        { "label": "Amsterdam — IN Amsterdam appointment (eligible profiles)", "href": "https://www.iamsterdam.com/en/live-work-study/in-amsterdam/international-newcomers/make-an-appointment-individuals" },
+        { "label": "The Hague — Moving and immigration hub", "href": "https://www.denhaag.nl/en/moving-and-immigration/" },
+        { "label": "The Hague International Centre — registration appointment", "href": "https://www.thehagueinternationalcentre.nl/make-an-appointment-for-registration" },
+        { "label": "Eindhoven — Inwonersplein online booking", "href": "https://eindhoven.mijnafspraakmaken.nl/client/" },
+        { "label": "Eindhoven — Holland Expat Center South appointment", "href": "https://www.hollandexpatcenter.com/appointment-at-the-expat-center" },
+        { "label": "Amsterdam city guide — registration", "href": "/netherlands/amsterdam/#register-amsterdam" },
+        { "label": "The Hague city guide — registration", "href": "/netherlands/the-hague/#register-the-hague" },
+        { "label": "Eindhoven city guide — registration", "href": "/netherlands/eindhoven/#register-eindhoven" },
+        { "label": "Municipality registration (wider city wait table)", "href": "/netherlands/municipality-registration-netherlands/#municipality-differences" }
       ]
     },
     {
@@ -331,7 +366,11 @@
     },
     {
       "q": "When should I book my municipality appointment?",
-      "a": "Many expats book as soon as they know the address they will register at. In busier cities, appointment slots can be limited, so checking availability early is often helpful."
+      "a": "Book as soon as you know the address you will register at. Amsterdam, The Hague and Eindhoven use different official booking routes — use those city appointment links on this page (or the city guides) rather than assuming one national wait time."
+    },
+    {
+      "q": "Where do I book in Amsterdam, The Hague or Eindhoven?",
+      "a": "Amsterdam: City Office immigration appointment form, or IN Amsterdam if you are eligible. The Hague: pick the matching BRP registration page on denhaag.nl, or The Hague International Centre if eligible. Eindhoven: Inwonersplein online booking (mijnafspraakmaken), or Holland Expat Center South for eligible knowledge workers. Links are in the city appointment booking section above."
     }
   ],
   "resourcesAffiliatePlacementId": "resources_end",

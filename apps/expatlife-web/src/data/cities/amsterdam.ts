@@ -5,12 +5,18 @@
 
 import type { CityHubPageData, CityOfficialSource } from "@/src/lib/city-hub/types";
 import { getCityStats, cityComparisonSection } from "@/src/data/cities/cityStats";
+import { AMSTERDAM_APPOINTMENT_LINKS } from "@/src/data/cities/municipalityAppointmentLinks";
 
 const OFFICIAL_SOURCES: CityOfficialSource[] = [
   {
     category: "Municipality / registration",
+    label: "Book City Office immigration appointment",
+    url: AMSTERDAM_APPOINTMENT_LINKS.cityOfficeImmigration,
+  },
+  {
+    category: "Municipality / registration",
     label: "First registration (moving from abroad)",
-    url: "https://www.amsterdam.nl/en/civil-affairs/first-registration/",
+    url: AMSTERDAM_APPOINTMENT_LINKS.firstRegistration,
   },
   {
     category: "Municipality / registration",
@@ -25,7 +31,7 @@ const OFFICIAL_SOURCES: CityOfficialSource[] = [
   {
     category: "Newcomer support",
     label: "IN Amsterdam – Make an appointment (individuals)",
-    url: "https://www.iamsterdam.com/en/live-work-study/in-amsterdam/international-newcomers/make-an-appointment-individuals",
+    url: AMSTERDAM_APPOINTMENT_LINKS.inAmsterdamIndividuals,
   },
   {
     category: "Newcomer support",
@@ -235,7 +241,7 @@ export const amsterdamCityPage: CityHubPageData = {
     ],
     steps: [
       "Check whether you need an appointment (first registration from abroad usually does).",
-      "Book an appointment at a City Office or via IN Amsterdam if you are eligible.",
+      "Book an appointment at a City Office via the official immigration appointment form, or via IN Amsterdam if you are eligible.",
       "Gather required documents: valid ID, proof of address, and any route-specific documents (e.g. residence permit, employment contract).",
       "Attend the appointment with all family members who are registering.",
       "Receive confirmation and your BSN (or instructions for collection).",
@@ -249,7 +255,9 @@ export const amsterdamCityPage: CityHubPageData = {
       "Documents translated or legalized where required",
     ],
     officialSourceLinks: [
-      { label: "First registration (from abroad)", url: "https://www.amsterdam.nl/en/civil-affairs/first-registration/" },
+      { label: "Book City Office immigration appointment", url: AMSTERDAM_APPOINTMENT_LINKS.cityOfficeImmigration },
+      { label: "First registration (from abroad)", url: AMSTERDAM_APPOINTMENT_LINKS.firstRegistration },
+      { label: "IN Amsterdam – Make an appointment (individuals)", url: AMSTERDAM_APPOINTMENT_LINKS.inAmsterdamIndividuals },
       { label: "Moving to Amsterdam (address change)", url: "https://www.amsterdam.nl/en/civil-affairs/moving-amsterdam/" },
     ],
     internalLinks: [

@@ -49,7 +49,7 @@ export const buyingHouseNetherlandsPage = {
     chips: ["Expat mortgages", "Kosten koper", "Overbidding", "Notary transfer"],
     image: {
       src: "/images/heroes/netherlands-buying-a-house-netherlands-hero-v3.png",
-      alt: "Photorealistic editorial photo of a Dutch canal-side residential street with brick townhouses and bicycles, house keys and a property purchase contract on a wooden table in the foreground — authentic expat home-buying atmosphere without realtors or stock-photo clichés.",
+      alt: "Photorealistic editorial photo of a Dutch canal-side residential street with brick townhouses and bicycles, house keys and a property purchase contract on a…",
     },
   },
   infographics: {
@@ -117,31 +117,6 @@ export const buyingHouseNetherlandsPage = {
       src: "/images/infographics/netherlands-buying-a-house-apartment-vs-house-infographic-v3.png",
       alt: "Infographic comparing buying an apartment vs house in the Netherlands: VvE fees vs maintenance responsibility.",
       caption: "Apartments involve owners associations (VvE) — houses involve direct maintenance and renovation choices.",
-    },
-    questions: {
-      src: "/images/infographics/netherlands-buying-a-house-questions-infographic-v3.png",
-      alt: "Infographic summarising common expat questions about buying property in the Netherlands.",
-      caption: "Use these prompts when planning — then confirm with mortgage advisers and official sources.",
-    },
-    relatedGuides: {
-      src: "/images/infographics/netherlands-buying-a-house-related-guides-infographic-v3.png",
-      alt: "Infographic linking to related housing guides: renting, housing costs, mortgages and cities.",
-      caption: "Connect buying plans to renting alternatives, salary context and city comparison.",
-    },
-    services: {
-      src: "/images/infographics/netherlands-buying-a-house-services-infographic-v3.png",
-      alt: "Infographic showing professional services for Dutch home buyers: mortgage advisors, agents, lawyers and inspectors.",
-      caption: "Use licensed professionals for personal mortgage and legal questions — this guide is orientation only.",
-    },
-    officialSources: {
-      src: "/images/infographics/netherlands-buying-a-house-official-sources-infographic-v3.png",
-      alt: "Infographic map of official Dutch home buying sources: Government.nl, Belastingdienst, Kadaster, AFM and Business.gov.nl.",
-      caption: "Verify current transfer tax, mortgage rules and registration requirements on official government sources.",
-    },
-    exploreNext: {
-      src: "/images/infographics/netherlands-buying-a-house-explore-next-infographic-v3.png",
-      alt: "Infographic linking to next-step guides: renting, mortgage guide, housing costs, cities and moving guide.",
-      caption: "Move from buying concepts into salary planning, city choice and relocation timelines.",
     },
   },
   sectionNav: [

@@ -86,7 +86,7 @@ export const HSM_CONTENT_LAST_REVIEWED = "Last reviewed: 26 August 2026" as cons
 export const hsmJobLossSectionHeading = "After you have the permit" as const;
 
 export const HSM_IND_PERMANENT_RESIDENCE_URL =
-  "https://ind.nl/en/permanent-residence-permit" as const;
+  "https://ind.nl/en/replace-extend-renew-and-change/permanent-residency/permanent-residence-permit" as const;
 
 /** Orientation only — exact validity is on the IND decision letter. */
 export const HSM_PERMIT_MAX_DURATION_ORIENTATION =

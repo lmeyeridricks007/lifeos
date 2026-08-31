@@ -80,6 +80,17 @@ export const healthInsuranceComparisonNetherlandsPage = {
   parentGuidePath: HEALTHCARE_BASICS_PATH,
   publish: true,
   publishDate: "2027-02-19",
+  lastReviewed: "30 August 2026",
+  heroOfficialSources: [
+    {
+      label: "Government.nl — Health insurance",
+      href: "https://www.government.nl/topics/health-insurance",
+    },
+    {
+      label: "Rijksoverheid — Zorgverzekering",
+      href: "https://www.rijksoverheid.nl/onderwerpen/zorgverzekering",
+    },
+  ],
   seo: {
     title: "Health Insurance Comparison in the Netherlands | Complete Guide for Expats",
     description:

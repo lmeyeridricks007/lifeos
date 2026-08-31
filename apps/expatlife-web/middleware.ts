@@ -155,7 +155,8 @@ export const config = {
     /*
      * All pages (not static assets) so `?preview=true` can set the simulate-live cookie from any URL.
      * Netherlands publish gates still run only when pathname starts with /netherlands.
+     * Skip sitemap/robots so crawler XML is never touched by publish middleware.
      */
-    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)",
+    "/((?!_next/static|_next/image|favicon.ico|sitemap\\.xml|robots\\.txt|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)",
   ],
 };

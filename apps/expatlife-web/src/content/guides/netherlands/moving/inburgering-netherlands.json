@@ -2,13 +2,28 @@
   "slug": "inburgering-netherlands",
   "path": "/netherlands/integration/inburgering/",
   "title": "Inburgering in the Netherlands",
-  "metaTitle": "Inburgering in the Netherlands: Requirements, Exams & Planning for Expats",
-  "subtitle": "Where integration obligations fit in your residence timeline — and how to plan exams without surprises.",
-  "description": "A comprehensive guide to inburgering in the Netherlands for expats: who may need integration, language and KNM exams, IND and DUO roles, planning for PR and citizenship, and official sources.",
+  "metaTitle": "Inburgering in the Netherlands: HSM, Wi 2021, B1 & KNM (2025)",
+  "subtitle": "Do you have to inburgeren on HSM? What are B1 and KNM? This guide sequences IND and DUO — not legal advice.",
+  "description": "Authoritative orientation to Dutch inburgering for expats: Wet inburgering 2021 and the B1 default, HSM vs obligated permits, KNM exam changes from 1 July 2025, and DUO as the exam body. Confirm on IND and inburgeren.nl.",
   "breadcrumbLabel": "Inburgering",
+  "lastUpdated": "Last reviewed: 30 August 2026",
+  "heroOfficialSources": [
+    {
+      "label": "DUO — inburgeren.nl (English)",
+      "href": "https://www.inburgeren.nl/en"
+    },
+    {
+      "label": "IND — Civic integration for a more secure residence permit",
+      "href": "https://ind.nl/en/living-in-the-netherlands-with-a-residence-permit/civic-integration-for-more-secure-residence-permit"
+    },
+    {
+      "label": "Government.nl — Civic integration",
+      "href": "https://www.government.nl/themes/migration-and-travel/integration-in-the-netherlands/civic-integration-in-the-netherlands"
+    }
+  ],
   "hero": {
     "eyebrow": "Integration",
-    "badges": ["Guide", "Verify with IND & DUO"],
+    "badges": ["Verify with IND & DUO", "Not legal advice"],
     "image": {
       "src": "/images/heroes/highly-skilled-migrant-netherlands.png",
       "alt": "Study materials and Dutch language notes on a desk with a bicycle and canal view outside"
@@ -16,198 +31,233 @@
   },
   "tocItems": [
     { "id": "overview", "label": "Overview" },
-    { "id": "who-needs-inburgering", "label": "Who may need inburgering" },
-    { "id": "exam-components", "label": "Exam components" },
-    { "id": "planning-timeline", "label": "Planning timeline" },
-    { "id": "official-roles", "label": "IND, DUO, and gemeente" },
-    { "id": "citizenship-and-pr", "label": "Links to PR and citizenship" },
-    { "id": "tools", "label": "Tools" },
-    { "id": "official-sources", "label": "Official sources" },
+    { "id": "wi-2021-and-b1", "label": "Wi 2021 & B1 default" },
+    { "id": "hsm-vs-obligation", "label": "HSM vs obligated permits" },
+    { "id": "exam-components-knm", "label": "Exams & KNM (2025)" },
+    { "id": "official-roles", "label": "DUO, IND & gemeente" },
+    { "id": "pr-and-citizenship", "label": "PR & citizenship links" },
+    { "id": "tools", "label": "Tools (orientation)" },
     { "id": "faq", "label": "FAQ" },
     { "id": "related-guides", "label": "Related guides" }
   ],
   "heroCta": {
-    "title": "Plan your integration timeline",
-    "supportingText": "Use the inburgering timeline planner and exam readiness checker, then confirm whether you are legally required to integrate.",
-    "primaryCtaLabel": "Inburgering timeline planner",
-    "primaryCtaHref": "/netherlands/integration/tools/inburgering-timeline-planner/",
-    "secondaryCtaLabel": "Integration requirement checker",
-    "secondaryCtaHref": "/netherlands/integration/tools/integration-requirement-checker/"
+    "title": "Start with DUO and IND — not a quiz",
+    "supportingText": "This guide orients Highly Skilled Migrants and other expats to inburgering. Confirm whether you have a civic integration obligation and which exam level applies on official portals. We do not replace IND or DUO assessment.",
+    "primaryCtaLabel": "DUO — inburgeren.nl",
+    "primaryCtaHref": "https://www.inburgeren.nl/en",
+    "secondaryCtaLabel": "IND — integration for secure residence",
+    "secondaryCtaHref": "https://ind.nl/en/living-in-the-netherlands-with-a-residence-permit/civic-integration-for-more-secure-residence-permit"
   },
   "quickAnswers": [
-    { "label": "Not everyone", "value": "Integration duty depends on permit type, arrival date, and personal exemptions — do not assume from nationality alone." },
-    { "label": "Core exams", "value": "Language (reading, writing, speaking, listening) plus KNM/ONA civic components where required." },
-    { "label": "PR & citizenship", "value": "Integration proof often reappears at permanent residence or naturalisation even when your first work permit did not emphasise exams." },
-    { "label": "Official sources", "value": "IND for obligation; DUO for exams; gemeente for local courses and referrals." }
+    { "label": "HSM core question", "value": "Many HSM holders are not under inburgeringsplicht on their temporary work permit — but still need civic integration proof for permanent residence or citizenship." },
+    { "label": "Wi 2021 / B1", "value": "If you became obligated on or after 1 January 2022, Wet inburgering 2021 applies. The common B1-route targets Dutch at B1 (with possible A2 step-down after proven effort)." },
+    { "label": "KNM", "value": "Kennis van de Nederlandse Maatschappij — civic knowledge exam. Content and style updated from 1 July 2025; use current DUO practice materials." },
+    { "label": "Official body", "value": "DUO runs exams and obligation admin via inburgeren.nl. IND assesses the separate integration requirement for stronger residence." }
   ],
   "sections": [
     {
       "id": "overview",
       "heading": "Overview",
       "body": [
-        "Inburgering is the Dutch civic integration system. For some residence holders it is a legal obligation; for others it is optional but still useful for permanent residence or citizenship later.",
-        "Rules shifted several times over the past decade (2013, 2021, and ongoing policy debates). Always check whether you are inburgeringsplichtig (subject to integration duty) for your specific permit and arrival date — forum advice from someone who arrived under different rules is a common source of mistakes."
+        "Inburgering is the Dutch civic integration system: language skills plus knowledge of Dutch society (and, on some routes, labour-market modules). Expats often ask two different questions at once: “Am I legally obliged to integrate now?” and “What exams will I need later for permanent residence?” Those are related but not identical.",
+        "This page is the authoritative ExpatLife guide for that planning. It sequences Wet inburgering 2021 (Wi 2021), the B1 default learning goal, how Highly Skilled Migrant (HSM) status usually differs from obligated family or asylum routes, what KNM is after the 1 July 2025 update, and where DUO and IND fit. It is not legal advice and does not restate decision rules as if ExpatLife were IND or DUO."
       ],
+      "callout": {
+        "type": "warning",
+        "title": "Orientation only — confirm on DUO and IND",
+        "text": "Obligation, deadlines, exam levels, fees, and exemptions change. Start with your IND decision letter and inburgeren.nl for your cohort.",
+        "href": "https://www.inburgeren.nl/en",
+        "linkLabel": "DUO — inburgeren.nl"
+      },
       "links": [
-        { "label": "Inburgering exams orientation (Culture)", "href": "/netherlands/culture/inburgering-exams/" },
+        { "label": "Highly Skilled Migrant visa guide", "href": "/netherlands/visa/highly-skilled-migrant/" },
         { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/" },
         { "label": "Dutch citizenship guide", "href": "/netherlands/citizenship/dutch-citizenship/" }
       ]
     },
     {
-      "id": "who-needs-inburgering",
-      "heading": "Who may need inburgering",
+      "id": "wi-2021-and-b1",
+      "heading": "Wet inburgering 2021 and the B1 default",
       "body": [
-        "Whether you must integrate depends on your residence basis, age, arrival date, and exemptions (for example certain EU routes, diplomats, or recognised equivalents). Highly skilled migrants are not automatically exempt — check your IND decision letter and the integration requirement checker."
+        "If you became subject to the civic integration obligation (inburgeringsplicht) on or after 1 January 2022, IND points you to the Civic Integration Act 2021 (Wet inburgering 2021 / Wi 2021). Under Wi 2021, municipalities play a central role: they help place you on a learning route and a personal integration and participation plan (PIP).",
+        "Wi 2021 uses three main learning routes. The common B1-route aims at Dutch language level B1 (CEFR) plus civic knowledge exams. An education route (O-route) targets B1 or B2 with a school pathway. A self-reliance route (Z-route) exists for people who cannot reach B1 within the normal framework — confirm details with your gemeente and DUO.",
+        "People who still talk about “A2 only” are often describing older Wi 2013 exams or the IND secure-residence minimum. For Wi 2021 obligated newcomers, B1 is the default goal on the B1-route; municipalities may allow stepping down to A2 after substantial documented effort (DUO and Divosa guidance describe conditions such as many hours of recognised tuition). Always verify your route in your PIP — not on a forum post."
       ],
-      "bullets": [
-        "Family reunification routes often trigger integration duty sooner than some work routes.",
-        "Some newcomers must pass exams within a legal deadline; missing deadlines can affect permit renewals or fines.",
-        "Voluntary integration may still help citizenship or permanent residence even when not legally mandatory.",
-        "Children and minors follow different rules — verify age thresholds on official pages."
-      ],
-      "callout": {
-        "type": "info",
-        "title": "Verify obligation first",
-        "text": "Before buying courses or booking exams, confirm whether you are legally required to integrate and by which date.",
-        "href": "https://ind.nl/en/integration",
-        "linkLabel": "IND — integration"
-      },
-      "links": [
-        { "label": "Integration requirement checker", "href": "/netherlands/integration/tools/integration-requirement-checker/" },
-        { "label": "Partner & family visa guide", "href": "/netherlands/visa/partner-family-visa/" }
-      ]
-    },
-    {
-      "id": "exam-components",
-      "heading": "Exam components (orientation)",
       "table": {
-        "headers": ["Component", "What it tests", "Planning note"],
+        "headers": ["Concept", "Orientation", "Where to verify"],
         "rows": [
-          ["Dutch language (A2 level in many routes)", "Reading, writing, speaking, listening", "Allow months of study if starting from zero."],
-          ["KNM (Knowledge of Dutch Society)", "Civic knowledge", "Practice with official-style materials; our KNM quiz is for orientation only."],
-          ["ONA (Orientation on the Dutch Labour Market)", "Labour market participation", "Portfolio or exam depending on route and timing."]
+          ["Wi 2021", "Civic integration obligation starting on/after 1 Jan 2022; gemeente + DUO system.", "IND civic integration + government.nl"],
+          ["B1-route (default for many)", "Language exams typically at B1; KNM and participation modules as your route requires.", "DUO / gemeente PIP"],
+          ["A2 step-down", "Possible on the B1-route after proven effort — not an automatic free choice at the start.", "Gemeente + DUO"],
+          ["Wi 2013 / older cohorts", "Different exam packaging and A2-focused framing may still apply to people who started earlier.", "Your IND / DUO letters"]
         ]
       },
+      "callout": {
+        "type": "info",
+        "title": "B1 vs A2 for permanent residence",
+        "text": "IND’s integration requirement for a more secure residence permit is not the same as Wi 2021 obligation. IND often accepts a civic integration diploma at least at A2, or a Wi 2021 certificate / recognised exemption. Check the IND civic integration page for the evidence list that matches your application.",
+        "href": "https://ind.nl/en/living-in-the-netherlands-with-a-residence-permit/civic-integration-for-more-secure-residence-permit",
+        "linkLabel": "IND — Civic integration for secure residence"
+      },
       "links": [
-        { "label": "DUO — inburgering exams", "href": "https://www.inburgeren.nl/en" },
-        { "label": "KNM knowledge quiz (orientation)", "href": "/netherlands/integration/tools/knm-knowledge-quiz/" },
-        { "label": "Culture — inburgering exams page", "href": "/netherlands/culture/inburgering-exams/" }
+        { "label": "Government.nl — Civic integration", "href": "https://www.government.nl/themes/migration-and-travel/integration-in-the-netherlands/civic-integration-in-the-netherlands" },
+        { "label": "DUO — inburgeren.nl", "href": "https://www.inburgeren.nl/en" }
       ]
     },
     {
-      "id": "planning-timeline",
-      "heading": "Planning timeline",
-      "bullets": [
-        "Year 1: confirm legal obligation and deadline; start language baseline; save IND letters.",
-        "Year 2–3: structured classes or self-study; book KNM/ONA when language is stable.",
-        "Year 4–5: ensure certificates match PR or citizenship application requirements.",
-        "Before any application: cross-check exam validity and whether newer civic integration rules apply to your cohort."
+      "id": "hsm-vs-obligation",
+      "heading": "Who is obligated vs exempt — HSM and other permits",
+      "body": [
+        "Two different legal ideas get mixed up in expat chats:",
+        "Inburgeringsplicht (civic integration obligation) — you must follow a programme and pass exams within a deadline (often three years). DUO administers this obligation. Family reunification and some other routes commonly trigger it; many Highly Skilled Migrants on a temporary work permit are not placed under this obligation solely because of HSM status. That is a planning pattern, not a personal guarantee — always read your IND decision letter.",
+        "Integration requirement for a more secure residence permit — when you apply for permanent residence, EU long-term resident status, or certain other stronger permits, IND usually requires civic integration proof (diploma, Wi 2021 certificate, or an exemption / dispensation IND accepts). This can apply even if you never had inburgeringsplicht during your HSM years.",
+        "So the HSM answer is usually: you may not have to inburgeren to keep working on HSM today — but if your plan is “stay if I lose the sponsor,” permanent residence and citizenship typically bring integration proof back into scope. Start exams early enough that certificates exist before you need them."
       ],
+      "table": {
+        "headers": ["Situation (orientation)", "What often applies", "First check"],
+        "rows": [
+          ["HSM / many temporary work permits", "Often no inburgeringsplicht while the temporary work permit runs; still plan exams if you want PR or citizenship.", "IND decision letter + IND HSM page"],
+          ["Family / partner routes", "More often trigger inburgeringsplicht with a DUO deadline and gemeente programme under Wi 2021.", "IND letter + inburgeren.nl"],
+          ["Already obligated (any route)", "Follow DUO / gemeente programme; missing deadlines can lead to fines or permit consequences.", "DUO account + PIP"],
+          ["Applying for PR / EU long-term / naturalisation", "IND assesses the separate integration requirement — diploma, Wi 2021 certificate, or exemption / dispensation.", "IND civic integration for secure residence"]
+        ]
+      },
+      "callout": {
+        "type": "tip",
+        "title": "Do not assume from nationality alone",
+        "text": "EU/EEA and Swiss citizens follow different free-movement rules. Non-EU HSM holders still need to verify their own letter. Exemptions (age, school-age residence, medical grounds, sufficient integration documents, and others IND lists) are case-specific.",
+        "href": "https://ind.nl/en/living-in-the-netherlands-with-a-residence-permit/civic-integration-for-more-secure-residence-permit",
+        "linkLabel": "IND — Exemptions and dispensations"
+      },
       "links": [
-        { "label": "Learning Dutch (Culture)", "href": "/netherlands/culture/learning-dutch/" },
-        { "label": "Inburgering timeline planner", "href": "/netherlands/integration/tools/inburgering-timeline-planner/" },
-        { "label": "Exam readiness checker", "href": "/netherlands/integration/tools/inburgering-exam-readiness-checker/" }
+        { "label": "Highly Skilled Migrant visa guide", "href": "/netherlands/visa/highly-skilled-migrant/" },
+        { "label": "Partner & family visa guide", "href": "/netherlands/visa/partner-family-visa/" },
+        { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/" }
+      ]
+    },
+    {
+      "id": "exam-components-knm",
+      "heading": "Exam components and KNM after 1 July 2025",
+      "body": [
+        "KNM means Kennis van de Nederlandse Maatschappij — Knowledge of Dutch Society. It is the civic knowledge exam newcomers take as part of inburgering (alongside language skills). Language exams typically cover reading, writing, speaking, and listening. Wi 2021 obligated routes also include participation elements such as the participation statement trajectory (PVT) and labour-market module (MAP) where your route requires them.",
+        "From 1 July 2025, the KNM exam is based on revised end terms (eindtermen). Government and Cito communications describe a shift toward testing knowledge of how Dutch society works (including themes such as women’s self-determination and Holocaust awareness) rather than older behaviour-style “what should someone do?” questions. Practice materials from before that date can be partly outdated.",
+        "DUO takes the exams. Use current practice exams on inburgeren.nl — not third-party quizzes as the source of truth. Exam fees, pass scores, and booking rules live on DUO; we do not republish numbers that go stale."
+      ],
+      "table": {
+        "headers": ["Component", "What it covers (orientation)", "Planning note"],
+        "rows": [
+          ["Dutch language (A2 / B1 / B2)", "Reading, writing, speaking, listening at the level your route or IND evidence requires.", "Wi 2021 B1-route defaults to B1; PR evidence may accept A2 diploma or Wi 2021 certificate — verify."],
+          ["KNM (from 1 July 2025)", "Civic knowledge under revised end terms; knowledge-focused questions.", "Use current DUO practice exams; older prep books may lag."],
+          ["PVT / MAP (Wi 2021 routes)", "Participation statement and labour-market orientation where required.", "Gemeente / PIP decide what your route includes."],
+          ["ONA (older framing)", "Labour-market orientation under earlier systems — do not assume it applies to every Wi 2021 route.", "Confirm on DUO for your cohort"]
+        ]
+      },
+      "callout": {
+        "type": "info",
+        "title": "KNM is not “on-site culture day” content",
+        "text": "KNM is an official exam administered by DUO. Prepare with current official practice materials. Government news of 30 June 2025 confirmed the revised KNM end terms apply from 1 July 2025.",
+        "href": "https://www.rijksoverheid.nl/actueel/nieuws/2025/06/30/inburgeringsexamen-vernieuwd-extra-aandacht-voor-zelfbeschikking-vrouwen-en-kennis-holocaust",
+        "linkLabel": "Rijksoverheid — KNM exam update (June 2025)"
+      },
+      "links": [
+        { "label": "DUO — inburgeren.nl", "href": "https://www.inburgeren.nl/en" },
+        { "label": "Learning Dutch (Culture)", "href": "/netherlands/culture/learning-dutch/" }
       ]
     },
     {
       "id": "official-roles",
-      "heading": "IND, DUO, and gemeente",
+      "heading": "DUO, IND, and your gemeente",
       "body": [
-        "The IND sets whether integration is part of your residence conditions. DUO (via inburgeren.nl) runs exams and registration. Your gemeente may offer courses, referrals, or social support — availability varies widely by city.",
-        "Keep a folder with IND decision letters, course enrolments, exam results, and any gemeente correspondence. That file is invaluable when you later apply for permanent residence or naturalisation."
+        "DUO (Dienst Uitvoering Onderwijs) is the official body for civic integration exams and much of the obligation administration. English information and exam practice live at inburgeren.nl. Book exams and track results there — not through unofficial marketplaces.",
+        "IND decides residence permits and assesses the integration requirement when you apply for a more secure residence status. IND does not replace DUO as the exam organiser.",
+        "Your gemeente (municipality) is central under Wi 2021 for people who are obligated: learning route, PIP, and course referrals. Course availability and quality vary by city. Keep a folder with IND letters, DUO results, and gemeente correspondence — you will need it for PR or naturalisation later."
       ],
       "table": {
         "headers": ["Organisation", "Role", "Where to start"],
         "rows": [
-          ["IND", "Legal integration obligation and permit conditions", "ind.nl/en/integration"],
-          ["DUO / inburgeren.nl", "Exam registration, results, official study materials", "inburgeren.nl"],
-          ["Gemeente", "Local courses, referrals, sometimes debt/fine questions", "Your municipality website"]
+          ["DUO / inburgeren.nl", "Exams, practice materials, obligation admin", "inburgeren.nl/en"],
+          ["IND", "Permit conditions; integration requirement for stronger residence", "IND civic integration pages"],
+          ["Gemeente", "Wi 2021 learning route, PIP, local courses", "Your municipality website"],
+          ["Cito (exam design)", "Develops exam content (e.g. revised KNM) under ministry commission", "Official announcements — not a booking portal"]
         ]
-      }
+      },
+      "links": [
+        { "label": "DUO — inburgeren.nl", "href": "https://www.inburgeren.nl/en" },
+        { "label": "IND — Civic integration for secure residence", "href": "https://ind.nl/en/living-in-the-netherlands-with-a-residence-permit/civic-integration-for-more-secure-residence-permit" },
+        { "label": "Government.nl — Civic integration", "href": "https://www.government.nl/themes/migration-and-travel/integration-in-the-netherlands/civic-integration-in-the-netherlands" }
+      ]
     },
     {
-      "id": "citizenship-and-pr",
+      "id": "pr-and-citizenship",
       "heading": "Links to permanent residence and citizenship",
       "body": [
-        "Integration certificates often reappear when you apply for permanent residence or naturalisation, even if your original work permit did not emphasise inburgering at arrival. Plan integration as part of your long-term timeline, not only your first permit.",
-        "Permanent residence stabilises stay rights; citizenship is a separate step with additional nationality rules including possible renunciation. Read both guides when you are mapping years three to five."
+        "Integration certificates often reappear when you apply for permanent residence or naturalisation — even if your original HSM permit never mentioned exams. Plan language and KNM as part of a five-year stay timeline, not a last-minute scramble.",
+        "Permanent residence stabilises stay rights without requiring Dutch nationality. Citizenship is a separate step with additional nationality rules. Read both guides when you map years three to five.",
+        "How to sequence (orientation): confirm whether you have inburgeringsplicht now → if not, decide whether PR/citizenship is a goal → start language/KNM early → keep certificates ready before IND applications."
+      ],
+      "steps": [
+        "Read your IND decision letter for any integration obligation or conditions.",
+        "If obligated under Wi 2021, follow your gemeente PIP and book DUO exams for your route.",
+        "If not obligated but aiming for PR or citizenship, plan civic integration evidence against IND’s secure-residence list.",
+        "Save diplomas, certificates, and exemption documents in certified-copy ready form.",
+        "Only then open permanent residence or naturalisation applications — confirm current IND checklists."
       ],
       "links": [
         { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/" },
         { "label": "Dutch citizenship guide", "href": "/netherlands/citizenship/dutch-citizenship/" },
-        { "label": "Citizenship timeline calculator", "href": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/" }
-      ]
-    },
-    {
-      "id": "tools",
-      "heading": "Tools",
-      "body": ["Planners and quizzes for orientation — they do not replace IND or DUO decisions about your legal duty."],
-      "links": [
-        { "label": "Inburgering timeline planner", "href": "/netherlands/integration/tools/inburgering-timeline-planner/" },
-        { "label": "Exam readiness checker", "href": "/netherlands/integration/tools/inburgering-exam-readiness-checker/" },
-        { "label": "KNM knowledge quiz", "href": "/netherlands/integration/tools/knm-knowledge-quiz/" },
-        { "label": "Integration requirement checker", "href": "/netherlands/integration/tools/integration-requirement-checker/" },
-        { "label": "Integration tools hub", "href": "/netherlands/integration/tools/" }
-      ]
-    },
-    {
-      "id": "official-sources",
-      "heading": "Official sources",
-      "links": [
-        { "label": "IND — integration", "href": "https://ind.nl/en/integration" },
-        { "label": "DUO — inburgeren.nl (English)", "href": "https://www.inburgeren.nl/en" },
-        { "label": "Government.nl — civic integration", "href": "https://www.government.nl/topics/new-in-the-netherlands/civic-integration" },
-        { "label": "IND — permanent residence", "href": "https://ind.nl/en/permanent-residence-permit" },
-        { "label": "IND — Dutch citizenship", "href": "https://ind.nl/en/dutch-citizenship" }
-      ]
-    },
-    {
-      "id": "related-guides",
-      "heading": "Related guides",
-      "links": [
-        { "label": "Residence permits", "href": "/netherlands/moving/residence-permits/" },
-        { "label": "Extensions and changes", "href": "/netherlands/moving/extensions-changes/" },
-        { "label": "Highly Skilled Migrant visa", "href": "/netherlands/visa/highly-skilled-migrant/" },
-        { "label": "Partner & family visa", "href": "/netherlands/visa/partner-family-visa/" },
-        { "label": "Culture & language hub", "href": "/netherlands/culture/" },
-        { "label": "Taxes when leaving the Netherlands", "href": "/netherlands/taxes/leaving-netherlands-tax/" }
+        { "label": "Citizenship & PR tools hub", "href": "/netherlands/citizenship/tools/" }
       ]
     }
   ],
+  "toolsCtaBand": {
+    "title": "Inburgering checkers (orientation)",
+    "body": "Use the requirement checker to separate obligation from PR/citizenship evidence, then the exam readiness checker for module priorities. Neither replaces your IND letter or DUO practice exams. Timeline planner and KNM quiz remain preview.",
+    "primaryLabel": "Integration requirement checker",
+    "primaryHref": "/netherlands/integration/tools/integration-requirement-checker/",
+    "secondaryLabel": "Exam readiness checker",
+    "secondaryHref": "/netherlands/integration/tools/inburgering-exam-readiness-checker/"
+  },
   "faq": [
     {
-      "q": "Do highly skilled migrants need inburgering?",
-      "a": "Not automatically. Some work routes have different integration timelines or exemptions, but policy changes and personal circumstances vary. Read your IND decision letter and use the integration requirement checker, then confirm on ind.nl if anything is unclear."
+      "q": "Do I have to inburgeren on a Highly Skilled Migrant permit?",
+      "a": "Often you are not under inburgeringsplicht solely because of temporary HSM status — but that is not automatic for every person. Read your IND decision letter. Separately, permanent residence and citizenship usually require civic integration proof (diploma, Wi 2021 certificate, or an IND-recognised exemption). See the HSM and permanent residence guides."
     },
     {
-      "q": "What level of Dutch do I need?",
-      "a": "Many inburgering routes target A2 language level for the core exams. Higher levels may help daily life and citizenship but are not always the legal minimum — verify for your obligation type on inburgeren.nl."
+      "q": "What is B1 under Wet inburgering 2021?",
+      "a": "B1 is a CEFR Dutch language level. Under Wi 2021, many obligated newcomers are placed on a B1-route that targets B1 language exams plus civic components. Stepping down to A2 can be possible after proven effort — confirm with your gemeente and DUO. IND’s secure-residence evidence list may still refer to A2 diplomas or Wi 2021 certificates; check IND for your application."
     },
     {
-      "q": "Where do I book exams?",
-      "a": "Exam registration and official information are handled through DUO's inburgeren.nl portal. Municipal courses are separate from exam booking."
+      "q": "What is KNM?",
+      "a": "KNM (Kennis van de Nederlandse Maatschappij) is the Knowledge of Dutch Society exam. From 1 July 2025 it uses revised end terms with a stronger focus on factual civic knowledge. Prepare with current DUO practice exams on inburgeren.nl."
+    },
+    {
+      "q": "Who runs the exams — IND or DUO?",
+      "a": "DUO runs civic integration exams and much of the obligation administration via inburgeren.nl. IND assesses residence permits and the integration requirement when you apply for stronger residence. Book exams with DUO, not IND."
+    },
+    {
+      "q": "Is this the same as the old Culture “inburgering exams” page?",
+      "a": "This guide is the authoritative ExpatLife page for obligations, Wi 2021 / B1, HSM vs other permits, KNM 2025, and DUO/IND roles. The former culture orientation URL redirects here so there is one guide — not two competing articles."
     },
     {
       "q": "Do I need inburgering for permanent residence?",
-      "a": "Often yes when you were subject to integration duty, but exemptions and route-specific rules apply. The permanent residence guide and IND integration pages describe how certificates fit PR applications."
-    },
-    {
-      "q": "What's the difference between this guide and Culture inburgering exams?",
-      "a": "This guide owns legal obligation, planning, and links to PR/citizenship. The Culture page orients you to exam framing and study habits — start here for requirements, use Culture for exam prep context."
+      "a": "Usually you must meet IND’s civic integration requirement (diploma at the level IND accepts, Wi 2021 certificate, or exemption / dispensation). That is separate from whether you had inburgeringsplicht on arrival. See the permanent residence guide and IND’s civic integration page."
     },
     {
       "q": "Can fines apply if I miss integration deadlines?",
-      "a": "The IND can impose penalties in some cases when legal integration duty is not met. Confirm deadlines on your decision letter and seek qualified advice if you are already overdue."
+      "a": "If you are legally obligated (inburgeringsplichtig) and miss deadlines, DUO / IND processes can include penalties or residence consequences. Confirm deadlines on your letters and seek qualified advice if you are already overdue."
     }
   ],
   "internalLinks": {
     "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving-to-the-netherlands/" },
-    "pillar": { "label": "Integration tools", "href": "/netherlands/integration/tools/" },
+    "pillar": { "label": "Permanent residence", "href": "/netherlands/citizenship/permanent-residence/" },
     "related": [
       { "label": "Permanent residence", "href": "/netherlands/citizenship/permanent-residence/" },
       { "label": "Dutch citizenship", "href": "/netherlands/citizenship/dutch-citizenship/" },
-      { "label": "Inburgering exams (Culture)", "href": "/netherlands/culture/inburgering-exams/" }
+      { "label": "Highly Skilled Migrant visa", "href": "/netherlands/visa/highly-skilled-migrant/" },
+      { "label": "Partner & family visa", "href": "/netherlands/visa/partner-family-visa/" },
+      { "label": "Learning Dutch", "href": "/netherlands/culture/learning-dutch/" },
+      { "label": "Residence permits", "href": "/netherlands/moving/residence-permits/" },
+      { "label": "Extensions and changes", "href": "/netherlands/moving/extensions-changes/" }
     ]
   }
 }

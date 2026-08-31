@@ -5,6 +5,7 @@
 
 import type { CityHubPageData, CityOfficialSource } from "@/src/lib/city-hub/types";
 import { getCityStats, cityComparisonSection } from "@/src/data/cities/cityStats";
+import { EINDHOVEN_APPOINTMENT_LINKS } from "@/src/data/cities/municipalityAppointmentLinks";
 
 const OFFICIAL_SOURCES: CityOfficialSource[] = [
   {
@@ -20,7 +21,12 @@ const OFFICIAL_SOURCES: CityOfficialSource[] = [
   {
     category: "Expat center / newcomer support",
     label: "Holland Expat Center South – Appointment at the Expat Center",
-    url: "https://www.hollandexpatcenter.com/appointment-at-the-expat-center",
+    url: EINDHOVEN_APPOINTMENT_LINKS.expatCenterAppointment,
+  },
+  {
+    category: "Municipality / registration",
+    label: "Book Inwonersplein appointment online",
+    url: EINDHOVEN_APPOINTMENT_LINKS.onlineBooking,
   },
   {
     category: "Municipality / registration",
@@ -35,7 +41,7 @@ const OFFICIAL_SOURCES: CityOfficialSource[] = [
   {
     category: "Municipality / registration",
     label: "Eindhoven – Moving from abroad (verhuizen vanuit het buitenland)",
-    url: "https://www.eindhoven.nl/stad-en-wonen/verhuizen/verhuizen-vanuit-het-buitenland",
+    url: EINDHOVEN_APPOINTMENT_LINKS.moveFromAbroad,
   },
   {
     category: "Municipality / registration",
@@ -229,13 +235,13 @@ export const eindhovenCityPage: CityHubPageData = {
   registration: {
     heading: "Registering with the Municipality in Eindhoven",
     body: [
-      "First-time movers from abroad to Eindhoven should make an appointment and come to the counter at the Inwonersplein. Appointment booking is available online or by phone. The municipality provides a move-from-abroad registration path with English-language guidance on its English portal.",
+      "First-time movers from abroad to Eindhoven should make an appointment and come to the counter at the Inwonersplein. Book online via Eindhoven’s appointment system (mijnafspraakmaken) or by phone (14 040). The municipality provides a move-from-abroad registration path with English-language guidance.",
       "Holland Expat Center South is a non-profit governmental agency that helps international knowledge workers and their families settle in Brabant. It offers appointments that combine municipal registration and IND formalities in one visit—the Expat Center Procedure. If you live in Eindhoven, your BSN is issued at the appointment. If you live in another participating municipality, the BSN is issued by post within 5 working days. The Expat Center states this is faster than local municipal registration alone, which can take up to 30 days.",
       "Foreign students have a specific registration flow. The municipality states students should bring: a valid passport (EU residents may use an ID card); IND documents if applicable; original documents of life events abroad such as a birth certificate; and a rental/purchase contract or a written declaration from the owner or main occupant if moving in with someone.",
     ],
     steps: [
       "Decide whether to use municipal registration (Inwonersplein) or Holland Expat Center South if you are eligible for the combined procedure.",
-      "Book an appointment (online or by phone for the municipality; via the Expat Center site for their procedure).",
+      "Book an appointment online (Inwonersplein) or via the Expat Center site for their procedure.",
       "Gather required documents: valid ID, proof of address, IND documents if applicable, and any route-specific documents (e.g. original life-event documents for students).",
       "Attend the appointment; complete registration. If using the Expat Center and you live in Eindhoven, receive your BSN at the appointment; otherwise it is sent by post within 5 working days.",
     ],
@@ -247,9 +253,10 @@ export const eindhovenCityPage: CityHubPageData = {
       "Documents translated or legalized where required",
     ],
     officialSourceLinks: [
+      { label: "Book Inwonersplein appointment online", url: EINDHOVEN_APPOINTMENT_LINKS.onlineBooking },
+      { label: "Eindhoven – Moving from abroad", url: EINDHOVEN_APPOINTMENT_LINKS.moveFromAbroad },
+      { label: "Holland Expat Center South – Appointment", url: EINDHOVEN_APPOINTMENT_LINKS.expatCenterAppointment },
       { label: "Holland Expat Center South – How we help", url: "https://www.hollandexpatcenter.com/how-we-help" },
-      { label: "Holland Expat Center South – Appointment", url: "https://www.hollandexpatcenter.com/appointment-at-the-expat-center" },
-      { label: "Eindhoven – Moving from abroad", url: "https://www.eindhoven.nl/stad-en-wonen/verhuizen/verhuizen-vanuit-het-buitenland" },
       { label: "Eindhoven – Registration of foreign students", url: "https://www.eindhoven.nl/stad-en-wonen/wonen/registration-of-foreign-students" },
     ],
     internalLinks: [

@@ -94,6 +94,35 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
         ],
       },
       {
+        title: "Leaving",
+        links: [
+          link(
+            "Leaving the Netherlands",
+            "/netherlands/leaving/",
+            "End-to-end exit journey: deregistration, insurance, 30% end, PR consequences",
+            false
+          ),
+          link(
+            "Leaving tools hub",
+            "/netherlands/leaving/tools/",
+            "Exit readiness checker and repatriation cost calculator",
+            false
+          ),
+          link(
+            "Exit readiness checker",
+            "/netherlands/leaving/tools/exit-readiness-checker/",
+            "Sequence deregistration, insurance, toeslagen and tax records",
+            false
+          ),
+          link(
+            "Repatriation cost calculator",
+            "/netherlands/leaving/tools/repatriation-cost-calculator/",
+            "Orientation budget ranges for flights, shipping and housing",
+            false
+          ),
+        ],
+      },
+      {
         title: "Move tools",
         links: [
           link("Visa checker", "/netherlands/visa-checker", "Find the best visa for your situation", false),
@@ -148,12 +177,26 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
         ],
       },
       {
-        title: "Integration + Leaving",
+        title: "Integration + long-term stay",
         links: [
-          link("Integration", "/netherlands/integration", "Inburgering essentials"),
-          link("Inburgering planner", "/netherlands/integration/inburgering-planner", "Planning tool"),
-          link("Citizenship", "/netherlands/citizenship", "Long-term route"),
-          link("Leaving", "/netherlands/leaving", "Exit planning"),
+          link(
+            "Permanent residence",
+            "/netherlands/citizenship/permanent-residence/",
+            "Five-year routes, absences, and IND next steps",
+            false
+          ),
+          link(
+            "Inburgering",
+            "/netherlands/integration/inburgering/",
+            "HSM vs obligation, Wi 2021 / B1, KNM from July 2025",
+            false
+          ),
+          link(
+            "Dutch citizenship",
+            "/netherlands/citizenship/dutch-citizenship/",
+            "Naturalisation vs option, dual nationality, and what inburgering unlocks",
+            false
+          ),
         ],
       },
     ],
@@ -405,7 +448,7 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
         links: [
           link("Language hub", "/netherlands/language", "Dutch pathway"),
           link("Dutch learning", "/netherlands/language/dutch-learning", "Learning routes"),
-          link("Inburgering exams", "/netherlands/language/inburgering-exams", "Exam prep"),
+          link("Inburgering", "/netherlands/integration/inburgering/", "Wi 2021, HSM, B1 & KNM"),
         ],
       },
     ],

@@ -52,13 +52,13 @@ export const childcareAllowanceNetherlandsPage = {
     chips: ["Kinderopvangtoeslag", "Registered childcare", "Working parents", "Dienst Toeslagen"],
     image: {
       src: "/images/heroes/netherlands-childcare-allowance-netherlands-hero-v3.png",
-      alt: "Photorealistic editorial photo of an international couple reviewing Dutch childcare allowance paperwork and a registered childcare contract at a bright apartment table, with a young child nearby and canal houses visible through the window.",
+      alt: "Photorealistic editorial photo of an international couple reviewing Dutch childcare allowance paperwork and a registered childcare contract at a bright…",
     },
   },
   infographics: {
     introFlow: {
       src: "/images/infographics/netherlands-childcare-allowance-intro-flow-infographic-v3.png",
-      alt: "Infographic explaining Dutch childcare allowance (kinderopvangtoeslag): registered childcare, work requirements, income tests and reimbursement through Dienst Toeslagen.",
+      alt: "Infographic explaining Dutch childcare allowance (kinderopvangtoeslag): registered childcare, work requirements, income tests and reimbursement through…",
       caption: "Kinderopvangtoeslag supports registered childcare costs — eligibility depends on work, income, provider registration and household type, not nationality alone.",
     },
     snapshot: {
@@ -88,7 +88,7 @@ export const childcareAllowanceNetherlandsPage = {
     },
     howMuch: {
       src: "/images/infographics/netherlands-childcare-allowance-how-much-infographic-v3.png",
-      alt: "Infographic showing how childcare allowance amounts are determined through income, childcare costs and registered hours — use official calculators for personal figures.",
+      alt: "Infographic showing how childcare allowance amounts are determined through income, childcare costs and registered hours — use official calculators for…",
       caption: "Allowance depends on income, costs and eligible hours — use official tools and the childcare cost estimator for planning, not hardcoded blog figures.",
     },
     childcareCosts: {
@@ -120,31 +120,6 @@ export const childcareAllowanceNetherlandsPage = {
       src: "/images/infographics/netherlands-childcare-allowance-expat-family-infographic-v3.png",
       alt: "Infographic explaining expat family concerns: waiting lists, language, international schools and balancing work and childcare.",
       caption: "Allowance planning sits alongside childcare search, schools and relocation timing — not instead of them.",
-    },
-    questions: {
-      src: "/images/infographics/netherlands-childcare-allowance-questions-infographic-v3.png",
-      alt: "Infographic summarising common expat questions about Dutch childcare allowance eligibility, providers, partners and applications.",
-      caption: "Use these prompts when planning — then confirm on official sources or with qualified advice.",
-    },
-    relatedGuides: {
-      src: "/images/infographics/netherlands-childcare-allowance-related-guides-infographic-v3.png",
-      alt: "Infographic linking to related family, education and tax guides: childcare estimator, healthcare allowance, rent allowance and moving with children.",
-      caption: "Connect kinderopvangtoeslag planning to family tools, city comparison and broader relocation context.",
-    },
-    services: {
-      src: "/images/infographics/netherlands-childcare-allowance-services-infographic-v3.png",
-      alt: "Infographic showing professional services for childcare allowance questions: relocation, education consultants and tax advisors.",
-      caption: "Use professionals for personal entitlement questions — this guide is orientation only.",
-    },
-    officialSources: {
-      src: "/images/infographics/netherlands-childcare-allowance-official-sources-infographic-v3.png",
-      alt: "Infographic map of official Dutch childcare allowance sources: Belastingdienst Toeslagen, Government.nl, toeslagen.nl and Rijksoverheid.",
-      caption: "Verify current reimbursement rules, income tests and provider requirements on official government sources before applying.",
-    },
-    exploreNext: {
-      src: "/images/infographics/netherlands-childcare-allowance-explore-next-infographic-v3.png",
-      alt: "Infographic linking to next-step guides: child benefit, schools, healthcare allowance, rent allowance and moving with children.",
-      caption: "Move from kinderopvangtoeslag concepts into family planning, education choices and relocation next steps.",
     },
   },
   sectionNav: [

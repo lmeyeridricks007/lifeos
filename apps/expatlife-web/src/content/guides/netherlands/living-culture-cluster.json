@@ -319,7 +319,7 @@
         { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub for first-week priorities." },
         { "label": "Daily life basics", "href": "/netherlands/living/daily-life/", "description": "Routines, errands, and household systems." },
         { "label": "Getting around", "href": "/netherlands/living/getting-around/", "description": "Public-space rhythm and transport context." },
-        { "label": "Dutch workplace culture", "href": "/netherlands/culture/dutch-workplace-culture/", "description": "Work-focused companion." }
+        { "label": "Dutch workplace culture", "href": "/netherlands/jobs/dutch-workplace-culture/", "description": "Work-focused companion." }
       ]
     },
     {
@@ -635,15 +635,14 @@
       "section": "guides",
       "clusterLabel": "Culture in the Netherlands",
       "pageType": "guide",
-      "contentStatus": "scaffold",
-      "menuVisible": true,
+      "contentStatus": "hidden",
+      "menuVisible": false,
       "navGroup": "workplace",
-      "intro": "Dutch offices often prize clarity, agendas, and written summaries. Read alongside employment law pages under Money.",
+      "intro": "Redirects to the jobs-cluster workplace culture guide — kept for alias history only.",
       "canonicalGuidePath": "/netherlands/jobs/dutch-workplace-culture/",
-      "canonicalLabel": "Work culture (employment cluster)",
+      "canonicalLabel": "Dutch workplace culture (jobs guide)",
       "related": [
         { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Living-guide bridge from office culture to everyday social norms." },
-        { "label": "Working in the Netherlands", "href": "/netherlands/work/working-in-netherlands/", "description": "Contracts and basics (Money path)." },
         { "label": "Culture hub", "href": "/netherlands/culture/", "description": "All culture topics." }
       ]
     },
@@ -707,7 +706,7 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Dutch workplace culture", "href": "/netherlands/culture/dutch-workplace-culture/", "description": "Parent workplace topic." },
+        { "label": "Dutch workplace culture", "href": "/netherlands/jobs/dutch-workplace-culture/", "description": "Parent workplace topic." },
         { "label": "Meetings and consensus", "href": "/netherlands/culture/meetings-and-consensus/", "description": "Group decision style." }
       ]
     },
@@ -1124,7 +1123,7 @@
       "canonicalLabel": null,
       "related": [
         { "label": "Learning Dutch", "href": "/netherlands/culture/learning-dutch/", "description": "Courses and practice." },
-        { "label": "Inburgering exams", "href": "/netherlands/culture/inburgering-exams/", "description": "Exam framing." }
+        { "label": "Inburgering guide", "href": "/netherlands/integration/inburgering/", "description": "Wi 2021, HSM, B1 & KNM." }
       ]
     },
     {
@@ -1153,22 +1152,21 @@
       "slug": "inburgering-exams",
       "path": "/netherlands/culture/inburgering-exams/",
       "title": "Inburgering exams (orientation)",
-      "metaDescription": "Orientation to Dutch inburgering exams for expats—where exams fit versus legal requirements (verify with official sources).",
+      "metaDescription": "Redirects to the authoritative inburgering guide — kept for alias history only.",
       "breadcrumbLabel": "Inburgering exams",
       "section": "guides",
       "clusterLabel": "Culture in the Netherlands",
       "pageType": "support",
-      "contentStatus": "scaffold",
-      "menuVisible": true,
+      "contentStatus": "hidden",
+      "menuVisible": false,
       "navGroup": "language-integration",
-      "intro": "Rules change by residence route. Use this page for exam orientation; the full inburgering guide covers obligations, planning, and tools.",
+      "intro": "Redirects to the authoritative inburgering guide — obligations, Wi 2021 / B1, KNM 2025, and DUO.",
       "canonicalGuidePath": "/netherlands/integration/inburgering/",
       "canonicalLabel": "Inburgering guide (authoritative)",
       "related": [
-        { "label": "Inburgering guide (authoritative)", "href": "/netherlands/integration/inburgering/", "description": "Legal obligation, planning, and PR/citizenship links." },
-        { "label": "Inburgering tools", "href": "/netherlands/integration/tools/", "description": "Practice and planning tools." },
-        { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/", "description": "Five-year stay planning." },
-        { "label": "Compare visas", "href": "/netherlands/visa/compare-visas/", "description": "Legal framing (Move)." }
+        { "label": "Inburgering guide (authoritative)", "href": "/netherlands/integration/inburgering/", "description": "Wi 2021, HSM vs obligation, KNM 2025, DUO." },
+        { "label": "Learning Dutch", "href": "/netherlands/culture/learning-dutch/", "description": "Study paths." },
+        { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/", "description": "Five-year stay planning." }
       ]
     },
     {

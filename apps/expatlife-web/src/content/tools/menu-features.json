@@ -2,11 +2,11 @@
   "topLevelToolsMenu": [
     {
       "categoryId": "move-immigration",
-      "featuredToolIds": ["visa-checker", "visa-timeline-estimator", "visa-cost-calculator", "visa-application-plan", "moving-checklist", "relocation-cost-estimator", "document-readiness", "arrival-planner", "first-90-days"]
+      "featuredToolIds": ["visa-checker", "visa-timeline-estimator", "visa-cost-calculator", "hsm-salary-checker", "visa-application-plan", "moving-checklist", "relocation-cost-estimator", "document-readiness", "arrival-planner", "first-90-days"]
     },
     {
       "categoryId": "integration",
-      "featuredToolIds": ["inburgering-timeline-planner", "inburgering-exam-readiness-checker", "knm-knowledge-quiz"]
+      "featuredToolIds": ["integration-requirement-checker", "inburgering-exam-readiness-checker", "inburgering-timeline-planner"]
     },
     {
       "categoryId": "citizenship",

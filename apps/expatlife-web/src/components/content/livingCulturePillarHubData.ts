@@ -368,8 +368,9 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         goal: "Interpret directness, meetings, and written follow-ups accurately.",
         actions: ["Separate tone from intent in feedback", "Expect agendas and documented outcomes", "Know when hierarchy is flat in practice"],
         links: [
-          { href: "/netherlands/culture/dutch-workplace-culture/", label: "Workplace hub" },
-          { href: "/netherlands/jobs/dutch-workplace-culture/", label: "Deep work-culture guide" },
+          { href: "/netherlands/jobs/dutch-workplace-culture/", label: "Dutch workplace culture guide" },
+          { href: "/netherlands/jobs/dutch-directness-at-work/", label: "Dutch directness at work" },
+          { href: "/netherlands/culture/meetings-and-consensus/", label: "Meetings and consensus" },
         ],
       },
       {
@@ -404,7 +405,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         actions: ["Start with spoken basics for shops and care", "Use practice scenarios for stressful moments", "Confirm obligations with IND / DUO"],
         links: [
           { href: "/netherlands/culture/learning-dutch/", label: "Learning Dutch" },
-          { href: "/netherlands/culture/inburgering-exams/", label: "Inburgering orientation" },
+          { href: "/netherlands/integration/inburgering/", label: "Inburgering guide" },
         ],
       },
     ],
@@ -420,7 +421,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         personaTitle: "Starting work in the Netherlands",
         whatMatters: ["Meeting cadence and consensus", "Direct feedback without personal offence", "Written recaps after calls"],
         readingOrderLinks: [
-          { title: "Dutch workplace culture", href: "/netherlands/culture/dutch-workplace-culture/" },
+          { title: "Dutch workplace culture", href: "/netherlands/jobs/dutch-workplace-culture/" },
           { title: "Meetings & consensus", href: "/netherlands/culture/meetings-and-consensus/" },
           { title: "Written follow-ups", href: "/netherlands/culture/written-follow-ups/" },
         ],
@@ -463,7 +464,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
           { title: "Language & phrases (Living)", href: "/netherlands/living/language/" },
           { title: "Language basics", href: "/netherlands/culture/dutch-language-basics/" },
           { title: "Learning Dutch", href: "/netherlands/culture/learning-dutch/" },
-          { title: "Inburgering orientation", href: "/netherlands/culture/inburgering-exams/" },
+          { title: "Inburgering guide", href: "/netherlands/integration/inburgering/" },
         ],
         startToolLink: {
           title: "Inburgering Timeline Planner",

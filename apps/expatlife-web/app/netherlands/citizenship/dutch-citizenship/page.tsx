@@ -13,9 +13,9 @@ const SLUG = "dutch-citizenship-netherlands";
 export const revalidate = CONTENT_REVALIDATE;
 
 export const metadata: Metadata = buildSocialMetadata({
-  title: "Dutch Citizenship for Expats: Naturalisation, Option & Requirements",
+  title: "Dutch Citizenship for Expats: Naturalisation vs Option & Dual Nationality",
   description:
-    "A practical guide to Dutch citizenship for expats: naturalisation vs option, typical residence periods, integration requirements, and official next steps.",
+    "Naturalisation vs option, dual nationality caveats, and what inburgering unlocks for Dutch citizenship. Orientation only — confirm on IND and government.nl.",
   path: DUTCH_CITIZENSHIP_PATH,
   ogType: "article",
   publishGate: { publish: true, publishDate: LONG_TERM_STAY_CLUSTER_PUBLISH_DATE },

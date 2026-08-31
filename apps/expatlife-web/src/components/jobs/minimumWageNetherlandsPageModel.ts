@@ -319,6 +319,12 @@ export const minimumWageNetherlandsPage = {
   ] satisfies MinimumWageNetherlandsLink[],
   relatedGuides: [
     {
+      label: "Netherlands official figures 2026",
+      href: "/netherlands/official-figures/",
+      status: "live",
+      description: "Dated citation table: adult minimum wage plus HSM floors, IND fees, 30% norms and eigen risico.",
+    },
+    {
       label: "Highly skilled migrant visa",
       href: HSM_VISA_PATH,
       status: "live",

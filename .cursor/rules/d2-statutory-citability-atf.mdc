@@ -1,0 +1,17 @@
+---
+description: Statutory figures pages must keep dated citability ATF (D2)
+globs: apps/expatlife-web/**/*.{ts,tsx,json}
+alwaysApply: false
+---
+
+# D2 — Dated tables on source-of-record guides
+
+When a page states a **statutory or official indexed number** (HSM salary floors, IND fees, 30% norms/cap, minimum wage, eigen risico, toeslagen parameters, etc.):
+
+1. Show a visible **last-reviewed** date above the fold (hero).
+2. Show at least one **official source link** above the fold (hero).
+3. **Do not strip** FAQs, dated tables, or other citability layers when editing.
+
+Prefer `GuideHeroTrustMeta` (`src/components/guides/GuideHeroTrustMeta.tsx`) or `GuidePageTemplate`’s `lastUpdated` + `heroOfficialSources` contract.
+
+Source-of-record examples: 30% ruling, minimum wage, health insurance (early setup + comparison), BSN, HSM, `/netherlands/official-figures/`.

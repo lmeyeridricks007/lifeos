@@ -118,6 +118,7 @@ export const sourcesPage = {
     },
   ],
   relatedLinks: [
+    { label: "Netherlands official figures 2026", href: "/netherlands/official-figures/" },
     { label: "Methodology", href: "/methodology/" },
     { label: "Editorial policy", href: "/editorial-policy/" },
     { label: "Contact", href: "/contact/" },

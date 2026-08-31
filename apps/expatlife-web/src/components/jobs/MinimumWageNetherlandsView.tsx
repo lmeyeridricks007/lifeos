@@ -46,6 +46,7 @@ import {
   CITIES_FUNNEL_SOFT_COPILOT_SURFACE,
 } from "@/src/components/cities/shared/citiesFunnelPageUi";
 import { MinimumWageRecommendedServices } from "@/src/components/jobs/MinimumWageRecommendedServices";
+import { GuideHeroTrustMeta } from "@/src/components/guides/GuideHeroTrustMeta";
 import { SalaryBenchmarkCtaStrip } from "@/src/components/taxes/SalaryBenchmarkDisplay";
 import {
   minimumWageNetherlandsPage as page,
@@ -645,22 +646,7 @@ export function MinimumWageNetherlandsView() {
                     ) : null}
                   </div>
                   {page.heroOfficialSources?.length ? (
-                    <p className="mt-4 text-sm text-foreground-muted">
-                      Official sources:{" "}
-                      {page.heroOfficialSources.map((source, index) => (
-                        <span key={source.href}>
-                          {index > 0 ? " · " : null}
-                          <a
-                            href={source.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="font-semibold text-link hover:text-link-hover"
-                          >
-                            {source.label}
-                          </a>
-                        </span>
-                      ))}
-                    </p>
+                    <GuideHeroTrustMeta className="mt-4" sources={page.heroOfficialSources} />
                   ) : null}
                   <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                     <Link href={page.hero.primaryCta.href} className={primaryCtaClass}>{page.hero.primaryCta.label}<ArrowRight className="h-4 w-4" aria-hidden /></Link>

@@ -2931,6 +2931,37 @@ describe("leaving Netherlands tax nav active state", () => {
   });
 });
 
+describe("leaving Netherlands journey nav active state", () => {
+  const LEAVING_NL_JOURNEY_PATH = "/netherlands/leaving/";
+
+  it("treats the shipped leaving journey guide route as live", () => {
+    expect(getRouteStatus(LEAVING_NL_JOURNEY_PATH)).toBe("live");
+  });
+
+  it("highlights Move for the leaving journey guide", () => {
+    expect(getActiveNavKey(LEAVING_NL_JOURNEY_PATH)).toBe("moving");
+  });
+
+  it("renders the Move > Leaving menu row as an active link", () => {
+    const item = MEGA_MENUS.moving.sections
+      .flatMap((section) => section.items)
+      .find((navItem) => navItem.href === LEAVING_NL_JOURNEY_PATH);
+
+    expect(item).toBeDefined();
+    expect(item?.navStatus).toBe("live");
+    expect(isNavItemLinkable(item!)).toBe(true);
+    expect(isNavItemActive(LEAVING_NL_JOURNEY_PATH, item!)).toBe(true);
+  });
+
+  it("has exactly one menu row, in Move > Leaving", () => {
+    const rows = menuRowsForHref(LEAVING_NL_JOURNEY_PATH);
+
+    expect(rows).toHaveLength(1);
+    expect(rows[0].menuKey).toBe("moving");
+    expect(rows[0].sectionTitle).toBe("Leaving");
+  });
+});
+
 describe("mortgage advisors service nav active state", () => {
   const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors/";
 

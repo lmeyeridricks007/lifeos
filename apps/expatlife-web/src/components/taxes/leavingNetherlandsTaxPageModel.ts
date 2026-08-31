@@ -301,11 +301,11 @@ export const leavingNetherlandsTaxPage = {
     { label: "Moving to the Netherlands", href: "/netherlands/moving-to-the-netherlands/", description: "Read the broader relocation guide." },
   ] satisfies LeavingNetherlandsTaxLink[],
   exploreNextCards: [
+    { label: "Leaving the Netherlands journey", href: "/netherlands/leaving/", description: "End-to-end exit sequence: deregistration, insurance, 30% end, PR consequences and tools." },
+    { label: "Leaving tools hub", href: "/netherlands/leaving/tools/", description: "Exit readiness checker and repatriation cost calculator." },
+    { label: "Exit readiness checker", href: "/netherlands/leaving/tools/exit-readiness-checker/", description: "Sequence deregistration, insurance, toeslagen, and tax records." },
+    { label: "Repatriation cost calculator", href: "/netherlands/leaving/tools/repatriation-cost-calculator/", description: "Orientation budget ranges for flights, shipping, and housing." },
     { label: "Double Taxation", href: "/netherlands/taxes/double-taxation-netherlands/", description: "Understand treaty concepts before assuming where income is taxed." },
-    { label: "Foreign Income", href: "/netherlands/taxes/foreign-income-netherlands/", description: "Inventory salary, property, pensions and investments across borders." },
-    { label: "Expat Taxes", href: "/netherlands/taxes/expat-taxes-netherlands/", description: "Review the broader Dutch tax framework for expats." },
-    { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", description: "Check the conceptual rules around the expat tax facility." },
-    { label: "Moving to the Netherlands", href: "/netherlands/moving-to-the-netherlands/", description: "Return to the broader relocation ecosystem." },
     { label: "Permanent residence", href: "/netherlands/citizenship/permanent-residence/", description: "Long-term stay planning if exit timing is still open." },
   ] satisfies LeavingNetherlandsTaxLink[],
 } as const;

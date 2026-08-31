@@ -13,9 +13,9 @@ const SLUG = "inburgering-netherlands";
 export const revalidate = CONTENT_REVALIDATE;
 
 export const metadata: Metadata = buildSocialMetadata({
-  title: "Inburgering in the Netherlands: Requirements, Exams & Planning for Expats",
+  title: "Inburgering in the Netherlands: HSM, Wi 2021, B1 & KNM (2025)",
   description:
-    "A practical guide to inburgering in the Netherlands for expats: who may need integration, language and KNM exams, and planning tools.",
+    "Do you have to inburgeren on HSM? Wet inburgering 2021 / B1 default, KNM changes from 1 July 2025, and DUO vs IND roles. Orientation only — confirm on official portals.",
   path: INBURGERING_PATH,
   ogType: "article",
   publishGate: { publish: true, publishDate: LONG_TERM_STAY_CLUSTER_PUBLISH_DATE },

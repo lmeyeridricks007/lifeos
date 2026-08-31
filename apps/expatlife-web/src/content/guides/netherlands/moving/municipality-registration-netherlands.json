@@ -183,17 +183,17 @@
       "id": "municipality-differences",
       "heading": "Appointment waits by municipality (orientation)",
       "body": [
-        "You must register within 5 days of arrival, but most gemeenten require an appointment — and slots can fill weeks ahead in busy cities. These ranges reflect common expat arrival patterns; always check your gemeente booking page for live availability.",
-        "Book as soon as you know your registerable address. International desks in Amsterdam and The Hague may have separate queues from standard civil-affairs appointments."
+        "You must register within 5 days of arrival, but most gemeenten require an appointment — and booking systems differ by city. Amsterdam, The Hague and Eindhoven are not interchangeable: each has distinct official booking routes (City Office vs IN Amsterdam; status-based BRP pages vs International Centre; Inwonersplein vs Holland Expat Center South).",
+        "Book as soon as you know your registerable address. Use the live appointment links below for those three cities; other rows are wait orientation only."
       ],
       "table": {
         "headers": ["Municipality", "Typical appointment wait (orientation)", "Booking tip"],
         "rows": [
-          ["Amsterdam", "Often 2–6 weeks; peaks can run longer", "Book online early; Expat Center Amsterdam for eligible profiles"],
+          ["Amsterdam", "Often 2–6 weeks; peaks can run longer", "City Office immigration form; IN Amsterdam for eligible profiles"],
           ["Rotterdam", "Often 1–3 weeks", "Use online afspraak; confirm document list before visit"],
-          ["The Hague", "Often 2–4 weeks", "Check international resident desk hours"],
+          ["The Hague", "Often 2–4 weeks", "Pick the BRP page for your status, or International Centre if eligible"],
           ["Utrecht", "Often 2–4 weeks", "High student and expat volume — book early"],
-          ["Eindhoven", "Often 1–2 weeks", "Usually faster than Randstad core cities"],
+          ["Eindhoven", "Often 1–2 weeks", "Inwonersplein online booking; Expat Center for eligible knowledge workers"],
           ["Groningen", "Often 1–2 weeks", "Book early during university intake seasons"],
           ["Maastricht", "Often 1–3 weeks", "Smaller city but appointment still required"]
         ]
@@ -204,11 +204,15 @@
         "text": "Waits change by season and staffing. Always use your gemeente's official appointment system — this table is orientation only, not a guarantee of slot timing."
       },
       "links": [
-        { "label": "Amsterdam — make an appointment", "href": "https://www.amsterdam.nl/en/civil-affairs/appointment/" },
+        { "label": "Amsterdam — City Office immigration appointment", "href": "https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/AfspraakImmigratieENG.aspx/" },
+        { "label": "Amsterdam — IN Amsterdam appointment", "href": "https://www.iamsterdam.com/en/live-work-study/in-amsterdam/international-newcomers/make-an-appointment-individuals" },
+        { "label": "The Hague — Moving and immigration hub", "href": "https://www.denhaag.nl/en/moving-and-immigration/" },
+        { "label": "The Hague International Centre — registration appointment", "href": "https://www.thehagueinternationalcentre.nl/make-an-appointment-for-registration" },
+        { "label": "Eindhoven — Inwonersplein online booking", "href": "https://eindhoven.mijnafspraakmaken.nl/client/" },
+        { "label": "Eindhoven — Holland Expat Center South appointment", "href": "https://www.hollandexpatcenter.com/appointment-at-the-expat-center" },
         { "label": "Rotterdam — registration appointment", "href": "https://www.rotterdam.nl/en/registration-appointment" },
-        { "label": "The Hague — registration", "href": "https://www.denhaag.nl/en/municipality-of-the-hague/registration-in-the-personal-records-database/" },
         { "label": "Utrecht — registration", "href": "https://www.utrecht.nl/city-of-utrecht/living-in-utrecht/registration/" },
-        { "label": "Eindhoven — registration", "href": "https://www.eindhoven.nl/en/living-in-eindhoven/registration" }
+        { "label": "BSN registration — city booking section", "href": "/netherlands/bsn-registration/#appointment-timing" }
       ]
     },
     {

@@ -20,6 +20,9 @@ type GuidePremiumVisualFigureProps = {
 /**
  * Full-width premium infographic for pillar guides — single column, below intro copy.
  * Prefer {@link guidePremiumVisualAfterIntroClass} for spacing after the first text block.
+ *
+ * E4: keep `unoptimized` (avoids large `srcset` strings in HTML). Prefer omitting figures on
+ * closing FAQ/sources/related sections in heavy pillar views instead of mounting every PNG twice.
  */
 export function GuidePremiumVisualFigure({
   visual,
@@ -46,7 +49,7 @@ export function GuidePremiumVisualFigure({
       <div
         className={cn(
           "relative aspect-[16/10] w-full bg-gradient-to-br from-slate-50 via-white to-copilot-bg-soft",
-          "min-h-[320px] sm:min-h-[420px] lg:min-h-[520px] xl:min-h-[640px]",
+          "min-h-[280px] sm:min-h-[360px] lg:min-h-[440px]",
           onDark && "from-slate-900 via-slate-900 to-slate-950"
         )}
       >

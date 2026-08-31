@@ -1,3 +1,9 @@
+import {
+  AMSTERDAM_APPOINTMENT_LINKS,
+  EINDHOVEN_APPOINTMENT_LINKS,
+  THE_HAGUE_APPOINTMENT_LINKS,
+} from "@/src/data/cities/municipalityAppointmentLinks";
+
 export const REGISTERING_YOUR_ADDRESS_NETHERLANDS_PATH =
   "/netherlands/practical-life/registering-your-address-netherlands/" as const;
 
@@ -494,9 +500,10 @@ export const registeringYourAddressNetherlandsPage = {
       city: "Amsterdam",
       population: "~920,000",
       href: "/netherlands/amsterdam/",
-      website: "https://www.amsterdam.nl/",
-      appointmentNote: "Online booking required for most registration appointments; English newcomer pages available.",
-      expatServices: "Expat Centre Amsterdam supports many international residents with registration orientation.",
+      website: AMSTERDAM_APPOINTMENT_LINKS.cityOfficeImmigration,
+      appointmentNote:
+        "Book via the City Office immigration appointment form; eligible EU / highly skilled newcomers can use IN Amsterdam instead.",
+      expatServices: "IN Amsterdam offers combined registration support for eligible newcomers.",
     },
     {
       city: "Rotterdam",
@@ -510,8 +517,9 @@ export const registeringYourAddressNetherlandsPage = {
       city: "The Hague",
       population: "~560,000",
       href: "/netherlands/the-hague/",
-      website: "https://www.denhaag.nl/",
-      appointmentNote: "International city with dedicated expat-facing registration guidance online.",
+      website: THE_HAGUE_APPOINTMENT_LINKS.movingAndImmigration,
+      appointmentNote:
+        "Pick the BRP registration page that matches your status, or book via The Hague International Centre if eligible.",
       expatServices: "The Hague International Centre supports many international professionals and families.",
     },
     {
@@ -526,9 +534,10 @@ export const registeringYourAddressNetherlandsPage = {
       city: "Eindhoven",
       population: "~250,000",
       href: "/netherlands/eindhoven/",
-      website: "https://www.eindhoven.nl/",
-      appointmentNote: "International workforce hub — check gemeente pages for appointment lead times.",
-      expatServices: "Expatdesk Eindhoven supports international talent with practical settling-in information.",
+      website: EINDHOVEN_APPOINTMENT_LINKS.onlineBooking,
+      appointmentNote:
+        "Book Inwonersplein online (mijnafspraakmaken), or Holland Expat Center South for combined municipal + IND if eligible.",
+      expatServices: "Holland Expat Center South supports international talent with settling-in and registration appointments.",
     },
     {
       city: "Groningen",
@@ -540,11 +549,26 @@ export const registeringYourAddressNetherlandsPage = {
     },
     ] satisfies MunicipalityCityCard[],
   cityBookingComparison: [
-    { city: "Amsterdam", bookingChannel: "Online appointment (required for most visits)", typicalWait: "Often 2–4+ weeks in peak season", expatSupport: "Expat Centre Amsterdam" },
+    {
+      city: "Amsterdam",
+      bookingChannel: "City Office immigration form or IN Amsterdam (eligible profiles)",
+      typicalWait: "Often 2–6 weeks in peak season",
+      expatSupport: "IN Amsterdam",
+    },
     { city: "Rotterdam", bookingChannel: "Gemeente portal online booking", typicalWait: "Varies; check newcomer pages for current lead times", expatSupport: "Rotterdam International Center" },
-    { city: "The Hague", bookingChannel: "Online booking with expat-facing guidance", typicalWait: "Moderate demand; international workforce hub", expatSupport: "The Hague International Centre" },
+    {
+      city: "The Hague",
+      bookingChannel: "Status-based BRP pages or The Hague International Centre",
+      typicalWait: "Often 2–4 weeks; International Centre has its own slots",
+      expatSupport: "The Hague International Centre",
+    },
     { city: "Utrecht", bookingChannel: "Digital portal; limited walk-in options", typicalWait: "Tight around academic and corporate peaks", expatSupport: "English newcomer pages on utrecht.nl" },
-    { city: "Eindhoven", bookingChannel: "Online appointment system", typicalWait: "International talent influx can extend waits", expatSupport: "Expatdesk Eindhoven" },
+    {
+      city: "Eindhoven",
+      bookingChannel: "Inwonersplein online booking or Holland Expat Center South",
+      typicalWait: "Often 1–2 weeks municipally; Expat Center can be faster",
+      expatSupport: "Holland Expat Center South",
+    },
     { city: "Groningen", bookingChannel: "Online booking via gemeente portal", typicalWait: "Student intake periods are busiest", expatSupport: "International Welcome Center North" },
   ],
   checklist: [

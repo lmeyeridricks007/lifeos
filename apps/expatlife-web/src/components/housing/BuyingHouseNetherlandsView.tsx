@@ -289,7 +289,8 @@ function SectionWithVisual({
   intro: ReactNode;
   tips?: readonly string[];
   tipsTitle?: string;
-  visual: (typeof page.infographics)[keyof typeof page.infographics];
+  /** Omit on closing sections — E4 HTML payload pass. */
+  visual?: (typeof page.infographics)[keyof typeof page.infographics];
   panel?: { eyebrow: string; title: string; rows: Array<{ label: string; body: string; Icon: LucideIcon }>; note?: string };
   extra?: ReactNode;
 }) {
@@ -299,7 +300,7 @@ function SectionWithVisual({
         <SectionIntro title={title} fullWidth>{intro}</SectionIntro>
         <SectionGuideBand tips={tips} tipsTitle={tipsTitle} panel={panel} />
         {extra}
-        <VisualFigure visual={visual} className="mt-0" />
+        {visual ? <VisualFigure visual={visual} className="mt-0" /> : null}
       </div>
     </section>
   );
@@ -753,7 +754,6 @@ export function BuyingHouseNetherlandsView() {
                   ]}
                   note={page.officialPlanningCta.disclaimer}
                 />
-                <VisualFigure visual={page.infographics.costs} className="mt-0" />
                 <BuyingHousePlanningCtaStrip />
                 <BuyingHouseHubCtaStrip />
                 <BuyingHouseReferenceDisclaimer className="mt-0" />
@@ -1054,7 +1054,6 @@ export function BuyingHouseNetherlandsView() {
                 </SectionIntro>
                 <TipsPanel title="Start with these prompts" items={page.questionsSectionTips} />
                 <QuestionGrid items={page.expatQuestions} />
-                <VisualFigure visual={page.infographics.questions} className="mt-0" />
               </div>
             </section>
 
@@ -1075,7 +1074,6 @@ export function BuyingHouseNetherlandsView() {
                   ))}
                 </div>
                 <RelatedGuidesVisualPanel />
-                <VisualFigure visual={page.infographics.relatedGuides} className="mt-0" />
               </div>
             </section>
 
@@ -1105,7 +1103,6 @@ export function BuyingHouseNetherlandsView() {
                     </article>
                   ))}
                 </div>
-                <VisualFigure visual={page.infographics.services} className="mt-0" />
                 <div className="grid w-full gap-4 sm:grid-cols-2 lg:grid-cols-4">
                   {page.services.map((item, index) => (
                     <LinkCard key={item.href} item={item} iconIndex={index} />
@@ -1133,7 +1130,6 @@ export function BuyingHouseNetherlandsView() {
                   ]}
                   note="Individual circumstances vary. Confirm personal questions with regulated mortgage advisers and official sources."
                 />
-                <VisualFigure visual={page.infographics.questions} className="mt-0" />
               </div>
             </section>
 
@@ -1158,7 +1154,6 @@ export function BuyingHouseNetherlandsView() {
                     { label: "AFM", body: "Mortgage adviser regulation and consumer information.", Icon: Landmark },
                   ]}
                 />
-                <VisualFigure visual={page.infographics.officialSources} className="mt-0" />
               </div>
             </section>
 
@@ -1172,8 +1167,6 @@ export function BuyingHouseNetherlandsView() {
                     <LinkCard key={item.href} item={item} iconIndex={index} />
                   ))}
                 </div>
-                <RelatedGuidesVisualPanel />
-                <VisualFigure visual={page.infographics.relatedGuides} className="mt-0" />
               </div>
             </section>
 
@@ -1186,7 +1179,6 @@ export function BuyingHouseNetherlandsView() {
                   <LinkCard key={item.href} item={item} iconIndex={index} tone="onDark" />
                 ))}
               </div>
-              <VisualFigure visual={page.infographics.exploreNext} className="mt-6 border-white/10 bg-white/5 ring-white/10 [&_figcaption]:border-white/10 [&_figcaption]:bg-white/5 [&_figcaption]:text-slate-300" />
             </section>
 
             <p className="rounded-2xl border border-amber-100 bg-amber-50/80 p-5 text-sm leading-relaxed text-amber-950">
