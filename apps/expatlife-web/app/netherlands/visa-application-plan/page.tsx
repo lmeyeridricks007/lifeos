@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { MoveHero, MoveToolSidebar } from "@/components/page/move-shell";
 import { SectionBlock } from "@/components/page/pillar-template";
@@ -21,6 +22,9 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getVisaRelocationMarketingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 
 export const revalidate = CONTENT_REVALIDATE;
+/** Scenario query (`?scenario=`) is applied client-side so this page stays cacheable (Ahrefs slow-page). */
+export const dynamic = "force-static";
+
 
 const canonical = "/netherlands/visa-application-plan/";
 const BASE = "/netherlands";
@@ -142,17 +146,7 @@ const OFFICIAL_SOURCES = [
   { label: "Government.nl – Migration", href: "https://www.government.nl/topics/immigration-to-the-netherlands" },
 ];
 
-type PageProps = { searchParams?: Promise<Record<string, string | string[] | undefined>> };
-
-type SearchParamsRecord = Record<string, string | string[] | undefined>;
-
-export default async function VisaApplicationPlanPage(props: PageProps) {
-  const raw = props.searchParams;
-  const searchParams: SearchParamsRecord =
-    raw !== undefined && raw !== null ? await Promise.resolve(raw) : {};
-  const scenarioId = typeof searchParams.scenario === "string" ? searchParams.scenario : undefined;
-  const scenario = scenarioId ? EXAMPLE_SCENARIOS.find((s) => s.id === scenarioId) : undefined;
-  const initialPrefill = scenario?.prefilledAnswers;
+export default function VisaApplicationPlanPage() {
   const recommendedServiceCards = getVisaRelocationMarketingRecommendedCards();
 
   const breadcrumbItems = [
@@ -220,7 +214,13 @@ export default async function VisaApplicationPlanPage(props: PageProps) {
   const primarySectionContent = (
     <div className="space-y-6">
       <div>
-        <VisaApplicationPlanClient key={scenarioId ?? "default"} initialPrefill={initialPrefill} />
+        <Suspense
+          fallback={
+            <div className="min-h-[24rem] rounded-2xl border border-slate-200 bg-slate-50/80" aria-busy="true" aria-label="Loading visa planner" />
+          }
+        >
+          <VisaApplicationPlanClient />
+        </Suspense>
       </div>
       {exampleScenariosBlock}
     </div>

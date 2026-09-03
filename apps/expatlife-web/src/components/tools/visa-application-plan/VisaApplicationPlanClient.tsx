@@ -1,7 +1,8 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SegmentedControl } from "@/components/ui/segmented-control";
@@ -9,6 +10,7 @@ import { cn } from "@/lib/cn";
 import type { VisaApplicationPlanAnswers, VisaPlanRoute, CitizenshipCategory, HouseholdType, ApplicationStage, DocumentReadinessLevel, MissingDocumentArea, TargetMoveWindow, PracticalSetupNeed } from "@/src/lib/visa-plan/types";
 import { runPlanEngine } from "@/src/lib/visa-plan/planEngine";
 import { COUNTRY_QUICK_PICKS, COUNTRY_SELECT_OPTIONS } from "@/src/data/tools/document-readiness/countries-list";
+import { EXAMPLE_SCENARIOS } from "@/src/data/tools/visa-plan/example-scenarios";
 import { VisaApplicationPlanResults } from "./VisaApplicationPlanResults";
 import { ToolResultsLoading } from "@/src/components/tools/ToolResultsLoading";
 
@@ -111,19 +113,43 @@ const DEFAULT_ANSWERS: VisaApplicationPlanAnswers = {
 };
 
 type Props = {
+  /** @deprecated Prefer `?scenario=` on the client — kept for rare server prefill. */
   initialPrefill?: Partial<VisaApplicationPlanAnswers>;
 };
 
+function prefillFromScenario(scenarioId: string | null): Partial<VisaApplicationPlanAnswers> | undefined {
+  if (!scenarioId) return undefined;
+  return EXAMPLE_SCENARIOS.find((s) => s.id === scenarioId)?.prefilledAnswers;
+}
+
 export function VisaApplicationPlanClient({ initialPrefill }: Props) {
+  const searchParams = useSearchParams();
+  const scenarioPrefill = prefillFromScenario(searchParams.get("scenario"));
+  const resolvedPrefill = scenarioPrefill ?? initialPrefill;
+
   const [stepIndex, setStepIndex] = useState(0);
   const [answers, setAnswers] = useState<VisaApplicationPlanAnswers>(() => ({
     ...DEFAULT_ANSWERS,
-    ...initialPrefill,
-    missingDocumentAreas: initialPrefill?.missingDocumentAreas ?? [],
-    practicalSetupNeeds: initialPrefill?.practicalSetupNeeds ?? [],
+    ...resolvedPrefill,
+    missingDocumentAreas: resolvedPrefill?.missingDocumentAreas ?? [],
+    practicalSetupNeeds: resolvedPrefill?.practicalSetupNeeds ?? [],
   }));
   const [result, setResult] = useState<ReturnType<typeof runPlanEngine> | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
+
+  // Apply scenario when the query string changes without a full navigation remount.
+  useEffect(() => {
+    const next = prefillFromScenario(searchParams.get("scenario"));
+    if (!next) return;
+    setAnswers({
+      ...DEFAULT_ANSWERS,
+      ...next,
+      missingDocumentAreas: next.missingDocumentAreas ?? [],
+      practicalSetupNeeds: next.practicalSetupNeeds ?? [],
+    });
+    setStepIndex(0);
+    setResult(null);
+  }, [searchParams]);
 
   const update = useCallback(<K extends keyof VisaApplicationPlanAnswers>(key: K, value: VisaApplicationPlanAnswers[K]) => {
     setAnswers((prev) => ({ ...prev, [key]: value }));

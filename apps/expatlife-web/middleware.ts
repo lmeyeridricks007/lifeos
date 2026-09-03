@@ -1,6 +1,7 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import { normalizeSitePath } from "@/src/data/site/route-registry";
+import { PUBLIC_IMAGE_PATHS } from "@/src/data/site/publicImageManifest";
 import { isPubliclyVisible } from "@/src/lib/publishing/isPubliclyVisible";
 import {
   DEV_SIMULATE_LIVE_COOKIE,
@@ -18,6 +19,28 @@ import {
 import { findScheduledGuide, isScheduledGuidePubliclyVisible } from "@/src/lib/publishing/scheduledGuides";
 import countryIndex from "@/src/content/countries/index.json";
 import { MOVING_TOOL_FROM_SLUGS } from "@/src/data/site/route-registry";
+
+const GUIDE_IMAGE_FALLBACK = "/images/placeholders/guide-visual-fallback.png";
+
+/**
+ * Ahrefs / crawlers: missing guide PNGs were returning HTML 404.
+ * Rewrite unknown infographic/hero paths to a real image so `<img>` and direct URLs stay HTTP 200.
+ */
+function rewriteMissingGuideImage(request: NextRequest): NextResponse | null {
+  const pathname = request.nextUrl.pathname;
+  if (
+    !pathname.startsWith("/images/infographics/") &&
+    !pathname.startsWith("/images/heroes/")
+  ) {
+    return null;
+  }
+  if (PUBLIC_IMAGE_PATHS.has(pathname) || pathname === GUIDE_IMAGE_FALLBACK) {
+    return NextResponse.next();
+  }
+  const url = request.nextUrl.clone();
+  url.pathname = GUIDE_IMAGE_FALLBACK;
+  return NextResponse.rewrite(url);
+}
 
 function attachSimulateProductionCookie(request: NextRequest, response: NextResponse): NextResponse {
   const p = request.nextUrl.searchParams.get("preview");
@@ -51,6 +74,9 @@ const STUB_HUB_REDIRECTS: Record<string, string> = {
 };
 
 export function middleware(request: NextRequest) {
+  const imageRewrite = rewriteMissingGuideImage(request);
+  if (imageRewrite) return imageRewrite;
+
   const pathname = request.nextUrl.pathname;
   const normalizedPath =
     pathname === "/" ? "/" : pathname.endsWith("/") ? pathname : `${pathname}/`;
@@ -152,6 +178,12 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
+    /*
+     * Guide images: rewrite missing infographic/hero files to a real PNG (Ahrefs broken-image fix).
+     * Kept as dedicated matchers so other static assets stay out of middleware.
+     */
+    "/images/infographics/:path*",
+    "/images/heroes/:path*",
     /*
      * All pages (not static assets) so `?preview=true` can set the simulate-live cookie from any URL.
      * Netherlands publish gates still run only when pathname starts with /netherlands.

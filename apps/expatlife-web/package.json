@@ -6,10 +6,12 @@
     "node": "24.x"
   },
   "scripts": {
+    "prebuild": "tsx scripts/generate-public-image-manifest.ts",
     "dev": "next dev",
     "dev:3001": "next dev -p 3001",
     "dev:3002": "next dev -p 3002",
     "build": "EXPATOS_SKIP_CONTENTLAYER=true next build",
+    "generate:public-image-manifest": "tsx scripts/generate-public-image-manifest.ts",
     "preview": "EXPATOS_SKIP_CONTENTLAYER=true next build && next start",
     "start": "next start",
     "lint": "next lint",

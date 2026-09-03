@@ -46,6 +46,7 @@ import {
   CITIES_FUNNEL_SECTION_SCROLL_MARGIN,
   CITIES_FUNNEL_SOFT_COPILOT_SURFACE,
 } from "@/src/components/cities/shared/citiesFunnelPageUi";
+import { GuideVisualFigure } from "@/src/components/guides/GuideVisualFigure";
 import {
   buyingHouseNetherlandsPage as page,
   BUYING_HOUSE_NETHERLANDS_PATH,
@@ -133,15 +134,7 @@ function HeroImage() {
 }
 
 function VisualFigure({ visual, className }: { visual: (typeof page.infographics)[keyof typeof page.infographics]; className?: string }) {
-  return (
-    <figure className={cn("overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-expatos-xl ring-1 ring-slate-900/[0.05]", movingNlCardMicroLiftClass, className)}>
-      <div className={cn("h-1.5", movingNlSignatureGradientClass)} aria-hidden />
-      <div className="relative aspect-[4/3] bg-gradient-to-br from-slate-50 via-white to-copilot-bg-soft">
-        <Image src={visual.src} alt={visual.alt} fill sizes="(min-width: 1024px) 900px, 100vw" className="object-contain" />
-      </div>
-      <figcaption className="border-t border-slate-200/80 bg-slate-50/90 px-4 py-3 text-sm leading-relaxed text-foreground-muted sm:px-5">{visual.caption}</figcaption>
-    </figure>
-  );
+  return <GuideVisualFigure visual={visual} className={className} />;
 }
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: BuyingHouseNetherlandsLink; iconIndex?: number; tone?: "default" | "onDark" }) {

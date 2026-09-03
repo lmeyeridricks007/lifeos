@@ -4,6 +4,7 @@ import {
   movingNlCardMicroLiftClass,
   movingNlSignatureGradientClass,
 } from "@/lib/ui/moving-nl-pillar-identity";
+import { publicImageExists } from "@/src/data/site/publicImageManifest";
 
 export type GuidePremiumVisual = {
   src: string;
@@ -23,12 +24,17 @@ type GuidePremiumVisualFigureProps = {
  *
  * E4: keep `unoptimized` (avoids large `srcset` strings in HTML). Prefer omitting figures on
  * closing FAQ/sources/related sections in heavy pillar views instead of mounting every PNG twice.
+ *
+ * Ahrefs: skip rendering when the asset is not in `public/` (middleware still rewrites direct
+ * URL hits for missing paths to a fallback PNG).
  */
 export function GuidePremiumVisualFigure({
   visual,
   className,
   tone = "default",
 }: GuidePremiumVisualFigureProps) {
+  if (!publicImageExists(visual.src)) return null;
+
   const onDark = tone === "onDark";
 
   return (
