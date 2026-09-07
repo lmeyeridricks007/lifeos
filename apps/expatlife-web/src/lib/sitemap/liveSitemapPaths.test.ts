@@ -72,6 +72,37 @@ describe("liveSitemapPaths (E2 workplace-culture URL)", () => {
   });
 });
 
+describe("liveSitemapPaths (TECH-P0 staged country-tool landings)", () => {
+  it("omits nigeria/philippines tool /from/ landings from sitemap while keeping origin guides", () => {
+    const sitemap = new Set(collectLiveSitemapNormalizedPaths());
+    const tools = [
+      "arrival-planner",
+      "document-readiness",
+      "first-90-days",
+      "moving-checklist",
+    ] as const;
+    for (const country of ["nigeria", "philippines"] as const) {
+      assert.equal(
+        sitemap.has(`/netherlands/moving/moving-to-netherlands-from/${country}`),
+        true,
+        `${country} origin guide must remain sitemap-eligible`
+      );
+      for (const tool of tools) {
+        const path = `/netherlands/moving/tools/${tool}/from/${country}`;
+        assert.equal(sitemap.has(path), false, `${path} must not appear in sitemap.xml`);
+      }
+    }
+  });
+
+  it("still includes a known live country-tool landing", () => {
+    const sitemap = new Set(collectLiveSitemapNormalizedPaths());
+    assert.equal(
+      sitemap.has("/netherlands/moving/tools/moving-checklist/from/south-africa"),
+      true
+    );
+  });
+});
+
 describe("liveSitemapPaths (E3 sitemap clients / locs)", () => {
   it("omits every permanent-redirect alias from XML locs", () => {
     const sitemap = new Set(collectLiveSitemapNormalizedPaths());

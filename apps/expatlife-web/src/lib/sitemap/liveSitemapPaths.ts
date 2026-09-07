@@ -10,6 +10,7 @@ import { NETHERLANDS_CITY_HUB_PAGES } from "@/src/lib/city-hub/netherlandsCityHu
 import { loadAllEnabledCountries } from "@/src/lib/countries/loadCountries";
 import { parsePublishInstant } from "@/src/lib/publishing/isPubliclyVisible";
 import { isRouteLive } from "@/src/lib/routes/routeStatus";
+import { isSupportedOriginCountry } from "@/src/lib/tools/shared/toolCountryContext";
 
 /**
  * Paths omitted from the XML sitemap even when “live” for nav (e.g. utility pages that are noindex).
@@ -34,10 +35,13 @@ const routingSlugSet = new Set<string>(ROUTING_ORIGIN_COUNTRY_SLUGS);
  * - Every path from `LIVE_PATHS` is a candidate except `XML_SITEMAP_EXCLUDE` and permanent-redirect aliases.
  *   `LIVE_PATHS` includes each `src/content/tools/registry.json` tool with `status: "live"` (canonical `route`)
  *   plus tool category hub routes from `categories.json` — no separate sitemap manifest for new calculators.
- * - Origin-country guides and moving-tool `/from/{country}/` URLs are not fully enumerated in `LIVE_PATHS`;
- *   they are added here for enabled countries whose slug appears in `ROUTING_ORIGIN_COUNTRY_SLUGS`,
- *   then filtered again with `isRouteLive` (origin slugs use `enforceOriginCountryPublishDatesForPublicIndexing`
- *   so scheduled guides stay in the XML on dev/preview builds only).
+ * - Origin-country guides are not fully enumerated in `LIVE_PATHS`; they are added here for enabled
+ *   countries whose slug appears in `ROUTING_ORIGIN_COUNTRY_SLUGS`, then filtered with `isRouteLive`
+ *   (origin slugs use `enforceOriginCountryPublishDatesForPublicIndexing` so scheduled guides stay
+ *   in the XML on dev/preview builds only).
+ * - Moving-tool `/from/{country}` landings use the same eligibility as page generation / IA linking:
+ *   `SUPPORTED_ORIGIN_COUNTRIES` only (e.g. nigeria / philippines guides may be live while tool
+ *   landings remain staged → 404/noindex and must not appear in the sitemap).
  */
 export function collectLiveSitemapNormalizedPaths(): string[] {
   const set = new Set<string>();
@@ -50,6 +54,8 @@ export function collectLiveSitemapNormalizedPaths(): string[] {
   for (const c of loadAllEnabledCountries()) {
     if (!routingSlugSet.has(c.slug)) continue;
     set.add(normalizeSitePath(`/netherlands/moving/moving-to-netherlands-from/${c.slug}/`));
+    // TECH-P0: only emit tool landings that actually render (same set as generateStaticParams).
+    if (!isSupportedOriginCountry(c.slug)) continue;
     for (const tool of MOVING_TOOL_FROM_SLUGS) {
       set.add(normalizeSitePath(`/netherlands/moving/tools/${tool}/from/${c.slug}/`));
     }

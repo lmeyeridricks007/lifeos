@@ -1,0 +1,235 @@
+{
+  "indexable_pages": 447,
+  "orphans": 4,
+  "near_orphans": 14,
+  "country_tool_orphans": 0,
+  "edges_to_3xx": 931,
+  "unique_3xx": 18,
+  "top_3xx": [
+    [
+      "/netherlands/living/culture-etiquette",
+      447
+    ],
+    [
+      "/",
+      208
+    ],
+    [
+      "/netherlands/documents-needed-to-move-netherlands",
+      95
+    ],
+    [
+      "/netherlands/moving/tools/document-readiness",
+      52
+    ],
+    [
+      "/netherlands/visa-documents-netherlands",
+      35
+    ],
+    [
+      "/netherlands/moving-documents-checklist",
+      32
+    ],
+    [
+      "/netherlands/taxes/expat-taxes-netherlands",
+      25
+    ],
+    [
+      "/netherlands/living",
+      13
+    ],
+    [
+      "/netherlands/register-address-netherlands",
+      9
+    ],
+    [
+      "/netherlands/money/taxes/30-percent-ruling",
+      5
+    ],
+    [
+      "/netherlands/culture/dutch-directness-at-work",
+      2
+    ],
+    [
+      "/netherlands/living/utilities",
+      2
+    ],
+    [
+      "/netherlands/settling-in-netherlands",
+      1
+    ],
+    [
+      "/netherlands/integration/tools/knm-knowledge-quiz",
+      1
+    ],
+    [
+      "/netherlands/integration/tools/inburgering-timeline-planner",
+      1
+    ]
+  ],
+  "edges_to_4xx": 161,
+  "unique_4xx": 57,
+  "top_4xx": [
+    [
+      "/netherlands/services/recruitment-agencies",
+      14
+    ],
+    [
+      "/netherlands/services/accountants",
+      11
+    ],
+    [
+      "/netherlands/services/moving-companies",
+      6
+    ],
+    [
+      "/netherlands/services/business-consultants",
+      6
+    ],
+    [
+      "/netherlands/services/removal-companies",
+      6
+    ],
+    [
+      "/netherlands/jobs/cv-netherlands",
+      5
+    ],
+    [
+      "/netherlands/jobs/interview-tips-netherlands",
+      5
+    ],
+    [
+      "/netherlands/services/career-coaches",
+      5
+    ],
+    [
+      "/netherlands/services/insurance-brokers",
+      5
+    ],
+    [
+      "/netherlands/services/energy-providers",
+      4
+    ],
+    [
+      "/netherlands/services/internet-providers",
+      4
+    ],
+    [
+      "/netherlands/living/bike-sharing-netherlands",
+      4
+    ],
+    [
+      "/netherlands/living/trams-netherlands",
+      4
+    ],
+    [
+      "/netherlands/living/weekend-travel-netherlands",
+      4
+    ],
+    [
+      "/netherlands/living/train-discounts-netherlands",
+      4
+    ]
+  ],
+  "edges_to_staged": 0,
+  "unique_staged": 0,
+  "destinations_ge400": 29,
+  "destinations_ge400_non_chrome": 13,
+  "max_unique_inlinks": 446,
+  "avg_non_chrome_outlinks": 34.37,
+  "unique_destinations_ge10": 227,
+  "pages_with_explore_signal": 378,
+  "missing_h1": 0,
+  "missing_title": 0,
+  "duplicate_titles": 0,
+  "missing_descriptions": 0,
+  "canonical_defects": 0,
+  "orphan_paths": [
+    "/netherlands/culture/communication-style",
+    "/netherlands/culture/sinterklaas",
+    "/netherlands/culture/what-feels-normal-in-dutch-daily-life",
+    "/netherlands/living/government-portals-overview"
+  ],
+  "top_inlinks": [
+    [
+      "/netherlands",
+      446
+    ],
+    [
+      "/netherlands/moving/tools/moving-checklist",
+      446
+    ],
+    [
+      "/netherlands/moving-to-the-netherlands",
+      446
+    ],
+    [
+      "/privacy",
+      446
+    ],
+    [
+      "/terms",
+      446
+    ],
+    [
+      "/contact",
+      446
+    ],
+    [
+      "/about",
+      446
+    ],
+    [
+      "/how-this-site-works",
+      446
+    ],
+    [
+      "/editorial-policy",
+      446
+    ],
+    [
+      "/methodology",
+      446
+    ],
+    [
+      "/how-we-rank-services",
+      446
+    ],
+    [
+      "/sources",
+      446
+    ],
+    [
+      "/netherlands/official-figures",
+      446
+    ],
+    [
+      "/disclaimer",
+      446
+    ],
+    [
+      "/affiliate-disclosure",
+      446
+    ],
+    [
+      "/netherlands/housing",
+      446
+    ],
+    [
+      "/netherlands/living/survival-guide",
+      446
+    ],
+    [
+      "/netherlands/utilities/utilities-netherlands",
+      446
+    ],
+    [
+      "/netherlands/government-services",
+      446
+    ],
+    [
+      "/netherlands/living/getting-around",
+      446
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+id,severity,area,classification,summary,old,current,blocker
+NG-PH-SITEMAP-404,P0,sitemap,UNCHANGED,8 staged NG/PH tool /from/ URLs still in live sitemap (404+noindex). Code fix in remediation/11 not yet on production.,8 sitemap 4xx,8 sitemap 4xx,YES
+HOME-SOFT-307,P1,homepage,UNCHANGED,Homepage / soft-307 drives sitemap_3xx=1 and canonical-to-redirect=1,1×307,1×307,YES
+INTERNAL-3XX,P1,internal_linking,UNCHANGED,HTML still links many first-hop 3xx aliases,932,931,NO
+INTERNAL-4XX,P1,internal_linking,UNCHANGED,HTML still links many 404 stubs,163,161,NO
+EXPLORE-CONCENTRATION,P2,equity,IMPROVED,Destinations ≥400 unique inlinks reduced,47,29,NO
+SITEMAP-NOSLASH,P0,sitemap,RESOLVED,No-slash sitemap convention live,454/455 trailing slash; 455×3xx,0 slash; mostly 200,NO
+CANONICAL-NOSLASH,P0,canonical,RESOLVED,Self-canonical noslash; canonical-to-redirect collapsed,447,1,NO
+H1-PRIOR19,P1,onpage,RESOLVED,Prior missing-H1 set fixed on live pages,19 missing,18 live with H1; beach-towns 404,NO
+HEALTH-EDU,P1,hubs,RESOLVED,Health/education launched indexable hubs,noindex shells,indexable hubs in sitemap,NO
+COUNTRY-MESH,P1,linking,RESOLVED,Country-tool related links live; orphans cleared,0 related; 112 tool orphans,mesh live; 0 tool orphans,NO
+AUTHORITY-APIS,P1,authority,RESOLVED,Authority APIs return 200 JSON,404,200,NO
+NL-HUB-TBT,P1,performance,IMPROVED,NL hub mobile lab TBT improved,1380ms,191ms (lab),NO
+ORPHANS,P1,linking,RESOLVED,Indexable orphans collapsed,116,4,NO
+BEACH-TOWNS,P2,url,REGRESSED,Prior H1 URL now 404 / out of sitemap,200 missing H1,404,NO
+NGPH-CODEFIX-PENDING-DEPLOY,P0,deploy,REQUIRES_GOOGLE_REPROCESSING,Remediation 11 (exclude NG/PH tools from sitemap) is in repo but not observed on live sitemap yet,n/a,live still lists 8,YES

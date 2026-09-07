@@ -1,0 +1,82 @@
+{
+  "AUDIT_START_TIMESTAMP": "2026-09-07T11:15:35.844181+00:00",
+  "PRODUCTION_SITEMAP_FETCH_TIMESTAMP": "2026-09-07T11:15:38.038966+00:00",
+  "NEW_DEPLOYMENT_DETECTED": true,
+  "fingerprint_signals_true": 4,
+  "fingerprints": {
+    "A_non_trailing_slash_sitemap": true,
+    "A_slash_loc_count": 0,
+    "A_total_locs": 456,
+    "B_nl_canonical_noslash": true,
+    "B_nl_canonical": "https://www.expatcopilot.com/netherlands",
+    "B_nl_canonical_is_noslash_path": true,
+    "C_dating_h1_count": 1,
+    "C_dating_h1": [
+      "Dating in the Netherlands"
+    ],
+    "D_related_tool_links": [
+      "/netherlands/moving/tools/arrival-planner/from/south-africa",
+      "/netherlands/moving/tools/document-readiness/from/south-africa",
+      "/netherlands/moving/tools/first-90-days/from/south-africa"
+    ],
+    "D_related_count": 3,
+    "D_parent_country": true,
+    "E_ngph_tool_urls_in_sitemap": 8,
+    "E_ngph_tool_list": [
+      "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/nigeria",
+      "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/philippines",
+      "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/nigeria",
+      "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/philippines",
+      "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/nigeria",
+      "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/philippines",
+      "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/nigeria",
+      "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/philippines"
+    ]
+  },
+  "homepage": {
+    "request": "https://www.expatcopilot.com/?fresh=1788779735",
+    "first_status": 307,
+    "final_status": 307,
+    "date": "Mon, 07 Sep 2026 10:28:26 GMT",
+    "age": "2830",
+    "cache_control": "public, max-age=0, must-revalidate",
+    "etag": "\"2mzfj6euv8a8i\"",
+    "x_vercel_cache": "HIT",
+    "x_vercel_id": "fra1::iad1::zkqwz-1788779736323-20517f80caa4",
+    "location": ""
+  },
+  "homepage_plain": {
+    "request": "https://www.expatcopilot.com/",
+    "first_status": 307,
+    "final_status": 307,
+    "date": "Mon, 07 Sep 2026 10:28:26 GMT",
+    "age": "2831",
+    "cache_control": "public, max-age=0, must-revalidate",
+    "etag": "\"2mzfj6euv8a8i\"",
+    "x_vercel_cache": "HIT",
+    "x_vercel_id": "fra1::iad1::g7s8d-1788779737977-f8766c860ed2",
+    "location": ""
+  },
+  "sitemap_headers": {
+    "request": "https://www.expatcopilot.com/sitemap.xml?fresh=1788779735",
+    "first_status": 200,
+    "final_status": 200,
+    "date": "Mon, 07 Sep 2026 10:23:35 GMT",
+    "age": "3123",
+    "cache_control": "public",
+    "etag": "",
+    "x_vercel_cache": "HIT",
+    "x_vercel_id": "fra1::iad1::n6x9s-1788779738378-6f7d888d4889"
+  },
+  "nl_headers": {
+    "request": "https://www.expatcopilot.com/netherlands?fresh=1788779735",
+    "first_status": 200,
+    "final_status": 200,
+    "date": "Mon, 07 Sep 2026 11:15:39 GMT",
+    "age": "0",
+    "cache_control": "public, max-age=0, must-revalidate",
+    "etag": "",
+    "x_vercel_cache": "MISS",
+    "x_vercel_id": "fra1::iad1::ms8qv-1788779738820-00a49e898c3d"
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "country_tool_live_count": 112,
+  "grade_counts": {
+    "STRONG_UNIQUE_VALUE": 108,
+    "ADEQUATE": 4
+  },
+  "spot_grades": {
+    "brazil": "STRONG_UNIQUE_VALUE",
+    "india": "STRONG_UNIQUE_VALUE",
+    "australia": "STRONG_UNIQUE_VALUE",
+    "indonesia": "STRONG_UNIQUE_VALUE",
+    "south-africa": "STRONG_UNIQUE_VALUE",
+    "united-states": "STRONG_UNIQUE_VALUE",
+    "united-kingdom": "STRONG_UNIQUE_VALUE"
+  },
+  "eu_grade_counts": {
+    "STRONG_UNIQUE_VALUE": 32
+  },
+  "hubs": {
+    "/netherlands/health": {
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/health",
+      "title": "Healthcare in the Netherlands for Expats | Insurance, GP & Care Guides | ExpatCopilot",
+      "h1": "Healthcare in the Netherlands",
+      "child_links_count": 11,
+      "child_links_sample": [
+        "/netherlands/health/dentists-netherlands",
+        "/netherlands/health/emergency-healthcare-netherlands",
+        "/netherlands/health/gp-netherlands",
+        "/netherlands/health/health-insurance-comparison-netherlands",
+        "/netherlands/health/hospitals-netherlands",
+        "/netherlands/health/maternity-care-netherlands",
+        "/netherlands/health/mental-healthcare-netherlands",
+        "/netherlands/health/pharmacies-netherlands",
+        "/netherlands/health/physiotherapy-netherlands",
+        "/netherlands/health/prescriptions-netherlands",
+        "/netherlands/health/tools"
+      ],
+      "coming_soon": false,
+      "in_sitemap": true
+    },
+    "/netherlands/education": {
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/education",
+      "title": "Education & Childcare in the Netherlands for Expats | Schools Hub | ExpatCopilot",
+      "h1": "Education & childcare in the Netherlands",
+      "child_links_count": 5,
+      "child_links_sample": [
+        "/netherlands/education/after-school-care-netherlands",
+        "/netherlands/education/before-school-care-netherlands",
+        "/netherlands/education/daycare-netherlands",
+        "/netherlands/education/dutch-schools-netherlands",
+        "/netherlands/education/international-schools-netherlands"
+      ],
+      "coming_soon": true,
+      "in_sitemap": true
+    }
+  },
+  "param_rows": [
+    {
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist?from=south-africa",
+      "first_status": 200,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist?from=south-africa",
+      "redirects": 0,
+      "robots": "",
+      "canonical": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist",
+      "noindex": false,
+      "self_canonical_ignoring_params": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist?step=2",
+      "first_status": 200,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist?step=2",
+      "redirects": 0,
+      "robots": "",
+      "canonical": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist",
+      "noindex": false,
+      "self_canonical_ignoring_params": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days?week=1",
+      "first_status": 200,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days?week=1",
+      "redirects": 0,
+      "robots": "",
+      "canonical": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days",
+      "noindex": false,
+      "self_canonical_ignoring_params": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/visa-checker?nationality=south-africa",
+      "first_status": 200,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/netherlands/visa-checker?nationality=south-africa",
+      "redirects": 0,
+      "robots": "",
+      "canonical": "https://www.expatcopilot.com/netherlands/visa-checker",
+      "noindex": false,
+      "self_canonical_ignoring_params": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/visa/tools/visa-cost-calculator?visa=hsm",
+      "first_status": 200,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/netherlands/visa/tools/visa-cost-calculator?visa=hsm",
+      "redirects": 0,
+      "robots": "noindex, nofollow",
+      "canonical": "https://www.expatcopilot.com/netherlands/visa/tools/visa-cost-calculator",
+      "noindex": true,
+      "self_canonical_ignoring_params": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator?city=amsterdam",
+      "first_status": 200,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator?city=amsterdam",
+      "redirects": 0,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator",
+      "noindex": false,
+      "self_canonical_ignoring_params": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/tools/city-comparison?a=amsterdam&b=rotterdam",
+      "first_status": 200,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/netherlands/tools/city-comparison?a=amsterdam&b=rotterdam",
+      "redirects": 0,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/tools/city-comparison",
+      "noindex": false,
+      "self_canonical_ignoring_params": true
+    }
+  ],
+  "auth_pages": [
+    {
+      "path": "/netherlands/official-figures",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/official-figures",
+      "title": "Netherlands official figures 2026 | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": true,
+      "has_disclaimer": true,
+      "has_official_link": true,
+      "has_jsonld": true,
+      "coming_soon": false,
+      "noindex": false
+    },
+    {
+      "path": "/netherlands/moving/tools/hsm-salary-checker",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "",
+      "canonical": "https://www.expatcopilot.com/netherlands/moving/tools/hsm-salary-checker",
+      "title": "HSM Salary Checker Netherlands | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": true,
+      "has_disclaimer": true,
+      "has_official_link": true,
+      "has_jsonld": true,
+      "coming_soon": false,
+      "noindex": false
+    },
+    {
+      "path": "/netherlands/taxes/30-percent-ruling",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling",
+      "title": "30% Ruling in the Netherlands | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": true,
+      "has_disclaimer": true,
+      "has_official_link": true,
+      "has_jsonld": true,
+      "coming_soon": false,
+      "noindex": false
+    },
+    {
+      "path": "/netherlands/taxes/tools/30-percent-ruling-calculator",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "noindex, nofollow",
+      "canonical": "https://www.expatcopilot.com/netherlands/taxes/tools/30-percent-ruling-calculator",
+      "title": "Taxes / Tools / 30 Percent Ruling Calculator | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": false,
+      "has_disclaimer": false,
+      "has_official_link": false,
+      "has_jsonld": true,
+      "coming_soon": true,
+      "noindex": true
+    },
+    {
+      "path": "/netherlands/money/tools/salary-calculator",
+      "first_status": 404,
+      "final_status": 404,
+      "robots": "noindex",
+      "canonical": "",
+      "title": "ExpatCopilot",
+      "has_methodology": false,
+      "has_as_of": false,
+      "has_disclaimer": false,
+      "has_official_link": false,
+      "has_jsonld": true,
+      "coming_soon": false,
+      "noindex": true
+    },
+    {
+      "path": "/netherlands/money/tools/cost-of-living-calculator",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator",
+      "title": "Netherlands Cost of Living Calculator 2026 | Expat Monthly Expenses, Setup Costs & Salary Target | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": true,
+      "has_disclaimer": true,
+      "has_official_link": true,
+      "has_jsonld": true,
+      "coming_soon": false,
+      "noindex": false
+    },
+    {
+      "path": "/netherlands/tools/city-comparison",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/tools/city-comparison",
+      "title": "Netherlands City Comparison: Best Dutch Cities for Expats, Families & Remote Work | Planning Tool | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": true,
+      "has_disclaimer": true,
+      "has_official_link": true,
+      "has_jsonld": true,
+      "coming_soon": false,
+      "noindex": false
+    }
+  ],
+  "auth_apis": [
+    {
+      "path": "/api/authority/official-figures?format=json",
+      "first_status": 200,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/api/authority/official-figures?format=json",
+      "looks_json": true,
+      "bytes": 12161
+    },
+    {
+      "path": "/api/authority/city-cost-seed",
+      "first_status": 200,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/api/authority/city-cost-seed",
+      "looks_json": true,
+      "bytes": 10805
+    },
+    {
+      "path": "/api/authority/city-comparison-profiles",
+      "first_status": 200,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/api/authority/city-comparison-profiles",
+      "looks_json": true,
+      "bytes": 7511
+    }
+  ],
+  "norms": [
+    {
+      "kind": "non_www",
+      "request": "https://expatcopilot.com/netherlands",
+      "first_status": 307,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/netherlands",
+      "redirects": 1,
+      "location": "https://www.expatcopilot.com/netherlands"
+    },
+    {
+      "kind": "http",
+      "request": "http://www.expatcopilot.com/netherlands",
+      "first_status": 308,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/netherlands",
+      "redirects": 1,
+      "location": "https://www.expatcopilot.com/netherlands"
+    },
+    {
+      "kind": "trailing_slash",
+      "request": "https://www.expatcopilot.com/netherlands/",
+      "first_status": 308,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/netherlands",
+      "redirects": 1,
+      "location": "/netherlands"
+    },
+    {
+      "kind": "case",
+      "request": "https://www.expatcopilot.com/Netherlands",
+      "first_status": 404,
+      "final_status": 404,
+      "final_url": "https://www.expatcopilot.com/Netherlands",
+      "redirects": 0,
+      "location": ""
+    },
+    {
+      "kind": "trailing_slash_living",
+      "request": "https://www.expatcopilot.com/netherlands/living/",
+      "first_status": 308,
+      "final_status": 200,
+      "final_url": "https://www.expatcopilot.com/netherlands/living/survival-guide",
+      "redirects": 2,
+      "location": "/netherlands/living"
+    }
+  ],
+  "insufficient": [],
+  "needs_enrichment": []
+}

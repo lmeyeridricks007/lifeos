@@ -1,0 +1,20 @@
+path,http_status,first_status,robots,h1_count,h1_text,in_sitemap,indexable
+/netherlands/cities/amsterdam-vs-rotterdam,200,200,"index, follow",1,Amsterdam vs Rotterdam,True,True
+/netherlands/cities/best-cities-for-expats,200,200,,1,Best Cities in the Netherlands for Expats,True,True
+/netherlands/cities/best-cities-for-families,200,200,,1,Best Dutch Cities for Families,True,True
+/netherlands/cities/best-cities-for-international-professionals,200,200,,1,Best Dutch Cities for International Professionals,True,True
+/netherlands/cities/cheapest-cities-for-expats,200,200,,1,Cheapest Cities in the Netherlands for Expats,True,True
+/netherlands/cities/compare,200,200,,1,Compare Dutch Cities,True,True
+/netherlands/housing/buy-vs-rent-netherlands,200,200,"index, follow",1,Buy vs Rent in the Netherlands,True,True
+/netherlands/housing/buying-a-house-netherlands,200,200,"index, follow",1,Buying a House in the Netherlands,True,True
+/netherlands/housing/housing-costs-netherlands,200,200,"index, follow",1,Housing Costs in the Netherlands,True,True
+/netherlands/housing/mortgages-netherlands-expats,200,200,"index, follow",1,Mortgages in the Netherlands for Expats,True,True
+/netherlands/housing/rental-contracts-and-deposits-netherlands,200,200,"index, follow",1,Rental Contracts and Deposits in the Netherlands,True,True
+/netherlands/housing/rental-scams-netherlands,200,200,"index, follow",1,Rental Scams in the Netherlands,True,True
+/netherlands/jobs/dutch-workplace-culture,200,200,"index, follow",1,Dutch Workplace Culture,True,True
+/netherlands/life/dating-in-the-netherlands,200,200,"index, follow",1,Dating in the Netherlands,True,True
+/netherlands/living/beach-towns-netherlands,404,404,,0,,False,False
+/netherlands/money/banking/best-banks-expats,200,200,"index, follow",1,Best Banks for Expats in the Netherlands,True,True
+/netherlands/money/banking/how-payments-work,200,200,"index, follow",1,How paying in the Netherlands works,True,True
+/netherlands/randstad,200,200,,1,Randstad Netherlands Guide for Expats,True,True
+/netherlands/taxes/30-percent-ruling,200,200,"index, follow",1,30% Ruling in the Netherlands,True,True

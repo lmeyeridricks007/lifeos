@@ -26,6 +26,7 @@ import {
   findScheduledGuide,
   isScheduledGuidePubliclyVisible,
 } from "@/src/lib/publishing/scheduledGuides";
+import { isSupportedOriginCountry } from "@/src/lib/tools/shared/toolCountryContext";
 
 export type PublishRouteStatus = "live" | "coming-soon" | "hidden";
 
@@ -48,6 +49,11 @@ export function getRouteStatus(href: string, now: Date = new Date()): PublishRou
 
   const originSlug = originCountrySlugFromNormalizedPath(n);
   const toolFromSlug = movingToolOriginSlugFromNormalizedPath(n);
+  // Staged tool landings (guides may exist; /from/{country} pages do not): keep routes/data for
+  // future launch, but treat as hidden so sitemap + live-link filters never advertise them.
+  if (toolFromSlug && !isSupportedOriginCountry(toolFromSlug)) {
+    return "hidden";
+  }
   const gatedOriginSlug = originSlug ?? toolFromSlug;
   if (
     gatedOriginSlug &&

@@ -1,0 +1,355 @@
+{
+  "fetched_at": "2026-09-07T11:19:24.147018+00:00",
+  "hubs": {
+    "/netherlands/health": {
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/health",
+      "h1": "Healthcare in the Netherlands",
+      "title": "Healthcare in the Netherlands for Expats | Insurance, GP & Care Guides | ExpatCopilot",
+      "coming_soon_shell": false,
+      "coming_soon_mentions": 0,
+      "child_links": [
+        "/netherlands/health/dentists-netherlands",
+        "/netherlands/health/emergency-healthcare-netherlands",
+        "/netherlands/health/gp-netherlands",
+        "/netherlands/health/health-insurance-comparison-netherlands",
+        "/netherlands/health/hospitals-netherlands",
+        "/netherlands/health/maternity-care-netherlands",
+        "/netherlands/health/mental-healthcare-netherlands",
+        "/netherlands/health/pharmacies-netherlands",
+        "/netherlands/health/physiotherapy-netherlands",
+        "/netherlands/health/prescriptions-netherlands",
+        "/netherlands/health/tools"
+      ],
+      "child_count": 11,
+      "in_sitemap": true,
+      "self_canonical": true,
+      "indexable": true,
+      "launched": true
+    },
+    "/netherlands/education": {
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/education",
+      "h1": "Education & childcare in the Netherlands",
+      "title": "Education & Childcare in the Netherlands for Expats | Schools Hub | ExpatCopilot",
+      "coming_soon_shell": false,
+      "coming_soon_mentions": 8,
+      "child_links": [
+        "/netherlands/education/after-school-care-netherlands",
+        "/netherlands/education/before-school-care-netherlands",
+        "/netherlands/education/daycare-netherlands",
+        "/netherlands/education/dutch-schools-netherlands",
+        "/netherlands/education/international-schools-netherlands"
+      ],
+      "child_count": 5,
+      "in_sitemap": true,
+      "self_canonical": true,
+      "indexable": true,
+      "launched": true
+    }
+  },
+  "mesh": [
+    {
+      "country": "south-africa",
+      "slug": "south-africa",
+      "path": "/netherlands/moving/tools/moving-checklist/from/south-africa",
+      "status": 200,
+      "robots": "",
+      "h1": "Moving Checklist for the Netherlands \u2014 from South Africa",
+      "parent_country_link": true,
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/south-africa|/netherlands/moving/tools/document-readiness/from/south-africa|/netherlands/moving/tools/first-90-days/from/south-africa",
+      "has_next_steps": true
+    },
+    {
+      "country": "india",
+      "slug": "india",
+      "path": "/netherlands/moving/tools/moving-checklist/from/india",
+      "status": 200,
+      "robots": "",
+      "h1": "Moving Checklist for the Netherlands \u2014 from India",
+      "parent_country_link": true,
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/india|/netherlands/moving/tools/document-readiness/from/india|/netherlands/moving/tools/first-90-days/from/india",
+      "has_next_steps": true
+    },
+    {
+      "country": "united-states",
+      "slug": "united-states",
+      "path": "/netherlands/moving/tools/moving-checklist/from/united-states",
+      "status": 200,
+      "robots": "",
+      "h1": "Moving Checklist for the Netherlands \u2014 from United States",
+      "parent_country_link": true,
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/united-states|/netherlands/moving/tools/document-readiness/from/united-states|/netherlands/moving/tools/first-90-days/from/united-states",
+      "has_next_steps": true
+    },
+    {
+      "country": "united-kingdom",
+      "slug": "united-kingdom",
+      "path": "/netherlands/moving/tools/moving-checklist/from/united-kingdom",
+      "status": 200,
+      "robots": "",
+      "h1": "Moving Checklist for the Netherlands \u2014 from United Kingdom",
+      "parent_country_link": true,
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/united-kingdom|/netherlands/moving/tools/document-readiness/from/united-kingdom|/netherlands/moving/tools/first-90-days/from/united-kingdom",
+      "has_next_steps": true
+    },
+    {
+      "country": "brazil",
+      "slug": "brazil",
+      "path": "/netherlands/moving/tools/moving-checklist/from/brazil",
+      "status": 200,
+      "robots": "",
+      "h1": "Moving Checklist for the Netherlands \u2014 from Brazil",
+      "parent_country_link": true,
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/brazil|/netherlands/moving/tools/document-readiness/from/brazil|/netherlands/moving/tools/first-90-days/from/brazil",
+      "has_next_steps": true
+    },
+    {
+      "country": "turkey",
+      "slug": "turkey",
+      "path": "/netherlands/moving/tools/moving-checklist/from/turkey",
+      "status": 200,
+      "robots": "",
+      "h1": "Moving Checklist for the Netherlands \u2014 from T\u00fcrkiye",
+      "parent_country_link": true,
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/turkey|/netherlands/moving/tools/document-readiness/from/turkey|/netherlands/moving/tools/first-90-days/from/turkey",
+      "has_next_steps": true
+    },
+    {
+      "country": "indonesia",
+      "slug": "indonesia",
+      "path": "/netherlands/moving/tools/moving-checklist/from/indonesia",
+      "status": 200,
+      "robots": "",
+      "h1": "Moving Checklist for the Netherlands \u2014 from Indonesia",
+      "parent_country_link": true,
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/indonesia|/netherlands/moving/tools/document-readiness/from/indonesia|/netherlands/moving/tools/first-90-days/from/indonesia",
+      "has_next_steps": true
+    },
+    {
+      "country": "australia",
+      "slug": "australia",
+      "path": "/netherlands/moving/tools/moving-checklist/from/australia",
+      "status": 200,
+      "robots": "",
+      "h1": "Moving Checklist for the Netherlands \u2014 from Australia",
+      "parent_country_link": true,
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/australia|/netherlands/moving/tools/document-readiness/from/australia|/netherlands/moving/tools/first-90-days/from/australia",
+      "has_next_steps": true
+    }
+  ],
+  "auth_pages": [
+    {
+      "path": "/netherlands/official-figures",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/official-figures",
+      "h1": "Netherlands official figures 2026",
+      "title": "Netherlands official figures 2026 | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": true,
+      "has_disclaimer": true,
+      "has_official_link": true,
+      "coming_soon": false,
+      "noindex": false,
+      "download_or_api_mention": true
+    },
+    {
+      "path": "/netherlands/moving/tools/hsm-salary-checker",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "",
+      "canonical": "https://www.expatcopilot.com/netherlands/moving/tools/hsm-salary-checker",
+      "h1": "HSM Salary Checker",
+      "title": "HSM Salary Checker Netherlands | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": true,
+      "has_disclaimer": true,
+      "has_official_link": true,
+      "coming_soon": false,
+      "noindex": false,
+      "download_or_api_mention": true
+    },
+    {
+      "path": "/netherlands/taxes/30-percent-ruling",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling",
+      "h1": "30% Ruling in the Netherlands",
+      "title": "30% Ruling in the Netherlands | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": true,
+      "has_disclaimer": true,
+      "has_official_link": true,
+      "coming_soon": false,
+      "noindex": false,
+      "download_or_api_mention": true
+    },
+    {
+      "path": "/netherlands/taxes/tools/30-percent-ruling-calculator",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "noindex, nofollow",
+      "canonical": "https://www.expatcopilot.com/netherlands/taxes/tools/30-percent-ruling-calculator",
+      "h1": "",
+      "title": "Taxes / Tools / 30 Percent Ruling Calculator | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": false,
+      "has_disclaimer": false,
+      "has_official_link": false,
+      "coming_soon": true,
+      "noindex": true,
+      "download_or_api_mention": true
+    },
+    {
+      "path": "/netherlands/taxes/tools/dutch-salary-net-calculator",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "",
+      "canonical": "https://www.expatcopilot.com/netherlands/taxes/tools/dutch-salary-net-calculator",
+      "h1": "Dutch Salary Net Calculator (2026)",
+      "title": "Dutch Salary Net Calculator 2026 | Gross to Net Netherlands & 30% Ruling Impact | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": true,
+      "has_disclaimer": true,
+      "has_official_link": true,
+      "coming_soon": false,
+      "noindex": false,
+      "download_or_api_mention": true
+    },
+    {
+      "path": "/netherlands/money/tools/cost-of-living-calculator",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator",
+      "h1": "Netherlands expat cost of living calculator",
+      "title": "Netherlands Cost of Living Calculator 2026 | Expat Monthly Expenses, Setup Costs & Salary Target | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": true,
+      "has_disclaimer": true,
+      "has_official_link": true,
+      "coming_soon": false,
+      "noindex": false,
+      "download_or_api_mention": true
+    },
+    {
+      "path": "/netherlands/tools/city-comparison",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/tools/city-comparison",
+      "h1": "Netherlands City Comparison Tool",
+      "title": "Netherlands City Comparison: Best Dutch Cities for Expats, Families & Remote Work | Planning Tool | ExpatCopilot",
+      "has_methodology": true,
+      "has_as_of": true,
+      "has_disclaimer": true,
+      "has_official_link": true,
+      "coming_soon": false,
+      "noindex": false,
+      "download_or_api_mention": true
+    }
+  ],
+  "auth_apis": [
+    {
+      "path": "/api/authority/official-figures?format=json",
+      "first_status": 200,
+      "final_status": 200,
+      "looks_json": true,
+      "bytes": 12161
+    },
+    {
+      "path": "/api/authority/city-cost-seed",
+      "first_status": 200,
+      "final_status": 200,
+      "looks_json": true,
+      "bytes": 10805
+    },
+    {
+      "path": "/api/authority/city-comparison-profiles",
+      "first_status": 200,
+      "final_status": 200,
+      "looks_json": true,
+      "bytes": 7511
+    }
+  ],
+  "params": [
+    {
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist?from=south-africa",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "",
+      "canonical": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist",
+      "noindex": false,
+      "canonical_is_base": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist?step=2",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "",
+      "canonical": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist",
+      "noindex": false,
+      "canonical_is_base": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days?week=1",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "",
+      "canonical": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days",
+      "noindex": false,
+      "canonical_is_base": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/visa-checker?nationality=south-africa",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "",
+      "canonical": "https://www.expatcopilot.com/netherlands/visa-checker",
+      "noindex": false,
+      "canonical_is_base": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/visa/tools/visa-cost-calculator?visa=hsm",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "noindex, nofollow",
+      "canonical": "https://www.expatcopilot.com/netherlands/visa/tools/visa-cost-calculator",
+      "noindex": true,
+      "canonical_is_base": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator?city=amsterdam",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator",
+      "noindex": false,
+      "canonical_is_base": true
+    },
+    {
+      "url": "https://www.expatcopilot.com/netherlands/tools/city-comparison?a=amsterdam&b=rotterdam",
+      "first_status": 200,
+      "final_status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/tools/city-comparison",
+      "noindex": false,
+      "canonical_is_base": true
+    }
+  ]
+}

@@ -1,0 +1,364 @@
+{
+  "audit_started": "2026-09-07T11:44:34.114646+00:00",
+  "audit_completed": "2026-09-07T11:45:26.028298+00:00",
+  "sitemap_total": 456,
+  "sitemap_trailing_slash": 0,
+  "sitemap_3xx": 1,
+  "sitemap_4xx": 8,
+  "sitemap_noindex": 8,
+  "sitemap_indexable": 447,
+  "canonical_to_redirect": 1,
+  "ngph_tools_in_sitemap": [
+    "/netherlands/moving/tools/arrival-planner/from/nigeria",
+    "/netherlands/moving/tools/arrival-planner/from/philippines",
+    "/netherlands/moving/tools/document-readiness/from/nigeria",
+    "/netherlands/moving/tools/document-readiness/from/philippines",
+    "/netherlands/moving/tools/first-90-days/from/nigeria",
+    "/netherlands/moving/tools/first-90-days/from/philippines",
+    "/netherlands/moving/tools/moving-checklist/from/nigeria",
+    "/netherlands/moving/tools/moving-checklist/from/philippines"
+  ],
+  "prior19": [
+    {
+      "path": "/netherlands/cities/amsterdam-vs-rotterdam",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "Amsterdam vs Rotterdam",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/cities/best-cities-for-expats",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "",
+      "h1_count": 1,
+      "h1_text": "Best Cities in the Netherlands for Expats",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/cities/best-cities-for-families",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "",
+      "h1_count": 1,
+      "h1_text": "Best Dutch Cities for Families",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/cities/best-cities-for-international-professionals",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "",
+      "h1_count": 1,
+      "h1_text": "Best Dutch Cities for International Professionals",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/cities/cheapest-cities-for-expats",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "",
+      "h1_count": 1,
+      "h1_text": "Cheapest Cities in the Netherlands for Expats",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/cities/compare",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "",
+      "h1_count": 1,
+      "h1_text": "Compare Dutch Cities",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/housing/buy-vs-rent-netherlands",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "Buy vs Rent in the Netherlands",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/housing/buying-a-house-netherlands",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "Buying a House in the Netherlands",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/housing/housing-costs-netherlands",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "Housing Costs in the Netherlands",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/housing/mortgages-netherlands-expats",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "Mortgages in the Netherlands for Expats",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/housing/rental-contracts-and-deposits-netherlands",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "Rental Contracts and Deposits in the Netherlands",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/housing/rental-scams-netherlands",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "Rental Scams in the Netherlands",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/jobs/dutch-workplace-culture",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "Dutch Workplace Culture",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/life/dating-in-the-netherlands",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "Dating in the Netherlands",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/living/beach-towns-netherlands",
+      "http_status": 404,
+      "first_status": 404,
+      "robots": "",
+      "h1_count": 0,
+      "h1_text": "",
+      "in_sitemap": false,
+      "indexable": false
+    },
+    {
+      "path": "/netherlands/money/banking/best-banks-expats",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "Best Banks for Expats in the Netherlands",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/money/banking/how-payments-work",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "How paying in the Netherlands works",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/randstad",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "",
+      "h1_count": 1,
+      "h1_text": "Randstad Netherlands Guide for Expats",
+      "in_sitemap": true,
+      "indexable": true
+    },
+    {
+      "path": "/netherlands/taxes/30-percent-ruling",
+      "http_status": 200,
+      "first_status": 200,
+      "robots": "index, follow",
+      "h1_count": 1,
+      "h1_text": "30% Ruling in the Netherlands",
+      "in_sitemap": true,
+      "indexable": true
+    }
+  ],
+  "prior19_live_missing_h1": 0,
+  "prior19_live_with_h1": 18,
+  "hubs": {
+    "/netherlands/health": {
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/health",
+      "h1": "Healthcare in the Netherlands",
+      "noindex": false,
+      "in_sitemap": true,
+      "child_count": 11
+    },
+    "/netherlands/education": {
+      "status": 200,
+      "robots": "index, follow",
+      "canonical": "https://www.expatcopilot.com/netherlands/education",
+      "h1": "Education & childcare in the Netherlands",
+      "noindex": false,
+      "in_sitemap": true,
+      "child_count": 5
+    }
+  },
+  "mesh": [
+    {
+      "country": "south-africa",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from South Africa",
+      "parent": true,
+      "related_count": 3,
+      "related": "/netherlands/moving/tools/arrival-planner/from/south-africa|/netherlands/moving/tools/document-readiness/from/south-africa|/netherlands/moving/tools/first-90-days/from/south-africa"
+    },
+    {
+      "country": "india",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from India",
+      "parent": true,
+      "related_count": 3,
+      "related": "/netherlands/moving/tools/arrival-planner/from/india|/netherlands/moving/tools/document-readiness/from/india|/netherlands/moving/tools/first-90-days/from/india"
+    },
+    {
+      "country": "united-states",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from United States",
+      "parent": true,
+      "related_count": 3,
+      "related": "/netherlands/moving/tools/arrival-planner/from/united-states|/netherlands/moving/tools/document-readiness/from/united-states|/netherlands/moving/tools/first-90-days/from/united-states"
+    },
+    {
+      "country": "united-kingdom",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from United Kingdom",
+      "parent": true,
+      "related_count": 3,
+      "related": "/netherlands/moving/tools/arrival-planner/from/united-kingdom|/netherlands/moving/tools/document-readiness/from/united-kingdom|/netherlands/moving/tools/first-90-days/from/united-kingdom"
+    },
+    {
+      "country": "brazil",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from Brazil",
+      "parent": true,
+      "related_count": 3,
+      "related": "/netherlands/moving/tools/arrival-planner/from/brazil|/netherlands/moving/tools/document-readiness/from/brazil|/netherlands/moving/tools/first-90-days/from/brazil"
+    },
+    {
+      "country": "turkey",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from T\u00fcrkiye",
+      "parent": true,
+      "related_count": 3,
+      "related": "/netherlands/moving/tools/arrival-planner/from/turkey|/netherlands/moving/tools/document-readiness/from/turkey|/netherlands/moving/tools/first-90-days/from/turkey"
+    },
+    {
+      "country": "indonesia",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from Indonesia",
+      "parent": true,
+      "related_count": 3,
+      "related": "/netherlands/moving/tools/arrival-planner/from/indonesia|/netherlands/moving/tools/document-readiness/from/indonesia|/netherlands/moving/tools/first-90-days/from/indonesia"
+    },
+    {
+      "country": "australia",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from Australia",
+      "parent": true,
+      "related_count": 3,
+      "related": "/netherlands/moving/tools/arrival-planner/from/australia|/netherlands/moving/tools/document-readiness/from/australia|/netherlands/moving/tools/first-90-days/from/australia"
+    }
+  ],
+  "apis": {
+    "/api/authority/official-figures?format=json": {
+      "status": 200,
+      "jsonish": true,
+      "bytes": 12161
+    },
+    "/api/authority/city-cost-seed": {
+      "status": 200,
+      "jsonish": true,
+      "bytes": 10805
+    },
+    "/api/authority/city-comparison-profiles": {
+      "status": 200,
+      "jsonish": true,
+      "bytes": 7511
+    }
+  },
+  "indexable": 447,
+  "orphans": 4,
+  "near_orphans": 14,
+  "country_tool_orphans": 0,
+  "edges_3xx": 931,
+  "uniq_3xx": 18,
+  "edges_4xx": 161,
+  "uniq_4xx": 57,
+  "dest_ge400": 29,
+  "max_inlinks": 446,
+  "missing_h1": 0,
+  "duplicate_titles": 0,
+  "orphan_paths": [
+    "/netherlands/culture/communication-style",
+    "/netherlands/culture/sinterklaas",
+    "/netherlands/culture/what-feels-normal-in-dutch-daily-life",
+    "/netherlands/living/government-portals-overview"
+  ],
+  "top_3xx": [
+    "/",
+    "/netherlands/can-i-open-bank-account-before-bsn",
+    "/netherlands/culture/dutch-directness-at-work",
+    "/netherlands/documents-needed-to-move-netherlands",
+    "/netherlands/integration/tools/inburgering-timeline-planner",
+    "/netherlands/integration/tools/knm-knowledge-quiz",
+    "/netherlands/living",
+    "/netherlands/living/culture-etiquette",
+    "/netherlands/living/energy-and-water",
+    "/netherlands/living/utilities",
+    "/netherlands/money/taxes/30-percent-ruling",
+    "/netherlands/moving-documents-checklist"
+  ],
+  "top_4xx": [
+    "/netherlands/jobs/cover-letter-netherlands",
+    "/netherlands/jobs/cv-netherlands",
+    "/netherlands/jobs/english-speaking-jobs-netherlands",
+    "/netherlands/jobs/interview-tips-netherlands",
+    "/netherlands/jobs/linkedin-netherlands",
+    "/netherlands/jobs/networking-netherlands",
+    "/netherlands/jobs/recruitment-agencies-netherlands",
+    "/netherlands/jobs/remote-work-netherlands",
+    "/netherlands/jobs/starting-consultancy-netherlands",
+    "/netherlands/living/asian-supermarkets-netherlands",
+    "/netherlands/living/best-supermarkets-netherlands",
+    "/netherlands/living/bike-sharing-netherlands"
+  ]
+}

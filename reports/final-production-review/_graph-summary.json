@@ -1,0 +1,217 @@
+{
+  "indexable_count": 447,
+  "orphans": 4,
+  "near_orphans": 14,
+  "country_tool_orphans": 0,
+  "edges_to_redirect": 208,
+  "unique_redirect_targets": 1,
+  "edges_to_404": 0,
+  "unique_404_targets": 0,
+  "edges_to_staged": 0,
+  "unique_staged_targets": 0,
+  "avg_non_nav_outlinks": 44.09,
+  "unique_contextual_destinations_ge10": 224,
+  "destinations_ge400_contextual": 26,
+  "destinations_ge400_all_inlinks": 29,
+  "max_unique_inlinks": 446,
+  "missing_h1_indexable": 0,
+  "prior_19_missing_h1_still": 0,
+  "prior_19_fixed": 18,
+  "duplicate_titles": 0,
+  "duplicate_descriptions": 8,
+  "missing_descriptions": 0,
+  "mesh_spotcheck": [
+    {
+      "country": "south-africa",
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/south-africa",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from South Africa",
+      "parent_country_link": "YES",
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/south-africa|/netherlands/moving/tools/document-readiness/from/south-africa|/netherlands/moving/tools/first-90-days/from/south-africa",
+      "has_next_steps": "YES"
+    },
+    {
+      "country": "india",
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/india",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from India",
+      "parent_country_link": "YES",
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/india|/netherlands/moving/tools/document-readiness/from/india|/netherlands/moving/tools/first-90-days/from/india",
+      "has_next_steps": "YES"
+    },
+    {
+      "country": "united-states",
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/united-states",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from United States",
+      "parent_country_link": "YES",
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/united-states|/netherlands/moving/tools/document-readiness/from/united-states|/netherlands/moving/tools/first-90-days/from/united-states",
+      "has_next_steps": "YES"
+    },
+    {
+      "country": "united-kingdom",
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/united-kingdom",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from United Kingdom",
+      "parent_country_link": "YES",
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/united-kingdom|/netherlands/moving/tools/document-readiness/from/united-kingdom|/netherlands/moving/tools/first-90-days/from/united-kingdom",
+      "has_next_steps": "YES"
+    },
+    {
+      "country": "brazil",
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/brazil",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from Brazil",
+      "parent_country_link": "YES",
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/brazil|/netherlands/moving/tools/document-readiness/from/brazil|/netherlands/moving/tools/first-90-days/from/brazil",
+      "has_next_steps": "YES"
+    },
+    {
+      "country": "turkiye",
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/turkiye",
+      "status": null,
+      "h1": null,
+      "parent_country_link": "NO",
+      "related_tools_count": 0,
+      "related_tools": "",
+      "has_next_steps": "NO"
+    },
+    {
+      "country": "indonesia",
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/indonesia",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from Indonesia",
+      "parent_country_link": "YES",
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/indonesia|/netherlands/moving/tools/document-readiness/from/indonesia|/netherlands/moving/tools/first-90-days/from/indonesia",
+      "has_next_steps": "YES"
+    },
+    {
+      "country": "australia",
+      "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/australia",
+      "status": 200,
+      "h1": "Moving Checklist for the Netherlands \u2014 from Australia",
+      "parent_country_link": "YES",
+      "related_tools_count": 3,
+      "related_tools": "/netherlands/moving/tools/arrival-planner/from/australia|/netherlands/moving/tools/document-readiness/from/australia|/netherlands/moving/tools/first-90-days/from/australia",
+      "has_next_steps": "YES"
+    }
+  ],
+  "top_inlink_destinations": [
+    [
+      "/netherlands",
+      446
+    ],
+    [
+      "/netherlands/moving/tools/moving-checklist",
+      446
+    ],
+    [
+      "/netherlands/moving-to-the-netherlands",
+      446
+    ],
+    [
+      "/privacy",
+      446
+    ],
+    [
+      "/terms",
+      446
+    ],
+    [
+      "/contact",
+      446
+    ],
+    [
+      "/about",
+      446
+    ],
+    [
+      "/how-this-site-works",
+      446
+    ],
+    [
+      "/editorial-policy",
+      446
+    ],
+    [
+      "/methodology",
+      446
+    ],
+    [
+      "/how-we-rank-services",
+      446
+    ],
+    [
+      "/sources",
+      446
+    ],
+    [
+      "/netherlands/official-figures",
+      446
+    ],
+    [
+      "/disclaimer",
+      446
+    ],
+    [
+      "/affiliate-disclosure",
+      446
+    ],
+    [
+      "/netherlands/housing",
+      446
+    ],
+    [
+      "/netherlands/living/survival-guide",
+      446
+    ],
+    [
+      "/netherlands/utilities/utilities-netherlands",
+      446
+    ],
+    [
+      "/netherlands/government-services",
+      446
+    ],
+    [
+      "/netherlands/living/getting-around",
+      446
+    ],
+    [
+      "/netherlands/life",
+      446
+    ],
+    [
+      "/netherlands/living/healthcare-basics",
+      446
+    ],
+    [
+      "/netherlands/services",
+      446
+    ],
+    [
+      "/netherlands/cities",
+      446
+    ],
+    [
+      "/netherlands/jobs/finding-jobs-netherlands",
+      446
+    ]
+  ],
+  "orphan_sample": [
+    "/netherlands/culture/communication-style",
+    "/netherlands/culture/sinterklaas",
+    "/netherlands/culture/what-feels-normal-in-dutch-daily-life",
+    "/netherlands/living/government-portals-overview"
+  ],
+  "redirect_targets_sample": [
+    "/"
+  ],
+  "404_targets_sample": []
+}

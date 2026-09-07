@@ -1,0 +1,16 @@
+id,severity,area,classification,summary,old,fresh,blocker
+TECH-P0-NG-PH-SITEMAP-404,P0,sitemap,UNCHANGED,8 Nigeria/Philippines country-tool URLs remain in sitemap and return 404+noindex (neither absent nor live),8 sitemap 4xx,8 sitemap 4xx,YES
+HOME-SOFT-307,P1,homepage,UNCHANGED,Homepage / returns HTTP 307 with no Location (soft error shell); drives sitemap_3xx=1 and canonical-to-redirect=1,1×307 on /,1×307 on /,YES
+INTERNAL-LINKS-3XX,P1,internal_linking,UNCHANGED,~931 HTML edges still point at first-hop 3xx aliases (top: /netherlands/living/culture-etiquette),932 edges,931 edges / 18 targets,NO
+INTERNAL-LINKS-4XX,P1,internal_linking,UNCHANGED,"~161 HTML edges still point at 404 targets (services stubs, some jobs/living URLs)",163 edges,161 edges / 57 targets,NO
+EXPLORE-CONCENTRATION,P2,internal_equity,IMPROVED,Destinations with ≥400 unique inlinks fell 47→29; Explore signals present on 378 pages; still sitewide-heavy,47 dest ≥400,29 dest ≥400; avg non-chrome outlinks 34.37,NO
+BEACH-TOWNS-404,P2,url,REGRESSED,Prior missing-H1 URL /netherlands/living/beach-towns-netherlands now 404 and out of sitemap,200 missing H1,404,NO
+30PCT-CALC-STAGED,P2,authority,INTENTIONAL,30% ruling calculator remains Coming soon + noindex; guide is live,staged,staged noindex,NO
+CULTURE-ORPHANS,P2,internal_linking,IMPROVED,Only 4 indexable orphans remain (3 culture + government-portals); country-tool orphans cleared,116 orphans / 112 country-tool,4 orphans / 0 country-tool,NO
+SITEMAP-NOSLASH,P0,sitemap,RESOLVED,Sitemap locs are non-trailing-slash; first-hop 200 for 447/456,455 sitemap 3xx (slash),0 slash locs; 1 soft-307 + 8×404,NO
+CANONICAL-NOSLASH,P0,canonical,RESOLVED,Canonical→redirect collapsed; self-canonical noslash on indexable pages,447 canonical-to-redirect,1 (homepage),NO
+H1-PRIOR19,P1,onpage,RESOLVED,18/18 live prior-H1 pages now have H1; 1 prior URL is 404,19 missing H1,0 missing among live indexable prior set,NO
+HEALTH-EDU-HUBS,P1,hubs,RESOLVED,Health and education are launched indexable hubs with children + sitemap membership,noindex shells,launched hubs,NO
+COUNTRY-TOOL-MESH,P1,internal_linking,RESOLVED,Country-tool mesh live for SA/IN/US/UK/BR/TR/ID/AU (parent + related tools + next steps),0 related; 112 orphans,8/8 mesh; 0 country-tool orphans,NO
+AUTHORITY-APIS,P1,authority,RESOLVED,"official-figures, city-cost-seed, city-comparison-profiles APIs return 200 JSON",404,200,NO
+MOBILE-TBT,P1,performance,IMPROVED,NL hub mobile lab TBT ~1380ms → ~174ms,TBT 1380ms,TBT 174ms (lab),NO

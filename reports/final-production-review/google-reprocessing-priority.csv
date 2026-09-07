@@ -1,0 +1,14 @@
+url,page_type,reason_changed,previous_google_issue,current_technical_state,priority,recommended_google_action
+https://www.expatcopilot.com/netherlands,nl_hub,Remediated hub live,old equity/perf,INDEXABLE,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/health,hub,Launched hub,noindex shell,INDEXABLE,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/education,hub,Launched hub,noindex shell,INDEXABLE,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/official-figures,authority,Authority packaging,API gap,INDEXABLE,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats,guide,H1 restored,missing H1,INDEXABLE,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling,ymyl,H1 restored,missing H1,INDEXABLE,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands,lifestyle,H1 restored,missing H1,INDEXABLE,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/tools/city-comparison,tool,API live,API 404,INDEXABLE,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/south-africa,country_tool,Mesh live,orphan,INDEXABLE,TIER_2_SITEMAP_RECRAWL,Sitemap recrawl only
+https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/nigeria,staged,Staged/broken,sitemap 404,KEEP OUT,KEEP_EXCLUDED,Do not request; remove from sitemap on next deploy
+https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/philippines,staged,Staged/broken,sitemap 404,KEEP OUT,KEEP_EXCLUDED,Do not request; remove from sitemap on next deploy
+https://www.expatcopilot.com/netherlands/taxes/tools/30-percent-ruling-calculator,staged,Staged/broken,sitemap 404,KEEP OUT,KEEP_EXCLUDED,Do not request; remove from sitemap on next deploy
+https://www.expatcopilot.com/,homepage,Soft 307,307,307,NO_REQUEST_NEEDED,Fix before requesting

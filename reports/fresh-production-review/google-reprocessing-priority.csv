@@ -1,0 +1,22 @@
+url,page_type,reason_changed,previous_google_issue,current_technical_state,priority,recommended_google_action
+https://www.expatcopilot.com/netherlands,nl_hub,Hub remediation + performance,indexability/equity,INDEXABLE 200 self-canonical,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/health,pillar_hub,Launched hub (was noindex shell),soft-noindex placeholder,INDEXABLE hub in sitemap,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/education,pillar_hub,Launched hub (was noindex shell),soft-noindex placeholder,INDEXABLE hub in sitemap,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/official-figures,authority,Authority packaging + as-of dating,authority gap,INDEXABLE + API 200,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/cities,cities_hub,Hub template/canonical,coverage,INDEXABLE 200,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats,guide,H1 restored,missing H1,INDEXABLE H1=1,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling,ymyl,H1 restored,missing H1,INDEXABLE H1=1,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands,lifestyle,H1 restored,missing H1,INDEXABLE H1=1,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/tools/city-comparison,tool,Authority API live,API gap,INDEXABLE,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator,tool,Authority seed API live,API gap,INDEXABLE,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/housing/buying-a-house-netherlands,guide,H1 restored,missing H1,INDEXABLE H1=1,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/randstad,guide,H1 restored,missing H1,INDEXABLE H1=1,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/cities/amsterdam-vs-rotterdam,guide,H1 restored,missing H1,INDEXABLE H1=1,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/jobs/dutch-workplace-culture,guide,H1 restored,missing H1,INDEXABLE H1=1,TIER_1_REQUEST_INDEXING,Request indexing
+https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/south-africa,country_tool,Mesh + enrichment live,orphan/country-tool,INDEXABLE linked,TIER_2_SITEMAP_ONLY,Rely on sitemap recrawl; do not bulk request country tools
+https://www.expatcopilot.com/netherlands/housing,pillar,Noslash canonical live,canonical redirect,INDEXABLE,TIER_2_SITEMAP_ONLY,Sitemap recrawl
+https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/nigeria,staged_or_broken,Still 404/noindex or intentionally staged,sitemap 404 or staged,KEEP OUT OF INDEX,KEEP_EXCLUDED,Do not request; remove broken URLs from sitemap
+https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/philippines,staged_or_broken,Still 404/noindex or intentionally staged,sitemap 404 or staged,KEEP OUT OF INDEX,KEEP_EXCLUDED,Do not request; remove broken URLs from sitemap
+https://www.expatcopilot.com/netherlands/taxes/tools/30-percent-ruling-calculator,staged_or_broken,Still 404/noindex or intentionally staged,sitemap 404 or staged,KEEP OUT OF INDEX,KEEP_EXCLUDED,Do not request; remove broken URLs from sitemap
+https://www.expatcopilot.com/,homepage,Soft 307,307,307 no Location,INVESTIGATE,Fix before requesting indexing
+https://www.expatcopilot.com/netherlands/living/beach-towns-netherlands,removed_url,Now 404,missing H1,404,INVESTIGATE,Confirm intentional removal; remove from GSC if obsolete
