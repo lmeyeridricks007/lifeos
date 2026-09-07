@@ -25,5 +25,5 @@ test("buildSocialMetadata uses absolute canonical on production origin", async (
     description: "Browse pages.",
     path: "/sitemap/",
   });
-  assert.equal(meta.alternates?.canonical, `${PRODUCTION_CANONICAL_ORIGIN}/sitemap/`);
+  assert.equal(meta.alternates?.canonical, `${PRODUCTION_CANONICAL_ORIGIN}/sitemap`);
 });

@@ -1,10 +1,10 @@
-export const MORTGAGE_ADVISORS_NETHERLANDS_PATH = "/netherlands/services/mortgage-advisors/" as const;
-export const MORTGAGES_FOR_EXPATS_PATH = "/netherlands/housing/mortgages-netherlands-expats/" as const;
-export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands/" as const;
-export const BUY_VS_RENT_NETHERLANDS_PATH = "/netherlands/housing/buy-vs-rent-netherlands/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
+export const MORTGAGE_ADVISORS_NETHERLANDS_PATH = "/netherlands/services/mortgage-advisors" as const;
+export const MORTGAGES_FOR_EXPATS_PATH = "/netherlands/housing/mortgages-netherlands-expats" as const;
+export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands" as const;
+export const BUY_VS_RENT_NETHERLANDS_PATH = "/netherlands/housing/buy-vs-rent-netherlands" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const SERVICES_HUB_PATH = "/netherlands/services" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
 
 export type MortgageAdvisorProvider = {
   name: string;

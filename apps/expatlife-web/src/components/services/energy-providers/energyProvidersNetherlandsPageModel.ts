@@ -3,19 +3,19 @@ import { INTERNET_PROVIDERS_PATH } from "@/src/components/services/internet-prov
 import { PHONE_PROVIDERS_PATH } from "@/src/components/services/phone-providers/phoneProvidersNetherlandsPageModel";
 
 /** Services directory — Dutch electricity/gas supplier comparison for expats. */
-export const ENERGY_PROVIDERS_PATH = "/netherlands/services/energy-providers/" as const;
+export const ENERGY_PROVIDERS_PATH = "/netherlands/services/energy-providers" as const;
 export const ENERGY_PROVIDERS_NETHERLANDS_PATH = ENERGY_PROVIDERS_PATH;
 
 export { INTERNET_PROVIDERS_PATH, PHONE_PROVIDERS_PATH };
-export const MOBILE_CONNECTIVITY_PATH = "/netherlands/services/mobile-connectivity/" as const;
-export const ENERGY_AND_WATER_PATH = "/netherlands/utilities/energy-and-water-netherlands/" as const;
-export const UTILITIES_HUB_PATH = "/netherlands/utilities/utilities-netherlands/" as const;
-export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents/" as const;
-export const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies/" as const;
-export const RENTAL_AGENCIES_PATH = "/netherlands/services/rental-agencies/" as const;
-export const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers/" as const;
+export const MOBILE_CONNECTIVITY_PATH = "/netherlands/services/mobile-connectivity" as const;
+export const ENERGY_AND_WATER_PATH = "/netherlands/utilities/energy-and-water-netherlands" as const;
+export const UTILITIES_HUB_PATH = "/netherlands/utilities/utilities-netherlands" as const;
+export const SERVICES_HUB_PATH = "/netherlands/services" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents" as const;
+export const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies" as const;
+export const RENTAL_AGENCIES_PATH = "/netherlands/services/rental-agencies" as const;
+export const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers" as const;
 
 export const ENERGY_PROVIDERS_AFFILIATE_PLACEMENT_ID =
   "nl-services-energy-providers-support-providers" as const;

@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -700,8 +701,8 @@ export function HiddenCostsNetherlandsView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Money", item: new URL(MONEY_HUB_PATH, baseUrl).toString() },
-          { name: "Hidden costs", item: new URL(HIDDEN_COSTS_NETHERLANDS_PATH, baseUrl).toString() },
+          { name: "Money", item: absoluteUrlFromPath(MONEY_HUB_PATH) },
+          { name: "Hidden costs", item: absoluteUrlFromPath(HIDDEN_COSTS_NETHERLANDS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

@@ -20,9 +20,9 @@ import {
 } from "./cvNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
-export const COVER_LETTER_NETHERLANDS_PATH = "/netherlands/jobs/cover-letter-netherlands/" as const;
-export const LINKEDIN_NETHERLANDS_PATH = "/netherlands/jobs/linkedin-netherlands/" as const;
-export const NETWORKING_NETHERLANDS_PATH = "/netherlands/jobs/networking-netherlands/" as const;
+export const COVER_LETTER_NETHERLANDS_PATH = "/netherlands/jobs/cover-letter-netherlands" as const;
+export const LINKEDIN_NETHERLANDS_PATH = "/netherlands/jobs/linkedin-netherlands" as const;
+export const NETWORKING_NETHERLANDS_PATH = "/netherlands/jobs/networking-netherlands" as const;
 
 export {
   CV_NETHERLANDS_PATH,

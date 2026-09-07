@@ -1,7 +1,9 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { InfoBox } from "@/components/ui/info-box";
+import { Button } from "@/components/ui/button";
 import {
   calculateThirtyPercentRuling,
   grossAnnualFromInputs,
@@ -9,6 +11,11 @@ import {
 import type { ThirtyPercentCalculatorInputs, ThirtyRulingScenario } from "@/src/lib/tools/thirty-percent-ruling/types";
 import { evaluateAllScenarios, type ScenarioEvaluation } from "@/src/lib/tools/thirty-percent-ruling/scenarios";
 import { mergeThirtyPercentInputs, THIRTY_PERCENT_DEFAULT_INPUTS } from "@/src/lib/tools/thirty-percent-ruling/defaultInputs";
+import {
+  hasThirtyRulingUrlParams,
+  parseThirtyRulingSearchParams,
+  thirtyRulingToSearchParams,
+} from "@/src/lib/tools/thirty-percent-ruling/urlState";
 import { ToolResultsLoading } from "@/src/components/tools/ToolResultsLoading";
 import { MAX_SCENARIOS, ScenarioComparePanel } from "./panels/ScenarioComparePanel";
 import { ThirtyRulingEligibilityForm } from "./ThirtyRulingEligibilityForm";
@@ -43,6 +50,8 @@ function normalizeLoadedScenario(s: ThirtyRulingScenario): ThirtyRulingScenario 
 }
 
 export function ThirtyPercentRulingCalculatorClient() {
+  const router = useRouter();
+  const pathname = usePathname();
   const [scenarios, setScenarios] = useState<ThirtyRulingScenario[]>(() => [
     makeScenario("Primary", THIRTY_PERCENT_DEFAULT_INPUTS),
   ]);
@@ -50,6 +59,7 @@ export function ThirtyPercentRulingCalculatorClient() {
   const [activeIdx, setActiveIdx] = useState(0);
   const [showAdvanced, setShowAdvanced] = useState(false);
   const [hydrated, setHydrated] = useState(false);
+  const [shareFeedback, setShareFeedback] = useState<string | null>(null);
 
   const [isCalculating, setIsCalculating] = useState(false);
   const [progressPct, setProgressPct] = useState(0);
@@ -63,17 +73,24 @@ export function ThirtyPercentRulingCalculatorClient() {
   const cancelCalcRunRef = useRef<(() => void) | null>(null);
 
   useEffect(() => {
+    const sp = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
     try {
-      const rawV3 = localStorage.getItem(STORAGE_KEY);
-      const rawV2 = localStorage.getItem("expatcopilot-30ruling-v2");
-      const raw = rawV3 || rawV2;
-      if (raw) {
-        const p = JSON.parse(raw) as PersistedV3;
-        if (p.scenarios?.length && p.scenarios.length <= MAX_SCENARIOS) {
-          setScenarios(p.scenarios.map(normalizeLoadedScenario));
-          setCompareMode(Boolean(p.compareMode));
-          setActiveIdx(Math.min(Math.max(0, p.activeIdx ?? 0), p.scenarios.length - 1));
-          setShowAdvanced(Boolean(p.showAdvanced));
+      if (hasThirtyRulingUrlParams(sp)) {
+        const fromUrl = parseThirtyRulingSearchParams(sp);
+        setScenarios([makeScenario("Primary", fromUrl)]);
+        setActiveIdx(0);
+      } else {
+        const rawV3 = localStorage.getItem(STORAGE_KEY);
+        const rawV2 = localStorage.getItem("expatcopilot-30ruling-v2");
+        const raw = rawV3 || rawV2;
+        if (raw) {
+          const p = JSON.parse(raw) as PersistedV3;
+          if (p.scenarios?.length && p.scenarios.length <= MAX_SCENARIOS) {
+            setScenarios(p.scenarios.map(normalizeLoadedScenario));
+            setCompareMode(Boolean(p.compareMode));
+            setActiveIdx(Math.min(Math.max(0, p.activeIdx ?? 0), p.scenarios.length - 1));
+            setShowAdvanced(Boolean(p.showAdvanced));
+          }
         }
       }
     } catch {
@@ -94,6 +111,16 @@ export function ThirtyPercentRulingCalculatorClient() {
 
   const safeIdx = Math.min(activeIdx, Math.max(0, scenarios.length - 1));
   const inputs = scenarios[safeIdx]?.inputs ?? THIRTY_PERCENT_DEFAULT_INPUTS;
+
+  // Sync primary (active) scenario into the address bar for shareable state — not for indexation.
+  useEffect(() => {
+    if (!hydrated) return;
+    const t = window.setTimeout(() => {
+      const query = thirtyRulingToSearchParams(inputs).toString();
+      router.replace(query ? `${pathname}?${query}` : pathname, { scroll: false });
+    }, 320);
+    return () => window.clearTimeout(t);
+  }, [hydrated, inputs, pathname, router]);
 
   useEffect(() => {
     latestRef.current = { scenarios, safeIdx };
@@ -206,6 +233,18 @@ export function ThirtyPercentRulingCalculatorClient() {
     };
   }, [isCalculating]);
 
+  const shareScenario = useCallback(async () => {
+    const query = thirtyRulingToSearchParams(inputs).toString();
+    const url = `${typeof window !== "undefined" ? window.location.origin : ""}${pathname}?${query}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      setShareFeedback("Link copied — shares the active scenario inputs only.");
+    } catch {
+      setShareFeedback("Copy blocked — use your browser address bar after any change.");
+    }
+    window.setTimeout(() => setShareFeedback(null), 4000);
+  }, [inputs, pathname]);
+
   const downloadPayload = useMemo(() => {
     if (!hasFinishedRun || resultsStale || !displayedResult) return null;
     return {
@@ -223,6 +262,17 @@ export function ThirtyPercentRulingCalculatorClient() {
 
   return (
     <div className="space-y-8">
+      <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center">
+        <Button type="button" variant="secondary" className="min-h-11 w-full sm:w-auto" onClick={shareScenario} disabled={!hydrated}>
+          Copy share link
+        </Button>
+        {shareFeedback ? (
+          <span className="text-sm text-slate-600" role="status">
+            {shareFeedback}
+          </span>
+        ) : null}
+      </div>
+
       {compareMode ? (
         <div className="rounded-2xl border border-slate-200/80 bg-white/80 p-4 shadow-sm">
           <ScenarioComparePanel
@@ -239,7 +289,7 @@ export function ThirtyPercentRulingCalculatorClient() {
         </div>
       ) : (
         <p className="text-xs text-slate-500">
-          Your inputs are saved in this browser. Enable scenario compare under Advanced to model multiple offers.
+          Inputs stay in this browser and in the shareable URL for the active scenario. Enable scenario compare under Advanced to model multiple offers (compare mode is local-only).
         </p>
       )}
 

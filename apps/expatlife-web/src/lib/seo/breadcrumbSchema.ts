@@ -1,8 +1,5 @@
-/**
- * BreadcrumbList structured data for tool and guide pages.
- */
-
 import { getSeoPublicOrigin } from "@/lib/site-origin";
+import { normalizeSitePath, toAbsoluteCanonicalUrl } from "@/lib/seo/site-url";
 
 export type BreadcrumbItem = { name: string; url: string };
 
@@ -15,7 +12,9 @@ export function buildBreadcrumbSchema(items: BreadcrumbItem[]): object {
       "@type": "ListItem",
       position: i + 1,
       name: item.name,
-      item: item.url.startsWith("http") ? item.url : `${baseUrl}${item.url}`,
+      item: item.url.startsWith("http")
+        ? toAbsoluteCanonicalUrl(baseUrl, new URL(item.url).pathname)
+        : toAbsoluteCanonicalUrl(baseUrl, item.url),
     })),
   };
 }
@@ -24,9 +23,9 @@ export function buildBreadcrumbSchema(items: BreadcrumbItem[]): object {
 export function getToolBreadcrumbItems(toolName: string, toolPath: string): BreadcrumbItem[] {
   return [
     { name: "Home", url: "/" },
-    { name: "Netherlands", url: "/netherlands/" },
-    { name: "Moving to the Netherlands", url: "/netherlands/moving-to-the-netherlands/" },
-    { name: "Tools", url: "/netherlands/moving/tools/" },
-    { name: toolName, url: toolPath },
+    { name: "Netherlands", url: "/netherlands" },
+    { name: "Moving to the Netherlands", url: "/netherlands/moving-to-the-netherlands" },
+    { name: "Tools", url: "/netherlands/moving/tools" },
+    { name: toolName, url: normalizeSitePath(toolPath) },
   ];
 }

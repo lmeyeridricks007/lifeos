@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
@@ -28,7 +29,7 @@ import { TaxClusterToolsSection } from "@/src/components/money/tax-cluster/TaxCl
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/taxes/tools/healthcare-allowance-estimator/";
+const canonical = "/netherlands/taxes/tools/healthcare-allowance-estimator";
 const BASE = "/netherlands";
 const GUIDE_HREF = `${BASE}/taxes/healthcare-allowance-netherlands/`;
 
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
     images: [
       {
         url: HERO_IMAGE,
@@ -222,7 +223,7 @@ function relatedGuidesFromRouteStatus(
 
 export default function HealthcareAllowanceEstimatorPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(canonical, origin).toString();
+  const shareUrl = absoluteUrlFromPath(canonical);
   const bundles = getHealthcareAllowanceServiceBundles();
   const relatedGuidesResolved = relatedGuidesFromRouteStatus(RELATED_NEXT_STEPS);
 
@@ -416,7 +417,7 @@ export default function HealthcareAllowanceEstimatorPage() {
         sidebar={sidebar}
         primarySectionTitle="Healthcare allowance estimator"
         primarySectionContent={
-          <HealthcareAllowanceCalculatorClient calculatorCanonicalUrl={new URL(canonical, origin).toString()} siteName="ExpatCopilot" />
+          <HealthcareAllowanceCalculatorClient calculatorCanonicalUrl={absoluteUrlFromPath(canonical)} siteName="ExpatCopilot" />
         }
         mainSectionTitle="Worked examples"
         examplesCollapsibleDefaultOpen

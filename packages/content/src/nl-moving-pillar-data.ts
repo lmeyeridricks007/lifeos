@@ -68,6 +68,14 @@ const linkRegistry: LinkRegistry = {
     href: "/netherlands/taxes/leaving-netherlands-tax/",
     title: "Taxes when leaving the Netherlands",
   },
+  leaving_netherlands_journey: {
+    href: "/netherlands/leaving/",
+    title: "Leaving the Netherlands",
+  },
+  getting_around: {
+    href: "/netherlands/living/getting-around/",
+    title: "Getting around in the Netherlands",
+  },
   digid_awareness: {
     href: "/netherlands/digid-awareness/",
     title: "DigiD awareness",
@@ -414,10 +422,22 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       timeToComplete: "12 min",
     },
     {
+      title: "Leaving the Netherlands",
+      href: "/netherlands/leaving/",
+      description: "Exit journey: deregistration, housing end, insurance, DigiD, and what to sequence before you go.",
+      timeToComplete: "12 min",
+    },
+    {
       title: "Taxes when leaving",
       href: "/netherlands/taxes/leaving-netherlands-tax/",
       description: "Deregistration, final tax returns, pensions, allowances and cross-border questions when moving away.",
       timeToComplete: "14 min",
+    },
+    {
+      title: "Getting around",
+      href: "/netherlands/living/getting-around/",
+      description: "OV vs bike vs car after you land—bridge into the Living mobility cluster.",
+      timeToComplete: "10 min",
     },
     {
       title: "TWV work permit",
@@ -761,7 +781,9 @@ export const nlMovingPillarContent: NlMovingPillarContent = {
       cards: [
         { linkKey: "working_in_netherlands_move_guide", description: "Move-pillar guide for job offers, salary, permits, payroll, and relocation trade-offs." },
         { linkKey: "taxes_after_moving", description: "Tax onboarding guide for BSN, payroll, residency, allowances, 30% ruling and annual returns after relocation." },
+        { linkKey: "leaving_netherlands_journey", description: "Full leaving journey: exit admin, housing end, insurance, and sequencing before you go." },
         { linkKey: "leaving_netherlands_tax", description: "Exit tax guide for deregistration, final returns, pensions, allowances and international transitions." },
+        { linkKey: "getting_around", description: "Living mobility: OV, bike, and car paths after arrival." },
         { linkKey: "net_salary_netherlands", description: "Gross-to-net salary guide for comparing Dutch offers, payroll deductions and take-home pay." },
         { linkKey: "gross_vs_net_salary", description: "Beginner guide to Dutch salary wording, payslips, deductions and take-home pay." },
         {

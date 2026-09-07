@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { GuidePageTemplate } from "@/src/components/guides/GuidePageTemplate";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
@@ -17,7 +18,7 @@ const data = euBlueCardToGuideData(EU_BLUE_CARD_VISA);
 export const metadata: Metadata = {
   title: String(data.metaTitle ?? data.title),
   description: String(EU_BLUE_CARD_VISA.seo.description),
-  alternates: { canonical: String(data.path) },
+  alternates: { canonical: absoluteUrlFromPath(String(data.path))},
   openGraph: {
     title: String(data.metaTitle ?? data.title),
     description: String(EU_BLUE_CARD_VISA.seo.description),
@@ -33,8 +34,8 @@ export const metadata: Metadata = {
 
 const breadcrumbCrumbs = [
   { name: "Home", item: new URL("/", baseUrl).toString() },
-  { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-  { name: "Visa", item: new URL("/netherlands/visa", baseUrl).toString() },
+  { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+  { name: "Visa", item: absoluteUrlFromPath("/netherlands/visa") },
   { name: data.breadcrumbLabel ?? data.title, item: new URL(data.path, baseUrl).toString() },
 ];
 

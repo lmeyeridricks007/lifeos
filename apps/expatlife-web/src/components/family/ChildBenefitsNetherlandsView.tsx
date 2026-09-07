@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -351,7 +352,7 @@ export function ChildBenefitsNetherlandsView() {
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Family", item: new URL(FAMILY_TOOLS_PATH, baseUrl).toString() },
+    { name: "Family", item: absoluteUrlFromPath(FAMILY_TOOLS_PATH) },
     { name: "Child Benefits", item: new URL(page.path, baseUrl).toString() },
   ];
   const faqItems = page.faq.map((item, idx) => ({ id: `faq-${idx}`, title: item.q, content: item.a }));

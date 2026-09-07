@@ -1,28 +1,33 @@
-import { LIVING_GETTING_AROUND_PATH, LIVING_PILLAR_ROOT_PATH } from "@/src/components/living/livingPillarContent";
+import { GUIDE_CITABILITY_POLICY_LINKS } from "@/src/components/guides/guideCitabilityPolicyLinks";
+import { LIVING_GETTING_AROUND_PATH, LIVING_PILLAR_ROOT_PATH, LIVING_SURVIVAL_GUIDE_PATH } from "@/src/components/living/livingPillarContent";
 import {
+  BUYING_A_CAR_NETHERLANDS_PATH,
   CAR_SHARING_NETHERLANDS_PATH,
   DRIVING_LICENCE_EXCHANGE_NETHERLANDS_PATH,
+  LEASE_CARS_NETHERLANDS_PATH,
 } from "@/src/components/living/driving-licence-exchange-netherlands/drivingLicenceExchangeNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 /** Public Transport Cluster — lead PATH exports (tickets, rail, local modes). */
-export const OV_CHIPKAART_NETHERLANDS_PATH = "/netherlands/living/ov-chipkaart-netherlands/" as const;
-export const OVPAY_NETHERLANDS_PATH = "/netherlands/living/ovpay-netherlands/" as const;
-export const NS_TRAINS_NETHERLANDS_PATH = "/netherlands/living/ns-trains-netherlands/" as const;
-export const TRAMS_NETHERLANDS_PATH = "/netherlands/living/trams-netherlands/" as const;
-export const METRO_NETHERLANDS_PATH = "/netherlands/living/metro-netherlands/" as const;
-export const REGIONAL_BUSES_NETHERLANDS_PATH = "/netherlands/living/regional-buses-netherlands/" as const;
-export const CYCLING_NETHERLANDS_PATH = "/netherlands/living/cycling-netherlands/" as const;
-export const BIKE_SHARING_NETHERLANDS_PATH = "/netherlands/living/bike-sharing-netherlands/" as const;
-export const TRAIN_DISCOUNTS_NETHERLANDS_PATH = "/netherlands/living/train-discounts-netherlands/" as const;
-export const WEEKEND_TRAVEL_NETHERLANDS_PATH = "/netherlands/living/weekend-travel-netherlands/" as const;
+export const OV_CHIPKAART_NETHERLANDS_PATH = "/netherlands/living/ov-chipkaart-netherlands" as const;
+export const OVPAY_NETHERLANDS_PATH = "/netherlands/living/ovpay-netherlands" as const;
+export const NS_TRAINS_NETHERLANDS_PATH = "/netherlands/living/ns-trains-netherlands" as const;
+export const TRAMS_NETHERLANDS_PATH = "/netherlands/living/trams-netherlands" as const;
+export const METRO_NETHERLANDS_PATH = "/netherlands/living/metro-netherlands" as const;
+export const REGIONAL_BUSES_NETHERLANDS_PATH = "/netherlands/living/regional-buses-netherlands" as const;
+export const CYCLING_NETHERLANDS_PATH = "/netherlands/living/cycling-netherlands" as const;
+export const BIKE_SHARING_NETHERLANDS_PATH = "/netherlands/living/bike-sharing-netherlands" as const;
+export const TRAIN_DISCOUNTS_NETHERLANDS_PATH = "/netherlands/living/train-discounts-netherlands" as const;
+export const WEEKEND_TRAVEL_NETHERLANDS_PATH = "/netherlands/living/weekend-travel-netherlands" as const;
 
 export const GETTING_AROUND_PATH = LIVING_GETTING_AROUND_PATH;
 export const LIVING_HUB_PATH = LIVING_PILLAR_ROOT_PATH;
 
 export {
+  BUYING_A_CAR_NETHERLANDS_PATH,
   CAR_SHARING_NETHERLANDS_PATH,
   DRIVING_LICENCE_EXCHANGE_NETHERLANDS_PATH,
+  LEASE_CARS_NETHERLANDS_PATH,
 };
 
 export type TransportLink = {
@@ -58,6 +63,21 @@ export const ovChipkaartNetherlandsPage = {
   parentGuidePath: GETTING_AROUND_PATH,
   publish: true,
   publishDate: scheduledPublishDateForPath(OV_CHIPKAART_NETHERLANDS_PATH) ?? "2026-09-07",
+  lastReviewed: "7 September 2026",
+  heroOfficialSources: [
+    {
+      label: "OV-chipkaart — English FAQ",
+      href: "https://www.ov-chipkaart.nl/en/frequently-asked-questions",
+    },
+    {
+      label: "OVpay — contactless travel",
+      href: "https://www.ovpay.nl/en",
+    },
+    {
+      label: "NS — English",
+      href: "https://www.ns.nl/en",
+    },
+  ],
   seo: {
     title: "OV-chipkaart in the Netherlands | Complete Guide for Expats",
     description:
@@ -929,11 +949,21 @@ export const ovChipkaartNetherlandsPage = {
     "Wider mobility → Getting around.",
     "Contactless taps → OVpay.",
     "Rail products → NS trains.",
+    "Arrival hub → Survival Guide.",
+    "Occasional car → Car sharing.",
+    "Considering a car instead? → Buying a car.",
     "Everyday bikes → Cycling.",
     "Subscription fleets → Bike sharing.",
     "Bus corridors → Regional buses.",
+    "How we work → Methodology / Sources / Editorial policy.",
   ],
   relatedGuides: [
+    {
+      label: "Survival Guide",
+      href: LIVING_SURVIVAL_GUIDE_PATH,
+      status: "live",
+      description: "Living hub — arrival transport module links NS, OV tickets, car sharing and lease.",
+    },
     {
       label: "Getting around",
       href: GETTING_AROUND_PATH,
@@ -951,6 +981,24 @@ export const ovChipkaartNetherlandsPage = {
       href: NS_TRAINS_NETHERLANDS_PATH,
       status: "live",
       description: "Rail commuting and train products for expats.",
+    },
+    {
+      label: "Car sharing",
+      href: CAR_SHARING_NETHERLANDS_PATH,
+      status: "live",
+      description: "Occasional four wheels when OV is not enough for a trip.",
+    },
+    {
+      label: "Lease cars",
+      href: LEASE_CARS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Private lease or company car when exclusive access beats sharing.",
+    },
+    {
+      label: "Considering a car instead?",
+      href: BUYING_A_CAR_NETHERLANDS_PATH,
+      status: "live",
+      description: "Purchase, registration and ownership orientation when OV is not enough.",
     },
     {
       label: "Train discounts",
@@ -994,6 +1042,7 @@ export const ovChipkaartNetherlandsPage = {
       status: "live",
       description: "Subscription and shared bike fleets for expats.",
     },
+    ...GUIDE_CITABILITY_POLICY_LINKS,
   ] satisfies TransportLink[],
   transportHubTips: [
     "OV-chipkaart is the flagship personal-card guide in the Public Transport cluster.",

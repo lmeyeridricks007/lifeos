@@ -173,9 +173,9 @@ export default async function MovingToNetherlandsFromIndexPage() {
     : browseEntries.filter((e) => e.isPublished);
 
   const breadcrumbCrumbs = [
-    { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Moving to the Netherlands", item: new URL("/netherlands/moving-to-the-netherlands/", baseUrl).toString() },
-    { name: "Moving from your country", item: new URL(canonical, baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands/") },
+    { name: "Moving to the Netherlands", item: absoluteUrlFromPath("/netherlands/moving-to-the-netherlands/") },
+    { name: "Moving from your country", item: absoluteUrlFromPath(canonical) },
   ];
 
   const itemListJsonLd = {
@@ -201,7 +201,7 @@ export default async function MovingToNetherlandsFromIndexPage() {
     630
   );
 
-  const canonicalUrl = new URL(canonical, baseUrl).toString();
+  const canonicalUrl = absoluteUrlFromPath(canonical);
   const articleModified = "2026-04-02";
   const articleDescription =
     "Explore country-specific relocation guides for moving to the Netherlands, with origin-based planning notes, document guidance, route context, and links to the right tools.";

@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +19,7 @@ import { getVisaRelocationMarketingRecommendedCards } from "@/src/lib/recommende
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/visa-cost-calculator/";
+const canonical = "/netherlands/visa-cost-calculator";
 const BASE = "/netherlands";
 
 export const metadata: Metadata = {
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     title: "Netherlands Visa Cost Calculator | Estimate Fees, Documents, and Move Costs",
     description:
       "Estimate the cost of applying for a Dutch visa or residence route, including official fees, document preparation, route-specific extras, and practical move-planning costs.",
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
   },
   twitter: {
     card: "summary_large_image",

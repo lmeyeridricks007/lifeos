@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { MoveHero } from "@/components/page/move-shell";
 import { buildBreadcrumbSchema } from "@/src/lib/seo/breadcrumbSchema";
@@ -32,7 +32,7 @@ const META_DESCRIPTION =
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: CITIZENSHIP_TIMELINE_CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(CITIZENSHIP_TIMELINE_CANONICAL)},
   keywords: [
     "Dutch citizenship timeline",
     "naturalisation calculator Netherlands",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     url: CITIZENSHIP_TIMELINE_CANONICAL,
     images: [
       {
-        url: "/images/heroes/highly-skilled-migrant-netherlands.png",
+        url: absoluteUrlFromPath("/images/heroes/highly-skilled-migrant-netherlands.png"),
         width: 1200,
         height: 630,
         alt: "Passport and civic documents for Dutch citizenship timeline planning.",
@@ -72,7 +72,7 @@ function resolveRelatedGuides() {
 
 export default function DutchCitizenshipTimelineCalculatorPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(CITIZENSHIP_TIMELINE_CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(CITIZENSHIP_TIMELINE_CANONICAL);
   const relatedGuides = resolveRelatedGuides();
 
   const breadcrumbJsonLd = buildBreadcrumbSchema([

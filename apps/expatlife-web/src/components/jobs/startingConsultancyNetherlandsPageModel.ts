@@ -29,7 +29,7 @@ import {
 } from "./freelancingNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
-export const STARTING_CONSULTANCY_NETHERLANDS_PATH = "/netherlands/jobs/starting-consultancy-netherlands/" as const;
+export const STARTING_CONSULTANCY_NETHERLANDS_PATH = "/netherlands/jobs/starting-consultancy-netherlands" as const;
 export const STARTING_CONSULTANCY_AFFILIATE_PLACEMENT_ID = "nl-jobs-starting-consultancy-support-providers" as const;
 
 export {

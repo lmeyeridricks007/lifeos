@@ -6,9 +6,9 @@ import {
   UTILITIES_NETHERLANDS_PATH,
 } from "./utilitiesNetherlandsPageModel";
 
-export const INTERNET_AND_MOBILE_NETHERLANDS_PATH = "/netherlands/utilities/internet-and-mobile-netherlands/" as const;
-export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
-export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as const;
+export const INTERNET_AND_MOBILE_NETHERLANDS_PATH = "/netherlands/utilities/internet-and-mobile-netherlands" as const;
+export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands" as const;
+export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands" as const;
 
 export type ConnectivityLink = {
   label: string;

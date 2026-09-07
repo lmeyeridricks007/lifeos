@@ -14,7 +14,7 @@ import { INSURANCE_PROVIDERS_NETHERLANDS_PATH } from "../services/insurance-prov
 import { MUNICIPALITY_SERVICES_NETHERLANDS_PATH } from "../practical-life/municipalityServicesNetherlandsPageModel";
 
 export const RENTAL_CONTRACTS_AND_DEPOSITS_NETHERLANDS_PATH =
-  "/netherlands/housing/rental-contracts-and-deposits-netherlands/" as const;
+  "/netherlands/housing/rental-contracts-and-deposits-netherlands" as const;
 
 export type RentalGuideLink = {
   label: string;

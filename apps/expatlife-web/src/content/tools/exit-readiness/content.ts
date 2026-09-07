@@ -1,4 +1,4 @@
-export const EXIT_READINESS_CANONICAL = "/netherlands/leaving/tools/exit-readiness-checker/";
+export const EXIT_READINESS_CANONICAL = "/netherlands/leaving/tools/exit-readiness-checker";
 
 export const EXIT_READINESS_FAQ_ITEMS = [
   {

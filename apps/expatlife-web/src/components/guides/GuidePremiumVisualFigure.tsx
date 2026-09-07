@@ -22,8 +22,9 @@ type GuidePremiumVisualFigureProps = {
  * Full-width premium infographic for pillar guides — single column, below intro copy.
  * Prefer {@link guidePremiumVisualAfterIntroClass} for spacing after the first text block.
  *
- * E4: keep `unoptimized` (avoids large `srcset` strings in HTML). Prefer omitting figures on
- * closing FAQ/sources/related sections in heavy pillar views instead of mounting every PNG twice.
+ * Uses the Next image optimizer (AVIF/WebP + responsive srcset) so large PNG masters do not
+ * compete with LCP on mobile. Prefer omitting figures on closing FAQ/sources/related sections
+ * in heavy pillar views instead of mounting every asset twice.
  *
  * Ahrefs: skip rendering when the asset is not in `public/` (middleware still rewrites direct
  * URL hits for missing paths to a fallback PNG).
@@ -63,7 +64,6 @@ export function GuidePremiumVisualFigure({
           src={visual.src}
           alt={visual.alt}
           fill
-          unoptimized
           sizes="(min-width: 1280px) 1200px, 100vw"
           className="object-contain p-2 drop-shadow-sm sm:p-3 lg:p-4"
         />

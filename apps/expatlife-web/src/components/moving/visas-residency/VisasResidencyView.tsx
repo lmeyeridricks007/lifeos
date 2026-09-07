@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArrowRight } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { BoldParagraph } from "@/components/content/PillarContentBlocks";
@@ -72,12 +73,12 @@ const VISAS_RESIDENCY_INSTRUCTIONAL = getVisasResidencyInstructionalFigure("visa
 
 export function VisasResidencyView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(VISAS_RESIDENCY_CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(VISAS_RESIDENCY_CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Moving", item: new URL(MOVE_PILLAR_HUB, baseUrl).toString() },
-    { name: "Visas & Residency", item: new URL(VISAS_RESIDENCY_CANONICAL, baseUrl).toString() },
+    { name: "Visas & Residency", item: absoluteUrlFromPath(VISAS_RESIDENCY_CANONICAL) },
   ];
 
   const primaryCtaClass = cn(

@@ -99,6 +99,7 @@ export function HsmSalaryCheckerClient() {
   const [lastRunInput, setLastRunInput] = useState<HsmSalaryInput | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
   const [progressPct, setProgressPct] = useState(0);
+  const [shareFeedback, setShareFeedback] = useState<string | null>(null);
   const latestInputRef = useRef(input);
   const cancelRef = useRef<(() => void) | null>(null);
 
@@ -171,6 +172,18 @@ export function HsmSalaryCheckerClient() {
       setIsCalculating(false);
     };
   }, [isCalculating]);
+
+  const shareScenario = useCallback(async () => {
+    const query = hsmSalaryToSearchParams(input).toString();
+    const url = `${typeof window !== "undefined" ? window.location.origin : ""}${pathname}${query ? `?${query}` : ""}`;
+    try {
+      await navigator.clipboard.writeText(url);
+      setShareFeedback("Link copied — paste to share this salary scenario.");
+    } catch {
+      setShareFeedback("Copy blocked — use your browser address bar after any change.");
+    }
+    window.setTimeout(() => setShareFeedback(null), 4000);
+  }, [input, pathname]);
 
   return (
     <div className="space-y-6">
@@ -255,11 +268,19 @@ export function HsmSalaryCheckerClient() {
 
         <InfoBox variant="info" title="Verify on IND">
           Amounts change. Confirm the current required amounts page before you accept an offer. Salary is only one HSM condition.
+          Dated floors also appear on our{" "}
+          <Link href="/netherlands/official-figures/" className="font-medium text-brand-600 hover:underline">
+            Netherlands official figures
+          </Link>{" "}
+          citation table ({HSM_SALARY_FIGURE_YEAR}).
         </InfoBox>
 
         <div className="flex flex-wrap items-center gap-3 pt-1">
           <Button type="button" onClick={handleCalculate} disabled={isCalculating}>
             {isCalculating ? "Checking…" : "Check HSM salary fit"}
+          </Button>
+          <Button type="button" variant="secondary" onClick={shareScenario} disabled={!hydrated}>
+            Copy share link
           </Button>
           <button
             type="button"
@@ -272,6 +293,11 @@ export function HsmSalaryCheckerClient() {
           >
             Reset
           </button>
+          {shareFeedback ? (
+            <span className="text-sm text-copilot-text-secondary" role="status">
+              {shareFeedback}
+            </span>
+          ) : null}
         </div>
       </CardShell>
 

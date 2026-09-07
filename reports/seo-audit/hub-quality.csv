@@ -1,0 +1,30 @@
+cluster,hub_url,hub_exists_live,indexable_children,children_linked_from_hub,children_linking_back_to_hub,contextual_inlinks,navigation_inlinks,total_inlink_pages,sitewide_excessive_links,pages_deeper_than_3,outlinks_from_hub,in_nav_or_footer,in_explore_block,severity,notes
+moving,https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/,yes,96,2,90,0,444,444,yes,0,57,no,yes,P2,hub links to few cluster children (2/96); hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks
+visas_immigration,https://www.expatcopilot.com/netherlands/moving/visas-residency/,yes,16,9,16,0,431,431,yes,0,84,no,yes,INFO,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks
+working,https://www.expatcopilot.com/netherlands/moving/working-in-the-netherlands/,yes,22,11,22,0,431,431,yes,0,84,no,yes,INFO,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks
+jobs_career,https://www.expatcopilot.com/netherlands/jobs/finding-jobs-netherlands/,yes,0,0,0,0,444,444,yes,0,87,yes,no,INFO,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks
+salaries,https://www.expatcopilot.com/netherlands/taxes/average-salary-netherlands/,yes,4,3,3,0,14,14,no,0,76,yes,no,INFO,ok
+thirty_percent_ruling,https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling/,yes,2,2,2,0,40,40,no,0,66,yes,no,INFO,ok
+tax,https://www.expatcopilot.com/netherlands/money/how-taxes-work-in-the-netherlands/,yes,22,10,9,0,21,21,no,0,68,yes,no,INFO,ok
+housing,https://www.expatcopilot.com/netherlands/housing/,yes,9,8,9,0,444,444,yes,0,72,yes,no,INFO,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks
+cities,https://www.expatcopilot.com/netherlands/cities/,yes,22,22,22,0,444,444,yes,0,88,yes,yes,INFO,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks
+cost_of_living,https://www.expatcopilot.com/netherlands/money/cost-of-living-netherlands/,yes,4,3,2,5,0,5,no,0,74,no,no,INFO,ok
+banking,https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats/,yes,20,16,19,22,0,22,no,0,66,no,no,INFO,ok
+healthcare,https://www.expatcopilot.com/netherlands/health/health-insurance-netherlands/,no,12,0,0,0,0,0,no,0,0,no,no,P2,hub URL missing from live indexable set; hub links to few cluster children (0/12); few children link back (0/12)
+utilities,https://www.expatcopilot.com/netherlands/utilities/utilities-netherlands/,yes,4,4,4,0,444,444,yes,0,66,yes,no,INFO,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks
+transport,https://www.expatcopilot.com/netherlands/living/getting-around/,yes,7,7,7,0,444,444,yes,0,79,yes,yes,INFO,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks
+culture_life,https://www.expatcopilot.com/netherlands/living/survival-guide/,yes,32,6,32,0,444,444,yes,9,72,yes,yes,P3,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks; 9 pages >3 clicks from hub
+dating_social,https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands/,yes,2,0,1,0,10,10,no,0,61,yes,no,INFO,ok
+families,https://www.expatcopilot.com/netherlands/family/family-activities-netherlands/,yes,9,6,5,5,0,5,no,0,63,no,no,INFO,ok
+education,https://www.expatcopilot.com/netherlands/services/international-schools/,no,5,0,2,2,0,2,no,0,0,no,no,P2,hub URL missing from live indexable set; hub links to few cluster children (0/5)
+country_origin,https://www.expatcopilot.com/netherlands/moving-to-netherlands-from/,yes,31,30,30,38,0,38,no,0,87,no,no,INFO,ok
+first_90_days,https://www.expatcopilot.com/netherlands/after-arriving-netherlands/,yes,34,2,30,172,0,172,no,0,70,no,no,P2,hub links to few cluster children (2/34)
+tools_calculators,https://www.expatcopilot.com/netherlands/tools/,yes,6,6,6,0,444,444,yes,0,72,yes,yes,INFO,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks
+comparisons,https://www.expatcopilot.com/netherlands/cities/amsterdam-vs-rotterdam/,yes,1,0,0,0,5,5,no,0,59,yes,no,INFO,ok
+services,https://www.expatcopilot.com/netherlands/services/,yes,16,16,16,0,444,444,yes,0,79,yes,yes,INFO,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks
+citizenship_pr,https://www.expatcopilot.com/netherlands/citizenship/permanent-residence/,yes,6,3,5,19,0,19,no,0,54,no,no,INFO,ok
+integration,https://www.expatcopilot.com/netherlands/integration/inburgering/,yes,4,2,3,18,0,18,no,0,56,no,no,INFO,ok
+leaving,https://www.expatcopilot.com/netherlands/leaving/,yes,4,3,3,0,5,5,no,0,57,yes,no,INFO,ok
+practical_life,https://www.expatcopilot.com/netherlands/practical-life/registering-your-address-netherlands/,yes,8,2,5,0,10,10,no,0,61,yes,no,INFO,ok
+trust_legal,https://www.expatcopilot.com/about/,yes,12,12,12,0,444,444,yes,0,32,yes,no,INFO,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks
+netherlands_hub,https://www.expatcopilot.com/netherlands/,yes,1,1,1,0,444,444,yes,0,66,yes,no,INFO,hub receives sitewide ExploreNetherlandsCrossLinks and/or high chrome inlinks

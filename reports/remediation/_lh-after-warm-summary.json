@@ -1,0 +1,26 @@
+[
+  {
+    "family": "nl_hub",
+    "perf": 0.86,
+    "lcp_ms": 3971,
+    "tbt_ms": 139,
+    "cls": 0,
+    "total_bytes": 661818
+  },
+  {
+    "family": "lifestyle_guide",
+    "perf": 0.83,
+    "lcp_ms": 4575,
+    "tbt_ms": 86,
+    "cls": 0,
+    "total_bytes": 864950
+  },
+  {
+    "family": "banking_affiliate",
+    "perf": 0.8,
+    "lcp_ms": 5258,
+    "tbt_ms": 56,
+    "cls": 0,
+    "total_bytes": 846991
+  }
+]

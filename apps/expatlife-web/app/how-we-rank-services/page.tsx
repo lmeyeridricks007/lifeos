@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { howWeRankServicesPage } from "@/src/data/trust/how-we-rank-services";
@@ -11,7 +11,7 @@ export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: pageMetadataTitle(howWeRankServicesPage.seo.title),
   description: howWeRankServicesPage.seo.description,
-  alternates: { canonical: "/how-we-rank-services/" },
+  alternates: { canonical: absoluteUrlFromPath("/how-we-rank-services/")},
 };
 
 type SectionItem = { title: string; body: string };

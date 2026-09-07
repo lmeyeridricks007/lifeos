@@ -27,7 +27,7 @@ import {
   type FamiliesShortlistCityConfig,
 } from "./config";
 
-export const BEST_CITIES_FOR_FAMILIES_PATH = "/netherlands/cities/best-cities-for-families/" as const;
+export const BEST_CITIES_FOR_FAMILIES_PATH = "/netherlands/cities/best-cities-for-families" as const;
 
 export type FamiliesShortlistCityVm = FamiliesShortlistCityConfig & { tierBadge: string };
 

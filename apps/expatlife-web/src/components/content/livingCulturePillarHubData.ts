@@ -60,8 +60,8 @@ export type ClusterPillarHubConfig = {
   faq: PillarFaqItem[];
 };
 
-const LIVING_HUB_PATH = "/netherlands/living/survival-guide/";
-const CULTURE_HUB_PATH = "/netherlands/culture/";
+const LIVING_HUB_PATH = "/netherlands/living/survival-guide";
+const CULTURE_HUB_PATH = "/netherlands/culture";
 
 export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
   jsonLd: {
@@ -396,6 +396,8 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         links: [
           { href: "/netherlands/culture/dutch-traditions/", label: "Traditions hub" },
           { href: "/netherlands/culture/national-holidays/", label: "National holidays" },
+          { href: "/netherlands/culture/sinterklaas", label: "Sinterklaas" },
+          { href: "/netherlands/culture/what-feels-normal-in-dutch-daily-life", label: "What feels normal in Dutch daily life" },
         ],
       },
       {
@@ -406,6 +408,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         links: [
           { href: "/netherlands/culture/learning-dutch/", label: "Learning Dutch" },
           { href: "/netherlands/integration/inburgering/", label: "Inburgering guide" },
+          { href: "/netherlands/culture/communication-style", label: "Communication style" },
         ],
       },
     ],
@@ -467,8 +470,8 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
           { title: "Inburgering guide", href: "/netherlands/integration/inburgering/" },
         ],
         startToolLink: {
-          title: "Inburgering Timeline Planner",
-          href: "/netherlands/integration/tools/inburgering-timeline-planner/",
+          title: "Integration Requirement Checker",
+          href: "/netherlands/integration/tools/integration-requirement-checker/",
         },
         unknownsToConfirm: [],
       },
@@ -477,7 +480,7 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
   tools: {
     id: "culture-tools",
     title: "Tools that support integration",
-    subtitle: "Family, partner, and language planners—each opens in the same tool chrome as the Move hub.",
+    subtitle: "Family, partner, and live integration checkers—each opens in the same tool chrome as the Move hub.",
     items: [
       {
         title: "Partner Work Eligibility Checker",
@@ -490,14 +493,14 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         href: "/netherlands/family/tools/childcare-cost-estimator/",
       },
       {
-        title: "Inburgering Timeline Planner",
-        description: "Sketch milestones around exams and obligations (verify legally).",
-        href: "/netherlands/integration/tools/inburgering-timeline-planner/",
+        title: "Integration Requirement Checker",
+        description: "Orientation for obligation vs proof pathways — verify on IND and DUO.",
+        href: "/netherlands/integration/tools/integration-requirement-checker/",
       },
       {
-        title: "KNM Knowledge Quiz",
-        description: "Practice KNM-style questions with feedback loops.",
-        href: "/netherlands/integration/tools/knm-knowledge-quiz/",
+        title: "Inburgering Exam Readiness Checker",
+        description: "Map exam components and calm next steps before you book.",
+        href: "/netherlands/integration/tools/inburgering-exam-readiness-checker/",
       },
     ],
   },

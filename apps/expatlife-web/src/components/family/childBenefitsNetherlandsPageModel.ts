@@ -1,20 +1,20 @@
-export const CHILD_BENEFITS_NETHERLANDS_PATH = "/netherlands/family/child-benefits-netherlands/" as const;
-export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/" as const;
-export const CHILDCARE_COST_ESTIMATOR_PATH = "/netherlands/family/tools/childcare-cost-estimator/" as const;
-export const FAMILY_TOOLS_PATH = "/netherlands/family/tools/" as const;
-export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands/" as const;
-export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands/" as const;
-export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands/" as const;
-export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
-export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family/" as const;
-export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
-export const HEALTHCARE_ALLOWANCE_PATH = "/netherlands/taxes/healthcare-allowance-netherlands/" as const;
-export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/" as const;
-export const RENT_ALLOWANCE_PATH = "/netherlands/taxes/rent-allowance-netherlands/" as const;
-export const DIGID_PATH = "/netherlands/practical-life/digid-netherlands/" as const;
-export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration/" as const;
-export const FAMILY_LIFE_PATH = "/netherlands/culture/family-and-school-culture/" as const;
-export const LEAVING_TAX_PATH = "/netherlands/taxes/leaving-netherlands-tax/" as const;
+export const CHILD_BENEFITS_NETHERLANDS_PATH = "/netherlands/family/child-benefits-netherlands" as const;
+export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands" as const;
+export const CHILDCARE_COST_ESTIMATOR_PATH = "/netherlands/family/tools/childcare-cost-estimator" as const;
+export const FAMILY_TOOLS_PATH = "/netherlands/family/tools" as const;
+export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands" as const;
+export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands" as const;
+export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands" as const;
+export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids" as const;
+export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family" as const;
+export const TAXES_HUB_PATH = "/netherlands/taxes" as const;
+export const HEALTHCARE_ALLOWANCE_PATH = "/netherlands/taxes/healthcare-allowance-netherlands" as const;
+export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands" as const;
+export const RENT_ALLOWANCE_PATH = "/netherlands/taxes/rent-allowance-netherlands" as const;
+export const DIGID_PATH = "/netherlands/practical-life/digid-netherlands" as const;
+export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration" as const;
+export const FAMILY_LIFE_PATH = "/netherlands/culture/family-and-school-culture" as const;
+export const LEAVING_TAX_PATH = "/netherlands/taxes/leaving-netherlands-tax" as const;
 
 export type ChildBenefitsLink = {
   label: string;

@@ -1,6 +1,6 @@
 import type { IncomeType } from "@/src/lib/tools/double-tax-awareness/types";
 
-export const DOUBLE_TAX_CANONICAL = "/netherlands/taxes/tools/double-tax-awareness-tool/";
+export const DOUBLE_TAX_CANONICAL = "/netherlands/taxes/tools/double-tax-awareness-tool";
 export const NL_BASE = "/netherlands";
 
 export const DOUBLE_TAX_FAQ_ITEMS = [

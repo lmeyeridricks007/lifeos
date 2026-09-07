@@ -1,5 +1,5 @@
-export const NET_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/net-salary-netherlands/" as const;
-export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator/" as const;
+export const NET_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/net-salary-netherlands" as const;
+export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator" as const;
 
 export type NetSalaryGuideLink = {
   label: string;

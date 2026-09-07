@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import { ArticleJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     "minimum wage netherlands 2026",
     "eigen risico 2026",
   ],
-  alternates: { canonical: OFFICIAL_FIGURES_PATH },
+  alternates: { canonical: absoluteUrlFromPath(OFFICIAL_FIGURES_PATH)},
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title,
     description,
     type: "article",
-    url: new URL(OFFICIAL_FIGURES_PATH, getSiteOrigin()).toString(),
+    url: absoluteUrlFromPath(OFFICIAL_FIGURES_PATH),
   },
   twitter: {
     card: "summary",
@@ -68,7 +68,7 @@ export default function OfficialFiguresPage() {
             "@type": "Dataset",
             name: title,
             description,
-            url: new URL(OFFICIAL_FIGURES_PATH, baseUrl).toString(),
+            url: absoluteUrlFromPath(OFFICIAL_FIGURES_PATH),
             creator: { "@type": "Organization", name: "ExpatCopilot" },
             temporalCoverage: "2026",
             dateModified: "2026-08-30",

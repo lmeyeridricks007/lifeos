@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { termsPage } from "@/src/data/legal/terms";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
@@ -11,7 +11,7 @@ export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: pageMetadataTitle(termsPage.seo.title),
   description: termsPage.seo.description,
-  alternates: { canonical: "/terms/" },
+  alternates: { canonical: absoluteUrlFromPath("/terms/")},
 };
 
 export default function TermsPage() {

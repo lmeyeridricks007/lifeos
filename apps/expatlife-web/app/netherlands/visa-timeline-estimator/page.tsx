@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,7 +23,7 @@ import { getVisaRelocationMarketingRecommendedCards } from "@/src/lib/recommende
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/visa-timeline-estimator/";
+const canonical = "/netherlands/visa-timeline-estimator";
 const BASE = "/netherlands";
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     title: "Netherlands Visa Timeline Estimator | Estimate Processing and Move Timing",
     description:
       "Estimate how long a Dutch visa or residence route may take, including document prep, official decision periods, travel timing, and first-step relocation planning.",
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
   },
   twitter: {
     card: "summary_large_image",

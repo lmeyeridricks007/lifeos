@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -49,6 +50,7 @@ import {
   citiesFunnelHeroFigureClassName,
 } from "@/src/components/cities/shared/citiesFunnelPageUi";
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
+import { GuideHeroTrustMeta } from "@/src/components/guides/GuideHeroTrustMeta";
 import { BankingRecommendedOptionsSection } from "@/components/banking/BankingRecommendedOptionsSection";
 import { LIVING_PILLAR_ROOT_PATH } from "@/src/components/living/livingPillarContent";
 import {
@@ -641,8 +643,8 @@ export function DrivingLicenceExchangeNetherlandsView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Living", item: new URL(LIVING_PILLAR_ROOT_PATH, baseUrl).toString() },
-          { name: "Driving licence exchange", item: new URL(DRIVING_LICENCE_EXCHANGE_NETHERLANDS_PATH, baseUrl).toString() },
+          { name: "Living", item: absoluteUrlFromPath(LIVING_PILLAR_ROOT_PATH) },
+          { name: "Driving licence exchange", item: absoluteUrlFromPath(DRIVING_LICENCE_EXCHANGE_NETHERLANDS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>
@@ -682,7 +684,15 @@ export function DrivingLicenceExchangeNetherlandsView() {
                         {chip}
                       </span>
                     ))}
+                    {page.lastReviewed ? (
+                      <span className={cn(CITIES_FUNNEL_INFO_CHIP, "shadow-sm ring-1 ring-slate-900/[0.03]")}>
+                        Last reviewed: {page.lastReviewed}
+                      </span>
+                    ) : null}
                   </div>
+                  {page.heroOfficialSources?.length ? (
+                    <GuideHeroTrustMeta className="mt-4" sources={page.heroOfficialSources} />
+                  ) : null}
                   <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                     <Link href={page.hero.primaryCta.href} className={primaryCtaClass}>
                       {page.hero.primaryCta.label}

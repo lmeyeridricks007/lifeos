@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArrowRight } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { BoldInline, BoldParagraph } from "@/components/content/PillarContentBlocks";
@@ -199,12 +200,12 @@ function FamilyShortlistCityCard({ city }: { city: FamiliesShortlistCityVm }) {
 export function BestCitiesForFamiliesView() {
   const baseUrl = getSiteOrigin();
   const CANONICAL = meta.path;
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Cities", item: new URL("/netherlands/cities/", baseUrl).toString() },
-    { name: "Best Dutch Cities for Families", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Best Dutch Cities for Families", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const primaryCtaClass = cn(

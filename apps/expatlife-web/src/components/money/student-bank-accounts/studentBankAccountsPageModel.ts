@@ -22,11 +22,11 @@ import {
 } from "@/src/components/tools/banking-cost/bankingCostPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
-export const STUDENT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/student-accounts/" as const;
+export const STUDENT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/student-accounts" as const;
 
-const BANKING_SECURITY_PATH = "/netherlands/money/banking/security/" as const;
-const ACCOUNT_REJECTION_PATH = "/netherlands/money/banking/account-rejection/" as const;
-const STUDENT_VISA_PATH = "/netherlands/visa/student-visa/" as const;
+const BANKING_SECURITY_PATH = "/netherlands/money/banking/security" as const;
+const ACCOUNT_REJECTION_PATH = "/netherlands/money/banking/account-rejection" as const;
+const STUDENT_VISA_PATH = "/netherlands/visa/student-visa" as const;
 
 export type StudentBankAccountsLink = {
   label: string;

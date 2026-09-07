@@ -7,9 +7,9 @@ import type { TraditionalDigitalComparisonRow } from "./traditionalDigitalCompar
 
 export { bankingFeeCategories, type BankingFeeCategory } from "./bankingFeeCategories";
 
-export const BANKING_FEES_PAGE_PATH = "/netherlands/money/banking/fees/" as const;
-export const BANKING_FEES_BEST_BANKS_PATH = "/netherlands/money/banking/best-banks-expats/" as const;
-export const BANKING_FEES_TRADITIONAL_DIGITAL_PATH = "/netherlands/money/banking/traditional-vs-digital/" as const;
+export const BANKING_FEES_PAGE_PATH = "/netherlands/money/banking/fees" as const;
+export const BANKING_FEES_BEST_BANKS_PATH = "/netherlands/money/banking/best-banks-expats" as const;
+export const BANKING_FEES_TRADITIONAL_DIGITAL_PATH = "/netherlands/money/banking/traditional-vs-digital" as const;
 
 export const bankingFeesComparisonRows: readonly TraditionalDigitalComparisonRow[] = [
   {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { AlertTriangle, ArrowRight, Building2, FileText, HeartPulse } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { GuidePageTemplate } from "@/components/page/page-templates";
@@ -73,10 +74,10 @@ import {
   type EmergenciesInfoCard,
 } from "./emergenciesSafetyContent";
 
-const HEALTHCARE_ALLOWANCE_TOOL_PATH = "/netherlands/taxes/tools/healthcare-allowance-estimator/";
-const CHILDCARE_TOOL_PATH = "/netherlands/family/tools/childcare-cost-estimator/";
-const FIRST_90_DAYS_GUIDE_PATH = "/netherlands/first-90-days-netherlands/";
-const MOVING_WITH_FAMILY_GUIDE_PATH = "/netherlands/moving-to-netherlands-with-family/";
+const HEALTHCARE_ALLOWANCE_TOOL_PATH = "/netherlands/taxes/tools/healthcare-allowance-estimator";
+const CHILDCARE_TOOL_PATH = "/netherlands/family/tools/childcare-cost-estimator";
+const FIRST_90_DAYS_GUIDE_PATH = "/netherlands/first-90-days-netherlands";
+const MOVING_WITH_FAMILY_GUIDE_PATH = "/netherlands/moving-to-netherlands-with-family";
 
 const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
 
@@ -397,12 +398,12 @@ function OfficialSourcesBlock() {
 
 export function EmergenciesSafetyView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(LIVING_EMERGENCIES_SAFETY_PATH, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(LIVING_EMERGENCIES_SAFETY_PATH);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: new URL(LIVING_SURVIVAL_GUIDE_PATH, baseUrl).toString() },
-    { name: "Emergencies & Safety", item: new URL(LIVING_EMERGENCIES_SAFETY_PATH, baseUrl).toString() },
+    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: absoluteUrlFromPath(LIVING_SURVIVAL_GUIDE_PATH) },
+    { name: "Emergencies & Safety", item: absoluteUrlFromPath(LIVING_EMERGENCIES_SAFETY_PATH) },
   ];
 
   const primaryCtaClass = cn(

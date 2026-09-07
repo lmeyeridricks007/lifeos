@@ -119,7 +119,7 @@ export function shouldRequireMegaMenu(path: string): boolean {
 
   if (/^\/netherlands\/moving\/moving-to-netherlands-from\//.test(p)) return false;
   if (/^\/netherlands\/moving\/tools\/[^/]+\/from\//.test(p)) return false;
-  if (/\/tools\/$/.test(p) && p !== "/netherlands/tools/") return false;
+  if (/\/tools\/?$/.test(p) && p !== "/netherlands/tools" && p !== "/netherlands/tools") return false;
   if (LIVE_TOOL_ROUTES.has(p)) return false;
   if (ROOT_VISA_TOOL_PATHS.has(p)) return false;
 

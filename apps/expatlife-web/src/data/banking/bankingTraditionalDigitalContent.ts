@@ -9,9 +9,9 @@ import { banks } from "./banks";
 import { buildTraditionalDigitalComparisonRowsFromBanks } from "./traditionalDigitalComparison";
 
 // --- Paths (reuse across money guides) ---
-export const BANKING_CONTENT_BEST_BANKS_EXPATS_PATH = "/netherlands/money/banking/best-banks-expats/" as const;
-export const BANKING_CONTENT_TRADITIONAL_VS_DIGITAL_PATH = "/netherlands/money/banking/traditional-vs-digital/" as const;
-export const BANKING_CONTENT_TYPES_OF_ACCOUNTS_PATH = "/netherlands/money/banking/types-of-accounts/" as const;
+export const BANKING_CONTENT_BEST_BANKS_EXPATS_PATH = "/netherlands/money/banking/best-banks-expats" as const;
+export const BANKING_CONTENT_TRADITIONAL_VS_DIGITAL_PATH = "/netherlands/money/banking/traditional-vs-digital" as const;
+export const BANKING_CONTENT_TYPES_OF_ACCOUNTS_PATH = "/netherlands/money/banking/types-of-accounts" as const;
 
 // --- Type vs digital comparison (editorial overlay + values synced from `banks`) ---
 export type BankingTypeComparisonRow = {

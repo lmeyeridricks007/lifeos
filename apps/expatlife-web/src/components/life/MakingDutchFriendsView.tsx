@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Children, type ReactNode } from "react";
 import {
@@ -660,8 +661,8 @@ export function MakingDutchFriendsView() {
         crumbs={[
           { name: "Home", item: baseUrl },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Life in the Netherlands", item: new URL(LIFE_HUB_PATH, baseUrl).toString() },
-          { name: "Making Dutch Friends", item: new URL(MAKING_DUTCH_FRIENDS_PATH, baseUrl).toString() },
+          { name: "Life in the Netherlands", item: absoluteUrlFromPath(LIFE_HUB_PATH) },
+          { name: "Making Dutch Friends", item: absoluteUrlFromPath(MAKING_DUTCH_FRIENDS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

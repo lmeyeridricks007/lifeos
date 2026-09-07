@@ -1,11 +1,11 @@
-export const AVERAGE_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/average-salary-netherlands/" as const;
-export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator/" as const;
-export const THIRTY_PERCENT_RULING_CALCULATOR_PATH = "/netherlands/taxes/tools/30-ruling-calculator/" as const;
-export const PAYSLIP_DECODER_PATH = "/netherlands/work/tools/payslip-decoder/" as const;
-export const EMPLOYMENT_TYPE_SCENARIO_TOOL_PATH = "/netherlands/work/tools/employment-type-scenario-tool/" as const;
-export const COST_OF_LIVING_CALCULATOR_PATH = "/netherlands/money/tools/cost-of-living-calculator/" as const;
-export const RENT_AFFORDABILITY_CALCULATOR_PATH = "/netherlands/housing/tools/rent-affordability-calculator/" as const;
-export const TAXES_TOOLS_HUB_PATH = "/netherlands/taxes/tools/" as const;
+export const AVERAGE_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/average-salary-netherlands" as const;
+export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator" as const;
+export const THIRTY_PERCENT_RULING_CALCULATOR_PATH = "/netherlands/taxes/tools/30-ruling-calculator" as const;
+export const PAYSLIP_DECODER_PATH = "/netherlands/work/tools/payslip-decoder" as const;
+export const EMPLOYMENT_TYPE_SCENARIO_TOOL_PATH = "/netherlands/work/tools/employment-type-scenario-tool" as const;
+export const COST_OF_LIVING_CALCULATOR_PATH = "/netherlands/money/tools/cost-of-living-calculator" as const;
+export const RENT_AFFORDABILITY_CALCULATOR_PATH = "/netherlands/housing/tools/rent-affordability-calculator" as const;
+export const TAXES_TOOLS_HUB_PATH = "/netherlands/taxes/tools" as const;
 
 export const AVERAGE_SALARY_TAX_ADVISOR_AFFILIATE_PLACEMENT_ID = "nl-money-tax-advisors-support-providers" as const;
 

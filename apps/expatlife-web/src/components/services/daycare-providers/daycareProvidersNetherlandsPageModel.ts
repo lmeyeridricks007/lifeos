@@ -2,27 +2,27 @@ import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuide
 import { INTERNATIONAL_SCHOOLS_SERVICES_PATH } from "@/src/components/services/international-schools/internationalSchoolsServicesPageModel";
 
 /** Services directory — compare/find daycare / kinderopvang providers for expats. */
-export const DAYCARE_PROVIDERS_SERVICES_PATH = "/netherlands/services/daycare-providers/" as const;
+export const DAYCARE_PROVIDERS_SERVICES_PATH = "/netherlands/services/daycare-providers" as const;
 export const DAYCARE_PROVIDERS_PATH = DAYCARE_PROVIDERS_SERVICES_PATH;
 
 /** Education system guide — owns how Dutch childcare / daycare works. */
-export const DAYCARE_EDUCATION_PATH = "/netherlands/education/daycare-netherlands/" as const;
-export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands/" as const;
-export const BEFORE_SCHOOL_CARE_PATH = "/netherlands/education/before-school-care-netherlands/" as const;
+export const DAYCARE_EDUCATION_PATH = "/netherlands/education/daycare-netherlands" as const;
+export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands" as const;
+export const BEFORE_SCHOOL_CARE_PATH = "/netherlands/education/before-school-care-netherlands" as const;
 export const INTERNATIONAL_SCHOOLS_EDUCATION_PATH =
-  "/netherlands/education/international-schools-netherlands/" as const;
-export const DUTCH_SCHOOLS_EDUCATION_PATH = "/netherlands/education/dutch-schools-netherlands/" as const;
-export const HEALTH_INSURANCE_SERVICES_PATH = "/netherlands/services/health-insurance/" as const;
-export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/" as const;
-export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const BEST_CITIES_FOR_FAMILIES_PATH = "/netherlands/cities/best-cities-for-families/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const RENTAL_AGENCIES_PATH = "/netherlands/services/rental-agencies/" as const;
-export const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents/" as const;
-export const RELOCATION_AGENCIES_PATH = "/netherlands/services/relocation-agencies/" as const;
-export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
-export const CHILDCARE_COST_ESTIMATOR_PATH = "/netherlands/family/tools/childcare-cost-estimator/" as const;
+  "/netherlands/education/international-schools-netherlands" as const;
+export const DUTCH_SCHOOLS_EDUCATION_PATH = "/netherlands/education/dutch-schools-netherlands" as const;
+export const HEALTH_INSURANCE_SERVICES_PATH = "/netherlands/services/health-insurance" as const;
+export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands" as const;
+export const SERVICES_HUB_PATH = "/netherlands/services" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const BEST_CITIES_FOR_FAMILIES_PATH = "/netherlands/cities/best-cities-for-families" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const RENTAL_AGENCIES_PATH = "/netherlands/services/rental-agencies" as const;
+export const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents" as const;
+export const RELOCATION_AGENCIES_PATH = "/netherlands/services/relocation-agencies" as const;
+export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids" as const;
+export const CHILDCARE_COST_ESTIMATOR_PATH = "/netherlands/family/tools/childcare-cost-estimator" as const;
 
 export const DAYCARE_PROVIDERS_AFFILIATE_PLACEMENT_ID =
   "nl-services-daycare-providers-support-providers" as const;

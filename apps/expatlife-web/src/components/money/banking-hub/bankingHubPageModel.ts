@@ -1,6 +1,6 @@
 import type { MovePillarTocItem } from "@/src/components/moving/MovePillarMobileToc";
 
-export const BANKING_HUB_PATH = "/netherlands/money/banking/" as const;
+export const BANKING_HUB_PATH = "/netherlands/money/banking" as const;
 
 /** Unique photorealistic hero for this hub (not shared with tools or best-banks pages). */
 export const bankingHubHeroImage = {

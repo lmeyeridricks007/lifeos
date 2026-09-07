@@ -1,22 +1,22 @@
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 /** Services directory — independent insurance brokers / adviseurs / tussenpersonen for expats. */
-export const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers/" as const;
+export const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers" as const;
 export const INSURANCE_BROKERS_NETHERLANDS_PATH = INSURANCE_BROKERS_PATH;
 
-export const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers/" as const;
-export const HEALTH_INSURANCE_SERVICES_PATH = "/netherlands/services/health-insurance/" as const;
+export const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers" as const;
+export const HEALTH_INSURANCE_SERVICES_PATH = "/netherlands/services/health-insurance" as const;
 export const HEALTH_INSURANCE_COMPARISON_PATH =
-  "/netherlands/health/health-insurance-comparison-netherlands/" as const;
-export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors/" as const;
-export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors/" as const;
-export const NOTARIES_PATH = "/netherlands/services/notaries/" as const;
-export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors/" as const;
-export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const CAR_INSURANCE_PATH = "/netherlands/living/car-insurance-netherlands/" as const;
-export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands/" as const;
-export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as const;
+  "/netherlands/health/health-insurance-comparison-netherlands" as const;
+export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors" as const;
+export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors" as const;
+export const NOTARIES_PATH = "/netherlands/services/notaries" as const;
+export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors" as const;
+export const SERVICES_HUB_PATH = "/netherlands/services" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const CAR_INSURANCE_PATH = "/netherlands/living/car-insurance-netherlands" as const;
+export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands" as const;
+export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands" as const;
 
 export const INSURANCE_BROKERS_AFFILIATE_PLACEMENT_ID =
   "nl-services-insurance-brokers-support-providers" as const;

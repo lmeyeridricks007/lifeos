@@ -1,4 +1,5 @@
 import { Fragment, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import {
   AlertTriangle,
@@ -47,6 +48,7 @@ import { Container } from "@/components/ui/container";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { LivingClusterLinkGrid } from "@/src/components/living/LivingClusterLinkGrid";
+import { GUIDE_CITABILITY_POLICY_LINKS } from "@/src/components/guides/guideCitabilityPolicyLinks";
 import {
   LIVING_CULTURE_ETIQUETTE_PATH,
   LIVING_CLUSTER_SIBLING_LINKS_GETTING_AROUND,
@@ -61,6 +63,7 @@ import {
   LIVING_WEATHER_PATH,
 } from "@/src/components/living/livingPillarContent";
 import { LIVING_TRANSPORT_APP_DOWNLOADS } from "@/src/components/living/livingTransportAppStoreLinks";
+import { GuideHeroTrustMeta } from "@/src/components/guides/GuideHeroTrustMeta";
 import {
   BIKE_SHARING_NETHERLANDS_PATH,
   CYCLING_NETHERLANDS_PATH,
@@ -71,6 +74,7 @@ import {
   REGIONAL_BUSES_NETHERLANDS_PATH,
   TRAMS_NETHERLANDS_PATH,
 } from "@/src/components/living/ov-chipkaart-netherlands/ovChipkaartNetherlandsPageModel";
+import { CITIES_FUNNEL_INFO_CHIP } from "@/src/components/cities/shared/citiesFunnelPageUi";
 import {
   siteGuideColumnPadYClass,
   sitePillarFramedHeroGutterXClass,
@@ -962,13 +966,20 @@ function OfficialSourcesBlock() {
 
 export function GettingAroundView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(LIVING_GETTING_AROUND_PATH, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(LIVING_GETTING_AROUND_PATH);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: new URL(LIVING_SURVIVAL_GUIDE_PATH, baseUrl).toString() },
-    { name: "Getting around", item: new URL(LIVING_GETTING_AROUND_PATH, baseUrl).toString() },
+    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: absoluteUrlFromPath(LIVING_SURVIVAL_GUIDE_PATH) },
+    { name: "Getting around", item: absoluteUrlFromPath(LIVING_GETTING_AROUND_PATH) },
   ];
+
+  const lastReviewed = "7 September 2026";
+  const heroOfficialSources = [
+    { label: "NS — English", href: LIVING_TRANSPORT_APP_DOWNLOADS.ns.web },
+    { label: "OV-chipkaart — English FAQ", href: "https://www.ov-chipkaart.nl/en/frequently-asked-questions" },
+    { label: "9292 — journey planner", href: LIVING_TRANSPORT_APP_DOWNLOADS["9292"].web },
+  ] as const;
 
   const heroBullets: string[] = [
     "Which three apps to install first (and why two beats one)",
@@ -1137,6 +1148,12 @@ export function GettingAroundView() {
                         </li>
                       ))}
                     </ul>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      <span className={cn(CITIES_FUNNEL_INFO_CHIP, "shadow-sm ring-1 ring-slate-900/[0.03]")}>
+                        Last reviewed: {lastReviewed}
+                      </span>
+                    </div>
+                    <GuideHeroTrustMeta className="mt-4" sources={[...heroOfficialSources]} />
                     <div className="mt-4 flex flex-wrap gap-2.5 sm:mt-6 sm:gap-3">
                       <Link href="#start-here" className={primaryCtaClass}>
                         Start here — first days
@@ -1458,6 +1475,18 @@ export function GettingAroundView() {
               subtitle="Transport touches almost every other daily system—stay inside the Living cluster when you want depth without leaving the pillar."
             >
               <LivingClusterLinkGrid items={LIVING_CLUSTER_SIBLING_LINKS_GETTING_AROUND} />
+              <p className="mt-5 text-sm leading-relaxed text-foreground-muted">
+                How we work:{" "}
+                {GUIDE_CITABILITY_POLICY_LINKS.map((link, index) => (
+                  <Fragment key={link.href}>
+                    {index > 0 ? " / " : null}
+                    <Link href={link.href} className="font-medium text-link underline-offset-2 hover:text-link-hover hover:underline">
+                      {link.label}
+                    </Link>
+                  </Fragment>
+                ))}
+                .
+              </p>
             </SectionBlock>
           </PillarGuideNextStepsRegion>
         }

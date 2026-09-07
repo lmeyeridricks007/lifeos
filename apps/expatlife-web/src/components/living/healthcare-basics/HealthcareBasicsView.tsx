@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArrowRight } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { GuidePageTemplate } from "@/components/page/page-templates";
@@ -74,11 +75,11 @@ import {
   type HealthcareServiceRole,
 } from "./healthcareBasicsContent";
 
-const HEALTH_INSURANCE_GUIDE_PATH = "/netherlands/health-insurance-netherlands/";
-const HEALTHCARE_ALLOWANCE_TOOL_PATH = "/netherlands/taxes/tools/healthcare-allowance-estimator/";
-const COST_OF_LIVING_TOOL_PATH = "/netherlands/money/tools/cost-of-living-calculator/";
-const CHILDCARE_TOOL_PATH = "/netherlands/family/tools/childcare-cost-estimator/";
-const FIRST_90_DAYS_GUIDE_PATH = "/netherlands/first-90-days-netherlands/";
+const HEALTH_INSURANCE_GUIDE_PATH = "/netherlands/health-insurance-netherlands";
+const HEALTHCARE_ALLOWANCE_TOOL_PATH = "/netherlands/taxes/tools/healthcare-allowance-estimator";
+const COST_OF_LIVING_TOOL_PATH = "/netherlands/money/tools/cost-of-living-calculator";
+const CHILDCARE_TOOL_PATH = "/netherlands/family/tools/childcare-cost-estimator";
+const FIRST_90_DAYS_GUIDE_PATH = "/netherlands/first-90-days-netherlands";
 
 const SECTION_SCROLL_MARGIN = "scroll-mt-28 md:scroll-mt-32";
 
@@ -362,12 +363,12 @@ function OfficialSourcesBlock() {
 
 export function HealthcareBasicsView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(LIVING_HEALTHCARE_BASICS_PATH, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(LIVING_HEALTHCARE_BASICS_PATH);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: new URL(LIVING_SURVIVAL_GUIDE_PATH, baseUrl).toString() },
-    { name: "Healthcare Basics", item: new URL(LIVING_HEALTHCARE_BASICS_PATH, baseUrl).toString() },
+    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: absoluteUrlFromPath(LIVING_SURVIVAL_GUIDE_PATH) },
+    { name: "Healthcare Basics", item: absoluteUrlFromPath(LIVING_HEALTHCARE_BASICS_PATH) },
   ];
 
   const primaryCtaClass = cn(

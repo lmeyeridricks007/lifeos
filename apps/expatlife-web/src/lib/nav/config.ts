@@ -94,7 +94,7 @@ function buildToolRailForKey(menuKey: TopNavKey): NavItem[] {
     out.push(item(viewAllLabel, viewAllHref));
   }
   if (APPEND_OPEN_TOOLS_HUB.has(menuKey)) {
-    const hasHub = out.some((x) => x.href === "/netherlands/tools/" && x.label === "Open tools hub");
+    const hasHub = out.some((x) => x.href === "/netherlands/tools" && x.label === "Open tools hub");
     if (!hasHub) {
       out.push(item("Open tools hub", "/netherlands/tools/"));
     }
@@ -821,10 +821,10 @@ export const TOP_NAV: TopNavEntry[] = [
   /** No `href` — click opens the mega menu so guides (hub, best, cheapest, tools) stay discoverable. */
   { key: "cities", label: "Cities" },
   { key: "money", label: "Money" },
-  { key: "services", label: "Services", href: "/netherlands/services/" },
+  { key: "services", label: "Services", href: "/netherlands/services" },
   { key: "living", label: "Living" },
   { key: "culture", label: "Culture" },
-  { key: "tools", label: "Tools", href: "/netherlands/tools/" },
+  { key: "tools", label: "Tools", href: "/netherlands/tools" },
 ];
 
 const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
@@ -1898,7 +1898,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
             "/netherlands/education/dutch-schools-netherlands/",
             "Basisschool, secondary pathways, enrolment, language support and comparison with international schools."
           ),
-          soon("Education hub"),
+          item(
+            "Education hub",
+            "/netherlands/education/",
+            "Schools and childcare journey map — Dutch vs international tracks, daycare and wraparound care."
+          ),
           soon("Dutch education system"),
           soon("IB schools Netherlands"),
           soon("British schools Netherlands"),
@@ -2231,6 +2235,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Healthcare",
         items: [
+          item(
+            "Healthcare hub",
+            "/netherlands/health/",
+            "Start here for insurance, huisarts, emergencies, hospitals, mental healthcare and family care pathways."
+          ),
           item(
             "Healthcare basics",
             "/netherlands/living/healthcare-basics/",

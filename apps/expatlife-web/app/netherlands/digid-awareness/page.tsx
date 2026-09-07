@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { notFound } from "next/navigation";
 import { GuidePageTemplate } from "@/src/components/guides/GuidePageTemplate";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
@@ -23,11 +24,11 @@ const metaDescription =
 export const metadata: Metadata = {
   title: String(metaTitle),
   description: String(metaDescription),
-  alternates: { canonical: String("/netherlands/digid-awareness/") },
+  alternates: { canonical: absoluteUrlFromPath(String("/netherlands/digid-awareness/"))},
   openGraph: {
     title: String(metaTitle),
     description: String(metaDescription),
-    url: "/netherlands/digid-awareness/",
+    url: absoluteUrlFromPath("/netherlands/digid-awareness/"),
   },
   twitter: {
     card: "summary_large_image",
@@ -62,8 +63,8 @@ export default async function DigidAwarenessPage() {
 
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Moving", item: new URL("/netherlands/moving-to-the-netherlands/", baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+    { name: "Moving", item: absoluteUrlFromPath("/netherlands/moving-to-the-netherlands/") },
     {
       name: data.breadcrumbLabel ?? data.title,
       item: new URL(data.path, baseUrl).toString(),

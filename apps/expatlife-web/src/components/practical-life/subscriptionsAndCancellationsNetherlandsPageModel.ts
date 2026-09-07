@@ -8,10 +8,10 @@ import {
 import { GOVERNMENT_PORTALS_NETHERLANDS_PATH } from "./governmentPortalsNetherlandsPageModel";
 
 export const SUBSCRIPTIONS_AND_CANCELLATIONS_NETHERLANDS_PATH =
-  "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/" as const;
+  "/netherlands/practical-life/subscriptions-and-cancellations-netherlands" as const;
 
-export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
+export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
 
 export type PracticalLifeLink = {
   label: string;

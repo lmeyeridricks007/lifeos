@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CITY_COST_SEED_AS_OF } from "@/src/lib/authority/cityCostSeedDataset";
 
 const BASE = "/netherlands";
 
@@ -12,6 +13,37 @@ export function CostOfLivingMethodology() {
         This calculator applies <strong>fixed planning coefficients</strong> per city, household size, lifestyle tier, and rent mode. Numbers are rounded to whole euros and meant to show{" "}
         <strong>directional ranges</strong> for expats planning a move — not quotes from landlords, insurers, or schools.
       </p>
+
+      <h3 className="text-lg font-semibold">Methodology at a glance</h3>
+      <ul>
+        <li>
+          <strong>Where data comes from:</strong> ExpatCopilot-owned city midpoints in our editorial seed (as of{" "}
+          {CITY_COST_SEED_AS_OF}) — not CBS price indices or scraped listings.
+        </li>
+        <li>
+          <strong>Calculation approach:</strong> combine city rent bands and non-rent lines with household, lifestyle, and setup coefficients; apply a salary headroom multiplier for a planning net target.
+        </li>
+        <li>
+          <strong>Assumptions:</strong> mid-band rents; essentials-only can lighten leisure lines; health premiums are placeholders; car adds an indicative motoring bundle.
+        </li>
+        <li>
+          <strong>Limitations:</strong> real rents, school fees, and insurer quotes vary widely; this is not financial advice.
+        </li>
+        <li>
+          <strong>Last updated (seed):</strong> {CITY_COST_SEED_AS_OF}.
+        </li>
+      </ul>
+      <p>
+        Machine-readable seed (ExpatCopilot editorial estimates — redistribute with attribution):{" "}
+        <a href="/api/authority/city-cost-seed?format=json" className="font-medium text-copilot-primary hover:underline">
+          JSON
+        </a>
+        {" · "}
+        <a href="/api/authority/city-cost-seed?format=csv" className="font-medium text-copilot-primary hover:underline">
+          CSV
+        </a>
+      </p>
+
       <h3 className="text-lg font-semibold">Housing</h3>
       <p>
         We start from <strong>city rent-band midpoints</strong> (room/shared through three-bed, plus a short-stay band), then apply neighborhood and lifestyle multipliers — not live listing data.{" "}

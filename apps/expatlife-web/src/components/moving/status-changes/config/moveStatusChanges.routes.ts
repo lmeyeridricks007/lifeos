@@ -3,5 +3,5 @@ export const moveStatusChangesRoutes = {
   visasResidency: "/netherlands/moving/visas-residency/",
   residencePermits: "/netherlands/moving/residence-permits/",
   extensionsChanges: "/netherlands/moving/extensions-changes/",
-  canonical: "/netherlands/moving/status-changes/",
+  canonical: "/netherlands/moving/status-changes",
 } as const;

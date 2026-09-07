@@ -1,4 +1,4 @@
-import { THIRTY_PCT_RULES_2026 } from "@/src/lib/tools/thirty-percent-ruling/assumptions";
+import { THIRTY_PCT_RULES_2026, THIRTY_PCT_RULES_2027_PREVIEW } from "@/src/lib/tools/thirty-percent-ruling/assumptions";
 import { MONEY_TAX_GUIDE_OFFICIAL_SOURCES } from "../tax-guide-for-expats/taxGuideOfficialSourceRegistry";
 import type { MovePillarExploreCard } from "@/src/components/moving/MovePillarExploreGrid";
 import type { MovePillarTocItem } from "@/src/components/moving/MovePillarMobileToc";
@@ -435,11 +435,11 @@ export function buildThirtyPercentRulingNlPageModel() {
         ],
       },
       rateFrom2027Preview: {
-        effectiveFrom: "1 January 2027",
-        rate: `${THIRTY_PCT_RULES_2026.facilityPercentFrom2027Preview * 100}%`,
-        title: "27% rate from 2027 — not yet in force",
+        effectiveFrom: THIRTY_PCT_RULES_2027_PREVIEW.expectedFromLabel,
+        rate: `${THIRTY_PCT_RULES_2027_PREVIEW.facilityPercent * 100}%`,
+        title: "27% rate from 2027 — not yet final",
         body:
-          "The government has stated that the expat scheme allowance will reduce from 30% to 27% from 1 January 2027 for most people who entered the scheme after 2023. This does not apply to 2026 payroll — treat 30% as the current statutory rate until that date. Use the 30% ruling calculator’s 2027 preview toggle for planning comparisons only.",
+          `business.gov.nl cites a reduction from 30% to 27% from ${THIRTY_PCT_RULES_2027_PREVIEW.expectedFromLabel} for most people who entered the scheme after 2023, with raised income norms €${THIRTY_PCT_RULES_2027_PREVIEW.thresholdStandardAnnual.toLocaleString("en-NL")} (standard) and €${THIRTY_PCT_RULES_2027_PREVIEW.thresholdUnder30MastersAnnual.toLocaleString("en-NL")} (under 30 + master’s). The effective date is not yet final — this does not apply to 2026 payroll. Use the 30% ruling calculator’s 2027 preview toggle for planning comparisons only.`,
       },
       partialForeignTaxpayer: {
         title: "Partial foreign taxpayer status (Box 2 / Box 3)",
@@ -465,7 +465,7 @@ export function buildThirtyPercentRulingNlPageModel() {
       subtitle: "Parameters move — official pages and tool tax-year selectors beat forums.",
       paragraphs: [
         "For tax year 2026 the statutory facility rate remains 30% on eligible compensation within caps — the dated norms table above reflects Belastingdienst figures effective from 1 January 2026.",
-        "From 1 January 2027 the government has announced a reduction to 27% for most post-2023 entrants — that rate is not yet in force. Use calculator preview modes for what-if planning, not as current payroll law.",
+        "From 1 January 2027 business.gov.nl cites a reduction to 27% for most post-2023 entrants with raised norms €50,436 / €38,388 — effective date not yet final. Use calculator preview modes for what-if planning, not as current payroll law.",
         "Partial foreign taxpayer status for Box 2 and Box 3 generally ended for 2025 returns; transitional rules may still touch pre-2024 users through 2026 — read Belastingdienst for your entry year.",
       ],
     },

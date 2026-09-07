@@ -3,13 +3,13 @@ import { GOVERNMENT_PORTALS_NETHERLANDS_PATH } from "./governmentPortalsNetherla
 import { MUNICIPALITY_SERVICES_NETHERLANDS_PATH } from "./municipalityServicesNetherlandsPageModel";
 
 export const PRIVACY_AND_SAFETY_BASICS_NETHERLANDS_PATH =
-  "/netherlands/practical-life/privacy-and-safety-basics-netherlands/" as const;
+  "/netherlands/practical-life/privacy-and-safety-basics-netherlands" as const;
 
-export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const OPEN_BANK_ACCOUNT_PATH = "/netherlands/open-bank-account-netherlands/" as const;
-export const MONEY_BANKING_PATH = "/netherlands/money/banking/" as const;
-export const GOVERNMENT_SERVICES_HUB_PATH = "/netherlands/government-services/" as const;
+export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const OPEN_BANK_ACCOUNT_PATH = "/netherlands/open-bank-account-netherlands" as const;
+export const MONEY_BANKING_PATH = "/netherlands/money/banking" as const;
+export const GOVERNMENT_SERVICES_HUB_PATH = "/netherlands/government-services" as const;
 
 export type PracticalLifeLink = {
   label: string;

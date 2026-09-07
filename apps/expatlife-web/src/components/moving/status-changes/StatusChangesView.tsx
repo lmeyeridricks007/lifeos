@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { BoldParagraph } from "@/components/content/PillarContentBlocks";
@@ -78,12 +79,12 @@ const STATUS_CHANGES_INSTRUCTIONAL = getVisasResidencyInstructionalFigure("statu
 
 export function StatusChangesView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Moving", item: new URL(HUB, baseUrl).toString() },
-    { name: "Status Changes", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Status Changes", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const primaryCtaClass = cn(

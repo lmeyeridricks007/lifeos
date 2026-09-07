@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { toSiteHref } from "@/lib/seo/site-url";
 import { Container } from "@/components/ui/container";
 import { CookieSettingsLink } from "@/src/components/cookies/CookieSettingsLink";
 import { FOOTER_GROUPS } from "@/src/data/site/footer-links";
@@ -23,7 +24,7 @@ export function Footer({ contentVersion }: FooterProps) {
             <h3 className={footerHeadingClass}>{FOOTER_GROUPS.company.title}</h3>
             <div className="mt-4 space-y-1" suppressHydrationWarning>
               {FOOTER_GROUPS.company.links.map((link) => (
-                <Link key={link.href} href={link.href} className={footerLinkClass}>
+                <Link key={link.href} href={toSiteHref(link.href)} className={footerLinkClass}>
                   {link.label}
                 </Link>
               ))}
@@ -38,7 +39,7 @@ export function Footer({ contentVersion }: FooterProps) {
             <h3 className={footerHeadingClass}>{FOOTER_GROUPS.trust.title}</h3>
             <div className="mt-4 space-y-1" suppressHydrationWarning>
               {FOOTER_GROUPS.trust.links.map((link) => (
-                <Link key={link.href} href={link.href} className={footerLinkClass}>
+                <Link key={link.href} href={toSiteHref(link.href)} className={footerLinkClass}>
                   {link.label}
                 </Link>
               ))}
@@ -48,7 +49,7 @@ export function Footer({ contentVersion }: FooterProps) {
             <h3 className={footerHeadingClass}>{FOOTER_GROUPS.legal.title}</h3>
             <div className="mt-4 space-y-1" suppressHydrationWarning>
               {FOOTER_GROUPS.legal.links.map((link) => (
-                <Link key={link.href} href={link.href} className={footerLinkClass}>
+                <Link key={link.href} href={toSiteHref(link.href)} className={footerLinkClass}>
                   {link.label}
                 </Link>
               ))}
@@ -58,7 +59,7 @@ export function Footer({ contentVersion }: FooterProps) {
             <h3 className={footerHeadingClass}>{FOOTER_GROUPS.explore.title}</h3>
             <div className="mt-4 space-y-1" suppressHydrationWarning>
               {FOOTER_GROUPS.explore.links.map((link) => (
-                <Link key={link.href} href={link.href} className={footerLinkClass}>
+                <Link key={link.href} href={toSiteHref(link.href)} className={footerLinkClass}>
                   {link.label}
                 </Link>
               ))}

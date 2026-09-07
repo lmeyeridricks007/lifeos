@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArrowRight, Banknote, Scale, TrendingUp, type LucideIcon } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { BoldInline, BoldParagraph } from "@/components/content/PillarContentBlocks";
@@ -195,12 +196,12 @@ function ShortlistCityCard({ city }: { city: CheapestShortlistCityVm }) {
 export function CheapestCitiesForExpatsView() {
   const baseUrl = getSiteOrigin();
   const CANONICAL = meta.path;
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Cities", item: new URL("/netherlands/cities/", baseUrl).toString() },
-    { name: "Cheapest Cities for Expats", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Cheapest Cities for Expats", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const primaryCtaClass = cn(

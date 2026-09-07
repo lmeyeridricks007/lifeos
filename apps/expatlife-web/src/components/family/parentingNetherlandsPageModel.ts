@@ -1,17 +1,17 @@
-export const PARENTING_NETHERLANDS_PATH = "/netherlands/family/parenting-netherlands/" as const;
-export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands/" as const;
-export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands/" as const;
-export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands/" as const;
-export const BEFORE_SCHOOL_CARE_PATH = "/netherlands/education/before-school-care-netherlands/" as const;
-export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands/" as const;
-export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands/" as const;
-export const MOVING_WITH_CHILDREN_PATH = "/netherlands/family/moving-with-children-netherlands/" as const;
-export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
-export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/" as const;
-export const FAMILY_LIFE_PATH = "/netherlands/family/family-life-netherlands/" as const;
-export const HOUSING_COSTS_PATH = "/netherlands/housing/housing-costs-netherlands/" as const;
-export const BEST_CITIES_FOR_FAMILIES_PATH = "/netherlands/cities/best-cities-for-families/" as const;
-export const FAMILY_TOOLS_PATH = "/netherlands/family/tools/" as const;
+export const PARENTING_NETHERLANDS_PATH = "/netherlands/family/parenting-netherlands" as const;
+export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands" as const;
+export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands" as const;
+export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands" as const;
+export const BEFORE_SCHOOL_CARE_PATH = "/netherlands/education/before-school-care-netherlands" as const;
+export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands" as const;
+export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands" as const;
+export const MOVING_WITH_CHILDREN_PATH = "/netherlands/family/moving-with-children-netherlands" as const;
+export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids" as const;
+export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands" as const;
+export const FAMILY_LIFE_PATH = "/netherlands/family/family-life-netherlands" as const;
+export const HOUSING_COSTS_PATH = "/netherlands/housing/housing-costs-netherlands" as const;
+export const BEST_CITIES_FOR_FAMILIES_PATH = "/netherlands/cities/best-cities-for-families" as const;
+export const FAMILY_TOOLS_PATH = "/netherlands/family/tools" as const;
 
 export type ParentingLink = {
   label: string;

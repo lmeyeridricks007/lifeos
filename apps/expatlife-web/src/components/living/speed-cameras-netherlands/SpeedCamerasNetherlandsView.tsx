@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -634,8 +635,8 @@ export function SpeedCamerasNetherlandsView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Living", item: new URL(LIVING_PILLAR_ROOT_PATH, baseUrl).toString() },
-          { name: "Speed cameras", item: new URL(SPEED_CAMERAS_NETHERLANDS_PATH, baseUrl).toString() },
+          { name: "Living", item: absoluteUrlFromPath(LIVING_PILLAR_ROOT_PATH) },
+          { name: "Speed cameras", item: absoluteUrlFromPath(SPEED_CAMERAS_NETHERLANDS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

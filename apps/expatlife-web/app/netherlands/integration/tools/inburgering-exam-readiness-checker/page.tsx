@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { MoveHero } from "@/components/page/move-shell";
 import { buildBreadcrumbSchema } from "@/src/lib/seo/breadcrumbSchema";
@@ -31,7 +31,7 @@ const META_DESCRIPTION =
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: EXAM_READINESS_CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(EXAM_READINESS_CANONICAL)},
   keywords: [
     "inburgering exam readiness",
     "KNM exam Netherlands",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     url: EXAM_READINESS_CANONICAL,
     images: [
       {
-        url: "/images/heroes/highly-skilled-migrant-netherlands.png",
+        url: absoluteUrlFromPath("/images/heroes/highly-skilled-migrant-netherlands.png"),
         width: 1200,
         height: 630,
         alt: "Inburgering exam readiness planning for language and KNM modules in the Netherlands.",
@@ -71,7 +71,7 @@ function resolveRelatedGuides() {
 
 export default function InburgeringExamReadinessCheckerPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(EXAM_READINESS_CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(EXAM_READINESS_CANONICAL);
   const relatedGuides = resolveRelatedGuides();
 
   const breadcrumbJsonLd = buildBreadcrumbSchema([

@@ -27,10 +27,11 @@ import { buildSocialMetadata } from "@/lib/seo/metadata";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
+import { ToolOriginCountryVersionsSection } from "@/src/components/tools/shared/ToolOriginCountryVersionsSection";
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/moving/tools/first-90-days/";
+const canonical = "/netherlands/moving/tools/first-90-days";
 
 export const metadata: Metadata = buildSocialMetadata({
   title: "First 90 days in the Netherlands planner (free tool)",
@@ -158,6 +159,9 @@ export default async function First90DaysToolPage(props: PageProps) {
           ) : null
         }
         faqItems={faq}
+                extraSection={
+          <ToolOriginCountryVersionsSection toolSlug="first-90-days" />
+        }
         relatedGuides={FIRST_90_DAYS_RELATED_GUIDES}
         internalLinkStrip={
           <nav className="flex flex-wrap gap-4 text-sm" aria-label="Moving hub, main guide, and related tools">

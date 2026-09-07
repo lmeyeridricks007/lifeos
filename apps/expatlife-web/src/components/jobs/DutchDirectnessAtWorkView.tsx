@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Children, type ReactNode } from "react";
 import {
@@ -547,8 +548,8 @@ export function DutchDirectnessAtWorkView() {
         crumbs={[
           { name: "Home", item: baseUrl },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Jobs", item: new URL(JOBS_HUB_PATH, baseUrl).toString() },
-          { name: "Dutch workplace culture", item: new URL(DUTCH_WORKPLACE_CULTURE_PATH, baseUrl).toString() },
+          { name: "Jobs", item: absoluteUrlFromPath(JOBS_HUB_PATH) },
+          { name: "Dutch workplace culture", item: absoluteUrlFromPath(DUTCH_WORKPLACE_CULTURE_PATH) },
           { name: "Dutch directness at work", item: new URL(page.path, baseUrl).toString() },
         ]}
       />

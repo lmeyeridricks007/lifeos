@@ -91,9 +91,9 @@ export function ToolHubTemplate({ category, liveTools, comingSoonTools, relatedG
             label: "Extensions and changes",
             description: "Permit changes before you exit or if your plans shift.",
           },
-          ...longTermStayNextSteps.filter((step) => step.href !== "/netherlands/citizenship/tools/"),
+          ...longTermStayNextSteps.filter((step) => step.href !== "/netherlands/citizenship/tools"),
         ]
-      : longTermStayNextSteps.filter((step) => step.href !== "/netherlands/citizenship/tools/");
+      : longTermStayNextSteps.filter((step) => step.href !== "/netherlands/citizenship/tools");
 
   return (
     <ClusterHubPageTemplate

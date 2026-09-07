@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { notFound } from "next/navigation";
 import { GuidePageTemplate } from "@/src/components/guides/GuidePageTemplate";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   description: String(
     "A practical guide to translating foreign documents for use in the Netherlands, including when translation is required, which languages are accepted, sworn translators, legalisation order, costs, and common mistakes."
   ),
-  alternates: { canonical: String("/netherlands/document-translation-netherlands/") },
+  alternates: { canonical: absoluteUrlFromPath(String("/netherlands/document-translation-netherlands/"))},
   openGraph: {
     title: String("Document Translation in the Netherlands | Sworn Translation, Legalisation, Costs"),
     description: String(
@@ -84,8 +85,8 @@ export default function DocumentTranslationPage() {
 
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Moving", item: new URL("/netherlands/moving-to-the-netherlands/", baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+    { name: "Moving", item: absoluteUrlFromPath("/netherlands/moving-to-the-netherlands/") },
     {
       name: mergedData.breadcrumbLabel ?? mergedData.title,
       item: new URL(mergedData.path, baseUrl).toString(),

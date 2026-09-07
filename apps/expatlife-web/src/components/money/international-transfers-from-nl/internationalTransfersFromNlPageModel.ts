@@ -21,7 +21,7 @@ import { INTERNATIONAL_TRANSFERS_FROM_NL_PATH } from "./internationalTransfersFr
 
 export { INTERNATIONAL_TRANSFERS_FROM_NL_PATH };
 
-export const TYPES_OF_ACCOUNTS_PATH = "/netherlands/money/banking/types-of-accounts/" as const;
+export const TYPES_OF_ACCOUNTS_PATH = "/netherlands/money/banking/types-of-accounts" as const;
 
 export type InternationalTransfersLink = {
   label: string;

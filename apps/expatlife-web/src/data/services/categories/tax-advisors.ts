@@ -1,12 +1,12 @@
-export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors/" as const;
-export const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies/" as const;
-export const REMOVAL_COMPANIES_PATH = "/netherlands/services/removal-companies/" as const;
-export const RELOCATION_AGENCIES_PATH = "/netherlands/services/relocation-agencies/" as const;
-export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services/" as const;
-export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors/" as const;
-export const RECRUITMENT_AGENCIES_SERVICES_PATH = "/netherlands/services/recruitment-agencies/" as const;
-export const HOUSING_PLATFORMS_PATH = "/netherlands/services/housing-platforms/" as const;
-export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers/" as const;
+export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors" as const;
+export const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies" as const;
+export const REMOVAL_COMPANIES_PATH = "/netherlands/services/removal-companies" as const;
+export const RELOCATION_AGENCIES_PATH = "/netherlands/services/relocation-agencies" as const;
+export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services" as const;
+export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors" as const;
+export const RECRUITMENT_AGENCIES_SERVICES_PATH = "/netherlands/services/recruitment-agencies" as const;
+export const HOUSING_PLATFORMS_PATH = "/netherlands/services/housing-platforms" as const;
+export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers" as const;
 
 export const TAX_ADVISORS_AFFILIATE_PLACEMENT_ID =
   "nl-services-tax-advisors-support-providers" as const;

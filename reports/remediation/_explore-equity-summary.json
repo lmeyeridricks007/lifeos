@@ -1,0 +1,311 @@
+{
+  "netherlands_pages_simulated": 439,
+  "before": {
+    "explore_targets": 23,
+    "links_per_page": 23,
+    "max_explore_inlinks": 439,
+    "median_explore_inlinks_among_targets": 439,
+    "gini_among_targets": 0,
+    "top5_share_of_explore_equity": 0.217,
+    "most_linked": [
+      {
+        "href": "/netherlands/moving-to-the-netherlands",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/moving/visas-residency",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/moving/working-in-the-netherlands",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/moving/changing-jobs-netherlands",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/moving/resigning-job-netherlands",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/moving/layoffs-netherlands",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/moving/twv-work-permit",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/moving/residence-permits",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/moving/extensions-changes",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/moving/status-changes",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/cities",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/cities/best-cities-for-expats",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/cities/best-cities-for-families",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/cities/cheapest-cities-for-expats",
+        "explore_inlinks": 439
+      },
+      {
+        "href": "/netherlands/tools/city-comparison",
+        "explore_inlinks": 439
+      }
+    ]
+  },
+  "after": {
+    "distinct_explore_targets": 204,
+    "avg_links_per_page": 7.54,
+    "max_explore_inlinks": 438,
+    "median_explore_inlinks_among_targets": 1,
+    "gini_among_targets": 0.784,
+    "top5_share_of_explore_equity": 0.358,
+    "most_linked": [
+      {
+        "href": "/netherlands/moving-to-the-netherlands",
+        "explore_inlinks": 438
+      },
+      {
+        "href": "/netherlands/cities",
+        "explore_inlinks": 438
+      },
+      {
+        "href": "/netherlands/moving/tools/moving-checklist",
+        "explore_inlinks": 105
+      },
+      {
+        "href": "/netherlands/taxes/tools/dutch-salary-net-calculator",
+        "explore_inlinks": 103
+      },
+      {
+        "href": "/netherlands/tools/city-comparison",
+        "explore_inlinks": 102
+      },
+      {
+        "href": "/netherlands/tools",
+        "explore_inlinks": 95
+      },
+      {
+        "href": "/netherlands/visa-checker",
+        "explore_inlinks": 90
+      },
+      {
+        "href": "/netherlands/after-arriving-netherlands",
+        "explore_inlinks": 85
+      },
+      {
+        "href": "/netherlands/moving/tools/arrival-planner",
+        "explore_inlinks": 82
+      },
+      {
+        "href": "/netherlands/money/tools/cost-of-living-calculator",
+        "explore_inlinks": 78
+      },
+      {
+        "href": "/netherlands/bsn-registration",
+        "explore_inlinks": 76
+      },
+      {
+        "href": "/netherlands/municipality-registration-netherlands",
+        "explore_inlinks": 76
+      },
+      {
+        "href": "/netherlands/first-90-days-netherlands",
+        "explore_inlinks": 67
+      },
+      {
+        "href": "/netherlands/moving/tools/first-90-days",
+        "explore_inlinks": 67
+      },
+      {
+        "href": "/netherlands/living/survival-guide",
+        "explore_inlinks": 65
+      }
+    ],
+    "cluster_edge_counts": {
+      "tools": 465,
+      "first_90_days": 402,
+      "country_origin": 182,
+      "culture": 170,
+      "tax": 156,
+      "cities": 147,
+      "living": 98,
+      "banking": 95,
+      "moving": 89,
+      "jobs": 86,
+      "health": 78,
+      "visas": 73,
+      "default": 72,
+      "services": 70,
+      "family": 51,
+      "practical_life": 42,
+      "housing": 41,
+      "education": 32,
+      "working": 28,
+      "transport": 15,
+      "utilities": 13,
+      "citizenship": 12,
+      "integration": 9,
+      "leaving": 7
+    }
+  },
+  "examples": [
+    {
+      "path": "/netherlands/taxes/30-percent-ruling",
+      "cluster": "tax",
+      "linkCount": 8,
+      "links": [
+        "Move to the Netherlands (global: /netherlands/moving-to-the-netherlands)",
+        "Dutch cities (global: /netherlands/cities)",
+        "Gross vs net salary (cluster: /netherlands/taxes/gross-vs-net-salary)",
+        "Net salary calculator (cluster: /netherlands/taxes/tools/dutch-salary-net-calculator)",
+        "Payslip decoder (cluster: /netherlands/work/tools/payslip-decoder)",
+        "Healthcare allowance (cluster: /netherlands/taxes/healthcare-allowance-netherlands)",
+        "How taxes work (cluster: /netherlands/money/how-taxes-work-in-the-netherlands)",
+        "Average salary (cluster: /netherlands/taxes/average-salary-netherlands)"
+      ]
+    },
+    {
+      "path": "/netherlands/amsterdam",
+      "cluster": "cities",
+      "linkCount": 8,
+      "links": [
+        "Move to the Netherlands (global: /netherlands/moving-to-the-netherlands)",
+        "Dutch cities (global: /netherlands/cities)",
+        "Cost of living (cluster: /netherlands/money/cost-of-living-netherlands)",
+        "Amsterdam vs Rotterdam (cluster: /netherlands/cities/amsterdam-vs-rotterdam)",
+        "Housing in the Netherlands (cluster: /netherlands/housing)",
+        "Getting around (cluster: /netherlands/living/getting-around)",
+        "City comparison tool (cluster: /netherlands/tools/city-comparison)",
+        "Best cities for expats (cluster: /netherlands/cities/best-cities-for-expats)"
+      ]
+    },
+    {
+      "path": "/netherlands/moving/moving-to-netherlands-from/south-africa",
+      "cluster": "country_origin",
+      "linkCount": 8,
+      "links": [
+        "Move to the Netherlands (global: /netherlands/moving-to-the-netherlands)",
+        "Dutch cities (global: /netherlands/cities)",
+        "Moving checklist for your country (cluster: /netherlands/moving/tools/moving-checklist/from/south-africa)",
+        "Document readiness for your country (cluster: /netherlands/moving/tools/document-readiness/from/south-africa)",
+        "Arrival planner for your country (cluster: /netherlands/moving/tools/arrival-planner/from/south-africa)",
+        "First 90 days for your country (cluster: /netherlands/moving/tools/first-90-days/from/south-africa)",
+        "Visas & residency (cluster: /netherlands/moving/visas-residency)",
+        "Documents needed to move (cluster: /netherlands/documents-needed-to-move-netherlands)"
+      ]
+    },
+    {
+      "path": "/netherlands/health/gp-netherlands",
+      "cluster": "health",
+      "linkCount": 7,
+      "links": [
+        "Move to the Netherlands (global: /netherlands/moving-to-the-netherlands)",
+        "Dutch cities (global: /netherlands/cities)",
+        "Healthcare hub (cluster: /netherlands/health)",
+        "Health insurance guide (cluster: /netherlands/health-insurance-netherlands)",
+        "Pharmacies (cluster: /netherlands/health/pharmacies-netherlands)",
+        "Emergency healthcare (cluster: /netherlands/health/emergency-healthcare-netherlands)",
+        "Hospitals (cluster: /netherlands/health/hospitals-netherlands)"
+      ]
+    },
+    {
+      "path": "/netherlands/housing/housing-costs-netherlands",
+      "cluster": "housing",
+      "linkCount": 6,
+      "links": [
+        "Move to the Netherlands (global: /netherlands/moving-to-the-netherlands)",
+        "Dutch cities (global: /netherlands/cities)",
+        "Housing hub (cluster: /netherlands/housing)",
+        "Rental contracts & deposits (cluster: /netherlands/housing/rental-contracts-and-deposits-netherlands)",
+        "Rent affordability calculator (cluster: /netherlands/housing/tools/rent-affordability-calculator)",
+        "Housing platforms (cluster: /netherlands/services/housing-platforms)"
+      ]
+    },
+    {
+      "path": "/netherlands/jobs/finding-jobs-netherlands",
+      "cluster": "jobs",
+      "linkCount": 7,
+      "links": [
+        "Move to the Netherlands (global: /netherlands/moving-to-the-netherlands)",
+        "Dutch cities (global: /netherlands/cities)",
+        "Expat salary (cluster: /netherlands/jobs/expat-salary-netherlands)",
+        "Workplace culture (cluster: /netherlands/jobs/dutch-workplace-culture)",
+        "Employment contracts (cluster: /netherlands/jobs/employment-contract-netherlands)",
+        "Gross vs net salary (cluster: /netherlands/taxes/gross-vs-net-salary)",
+        "Working orientation (cluster: /netherlands/moving/working-in-the-netherlands)"
+      ]
+    },
+    {
+      "path": "/netherlands/living/survival-guide",
+      "cluster": "living",
+      "linkCount": 7,
+      "links": [
+        "Move to the Netherlands (global: /netherlands/moving-to-the-netherlands)",
+        "Dutch cities (global: /netherlands/cities)",
+        "Getting around (cluster: /netherlands/living/getting-around)",
+        "Daily life basics (cluster: /netherlands/living/daily-life)",
+        "Essential apps (cluster: /netherlands/living/apps)",
+        "Language & phrases (cluster: /netherlands/living/language)",
+        "Services for expats (cluster: /netherlands/services)"
+      ]
+    },
+    {
+      "path": "/netherlands/services",
+      "cluster": "services",
+      "linkCount": 6,
+      "links": [
+        "Move to the Netherlands (global: /netherlands/moving-to-the-netherlands)",
+        "Dutch cities (global: /netherlands/cities)",
+        "Relocation agencies (cluster: /netherlands/services/relocation-agencies)",
+        "Immigration lawyers (cluster: /netherlands/services/immigration-lawyers)",
+        "Housing platforms (cluster: /netherlands/services/housing-platforms)",
+        "Tax advisors (cluster: /netherlands/services/tax-advisors)"
+      ]
+    },
+    {
+      "path": "/netherlands/money/banking/best-banks-expats",
+      "cluster": "banking",
+      "linkCount": 6,
+      "links": [
+        "Move to the Netherlands (global: /netherlands/moving-to-the-netherlands)",
+        "Dutch cities (global: /netherlands/cities)",
+        "Open a bank account (cluster: /netherlands/open-bank-account-netherlands)",
+        "Banking fees (cluster: /netherlands/money/banking/fees)",
+        "Bank comparison (cluster: /netherlands/tools/bank-comparison)",
+        "Banking hub (cluster: /netherlands/money/banking)"
+      ]
+    },
+    {
+      "path": "/netherlands/moving/visas-residency",
+      "cluster": "visas",
+      "linkCount": 7,
+      "links": [
+        "Move to the Netherlands (global: /netherlands/moving-to-the-netherlands)",
+        "Dutch cities (global: /netherlands/cities)",
+        "Highly skilled migrant (cluster: /netherlands/visa/highly-skilled-migrant)",
+        "Visa checker (cluster: /netherlands/visa-checker)",
+        "Residence permits (cluster: /netherlands/moving/residence-permits)",
+        "Partner & family visa (cluster: /netherlands/visa/partner-family-visa)",
+        "Moving checklist (cluster: /netherlands/moving/tools/moving-checklist)"
+      ]
+    }
+  ]
+}

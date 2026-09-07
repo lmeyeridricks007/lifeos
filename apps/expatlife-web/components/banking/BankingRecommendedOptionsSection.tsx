@@ -6,7 +6,7 @@ import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates"
 import { withPartnerReferralUtms, utmContentFromPath } from "@/lib/analytics/referral-utm";
 import { cn } from "@/lib/cn";
 
-const DEFAULT_UTM_REFERRER_PATH = "/netherlands/money/banking/best-banks-expats/" as const;
+const DEFAULT_UTM_REFERRER_PATH = "/netherlands/money/banking/best-banks-expats" as const;
 
 const CTA_SOFT =
   "inline-flex min-h-9 w-full max-w-full items-center justify-center rounded-lg border border-border bg-surface-raised px-3 py-2 text-sm font-medium text-foreground shadow-sm transition hover:border-border-strong hover:bg-surface-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas sm:w-auto";

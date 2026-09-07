@@ -1,4 +1,4 @@
-export const CITY_COMPARISON_CANONICAL = "/netherlands/tools/city-comparison/";
+export const CITY_COMPARISON_CANONICAL = "/netherlands/tools/city-comparison";
 export const NL_BASE = "/netherlands";
 
 /** Short crawlable lead for “at a glance” (natural-language intents, no keyword stuffing). */

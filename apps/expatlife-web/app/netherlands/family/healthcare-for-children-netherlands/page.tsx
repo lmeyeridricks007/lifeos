@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import { ArticleJsonLd, FaqPageJsonLd, HowToJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { HealthcareForChildrenNetherlandsView } from "@/src/components/family/HealthcareForChildrenNetherlandsView";
@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
-  alternates: { canonical: path },
+  alternates: { canonical: absoluteUrlFromPath(path)},
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   openGraph: {
     title: seo.title,
     description: seo.description,
     type: "article",
-    url: new URL(path, baseUrl).toString(),
+    url: absoluteUrlFromPath(path),
     images: [{ url: hero.image.src, alt: hero.image.alt }],
   },
   twitter: {
@@ -37,7 +37,7 @@ function CollectionPageJsonLd() {
     "@type": "CollectionPage",
     name: hero.pageTitle,
     description: seo.description,
-    url: new URL(path, baseUrl).toString(),
+    url: absoluteUrlFromPath(path),
     datePublished: publishDate,
     isPartOf: {
       "@type": "WebSite",
@@ -60,7 +60,7 @@ export default function HealthcareForChildrenNetherlandsPage() {
       <WebPageJsonLd name={hero.pageTitle} description={seo.description} urlPath={path} datePublished={publishDate} />
       <ArticleJsonLd headline={hero.pageTitle} description={seo.description} dateModified={publishDate} urlPath={path} />
       <CollectionPageJsonLd />
-      <FaqPageJsonLd items={page.faq.map((item) => ({ q: item.q, a: item.a }))} url={new URL(path, baseUrl).toString()} />
+      <FaqPageJsonLd items={page.faq.map((item) => ({ q: item.q, a: item.a }))} url={absoluteUrlFromPath(path)} />
       <HowToJsonLd
         name={page.howToSchema.name}
         description={page.howToSchema.description}

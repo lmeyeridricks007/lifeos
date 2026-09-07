@@ -10,7 +10,7 @@ import type {
 } from "./moveVisaResidency.types";
 
 const HUB = "/netherlands/moving-to-the-netherlands/";
-const CANONICAL = "/netherlands/moving/visas-residency/";
+const CANONICAL = "/netherlands/moving/visas-residency";
 
 /** Route selector — “Start here” doorway cards */
 export const moveVisaResidencyRouteCards: MoveVisaResidencyRouteCard[] = [

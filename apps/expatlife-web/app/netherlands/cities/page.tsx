@@ -31,7 +31,7 @@ import {
 import { filterLiveInternalLinks, isRouteLive } from "@/src/lib/routes/routeStatus";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import { cn } from "@/lib/cn";
 import { siteGuideColumnPadYClass } from "@/lib/ui/site-shell-identity";
 import {
@@ -126,12 +126,12 @@ export const metadata: Metadata = {
   title: pageMetadataTitle(data.seo.title),
   description: data.seo.description,
   keywords: data.seo.keywords,
-  alternates: { canonical: path },
+  alternates: { canonical: absoluteUrlFromPath(path)},
   openGraph: {
     title: shareTitle,
     description: data.seo.description,
     type: "article",
-    url: path,
+    url: absoluteUrlFromPath(path),
   },
   twitter: {
     card: "summary_large_image",
@@ -146,8 +146,8 @@ export default function NetherlandsCitiesPage() {
   const officialSources: CityOfficialSource[] = data.officialSources;
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Cities", item: new URL(path, baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands/") },
+    { name: "Cities", item: absoluteUrlFromPath(path) },
   ];
   const dateModified = data.publishDate;
   const hubServices = filterLiveInternalLinks(data.hubServiceLinks ?? []);
@@ -171,7 +171,7 @@ export default function NetherlandsCitiesPage() {
       ? data.tocItems
       : data.tocItems.filter((t) => t.id !== "coming-soon-cities");
 
-  const canonicalUrl = new URL(path, baseUrl).toString();
+  const canonicalUrl = absoluteUrlFromPath(path);
   const toolStrip = (data.tools ?? [])
     .filter((t) => t.status !== "coming_soon" && isRouteLive(t.href))
     .slice(0, 5);

@@ -1,17 +1,17 @@
 import { rentAllowanceReference2026 } from "./rentAllowanceReference2026";
 
-export const RENT_ALLOWANCE_NETHERLANDS_PATH = "/netherlands/taxes/rent-allowance-netherlands/" as const;
-export const HEALTHCARE_ALLOWANCE_NETHERLANDS_PATH = "/netherlands/taxes/healthcare-allowance-netherlands/" as const;
-export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const RENT_AFFORDABILITY_TOOL_PATH = "/netherlands/housing/tools/rent-affordability-calculator/" as const;
-export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/taxes/expat-taxes-netherlands/" as const;
-export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const BONUS_TAX_NETHERLANDS_PATH = "/netherlands/taxes/bonus-tax-netherlands/" as const;
-export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands/" as const;
-export const MUNICIPALITY_REGISTRATION_PATH = "/netherlands/municipality-registration-netherlands/" as const;
-export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration/" as const;
+export const RENT_ALLOWANCE_NETHERLANDS_PATH = "/netherlands/taxes/rent-allowance-netherlands" as const;
+export const HEALTHCARE_ALLOWANCE_NETHERLANDS_PATH = "/netherlands/taxes/healthcare-allowance-netherlands" as const;
+export const TAXES_HUB_PATH = "/netherlands/taxes" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const RENT_AFFORDABILITY_TOOL_PATH = "/netherlands/housing/tools/rent-affordability-calculator" as const;
+export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/taxes/expat-taxes-netherlands" as const;
+export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const BONUS_TAX_NETHERLANDS_PATH = "/netherlands/taxes/bonus-tax-netherlands" as const;
+export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands" as const;
+export const MUNICIPALITY_REGISTRATION_PATH = "/netherlands/municipality-registration-netherlands" as const;
+export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration" as const;
 
 export type RentAllowanceNetherlandsLink = {
   label: string;

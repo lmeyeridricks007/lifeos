@@ -1,18 +1,18 @@
 export const GOVERNMENT_PORTALS_NETHERLANDS_PATH =
-  "/netherlands/practical-life/government-portals-netherlands/" as const;
-export const GOVERNMENT_SERVICES_HUB_PATH = "/netherlands/government-services/" as const;
+  "/netherlands/practical-life/government-portals-netherlands" as const;
+export const GOVERNMENT_SERVICES_HUB_PATH = "/netherlands/government-services" as const;
 
-export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands/" as const;
-export const REGISTERING_ADDRESS_PATH = "/netherlands/practical-life/registering-your-address-netherlands/" as const;
-export const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands/" as const;
-export const BSN_NETHERLANDS_PATH = "/netherlands/practical-life/bsn-netherlands/" as const;
-export const LOCAL_TAXES_NETHERLANDS_PATH = "/netherlands/practical-life/local-taxes-netherlands/" as const;
-export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
-export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands/" as const;
-export const VISAS_HUB_PATH = "/netherlands/moving/visas-residency/" as const;
-export const STARTING_BUSINESS_PATH = "/netherlands/business/starting-a-business-netherlands/" as const;
-export const ZZP_PATH = "/netherlands/business/zzp-netherlands/" as const;
+export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands" as const;
+export const REGISTERING_ADDRESS_PATH = "/netherlands/practical-life/registering-your-address-netherlands" as const;
+export const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands" as const;
+export const BSN_NETHERLANDS_PATH = "/netherlands/practical-life/bsn-netherlands" as const;
+export const LOCAL_TAXES_NETHERLANDS_PATH = "/netherlands/practical-life/local-taxes-netherlands" as const;
+export const TAXES_HUB_PATH = "/netherlands/taxes" as const;
+export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands" as const;
+export const VISAS_HUB_PATH = "/netherlands/moving/visas-residency" as const;
+export const STARTING_BUSINESS_PATH = "/netherlands/business/starting-a-business-netherlands" as const;
+export const ZZP_PATH = "/netherlands/business/zzp-netherlands" as const;
 
 export type PracticalLifeLink = {
   label: string;

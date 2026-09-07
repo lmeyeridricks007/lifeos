@@ -1,21 +1,21 @@
 /** Route map for Netherlands Tax Guide — single place to update paths. */
 
-export const TAX_GUIDE_FOR_EXPATS_PATH = "/netherlands/money/tax-guide-for-expats/" as const;
+export const TAX_GUIDE_FOR_EXPATS_PATH = "/netherlands/money/tax-guide-for-expats" as const;
 
 /** Money-pillar foundation explainer — general Dutch tax system (not expat-only). */
-export const HOW_TAXES_WORK_IN_NL_PATH = "/netherlands/money/how-taxes-work-in-the-netherlands/" as const;
+export const HOW_TAXES_WORK_IN_NL_PATH = "/netherlands/money/how-taxes-work-in-the-netherlands" as const;
 
 /** Money-pillar orientation — tax residency concepts (not a determination tool). */
-export const TAX_RESIDENCY_NL_PATH = "/netherlands/money/tax-residency-netherlands/" as const;
+export const TAX_RESIDENCY_NL_PATH = "/netherlands/money/tax-residency-netherlands" as const;
 
 /** Money-pillar orientation — Dutch annual tax return (not filing advice). */
-export const TAX_RETURN_NL_PATH = "/netherlands/money/tax-return-netherlands/" as const;
+export const TAX_RETURN_NL_PATH = "/netherlands/money/tax-return-netherlands" as const;
 
 /** Taxes cluster — editorial 30% facility guide (not the calculator). */
-export const THIRTY_PERCENT_RULING_NL_PATH = "/netherlands/taxes/30-percent-ruling/" as const;
+export const THIRTY_PERCENT_RULING_NL_PATH = "/netherlands/taxes/30-percent-ruling" as const;
 
 /** Money → Taxes — when to consider tax advisors (editorial, not advice). */
-export const TAX_ADVISORS_EXPATS_PATH = "/netherlands/money/taxes/tax-advisors/" as const;
+export const TAX_ADVISORS_EXPATS_PATH = "/netherlands/money/taxes/tax-advisors" as const;
 
 export const taxGuideRoutes = {
   canonical: TAX_GUIDE_FOR_EXPATS_PATH,

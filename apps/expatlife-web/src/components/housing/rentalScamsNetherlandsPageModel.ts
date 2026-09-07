@@ -9,7 +9,7 @@ import {
   TEMPORARY_ACCOMMODATION_NETHERLANDS_PATH,
 } from "./housingNetherlandsPageModel";
 
-export const RENTAL_SCAMS_NETHERLANDS_PATH = "/netherlands/housing/rental-scams-netherlands/" as const;
+export const RENTAL_SCAMS_NETHERLANDS_PATH = "/netherlands/housing/rental-scams-netherlands" as const;
 
 export type HousingGuideLink = {
   label: string;

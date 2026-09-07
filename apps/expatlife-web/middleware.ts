@@ -100,6 +100,7 @@ export function middleware(request: NextRequest) {
       (!isDevelopment && request.cookies.get(DEV_SIMULATE_LIVE_COOKIE)?.value === "1"));
 
   const requestHeaders = new Headers(request.headers);
+  requestHeaders.set("x-pathname", pathname);
   if (simulateProductionView) {
     requestHeaders.set(DEV_SIMULATE_LIVE_HEADER, "1");
   }

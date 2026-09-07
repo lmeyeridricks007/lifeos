@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { PillarTOC } from "@/components/content/PillarTOC";
@@ -55,12 +56,12 @@ export const metadata: Metadata = {
   title: data.seo.title,
   description: data.seo.description,
   keywords: data.seo.keywords,
-  alternates: { canonical: path },
+  alternates: { canonical: absoluteUrlFromPath(path)},
   openGraph: {
     title: data.seo.title,
     description: data.seo.description,
     type: "article",
-    url: new URL(path, baseUrl).toString(),
+    url: absoluteUrlFromPath(path),
   },
   twitter: {
     card: "summary_large_image",
@@ -150,11 +151,11 @@ export default function NetherlandsServicesPage() {
 
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Services", item: new URL(path, baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+    { name: "Services", item: absoluteUrlFromPath(path) },
   ];
   const dateModified = new Date().toISOString().slice(0, 10);
-  const canonicalUrl = new URL(path, baseUrl).toString();
+  const canonicalUrl = absoluteUrlFromPath(path);
 
   const categoriesByFeaturedFirst = [...data.categories].sort((a, b) => {
     if (a.featured && !b.featured) return -1;

@@ -1,4 +1,4 @@
-export const INTEGRATION_REQUIREMENT_CANONICAL = "/netherlands/integration/tools/integration-requirement-checker/";
+export const INTEGRATION_REQUIREMENT_CANONICAL = "/netherlands/integration/tools/integration-requirement-checker";
 
 export const INTEGRATION_REQUIREMENT_FAQ_ITEMS = [
   {

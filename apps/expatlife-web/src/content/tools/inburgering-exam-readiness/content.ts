@@ -1,4 +1,4 @@
-export const EXAM_READINESS_CANONICAL = "/netherlands/integration/tools/inburgering-exam-readiness-checker/";
+export const EXAM_READINESS_CANONICAL = "/netherlands/integration/tools/inburgering-exam-readiness-checker";
 
 export const EXAM_READINESS_FAQ_ITEMS = [
   {

@@ -81,6 +81,7 @@ export const hsmJobSearchDecisionMatrix = {
     "Victim of labour exploitation (job ended on/after 22 May 2026): up to 6 months regardless of tenure. Every period is capped by remaining permit validity; the clock starts when your employment contract ends.",
 } as const;
 
+/** Stamp for HSM guide ATF / visaToGuideData. WATCH: refresh only after IND or Prinsjesdag-driven figure/status change — see docs/ops/content-refresh-2026-09-07.md */
 export const HSM_CONTENT_LAST_REVIEWED = "Last reviewed: 26 August 2026" as const;
 
 export const hsmJobLossSectionHeading = "After you have the permit" as const;

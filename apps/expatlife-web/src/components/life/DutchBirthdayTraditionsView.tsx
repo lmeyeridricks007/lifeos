@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Children, type ReactNode } from "react";
 import {
@@ -569,9 +570,9 @@ export function DutchBirthdayTraditionsView() {
         crumbs={[
           { name: "Home", item: baseUrl },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Life in the Netherlands", item: new URL(LIFE_HUB_PATH, baseUrl).toString() },
-          { name: "Dutch culture", item: new URL(DUTCH_CULTURE_PATH, baseUrl).toString() },
-          { name: "Dutch Birthday Traditions", item: new URL(DUTCH_BIRTHDAY_TRADITIONS_PATH, baseUrl).toString() },
+          { name: "Life in the Netherlands", item: absoluteUrlFromPath(LIFE_HUB_PATH) },
+          { name: "Dutch culture", item: absoluteUrlFromPath(DUTCH_CULTURE_PATH) },
+          { name: "Dutch Birthday Traditions", item: absoluteUrlFromPath(DUTCH_BIRTHDAY_TRADITIONS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

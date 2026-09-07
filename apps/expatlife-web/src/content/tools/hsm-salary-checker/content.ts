@@ -6,7 +6,7 @@ import {
   IND_REQUIRED_AMOUNTS_URL,
 } from "@/src/lib/tools/hsm-salary-checker/thresholds";
 
-export const HSM_SALARY_CANONICAL = "/netherlands/moving/tools/hsm-salary-checker/";
+export const HSM_SALARY_CANONICAL = "/netherlands/moving/tools/hsm-salary-checker";
 
 export const HSM_SALARY_FAQ_ITEMS = [
   {

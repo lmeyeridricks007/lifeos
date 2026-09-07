@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ArrowRight, BadgePercent, BriefcaseBusiness, Calculator, Clock3, FileCheck2, ReceiptText } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
@@ -95,13 +96,13 @@ function RulingSectionInfographic({
 
 export function ThirtyPercentRulingNlView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Money", item: new URL(taxGuideRoutes.moneyTools, baseUrl).toString() },
     { name: "Taxes", item: new URL(taxGuideRoutes.taxesHub, baseUrl).toString() },
-    { name: "30% Ruling in the Netherlands", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "30% Ruling in the Netherlands", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const primaryCtaClass = cn(

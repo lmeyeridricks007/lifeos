@@ -17,7 +17,7 @@ import {
 
 // ——— canonical route ———
 
-export const BANKING_ACCOUNT_REJECTION_PATH = "/netherlands/money/banking/account-rejection/" as const;
+export const BANKING_ACCOUNT_REJECTION_PATH = "/netherlands/money/banking/account-rejection" as const;
 
 // ——— internal paths (single source for links + labels) ———
 

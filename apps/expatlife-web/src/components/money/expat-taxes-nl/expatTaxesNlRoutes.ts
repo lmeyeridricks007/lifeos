@@ -8,7 +8,7 @@ import {
   TAX_RETURN_NL_PATH,
 } from "@/src/components/money/tax-guide-for-expats/taxGuideRoutes";
 
-export const EXPAT_TAXES_NL_PATH = "/netherlands/money/expat-taxes-netherlands/" as const;
+export const EXPAT_TAXES_NL_PATH = "/netherlands/money/expat-taxes-netherlands" as const;
 
 export const expatTaxesNlRoutes = {
   canonical: EXPAT_TAXES_NL_PATH,

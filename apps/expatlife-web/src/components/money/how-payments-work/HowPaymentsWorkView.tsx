@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Fragment } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
@@ -74,12 +75,12 @@ const INFO_CHIP =
 
 export function HowPaymentsWorkView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Banking", item: new URL("/netherlands/money/banking/", baseUrl).toString() },
-    { name: "How payments work", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "How payments work", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const primaryCtaClass = cn(

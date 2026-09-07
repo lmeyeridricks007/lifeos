@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { MoveHero } from "@/components/page/move-shell";
 import { CardLink } from "@/components/ui/card-link";
@@ -19,7 +19,7 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const CANONICAL = "/netherlands/tools/bank-comparison/" as const;
+const CANONICAL = "/netherlands/tools/bank-comparison" as const;
 const BASE = "/netherlands";
 const HERO_IMAGE = "/images/heroes/netherlands-bank-comparison-tool-hero.png";
 
@@ -30,7 +30,7 @@ const META_DESCRIPTION =
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(CANONICAL)},
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   keywords: [
     "bank comparison netherlands expats",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
-    url: CANONICAL,
+    url: absoluteUrlFromPath(CANONICAL),
     images: [
       {
         url: HERO_IMAGE,
@@ -162,7 +162,7 @@ const TRADITIONAL_VS_DIGITAL_PATH = `${BASE}/money/banking/traditional-vs-digita
 
 export default function BankComparisonToolPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const relatedGuides = resolveRelatedGuides();
   const bankingGuidesNext = resolveBankingGuidesNext();
 

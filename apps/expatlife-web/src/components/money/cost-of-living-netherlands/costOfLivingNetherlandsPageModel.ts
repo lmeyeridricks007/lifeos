@@ -13,19 +13,19 @@ import { UTILITIES_NETHERLANDS_PATH } from "@/src/components/utilities/utilities
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 /** Flagship orientation guide — cost drivers, lifestyle/city bands, how to read numbers. */
-export const COST_OF_LIVING_NETHERLANDS_PATH = "/netherlands/money/cost-of-living-netherlands/" as const;
+export const COST_OF_LIVING_NETHERLANDS_PATH = "/netherlands/money/cost-of-living-netherlands" as const;
 
 /** Cluster siblings (built next in the Cost of living, budget & saving cluster). */
-export const MONTHLY_BUDGET_NETHERLANDS_PATH = "/netherlands/money/monthly-budget-netherlands/" as const;
-export const SAVING_MONEY_NETHERLANDS_PATH = "/netherlands/money/saving-money-netherlands/" as const;
+export const MONTHLY_BUDGET_NETHERLANDS_PATH = "/netherlands/money/monthly-budget-netherlands" as const;
+export const SAVING_MONEY_NETHERLANDS_PATH = "/netherlands/money/saving-money-netherlands" as const;
 
-export const MONEY_HUB_PATH = "/netherlands/money/" as const;
-export const COST_OF_LIVING_CALCULATOR_PATH = "/netherlands/money/tools/cost-of-living-calculator/" as const;
-export const NET_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/net-salary-netherlands/" as const;
-export const RENTING_NETHERLANDS_PATH = "/netherlands/renting-in-the-netherlands/" as const;
-export const HEALTH_INSURANCE_NETHERLANDS_PATH = "/netherlands/health-insurance-netherlands/" as const;
-export const SHOPPING_GROCERIES_PATH = "/netherlands/living/shopping-groceries/" as const;
-export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/" as const;
+export const MONEY_HUB_PATH = "/netherlands/money" as const;
+export const COST_OF_LIVING_CALCULATOR_PATH = "/netherlands/money/tools/cost-of-living-calculator" as const;
+export const NET_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/net-salary-netherlands" as const;
+export const RENTING_NETHERLANDS_PATH = "/netherlands/renting-in-the-netherlands" as const;
+export const HEALTH_INSURANCE_NETHERLANDS_PATH = "/netherlands/health-insurance-netherlands" as const;
+export const SHOPPING_GROCERIES_PATH = "/netherlands/living/shopping-groceries" as const;
+export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands" as const;
 
 export type CostOfLivingLink = {
   label: string;

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ArrowRight, Check, Sparkles } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
@@ -104,12 +105,12 @@ const LAYOFFS_SUPPORT_LINKS = [
 
 export function LayoffsNetherlandsView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Moving", item: new URL(HUB, baseUrl).toString() },
-    { name: "Layoffs in the Netherlands", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Layoffs in the Netherlands", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const primaryCtaClass = cn(

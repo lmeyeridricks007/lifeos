@@ -19,7 +19,7 @@ const E1_SITEMAP_REDIRECT_ALIASES = [
 
 /** EC-20260826-013 — one workplace-culture URL; culture path is alias only. */
 const E2_CULTURE_WORKPLACE_ALIAS = "/netherlands/culture/dutch-workplace-culture/";
-const E2_JOBS_WORKPLACE_CANONICAL = "/netherlands/jobs/dutch-workplace-culture/";
+const E2_JOBS_WORKPLACE_CANONICAL = "/netherlands/jobs/dutch-workplace-culture";
 
 describe("liveSitemapPaths (E1 redirect aliases)", () => {
   it("lists E1 legacy work paths as permanent-redirect aliases", () => {
@@ -40,8 +40,8 @@ describe("liveSitemapPaths (E1 redirect aliases)", () => {
 
   it("still includes the canonical destinations for E1 redirects", () => {
     const sitemap = new Set(collectLiveSitemapNormalizedPaths());
-    assert.equal(sitemap.has("/netherlands/jobs/dutch-workplace-culture/"), true);
-    assert.equal(sitemap.has("/netherlands/moving/layoffs-netherlands/"), true);
+    assert.equal(sitemap.has("/netherlands/jobs/dutch-workplace-culture"), true);
+    assert.equal(sitemap.has("/netherlands/moving/layoffs-netherlands"), true);
   });
 });
 
@@ -67,7 +67,7 @@ describe("liveSitemapPaths (E2 workplace-culture URL)", () => {
     const entry = getClusterPageByPath(normalizeSitePath(E2_CULTURE_WORKPLACE_ALIAS));
     assert.ok(entry);
     assert.equal(entry.contentStatus, "hidden");
-    assert.equal(entry.canonicalGuidePath, E2_JOBS_WORKPLACE_CANONICAL);
+    assert.equal(normalizeSitePath(entry.canonicalGuidePath ?? ""), E2_JOBS_WORKPLACE_CANONICAL);
     assert.equal(getClusterSlugsForStaticParams("culture").includes("dutch-workplace-culture"), false);
   });
 });
@@ -89,7 +89,7 @@ describe("liveSitemapPaths (E3 sitemap clients / locs)", () => {
     assert.match(xml, /^<\?xml version="1\.0" encoding="UTF-8"\?>/);
     assert.match(xml, /xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9"/);
     assert.match(xml, /<loc>https:\/\/www\.expatcopilot\.com\/<\/loc>/);
-    assert.match(xml, /<loc>https:\/\/www\.expatcopilot\.com\/netherlands\/<\/loc>/);
+    assert.match(xml, /<loc>https:\/\/www\.expatcopilot\.com\/netherlands<\/loc>/);
     assert.equal((xml.match(/<url>/g) ?? []).length, 2);
   });
 

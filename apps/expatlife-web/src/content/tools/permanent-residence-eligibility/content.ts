@@ -1,5 +1,5 @@
 export const PR_ELIGIBILITY_CANONICAL =
-  "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/";
+  "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator";
 
 export const PR_ELIGIBILITY_FAQ_ITEMS = [
   {

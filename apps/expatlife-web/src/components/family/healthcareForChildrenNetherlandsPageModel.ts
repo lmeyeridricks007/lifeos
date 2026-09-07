@@ -1,27 +1,27 @@
-export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/" as const;
-export const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands/" as const;
-export const PARENTING_NETHERLANDS_PATH = "/netherlands/family/parenting-netherlands/" as const;
-export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands/" as const;
-export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands/" as const;
-export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands/" as const;
-export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands/" as const;
-export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands/" as const;
-export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
-export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands/" as const;
+export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands" as const;
+export const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands" as const;
+export const PARENTING_NETHERLANDS_PATH = "/netherlands/family/parenting-netherlands" as const;
+export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands" as const;
+export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands" as const;
+export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands" as const;
+export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands" as const;
+export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands" as const;
+export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids" as const;
+export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands" as const;
 export const FAMILY_HUB_PATH = PARENTING_NETHERLANDS_PATH;
-export const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands/" as const;
+export const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands" as const;
 export const EMERGENCY_HEALTHCARE_NETHERLANDS_PATH =
-  "/netherlands/health/emergency-healthcare-netherlands/" as const;
+  "/netherlands/health/emergency-healthcare-netherlands" as const;
 export const MENTAL_HEALTHCARE_NETHERLANDS_PATH =
-  "/netherlands/health/mental-healthcare-netherlands/" as const;
-export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-netherlands/" as const;
-export const PRESCRIPTIONS_NETHERLANDS_PATH = "/netherlands/health/prescriptions-netherlands/" as const;
-export const PHYSIOTHERAPY_NETHERLANDS_PATH = "/netherlands/health/physiotherapy-netherlands/" as const;
-export const MATERNITY_CARE_NETHERLANDS_PATH = "/netherlands/health/maternity-care-netherlands/" as const;
-export const PREGNANCY_NETHERLANDS_PATH = "/netherlands/family/pregnancy-netherlands/" as const;
-export const FAMILY_ACTIVITIES_NETHERLANDS_PATH = "/netherlands/family/family-activities-netherlands/" as const;
+  "/netherlands/health/mental-healthcare-netherlands" as const;
+export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-netherlands" as const;
+export const PRESCRIPTIONS_NETHERLANDS_PATH = "/netherlands/health/prescriptions-netherlands" as const;
+export const PHYSIOTHERAPY_NETHERLANDS_PATH = "/netherlands/health/physiotherapy-netherlands" as const;
+export const MATERNITY_CARE_NETHERLANDS_PATH = "/netherlands/health/maternity-care-netherlands" as const;
+export const PREGNANCY_NETHERLANDS_PATH = "/netherlands/family/pregnancy-netherlands" as const;
+export const FAMILY_ACTIVITIES_NETHERLANDS_PATH = "/netherlands/family/family-activities-netherlands" as const;
 export const HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH =
-  "/netherlands/health/health-insurance-comparison-netherlands/" as const;
+  "/netherlands/health/health-insurance-comparison-netherlands" as const;
 export const HEALTH_INSURANCE_COMPARISON_PATH = HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH;
 
 export type HealthcareLink = {

@@ -15,15 +15,15 @@ import type {
   LivingHealthcareTips,
 } from "./livingHealthcare.types";
 
-const HEALTH_INSURANCE_GUIDE_PATH = "/netherlands/health-insurance-netherlands/";
-const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands/";
-const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers/";
-const HEALTHCARE_ALLOWANCE_TOOL_PATH = "/netherlands/taxes/tools/healthcare-allowance-estimator/";
-const COST_OF_LIVING_TOOL_PATH = "/netherlands/money/tools/cost-of-living-calculator/";
-const CHILDCARE_TOOL_PATH = "/netherlands/family/tools/childcare-cost-estimator/";
-const FIRST_90_DAYS_GUIDE_PATH = "/netherlands/first-90-days-netherlands/";
-const MOVING_WITH_FAMILY_GUIDE_PATH = "/netherlands/moving-to-netherlands-with-family/";
-const MOVING_WITH_KIDS_GUIDE_PATH = "/netherlands/moving-to-netherlands-with-kids/";
+const HEALTH_INSURANCE_GUIDE_PATH = "/netherlands/health-insurance-netherlands";
+const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands";
+const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers";
+const HEALTHCARE_ALLOWANCE_TOOL_PATH = "/netherlands/taxes/tools/healthcare-allowance-estimator";
+const COST_OF_LIVING_TOOL_PATH = "/netherlands/money/tools/cost-of-living-calculator";
+const CHILDCARE_TOOL_PATH = "/netherlands/family/tools/childcare-cost-estimator";
+const FIRST_90_DAYS_GUIDE_PATH = "/netherlands/first-90-days-netherlands";
+const MOVING_WITH_FAMILY_GUIDE_PATH = "/netherlands/moving-to-netherlands-with-family";
+const MOVING_WITH_KIDS_GUIDE_PATH = "/netherlands/moving-to-netherlands-with-kids";
 
 export const livingHealthcareQuickStart: LivingHealthcareQuickStartStage[] = [
   {

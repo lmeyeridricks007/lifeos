@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { getActiveNavKey, MEGA_MENUS, TOP_NAV } from "@/src/lib/nav/config";
@@ -8,13 +9,39 @@ import type { TopNavKey } from "@/src/lib/nav/types";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { Logo } from "@/components/site/logo";
-import { MegaMenu } from "@/src/components/site/MegaMenu";
 import { MobileNav } from "@/src/components/navigation/MobileNav";
-import { MobileSearchOverlay } from "@/src/components/search/MobileSearchOverlay";
-import { SearchFieldWithPreview } from "@/src/components/search/SearchFieldWithPreview";
 import { shellHeaderToolsClass } from "@/lib/ui/shell";
 
 const OPEN_DELAY_MS = 120;
+
+const MegaMenu = dynamic(
+  () => import("@/src/components/site/MegaMenu").then((m) => ({ default: m.MegaMenu })),
+  { ssr: false }
+);
+
+const SearchFieldWithPreview = dynamic(
+  () =>
+    import("@/src/components/search/SearchFieldWithPreview").then((m) => ({
+      default: m.SearchFieldWithPreview,
+    })),
+  {
+    ssr: false,
+    loading: () => (
+      <div
+        className="hidden h-11 w-[13.5rem] shrink-0 rounded-xl border border-border/80 bg-surface-muted/80 lg:block"
+        aria-hidden
+      />
+    ),
+  }
+);
+
+const MobileSearchOverlay = dynamic(
+  () =>
+    import("@/src/components/search/MobileSearchOverlay").then((m) => ({
+      default: m.MobileSearchOverlay,
+    })),
+  { ssr: false }
+);
 
 export function Header() {
   const pathname = usePathname();
@@ -64,7 +91,9 @@ export function Header() {
       }
 
       if (event.key === "Tab") {
-        const focusable = panelRef.current?.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])');
+        const focusable = panelRef.current?.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'
+        );
         if (!focusable || focusable.length === 0) {
           return;
         }
@@ -133,52 +162,48 @@ export function Header() {
                 className="flex min-w-0 justify-center self-center overflow-x-visible overflow-y-visible"
                 aria-label="Primary navigation"
               >
-                {/*
-                  Center column uses min-w-0; pill strip stays one row now that header CTAs are leaner.
-                  Rare overflow: subtle horizontal scroll on very narrow viewports.
-                */}
                 <ul className="flex max-w-full flex-nowrap items-center justify-center gap-x-1 overflow-x-auto overflow-y-visible rounded-2xl border border-border/90 bg-surface-muted/90 p-1 shadow-inset sm:gap-x-1 sm:p-1.5 [scrollbar-width:thin]">
-                {entries.map((entry) => {
-                  const isOpen = openKey === entry.key;
-                  const isActive = activeNavKey === entry.key;
-                  return (
-                    <li key={entry.key} className="shrink-0">
-                      <button
-                        type="button"
-                        data-top-nav-key={entry.key}
-                        aria-expanded={isOpen}
-                        aria-current={isActive ? "true" : undefined}
-                        aria-controls={isOpen ? "mega-menu-panel" : undefined}
-                        aria-haspopup="dialog"
-                        className={`flex min-h-11 items-center justify-center rounded-full px-2.5 py-2 text-xs font-semibold transition-[color,background-color,box-shadow] duration-150 lg:px-2.5 xl:px-3 xl:text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas ${
-                          isOpen
-                            ? "bg-surface-raised text-foreground shadow-card ring-1 ring-border/30"
-                            : isActive
-                              ? "bg-brand-muted text-brand-strong shadow-sm ring-1 ring-brand/25"
-                              : "text-foreground-muted hover:bg-surface-raised/90 hover:text-foreground"
-                        }`}
-                        onMouseEnter={() => openViaHover(entry.key)}
-                        onFocus={() => openViaHover(entry.key)}
-                        onClick={(event) => {
-                          lastTriggerRef.current = event.currentTarget;
-                          if (entry.href) {
-                            closeMenu();
-                            router.push(entry.href);
-                            return;
-                          }
-                          if (openKey === entry.key) {
-                            closeMenu();
-                          } else {
-                            setOpenKey(entry.key);
-                            setOpenByClick(true);
-                          }
-                        }}
-                      >
-                        {entry.label}
-                      </button>
-                    </li>
-                  );
-                })}
+                  {entries.map((entry) => {
+                    const isOpen = openKey === entry.key;
+                    const isActive = activeNavKey === entry.key;
+                    return (
+                      <li key={entry.key} className="shrink-0">
+                        <button
+                          type="button"
+                          data-top-nav-key={entry.key}
+                          aria-expanded={isOpen}
+                          aria-current={isActive ? "true" : undefined}
+                          aria-controls={isOpen ? "mega-menu-panel" : undefined}
+                          aria-haspopup="dialog"
+                          className={`flex min-h-11 items-center justify-center rounded-full px-2.5 py-2 text-xs font-semibold transition-[color,background-color,box-shadow] duration-150 lg:px-2.5 xl:px-3 xl:text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-ring/30 focus-visible:ring-offset-2 focus-visible:ring-offset-canvas ${
+                            isOpen
+                              ? "bg-surface-raised text-foreground shadow-card ring-1 ring-border/30"
+                              : isActive
+                                ? "bg-brand-muted text-brand-strong shadow-sm ring-1 ring-brand/25"
+                                : "text-foreground-muted hover:bg-surface-raised/90 hover:text-foreground"
+                          }`}
+                          onMouseEnter={() => openViaHover(entry.key)}
+                          onFocus={() => openViaHover(entry.key)}
+                          onClick={(event) => {
+                            lastTriggerRef.current = event.currentTarget;
+                            if (entry.href) {
+                              closeMenu();
+                              router.push(entry.href);
+                              return;
+                            }
+                            if (openKey === entry.key) {
+                              closeMenu();
+                            } else {
+                              setOpenKey(entry.key);
+                              setOpenByClick(true);
+                            }
+                          }}
+                        >
+                          {entry.label}
+                        </button>
+                      </li>
+                    );
+                  })}
                 </ul>
               </nav>
             </div>
@@ -224,10 +249,9 @@ export function Header() {
           </>
         ) : null}
       </div>
-      <MobileSearchOverlay
-        isOpen={mobileSearchOpen}
-        onClose={() => setMobileSearchOpen(false)}
-      />
+      {mobileSearchOpen ? (
+        <MobileSearchOverlay isOpen={mobileSearchOpen} onClose={() => setMobileSearchOpen(false)} />
+      ) : null}
     </header>
   );
 }

@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Image from "next/image";
@@ -80,7 +81,7 @@ const SITUATION_CARD_STYLES: Record<
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/visa/compare-visas/";
+const canonical = "/netherlands/visa/compare-visas";
 const BASE = "/netherlands";
 
 const COMPARE_VISAS_INSTRUCTIONAL = getVisasResidencyInstructionalFigure("compare-visas");
@@ -94,7 +95,7 @@ export const metadata: Metadata = {
     title: "Compare Netherlands Visas | Costs, Timelines, Requirements, Best Uses",
     description:
       "Compare the main visa and residence routes for moving to the Netherlands, including work, student, partner, entrepreneur, and family options, with practical guidance on costs, timing, and typical trade-offs.",
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
     type: "article",
   },
   twitter: {

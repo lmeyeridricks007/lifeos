@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
@@ -37,9 +38,9 @@ export default function LeidenCityPage() {
 
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Cities", item: new URL("/netherlands/cities/", baseUrl).toString() },
-    { name: "Leiden", item: new URL(path, baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands/") },
+    { name: "Cities", item: absoluteUrlFromPath("/netherlands/cities/") },
+    { name: "Leiden", item: absoluteUrlFromPath(path) },
   ];
 
   const dateModified =

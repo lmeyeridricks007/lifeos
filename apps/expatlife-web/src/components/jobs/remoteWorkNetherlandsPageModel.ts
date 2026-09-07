@@ -22,11 +22,11 @@ import { COVER_LETTER_NETHERLANDS_PATH } from "./coverLetterNetherlandsPageModel
 import { LINKEDIN_NETHERLANDS_PATH } from "./linkedinNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
-export const REMOTE_WORK_NETHERLANDS_PATH = "/netherlands/jobs/remote-work-netherlands/" as const;
-export const STARTING_CONSULTANCY_NETHERLANDS_PATH = "/netherlands/jobs/starting-consultancy-netherlands/" as const;
+export const REMOTE_WORK_NETHERLANDS_PATH = "/netherlands/jobs/remote-work-netherlands" as const;
+export const STARTING_CONSULTANCY_NETHERLANDS_PATH = "/netherlands/jobs/starting-consultancy-netherlands" as const;
 
-export const RECRUITMENT_AGENCIES_NETHERLANDS_PATH = "/netherlands/jobs/recruitment-agencies-netherlands/" as const;
-export const ENGLISH_SPEAKING_JOBS_NETHERLANDS_PATH = "/netherlands/jobs/english-speaking-jobs-netherlands/" as const;
+export const RECRUITMENT_AGENCIES_NETHERLANDS_PATH = "/netherlands/jobs/recruitment-agencies-netherlands" as const;
+export const ENGLISH_SPEAKING_JOBS_NETHERLANDS_PATH = "/netherlands/jobs/english-speaking-jobs-netherlands" as const;
 
 
 export {

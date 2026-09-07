@@ -1,25 +1,25 @@
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 /** Services directory — compare/find recruitment agency providers. */
-export const RECRUITMENT_AGENCIES_SERVICES_PATH = "/netherlands/services/recruitment-agencies/" as const;
+export const RECRUITMENT_AGENCIES_SERVICES_PATH = "/netherlands/services/recruitment-agencies" as const;
 
 /** Career Cluster guide — how the agency channel works for job seekers (do not confuse with this directory). */
-export const CAREER_RECRUITMENT_AGENCIES_PATH = "/netherlands/jobs/recruitment-agencies-netherlands/" as const;
+export const CAREER_RECRUITMENT_AGENCIES_PATH = "/netherlands/jobs/recruitment-agencies-netherlands" as const;
 
-export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers/" as const;
-export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors/" as const;
-export const VISA_CONSULTANTS_PATH = "/netherlands/services/visa-consultants/" as const;
-export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors/" as const;
-export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors/" as const;
-export const CAREER_COACHES_PATH = "/netherlands/services/career-coaches/" as const;
-export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services/" as const;
-export const RELOCATION_AGENCIES_PATH = "/netherlands/services/relocation-agencies/" as const;
-export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
-export const JOBS_HUB_PATH = "/netherlands/jobs/" as const;
-export const FINDING_JOBS_PATH = "/netherlands/jobs/finding-jobs-netherlands/" as const;
-export const LINKEDIN_NETHERLANDS_PATH = "/netherlands/jobs/linkedin-netherlands/" as const;
-export const ENGLISH_SPEAKING_JOBS_PATH = "/netherlands/jobs/english-speaking-jobs-netherlands/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
+export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers" as const;
+export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors" as const;
+export const VISA_CONSULTANTS_PATH = "/netherlands/services/visa-consultants" as const;
+export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors" as const;
+export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors" as const;
+export const CAREER_COACHES_PATH = "/netherlands/services/career-coaches" as const;
+export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services" as const;
+export const RELOCATION_AGENCIES_PATH = "/netherlands/services/relocation-agencies" as const;
+export const SERVICES_HUB_PATH = "/netherlands/services" as const;
+export const JOBS_HUB_PATH = "/netherlands/jobs" as const;
+export const FINDING_JOBS_PATH = "/netherlands/jobs/finding-jobs-netherlands" as const;
+export const LINKEDIN_NETHERLANDS_PATH = "/netherlands/jobs/linkedin-netherlands" as const;
+export const ENGLISH_SPEAKING_JOBS_PATH = "/netherlands/jobs/english-speaking-jobs-netherlands" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
 
 export const RECRUITMENT_AGENCIES_SERVICES_AFFILIATE_PLACEMENT_ID =
   "nl-services-recruitment-agencies-support-providers" as const;

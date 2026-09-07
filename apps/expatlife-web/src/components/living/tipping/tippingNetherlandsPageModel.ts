@@ -36,10 +36,10 @@ export {
 
 export const LIVING_HUB_PATH = LIVING_PILLAR_ROOT_PATH;
 export const SHOPPING_GROCERIES_PATH = LIVING_SHOPPING_GROCERIES_PATH;
-export const PAYMENTS_BASICS_PATH = "/netherlands/living/payments/" as const;
-export const CASH_VS_CARD_PATH = "/netherlands/money/banking/cash-vs-card/" as const;
-export const COST_OF_LIVING_PATH = "/netherlands/money/cost-of-living-netherlands/" as const;
-export const SAVING_MONEY_PATH = "/netherlands/money/saving-money-netherlands/" as const;
+export const PAYMENTS_BASICS_PATH = "/netherlands/living/payments" as const;
+export const CASH_VS_CARD_PATH = "/netherlands/money/banking/cash-vs-card" as const;
+export const COST_OF_LIVING_PATH = "/netherlands/money/cost-of-living-netherlands" as const;
+export const SAVING_MONEY_PATH = "/netherlands/money/saving-money-netherlands" as const;
 
 export type GuideLink = {
   label: string;

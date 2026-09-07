@@ -6,6 +6,7 @@
 import type { GuideData, GuideSection, GuideToolCta } from "@/src/lib/guides/types";
 import { normalizeGuideContract } from "@/src/lib/guides/normalizeMovingGuideContract";
 import type { CountryPageModel } from "./buildCountryPageModel";
+import { countryToolHref } from "@/src/lib/tools/shared/countryToolLinkModel";
 import { augmentAustraliaGuideData } from "./australiaMovingGuideData";
 import { augmentCanadaGuideData } from "./canadaMovingGuideData";
 import { augmentFranceGuideData } from "./franceMovingGuideData";
@@ -33,17 +34,17 @@ import { augmentIndonesiaGuideData } from "./indonesiaMovingGuideData";
 import { augmentPakistanGuideData } from "./pakistanMovingGuideData";
 import { augmentKenyaGuideData } from "./kenyaMovingGuideData";
 
-const PILLAR_PATH = "/netherlands/moving-to-the-netherlands/";
+const PILLAR_PATH = "/netherlands/moving-to-the-netherlands";
 const HUB_PATH = PILLAR_PATH;
-const COUNTRY_INDEX_PATH = "/netherlands/moving-to-netherlands-from/";
-const COST_ESTIMATOR_PATH = "/netherlands/moving/tools/relocation-cost-estimator/";
-const VISA_COST_CALCULATOR_PATH = "/netherlands/visa-cost-calculator/";
-const DOCUMENTS_GUIDE_PATH = "/netherlands/documents-needed-to-move-netherlands/";
-const COST_GUIDE_PATH = "/netherlands/moving-to-netherlands-cost/";
-const FIRST_90_DAYS_PATH = "/netherlands/first-90-days-netherlands/";
-const HSM_VISA_PATH = "/netherlands/visa/highly-skilled-migrant/";
-const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling/";
-const MOVING_CHECKLIST_TOOL_PATH = "/netherlands/moving/tools/moving-checklist/";
+const COUNTRY_INDEX_PATH = "/netherlands/moving-to-netherlands-from";
+const COST_ESTIMATOR_PATH = "/netherlands/moving/tools/relocation-cost-estimator";
+const VISA_COST_CALCULATOR_PATH = "/netherlands/visa-cost-calculator";
+const DOCUMENTS_GUIDE_PATH = "/netherlands/documents-needed-to-move-netherlands";
+const COST_GUIDE_PATH = "/netherlands/moving-to-netherlands-cost";
+const FIRST_90_DAYS_PATH = "/netherlands/first-90-days-netherlands";
+const HSM_VISA_PATH = "/netherlands/visa/highly-skilled-migrant";
+const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling";
+const MOVING_CHECKLIST_TOOL_PATH = "/netherlands/moving/tools/moving-checklist";
 
 function buildDefaultCountryGuideData(
   model: CountryPageModel,
@@ -52,10 +53,11 @@ function buildDefaultCountryGuideData(
   const { heroImageSrc } = options;
   const fromQuery = `?from=${encodeURIComponent(model.slug)}`;
   const costEstimatorHref = `${COST_ESTIMATOR_PATH}${fromQuery}`;
-  const checklistHref = `/netherlands/moving/tools/moving-checklist/${fromQuery}`;
-  const first90Href = `/netherlands/moving/tools/first-90-days/${fromQuery}`;
-  const documentReadinessHref = `/netherlands/document-readiness-checker/${fromQuery}`;
-  const arrivalPlannerHref = `/netherlands/moving/tools/arrival-planner/${fromQuery}`;
+  // Prefer indexable `/from/{country}` landings when live; else base tool `?from=` (NG/PH).
+  const checklistHref = countryToolHref("moving-checklist", model.slug);
+  const first90Href = countryToolHref("first-90-days", model.slug);
+  const documentReadinessHref = countryToolHref("document-readiness", model.slug);
+  const arrivalPlannerHref = countryToolHref("arrival-planner", model.slug);
 
   const sections: GuideSection[] = [
     {

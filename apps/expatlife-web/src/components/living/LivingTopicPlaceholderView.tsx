@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArrowLeft, Sparkles } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { GuidePageRoot } from "@/components/page-families";
@@ -21,7 +22,7 @@ export function LivingTopicPlaceholderView({ content }: Props) {
     ? getLivingStartHereInstructionalFigure(content.instructionalStartHereKey)
     : undefined;
   const baseUrl = getSiteOrigin();
-  const hubUrl = new URL(LIVING_SURVIVAL_GUIDE_PATH, baseUrl).toString();
+  const hubUrl = absoluteUrlFromPath(LIVING_SURVIVAL_GUIDE_PATH);
   const pageUrl = new URL(content.path, baseUrl).toString();
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },

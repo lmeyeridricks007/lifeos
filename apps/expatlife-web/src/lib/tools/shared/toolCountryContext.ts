@@ -3,6 +3,12 @@
  * Used by ToolCountryContextBlock and country landing page content.
  */
 
+export type CountryToolOfficialRef = {
+  label: string;
+  href: string;
+  summary?: string;
+};
+
 export type CountryLandingContext = {
   countrySlug: string;
   countryLabel: string;
@@ -16,6 +22,14 @@ export type CountryLandingContext = {
   transferTravelNotes?: string[];
   /** Optional link to country guide. */
   countryGuideHref?: string;
+  /** Clear explanation of what this tool does for this origin. */
+  taskExplanation?: string;
+  /** Visa / free-movement pathway differences grounded in country records. */
+  visaPathwayDifferences?: string[];
+  /** Official references (IND, Netherlands Worldwide, origin authorities). */
+  officialReferences?: CountryToolOfficialRef[];
+  /** Information-as-of date for the structured country pack. */
+  informationAsOf?: string;
 };
 
 export const SUPPORTED_ORIGIN_COUNTRIES = [

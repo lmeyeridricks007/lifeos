@@ -5,7 +5,7 @@ import { INTERNATIONAL_TRANSFERS_FROM_NL_PATH } from "@/src/components/money/int
 import { BANKING_FEES_PAGE_PATH } from "@/src/data/banking/bankingFeesContent";
 import { BANKING_CONTENT_TRADITIONAL_VS_DIGITAL_PATH } from "@/src/data/banking/bankingTraditionalDigitalContent";
 
-const HPW_PATH = "/netherlands/money/banking/how-payments-work/" as const;
+const HPW_PATH = "/netherlands/money/banking/how-payments-work" as const;
 
 export type BankingTransferScenarioLink = {
   readonly href: string;

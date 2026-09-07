@@ -1,4 +1,4 @@
-export const DUAL_CITIZENSHIP_CANONICAL = "/netherlands/citizenship/tools/dual-citizenship-awareness-tool/";
+export const DUAL_CITIZENSHIP_CANONICAL = "/netherlands/citizenship/tools/dual-citizenship-awareness-tool";
 
 export const DUAL_CITIZENSHIP_FAQ_ITEMS = [
   {

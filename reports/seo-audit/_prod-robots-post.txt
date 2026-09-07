@@ -1,0 +1,10 @@
+User-Agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /_vercel/
+Disallow: /dev/
+Disallow: /test/
+Disallow: /preview/
+
+Sitemap: https://www.expatcopilot.com/sitemap.xml

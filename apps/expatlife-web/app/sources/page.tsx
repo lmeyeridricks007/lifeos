@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { sourcesPage } from "@/src/data/trust/sources";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
@@ -10,7 +10,7 @@ export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: pageMetadataTitle(sourcesPage.seo.title),
   description: sourcesPage.seo.description,
-  alternates: { canonical: "/sources/" },
+  alternates: { canonical: absoluteUrlFromPath("/sources/")},
 };
 
 type SourceItem = { name: string; href?: string; description: string };

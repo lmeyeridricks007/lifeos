@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { MoveHero } from "@/components/page/move-shell";
 import { buildBreadcrumbSchema } from "@/src/lib/seo/breadcrumbSchema";
@@ -20,7 +20,7 @@ import { LEAVING_NL_TAX_PATH } from "@/src/components/moving/long-term-stay-clus
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const LEAVING_TOOLS_HUB_PATH = "/netherlands/leaving/tools/";
+const LEAVING_TOOLS_HUB_PATH = "/netherlands/leaving/tools";
 
 const META_TITLE = "Repatriation Cost Calculator Netherlands";
 const META_DESCRIPTION =
@@ -29,7 +29,7 @@ const META_DESCRIPTION =
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: REPATRIATION_COST_CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(REPATRIATION_COST_CANONICAL)},
   keywords: [
     "repatriation cost calculator",
     "leaving Netherlands budget",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: REPATRIATION_COST_CANONICAL,
     images: [
       {
-        url: "/images/heroes/netherlands-leaving-tax-hero-v1.png",
+        url: absoluteUrlFromPath("/images/heroes/netherlands-leaving-tax-hero-v1.png"),
         width: 1200,
         height: 630,
         alt: "Planning documents for leaving the Netherlands and budgeting repatriation costs.",
@@ -69,7 +69,7 @@ function resolveRelatedGuides() {
 
 export default function RepatriationCostCalculatorPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(REPATRIATION_COST_CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(REPATRIATION_COST_CANONICAL);
   const relatedGuides = resolveRelatedGuides();
 
   const breadcrumbJsonLd = buildBreadcrumbSchema([

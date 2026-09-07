@@ -1,11 +1,11 @@
-export const UTILITIES_HUB_PATH = "/netherlands/utilities/" as const;
-export const UTILITIES_NETHERLANDS_PATH = "/netherlands/utilities/utilities-netherlands/" as const;
-export const ENERGY_AND_WATER_NETHERLANDS_PATH = "/netherlands/utilities/energy-and-water-netherlands/" as const;
-export const RENTING_NETHERLANDS_PATH = "/netherlands/renting-in-the-netherlands/" as const;
-export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands/" as const;
-export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers/" as const;
+export const UTILITIES_HUB_PATH = "/netherlands/utilities" as const;
+export const UTILITIES_NETHERLANDS_PATH = "/netherlands/utilities/utilities-netherlands" as const;
+export const ENERGY_AND_WATER_NETHERLANDS_PATH = "/netherlands/utilities/energy-and-water-netherlands" as const;
+export const RENTING_NETHERLANDS_PATH = "/netherlands/renting-in-the-netherlands" as const;
+export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands" as const;
+export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers" as const;
 
 export type UtilitiesLink = {
   label: string;

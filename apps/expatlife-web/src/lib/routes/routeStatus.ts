@@ -6,6 +6,7 @@ import {
   normalizeSitePath,
   isOriginCountryGuidePath,
   isMovingToolFromCountryPath,
+  getComingSoonRoute,
 } from "@/src/data/site/route-registry";
 import {
   findMovingGuideBySlug,
@@ -29,13 +30,13 @@ import {
 export type PublishRouteStatus = "live" | "coming-soon" | "hidden";
 
 function originCountrySlugFromNormalizedPath(n: string): string | null {
-  const m = /^\/netherlands\/moving\/moving-to-netherlands-from\/([a-z0-9-]+)\/$/.exec(n);
+  const m = /^\/netherlands\/moving\/moving-to-netherlands-from\/([a-z0-9-]+)\/?$/.exec(n);
   return m?.[1] ?? null;
 }
 
 function movingToolOriginSlugFromNormalizedPath(n: string): string | null {
   const re = new RegExp(
-    `^/netherlands/moving/tools/(${MOVING_TOOL_FROM_SLUGS.join("|")})/from/([a-z0-9-]+)/$`
+    `^/netherlands/moving/tools/(${MOVING_TOOL_FROM_SLUGS.join("|")})/from/([a-z0-9-]+)/?$`
   );
   const m = re.exec(n);
   return m?.[2] ?? null;
@@ -60,10 +61,10 @@ export function getRouteStatus(href: string, now: Date = new Date()): PublishRou
   const baseLive =
     LIVE_PATHS.has(n) || isOriginCountryGuidePath(href) || isMovingToolFromCountryPath(href);
 
-  if (!baseLive && COMING_SOON_ROUTES[n]) return "coming-soon";
+  if (!baseLive && getComingSoonRoute(n)) return "coming-soon";
 
   if (!baseLive) {
-    const m = /^\/netherlands\/moving\/guides\/([a-z0-9-]+)\/$/.exec(n);
+    const m = /^\/netherlands\/moving\/guides\/([a-z0-9-]+)\/?$/.exec(n);
     if (m) {
       const reg = findMovingGuideBySlug(m[1]);
       if (reg) {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArrowRight } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { GuidePageTemplate } from "@/components/page/page-templates";
@@ -81,7 +82,7 @@ const FAQ_SCHEMA = livingDailyLifeFaq.map((item) => ({
 
 export function DailyLifeView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(LIVING_DAILY_LIFE_PATH, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(LIVING_DAILY_LIFE_PATH);
   const meta = livingDailyLifeMeta;
   const hero = livingDailyLifeHero;
   const tips = livingDailyLifeTips.startHere;
@@ -90,8 +91,8 @@ export function DailyLifeView() {
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: new URL(LIVING_SURVIVAL_GUIDE_PATH, baseUrl).toString() },
-    { name: "Daily life basics", item: new URL(LIVING_DAILY_LIFE_PATH, baseUrl).toString() },
+    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: absoluteUrlFromPath(LIVING_SURVIVAL_GUIDE_PATH) },
+    { name: "Daily life basics", item: absoluteUrlFromPath(LIVING_DAILY_LIFE_PATH) },
   ];
 
   const primaryCtaClass = cn(

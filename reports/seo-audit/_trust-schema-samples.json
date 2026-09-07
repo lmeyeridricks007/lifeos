@@ -1,0 +1,4375 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "schema_types": [
+      "BreadcrumbList",
+      "ContactPoint",
+      "ListItem",
+      "Organization",
+      "WebSite"
+    ],
+    "schema_block_count": 3,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": false,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/about",
+    "status": 200,
+    "schema_types": [
+      "AboutPage",
+      "BreadcrumbList",
+      "ContactPoint",
+      "ListItem",
+      "Organization",
+      "WebSite"
+    ],
+    "schema_block_count": 4,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/about/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": true,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": false,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://www.expatcopilot.com/about/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About ExpatCopilot",
+        "description": "Learn about ExpatCopilot, a practical relocation platform built to help expats move to the Netherlands with guides, tools, city insights, and trusted service discovery.",
+        "url": "https://www.expatcopilot.com/about/",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        },
+        "mainEntity": {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com",
+          "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+          "logo": "https://www.expatcopilot.com/icon.svg",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "url": "https://www.expatcopilot.com/contact/",
+            "contactType": "customer service"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "path": "/affiliate-disclosure",
+    "status": 200,
+    "schema_types": [
+      "ContactPoint",
+      "Organization",
+      "WebSite"
+    ],
+    "schema_block_count": 2,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": false,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/contact",
+    "status": 200,
+    "schema_types": [
+      "ContactPoint",
+      "Organization",
+      "WebSite"
+    ],
+    "schema_block_count": 2,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": true,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": false,
+      "verify_official": false,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/disclaimer",
+    "status": 200,
+    "schema_types": [
+      "ContactPoint",
+      "Organization",
+      "WebSite"
+    ],
+    "schema_block_count": 2,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": false,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/editorial-policy",
+    "status": 200,
+    "schema_types": [
+      "ContactPoint",
+      "Organization",
+      "WebSite"
+    ],
+    "schema_block_count": 2,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": true,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": false,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/how-we-rank-services",
+    "status": 200,
+    "schema_types": [
+      "ContactPoint",
+      "Organization",
+      "WebSite"
+    ],
+    "schema_block_count": 2,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": false,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/methodology",
+    "status": 200,
+    "schema_types": [
+      "ContactPoint",
+      "Organization",
+      "WebSite"
+    ],
+    "schema_block_count": 2,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/netherlands",
+    "status": 200,
+    "schema_types": [
+      "BreadcrumbList",
+      "ContactPoint",
+      "ListItem",
+      "Organization",
+      "WebSite"
+    ],
+    "schema_block_count": 3,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": false,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/cities/amsterdam",
+    "status": 200,
+    "schema_types": [
+      "ContactPoint",
+      "Organization",
+      "WebSite"
+    ],
+    "schema_block_count": 2,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": false,
+      "verify_official": false,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/citizenship/permanent-residence",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "ListItem",
+      "Organization",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 5,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/citizenship/permanent-residence/"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "ind.nl",
+      "www.government.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Residence permits",
+            "item": "https://www.expatcopilot.com/netherlands/moving/residence-permits/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Permanent residence",
+            "item": "https://www.expatcopilot.com/netherlands/citizenship/permanent-residence/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Permanent Residence in the Netherlands",
+        "description": "Permanent residence after HSM or other lawful stay in the Netherlands: the five-year path, inburgering vs exemption, job changes near year five, what PR is not (citizenship), and how to sequence official IND steps. Orientation only \u2014 not legal advice.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2026-09-06",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/citizenship/permanent-residence/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "I have been on HSM for about five years. If I lose my sponsor, do I automatically get permanent residence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Permanent residence is a separate IND application with its own requirements (including consecutive lawful stay and usually civic integration at A2 or an exemption). Losing a sponsor triggers HSM unemployment / job-search rules first \u2014 see the HSM and layoffs guides. PR is not the emergency bridge for unemployment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a Highly Skilled Migrant permit become permanent after five years?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. IND notes that with a residence permit for 5 years you can apply for permanent residence. You still must meet the requirements and submit an application. Holding HSM for five years is not the same as being granted permanent status."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is permanent residence the same as Dutch citizenship?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Permanent residence is a long-term stay permit. Citizenship changes nationality and follows separate naturalisation or option rules. See our Dutch citizenship guide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need inburgering before permanent residence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually you need a civic integration exam at at least A2, or an IND-recognised exemption or dispensation, for a more secure residence permit. That is not always identical to any integration obligation on your first permit. Read IND\u2019s civic integration page and our inburgering guide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I change employers in year four or five and still count those years?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Continuous lawful residence matters. A change to another recognised sponsor can keep HSM stay lawful if IND and sponsor rules are followed. Gaps after a job-search period, late renewals, or periods without a valid permit can put continuity at risk. Confirm with IND guidance and, for complex switches, qualified advice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I apply?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "IND states your residence permit must still be valid when you apply. You can apply from 3 months before it expires. If you have already lived with a residence permit for more than 5 years, IND says you can choose when to apply. Always confirm on the IND permanent residence page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I spent months outside the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Long absences can affect consecutive residence. Build a timeline with entry dates, permit types, and travel \u2014 then check IND\u2019s exceptions page or speak to an immigration adviser."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/health/health-insurance-comparison-netherlands",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "HowTo",
+      "HowToStep",
+      "ListItem",
+      "MedicalSpecialty",
+      "MedicalWebPage",
+      "Organization",
+      "PeopleAudience",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 8,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/health/health-insurance-comparison-netherlands/",
+      "https://www.expatcopilot.com/netherlands/health/health-insurance-comparison-netherlands/#how-it-works"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "www.government.nl",
+      "www.rijksoverheid.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Health Insurance Comparison in the Netherlands",
+        "description": "Compare Dutch health insurance as an expat \u2014 basic vs supplementary decision factors, natura vs restitutie, eigen risico tradeoffs, English support, claims and what to check on comparison sites. Not an insurer ranking.",
+        "url": "https://www.expatcopilot.com/netherlands/health/health-insurance-comparison-netherlands/",
+        "datePublished": "2027-02-19",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Health Insurance Comparison in the Netherlands",
+        "description": "Compare Dutch health insurance as an expat \u2014 basic vs supplementary decision factors, natura vs restitutie, eigen risico tradeoffs, English support, claims and what to check on comparison sites. Not an insurer ranking.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2027-02-19",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/health/health-insurance-comparison-netherlands/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "Health Insurance Comparison in the Netherlands",
+        "description": "Compare Dutch health insurance as an expat \u2014 basic vs supplementary decision factors, natura vs restitutie, eigen risico tradeoffs, English support, claims and what to check on comparison sites. Not an insurer ranking.",
+        "url": "https://www.expatcopilot.com/netherlands/health/health-insurance-comparison-netherlands/",
+        "datePublished": "2027-02-19",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatLife",
+          "url": "https://www.expatcopilot.com"
+        },
+        "about": {
+          "@type": "MedicalSpecialty",
+          "name": "Health Insurance Comparison / Zorgverzekering vergelijken",
+          "description": "Orientation for expats on comparing Dutch health insurance \u2014 basic vs supplementary decision factors, insurer choice factors, eigen risico tradeoffs and what to check on comparison sites. Not an insurer ranking."
+        },
+        "audience": {
+          "@type": "PeopleAudience",
+          "audienceType": "Expats living in or relocating to the Netherlands"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "url": "https://www.expatcopilot.com/netherlands/health/health-insurance-comparison-netherlands/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is the basic health insurance package the same across Dutch insurers?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The basic package is largely standardised in what it covers. Insurers still differ in policy type (for example network-oriented versus more open reimbursement styles), service, apps, English support and contracted providers. Compare those factors rather than hunting for large mythical gaps in basic benefits."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need supplementary insurance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not automatically. Supplementary packages help when you expect gaps such as adult dental care or many physiotherapy sessions. If you cannot name a likely use, a leaner setup can be rational \u2014 revisit next year. See Physiotherapy, Dentists and Maternity care guides for care-context examples."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between natura and restitutie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Broadly, natura-oriented policies emphasise contracted providers with smoother in-network billing, while restitutie-oriented policies generally allow more provider freedom with different reimbursement rules for non-contracted care. Labels and percentages vary \u2014 always read the policy for your year."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is eigen risico and should I raise it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Eigen risico is the adult annual deductible for many basic-insured pathways. For orientation in 2026 the mandatory amount is about \u20ac385; voluntary top-ups can raise it while lowering premium. Whether to raise it depends on your cash buffer and expected care \u2014 this page does not advise either choice. Verify current steps with your insurer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I rely on Independer or other comparison sites?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use them as filtering tools for the correct policy year. They are not official rankings and not a substitute for reading conditions or confirming English support and networks with the insurer. This guide does not crown a winner from any comparison site."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When can I switch health insurance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most voluntary switches aim for a 1 January start and must meet year-end deadlines. Newcomers also have arrival-related mandate timing covered in the Early Setup Health Insurance guide. Mid-year changes are more limited \u2014 ask your insurer rather than relying on forum advice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which insurer is best for expats?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no official \u201cbest for expats\u201d insurer crown on ExpatLife. The useful question is which combination of network type, extras, deductible and English support fits your year. Score those factors; ignore fake awards."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does this page relate to the Early Setup Health Insurance guide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Early Setup owns who must insure, the four-month rule and basic-package overview. This cornerstone owns comparison decision factors. Read Early Setup first if you are new, then use this framework to compare."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Comparing Health Insurance in the Netherlands",
+        "description": "Step-by-step orientation for expats on comparing Dutch health insurance: clarifying needs, separating basic from supplementary, scoring insurer factors, setting eigen risico tradeoffs, verifying comparison-site filters and confirming before switching.",
+        "url": "https://www.expatcopilot.com/netherlands/health/health-insurance-comparison-netherlands/#how-it-works",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Open the Early Setup guide for mandate basics",
+            "text": "Confirm who must insure, timing and what the basic package broadly includes before you compare."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Build a one-page need list",
+            "text": "Note dental, physio, maternity extras, medicines, specialist care and language preferences for the next year."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Choose network and deductible posture",
+            "text": "Decide natura vs restitutie preference and whether voluntary excess fits your cash buffer."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Filter on a comparison site for the correct year",
+            "text": "Apply filters for extras and deductible, then open the shortlist policies \u2014 do not stop at the top row."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Confirm with the insurer and switch on time",
+            "text": "Verify English support, network notes and claims process, then complete switching before the deadline."
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Health",
+            "item": "https://www.expatcopilot.com/netherlands/health/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Health insurance comparison",
+            "item": "https://www.expatcopilot.com/netherlands/health/health-insurance-comparison-netherlands/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/health/hospitals-netherlands",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "HowTo",
+      "HowToStep",
+      "ListItem",
+      "MedicalSpecialty",
+      "MedicalWebPage",
+      "Organization",
+      "PeopleAudience",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 8,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/health/hospitals-netherlands/",
+      "https://www.expatcopilot.com/netherlands/health/hospitals-netherlands/#how-it-works"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": false,
+      "not_medical": true,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "www.government.nl",
+      "www.rijksoverheid.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Hospitals in the Netherlands",
+        "description": "Learn how hospitals work in the Netherlands, including referrals, admissions, specialists, emergency departments, insurance, university medical centres and what expats should expect.",
+        "url": "https://www.expatcopilot.com/netherlands/health/hospitals-netherlands/",
+        "datePublished": "2027-02-10",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Hospitals in the Netherlands",
+        "description": "Learn how hospitals work in the Netherlands, including referrals, admissions, specialists, emergency departments, insurance, university medical centres and what expats should expect.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2027-02-10",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/health/hospitals-netherlands/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "Hospitals in the Netherlands",
+        "description": "Learn how hospitals work in the Netherlands, including referrals, admissions, specialists, emergency departments, insurance, university medical centres and what expats should expect.",
+        "url": "https://www.expatcopilot.com/netherlands/health/hospitals-netherlands/",
+        "datePublished": "2027-02-10",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatLife",
+          "url": "https://www.expatcopilot.com"
+        },
+        "about": {
+          "@type": "MedicalSpecialty",
+          "name": "Hospital Care / Secondary Care",
+          "description": "Orientation for expats on hospital care in the Netherlands \u2014 GP referrals, hospital types, outpatient clinics (polikliniek), admissions (opname), medical specialists, university medical centres, emergency departments (SEH), costs and patient rights."
+        },
+        "audience": {
+          "@type": "PeopleAudience",
+          "audienceType": "Expats living in or relocating to the Netherlands"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "url": "https://www.expatcopilot.com/netherlands/health/hospitals-netherlands/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need a referral to go to a hospital in the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For planned specialist care, yes \u2014 you normally need a referral (verwijzing) from your GP, and insurers generally expect a valid referral for reimbursement. Emergency care is different: 112 and emergency departments do not require a referral. Keep the referral letter or digital confirmation with your appointment documents."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I choose which hospital I go to?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For planned care you usually have a choice, and your GP will often suggest options. Weigh travel distance, whether your insurer has a contract with the hospital, waiting time for that specialty and whether your condition needs concentrated expertise. For highly specialised treatment, the choice may be limited to a few centres."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does my health insurance cover hospital treatment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dutch basic health insurance covers medically necessary hospital care. For adults the annual deductible (eigen risico) usually applies to hospital care, unlike GP consultations. Using a non-contracted hospital can mean a larger personal share depending on your policy type. Verify your own policy and treatment with your insurer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I ask for a second opinion?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Requesting a second opinion from another specialist is an accepted part of Dutch care. Arrange it through your GP or your current specialist, ask which records should be shared, and check with your insurer how it is covered under your policy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a university medical centre and when would I go there?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A university medical centre (UMC) is a hospital attached to a medical faculty that combines complex patient care with education and research. You may be referred there by your GP, but more often by another hospital when a condition is rare or highly complex. Expect multidisciplinary teams and the possible involvement of specialists in training and students."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will hospital staff speak English?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In larger cities and academic centres, English is often workable, and many clinicians are comfortable in it \u2014 but it is not guaranteed everywhere. Ask when booking whether the consultation can be in English or whether an interpreter can be arranged, particularly for consent conversations and complex decisions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long are hospital waiting times?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Waiting times vary by specialty, hospital and season, and hospitals publish indicative waiting information. If a wait seems too long, ask the clinic about cancellation slots and contact your insurer's care-mediation service (zorgbemiddeling), which can look for earlier availability at contracted providers."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when I am admitted to hospital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Planned admissions usually start with pre-admission screening and, for surgery, an anaesthesia intake, followed by clear preparation instructions. On the ward you meet nurses, specialists in training and the responsible specialist, with daily rounds. Stays are kept as short as clinically appropriate, ending with a discharge conversation about medication, warning signs, aftercare and follow-up, plus a letter to your GP."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between a polikliniek and the SEH?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The polikliniek is the outpatient clinic where planned, appointment-based specialist care happens. The SEH is the emergency department, which handles serious emergencies and triages by severity, receiving many patients by ambulance or on referral. Use the polikliniek for planned care and the appropriate emergency door \u2014 GP, huisartsenpost or 112 \u2014 for urgent situations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I go to the emergency department instead of waiting for an appointment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No \u2014 that is not what emergency departments are for, and non-urgent patients are commonly redirected. For urgent problems, contact your GP during opening hours or the huisartsenpost outside them; they refer you to the SEH if hospital assessment is needed. Call 112 whenever life may be at risk."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can my family stay with me or with my child in hospital?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Visiting arrangements vary by ward and hospital. For children, parents are normally able to stay with them, including during many procedures and often overnight. Ask the specific ward about visiting hours, numbers of visitors and any current restrictions before family travels."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I get my test results and medical records?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Results are usually discussed at a follow-up appointment, by phone or through the hospital patient portal. You also have the right to access your own medical record. Ask how to activate portal access and confirm at each appointment how and when results will reach you \u2014 do not assume silence means everything is fine."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I need hospital care and have just arrived in the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Register with a huisarts and arrange Dutch basic health insurance as early as you can, because both are needed for smooth planned hospital access. Bring translated records from care abroad so investigations are not repeated. In a life-threatening emergency, call 112 regardless of your registration status."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who is responsible for my care after hospital treatment ends?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Your GP. When the specialist episode closes, the hospital sends a letter to your huisarts, who resumes ongoing monitoring, repeat prescriptions and follow-up questions. If new specialist input is needed later, the GP can issue a new referral."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Preparing for a Hospital Appointment in the Netherlands",
+        "description": "Step-by-step orientation for expats and newcomers preparing for a Dutch hospital outpatient appointment \u2014 confirming the referral, following preparation instructions, collecting documents, writing questions and agreeing the follow-up plan.",
+        "url": "https://www.expatcopilot.com/netherlands/health/hospitals-netherlands/#how-it-works",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Confirm your referral and appointment details",
+            "text": "Check that your GP referral names the right specialty and that your appointment letter lists the hospital, clinic, building, floor and time. Confirm whether you must arrive earlier for registration or blood tests."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Follow any preparation instructions exactly",
+            "text": "Read the letter or portal message for fasting instructions, medication pauses, hydration requirements or forms to complete in advance. If anything is unclear, call the clinic secretariat before the appointment rather than guessing."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Collect your documents",
+            "text": "Bring ID, your BSN, insurance details, the referral, a current medication and allergy list, and any relevant results or letters from previous care, including care abroad."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Write a symptom timeline and your top questions",
+            "text": "Note when symptoms started, what makes them better or worse, what has already been tried, and the three questions you most want answered. Appointments are focused, so a written list keeps nothing behind."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Arrange language support and a companion if useful",
+            "text": "Ask the clinic in advance about English-language consultation or interpreter options, and bring someone who can listen and take notes if the topic is complex or stressful."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Plan travel, parking and timing",
+            "text": "Allow time for parking or public transport, finding the right building and registration. Arriving unhurried matters more than arriving early at the wrong entrance."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 7,
+            "name": "During the appointment, confirm the plan",
+            "text": "Ask what the working diagnosis is, what the next investigation or treatment step is, what the alternatives are, and what would change the plan. Repeat the plan back in your own words to check you understood it."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 8,
+            "name": "Before leaving, agree the follow-up",
+            "text": "Confirm who arranges the next appointment, how and when you will receive results, who to contact with questions, and whether your GP will be informed."
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Health",
+            "item": "https://www.expatcopilot.com/netherlands/health/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Hospitals",
+            "item": "https://www.expatcopilot.com/netherlands/health/hospitals-netherlands/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/housing/rental-contracts-and-deposits-netherlands",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "HowTo",
+      "HowToStep",
+      "ListItem",
+      "Organization",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 7,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/housing/rental-contracts-and-deposits-netherlands/"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "www.government.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Rental Contracts and Deposits in the Netherlands",
+        "description": "Learn how rental contracts, deposits, inspections and tenant responsibilities work in the Netherlands before signing a lease.",
+        "url": "https://www.expatcopilot.com/netherlands/housing/rental-contracts-and-deposits-netherlands/",
+        "datePublished": "2026-11-12",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Rental Contracts and Deposits in the Netherlands",
+        "description": "Learn how rental contracts, deposits, inspections and tenant responsibilities work in the Netherlands before signing a lease.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2026-11-12",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/housing/rental-contracts-and-deposits-netherlands/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "url": "https://www.expatcopilot.com/netherlands/housing/rental-contracts-and-deposits-netherlands/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do rental contracts work in the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A rental agreement sets rent, duration, maintenance split, notice rules and permitted use. Contract type (fixed-term vs indefinite) affects flexibility. Read the full document before signing \u2014 this guide is orientation only."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much deposit is usually required?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Orientation: often one to two months rent, but amounts vary. Your contract should state the figure, payment method and conditions for return. Never pay without verifying recipient details."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is an inventory list?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A record of furniture, appliances and property condition at move-in. Sign when accurate and supplement with dated photographs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I take photos before moving in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Photograph walls, floors, appliances and meter readings on day one. Store images with dates alongside the signed inventory."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are utilities included in rent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often not. Electricity, gas, water, internet and waste may be separate. The lease should state who arranges and pays each service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens when I move out?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Follow notice rules, clean to contract standard, attend inspection if offered, return keys and close utilities. Deposit discussions should reference move-in documentation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I review before signing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rent, deposit, utilities, maintenance duties, notice periods, inventory, pets, guests and indexation clauses. Ask questions before paying."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do inspections work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Move-in inspections document condition; move-out inspections compare against inventory and photos. Attend when possible and keep copies of any reports."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Move-in inspection checklist for Dutch rentals",
+        "description": "Practical steps to document property condition when moving into a rental in the Netherlands.",
+        "url": "https://www.expatcopilot.com/netherlands/housing/rental-contracts-and-deposits-netherlands/",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Walk through every room",
+            "text": "Check walls, floors, windows and doors before unpacking."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Record meter readings",
+            "text": "Photograph electricity, gas and water meters on arrival."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Test appliances",
+            "text": "Run kitchen and bathroom fixtures; note faults immediately."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Sign inventory accurately",
+            "text": "Correct the inventory list before signing if items or marks are missing."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Photograph existing damage",
+            "text": "Take dated photos of scratches, stains and wear."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Report issues in writing",
+            "text": "Email the landlord with photos and request confirmation."
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Housing",
+            "item": "https://www.expatcopilot.com/netherlands/housing/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Rental Contracts and Deposits",
+            "item": "https://www.expatcopilot.com/netherlands/housing/rental-contracts-and-deposits-netherlands/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/jobs/employment-contract-netherlands",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "ListItem",
+      "Organization",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 6,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/jobs/employment-contract-netherlands/"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": true,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "ind.nl",
+      "www.government.nl",
+      "www.uwv.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Employment Contracts in the Netherlands",
+        "description": "Learn how employment contracts work in the Netherlands, including permanent and temporary contracts, probation periods, notice periods, benefits and key clauses expats should understand.",
+        "url": "https://www.expatcopilot.com/netherlands/jobs/employment-contract-netherlands/",
+        "datePublished": "2026-08-19",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Employment Contracts in the Netherlands",
+        "description": "Learn how employment contracts work in the Netherlands, including permanent and temporary contracts, probation periods, notice periods, benefits and key clauses expats should understand.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2026-08-19",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/jobs/employment-contract-netherlands/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "url": "https://www.expatcopilot.com/netherlands/jobs/employment-contract-netherlands/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a Dutch employment contract?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A written agreement outlining employment terms such as salary, hours, benefits, notice periods and contract duration. Most employees in the Netherlands receive one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a temporary contract normal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Fixed-term contracts are common, especially for new hires. Many expats begin on temporary contracts before more stable arrangements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a probation period?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An early assessment period (proeftijd) where different notice rules may apply. Duration and conditions should be stated in your contract."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do notice periods work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Notice for resignation or termination is usually defined in the contract or applicable CAO. Rules may differ during probation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What benefits are common?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pension participation, holiday allowance, commuting support and training budgets are common \u2014 but vary by employer and sector."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can contracts affect visa sponsorship?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For sponsored routes, contract salary, duration and employer status may matter. Verify current IND requirements on official sources \u2014 this is not immigration advice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do contracts affect mortgage eligibility?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lenders often review contract type, probation and income stability. Permanent contracts may be viewed differently from fixed-term roles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should expats review before signing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Salary, duration, probation, notice, pension, relocation clauses, bonus structure and remote-work policy. Use our contract risk scanner for clause awareness \u2014 not legal verdicts."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Jobs",
+            "item": "https://www.expatcopilot.com/netherlands/moving/working-in-the-netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Employment Contracts",
+            "item": "https://www.expatcopilot.com/netherlands/jobs/employment-contract-netherlands/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/life/dating-in-the-netherlands",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "ItemList",
+      "ListItem",
+      "Organization",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 8,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands/"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": false,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Dating in the Netherlands",
+        "description": "Everything expats need to know about dating in the Netherlands including Dutch dating culture, apps, singles events, hiking groups, social clubs, active holidays and where to genuinely meet people.",
+        "url": "https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands/",
+        "datePublished": "2026-11-25",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Dating in the Netherlands",
+        "description": "Everything expats need to know about dating in the Netherlands including Dutch dating culture, apps, singles events, hiking groups, social clubs, active holidays and where to genuinely meet people.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2026-11-25",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "url": "https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is dating difficult in the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can feel slow at first because many people have established circles. Apps, sports, volunteering and events all help \u2014 consistency matters more than any single channel."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which dating app is best?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depends on city and intent: Tinder and Bumble for volume, Hinge for relationships, Inner Circle and Breeze in Amsterdam, Lexa and Paiq for Dutch platforms. Try one mainstream and one local option."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can I meet Dutch people?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sports clubs, language exchanges, volunteering, neighbourhood events and hobbies \u2014 not only apps. Recurring activities create the most natural contact."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do Dutch relationships work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often direct about intentions, equal splitting of costs and independent social lives. Exclusivity is usually discussed rather than assumed \u2014 individuals vary widely."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What age groups use which apps?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tinder and Bumble span 20s\u201340s; Hinge skews late 20s\u201340s; Lexa and Parship skew 30s\u201350s+; Inner Circle and Breeze often 25\u201345 in cities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are singles events worth it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes for practice meeting people and expanding your circle \u2014 treat outcomes as bonus, not guarantee. Speed dating and activity events suit different personalities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where can expats meet people?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "InterNations, AIC, Meetup, Facebook groups, expat hiking clubs and international sports \u2014 pair with local clubs for balance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I date safely?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Public first meetings, tell a friend, use app reporting tools, never send money and trust your instincts. See the safety checklist on this page."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Dating apps in the Netherlands",
+        "url": "https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands/",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Tinder",
+            "description": "Broad, casual to serious. Largest pool in cities Best in Amsterdam, Rotterdam, Utrecht. Free; Plus/Gold paid."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Bumble",
+            "description": "Women message first. Professional and creative crowd Best in Randstad cities. Free; Premium paid."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Hinge",
+            "description": "Relationship-oriented. Prompts encourage conversation Best in Amsterdam, Utrecht, The Hague. Free; Preferred paid."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Inner Circle",
+            "description": "Professionals. Events plus app; Amsterdam roots Best in Amsterdam (strongest), Rotterdam. Free; membership tiers."
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Breeze",
+            "description": "Meet in person fast. Dutch app \u2014 dates over endless chat Best in Amsterdam, Utrecht. Free with paid features."
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Badoo",
+            "description": "Broad international. Large user base Best in Nationwide. Free; Premium paid."
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Lexa",
+            "description": "Dutch long-form dating. Established NL platform Best in Nationwide. Subscription."
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Paiq",
+            "description": "Guided matching. Dutch matching with events Best in Randstad. Paid plans."
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "name": "Parship",
+            "description": "Serious relationships. Personality matching Best in Nationwide. Subscription."
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "name": "EliteSingles",
+            "description": "Educated professionals. Compatibility focus Best in Major cities. Subscription."
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "name": "Happn",
+            "description": "Crossed paths locally. Location-based serendipity Best in Dense urban areas. Free; Premium paid."
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "name": "Feeld",
+            "description": "Alternative relationships. Inclusive preferences Best in Amsterdam, Rotterdam. Free; Majestic paid."
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "name": "HER",
+            "description": "Queer women & non-binary. Community and events Best in Amsterdam, Utrecht. Free; Premium paid."
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "name": "Grindr",
+            "description": "Gay, bi, trans men. Large LGBTQ+ pool Best in All major cities. Free; Xtra paid."
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Singles events in the Netherlands",
+        "url": "https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands/",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Original Dating",
+            "description": "English-speaking professionals, ages 28\u201345. Speed dating and themed nights. Typical cost: \u20ac25\u2013\u20ac45. Cities: Amsterdam, Rotterdam."
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Single Event",
+            "description": "Mixed Dutch/international, ages 25\u201355. Parties, dinners and activity dates. Typical cost: \u20ac20\u2013\u20ac40. Cities: Nationwide listings."
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Meet5",
+            "description": "Small group dining, ages 25\u201350. Five strangers at a restaurant table. Typical cost: Meal cost. Cities: Major cities."
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "AIC International",
+            "description": "Expats and internationals, ages 25\u201345. Socials and singles-oriented mixers. Typical cost: \u20ac15\u2013\u20ac35. Cities: Amsterdam, The Hague."
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "FunX / local promoters",
+            "description": "Urban nightlife crowd, ages 21\u201335. Check listings \u2014 themes vary by season. Typical cost: \u20ac10\u2013\u20ac25. Cities: Amsterdam, Rotterdam."
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Wine tastings",
+            "description": "Food and drink enthusiasts, ages 28\u201350. Liquor stores and event venues host singles nights. Typical cost: \u20ac30\u2013\u20ac60. Cities: Amsterdam, Utrecht."
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "Cooking classes",
+            "description": "Hands-on social learners, ages 25\u201345. Pair cooking with natural conversation. Typical cost: \u20ac45\u2013\u20ac80. Cities: Major cities."
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "Amsterdam singles cruises / canal socials",
+            "description": "Tourists and locals, ages 25\u201340. Seasonal \u2014 book via event platforms. Typical cost: \u20ac25\u2013\u20ac50. Cities: Amsterdam."
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Life in the Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/life/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Dating in the Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/living/survival-guide",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "ListItem",
+      "Organization",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 5,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/living/survival-guide/"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": false,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "www.government.nl",
+      "www.rijksoverheid.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Living in the Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/living/survival-guide/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Netherlands Survival Guide for Expats",
+        "description": "Practical day-one through day-thirty guidance for the Netherlands\u2014transport, apps, payments, groceries, weather, and the habits newcomers bookmark.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2026-04-08",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/living/survival-guide/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What do I actually need in the first days after landing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A phone that works, a payment method shops will accept, and a transit app so you are not guessing at gates. Then line up registration \u2192 BSN \u2192 bank \u2192 insurance in the order your gemeente and employer allow\u2014nothing else matters until you can move, pay, and receive post."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which apps should I download first?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Open Essential apps for life in the Netherlands (/netherlands/living/apps/) for the curated install order (transport, Tikkie, groceries, delivery, chat). In short: NS and 9292 when trains and multimodal legs matter, OVpay once you tap, maps, your bank app when live, then supermarket and delivery apps when you know your chains and postcode. Add parking or gemeente apps only when the errand exists."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get around without speaking Dutch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In most cities and international offices, yes for day-to-day errands. The pain points are official letters, some phone trees, and neighbour small talk\u2014ten polite phrases plus Google Translate for post gets you surprisingly far."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a Dutch bank card immediately?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You need a way to pay the way tills expect\u2014usually debit or contactless on a Dutch account. Foreign cards bridge a short window, but rent, iDEAL checkouts, and subscriptions get calmer once local banking is live."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is public transport hard to figure out?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The network is excellent; the gotcha is discipline\u2014check in and out, know your peak rules, and trust live departures in an app. For short hops, a bike often beats waiting\u2014most locals mix both without thinking."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What catches people off guard in ordinary Dutch life?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PIN-first tills, weather that flips in an hour, how much right-of-way bikes expect, grocery hours (especially Sundays), and the flood of letters that suddenly make sense once DigiD is active. None of it is exotic\u2014just different defaults."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Right after I get keys, what should I tackle first?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Meter readings, any utilities you\u2014not the landlord\u2014must register, internet if you work from home, and the waste calendar for your address. Snap a photo of the sorting rules on the bin room door; it saves arguments later."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I rely on English for everything?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For shopping, dining, and many jobs, often yes. Still assume important post is Dutch\u2014machine translation is fine for a first pass, but tax and housing letters deserve a slow read or a second pair of eyes."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/money/banking/best-banks-expats",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "HowTo",
+      "HowToStep",
+      "ListItem",
+      "Organization",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 7,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats/",
+      "https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats/#howto"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": true,
+      "not_medical": false,
+      "not_financial": true,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": false,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Best Banks for Expats in the Netherlands",
+        "description": "Compare Dutch bank options for expats: onboarding, English support, fees, and everyday use \u2014 an editorial shortlist to verify on each bank\u2019s site, not a pay-to-rank awards page.",
+        "url": "https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats/",
+        "datePublished": "2026-08-13",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Best Banks for Expats in the Netherlands",
+        "description": "Compare Dutch bank options for expats: onboarding, English support, fees, and everyday use \u2014 an editorial shortlist to verify on each bank\u2019s site, not a pay-to-rank awards page.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2026-08-13",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "url": "https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the best bank for expats in the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no universal winner. \u201cBest\u201d depends on BSN timing, whether you need branch help, fee sensitivity, and whether you must optimise for payroll, rent and iDEAL on a Dutch-licensed account. Use the comparison table and use-case cards, then confirm details on each bank\u2019s site."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I open a bank account without a BSN?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sometimes partial onboarding exists, but most mainstream Dutch accounts expect a BSN within a defined window. Policies change \u2014 read the bank\u2019s current expat or newcomer FAQ rather than relying on older threads."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are digital banks safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Regulated Dutch payment institutions must meet supervisory requirements. EU passported products differ in deposit insurance and consumer protections \u2014 read the disclosures for the specific product you open, not the marketing headline."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which bank is cheapest?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cheapest depends on how you use the account: card withdrawals abroad, FX, overdraft and subscription tiers all matter. Start from a monthly budget for banking fees, then compare official price lists for the exact package. See also Cheapest bank accounts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use Revolut or N26 in the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, many residents use them for spending and travel. Whether they can replace a Dutch account for your employer, landlord and utilities is a separate question \u2014 validate contract language and biller requirements."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a Dutch bank account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not legally for every single person, but practically most residents want a Dutch IBAN account for salary, rent, tax and local direct debits. A foreign app alone is often the wrong tool for that bundle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is iDEAL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "iDEAL is a common online payment method in the Netherlands that debits a Dutch bank account through your bank\u2019s app or flow. Deeper rails live on How payments work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this a paid ranking or awards page?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This is an editorial shortlist and comparison guide. Affiliate links may appear in a clearly labelled provider block \u2014 they do not change the editorial table or guarantee approval."
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to shortlist a Dutch bank as an expat",
+        "description": "Calm steps to compare Dutch bank options for expats and verify fees and eligibility on official bank sites.",
+        "url": "https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats/#howto",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Write your use case",
+            "text": "List salary, rent, iDEAL, travel FX and whether you want branch help."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Scan the comparison table",
+            "text": "Note onboarding and English patterns that match your situation."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Open two bank sites",
+            "text": "Confirm current newcomer rules, BSN timing and the exact package name."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Read fee PDFs",
+            "text": "Check monthly, card, ATM, FX and idle rules for your expected usage."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Name a backup",
+            "text": "Keep a second option if verification stalls or a biller rejects the first account type."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 6,
+            "name": "Move to setup",
+            "text": "Follow Open a bank account for documents and steps \u2014 return here only if you need to re-shortlist."
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Banking",
+            "item": "https://www.expatcopilot.com/netherlands/money/banking/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Best banks for expats",
+            "item": "https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/money/how-taxes-work-in-the-netherlands",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "ListItem",
+      "Organization",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 6,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/money/how-taxes-work-in-the-netherlands/"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": true,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "www.belastingdienst.nl",
+      "www.government.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "How Taxes Work in the Netherlands",
+        "description": "Dutch tax system in plain English: payroll vs annual return, Box 1\u20133, credits vs allowances, and links to calculators \u2014 educational only; confirm your year with Belastingdienst.",
+        "url": "https://www.expatcopilot.com/netherlands/money/how-taxes-work-in-the-netherlands/",
+        "datePublished": "2026-04-28",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Money",
+            "item": "https://www.expatcopilot.com/netherlands/money/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "How Taxes Work in the Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/money/how-taxes-work-in-the-netherlands/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "How Taxes Work in the Netherlands",
+        "description": "Dutch tax system in plain English: payroll vs annual return, Box 1\u20133, credits vs allowances, and links to calculators \u2014 educational only; confirm your year with Belastingdienst.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2026-04-28",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/money/how-taxes-work-in-the-netherlands/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "url": "https://www.expatcopilot.com/netherlands/money/how-taxes-work-in-the-netherlands/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does tax work in the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most employees meet tax first as monthly payroll withholding on the payslip, then optionally through an annual income tax return that reconciles the full year. Credits, deductions, and allowances are separate ideas \u2014 this page maps them at a high level."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is payroll tax?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Payroll tax in everyday Dutch employment usually refers to withholding (often discussed as loonheffing) \u2014 money held by your employer each pay period. It is designed to approximate your annual income tax position, but it is not always identical to the final assessment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is payroll tax the same as final income tax?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. Withholding follows tables and employer setup; your final income tax can still change after credits, deductions, partner facts, assets, and other return-time items."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to file a tax return?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on your year, letters from Belastingdienst, and personal situation. Some people must file; others file because a refund or correction is likely. Use official guidance for your year rather than a general article."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are Box 1, Box 2, and Box 3?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They are filing buckets: broadly work and home-related income in Box 1, substantial shareholding situations in Box 2, and savings, investments, and wealth reporting in Box 3 \u2014 always confirm definitions for your tax year on official sites."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are tax credits and allowances?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tax credits reduce tax due; allowances (like certain toeslagen) are separate benefit-style supports with their own income and household rules \u2014 similar words, different mechanics."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my gross salary different from my net salary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gross is before withholding, social premiums, pension, and other payslip lines. Net is what is paid to your bank \u2014 use a calculator and then a real payslip to align assumptions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I use a tax advisor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Consider help when you have cross-border income or assets, self-employment, a messy move year, complex family facts, or you simply want a scoped professional review before filing."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/money/tools/cost-of-living-calculator",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "ListItem",
+      "Offer",
+      "Organization",
+      "Question",
+      "SoftwareApplication",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 6,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": true,
+      "not_medical": false,
+      "not_financial": true,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": false,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "www.government.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Netherlands Expat Cost of Living Calculator",
+        "description": "Client-side planning tool for expat monthly living costs in the Netherlands: city and household scenarios, setup cash, salary target band, URL share and local storage \u2014 indicative only, not financial advice.",
+        "url": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator/",
+        "applicationCategory": "Calculator",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Money hub",
+            "item": "https://www.expatcopilot.com/netherlands/money/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Money tools",
+            "item": "https://www.expatcopilot.com/netherlands/money/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "Cost of living calculator",
+            "item": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Netherlands Cost of Living Calculator 2026 | Expat Monthly Expenses, Setup Costs & Salary Target",
+        "description": "Plan expat cost of living in the Netherlands: monthly expenses by city (Amsterdam, Rotterdam, The Hague, Utrecht, Eindhoven), moving setup costs, first-month cash, savings buffer, and a recommended net salary band. Planning estimates only \u2014 not financial advice.",
+        "url": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is this financial, tax, or legal advice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This page is a planning estimator using simplified assumptions. It does not know your contract, visa, tax residency, benefits, debts, or eligibility for allowances. Confirm any big decision with qualified professionals and official sources."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How accurate is a Netherlands cost of living calculator for expats?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use it for ranges and trade-offs, not for signing a lease or accepting a salary. Rent, energy, childcare, and insurance move with markets and personal choices. Your real monthly expenses Netherlands total may be higher or lower than the estimate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does Amsterdam cost of living for expats look high?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Amsterdam rent and temporary housing are usually among the highest in the country. The model applies a higher rent anchor and grocery index than many other cities. Compare Rotterdam, The Hague, Utrecht, and Eindhoven in the same lifestyle tier to see the spread."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much salary do I need in the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The tool shows a recommended monthly net as a planning band on top of your scenario. Visa routes and employers may have their own thresholds. For take-home detail, use the Dutch salary net calculator and, if relevant, the 30% ruling calculator \u2014 they address payroll and facility norms, not grocery receipts."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does short-stay initial setup mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It models a higher monthly housing cost typical of temporary furnished options, with different deposit timing and overlap risk while you search for a long-term rental. It is still an estimate \u2014 real serviced apartments and hotels vary sharply by season."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How should I read the childcare line?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Childcare is highly individual (hours, age, daycare vs childminder, waiting lists). When you enable it, the line is an indicative monthly placeholder. If your household has no children selected yet, we still show a one-child default so the budget is not silently zero \u2014 add children or a family preset to scale the fee to your headcount."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the USD display represent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It applies a static planning exchange rate for rough mental conversion only. It is not a live forex quote and should not be used for bank transfers \u2014 check your bank or broker for real rates and fees."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I share my scenario?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Core inputs sync to the URL query string after you change them, and your last scenario is saved locally in your browser. Anyone who opens the shared link sees the same parameters; they do not need an account."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What salary do I need to live in Amsterdam?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no single number \u2014 rent, household size, and lifestyle swing the result. Use this tool with your housing mode and city, then cross-check the \u201csalary targets\u201d band with the Dutch salary net calculator. Visa routes may add separate minimums."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much should I budget before moving to the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Look at both one-time setup (deposit, furniture, travel, admin) and a recurring monthly total. The tool separates them on purpose: first-month cash is often setup plus roughly one month of recurring costs, plus an emergency buffer you can tune."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is childcare one of the biggest costs for families?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can be \u2014 hours, age, and waiting lists vary. When you enable childcare, the line is an indicative placeholder so families do not forget a major budget item; replace it with real quotes from providers when you have them."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does rent change the result?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually a lot. Model rent is often the largest monthly line; switching city, neighborhood band, or housing mode moves totals faster than small tweaks to groceries or subscriptions. Manual rent override is there when you already have a quote."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can the 30% ruling improve affordability?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can change take-home for the same gross, but eligibility and payroll setup are specific to you. Use the optional ruling assumption here as a coarse stress-test only, and the 30% ruling calculator for facility norms \u2014 not as tax advice."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this a real monthly budget or just a planning estimate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A planning estimate. It uses simplified anchors for rent bands, utilities, insurance, transport, and setup \u2014 not your actual contracts. Treat outputs as ranges for trade-offs and conversations, not as promises of what you will spend."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What salary is enough in Rotterdam, Utrecht, or The Hague compared to Amsterdam?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rent anchors differ by city and neighborhood band; Amsterdam is usually the highest in this model. Run the same household and lifestyle in each city here, then cross-check the balanced net band with the Dutch salary net calculator. Visa routes may impose separate minimums."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the calculator include international school tuition?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No exact tuition. The \u201cinternational / private\u201d schooling option adds a small monthly planning reserve only \u2014 you should replace it with real school fees and registration costs from the institutions you consider."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between monthly cost and first-month cash need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Monthly cost is recurring rent, utilities, insurance, transport, and similar lines each month. First-month cash need is setup (deposit, overlap, travel, furniture slice, admin, contingency) plus roughly one month of those recurring costs \u2014 it answers \u201chow much liquidity do I need around arrival,\u201d not your steady-state burn."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much money do you need to move to the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Plan for both: one-time setup cash (often dominated by deposit, overlap, and relocation) and a few months of recurring costs as a buffer. The tool shows setup total, first-month cash, emergency buffer, and pre-move buffer as separate lines so you do not confuse lump sums with monthly rent."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/moving/working-in-the-netherlands",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "ListItem",
+      "Organization",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 5,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/moving/working-in-the-netherlands/"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": true,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": false,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "ind.nl",
+      "www.belastingdienst.nl",
+      "www.government.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Moving",
+            "item": "https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Working in the Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/moving/working-in-the-netherlands/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Working in the Netherlands",
+        "description": "A practical Move guide for people relocating to the Netherlands for work \u2014 so you can understand the offer, the contract, the salary, the permit picture, and the first-month setup before the move starts feeling expensive or unclear.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2026-04-10",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/moving/working-in-the-netherlands/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What should I understand before moving to the Netherlands for work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start with the whole move picture, not only the role: the contract, salary after tax, housing reality, permit or sponsorship context, and the first-month admin that follows arrival. This page helps you get those threads straight before you open detailed tools."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a Dutch job offer only about salary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Salary matters, but so do contract type, probation, notice, pension, relocation help, sponsorship context, hybrid expectations, and city or commute impact. For many expats, the move fit matters almost as much as the role fit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How important are permits and sponsorship?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For many international hires, they matter a lot. The job and residence side are often linked, especially before arrival. This page stays high-level, but it should help you spot when you need the Visas & residency or Residence permits guides next."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I compare a Dutch offer properly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Look beyond headline gross. Compare net pay, benefits, contract stability, relocation support, rent pressure, commute, and household context. The Job offer comparison tool is the strongest next step when you have two real options on the table."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I sort out after I arrive?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually municipality registration, BSN, payroll setup, bank details, health insurance, and commute or housing basics. If work starts quickly, those systems can become urgent fast, so planning the first weeks matters."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do salary, rent, and tax fit together?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The same gross salary can feel very different depending on payroll deductions, pension, 30% ruling context, rent, city, commute, and household size. That is why salary, cost-of-living, and rent tools work best together rather than one number on its own."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if my job changes later?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Later job changes can affect not only work life but also your wider admin or residence picture. Start with Changing jobs in the Netherlands for a practical checklist across contracts, permits, and life setup, use Resigning a job in the Netherlands when you are planning to leave without a next role lined up yet, then use Extensions & changes for renewals and after-arrival shifts, and Status changes if the basis of your stay itself may be changing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this page legal or tax advice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. It is a practical orientation page inside the Move pillar. Use it to understand the shape of the decision, then confirm anything binding with official guidance, your employer, payroll, or a qualified adviser."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/official-figures",
+    "status": 200,
+    "schema_types": [
+      "Article",
+      "ContactPoint",
+      "Dataset",
+      "Organization",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 5,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/official-figures/"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "ind.nl",
+      "www.belastingdienst.nl",
+      "www.government.nl",
+      "www.rijksoverheid.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Netherlands official figures 2026",
+        "description": "Dated 2026 citation table: HSM salary floors, IND fees, 30% ruling norms and salary cap, adult minimum wage, eigen risico and typical basic health premium \u2014 with official source URLs. Not a calculator.",
+        "url": "https://www.expatcopilot.com/netherlands/official-figures/",
+        "datePublished": "2026-08-30",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Netherlands official figures 2026",
+        "description": "Dated 2026 citation table: HSM salary floors, IND fees, 30% ruling norms and salary cap, adult minimum wage, eigen risico and typical basic health premium \u2014 with official source URLs. Not a calculator. As of August 2026. Last reviewed 30 August 2026.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2026-08-30",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/official-figures/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Netherlands official figures 2026",
+        "description": "Dated 2026 citation table: HSM salary floors, IND fees, 30% ruling norms and salary cap, adult minimum wage, eigen risico and typical basic health premium \u2014 with official source URLs. Not a calculator.",
+        "url": "https://www.expatcopilot.com/netherlands/official-figures/",
+        "creator": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "temporalCoverage": "2026",
+        "dateModified": "2026-08-30",
+        "license": "https://www.expatcopilot.com/disclaimer/",
+        "isAccessibleForFree": true
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/taxes/30-percent-ruling",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "ListItem",
+      "Organization",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 6,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling/"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": true,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": true,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "www.belastingdienst.nl",
+      "www.government.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "30% Ruling in the Netherlands",
+        "description": "Plain-language 30% ruling guide for the Netherlands: 2026 Belastingdienst norms, eligibility vs payslip benefit, 2027 preview (not in force), and links to calculators \u2014 editorial, not tax advice.",
+        "url": "https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling/",
+        "datePublished": "2026-08-26",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Money",
+            "item": "https://www.expatcopilot.com/netherlands/money/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Taxes",
+            "item": "https://www.expatcopilot.com/netherlands/taxes/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "30% Ruling in the Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "30% Ruling in the Netherlands",
+        "description": "Plain-language 30% ruling guide for the Netherlands: 2026 Belastingdienst norms, eligibility vs payslip benefit, 2027 preview (not in force), and links to calculators \u2014 editorial, not tax advice.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2026-08-26",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "url": "https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling/",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are the 2026 salary norms for the 30% ruling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For tax year 2026, Belastingdienst publishes minimum taxable salary norms of more than \u20ac48,013/year (standard) and more than \u20ac36,497/year (under 30 with qualifying master's), with a salary cap of \u20ac262,000/year for the facility calculation and a maximum untaxed allowance of \u20ac78,600/year at 30% for a full year at the cap. Role exceptions and indexation can apply \u2014 confirm your category on Belastingdienst and use the 30% ruling calculator with tax year 2026 selected."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the 30% rate in 2026 vs 2027?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For 2026 payroll the statutory facility rate remains 30% within caps and eligibility rules. The government has stated a reduction to 27% from 1 January 2027 for most people who entered the scheme after 2023 \u2014 that 27% rate is not yet in force. Use the 30% ruling calculator\u2019s 2027 preview for planning only; confirm current law on Belastingdienst for your tax year."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happened to partial foreign taxpayer status with the 30% ruling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Partial foreign taxpayer treatment for Box 2 and Box 3 linked to the expat scheme generally ended for 2025 income tax returns onward. Transitional arrangements may apply only through 2026 for people who used the option before 2024 \u2014 verify on Belastingdienst whether any transition affects your filing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the 30% ruling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A Dutch tax facility (expat scheme) for eligible incoming employees that can allow part of compensation to be treated as a tax-free allowance within year-specific rules \u2014 implemented through employer payroll."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who can qualify for the 30% ruling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Official tests look at incoming employee facts, expertise, recruitment distance / residence history, salary norms for the tax year, and timing. Use the calculator as a structured prompt, then confirm with HR and Belastingdienst guidance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the 30% ruling automatic?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Eligibility must line up with rules, and employers must apply the facility correctly in payroll."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does my employer have to grant the full 30%?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not necessarily. Employer policy and agreement can affect how compensation is structured; some setups apply less than the headline maximum."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does it affect net salary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can change the taxable slice of your package, which feeds withholding \u2014 exact net outcomes depend on full package facts and payroll. Use ruling and salary net tools together as estimates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can it appear on my payslip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often yes, but line labels vary by employer and payroll vendor \u2014 use the payslip decoder once you have a real slip."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens if rules change?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Parameters can update by tax year. Re-read official pages for the year that applies and re-run tools with the matching tax year selected."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I use a tax advisor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Optional. Many people align facts with HR and official guidance first. Scoped help can save time when eligibility, cross-border income, or complex packages stay unclear \u2014 see the Tax & relocation help section."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between eligibility and the benefit amount?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Eligibility asks whether official tests are met for your situation and tax year. Benefit amount is what payroll actually applies \u2014 shaped by caps, months, package, and employer policy, which can be less than the theoretical maximum."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/taxes/tools/dutch-salary-net-calculator",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "ListItem",
+      "Offer",
+      "Organization",
+      "Question",
+      "SoftwareApplication",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 6,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": true,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "www.belastingdienst.nl",
+      "www.government.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Dutch Salary Net Calculator (Netherlands)",
+        "description": "General-information gross-to-net planner for the Netherlands: simplified 2026-style tax bands (not official withholding), optional 30%/27% ruling on taxable income, pension and social toggles, approximate credits, up to four scenarios, in-year cash estimate, HTML export. Not payroll software and not professional advice.",
+        "url": "https://www.expatcopilot.com/netherlands/taxes/tools/dutch-salary-net-calculator/",
+        "applicationCategory": "Calculator",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tax tools",
+            "item": "https://www.expatcopilot.com/netherlands/taxes/tools/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Dutch salary net calculator",
+            "item": "https://www.expatcopilot.com/netherlands/taxes/tools/dutch-salary-net-calculator/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Dutch Salary Net Calculator 2026 | Gross to Net Netherlands & 30% Ruling Impact",
+        "description": "Plan Dutch take-home pay: gross-to-net calculator with optional 30% ruling on taxable wages, bonus and holiday allowance, pension and social toggles, up to four offer scenarios, export. Indicative only \u2014 not payroll, eligibility, or legal advice.",
+        "url": "https://www.expatcopilot.com/netherlands/taxes/tools/dutch-salary-net-calculator/"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is this calculator payroll-accurate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. It applies simplified marginal bands (~36.97% up to about \u20ac75k taxable, then ~49.5%) and approximate tax credits. Real Dutch payroll uses loonbelasting tables, employer settings, insurance slices, pension rules, and personal circumstances. Use the output for planning and conversations \u2014 then confirm with payroll or a tax adviser."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this confirm my 30% ruling eligibility?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This tool only reduces taxable wages when you choose a ruling option. Eligibility, employer application, and payroll treatment are separate \u2014 use the dedicated 30% ruling eligibility calculator and official Belastingdienst guidance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does \u201cStatutory maximum\u201d with 30% vs 27% mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Under \u201cApply statutory maximum\u201d, we model the facility on your gross up to the salary cap: 30% through 2026, and 27% as a legislative preview for comparisons. It is a planning switch only \u2014 not what your employer or the Belastingdienst will apply. Verify current rules on Belastingdienst.nl."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the net comparison with the 30% ruling actually show?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It shows indicative take-home if taxable income is reduced by the ruling settings you chose, versus the same gross with no ruling structure in this model. The increase in net comes from lower taxable wages, not from a higher gross offer. Payroll, pension, and credits can change the real payslip."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I not rely on this calculator alone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Do not use it for final payroll validation, contract certainty, or eligibility decisions. It skips exact withholding tables, partner effects, benefits in kind, stock compensation, and employer-specific payroll. Confirm with payroll and, when needed, a qualified tax advisor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you handle holiday allowance (8%)?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "When enabled, we add 8% on top of annual salary plus any bonus you enter, which matches a common gross-up pattern. Contracts differ on whether your figure already includes vakantiegeld \u2014 align the toggle with your offer letter."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does \u201cinclude social contributions\u201d mean here?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We optionally deduct a single simplified employee levy (Zvw-style) on gross up to a ceiling. It is not a full social-premium breakdown and excludes many real payroll items."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does scenario comparison work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Enable compare mode for up to four scenarios with different gross levels, 30% ruling settings, pension %, or employer-applied %. Cards on mobile and a full table on desktop show gross, taxable, tax, net, ruling mode, and monthly delta versus the first scenario."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I download or print my results?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Use Download HTML or Print / Save as PDF for a self-contained summary with inputs, indicative results, comparison, disclaimer, and timestamp."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I only work part of the year?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Set months worked (1\u201312). The tax model still uses your full contract gross as entered; we multiply indicative annual net by months \u00f7 12 for a rough in-year cash figure. Mid-year starts and true annualisation rules are more nuanced \u2014 confirm with payroll."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this Dutch net salary calculator free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. It runs in your browser with no sign-up. There is no client\u2013adviser relationship; outputs are indicative planning figures only \u2014 not a substitute for payroll, the Belastingdienst, or professional advice."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/visa-checker",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "ListItem",
+      "Offer",
+      "Organization",
+      "Question",
+      "SoftwareApplication",
+      "WebSite"
+    ],
+    "schema_block_count": 5,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/visa-checker/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": false,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "ind.nl",
+      "www.government.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Visa Checker",
+            "item": "https://www.expatcopilot.com/netherlands/visa-checker/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Netherlands Visa Checker",
+        "description": "Answer a few questions to see which Dutch visa or residence routes may fit your situation, compare likely options, and get a practical plan for your move.",
+        "url": "https://www.expatcopilot.com/netherlands/visa-checker/",
+        "applicationCategory": "WebApplication",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Which visa is easiest for moving to the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on your situation. EU/EEA/Swiss citizens generally do not need a visa. For non-EU citizens, the \u201ceasiest\u201d route is the one that fits your profile: if you have a job offer from a recognized sponsor, the Highly Skilled Migrant route is common; if you are a US citizen and self-employed, DAFT may be an option; if you are joining a partner, the partner visa applies. Use the visa checker to see which routes may fit you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I move to the Netherlands without a job offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, but you need another basis for residence. Options include the self-employed route (or DAFT for US citizens), the student visa if you are admitted to qualifying education, or the partner/family visa if you have a sponsor in the Netherlands. Work-based routes like Highly Skilled Migrant and EU Blue Card typically require a job offer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What visa is best if I have a job offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you have a job offer from a Dutch employer that is (or can become) a recognized IND sponsor, the Highly Skilled Migrant permit is one of the most common routes. The EU Blue Card is an alternative with different salary and framework rules. Use the visa checker and compare both guides to see which fits your offer and goals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What visa is best if I am self-employed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "US citizens can consider the Dutch-American Friendship Treaty (DAFT) route for self-employment. Non-US citizens use the general self-employed residence permit, which has viability and profit requirements. Use the visa checker and read the DAFT and self-employed visa guides to compare."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I move as a student?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Non-EU students admitted to qualifying Dutch education typically apply for a study residence permit; the institution usually submits the application. You will need to meet financial and document requirements. See the student visa guide for details."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I move to join my partner?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The partner or family residence permit allows you to join a spouse, registered partner, or family member who lives legally in the Netherlands. The sponsor must meet income and other requirements. See the partner & family visa guide for full details."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is DAFT only for Americans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Dutch-American Friendship Treaty (DAFT) route is only for US citizens who want to live in the Netherlands as self-employed persons. Other nationalities use the general self-employed residence permit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Highly Skilled Migrant and EU Blue Card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both are work-based residence permits for qualified non-EU employees. The Highly Skilled Migrant permit is a Dutch scheme with its own salary thresholds and sponsor rules. The EU Blue Card is an EU-wide framework with different salary and eligibility rules. Some employers and roles fit one better than the other; compare both guides and use the visa checker to see which may fit your situation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the results from this tool legally binding?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This tool gives planning guidance only, not legal advice. Eligibility and approval depend on the IND and your full circumstances. Always confirm with official sources or a qualified adviser before making decisions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I do after finding my likely visa?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Read the full guide for each recommended route, confirm requirements and fees on the IND website, then use the relocation cost estimator, moving checklist, and first 90 days planner to build a practical move plan. If your situation is complex, consider advice from an immigration professional."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/netherlands/visa/highly-skilled-migrant",
+    "status": 200,
+    "schema_types": [
+      "Answer",
+      "Article",
+      "BreadcrumbList",
+      "ContactPoint",
+      "FAQPage",
+      "ListItem",
+      "Organization",
+      "Question",
+      "WebPage",
+      "WebSite"
+    ],
+    "schema_block_count": 5,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/",
+      "https://www.expatcopilot.com/netherlands/visa/highly-skilled-migrant/"
+    ],
+    "authors": [
+      {
+        "@type": "Organization",
+        "name": "ExpatCopilot"
+      }
+    ],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": true,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": true,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "ind.nl",
+      "www.government.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.expatcopilot.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Netherlands",
+            "item": "https://www.expatcopilot.com/netherlands"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Visa",
+            "item": "https://www.expatcopilot.com/netherlands/visa"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Highly Skilled Migrant Visa",
+            "item": "https://www.expatcopilot.com/netherlands/visa/highly-skilled-migrant/"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Highly Skilled Migrant Visa in the Netherlands",
+        "description": "The Highly Skilled Migrant permit (kennismigrant) is a Dutch residence permit for employees in qualifying skilled roles. Only an employer recognized by the IND can apply. It is one of the most common non-EU work routes for expats moving to the Netherlands. Salary thresholds (\u20ac5,942 / \u20ac4,357 / \u20ac3,122), EU Blue Card parity at \u20ac5,942 (reduced \u20ac4,754), and the \u20ac423 IND fee reflect IND figures maintained on this page for 2026 planning.",
+        "author": {
+          "@type": "Organization",
+          "name": "ExpatCopilot"
+        },
+        "dateModified": "2026-08-26",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.expatcopilot.com/netherlands/visa/highly-skilled-migrant/"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What happens if I lose my job on a highly skilled migrant permit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If you lose your job while your permit is still valid, the IND allows a job-search period to find a new recognized sponsor \u2014 usually up to 3 months. If your contract ended on or after 22 May 2026 and you have held the permit for two years or more (or you are a victim of labour exploitation), the maximum search period is 6 months. Job loss before 22 May 2026 stays on the 3-month rule even with 2+ years on the permit. The clock starts when your contract ends; the period cannot exceed your permit\u2019s remaining validity. When the search period ends without a new sponsor registration, the IND may revoke the permit. Read the IND highly skilled migrant page (updated 18 August 2026) and confirm dates with HR before your last day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long can I stay on a highly skilled migrant permit, and can it lead to permanent residence?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "HSM permits are temporary and tied to recognized-sponsor employment. IND may grant validity for the employment period up to a maximum stated on your decision letter \u2014 expat planning often references five years, but verify yours. Permanent residence is a separate IND application after qualifying lawful stay, with continuity, absence, income, and integration rules. Lawful years on compliant HSM status may count when requirements align, but HSM is not the same as permanent residence. See the long-term stay section on this page and our permanent residence and inburgering guides; confirm criteria on the IND permanent residence permit page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a highly skilled migrant visa in the Netherlands?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Highly Skilled Migrant (kennismigrant) permit is a Dutch residence permit for employees in qualifying skilled roles. Only an employer recognized by the IND can apply. It is one of the most common work routes for non-EU professionals moving to the Netherlands."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a recognized sponsor employer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Only an employer that is a recognized sponsor with the IND can apply for a highly skilled migrant permit. You cannot apply for this permit yourself without a qualifying job offer from such an employer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What salary do I need for a highly skilled migrant permit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The IND sets minimum salary thresholds (gross per month, without holiday pay). Current figures on this page: age 30 and over \u20ac5,942; under 30 \u20ac4,357; reduced criterion \u20ac3,122 in certain cases (same \u20ac5,942 standard floor as the EU Blue Card tier). Always verify on the IND required-amounts page before you sign \u2014 proposed 2027 tightening is not yet law."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are Highly Skilled Migrant rules changing in 2027?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The government is preparing stricter HSM rules (higher salary floors \u2014 especially under 30 \u2014 and tougher recognized-sponsor requirements). business.gov.nl mentions a possible 1 January 2027 effective date, but nothing is final until parliament passes legislation. Until then, use the current IND thresholds in the salary table on this page and watch the WATCH callout for updates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I move to the Netherlands on this visa without a job offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. This route requires a job offer from a recognized sponsor. If you do not have an offer, you would need another basis (e.g. partner visa, study, DAFT if eligible, or EU Blue Card with a qualifying offer)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does the application cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The IND application fee for the highly skilled migrant permit is \u20ac423 (current figure). Check the IND fees page for the latest amount."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can my partner or family move with me?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Partner and family members can apply to join you under family reunification rules. They will need to meet the requirements set by the IND (relationship, income, housing, etc.)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between Highly Skilled Migrant and EU Blue Card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both are work-based routes for non-EU employees in the Netherlands, but they use different rules (salary tiers, sponsor framing, and EU mobility). On this page, use the table of contents link \u201cHSM vs EU Blue Card\u201d for a side-by-side comparison and concrete salary examples. Your employer chooses the permit type and the IND decides; always confirm current thresholds on the IND required-amounts page."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens after approval?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "After a positive decision you can plan travel. You will need to register with the municipality, get a BSN, and complete any biometrics or card collection. Some applicants may start working after the positive decision (as stated in the notice) before receiving the physical residence card, for up to 4 months in certain cases. Confirm with your employer and the IND."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I start working before I receive the residence card?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The IND states that some first-time applicants may start working after a positive decision if stated in the notice, without the residence card, for up to 4 months. Always confirm with the decision letter and your employer."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which tools should I use to plan the move?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use the Document Readiness Checker to see which documents matter for your profile, the Relocation Cost Estimator to budget, the Moving Checklist to build a timeline, and the First 90 Days Planner to plan your first weeks after arrival."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/sources",
+    "status": 200,
+    "schema_types": [
+      "ContactPoint",
+      "Organization",
+      "WebSite"
+    ],
+    "schema_block_count": 2,
+    "schema_parse_errors": 0,
+    "schema_urls": [
+      "https://www.expatcopilot.com",
+      "https://www.expatcopilot.com/contact/"
+    ],
+    "authors": [],
+    "ratings": [],
+    "signals": {
+      "not_legal_advice": false,
+      "not_tax_advice": false,
+      "not_medical": false,
+      "not_financial": false,
+      "not_immigration": false,
+      "affiliate_mention": true,
+      "official_source_mention": true,
+      "verify_official": true,
+      "author_byline_named": false
+    },
+    "gov_domains": [
+      "ind.nl",
+      "www.digid.nl",
+      "www.government.nl",
+      "www.rvo.nl"
+    ],
+    "blocks_raw_types_ok": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "logo": "https://www.expatcopilot.com/icon.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "url": "https://www.expatcopilot.com/contact/",
+          "contactType": "customer service"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "ExpatCopilot",
+        "url": "https://www.expatcopilot.com",
+        "description": "Practical relocation platform for expats moving to the Netherlands: guides, tools, city insights, and service discovery.",
+        "inLanguage": "en",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ExpatCopilot",
+          "url": "https://www.expatcopilot.com"
+        }
+      }
+    ]
+  }
+]

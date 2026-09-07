@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Link from "next/link";
@@ -41,7 +42,7 @@ const ChildcareEstimatorClient = dynamic(
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/family/tools/childcare-cost-estimator/";
+const canonical = "/netherlands/family/tools/childcare-cost-estimator";
 const BASE = "/netherlands";
 const HERO_IMAGE = "/images/heroes/netherlands-childcare-cost-estimator-hero.png";
 
@@ -68,7 +69,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: META_TITLE,
     description: META_DESCRIPTION,
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
     images: [
       {
         url: HERO_IMAGE,
@@ -217,7 +218,7 @@ const CHILDCARE_PLACEMENT_FAMILY_FINANCE = "tool_childcare_cost_estimator_recomm
 
 export default function ChildcareCostEstimatorPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(canonical, origin).toString();
+  const shareUrl = absoluteUrlFromPath(canonical);
   const childcareRecommendedGroups = getChildcareGroupedRecommendations();
   const childcareSearchPartners = loadPlacementWithProviders(CHILDCARE_PLACEMENT_SEARCH, "netherlands", undefined);
   const childcareRelocationPartners = loadPlacementWithProviders(CHILDCARE_PLACEMENT_RELOCATION, "netherlands", undefined);

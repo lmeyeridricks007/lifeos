@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { toSiteHref } from "@/lib/seo/site-url";
 import { ArrowUpRight } from "lucide-react";
 import type { MegaMenuSection } from "@/config/nav";
 import type { MutableRefObject } from "react";
@@ -24,7 +25,7 @@ export function MegaMenu({ section, onNavigate, panelRef }: MegaMenuProps) {
                   {group.links.map((link) => (
                     <li key={link.href}>
                       <Link
-                        href={link.href}
+                        href={toSiteHref(link.href)}
                         onClick={onNavigate}
                         className="block rounded-lg px-2 py-2 text-sm text-slate-700 transition hover:bg-white hover:text-slate-900"
                       >

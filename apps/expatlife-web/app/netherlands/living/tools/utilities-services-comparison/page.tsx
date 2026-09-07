@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Suspense } from "react";
@@ -24,7 +25,7 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/living/tools/utilities-services-comparison/";
+const canonical = "/netherlands/living/tools/utilities-services-comparison";
 const BASE = "/netherlands";
 const HERO_IMAGE = "/images/tools/netherlands-utilities-services-comparison-hero.png";
 
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
     images: [
       {
         url: HERO_IMAGE,
@@ -176,7 +177,7 @@ const PAGE_DISCLOSURE =
 
 export default function UtilitiesServicesComparisonPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(canonical, origin).toString();
+  const shareUrl = absoluteUrlFromPath(canonical);
   const recommendedGroups = getUtilitiesServicesGroupedRecommendations();
   const relatedGuidesResolved = relatedGuidesFromRouteStatus(RELATED_NEXT_STEPS);
 
@@ -219,7 +220,7 @@ export default function UtilitiesServicesComparisonPage() {
         primarySectionTitle="Calculator"
         primarySectionContent={
           <UtilitiesServicesCalculatorClient
-            calculatorCanonicalUrl={new URL(canonical, origin).toString()}
+            calculatorCanonicalUrl={absoluteUrlFromPath(canonical)}
             siteName="ExpatCopilot"
           />
         }

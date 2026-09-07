@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
@@ -86,12 +87,12 @@ const QUICK_ANSWER_INDEX_CHIP =
 
 export function BestBankZzpView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Banking", item: new URL("/netherlands/money/banking/", baseUrl).toString() },
-    { name: "Best bank for freelancers (ZZP)", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Best bank for freelancers (ZZP)", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const mistakeRows = meta.commonMistakes.cards.map((c) => ({

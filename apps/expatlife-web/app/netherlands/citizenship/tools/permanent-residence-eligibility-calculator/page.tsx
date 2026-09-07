@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { MoveHero } from "@/components/page/move-shell";
 import { buildBreadcrumbSchema } from "@/src/lib/seo/breadcrumbSchema";
@@ -32,7 +32,7 @@ const META_DESCRIPTION =
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: PR_ELIGIBILITY_CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(PR_ELIGIBILITY_CANONICAL)},
   keywords: [
     "permanent residence Netherlands calculator",
     "PR eligibility Netherlands",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     url: PR_ELIGIBILITY_CANONICAL,
     images: [
       {
-        url: "/images/heroes/highly-skilled-migrant-netherlands.png",
+        url: absoluteUrlFromPath("/images/heroes/highly-skilled-migrant-netherlands.png"),
         width: 1200,
         height: 630,
         alt: "Residence documents on a desk for permanent residence planning in the Netherlands.",
@@ -72,7 +72,7 @@ function resolveRelatedGuides() {
 
 export default function PermanentResidenceEligibilityCalculatorPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(PR_ELIGIBILITY_CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(PR_ELIGIBILITY_CANONICAL);
   const relatedGuides = resolveRelatedGuides();
 
   const breadcrumbJsonLd = buildBreadcrumbSchema([

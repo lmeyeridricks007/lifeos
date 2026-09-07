@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -702,8 +703,8 @@ export function CreditCardsView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Banking", item: new URL(BANKING_HUB_PATH, baseUrl).toString() },
-          { name: "Credit cards", item: new URL(CREDIT_CARDS_PATH, baseUrl).toString() },
+          { name: "Banking", item: absoluteUrlFromPath(BANKING_HUB_PATH) },
+          { name: "Credit cards", item: absoluteUrlFromPath(CREDIT_CARDS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

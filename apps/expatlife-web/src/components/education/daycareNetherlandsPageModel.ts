@@ -1,21 +1,21 @@
 import { daycareProvidersDirectory } from "@/src/data/education/daycareProvidersDirectory";
 
-export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands/" as const;
-export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands/" as const;
-export const BEFORE_SCHOOL_CARE_PATH = "/netherlands/education/before-school-care-netherlands/" as const;
-export const EDUCATION_HUB_PATH = "/netherlands/education/" as const;
-export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
-export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/" as const;
-export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands/" as const;
-export const CHILDCARE_COST_ESTIMATOR_PATH = "/netherlands/family/tools/childcare-cost-estimator/" as const;
-export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands/" as const;
-export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands/" as const;
-export const DAYCARE_PROVIDERS_SERVICES_PATH = "/netherlands/services/daycare-providers/" as const;
-export const INTERNATIONAL_SCHOOLS_SERVICES_PATH = "/netherlands/services/international-schools/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" as const;
-export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/" as const;
-export const FAMILY_LIFE_PATH = "/netherlands/culture/family-and-school-culture/" as const;
+export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands" as const;
+export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands" as const;
+export const BEFORE_SCHOOL_CARE_PATH = "/netherlands/education/before-school-care-netherlands" as const;
+export const EDUCATION_HUB_PATH = "/netherlands/education" as const;
+export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids" as const;
+export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands" as const;
+export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands" as const;
+export const CHILDCARE_COST_ESTIMATOR_PATH = "/netherlands/family/tools/childcare-cost-estimator" as const;
+export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands" as const;
+export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands" as const;
+export const DAYCARE_PROVIDERS_SERVICES_PATH = "/netherlands/services/daycare-providers" as const;
+export const INTERNATIONAL_SCHOOLS_SERVICES_PATH = "/netherlands/services/international-schools" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics" as const;
+export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands" as const;
+export const FAMILY_LIFE_PATH = "/netherlands/culture/family-and-school-culture" as const;
 
 export type DaycareLink = {
   label: string;
@@ -244,7 +244,7 @@ export const daycareNetherlandsPage = {
     { href: "#mistakes", label: "Mistakes" },
     { href: "#faq", label: "FAQ" },
     { href: "#related-guides", label: "Guides" },
-    { href: "#education-hub", label: "Education hub" },
+    { href: EDUCATION_HUB_PATH, label: "Education hub" },
     { href: "#explore-next", label: "Explore next" },
   ],
   quickAnswer: {
@@ -630,6 +630,8 @@ export const daycareNetherlandsPage = {
     },
   ],
   relatedGuides: [
+    { label: "Education & childcare hub", href: EDUCATION_HUB_PATH, status: "live", description: "Dutch vs international schools, daycare and wraparound care — cluster map." },
+
     { label: "Daycare Providers (services)", href: DAYCARE_PROVIDERS_SERVICES_PATH, status: "live", description: "Compare KDV, gastouderbureaus and discovery paths — provider directory owned by Services." },
     { label: "After-School Care (BSO)", href: AFTER_SCHOOL_CARE_PATH, status: "live", description: "Buitenschoolse opvang for primary school children — hours, costs and provider directory." },
     { label: "Before-School Care (VSO)", href: BEFORE_SCHOOL_CARE_PATH, status: "live", description: "Voorschoolse opvang — morning care before basisschool for working parents." },
@@ -645,6 +647,8 @@ export const daycareNetherlandsPage = {
     { label: "Healthcare for Children", href: HEALTHCARE_FOR_CHILDREN_PATH, status: "live", description: "GPs, JGZ, vaccinations and paediatric care for expat families." },
   ] satisfies DaycareLink[],
   educationHubCards: [
+    { label: "Education & childcare hub", href: EDUCATION_HUB_PATH, status: "live", description: "Cluster map for schools and childcare pathways." },
+
     { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "This guide — childcare types, directory, costs and waiting lists." },
     { label: "Daycare Providers (services)", href: DAYCARE_PROVIDERS_SERVICES_PATH, status: "live", description: "Provider directory for comparing KDV and gastouder discovery paths." },
     { label: "After-School Care (BSO)", href: AFTER_SCHOOL_CARE_PATH, status: "live", description: "BSO for school-age children — separate registration from daycare." },

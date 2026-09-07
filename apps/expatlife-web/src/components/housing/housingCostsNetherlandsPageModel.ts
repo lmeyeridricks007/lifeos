@@ -12,8 +12,8 @@ import { INSURANCE_PROVIDERS_NETHERLANDS_PATH } from "../services/insurance-prov
 import { NET_SALARY_NETHERLANDS_PATH } from "../taxes/netSalaryNetherlandsPageModel";
 import { EXPAT_SALARY_NETHERLANDS_PATH } from "../jobs/expatSalaryNetherlandsPageModel";
 
-export const HOUSING_COSTS_NETHERLANDS_PATH = "/netherlands/housing/housing-costs-netherlands/" as const;
-export const RENT_AFFORDABILITY_TOOL_PATH = "/netherlands/housing/tools/rent-affordability-calculator/" as const;
+export const HOUSING_COSTS_NETHERLANDS_PATH = "/netherlands/housing/housing-costs-netherlands" as const;
+export const RENT_AFFORDABILITY_TOOL_PATH = "/netherlands/housing/tools/rent-affordability-calculator" as const;
 
 export type HousingCostsLink = {
   label: string;

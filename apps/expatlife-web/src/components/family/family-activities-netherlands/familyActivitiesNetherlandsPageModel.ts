@@ -8,17 +8,17 @@ import {
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 export const FAMILY_ACTIVITIES_NETHERLANDS_PATH =
-  "/netherlands/family/family-activities-netherlands/" as const;
-export const PREGNANCY_NETHERLANDS_PATH = "/netherlands/family/pregnancy-netherlands/" as const;
+  "/netherlands/family/family-activities-netherlands" as const;
+export const PREGNANCY_NETHERLANDS_PATH = "/netherlands/family/pregnancy-netherlands" as const;
 
-export const MATERNITY_CARE_NETHERLANDS_PATH = "/netherlands/health/maternity-care-netherlands/" as const;
-export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
-export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands/" as const;
-export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands/" as const;
-export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands/" as const;
-export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands/" as const;
-export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands/" as const;
-export const FAMILY_TOOLS_PATH = "/netherlands/family/tools/" as const;
+export const MATERNITY_CARE_NETHERLANDS_PATH = "/netherlands/health/maternity-care-netherlands" as const;
+export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids" as const;
+export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands" as const;
+export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands" as const;
+export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands" as const;
+export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands" as const;
+export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands" as const;
+export const FAMILY_TOOLS_PATH = "/netherlands/family/tools" as const;
 export const FAMILY_HUB_PATH = PARENTING_NETHERLANDS_PATH;
 
 export type FamilyActivitiesLink = {

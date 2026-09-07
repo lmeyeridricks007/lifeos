@@ -6,7 +6,7 @@ import type {
 } from "../../best-cities-for-expats/config/citiesBestForExpats.types";
 import { citiesBestForExpatsRoutes as R } from "../../best-cities-for-expats/config/citiesBestForExpats.routes";
 
-const PROFESSIONALS_PATH = "/netherlands/cities/best-cities-for-international-professionals/" as const;
+const PROFESSIONALS_PATH = "/netherlands/cities/best-cities-for-international-professionals" as const;
 
 export const citiesIntlProfHelpfulTools: CitiesBestForExpatsHelpfulToolsShellConfig = {
   id: "helpful-tools",

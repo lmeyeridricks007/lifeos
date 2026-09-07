@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { GuidePageTemplate } from "@/src/components/guides/GuidePageTemplate";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { ArticleJsonLd, FaqPageJsonLd } from "@/lib/seo/jsonld";
@@ -25,8 +26,8 @@ export const metadata: Metadata = buildSocialMetadata({
 
 const breadcrumbCrumbs = [
   { name: "Home", item: new URL("/", baseUrl).toString() },
-  { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-  { name: "Visa", item: new URL("/netherlands/visa", baseUrl).toString() },
+  { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+  { name: "Visa", item: absoluteUrlFromPath("/netherlands/visa") },
   { name: data.breadcrumbLabel ?? data.title, item: new URL(data.path, baseUrl).toString() },
 ];
 

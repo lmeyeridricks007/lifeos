@@ -4,7 +4,7 @@ import { BANKING_FEES_PAGE_PATH } from "@/src/data/banking/bankingFeesContent";
 import { BANKING_CONTENT_TRADITIONAL_VS_DIGITAL_PATH } from "@/src/data/banking/bankingTraditionalDigitalContent";
 import { BEST_BANKS_EXPATS_PATH } from "@/src/components/money/best-banks-expats/bestBanksExpatsPageModel";
 
-export const CHEAPEST_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/cheapest-accounts/" as const;
+export const CHEAPEST_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/cheapest-accounts" as const;
 
 export const cheapestBankAccountsPageModel = {
   path: CHEAPEST_BANK_ACCOUNTS_PATH,

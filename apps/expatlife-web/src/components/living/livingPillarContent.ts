@@ -19,48 +19,48 @@ import {
   Wallet,
 } from "lucide-react";
 
-export const LIVING_SURVIVAL_GUIDE_PATH = "/netherlands/living/survival-guide/" as const;
-export const LIVING_PILLAR_ROOT_PATH = "/netherlands/living/" as const;
+export const LIVING_SURVIVAL_GUIDE_PATH = "/netherlands/living/survival-guide" as const;
+export const LIVING_PILLAR_ROOT_PATH = "/netherlands/living" as const;
 /** Full Living guide: trains, OVpay, apps, multimodal commuting. */
-export const LIVING_GETTING_AROUND_PATH = "/netherlands/living/getting-around/" as const;
-export const LIVING_ESSENTIAL_APPS_PATH = "/netherlands/living/apps/" as const;
+export const LIVING_GETTING_AROUND_PATH = "/netherlands/living/getting-around" as const;
+export const LIVING_ESSENTIAL_APPS_PATH = "/netherlands/living/apps" as const;
 /** Practical groceries, shops, payments, deliveries, and household rhythms. */
-export const LIVING_DAILY_LIFE_PATH = "/netherlands/living/daily-life/" as const;
-export const LIVING_SHOPPING_GROCERIES_PATH = "/netherlands/living/shopping-groceries/" as const;
+export const LIVING_DAILY_LIFE_PATH = "/netherlands/living/daily-life" as const;
+export const LIVING_SHOPPING_GROCERIES_PATH = "/netherlands/living/shopping-groceries" as const;
 /** Food cluster — how Dutch supermarket chains work (not a ranked best-of). */
-export const DUTCH_SUPERMARKETS_PATH = "/netherlands/living/dutch-supermarkets/" as const;
+export const DUTCH_SUPERMARKETS_PATH = "/netherlands/living/dutch-supermarkets" as const;
 /** Food cluster — choosing among supermarket fits (not a ranked awards list). */
-export const BEST_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/best-supermarkets-netherlands/" as const;
+export const BEST_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/best-supermarkets-netherlands" as const;
 /** Food cluster — money-saving grocery tactics (discounters, offers, private label, waste). */
-export const CHEAP_GROCERIES_NETHERLANDS_PATH = "/netherlands/living/cheap-groceries-netherlands/" as const;
+export const CHEAP_GROCERIES_NETHERLANDS_PATH = "/netherlands/living/cheap-groceries-netherlands" as const;
 /** Food cluster — finding non-Dutch / international products (specialty + mainstream aisles). */
 export const INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH =
-  "/netherlands/living/international-supermarkets-netherlands/" as const;
+  "/netherlands/living/international-supermarkets-netherlands" as const;
 /** Food cluster — Asian toko / supermarket specialty depth (not the broad international map). */
 export const ASIAN_SUPERMARKETS_NETHERLANDS_PATH =
-  "/netherlands/living/asian-supermarkets-netherlands/" as const;
+  "/netherlands/living/asian-supermarkets-netherlands" as const;
 /** Food cluster — Turkish / Middle-Eastern specialty grocery depth (not the broad international map). */
 export const TURKISH_SUPERMARKETS_NETHERLANDS_PATH =
-  "/netherlands/living/turkish-supermarkets-netherlands/" as const;
+  "/netherlands/living/turkish-supermarkets-netherlands" as const;
 /** Food cluster — Indian / South Asian specialty grocery depth (not the broad international map). */
 export const INDIAN_SUPERMARKETS_NETHERLANDS_PATH =
-  "/netherlands/living/indian-supermarkets-netherlands/" as const;
+  "/netherlands/living/indian-supermarkets-netherlands" as const;
 /** Food cluster — South African specialty shops / comfort-food depth (not the broad international map). */
 export const SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH =
-  "/netherlands/living/south-african-shops-netherlands/" as const;
+  "/netherlands/living/south-african-shops-netherlands" as const;
 /** Food cluster — subscription meal-kit boxes (how they work, cost modelling, pause habits). */
-export const MEAL_KITS_NETHERLANDS_PATH = "/netherlands/living/meal-kits-netherlands/" as const;
+export const MEAL_KITS_NETHERLANDS_PATH = "/netherlands/living/meal-kits-netherlands" as const;
 /** Food cluster — restaurant takeaway apps + grocery delivery (fees, tipping, when delivery wins). */
-export const FOOD_DELIVERY_NETHERLANDS_PATH = "/netherlands/living/food-delivery-netherlands/" as const;
+export const FOOD_DELIVERY_NETHERLANDS_PATH = "/netherlands/living/food-delivery-netherlands" as const;
 /** Food cluster — sit-down dining culture (reservations, lunch/dinner, terraces, bills, dietary norms). */
-export const RESTAURANTS_NETHERLANDS_PATH = "/netherlands/living/restaurants-netherlands/" as const;
+export const RESTAURANTS_NETHERLANDS_PATH = "/netherlands/living/restaurants-netherlands" as const;
 /** Food cluster — tipping norms (service culture, when/how much, delivery vs sit-down). */
-export const TIPPING_NETHERLANDS_PATH = "/netherlands/living/tipping-netherlands/" as const;
-export const LIVING_HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" as const;
-export const LIVING_EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety/" as const;
-export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/living/culture-etiquette/" as const;
-export const LIVING_LANGUAGE_PATH = "/netherlands/living/language/" as const;
-export const LIVING_WEATHER_PATH = "/netherlands/living/weather/" as const;
+export const TIPPING_NETHERLANDS_PATH = "/netherlands/living/tipping-netherlands" as const;
+export const LIVING_HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics" as const;
+export const LIVING_EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety" as const;
+export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/living/culture-etiquette" as const;
+export const LIVING_LANGUAGE_PATH = "/netherlands/living/language" as const;
+export const LIVING_WEATHER_PATH = "/netherlands/living/weather" as const;
 
 /** Matches cluster `breadcrumbLabel` tone used across Living child pages. */
 export const LIVING_PILLAR_BREADCRUMB_LABEL = "Living in the Netherlands";
@@ -69,6 +69,7 @@ export type LivingSectionNavItem = { href: string; label: string };
 
 export const LIVING_SURVIVAL_SECTION_NAV: LivingSectionNavItem[] = [
   { href: "#quick-start", label: "First days in NL" },
+  { href: "#getting-around", label: "Getting around" },
   { href: "#categories", label: "Living topics" },
   { href: "#often-missed", label: "Easy to overlook" },
   { href: "#essentials", label: "Everyday essentials" },
@@ -77,6 +78,55 @@ export const LIVING_SURVIVAL_SECTION_NAV: LivingSectionNavItem[] = [
   { href: "#coming-next", label: "Coming next" },
   { href: "#faq", label: "FAQ" },
   { href: "#official-sources", label: "Official sources" },
+];
+
+/**
+ * Survival hub module (IA only — no new URL): arrival/settling transport.
+ * Links live guides; Getting around remains the full mobility overview.
+ */
+export const LIVING_SURVIVAL_GETTING_AROUND_MODULE_LINKS: LivingClusterLinkItem[] = [
+  {
+    href: LIVING_GETTING_AROUND_PATH,
+    title: "Getting around overview",
+    description: "OV vs bike vs car mental model for the first weeks — open this when you need the full multimodal map.",
+    cta: "Open Getting around",
+  },
+  {
+    href: "/netherlands/living/ns-trains-netherlands/",
+    title: "NS trains",
+    description: "Tickets, Flex, commuting and station basics when rail is your weekday spine.",
+    cta: "Open NS trains",
+  },
+  {
+    href: "/netherlands/living/ov-chipkaart-netherlands/",
+    title: "OV-chipkaart",
+    description: "Personal vs anonymous cards, top-up, check-in/out and missed-checkout fixes.",
+    cta: "Open OV-chipkaart",
+  },
+  {
+    href: "/netherlands/living/ovpay-netherlands/",
+    title: "OVpay",
+    description: "Contactless bank-card and phone travel — often enough before you buy plastic.",
+    cta: "Open OVpay",
+  },
+  {
+    href: "/netherlands/living/car-sharing-netherlands/",
+    title: "Car sharing",
+    description: "Occasional four wheels without buying — useful for IKEA runs and weekend gaps.",
+    cta: "Open car sharing",
+  },
+  {
+    href: "/netherlands/living/lease-cars-netherlands/",
+    title: "Lease cars",
+    description: "Private lease and company-car orientation when exclusive access beats sharing.",
+    cta: "Open lease cars",
+  },
+  {
+    href: "/netherlands/living/buying-a-car-netherlands/",
+    title: "Buying a car",
+    description: "Purchase, RDW and ownership orientation when sharing or lease is not enough.",
+    cta: "Open buying a car",
+  },
 ];
 
 export type LivingQuickStartPhase = {
@@ -931,10 +981,34 @@ export type LivingContinueCard = { href: string; title: string; description: str
 
 export const LIVING_SURVIVAL_CONTINUE_CARDS: LivingContinueCard[] = [
   {
+    href: LIVING_GETTING_AROUND_PATH,
+    title: "Getting around",
+    description: "OV-chipkaart, OVpay, NS, cycling, licence exchange, car sharing, and lease cars—daily mobility after the first week.",
+    meta: "Open mobility guides",
+  },
+  {
+    href: "/netherlands/living/lease-cars-netherlands/",
+    title: "Lease cars",
+    description: "Private lease and company-car orientation when exclusive access beats buying or sharing.",
+    meta: "Open lease cars",
+  },
+  {
     href: "/netherlands/moving-to-the-netherlands/",
     title: "Moving to the Netherlands",
     description: "Visas, documents, registration, and the full relocation arc when survival mode is behind you.",
     meta: "Follow the move timeline",
+  },
+  {
+    href: "/netherlands/citizenship/permanent-residence/",
+    title: "Permanent residence",
+    description: "Five-year routes, absences, and IND orientation when longer-term stay becomes the question.",
+    meta: "Plan longer-term stay",
+  },
+  {
+    href: "/netherlands/leaving/",
+    title: "Leaving the Netherlands",
+    description: "Deregistration, exit admin, and the leaving journey when mobility means moving on.",
+    meta: "Open leaving journey",
   },
   {
     href: "/netherlands/housing/",

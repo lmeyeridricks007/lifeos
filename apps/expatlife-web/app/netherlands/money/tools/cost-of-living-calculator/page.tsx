@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
@@ -11,6 +12,8 @@ import { CostOfLivingOfficialSources } from "@/src/components/tools/cost-of-livi
 import { CostOfLivingPlanningExtras } from "@/src/components/tools/cost-of-living/CostOfLivingPlanningExtras";
 import { CostOfLivingRightRail } from "@/src/components/tools/cost-of-living/CostOfLivingRightRail";
 import { CostOfLivingScenarioCards } from "@/src/components/tools/cost-of-living/CostOfLivingScenarioCards";
+import { AuthorityCitationBlock } from "@/src/components/authority/AuthorityCitationBlock";
+import { CITY_COST_SEED_AS_OF } from "@/src/lib/authority/cityCostSeedDataset";
 import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
 import { getCostOfLivingRecommendedCards } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 import { getRouteStatus } from "@/src/lib/routes/routeStatus";
@@ -22,7 +25,7 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/money/tools/cost-of-living-calculator/";
+const canonical = "/netherlands/money/tools/cost-of-living-calculator";
 const BASE = "/netherlands";
 const HERO_IMAGE = "/images/tools/netherlands-cost-of-living-calculator-hero.png";
 
@@ -50,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: META_TITLE,
     description: META_DESCRIPTION,
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
     images: [
       {
         url: HERO_IMAGE,
@@ -215,7 +218,7 @@ const FAQ_ITEMS = COST_OF_LIVING_FAQ_ITEMS.map((q) => ({
 
 export default function CostOfLivingCalculatorPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(canonical, origin).toString();
+  const shareUrl = absoluteUrlFromPath(canonical);
   const recommendedCards = getCostOfLivingRecommendedCards();
   const relatedGuidesResolved = relatedGuidesFromRouteStatus(RELATED_NEXT_STEPS);
 
@@ -268,7 +271,33 @@ export default function CostOfLivingCalculatorPage() {
         examplesSection={<CostOfLivingScenarioCards />}
         recommendedServices={<CostOfLivingAffiliateSection cards={recommendedCards} />}
         seoContentSectionTitle="How we estimate your result"
-        seoContent={<CostOfLivingMethodology />}
+        seoContent={
+          <div className="space-y-8">
+            <CostOfLivingMethodology />
+            <AuthorityCitationBlock
+              variant="copilot"
+              referenceName="ExpatCopilot — Netherlands cost of living calculator"
+              pagePath={canonical}
+              dataSources={`ExpatCopilot editorial city cost seed (as of ${CITY_COST_SEED_AS_OF}). Not CBS, NVM, or insurer quotes. Contextual official links appear under Official sources.`}
+              updated={`City cost seed ${CITY_COST_SEED_AS_OF}`}
+              methodologySummary="Fixed planning coefficients per city, household, lifestyle, and rent mode produce directional monthly and setup ranges. Shareable URL preserves inputs; canonical URL stays without query strings for indexing."
+              methodologyHref="#seo-content"
+              methodologyLinkLabel="Full methodology"
+              downloads={[
+                {
+                  label: "City cost seed (JSON)",
+                  href: "/api/authority/city-cost-seed?format=json",
+                  note: "Editorial midpoints — attribute ExpatCopilot",
+                },
+                {
+                  label: "City cost seed (CSV)",
+                  href: "/api/authority/city-cost-seed?format=csv",
+                  note: "Same seed as the calculator",
+                },
+              ]}
+            />
+          </div>
+        }
         relatedGuidesSectionTitle="Related guides and next steps"
         relatedGuidesSectionId="related-guides"
         relatedGuides={relatedGuidesResolved}

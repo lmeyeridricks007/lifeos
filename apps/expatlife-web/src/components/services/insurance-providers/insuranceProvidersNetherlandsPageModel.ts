@@ -1,15 +1,15 @@
-export const INSURANCE_PROVIDERS_NETHERLANDS_PATH = "/netherlands/services/insurance-providers/" as const;
-export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
-export const HEALTH_INSURANCE_GUIDE_PATH = "/netherlands/health-insurance-netherlands/" as const;
-export const HEALTH_INSURANCE_SERVICES_PATH = "/netherlands/services/health-insurance/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands/" as const;
-export const RENTING_NETHERLANDS_PATH = "/netherlands/renting-in-the-netherlands/" as const;
-export const PROPERTY_TAX_NETHERLANDS_PATH = "/netherlands/taxes/property-tax-netherlands/" as const;
-export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as const;
-export const STARTING_BUSINESS_NETHERLANDS_PATH = "/netherlands/business/starting-a-business-netherlands/" as const;
-export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
-export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors/" as const;
+export const INSURANCE_PROVIDERS_NETHERLANDS_PATH = "/netherlands/services/insurance-providers" as const;
+export const SERVICES_HUB_PATH = "/netherlands/services" as const;
+export const HEALTH_INSURANCE_GUIDE_PATH = "/netherlands/health-insurance-netherlands" as const;
+export const HEALTH_INSURANCE_SERVICES_PATH = "/netherlands/services/health-insurance" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands" as const;
+export const RENTING_NETHERLANDS_PATH = "/netherlands/renting-in-the-netherlands" as const;
+export const PROPERTY_TAX_NETHERLANDS_PATH = "/netherlands/taxes/property-tax-netherlands" as const;
+export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands" as const;
+export const STARTING_BUSINESS_NETHERLANDS_PATH = "/netherlands/business/starting-a-business-netherlands" as const;
+export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands" as const;
+export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors" as const;
 
 export type InsuranceProvider = {
   name: string;

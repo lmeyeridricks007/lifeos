@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -708,8 +709,8 @@ export function StudentBankAccountsView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Banking", item: new URL(BANKING_HUB_PATH, baseUrl).toString() },
-          { name: "Student bank accounts", item: new URL(STUDENT_BANK_ACCOUNTS_PATH, baseUrl).toString() },
+          { name: "Banking", item: absoluteUrlFromPath(BANKING_HUB_PATH) },
+          { name: "Student bank accounts", item: absoluteUrlFromPath(STUDENT_BANK_ACCOUNTS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

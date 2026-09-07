@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { notFound } from "next/navigation";
 import { cloneSafeMetadata } from "@/lib/metadata";
 import { GuidePageTemplate } from "@/src/components/guides/GuidePageTemplate";
@@ -51,7 +52,7 @@ function buildStaticMetadataMap(): Record<string, Metadata> {
       title: String(model.seo.title),
       description: String(model.seo.description),
       ...(kw ? { keywords: kw } : {}),
-      alternates: { canonical: canonicalPath },
+      alternates: { canonical: absoluteUrlFromPath(canonicalPath)},
       openGraph: {
         title: String(model.seo.title),
         description: String(model.seo.description),
@@ -119,8 +120,8 @@ export default async function CountryRoutePage({
 
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Moving", item: new URL("/netherlands/moving-to-the-netherlands/", baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+    { name: "Moving", item: absoluteUrlFromPath("/netherlands/moving-to-the-netherlands/") },
     {
       name: data.breadcrumbLabel ?? data.title,
       item: new URL(data.path, baseUrl).toString(),

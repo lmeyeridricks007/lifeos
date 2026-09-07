@@ -5,13 +5,17 @@
  */
 
 import {
+  EU_BLUE_CARD_THRESHOLDS_EUR,
   HSM_SALARY_FIGURE_YEAR,
   HSM_SALARY_THRESHOLDS_EUR,
   IND_HSM_PERMIT_URL,
   IND_REQUIRED_AMOUNTS_URL,
   formatEurMonthly,
 } from "@/src/lib/tools/hsm-salary-checker/thresholds";
-import { THIRTY_PCT_RULES_2026 } from "@/src/lib/tools/thirty-percent-ruling/assumptions";
+import {
+  THIRTY_PCT_RULES_2026,
+  THIRTY_PCT_RULES_2027_PREVIEW,
+} from "@/src/lib/tools/thirty-percent-ruling/assumptions";
 import { getOfficialFeeByRoute } from "@/src/data/tools/visa-cost-calculator/official-fees";
 import {
   MINIMUM_WAGE_ADULT_HOURLY_JULY_2026,
@@ -20,11 +24,11 @@ import {
   minimumWageNetherlandsRates,
 } from "@/src/components/jobs/minimumWageNetherlandsRates";
 
-export const OFFICIAL_FIGURES_PATH = "/netherlands/official-figures/" as const;
+export const OFFICIAL_FIGURES_PATH = "/netherlands/official-figures" as const;
 
 export const OFFICIAL_FIGURES_TAX_YEAR = 2026 as const;
-export const OFFICIAL_FIGURES_AS_OF_LABEL = "As of August 2026" as const;
-export const OFFICIAL_FIGURES_LAST_REVIEWED = "30 August 2026" as const;
+export const OFFICIAL_FIGURES_AS_OF_LABEL = "As of 7 September 2026" as const;
+export const OFFICIAL_FIGURES_LAST_REVIEWED = "7 September 2026" as const;
 
 const hsmFee = getOfficialFeeByRoute("highly-skilled-migrant");
 const partnerFee = getOfficialFeeByRoute("partner-family");
@@ -106,6 +110,28 @@ export const officialFiguresRows: readonly OfficialFigureRow[] = [
     relatedGuideLabel: "HSM guide",
   },
   {
+    id: "blue-card-standard",
+    topic: "EU Blue Card salary floor — standard",
+    figure: `${formatEurMonthly(EU_BLUE_CARD_THRESHOLDS_EUR.standard)} / month gross (excl. holiday pay)`,
+    effective: `Calendar year ${HSM_SALARY_FIGURE_YEAR}`,
+    notes: "Same IND required-amounts table as HSM 30+. Verify reduced-criterion eligibility separately.",
+    sourceLabel: "IND — Required amounts income requirements",
+    sourceHref: IND_REQUIRED_AMOUNTS_URL,
+    relatedGuideHref: "/netherlands/visa/eu-blue-card/",
+    relatedGuideLabel: "EU Blue Card guide",
+  },
+  {
+    id: "blue-card-reduced",
+    topic: "EU Blue Card salary floor — reduced criterion",
+    figure: `${formatEurMonthly(EU_BLUE_CARD_THRESHOLDS_EUR.reduced)} / month gross (excl. holiday pay)`,
+    effective: `Calendar year ${HSM_SALARY_FIGURE_YEAR}`,
+    notes: "Reduced Blue Card criterion (e.g. recent higher-education graduates within IND timing rules) — not the HSM reduced floor.",
+    sourceLabel: "IND — Required amounts income requirements",
+    sourceHref: IND_REQUIRED_AMOUNTS_URL,
+    relatedGuideHref: "/netherlands/visa/eu-blue-card/",
+    relatedGuideLabel: "EU Blue Card guide",
+  },
+  {
     id: "ind-fee-hsm",
     topic: "IND fee — highly skilled migrant (work)",
     figure: hsmFee ? `€${hsmFee.applicationFeeEur}` : "€423",
@@ -162,6 +188,28 @@ export const officialFiguresRows: readonly OfficialFigureRow[] = [
       "https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/coming-to-work-in-the-netherlands-30-percent-facility",
     relatedGuideHref: "/netherlands/taxes/tools/30-ruling-calculator/",
     relatedGuideLabel: "30% ruling calculator",
+  },
+  {
+    id: "thirty-pct-2027-preview",
+    topic: "30% → 27% preview — facility % and income norms (not yet final)",
+    figure: `27% facility; norms ${formatEurAnnual(THIRTY_PCT_RULES_2027_PREVIEW.thresholdStandardAnnual)} / ${formatEurAnnual(THIRTY_PCT_RULES_2027_PREVIEW.thresholdUnder30MastersAnnual)} (under 30 + master’s)`,
+    effective: `Expected from ${THIRTY_PCT_RULES_2027_PREVIEW.expectedFromLabel}`,
+    notes: THIRTY_PCT_RULES_2027_PREVIEW.statusNote,
+    sourceLabel: "Business.gov.nl — 30% ruling compensation down to 27%",
+    sourceHref: THIRTY_PCT_RULES_2027_PREVIEW.sourceHref,
+    relatedGuideHref: "/netherlands/taxes/30-percent-ruling/",
+    relatedGuideLabel: "30% ruling guide",
+  },
+  {
+    id: "hsm-tightening-watch",
+    topic: "Proposed HSM tightening — status",
+    figure: "Effective date not yet known / not yet final",
+    effective: "Proposal stage (re-checked 7 Sep 2026)",
+    notes: "Current IND 2026 salary floors still apply. Do not treat future floors as live until published in the Staatsblad.",
+    sourceLabel: "Business.gov.nl — Rules for highly skilled migrants to change",
+    sourceHref: "https://business.gov.nl/amendments/rules-highly-skilled-migrants-change/",
+    relatedGuideHref: "/netherlands/visa/highly-skilled-migrant/",
+    relatedGuideLabel: "HSM guide",
   },
   {
     id: "min-wage-21",
@@ -230,6 +278,18 @@ export const officialFiguresSources: readonly OfficialFigureSource[] = [
     covers: "Employer-facing 30% ruling overview",
   },
   {
+    id: "business-30-27",
+    label: "Business.gov.nl — 30% ruling compensation down to 27%",
+    href: "https://business.gov.nl/amendments/30-percent-ruling-compensation-down-to-27-percent/",
+    covers: "27% from 2027 preview; cited norms €50,436 / €38,388 — effective date not yet final",
+  },
+  {
+    id: "business-hsm-tightening",
+    label: "Business.gov.nl — Rules for highly skilled migrants to change",
+    href: "https://business.gov.nl/amendments/rules-highly-skilled-migrants-change/",
+    covers: "Proposed HSM tightening — effective date not yet known / not yet final",
+  },
+  {
     id: "gov-min-wage",
     label: minimumWageNetherlandsRates.officialSources.english.label,
     href: minimumWageNetherlandsRates.officialSources.english.href,
@@ -257,6 +317,11 @@ export const officialFiguresSources: readonly OfficialFigureSource[] = [
 
 export const officialFiguresChangelog: readonly OfficialFigureChangelogEntry[] = [
   {
+    date: "2026-09-07",
+    summary:
+      "Official set re-verified (unchanged vs 6 Sep): IND HSM €5,942 / €4,357 / €3,122; Blue Card €5,942 / €4,754; Belastingdienst 30% €48,013 / €36,497 / cap €262,000 / max €78,600; min wage €14.99 (21+ from 1 Jul); eigen risico €385; premium band ~€142–€159. HSM tightening still “not yet known / not yet final.” 27% from 1 Jan 2027 with cited norms €50,436 / €38,388 still not yet final.",
+  },
+  {
     date: "2026-08-30",
     summary:
       "Published /netherlands/official-figures/ as the combined 2026 citation table (HSM floors, IND fees, 30% norms/cap, adult minimum wage, eigen risico, basic-premium band).",
@@ -281,4 +346,5 @@ export const officialFiguresRelatedGuides = [
   { label: "Health insurance Netherlands", href: "/netherlands/health-insurance-netherlands/" },
   { label: "Sources hub", href: "/sources/" },
   { label: "Methodology", href: "/methodology/" },
+  { label: "Editorial policy", href: "/editorial-policy/" },
 ] as const;

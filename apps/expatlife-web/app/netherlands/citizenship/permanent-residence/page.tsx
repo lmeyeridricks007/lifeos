@@ -5,7 +5,7 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { LONG_TERM_STAY_CLUSTER_PUBLISH_DATE } from "@/src/components/moving/long-term-stay-cluster/longTermStayClusterPaths";
 
 const SLUG = "permanent-residence-netherlands";
-const PATH = "/netherlands/citizenship/permanent-residence/";
+const PATH = "/netherlands/citizenship/permanent-residence";
 
 export const revalidate = CONTENT_REVALIDATE;
 

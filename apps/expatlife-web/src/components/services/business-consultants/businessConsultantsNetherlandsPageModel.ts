@@ -2,19 +2,19 @@ import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuide
 import { ACCOUNTANTS_PATH } from "@/src/components/services/accountants/accountantsNetherlandsPageModel";
 
 /** Services directory — business consultants for strategy, setup facilitation, KvK growth and operations. */
-export const BUSINESS_CONSULTANTS_PATH = "/netherlands/services/business-consultants/" as const;
+export const BUSINESS_CONSULTANTS_PATH = "/netherlands/services/business-consultants" as const;
 export const BUSINESS_CONSULTANTS_NETHERLANDS_PATH = BUSINESS_CONSULTANTS_PATH;
 
-export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors/" as const;
-export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors/" as const;
-export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors/" as const;
-export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as const;
-export const STARTING_A_BUSINESS_PATH = "/netherlands/business/starting-a-business-netherlands/" as const;
-export const FREELANCING_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
-export const STARTING_CONSULTANCY_PATH = "/netherlands/jobs/starting-consultancy-netherlands/" as const;
-export const CONTRACTOR_VS_EMPLOYEE_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands/" as const;
+export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors" as const;
+export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors" as const;
+export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors" as const;
+export const SERVICES_HUB_PATH = "/netherlands/services" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands" as const;
+export const STARTING_A_BUSINESS_PATH = "/netherlands/business/starting-a-business-netherlands" as const;
+export const FREELANCING_PATH = "/netherlands/jobs/freelancing-netherlands" as const;
+export const STARTING_CONSULTANCY_PATH = "/netherlands/jobs/starting-consultancy-netherlands" as const;
+export const CONTRACTOR_VS_EMPLOYEE_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands" as const;
 
 export const BUSINESS_CONSULTANTS_AFFILIATE_PLACEMENT_ID =
   "nl-services-business-consultants-support-providers" as const;

@@ -16,12 +16,12 @@ import type {
   LivingSafetyTips,
 } from "./livingSafety.types";
 
-const HEALTHCARE_ALLOWANCE_TOOL_PATH = "/netherlands/taxes/tools/healthcare-allowance-estimator/";
-const CHILDCARE_TOOL_PATH = "/netherlands/family/tools/childcare-cost-estimator/";
-const FIRST_90_DAYS_GUIDE_PATH = "/netherlands/first-90-days-netherlands/";
-const MOVING_WITH_FAMILY_GUIDE_PATH = "/netherlands/moving-to-netherlands-with-family/";
-const MOVING_WITH_KIDS_GUIDE_PATH = "/netherlands/moving-to-netherlands-with-kids/";
-const HEALTH_INSURANCE_GUIDE_PATH = "/netherlands/health-insurance-netherlands/";
+const HEALTHCARE_ALLOWANCE_TOOL_PATH = "/netherlands/taxes/tools/healthcare-allowance-estimator";
+const CHILDCARE_TOOL_PATH = "/netherlands/family/tools/childcare-cost-estimator";
+const FIRST_90_DAYS_GUIDE_PATH = "/netherlands/first-90-days-netherlands";
+const MOVING_WITH_FAMILY_GUIDE_PATH = "/netherlands/moving-to-netherlands-with-family";
+const MOVING_WITH_KIDS_GUIDE_PATH = "/netherlands/moving-to-netherlands-with-kids";
+const HEALTH_INSURANCE_GUIDE_PATH = "/netherlands/health-insurance-netherlands";
 
 export const livingSafetyQuickStart: LivingSafetyQuickStartStage[] = [
   {

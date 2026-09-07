@@ -7,7 +7,7 @@ export const moneyThirtyRulingFaq: readonly MoneyThirtyRulingFaqItemConfig[] = [
   },
   {
     q: "What is the 30% rate in 2026 vs 2027?",
-    a: "For 2026 payroll the statutory facility rate remains 30% within caps and eligibility rules. The government has stated a reduction to 27% from 1 January 2027 for most people who entered the scheme after 2023 — that 27% rate is not yet in force. Use the 30% ruling calculator’s 2027 preview for planning only; confirm current law on Belastingdienst for your tax year.",
+    a: "For 2026 payroll the statutory facility rate remains 30% within caps and eligibility rules (€48,013 / €36,497 norms; cap €262,000; max untaxed €78,600 at 30%). business.gov.nl cites a reduction to 27% from 1 January 2027 with raised income norms €50,436 (standard) and €38,388 (under 30 with qualifying master's) — that change is not yet final. Use the 30% ruling calculator’s 2027 preview for planning only; confirm current law on Belastingdienst and business.gov.nl for your tax year.",
   },
   {
     q: "What happened to partial foreign taxpayer status with the 30% ruling?",

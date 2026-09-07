@@ -1,4 +1,4 @@
-export const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling/" as const;
+export const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling" as const;
 
 export type ThirtyPercentRulingLink = {
   label: string;
@@ -165,11 +165,11 @@ export const thirtyPercentRulingPage = {
   faq: [
     {
       q: "What are the 2026 salary thresholds for the 30% ruling?",
-      a: "For tax year 2026, Belastingdienst indicative norms include €48,013/year (standard minimum taxable salary), €36,497/year (under 30 with qualifying master's), and a salary cap of €262,000/year for the facility calculation (maximum untaxed allowance €78,600 at 30% for a full year). Verify your role category and tax year on official Belastingdienst pages.",
+      a: "For tax year 2026, Belastingdienst indicative norms include €48,013/year (standard minimum taxable salary), €36,497/year (under 30 with qualifying master's), and a salary cap of €262,000/year for the facility calculation (maximum untaxed allowance €78,600 at 30% for a full year). business.gov.nl cites a 27% facility from 1 January 2027 with raised norms €50,436 / €38,388 — effective date not yet final. Verify your role category and tax year on official Belastingdienst / business.gov.nl pages.",
     },
     {
       q: "Will the 30% rate drop to 27%?",
-      a: "The government has stated a reduction to 27% from 1 January 2027 for most people who entered the scheme after 2023. That 27% rate is not yet in force — 2026 payroll still uses 30% within caps. Use the 30% ruling calculator’s 2027 preview for planning only.",
+      a: "The government has stated a reduction to 27% from 1 January 2027 for most people who entered the scheme after 2023, with cited income norms €50,436 (standard) and €38,388 (under 30 + master’s). That change is not yet final — 2026 payroll still uses 30% within caps. Use the 30% ruling calculator’s 2027 preview for planning only.",
     },
     {
       q: "Who qualifies for the 30% ruling?",

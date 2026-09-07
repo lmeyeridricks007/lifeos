@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import { HowTaxesWorkNlView } from "@/src/components/money/how-taxes-work-nl/HowTaxesWorkNlView";
 import { howTaxesWorkNlPageModel } from "@/src/components/money/how-taxes-work-nl/howTaxesWorkNlPageModel";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -15,12 +15,12 @@ export const metadata: Metadata = {
   description: seo.description,
   keywords: [...seo.keywords],
   robots: { index: true, follow: true },
-  alternates: { canonical: path },
+  alternates: { canonical: absoluteUrlFromPath(path)},
   openGraph: {
     title: seo.title,
     description: seo.description,
     type: "article",
-    url: new URL(path, baseUrl).toString(),
+    url: absoluteUrlFromPath(path),
     publishedTime: publishDate,
     modifiedTime: publishDate,
     images: [

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -484,7 +485,7 @@ export function NetSalaryNetherlandsView() {
                 <CalculatorPreviewPanel />
               </div>
               <div className="mt-7 overflow-hidden rounded-3xl border border-slate-200/90 bg-white p-4 shadow-expatos-lg ring-1 ring-slate-900/[0.04] sm:p-5">
-                <DutchSalaryNetCalculatorClient calculatorCanonicalUrl={new URL(DUTCH_SALARY_NET_CALCULATOR_PATH, baseUrl).toString()} />
+                <DutchSalaryNetCalculatorClient calculatorCanonicalUrl={absoluteUrlFromPath(DUTCH_SALARY_NET_CALCULATOR_PATH)} />
               </div>
             </section>
 

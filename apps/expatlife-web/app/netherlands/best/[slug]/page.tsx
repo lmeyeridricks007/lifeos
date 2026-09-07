@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { notFound } from "next/navigation";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { ArticleJsonLd } from "@/lib/seo/jsonld";
@@ -29,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: content.seo.title,
     description: content.seo.description,
     keywords: content.seo.keywords,
-    alternates: { canonical: content.path },
+    alternates: { canonical: absoluteUrlFromPath(content.path)},
     openGraph: {
       title: content.seo.title,
       description: content.seo.description,
@@ -53,8 +54,8 @@ export default async function BestProvidersPage({ params }: Props) {
   const shareUrl = new URL(content.path.startsWith("/") ? content.path : `/${content.path}`, baseUrl).toString();
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Best providers", item: new URL("/netherlands/best/", baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+    { name: "Best providers", item: absoluteUrlFromPath("/netherlands/best/") },
     { name: content.hero.title, item: shareUrl },
   ];
   const dateModified = new Date().toISOString().slice(0, 10);

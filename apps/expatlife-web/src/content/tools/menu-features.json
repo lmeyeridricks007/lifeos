@@ -6,7 +6,7 @@
     },
     {
       "categoryId": "integration",
-      "featuredToolIds": ["integration-requirement-checker", "inburgering-exam-readiness-checker", "inburgering-timeline-planner"]
+      "featuredToolIds": ["integration-requirement-checker", "inburgering-exam-readiness-checker"]
     },
     {
       "categoryId": "citizenship",
@@ -132,9 +132,8 @@
       "categoryId": "integration",
       "featuredToolIds": [
         "partner-work-eligibility-checker",
-        "inburgering-timeline-planner",
-        "inburgering-exam-readiness-checker",
-        "knm-knowledge-quiz"
+        "integration-requirement-checker",
+        "inburgering-exam-readiness-checker"
       ]
     },
     "living": {

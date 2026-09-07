@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { ArticleJsonLd, FaqPageJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
@@ -61,7 +62,7 @@ export default function BusinessConsultantsNetherlandsPage() {
     <>
       <WebPageJsonLd name={hero.pageTitle} description={seo.description} urlPath={path} datePublished={publishDate} />
       <ArticleJsonLd headline={hero.pageTitle} description={seo.description} dateModified={publishDate} urlPath={path} />
-      <FaqPageJsonLd items={page.faqs} url={new URL(path, baseUrl).toString()} />
+      <FaqPageJsonLd items={page.faqs} url={absoluteUrlFromPath(path)} />
       <ProviderDirectoryJsonLd />
       <BusinessConsultantsNetherlandsView />
     </>

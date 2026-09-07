@@ -53,7 +53,7 @@ export function ClusterTopicScaffold({ entry }: Props) {
   return (
     <>
       <BreadcrumbJsonLd crumbs={crumbs} />
-      <Section eyebrow={eyebrow} title={entry.title} subtitle={entry.metaDescription}>
+      <Section eyebrow={eyebrow} title={entry.title} subtitle={entry.metaDescription} titleAs="h1">
         <PillarMainStack className="mt-0 space-y-6 pt-6 sm:pt-7 md:pt-8">
           <nav aria-label="Breadcrumbs" className="flex flex-wrap gap-2 text-xs text-foreground-muted">
             <Link href="/" className="transition-colors hover:text-foreground">

@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -93,7 +94,7 @@ function HeroImage() {
   return (
     <figure className={citiesFunnelHeroFigureClassName()}>
       <div className={cn("absolute inset-x-0 top-0 z-10 h-1.5", movingNlSignatureGradientClass)} aria-hidden />
-      <Image src={page.hero.image.src} alt={page.hero.image.alt} width={1600} height={900} priority unoptimized sizes="(min-width: 1024px) 42vw, 100vw" className="h-full w-full object-cover" />
+      <Image src={page.hero.image.src} alt={page.hero.image.alt} width={1600} height={900} priority sizes="(min-width: 1024px) 42vw, 100vw" className="h-full w-full object-cover" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-950/24 via-transparent to-white/10" aria-hidden />
       <div className="pointer-events-none absolute inset-0 ring-1 ring-inset ring-white/35" aria-hidden />
     </figure>
@@ -294,8 +295,8 @@ export function AmsterdamVsRotterdamView() {
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Cities", item: new URL(CITIES_HUB_PATH, baseUrl).toString() },
-    { name: "Compare cities", item: new URL(CITIES_COMPARE_HUB_PATH, baseUrl).toString() },
+    { name: "Cities", item: absoluteUrlFromPath(CITIES_HUB_PATH) },
+    { name: "Compare cities", item: absoluteUrlFromPath(CITIES_COMPARE_HUB_PATH) },
     { name: "Amsterdam vs Rotterdam", item: new URL(page.path, baseUrl).toString() },
   ];
   const faqItems = page.faq.map((item, idx) => ({ id: `faq-${idx}`, title: item.q, content: item.a }));

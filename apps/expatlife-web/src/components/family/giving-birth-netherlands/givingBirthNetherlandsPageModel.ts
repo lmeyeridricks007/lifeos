@@ -9,10 +9,10 @@ import {
 } from "@/src/components/health/maternityCareNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
-export const GIVING_BIRTH_NETHERLANDS_PATH = "/netherlands/family/giving-birth-netherlands/" as const;
-export const PETS_NETHERLANDS_PATH = "/netherlands/family/pets-netherlands/" as const;
+export const GIVING_BIRTH_NETHERLANDS_PATH = "/netherlands/family/giving-birth-netherlands" as const;
+export const PETS_NETHERLANDS_PATH = "/netherlands/family/pets-netherlands" as const;
 /** Sibling prenatal journey — local path avoids circular import with pregnancy model. */
-const PREGNANCY_NETHERLANDS_PATH = "/netherlands/family/pregnancy-netherlands/" as const;
+const PREGNANCY_NETHERLANDS_PATH = "/netherlands/family/pregnancy-netherlands" as const;
 export const FAMILY_HUB_PATH = PARENTING_NETHERLANDS_PATH;
 
 export type GivingBirthLink = {

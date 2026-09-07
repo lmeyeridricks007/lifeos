@@ -1,3 +1,4 @@
+import { GUIDE_CITABILITY_POLICY_LINKS } from "@/src/components/guides/guideCitabilityPolicyLinks";
 import { LIVING_GETTING_AROUND_PATH, LIVING_PILLAR_ROOT_PATH } from "@/src/components/living/livingPillarContent";
 import {
   BUYING_A_CAR_NETHERLANDS_PATH,
@@ -14,6 +15,7 @@ import {
   ROAD_TAX_NETHERLANDS_PATH,
   SPEED_CAMERAS_NETHERLANDS_PATH,
 } from "@/src/components/living/driving-licence-exchange-netherlands/drivingLicenceExchangeNetherlandsPageModel";
+import { OV_CHIPKAART_NETHERLANDS_PATH } from "@/src/components/living/ov-chipkaart-netherlands/ovChipkaartNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 export {
@@ -65,6 +67,21 @@ export const buyingACarNetherlandsPage = {
   parentGuidePath: GETTING_AROUND_PATH,
   publish: true,
   publishDate: scheduledPublishDateForPath(BUYING_A_CAR_NETHERLANDS_PATH) ?? "2026-08-26",
+  lastReviewed: "7 September 2026",
+  heroOfficialSources: [
+    {
+      label: "RDW — vehicle registration orientation",
+      href: "https://www.rdw.nl/en",
+    },
+    {
+      label: "Belastingdienst — motor vehicle tax / BPM tools",
+      href: "https://www.belastingdienst.nl/",
+    },
+    {
+      label: "Government.nl — transport topics",
+      href: "https://www.government.nl/",
+    },
+  ],
   seo: {
     title: "Buying a Car in the Netherlands | Complete Guide for Expats",
     description:
@@ -876,8 +893,10 @@ export const buyingACarNetherlandsPage = {
     "Cover choices → Car insurance.",
     "Recurring tax → Road tax.",
     "OV and bikes → Getting around.",
+    "Personal travel card → OV-chipkaart.",
     "Resident parking → Parking and local permits.",
     "Gemeente admin context → Municipality services.",
+    "How we work → Methodology / Sources / Editorial policy.",
   ],
   relatedGuides: [
     {
@@ -897,6 +916,18 @@ export const buyingACarNetherlandsPage = {
       href: ROAD_TAX_NETHERLANDS_PATH,
       status: "live",
       description: "Wegenbelasting / MRB orientation after you become the registered keeper.",
+    },
+    {
+      label: "Getting around",
+      href: GETTING_AROUND_PATH,
+      status: "live",
+      description: "Trains, OVpay, bikes and everyday mobility when ownership is optional.",
+    },
+    {
+      label: "OV-chipkaart",
+      href: OV_CHIPKAART_NETHERLANDS_PATH,
+      status: "live",
+      description: "Personal travel card setup when you stay on public transport instead of buying.",
     },
     {
       label: "MOT / APK",
@@ -929,12 +960,6 @@ export const buyingACarNetherlandsPage = {
       description: "Private lease or company car instead of buying outright.",
     },
     {
-      label: "Getting around",
-      href: GETTING_AROUND_PATH,
-      status: "live",
-      description: "Trains, OVpay, bikes and everyday mobility when ownership is optional.",
-    },
-    {
       label: "Parking and local permits",
       href: PARKING_PATH,
       status: "live",
@@ -946,6 +971,7 @@ export const buyingACarNetherlandsPage = {
       status: "live",
       description: "Gemeente services, registration context and local admin orientation.",
     },
+    ...GUIDE_CITABILITY_POLICY_LINKS,
   ] satisfies DrivingLink[],
   drivingHubTips: [
     "Buying a car is the ownership cornerstone of the Driving cluster.",

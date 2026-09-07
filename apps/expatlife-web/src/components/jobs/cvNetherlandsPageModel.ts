@@ -1,24 +1,24 @@
 import { FINDING_JOBS_NETHERLANDS_PATH, SALARY_NEGOTIATION_NETHERLANDS_PATH } from "./findingJobsNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
-export const CV_NETHERLANDS_PATH = "/netherlands/jobs/cv-netherlands/" as const;
-export const INTERVIEW_TIPS_NETHERLANDS_PATH = "/netherlands/jobs/interview-tips-netherlands/" as const;
+export const CV_NETHERLANDS_PATH = "/netherlands/jobs/cv-netherlands" as const;
+export const INTERVIEW_TIPS_NETHERLANDS_PATH = "/netherlands/jobs/interview-tips-netherlands" as const;
 export { FINDING_JOBS_NETHERLANDS_PATH, SALARY_NEGOTIATION_NETHERLANDS_PATH };
 
-export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands/" as const;
-export const EMPLOYMENT_CONTRACT_NETHERLANDS_PATH = "/netherlands/jobs/employment-contract-netherlands/" as const;
-export const EMPLOYEE_BENEFITS_NETHERLANDS_PATH = "/netherlands/jobs/employee-benefits-netherlands/" as const;
-export const DUTCH_WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-culture/" as const;
-export const DUTCH_DIRECTNESS_AT_WORK_PATH = "/netherlands/jobs/dutch-directness-at-work/" as const;
-export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
-export const CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands/" as const;
-export const JOBS_HUB_PATH = "/netherlands/moving/working-in-the-netherlands/" as const;
-export const MOVING_HUB_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const HSM_VISA_PATH = "/netherlands/visa/highly-skilled-migrant/" as const;
-export const CAREER_COACHES_PATH = "/netherlands/services/career-coaches/" as const;
-export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services/" as const;
-export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers/" as const;
-export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors/" as const;
+export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands" as const;
+export const EMPLOYMENT_CONTRACT_NETHERLANDS_PATH = "/netherlands/jobs/employment-contract-netherlands" as const;
+export const EMPLOYEE_BENEFITS_NETHERLANDS_PATH = "/netherlands/jobs/employee-benefits-netherlands" as const;
+export const DUTCH_WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-culture" as const;
+export const DUTCH_DIRECTNESS_AT_WORK_PATH = "/netherlands/jobs/dutch-directness-at-work" as const;
+export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands" as const;
+export const CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands" as const;
+export const JOBS_HUB_PATH = "/netherlands/moving/working-in-the-netherlands" as const;
+export const MOVING_HUB_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const HSM_VISA_PATH = "/netherlands/visa/highly-skilled-migrant" as const;
+export const CAREER_COACHES_PATH = "/netherlands/services/career-coaches" as const;
+export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services" as const;
+export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers" as const;
+export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors" as const;
 
 export const CV_NETHERLANDS_AFFILIATE_PLACEMENT_ID = "nl-jobs-cv-netherlands-support-providers" as const;
 

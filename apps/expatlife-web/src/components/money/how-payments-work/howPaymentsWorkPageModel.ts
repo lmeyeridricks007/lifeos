@@ -9,18 +9,18 @@ import {
 } from "@/src/data/banking/paymentConcepts";
 import { BANKING_SECURITY_PATH } from "@/src/data/banking/bankingSafety";
 
-export const HOW_PAYMENTS_WORK_PATH = "/netherlands/money/banking/how-payments-work/" as const;
-export const HPW_BEST_BANKS_PATH = "/netherlands/money/banking/best-banks-expats/" as const;
-export const HPW_FEES_PATH = "/netherlands/money/banking/fees/" as const;
-export const HPW_TRAD_DIG_PATH = "/netherlands/money/banking/traditional-vs-digital/" as const;
-export const HPW_TYPES_PATH = "/netherlands/money/banking/types-of-accounts/" as const;
-export const HPW_OPEN_BANK_PATH = "/netherlands/open-bank-account-netherlands/" as const;
+export const HOW_PAYMENTS_WORK_PATH = "/netherlands/money/banking/how-payments-work" as const;
+export const HPW_BEST_BANKS_PATH = "/netherlands/money/banking/best-banks-expats" as const;
+export const HPW_FEES_PATH = "/netherlands/money/banking/fees" as const;
+export const HPW_TRAD_DIG_PATH = "/netherlands/money/banking/traditional-vs-digital" as const;
+export const HPW_TYPES_PATH = "/netherlands/money/banking/types-of-accounts" as const;
+export const HPW_OPEN_BANK_PATH = "/netherlands/open-bank-account-netherlands" as const;
 export const HPW_BANKING_SECURITY_PATH = BANKING_SECURITY_PATH;
-export const HPW_LIVING_PAYMENTS_PATH = "/netherlands/living/payments/" as const;
-export const HPW_LIVING_APPS_PATH = "/netherlands/living/apps/" as const;
-export const HPW_LIVING_DAILY_PATH = "/netherlands/living/daily-life/" as const;
-export const HPW_LIVING_SHOPPING_PATH = "/netherlands/living/shopping-groceries/" as const;
-export const HPW_UTILITIES_TOOL_PATH = "/netherlands/living/tools/utilities-services-comparison/" as const;
+export const HPW_LIVING_PAYMENTS_PATH = "/netherlands/living/payments" as const;
+export const HPW_LIVING_APPS_PATH = "/netherlands/living/apps" as const;
+export const HPW_LIVING_DAILY_PATH = "/netherlands/living/daily-life" as const;
+export const HPW_LIVING_SHOPPING_PATH = "/netherlands/living/shopping-groceries" as const;
+export const HPW_UTILITIES_TOOL_PATH = "/netherlands/living/tools/utilities-services-comparison" as const;
 
 export const howPaymentsWorkMisunderstandings: readonly { title: string; body: string }[] = [
   {

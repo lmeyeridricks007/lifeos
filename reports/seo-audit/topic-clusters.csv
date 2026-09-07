@@ -1,0 +1,31 @@
+cluster,hub_url,indexable_pages,staged_pages,orphan_pages,average_inlinks,median_inlinks,deepest_page,cross_cluster_links,hub_strength,coverage_quality,architecture_quality,notes
+moving,https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/,96,0,90,1.46,0.0,2,4470,strong,good,fragmented,hub in ExploreNetherlandsCrossLinks sitewide block; child_backlink_ratio=0.94; hub_out_to_cluster=3; near_orphans=0
+netherlands_other,,39,56,1,22.36,12,,1988,weak,good,weak,few children link back to hub (0/39); child_backlink_ratio=0.00; hub_out_to_cluster=0; near_orphans=0
+first_90_days,https://www.expatcopilot.com/netherlands/after-arriving-netherlands/,34,0,30,11.35,0.0,2,1685,moderate,good,fragmented,child_backlink_ratio=0.88; hub_out_to_cluster=2; near_orphans=0
+culture_life,https://www.expatcopilot.com/netherlands/living/survival-guide/,32,2,3,2,0.5,5,1419,strong,good,good,hub in ExploreNetherlandsCrossLinks sitewide block; child_backlink_ratio=1.00; hub_out_to_cluster=6; near_orphans=2
+country_origin,https://www.expatcopilot.com/netherlands/moving-to-netherlands-from/,31,0,0,8.48,6,1,2471,moderate,good,mixed,child_backlink_ratio=0.97; hub_out_to_cluster=30; near_orphans=0
+cities,https://www.expatcopilot.com/netherlands/cities/,22,0,0,39.45,33.5,1,1358,strong,good,good,hub in ExploreNetherlandsCrossLinks sitewide block; child_backlink_ratio=1.00; hub_out_to_cluster=22; near_orphans=0
+working,https://www.expatcopilot.com/netherlands/moving/working-in-the-netherlands/,22,9,0,4.82,0.0,2,1181,strong,good,good,hub in ExploreNetherlandsCrossLinks sitewide block; child_backlink_ratio=1.00; hub_out_to_cluster=11; near_orphans=0
+tax,https://www.expatcopilot.com/netherlands/money/how-taxes-work-in-the-netherlands/,22,19,0,5.95,0.0,2,1214,strong,good,good,child_backlink_ratio=0.41; hub_out_to_cluster=11; near_orphans=0
+banking,https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats/,20,0,0,24.55,19.0,2,999,moderate,good,mixed,child_backlink_ratio=0.95; hub_out_to_cluster=16; near_orphans=0
+visas_immigration,https://www.expatcopilot.com/netherlands/moving/visas-residency/,16,0,0,43.62,44.5,2,871,strong,good,good,hub in ExploreNetherlandsCrossLinks sitewide block; child_backlink_ratio=1.00; hub_out_to_cluster=9; near_orphans=0
+services,https://www.expatcopilot.com/netherlands/services/,16,21,0,36.88,41.5,1,931,strong,good,good,hub in ExploreNetherlandsCrossLinks sitewide block; child_backlink_ratio=1.00; hub_out_to_cluster=16; near_orphans=0
+trust_legal,https://www.expatcopilot.com/about/,12,0,0,0,0.0,1,218,strong,good,good,child_backlink_ratio=1.00; hub_out_to_cluster=12; near_orphans=0
+healthcare,https://www.expatcopilot.com/netherlands/health/health-insurance-netherlands/,12,0,0,22.75,11.0,,597,missing_hub,good,weak,declared hub URL not in sitemap/crawl; few children link back to hub (0/12); child_backlink_ratio=0.00; hub_out_to_cluster=0; near_orphans=0
+families,https://www.expatcopilot.com/netherlands/family/family-activities-netherlands/,9,0,0,12,7,3,507,moderate,good,mixed,child_backlink_ratio=0.56; hub_out_to_cluster=6; near_orphans=0
+housing,https://www.expatcopilot.com/netherlands/housing/,9,15,0,8.44,3,2,534,strong,good,good,child_backlink_ratio=1.00; hub_out_to_cluster=8; near_orphans=0
+practical_life,https://www.expatcopilot.com/netherlands/practical-life/registering-your-address-netherlands/,8,3,0,0,0.0,2,439,strong,good,good,child_backlink_ratio=0.62; hub_out_to_cluster=3; near_orphans=0
+transport,https://www.expatcopilot.com/netherlands/living/getting-around/,7,6,0,8.43,11,1,371,strong,moderate,good,hub in ExploreNetherlandsCrossLinks sitewide block; child_backlink_ratio=1.00; hub_out_to_cluster=12; near_orphans=0
+citizenship_pr,https://www.expatcopilot.com/netherlands/citizenship/permanent-residence/,6,0,0,8.83,5.5,2,291,moderate,moderate,mixed,child_backlink_ratio=0.83; hub_out_to_cluster=3; near_orphans=0
+tools_calculators,https://www.expatcopilot.com/netherlands/tools/,6,0,0,6.17,0.5,1,342,strong,moderate,good,hub in ExploreNetherlandsCrossLinks sitewide block; child_backlink_ratio=1.00; hub_out_to_cluster=6; near_orphans=1
+education,https://www.expatcopilot.com/netherlands/services/international-schools/,5,2,0,8,9,,294,missing_hub,moderate,weak,declared hub URL not in sitemap/crawl; child_backlink_ratio=0.40; hub_out_to_cluster=0; near_orphans=0
+integration,https://www.expatcopilot.com/netherlands/integration/inburgering/,4,0,0,7.75,4.5,2,199,moderate,moderate,mixed,child_backlink_ratio=0.75; hub_out_to_cluster=2; near_orphans=0
+salaries,https://www.expatcopilot.com/netherlands/taxes/average-salary-netherlands/,4,0,0,0,0.0,1,255,strong,moderate,good,child_backlink_ratio=0.75; hub_out_to_cluster=3; near_orphans=0
+leaving,https://www.expatcopilot.com/netherlands/leaving/,4,0,0,3.75,5.0,1,194,strong,moderate,good,child_backlink_ratio=0.75; hub_out_to_cluster=3; near_orphans=0
+cost_of_living,https://www.expatcopilot.com/netherlands/money/cost-of-living-netherlands/,4,0,0,15.75,4.5,1,256,moderate,moderate,mixed,child_backlink_ratio=0.50; hub_out_to_cluster=3; near_orphans=0
+utilities,https://www.expatcopilot.com/netherlands/utilities/utilities-netherlands/,4,7,0,0.75,0.0,1,211,strong,moderate,good,child_backlink_ratio=1.00; hub_out_to_cluster=4; near_orphans=0
+other,,2,0,0,0,0.0,,280,weak,thin,weak,child_backlink_ratio=0.00; hub_out_to_cluster=0; near_orphans=0
+dating_social,https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands/,2,0,0,0,0.0,2,117,weak,thin,weak,child_backlink_ratio=0.50; hub_out_to_cluster=0; near_orphans=0
+thirty_percent_ruling,https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling/,2,0,0,20.5,20.5,1,122,moderate,thin,mixed,child_backlink_ratio=1.00; hub_out_to_cluster=2; near_orphans=0
+netherlands_hub,https://www.expatcopilot.com/netherlands/,1,0,0,0,0,0,63,weak,thin,weak,child_backlink_ratio=1.00; hub_out_to_cluster=1; near_orphans=0
+comparisons,https://www.expatcopilot.com/netherlands/cities/amsterdam-vs-rotterdam/,1,1,0,41,41,2,67,weak,thin,weak,child_backlink_ratio=0.00; hub_out_to_cluster=0; near_orphans=0

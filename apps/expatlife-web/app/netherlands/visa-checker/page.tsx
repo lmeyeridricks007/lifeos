@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,7 +20,7 @@ import { getVisaRelocationMarketingRecommendedCards } from "@/src/lib/recommende
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/visa-checker/";
+const canonical = "/netherlands/visa-checker";
 const BASE = "/netherlands";
 
 export const metadata: Metadata = {
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     title: "Netherlands Visa Checker: Find the Best Visa for Your Situation",
     description:
       "Answer a few questions to see which Netherlands visa routes may fit your situation, compare options, and get a personalized relocation plan.",
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
   },
   twitter: {
     card: "summary_large_image",

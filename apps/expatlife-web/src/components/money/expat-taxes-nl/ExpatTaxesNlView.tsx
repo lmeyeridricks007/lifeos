@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
@@ -100,12 +101,12 @@ function SectionCautionNote({ text }: { text?: string }) {
 
 export function ExpatTaxesNlView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Money", item: new URL(taxNlRoutes.moneyTools, baseUrl).toString() },
-    { name: "Expat Taxes in the Netherlands", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Expat Taxes in the Netherlands", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const primaryCtaClass = cn(

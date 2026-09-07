@@ -97,5 +97,5 @@ export function persistConsent(prefs: {
   return record;
 }
 
-export const COOKIE_POLICY_PATH = "/cookies/";
-export const PRIVACY_POLICY_PATH = "/privacy/";
+export const COOKIE_POLICY_PATH = "/cookies";
+export const PRIVACY_POLICY_PATH = "/privacy";

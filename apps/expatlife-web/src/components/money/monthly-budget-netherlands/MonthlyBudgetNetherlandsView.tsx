@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -719,8 +720,8 @@ export function MonthlyBudgetNetherlandsView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Money", item: new URL(MONEY_HUB_PATH, baseUrl).toString() },
-          { name: "Monthly budget", item: new URL(MONTHLY_BUDGET_NETHERLANDS_PATH, baseUrl).toString() },
+          { name: "Money", item: absoluteUrlFromPath(MONEY_HUB_PATH) },
+          { name: "Monthly budget", item: absoluteUrlFromPath(MONTHLY_BUDGET_NETHERLANDS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

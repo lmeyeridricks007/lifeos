@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArrowRight, CheckCircle2, ExternalLink } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { Container } from "@/components/ui/container";
@@ -44,8 +45,8 @@ export function DutchCultureView() {
         crumbs={[
           { name: "Home", item: baseUrl },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Life in the Netherlands", item: new URL(LIFE_HUB_PATH, baseUrl).toString() },
-          { name: "Dutch Culture", item: new URL(DUTCH_CULTURE_PATH, baseUrl).toString() },
+          { name: "Life in the Netherlands", item: absoluteUrlFromPath(LIFE_HUB_PATH) },
+          { name: "Dutch Culture", item: absoluteUrlFromPath(DUTCH_CULTURE_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

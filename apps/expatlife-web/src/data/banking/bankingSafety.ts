@@ -10,19 +10,19 @@ import { BEST_BANKS_EXPATS_PATH } from "@/src/components/money/best-banks-expats
 import { BANKING_FEES_PAGE_PATH } from "@/src/data/banking/bankingFeesContent";
 
 /** Living pillar paths referenced from Money · Banking safety copy — keep aligned with `livingPillarContent.ts`. */
-const PATH_LIVING_APPS = "/netherlands/living/apps/" as const;
-const PATH_LIVING_DAILY_LIFE = "/netherlands/living/daily-life/" as const;
-const PATH_LIVING_EMERGENCIES = "/netherlands/living/emergencies-safety/" as const;
-const PATH_LIVING_SHOPPING = "/netherlands/living/shopping-groceries/" as const;
+const PATH_LIVING_APPS = "/netherlands/living/apps" as const;
+const PATH_LIVING_DAILY_LIFE = "/netherlands/living/daily-life" as const;
+const PATH_LIVING_EMERGENCIES = "/netherlands/living/emergencies-safety" as const;
+const PATH_LIVING_SHOPPING = "/netherlands/living/shopping-groceries" as const;
 
 // ——— paths (imported by guides that should not duplicate strings) ———
 
-export const BANKING_SECURITY_PATH = "/netherlands/money/banking/security/" as const;
-export const BANKING_SECURITY_HOW_PAYMENTS_PATH = "/netherlands/money/banking/how-payments-work/" as const;
-export const BANKING_SECURITY_INTL_TRANSFERS_PATH = "/netherlands/money/banking/international-transfers/" as const;
-export const BANKING_SECURITY_TRANSFER_CALC_PATH = "/netherlands/tools/transfer-cost-calculator/" as const;
-export const BANKING_SECURITY_OPEN_BANK_PATH = "/netherlands/open-bank-account-netherlands/" as const;
-export const BANKING_SECURITY_HUB_PATH = "/netherlands/money/banking/" as const;
+export const BANKING_SECURITY_PATH = "/netherlands/money/banking/security" as const;
+export const BANKING_SECURITY_HOW_PAYMENTS_PATH = "/netherlands/money/banking/how-payments-work" as const;
+export const BANKING_SECURITY_INTL_TRANSFERS_PATH = "/netherlands/money/banking/international-transfers" as const;
+export const BANKING_SECURITY_TRANSFER_CALC_PATH = "/netherlands/tools/transfer-cost-calculator" as const;
+export const BANKING_SECURITY_OPEN_BANK_PATH = "/netherlands/open-bank-account-netherlands" as const;
+export const BANKING_SECURITY_HUB_PATH = "/netherlands/money/banking" as const;
 
 /** In-page anchor for the “if something feels wrong” checklist (Banking Safety + deep links). */
 export const BANKING_FEELS_WRONG_FIRST_SECTION_ID = "feels-wrong-first" as const;

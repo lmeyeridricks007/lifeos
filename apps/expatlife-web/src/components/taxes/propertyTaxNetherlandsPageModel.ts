@@ -1,12 +1,12 @@
-export const PROPERTY_TAX_NETHERLANDS_PATH = "/netherlands/taxes/property-tax-netherlands/" as const;
-export const PROPERTY_TAX_NETHERLANDS_LEGACY_PATH = "/netherlands/property-tax-netherlands/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands/" as const;
-export const MORTGAGES_NETHERLANDS_EXPATS_PATH = "/netherlands/housing/mortgages-netherlands-expats/" as const;
-export const RENTING_NETHERLANDS_PATH = "/netherlands/housing/renting-in-the-netherlands/" as const;
-export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
-export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
+export const PROPERTY_TAX_NETHERLANDS_PATH = "/netherlands/taxes/property-tax-netherlands" as const;
+export const PROPERTY_TAX_NETHERLANDS_LEGACY_PATH = "/netherlands/property-tax-netherlands" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands" as const;
+export const MORTGAGES_NETHERLANDS_EXPATS_PATH = "/netherlands/housing/mortgages-netherlands-expats" as const;
+export const RENTING_NETHERLANDS_PATH = "/netherlands/housing/renting-in-the-netherlands" as const;
+export const TAXES_HUB_PATH = "/netherlands/taxes" as const;
+export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
 
 export type PropertyTaxNetherlandsLink = {
   label: string;

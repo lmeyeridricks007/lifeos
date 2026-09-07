@@ -1,0 +1,15 @@
+{
+  "indexable_orphans_before": 124,
+  "indexable_orphans_after_model": 9,
+  "near_orphans_before": 3,
+  "near_orphans_after_model": 6,
+  "average_indexable_href_inlinks_before": 59.09,
+  "average_indexable_href_inlinks_after_model": 60.33,
+  "country_tool_coverage": {
+    "tools": 4,
+    "countries_with_live_landings": 28,
+    "live_landings": 112,
+    "expected_min_inlinks_per_landing": ">=2 (country guide + base tool); typically +3 siblings"
+  },
+  "residual_orphan_rows": 9
+}

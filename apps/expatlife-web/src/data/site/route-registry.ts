@@ -19,7 +19,10 @@ import livingCultureCluster from "@/src/content/guides/netherlands/living-cultur
 import toolsRegistry from "@/src/content/tools/registry.json";
 import toolCategories from "@/src/content/tools/categories.json";
 import { NETHERLANDS_SERVICES_CATEGORIES } from "@/src/data/services/categories";
+import { normalizeSitePath } from "@/lib/seo/site-url";
 
+/** Re-export for registry callers — canonical convention lives in `@/lib/seo/site-url`. */
+export { normalizeSitePath };
 /**
  * Must stay aligned with `ORIGIN_COUNTRY_CONFIG` in `src/lib/countries/originCountryGuides.ts` (client-safe; no fs).
  */
@@ -240,12 +243,13 @@ export const COMING_SOON_ROUTES: Record<string, { title: string; section: RouteS
   "/netherlands/visas-residency/status-changes/": { title: "Immigration status changes", section: "visa" },
 };
 
-export function normalizeSitePath(href: string): string {
-  let p = href.trim();
-  if (!p.startsWith("/")) p = `/${p}`;
-  const q = p.split(/[?#]/)[0] ?? p;
-  const withSlash = q.endsWith("/") ? q : `${q}/`;
-  return withSlash.toLowerCase();
+/** Lookup coming-soon metadata by canonical (non-slash) path. */
+const COMING_SOON_BY_NORMALIZED = new Map(
+  Object.entries(COMING_SOON_ROUTES).map(([path, meta]) => [normalizeSitePath(path), meta] as const)
+);
+
+export function getComingSoonRoute(path: string): { title: string; section: RouteSection } | undefined {
+  return COMING_SOON_BY_NORMALIZED.get(normalizeSitePath(path));
 }
 
 const VISA_GUIDE_PATHS = [
@@ -515,6 +519,10 @@ const EXTRA_LIVE_PATHS = [
   "/netherlands/jobs/expat-salary-netherlands/",
   /** Live App Router guide — keep in EXTRA_LIVE_PATHS so Money mega menu Jobs & salaries links stay clickable (not “Soon”). */
   "/netherlands/jobs/employee-benefits-netherlands/",
+  /** Cluster hub — healthcare journey landing for insurance, GP, urgent care and family pathways. */
+  "/netherlands/health/",
+  /** Cluster hub — education & childcare journey landing for schools and opvang. */
+  "/netherlands/education/",
   /** Flagship education guide — international schools cornerstone for relocating families. */
   "/netherlands/education/international-schools-netherlands/",
   /** Flagship education guide — Dutch public and special schools for expat families. */
@@ -717,7 +725,7 @@ const ORIGIN_SLUG_SET = new Set<string>(ROUTING_ORIGIN_COUNTRY_SLUGS);
 /** True if this path is a published-style “from [country]” guide under /netherlands/moving/moving-to-netherlands-from/{slug}/ */
 export function isOriginCountryGuidePath(path: string): boolean {
   const n = normalizeSitePath(path);
-  const m = n.match(/^\/netherlands\/moving\/moving-to-netherlands-from\/([a-z0-9-]+)\/$/);
+  const m = n.match(/^\/netherlands\/moving\/moving-to-netherlands-from\/([a-z0-9-]+)\/?$/);
   if (!m) return false;
   return ORIGIN_SLUG_SET.has(m[1]);
 }
@@ -731,9 +739,8 @@ export const MOVING_TOOL_FROM_SLUGS = [
 ] as const;
 
 const MOVING_TOOL_FROM_RE = new RegExp(
-  `^/netherlands/moving/tools/(${MOVING_TOOL_FROM_SLUGS.join("|")})/from/([a-z0-9-]+)/$`
+  `^/netherlands/moving/tools/(${MOVING_TOOL_FROM_SLUGS.join("|")})/from/([a-z0-9-]+)/?$`
 );
-
 export function isMovingToolFromCountryPath(path: string): boolean {
   const n = normalizeSitePath(path);
   const m = n.match(MOVING_TOOL_FROM_RE);

@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -759,8 +760,8 @@ export function WiseVsRevolutView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Banking", item: new URL(BANKING_HUB_PATH, baseUrl).toString() },
-          { name: "Wise vs Revolut", item: new URL(WISE_VS_REVOLUT_PATH, baseUrl).toString() },
+          { name: "Banking", item: absoluteUrlFromPath(BANKING_HUB_PATH) },
+          { name: "Wise vs Revolut", item: absoluteUrlFromPath(WISE_VS_REVOLUT_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

@@ -13,6 +13,13 @@ import {
   ROAD_TAX_NETHERLANDS_PATH,
   SPEED_CAMERAS_NETHERLANDS_PATH,
 } from "@/src/components/living/driving-licence-exchange-netherlands/drivingLicenceExchangeNetherlandsPageModel";
+import {
+  NS_TRAINS_NETHERLANDS_PATH,
+  OV_CHIPKAART_NETHERLANDS_PATH,
+  OVPAY_NETHERLANDS_PATH,
+} from "@/src/components/living/ov-chipkaart-netherlands/ovChipkaartNetherlandsPageModel";
+import { GUIDE_CITABILITY_POLICY_LINKS } from "@/src/components/guides/guideCitabilityPolicyLinks";
+import { LIVING_SURVIVAL_GUIDE_PATH } from "@/src/components/living/livingPillarContent";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 export {
@@ -64,6 +71,21 @@ export const leaseCarsNetherlandsPage = {
   parentGuidePath: GETTING_AROUND_PATH,
   publish: true,
   publishDate: scheduledPublishDateForPath(LEASE_CARS_NETHERLANDS_PATH) ?? "2026-09-04",
+  lastReviewed: "7 September 2026",
+  heroOfficialSources: [
+    {
+      label: "Belastingdienst — company car / bijtelling orientation",
+      href: "https://www.belastingdienst.nl/",
+    },
+    {
+      label: "RDW — driving licence and vehicle orientation",
+      href: "https://www.rdw.nl/en",
+    },
+    {
+      label: "Government.nl — transport topics",
+      href: "https://www.government.nl/",
+    },
+  ],
   seo: {
     title: "Lease Cars in the Netherlands | Complete Guide for Expats",
     description:
@@ -931,15 +953,24 @@ export const leaseCarsNetherlandsPage = {
     },
   ],
   relatedGuidesTips: [
+    "Arrival hub → Survival Guide.",
     "Purchase path → Buying a car.",
     "Occasional access → Car sharing.",
+    "Tickets → OV-chipkaart / OVpay / NS trains.",
     "EV ownership / charging → Electric vehicles.",
     "OV and bikes → Getting around.",
     "Drive rights → Driving licence exchange.",
     "Curb reality → Parking and local permits.",
     "Cover if you buy → Car insurance.",
+    "How we work → Methodology / Sources / Editorial policy.",
   ],
   relatedGuides: [
+    {
+      label: "Survival Guide",
+      href: LIVING_SURVIVAL_GUIDE_PATH,
+      status: "live",
+      description: "Living hub — arrival transport module before you commit to a lease.",
+    },
     {
       label: "Buying a car",
       href: BUYING_A_CAR_NETHERLANDS_PATH,
@@ -951,6 +982,24 @@ export const leaseCarsNetherlandsPage = {
       href: CAR_SHARING_NETHERLANDS_PATH,
       status: "live",
       description: "Occasional shared cars when a multi-year lease is too heavy.",
+    },
+    {
+      label: "OV-chipkaart",
+      href: OV_CHIPKAART_NETHERLANDS_PATH,
+      status: "live",
+      description: "Personal travel card when most weeks stay on public transport.",
+    },
+    {
+      label: "OVpay",
+      href: OVPAY_NETHERLANDS_PATH,
+      status: "live",
+      description: "Contactless taps for everyday OV alongside a lease decision.",
+    },
+    {
+      label: "NS trains",
+      href: NS_TRAINS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Rail commuting when a lease is only for occasional gaps.",
     },
     {
       label: "Electric vehicles",
@@ -1000,6 +1049,7 @@ export const leaseCarsNetherlandsPage = {
       status: "live",
       description: "Speed enforcement orientation — fines still apply in leased cars.",
     },
+    ...GUIDE_CITABILITY_POLICY_LINKS,
   ] satisfies DrivingLink[],
   drivingHubTips: [
     "Lease cars is the contracted-access cornerstone of the Driving cluster.",

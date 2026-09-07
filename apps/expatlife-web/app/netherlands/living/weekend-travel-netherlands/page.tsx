@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { ArticleJsonLd, FaqPageJsonLd, HowToJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
@@ -30,7 +31,7 @@ export default function WeekendTravelNetherlandsPage() {
     <>
       <WebPageJsonLd name={hero.pageTitle} description={seo.description} urlPath={path} datePublished={publishDate} />
       <ArticleJsonLd headline={hero.pageTitle} description={seo.description} dateModified={publishDate} urlPath={path} />
-      <FaqPageJsonLd items={page.faq.map((item) => ({ q: item.q, a: item.a }))} url={new URL(path, baseUrl).toString()} />
+      <FaqPageJsonLd items={page.faq.map((item) => ({ q: item.q, a: item.a }))} url={absoluteUrlFromPath(path)} />
       <HowToJsonLd
         name={page.howToSchema.name}
         description={page.howToSchema.description}

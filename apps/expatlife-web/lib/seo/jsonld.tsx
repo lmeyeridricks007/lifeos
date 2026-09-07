@@ -1,4 +1,5 @@
 import { getSeoPublicOrigin } from "@/lib/site-origin";
+import { toAbsoluteCanonicalUrl } from "@/lib/seo/site-url";
 
 type FaqItem = { q: string; a: string };
 
@@ -45,7 +46,7 @@ export function ArticleJsonLd({
     description,
     author: { "@type": "Organization", name: author },
     dateModified,
-    mainEntityOfPage: { "@type": "WebPage", "@id": new URL(urlPath, siteUrl).toString() },
+    mainEntityOfPage: { "@type": "WebPage", "@id": toAbsoluteCanonicalUrl(siteUrl, urlPath) },
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 }
@@ -62,7 +63,7 @@ export function WebPageJsonLd({
   datePublished?: string;
 }) {
   const siteUrl = getSeoPublicOrigin();
-  const pageUrl = new URL(urlPath, siteUrl).toString();
+  const pageUrl = toAbsoluteCanonicalUrl(siteUrl, urlPath);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -98,7 +99,7 @@ export function HowToJsonLd({
     "@type": "HowTo",
     name,
     description: description ?? undefined,
-    url: new URL(urlPath, siteUrl).toString(),
+    url: toAbsoluteCanonicalUrl(siteUrl, urlPath),
     step: steps.map((step, i) => ({
       "@type": "HowToStep",
       position: i + 1,

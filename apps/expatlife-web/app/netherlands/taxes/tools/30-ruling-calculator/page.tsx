@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,6 +12,9 @@ import { PayrollPlanningToolTrio } from "@/src/components/tools/PayrollPlanningT
 import { ThirtyPercentRulingCalculatorClient } from "@/src/components/tools/thirty-percent-ruling/ThirtyPercentRulingCalculatorClient";
 import { UnderstandFirstThenCalculateCta } from "@/src/components/money/thirty-percent-ruling-nl/UnderstandFirstThenCalculateCta";
 import { AffiliateDisclosure } from "@/src/components/affiliates/AffiliateDisclosure";
+import { AuthorityCitationBlock } from "@/src/components/authority/AuthorityCitationBlock";
+import { THIRTY_PCT_RULES_2026 } from "@/src/lib/tools/thirty-percent-ruling/assumptions";
+import { OFFICIAL_FIGURES_LAST_REVIEWED, OFFICIAL_FIGURES_PATH } from "@/src/components/official-figures/officialFigures2026";
 import { buildSoftwareApplicationSchema } from "@/src/lib/seo/toolSchema";
 import { buildBreadcrumbSchema } from "@/src/lib/seo/breadcrumbSchema";
 import { buildFaqSchema } from "@/src/lib/seo/faqSchema";
@@ -21,7 +25,7 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/taxes/tools/30-ruling-calculator/";
+const canonical = "/netherlands/taxes/tools/30-ruling-calculator";
 const BASE = "/netherlands";
 
 export const metadata: Metadata = {
@@ -42,7 +46,7 @@ export const metadata: Metadata = {
     title: "30% Ruling Eligibility Calculator Netherlands | Planning Tool",
     description:
       "Likely eligibility checklist, allowance estimate on 2026 norms, optional indicative net comparison, scenarios, and export — not a tax office decision.",
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
   },
   twitter: {
     card: "summary_large_image",
@@ -93,7 +97,7 @@ const FAQ_ITEMS = [
     id: "2027-final",
     question: "Is the 2027 percentage already final?",
     answer:
-      "We show a 27% legislative preview for comparison. Final percentages, transitions, and exceptions should be confirmed on Belastingdienst.nl and official government channels before you rely on them.",
+      "We show a 27% legislative preview for comparison, with income norms cited on business.gov.nl (€50,436 standard / €38,388 under 30 with master’s). Final percentages, norms, transitions, and exceptions should be confirmed on Belastingdienst.nl and official government channels — the effective date is not yet final.",
   },
   {
     id: "net-indicative",
@@ -237,7 +241,7 @@ const QUICK = [
 
 export default function ThirtyPercentRulingCalculatorPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(canonical, origin).toString();
+  const shareUrl = absoluteUrlFromPath(canonical);
   const taxAdvisorCards = getThirtyPercentRulingTaxAdvisorCards();
   const relatedLive = filterLiveInternalLinks(
     RELATED_NEXT_STEPS.map((r) => ({
@@ -658,10 +662,36 @@ export default function ThirtyPercentRulingCalculatorPage() {
 
             <SectionBlock id="official-sources" title="Official sources & methodology" className="scroll-mt-24">
               <LastUpdated date="August 2026" className="mb-4 text-slate-600" />
-              <p className="mb-4 text-sm text-slate-600">
-                This calculator applies published planning figures for norms and cap; it does not access your tax file or employer payroll.
-              </p>
-              <ul className="space-y-2">
+              <ul className="mb-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
+                <li>
+                  <strong>Where figures come from:</strong> Belastingdienst 30% facility guidance; planning norms for 2026
+                  standard €{THIRTY_PCT_RULES_2026.thresholdStandardAnnual.toLocaleString("en-NL")}, under-30 master’s €
+                  {THIRTY_PCT_RULES_2026.thresholdUnder30MastersAnnual.toLocaleString("en-NL")}, salary cap €
+                  {THIRTY_PCT_RULES_2026.salaryCapAnnual.toLocaleString("en-NL")} — also mirrored on{" "}
+                  <Link href={OFFICIAL_FIGURES_PATH} className="font-medium text-brand-600 hover:underline">
+                    official figures
+                  </Link>
+                  .
+                </li>
+                <li>
+                  <strong>Calculation approach:</strong> self-check eligibility factors, compare gross salary to the
+                  applicable norm, estimate untaxed allowance (capped), optional indicative net wedge for with/without
+                  ruling.
+                </li>
+                <li>
+                  <strong>Assumptions:</strong> employer cooperation required for payroll treatment; months-applicable
+                  prorates allowance; 2027 27% is a legislative preview only.
+                </li>
+                <li>
+                  <strong>Limitations / eligibility boundaries:</strong> not a Belastingdienst decision; distance,
+                  prior-ruling, and expertise rules need evidence; net comparison excludes pension, Zvw detail, and
+                  credits.
+                </li>
+                <li>
+                  <strong>Last reviewed:</strong> {OFFICIAL_FIGURES_LAST_REVIEWED} (aligned with official figures).
+                </li>
+              </ul>
+              <ul className="mb-6 space-y-2">
                 {OFFICIAL_SOURCES.map((s) => (
                   <li key={s.href}>
                     <a
@@ -675,6 +705,14 @@ export default function ThirtyPercentRulingCalculatorPage() {
                   </li>
                 ))}
               </ul>
+              <AuthorityCitationBlock
+                referenceName="ExpatCopilot — 30% ruling eligibility calculator (2026)"
+                pagePath={canonical}
+                dataSources="Belastingdienst 30% facility pages; ExpatCopilot planning norms synced with the official figures citation table. Indicative tax model is simplified — not official loonbelasting tables."
+                updated={OFFICIAL_FIGURES_LAST_REVIEWED}
+                methodologySummary="Client-side eligibility signal and allowance estimate from published norms/cap and user self-checks. Shareable URL preserves the active scenario; multi-scenario compare stays local. Not tax advice."
+                methodologyHref="#official-sources"
+              />
             </SectionBlock>
           </>
         }

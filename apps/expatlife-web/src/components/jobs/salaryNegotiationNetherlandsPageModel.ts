@@ -1,5 +1,5 @@
-export const SALARY_NEGOTIATION_NETHERLANDS_PATH = "/netherlands/jobs/salary-negotiation-netherlands/" as const;
-export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator/" as const;
+export const SALARY_NEGOTIATION_NETHERLANDS_PATH = "/netherlands/jobs/salary-negotiation-netherlands" as const;
+export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator" as const;
 export const SALARY_NEGOTIATION_AFFILIATE_PLACEMENT_ID = "nl-jobs-salary-negotiation-support-providers" as const;
 
 export type SalaryNegotiationNetherlandsLink = {

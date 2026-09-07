@@ -122,7 +122,7 @@ export function MegaMenu({ menu, panelRef, firstLinkRef, onNavigate, pathname }:
   ) : null;
 
   const listAlreadyHasToolsHub = tools.some(
-    (t) => t.navStatus === "live" && t.href === "/netherlands/tools/" && /open tools hub/i.test(t.label)
+    (t) => t.navStatus === "live" && t.href === "/netherlands/tools" && /open tools hub/i.test(t.label)
   );
 
   const toolsBlock = showToolsCol ? (

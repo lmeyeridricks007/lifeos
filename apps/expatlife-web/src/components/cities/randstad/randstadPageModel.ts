@@ -1,4 +1,4 @@
-export const RANDSTAD_PATH = "/netherlands/randstad/" as const;
+export const RANDSTAD_PATH = "/netherlands/randstad" as const;
 
 export const randstadPage = {
   slug: "randstad",

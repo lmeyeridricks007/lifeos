@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import { BankingHubView } from "@/src/components/money/banking-hub/BankingHubView";
 import { bankingHubHeroImage, bankingHubPageModel } from "@/src/components/money/banking-hub/bankingHubPageModel";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
-  alternates: { canonical: path },
+  alternates: { canonical: absoluteUrlFromPath(path)},
   robots: { index: true, follow: true },
   openGraph: {
     title: seo.title,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "article",
     locale: "en_NL",
     siteName: "ExpatCopilot",
-    url: new URL(path, baseUrl).toString(),
+    url: absoluteUrlFromPath(path),
     publishedTime: publishDate,
     modifiedTime: publishDate,
     images: [

@@ -199,7 +199,7 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
     },
     {
       q: "Are Highly Skilled Migrant rules changing in 2027?",
-      a: "The government is preparing stricter HSM rules (higher salary floors — especially under 30 — and tougher recognized-sponsor requirements). business.gov.nl mentions a possible 1 January 2027 effective date, but nothing is final until parliament passes legislation. Until then, use the current IND thresholds in the salary table on this page and watch the WATCH callout for updates.",
+      a: "The government is preparing stricter HSM rules (higher salary floors — especially under 30 — and tougher recognized-sponsor requirements). business.gov.nl states the effective date is not yet known and not yet final. Until legislation passes, use the current IND thresholds in the salary table on this page and watch the WATCH callout for updates.",
     },
     {
       q: "Can I move to the Netherlands on this visa without a job offer?",

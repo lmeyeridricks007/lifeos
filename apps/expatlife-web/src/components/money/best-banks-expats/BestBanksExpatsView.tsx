@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -698,7 +699,6 @@ function HeroImage() {
         width={1600}
         height={900}
         priority
-        unoptimized
         sizes="(min-width: 1024px) 42vw, 100vw"
         className="h-full w-full object-cover"
       />
@@ -751,8 +751,8 @@ export function BestBanksExpatsView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Banking", item: new URL(BANKING_HUB_PATH, baseUrl).toString() },
-          { name: "Best banks for expats", item: new URL(BEST_BANKS_EXPATS_PATH, baseUrl).toString() },
+          { name: "Banking", item: absoluteUrlFromPath(BANKING_HUB_PATH) },
+          { name: "Best banks for expats", item: absoluteUrlFromPath(BEST_BANKS_EXPATS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

@@ -7,7 +7,7 @@ import type { BankId } from "@/src/data/banking/banks";
 import { bankingFreelancerScenarios } from "@/src/data/banking/bankingFreelancerScenarios";
 import type { ZzpComparisonEditorial } from "@/components/banking/ZZPComparisonTable";
 
-export const BEST_BANK_ZZP_PATH = "/netherlands/money/banking/best-bank-zzp/" as const;
+export const BEST_BANK_ZZP_PATH = "/netherlands/money/banking/best-bank-zzp" as const;
 
 export const zzpFreelancerComparisonBankIds = ["ing", "abn-amro", "rabobank", "bunq", "revolut", "n26"] as const satisfies readonly BankId[];
 

@@ -9,13 +9,13 @@ import { BEST_BANKS_EXPATS_PATH } from "./bestBanksExpatsPaths";
 export { BEST_BANKS_EXPATS_PATH } from "./bestBanksExpatsPaths";
 
 /** Sibling / hub paths inlined to avoid cycles with modules that import BEST_BANKS_EXPATS_PATH. */
-const BANKING_HUB_PATH = "/netherlands/money/banking/" as const;
-const OPEN_BANK_ACCOUNT_NETHERLANDS_PATH = "/netherlands/open-bank-account-netherlands/" as const;
-const TYPES_OF_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/types-of-accounts/" as const;
-const HOW_PAYMENTS_WORK_PATH = "/netherlands/money/banking/how-payments-work/" as const;
-const CHEAPEST_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/cheapest-accounts/" as const;
-const TRADITIONAL_VS_DIGITAL_BANKS_PATH = "/netherlands/money/banking/traditional-vs-digital/" as const;
-const BANKING_ACCOUNT_REJECTION_PATH = "/netherlands/money/banking/account-rejection/" as const;
+const BANKING_HUB_PATH = "/netherlands/money/banking" as const;
+const OPEN_BANK_ACCOUNT_NETHERLANDS_PATH = "/netherlands/open-bank-account-netherlands" as const;
+const TYPES_OF_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/types-of-accounts" as const;
+const HOW_PAYMENTS_WORK_PATH = "/netherlands/money/banking/how-payments-work" as const;
+const CHEAPEST_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/cheapest-accounts" as const;
+const TRADITIONAL_VS_DIGITAL_BANKS_PATH = "/netherlands/money/banking/traditional-vs-digital" as const;
+const BANKING_ACCOUNT_REJECTION_PATH = "/netherlands/money/banking/account-rejection" as const;
 
 export type { BankDetailVm } from "@/src/data/banking/banks";
 
@@ -43,12 +43,12 @@ const visual = (slug: string, alt: string, caption: string) => ({
   caption,
 });
 
-export const FEES_PATH = "/netherlands/money/banking/fees/" as const;
-export const BANKING_SECURITY_PATH = "/netherlands/money/banking/security/" as const;
-const CASH_VS_CARD_PATH = "/netherlands/money/banking/cash-vs-card/" as const;
-const DEBIT_CARDS_PATH = "/netherlands/money/banking/debit-cards/" as const;
-const CREDIT_CARDS_PATH = "/netherlands/money/banking/credit-cards/" as const;
-const WISE_VS_REVOLUT_PATH = "/netherlands/money/banking/wise-vs-revolut/" as const;
+export const FEES_PATH = "/netherlands/money/banking/fees" as const;
+export const BANKING_SECURITY_PATH = "/netherlands/money/banking/security" as const;
+const CASH_VS_CARD_PATH = "/netherlands/money/banking/cash-vs-card" as const;
+const DEBIT_CARDS_PATH = "/netherlands/money/banking/debit-cards" as const;
+const CREDIT_CARDS_PATH = "/netherlands/money/banking/credit-cards" as const;
+const WISE_VS_REVOLUT_PATH = "/netherlands/money/banking/wise-vs-revolut" as const;
 
 export const bestBanksExpatsPage = {
   slug: "best-banks-expats",

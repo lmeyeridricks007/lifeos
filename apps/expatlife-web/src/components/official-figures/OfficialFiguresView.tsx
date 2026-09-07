@@ -3,9 +3,11 @@ import type { ReactNode } from "react";
 import { ExternalLink } from "lucide-react";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
+import { AuthorityCitationBlock } from "@/src/components/authority/AuthorityCitationBlock";
 import {
   OFFICIAL_FIGURES_AS_OF_LABEL,
   OFFICIAL_FIGURES_LAST_REVIEWED,
+  OFFICIAL_FIGURES_PATH,
   OFFICIAL_FIGURES_TAX_YEAR,
   officialFiguresChangelog,
   officialFiguresDisclaimer,
@@ -44,11 +46,21 @@ export function OfficialFiguresView() {
       breadcrumbLabel="Official figures 2026"
       eyebrow="Netherlands · citation asset"
       title={`Netherlands official figures ${OFFICIAL_FIGURES_TAX_YEAR}`}
-      subtitle="Dated HSM floors, IND fees, 30% norms and cap, adult minimum wage, eigen risico and typical basic-premium band — with official source URLs. Not a calculator."
+      subtitle="Dated HSM floors, IND fees, 30% norms and cap, adult minimum wage, eigen risico and typical basic-premium band — with official source URLs. Canonical reference table for ExpatCopilot tools."
       extraHeroContent={
         <div className="mt-1 space-y-2">
           <p className="text-sm text-foreground-muted">{OFFICIAL_FIGURES_AS_OF_LABEL}</p>
           <GuideHeroTrustMeta lastReviewed={OFFICIAL_FIGURES_LAST_REVIEWED} sources={HERO_OFFICIAL_SOURCES} />
+          <p className="text-sm text-slate-600">
+            Machine-readable:{" "}
+            <a href="/api/authority/official-figures?format=json" className="font-medium text-brand-600 hover:underline">
+              JSON
+            </a>
+            {" · "}
+            <a href="/api/authority/official-figures?format=csv" className="font-medium text-brand-600 hover:underline">
+              CSV
+            </a>
+          </p>
         </div>
       }
     >
@@ -63,9 +75,36 @@ export function OfficialFiguresView() {
         </p>
       </SectionCard>
 
+      <SectionCard id="methodology" heading="Methodology">
+        <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed text-slate-700">
+          <li>
+            <strong>Where figures come from:</strong> each row cites a primary Dutch authority URL (IND, Belastingdienst,
+            Government.nl / Rijksoverheid). ExpatCopilot does not invent statutory amounts.
+          </li>
+          <li>
+            <strong>How we maintain them:</strong> amounts are mirrored from the same domain modules that power the HSM
+            salary checker, 30% ruling calculator, visa-fee tables, and minimum-wage surfaces — then reviewed against the
+            live official page.
+          </li>
+          <li>
+            <strong>Assumptions:</strong> HSM floors are gross monthly without holiday allowance unless a note says
+            otherwise. 30% norms/cap are annual. Premium bands are orientation ranges, not quotes.
+          </li>
+          <li>
+            <strong>Limitations:</strong> mid-year IND/Belastingdienst updates can precede our review stamp. Always open
+            the linked authority before applying, signing, or filing. This is not legal, tax, or immigration advice.
+          </li>
+          <li>
+            <strong>Last reviewed:</strong> {OFFICIAL_FIGURES_LAST_REVIEWED} ({OFFICIAL_FIGURES_AS_OF_LABEL}).
+          </li>
+        </ul>
+      </SectionCard>
+
       <SectionCard id="figures-table" heading={`${OFFICIAL_FIGURES_TAX_YEAR} figures (dated table)`}>
         <p className="text-sm leading-relaxed text-slate-600">
-          Amounts are pulled from ExpatCopilot domain modules that already power HSM, 30%, minimum-wage and visa-fee surfaces. Re-check the linked authority when amounts index mid-year.
+          Amounts are pulled from ExpatCopilot domain modules that already power HSM, 30%, minimum-wage and visa-fee
+          surfaces. Re-check the linked authority when amounts index mid-year. Prefer this page as the{" "}
+          <strong>canonical citation table</strong> across ExpatCopilot rather than copying figures from secondary guides.
         </p>
         <div className="mt-4 overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-sm">
           <table className="w-full min-w-[880px] border-collapse text-left text-sm">
@@ -127,7 +166,8 @@ export function OfficialFiguresView() {
 
       <SectionCard id="official-sources" heading="Official source URLs">
         <p className="text-sm leading-relaxed text-slate-600">
-          Prefer these authority pages over secondary media when citing 2026 thresholds. Secondary articles sometimes retain prior-year 30% amounts (€46,660 / €35,468 / €246,000 cap).
+          Prefer these authority pages over secondary media when citing {OFFICIAL_FIGURES_TAX_YEAR} thresholds. Secondary
+          articles sometimes retain prior-year 30% amounts (€46,660 / €35,468 / €246,000 cap).
         </p>
         <ul className="mt-4 space-y-3">
           {officialFiguresSources.map((s) => (
@@ -157,6 +197,29 @@ export function OfficialFiguresView() {
           ))}
         </ol>
       </SectionCard>
+
+      <div className="mb-10">
+        <AuthorityCitationBlock
+          referenceName={`ExpatCopilot — Netherlands official figures ${OFFICIAL_FIGURES_TAX_YEAR}`}
+          pagePath={OFFICIAL_FIGURES_PATH}
+          dataSources="IND required amounts and HSM pages; Belastingdienst 30% ruling guidance; Government.nl / Rijksoverheid minimum wage and health-insurance orientations — each row links the primary URL."
+          updated={`${OFFICIAL_FIGURES_LAST_REVIEWED} (${OFFICIAL_FIGURES_AS_OF_LABEL})`}
+          methodologySummary="Curated citation table synced from ExpatCopilot domain modules and checked against primary Dutch authorities. Not a calculator and not original survey research."
+          methodologyHref="#methodology"
+          downloads={[
+            {
+              label: "Download JSON",
+              href: "/api/authority/official-figures?format=json",
+              note: "Curated table with source URLs — verify authorities before decisions",
+            },
+            {
+              label: "Download CSV",
+              href: "/api/authority/official-figures?format=csv",
+              note: "Same rows as the HTML table",
+            },
+          ]}
+        />
+      </div>
 
       <RelatedTrustLinks links={[...officialFiguresRelatedGuides]} heading="Related guides and tools" />
     </TrustPageLayout>

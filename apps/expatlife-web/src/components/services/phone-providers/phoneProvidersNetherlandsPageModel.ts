@@ -1,23 +1,23 @@
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 /** Services directory — Dutch mobile / SIM / eSIM / prepaid plan providers for expats. */
-export const PHONE_PROVIDERS_PATH = "/netherlands/services/phone-providers/" as const;
+export const PHONE_PROVIDERS_PATH = "/netherlands/services/phone-providers" as const;
 export const PHONE_PROVIDERS_NETHERLANDS_PATH = PHONE_PROVIDERS_PATH;
 
 /** Sibling Connectivity directories — path strings only (avoids circular model imports). */
-export const INTERNET_PROVIDERS_PATH = "/netherlands/services/internet-providers/" as const;
-export const ENERGY_PROVIDERS_PATH = "/netherlands/services/energy-providers/" as const;
-export const MOBILE_CONNECTIVITY_PATH = "/netherlands/services/mobile-connectivity/" as const;
+export const INTERNET_PROVIDERS_PATH = "/netherlands/services/internet-providers" as const;
+export const ENERGY_PROVIDERS_PATH = "/netherlands/services/energy-providers" as const;
+export const MOBILE_CONNECTIVITY_PATH = "/netherlands/services/mobile-connectivity" as const;
 export const INTERNET_AND_MOBILE_UTILITIES_PATH =
-  "/netherlands/utilities/internet-and-mobile-netherlands/" as const;
-export const ENERGY_AND_WATER_PATH = "/netherlands/utilities/energy-and-water-netherlands/" as const;
-export const UTILITIES_HUB_PATH = "/netherlands/utilities/utilities-netherlands/" as const;
-export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents/" as const;
-export const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies/" as const;
-export const RENTAL_AGENCIES_PATH = "/netherlands/services/rental-agencies/" as const;
-export const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers/" as const;
+  "/netherlands/utilities/internet-and-mobile-netherlands" as const;
+export const ENERGY_AND_WATER_PATH = "/netherlands/utilities/energy-and-water-netherlands" as const;
+export const UTILITIES_HUB_PATH = "/netherlands/utilities/utilities-netherlands" as const;
+export const SERVICES_HUB_PATH = "/netherlands/services" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents" as const;
+export const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies" as const;
+export const RENTAL_AGENCIES_PATH = "/netherlands/services/rental-agencies" as const;
+export const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers" as const;
 
 export const PHONE_PROVIDERS_AFFILIATE_PLACEMENT_ID =
   "nl-services-phone-providers-support-providers" as const;

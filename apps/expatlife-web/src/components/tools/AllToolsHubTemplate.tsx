@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { Container } from "@/components/ui/container";
 import type { ToolCategory, ToolRecord } from "@/src/lib/tools/loadToolRegistry";
 import { ClusterHubPageTemplate } from "@/components/page/page-templates";
@@ -15,7 +16,7 @@ import { NETHERLANDS_PILLAR_HUB_LINKS } from "@/src/components/living/livingPill
 import { toolsHubHeroImage } from "@/src/lib/tools/toolsHubHeroImage";
 
 const hubContainerClass = "w-full max-w-screen-2xl";
-const ALL_TOOLS_PATH = "/netherlands/tools/";
+const ALL_TOOLS_PATH = "/netherlands/tools";
 
 type AllToolsHubTemplateProps = {
   categories: ToolCategory[];
@@ -24,7 +25,7 @@ type AllToolsHubTemplateProps = {
 
 export function AllToolsHubTemplate({ categories, featuredTools }: AllToolsHubTemplateProps) {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(ALL_TOOLS_PATH, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(ALL_TOOLS_PATH);
 
   return (
     <ClusterHubPageTemplate

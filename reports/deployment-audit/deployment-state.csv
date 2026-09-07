@@ -1,0 +1,48 @@
+field,value,evidence
+audit_date,2026-09-07,local audit run
+production_origin,https://www.expatcopilot.com,production validation + live probes
+git_local_branch,main,git status -sb
+git_local_sha,2a0dc46564440a08f3e3a5158e72e0483fbb1ed3,git rev-parse HEAD
+git_local_commit_subject,improvements,git log -1
+git_local_commit_date,2026-09-03T06:54:22Z,git log -1 / author date local 2026-09-03 08:54:22 +0200
+git_remote,origin=https://github.com/lmeyeridricks007/lifeos.git,git remote -v
+git_remote_branch,origin/main,git rev-parse origin/main
+git_remote_sha,2a0dc46564440a08f3e3a5158e72e0483fbb1ed3,matches HEAD
+git_ahead_behind,0 0,git rev-list --left-right --count HEAD...origin/main
+git_dirty_entries,737,git status --porcelain count
+git_untracked_top_level_reports,yes (reports/ entire tree untracked),git status --porcelain reports/
+remediation_commits_on_branch,none,no commits referencing remediation deliverables; key files never in git log --all
+remediation_files_committed,NO,site-url.ts health/page education/page api/authority/* never appear in any commit
+remediation_files_pushed,NO,origin/main == HEAD without remediations
+vercel_project_name,lifeos-expatlife-web,GitHub Vercel status target_url path segment
+vercel_team_slug,leemeyeridricks-3740s-projects,GitHub Vercel status target_url
+vercel_dashboard_deployment_url,https://vercel.com/leemeyeridricks-3740s-projects/lifeos-expatlife-web/3nruoHAMr6Rs9ybYDDXUTaf9FkJC,GitHub commit status target_url for 2a0dc46
+vercel_project_id,not readable via CLI (token invalid / no .vercel link),npx vercel whoami failed; no apps/expatlife-web/.vercel
+production_branch_expected,main,gh repo defaultBranchRef + Vercel production deployments on main SHAs
+vercel_root_directory_documented,apps/expatlife-web,VERCEL.md Option A
+vercel_framework_documented,Next.js,VERCEL.md
+vercel_build_command_documented,pnpm run build (in app root),VERCEL.md + package.json scripts.build
+vercel_install_command_documented,cd ../.. && pnpm install --frozen-lockfile,VERCEL.md Option A
+vercel_output_directory_documented,default Next.js (unset),VERCEL.md
+vercel_ignored_build_step_documented,not configured in repo (no vercel.json ignoreCommand),repo search
+monorepo_workspace,pnpm-workspace.yaml apps/* + packages/*,pnpm-workspace.yaml
+app_package_name,@expatlife/web,apps/expatlife-web/package.json
+latest_github_production_deployment_id,6238710782,gh api deployments
+latest_github_production_deployment_sha,2a0dc46564440a08f3e3a5158e72e0483fbb1ed3,gh api deployments
+latest_github_production_deployment_created_at,2026-09-03T06:59:56Z,gh api deployments
+latest_github_production_deployment_state,success,deployment statuses + commit status Deployment has completed
+latest_deployment_environment_url,https://lifeos-expatlife-m6pmojdjl-leemeyeridricks-3740s-projects.vercel.app,deployment statuses (SSO-protected)
+deployment_contains_remediation_commits,NO,deploy SHA has zero remediation commits / files
+domain_apex,expatcopilot.com,DNS + live headers
+domain_www,www.expatcopilot.com,DNS + live headers
+dns_apex_A,216.198.79.1,dig +short (matches VERCEL.md example Vercel IP)
+dns_www_resolves_to,expatcopilot.com / 216.198.79.1,dig CNAME/A
+apex_http_behavior,307 → https://www.expatcopilot.com/,curl -sSI
+www_served_by,Vercel (server: Vercel; x-vercel-id fra1),curl -sSI
+www_health_x_matched_path,/netherlands/[...slug],proves dedicated health/page.tsx absent from deploy
+www_authority_api_status,404,curl /api/authority/official-figures
+www_sitemap_trailing_slash,yes (about/ etc.),live sitemap.xml
+head_normalizeSitePath_behavior,forces trailing slash,route-registry.ts on HEAD
+worktree_site_url_helper,no-slash convention (untracked),lib/seo/site-url.ts
+classification_primary,A_code_never_committed,see ROOT CAUSE
+classification_secondary_notes,not wrong project/domain; latest prod deploy is correct for main tip without remediations,domain + GH deployment evidence

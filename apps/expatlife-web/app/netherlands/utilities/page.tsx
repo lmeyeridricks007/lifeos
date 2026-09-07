@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Router, Zap } from "lucide-react";
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   title: "Utilities in the Netherlands | Guides for Expats",
   description:
     "Start here for Dutch utility setup guides covering electricity, gas, water, internet, mobile services, waste collection and utility costs.",
-  alternates: { canonical: guide.hubPath },
+  alternates: { canonical: absoluteUrlFromPath(guide.hubPath)},
   openGraph: {
     title: "Utilities in the Netherlands | Guides for Expats",
     description:

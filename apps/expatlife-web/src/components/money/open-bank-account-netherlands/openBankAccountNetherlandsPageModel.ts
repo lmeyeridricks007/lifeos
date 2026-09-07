@@ -10,7 +10,7 @@ import {
 } from "@/src/components/tools/banking-cost/bankingCostPageModel";
 
 /** Keep this SEO URL — do not relocate under /money/banking/. */
-export const OPEN_BANK_ACCOUNT_NETHERLANDS_PATH = "/netherlands/open-bank-account-netherlands/" as const;
+export const OPEN_BANK_ACCOUNT_NETHERLANDS_PATH = "/netherlands/open-bank-account-netherlands" as const;
 
 export type OpenBankLink = {
   label: string;

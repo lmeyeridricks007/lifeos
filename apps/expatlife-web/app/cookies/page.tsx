@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { CookieSettingsLink } from "@/src/components/cookies/CookieSettingsLink";
 import { cookiesPage } from "@/src/data/legal/cookies";
@@ -12,7 +12,7 @@ export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: pageMetadataTitle(cookiesPage.seo.title),
   description: cookiesPage.seo.description,
-  alternates: { canonical: "/cookies/" },
+  alternates: { canonical: absoluteUrlFromPath("/cookies/")},
 };
 
 export default function CookiesPage() {

@@ -10,7 +10,7 @@ import type {
 } from "./moveWorkingNl.types";
 
 export const moveWorkingNlRoutes = {
-  canonical: "/netherlands/moving/working-in-the-netherlands/",
+  canonical: "/netherlands/moving/working-in-the-netherlands",
   changingJobs: "/netherlands/moving/changing-jobs-netherlands/",
   resigningJob: "/netherlands/moving/resigning-job-netherlands/",
   layoffs: "/netherlands/moving/layoffs-netherlands/",

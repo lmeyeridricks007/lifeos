@@ -5,7 +5,7 @@ export async function getHomeContent(): Promise<HomeContent> {
     redirectTarget: "/netherlands",
     seo: {
       description:
-        "Practical relocation platform with guides, tools, and routes for moving to the Netherlands.",
+        "ExpatCopilot helps you plan a Netherlands move with practical guides, calculators, and country-specific routes—start from your situation, not a generic checklist.",
     },
   };
 }

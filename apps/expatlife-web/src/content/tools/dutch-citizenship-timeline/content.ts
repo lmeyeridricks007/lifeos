@@ -1,5 +1,5 @@
 export const CITIZENSHIP_TIMELINE_CANONICAL =
-  "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/";
+  "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator";
 
 export const CITIZENSHIP_TIMELINE_FAQ_ITEMS = [
   {

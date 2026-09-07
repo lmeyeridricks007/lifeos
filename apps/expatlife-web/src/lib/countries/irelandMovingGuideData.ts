@@ -7,11 +7,11 @@ import { filterLiveInternalLinks } from "@/src/lib/routes/routeStatus";
 import type { GuideData, GuideSection } from "@/src/lib/guides/types";
 import type { CountryPageModel } from "./buildCountryPageModel";
 
-const PILLAR_PATH = "/netherlands/moving-to-the-netherlands/";
-const COUNTRY_INDEX_PATH = "/netherlands/moving-to-netherlands-from/";
-const COST_ESTIMATOR_PATH = "/netherlands/moving/tools/relocation-cost-estimator/";
-const DOCUMENTS_GUIDE_PATH = "/netherlands/documents-needed-to-move-netherlands/";
-const COST_GUIDE_PATH = "/netherlands/moving-to-netherlands-cost/";
+const PILLAR_PATH = "/netherlands/moving-to-the-netherlands";
+const COUNTRY_INDEX_PATH = "/netherlands/moving-to-netherlands-from";
+const COST_ESTIMATOR_PATH = "/netherlands/moving/tools/relocation-cost-estimator";
+const DOCUMENTS_GUIDE_PATH = "/netherlands/documents-needed-to-move-netherlands";
+const COST_GUIDE_PATH = "/netherlands/moving-to-netherlands-cost";
 
 const OFFICIAL_EU_NL: Array<{ label: string; href: string }> = [
   {

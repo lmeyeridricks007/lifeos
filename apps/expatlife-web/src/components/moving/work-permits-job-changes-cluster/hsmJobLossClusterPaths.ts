@@ -5,16 +5,16 @@ import {
 } from "@/src/components/moving/long-term-stay-cluster/longTermStayClusterPaths";
 
 /** Shared routes for the HSM job-loss / job-search cluster (no standalone URL). */
-export const HSM_VISA_GUIDE_PATH = "/netherlands/visa/highly-skilled-migrant/" as const;
+export const HSM_VISA_GUIDE_PATH = "/netherlands/visa/highly-skilled-migrant" as const;
 export const HSM_JOB_LOSS_SECTION_ID = "if-you-lose-your-hsm-job" as const;
 export const HSM_JOB_LOSS_ANCHOR = `#${HSM_JOB_LOSS_SECTION_ID}` as const;
 export const HSM_VISA_JOB_LOSS_HREF = `${HSM_VISA_GUIDE_PATH}${HSM_JOB_LOSS_ANCHOR}` as const;
 
-export const LAYOFFS_NL_PATH = "/netherlands/moving/layoffs-netherlands/" as const;
-export const CHANGING_JOBS_NL_PATH = "/netherlands/moving/changing-jobs-netherlands/" as const;
-export const VISA_CHECKER_PATH = "/netherlands/visa-checker/" as const;
-export const FIRST_90_DAYS_TOOL_PATH = "/netherlands/moving/tools/first-90-days/" as const;
-export const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling/" as const;
+export const LAYOFFS_NL_PATH = "/netherlands/moving/layoffs-netherlands" as const;
+export const CHANGING_JOBS_NL_PATH = "/netherlands/moving/changing-jobs-netherlands" as const;
+export const VISA_CHECKER_PATH = "/netherlands/visa-checker" as const;
+export const FIRST_90_DAYS_TOOL_PATH = "/netherlands/moving/tools/first-90-days" as const;
+export const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling" as const;
 
 /** Editorial go-live for the IND 22 May 2026 job-search cluster refresh. */
 export const HSM_JOB_LOSS_CLUSTER_PUBLISH_DATE = "2026-08-30" as const;

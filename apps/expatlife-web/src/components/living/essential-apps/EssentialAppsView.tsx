@@ -1,4 +1,5 @@
 import { createElement, Fragment } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
@@ -494,12 +495,12 @@ function OfficialSourcesBlock() {
 
 export function EssentialAppsView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(LIVING_ESSENTIAL_APPS_PATH, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(LIVING_ESSENTIAL_APPS_PATH);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: new URL(LIVING_SURVIVAL_GUIDE_PATH, baseUrl).toString() },
-    { name: "Essential apps", item: new URL(LIVING_ESSENTIAL_APPS_PATH, baseUrl).toString() },
+    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: absoluteUrlFromPath(LIVING_SURVIVAL_GUIDE_PATH) },
+    { name: "Essential apps", item: absoluteUrlFromPath(LIVING_ESSENTIAL_APPS_PATH) },
   ];
 
   const primaryCtaClass = cn(

@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -675,8 +676,8 @@ export function FamilyActivitiesNetherlandsView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Family", item: new URL(FAMILY_HUB_PATH, baseUrl).toString() },
-          { name: "Family activities", item: new URL(FAMILY_ACTIVITIES_NETHERLANDS_PATH, baseUrl).toString() },
+          { name: "Family", item: absoluteUrlFromPath(FAMILY_HUB_PATH) },
+          { name: "Family activities", item: absoluteUrlFromPath(FAMILY_ACTIVITIES_NETHERLANDS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

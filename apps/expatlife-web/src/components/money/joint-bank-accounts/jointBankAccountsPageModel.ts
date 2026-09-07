@@ -21,12 +21,12 @@ import {
 } from "@/src/components/tools/banking-cost/bankingCostPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
-export const JOINT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/joint-accounts/" as const;
+export const JOINT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/joint-accounts" as const;
 
 /** Local path string avoids a circular import with studentBankAccountsPageModel. */
-const STUDENT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/student-accounts/" as const;
-const BANKING_SECURITY_PATH = "/netherlands/money/banking/security/" as const;
-const ACCOUNT_REJECTION_PATH = "/netherlands/money/banking/account-rejection/" as const;
+const STUDENT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/student-accounts" as const;
+const BANKING_SECURITY_PATH = "/netherlands/money/banking/security" as const;
+const ACCOUNT_REJECTION_PATH = "/netherlands/money/banking/account-rejection" as const;
 
 export type JointBankAccountsLink = {
   label: string;

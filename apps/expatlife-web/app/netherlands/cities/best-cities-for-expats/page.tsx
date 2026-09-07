@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import { BestCitiesForExpatsView } from "@/src/components/cities/best-cities-for-expats/BestCitiesForExpatsView";
 import { bestCitiesForExpatsPageModel } from "@/src/components/cities/best-cities-for-expats/bestCitiesForExpatsPageModel";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
@@ -13,12 +13,12 @@ export const metadata: Metadata = {
   title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
-  alternates: { canonical: path },
+  alternates: { canonical: absoluteUrlFromPath(path)},
   openGraph: {
     title: seo.title,
     description: seo.description,
     type: "article",
-    url: new URL(path, baseUrl).toString(),
+    url: absoluteUrlFromPath(path),
   },
   twitter: {
     card: "summary_large_image",

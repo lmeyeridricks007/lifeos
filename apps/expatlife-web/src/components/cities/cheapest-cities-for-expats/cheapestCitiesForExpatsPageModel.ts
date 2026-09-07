@@ -18,7 +18,7 @@ import {
   mapCheapestCityCardsToProfileViewModels,
 } from "./config/cheapestCitiesForExpats.content.config";
 
-export const CHEAPEST_CITIES_FOR_EXPATS_PATH = "/netherlands/cities/cheapest-cities-for-expats/" as const;
+export const CHEAPEST_CITIES_FOR_EXPATS_PATH = "/netherlands/cities/cheapest-cities-for-expats" as const;
 
 export type { CheapestShortlistCityVm } from "./config/citiesCheapest.mappers";
 

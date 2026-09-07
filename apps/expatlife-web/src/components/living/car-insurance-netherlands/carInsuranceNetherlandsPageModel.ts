@@ -1,3 +1,4 @@
+import { GUIDE_CITABILITY_POLICY_LINKS } from "@/src/components/guides/guideCitabilityPolicyLinks";
 import { LIVING_GETTING_AROUND_PATH, LIVING_PILLAR_ROOT_PATH } from "@/src/components/living/livingPillarContent";
 import {
   BUYING_A_CAR_NETHERLANDS_PATH,
@@ -14,6 +15,7 @@ import {
   ROAD_TAX_NETHERLANDS_PATH,
   SPEED_CAMERAS_NETHERLANDS_PATH,
 } from "@/src/components/living/driving-licence-exchange-netherlands/drivingLicenceExchangeNetherlandsPageModel";
+import { OV_CHIPKAART_NETHERLANDS_PATH } from "@/src/components/living/ov-chipkaart-netherlands/ovChipkaartNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 export {
@@ -65,6 +67,21 @@ export const carInsuranceNetherlandsPage = {
   parentGuidePath: GETTING_AROUND_PATH,
   publish: true,
   publishDate: scheduledPublishDateForPath(CAR_INSURANCE_NETHERLANDS_PATH) ?? "2026-08-29",
+  lastReviewed: "7 September 2026",
+  heroOfficialSources: [
+    {
+      label: "Government.nl — traffic and transport",
+      href: "https://www.government.nl/",
+    },
+    {
+      label: "RDW — vehicle registration",
+      href: "https://www.rdw.nl/en",
+    },
+    {
+      label: "Belastingdienst — motorrijtuigenbelasting",
+      href: "https://www.belastingdienst.nl/",
+    },
+  ],
   seo: {
     title: "Car Insurance in the Netherlands | Complete Guide for Expats",
     description:
@@ -729,7 +746,9 @@ export const carInsuranceNetherlandsPage = {
     "Recurring tax → Road tax.",
     "Drive rights → Driving licence exchange.",
     "OV and bikes → Getting around.",
+    "Personal travel card → OV-chipkaart.",
     "Resident parking → Parking and local permits.",
+    "How we work → Methodology / Sources / Editorial policy.",
   ],
   relatedGuides: [
     {
@@ -755,6 +774,12 @@ export const carInsuranceNetherlandsPage = {
       href: GETTING_AROUND_PATH,
       status: "live",
       description: "Trains, OVpay, bikes and everyday mobility when ownership is optional.",
+    },
+    {
+      label: "OV-chipkaart",
+      href: OV_CHIPKAART_NETHERLANDS_PATH,
+      status: "live",
+      description: "Personal travel card setup when you stay on public transport instead of insuring a car.",
     },
     {
       label: "Parking and local permits",
@@ -792,6 +817,7 @@ export const carInsuranceNetherlandsPage = {
       status: "live",
       description: "Lease and company cars may bundle insurance differently from private policies.",
     },
+    ...GUIDE_CITABILITY_POLICY_LINKS,
   ] satisfies DrivingLink[],
   drivingHubTips: [
     "Car insurance is the cover cornerstone of the Driving cluster.",

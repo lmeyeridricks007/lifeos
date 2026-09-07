@@ -1,5 +1,5 @@
 export const moveTwvWorkPermitRoutes = {
-  canonical: "/netherlands/moving/twv-work-permit/",
+  canonical: "/netherlands/moving/twv-work-permit",
   hub: "/netherlands/moving-to-the-netherlands/",
   visas: "/netherlands/moving/visas-residency/",
   residencePermits: "/netherlands/moving/residence-permits/",

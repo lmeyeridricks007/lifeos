@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
@@ -24,7 +25,7 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/housing/tools/rent-affordability-calculator/";
+const canonical = "/netherlands/housing/tools/rent-affordability-calculator";
 const BASE = "/netherlands";
 const HERO_IMAGE = "/images/tools/netherlands-rent-affordability-calculator-hero.png";
 
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
     images: [
       {
         url: HERO_IMAGE,
@@ -243,7 +244,7 @@ const PAGE_DISCLOSURE =
 
 export default function RentAffordabilityCalculatorPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(canonical, origin).toString();
+  const shareUrl = absoluteUrlFromPath(canonical);
   const serviceBundles = getRentAffordabilityServiceBundles();
   const relatedGuidesResolved = relatedGuidesFromRouteStatus(RELATED_NEXT_STEPS);
 
@@ -288,7 +289,7 @@ export default function RentAffordabilityCalculatorPage() {
         primarySectionTitle="Calculator"
         primarySectionContent={
           <RentAffordabilityCalculatorClient
-            calculatorCanonicalUrl={new URL(canonical, origin).toString()}
+            calculatorCanonicalUrl={absoluteUrlFromPath(canonical)}
             siteName="ExpatCopilot"
           />
         }

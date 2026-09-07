@@ -10,15 +10,15 @@ import {
   TRANSFER_COST_CALCULATOR_PATH,
 } from "@/src/components/tools/banking-cost/bankingCostPageModel";
 
-export const CASH_VS_CARD_PATH = "/netherlands/money/banking/cash-vs-card/" as const;
+export const CASH_VS_CARD_PATH = "/netherlands/money/banking/cash-vs-card" as const;
 
 /** Live cluster siblings under Banking Cluster (cards & apps). */
-export const DEBIT_CARDS_PATH = "/netherlands/money/banking/debit-cards/" as const;
-export const CREDIT_CARDS_PATH = "/netherlands/money/banking/credit-cards/" as const;
+export const DEBIT_CARDS_PATH = "/netherlands/money/banking/debit-cards" as const;
+export const CREDIT_CARDS_PATH = "/netherlands/money/banking/credit-cards" as const;
 export { WISE_VS_REVOLUT_PATH };
 
-export const HPW_FEES_PATH = "/netherlands/money/banking/fees/" as const;
-export const HPW_TRAD_DIG_PATH = "/netherlands/money/banking/traditional-vs-digital/" as const;
+export const HPW_FEES_PATH = "/netherlands/money/banking/fees" as const;
+export const HPW_TRAD_DIG_PATH = "/netherlands/money/banking/traditional-vs-digital" as const;
 
 export type CashVsCardLink = {
   label: string;

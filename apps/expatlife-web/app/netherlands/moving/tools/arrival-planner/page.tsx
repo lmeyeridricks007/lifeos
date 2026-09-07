@@ -33,10 +33,11 @@ import { buildSocialMetadata } from "@/lib/seo/metadata";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
+import { ToolOriginCountryVersionsSection } from "@/src/components/tools/shared/ToolOriginCountryVersionsSection";
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/moving/tools/arrival-planner/";
+const canonical = "/netherlands/moving/tools/arrival-planner";
 
 export const metadata: Metadata = buildSocialMetadata({
   title: "Arrival planner for the Netherlands (free tool)",
@@ -270,6 +271,9 @@ export default async function ArrivalPlannerPage(props: PageProps) {
           ) : null
         }
         faqItems={faq}
+                extraSection={
+          <ToolOriginCountryVersionsSection toolSlug="arrival-planner" />
+        }
         relatedGuides={nextSteps}
         postToolValue={<MoveClusterToolPostValueBlock preset="movingChecklistAndFirst90" />}
       >

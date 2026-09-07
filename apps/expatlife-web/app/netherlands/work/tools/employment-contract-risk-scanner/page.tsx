@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
@@ -56,7 +56,7 @@ const HERO_IMAGE_HEIGHT = 768;
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: CONTRACT_SCANNER_CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(CONTRACT_SCANNER_CANONICAL)},
   keywords: [
     "Dutch employment contract checker",
     "employment contract Netherlands expat",
@@ -97,7 +97,7 @@ function resolveRelatedGuides() {
 
 export default function EmploymentContractRiskScannerPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(CONTRACT_SCANNER_CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(CONTRACT_SCANNER_CANONICAL);
   const relatedGuides = resolveRelatedGuides();
   const pageContext = CONTRACT_SCANNER_CANONICAL;
 

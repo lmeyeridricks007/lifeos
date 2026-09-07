@@ -289,6 +289,13 @@ Referral from podcast domains, spike in **direct** and **branded search** after 
 | **Attend + mention site** | **1–2× per month** in Amsterdam/Rotterdam/The Hague/Eindhoven-style meetups if available. |
 | **Speak / host** | **Quarterly** as a stretch goal—bigger spike. |
 
+### Optional — IamExpat Fair The Hague (EC-20260907-005)
+
+- Soft presence only; pair with ACCESS outreach (`docs/backlinks/outreaches/additional-prospects-123-137.md` #126).
+- Handout URL: `/netherlands/official-figures/` (dated citation table).
+- Confirm free-ticket registration window on the live IamExpat event page (ops brief: through **29 Sep 2026** — verify before booking).
+- Event itself is typically **November** (2026: check Grote Kerk listing); skip if capacity/cost isn’t worth it.
+
 ### Measure
 
 UTM campaign hits same evening + day after; ask “how did you hear us” in optional on-site survey.

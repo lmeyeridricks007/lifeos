@@ -1,9 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { MobileNavDrawer } from "./MobileNavDrawer";
+
+const MobileNavDrawer = dynamic(
+  () => import("./MobileNavDrawer").then((m) => ({ default: m.MobileNavDrawer })),
+  { ssr: false }
+);
 
 type MobileNavProps = {
   drawerOpen: boolean;
@@ -15,6 +20,7 @@ type MobileNavProps = {
 /**
  * Mobile header controls: hamburger (opens drawer), search icon (opens search overlay), CTA.
  * Shown below lg; desktop nav is shown at lg+.
+ * Drawer chunk loads only after open (PERF-P1-HUB-TBT / shared shell).
  */
 export function MobileNav({
   drawerOpen,
@@ -57,11 +63,9 @@ export function MobileNav({
           </Button>
         </Link>
       </div>
-      <MobileNavDrawer
-        isOpen={drawerOpen}
-        onClose={onDrawerClose}
-        onOpenSearch={onOpenSearch}
-      />
+      {drawerOpen ? (
+        <MobileNavDrawer isOpen={drawerOpen} onClose={onDrawerClose} onOpenSearch={onOpenSearch} />
+      ) : null}
     </div>
   );
 }

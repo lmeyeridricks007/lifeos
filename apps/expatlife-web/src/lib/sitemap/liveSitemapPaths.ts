@@ -28,7 +28,7 @@ const XML_SITEMAP_LEGACY_REDIRECT_ALIASES = new Set(
 const routingSlugSet = new Set<string>(ROUTING_ORIGIN_COUNTRY_SLUGS);
 
 /**
- * Normalized paths (trailing slash, lowercase) for URLs that belong in `/sitemap.xml`.
+ * Normalized paths (no trailing slash, lowercase) for URLs that belong in `/sitemap.xml`.
  *
  * Source of truth for “is this indexable?” remains `route-registry` + `isRouteLive` in `routeStatus`.
  * - Every path from `LIVE_PATHS` is a candidate except `XML_SITEMAP_EXCLUDE` and permanent-redirect aliases.
@@ -83,6 +83,9 @@ export type SitemapUrlEntry = {
  * City hubs / cities overview use editorial `publishDate` when present. Everything else uses the
  * generation instant — so hundreds of identical timestamps after a deploy are expected (E3 /
  * EC-20260826-010), not evidence of mass content rewrites.
+ *
+ * P3/WATCH (docs/ops/content-refresh-2026-09-07.md): Mar–Apr 2026 city lastmods are intentional
+ * publishDates — bump only when the city hub content actually updates; never fake freshness.
  */
 export function sitemapLastModifiedIsoForPath(path: string, now: Date = new Date()): string {
   const n = normalizeSitePath(path);
@@ -106,21 +109,22 @@ export function buildSitemapUrlEntries(
 ): SitemapUrlEntry[] {
   const origin = baseUrl.replace(/\/$/, "");
   return paths.map((path) => {
+    const n = normalizeSitePath(path);
     const changefreq: "weekly" | "monthly" =
-      path === "/" || path === "/netherlands/" ? "weekly" : "monthly";
+      n === "/" || n === "/netherlands" ? "weekly" : "monthly";
     const priority =
-      path === "/"
+      n === "/"
         ? "1.0"
-        : path === "/netherlands/"
+        : n === "/netherlands"
           ? "0.9"
-          : path === "/netherlands/moving-to-the-netherlands/"
+          : n === "/netherlands/moving-to-the-netherlands"
             ? "0.8"
-            : path === "/netherlands/cities/"
+            : n === "/netherlands/cities"
               ? "0.75"
               : "0.7";
     return {
-      loc: `${origin}${path}`,
-      lastmod: sitemapLastModifiedIsoForPath(path, now),
+      loc: `${origin}${n === "/" ? "/" : n}`,
+      lastmod: sitemapLastModifiedIsoForPath(n, now),
       changefreq,
       priority,
     };

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { pageMetadataTitle } from "@/lib/seo/metadata";
 import { ArticleJsonLd, FaqPageJsonLd, HowToJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { buildSocialMetadata } from "@/lib/seo/metadata";
@@ -31,7 +32,7 @@ function MedicalWebPageJsonLd() {
     "@type": "MedicalWebPage",
     name: hero.pageTitle,
     description: seo.description,
-    url: new URL(path, baseUrl).toString(),
+    url: absoluteUrlFromPath(path),
     datePublished: publishDate,
     isPartOf: {
       "@type": "WebSite",
@@ -58,7 +59,7 @@ export default function PregnancyNetherlandsPage() {
       <WebPageJsonLd name={hero.pageTitle} description={seo.description} urlPath={path} datePublished={publishDate} />
       <ArticleJsonLd headline={hero.pageTitle} description={seo.description} dateModified={publishDate} urlPath={path} />
       <MedicalWebPageJsonLd />
-      <FaqPageJsonLd items={page.faq.map((item) => ({ q: item.q, a: item.a }))} url={new URL(path, baseUrl).toString()} />
+      <FaqPageJsonLd items={page.faq.map((item) => ({ q: item.q, a: item.a }))} url={absoluteUrlFromPath(path)} />
       <HowToJsonLd
         name={page.howToSchema.name}
         description={page.howToSchema.description}

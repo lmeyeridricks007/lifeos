@@ -1,4 +1,4 @@
-export const EMPLOYMENT_TYPE_SCENARIO_CANONICAL = "/netherlands/work/tools/employment-type-scenario-tool/";
+export const EMPLOYMENT_TYPE_SCENARIO_CANONICAL = "/netherlands/work/tools/employment-type-scenario-tool";
 export const NL_BASE = "/netherlands";
 
 export const EMPLOYMENT_TYPE_SCENARIO_AT_A_GLANCE = [

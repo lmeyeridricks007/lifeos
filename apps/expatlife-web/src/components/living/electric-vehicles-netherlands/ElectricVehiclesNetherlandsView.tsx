@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -641,8 +642,8 @@ export function ElectricVehiclesNetherlandsView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Living", item: new URL(LIVING_PILLAR_ROOT_PATH, baseUrl).toString() },
-          { name: "Electric vehicles", item: new URL(ELECTRIC_VEHICLES_NETHERLANDS_PATH, baseUrl).toString() },
+          { name: "Living", item: absoluteUrlFromPath(LIVING_PILLAR_ROOT_PATH) },
+          { name: "Electric vehicles", item: absoluteUrlFromPath(ELECTRIC_VEHICLES_NETHERLANDS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

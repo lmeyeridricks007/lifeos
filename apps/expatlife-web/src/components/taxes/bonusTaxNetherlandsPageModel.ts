@@ -1,14 +1,14 @@
-export const BONUS_TAX_NETHERLANDS_PATH = "/netherlands/taxes/bonus-tax-netherlands/" as const;
-export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator/" as const;
-export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
-export const GROSS_VS_NET_SALARY_PATH = "/netherlands/taxes/gross-vs-net-salary/" as const;
-export const NET_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/net-salary-netherlands/" as const;
-export const PAYROLL_TAX_NETHERLANDS_PATH = "/netherlands/taxes/payroll-tax-netherlands/" as const;
-export const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling/" as const;
-export const HOLIDAY_ALLOWANCE_NETHERLANDS_PATH = "/netherlands/jobs/holiday-allowance-netherlands/" as const;
-export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands/" as const;
-export const EMPLOYEE_BENEFITS_NETHERLANDS_PATH = "/netherlands/jobs/employee-benefits-netherlands/" as const;
-export const PAYSLIP_DECODER_PATH = "/netherlands/work/tools/payslip-decoder/" as const;
+export const BONUS_TAX_NETHERLANDS_PATH = "/netherlands/taxes/bonus-tax-netherlands" as const;
+export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator" as const;
+export const TAXES_HUB_PATH = "/netherlands/taxes" as const;
+export const GROSS_VS_NET_SALARY_PATH = "/netherlands/taxes/gross-vs-net-salary" as const;
+export const NET_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/net-salary-netherlands" as const;
+export const PAYROLL_TAX_NETHERLANDS_PATH = "/netherlands/taxes/payroll-tax-netherlands" as const;
+export const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling" as const;
+export const HOLIDAY_ALLOWANCE_NETHERLANDS_PATH = "/netherlands/jobs/holiday-allowance-netherlands" as const;
+export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands" as const;
+export const EMPLOYEE_BENEFITS_NETHERLANDS_PATH = "/netherlands/jobs/employee-benefits-netherlands" as const;
+export const PAYSLIP_DECODER_PATH = "/netherlands/work/tools/payslip-decoder" as const;
 
 export type BonusTaxNetherlandsLink = {
   label: string;

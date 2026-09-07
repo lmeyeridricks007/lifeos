@@ -1,19 +1,19 @@
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 /** Services directory — Dutch notaris for conveyancing, deeds, inheritance orientation. */
-export const NOTARIES_PATH = "/netherlands/services/notaries/" as const;
+export const NOTARIES_PATH = "/netherlands/services/notaries" as const;
 export const NOTARIES_NETHERLANDS_PATH = NOTARIES_PATH;
 
-export const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents/" as const;
-export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors/" as const;
-export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors/" as const;
-export const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers/" as const;
-export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors/" as const;
-export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const MORTGAGES_FOR_EXPATS_PATH = "/netherlands/housing/mortgages-netherlands-expats/" as const;
-export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
+export const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents" as const;
+export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors" as const;
+export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors" as const;
+export const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers" as const;
+export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors" as const;
+export const SERVICES_HUB_PATH = "/netherlands/services" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const MORTGAGES_FOR_EXPATS_PATH = "/netherlands/housing/mortgages-netherlands-expats" as const;
+export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
 
 export const NOTARIES_AFFILIATE_PLACEMENT_ID = "nl-services-notaries-support-providers" as const;
 

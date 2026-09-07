@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Link from "next/link";
@@ -73,7 +74,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: PAYSLIP_PAGE_SEO.title,
     description: PAYSLIP_PAGE_SEO.description,
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
     images: [
       {
         url: PAYSLIP_PAGE_SEO.openGraphImage.url,
@@ -159,7 +160,7 @@ export default function PayslipDecoderPage() {
   // TODO(auth): use async server helper with cookies() → getPayslipEntitlementsFromRequest or plan lookup
   const payslipEntitlements = getPayslipEntitlements();
   const origin = getSiteOrigin();
-  const shareUrl = new URL(canonical, origin).toString();
+  const shareUrl = absoluteUrlFromPath(canonical);
   const payrollCards = getDutchSalaryNetPayrollServiceCards().slice(0, 3);
   const bankCards = getDutchSalaryNetBankCards().slice(0, 3);
   const relatedGuidesResolved = relatedGuidesFromRouteStatus(PAYSLIP_RELATED_NEXT_STEPS);

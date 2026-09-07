@@ -1,0 +1,19 @@
+{
+  "inlink_distribution_indexable": {
+    "0": 116,
+    "11-50": 108,
+    "3-10": 125,
+    "1-2": 15,
+    "51-200": 36,
+    "201+": 47
+  },
+  "targets_ge_400": 47,
+  "targets_ge_100": 55,
+  "country_tool_orphans": 112,
+  "orphans": 116,
+  "near_orphans": 15,
+  "edges_to_redirect": 932,
+  "edges_to_404": 163,
+  "unique_404_targets": 57,
+  "unique_redirect_targets": 16
+}

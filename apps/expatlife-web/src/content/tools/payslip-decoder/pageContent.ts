@@ -1,6 +1,6 @@
 import type { ToolExplanatorySection } from "@/src/components/tools/ToolPageTemplate";
 
-export const PAYSLIP_DECODER_CANONICAL = "/netherlands/work/tools/payslip-decoder/";
+export const PAYSLIP_DECODER_CANONICAL = "/netherlands/work/tools/payslip-decoder";
 export const NETHERLANDS_BASE = "/netherlands";
 
 export const PAYSLIP_PAGE_SEO = {

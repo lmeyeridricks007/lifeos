@@ -16,7 +16,7 @@ import {
   TRANSFER_COST_CALCULATOR_PATH,
 } from "@/src/components/tools/banking-cost/bankingCostPageModel";
 
-export const CREDIT_CARDS_PATH = "/netherlands/money/banking/credit-cards/" as const;
+export const CREDIT_CARDS_PATH = "/netherlands/money/banking/credit-cards" as const;
 
 export type CreditCardsLink = {
   label: string;

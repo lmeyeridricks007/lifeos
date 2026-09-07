@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,7 +23,7 @@ import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/Mov
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/document-readiness-checker/";
+const canonical = "/netherlands/document-readiness-checker";
 const BASE = "/netherlands";
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     title: "Netherlands Document Readiness Checker: See What Documents You Still Need",
     description:
       "Check which document categories may matter for your move to the Netherlands, see what is missing, and get a personalized readiness summary with next steps.",
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
   },
   twitter: {
     card: "summary_large_image",

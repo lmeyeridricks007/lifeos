@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
@@ -38,12 +39,12 @@ export default async function NetherlandsServiceCategoryPage({ params }: PagePro
   if (!category) notFound();
 
   const path = category.href.startsWith("/") ? category.href : `/${category.href}`;
-  const shareUrl = new URL(path, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(path);
 
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Services", item: new URL("/netherlands/services/", baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+    { name: "Services", item: absoluteUrlFromPath("/netherlands/services/") },
     { name: category.name, item: shareUrl },
   ];
 

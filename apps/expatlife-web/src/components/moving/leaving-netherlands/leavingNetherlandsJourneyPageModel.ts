@@ -10,16 +10,16 @@ import {
 
 export { LEAVING_NL_JOURNEY_PATH, LEAVING_NL_TAX_PATH };
 
-export const RULING_30_PATH = "/netherlands/taxes/30-percent-ruling/" as const;
-export const LAYOFFS_PATH = "/netherlands/moving/layoffs-netherlands/" as const;
+export const RULING_30_PATH = "/netherlands/taxes/30-percent-ruling" as const;
+export const LAYOFFS_PATH = "/netherlands/moving/layoffs-netherlands" as const;
 export const SUBSCRIPTIONS_PATH =
-  "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/" as const;
+  "/netherlands/practical-life/subscriptions-and-cancellations-netherlands" as const;
 export const REGISTER_ADDRESS_PATH =
-  "/netherlands/practical-life/registering-your-address-netherlands/" as const;
-export const MUNICIPALITY_REGISTRATION_PATH = "/netherlands/municipality-registration-netherlands/" as const;
-export const EXIT_READINESS_PATH = "/netherlands/leaving/tools/exit-readiness-checker/" as const;
-export const REPATRIATION_COST_PATH = "/netherlands/leaving/tools/repatriation-cost-calculator/" as const;
-export const MOVING_HUB_PATH = "/netherlands/moving-to-the-netherlands/" as const;
+  "/netherlands/practical-life/registering-your-address-netherlands" as const;
+export const MUNICIPALITY_REGISTRATION_PATH = "/netherlands/municipality-registration-netherlands" as const;
+export const EXIT_READINESS_PATH = "/netherlands/leaving/tools/exit-readiness-checker" as const;
+export const REPATRIATION_COST_PATH = "/netherlands/leaving/tools/repatriation-cost-calculator" as const;
+export const MOVING_HUB_PATH = "/netherlands/moving-to-the-netherlands" as const;
 
 export type LeavingJourneyLink = {
   label: string;

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArrowRight, Check } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { BoldInline, BoldParagraph } from "@/components/content/PillarContentBlocks";
@@ -61,13 +62,13 @@ const INFO_CHIP =
 
 export function TaxAdvisorsNlView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Money", item: new URL(taxGuideRoutes.moneyTools, baseUrl).toString() },
     { name: "Taxes", item: new URL(taxGuideRoutes.taxesHub, baseUrl).toString() },
-    { name: "Tax Advisors for Expats", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Tax Advisors for Expats", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const primaryCtaClass = cn(

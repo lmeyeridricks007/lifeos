@@ -26,7 +26,7 @@ import {
 } from "./config";
 
 export const BEST_CITIES_FOR_INTL_PROFESSIONALS_PATH =
-  "/netherlands/cities/best-cities-for-international-professionals/" as const;
+  "/netherlands/cities/best-cities-for-international-professionals" as const;
 
 /** View-model for shortlist city cards (config + derived tier label). */
 export type ProfessionalsShortlistCityVm = ProfessionalsCityConfig & { tierBadge: string };

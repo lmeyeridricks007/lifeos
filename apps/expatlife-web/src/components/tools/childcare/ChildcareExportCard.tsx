@@ -11,7 +11,7 @@ import {
 } from "@/src/lib/tools/childcare/exportChildcareSummary";
 import type { ChildcareEstimatorInput, ChildcareEstimateResult, ChildcareScenarioRow } from "@/src/types/tools/childcare";
 
-const CANONICAL = "/netherlands/family/tools/childcare-cost-estimator/";
+const CANONICAL = "/netherlands/family/tools/childcare-cost-estimator";
 
 type Props = {
   input: ChildcareEstimatorInput;

@@ -5,7 +5,7 @@ export const workingInNl = R.canonical;
 
 export const moveLayoffsNlRoutes = {
   ...R,
-  canonical: "/netherlands/moving/layoffs-netherlands/",
+  canonical: "/netherlands/moving/layoffs-netherlands",
 } as const;
 
 export type MoveLayoffsNlRoutes = typeof moveLayoffsNlRoutes;

@@ -1,4 +1,4 @@
-export const REPATRIATION_COST_CANONICAL = "/netherlands/leaving/tools/repatriation-cost-calculator/";
+export const REPATRIATION_COST_CANONICAL = "/netherlands/leaving/tools/repatriation-cost-calculator";
 
 export const REPATRIATION_COST_FAQ_ITEMS = [
   {

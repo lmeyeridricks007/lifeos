@@ -1,0 +1,479 @@
+[
+  {
+    "path": "/",
+    "http_status_first": "307",
+    "location": "/netherlands",
+    "redirect_chain": [
+      "/netherlands"
+    ],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/",
+    "robots_meta": "",
+    "title": "Move to the Netherlands | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/",
+    "robots_meta": "",
+    "title": "Move to the Netherlands | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/",
+    "http_status_first": "308",
+    "location": "/netherlands",
+    "redirect_chain": [
+      "/netherlands"
+    ],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/",
+    "robots_meta": "",
+    "title": "Move to the Netherlands | ExpatCopilot"
+  },
+  {
+    "path": "/about",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/about/",
+    "robots_meta": "",
+    "title": "About ExpatCopilot | Practical Relocation Help for Expats Moving to the Netherlands | ExpatCopilot"
+  },
+  {
+    "path": "/about/",
+    "http_status_first": "308",
+    "location": "/about",
+    "redirect_chain": [
+      "/about"
+    ],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/about/",
+    "robots_meta": "",
+    "title": "About ExpatCopilot | Practical Relocation Help for Expats Moving to the Netherlands | ExpatCopilot"
+  },
+  {
+    "path": "/search",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/search/",
+    "robots_meta": "noindex, follow",
+    "title": "Search | ExpatCopilot"
+  },
+  {
+    "path": "/search/",
+    "http_status_first": "308",
+    "location": "/search",
+    "redirect_chain": [
+      "/search"
+    ],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/search/",
+    "robots_meta": "noindex, follow",
+    "title": "Search | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/amsterdam",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/amsterdam/",
+    "robots_meta": "",
+    "title": "Moving to Amsterdam as an Expat: Registration, BSN, Banking &amp; Insurance | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/amsterdam/",
+    "http_status_first": "308",
+    "location": "/netherlands/amsterdam",
+    "redirect_chain": [
+      "/netherlands/amsterdam"
+    ],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/amsterdam/",
+    "robots_meta": "",
+    "title": "Moving to Amsterdam as an Expat: Registration, BSN, Banking &amp; Insurance | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/moving-to-the-netherlands",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/",
+    "robots_meta": "",
+    "title": "Moving to the Netherlands: checklist, timeline, and what to prepare | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/moving-to-the-netherlands/",
+    "http_status_first": "308",
+    "location": "/netherlands/moving-to-the-netherlands",
+    "redirect_chain": [
+      "/netherlands/moving-to-the-netherlands"
+    ],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/",
+    "robots_meta": "",
+    "title": "Moving to the Netherlands: checklist, timeline, and what to prepare | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/money/tools/cost-of-living-calculator",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator/",
+    "robots_meta": "index, follow",
+    "title": "Netherlands Cost of Living Calculator 2026 | Expat Monthly Expenses, Setup Costs &amp; Salary Target | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/money/tools/cost-of-living-calculator/",
+    "http_status_first": "308",
+    "location": "/netherlands/money/tools/cost-of-living-calculator",
+    "redirect_chain": [
+      "/netherlands/money/tools/cost-of-living-calculator"
+    ],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator/",
+    "robots_meta": "index, follow",
+    "title": "Netherlands Cost of Living Calculator 2026 | Expat Monthly Expenses, Setup Costs &amp; Salary Target | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/moving/moving-to-netherlands-from/south-africa",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/south-africa/",
+    "robots_meta": "",
+    "title": "Moving to the Netherlands from South Africa | Visa, Costs, Timeline | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/moving/tools/arrival-planner/from/south-africa",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/south-africa/",
+    "robots_meta": "",
+    "title": "Arrival Planner for the Netherlands \u2014 from South Africa (Free Tool) | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/services/moving-companies",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/cities",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/cities/",
+    "robots_meta": "",
+    "title": "Dutch Cities for Expats | Compare City Guides &amp; Hubs | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/cities/amsterdam-vs-rotterdam",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/cities/amsterdam-vs-rotterdam/",
+    "robots_meta": "index, follow",
+    "title": "Amsterdam vs Rotterdam: Which Dutch City Is Better for Expats? | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/housing-netherlands",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/housing-netherlands/",
+    "robots_meta": "noindex, nofollow",
+    "title": "Housing Netherlands | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/services/temporary-accommodation",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "noindex",
+    "title": "ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/moving",
+    "http_status_first": "308",
+    "location": "/netherlands/moving-to-the-netherlands/",
+    "redirect_chain": [
+      "/netherlands/moving-to-the-netherlands/",
+      "/netherlands/moving-to-the-netherlands"
+    ],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/",
+    "robots_meta": "",
+    "title": "Moving to the Netherlands: checklist, timeline, and what to prepare | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/survival-guide",
+    "http_status_first": "308",
+    "location": "/netherlands/living/survival-guide/",
+    "redirect_chain": [
+      "/netherlands/living/survival-guide/",
+      "/netherlands/living/survival-guide"
+    ],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/living/survival-guide/",
+    "robots_meta": "index, follow",
+    "title": "Netherlands Survival Guide for Expats | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/work/finding-jobs-netherlands",
+    "http_status_first": "308",
+    "location": "/netherlands/jobs/finding-jobs-netherlands/",
+    "redirect_chain": [
+      "/netherlands/jobs/finding-jobs-netherlands/",
+      "/netherlands/jobs/finding-jobs-netherlands"
+    ],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/jobs/finding-jobs-netherlands/",
+    "robots_meta": "index, follow",
+    "title": "Finding Jobs in the Netherlands | Expat Job Guide | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/visa/partner-visa",
+    "http_status_first": "308",
+    "location": "/netherlands/visa/partner-family-visa/",
+    "redirect_chain": [
+      "/netherlands/visa/partner-family-visa/",
+      "/netherlands/visa/partner-family-visa"
+    ],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/visa/partner-family-visa/",
+    "robots_meta": "",
+    "title": "Partner Visa Netherlands (Family Reunification Guide 2026) | ExpatCopilot"
+  },
+  {
+    "path": "/dev/phase2-components",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "",
+    "robots_meta": "noindex, nofollow",
+    "title": "Phase 2 components (dev preview) | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/jobs/cover-letter-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/jobs/cv-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/family/tools/partner-work-eligibility-checker",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/family/tools/partner-work-eligibility-checker/",
+    "robots_meta": "noindex, nofollow",
+    "title": "Partner Work Eligibility Checker (Coming Soon) | ExpatCopilot"
+  },
+  {
+    "path": "/netherlands/housing/tools/buy-vs-rent-calculator",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "https://www.expatcopilot.com/netherlands/housing/tools/buy-vs-rent-calculator/",
+    "robots_meta": "noindex, nofollow",
+    "title": "Buy vs Rent Calculator Netherlands (Coming Soon) | ExpatCopilot"
+  },
+  {
+    "path": "/sitemap.xml",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/robots.txt",
+    "http_status_first": "200",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "200",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/jobs/english-speaking-jobs-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/jobs/interview-tips-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/jobs/linkedin-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/jobs/networking-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/jobs/recruitment-agencies-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/jobs/remote-work-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/jobs/starting-consultancy-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/living/asian-supermarkets-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/living/beach-towns-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  },
+  {
+    "path": "/netherlands/living/best-supermarkets-netherlands",
+    "http_status_first": "404",
+    "location": "",
+    "redirect_chain": [],
+    "x_robots_tag": "",
+    "final_status": "404",
+    "canonical": "",
+    "robots_meta": "",
+    "title": ""
+  }
+]

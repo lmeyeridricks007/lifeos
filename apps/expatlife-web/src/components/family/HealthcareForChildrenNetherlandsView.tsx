@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -866,8 +867,8 @@ export function HealthcareForChildrenNetherlandsView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Family", item: new URL(PARENTING_NETHERLANDS_PATH, baseUrl).toString() },
-          { name: "Healthcare for Children", item: new URL(HEALTHCARE_FOR_CHILDREN_PATH, baseUrl).toString() },
+          { name: "Family", item: absoluteUrlFromPath(PARENTING_NETHERLANDS_PATH) },
+          { name: "Healthcare for Children", item: absoluteUrlFromPath(HEALTHCARE_FOR_CHILDREN_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

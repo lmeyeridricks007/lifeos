@@ -1,30 +1,30 @@
-export const HOUSING_NETHERLANDS_PATH = "/netherlands/housing/" as const;
+export const HOUSING_NETHERLANDS_PATH = "/netherlands/housing" as const;
 export const HOUSING_HUB_PATH = HOUSING_NETHERLANDS_PATH;
 
-export const RENTING_NETHERLANDS_PATH = "/netherlands/housing/renting-in-the-netherlands/" as const;
-export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands/" as const;
-export const MORTGAGES_NETHERLANDS_EXPATS_PATH = "/netherlands/housing/mortgages-netherlands-expats/" as const;
-export const BUY_VS_RENT_NETHERLANDS_PATH = "/netherlands/housing/buy-vs-rent-netherlands/" as const;
-export const PROPERTY_TAX_NETHERLANDS_PATH = "/netherlands/taxes/property-tax-netherlands/" as const;
-export const HOUSING_COSTS_NETHERLANDS_PATH = "/netherlands/housing/housing-costs-netherlands/" as const;
+export const RENTING_NETHERLANDS_PATH = "/netherlands/housing/renting-in-the-netherlands" as const;
+export const BUYING_HOUSE_NETHERLANDS_PATH = "/netherlands/housing/buying-a-house-netherlands" as const;
+export const MORTGAGES_NETHERLANDS_EXPATS_PATH = "/netherlands/housing/mortgages-netherlands-expats" as const;
+export const BUY_VS_RENT_NETHERLANDS_PATH = "/netherlands/housing/buy-vs-rent-netherlands" as const;
+export const PROPERTY_TAX_NETHERLANDS_PATH = "/netherlands/taxes/property-tax-netherlands" as const;
+export const HOUSING_COSTS_NETHERLANDS_PATH = "/netherlands/housing/housing-costs-netherlands" as const;
 export const RENTAL_CONTRACTS_AND_DEPOSITS_NETHERLANDS_PATH =
-  "/netherlands/housing/rental-contracts-and-deposits-netherlands/" as const;
-export const RENTAL_SCAMS_NETHERLANDS_PATH = "/netherlands/housing/rental-scams-netherlands/" as const;
-export const SOCIAL_HOUSING_NETHERLANDS_PATH = "/netherlands/housing/social-housing-netherlands/" as const;
-export const TEMPORARY_ACCOMMODATION_NETHERLANDS_PATH = "/netherlands/housing/temporary-accommodation-netherlands/" as const;
-export const NEIGHBORHOODS_NETHERLANDS_PATH = "/netherlands/housing/neighborhoods/" as const;
+  "/netherlands/housing/rental-contracts-and-deposits-netherlands" as const;
+export const RENTAL_SCAMS_NETHERLANDS_PATH = "/netherlands/housing/rental-scams-netherlands" as const;
+export const SOCIAL_HOUSING_NETHERLANDS_PATH = "/netherlands/housing/social-housing-netherlands" as const;
+export const TEMPORARY_ACCOMMODATION_NETHERLANDS_PATH = "/netherlands/housing/temporary-accommodation-netherlands" as const;
+export const NEIGHBORHOODS_NETHERLANDS_PATH = "/netherlands/housing/neighborhoods" as const;
 
-export const UTILITIES_NETHERLANDS_PATH = "/netherlands/utilities/utilities-netherlands/" as const;
-export const ENERGY_AND_WATER_NETHERLANDS_PATH = "/netherlands/utilities/energy-and-water-netherlands/" as const;
-export const INTERNET_AND_MOBILE_NETHERLANDS_PATH = "/netherlands/utilities/internet-and-mobile-netherlands/" as const;
-export const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers/" as const;
-export const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands/" as const;
-export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration/" as const;
-export const DIGID_AWARENESS_PATH = "/netherlands/digid-awareness/" as const;
-export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const RENT_ALLOWANCE_PATH = "/netherlands/taxes/rent-allowance-netherlands/" as const;
-export const RENT_AFFORDABILITY_TOOL_PATH = "/netherlands/housing/tools/rent-affordability-calculator/" as const;
+export const UTILITIES_NETHERLANDS_PATH = "/netherlands/utilities/utilities-netherlands" as const;
+export const ENERGY_AND_WATER_NETHERLANDS_PATH = "/netherlands/utilities/energy-and-water-netherlands" as const;
+export const INTERNET_AND_MOBILE_NETHERLANDS_PATH = "/netherlands/utilities/internet-and-mobile-netherlands" as const;
+export const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers" as const;
+export const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands" as const;
+export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration" as const;
+export const DIGID_AWARENESS_PATH = "/netherlands/digid-awareness" as const;
+export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const RENT_ALLOWANCE_PATH = "/netherlands/taxes/rent-allowance-netherlands" as const;
+export const RENT_AFFORDABILITY_TOOL_PATH = "/netherlands/housing/tools/rent-affordability-calculator" as const;
 
 export type HousingLink = {
   label: string;

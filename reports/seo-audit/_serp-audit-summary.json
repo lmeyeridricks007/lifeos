@@ -1,0 +1,307 @@
+{
+  "gsc_exports_found": false,
+  "pages_analyzed": 444,
+  "pages_with_any_issue": 432,
+  "severity_counts": {
+    "P2": 34,
+    "P3": 295,
+    "INFO": 96,
+    "P1": 19
+  },
+  "finding_counts": {
+    "duplicate_title": 4,
+    "duplicate_description": 4,
+    "h1_title_soft_diff": 339,
+    "likely_poor_ctr_risk": 295,
+    "very_short_title": 9,
+    "og_title_diff": 14,
+    "templated_description": 66,
+    "h1_title_mismatch": 29,
+    "overly_long_title": 205,
+    "overly_long_title_brand": 274,
+    "long_description": 124,
+    "year_missing_opportunity": 125,
+    "missing_h1": 19,
+    "taxonomy_dominated_title": 7,
+    "generic_title": 17,
+    "year_present_ok": 16,
+    "title_entity_mismatch": 1,
+    "year_unnecessary": 1
+  },
+  "missing_description": 0,
+  "duplicate_title_pages": 4,
+  "duplicate_description_pages": 4,
+  "unique_duplicate_title_groups": 2,
+  "unique_duplicate_description_groups": 2,
+  "likely_poor_ctr_risk_pages": 295,
+  "year_missing_opportunity": 125,
+  "year_unnecessary": 1,
+  "stale_year": 0,
+  "problematic_h1_title_mismatch": 29,
+  "overly_long_titles": 205,
+  "very_short_titles": 9,
+  "generic_or_taxonomy_titles": 20,
+  "coming_soon_in_serp": 0,
+  "pages_with_date_published_sd": 163,
+  "pages_with_date_modified": 245,
+  "dup_title_examples": [
+    [
+      "move to the netherlands",
+      2,
+      [
+        "/netherlands/",
+        "/"
+      ]
+    ],
+    [
+      "netherlands survival guide for expats",
+      2,
+      [
+        "/netherlands/living/",
+        "/netherlands/living/survival-guide/"
+      ]
+    ]
+  ],
+  "dup_desc_examples": [
+    [
+      "practical relocation platform with guides, tools, and country-specific routes fo",
+      2
+    ],
+    [
+      "practical netherlands survival guide for expats: ov and bike defaults, apps, pin",
+      2
+    ]
+  ],
+  "poor_ctr_samples": [
+    [
+      "https://www.expatcopilot.com/netherlands/",
+      "Move to the Netherlands",
+      "duplicate_title_x2|duplicate_description_x2|h1_title_differ_soft|likely_poor_ctr_risk:duplicate_title"
+    ],
+    [
+      "https://www.expatcopilot.com/",
+      "Move to the Netherlands",
+      "duplicate_title_x2|duplicate_description_x2|h1_title_differ_soft|likely_poor_ctr_risk:duplicate_title"
+    ],
+    [
+      "https://www.expatcopilot.com/how-this-site-works/",
+      "How ExpatCopilot Works | Guides, Tools, Cities and Services for Expats",
+      "overly_long_title_core|overly_long_title_with_brand|problematic_h1_title_mismatch|og_title_differs_from_title|templated_description_opening|likely_poor_ctr_risk:truncated_risk"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/after-arriving-netherlands/",
+      "After Arriving in the Netherlands | BSN, Registration, DigiD, Insurance, Banking",
+      "overly_long_title_core|overly_long_title_with_brand|overly_long_description|problematic_h1_title_mismatch|year_absent_but_may_help_ctr|likely_poor_ctr_risk:truncated_risk+freshness_signal_missing"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/amstelveen/",
+      "Moving to Amstelveen as an Expat | Living in Amstelveen, Housing, Schools & Practical Setup",
+      "overly_long_title_core|overly_long_title_with_brand|overly_long_description|h1_title_differ_soft|likely_poor_ctr_risk:truncated_risk"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/breda/",
+      "Moving to Breda as an Expat | Living in Breda, Housing, Lifestyle & Practical Setup",
+      "overly_long_title_core|overly_long_title_with_brand|h1_title_differ_soft|likely_poor_ctr_risk:truncated_risk"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/arnhem/",
+      "Moving to Arnhem as an Expat | Living in Arnhem, Housing, Lifestyle & Practical Setup",
+      "overly_long_title_core|overly_long_title_with_brand|h1_title_differ_soft|likely_poor_ctr_risk:truncated_risk"
+    ],
+    [
+      "https://www.expatcopilot.com/about/",
+      "About ExpatCopilot | Practical Relocation Help for Expats Moving to the Netherlands",
+      "overly_long_title_core|overly_long_title_with_brand|problematic_h1_title_mismatch|likely_poor_ctr_risk:truncated_risk"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/business/zzp-netherlands/",
+      "ZZP in the Netherlands | Complete Expat & Freelancer Guide",
+      "h1_title_differ_soft|templated_description_opening|year_absent_but_may_help_ctr|likely_poor_ctr_risk:freshness_signal_missing"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/business/starting-a-business-netherlands/",
+      "Starting a Business in the Netherlands | Complete Expat Guide",
+      "overly_long_title_with_brand|h1_title_differ_soft|templated_description_opening|year_absent_but_may_help_ctr|likely_poor_ctr_risk:freshness_signal_missing"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/cities/amsterdam-vs-rotterdam/",
+      "Amsterdam vs Rotterdam: Which Dutch City Is Better for Expats?",
+      "overly_long_title_with_brand|problematic_h1_title_mismatch|year_absent_but_may_help_ctr|likely_poor_ctr_risk:freshness_signal_missing"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/amsterdam/",
+      "Moving to Amsterdam as an Expat: Registration, BSN, Banking & Insurance",
+      "overly_long_title_core|overly_long_title_with_brand|h1_title_differ_soft|year_absent_but_may_help_ctr|likely_poor_ctr_risk:truncated_risk+freshness_signal_missing"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/citizenship/permanent-residence/",
+      "Permanent Residence in the Netherlands: HSM, 5 Years & IND Next Steps",
+      "overly_long_title_core|overly_long_title_with_brand|overly_long_description|h1_title_differ_soft|likely_poor_ctr_risk:truncated_risk"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/culture/dutch-language-basics/",
+      "Dutch language basics",
+      "missing_h1|taxonomy_dominated_title|likely_poor_ctr_risk:generic_or_taxonomy"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/culture/health-system-culture-basics/",
+      "Health system culture basics (Netherlands)",
+      "missing_h1|year_absent_but_may_help_ctr|likely_poor_ctr_risk:freshness_signal_missing"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/culture/dutch-traditions/",
+      "Dutch traditions",
+      "missing_h1|very_short_title|taxonomy_dominated_title|likely_poor_ctr_risk:generic_or_taxonomy"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/citizenship/dutch-citizenship/",
+      "Dutch Citizenship for Expats: Naturalisation vs Option & Dual Nationality",
+      "overly_long_title_core|overly_long_title_with_brand|h1_title_differ_soft|likely_poor_ctr_risk:truncated_risk"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/cities/best-cities-for-international-professionals/",
+      "Best Dutch Cities for International Professionals",
+      "overly_long_description|year_absent_but_may_help_ctr|likely_poor_ctr_risk:freshness_signal_missing"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/digid-awareness/",
+      "DigiD Netherlands Guide for Expats | What It Is and How to Activate It",
+      "overly_long_title_core|overly_long_title_with_brand|problematic_h1_title_mismatch|templated_description_opening|likely_poor_ctr_risk:truncated_risk"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/document-translation-netherlands/",
+      "Document Translation in the Netherlands | Sworn Translation, Legalisation, Costs",
+      "overly_long_title_core|overly_long_title_with_brand|overly_long_description|h1_title_differ_soft|likely_poor_ctr_risk:truncated_risk"
+    ]
+  ],
+  "year_opp_samples": [
+    [
+      "https://www.expatcopilot.com/netherlands/after-arriving-netherlands/",
+      "After Arriving in the Netherlands | BSN, Registration, DigiD, Insurance, Banking"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/business/zzp-netherlands/",
+      "ZZP in the Netherlands | Complete Expat & Freelancer Guide"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/business/starting-a-business-netherlands/",
+      "Starting a Business in the Netherlands | Complete Expat Guide"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/cities/amsterdam-vs-rotterdam/",
+      "Amsterdam vs Rotterdam: Which Dutch City Is Better for Expats?"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/amsterdam/",
+      "Moving to Amsterdam as an Expat: Registration, BSN, Banking & Insurance"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/culture/health-system-culture-basics/",
+      "Health system culture basics (Netherlands)"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/cities/best-cities-for-international-professionals/",
+      "Best Dutch Cities for International Professionals"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/education/before-school-care-netherlands/",
+      "Before-School Care (VSO) in the Netherlands | Complete Guide for Parents"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/education/daycare-netherlands/",
+      "Daycare in the Netherlands | Complete Guide for Expat Families"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/education/after-school-care-netherlands/",
+      "After-School Care (BSO) in the Netherlands | Complete Guide for Expat Families"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/family/child-benefits-netherlands/",
+      "Child Benefits in the Netherlands | Complete Guide for Expat Families"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/government-services/",
+      "Government Services in the Netherlands | Expat Hub"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/eindhoven/",
+      "Moving to Eindhoven as an Expat: Registration, BSN, Banking & Insurance"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/first-30-days-netherlands/",
+      "First 30 Days in the Netherlands: What Expats Usually Do"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/first-60-days-netherlands/",
+      "First 60 Days in the Netherlands: What Expats Usually Set Up"
+    ]
+  ],
+  "year_unneeded_samples": [
+    [
+      "https://www.expatcopilot.com/netherlands/visa/partner-family-visa/",
+      "Partner Visa Netherlands (Family Reunification Guide 2026)"
+    ]
+  ],
+  "h1_mismatch_samples": [
+    [
+      "https://www.expatcopilot.com/contact/",
+      "Contact ExpatCopilot",
+      "Contact Us"
+    ],
+    [
+      "https://www.expatcopilot.com/how-this-site-works/",
+      "How ExpatCopilot Works | Guides, Tools, Cities and Services for Expats",
+      "How This Site Works"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/after-arriving-netherlands/",
+      "After Arriving in the Netherlands | BSN, Registration, DigiD, Insurance, Banking",
+      "After Arriving in the Netherlands: What to Do First"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/apostille-documents-netherlands/",
+      "Apostille Documents Netherlands | How to Get an Apostille",
+      "Apostille Documents in the Netherlands"
+    ],
+    [
+      "https://www.expatcopilot.com/about/",
+      "About ExpatCopilot | Practical Relocation Help for Expats Moving to the Netherlands",
+      "About ExpatCopilot"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/cities/",
+      "Dutch Cities for Expats | Compare City Guides & Hubs",
+      "Dutch cities hub \u2014 compare guides and explore"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/cities/amsterdam-vs-rotterdam/",
+      "Amsterdam vs Rotterdam: Which Dutch City Is Better for Expats?",
+      "Amsterdam vs Rotterdam"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/cities/compare/",
+      "Compare Dutch Cities for Expats | City Comparison Hub",
+      "Compare Dutch Cities"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/digid-awareness/",
+      "DigiD Netherlands Guide for Expats | What It Is and How to Activate It",
+      "DigiD for Expats in the Netherlands"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/document-readiness-checker/",
+      "Netherlands Document Readiness Checker: See What Documents You Still Need",
+      "Netherlands Visa Document Readiness Checker"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/family/tools/",
+      "Partner & Family tools for expats in the Netherlands",
+      "Partner & Family"
+    ],
+    [
+      "https://www.expatcopilot.com/netherlands/health/tools/",
+      "Healthcare tools for expats in the Netherlands",
+      "Healthcare"
+    ]
+  ]
+}

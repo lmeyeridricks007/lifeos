@@ -9,9 +9,13 @@
  */
 
 import type { VisaPageData } from "./types";
+import { EU_BLUE_CARD_THRESHOLDS_EUR, formatEurMonthly } from "@/src/lib/tools/hsm-salary-checker/thresholds";
 
 const BASE = "/netherlands";
 const TOOLS = `${BASE}/moving/tools`;
+
+const BLUE_CARD_STANDARD = formatEurMonthly(EU_BLUE_CARD_THRESHOLDS_EUR.standard);
+const BLUE_CARD_REDUCED = formatEurMonthly(EU_BLUE_CARD_THRESHOLDS_EUR.reduced);
 
 export const EU_BLUE_CARD_VISA: VisaPageData = {
   slug: "eu-blue-card",
@@ -47,8 +51,8 @@ export const EU_BLUE_CARD_VISA: VisaPageData = {
   ],
 
   salaryThresholds: [
-    { label: "Standard EU Blue Card threshold", amountMonthly: "€5,942", note: "gross per month (without holiday allowance)" },
-    { label: "Reduced salary criterion", amountMonthly: "€4,754", note: "gross per month (without holiday allowance)" },
+    { label: "Standard EU Blue Card threshold", amountMonthly: BLUE_CARD_STANDARD, note: "gross per month (without holiday allowance)" },
+    { label: "Reduced salary criterion", amountMonthly: BLUE_CARD_REDUCED, note: "gross per month (without holiday allowance)" },
   ],
 
   fees: {
@@ -184,7 +188,7 @@ export const EU_BLUE_CARD_VISA: VisaPageData = {
     },
     {
       q: "What salary do I need for the EU Blue Card in the Netherlands?",
-      a: "The standard threshold is €5,942 gross per month (without holiday allowance). A reduced salary criterion of €4,754 gross per month may apply in certain cases. These figures can change; check the IND required-amounts page for the latest values.",
+      a: `The standard threshold is ${BLUE_CARD_STANDARD} gross per month (without holiday allowance). A reduced salary criterion of ${BLUE_CARD_REDUCED} gross per month may apply in certain cases. These figures can change; check the IND required-amounts page for the latest values.`,
     },
     {
       q: "How much is the application fee?",

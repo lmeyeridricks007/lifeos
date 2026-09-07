@@ -1,14 +1,14 @@
-export const LIFE_HUB_PATH = "/netherlands/life/" as const;
-export const COMMUNITY_BASICS_NETHERLANDS_PATH = "/netherlands/life/community-basics-netherlands/" as const;
-export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const LANGUAGE_LEARNING_PATH = "/netherlands/language-learning/" as const;
-export const DUTCH_CULTURE_PATH = "/netherlands/life/dutch-culture/" as const;
-export const FAMILY_LIFE_PATH = "/netherlands/life/family-life-netherlands/" as const;
-export const VOLUNTEERING_PATH = "/netherlands/life/volunteering-netherlands/" as const;
-export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/living/culture-etiquette/" as const;
-export const LIVING_LANGUAGE_PATH = "/netherlands/living/language/" as const;
-export const SURVIVAL_GUIDE_PATH = "/netherlands/living/survival-guide/" as const;
+export const LIFE_HUB_PATH = "/netherlands/life" as const;
+export const COMMUNITY_BASICS_NETHERLANDS_PATH = "/netherlands/life/community-basics-netherlands" as const;
+export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const LANGUAGE_LEARNING_PATH = "/netherlands/language-learning" as const;
+export const DUTCH_CULTURE_PATH = "/netherlands/life/dutch-culture" as const;
+export const FAMILY_LIFE_PATH = "/netherlands/life/family-life-netherlands" as const;
+export const VOLUNTEERING_PATH = "/netherlands/life/volunteering-netherlands" as const;
+export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/living/culture-etiquette" as const;
+export const LIVING_LANGUAGE_PATH = "/netherlands/living/language" as const;
+export const SURVIVAL_GUIDE_PATH = "/netherlands/living/survival-guide" as const;
 
 export type LifeGuideLink = {
   label: string;

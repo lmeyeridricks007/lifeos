@@ -1,13 +1,13 @@
-export const GOVERNMENT_SERVICES_HUB_PATH = "/netherlands/government-services/" as const;
+export const GOVERNMENT_SERVICES_HUB_PATH = "/netherlands/government-services" as const;
 
 export const GOVERNMENT_PORTALS_NETHERLANDS_PATH =
-  "/netherlands/practical-life/government-portals-netherlands/" as const;
-export const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands/" as const;
-export const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands/" as const;
-export const REGISTERING_ADDRESS_PATH = "/netherlands/practical-life/registering-your-address-netherlands/" as const;
-export const BSN_NETHERLANDS_PATH = "/netherlands/practical-life/bsn-netherlands/" as const;
-export const LOCAL_TAXES_NETHERLANDS_PATH = "/netherlands/practical-life/local-taxes-netherlands/" as const;
-export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
+  "/netherlands/practical-life/government-portals-netherlands" as const;
+export const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands" as const;
+export const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands" as const;
+export const REGISTERING_ADDRESS_PATH = "/netherlands/practical-life/registering-your-address-netherlands" as const;
+export const BSN_NETHERLANDS_PATH = "/netherlands/practical-life/bsn-netherlands" as const;
+export const LOCAL_TAXES_NETHERLANDS_PATH = "/netherlands/practical-life/local-taxes-netherlands" as const;
+export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
 
 export type HubGuideLink = {
   label: string;

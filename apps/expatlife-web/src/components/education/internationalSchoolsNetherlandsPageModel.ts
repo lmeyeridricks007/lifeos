@@ -1,14 +1,14 @@
 import { internationalSchoolsDirectory } from "@/src/data/education/internationalSchoolsDirectory";
 
 export const INTERNATIONAL_SCHOOLS_NETHERLANDS_PATH =
-  "/netherlands/education/international-schools-netherlands/" as const;
-export const EDUCATION_HUB_PATH = "/netherlands/education/" as const;
-export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
-export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family/" as const;
-export const BEST_CITIES_FOR_FAMILIES_PATH = "/netherlands/cities/best-cities-for-families/" as const;
-export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
+  "/netherlands/education/international-schools-netherlands" as const;
+export const EDUCATION_HUB_PATH = "/netherlands/education" as const;
+export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids" as const;
+export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family" as const;
+export const BEST_CITIES_FOR_FAMILIES_PATH = "/netherlands/cities/best-cities-for-families" as const;
+export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
 
 export type InternationalSchoolsLink = {
   label: string;
@@ -231,7 +231,7 @@ export const internationalSchoolsNetherlandsPage = {
     { href: "#mistakes", label: "Mistakes" },
     { href: "#faq", label: "FAQ" },
     { href: "#related-guides", label: "Guides" },
-    { href: "#education-hub", label: "Education hub" },
+    { href: EDUCATION_HUB_PATH, label: "Education hub" },
     { href: "#explore-next", label: "Explore next" },
   ],
   quickAnswer: {
@@ -760,8 +760,10 @@ export const internationalSchoolsNetherlandsPage = {
     },
   ],
   relatedGuides: [
-    { label: "International schools (services directory)", href: "/netherlands/services/international-schools/", status: "live", description: "Compare schools as providers — curricula, fee orientation, admission and locations." },
-    { label: "Daycare providers (services)", href: "/netherlands/services/daycare-providers/", status: "live", description: "Compare kinderopvang providers — KDV and gastouder discovery (not the education system guide)." },
+    { label: "Education & childcare hub", href: EDUCATION_HUB_PATH, status: "live", description: "Dutch vs international schools, daycare and wraparound care — cluster map." },
+
+    { label: "International schools (services directory)", href: "/netherlands/services/international-schools/", status: "comingSoon", description: "Compare schools as providers — curricula, fee orientation, admission and locations." },
+    { label: "Daycare providers (services)", href: "/netherlands/services/daycare-providers/", status: "comingSoon", description: "Compare kinderopvang providers — KDV and gastouder discovery (not the education system guide)." },
     { label: "Moving with Children", href: MOVING_WITH_KIDS_PATH, status: "live", description: "Family relocation guide covering schools, registration and settling in." },
     { label: "Dutch Schools", href: "/netherlands/education/dutch-schools-netherlands/", status: "live", description: "Basisschool, secondary pathways, enrolment and language support for expat families." },
     { label: "Dutch Education System", href: "/netherlands/education/dutch-education-system/", status: "comingSoon", description: "Broader system overview — complements the Dutch schools guide." },
@@ -773,18 +775,20 @@ export const internationalSchoolsNetherlandsPage = {
     { label: "Cities Guide", href: CITIES_HUB_PATH, status: "live", description: "Explore Amsterdam, The Hague, Rotterdam, Utrecht and more." },
   ] satisfies InternationalSchoolsLink[],
   educationHubCards: [
+    { label: "Education & childcare hub", href: EDUCATION_HUB_PATH, status: "live", description: "Cluster map for schools and childcare pathways." },
+
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_NETHERLANDS_PATH, status: "live", description: "This guide — curricula, directory, admissions and fees." },
-    { label: "Schools provider directory", href: "/netherlands/services/international-schools/", status: "live", description: "Compare international schools as providers — fees, curricula and locations." },
+    { label: "Schools provider directory", href: "/netherlands/services/international-schools/", status: "comingSoon", description: "Compare international schools as providers — fees, curricula and locations." },
     { label: "Dutch Schools", href: "/netherlands/education/dutch-schools-netherlands/", status: "live", description: "Public and special Dutch-medium schools — basisschool, enrolment and language support." },
     { label: "Daycare", href: "/netherlands/education/daycare-netherlands/", status: "live", description: "Early childhood care before school age." },
-    { label: "Daycare providers", href: "/netherlands/services/daycare-providers/", status: "live", description: "Compare KDV and gastouder providers as a services directory." },
+    { label: "Daycare providers", href: "/netherlands/services/daycare-providers/", status: "comingSoon", description: "Compare KDV and gastouder providers as a services directory." },
     { label: "Universities", href: "/netherlands/education/universities-netherlands/", status: "comingSoon", description: "Higher education options for international students." },
     { label: "Student Life", href: "/netherlands/education/universities-netherlands/", status: "comingSoon", description: "Student housing, visas and campus life." },
     { label: "Learning Dutch", href: "/netherlands/living/language/", status: "live", description: "Practical Dutch for daily life and integration." },
   ] satisfies InternationalSchoolsLink[],
   exploreNextCards: [
-    { label: "Schools provider directory", href: "/netherlands/services/international-schools/", status: "live", description: "Compare international schools as providers — fees, curricula and locations." },
-    { label: "Daycare providers", href: "/netherlands/services/daycare-providers/", status: "live", description: "Shortlist kinderopvang providers while you plan school start dates." },
+    { label: "Schools provider directory", href: "/netherlands/services/international-schools/", status: "comingSoon", description: "Compare international schools as providers — fees, curricula and locations." },
+    { label: "Daycare providers", href: "/netherlands/services/daycare-providers/", status: "comingSoon", description: "Shortlist kinderopvang providers while you plan school start dates." },
     { label: "Moving with Children", href: MOVING_WITH_KIDS_PATH, status: "live", description: "End-to-end family relocation planning." },
     { label: "Family Life", href: "/netherlands/culture/family-and-school-culture/", status: "live", description: "School culture and Dutch family life." },
     { label: "Dutch Schools", href: "/netherlands/education/dutch-schools-netherlands/", status: "live", description: "Dutch public and special schools — enrolment and language support." },

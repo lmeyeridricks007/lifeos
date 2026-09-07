@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import { Suspense } from "react";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { contactPage } from "@/src/data/site/contact";
@@ -12,7 +12,7 @@ export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: pageMetadataTitle(contactPage.seo.title),
   description: contactPage.seo.description,
-  alternates: { canonical: "/contact/" },
+  alternates: { canonical: absoluteUrlFromPath("/contact/")},
 };
 
 export default function ContactPage() {

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Children, type ReactNode } from "react";
 import {
@@ -248,7 +249,6 @@ function HeroImage() {
         width={1600}
         height={900}
         priority
-        unoptimized
         sizes="(min-width: 1024px) 42vw, 100vw"
         className="h-full w-full object-cover"
       />
@@ -677,8 +677,8 @@ export function DatingNetherlandsView() {
         crumbs={[
           { name: "Home", item: baseUrl },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Life in the Netherlands", item: new URL(LIFE_HUB_PATH, baseUrl).toString() },
-          { name: "Dating in the Netherlands", item: new URL(DATING_NETHERLANDS_PATH, baseUrl).toString() },
+          { name: "Life in the Netherlands", item: absoluteUrlFromPath(LIFE_HUB_PATH) },
+          { name: "Dating in the Netherlands", item: absoluteUrlFromPath(DATING_NETHERLANDS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

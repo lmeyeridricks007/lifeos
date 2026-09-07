@@ -12,16 +12,16 @@ import { BANKING_HUB_PATH } from "@/src/components/money/banking-hub/bankingHubP
 import { INTERNATIONAL_TRANSFERS_FROM_NL_PATH } from "@/src/components/money/international-transfers-from-nl/internationalTransfersFromNlPaths";
 import { CHEAPEST_CITIES_FOR_EXPATS_PATH } from "@/src/components/cities/cheapest-cities-for-expats/cheapestCitiesForExpatsPageModel";
 
-export const HIDDEN_COSTS_NETHERLANDS_PATH = "/netherlands/money/hidden-costs-netherlands/" as const;
+export const HIDDEN_COSTS_NETHERLANDS_PATH = "/netherlands/money/hidden-costs-netherlands" as const;
 export const FINANCIAL_CHECKLIST_NETHERLANDS_PATH =
-  "/netherlands/money/financial-checklist-netherlands/" as const;
+  "/netherlands/money/financial-checklist-netherlands" as const;
 export const RENT_AFFORDABILITY_CALCULATOR_PATH =
-  "/netherlands/housing/tools/rent-affordability-calculator/" as const;
+  "/netherlands/housing/tools/rent-affordability-calculator" as const;
 
-export const MOVING_CHECKLIST_PATH = "/netherlands/moving-checklist-netherlands/" as const;
-export const MOVING_DOCUMENTS_CHECKLIST_PATH = "/netherlands/moving-documents-checklist/" as const;
-export const MOVING_COST_PATH = "/netherlands/moving-to-netherlands-cost/" as const;
-export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/" as const;
+export const MOVING_CHECKLIST_PATH = "/netherlands/moving-checklist-netherlands" as const;
+export const MOVING_DOCUMENTS_CHECKLIST_PATH = "/netherlands/moving-documents-checklist" as const;
+export const MOVING_COST_PATH = "/netherlands/moving-to-netherlands-cost" as const;
+export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands" as const;
 
 export type HiddenCostsLink = {
   label: string;

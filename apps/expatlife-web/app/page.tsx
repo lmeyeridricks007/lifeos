@@ -10,10 +10,11 @@ export async function generateMetadata() {
   const content = await getHomeContent();
   const description = String(
     content.seo?.description ??
-      "Practical relocation platform with guides, tools, and routes for moving to the Netherlands."
+      "ExpatCopilot helps you plan a Netherlands move with practical guides, calculators, and country-specific routes—start from your situation, not a generic checklist."
   );
   return buildSocialMetadata({
-    title: "ExpatCopilot | Move to the Netherlands",
+    // Brand/product entry — distinct from the Netherlands hub title ("Move to the Netherlands").
+    title: "ExpatCopilot | Guides and tools for Netherlands relocation",
     description,
     path: "/",
     ogType: "website",

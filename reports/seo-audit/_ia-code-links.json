@@ -1,0 +1,4987 @@
+{
+  "related_pairs": [
+    {
+      "source_file": "src/components/health/maternityCareNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Pregnancy in the Netherlands",
+      "href": "/netherlands/family/pregnancy-netherlands/"
+    },
+    {
+      "source_file": "src/components/health/maternityCareNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Giving birth in the Netherlands",
+      "href": "/netherlands/family/giving-birth-netherlands/"
+    },
+    {
+      "source_file": "src/components/health/maternityCareNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Pregnancy",
+      "href": "/netherlands/family/pregnancy-netherlands/"
+    },
+    {
+      "source_file": "src/components/health/maternityCareNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Giving birth",
+      "href": "/netherlands/family/giving-birth-netherlands/"
+    },
+    {
+      "source_file": "src/components/education/dutchSchoolsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Family Life",
+      "href": "/netherlands/culture/family-and-school-culture/"
+    },
+    {
+      "source_file": "src/components/education/afterSchoolCareNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Healthcare for Children",
+      "href": "/netherlands/family/healthcare-for-children-netherlands/"
+    },
+    {
+      "source_file": "src/components/education/internationalSchoolsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "International schools (services directory)",
+      "href": "/netherlands/services/international-schools/"
+    },
+    {
+      "source_file": "src/components/education/internationalSchoolsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Daycare providers (services)",
+      "href": "/netherlands/services/daycare-providers/"
+    },
+    {
+      "source_file": "src/components/education/internationalSchoolsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch Schools",
+      "href": "/netherlands/education/dutch-schools-netherlands/"
+    },
+    {
+      "source_file": "src/components/education/internationalSchoolsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch Education System",
+      "href": "/netherlands/education/dutch-education-system/"
+    },
+    {
+      "source_file": "src/components/education/internationalSchoolsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Healthcare for Children",
+      "href": "/netherlands/family/healthcare-for-children-netherlands/"
+    },
+    {
+      "source_file": "src/components/education/internationalSchoolsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Family Life",
+      "href": "/netherlands/culture/family-and-school-culture/"
+    },
+    {
+      "source_file": "src/components/education/internationalSchoolsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Schools provider directory",
+      "href": "/netherlands/services/international-schools/"
+    },
+    {
+      "source_file": "src/components/education/internationalSchoolsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Daycare providers",
+      "href": "/netherlands/services/daycare-providers/"
+    },
+    {
+      "source_file": "src/components/education/internationalSchoolsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Family Life",
+      "href": "/netherlands/culture/family-and-school-culture/"
+    },
+    {
+      "source_file": "src/components/education/internationalSchoolsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Dutch Schools",
+      "href": "/netherlands/education/dutch-schools-netherlands/"
+    },
+    {
+      "source_file": "src/components/family/healthcareForChildrenNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Giving birth",
+      "href": "/netherlands/family/giving-birth-netherlands/"
+    },
+    {
+      "source_file": "src/components/family/healthcareForChildrenNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Giving birth",
+      "href": "/netherlands/family/giving-birth-netherlands/"
+    },
+    {
+      "source_file": "src/components/family/parentingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Family activities",
+      "href": "/netherlands/family/family-activities-netherlands/"
+    },
+    {
+      "source_file": "src/components/family/parentingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Pregnancy",
+      "href": "/netherlands/family/pregnancy-netherlands/"
+    },
+    {
+      "source_file": "src/components/family/parentingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Giving birth",
+      "href": "/netherlands/family/giving-birth-netherlands/"
+    },
+    {
+      "source_file": "src/components/family/parentingNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Family activities",
+      "href": "/netherlands/family/family-activities-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/buyVsRentNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Housing Costs Guide",
+      "href": "/netherlands/housing/housing-costs-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/buyingHouseNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Buy vs Rent Netherlands",
+      "href": "/netherlands/housing/buy-vs-rent-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/buyingHouseNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Property Tax Netherlands",
+      "href": "/netherlands/taxes/property-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/buyingHouseNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Buy vs Rent",
+      "href": "/netherlands/housing/buy-vs-rent-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/buyingHouseNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Mortgage Guide",
+      "href": "/netherlands/housing/mortgages-netherlands-expats/"
+    },
+    {
+      "source_file": "src/components/housing/buyingHouseNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Property Tax",
+      "href": "/netherlands/taxes/property-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/buyingHouseNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Housing Costs",
+      "href": "/netherlands/housing/housing-costs-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/mortgagesNetherlandsExpatsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Buy vs Rent Netherlands",
+      "href": "/netherlands/housing/buy-vs-rent-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/mortgagesNetherlandsExpatsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Property Tax Netherlands",
+      "href": "/netherlands/taxes/property-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/mortgagesNetherlandsExpatsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Buy vs Rent",
+      "href": "/netherlands/housing/buy-vs-rent-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/mortgagesNetherlandsExpatsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Property Tax",
+      "href": "/netherlands/taxes/property-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/mortgagesNetherlandsExpatsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Housing Costs",
+      "href": "/netherlands/housing/housing-costs-netherlands/"
+    },
+    {
+      "source_file": "src/components/housing/housingCostsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Hidden costs of living (Money)",
+      "href": "/netherlands/money/hidden-costs-netherlands/"
+    },
+    {
+      "source_file": "src/components/life/dutchSocialNormsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dating in the Netherlands",
+      "href": "/netherlands/life/dating-in-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/life/dutchSocialNormsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch Holidays & Traditions",
+      "href": "/netherlands/life/dutch-holidays-and-traditions/"
+    },
+    {
+      "source_file": "src/components/life/makingDutchFriendsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch Etiquette",
+      "href": "/netherlands/life/dutch-etiquette/"
+    },
+    {
+      "source_file": "src/components/life/makingDutchFriendsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch Humour Explained",
+      "href": "/netherlands/life/dutch-humour/"
+    },
+    {
+      "source_file": "src/components/life/dutchHolidaysTraditionsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch Etiquette",
+      "href": "/netherlands/life/dutch-etiquette/"
+    },
+    {
+      "source_file": "src/components/life/communityBasicsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch Etiquette",
+      "href": "/netherlands/life/dutch-etiquette/"
+    },
+    {
+      "source_file": "src/components/life/communityBasicsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch Social Norms",
+      "href": "/netherlands/life/dutch-social-norms/"
+    },
+    {
+      "source_file": "src/components/life/communityBasicsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Making Dutch Friends",
+      "href": "/netherlands/life/making-dutch-friends/"
+    },
+    {
+      "source_file": "src/components/life/communityBasicsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Expat Loneliness",
+      "href": "/netherlands/life/expat-loneliness-netherlands/"
+    },
+    {
+      "source_file": "src/components/life/communityBasicsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dating in the Netherlands",
+      "href": "/netherlands/life/dating-in-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/life/dutchBirthdayTraditionsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch Etiquette",
+      "href": "/netherlands/life/dutch-etiquette/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Energy and Water",
+      "href": "/netherlands/utilities/energy-and-water-netherlands/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Internet and Mobile",
+      "href": "/netherlands/utilities/internet-and-mobile-netherlands/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Internet providers",
+      "href": "/netherlands/services/internet-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Energy providers",
+      "href": "/netherlands/services/energy-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Phone providers",
+      "href": "/netherlands/services/phone-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Mobile & connectivity",
+      "href": "/netherlands/services/mobile-connectivity/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Municipality Services",
+      "href": "/netherlands/practical-life/municipality-services-netherlands/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Waste and Recycling",
+      "href": "/netherlands/practical-life/waste-and-recycling-netherlands/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Parking and Local Permits",
+      "href": "/netherlands/practical-life/parking-and-local-permits-netherlands/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Subscriptions and Cancellations",
+      "href": "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Energy providers",
+      "href": "/netherlands/services/energy-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Internet providers",
+      "href": "/netherlands/services/internet-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/utilitiesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Phone providers",
+      "href": "/netherlands/services/phone-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/energyAndWaterNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Energy providers",
+      "href": "/netherlands/services/energy-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/energyAndWaterNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Internet and Mobile",
+      "href": "/netherlands/utilities/internet-and-mobile-netherlands/"
+    },
+    {
+      "source_file": "src/components/utilities/energyAndWaterNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Internet providers",
+      "href": "/netherlands/services/internet-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/energyAndWaterNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Phone providers",
+      "href": "/netherlands/services/phone-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/energyAndWaterNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Energy providers",
+      "href": "/netherlands/services/energy-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/energyAndWaterNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Internet providers",
+      "href": "/netherlands/services/internet-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/internetAndMobileNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Internet providers",
+      "href": "/netherlands/services/internet-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/internetAndMobileNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Phone providers",
+      "href": "/netherlands/services/phone-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/internetAndMobileNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Mobile & connectivity",
+      "href": "/netherlands/services/mobile-connectivity/"
+    },
+    {
+      "source_file": "src/components/utilities/internetAndMobileNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Internet providers",
+      "href": "/netherlands/services/internet-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/internetAndMobileNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Phone providers",
+      "href": "/netherlands/services/phone-providers/"
+    },
+    {
+      "source_file": "src/components/utilities/internetAndMobileNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Energy providers",
+      "href": "/netherlands/services/energy-providers/"
+    },
+    {
+      "source_file": "src/components/taxes/propertyTaxNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Buy vs Rent Netherlands",
+      "href": "/netherlands/housing/buy-vs-rent-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/propertyTaxNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Buy vs Rent",
+      "href": "/netherlands/housing/buy-vs-rent-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/propertyTaxNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Housing Costs",
+      "href": "/netherlands/housing/housing-costs-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/foreignIncomeNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Remote Work Tax Netherlands",
+      "href": "/netherlands/taxes/remote-work-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/childcareAllowanceNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Best Cities for Families",
+      "href": "/netherlands/cities/best-cities-for-families/"
+    },
+    {
+      "source_file": "src/components/taxes/childcareAllowanceNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Child Benefits Netherlands",
+      "href": "/netherlands/family/child-benefits-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/childcareAllowanceNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "International Schools",
+      "href": "/netherlands/education/international-schools-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/childcareAllowanceNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Schools in the Netherlands",
+      "href": "/netherlands/education/schools-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Netherlands Taxes Guide",
+      "href": "/netherlands/taxes/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Minimum Wage in the Netherlands",
+      "href": "/netherlands/jobs/minimum-wage-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Expat Salary in the Netherlands",
+      "href": "/netherlands/jobs/expat-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Salary Negotiation in the Netherlands",
+      "href": "/netherlands/jobs/salary-negotiation-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Net Salary in the Netherlands",
+      "href": "/netherlands/taxes/net-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Gross vs Net Salary",
+      "href": "/netherlands/taxes/gross-vs-net-salary/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Payroll Tax",
+      "href": "/netherlands/taxes/payroll-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch Cities Guide",
+      "href": "/netherlands/cities/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Salary negotiation guide",
+      "href": "/netherlands/jobs/salary-negotiation-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/averageSalaryNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Payroll tax guide",
+      "href": "/netherlands/taxes/payroll-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Expat Taxes Netherlands",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Double Taxation Netherlands",
+      "href": "/netherlands/taxes/double-taxation-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Foreign Income Netherlands",
+      "href": "/netherlands/taxes/foreign-income-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Taxes After Moving Netherlands",
+      "href": "/netherlands/taxes/taxes-after-moving-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Permanent residence guide",
+      "href": "/netherlands/citizenship/permanent-residence/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch citizenship guide",
+      "href": "/netherlands/citizenship/dutch-citizenship/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Leaving the Netherlands journey",
+      "href": "/netherlands/leaving/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Leaving tools hub",
+      "href": "/netherlands/leaving/tools/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Exit readiness checker",
+      "href": "/netherlands/leaving/tools/exit-readiness-checker/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Repatriation cost calculator",
+      "href": "/netherlands/leaving/tools/repatriation-cost-calculator/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Double Taxation",
+      "href": "/netherlands/taxes/double-taxation-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/leavingNetherlandsTaxPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Permanent residence",
+      "href": "/netherlands/citizenship/permanent-residence/"
+    },
+    {
+      "source_file": "src/components/taxes/rentAllowanceNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Renting in the Netherlands",
+      "href": "/netherlands/renting-in-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/payrollTaxNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Netherlands Taxes Guide",
+      "href": "/netherlands/taxes/"
+    },
+    {
+      "source_file": "src/components/taxes/payrollTaxNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Net Salary in the Netherlands",
+      "href": "/netherlands/taxes/net-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/payrollTaxNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Gross vs Net Salary",
+      "href": "/netherlands/taxes/gross-vs-net-salary/"
+    },
+    {
+      "source_file": "src/components/taxes/payrollTaxNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Expat Taxes in the Netherlands",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/payrollTaxNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/payrollTaxNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Open a Dutch Bank Account",
+      "href": "/netherlands/open-bank-account-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/payrollTaxNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Gross vs net salary",
+      "href": "/netherlands/taxes/gross-vs-net-salary/"
+    },
+    {
+      "source_file": "src/components/taxes/payrollTaxNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "30% ruling guide",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Netherlands Taxes Guide",
+      "href": "/netherlands/taxes/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Gross vs Net Salary",
+      "href": "/netherlands/taxes/gross-vs-net-salary/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Bonus Tax in the Netherlands",
+      "href": "/netherlands/taxes/bonus-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Expat Taxes in the Netherlands",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Open a Dutch Bank Account",
+      "href": "/netherlands/open-bank-account-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Services",
+      "href": "/netherlands/services/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Gross vs Net Salary",
+      "href": "/netherlands/taxes/gross-vs-net-salary/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Expat Taxes",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Tax Advisors",
+      "href": "/netherlands/services/tax-advisors/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Tax Returns",
+      "href": "/netherlands/taxes/tax-return-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/netSalaryNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Open a Dutch Bank Account",
+      "href": "/netherlands/open-bank-account-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Taxes After Moving to the Netherlands",
+      "href": "/netherlands/taxes/taxes-after-moving-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Taxes When Leaving the Netherlands",
+      "href": "/netherlands/taxes/leaving-netherlands-tax/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Expat Taxes in the Netherlands",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Foreign Income in the Netherlands",
+      "href": "/netherlands/taxes/foreign-income-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Double Taxation in the Netherlands",
+      "href": "/netherlands/taxes/double-taxation-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Open a Dutch bank account",
+      "href": "/netherlands/open-bank-account-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Health insurance Netherlands",
+      "href": "/netherlands/health-insurance-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Banking in the Netherlands",
+      "href": "/netherlands/money/banking/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Services",
+      "href": "/netherlands/services/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Cities",
+      "href": "/netherlands/cities/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Taxes After Moving to the Netherlands",
+      "href": "/netherlands/taxes/taxes-after-moving-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Taxes When Leaving the Netherlands",
+      "href": "/netherlands/taxes/leaving-netherlands-tax/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Expat Taxes in the Netherlands",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Foreign Income in the Netherlands",
+      "href": "/netherlands/taxes/foreign-income-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Tax Returns",
+      "href": "/netherlands/money/tax-return-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Freelancers & ZZP",
+      "href": "/netherlands/taxes/freelancer-zzp-taxes/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Opening a Dutch Bank Account",
+      "href": "/netherlands/open-bank-account-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Business Setup",
+      "href": "/netherlands/business/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesHubPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Netherlands Services",
+      "href": "/netherlands/services/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Netherlands Taxes Hub",
+      "href": "/netherlands/taxes/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Expat Taxes in the Netherlands",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Net Salary in the Netherlands",
+      "href": "/netherlands/taxes/net-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Gross vs Net Salary",
+      "href": "/netherlands/taxes/gross-vs-net-salary/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Open a Dutch bank account",
+      "href": "/netherlands/open-bank-account-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Services",
+      "href": "/netherlands/services/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Expat Taxes Guide",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Net Salary Guide",
+      "href": "/netherlands/taxes/net-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Gross vs Net Salary",
+      "href": "/netherlands/taxes/gross-vs-net-salary/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Tax Residency",
+      "href": "/netherlands/taxes/tax-residency-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Tax Returns",
+      "href": "/netherlands/taxes/tax-return-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Income Tax",
+      "href": "/netherlands/taxes/income-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/thirtyPercentRulingPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Find Tax Advisors",
+      "href": "/netherlands/services/tax-advisors/"
+    },
+    {
+      "source_file": "src/components/taxes/grossVsNetSalaryPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Netherlands Taxes Guide",
+      "href": "/netherlands/taxes/"
+    },
+    {
+      "source_file": "src/components/taxes/grossVsNetSalaryPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Net Salary in the Netherlands",
+      "href": "/netherlands/taxes/net-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/grossVsNetSalaryPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Bonus Tax in the Netherlands",
+      "href": "/netherlands/taxes/bonus-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/grossVsNetSalaryPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Expat Taxes in the Netherlands",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/grossVsNetSalaryPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/grossVsNetSalaryPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Open a Dutch Bank Account",
+      "href": "/netherlands/open-bank-account-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/grossVsNetSalaryPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/grossVsNetSalaryPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/grossVsNetSalaryPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Expat Taxes",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/grossVsNetSalaryPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Tax Advisors",
+      "href": "/netherlands/services/tax-advisors/"
+    },
+    {
+      "source_file": "src/components/taxes/grossVsNetSalaryPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Open a Dutch Bank Account",
+      "href": "/netherlands/open-bank-account-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Netherlands Taxes Hub",
+      "href": "/netherlands/taxes/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Taxes After Moving to the Netherlands",
+      "href": "/netherlands/taxes/taxes-after-moving-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Taxes When Leaving the Netherlands",
+      "href": "/netherlands/taxes/leaving-netherlands-tax/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Average Salary in the Netherlands",
+      "href": "/netherlands/taxes/average-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Salary Negotiation in the Netherlands",
+      "href": "/netherlands/jobs/salary-negotiation-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Net Salary in the Netherlands",
+      "href": "/netherlands/taxes/net-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Gross vs Net Salary",
+      "href": "/netherlands/taxes/gross-vs-net-salary/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Foreign Income in the Netherlands",
+      "href": "/netherlands/taxes/foreign-income-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Double Taxation in the Netherlands",
+      "href": "/netherlands/taxes/double-taxation-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Tax Return Guide",
+      "href": "/netherlands/taxes/tax-return-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Open a Dutch bank account",
+      "href": "/netherlands/open-bank-account-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Health insurance Netherlands",
+      "href": "/netherlands/health-insurance-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Services",
+      "href": "/netherlands/services/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Netherlands Taxes Hub",
+      "href": "/netherlands/taxes/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Taxes After Moving",
+      "href": "/netherlands/taxes/taxes-after-moving-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Taxes When Leaving",
+      "href": "/netherlands/taxes/leaving-netherlands-tax/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Net Salary Guide",
+      "href": "/netherlands/taxes/net-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Gross vs Net Salary",
+      "href": "/netherlands/taxes/gross-vs-net-salary/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Foreign Income",
+      "href": "/netherlands/taxes/foreign-income-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Tax Return Guide",
+      "href": "/netherlands/taxes/tax-return-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/expatTaxesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Find Tax Services",
+      "href": "/netherlands/services/tax-advisors/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesAfterMovingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Expat Taxes Netherlands",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesAfterMovingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesAfterMovingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Payroll Tax Netherlands",
+      "href": "/netherlands/taxes/payroll-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesAfterMovingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Foreign Income Netherlands",
+      "href": "/netherlands/taxes/foreign-income-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesAfterMovingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Double Taxation Netherlands",
+      "href": "/netherlands/taxes/double-taxation-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesAfterMovingNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Expat Taxes",
+      "href": "/netherlands/taxes/expat-taxes-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesAfterMovingNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesAfterMovingNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Healthcare Allowance",
+      "href": "/netherlands/taxes/healthcare-allowance-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesAfterMovingNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Foreign Income",
+      "href": "/netherlands/taxes/foreign-income-netherlands/"
+    },
+    {
+      "source_file": "src/components/taxes/taxesAfterMovingNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/linkedinNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Recruitment Agencies Netherlands",
+      "href": "/netherlands/jobs/recruitment-agencies-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/linkedinNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "English Speaking Jobs Netherlands",
+      "href": "/netherlands/jobs/english-speaking-jobs-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/linkedinNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Remote Work Netherlands",
+      "href": "/netherlands/jobs/remote-work-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/freelancingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Remote Work Netherlands",
+      "href": "/netherlands/jobs/remote-work-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Recruitment Agencies Netherlands",
+      "href": "/netherlands/jobs/recruitment-agencies-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "English Speaking Jobs Netherlands",
+      "href": "/netherlands/jobs/english-speaking-jobs-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Remote Work Netherlands",
+      "href": "/netherlands/jobs/remote-work-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Cover Letter Netherlands",
+      "href": "/netherlands/jobs/cover-letter-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "LinkedIn Netherlands",
+      "href": "/netherlands/jobs/linkedin-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Freelancing Netherlands",
+      "href": "/netherlands/jobs/freelancing-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch workplace culture",
+      "href": "/netherlands/jobs/dutch-workplace-culture/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Recruitment Agencies Netherlands",
+      "href": "/netherlands/jobs/recruitment-agencies-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "English Speaking Jobs Netherlands",
+      "href": "/netherlands/jobs/english-speaking-jobs-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Remote Work Netherlands",
+      "href": "/netherlands/jobs/remote-work-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Cover Letter Netherlands",
+      "href": "/netherlands/jobs/cover-letter-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "LinkedIn Netherlands",
+      "href": "/netherlands/jobs/linkedin-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/findingJobsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/probationPeriodNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Notice Period Netherlands",
+      "href": "/netherlands/jobs/notice-period-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/probationPeriodNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch workplace culture",
+      "href": "/netherlands/jobs/dutch-workplace-culture/"
+    },
+    {
+      "source_file": "src/components/jobs/englishSpeakingJobsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/englishSpeakingJobsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/coverLetterNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Recruitment Agencies Netherlands",
+      "href": "/netherlands/jobs/recruitment-agencies-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/coverLetterNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "English Speaking Jobs Netherlands",
+      "href": "/netherlands/jobs/english-speaking-jobs-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/coverLetterNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Remote Work Netherlands",
+      "href": "/netherlands/jobs/remote-work-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/remoteWorkNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Finding Jobs in the Netherlands",
+      "href": "/netherlands/jobs/finding-jobs-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "CV Netherlands",
+      "href": "/netherlands/jobs/cv-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Cover Letter Netherlands",
+      "href": "/netherlands/jobs/cover-letter-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "LinkedIn Netherlands",
+      "href": "/netherlands/jobs/linkedin-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Interview Tips Netherlands",
+      "href": "/netherlands/jobs/interview-tips-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Netherlands Taxes Guide",
+      "href": "/netherlands/taxes/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Minimum Wage in the Netherlands",
+      "href": "/netherlands/jobs/minimum-wage-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Employee Benefits Guide",
+      "href": "/netherlands/jobs/employee-benefits-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Pension Guide",
+      "href": "/netherlands/jobs/pension-netherlands-expats/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Holiday Allowance Guide",
+      "href": "/netherlands/jobs/holiday-allowance-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Expat Salary in the Netherlands",
+      "href": "/netherlands/jobs/expat-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Average Salary Netherlands",
+      "href": "/netherlands/taxes/average-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Net Salary Netherlands",
+      "href": "/netherlands/taxes/net-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Gross vs Net Salary",
+      "href": "/netherlands/taxes/gross-vs-net-salary/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Bonus Tax Guide",
+      "href": "/netherlands/taxes/bonus-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "30% Ruling",
+      "href": "/netherlands/taxes/30-percent-ruling/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch Cities Guide",
+      "href": "/netherlands/cities/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Interview Tips Netherlands",
+      "href": "/netherlands/jobs/interview-tips-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "CV Netherlands",
+      "href": "/netherlands/jobs/cv-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Cover Letter Netherlands",
+      "href": "/netherlands/jobs/cover-letter-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Average Salary Guide",
+      "href": "/netherlands/taxes/average-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/salaryNegotiationNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Expat Salary",
+      "href": "/netherlands/jobs/expat-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/dutchDirectnessAtWorkPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Interview tips Netherlands",
+      "href": "/netherlands/jobs/interview-tips-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/dutchDirectnessAtWorkPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "CV Netherlands",
+      "href": "/netherlands/jobs/cv-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/expatSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Finding Jobs in the Netherlands",
+      "href": "/netherlands/jobs/finding-jobs-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/expatSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "CV Netherlands",
+      "href": "/netherlands/jobs/cv-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/expatSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Interview Tips Netherlands",
+      "href": "/netherlands/jobs/interview-tips-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/expatSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch workplace culture",
+      "href": "/netherlands/jobs/dutch-workplace-culture/"
+    },
+    {
+      "source_file": "src/components/jobs/expatSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Employee Benefits Guide",
+      "href": "/netherlands/jobs/employee-benefits-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/expatSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Pension Guide",
+      "href": "/netherlands/jobs/pension-netherlands-expats/"
+    },
+    {
+      "source_file": "src/components/jobs/expatSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Holiday Allowance Guide",
+      "href": "/netherlands/jobs/holiday-allowance-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/expatSalaryNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Bonus Tax Guide",
+      "href": "/netherlands/taxes/bonus-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/expatSalaryNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Pension Guide",
+      "href": "/netherlands/jobs/pension-netherlands-expats/"
+    },
+    {
+      "source_file": "src/components/jobs/employeeBenefitsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Pension Guide",
+      "href": "/netherlands/jobs/pension-netherlands-expats/"
+    },
+    {
+      "source_file": "src/components/jobs/employeeBenefitsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Holiday Allowance Guide",
+      "href": "/netherlands/jobs/holiday-allowance-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/employeeBenefitsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Bonus Tax Guide",
+      "href": "/netherlands/taxes/bonus-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/employeeBenefitsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Employee Rights Guide",
+      "href": "/netherlands/jobs/employee-rights-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/employeeBenefitsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Holiday Allowance Guide",
+      "href": "/netherlands/jobs/holiday-allowance-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/employeeBenefitsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Pension Guide",
+      "href": "/netherlands/jobs/pension-netherlands-expats/"
+    },
+    {
+      "source_file": "src/components/jobs/employeeBenefitsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Dutch workplace culture",
+      "href": "/netherlands/jobs/dutch-workplace-culture/"
+    },
+    {
+      "source_file": "src/components/jobs/employeeRightsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Dutch workplace culture",
+      "href": "/netherlands/jobs/dutch-workplace-culture/"
+    },
+    {
+      "source_file": "src/components/jobs/networkingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Recruitment Agencies Netherlands",
+      "href": "/netherlands/jobs/recruitment-agencies-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/networkingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "English Speaking Jobs Netherlands",
+      "href": "/netherlands/jobs/english-speaking-jobs-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/networkingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Remote Work Netherlands",
+      "href": "/netherlands/jobs/remote-work-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/employmentContractNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Probation Period Netherlands",
+      "href": "/netherlands/jobs/probation-period-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/employmentContractNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Notice Period Netherlands",
+      "href": "/netherlands/jobs/notice-period-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/employmentContractNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Employee Rights Netherlands",
+      "href": "/netherlands/jobs/employee-rights-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/employmentContractNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch workplace culture",
+      "href": "/netherlands/jobs/dutch-workplace-culture/"
+    },
+    {
+      "source_file": "src/components/jobs/employmentContractNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Contractor vs Employee",
+      "href": "/netherlands/jobs/contractor-vs-employee-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/dutchWorkplaceCulturePageModel.ts",
+      "kind": "relatedGuides",
+      "label": "CV Netherlands",
+      "href": "/netherlands/jobs/cv-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/dutchWorkplaceCulturePageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Interview tips Netherlands",
+      "href": "/netherlands/jobs/interview-tips-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/recruitmentAgenciesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Recruitment Agencies Directory",
+      "href": "/netherlands/services/recruitment-agencies/"
+    },
+    {
+      "source_file": "src/components/jobs/recruitmentAgenciesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/recruitmentAgenciesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Recruitment Agencies Directory",
+      "href": "/netherlands/services/recruitment-agencies/"
+    },
+    {
+      "source_file": "src/components/jobs/recruitmentAgenciesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/cvNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Recruitment Agencies Netherlands",
+      "href": "/netherlands/jobs/recruitment-agencies-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/cvNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "English Speaking Jobs Netherlands",
+      "href": "/netherlands/jobs/english-speaking-jobs-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/cvNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Remote Work Netherlands",
+      "href": "/netherlands/jobs/remote-work-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/cvNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Cover Letter Netherlands",
+      "href": "/netherlands/jobs/cover-letter-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/cvNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "LinkedIn Netherlands",
+      "href": "/netherlands/jobs/linkedin-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/cvNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/cvNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Cover Letter Netherlands",
+      "href": "/netherlands/jobs/cover-letter-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/cvNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "LinkedIn Netherlands",
+      "href": "/netherlands/jobs/linkedin-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/cvNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/interviewTipsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Recruitment Agencies Netherlands",
+      "href": "/netherlands/jobs/recruitment-agencies-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/interviewTipsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "English Speaking Jobs Netherlands",
+      "href": "/netherlands/jobs/english-speaking-jobs-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/interviewTipsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Remote Work Netherlands",
+      "href": "/netherlands/jobs/remote-work-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/interviewTipsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Cover Letter Netherlands",
+      "href": "/netherlands/jobs/cover-letter-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/interviewTipsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "LinkedIn Netherlands",
+      "href": "/netherlands/jobs/linkedin-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/interviewTipsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/interviewTipsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Cover Letter Netherlands",
+      "href": "/netherlands/jobs/cover-letter-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/interviewTipsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "LinkedIn Netherlands",
+      "href": "/netherlands/jobs/linkedin-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/interviewTipsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Networking Netherlands",
+      "href": "/netherlands/jobs/networking-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/pensionNetherlandsExpatsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Holiday Allowance Guide",
+      "href": "/netherlands/jobs/holiday-allowance-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/holidayAllowanceNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Bonus Tax Guide",
+      "href": "/netherlands/taxes/bonus-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/holidayAllowanceNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Bonus Tax Guide",
+      "href": "/netherlands/taxes/bonus-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/minimumWageNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Netherlands official figures 2026",
+      "href": "/netherlands/official-figures/"
+    },
+    {
+      "source_file": "src/components/jobs/minimumWageNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Expat Salary in the Netherlands",
+      "href": "/netherlands/jobs/expat-salary-netherlands/"
+    },
+    {
+      "source_file": "src/components/jobs/minimumWageNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/practical-life/municipalityServicesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Waste and Recycling",
+      "href": "/netherlands/practical-life/waste-and-recycling-netherlands/"
+    },
+    {
+      "source_file": "src/components/practical-life/municipalityServicesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Parking and Local Permits",
+      "href": "/netherlands/practical-life/parking-and-local-permits-netherlands/"
+    },
+    {
+      "source_file": "src/components/services/estate-agents/estateAgentsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Notaries",
+      "href": "/netherlands/services/notaries/"
+    },
+    {
+      "source_file": "src/components/services/estate-agents/estateAgentsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Financial advisors",
+      "href": "/netherlands/services/financial-advisors/"
+    },
+    {
+      "source_file": "src/components/services/estate-agents/estateAgentsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Notaries",
+      "href": "/netherlands/services/notaries/"
+    },
+    {
+      "source_file": "src/components/services/estate-agents/estateAgentsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Financial advisors",
+      "href": "/netherlands/services/financial-advisors/"
+    },
+    {
+      "source_file": "src/components/services/moving-companies/movingCompaniesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Storage companies",
+      "href": "/netherlands/services/storage-companies/"
+    },
+    {
+      "source_file": "src/components/services/moving-companies/movingCompaniesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Rental agencies",
+      "href": "/netherlands/services/rental-agencies/"
+    },
+    {
+      "source_file": "src/components/services/moving-companies/movingCompaniesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Storage companies",
+      "href": "/netherlands/services/storage-companies/"
+    },
+    {
+      "source_file": "src/components/services/moving-companies/movingCompaniesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Estate agents",
+      "href": "/netherlands/services/estate-agents/"
+    },
+    {
+      "source_file": "src/components/services/mortgage-advisors/mortgageAdvisorsNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Property Tax Netherlands",
+      "href": "/netherlands/taxes/property-tax-netherlands/"
+    },
+    {
+      "source_file": "src/components/services/mortgage-advisors/mortgageAdvisorsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Notaries",
+      "href": "/netherlands/services/notaries/"
+    },
+    {
+      "source_file": "src/components/services/mortgage-advisors/mortgageAdvisorsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Estate agents",
+      "href": "/netherlands/services/estate-agents/"
+    },
+    {
+      "source_file": "src/components/services/mortgage-advisors/mortgageAdvisorsNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Financial Advisors",
+      "href": "/netherlands/services/financial-advisors/"
+    },
+    {
+      "source_file": "src/components/services/insurance-providers/insuranceProvidersNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Insurance brokers",
+      "href": "/netherlands/services/insurance-brokers/"
+    },
+    {
+      "source_file": "src/components/services/insurance-providers/insuranceProvidersNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Insurance brokers",
+      "href": "/netherlands/services/insurance-brokers/"
+    },
+    {
+      "source_file": "src/components/services/removal-companies/removalCompaniesNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Storage companies",
+      "href": "/netherlands/services/storage-companies/"
+    },
+    {
+      "source_file": "src/components/services/removal-companies/removalCompaniesNetherlandsPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Storage companies",
+      "href": "/netherlands/services/storage-companies/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Cash vs card",
+      "href": "/netherlands/money/banking/cash-vs-card/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Debit cards",
+      "href": "/netherlands/money/banking/debit-cards/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Credit cards",
+      "href": "/netherlands/money/banking/credit-cards/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Wise vs Revolut",
+      "href": "/netherlands/money/banking/wise-vs-revolut/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Banking fees & costs",
+      "href": "/netherlands/money/banking/fees/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Traditional vs digital banks",
+      "href": "/netherlands/money/banking/traditional-vs-digital/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Cheapest bank accounts",
+      "href": "/netherlands/money/banking/cheapest-accounts/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Banking safety & fraud",
+      "href": "/netherlands/money/banking/security/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Municipality registration",
+      "href": "/netherlands/municipality-registration-netherlands/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "BSN registration",
+      "href": "/netherlands/bsn-registration/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "After arriving in the Netherlands",
+      "href": "/netherlands/after-arriving-netherlands/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "exploreNext",
+      "label": "Debit cards",
+      "href": "/netherlands/money/banking/debit-cards/"
+    },
+    {
+      "source_file": "src/components/money/open-bank-account-netherlands/openBankAccountNetherlandsPageModel.ts",
+      "kind": "exploreNext",
+      "label": "Cash vs card",
+      "href": "/netherlands/money/banking/cash-vs-card/"
+    },
+    {
+      "source_file": "src/components/money/credit-cards/creditCardsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Banking safety & fraud",
+      "href": "/netherlands/money/banking/security/"
+    },
+    {
+      "source_file": "src/components/money/international-transfers-from-nl/internationalTransfersFromNlPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Wise vs Revolut",
+      "href": "/netherlands/money/banking/wise-vs-revolut/"
+    },
+    {
+      "source_file": "src/components/money/international-transfers-from-nl/internationalTransfersFromNlPageModel.ts",
+      "kind": "exploreNext",
+      "label": "Wise vs Revolut",
+      "href": "/netherlands/money/banking/wise-vs-revolut/"
+    },
+    {
+      "source_file": "src/components/money/cost-of-living-netherlands/costOfLivingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Hidden costs of living",
+      "href": "/netherlands/money/hidden-costs-netherlands/"
+    },
+    {
+      "source_file": "src/components/money/cost-of-living-netherlands/costOfLivingNetherlandsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Financial checklist for expats",
+      "href": "/netherlands/money/financial-checklist-netherlands/"
+    },
+    {
+      "source_file": "src/components/money/cost-of-living-netherlands/costOfLivingNetherlandsPageModel.ts",
+      "kind": "exploreNext",
+      "label": "Hidden costs of living",
+      "href": "/netherlands/money/hidden-costs-netherlands/"
+    },
+    {
+      "source_file": "src/components/money/cost-of-living-netherlands/costOfLivingNetherlandsPageModel.ts",
+      "kind": "exploreNext",
+      "label": "Financial checklist for expats",
+      "href": "/netherlands/money/financial-checklist-netherlands/"
+    },
+    {
+      "source_file": "src/components/money/debit-cards/debitCardsPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Banking safety & fraud",
+      "href": "/netherlands/money/banking/security/"
+    },
+    {
+      "source_file": "src/components/money/wise-vs-revolut/wiseVsRevolutPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Banking safety & fraud",
+      "href": "/netherlands/money/banking/security/"
+    },
+    {
+      "source_file": "src/components/money/cash-vs-card/cashVsCardPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Banking safety & fraud",
+      "href": "/netherlands/money/banking/security/"
+    },
+    {
+      "source_file": "src/components/cities/randstad/randstadPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Cities in the Netherlands",
+      "href": "/netherlands/cities/"
+    },
+    {
+      "source_file": "src/components/cities/randstad/randstadPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/cities/randstad/randstadPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "After arriving in the Netherlands",
+      "href": "/netherlands/after-arriving-netherlands/"
+    },
+    {
+      "source_file": "src/components/cities/randstad/randstadPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Municipality registration",
+      "href": "/netherlands/municipality-registration-netherlands/"
+    },
+    {
+      "source_file": "src/components/cities/randstad/randstadPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Open a bank account",
+      "href": "/netherlands/open-bank-account-netherlands/"
+    },
+    {
+      "source_file": "src/components/cities/randstad/randstadPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Health insurance",
+      "href": "/netherlands/health-insurance-netherlands/"
+    },
+    {
+      "source_file": "src/components/cities/randstad/randstadPageModel.ts",
+      "kind": "relatedGuides",
+      "label": "Services",
+      "href": "/netherlands/services/"
+    },
+    {
+      "source_file": "src/components/cities/randstad/randstadPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Compare Dutch Cities",
+      "href": "/netherlands/cities/"
+    },
+    {
+      "source_file": "src/components/cities/randstad/randstadPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Explore Services",
+      "href": "/netherlands/services/"
+    },
+    {
+      "source_file": "src/components/cities/randstad/randstadPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/components/cities/randstad/randstadPageModel.ts",
+      "kind": "exploreNextCards",
+      "label": "Housing Platforms",
+      "href": "/netherlands/services/housing-platforms/"
+    },
+    {
+      "source_file": "src/content/visas/highly-skilled-migrant.ts",
+      "kind": "relatedGuides",
+      "label": "Netherlands official figures 2026",
+      "href": "/netherlands/official-figures/"
+    },
+    {
+      "source_file": "src/content/visas/highly-skilled-migrant.ts",
+      "kind": "relatedGuides",
+      "label": "Permanent residence in the Netherlands",
+      "href": "/netherlands/citizenship/permanent-residence/"
+    },
+    {
+      "source_file": "src/content/visas/highly-skilled-migrant.ts",
+      "kind": "relatedGuides",
+      "label": "Inburgering in the Netherlands",
+      "href": "/netherlands/integration/inburgering/"
+    },
+    {
+      "source_file": "src/content/visas/highly-skilled-migrant.ts",
+      "kind": "relatedGuides",
+      "label": "Dutch citizenship for expats",
+      "href": "/netherlands/citizenship/dutch-citizenship/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/moving-to-netherlands-cost.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/moving-to-netherlands-cost.ts",
+      "kind": "relatedGuides",
+      "label": "Documents needed",
+      "href": "/netherlands/documents-needed-to-move-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/moving-to-netherlands-cost.ts",
+      "kind": "relatedGuides",
+      "label": "Moving timeline",
+      "href": "/netherlands/moving-to-netherlands-timeline/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/moving-to-netherlands-cost.ts",
+      "kind": "relatedGuides",
+      "label": "First 90 days",
+      "href": "/netherlands/first-90-days-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/can-i-open-bank-account-before-bsn.ts",
+      "kind": "relatedGuides",
+      "label": "Open a bank account in the Netherlands",
+      "href": "/netherlands/open-bank-account-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/can-i-open-bank-account-before-bsn.ts",
+      "kind": "relatedGuides",
+      "label": "BSN registration",
+      "href": "/netherlands/bsn-registration/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/can-i-open-bank-account-before-bsn.ts",
+      "kind": "relatedGuides",
+      "label": "Register your address",
+      "href": "/netherlands/register-address-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/can-i-open-bank-account-before-bsn.ts",
+      "kind": "relatedGuides",
+      "label": "After arriving in the Netherlands",
+      "href": "/netherlands/after-arriving-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/eu-vs-non-eu-moving-to-netherlands.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/eu-vs-non-eu-moving-to-netherlands.ts",
+      "kind": "relatedGuides",
+      "label": "Move without a job",
+      "href": "/netherlands/move-to-netherlands-without-job/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/eu-vs-non-eu-moving-to-netherlands.ts",
+      "kind": "relatedGuides",
+      "label": "BSN registration",
+      "href": "/netherlands/bsn-registration/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/eu-vs-non-eu-moving-to-netherlands.ts",
+      "kind": "relatedGuides",
+      "label": "Register address",
+      "href": "/netherlands/register-address-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/eu-vs-non-eu-moving-to-netherlands.ts",
+      "kind": "relatedGuides",
+      "label": "Moving with family",
+      "href": "/netherlands/moving-to-netherlands-with-family/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/moving-to-netherlands-with-family.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/moving-to-netherlands-with-family.ts",
+      "kind": "relatedGuides",
+      "label": "Moving with partner",
+      "href": "/netherlands/moving-to-netherlands-with-partner/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/moving-to-netherlands-with-family.ts",
+      "kind": "relatedGuides",
+      "label": "Moving with kids",
+      "href": "/netherlands/moving-to-netherlands-with-kids/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/moving-to-netherlands-with-family.ts",
+      "kind": "relatedGuides",
+      "label": "BSN registration",
+      "href": "/netherlands/bsn-registration/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/moving-to-netherlands-with-family.ts",
+      "kind": "relatedGuides",
+      "label": "First 90 days",
+      "href": "/netherlands/first-90-days-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/move-to-netherlands-without-job.ts",
+      "kind": "relatedGuides",
+      "label": "Compare Netherlands visas",
+      "href": "/netherlands/visa/compare-visas/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/move-to-netherlands-without-job.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands",
+      "href": "/netherlands/moving-to-the-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/move-to-netherlands-without-job.ts",
+      "kind": "relatedGuides",
+      "label": "EU vs non-EU moving to the Netherlands",
+      "href": "/netherlands/eu-vs-non-eu-moving-to-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/move-to-netherlands-without-job.ts",
+      "kind": "relatedGuides",
+      "label": "Moving to the Netherlands with family",
+      "href": "/netherlands/moving-to-netherlands-with-family/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/move-to-netherlands-without-job.ts",
+      "kind": "relatedGuides",
+      "label": "BSN registration",
+      "href": "/netherlands/municipality-registration-netherlands/"
+    },
+    {
+      "source_file": "src/content/netherlands/scenario-guides/move-to-netherlands-without-job.ts",
+      "kind": "relatedGuides",
+      "label": "After arriving in the Netherlands",
+      "href": "/netherlands/after-arriving-netherlands/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/highly-skilled-migrant/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/eu-blue-card/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/dutch-american-friendship-treaty/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/self-employed-visa/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/student-visa/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/partner-family-visa/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/visa-checker/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/document-readiness-checker/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/relocation-cost-estimator/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/arrival-planner/",
+      "tool_route": "/netherlands/visa-application-plan/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/moving/tools/moving-checklist/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/documents-needed-to-move-netherlands/",
+      "tool_route": "/netherlands/moving/tools/moving-checklist/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/arrival-planner/",
+      "tool_route": "/netherlands/moving/tools/moving-checklist/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "tool_route": "/netherlands/moving/tools/moving-checklist/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/municipality-registration-netherlands/",
+      "tool_route": "/netherlands/moving/tools/arrival-planner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/municipality-registration-netherlands/",
+      "tool_route": "/netherlands/moving/tools/arrival-planner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/first-30-days-netherlands/",
+      "tool_route": "/netherlands/moving/tools/arrival-planner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "tool_route": "/netherlands/moving/tools/arrival-planner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "tool_route": "/netherlands/moving/tools/arrival-planner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/first-30-days-netherlands/",
+      "tool_route": "/netherlands/moving/tools/first-90-days/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/first-60-days-netherlands/",
+      "tool_route": "/netherlands/moving/tools/first-90-days/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/moving/tools/first-90-days/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "tool_route": "/netherlands/moving/tools/first-90-days/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/document-readiness-checker/",
+      "tool_route": "/netherlands/moving/tools/first-90-days/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/documents-needed-to-move-netherlands/",
+      "tool_route": "/netherlands/document-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-checklist-netherlands/",
+      "tool_route": "/netherlands/document-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/municipality-registration-netherlands/",
+      "tool_route": "/netherlands/document-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "tool_route": "/netherlands/document-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/arrival-planner/",
+      "tool_route": "/netherlands/document-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/highly-skilled-migrant/",
+      "tool_route": "/netherlands/visa-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/eu-blue-card/",
+      "tool_route": "/netherlands/visa-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/dutch-american-friendship-treaty/",
+      "tool_route": "/netherlands/visa-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/self-employed-visa/",
+      "tool_route": "/netherlands/visa-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/student-visa/",
+      "tool_route": "/netherlands/visa-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/partner-family-visa/",
+      "tool_route": "/netherlands/visa-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/visa-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/relocation-cost-estimator/",
+      "tool_route": "/netherlands/visa-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "tool_route": "/netherlands/visa-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "tool_route": "/netherlands/visa-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/document-readiness-checker/",
+      "tool_route": "/netherlands/visa-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/highly-skilled-migrant/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/eu-blue-card/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/dutch-american-friendship-treaty/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/self-employed-visa/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/student-visa/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/partner-family-visa/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/document-readiness-checker/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving/tools/relocation-cost-estimator/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/visa-checker/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/document-readiness-checker/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/relocation-cost-estimator/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/visa-application-plan/",
+      "tool_route": "/netherlands/visa-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/highly-skilled-migrant/",
+      "tool_route": "/netherlands/moving/tools/hsm-salary-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/eu-blue-card/",
+      "tool_route": "/netherlands/moving/tools/hsm-salary-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/taxes/30-percent-ruling/",
+      "tool_route": "/netherlands/moving/tools/hsm-salary-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/visa-cost-calculator/",
+      "tool_route": "/netherlands/moving/tools/hsm-salary-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/job-offer-comparison/",
+      "tool_route": "/netherlands/moving/tools/hsm-salary-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/municipality-registration-netherlands/",
+      "tool_route": "/netherlands/moving/tools/bsn-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/municipality-registration-netherlands/",
+      "tool_route": "/netherlands/moving/tools/bsn-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/document-readiness-checker/",
+      "tool_route": "/netherlands/moving/tools/bsn-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-netherlands-cost/",
+      "tool_route": "/netherlands/moving/tools/relocation-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/documents-needed-to-move-netherlands/",
+      "tool_route": "/netherlands/moving/tools/relocation-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/first-90-days-netherlands/",
+      "tool_route": "/netherlands/moving/tools/relocation-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "tool_route": "/netherlands/moving/tools/relocation-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "tool_route": "/netherlands/moving/tools/relocation-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/moving/tools/moving-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/moving/tools/moving-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/moving/tools/moving-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/highly-skilled-migrant/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/eu-blue-card/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/dutch-american-friendship-treaty/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/self-employed-visa/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/student-visa/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/partner-family-visa/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/visa-checker/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/document-readiness-checker/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/visa-application-plan/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/visa-cost-calculator/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/relocation-cost-estimator/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "tool_route": "/netherlands/visa-timeline-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/integration/inburgering/",
+      "tool_route": "/netherlands/integration/tools/inburgering-timeline-planner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/integration/tools/inburgering-timeline-planner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/integration/tools/inburgering-exam-readiness-checker/",
+      "tool_route": "/netherlands/integration/tools/inburgering-timeline-planner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/integration/inburgering/",
+      "tool_route": "/netherlands/integration/tools/inburgering-exam-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/citizenship/permanent-residence/",
+      "tool_route": "/netherlands/integration/tools/inburgering-exam-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/culture/learning-dutch/",
+      "tool_route": "/netherlands/integration/tools/inburgering-exam-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/integration/tools/integration-requirement-checker/",
+      "tool_route": "/netherlands/integration/tools/inburgering-exam-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/",
+      "tool_route": "/netherlands/integration/tools/inburgering-exam-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/integration/inburgering/",
+      "tool_route": "/netherlands/integration/tools/knm-knowledge-quiz/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/integration/tools/inburgering-exam-readiness-checker/",
+      "tool_route": "/netherlands/integration/tools/knm-knowledge-quiz/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/integration/inburgering/",
+      "tool_route": "/netherlands/integration/tools/integration-requirement-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/citizenship/permanent-residence/",
+      "tool_route": "/netherlands/integration/tools/integration-requirement-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/highly-skilled-migrant/",
+      "tool_route": "/netherlands/integration/tools/integration-requirement-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/integration/tools/inburgering-exam-readiness-checker/",
+      "tool_route": "/netherlands/integration/tools/integration-requirement-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/",
+      "tool_route": "/netherlands/integration/tools/integration-requirement-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/citizenship/permanent-residence/",
+      "tool_route": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/integration/inburgering/",
+      "tool_route": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/citizenship/dutch-citizenship/",
+      "tool_route": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/highly-skilled-migrant/",
+      "tool_route": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/",
+      "tool_route": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/citizenship/tools/dual-citizenship-awareness-tool/",
+      "tool_route": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/citizenship/dutch-citizenship/",
+      "tool_route": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/citizenship/permanent-residence/",
+      "tool_route": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/integration/inburgering/",
+      "tool_route": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/highly-skilled-migrant/",
+      "tool_route": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/",
+      "tool_route": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/citizenship/tools/dual-citizenship-awareness-tool/",
+      "tool_route": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/citizenship/dutch-citizenship/",
+      "tool_route": "/netherlands/citizenship/tools/dual-citizenship-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/citizenship/permanent-residence/",
+      "tool_route": "/netherlands/citizenship/tools/dual-citizenship-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/integration/inburgering/",
+      "tool_route": "/netherlands/citizenship/tools/dual-citizenship-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/",
+      "tool_route": "/netherlands/citizenship/tools/dual-citizenship-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/",
+      "tool_route": "/netherlands/citizenship/tools/dual-citizenship-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-guide-for-expats/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-return-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-residency-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/taxes/30-percent-ruling/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/30-ruling-eligibility/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/30-ruling-application/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/net-salary-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/expat-taxes-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/working-in-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/payslip-decoder/",
+      "tool_route": "/netherlands/taxes/tools/30-ruling-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-guide-for-expats/",
+      "tool_route": "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-return-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-residency-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/net-salary-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/gross-vs-net-salary/",
+      "tool_route": "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/taxes/30-percent-ruling/",
+      "tool_route": "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/taxes/tax-advisors/",
+      "tool_route": "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/taxes/employment-overview/",
+      "tool_route": "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/expat-taxes-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/30-ruling-calculator/",
+      "tool_route": "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/payslip-decoder/",
+      "tool_route": "/netherlands/taxes/tools/dutch-salary-net-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/money/tools/cost-of-living-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-netherlands-cost/",
+      "tool_route": "/netherlands/money/tools/cost-of-living-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/",
+      "tool_route": "/netherlands/money/tools/cost-of-living-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-residency-netherlands/",
+      "tool_route": "/netherlands/money/tools/cost-of-living-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/money/tools/cost-of-living-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/health-insurance-netherlands/",
+      "tool_route": "/netherlands/money/tools/cost-of-living-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/money/tools/cost-of-living-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/relocation-cost-estimator/",
+      "tool_route": "/netherlands/money/tools/cost-of-living-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/rent-affordability-calculator/",
+      "tool_route": "/netherlands/money/tools/cost-of-living-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/city-comparison/",
+      "tool_route": "/netherlands/money/tools/cost-of-living-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/bank-comparison/",
+      "tool_route": "/netherlands/money/tools/cost-of-living-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/living/rental-market/",
+      "tool_route": "/netherlands/housing/tools/rent-affordability-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/housing/tools/rent-affordability-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/housing/tools/rent-affordability-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/housing/tools/rent-affordability-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/housing/tools/rent-affordability-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/30-ruling-calculator/",
+      "tool_route": "/netherlands/housing/tools/rent-affordability-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/payslip-decoder/",
+      "tool_route": "/netherlands/housing/tools/rent-affordability-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/dutch-rental-budget-calculator/",
+      "tool_route": "/netherlands/housing/tools/rent-affordability-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/city-comparison/",
+      "tool_route": "/netherlands/housing/tools/rent-affordability-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/taxes/employment-overview/",
+      "tool_route": "/netherlands/money/tools/employment-tax-overview-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/double-tax-awareness-tool/",
+      "tool_route": "/netherlands/money/tools/employment-tax-overview-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-guide-for-expats/",
+      "tool_route": "/netherlands/taxes/tools/double-tax-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-return-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/double-tax-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/taxes/tax-advisors/",
+      "tool_route": "/netherlands/taxes/tools/double-tax-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/double-taxation-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/double-tax-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/expat-taxes-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/double-tax-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-residency-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/double-tax-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/employment-tax-overview-tool/",
+      "tool_route": "/netherlands/taxes/tools/double-tax-awareness-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/cities/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/amsterdam/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/rotterdam/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/utrecht/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/the-hague/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/eindhoven/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/groningen/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/rent-affordability-calculator/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/30-ruling-calculator/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/payslip-decoder/",
+      "tool_route": "/netherlands/tools/city-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/best-banks-expats/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/traditional-vs-digital/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/fees/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/cheapest-accounts/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/types-of-accounts/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/how-payments-work/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/security/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/best-bank-zzp/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/international-transfers/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/tools/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/banking-cost-estimator/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/transfer-cost-calculator/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/city-comparison/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/payslip-decoder/",
+      "tool_route": "/netherlands/tools/bank-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/fees/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/cheapest-accounts/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/best-banks-expats/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/traditional-vs-digital/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/international-transfers/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/security/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/best-bank-zzp/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/tools/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/bank-comparison/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/transfer-cost-calculator/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/city-comparison/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/tools/banking-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/international-transfers/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/fees/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/traditional-vs-digital/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/best-banks-expats/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/security/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/banking/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/tools/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/bank-comparison/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/banking-cost-estimator/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/city-comparison/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/tools/transfer-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/living/rental-market/",
+      "tool_route": "/netherlands/housing/tools/dutch-rental-budget-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/rent-affordability-calculator/",
+      "tool_route": "/netherlands/housing/tools/dutch-rental-budget-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/housing/rental-contracts-and-deposits-netherlands/",
+      "tool_route": "/netherlands/housing/tools/deposit-return-risk-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/advanced/rental-deposit-dispute-tool/",
+      "tool_route": "/netherlands/housing/tools/deposit-return-risk-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/housing/",
+      "tool_route": "/netherlands/housing/tools/mortgage-eligibility-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/mortgage-comparison-tool/",
+      "tool_route": "/netherlands/housing/tools/mortgage-eligibility-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/housing/",
+      "tool_route": "/netherlands/housing/tools/buy-vs-rent-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/mortgage-eligibility-estimator/",
+      "tool_route": "/netherlands/housing/tools/buy-vs-rent-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/housing/",
+      "tool_route": "/netherlands/housing/tools/mortgage-comparison-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/mortgage-eligibility-estimator/",
+      "tool_route": "/netherlands/housing/tools/mortgage-comparison-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/living/utilities/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/living/rental-market/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/cities/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/rent-affordability-calculator/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/tools/city-comparison/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/family/tools/childcare-cost-estimator/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/healthcare-allowance-estimator/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/moving-checklist/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/moving/tools/first-90-days/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/living/tools/utilities-services-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/transport/",
+      "tool_route": "/netherlands/transport/tools/public-transport-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/transport/tools/bike-vs-public-transport-cost-tool/",
+      "tool_route": "/netherlands/transport/tools/public-transport-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/transport/",
+      "tool_route": "/netherlands/transport/tools/bike-vs-public-transport-cost-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/transport/tools/public-transport-cost-estimator/",
+      "tool_route": "/netherlands/transport/tools/bike-vs-public-transport-cost-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/health/",
+      "tool_route": "/netherlands/health/tools/dutch-health-insurance-comparison-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/insurance/health/",
+      "tool_route": "/netherlands/health/tools/dutch-health-insurance-comparison-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/healthcare-allowance-estimator/",
+      "tool_route": "/netherlands/health/tools/dutch-health-insurance-comparison-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-guide-for-expats/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-return-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/healthcare-allowance-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/health-insurance-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/family/tools/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/health/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/rent-affordability-calculator/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/30-ruling-calculator/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/health/tools/dutch-health-insurance-comparison-tool/",
+      "tool_route": "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/insurance/",
+      "tool_route": "/netherlands/health/tools/insurance-comparison-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/health/tools/dutch-health-insurance-comparison-tool/",
+      "tool_route": "/netherlands/health/tools/insurance-comparison-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-guide-for-expats/",
+      "tool_route": "/netherlands/work/tools/job-offer-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-return-netherlands/",
+      "tool_route": "/netherlands/work/tools/job-offer-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-residency-netherlands/",
+      "tool_route": "/netherlands/work/tools/job-offer-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/taxes/tax-advisors/",
+      "tool_route": "/netherlands/work/tools/job-offer-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/contracts/offer-comparison/",
+      "tool_route": "/netherlands/work/tools/job-offer-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/work/tools/job-offer-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/30-ruling-calculator/",
+      "tool_route": "/netherlands/work/tools/job-offer-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/employment-contract-risk-scanner/",
+      "tool_route": "/netherlands/work/tools/job-offer-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/employment-type-scenario-tool/",
+      "tool_route": "/netherlands/work/tools/job-offer-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/work/tools/job-offer-comparison/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/jobs/employment-contract-netherlands/",
+      "tool_route": "/netherlands/work/tools/employment-contract-risk-scanner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/contracts/checklist/",
+      "tool_route": "/netherlands/work/tools/employment-contract-risk-scanner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/",
+      "tool_route": "/netherlands/work/tools/employment-contract-risk-scanner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/work/tools/employment-contract-risk-scanner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/30-ruling-calculator/",
+      "tool_route": "/netherlands/work/tools/employment-contract-risk-scanner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/payslip-decoder/",
+      "tool_route": "/netherlands/work/tools/employment-contract-risk-scanner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/double-tax-awareness-tool/",
+      "tool_route": "/netherlands/work/tools/employment-contract-risk-scanner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/rent-affordability-calculator/",
+      "tool_route": "/netherlands/work/tools/employment-contract-risk-scanner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/benefits/total-rewards/",
+      "tool_route": "/netherlands/work/tools/employee-benefits-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/compensation-comparison-tool/",
+      "tool_route": "/netherlands/work/tools/employee-benefits-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/benefits/",
+      "tool_route": "/netherlands/work/tools/compensation-comparison-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/payroll/",
+      "tool_route": "/netherlands/work/tools/compensation-comparison-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/job-offer-comparison/",
+      "tool_route": "/netherlands/work/tools/compensation-comparison-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-residency-netherlands/",
+      "tool_route": "/netherlands/work/tools/employment-type-scenario-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/jobs/contractor-vs-employee-netherlands/",
+      "tool_route": "/netherlands/work/tools/employment-type-scenario-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/zzp-netherlands/",
+      "tool_route": "/netherlands/work/tools/employment-type-scenario-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/working-in-netherlands/",
+      "tool_route": "/netherlands/work/tools/employment-type-scenario-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/work/tools/employment-type-scenario-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/30-ruling-calculator/",
+      "tool_route": "/netherlands/work/tools/employment-type-scenario-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/double-tax-awareness-tool/",
+      "tool_route": "/netherlands/work/tools/employment-type-scenario-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/employment-contract-risk-scanner/",
+      "tool_route": "/netherlands/work/tools/employment-type-scenario-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/work/tools/employment-type-scenario-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/rent-affordability-calculator/",
+      "tool_route": "/netherlands/work/tools/employment-type-scenario-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/employment-type-admin-load-tool/",
+      "tool_route": "/netherlands/work/tools/employment-type-scenario-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/contracts/",
+      "tool_route": "/netherlands/work/tools/employment-type-admin-load-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/employment-type-scenario-tool/",
+      "tool_route": "/netherlands/work/tools/employment-type-admin-load-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving/visas-residency/",
+      "tool_route": "/netherlands/work/tools/employment-type-visa-dependency-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/visa/compare-visas/",
+      "tool_route": "/netherlands/work/tools/employment-type-visa-dependency-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/job-change-impact-simulator/",
+      "tool_route": "/netherlands/work/tools/employment-type-visa-dependency-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/career/job-change-impact/",
+      "tool_route": "/netherlands/work/tools/job-change-impact-simulator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/job-offer-comparison/",
+      "tool_route": "/netherlands/work/tools/job-change-impact-simulator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-guide-for-expats/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-return-netherlands/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-residency-netherlands/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/taxes/tax-advisors/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/net-salary-netherlands/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/how-taxes-work-in-the-netherlands/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/open-bank-account-netherlands/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-the-netherlands/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/dutch-salary-net-calculator/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/30-ruling-calculator/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/compare-payslips-tool/",
+      "tool_route": "/netherlands/work/tools/payslip-decoder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/payroll/what-changed/",
+      "tool_route": "/netherlands/work/tools/compare-payslips-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/payslip-decoder/",
+      "tool_route": "/netherlands/work/tools/compare-payslips-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-netherlands-with-partner/",
+      "tool_route": "/netherlands/family/tools/partner-work-eligibility-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/family/tools/childcare-cost-estimator/",
+      "tool_route": "/netherlands/family/tools/partner-work-eligibility-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-guide-for-expats/",
+      "tool_route": "/netherlands/family/tools/childcare-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/tax-return-netherlands/",
+      "tool_route": "/netherlands/family/tools/childcare-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving-to-netherlands-with-kids/",
+      "tool_route": "/netherlands/family/tools/childcare-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/money/tools/cost-of-living-calculator/",
+      "tool_route": "/netherlands/family/tools/childcare-cost-estimator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/leaving/",
+      "tool_route": "/netherlands/leaving/tools/exit-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/leaving-netherlands-tax/",
+      "tool_route": "/netherlands/leaving/tools/exit-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving/extensions-changes/",
+      "tool_route": "/netherlands/leaving/tools/exit-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/leaving/tools/repatriation-cost-calculator/",
+      "tool_route": "/netherlands/leaving/tools/exit-readiness-checker/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/leaving/",
+      "tool_route": "/netherlands/leaving/tools/repatriation-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/taxes/leaving-netherlands-tax/",
+      "tool_route": "/netherlands/leaving/tools/repatriation-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving/extensions-changes/",
+      "tool_route": "/netherlands/leaving/tools/repatriation-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/leaving/tools/exit-readiness-checker/",
+      "tool_route": "/netherlands/leaving/tools/repatriation-cost-calculator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/",
+      "tool_route": "/netherlands/tools/advanced/ai-personal-benefits-finder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/healthcare-allowance-estimator/",
+      "tool_route": "/netherlands/tools/advanced/ai-personal-benefits-finder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/insurance/",
+      "tool_route": "/netherlands/tools/advanced/insurance-coverage-gap-detector/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/health/tools/insurance-comparison-tool/",
+      "tool_route": "/netherlands/tools/advanced/insurance-coverage-gap-detector/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/housing/rental-contracts-and-deposits-netherlands/",
+      "tool_route": "/netherlands/tools/advanced/rental-deposit-dispute-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/housing/tools/deposit-return-risk-checker/",
+      "tool_route": "/netherlands/tools/advanced/rental-deposit-dispute-tool/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/living/energy-and-water/",
+      "tool_route": "/netherlands/tools/advanced/green-retrofit-planner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/living/tools/utilities-services-comparison/",
+      "tool_route": "/netherlands/tools/advanced/green-retrofit-planner/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/work/benefits/",
+      "tool_route": "/netherlands/tools/advanced/hidden-compensation-finder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/compensation-comparison-tool/",
+      "tool_route": "/netherlands/tools/advanced/hidden-compensation-finder/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/moving/visas-residency/",
+      "tool_route": "/netherlands/tools/advanced/expat-visa-risk-tax-navigator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedGuides",
+      "label": "",
+      "href": "/netherlands/money/taxes/",
+      "tool_route": "/netherlands/tools/advanced/expat-visa-risk-tax-navigator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/work/tools/job-change-impact-simulator/",
+      "tool_route": "/netherlands/tools/advanced/expat-visa-risk-tax-navigator/"
+    },
+    {
+      "source_file": "tools/registry.json",
+      "kind": "relatedTools",
+      "label": "",
+      "href": "/netherlands/taxes/tools/double-tax-awareness-tool/",
+      "tool_route": "/netherlands/tools/advanced/expat-visa-risk-tax-navigator/"
+    }
+  ],
+  "related_count": 753,
+  "nav_footer_hrefs": [
+    "/",
+    "/about/",
+    "/affiliate-disclosure/",
+    "/contact/",
+    "/cookies/",
+    "/disclaimer/",
+    "/editorial-policy/",
+    "/how-this-site-works/",
+    "/how-we-rank-services/",
+    "/methodology/",
+    "/netherlands/",
+    "/netherlands/business/starting-a-business-netherlands/",
+    "/netherlands/business/zzp-netherlands/",
+    "/netherlands/cities/",
+    "/netherlands/cities/amsterdam-vs-rotterdam/",
+    "/netherlands/cities/best-cities-for-expats/",
+    "/netherlands/cities/best-cities-for-families/",
+    "/netherlands/cities/best-cities-for-international-professionals/",
+    "/netherlands/cities/cheapest-cities-for-expats/",
+    "/netherlands/cities/compare/",
+    "/netherlands/government-services/",
+    "/netherlands/housing/",
+    "/netherlands/housing/buy-vs-rent-netherlands/",
+    "/netherlands/housing/buying-a-house-netherlands/",
+    "/netherlands/housing/mortgages-netherlands-expats/",
+    "/netherlands/jobs/contractor-vs-employee-netherlands/",
+    "/netherlands/jobs/dutch-directness-at-work/",
+    "/netherlands/jobs/dutch-workplace-culture/",
+    "/netherlands/jobs/employee-benefits-netherlands/",
+    "/netherlands/jobs/employee-rights-netherlands/",
+    "/netherlands/jobs/employment-contract-netherlands/",
+    "/netherlands/jobs/expat-salary-netherlands/",
+    "/netherlands/jobs/finding-jobs-netherlands/",
+    "/netherlands/jobs/freelancing-netherlands/",
+    "/netherlands/jobs/holiday-allowance-netherlands/",
+    "/netherlands/jobs/minimum-wage-netherlands/",
+    "/netherlands/jobs/notice-period-netherlands/",
+    "/netherlands/jobs/pension-netherlands-expats/",
+    "/netherlands/jobs/probation-period-netherlands/",
+    "/netherlands/jobs/salary-negotiation-netherlands/",
+    "/netherlands/leaving/",
+    "/netherlands/life/",
+    "/netherlands/life/community-basics-netherlands/",
+    "/netherlands/life/dating-in-the-netherlands/",
+    "/netherlands/life/dutch-birthday-traditions/",
+    "/netherlands/life/dutch-culture/",
+    "/netherlands/life/dutch-etiquette/",
+    "/netherlands/life/dutch-holidays-and-traditions/",
+    "/netherlands/life/dutch-humour/",
+    "/netherlands/life/dutch-social-norms/",
+    "/netherlands/life/making-dutch-friends/",
+    "/netherlands/living/apps/",
+    "/netherlands/living/culture-etiquette/",
+    "/netherlands/living/getting-around/",
+    "/netherlands/living/healthcare-basics/",
+    "/netherlands/living/language/",
+    "/netherlands/living/survival-guide/",
+    "/netherlands/living/weather/",
+    "/netherlands/money/expat-taxes-netherlands/",
+    "/netherlands/money/how-taxes-work-in-the-netherlands/",
+    "/netherlands/money/tax-guide-for-expats/",
+    "/netherlands/money/tax-residency-netherlands/",
+    "/netherlands/money/tools/",
+    "/netherlands/official-figures/",
+    "/netherlands/practical-life/digid-netherlands/",
+    "/netherlands/practical-life/government-portals-netherlands/",
+    "/netherlands/practical-life/municipality-services-netherlands/",
+    "/netherlands/practical-life/parking-and-local-permits-netherlands/",
+    "/netherlands/practical-life/privacy-and-safety-basics-netherlands/",
+    "/netherlands/practical-life/registering-your-address-netherlands/",
+    "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
+    "/netherlands/practical-life/waste-and-recycling-netherlands/",
+    "/netherlands/randstad/",
+    "/netherlands/services/",
+    "/netherlands/services/financial-advisors/",
+    "/netherlands/services/insurance-providers/",
+    "/netherlands/services/mortgage-advisors/",
+    "/netherlands/services/tax-advisors/",
+    "/netherlands/taxes/",
+    "/netherlands/taxes/30-percent-ruling/",
+    "/netherlands/taxes/average-salary-netherlands/",
+    "/netherlands/taxes/bonus-tax-netherlands/",
+    "/netherlands/taxes/childcare-allowance-netherlands/",
+    "/netherlands/taxes/double-taxation-netherlands/",
+    "/netherlands/taxes/expat-taxes-netherlands/",
+    "/netherlands/taxes/foreign-income-netherlands/",
+    "/netherlands/taxes/gross-vs-net-salary/",
+    "/netherlands/taxes/healthcare-allowance-netherlands/",
+    "/netherlands/taxes/leaving-netherlands-tax/",
+    "/netherlands/taxes/net-salary-netherlands/",
+    "/netherlands/taxes/payroll-tax-netherlands/",
+    "/netherlands/taxes/property-tax-netherlands/",
+    "/netherlands/taxes/rent-allowance-netherlands/",
+    "/netherlands/taxes/taxes-after-moving-netherlands/",
+    "/netherlands/taxes/tools/",
+    "/netherlands/tools/",
+    "/netherlands/utilities/energy-and-water-netherlands/",
+    "/netherlands/utilities/internet-and-mobile-netherlands/",
+    "/netherlands/utilities/utilities-netherlands/",
+    "/privacy/",
+    "/sitemap/",
+    "/sources/",
+    "/terms/"
+  ],
+  "cross_links": []
+}

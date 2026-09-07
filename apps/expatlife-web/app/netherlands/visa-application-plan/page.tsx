@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -26,7 +27,7 @@ export const revalidate = CONTENT_REVALIDATE;
 export const dynamic = "force-static";
 
 
-const canonical = "/netherlands/visa-application-plan/";
+const canonical = "/netherlands/visa-application-plan";
 const BASE = "/netherlands";
 
 const VISA_APPLICATION_PLAN_SIDEBAR_TOC = [
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     title: "Netherlands Visa Application Plan: Get Your Personalized Step-by-Step Roadmap",
     description:
       "Create a personalized step-by-step visa application plan for moving to the Netherlands, including timeline, document milestones, costs, next steps, and links to official sources.",
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
   },
   twitter: {
     card: "summary_large_image",

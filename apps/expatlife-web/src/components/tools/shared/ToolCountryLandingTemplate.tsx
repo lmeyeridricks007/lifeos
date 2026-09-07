@@ -2,8 +2,10 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { cn } from "@/lib/cn";
 import { ToolCountryContextBlock } from "./ToolCountryContextBlock";
+import { CountryToolLandingRelatedStrip } from "./CountryToolLandingRelatedStrip";
 import type { CountryLandingContext } from "@/src/lib/tools/shared/toolCountryContext";
 import type { ToolRelatedGuide } from "@/src/lib/tools/shared/toolPageContent";
+import type { ToolSlug } from "@/src/lib/tools/shared/loadCountryLandingContent";
 import { CardLink } from "@/components/ui/card-link";
 import { ToolLandingPageTemplate } from "@/components/page/page-templates";
 import { PageHero, SectionBlock } from "@/components/page/pillar-template";
@@ -16,6 +18,8 @@ export type ToolCountryLandingTemplateProps = {
   toolDescription: string;
   countrySlug: string;
   countryLabel: string;
+  /** Current tool slug — drives sibling country-tool links */
+  toolSlug: ToolSlug;
   /** Intro, whatOftenMatters, documentConsiderations, etc. from country landing content */
   context: CountryLandingContext;
   relatedGuides: ToolRelatedGuide[];
@@ -34,6 +38,7 @@ export function ToolCountryLandingTemplate({
   toolDescription,
   countrySlug,
   countryLabel,
+  toolSlug,
   context,
   relatedGuides,
   ctaLabel,
@@ -106,23 +111,26 @@ export function ToolCountryLandingTemplate({
         ) : undefined
       }
       relatedGuides={
-        relatedGuides.length > 0 ? (
-          <Container>
-            <SectionBlock compact title="Related guides" className="pt-4 md:pt-6">
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {relatedGuides.slice(0, 6).map((guide) => (
-                  <CardLink
-                    key={guide.href}
-                    href={guide.href}
-                    title={guide.title}
-                    description={guide.description}
-                    className="border-l-[3px] border-l-copilot-primary/70 bg-copilot-surface ring-1 ring-copilot-primary/10 hover:border-l-copilot-primary"
-                  />
-                ))}
-              </div>
-            </SectionBlock>
-          </Container>
-        ) : undefined
+        <>
+          <CountryToolLandingRelatedStrip countrySlug={countrySlug} currentTool={toolSlug} />
+          {relatedGuides.length > 0 ? (
+            <Container>
+              <SectionBlock compact title="Related guides" className="pt-4 md:pt-6">
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {relatedGuides.slice(0, 6).map((guide) => (
+                    <CardLink
+                      key={guide.href}
+                      href={guide.href}
+                      title={guide.title}
+                      description={guide.description}
+                      className="border-l-[3px] border-l-copilot-primary/70 bg-copilot-surface ring-1 ring-copilot-primary/10 hover:border-l-copilot-primary"
+                    />
+                  ))}
+                </div>
+              </SectionBlock>
+            </Container>
+          ) : null}
+        </>
       }
     />
   );

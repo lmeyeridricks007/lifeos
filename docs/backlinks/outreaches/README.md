@@ -19,5 +19,6 @@
 2. Re-open the **Start here** URL from §07 for each row; teams and forms move.
 3. Use published **contact** / **press** paths only; don’t scrape personal emails.
 4. **Row #28 (IND):** no backlink outreach — cite official sources in content only.
+5. **Prinsjesdag / figures:** before ACCESS (#126) or fiscal-desk outreach, skim [Prinsjesdag official-figures playbook](../../ops/prinsjesdag-official-figures-response-playbook.md).
 
 [← Back to §07](../07-concrete-outreach-prospects.md) · [Backlinks index](../README.md)

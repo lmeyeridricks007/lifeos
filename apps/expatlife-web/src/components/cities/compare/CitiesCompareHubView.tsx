@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArrowRight } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { Container } from "@/components/ui/container";
@@ -46,7 +47,7 @@ export function CitiesCompareHubView() {
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Cities", item: new URL(CITIES_HUB_PATH, baseUrl).toString() },
+    { name: "Cities", item: absoluteUrlFromPath(CITIES_HUB_PATH) },
     { name: "Compare cities", item: new URL(page.path, baseUrl).toString() },
   ];
 

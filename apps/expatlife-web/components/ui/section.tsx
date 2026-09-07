@@ -12,6 +12,11 @@ type SectionProps = ComponentPropsWithoutRef<"section"> & {
   contained?: boolean;
   /** Tighter vertical padding and heading spacing (e.g. stacked footer blocks on guide pages). */
   compact?: boolean;
+  /**
+   * Heading level for `title`. Default `h2` for mid-page sections.
+   * Use `h1` only when this Section is the page’s primary visible heading (e.g. cluster topic scaffolds).
+   */
+  titleAs?: "h1" | "h2";
 };
 
 export function Section({
@@ -22,9 +27,11 @@ export function Section({
   actions,
   contained = true,
   compact = false,
+  titleAs = "h2",
   children,
   ...props
 }: SectionProps) {
+  const TitleTag = titleAs;
   const content = (
     <>
       {(eyebrow || title || subtitle || actions) && (
@@ -37,7 +44,9 @@ export function Section({
           <div className="min-w-0 flex-1 text-left">
             {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
             {title ? (
-              <h2 className="mt-1 text-xl font-semibold tracking-tight text-foreground sm:text-2xl md:text-3xl">{title}</h2>
+              <TitleTag className="mt-1 text-xl font-semibold tracking-tight text-foreground sm:text-2xl md:text-3xl">
+                {title}
+              </TitleTag>
             ) : null}
             {subtitle ? (
               <p className="mt-2 max-w-3xl text-sm text-foreground-muted md:text-base">{subtitle}</p>

@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -903,8 +904,8 @@ export function EmergencyHealthcareNetherlandsView() {
         crumbs={[
           { name: "Home", item: new URL("/", baseUrl).toString() },
           { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-          { name: "Health", item: new URL(HEALTH_HUB_PATH, baseUrl).toString() },
-          { name: "Emergency Healthcare", item: new URL(EMERGENCY_HEALTHCARE_NETHERLANDS_PATH, baseUrl).toString() },
+          { name: "Health", item: absoluteUrlFromPath(HEALTH_HUB_PATH) },
+          { name: "Emergency Healthcare", item: absoluteUrlFromPath(EMERGENCY_HEALTHCARE_NETHERLANDS_PATH) },
         ]}
       />
       <main className={sitePageCanvasClass}>

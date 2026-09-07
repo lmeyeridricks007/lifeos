@@ -34,10 +34,11 @@ import { buildSocialMetadata } from "@/lib/seo/metadata";
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { MoveClusterToolPostValueBlock } from "@/src/components/monetization/MoveClusterToolPostValueBlock";
+import { ToolOriginCountryVersionsSection } from "@/src/components/tools/shared/ToolOriginCountryVersionsSection";
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/moving/tools/document-readiness/";
+const canonical = "/netherlands/moving/tools/document-readiness";
 
 export const metadata: Metadata = buildSocialMetadata({
   title: "Document readiness checker for moving to the Netherlands (free tool)",
@@ -197,6 +198,9 @@ export default async function DocumentReadinessPage(props: PageProps) {
           ) : null
         }
         faqItems={faq}
+                extraSection={
+          <ToolOriginCountryVersionsSection toolSlug="document-readiness" />
+        }
         relatedGuides={DOCUMENT_READINESS_RELATED_GUIDES}
         internalLinkStrip={
           <nav className="flex flex-wrap gap-4 text-sm" aria-label="Moving hub, main guide, and related tools">

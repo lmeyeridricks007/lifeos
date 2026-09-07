@@ -1,24 +1,24 @@
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 /** Services directory — self-storage / temporary furniture storage for expats. */
-export const STORAGE_COMPANIES_PATH = "/netherlands/services/storage-companies/" as const;
+export const STORAGE_COMPANIES_PATH = "/netherlands/services/storage-companies" as const;
 
-export const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies/" as const;
-export const REMOVAL_COMPANIES_PATH = "/netherlands/services/removal-companies/" as const;
-export const RELOCATION_AGENCIES_PATH = "/netherlands/services/relocation-agencies/" as const;
-export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services/" as const;
-export const HOUSING_PLATFORMS_PATH = "/netherlands/services/housing-platforms/" as const;
-export const RENTAL_AGENCIES_PATH = "/netherlands/services/rental-agencies/" as const;
-export const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents/" as const;
-export const INTERNATIONAL_SHIPPING_PATH = "/netherlands/services/international-shipping/" as const;
-export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors/" as const;
-export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers/" as const;
-export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors/" as const;
-export const SERVICES_HUB_PATH = "/netherlands/services/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const MOVING_CHECKLIST_PATH = "/netherlands/moving/tools/moving-checklist/" as const;
-export const CLEANING_COMPANIES_PATH = "/netherlands/services/cleaning-companies/" as const;
-export const HANDYMEN_PATH = "/netherlands/services/handymen/" as const;
+export const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies" as const;
+export const REMOVAL_COMPANIES_PATH = "/netherlands/services/removal-companies" as const;
+export const RELOCATION_AGENCIES_PATH = "/netherlands/services/relocation-agencies" as const;
+export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services" as const;
+export const HOUSING_PLATFORMS_PATH = "/netherlands/services/housing-platforms" as const;
+export const RENTAL_AGENCIES_PATH = "/netherlands/services/rental-agencies" as const;
+export const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents" as const;
+export const INTERNATIONAL_SHIPPING_PATH = "/netherlands/services/international-shipping" as const;
+export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors" as const;
+export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers" as const;
+export const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors" as const;
+export const SERVICES_HUB_PATH = "/netherlands/services" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const MOVING_CHECKLIST_PATH = "/netherlands/moving/tools/moving-checklist" as const;
+export const CLEANING_COMPANIES_PATH = "/netherlands/services/cleaning-companies" as const;
+export const HANDYMEN_PATH = "/netherlands/services/handymen" as const;
 
 export const STORAGE_COMPANIES_AFFILIATE_PLACEMENT_ID =
   "nl-services-storage-companies-support-providers" as const;

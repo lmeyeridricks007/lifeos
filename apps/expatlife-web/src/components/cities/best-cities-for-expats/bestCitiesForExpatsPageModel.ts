@@ -20,7 +20,7 @@ import {
   mapStartCardToViewModel,
 } from "./config";
 
-export const BEST_CITIES_FOR_EXPATS_PATH = "/netherlands/cities/best-cities-for-expats/" as const;
+export const BEST_CITIES_FOR_EXPATS_PATH = "/netherlands/cities/best-cities-for-expats" as const;
 
 export type {
   BestCitiesComparisonCity,

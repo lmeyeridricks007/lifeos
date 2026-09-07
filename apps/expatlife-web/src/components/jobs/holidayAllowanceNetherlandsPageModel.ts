@@ -1,16 +1,16 @@
-export const HOLIDAY_ALLOWANCE_NETHERLANDS_PATH = "/netherlands/jobs/holiday-allowance-netherlands/" as const;
-export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator/" as const;
-export const SALARY_NEGOTIATION_NETHERLANDS_PATH = "/netherlands/jobs/salary-negotiation-netherlands/" as const;
-export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands/" as const;
-export const EMPLOYEE_BENEFITS_NETHERLANDS_PATH = "/netherlands/jobs/employee-benefits-netherlands/" as const;
-export const PENSION_NETHERLANDS_EXPATS_PATH = "/netherlands/jobs/pension-netherlands-expats/" as const;
-export const NET_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/net-salary-netherlands/" as const;
-export const GROSS_VS_NET_SALARY_PATH = "/netherlands/taxes/gross-vs-net-salary/" as const;
-export const PAYROLL_TAX_NETHERLANDS_PATH = "/netherlands/taxes/payroll-tax-netherlands/" as const;
-export const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling/" as const;
-export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
-export const MOVING_HUB_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const JOBS_HUB_PATH = "/netherlands/moving/working-in-the-netherlands/" as const;
+export const HOLIDAY_ALLOWANCE_NETHERLANDS_PATH = "/netherlands/jobs/holiday-allowance-netherlands" as const;
+export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator" as const;
+export const SALARY_NEGOTIATION_NETHERLANDS_PATH = "/netherlands/jobs/salary-negotiation-netherlands" as const;
+export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands" as const;
+export const EMPLOYEE_BENEFITS_NETHERLANDS_PATH = "/netherlands/jobs/employee-benefits-netherlands" as const;
+export const PENSION_NETHERLANDS_EXPATS_PATH = "/netherlands/jobs/pension-netherlands-expats" as const;
+export const NET_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/net-salary-netherlands" as const;
+export const GROSS_VS_NET_SALARY_PATH = "/netherlands/taxes/gross-vs-net-salary" as const;
+export const PAYROLL_TAX_NETHERLANDS_PATH = "/netherlands/taxes/payroll-tax-netherlands" as const;
+export const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling" as const;
+export const TAXES_HUB_PATH = "/netherlands/taxes" as const;
+export const MOVING_HUB_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const JOBS_HUB_PATH = "/netherlands/moving/working-in-the-netherlands" as const;
 
 export const HOLIDAY_ALLOWANCE_NETHERLANDS_AFFILIATE_PLACEMENT_ID =
   "nl-jobs-holiday-allowance-netherlands-support-providers" as const;

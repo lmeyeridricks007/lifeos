@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { GuidePageTemplate } from "@/components/page/page-templates";
@@ -29,7 +30,7 @@ import { MAKING_DUTCH_FRIENDS_PATH } from "@/src/components/life/makingDutchFrie
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const CANONICAL = "/netherlands/life/" as const;
+const CANONICAL = "/netherlands/life" as const;
 const META_TITLE = "Life in the Netherlands | Expat Community & Integration Hub";
 const META_DESCRIPTION =
   "Editorial hub for expat life in the Netherlands: community basics, culture, language, family settling, volunteering and links to the wider Living survival guides.";
@@ -37,7 +38,7 @@ const META_DESCRIPTION =
 export const metadata: Metadata = {
   title: META_TITLE,
   description: META_DESCRIPTION,
-  alternates: { canonical: CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(CANONICAL)},
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 };
 
@@ -118,8 +119,8 @@ export default function NetherlandsLifeHubPage() {
   const baseUrl = getSiteOrigin();
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Life in the Netherlands", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands/") },
+    { name: "Life in the Netherlands", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   return (
@@ -148,7 +149,7 @@ export default function NetherlandsLifeHubPage() {
                   This hub connects social integration with cities, language, family life and volunteering — orientation only, not legal or immigration advice.
                 </p>
               }
-              shareUrl={new URL(CANONICAL, baseUrl).toString()}
+              shareUrl={absoluteUrlFromPath(CANONICAL)}
               pageId={CANONICAL}
             />
           </PillarGuideHeroRegion>

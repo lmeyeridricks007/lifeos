@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -634,7 +635,7 @@ export function ChildcareAllowanceNetherlandsView() {
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Taxes", item: new URL(TAXES_HUB_PATH, baseUrl).toString() },
+    { name: "Taxes", item: absoluteUrlFromPath(TAXES_HUB_PATH) },
     { name: "Childcare allowance", item: new URL(page.path, baseUrl).toString() },
   ];
 

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { MoveHero } from "@/components/page/move-shell";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
@@ -36,7 +36,7 @@ const HERO_IMAGE_HEIGHT = 768;
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: EMPLOYMENT_TYPE_SCENARIO_CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(EMPLOYMENT_TYPE_SCENARIO_CANONICAL)},
   keywords: [
     "employee vs zzp Netherlands",
     "employee vs contractor Netherlands",
@@ -86,7 +86,7 @@ function resolveRelatedGuides() {
 
 export default function EmploymentTypeScenarioToolPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(EMPLOYMENT_TYPE_SCENARIO_CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(EMPLOYMENT_TYPE_SCENARIO_CANONICAL);
   const relatedGuides = resolveRelatedGuides();
   const pageContext = EMPLOYMENT_TYPE_SCENARIO_CANONICAL;
 

@@ -38,6 +38,8 @@ export const SITEMAP_PERMANENT_REDIRECT_ALIASES = [
   "/netherlands/housing/tools/utilities-services-comparison-tool/",
   "/netherlands/language/inburgering-exams/",
   "/netherlands/life/making-friends/",
+  /** Living pillar root → Survival Guide (app permanentRedirect); keep nav-live via EXTRA_LIVE_PATHS. */
+  "/netherlands/living/",
   "/netherlands/living/community-basics/",
   "/netherlands/living/culture-etiquette/",
   "/netherlands/living/digid-awareness/",
@@ -77,6 +79,8 @@ export const SITEMAP_PERMANENT_REDIRECT_ALIASES = [
   "/netherlands/register-address-netherlands/",
   "/netherlands/settling-in-netherlands/",
   "/netherlands/survival-guide/",
+  "/netherlands/living/survival-guide-netherlands/",
+  "/netherlands/living/survival-guide-netherlands",
   "/netherlands/taxes/childcare-allowance/",
   "/netherlands/taxes/expat-taxes-netherlands/",
   "/netherlands/taxes/healthcare-allowance/",

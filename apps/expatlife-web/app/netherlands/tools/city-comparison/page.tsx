@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { MoveHero } from "@/components/page/move-shell";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { CostOfLivingAffiliateGrouped } from "@/src/components/tools/cost-of-living/CostOfLivingAffiliateGrouped";
 import { CityComparisonAtAGlance } from "@/src/components/tools/city-comparison/CityComparisonAtAGlance";
 import { CityComparisonCalculatorClient } from "@/src/components/tools/city-comparison/CityComparisonCalculatorClient";
+import { CityComparisonProfilesTable } from "@/src/components/tools/city-comparison/CityComparisonProfilesTable";
 import { CityComparisonRightRail } from "@/src/components/tools/city-comparison/CityComparisonRightRail";
+import { AuthorityCitationBlock } from "@/src/components/authority/AuthorityCitationBlock";
+import { CITY_COMPARISON_PROFILES_AS_OF } from "@/src/lib/authority/cityComparisonProfilesDataset";
 import {
   CITY_COMPARISON_CANONICAL,
   CITY_COMPARISON_FAQ,
@@ -34,7 +38,7 @@ const META_DESCRIPTION =
 export const metadata: Metadata = {
   title: META_TITLE,
   description: META_DESCRIPTION,
-  alternates: { canonical: CITY_COMPARISON_CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(CITY_COMPARISON_CANONICAL)},
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   keywords: [
     "best city Netherlands expats",
@@ -80,7 +84,7 @@ function resolveRelatedGuides() {
 
 export default function NetherlandsCityComparisonPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(CITY_COMPARISON_CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(CITY_COMPARISON_CANONICAL);
   const relatedGuides = resolveRelatedGuides();
   const recommendedGroups = getCityComparisonGroupedRecommendations();
 
@@ -149,7 +153,7 @@ export default function NetherlandsCityComparisonPage() {
         sidebar={<CityComparisonRightRail />}
         primarySectionTitle="Calculator"
         primarySectionContent={
-          <CityComparisonCalculatorClient calculatorCanonicalUrl={new URL(CITY_COMPARISON_CANONICAL, origin).toString()} />
+          <CityComparisonCalculatorClient calculatorCanonicalUrl={absoluteUrlFromPath(CITY_COMPARISON_CANONICAL)} />
         }
         explanatorySectionsOuterTitle="Methodology: how the tool works"
         explanatorySections={[
@@ -383,22 +387,46 @@ export default function NetherlandsCityComparisonPage() {
           </nav>
         }
         beforeFaq={
-          <section id="official-sources" className="scroll-mt-28 space-y-3 md:scroll-mt-32">
-            <h3 className="text-lg font-semibold text-copilot-text-primary">Official sources</h3>
-            <p className="text-sm text-copilot-text-secondary">
-              Use these for statistics, policy context, and live journey planning — not as proof of this tool’s euro lines.
-            </p>
-            <ul className="space-y-3">
-              {CITY_COMPARISON_OFFICIAL_SOURCES.map((source) => (
-                <li key={source.href} className="text-sm">
-                  <a href={source.href} target="_blank" rel="noopener noreferrer" className="font-medium text-brand-600 hover:underline">
-                    {source.label} →
-                  </a>
-                  {source.note ? <p className="mt-1 text-xs text-copilot-text-secondary">{source.note}</p> : null}
-                </li>
-              ))}
-            </ul>
-          </section>
+          <div className="space-y-8">
+            <CityComparisonProfilesTable />
+            <section id="official-sources" className="scroll-mt-28 space-y-3 md:scroll-mt-32">
+              <h3 className="text-lg font-semibold text-copilot-text-primary">Official sources</h3>
+              <p className="text-sm text-copilot-text-secondary">
+                Use these for statistics, policy context, and live journey planning — not as proof of this tool’s euro lines.
+              </p>
+              <ul className="space-y-3">
+                {CITY_COMPARISON_OFFICIAL_SOURCES.map((source) => (
+                  <li key={source.href} className="text-sm">
+                    <a href={source.href} target="_blank" rel="noopener noreferrer" className="font-medium text-brand-600 hover:underline">
+                      {source.label} →
+                    </a>
+                    {source.note ? <p className="mt-1 text-xs text-copilot-text-secondary">{source.note}</p> : null}
+                  </li>
+                ))}
+              </ul>
+            </section>
+            <AuthorityCitationBlock
+              variant="copilot"
+              referenceName="ExpatCopilot — Netherlands city comparison tool"
+              pagePath={CITY_COMPARISON_CANONICAL}
+              dataSources={`ExpatCopilot editorial city profiles (as of ${CITY_COMPARISON_PROFILES_AS_OF}) plus shared cost-of-living planning seed. Not CBS rankings or live rental data.`}
+              updated={`Profiles ${CITY_COMPARISON_PROFILES_AS_OF}`}
+              methodologySummary="Weighted scores from affordability (COL engine), commute heuristics, and 1–10 editorial attributes. Scenario lenses adjust dimension weights. Rankings are directional planning aids."
+              methodologyHref="#how-the-tool-works"
+              downloads={[
+                {
+                  label: "Scoring profiles (JSON)",
+                  href: "/api/authority/city-comparison-profiles?format=json",
+                  note: "Editorial heuristics — attribute ExpatCopilot",
+                },
+                {
+                  label: "Scoring profiles (CSV)",
+                  href: "/api/authority/city-comparison-profiles?format=csv",
+                  note: "Same attributes as the on-page table",
+                },
+              ]}
+            />
+          </div>
         }
       >
         {null}

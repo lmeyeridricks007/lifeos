@@ -1,22 +1,22 @@
-export const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands/" as const;
-export const HEALTH_HUB_PATH = "/netherlands/health/" as const;
-export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands/" as const;
-export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/" as const;
-export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" as const;
-export const EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety/" as const;
+export const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands" as const;
+export const HEALTH_HUB_PATH = "/netherlands/health" as const;
+export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands" as const;
+export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands" as const;
+export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics" as const;
+export const EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety" as const;
 export const EMERGENCY_HEALTHCARE_NETHERLANDS_PATH =
-  "/netherlands/health/emergency-healthcare-netherlands/" as const;
-export const HEALTH_SYSTEM_CULTURE_PATH = "/netherlands/culture/health-system-culture-basics/" as const;
-export const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands/" as const;
-export const DENTISTS_NETHERLANDS_PATH = "/netherlands/health/dentists-netherlands/" as const;
+  "/netherlands/health/emergency-healthcare-netherlands" as const;
+export const HEALTH_SYSTEM_CULTURE_PATH = "/netherlands/culture/health-system-culture-basics" as const;
+export const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands" as const;
+export const DENTISTS_NETHERLANDS_PATH = "/netherlands/health/dentists-netherlands" as const;
 export const MENTAL_HEALTHCARE_NETHERLANDS_PATH =
-  "/netherlands/health/mental-healthcare-netherlands/" as const;
-export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-netherlands/" as const;
-export const PRESCRIPTIONS_NETHERLANDS_PATH = "/netherlands/health/prescriptions-netherlands/" as const;
-export const PHYSIOTHERAPY_NETHERLANDS_PATH = "/netherlands/health/physiotherapy-netherlands/" as const;
-export const MATERNITY_CARE_NETHERLANDS_PATH = "/netherlands/health/maternity-care-netherlands/" as const;
+  "/netherlands/health/mental-healthcare-netherlands" as const;
+export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-netherlands" as const;
+export const PRESCRIPTIONS_NETHERLANDS_PATH = "/netherlands/health/prescriptions-netherlands" as const;
+export const PHYSIOTHERAPY_NETHERLANDS_PATH = "/netherlands/health/physiotherapy-netherlands" as const;
+export const MATERNITY_CARE_NETHERLANDS_PATH = "/netherlands/health/maternity-care-netherlands" as const;
 export const HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH =
-  "/netherlands/health/health-insurance-comparison-netherlands/" as const;
+  "/netherlands/health/health-insurance-comparison-netherlands" as const;
 export const HEALTH_INSURANCE_COMPARISON_PATH = HEALTH_INSURANCE_COMPARISON_NETHERLANDS_PATH;
 
 export type GpLink = {
@@ -1111,6 +1111,13 @@ export const gpNetherlandsPage = {
     "Medicines depth → Prescriptions and Pharmacies.",
   ],
   relatedGuides: [
+    {
+      label: "Healthcare hub",
+      href: HEALTH_HUB_PATH,
+      status: "live",
+      description: "Insurance, huisarts, emergencies, hospitals, mental healthcare and family pathways.",
+    },
+
     { label: "Health Insurance in the Netherlands", href: HEALTH_INSURANCE_PATH, status: "live", description: "Basic package, deductible, choosing an insurer and supplementary cover." },
     { label: "Health insurance comparison", href: HEALTH_INSURANCE_COMPARISON_PATH, status: "live", description: "Decision framework for comparing policies — not an insurer ranking." },
     { label: "Dentists in the Netherlands", href: DENTISTS_NETHERLANDS_PATH, status: "live", description: "Finding a dentist, dental insurance, check-ups, emergency care and orthodontics." },

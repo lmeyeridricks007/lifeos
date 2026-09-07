@@ -1,15 +1,15 @@
 export const DUTCH_SCHOOLS_NETHERLANDS_PATH =
-  "/netherlands/education/dutch-schools-netherlands/" as const;
+  "/netherlands/education/dutch-schools-netherlands" as const;
 export const INTERNATIONAL_SCHOOLS_PATH =
-  "/netherlands/education/international-schools-netherlands/" as const;
-export const EDUCATION_HUB_PATH = "/netherlands/education/" as const;
-export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
-export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family/" as const;
-export const BEST_CITIES_FOR_FAMILIES_PATH = "/netherlands/cities/best-cities-for-families/" as const;
-export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const LEARNING_DUTCH_PATH = "/netherlands/living/language/" as const;
+  "/netherlands/education/international-schools-netherlands" as const;
+export const EDUCATION_HUB_PATH = "/netherlands/education" as const;
+export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids" as const;
+export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family" as const;
+export const BEST_CITIES_FOR_FAMILIES_PATH = "/netherlands/cities/best-cities-for-families" as const;
+export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const LEARNING_DUTCH_PATH = "/netherlands/living/language" as const;
 
 export type DutchSchoolsLink = {
   label: string;
@@ -253,7 +253,7 @@ export const dutchSchoolsNetherlandsPage = {
     { href: "#mistakes", label: "Mistakes" },
     { href: "#faq", label: "FAQ" },
     { href: "#related-guides", label: "Guides" },
-    { href: "#education-hub", label: "Education hub" },
+    { href: EDUCATION_HUB_PATH, label: "Education hub" },
     { href: "#explore-next", label: "Explore next" },
   ],
   quickAnswer: {
@@ -656,6 +656,8 @@ export const dutchSchoolsNetherlandsPage = {
     { q: "What if we arrive mid-year?", a: "Contact gemeente immediately. Mid-year placement depends on capacity and NT2 availability — less predictable than August intake." },
   ],
   relatedGuides: [
+    { label: "Education & childcare hub", href: EDUCATION_HUB_PATH, status: "live", description: "Dutch vs international schools, daycare and wraparound care — cluster map." },
+
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "Compare English-medium schools, fees and admissions." },
     { label: "Moving with Children", href: MOVING_WITH_KIDS_PATH, status: "live", description: "Family relocation guide covering schools and registration." },
     { label: "Learning Dutch", href: LEARNING_DUTCH_PATH, status: "live", description: "Language resources for parents and children." },
@@ -666,6 +668,8 @@ export const dutchSchoolsNetherlandsPage = {
     { label: "Cities Guide", href: CITIES_HUB_PATH, status: "live", description: "Explore Amsterdam, The Hague, Rotterdam and more." },
   ] satisfies DutchSchoolsLink[],
   educationHubCards: [
+    { label: "Education & childcare hub", href: EDUCATION_HUB_PATH, status: "live", description: "Cluster map for schools and childcare pathways." },
+
     { label: "Dutch Schools", href: DUTCH_SCHOOLS_NETHERLANDS_PATH, status: "live", description: "This guide — public and special schools for expat families." },
     { label: "International Schools", href: INTERNATIONAL_SCHOOLS_PATH, status: "live", description: "IB, British, American and bilingual private options." },
     { label: "Daycare", href: "/netherlands/education/daycare-netherlands/", status: "live", description: "Early childhood care before school age." },

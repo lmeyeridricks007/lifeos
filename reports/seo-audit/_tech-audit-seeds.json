@@ -1,0 +1,5262 @@
+[
+  {
+    "url": "https://www.expatcopilot.com/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/about/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/about",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/affiliate-disclosure/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/affiliate-disclosure",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/contact/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/contact",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/cookies/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/cookies",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/disclaimer/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/disclaimer",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/editorial-policy/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/editorial-policy",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/how-this-site-works/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/how-this-site-works",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/how-we-rank-services/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/how-we-rank-services",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/methodology/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/methodology",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/after-arriving-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/after-arriving-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/amstelveen/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/amstelveen",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/amsterdam/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/amsterdam",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/apostille-documents-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/apostille-documents-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/arnhem/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/arnhem",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/breda/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/breda",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/bringing-pets-to-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/bringing-pets-to-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/bsn-registration/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/bsn-registration",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/business/starting-a-business-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/business/starting-a-business-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/business/zzp-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/business/zzp-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/amsterdam-vs-rotterdam/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/amsterdam-vs-rotterdam",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/best-cities-for-expats/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/best-cities-for-expats",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/best-cities-for-families/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/best-cities-for-families",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/best-cities-for-international-professionals/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/best-cities-for-international-professionals",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/cheapest-cities-for-expats/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/cheapest-cities-for-expats",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/compare/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cities/compare",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/dutch-citizenship/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/dutch-citizenship",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/permanent-residence/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/permanent-residence",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/tools/dual-citizenship-awareness-tool/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/tools/dual-citizenship-awareness-tool",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/tools/dutch-citizenship-timeline-calculator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/tools/permanent-residence-eligibility-calculator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/tools/permanent-residence-eligibility-calculator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/communication-style/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/communication-style",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-language-basics/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-language-basics",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-social-calendar/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-social-calendar",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-traditions/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-traditions",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/family-and-school-culture/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/family-and-school-culture",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/health-system-culture-basics/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/health-system-culture-basics",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/hierarchy-and-flatness/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/hierarchy-and-flatness",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/invitations-and-planning/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/invitations-and-planning",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/kings-day/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/kings-day",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/learning-dutch/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/learning-dutch",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/meetings-and-consensus/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/meetings-and-consensus",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/national-holidays/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/national-holidays",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/practice-scenarios/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/practice-scenarios",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/sinterklaas/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/sinterklaas",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/time-and-boundaries/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/time-and-boundaries",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/what-feels-normal-in-dutch-daily-life/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/what-feels-normal-in-dutch-daily-life",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/written-follow-ups/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/written-follow-ups",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/delft/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/delft",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/digid-awareness/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/digid-awareness",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/document-legalization-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/document-legalization-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/document-readiness-checker/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/document-readiness-checker",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/document-translation-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/document-translation-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/education/after-school-care-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/education/after-school-care-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/education/before-school-care-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/education/before-school-care-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/education/daycare-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/education/daycare-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/education/dutch-schools-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/education/dutch-schools-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/education/international-schools-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/education/international-schools-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/eindhoven/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/eindhoven",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/eu-vs-non-eu-moving-to-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/eu-vs-non-eu-moving-to-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/child-benefits-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/child-benefits-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/family-activities-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/family-activities-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/giving-birth-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/giving-birth-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/healthcare-for-children-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/healthcare-for-children-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/parenting-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/parenting-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/pets-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/pets-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/pregnancy-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/pregnancy-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/tools/childcare-cost-estimator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/tools/childcare-cost-estimator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/first-30-days-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/first-30-days-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/first-60-days-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/first-60-days-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/first-90-days-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/first-90-days-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/government-services/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/government-services",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/groningen/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/groningen",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/haarlem/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/haarlem",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health-insurance-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health-insurance-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/dentists-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/dentists-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/emergency-healthcare-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/emergency-healthcare-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/gp-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/gp-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/health-insurance-comparison-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/health-insurance-comparison-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/hospitals-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/hospitals-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/maternity-care-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/maternity-care-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/mental-healthcare-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/mental-healthcare-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/pharmacies-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/pharmacies-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/physiotherapy-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/physiotherapy-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/prescriptions-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/prescriptions-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/buy-vs-rent-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/buy-vs-rent-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/buying-a-house-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/buying-a-house-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/housing-costs-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/housing-costs-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/mortgages-netherlands-expats/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/mortgages-netherlands-expats",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/rental-contracts-and-deposits-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/rental-contracts-and-deposits-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/rental-scams-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/rental-scams-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/tools/rent-affordability-calculator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/tools/rent-affordability-calculator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/integration/inburgering/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/integration/inburgering",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/integration/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/integration/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/integration/tools/inburgering-exam-readiness-checker/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/integration/tools/inburgering-exam-readiness-checker",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/integration/tools/integration-requirement-checker/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/integration/tools/integration-requirement-checker",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/contractor-vs-employee-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/contractor-vs-employee-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/dutch-directness-at-work/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/dutch-directness-at-work",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/dutch-workplace-culture/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/dutch-workplace-culture",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/employee-benefits-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/employee-benefits-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/employee-rights-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/employee-rights-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/employment-contract-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/employment-contract-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/expat-salary-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/expat-salary-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/finding-jobs-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/finding-jobs-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/freelancing-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/freelancing-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/holiday-allowance-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/holiday-allowance-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/minimum-wage-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/minimum-wage-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/notice-period-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/notice-period-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/pension-netherlands-expats/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/pension-netherlands-expats",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/probation-period-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/probation-period-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/salary-negotiation-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/salary-negotiation-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/leaving/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/leaving",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/leaving/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/leaving/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/leaving/tools/exit-readiness-checker/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/leaving/tools/exit-readiness-checker",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/leaving/tools/repatriation-cost-calculator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/leaving/tools/repatriation-cost-calculator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/leiden/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/leiden",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/community-basics-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/community-basics-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dating-in-the-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-birthday-traditions/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-birthday-traditions",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-culture/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-culture",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-etiquette/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-etiquette",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-holidays-and-traditions/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-holidays-and-traditions",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-humour/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-humour",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-social-norms/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/dutch-social-norms",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/expat-loneliness-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/expat-loneliness-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/making-dutch-friends/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/making-dutch-friends",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/apps/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/apps",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/buying-a-car-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/buying-a-car-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/car-insurance-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/car-insurance-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/car-sharing-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/car-sharing-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/daily-life/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/daily-life",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/driving-licence-exchange-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/driving-licence-exchange-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/electric-vehicles-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/electric-vehicles-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/emergencies-safety/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/emergencies-safety",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/getting-around/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/getting-around",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/government-portals-overview/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/government-portals-overview",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/healthcare-basics/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/healthcare-basics",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/language/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/language",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/lease-cars-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/lease-cars-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/mot-apk-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/mot-apk-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/payments/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/payments",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/rental-market/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/rental-market",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/road-tax-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/road-tax-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/shopping-groceries/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/shopping-groceries",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/speed-cameras-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/speed-cameras-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/survival-guide/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/survival-guide",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/tools/utilities-services-comparison/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/tools/utilities-services-comparison",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/weather/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/weather",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/maastricht/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/maastricht",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/account-rejection/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/account-rejection",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/best-bank-zzp/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/best-bank-zzp",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/cash-vs-card/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/cash-vs-card",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/cheapest-accounts/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/cheapest-accounts",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/credit-cards/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/credit-cards",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/debit-cards/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/debit-cards",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/fees/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/fees",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/how-payments-work/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/how-payments-work",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/international-transfers/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/international-transfers",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/joint-accounts/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/joint-accounts",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/security/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/security",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/student-accounts/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/student-accounts",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/traditional-vs-digital/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/traditional-vs-digital",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/types-of-accounts/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/types-of-accounts",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/wise-vs-revolut/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/banking/wise-vs-revolut",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/cost-of-living-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/cost-of-living-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/expat-taxes-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/expat-taxes-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/financial-checklist-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/financial-checklist-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/hidden-costs-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/hidden-costs-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/how-taxes-work-in-the-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/how-taxes-work-in-the-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/monthly-budget-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/monthly-budget-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/saving-money-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/saving-money-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tax-guide-for-expats/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tax-guide-for-expats",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tax-residency-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tax-residency-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tax-return-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tax-return-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/taxes/tax-advisors/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/taxes/tax-advisors",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/move-to-netherlands-without-job/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/move-to-netherlands-without-job",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-checklist-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-checklist-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-mistakes-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-mistakes-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-requirements-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-requirements-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-cost/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-cost",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-from/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-from",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-steps",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-timeline/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-timeline",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-with-family/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-with-family",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-with-kids/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-with-kids",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-with-partner/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-netherlands-with-partner",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-the-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-to-the-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/changing-jobs-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/changing-jobs-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/extensions-changes/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/extensions-changes",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/layoffs-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/layoffs-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/argentina/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/argentina",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/australia/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/australia",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/brazil/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/brazil",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/canada/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/canada",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/chile/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/chile",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/denmark/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/denmark",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/france/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/france",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/germany/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/germany",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/india/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/india",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/indonesia/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/indonesia",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/ireland/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/ireland",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/italy/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/italy",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/japan/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/japan",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/kenya/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/kenya",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/mexico/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/mexico",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/new-zealand/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/new-zealand",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/nigeria/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/nigeria",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/norway/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/norway",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/pakistan/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/pakistan",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/philippines/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/philippines",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/singapore/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/singapore",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/south-africa/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/south-africa",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/south-korea/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/south-korea",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/spain/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/spain",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/sweden/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/sweden",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/switzerland/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/switzerland",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/turkey/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/turkey",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/uae/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/uae",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/united-kingdom/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/united-kingdom",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/united-states/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/united-states",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/residence-permits/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/residence-permits",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/resigning-job-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/resigning-job-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/status-changes/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/status-changes",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/argentina/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/argentina",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/australia/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/australia",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/brazil/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/brazil",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/canada/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/canada",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/chile/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/chile",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/denmark/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/denmark",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/france/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/france",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/germany/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/germany",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/india/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/india",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/indonesia/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/indonesia",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/ireland/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/ireland",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/italy/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/italy",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/japan/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/japan",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/kenya/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/kenya",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/mexico/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/mexico",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/new-zealand/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/new-zealand",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/nigeria/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/nigeria",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/norway/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/norway",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/pakistan/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/pakistan",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/philippines/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/philippines",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/singapore/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/singapore",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/south-africa/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/south-africa",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/south-korea/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/south-korea",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/spain/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/spain",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/sweden/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/sweden",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/switzerland/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/switzerland",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/turkey/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/turkey",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/uae/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/uae",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/united-kingdom/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/united-kingdom",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/united-states/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/arrival-planner/from/united-states",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/argentina/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/argentina",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/australia/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/australia",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/brazil/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/brazil",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/canada/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/canada",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/chile/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/chile",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/denmark/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/denmark",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/france/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/france",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/germany/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/germany",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/india/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/india",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/indonesia/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/indonesia",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/ireland/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/ireland",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/italy/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/italy",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/japan/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/japan",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/kenya/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/kenya",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/mexico/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/mexico",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/new-zealand/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/new-zealand",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/nigeria/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/nigeria",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/norway/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/norway",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/pakistan/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/pakistan",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/philippines/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/philippines",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/singapore/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/singapore",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/south-africa/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/south-africa",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/south-korea/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/south-korea",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/spain/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/spain",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/sweden/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/sweden",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/switzerland/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/switzerland",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/turkey/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/turkey",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/uae/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/uae",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/united-kingdom/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/united-kingdom",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/united-states/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/from/united-states",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/argentina/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/argentina",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/australia/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/australia",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/brazil/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/brazil",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/canada/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/canada",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/chile/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/chile",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/denmark/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/denmark",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/france/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/france",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/germany/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/germany",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/india/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/india",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/indonesia/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/indonesia",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/ireland/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/ireland",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/italy/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/italy",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/japan/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/japan",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/kenya/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/kenya",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/mexico/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/mexico",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/new-zealand/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/new-zealand",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/nigeria/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/nigeria",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/norway/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/norway",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/pakistan/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/pakistan",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/philippines/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/philippines",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/singapore/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/singapore",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/south-africa/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/south-africa",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/south-korea/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/south-korea",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/spain/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/spain",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/sweden/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/sweden",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/switzerland/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/switzerland",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/turkey/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/turkey",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/uae/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/uae",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/united-kingdom/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/united-kingdom",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/united-states/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/first-90-days/from/united-states",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/hsm-salary-checker/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/hsm-salary-checker",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/argentina/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/argentina",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/australia/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/australia",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/brazil/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/brazil",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/canada/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/canada",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/chile/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/chile",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/denmark/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/denmark",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/france/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/france",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/germany/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/germany",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/india/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/india",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/indonesia/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/indonesia",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/ireland/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/ireland",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/italy/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/italy",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/japan/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/japan",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/kenya/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/kenya",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/mexico/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/mexico",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/new-zealand/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/new-zealand",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/nigeria/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/nigeria",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/norway/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/norway",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/pakistan/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/pakistan",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/philippines/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/philippines",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/singapore/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/singapore",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/south-africa/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/south-africa",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/south-korea/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/south-korea",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/spain/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/spain",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/sweden/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/sweden",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/switzerland/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/switzerland",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/turkey/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/turkey",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/uae/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/uae",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/united-kingdom/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/united-kingdom",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/united-states/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/united-states",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/relocation-cost-estimator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/relocation-cost-estimator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/twv-work-permit/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/twv-work-permit",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/visas-residency/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/visas-residency",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/working-in-the-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/working-in-the-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/municipality-registration-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/municipality-registration-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/nijmegen/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/nijmegen",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/official-figures/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/official-figures",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/open-bank-account-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/open-bank-account-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/digid-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/digid-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/government-portals-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/government-portals-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/municipality-services-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/municipality-services-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/parking-and-local-permits-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/parking-and-local-permits-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/privacy-and-safety-basics-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/privacy-and-safety-basics-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/registering-your-address-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/registering-your-address-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/subscriptions-and-cancellations-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/waste-and-recycling-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/waste-and-recycling-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/randstad/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/randstad",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/rotterdam/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/rotterdam",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/banks/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/banks",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/financial-advisors/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/financial-advisors",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/health-insurance/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/health-insurance",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/highly-skilled-migrant-sponsors/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/highly-skilled-migrant-sponsors",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/housing-platforms/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/housing-platforms",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/immigration-lawyers/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/immigration-lawyers",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/insurance-providers/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/insurance-providers",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/mobile-connectivity/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/mobile-connectivity",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/mortgage-advisors/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/mortgage-advisors",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/relocation-agencies/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/relocation-agencies",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/relocation-services/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/relocation-services",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/rental-agencies/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/rental-agencies",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/startup-visa-advisors/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/startup-visa-advisors",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/tax-advisors/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/tax-advisors",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/visa-consultants/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/visa-consultants",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/shipping-household-goods-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/shipping-household-goods-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/average-salary-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/average-salary-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/bonus-tax-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/bonus-tax-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/childcare-allowance-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/childcare-allowance-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/double-taxation-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/double-taxation-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/foreign-income-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/foreign-income-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/gross-vs-net-salary/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/gross-vs-net-salary",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/healthcare-allowance-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/healthcare-allowance-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/leaving-netherlands-tax/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/leaving-netherlands-tax",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/net-salary-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/net-salary-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/payroll-tax-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/payroll-tax-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/property-tax-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/property-tax-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/rent-allowance-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/rent-allowance-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/taxes-after-moving-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/taxes-after-moving-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/30-ruling-calculator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/30-ruling-calculator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/double-tax-awareness-tool/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/double-tax-awareness-tool",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/dutch-salary-net-calculator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/dutch-salary-net-calculator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/healthcare-allowance-estimator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/healthcare-allowance-estimator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/the-hague/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/the-hague",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tilburg/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tilburg",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/advanced/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/advanced",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/bank-comparison/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/bank-comparison",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/banking-cost-estimator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/banking-cost-estimator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/city-comparison/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/city-comparison",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/transfer-cost-calculator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/transfer-cost-calculator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/transport/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/transport/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/energy-and-water-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/energy-and-water-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/internet-and-mobile-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/internet-and-mobile-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/utilities-netherlands/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/utilities-netherlands",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utrecht/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utrecht",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa-application-plan/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa-application-plan",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa-checker/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa-checker",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa-cost-calculator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa-cost-calculator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa-timeline-estimator/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa-timeline-estimator",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/compare-visas/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/compare-visas",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/dutch-american-friendship-treaty/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/dutch-american-friendship-treaty",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/eu-blue-card/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/eu-blue-card",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/highly-skilled-migrant/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/highly-skilled-migrant",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/partner-family-visa/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/partner-family-visa",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/self-employed-visa/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/self-employed-visa",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/student-visa/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/student-visa",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/employment-contract-risk-scanner/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/employment-contract-risk-scanner",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/employment-type-scenario-tool/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/employment-type-scenario-tool",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/job-offer-comparison/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/job-offer-comparison",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/payslip-decoder/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/payslip-decoder",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/privacy/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/privacy",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/sitemap/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/sitemap",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/sources/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/sources",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/terms/",
+    "context": "sitemap"
+  },
+  {
+    "url": "https://www.expatcopilot.com/terms",
+    "context": "sitemap_slash_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/moving-to-netherlands-from",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/moving-to-netherlands-from/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/best/banks-for-expats",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/best/banks-for-expats/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/buy-vs-rent-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/buy-vs-rent-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/buying-house-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/buying-house-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/can-i-open-bank-account-before-bsn",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/can-i-open-bank-account-before-bsn/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/naturalisation",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/naturalisation/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/naturalization",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/citizenship/naturalization/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cost-of-living-calculator",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/cost-of-living-calculator/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dating-in-the-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dating-in-the-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-birthday-traditions",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-birthday-traditions/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-culture",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-culture/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-directness-at-work",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-directness-at-work/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-etiquette",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-etiquette/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-holidays-and-traditions",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-holidays-and-traditions/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-humour",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-humour/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-social-norms",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-social-norms/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-workplace-culture",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/dutch-workplace-culture/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/inburgering-exams",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/inburgering-exams/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/making-dutch-friends",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/culture/making-dutch-friends/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/double-taxation-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/double-taxation-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/dutch-citizenship-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/dutch-citizenship-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/child-benefit-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/child-benefit-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/tools/healthcare-allowance-estimator",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/tools/healthcare-allowance-estimator/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/tools/utilities-services-comparison-tool",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/tools/utilities-services-comparison-tool/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/language/inburgering-exams",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/language/inburgering-exams/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/making-friends",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/life/making-friends/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/community-basics",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/community-basics/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/culture-etiquette",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/culture-etiquette/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/digid-awareness",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/digid-awareness/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/energy-and-water",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/energy-and-water/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/housing-costs",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/housing-costs/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/housing",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/housing/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/internet-and-mobile",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/internet-and-mobile/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/making-dutch-friends",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/making-dutch-friends/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/municipality-services",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/municipality-services/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/parking-and-local-permits",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/parking-and-local-permits/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/privacy-and-safety-basics",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/privacy-and-safety-basics/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/registering-your-address",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/registering-your-address/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/rental-contracts-and-deposits",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/rental-contracts-and-deposits/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/subscriptions-and-cancellations",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/subscriptions-and-cancellations/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/transport-basics",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/transport-basics/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/utilities",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/utilities/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/waste-and-recycling",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/waste-and-recycling/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/cheap-cities-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/cheap-cities-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/taxes/30-percent-ruling",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/taxes/30-percent-ruling/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/30-ruling-calculator",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/30-ruling-calculator/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/double-tax-awareness-tool",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/double-tax-awareness-tool/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/dutch-salary-net-calculator",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/dutch-salary-net-calculator/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/expat-cost-of-living-calculator",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/expat-cost-of-living-calculator/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/rent-affordability-calculator",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/rent-affordability-calculator/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/mortgage-netherlands-expats",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/mortgage-netherlands-expats/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/uk",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/uk/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/us",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/moving-to-netherlands-from/us/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/document-readiness/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/residence-permit-timeline-estimator",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/residence-permit-timeline-estimator/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/visa-eligibility-checker",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/visa-eligibility-checker/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/permanent-residence-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/permanent-residence-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/address-registration-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/address-registration-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/property-tax-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/property-tax-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/settling-in-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/settling-in-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/survival-guide",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/survival-guide/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/childcare-allowance",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/childcare-allowance/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/expat-taxes-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/expat-taxes-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/healthcare-allowance",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/healthcare-allowance/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/how-taxes-work-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/how-taxes-work-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/rent-allowance",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/rent-allowance/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tax-residency-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tax-residency-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tax-return-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tax-return-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities-in-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities-in-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/daft-visa",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/daft-visa/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/entrepreneur-visa",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/entrepreneur-visa/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/european-blue-card",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/european-blue-card/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/family-permit",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/family-permit/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/family-reunification",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/family-reunification/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/freelancer-visa",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/freelancer-visa/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/partner-visa",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/partner-visa/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/self-employed-residence-permit",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/self-employed-residence-permit/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/spouse-visa",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/spouse-visa/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/student-residence-permit",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/student-residence-permit/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/study-visa",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa/study-visa/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visas-residency",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visas-residency/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visas-residency/extensions-changes",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visas-residency/extensions-changes/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visas-residency/partner-family",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visas-residency/partner-family/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visas-residency/residence-permits",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visas-residency/residence-permits/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visas-residency/status-changes",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visas-residency/status-changes/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/average-salary-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/average-salary-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/bonus-tax-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/bonus-tax-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/changing-jobs-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/changing-jobs-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/contractor-vs-employee-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/contractor-vs-employee-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/employee-benefits-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/employee-benefits-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/employee-rights-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/employee-rights-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/employment-contract-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/employment-contract-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/expat-salary-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/expat-salary-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/finding-jobs-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/finding-jobs-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/freelancing-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/freelancing-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/holiday-allowance-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/holiday-allowance-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/layoffs-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/layoffs-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/minimum-wage-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/minimum-wage-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/notice-period-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/notice-period-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/pension-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/pension-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/probation-period-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/probation-period-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/resigning-job-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/resigning-job-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/salary-negotiation-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/salary-negotiation-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/job-offer-comparison-tool",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/job-offer-comparison-tool/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/twv-work-permit",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/twv-work-permit/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/work-culture-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/work-culture-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/work-permit-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/work-permit-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/zzp-netherlands",
+    "context": "redirect_inventory"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/zzp-netherlands/",
+    "context": "redirect_inventory_slash"
+  },
+  {
+    "url": "https://www.expatcopilot.com/dev/phase2-components",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/family/tools/partner-work-eligibility-checker",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/tools/dutch-health-insurance-comparison-tool",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/health/tools/insurance-comparison-tool",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/tools/buy-vs-rent-calculator",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/tools/deposit-return-risk-checker",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/tools/dutch-rental-budget-calculator",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/tools/mortgage-comparison-tool",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/tools/mortgage-eligibility-estimator",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/integration/tools/inburgering-timeline-planner",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/integration/tools/knm-knowledge-quiz",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/employment-tax-overview-tool",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/bsn-readiness-checker",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving/tools/moving-cost-calculator",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/advanced/ai-personal-benefits-finder",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/advanced/expat-visa-risk-tax-navigator",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/advanced/green-retrofit-planner",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/advanced/hidden-compensation-finder",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/advanced/insurance-coverage-gap-detector",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/tools/advanced/rental-deposit-dispute-tool",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/transport/tools/bike-vs-public-transport-cost-tool",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/transport/tools/public-transport-cost-estimator",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/compare-payslips-tool",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/compensation-comparison-tool",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/employee-benefits-calculator",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/employment-type-admin-load-tool",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/employment-type-visa-dependency-tool",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/tools/job-change-impact-simulator",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/search",
+    "context": "intentional_noindex_or_utility"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/average-rent-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/best-housing-websites-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/electricity-providers-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/expat-housing-agencies-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/finding-apartment-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/furnished-vs-unfurnished-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/neighborhoods",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/renting-in-amstelveen",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/renting-in-amsterdam",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/renting-in-delft",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/renting-in-eindhoven",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/renting-in-groningen",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/renting-in-haarlem",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/renting-in-leiden",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/renting-in-rotterdam",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/renting-in-the-hague",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/renting-in-the-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/renting-in-utrecht",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/social-housing-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/housing/temporary-accommodation-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/how-to-rent-in-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/internet-providers-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/inventory-check-rental-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/cover-letter-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/cv-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/english-speaking-jobs-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/interview-tips-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/linkedin-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/networking-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/recruitment-agencies-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/remote-work-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/jobs/starting-consultancy-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/asian-supermarkets-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/beach-towns-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/best-supermarkets-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/bike-sharing-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/castles-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/cheap-groceries-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/cycling-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/day-trips-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/dutch-supermarkets",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/food-delivery-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/hidden-gems-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/hiking-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/indian-supermarkets-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/international-supermarkets-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/meal-kits-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/metro-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/museums-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/national-parks-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/ns-trains-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/ov-chipkaart-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/ovpay-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/regional-buses-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/restaurants-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/road-trips-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/south-african-shops-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/tipping-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/train-discounts-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/trams-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/turkish-supermarkets-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/weekend-travel-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/weekend-trips-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/bsn-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/practical-life/local-taxes-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/private-rental-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/registering-address-rental",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/rent-control-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/rent-increase-rules-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/rent-prices-amsterdam",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/rent-prices-rotterdam",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/rent-prices-utrecht",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/rental-contract-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/rental-deposit-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/rental-insurance-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/renter-rights-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/renting-in-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/renting-in-the-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/reporting-bad-landlord-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/accountants",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/bank-comparison",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/business-consultants",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/cleaning-companies",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/compare-health-insurance",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/daycare-providers",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/energy-providers",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/estate-agents",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/expat-housing-agencies",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/handymen",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/insurance-brokers",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/international-schools",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/international-shipping",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/internet-providers",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/moving-companies",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/notaries",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/pet-relocation-companies",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/phone-providers",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/real-estate-agents",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/removal-companies",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/storage-companies",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/temporary-accommodation",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/work-permit-services",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/social-housing-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/30-ruling-application",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/30-ruling-eligibility",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/30-ruling-expiry",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/30-ruling-salary-requirements",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/bsn-and-tax-system",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/cost-of-living-amsterdam",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/cost-of-living-eindhoven",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/cost-of-living-rotterdam",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/cost-of-living-the-hague",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/cost-of-living-utrecht",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/dutch-tax-calendar",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/expat-tax-return",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/self-employed-tax-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tax-advisors-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tax-brackets-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/allowance-estimator",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/double-tax-checker",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/net-salary-calculator",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/zzp-tax-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/temporary-housing-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/district-heating-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/electricity-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/energy-providers-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/gas-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/internet-providers-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/mobile-providers-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/utilities/water-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/job-websites-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/jobs-in-amsterdam",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/jobs-in-eindhoven",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/jobs-in-rotterdam",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/jobs-in-the-hague",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/jobs-in-utrecht",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/linkedin-jobs-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/work-hours-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/work/working-in-netherlands",
+    "context": "staged"
+  },
+  {
+    "url": "https://www.expatcopilot.com/about/affiliate-disclosure",
+    "context": "unknown_intent"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/best",
+    "context": "unknown_intent"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/documents-needed-to-move-netherlands",
+    "context": "unknown_intent"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/living/emergencies",
+    "context": "unknown_intent"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/moving-documents-checklist",
+    "context": "unknown_intent"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/register-address-netherlands",
+    "context": "unknown_intent"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/services/recruitment-agencies",
+    "context": "unknown_intent"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/taxes/tools/dutch-payslip-decoder",
+    "context": "unknown_intent"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa-documents-netherlands",
+    "context": "unknown_intent"
+  },
+  {
+    "url": "https://www.expatcopilot.com/tools",
+    "context": "unknown_intent"
+  },
+  {
+    "url": "http://www.expatcopilot.com/netherlands",
+    "context": "http_scheme"
+  },
+  {
+    "url": "https://expatcopilot.com/netherlands",
+    "context": "apex_host"
+  },
+  {
+    "url": "https://www.expatcopilot.com/Netherlands",
+    "context": "case_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/NETHERLANDS/amsterdam",
+    "context": "case_variant"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa-application-plan?scenario=test",
+    "context": "parameter_seed"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/visa-application-plan/?scenario=hsm",
+    "context": "parameter_seed"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/?preview=true",
+    "context": "parameter_seed"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/amsterdam?preview=true",
+    "context": "parameter_seed"
+  },
+  {
+    "url": "https://www.expatcopilot.com/search?q=visa",
+    "context": "parameter_seed"
+  },
+  {
+    "url": "https://www.expatcopilot.com/search/?q=visa",
+    "context": "parameter_seed"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator?city=amsterdam",
+    "context": "parameter_seed"
+  },
+  {
+    "url": "https://www.expatcopilot.com/netherlands/money/tools/cost-of-living-calculator/?utm_source=test&utm_medium=audit",
+    "context": "parameter_seed"
+  }
+]

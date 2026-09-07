@@ -13,11 +13,11 @@ import {
 } from "@/src/components/health/maternityCareNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
-export const PREGNANCY_NETHERLANDS_PATH = "/netherlands/family/pregnancy-netherlands/" as const;
+export const PREGNANCY_NETHERLANDS_PATH = "/netherlands/family/pregnancy-netherlands" as const;
 export const FAMILY_HUB_PATH = PARENTING_NETHERLANDS_PATH;
-export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
-export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family/" as const;
-export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/" as const;
+export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids" as const;
+export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family" as const;
+export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands" as const;
 
 export type PregnancyLink = {
   label: string;

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { CookieSettingsLink } from "@/src/components/cookies/CookieSettingsLink";
 import { privacyPage } from "@/src/data/legal/privacy";
@@ -12,7 +12,7 @@ export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: pageMetadataTitle(privacyPage.seo.title),
   description: privacyPage.seo.description,
-  alternates: { canonical: "/privacy/" },
+  alternates: { canonical: absoluteUrlFromPath("/privacy/")},
 };
 
 export default function PrivacyPage() {

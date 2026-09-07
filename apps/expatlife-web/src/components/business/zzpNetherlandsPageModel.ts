@@ -1,24 +1,24 @@
-export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands/" as const;
+export const ZZP_NETHERLANDS_PATH = "/netherlands/business/zzp-netherlands" as const;
 export const ZZP_AFFILIATE_PLACEMENT_ID = "nl-business-zzp-support-providers" as const;
 
-export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands/" as const;
-export const STARTING_CONSULTANCY_NETHERLANDS_PATH = "/netherlands/jobs/starting-consultancy-netherlands/" as const;
-export const CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands/" as const;
-export const BUSINESS_HUB_PATH = "/netherlands/business/" as const;
-export const STARTING_BUSINESS_NETHERLANDS_PATH = "/netherlands/business/starting-a-business-netherlands/" as const;
-export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/taxes/expat-taxes-netherlands/" as const;
-export const FOREIGN_INCOME_NETHERLANDS_PATH = "/netherlands/taxes/foreign-income-netherlands/" as const;
-export const DOUBLE_TAXATION_NETHERLANDS_PATH = "/netherlands/taxes/double-taxation-netherlands/" as const;
-export const VAT_NETHERLANDS_PATH = "/netherlands/taxes/vat-netherlands/" as const;
-export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors/" as const;
-export const ACCOUNTANTS_PATH = "/netherlands/services/accountants/" as const;
-export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors/" as const;
-export const BUSINESS_CONSULTANTS_PATH = "/netherlands/services/business-consultants/" as const;
-export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers/" as const;
-export const PENSION_NETHERLANDS_EXPATS_PATH = "/netherlands/jobs/pension-netherlands-expats/" as const;
-export const SELF_EMPLOYED_VISA_PATH = "/netherlands/visa/self-employed-visa/" as const;
-export const VISAS_HUB_PATH = "/netherlands/moving/visas-residency/" as const;
-export const EMPLOYMENT_CONTRACT_NETHERLANDS_PATH = "/netherlands/jobs/employment-contract-netherlands/" as const;
+export const FREELANCING_NETHERLANDS_PATH = "/netherlands/jobs/freelancing-netherlands" as const;
+export const STARTING_CONSULTANCY_NETHERLANDS_PATH = "/netherlands/jobs/starting-consultancy-netherlands" as const;
+export const CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands" as const;
+export const BUSINESS_HUB_PATH = "/netherlands/business" as const;
+export const STARTING_BUSINESS_NETHERLANDS_PATH = "/netherlands/business/starting-a-business-netherlands" as const;
+export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/taxes/expat-taxes-netherlands" as const;
+export const FOREIGN_INCOME_NETHERLANDS_PATH = "/netherlands/taxes/foreign-income-netherlands" as const;
+export const DOUBLE_TAXATION_NETHERLANDS_PATH = "/netherlands/taxes/double-taxation-netherlands" as const;
+export const VAT_NETHERLANDS_PATH = "/netherlands/taxes/vat-netherlands" as const;
+export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors" as const;
+export const ACCOUNTANTS_PATH = "/netherlands/services/accountants" as const;
+export const TAX_ADVISORS_PATH = "/netherlands/services/tax-advisors" as const;
+export const BUSINESS_CONSULTANTS_PATH = "/netherlands/services/business-consultants" as const;
+export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers" as const;
+export const PENSION_NETHERLANDS_EXPATS_PATH = "/netherlands/jobs/pension-netherlands-expats" as const;
+export const SELF_EMPLOYED_VISA_PATH = "/netherlands/visa/self-employed-visa" as const;
+export const VISAS_HUB_PATH = "/netherlands/moving/visas-residency" as const;
+export const EMPLOYMENT_CONTRACT_NETHERLANDS_PATH = "/netherlands/jobs/employment-contract-netherlands" as const;
 
 export type ZzpLink = {
   label: string;

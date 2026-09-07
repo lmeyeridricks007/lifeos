@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { editorialPolicyPage } from "@/src/data/trust/editorial-policy";
@@ -11,7 +11,7 @@ export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: pageMetadataTitle(editorialPolicyPage.seo.title),
   description: editorialPolicyPage.seo.description,
-  alternates: { canonical: "/editorial-policy/" },
+  alternates: { canonical: absoluteUrlFromPath("/editorial-policy/")},
 };
 
 export default function EditorialPolicyPage() {

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { MoveHero } from "@/components/page/move-shell";
 import { CardLink } from "@/components/ui/card-link";
@@ -36,7 +36,7 @@ const META_DESCRIPTION =
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(CANONICAL)},
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
   keywords: [
     "international transfer cost calculator Netherlands",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
-    url: CANONICAL,
+    url: absoluteUrlFromPath(CANONICAL),
     images: [
       {
         url: HERO_IMAGE,
@@ -187,7 +187,7 @@ function resolveGuidesNext() {
 
 export default function TransferCostCalculatorPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const relatedGuides = resolveRelatedGuides();
   const guidesNext = resolveGuidesNext();
   const assumptions = TRANSFER_COST_CALCULATOR_ASSUMPTIONS;

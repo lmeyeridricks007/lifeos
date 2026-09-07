@@ -4,6 +4,10 @@
 
 import type { ThirtyPercentCalculatorInputs } from "./types";
 
+/**
+ * 2026 Belastingdienst norms — re-verified 7 Sep 2026 (unchanged vs 6 Sep):
+ * €48,013 / €36,497 / cap €262,000 / max untaxed €78,600 at 30%.
+ */
 export const THIRTY_PCT_RULES_2026 = {
   thresholdStandardAnnual: 48_013,
   thresholdUnder30MastersAnnual: 36_497,
@@ -11,6 +15,22 @@ export const THIRTY_PCT_RULES_2026 = {
   maxUntaxedFullYearAtCap: 78_600,
   facilityPercentThrough2026: 0.3,
   facilityPercentFrom2027Preview: 0.27,
+} as const;
+
+/**
+ * 2027 preview cited on business.gov.nl — 27% facility + raised income norms.
+ * Status: expected from 1 Jan 2027 for post-2023 starters, but **effective date not yet final**.
+ * @see https://business.gov.nl/amendments/30-percent-ruling-compensation-down-to-27-percent/
+ */
+export const THIRTY_PCT_RULES_2027_PREVIEW = {
+  thresholdStandardAnnual: 50_436,
+  thresholdUnder30MastersAnnual: 38_388,
+  facilityPercent: 0.27,
+  expectedFromLabel: "1 January 2027",
+  statusNote:
+    "Cited on business.gov.nl; effective date not yet final — not in force for 2026 payroll. Confirm before planning.",
+  sourceHref:
+    "https://business.gov.nl/amendments/30-percent-ruling-compensation-down-to-27-percent/",
 } as const;
 
 /** Employer allowance % must be in [0, statutoryMax] where statutory max is 30% or 27% etc. Upper hard cap for data entry sanity. */

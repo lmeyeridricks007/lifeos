@@ -190,7 +190,7 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     ...(v.keyFacts.jobSearchWindow
       ? [{ label: "Job-search period (from 22 May 2026)", value: v.keyFacts.jobSearchWindow }]
       : []),
-    { label: "Proposed 2027 reforms", value: "Not yet law — possible 1 Jan 2027; current IND thresholds still apply" },
+    { label: "Proposed HSM reforms", value: "Not yet law — effective date not yet known / not yet final; current IND thresholds still apply" },
     { label: "Salary floor (30+)", value: "€5,942/month gross (excl. holiday pay, 2026 IND)" },
     { label: "Salary floor (under 30)", value: "€4,357/month gross (2026 IND)" },
     { label: "HSM → permanent residence", value: "Separate IND application after qualifying lawful stay — not automatic at 5 years" },
@@ -322,7 +322,7 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
         bullets: v.proposedReformsWatch.bullets,
         callout: {
           type: "warning",
-          title: `Possible effective date: ${v.proposedReformsWatch.possibleEffectiveDate} — not yet law`,
+          title: `Status: ${v.proposedReformsWatch.possibleEffectiveDate} — not yet law`,
           text: v.proposedReformsWatch.disclaimer,
           href: v.proposedReformsWatch.businessGovUrl,
           linkLabel: "business.gov.nl — proposed HSM rule changes",

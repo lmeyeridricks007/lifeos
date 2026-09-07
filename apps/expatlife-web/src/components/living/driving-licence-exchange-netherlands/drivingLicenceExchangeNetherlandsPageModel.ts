@@ -1,3 +1,4 @@
+import { GUIDE_CITABILITY_POLICY_LINKS } from "@/src/components/guides/guideCitabilityPolicyLinks";
 import { LIVING_GETTING_AROUND_PATH, LIVING_PILLAR_ROOT_PATH } from "@/src/components/living/livingPillarContent";
 import {
   MUNICIPALITY_SERVICES_PATH,
@@ -6,23 +7,26 @@ import {
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 export const DRIVING_LICENCE_EXCHANGE_NETHERLANDS_PATH =
-  "/netherlands/living/driving-licence-exchange-netherlands/" as const;
+  "/netherlands/living/driving-licence-exchange-netherlands" as const;
 
-export const BUYING_A_CAR_NETHERLANDS_PATH = "/netherlands/living/buying-a-car-netherlands/" as const;
+export const BUYING_A_CAR_NETHERLANDS_PATH = "/netherlands/living/buying-a-car-netherlands" as const;
 
-export const ROAD_TAX_NETHERLANDS_PATH = "/netherlands/living/road-tax-netherlands/" as const;
+export const ROAD_TAX_NETHERLANDS_PATH = "/netherlands/living/road-tax-netherlands" as const;
 
-export const CAR_INSURANCE_NETHERLANDS_PATH = "/netherlands/living/car-insurance-netherlands/" as const;
+export const CAR_INSURANCE_NETHERLANDS_PATH = "/netherlands/living/car-insurance-netherlands" as const;
 
-export const MOT_APK_NETHERLANDS_PATH = "/netherlands/living/mot-apk-netherlands/" as const;
+export const MOT_APK_NETHERLANDS_PATH = "/netherlands/living/mot-apk-netherlands" as const;
 
-export const SPEED_CAMERAS_NETHERLANDS_PATH = "/netherlands/living/speed-cameras-netherlands/" as const;
+export const SPEED_CAMERAS_NETHERLANDS_PATH = "/netherlands/living/speed-cameras-netherlands" as const;
 
-export const ELECTRIC_VEHICLES_NETHERLANDS_PATH = "/netherlands/living/electric-vehicles-netherlands/" as const;
+export const ELECTRIC_VEHICLES_NETHERLANDS_PATH = "/netherlands/living/electric-vehicles-netherlands" as const;
 
-export const CAR_SHARING_NETHERLANDS_PATH = "/netherlands/living/car-sharing-netherlands/" as const;
+export const CAR_SHARING_NETHERLANDS_PATH = "/netherlands/living/car-sharing-netherlands" as const;
 
-export const LEASE_CARS_NETHERLANDS_PATH = "/netherlands/living/lease-cars-netherlands/" as const;
+export const LEASE_CARS_NETHERLANDS_PATH = "/netherlands/living/lease-cars-netherlands" as const;
+
+/** Bridge path — keep as local const to avoid circular import with OV-chipkaart page model. */
+const OV_CHIPKAART_NETHERLANDS_PATH = "/netherlands/living/ov-chipkaart-netherlands" as const;
 
 export const GETTING_AROUND_PATH = LIVING_GETTING_AROUND_PATH;
 export const PARKING_PATH = PARKING_AND_LOCAL_PERMITS_NETHERLANDS_PATH;
@@ -62,6 +66,21 @@ export const drivingLicenceExchangeNetherlandsPage = {
   parentGuidePath: GETTING_AROUND_PATH,
   publish: true,
   publishDate: scheduledPublishDateForPath(DRIVING_LICENCE_EXCHANGE_NETHERLANDS_PATH) ?? "2026-08-26",
+  lastReviewed: "7 September 2026",
+  heroOfficialSources: [
+    {
+      label: "RDW — driving licence exchange orientation",
+      href: "https://www.rdw.nl/en/driving-licence",
+    },
+    {
+      label: "Government.nl — driving licence topics",
+      href: "https://www.government.nl/",
+    },
+    {
+      label: "CBR — exams and theory orientation",
+      href: "https://www.cbr.nl/en",
+    },
+  ],
   seo: {
     title: "Driving Licence Exchange in the Netherlands | Complete Guide for Expats",
     description:
@@ -779,11 +798,13 @@ export const drivingLicenceExchangeNetherlandsPage = {
   ],
   relatedGuidesTips: [
     "OV, bikes and multimodal travel → Getting around.",
+    "Personal travel card → OV-chipkaart.",
     "Car purchase sibling → Buying a car.",
     "Recurring ownership tax → Road tax.",
     "Cover choices → Car insurance.",
     "Resident parking after you own a car → Parking and local permits.",
     "Gemeente admin context → Municipality services.",
+    "How we work → Methodology / Sources / Editorial policy.",
   ],
   relatedGuides: [
     {
@@ -791,6 +812,12 @@ export const drivingLicenceExchangeNetherlandsPage = {
       href: GETTING_AROUND_PATH,
       status: "live",
       description: "Trains, OVpay, bikes and everyday mobility — the live sibling for non-car travel.",
+    },
+    {
+      label: "OV-chipkaart",
+      href: OV_CHIPKAART_NETHERLANDS_PATH,
+      status: "live",
+      description: "Personal travel card setup when you stay on public transport instead of driving.",
     },
     {
       label: "Buying a car in the Netherlands",
@@ -852,6 +879,7 @@ export const drivingLicenceExchangeNetherlandsPage = {
       status: "live",
       description: "Gemeente services, registration context and local admin orientation.",
     },
+    ...GUIDE_CITABILITY_POLICY_LINKS,
   ] satisfies DrivingLink[],
   drivingHubTips: [
     "Driving licence exchange is the paperwork cornerstone of the Driving cluster.",

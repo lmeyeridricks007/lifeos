@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { affiliateDisclosurePage } from "@/src/data/trust/affiliate-disclosure";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
@@ -10,7 +10,7 @@ export const revalidate = CONTENT_REVALIDATE;
 export const metadata: Metadata = {
   title: pageMetadataTitle(affiliateDisclosurePage.seo.title),
   description: affiliateDisclosurePage.seo.description,
-  alternates: { canonical: "/affiliate-disclosure/" },
+  alternates: { canonical: absoluteUrlFromPath("/affiliate-disclosure/")},
 };
 
 export default function AffiliateDisclosurePage() {

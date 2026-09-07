@@ -1,22 +1,22 @@
-export const EMPLOYEE_RIGHTS_NETHERLANDS_PATH = "/netherlands/jobs/employee-rights-netherlands/" as const;
+export const EMPLOYEE_RIGHTS_NETHERLANDS_PATH = "/netherlands/jobs/employee-rights-netherlands" as const;
 export const EMPLOYEE_RIGHTS_AFFILIATE_PLACEMENT_ID = "nl-jobs-employee-rights-support-providers" as const;
 
-export const EMPLOYMENT_CONTRACT_NETHERLANDS_PATH = "/netherlands/jobs/employment-contract-netherlands/" as const;
-export const PROBATION_PERIOD_NETHERLANDS_PATH = "/netherlands/jobs/probation-period-netherlands/" as const;
-export const NOTICE_PERIOD_NETHERLANDS_PATH = "/netherlands/jobs/notice-period-netherlands/" as const;
-export const EMPLOYEE_BENEFITS_NETHERLANDS_PATH = "/netherlands/jobs/employee-benefits-netherlands/" as const;
-export const FINDING_JOBS_NETHERLANDS_PATH = "/netherlands/jobs/finding-jobs-netherlands/" as const;
-export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands/" as const;
-export const HOLIDAY_ALLOWANCE_NETHERLANDS_PATH = "/netherlands/jobs/holiday-allowance-netherlands/" as const;
-export const HSM_VISA_PATH = "/netherlands/visa/highly-skilled-migrant/" as const;
-export const MOVING_HUB_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const JOBS_HUB_PATH = "/netherlands/moving/working-in-the-netherlands/" as const;
-export const VISAS_HUB_PATH = "/netherlands/moving/visas-residency/" as const;
-export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers/" as const;
-export const CAREER_COACHES_PATH = "/netherlands/services/career-coaches/" as const;
-export const RECRUITMENT_AGENCIES_PATH = "/netherlands/services/recruitment-agencies/" as const;
-export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services/" as const;
-export const CONTRACT_RISK_SCANNER_PATH = "/netherlands/work/tools/employment-contract-risk-scanner/" as const;
+export const EMPLOYMENT_CONTRACT_NETHERLANDS_PATH = "/netherlands/jobs/employment-contract-netherlands" as const;
+export const PROBATION_PERIOD_NETHERLANDS_PATH = "/netherlands/jobs/probation-period-netherlands" as const;
+export const NOTICE_PERIOD_NETHERLANDS_PATH = "/netherlands/jobs/notice-period-netherlands" as const;
+export const EMPLOYEE_BENEFITS_NETHERLANDS_PATH = "/netherlands/jobs/employee-benefits-netherlands" as const;
+export const FINDING_JOBS_NETHERLANDS_PATH = "/netherlands/jobs/finding-jobs-netherlands" as const;
+export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands" as const;
+export const HOLIDAY_ALLOWANCE_NETHERLANDS_PATH = "/netherlands/jobs/holiday-allowance-netherlands" as const;
+export const HSM_VISA_PATH = "/netherlands/visa/highly-skilled-migrant" as const;
+export const MOVING_HUB_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const JOBS_HUB_PATH = "/netherlands/moving/working-in-the-netherlands" as const;
+export const VISAS_HUB_PATH = "/netherlands/moving/visas-residency" as const;
+export const IMMIGRATION_LAWYERS_PATH = "/netherlands/services/immigration-lawyers" as const;
+export const CAREER_COACHES_PATH = "/netherlands/services/career-coaches" as const;
+export const RECRUITMENT_AGENCIES_PATH = "/netherlands/services/recruitment-agencies" as const;
+export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services" as const;
+export const CONTRACT_RISK_SCANNER_PATH = "/netherlands/work/tools/employment-contract-risk-scanner" as const;
 
 export type EmployeeRightsLink = {
   label: string;

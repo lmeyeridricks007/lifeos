@@ -2,7 +2,7 @@ import { OFFER_COMPARISON_FAQ } from "./config/offerComparisonFaq";
 import { OFFER_COMPARISON_OFFICIAL_SOURCES } from "./config/offerComparisonOfficialSources";
 import { OFFER_COMPARISON_WORKED_EXAMPLES } from "./config/offerComparisonWorkedExamples";
 
-export const JOB_OFFER_COMPARISON_CANONICAL = "/netherlands/work/tools/job-offer-comparison/";
+export const JOB_OFFER_COMPARISON_CANONICAL = "/netherlands/work/tools/job-offer-comparison";
 export const NL_BASE = "/netherlands";
 
 export const JOB_OFFER_AT_A_GLANCE = [

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { notFound } from "next/navigation";
 import { allGuides, type Guide } from "contentlayer/generated";
 import { Mdx } from "@/components/mdx-components";
@@ -51,8 +52,8 @@ function renderContentlayerMdxArticle(slug: string, guide: Guide) {
   const urlPath = `/netherlands/moving/guides/${slug}`;
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Moving", item: new URL("/netherlands/moving-to-the-netherlands/", baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+    { name: "Moving", item: absoluteUrlFromPath("/netherlands/moving-to-the-netherlands/") },
     { name: guide.title, item: new URL(urlPath, baseUrl).toString() },
   ];
   const dateModified = new Date().toISOString().slice(0, 10);
@@ -164,8 +165,8 @@ function renderJsonGuide(
 
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Moving", item: new URL("/netherlands/moving-to-the-netherlands/", baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+    { name: "Moving", item: absoluteUrlFromPath("/netherlands/moving-to-the-netherlands/") },
     { name: data.title, item: new URL(`/netherlands/moving/guides/${slug}`, baseUrl).toString() },
   ];
   const dateModified = new Date().toISOString().slice(0, 10);

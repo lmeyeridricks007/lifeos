@@ -3,14 +3,14 @@ import Link from "next/link";
 import { TrustPageLayout } from "@/components/layout/TrustPageLayout";
 import { RelatedTrustLinks } from "@/src/components/legal/RelatedTrustLinks";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 
 export const revalidate = CONTENT_REVALIDATE;
 
 export const metadata: Metadata = {
   title: pageMetadataTitle("Affiliate disclosure"),
   description: String("How we use affiliate links and what that means for you."),
-  alternates: { canonical: String("/about/affiliate-disclosure") },
+  alternates: { canonical: absoluteUrlFromPath(String("/about/affiliate-disclosure"))},
 };
 
 const relatedLinks = [

@@ -1,4 +1,4 @@
-export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
+export const TAXES_HUB_PATH = "/netherlands/taxes" as const;
 
 export type TaxesHubLink = {
   label: string;

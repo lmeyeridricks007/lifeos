@@ -1,4 +1,5 @@
 import { Children, type ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -630,7 +631,7 @@ export function BuyingHouseNetherlandsView() {
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Housing", item: new URL(HOUSING_HUB_PATH, baseUrl).toString() },
+    { name: "Housing", item: absoluteUrlFromPath(HOUSING_HUB_PATH) },
     { name: "Buying a house", item: new URL(page.path, baseUrl).toString() },
   ];
 

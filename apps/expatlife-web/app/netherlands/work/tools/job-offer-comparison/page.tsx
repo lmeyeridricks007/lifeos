@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { MoveHero } from "@/components/page/move-shell";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
@@ -38,7 +38,7 @@ const HERO_IMAGE_HEIGHT = 768;
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: JOB_OFFER_COMPARISON_CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(JOB_OFFER_COMPARISON_CANONICAL)},
   keywords: [
     "compare job offers Netherlands",
     "Dutch job offer comparison",
@@ -88,7 +88,7 @@ function resolveRelatedGuides() {
 
 export default function JobOfferComparisonToolPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(JOB_OFFER_COMPARISON_CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(JOB_OFFER_COMPARISON_CANONICAL);
   const relatedGuides = resolveRelatedGuides();
   const pageContext = JOB_OFFER_COMPARISON_CANONICAL;
 

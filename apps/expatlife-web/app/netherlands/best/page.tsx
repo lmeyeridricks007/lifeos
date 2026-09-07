@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { Container } from "@/components/ui/container";
@@ -30,8 +31,8 @@ export const metadata: Metadata = buildSocialMetadata({
 export default function BestProvidersIndexPage() {
   const breadcrumbCrumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-    { name: "Best providers", item: new URL(path, baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+    { name: "Best providers", item: absoluteUrlFromPath(path) },
   ];
 
   return (

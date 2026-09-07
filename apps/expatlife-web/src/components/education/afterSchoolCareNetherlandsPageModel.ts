@@ -1,14 +1,14 @@
-export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands/" as const;
-export const BEFORE_SCHOOL_CARE_PATH = "/netherlands/education/before-school-care-netherlands/" as const;
-export const EDUCATION_HUB_PATH = "/netherlands/education/" as const;
-export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands/" as const;
-export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/" as const;
-export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands/" as const;
-export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands/" as const;
-export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands/" as const;
-export const PARENTING_NETHERLANDS_PATH = "/netherlands/family/parenting-netherlands/" as const;
-export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids/" as const;
-export const CHILDCARE_COST_ESTIMATOR_PATH = "/netherlands/family/tools/childcare-cost-estimator/" as const;
+export const AFTER_SCHOOL_CARE_PATH = "/netherlands/education/after-school-care-netherlands" as const;
+export const BEFORE_SCHOOL_CARE_PATH = "/netherlands/education/before-school-care-netherlands" as const;
+export const EDUCATION_HUB_PATH = "/netherlands/education" as const;
+export const DAYCARE_NETHERLANDS_PATH = "/netherlands/education/daycare-netherlands" as const;
+export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands" as const;
+export const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands" as const;
+export const DUTCH_SCHOOLS_PATH = "/netherlands/education/dutch-schools-netherlands" as const;
+export const INTERNATIONAL_SCHOOLS_PATH = "/netherlands/education/international-schools-netherlands" as const;
+export const PARENTING_NETHERLANDS_PATH = "/netherlands/family/parenting-netherlands" as const;
+export const MOVING_WITH_KIDS_PATH = "/netherlands/moving-to-netherlands-with-kids" as const;
+export const CHILDCARE_COST_ESTIMATOR_PATH = "/netherlands/family/tools/childcare-cost-estimator" as const;
 
 export type BsoLink = {
   label: string;
@@ -242,7 +242,7 @@ export const afterSchoolCareNetherlandsPage = {
     { href: "#mistakes", label: "Mistakes" },
     { href: "#faq", label: "FAQ" },
     { href: "#related-guides", label: "Guides" },
-    { href: "#education-hub", label: "Education hub" },
+    { href: EDUCATION_HUB_PATH, label: "Education hub" },
     { href: "#explore-next", label: "Explore next" },
   ],
   quickAnswer: {
@@ -814,6 +814,8 @@ export const afterSchoolCareNetherlandsPage = {
     "Broader family context → Parenting guide and Moving with Children checklist.",
   ],
   relatedGuides: [
+    { label: "Education & childcare hub", href: EDUCATION_HUB_PATH, status: "live", description: "Dutch vs international schools, daycare and wraparound care — cluster map." },
+
     { label: "Before-School Care (VSO)", href: BEFORE_SCHOOL_CARE_PATH, status: "live", description: "Morning voorschoolse opvang — often combined with BSO for wraparound cover." },
     { label: "Daycare in the Netherlands", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Kinderopvang for younger children — separate from BSO planning." },
     { label: "Childcare Allowance", href: CHILDCARE_ALLOWANCE_PATH, status: "live", description: "Kinderopvangtoeslag rules, eligibility and application for expat families." },
@@ -830,6 +832,8 @@ export const afterSchoolCareNetherlandsPage = {
     "School guides: basisschool vs international choice shapes pickup routes and BSO options.",
   ],
   educationHubCards: [
+    { label: "Education & childcare hub", href: EDUCATION_HUB_PATH, status: "live", description: "Cluster map for schools and childcare pathways." },
+
     { label: "After-School Care (BSO)", href: AFTER_SCHOOL_CARE_PATH, status: "live", description: "This guide — BSO hours, costs, allowance and provider orientation." },
     { label: "Before-School Care (VSO)", href: BEFORE_SCHOOL_CARE_PATH, status: "live", description: "Morning voorschoolse opvang for early work starts." },
     { label: "Daycare", href: DAYCARE_NETHERLANDS_PATH, status: "live", description: "Childcare for babies and toddlers before basisschool age." },

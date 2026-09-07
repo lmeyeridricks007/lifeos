@@ -1,14 +1,14 @@
 export const WASTE_AND_RECYCLING_NETHERLANDS_PATH =
-  "/netherlands/practical-life/waste-and-recycling-netherlands/" as const;
+  "/netherlands/practical-life/waste-and-recycling-netherlands" as const;
 
-export const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands/" as const;
-export const UTILITIES_NETHERLANDS_PATH = "/netherlands/utilities/utilities-netherlands/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const REGISTERING_ADDRESS_PATH = "/netherlands/practical-life/registering-your-address-netherlands/" as const;
-export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const LOCAL_TAXES_NETHERLANDS_PATH = "/netherlands/practical-life/local-taxes-netherlands/" as const;
+export const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands" as const;
+export const UTILITIES_NETHERLANDS_PATH = "/netherlands/utilities/utilities-netherlands" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const REGISTERING_ADDRESS_PATH = "/netherlands/practical-life/registering-your-address-netherlands" as const;
+export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const LOCAL_TAXES_NETHERLANDS_PATH = "/netherlands/practical-life/local-taxes-netherlands" as const;
 export const PARKING_AND_LOCAL_PERMITS_PATH =
-  "/netherlands/practical-life/parking-and-local-permits-netherlands/" as const;
+  "/netherlands/practical-life/parking-and-local-permits-netherlands" as const;
 
 export type PracticalLifeLink = {
   label: string;

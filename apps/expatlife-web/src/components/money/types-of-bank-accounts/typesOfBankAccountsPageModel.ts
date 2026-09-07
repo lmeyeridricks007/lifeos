@@ -12,10 +12,10 @@ import {
 } from "@/src/data/banking/accountTypes";
 import { typesOfBankAccountsMistakes } from "@/src/data/banking/typesOfBankAccountsContent";
 
-export const TYPES_OF_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/types-of-accounts/" as const;
-export const BEST_BANKS_PATH = "/netherlands/money/banking/best-banks-expats/" as const;
-export const FEES_PATH = "/netherlands/money/banking/fees/" as const;
-export const TRAD_DIG_PATH = "/netherlands/money/banking/traditional-vs-digital/" as const;
+export const TYPES_OF_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/types-of-accounts" as const;
+export const BEST_BANKS_PATH = "/netherlands/money/banking/best-banks-expats" as const;
+export const FEES_PATH = "/netherlands/money/banking/fees" as const;
+export const TRAD_DIG_PATH = "/netherlands/money/banking/traditional-vs-digital" as const;
 
 function linksToCtaAndMore(links: readonly { href: string; label: string }[]) {
   const [first, ...rest] = links;

@@ -6,6 +6,7 @@
 import type { Metadata } from "next";
 import { cloneSafeMetadata } from "@/lib/metadata";
 import { getSeoPublicOrigin } from "@/lib/site-origin";
+import { normalizeSitePath, toAbsoluteCanonicalUrl } from "@/lib/seo/site-url";
 import { isPubliclyVisible } from "@/src/lib/publishing/isPubliclyVisible";
 
 /** Default OG/Twitter image route (see `app/opengraph-image.tsx`). */
@@ -17,7 +18,7 @@ export const OG_IMAGE_HEIGHT = 630;
 export type SocialPageMetaInput = {
   title: string;
   description: string;
-  /** Canonical path, e.g. `/netherlands/amsterdam/` */
+  /** Canonical path, e.g. `/netherlands/amsterdam` (no trailing slash). */
   path: string;
   /** Override default share image (path starting with `/`, or absolute https URL). */
   imagePath?: string;
@@ -35,15 +36,12 @@ export type SocialPageMetaInput = {
 };
 
 function normalizePath(path: string): string {
-  let p = path.trim();
-  if (!p.startsWith("/")) p = `/${p}`;
-  return p;
+  return normalizeSitePath(path);
 }
 
 /** Absolute URL for a path on this deployment (social crawlers require absolute URLs). */
 export function absoluteUrlFromPath(path: string): string {
-  const p = normalizePath(path);
-  return new URL(p, `${getSeoPublicOrigin()}/`).toString();
+  return toAbsoluteCanonicalUrl(getSeoPublicOrigin(), path);
 }
 
 function resolveImageUrl(imagePath?: string): string {

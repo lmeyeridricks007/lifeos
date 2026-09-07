@@ -5,20 +5,20 @@ import {
 } from "@/src/data/cities/municipalityAppointmentLinks";
 
 export const REGISTERING_YOUR_ADDRESS_NETHERLANDS_PATH =
-  "/netherlands/practical-life/registering-your-address-netherlands/" as const;
+  "/netherlands/practical-life/registering-your-address-netherlands" as const;
 
-export const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands/" as const;
-export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands/" as const;
-export const BSN_NETHERLANDS_PATH = "/netherlands/practical-life/bsn-netherlands/" as const;
-export const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands/" as const;
-export const LOCAL_TAXES_NETHERLANDS_PATH = "/netherlands/practical-life/local-taxes-netherlands/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const REGISTER_ADDRESS_LEGACY_PATH = "/netherlands/register-address-netherlands/" as const;
-export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration/" as const;
-export const DIGID_AWARENESS_PATH = "/netherlands/digid-awareness/" as const;
-export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands/" as const;
-export const OPEN_BANK_ACCOUNT_PATH = "/netherlands/open-bank-account-netherlands/" as const;
-export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
+export const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands" as const;
+export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
+export const BSN_NETHERLANDS_PATH = "/netherlands/practical-life/bsn-netherlands" as const;
+export const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands" as const;
+export const LOCAL_TAXES_NETHERLANDS_PATH = "/netherlands/practical-life/local-taxes-netherlands" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const REGISTER_ADDRESS_LEGACY_PATH = "/netherlands/register-address-netherlands" as const;
+export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration" as const;
+export const DIGID_AWARENESS_PATH = "/netherlands/digid-awareness" as const;
+export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands" as const;
+export const OPEN_BANK_ACCOUNT_PATH = "/netherlands/open-bank-account-netherlands" as const;
+export const TAXES_HUB_PATH = "/netherlands/taxes" as const;
 
 export type PracticalLifeLink = {
   label: string;

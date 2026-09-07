@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -28,7 +29,7 @@ import { getRelocationCostMarketingRecommendedCards } from "@/src/lib/recommende
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/moving/tools/relocation-cost-estimator/";
+const canonical = "/netherlands/moving/tools/relocation-cost-estimator";
 
 export const metadata: Metadata = {
   title: "Relocation Cost Estimator: Calculate the Cost of Moving to the Netherlands",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
     title: "Relocation Cost Estimator: Calculate the Cost of Moving to the Netherlands",
     description:
       "Estimate how much it costs to move to the Netherlands. Calculate relocation, housing, setup and monthly living costs, then download your budget as a PDF.",
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
   },
   twitter: {
     card: "summary_large_image",

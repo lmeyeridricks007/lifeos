@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { GuidePageTemplate } from "@/components/page/page-templates";
@@ -19,7 +19,7 @@ import { MoneyTaxLearningPath } from "@/src/components/money/tax-cluster/MoneyTa
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const CANONICAL = "/netherlands/money/" as const;
+const CANONICAL = "/netherlands/money" as const;
 const META_TITLE = "Money in the Netherlands for Expats";
 const META_DESCRIPTION =
   "Start here for Dutch banking, taxes, and calculators: links to the banking hub, money tools, tax guides, and banking planning tools — editorial planning only.";
@@ -27,7 +27,7 @@ const META_DESCRIPTION =
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(CANONICAL)},
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 };
 
@@ -78,8 +78,8 @@ export default function NetherlandsMoneyHubPage() {
   const baseUrl = getSiteOrigin();
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Money", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands/") },
+    { name: "Money", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   return (
@@ -108,7 +108,7 @@ export default function NetherlandsMoneyHubPage() {
                   Use the banking hub for accounts and fees, the tax guides when payroll meets the return, and the tools hub when you want calculators in one place.
                 </p>
               }
-              shareUrl={new URL(CANONICAL, baseUrl).toString()}
+              shareUrl={absoluteUrlFromPath(CANONICAL)}
               pageId={CANONICAL}
             />
           </PillarGuideHeroRegion>

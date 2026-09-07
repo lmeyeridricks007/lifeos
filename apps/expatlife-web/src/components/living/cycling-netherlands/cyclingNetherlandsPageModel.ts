@@ -1,5 +1,6 @@
 import {
   BIKE_SHARING_NETHERLANDS_PATH,
+  BUYING_A_CAR_NETHERLANDS_PATH,
   CYCLING_NETHERLANDS_PATH,
   GETTING_AROUND_PATH,
   LIVING_HUB_PATH,
@@ -15,12 +16,14 @@ import {
   HIKING_NETHERLANDS_PATH,
   MUSEUMS_NETHERLANDS_PATH,
 } from "@/src/components/living/weekend-trips-netherlands/weekendTripsNetherlandsPageModel";
+import { GUIDE_CITABILITY_POLICY_LINKS } from "@/src/components/guides/guideCitabilityPolicyLinks";
 import { LIVING_TRANSPORT_APP_DOWNLOADS } from "@/src/components/living/livingTransportAppStoreLinks";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 /** Re-export cluster PATH constants from the OV-chipkaart lead model (single source of truth). */
 export {
   BIKE_SHARING_NETHERLANDS_PATH,
+  BUYING_A_CAR_NETHERLANDS_PATH,
   CYCLING_NETHERLANDS_PATH,
   GETTING_AROUND_PATH,
   LIVING_HUB_PATH,
@@ -64,6 +67,21 @@ export const cyclingNetherlandsPage = {
   parentGuidePath: GETTING_AROUND_PATH,
   publish: true,
   publishDate: scheduledPublishDateForPath(CYCLING_NETHERLANDS_PATH) ?? "2026-09-13",
+  lastReviewed: "7 September 2026",
+  heroOfficialSources: [
+    {
+      label: "Government.nl — traffic rules",
+      href: "https://www.government.nl/topics/mobility-public-transport-and-road-safety",
+    },
+    {
+      label: "Rijksoverheid — fiets",
+      href: "https://www.rijksoverheid.nl/onderwerpen/fiets",
+    },
+    {
+      label: "Fietsersbond",
+      href: "https://www.fietsersbond.nl/",
+    },
+  ],
   seo: {
     title: "Cycling in the Netherlands | Complete Guide for Expats",
     description:
@@ -852,9 +870,11 @@ export const cyclingNetherlandsPage = {
     "Contactless taps → OVpay.",
     "Personal travel card → OV-chipkaart.",
     "National rail → NS trains.",
+    "Considering a car instead? → Buying a car.",
     "Bus corridors → Regional buses.",
     "Indoor culture days → Museums.",
     "Quiet neighbourhood rides → Hidden gems.",
+    "How we work → Methodology / Sources / Editorial policy.",
   ],
   relatedGuides: [
     {
@@ -886,6 +906,12 @@ export const cyclingNetherlandsPage = {
       href: NS_TRAINS_NETHERLANDS_PATH,
       status: "live",
       description: "National rail — bike often feeds major stations.",
+    },
+    {
+      label: "Considering a car instead?",
+      href: BUYING_A_CAR_NETHERLANDS_PATH,
+      status: "live",
+      description: "Purchase and ownership orientation when bike + OV is not enough.",
     },
     {
       label: "Regional buses",
@@ -923,6 +949,7 @@ export const cyclingNetherlandsPage = {
       status: "live",
       description: "Lesser-known neighbourhood and small-town spots by bike.",
     },
+    ...GUIDE_CITABILITY_POLICY_LINKS,
   ] satisfies TransportLink[],
   transportHubTips: [
     "Cycling is the everyday bike guide in the Public Transport / active mobility continuation.",

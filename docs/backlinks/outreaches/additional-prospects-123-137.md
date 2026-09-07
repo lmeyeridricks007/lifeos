@@ -123,24 +123,26 @@ Lee
 |-------|--------|
 | **Start here** | [access-nl.org](https://www.access-nl.org/) |
 | **Reach via** | Programme / communications / volunteer content leads |
-| **Best path** | `/netherlands/after-arriving-netherlands/` |
-| **Why relevant** | ACCESS focuses on **settling in** and practical support; a post-arrival **“what to do first”** hub matches programme and FAQ needs. |
+| **Best path (primary)** | `/netherlands/official-figures/` |
+| **Best path (alt)** | `/netherlands/after-arriving-netherlands/` |
+| **Why relevant** | ACCESS focuses on **settling in** and practical support; a dated **official figures** citation table (HSM floors, IND fees, 30% norms, min wage, eigen risico) matches volunteer FAQ and handout needs. After-arrival hub remains a strong second asset. |
 | **Tier-1 FU2** | yes |
+| **Growth ticket** | EC-20260907-005 — soft outreach for official-figures; optional IamExpat Fair The Hague presence |
 
-**Initial — Subject:** Post-arrival checklist — possible resource for new arrivals  
+**Initial — Subject:** Dated Netherlands figures table — possible resource for ACCESS volunteers  
 
 Hi — I’m Lee. I’m originally from South Africa and moved to the Netherlands, where I muddled through BSN, insurance, and gemeente appointments without a clear map of the order of operations.
 
-We maintain a free **after arriving** hub that tries to spell out those first steps neutrally: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/
+We keep a free, dated **official figures** page aimed at newcomers and desks that need one citation surface (HSM salary floors, IND fees, 30% norms, minimum wage, eigen risico) with official source links: https://www.expatcopilot.com/netherlands/official-figures/
 
-If it’s ever helpful for volunteers, newsletters, or newcomer handouts, I’d love for ACCESS to use it. I’m not asking for anything in return.
+If it’s ever helpful for volunteers, newsletters, or newcomer handouts — especially around Prinsjesdag / Belastingplan updates — I’d love for ACCESS to use it. I’m not asking for anything in return.
 
 Warmly,  
 Lee
 
-**Follow-up #1 — Subject:** Following up — after-arrival guide for internationals  
+**Follow-up #1 — Subject:** Following up — official figures + after-arrival guide  
 
-Hello again — sharing the same link in case it got buried: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/. It’s meant as a practical companion for people overwhelmed in their first weeks.
+Hello again — sharing the figures table in case it got buried: https://www.expatcopilot.com/netherlands/official-figures/. We also maintain a practical **after arriving** hub: https://www.expatcopilot.com/netherlands/after-arriving-netherlands/.
 
 If there’s a better contact for programmes or communications, I’d be grateful for a pointer.
 
@@ -149,9 +151,16 @@ Lee
 
 **Follow-up #2 (final) — Subject:** Last note — happy to adapt if useful  
 
-Hi — last message from me. If a shorter PDF-style checklist would suit ACCESS better than a web page, I’m open to feedback. Either way, thank you for supporting internationals here.
+Hi — last message from me. If a shorter PDF-style checklist or a figures one-pager would suit ACCESS better than a web page, I’m open to feedback. Either way, thank you for supporting internationals here.
 
 Lee
+
+### Optional — IamExpat Fair The Hague (soft presence)
+
+- **Event:** IamExpat Fair The Hague (historically ACCESS-adjacent; 2026 listed around **7 November** at Grote Kerk — confirm on IamExpat / The Hague International Centre calendars).
+- **Ticket note (ops):** User brief flagged **free tickets available through 29 September 2026** — verify the live registration URL before relying on that cutoff; treat presence as **optional**, not a commitment.
+- **If attending:** Soft intro only — offer the official-figures URL as a volunteer/desk handout; no hard sell; align with ACCESS soft tone above.
+- **If not attending:** Email sequence alone is enough for EC-20260907-005.
 
 ---
 

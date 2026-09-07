@@ -3,12 +3,12 @@ import { getActiveNavKey, MEGA_MENUS } from "./config";
 import { getRouteStatus } from "@/src/lib/routes/routeStatus";
 import { isNavItemActive, isNavItemLinkable } from "./navItemModel";
 
-const HOLIDAY_PATH = "/netherlands/jobs/holiday-allowance-netherlands/";
-const FINDING_JOBS_PATH = "/netherlands/jobs/finding-jobs-netherlands/";
-const EMPLOYMENT_CONTRACT_PATH = "/netherlands/jobs/employment-contract-netherlands/";
-const BONUS_TAX_PATH = "/netherlands/taxes/bonus-tax-netherlands/";
-const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers/";
-const UTILITIES_PATH = "/netherlands/utilities/utilities-netherlands/";
+const HOLIDAY_PATH = "/netherlands/jobs/holiday-allowance-netherlands";
+const FINDING_JOBS_PATH = "/netherlands/jobs/finding-jobs-netherlands";
+const EMPLOYMENT_CONTRACT_PATH = "/netherlands/jobs/employment-contract-netherlands";
+const BONUS_TAX_PATH = "/netherlands/taxes/bonus-tax-netherlands";
+const INSURANCE_PROVIDERS_PATH = "/netherlands/services/insurance-providers";
+const UTILITIES_PATH = "/netherlands/utilities/utilities-netherlands";
 
 function menuRowsForHref(href: string) {
   return Object.entries(MEGA_MENUS).flatMap(([menuKey, menu]) =>
@@ -42,8 +42,8 @@ describe("insurance providers nav active state", () => {
 });
 
 describe("energy and water nav active state", () => {
-  const ENERGY_WATER_PATH = "/netherlands/utilities/energy-and-water-netherlands/";
-  const UTILITIES_HUB_PATH = "/netherlands/utilities/";
+  const ENERGY_WATER_PATH = "/netherlands/utilities/energy-and-water-netherlands";
+  const UTILITIES_HUB_PATH = "/netherlands/utilities";
 
   it("treats the energy and water guide route as live", () => {
     expect(getRouteStatus(ENERGY_WATER_PATH)).toBe("live");
@@ -104,8 +104,8 @@ describe("energy and water nav active state", () => {
 });
 
 describe("internet and mobile nav active state", () => {
-  const INTERNET_MOBILE_PATH = "/netherlands/utilities/internet-and-mobile-netherlands/";
-  const UTILITIES_HUB_PATH = "/netherlands/utilities/";
+  const INTERNET_MOBILE_PATH = "/netherlands/utilities/internet-and-mobile-netherlands";
+  const UTILITIES_HUB_PATH = "/netherlands/utilities";
 
   it("treats the internet and mobile guide route as live", () => {
     expect(getRouteStatus(INTERNET_MOBILE_PATH)).toBe("live");
@@ -166,7 +166,7 @@ describe("internet and mobile nav active state", () => {
 });
 
 describe("municipality services nav active state", () => {
-  const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands/";
+  const MUNICIPALITY_SERVICES_PATH = "/netherlands/practical-life/municipality-services-netherlands";
 
   it("treats the municipality services guide route as live", () => {
     expect(getRouteStatus(MUNICIPALITY_SERVICES_PATH)).toBe("live");
@@ -209,7 +209,7 @@ describe("municipality services nav active state", () => {
 });
 
 describe("address registration nav active state", () => {
-  const ADDRESS_REGISTRATION_PATH = "/netherlands/practical-life/registering-your-address-netherlands/";
+  const ADDRESS_REGISTRATION_PATH = "/netherlands/practical-life/registering-your-address-netherlands";
 
   it("treats the address registration guide route as live", () => {
     expect(getRouteStatus(ADDRESS_REGISTRATION_PATH)).toBe("live");
@@ -269,7 +269,7 @@ describe("address registration nav active state", () => {
 });
 
 describe("waste and recycling nav active state", () => {
-  const WASTE_RECYCLING_PATH = "/netherlands/practical-life/waste-and-recycling-netherlands/";
+  const WASTE_RECYCLING_PATH = "/netherlands/practical-life/waste-and-recycling-netherlands";
 
   it("treats the waste and recycling guide route as live", () => {
     expect(getRouteStatus(WASTE_RECYCLING_PATH)).toBe("live");
@@ -326,7 +326,7 @@ describe("waste and recycling nav active state", () => {
 });
 
 describe("parking and local permits nav active state", () => {
-  const PARKING_PATH = "/netherlands/practical-life/parking-and-local-permits-netherlands/";
+  const PARKING_PATH = "/netherlands/practical-life/parking-and-local-permits-netherlands";
 
   it("treats the parking guide route as live", () => {
     expect(getRouteStatus(PARKING_PATH)).toBe("live");
@@ -370,7 +370,7 @@ describe("parking and local permits nav active state", () => {
 });
 
 describe("privacy and safety basics nav active state", () => {
-  const PRIVACY_SAFETY_PATH = "/netherlands/practical-life/privacy-and-safety-basics-netherlands/";
+  const PRIVACY_SAFETY_PATH = "/netherlands/practical-life/privacy-and-safety-basics-netherlands";
 
   it("treats the privacy and safety guide route as live", () => {
     expect(getRouteStatus(PRIVACY_SAFETY_PATH)).toBe("live");
@@ -429,7 +429,7 @@ describe("privacy and safety basics nav active state", () => {
 });
 
 describe("subscriptions and cancellations nav active state", () => {
-  const SUBSCRIPTIONS_PATH = "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/";
+  const SUBSCRIPTIONS_PATH = "/netherlands/practical-life/subscriptions-and-cancellations-netherlands";
 
   it("treats the subscriptions guide route as live", () => {
     expect(getRouteStatus(SUBSCRIPTIONS_PATH)).toBe("live");
@@ -488,7 +488,7 @@ describe("subscriptions and cancellations nav active state", () => {
 });
 
 describe("community basics nav active state", () => {
-  const COMMUNITY_BASICS_PATH = "/netherlands/life/community-basics-netherlands/";
+  const COMMUNITY_BASICS_PATH = "/netherlands/life/community-basics-netherlands";
 
   it("treats the community basics guide route as live", () => {
     expect(getRouteStatus(COMMUNITY_BASICS_PATH)).toBe("live");
@@ -528,8 +528,8 @@ describe("community basics nav active state", () => {
 });
 
 describe("digid netherlands nav active state", () => {
-  const DIGID_AWARENESS_PATH = "/netherlands/digid-awareness/";
-  const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands/";
+  const DIGID_AWARENESS_PATH = "/netherlands/digid-awareness";
+  const DIGID_NETHERLANDS_PATH = "/netherlands/practical-life/digid-netherlands";
 
   it("treats the canonical DigiD awareness guide as live", () => {
     expect(getRouteStatus(DIGID_AWARENESS_PATH)).toBe("live");
@@ -602,8 +602,8 @@ describe("digid netherlands nav active state", () => {
 });
 
 describe("government portals netherlands nav active state", () => {
-  const GOVERNMENT_PORTALS_PATH = "/netherlands/practical-life/government-portals-netherlands/";
-  const GOVERNMENT_SERVICES_HUB_PATH = "/netherlands/government-services/";
+  const GOVERNMENT_PORTALS_PATH = "/netherlands/practical-life/government-portals-netherlands";
+  const GOVERNMENT_SERVICES_HUB_PATH = "/netherlands/government-services";
 
   it("treats the government portals guide route as live", () => {
     expect(getRouteStatus(GOVERNMENT_PORTALS_PATH)).toBe("live");
@@ -767,7 +767,7 @@ describe("finding jobs nav active state", () => {
 });
 
 describe("CV Netherlands nav active state", () => {
-  const CV_NETHERLANDS_PATH = "/netherlands/jobs/cv-netherlands/";
+  const CV_NETHERLANDS_PATH = "/netherlands/jobs/cv-netherlands";
 
   it("treats the CV Netherlands guide route as live in local/preview", () => {
     expect(getRouteStatus(CV_NETHERLANDS_PATH)).toBe("live");
@@ -830,7 +830,7 @@ describe("CV Netherlands nav active state", () => {
 });
 
 describe("Interview tips Netherlands nav active state", () => {
-  const INTERVIEW_TIPS_PATH = "/netherlands/jobs/interview-tips-netherlands/";
+  const INTERVIEW_TIPS_PATH = "/netherlands/jobs/interview-tips-netherlands";
 
   it("treats the Interview tips guide route as live in local/preview", () => {
     expect(getRouteStatus(INTERVIEW_TIPS_PATH)).toBe("live");
@@ -899,7 +899,7 @@ describe("Interview tips Netherlands nav active state", () => {
 });
 
 describe("Cover letter Netherlands nav active state", () => {
-  const COVER_LETTER_PATH = "/netherlands/jobs/cover-letter-netherlands/";
+  const COVER_LETTER_PATH = "/netherlands/jobs/cover-letter-netherlands";
 
   it("treats the Cover letter guide route as live in local/preview", () => {
     expect(getRouteStatus(COVER_LETTER_PATH)).toBe("live");
@@ -966,7 +966,7 @@ describe("Cover letter Netherlands nav active state", () => {
 });
 
 describe("LinkedIn Netherlands nav active state", () => {
-  const LINKEDIN_PATH = "/netherlands/jobs/linkedin-netherlands/";
+  const LINKEDIN_PATH = "/netherlands/jobs/linkedin-netherlands";
 
   it("treats the LinkedIn guide route as live in local/preview", () => {
     expect(getRouteStatus(LINKEDIN_PATH)).toBe("live");
@@ -1040,7 +1040,7 @@ describe("LinkedIn Netherlands nav active state", () => {
 });
 
 describe("Networking Netherlands nav active state", () => {
-  const NETWORKING_PATH = "/netherlands/jobs/networking-netherlands/";
+  const NETWORKING_PATH = "/netherlands/jobs/networking-netherlands";
 
   it("treats the Networking guide route as live in local/preview", () => {
     expect(getRouteStatus(NETWORKING_PATH)).toBe("live");
@@ -1105,7 +1105,7 @@ describe("Networking Netherlands nav active state", () => {
 });
 
 describe("Recruitment agencies Netherlands nav active state", () => {
-  const RECRUITMENT_PATH = "/netherlands/jobs/recruitment-agencies-netherlands/";
+  const RECRUITMENT_PATH = "/netherlands/jobs/recruitment-agencies-netherlands";
 
   it("treats the Recruitment agencies guide route as live in local/preview", () => {
     expect(getRouteStatus(RECRUITMENT_PATH)).toBe("live");
@@ -1143,7 +1143,7 @@ describe("Recruitment agencies Netherlands nav active state", () => {
 });
 
 describe("English speaking jobs Netherlands nav active state", () => {
-  const ENGLISH_PATH = "/netherlands/jobs/english-speaking-jobs-netherlands/";
+  const ENGLISH_PATH = "/netherlands/jobs/english-speaking-jobs-netherlands";
 
   it("treats the English speaking jobs guide route as live in local/preview", () => {
     expect(getRouteStatus(ENGLISH_PATH)).toBe("live");
@@ -1163,7 +1163,7 @@ describe("English speaking jobs Netherlands nav active state", () => {
 });
 
 describe("Remote work Netherlands nav active state", () => {
-  const REMOTE_PATH = "/netherlands/jobs/remote-work-netherlands/";
+  const REMOTE_PATH = "/netherlands/jobs/remote-work-netherlands";
 
   it("treats the Remote work guide route as live in local/preview", () => {
     expect(getRouteStatus(REMOTE_PATH)).toBe("live");
@@ -1247,7 +1247,7 @@ describe("employment contract nav active state", () => {
 });
 
 describe("probation period nav active state", () => {
-  const PROBATION_PATH = "/netherlands/jobs/probation-period-netherlands/";
+  const PROBATION_PATH = "/netherlands/jobs/probation-period-netherlands";
 
   it("treats the shipped probation period guide route as live", () => {
     expect(getRouteStatus(PROBATION_PATH)).toBe("live");
@@ -1311,7 +1311,7 @@ describe("probation period nav active state", () => {
 });
 
 describe("notice period nav active state", () => {
-  const NOTICE_PATH = "/netherlands/jobs/notice-period-netherlands/";
+  const NOTICE_PATH = "/netherlands/jobs/notice-period-netherlands";
 
   it("treats the shipped notice period guide route as live", () => {
     expect(getRouteStatus(NOTICE_PATH)).toBe("live");
@@ -1375,7 +1375,7 @@ describe("notice period nav active state", () => {
 });
 
 describe("employee rights nav active state", () => {
-  const RIGHTS_PATH = "/netherlands/jobs/employee-rights-netherlands/";
+  const RIGHTS_PATH = "/netherlands/jobs/employee-rights-netherlands";
 
   it("treats the shipped employee rights guide route as live", () => {
     expect(getRouteStatus(RIGHTS_PATH)).toBe("live");
@@ -1430,7 +1430,7 @@ describe("employee rights nav active state", () => {
 });
 
 describe("dutch workplace culture nav active state", () => {
-  const WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-culture/";
+  const WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-culture";
 
   it("treats the shipped workplace culture guide route as live", () => {
     expect(getRouteStatus(WORKPLACE_CULTURE_PATH)).toBe("live");
@@ -1485,7 +1485,7 @@ describe("dutch workplace culture nav active state", () => {
 });
 
 describe("dutch directness at work nav active state", () => {
-  const DIRECTNESS_PATH = "/netherlands/jobs/dutch-directness-at-work/";
+  const DIRECTNESS_PATH = "/netherlands/jobs/dutch-directness-at-work";
 
   it("treats the shipped directness guide route as live", () => {
     expect(getRouteStatus(DIRECTNESS_PATH)).toBe("live");
@@ -1535,7 +1535,7 @@ describe("dutch directness at work nav active state", () => {
 });
 
 describe("dutch social norms nav active state", () => {
-  const SOCIAL_NORMS_PATH = "/netherlands/life/dutch-social-norms/";
+  const SOCIAL_NORMS_PATH = "/netherlands/life/dutch-social-norms";
 
   it("treats the shipped social norms guide route as live", () => {
     expect(getRouteStatus(SOCIAL_NORMS_PATH)).toBe("live");
@@ -1585,7 +1585,7 @@ describe("dutch social norms nav active state", () => {
 });
 
 describe("dating in the netherlands nav active state", () => {
-  const DATING_PATH = "/netherlands/life/dating-in-the-netherlands/";
+  const DATING_PATH = "/netherlands/life/dating-in-the-netherlands";
 
   it("treats the shipped dating guide route as live", () => {
     expect(getRouteStatus(DATING_PATH)).toBe("live");
@@ -1642,7 +1642,7 @@ describe("dating in the netherlands nav active state", () => {
 });
 
 describe("making dutch friends nav active state", () => {
-  const MAKING_DUTCH_FRIENDS_PATH = "/netherlands/life/making-dutch-friends/";
+  const MAKING_DUTCH_FRIENDS_PATH = "/netherlands/life/making-dutch-friends";
 
   it("treats the shipped making dutch friends guide route as live", () => {
     expect(getRouteStatus(MAKING_DUTCH_FRIENDS_PATH)).toBe("live");
@@ -1717,7 +1717,7 @@ describe("making dutch friends nav active state", () => {
 });
 
 describe("dutch holidays and traditions nav active state", () => {
-  const HOLIDAYS_PATH = "/netherlands/life/dutch-holidays-and-traditions/";
+  const HOLIDAYS_PATH = "/netherlands/life/dutch-holidays-and-traditions";
 
   it("treats the shipped holidays guide route as live", () => {
     expect(getRouteStatus(HOLIDAYS_PATH)).toBe("live");
@@ -1763,7 +1763,7 @@ describe("dutch holidays and traditions nav active state", () => {
 });
 
 describe("dutch birthday traditions nav active state", () => {
-  const BIRTHDAY_PATH = "/netherlands/life/dutch-birthday-traditions/";
+  const BIRTHDAY_PATH = "/netherlands/life/dutch-birthday-traditions";
 
   it("treats the shipped birthday traditions guide route as live", () => {
     expect(getRouteStatus(BIRTHDAY_PATH)).toBe("live");
@@ -1809,7 +1809,7 @@ describe("dutch birthday traditions nav active state", () => {
 });
 
 describe("dutch etiquette nav active state", () => {
-  const ETIQUETTE_PATH = "/netherlands/life/dutch-etiquette/";
+  const ETIQUETTE_PATH = "/netherlands/life/dutch-etiquette";
 
   it("treats the shipped dutch etiquette guide route as live", () => {
     expect(getRouteStatus(ETIQUETTE_PATH)).toBe("live");
@@ -1859,7 +1859,7 @@ describe("dutch etiquette nav active state", () => {
 });
 
 describe("dutch humour nav active state", () => {
-  const HUMOUR_PATH = "/netherlands/life/dutch-humour/";
+  const HUMOUR_PATH = "/netherlands/life/dutch-humour";
 
   it("treats the shipped dutch humour guide route as live", () => {
     expect(getRouteStatus(HUMOUR_PATH)).toBe("live");
@@ -1909,7 +1909,7 @@ describe("dutch humour nav active state", () => {
 });
 
 describe("dutch culture nav active state", () => {
-  const CULTURE_PATH = "/netherlands/life/dutch-culture/";
+  const CULTURE_PATH = "/netherlands/life/dutch-culture";
 
   it("treats the shipped culture hub route as live", () => {
     expect(getRouteStatus(CULTURE_PATH)).toBe("live");
@@ -1960,7 +1960,7 @@ describe("dutch culture nav active state", () => {
 });
 
 describe("zzp nav active state", () => {
-  const ZZP_PATH = "/netherlands/business/zzp-netherlands/";
+  const ZZP_PATH = "/netherlands/business/zzp-netherlands";
 
   it("treats the shipped zzp guide route as live", () => {
     expect(getRouteStatus(ZZP_PATH)).toBe("live");
@@ -2015,7 +2015,7 @@ describe("zzp nav active state", () => {
 });
 
 describe("freelancing nav active state", () => {
-  const FREELANCING_PATH = "/netherlands/jobs/freelancing-netherlands/";
+  const FREELANCING_PATH = "/netherlands/jobs/freelancing-netherlands";
 
   it("treats the shipped freelancing guide route as live", () => {
     expect(getRouteStatus(FREELANCING_PATH)).toBe("live");
@@ -2070,7 +2070,7 @@ describe("freelancing nav active state", () => {
 });
 
 describe("starting consultancy nav active state", () => {
-  const STARTING_CONSULTANCY_PATH = "/netherlands/jobs/starting-consultancy-netherlands/";
+  const STARTING_CONSULTANCY_PATH = "/netherlands/jobs/starting-consultancy-netherlands";
 
   it("treats the starting consultancy guide route as live in local/preview", () => {
     expect(getRouteStatus(STARTING_CONSULTANCY_PATH)).toBe("live");
@@ -2135,7 +2135,7 @@ describe("starting consultancy nav active state", () => {
 });
 
 describe("contractor vs employee nav active state", () => {
-  const CONTRACTOR_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands/";
+  const CONTRACTOR_PATH = "/netherlands/jobs/contractor-vs-employee-netherlands";
 
   it("treats the shipped contractor vs employee guide route as live", () => {
     expect(getRouteStatus(CONTRACTOR_PATH)).toBe("live");
@@ -2202,7 +2202,7 @@ describe("contractor vs employee nav active state", () => {
 });
 
 describe("starting a business nav active state", () => {
-  const STARTING_BUSINESS_PATH = "/netherlands/business/starting-a-business-netherlands/";
+  const STARTING_BUSINESS_PATH = "/netherlands/business/starting-a-business-netherlands";
 
   it("treats the shipped starting a business guide route as live", () => {
     expect(getRouteStatus(STARTING_BUSINESS_PATH)).toBe("live");
@@ -2301,7 +2301,7 @@ describe("bonus tax nav active state", () => {
 });
 
 describe("healthcare allowance nav active state", () => {
-  const HEALTHCARE_PATH = "/netherlands/taxes/healthcare-allowance-netherlands/";
+  const HEALTHCARE_PATH = "/netherlands/taxes/healthcare-allowance-netherlands";
 
   it("highlights Move for the taxes guide path in Move → More", () => {
     expect(getActiveNavKey(HEALTHCARE_PATH)).toBe("moving");
@@ -2345,7 +2345,7 @@ describe("healthcare allowance nav active state", () => {
 });
 
 describe("rent allowance nav active state", () => {
-  const RENT_PATH = "/netherlands/taxes/rent-allowance-netherlands/";
+  const RENT_PATH = "/netherlands/taxes/rent-allowance-netherlands";
 
   it("highlights Living for the housing guide path in Living → Housing", () => {
     expect(getActiveNavKey(RENT_PATH)).toBe("living");
@@ -2384,7 +2384,7 @@ describe("rent allowance nav active state", () => {
 });
 
 describe("navItemModel — childcare allowance guide", () => {
-  const CHILDCARE_PATH = "/netherlands/taxes/childcare-allowance-netherlands/";
+  const CHILDCARE_PATH = "/netherlands/taxes/childcare-allowance-netherlands";
 
   it("highlights Move for the taxes guide path in Move → More", () => {
     expect(getActiveNavKey(CHILDCARE_PATH)).toBe("moving");
@@ -2432,7 +2432,7 @@ describe("navItemModel — childcare allowance guide", () => {
 });
 
 describe("housing hub nav active state", () => {
-  const HOUSING_HUB_PATH = "/netherlands/housing/";
+  const HOUSING_HUB_PATH = "/netherlands/housing";
 
   it("treats the housing hub route as live", () => {
     expect(getRouteStatus(HOUSING_HUB_PATH)).toBe("live");
@@ -2492,7 +2492,7 @@ describe("housing hub nav active state", () => {
 });
 
 describe("buying a house nav active state", () => {
-  const BUYING_PATH = "/netherlands/housing/buying-a-house-netherlands/";
+  const BUYING_PATH = "/netherlands/housing/buying-a-house-netherlands";
 
   it("treats the shipped buying guide route as live", () => {
     expect(getRouteStatus(BUYING_PATH)).toBe("live");
@@ -2537,7 +2537,7 @@ describe("buying a house nav active state", () => {
 });
 
 describe("housing costs nav active state", () => {
-  const HOUSING_COSTS_PATH = "/netherlands/housing/housing-costs-netherlands/";
+  const HOUSING_COSTS_PATH = "/netherlands/housing/housing-costs-netherlands";
 
   it("treats the housing costs guide route as live", () => {
     expect(getRouteStatus(HOUSING_COSTS_PATH)).toBe("live");
@@ -2594,7 +2594,7 @@ describe("housing costs nav active state", () => {
 });
 
 describe("rental contracts and deposits nav active state", () => {
-  const RENTAL_CONTRACTS_PATH = "/netherlands/housing/rental-contracts-and-deposits-netherlands/";
+  const RENTAL_CONTRACTS_PATH = "/netherlands/housing/rental-contracts-and-deposits-netherlands";
 
   it("treats the rental contracts guide route as live", () => {
     expect(getRouteStatus(RENTAL_CONTRACTS_PATH)).toBe("live");
@@ -2653,7 +2653,7 @@ describe("rental contracts and deposits nav active state", () => {
 });
 
 describe("mortgages for expats nav active state", () => {
-  const MORTGAGE_PATH = "/netherlands/housing/mortgages-netherlands-expats/";
+  const MORTGAGE_PATH = "/netherlands/housing/mortgages-netherlands-expats";
 
   it("treats the shipped mortgage guide route as live", () => {
     expect(getRouteStatus(MORTGAGE_PATH)).toBe("live");
@@ -2706,7 +2706,7 @@ describe("mortgages for expats nav active state", () => {
 });
 
 describe("property tax nav active state", () => {
-  const PROPERTY_TAX_PATH = "/netherlands/taxes/property-tax-netherlands/";
+  const PROPERTY_TAX_PATH = "/netherlands/taxes/property-tax-netherlands";
 
   it("treats the shipped property tax guide route as live", () => {
     expect(getRouteStatus(PROPERTY_TAX_PATH)).toBe("live");
@@ -2759,7 +2759,7 @@ describe("property tax nav active state", () => {
 });
 
 describe("buy vs rent nav active state", () => {
-  const BUY_VS_RENT_PATH = "/netherlands/housing/buy-vs-rent-netherlands/";
+  const BUY_VS_RENT_PATH = "/netherlands/housing/buy-vs-rent-netherlands";
 
   it("treats the shipped buy vs rent guide route as live", () => {
     expect(getRouteStatus(BUY_VS_RENT_PATH)).toBe("live");
@@ -2799,7 +2799,7 @@ describe("buy vs rent nav active state", () => {
 });
 
 describe("double taxation nav active state", () => {
-  const DOUBLE_TAXATION_PATH = "/netherlands/taxes/double-taxation-netherlands/";
+  const DOUBLE_TAXATION_PATH = "/netherlands/taxes/double-taxation-netherlands";
 
   it("treats the shipped double taxation guide route as live", () => {
     expect(getRouteStatus(DOUBLE_TAXATION_PATH)).toBe("live");
@@ -2839,7 +2839,7 @@ describe("double taxation nav active state", () => {
 });
 
 describe("foreign income nav active state", () => {
-  const FOREIGN_INCOME_PATH = "/netherlands/taxes/foreign-income-netherlands/";
+  const FOREIGN_INCOME_PATH = "/netherlands/taxes/foreign-income-netherlands";
 
   it("treats the shipped foreign income guide route as live", () => {
     expect(getRouteStatus(FOREIGN_INCOME_PATH)).toBe("live");
@@ -2870,7 +2870,7 @@ describe("foreign income nav active state", () => {
 });
 
 describe("taxes after moving nav active state", () => {
-  const TAXES_AFTER_MOVING_PATH = "/netherlands/taxes/taxes-after-moving-netherlands/";
+  const TAXES_AFTER_MOVING_PATH = "/netherlands/taxes/taxes-after-moving-netherlands";
 
   it("treats the shipped taxes after moving guide route as live", () => {
     expect(getRouteStatus(TAXES_AFTER_MOVING_PATH)).toBe("live");
@@ -2901,7 +2901,7 @@ describe("taxes after moving nav active state", () => {
 });
 
 describe("leaving Netherlands tax nav active state", () => {
-  const LEAVING_NETHERLANDS_TAX_PATH = "/netherlands/taxes/leaving-netherlands-tax/";
+  const LEAVING_NETHERLANDS_TAX_PATH = "/netherlands/taxes/leaving-netherlands-tax";
 
   it("treats the shipped leaving tax guide route as live", () => {
     expect(getRouteStatus(LEAVING_NETHERLANDS_TAX_PATH)).toBe("live");
@@ -2932,7 +2932,7 @@ describe("leaving Netherlands tax nav active state", () => {
 });
 
 describe("leaving Netherlands journey nav active state", () => {
-  const LEAVING_NL_JOURNEY_PATH = "/netherlands/leaving/";
+  const LEAVING_NL_JOURNEY_PATH = "/netherlands/leaving";
 
   it("treats the shipped leaving journey guide route as live", () => {
     expect(getRouteStatus(LEAVING_NL_JOURNEY_PATH)).toBe("live");
@@ -2963,7 +2963,7 @@ describe("leaving Netherlands journey nav active state", () => {
 });
 
 describe("mortgage advisors service nav active state", () => {
-  const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors/";
+  const MORTGAGE_ADVISORS_PATH = "/netherlands/services/mortgage-advisors";
 
   it("treats the shipped mortgage advisors service route as live", () => {
     expect(getRouteStatus(MORTGAGE_ADVISORS_PATH)).toBe("live");
@@ -2994,8 +2994,8 @@ describe("mortgage advisors service nav active state", () => {
 });
 
 describe("amsterdam vs rotterdam nav active state", () => {
-  const AMSTERDAM_VS_ROTTERDAM_PATH = "/netherlands/cities/amsterdam-vs-rotterdam/";
-  const CITIES_COMPARE_PATH = "/netherlands/cities/compare/";
+  const AMSTERDAM_VS_ROTTERDAM_PATH = "/netherlands/cities/amsterdam-vs-rotterdam";
+  const CITIES_COMPARE_PATH = "/netherlands/cities/compare";
 
   it("treats the shipped comparison guide route as live", () => {
     expect(getRouteStatus(AMSTERDAM_VS_ROTTERDAM_PATH)).toBe("live");
@@ -3025,7 +3025,7 @@ describe("amsterdam vs rotterdam nav active state", () => {
 });
 
 describe("financial advisors service nav active state", () => {
-  const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors/";
+  const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors";
 
   it("treats the shipped financial advisors service route as live", () => {
     expect(getRouteStatus(FINANCIAL_ADVISORS_PATH)).toBe("live");
@@ -3056,7 +3056,7 @@ describe("financial advisors service nav active state", () => {
 });
 
 describe("recruitment agencies services directory nav active state", () => {
-  const RECRUITMENT_SERVICES_PATH = "/netherlands/services/recruitment-agencies/";
+  const RECRUITMENT_SERVICES_PATH = "/netherlands/services/recruitment-agencies";
 
   it("treats the recruitment agencies services route as live in local/preview", () => {
     expect(getRouteStatus(RECRUITMENT_SERVICES_PATH)).toBe("live");
@@ -3087,7 +3087,7 @@ describe("recruitment agencies services directory nav active state", () => {
 });
 
 describe("moving companies services directory nav active state", () => {
-  const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies/";
+  const MOVING_COMPANIES_PATH = "/netherlands/services/moving-companies";
 
   it("treats the moving companies services route as live in local/preview", () => {
     expect(getRouteStatus(MOVING_COMPANIES_PATH)).toBe("live");
@@ -3118,7 +3118,7 @@ describe("moving companies services directory nav active state", () => {
 });
 
 describe("removal companies services directory nav active state", () => {
-  const REMOVAL_COMPANIES_PATH = "/netherlands/services/removal-companies/";
+  const REMOVAL_COMPANIES_PATH = "/netherlands/services/removal-companies";
 
   it("treats the removal companies services route as live in local/preview", () => {
     expect(getRouteStatus(REMOVAL_COMPANIES_PATH)).toBe("live");
@@ -3149,7 +3149,7 @@ describe("removal companies services directory nav active state", () => {
 });
 
 describe("storage companies services directory nav active state", () => {
-  const STORAGE_COMPANIES_PATH = "/netherlands/services/storage-companies/";
+  const STORAGE_COMPANIES_PATH = "/netherlands/services/storage-companies";
 
   it("treats the storage companies services route as live in local/preview", () => {
     expect(getRouteStatus(STORAGE_COMPANIES_PATH)).toBe("live");
@@ -3180,7 +3180,7 @@ describe("storage companies services directory nav active state", () => {
 });
 
 describe("pet relocation companies services directory nav active state", () => {
-  const PET_RELOCATION_COMPANIES_PATH = "/netherlands/services/pet-relocation-companies/";
+  const PET_RELOCATION_COMPANIES_PATH = "/netherlands/services/pet-relocation-companies";
 
   it("treats the pet relocation companies services route as live in local/preview", () => {
     expect(getRouteStatus(PET_RELOCATION_COMPANIES_PATH)).toBe("live");
@@ -3211,7 +3211,7 @@ describe("pet relocation companies services directory nav active state", () => {
 });
 
 describe("cleaning companies services directory nav active state", () => {
-  const CLEANING_COMPANIES_PATH = "/netherlands/services/cleaning-companies/";
+  const CLEANING_COMPANIES_PATH = "/netherlands/services/cleaning-companies";
 
   it("treats the cleaning companies services route as live in local/preview", () => {
     expect(getRouteStatus(CLEANING_COMPANIES_PATH)).toBe("live");
@@ -3242,7 +3242,7 @@ describe("cleaning companies services directory nav active state", () => {
 });
 
 describe("handymen services directory nav active state", () => {
-  const HANDYMEN_PATH = "/netherlands/services/handymen/";
+  const HANDYMEN_PATH = "/netherlands/services/handymen";
 
   it("treats the handymen services route as live in local/preview", () => {
     expect(getRouteStatus(HANDYMEN_PATH)).toBe("live");
@@ -3273,7 +3273,7 @@ describe("handymen services directory nav active state", () => {
 });
 
 describe("estate agents services directory nav active state", () => {
-  const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents/";
+  const ESTATE_AGENTS_PATH = "/netherlands/services/estate-agents";
 
   it("treats the estate agents services route as live in local/preview", () => {
     expect(getRouteStatus(ESTATE_AGENTS_PATH)).toBe("live");
@@ -3304,7 +3304,7 @@ describe("estate agents services directory nav active state", () => {
 });
 
 describe("notaries services directory nav active state", () => {
-  const NOTARIES_PATH = "/netherlands/services/notaries/";
+  const NOTARIES_PATH = "/netherlands/services/notaries";
 
   it("treats the notaries services route as live in local/preview", () => {
     expect(getRouteStatus(NOTARIES_PATH)).toBe("live");
@@ -3335,7 +3335,7 @@ describe("notaries services directory nav active state", () => {
 });
 
 describe("insurance brokers services directory nav active state", () => {
-  const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers/";
+  const INSURANCE_BROKERS_PATH = "/netherlands/services/insurance-brokers";
 
   it("treats the insurance brokers services route as live in local/preview", () => {
     expect(getRouteStatus(INSURANCE_BROKERS_PATH)).toBe("live");
@@ -3366,7 +3366,7 @@ describe("insurance brokers services directory nav active state", () => {
 });
 
 describe("accountants services directory nav active state", () => {
-  const ACCOUNTANTS_PATH = "/netherlands/services/accountants/";
+  const ACCOUNTANTS_PATH = "/netherlands/services/accountants";
 
   it("treats the accountants services route as live in local/preview", () => {
     expect(getRouteStatus(ACCOUNTANTS_PATH)).toBe("live");
@@ -3397,7 +3397,7 @@ describe("accountants services directory nav active state", () => {
 });
 
 describe("business consultants services directory nav active state", () => {
-  const BUSINESS_CONSULTANTS_PATH = "/netherlands/services/business-consultants/";
+  const BUSINESS_CONSULTANTS_PATH = "/netherlands/services/business-consultants";
 
   it("treats the business consultants services route as live in local/preview", () => {
     expect(getRouteStatus(BUSINESS_CONSULTANTS_PATH)).toBe("live");
@@ -3436,7 +3436,7 @@ describe("business consultants services directory nav active state", () => {
 });
 
 describe("internet providers services directory nav active state", () => {
-  const INTERNET_PROVIDERS_PATH = "/netherlands/services/internet-providers/";
+  const INTERNET_PROVIDERS_PATH = "/netherlands/services/internet-providers";
 
   it("treats the internet providers services route as live in local/preview", () => {
     expect(getRouteStatus(INTERNET_PROVIDERS_PATH)).toBe("live");
@@ -3467,7 +3467,7 @@ describe("internet providers services directory nav active state", () => {
 });
 
 describe("energy providers services directory nav active state", () => {
-  const ENERGY_PROVIDERS_PATH = "/netherlands/services/energy-providers/";
+  const ENERGY_PROVIDERS_PATH = "/netherlands/services/energy-providers";
 
   it("treats the energy providers services route as live in local/preview", () => {
     expect(getRouteStatus(ENERGY_PROVIDERS_PATH)).toBe("live");
@@ -3498,7 +3498,7 @@ describe("energy providers services directory nav active state", () => {
 });
 
 describe("phone providers services directory nav active state", () => {
-  const PHONE_PROVIDERS_PATH = "/netherlands/services/phone-providers/";
+  const PHONE_PROVIDERS_PATH = "/netherlands/services/phone-providers";
 
   it("treats the phone providers services route as live in local/preview", () => {
     expect(getRouteStatus(PHONE_PROVIDERS_PATH)).toBe("live");
@@ -3529,7 +3529,7 @@ describe("phone providers services directory nav active state", () => {
 });
 
 describe("international schools services directory nav active state", () => {
-  const INTERNATIONAL_SCHOOLS_SERVICES_PATH = "/netherlands/services/international-schools/";
+  const INTERNATIONAL_SCHOOLS_SERVICES_PATH = "/netherlands/services/international-schools";
 
   it("treats the international schools services route as live in local/preview", () => {
     expect(getRouteStatus(INTERNATIONAL_SCHOOLS_SERVICES_PATH)).toBe("live");
@@ -3560,7 +3560,7 @@ describe("international schools services directory nav active state", () => {
 });
 
 describe("daycare providers services directory nav active state", () => {
-  const DAYCARE_PROVIDERS_SERVICES_PATH = "/netherlands/services/daycare-providers/";
+  const DAYCARE_PROVIDERS_SERVICES_PATH = "/netherlands/services/daycare-providers";
 
   it("treats the daycare providers services route as live in local/preview", () => {
     expect(getRouteStatus(DAYCARE_PROVIDERS_SERVICES_PATH)).toBe("live");
@@ -3591,7 +3591,7 @@ describe("daycare providers services directory nav active state", () => {
 });
 
 describe("daycare Netherlands nav active state", () => {
-  const DAYCARE_PATH = "/netherlands/education/daycare-netherlands/";
+  const DAYCARE_PATH = "/netherlands/education/daycare-netherlands";
 
   it("treats the daycare guide route as live", () => {
     expect(getRouteStatus(DAYCARE_PATH)).toBe("live");
@@ -3623,8 +3623,8 @@ describe("daycare Netherlands nav active state", () => {
 });
 
 describe("child benefits Netherlands nav active state", () => {
-  const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands/";
-  const LEGACY_CHILD_BENEFIT_PATH = "/netherlands/family/child-benefit-netherlands/";
+  const CHILD_BENEFITS_PATH = "/netherlands/family/child-benefits-netherlands";
+  const LEGACY_CHILD_BENEFIT_PATH = "/netherlands/family/child-benefit-netherlands";
 
   it("treats the child benefits guide route as live", () => {
     expect(getRouteStatus(CHILD_BENEFITS_PATH)).toBe("live");
@@ -3669,7 +3669,7 @@ describe("child benefits Netherlands nav active state", () => {
 });
 
 describe("after-school care Netherlands nav active state", () => {
-  const BSO_PATH = "/netherlands/education/after-school-care-netherlands/";
+  const BSO_PATH = "/netherlands/education/after-school-care-netherlands";
 
   it("treats the BSO guide route as live", () => {
     expect(getRouteStatus(BSO_PATH)).toBe("live");
@@ -3701,7 +3701,7 @@ describe("after-school care Netherlands nav active state", () => {
 });
 
 describe("before-school care Netherlands nav active state", () => {
-  const VSO_PATH = "/netherlands/education/before-school-care-netherlands/";
+  const VSO_PATH = "/netherlands/education/before-school-care-netherlands";
 
   it("treats the VSO guide route as live", () => {
     expect(getRouteStatus(VSO_PATH)).toBe("live");
@@ -3733,7 +3733,7 @@ describe("before-school care Netherlands nav active state", () => {
 });
 
 describe("parenting Netherlands nav active state", () => {
-  const PARENTING_PATH = "/netherlands/family/parenting-netherlands/";
+  const PARENTING_PATH = "/netherlands/family/parenting-netherlands";
 
   it("treats the parenting guide route as live", () => {
     expect(getRouteStatus(PARENTING_PATH)).toBe("live");
@@ -3765,7 +3765,7 @@ describe("parenting Netherlands nav active state", () => {
 });
 
 describe("healthcare for children Netherlands nav active state", () => {
-  const HEALTHCARE_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/";
+  const HEALTHCARE_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands";
 
   it("treats the healthcare for children guide route as live", () => {
     expect(getRouteStatus(HEALTHCARE_CHILDREN_PATH)).toBe("live");
@@ -3797,7 +3797,7 @@ describe("healthcare for children Netherlands nav active state", () => {
 });
 
 describe("family activities Netherlands nav active state", () => {
-  const FAMILY_ACTIVITIES_PATH = "/netherlands/family/family-activities-netherlands/";
+  const FAMILY_ACTIVITIES_PATH = "/netherlands/family/family-activities-netherlands";
 
   it("treats the family activities guide route as live", () => {
     expect(getRouteStatus(FAMILY_ACTIVITIES_PATH)).toBe("live");
@@ -3829,7 +3829,7 @@ describe("family activities Netherlands nav active state", () => {
 });
 
 describe("gp Netherlands nav active state", () => {
-  const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands/";
+  const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands";
 
   it("treats the gp Netherlands guide route as live", () => {
     expect(getRouteStatus(GP_NETHERLANDS_PATH)).toBe("live");
@@ -3861,7 +3861,7 @@ describe("gp Netherlands nav active state", () => {
 });
 
 describe("dentists Netherlands nav active state", () => {
-  const DENTISTS_NETHERLANDS_PATH = "/netherlands/health/dentists-netherlands/";
+  const DENTISTS_NETHERLANDS_PATH = "/netherlands/health/dentists-netherlands";
 
   it("treats the dentists Netherlands guide route as live", () => {
     expect(getRouteStatus(DENTISTS_NETHERLANDS_PATH)).toBe("live");
@@ -3893,7 +3893,7 @@ describe("dentists Netherlands nav active state", () => {
 });
 
 describe("emergency healthcare Netherlands nav active state", () => {
-  const EMERGENCY_HEALTHCARE_PATH = "/netherlands/health/emergency-healthcare-netherlands/";
+  const EMERGENCY_HEALTHCARE_PATH = "/netherlands/health/emergency-healthcare-netherlands";
 
   it("treats the emergency healthcare Netherlands guide route as live", () => {
     expect(getRouteStatus(EMERGENCY_HEALTHCARE_PATH)).toBe("live");
@@ -3934,7 +3934,7 @@ describe("emergency healthcare Netherlands nav active state", () => {
 });
 
 describe("hospitals Netherlands nav active state", () => {
-  const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands/";
+  const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands";
 
   it("treats the hospitals Netherlands guide route as live", () => {
     expect(getRouteStatus(HOSPITALS_NETHERLANDS_PATH)).toBe("live");
@@ -3980,7 +3980,7 @@ describe("hospitals Netherlands nav active state", () => {
 });
 
 describe("mental healthcare Netherlands nav active state", () => {
-  const MENTAL_HEALTHCARE_PATH = "/netherlands/health/mental-healthcare-netherlands/";
+  const MENTAL_HEALTHCARE_PATH = "/netherlands/health/mental-healthcare-netherlands";
 
   it("treats the mental healthcare Netherlands guide route as live", () => {
     expect(getRouteStatus(MENTAL_HEALTHCARE_PATH)).toBe("live");
@@ -4026,7 +4026,7 @@ describe("mental healthcare Netherlands nav active state", () => {
 });
 
 describe("pharmacies Netherlands nav active state", () => {
-  const PHARMACIES_PATH = "/netherlands/health/pharmacies-netherlands/";
+  const PHARMACIES_PATH = "/netherlands/health/pharmacies-netherlands";
 
   it("treats the pharmacies Netherlands guide route as live", () => {
     expect(getRouteStatus(PHARMACIES_PATH)).toBe("live");
@@ -4073,7 +4073,7 @@ describe("pharmacies Netherlands nav active state", () => {
 });
 
 describe("prescriptions Netherlands nav active state", () => {
-  const PRESCRIPTIONS_PATH = "/netherlands/health/prescriptions-netherlands/";
+  const PRESCRIPTIONS_PATH = "/netherlands/health/prescriptions-netherlands";
 
   it("treats the prescriptions Netherlands guide route as live", () => {
     expect(getRouteStatus(PRESCRIPTIONS_PATH)).toBe("live");
@@ -4119,7 +4119,7 @@ describe("prescriptions Netherlands nav active state", () => {
 });
 
 describe("physiotherapy Netherlands nav active state", () => {
-  const PHYSIOTHERAPY_PATH = "/netherlands/health/physiotherapy-netherlands/";
+  const PHYSIOTHERAPY_PATH = "/netherlands/health/physiotherapy-netherlands";
 
   it("treats the physiotherapy Netherlands guide route as live", () => {
     expect(getRouteStatus(PHYSIOTHERAPY_PATH)).toBe("live");
@@ -4165,7 +4165,7 @@ describe("physiotherapy Netherlands nav active state", () => {
 });
 
 describe("maternity care Netherlands nav active state", () => {
-  const MATERNITY_PATH = "/netherlands/health/maternity-care-netherlands/";
+  const MATERNITY_PATH = "/netherlands/health/maternity-care-netherlands";
 
   it("treats the maternity care Netherlands guide route as live", () => {
     expect(getRouteStatus(MATERNITY_PATH)).toBe("live");
@@ -4211,7 +4211,7 @@ describe("maternity care Netherlands nav active state", () => {
 });
 
 describe("pregnancy Netherlands nav active state", () => {
-  const PREGNANCY_PATH = "/netherlands/family/pregnancy-netherlands/";
+  const PREGNANCY_PATH = "/netherlands/family/pregnancy-netherlands";
 
   it("treats the pregnancy Netherlands guide route as live in local/preview", () => {
     expect(getRouteStatus(PREGNANCY_PATH)).toBe("live");
@@ -4257,7 +4257,7 @@ describe("pregnancy Netherlands nav active state", () => {
 });
 
 describe("giving birth Netherlands nav active state", () => {
-  const GIVING_BIRTH_PATH = "/netherlands/family/giving-birth-netherlands/";
+  const GIVING_BIRTH_PATH = "/netherlands/family/giving-birth-netherlands";
 
   it("treats the giving birth Netherlands guide route as live in local/preview", () => {
     expect(getRouteStatus(GIVING_BIRTH_PATH)).toBe("live");
@@ -4303,7 +4303,7 @@ describe("giving birth Netherlands nav active state", () => {
 });
 
 describe("pets Netherlands nav active state", () => {
-  const PETS_PATH = "/netherlands/family/pets-netherlands/";
+  const PETS_PATH = "/netherlands/family/pets-netherlands";
 
   it("treats the pets Netherlands guide route as live in local/preview", () => {
     expect(getRouteStatus(PETS_PATH)).toBe("live");
@@ -4361,7 +4361,7 @@ describe("pets Netherlands nav active state", () => {
 });
 
 describe("health insurance comparison Netherlands nav active state", () => {
-  const COMPARISON_PATH = "/netherlands/health/health-insurance-comparison-netherlands/";
+  const COMPARISON_PATH = "/netherlands/health/health-insurance-comparison-netherlands";
 
   it("treats the health insurance comparison Netherlands guide route as live", () => {
     expect(getRouteStatus(COMPARISON_PATH)).toBe("live");
@@ -4419,7 +4419,7 @@ describe("health insurance comparison Netherlands nav active state", () => {
 });
 
 describe("rental scams Netherlands nav active state", () => {
-  const RENTAL_SCAMS_PATH = "/netherlands/housing/rental-scams-netherlands/";
+  const RENTAL_SCAMS_PATH = "/netherlands/housing/rental-scams-netherlands";
 
   it("treats the rental scams guide route as live", () => {
     expect(getRouteStatus(RENTAL_SCAMS_PATH)).toBe("live");
@@ -4464,7 +4464,7 @@ describe("rental scams Netherlands nav active state", () => {
 });
 
 describe("expat loneliness Netherlands nav active state", () => {
-  const LONELINESS_PATH = "/netherlands/life/expat-loneliness-netherlands/";
+  const LONELINESS_PATH = "/netherlands/life/expat-loneliness-netherlands";
 
   it("treats the expat loneliness guide route as live", () => {
     expect(getRouteStatus(LONELINESS_PATH)).toBe("live");
@@ -4497,7 +4497,7 @@ describe("expat loneliness Netherlands nav active state", () => {
 });
 
 describe("cash vs card Netherlands nav active state", () => {
-  const CASH_VS_CARD_PATH = "/netherlands/money/banking/cash-vs-card/";
+  const CASH_VS_CARD_PATH = "/netherlands/money/banking/cash-vs-card";
 
   it("treats the cash vs card guide route as live", () => {
     expect(getRouteStatus(CASH_VS_CARD_PATH)).toBe("live");
@@ -4547,7 +4547,7 @@ describe("cash vs card Netherlands nav active state", () => {
 });
 
 describe("joint bank accounts Netherlands nav active state", () => {
-  const JOINT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/joint-accounts/";
+  const JOINT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/joint-accounts";
 
   it("treats the joint bank accounts guide route as live", () => {
     expect(getRouteStatus(JOINT_BANK_ACCOUNTS_PATH)).toBe("live");
@@ -4595,7 +4595,7 @@ describe("joint bank accounts Netherlands nav active state", () => {
 });
 
 describe("student bank accounts Netherlands nav active state", () => {
-  const STUDENT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/student-accounts/";
+  const STUDENT_BANK_ACCOUNTS_PATH = "/netherlands/money/banking/student-accounts";
 
   it("treats the student bank accounts guide route as live", () => {
     expect(getRouteStatus(STUDENT_BANK_ACCOUNTS_PATH)).toBe("live");
@@ -4627,7 +4627,7 @@ describe("student bank accounts Netherlands nav active state", () => {
 });
 
 describe("debit cards Netherlands nav active state", () => {
-  const DEBIT_CARDS_PATH = "/netherlands/money/banking/debit-cards/";
+  const DEBIT_CARDS_PATH = "/netherlands/money/banking/debit-cards";
 
   it("treats the debit cards guide route as live", () => {
     expect(getRouteStatus(DEBIT_CARDS_PATH)).toBe("live");
@@ -4673,7 +4673,7 @@ describe("debit cards Netherlands nav active state", () => {
 });
 
 describe("credit cards Netherlands nav active state", () => {
-  const CREDIT_CARDS_PATH = "/netherlands/money/banking/credit-cards/";
+  const CREDIT_CARDS_PATH = "/netherlands/money/banking/credit-cards";
 
   it("treats the credit cards guide route as live", () => {
     expect(getRouteStatus(CREDIT_CARDS_PATH)).toBe("live");
@@ -4719,7 +4719,7 @@ describe("credit cards Netherlands nav active state", () => {
 });
 
 describe("Wise vs Revolut Netherlands nav active state", () => {
-  const WISE_VS_REVOLUT_PATH = "/netherlands/money/banking/wise-vs-revolut/";
+  const WISE_VS_REVOLUT_PATH = "/netherlands/money/banking/wise-vs-revolut";
 
   it("treats the Wise vs Revolut guide route as live", () => {
     expect(getRouteStatus(WISE_VS_REVOLUT_PATH)).toBe("live");
@@ -4766,7 +4766,7 @@ describe("Wise vs Revolut Netherlands nav active state", () => {
 });
 
 describe("best banks for expats Netherlands nav active state", () => {
-  const BEST_BANKS_EXPATS_PATH = "/netherlands/money/banking/best-banks-expats/";
+  const BEST_BANKS_EXPATS_PATH = "/netherlands/money/banking/best-banks-expats";
 
   it("treats the best banks for expats guide route as live", () => {
     expect(getRouteStatus(BEST_BANKS_EXPATS_PATH)).toBe("live");
@@ -4812,7 +4812,7 @@ describe("best banks for expats Netherlands nav active state", () => {
 });
 
 describe("international transfers Netherlands nav active state", () => {
-  const INTERNATIONAL_TRANSFERS_FROM_NL_PATH = "/netherlands/money/banking/international-transfers/";
+  const INTERNATIONAL_TRANSFERS_FROM_NL_PATH = "/netherlands/money/banking/international-transfers";
 
   it("treats the international transfers guide route as live", () => {
     expect(getRouteStatus(INTERNATIONAL_TRANSFERS_FROM_NL_PATH)).toBe("live");
@@ -4860,7 +4860,7 @@ describe("international transfers Netherlands nav active state", () => {
 });
 
 describe("open bank account Netherlands nav active state", () => {
-  const OPEN_BANK_ACCOUNT_NETHERLANDS_PATH = "/netherlands/open-bank-account-netherlands/";
+  const OPEN_BANK_ACCOUNT_NETHERLANDS_PATH = "/netherlands/open-bank-account-netherlands";
   /** Nav config authors this href without a trailing slash. */
   const OPEN_BANK_ACCOUNT_NAV_HREF = "/netherlands/open-bank-account-netherlands";
 
@@ -4908,8 +4908,8 @@ describe("open bank account Netherlands nav active state", () => {
 });
 
 describe("joint and student bank accounts nav rows", () => {
-  const JOINT_PATH = "/netherlands/money/banking/joint-accounts/";
-  const STUDENT_PATH = "/netherlands/money/banking/student-accounts/";
+  const JOINT_PATH = "/netherlands/money/banking/joint-accounts";
+  const STUDENT_PATH = "/netherlands/money/banking/student-accounts";
 
   it("authors both rows under Money > Banking after Types of bank accounts", () => {
     const labels =
@@ -4936,7 +4936,7 @@ describe("joint and student bank accounts nav rows", () => {
 });
 
 describe("cost of living Netherlands nav row", () => {
-  const COST_OF_LIVING_PATH = "/netherlands/money/cost-of-living-netherlands/";
+  const COST_OF_LIVING_PATH = "/netherlands/money/cost-of-living-netherlands";
 
   it("authors Cost of living under Money > Cost of living & everyday money before Insurance", () => {
     const sectionTitles = MEGA_MENUS.money.sections.map((section) => section.title);
@@ -4976,7 +4976,7 @@ describe("cost of living Netherlands nav row", () => {
 });
 
 describe("monthly budget Netherlands nav row", () => {
-  const MONTHLY_BUDGET_PATH = "/netherlands/money/monthly-budget-netherlands/";
+  const MONTHLY_BUDGET_PATH = "/netherlands/money/monthly-budget-netherlands";
 
   it("has exactly one menu row in Money > Cost of living & everyday money", () => {
     const rows = menuRowsForHref(MONTHLY_BUDGET_PATH);
@@ -5012,7 +5012,7 @@ describe("monthly budget Netherlands nav row", () => {
 });
 
 describe("saving money Netherlands nav row", () => {
-  const SAVING_MONEY_PATH = "/netherlands/money/saving-money-netherlands/";
+  const SAVING_MONEY_PATH = "/netherlands/money/saving-money-netherlands";
 
   it("has exactly one menu row in Money > Cost of living & everyday money", () => {
     const rows = menuRowsForHref(SAVING_MONEY_PATH);
@@ -5036,7 +5036,7 @@ describe("saving money Netherlands nav row", () => {
 });
 
 describe("hidden costs Netherlands nav row", () => {
-  const HIDDEN_COSTS_PATH = "/netherlands/money/hidden-costs-netherlands/";
+  const HIDDEN_COSTS_PATH = "/netherlands/money/hidden-costs-netherlands";
 
   it("treats the hidden costs guide route as live", () => {
     expect(getRouteStatus(HIDDEN_COSTS_PATH)).toBe("live");
@@ -5082,7 +5082,7 @@ describe("hidden costs Netherlands nav row", () => {
 });
 
 describe("financial checklist Netherlands nav row", () => {
-  const FINANCIAL_CHECKLIST_PATH = "/netherlands/money/financial-checklist-netherlands/";
+  const FINANCIAL_CHECKLIST_PATH = "/netherlands/money/financial-checklist-netherlands";
 
   it("treats the financial checklist guide route as live", () => {
     expect(getRouteStatus(FINANCIAL_CHECKLIST_PATH)).toBe("live");
@@ -5114,7 +5114,7 @@ describe("financial checklist Netherlands nav row", () => {
 });
 
 describe("driving licence exchange Netherlands nav active state", () => {
-  const DRIVING_LICENCE_PATH = "/netherlands/living/driving-licence-exchange-netherlands/";
+  const DRIVING_LICENCE_PATH = "/netherlands/living/driving-licence-exchange-netherlands";
 
   it("treats the driving licence exchange guide route as live in local/preview", () => {
     expect(getRouteStatus(DRIVING_LICENCE_PATH)).toBe("live");
@@ -5158,7 +5158,7 @@ describe("driving licence exchange Netherlands nav active state", () => {
 });
 
 describe("OV-chipkaart Netherlands nav active state", () => {
-  const OV_CHIPKAART_PATH = "/netherlands/living/ov-chipkaart-netherlands/";
+  const OV_CHIPKAART_PATH = "/netherlands/living/ov-chipkaart-netherlands";
 
   it("treats the OV-chipkaart guide route as live in local/preview", () => {
     expect(getRouteStatus(OV_CHIPKAART_PATH)).toBe("live");
@@ -5202,7 +5202,7 @@ describe("OV-chipkaart Netherlands nav active state", () => {
 });
 
 describe("OVpay Netherlands nav active state", () => {
-  const OVPAY_PATH = "/netherlands/living/ovpay-netherlands/";
+  const OVPAY_PATH = "/netherlands/living/ovpay-netherlands";
 
   it("treats the OVpay guide route as live in local/preview", () => {
     expect(getRouteStatus(OVPAY_PATH)).toBe("live");
@@ -5248,7 +5248,7 @@ describe("OVpay Netherlands nav active state", () => {
 });
 
 describe("NS trains Netherlands nav active state", () => {
-  const NS_TRAINS_PATH = "/netherlands/living/ns-trains-netherlands/";
+  const NS_TRAINS_PATH = "/netherlands/living/ns-trains-netherlands";
 
   it("treats the NS trains guide route as live in local/preview", () => {
     expect(getRouteStatus(NS_TRAINS_PATH)).toBe("live");
@@ -5294,7 +5294,7 @@ describe("NS trains Netherlands nav active state", () => {
 });
 
 describe("Trams Netherlands nav active state", () => {
-  const TRAMS_PATH = "/netherlands/living/trams-netherlands/";
+  const TRAMS_PATH = "/netherlands/living/trams-netherlands";
 
   it("treats the Trams guide route as live in local/preview", () => {
     expect(getRouteStatus(TRAMS_PATH)).toBe("live");
@@ -5340,7 +5340,7 @@ describe("Trams Netherlands nav active state", () => {
 });
 
 describe("Metro Netherlands nav active state", () => {
-  const METRO_PATH = "/netherlands/living/metro-netherlands/";
+  const METRO_PATH = "/netherlands/living/metro-netherlands";
 
   it("treats the Metro guide route as live in local/preview", () => {
     expect(getRouteStatus(METRO_PATH)).toBe("live");
@@ -5386,7 +5386,7 @@ describe("Metro Netherlands nav active state", () => {
 });
 
 describe("Regional buses Netherlands nav active state", () => {
-  const REGIONAL_BUSES_PATH = "/netherlands/living/regional-buses-netherlands/";
+  const REGIONAL_BUSES_PATH = "/netherlands/living/regional-buses-netherlands";
 
   it("treats the Regional buses guide route as live in local/preview", () => {
     expect(getRouteStatus(REGIONAL_BUSES_PATH)).toBe("live");
@@ -5432,7 +5432,7 @@ describe("Regional buses Netherlands nav active state", () => {
 });
 
 describe("Cycling Netherlands nav active state", () => {
-  const CYCLING_PATH = "/netherlands/living/cycling-netherlands/";
+  const CYCLING_PATH = "/netherlands/living/cycling-netherlands";
 
   it("treats the Cycling guide route as live in local/preview", () => {
     expect(getRouteStatus(CYCLING_PATH)).toBe("live");
@@ -5476,7 +5476,7 @@ describe("Cycling Netherlands nav active state", () => {
 });
 
 describe("Bike sharing Netherlands nav active state", () => {
-  const BIKE_SHARING_PATH = "/netherlands/living/bike-sharing-netherlands/";
+  const BIKE_SHARING_PATH = "/netherlands/living/bike-sharing-netherlands";
 
   it("treats the Bike sharing guide route as live in local/preview", () => {
     expect(getRouteStatus(BIKE_SHARING_PATH)).toBe("live");
@@ -5521,7 +5521,7 @@ describe("Bike sharing Netherlands nav active state", () => {
 });
 
 describe("Train discounts Netherlands nav active state", () => {
-  const TRAIN_DISCOUNTS_PATH = "/netherlands/living/train-discounts-netherlands/";
+  const TRAIN_DISCOUNTS_PATH = "/netherlands/living/train-discounts-netherlands";
 
   it("treats the Train discounts guide route as live in local/preview", () => {
     expect(getRouteStatus(TRAIN_DISCOUNTS_PATH)).toBe("live");
@@ -5567,7 +5567,7 @@ describe("Train discounts Netherlands nav active state", () => {
 });
 
 describe("Weekend travel Netherlands nav active state", () => {
-  const WEEKEND_TRAVEL_PATH = "/netherlands/living/weekend-travel-netherlands/";
+  const WEEKEND_TRAVEL_PATH = "/netherlands/living/weekend-travel-netherlands";
 
   it("treats the Weekend travel guide route as live in local/preview", () => {
     expect(getRouteStatus(WEEKEND_TRAVEL_PATH)).toBe("live");
@@ -5612,7 +5612,7 @@ describe("Weekend travel Netherlands nav active state", () => {
 });
 
 describe("Weekend trips Netherlands nav active state", () => {
-  const WEEKEND_TRIPS_PATH = "/netherlands/living/weekend-trips-netherlands/";
+  const WEEKEND_TRIPS_PATH = "/netherlands/living/weekend-trips-netherlands";
 
   it("treats the Weekend trips guide route as live in local/preview", () => {
     expect(getRouteStatus(WEEKEND_TRIPS_PATH)).toBe("live");
@@ -5667,7 +5667,7 @@ describe("Weekend trips Netherlands nav active state", () => {
 });
 
 describe("National parks Netherlands nav active state", () => {
-  const NATIONAL_PARKS_PATH = "/netherlands/living/national-parks-netherlands/";
+  const NATIONAL_PARKS_PATH = "/netherlands/living/national-parks-netherlands";
 
   it("treats the National parks guide route as live in local/preview", () => {
     expect(getRouteStatus(NATIONAL_PARKS_PATH)).toBe("live");
@@ -5710,7 +5710,7 @@ describe("National parks Netherlands nav active state", () => {
 });
 
 describe("Hiking Netherlands nav active state", () => {
-  const HIKING_PATH = "/netherlands/living/hiking-netherlands/";
+  const HIKING_PATH = "/netherlands/living/hiking-netherlands";
 
   it("treats the Hiking guide route as live in local/preview", () => {
     expect(getRouteStatus(HIKING_PATH)).toBe("live");
@@ -5753,7 +5753,7 @@ describe("Hiking Netherlands nav active state", () => {
 });
 
 describe("Museums Netherlands nav active state", () => {
-  const MUSEUMS_PATH = "/netherlands/living/museums-netherlands/";
+  const MUSEUMS_PATH = "/netherlands/living/museums-netherlands";
 
   it("treats the Museums guide route as live in local/preview", () => {
     expect(getRouteStatus(MUSEUMS_PATH)).toBe("live");
@@ -5798,7 +5798,7 @@ describe("Museums Netherlands nav active state", () => {
 });
 
 describe("Hidden gems Netherlands nav active state", () => {
-  const HIDDEN_GEMS_PATH = "/netherlands/living/hidden-gems-netherlands/";
+  const HIDDEN_GEMS_PATH = "/netherlands/living/hidden-gems-netherlands";
 
   it("treats the Hidden gems guide route as live in local/preview", () => {
     expect(getRouteStatus(HIDDEN_GEMS_PATH)).toBe("live");
@@ -5845,7 +5845,7 @@ describe("Hidden gems Netherlands nav active state", () => {
 });
 
 describe("Beach towns Netherlands nav active state", () => {
-  const BEACH_TOWNS_PATH = "/netherlands/living/beach-towns-netherlands/";
+  const BEACH_TOWNS_PATH = "/netherlands/living/beach-towns-netherlands";
 
   it("treats the Beach towns guide route as live in local/preview", () => {
     expect(getRouteStatus(BEACH_TOWNS_PATH)).toBe("live");
@@ -5892,7 +5892,7 @@ describe("Beach towns Netherlands nav active state", () => {
 });
 
 describe("Castles Netherlands nav active state", () => {
-  const CASTLES_PATH = "/netherlands/living/castles-netherlands/";
+  const CASTLES_PATH = "/netherlands/living/castles-netherlands";
 
   it("treats the Castles guide route as live in local/preview", () => {
     expect(getRouteStatus(CASTLES_PATH)).toBe("live");
@@ -5939,7 +5939,7 @@ describe("Castles Netherlands nav active state", () => {
 });
 
 describe("Road trips Netherlands nav active state", () => {
-  const ROAD_TRIPS_PATH = "/netherlands/living/road-trips-netherlands/";
+  const ROAD_TRIPS_PATH = "/netherlands/living/road-trips-netherlands";
 
   it("treats the Road trips guide route as live in local/preview", () => {
     expect(getRouteStatus(ROAD_TRIPS_PATH)).toBe("live");
@@ -5987,7 +5987,7 @@ describe("Road trips Netherlands nav active state", () => {
 });
 
 describe("Day trips Netherlands nav active state", () => {
-  const DAY_TRIPS_PATH = "/netherlands/living/day-trips-netherlands/";
+  const DAY_TRIPS_PATH = "/netherlands/living/day-trips-netherlands";
 
   it("treats the Day trips guide route as live in local/preview", () => {
     expect(getRouteStatus(DAY_TRIPS_PATH)).toBe("live");
@@ -6036,7 +6036,7 @@ describe("Day trips Netherlands nav active state", () => {
 });
 
 describe("buying a car Netherlands nav active state", () => {
-  const BUYING_A_CAR_PATH = "/netherlands/living/buying-a-car-netherlands/";
+  const BUYING_A_CAR_PATH = "/netherlands/living/buying-a-car-netherlands";
 
   it("treats the buying a car guide route as live in local/preview", () => {
     expect(getRouteStatus(BUYING_A_CAR_PATH)).toBe("live");
@@ -6080,7 +6080,7 @@ describe("buying a car Netherlands nav active state", () => {
 });
 
 describe("road tax Netherlands nav active state", () => {
-  const ROAD_TAX_PATH = "/netherlands/living/road-tax-netherlands/";
+  const ROAD_TAX_PATH = "/netherlands/living/road-tax-netherlands";
 
   it("treats the road tax guide route as live in local/preview", () => {
     expect(getRouteStatus(ROAD_TAX_PATH)).toBe("live");
@@ -6124,7 +6124,7 @@ describe("road tax Netherlands nav active state", () => {
 });
 
 describe("car insurance Netherlands nav active state", () => {
-  const CAR_INSURANCE_PATH = "/netherlands/living/car-insurance-netherlands/";
+  const CAR_INSURANCE_PATH = "/netherlands/living/car-insurance-netherlands";
 
   it("treats the car insurance guide route as live in local/preview", () => {
     expect(getRouteStatus(CAR_INSURANCE_PATH)).toBe("live");
@@ -6168,7 +6168,7 @@ describe("car insurance Netherlands nav active state", () => {
 });
 
 describe("MOT / APK Netherlands nav active state", () => {
-  const MOT_APK_PATH = "/netherlands/living/mot-apk-netherlands/";
+  const MOT_APK_PATH = "/netherlands/living/mot-apk-netherlands";
 
   it("treats the MOT / APK guide route as live in local/preview", () => {
     expect(getRouteStatus(MOT_APK_PATH)).toBe("live");
@@ -6212,7 +6212,7 @@ describe("MOT / APK Netherlands nav active state", () => {
 });
 
 describe("Speed cameras Netherlands nav active state", () => {
-  const SPEED_CAMERAS_PATH = "/netherlands/living/speed-cameras-netherlands/";
+  const SPEED_CAMERAS_PATH = "/netherlands/living/speed-cameras-netherlands";
 
   it("treats the Speed cameras guide route as live in local/preview", () => {
     expect(getRouteStatus(SPEED_CAMERAS_PATH)).toBe("live");
@@ -6256,7 +6256,7 @@ describe("Speed cameras Netherlands nav active state", () => {
 });
 
 describe("Electric vehicles Netherlands nav active state", () => {
-  const ELECTRIC_VEHICLES_PATH = "/netherlands/living/electric-vehicles-netherlands/";
+  const ELECTRIC_VEHICLES_PATH = "/netherlands/living/electric-vehicles-netherlands";
 
   it("treats the Electric vehicles guide route as live in local/preview", () => {
     expect(getRouteStatus(ELECTRIC_VEHICLES_PATH)).toBe("live");
@@ -6302,7 +6302,7 @@ describe("Electric vehicles Netherlands nav active state", () => {
 });
 
 describe("Car sharing Netherlands nav active state", () => {
-  const CAR_SHARING_PATH = "/netherlands/living/car-sharing-netherlands/";
+  const CAR_SHARING_PATH = "/netherlands/living/car-sharing-netherlands";
 
   it("treats the Car sharing guide route as live in local/preview", () => {
     expect(getRouteStatus(CAR_SHARING_PATH)).toBe("live");
@@ -6348,7 +6348,7 @@ describe("Car sharing Netherlands nav active state", () => {
 });
 
 describe("Lease cars Netherlands nav active state", () => {
-  const LEASE_CARS_PATH = "/netherlands/living/lease-cars-netherlands/";
+  const LEASE_CARS_PATH = "/netherlands/living/lease-cars-netherlands";
 
   it("treats the Lease cars guide route as live in local/preview", () => {
     expect(getRouteStatus(LEASE_CARS_PATH)).toBe("live");
@@ -6393,7 +6393,7 @@ describe("Lease cars Netherlands nav active state", () => {
 });
 
 describe("Dutch supermarkets nav active state", () => {
-  const DUTCH_SUPERMARKETS_PATH = "/netherlands/living/dutch-supermarkets/";
+  const DUTCH_SUPERMARKETS_PATH = "/netherlands/living/dutch-supermarkets";
 
   it("treats the Dutch supermarkets guide route as live in local/preview", () => {
     expect(getRouteStatus(DUTCH_SUPERMARKETS_PATH)).toBe("live");
@@ -6437,7 +6437,7 @@ describe("Dutch supermarkets nav active state", () => {
 });
 
 describe("Best supermarkets Netherlands nav active state", () => {
-  const BEST_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/best-supermarkets-netherlands/";
+  const BEST_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/best-supermarkets-netherlands";
 
   it("treats the Best supermarkets guide route as live in local/preview", () => {
     expect(getRouteStatus(BEST_SUPERMARKETS_NETHERLANDS_PATH)).toBe("live");
@@ -6481,7 +6481,7 @@ describe("Best supermarkets Netherlands nav active state", () => {
 });
 
 describe("Cheap groceries Netherlands nav active state", () => {
-  const CHEAP_GROCERIES_NETHERLANDS_PATH = "/netherlands/living/cheap-groceries-netherlands/";
+  const CHEAP_GROCERIES_NETHERLANDS_PATH = "/netherlands/living/cheap-groceries-netherlands";
 
   it("treats the Cheap groceries guide route as live in local/preview", () => {
     expect(getRouteStatus(CHEAP_GROCERIES_NETHERLANDS_PATH)).toBe("live");
@@ -6527,7 +6527,7 @@ describe("Cheap groceries Netherlands nav active state", () => {
 });
 
 describe("International supermarkets Netherlands nav active state", () => {
-  const INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/international-supermarkets-netherlands/";
+  const INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/international-supermarkets-netherlands";
 
   it("treats the International supermarkets guide route as live in local/preview", () => {
     expect(getRouteStatus(INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH)).toBe("live");
@@ -6573,7 +6573,7 @@ describe("International supermarkets Netherlands nav active state", () => {
 });
 
 describe("Asian supermarkets Netherlands nav active state", () => {
-  const ASIAN_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/asian-supermarkets-netherlands/";
+  const ASIAN_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/asian-supermarkets-netherlands";
 
   it("treats the Asian supermarkets guide route as live in local/preview", () => {
     expect(getRouteStatus(ASIAN_SUPERMARKETS_NETHERLANDS_PATH)).toBe("live");
@@ -6619,7 +6619,7 @@ describe("Asian supermarkets Netherlands nav active state", () => {
 });
 
 describe("Turkish supermarkets Netherlands nav active state", () => {
-  const TURKISH_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/turkish-supermarkets-netherlands/";
+  const TURKISH_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/turkish-supermarkets-netherlands";
 
   it("treats the Turkish supermarkets guide route as live in local/preview", () => {
     expect(getRouteStatus(TURKISH_SUPERMARKETS_NETHERLANDS_PATH)).toBe("live");
@@ -6665,7 +6665,7 @@ describe("Turkish supermarkets Netherlands nav active state", () => {
 });
 
 describe("Indian supermarkets Netherlands nav active state", () => {
-  const INDIAN_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/indian-supermarkets-netherlands/";
+  const INDIAN_SUPERMARKETS_NETHERLANDS_PATH = "/netherlands/living/indian-supermarkets-netherlands";
 
   it("treats the Indian supermarkets guide route as live in local/preview", () => {
     expect(getRouteStatus(INDIAN_SUPERMARKETS_NETHERLANDS_PATH)).toBe("live");
@@ -6711,7 +6711,7 @@ describe("Indian supermarkets Netherlands nav active state", () => {
 });
 
 describe("South African shops Netherlands nav active state", () => {
-  const SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH = "/netherlands/living/south-african-shops-netherlands/";
+  const SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH = "/netherlands/living/south-african-shops-netherlands";
 
   it("treats the South African shops guide route as live in local/preview", () => {
     expect(getRouteStatus(SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH)).toBe("live");
@@ -6759,7 +6759,7 @@ describe("South African shops Netherlands nav active state", () => {
 });
 
 describe("Meal kits Netherlands nav active state", () => {
-  const MEAL_KITS_NETHERLANDS_PATH = "/netherlands/living/meal-kits-netherlands/";
+  const MEAL_KITS_NETHERLANDS_PATH = "/netherlands/living/meal-kits-netherlands";
 
   it("treats the Meal kits guide route as live in local/preview", () => {
     expect(getRouteStatus(MEAL_KITS_NETHERLANDS_PATH)).toBe("live");
@@ -6805,7 +6805,7 @@ describe("Meal kits Netherlands nav active state", () => {
 });
 
 describe("Food delivery Netherlands nav active state", () => {
-  const FOOD_DELIVERY_NETHERLANDS_PATH = "/netherlands/living/food-delivery-netherlands/";
+  const FOOD_DELIVERY_NETHERLANDS_PATH = "/netherlands/living/food-delivery-netherlands";
 
   it("treats the Food delivery guide route as live in local/preview", () => {
     expect(getRouteStatus(FOOD_DELIVERY_NETHERLANDS_PATH)).toBe("live");
@@ -6855,7 +6855,7 @@ describe("Food delivery Netherlands nav active state", () => {
 });
 
 describe("Restaurants Netherlands nav active state", () => {
-  const RESTAURANTS_NETHERLANDS_PATH = "/netherlands/living/restaurants-netherlands/";
+  const RESTAURANTS_NETHERLANDS_PATH = "/netherlands/living/restaurants-netherlands";
 
   it("treats the Restaurants guide route as live in local/preview", () => {
     expect(getRouteStatus(RESTAURANTS_NETHERLANDS_PATH)).toBe("live");
@@ -6903,7 +6903,7 @@ describe("Restaurants Netherlands nav active state", () => {
 });
 
 describe("Tipping Netherlands nav active state", () => {
-  const TIPPING_NETHERLANDS_PATH = "/netherlands/living/tipping-netherlands/";
+  const TIPPING_NETHERLANDS_PATH = "/netherlands/living/tipping-netherlands";
 
   it("treats the Tipping guide route as live in local/preview", () => {
     expect(getRouteStatus(TIPPING_NETHERLANDS_PATH)).toBe("live");

@@ -13,15 +13,15 @@ import { MAKING_DUTCH_FRIENDS_PATH } from "@/src/components/life/dutchHumourPage
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 /** Weekend & Lifestyle Cluster — lead PATH exports. */
-export const WEEKEND_TRIPS_NETHERLANDS_PATH = "/netherlands/living/weekend-trips-netherlands/" as const;
-export const NATIONAL_PARKS_NETHERLANDS_PATH = "/netherlands/living/national-parks-netherlands/" as const;
-export const HIKING_NETHERLANDS_PATH = "/netherlands/living/hiking-netherlands/" as const;
-export const MUSEUMS_NETHERLANDS_PATH = "/netherlands/living/museums-netherlands/" as const;
-export const HIDDEN_GEMS_NETHERLANDS_PATH = "/netherlands/living/hidden-gems-netherlands/" as const;
-export const BEACH_TOWNS_NETHERLANDS_PATH = "/netherlands/living/beach-towns-netherlands/" as const;
-export const CASTLES_NETHERLANDS_PATH = "/netherlands/living/castles-netherlands/" as const;
-export const ROAD_TRIPS_NETHERLANDS_PATH = "/netherlands/living/road-trips-netherlands/" as const;
-export const DAY_TRIPS_NETHERLANDS_PATH = "/netherlands/living/day-trips-netherlands/" as const;
+export const WEEKEND_TRIPS_NETHERLANDS_PATH = "/netherlands/living/weekend-trips-netherlands" as const;
+export const NATIONAL_PARKS_NETHERLANDS_PATH = "/netherlands/living/national-parks-netherlands" as const;
+export const HIKING_NETHERLANDS_PATH = "/netherlands/living/hiking-netherlands" as const;
+export const MUSEUMS_NETHERLANDS_PATH = "/netherlands/living/museums-netherlands" as const;
+export const HIDDEN_GEMS_NETHERLANDS_PATH = "/netherlands/living/hidden-gems-netherlands" as const;
+export const BEACH_TOWNS_NETHERLANDS_PATH = "/netherlands/living/beach-towns-netherlands" as const;
+export const CASTLES_NETHERLANDS_PATH = "/netherlands/living/castles-netherlands" as const;
+export const ROAD_TRIPS_NETHERLANDS_PATH = "/netherlands/living/road-trips-netherlands" as const;
+export const DAY_TRIPS_NETHERLANDS_PATH = "/netherlands/living/day-trips-netherlands" as const;
 
 export {
   BIKE_SHARING_NETHERLANDS_PATH,
@@ -37,7 +37,7 @@ export {
   WEEKEND_TRAVEL_NETHERLANDS_PATH,
 };
 
-export const FAMILY_ACTIVITIES_NETHERLANDS_PATH = "/netherlands/family/family-activities-netherlands/" as const;
+export const FAMILY_ACTIVITIES_NETHERLANDS_PATH = "/netherlands/family/family-activities-netherlands" as const;
 
 export type LifestyleLink = {
   label: string;

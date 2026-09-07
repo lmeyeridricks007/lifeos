@@ -1,7 +1,7 @@
-export const CITIES_COMPARE_HUB_PATH = "/netherlands/cities/compare/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const AMSTERDAM_VS_ROTTERDAM_PATH = "/netherlands/cities/amsterdam-vs-rotterdam/" as const;
-export const CITY_COMPARISON_TOOL_PATH = "/netherlands/tools/city-comparison/" as const;
+export const CITIES_COMPARE_HUB_PATH = "/netherlands/cities/compare" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const AMSTERDAM_VS_ROTTERDAM_PATH = "/netherlands/cities/amsterdam-vs-rotterdam" as const;
+export const CITY_COMPARISON_TOOL_PATH = "/netherlands/tools/city-comparison" as const;
 
 export type CitiesCompareLink = {
   label: string;

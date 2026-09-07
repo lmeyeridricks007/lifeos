@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import { EssentialAppsView } from "@/src/components/living/essential-apps/EssentialAppsView";
 import { LIVING_ESSENTIAL_APPS_PATH } from "@/src/components/living/livingPillarContent";
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: sharePreviewTitle(META_TITLE),
     description: META_DESCRIPTION,
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
     type: "article",
   },
   twitter: {

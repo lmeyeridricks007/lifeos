@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { MoveHero } from "@/components/page/move-shell";
@@ -30,7 +30,7 @@ const META_DESCRIPTION =
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: DOUBLE_TAX_CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(DOUBLE_TAX_CANONICAL)},
   keywords: [
     "double tax awareness Netherlands",
     "tax residency Netherlands expat",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     url: DOUBLE_TAX_CANONICAL,
     images: [
       {
-        url: "/images/tools/expatlife-netherlands-budget-planning.png",
+        url: absoluteUrlFromPath("/images/tools/expatlife-netherlands-budget-planning.png"),
         width: 1200,
         height: 630,
         alt: "International tax planning documents and salary paperwork for expats moving to the Netherlands.",
@@ -70,7 +70,7 @@ function resolveRelatedGuides() {
 
 export default function DoubleTaxAwarenessToolPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(DOUBLE_TAX_CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(DOUBLE_TAX_CANONICAL);
   const relatedGuides = resolveRelatedGuides();
 
   const breadcrumbJsonLd = buildBreadcrumbSchema([
@@ -136,7 +136,7 @@ export default function DoubleTaxAwarenessToolPage() {
         disclosure="Planning view only — not tax or legal advice. This tool does not compute exact tax due, does not determine tax residency conclusively, and does not replace treaty analysis by a qualified advisor. Do not submit returns based on this page alone. Treaty and tie-breaker outcomes depend on your detailed facts and timelines; use this output to spot risk, likely direction, and questions to raise — then verify filing positions with official sources and a qualified advisor before deadlines."
         sidebar={<DoubleTaxAwarenessRightRail />}
         primarySectionTitle="Calculator"
-        primarySectionContent={<DoubleTaxAwarenessCalculatorClient calculatorCanonicalUrl={new URL(DOUBLE_TAX_CANONICAL, origin).toString()} />}
+        primarySectionContent={<DoubleTaxAwarenessCalculatorClient calculatorCanonicalUrl={absoluteUrlFromPath(DOUBLE_TAX_CANONICAL)} />}
         explanatorySectionsOuterTitle="How this tool works"
         explanatorySections={[
           {

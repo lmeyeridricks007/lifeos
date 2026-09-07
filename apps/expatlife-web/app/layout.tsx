@@ -66,11 +66,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       </head>
       <body className={`min-h-screen antialiased ${inter.className}`}>
         <AppClientShell contentVersion={contentVersion}>{children}</AppClientShell>
+        {/* lazyOnload: keep measurement, reduce main-thread contention with LCP/TBT (still loads on every page). */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-F2H1CJD5ES"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics-gtag" strategy="afterInteractive">
+        <Script id="google-analytics-gtag" strategy="lazyOnload">
           {`
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}

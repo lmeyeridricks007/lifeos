@@ -10,11 +10,11 @@ import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuide
 export const PETS_NETHERLANDS_PATH = PETS_PATH_FROM_CLUSTER;
 export { GIVING_BIRTH_NETHERLANDS_PATH };
 export const FAMILY_HUB_PATH = PARENTING_NETHERLANDS_PATH;
-export const BRINGING_PETS_PATH = "/netherlands/bringing-pets-to-netherlands/" as const;
-export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family/" as const;
-export const RENTING_PATH = "/netherlands/housing/rental-contracts-and-deposits-netherlands/" as const;
-export const HOUSING_HUB_PATH = "/netherlands/housing/" as const;
-export const PET_RELOCATION_COMPANIES_PATH = "/netherlands/services/pet-relocation-companies/" as const;
+export const BRINGING_PETS_PATH = "/netherlands/bringing-pets-to-netherlands" as const;
+export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family" as const;
+export const RENTING_PATH = "/netherlands/housing/rental-contracts-and-deposits-netherlands" as const;
+export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
+export const PET_RELOCATION_COMPANIES_PATH = "/netherlands/services/pet-relocation-companies" as const;
 
 export type PetsLink = {
   label: string;

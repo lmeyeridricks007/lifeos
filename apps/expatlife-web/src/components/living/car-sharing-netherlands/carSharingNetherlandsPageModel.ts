@@ -13,6 +13,13 @@ import {
   ROAD_TAX_NETHERLANDS_PATH,
   SPEED_CAMERAS_NETHERLANDS_PATH,
 } from "@/src/components/living/driving-licence-exchange-netherlands/drivingLicenceExchangeNetherlandsPageModel";
+import {
+  NS_TRAINS_NETHERLANDS_PATH,
+  OV_CHIPKAART_NETHERLANDS_PATH,
+  OVPAY_NETHERLANDS_PATH,
+} from "@/src/components/living/ov-chipkaart-netherlands/ovChipkaartNetherlandsPageModel";
+import { GUIDE_CITABILITY_POLICY_LINKS } from "@/src/components/guides/guideCitabilityPolicyLinks";
+import { LIVING_SURVIVAL_GUIDE_PATH } from "@/src/components/living/livingPillarContent";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
 export {
@@ -64,6 +71,21 @@ export const carSharingNetherlandsPage = {
   parentGuidePath: GETTING_AROUND_PATH,
   publish: true,
   publishDate: scheduledPublishDateForPath(CAR_SHARING_NETHERLANDS_PATH) ?? "2026-09-04",
+  lastReviewed: "7 September 2026",
+  heroOfficialSources: [
+    {
+      label: "RDW — driving licence and vehicle orientation",
+      href: "https://www.rdw.nl/en",
+    },
+    {
+      label: "Government.nl — transport topics",
+      href: "https://www.government.nl/",
+    },
+    {
+      label: "Netherlands Worldwide",
+      href: "https://www.netherlandsworldwide.nl/",
+    },
+  ],
   seo: {
     title: "Car Sharing in the Netherlands | Complete Guide for Expats",
     description:
@@ -825,20 +847,47 @@ export const carSharingNetherlandsPage = {
     },
   ],
   relatedGuidesTips: [
+    "Arrival hub → Survival Guide.",
     "OV and bikes → Getting around.",
+    "Tickets → OV-chipkaart / OVpay / NS trains.",
     "Purchase path → Buying a car.",
     "EV ownership → Electric vehicles.",
     "Contracted access → Lease cars.",
     "Curb reality → Parking and local permits.",
     "Drive rights → Driving licence exchange.",
     "Cover if you buy → Car insurance.",
+    "How we work → Methodology / Sources / Editorial policy.",
   ],
   relatedGuides: [
+    {
+      label: "Survival Guide",
+      href: LIVING_SURVIVAL_GUIDE_PATH,
+      status: "live",
+      description: "Living hub — arrival transport module that links sharing next to OV tickets.",
+    },
     {
       label: "Getting around",
       href: GETTING_AROUND_PATH,
       status: "live",
       description: "Trains, OVpay, bikes and everyday mobility when ownership is optional.",
+    },
+    {
+      label: "OV-chipkaart",
+      href: OV_CHIPKAART_NETHERLANDS_PATH,
+      status: "live",
+      description: "Personal travel card when most weeks stay on public transport.",
+    },
+    {
+      label: "OVpay",
+      href: OVPAY_NETHERLANDS_PATH,
+      status: "live",
+      description: "Contactless taps for everyday OV before you need four wheels.",
+    },
+    {
+      label: "NS trains",
+      href: NS_TRAINS_NETHERLANDS_PATH,
+      status: "live",
+      description: "Rail commuting when sharing is only for occasional gaps.",
     },
     {
       label: "Buying a car",
@@ -894,6 +943,7 @@ export const carSharingNetherlandsPage = {
       status: "live",
       description: "Speed enforcement orientation — fines still apply in shared cars.",
     },
+    ...GUIDE_CITABILITY_POLICY_LINKS,
   ] satisfies DrivingLink[],
   drivingHubTips: [
     "Car sharing is the occasional-access cornerstone of the Driving cluster.",

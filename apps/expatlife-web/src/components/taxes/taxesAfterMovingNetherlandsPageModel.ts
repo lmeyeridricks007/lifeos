@@ -1,5 +1,5 @@
-export const TAXES_AFTER_MOVING_NETHERLANDS_PATH = "/netherlands/taxes/taxes-after-moving-netherlands/" as const;
-export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
+export const TAXES_AFTER_MOVING_NETHERLANDS_PATH = "/netherlands/taxes/taxes-after-moving-netherlands" as const;
+export const TAXES_HUB_PATH = "/netherlands/taxes" as const;
 
 export type TaxesAfterMovingNetherlandsLink = {
   label: string;

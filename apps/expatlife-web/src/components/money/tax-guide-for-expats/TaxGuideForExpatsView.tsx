@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArrowRight } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
 import { BoldParagraph } from "@/components/content/PillarContentBlocks";
@@ -65,12 +66,12 @@ const INFO_CHIP =
 
 export function TaxGuideForExpatsView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Money", item: new URL(taxGuideRoutes.moneyTools, baseUrl).toString() },
-    { name: "Netherlands Tax Guide for Expats", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Netherlands Tax Guide for Expats", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const primaryCtaClass = cn(

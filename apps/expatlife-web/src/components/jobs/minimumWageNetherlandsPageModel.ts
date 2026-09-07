@@ -1,17 +1,17 @@
-export const MINIMUM_WAGE_NETHERLANDS_PATH = "/netherlands/jobs/minimum-wage-netherlands/" as const;
-export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator/" as const;
-export const AVERAGE_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/average-salary-netherlands/" as const;
-export const NET_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/net-salary-netherlands/" as const;
-export const GROSS_VS_NET_SALARY_PATH = "/netherlands/taxes/gross-vs-net-salary/" as const;
-export const PAYROLL_TAX_NETHERLANDS_PATH = "/netherlands/taxes/payroll-tax-netherlands/" as const;
-export const SALARY_NEGOTIATION_NETHERLANDS_PATH = "/netherlands/jobs/salary-negotiation-netherlands/" as const;
-export const TAXES_HUB_PATH = "/netherlands/taxes/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const HSM_VISA_PATH = "/netherlands/visa/highly-skilled-migrant/" as const;
-export const THIRTY_PERCENT_RULING_GUIDE_PATH = "/netherlands/taxes/30-percent-ruling/" as const;
-export const MOVING_CHECKLIST_TOOL_PATH = "/netherlands/moving/tools/moving-checklist/" as const;
-export const COST_OF_LIVING_CALCULATOR_PATH = "/netherlands/money/tools/cost-of-living-calculator/" as const;
-export const RENT_AFFORDABILITY_CALCULATOR_PATH = "/netherlands/housing/tools/rent-affordability-calculator/" as const;
+export const MINIMUM_WAGE_NETHERLANDS_PATH = "/netherlands/jobs/minimum-wage-netherlands" as const;
+export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator" as const;
+export const AVERAGE_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/average-salary-netherlands" as const;
+export const NET_SALARY_NETHERLANDS_PATH = "/netherlands/taxes/net-salary-netherlands" as const;
+export const GROSS_VS_NET_SALARY_PATH = "/netherlands/taxes/gross-vs-net-salary" as const;
+export const PAYROLL_TAX_NETHERLANDS_PATH = "/netherlands/taxes/payroll-tax-netherlands" as const;
+export const SALARY_NEGOTIATION_NETHERLANDS_PATH = "/netherlands/jobs/salary-negotiation-netherlands" as const;
+export const TAXES_HUB_PATH = "/netherlands/taxes" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const HSM_VISA_PATH = "/netherlands/visa/highly-skilled-migrant" as const;
+export const THIRTY_PERCENT_RULING_GUIDE_PATH = "/netherlands/taxes/30-percent-ruling" as const;
+export const MOVING_CHECKLIST_TOOL_PATH = "/netherlands/moving/tools/moving-checklist" as const;
+export const COST_OF_LIVING_CALCULATOR_PATH = "/netherlands/money/tools/cost-of-living-calculator" as const;
+export const RENT_AFFORDABILITY_CALCULATOR_PATH = "/netherlands/housing/tools/rent-affordability-calculator" as const;
 
 export const MINIMUM_WAGE_AFFILIATE_PLACEMENT_ID = "nl-jobs-minimum-wage-support-providers" as const;
 

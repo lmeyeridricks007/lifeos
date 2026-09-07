@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { ArticleJsonLd, FaqPageJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getSiteOrigin } from "@/lib/site-origin";
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
   title: page.seo.title,
   description: page.seo.description,
   keywords: [...page.seo.keywords],
-  alternates: { canonical: page.path },
+  alternates: { canonical: absoluteUrlFromPath(page.path)},
   openGraph: {
     title: page.seo.title,
     description: page.seo.description,

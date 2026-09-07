@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
 import { PillarMainStack } from "@/components/page/pillar-template";
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
   title: "Search",
   description:
     "Find live Netherlands relocation guides, tools, visa pages, expat services, and city hubs. Results only include published pages.",
-  alternates: { canonical: "/search/" },
+  alternates: { canonical: absoluteUrlFromPath("/search/")},
   robots: { index: false, follow: true },
 };
 

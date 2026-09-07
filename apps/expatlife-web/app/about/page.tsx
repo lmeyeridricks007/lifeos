@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { Section } from "@/components/ui/section";
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   title: pageMetadataTitle(aboutPage.seo.title),
   description: aboutPage.seo.description,
   keywords: [...aboutPage.seo.keywords],
-  alternates: { canonical: path },
+  alternates: { canonical: absoluteUrlFromPath(path)},
   openGraph: {
     title: aboutPage.seo.title,
     description: aboutPage.seo.description,

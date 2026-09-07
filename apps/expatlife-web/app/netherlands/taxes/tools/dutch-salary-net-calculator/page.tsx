@@ -1,3 +1,4 @@
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Link from "next/link";
@@ -29,7 +30,7 @@ import {
 
 export const revalidate = CONTENT_REVALIDATE;
 
-const canonical = "/netherlands/taxes/tools/dutch-salary-net-calculator/";
+const canonical = "/netherlands/taxes/tools/dutch-salary-net-calculator";
 const BASE = "/netherlands";
 const PAYSLIP_DECODER_HREF = `${BASE}/work/tools/payslip-decoder/`;
 
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: META_TITLE,
     description: META_DESCRIPTION,
-    url: canonical,
+    url: absoluteUrlFromPath(canonical),
     images: [{ url: HERO_IMAGE, width: 1200, height: 630, alt: "Illustration: desk with laptop and salary planning visuals." }],
   },
   twitter: {
@@ -269,7 +270,7 @@ function relatedGuidesFromRouteStatus(
 
 export default function DutchSalaryNetCalculatorPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(canonical, origin).toString();
+  const shareUrl = absoluteUrlFromPath(canonical);
   const taxAdvisorCards = getThirtyPercentRulingTaxAdvisorCards();
   const payrollCards = getDutchSalaryNetPayrollServiceCards();
   const relocationCards = getDutchSalaryNetRelocationConsultantCards();
@@ -529,7 +530,7 @@ export default function DutchSalaryNetCalculatorPage() {
         primarySectionContent={
           <DutchSalaryNetCalculatorClient
             monetization={salaryOptimizeMonetization}
-            calculatorCanonicalUrl={new URL(canonical, origin).toString()}
+            calculatorCanonicalUrl={absoluteUrlFromPath(canonical)}
           />
         }
         seoContentSectionTitle="How we estimate your result"

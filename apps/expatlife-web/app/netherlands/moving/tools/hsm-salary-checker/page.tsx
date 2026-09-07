@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle, sharePreviewTitle } from "@/lib/seo/metadata";
 import { ToolPageTemplate } from "@/src/components/tools/ToolPageTemplate";
 import { MoveHero } from "@/components/page/move-shell";
 import { buildBreadcrumbSchema } from "@/src/lib/seo/breadcrumbSchema";
@@ -10,6 +10,7 @@ import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getRouteStatus } from "@/src/lib/routes/routeStatus";
 import { HsmSalaryCheckerClient } from "@/src/components/tools/hsm-salary-checker/HsmSalaryCheckerClient";
+import { AuthorityCitationBlock } from "@/src/components/authority/AuthorityCitationBlock";
 import {
   HSM_SALARY_CANONICAL,
   HSM_SALARY_FAQ_ITEMS,
@@ -17,7 +18,13 @@ import {
   HSM_SALARY_RELATED_GUIDES,
   HSM_SALARY_THRESHOLD_SUMMARY,
 } from "@/src/content/tools/hsm-salary-checker/content";
-import { HSM_SALARY_FIGURE_YEAR } from "@/src/lib/tools/hsm-salary-checker/thresholds";
+import {
+  HSM_SALARY_FIGURE_YEAR,
+  HSM_SALARY_THRESHOLDS_EUR,
+  IND_REQUIRED_AMOUNTS_URL,
+  formatEurMonthly,
+} from "@/src/lib/tools/hsm-salary-checker/thresholds";
+import { OFFICIAL_FIGURES_LAST_REVIEWED, OFFICIAL_FIGURES_PATH } from "@/src/components/official-figures/officialFigures2026";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -27,7 +34,7 @@ const META_DESCRIPTION = `Compare a job offer to Dutch Highly Skilled Migrant sa
 export const metadata: Metadata = {
   title: pageMetadataTitle(META_TITLE),
   description: META_DESCRIPTION,
-  alternates: { canonical: HSM_SALARY_CANONICAL },
+  alternates: { canonical: absoluteUrlFromPath(HSM_SALARY_CANONICAL)},
   keywords: [
     "HSM salary checker",
     "highly skilled migrant salary Netherlands",
@@ -40,7 +47,7 @@ export const metadata: Metadata = {
     url: HSM_SALARY_CANONICAL,
     images: [
       {
-        url: "/images/heroes/highly-skilled-migrant-netherlands.png",
+        url: absoluteUrlFromPath("/images/heroes/highly-skilled-migrant-netherlands.png"),
         width: 1200,
         height: 630,
         alt: "Job offer and salary documents for Highly Skilled Migrant planning in the Netherlands.",
@@ -66,7 +73,7 @@ function resolveRelatedGuides() {
 
 export default function HsmSalaryCheckerPage() {
   const origin = getSiteOrigin();
-  const shareUrl = new URL(HSM_SALARY_CANONICAL, origin).toString();
+  const shareUrl = absoluteUrlFromPath(HSM_SALARY_CANONICAL);
   const relatedGuides = resolveRelatedGuides();
   const floorsLine = HSM_SALARY_THRESHOLD_SUMMARY.map((r) => `${r.label} ${r.amount}`).join(" · ");
 
@@ -136,6 +143,17 @@ export default function HsmSalaryCheckerPage() {
         explanatorySectionsOuterTitle="How this tool works"
         explanatorySections={[
           {
+            id: "methodology",
+            title: "Methodology",
+            bullets: [
+              `Data source: IND required amounts for Highly Skilled Migrants (${HSM_SALARY_FIGURE_YEAR} planning mirrors — verify live).`,
+              `Calculation: compare entered gross monthly salary to age 30+ (${formatEurMonthly(HSM_SALARY_THRESHOLDS_EUR.thirtyPlus)}), under 30 (${formatEurMonthly(HSM_SALARY_THRESHOLDS_EUR.under30)}), and optional reduced criterion (${formatEurMonthly(HSM_SALARY_THRESHOLDS_EUR.reduced)}).`,
+              "Assumptions: floors are gross per month, typically without holiday allowance; reduced criterion applies only when you indicate it may apply.",
+              "Limitations: not an IND decision; market-conform pay, sponsor recognition, and other permit conditions are out of scope.",
+              `Last reviewed with ExpatCopilot official figures: ${OFFICIAL_FIGURES_LAST_REVIEWED}.`,
+            ],
+          },
+          {
             id: "what-we-compare",
             title: "What we compare",
             body: [
@@ -185,26 +203,65 @@ export default function HsmSalaryCheckerPage() {
           </nav>
         }
         extraSection={
-          <section id="official-sources" className="scroll-mt-28 space-y-3 md:scroll-mt-32">
-            <h3 className="text-lg font-semibold text-copilot-text-primary">Official sources</h3>
-            <p className="text-sm text-copilot-text-secondary">
-              Always verify current salary floors here. ExpatLife figures are orientation only.
-            </p>
-            <ul className="space-y-2">
-              {HSM_SALARY_OFFICIAL_SOURCES.map((source) => (
-                <li key={source.href}>
-                  <a
-                    href={source.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-medium text-brand-600 hover:underline"
-                  >
-                    {source.label} →
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </section>
+          <div className="space-y-8">
+            <section id="official-sources" className="scroll-mt-28 space-y-3 md:scroll-mt-32">
+              <h3 className="text-lg font-semibold text-copilot-text-primary">Official sources</h3>
+              <p className="text-sm text-copilot-text-secondary">
+                Always verify current salary floors on IND. ExpatCopilot mirrors are orientation only — see also the{" "}
+                <Link href={OFFICIAL_FIGURES_PATH} className="font-medium text-brand-600 hover:underline">
+                  official figures citation table
+                </Link>
+                .
+              </p>
+              <div className="overflow-x-auto rounded-xl border border-copilot-primary/10 bg-copilot-surface">
+                <table className="w-full min-w-[420px] border-collapse text-left text-sm">
+                  <thead>
+                    <tr className="border-b border-copilot-primary/10 bg-copilot-bg-soft/80">
+                      <th scope="col" className="px-3 py-2 font-semibold text-copilot-text-primary">
+                        Band
+                      </th>
+                      <th scope="col" className="px-3 py-2 font-semibold text-copilot-text-primary">
+                        Gross monthly ({HSM_SALARY_FIGURE_YEAR})
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {HSM_SALARY_THRESHOLD_SUMMARY.map((row) => (
+                      <tr key={row.label} className="border-b border-copilot-primary/5">
+                        <th scope="row" className="px-3 py-2 font-medium text-copilot-text-primary">
+                          {row.label}
+                        </th>
+                        <td className="px-3 py-2 tabular-nums text-copilot-text-secondary">{row.amount}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <ul className="space-y-2">
+                {HSM_SALARY_OFFICIAL_SOURCES.map((source) => (
+                  <li key={source.href}>
+                    <a
+                      href={source.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-medium text-brand-600 hover:underline"
+                    >
+                      {source.label} →
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+            <AuthorityCitationBlock
+              variant="copilot"
+              referenceName={`ExpatCopilot — HSM salary checker (${HSM_SALARY_FIGURE_YEAR})`}
+              pagePath={HSM_SALARY_CANONICAL}
+              dataSources={`IND required amounts (${IND_REQUIRED_AMOUNTS_URL}). Thresholds mirrored on ${OFFICIAL_FIGURES_PATH}.`}
+              updated={OFFICIAL_FIGURES_LAST_REVIEWED}
+              methodologySummary="Client-side comparison of gross monthly offer to IND HSM salary floors by age band and optional reduced criterion. Not an IND decision."
+              methodologyHref="#methodology"
+            />
+          </div>
         }
       >
         {null}

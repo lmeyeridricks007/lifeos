@@ -1,5 +1,6 @@
 import { getSiteOrigin } from "@/lib/site-origin";
 import { filterLiveInternalLinks } from "@/src/lib/routes/routeStatus";
+import { countryToolHref } from "@/src/lib/tools/shared/countryToolLinkModel";
 import {
   buildCountryCostNarrative,
   buildCountryDifferences,
@@ -134,8 +135,11 @@ export type CountryPageModel = {
 export function buildCountryPageModel(country: CountryRecord, templates: CountryTemplateData): CountryPageModel {
   const countryLabel = country.name || formatCountryForLabel(country.slug);
   const siteUrl = getSiteOrigin();
-  const canonicalPath = `/netherlands/moving/moving-to-netherlands-from/${country.slug}/`;
-  const fromQuery = `?from=${encodeURIComponent(country.slug)}`;
+  const canonicalPath = `/netherlands/moving/moving-to-netherlands-from/${country.slug}`;
+  const checklistHref = countryToolHref("moving-checklist", country.slug);
+  const first90Href = countryToolHref("first-90-days", country.slug);
+  const arrivalPlannerHref = countryToolHref("arrival-planner", country.slug);
+  const documentReadinessHref = countryToolHref("document-readiness", country.slug);
 
   const subtitleTemplate =
     templates.defaults.hero.subtitleTemplates[country.distanceCategory] ??
@@ -223,11 +227,11 @@ export function buildCountryPageModel(country: CountryRecord, templates: Country
       subtitle: inject(subtitleTemplate, countryLabel),
       primaryCta: {
         label: templates.defaults.hero.checklistCtaLabel,
-        href: `/netherlands/moving/tools/moving-checklist/${fromQuery}`,
+        href: checklistHref,
       },
       secondaryCta: {
         label: templates.defaults.hero.first90DaysCtaLabel,
-        href: `/netherlands/moving/tools/first-90-days/${fromQuery}`,
+        href: first90Href,
       },
     },
     opening: {
@@ -275,7 +279,7 @@ export function buildCountryPageModel(country: CountryRecord, templates: Country
       commonStarterDocuments: country.documents?.commonStarterDocuments ?? [],
       countrySpecificNotes: country.documents?.countrySpecificNotes ?? [],
       sources: country.documents?.sources ?? [],
-      ctaHref: `/netherlands/document-readiness-checker/${fromQuery}`,
+      ctaHref: documentReadinessHref,
     },
     timeline: {
       beforeMove,
@@ -298,9 +302,9 @@ export function buildCountryPageModel(country: CountryRecord, templates: Country
     checklistPreview: {
       summary: templates.defaults.checklistPreview.summary,
       links: [
-        { label: "Open moving checklist tool", href: `/netherlands/moving/tools/moving-checklist/${fromQuery}` },
-        { label: "Open arrival planner", href: `/netherlands/moving/tools/arrival-planner/${fromQuery}` },
-        { label: "Open first 90 days tool", href: `/netherlands/moving/tools/first-90-days/${fromQuery}` },
+        { label: "Open moving checklist tool", href: checklistHref },
+        { label: "Open arrival planner", href: arrivalPlannerHref },
+        { label: "Open first 90 days tool", href: first90Href },
       ],
     },
     affiliate: {

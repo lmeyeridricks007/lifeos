@@ -1,0 +1,37 @@
+{
+  "ymyl_risk_counts": {
+    "LOW": 102,
+    "MEDIUM": 240,
+    "HIGH": 110
+  },
+  "ymyl_domain_counts": {
+    "trust_or_hub": 11,
+    "other": 55,
+    "relocation_planning": 119,
+    "cities_lifestyle": 21,
+    "admin_legal": 14,
+    "employment": 12,
+    "immigration_status": 6,
+    "lifestyle_culture": 34,
+    "immigration": 57,
+    "family_health_finance": 3,
+    "healthcare": 9,
+    "tools_general": 7,
+    "insurance": 4,
+    "housing": 11,
+    "housing_legal": 1,
+    "integration_legal": 4,
+    "employment_law": 8,
+    "compensation": 5,
+    "leaving_admin": 4,
+    "transport": 2,
+    "finance": 31,
+    "tax": 25,
+    "official_figures": 1,
+    "services_directory": 6,
+    "professional_services": 2
+  },
+  "high_count": 110,
+  "medium_count": 240,
+  "low_count": 102
+}

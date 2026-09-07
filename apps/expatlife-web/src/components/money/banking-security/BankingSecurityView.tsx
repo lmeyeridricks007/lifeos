@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { Fragment } from "react";
 import { ArrowRight } from "lucide-react";
@@ -84,12 +85,12 @@ const AT_A_GLANCE_SECTION_CLASS = cn(SECTION_SCROLL_MARGIN, BANKING_AT_A_GLANCE_
 
 export function BankingSecurityView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Banking", item: new URL("/netherlands/money/banking/", baseUrl).toString() },
-    { name: "Banking safety & fraud", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Banking safety & fraud", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const misunderstandingRows = bankingSecurityMisunderstandings.map((c) => ({

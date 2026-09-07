@@ -7,6 +7,8 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
  * (registry + optional `monetization` prop + path inference). App Router layouts cannot read sibling
  * `page.tsx` modules, so `AffiliateSection` slots are injected via `GuidePageTemplate` props.
  * Do not add arbitrary exports from `page.tsx` (Next route typing); use a colocated `monetization.ts` if needed.
+ *
+ * Explore strip is cluster-contextual (IA-P1-EXPLORE-CONCENTRATION) — not a fixed sitewide list.
  */
 export const revalidate = CONTENT_REVALIDATE;
 

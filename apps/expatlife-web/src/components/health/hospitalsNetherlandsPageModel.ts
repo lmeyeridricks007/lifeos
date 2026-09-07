@@ -1,19 +1,19 @@
-export const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands/" as const;
-export const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands/" as const;
+export const HOSPITALS_NETHERLANDS_PATH = "/netherlands/health/hospitals-netherlands" as const;
+export const GP_NETHERLANDS_PATH = "/netherlands/health/gp-netherlands" as const;
 export const EMERGENCY_HEALTHCARE_NETHERLANDS_PATH =
-  "/netherlands/health/emergency-healthcare-netherlands/" as const;
+  "/netherlands/health/emergency-healthcare-netherlands" as const;
 export const MENTAL_HEALTHCARE_NETHERLANDS_PATH =
-  "/netherlands/health/mental-healthcare-netherlands/" as const;
-export const DENTISTS_NETHERLANDS_PATH = "/netherlands/health/dentists-netherlands/" as const;
-export const HEALTH_HUB_PATH = "/netherlands/health/" as const;
-export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands/" as const;
-export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands/" as const;
-export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics/" as const;
-export const EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety/" as const;
-export const HEALTH_SYSTEM_CULTURE_PATH = "/netherlands/culture/health-system-culture-basics/" as const;
-export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-netherlands/" as const;
-export const PHYSIOTHERAPY_NETHERLANDS_PATH = "/netherlands/health/physiotherapy-netherlands/" as const;
-export const MATERNITY_CARE_NETHERLANDS_PATH = "/netherlands/health/maternity-care-netherlands/" as const;
+  "/netherlands/health/mental-healthcare-netherlands" as const;
+export const DENTISTS_NETHERLANDS_PATH = "/netherlands/health/dentists-netherlands" as const;
+export const HEALTH_HUB_PATH = "/netherlands/health" as const;
+export const HEALTH_INSURANCE_PATH = "/netherlands/health-insurance-netherlands" as const;
+export const HEALTHCARE_FOR_CHILDREN_PATH = "/netherlands/family/healthcare-for-children-netherlands" as const;
+export const HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics" as const;
+export const EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety" as const;
+export const HEALTH_SYSTEM_CULTURE_PATH = "/netherlands/culture/health-system-culture-basics" as const;
+export const PHARMACIES_NETHERLANDS_PATH = "/netherlands/health/pharmacies-netherlands" as const;
+export const PHYSIOTHERAPY_NETHERLANDS_PATH = "/netherlands/health/physiotherapy-netherlands" as const;
+export const MATERNITY_CARE_NETHERLANDS_PATH = "/netherlands/health/maternity-care-netherlands" as const;
 
 export type HospitalLink = {
   label: string;
@@ -1615,6 +1615,13 @@ export const hospitalsNetherlandsPage = {
   ],
   relatedGuides: [
     {
+      label: "Healthcare hub",
+      href: HEALTH_HUB_PATH,
+      status: "live",
+      description: "Insurance, huisarts, emergencies, hospitals, mental healthcare and family pathways.",
+    },
+
+    {
       label: "General Practitioner (GP) in the Netherlands",
       href: GP_NETHERLANDS_PATH,
       status: "live",
@@ -1771,8 +1778,8 @@ export const hospitalsNetherlandsPage = {
     {
       label: "Health Hub",
       href: HEALTH_HUB_PATH,
-      status: "comingSoon",
-      description: "Dedicated health hub landing page — planned.",
+      status: "live",
+      description: "Insurance, huisarts, emergencies, hospitals and family care — cluster hub.",
     },
   ] satisfies HospitalLink[],
   exploreNextCards: [

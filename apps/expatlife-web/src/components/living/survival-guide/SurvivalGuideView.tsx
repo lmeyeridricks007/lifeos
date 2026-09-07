@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ArrowRight, CloudRain, TrainFront, Wallet } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
@@ -29,12 +30,14 @@ import {
   LIVING_SHOPPING_GROCERIES_PATH,
   LIVING_QUICK_START_PHASES,
   LIVING_SURVIVAL_CONTINUE_CARDS,
+  LIVING_SURVIVAL_GETTING_AROUND_MODULE_LINKS,
   LIVING_SURVIVAL_GUIDE_PATH,
   LIVING_SURVIVAL_SECTION_NAV,
   LIVING_SURVIVAL_TOOL_SHORTCUTS,
   LIVING_SURVIVAL_TOPIC_CARDS,
   LIVING_WEATHER_PATH,
 } from "@/src/components/living/livingPillarContent";
+import { LivingClusterLinkGrid } from "@/src/components/living/LivingClusterLinkGrid";
 import { bankingSecurityCrossLink } from "@/src/data/banking/bankingSafety";
 import {
   siteGuideColumnPadYClass,
@@ -72,9 +75,9 @@ function EssentialsOverview() {
   const cells: Array<{ title: string; body: string; href: string; cta: string }> = [
     {
       title: "Getting around",
-      body: "Full Living guide: NS, 9292, OVpay, tap-in/out discipline, multimodal commuting, and cycling context.",
-      href: LIVING_GETTING_AROUND_PATH,
-      cta: "Read the transport guide",
+      body: "Arrival transport module below: NS, OV-chipkaart, OVpay, car sharing, and lease — plus the full Getting around overview.",
+      href: "#getting-around",
+      cta: "Open transport module",
     },
     {
       title: "Essential apps",
@@ -323,11 +326,11 @@ const HERO_QUICK_STRIP = [
 
 export function SurvivalGuideView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(LIVING_SURVIVAL_GUIDE_PATH, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(LIVING_SURVIVAL_GUIDE_PATH);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: new URL(LIVING_SURVIVAL_GUIDE_PATH, baseUrl).toString() },
+    { name: LIVING_PILLAR_BREADCRUMB_LABEL, item: absoluteUrlFromPath(LIVING_SURVIVAL_GUIDE_PATH) },
   ];
 
   const heroBullets: string[] = [
@@ -565,6 +568,23 @@ export function SurvivalGuideView() {
               subtitle="Ordered for urgency—each card goes deeper than the last, without repeating the topic grid below."
             >
               <LivingQuickStartCards phases={LIVING_QUICK_START_PHASES} />
+            </SectionBlock>
+
+            <SectionBlock
+              id="getting-around"
+              className={SECTION_SCROLL_MARGIN}
+              eyebrow="Arrival transport"
+              title="Getting around the Netherlands"
+              subtitle="Settle your commute path first: rail and OV tickets for weekdays, then car-sharing or lease only when four wheels earn their keep."
+            >
+              <p className="mb-4 max-w-3xl text-sm leading-relaxed text-foreground-muted sm:mb-5">
+                This module stays on the Survival hub — no new URL. Start with the{" "}
+                <Link href={LIVING_GETTING_AROUND_PATH} className="font-semibold text-link hover:text-link-hover hover:underline">
+                  Getting around overview
+                </Link>{" "}
+                for the multimodal model, then open NS, OV-chipkaart, OVpay, car sharing, or lease when you need depth.
+              </p>
+              <LivingClusterLinkGrid items={LIVING_SURVIVAL_GETTING_AROUND_MODULE_LINKS} />
             </SectionBlock>
 
             <div className="mx-auto hidden h-px max-w-3xl bg-gradient-to-r from-transparent via-border/80 to-transparent sm:block" aria-hidden />

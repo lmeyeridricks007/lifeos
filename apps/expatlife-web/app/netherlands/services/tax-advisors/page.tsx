@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { pageMetadataTitle } from "@/lib/seo/metadata";
+import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
 import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -68,9 +68,9 @@ export const metadata: Metadata = {
   title: pageMetadataTitle(seo.title),
   description: seo.description,
   keywords: [...seo.keywords],
-  alternates: { canonical: path },
+  alternates: { canonical: absoluteUrlFromPath(path)},
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-  openGraph: { title: seo.title, description: seo.description, type: "website", url: new URL(path, baseUrl).toString(), images: [{ url: hero.image.src, alt: hero.image.alt }] },
+  openGraph: { title: seo.title, description: seo.description, type: "website", url: absoluteUrlFromPath(path), images: [{ url: hero.image.src, alt: hero.image.alt }] },
   twitter: { card: "summary_large_image", title: seo.title, description: seo.description, images: [hero.image.src] },
 };
 
@@ -184,16 +184,16 @@ function ScenarioTile({ scenario, index }: { scenario: (typeof page.scenarios)[n
 export default function TaxAdvisorsServicesPage() {
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
-    { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
-    { name: "Services", item: new URL("/netherlands/services/", baseUrl).toString() },
-    { name: "Tax Advisors", item: new URL(path, baseUrl).toString() },
+    { name: "Netherlands", item: absoluteUrlFromPath("/netherlands/") },
+    { name: "Services", item: absoluteUrlFromPath("/netherlands/services/") },
+    { name: "Tax Advisors", item: absoluteUrlFromPath(path) },
   ];
 
   return (
     <>
       <BreadcrumbJsonLd crumbs={crumbs} />
       <WebPageJsonLd name={hero.pageTitle} description={seo.description} urlPath={path} datePublished={publishDate} />
-      <FaqPageJsonLd items={page.faq.map((item) => ({ q: item.q, a: item.a }))} url={new URL(path, baseUrl).toString()} />
+      <FaqPageJsonLd items={page.faq.map((item) => ({ q: item.q, a: item.a }))} url={absoluteUrlFromPath(path)} />
       <main className={sitePageCanvasClass}>
         <Container className={cn("w-full max-w-screen-2xl", siteGuideColumnPadYClass)}>
           <section className={cn(siteHeroFramedShellClass, "p-0")}>

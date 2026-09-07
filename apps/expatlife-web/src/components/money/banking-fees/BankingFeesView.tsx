@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import Link from "next/link";
 import { ArrowRight, CreditCard, Globe2, Landmark, Send } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/components/content/breadcrumb-jsonld";
@@ -67,12 +68,12 @@ const SECTION_MAJOR = BANKING_GUIDE_MAJOR_SECTION_CLASS;
 
 export function BankingFeesView() {
   const baseUrl = getSiteOrigin();
-  const shareUrl = new URL(CANONICAL, baseUrl).toString();
+  const shareUrl = absoluteUrlFromPath(CANONICAL);
   const crumbs = [
     { name: "Home", item: new URL("/", baseUrl).toString() },
     { name: "Netherlands", item: new URL("/netherlands/", baseUrl).toString() },
     { name: "Banking", item: new URL("/netherlands/money/banking/", baseUrl).toString() },
-    { name: "Fees & costs", item: new URL(CANONICAL, baseUrl).toString() },
+    { name: "Fees & costs", item: absoluteUrlFromPath(CANONICAL) },
   ];
 
   const trapRows = meta.hiddenTraps.cards.map((c) => ({

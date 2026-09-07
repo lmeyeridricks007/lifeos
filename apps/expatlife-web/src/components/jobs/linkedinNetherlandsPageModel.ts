@@ -21,10 +21,10 @@ import {
 import { COVER_LETTER_NETHERLANDS_PATH } from "./coverLetterNetherlandsPageModel";
 import { scheduledPublishDateForPath } from "@/src/lib/publishing/scheduledGuides";
 
-export const LINKEDIN_NETHERLANDS_PATH = "/netherlands/jobs/linkedin-netherlands/" as const;
-export const NETWORKING_NETHERLANDS_PATH = "/netherlands/jobs/networking-netherlands/" as const;
+export const LINKEDIN_NETHERLANDS_PATH = "/netherlands/jobs/linkedin-netherlands" as const;
+export const NETWORKING_NETHERLANDS_PATH = "/netherlands/jobs/networking-netherlands" as const;
 /** Job-board channel stub (Money menu) — separate from this profile/use guide. */
-export const LINKEDIN_JOBS_STUB_PATH = "/netherlands/work/linkedin-jobs-netherlands/" as const;
+export const LINKEDIN_JOBS_STUB_PATH = "/netherlands/work/linkedin-jobs-netherlands" as const;
 
 export {
   CV_NETHERLANDS_PATH,

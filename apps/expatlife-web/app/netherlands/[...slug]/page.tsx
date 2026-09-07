@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrlFromPath } from "@/lib/seo/metadata";
 import { notFound, permanentRedirect } from "next/navigation";
 import { ComingSoonPage } from "@/src/components/content/ComingSoonPage";
 import { GuidePageTemplate } from "@/src/components/guides/GuidePageTemplate";
@@ -108,8 +109,8 @@ export default async function NetherlandsCatchAllPage({ params }: Props) {
 
     const breadcrumbCrumbs = [
       { name: "Home", item: new URL("/", baseUrl).toString() },
-      { name: "Netherlands", item: new URL("/netherlands", baseUrl).toString() },
-      { name: "Moving to the Netherlands", item: new URL("/netherlands/moving-to-the-netherlands/", baseUrl).toString() },
+      { name: "Netherlands", item: absoluteUrlFromPath("/netherlands") },
+      { name: "Moving to the Netherlands", item: absoluteUrlFromPath("/netherlands/moving-to-the-netherlands/") },
       {
         name: data.breadcrumbLabel ?? data.title,
         item: new URL(data.path, baseUrl).toString(),

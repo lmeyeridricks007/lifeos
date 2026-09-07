@@ -1,12 +1,12 @@
-export const DATING_NETHERLANDS_PATH = "/netherlands/life/dating-in-the-netherlands/" as const;
-export const LIFE_HUB_PATH = "/netherlands/life/" as const;
-export const COMMUNITY_BASICS_NETHERLANDS_PATH = "/netherlands/life/community-basics-netherlands/" as const;
-export const DUTCH_SOCIAL_NORMS_PATH = "/netherlands/life/dutch-social-norms/" as const;
-export const LANGUAGE_LEARNING_PATH = "/netherlands/language-learning/" as const;
-export const DUTCH_WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-culture/" as const;
-export const CITIES_HUB_PATH = "/netherlands/cities/" as const;
-export const VOLUNTEERING_PATH = "/netherlands/life/volunteering-netherlands/" as const;
-export const EXPAT_LONELINESS_PATH = "/netherlands/life/expat-loneliness-netherlands/" as const;
+export const DATING_NETHERLANDS_PATH = "/netherlands/life/dating-in-the-netherlands" as const;
+export const LIFE_HUB_PATH = "/netherlands/life" as const;
+export const COMMUNITY_BASICS_NETHERLANDS_PATH = "/netherlands/life/community-basics-netherlands" as const;
+export const DUTCH_SOCIAL_NORMS_PATH = "/netherlands/life/dutch-social-norms" as const;
+export const LANGUAGE_LEARNING_PATH = "/netherlands/language-learning" as const;
+export const DUTCH_WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-culture" as const;
+export const CITIES_HUB_PATH = "/netherlands/cities" as const;
+export const VOLUNTEERING_PATH = "/netherlands/life/volunteering-netherlands" as const;
+export const EXPAT_LONELINESS_PATH = "/netherlands/life/expat-loneliness-netherlands" as const;
 
 export type LifeGuideLink = {
   label: string;

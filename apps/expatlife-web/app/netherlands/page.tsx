@@ -10,9 +10,10 @@ export const revalidate = CONTENT_REVALIDATE;
 const baseUrl = getSiteOrigin();
 
 export const metadata = buildSocialMetadata({
+  // Country hub — distinct from homepage brand title ("ExpatCopilot | Guides and tools…").
   title: "Move to the Netherlands",
   description:
-    "Practical relocation platform with guides, tools, and country-specific routes for moving to the Netherlands. Step-by-step clarity for expats.",
+    "Netherlands relocation hub: step-by-step guides, planning tools, city routes, and origin-country paths for expats preparing to move.",
   path: "/netherlands/",
   ogType: "website",
 });
