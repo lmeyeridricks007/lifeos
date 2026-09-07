@@ -121,7 +121,7 @@
     "title": "Identify which key documents are still missing",
     "whyItMatters": "Document gaps usually create repeated delays across registration, banking, and other tasks.",
     "suggestedNextStep": "Check our documents guide and list what you still need; order or request them as soon as possible.",
-    "relatedGuide": "/netherlands/documents-needed-to-move-netherlands/",
+    "relatedGuide": "/netherlands/document-readiness-checker/",
     "conditions": {
       "arrivalStage": ["arriving-soon", "already-arrived", "arrived-a-while-ago"],
       "household": ["solo", "partner", "kids"],

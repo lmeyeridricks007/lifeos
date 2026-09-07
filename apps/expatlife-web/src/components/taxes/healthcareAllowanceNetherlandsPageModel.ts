@@ -11,7 +11,7 @@ export const GROSS_VS_NET_SALARY_PATH = "/netherlands/taxes/gross-vs-net-salary"
 export const DUTCH_SALARY_NET_CALCULATOR_PATH = "/netherlands/taxes/tools/dutch-salary-net-calculator" as const;
 export const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling" as const;
 export const EMPLOYEE_BENEFITS_NETHERLANDS_PATH = "/netherlands/jobs/employee-benefits-netherlands" as const;
-export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/taxes/expat-taxes-netherlands" as const;
+export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/money/expat-taxes-netherlands" as const;
 export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
 
 export type HealthcareAllowanceNetherlandsLink = {

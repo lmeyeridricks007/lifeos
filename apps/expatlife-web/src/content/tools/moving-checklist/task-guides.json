@@ -2,8 +2,8 @@
   "default": [
     { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
     { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-    { "label": "Moving documents checklist", "href": "/netherlands/moving-documents-checklist/" },
-    { "label": "Documents needed", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Moving documents checklist", "href": "/netherlands/document-readiness-checker/" },
+    { "label": "Documents needed", "href": "/netherlands/document-readiness-checker/" },
     { "label": "Moving requirements", "href": "/netherlands/moving-requirements-netherlands/" }
   ],
   "handoff": [

@@ -24,7 +24,7 @@ export const moveExtensionsChangesRelatedTools = {
         { title: "Move & immigration tools", description: "Checklists, document readiness, first 90 days, arrival.", href: "/netherlands/moving/tools/" },
         { title: "First 90 days planner", description: "Re-sequence tasks after a life change.", href: "/netherlands/moving/tools/first-90-days/" },
         { title: "Arrival planner", description: "Reorder first-week admin when your flow changes.", href: "/netherlands/moving/tools/arrival-planner/" },
-        { title: "Document readiness", description: "What to gather when circumstances shift.", href: "/netherlands/moving/tools/document-readiness/" },
+        { title: "Document readiness", description: "What to gather when circumstances shift.", href: "/netherlands/document-readiness-checker/" },
       ],
     },
     {

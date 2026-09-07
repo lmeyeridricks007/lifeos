@@ -197,7 +197,7 @@
     },
     {
       "label": "Check Document Readiness",
-      "href": "/netherlands/moving/tools/document-readiness/"
+      "href": "/netherlands/document-readiness-checker/"
     },
     {
       "label": "Build Your Arrival Plan",
@@ -255,7 +255,7 @@
       },
       {
         "label": "Documents Needed to Move to the Netherlands",
-        "href": "/netherlands/documents-needed-to-move-netherlands/"
+        "href": "/netherlands/document-readiness-checker/"
       },
       {
         "label": "After Arriving in the Netherlands",
@@ -263,7 +263,7 @@
       },
       {
         "label": "Register Address in the Netherlands",
-        "href": "/netherlands/register-address-netherlands/"
+        "href": "/netherlands/practical-life/registering-your-address-netherlands/"
       },
       {
         "label": "BSN Registration in the Netherlands",

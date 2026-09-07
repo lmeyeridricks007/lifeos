@@ -452,7 +452,7 @@ export function TaxesHubView() {
                     <p>It has eligibility requirements and is usually arranged through an employer and payroll setup. Eligibility depends on individual circumstances, and rules can change.</p>
                   </SectionIntro>
                   <div className="mt-6">
-                    <LiveOrSoonCard item={{ label: "Open the 30% ruling guide", href: "/netherlands/money/taxes/30-percent-ruling/", status: "live", description: "Read the dedicated guide before relying on any net-pay estimate." }} iconIndex={1} />
+                    <LiveOrSoonCard item={{ label: "Open the 30% ruling guide", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "Read the dedicated guide before relying on any net-pay estimate." }} iconIndex={1} />
                   </div>
                 </div>
                 <ThirtyRulingVisual />

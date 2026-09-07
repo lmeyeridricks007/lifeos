@@ -67,7 +67,7 @@
         "text": "Some certificates are only valid for a limited period before travel. Plan the sequence (chip → vaccination → waiting period → travel date) with your vet, not as a last-minute task."
       },
       "links": [
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" }
       ]
     },
     {
@@ -244,7 +244,7 @@
     "related": [
       { "label": "Pets in the Netherlands (everyday life after arrival)", "href": "/netherlands/family/pets-netherlands/" },
       { "label": "Pet relocation companies (specialist flight-pet logistics)", "href": "/netherlands/services/pet-relocation-companies/" },
-      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Shipping household goods to the Netherlands", "href": "/netherlands/shipping-household-goods-netherlands/" },
       { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
       { "label": "Moving checklist (Netherlands)", "href": "/netherlands/moving-checklist-netherlands/" }
@@ -258,7 +258,7 @@
     { "label": "Pets in the Netherlands (after arrival)", "href": "/netherlands/family/pets-netherlands/" },
     { "label": "Pet relocation companies", "href": "/netherlands/services/pet-relocation-companies/" },
     { "label": "Read the full Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
-    { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
     { "label": "Document Readiness Checker", "href": "/netherlands/document-readiness-checker/" }
   ],
 

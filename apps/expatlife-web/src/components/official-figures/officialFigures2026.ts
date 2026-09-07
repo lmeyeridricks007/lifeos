@@ -150,7 +150,7 @@ export const officialFiguresRows: readonly OfficialFigureRow[] = [
     notes: "MVV (when required) is billed separately (~€171 orientation). Full schedule on IND fees page.",
     sourceLabel: "IND — Fees: costs of an application",
     sourceHref: "https://ind.nl/en/fees-costs-of-an-application",
-    relatedGuideHref: "/netherlands/moving/tools/visa-cost-calculator/",
+    relatedGuideHref: "/netherlands/visa-cost-calculator/",
     relatedGuideLabel: "Visa cost calculator",
   },
   {

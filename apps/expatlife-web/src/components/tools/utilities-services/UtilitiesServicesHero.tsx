@@ -1,6 +1,6 @@
 import { MoveHero } from "@/components/page/move-shell";
 
-const UTILITIES_GUIDE = "/netherlands/living/utilities/";
+const UTILITIES_GUIDE = "/netherlands/utilities/utilities-netherlands/";
 
 type UtilitiesServicesHeroProps = {
   shareUrl: string;

@@ -66,7 +66,7 @@ export const moveResidencePermitLifecycle: MoveResidencePermitLifecycle = {
     moreNote:
       "Read our documents and after arrival guides (links below). When pay starts, payslip and salary tools help you see what hits your account.",
     docLinks: [
-      { label: "Documents overview", href: "/netherlands/documents-needed-to-move-netherlands/" },
+      { label: "Documents overview", href: "/netherlands/document-readiness-checker/" },
       { label: "After arriving", href: "/netherlands/after-arriving-netherlands/" },
       { label: "Extensions & changes", href: "/netherlands/moving/extensions-changes/" },
       { label: "Status changes", href: "/netherlands/moving/status-changes/" },

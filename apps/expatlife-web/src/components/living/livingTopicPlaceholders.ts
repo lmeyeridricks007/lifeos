@@ -40,7 +40,7 @@ export const LIVING_PLACEHOLDER_DAILY_LIFE: LivingTopicPlaceholderSpec = {
   relatedLinks: [
     { href: SG, label: "Netherlands Survival Guide", description: "Bookmarkable hub for new arrivals." },
     { href: "/netherlands/culture/what-feels-normal-in-dutch-daily-life/", label: "What feels normal in Dutch daily life", description: "Culture pillar companion." },
-    { href: "/netherlands/living/utilities/", label: "Utilities in the Netherlands", description: "Energy, water, and setup after move-in." },
+    { href: "/netherlands/utilities/utilities-netherlands/", label: "Utilities in the Netherlands", description: "Energy, water, and setup after move-in." },
     { href: "/netherlands/living/tools/utilities-services-comparison/", label: "Utilities & services comparison", description: "Planning tool for household lines." },
   ],
 };
@@ -64,7 +64,7 @@ export const LIVING_PLACEHOLDER_LANGUAGE: LivingTopicPlaceholderSpec = {
   relatedLinks: [
     { href: SG, label: "Netherlands Survival Guide", description: "Start here for day-to-day orientation." },
     {
-      href: "/netherlands/living/culture-etiquette/",
+      href: "/netherlands/life/dutch-etiquette/",
       label: "Dutch Culture & Etiquette",
       description: "Social norms, directness, and everyday context for language use.",
     },

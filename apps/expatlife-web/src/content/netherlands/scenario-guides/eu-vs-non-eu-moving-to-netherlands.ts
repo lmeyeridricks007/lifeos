@@ -37,7 +37,7 @@ export const euVsNonEuMovingToNetherlands: ScenarioGuideContent = {
       body: [
         "EU nationals often only need a valid ID or passport and can plan travel and housing without a prior permit. Non-EU nationals usually need an authorisation or visa before travelling, which means securing a sponsor, admission, or family link and submitting documents in advance. Apostilles and translations are common for non-EU routes.",
       ],
-      cta: { label: "Documents needed", href: "/netherlands/documents-needed-to-move-netherlands/" },
+      cta: { label: "Documents needed", href: "/netherlands/document-readiness-checker/" },
     },
     {
       id: "arrival-and-admin",
@@ -70,7 +70,7 @@ export const euVsNonEuMovingToNetherlands: ScenarioGuideContent = {
   checklist: [
     { label: "Confirm which rules apply to your nationality and purpose." },
     { label: "If non-EU, identify your permit route and sponsor or institution." },
-    { label: "Gather documents (passport, civil docs, proof of purpose).", href: "/netherlands/moving/tools/document-readiness/" },
+    { label: "Gather documents (passport, civil docs, proof of purpose).", href: "/netherlands/document-readiness-checker/" },
     { label: "Use the Moving Checklist to plan steps and order.", href: "/netherlands/moving/tools/moving-checklist/" },
   ],
   mistakes: [
@@ -101,7 +101,7 @@ export const euVsNonEuMovingToNetherlands: ScenarioGuideContent = {
     { label: "Moving to the Netherlands", href: "/netherlands/moving-to-the-netherlands/", description: "Full relocation guide" },
     { label: "Move without a job", href: "/netherlands/move-to-netherlands-without-job/", description: "When a job is not required" },
     { label: "BSN registration", href: "/netherlands/bsn-registration/", description: "When you get your BSN" },
-    { label: "Register address", href: "/netherlands/register-address-netherlands/", description: "Municipality registration" },
+    { label: "Register address", href: "/netherlands/practical-life/registering-your-address-netherlands/", description: "Municipality registration" },
     { label: "Moving with family", href: "/netherlands/moving-to-netherlands-with-family/", description: "Family route" },
   ],
   relatedTools: ["moving-checklist", "document-readiness"],

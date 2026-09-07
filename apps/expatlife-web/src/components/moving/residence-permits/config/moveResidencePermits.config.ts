@@ -417,7 +417,7 @@ export const moveResidencePermitsPageMeta: MoveResidencePermitsPageMeta = {
         id: "docs",
         title: "Documents needed to move",
         description: "Which documents matter for your situation.",
-        href: "/netherlands/documents-needed-to-move-netherlands/",
+        href: "/netherlands/document-readiness-checker/",
         ctaLabel: "Read guide",
       },
     ],

@@ -14,7 +14,7 @@
     "countryNotes": {
       "south-africa": "If renewing in South Africa, allow for processing delays and do not leave renewal to the last moment."
     },
-    "relatedGuides": ["/netherlands/moving-documents-checklist/", "/netherlands/visa-documents-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "whenVisible": { "stage": ["before-move", "arriving-soon"] }
   },
@@ -31,7 +31,7 @@
     "dependencies": [],
     "typicalSteps": ["Identify the correct route (e.g. HSM, partner, study) using IND or official sources", "List required documents and any employer or sponsor steps", "Submit application or have sponsor submit in time for your planned arrival", "Keep copies of all submissions and reference numbers"],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/visa-documents-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "whenVisible": { "region": ["non-eu"], "stage": ["before-move", "arriving-soon"] }
   },
@@ -48,7 +48,7 @@
     "dependencies": [],
     "typicalSteps": ["Ask HR or sponsor for the exact document list and format (originals vs certified copies)", "Gather and certify documents as requested", "Submit to employer by their deadline", "Confirm submission and expected decision date", "Align your travel and first day with the permit validity date"],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "whenVisible": { "employment": ["job-offer", "employed"], "stage": ["before-move", "arriving-soon"] }
   },
@@ -65,7 +65,7 @@
     "dependencies": [],
     "typicalSteps": ["Confirm passport validity and renewal if needed", "Obtain or locate national ID if you use one", "Make several clear copies of the main passport page and any visa or permit pages", "Store originals and copies in a single document folder for the move"],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/moving-documents-checklist/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "whenVisible": { "stage": ["before-move", "arriving-soon"] }
   },
@@ -169,7 +169,7 @@
     "whenToDoIt": "Before or during job search; before move if employer has already asked.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "whenVisible": { "employment": ["searching", "job-offer"] }
   },
@@ -186,7 +186,7 @@
     "dependencies": [],
     "typicalSteps": ["Decide whether you need temporary housing first or can move straight into a rental", "Check whether your chosen accommodation allows municipal registration", "Book or sign for your first address and note the move-in date", "Confirm how you will receive proof of address (e.g. rental contract, landlord letter)"],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/", "/netherlands/after-arriving-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/after-arriving-netherlands/"],
     "affiliateCategories": ["housing"]
   },
   {
@@ -218,7 +218,7 @@
     "dependencies": [],
     "typicalSteps": ["Create a secure digital folder and add scans of passport, visa, contract, proof of address", "Prepare a clear physical folder with originals and copies for hand luggage", "Add civil records and any certified translations if required", "Keep the pack with you during travel and for your first appointments"],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/moving-documents-checklist/", "/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": []
   },
   {
@@ -249,7 +249,7 @@
     "whenToDoIt": "1–4 weeks before arrival.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": ["housing"]
   },
   {
@@ -264,7 +264,7 @@
     "whenToDoIt": "1–4 weeks before arrival.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": []
   },
   {
@@ -280,7 +280,7 @@
     "dependencies": [],
     "typicalSteps": ["Use a clear folder or document wallet for easy inspection", "Include passport, visa or residence permit, proof of address, employment contract or offer letter", "Add certified copies of civil records if required for registration", "Store digital copies on your phone or cloud and ensure you can access them offline"],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/"],
     "affiliateCategories": []
   },
   {
@@ -327,7 +327,7 @@
     "whenToDoIt": "1–4 weeks before arrival.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/", "/netherlands/bsn-registration/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/bsn-registration/"],
     "affiliateCategories": [],
     "whenVisible": { "employment": ["job-offer", "employed"] }
   },
@@ -343,7 +343,7 @@
     "whenToDoIt": "As soon as you have a confirmed address; bring to NL.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": []
   },
   {
@@ -404,7 +404,7 @@
     "whenToDoIt": "Before you travel.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": []
   },
   {
@@ -419,7 +419,7 @@
     "whenToDoIt": "Throughout travel and until you are registered.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/"],
     "affiliateCategories": []
   },
   {
@@ -450,7 +450,7 @@
     "whenToDoIt": "During travel and on arrival.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": []
   },
   {
@@ -496,7 +496,7 @@
     "whenToDoIt": "During travel and at border.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/"],
     "affiliateCategories": []
   },
   {
@@ -512,7 +512,7 @@
     "dependencies": [],
     "typicalSteps": ["Confirm your address allows registration and you have proof (e.g. rental contract)", "Book an appointment with your gemeente (often online)", "Bring passport, proof of address, and any required civil or residence documents", "Attend the appointment and complete registration", "Note your BSN and keep the confirmation safe for bank, employer, and insurance"],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/", "/netherlands/bsn-registration/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/bsn-registration/"],
     "affiliateCategories": []
   },
   {

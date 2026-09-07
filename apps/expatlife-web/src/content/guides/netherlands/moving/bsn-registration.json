@@ -56,14 +56,14 @@
     "primaryCtaLabel": "Generate a Moving Checklist",
     "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
     "secondaryCtaLabel": "Check Document Readiness",
-    "secondaryCtaHref": "/netherlands/moving/tools/document-readiness/"
+    "secondaryCtaHref": "/netherlands/document-readiness-checker/"
   },
   "midPageCta": {
     "badge": "Tool",
     "title": "Check your document readiness",
     "description": "See what documents may apply to your situation before your appointment.",
     "ctaLabel": "Check Document Readiness",
-    "ctaHref": "/netherlands/moving/tools/document-readiness/"
+    "ctaHref": "/netherlands/document-readiness-checker/"
   },
   "midPageCtaAfterSectionId": "documents",
   "endCta": {
@@ -111,7 +111,7 @@
       },
       "links": [
         { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
-        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
         { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" }
       ]
     },
@@ -154,7 +154,7 @@
         "text": "An expat moving to Amsterdam for work typically schedules a municipality appointment shortly after arrival. During the appointment they register their address and receive their BSN, which then allows them to open a bank account and finalize health insurance."
       },
       "links": [
-        { "label": "Register your address in the Netherlands", "href": "/netherlands/register-address-netherlands/" },
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/practical-life/registering-your-address-netherlands/" },
         { "label": "Municipality registration", "href": "/netherlands/municipality-registration-netherlands/" }
       ]
     },
@@ -196,8 +196,8 @@
         "alt": "Infographic: documents often requested for BSN registration in the Netherlands—passport, residence permit, rental agreement, birth certificate, marriage certificate, and supporting documents from the municipality"
       },
       "links": [
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
-        { "label": "Document Readiness Checker (tool)", "href": "/netherlands/moving/tools/document-readiness/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
+        { "label": "Document Readiness Checker (tool)", "href": "/netherlands/document-readiness-checker/" },
         { "label": "Moving with family", "href": "/netherlands/moving-to-the-netherlands-with-family/" }
       ]
     },
@@ -213,7 +213,7 @@
         "text": "Always confirm the latest appointment and document requirements on your municipality's official website — use the live booking links in the next section for Amsterdam, The Hague and Eindhoven."
       },
       "links": [
-        { "label": "Register your address in the Netherlands", "href": "/netherlands/register-address-netherlands/" },
+        { "label": "Register your address in the Netherlands", "href": "/netherlands/practical-life/registering-your-address-netherlands/" },
         { "label": "Municipality registration", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "City appointment booking", "href": "#appointment-timing" }
       ]
@@ -308,7 +308,7 @@
     {
       "key": "document-readiness",
       "label": "Check Document Readiness",
-      "href": "/netherlands/moving/tools/document-readiness/",
+      "href": "/netherlands/document-readiness-checker/",
       "description": "See what documents may apply to your municipality appointment and move.",
       "ctaLabel": "Check Document Readiness"
     },
@@ -330,10 +330,10 @@
       "href": "/netherlands/moving-to-the-netherlands/"
     },
     "related": [
-      { "label": "Register your address in the Netherlands", "href": "/netherlands/register-address-netherlands/" },
+      { "label": "Register your address in the Netherlands", "href": "/netherlands/practical-life/registering-your-address-netherlands/" },
       { "label": "Municipality registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
-      { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
       { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
       { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },

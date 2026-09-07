@@ -128,7 +128,7 @@ export const movingToNetherlandsCost: ScenarioGuideContent = {
   ],
   relatedGuides: [
     { label: "Moving to the Netherlands", href: "/netherlands/moving-to-the-netherlands/", description: "Timeline and full guide" },
-    { label: "Documents needed", href: "/netherlands/documents-needed-to-move-netherlands/", description: "What to prepare" },
+    { label: "Documents needed", href: "/netherlands/document-readiness-checker/", description: "What to prepare" },
     { label: "Moving timeline", href: "/netherlands/moving-to-netherlands-timeline/", description: "When things happen" },
     { label: "First 90 days", href: "/netherlands/first-90-days-netherlands/", description: "After arrival" },
   ],

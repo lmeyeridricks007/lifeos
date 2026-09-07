@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { LivingSectionNavItem } from "@/src/components/living/livingPillarContent";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
 
 export type LivingSectionNavDeepLink = { href: string; label: string; description: string };
 
@@ -12,8 +13,9 @@ type Props = {
 };
 
 export function LivingSectionNav({ items, deepLink, deepLinks }: Props) {
-  const clusterLinks: LivingSectionNavDeepLink[] =
-    deepLinks && deepLinks.length > 0 ? deepLinks : deepLink ? [deepLink] : [];
+  const clusterLinks: LivingSectionNavDeepLink[] = (
+    deepLinks && deepLinks.length > 0 ? deepLinks : deepLink ? [deepLink] : []
+  ).filter((dl) => dl.href.startsWith("#") || isRouteLive(dl.href));
 
   return (
     <nav className="space-y-6" aria-labelledby="living-sg-toc-heading">

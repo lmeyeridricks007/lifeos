@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 
 export const LIVING_SURVIVAL_GUIDE_PATH = "/netherlands/living/survival-guide" as const;
-export const LIVING_PILLAR_ROOT_PATH = "/netherlands/living" as const;
+export const LIVING_PILLAR_ROOT_PATH = "/netherlands/living/survival-guide" as const;
 /** Full Living guide: trains, OVpay, apps, multimodal commuting. */
 export const LIVING_GETTING_AROUND_PATH = "/netherlands/living/getting-around" as const;
 export const LIVING_ESSENTIAL_APPS_PATH = "/netherlands/living/apps" as const;
@@ -58,7 +58,7 @@ export const RESTAURANTS_NETHERLANDS_PATH = "/netherlands/living/restaurants-net
 export const TIPPING_NETHERLANDS_PATH = "/netherlands/living/tipping-netherlands" as const;
 export const LIVING_HEALTHCARE_BASICS_PATH = "/netherlands/living/healthcare-basics" as const;
 export const LIVING_EMERGENCIES_SAFETY_PATH = "/netherlands/living/emergencies-safety" as const;
-export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/living/culture-etiquette" as const;
+export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/life/dutch-etiquette" as const;
 export const LIVING_LANGUAGE_PATH = "/netherlands/living/language" as const;
 export const LIVING_WEATHER_PATH = "/netherlands/living/weather" as const;
 

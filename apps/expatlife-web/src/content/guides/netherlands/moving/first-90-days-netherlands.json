@@ -47,7 +47,7 @@
       { "label": "Language & phrases for life in the Netherlands", "href": "/netherlands/living/language/" },
       { "label": "Weather & seasons in the Netherlands", "href": "/netherlands/living/weather/" },
       { "label": "Read the full moving guide", "href": "/netherlands/moving-to-the-netherlands/" },
-      { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" }
     ]
   },
@@ -83,7 +83,7 @@
         { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
         { "label": "Emergencies & Safety in the Netherlands", "href": "/netherlands/living/emergencies-safety/" },
         { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" },
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
         { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" }
       ]
     },
@@ -120,7 +120,7 @@
       "links": [
         { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
-        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
         { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" }
       ],
       "image": {
@@ -188,7 +188,7 @@
         { "label": "Shopping & groceries in the Netherlands", "href": "/netherlands/living/shopping-groceries/" },
         { "label": "Language & phrases for life in the Netherlands", "href": "/netherlands/living/language/" },
         { "label": "Weather & seasons in the Netherlands", "href": "/netherlands/living/weather/" },
-        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/" }
+        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/life/dutch-etiquette/" }
       ],
       "services": [
         {
@@ -258,7 +258,7 @@
       ],
       "links": [
         { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
         { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" }
       ]
     }
@@ -312,10 +312,10 @@
       { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/" },
       { "label": "Daily life basics in the Netherlands", "href": "/netherlands/living/daily-life/" },
       { "label": "Language & phrases for life in the Netherlands", "href": "/netherlands/living/language/" },
-      { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/" },
+      { "label": "Dutch Culture & Etiquette", "href": "/netherlands/life/dutch-etiquette/" },
       { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
       { "label": "Moving to the Netherlands Timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Registering Your Address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/" },
       { "label": "BSN Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import type { LivingClusterLinkItem } from "@/src/components/living/livingPillarContent";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
 
 type Props = {
   items: LivingClusterLinkItem[];
@@ -11,11 +12,15 @@ type Props = {
 /**
  * Related-topic grid for full Living guides — matches Survival Guide essentials / topic card rhythm
  * (`rounded-card`, hover lift) without pulling in `CardLink` icon contract.
+ * Omits staged / coming-soon routes so public HTML never discovers soft-404 stubs.
  */
 export function LivingClusterLinkGrid({ items, defaultCta = "Open guide" }: Props) {
+  const liveItems = items.filter((l) => isRouteLive(l.href));
+  if (liveItems.length === 0) return null;
+
   return (
     <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
-      {items.map((l) => (
+      {liveItems.map((l) => (
         <Link
           key={l.href}
           href={l.href}

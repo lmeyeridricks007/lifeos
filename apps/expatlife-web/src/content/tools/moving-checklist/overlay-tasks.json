@@ -116,7 +116,7 @@
     "whenToDoIt": "2–4 months before move.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/document-legalization-netherlands/", "/netherlands/visa-documents-netherlands/"],
+    "relatedGuides": ["/netherlands/document-legalization-netherlands/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": []
   },
   {
@@ -244,7 +244,7 @@
     "whenToDoIt": "1–2 months before move.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/", "/netherlands/open-bank-account-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/open-bank-account-netherlands/"],
     "affiliateCategories": []
   },
   {
@@ -259,7 +259,7 @@
     "whenToDoIt": "1–4 weeks before arrival.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": []
   },
   {
@@ -555,7 +555,7 @@
     "whenToDoIt": "As soon as you have an offer.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/visa-documents-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "whenVisible": { "employment": ["job-offer"] }
   },
@@ -571,7 +571,7 @@
     "whenToDoIt": "As soon as sponsorship is confirmed.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/visa-documents-netherlands/", "/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "whenVisible": { "employment": ["job-offer"] }
   },
@@ -603,7 +603,7 @@
     "whenToDoIt": "Before and shortly after arrival.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/", "/netherlands/bsn-registration/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/bsn-registration/"],
     "affiliateCategories": [],
     "whenVisible": { "employment": ["employed"] }
   },
@@ -635,7 +635,7 @@
     "whenToDoIt": "Before move.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": ["housing"],
     "whenVisible": { "employment": ["searching"] }
   },
@@ -651,7 +651,7 @@
     "whenToDoIt": "Before move and keep updated.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "whenVisible": { "employment": ["searching"] }
   },
@@ -667,7 +667,7 @@
     "whenToDoIt": "2–3 months before move if possible.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/moving-to-netherlands-with-kids/", "/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/moving-to-netherlands-with-kids/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "whenVisible": { "household": ["kids"] }
   },
@@ -699,7 +699,7 @@
     "whenToDoIt": "1–2 weeks before arrival.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/", "/netherlands/moving-to-netherlands-with-kids/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/moving-to-netherlands-with-kids/"],
     "affiliateCategories": [],
     "whenVisible": { "household": ["kids", "partner"] }
   },
@@ -715,7 +715,7 @@
     "whenToDoIt": "As soon as possible; intensify 1–2 months before move.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/", "/netherlands/after-arriving-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/after-arriving-netherlands/"],
     "affiliateCategories": ["housing"]
   },
   {
@@ -730,7 +730,7 @@
     "whenToDoIt": "Before you travel.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": []
   },
   {
@@ -745,7 +745,7 @@
     "whenToDoIt": "As soon as you have a confirmed place.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": ["housing"]
   },
   {
@@ -760,7 +760,7 @@
     "whenToDoIt": "1–4 weeks before arrival.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": ["housing"]
   },
   {
@@ -775,7 +775,7 @@
     "whenToDoIt": "Before you travel.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": []
   },
   {
@@ -790,7 +790,7 @@
     "whenToDoIt": "When packing.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/shipping-household-goods-netherlands/", "/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/shipping-household-goods-netherlands/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": ["international-shipping"]
   },
   {
@@ -805,7 +805,7 @@
     "whenToDoIt": "When finalising luggage and shipment.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/"],
     "affiliateCategories": []
   },
   {
@@ -865,7 +865,7 @@
     "whenToDoIt": "As soon as you decide to move.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/moving-documents-checklist/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": []
   },
   {
@@ -880,7 +880,7 @@
     "whenToDoIt": "As soon as you start preparing.",
     "dependencies": [],
     "countryNotes": {},
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/moving-documents-checklist/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": []
   }
 ]

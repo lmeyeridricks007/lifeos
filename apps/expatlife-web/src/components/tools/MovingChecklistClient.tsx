@@ -334,7 +334,7 @@ export function MovingChecklistClient({
 
           <DocumentResults
             documentsByCategory={result.documentsByCategory}
-            documentsGuideHref="/netherlands/documents-needed-to-move-netherlands/"
+            documentsGuideHref="/netherlands/document-readiness-checker/"
           />
           <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
             <p className="mb-2 text-sm font-medium text-slate-800">Check your document readiness</p>
@@ -342,7 +342,7 @@ export function MovingChecklistClient({
               Use the full Document Readiness Checker for a detailed list tailored to your situation.
             </p>
             <Link
-              href="/netherlands/moving/tools/document-readiness/"
+              href="/netherlands/document-readiness-checker/"
               className="inline-flex items-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-brand-600 shadow-sm transition hover:border-brand-200 hover:text-brand-700"
             >
               Open Document Readiness Checker →

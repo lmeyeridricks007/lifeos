@@ -28,6 +28,7 @@ import {
   movingNlSignatureGradientClass,
 } from "@/lib/ui/moving-nl-pillar-identity";
 import { CITIES_FUNNEL_INFO_CHIP, CITIES_FUNNEL_SECTION_SCROLL_MARGIN, CITIES_FUNNEL_SOFT_COPILOT_SURFACE } from "@/src/components/cities/shared/citiesFunnelPageUi";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
 import { taxAdvisorsPage as page, taxAdvisorsProviders, type TaxAdvisorDirectoryLink } from "@/src/data/services/categories/tax-advisors";
 
 export const revalidate = 86400;
@@ -118,7 +119,7 @@ function InsightPanel({ eyebrow, title, rows, note, tone = "light" }: { eyebrow:
 
 function LinkCard({ item, index, tone = "default" }: { item: TaxAdvisorDirectoryLink; index: number; tone?: "default" | "dark" }) {
   const Icon = icons[index % icons.length];
-  const live = item.status !== "comingSoon";
+  const live = item.status !== "comingSoon" && isRouteLive(item.href);
   const dark = tone === "dark";
   const body = (
     <>
@@ -137,7 +138,7 @@ function LinkCard({ item, index, tone = "default" }: { item: TaxAdvisorDirectory
 function ScenarioTile({ scenario, index }: { scenario: (typeof page.scenarios)[number]; index: number }) {
   const link = scenario.links[0] as TaxAdvisorDirectoryLink | undefined;
   const Icon = icons[index % icons.length];
-  const live = link?.status !== "comingSoon";
+  const live = link != null && link.status !== "comingSoon" && isRouteLive(link.href);
   const linkLabel = link?.label ?? "Related guide";
 
   const content = (

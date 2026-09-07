@@ -613,7 +613,7 @@ export const englishSpeakingJobsNetherlandsPage = {
     {
       label: "Networking Netherlands",
       href: "/netherlands/jobs/networking-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Events and warm intros that open English-friendly doors.",
     },
 
@@ -920,7 +920,7 @@ export const englishSpeakingJobsNetherlandsPage = {
     {
       label: "Networking Netherlands",
       href: "/netherlands/jobs/networking-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Relationship habits beyond English job boards.",
     },
 

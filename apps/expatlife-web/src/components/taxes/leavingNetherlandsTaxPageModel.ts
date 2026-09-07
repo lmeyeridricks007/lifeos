@@ -252,7 +252,7 @@ export const leavingNetherlandsTaxPage = {
     { question: "What if I work remotely?", exampleFacts: "20 Dutch workdays before leaving and 45 abroad for same employer", firstCheck: "Separate physical workdays by country before discussing tax treatment.", usefulRecord: "Calendar, travel records, employer letter" },
   ],
   relatedGuides: [
-    { label: "Expat Taxes Netherlands", href: "/netherlands/taxes/expat-taxes-netherlands/", description: "A broad guide to Dutch tax concepts for expats." },
+    { label: "Expat Taxes Netherlands", href: "/netherlands/money/expat-taxes-netherlands/", description: "A broad guide to Dutch tax concepts for expats." },
     { label: "Double Taxation Netherlands", href: "/netherlands/taxes/double-taxation-netherlands/", description: "Understand treaty concepts and double-taxation relief awareness." },
     { label: "Foreign Income Netherlands", href: "/netherlands/taxes/foreign-income-netherlands/", description: "Map overseas income, assets and cross-border records." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", description: "Learn how the expat tax facility works conceptually." },

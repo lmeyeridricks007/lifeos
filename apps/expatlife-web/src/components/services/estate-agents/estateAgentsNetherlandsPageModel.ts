@@ -558,7 +558,7 @@ export const estateAgentsNetherlandsPage = {
   ],
   relatedGuides: [
     { label: "Mortgage advisors", href: MORTGAGE_ADVISORS_PATH, status: "live", description: "Financing advice to align with purchase timelines." },
-    { label: "Notaries", href: "/netherlands/services/notaries/", status: "live", description: "Dutch notaris for purchase deeds — required at completion, not a makelaar substitute." },
+    { label: "Notaries", href: "/netherlands/services/notaries/", status: "comingSoon", description: "Dutch notaris for purchase deeds — required at completion, not a makelaar substitute." },
     { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "live", description: "Broader household planning beyond the purchase transaction." },
     { label: "Housing platforms", href: HOUSING_PLATFORMS_PATH, status: "live", description: "DIY listing platforms for property search." },
     { label: "Rental agencies", href: RENTAL_AGENCIES_PATH, status: "live", description: "Tenant mediation — different from buy/sell makelaars." },
@@ -568,7 +568,7 @@ export const estateAgentsNetherlandsPage = {
   servicesLinks: [
     { label: "All Services", href: SERVICES_HUB_PATH, status: "live", description: "Browse service providers for expats in the Netherlands." },
     { label: "Mortgage advisors", href: MORTGAGE_ADVISORS_PATH, status: "live", description: "Regulated mortgage advice for buyers." },
-    { label: "Notaries", href: "/netherlands/services/notaries/", status: "live", description: "Notaris for levering, hypotheekakte and related acts." },
+    { label: "Notaries", href: "/netherlands/services/notaries/", status: "comingSoon", description: "Notaris for levering, hypotheekakte and related acts." },
     { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "live", description: "Long-term planning beside property purchase." },
     { label: "Housing platforms", href: HOUSING_PLATFORMS_PATH, status: "live", description: "Listing platforms for DIY search." },
     { label: "Rental agencies", href: RENTAL_AGENCIES_PATH, status: "live", description: "Rental mediation for tenants." },
@@ -580,7 +580,7 @@ export const estateAgentsNetherlandsPage = {
   ] satisfies EstateAgentLink[],
   exploreNextCards: [
     { label: "Mortgage advisors", href: MORTGAGE_ADVISORS_PATH, status: "live", description: "Align financing capacity before aggressive bidding." },
-    { label: "Notaries", href: "/netherlands/services/notaries/", status: "live", description: "Prepare deed and completion diary after you win a bid." },
+    { label: "Notaries", href: "/netherlands/services/notaries/", status: "comingSoon", description: "Prepare deed and completion diary after you win a bid." },
     { label: "Financial advisors", href: "/netherlands/services/financial-advisors/", status: "live", description: "Pressure-test affordability beyond the purchase itself." },
     { label: "Housing platforms", href: HOUSING_PLATFORMS_PATH, status: "live", description: "Browse listings while you instruct a buyer agent." },
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Understand process steps around your makelaar." },

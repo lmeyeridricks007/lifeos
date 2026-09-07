@@ -1,6 +1,6 @@
 {
   "slug": "register-address-netherlands",
-  "path": "/netherlands/register-address-netherlands/",
+  "path": "/netherlands/practical-life/registering-your-address-netherlands/",
   "title": "Registering Your Address in the Netherlands",
   "metaTitle": "Registering Your Address in the Netherlands: Step-by-Step Guide for Expats",
   "breadcrumbLabel": "Register Address",
@@ -87,7 +87,7 @@
       ],
       "links": [
         { "label": "BSN registration in the Netherlands", "href": "/netherlands/bsn-registration/" },
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" }
       ]
     },
     {
@@ -104,7 +104,7 @@
       ],
       "links": [
         { "label": "BSN registration in the Netherlands", "href": "/netherlands/bsn-registration/" },
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" }
       ]
     },
     {
@@ -240,7 +240,7 @@
     },
     "related": [
       { "label": "BSN registration in the Netherlands", "href": "/netherlands/bsn-registration/" },
-      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
       { "label": "Cost of moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" },
       { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },

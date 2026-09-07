@@ -4,7 +4,7 @@
   "originCountry": "*",
   "context": {
     "pageType": "tool",
-    "route": "/netherlands/moving/tools/document-readiness",
+    "route": "/netherlands/document-readiness-checker",
     "slot": "after-results"
   },
   "variant": "cards",

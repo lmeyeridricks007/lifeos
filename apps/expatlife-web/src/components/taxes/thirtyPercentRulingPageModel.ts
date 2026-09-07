@@ -42,7 +42,7 @@ export const thirtyPercentRulingPage = {
     subtitle:
       "Understand how the Dutch expat tax benefit works, who may qualify, how employers apply, and what international professionals should know before relocating.",
     primaryCta: { label: "Understand Eligibility", href: "#eligibility" },
-    secondaryCta: { label: "Explore Expat Taxes", href: "/netherlands/taxes/expat-taxes-netherlands/" },
+    secondaryCta: { label: "Explore Expat Taxes", href: "/netherlands/money/expat-taxes-netherlands/" },
     chips: ["Expat scheme", "Employer application", "Eligibility", "Payroll"],
     image: {
       src: "/images/heroes/netherlands-30-percent-ruling-taxes-hero.png",
@@ -109,7 +109,7 @@ export const thirtyPercentRulingPage = {
     {
       title: "Internal company transfer",
       body: "Clarify whether the Dutch employer can apply and how the employment start date affects timing.",
-      href: "/netherlands/taxes/expat-taxes-netherlands/",
+      href: "/netherlands/money/expat-taxes-netherlands/",
       status: "live",
     },
     {
@@ -139,14 +139,14 @@ export const thirtyPercentRulingPage = {
     {
       title: "Expats with foreign investments",
       body: "Box 2, Box 3 and partial foreign taxpayer changes may make professional advice more important.",
-      href: "/netherlands/taxes/expat-taxes-netherlands/",
+      href: "/netherlands/money/expat-taxes-netherlands/",
       status: "live",
     },
   ] satisfies ThirtyPercentRulingScenario[],
   relatedTaxTopics: [
     { label: "Average Salary in the Netherlands", href: "/netherlands/taxes/average-salary-netherlands/", status: "live", description: "Salary benchmarking by city, industry and experience with expat context." },
     { label: "Salary Negotiation in the Netherlands", href: "/netherlands/jobs/salary-negotiation-netherlands/", status: "live", description: "Negotiate offers with 30% ruling and total-compensation context." },
-    { label: "Expat Taxes", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live", description: "Scenario-led expat tax guide for partial years, foreign assets, payroll and tax returns." },
+    { label: "Expat Taxes", href: "/netherlands/money/expat-taxes-netherlands/", status: "live", description: "Scenario-led expat tax guide for partial years, foreign assets, payroll and tax returns." },
     { label: "Net Salary", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Gross-to-net salary guide with calculator access and payroll deduction context." },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Beginner guide to Dutch gross salary, net salary, payslips and deductions." },
     { label: "Income Tax", href: "/netherlands/taxes/income-tax-netherlands/", status: "comingSoon", description: "Future guide for Dutch income tax basics." },
@@ -157,7 +157,7 @@ export const thirtyPercentRulingPage = {
   ] satisfies ThirtyPercentRulingLink[],
   serviceLinks: [
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "comingSoon", description: "Future category for scoped tax help." },
-    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "live", description: "Bookkeeping, BTW filings and accounting support for expats." },
+    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "comingSoon", description: "Bookkeeping, BTW filings and accounting support for expats." },
     { label: "Payroll specialists", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Future category for payroll setup and administration." },
     { label: "Immigration lawyers", href: "/netherlands/services/immigration-lawyers/", status: "live", description: "Immigration legal support where work status and relocation questions overlap." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Practical relocation support around arrival, housing and setup." },
@@ -192,7 +192,7 @@ export const thirtyPercentRulingPage = {
   ],
   relatedGuides: [
     { label: "Netherlands Taxes Hub", href: "/netherlands/taxes/", status: "live" },
-    { label: "Expat Taxes in the Netherlands", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live" },
+    { label: "Expat Taxes in the Netherlands", href: "/netherlands/money/expat-taxes-netherlands/", status: "live" },
     { label: "Net Salary in the Netherlands", href: "/netherlands/taxes/net-salary-netherlands/", status: "live" },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live" },
     { label: "Moving to the Netherlands", href: "/netherlands/moving-to-the-netherlands/", status: "live" },
@@ -200,7 +200,7 @@ export const thirtyPercentRulingPage = {
     { label: "Services", href: "/netherlands/services/", status: "live" },
   ] satisfies ThirtyPercentRulingLink[],
   exploreNextCards: [
-    { label: "Expat Taxes Guide", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live", description: "Understand expat tax scenarios around residency, payroll and foreign assets." },
+    { label: "Expat Taxes Guide", href: "/netherlands/money/expat-taxes-netherlands/", status: "live", description: "Understand expat tax scenarios around residency, payroll and foreign assets." },
     { label: "Net Salary Guide", href: "/netherlands/taxes/net-salary-netherlands/", status: "live", description: "Estimate gross-to-net salary and compare ruling impact." },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Understand the salary basics before modelling the ruling." },
     { label: "Tax Residency", href: "/netherlands/taxes/tax-residency-netherlands/", status: "comingSoon", description: "Future taxes-cluster guide." },

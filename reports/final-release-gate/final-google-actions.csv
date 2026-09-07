@@ -1,0 +1,16 @@
+url,page_type,reason,priority,recommended_action
+https://www.expatcopilot.com/netherlands,hub,Core remediations live,REQUEST_INDEXING_TIER_1,Request indexing
+https://www.expatcopilot.com/netherlands/health,hub,Launched hub,REQUEST_INDEXING_TIER_1,Request indexing
+https://www.expatcopilot.com/netherlands/education,hub,Launched hub,REQUEST_INDEXING_TIER_1,Request indexing
+https://www.expatcopilot.com/netherlands/official-figures,authority,Authority packaging,REQUEST_INDEXING_TIER_1,Request indexing
+https://www.expatcopilot.com/,homepage,Homepage now healthy 200,REQUEST_INDEXING_TIER_1,Request indexing
+https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats,guide,H1 remediation,REQUEST_INDEXING_TIER_1,Request indexing
+https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling,ymyl,H1 remediation,REQUEST_INDEXING_TIER_1,Request indexing
+https://www.expatcopilot.com/netherlands/tools/city-comparison,tool,Authority tool,REQUEST_INDEXING_TIER_1,Request indexing
+https://www.expatcopilot.com/netherlands/moving/tools/moving-checklist/from/south-africa,country_tool,Programmatic cohort representative,SITEMAP_ONLY,Rely on sitemap recrawl
+https://www.expatcopilot.com/netherlands/taxes/tools/30-percent-ruling-calculator,staged,Intentionally staged calculator,KEEP_EXCLUDED,Do not request indexing
+https://www.expatcopilot.com/netherlands/jobs/cover-letter-netherlands,internal_debt,Still linked internally but 404,INVESTIGATE,Clean HTML links or launch page
+https://www.expatcopilot.com/netherlands/jobs/cv-netherlands,internal_debt,Still linked internally but 404,INVESTIGATE,Clean HTML links or launch page
+https://www.expatcopilot.com/netherlands/jobs/english-speaking-jobs-netherlands,internal_debt,Still linked internally but 404,INVESTIGATE,Clean HTML links or launch page
+https://www.expatcopilot.com/netherlands/jobs/interview-tips-netherlands,internal_debt,Still linked internally but 404,INVESTIGATE,Clean HTML links or launch page
+https://www.expatcopilot.com/netherlands/jobs/linkedin-netherlands,internal_debt,Still linked internally but 404,INVESTIGATE,Clean HTML links or launch page

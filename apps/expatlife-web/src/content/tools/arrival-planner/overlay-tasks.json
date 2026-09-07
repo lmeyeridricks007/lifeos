@@ -11,7 +11,7 @@
     "why": "EU/EEA moves often have straightforward sequencing; a quick check keeps your plan clear.",
     "timeline": "Before or in the first days after arrival.",
     "whoToContact": ["netherlandsworldwide-brp", "government-bsn"],
-    "officialLinks": ["/netherlands/register-address-netherlands/", "/netherlands/bsn-registration/"],
+    "officialLinks": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/bsn-registration/"],
     "affiliateCategories": [],
     "tags": ["brp", "registration", "eu"]
   },
@@ -91,7 +91,7 @@
     "why": "You will need them for registration and first-week admin; shipments can be delayed or lost.",
     "timeline": "When packing and travelling.",
     "whoToContact": [],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "tags": ["documents", "shipping"]
   },
@@ -284,7 +284,7 @@
     "why": "Without a fixed address, some steps are delayed; knowing the sequence reduces confusion.",
     "timeline": "Before or in the first days after arrival.",
     "whoToContact": ["local-municipality", "netherlandsworldwide-brp"],
-    "officialLinks": ["/netherlands/register-address-netherlands/", "/netherlands/moving-to-the-netherlands/"],
+    "officialLinks": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/moving-to-the-netherlands/"],
     "affiliateCategories": ["housing"],
     "tags": ["address", "planning"]
   },
@@ -316,7 +316,7 @@
     "why": "Having the right documents ready at arrival avoids delays in registration or family admin.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["south-africa", "documents"]
   },
@@ -364,7 +364,7 @@
     "why": "Having the right documents ready at arrival avoids delays in registration or family admin.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["india", "documents"]
   },
@@ -412,7 +412,7 @@
     "why": "Having the right documents ready at arrival avoids delays in registration or family admin.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["united-states", "documents"]
   },
@@ -460,7 +460,7 @@
     "why": "Having the right documents ready at arrival avoids delays in registration or family admin.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["united-kingdom", "documents"]
   },
@@ -508,7 +508,7 @@
     "why": "Having the right documents ready at arrival avoids delays in registration or family admin.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["canada", "documents"]
   },
@@ -556,7 +556,7 @@
     "why": "Follow-up appointments often reference the same civil or residence proofs used during MVV or entry.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["uae", "documents"]
   },
@@ -604,7 +604,7 @@
     "why": "Having the right documents ready at arrival avoids delays in registration or family admin.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["australia", "documents"]
   },
@@ -940,7 +940,7 @@
     "why": "Having the right documents ready at arrival avoids delays in registration or family admin.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["brazil", "documents"]
   },
@@ -988,7 +988,7 @@
     "why": "Follow-up appointments often reference the same documents used during MVV or entry.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["mexico", "documents"]
   },
@@ -1036,7 +1036,7 @@
     "why": "Follow-up appointments often reference the same documents used during MVV or entry.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["singapore", "documents"]
   },
@@ -1084,7 +1084,7 @@
     "why": "Follow-up appointments often reference the same documents used during MVV or entry.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["japan", "documents"]
   },
@@ -1132,7 +1132,7 @@
     "why": "Follow-up appointments often reference the same documents used during MVV or entry.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["south-korea", "documents"]
   },
@@ -1180,7 +1180,7 @@
     "why": "Follow-up appointments often reference the same documents used during MVV or entry.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["turkey", "documents"]
   },
@@ -1228,7 +1228,7 @@
     "why": "Follow-up appointments often reference the same documents used during MVV or entry.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["argentina", "documents"]
   },
@@ -1276,7 +1276,7 @@
     "why": "Follow-up appointments often reference the same documents used during MVV or entry.",
     "timeline": "When travelling; keep with your hand luggage.",
     "whoToContact": ["netherlandsworldwide-brp", "ind"],
-    "officialLinks": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/document-readiness-checker/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["chile", "documents"]
   },

@@ -1,0 +1,8 @@
+id,severity,blocking,area,summary,status
+INTERNAL-4XX-STAGED,P2,NO,internal_links,161 HTML edges → 57 unique 404 targets (all classified STAGED_PAGE: services/jobs/living stubs),OPEN
+INTERNAL-3XX-ALIASES,P2,NO,internal_links,723 HTML edges → 17 unique 3xx targets (mostly LEGACY_ALIAS / intentional redirects),OPEN
+CULTURE-ORPHANS,P2,NO,orphans,4 indexable orphans remain (3 culture pages + government-portals-overview); country-tool orphans=0,OPEN
+HOMEPAGE-MISSING-H1,P3,NO,onpage,Homepage / is HTTP 200 and self-canonical but has 0 visible H1 in HTML,OPEN
+SITEMAP-CLEAN,P0,NO,sitemap,Sitemap 448; 0 slash/3xx/4xx/noindex/staged; NG/PH tools absent; canonical→redirect/404=0,RESOLVED
+HOMEPAGE-SOFT-307,P1,NO,homepage,Previous soft-307 cleared; GET/HEAD now 200; domain norms terminate at www https,RESOLVED
+NG-PH-SITEMAP,P0,NO,sitemap,NG/PH tool /from/ URLs removed from live sitemap (0 matches),RESOLVED

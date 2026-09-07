@@ -596,19 +596,19 @@ export const networkingNetherlandsPage = {
     {
       label: "Recruitment Agencies Netherlands",
       href: "/netherlands/jobs/recruitment-agencies-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "How Dutch recruiters and uitzendbureaus work for expats.",
     },
     {
       label: "English Speaking Jobs Netherlands",
       href: "/netherlands/jobs/english-speaking-jobs-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "English-friendly sectors, cities and language reality checks.",
     },
     {
       label: "Remote Work Netherlands",
       href: "/netherlands/jobs/remote-work-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Remote and hybrid employment norms.",
     },
 

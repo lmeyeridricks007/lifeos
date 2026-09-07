@@ -102,7 +102,7 @@ export function shouldRequireMegaMenu(path: string): boolean {
     "/netherlands/taxes/healthcare-allowance/",
     "/netherlands/taxes/childcare-allowance/",
     "/netherlands/taxes/rent-allowance/",
-    "/netherlands/taxes/expat-taxes-netherlands/",
+    "/netherlands/money/expat-taxes-netherlands/",
     "/netherlands/work/changing-jobs-netherlands/",
     "/netherlands/work/resigning-job-netherlands/",
     "/netherlands/work/layoffs-netherlands/",

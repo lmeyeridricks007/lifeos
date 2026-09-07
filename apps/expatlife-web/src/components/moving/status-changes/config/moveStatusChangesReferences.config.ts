@@ -41,7 +41,7 @@ export const moveStatusChangesReferences = {
       links: [
         { type: "internal", label: "Healthcare basics →", href: "/netherlands/living/healthcare-basics/" },
         { type: "internal", label: "First 90 days planner →", href: "/netherlands/moving/tools/first-90-days/" },
-        { type: "internal", label: "Document readiness →", href: "/netherlands/moving/tools/document-readiness/" },
+        { type: "internal", label: "Document readiness →", href: "/netherlands/document-readiness-checker/" },
       ],
     },
   ],

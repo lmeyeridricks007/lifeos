@@ -1,6 +1,6 @@
 {
   "slug": "documents-needed-to-move-netherlands",
-  "path": "/netherlands/documents-needed-to-move-netherlands/",
+  "path": "/netherlands/document-readiness-checker/",
   "title": "Documents Needed to Move to the Netherlands",
   "metaTitle": "Documents Needed to Move to the Netherlands (Expat Guide)",
   "subtitle": "A practical guide to the document categories expats commonly prepare before and after arrival.",
@@ -130,7 +130,7 @@
       "links": [
         { "label": "BSN registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "DigiD awareness", "href": "/netherlands/digid-awareness/" },
-        { "label": "Visa documents for the Netherlands", "href": "/netherlands/visa-documents-netherlands/" }
+        { "label": "Visa documents for the Netherlands", "href": "/netherlands/document-readiness-checker/" }
       ]
     },
     {
@@ -315,8 +315,8 @@
       { "label": "Document legalization and apostille", "href": "/netherlands/document-legalization-netherlands/" },
       { "label": "Document translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" },
       { "label": "Document legalization in the Netherlands", "href": "/netherlands/document-legalization-netherlands/" },
-      { "label": "Visa documents for the Netherlands", "href": "/netherlands/visa-documents-netherlands/" },
-      { "label": "Moving documents checklist", "href": "/netherlands/moving-documents-checklist/" },
+      { "label": "Visa documents for the Netherlands", "href": "/netherlands/document-readiness-checker/" },
+      { "label": "Moving documents checklist", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
       { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" }
     ]

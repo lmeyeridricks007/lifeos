@@ -19,7 +19,7 @@ export const RECRUITMENT_AGENCIES_PATH = "/netherlands/services/recruitment-agen
 export const RELOCATION_SERVICES_PATH = "/netherlands/services/relocation-services" as const;
 export const HEALTH_INSURANCE_PATH = "/netherlands/services/health-insurance" as const;
 export const THIRTY_PERCENT_RULING_PATH = "/netherlands/taxes/30-percent-ruling" as const;
-export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/taxes/expat-taxes-netherlands" as const;
+export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/money/expat-taxes-netherlands" as const;
 export const FOREIGN_INCOME_NETHERLANDS_PATH = "/netherlands/taxes/foreign-income-netherlands" as const;
 export const DOUBLE_TAXATION_NETHERLANDS_PATH = "/netherlands/taxes/double-taxation-netherlands" as const;
 export const FINANCIAL_ADVISORS_PATH = "/netherlands/services/financial-advisors" as const;
@@ -699,7 +699,7 @@ export const freelancingNetherlandsPage = {
   relatedGuides: [
     { label: "Starting consultancy", href: STARTING_CONSULTANCY_NETHERLANDS_PATH, status: "live", description: "Consultancy practice setup — positioning, first clients, rates orientation, contracts and when consultancy differs from generic freelancing." },
     { label: "Contractor vs Employee", href: CONTRACTOR_VS_EMPLOYEE_NETHERLANDS_PATH, status: "live", description: "Compare employment and ZZP or contractor models: income, benefits, taxes and expat tradeoffs." },
-    { label: "Remote Work Netherlands", href: "/netherlands/jobs/remote-work-netherlands/", status: "live", description: "Employee remote/hybrid norms — different from ZZP freelancing." },
+    { label: "Remote Work Netherlands", href: "/netherlands/jobs/remote-work-netherlands/", status: "comingSoon", description: "Employee remote/hybrid norms — different from ZZP freelancing." },
     { label: "ZZP in the Netherlands", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Cornerstone guide on Dutch ZZP registration, taxes, invoicing and expat context." },
     { label: "Finding Jobs in the Netherlands", href: FINDING_JOBS_NETHERLANDS_PATH, status: "live", description: "Employer routes and job search when freelancing is a bridge or alternative." },
     { label: "Expat Taxes Netherlands", href: EXPAT_TAXES_NETHERLANDS_PATH, status: "live", description: "Tax orientation when freelance income joins employment or foreign assets." },

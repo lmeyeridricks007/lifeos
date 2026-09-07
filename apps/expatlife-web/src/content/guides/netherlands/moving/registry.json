@@ -28,7 +28,7 @@
     },
     {
       "slug": "register-address-netherlands",
-      "path": "/netherlands/register-address-netherlands/",
+      "path": "/netherlands/practical-life/registering-your-address-netherlands/",
       "title": "Registering Your Address in the Netherlands",
       "description": "How expats register their address with a Dutch municipality (gemeente), typical documents, temporary housing notes, and what usually happens next.",
       "priority": 1,
@@ -76,7 +76,7 @@
     },
     {
       "slug": "documents-needed-to-move-netherlands",
-      "path": "/netherlands/documents-needed-to-move-netherlands/",
+      "path": "/netherlands/document-readiness-checker/",
       "title": "Documents Needed to Move to the Netherlands",
       "description": "Document categories expats often prepare, plus how to organize a simple document pack.",
       "priority": 5,
@@ -84,7 +84,7 @@
     },
     {
       "slug": "visa-documents-netherlands",
-      "path": "/netherlands/visa-documents-netherlands/",
+      "path": "/netherlands/document-readiness-checker/",
       "title": "Visa Documents for the Netherlands",
       "description": "Learn which document categories are commonly prepared for Netherlands visa and residence routes, why they matter, and how to organize a practical document pack before moving.",
       "priority": 2,
@@ -140,7 +140,7 @@
     },
     {
       "slug": "moving-documents-checklist",
-      "path": "/netherlands/moving-documents-checklist/",
+      "path": "/netherlands/document-readiness-checker/",
       "title": "Moving Documents Checklist for the Netherlands",
       "description": "Use this practical checklist to organize the documents many expats prepare before moving to the Netherlands.",
       "priority": 2,

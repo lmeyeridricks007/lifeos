@@ -39,7 +39,7 @@ export const taxGuideRoutes = {
   childcare: "/netherlands/family/tools/childcare-cost-estimator/",
   workingNl: "/netherlands/moving/working-in-the-netherlands/",
   employmentType: "/netherlands/work/tools/employment-type-scenario-tool/",
-  expatTaxesGuide: "/netherlands/taxes/expat-taxes-netherlands/",
+  expatTaxesGuide: "/netherlands/money/expat-taxes-netherlands/",
   citiesHub: "/netherlands/cities/",
   /** Taxes flagship hub — use until a dedicated advisors guide route ships. */
   taxAdvisorsGuide: "/netherlands/taxes/",

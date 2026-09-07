@@ -73,7 +73,7 @@ export const moveToNetherlandsWithoutJob: ScenarioGuideContent = {
         "Documents for family members if they are joining you.",
         "A plan for where you will register your address.",
       ],
-      cta: { label: "Documents needed", href: "/netherlands/documents-needed-to-move-netherlands/" },
+      cta: { label: "Documents needed", href: "/netherlands/document-readiness-checker/" },
     },
     {
       id: "risks-bottlenecks",
@@ -96,7 +96,7 @@ export const moveToNetherlandsWithoutJob: ScenarioGuideContent = {
   },
   checklist: [
     { label: "Confirm your residence route (EU vs non-EU, work/study/partner)." },
-    { label: "Gather identity and relationship documents.", href: "/netherlands/documents-needed-to-move-netherlands/" },
+    { label: "Gather identity and relationship documents.", href: "/netherlands/document-readiness-checker/" },
     { label: "Check IND and institution/sponsor requirements and timelines." },
     { label: "Plan where you will register your address.", href: "/netherlands/municipality-registration-netherlands/" },
     { label: "Use the Moving Checklist tool to build a personal timeline.", href: "/netherlands/moving/tools/moving-checklist/" },

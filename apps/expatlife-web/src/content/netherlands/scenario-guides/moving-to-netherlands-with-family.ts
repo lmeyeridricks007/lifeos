@@ -71,7 +71,7 @@ export const movingToNetherlandsWithFamily: ScenarioGuideContent = {
       body: [
         "Gather originals and copies: passports, birth certificates (with apostille/translation if required), marriage or partnership certificate, and any custody or adoption papers if relevant. The IND and municipality will specify exactly what they need for your situation.",
       ],
-      cta: { label: "Document Readiness tool", href: "/netherlands/moving/tools/document-readiness/" },
+      cta: { label: "Document Readiness tool", href: "/netherlands/document-readiness-checker/" },
     },
   ],
   comparisonTable: {
@@ -86,7 +86,7 @@ export const movingToNetherlandsWithFamily: ScenarioGuideContent = {
   },
   checklist: [
     { label: "Passports and civil documents for all family members." },
-    { label: "Marriage or partnership proof if applicable.", href: "/netherlands/documents-needed-to-move-netherlands/" },
+    { label: "Marriage or partnership proof if applicable.", href: "/netherlands/document-readiness-checker/" },
     { label: "Housing where everyone can register." },
     { label: "School or childcare research if relevant.", href: "/netherlands/moving-to-netherlands-with-kids/" },
     { label: "Use the Document Readiness and Moving Checklist tools.", href: "/netherlands/moving/tools/moving-checklist/" },

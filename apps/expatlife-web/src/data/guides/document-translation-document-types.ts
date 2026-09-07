@@ -40,7 +40,7 @@ export const DOCUMENT_TRANSLATION_DOCUMENT_TYPES: DocumentTranslationDocumentTyp
     label: "Police / certificate of conduct",
     whereUsed: ["Visa applications", "IND requirements", "Some employment"],
     legalisationRelevant: true,
-    relatedGuideHref: "/netherlands/visa-documents-netherlands/",
+    relatedGuideHref: "/netherlands/document-readiness-checker/",
     relatedGuideLabel: "Visa documents",
   },
   {

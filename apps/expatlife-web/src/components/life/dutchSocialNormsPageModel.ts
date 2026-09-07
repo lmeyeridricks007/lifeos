@@ -9,7 +9,7 @@ export const DUTCH_WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-c
 export const DUTCH_DIRECTNESS_AT_WORK_PATH = "/netherlands/jobs/dutch-directness-at-work" as const;
 export const LANGUAGE_LEARNING_PATH = "/netherlands/language-learning" as const;
 export const VOLUNTEERING_PATH = "/netherlands/life/volunteering-netherlands" as const;
-export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/living/culture-etiquette" as const;
+export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/life/dutch-etiquette" as const;
 export const WASTE_RECYCLING_PATH = "/netherlands/practical-life/waste-and-recycling-netherlands" as const;
 export const PARKING_PERMITS_PATH = "/netherlands/practical-life/parking-and-local-permits-netherlands" as const;
 

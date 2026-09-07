@@ -80,7 +80,7 @@ const TOC_ITEMS = [
 
 const RELATED_GUIDES = [
   { label: "Cost of Moving to the Netherlands", href: "/netherlands/moving-to-netherlands-cost/" },
-  { label: "Documents Needed to Move", href: "/netherlands/documents-needed-to-move-netherlands/" },
+  { label: "Documents Needed to Move", href: "/netherlands/document-readiness-checker/" },
   { label: "First 30 Days in the Netherlands", href: "/netherlands/first-30-days-netherlands/" },
   { label: "First 90 Days in the Netherlands", href: "/netherlands/first-90-days-netherlands/" },
   { label: "EU vs Non-EU Moving to the Netherlands", href: "/netherlands/eu-vs-non-eu-moving-to-netherlands/" },
@@ -309,7 +309,7 @@ export default async function MovingToNetherlandsFromIndexPage() {
                     depending on whether you move from an EU or non-EU country and which route you use. Country-specific
                     guides help you identify the right planning steps earlier and use tools like the{" "}
                     <Link href="/netherlands/moving/tools/relocation-cost-estimator/">relocation cost estimator</Link> and{" "}
-                    <Link href="/netherlands/documents-needed-to-move-netherlands/">documents needed to move</Link> in the
+                    <Link href="/netherlands/document-readiness-checker/">documents needed to move</Link> in the
                     right order.
                   </p>
                 </div>

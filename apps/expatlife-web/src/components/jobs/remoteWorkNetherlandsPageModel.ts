@@ -626,7 +626,7 @@ export const remoteWorkNetherlandsPage = {
     {
       label: "Networking Netherlands",
       href: "/netherlands/jobs/networking-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Relationship habits that still matter for hybrid teams.",
     },
 

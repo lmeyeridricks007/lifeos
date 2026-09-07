@@ -838,13 +838,13 @@ export const dutchDirectnessAtWorkPage = {
     {
       label: "Interview tips Netherlands",
       href: "/netherlands/jobs/interview-tips-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Dutch interview culture where directness shows up in hiring conversations.",
     },
     {
       label: "CV Netherlands",
       href: "/netherlands/jobs/cv-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Dutch CV and application norms before interviews begin.",
     },
     {

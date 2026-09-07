@@ -12,7 +12,7 @@
         "needsIntegrationAwareness": ["yes", "no"]
       },
       "description": "This often becomes one of the earliest admin priorities after arrival.",
-      "relatedGuideHref": "/netherlands/register-address-netherlands/"
+      "relatedGuideHref": "/netherlands/practical-life/registering-your-address-netherlands/"
     },
     {
       "id": "bsn-next-steps",
@@ -68,7 +68,7 @@
         "needsIntegrationAwareness": ["yes", "no"]
       },
       "description": "A shared folder and checklist reduce repeated admin friction.",
-      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+      "relatedGuideHref": "/netherlands/document-readiness-checker/"
     },
     {
       "id": "health-insurance-orientation",

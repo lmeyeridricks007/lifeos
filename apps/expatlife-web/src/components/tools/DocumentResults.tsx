@@ -86,7 +86,7 @@ export type DocumentResultsProps = {
 
 export function DocumentResults({
   documentsByCategory,
-  documentsGuideHref = "/netherlands/documents-needed-to-move-netherlands/",
+  documentsGuideHref = "/netherlands/document-readiness-checker/",
   className,
 }: DocumentResultsProps) {
   const categories = Object.keys(documentsByCategory);

@@ -43,7 +43,7 @@ export const MIGRATED_BATCH_1_ROUTES = [
 export const MIGRATED_BATCH_2_ROUTES = [
   "/netherlands/moving/tools/arrival-planner",
   "/netherlands/moving/tools/moving-checklist",
-  "/netherlands/moving/tools/document-readiness",
+  "/netherlands/document-readiness-checker",
   "/netherlands/moving/tools/first-90-days",
   "/netherlands/moving/tools/relocation-cost-estimator",
   "/netherlands/visa-checker",
@@ -197,7 +197,7 @@ export const ROUTE_TEMPLATE_HINTS: Partial<Record<string, TemplateArchetype>> = 
   "/netherlands/money": "guideShell",
   "/netherlands/money/tools": "clusterHub",
   "/netherlands/taxes": "guideShell",
-  "/netherlands/taxes/expat-taxes-netherlands": "guideShell",
+  "/netherlands/money/expat-taxes-netherlands": "guideShell",
   "/netherlands/taxes/30-percent-ruling": "guideShell",
   "/netherlands/taxes/net-salary-netherlands": "guideShell",
   "/netherlands/taxes/gross-vs-net-salary": "guideShell",
@@ -257,5 +257,5 @@ export const ROUTE_TEMPLATE_HINTS: Partial<Record<string, TemplateArchetype>> = 
   "/netherlands/visa/compare-visas": "toolLanding",
   "/netherlands/moving/tools/arrival-planner": "toolLanding",
   "/netherlands/bsn-registration": "articleSupport",
-  "/netherlands/register-address-netherlands": "articleSupport",
+  "/netherlands/practical-life/registering-your-address-netherlands": "articleSupport",
 };

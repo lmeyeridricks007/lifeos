@@ -710,7 +710,7 @@ export function PayrollTaxNetherlandsView() {
                     <p>Most expats employed by Dutch companies will have payroll taxes withheld automatically through employer payroll.</p>
                     <p>
                       For broader context, see the{" "}
-                      <Link href="/netherlands/taxes/expat-taxes-netherlands/" className="font-semibold text-link hover:text-link-hover">Expat Taxes guide</Link>.
+                      <Link href="/netherlands/money/expat-taxes-netherlands/" className="font-semibold text-link hover:text-link-hover">Expat Taxes guide</Link>.
                     </p>
                   </SectionIntro>
                   <ul className="mt-6 space-y-3">

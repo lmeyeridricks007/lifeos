@@ -53,6 +53,7 @@ import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/compone
 import { GuideHeroTrustMeta } from "@/src/components/guides/GuideHeroTrustMeta";
 import { BankingRecommendedOptionsSection } from "@/components/banking/BankingRecommendedOptionsSection";
 import { LIVING_PILLAR_ROOT_PATH } from "@/src/components/living/livingPillarContent";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
 import {
   OV_CHIPKAART_NETHERLANDS_PATH,
   ovChipkaartNetherlandsPage as page,
@@ -393,7 +394,7 @@ function LinkCard({
 }) {
   const Icon = iconPool[iconIndex % iconPool.length];
   const isExternal = item.status === "external";
-  const isLive = item.status !== "comingSoon";
+  const isLive = item.status !== "comingSoon" && (item.href.startsWith("http") || isRouteLive(item.href));
   const onDark = tone === "onDark";
   const body = (
     <>

@@ -15,7 +15,7 @@
     "whoMayAskForIt": ["municipality", "IND", "banks", "employers", "housing providers"],
     "typicalCost": { "summary": "Examples (check current fees): South Africa ~ZAR 600–1,200; USA ~USD 130–200 (adult book); India ~INR 1,500–3,500; UK ~£82.50; Netherlands (if applying there) ~€75. Expedited or courier services cost extra." },
     "typicalTimeline": { "summary": "Processing can range from a few days to several weeks depending on country and service type." },
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/visa-documents-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "conditions": { "scenario": ["work", "partner", "family", "unsure"] },
     "core": true,
@@ -58,7 +58,7 @@
     "whoMayAskForIt": ["employers", "banks", "housing agencies", "utility providers"],
     "typicalCost": { "summary": "Free if you print or scan yourself. Certified copies: typically €5–20 per copy (e.g. notary or copy shop). Some countries charge ~USD 5–15 or equivalent for certified passport copies." },
     "typicalTimeline": { "summary": "Can be prepared immediately from your passport." },
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "conditions": { "scenario": ["work", "partner", "family", "unsure"] },
     "core": true
@@ -76,7 +76,7 @@
     "whoMayAskForIt": ["employer HR", "municipality", "banks", "housing providers"],
     "typicalCost": { "summary": "IND permit/authorization fees (examples, check ind.nl): e.g. €69 for some residence endorsements, €321 for first permit or extension (2024). Employer or sponsor may cover part of the cost depending on your route." },
     "typicalTimeline": { "summary": "Processing times vary by route; often reviewed early in relocation." },
-    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/visa-documents-netherlands/"],
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "conditions": { "scenario": ["work", "partner", "family", "unsure"] },
     "core": true
@@ -97,7 +97,7 @@
     "whoMayAskForIt": ["municipality", "IND", "family admin processes"],
     "typicalCost": { "summary": "Examples: government issue ~USD 15–30 (USA), ~ZAR 75–150 (South Africa), ~INR 50–200 (India), ~€15–30 (many EU countries). Apostille/legalization extra (e.g. ~USD 10–25 per doc in USA; DIRCO/notary in South Africa). Certified translation often €25–75 per page." },
     "typicalTimeline": { "summary": "Can range from a few days to several weeks depending on the issuing country." },
-    "relatedGuides": ["/netherlands/visa-documents-netherlands/", "/netherlands/document-translation-netherlands/", "/netherlands/document-legalization-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-translation-netherlands/", "/netherlands/document-legalization-netherlands/"],
     "affiliateCategories": ["document-translation", "relocation-services"],
     "conditions": { "scenario": ["partner", "family", "unsure"] },
     "core": false,
@@ -232,7 +232,7 @@
     "commonUses": ["employer process checks", "relocation planning", "compliance awareness"],
     "whereToGetIt": { "summary": "Through employer communications and official route information (IND, employer, or sponsor)." },
     "typicalCost": { "summary": "IND/consulate fees apply (examples): e.g. €69–€321 for permit or endorsement (2024); check ind.nl for your route. Employer or sponsor sometimes covers part of the cost." },
-    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/visa-documents-netherlands/"],
+    "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "conditions": { "scenario": ["work", "unsure"] },
     "core": false
@@ -251,7 +251,7 @@
     "whoMayAskForIt": ["municipality", "banks", "utility providers", "IND in some routes"],
     "typicalCost": { "summary": "No fee for the contract itself. You may pay a deposit (e.g. 1–3 months’ rent), agency fee (e.g. 1 month’s rent or 10–15% of annual rent in the Netherlands), or admin fee (e.g. €25–100) depending on landlord or agency." },
     "typicalTimeline": { "summary": "Provided when you secure housing." },
-    "relatedGuides": ["/netherlands/register-address-netherlands/", "/netherlands/municipality-registration-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/municipality-registration-netherlands/"],
     "affiliateCategories": ["housing", "relocation-services"],
     "conditions": { "scenario": ["work", "partner", "family", "unsure"] },
     "core": true
@@ -269,7 +269,7 @@
     "whereToGetIt": { "summary": "From your housing provider or formal housing documentation trail (lease, utility, or official letter)." },
     "whoMayAskForIt": ["municipality", "banks", "utility and service providers"],
     "typicalCost": { "summary": "Usually free (lease or utility letter). Municipal extract or certified proof in the Netherlands often €10–25. Notary or certified letter abroad can be ~€15–50 depending on provider." },
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": ["housing"],
     "conditions": { "scenario": ["work", "partner", "family", "unsure"] },
     "core": true
@@ -285,7 +285,7 @@
     "commonUses": ["reference checks", "contract clarifications", "address confirmation follow-up"],
     "whereToGetIt": { "summary": "From your lease documents and booking communications." },
     "typicalCost": { "summary": "No direct fee expected." },
-    "relatedGuides": ["/netherlands/register-address-netherlands/"],
+    "relatedGuides": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "conditions": { "scenario": ["work", "partner", "family", "unsure"] },
     "core": false
@@ -342,7 +342,7 @@
     "whoMayAskForIt": ["employers", "professional bodies", "IND in some routes"],
     "typicalCost": { "summary": "Replacement or certified copy: e.g. €15–50 (EU), USD 15–35 (USA), INR 500–2,000 (India). Apostille/legalization extra (e.g. USD 10–25 per doc in USA). Certified translation ~€25–75 per page if needed." },
     "typicalTimeline": { "summary": "Varies by institution; can take days to weeks." },
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/document-legalization-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-legalization-netherlands/"],
     "affiliateCategories": ["document-translation"],
     "conditions": { "scenario": ["work", "partner", "family", "unsure"] },
     "core": false,
@@ -374,7 +374,7 @@
     "whereToGetIt": { "summary": "From your educational institution (records office or registrar)." },
     "typicalCost": { "summary": "Examples: ~USD 10–25 per official transcript (USA), ~€10–30 (EU), ~INR 200–500 (India). Sealed or certified copies may cost more. Apostille and translation extra if required." },
     "typicalTimeline": { "summary": "Often a few days to a couple of weeks." },
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/", "/netherlands/document-translation-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/", "/netherlands/document-translation-netherlands/"],
     "affiliateCategories": ["document-translation"],
     "conditions": { "scenario": ["work", "partner", "family", "unsure"] },
     "core": false
@@ -390,7 +390,7 @@
     "commonUses": ["employer compliance checks", "professional profile evidence", "licensing awareness"],
     "whereToGetIt": { "summary": "Issuing certification body or training provider." },
     "typicalCost": { "summary": "Reissue or verification: e.g. €20–100 or USD 25–150 depending on body (e.g. PMP, CFA, nursing boards). Some offer free PDF verification; physical reprints cost more." },
-    "relatedGuides": ["/netherlands/documents-needed-to-move-netherlands/"],
+    "relatedGuides": ["/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "conditions": { "scenario": ["work", "unsure"] },
     "core": false

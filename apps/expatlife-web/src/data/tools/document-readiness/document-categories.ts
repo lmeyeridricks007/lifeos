@@ -62,7 +62,7 @@ export const DOCUMENT_CATEGORIES: DocumentCategoryEntry[] = [
     importanceLevel: "critical",
     commonComplexityFlags: [],
     officialSourceTopics: ["identity", "travel"],
-    relatedGuideHref: "/netherlands/documents-needed-to-move-netherlands/",
+    relatedGuideHref: "/netherlands/document-readiness-checker/",
   },
   {
     id: "employment-contract",
@@ -185,7 +185,7 @@ export const DOCUMENT_CATEGORIES: DocumentCategoryEntry[] = [
     importanceLevel: "high",
     commonComplexityFlags: [],
     officialSourceTopics: ["registration", "municipality"],
-    relatedGuideHref: "/netherlands/register-address-netherlands/",
+    relatedGuideHref: "/netherlands/practical-life/registering-your-address-netherlands/",
   },
   {
     id: "insurance-awareness",

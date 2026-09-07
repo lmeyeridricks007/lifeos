@@ -50,7 +50,7 @@ export const HSM_SALARY_RELATED_GUIDES = [
     description: "Alternative skilled-work route with its own salary tiers.",
   },
   {
-    href: "/netherlands/money/taxes/30-percent-ruling/",
+    href: "/netherlands/taxes/30-percent-ruling/",
     title: "30% ruling",
     description: "Separate Belastingdienst salary norms — not the same as IND HSM floors.",
   },

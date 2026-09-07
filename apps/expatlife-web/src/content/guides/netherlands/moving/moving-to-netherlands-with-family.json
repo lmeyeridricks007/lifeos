@@ -41,7 +41,7 @@
     ],
     "supportingLinks": [
       { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
-      { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
       { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/" },
@@ -74,7 +74,7 @@
       ],
       "links": [
         { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
-        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
         { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
         { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
@@ -99,7 +99,7 @@
         "primaryLabel": "Run the Document Readiness Checker",
         "primaryHref": "/netherlands/document-readiness-checker/",
         "secondaryLabel": "Read Documents Needed to Move",
-        "secondaryHref": "/netherlands/documents-needed-to-move-netherlands/"
+        "secondaryHref": "/netherlands/document-readiness-checker/"
       }
     },
     {
@@ -326,7 +326,7 @@
   "sidebarStartLinks": [
     { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
     { "label": "Read the full moving guide", "href": "/netherlands/moving-to-the-netherlands/" },
-    { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
     { "label": "Register your address", "href": "/netherlands/municipality-registration-netherlands/" },
     { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
   ],
@@ -336,7 +336,7 @@
     "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
     "related": [
       { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
-      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Registering Your Address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "BSN Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },

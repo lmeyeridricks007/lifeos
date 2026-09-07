@@ -128,7 +128,7 @@ export const moveExtensionsChangesSections = {
         relatedLinks: [
           { label: "Visas & residency", href: VISAS },
           { label: "Residence permits", href: PERMITS },
-          { label: "Document readiness", href: "/netherlands/moving/tools/document-readiness/" },
+          { label: "Document readiness", href: "/netherlands/document-readiness-checker/" },
         ],
       },
     ],

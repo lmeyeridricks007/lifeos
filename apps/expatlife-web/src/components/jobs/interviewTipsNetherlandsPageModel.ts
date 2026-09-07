@@ -520,9 +520,9 @@ export const interviewTipsNetherlandsPage = {
       status: "live",
       description: "Where and how expats search: platforms, recruiters, sponsorship and city demand.",
     },
-    { label: "Recruitment Agencies Netherlands", href: "/netherlands/jobs/recruitment-agencies-netherlands/", status: "live", description: "Agency channel for Dutch roles." },
-    { label: "English Speaking Jobs Netherlands", href: "/netherlands/jobs/english-speaking-jobs-netherlands/", status: "live", description: "English-friendly market lane." },
-    { label: "Remote Work Netherlands", href: "/netherlands/jobs/remote-work-netherlands/", status: "live", description: "Remote and hybrid employment norms." },
+    { label: "Recruitment Agencies Netherlands", href: "/netherlands/jobs/recruitment-agencies-netherlands/", status: "comingSoon", description: "Agency channel for Dutch roles." },
+    { label: "English Speaking Jobs Netherlands", href: "/netherlands/jobs/english-speaking-jobs-netherlands/", status: "comingSoon", description: "English-friendly market lane." },
+    { label: "Remote Work Netherlands", href: "/netherlands/jobs/remote-work-netherlands/", status: "comingSoon", description: "Remote and hybrid employment norms." },
 
     {
       label: "CV Netherlands",
@@ -533,19 +533,19 @@ export const interviewTipsNetherlandsPage = {
     {
       label: "Cover Letter Netherlands",
       href: "/netherlands/jobs/cover-letter-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Dutch motivatiebrief norms when portals still require a letter.",
     },
     {
       label: "LinkedIn Netherlands",
       href: "/netherlands/jobs/linkedin-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Profile positioning and recruiter messaging that lead into interviews.",
     },
     {
       label: "Networking Netherlands",
       href: "/netherlands/jobs/networking-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Events, communities, referrals and Dutch directness that feed interview pipelines.",
     },
     {
@@ -641,13 +641,13 @@ export const interviewTipsNetherlandsPage = {
     {
       label: "Cover Letter",
       href: "/netherlands/jobs/cover-letter-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Dutch motivatiebrief when portals still require a letter.",
     },
     {
       label: "Networking Netherlands",
       href: "/netherlands/jobs/networking-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Referrals and communities that feed interview pipelines.",
     },
   ] satisfies InterviewTipsNetherlandsLink[],
@@ -801,19 +801,19 @@ export const interviewTipsNetherlandsPage = {
     {
       label: "Cover Letter Netherlands",
       href: "/netherlands/jobs/cover-letter-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Dutch motivatiebrief when portals still require a letter.",
     },
     {
       label: "LinkedIn Netherlands",
       href: "/netherlands/jobs/linkedin-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Profile and recruiter messaging that lead into interviews.",
     },
     {
       label: "Networking Netherlands",
       href: "/netherlands/jobs/networking-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Keep referrals and communities warm between interview loops.",
     },
     {

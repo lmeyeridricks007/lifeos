@@ -357,7 +357,7 @@ export type ArrivalPlannerTaskResultsProps = {
 
 const RELATED_TOOLS = [
   { label: "Moving checklist", href: "/netherlands/moving/tools/moving-checklist/" },
-  { label: "Document readiness", href: "/netherlands/moving/tools/document-readiness/" },
+  { label: "Document readiness", href: "/netherlands/document-readiness-checker/" },
   { label: "First 90 days", href: "/netherlands/moving/tools/first-90-days/" },
 ];
 

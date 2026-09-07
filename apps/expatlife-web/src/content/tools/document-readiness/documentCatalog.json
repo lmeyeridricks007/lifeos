@@ -10,7 +10,7 @@
     "whereToGetIt": "Your national passport authority.",
     "whoToContact": "Passport office or civil authority in your country of citizenship.",
     "costNote": "Fees vary by issuing country and whether renewal is expedited.",
-    "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    "relatedGuideHref": "/netherlands/document-readiness-checker/"
   },
   {
     "id": "passport-copies",
@@ -23,7 +23,7 @@
     "whereToGetIt": "Create clear scans and printed copies from your valid passport.",
     "whoToContact": "Copy/print service if needed for certified copies.",
     "costNote": "Copy and certification costs vary by provider.",
-    "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    "relatedGuideHref": "/netherlands/document-readiness-checker/"
   },
   {
     "id": "residence-permit-awareness",
@@ -101,7 +101,7 @@
     "whereToGetIt": "From landlord, rental agency, or housing provider.",
     "whoToContact": "Landlord, letting agent, or housing platform support.",
     "costNote": "Document itself is usually provided; related deposits/fees vary by rental.",
-    "relatedGuideHref": "/netherlands/register-address-netherlands/"
+    "relatedGuideHref": "/netherlands/practical-life/registering-your-address-netherlands/"
   },
   {
     "id": "address-confirmation",
@@ -114,7 +114,7 @@
     "whereToGetIt": "From your housing provider or formal housing documentation trail.",
     "whoToContact": "Landlord, agency, or housing admin support.",
     "costNote": "Costs vary if certified extracts or additional documents are requested.",
-    "relatedGuideHref": "/netherlands/register-address-netherlands/"
+    "relatedGuideHref": "/netherlands/practical-life/registering-your-address-netherlands/"
   },
   {
     "id": "landlord-agency-contact",
@@ -127,7 +127,7 @@
     "whereToGetIt": "From your lease documents and booking communications.",
     "whoToContact": "Assigned property manager or agency support.",
     "costNote": "No direct fee expected.",
-    "relatedGuideHref": "/netherlands/register-address-netherlands/"
+    "relatedGuideHref": "/netherlands/practical-life/registering-your-address-netherlands/"
   },
   {
     "id": "marriage-certificate",
@@ -153,7 +153,7 @@
     "whereToGetIt": "Civil registry in your country or place of birth.",
     "whoToContact": "Vital records office or civil authority.",
     "costNote": "Certified extract fees vary by jurisdiction.",
-    "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    "relatedGuideHref": "/netherlands/document-readiness-checker/"
   },
   {
     "id": "children-birth-certificates",
@@ -192,7 +192,7 @@
     "whereToGetIt": "Issuing educational institution.",
     "whoToContact": "University registrar or education records office.",
     "costNote": "Replacement and certified copies may involve administrative fees.",
-    "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    "relatedGuideHref": "/netherlands/document-readiness-checker/"
   },
   {
     "id": "transcripts",
@@ -205,7 +205,7 @@
     "whereToGetIt": "From your educational institution.",
     "whoToContact": "Records office or registrar.",
     "costNote": "Transcript request fees vary by institution.",
-    "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    "relatedGuideHref": "/netherlands/document-readiness-checker/"
   },
   {
     "id": "professional-certificates",
@@ -218,7 +218,7 @@
     "whereToGetIt": "Issuing certification body or training provider.",
     "whoToContact": "Certification authority support channels.",
     "costNote": "Reissue and verification costs differ by credential provider.",
-    "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+    "relatedGuideHref": "/netherlands/document-readiness-checker/"
   },
   {
     "id": "travel-insurance-details",

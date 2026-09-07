@@ -11,7 +11,7 @@ export const COMMUNITY_BASICS_NETHERLANDS_PATH = "/netherlands/life/community-ba
 export const DUTCH_WORKPLACE_CULTURE_PATH = "/netherlands/jobs/dutch-workplace-culture" as const;
 export const DUTCH_DIRECTNESS_AT_WORK_PATH = "/netherlands/jobs/dutch-directness-at-work" as const;
 export const LANGUAGE_LEARNING_PATH = "/netherlands/language-learning" as const;
-export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/living/culture-etiquette" as const;
+export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/life/dutch-etiquette" as const;
 
 export type LifeGuideLink = {
   label: string;

@@ -112,7 +112,7 @@ export default async function RelocationCostEstimatorPage() {
         deposit and first month’s rent, and initial setup such as furniture, utilities, and admin.
         Families and pet owners often face higher one-time and monthly costs. For document planning
         see our{" "}
-        <Link href="/netherlands/documents-needed-to-move-netherlands/" className="font-medium text-brand-600 hover:text-brand-700">
+        <Link href="/netherlands/document-readiness-checker/" className="font-medium text-brand-600 hover:text-brand-700">
           documents needed to move
         </Link>
         ; for pets see{" "}

@@ -686,9 +686,9 @@ export const linkedInNetherlandsPage = {
       status: "live",
       description: "Multi-channel search strategy: platforms, recruiters, sponsorship and city demand.",
     },
-    { label: "Recruitment Agencies Netherlands", href: "/netherlands/jobs/recruitment-agencies-netherlands/", status: "live", description: "Agency channel for Dutch roles." },
-    { label: "English Speaking Jobs Netherlands", href: "/netherlands/jobs/english-speaking-jobs-netherlands/", status: "live", description: "English-friendly market lane." },
-    { label: "Remote Work Netherlands", href: "/netherlands/jobs/remote-work-netherlands/", status: "live", description: "Remote and hybrid employment norms." },
+    { label: "Recruitment Agencies Netherlands", href: "/netherlands/jobs/recruitment-agencies-netherlands/", status: "comingSoon", description: "Agency channel for Dutch roles." },
+    { label: "English Speaking Jobs Netherlands", href: "/netherlands/jobs/english-speaking-jobs-netherlands/", status: "comingSoon", description: "English-friendly market lane." },
+    { label: "Remote Work Netherlands", href: "/netherlands/jobs/remote-work-netherlands/", status: "comingSoon", description: "Remote and hybrid employment norms." },
 
     {
       label: "CV Netherlands",

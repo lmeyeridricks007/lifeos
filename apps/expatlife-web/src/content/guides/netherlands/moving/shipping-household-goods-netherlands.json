@@ -68,7 +68,7 @@
         { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
         { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
         { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" }
       ]
     },
     {
@@ -153,7 +153,7 @@
         "text": "Do not assume all personal belongings can be imported the same way. Customs treatment, exemptions, and required paperwork vary by provider and route. Confirm with Dutch customs and your moving company."
       },
       "links": [
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" }
       ]
     },
     {
@@ -264,7 +264,7 @@
       { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
       { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
       { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "Moving to the Netherlands with family", "href": "/netherlands/moving-to-netherlands-with-family/" },
@@ -278,7 +278,7 @@
     { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
     { "label": "Read the full moving guide", "href": "/netherlands/moving-to-the-netherlands/" },
     { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-    { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
     { "label": "Plan your first 90 days", "href": "/netherlands/moving/tools/first-90-days/" }
   ],
 

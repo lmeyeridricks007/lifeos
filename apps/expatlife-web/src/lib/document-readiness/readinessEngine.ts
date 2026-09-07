@@ -250,7 +250,7 @@ export function runReadinessEngine(answers: DocumentReadinessAnswers): Readiness
 
   const recommendedGuides = [
     { label: routeMap?.label ?? "Your visa route", href: routeHref },
-    { label: "Documents needed to move", href: "/netherlands/documents-needed-to-move-netherlands/" },
+    { label: "Documents needed to move", href: "/netherlands/document-readiness-checker/" },
     { label: "Moving to the Netherlands", href: "/netherlands/moving-to-the-netherlands/" },
   ].filter((g) => g.href);
 

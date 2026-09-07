@@ -12,7 +12,7 @@ import type { CountryContact, CountryCostRange, CountryRecord, CountryTemplateDa
 const GUIDE_LABELS: Record<string, string> = {
   "/netherlands/moving-to-the-netherlands/": "Moving to the Netherlands",
   "/netherlands/moving-to-netherlands-from/": "See all country-specific relocation guides",
-  "/netherlands/documents-needed-to-move-netherlands/": "Documents needed to move",
+  "/netherlands/document-readiness-checker/": "Documents needed to move",
   "/netherlands/moving-to-netherlands-cost/": "Cost of moving to the Netherlands",
   "/netherlands/first-90-days-netherlands/": "First 90 days in the Netherlands",
   "/netherlands/moving/working-in-the-netherlands/": "Working in the Netherlands",
@@ -25,7 +25,7 @@ const GUIDE_LABELS: Record<string, string> = {
   "/netherlands/services/housing-platforms/": "Housing platforms for expats",
   "/netherlands/bringing-pets-to-netherlands/": "Bringing pets to the Netherlands",
   "/netherlands/bsn-registration/": "BSN registration",
-  "/netherlands/register-address-netherlands/": "Register address in the Netherlands",
+  "/netherlands/practical-life/registering-your-address-netherlands/": "Register address in the Netherlands",
   "/netherlands/first-30-days-netherlands/": "First 30 days in the Netherlands",
 };
 

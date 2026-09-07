@@ -46,7 +46,7 @@ export const MOVING_COUNTRY_TOOLS: readonly MovingCountryToolDef[] = [
     toolSlug: "document-readiness",
     label: "Document readiness",
     description: "Which documents to prepare for your route from this country.",
-    basePath: "/netherlands/moving/tools/document-readiness",
+    basePath: "/netherlands/document-readiness-checker",
     cluster: "moving",
     searchIntent: "documents for move from country",
   },

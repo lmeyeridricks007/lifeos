@@ -12,7 +12,7 @@
     "timeline": "Before or as soon as you arrive.",
     "whenVisible": { "addressStatus": ["yes", "soon", "no"] },
     "whoToContact": ["local-municipality"],
-    "officialLinks": ["/netherlands/register-address-netherlands/", "/netherlands/moving-to-the-netherlands/"],
+    "officialLinks": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/moving-to-the-netherlands/"],
     "affiliateCategories": ["housing"],
     "tags": ["arrival", "address", "housing"]
   },
@@ -33,7 +33,7 @@
     "appointmentNeeded": true,
     "whenVisible": { "addressStatus": ["yes", "soon", "no"] },
     "whoToContact": ["local-municipality", "netherlandsworldwide-brp"],
-    "officialLinks": ["/netherlands/municipality-registration-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/municipality-registration-netherlands/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["arrival", "registration", "bsn"]
   },
@@ -51,7 +51,7 @@
     "appointmentNeeded": true,
     "whenVisible": { "addressStatus": ["yes", "soon"] },
     "whoToContact": ["local-municipality", "netherlandsworldwide-brp"],
-    "officialLinks": ["/netherlands/register-address-netherlands/", "/netherlands/municipality-registration-netherlands/"],
+    "officialLinks": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/municipality-registration-netherlands/"],
     "affiliateCategories": [],
     "tags": ["arrival", "registration", "bsn"]
   },
@@ -71,7 +71,7 @@
     "appointmentNeeded": true,
     "whenVisible": { "addressStatus": ["yes", "soon"] },
     "whoToContact": ["local-municipality", "government-bsn"],
-    "officialLinks": ["/netherlands/bsn-registration/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/bsn-registration/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["registration", "bsn"]
   },
@@ -123,7 +123,7 @@
     "appointmentNeeded": true,
     "whenVisible": { "addressStatus": ["yes", "soon"] },
     "whoToContact": ["ind"],
-    "officialLinks": ["/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["residence", "ind"]
   },
@@ -195,7 +195,7 @@
     "timeline": "After you have BSN and address; application and activation take a few days.",
     "whenVisible": { "addressStatus": ["yes", "soon"] },
     "whoToContact": ["digid"],
-    "officialLinks": ["/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": [],
     "tags": ["digid", "admin"]
   },
@@ -352,7 +352,7 @@
     "timeline": "As soon as you arrive or before; short-term first if you need time to find a permanent place.",
     "whenVisible": { "addressStatus": ["no"] },
     "whoToContact": [],
-    "officialLinks": ["/netherlands/housing/", "/netherlands/moving-to-the-netherlands/", "/netherlands/register-address-netherlands/"],
+    "officialLinks": ["/netherlands/housing/", "/netherlands/moving-to-the-netherlands/", "/netherlands/practical-life/registering-your-address-netherlands/"],
     "affiliateCategories": ["housing"],
     "tags": ["housing", "address", "arrival"]
   },
@@ -369,7 +369,7 @@
     "timeline": "Before or in the first days after arrival.",
     "whenVisible": { "addressStatus": ["soon", "no"] },
     "whoToContact": ["local-municipality", "netherlandsworldwide-brp"],
-    "officialLinks": ["/netherlands/register-address-netherlands/", "/netherlands/moving-to-the-netherlands/"],
+    "officialLinks": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/moving-to-the-netherlands/"],
     "affiliateCategories": ["housing"],
     "tags": ["address", "planning"]
   },
@@ -386,7 +386,7 @@
     "timeline": "Before arrival and in the first days.",
     "whenVisible": { "addressStatus": ["soon", "no"] },
     "whoToContact": [],
-    "officialLinks": ["/netherlands/register-address-netherlands/", "/netherlands/moving-to-the-netherlands/"],
+    "officialLinks": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/moving-to-the-netherlands/"],
     "affiliateCategories": ["housing"],
     "tags": ["housing", "temporary"]
   },
@@ -454,7 +454,7 @@
     "timeline": "Before your municipality registration appointment.",
     "whenVisible": { "household": ["partner", "kids"] },
     "whoToContact": ["local-municipality", "netherlandsworldwide-brp"],
-    "officialLinks": ["/netherlands/register-address-netherlands/", "/netherlands/documents-needed-to-move-netherlands/"],
+    "officialLinks": ["/netherlands/practical-life/registering-your-address-netherlands/", "/netherlands/document-readiness-checker/"],
     "affiliateCategories": [],
     "tags": ["family", "registration", "documents"]
   }

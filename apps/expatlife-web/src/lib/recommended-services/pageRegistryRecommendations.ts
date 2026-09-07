@@ -557,7 +557,7 @@ export type UtilitiesServicesServiceGroup = {
 
 const NL_UTILITIES_GUIDE_CARD: PageRecommendedProviderCard = {
   name: "Utilities in the Netherlands (guide)",
-  url: "/netherlands/living/utilities/",
+  url: "/netherlands/utilities/utilities-netherlands/",
   useFor: "Editorial context on energy, water, internet, and gemeente-linked charges before you compare retail offers.",
   priceRange: "Free guide on ExpatCopilot",
 };

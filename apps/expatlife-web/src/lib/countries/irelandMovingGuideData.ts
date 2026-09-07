@@ -10,7 +10,7 @@ import type { CountryPageModel } from "./buildCountryPageModel";
 const PILLAR_PATH = "/netherlands/moving-to-the-netherlands";
 const COUNTRY_INDEX_PATH = "/netherlands/moving-to-netherlands-from";
 const COST_ESTIMATOR_PATH = "/netherlands/moving/tools/relocation-cost-estimator";
-const DOCUMENTS_GUIDE_PATH = "/netherlands/documents-needed-to-move-netherlands";
+const DOCUMENTS_GUIDE_PATH = "/netherlands/document-readiness-checker";
 const COST_GUIDE_PATH = "/netherlands/moving-to-netherlands-cost";
 
 const OFFICIAL_EU_NL: Array<{ label: string; href: string }> = [
@@ -171,7 +171,7 @@ function irelandSections(
       links: [
         { label: "After arriving in the Netherlands", href: "/netherlands/after-arriving-netherlands/" },
         { label: "BSN registration (related)", href: "/netherlands/bsn-registration/" },
-        { label: "Register address in the Netherlands", href: "/netherlands/register-address-netherlands/" },
+        { label: "Register address in the Netherlands", href: "/netherlands/practical-life/registering-your-address-netherlands/" },
       ],
     },
     {

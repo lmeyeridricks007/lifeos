@@ -11,7 +11,7 @@ export const QUICK_LINK_DEFINITIONS: InternalLink[] = [
   { label: "Moving from your country", href: "/netherlands/moving-to-netherlands-from/" },
   { label: "Moving checklist", href: "/netherlands/moving/tools/moving-checklist/" },
   { label: "Relocation cost estimator", href: "/netherlands/moving/tools/relocation-cost-estimator/" },
-  { label: "Documents needed", href: "/netherlands/documents-needed-to-move-netherlands/" },
+  { label: "Documents needed", href: "/netherlands/document-readiness-checker/" },
   { label: "First 30 days", href: "/netherlands/first-30-days-netherlands/" },
   { label: "First 90 days", href: "/netherlands/first-90-days-netherlands/" },
   { label: "BSN registration", href: "/netherlands/bsn-registration/" },
@@ -29,7 +29,7 @@ export const QUICK_LINK_DEFINITIONS: InternalLink[] = [
   { label: "Emergencies & Safety in the Netherlands", href: "/netherlands/living/emergencies-safety/" },
   { label: "Language & phrases for life in the Netherlands", href: "/netherlands/living/language/" },
   { label: "Weather & seasons in the Netherlands", href: "/netherlands/living/weather/" },
-  { label: "Dutch Culture & Etiquette", href: "/netherlands/living/culture-etiquette/" },
+  { label: "Dutch Culture & Etiquette", href: "/netherlands/life/dutch-etiquette/" },
   { label: "Culture in the Netherlands", href: "/netherlands/culture/" },
 ];
 

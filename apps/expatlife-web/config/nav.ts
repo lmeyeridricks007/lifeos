@@ -332,7 +332,7 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
           ),
           link(
             "Expat Taxes in the Netherlands",
-            "/netherlands/taxes/expat-taxes-netherlands/",
+            "/netherlands/money/expat-taxes-netherlands/",
             "Scenario-led Taxes guide: partial years, foreign assets, ruling, allowances, double tax",
             false
           ),
@@ -395,7 +395,7 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
         links: [
           link("Housing", "/netherlands/living/housing", "Rental and address setup"),
           link("Registration address", "/netherlands/living/housing/registration-address", "Address requirements"),
-          link("Utilities", "/netherlands/living/utilities", "Energy/internet/services"),
+          link("Utilities", "/netherlands/utilities/utilities-netherlands", "Energy/internet/services"),
         ],
       },
       {

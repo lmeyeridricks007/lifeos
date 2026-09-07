@@ -32,7 +32,7 @@ export function CostOfMovingSection({ contained = true }: { contained?: boolean 
             moving checklist
           </Link>{" "}
           to plan by stage, and the{" "}
-          <Link href="/netherlands/moving/tools/document-readiness" className="text-brand-700 underline hover:text-brand-800">
+          <Link href="/netherlands/document-readiness-checker" className="text-brand-700 underline hover:text-brand-800">
             document readiness tool
           </Link>{" "}
           to avoid last-minute document costs. See our{" "}

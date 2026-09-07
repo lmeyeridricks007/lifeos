@@ -142,7 +142,7 @@ function EssentialsOverview() {
     {
       title: "Admin & setup",
       body: "Utilities you own, portals, and the letters that pile up once you have an address.",
-      href: "/netherlands/living/utilities/",
+      href: "/netherlands/utilities/utilities-netherlands/",
       cta: "Check utilities hub",
     },
   ];

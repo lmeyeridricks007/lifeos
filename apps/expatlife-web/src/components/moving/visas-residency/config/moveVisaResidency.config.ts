@@ -182,8 +182,8 @@ export const moveVisaResidencySections: MoveVisaResidencySection[] = [
     ],
     moreNote: "Use our documents and after you arrive guides together with this page—see the links below.",
     docLinks: [
-      { label: "Documents overview", href: "/netherlands/documents-needed-to-move-netherlands/" },
-      { label: "Document readiness", href: "/netherlands/moving/tools/document-readiness/" },
+      { label: "Documents overview", href: "/netherlands/document-readiness-checker/" },
+      { label: "Document readiness", href: "/netherlands/document-readiness-checker/" },
       { label: "After arriving", href: "/netherlands/after-arriving-netherlands/" },
       { label: "Extensions & changes", href: "/netherlands/moving/extensions-changes/" },
       { label: "EU vs non-EU", href: "/netherlands/eu-vs-non-eu-moving-to-netherlands/" },
@@ -359,7 +359,7 @@ export const moveVisaResidencyRelatedTools: MoveVisaResidencyRelatedTools = {
         {
           title: "Document readiness",
           description: "What to gather for your origin and situation.",
-          href: "/netherlands/moving/tools/document-readiness/",
+          href: "/netherlands/document-readiness-checker/",
         },
         {
           title: "First 90 days planner",
@@ -566,7 +566,7 @@ export const moveVisaResidencyPageMeta: MoveVisaResidencyPageMeta = {
     {
       id: "docs",
       label: "Gather documents & timing",
-      href: "/netherlands/moving/tools/document-readiness/",
+      href: "/netherlands/document-readiness-checker/",
       description: "Gather papers in line with your permit steps once you know your direction.",
     },
     {
@@ -640,7 +640,7 @@ export const moveVisaResidencyPageMeta: MoveVisaResidencyPageMeta = {
         id: "documents",
         title: "Documents needed to move",
         description: "Which documents matter for your situation.",
-        href: "/netherlands/documents-needed-to-move-netherlands/",
+        href: "/netherlands/document-readiness-checker/",
         ctaLabel: "Read guide",
       },
       {

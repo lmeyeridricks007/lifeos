@@ -201,9 +201,9 @@ export function buildRelevantLinks(
 ): Array<{ label: string; href: string }> {
   const withFrom = (href: string) => `${href}${href.includes("?") ? "&" : "?"}from=${encodeURIComponent(input.from)}`;
   const links = [
-    { label: "Documents needed", href: withFrom("/netherlands/documents-needed-to-move-netherlands/") },
+    { label: "Documents needed", href: withFrom("/netherlands/document-readiness-checker/") },
     { label: "Moving checklist Netherlands", href: withFrom("/netherlands/moving-checklist-netherlands/") },
-    { label: "Register address in the Netherlands", href: withFrom("/netherlands/register-address-netherlands/") },
+    { label: "Register address in the Netherlands", href: withFrom("/netherlands/practical-life/registering-your-address-netherlands/") },
     { label: "Moving to the Netherlands guide", href: withFrom("/netherlands/moving-to-the-netherlands/") },
     { label: "Moving to the Netherlands", href: withFrom("/netherlands/moving-to-the-netherlands/") },
   ];

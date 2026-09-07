@@ -109,9 +109,9 @@
     { "value": "other", "label": "Other" }
   ],
   "relatedLinks": {
-    "documents": { "label": "Documents needed", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    "documents": { "label": "Documents needed", "href": "/netherlands/document-readiness-checker/" },
     "checklist": { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
-    "registerAddress": { "label": "Register address", "href": "/netherlands/register-address-netherlands/" },
+    "registerAddress": { "label": "Register address", "href": "/netherlands/practical-life/registering-your-address-netherlands/" },
     "pillar": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
     "hub": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" }
   },

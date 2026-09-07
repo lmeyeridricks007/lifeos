@@ -83,7 +83,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
     heroImageAlt: "Canal houses and bicycles—everyday life in a Dutch city",
     primaryCta: { label: "Start with housing", href: "/netherlands/housing/" },
     secondaryCtas: [
-      { label: "Living utilities hub", href: "/netherlands/living/utilities/" },
+      { label: "Living utilities hub", href: "/netherlands/utilities/utilities-netherlands/" },
       { label: "Housing tools", href: "/netherlands/housing/tools/" },
     ],
   },
@@ -125,7 +125,7 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         goal: "Reliable energy, water, and home connectivity from day one.",
         actions: ["Take meter readings on handover", "Shortlist energy and broadband providers", "Use gemeente portals for local services"],
         links: [
-          { href: "/netherlands/living/utilities/", label: "Utilities overview" },
+          { href: "/netherlands/utilities/utilities-netherlands/", label: "Utilities overview" },
           { href: "/netherlands/utilities/internet-and-mobile-netherlands/", label: "Internet & mobile" },
         ],
       },
@@ -145,8 +145,9 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         goal: "DigiD, portals, and subscriptions without drowning in tabs.",
         actions: ["Secure DigiD and recognise phishing patterns", "Map which agency owns which task", "Track contract end dates"],
         links: [
-          { href: "/netherlands/digid-awareness/", label: "DigiD guide for expats" },
+          { href: "/netherlands/living/government-portals-overview/", label: "Government portals overview" },
           { href: "/netherlands/practical-life/government-portals-netherlands/", label: "Government portals" },
+          { href: "/netherlands/digid-awareness/", label: "DigiD guide for expats" },
           { href: "/netherlands/practical-life/privacy-and-safety-basics-netherlands/", label: "Privacy & safety" },
         ],
       },
@@ -189,8 +190,8 @@ export const LIVING_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         personaTitle: "Setting up utilities",
         whatMatters: ["Meter readings and move-in dates", "Energy contract length vs. flexibility", "Broadband lead times in your building"],
         readingOrderLinks: [
-          { title: "Utilities overview", href: "/netherlands/living/utilities/" },
-          { title: "Energy & water", href: "/netherlands/living/energy-and-water/" },
+          { title: "Utilities overview", href: "/netherlands/utilities/utilities-netherlands/" },
+          { title: "Energy & water", href: "/netherlands/utilities/energy-and-water-netherlands/" },
           { title: "Internet & mobile", href: "/netherlands/utilities/internet-and-mobile-netherlands/" },
         ],
         startToolLink: {
@@ -379,13 +380,13 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         goal: "Navigate invitations, timing, and everyday communication confidently.",
         actions: ["Plan social dates early", "Understand punctuality signals respect", "Blend Living + Culture cues for neighbours"],
         links: [
-          { href: "/netherlands/life/dutch-culture/", label: "Dutch Culture hub" },
+          { href: "/netherlands/culture/communication-style/", label: "Communication style" },
           { href: "/netherlands/life/dutch-etiquette/", label: "Dutch Etiquette guide" },
+          { href: "/netherlands/life/dutch-culture/", label: "Dutch Culture hub" },
           { href: "/netherlands/life/dutch-social-norms/", label: "Social norms hub" },
           { href: "/netherlands/life/dating-in-the-netherlands/", label: "Dating in the Netherlands" },
           { href: "/netherlands/life/dutch-holidays-and-traditions/", label: "Dutch Holidays & Traditions" },
           { href: "/netherlands/life/dutch-birthday-traditions/", label: "Dutch Birthday Traditions" },
-          { href: "/netherlands/culture/communication-style/", label: "Communication style" },
         ],
       },
       {
@@ -394,10 +395,10 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         goal: "Participate in holidays and seasonal rhythms without guesswork.",
         actions: ["Know Koningsdag city impacts", "Understand Sinterklaas season in schools", "Check public holiday closures"],
         links: [
-          { href: "/netherlands/culture/dutch-traditions/", label: "Traditions hub" },
-          { href: "/netherlands/culture/national-holidays/", label: "National holidays" },
           { href: "/netherlands/culture/sinterklaas", label: "Sinterklaas" },
           { href: "/netherlands/culture/what-feels-normal-in-dutch-daily-life", label: "What feels normal in Dutch daily life" },
+          { href: "/netherlands/culture/dutch-traditions/", label: "Traditions hub" },
+          { href: "/netherlands/culture/national-holidays/", label: "National holidays" },
         ],
       },
       {
@@ -406,9 +407,9 @@ export const CULTURE_PILLAR_HUB_CONFIG: ClusterPillarHubConfig = {
         goal: "Learn Dutch strategically and align with integration requirements you must verify officially.",
         actions: ["Start with spoken basics for shops and care", "Use practice scenarios for stressful moments", "Confirm obligations with IND / DUO"],
         links: [
+          { href: "/netherlands/culture/communication-style", label: "Communication style" },
           { href: "/netherlands/culture/learning-dutch/", label: "Learning Dutch" },
           { href: "/netherlands/integration/inburgering/", label: "Inburgering guide" },
-          { href: "/netherlands/culture/communication-style", label: "Communication style" },
         ],
       },
     ],

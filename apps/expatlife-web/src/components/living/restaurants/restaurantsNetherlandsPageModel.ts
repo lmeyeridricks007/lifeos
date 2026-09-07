@@ -759,7 +759,7 @@ export const restaurantsNetherlandsPage = {
     crossLinks: [
       {
         label: "Dutch Culture & Etiquette",
-        href: "/netherlands/living/culture-etiquette/",
+        href: "/netherlands/life/dutch-etiquette/",
         status: "live",
         description: "Broader social norms around everyday Dutch life.",
       },

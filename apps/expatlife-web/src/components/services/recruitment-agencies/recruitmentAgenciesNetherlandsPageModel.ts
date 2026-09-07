@@ -613,13 +613,13 @@ export const recruitmentAgenciesServicesNetherlandsPage = {
     {
       label: "Moving companies",
       href: "/netherlands/services/moving-companies/",
-      status: "live",
+      status: "comingSoon",
       description: "Domestic NL house moves, packing and local transport.",
     },
     {
       label: "Removal companies",
       href: "/netherlands/services/removal-companies/",
-      status: "live",
+      status: "comingSoon",
       description: "International household removals for arrivals and leavers.",
     },
   ] satisfies RecruitmentAgencyLink[],

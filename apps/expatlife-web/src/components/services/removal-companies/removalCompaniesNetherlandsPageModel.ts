@@ -611,7 +611,7 @@ export const removalCompaniesNetherlandsPage = {
     {
       label: "Storage companies",
       href: "/netherlands/services/storage-companies/",
-      status: "live",
+      status: "comingSoon",
       description: "Self-storage when goods arrive before or after your lease start.",
     },
     {
@@ -660,10 +660,10 @@ export const removalCompaniesNetherlandsPage = {
   servicesLinks: [
     { label: "All Services", href: SERVICES_HUB_PATH, status: "live", description: "Browse service providers for expats in the Netherlands." },
     { label: "Moving companies", href: MOVING_COMPANIES_PATH, status: "live", description: "Domestic within-NL house moves." },
-    { label: "Storage companies", href: "/netherlands/services/storage-companies/", status: "live", description: "Interim storage around international arrivals and departures." },
+    { label: "Storage companies", href: "/netherlands/services/storage-companies/", status: "comingSoon", description: "Interim storage around international arrivals and departures." },
     { label: "Pet relocation companies", href: PET_RELOCATION_COMPANIES_PATH, status: "live", description: "Flight-pet and import/export specialists — not furniture vans." },
     { label: "Cleaning companies", href: CLEANING_COMPANIES_PATH, status: "live", description: "Move-out and domestic cleaning around lease handovers." },
-    { label: "Estate agents", href: "/netherlands/services/estate-agents/", status: "live", description: "Buy/sell makelaars when a move is into a purchased home." },
+    { label: "Estate agents", href: "/netherlands/services/estate-agents/", status: "comingSoon", description: "Buy/sell makelaars when a move is into a purchased home." },
     { label: "Rental agencies", href: "/netherlands/services/rental-agencies/", status: "live", description: "Tenant mediation for the next Dutch lease." },
     { label: "Relocation agencies", href: RELOCATION_AGENCIES_PATH, status: "live", description: "Agency-style relocation packages." },
     { label: "Relocation services", href: RELOCATION_SERVICES_PATH, status: "live", description: "Broader relocation support." },
@@ -684,7 +684,7 @@ export const removalCompaniesNetherlandsPage = {
     {
       label: "Storage companies",
       href: "/netherlands/services/storage-companies/",
-      status: "live",
+      status: "comingSoon",
       description: "Hold belongings when container timing and lease dates do not align.",
     },
     {

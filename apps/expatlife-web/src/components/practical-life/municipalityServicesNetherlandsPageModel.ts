@@ -2,7 +2,7 @@ export const MUNICIPALITY_SERVICES_NETHERLANDS_PATH = "/netherlands/practical-li
 
 export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
 export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration" as const;
-export const REGISTER_ADDRESS_PATH = "/netherlands/register-address-netherlands" as const;
+export const REGISTER_ADDRESS_PATH = "/netherlands/practical-life/registering-your-address-netherlands" as const;
 export const DIGID_AWARENESS_PATH = "/netherlands/digid-awareness" as const;
 export const UTILITIES_NETHERLANDS_PATH = "/netherlands/utilities/utilities-netherlands" as const;
 export const RENTING_NETHERLANDS_PATH = "/netherlands/renting-in-the-netherlands" as const;

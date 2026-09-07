@@ -19,7 +19,7 @@ export const RENT_AFFORDABILITY_CALCULATOR_PATH =
   "/netherlands/housing/tools/rent-affordability-calculator" as const;
 
 export const MOVING_CHECKLIST_PATH = "/netherlands/moving-checklist-netherlands" as const;
-export const MOVING_DOCUMENTS_CHECKLIST_PATH = "/netherlands/moving-documents-checklist" as const;
+export const MOVING_DOCUMENTS_CHECKLIST_PATH = "/netherlands/document-readiness-checker" as const;
 export const MOVING_COST_PATH = "/netherlands/moving-to-netherlands-cost" as const;
 export const CHILDCARE_ALLOWANCE_PATH = "/netherlands/taxes/childcare-allowance-netherlands" as const;
 

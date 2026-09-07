@@ -1,4 +1,4 @@
-export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/taxes/expat-taxes-netherlands" as const;
+export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/money/expat-taxes-netherlands" as const;
 
 export type ExpatTaxGuideLink = {
   label: string;
@@ -107,7 +107,7 @@ export const expatTaxesNetherlandsPage = {
   ],
   serviceLinks: [
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "comingSoon", description: "Future service directory for tax help." },
-    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "live", description: "Bookkeeping, BTW filings and accounting support for expats." },
+    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "comingSoon", description: "Bookkeeping, BTW filings and accounting support for expats." },
     { label: "Bookkeepers", href: "/netherlands/services/bookkeeping/", status: "comingSoon", description: "Future directory for bookkeeping support." },
     { label: "Payroll providers", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Future directory for payroll services." },
     { label: "Freelancer accounting tools", href: "/netherlands/services/freelance-accounting-tools/", status: "comingSoon", description: "Future directory for invoice and accounting tools." },

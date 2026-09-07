@@ -9,7 +9,7 @@ export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherland
 export const MOVING_WITH_FAMILY_PATH = "/netherlands/moving-to-netherlands-with-family" as const;
 export const BONUS_TAX_NETHERLANDS_PATH = "/netherlands/taxes/bonus-tax-netherlands" as const;
 export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands" as const;
-export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/taxes/expat-taxes-netherlands" as const;
+export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/money/expat-taxes-netherlands" as const;
 export const MUNICIPALITY_REGISTRATION_PATH = "/netherlands/municipality-registration-netherlands" as const;
 export const BSN_REGISTRATION_PATH = "/netherlands/bsn-registration" as const;
 

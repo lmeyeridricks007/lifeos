@@ -121,7 +121,7 @@
         { "label": "BSN registration", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
         { "label": "DigiD awareness for expats", "href": "/netherlands/digid-awareness/" },
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" }
       ],
       "callout": {
         "type": "tip",
@@ -302,7 +302,7 @@
       { "label": "Registering Your Address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "DigiD Awareness for Expats", "href": "/netherlands/digid-awareness/" },
       { "label": "Moving to the Netherlands Cost", "href": "/netherlands/moving-to-netherlands-cost/" },
-      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      { "label": "Documents Needed to Move to the Netherlands", "href": "/netherlands/document-readiness-checker/" }
     ]
   },
 

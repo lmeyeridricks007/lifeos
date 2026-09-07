@@ -1,6 +1,6 @@
 {
   "slug": "visa-documents-netherlands",
-  "path": "/netherlands/visa-documents-netherlands/",
+  "path": "/netherlands/document-readiness-checker/",
   "title": "Visa Documents for the Netherlands",
   "breadcrumbLabel": "Visa Documents",
   "subtitle": "A practical overview of the document categories expats often prepare for long-stay routes to the Netherlands.",
@@ -164,7 +164,7 @@
   "featuredTools": [
     {
       "label": "Check Document Readiness",
-      "href": "/netherlands/moving/tools/document-readiness/"
+      "href": "/netherlands/document-readiness-checker/"
     },
     {
       "label": "Generate a Moving Checklist",
@@ -178,7 +178,7 @@
   "toolCtas": [
     {
       "label": "Check Document Readiness",
-      "href": "/netherlands/moving/tools/document-readiness/"
+      "href": "/netherlands/document-readiness-checker/"
     },
     {
       "label": "Generate a Moving Checklist",
@@ -189,17 +189,17 @@
     {
       "title": "Moving for work and gathering employment documents first",
       "summary": "A work-based move often starts with identity documents, employment records, and a simple folder for address and arrival admin support documents.",
-      "href": "/netherlands/moving/tools/document-readiness/?scenario=work"
+      "href": "/netherlands/document-readiness-checker/?scenario=work"
     },
     {
       "title": "Joining a partner and checking civil records early",
       "summary": "Family or partner-based moves often place more emphasis on civil records, relationship documents, and any supporting translations or validations.",
-      "href": "/netherlands/moving/tools/document-readiness/?scenario=partner"
+      "href": "/netherlands/document-readiness-checker/?scenario=partner"
     },
     {
       "title": "Moving with family and trying to avoid document delays",
       "summary": "Family moves often become easier when identity, civil, and children's supporting records are grouped into one clearly tracked pack.",
-      "href": "/netherlands/moving/tools/document-readiness/?scenario=family"
+      "href": "/netherlands/document-readiness-checker/?scenario=family"
     }
   ],
   "internalLinks": {
@@ -214,7 +214,7 @@
     "related": [
       {
         "label": "Moving Documents Checklist for the Netherlands",
-        "href": "/netherlands/moving-documents-checklist/"
+        "href": "/netherlands/document-readiness-checker/"
       },
       {
         "label": "Moving to the Netherlands: Key Requirements to Plan For",
@@ -226,7 +226,7 @@
       },
       {
         "label": "Documents Needed to Move to the Netherlands",
-        "href": "/netherlands/documents-needed-to-move-netherlands/"
+        "href": "/netherlands/document-readiness-checker/"
       },
       {
         "label": "Document Legalization in the Netherlands",

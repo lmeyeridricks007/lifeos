@@ -455,7 +455,7 @@ export const tippingNetherlandsPage = {
       },
       {
         label: "Culture & etiquette",
-        href: "/netherlands/living/culture-etiquette/",
+        href: "/netherlands/life/dutch-etiquette/",
         status: "live",
         description: "Broader everyday Dutch etiquette context.",
       },

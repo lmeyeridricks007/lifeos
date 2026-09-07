@@ -178,7 +178,7 @@ export function buildArrivalRelatedLinks(
 ): Array<{ label: string; href: string }> {
   const withFrom = (href: string) => `${href}${href.includes("?") ? "&" : "?"}from=${encodeURIComponent(input.from)}`;
   const links: Array<{ label: string; href: string }> = [
-    { label: "Register address in the Netherlands", href: withFrom("/netherlands/register-address-netherlands/") },
+    { label: "Register address in the Netherlands", href: withFrom("/netherlands/practical-life/registering-your-address-netherlands/") },
     { label: "BSN registration", href: withFrom("/netherlands/bsn-registration/") },
     { label: "First 30 days in the Netherlands", href: withFrom("/netherlands/first-30-days-netherlands/") },
     { label: "Moving to the Netherlands guide", href: withFrom("/netherlands/moving-to-the-netherlands/") },

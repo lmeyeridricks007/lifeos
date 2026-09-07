@@ -103,7 +103,7 @@
       ],
       "internalCta": { "label": "Open Moving Checklist Generator", "href": "/netherlands/moving/tools/moving-checklist/" },
       "links": [
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
         { "label": "Moving to the Netherlands: key requirements", "href": "/netherlands/moving-requirements-netherlands/" }
       ],
       "affiliatePlacementId": "problem_solution_primary"
@@ -125,10 +125,10 @@
         "Copies of important originals"
       ],
       "links": [
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
         { "label": "Document legalization and apostille", "href": "/netherlands/document-legalization-netherlands/" },
         { "label": "Document translation in the Netherlands", "href": "/netherlands/document-translation-netherlands/" },
-        { "label": "Visa documents for the Netherlands", "href": "/netherlands/visa-documents-netherlands/" },
+        { "label": "Visa documents for the Netherlands", "href": "/netherlands/document-readiness-checker/" },
         { "label": "Document Readiness Checker (tool)", "href": "/netherlands/document-readiness-checker/" }
       ]
     },
@@ -236,7 +236,7 @@
       ],
       "links": [
         { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
         { "label": "Open a bank account in the Netherlands (BSN)", "href": "/netherlands/open-bank-account-netherlands/#bsn" },
         { "label": "Moving to the Netherlands cost", "href": "/netherlands/moving-to-netherlands-cost/" },
         { "label": "Document Readiness Checker (tool)", "href": "/netherlands/document-readiness-checker/" }
@@ -286,7 +286,7 @@
     },
     "related": [
       { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
-      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Moving to the Netherlands timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
       { "label": "Register your address in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "BSN registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },

@@ -7,7 +7,7 @@
       "priority": 1,
       "conditions": { "region": ["eu", "non-eu"], "stage": ["before-move", "arriving-soon"] },
       "description": "Keep a simple digital and paper copy pack for first appointments.",
-      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+      "relatedGuideHref": "/netherlands/document-readiness-checker/"
     },
     {
       "id": "confirm-visa-route",
@@ -16,7 +16,7 @@
       "priority": 1,
       "conditions": { "region": ["non-eu"], "stage": ["before-move", "arriving-soon"] },
       "description": "Check requirements for your nationality and employment situation.",
-      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+      "relatedGuideHref": "/netherlands/document-readiness-checker/"
     },
     {
       "id": "gather-civil-records",
@@ -25,7 +25,7 @@
       "priority": 2,
       "conditions": { "household": ["partner", "kids"], "stage": ["before-move", "arriving-soon"] },
       "description": "Often needed for registration and family registration.",
-      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+      "relatedGuideHref": "/netherlands/document-readiness-checker/"
     },
     {
       "id": "plan-address",
@@ -34,7 +34,7 @@
       "priority": 1,
       "conditions": { "stage": ["before-move", "arriving-soon"] },
       "description": "You need an address to register at the municipality.",
-      "relatedGuideHref": "/netherlands/register-address-netherlands/"
+      "relatedGuideHref": "/netherlands/practical-life/registering-your-address-netherlands/"
     },
     {
       "id": "budget-transfer",
@@ -79,7 +79,7 @@
       "priority": 1,
       "conditions": { "employment": ["job-offer", "employed"], "stage": ["before-move", "arriving-soon"] },
       "description": "Often required for permit and registration.",
-      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+      "relatedGuideHref": "/netherlands/document-readiness-checker/"
     },
     {
       "id": "logistics-far",
@@ -99,7 +99,7 @@
       "priority": 1,
       "conditions": { "stage": ["before-move", "arriving-soon", "already-arrived"] },
       "description": "Usually within a few days of moving in. You'll receive your BSN at registration.",
-      "relatedGuideHref": "/netherlands/register-address-netherlands/"
+      "relatedGuideHref": "/netherlands/practical-life/registering-your-address-netherlands/"
     },
     {
       "id": "bsn",
@@ -209,7 +209,7 @@
       "priority": 1,
       "conditions": { "region": ["non-eu"], "stage": ["already-arrived"] },
       "description": "Confirm residence and work permit validity and next steps.",
-      "relatedGuideHref": "/netherlands/documents-needed-to-move-netherlands/"
+      "relatedGuideHref": "/netherlands/document-readiness-checker/"
     },
     {
       "id": "budget-recurring",

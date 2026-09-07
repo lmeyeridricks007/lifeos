@@ -43,7 +43,7 @@ export const canIOpenBankAccountBeforeBsn: ScenarioGuideContent = {
         "Multi-currency or international transfer accounts (e.g. Wise, or some neobanks) are often openable without a BSN and can be used for receiving money and spending in euros. Some Dutch banks have introduced limited onboarding or “waiting for BSN” flows—check their current offers.",
         "You can often prepare documents (passport, proof of address once you have it) so that as soon as you have a BSN you can complete a full account application.",
       ],
-      cta: { label: "Register your address", href: "/netherlands/register-address-netherlands/" },
+      cta: { label: "Register your address", href: "/netherlands/practical-life/registering-your-address-netherlands/" },
     },
     {
       id: "what-usually-blocked",
@@ -118,7 +118,7 @@ export const canIOpenBankAccountBeforeBsn: ScenarioGuideContent = {
   relatedGuides: [
     { label: "Open a bank account in the Netherlands", href: "/netherlands/open-bank-account-netherlands/", description: "Full banking guide" },
     { label: "BSN registration", href: "/netherlands/bsn-registration/", description: "When and how you get a BSN" },
-    { label: "Register your address", href: "/netherlands/register-address-netherlands/", description: "Municipality registration" },
+    { label: "Register your address", href: "/netherlands/practical-life/registering-your-address-netherlands/", description: "Municipality registration" },
     { label: "After arriving in the Netherlands", href: "/netherlands/after-arriving-netherlands/", description: "First steps" },
   ],
   relatedTools: ["arrival-planner", "moving-checklist", "first-90-days"],

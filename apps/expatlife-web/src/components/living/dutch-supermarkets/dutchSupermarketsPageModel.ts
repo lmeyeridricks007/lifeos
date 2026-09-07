@@ -1018,7 +1018,7 @@ export const dutchSupermarketsPage = {
       },
       {
         label: "Culture & etiquette",
-        href: "/netherlands/living/culture-etiquette/",
+        href: "/netherlands/life/dutch-etiquette/",
         status: "live",
         description: "Broader everyday interaction norms.",
       },

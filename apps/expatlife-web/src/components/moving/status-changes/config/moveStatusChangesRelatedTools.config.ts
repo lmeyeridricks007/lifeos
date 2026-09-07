@@ -20,7 +20,7 @@ export const moveStatusChangesRelatedTools = {
         { title: "Extensions & changes in the Netherlands", description: "Renewals, timing, and after-arrival change planning.", href: EXTENSIONS },
         { title: "First 90 days planner", description: "Useful when a shift reorders your admin sequence.", href: "/netherlands/moving/tools/first-90-days/" },
         { title: "Arrival planner", description: "Re-sequence gemeente, insurance, and bank tasks.", href: "/netherlands/moving/tools/arrival-planner/" },
-        { title: "Document readiness", description: "Gather what you may need before deadlines feel loud.", href: "/netherlands/moving/tools/document-readiness/" },
+        { title: "Document readiness", description: "Gather what you may need before deadlines feel loud.", href: "/netherlands/document-readiness-checker/" },
       ],
     },
     {

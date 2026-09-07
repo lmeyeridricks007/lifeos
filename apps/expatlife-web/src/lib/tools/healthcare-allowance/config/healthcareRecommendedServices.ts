@@ -114,7 +114,7 @@ export const healthcareRecommendedServiceGroups: readonly HealthcareRecommendedG
         id: "settling",
         kind: "guide",
         label: "Settling in the Netherlands",
-        href: "/netherlands/settling-in-netherlands/",
+        href: "/netherlands/after-arriving-netherlands/",
         description: "First months checklist alongside insurance and toeslagen timing.",
       },
       {

@@ -62,6 +62,7 @@ import {
   INTERVIEW_TIPS_NETHERLANDS_PATH,
 } from "./findingJobsNetherlandsPageModel";
 import { buildTrackedOutboundLink, trackedOutboundAnchorProps } from "@/lib/analytics/tracked-outbound";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -414,7 +415,7 @@ function FeatureCard({ title, body, iconIndex = 0 }: { title: string; body: stri
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: FindingJobsLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = item.status !== "comingSoon" && (item.href.startsWith("http") || isRouteLive(item.href));
   const onDark = tone === "onDark";
   const body = (
     <>

@@ -134,7 +134,7 @@ export const taxAdvisorsPage = {
   scenarios: [
     { title: "New expat applying for 30% ruling", links: [{ label: "30% ruling guide", href: "/netherlands/taxes/30-percent-ruling/" }] },
     { title: "Filing first Dutch tax return", links: [{ label: "Tax returns", href: "/netherlands/taxes/tax-return-netherlands/", status: "comingSoon" }] },
-    { title: "M-form after relocation", links: [{ label: "Expat taxes", href: "/netherlands/taxes/expat-taxes-netherlands/" }] },
+    { title: "M-form after relocation", links: [{ label: "Expat taxes", href: "/netherlands/money/expat-taxes-netherlands/" }] },
     { title: "Freelancer becoming ZZP", links: [{ label: "Freelancer taxes", href: "/netherlands/taxes/freelancer-zzp-taxes/", status: "comingSoon" }] },
     { title: "Working remotely for foreign employer", links: [{ label: "International tax", href: "/netherlands/taxes/international-tax-expats/", status: "comingSoon" }] },
     { title: "International investments", links: [{ label: "Box tax system", href: "/netherlands/taxes/box-tax-system-netherlands/", status: "comingSoon" }] },
@@ -142,7 +142,7 @@ export const taxAdvisorsPage = {
   ],
   relatedGuides: [
     { label: "Dutch Taxes Hub", href: "/netherlands/taxes/", status: "live", description: "Start with the main tax cluster." },
-    { label: "Expat Taxes Guide", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live", description: "Understand expat tax situations." },
+    { label: "Expat Taxes Guide", href: "/netherlands/money/expat-taxes-netherlands/", status: "live", description: "Understand expat tax situations." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "Read the expat scheme guide." },
     { label: "Tax Returns", href: "/netherlands/taxes/tax-return-netherlands/", status: "comingSoon", description: "Future tax return guide." },
     { label: "Tax Residency", href: "/netherlands/taxes/tax-residency-netherlands/", status: "comingSoon", description: "Future residency guide." },
@@ -170,13 +170,13 @@ export const taxAdvisorsPage = {
     {
       label: "Notaries",
       href: "/netherlands/services/notaries/",
-      status: "live",
+      status: "comingSoon",
       description: "Dutch notaris for purchase deeds and estate orientation — separate from tax returns.",
     },
     {
       label: "Insurance brokers",
       href: "/netherlands/services/insurance-brokers/",
-      status: "live",
+      status: "comingSoon",
       description: "Independent intermediaries for household and life package comparison.",
     },
     {
@@ -218,13 +218,13 @@ export const taxAdvisorsPage = {
     {
       label: "Accountants",
       href: "/netherlands/services/accountants/",
-      status: "live",
+      status: "comingSoon",
       description: "Bookkeeping, BTW, jaarrekening and ZZP admin — separate from tax advice.",
     },
     {
       label: "Business consultants",
       href: "/netherlands/services/business-consultants/",
-      status: "live",
+      status: "comingSoon",
       description: "Strategy, KvK growth and operations consulting — separate from tax filing.",
     },
     { label: "Bookkeeping", href: "/netherlands/services/bookkeeping/", status: "comingSoon" },

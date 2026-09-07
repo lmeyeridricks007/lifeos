@@ -6,7 +6,7 @@ export const TAXES_HUB_PATH = "/netherlands/taxes" as const;
 export const HOUSING_HUB_PATH = "/netherlands/housing" as const;
 export const CITIES_HUB_PATH = "/netherlands/cities" as const;
 export const RENT_AFFORDABILITY_TOOL_PATH = "/netherlands/housing/tools/rent-affordability-calculator" as const;
-export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/taxes/expat-taxes-netherlands" as const;
+export const EXPAT_TAXES_NETHERLANDS_PATH = "/netherlands/money/expat-taxes-netherlands" as const;
 export const MOVING_TO_NETHERLANDS_PATH = "/netherlands/moving-to-the-netherlands" as const;
 export const BONUS_TAX_NETHERLANDS_PATH = "/netherlands/taxes/bonus-tax-netherlands" as const;
 export const EXPAT_SALARY_NETHERLANDS_PATH = "/netherlands/jobs/expat-salary-netherlands" as const;
@@ -418,7 +418,7 @@ export const rentAllowanceNetherlandsPage = {
   services: [
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Move support including registration and housing orientation." },
     { label: "Rental agencies", href: "/netherlands/services/rental-agencies/", status: "live", description: "Agency directories for expat housing search." },
-    { label: "Expat housing agencies", href: "/netherlands/services/expat-housing-agencies/", status: "live", description: "Specialists for international tenant housing search." },
+    { label: "Expat housing agencies", href: "/netherlands/services/expat-housing-agencies/", status: "comingSoon", description: "Specialists for international tenant housing search." },
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Income and toeslagen planning context for expats." },
   ] satisfies RentAllowanceNetherlandsLink[],
   faq: [

@@ -154,7 +154,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("Moving to the Netherlands", "/netherlands/moving-to-the-netherlands"),
           item("Moving From Your Country", "/netherlands/moving-to-netherlands-from"),
           item("Moving checklist Netherlands", "/netherlands/moving-checklist-netherlands"),
-          item("Documents needed", "/netherlands/documents-needed-to-move-netherlands"),
+          item("Documents needed", "/netherlands/document-readiness-checker"),
           item("Moving timeline", "/netherlands/moving-to-netherlands-timeline"),
           item("Moving costs", "/netherlands/moving-to-netherlands-cost"),
         ],
@@ -382,10 +382,10 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Utilities",
         items: [
-          item("Utilities", "/netherlands/living/utilities"),
-          item("Energy + water", "/netherlands/living/utilities/energy-water"),
-          item("Internet + mobile", "/netherlands/living/utilities/internet-mobile"),
-          item("Municipality services", "/netherlands/living/utilities/municipality-services"),
+          item("Utilities", "/netherlands/utilities/utilities-netherlands"),
+          item("Energy + water", "/netherlands/utilities/utilities-netherlands/energy-water"),
+          item("Internet + mobile", "/netherlands/utilities/utilities-netherlands/internet-mobile"),
+          item("Municipality services", "/netherlands/utilities/utilities-netherlands/municipality-services"),
         ],
       },
       {

@@ -192,7 +192,7 @@ export const netSalaryNetherlandsPage = {
     },
     {
       label: "Expat Taxes",
-      href: "/netherlands/taxes/expat-taxes-netherlands/",
+      href: "/netherlands/money/expat-taxes-netherlands/",
       status: "live",
       description: "Tax residency, payroll, returns and cross-border concepts for international residents.",
     },
@@ -223,7 +223,7 @@ export const netSalaryNetherlandsPage = {
   ] satisfies NetSalaryGuideLink[],
   services: [
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Compare expat tax advisors and international tax specialists." },
-    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "live", description: "Bookkeeping, BTW filings and accounting support for expats." },
+    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "comingSoon", description: "Bookkeeping, BTW filings and accounting support for expats." },
     { label: "Payroll specialists", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Future directory for employer and payroll support." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Help with moving logistics alongside job and salary planning." },
   ] satisfies NetSalaryGuideLink[],
@@ -307,7 +307,7 @@ export const netSalaryNetherlandsPage = {
     { label: "Netherlands Taxes Guide", href: "/netherlands/taxes/", status: "live", description: "The central hub for Dutch tax topics." },
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Understand salary wording, payslip terms and deductions before calculating." },
     { label: "Bonus Tax in the Netherlands", href: "/netherlands/taxes/bonus-tax-netherlands/", status: "live", description: "Why bonuses seem heavily taxed — payroll withholding and expat context." },
-    { label: "Expat Taxes in the Netherlands", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live", description: "Broader tax guide for international residents." },
+    { label: "Expat Taxes in the Netherlands", href: "/netherlands/money/expat-taxes-netherlands/", status: "live", description: "Broader tax guide for international residents." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "Understand the expat tax facility and eligibility context." },
     { label: "Open a Dutch Bank Account", href: "/netherlands/open-bank-account-netherlands/", status: "live", description: "Banking setup for salary payments and Dutch payments." },
     { label: "Moving to the Netherlands", href: "/netherlands/moving-to-the-netherlands/", status: "live", description: "Relocation planning alongside salary and benefits." },
@@ -316,7 +316,7 @@ export const netSalaryNetherlandsPage = {
   exploreNextCards: [
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Learn the salary concepts before comparing calculator outputs." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "See how the expat facility can affect salary planning." },
-    { label: "Expat Taxes", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live", description: "Learn the broader Dutch tax system for expats." },
+    { label: "Expat Taxes", href: "/netherlands/money/expat-taxes-netherlands/", status: "live", description: "Learn the broader Dutch tax system for expats." },
     { label: "Tax Advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Find tax advisors and expat accountants." },
     { label: "Tax Returns", href: "/netherlands/taxes/tax-return-netherlands/", status: "comingSoon", description: "Planned guide for annual filing questions." },
     { label: "Open a Dutch Bank Account", href: "/netherlands/open-bank-account-netherlands/", status: "live", description: "Set up banking for salary, rent and refunds." },

@@ -779,7 +779,7 @@ export const financialAdvisorsNetherlandsPage = {
     { label: "Estate agents", href: ESTATE_AGENTS_PATH, status: "live", description: "Dutch makelaars for buying and selling property." },
     { label: "Banks", href: "/netherlands/services/banks/", status: "live", description: "Banking setup and account options for international residents." },
     { label: "Immigration Lawyers", href: "/netherlands/services/immigration-lawyers/", status: "live", description: "Legal immigration representation when residence status shapes long-term planning." },
-    { label: "Recruitment Agencies Directory", href: "/netherlands/services/recruitment-agencies/", status: "live", description: "Compare recruitment agency providers when career moves drive financial planning." },
+    { label: "Recruitment Agencies Directory", href: "/netherlands/services/recruitment-agencies/", status: "comingSoon", description: "Compare recruitment agency providers when career moves drive financial planning." },
     { label: "Insurance Providers", href: INSURANCE_PROVIDERS_PATH, status: "live", description: "Compare Dutch insurers for healthcare, home, travel, liability and business insurance." },
     { label: "Wealth Management", href: "/netherlands/services/wealth-management/", status: "comingSoon", description: "Future directory for wealth-management providers." },
   ] satisfies FinancialAdvisorLink[],

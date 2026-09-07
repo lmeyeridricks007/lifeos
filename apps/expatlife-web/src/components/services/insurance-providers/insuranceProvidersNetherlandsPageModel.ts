@@ -995,14 +995,14 @@ export const insuranceProvidersNetherlandsPage = {
   relatedGuides: [
     { label: "Health Insurance in the Netherlands", href: HEALTH_INSURANCE_GUIDE_PATH, status: "live", description: "Understand mandatory Dutch basic health insurance and common expat situations." },
     { label: "Health insurance directory", href: HEALTH_INSURANCE_SERVICES_PATH, status: "live", description: "Zorgverzekering provider directory for mandatory basic cover." },
-    { label: "Insurance brokers", href: "/netherlands/services/insurance-brokers/", status: "live", description: "Independent adviseurs/tussenpersonen who compare packages — not the carrier landscape." },
+    { label: "Insurance brokers", href: "/netherlands/services/insurance-brokers/", status: "comingSoon", description: "Independent adviseurs/tussenpersonen who compare packages — not the carrier landscape." },
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Connect homeowner insurance research to the Dutch home-buying process." },
     { label: "ZZP Guide", href: ZZP_NETHERLANDS_PATH, status: "live", description: "Business insurance context for self-employed professionals." },
     { label: "Starting a Business", href: STARTING_BUSINESS_NETHERLANDS_PATH, status: "live", description: "Company setup, contracts and operational risk planning." },
     { label: "Financial Advisors", href: FINANCIAL_ADVISORS_PATH, status: "live", description: "Long-term financial planning, pensions, property and cross-border considerations." },
   ] satisfies InsuranceLink[],
   exploreNextCards: [
-    { label: "Insurance brokers", href: "/netherlands/services/insurance-brokers/", status: "live", description: "Use an independent intermediary when you want package comparison help." },
+    { label: "Insurance brokers", href: "/netherlands/services/insurance-brokers/", status: "comingSoon", description: "Use an independent intermediary when you want package comparison help." },
     { label: "Health insurance directory", href: HEALTH_INSURANCE_SERVICES_PATH, status: "live", description: "Arrange mandatory zorgverzekering on its dedicated directory." },
     { label: "Healthcare Insurance", href: HEALTH_INSURANCE_GUIDE_PATH, status: "live", description: "Start with the mandatory health-insurance rules and provider comparison." },
     { label: "Buying a House", href: BUYING_HOUSE_NETHERLANDS_PATH, status: "live", description: "Compare the insurance context around property ownership." },

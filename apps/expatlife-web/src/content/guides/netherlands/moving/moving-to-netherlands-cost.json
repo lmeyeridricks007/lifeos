@@ -35,7 +35,7 @@
     "primaryCtaLabel": "Generate a Moving Checklist",
     "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
     "secondaryCtaLabel": "Check your documents",
-    "secondaryCtaHref": "/netherlands/moving/tools/document-readiness/",
+    "secondaryCtaHref": "/netherlands/document-readiness-checker/",
     "tertiaryCtaLabel": "Read the full moving guide",
     "tertiaryCtaHref": "/netherlands/moving-to-the-netherlands/"
   },
@@ -60,7 +60,7 @@
     { "label": "Generate a Moving Checklist", "href": "/netherlands/moving/tools/moving-checklist/" },
     { "label": "Read the full moving guide", "href": "/netherlands/moving-to-the-netherlands/" },
     { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-    { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+    { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
     { "label": "Plan your first 90 days", "href": "/netherlands/moving/tools/first-90-days/" }
   ],
 
@@ -90,7 +90,7 @@
       "links": [
         { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
         { "label": "Moving checklist for the Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
-        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+        { "label": "Documents needed to move to the Netherlands", "href": "/netherlands/document-readiness-checker/" }
       ]
     },
     {
@@ -131,7 +131,7 @@
       ],
       "links": [
         { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+        { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
         { "label": "Moving with family", "href": "/netherlands/moving-to-netherlands-with-family/" }
       ]
     },
@@ -188,10 +188,10 @@
         "Budget deposit and first rent before optimizing smaller costs."
       ],
       "links": [
-        { "label": "Document Readiness tool", "href": "/netherlands/moving/tools/document-readiness/" },
+        { "label": "Document Readiness tool", "href": "/netherlands/document-readiness-checker/" },
         { "label": "Moving Checklist Generator", "href": "/netherlands/moving/tools/moving-checklist/" },
         { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-        { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+        { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" }
       ]
     },
     {
@@ -283,7 +283,7 @@
     {
       "key": "document-readiness",
       "label": "Document Readiness",
-      "href": "/netherlands/moving/tools/document-readiness/",
+      "href": "/netherlands/document-readiness-checker/",
       "description": "See which documents apply to your situation and when to prepare them.",
       "ctaLabel": "Open tool →"
     },
@@ -308,7 +308,7 @@
     "related": [
       { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
       { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
-      { "label": "Documents needed to move", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Documents needed to move", "href": "/netherlands/document-readiness-checker/" },
       { "label": "First 90 days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
       { "label": "Moving checklist for the Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
       { "label": "Moving with family", "href": "/netherlands/moving-to-netherlands-with-family/" },

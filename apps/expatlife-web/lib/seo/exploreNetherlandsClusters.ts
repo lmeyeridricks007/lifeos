@@ -106,7 +106,7 @@ export const EXPLORE_CLUSTER_LINKS: Record<ExploreClusterId, readonly ClusterLin
   country_origin: [
     // Dynamic country tools injected in resolver when slug known
     { href: "/netherlands/moving/visas-residency", label: "Visas & residency" },
-    { href: "/netherlands/documents-needed-to-move-netherlands", label: "Documents needed to move" },
+    { href: "/netherlands/document-readiness-checker", label: "Documents needed to move" },
     { href: "/netherlands/after-arriving-netherlands", label: "After arriving" },
     { href: "/netherlands/moving-to-netherlands-cost", label: "Cost of moving" },
     { href: "/netherlands/moving-to-netherlands-from", label: "All origin-country guides" },

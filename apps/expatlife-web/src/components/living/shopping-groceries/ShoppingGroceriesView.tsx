@@ -27,6 +27,7 @@ import {
 import { activeBrightnessPress, transitionInteractive } from "@/lib/ui/interaction";
 import { cn } from "@/lib/cn";
 import { LivingClusterLinkGrid } from "@/src/components/living/LivingClusterLinkGrid";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
 import { getLivingStartHereInstructionalFigure } from "@/src/components/living/living-start-here-cluster/livingStartHereInstructionalRasterAssets";
 import { InstructionalRasterFigure } from "@/src/components/money/InstructionalRasterFigure";
 import { LivingPillarExplorer } from "@/src/components/living/LivingPillarExplorer";
@@ -689,54 +690,30 @@ export function ShoppingGroceriesView() {
               <p className="mb-4 max-w-3xl text-sm leading-relaxed text-foreground-muted sm:mb-5">
                 Use this when you want to map real chain names to expectations. Discount formats (Lidl, Aldi, Dirk) prioritize price and speed; full-service chains (Albert
                 Heijn, Jumbo) prioritize range and one-stop shopping; cooperative and neighbourhood formats (Plus, Coop, SPAR) vary more by branch; regional chains only
-                matter when you actually have one nearby. For the wider supermarket system (formats, hours, bags, self-scan orientation), see{" "}
-                <Link href={DUTCH_SUPERMARKETS_PATH} className={crossLinkClass}>
-                  Dutch supermarkets
-                </Link>
-                . To match a chain to budget, organic, international or neighbourhood priorities, use{" "}
-                <Link href={BEST_SUPERMARKETS_NETHERLANDS_PATH} className={crossLinkClass}>
-                  Best supermarkets
-                </Link>
-                . For discounters, Bonus offers, private label and waste tactics, see{" "}
-                <Link href={CHEAP_GROCERIES_NETHERLANDS_PATH} className={crossLinkClass}>
-                  Cheap groceries
-                </Link>
-                . For world-food aisles and specialty markets, see{" "}
-                <Link href={INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH} className={crossLinkClass}>
-                  International supermarkets
-                </Link>
-                . For Asian toko formats and first-visit tips, see{" "}
-                <Link href={ASIAN_SUPERMARKETS_NETHERLANDS_PATH} className={crossLinkClass}>
-                  Asian supermarkets
-                </Link>
-                . For Turkish and Middle-Eastern specialty shopping, see{" "}
-                <Link href={TURKISH_SUPERMARKETS_NETHERLANDS_PATH} className={crossLinkClass}>
-                  Turkish supermarkets
-                </Link>
-                . For Indian and South Asian specialty shopping, see{" "}
-                <Link href={INDIAN_SUPERMARKETS_NETHERLANDS_PATH} className={crossLinkClass}>
-                  Indian supermarkets
-                </Link>
-                . For South African specialty shops and comfort foods, see{" "}
-                <Link href={SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH} className={crossLinkClass}>
-                  South African shops
-                </Link>
-                . For subscription meal-kit boxes and pause habits, see{" "}
-                <Link href={MEAL_KITS_NETHERLANDS_PATH} className={crossLinkClass}>
-                  Meal kits
-                </Link>
-                . For restaurant takeaway apps and grocery delivery, see{" "}
-                <Link href={FOOD_DELIVERY_NETHERLANDS_PATH} className={crossLinkClass}>
-                  Food delivery
-                </Link>
-                . For sit-down dining culture, see{" "}
-                <Link href={RESTAURANTS_NETHERLANDS_PATH} className={crossLinkClass}>
-                  Restaurants
-                </Link>
-                . For tip norms in restaurants, cafés and delivery, see{" "}
-                <Link href={TIPPING_NETHERLANDS_PATH} className={crossLinkClass}>
-                  Tipping
-                </Link>
+                matter when you actually have one nearby.
+                {([
+                  { href: DUTCH_SUPERMARKETS_PATH, label: "Dutch supermarkets", lead: " For the wider supermarket system (formats, hours, bags, self-scan orientation), see " },
+                  { href: BEST_SUPERMARKETS_NETHERLANDS_PATH, label: "Best supermarkets", lead: ". To match a chain to budget, organic, international or neighbourhood priorities, use " },
+                  { href: CHEAP_GROCERIES_NETHERLANDS_PATH, label: "Cheap groceries", lead: ". For discounters, Bonus offers, private label and waste tactics, see " },
+                  { href: INTERNATIONAL_SUPERMARKETS_NETHERLANDS_PATH, label: "International supermarkets", lead: ". For world-food aisles and specialty markets, see " },
+                  { href: ASIAN_SUPERMARKETS_NETHERLANDS_PATH, label: "Asian supermarkets", lead: ". For Asian toko formats and first-visit tips, see " },
+                  { href: TURKISH_SUPERMARKETS_NETHERLANDS_PATH, label: "Turkish supermarkets", lead: ". For Turkish and Middle-Eastern specialty shopping, see " },
+                  { href: INDIAN_SUPERMARKETS_NETHERLANDS_PATH, label: "Indian supermarkets", lead: ". For Indian and South Asian specialty shopping, see " },
+                  { href: SOUTH_AFRICAN_SHOPS_NETHERLANDS_PATH, label: "South African shops", lead: ". For South African specialty shops and comfort foods, see " },
+                  { href: MEAL_KITS_NETHERLANDS_PATH, label: "Meal kits", lead: ". For subscription meal-kit boxes and pause habits, see " },
+                  { href: FOOD_DELIVERY_NETHERLANDS_PATH, label: "Food delivery", lead: ". For restaurant takeaway apps and grocery delivery, see " },
+                  { href: RESTAURANTS_NETHERLANDS_PATH, label: "Restaurants", lead: ". For sit-down dining culture, see " },
+                  { href: TIPPING_NETHERLANDS_PATH, label: "Tipping", lead: ". For tip norms in restaurants, cafés and delivery, see " },
+                ] as const)
+                  .filter((item) => isRouteLive(item.href))
+                  .map((item) => (
+                    <span key={item.href}>
+                      {item.lead}
+                      <Link href={item.href} className={crossLinkClass}>
+                        {item.label}
+                      </Link>
+                    </span>
+                  ))}
                 .
               </p>
               <div className="grid grid-cols-1 gap-4 lg:gap-5">

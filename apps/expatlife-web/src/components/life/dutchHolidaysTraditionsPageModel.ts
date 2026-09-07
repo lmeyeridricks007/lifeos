@@ -4,7 +4,7 @@ export const DUTCH_CULTURE_PATH = "/netherlands/life/dutch-culture" as const;
 export const DUTCH_SOCIAL_NORMS_PATH = "/netherlands/life/dutch-social-norms" as const;
 export const DUTCH_BIRTHDAY_TRADITIONS_PATH = "/netherlands/life/dutch-birthday-traditions" as const;
 export const COMMUNITY_BASICS_NETHERLANDS_PATH = "/netherlands/life/community-basics-netherlands" as const;
-export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/living/culture-etiquette" as const;
+export const LIVING_CULTURE_ETIQUETTE_PATH = "/netherlands/life/dutch-etiquette" as const;
 export const CITIES_HUB_PATH = "/netherlands/cities" as const;
 export const DUTCH_TRADITIONS_PATH = "/netherlands/culture/dutch-traditions" as const;
 

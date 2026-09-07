@@ -16,7 +16,7 @@
       "Register your address at the municipality (gemeente)"
     ],
     "links": [
-      { "label": "Documents needed", "href": "/netherlands/documents-needed-to-move-netherlands/" },
+      { "label": "Documents needed", "href": "/netherlands/document-readiness-checker/" },
       { "label": "Moving from South Africa", "href": "/netherlands/moving/moving-to-netherlands-from/south-africa/" }
     ]
   },
@@ -58,7 +58,7 @@
       "Open a Dutch bank account"
     ],
     "links": [
-      { "label": "Register address", "href": "/netherlands/register-address-netherlands/" },
+      { "label": "Register address", "href": "/netherlands/practical-life/registering-your-address-netherlands/" },
       { "label": "Moving from Germany", "href": "/netherlands/moving/moving-to-netherlands-from/germany/" }
     ]
   },
@@ -101,7 +101,7 @@
       "Arrange mandatory health insurance"
     ],
     "links": [
-      { "label": "Register address", "href": "/netherlands/register-address-netherlands/" },
+      { "label": "Register address", "href": "/netherlands/practical-life/registering-your-address-netherlands/" },
       { "label": "First 90 days", "href": "/netherlands/first-90-days-netherlands/" }
     ]
   },
@@ -122,7 +122,7 @@
       "Confirm where you'll register (rental, employer, or temporary address)"
     ],
     "links": [
-      { "label": "Documents needed", "href": "/netherlands/documents-needed-to-move-netherlands/" }
+      { "label": "Documents needed", "href": "/netherlands/document-readiness-checker/" }
     ]
   }
 ]

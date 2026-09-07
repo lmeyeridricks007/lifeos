@@ -12,7 +12,13 @@
       "seo": {
         "title": "Netherlands Visa Application Plan: Get Your Personalized Step-by-Step Roadmap",
         "description": "Create a personalized step-by-step visa application plan for moving to the Netherlands, including timeline, document milestones, costs, next steps, and links to official sources.",
-        "keywords": ["netherlands visa application steps", "how to apply for netherlands visa", "netherlands visa process", "moving to netherlands step by step", "visa timeline netherlands"]
+        "keywords": [
+          "netherlands visa application steps",
+          "how to apply for netherlands visa",
+          "netherlands visa process",
+          "moving to netherlands step by step",
+          "visa timeline netherlands"
+        ]
       },
       "summary": "Build a personalized step-by-step visa and relocation action plan based on your route, timing, and readiness.",
       "primaryConversion": "both",
@@ -36,8 +42,23 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Visa route", "Country", "Household", "Application stage", "Document readiness", "Timing", "Practical setup needs"],
-      "exampleOutputs": ["Timeline by phase", "Priority tasks", "Cost milestones", "Risk flags", "Next steps", "Related guides and tools"],
+      "exampleInputs": [
+        "Visa route",
+        "Country",
+        "Household",
+        "Application stage",
+        "Document readiness",
+        "Timing",
+        "Practical setup needs"
+      ],
+      "exampleOutputs": [
+        "Timeline by phase",
+        "Priority tasks",
+        "Cost milestones",
+        "Risk flags",
+        "Next steps",
+        "Related guides and tools"
+      ],
       "mostUsefulFor": "People who know or suspect their visa route and want a practical step-by-step application and move plan."
     },
     {
@@ -52,24 +73,41 @@
       "seo": {
         "title": "Moving Checklist Netherlands: Generate Your Expat Relocation Plan",
         "description": "Create a personalized moving checklist for the Netherlands.",
-        "keywords": ["moving checklist Netherlands", "expat checklist Netherlands"]
+        "keywords": [
+          "moving checklist Netherlands",
+          "expat checklist Netherlands"
+        ]
       },
       "summary": "Create a personalized relocation checklist based on your situation.",
       "primaryConversion": "both",
       "relatedGuides": [
         "/netherlands/moving-to-the-netherlands/",
-        "/netherlands/documents-needed-to-move-netherlands/"
+        "/netherlands/document-readiness-checker/"
       ],
       "relatedTools": [
         "/netherlands/moving/tools/arrival-planner/",
         "/netherlands/moving/tools/first-90-days/"
       ],
-      "affiliatePlacementIds": ["tool_moving_checklist_after_results"],
-      "affiliateCategories": ["international-moving", "international-shipping"],
+      "affiliatePlacementIds": [
+        "tool_moving_checklist_after_results"
+      ],
+      "affiliateCategories": [
+        "international-moving",
+        "international-shipping"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Move timing", "Household type", "Work setup", "Origin region"],
-      "exampleOutputs": ["Prioritized checklist", "Timeline grouping", "Missing items overview"],
+      "exampleInputs": [
+        "Move timing",
+        "Household type",
+        "Work setup",
+        "Origin region"
+      ],
+      "exampleOutputs": [
+        "Prioritized checklist",
+        "Timeline grouping",
+        "Missing items overview"
+      ],
       "mostUsefulFor": "People planning their full move and first 90 days."
     },
     {
@@ -84,7 +122,10 @@
       "seo": {
         "title": "Arrival Planner Netherlands: Plan Your First Week and Month",
         "description": "Plan your first week and first month after arriving in the Netherlands.",
-        "keywords": ["arrival planner Netherlands", "first week Netherlands expat"]
+        "keywords": [
+          "arrival planner Netherlands",
+          "first week Netherlands expat"
+        ]
       },
       "summary": "Build a practical arrival sequence based on your setup status.",
       "primaryConversion": "both",
@@ -97,12 +138,25 @@
         "/netherlands/moving/tools/moving-checklist/",
         "/netherlands/moving/tools/first-90-days/"
       ],
-      "affiliatePlacementIds": ["tool_arrival_planner_after_results"],
-      "affiliateCategories": ["banking", "insurance"],
+      "affiliatePlacementIds": [
+        "tool_arrival_planner_after_results"
+      ],
+      "affiliateCategories": [
+        "banking",
+        "insurance"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Arrival date", "Address status", "Household type"],
-      "exampleOutputs": ["Week 1 priorities", "Month 1 setup plan", "Appointment reminders"],
+      "exampleInputs": [
+        "Arrival date",
+        "Address status",
+        "Household type"
+      ],
+      "exampleOutputs": [
+        "Week 1 priorities",
+        "Month 1 setup plan",
+        "Appointment reminders"
+      ],
       "mostUsefulFor": "New arrivals who want to avoid missing first-week essentials."
     },
     {
@@ -114,11 +168,16 @@
       "templateType": "planner",
       "categoryId": "move-immigration",
       "menuGroup": "move",
-      "aliases": ["first-90-days-setup-planner"],
+      "aliases": [
+        "first-90-days-setup-planner"
+      ],
       "seo": {
         "title": "First 90 Days Planner Netherlands: Build Your Settlement Plan",
         "description": "Create a week-by-week plan for your first 90 days in the Netherlands.",
-        "keywords": ["first 90 days Netherlands", "expat setup planner Netherlands"]
+        "keywords": [
+          "first 90 days Netherlands",
+          "expat setup planner Netherlands"
+        ]
       },
       "summary": "Generate a 90-day timeline covering admin and daily-life setup.",
       "primaryConversion": "both",
@@ -131,12 +190,25 @@
         "/netherlands/moving/tools/moving-checklist/",
         "/netherlands/document-readiness-checker/"
       ],
-      "affiliatePlacementIds": ["tool_first_90_days_after_results"],
-      "affiliateCategories": ["banking", "housing-platforms"],
+      "affiliatePlacementIds": [
+        "tool_first_90_days_after_results"
+      ],
+      "affiliateCategories": [
+        "banking",
+        "housing-platforms"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Arrival stage", "Job timing", "Integration awareness needs"],
-      "exampleOutputs": ["Week-by-week milestones", "Unknowns tracker", "Setup risk flags"],
+      "exampleInputs": [
+        "Arrival stage",
+        "Job timing",
+        "Integration awareness needs"
+      ],
+      "exampleOutputs": [
+        "Week-by-week milestones",
+        "Unknowns tracker",
+        "Setup risk flags"
+      ],
       "mostUsefulFor": "Anyone structuring their first three months in the Netherlands."
     },
     {
@@ -151,12 +223,15 @@
       "seo": {
         "title": "Document Readiness Checker Netherlands: What to Prepare",
         "description": "Check which documents you may still need before and after moving to the Netherlands.",
-        "keywords": ["document checklist Netherlands", "expat documents Netherlands"]
+        "keywords": [
+          "document checklist Netherlands",
+          "expat documents Netherlands"
+        ]
       },
       "summary": "Score your document prep and highlight likely missing records.",
       "primaryConversion": "both",
       "relatedGuides": [
-        "/netherlands/documents-needed-to-move-netherlands/",
+        "/netherlands/document-readiness-checker/",
         "/netherlands/moving-checklist-netherlands/",
         "/netherlands/municipality-registration-netherlands/"
       ],
@@ -164,12 +239,25 @@
         "/netherlands/moving/tools/moving-checklist/",
         "/netherlands/moving/tools/arrival-planner/"
       ],
-      "affiliatePlacementIds": ["tool_document_readiness_after_results"],
-      "affiliateCategories": ["document-services", "insurance"],
+      "affiliatePlacementIds": [
+        "tool_document_readiness_after_results"
+      ],
+      "affiliateCategories": [
+        "document-services",
+        "insurance"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Scenario type", "Document availability toggles", "Origin country"],
-      "exampleOutputs": ["Readiness score", "Missing document list", "Suggested next actions"],
+      "exampleInputs": [
+        "Scenario type",
+        "Document availability toggles",
+        "Origin country"
+      ],
+      "exampleOutputs": [
+        "Readiness score",
+        "Missing document list",
+        "Suggested next actions"
+      ],
       "mostUsefulFor": "People unsure whether their paperwork is complete."
     },
     {
@@ -181,21 +269,52 @@
       "templateType": "checker",
       "categoryId": "move-immigration",
       "menuGroup": "move",
-      "aliases": ["visa-eligibility-checker"],
+      "aliases": [
+        "visa-eligibility-checker"
+      ],
       "seo": {
         "title": "Netherlands Visa Checker: Find the Best Visa for Your Situation",
         "description": "Answer a few questions to see which Netherlands visa routes may fit your situation, compare options, and get a personalized relocation plan.",
-        "keywords": ["visa eligibility Netherlands", "Dutch visa checker", "best visa Netherlands", "which visa do I need Netherlands"]
+        "keywords": [
+          "visa eligibility Netherlands",
+          "Dutch visa checker",
+          "best visa Netherlands",
+          "which visa do I need Netherlands"
+        ]
       },
       "summary": "Find the best visa or residence route for your situation; compare options and get next steps.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/visa/highly-skilled-migrant/", "/netherlands/visa/eu-blue-card/", "/netherlands/visa/dutch-american-friendship-treaty/", "/netherlands/visa/self-employed-visa/", "/netherlands/visa/student-visa/", "/netherlands/visa/partner-family-visa/", "/netherlands/moving-to-the-netherlands/"],
-      "relatedTools": ["/netherlands/moving/tools/relocation-cost-estimator/", "/netherlands/moving/tools/moving-checklist/", "/netherlands/moving/tools/first-90-days/", "/netherlands/document-readiness-checker/"],
+      "relatedGuides": [
+        "/netherlands/visa/highly-skilled-migrant/",
+        "/netherlands/visa/eu-blue-card/",
+        "/netherlands/visa/dutch-american-friendship-treaty/",
+        "/netherlands/visa/self-employed-visa/",
+        "/netherlands/visa/student-visa/",
+        "/netherlands/visa/partner-family-visa/",
+        "/netherlands/moving-to-the-netherlands/"
+      ],
+      "relatedTools": [
+        "/netherlands/moving/tools/relocation-cost-estimator/",
+        "/netherlands/moving/tools/moving-checklist/",
+        "/netherlands/moving/tools/first-90-days/",
+        "/netherlands/document-readiness-checker/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Citizenship", "Purpose of move", "Job offer", "Salary", "Business or partner context"],
-      "exampleOutputs": ["Primary and alternative visa routes", "Comparison table", "Next steps", "Links to full guides"],
+      "exampleInputs": [
+        "Citizenship",
+        "Purpose of move",
+        "Job offer",
+        "Salary",
+        "Business or partner context"
+      ],
+      "exampleOutputs": [
+        "Primary and alternative visa routes",
+        "Comparison table",
+        "Next steps",
+        "Links to full guides"
+      ],
       "mostUsefulFor": "People deciding which visa or residence route fits their situation."
     },
     {
@@ -210,7 +329,13 @@
       "seo": {
         "title": "Netherlands Visa Cost Calculator | Estimate Fees, Documents, and Move Costs",
         "description": "Estimate the cost of applying for a Dutch visa or residence route, including official fees, document preparation, route-specific extras, and practical move-planning costs.",
-        "keywords": ["netherlands visa cost", "dutch visa cost", "visa fees netherlands", "cost to move to netherlands with visa", "netherlands immigration cost"]
+        "keywords": [
+          "netherlands visa cost",
+          "dutch visa cost",
+          "visa fees netherlands",
+          "cost to move to netherlands with visa",
+          "netherlands immigration cost"
+        ]
       },
       "summary": "Estimate route-specific visa and pre-move costs: official fees, documents, travel, and setup.",
       "primaryConversion": "both",
@@ -235,8 +360,20 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Visa route", "Country", "Household", "Route details", "Document complexity", "Travel and setup"],
-      "exampleOutputs": ["Cost range", "Breakdown by category", "Route comparison", "Next steps"],
+      "exampleInputs": [
+        "Visa route",
+        "Country",
+        "Household",
+        "Route details",
+        "Document complexity",
+        "Travel and setup"
+      ],
+      "exampleOutputs": [
+        "Cost range",
+        "Breakdown by category",
+        "Route comparison",
+        "Next steps"
+      ],
       "mostUsefulFor": "People planning visa and move costs before applying or relocating."
     },
     {
@@ -251,14 +388,18 @@
       "seo": {
         "title": "HSM Salary Checker Netherlands",
         "description": "Compare a job offer to Dutch Highly Skilled Migrant salary floors (2026 planning figures): age 30+, under 30, and reduced criterion. Not an IND decision.",
-        "keywords": ["HSM salary checker", "highly skilled migrant salary Netherlands", "kennismigrant salary threshold"]
+        "keywords": [
+          "HSM salary checker",
+          "highly skilled migrant salary Netherlands",
+          "kennismigrant salary threshold"
+        ]
       },
       "summary": "Compare your offer against HSM salary floors and confirm holiday-pay / sponsor checks.",
       "primaryConversion": "signup",
       "relatedGuides": [
         "/netherlands/visa/highly-skilled-migrant/",
         "/netherlands/visa/eu-blue-card/",
-        "/netherlands/money/taxes/30-percent-ruling/"
+        "/netherlands/taxes/30-percent-ruling/"
       ],
       "relatedTools": [
         "/netherlands/visa-cost-calculator/",
@@ -267,8 +408,18 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Gross monthly salary", "Age band", "Reduced criterion", "Holiday pay treatment"],
-      "exampleOutputs": ["Threshold fit band", "Gap estimate", "Checklist", "IND next steps"],
+      "exampleInputs": [
+        "Gross monthly salary",
+        "Age band",
+        "Reduced criterion",
+        "Holiday pay treatment"
+      ],
+      "exampleOutputs": [
+        "Threshold fit band",
+        "Gap estimate",
+        "Checklist",
+        "IND next steps"
+      ],
       "mostUsefulFor": "Workers assessing HSM feasibility before accepting an offer."
     },
     {
@@ -283,17 +434,33 @@
       "seo": {
         "title": "BSN Readiness Checker (Coming Soon)",
         "description": "Check if you are ready to complete BSN registration steps smoothly.",
-        "keywords": ["BSN readiness", "BSN registration checklist"]
+        "keywords": [
+          "BSN readiness",
+          "BSN registration checklist"
+        ]
       },
       "summary": "Check prerequisites before booking and attending BSN registration.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/municipality-registration-netherlands/", "/netherlands/municipality-registration-netherlands/"],
-      "relatedTools": ["/netherlands/document-readiness-checker/"],
+      "relatedGuides": [
+        "/netherlands/municipality-registration-netherlands/",
+        "/netherlands/municipality-registration-netherlands/"
+      ],
+      "relatedTools": [
+        "/netherlands/document-readiness-checker/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Address status", "Municipality", "Supporting documents"],
-      "exampleOutputs": ["Readiness score", "Missing prerequisites", "Suggested booking sequence"],
+      "exampleInputs": [
+        "Address status",
+        "Municipality",
+        "Supporting documents"
+      ],
+      "exampleOutputs": [
+        "Readiness score",
+        "Missing prerequisites",
+        "Suggested booking sequence"
+      ],
       "mostUsefulFor": "Arrivals scheduling registration and avoiding repeat visits."
     },
     {
@@ -308,13 +475,17 @@
       "seo": {
         "title": "Relocation Cost Estimator: Calculate the Cost of Moving to the Netherlands",
         "description": "Estimate how much it costs to move to the Netherlands. Calculate relocation, housing, setup and monthly living costs, then download your results as a PDF.",
-        "keywords": ["relocation cost estimator Netherlands", "moving cost calculator Netherlands", "expat relocation budget"]
+        "keywords": [
+          "relocation cost estimator Netherlands",
+          "moving cost calculator Netherlands",
+          "expat relocation budget"
+        ]
       },
       "summary": "Estimate one-time relocation, monthly living, and first-year costs; download your budget as PDF.",
       "primaryConversion": "both",
       "relatedGuides": [
         "/netherlands/moving-to-netherlands-cost/",
-        "/netherlands/documents-needed-to-move-netherlands/",
+        "/netherlands/document-readiness-checker/",
         "/netherlands/first-90-days-netherlands/"
       ],
       "relatedTools": [
@@ -322,11 +493,25 @@
         "/netherlands/moving/tools/first-90-days/"
       ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["international-moving", "housing-platforms"],
+      "affiliateCategories": [
+        "international-moving",
+        "housing-platforms"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Household", "Visa route", "Moving method", "Housing", "Setup choices"],
-      "exampleOutputs": ["One-time range", "Monthly range", "First-year total", "PDF download"],
+      "exampleInputs": [
+        "Household",
+        "Visa route",
+        "Moving method",
+        "Housing",
+        "Setup choices"
+      ],
+      "exampleOutputs": [
+        "One-time range",
+        "Monthly range",
+        "First-year total",
+        "PDF download"
+      ],
       "mostUsefulFor": "People building a realistic relocation budget for the Netherlands."
     },
     {
@@ -341,18 +526,38 @@
       "seo": {
         "title": "Moving Cost Calculator Netherlands (Coming Soon)",
         "description": "Estimate relocation costs before, during, and after moving to the Netherlands.",
-        "keywords": ["moving cost calculator Netherlands", "expat relocation budget"]
+        "keywords": [
+          "moving cost calculator Netherlands",
+          "expat relocation budget"
+        ]
       },
       "summary": "Estimate one-time and early recurring costs for your move.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/moving-to-the-netherlands/", "/netherlands/moving-to-the-netherlands/"],
-      "relatedTools": ["/netherlands/money/tools/cost-of-living-calculator/"],
+      "relatedGuides": [
+        "/netherlands/moving-to-the-netherlands/",
+        "/netherlands/moving-to-the-netherlands/"
+      ],
+      "relatedTools": [
+        "/netherlands/money/tools/cost-of-living-calculator/"
+      ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["international-moving", "housing-platforms"],
+      "affiliateCategories": [
+        "international-moving",
+        "housing-platforms"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Origin country", "Household size", "Shipping amount", "Housing setup"],
-      "exampleOutputs": ["Budget range", "Cost breakdown", "Cash-flow timing"],
+      "exampleInputs": [
+        "Origin country",
+        "Household size",
+        "Shipping amount",
+        "Housing setup"
+      ],
+      "exampleOutputs": [
+        "Budget range",
+        "Cost breakdown",
+        "Cash-flow timing"
+      ],
       "mostUsefulFor": "People building a realistic relocation budget."
     },
     {
@@ -367,7 +572,15 @@
       "seo": {
         "title": "Netherlands Visa Timeline Estimator | Estimate Processing and Move Timing",
         "description": "Estimate how long a Dutch visa or residence route may take, including document prep, official decision periods, travel timing, and first-step relocation planning.",
-        "keywords": ["how long does netherlands visa take", "netherlands visa processing time", "dutch visa timeline", "how long to move to netherlands", "partner visa processing time netherlands", "student visa processing time netherlands", "self employed visa timeline netherlands"]
+        "keywords": [
+          "how long does netherlands visa take",
+          "netherlands visa processing time",
+          "dutch visa timeline",
+          "how long to move to netherlands",
+          "partner visa processing time netherlands",
+          "student visa processing time netherlands",
+          "self employed visa timeline netherlands"
+        ]
       },
       "summary": "Estimate how long your visa route and pre-move preparation may take, with phase-by-phase timeline and next steps.",
       "primaryConversion": "both",
@@ -392,8 +605,21 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/moving/tools/",
-      "exampleInputs": ["Visa route", "Country", "Current stage", "Document readiness", "Route context", "Practical timing"],
-      "exampleOutputs": ["Total timeline range", "Official decision period", "Phase breakdown", "Bottlenecks", "Next steps"],
+      "exampleInputs": [
+        "Visa route",
+        "Country",
+        "Current stage",
+        "Document readiness",
+        "Route context",
+        "Practical timing"
+      ],
+      "exampleOutputs": [
+        "Total timeline range",
+        "Official decision period",
+        "Phase breakdown",
+        "Bottlenecks",
+        "Next steps"
+      ],
       "mostUsefulFor": "People planning when to start document prep, when to apply, and when they can realistically move."
     },
     {
@@ -408,17 +634,33 @@
       "seo": {
         "title": "Inburgering Timeline Planner (Coming Soon)",
         "description": "Plan your integration milestones and exam timeline in the Netherlands.",
-        "keywords": ["inburgering planner", "integration timeline Netherlands"]
+        "keywords": [
+          "inburgering planner",
+          "integration timeline Netherlands"
+        ]
       },
       "summary": "Map key integration deadlines and prep phases.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/integration/inburgering/", "/netherlands/moving-to-the-netherlands/"],
-      "relatedTools": ["/netherlands/integration/tools/inburgering-exam-readiness-checker/"],
+      "relatedGuides": [
+        "/netherlands/integration/inburgering/",
+        "/netherlands/moving-to-the-netherlands/"
+      ],
+      "relatedTools": [
+        "/netherlands/integration/tools/inburgering-exam-readiness-checker/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/integration/tools/",
-      "exampleInputs": ["Current level", "Target exam dates", "Weekly study hours"],
-      "exampleOutputs": ["Milestone timeline", "Study pacing plan", "Risk flags for delays"],
+      "exampleInputs": [
+        "Current level",
+        "Target exam dates",
+        "Weekly study hours"
+      ],
+      "exampleOutputs": [
+        "Milestone timeline",
+        "Study pacing plan",
+        "Risk flags for delays"
+      ],
       "mostUsefulFor": "People scheduling integration obligations around work and family."
     },
     {
@@ -432,8 +674,13 @@
       "menuGroup": "move",
       "seo": {
         "title": "Inburgering Exam Readiness Checker Netherlands",
-        "description": "Self-assessment checklist for Dutch inburgering exam modules: language skills, KNM (post–July 2025 materials), and booking readiness. Not a pass prediction — verify with DUO practice exams.",
-        "keywords": ["inburgering readiness", "Dutch integration exam checker", "KNM prep Netherlands", "inburgering modules"]
+        "description": "Self-assessment checklist for Dutch inburgering exam modules: language skills, KNM (post\u2013July 2025 materials), and booking readiness. Not a pass prediction \u2014 verify with DUO practice exams.",
+        "keywords": [
+          "inburgering readiness",
+          "Dutch integration exam checker",
+          "KNM prep Netherlands",
+          "inburgering modules"
+        ]
       },
       "summary": "Self-check language + KNM module readiness and prioritise weak spots before you book with DUO.",
       "primaryConversion": "signup",
@@ -449,8 +696,17 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/integration/tools/",
-      "exampleInputs": ["Target level", "Language module status", "KNM materials", "Booking window"],
-      "exampleOutputs": ["Readiness band", "Priority modules", "DUO-oriented next steps"],
+      "exampleInputs": [
+        "Target level",
+        "Language module status",
+        "KNM materials",
+        "Booking window"
+      ],
+      "exampleOutputs": [
+        "Readiness band",
+        "Priority modules",
+        "DUO-oriented next steps"
+      ],
       "mostUsefulFor": "Candidates preparing for multiple exam components."
     },
     {
@@ -465,17 +721,31 @@
       "seo": {
         "title": "KNM Knowledge Quiz (Coming Soon)",
         "description": "Practice KNM-style questions with explanations and progress feedback.",
-        "keywords": ["KNM quiz", "inburgering KNM practice"]
+        "keywords": [
+          "KNM quiz",
+          "inburgering KNM practice"
+        ]
       },
       "summary": "Practice KNM questions and track topic-level confidence.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/integration/inburgering/"],
-      "relatedTools": ["/netherlands/integration/tools/inburgering-exam-readiness-checker/"],
+      "relatedGuides": [
+        "/netherlands/integration/inburgering/"
+      ],
+      "relatedTools": [
+        "/netherlands/integration/tools/inburgering-exam-readiness-checker/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/integration/tools/",
-      "exampleInputs": ["Topic selection", "Difficulty level"],
-      "exampleOutputs": ["Quiz score", "Answer explanations", "Topic confidence trends"],
+      "exampleInputs": [
+        "Topic selection",
+        "Difficulty level"
+      ],
+      "exampleOutputs": [
+        "Quiz score",
+        "Answer explanations",
+        "Topic confidence trends"
+      ],
       "mostUsefulFor": "Learners wanting practical KNM revision."
     },
     {
@@ -490,9 +760,14 @@
       "seo": {
         "title": "Integration Requirement Checker Netherlands",
         "description": "Orientation checklist for Dutch inburgering: obligation vs HSM, Wi 2021 cohort, and civic integration proof for permanent residence or citizenship. Not a legal determination.",
-        "keywords": ["integration requirement checker", "inburgering obligations", "HSM inburgering", "Wi 2021"]
+        "keywords": [
+          "integration requirement checker",
+          "inburgering obligations",
+          "HSM inburgering",
+          "Wi 2021"
+        ]
       },
-      "summary": "Map likely obligation vs secure-residence proof pathways — verify on your IND letter and DUO.",
+      "summary": "Map likely obligation vs secure-residence proof pathways \u2014 verify on your IND letter and DUO.",
       "primaryConversion": "signup",
       "relatedGuides": [
         "/netherlands/integration/inburgering/",
@@ -506,8 +781,17 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/integration/tools/",
-      "exampleInputs": ["Residence basis", "Obligation letter", "Cohort", "PR/citizenship goal"],
-      "exampleOutputs": ["Requirement band", "Checklist", "Official next steps"],
+      "exampleInputs": [
+        "Residence basis",
+        "Obligation letter",
+        "Cohort",
+        "PR/citizenship goal"
+      ],
+      "exampleOutputs": [
+        "Requirement band",
+        "Checklist",
+        "Official next steps"
+      ],
       "mostUsefulFor": "Residents unsure which integration rules apply."
     },
     {
@@ -522,9 +806,13 @@
       "seo": {
         "title": "Permanent Residence Eligibility Calculator Netherlands",
         "description": "Orientation checklist for Dutch permanent residence after HSM or other lawful stay: five-year signals, continuity, BRP, integration, and IND next steps.",
-        "keywords": ["permanent residence Netherlands calculator", "PR eligibility Netherlands", "HSM permanent residence"]
+        "keywords": [
+          "permanent residence Netherlands calculator",
+          "PR eligibility Netherlands",
+          "HSM permanent residence"
+        ]
       },
-      "summary": "Map common IND themes for PR readiness — not an IND decision.",
+      "summary": "Map common IND themes for PR readiness \u2014 not an IND decision.",
       "primaryConversion": "signup",
       "relatedGuides": [
         "/netherlands/citizenship/permanent-residence/",
@@ -539,8 +827,16 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/citizenship/tools/",
-      "exampleInputs": ["Residence history", "Permit continuity", "Integration status"],
-      "exampleOutputs": ["Readiness band", "Gaps to close", "IND-oriented next steps"],
+      "exampleInputs": [
+        "Residence history",
+        "Permit continuity",
+        "Integration status"
+      ],
+      "exampleOutputs": [
+        "Readiness band",
+        "Gaps to close",
+        "IND-oriented next steps"
+      ],
       "mostUsefulFor": "Long-term residents and HSM holders planning a PR application."
     },
     {
@@ -555,9 +851,13 @@
       "seo": {
         "title": "Dutch Citizenship Timeline Calculator Netherlands",
         "description": "Orientation timeline for Dutch naturalisation: five-year horizon, integration, renunciation, gemeente application, IND decision period, and ceremony.",
-        "keywords": ["Dutch citizenship timeline", "naturalisation calculator Netherlands", "when can I naturalise Netherlands"]
+        "keywords": [
+          "Dutch citizenship timeline",
+          "naturalisation calculator Netherlands",
+          "when can I naturalise Netherlands"
+        ]
       },
-      "summary": "Sequence naturalisation milestones — or check whether option comes first. Not an IND decision.",
+      "summary": "Sequence naturalisation milestones \u2014 or check whether option comes first. Not an IND decision.",
       "primaryConversion": "signup",
       "relatedGuides": [
         "/netherlands/citizenship/dutch-citizenship/",
@@ -572,8 +872,16 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/citizenship/tools/",
-      "exampleInputs": ["Residence start month", "Integration status", "Renunciation stance"],
-      "exampleOutputs": ["Earliest apply window", "Milestone sequence", "IND-oriented next steps"],
+      "exampleInputs": [
+        "Residence start month",
+        "Integration status",
+        "Renunciation stance"
+      ],
+      "exampleOutputs": [
+        "Earliest apply window",
+        "Milestone sequence",
+        "IND-oriented next steps"
+      ],
       "mostUsefulFor": "Residents planning medium- to long-term citizenship goals."
     },
     {
@@ -588,9 +896,14 @@
       "seo": {
         "title": "Dual Citizenship Awareness Tool Netherlands",
         "description": "Orientation checklist for Dutch dual nationality trade-offs: renunciation, exceptions, option vs naturalisation, home-country rules, and long stay abroad. Not a dual-passport verdict.",
-        "keywords": ["dual citizenship Netherlands", "renounce nationality Netherlands", "Dutch dual nationality", "naturalisation renunciation"]
+        "keywords": [
+          "dual citizenship Netherlands",
+          "renounce nationality Netherlands",
+          "Dutch dual nationality",
+          "naturalisation renunciation"
+        ]
       },
-      "summary": "Surface renunciation, exception, option, and home-country friction topics before you apply — not a dual-passport verdict.",
+      "summary": "Surface renunciation, exception, option, and home-country friction topics before you apply \u2014 not a dual-passport verdict.",
       "primaryConversion": "signup",
       "relatedGuides": [
         "/netherlands/citizenship/dutch-citizenship/",
@@ -604,8 +917,18 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/citizenship/tools/",
-      "exampleInputs": ["Route focus", "Home renunciation rules", "Possible Dutch exception", "Willingness to renounce"],
-      "exampleOutputs": ["Awareness band", "Checklist", "Topics to verify", "Official next steps"],
+      "exampleInputs": [
+        "Route focus",
+        "Home renunciation rules",
+        "Possible Dutch exception",
+        "Willingness to renounce"
+      ],
+      "exampleOutputs": [
+        "Awareness band",
+        "Checklist",
+        "Topics to verify",
+        "Official next steps"
+      ],
       "mostUsefulFor": "Applicants evaluating citizenship trade-offs before naturalisation."
     },
     {
@@ -617,11 +940,21 @@
       "templateType": "calculator",
       "categoryId": "taxes-tools",
       "menuGroup": "money",
-      "aliases": ["thirty-percent-ruling-calculator"],
+      "aliases": [
+        "thirty-percent-ruling-calculator"
+      ],
       "seo": {
         "title": "30% Ruling Eligibility Calculator Netherlands 2026 | Allowance & Planning",
-        "description": "Likely 30% ruling eligibility checklist, salary norms, recruitment and distance self-checks, tax-free allowance estimate, optional indicative net comparison, scenarios, and printable summary — planning only.",
-        "keywords": ["30 ruling eligibility calculator", "30% ruling calculator Netherlands", "30 ruling salary threshold", "30 ruling benefit estimate", "30 percent ruling 2026", "30 ruling 2027 preview", "30 procent regeling"]
+        "description": "Likely 30% ruling eligibility checklist, salary norms, recruitment and distance self-checks, tax-free allowance estimate, optional indicative net comparison, scenarios, and printable summary \u2014 planning only.",
+        "keywords": [
+          "30 ruling eligibility calculator",
+          "30% ruling calculator Netherlands",
+          "30 ruling salary threshold",
+          "30 ruling benefit estimate",
+          "30 percent ruling 2026",
+          "30 ruling 2027 preview",
+          "30 procent regeling"
+        ]
       },
       "summary": "Eligibility-first planning: norms, context questions, allowance estimate, optional net comparison and scenarios.",
       "primaryConversion": "both",
@@ -630,7 +963,7 @@
         "/netherlands/money/tax-return-netherlands/",
         "/netherlands/money/tax-residency-netherlands/",
         "/netherlands/taxes/",
-        "/netherlands/money/taxes/30-percent-ruling/",
+        "/netherlands/taxes/30-percent-ruling/",
         "/netherlands/taxes/30-ruling-eligibility/",
         "/netherlands/taxes/30-ruling-application/",
         "/netherlands/taxes/net-salary-netherlands/",
@@ -643,11 +976,23 @@
         "/netherlands/work/tools/payslip-decoder/"
       ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["tax"],
+      "affiliateCategories": [
+        "tax"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/taxes/tools/",
-      "exampleInputs": ["Gross salary", "Category and master’s", "Employer and recruitment answers", "Months in scope"],
-      "exampleOutputs": ["Eligibility headline", "Why checklist", "Untaxed allowance", "Optional net delta"],
+      "exampleInputs": [
+        "Gross salary",
+        "Category and master\u2019s",
+        "Employer and recruitment answers",
+        "Months in scope"
+      ],
+      "exampleOutputs": [
+        "Eligibility headline",
+        "Why checklist",
+        "Untaxed allowance",
+        "Optional net delta"
+      ],
       "mostUsefulFor": "Expats and employers planning compensation and payroll around the 30% ruling."
     },
     {
@@ -661,8 +1006,15 @@
       "menuGroup": "money",
       "seo": {
         "title": "Dutch Salary Net Calculator 2026 | Gross to Net Netherlands & 30% Ruling Impact",
-        "description": "Plan Dutch take-home pay: gross-to-net with optional 30% ruling on taxable wages, scenario compare, pension/social toggles, export. Indicative only — not payroll or eligibility advice.",
-        "keywords": ["net salary Netherlands", "Dutch salary calculator", "gross to net Netherlands", "30% ruling salary impact", "dutch net salary expat", "salary after tax Netherlands"]
+        "description": "Plan Dutch take-home pay: gross-to-net with optional 30% ruling on taxable wages, scenario compare, pension/social toggles, export. Indicative only \u2014 not payroll or eligibility advice.",
+        "keywords": [
+          "net salary Netherlands",
+          "Dutch salary calculator",
+          "gross to net Netherlands",
+          "30% ruling salary impact",
+          "dutch net salary expat",
+          "salary after tax Netherlands"
+        ]
       },
       "summary": "Estimate take-home pay: indicative tax bands, optional 30% ruling structure, compare offers, export summary.",
       "primaryConversion": "both",
@@ -672,7 +1024,7 @@
         "/netherlands/money/tax-residency-netherlands/",
         "/netherlands/taxes/net-salary-netherlands/",
         "/netherlands/taxes/gross-vs-net-salary/",
-        "/netherlands/money/taxes/30-percent-ruling/",
+        "/netherlands/taxes/30-percent-ruling/",
         "/netherlands/money/taxes/tax-advisors/",
         "/netherlands/money/taxes/employment-overview/",
         "/netherlands/money/expat-taxes-netherlands/"
@@ -682,11 +1034,23 @@
         "/netherlands/work/tools/payslip-decoder/"
       ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["tax"],
+      "affiliateCategories": [
+        "tax"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/taxes/tools/",
-      "exampleInputs": ["Annual or monthly gross", "Holiday allowance toggle", "30% ruling mode", "Pension %"],
-      "exampleOutputs": ["Net annual & monthly", "Taxable income", "Scenario comparison", "Printable HTML"],
+      "exampleInputs": [
+        "Annual or monthly gross",
+        "Holiday allowance toggle",
+        "30% ruling mode",
+        "Pension %"
+      ],
+      "exampleOutputs": [
+        "Net annual & monthly",
+        "Taxable income",
+        "Scenario comparison",
+        "Printable HTML"
+      ],
       "mostUsefulFor": "Expats and HR comparing gross offers, ruling on/off, and payroll planning before signing."
     },
     {
@@ -694,7 +1058,9 @@
       "title": "Expat Cost of Living Calculator",
       "slug": "cost-of-living-calculator",
       "route": "/netherlands/money/tools/cost-of-living-calculator/",
-      "aliases": ["expat-cost-of-living-calculator"],
+      "aliases": [
+        "expat-cost-of-living-calculator"
+      ],
       "status": "live",
       "templateType": "calculator",
       "categoryId": "money-tax",
@@ -729,11 +1095,24 @@
         "/netherlands/tools/bank-comparison/"
       ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["banking", "housing-platforms"],
+      "affiliateCategories": [
+        "banking",
+        "housing-platforms"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/money/tools/",
-      "exampleInputs": ["City", "Household size", "Employer relocation support", "Rent band", "Transport habits"],
-      "exampleOutputs": ["Monthly range estimate", "Category breakdown", "Buffer target"],
+      "exampleInputs": [
+        "City",
+        "Household size",
+        "Employer relocation support",
+        "Rent band",
+        "Transport habits"
+      ],
+      "exampleOutputs": [
+        "Monthly range estimate",
+        "Category breakdown",
+        "Buffer target"
+      ],
       "mostUsefulFor": "People checking if salary aligns with expected expenses."
     },
     {
@@ -772,11 +1151,27 @@
         "/netherlands/tools/city-comparison/"
       ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["housing-platforms", "banks", "health-insurance"],
+      "affiliateCategories": [
+        "housing-platforms",
+        "banks",
+        "health-insurance"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/housing/tools/",
-      "exampleInputs": ["Gross or net income", "City & neighborhood band", "Household & fixed costs", "Target rent", "Landlord rule ×3–×4"],
-      "exampleOutputs": ["Recommended max rent", "Landlord pass/fail grid", "Salary targets", "Setup breakdown", "HTML export"],
+      "exampleInputs": [
+        "Gross or net income",
+        "City & neighborhood band",
+        "Household & fixed costs",
+        "Target rent",
+        "Landlord rule \u00d73\u2013\u00d74"
+      ],
+      "exampleOutputs": [
+        "Recommended max rent",
+        "Landlord pass/fail grid",
+        "Salary targets",
+        "Setup breakdown",
+        "HTML export"
+      ],
       "mostUsefulFor": "Expats and residents sizing rent before search and checking gross-income screening stories."
     },
     {
@@ -791,17 +1186,32 @@
       "seo": {
         "title": "Employment Tax Overview Tool (Coming Soon)",
         "description": "Get a plain-language overview of your likely Dutch employment tax picture.",
-        "keywords": ["employment tax overview Netherlands", "Dutch tax basics expat"]
+        "keywords": [
+          "employment tax overview Netherlands",
+          "Dutch tax basics expat"
+        ]
       },
       "summary": "Translate salary and employment details into a simple tax overview.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/money/taxes/employment-overview/"],
-      "relatedTools": ["/netherlands/taxes/tools/double-tax-awareness-tool/"],
+      "relatedGuides": [
+        "/netherlands/money/taxes/employment-overview/"
+      ],
+      "relatedTools": [
+        "/netherlands/taxes/tools/double-tax-awareness-tool/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/money/tools/",
-      "exampleInputs": ["Income type", "Residence context", "Employer setup"],
-      "exampleOutputs": ["Tax category overview", "What to confirm", "Record-keeping checklist"],
+      "exampleInputs": [
+        "Income type",
+        "Residence context",
+        "Employer setup"
+      ],
+      "exampleOutputs": [
+        "Tax category overview",
+        "What to confirm",
+        "Record-keeping checklist"
+      ],
       "mostUsefulFor": "Newcomers seeking a simplified tax orientation."
     },
     {
@@ -816,7 +1226,10 @@
       "seo": {
         "title": "Double Tax Awareness Tool Netherlands | Cross-Border Tax Planning View",
         "description": "Check likely dual-residency and cross-border double-tax risk when moving to or working in the Netherlands. Understand filing signals, likely relief methods, and next actions.",
-        "keywords": ["double tax Netherlands expat", "cross-border tax awareness"]
+        "keywords": [
+          "double tax Netherlands expat",
+          "cross-border tax awareness"
+        ]
       },
       "summary": "Deterministic planning tool for residency signals, income-tax mapping, relief awareness, and practical filing next steps.",
       "primaryConversion": "both",
@@ -828,13 +1241,25 @@
         "/netherlands/money/expat-taxes-netherlands/",
         "/netherlands/money/tax-residency-netherlands/"
       ],
-      "relatedTools": ["/netherlands/money/tools/employment-tax-overview-tool/"],
+      "relatedTools": [
+        "/netherlands/money/tools/employment-tax-overview-tool/"
+      ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["tax"],
+      "affiliateCategories": [
+        "tax"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/taxes/tools/",
-      "exampleInputs": ["Income countries", "Tax residency assumptions", "Contract setup"],
-      "exampleOutputs": ["Risk areas", "Treaty topics to verify", "Documentation checklist"],
+      "exampleInputs": [
+        "Income countries",
+        "Tax residency assumptions",
+        "Contract setup"
+      ],
+      "exampleOutputs": [
+        "Risk areas",
+        "Treaty topics to verify",
+        "Documentation checklist"
+      ],
       "mostUsefulFor": "People with multi-country income exposure."
     },
     {
@@ -848,7 +1273,7 @@
       "menuGroup": "living",
       "seo": {
         "title": "Netherlands City Comparison: Best Dutch Cities for Expats, Families & Remote Work",
-        "description": "Compare Amsterdam vs Utrecht, Rotterdam vs The Hague, Eindhoven vs Utrecht, and more: affordability, commute planning, family fit, and lifestyle for expats. Shared cost-of-living anchors — not live listings, tax advice, or an objective best city.",
+        "description": "Compare Amsterdam vs Utrecht, Rotterdam vs The Hague, Eindhoven vs Utrecht, and more: affordability, commute planning, family fit, and lifestyle for expats. Shared cost-of-living anchors \u2014 not live listings, tax advice, or an objective best city.",
         "keywords": [
           "best city Netherlands expats",
           "best Dutch city international workers",
@@ -882,11 +1307,30 @@
         "/netherlands/work/tools/payslip-decoder/"
       ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["housing-platforms", "rental-agencies", "banks", "health-insurance", "relocation-agencies"],
+      "affiliateCategories": [
+        "housing-platforms",
+        "rental-agencies",
+        "banks",
+        "health-insurance",
+        "relocation-agencies"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/tools/",
-      "exampleInputs": ["2–4 cities", "Household", "Net salary", "Work mode", "Office city", "Priority sliders"],
-      "exampleOutputs": ["Ranked fit", "Cost table", "Commute notes", "Scenario lenses", "HTML export"],
+      "exampleInputs": [
+        "2\u20134 cities",
+        "Household",
+        "Net salary",
+        "Work mode",
+        "Office city",
+        "Priority sliders"
+      ],
+      "exampleOutputs": [
+        "Ranked fit",
+        "Cost table",
+        "Commute notes",
+        "Scenario lenses",
+        "HTML export"
+      ],
       "mostUsefulFor": "Expats choosing where to live before deep housing search."
     },
     {
@@ -909,7 +1353,7 @@
           "expat banking tool netherlands"
         ]
       },
-      "summary": "Short questionnaire plus simple scores for classic Dutch banks, app banks, and transfer services — not live prices, and partner links do not change the order.",
+      "summary": "Short questionnaire plus simple scores for classic Dutch banks, app banks, and transfer services \u2014 not live prices, and partner links do not change the order.",
       "primaryConversion": "both",
       "relatedGuides": [
         "/netherlands/money/banking/best-banks-expats/",
@@ -934,12 +1378,25 @@
         "/netherlands/work/tools/payslip-decoder/"
       ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["banks"],
+      "affiliateCategories": [
+        "banks"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/tools/",
-      "exampleInputs": ["Situation", "Banking needs", "International use", "Support preference", "Include/exclude bank types"],
-      "exampleOutputs": ["Fit score", "Weight breakdown", "Hybrid recommendation", "Hidden cost checklist"],
-      "mostUsefulFor": "Expats shortlisting Dutch everyday banking before reading each bank’s official PDF."
+      "exampleInputs": [
+        "Situation",
+        "Banking needs",
+        "International use",
+        "Support preference",
+        "Include/exclude bank types"
+      ],
+      "exampleOutputs": [
+        "Fit score",
+        "Weight breakdown",
+        "Hybrid recommendation",
+        "Hidden cost checklist"
+      ],
+      "mostUsefulFor": "Expats shortlisting Dutch everyday banking before reading each bank\u2019s official PDF."
     },
     {
       "id": "netherlands-banking-cost-estimator",
@@ -961,7 +1418,7 @@
           "cheapest bank account cost netherlands"
         ]
       },
-      "summary": "Five-step questionnaire plus transparent monthly and yearly euro planning bands for account fees, cards, ATM use, transfers, FX, premium plans, joint and ZZP extras — not live provider quotes.",
+      "summary": "Five-step questionnaire plus transparent monthly and yearly euro planning bands for account fees, cards, ATM use, transfers, FX, premium plans, joint and ZZP extras \u2014 not live provider quotes.",
       "primaryConversion": "both",
       "relatedGuides": [
         "/netherlands/money/banking/fees/",
@@ -983,7 +1440,9 @@
         "/netherlands/taxes/tools/dutch-salary-net-calculator/"
       ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["banks"],
+      "affiliateCategories": [
+        "banks"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/tools/",
       "exampleInputs": [
@@ -1014,7 +1473,7 @@
       "menuGroup": "money",
       "seo": {
         "title": "International Transfer Cost Calculator | ExpatCopilot",
-        "description": "Rough guide to sending money from the Netherlands: send fees, exchange-rate cost (FX), and how much may reach the other person. Uses simple ranges for planning — not live bank prices.",
+        "description": "Rough guide to sending money from the Netherlands: send fees, exchange-rate cost (FX), and how much may reach the other person. Uses simple ranges for planning \u2014 not live bank prices.",
         "keywords": [
           "international transfer cost calculator Netherlands",
           "send money abroad fees Netherlands",
@@ -1022,7 +1481,7 @@
           "expat transfer calculator EUR"
         ]
       },
-      "summary": "Four short steps plus simple fee and exchange-rate cost ranges for banks, app banks, and transfer companies — rough euro value for the recipient, not live FX.",
+      "summary": "Four short steps plus simple fee and exchange-rate cost ranges for banks, app banks, and transfer companies \u2014 rough euro value for the recipient, not live FX.",
       "primaryConversion": "both",
       "relatedGuides": [
         "/netherlands/money/banking/international-transfers/",
@@ -1042,12 +1501,25 @@
         "/netherlands/taxes/tools/dutch-salary-net-calculator/"
       ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["banks"],
+      "affiliateCategories": [
+        "banks"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/tools/",
-      "exampleInputs": ["Send amount (EUR)", "Recipient currency", "Frequency", "Path + priorities"],
-      "exampleOutputs": ["Total cost band", "Recipient-value band", "Three path cards", "Hidden-cost warnings", "Methodology"],
-      "mostUsefulFor": "Expats sanity-checking international send costs before using each provider’s live calculator."
+      "exampleInputs": [
+        "Send amount (EUR)",
+        "Recipient currency",
+        "Frequency",
+        "Path + priorities"
+      ],
+      "exampleOutputs": [
+        "Total cost band",
+        "Recipient-value band",
+        "Three path cards",
+        "Hidden-cost warnings",
+        "Methodology"
+      ],
+      "mostUsefulFor": "Expats sanity-checking international send costs before using each provider\u2019s live calculator."
     },
     {
       "id": "dutch-rental-budget-calculator",
@@ -1061,18 +1533,35 @@
       "seo": {
         "title": "Dutch Rental Budget Calculator (Coming Soon)",
         "description": "Estimate realistic rental budgets for Dutch cities and household sizes.",
-        "keywords": ["rental budget Netherlands", "rent calculator Dutch cities"]
+        "keywords": [
+          "rental budget Netherlands",
+          "rent calculator Dutch cities"
+        ]
       },
       "summary": "Estimate realistic rental budget targets by city and household profile.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/living/rental-market/"],
-      "relatedTools": ["/netherlands/housing/tools/rent-affordability-calculator/"],
+      "relatedGuides": [
+        "/netherlands/living/rental-market/"
+      ],
+      "relatedTools": [
+        "/netherlands/housing/tools/rent-affordability-calculator/"
+      ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["housing-platforms"],
+      "affiliateCategories": [
+        "housing-platforms"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/housing/tools/",
-      "exampleInputs": ["City", "Household type", "Income band"],
-      "exampleOutputs": ["Budget bands", "Expected upfront costs", "Search strategy hints"],
+      "exampleInputs": [
+        "City",
+        "Household type",
+        "Income band"
+      ],
+      "exampleOutputs": [
+        "Budget bands",
+        "Expected upfront costs",
+        "Search strategy hints"
+      ],
       "mostUsefulFor": "Renters choosing target neighborhoods and price bands."
     },
     {
@@ -1087,17 +1576,32 @@
       "seo": {
         "title": "Deposit Return Risk Checker (Coming Soon)",
         "description": "Identify common deposit return risk signals in rental handovers.",
-        "keywords": ["deposit return Netherlands", "rental deposit risk checker"]
+        "keywords": [
+          "deposit return Netherlands",
+          "rental deposit risk checker"
+        ]
       },
       "summary": "Spot deposit-risk signals and preventive actions for rental exits.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/housing/rental-contracts-and-deposits-netherlands/"],
-      "relatedTools": ["/netherlands/tools/advanced/rental-deposit-dispute-tool/"],
+      "relatedGuides": [
+        "/netherlands/housing/rental-contracts-and-deposits-netherlands/"
+      ],
+      "relatedTools": [
+        "/netherlands/tools/advanced/rental-deposit-dispute-tool/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/housing/tools/",
-      "exampleInputs": ["Inventory status", "Handover documentation", "Landlord communication"],
-      "exampleOutputs": ["Risk score", "Evidence checklist", "Suggested next steps"],
+      "exampleInputs": [
+        "Inventory status",
+        "Handover documentation",
+        "Landlord communication"
+      ],
+      "exampleOutputs": [
+        "Risk score",
+        "Evidence checklist",
+        "Suggested next steps"
+      ],
       "mostUsefulFor": "Renters preparing move-out and deposit recovery."
     },
     {
@@ -1112,18 +1616,35 @@
       "seo": {
         "title": "Mortgage Eligibility Estimator Netherlands (Coming Soon)",
         "description": "Estimate mortgage borrowing potential for Dutch home-buying scenarios.",
-        "keywords": ["mortgage eligibility Netherlands", "home loan estimator NL"]
+        "keywords": [
+          "mortgage eligibility Netherlands",
+          "home loan estimator NL"
+        ]
       },
       "summary": "Estimate mortgage capacity from income and household assumptions.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/housing/"],
-      "relatedTools": ["/netherlands/housing/tools/mortgage-comparison-tool/"],
+      "relatedGuides": [
+        "/netherlands/housing/"
+      ],
+      "relatedTools": [
+        "/netherlands/housing/tools/mortgage-comparison-tool/"
+      ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["mortgage"],
+      "affiliateCategories": [
+        "mortgage"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/housing/tools/",
-      "exampleInputs": ["Household income", "Contract type", "Savings amount"],
-      "exampleOutputs": ["Borrowing range", "Affordability stress-test", "Next checks"],
+      "exampleInputs": [
+        "Household income",
+        "Contract type",
+        "Savings amount"
+      ],
+      "exampleOutputs": [
+        "Borrowing range",
+        "Affordability stress-test",
+        "Next checks"
+      ],
       "mostUsefulFor": "Buyers exploring feasibility before searching seriously."
     },
     {
@@ -1138,18 +1659,37 @@
       "seo": {
         "title": "Buy vs Rent Calculator Netherlands (Coming Soon)",
         "description": "Compare buy-vs-rent scenarios using your expected stay duration and costs.",
-        "keywords": ["buy vs rent Netherlands", "housing decision calculator NL"]
+        "keywords": [
+          "buy vs rent Netherlands",
+          "housing decision calculator NL"
+        ]
       },
       "summary": "Compare buy/rent scenarios using timeline, cost and flexibility assumptions.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/housing/"],
-      "relatedTools": ["/netherlands/housing/tools/mortgage-eligibility-estimator/"],
+      "relatedGuides": [
+        "/netherlands/housing/"
+      ],
+      "relatedTools": [
+        "/netherlands/housing/tools/mortgage-eligibility-estimator/"
+      ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["mortgage", "housing-platforms"],
+      "affiliateCategories": [
+        "mortgage",
+        "housing-platforms"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/housing/tools/",
-      "exampleInputs": ["Stay duration", "Monthly rent", "Purchase budget", "Interest assumptions"],
-      "exampleOutputs": ["Scenario comparison", "Break-even horizon", "Risk notes"],
+      "exampleInputs": [
+        "Stay duration",
+        "Monthly rent",
+        "Purchase budget",
+        "Interest assumptions"
+      ],
+      "exampleOutputs": [
+        "Scenario comparison",
+        "Break-even horizon",
+        "Risk notes"
+      ],
       "mostUsefulFor": "Expats deciding whether buying is worth it."
     },
     {
@@ -1164,25 +1704,44 @@
       "seo": {
         "title": "Mortgage Comparison Tool Netherlands (Coming Soon)",
         "description": "Compare mortgage options, rates and monthly impacts side by side.",
-        "keywords": ["mortgage comparison Netherlands", "compare mortgage options NL"]
+        "keywords": [
+          "mortgage comparison Netherlands",
+          "compare mortgage options NL"
+        ]
       },
       "summary": "Compare mortgage scenarios and trade-offs in one place.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/housing/"],
-      "relatedTools": ["/netherlands/housing/tools/mortgage-eligibility-estimator/"],
+      "relatedGuides": [
+        "/netherlands/housing/"
+      ],
+      "relatedTools": [
+        "/netherlands/housing/tools/mortgage-eligibility-estimator/"
+      ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["mortgage"],
+      "affiliateCategories": [
+        "mortgage"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/housing/tools/",
-      "exampleInputs": ["Rate offers", "Term lengths", "Fixed period choices"],
-      "exampleOutputs": ["Monthly comparison", "Total cost delta", "Sensitivity check"],
+      "exampleInputs": [
+        "Rate offers",
+        "Term lengths",
+        "Fixed period choices"
+      ],
+      "exampleOutputs": [
+        "Monthly comparison",
+        "Total cost delta",
+        "Sensitivity check"
+      ],
       "mostUsefulFor": "Buyers comparing lender offers."
     },
     {
       "id": "utilities-services-comparison-tool",
-      "title": "Netherlands Utilities & Household Services — Guide + Planner",
+      "title": "Netherlands Utilities & Household Services \u2014 Guide + Planner",
       "slug": "utilities-services-comparison",
-      "aliases": ["utilities-services-comparison-tool"],
+      "aliases": [
+        "utilities-services-comparison-tool"
+      ],
       "route": "/netherlands/living/tools/utilities-services-comparison/",
       "status": "live",
       "templateType": "comparison",
@@ -1207,7 +1766,7 @@
       "summary": "Destination page: planning guide plus calculator for Dutch household utilities, presets, compare-vs-fixed labels, setup cash, checklist, and cross-links to budgeting tools.",
       "primaryConversion": "both",
       "relatedGuides": [
-        "/netherlands/living/utilities/",
+        "/netherlands/utilities/utilities-netherlands/",
         "/netherlands/living/rental-market/",
         "/netherlands/moving-to-the-netherlands/",
         "/netherlands/cities/"
@@ -1223,11 +1782,26 @@
         "/netherlands/taxes/tools/dutch-salary-net-calculator/"
       ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["mobile-connectivity", "housing-platforms"],
+      "affiliateCategories": [
+        "mobile-connectivity",
+        "housing-platforms"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/living/survival-guide/",
-      "exampleInputs": ["City", "Housing type", "Heating and efficiency", "Inclusions from landlord", "Internet tier and mobile lines"],
-      "exampleOutputs": ["Monthly services band", "First-month setup estimate", "Compare vs fixed map", "Scenario deltas", "Checklist by phase"],
+      "exampleInputs": [
+        "City",
+        "Housing type",
+        "Heating and efficiency",
+        "Inclusions from landlord",
+        "Internet tier and mobile lines"
+      ],
+      "exampleOutputs": [
+        "Monthly services band",
+        "First-month setup estimate",
+        "Compare vs fixed map",
+        "Scenario deltas",
+        "Checklist by phase"
+      ],
       "mostUsefulFor": "Expats and locals planning post-move-in household contracts without treating blogs as quotes."
     },
     {
@@ -1242,17 +1816,32 @@
       "seo": {
         "title": "Public Transport Cost Estimator Netherlands (Coming Soon)",
         "description": "Estimate commute and monthly transport costs across Dutch travel scenarios.",
-        "keywords": ["public transport cost Netherlands", "commute estimator NL"]
+        "keywords": [
+          "public transport cost Netherlands",
+          "commute estimator NL"
+        ]
       },
       "summary": "Estimate commuting costs based on route and travel frequency.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/transport/"],
-      "relatedTools": ["/netherlands/transport/tools/bike-vs-public-transport-cost-tool/"],
+      "relatedGuides": [
+        "/netherlands/transport/"
+      ],
+      "relatedTools": [
+        "/netherlands/transport/tools/bike-vs-public-transport-cost-tool/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/transport/tools/",
-      "exampleInputs": ["Home and work area", "Travel days per week", "Peak/off-peak usage"],
-      "exampleOutputs": ["Monthly cost estimate", "Pass strategy suggestions", "Savings opportunities"],
+      "exampleInputs": [
+        "Home and work area",
+        "Travel days per week",
+        "Peak/off-peak usage"
+      ],
+      "exampleOutputs": [
+        "Monthly cost estimate",
+        "Pass strategy suggestions",
+        "Savings opportunities"
+      ],
       "mostUsefulFor": "Workers planning regular commuting budgets."
     },
     {
@@ -1267,17 +1856,32 @@
       "seo": {
         "title": "Bike vs Public Transport Cost Tool (Coming Soon)",
         "description": "Compare likely monthly costs between cycling and public transport options.",
-        "keywords": ["bike vs train cost Netherlands", "transport comparison expat"]
+        "keywords": [
+          "bike vs train cost Netherlands",
+          "transport comparison expat"
+        ]
       },
       "summary": "Compare cycling and public-transport costs with practical assumptions.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/transport/"],
-      "relatedTools": ["/netherlands/transport/tools/public-transport-cost-estimator/"],
+      "relatedGuides": [
+        "/netherlands/transport/"
+      ],
+      "relatedTools": [
+        "/netherlands/transport/tools/public-transport-cost-estimator/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/transport/tools/",
-      "exampleInputs": ["Commute distance", "Bike ownership", "Transit pass options"],
-      "exampleOutputs": ["Monthly cost comparison", "Break-even estimate", "Convenience notes"],
+      "exampleInputs": [
+        "Commute distance",
+        "Bike ownership",
+        "Transit pass options"
+      ],
+      "exampleOutputs": [
+        "Monthly cost comparison",
+        "Break-even estimate",
+        "Convenience notes"
+      ],
       "mostUsefulFor": "People choosing an everyday commute strategy."
     },
     {
@@ -1292,18 +1896,36 @@
       "seo": {
         "title": "Dutch Health Insurance Comparison Tool (Coming Soon)",
         "description": "Compare Dutch health insurance options by premium, deductible and fit.",
-        "keywords": ["health insurance comparison Netherlands", "zorgverzekering tool"]
+        "keywords": [
+          "health insurance comparison Netherlands",
+          "zorgverzekering tool"
+        ]
       },
       "summary": "Compare basic Dutch health insurance setups by fit and cost.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/health/", "/netherlands/money/insurance/health/"],
-      "relatedTools": ["/netherlands/taxes/tools/healthcare-allowance-estimator/"],
+      "relatedGuides": [
+        "/netherlands/health/",
+        "/netherlands/money/insurance/health/"
+      ],
+      "relatedTools": [
+        "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+      ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["insurance"],
+      "affiliateCategories": [
+        "insurance"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/health/tools/",
-      "exampleInputs": ["Household type", "Preferred deductible", "Care usage patterns"],
-      "exampleOutputs": ["Plan comparison", "Monthly premium range", "Coverage notes"],
+      "exampleInputs": [
+        "Household type",
+        "Preferred deductible",
+        "Care usage patterns"
+      ],
+      "exampleOutputs": [
+        "Plan comparison",
+        "Monthly premium range",
+        "Coverage notes"
+      ],
       "mostUsefulFor": "New residents selecting first-year health insurance."
     },
     {
@@ -1317,7 +1939,7 @@
       "menuGroup": "money",
       "seo": {
         "title": "Zorgtoeslag Calculator & Healthcare Allowance Netherlands 2026 | Income & Asset Limits",
-        "description": "Healthcare allowance Netherlands planner for expats: zorgtoeslag-style estimates with income and asset limit screening, net premium after allowance, worked examples, and links to salary, rent, and cost-of-living tools. Planning only — not Dienst Toeslagen.",
+        "description": "Healthcare allowance Netherlands planner for expats: zorgtoeslag-style estimates with income and asset limit screening, net premium after allowance, worked examples, and links to salary, rent, and cost-of-living tools. Planning only \u2014 not Dienst Toeslagen.",
         "keywords": [
           "zorgtoeslag calculator",
           "healthcare allowance Netherlands",
@@ -1328,7 +1950,7 @@
           "asset limit zorgtoeslag"
         ]
       },
-      "summary": "Destination page: zorgtoeslag planning, income and asset context, worked examples, recommended services, and net premium after allowance — not an official determination.",
+      "summary": "Destination page: zorgtoeslag planning, income and asset context, worked examples, recommended services, and net premium after allowance \u2014 not an official determination.",
       "primaryConversion": "signup",
       "relatedGuides": [
         "/netherlands/money/tax-guide-for-expats/",
@@ -1348,11 +1970,23 @@
         "/netherlands/health/tools/dutch-health-insurance-comparison-tool/"
       ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["insurance", "tax"],
+      "affiliateCategories": [
+        "insurance",
+        "tax"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/taxes/tools/",
-      "exampleInputs": ["Tax year", "Income and assets", "Insurance months", "Premium choice"],
-      "exampleOutputs": ["Likely eligibility", "Monthly allowance estimate", "Net premium after allowance"],
+      "exampleInputs": [
+        "Tax year",
+        "Income and assets",
+        "Insurance months",
+        "Premium choice"
+      ],
+      "exampleOutputs": [
+        "Likely eligibility",
+        "Monthly allowance estimate",
+        "Net premium after allowance"
+      ],
       "mostUsefulFor": "Expats and residents planning Dutch health insurance net cost before applying for toeslagen."
     },
     {
@@ -1367,25 +2001,44 @@
       "seo": {
         "title": "Insurance Comparison Tool Netherlands (Coming Soon)",
         "description": "Compare key insurance categories relevant for expats in the Netherlands.",
-        "keywords": ["insurance comparison expat Netherlands", "Dutch insurance overview tool"]
+        "keywords": [
+          "insurance comparison expat Netherlands",
+          "Dutch insurance overview tool"
+        ]
       },
       "summary": "Compare insurance options across common expat protection needs.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/money/insurance/"],
-      "relatedTools": ["/netherlands/health/tools/dutch-health-insurance-comparison-tool/"],
+      "relatedGuides": [
+        "/netherlands/money/insurance/"
+      ],
+      "relatedTools": [
+        "/netherlands/health/tools/dutch-health-insurance-comparison-tool/"
+      ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["insurance"],
+      "affiliateCategories": [
+        "insurance"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/health/tools/",
-      "exampleInputs": ["Coverage priorities", "Budget range", "Household risk factors"],
-      "exampleOutputs": ["Category recommendations", "Gap map", "Provider comparison prompts"],
+      "exampleInputs": [
+        "Coverage priorities",
+        "Budget range",
+        "Household risk factors"
+      ],
+      "exampleOutputs": [
+        "Category recommendations",
+        "Gap map",
+        "Provider comparison prompts"
+      ],
       "mostUsefulFor": "Expats building an insurance stack from scratch."
     },
     {
       "id": "job-offer-comparison-tool",
       "title": "Job Offer Comparison Tool",
       "slug": "job-offer-comparison",
-      "aliases": ["job-offer-comparison-tool"],
+      "aliases": [
+        "job-offer-comparison-tool"
+      ],
       "route": "/netherlands/work/tools/job-offer-comparison/",
       "status": "live",
       "templateType": "comparison",
@@ -1393,7 +2046,7 @@
       "menuGroup": "work",
       "seo": {
         "title": "Job Offer Comparison Tool Netherlands | Salary, Benefits & Expat Fit | ExpatCopilot",
-        "description": "Free planner: compare two or three Dutch job offers (or current vs new) on estimated take-home pay, vakantiegeld and bonus handling, 30% ruling support, visa and relocation help, pension and benefits, rent and commute, and contract checklist signals — with topic-by-topic winners, questions to ask employers, and HTML export. Not legal, tax, or immigration advice.",
+        "description": "Free planner: compare two or three Dutch job offers (or current vs new) on estimated take-home pay, vakantiegeld and bonus handling, 30% ruling support, visa and relocation help, pension and benefits, rent and commute, and contract checklist signals \u2014 with topic-by-topic winners, questions to ask employers, and HTML export. Not legal, tax, or immigration advice.",
         "keywords": [
           "compare job offers Netherlands",
           "Dutch job offer comparison",
@@ -1422,8 +2075,17 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",
-      "exampleInputs": ["Base salary", "Bonus terms", "Contract type", "Visa dependency"],
-      "exampleOutputs": ["Weighted comparison", "Risk notes", "Negotiation checklist"],
+      "exampleInputs": [
+        "Base salary",
+        "Bonus terms",
+        "Contract type",
+        "Visa dependency"
+      ],
+      "exampleOutputs": [
+        "Weighted comparison",
+        "Risk notes",
+        "Negotiation checklist"
+      ],
       "mostUsefulFor": "Expats evaluating multiple offers."
     },
     {
@@ -1464,8 +2126,16 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",
-      "exampleInputs": ["Contract excerpts", "Probation terms", "Notice clauses"],
-      "exampleOutputs": ["Risk highlights", "Questions to ask HR", "Negotiation priorities"],
+      "exampleInputs": [
+        "Contract excerpts",
+        "Probation terms",
+        "Notice clauses"
+      ],
+      "exampleOutputs": [
+        "Risk highlights",
+        "Questions to ask HR",
+        "Negotiation priorities"
+      ],
       "mostUsefulFor": "People reviewing contracts before acceptance."
     },
     {
@@ -1480,17 +2150,32 @@
       "seo": {
         "title": "Employee Benefits Calculator (Coming Soon)",
         "description": "Estimate the value of benefits packages in Dutch employment contracts.",
-        "keywords": ["employee benefits calculator Netherlands", "benefits valuation tool"]
+        "keywords": [
+          "employee benefits calculator Netherlands",
+          "benefits valuation tool"
+        ]
       },
       "summary": "Estimate financial value of benefits and total compensation context.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/work/benefits/total-rewards/"],
-      "relatedTools": ["/netherlands/work/tools/compensation-comparison-tool/"],
+      "relatedGuides": [
+        "/netherlands/work/benefits/total-rewards/"
+      ],
+      "relatedTools": [
+        "/netherlands/work/tools/compensation-comparison-tool/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",
-      "exampleInputs": ["Pension contribution", "Allowance types", "Leave entitlements"],
-      "exampleOutputs": ["Estimated benefits value", "Package comparison", "Questions to confirm"],
+      "exampleInputs": [
+        "Pension contribution",
+        "Allowance types",
+        "Leave entitlements"
+      ],
+      "exampleOutputs": [
+        "Estimated benefits value",
+        "Package comparison",
+        "Questions to confirm"
+      ],
       "mostUsefulFor": "Candidates comparing total rewards, not just salary."
     },
     {
@@ -1505,17 +2190,33 @@
       "seo": {
         "title": "Compensation Comparison Tool (Coming Soon)",
         "description": "Compare compensation packages across net pay, benefits and risk factors.",
-        "keywords": ["compensation comparison Netherlands", "offer package comparison expat"]
+        "keywords": [
+          "compensation comparison Netherlands",
+          "offer package comparison expat"
+        ]
       },
       "summary": "Compare full compensation packages under different assumptions.",
       "primaryConversion": "both",
-      "relatedGuides": ["/netherlands/work/benefits/", "/netherlands/work/payroll/"],
-      "relatedTools": ["/netherlands/work/tools/job-offer-comparison/"],
+      "relatedGuides": [
+        "/netherlands/work/benefits/",
+        "/netherlands/work/payroll/"
+      ],
+      "relatedTools": [
+        "/netherlands/work/tools/job-offer-comparison/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",
-      "exampleInputs": ["Salary components", "Benefits", "Tax assumptions"],
-      "exampleOutputs": ["Net package comparison", "Scenario deltas", "Decision support summary"],
+      "exampleInputs": [
+        "Salary components",
+        "Benefits",
+        "Tax assumptions"
+      ],
+      "exampleOutputs": [
+        "Net package comparison",
+        "Scenario deltas",
+        "Decision support summary"
+      ],
       "mostUsefulFor": "Workers balancing gross and real-world outcomes."
     },
     {
@@ -1529,7 +2230,7 @@
       "menuGroup": "work",
       "seo": {
         "title": "Employment Type Scenario Tool Netherlands | Employee vs Contractor vs ZZP",
-        "description": "Compare permanent employee, fixed-term, contractor, and ZZP scenarios in the Netherlands. Indicative money, scored trade-offs, risk highlights, and export — planning only.",
+        "description": "Compare permanent employee, fixed-term, contractor, and ZZP scenarios in the Netherlands. Indicative money, scored trade-offs, risk highlights, and export \u2014 planning only.",
         "keywords": [
           "employee vs zzp Netherlands",
           "contractor vs employee Netherlands",
@@ -1559,8 +2260,16 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",
-      "exampleInputs": ["Work arrangement options", "Income profile", "Visa context"],
-      "exampleOutputs": ["Scenario comparison", "Compliance checkpoints", "Trade-off summary"],
+      "exampleInputs": [
+        "Work arrangement options",
+        "Income profile",
+        "Visa context"
+      ],
+      "exampleOutputs": [
+        "Scenario comparison",
+        "Compliance checkpoints",
+        "Trade-off summary"
+      ],
       "mostUsefulFor": "Professionals choosing between work arrangements."
     },
     {
@@ -1575,17 +2284,32 @@
       "seo": {
         "title": "Employment Type Admin Load Tool (Coming Soon)",
         "description": "Estimate administration overhead across different employment setups.",
-        "keywords": ["admin load employment type", "contractor admin Netherlands"]
+        "keywords": [
+          "admin load employment type",
+          "contractor admin Netherlands"
+        ]
       },
       "summary": "Estimate admin burden and record-keeping needs by employment type.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/work/contracts/"],
-      "relatedTools": ["/netherlands/work/tools/employment-type-scenario-tool/"],
+      "relatedGuides": [
+        "/netherlands/work/contracts/"
+      ],
+      "relatedTools": [
+        "/netherlands/work/tools/employment-type-scenario-tool/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",
-      "exampleInputs": ["Contract type", "Income complexity", "Cross-border factors"],
-      "exampleOutputs": ["Admin effort estimate", "Recurring tasks", "Miss-risk reminders"],
+      "exampleInputs": [
+        "Contract type",
+        "Income complexity",
+        "Cross-border factors"
+      ],
+      "exampleOutputs": [
+        "Admin effort estimate",
+        "Recurring tasks",
+        "Miss-risk reminders"
+      ],
       "mostUsefulFor": "People weighing complexity before changing setup."
     },
     {
@@ -1600,17 +2324,33 @@
       "seo": {
         "title": "Employment Type Visa Dependency Tool (Coming Soon)",
         "description": "See how work arrangement choices can affect visa dependency risk.",
-        "keywords": ["visa dependency employment type", "work permit risk checker"]
+        "keywords": [
+          "visa dependency employment type",
+          "work permit risk checker"
+        ]
       },
       "summary": "Surface visa-dependency implications when changing employment structure.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/moving/visas-residency/", "/netherlands/visa/compare-visas/"],
-      "relatedTools": ["/netherlands/work/tools/job-change-impact-simulator/"],
+      "relatedGuides": [
+        "/netherlands/moving/visas-residency/",
+        "/netherlands/visa/compare-visas/"
+      ],
+      "relatedTools": [
+        "/netherlands/work/tools/job-change-impact-simulator/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",
-      "exampleInputs": ["Current permit", "Proposed work type", "Sponsor setup"],
-      "exampleOutputs": ["Dependency map", "Risk scenarios", "Questions to validate"],
+      "exampleInputs": [
+        "Current permit",
+        "Proposed work type",
+        "Sponsor setup"
+      ],
+      "exampleOutputs": [
+        "Dependency map",
+        "Risk scenarios",
+        "Questions to validate"
+      ],
       "mostUsefulFor": "Workers considering role or contract changes."
     },
     {
@@ -1625,17 +2365,32 @@
       "seo": {
         "title": "Job Change Impact Simulator (Coming Soon)",
         "description": "Simulate job-change impact across pay, admin load and residency dependencies.",
-        "keywords": ["job change impact Netherlands", "expat job transition simulator"]
+        "keywords": [
+          "job change impact Netherlands",
+          "expat job transition simulator"
+        ]
       },
       "summary": "Simulate expected impact when changing jobs or employment type.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/work/career/job-change-impact/"],
-      "relatedTools": ["/netherlands/work/tools/job-offer-comparison/"],
+      "relatedGuides": [
+        "/netherlands/work/career/job-change-impact/"
+      ],
+      "relatedTools": [
+        "/netherlands/work/tools/job-offer-comparison/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",
-      "exampleInputs": ["Current package", "New package", "Permit dependencies"],
-      "exampleOutputs": ["Impact comparison", "Transition checklist", "Risk timeline"],
+      "exampleInputs": [
+        "Current package",
+        "New package",
+        "Permit dependencies"
+      ],
+      "exampleOutputs": [
+        "Impact comparison",
+        "Transition checklist",
+        "Risk timeline"
+      ],
       "mostUsefulFor": "Expats planning a safe job transition."
     },
     {
@@ -1649,7 +2404,7 @@
       "menuGroup": "work",
       "seo": {
         "title": "Dutch Payslip Decoder | Netherlands Salary Slip Explained",
-        "description": "Paste payslip text or upload a text-based PDF to understand Dutch bruto/netto, loonheffing, vakantiegeld, pension lines, and net pay — in memory, no storage, no OCR.",
+        "description": "Paste payslip text or upload a text-based PDF to understand Dutch bruto/netto, loonheffing, vakantiegeld, pension lines, and net pay \u2014 in memory, no storage, no OCR.",
         "keywords": [
           "Dutch payslip decoder",
           "Netherlands payslip explained",
@@ -1658,7 +2413,7 @@
           "bruto netto payslip"
         ]
       },
-      "summary": "Decode common Dutch payslip lines from pasted text or text-based PDFs — planning support only, privacy-first.",
+      "summary": "Decode common Dutch payslip lines from pasted text or text-based PDFs \u2014 planning support only, privacy-first.",
       "primaryConversion": "both",
       "relatedGuides": [
         "/netherlands/money/tax-guide-for-expats/",
@@ -1679,8 +2434,16 @@
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",
-      "exampleInputs": ["Payslip lines", "Payroll period", "Contract details"],
-      "exampleOutputs": ["Line-by-line explanation", "Potential anomalies", "Questions for payroll"],
+      "exampleInputs": [
+        "Payslip lines",
+        "Payroll period",
+        "Contract details"
+      ],
+      "exampleOutputs": [
+        "Line-by-line explanation",
+        "Potential anomalies",
+        "Questions for payroll"
+      ],
       "mostUsefulFor": "Employees trying to understand net pay changes."
     },
     {
@@ -1695,17 +2458,32 @@
       "seo": {
         "title": "Compare Payslips Tool (Coming Soon)",
         "description": "Compare two payslips and identify meaningful differences quickly.",
-        "keywords": ["compare payslips Netherlands", "payslip difference checker"]
+        "keywords": [
+          "compare payslips Netherlands",
+          "payslip difference checker"
+        ]
       },
       "summary": "Compare payslips across periods to spot meaningful differences.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/work/payroll/what-changed/"],
-      "relatedTools": ["/netherlands/work/tools/payslip-decoder/"],
+      "relatedGuides": [
+        "/netherlands/work/payroll/what-changed/"
+      ],
+      "relatedTools": [
+        "/netherlands/work/tools/payslip-decoder/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/work/tools/",
-      "exampleInputs": ["Previous payslip", "Current payslip", "Contract updates"],
-      "exampleOutputs": ["Difference map", "Likely causes", "Follow-up checklist"],
+      "exampleInputs": [
+        "Previous payslip",
+        "Current payslip",
+        "Contract updates"
+      ],
+      "exampleOutputs": [
+        "Difference map",
+        "Likely causes",
+        "Follow-up checklist"
+      ],
       "mostUsefulFor": "Employees investigating payroll changes."
     },
     {
@@ -1720,17 +2498,32 @@
       "seo": {
         "title": "Partner Work Eligibility Checker (Coming Soon)",
         "description": "Check likely partner work-right conditions for family relocation scenarios.",
-        "keywords": ["partner work eligibility Netherlands", "family visa work rights"]
+        "keywords": [
+          "partner work eligibility Netherlands",
+          "family visa work rights"
+        ]
       },
       "summary": "Check likely partner work-right conditions and constraints.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/moving-to-netherlands-with-partner/"],
-      "relatedTools": ["/netherlands/family/tools/childcare-cost-estimator/"],
+      "relatedGuides": [
+        "/netherlands/moving-to-netherlands-with-partner/"
+      ],
+      "relatedTools": [
+        "/netherlands/family/tools/childcare-cost-estimator/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/family/tools/",
-      "exampleInputs": ["Residence basis", "Partner status", "Employment intent"],
-      "exampleOutputs": ["Likely eligibility path", "Document checks", "Open questions"],
+      "exampleInputs": [
+        "Residence basis",
+        "Partner status",
+        "Employment intent"
+      ],
+      "exampleOutputs": [
+        "Likely eligibility path",
+        "Document checks",
+        "Open questions"
+      ],
       "mostUsefulFor": "Couples planning work rights before or after arrival."
     },
     {
@@ -1760,12 +2553,22 @@
         "/netherlands/money/tax-return-netherlands/",
         "/netherlands/moving-to-netherlands-with-kids/"
       ],
-      "relatedTools": ["/netherlands/money/tools/cost-of-living-calculator/"],
+      "relatedTools": [
+        "/netherlands/money/tools/cost-of-living-calculator/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/family/tools/",
-      "exampleInputs": ["Children count", "Hours needed", "Household income range"],
-      "exampleOutputs": ["Monthly estimate", "Scenario comparison", "Budget impact"],
+      "exampleInputs": [
+        "Children count",
+        "Hours needed",
+        "Household income range"
+      ],
+      "exampleOutputs": [
+        "Monthly estimate",
+        "Scenario comparison",
+        "Budget impact"
+      ],
       "mostUsefulFor": "Families planning post-arrival childcare budgets."
     },
     {
@@ -1780,7 +2583,11 @@
       "seo": {
         "title": "Exit Readiness Checker Netherlands",
         "description": "Orientation checklist for leaving the Netherlands: municipality deregistration, housing, health insurance, toeslagen, payroll, and tax records. Not legal advice.",
-        "keywords": ["exit checklist Netherlands", "leaving Netherlands readiness", "deregistration Netherlands"]
+        "keywords": [
+          "exit checklist Netherlands",
+          "leaving Netherlands readiness",
+          "deregistration Netherlands"
+        ]
       },
       "summary": "Check deregistration and closure readiness before leaving the Netherlands.",
       "primaryConversion": "signup",
@@ -1789,12 +2596,22 @@
         "/netherlands/taxes/leaving-netherlands-tax/",
         "/netherlands/moving/extensions-changes/"
       ],
-      "relatedTools": ["/netherlands/leaving/tools/repatriation-cost-calculator/"],
+      "relatedTools": [
+        "/netherlands/leaving/tools/repatriation-cost-calculator/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/leaving/tools/",
-      "exampleInputs": ["Departure timing", "Deregistration status", "Insurance and tax records"],
-      "exampleOutputs": ["Readiness band", "Pending actions", "Official next steps"],
+      "exampleInputs": [
+        "Departure timing",
+        "Deregistration status",
+        "Insurance and tax records"
+      ],
+      "exampleOutputs": [
+        "Readiness band",
+        "Pending actions",
+        "Official next steps"
+      ],
       "mostUsefulFor": "Residents preparing an organized departure."
     },
     {
@@ -1809,7 +2626,11 @@
       "seo": {
         "title": "Repatriation Cost Calculator Netherlands",
         "description": "Orientation budget ranges when leaving the Netherlands: flights, shipping, lease break risk, temporary housing, and pets. Not a mover quote.",
-        "keywords": ["repatriation cost calculator", "leaving Netherlands budget", "exit moving costs NL"]
+        "keywords": [
+          "repatriation cost calculator",
+          "leaving Netherlands budget",
+          "exit moving costs NL"
+        ]
       },
       "summary": "Estimate logistics costs for exiting the Netherlands and relocating again.",
       "primaryConversion": "both",
@@ -1818,13 +2639,26 @@
         "/netherlands/taxes/leaving-netherlands-tax/",
         "/netherlands/moving/extensions-changes/"
       ],
-      "relatedTools": ["/netherlands/leaving/tools/exit-readiness-checker/"],
+      "relatedTools": [
+        "/netherlands/leaving/tools/exit-readiness-checker/"
+      ],
       "affiliatePlacementIds": [],
-      "affiliateCategories": ["international-moving"],
+      "affiliateCategories": [
+        "international-moving"
+      ],
       "signupVariant": "default",
       "pillarCategoryRoute": "/netherlands/leaving/tools/",
-      "exampleInputs": ["Destination region", "Household size", "Shipping volume", "Temp housing"],
-      "exampleOutputs": ["Cost range", "Category breakdown", "Cash timing notes"],
+      "exampleInputs": [
+        "Destination region",
+        "Household size",
+        "Shipping volume",
+        "Temp housing"
+      ],
+      "exampleOutputs": [
+        "Cost range",
+        "Category breakdown",
+        "Cash timing notes"
+      ],
       "mostUsefulFor": "Expats planning a financially smooth departure."
     },
     {
@@ -1839,17 +2673,32 @@
       "seo": {
         "title": "AI Personal Benefits Finder (Planned)",
         "description": "AI-assisted matching for Dutch benefits and allowances by profile.",
-        "keywords": ["AI benefits finder Netherlands", "expat allowances AI"]
+        "keywords": [
+          "AI benefits finder Netherlands",
+          "expat allowances AI"
+        ]
       },
       "summary": "AI-assisted discovery of potentially relevant benefits and allowances.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/money/"],
-      "relatedTools": ["/netherlands/taxes/tools/healthcare-allowance-estimator/"],
+      "relatedGuides": [
+        "/netherlands/money/"
+      ],
+      "relatedTools": [
+        "/netherlands/taxes/tools/healthcare-allowance-estimator/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "advanced",
       "pillarCategoryRoute": "/netherlands/tools/advanced/",
-      "exampleInputs": ["Household profile", "Income context", "Residence status"],
-      "exampleOutputs": ["Possible benefit matches", "Eligibility confidence", "Next checks"],
+      "exampleInputs": [
+        "Household profile",
+        "Income context",
+        "Residence status"
+      ],
+      "exampleOutputs": [
+        "Possible benefit matches",
+        "Eligibility confidence",
+        "Next checks"
+      ],
       "mostUsefulFor": "Users wanting AI-assisted opportunity discovery."
     },
     {
@@ -1864,17 +2713,32 @@
       "seo": {
         "title": "Insurance Coverage Gap Detector (Planned)",
         "description": "AI-powered detection of likely insurance coverage gaps.",
-        "keywords": ["insurance gap detector", "AI insurance checker Netherlands"]
+        "keywords": [
+          "insurance gap detector",
+          "AI insurance checker Netherlands"
+        ]
       },
       "summary": "Detect potential insurance coverage gaps with AI pattern analysis.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/money/insurance/"],
-      "relatedTools": ["/netherlands/health/tools/insurance-comparison-tool/"],
+      "relatedGuides": [
+        "/netherlands/money/insurance/"
+      ],
+      "relatedTools": [
+        "/netherlands/health/tools/insurance-comparison-tool/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "advanced",
       "pillarCategoryRoute": "/netherlands/tools/advanced/",
-      "exampleInputs": ["Current policies", "Household profile", "Risk preferences"],
-      "exampleOutputs": ["Gap map", "Priority fixes", "Provider comparison prompts"],
+      "exampleInputs": [
+        "Current policies",
+        "Household profile",
+        "Risk preferences"
+      ],
+      "exampleOutputs": [
+        "Gap map",
+        "Priority fixes",
+        "Provider comparison prompts"
+      ],
       "mostUsefulFor": "Users optimizing insurance coverage confidence."
     },
     {
@@ -1889,17 +2753,32 @@
       "seo": {
         "title": "Rental Deposit Dispute Tool (Planned)",
         "description": "AI-assisted evidence and response drafting for deposit disputes.",
-        "keywords": ["deposit dispute tool", "rental dispute AI Netherlands"]
+        "keywords": [
+          "deposit dispute tool",
+          "rental dispute AI Netherlands"
+        ]
       },
       "summary": "Help organize evidence and draft structured dispute responses.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/housing/rental-contracts-and-deposits-netherlands/"],
-      "relatedTools": ["/netherlands/housing/tools/deposit-return-risk-checker/"],
+      "relatedGuides": [
+        "/netherlands/housing/rental-contracts-and-deposits-netherlands/"
+      ],
+      "relatedTools": [
+        "/netherlands/housing/tools/deposit-return-risk-checker/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "advanced",
       "pillarCategoryRoute": "/netherlands/tools/advanced/",
-      "exampleInputs": ["Check-in/out reports", "Photos", "Landlord messages"],
-      "exampleOutputs": ["Evidence timeline", "Draft response", "Escalation checklist"],
+      "exampleInputs": [
+        "Check-in/out reports",
+        "Photos",
+        "Landlord messages"
+      ],
+      "exampleOutputs": [
+        "Evidence timeline",
+        "Draft response",
+        "Escalation checklist"
+      ],
       "mostUsefulFor": "Renters handling contested deposit returns."
     },
     {
@@ -1914,17 +2793,32 @@
       "seo": {
         "title": "Green Retrofit Planner (Planned)",
         "description": "AI planner for home efficiency upgrades and expected cost-impact tradeoffs.",
-        "keywords": ["green retrofit planner Netherlands", "home efficiency AI tool"]
+        "keywords": [
+          "green retrofit planner Netherlands",
+          "home efficiency AI tool"
+        ]
       },
       "summary": "Plan home-efficiency upgrades with AI-assisted prioritization.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/living/energy-and-water/"],
-      "relatedTools": ["/netherlands/living/tools/utilities-services-comparison/"],
+      "relatedGuides": [
+        "/netherlands/utilities/energy-and-water-netherlands/"
+      ],
+      "relatedTools": [
+        "/netherlands/living/tools/utilities-services-comparison/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "advanced",
       "pillarCategoryRoute": "/netherlands/tools/advanced/",
-      "exampleInputs": ["Home type", "Energy usage", "Budget cap"],
-      "exampleOutputs": ["Upgrade sequence", "Estimated savings", "Implementation checklist"],
+      "exampleInputs": [
+        "Home type",
+        "Energy usage",
+        "Budget cap"
+      ],
+      "exampleOutputs": [
+        "Upgrade sequence",
+        "Estimated savings",
+        "Implementation checklist"
+      ],
       "mostUsefulFor": "Households aiming to reduce energy cost over time."
     },
     {
@@ -1939,17 +2833,32 @@
       "seo": {
         "title": "Hidden Compensation Finder (Planned)",
         "description": "AI finder for overlooked compensation components in offers and contracts.",
-        "keywords": ["hidden compensation finder", "AI job offer analysis"]
+        "keywords": [
+          "hidden compensation finder",
+          "AI job offer analysis"
+        ]
       },
       "summary": "Use AI to uncover often-overlooked compensation value components.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/work/benefits/"],
-      "relatedTools": ["/netherlands/work/tools/compensation-comparison-tool/"],
+      "relatedGuides": [
+        "/netherlands/work/benefits/"
+      ],
+      "relatedTools": [
+        "/netherlands/work/tools/compensation-comparison-tool/"
+      ],
       "affiliatePlacementIds": [],
       "signupVariant": "advanced",
       "pillarCategoryRoute": "/netherlands/tools/advanced/",
-      "exampleInputs": ["Offer letters", "Benefit docs", "Policy references"],
-      "exampleOutputs": ["Potential hidden value", "Clarifying questions", "Negotiation cues"],
+      "exampleInputs": [
+        "Offer letters",
+        "Benefit docs",
+        "Policy references"
+      ],
+      "exampleOutputs": [
+        "Potential hidden value",
+        "Clarifying questions",
+        "Negotiation cues"
+      ],
       "mostUsefulFor": "Candidates optimizing compensation decisions."
     },
     {
@@ -1964,11 +2873,17 @@
       "seo": {
         "title": "Expat Visa Risk + Tax Navigator (Planned)",
         "description": "AI navigator that links work, visa and tax risk scenarios together.",
-        "keywords": ["visa tax risk tool", "AI expat risk navigator"]
+        "keywords": [
+          "visa tax risk tool",
+          "AI expat risk navigator"
+        ]
       },
       "summary": "Connect visa, tax and employment changes into one risk map.",
       "primaryConversion": "signup",
-      "relatedGuides": ["/netherlands/moving/visas-residency/", "/netherlands/money/taxes/"],
+      "relatedGuides": [
+        "/netherlands/moving/visas-residency/",
+        "/netherlands/money/taxes/"
+      ],
       "relatedTools": [
         "/netherlands/work/tools/job-change-impact-simulator/",
         "/netherlands/taxes/tools/double-tax-awareness-tool/"
@@ -1976,8 +2891,16 @@
       "affiliatePlacementIds": [],
       "signupVariant": "advanced",
       "pillarCategoryRoute": "/netherlands/tools/advanced/",
-      "exampleInputs": ["Current permit", "Planned role change", "Cross-border income details"],
-      "exampleOutputs": ["Combined risk graph", "Priority checks", "Suggested action plan"],
+      "exampleInputs": [
+        "Current permit",
+        "Planned role change",
+        "Cross-border income details"
+      ],
+      "exampleOutputs": [
+        "Combined risk graph",
+        "Priority checks",
+        "Suggested action plan"
+      ],
       "mostUsefulFor": "Expats managing complex multi-domain changes."
     }
   ]

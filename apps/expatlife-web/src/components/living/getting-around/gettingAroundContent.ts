@@ -476,25 +476,7 @@ export const GETTING_AROUND_CYCLING_GUIDE_CARDS: GettingAroundCyclingGuideCard[]
       [
         {
           kind: "text",
-          text: "Subscription bikes (e.g. Swapfiets) or a simple omafiets from a reputable shop are normal first choices—upgrade once you know your commute shape. For depth, open ",
-        },
-        {
-          kind: "link",
-          text: "Cycling",
-          href: "/netherlands/living/cycling-netherlands/",
-        },
-        {
-          kind: "text",
-          text: " for ownership and rules, or ",
-        },
-        {
-          kind: "link",
-          text: "Bike sharing",
-          href: "/netherlands/living/bike-sharing-netherlands/",
-        },
-        {
-          kind: "text",
-          text: " for subscription and OV-fiets fleets.",
+          text: "Subscription bikes (e.g. Swapfiets) or a simple omafiets from a reputable shop are normal first choices—upgrade once you know your commute shape. Deeper cycling and bike-sharing guides will expand this section when they go live—until then stay on this Getting around hub for the multimodal mental model.",
         },
       ],
     ],

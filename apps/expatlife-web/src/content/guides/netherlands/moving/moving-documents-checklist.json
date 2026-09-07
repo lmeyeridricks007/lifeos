@@ -1,6 +1,6 @@
 {
   "slug": "moving-documents-checklist",
-  "path": "/netherlands/moving-documents-checklist/",
+  "path": "/netherlands/document-readiness-checker/",
   "title": "Moving Documents Checklist for the Netherlands",
   "breadcrumbLabel": "Documents Checklist",
   "subtitle": "A practical checklist of documents many expats prepare before moving to the Netherlands.",
@@ -178,7 +178,7 @@
   "featuredTools": [
     {
       "label": "Check Document Readiness",
-      "href": "/netherlands/moving/tools/document-readiness/"
+      "href": "/netherlands/document-readiness-checker/"
     },
     {
       "label": "Generate a Moving Checklist",
@@ -192,24 +192,24 @@
   "toolCtas": [
     {
       "label": "Check Document Readiness",
-      "href": "/netherlands/moving/tools/document-readiness/"
+      "href": "/netherlands/document-readiness-checker/"
     }
   ],
   "exampleScenarios": [
     {
       "title": "Moving for work",
       "summary": "Work-based relocations often require employment documents, identity records, and housing confirmations.",
-      "href": "/netherlands/moving/tools/document-readiness/?scenario=work"
+      "href": "/netherlands/document-readiness-checker/?scenario=work"
     },
     {
       "title": "Moving with family",
       "summary": "Family relocations often require additional civil records such as marriage and birth certificates.",
-      "href": "/netherlands/moving/tools/document-readiness/?scenario=family"
+      "href": "/netherlands/document-readiness-checker/?scenario=family"
     },
     {
       "title": "Unsure what documents are missing",
       "summary": "Many expats use a readiness tool to identify missing documents before the move.",
-      "href": "/netherlands/moving/tools/document-readiness/"
+      "href": "/netherlands/document-readiness-checker/"
     }
   ],
   "internalLinks": {
@@ -224,11 +224,11 @@
     "related": [
       {
         "label": "Documents Needed to Move to the Netherlands",
-        "href": "/netherlands/documents-needed-to-move-netherlands/"
+        "href": "/netherlands/document-readiness-checker/"
       },
       {
         "label": "Visa Documents Netherlands",
-        "href": "/netherlands/visa-documents-netherlands/"
+        "href": "/netherlands/document-readiness-checker/"
       },
       {
         "label": "Document Translation Netherlands",

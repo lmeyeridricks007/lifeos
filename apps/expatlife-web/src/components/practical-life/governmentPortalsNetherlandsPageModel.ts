@@ -1121,6 +1121,12 @@ export const governmentPortalsNetherlandsPage = {
   ],
   relatedGuides: [
     {
+      label: "Government portals overview",
+      href: "/netherlands/living/government-portals-overview/",
+      status: "live",
+      description: "Living-cluster map of which Dutch portals own which post-arrival tasks.",
+    },
+    {
       label: "DigiD in the Netherlands",
       href: DIGID_NETHERLANDS_PATH,
       status: "live",

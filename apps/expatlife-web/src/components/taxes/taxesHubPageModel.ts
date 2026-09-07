@@ -89,7 +89,7 @@ export const taxesHubPage = {
   taxTopics: [
     {
       label: "Expat Taxes in the Netherlands",
-      href: "/netherlands/taxes/expat-taxes-netherlands/",
+      href: "/netherlands/money/expat-taxes-netherlands/",
       status: "live",
       description: "A practical pillar guide for tax residency, income tax, payroll, returns and cross-border topics.",
     },
@@ -281,7 +281,7 @@ export const taxesHubPage = {
       status: "live",
       description: "Compare tax advisors, expat accountants and international tax specialists.",
     },
-    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "live", description: "Accounting support for returns, business or cross-border situations." },
+    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "comingSoon", description: "Accounting support for returns, business or cross-border situations." },
     { label: "Payroll providers", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Employer and business payroll support." },
     { label: "Bookkeeping services", href: "/netherlands/services/bookkeeping/", status: "comingSoon", description: "Records and bookkeeping for freelancers and small businesses." },
     { label: "Business setup services", href: "/netherlands/services/business-registration/", status: "comingSoon", description: "Registration and setup help for entrepreneurs." },
@@ -292,7 +292,7 @@ export const taxesHubPage = {
   relatedGuides: [
     { label: "Taxes After Moving to the Netherlands", href: "/netherlands/taxes/taxes-after-moving-netherlands/" },
     { label: "Taxes When Leaving the Netherlands", href: "/netherlands/taxes/leaving-netherlands-tax/" },
-    { label: "Expat Taxes in the Netherlands", href: "/netherlands/taxes/expat-taxes-netherlands/" },
+    { label: "Expat Taxes in the Netherlands", href: "/netherlands/money/expat-taxes-netherlands/" },
     { label: "Foreign Income in the Netherlands", href: "/netherlands/taxes/foreign-income-netherlands/" },
     { label: "Double Taxation in the Netherlands", href: "/netherlands/taxes/double-taxation-netherlands/" },
     { label: "Moving to the Netherlands", href: "/netherlands/moving-to-the-netherlands/" },
@@ -311,7 +311,7 @@ export const taxesHubPage = {
   exploreNextCards: [
     { label: "Taxes After Moving to the Netherlands", href: "/netherlands/taxes/taxes-after-moving-netherlands/", description: "Start with the first tax steps, payroll, residency, allowances and annual return basics after relocation." },
     { label: "Taxes When Leaving the Netherlands", href: "/netherlands/taxes/leaving-netherlands-tax/", description: "Understand exit-year tax considerations, deregistration, final returns, pensions and allowance changes." },
-    { label: "Expat Taxes in the Netherlands", href: "/netherlands/taxes/expat-taxes-netherlands/", description: "Understand Dutch taxes through the situations expats most often face." },
+    { label: "Expat Taxes in the Netherlands", href: "/netherlands/money/expat-taxes-netherlands/", description: "Understand Dutch taxes through the situations expats most often face." },
     { label: "Foreign Income in the Netherlands", href: "/netherlands/taxes/foreign-income-netherlands/", description: "Understand overseas income, remote work and cross-border reporting awareness." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", description: "Understand the expat tax facility and eligibility context." },
     { label: "Tax Returns", href: "/netherlands/money/tax-return-netherlands/", description: "Prepare for annual filing and common expat return triggers." },

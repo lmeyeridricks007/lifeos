@@ -490,26 +490,26 @@ export const cvNetherlandsPage = {
       status: "live",
       description: "Where and how expats search: platforms, recruiters, sponsorship and city demand.",
     },
-    { label: "Recruitment Agencies Netherlands", href: "/netherlands/jobs/recruitment-agencies-netherlands/", status: "live", description: "Agency channel for Dutch roles after CV localisation." },
-    { label: "English Speaking Jobs Netherlands", href: "/netherlands/jobs/english-speaking-jobs-netherlands/", status: "live", description: "English-friendly market lane to target with your CV." },
-    { label: "Remote Work Netherlands", href: "/netherlands/jobs/remote-work-netherlands/", status: "live", description: "Remote and hybrid employment norms for Dutch roles." },
+    { label: "Recruitment Agencies Netherlands", href: "/netherlands/jobs/recruitment-agencies-netherlands/", status: "comingSoon", description: "Agency channel for Dutch roles after CV localisation." },
+    { label: "English Speaking Jobs Netherlands", href: "/netherlands/jobs/english-speaking-jobs-netherlands/", status: "comingSoon", description: "English-friendly market lane to target with your CV." },
+    { label: "Remote Work Netherlands", href: "/netherlands/jobs/remote-work-netherlands/", status: "comingSoon", description: "Remote and hybrid employment norms for Dutch roles." },
 
     {
       label: "Cover Letter Netherlands",
       href: "/netherlands/jobs/cover-letter-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Dutch motivatiebrief norms when applications require a letter beyond the CV.",
     },
     {
       label: "LinkedIn Netherlands",
       href: "/netherlands/jobs/linkedin-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Profile, Open to Work, messaging recruiters and Dutch LinkedIn norms for job search.",
     },
     {
       label: "Networking Netherlands",
       href: "/netherlands/jobs/networking-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Events, communities, referrals and Dutch directness in professional outreach.",
     },
     {
@@ -605,13 +605,13 @@ export const cvNetherlandsPage = {
     {
       label: "Cover Letter",
       href: "/netherlands/jobs/cover-letter-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Dutch motivatiebrief when vacancies still ask for a letter.",
     },
     {
       label: "LinkedIn Netherlands",
       href: "/netherlands/jobs/linkedin-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Profile and Open to Work aligned with your Dutch CV.",
     },
     {
@@ -771,13 +771,13 @@ export const cvNetherlandsPage = {
     {
       label: "Cover Letter Netherlands",
       href: "/netherlands/jobs/cover-letter-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Dutch motivatiebrief when applications require a letter.",
     },
     {
       label: "LinkedIn Netherlands",
       href: "/netherlands/jobs/linkedin-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Align LinkedIn with your Dutch CV and target roles.",
     },
     {
@@ -789,7 +789,7 @@ export const cvNetherlandsPage = {
     {
       label: "Networking Netherlands",
       href: "/netherlands/jobs/networking-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Referrals and community outreach while applications run.",
     },
     {

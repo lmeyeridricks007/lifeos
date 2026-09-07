@@ -153,7 +153,7 @@
     },
     {
       "label": "Check Document Readiness",
-      "href": "/netherlands/moving/tools/document-readiness/"
+      "href": "/netherlands/document-readiness-checker/"
     }
   ],
   "exampleScenarios": [
@@ -165,7 +165,7 @@
     {
       "title": "Documents before you pack",
       "summary": "Match civil records, translations, and legalization to your route using the full documents guide.",
-      "href": "/netherlands/documents-needed-to-move-netherlands/"
+      "href": "/netherlands/document-readiness-checker/"
     },
     {
       "title": "Printable checklist companion",
@@ -189,7 +189,7 @@
       },
       {
         "label": "Documents Needed to Move to the Netherlands",
-        "href": "/netherlands/documents-needed-to-move-netherlands/"
+        "href": "/netherlands/document-readiness-checker/"
       },
       {
         "label": "First 30 Days in the Netherlands",

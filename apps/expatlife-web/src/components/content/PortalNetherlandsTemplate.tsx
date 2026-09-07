@@ -63,7 +63,7 @@ function resolveToolHref(
   if (item.href) return item.href;
   if (item.hrefKey === "checklist") return originToChecklistRoute(originSlug);
   if (item.hrefKey === "documentReadiness")
-    return `/netherlands/moving/tools/document-readiness?from=${originSlug}`;
+    return `/netherlands/document-readiness-checker?from=${originSlug}`;
   if (item.hrefKey === "first90Days")
     return `/netherlands/moving/tools/first-90-days?from=${originSlug}`;
   return "#";

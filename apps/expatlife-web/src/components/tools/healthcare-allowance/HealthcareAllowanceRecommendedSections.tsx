@@ -131,7 +131,7 @@ export function HealthcareAllowanceRecommendedSections({ bundles }: { bundles: H
             Moving to the Netherlands
           </Link>
           ,{" "}
-          <Link href="/netherlands/settling-in-netherlands/" className="font-semibold text-copilot-primary hover:underline">
+          <Link href="/netherlands/after-arriving-netherlands/" className="font-semibold text-copilot-primary hover:underline">
             Settling in the Netherlands
           </Link>
           , and{" "}

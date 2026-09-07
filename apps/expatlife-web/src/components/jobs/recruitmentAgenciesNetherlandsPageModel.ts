@@ -595,7 +595,7 @@ export const recruitmentAgenciesNetherlandsPage = {
     {
       label: "Recruitment Agencies Directory",
       href: "/netherlands/services/recruitment-agencies/",
-      status: "live",
+      status: "comingSoon",
       description: "Services directory: compare agency provider types, models and fit — not the job-seeker channel how-to.",
     },
     {
@@ -619,7 +619,7 @@ export const recruitmentAgenciesNetherlandsPage = {
     {
       label: "Networking Netherlands",
       href: "/netherlands/jobs/networking-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Events, communities and warm intros beyond agency pipelines.",
     },
 
@@ -902,7 +902,7 @@ export const recruitmentAgenciesNetherlandsPage = {
     {
       label: "Recruitment Agencies Directory",
       href: "/netherlands/services/recruitment-agencies/",
-      status: "live",
+      status: "comingSoon",
       description: "Compare recruitment agency providers as a services directory.",
     },
     {
@@ -932,7 +932,7 @@ export const recruitmentAgenciesNetherlandsPage = {
     {
       label: "Networking Netherlands",
       href: "/netherlands/jobs/networking-netherlands/",
-      status: "live",
+      status: "comingSoon",
       description: "Relationship habits beyond recruiter pipelines.",
     },
 

@@ -314,7 +314,7 @@ export const taxesAfterMovingNetherlandsPage = {
     { q: "What if I moved mid-year?", a: "Build a timeline of arrival, workdays, salary periods, registration and foreign income records." },
   ],
   relatedGuides: [
-    { label: "Expat Taxes Netherlands", href: "/netherlands/taxes/expat-taxes-netherlands/", description: "The broader expat tax foundation for the Netherlands." },
+    { label: "Expat Taxes Netherlands", href: "/netherlands/money/expat-taxes-netherlands/", description: "The broader expat tax foundation for the Netherlands." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", description: "Understand the expat tax facility and eligibility context." },
     { label: "Payroll Tax Netherlands", href: "/netherlands/taxes/payroll-tax-netherlands/", description: "Learn how payroll tax and withholding affect salary." },
     { label: "Foreign Income Netherlands", href: "/netherlands/taxes/foreign-income-netherlands/", description: "Understand overseas income, remote work and cross-border reporting awareness." },
@@ -348,7 +348,7 @@ export const taxesAfterMovingNetherlandsPage = {
     "Tax residency, reporting obligations and allowances depend on personal circumstances and may change over time. Use official sources and professional advice for personal decisions.",
   relatedFooterGuides: [
     { label: "Netherlands Taxes Hub", href: "/netherlands/taxes/", description: "Start with the main Dutch tax hub." },
-    { label: "Expat Taxes Netherlands", href: "/netherlands/taxes/expat-taxes-netherlands/", description: "Understand the broader tax system for expats." },
+    { label: "Expat Taxes Netherlands", href: "/netherlands/money/expat-taxes-netherlands/", description: "Understand the broader tax system for expats." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", description: "Review the expat tax facility." },
     { label: "Foreign Income Netherlands", href: "/netherlands/taxes/foreign-income-netherlands/", description: "Handle cross-border income questions." },
     { label: "Double Taxation Netherlands", href: "/netherlands/taxes/double-taxation-netherlands/", description: "Learn treaty and double-taxation concepts." },
@@ -356,7 +356,7 @@ export const taxesAfterMovingNetherlandsPage = {
     { label: "Healthcare in the Netherlands", href: "/netherlands/healthcare/", description: "Understand healthcare after arrival." },
   ] satisfies TaxesAfterMovingNetherlandsLink[],
   exploreNextCards: [
-    { label: "Expat Taxes", href: "/netherlands/taxes/expat-taxes-netherlands/", description: "Build your full Dutch tax foundation." },
+    { label: "Expat Taxes", href: "/netherlands/money/expat-taxes-netherlands/", description: "Build your full Dutch tax foundation." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", description: "Check the expat facility context." },
     { label: "Healthcare Allowance", href: "/netherlands/taxes/healthcare-allowance-netherlands/", description: "Learn about healthcare benefit eligibility.", status: "live" },
     { label: "Foreign Income", href: "/netherlands/taxes/foreign-income-netherlands/", description: "Review overseas income and remote work." },

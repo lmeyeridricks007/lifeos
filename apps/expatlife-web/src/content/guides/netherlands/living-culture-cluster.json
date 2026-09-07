@@ -35,9 +35,21 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub for day-one systems." },
-        { "label": "Essential apps (Living)", "href": "/netherlands/living/apps/", "description": "Travel stack beside banking and maps." },
-        { "label": "Transport tools hub", "href": "/netherlands/transport/tools/", "description": "Calculators and related transport tools." }
+        {
+          "label": "Netherlands Survival Guide",
+          "href": "/netherlands/living/survival-guide/",
+          "description": "Wider Living hub for day-one systems."
+        },
+        {
+          "label": "Essential apps (Living)",
+          "href": "/netherlands/living/apps/",
+          "description": "Travel stack beside banking and maps."
+        },
+        {
+          "label": "Transport tools hub",
+          "href": "/netherlands/transport/tools/",
+          "description": "Calculators and related transport tools."
+        }
       ]
     },
     {
@@ -57,8 +69,16 @@
       "canonicalGuidePath": "/netherlands/housing/",
       "canonicalLabel": "Housing hub (full guides)",
       "related": [
-        { "label": "Renting in the Netherlands", "href": "/netherlands/renting-in-the-netherlands/", "description": "Pillar overview of the rental journey." },
-        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/", "description": "Registration, documents, and first steps." }
+        {
+          "label": "Renting in the Netherlands",
+          "href": "/netherlands/renting-in-the-netherlands/",
+          "description": "Pillar overview of the rental journey."
+        },
+        {
+          "label": "Moving to the Netherlands",
+          "href": "/netherlands/moving-to-the-netherlands/",
+          "description": "Registration, documents, and first steps."
+        }
       ]
     },
     {
@@ -78,8 +98,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Finding an apartment", "href": "/netherlands/finding-apartment-netherlands/", "description": "Search tactics and platforms." },
-        { "label": "Temporary housing", "href": "/netherlands/temporary-housing-netherlands/", "description": "Bridge options while you search." }
+        {
+          "label": "Finding an apartment",
+          "href": "/netherlands/finding-apartment-netherlands/",
+          "description": "Search tactics and platforms."
+        },
+        {
+          "label": "Temporary housing",
+          "href": "/netherlands/temporary-housing-netherlands/",
+          "description": "Bridge options while you search."
+        }
       ]
     },
     {
@@ -96,11 +124,19 @@
       "menuVisible": true,
       "navGroup": "housing",
       "intro": "Your rental address ties into BRP registration and post—this page frames the housing side; official registration steps live under Move.",
-      "canonicalGuidePath": "/netherlands/register-address-netherlands/",
+      "canonicalGuidePath": "/netherlands/practical-life/registering-your-address-netherlands/",
       "canonicalLabel": "Register address (official flow)",
       "related": [
-        { "label": "Municipality registration", "href": "/netherlands/municipality-registration-netherlands/", "description": "BRP, BSN, and gemeente steps." },
-        { "label": "Registering address (rental)", "href": "/netherlands/registering-address-rental/", "description": "Rental-specific address notes." }
+        {
+          "label": "Municipality registration",
+          "href": "/netherlands/municipality-registration-netherlands/",
+          "description": "BRP, BSN, and gemeente steps."
+        },
+        {
+          "label": "Registering address (rental)",
+          "href": "/netherlands/registering-address-rental/",
+          "description": "Rental-specific address notes."
+        }
       ]
     },
     {
@@ -120,9 +156,21 @@
       "canonicalGuidePath": "/netherlands/housing/rental-contracts-and-deposits-netherlands/",
       "canonicalLabel": "Rental contracts and deposits guide",
       "related": [
-        { "label": "Renting in the Netherlands", "href": "/netherlands/housing/renting-in-the-netherlands/", "description": "Full rental pillar for expats." },
-        { "label": "Housing costs", "href": "/netherlands/housing/housing-costs-netherlands/", "description": "Rent, utilities and city comparisons." },
-        { "label": "Registering your address", "href": "/netherlands/practical-life/registering-your-address-netherlands/", "description": "Gemeente registration after move-in." }
+        {
+          "label": "Renting in the Netherlands",
+          "href": "/netherlands/housing/renting-in-the-netherlands/",
+          "description": "Full rental pillar for expats."
+        },
+        {
+          "label": "Housing costs",
+          "href": "/netherlands/housing/housing-costs-netherlands/",
+          "description": "Rent, utilities and city comparisons."
+        },
+        {
+          "label": "Registering your address",
+          "href": "/netherlands/practical-life/registering-your-address-netherlands/",
+          "description": "Gemeente registration after move-in."
+        }
       ]
     },
     {
@@ -142,8 +190,16 @@
       "canonicalGuidePath": "/netherlands/housing/housing-costs-netherlands/",
       "canonicalLabel": "Housing costs guide",
       "related": [
-        { "label": "Rent allowance", "href": "/netherlands/taxes/rent-allowance-netherlands/", "description": "Huurtoeslag basics (Money)." },
-        { "label": "Buy vs rent", "href": "/netherlands/housing/buy-vs-rent-netherlands/", "description": "Longer-term housing decision guide." }
+        {
+          "label": "Rent allowance",
+          "href": "/netherlands/taxes/rent-allowance-netherlands/",
+          "description": "Huurtoeslag basics (Money)."
+        },
+        {
+          "label": "Buy vs rent",
+          "href": "/netherlands/housing/buy-vs-rent-netherlands/",
+          "description": "Longer-term housing decision guide."
+        }
       ]
     },
     {
@@ -163,8 +219,16 @@
       "canonicalGuidePath": "/netherlands/utilities/utilities-netherlands/",
       "canonicalLabel": "Utilities guide",
       "related": [
-        { "label": "Electricity providers", "href": "/netherlands/electricity-providers-netherlands/", "description": "Compare supplier models." },
-        { "label": "Internet providers", "href": "/netherlands/internet-providers-netherlands/", "description": "Home broadband and fiber." }
+        {
+          "label": "Electricity providers",
+          "href": "/netherlands/electricity-providers-netherlands/",
+          "description": "Compare supplier models."
+        },
+        {
+          "label": "Internet providers",
+          "href": "/netherlands/internet-providers-netherlands/",
+          "description": "Home broadband and fiber."
+        }
       ]
     },
     {
@@ -184,8 +248,16 @@
       "canonicalGuidePath": "/netherlands/utilities/energy-and-water-netherlands/",
       "canonicalLabel": "Energy and water guide",
       "related": [
-        { "label": "Utilities overview", "href": "/netherlands/utilities/utilities-netherlands/", "description": "Complete utilities setup guide." },
-        { "label": "Electricity providers", "href": "/netherlands/electricity-providers-netherlands/", "description": "Services directory slice." }
+        {
+          "label": "Utilities overview",
+          "href": "/netherlands/utilities/utilities-netherlands/",
+          "description": "Complete utilities setup guide."
+        },
+        {
+          "label": "Electricity providers",
+          "href": "/netherlands/electricity-providers-netherlands/",
+          "description": "Services directory slice."
+        }
       ]
     },
     {
@@ -205,8 +277,16 @@
       "canonicalGuidePath": "/netherlands/utilities/internet-and-mobile-netherlands/",
       "canonicalLabel": "Internet and Mobile in the Netherlands",
       "related": [
-        { "label": "Utilities overview", "href": "/netherlands/utilities/utilities-netherlands/", "description": "Complete utilities setup guide." },
-        { "label": "Energy and water", "href": "/netherlands/utilities/energy-and-water-netherlands/", "description": "Electricity, gas and water setup." }
+        {
+          "label": "Utilities overview",
+          "href": "/netherlands/utilities/utilities-netherlands/",
+          "description": "Complete utilities setup guide."
+        },
+        {
+          "label": "Energy and water",
+          "href": "/netherlands/utilities/energy-and-water-netherlands/",
+          "description": "Electricity, gas and water setup."
+        }
       ]
     },
     {
@@ -226,9 +306,21 @@
       "canonicalGuidePath": "/netherlands/practical-life/municipality-services-netherlands/",
       "canonicalLabel": "Municipality Services in the Netherlands",
       "related": [
-        { "label": "BSN registration", "href": "/netherlands/bsn-registration/", "description": "Registration and BSN setup after arrival." },
-        { "label": "DigiD awareness", "href": "/netherlands/digid-awareness/", "description": "Login used for many gemeente tasks." },
-        { "label": "Utilities overview", "href": "/netherlands/utilities/utilities-netherlands/", "description": "Energy, water, internet and waste setup." }
+        {
+          "label": "BSN registration",
+          "href": "/netherlands/bsn-registration/",
+          "description": "Registration and BSN setup after arrival."
+        },
+        {
+          "label": "DigiD awareness",
+          "href": "/netherlands/digid-awareness/",
+          "description": "Login used for many gemeente tasks."
+        },
+        {
+          "label": "Utilities overview",
+          "href": "/netherlands/utilities/utilities-netherlands/",
+          "description": "Energy, water, internet and waste setup."
+        }
       ]
     },
     {
@@ -248,9 +340,21 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Social norms, directness, and everyday etiquette." },
-        { "label": "Culture hub", "href": "/netherlands/culture/", "description": "Norms, traditions, and social cues." },
-        { "label": "Settling in", "href": "/netherlands/settling-in-netherlands/", "description": "Broader post-arrival checklist." }
+        {
+          "label": "Dutch Culture & Etiquette",
+          "href": "/netherlands/life/dutch-etiquette/",
+          "description": "Social norms, directness, and everyday etiquette."
+        },
+        {
+          "label": "Culture hub",
+          "href": "/netherlands/culture/",
+          "description": "Norms, traditions, and social cues."
+        },
+        {
+          "label": "Settling in",
+          "href": "/netherlands/after-arriving-netherlands/",
+          "description": "Broader post-arrival checklist."
+        }
       ]
     },
     {
@@ -270,10 +374,26 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub for first-week priorities and everyday systems." },
-        { "label": "Daily life basics", "href": "/netherlands/living/daily-life/", "description": "The broader routine around shops, parcels, and payments." },
-        { "label": "Essential apps", "href": "/netherlands/living/apps/", "description": "Supermarket apps, delivery, maps, and payment tools." },
-        { "label": "Cost of living calculator", "href": "/netherlands/money/tools/cost-of-living-calculator/", "description": "Put grocery and household habits inside a monthly budget." }
+        {
+          "label": "Netherlands Survival Guide",
+          "href": "/netherlands/living/survival-guide/",
+          "description": "Wider Living hub for first-week priorities and everyday systems."
+        },
+        {
+          "label": "Daily life basics",
+          "href": "/netherlands/living/daily-life/",
+          "description": "The broader routine around shops, parcels, and payments."
+        },
+        {
+          "label": "Essential apps",
+          "href": "/netherlands/living/apps/",
+          "description": "Supermarket apps, delivery, maps, and payment tools."
+        },
+        {
+          "label": "Cost of living calculator",
+          "href": "/netherlands/money/tools/cost-of-living-calculator/",
+          "description": "Put grocery and household habits inside a monthly budget."
+        }
       ]
     },
     {
@@ -293,10 +413,26 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub for first-week priorities and everyday systems." },
-        { "label": "Health insurance in the Netherlands", "href": "/netherlands/health-insurance-netherlands/", "description": "Go deeper on the insurance side of the system." },
-        { "label": "Healthcare allowance estimator", "href": "/netherlands/taxes/tools/healthcare-allowance-estimator/", "description": "Plan whether allowance support may help with premiums." },
-        { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/", "description": "Place healthcare setup inside the broader arrival timeline." }
+        {
+          "label": "Netherlands Survival Guide",
+          "href": "/netherlands/living/survival-guide/",
+          "description": "Wider Living hub for first-week priorities and everyday systems."
+        },
+        {
+          "label": "Health insurance in the Netherlands",
+          "href": "/netherlands/health-insurance-netherlands/",
+          "description": "Go deeper on the insurance side of the system."
+        },
+        {
+          "label": "Healthcare allowance estimator",
+          "href": "/netherlands/taxes/tools/healthcare-allowance-estimator/",
+          "description": "Plan whether allowance support may help with premiums."
+        },
+        {
+          "label": "First 90 Days in the Netherlands",
+          "href": "/netherlands/first-90-days-netherlands/",
+          "description": "Place healthcare setup inside the broader arrival timeline."
+        }
       ]
     },
     {
@@ -316,10 +452,26 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub for first-week priorities." },
-        { "label": "Daily life basics", "href": "/netherlands/living/daily-life/", "description": "Routines, errands, and household systems." },
-        { "label": "Getting around", "href": "/netherlands/living/getting-around/", "description": "Public-space rhythm and transport context." },
-        { "label": "Dutch workplace culture", "href": "/netherlands/jobs/dutch-workplace-culture/", "description": "Work-focused companion." }
+        {
+          "label": "Netherlands Survival Guide",
+          "href": "/netherlands/living/survival-guide/",
+          "description": "Wider Living hub for first-week priorities."
+        },
+        {
+          "label": "Daily life basics",
+          "href": "/netherlands/living/daily-life/",
+          "description": "Routines, errands, and household systems."
+        },
+        {
+          "label": "Getting around",
+          "href": "/netherlands/living/getting-around/",
+          "description": "Public-space rhythm and transport context."
+        },
+        {
+          "label": "Dutch workplace culture",
+          "href": "/netherlands/jobs/dutch-workplace-culture/",
+          "description": "Work-focused companion."
+        }
       ]
     },
     {
@@ -339,11 +491,31 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub for first-week priorities." },
-        { "label": "Daily life basics", "href": "/netherlands/living/daily-life/", "description": "The everyday routines where these phrases show up." },
-        { "label": "Getting around", "href": "/netherlands/living/getting-around/", "description": "Transport contexts where short Dutch helps quickly." },
-        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "The social context behind greetings, directness, and short exchanges." },
-        { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/", "description": "Place language confidence inside your wider settling-in timeline." }
+        {
+          "label": "Netherlands Survival Guide",
+          "href": "/netherlands/living/survival-guide/",
+          "description": "Wider Living hub for first-week priorities."
+        },
+        {
+          "label": "Daily life basics",
+          "href": "/netherlands/living/daily-life/",
+          "description": "The everyday routines where these phrases show up."
+        },
+        {
+          "label": "Getting around",
+          "href": "/netherlands/living/getting-around/",
+          "description": "Transport contexts where short Dutch helps quickly."
+        },
+        {
+          "label": "Dutch Culture & Etiquette",
+          "href": "/netherlands/life/dutch-etiquette/",
+          "description": "The social context behind greetings, directness, and short exchanges."
+        },
+        {
+          "label": "First 90 Days in the Netherlands",
+          "href": "/netherlands/first-90-days-netherlands/",
+          "description": "Place language confidence inside your wider settling-in timeline."
+        }
       ]
     },
     {
@@ -363,9 +535,21 @@
       "canonicalGuidePath": "/netherlands/living/getting-around/",
       "canonicalLabel": "Getting around in the Netherlands (full guide)",
       "related": [
-        { "label": "Getting around in the Netherlands", "href": "/netherlands/living/getting-around/", "description": "Full practical transport guide for new arrivals." },
-        { "label": "Cities hub", "href": "/netherlands/cities/", "description": "City-specific commute context." },
-        { "label": "Transport tools", "href": "/netherlands/transport/tools/", "description": "Calculators and planners." }
+        {
+          "label": "Getting around in the Netherlands",
+          "href": "/netherlands/living/getting-around/",
+          "description": "Full practical transport guide for new arrivals."
+        },
+        {
+          "label": "Cities hub",
+          "href": "/netherlands/cities/",
+          "description": "City-specific commute context."
+        },
+        {
+          "label": "Transport tools",
+          "href": "/netherlands/transport/tools/",
+          "description": "Calculators and planners."
+        }
       ]
     },
     {
@@ -385,8 +569,16 @@
       "canonicalGuidePath": "/netherlands/practical-life/waste-and-recycling-netherlands/",
       "canonicalLabel": "Waste and recycling guide",
       "related": [
-        { "label": "Municipality services", "href": "/netherlands/living/municipality-services/", "description": "Digital gemeente touchpoints." },
-        { "label": "Daily life", "href": "/netherlands/living/daily-life/", "description": "Parent topic in this cluster." }
+        {
+          "label": "Municipality services",
+          "href": "/netherlands/living/municipality-services/",
+          "description": "Digital gemeente touchpoints."
+        },
+        {
+          "label": "Daily life",
+          "href": "/netherlands/living/daily-life/",
+          "description": "Parent topic in this cluster."
+        }
       ]
     },
     {
@@ -406,8 +598,16 @@
       "canonicalGuidePath": "/netherlands/practical-life/parking-and-local-permits-netherlands/",
       "canonicalLabel": "Parking and local permits guide",
       "related": [
-        { "label": "Municipality services", "href": "/netherlands/living/municipality-services/", "description": "Where permits often start online." },
-        { "label": "Amsterdam city hub", "href": "/netherlands/amsterdam/", "description": "Example city context." }
+        {
+          "label": "Municipality services",
+          "href": "/netherlands/living/municipality-services/",
+          "description": "Where permits often start online."
+        },
+        {
+          "label": "Amsterdam city hub",
+          "href": "/netherlands/amsterdam/",
+          "description": "Example city context."
+        }
       ]
     },
     {
@@ -427,9 +627,21 @@
       "canonicalGuidePath": "/netherlands/life/community-basics-netherlands/",
       "canonicalLabel": "Community basics guide",
       "related": [
-        { "label": "Life in the Netherlands hub", "href": "/netherlands/life/", "description": "Community and integration hub." },
-        { "label": "Making Dutch Friends", "href": "/netherlands/life/making-dutch-friends/", "description": "Platonic friendship routes via clubs and sport." },
-        { "label": "Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Social norms and neighbor etiquette." }
+        {
+          "label": "Life in the Netherlands hub",
+          "href": "/netherlands/life/",
+          "description": "Community and integration hub."
+        },
+        {
+          "label": "Making Dutch Friends",
+          "href": "/netherlands/life/making-dutch-friends/",
+          "description": "Platonic friendship routes via clubs and sport."
+        },
+        {
+          "label": "Culture & Etiquette",
+          "href": "/netherlands/life/dutch-etiquette/",
+          "description": "Social norms and neighbor etiquette."
+        }
       ]
     },
     {
@@ -449,8 +661,16 @@
       "canonicalGuidePath": "/netherlands/digid-awareness/",
       "canonicalLabel": "Full DigiD guide for expats",
       "related": [
-        { "label": "Government portals overview", "href": "/netherlands/practical-life/government-portals-netherlands/", "description": "What you log into after DigiD." },
-        { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/", "description": "Registration sequencing." }
+        {
+          "label": "Government portals overview",
+          "href": "/netherlands/practical-life/government-portals-netherlands/",
+          "description": "What you log into after DigiD."
+        },
+        {
+          "label": "Moving to the Netherlands",
+          "href": "/netherlands/moving-to-the-netherlands/",
+          "description": "Registration sequencing."
+        }
       ]
     },
     {
@@ -463,15 +683,23 @@
       "section": "guides",
       "clusterLabel": "Living in the Netherlands",
       "pageType": "support",
-      "contentStatus": "scaffold",
+      "contentStatus": "live",
       "menuVisible": true,
       "navGroup": "digital-life",
       "intro": "A map of “where tasks live” online once you have BSN and DigiD—focused on recurring admin, not first-time visa work.",
       "canonicalGuidePath": "/netherlands/practical-life/government-portals-netherlands/",
       "canonicalLabel": "Government portals guide",
       "related": [
-        { "label": "DigiD guide for expats", "href": "/netherlands/digid-awareness/", "description": "Full activation and security guide." },
-        { "label": "Taxes hub", "href": "/netherlands/taxes/", "description": "Belastingdienst-facing flows (Money)." }
+        {
+          "label": "DigiD guide for expats",
+          "href": "/netherlands/digid-awareness/",
+          "description": "Full activation and security guide."
+        },
+        {
+          "label": "Taxes hub",
+          "href": "/netherlands/taxes/",
+          "description": "Belastingdienst-facing flows (Money)."
+        }
       ]
     },
     {
@@ -491,8 +719,16 @@
       "canonicalGuidePath": "/netherlands/practical-life/subscriptions-and-cancellations-netherlands/",
       "canonicalLabel": "Subscriptions and cancellations guide",
       "related": [
-        { "label": "Internet and mobile", "href": "/netherlands/utilities/internet-and-mobile-netherlands/", "description": "Telecom contracts and switching." },
-        { "label": "Utilities", "href": "/netherlands/utilities/utilities-netherlands/", "description": "Energy and household utilities." }
+        {
+          "label": "Internet and mobile",
+          "href": "/netherlands/utilities/internet-and-mobile-netherlands/",
+          "description": "Telecom contracts and switching."
+        },
+        {
+          "label": "Utilities",
+          "href": "/netherlands/utilities/utilities-netherlands/",
+          "description": "Energy and household utilities."
+        }
       ]
     },
     {
@@ -512,8 +748,16 @@
       "canonicalGuidePath": "/netherlands/practical-life/privacy-and-safety-basics-netherlands/",
       "canonicalLabel": "Privacy and safety basics guide",
       "related": [
-        { "label": "DigiD awareness", "href": "/netherlands/practical-life/digid-netherlands/", "description": "Protecting your digital identity." },
-        { "label": "Open bank account", "href": "/netherlands/open-bank-account-netherlands/", "description": "Secure banking setup." }
+        {
+          "label": "DigiD awareness",
+          "href": "/netherlands/practical-life/digid-netherlands/",
+          "description": "Protecting your digital identity."
+        },
+        {
+          "label": "Open bank account",
+          "href": "/netherlands/open-bank-account-netherlands/",
+          "description": "Secure banking setup."
+        }
       ]
     },
     {
@@ -533,11 +777,31 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Wider Living hub: first-week rhythm, topics, tools, FAQs." },
-        { "label": "Getting around", "href": "/netherlands/living/getting-around/", "description": "NS, 9292, OVpay, modes, and commuting depth." },
-        { "label": "How payments work (Money · Banking)", "href": "/netherlands/money/banking/how-payments-work/", "description": "IBAN, iDEAL, SEPA, direct debits, rent, and salary patterns." },
-        { "label": "Daily life basics", "href": "/netherlands/living/daily-life/", "description": "Shops, buildings, and weekly rhythms." },
-        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Directness, invitations, and social norms for everyday life." }
+        {
+          "label": "Netherlands Survival Guide",
+          "href": "/netherlands/living/survival-guide/",
+          "description": "Wider Living hub: first-week rhythm, topics, tools, FAQs."
+        },
+        {
+          "label": "Getting around",
+          "href": "/netherlands/living/getting-around/",
+          "description": "NS, 9292, OVpay, modes, and commuting depth."
+        },
+        {
+          "label": "How payments work (Money · Banking)",
+          "href": "/netherlands/money/banking/how-payments-work/",
+          "description": "IBAN, iDEAL, SEPA, direct debits, rent, and salary patterns."
+        },
+        {
+          "label": "Daily life basics",
+          "href": "/netherlands/living/daily-life/",
+          "description": "Shops, buildings, and weekly rhythms."
+        },
+        {
+          "label": "Dutch Culture & Etiquette",
+          "href": "/netherlands/life/dutch-etiquette/",
+          "description": "Directness, invitations, and social norms for everyday life."
+        }
       ]
     },
     {
@@ -557,10 +821,26 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Hub for daily-life basics." },
-        { "label": "Getting around", "href": "/netherlands/living/getting-around/", "description": "Transport and commute planning." },
-        { "label": "Essential apps", "href": "/netherlands/living/apps/", "description": "Weather, route, and daily-life apps." },
-        { "label": "Daily life", "href": "/netherlands/living/daily-life/", "description": "Rhythms and local expectations." }
+        {
+          "label": "Netherlands Survival Guide",
+          "href": "/netherlands/living/survival-guide/",
+          "description": "Hub for daily-life basics."
+        },
+        {
+          "label": "Getting around",
+          "href": "/netherlands/living/getting-around/",
+          "description": "Transport and commute planning."
+        },
+        {
+          "label": "Essential apps",
+          "href": "/netherlands/living/apps/",
+          "description": "Weather, route, and daily-life apps."
+        },
+        {
+          "label": "Daily life",
+          "href": "/netherlands/living/daily-life/",
+          "description": "Rhythms and local expectations."
+        }
       ]
     },
     {
@@ -580,8 +860,16 @@
       "canonicalGuidePath": "/netherlands/open-bank-account-netherlands/",
       "canonicalLabel": "Open a bank account (Netherlands)",
       "related": [
-        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Practical living hub." },
-        { "label": "Money tools", "href": "/netherlands/money/tools/", "description": "Calculators and budgeting helpers." }
+        {
+          "label": "Netherlands Survival Guide",
+          "href": "/netherlands/living/survival-guide/",
+          "description": "Practical living hub."
+        },
+        {
+          "label": "Money tools",
+          "href": "/netherlands/money/tools/",
+          "description": "Calculators and budgeting helpers."
+        }
       ]
     },
     {
@@ -601,10 +889,26 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Netherlands Survival Guide", "href": "/netherlands/living/survival-guide/", "description": "Living pillar hub for first-week priorities and everyday systems." },
-        { "label": "Healthcare Basics in the Netherlands", "href": "/netherlands/living/healthcare-basics/", "description": "Wider Dutch care flow and urgent-health context." },
-        { "label": "Getting Around in the Netherlands", "href": "/netherlands/living/getting-around/", "description": "Transport and cycling context for daily safety." },
-        { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/", "description": "Keep readiness inside the wider arrival timeline." }
+        {
+          "label": "Netherlands Survival Guide",
+          "href": "/netherlands/living/survival-guide/",
+          "description": "Living pillar hub for first-week priorities and everyday systems."
+        },
+        {
+          "label": "Healthcare Basics in the Netherlands",
+          "href": "/netherlands/living/healthcare-basics/",
+          "description": "Wider Dutch care flow and urgent-health context."
+        },
+        {
+          "label": "Getting Around in the Netherlands",
+          "href": "/netherlands/living/getting-around/",
+          "description": "Transport and cycling context for daily safety."
+        },
+        {
+          "label": "First 90 Days in the Netherlands",
+          "href": "/netherlands/first-90-days-netherlands/",
+          "description": "Keep readiness inside the wider arrival timeline."
+        }
       ]
     },
     {
@@ -642,8 +946,16 @@
       "canonicalGuidePath": "/netherlands/jobs/dutch-workplace-culture/",
       "canonicalLabel": "Dutch workplace culture (jobs guide)",
       "related": [
-        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Living-guide bridge from office culture to everyday social norms." },
-        { "label": "Culture hub", "href": "/netherlands/culture/", "description": "All culture topics." }
+        {
+          "label": "Dutch Culture & Etiquette",
+          "href": "/netherlands/life/dutch-etiquette/",
+          "description": "Living-guide bridge from office culture to everyday social norms."
+        },
+        {
+          "label": "Culture hub",
+          "href": "/netherlands/culture/",
+          "description": "All culture topics."
+        }
       ]
     },
     {
@@ -663,9 +975,21 @@
       "canonicalGuidePath": "/netherlands/jobs/dutch-directness-at-work/",
       "canonicalLabel": "Directness guide (jobs cluster)",
       "related": [
-        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Everyday directness outside formal work settings." },
-        { "label": "Communication style", "href": "/netherlands/culture/communication-style/", "description": "Outside-office parallels." },
-        { "label": "Meetings and consensus", "href": "/netherlands/culture/meetings-and-consensus/", "description": "How decisions emerge." }
+        {
+          "label": "Dutch Culture & Etiquette",
+          "href": "/netherlands/life/dutch-etiquette/",
+          "description": "Everyday directness outside formal work settings."
+        },
+        {
+          "label": "Communication style",
+          "href": "/netherlands/culture/communication-style/",
+          "description": "Outside-office parallels."
+        },
+        {
+          "label": "Meetings and consensus",
+          "href": "/netherlands/culture/meetings-and-consensus/",
+          "description": "How decisions emerge."
+        }
       ]
     },
     {
@@ -685,8 +1009,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Written follow-ups", "href": "/netherlands/culture/written-follow-ups/", "description": "Why summaries matter." },
-        { "label": "Hierarchy and flatness", "href": "/netherlands/culture/hierarchy-and-flatness/", "description": "Who speaks up." }
+        {
+          "label": "Written follow-ups",
+          "href": "/netherlands/culture/written-follow-ups/",
+          "description": "Why summaries matter."
+        },
+        {
+          "label": "Hierarchy and flatness",
+          "href": "/netherlands/culture/hierarchy-and-flatness/",
+          "description": "Who speaks up."
+        }
       ]
     },
     {
@@ -706,8 +1038,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Dutch workplace culture", "href": "/netherlands/jobs/dutch-workplace-culture/", "description": "Parent workplace topic." },
-        { "label": "Meetings and consensus", "href": "/netherlands/culture/meetings-and-consensus/", "description": "Group decision style." }
+        {
+          "label": "Dutch workplace culture",
+          "href": "/netherlands/jobs/dutch-workplace-culture/",
+          "description": "Parent workplace topic."
+        },
+        {
+          "label": "Meetings and consensus",
+          "href": "/netherlands/culture/meetings-and-consensus/",
+          "description": "Group decision style."
+        }
       ]
     },
     {
@@ -727,8 +1067,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Meetings and consensus", "href": "/netherlands/culture/meetings-and-consensus/", "description": "Before the recap." },
-        { "label": "Dutch directness at work", "href": "/netherlands/culture/dutch-directness-at-work/", "description": "Tone in written feedback." }
+        {
+          "label": "Meetings and consensus",
+          "href": "/netherlands/culture/meetings-and-consensus/",
+          "description": "Before the recap."
+        },
+        {
+          "label": "Dutch directness at work",
+          "href": "/netherlands/jobs/dutch-directness-at-work/",
+          "description": "Tone in written feedback."
+        }
       ]
     },
     {
@@ -748,11 +1096,31 @@
       "canonicalGuidePath": "/netherlands/life/dutch-culture/",
       "canonicalLabel": "Culture hub (Life cluster)",
       "related": [
-        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Everyday etiquette deep dive." },
-        { "label": "Dutch Holidays & Traditions", "href": "/netherlands/life/dutch-holidays-and-traditions/", "description": "Annual calendar and celebrations." },
-        { "label": "Dutch workplace culture", "href": "/netherlands/jobs/dutch-workplace-culture/", "description": "Professional norms and meetings." },
-        { "label": "Community basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Neighbours, clubs and integration." },
-        { "label": "Learning Dutch", "href": "/netherlands/language-learning/", "description": "Language learning routes." }
+        {
+          "label": "Dutch social norms",
+          "href": "/netherlands/life/dutch-social-norms/",
+          "description": "Everyday etiquette deep dive."
+        },
+        {
+          "label": "Dutch Holidays & Traditions",
+          "href": "/netherlands/life/dutch-holidays-and-traditions/",
+          "description": "Annual calendar and celebrations."
+        },
+        {
+          "label": "Dutch workplace culture",
+          "href": "/netherlands/jobs/dutch-workplace-culture/",
+          "description": "Professional norms and meetings."
+        },
+        {
+          "label": "Community basics",
+          "href": "/netherlands/life/community-basics-netherlands/",
+          "description": "Neighbours, clubs and integration."
+        },
+        {
+          "label": "Learning Dutch",
+          "href": "/netherlands/language-learning/",
+          "description": "Language learning routes."
+        }
       ]
     },
     {
@@ -772,9 +1140,21 @@
       "canonicalGuidePath": "/netherlands/life/dutch-social-norms/",
       "canonicalLabel": "Social norms guide (Life cluster)",
       "related": [
-        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Practical Living guide to social norms and daily interpretation." },
-        { "label": "Daily life (Living)", "href": "/netherlands/living/daily-life/", "description": "Practical routines." },
-        { "label": "Traditions", "href": "/netherlands/culture/dutch-traditions/", "description": "Calendar and customs." }
+        {
+          "label": "Dutch Culture & Etiquette",
+          "href": "/netherlands/life/dutch-etiquette/",
+          "description": "Practical Living guide to social norms and daily interpretation."
+        },
+        {
+          "label": "Daily life (Living)",
+          "href": "/netherlands/living/daily-life/",
+          "description": "Practical routines."
+        },
+        {
+          "label": "Traditions",
+          "href": "/netherlands/culture/dutch-traditions/",
+          "description": "Calendar and customs."
+        }
       ]
     },
     {
@@ -794,9 +1174,21 @@
       "canonicalGuidePath": "/netherlands/life/dating-in-the-netherlands/",
       "canonicalLabel": "Dating guide (Life cluster)",
       "related": [
-        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Everyday etiquette on dates and visits." },
-        { "label": "Community Basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Friends, clubs and integration routes." },
-        { "label": "Dutch cities guide", "href": "/netherlands/cities/", "description": "Compare social life by city." }
+        {
+          "label": "Dutch social norms",
+          "href": "/netherlands/life/dutch-social-norms/",
+          "description": "Everyday etiquette on dates and visits."
+        },
+        {
+          "label": "Community Basics",
+          "href": "/netherlands/life/community-basics-netherlands/",
+          "description": "Friends, clubs and integration routes."
+        },
+        {
+          "label": "Dutch cities guide",
+          "href": "/netherlands/cities/",
+          "description": "Compare social life by city."
+        }
       ]
     },
     {
@@ -816,9 +1208,21 @@
       "canonicalGuidePath": "/netherlands/life/making-dutch-friends/",
       "canonicalLabel": "Making Dutch Friends guide (Life cluster)",
       "related": [
-        { "label": "Community Basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Broad integration overview." },
-        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Borrels, invitations and etiquette." },
-        { "label": "Dating in the Netherlands", "href": "/netherlands/life/dating-in-the-netherlands/", "description": "Romantic connections — different goal." }
+        {
+          "label": "Community Basics",
+          "href": "/netherlands/life/community-basics-netherlands/",
+          "description": "Broad integration overview."
+        },
+        {
+          "label": "Dutch social norms",
+          "href": "/netherlands/life/dutch-social-norms/",
+          "description": "Borrels, invitations and etiquette."
+        },
+        {
+          "label": "Dating in the Netherlands",
+          "href": "/netherlands/life/dating-in-the-netherlands/",
+          "description": "Romantic connections — different goal."
+        }
       ]
     },
     {
@@ -838,11 +1242,31 @@
       "canonicalGuidePath": "/netherlands/life/dutch-birthday-traditions/",
       "canonicalLabel": "Birthday traditions guide (Life cluster)",
       "related": [
-        { "label": "Dutch Culture", "href": "/netherlands/life/dutch-culture/", "description": "Culture cluster overview." },
-        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Everyday etiquette and visiting customs." },
-        { "label": "Dutch Holidays & Traditions", "href": "/netherlands/life/dutch-holidays-and-traditions/", "description": "Annual calendar beyond birthdays." },
-        { "label": "Community basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Friends, neighbours and integration." },
-        { "label": "Learning Dutch", "href": "/netherlands/language-learning/", "description": "Birthday phrases and language routes." }
+        {
+          "label": "Dutch Culture",
+          "href": "/netherlands/life/dutch-culture/",
+          "description": "Culture cluster overview."
+        },
+        {
+          "label": "Dutch social norms",
+          "href": "/netherlands/life/dutch-social-norms/",
+          "description": "Everyday etiquette and visiting customs."
+        },
+        {
+          "label": "Dutch Holidays & Traditions",
+          "href": "/netherlands/life/dutch-holidays-and-traditions/",
+          "description": "Annual calendar beyond birthdays."
+        },
+        {
+          "label": "Community basics",
+          "href": "/netherlands/life/community-basics-netherlands/",
+          "description": "Friends, neighbours and integration."
+        },
+        {
+          "label": "Learning Dutch",
+          "href": "/netherlands/language-learning/",
+          "description": "Birthday phrases and language routes."
+        }
       ]
     },
     {
@@ -862,11 +1286,31 @@
       "canonicalGuidePath": "/netherlands/life/dutch-etiquette/",
       "canonicalLabel": "Dutch Etiquette guide (Life cluster)",
       "related": [
-        { "label": "Dutch Culture", "href": "/netherlands/life/dutch-culture/", "description": "Culture cluster overview." },
-        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Broader unwritten rules and social values." },
-        { "label": "Dutch Birthday Traditions", "href": "/netherlands/life/dutch-birthday-traditions/", "description": "Birthday customs and circle parties." },
-        { "label": "Community basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Neighbours, clubs and integration." },
-        { "label": "Dutch workplace culture", "href": "/netherlands/jobs/dutch-workplace-culture/", "description": "Professional etiquette and meetings." }
+        {
+          "label": "Dutch Culture",
+          "href": "/netherlands/life/dutch-culture/",
+          "description": "Culture cluster overview."
+        },
+        {
+          "label": "Dutch social norms",
+          "href": "/netherlands/life/dutch-social-norms/",
+          "description": "Broader unwritten rules and social values."
+        },
+        {
+          "label": "Dutch Birthday Traditions",
+          "href": "/netherlands/life/dutch-birthday-traditions/",
+          "description": "Birthday customs and circle parties."
+        },
+        {
+          "label": "Community basics",
+          "href": "/netherlands/life/community-basics-netherlands/",
+          "description": "Neighbours, clubs and integration."
+        },
+        {
+          "label": "Dutch workplace culture",
+          "href": "/netherlands/jobs/dutch-workplace-culture/",
+          "description": "Professional etiquette and meetings."
+        }
       ]
     },
     {
@@ -886,11 +1330,31 @@
       "canonicalGuidePath": "/netherlands/life/dutch-humour/",
       "canonicalLabel": "Dutch Humour guide (Life cluster)",
       "related": [
-        { "label": "Dutch Culture", "href": "/netherlands/life/dutch-culture/", "description": "Culture cluster overview." },
-        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Broader unwritten rules and direct communication." },
-        { "label": "Dutch Etiquette", "href": "/netherlands/life/dutch-etiquette/", "description": "Practical manners for everyday situations." },
-        { "label": "Dutch Directness at Work", "href": "/netherlands/jobs/dutch-directness-at-work/", "description": "Professional feedback and meetings." },
-        { "label": "Making Dutch Friends", "href": "/netherlands/life/making-dutch-friends/", "description": "Friendship routes where humour thrives." }
+        {
+          "label": "Dutch Culture",
+          "href": "/netherlands/life/dutch-culture/",
+          "description": "Culture cluster overview."
+        },
+        {
+          "label": "Dutch social norms",
+          "href": "/netherlands/life/dutch-social-norms/",
+          "description": "Broader unwritten rules and direct communication."
+        },
+        {
+          "label": "Dutch Etiquette",
+          "href": "/netherlands/life/dutch-etiquette/",
+          "description": "Practical manners for everyday situations."
+        },
+        {
+          "label": "Dutch Directness at Work",
+          "href": "/netherlands/jobs/dutch-directness-at-work/",
+          "description": "Professional feedback and meetings."
+        },
+        {
+          "label": "Making Dutch Friends",
+          "href": "/netherlands/life/making-dutch-friends/",
+          "description": "Friendship routes where humour thrives."
+        }
       ]
     },
     {
@@ -910,9 +1374,21 @@
       "canonicalGuidePath": "/netherlands/life/dutch-holidays-and-traditions/",
       "canonicalLabel": "Holidays guide (Life cluster)",
       "related": [
-        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Etiquette at celebrations and visits." },
-        { "label": "Community Basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Neighbourhood events and integration." },
-        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Living pillar culture guide." }
+        {
+          "label": "Dutch social norms",
+          "href": "/netherlands/life/dutch-social-norms/",
+          "description": "Etiquette at celebrations and visits."
+        },
+        {
+          "label": "Community Basics",
+          "href": "/netherlands/life/community-basics-netherlands/",
+          "description": "Neighbourhood events and integration."
+        },
+        {
+          "label": "Dutch Culture & Etiquette",
+          "href": "/netherlands/life/dutch-etiquette/",
+          "description": "Living pillar culture guide."
+        }
       ]
     },
     {
@@ -925,16 +1401,28 @@
       "section": "guides",
       "clusterLabel": "Culture in the Netherlands",
       "pageType": "article",
-      "contentStatus": "scaffold",
+      "contentStatus": "live",
       "menuVisible": true,
       "navGroup": "social",
       "intro": "Low-context communication is common—say what you need, politely, without expecting others to infer it.",
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Overview." },
-        { "label": "Dutch Culture & Etiquette", "href": "/netherlands/living/culture-etiquette/", "description": "Living-guide companion with work, neighbor, and social examples." },
-        { "label": "Dutch directness at work", "href": "/netherlands/culture/dutch-directness-at-work/", "description": "Workplace parallel." }
+        {
+          "label": "Dutch social norms",
+          "href": "/netherlands/life/dutch-social-norms/",
+          "description": "Overview."
+        },
+        {
+          "label": "Dutch Culture & Etiquette",
+          "href": "/netherlands/life/dutch-etiquette/",
+          "description": "Living-guide companion with work, neighbor, and social examples."
+        },
+        {
+          "label": "Dutch directness at work",
+          "href": "/netherlands/jobs/dutch-directness-at-work/",
+          "description": "Workplace parallel."
+        }
       ]
     },
     {
@@ -954,8 +1442,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Time and boundaries", "href": "/netherlands/culture/time-and-boundaries/", "description": "Punctuality and space." },
-        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Parent topic." }
+        {
+          "label": "Time and boundaries",
+          "href": "/netherlands/culture/time-and-boundaries/",
+          "description": "Punctuality and space."
+        },
+        {
+          "label": "Dutch social norms",
+          "href": "/netherlands/life/dutch-social-norms/",
+          "description": "Parent topic."
+        }
       ]
     },
     {
@@ -975,8 +1471,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Invitations and planning", "href": "/netherlands/culture/invitations-and-planning/", "description": "Scheduling culture." },
-        { "label": "Community basics", "href": "/netherlands/life/community-basics-netherlands/", "description": "Making friends, neighbors and integration." }
+        {
+          "label": "Invitations and planning",
+          "href": "/netherlands/culture/invitations-and-planning/",
+          "description": "Scheduling culture."
+        },
+        {
+          "label": "Community basics",
+          "href": "/netherlands/life/community-basics-netherlands/",
+          "description": "Making friends, neighbors and integration."
+        }
       ]
     },
     {
@@ -989,15 +1493,23 @@
       "section": "guides",
       "clusterLabel": "Culture in the Netherlands",
       "pageType": "article",
-      "contentStatus": "scaffold",
+      "contentStatus": "live",
       "menuVisible": true,
       "navGroup": "social",
       "intro": "Culture shock often comes from accumulation of tiny differences. This page will collect common “huh” moments with context.",
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Dutch social norms", "href": "/netherlands/life/dutch-social-norms/", "description": "Framework." },
-        { "label": "Daily life (Living)", "href": "/netherlands/living/daily-life/", "description": "Systems and routines." }
+        {
+          "label": "Dutch social norms",
+          "href": "/netherlands/life/dutch-social-norms/",
+          "description": "Framework."
+        },
+        {
+          "label": "Daily life (Living)",
+          "href": "/netherlands/living/daily-life/",
+          "description": "Systems and routines."
+        }
       ]
     },
     {
@@ -1017,8 +1529,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "King's Day", "href": "/netherlands/culture/kings-day/", "description": "April highlight." },
-        { "label": "National holidays", "href": "/netherlands/culture/national-holidays/", "description": "Closures and travel impact." }
+        {
+          "label": "King's Day",
+          "href": "/netherlands/culture/kings-day/",
+          "description": "April highlight."
+        },
+        {
+          "label": "National holidays",
+          "href": "/netherlands/culture/national-holidays/",
+          "description": "Closures and travel impact."
+        }
       ]
     },
     {
@@ -1038,8 +1558,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Dutch traditions", "href": "/netherlands/culture/dutch-traditions/", "description": "Traditions hub." },
-        { "label": "Dutch social calendar", "href": "/netherlands/culture/dutch-social-calendar/", "description": "Seasonal rhythm." }
+        {
+          "label": "Dutch traditions",
+          "href": "/netherlands/culture/dutch-traditions/",
+          "description": "Traditions hub."
+        },
+        {
+          "label": "Dutch social calendar",
+          "href": "/netherlands/culture/dutch-social-calendar/",
+          "description": "Seasonal rhythm."
+        }
       ]
     },
     {
@@ -1052,15 +1580,23 @@
       "section": "guides",
       "clusterLabel": "Culture in the Netherlands",
       "pageType": "article",
-      "contentStatus": "scaffold",
+      "contentStatus": "live",
       "menuVisible": true,
       "navGroup": "traditions",
       "intro": "A major cultural moment for families. Even without kids, you will see it in retail and media.",
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Family and school culture", "href": "/netherlands/culture/family-and-school-culture/", "description": "Parent-facing context." },
-        { "label": "Dutch traditions", "href": "/netherlands/culture/dutch-traditions/", "description": "Overview." }
+        {
+          "label": "Family and school culture",
+          "href": "/netherlands/culture/family-and-school-culture/",
+          "description": "Parent-facing context."
+        },
+        {
+          "label": "Dutch traditions",
+          "href": "/netherlands/culture/dutch-traditions/",
+          "description": "Overview."
+        }
       ]
     },
     {
@@ -1080,8 +1616,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Dutch social calendar", "href": "/netherlands/culture/dutch-social-calendar/", "description": "Beyond legal holidays." },
-        { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/", "description": "Plan around closures." }
+        {
+          "label": "Dutch social calendar",
+          "href": "/netherlands/culture/dutch-social-calendar/",
+          "description": "Beyond legal holidays."
+        },
+        {
+          "label": "Moving timeline",
+          "href": "/netherlands/moving-to-netherlands-timeline/",
+          "description": "Plan around closures."
+        }
       ]
     },
     {
@@ -1101,8 +1645,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "National holidays", "href": "/netherlands/culture/national-holidays/", "description": "Legal days off." },
-        { "label": "Cities hub", "href": "/netherlands/cities/", "description": "City-specific events." }
+        {
+          "label": "National holidays",
+          "href": "/netherlands/culture/national-holidays/",
+          "description": "Legal days off."
+        },
+        {
+          "label": "Cities hub",
+          "href": "/netherlands/cities/",
+          "description": "City-specific events."
+        }
       ]
     },
     {
@@ -1122,8 +1674,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Learning Dutch", "href": "/netherlands/culture/learning-dutch/", "description": "Courses and practice." },
-        { "label": "Inburgering guide", "href": "/netherlands/integration/inburgering/", "description": "Wi 2021, HSM, B1 & KNM." }
+        {
+          "label": "Learning Dutch",
+          "href": "/netherlands/culture/learning-dutch/",
+          "description": "Courses and practice."
+        },
+        {
+          "label": "Inburgering guide",
+          "href": "/netherlands/integration/inburgering/",
+          "description": "Wi 2021, HSM, B1 & KNM."
+        }
       ]
     },
     {
@@ -1143,8 +1703,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Integration tools", "href": "/netherlands/integration/tools/", "description": "Planners and quizzes." },
-        { "label": "Practice scenarios", "href": "/netherlands/culture/practice-scenarios/", "description": "Speaking prompts." }
+        {
+          "label": "Integration tools",
+          "href": "/netherlands/integration/tools/",
+          "description": "Planners and quizzes."
+        },
+        {
+          "label": "Practice scenarios",
+          "href": "/netherlands/culture/practice-scenarios/",
+          "description": "Speaking prompts."
+        }
       ]
     },
     {
@@ -1164,9 +1732,21 @@
       "canonicalGuidePath": "/netherlands/integration/inburgering/",
       "canonicalLabel": "Inburgering guide (authoritative)",
       "related": [
-        { "label": "Inburgering guide (authoritative)", "href": "/netherlands/integration/inburgering/", "description": "Wi 2021, HSM vs obligation, KNM 2025, DUO." },
-        { "label": "Learning Dutch", "href": "/netherlands/culture/learning-dutch/", "description": "Study paths." },
-        { "label": "Permanent residence guide", "href": "/netherlands/citizenship/permanent-residence/", "description": "Five-year stay planning." }
+        {
+          "label": "Inburgering guide (authoritative)",
+          "href": "/netherlands/integration/inburgering/",
+          "description": "Wi 2021, HSM vs obligation, KNM 2025, DUO."
+        },
+        {
+          "label": "Learning Dutch",
+          "href": "/netherlands/culture/learning-dutch/",
+          "description": "Study paths."
+        },
+        {
+          "label": "Permanent residence guide",
+          "href": "/netherlands/citizenship/permanent-residence/",
+          "description": "Five-year stay planning."
+        }
       ]
     },
     {
@@ -1186,8 +1766,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Learning Dutch", "href": "/netherlands/culture/learning-dutch/", "description": "Study paths." },
-        { "label": "Health system culture basics", "href": "/netherlands/culture/health-system-culture-basics/", "description": "Care interactions." }
+        {
+          "label": "Learning Dutch",
+          "href": "/netherlands/culture/learning-dutch/",
+          "description": "Study paths."
+        },
+        {
+          "label": "Health system culture basics",
+          "href": "/netherlands/culture/health-system-culture-basics/",
+          "description": "Care interactions."
+        }
       ]
     },
     {
@@ -1207,8 +1795,16 @@
       "canonicalGuidePath": null,
       "canonicalLabel": null,
       "related": [
-        { "label": "Moving with kids", "href": "/netherlands/moving-to-netherlands-with-kids/", "description": "Relocation framing (Move)." },
-        { "label": "Childcare cost tool", "href": "/netherlands/family/tools/", "description": "Family tools hub." }
+        {
+          "label": "Moving with kids",
+          "href": "/netherlands/moving-to-netherlands-with-kids/",
+          "description": "Relocation framing (Move)."
+        },
+        {
+          "label": "Childcare cost tool",
+          "href": "/netherlands/family/tools/",
+          "description": "Family tools hub."
+        }
       ]
     },
     {
@@ -1228,8 +1824,16 @@
       "canonicalGuidePath": "/netherlands/health-insurance-netherlands/",
       "canonicalLabel": "Health insurance guide (authoritative)",
       "related": [
-        { "label": "Health insurance (services)", "href": "/netherlands/services/health-insurance/", "description": "Provider discovery." },
-        { "label": "Practice scenarios", "href": "/netherlands/culture/practice-scenarios/", "description": "Speaking practice." }
+        {
+          "label": "Health insurance (services)",
+          "href": "/netherlands/services/health-insurance/",
+          "description": "Provider discovery."
+        },
+        {
+          "label": "Practice scenarios",
+          "href": "/netherlands/culture/practice-scenarios/",
+          "description": "Speaking practice."
+        }
       ]
     }
   ]

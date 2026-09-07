@@ -340,13 +340,13 @@ export const averageSalaryNetherlandsPage = {
     { label: "Gross vs Net Salary", href: "/netherlands/taxes/gross-vs-net-salary/", status: "live", description: "Understand why Dutch offers are usually quoted gross." },
     { label: "Payroll Tax", href: "/netherlands/taxes/payroll-tax-netherlands/", status: "live", description: "Learn how loonheffing and payroll deductions affect net pay." },
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "See how the expat scheme can affect take-home pay." },
-    { label: "Expat Taxes", href: "/netherlands/taxes/expat-taxes-netherlands/", status: "live", description: "Broader expat tax context for salary and relocation planning." },
+    { label: "Expat Taxes", href: "/netherlands/money/expat-taxes-netherlands/", status: "live", description: "Broader expat tax context for salary and relocation planning." },
   ] satisfies AverageSalaryNetherlandsLink[],
   services: [
     { label: "Tax advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Compare tax advisors for salary, ruling and cross-border questions." },
-    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "live", description: "Bookkeeping, BTW filings and accounting support for expats." },
+    { label: "Expat accountants", href: "/netherlands/services/accountants/", status: "comingSoon", description: "Bookkeeping, BTW filings and accounting support for expats." },
     { label: "Payroll specialists", href: "/netherlands/services/payroll-services/", status: "comingSoon", description: "Future directory for payroll help." },
-    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "live", description: "Services directory for comparing recruitment agency providers." },
+    { label: "Recruitment agencies", href: "/netherlands/services/recruitment-agencies/", status: "comingSoon", description: "Services directory for comparing recruitment agency providers." },
     { label: "Relocation services", href: "/netherlands/services/relocation-services/", status: "live", description: "Help with salary planning alongside move logistics." },
   ] satisfies AverageSalaryNetherlandsLink[],
   faq: [
