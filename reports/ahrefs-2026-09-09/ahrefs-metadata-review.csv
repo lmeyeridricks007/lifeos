@@ -1,0 +1,6 @@
+issue_type,priority,recommendation,change_now
+title too long,LOW,Do not bulk-shorten; review only SERP-truncating hub titles if GSC shows poor CTR,NO
+meta description too long/short,LOW,Pattern-check shared templates later; Ahrefs char limits ≠ Google,NO
+Open Graph incomplete,MED,Audit buildSocialMetadata coverage on non-guide templates only if share previews break,NO
+OG URL vs canonical,MED,Homepage OG/canonical already self-/; after redeploy verify / no longer 307 so OG matches crawl,VERIFY_AFTER_DEPLOY
+image file size,P2,Replaced hero with WebP v2 (~116KB) + enable Next/Image optimization (removed unoptimized),YES

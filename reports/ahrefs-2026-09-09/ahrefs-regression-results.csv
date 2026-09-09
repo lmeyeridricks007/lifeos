@@ -1,0 +1,12 @@
+url,method,status,location,vercel_cache,age
+https://www.expatcopilot.com/,GET,307,/netherlands,STALE,3993
+https://www.expatcopilot.com/netherlands,GET,200,,MISS,0
+https://www.expatcopilot.com/netherlands/health,GET,200,,MISS,0
+https://www.expatcopilot.com/netherlands/education,GET,200,,MISS,0
+https://www.expatcopilot.com/netherlands/living/bike-sharing-netherlands,GET,404,,,
+https://www.expatcopilot.com/netherlands/living/cycling-netherlands,GET,404,,,
+https://www.expatcopilot.com/netherlands/living/bike-sharing-netherlands/,GET,308,/netherlands/living/bike-sharing-netherlands,,
+https://www.expatcopilot.com/netherlands/culture/communication-style,GET,200,,MISS,0
+https://www.expatcopilot.com/netherlands/living/government-portals-overview,GET,200,,MISS,0
+sitemap.xml,GET,200,count=448,,
+getting-around html scan,GET,200,bike=True;cycling=True,,

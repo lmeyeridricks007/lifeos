@@ -1,0 +1,4 @@
+url,http_status,redirect_to,redirect_code,class,action,notes
+https://www.expatcopilot.com/,307,https://www.expatcopilot.com/netherlands,200,CACHE_BEHAVIOR,REDEPLOY_AND_PURGE_EDGE_FOR_ROOT,HEAD app/page.tsx returns 200 brand homepage since 1c4be15c; prod sticky Vercel HIT serves pre-fix redirect(). Not bot-specific. All UAs see 307.
+https://www.expatcopilot.com/netherlands/living/bike-sharing-netherlands/,308,https://www.expatcopilot.com/netherlands/living/bike-sharing-netherlands,404,BROKEN_REDIRECT_CHAIN,FIX_SOURCE_HREF_ON_GETTING_AROUND_FILTER_STAGED,Trailing-slash 308 to staged 404 path; remove/filter source links
+https://www.expatcopilot.com/netherlands/living/cycling-netherlands/,308,https://www.expatcopilot.com/netherlands/living/cycling-netherlands,404,BROKEN_REDIRECT_CHAIN,FIX_SOURCE_HREF_ON_GETTING_AROUND_FILTER_STAGED,Trailing-slash 308 to staged 404 path; remove/filter source links

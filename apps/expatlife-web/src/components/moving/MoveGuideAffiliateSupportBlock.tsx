@@ -3,6 +3,7 @@ import { BoldInline } from "@/components/content/PillarContentBlocks";
 import { AffiliateBlockView } from "@/src/components/affiliates/AffiliateBlockView";
 import { AffiliateDisclosure } from "@/src/components/affiliates/AffiliateDisclosure";
 import { loadPlacementWithProviders } from "@/src/lib/affiliates/loadAffiliates";
+import { filterLiveInternalLinks } from "@/src/lib/routes/routeStatus";
 import { cn } from "@/lib/cn";
 import { movingNlGuideSectionShellClass, movingNlGuideSectionTopAccentClass } from "@/lib/ui/moving-nl-pillar-identity";
 
@@ -29,13 +30,14 @@ export function MoveGuideAffiliateSupportBlock({
   originCountry,
   hidePlacementTitle,
 }: MoveGuideAffiliateSupportBlockProps) {
+  const liveCategoryLinks = filterLiveInternalLinks(categoryLinks);
   const data = loadPlacementWithProviders(placementId, destinationCountry, originCountry);
   const hasCards = Boolean(data?.items.length);
   const placement = data?.placement;
   /** When the registry returns no rows, still show the placement framing + disclosure so mid-page is not only inline links. */
-  const showPlacementFallback = Boolean(placement && !hasCards && categoryLinks.length > 0);
+  const showPlacementFallback = Boolean(placement && !hasCards && liveCategoryLinks.length > 0);
 
-  if (!hasCards && categoryLinks.length === 0) return null;
+  if (!hasCards && liveCategoryLinks.length === 0) return null;
 
   return (
     <div className="space-y-4">
@@ -65,10 +67,10 @@ export function MoveGuideAffiliateSupportBlock({
           </div>
         </div>
       ) : null}
-      {categoryLinks.length ? (
+      {liveCategoryLinks.length ? (
         <p className="text-sm leading-relaxed text-foreground-muted">
           {browseLabel ?? (hasCards ? "Browse more companies: " : "Browse companies by category: ")}
-          {categoryLinks.map((link, index) => (
+          {liveCategoryLinks.map((link, index) => (
             <span key={link.href}>
               {index > 0 ? <span aria-hidden> · </span> : null}
               <Link href={link.href} className="font-semibold text-link hover:underline">

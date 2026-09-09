@@ -378,6 +378,8 @@ export const PUBLIC_IMAGE_PATHS: ReadonlySet<string> = new Set([
   "/images/heroes/netherlands-international-schools-netherlands-hero-v2.png",
   "/images/heroes/netherlands-internet-mobile-hero-v2.png",
   "/images/heroes/netherlands-leaving-netherlands-hero-premium-v1.png",
+  "/images/heroes/netherlands-leaving-netherlands-hero-premium-v2.webp",
+  "/images/heroes/netherlands-leaving-netherlands-hero-premium-v2.jpg",
   "/images/heroes/netherlands-leaving-tax-hero-v1.png",
   "/images/heroes/netherlands-making-dutch-friends-hero-v2.png",
   "/images/heroes/netherlands-minimum-wage-hero-v3.png",

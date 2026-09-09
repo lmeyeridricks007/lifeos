@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { PillarTimelineStage } from "@expatlife/content";
 import type { ContentPublishStatus } from "@/src/lib/content/contentPublishStatus";
 import { isComingSoonContent } from "@/src/lib/content/contentPublishStatus";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
 import { cn } from "@/lib/cn";
 import { transitionSurface } from "@/lib/ui/interaction";
 import {
@@ -101,9 +102,12 @@ export function StageCards({
                 </li>
               ))}
             </ul>
-            {stage.links.length > 0 ? (
+            {stage.links.filter((l) => isRouteLive(l.href)).length > 0 ? (
               <ul className="mt-auto space-y-2 border-t border-slate-200 pt-4 text-sm">
-                {stage.links.slice(0, 2).map((l) => {
+                {stage.links
+                  .filter((l) => isRouteLive(l.href))
+                  .slice(0, 2)
+                  .map((l) => {
                   const st = linkPublishStatus?.(l.href);
                   const expanding = st != null && isComingSoonContent(st);
                   return (

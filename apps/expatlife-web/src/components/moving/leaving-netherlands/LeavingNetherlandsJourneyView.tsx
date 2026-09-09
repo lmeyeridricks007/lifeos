@@ -140,10 +140,9 @@ function HeroImage() {
       <Image
         src={page.hero.image.src}
         alt={page.hero.image.alt}
-        width={1600}
-        height={900}
+        width={1536}
+        height={1024}
         priority
-        unoptimized
         sizes="(min-width: 1024px) 42vw, 100vw"
         className="h-full w-full object-cover"
       />

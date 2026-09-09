@@ -3,6 +3,7 @@ import { AffiliateDisclosure } from "@/src/components/affiliates/AffiliateDisclo
 import { cn } from "@/lib/cn";
 import { buildTrackedOutboundLink, trackedOutboundAnchorProps } from "@/lib/analytics/tracked-outbound";
 import { movingNlCardMicroLiftClass } from "@/lib/ui/moving-nl-pillar-identity";
+import { filterLiveInternalLinks } from "@/src/lib/routes/routeStatus";
 import {
   MATERNITY_CARE_NETHERLANDS_PATH,
   maternityCareNetherlandsPage as page,
@@ -81,7 +82,7 @@ export function MaternityCareNetherlandsRecommendedServices() {
 
       <p className="text-sm leading-relaxed text-foreground-muted">
         Also useful:{" "}
-        {recommended.categoryLinks.map((link, index) => (
+        {filterLiveInternalLinks(recommended.categoryLinks).map((link, index) => (
           <span key={link.href}>
             {index > 0 ? <span aria-hidden> · </span> : null}
             <Link href={link.href} className="font-semibold text-link hover:underline">

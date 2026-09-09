@@ -768,6 +768,8 @@ export const dutchSocialNormsPage = {
   ],
   relatedGuides: [
     { label: "Dutch Etiquette", href: DUTCH_ETIQUETTE_PATH, description: "Practical manners for greetings, dining, neighbours and gifts.", status: "live" },
+    { label: "Communication style", href: "/netherlands/culture/communication-style", description: "Clarity, humour and silence in Dutch social settings.", status: "live" },
+    { label: "What feels normal in Dutch daily life", href: "/netherlands/culture/what-feels-normal-in-dutch-daily-life", description: "Everyday expectations newcomers often misread.", status: "live" },
     { label: "Dutch Humour Explained", href: DUTCH_HUMOUR_PATH, description: "Dry wit, sarcasm, teasing and humour in everyday life.", status: "live" },
     { label: "Community Basics", href: COMMUNITY_BASICS_NETHERLANDS_PATH, description: "Making friends, neighbours, clubs and integration routes.", status: "live" },
     { label: "Dating in the Netherlands", href: "/netherlands/life/dating-in-the-netherlands/", description: "Apps, singles events, sports clubs and meeting people.", status: "live" },

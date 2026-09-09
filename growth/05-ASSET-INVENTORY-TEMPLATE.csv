@@ -1,0 +1,4 @@
+URL,title,asset_type,primary_audience,promotion_value_1_to_5,linkability_1_to_5,community_relevance_1_to_5,commercial_relevance_1_to_5,best_channels,recommended_cta,repurposing_opportunities,notes
+# EXAMPLE ROW (delete when populating) — https://www.expatcopilot.com/netherlands/...,Example title,TOOL,Highly Skilled Migrants,5,5,5,5,"SEO; Reddit; LinkedIn; Newsletter; PR",Check HSM salary requirements,"LinkedIn post; Reddit answer; Short demo; PR pitch",Populate from live sitemap; do not invent URLs
+# ASSET TYPE ENUM (use one): LINKABLE_ASSET | TOOL | DATA_ASSET | CHECKLIST | GUIDE | COMPARISON | CALCULATOR | RESEARCH | COMMUNITY_HELPER | PR_ASSET | PARTNERSHIP_ASSET | EMAIL_LEAD_MAGNET | SOCIAL_REPURPOSE | LOW_PROMOTION_VALUE
+# HOW TO USE: Score live indexable URLs only. Prefer promo_value>=4 for weekly heroes. Leave rows blank until audited.

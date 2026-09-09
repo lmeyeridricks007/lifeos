@@ -807,6 +807,7 @@ export const dutchEtiquettePage = {
   ],
   relatedGuides: [
     { label: "Dutch Culture", href: DUTCH_CULTURE_PATH, description: "High-level overview of Dutch society and culture cluster.", status: "live" },
+    { label: "Communication style", href: "/netherlands/culture/communication-style", description: "How people communicate in Dutch social settings.", status: "live" },
     { label: "Dutch Social Norms", href: DUTCH_SOCIAL_NORMS_PATH, description: "Unwritten rules, values and everyday expectations.", status: "live" },
     { label: "Dutch Humour Explained", href: DUTCH_HUMOUR_PATH, description: "Dry wit, sarcasm, teasing and how humour connects to directness.", status: "live" },
     { label: "Dutch Birthday Traditions", href: DUTCH_BIRTHDAY_TRADITIONS_PATH, description: "Circle parties, congratulations, gifts and birthday etiquette.", status: "live" },

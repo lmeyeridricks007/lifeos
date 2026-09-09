@@ -1,0 +1,5 @@
+path,class,remediation_in_code,status,notes
+/netherlands/living/government-portals-overview,ORPHAN,Living hub StageCards digital-life first link + related practical-life portals,CODE_READY_NEEDS_DEPLOY,contentStatus live; Ahrefs 0 inlinks = prod lag
+/netherlands/culture/what-feels-normal-in-dutch-daily-life,ORPHAN,Culture hub traditions StageCards (first two with sinterklaas),CODE_READY_NEEDS_DEPLOY,contentStatus live
+/netherlands/culture/sinterklaas,ORPHAN,Culture hub traditions StageCards,CODE_READY_NEEDS_DEPLOY,contentStatus live
+/netherlands/culture/communication-style,ORPHAN,Culture hub social + language StageCards first link,CODE_READY_NEEDS_DEPLOY,contentStatus live; StageCards now filters isRouteLive

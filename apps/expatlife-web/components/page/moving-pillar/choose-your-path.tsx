@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ResolvedScenario } from "@/components/content/PillarScenarioCards";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
 import { cn } from "@/lib/cn";
 import {
   movingNlCardMicroLiftClass,
@@ -94,7 +95,10 @@ export function ChooseYourPath({
                 Suggested reading order
               </p>
               <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm leading-snug marker:font-semibold marker:text-copilot-accent">
-                {s.readingOrderLinks.slice(0, 3).map((link) => (
+                {s.readingOrderLinks
+                  .filter((link) => isRouteLive(link.href))
+                  .slice(0, 3)
+                  .map((link) => (
                   <li key={link.href} className="pl-0.5 marker:text-copilot-primary">
                     <Link
                       href={link.href}
@@ -106,7 +110,7 @@ export function ChooseYourPath({
                 ))}
               </ol>
             </div>
-            {s.startToolLink ? (
+            {s.startToolLink && isRouteLive(s.startToolLink.href) ? (
               <div className="mt-4 rounded-xl bg-gradient-to-br from-slate-900/[0.03] to-copilot-bg-soft/40 p-4 shadow-inner">
                 <p className="text-[10px] font-bold uppercase tracking-[0.14em] text-copilot-text-muted">
                   Fastest way to act

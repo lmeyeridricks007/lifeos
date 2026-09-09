@@ -73,7 +73,7 @@ export const leavingNetherlandsJourneyPage = {
     secondaryCta: { label: "Open exit readiness tool", href: EXIT_READINESS_PATH },
     chips: ["Deregistration", "Insurance stop", "30% end", "PR consequences"],
     image: {
-      src: "/images/heroes/netherlands-leaving-netherlands-hero-premium-v1.png",
+      src: "/images/heroes/netherlands-leaving-netherlands-hero-premium-v2.webp",
       alt: "Photorealistic editorial photo of an international professional packing documents and a suitcase by a bright Amsterdam canal apartment window before leaving the Netherlands.",
     },
   },

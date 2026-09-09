@@ -1,0 +1,32 @@
+platform,asset,dimensions,purpose,required_before_launch,optional,notes
+All,Logo mark master PNG,1024x1024,Source for all avatars,YES,NO,Export from public/brand/logo-mark.svg
+All,Logo mark small PNG,400x400,Uploads that compress heavily,YES,NO,Also test 180x180 crop
+All,Wordmark lockup PNG,1200x400,Banners/covers if needed,NO,YES,Only if designed on-brand
+Instagram,Profile photo,320x320 min (upload 1024x1024),Avatar,YES,NO,Same mark as other networks
+Instagram,Grid post / carousel,1080x1350,Feed carousels,YES,NO,4:5 preferred for feed
+Instagram,Landscape post,1080x566,Rare link posts,NO,YES,1.91:1
+Instagram,Story / Reel frame,1080x1920,Stories Reels,YES,NO,Safe zone top/bottom
+Instagram,Highlight covers,1080x1080,Highlight icons,NO,YES,Simple icons on soft blue
+Instagram,First 3 feed posts,1080x1350,Launch set,YES,NO,See 19-LAUNCH-CONTENT-PLAN
+Facebook Page,Profile photo,170x170 display (upload 1024x1024),Avatar,YES,NO,
+Facebook Page,Cover photo,820x312 (upload 1640x624),Page cover,YES,NO,Keep text centered-safe
+Facebook Page,Shared link image,1200x630,Link previews,NO,YES,Can reuse OG
+LinkedIn Company,Logo,300x300 (upload 1024x1024),Company logo,YES,NO,
+LinkedIn Company,Cover image,1128x191,Company cover,YES,NO,LinkedIn recommended
+LinkedIn Company,Post image,1200x627,Link/document posts,YES,NO,
+YouTube,Channel icon,800x800,Avatar,YES,NO,
+YouTube,Channel banner,2560x1440,Banner (safe 1546x423),YES,NO,Keep text in safe area
+YouTube,Video thumbnail,1280x720,Thumbnails,NO,YES,Required when Shorts/long publish
+YouTube,Shorts vertical,1080x1920,Shorts,NO,YES,Activate with cadence
+Pinterest,Profile photo,165x165 (upload 1024),Avatar,YES,NO,Claim now
+Pinterest,Standard pin,1000x1500,Pins,NO,YES,Required before active use
+Pinterest,Board cover,600x600,Board art,NO,YES,
+TikTok,Profile photo,200x200 (upload 1024),Avatar,YES,NO,Reserve
+TikTok,Video,1080x1920,Posts,NO,YES,
+X Twitter,Profile photo,400x400,Avatar,YES,NO,Reserve
+X Twitter,Header,1500x500,Banner,YES,NO,
+X Twitter,Post image,1200x675,Occasional cards,NO,YES,
+Site/shared,Default OG image,1200x630,Link shares,NO,YES,public/brand/og-default.svg reference
+Templates,Carousel master Figma/Canva,1080x1350 artboard,Reusable,YES,NO,Brand colors from 04
+Templates,Data card master,1080x1350 or 1080x1080,Reusable,NO,YES,
+Templates,Story highlight icons set,8 icons,Highlights,NO,YES,Start Here Moving Cities Money Work Healthcare Tools Culture
