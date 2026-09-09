@@ -111,7 +111,7 @@ export function isRouteComingSoon(href: string): boolean {
 export type InternalLink = { label: string; href: string };
 
 /** Drop links to routes that are not live (hidden or coming-soon). Use for body copy and related sections. */
-export function filterLiveInternalLinks<T extends InternalLink>(links: T[]): T[] {
+export function filterLiveInternalLinks<T extends InternalLink>(links: readonly T[]): T[] {
   return links.filter((l) => isRouteLive(l.href));
 }
 
@@ -127,7 +127,7 @@ export function toRenderableInternalLink(link: InternalLink): RenderableInternal
   return null;
 }
 
-export function mapToRenderableInternalLinks(links: InternalLink[]): RenderableInternalLink[] {
+export function mapToRenderableInternalLinks(links: readonly InternalLink[]): RenderableInternalLink[] {
   return links.map(toRenderableInternalLink).filter(Boolean) as RenderableInternalLink[];
 }
 
