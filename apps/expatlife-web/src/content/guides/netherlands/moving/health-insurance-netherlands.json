@@ -6,7 +6,8 @@
   "subtitle": "A practical guide for expats and new arrivals: who usually needs Dutch health insurance, when to arrange it, what the basic package covers, how much it typically costs, and how to compare providers.",
   "description": "A practical guide to Dutch health insurance for expats, including who needs it, when to arrange it, what the basic package covers, typical monthly costs, provider comparisons, and useful next steps.",
   "breadcrumbLabel": "Health Insurance",
-  "lastUpdated": "Last reviewed: 26 August 2026",
+  "lastUpdated": "Last reviewed: 26 August 2026 · Effective: Calendar year 2026 (eigen risico / premium orientation)",
+  "dateModified": "2026-08-26",
   "heroOfficialSources": [
     {
       "label": "Government.nl — When to take out Dutch health insurance",
@@ -26,17 +27,20 @@
     }
   },
   "heroCta": {
-    "title": "After Arriving in the Netherlands",
-    "supportingText": "Plan your first steps after arrival, including registration, BSN, and health insurance.",
-    "primaryCtaLabel": "After Arriving in the Netherlands",
-    "primaryCtaHref": "/netherlands/after-arriving-netherlands/",
-    "secondaryCtaLabel": "Compare Health Insurers",
-    "secondaryCtaHref": "/netherlands/health-insurance-netherlands/#provider-directory",
+    "title": "Understand cover, then compare options",
+    "supportingText": "This guide explains who must insure, deadlines, and the basic package. Use the comparison framework for decision criteria, then the provider directory for current products.",
+    "primaryCtaLabel": "Compare insurance decision factors",
+    "primaryCtaHref": "/netherlands/health/health-insurance-comparison-netherlands/",
+    "secondaryCtaLabel": "Browse insurer directory",
+    "secondaryCtaHref": "/netherlands/services/health-insurance/",
     "supportingLinks": [
+      { "label": "Healthcare hub", "href": "/netherlands/health/" },
+      { "label": "How Dutch healthcare works", "href": "/netherlands/living/healthcare-basics/" },
+      { "label": "Healthcare allowance (zorgtoeslag)", "href": "/netherlands/taxes/healthcare-allowance-netherlands/" },
+      { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
       { "label": "Municipality Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
       { "label": "Open a Bank Account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
-      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
-      { "label": "Relocation Cost Estimator", "href": "/netherlands/moving/tools/relocation-cost-estimator/" }
+      { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" }
     ]
   },
   "tocItems": [
@@ -481,23 +485,24 @@
   "scenariosSectionTitle": "Example health insurance situations",
   "scenariosSectionIntro": "Different situations lead to different priorities. Use the cards below to jump to the right section or guide.",
   "internalLinks": {
-    "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving-to-the-netherlands/" },
-    "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
+    "hub": { "label": "Healthcare hub", "href": "/netherlands/health/" },
+    "pillar": { "label": "How Dutch healthcare works", "href": "/netherlands/living/healthcare-basics/" },
     "related": [
-      { "label": "Compare health insurance", "href": "/netherlands/services/health-insurance/" },
-      { "label": "All services hub", "href": "/netherlands/services/" },
+      { "label": "Health insurance comparison framework", "href": "/netherlands/health/health-insurance-comparison-netherlands/" },
+      { "label": "Health insurance providers (services)", "href": "/netherlands/services/health-insurance/" },
+      { "label": "Healthcare allowance (zorgtoeslag)", "href": "/netherlands/taxes/healthcare-allowance-netherlands/" },
+      { "label": "Healthcare allowance estimator", "href": "/netherlands/taxes/tools/healthcare-allowance-estimator/" },
       { "label": "After Arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
-      { "label": "Municipality Registration in the Netherlands", "href": "/netherlands/municipality-registration-netherlands/" },
-      { "label": "Open a Bank Account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },
-      { "label": "First 30 Days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
       { "label": "First 90 Days in the Netherlands", "href": "/netherlands/first-90-days-netherlands/" },
-      { "label": "Cost of Moving to the Netherlands", "href": "/netherlands/moving-to-netherlands-cost/" }
+      { "label": "GP / huisarts guide", "href": "/netherlands/health/gp-netherlands/" },
+      { "label": "Official figures", "href": "/netherlands/official-figures/" }
     ]
   },
   "sidebarStartLinks": [
-    { "label": "Compare Health Insurers", "href": "/netherlands/health-insurance-netherlands/#provider-directory" },
-    { "label": "After Arriving Guide", "href": "/netherlands/after-arriving-netherlands/" },
-    { "label": "Estimate Your Costs", "href": "/netherlands/moving/tools/relocation-cost-estimator/" }
+    { "label": "Compare decision factors", "href": "/netherlands/health/health-insurance-comparison-netherlands/" },
+    { "label": "Provider directory", "href": "/netherlands/services/health-insurance/" },
+    { "label": "Zorgtoeslag guide", "href": "/netherlands/taxes/healthcare-allowance-netherlands/" },
+    { "label": "Healthcare hub", "href": "/netherlands/health/" }
   ],
   "faq": [
     {

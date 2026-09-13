@@ -59,6 +59,7 @@ import {
   type StudentBankAccountsLink,
   type MistakeCard as MistakeCardData,
 } from "./studentBankAccountsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 
@@ -459,7 +460,7 @@ function Timeline({
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: StudentBankAccountsLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
   const isExternal = item.status === "external";
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

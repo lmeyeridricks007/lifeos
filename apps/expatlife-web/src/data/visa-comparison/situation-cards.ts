@@ -48,8 +48,23 @@ export const COMPARISON_SITUATION_CARDS: SituationCard[] = [
   {
     id: "study",
     title: "I want to study",
-    routes: [{ name: "Student Visa", href: `${BASE}/visa/student-visa/` }],
-    reasoning: "Non-EU students need a study residence permit; the institution usually submits the application. You will need admission and proof of funds.",
+    routes: [
+      { name: "Student Visa", href: `${BASE}/visa/student-visa/` },
+      { name: "Orientation Year (after study)", href: `${BASE}/visa/orientation-year/` },
+    ],
+    reasoning:
+      "Non-EU students need a study residence permit; the institution usually submits the application. After a qualifying graduation, doctorate or research period, the orientation year (zoekjaar) can bridge job search with free work rights — only if you meet current IND criteria.",
+    visaCheckerHref: VISA_CHECKER,
+  },
+  {
+    id: "after-study",
+    title: "I finished study or research and need a job-search year",
+    routes: [
+      { name: "Orientation Year (Zoekjaar)", href: `${BASE}/visa/orientation-year/` },
+      { name: "Highly Skilled Migrant", href: `${BASE}/visa/highly-skilled-migrant/` },
+    ],
+    reasoning:
+      "Orientation year is a one-year permit to look for and carry out work after qualifying study or research. When you have a recognised-sponsor offer, HSM (sometimes at the reduced salary criterion) is a common next route — verify both on IND.",
     visaCheckerHref: VISA_CHECKER,
   },
   {

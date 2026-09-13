@@ -1,0 +1,68 @@
+section,item,status,detail,pass
+homepage,browser-GET,200,location=;cache=;age=;canonical=https://www.expatcopilot.com/;h1=Guides and tools for Netherlands relocation,YES
+homepage,browser-HEAD,200,location=;cache=;age=;canonical=;h1=,YES
+homepage,googlebot-GET,200,location=;cache=;age=;canonical=https://www.expatcopilot.com/;h1=Guides and tools for Netherlands relocation,YES
+homepage,googlebot-HEAD,200,location=;cache=;age=;canonical=;h1=,YES
+homepage,ahrefs-GET,200,location=;cache=;age=;canonical=https://www.expatcopilot.com/;h1=Guides and tools for Netherlands relocation,YES
+homepage,ahrefs-HEAD,200,location=;cache=;age=;canonical=;h1=,YES
+homepage,cachebust-GET,200,location=;cache=;age=;canonical=https://www.expatcopilot.com/;h1=Guides and tools for Netherlands relocation,YES
+sitemap,loc_count,448,{'200': 448},YES
+sitemap,4xx,0,all members 200,YES
+sitemap,3xx,0,no sitemap member first-hop 3xx,YES
+sitemap,noindex,0,,YES
+sitemap,canonical_defects,0,0 mismatches/missing among sitemap 200s,YES
+links,unintended_internal_404_edges,133,unique_dests=37,NO
+links,unique_404_destinations,37,/netherlands/jobs/starting-consultancy-netherlands:14; /netherlands/services/accountants:9; /netherlands/services/business-consultants:8; /netherlands/services/insurance-brokers:8; /netherlands/services/recruitment-agencies:8; /netherlands/services/career-coaches:7; /netherlands/living/bike-sharing-netherlands:6; /netherlands/services/insurance:5; /netherlands/services/moving-companies:5; /netherlands/services/removal-companies:5...,NO
+links,broken_redirect_chains,0,,YES
+links,internal_3xx_edges,0,unnecessary internal redirect edges,YES
+links,getting-around_staged_transport,0,bike=False;cycling=False,YES
+orphans,/netherlands/living/government-portals-overview,1,sources: /netherlands/practical-life/government-portals-netherlands,YES
+orphans,/netherlands/culture/communication-style,3,"sources: /netherlands/culture, /netherlands/life/dutch-etiquette, /netherlands/life/dutch-social-norms",YES
+orphans,/netherlands/culture/sinterklaas,2,"sources: /netherlands/culture, /netherlands/life/dutch-holidays-and-traditions",YES
+orphans,/netherlands/culture/what-feels-normal-in-dutch-daily-life,3,"sources: /netherlands/culture, /netherlands/life/dutch-holidays-and-traditions, /netherlands/life/dutch-social-norms",YES
+core,/,200,canonical=https://www.expatcopilot.com/;h1=Guides and tools for Netherlands relocation;title=ExpatCopilot | Guides and tools for Netherlands relocation;indexable=True,YES
+core,/netherlands,200,canonical=https://www.expatcopilot.com/netherlands;h1=Move to the Netherlands with a clear plan;title=Move to the Netherlands | ExpatCopilot;indexable=True,YES
+core,/netherlands/health,200,"canonical=https://www.expatcopilot.com/netherlands/health;h1=Healthcare in the Netherlands;title=Healthcare in the Netherlands for Expats | Insurance, GP & Care Guides | ExpatCopilot;indexable=True",YES
+core,/netherlands/education,200,canonical=https://www.expatcopilot.com/netherlands/education;h1=Education & childcare in the Netherlands;title=Education & Childcare in the Netherlands for Expats | Schools Hub | ExpatCopilot;indexable=True,YES
+core,/netherlands/official-figures,200,canonical=https://www.expatcopilot.com/netherlands/official-figures;h1=Netherlands official figures 2026;title=Netherlands official figures 2026 | ExpatCopilot;indexable=True,YES
+core,/netherlands/money/banking/best-banks-expats,200,canonical=https://www.expatcopilot.com/netherlands/money/banking/best-banks-expats;h1=Best Banks for Expats in the Netherlands;title=Best Banks for Expats in the Netherlands | Complete Guide | ExpatCopilot;indexable=True,YES
+core,/netherlands/taxes/30-percent-ruling,200,canonical=https://www.expatcopilot.com/netherlands/taxes/30-percent-ruling;h1=30% Ruling in the Netherlands;title=30% Ruling in the Netherlands | ExpatCopilot;indexable=True,YES
+core,/netherlands/tools/city-comparison,200,"canonical=https://www.expatcopilot.com/netherlands/tools/city-comparison;h1=Netherlands City Comparison Tool;title=Netherlands City Comparison: Best Dutch Cities for Expats, Families & Remote Work | Planning Tool | ExpatCopilot;indexable=True",YES
+image,hero_webp_v2,200,source=/images/heroes/netherlands-leaving-netherlands-hero-premium-v2.webp bytes=116090; next/image w=1080 ~75470 jpeg; w=1920 116090 webp; v1 png not referenced in leaving HTML,YES
+residual_404,/netherlands/jobs/starting-consultancy-netherlands,404,"edges=14; sources=/netherlands/business/starting-a-business-netherlands, /netherlands/business/zzp-netherlands, /netherlands/jobs/contractor-vs-employee-netherlands, /netherlands/jobs/freelancing-netherlands",NO
+residual_404,/netherlands/services/accountants,404,"edges=9; sources=/netherlands/business/starting-a-business-netherlands, /netherlands/business/zzp-netherlands, /netherlands/jobs/contractor-vs-employee-netherlands, /netherlands/jobs/freelancing-netherlands, /netherlands/services/financial-advisors",NO
+residual_404,/netherlands/services/business-consultants,404,"edges=8; sources=/netherlands/business/starting-a-business-netherlands, /netherlands/business/zzp-netherlands, /netherlands/jobs/contractor-vs-employee-netherlands, /netherlands/jobs/freelancing-netherlands, /netherlands/services/financial-advisors",NO
+residual_404,/netherlands/services/insurance-brokers,404,"edges=8; sources=/netherlands/health/health-insurance-comparison-netherlands, /netherlands/services/financial-advisors, /netherlands/services/health-insurance",NO
+residual_404,/netherlands/services/recruitment-agencies,404,"edges=8; sources=/netherlands/jobs/employee-rights-netherlands, /netherlands/jobs/employment-contract-netherlands, /netherlands/jobs/notice-period-netherlands, /netherlands/jobs/probation-period-netherlands, /netherlands/services/immigration-lawyers",NO
+residual_404,/netherlands/services/career-coaches,404,"edges=7; sources=/netherlands/jobs/employee-rights-netherlands, /netherlands/jobs/employment-contract-netherlands, /netherlands/jobs/notice-period-netherlands, /netherlands/jobs/probation-period-netherlands",NO
+residual_404,/netherlands/living/bike-sharing-netherlands,404,"edges=6; sources=/netherlands/living/ns-trains-netherlands, /netherlands/living/ovpay-netherlands",NO
+residual_404,/netherlands/services/insurance,404,"edges=5; sources=/netherlands/services/banks, /netherlands/services/health-insurance",NO
+residual_404,/netherlands/services/moving-companies,404,"edges=5; sources=/netherlands/services/housing-platforms, /netherlands/services/relocation-agencies, /netherlands/services/relocation-services, /netherlands/services/rental-agencies",NO
+residual_404,/netherlands/services/removal-companies,404,"edges=5; sources=/netherlands/services/housing-platforms, /netherlands/services/relocation-agencies, /netherlands/services/relocation-services, /netherlands/services/rental-agencies",NO
+residual_404,/netherlands/living/train-discounts-netherlands,404,"edges=4; sources=/netherlands/living/ns-trains-netherlands, /netherlands/living/ovpay-netherlands",NO
+residual_404,/netherlands/living/weekend-travel-netherlands,404,"edges=4; sources=/netherlands/living/ns-trains-netherlands, /netherlands/living/ovpay-netherlands",NO
+residual_404,/netherlands/living/trams-netherlands,404,"edges=4; sources=/netherlands/living/ns-trains-netherlands, /netherlands/living/ovpay-netherlands",NO
+residual_404,/netherlands/services/immigration-visas,404,"edges=4; sources=/netherlands/services/immigration-lawyers, /netherlands/services/visa-consultants",NO
+residual_404,/netherlands/services/pet-relocation-companies,404,"edges=3; sources=/netherlands/bringing-pets-to-netherlands, /netherlands/family/pets-netherlands",NO
+residual_404,/netherlands/services/daycare-providers,404,edges=3; sources=/netherlands/education/daycare-netherlands,NO
+residual_404,/netherlands/living/museums-netherlands,404,edges=3; sources=/netherlands/family/family-activities-netherlands,NO
+residual_404,/netherlands/living/metro-netherlands,404,"edges=3; sources=/netherlands/living/ns-trains-netherlands, /netherlands/living/ovpay-netherlands",NO
+residual_404,/netherlands/living/regional-buses-netherlands,404,edges=3; sources=/netherlands/living/ovpay-netherlands,NO
+residual_404,/netherlands/living/cycling-netherlands,404,edges=3; sources=/netherlands/living/ovpay-netherlands,NO
+residual_404,/netherlands/services/notaries,404,edges=3; sources=/netherlands/services/financial-advisors,NO
+residual_404,/netherlands/living/hiking-netherlands,404,edges=2; sources=/netherlands/life/making-dutch-friends,NO
+residual_404,/netherlands/services/estate-agents,404,"edges=2; sources=/netherlands/services/financial-advisors, /netherlands/services/rental-agencies",NO
+residual_404,/netherlands/services/documents-legal,404,"edges=2; sources=/netherlands/services/immigration-lawyers, /netherlands/services/visa-consultants",NO
+residual_404,/netherlands/services/expat-tax-services,404,"edges=2; sources=/netherlands/taxes/leaving-netherlands-tax, /netherlands/taxes/taxes-after-moving-netherlands",NO
+residual_404,/netherlands/services/compare-health-insurance,404,edges=2; sources=/netherlands/taxes/tools/healthcare-allowance-estimator,NO
+residual_404,/netherlands/services/international-schools,404,edges=1; sources=/netherlands/education/daycare-netherlands,NO
+residual_404,/netherlands/living/weekend-trips-netherlands,404,edges=1; sources=/netherlands/family/family-activities-netherlands,NO
+residual_404,/netherlands/living/hidden-gems-netherlands,404,edges=1; sources=/netherlands/family/family-activities-netherlands,NO
+residual_404,/netherlands/jobs/networking-netherlands,404,edges=1; sources=/netherlands/jobs/finding-jobs-netherlands,NO
+residual_404,/netherlands/jobs/linkedin-netherlands,404,edges=1; sources=/netherlands/jobs/finding-jobs-netherlands,NO
+residual_404,/netherlands/services/banking-finance,404,edges=1; sources=/netherlands/services/banks,NO
+residual_404,/netherlands/services/phone-providers,404,edges=1; sources=/netherlands/services/mobile-connectivity,NO
+residual_404,/netherlands/services/internet-providers,404,edges=1; sources=/netherlands/services/mobile-connectivity,NO
+residual_404,/netherlands/services/energy-providers,404,edges=1; sources=/netherlands/services/mobile-connectivity,NO
+residual_404,/netherlands/services/storage-companies,404,edges=1; sources=/netherlands/services/rental-agencies,NO
+residual_404,/netherlands/services/payroll-services,404,edges=1; sources=/netherlands/taxes/taxes-after-moving-netherlands,NO

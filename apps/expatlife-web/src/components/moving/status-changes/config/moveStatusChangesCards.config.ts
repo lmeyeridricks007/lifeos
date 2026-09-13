@@ -68,6 +68,7 @@ export const moveStatusChangesCards = {
         description: "Route doorway page when study is ending and work may become the new basis of stay.",
       },
       relatedLinks: [
+        { label: "Orientation year (zoekjaar)", href: "/netherlands/visa/orientation-year/" },
         { label: "Student visa guide", href: "/netherlands/visa/student-visa/" },
         { label: "Moving hub", href: HUB },
       ],

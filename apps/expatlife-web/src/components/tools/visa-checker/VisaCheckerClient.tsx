@@ -260,7 +260,7 @@ export function VisaCheckerClient({
     [recommendation]
   );
   const tableRoutes = useMemo(
-    () => getRoutesBySlugs(allSuggestedSlugs.length > 0 ? (allSuggestedSlugs as VisaRouteSlug[]) : ["highly-skilled-migrant", "eu-blue-card", "dutch-american-friendship-treaty", "self-employed-visa", "student-visa", "partner-family-visa"]),
+    () => getRoutesBySlugs(allSuggestedSlugs.length > 0 ? (allSuggestedSlugs as VisaRouteSlug[]) : ["highly-skilled-migrant", "eu-blue-card", "dutch-american-friendship-treaty", "self-employed-visa", "student-visa", "orientation-year", "partner-family-visa"]),
     [allSuggestedSlugs]
   );
 

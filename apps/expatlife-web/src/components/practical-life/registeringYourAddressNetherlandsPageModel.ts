@@ -60,27 +60,25 @@ export const registeringYourAddressNetherlandsPage = {
   publish: true,
   publishDate: "2026-10-11",
   seo: {
-    title: "Registering Your Address in the Netherlands | Complete Expat Guide",
+    title: "Registering Your Address in the Netherlands | Appointments & Mechanics",
     description:
-      "Learn how to register your address in the Netherlands, obtain a BSN, work with your municipality and complete one of the most important steps after moving.",
+      "Practical address registration guide: gemeente appointments, documents, temporary housing, DigiD post delivery and address changes — distinct from the BRP obligation overview.",
     keywords: [
       "register address netherlands",
       "address registration netherlands",
-      "municipality registration netherlands",
       "expat address registration netherlands",
       "register with gemeente netherlands",
-      "bsn registration netherlands",
-      "moving netherlands registration",
-      "dutch municipality registration",
+      "gemeente appointment netherlands",
+      "temporary address netherlands",
+      "digid registered address",
       "register residence netherlands",
-      "gemeente registration",
     ],
   },
   hero: {
     eyebrow: "Practical life guide",
     pageTitle: "Registering Your Address in the Netherlands",
     subtitle:
-      "Learn how address registration works, what documents you need and how registration connects to your BSN, healthcare, taxes and daily life in the Netherlands.",
+      "Address registration mechanics — booking appointments, documents, temporary housing and DigiD post. For BRP rules and who must register, see municipality registration.",
     primaryCta: { label: "Understand Registration", href: "#intro" },
     secondaryCta: { label: "Explore Municipality Services", href: MUNICIPALITY_SERVICES_PATH },
     image: {
@@ -631,16 +629,16 @@ export const registeringYourAddressNetherlandsPage = {
   ] satisfies TipCard[],
   nextServices: [
     {
-      label: "BSN Netherlands",
-      href: BSN_NETHERLANDS_PATH,
-      status: "comingSoon",
-      description: "Focused practical-life guide to BSN routes, documents and timing.",
+      label: "BSN Registration",
+      href: BSN_REGISTRATION_PATH,
+      status: "live",
+      description: "How you receive a BSN, documents and city appointment context.",
     },
     {
-      label: "DigiD Netherlands",
+      label: "DigiD in the Netherlands",
       href: DIGID_NETHERLANDS_PATH,
-      status: "comingSoon",
-      description: "Step-by-step digital identity setup after registration.",
+      status: "live",
+      description: "Complete DigiD setup, security and portal login after registration.",
     },
     {
       label: "Health Insurance",
@@ -731,21 +729,27 @@ export const registeringYourAddressNetherlandsPage = {
   ],
   relatedGuides: [
     {
+      label: "Municipality Registration (BRP)",
+      href: "/netherlands/municipality-registration-netherlands/",
+      status: "live",
+      description: "Who must register, BRP deadlines and how BSN is issued — the legal/process overview.",
+    },
+    {
       label: "Municipality Services",
       href: MUNICIPALITY_SERVICES_PATH,
       status: "live",
       description: "Broader gemeente services including taxes, parking and waste.",
     },
     {
-      label: "BSN Netherlands",
-      href: BSN_NETHERLANDS_PATH,
-      status: "comingSoon",
+      label: "BSN Registration",
+      href: BSN_REGISTRATION_PATH,
+      status: "live",
       description: "Deep dive on BSN routes and documents.",
     },
     {
-      label: "DigiD Netherlands",
+      label: "DigiD in the Netherlands",
       href: DIGID_NETHERLANDS_PATH,
-      status: "comingSoon",
+      status: "live",
       description: "Digital identity setup after registration.",
     },
     {

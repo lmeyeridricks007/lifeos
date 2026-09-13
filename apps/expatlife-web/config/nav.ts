@@ -77,6 +77,7 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
           link("Compare visas", "/netherlands/visa/compare-visas", "Compare work, student, partner & entrepreneur routes"),
           link("Visa checker", "/netherlands/visa-checker", "Find the best visa for your situation"),
           link("Highly skilled migrant", "/netherlands/visa/highly-skilled-migrant", "Sponsor-based permits"),
+          link("Orientation year (zoekjaar)", "/netherlands/visa/orientation-year/", "After study/research: search year & free work rights", false),
           link("EU Blue Card", "/netherlands/visa/eu-blue-card", "EU-wide skilled work route"),
           link("DAFT (US entrepreneurs)", "/netherlands/visa/dutch-american-friendship-treaty", "US self-employed route"),
           link("Self-employed visa", "/netherlands/visa/self-employed-visa", "Entrepreneur / freelancer route"),
@@ -348,8 +349,12 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
             "Tax vs permit labels, ties, arrival/departure years, cross-border orientation — not advice",
             false
           ),
-          link("Taxes", "/netherlands/money/taxes", "Tax basics"),
-          link("Tax readiness", "/netherlands/money/taxes/readiness-score", "Readiness scoring"),
+          link(
+            "Netherlands taxes hub",
+            "/netherlands/taxes/",
+            "Topic IA: 30% ruling, payroll, allowances, calculators",
+            false
+          ),
         ],
       },
       {
@@ -379,7 +384,7 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
         title: "Insurance + Retirement",
         links: [
           link("Insurance", "/netherlands/money/insurance", "Coverage planning"),
-          link("Health insurance", "/netherlands/money/insurance/health", "Health setup"),
+          link("Health insurance", "/netherlands/health-insurance-netherlands/", "Health setup"),
           link("Retirement", "/netherlands/money/retirement", "Long-term planning"),
         ],
       },
@@ -462,8 +467,10 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
         title: "Health",
         links: [
           link("Health hub", "/netherlands/health", "Healthcare setup"),
-          link("GP registration", "/netherlands/health/gp-registration", "Primary care setup"),
-          link("Emergency basics", "/netherlands/health/emergency-basics", "Emergency orientation"),
+          link("GP / huisarts", "/netherlands/health/gp-netherlands", "Primary care setup"),
+          link("Emergency healthcare", "/netherlands/health/emergency-healthcare-netherlands", "Emergency orientation"),
+          link("Health insurance", "/netherlands/health-insurance-netherlands/", "Insurance mandate & basics"),
+          link("Healthcare basics", "/netherlands/living/healthcare-basics", "How the system works"),
         ],
       },
     ],
@@ -608,7 +615,12 @@ export const MEGA_MENU: Record<TopNavKey, MegaMenuSection> = {
             "ING, ABN AMRO, bunq, Revolut, N26 — structured comparison",
             false
           ),
-          link("Tax readiness", "/netherlands/money/taxes/readiness-score", "Readiness check"),
+          link(
+            "Netherlands taxes hub",
+            "/netherlands/taxes/",
+            "Tax topic IA and calculators",
+            false
+          ),
         ],
       },
     ],

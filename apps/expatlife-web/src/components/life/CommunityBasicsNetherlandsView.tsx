@@ -56,6 +56,7 @@ import {
   type ChecklistItem,
   type LifeGuideLink,
 } from "./communityBasicsNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -211,7 +212,7 @@ function ChallengeCopingGrid() {
 }
 
 function LinkOrPlanned({ item, className }: { item: LifeGuideLink; className?: string }) {
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const content = (
     <div className="flex h-full flex-col">
       <span className="block text-base font-black leading-snug tracking-tight text-foreground">{item.label}</span>

@@ -59,6 +59,7 @@ import {
   type FamilyActivitiesLink,
   type MistakeCard as MistakeCardData,
 } from "./familyActivitiesNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 
@@ -438,7 +439,7 @@ function LinkCard({
 }) {
   const Icon = iconPool[iconIndex % iconPool.length];
   const isExternal = item.status === "external";
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

@@ -28,6 +28,18 @@ import {
   HSM_CONTENT_LAST_REVIEWED,
 } from "@/src/content/visas/hsmJobSearchWindow";
 import {
+  IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL,
+  IND_REQUIRED_AMOUNTS_GUIDE_LAST_UPDATED,
+  IND_REQUIRED_AMOUNTS_LAST_VERIFIED,
+  IND_REQUIRED_AMOUNTS_URL,
+  OFFICIAL_FIGURES_PATH_HREF,
+  SELF_EMPLOYED_MONTHLY_PROFIT_DISPLAY,
+} from "@/src/lib/statutory/indRequiredAmounts";
+import {
+  HSM_BLUE_CARD_GUIDE_LAST_UPDATED,
+  HSM_BLUE_CARD_THRESHOLDS_LAST_VERIFIED,
+} from "@/src/lib/freshness/hsmBlueCardThresholdsFreshness";
+import {
   CHANGING_JOBS_NL_PATH,
   FIRST_90_DAYS_TOOL_PATH,
   HSM_JOB_LOSS_SECTION_ID,
@@ -530,6 +542,7 @@ export function highlySkilledMigrantToGuideData(v: VisaPageData): GuideData {
     subtitle: "What it is, who it is for, salary thresholds, employer requirements, and how to plan your move if you are relocating on a recognized sponsor route.",
     description: v.summary,
     lastUpdated: HSM_CONTENT_LAST_REVIEWED,
+    dateModified: "2026-08-26",
     heroOfficialSources: [
       {
         label: "IND — Highly skilled migrant",
@@ -864,9 +877,25 @@ export function euBlueCardToGuideData(v: VisaPageData): GuideData {
     subtitle:
       "What the EU Blue Card is, who it is for, current salary thresholds, how it differs from the Highly Skilled Migrant route, and how to turn this work visa route into a practical relocation plan.",
     description: v.summary,
+    lastUpdated: HSM_BLUE_CARD_GUIDE_LAST_UPDATED,
+    dateModified: HSM_BLUE_CARD_THRESHOLDS_LAST_VERIFIED,
+    heroOfficialSources: [
+      {
+        label: "IND — European Blue Card",
+        href: "https://ind.nl/en/residence-permits/work/european-blue-card-residence-permit",
+      },
+      {
+        label: "IND — Required amounts (2026)",
+        href: "https://ind.nl/en/required-amounts-income-requirements",
+      },
+      {
+        label: "IND — Application fees",
+        href: "https://ind.nl/en/fees-costs-of-an-application",
+      },
+    ],
     hero: {
       eyebrow: "VISA GUIDE",
-      badges: [v.category],
+      badges: [v.category, "2026 IND figures"],
       image: {
         src: v.heroImage,
         alt: v.heroImageAlt,
@@ -1191,6 +1220,7 @@ export function daftToGuideData(v: VisaPageData): GuideData {
   }));
 }
 
+const ORIENTATION_YEAR_GUIDE_HREF = "/netherlands/visa/orientation-year/";
 const ORIENTATION_YEAR_IND_URL = "https://ind.nl/en/residence-permits/work/residence-permit-for-orientation-year";
 
 /** Converts Student Visa VisaPageData to GuideData for the student visa pillar page. */
@@ -1226,7 +1256,7 @@ export function studentToGuideData(v: VisaPageData): GuideData {
       { label: "First 90 days in the Netherlands", href: `${BASE}/first-90-days-netherlands/` },
       { label: "Cost of moving to the Netherlands", href: `${BASE}/moving-to-netherlands-cost/` },
       { label: "Open a Dutch bank account in the Netherlands", href: `${BASE}/open-bank-account-netherlands/` },
-      { label: "Orientation year (IND)", href: ORIENTATION_YEAR_IND_URL },
+      { label: "Orientation year (zoekjaar)", href: ORIENTATION_YEAR_GUIDE_HREF },
     ],
   };
 
@@ -1249,7 +1279,7 @@ export function studentToGuideData(v: VisaPageData): GuideData {
       { label: "Move to the Netherlands without a job", href: `${BASE}/move-to-netherlands-without-job/` },
       { label: "Highly Skilled Migrant visa", href: `${BASE}/visa/highly-skilled-migrant/` },
       { label: "EU Blue Card", href: `${BASE}/visa/eu-blue-card/` },
-      { label: "Orientation year (IND)", href: ORIENTATION_YEAR_IND_URL },
+      { label: "Orientation year (zoekjaar)", href: ORIENTATION_YEAR_GUIDE_HREF },
     ],
   };
 
@@ -1364,7 +1394,8 @@ export function studentToGuideData(v: VisaPageData): GuideData {
       "Students often want to understand what work options exist during study and after graduation. Work rights during study are limited and depend on your permit and nationality. After graduation, the Orientation Year (search year) permit can allow you to stay and look for work in the Netherlands. Do not overstate work rights; confirm with the IND and your institution.",
     ],
     links: [
-      { label: "Orientation year (IND)", href: ORIENTATION_YEAR_IND_URL },
+      { label: "Orientation year (zoekjaar) guide", href: ORIENTATION_YEAR_GUIDE_HREF },
+      { label: "IND — Orientation year (official)", href: ORIENTATION_YEAR_IND_URL },
       { label: "Highly Skilled Migrant visa", href: `${BASE}/visa/highly-skilled-migrant/` },
       { label: "EU Blue Card", href: `${BASE}/visa/eu-blue-card/` },
     ],
@@ -1570,7 +1601,7 @@ export function partnerFamilyToGuideData(v: VisaPageData): GuideData {
     id: "income-requirements",
     heading: "Income requirements",
     body: [
-      "The sponsor must prove independent and sustainable income at or above the amount required by the IND. Amounts can change; check the IND income requirements page for current figures.",
+      `The sponsor must prove independent and sustainable income at or above the amount required by the IND. Figures below are the official IND required amounts effective ${IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL}. Amounts can change mid-year; verify the live IND page before applying.`,
     ],
     table: v.incomeRequirements?.length
       ? {
@@ -1578,7 +1609,15 @@ export function partnerFamilyToGuideData(v: VisaPageData): GuideData {
           rows: v.incomeRequirements.map((i) => [i.label, i.amount, i.note ?? ""]),
         }
       : undefined,
-    links: [{ label: "IND income requirements", href: "https://ind.nl/en/required-amounts-income-requirements" }],
+    callout: {
+      type: "info",
+      title: "Official IND thresholds",
+      text: `Effective ${IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL}. Sourced from IND required amounts — not ExpatCopilot estimates. See the dated citation table for provenance.`,
+    },
+    links: [
+      { label: "IND required amounts income requirements", href: IND_REQUIRED_AMOUNTS_URL },
+      { label: "Netherlands official figures (dated citation table)", href: OFFICIAL_FIGURES_PATH_HREF },
+    ],
   };
 
   const processSection: GuideSection = {
@@ -1753,9 +1792,25 @@ export function partnerFamilyToGuideData(v: VisaPageData): GuideData {
     subtitle:
       "How to join your spouse, partner, or family member in the Netherlands — requirements, costs, timelines, and application steps.",
     description: v.summary,
+    lastUpdated: IND_REQUIRED_AMOUNTS_GUIDE_LAST_UPDATED,
+    dateModified: IND_REQUIRED_AMOUNTS_LAST_VERIFIED,
+    heroOfficialSources: [
+      {
+        label: "IND — Partner residence permit",
+        href: "https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-partner",
+      },
+      {
+        label: "IND — Required amounts",
+        href: IND_REQUIRED_AMOUNTS_URL,
+      },
+      {
+        label: "Official figures citation table",
+        href: OFFICIAL_FIGURES_PATH_HREF,
+      },
+    ],
     hero: {
       eyebrow: "VISA GUIDE",
-      badges: [v.category],
+      badges: [v.category, "2026 IND figures"],
       image: {
         src: v.heroImage,
         alt: v.heroImageAlt,
@@ -1783,6 +1838,7 @@ export function partnerFamilyToGuideData(v: VisaPageData): GuideData {
     sidebarStartLinks: [
       { label: "Compare visa options", href: COMPARE_VISAS_HREF },
       { label: "Visa checker", href: `${BASE}/visa-checker/` },
+      { label: "Official figures 2026", href: OFFICIAL_FIGURES_PATH_HREF },
       { label: "Check if you qualify", href: DOCUMENT_READINESS_CHECKER },
       { label: "Calculate relocation costs", href: `${TOOLS}/relocation-cost-estimator/` },
       { label: "Moving checklist", href: `${TOOLS}/moving-checklist/` },
@@ -1841,7 +1897,7 @@ export function selfEmployedToGuideData(v: VisaPageData): GuideData {
     ],
   };
 
-  const requiredAmount = v.incomeRequirements?.[0]?.amount ?? "€1,734.57";
+  const requiredAmount = v.incomeRequirements?.[0]?.amount ?? SELF_EMPLOYED_MONTHLY_PROFIT_DISPLAY;
   const quickAnswers = [
     { label: "Route type", value: v.keyFacts.routeType },
     { label: "Common users", value: v.keyFacts.commonUsers },
@@ -1896,13 +1952,17 @@ export function selfEmployedToGuideData(v: VisaPageData): GuideData {
       rows: [...incomeRows, ["IND application fee", v.fees.applicationFee, v.fees.note ?? ""]],
     },
     body: [
-      "This figure should be treated as a current official planning figure, not the whole story of approval. The self-employed route usually also depends on business viability and the full application context. Values can change over time.",
+      `The profit figure below is the official IND required amount effective ${IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL}. Treat it as a planning threshold, not the whole story of approval — business viability and the full application still matter. Values can change mid-year.`,
     ],
     callout: {
       type: "info",
-      title: "Figures can change",
-      text: "Fees and required amounts are maintained in a central data file; always check the IND fees and required amounts pages for current values.",
+      title: "Official IND thresholds",
+      text: `Required profit comes from the shared IND statutory module (effective ${IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL}). Always check the IND fees and required amounts pages for live values.`,
     },
+    links: [
+      { label: "IND required amounts income requirements", href: IND_REQUIRED_AMOUNTS_URL },
+      { label: "Netherlands official figures (dated citation table)", href: OFFICIAL_FIGURES_PATH_HREF },
+    ],
     ctaBlock: {
       title: "Estimate your relocation cost",
       supportingText: "Use the Relocation Cost Estimator to plan first-year costs for a self-employed move.",
@@ -2048,9 +2108,25 @@ export function selfEmployedToGuideData(v: VisaPageData): GuideData {
     subtitle:
       "What the Dutch self-employed route is, who it is for, how it differs from DAFT and startup visas, what current profit and fee figures to plan around, and how to turn your business move into a practical relocation plan.",
     description: v.summary,
+    lastUpdated: IND_REQUIRED_AMOUNTS_GUIDE_LAST_UPDATED,
+    dateModified: IND_REQUIRED_AMOUNTS_LAST_VERIFIED,
+    heroOfficialSources: [
+      {
+        label: "IND — Self-employed residence permit",
+        href: "https://ind.nl/en/residence-permits/work/residence-permit-self-employed-person",
+      },
+      {
+        label: "IND — Required amounts",
+        href: IND_REQUIRED_AMOUNTS_URL,
+      },
+      {
+        label: "Official figures citation table",
+        href: OFFICIAL_FIGURES_PATH_HREF,
+      },
+    ],
     hero: {
       eyebrow: "VISA GUIDE",
-      badges: [v.category],
+      badges: [v.category, "2026 IND figures"],
       image: {
         src: v.heroImage,
         alt: v.heroImageAlt,
@@ -2078,6 +2154,7 @@ export function selfEmployedToGuideData(v: VisaPageData): GuideData {
     sidebarStartLinks: [
       { label: "Compare visa options", href: COMPARE_VISAS_HREF },
       { label: "Visa checker", href: `${BASE}/visa-checker/` },
+      { label: "Official figures 2026", href: OFFICIAL_FIGURES_PATH_HREF },
       { label: "Visa timeline estimator", href: `${BASE}/visa-timeline-estimator/` },
       { label: "Check document readiness", href: DOCUMENT_READINESS_CHECKER },
       { label: "Estimate relocation cost", href: `${TOOLS}/relocation-cost-estimator/` },

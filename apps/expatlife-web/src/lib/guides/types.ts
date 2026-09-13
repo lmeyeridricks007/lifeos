@@ -389,6 +389,13 @@ export type GuideData = {
   resourcesAffiliatePlacementId?: string;
   disclosure?: string;
   lastUpdated?: string;
+  /**
+   * ISO YYYY-MM-DD for Article/WebPage `dateModified`.
+   * Must match an actual review — never invent build-day dates.
+   */
+  dateModified?: string;
+  /** Statutory figure window shown as "Effective: …" in the ATF trust strip. */
+  effectivePeriodLabel?: string;
   /** Official source links shown above the fold in the hero (GEO / verify-on-source). */
   heroOfficialSources?: Array<{ label: string; href: string }>;
   /** Optional ISO date for structured data (origin-country guides with a scheduled publish date). */

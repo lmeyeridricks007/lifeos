@@ -43,19 +43,19 @@ export const healthNetherlandsHubPage = {
   overview: [
     "Dutch healthcare is GP-first for most non-urgent needs. Almost everyone must take out basic health insurance (basisverzekering), then register with a huisarts (GP) who opens referrals, prescriptions and many follow-up pathways.",
     "Use this hub to pick the right guide for your stage — setup, everyday care, urgent situations or family care — instead of jumping between sibling articles without a map.",
-    "Figures such as eigen risico and premium bands belong on Official figures and the insurance guides; this page organises the journey, not the statute table.",
+    "Keep roles clear: Healthcare basics explains how the system works; the Health insurance guide covers mandate, deadlines and packages; the Comparison page covers decision factors; the Services directory lists providers. Figures such as eigen risico belong on Official figures and those insurance pages — not duplicated as a statute table here.",
   ],
   journeySections: [
     {
       id: "get-covered",
       title: "1. Get covered",
       intro:
-        "Insurance is the gate to most paid care. Start with the insurance guide, then use the comparison framework and allowance context when money is the bottleneck.",
+        "Insurance is the gate to most paid care. Start with the insurance guide for who must insure and when, then the comparison framework for how to choose, then the allowance guide/estimator when income support may apply.",
       links: [
         {
           label: "Health insurance guide",
           href: "/netherlands/health-insurance-netherlands",
-          description: "Basic package, deadlines, deductible and how policies fit everyday care.",
+          description: "Who must insure, deadlines, basic package and deductible — source-of-record for the mandate.",
         },
         {
           label: "Health insurance comparison",
@@ -71,6 +71,24 @@ export const healthNetherlandsHubPage = {
           label: "Healthcare allowance estimator",
           href: "/netherlands/taxes/tools/healthcare-allowance-estimator",
           description: "Planning tool for allowance thresholds — verify on Belastingdienst.",
+        },
+      ],
+    },
+    {
+      id: "system-map",
+      title: "1b. How the system works",
+      intro:
+        "Before or alongside insurance shopping, learn how Dutch care is organised — GP gatekeeping, specialists, hospitals and payment model.",
+      links: [
+        {
+          label: "Healthcare basics",
+          href: "/netherlands/living/healthcare-basics",
+          description: "Everyday system overview: primary care, referrals and what to expect.",
+        },
+        {
+          label: "Official figures",
+          href: "/netherlands/official-figures",
+          description: "Dated eigen risico and premium-band mirrors for planning.",
         },
       ],
     },

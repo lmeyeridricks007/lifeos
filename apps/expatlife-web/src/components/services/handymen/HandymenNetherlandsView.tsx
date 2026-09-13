@@ -50,6 +50,7 @@ import {
   type HandymanLink,
   type HandymanProvider,
 } from "./handymenNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -158,7 +159,7 @@ function FeatureCard({ title, body, iconIndex = 0 }: { title: string; body: stri
 function LinkCard({ item, iconIndex = 0 }: { item: HandymanLink; iconIndex?: number }) {
   const icons = [Truck, Building2, Package, FileText, Globe2, ShieldCheck] as const;
   const Icon = icons[iconIndex % icons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const body = (
     <>
       <div className={cn("absolute inset-x-0 top-0 h-1.5 rounded-t-2xl", isLive ? movingNlSignatureGradientClass : "bg-slate-200")} aria-hidden />

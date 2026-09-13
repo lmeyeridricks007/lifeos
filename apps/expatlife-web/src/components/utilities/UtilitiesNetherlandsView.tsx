@@ -40,6 +40,7 @@ import { movingNlCardMicroLiftClass, movingNlSignatureGradientClass } from "@/li
 import { GuidePremiumVisualFigure } from "@/src/components/guides/GuidePremiumVisualFigure";
 import { utilitiesNetherlandsPage as page, type UtilitiesLink } from "./utilitiesNetherlandsPageModel";
 import { INTERNET_AND_MOBILE_NETHERLANDS_PATH } from "./internetAndMobileNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 
@@ -71,7 +72,7 @@ function SectionIntro({
 }
 
 function LinkOrPlanned({ item, className }: { item: UtilitiesLink; className?: string }) {
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const content = (
     <div className="flex h-full flex-col">
       <span className="block text-base font-black leading-snug tracking-tight text-foreground">{item.label}</span>

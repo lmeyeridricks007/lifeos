@@ -1,6 +1,8 @@
 /**
  * Planning figures for HSM (kennismigrant) and EU Blue Card salary floors — verify on IND before you sign.
  * Re-verified 7 Sep 2026 against IND required-amounts (HSM page last update still 18 Aug 2026); unchanged vs 6 Sep.
+ *
+ * @see HSM_BLUE_CARD_THRESHOLDS_LAST_VERIFIED in src/lib/freshness/hsmBlueCardThresholdsFreshness.ts
  */
 export const HSM_SALARY_FIGURE_YEAR = "2026" as const;
 

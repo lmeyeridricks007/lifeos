@@ -58,6 +58,7 @@ import {
   internationalSchoolsNetherlandsPage as page,
   type InternationalSchoolsLink,
 } from "./internationalSchoolsNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -214,7 +215,7 @@ function MiniStatCard({ label, value, note }: { label: string; value: string; no
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: InternationalSchoolsLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

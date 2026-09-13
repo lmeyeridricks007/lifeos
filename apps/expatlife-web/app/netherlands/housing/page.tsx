@@ -5,6 +5,7 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { HousingNetherlandsView } from "@/src/components/housing/HousingNetherlandsView";
 import { housingNetherlandsPage as page } from "@/src/components/housing/housingNetherlandsPageModel";
+import { resolveSchemaDateModified } from "@/src/lib/freshness/format";
 
 const baseUrl = getSiteOrigin();
 
@@ -63,12 +64,23 @@ function HousingCollectionJsonLd() {
 }
 
 export default function HousingNetherlandsPage() {
-  const dateModified = new Date().toISOString().slice(0, 10);
+  const dateModified = resolveSchemaDateModified({
+    lastReviewedIso: "lastReviewedIso" in page ? page.lastReviewedIso : null,
+    lastReviewedText: "lastReviewed" in page ? `Last reviewed: ${page.lastReviewed}` : null,
+    publishDateIso: page.publishDate,
+  });
 
   return (
     <>
       <WebPageJsonLd name={page.hero.pageTitle} description={page.seo.description} urlPath={page.path} datePublished={page.publishDate} />
-      <ArticleJsonLd headline={page.hero.pageTitle} description={page.seo.description} dateModified={dateModified} urlPath={page.path} />
+      {dateModified ? (
+        <ArticleJsonLd
+          headline={page.hero.pageTitle}
+          description={page.seo.description}
+          dateModified={dateModified}
+          urlPath={page.path}
+        />
+      ) : null}
       <FaqPageJsonLd items={page.faqs} url={new URL(page.path, baseUrl).toString()} />
       <HousingCollectionJsonLd />
       <HousingNetherlandsView />

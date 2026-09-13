@@ -164,6 +164,7 @@ const routeCategories = {
       whatMattersNext:
         "Map the hand-off between study ending and what comes next, especially if work, insurance, and housing plans are already moving.",
       relatedLinks: [
+        { label: "Orientation year (zoekjaar)", href: "/netherlands/visa/orientation-year/" },
         { label: "Student visa guide", href: "/netherlands/visa/student-visa/" },
         { label: "Compare visa routes", href: "/netherlands/visa/compare-visas/" },
         { label: "Status-change situations", href: "#common-situations" },

@@ -1,7 +1,7 @@
 /**
  * Netherlands partner & family visa / residence permit – data source for the canonical pillar page.
  * Covers partner residence permit, family reunification, spouse, and family member routes.
- * Figures (fees, income) are maintained here for easy updates; see IND for official current values.
+ * Sponsor income thresholds come from the shared IND statutory module — do not hardcode.
  * @see https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-partner
  * @see https://ind.nl/en/fees-costs-of-an-application
  * @see https://ind.nl/en/required-amounts-income-requirements
@@ -9,6 +9,13 @@
  */
 
 import type { VisaPageData } from "./types";
+import {
+  IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL,
+  IND_REQUIRED_AMOUNTS_URL,
+  OFFICIAL_FIGURES_PATH_HREF,
+  PARTNER_FAMILY_SPONSOR_EXCL_HOLIDAY_DISPLAY,
+  PARTNER_FAMILY_SPONSOR_INCL_HOLIDAY_DISPLAY,
+} from "@/src/lib/statutory/indRequiredAmounts";
 
 const BASE = "/netherlands";
 const TOOLS = `${BASE}/moving/tools`;
@@ -86,8 +93,16 @@ export const PARTNER_FAMILY_VISA: VisaPageData = {
   },
 
   incomeRequirements: [
-    { label: "Minimum income (excluding holiday allowance)", amount: "€2,294.40", note: "per month" },
-    { label: "Minimum income (including holiday allowance)", amount: "€2,477.95", note: "per month" },
+    {
+      label: "Minimum income (excluding holiday allowance)",
+      amount: PARTNER_FAMILY_SPONSOR_EXCL_HOLIDAY_DISPLAY,
+      note: `per month · effective ${IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL}`,
+    },
+    {
+      label: "Minimum income (including holiday allowance)",
+      amount: PARTNER_FAMILY_SPONSOR_INCL_HOLIDAY_DISPLAY,
+      note: `per month · effective ${IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL}`,
+    },
   ],
 
   costBreakdown: [
@@ -201,10 +216,16 @@ export const PARTNER_FAMILY_VISA: VisaPageData = {
 
   officialSources: [
     { label: "IND Partner Residence Permit", href: "https://ind.nl/en/residence-permits/family-and-partner/residence-permit-for-partner" },
+    { label: "IND required amounts (income requirements)", href: IND_REQUIRED_AMOUNTS_URL },
     { label: "Government NL checklist: bringing a foreign partner", href: "https://www.government.nl/topics/immigration-to-the-netherlands/question-and-answer/checklist-bringing-a-foreign-partner-to-the-netherlands" },
+    { label: "Netherlands official figures (ExpatCopilot citation table)", href: OFFICIAL_FIGURES_PATH_HREF },
   ],
 
   faq: [
+    {
+      q: "What income does the sponsor need?",
+      a: `The IND publishes required amounts for partner and family sponsors. For ${IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL}, the standard sponsor amount is ${PARTNER_FAMILY_SPONSOR_EXCL_HOLIDAY_DISPLAY} gross SV salary per month excluding holiday allowance, or ${PARTNER_FAMILY_SPONSOR_INCL_HOLIDAY_DISPLAY} including holiday allowance. These are official IND thresholds — always verify the live IND required-amounts page before applying.`,
+    },
     {
       q: "Can my partner work in the Netherlands?",
       a: "Yes. Spouses and partners who receive the partner residence permit generally have full work authorization. No separate work permit is required.",
@@ -228,6 +249,7 @@ export const PARTNER_FAMILY_VISA: VisaPageData = {
   ],
 
   relatedGuides: [
+    { label: "Netherlands official figures 2026", href: OFFICIAL_FIGURES_PATH_HREF },
     { label: "Moving to the Netherlands from the United States", href: `${BASE}/moving/moving-to-netherlands-from/united-states/` },
     { label: "Moving to the Netherlands from the United Kingdom", href: `${BASE}/moving/moving-to-netherlands-from/united-kingdom/` },
     { label: "Moving to the Netherlands from India", href: `${BASE}/moving/moving-to-netherlands-from/india/` },

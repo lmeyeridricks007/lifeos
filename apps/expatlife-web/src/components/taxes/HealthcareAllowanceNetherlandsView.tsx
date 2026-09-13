@@ -45,6 +45,7 @@ import {
   CITIES_FUNNEL_SECTION_SCROLL_MARGIN,
   CITIES_FUNNEL_SOFT_COPILOT_SURFACE,
 } from "@/src/components/cities/shared/citiesFunnelPageUi";
+import { GuideHeroTrustMeta } from "@/src/components/guides/GuideHeroTrustMeta";
 import {
   healthcareAllowanceNetherlandsPage as page,
   BONUS_TAX_NETHERLANDS_PATH,
@@ -55,6 +56,7 @@ import {
   TAXES_HUB_PATH,
   type HealthcareAllowanceNetherlandsLink,
 } from "./healthcareAllowanceNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const sectionClass = cn(CITIES_FUNNEL_SECTION_SCROLL_MARGIN, CITIES_FUNNEL_SOFT_COPILOT_SURFACE, "p-6 sm:p-8");
 const sectionStackClass = "mt-6 space-y-5 sm:space-y-6 md:space-y-7";
@@ -130,7 +132,7 @@ function VisualFigure({ visual, className }: { visual: (typeof page.infographics
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: HealthcareAllowanceNetherlandsLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = linkIcons[iconIndex % linkIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const shell = onDark
     ? "relative overflow-hidden rounded-2xl border border-white/10 bg-white/10 p-5 shadow-sm ring-1 ring-white/10"
@@ -521,6 +523,13 @@ export function HealthcareAllowanceNetherlandsView() {
                   <h1 className="mt-3 text-4xl font-black tracking-tight text-foreground sm:text-5xl lg:text-6xl">{page.hero.pageTitle}</h1>
                   <p className="mt-5 max-w-2xl text-lg leading-relaxed text-foreground-muted sm:text-xl">{page.hero.subtitle}</p>
                   <div className="mt-6 flex flex-wrap gap-2">{page.hero.chips.map((chip) => <span key={chip} className={CITIES_FUNNEL_INFO_CHIP}>{chip}</span>)}</div>
+                  {"lastReviewed" in page && page.lastReviewed ? (
+                    <GuideHeroTrustMeta
+                      className="mt-4"
+                      lastReviewed={page.lastReviewed}
+                      sources={"heroOfficialSources" in page ? page.heroOfficialSources : undefined}
+                    />
+                  ) : null}
                   <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                     <Link href={page.hero.primaryCta.href} className={primaryCtaClass}>{page.hero.primaryCta.label}<ArrowRight className="h-4 w-4" aria-hidden /></Link>
                     <Link href={page.hero.secondaryCta.href} className={secondaryCtaClass}>{page.hero.secondaryCta.label}</Link>

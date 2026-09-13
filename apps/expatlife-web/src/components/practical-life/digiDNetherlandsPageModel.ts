@@ -81,10 +81,18 @@ export const digiDNetherlandsPage = {
   parentGuidePath: MUNICIPALITY_SERVICES_PATH,
   publish: true,
   publishDate: "2026-10-25",
+  /** Actual editorial review — not the scheduled publishDate. */
+  lastReviewed: "13 September 2026",
+  lastReviewedIso: "2026-09-13",
+  heroOfficialSources: [
+    { label: "DigiD", href: "https://www.digid.nl/" },
+    { label: "Government.nl", href: "https://www.government.nl/" },
+    { label: "Rijksoverheid", href: "https://www.rijksoverheid.nl/" },
+  ],
   seo: {
-    title: "DigiD in the Netherlands | Complete Expat Guide",
+    title: "DigiD in the Netherlands | Security, Portals & Setup Guide",
     description:
-      "Learn what DigiD is, how it works, who can get it and why it is essential for healthcare, taxes, municipalities and government services in the Netherlands.",
+      "Complete DigiD cornerstone for expats: eligibility, BSN link, security, portal login use cases, activation pitfalls and official sources — after you already understand why DigiD matters.",
     keywords: [
       "digid netherlands",
       "what is digid",
@@ -102,7 +110,7 @@ export const digiDNetherlandsPage = {
     eyebrow: "Practical life guide",
     pageTitle: "DigiD in the Netherlands",
     subtitle:
-      "Understand how DigiD works, why it is important and how it helps residents access healthcare, taxes, municipalities and government services online.",
+      "Operational DigiD guide — eligibility, security, portal logins and common mistakes. For first-week arrival timing, start with DigiD awareness after BSN.",
     chips: ["Digital identity", "BSN & registration", "Government portals", "Official sources only"],
     disclaimer:
       "Practical orientation only — not identity verification advice. Never share DigiD codes, passwords or activation letters. Always apply and activate through official channels such as DigiD.nl.",
@@ -1038,10 +1046,16 @@ export const digiDNetherlandsPage = {
       description: "Prerequisite step before BSN and DigiD — appointments, documents and timing.",
     },
     {
-      label: "BSN Netherlands",
-      href: BSN_NETHERLANDS_PATH,
-      status: "comingSoon",
-      description: "Planned practical guide to BSN routes, documents and employer onboarding.",
+      label: "BSN Registration",
+      href: BSN_REGISTRATION_PATH,
+      status: "live",
+      description: "Live BSN guide — how you receive the number, documents and city appointments.",
+    },
+    {
+      label: "DigiD Awareness (arrival timing)",
+      href: DIGID_AWARENESS_PATH,
+      status: "live",
+      description: "When and why to activate DigiD in your first weeks after BSN.",
     },
     {
       label: "Taxes Hub",
@@ -1070,9 +1084,9 @@ export const digiDNetherlandsPage = {
   ] satisfies PracticalLifeLink[],
   exploreNextCards: [
     {
-      label: "BSN Netherlands",
-      href: BSN_NETHERLANDS_PATH,
-      status: "comingSoon",
+      label: "BSN Registration",
+      href: BSN_REGISTRATION_PATH,
+      status: "live",
       description: "Identity number routes, documents and timing for newcomers.",
     },
     {

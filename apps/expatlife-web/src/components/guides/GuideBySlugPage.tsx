@@ -22,6 +22,7 @@ import { getEarlySetupInstructionalFigure } from "@/src/components/moving/early-
 import { getMovingPlanningInstructionalFigure } from "@/src/components/moving/moving-planning-cluster/movingPlanningInstructionalRasterAssets";
 import { getFirstWeeksInstructionalFigure } from "@/src/components/moving/first-weeks-cluster/firstWeeksInstructionalRasterAssets";
 import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
+import { resolveSchemaDateModified } from "@/src/lib/freshness/format";
 
 const baseUrl = getSiteOrigin();
 
@@ -75,7 +76,11 @@ export function GuideBySlugPage({
     },
   ];
 
-  const dateModified = new Date().toISOString().slice(0, 10);
+  const dateModified = resolveSchemaDateModified({
+    lastModifiedIso: data.dateModified,
+    lastReviewedText: data.lastUpdated,
+    publishDateIso: data.publishDate,
+  });
   const serializableData = JSON.parse(JSON.stringify(data));
   const serializableBlocks = JSON.parse(JSON.stringify(affiliateBlocks));
   const { contextualAffiliateAfterFirstSection, contextualAffiliateBeforeNextSteps } =
@@ -90,12 +95,14 @@ export function GuideBySlugPage({
   return (
     <>
       <BreadcrumbJsonLd crumbs={breadcrumbCrumbs} />
-      <ArticleJsonLd
-        headline={data.title}
-        description={data.description}
-        dateModified={dateModified}
-        urlPath={data.path}
-      />
+      {dateModified ? (
+        <ArticleJsonLd
+          headline={data.title}
+          description={data.description}
+          dateModified={dateModified}
+          urlPath={data.path}
+        />
+      ) : null}
       {data.faq?.length ? <FaqPageJsonLd items={data.faq} /> : null}
       {data.howToSteps?.length ? (
         <HowToJsonLd

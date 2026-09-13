@@ -153,8 +153,8 @@ export function HealthcareAllowancePageGuide() {
                 health insurance services
               </Link>
               ,{" "}
-              <Link href={`${NL}/services/compare-health-insurance/`} className="font-semibold text-copilot-primary hover:underline">
-                compare health insurance
+              <Link href={`${NL}/health/health-insurance-comparison-netherlands/`} className="font-semibold text-copilot-primary hover:underline">
+                health insurance comparison
               </Link>
               , or your broker — <strong className="text-copilot-text-primary">planning only</strong>, not a quote for allowance.
             </p>

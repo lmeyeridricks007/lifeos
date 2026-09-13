@@ -51,6 +51,7 @@ import {
   type PermitType,
   type PracticalLifeLink,
 } from "./parkingAndLocalPermitsNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass =
@@ -109,7 +110,7 @@ function SectionIntro({
 
 function ExploreLinkCard({ item, iconIndex = 0, tone = "default" }: { item: PracticalLifeLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>
@@ -396,7 +397,7 @@ function AvoidCallout({ label, text }: { label: string; text: string }) {
 }
 
 function LinkOrPlanned({ item, className }: { item: PracticalLifeLink; className?: string }) {
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const content = (
     <div className="flex h-full flex-col">
       <span className="block text-base font-black leading-snug tracking-tight text-foreground">{item.label}</span>

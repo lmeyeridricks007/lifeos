@@ -1619,7 +1619,10 @@ export function GuidePageTemplate({
             shareUrl={shareUrl}
             pageId={pageId}
             afterSubtitle={
-              data.hero?.badges?.length || data.lastUpdated || data.heroOfficialSources?.length ? (
+              data.hero?.badges?.length ||
+              data.lastUpdated ||
+              data.effectivePeriodLabel ||
+              data.heroOfficialSources?.length ? (
                 <div className="mt-4 space-y-3">
                   {data.hero?.badges?.length ? (
                     <div className="flex flex-wrap gap-2">
@@ -1633,10 +1636,13 @@ export function GuidePageTemplate({
                       ))}
                     </div>
                   ) : null}
-                  {data.lastUpdated || data.heroOfficialSources?.length ? (
+                  {data.lastUpdated ||
+                  data.effectivePeriodLabel ||
+                  data.heroOfficialSources?.length ? (
                     <GuideHeroTrustMeta
                       className="mt-0"
                       lastReviewedText={data.lastUpdated}
+                      effectivePeriod={data.effectivePeriodLabel}
                       sources={data.heroOfficialSources}
                     />
                   ) : null}

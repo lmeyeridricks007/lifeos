@@ -10,6 +10,7 @@ import {
   getNoticePeriodNetherlandsSupportCardGroups,
 } from "@/src/lib/recommended-services/pageRegistryRecommendations";
 import type { PageRecommendedProviderCard } from "@/src/lib/recommended-services/pageRegistryRecommendations";
+import { isRouteLive } from "@/src/lib/routes/routeStatus";
 import {
   CAREER_COACHES_PATH,
   FINDING_JOBS_NETHERLANDS_PATH,
@@ -205,15 +206,31 @@ export function NoticePeriodJobChangeAffiliateSupport() {
           <Link href={FINDING_JOBS_NETHERLANDS_PATH} className="font-semibold text-link hover:underline">
             finding jobs in the Netherlands guide
           </Link>{" "}
-          for search strategy, and browse{" "}
-          <Link href={CAREER_COACHES_PATH} className="font-semibold text-link hover:underline">
-            career coaches
-          </Link>{" "}
-          or{" "}
-          <Link href={RECRUITMENT_AGENCIES_PATH} className="font-semibold text-link hover:underline">
-            recruitment agencies
-          </Link>{" "}
-          when you want scoped professional help.
+          for search strategy
+          {isRouteLive(CAREER_COACHES_PATH) || isRouteLive(RECRUITMENT_AGENCIES_PATH) ? (
+            <>
+              , and browse{" "}
+              {isRouteLive(CAREER_COACHES_PATH) ? (
+                <Link href={CAREER_COACHES_PATH} className="font-semibold text-link hover:underline">
+                  career coaches
+                </Link>
+              ) : (
+                "career coaches"
+              )}{" "}
+              or{" "}
+              {isRouteLive(RECRUITMENT_AGENCIES_PATH) ? (
+                <Link href={RECRUITMENT_AGENCIES_PATH} className="font-semibold text-link hover:underline">
+                  recruitment agencies
+                </Link>
+              ) : (
+                "recruitment agencies"
+              )}{" "}
+              when you want scoped professional help
+            </>
+          ) : (
+            <> — career coach and recruitment agency directories are planned</>
+          )}
+          .
         </p>
       </div>
       <ProviderCardSection
@@ -246,15 +263,31 @@ export function NoticePeriodResignationAffiliateSupport() {
           <Link href={FINDING_JOBS_NETHERLANDS_PATH} className="font-semibold text-link hover:underline">
             finding jobs in the Netherlands guide
           </Link>{" "}
-          for search strategy, and browse{" "}
-          <Link href={CAREER_COACHES_PATH} className="font-semibold text-link hover:underline">
-            career coaches
-          </Link>{" "}
-          or{" "}
-          <Link href={RECRUITMENT_AGENCIES_PATH} className="font-semibold text-link hover:underline">
-            recruitment agencies
-          </Link>{" "}
-          when you want scoped professional help.
+          for search strategy
+          {isRouteLive(CAREER_COACHES_PATH) || isRouteLive(RECRUITMENT_AGENCIES_PATH) ? (
+            <>
+              , and browse{" "}
+              {isRouteLive(CAREER_COACHES_PATH) ? (
+                <Link href={CAREER_COACHES_PATH} className="font-semibold text-link hover:underline">
+                  career coaches
+                </Link>
+              ) : (
+                "career coaches"
+              )}{" "}
+              or{" "}
+              {isRouteLive(RECRUITMENT_AGENCIES_PATH) ? (
+                <Link href={RECRUITMENT_AGENCIES_PATH} className="font-semibold text-link hover:underline">
+                  recruitment agencies
+                </Link>
+              ) : (
+                "recruitment agencies"
+              )}{" "}
+              when you want scoped professional help
+            </>
+          ) : (
+            <> — career coach and recruitment agency directories are planned</>
+          )}
+          .
         </p>
       </div>
       <ProviderCardSection

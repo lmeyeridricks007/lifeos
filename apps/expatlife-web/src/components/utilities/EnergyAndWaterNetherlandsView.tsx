@@ -38,6 +38,7 @@ import {
 import { movingNlCardMicroLiftClass, movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
 import { energyAndWaterNetherlandsPage as page, type EnergyWaterLink } from "./energyAndWaterNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass =
@@ -80,7 +81,7 @@ function SectionIntro({ eyebrow, title, children }: { eyebrow?: string; title: s
 }
 
 function LinkOrPlanned({ item, className }: { item: EnergyWaterLink; className?: string }) {
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const content = (
     <div className="flex h-full flex-col">
       <span className="block text-base font-black leading-snug tracking-tight text-foreground">{item.label}</span>

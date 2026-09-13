@@ -52,6 +52,7 @@ import {
   citiesFunnelHeroFigureClassName,
 } from "@/src/components/cities/shared/citiesFunnelPageUi";
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
+import { GuideHeroTrustMeta } from "@/src/components/guides/GuideHeroTrustMeta";
 import { BANKING_HUB_PATH } from "@/src/components/money/banking-hub/bankingHubPageModel";
 import {
   OPEN_BANK_ACCOUNT_NETHERLANDS_PATH,
@@ -60,6 +61,7 @@ import {
   type OpenBankLink,
   type TimelineStep,
 } from "./openBankAccountNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 
@@ -454,7 +456,7 @@ function Timeline({ steps, eyebrow }: { steps: readonly TimelineStep[]; eyebrow:
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: OpenBankLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
   const isExternal = item.status === "external";
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>
@@ -779,6 +781,13 @@ export function OpenBankAccountNetherlandsView() {
                       </span>
                     ))}
                   </div>
+                  {"lastReviewed" in page && page.lastReviewed ? (
+                    <GuideHeroTrustMeta
+                      className="mt-4"
+                      lastReviewed={page.lastReviewed}
+                      sources={"heroOfficialSources" in page ? page.heroOfficialSources : undefined}
+                    />
+                  ) : null}
                   <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                     <Link href={page.hero.primaryCta.href} className={primaryCtaClass}>
                       {page.hero.primaryCta.label}

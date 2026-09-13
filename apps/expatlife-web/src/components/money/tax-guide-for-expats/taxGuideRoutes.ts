@@ -28,6 +28,7 @@ export const taxGuideRoutes = {
   moneyTools: "/netherlands/money/tools/",
   taxesHub: "/netherlands/taxes/",
   taxesTools: "/netherlands/taxes/tools/",
+  officialFigures: "/netherlands/official-figures/",
   salaryNet: "/netherlands/taxes/tools/dutch-salary-net-calculator/",
   ruling: "/netherlands/taxes/tools/30-ruling-calculator/",
   payslip: "/netherlands/work/tools/payslip-decoder/",

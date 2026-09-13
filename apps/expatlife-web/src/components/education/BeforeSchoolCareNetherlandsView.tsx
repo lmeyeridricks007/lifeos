@@ -62,6 +62,7 @@ import {
   type VsoLink,
   type VsoMistakeCard,
 } from "./beforeSchoolCareNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -368,7 +369,7 @@ function MistakeCard({ card, index }: { card: VsoMistakeCard; index: number }) {
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: VsoLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

@@ -1,14 +1,14 @@
 {
   "hero": {
-    "title": "Check Your Relocation Documents",
-    "subtitle": "Find out which documents expats often prepare when moving to the Netherlands.",
+    "title": "Netherlands Document Readiness Checker",
+    "subtitle": "Generate a personalized document checklist for your move. For apostille, legalization, and translation detail, use the linked guides after you run the checker.",
     "primaryCtaLabel": "Check my documents",
     "secondaryCtaLabel": "Read the moving guide",
     "secondaryCtaHref": "/netherlands/moving-to-the-netherlands/",
     "introBullets": [
       "Personalized document checklist",
-      "Understand why each document matters",
-      "See where to obtain missing documents"
+      "See why each item often matters",
+      "Flag apostille or translation awareness"
     ],
     "image": {
       "src": "/images/guides/netherlands/moving/document-readiness-hero.png",
@@ -21,50 +21,17 @@
   },
   "explanatorySections": [
     {
-      "id": "what-document-checker-helps",
-      "title": "What this document checker helps you prepare",
+      "id": "how-to-use",
+      "title": "How to use this checker",
       "body": [
-        "This checker helps you see which documents are commonly needed when moving to the Netherlands: identity documents, civil records, housing and employment documents, travel documents, and education documents where relevant.",
-        "You get a personalized checklist based on your situation and can expand each item to see why it matters, where to get it, and whether apostille or translation may be required."
-      ],
-      "bullets": [
-        "Identity — passport, ID, copies",
-        "Civil records — birth, marriage, partnership",
-        "Housing — proof of address, rental agreement",
-        "Employment — contract, job offer, sponsorship",
-        "Travel — passports, visas, confirmations",
-        "Education — diplomas, transcripts (if relevant)"
-      ]
-    },
-    {
-      "id": "documents-often-create-delays",
-      "title": "Which documents often create delays",
-      "bullets": [
-        "Birth certificate and marriage certificate — ordering and apostille can take weeks",
-        "Diploma copies and transcripts — certification may be required",
-        "Proof of address — needed for registration and banking; timing can be tight",
-        "Sponsorship or employer documents — coordination with employer or IND"
-      ]
-    },
-    {
-      "id": "apostille-legalization-translation",
-      "title": "Apostille, legalization, and translation awareness",
-      "body": [
-        "Some documents from your country of origin may need apostille or legalization to be accepted in the Netherlands. Others may need a certified translation if they are not in Dutch or English. This checker flags where that often applies; for full guidance see our guides on apostille, legalization, and translation."
-      ]
-    },
-    {
-      "id": "why-document-prep-early",
-      "title": "Why document preparation should start early",
-      "body": [
-        "Replacement and certification times vary by country. Some civil records take weeks or months; apostille and translation add more lead time. Starting early reduces the risk of last-minute gaps that delay your move, registration, or first admin steps in the Netherlands."
+        "Answer a few questions about your route, household, and origin. Review your personalized checklist, expand items for short why/where notes, and note where apostille or translation often applies.",
+        "Former long-form document guides redirect here. For deep how-to on apostille, legalization, or sworn translation, open those specialist guides from the related links after you generate results."
       ]
     }
   ],
   "seo": {
     "introParagraphs": [
-      "This document readiness checker helps expats understand which documents are commonly prepared before and during a move to the Netherlands. It gives a personalized checklist and a practical view of what may still be missing.",
-      "Use it as a planning tool for moving paperwork, identity records, work and housing support documents, and family-related documents. It is general guidance only and not legal advice."
+      "This interactive Document Readiness Checker builds a personalized Netherlands move document checklist. It is a planning tool — not legal advice. Specialist guides cover apostille, legalization, and translation in depth."
     ]
   },
   "toolPanel": {
@@ -109,11 +76,11 @@
     { "value": "other", "label": "Other" }
   ],
   "relatedLinks": {
-    "documents": { "label": "Documents needed", "href": "/netherlands/document-readiness-checker/" },
-    "checklist": { "label": "Moving checklist Netherlands", "href": "/netherlands/moving-checklist-netherlands/" },
+    "translation": { "label": "Document translation guide", "href": "/netherlands/document-translation-netherlands/" },
+    "legalization": { "label": "Document legalization guide", "href": "/netherlands/document-legalization-netherlands/" },
+    "checklist": { "label": "Moving checklist guide", "href": "/netherlands/moving-checklist-netherlands/" },
     "registerAddress": { "label": "Register address", "href": "/netherlands/practical-life/registering-your-address-netherlands/" },
-    "pillar": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
-    "hub": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" }
+    "pillar": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" }
   },
   "infographic": {
     "src": "/images/infographics/documents-needed-moving-netherlands-infographic.webp",

@@ -3,8 +3,8 @@
   "path": "/netherlands/municipality-registration-netherlands/",
   "title": "Municipality Registration in the Netherlands",
   "metaTitle": "Municipality Registration Netherlands | BRP Registration & BSN Guide",
-  "subtitle": "How to register with your local municipality, receive your BSN, and complete one of the most important steps after moving to the Netherlands.",
-  "description": "Learn how to register with a municipality in the Netherlands, including required documents, deadlines, BRP registration, and how to receive your BSN.",
+  "subtitle": "How to register with your local municipality (BRP), meet the arrival deadline, and receive your BSN — the legal/process overview for gemeente registration.",
+  "description": "BRP municipality registration in the Netherlands: who must register, 5-day timing, documents, how BSN is issued, and special cases. For appointment mechanics and temporary address detail, see Registering Your Address.",
   "breadcrumbLabel": "Municipality Registration",
 
   "hero": {
@@ -307,6 +307,9 @@
     "hub": { "label": "Back to Moving Hub", "href": "/netherlands/moving-to-the-netherlands/" },
     "pillar": { "label": "Read the complete Moving Guide", "href": "/netherlands/moving-to-the-netherlands/" },
     "related": [
+      { "label": "Registering your address (appointments & mechanics)", "href": "/netherlands/practical-life/registering-your-address-netherlands/" },
+      { "label": "BSN registration in the Netherlands", "href": "/netherlands/bsn-registration/" },
+      { "label": "DigiD awareness (when to activate)", "href": "/netherlands/digid-awareness/" },
       { "label": "After arriving in the Netherlands", "href": "/netherlands/after-arriving-netherlands/" },
       { "label": "First 30 days in the Netherlands", "href": "/netherlands/first-30-days-netherlands/" },
       { "label": "Open a bank account in the Netherlands", "href": "/netherlands/open-bank-account-netherlands/" },

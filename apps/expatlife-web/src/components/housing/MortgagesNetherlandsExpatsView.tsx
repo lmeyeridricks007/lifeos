@@ -46,6 +46,7 @@ import {
   mortgagesNetherlandsExpatsPage as page,
   type MortgagesNetherlandsExpatsLink,
 } from "./mortgagesNetherlandsExpatsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const sectionClass = cn(
   CITIES_FUNNEL_SECTION_SCROLL_MARGIN,
@@ -160,7 +161,7 @@ function FeatureCard({ title, body, iconIndex = 0 }: { title: string; body: stri
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: MortgagesNetherlandsExpatsLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const shell = onDark
     ? "relative overflow-hidden rounded-2xl border border-white/10 bg-white/10 p-5 shadow-sm ring-1 ring-white/10"

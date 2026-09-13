@@ -62,7 +62,7 @@ import {
   INTERVIEW_TIPS_NETHERLANDS_PATH,
 } from "./findingJobsNetherlandsPageModel";
 import { buildTrackedOutboundLink, trackedOutboundAnchorProps } from "@/lib/analytics/tracked-outbound";
-import { isRouteLive } from "@/src/lib/routes/routeStatus";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -415,7 +415,7 @@ function FeatureCard({ title, body, iconIndex = 0 }: { title: string; body: stri
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: FindingJobsLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon" && (item.href.startsWith("http") || isRouteLive(item.href));
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>
@@ -946,15 +946,9 @@ export function FindingJobsNetherlandsView() {
               <SectionIntro eyebrow="Networking" title={page.networkingHeading}>
                 <p>Many roles are filled through referrals, communities and professional networks — not only public job boards.</p>
                 <p className="mt-3">
-                  For events, communities, referrals and Dutch outreach norms, see{" "}
-                  <Link href="/netherlands/jobs/networking-netherlands/" className="font-semibold text-cyan-700 underline-offset-2 hover:underline dark:text-cyan-300">
-                    Networking Netherlands
-                  </Link>
-                  . For LinkedIn profile and messaging tactics, see{" "}
-                  <Link href="/netherlands/jobs/linkedin-netherlands/" className="font-semibold text-cyan-700 underline-offset-2 hover:underline dark:text-cyan-300">
-                    LinkedIn Netherlands
-                  </Link>
-                  .
+                  For events, communities, referrals and Dutch outreach norms, a dedicated Networking Netherlands guide is planned.
+                  For LinkedIn profile and messaging tactics, a LinkedIn Netherlands guide is planned — until those publish, use the
+                  networking channels and tips on this page.
                 </p>
               </SectionIntro>
               <div className={cn(sectionStackClass, "grid gap-4 sm:grid-cols-2 xl:grid-cols-3")}>

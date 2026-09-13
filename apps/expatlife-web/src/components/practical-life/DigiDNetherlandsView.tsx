@@ -49,6 +49,7 @@ import {
   citiesFunnelHeroFigureClassName,
 } from "@/src/components/cities/shared/citiesFunnelPageUi";
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
+import { GuideHeroTrustMeta } from "@/src/components/guides/GuideHeroTrustMeta";
 import {
   BSN_REGISTRATION_PATH,
   EXPAT_TAXES_PATH,
@@ -63,6 +64,7 @@ import {
   type PracticalLifeLink,
   type ProfileScenario,
 } from "./digiDNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -354,7 +356,7 @@ function SourceLink({ source }: { source: (typeof page.officialSources)[number] 
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: PracticalLifeLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>
@@ -589,6 +591,13 @@ export function DigiDNetherlandsView() {
                       <span key={chip} className={cn(CITIES_FUNNEL_INFO_CHIP, "shadow-sm ring-1 ring-slate-900/[0.03]")}>{chip}</span>
                     ))}
                   </div>
+                  {"lastReviewed" in page && page.lastReviewed ? (
+                    <GuideHeroTrustMeta
+                      className="mt-4"
+                      lastReviewed={page.lastReviewed}
+                      sources={"heroOfficialSources" in page ? page.heroOfficialSources : undefined}
+                    />
+                  ) : null}
                   <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                     <Link href={page.hero.primaryCta.href} className={primaryCtaClass}>
                       {page.hero.primaryCta.label}

@@ -72,6 +72,7 @@ import { EU_BLUE_CARD_VISA } from "@/src/content/visas/eu-blue-card";
 import { DAFT_VISA } from "@/src/content/visas/dutch-american-friendship-treaty";
 import { SELF_EMPLOYED_VISA } from "@/src/content/visas/self-employed-visa";
 import { STUDENT_VISA } from "@/src/content/visas/student-visa";
+import { ORIENTATION_YEAR_VISA } from "@/src/content/visas/orientation-year";
 import { PARTNER_FAMILY_VISA } from "@/src/content/visas/partner-family-visa";
 import type { ServiceCategoryPageData } from "@/src/lib/service-category/types";
 import type { VisaPageData } from "@/src/content/visas/types";
@@ -98,6 +99,7 @@ const VISA_PAGES: VisaPageData[] = [
   DAFT_VISA,
   SELF_EMPLOYED_VISA,
   STUDENT_VISA,
+  ORIENTATION_YEAR_VISA,
   PARTNER_FAMILY_VISA,
 ];
 

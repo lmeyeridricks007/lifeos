@@ -46,7 +46,7 @@ export function OfficialFiguresView() {
       breadcrumbLabel="Official figures 2026"
       eyebrow="Netherlands · citation asset"
       title={`Netherlands official figures ${OFFICIAL_FIGURES_TAX_YEAR}`}
-      subtitle="Dated HSM floors, IND fees, 30% norms and cap, adult minimum wage, eigen risico and typical basic-premium band — with official source URLs. Canonical reference table for ExpatCopilot tools."
+      subtitle="Dated HSM floors, partner/family sponsor income, self-employed required profit, IND fees, 30% norms and cap, adult minimum wage, eigen risico and typical basic-premium band — with official source URLs. Canonical reference table for ExpatCopilot tools."
       extraHeroContent={
         <div className="mt-1 space-y-2">
           <p className="text-sm text-foreground-muted">{OFFICIAL_FIGURES_AS_OF_LABEL}</p>

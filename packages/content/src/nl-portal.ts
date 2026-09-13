@@ -27,6 +27,93 @@ const portal: NlPortalContent = {
     seeCountryRouteLabel: "See country route",
     getChecklistLabel: "Open checklist",
   },
+  entryRoutes: {
+    eyebrow: "Immigration paths",
+    title: "Choose your entry route",
+    subtitle:
+      "In research mode? Skim which residence path is usually worth investigating first — then open the guide, compare routes, or run the visa checker.",
+    disclaimer:
+      "Cards are orientation only. They do not decide eligibility. Confirm requirements on IND and other official sources for your nationality and situation.",
+    toolsLabel: "Not sure yet? Use these",
+    routes: [
+      {
+        title: "EU / EEA / Swiss",
+        relevantFor: "Often relevant for citizens of EU, EEA or Switzerland",
+        description: "Explore free-movement and registration differences versus non-EU visa routes.",
+        href: "/netherlands/eu-vs-non-eu-moving-to-netherlands/",
+        icon: "globe",
+      },
+      {
+        title: "Highly Skilled Migrant",
+        relevantFor: "Often relevant for employees with a Dutch job offer from a recognised sponsor",
+        description: "Explore this route if employer sponsorship and salary thresholds are part of your plan.",
+        href: "/netherlands/visa/highly-skilled-migrant/",
+        icon: "briefcase",
+      },
+      {
+        title: "EU Blue Card",
+        relevantFor: "Often relevant for highly qualified workers comparing EU-wide mobility options",
+        description: "Explore this route if you want to compare Blue Card rules beside Highly Skilled Migrant.",
+        href: "/netherlands/visa/eu-blue-card/",
+        icon: "briefcase",
+      },
+      {
+        title: "Partner / family",
+        relevantFor: "Often relevant when joining a spouse, partner or family member already in the Netherlands",
+        description: "Explore this route if your stay depends on a family relationship and sponsor conditions.",
+        href: "/netherlands/visa/partner-family-visa/",
+        icon: "home",
+      },
+      {
+        title: "Student",
+        relevantFor: "Often relevant for non-EU students admitted to qualifying Dutch education",
+        description: "Explore this route if study is the main purpose of your move.",
+        href: "/netherlands/visa/student-visa/",
+        icon: "fileText",
+      },
+      {
+        title: "Orientation Year (zoekjaar)",
+        relevantFor: "Often relevant after qualifying graduation, PhD or research within IND timing rules",
+        description: "Explore this route if you need a one-year bridge to look for work after study or research.",
+        href: "/netherlands/visa/orientation-year/",
+        icon: "map",
+      },
+      {
+        title: "Self-employed",
+        relevantFor: "Often relevant for non-US founders and freelancers building a Dutch business case",
+        description: "Explore this route if self-employment or entrepreneurship is your basis of stay.",
+        href: "/netherlands/visa/self-employed-visa/",
+        icon: "briefcase",
+      },
+      {
+        title: "DAFT (US entrepreneurs)",
+        relevantFor: "Often relevant for US citizens planning self-employment under the treaty route",
+        description: "Explore this route if you are a US national considering DAFT versus the general self-employed permit.",
+        href: "/netherlands/visa/dutch-american-friendship-treaty/",
+        icon: "plane",
+      },
+    ],
+    tools: [
+      {
+        title: "Visa checker",
+        description: "Answer a few questions to see which live routes may fit your situation.",
+        href: "/netherlands/visa-checker/",
+        icon: "checkSquare",
+      },
+      {
+        title: "Compare visas",
+        description: "Side-by-side view of major Netherlands residence routes.",
+        href: "/netherlands/visa/compare-visas/",
+        icon: "clipboardCheck",
+      },
+      {
+        title: "Visas & residency hub",
+        description: "Doorway to work, study, family, self-employed and status-change guides.",
+        href: "/netherlands/moving/visas-residency/",
+        icon: "mapPinned",
+      },
+    ],
+  },
   quickStart: {
     eyebrow: "Quick start",
     title: "Most-used starting points",

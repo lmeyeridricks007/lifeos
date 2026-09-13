@@ -36,6 +36,7 @@ import {
 } from "@/lib/ui/site-shell-identity";
 import { movingNlCardMicroLiftClass, movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
 import { insuranceProvidersNetherlandsPage as page, type InsuranceLink } from "./insuranceProvidersNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 
@@ -66,7 +67,7 @@ function SectionIntro({
 }
 
 function LinkOrPlanned({ item, className }: { item: InsuranceLink; className?: string }) {
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const content = (
     <div className="flex h-full flex-col">
       <span className="block text-base font-black leading-snug tracking-tight text-foreground">{item.label}</span>

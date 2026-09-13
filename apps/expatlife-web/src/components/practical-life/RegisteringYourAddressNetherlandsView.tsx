@@ -38,7 +38,6 @@ import {
 import { movingNlCardMicroLiftClass, movingNlSectionH2Class, movingNlSectionH2OnDarkClass, movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
 import {
-  BSN_NETHERLANDS_PATH,
   BSN_REGISTRATION_PATH,
   DIGID_AWARENESS_PATH,
   DIGID_NETHERLANDS_PATH,
@@ -51,6 +50,7 @@ import {
   type PracticalLifeLink,
   type RegistrationStep,
 } from "./registeringYourAddressNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass =
@@ -70,10 +70,10 @@ const bsnLinks: PracticalLifeLink[] = [
     description: "Live BSN guide with document lists, timing and employer onboarding context.",
   },
   {
-    label: "BSN Netherlands",
-    href: BSN_NETHERLANDS_PATH,
-    status: "comingSoon",
-    description: "Planned practical-life pillar guide dedicated to BSN routes and documents.",
+    label: "Municipality Registration (BRP)",
+    href: "/netherlands/municipality-registration-netherlands/",
+    status: "live",
+    description: "BRP registration process and how the BSN is typically issued at the gemeente.",
   },
 ];
 
@@ -154,7 +154,7 @@ function SectionIntro({
 
 function ExploreLinkCard({ item, iconIndex = 0, tone = "default" }: { item: PracticalLifeLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>
@@ -350,7 +350,7 @@ function ChecklistPhases({ items }: { items: readonly { phase: string; items: re
 }
 
 function LinkOrPlanned({ item, className }: { item: PracticalLifeLink; className?: string }) {
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const content = (
     <div className="flex h-full flex-col">
       <span className="block text-base font-black leading-snug tracking-tight text-foreground">{item.label}</span>

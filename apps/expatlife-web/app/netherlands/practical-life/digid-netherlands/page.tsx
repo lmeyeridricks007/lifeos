@@ -5,6 +5,7 @@ import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { DigiDNetherlandsView } from "@/src/components/practical-life/DigiDNetherlandsView";
 import { digiDNetherlandsPage as page } from "@/src/components/practical-life/digiDNetherlandsPageModel";
+import { resolveSchemaDateModified } from "@/src/lib/freshness/format";
 
 const baseUrl = getSiteOrigin();
 
@@ -31,7 +32,11 @@ export const metadata: Metadata = {
 };
 
 export default function DigiDNetherlandsPage() {
-  const dateModified = new Date().toISOString().slice(0, 10);
+  const dateModified = resolveSchemaDateModified({
+    lastReviewedIso: "lastReviewedIso" in page ? page.lastReviewedIso : null,
+    lastReviewedText: "lastReviewed" in page ? `Last reviewed: ${page.lastReviewed}` : null,
+    publishDateIso: page.publishDate,
+  });
 
   return (
     <>
@@ -41,12 +46,14 @@ export default function DigiDNetherlandsPage() {
         urlPath={page.path}
         datePublished={page.publishDate}
       />
-      <ArticleJsonLd
-        headline={page.hero.pageTitle}
-        description={page.seo.description}
-        dateModified={dateModified}
-        urlPath={page.path}
-      />
+      {dateModified ? (
+        <ArticleJsonLd
+          headline={page.hero.pageTitle}
+          description={page.seo.description}
+          dateModified={dateModified}
+          urlPath={page.path}
+        />
+      ) : null}
       <FaqPageJsonLd items={[...page.faqs]} url={new URL(page.path, baseUrl).toString()} />
       <DigiDNetherlandsView />
     </>

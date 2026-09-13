@@ -44,6 +44,18 @@ export const openBankAccountNetherlandsPage = {
   hubPath: BANKING_HUB_PATH,
   publish: true,
   publishDate: "2026-08-12",
+  lastReviewed: "12 August 2026",
+  lastReviewedIso: "2026-08-12",
+  heroOfficialSources: [
+    {
+      label: "Netherlands Worldwide",
+      href: "https://www.netherlandsworldwide.nl/",
+    },
+    {
+      label: "EUR.nl — Dutch bank account",
+      href: "https://www.eur.nl/en/education/practical-matters/orientation-arrival/dutch-bank-account",
+    },
+  ],
   seo: {
     title: "Open a Bank Account in the Netherlands | Complete Guide for Expats",
     description:

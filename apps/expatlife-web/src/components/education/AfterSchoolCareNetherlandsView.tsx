@@ -63,6 +63,7 @@ import {
   type BsoMistakeCard,
   type BsoTypeCard,
 } from "./afterSchoolCareNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -388,7 +389,7 @@ function MistakeCard({ card, index }: { card: BsoMistakeCard; index: number }) {
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: BsoLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

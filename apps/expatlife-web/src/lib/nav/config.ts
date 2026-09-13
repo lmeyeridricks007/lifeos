@@ -944,16 +944,21 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item(
             "Registering your address",
             "/netherlands/practical-life/registering-your-address-netherlands/",
-            "Municipality address registration, BSN connection, documents and appointment steps."
+            "Address registration mechanics — appointments, documents, temporary housing and DigiD post."
           ),
-          item("BSN Netherlands", "/netherlands/practical-life/bsn-netherlands/", "BSN routes, documents and timing for newcomers."),
-          item("DigiD Netherlands", "/netherlands/digid-awareness/", "Full expat DigiD guide — activation, security and government login."),
+          item("BSN registration", "/netherlands/bsn-registration/", "How you receive a BSN, documents and city appointment context."),
+          item("DigiD awareness", "/netherlands/digid-awareness/", "When to activate DigiD after BSN — arrival planning awareness."),
+          item(
+            "DigiD in the Netherlands",
+            "/netherlands/practical-life/digid-netherlands/",
+            "Complete DigiD cornerstone — security, eligibility and portal login."
+          ),
           item(
             "Government portals",
             "/netherlands/practical-life/government-portals-netherlands/",
             "Map of Dutch government websites, DigiD, taxes, IND and gemeente portals."
           ),
-          item("Local taxes Netherlands", "/netherlands/practical-life/local-taxes-netherlands/", "Gemeente tax letters, charges and payment steps."),
+          item("Property tax (WOZ)", "/netherlands/taxes/property-tax-netherlands/", "Live orientation for gemeente-related property tax letters."),
         ],
       },
       {
@@ -1008,6 +1013,11 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
           item("DAFT (US entrepreneurs)", "/netherlands/visa/dutch-american-friendship-treaty"),
           item("EU Blue Card", "/netherlands/visa/eu-blue-card"),
           item("Highly skilled migrant", "/netherlands/visa/highly-skilled-migrant"),
+          item(
+            "Orientation year (zoekjaar)",
+            "/netherlands/visa/orientation-year/",
+            "One-year search year after graduation or research — free work rights and HSM reduced-salary link."
+          ),
           item("Partner & family", "/netherlands/visa/partner-family-visa"),
           item("Self-employed visa", "/netherlands/visa/self-employed-visa"),
           item("Student visa", "/netherlands/visa/student-visa"),
@@ -1489,10 +1499,9 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Jobs & salaries",
         items: [
-          item("Employment overview", "/netherlands/money/taxes/employment-overview"),
+          item("Payroll tax Netherlands", "/netherlands/taxes/payroll-tax-netherlands/"),
           item("Net salary Netherlands", "/netherlands/taxes/net-salary-netherlands/"),
           item("Gross vs net salary Netherlands", "/netherlands/taxes/gross-vs-net-salary/"),
-          item("Payroll tax Netherlands", "/netherlands/taxes/payroll-tax-netherlands/"),
           item("Average salary Netherlands", "/netherlands/taxes/average-salary-netherlands/"),
           item("Finding jobs Netherlands", "/netherlands/jobs/finding-jobs-netherlands/"),
           item(
@@ -1592,7 +1601,7 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
         title: "Insurance & expat tax topics",
         items: [
           item("Insurance", "/netherlands/money/insurance"),
-          item("Health", "/netherlands/money/insurance/health"),
+          item("Health insurance", "/netherlands/health-insurance-netherlands/"),
           item("Liability + household", "/netherlands/money/insurance/liability-household"),
         ],
       },
@@ -2320,7 +2329,8 @@ const RAW_MEGA_MENUS: Record<TopNavKey, MegaMenu> = {
       {
         title: "Digital life / admin-light",
         items: [
-          item("DigiD awareness", "/netherlands/digid-awareness/", "Full expat DigiD guide — activation, security and government login."),
+          item("DigiD awareness", "/netherlands/digid-awareness/", "When to activate DigiD after BSN — arrival planning awareness."),
+          item("DigiD in the Netherlands", "/netherlands/practical-life/digid-netherlands/", "Complete DigiD cornerstone — security, eligibility and portal login."),
           item("Government portals overview", "/netherlands/practical-life/government-portals-netherlands/", "Map of Dutch government websites and digital services."),
           item(
             "Subscriptions and cancellations",

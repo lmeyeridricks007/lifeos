@@ -39,6 +39,7 @@ import {
 } from "@/lib/ui/site-shell-identity";
 import { movingNlCardMicroLiftClass, movingNlSectionH2Class, movingNlSectionH2OnDarkClass, movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
+import { GuideHeroTrustMeta } from "@/src/components/guides/GuideHeroTrustMeta";
 import {
   BUY_VS_RENT_NETHERLANDS_PATH,
   BUYING_HOUSE_NETHERLANDS_PATH,
@@ -61,6 +62,7 @@ import {
   type CityHousingCard,
   type HousingLink,
 } from "./housingNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass =
@@ -120,7 +122,7 @@ function SectionIntro({
 
 function ExploreLinkCard({ item, iconIndex = 0, tone = "default" }: { item: HousingLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>
@@ -171,7 +173,7 @@ function ExploreLinkCard({ item, iconIndex = 0, tone = "default" }: { item: Hous
 }
 
 function LinkOrPlanned({ item, className }: { item: HousingLink; className?: string }) {
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const content = (
     <div className="flex h-full flex-col">
       <span className="block text-base font-black leading-snug tracking-tight text-foreground">{item.label}</span>
@@ -567,6 +569,14 @@ function Hero() {
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-brand-strong">{page.hero.eyebrow}</p>
             <h1 className="mt-4 max-w-4xl text-4xl font-black tracking-tight text-foreground sm:text-5xl lg:text-6xl">{page.hero.pageTitle}</h1>
             <p className="mt-5 max-w-3xl text-lg leading-8 text-foreground-muted sm:text-xl">{page.hero.subtitle}</p>
+            {"lastReviewed" in page && page.lastReviewed ? (
+              <GuideHeroTrustMeta
+                className="mt-4"
+                lastReviewed={page.lastReviewed}
+                effectivePeriod={"effectivePeriodLabel" in page ? page.effectivePeriodLabel : undefined}
+                sources={"heroOfficialSources" in page ? page.heroOfficialSources : undefined}
+              />
+            ) : null}
             <div className="mt-7 flex flex-wrap gap-3">
               <Link href={page.hero.primaryCta.href} className={cn("inline-flex min-h-[46px] items-center justify-center gap-2 rounded-xl bg-brand px-5 py-3 text-sm font-bold text-white shadow-card hover:bg-brand-strong", transitionInteractive, activeBrightnessPress)}>
                 {page.hero.primaryCta.label}

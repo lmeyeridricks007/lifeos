@@ -48,6 +48,7 @@ import {
   type PhoneProviderEntry,
   type PhoneProviderLink,
 } from "./phoneProvidersNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -177,7 +178,7 @@ function FeatureCard({ title, body, iconIndex = 0 }: { title: string; body: stri
 function LinkCard({ item, iconIndex = 0 }: { item: PhoneProviderLink; iconIndex?: number }) {
   const icons = [Smartphone, Nfc, Signal, FileText, Building2, Globe2] as const;
   const Icon = icons[iconIndex % icons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const body = (
     <>
       <div

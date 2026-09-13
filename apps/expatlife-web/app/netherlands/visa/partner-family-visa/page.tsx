@@ -8,6 +8,7 @@ import { partnerFamilyToGuideData } from "@/src/lib/visas/visaToGuideData";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
+import { IND_REQUIRED_AMOUNTS_LAST_VERIFIED } from "@/src/lib/statutory/indRequiredAmounts";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -49,7 +50,7 @@ export default function PartnerFamilyVisaPage() {
       <ArticleJsonLd
         headline={data.title}
         description={data.description}
-        dateModified={new Date().toISOString().slice(0, 10)}
+        dateModified={IND_REQUIRED_AMOUNTS_LAST_VERIFIED}
         urlPath={data.path}
       />
       {data.faq?.length ? <FaqPageJsonLd items={data.faq} /> : null}

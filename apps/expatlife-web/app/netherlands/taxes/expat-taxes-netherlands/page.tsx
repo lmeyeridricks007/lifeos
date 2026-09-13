@@ -1,57 +1,6 @@
-import type { Metadata } from "next";
-import { absoluteUrlFromPath,  pageMetadataTitle } from "@/lib/seo/metadata";
-import { ArticleJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
-import { ExpatTaxesNetherlandsView } from "@/src/components/taxes/ExpatTaxesNetherlandsView";
-import { expatTaxesNetherlandsPage as page } from "@/src/components/taxes/expatTaxesNetherlandsPageModel";
-import { getSiteOrigin } from "@/lib/site-origin";
+import { permanentRedirect } from "next/navigation";
 
-export const revalidate = 86400;
-
-const baseUrl = getSiteOrigin();
-const { path, seo, hero, publishDate } = page;
-
-export const metadata: Metadata = {
-  title: pageMetadataTitle(seo.title),
-  description: seo.description,
-  keywords: [...seo.keywords],
-  alternates: { canonical: absoluteUrlFromPath(path)},
-  robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
-  openGraph: {
-    title: seo.title,
-    description: seo.description,
-    type: "article",
-    url: absoluteUrlFromPath(path),
-    images: [
-      {
-        url: hero.image.src,
-        alt: hero.image.alt,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: seo.title,
-    description: seo.description,
-    images: [hero.image.src],
-  },
-};
-
-export default function ExpatTaxesNetherlandsPage() {
-  return (
-    <>
-      <WebPageJsonLd
-        name={hero.pageTitle}
-        description={seo.description}
-        urlPath={path}
-        datePublished={publishDate}
-      />
-      <ArticleJsonLd
-        headline={hero.pageTitle}
-        description={seo.description}
-        dateModified={publishDate}
-        urlPath={path}
-      />
-      <ExpatTaxesNetherlandsView />
-    </>
-  );
+/** Legacy taxes-cluster URL — canonical content lives under Money. */
+export default function ExpatTaxesNetherlandsTaxesAliasPage() {
+  permanentRedirect("/netherlands/money/expat-taxes-netherlands/");
 }

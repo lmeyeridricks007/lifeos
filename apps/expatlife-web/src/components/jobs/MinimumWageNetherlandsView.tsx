@@ -61,6 +61,7 @@ import {
   RENT_AFFORDABILITY_CALCULATOR_PATH,
 } from "./minimumWageNetherlandsPageModel";
 import { MINIMUM_WAGE_RATES_DISCLAIMER, minimumWageNetherlandsRates as rates } from "./minimumWageNetherlandsRates";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const sectionClass = cn(CITIES_FUNNEL_SECTION_SCROLL_MARGIN, CITIES_FUNNEL_SOFT_COPILOT_SURFACE, "p-6 sm:p-8");
 const sectionStackClass = "mt-6 space-y-6 sm:space-y-8 md:space-y-9";
@@ -135,7 +136,7 @@ function VisualFigure({ visual, className }: { visual: (typeof page.infographics
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: MinimumWageNetherlandsLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = linkIcons[iconIndex % linkIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const shell = onDark
     ? "relative overflow-hidden rounded-2xl border border-white/10 bg-white/10 p-5 shadow-sm ring-1 ring-white/10"

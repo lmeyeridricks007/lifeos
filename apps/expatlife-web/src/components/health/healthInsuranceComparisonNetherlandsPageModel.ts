@@ -81,6 +81,7 @@ export const healthInsuranceComparisonNetherlandsPage = {
   publish: true,
   publishDate: "2027-02-19",
   lastReviewed: "30 August 2026",
+  lastReviewedIso: "2026-08-30",
   heroOfficialSources: [
     {
       label: "Government.nl — Health insurance",
@@ -116,7 +117,7 @@ export const healthInsuranceComparisonNetherlandsPage = {
     subtitle:
       "An expat-facing decision framework for comparing Dutch health insurance — basic vs supplementary factors, insurer choice levers, eigen risico tradeoffs and what to verify on comparison sites. Not a ranking of insurers.",
     primaryCta: { label: "Start the Comparison Framework", href: "#how-it-works" },
-    secondaryCta: { label: "Open Early Setup Guide", href: HEALTH_INSURANCE_PATH },
+    secondaryCta: { label: "Read the health insurance guide", href: HEALTH_INSURANCE_PATH },
     chips: [
       "Basic vs supplementary",
       "Natura vs restitutie",
@@ -126,7 +127,7 @@ export const healthInsuranceComparisonNetherlandsPage = {
       "Switching window",
     ],
     disclaimer:
-      "General orientation only — not insurance, financial or medical advice, and not a ranking, award list or “best for expats” crowning of any insurer. Indicative figures (when shown) are year-labelled planning cues — always verify with your insurer and comparison tools such as Independer for the current policy year. For mandate, deadline and basic-package basics, use the Early Setup Health Insurance guide.",
+      "General orientation only — not insurance, financial or medical advice, and not a ranking, award list or “best for expats” crowning of any insurer. Indicative figures (when shown) are year-labelled planning cues — always verify with your insurer and comparison tools such as Independer for the current policy year. For mandate, deadline and basic-package basics, use the Health Insurance guide.",
     image: {
       src: `/images/heroes/${VISUAL_PREFIX}-hero-${HERO_IMAGE_VERSION}.png`,
       alt:
@@ -1153,12 +1154,23 @@ export const healthInsuranceComparisonNetherlandsPage = {
       status: "live",
       description: "Insurance, huisarts, emergencies, hospitals, mental healthcare and family pathways.",
     },
-
     {
-      label: "Health Insurance (early setup)",
+      label: "Health Insurance (mandate & basics)",
       href: HEALTH_INSURANCE_PATH,
       status: "live",
       description: "Who must insure, four-month rule and basic-package overview.",
+    },
+    {
+      label: "Healthcare basics (system)",
+      href: HEALTHCARE_BASICS_PATH,
+      status: "live",
+      description: "How Dutch care works day-to-day — GP gatekeeping and patient journey.",
+    },
+    {
+      label: "Healthcare allowance (zorgtoeslag)",
+      href: "/netherlands/taxes/healthcare-allowance-netherlands/",
+      status: "live",
+      description: "Eligibility orientation for the healthcare allowance.",
     },
     {
       label: "Physiotherapy",

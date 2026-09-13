@@ -353,7 +353,7 @@ export const taxesAfterMovingNetherlandsPage = {
     { label: "Foreign Income Netherlands", href: "/netherlands/taxes/foreign-income-netherlands/", description: "Handle cross-border income questions." },
     { label: "Double Taxation Netherlands", href: "/netherlands/taxes/double-taxation-netherlands/", description: "Learn treaty and double-taxation concepts." },
     { label: "Moving to the Netherlands", href: "/netherlands/moving-to-the-netherlands/", description: "Connect tax onboarding with relocation planning." },
-    { label: "Healthcare in the Netherlands", href: "/netherlands/healthcare/", description: "Understand healthcare after arrival." },
+    { label: "Healthcare in the Netherlands", href: "/netherlands/health/", description: "Healthcare hub: insurance, GP, emergencies and family care." },
   ] satisfies TaxesAfterMovingNetherlandsLink[],
   exploreNextCards: [
     { label: "Expat Taxes", href: "/netherlands/money/expat-taxes-netherlands/", description: "Build your full Dutch tax foundation." },

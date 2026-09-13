@@ -39,9 +39,9 @@ export const revalidate = CONTENT_REVALIDATE;
 const canonical = "/netherlands/moving/tools/moving-checklist";
 
 export const metadata: Metadata = buildSocialMetadata({
-  title: "Moving checklist for the Netherlands (free tool)",
+  title: "Netherlands Moving Checklist Generator (Interactive Tool)",
   description:
-    "Generate a personalized moving checklist for the Netherlands. See what to prepare before the move, after arrival, and during your first 90 days.",
+    "Generate a personalized Netherlands moving checklist for pre-move, travel, and arrival essentials. Pair with the Moving Checklist guide for full context.",
   path: canonical,
   ogType: "website",
 });

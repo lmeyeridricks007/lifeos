@@ -203,10 +203,10 @@ export const netSalaryNetherlandsPage = {
       description: "How the Dutch expat scheme works and why eligibility matters for net salary planning.",
     },
     {
-      label: "Income Tax",
-      href: "/netherlands/taxes/income-tax-netherlands/",
-      status: "comingSoon",
-      description: "Future guide for Dutch income tax basics and official rate references.",
+      label: "Income Tax (system basics)",
+      href: "/netherlands/money/how-taxes-work-in-the-netherlands/",
+      status: "live",
+      description: "System explainer for how Dutch income tax sits beside payroll and filing.",
     },
     {
       label: "Payroll Tax",
@@ -216,9 +216,15 @@ export const netSalaryNetherlandsPage = {
     },
     {
       label: "Tax Returns",
-      href: "/netherlands/taxes/tax-return-netherlands/",
-      status: "comingSoon",
-      description: "Future taxes-cluster guide for annual filing and return triggers.",
+      href: "/netherlands/money/tax-return-netherlands/",
+      status: "live",
+      description: "Annual filing orientation, preparation and common expat return triggers.",
+    },
+    {
+      label: "Official figures 2026",
+      href: "/netherlands/official-figures/",
+      status: "live",
+      description: "Shared citation table for 30% norms and related statutory amounts.",
     },
   ] satisfies NetSalaryGuideLink[],
   services: [
@@ -318,7 +324,8 @@ export const netSalaryNetherlandsPage = {
     { label: "30% Ruling", href: "/netherlands/taxes/30-percent-ruling/", status: "live", description: "See how the expat facility can affect salary planning." },
     { label: "Expat Taxes", href: "/netherlands/money/expat-taxes-netherlands/", status: "live", description: "Learn the broader Dutch tax system for expats." },
     { label: "Tax Advisors", href: "/netherlands/services/tax-advisors/", status: "live", description: "Find tax advisors and expat accountants." },
-    { label: "Tax Returns", href: "/netherlands/taxes/tax-return-netherlands/", status: "comingSoon", description: "Planned guide for annual filing questions." },
+    { label: "Tax Returns", href: "/netherlands/money/tax-return-netherlands/", status: "live", description: "Annual filing orientation and common expat return triggers." },
+    { label: "Official figures 2026", href: "/netherlands/official-figures/", status: "live", description: "Shared citation table for statutory tax amounts." },
     { label: "Open a Dutch Bank Account", href: "/netherlands/open-bank-account-netherlands/", status: "live", description: "Set up banking for salary, rent and refunds." },
   ] satisfies NetSalaryGuideLink[],
 } as const;

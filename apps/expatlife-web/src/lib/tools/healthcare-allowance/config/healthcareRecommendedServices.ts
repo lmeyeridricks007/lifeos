@@ -86,7 +86,7 @@ export const healthcareRecommendedServiceGroups: readonly HealthcareRecommendedG
         id: "compare-insurance",
         kind: "services",
         label: "Compare Dutch health insurance",
-        href: "/netherlands/services/compare-health-insurance/",
+        href: "/netherlands/health/health-insurance-comparison-netherlands/",
         description: "Compare gross premiums and cover — then treat allowance as a separate planning line.",
       },
       {

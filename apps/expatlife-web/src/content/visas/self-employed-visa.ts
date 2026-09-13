@@ -1,7 +1,7 @@
 /**
  * Netherlands self-employed visa / residence permit – data source for the canonical pillar page.
  * People often say "self-employed visa"; in practice this is the Dutch residence permit for self-employed persons.
- * Figures (fees, required amount) are maintained here for easy updates; see IND for official current values.
+ * Required profit comes from the shared IND statutory module — do not hardcode.
  * @see https://ind.nl/en/residence-permits/work/residence-permit-self-employed-person
  * @see https://ind.nl/en/fees-costs-of-an-application
  * @see https://ind.nl/en/required-amounts-income-requirements
@@ -11,13 +11,19 @@
  */
 
 import type { VisaPageData } from "./types";
+import {
+  IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL,
+  IND_REQUIRED_AMOUNTS_URL,
+  OFFICIAL_FIGURES_PATH_HREF,
+  SELF_EMPLOYED_MONTHLY_PROFIT_DISPLAY,
+} from "@/src/lib/statutory/indRequiredAmounts";
 
 const BASE = "/netherlands";
 const TOOLS = `${BASE}/moving/tools`;
 
 const IND_SELF_EMPLOYED = "https://ind.nl/en/residence-permits/work/residence-permit-self-employed-person";
 const IND_FEES = "https://ind.nl/en/fees-costs-of-an-application";
-const IND_AMOUNTS = "https://ind.nl/en/required-amounts-income-requirements";
+const IND_AMOUNTS = IND_REQUIRED_AMOUNTS_URL;
 const IND_INCOME = "https://ind.nl/en/independent-sustainable-and-sufficient-income";
 const BUSINESS_NL_SELF = "https://business.gov.nl/regulations/work-permit-self-employed-professionals/";
 const KVK_REG = "https://business.gov.nl/starting-your-business/registering-your-business/registration-at-the-netherlands-chamber-of-commerce-kvk/";
@@ -57,8 +63,8 @@ export const SELF_EMPLOYED_VISA: VisaPageData = {
   incomeRequirements: [
     {
       label: "Required amount (gross profit per month, with holiday allowance)",
-      amount: "€1,734.57",
-      note: "Current IND figure for self-employed application; can change. Check IND required amounts.",
+      amount: SELF_EMPLOYED_MONTHLY_PROFIT_DISPLAY,
+      note: `IND figure · effective ${IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL}. Verify on IND required amounts.`,
     },
   ],
 
@@ -141,6 +147,7 @@ export const SELF_EMPLOYED_VISA: VisaPageData = {
     { label: "IND independent / sustainable income", href: IND_INCOME },
     { label: "Business.gov.nl self-employed professionals", href: BUSINESS_NL_SELF },
     { label: "KVK registration guidance", href: KVK_REG },
+    { label: "Netherlands official figures (ExpatCopilot citation table)", href: OFFICIAL_FIGURES_PATH_HREF },
   ],
 
   /** Pillar “Services” block is filled from `COMPANIES_REGISTRY` in `selfEmployedToGuideData` (lawyers, consultants, startup advisors, relocation). */
@@ -161,7 +168,7 @@ export const SELF_EMPLOYED_VISA: VisaPageData = {
     },
     {
       q: "How much income or profit do I need?",
-      a: "The IND publishes a required amount for the self-employed application. The current figure shown is €1,734.57 gross profit per month (with holiday allowance). This should be treated as a planning figure; approval also depends on business viability and the full application. Check the IND required amounts page for current values.",
+      a: `The IND publishes a required amount for the self-employed application. For ${IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL}, the figure is ${SELF_EMPLOYED_MONTHLY_PROFIT_DISPLAY} gross profit per month (with holiday allowance). Treat this as an official planning threshold; approval also depends on business viability and the full application. Always verify the live IND required-amounts page.`,
     },
     {
       q: "Is this the same as DAFT?",
@@ -190,6 +197,7 @@ export const SELF_EMPLOYED_VISA: VisaPageData = {
   ],
 
   relatedGuides: [
+    { label: "Netherlands official figures 2026", href: OFFICIAL_FIGURES_PATH_HREF },
     { label: "Dutch-American Friendship Treaty (DAFT)", href: `${BASE}/visa/dutch-american-friendship-treaty/` },
     { label: "Move to the Netherlands without a job", href: `${BASE}/move-to-netherlands-without-job/` },
     { label: "Cost of moving to the Netherlands", href: `${BASE}/moving-to-netherlands-cost/` },

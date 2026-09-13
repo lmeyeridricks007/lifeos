@@ -9,6 +9,12 @@ import {
   internationalHealthInsuranceProviders,
 } from "@/src/data/companies-registry";
 import { healthInsuranceOfficialSources } from "@/src/data/services/official-sources/health-insurance";
+import {
+  HEALTH_INSURANCE_EIGEN_RISICO_DISPLAY,
+  HEALTH_INSURANCE_EIGEN_RISICO_PERIOD_LABEL,
+  HEALTH_INSURANCE_EIGEN_RISICO_VOLUNTARY_MAX_TOTAL_EUR,
+  HEALTHCARE_ALLOWANCE_GUIDE_HREF,
+} from "@/src/lib/statutory/healthInsuranceFigures2026";
 
 /* Hero image prompt for future asset/CMS:
    "Cinematic editorial image for a Dutch health insurance category page for expats, showing organized relocation planning materials, policy comparison notes, passport, healthcare documents, smartphone or laptop with insurance comparison interface, subtle Dutch setting, natural daylight, premium magazine aesthetic, wide 16:9 banner."
@@ -157,7 +163,7 @@ export const healthInsuranceCategoryPage: ServiceCategoryPageData = {
     {
       id: "excess",
       title: "Excess (eigen risico)",
-      description: "The mandatory excess is €385 per year for most care in the standard package. You pay this amount first before the insurer pays. Some policies allow you to choose a higher voluntary excess in exchange for a lower premium.",
+      description: `The mandatory excess is ${HEALTH_INSURANCE_EIGEN_RISICO_DISPLAY} per year for most care in the standard package (${HEALTH_INSURANCE_EIGEN_RISICO_PERIOD_LABEL}). You pay this amount first before the insurer pays. Some policies allow you to choose a higher voluntary excess (up to about €${HEALTH_INSURANCE_EIGEN_RISICO_VOLUNTARY_MAX_TOTAL_EUR} total) in exchange for a lower premium.`,
     },
     {
       id: "copay",
@@ -168,7 +174,7 @@ export const healthInsuranceCategoryPage: ServiceCategoryPageData = {
 
   comparisonFactors: [
     { id: "premium", title: "Monthly premium", description: "Premiums vary by insurer and policy type. Compare like-for-like (e.g. same excess choice) where possible." },
-    { id: "excess", title: "Excess / deductible", description: "The mandatory excess is €385. Some insurers offer a higher voluntary excess for a lower premium." },
+    { id: "excess", title: "Excess / deductible", description: `The mandatory excess is ${HEALTH_INSURANCE_EIGEN_RISICO_DISPLAY} (${HEALTH_INSURANCE_EIGEN_RISICO_PERIOD_LABEL}). Some insurers offer a higher voluntary excess for a lower premium.` },
     { id: "policy-type", title: "Policy type / contracted care", description: "Restricted (natura) vs reimbursement (restitutie) or a combination. Affects which care providers you can use and how you claim." },
     { id: "supplementary", title: "Supplementary insurance", description: "Optional add-ons (dental, physio, etc.). Compare packages and limits if you need extras." },
     { id: "english", title: "English-language support", description: "Not all insurers offer full English. Check the provider’s website or contact them if this matters to you." },
@@ -207,7 +213,7 @@ export const healthInsuranceCategoryPage: ServiceCategoryPageData = {
     {
       id: "excess",
       title: "Mandatory excess (eigen risico)",
-      value: "€385 per year",
+      value: `${HEALTH_INSURANCE_EIGEN_RISICO_DISPLAY} per year`,
       note: "Official national rule for most care in the standard package.",
       disclaimer: "Government.nl",
     },
@@ -222,7 +228,7 @@ export const healthInsuranceCategoryPage: ServiceCategoryPageData = {
       title: "Healthcare allowance (zorgtoeslag)",
       value: "Up to ~€154/mo (income-dependent)",
       note: "If your income is below the threshold, you may be eligible for a healthcare allowance to offset part of the premium. Amount depends on income and situation.",
-      link: { label: "Zorgtoeslag (planned guide)", href: "/netherlands/zorgtoeslag-netherlands/" },
+      link: { label: "Healthcare allowance guide", href: HEALTHCARE_ALLOWANCE_GUIDE_HREF },
     },
   ],
 
@@ -315,7 +321,7 @@ export const healthInsuranceCategoryPage: ServiceCategoryPageData = {
     { q: "When do I need to arrange health insurance after moving?", a: "As soon as possible, and no later than 4 months after you arrive. If you have a residence permit, the insurance must generally be effective from the date the permit comes into force. Premium may be due retroactively if the policy starts from that date." },
     { q: "Do I still need Dutch insurance if I already have insurance abroad?", a: "Yes. Even if you have medical insurance in another country, you are still required to take out Dutch basic health insurance once you live or work in the Netherlands. Your foreign policy does not replace the compulsory Dutch one." },
     { q: "What is included in Dutch basic health insurance?", a: "The basic package is defined by the government and is the same for all insurers. It includes GP visits, hospital care, prescription medicine, and other care set out in the Health Insurance Act. The National Health Care Institute (Zorginstituut Nederland) explains the system in English." },
-    { q: "What is eigen risico?", a: "Eigen risico is the mandatory excess. It is €385 per year for most care in the standard package. You pay this amount first before the insurer pays. Some insurers let you choose a higher voluntary excess in return for a lower premium. It is separate from co-payments (eigen bijdrage) for specific care or products." },
+    { q: "What is eigen risico?", a: `Eigen risico is the mandatory excess. It is ${HEALTH_INSURANCE_EIGEN_RISICO_DISPLAY} per year for most care in the standard package (${HEALTH_INSURANCE_EIGEN_RISICO_PERIOD_LABEL}). You pay this amount first before the insurer pays. Some insurers let you choose a higher voluntary excess in return for a lower premium. It is separate from co-payments (eigen bijdrage) for specific care or products.` },
     { q: "Are all basic health insurance packages the same?", a: "Yes. All Dutch insurers must offer the same government-defined basic package. The core coverage is standardized. Differences are in premium, policy type (e.g. natura vs restitution), customer service, supplementary packages, and digital experience." },
     { q: "Why do premiums still differ if the basic package is standardized?", a: "Insurers set their own premiums and may offer different policy types (e.g. restricted network vs reimbursement), optional higher excess, and different levels of service. So the price and how you use the same basic cover can vary." },
     { q: "Do I need extra insurance for dental or physiotherapy?", a: "Basic insurance covers limited dental (e.g. up to age 18) and limited physio in some cases. For broader dental or physiotherapy, you need optional supplementary insurance. Coverage and cost vary by insurer and package." },

@@ -8,6 +8,7 @@ import { euBlueCardToGuideData } from "@/src/lib/visas/visaToGuideData";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
 import { getVisasResidencyInstructionalFigure } from "@/src/components/moving/visas-residency-cluster/visasResidencyInstructionalRasterAssets";
+import { HSM_BLUE_CARD_THRESHOLDS_LAST_VERIFIED } from "@/src/lib/freshness/hsmBlueCardThresholdsFreshness";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -49,7 +50,7 @@ export default function EuBlueCardVisaPage() {
       <ArticleJsonLd
         headline={data.title}
         description={data.description}
-        dateModified={new Date().toISOString().slice(0, 10)}
+        dateModified={data.dateModified ?? HSM_BLUE_CARD_THRESHOLDS_LAST_VERIFIED}
         urlPath={data.path}
       />
       {data.faq?.length ? <FaqPageJsonLd items={data.faq} /> : null}

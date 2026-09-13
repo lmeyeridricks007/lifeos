@@ -54,6 +54,7 @@ import {
   type PracticalLifeLink,
   type SetupChecklistItem,
 } from "./governmentPortalsNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -330,7 +331,7 @@ function SourceLink({ source }: { source: (typeof page.officialSources)[number] 
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: PracticalLifeLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

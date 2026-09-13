@@ -26,6 +26,7 @@ import {
   CITIES_FUNNEL_SOFT_COPILOT_SURFACE,
 } from "@/src/components/cities/shared/citiesFunnelPageUi";
 import { governmentServicesHubPage as page, type HubGuideLink } from "./governmentServicesHubPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -53,7 +54,7 @@ const hubIcons = [Globe2, ShieldCheck, Building2, Landmark, FileText] as const;
 
 function GuideCard({ item, iconIndex = 0 }: { item: HubGuideLink; iconIndex?: number }) {
   const Icon = hubIcons[iconIndex % hubIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const inner = (
     <>
       <div className={cn("absolute inset-x-0 top-0 h-1.5 rounded-t-2xl", isLive ? movingNlSignatureGradientClass : "bg-slate-200")} aria-hidden />

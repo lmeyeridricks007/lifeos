@@ -18,6 +18,7 @@ const SLUGS: VisaRouteSlug[] = [
   "dutch-american-friendship-treaty",
   "self-employed-visa",
   "student-visa",
+  "orientation-year",
   "partner-family-visa",
 ];
 
@@ -98,6 +99,11 @@ export function getGapsForRoute(slug: VisaRouteSlug, answers: VisaCheckerAnswers
       gaps.push("Your institution will act as sponsor for the residence permit");
       break;
     }
+    case "orientation-year":
+      gaps.push("Qualifying graduation, doctorate or research period within IND’s 3-year application window");
+      gaps.push("Personal application (no employer/institution sponsor for the zoekjaar filing itself)");
+      gaps.push("Confirm your exact eligibility category on the current IND orientation-year page");
+      break;
     case "partner-family-visa": {
       const hasPartner = answers.hasPartnerInNL === "partner-spouse" || answers.hasPartnerInNL === "family-member";
       if (!hasPartner)
@@ -172,14 +178,24 @@ export function getRecommendations(answers: VisaCheckerAnswers): VisaCheckerReco
     if (hasPartnerInNL(answers)) {
       secondaryRecs.push(secondary("partner-family-visa", "You could also explore joining a partner in the Netherlands if that fits your situation.", getGapsForRoute("partner-family-visa", answers)));
     }
+    secondaryRecs.push(
+      secondary(
+        "orientation-year",
+        "After a qualifying graduation, doctorate or research period, the orientation year (zoekjaar) can bridge job search and free work rights — confirm IND eligibility and timing.",
+        getGapsForRoute("orientation-year", answers)
+      )
+    );
     nextSteps.push("Confirm admission and that your institution is recognized.");
     nextSteps.push("Check financial proof and study amount requirements.");
     nextSteps.push("Prepare documents and apply via your institution.");
     nextSteps.push("Plan housing and arrival.");
+    nextSteps.push("If you may stay after study, read the orientation-year (zoekjaar) guide and IND timing rules.");
     return {
       primaryRecommendations: primaryRecs,
       secondaryRecommendations: secondaryRecs,
-      excludedRoutes: SLUGS.filter((s) => s !== "student-visa" && s !== "partner-family-visa"),
+      excludedRoutes: SLUGS.filter(
+        (s) => s !== "student-visa" && s !== "partner-family-visa" && s !== "orientation-year"
+      ),
       explanation,
       nextSteps,
       confidence: answers.studyIntent === "yes-admission" ? "high" : "medium",
@@ -257,10 +273,19 @@ export function getRecommendations(answers: VisaCheckerAnswers): VisaCheckerReco
     explanation.push("You are a non-EU citizen planning to work for a company.");
     explanation.push("You do not yet have a job offer (or are not sure).");
     explanation.push("The strongest work routes (Highly Skilled Migrant, EU Blue Card) usually require a job offer from a recognized or qualifying employer.");
+    explanation.push("If you recently completed qualifying study or research, the orientation year (zoekjaar) may allow job search and free work rights for one year — only if you meet current IND criteria.");
+    secondaryRecs.push(
+      secondary(
+        "orientation-year",
+        "If you graduated, completed a PhD or finished qualifying research within IND’s window, orientation year can support job search without a TWV.",
+        getGapsForRoute("orientation-year", answers)
+      )
+    );
     secondaryRecs.push(secondary("highly-skilled-migrant", "Once you have a job offer from a recognized sponsor, this is the most common route.", getGapsForRoute("highly-skilled-migrant", answers)));
     secondaryRecs.push(secondary("eu-blue-card", "Another option once you have a qualifying job offer.", getGapsForRoute("eu-blue-card", answers)));
+    nextSteps.push("If you may qualify after study/research, check the orientation-year (zoekjaar) guide and IND page first.");
     nextSteps.push("Focus on finding a job with a recognized IND sponsor.");
-    nextSteps.push("Compare HSM and EU Blue Card salary and requirements.");
+    nextSteps.push("Compare HSM and EU Blue Card salary and requirements (including reduced HSM after zoekjaar).");
     nextSteps.push("If you consider self-employment, use the visa checker again and select business.");
     nextSteps.push("Plan documents and relocation budget once you have an offer.");
     return {
@@ -323,6 +348,13 @@ export function getRecommendations(answers: VisaCheckerAnswers): VisaCheckerReco
     secondaryRecs.push(secondary("eu-blue-card", "Alternative work route with qualifying job and salary.", getGapsForRoute("eu-blue-card", answers)));
     secondaryRecs.push(secondary("self-employed-visa", "Relevant if you plan to work as self-employed (non-US).", getGapsForRoute("self-employed-visa", answers)));
     secondaryRecs.push(secondary("student-visa", "Relevant if you plan to study in the Netherlands.", getGapsForRoute("student-visa", answers)));
+    secondaryRecs.push(
+      secondary(
+        "orientation-year",
+        "Relevant after qualifying graduation, PhD or research within IND’s timing rules.",
+        getGapsForRoute("orientation-year", answers)
+      )
+    );
     secondaryRecs.push(secondary("partner-family-visa", "Relevant if you have a partner or family member in the Netherlands.", getGapsForRoute("partner-family-visa", answers)));
     nextSteps.push("Decide your main purpose: work, business, study, or family.");
     nextSteps.push("Use this tool again with your chosen purpose for clearer recommendations.");

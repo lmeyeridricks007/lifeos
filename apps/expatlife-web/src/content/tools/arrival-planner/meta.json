@@ -1,12 +1,12 @@
 {
   "hero": {
-    "title": "Arrival Planner for the Netherlands",
-    "subtitle": "Get a prioritized first-week and first-month plan—tasks, appointment-sensitive steps, and reminders tailored to your housing, household, and banking situation.",
+    "title": "Netherlands Arrival Planner",
+    "subtitle": "Generate a prioritized first-week and first-month plan. For why each step matters and common edge cases, read the After Arriving guide.",
     "primaryCtaLabel": "Start planning",
-    "secondaryCtaLabel": "Moving guide",
-    "secondaryCtaHref": "/netherlands/moving-to-the-netherlands/",
+    "secondaryCtaLabel": "Read the After Arriving guide",
+    "secondaryCtaHref": "/netherlands/after-arriving-netherlands/",
     "introBullets": [
-      "Sequence municipality registration, BSN, banking, and insurance in a practical order",
+      "Sequence municipality registration, BSN, banking, and insurance",
       "Spot steps that often need appointments or lead time",
       "See what can wait if your address is not fixed yet",
       "Adjust for solo, partner, or family households",
@@ -24,16 +24,17 @@
   "explanatorySections": [
     {
       "id": "how-to-use",
-      "title": "Simple workflow",
+      "title": "How to use this planner",
       "body": [
-        "Answer a few questions about your address, household, arrival timing, and how soon you need banking.",
-        "Generate your plan to see prioritized tasks, items that often need appointments, and reminders.",
-        "Use the output to book municipality and other appointments and gather documents in order—then continue with the First 90 Days Planner for weeks 2–12."
+        "Answer a few questions about your address, household, arrival timing, and how soon you need banking. Generate prioritized first-week and first-month tasks, appointment-sensitive items, and reminders.",
+        "For phase explanations and edge cases, read the After Arriving guide. Continue with the First 90 Days Planner for weeks 2–12."
       ]
     }
   ],
   "seo": {
-    "introParagraphs": []
+    "introParagraphs": [
+      "This interactive Arrival Planner builds a personalized first-week and first-month task sequence for the Netherlands. It is a planning tool — pair it with the After Arriving guide for full context."
+    ]
   },
   "toolPanel": {
     "whatYouGetTitle": "What you'll get",
@@ -78,10 +79,10 @@
     { "value": "chile", "label": "Chile" }
   ],
   "relatedLinks": {
+    "afterArriving": { "label": "After Arriving guide", "href": "/netherlands/after-arriving-netherlands/" },
     "registerAddress": { "label": "Register address", "href": "/netherlands/practical-life/registering-your-address-netherlands/" },
     "bsn": { "label": "BSN registration", "href": "/netherlands/bsn-registration/" },
     "first30": { "label": "First 30 days", "href": "/netherlands/first-30-days-netherlands/" },
-    "pillar": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
-    "hub": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" }
+    "pillar": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" }
   }
 }

@@ -57,6 +57,7 @@ import {
   remoteWorkNetherlandsPage as page,
   type RemoteWorkNetherlandsLink,
 } from "./remoteWorkNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -294,7 +295,7 @@ function FeatureCard({ title, body, iconIndex = 0 }: { title: string; body: stri
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: RemoteWorkNetherlandsLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

@@ -108,6 +108,25 @@ export function isRouteComingSoon(href: string): boolean {
   return getRouteStatus(href) === "coming-soon";
 }
 
+/**
+ * Whether a guide/service LinkCard should render as a clickable internal link.
+ * Trusts explicit comingSoon flags, allows absolute externals, and requires
+ * route-registry live status for internal paths (blocks staged scheduled pages).
+ */
+export function isGuideCardHrefLive(item: {
+  href: string;
+  status?: string | null;
+}): boolean {
+  const status = item.status ?? undefined;
+  if (status === "comingSoon" || status === "coming_soon" || status === "coming-soon") {
+    return false;
+  }
+  if (status === "external" || /^https?:\/\//i.test(item.href.trim())) {
+    return true;
+  }
+  return isRouteLive(item.href);
+}
+
 export type InternalLink = { label: string; href: string };
 
 /** Drop links to routes that are not live (hidden or coming-soon). Use for body copy and related sections. */

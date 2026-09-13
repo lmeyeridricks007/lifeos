@@ -2,9 +2,9 @@
   "slug": "moving-to-netherlands-cost",
   "path": "/netherlands/moving-to-netherlands-cost/",
   "title": "Cost of Moving to the Netherlands",
-  "metaTitle": "Cost of Moving to the Netherlands: Budget, Expenses, and What to Plan For",
-  "subtitle": "What to budget for when relocating: travel, documents, housing, shipping, and your first month of setup.",
-  "description": "How much does it cost to move to the Netherlands? See typical relocation expenses, budget examples, housing and document costs, and how to plan your move.",
+  "metaTitle": "Cost of Moving to the Netherlands | Budget Guide for Expats",
+  "subtitle": "What relocation usually costs: categories, ranges, and what to plan for before you use the interactive estimator.",
+  "description": "Guide to the cost of moving to the Netherlands—travel, documents, housing, shipping, and first-month setup. Pair with the Relocation Cost Estimator for a personalized budget range.",
   "breadcrumbLabel": "Moving Cost",
 
   "hero": {
@@ -30,22 +30,22 @@
   ],
 
   "heroCta": {
-    "title": "Plan your relocation budget",
-    "supportingText": "Use the Moving Checklist Generator to see which costs are likely to apply to your move, when they usually happen, and what to prepare before arrival.",
-    "primaryCtaLabel": "Generate a Moving Checklist",
-    "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
-    "secondaryCtaLabel": "Check your documents",
-    "secondaryCtaHref": "/netherlands/document-readiness-checker/",
+    "title": "Use the interactive cost estimator",
+    "supportingText": "This guide explains cost categories and ranges. Use the Relocation Cost Estimator for a personalized one-time and monthly budget based on your household and choices.",
+    "primaryCtaLabel": "Estimate relocation costs",
+    "primaryCtaHref": "/netherlands/moving/tools/relocation-cost-estimator/",
+    "secondaryCtaLabel": "Generate a Moving Checklist",
+    "secondaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
     "tertiaryCtaLabel": "Read the full moving guide",
     "tertiaryCtaHref": "/netherlands/moving-to-the-netherlands/"
   },
 
   "midPageCta": {
     "badge": "Recommended tool",
-    "title": "Build your budget plan step by step",
-    "description": "Use the Moving Checklist Generator to see which of these cost categories are likely to apply to your move.",
-    "ctaLabel": "Generate a Moving Checklist",
-    "ctaHref": "/netherlands/moving/tools/moving-checklist/"
+    "title": "Get a personalized relocation budget",
+    "description": "Use the Relocation Cost Estimator to turn these cost categories into a planning range for your household and move setup.",
+    "ctaLabel": "Estimate relocation costs",
+    "ctaHref": "/netherlands/moving/tools/relocation-cost-estimator/"
   },
   "midPageCtaAfterSectionId": "main-cost-categories",
 

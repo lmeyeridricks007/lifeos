@@ -260,6 +260,7 @@ const VISA_GUIDE_PATHS = [
   "/netherlands/visa/self-employed-visa/",
   "/netherlands/visa/student-visa/",
   "/netherlands/visa/partner-family-visa/",
+  "/netherlands/visa/orientation-year/",
 ] as const;
 
 /** Static pages and hubs not already covered by moving registry or tool registry. */
@@ -282,6 +283,7 @@ const EXTRA_LIVE_PATHS = [
   "/search/",
   "/netherlands/",
   "/netherlands/moving-to-the-netherlands/",
+  "/netherlands/eu-vs-non-eu-moving-to-netherlands/",
   "/netherlands/moving-to-netherlands-from/",
   "/netherlands/services/",
   /** Live App Router service directory — mortgage advisor discovery for expats. */

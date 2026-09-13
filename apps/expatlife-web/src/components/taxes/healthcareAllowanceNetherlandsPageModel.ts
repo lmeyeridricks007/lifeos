@@ -26,6 +26,18 @@ export const healthcareAllowanceNetherlandsPage = {
   path: HEALTHCARE_ALLOWANCE_NETHERLANDS_PATH,
   publish: true,
   publishDate: "2026-07-01",
+  lastReviewed: "30 August 2026",
+  lastReviewedIso: "2026-08-30",
+  heroOfficialSources: [
+    {
+      label: "Belastingdienst — Zorgtoeslag",
+      href: "https://www.belastingdienst.nl/wps/wcm/connect/nl/zorgtoeslag/zorgtoeslag",
+    },
+    {
+      label: "Government.nl — Health insurance",
+      href: "https://www.government.nl/topics/health-insurance",
+    },
+  ],
   seo: {
     title: "Healthcare Allowance in the Netherlands (Zorgtoeslag) | Expat Guide",
     description:

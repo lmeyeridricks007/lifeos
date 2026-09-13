@@ -7,6 +7,7 @@ import { BoldInline } from "@/components/content/PillarContentBlocks";
 import { cn } from "@/lib/cn";
 import { Badge } from "@/components/ui/badge";
 import { transitionInteractive, transitionTransform } from "@/lib/ui/interaction";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 type CardLinkProps = {
   href: string;
@@ -95,7 +96,8 @@ export function CardLink({
   className,
   onClick,
 }: CardLinkProps) {
-  const isComingSoon = status === "coming_soon";
+  const isComingSoon =
+    status === "coming_soon" || !isGuideCardHrefLive({ href, status: status ?? undefined });
   const baseClass = cn(
     transitionInteractive,
     "group block rounded-card border border-border bg-surface-raised p-card-pad shadow-card ease-out hover:border-border-strong hover:shadow-card-hover motion-reduce:hover:shadow-card active:brightness-[0.995] motion-reduce:active:brightness-100",
@@ -106,7 +108,7 @@ export function CardLink({
     <CardContent
       icon={icon}
       badge={badge}
-      status={status}
+      status={isComingSoon ? "coming_soon" : status}
       title={title}
       description={description}
       descriptionMarkdown={descriptionMarkdown}

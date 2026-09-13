@@ -85,6 +85,7 @@ export const thirtyPercentRulingNlExploreCards: MovePillarExploreCard[] = [
     meta: "Money",
   },
   { href: R.taxesTools, title: "Taxes tools hub", description: "Ruling, salary net, payslip, and awareness tools in one hub.", meta: "Taxes" },
+  { href: R.officialFigures, title: "Official figures 2026", description: "Shared citation table for 30% norms and related statutory amounts.", meta: "Taxes" },
   { href: R.moneyTools, title: "Money & tax tools hub", description: "Browse Money calculators and guides.", meta: "Money" },
   { href: R.workingNl, title: "Working in the Netherlands", description: "Move-led work setup: contracts, payroll timing, first salary.", meta: "Move" },
 ];
@@ -104,6 +105,7 @@ function buildReferences() {
       { label: "Tax return in the Netherlands", href: TAX_RETURN_NL_PATH },
       { label: "Working in the Netherlands", href: R.workingNl },
       { label: "Taxes tools hub", href: R.taxesTools },
+      { label: "Official figures 2026", href: R.officialFigures },
       { label: "Money & tax tools hub", href: R.moneyTools },
       { label: "Tax advisors for expats (guide)", href: R.taxAdvisorsExpats },
     ],

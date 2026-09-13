@@ -56,6 +56,7 @@ import {
   childBenefitsNetherlandsPage as page,
   type ChildBenefitsLink,
 } from "./childBenefitsNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -260,7 +261,7 @@ function MistakeCard({ card, index }: { card: (typeof page.mistakeCards)[number]
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: ChildBenefitsLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

@@ -40,9 +40,9 @@ export const revalidate = CONTENT_REVALIDATE;
 const canonical = "/netherlands/moving/tools/arrival-planner";
 
 export const metadata: Metadata = buildSocialMetadata({
-  title: "Arrival planner for the Netherlands (free tool)",
+  title: "Netherlands Arrival Planner (Interactive Tool)",
   description:
-    "Build a prioritized first-week and first-month plan for the Netherlands—tasks, appointments, and reminders based on your situation. About 2 minutes.",
+    "Build a prioritized first-week and first-month arrival plan for the Netherlands. Personalized tasks and reminders — pair with the After Arriving guide for context.",
   path: canonical,
   ogType: "website",
 });

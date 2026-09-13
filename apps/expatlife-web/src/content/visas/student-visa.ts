@@ -99,6 +99,12 @@ export const STUDENT_VISA: VisaPageData = {
       href: `${BASE}/visa/eu-blue-card/`,
     },
     {
+      route: "Orientation year (zoekjaar)",
+      bestFor: "Recent graduates, PhD holders and qualifying researchers seeking work",
+      mainDifference: "Post-study/research search year with free work rights; not a study permit.",
+      href: `${BASE}/visa/orientation-year/`,
+    },
+    {
       route: "Partner / family visa",
       bestFor: "Partners or family members of Dutch or EU residents",
       mainDifference: "Relationship-based residence, not study.",
@@ -206,6 +212,7 @@ export const STUDENT_VISA: VisaPageData = {
   ],
 
   relatedGuides: [
+    { label: "Orientation year (zoekjaar)", href: `${BASE}/visa/orientation-year/` },
     { label: "Move to the Netherlands without a job", href: `${BASE}/move-to-netherlands-without-job/` },
     { label: "First 90 Days in the Netherlands", href: `${BASE}/first-90-days-netherlands/` },
     { label: "Cost of moving to the Netherlands", href: `${BASE}/moving-to-netherlands-cost/` },

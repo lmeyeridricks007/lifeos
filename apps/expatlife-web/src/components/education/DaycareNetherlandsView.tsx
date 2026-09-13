@@ -61,6 +61,7 @@ import {
   daycareNetherlandsPage as page,
   type DaycareLink,
 } from "./daycareNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -246,7 +247,7 @@ function CityComparisonCard({ city }: { city: (typeof page.cityComparison)[numbe
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: DaycareLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

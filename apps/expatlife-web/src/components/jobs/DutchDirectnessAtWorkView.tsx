@@ -56,6 +56,7 @@ import {
   type MistakeFixRow,
   type TimelineStep,
 } from "./dutchDirectnessAtWorkPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -446,7 +447,7 @@ function MythCard({ myth, reality, iconIndex = 0 }: { myth: string; reality: str
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: DirectnessLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

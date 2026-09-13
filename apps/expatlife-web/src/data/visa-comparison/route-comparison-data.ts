@@ -36,6 +36,7 @@ export const COMPARISON_TABLE_SLUGS: VisaRouteSlug[] = [
   "dutch-american-friendship-treaty",
   "self-employed-visa",
   "student-visa",
+  "orientation-year",
   "partner-family-visa",
 ];
 
@@ -53,7 +54,7 @@ function buildEntry(slug: VisaRouteSlug, overrides: Partial<RouteComparisonEntry
     officialFeeLabel: r.currentFeeReference,
     timelineLabel: r.timelineRange,
     workRightsLabel: r.workRightsOrType,
-    sponsorNeededLabel: slug === "partner-family-visa" ? "Yes (sponsor in NL)" : slug === "student-visa" ? "Yes (institution)" : ["highly-skilled-migrant", "eu-blue-card"].includes(slug) ? "Yes (employer)" : "No",
+    sponsorNeededLabel: slug === "partner-family-visa" ? "Yes (sponsor in NL)" : slug === "student-visa" ? "Yes (institution)" : slug === "orientation-year" ? "No (personal application)" : ["highly-skilled-migrant", "eu-blue-card"].includes(slug) ? "Yes (employer)" : "No",
     bestNextStep: overrides.bestNextStep ?? `Read the full guide: ${r.title}`,
     idealForTags: overrides.idealForTags ?? r.primaryUseCases.slice(0, 3),
     officialSources: r.officialSourceLinks,
@@ -87,6 +88,11 @@ export const ROUTE_COMPARISON_ENTRIES: RouteComparisonEntry[] = [
     routeType: "study",
     bestNextStep: "Check admission and proof-of-funds requirements with your institution.",
     idealForTags: ["Study", "University / HBO", "Limited work rights"],
+  }),
+  buildEntry("orientation-year", {
+    routeType: "work",
+    bestNextStep: "Confirm you are within IND’s 3-year window; then plan the switch to HSM or another purpose.",
+    idealForTags: ["After study", "Job search", "Free work rights"],
   }),
   buildEntry("partner-family-visa", {
     routeType: "family",

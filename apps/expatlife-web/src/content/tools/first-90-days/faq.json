@@ -1,8 +1,8 @@
 [
   {
-    "id": "first-90-days-what-to-do",
-    "question": "What should I do in my first 90 days in the Netherlands?",
-    "answer": "Most people do best with a phased approach: essentials in week 1 to 2 (registration, banking, health insurance), daily-life setup in week 3 to 4 (DigiD, GP, utilities, transport), stabilisation in month 2, and routine and integration planning in month 3."
+    "id": "how-planner-differs-from-guide",
+    "question": "How is this planner different from the First 90 Days guide?",
+    "answer": "The guide explains what happens in days 1–90, common delays, and edge cases. This tool generates a personalized week-by-week checklist from your answers. Use both: guide for context, planner for execution."
   },
   {
     "id": "already-arrived",
@@ -12,42 +12,17 @@
   {
     "id": "starting-job-soon",
     "question": "What changes if I am starting work soon?",
-    "answer": "Job start increases urgency around banking, payroll readiness, insurance clarity, and practical admin timing in the first few weeks. The planner prioritises these tasks."
+    "answer": "Indicate job timing in the form. The planner prioritises banking, payroll readiness, and insurance clarity in the first few weeks."
   },
   {
     "id": "moving-with-kids",
     "question": "What if I am moving with kids?",
-    "answer": "Family setups add school and childcare timing, plus more coordination across household schedules. Select that you expect school or childcare setup tasks so the planner includes these priorities."
-  },
-  {
-    "id": "learn-dutch-immediately",
-    "question": "Do I need to learn Dutch immediately?",
-    "answer": "Not always immediately, but early awareness helps. A small, consistent routine is usually more practical than trying to do everything at once. You can indicate that you want language or integration support to see relevant tasks and guides."
-  },
-  {
-    "id": "when-digid",
-    "question": "When should I set up DigiD?",
-    "answer": "Usually after your address registration and BSN are active. DigiD is required for many government and semi-public services online, so applying in week 3–4 is a good target."
-  },
-  {
-    "id": "when-health-insurance",
-    "question": "When should I choose health insurance?",
-    "answer": "Dutch health insurance is mandatory. Timing often depends on when you register or start work—many people must take out a policy within the first few weeks. Check with your employer or use the planner’s unknowns list to confirm your deadline."
-  },
-  {
-    "id": "dutch-bank-first-month",
-    "question": "Do I need a Dutch bank account in the first month?",
-    "answer": "Many employers and landlords require a Dutch account for salary and rent. If you are starting work soon, opening an account as soon as you have a BSN is usually a priority. The planner reflects this when you indicate you do not yet have an account."
-  },
-  {
-    "id": "housing-still-temporary",
-    "question": "What if my housing is still temporary?",
-    "answer": "You can still complete registration and many admin steps once you have a valid address. The planner can focus on essentials first and include tasks to check medium-term housing stability in month 2. Select your housing situation so tasks stay relevant."
+    "answer": "Select school or childcare setup so family-related tasks appear. For deeper family context, use the related First 90 Days and family guides."
   },
   {
     "id": "dont-know-priorities",
     "question": "What if I do not know what to prioritise?",
-    "answer": "Use the roadmap summary and timeline sections together. The roadmap summarises what to focus on first, stabilise by month 2, and build by month 3. The unknowns list highlights what you may still need to confirm."
+    "answer": "Generate a plan with your best-guess inputs, then use the roadmap summary and unknowns list. Read the First 90 Days guide if you need the narrative sequence first."
   },
   {
     "id": "legal-advice",

@@ -124,8 +124,30 @@ export const VISA_CHECKER_ROUTES: VisaCheckerRouteEntry[] = [
     timelineRange: "1–2 months after admission",
     complexityLabel: "Medium",
     workRightsOrType: "Limited work rights during study",
+    compareAgainst: ["orientation-year"],
     officialSourceLinks: [
       { label: "IND study permits", href: "https://ind.nl/en/residence-permits/study" },
+    ],
+  },
+  {
+    slug: "orientation-year",
+    title: "Orientation Year (Zoekjaar)",
+    shortDescription: "One-year search year after graduation, PhD or qualifying research.",
+    bestFor: "Highly educated graduates and researchers seeking work in the Netherlands within IND timing rules.",
+    guideHref: `${BASE}/visa/orientation-year/`,
+    primaryUseCases: ["After study", "Job search", "Graduate bridge to HSM"],
+    basicEligibilitySignals: ["Qualifying graduation/PhD/research within 3 years", "Apply personally"],
+    currentFeeReference: "€254",
+    timelineRange: "IND decision then 1-year permit",
+    complexityLabel: "Medium",
+    workRightsOrType: "Work freely; TWV not required during the year",
+    compareAgainst: ["student-visa", "highly-skilled-migrant"],
+    officialSourceLinks: [
+      {
+        label: "IND orientation year",
+        href: "https://ind.nl/en/residence-permits/work/residence-permit-for-orientation-year",
+      },
+      { label: "IND required amounts", href: "https://ind.nl/en/required-amounts-income-requirements" },
     ],
   },
   {

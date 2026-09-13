@@ -2,11 +2,12 @@
   "slug": "inburgering-netherlands",
   "path": "/netherlands/integration/inburgering/",
   "title": "Inburgering in the Netherlands",
-  "metaTitle": "Inburgering in the Netherlands: HSM, Wi 2021, B1 & KNM (2025)",
+  "metaTitle": "Inburgering in the Netherlands: HSM, Wi 2021, B1 & KNM",
   "subtitle": "Do you have to inburgeren on HSM? What are B1 and KNM? This guide sequences IND and DUO — not legal advice.",
-  "description": "Authoritative orientation to Dutch inburgering for expats: Wet inburgering 2021 and the B1 default, HSM vs obligated permits, KNM exam changes from 1 July 2025, and DUO as the exam body. Confirm on IND and inburgeren.nl.",
+  "description": "Authoritative orientation to Dutch inburgering for expats: Wet inburgering 2021 and the B1 default, HSM vs obligated permits, KNM exam changes from 1 July 2025 (still current), and DUO as the exam body. Confirm on IND and inburgeren.nl.",
   "breadcrumbLabel": "Inburgering",
   "lastUpdated": "Last reviewed: 30 August 2026",
+  "dateModified": "2026-08-30",
   "heroOfficialSources": [
     {
       "label": "DUO — inburgeren.nl (English)",
@@ -33,7 +34,7 @@
     { "id": "overview", "label": "Overview" },
     { "id": "wi-2021-and-b1", "label": "Wi 2021 & B1 default" },
     { "id": "hsm-vs-obligation", "label": "HSM vs obligated permits" },
-    { "id": "exam-components-knm", "label": "Exams & KNM (2025)" },
+    { "id": "exam-components-knm", "label": "Exams & KNM" },
     { "id": "official-roles", "label": "DUO, IND & gemeente" },
     { "id": "pr-and-citizenship", "label": "PR & citizenship links" },
     { "id": "tools", "label": "Tools (orientation)" },
@@ -236,7 +237,7 @@
     },
     {
       "q": "Is this the same as the old Culture “inburgering exams” page?",
-      "a": "This guide is the authoritative ExpatLife page for obligations, Wi 2021 / B1, HSM vs other permits, KNM 2025, and DUO/IND roles. The former culture orientation URL redirects here so there is one guide — not two competing articles."
+      "a": "This guide is the authoritative ExpatLife page for obligations, Wi 2021 / B1, HSM vs other permits, KNM after the 1 July 2025 update, and DUO/IND roles. The former culture orientation URL redirects here so there is one guide — not two competing articles."
     },
     {
       "q": "Do I need inburgering for permanent residence?",

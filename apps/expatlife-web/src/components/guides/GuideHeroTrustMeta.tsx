@@ -27,6 +27,11 @@ type GuideHeroTrustMetaProps = {
    * Wins over `lastReviewed` when set.
    */
   lastReviewedText?: string | null;
+  /**
+   * Statutory / figure window, e.g. "1 July 2026–31 December 2026".
+   * Rendered as "Effective: …" when not already included in `lastReviewedText`.
+   */
+  effectivePeriod?: string | null;
   /** Official authority links shown above the fold. */
   sources?: readonly GuideHeroOfficialSource[] | null;
   sourcesLabel?: string;
@@ -37,13 +42,22 @@ export function GuideHeroTrustMeta({
   lastReviewed,
   lastReviewedLabel = "Last reviewed:",
   lastReviewedText,
+  effectivePeriod,
   sources,
   sourcesLabel = "Official sources:",
   className,
 }: GuideHeroTrustMetaProps) {
-  const reviewedLine =
+  const period = effectivePeriod?.trim() || null;
+  let reviewedLine =
     lastReviewedText?.trim() ||
     (lastReviewed?.trim() ? `${lastReviewedLabel} ${lastReviewed.trim()}` : null);
+
+  if (reviewedLine && period && !/effective:/i.test(reviewedLine)) {
+    reviewedLine = `${reviewedLine} · Effective: ${period}`;
+  } else if (!reviewedLine && period) {
+    reviewedLine = `Effective: ${period}`;
+  }
+
   const hasSources = Boolean(sources?.length);
   if (!reviewedLine && !hasSources) return null;
 

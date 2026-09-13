@@ -14,6 +14,7 @@ import { movingNlCardMicroLiftClass, movingNlSectionH2Class, movingNlSectionH2On
 import { CITIES_FUNNEL_SECTION_SCROLL_MARGIN, CITIES_FUNNEL_SOFT_COPILOT_SURFACE, citiesFunnelHeroFigureClassName } from "@/src/components/cities/shared/citiesFunnelPageUi";
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
 import { dutchCulturePage as page, type LifeGuideLink, type MistakeCard, type MythCard, type RegionalCard, type ValueCard } from "./dutchCulturePageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const sectionClass = cn(
   CITIES_FUNNEL_SECTION_SCROLL_MARGIN,
@@ -519,7 +520,7 @@ export function GuideCrossLink({
 
 export function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: LifeGuideLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

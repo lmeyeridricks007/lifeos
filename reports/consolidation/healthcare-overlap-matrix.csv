@@ -1,0 +1,21 @@
+URL_A,URL_B,overlap_class,shared_topics,decision,canonical_if_any,reason
+/netherlands/living/healthcare-basics/,/netherlands/health-insurance-netherlands/,DISTINCT_INTENT,care system vs insurance mandate,KEEP_BOTH,,System explainer vs who-must-insure; hub routes both
+/netherlands/health-insurance-netherlands/,/netherlands/health/health-insurance-comparison-netherlands/,GUIDE_VS_TOOL,basic package; eigen risico; choosing,KEEP_BOTH + reciprocal CTAs,,Guide = rules; Comparison = decision factors
+/netherlands/health-insurance-netherlands/,/netherlands/services/health-insurance/,DISTINCT_INTENT,providers; premiums; EHIC,KEEP_BOTH,,Editorial mandate vs commercial directory
+/netherlands/health/health-insurance-comparison-netherlands/,/netherlands/services/health-insurance/,PARTIAL_OVERLAP,comparing insurers,KEEP_BOTH,,Framework vs provider list; different SERP jobs
+/netherlands/health/health-insurance-comparison-netherlands/,/netherlands/best/health-insurance-for-expats/,PARTIAL_OVERLAP,compare insurers,NEEDS_GSC_DATA,,Monetized shortlist may compete; wait GSC
+/netherlands/taxes/healthcare-allowance-netherlands/,/netherlands/taxes/tools/healthcare-allowance-estimator/,GUIDE_VS_TOOL,zorgtoeslag,KEEP_BOTH,,Explainer vs calculator
+/netherlands/health-insurance-netherlands/,/netherlands/taxes/healthcare-allowance-netherlands/,HUB_VS_GUIDE,zorgtoeslag mention,KEEP_BOTH; summarize+link,,Insurance guide intros; allowance is canonical
+/netherlands/health/emergency-healthcare-netherlands/,/netherlands/living/emergencies-safety/,PARTIAL_OVERLAP,112; urgent help,KEEP_BOTH,,Clinical pathways vs broader safety living guide
+/netherlands/health/gp-netherlands/,/netherlands/living/healthcare-basics/,PARTIAL_OVERLAP,huisarts,KEEP_BOTH,,Deep GP guide vs system overview
+/netherlands/health/maternity-care-netherlands/,/netherlands/family/pregnancy-netherlands/,PARTIAL_OVERLAP,maternity pathway,KEEP_BOTH,,Care pathway vs pregnancy journey
+/netherlands/family/pregnancy-netherlands/,/netherlands/family/giving-birth-netherlands/,PARTIAL_OVERLAP,birth,KEEP_BOTH,,Trimester vs birth-day
+/netherlands/culture/health-system-culture-basics/,/netherlands/living/healthcare-basics/,OUTDATED_VARIANT,culture of care,KEEP thin; deepen later or absorb,,Scaffold already canonicalizes soft to insurance
+/netherlands/official-figures/,/netherlands/health-insurance-netherlands/,HUB_VS_GUIDE,eigen risico; premium band,KEEP_BOTH,,Figures spine vs narrative guide
+/netherlands/after-arriving-netherlands/,/netherlands/health-insurance-netherlands/,ARRIVAL vs GUIDE,4-month rule,KEEP_BOTH; section links guide,,Arrival checklist must not replace mandate guide
+/netherlands/first-90-days-netherlands/,/netherlands/health/gp-netherlands/,ARRIVAL vs GUIDE,GP registration,KEEP_BOTH,,Timeline vs deep GP
+/netherlands/services/health-insurance/,/netherlands/services/insurance-providers/,PARTIAL_OVERLAP,insurers,KEEP_BOTH,,Health-specialized vs multi-line
+/netherlands/health/,/netherlands/living/healthcare-basics/,HUB_VS_GUIDE,orientation,KEEP_BOTH,,Hub routes; basics explains
+/netherlands/services/compare-health-insurance/,/netherlands/health/health-insurance-comparison-netherlands/,OUTDATED_VARIANT,compare insurance,STAGED alias candidate,,No live page; assert staged; no 301 this pass
+/netherlands/money/insurance/health/,/netherlands/health-insurance-netherlands/,OUTDATED_VARIANT,health insurance,NAV RETARGET DONE,insurance guide,Ghost URL; nav fixed
+/netherlands/healthcare/,/netherlands/health/,OUTDATED_VARIANT,healthcare hub,LINK RETARGET DONE,health hub,Ghost URL in taxes after-moving fixed

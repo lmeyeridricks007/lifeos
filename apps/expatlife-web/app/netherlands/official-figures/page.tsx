@@ -15,7 +15,7 @@ export const revalidate = CONTENT_REVALIDATE;
 
 const title = `Netherlands official figures ${OFFICIAL_FIGURES_TAX_YEAR}`;
 const description =
-  "Dated 2026 citation table: HSM salary floors, IND fees, 30% ruling norms and salary cap, adult minimum wage, eigen risico and typical basic health premium — with official source URLs. Not a calculator.";
+  "Dated 2026 citation table: HSM salary floors, partner/family sponsor income, self-employed required profit, IND fees, 30% ruling norms and salary cap, adult minimum wage, eigen risico and typical basic health premium — with official source URLs. Not a calculator.";
 
 export const metadata: Metadata = {
   title: pageMetadataTitle(title),
@@ -56,7 +56,7 @@ export default function OfficialFiguresPage() {
       <ArticleJsonLd
         headline={title}
         description={`${description} ${OFFICIAL_FIGURES_AS_OF_LABEL}. Last reviewed ${OFFICIAL_FIGURES_LAST_REVIEWED}.`}
-        dateModified="2026-08-30"
+        dateModified="2026-09-13"
         urlPath={OFFICIAL_FIGURES_PATH}
       />
       <OfficialFiguresView />
@@ -71,7 +71,7 @@ export default function OfficialFiguresPage() {
             url: absoluteUrlFromPath(OFFICIAL_FIGURES_PATH),
             creator: { "@type": "Organization", name: "ExpatCopilot" },
             temporalCoverage: "2026",
-            dateModified: "2026-08-30",
+            dateModified: "2026-09-13",
             license: "https://www.expatcopilot.com/disclaimer/",
             isAccessibleForFree: true,
           }),

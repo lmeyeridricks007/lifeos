@@ -195,7 +195,7 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
     },
     {
       q: "What salary do I need for a highly skilled migrant permit?",
-      a: "The IND sets minimum salary thresholds (gross per month, without holiday pay). Current figures on this page: age 30 and over €5,942; under 30 €4,357; reduced criterion €3,122 in certain cases (same €5,942 standard floor as the EU Blue Card tier). Always verify on the IND required-amounts page before you sign — proposed 2027 tightening is not yet law.",
+      a: "The IND sets minimum salary thresholds (gross per month, without holiday pay). Current figures on this page: age 30 and over €5,942; under 30 €4,357; reduced criterion €3,122 in certain cases (same €5,942 standard floor as the EU Blue Card tier). Reduced criterion often links to orientation year / zoekjaar timing — see the orientation-year guide and always verify on the IND required-amounts page before you sign — proposed 2027 tightening is not yet law.",
     },
     {
       q: "Are Highly Skilled Migrant rules changing in 2027?",
@@ -203,7 +203,7 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
     },
     {
       q: "Can I move to the Netherlands on this visa without a job offer?",
-      a: "No. This route requires a job offer from a recognized sponsor. If you do not have an offer, you would need another basis (e.g. partner visa, study, DAFT if eligible, or EU Blue Card with a qualifying offer).",
+      a: "No. This route requires a job offer from a recognized sponsor. If you do not have an offer, you would need another basis (for example partner visa, study, orientation year if you meet IND graduate/researcher rules, DAFT if eligible, or EU Blue Card with a qualifying offer).",
     },
     {
       q: "How much does the application cost?",
@@ -232,6 +232,7 @@ export const HIGHLY_SKILLED_MIGRANT_VISA: VisaPageData = {
   ],
 
   relatedGuides: [
+    { label: "Orientation year (zoekjaar)", href: `${BASE}/visa/orientation-year/` },
     { label: "Netherlands official figures 2026", href: "/netherlands/official-figures/" },
     { label: "EU vs Non-EU Moving to the Netherlands", href: `${BASE}/eu-vs-non-eu-moving-to-netherlands/` },
     { label: "Move to the Netherlands without a job", href: `${BASE}/move-to-netherlands-without-job/` },

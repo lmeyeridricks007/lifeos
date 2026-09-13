@@ -39,10 +39,12 @@ const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   mapPinned: MapPinned,
   calendarCheck2: CalendarCheck2,
   checkSquare: CheckSquare,
+  clipboardCheck: ClipboardCheck,
   fileText: FileText,
   plane: Plane,
   home: Home,
   briefcase: Briefcase,
+  globe: Globe,
 };
 
 function getIcon(iconKey: string) {
@@ -167,6 +169,46 @@ export function PortalNetherlandsTemplate({ content }: { content: NlPortalConten
           className="rounded-3xl bg-gradient-to-r from-cyan-50/70 via-white to-brand-50/70"
         >
           <PortalNetherlandsOriginControls content={content.personalizedEntry} />
+        </Section>
+
+        <Section
+          id="choose-entry-route"
+          eyebrow={content.entryRoutes.eyebrow}
+          title={content.entryRoutes.title}
+          subtitle={content.entryRoutes.subtitle}
+          className="rounded-3xl bg-gradient-to-r from-indigo-50/70 via-white to-sky-50/55"
+        >
+          <div className="space-y-6">
+            <p className="max-w-3xl text-sm leading-relaxed text-slate-600">{content.entryRoutes.disclaimer}</p>
+            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              {content.entryRoutes.routes.map((route) => (
+                <CardLink
+                  key={route.href}
+                  href={route.href}
+                  title={route.title}
+                  description={route.description}
+                  meta={route.relevantFor}
+                  icon={getIcon(route.icon)}
+                />
+              ))}
+            </div>
+            <div>
+              <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-slate-500">
+                {content.entryRoutes.toolsLabel}
+              </p>
+              <div className="grid gap-4 md:grid-cols-3">
+                {content.entryRoutes.tools.map((tool) => (
+                  <CardLink
+                    key={tool.href}
+                    href={tool.href}
+                    title={tool.title}
+                    description={tool.description}
+                    icon={getIcon(tool.icon)}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
         </Section>
 
         <Section

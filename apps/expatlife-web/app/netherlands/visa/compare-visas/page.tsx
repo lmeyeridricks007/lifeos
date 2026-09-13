@@ -170,7 +170,10 @@ const FAQ_ITEMS = [
 ];
 
 const RELATED_GUIDES = [
+  { href: `${BASE}/`, title: "Netherlands hub", description: "Country entry point: choose an immigration path, then open guides and tools." },
+  { href: `${BASE}/moving/visas-residency/`, title: "Visas & residency hub", description: "Doorway to work, study, family, and self-employed guides." },
   { href: `${BASE}/visa/highly-skilled-migrant/`, title: "Highly Skilled Migrant Visa", description: "Salary, sponsor, costs, and process." },
+  { href: `${BASE}/visa/orientation-year/`, title: "Orientation Year (Zoekjaar)", description: "After study or research: 1-year search year, free work rights, HSM reduced-salary link." },
   { href: `${BASE}/visa/eu-blue-card/`, title: "EU Blue Card", description: "Salary thresholds, costs, and comparison with HSM." },
   { href: `${BASE}/visa/dutch-american-friendship-treaty/`, title: "DAFT", description: "US entrepreneur route: investment, process, and tools." },
   { href: `${BASE}/visa/self-employed-visa/`, title: "Self-Employed Visa", description: "Fees, viability, and process for non-DAFT entrepreneurs." },
@@ -390,7 +393,8 @@ export default function CompareVisasPage() {
       title: "Students",
       body: (
         <>
-          Non-EU students admitted to qualifying Dutch education apply for a study residence permit; the institution usually submits the application.{" "}
+          Non-EU students admitted to qualifying Dutch education apply for a study residence permit; the institution usually submits the application. After qualifying graduation or research, some people later use the{" "}
+          <Link href={`${BASE}/visa/orientation-year/`} className="font-medium text-brand-600 hover:text-brand-700">orientation year (zoekjaar)</Link>.{" "}
           <Link href={`${BASE}/visa/student-visa/`} className="font-medium text-brand-600 hover:text-brand-700">Student visa guide</Link> and <Link href={`${BASE}/visa-checker/`} className="font-medium text-brand-600 hover:text-brand-700">Visa Checker</Link>.
         </>
       ),

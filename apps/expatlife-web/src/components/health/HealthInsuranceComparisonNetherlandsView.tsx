@@ -62,6 +62,7 @@ import {
   type ComparisonLink,
   type TimelineStep,
 } from "./healthInsuranceComparisonNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 
@@ -458,7 +459,7 @@ function Timeline({ steps, eyebrow }: { steps: readonly TimelineStep[]; eyebrow:
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: ComparisonLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
   const isExternal = item.status === "external";
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>
@@ -858,13 +859,14 @@ export function HealthInsuranceComparisonNetherlandsView() {
                         {chip}
                       </span>
                     ))}
-                    {"lastReviewed" in page && page.lastReviewed ? (
-                      <span className={cn(CITIES_FUNNEL_INFO_CHIP, "shadow-sm ring-1 ring-slate-900/[0.03]")}>
-                        Last reviewed: {page.lastReviewed}
-                      </span>
-                    ) : null}
                   </div>
-                  {"heroOfficialSources" in page && page.heroOfficialSources?.length ? (
+                  {"lastReviewed" in page && page.lastReviewed ? (
+                    <GuideHeroTrustMeta
+                      className="mt-4"
+                      lastReviewed={page.lastReviewed}
+                      sources={"heroOfficialSources" in page ? page.heroOfficialSources : undefined}
+                    />
+                  ) : "heroOfficialSources" in page && page.heroOfficialSources?.length ? (
                     <GuideHeroTrustMeta className="mt-4" sources={page.heroOfficialSources} />
                   ) : null}
                   <div className="mt-7 flex flex-col gap-3 sm:flex-row">

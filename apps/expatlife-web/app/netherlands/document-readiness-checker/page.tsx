@@ -27,21 +27,21 @@ const canonical = "/netherlands/document-readiness-checker";
 const BASE = "/netherlands";
 
 export const metadata: Metadata = {
-  title: "Netherlands Document Readiness Checker: See What Documents You Still Need",
+  title: "Netherlands Document Readiness Checker (Interactive Tool)",
   description:
-    "Check which document categories may matter for your move to the Netherlands, see what is missing, and get a personalized readiness summary with next steps.",
+    "Interactive checklist of document categories for moving to the Netherlands. Personalized readiness summary — pair with translation and legalization guides for deep how-to.",
   alternates: { canonical },
   openGraph: {
-    title: "Netherlands Document Readiness Checker: See What Documents You Still Need",
+    title: "Netherlands Document Readiness Checker (Interactive Tool)",
     description:
-      "Check which document categories may matter for your move to the Netherlands, see what is missing, and get a personalized readiness summary with next steps.",
+      "Interactive checklist of document categories for moving to the Netherlands. Personalized readiness summary — pair with translation and legalization guides for deep how-to.",
     url: absoluteUrlFromPath(canonical),
   },
   twitter: {
     card: "summary_large_image",
-    title: "Netherlands Document Readiness Checker: See What Documents You Still Need",
+    title: "Netherlands Document Readiness Checker (Interactive Tool)",
     description:
-      "Check which document categories may matter for your move to the Netherlands, see what is missing, and get a personalized readiness summary with next steps.",
+      "Interactive checklist of document categories for moving to the Netherlands. Personalized readiness summary — pair with translation and legalization guides for deep how-to.",
   },
 };
 

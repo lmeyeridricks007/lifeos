@@ -244,6 +244,29 @@ export type NlPortalContent = {
     seeCountryRouteLabel: string;
     getChecklistLabel: string;
   };
+  /** Research-stage immigration path chooser — live routes only. */
+  entryRoutes: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    disclaimer: string;
+    toolsLabel: string;
+    routes: Array<{
+      title: string;
+      /** Soft relevance line, e.g. "Often relevant for…" */
+      relevantFor: string;
+      /** One-line explanation without conclusive eligibility. */
+      description: string;
+      href: string;
+      icon: string;
+    }>;
+    tools: Array<{
+      title: string;
+      description: string;
+      href: string;
+      icon: string;
+    }>;
+  };
   quickStart: {
     eyebrow: string;
     title: string;

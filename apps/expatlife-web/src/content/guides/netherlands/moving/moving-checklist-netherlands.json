@@ -1,10 +1,10 @@
 {
   "slug": "moving-checklist-netherlands",
   "path": "/netherlands/moving-checklist-netherlands/",
-  "title": "Moving to the Netherlands Checklist",
-  "metaTitle": "Moving to the Netherlands Checklist (2026 Guide for Expats)",
-  "subtitle": "A practical checklist for what to do before you move, after arrival, and during your first 90 days.",
-  "description": "Use this moving to the Netherlands checklist to plan what to do before you move, after arrival, and during your first 90 days. Includes documents, registration, costs, and practical next steps.",
+  "title": "Moving to the Netherlands Checklist Guide",
+  "metaTitle": "Moving to the Netherlands Checklist Guide (2026)",
+  "subtitle": "What to prepare before you move, after arrival, and in your first 90 days—plus common mistakes and cost context.",
+  "description": "Educational moving checklist guide for the Netherlands: documents, registration, costs, and timing. Generate a personalized interactive checklist when you are ready to execute.",
   "breadcrumbLabel": "Moving Checklist",
   "lastUpdated": "Updated regularly",
 
@@ -33,9 +33,9 @@
   ],
 
   "heroCta": {
-    "title": "Not sure which steps apply to your situation?",
-    "supportingText": "Generate a personalized moving checklist in under a minute based on your stage, household, and work situation.",
-    "primaryCtaLabel": "Generate Your Moving Checklist",
+    "title": "Use the interactive moving checklist",
+    "supportingText": "This guide covers phases, documents, and mistakes. Generate a personalized task list in under a minute based on your stage, household, and work situation.",
+    "primaryCtaLabel": "Use the interactive checklist",
     "primaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
     "secondaryCtaLabel": "Check your documents",
     "secondaryCtaHref": "/netherlands/document-readiness-checker/"

@@ -135,6 +135,15 @@ export const moveVisaResidencySections: MoveVisaResidencySection[] = [
         nextStep: { ctaLabel: "Student visa", href: "/netherlands/visa/student-visa/" },
       },
       {
+        id: "orientation-year",
+        visualKey: "change",
+        chip: "After study",
+        title: "Orientation year (zoekjaar)",
+        intro:
+          "After qualifying graduation, a doctorate or research, some people get a 1-year permit to look for work and work freely. Confirm IND eligibility and timing before you plan on it.",
+        nextStep: { ctaLabel: "Orientation year guide", href: "/netherlands/visa/orientation-year/" },
+      },
+      {
         id: "partner",
         visualKey: "partner",
         chip: "Family",
@@ -261,8 +270,11 @@ export const moveVisaResidencyFaq: PillarFaqItem[] = [
   },
   {
     q: "What if I want to study?",
-    a: "Treat acceptance at school, your study residence permit, health insurance, and registering with the gemeente as one timeline—if one part slips, the rest often stall too.",
-    links: [{ label: "Student visa", href: "/netherlands/visa/student-visa/" }],
+    a: "Treat acceptance at school, your study residence permit, health insurance, and registering with the gemeente as one timeline—if one part slips, the rest often stall too. After a qualifying graduation or research period, some people later use the orientation year (zoekjaar) to look for work.",
+    links: [
+      { label: "Student visa", href: "/netherlands/visa/student-visa/" },
+      { label: "Orientation year (zoekjaar)", href: "/netherlands/visa/orientation-year/" },
+    ],
   },
   {
     q: "Can I change status after arriving?",
@@ -270,6 +282,7 @@ export const moveVisaResidencyFaq: PillarFaqItem[] = [
     links: [
       { label: "Extensions & changes guide", href: "/netherlands/moving/extensions-changes/" },
       { label: "Compare visa routes", href: "/netherlands/visa/compare-visas/" },
+      { label: "Orientation year (zoekjaar)", href: "/netherlands/visa/orientation-year/" },
     ],
   },
   {
@@ -587,6 +600,13 @@ export const moveVisaResidencyPageMeta: MoveVisaResidencyPageMeta = {
     title: "Continue your move plan",
     subtitle: "Same flow as the main Moving page: start with the hub, then open deeper guides when you need them.",
     cards: [
+      {
+        id: "nl-hub",
+        title: "Netherlands hub",
+        description: "Country entry point — choose an immigration path, then open Move, Living, and tools.",
+        href: "/netherlands/",
+        ctaLabel: "Open Netherlands hub",
+      },
       {
         id: "pillar",
         title: "Moving to the Netherlands",

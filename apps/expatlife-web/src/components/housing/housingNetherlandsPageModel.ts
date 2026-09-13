@@ -94,6 +94,18 @@ export const housingNetherlandsPage = {
   hubPath: HOUSING_HUB_PATH,
   publish: true,
   publishDate: "2026-10-08",
+  /** Actual editorial review of hub content and cited Pararius Q1 2026 rent bands. */
+  lastReviewed: "13 September 2026",
+  lastReviewedIso: "2026-09-13",
+  effectivePeriodLabel: "Pararius Huurmonitor Q1 2026 (rent bands)",
+  heroOfficialSources: [
+    {
+      label: "Pararius Huurmonitor (Q1 2026)",
+      href: "https://www.pararius.com/news/dutch-rental-prices-outpace-house-prices",
+    },
+    { label: "Government.nl", href: "https://www.government.nl/" },
+    { label: "Kadaster", href: "https://www.kadaster.nl/" },
+  ],
   seo: {
     title: "Housing in the Netherlands | Complete Expat Guide",
     description:

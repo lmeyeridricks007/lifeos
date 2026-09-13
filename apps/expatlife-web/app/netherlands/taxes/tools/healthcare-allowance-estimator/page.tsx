@@ -140,7 +140,7 @@ const RELATED_NEXT_STEPS = [
     description: "Compare providers when you are choosing a basic policy.",
   },
   {
-    href: `${BASE}/services/compare-health-insurance/`,
+    href: `${BASE}/health/health-insurance-comparison-netherlands/`,
     title: "Compare Dutch health insurance",
     description: "Side-by-side context before you lock in a premium and apply for allowance.",
   },
@@ -341,7 +341,7 @@ export default function HealthcareAllowanceEstimatorPage() {
             </Link>
           </li>
           <li>
-            <Link href={`${BASE}/services/compare-health-insurance/`} className="font-medium text-copilot-primary hover:underline">
+            <Link href={`${BASE}/health/health-insurance-comparison-netherlands/`} className="font-medium text-copilot-primary hover:underline">
               Compare Dutch health insurance →
             </Link>
           </li>

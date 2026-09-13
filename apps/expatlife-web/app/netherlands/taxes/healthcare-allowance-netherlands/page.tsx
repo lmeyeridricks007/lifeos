@@ -4,11 +4,18 @@ import { ArticleJsonLd, FaqPageJsonLd, WebPageJsonLd } from "@/lib/seo/jsonld";
 import { getSiteOrigin } from "@/lib/site-origin";
 import { HealthcareAllowanceNetherlandsView } from "@/src/components/taxes/HealthcareAllowanceNetherlandsView";
 import { healthcareAllowanceNetherlandsPage as page } from "@/src/components/taxes/healthcareAllowanceNetherlandsPageModel";
+import { resolveSchemaDateModified } from "@/src/lib/freshness/format";
 
 export const revalidate = 86400;
 
 const baseUrl = getSiteOrigin();
 const { path, seo, hero, publishDate } = page;
+const dateModified =
+  resolveSchemaDateModified({
+    lastReviewedIso: "lastReviewedIso" in page ? page.lastReviewedIso : null,
+    lastReviewedText: "lastReviewed" in page ? `Last reviewed: ${page.lastReviewed}` : null,
+    publishDateIso: publishDate,
+  }) ?? publishDate;
 
 export const metadata: Metadata = {
   title: pageMetadataTitle(seo.title),
@@ -35,7 +42,7 @@ export default function HealthcareAllowanceNetherlandsPage() {
   return (
     <>
       <WebPageJsonLd name={hero.pageTitle} description={seo.description} urlPath={path} datePublished={publishDate} />
-      <ArticleJsonLd headline={hero.pageTitle} description={seo.description} dateModified={publishDate} urlPath={path} />
+      <ArticleJsonLd headline={hero.pageTitle} description={seo.description} dateModified={dateModified} urlPath={path} />
       <FaqPageJsonLd items={page.faq.map((item) => ({ q: item.q, a: item.a }))} url={absoluteUrlFromPath(path)} />
       <HealthcareAllowanceNetherlandsView />
     </>

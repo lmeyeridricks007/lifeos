@@ -66,6 +66,7 @@ import {
   type BestBanksLink,
   type MistakeCard as MistakeCardData,
 } from "./bestBanksExpatsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const CANONICAL = BEST_BANKS_EXPATS_PATH;
@@ -500,7 +501,7 @@ function MistakeCard({ card, index }: { card: MistakeCardData; index: number }) 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: BestBanksLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = iconPool[iconIndex % iconPool.length];
   const isExternal = item.status === "external";
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

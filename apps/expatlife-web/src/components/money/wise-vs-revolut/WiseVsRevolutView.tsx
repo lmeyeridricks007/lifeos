@@ -62,6 +62,7 @@ import {
   type MistakeCard as MistakeCardData,
   type WiseVsRevolutLink,
 } from "./wiseVsRevolutPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const CANONICAL = WISE_VS_REVOLUT_PATH;
@@ -456,7 +457,7 @@ function LinkCard({
 }) {
   const Icon = iconPool[iconIndex % iconPool.length];
   const isExternal = item.status === "external";
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

@@ -1,11 +1,17 @@
 {
   "slug": "first-90-days-netherlands",
   "path": "/netherlands/first-90-days-netherlands/",
-  "title": "First 90 Days in the Netherlands",
-  "metaTitle": "First 90 Days in the Netherlands: Complete Expat Setup Guide",
-  "subtitle": "A structured view of what expats often complete in their first three months.",
-  "description": "Learn what expats typically complete in their first 90 days in the Netherlands, including address registration, BSN, banking, DigiD, insurance, and settling into daily life.",
+  "title": "Your First 90 Days in the Netherlands",
+  "metaTitle": "Your First 90 Days in the Netherlands | Expat Setup Guide",
+  "subtitle": "What, why, and when: a structured guide to the admin and daily-life milestones most expats complete in their first three months.",
+  "description": "Guide to what expats typically complete in their first 90 days in the Netherlands—registration, BSN, banking, DigiD, insurance, and settling in. Pair with the interactive 90-day planner for a personalized checklist.",
   "breadcrumbLabel": "First 90 Days",
+  "lastUpdated": "Last reviewed: 13 September 2026",
+  "dateModified": "2026-09-13",
+  "heroOfficialSources": [
+    { "label": "Government.nl", "href": "https://www.government.nl/" },
+    { "label": "IND", "href": "https://ind.nl/en" }
+  ],
 
   "hero": {
     "eyebrow": "Arrival",
@@ -31,9 +37,9 @@
   ],
 
   "heroCta": {
-    "title": "Plan your first 90 days",
-    "supportingText": "Use our planning tools to turn this 90-day guide into a personalized step-by-step setup plan based on your situation.",
-    "primaryCtaLabel": "Generate a week-by-week 90-day plan",
+    "title": "Use the interactive 90-day planner",
+    "supportingText": "This guide explains phases, delays, and edge cases. Use the Settlement Planner to generate a personalized week-by-week checklist for your situation.",
+    "primaryCtaLabel": "Use the interactive 90-day planner",
     "primaryCtaHref": "/netherlands/moving/tools/first-90-days/",
     "secondaryCtas": [
       { "label": "Generate a moving checklist", "href": "/netherlands/moving/tools/moving-checklist/" },

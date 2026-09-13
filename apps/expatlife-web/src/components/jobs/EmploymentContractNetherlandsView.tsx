@@ -64,6 +64,7 @@ import {
   MORTGAGES_NETHERLANDS_EXPATS_PATH,
   type EmploymentContractLink,
 } from "./employmentContractNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -355,7 +356,7 @@ function LinkedFeatureCard({
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: EmploymentContractLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

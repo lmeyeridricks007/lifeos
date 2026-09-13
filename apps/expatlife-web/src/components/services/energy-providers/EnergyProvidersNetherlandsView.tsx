@@ -47,6 +47,7 @@ import {
   type EnergyProviderEntry,
   type EnergyProviderLink,
 } from "./energyProvidersNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -176,7 +177,7 @@ function FeatureCard({ title, body, iconIndex = 0 }: { title: string; body: stri
 function LinkCard({ item, iconIndex = 0 }: { item: EnergyProviderLink; iconIndex?: number }) {
   const icons = [Zap, Flame, FileText, Building2, Globe2, ShieldCheck] as const;
   const Icon = icons[iconIndex % icons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const body = (
     <>
       <div

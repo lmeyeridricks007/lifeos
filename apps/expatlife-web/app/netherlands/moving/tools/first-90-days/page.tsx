@@ -34,9 +34,9 @@ export const revalidate = CONTENT_REVALIDATE;
 const canonical = "/netherlands/moving/tools/first-90-days";
 
 export const metadata: Metadata = buildSocialMetadata({
-  title: "First 90 days in the Netherlands planner (free tool)",
+  title: "90-Day Netherlands Settlement Planner (Interactive Tool)",
   description:
-    "Create a personalized week-by-week plan for your first 90 days in the Netherlands, including admin, daily life setup, and integration awareness.",
+    "Interactive week-by-week planner for your first 90 days in the Netherlands. Personalized settlement tasks — pair with the First 90 Days guide for context.",
   path: canonical,
   ogType: "website",
 });

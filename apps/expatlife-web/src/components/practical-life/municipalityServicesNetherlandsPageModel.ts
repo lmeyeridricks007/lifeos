@@ -1063,10 +1063,10 @@ export const municipalityServicesNetherlandsPage = {
       description: "Wider relocation timeline connecting registration with first-week practical setup.",
     },
     {
-      label: "BSN Netherlands",
-      href: BSN_NETHERLANDS_PATH,
-      status: "comingSoon",
-      description: "Deeper practical-life guide to BSN documents, timing and registration routes.",
+      label: "BSN Registration",
+      href: BSN_REGISTRATION_PATH,
+      status: "live",
+      description: "Deeper guide to BSN documents, timing and registration routes.",
     },
     {
       label: "DigiD Netherlands",
@@ -1199,15 +1199,15 @@ export const municipalityServicesNetherlandsPage = {
   ] satisfies PracticalLifeLink[],
   futureGuides: [
     {
-      label: "BSN Netherlands",
-      href: BSN_NETHERLANDS_PATH,
-      status: "comingSoon",
-      description: "Practical-life pillar guide dedicated to BSN routes and documents.",
+      label: "BSN Registration",
+      href: BSN_REGISTRATION_PATH,
+      status: "live",
+      description: "How you receive a BSN, documents and city appointment context.",
     },
     {
-      label: "DigiD Netherlands",
+      label: "DigiD in the Netherlands",
       href: DIGID_NETHERLANDS_PATH,
-      status: "comingSoon",
+      status: "live",
       description: "Full DigiD setup guide for newcomers after registration.",
     },
     {
@@ -1217,10 +1217,10 @@ export const municipalityServicesNetherlandsPage = {
       description: "Focused address-registration walkthrough with document checklists.",
     },
     {
-      label: "Local Taxes Netherlands",
-      href: LOCAL_TAXES_NETHERLANDS_PATH,
-      status: "comingSoon",
-      description: "Deeper guide to gemeente tax letters, charges and payment steps.",
+      label: "Property Tax (WOZ / local charges)",
+      href: PROPERTY_TAX_PATH,
+      status: "live",
+      description: "Live orientation for gemeente-related property tax while a dedicated local-taxes guide is staged.",
     },
   ] satisfies PracticalLifeLink[],
 };

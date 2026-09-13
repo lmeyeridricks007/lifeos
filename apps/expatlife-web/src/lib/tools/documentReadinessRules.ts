@@ -201,11 +201,11 @@ export function buildRelevantLinks(
 ): Array<{ label: string; href: string }> {
   const withFrom = (href: string) => `${href}${href.includes("?") ? "&" : "?"}from=${encodeURIComponent(input.from)}`;
   const links = [
-    { label: "Documents needed", href: withFrom("/netherlands/document-readiness-checker/") },
-    { label: "Moving checklist Netherlands", href: withFrom("/netherlands/moving-checklist-netherlands/") },
+    { label: "Document translation guide", href: withFrom("/netherlands/document-translation-netherlands/") },
+    { label: "Document legalization guide", href: withFrom("/netherlands/document-legalization-netherlands/") },
+    { label: "Moving checklist guide", href: withFrom("/netherlands/moving-checklist-netherlands/") },
     { label: "Register address in the Netherlands", href: withFrom("/netherlands/practical-life/registering-your-address-netherlands/") },
     { label: "Moving to the Netherlands guide", href: withFrom("/netherlands/moving-to-the-netherlands/") },
-    { label: "Moving to the Netherlands", href: withFrom("/netherlands/moving-to-the-netherlands/") },
   ];
   const originSlug = input.from?.trim().toLowerCase().replace(/\s+/g, "-");
   if (originSlug) {

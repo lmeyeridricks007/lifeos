@@ -71,16 +71,17 @@
       "categoryId": "move-immigration",
       "menuGroup": "move",
       "seo": {
-        "title": "Moving Checklist Netherlands: Generate Your Expat Relocation Plan",
-        "description": "Create a personalized moving checklist for the Netherlands.",
+        "title": "Netherlands Moving Checklist Generator (Interactive Tool)",
+        "description": "Create a personalized moving checklist for the Netherlands. Pair with the Moving Checklist guide for full context.",
         "keywords": [
-          "moving checklist Netherlands",
+          "moving checklist Netherlands generator",
           "expat checklist Netherlands"
         ]
       },
       "summary": "Create a personalized relocation checklist based on your situation.",
       "primaryConversion": "both",
       "relatedGuides": [
+        "/netherlands/moving-checklist-netherlands/",
         "/netherlands/moving-to-the-netherlands/",
         "/netherlands/document-readiness-checker/"
       ],
@@ -120,8 +121,8 @@
       "categoryId": "move-immigration",
       "menuGroup": "move",
       "seo": {
-        "title": "Arrival Planner Netherlands: Plan Your First Week and Month",
-        "description": "Plan your first week and first month after arriving in the Netherlands.",
+        "title": "Netherlands Arrival Planner (Interactive Tool)",
+        "description": "Build a prioritized first-week and first-month arrival plan. Pair with the After Arriving guide for full context.",
         "keywords": [
           "arrival planner Netherlands",
           "first week Netherlands expat"
@@ -130,7 +131,7 @@
       "summary": "Build a practical arrival sequence based on your setup status.",
       "primaryConversion": "both",
       "relatedGuides": [
-        "/netherlands/municipality-registration-netherlands/",
+        "/netherlands/after-arriving-netherlands/",
         "/netherlands/municipality-registration-netherlands/",
         "/netherlands/first-30-days-netherlands/"
       ],
@@ -172,16 +173,17 @@
         "first-90-days-setup-planner"
       ],
       "seo": {
-        "title": "First 90 Days Planner Netherlands: Build Your Settlement Plan",
-        "description": "Create a week-by-week plan for your first 90 days in the Netherlands.",
+        "title": "90-Day Netherlands Settlement Planner (Interactive Tool)",
+        "description": "Create a personalized week-by-week settlement plan for your first 90 days. Pair with the First 90 Days guide for full context.",
         "keywords": [
-          "first 90 days Netherlands",
+          "first 90 days Netherlands planner",
           "expat setup planner Netherlands"
         ]
       },
       "summary": "Generate a 90-day timeline covering admin and daily-life setup.",
       "primaryConversion": "both",
       "relatedGuides": [
+        "/netherlands/first-90-days-netherlands/",
         "/netherlands/first-30-days-netherlands/",
         "/netherlands/first-60-days-netherlands/",
         "/netherlands/moving-to-the-netherlands/"
@@ -231,9 +233,10 @@
       "summary": "Score your document prep and highlight likely missing records.",
       "primaryConversion": "both",
       "relatedGuides": [
-        "/netherlands/document-readiness-checker/",
+        "/netherlands/document-translation-netherlands/",
+        "/netherlands/document-legalization-netherlands/",
         "/netherlands/moving-checklist-netherlands/",
-        "/netherlands/municipality-registration-netherlands/"
+        "/netherlands/visa-documents-netherlands/"
       ],
       "relatedTools": [
         "/netherlands/moving/tools/moving-checklist/",
@@ -1026,7 +1029,7 @@
         "/netherlands/taxes/gross-vs-net-salary/",
         "/netherlands/taxes/30-percent-ruling/",
         "/netherlands/money/taxes/tax-advisors/",
-        "/netherlands/money/taxes/employment-overview/",
+        "/netherlands/taxes/payroll-tax-netherlands/",
         "/netherlands/money/expat-taxes-netherlands/"
       ],
       "relatedTools": [
@@ -1194,7 +1197,7 @@
       "summary": "Translate salary and employment details into a simple tax overview.",
       "primaryConversion": "signup",
       "relatedGuides": [
-        "/netherlands/money/taxes/employment-overview/"
+        "/netherlands/taxes/payroll-tax-netherlands/"
       ],
       "relatedTools": [
         "/netherlands/taxes/tools/double-tax-awareness-tool/"
@@ -1905,7 +1908,8 @@
       "primaryConversion": "both",
       "relatedGuides": [
         "/netherlands/health/",
-        "/netherlands/money/insurance/health/"
+        "/netherlands/health-insurance-netherlands/",
+        "/netherlands/health/health-insurance-comparison-netherlands/"
       ],
       "relatedTools": [
         "/netherlands/taxes/tools/healthcare-allowance-estimator/"
@@ -2882,7 +2886,7 @@
       "primaryConversion": "signup",
       "relatedGuides": [
         "/netherlands/moving/visas-residency/",
-        "/netherlands/money/taxes/"
+        "/netherlands/taxes/"
       ],
       "relatedTools": [
         "/netherlands/work/tools/job-change-impact-simulator/",

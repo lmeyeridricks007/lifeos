@@ -12,11 +12,13 @@ export const MOVING_HUB = PILLAR;
 
 /** Links from Moving Checklist. */
 export const MOVING_CHECKLIST_RELATED_GUIDES: ToolRelatedGuide[] = [
+  { href: `${BASE}/moving-checklist-netherlands/`, title: "Moving checklist guide", description: "Full educational checklist: phases, documents, costs, and common mistakes." },
   { href: `${BASE}/after-arriving-netherlands/`, title: "After arriving in the Netherlands", description: "Post-arrival hub: registration, BSN, DigiD, insurance, banking, first-week setup." },
   { href: `${BASE}/moving-to-the-netherlands/`, title: "Moving to the Netherlands", description: "Timeline, checklist & documents guide." },
   { href: `${BASE}/visa/dutch-american-friendship-treaty/`, title: "Dutch-American Friendship Treaty (DAFT)", description: "Entrepreneur route for US citizens: process, documents, and tools." },
   { href: `${BASE}/visa/eu-blue-card/`, title: "EU Blue Card in the Netherlands", description: "Salary, costs, and process for the EU Blue Card work route." },
   { href: `${BASE}/visa/student-visa/`, title: "Student Visa in the Netherlands", description: "Costs, study amounts, documents, and timeline for the study route." },
+  { href: `${BASE}/visa/orientation-year/`, title: "Orientation Year (Zoekjaar)", description: "After study or research: 1-year search year, free work rights, HSM reduced-salary link." },
   { href: `${BASE}/visa/partner-family-visa/`, title: "Partner & Family Visa Netherlands", description: "Requirements, income, costs, and application steps for partner and family reunification." },
   { href: `${BASE}/visa/self-employed-visa/`, title: "Self-Employed Visa in the Netherlands", description: "Official fees, profit requirements, business setup, and relocation tools for the self-employed route." },
   { href: `${BASE}/moving-requirements-netherlands/`, title: "Moving to the Netherlands: key requirements", description: "Documents, housing, arrival admin, and first months." },
@@ -34,7 +36,7 @@ export const MOVING_CHECKLIST_RELATED_TOOLS: ToolRelatedTool[] = [
 
 /** Links from Arrival Planner. */
 export const ARRIVAL_PLANNER_RELATED_GUIDES: ToolRelatedGuide[] = [
-  { href: `${BASE}/after-arriving-netherlands/`, title: "After arriving in the Netherlands", description: "Arrival overview and what depends on registration." },
+  { href: `${BASE}/after-arriving-netherlands/`, title: "After Arriving guide", description: "Read the full guide: first-week priorities, registration, BSN, DigiD, banking, and insurance context." },
   { href: `${BASE}/municipality-registration-netherlands/`, title: "Municipality registration in the Netherlands", description: "Register with the municipality, BRP, BSN, documents, and timing." },
   { href: `${BASE}/open-bank-account-netherlands/`, title: "Open a bank account in the Netherlands", description: "Banking setup for your first weeks." },
   { href: `${BASE}/health-insurance-netherlands/`, title: "Health insurance in the Netherlands for expats", description: "Timing, comparison, and first-month setup." },
@@ -49,9 +51,9 @@ export const ARRIVAL_PLANNER_RELATED_TOOLS: ToolRelatedTool[] = [
 
 /** Links from First 90 Days. */
 export const FIRST_90_DAYS_RELATED_GUIDES: ToolRelatedGuide[] = [
+  { href: `${BASE}/first-90-days-netherlands/`, title: "Your First 90 Days guide", description: "Read the full guide: phases, delays, admin health check, and edge cases." },
   { href: `${BASE}/first-30-days-netherlands/`, title: "First 30 days in the Netherlands", description: "Priority tasks for your first month." },
   { href: `${BASE}/first-60-days-netherlands/`, title: "First 60 days in the Netherlands", description: "Stabilizing your setup in month one and two." },
-  { href: `${BASE}/first-90-days-netherlands/`, title: "First 90 days in the Netherlands", description: "Settlement roadmap and routines." },
   { href: `${BASE}/after-arriving-netherlands/`, title: "After arriving in the Netherlands", description: "Post-arrival hub: registration, BSN, DigiD, insurance, banking, first-week setup." },
   { href: `${BASE}/open-bank-account-netherlands/`, title: "Open a bank account in the Netherlands", description: "Banking and DigiD setup." },
   { href: `${BASE}/health-insurance-netherlands/`, title: "Health insurance in the Netherlands", description: "Mandatory insurance and comparison." },
@@ -65,14 +67,12 @@ export const FIRST_90_DAYS_RELATED_TOOLS: ToolRelatedTool[] = [
 
 /** Links from Document Readiness. */
 export const DOCUMENT_READINESS_RELATED_GUIDES: ToolRelatedGuide[] = [
-  { href: `${BASE}/documents-needed-to-move-netherlands/`, title: "Documents needed", description: "Core records to gather before and after your move." },
-  { href: `${BASE}/moving-documents-checklist/`, title: "Moving documents checklist", description: "Identity, civil, employment, housing categories." },
+  { href: `${BASE}/document-translation-netherlands/`, title: "Document translation in the Netherlands", description: "When translation may be required." },
+  { href: `${BASE}/document-legalization-netherlands/`, title: "Document legalization in the Netherlands", description: "Apostille and legalisation for foreign documents." },
   { href: `${BASE}/visa-documents-netherlands/`, title: "Visa documents for the Netherlands", description: "Document categories for long-stay visa and residence." },
   { href: `${BASE}/visa/partner-family-visa/`, title: "Partner & Family Visa Netherlands", description: "Requirements, documents, and application steps for partner and family reunification." },
   { href: `${BASE}/visa/self-employed-visa/`, title: "Self-Employed Visa in the Netherlands", description: "Fees, profit requirements, business setup, and documents for the self-employed route." },
-  { href: `${BASE}/document-translation-netherlands/`, title: "Document translation in the Netherlands", description: "When translation may be required." },
-  { href: `${BASE}/document-legalization-netherlands/`, title: "Document legalization in the Netherlands", description: "When legalization may matter." },
-  { href: `${BASE}/document-legalization-netherlands/`, title: "Document legalization in the Netherlands", description: "Apostille and legalisation for foreign documents." },
+  { href: `${BASE}/moving-checklist-netherlands/`, title: "Moving checklist guide", description: "Educational pre-move and arrival checklist overview." },
   { href: `${BASE}/moving-to-the-netherlands/`, title: "Moving to the Netherlands", description: "Pillar guide with planning context." },
 ];
 
@@ -83,15 +83,16 @@ export const DOCUMENT_READINESS_RELATED_TOOLS: ToolRelatedTool[] = [
 
 /** Links for the canonical Document Readiness Checker page (/netherlands/document-readiness-checker). */
 export const DOCUMENT_READINESS_CHECKER_RELATED_GUIDES: ToolRelatedGuide[] = [
+  { href: `${BASE}/document-translation-netherlands/`, title: "Document translation", description: "When sworn translation is commonly needed." },
+  { href: `${BASE}/document-legalization-netherlands/`, title: "Document legalization", description: "Apostille and legalisation context." },
+  { href: `${BASE}/visa-documents-netherlands/`, title: "Visa documents", description: "Document categories for long-stay visa." },
   { href: `${BASE}/visa/highly-skilled-migrant/`, title: "Highly Skilled Migrant", description: "Salary, sponsor, documents, and process." },
   { href: `${BASE}/visa/eu-blue-card/`, title: "EU Blue Card", description: "Salary thresholds and process for the EU Blue Card route." },
   { href: `${BASE}/visa/dutch-american-friendship-treaty/`, title: "DAFT", description: "US entrepreneur route: documents and process." },
   { href: `${BASE}/visa/self-employed-visa/`, title: "Self-Employed Visa", description: "Business documents and requirements." },
   { href: `${BASE}/visa/student-visa/`, title: "Student Visa", description: "Admission and proof of funds." },
   { href: `${BASE}/visa/partner-family-visa/`, title: "Partner & Family Visa", description: "Relationship and sponsor documents." },
-  { href: `${BASE}/documents-needed-to-move-netherlands/`, title: "Documents needed", description: "Core records to gather." },
-  { href: `${BASE}/moving-documents-checklist/`, title: "Moving documents checklist", description: "Identity, civil, employment, housing." },
-  { href: `${BASE}/visa-documents-netherlands/`, title: "Visa documents", description: "Document categories for long-stay visa." },
+  { href: `${BASE}/moving-checklist-netherlands/`, title: "Moving checklist guide", description: "Educational pre-move and arrival checklist overview." },
   { href: `${BASE}/moving-to-the-netherlands/`, title: "Moving to the Netherlands", description: "Pillar guide with planning context." },
 ];
 
@@ -134,9 +135,12 @@ export const RELOCATION_COST_ESTIMATOR_RELATED_TOOLS: ToolRelatedTool[] = [
 
 /** Links from Visa Checker. */
 export const VISA_CHECKER_RELATED_GUIDES: ToolRelatedGuide[] = [
+  { href: `${BASE}/`, title: "Netherlands hub", description: "Country entry: choose an immigration path, then open guides and tools." },
+  { href: `${BASE}/moving/visas-residency/`, title: "Visas & residency hub", description: "Doorway to work, study, family, and self-employed guides." },
   { href: `${BASE}/visa/compare-visas/`, title: "Compare Netherlands Visas", description: "Compare work, entrepreneur, student, and partner routes side by side." },
   { href: `${BASE}/visa/highly-skilled-migrant/`, title: "Highly Skilled Migrant Visa", description: "Salary, sponsor, costs, and process for the HSM route." },
   { href: `${BASE}/visa/eu-blue-card/`, title: "EU Blue Card", description: "Salary thresholds, costs, and comparison with HSM." },
+  { href: `${BASE}/visa/orientation-year/`, title: "Orientation Year (Zoekjaar)", description: "After study or research: one-year search year and HSM reduced-salary link." },
   { href: `${BASE}/visa/dutch-american-friendship-treaty/`, title: "DAFT", description: "US entrepreneur route: investment, process, and tools." },
   { href: `${BASE}/visa/self-employed-visa/`, title: "Self-Employed Visa", description: "Fees, viability, and process for non-DAFT entrepreneurs." },
   { href: `${BASE}/visa/student-visa/`, title: "Student Visa", description: "Costs, study amounts, and timeline for the study route." },

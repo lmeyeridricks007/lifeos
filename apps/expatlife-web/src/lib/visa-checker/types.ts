@@ -71,6 +71,7 @@ export type VisaRouteSlug =
   | "dutch-american-friendship-treaty"
   | "self-employed-visa"
   | "student-visa"
+  | "orientation-year"
   | "partner-family-visa";
 
 export interface VisaRecommendationItem {

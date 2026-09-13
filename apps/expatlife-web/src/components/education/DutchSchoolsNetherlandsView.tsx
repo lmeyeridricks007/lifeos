@@ -56,6 +56,7 @@ import {
   dutchSchoolsNetherlandsPage as page,
   type DutchSchoolsLink,
 } from "./dutchSchoolsNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -240,7 +241,7 @@ function CityComparisonCard({ city }: { city: (typeof page.cityComparison)[numbe
 
 function LinkCard({ item, iconIndex = 0 }: { item: DutchSchoolsLink; iconIndex?: number }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const body = (
     <>
       <div className={cn("absolute inset-x-0 top-0 h-1.5 rounded-t-2xl", isLive ? movingNlSignatureGradientClass : "bg-slate-200")} aria-hidden />

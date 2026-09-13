@@ -58,6 +58,7 @@ import {
   type TimelineStep,
   type WorkplaceCultureLink,
 } from "./dutchWorkplaceCulturePageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass = cn(
@@ -431,7 +432,7 @@ function MythCard({ myth, reality, iconIndex = 0 }: { myth: string; reality: str
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: WorkplaceCultureLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = cardIcons[iconIndex % cardIcons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const body = (
     <>

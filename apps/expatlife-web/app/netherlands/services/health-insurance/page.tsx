@@ -69,6 +69,7 @@ export const metadata: Metadata = {
 };
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { filterLiveInternalLinks } from "@/src/lib/routes/routeStatus";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -266,7 +267,7 @@ export default function HealthInsuranceCategoryPage() {
                   <section className="scroll-mt-24 mt-12 space-y-4">
                     <h3 className="text-lg font-bold text-copilot-text-primary">Related insurance categories</h3>
                     <ul className="flex flex-wrap gap-2">
-                      {data.relatedCategories.map((c) => (
+                      {filterLiveInternalLinks(data.relatedCategories).map((c) => (
                         <li key={c.href}>
                           <Link href={c.href} className="text-sm font-medium text-brand-700 hover:text-brand-800 underline">
                             {c.label}

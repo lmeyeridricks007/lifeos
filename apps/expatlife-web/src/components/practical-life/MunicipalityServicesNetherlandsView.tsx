@@ -39,12 +39,10 @@ import { movingNlCardMicroLiftClass, movingNlSignatureGradientClass } from "@/li
 import { GuidePremiumVisualFigure, type GuidePremiumVisual } from "@/src/components/guides/GuidePremiumVisualFigure";
 import {
   BSN_REGISTRATION_PATH,
-  BSN_NETHERLANDS_PATH,
   BUYING_HOUSE_PATH,
   CHILDCARE_ALLOWANCE_PATH,
   DIGID_AWARENESS_PATH,
   DIGID_NETHERLANDS_PATH,
-  LOCAL_TAXES_NETHERLANDS_PATH,
   MOVING_TO_NETHERLANDS_PATH,
   MUNICIPALITY_REGISTRATION_PATH,
   PROPERTY_TAX_PATH,
@@ -59,6 +57,7 @@ import {
   type MunicipalityDirectoryEntry,
   type PracticalLifeLink,
 } from "./municipalityServicesNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const baseUrl = getSiteOrigin();
 const sectionClass =
@@ -99,10 +98,10 @@ const bsnLinks: PracticalLifeLink[] = [
     description: "Live BSN guide with document lists, timing and employer onboarding context.",
   },
   {
-    label: "BSN Netherlands",
-    href: BSN_NETHERLANDS_PATH,
-    status: "comingSoon",
-    description: "Planned practical-life pillar guide dedicated to BSN routes and documents.",
+    label: "Municipality Registration (BRP)",
+    href: MUNICIPALITY_REGISTRATION_PATH,
+    status: "live",
+    description: "BRP registration process and how the BSN is typically issued at the gemeente.",
   },
 ];
 
@@ -212,12 +211,6 @@ const localTaxLinks: PracticalLifeLink[] = [
     status: "live",
     description: "Municipal property levy context for owners and some renters.",
   },
-  {
-    label: "Local Taxes Netherlands",
-    href: LOCAL_TAXES_NETHERLANDS_PATH,
-    status: "comingSoon",
-    description: "Deeper guide to gemeente tax letters, charges and payment steps.",
-  },
 ];
 
 function PremiumGuideSection({
@@ -251,7 +244,7 @@ function SectionIntro({ eyebrow, title, children }: { eyebrow?: string; title: s
 }
 
 function LinkOrPlanned({ item, className }: { item: PracticalLifeLink; className?: string }) {
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const content = (
     <div className="flex h-full flex-col">
       <span className="block text-base font-black leading-snug tracking-tight text-foreground">{item.label}</span>

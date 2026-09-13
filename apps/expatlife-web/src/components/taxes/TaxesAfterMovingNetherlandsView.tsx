@@ -10,6 +10,7 @@ import { siteGuideColumnPadYClass, siteHeroFramedShellClass, siteHeroGlowPrimary
 import { movingNlCardMicroLiftClass, movingNlSectionH2Class, movingNlSectionH2OnDarkClass, movingNlSignatureGradientClass } from "@/lib/ui/moving-nl-pillar-identity";
 import { citiesFunnelHeroFigureClassName, CITIES_FUNNEL_INFO_CHIP, CITIES_FUNNEL_SECTION_SCROLL_MARGIN, CITIES_FUNNEL_SOFT_COPILOT_SURFACE } from "@/src/components/cities/shared/citiesFunnelPageUi";
 import { taxesAfterMovingNetherlandsPage as page, type TaxesAfterMovingNetherlandsLink } from "./taxesAfterMovingNetherlandsPageModel";
+import { isGuideCardHrefLive } from "@/src/lib/routes/routeStatus";
 
 const sectionClass = cn(CITIES_FUNNEL_SECTION_SCROLL_MARGIN, CITIES_FUNNEL_SOFT_COPILOT_SURFACE, "relative isolate overflow-hidden p-6 shadow-card ring-1 ring-slate-900/[0.04] before:pointer-events-none before:absolute before:inset-x-0 before:top-0 before:h-1 before:bg-gradient-to-r before:from-cyan-400/70 before:via-brand/80 before:to-emerald-300/70 after:pointer-events-none after:absolute after:-right-28 after:-top-28 after:h-56 after:w-56 after:rounded-full after:bg-cyan-200/15 after:blur-3xl sm:p-8 lg:p-10");
 const sectionStackClass = "mt-8 space-y-6 sm:space-y-8 md:space-y-9";
@@ -48,7 +49,7 @@ function FeatureCard({ title, body, iconIndex = 0 }: { title: string; body: stri
 
 function LinkCard({ item, iconIndex = 0, tone = "default" }: { item: TaxesAfterMovingNetherlandsLink; iconIndex?: number; tone?: "default" | "onDark" }) {
   const Icon = icons[iconIndex % icons.length];
-  const isLive = item.status !== "comingSoon";
+  const isLive = isGuideCardHrefLive(item);
   const onDark = tone === "onDark";
   const shell = onDark ? "relative overflow-hidden rounded-2xl border border-white/10 bg-white/10 p-5 shadow-sm ring-1 ring-white/10" : cn(CITIES_FUNNEL_SOFT_COPILOT_SURFACE, "relative overflow-hidden p-5", movingNlCardMicroLiftClass);
   const body = <><div className={cn("absolute inset-x-0 top-0 h-1.5 rounded-t-2xl", isLive ? movingNlSignatureGradientClass : onDark ? "bg-white/20" : "bg-slate-200")} aria-hidden /><div className="flex gap-3"><span className={cn("flex h-10 w-10 shrink-0 items-center justify-center rounded-xl shadow-sm ring-1", onDark ? "bg-white/10 text-cyan-100 ring-white/15" : isLive ? "bg-gradient-to-br from-copilot-bg-soft to-white text-brand-strong ring-copilot-primary/10" : "bg-slate-100 text-slate-500 ring-slate-200")}><Icon className="h-5 w-5" aria-hidden /></span><span className="min-w-0"><span className={cn("text-sm font-bold", onDark ? "text-white" : "text-foreground")}>{item.label}</span>{!isLive ? <span className={cn("ml-2 rounded-full px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.1em]", onDark ? "bg-white/10 text-slate-300 ring-1 ring-white/10" : "bg-slate-100 text-slate-500")}>Coming soon</span> : null}{item.description ? <span className={cn("mt-2 block text-sm leading-relaxed", onDark ? "text-slate-300" : "text-foreground-muted")}>{item.description}</span> : null}</span></div>{isLive ? <span className={cn("mt-4 inline-flex items-center gap-1 text-xs font-semibold", onDark ? "text-cyan-200" : "text-link group-hover:text-link-hover")}>Open <ArrowRight className="h-3.5 w-3.5" aria-hidden /></span> : null}</>;

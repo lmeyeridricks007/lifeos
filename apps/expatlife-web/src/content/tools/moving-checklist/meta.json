@@ -1,14 +1,14 @@
 {
   "hero": {
-    "title": "Generate Your Moving Checklist for the Netherlands",
-    "subtitle": "Focus on preparing to leave your country, travel and move logistics, and a short handoff to your first days in the Netherlands.",
+    "title": "Netherlands Moving Checklist Generator",
+    "subtitle": "Build a personalized pre-move and travel checklist. For phase explanations, cost context, and common mistakes, read the Moving Checklist guide.",
     "primaryCtaLabel": "Build my checklist",
-    "secondaryCtaLabel": "Learn about moving to NL",
-    "secondaryCtaHref": "/netherlands/moving-to-the-netherlands/",
+    "secondaryCtaLabel": "Read the checklist guide",
+    "secondaryCtaHref": "/netherlands/moving-checklist-netherlands/",
     "introBullets": [
-      "Preparation, final prep, travel, and arrival essentials",
-      "Documents, housing, and money transfer planning",
-      "Handoff list for your first days (use Arrival Planner next)"
+      "Preparation, travel, and arrival-essentials tasks",
+      "Tailored to origin, household, and work situation",
+      "Hands off to Arrival Planner after you land"
     ],
     "image": {
       "src": "/images/guides/netherlands/moving/checklist-tool-hero.png",
@@ -21,42 +21,11 @@
   },
   "explanatorySections": [
     {
-      "id": "what-this-checklist-covers",
-      "title": "What this moving checklist covers",
+      "id": "how-to-use",
+      "title": "How to use this checklist tool",
       "body": [
-        "This checklist focuses on the period before you move: preparation in your home country, final preparation as departure approaches, travel and relocation logistics, and a short handoff to your first days in the Netherlands.",
-        "It includes documents to gather, housing and money transfer planning, departure admin, and what to keep in hand luggage. It does not replace the Arrival Planner or First 90 Days tools—use those once you have arrived."
-      ]
-    },
-    {
-      "id": "who-this-checklist-is-for",
-      "title": "Who this checklist is for",
-      "body": [
-        "The checklist is for anyone planning a move to the Netherlands: whether you have a job offer, are moving with a partner or children, or are from an EU or non-EU country.",
-        "It is useful both when you are still in the early planning stage and when you are close to departure—you can tailor the tasks to your stage, household, and employment situation."
-      ]
-    },
-    {
-      "id": "common-moving-mistakes",
-      "title": "Common moving mistakes before relocating",
-      "bullets": [
-        "Leaving passport renewal too late—many routes require validity well beyond arrival",
-        "Not planning your first address—registration and BSN depend on it",
-        "Underestimating document prep—civil records and apostille can take weeks",
-        "Moving money too late—plan for first-month costs and possible bank account delays",
-        "Shipping the wrong items—check what you need in hand luggage and what can follow later"
-      ]
-    },
-    {
-      "id": "what-happens-after-arrival",
-      "title": "What happens after arrival",
-      "body": [
-        "Once you have arrived, use the Arrival Planner to prioritize your first week and first month: municipality registration, BSN, bank account, and health insurance timing.",
-        "Then use the First 90 Days Planner to stabilize routines, DigiD, GP, recurring payments, and transport. The Document Readiness Checker helps you stay on top of which documents you still need."
-      ],
-      "bullets": [
-        "Arrival Planner — first days and first two weeks",
-        "First 90 Days Planner — week 2 to month 3"
+        "Answer a few questions about your stage, household, and employment. Generate a personalized task list for preparation, final prep, travel, and a short arrival-essentials handoff.",
+        "After you arrive, continue with the Arrival Planner (first week/month) and First 90 Days Planner (weeks 2–12). Use the Moving Checklist guide when you want the full educational overview."
       ]
     }
   ],
@@ -66,15 +35,14 @@
   },
   "seo": {
     "introParagraphs": [
-      "Use this tool to generate a personalized moving checklist for the Netherlands. It focuses on what to do before you move: preparing to leave your country, travel and relocation logistics, and pre-arrival housing and admin.",
-      "The checklist includes a short arrival-essentials section and links to the Arrival Planner and First 90 Days tools for your first days and settlement. It is for general planning only and should be confirmed with official sources."
+      "This interactive tool generates a personalized Netherlands moving checklist. It is for task execution — the companion checklist guide explains what to expect before you move, after arrival, and in your first 90 days."
     ]
   },
   "toolPanel": {
     "whatYouGetTitle": "What you'll get",
     "whatYouGetItems": [
       "Preparation, final prep, travel, and arrival-essentials phases",
-      "Documents to gather (with link to full Document Readiness Checker)",
+      "Documents to gather (with link to Document Readiness Checker)",
       "Links to relevant guides and next-step tools",
       "Tailored to your origin, housing, and employment"
     ]
@@ -114,11 +82,11 @@
     { "value": "other", "label": "Other" }
   ],
   "relatedLinks": {
-    "hub": { "label": "Moving to the Netherlands", "href": "/netherlands/moving-to-the-netherlands/" },
+    "hub": { "label": "Moving checklist guide", "href": "/netherlands/moving-checklist-netherlands/" },
     "pillar": { "label": "Moving to the Netherlands guide", "href": "/netherlands/moving-to-the-netherlands/" },
-    "documents": { "label": "Documents needed", "href": "/netherlands/document-readiness-checker/" },
+    "documents": { "label": "Document readiness checker", "href": "/netherlands/document-readiness-checker/" },
     "timeline": { "label": "Moving timeline", "href": "/netherlands/moving-to-netherlands-timeline/" },
     "first30": { "label": "First 30 days", "href": "/netherlands/first-30-days-netherlands/" },
-    "first90": { "label": "First 90 days", "href": "/netherlands/first-90-days-netherlands/" }
+    "first90": { "label": "First 90 days guide", "href": "/netherlands/first-90-days-netherlands/" }
   }
 }

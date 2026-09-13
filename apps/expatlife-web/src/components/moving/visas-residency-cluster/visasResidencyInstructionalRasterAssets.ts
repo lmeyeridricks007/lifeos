@@ -57,6 +57,14 @@ const visasResidencyInstructionalFigures = {
     },
     caption: "The school usually drives the MVV or permit application — align their checklist with your passport and finance proofs early.",
   },
+  "orientation-year": {
+    raster: {
+      src: `${DIR}/nl-moving-status-changes.webp`,
+      alt: "Infographic journey from graduation or research to the Dutch orientation year (zoekjaar), job search, and a later Highly Skilled Migrant or other residence purpose.",
+    },
+    caption:
+      "Orientation year is a one-year bridge — confirm IND eligibility and timing, then plan the switch to HSM or another purpose before the year ends.",
+  },
   "visas-residency": {
     raster: {
       src: `${DIR}/nl-moving-visas-residency-hub.webp`,

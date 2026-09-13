@@ -23,12 +23,20 @@ import {
   MINIMUM_WAGE_HEALTH_INSURANCE_NOTE_2026,
   minimumWageNetherlandsRates,
 } from "@/src/components/jobs/minimumWageNetherlandsRates";
+import {
+  IND_REQUIRED_AMOUNTS,
+  IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL,
+  IND_REQUIRED_AMOUNTS_LAST_VERIFIED_LABEL,
+  OFFICIAL_FIGURES_PARTNER_FAMILY_HREF,
+  OFFICIAL_FIGURES_SELF_EMPLOYED_HREF,
+  formatIndEurMonthly,
+} from "@/src/lib/statutory/indRequiredAmounts";
 
 export const OFFICIAL_FIGURES_PATH = "/netherlands/official-figures" as const;
 
 export const OFFICIAL_FIGURES_TAX_YEAR = 2026 as const;
-export const OFFICIAL_FIGURES_AS_OF_LABEL = "As of 7 September 2026" as const;
-export const OFFICIAL_FIGURES_LAST_REVIEWED = "7 September 2026" as const;
+export const OFFICIAL_FIGURES_AS_OF_LABEL = "As of 13 September 2026" as const;
+export const OFFICIAL_FIGURES_LAST_REVIEWED = "13 September 2026" as const;
 
 const hsmFee = getOfficialFeeByRoute("highly-skilled-migrant");
 const partnerFee = getOfficialFeeByRoute("partner-family");
@@ -70,8 +78,8 @@ export const officialFiguresDisclaimer =
   "Orientation table for citation and planning only — not a calculator, not legal/tax/immigration/insurance advice, and not a substitute for IND, Belastingdienst, Government.nl or insurer publications. Figures are indexed periodically; always verify the live official page before you apply, sign or file.";
 
 export const officialFiguresIntro = [
-  "One dated table of the Netherlands figures expats and city desks cite most often: HSM salary floors, IND application fees, 30% ruling norms and cap, adult minimum wage, mandatory eigen risico, and a typical basic-premium band.",
-  "Domain guides and tools on ExpatCopilot already carry these amounts in context. This page is the short, linkable ACCESS-style asset with provenance — so an AI system or editorial desk can cite dates and official URLs in one place.",
+  "One dated table of the Netherlands figures expats and city desks cite most often: HSM salary floors, partner/family sponsor income, self-employed required profit, IND application fees, 30% ruling norms and cap, adult minimum wage, mandatory eigen risico, and a typical basic-premium band.",
+  "Domain guides and tools on ExpatCopilot already carry these amounts in context. This page is the short, linkable ACCESS-style asset with provenance — so an AI system or editorial desk can cite dates and official URLs in one place. ExpatCopilot is not the source of these thresholds; IND, Belastingdienst and Government.nl are.",
 ] as const;
 
 /** Combined citation rows — keep in sync with domain modules when official amounts change. */
@@ -103,11 +111,12 @@ export const officialFiguresRows: readonly OfficialFigureRow[] = [
     topic: "HSM salary floor — reduced criterion",
     figure: `${formatEurMonthly(HSM_SALARY_THRESHOLDS_EUR.reduced)} / month gross (excl. holiday pay)`,
     effective: `Calendar year ${HSM_SALARY_FIGURE_YEAR}`,
-    notes: "Orientation / reduced salary criterion for eligible profiles (e.g. recent graduates) — check IND eligibility rules.",
-    sourceLabel: "IND — Highly skilled migrant",
-    sourceHref: IND_HSM_PERMIT_URL,
-    relatedGuideHref: "/netherlands/visa/highly-skilled-migrant/",
-    relatedGuideLabel: "HSM guide",
+    notes:
+      "Often tied to orientation year (zoekjaar) / meeting zoekjaar requirements within IND’s 3-year window — confirm eligibility on IND required amounts before relying on this floor.",
+    sourceLabel: "IND — Required amounts income requirements",
+    sourceHref: IND_REQUIRED_AMOUNTS_URL,
+    relatedGuideHref: "/netherlands/visa/orientation-year/",
+    relatedGuideLabel: "Orientation year (zoekjaar)",
   },
   {
     id: "blue-card-standard",
@@ -130,6 +139,39 @@ export const officialFiguresRows: readonly OfficialFigureRow[] = [
     sourceHref: IND_REQUIRED_AMOUNTS_URL,
     relatedGuideHref: "/netherlands/visa/eu-blue-card/",
     relatedGuideLabel: "EU Blue Card guide",
+  },
+  {
+    id: IND_REQUIRED_AMOUNTS.partnerFamilySponsorExclHoliday.id,
+    topic: IND_REQUIRED_AMOUNTS.partnerFamilySponsorExclHoliday.label,
+    figure: `${formatIndEurMonthly(IND_REQUIRED_AMOUNTS.partnerFamilySponsorExclHoliday.value)} / month gross SV (excl. holiday pay)`,
+    effective: IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL,
+    notes: `Official IND required amount for partner/family sponsors. Last reviewed ${IND_REQUIRED_AMOUNTS_LAST_VERIFIED_LABEL}. Not an ExpatCopilot estimate.`,
+    sourceLabel: "IND — Required amounts income requirements",
+    sourceHref: IND_REQUIRED_AMOUNTS_URL,
+    relatedGuideHref: OFFICIAL_FIGURES_PARTNER_FAMILY_HREF,
+    relatedGuideLabel: "Partner & family visa guide",
+  },
+  {
+    id: IND_REQUIRED_AMOUNTS.partnerFamilySponsorInclHoliday.id,
+    topic: IND_REQUIRED_AMOUNTS.partnerFamilySponsorInclHoliday.label,
+    figure: `${formatIndEurMonthly(IND_REQUIRED_AMOUNTS.partnerFamilySponsorInclHoliday.value)} / month gross SV (incl. holiday pay)`,
+    effective: IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL,
+    notes: `Official IND required amount for partner/family sponsors. Last reviewed ${IND_REQUIRED_AMOUNTS_LAST_VERIFIED_LABEL}. Not an ExpatCopilot estimate.`,
+    sourceLabel: "IND — Required amounts income requirements",
+    sourceHref: IND_REQUIRED_AMOUNTS_URL,
+    relatedGuideHref: OFFICIAL_FIGURES_PARTNER_FAMILY_HREF,
+    relatedGuideLabel: "Partner & family visa guide",
+  },
+  {
+    id: IND_REQUIRED_AMOUNTS.selfEmployedMonthlyProfit.id,
+    topic: IND_REQUIRED_AMOUNTS.selfEmployedMonthlyProfit.label,
+    figure: `${formatIndEurMonthly(IND_REQUIRED_AMOUNTS.selfEmployedMonthlyProfit.value)} / month gross profit (incl. holiday allowance)`,
+    effective: IND_REQUIRED_AMOUNTS_EFFECTIVE_LABEL,
+    notes: `Official IND required profit for the self-employed residence permit. Last reviewed ${IND_REQUIRED_AMOUNTS_LAST_VERIFIED_LABEL}. Viability still assessed separately.`,
+    sourceLabel: "IND — Required amounts income requirements",
+    sourceHref: IND_REQUIRED_AMOUNTS_URL,
+    relatedGuideHref: OFFICIAL_FIGURES_SELF_EMPLOYED_HREF,
+    relatedGuideLabel: "Self-employed visa guide",
   },
   {
     id: "ind-fee-hsm",
@@ -251,7 +293,8 @@ export const officialFiguresSources: readonly OfficialFigureSource[] = [
     id: "ind-amounts",
     label: "IND — Required amounts income requirements",
     href: IND_REQUIRED_AMOUNTS_URL,
-    covers: "HSM and EU Blue Card salary floors for 2026",
+    covers:
+      "HSM and EU Blue Card salary floors; partner/family sponsor income; self-employed required profit (H2 2026)",
   },
   {
     id: "ind-fees",
@@ -317,6 +360,11 @@ export const officialFiguresSources: readonly OfficialFigureSource[] = [
 
 export const officialFiguresChangelog: readonly OfficialFigureChangelogEntry[] = [
   {
+    date: "2026-09-13",
+    summary:
+      "Added partner/family sponsor income (excl. and incl. holiday allowance) and self-employed required monthly profit for 1 Jul–31 Dec 2026 from IND required amounts. Wired guides to shared statutory module. HSM / 30% / min-wage figures unchanged vs 7 Sep re-verify.",
+  },
+  {
     date: "2026-09-07",
     summary:
       "Official set re-verified (unchanged vs 6 Sep): IND HSM €5,942 / €4,357 / €3,122; Blue Card €5,942 / €4,754; Belastingdienst 30% €48,013 / €36,497 / cap €262,000 / max €78,600; min wage €14.99 (21+ from 1 Jul); eigen risico €385; premium band ~€142–€159. HSM tightening still “not yet known / not yet final.” 27% from 1 Jan 2027 with cited norms €50,436 / €38,388 still not yet final.",
@@ -338,6 +386,9 @@ export const officialFiguresChangelog: readonly OfficialFigureChangelogEntry[] =
 ] as const;
 
 export const officialFiguresRelatedGuides = [
+  { label: "Partner & family visa", href: OFFICIAL_FIGURES_PARTNER_FAMILY_HREF },
+  { label: "Self-employed visa", href: OFFICIAL_FIGURES_SELF_EMPLOYED_HREF },
+  { label: "Orientation year (zoekjaar)", href: "/netherlands/visa/orientation-year/" },
   { label: "Highly skilled migrant", href: "/netherlands/visa/highly-skilled-migrant/" },
   { label: "HSM salary checker", href: "/netherlands/moving/tools/hsm-salary-checker/" },
   { label: "30% ruling guide", href: "/netherlands/taxes/30-percent-ruling/" },

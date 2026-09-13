@@ -87,6 +87,7 @@ export const metadata: Metadata = {
 };
 
 import { CONTENT_REVALIDATE } from "@/lib/content-revalidate";
+import { filterLiveInternalLinks } from "@/src/lib/routes/routeStatus";
 
 export const revalidate = CONTENT_REVALIDATE;
 
@@ -189,7 +190,7 @@ export default function RelocationServicesCategoryPage() {
                       For more specific providers and guidance, see these category pages:
                     </p>
                     <ul className="grid gap-2 sm:grid-cols-2">
-                      {data.relatedCategories.map((c) => (
+                      {filterLiveInternalLinks(data.relatedCategories).map((c) => (
                         <li key={c.href}>
                           <Link
                             href={c.href}
@@ -277,7 +278,7 @@ export default function RelocationServicesCategoryPage() {
                   <section className="scroll-mt-24 mt-8 space-y-4">
                     <h3 className="text-lg font-bold text-copilot-text-primary">Related service categories</h3>
                     <ul className="flex flex-wrap gap-2">
-                      {data.relatedCategories.map((c) => (
+                      {filterLiveInternalLinks(data.relatedCategories).map((c) => (
                         <li key={c.href}>
                           <Link
                             href={c.href}

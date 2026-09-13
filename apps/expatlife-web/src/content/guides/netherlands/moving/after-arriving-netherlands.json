@@ -2,9 +2,9 @@
   "slug": "after-arriving-netherlands",
   "path": "/netherlands/after-arriving-netherlands/",
   "title": "After Arriving in the Netherlands: What to Do First",
-  "metaTitle": "After Arriving in the Netherlands | BSN, Registration, DigiD, Insurance, Banking",
+  "metaTitle": "After Arriving in the Netherlands | First-Week Guide for Expats",
   "subtitle": "Your practical first-step guide after landing: municipality registration, BSN, residence permit collection, DigiD, health insurance, banking, mobile setup, and first-week admin.",
-  "description": "A practical guide to what to do after arriving in the Netherlands, including municipality registration, BSN, residence permit collection, DigiD, health insurance, banking, and first-week setup.",
+  "description": "Guide to what to do after arriving in the Netherlands—registration, BSN, DigiD, insurance, and banking. Pair with the Arrival Planner for a personalized first-week checklist.",
   "breadcrumbLabel": "After Arriving",
 
   "hero": {
@@ -17,13 +17,14 @@
   },
 
   "heroCta": {
-    "title": "Plan your first steps after arrival",
-    "supportingText": "Use the First 90 Days Planner and Moving Checklist to map registration, BSN, banking, insurance, and housing setup.",
-    "primaryCtaLabel": "Plan Your First 90 Days",
-    "primaryCtaHref": "/netherlands/moving/tools/first-90-days/",
-    "secondaryCtaLabel": "Generate a Moving Checklist",
-    "secondaryCtaHref": "/netherlands/moving/tools/moving-checklist/",
+    "title": "Use the interactive Arrival Planner",
+    "supportingText": "This guide explains first-week priorities and why order matters. Use the Arrival Planner for a personalized first-week and first-month task sequence.",
+    "primaryCtaLabel": "Use the Arrival Planner",
+    "primaryCtaHref": "/netherlands/moving/tools/arrival-planner/",
+    "secondaryCtaLabel": "Plan your first 90 days",
+    "secondaryCtaHref": "/netherlands/moving/tools/first-90-days/",
     "supportingLinks": [
+      { "label": "Moving Checklist Generator", "href": "/netherlands/moving/tools/moving-checklist/" },
       { "label": "All services hub", "href": "/netherlands/services/" },
       { "label": "Compare banks", "href": "/netherlands/services/banks/" },
       { "label": "Compare health insurance", "href": "/netherlands/services/health-insurance/" },

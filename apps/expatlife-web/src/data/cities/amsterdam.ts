@@ -286,7 +286,7 @@ export const amsterdamCityPage: CityHubPageData = {
       "Healthcare and GP-related admin",
     ],
     plannedPageLinks: [
-      { label: "BSN in the Netherlands", href: "/netherlands/bsn-netherlands/" },
+      { label: "BSN registration", href: "/netherlands/bsn-registration/" },
       { label: "DigiD in the Netherlands", href: "/netherlands/digid-netherlands/" },
     ],
   },
@@ -548,7 +548,7 @@ export const amsterdamCityPage: CityHubPageData = {
       links: [
         { label: "First 30 days in the Netherlands", href: "/netherlands/first-30-days-netherlands/" },
         { label: "Moving checklist", href: "/netherlands/moving-checklist-netherlands/" },
-        { label: "BSN (planned)", href: "/netherlands/bsn-netherlands/" },
+        { label: "BSN registration", href: "/netherlands/bsn-registration/" },
         { label: "DigiD (planned)", href: "/netherlands/digid-netherlands/" },
         { label: "30% ruling (planned)", href: "/netherlands/30-percent-ruling-netherlands/" },
         { label: "Dutch taxes for expats (planned)", href: "/netherlands/dutch-taxes-expats/" },
